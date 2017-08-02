@@ -29,12 +29,13 @@ productversion: '6.6'
 ###Prerequisites
 
 * Android Studio 2.x or newer with Android API 19, API 22 and API 23 platforms and Android SDK Build-tools 23.0.x or newer installed. 
-* Latest EMDK add-ons (“\EMDK-A-0604098-MAC\SDK\ addon-symbol_emdk-symbol-19/ “addon-symbol_emdk-symbol-22 ” / “addon-symbol_emdk-symbol-23”)
-* Latest EMDK Wizard core components (“\EMDK-A-0604098-MAC\Symbol EMDK for Android”)
-* Latest EMDK Wizard plug-in for Android Studio (“\EMDK-A-0604098-MAC\Android Studio\ com.symbol.emdk.wizard.intellijIdea”)
-* Latest EMDK device runtime (“\EMDK-A-0604098-MAC\Device Update\ EmdkOSUpdateApp_v6.4.12.apk”)
+* Latest EMDK add-ons (“\EMDK-A-(version_number)-MAC\SDK\ addon-symbol_emdk-symbol-19/ , 
+etc.)
+* Latest EMDK Wizard core components (“\EMDK-A-(version_number)-MAC\Symbol EMDK for Android”)
+* Latest EMDK Wizard plug-in for Android Studio (“\EMDK-A-(version_number)-MAC\Android Studio\ com.symbol.emdk.wizard.intellijIdea”)
+* Latest EMDK device runtime (“\EMDK-A-(version_number)-MAC\Device Update\ EmdkOSUpdateApp_v(version_number).apk”)
 
->IMPORTANT: All the Android Studio sessions must be closed before starting this step.
+>IMPORTANT: All Android Studio sessions must be closed before starting this step.
 	
 ###Download the EMDK for Android MAC install files
 

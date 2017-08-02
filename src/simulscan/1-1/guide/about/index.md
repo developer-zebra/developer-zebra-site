@@ -89,6 +89,12 @@ SimulScan works with all device cameras, and **on devices with a supported 2D im
   <th width="55%" align="left" valign="middle" class="clsSyntaxHeadings">Model code(s) with 2D imager support</th>
  </tr>
  <tr>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc51Pic" src="tc51.jpg" height="10px"></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC51 M</b></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">  √</td>
+  <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><br>•<i>All models support SimulScan</i><br>•<i>Must have BSP 19-xx or later</i></td>
+ </tr>
+ <tr>
   <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="tc55.png" height="10px"></td>
   <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC55 KK</b></td>
   <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">  √</td>
@@ -99,6 +105,12 @@ SimulScan works with all device cameras, and **on devices with a supported 2D im
   <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC70 KK, L</b></td>
   <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">  √</td>
   <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img style="height:67px" src="TC70_models.png"/>•<i>SimulScan supported on GA2 devices only</i><br>•<i>Model code must contain an "A" where indicated</i><br>•<i>Decoded imagers not supported</i></td>
+ </tr>
+ <tr>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="tc70.png" height="25px"></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC70X M</b></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">  √</td>
+  <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><br>•<i>All models support SimulScan</i><br>•<i>Must have BSP 19-xx or later</i></td>
  </tr>
  <tr>
   <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc75Pic" src="tc75.png" height="75"></td>

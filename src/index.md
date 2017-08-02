@@ -291,11 +291,11 @@ products:
         label: '2.3'
       - url: stagenow/2-2/about
         label: '2.2'
-  - title: I need to...
-    description: Not sure where to go? Click on "I need to..." for help figuring out which Zebra tool best suits the requirements, skills and experience of your organization.
+  - title: I Need To...
+    description: Not sure where to go? Click on "I Need To..." for help figuring out which Zebra tool best suits the requirements, skills and experience of your organization.
     url: /help
     btn-text: Latest Guides
-    image: /images/products/blue-question-mark.jpg
+    image: /images/logo_techdocs.png
     sections:
       - title: About TechDocs
         url: /about
@@ -315,7 +315,7 @@ menu:
   items:
     - title: About TechDocs
       url: /about
-    - title: I need to...
+    - title: I Need To...
       url: /help
     - title: Feedback
       url: /contact

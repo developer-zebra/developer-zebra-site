@@ -1,12 +1,16 @@
 ---
 publish: false
-title: I Need Tools for...
+title: I Need a Tool For...
 layout: guide.html
 menu:
   items:
     - title: About TechDocs
       url: /about
+<<<<<<< HEAD
+    - title: I Need a Tool For...
+=======
     - title: I Need To...
+>>>>>>> develop
       url: /help
     - title: Feedback
       url: /contact
@@ -22,7 +26,8 @@ Zebra Technologies provides devices for the enterprise to acquire, process and c
 ## Scanning
 Zebra mobile and touch computers are equipped with a variety of scanning devices, each of which can be accessed through software included with the device or with apps developed by a partner or customer. Zebra's solutions are described below in order from easiest (and with the least coding required) to the most powerful and complex.  
 
-### DataWedge - Easiest; Coding Optional
+### DataWedge - Add scanning to existing app
+#### Easiest: minimal setup, coding optional
 
 [DataWedge](../datawedge) provides barcode scanning and processing services for devices running Android, and is the fastest and easiest way to add scanning to an existing app. Included with every Zebra device, DataWedge enables any app on the device to acquire scanned data without using the scanner APIs directly. DataWedge can be configured in minutes to automatically activate a particular scanner or reader whenever a particular app is launched, and can manipulate and hand off acquired data according to simple or complex rules. 
 
@@ -32,7 +37,8 @@ Zebra mobile and touch computers are equipped with a variety of scanning devices
 
 -----
 
-### SimulScan - Easy, No Coding; Some Setup Required
+### SimulScan
+#### Easy: moderate setup time, coding optional 
 
 [SimulScan](../simulscan) is included only with [supported devices](../simulscan/1-1/guide/about/#supporteddevices), and is designed to optimize workflow by enabling acquisition of multiple points of data in a single step. SimulScan is well suited to organizations in which scanning is frequent, and scanned forms have one or more barcodes, or if multiple data types (such as barcodes, text and images) are to be acquired. Optionally, SimulScan can integrate with an organization's native Android app and parse captured data directly into the app. 
 
@@ -41,6 +47,11 @@ Zebra mobile and touch computers are equipped with a variety of scanning devices
 **CONS**: Limited device support; longer setup time than DataWedge; subject to per-device licensing
 
 -----
+
+### Enterprise Browser
+#### Easy: moderate setup time; some HTML and JavaScript coding required  
+
+Enterprise Browser is a powerful, industrial browser that provides everything needed to quickly build device apps for **barcode scanning, signature capture, payment processing, printing** and most other enterprise applications for a long list of [supported Zebra devices](../about#mobile) running Android and Windows Mobile/CE. EB includes a runtime environment inside which a company's application logic can be executed and controlled using HTML5 and CSS3 for presentation and JavaScript to access EB APIs for scanners, cameras, card readers and other device peripherals. 
 
 [Enterprise Browser](../enterprise-browser) is a small-footprint web browser for which apps can be built   
 
@@ -59,7 +70,7 @@ Zebra output solutions range from simple line printing from an Enterprise Browse
 
 -----
 
-## Security
+## Secure
 
 ### Secure an App
 Zebra security ranges from simple, feature-based solutions to whole-device lock-down and encryption.
@@ -127,7 +138,7 @@ C# to Android
 
 -----
 
-## Managing and Staging Devices
+## Staging and Managing Devices
 StageNow is Zebra's world-class device staging and management system. 
 
 StageNow

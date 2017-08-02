@@ -64,8 +64,6 @@ automenu:
           url: /emdk-for-android/6-6/mx/displaymgr/
         - title: Ethernet Manager
           url: /emdk-for-android/6-6/mx/ethernetmgr/
-        - title: File Manager
-          url: /emdk-for-android/6-6/mx/filemgr/
         - title: Personal Dictionary Manager
           url: /emdk-for-android/6-6/mx/personaldictionarymgr/
         - title: Power Manager
@@ -92,8 +90,6 @@ automenu:
           url: /emdk-for-android/6-6/mx/devadmin
         - title: Encrypt Manager
           url: /emdk-for-android/6-6/mx/encryptmgr
-        - title: License Manager
-          url: /emdk-for-android/6-6/mx/licensemgr/
         - title: SD Card Manager
           url: /emdk-for-android/6-6/mx/sdcardmgr
         - title: Threat Manager

@@ -2,7 +2,7 @@
 csp: bluetoothmgr
 title: Silent Pairing UAP
 type: parm
-order: 12
+order: 18
 mx: "7.0"
 apilevel: "23"
 parm:
@@ -16,4 +16,4 @@ Used to specify the Upper Address Part (UAP) of the remote Bluetooth device's MA
 
 **Input value rules**: 
 
-* String of three (3) characters containing a Bluetooth MAC address of a remote device. For example: "9C:6" 
+* String of three (3) characters containing a Bluetooth MAC address of a remote device. For example: "9C6" 

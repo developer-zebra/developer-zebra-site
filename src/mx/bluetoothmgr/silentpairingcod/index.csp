@@ -2,7 +2,7 @@
 csp: bluetoothmgr
 title: Silent Pairing Class of Device
 type: parm
-order: 12
+order: 15
 mx: "7.0"
 apilevel: "23"
 parm:
@@ -16,4 +16,8 @@ Used to specify the Class of Device (COD) of a Bluetooth device with which to al
 
 **Input value rules**: 
 
-* String from 1-255 characters containing Bluetooth device name. For example: "Zebra Printer_01" 
+* String representing the Bluetooth Class of Device. For example: "002900" 
+
+For more information: 
+* **[CoD Calculator](http://www.ampedrftech.com/cod.htm)** 
+* **[Bluetooth.com Baseband specs](https://www.bluetooth.com/specifications/assigned-numbers/baseband)**

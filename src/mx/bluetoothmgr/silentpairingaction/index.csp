@@ -30,10 +30,8 @@ parm:
       name: Remove all Silent Pairing Rules
       mx: "7.0"
       apilevel: "23"
-      description: Clears the list of devices previously specified rules for Silent Pairing.
+      description: Clears the list of devices previously specified rules for Silent Pairing, including the default rules.
 ---
 
-Used to administer the list Silent Pairing Rules on the device. 
-
-Controls whether the device will be permitted to pair with newly discovered Bluetooth devices that come into range. The settings of this parameter do not effect existing device pairings.
+Used to administer the list of Silent Pairing Rules on the device. 
 

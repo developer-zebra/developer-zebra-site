@@ -12,9 +12,9 @@ parm:
   type: string
 ---
 
-Provide the Package Name of the application that should be Added to or Removed from the Protected List.
+Used to specify the Package Name of the application to add or remove from the Protected List.
 
-Parm value input rules: 
+**Input value rules**: 
 
 * String containing the valid name of the package. For example: `com.mycompany.mypackage`
 * The minimum length is 1 character; the maximum length is 255 characters

@@ -27,7 +27,7 @@ order: 99
 	</wap-provisioningdoc>
 
 ###Disable An Application
-	:::XML
+	:::xml
 	<wap-provisioningdoc>
 		<characteristic version="4.2" type="AppMgr">
 			<parm name="Action" value="DisableApplication" />
@@ -36,7 +36,7 @@ order: 99
 	</wap-provisioningdoc>
 
 ###Uninstall An Application
-	:::XML
+	:::xml
 	<wap-provisioningdoc>
 		<characteristic version="4.2" type="AppMgr">
 			<parm name="Action" value="Uninstall" />
@@ -45,7 +45,7 @@ order: 99
 	</wap-provisioningdoc>
 
 ###Start An Application After Installing it
-	:::XML
+	:::xml
 	<wap-provisioningdoc>
 		<characteristic version="4.2" type="AppMgr">
 			<parm name="Action" value="Install" />
@@ -59,4 +59,41 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 
-	
+### Add apps to Battery Optimization list
+
+		:::xml
+		<wap-provisioningdoc>
+		<characteristic type="AppMgr" version="7.0" >
+			<parm name="Action" value="BatteryOptimization"/>
+			<parm name="AddPackageNames" value="com.example.android.deviceowner, com.symbol.software.filexpa"/>
+		</characteristic>
+		</wap-provisioningdoc>
+
+		// Response from AppMgr CSP on success: 
+
+		<wap-provisioningdoc>
+		<characteristic type="AppMgr" version="7.0" >
+			<parm name="Action" value="BatteryOptimization"/>
+			<parm name="AddPackageNames" value="com.example.android.deviceowner, com.symbol.software.filexpa"/>
+		</characteristic>
+		</wap-provisioningdoc>
+
+### Remove apps from Battery Optimization list
+
+		:::xml
+		<wap-provisioningdoc>
+		<characteristic type="AppMgr" version="7.0" >
+			<parm name="Action" value="BatteryOptimization"/>
+			<parm name="RemovePackageNames" value="com.example.android.deviceowner, com.symbol.software.filexpa"/>
+		</characteristic>
+		</wap-provisioningdoc>
+
+		// Response from AppMgr CSP on success: 
+
+		<wap-provisioningdoc>
+		<characteristic type="AppMgr" version="7.0" >
+			<parm name="Action" value="BatteryOptimization"/>
+			<parm name="RemovePackageNames" value="com.example.android.deviceowner, com.symbol.software.filexpa"/>
+		</characteristic>
+		</wap-provisioningdoc>
+

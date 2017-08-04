@@ -4,32 +4,32 @@ title: Silent Pairing Action
 type: parm
 order: 10
 mx: "7.0"
-apilevel: "23"
+apilevel: "24"
 parm:
-  presentif: Allow Silent Pairing is set to "Enable" 
+  presentif: Allow Pairing and Allow Silent Pairing are BOTH set to "Enable"
   pivotal: No
   name: SilentPairingAction
   type: list
   list:
     - code: 0
       mx: "7.0"
-      apilevel: "23"
+      apilevel: "24"
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to the device's ability to pair with discovered Bluetooth devices; any previously selected setting will be retained.
     - code: 1
       name: Add Silent Pairing Rule
       mx: "7.0"
-      apilevel: "23"
+      apilevel: "24"
       description: Adds a Silent Pairing Rule to the list.
     - code: 2
       name: Remove Silent Pairing Rule
       mx: "7.0"
-      apilevel: "23"
+      apilevel: "24"
       description: Removes the specified Silent Pairing Rule.
     - code: 3
       name: Remove all Silent Pairing Rules
       mx: "7.0"
-      apilevel: "23"
+      apilevel: "24"
       description: Clears the list of devices previously specified rules for Silent Pairing, including the default rules.
 ---
 

@@ -74,6 +74,23 @@ If the operation was successful, the Result XML (output) will be identical to th
         </characteristic>
     </wap-provisioningdoc>
 
+### Create a Silent Pairing Rule with Name, CoD and UAP
+
+        :::xml
+        <wap-provisioningdoc>
+        <characteristic type="BluetoothMgr" version="7.0" >
+            <parm name="AllowPairing" value="1"/>
+            <parm name="AllowDiscoverability" value="1"/>
+            <parm name="AllowSilentPairing" value="1"/>
+            <parm name="SilentPairingAction" value="1"/>
+        <characteristic type="SilentPairingDeviceDetails">
+            <parm name="SilentPairingName" value="TC51"/>
+            <parm name="SilentPairingCoD" value="524"/>
+            <parm name="SilentPairingUAP" value="40:83:DE"/>
+        </characteristic>
+        </characteristic>
+        </wap-provisioningdoc>
+
 ### Remove all devices from the Silent Pairing Rules list
 
         :::xml

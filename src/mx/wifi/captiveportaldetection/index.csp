@@ -6,7 +6,7 @@ order: 101
 mx: "6.3"
 parm:
   pivotal: No
-  name: OmniTrailPriority
+  name: CaptivePortalDetection
   type: list
   list:
     - code: 2

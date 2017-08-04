@@ -6,6 +6,7 @@ order: 6
 mx: "4.1"
 apilevel: "1"
 parm:
+  presentif: The Action is NOT "Enroll Device Owner"
   pivotal: No
   name: ActionName
   type: string

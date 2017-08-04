@@ -15,16 +15,21 @@ parm:
       apilevel: "1"
       name: StartActivity
       description: Sends an Intent using startActivity to invoke an Activity within an application.
-    - code: 4
+    - code: 2
       mx: "4.1"
       apilevel: "1"
       name: StartService
       description: Sends an Intent using startService to initiate operation of a background Service within an application.
-    - code: 9
+    - code: 3
       mx: "4.1"
       apilevel: "1"
       name: Broadcast
       description: Sends an Intent using broadcastIntent to invoke registered broadcast receivers (listeners) within one or more applications.
+    - code: 4
+      mx: "7.0"
+      apilevel: "24"
+      name: EnrollDeviceOwner
+      description: Sends an Intent to enroll the device owner. 
 ---
 
 Used to specify the Action to be invoked in other application(s) by the Intent.

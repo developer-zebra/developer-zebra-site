@@ -29,7 +29,7 @@ parm:
       mx: "7.0"
       apilevel: "24"
       name: EnrollDeviceOwner
-      description: Sends an Intent to enroll the device owner. 
+      description: Sends an Intent to enroll the device owner when bypassing the Android Setup Wizard and GMS welcome screens. 
 ---
 
 Used to specify the Action to be invoked in other application(s) by the Intent.

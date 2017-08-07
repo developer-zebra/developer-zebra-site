@@ -11,9 +11,9 @@ Highly complex Intents can be created using Java code, but it would be impractic
 
 In Android, an Intent is an abstract description of an operation to be performed. Intents must be created and sent using one of the following APIs:
 
-* **startActivity** launches an Activity within an application. This is usually used to perform a particular function of the user interface, such as selecting a contact name, and in such cases could return a result (the contact). 
-* **broadcastIntent** notifies one or more listener applications about the occurrence of some event, such as an external power supply being connected.
-* **startService** starts a Service, which can continue to run in the background even after the component that started it is destroyed.
+* **StartActivity** launches an Activity within an application. This is usually used to perform a particular function of the user interface, such as selecting a contact name, and in such cases could return a result (the contact). 
+* **BroadcastIntent** notifies one or more listener applications about the occurrence of some event, such as an external power supply being connected.
+* **StartService** starts a Service, which can continue to run in the background even after the component that started it is destroyed.
 
 An Intent can be defined as a data structure that specifies an operation to be performed, and the data required to perform that operation. An Intent may consist of an action to specify the operation to be performed, data to be operated upon, and extra data items of various types to qualify the operation to be performed. Intents are defined by indicating how the Intent should be sent, specifying an Android action name, URI and MIME type of the primary data, and by attaching extra data items.
 
@@ -33,15 +33,15 @@ An Implicit Intent is a generic request to perform an operation that does not sp
 
 If an Intent does not specify a Package Name and Class Name, it is considered an Implicit Intent because it does not specify a specific application to which it will be sent. An Implicit Intent may fail if there are no suitable registered receiver(s). An Implicit Intent must specify at least some information to tell the receiving application(s) about the operation to perform and how to perform it.
 
-> **Important: Beginning with Andriod 7.0 Nougat, implicit Intents will no longer be supported by the Intent CSP**. <u>Use explicit Intents only on devices running Android N and higher</u>.  
+> **Important: Implicit Intents will no longer be supported by the Intent CSP beginning with Andriod 7.0 Nougat. <u>Use explicit Intents only on devices running Android N and higher</u>.  
 
 ### Main Functionality
 
 * Specify how the Intent will be sent:
-	* startActivity
-	* broadcastIntent
-	* startService
-* Enroll a Device Owner, useful when bypassing the Android Setup Wizard and GMS welcome screens
+	* StartActivity
+	* BroadcastIntent
+	* StartService
+* Enroll a Device Owner
 * Specify the Android Action name of the operation to be performed 
 * Specify the URI and MIME Type of the primary data
 * Attach up to 5 extra data items, of the following data types:

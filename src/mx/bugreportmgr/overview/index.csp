@@ -16,6 +16,8 @@ The Bug Report Manager (BugReportMgr) provides a framework for reporting the tim
 * Trigger "silent" bug reports with an intent 
 * **Enable or Disable**: 
  * Generate Bug Report from Power Off Menu
+ * Taking a screenshot with a but report
+ * Trigger a bug report with an intent 
  * Store reports in flash memory
  * Send reports to a specified email address
  * Upload reports to the Zebra Cloud

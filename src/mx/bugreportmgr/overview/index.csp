@@ -15,7 +15,7 @@ The Bug Report Manager (BugReportMgr) provides a framework for reporting the tim
 * Capture audio and attach to bug reports
 * Trigger "silent" bug reports with an intent 
 * **Enable/Disable**: 
- * Generate bug report from Power-Off Menu
+ * Generating bug report from Power-Off Menu
  * Taking a screenshot with a bug report
  * Trigger a bug report with an intent 
  * Storing reports in flash memory

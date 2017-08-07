@@ -2,21 +2,21 @@
 title: Enterprise Home Screen Setup
 layout: guide.html
 product: Enterprise Home Screen
-productversion: '2.5'
+productversion: '2.6'
 ---
 
 ## Overview
 
 These instructions provide a basic understanding of the installation, configuration, usage and essential workings of Enterprise Home Screen, and are recommended for anyone unfamiliar with first-time EHS setup. Please note that everything detailed here also can be automated through a Mobile Device Management (MDM) system and with direct manipulation of the EHS config file, which is documented in the [Advanced Settings](../settings) section. 
 
-Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](/emdk-for-android/5-0/guide/about) or remotely using [StageNow](/stagenow/2-4/about/) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts these capabilities into a single, convenient tool.
+Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts these capabilities into a single, convenient tool.
 
-> <b>Note</b>: Installation and setup requires that EHS be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](/ehs/2-5/download) and establish connectivity between the computer and device. Then resume from here. 
+> <b>Note</b>: Installation and setup requires that EHS be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](../../download) and establish connectivity between the computer and device. Then resume from here. 
 
 ## Manual Installation
-These instructions apply to direct installation (from a computer to a single device) using the `EHS_020501.apk` EHS 2.5 installer file.  
+These instructions apply to direct installation (from a computer to a single device) using the `EHS_0206xx.apk` EHS 2.6 installer file.  
 
-Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this guide. 
+Read about how to [uninstall EHS](#uninstallation) later in this guide. 
 
 **To install EHS manually**: 
 
@@ -32,6 +32,7 @@ Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this 
 &#52;. <b>Locate and launch the APK file</b>:
 
 <img alt="" style="height:350px" src="file_browser_search.png"/>
+_File name of the .apk will match that of the version number being installed_. 
 <br>
 
 &#53;. <b>Tap Install</b>:
@@ -42,7 +43,7 @@ Read about how to [uninstall EHS](?Uninstallation#uninstallation) later in this 
 &#54;. After installation, <b>tap Open</b>:
 
 <img alt="" style="height:350px" src="ehs_installed.png"/>
-If "Done" was accidentally selected instead of "Open," launch "Enterprise Home Screen" from the App Drawer and proceed.
+_If "Done" was accidentally selected instead of "Open," launch "Enterprise Home Screen" from the App Drawer to proceed_.
 
 &#55;. <b>Tap or press the HOME key. A screen like the image below will appear: </b> 
 
@@ -54,6 +55,8 @@ If "Done" was accidentally selected instead of "Open," launch "Enterprise Home S
 > **Note: On ET50 and ET55 devices with Google Mobile Services (GMS)**, the Launcher selection pop-up does not appear when the HOME button is pressed while in User Mode. To avoid this issue, switch to Admin Mode and press the HOME button; the pop-up appears and the default Launcher app can be selected. 
 
 &#57;. <b>A restart is required</b> to complete the installation (for first-time EHS installations). Again, a screen like the one above will appear. <b>Select Enterprise Home Screen</b> and <b>tap "Just once"</b> to continue or select "Always" to make the selection permanent. To undo this choice, see [Change the Default Launcher](#changethedefaultlauncher) section below. 
+
+> **Note: After selecting "Always," some devices require a five-second pause before restarting to ensure the change is permanent**. This applies to ET50, ET55, TC51, TC56, TC70x and TC75x devices running Marshmallow.
 
 ### Select Apps for User Mode 
 EHS is now ready to use. The next steps are for selecting which apps to display (and which to hide) while in User Mode, and for configuring the level of user access to device settings. When first run, EHS always defaults to User Mode, and will display a screen similar to the image below: 
@@ -123,7 +126,9 @@ In User Mode, the following features are disabled by default:
 For scenarios that require even more security, EHS offers Secure and Kiosk modes, which are documented in the [Advanced Features]() section. For a complete usage reference for the `enterprisehomescreen.xml` configuration file, please see the [Advanced Settings](../settings) section. 
 
 ## Automated Installation
-These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
+These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](../../../../emdk-for-android) or [StageNow](../../../../stagenow) tools using its App Manager Setting Type service. 
+
+> **Important**: To execute EHS in a device in which a managed profile is enabled, EHS must be installed <u>before</u> configuring the managed profile in the device.
 
 **To install EHS using an MDM, instruct the MDM to do the following, in this order**:
 
@@ -169,7 +174,7 @@ These instructions apply to remote installation of EHS, an `enterprisehomescreen
 
 The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
 
-> <b>Note</b>: App installation, uninstallation, setting the default launcher and other operations can be achieved using the [App Manager](/mx/#app-manager) through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools. 
+**Note: App installation, uninstallation, setting the default launcher and other operations are possible using the [App Manager](/mx/#app-manager) through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools**. 
 
 ## Uninstallation
 

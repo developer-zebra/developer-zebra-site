@@ -11,7 +11,7 @@ parm:
   type: list
   list:
     - code: 0
-      name: Do nothing
+      name: none
       description: This value (or the absence of this parm from the XML) will cause no change to Bug Report Manager settings; any previously selected setting will be retained.
       mx: "6.3"
       apilevel: "23"

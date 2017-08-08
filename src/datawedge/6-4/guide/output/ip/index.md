@@ -39,7 +39,7 @@ _IP Output options_
 
 -----
 
-### UDI Data Collection
+### UDI Data Output
 This setting applies when the Scanning mode in [Barcode Reader Params](../../input/barcode/#readerparams) is set to UDI, which acquires multiple data points (tokens) as specified in the Universal Device Identifier parameter(s) (also selected in the above-referenced section). 
 
 <img style="height:350px" src="../token_ip_output.png"/>

@@ -2,7 +2,7 @@
 title: About DataWedge
 layout: guide.html
 product: DataWedge
-productversion: '6.3'
+productversion: '6.4'
 ---
 
 ## Overview
@@ -10,11 +10,13 @@ productversion: '6.3'
 DataWedge provides barcode scanning and processing services for Zebra devices running Android. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
 
 #### This document applies to:
-* **DataWedge 6.3.x**, which requires:
+* **DataWedge 6.4.x**, which requires:
 * **Scanner Framework 5.1.0** or higher, and
 * **SimulScan 1.9 or higher** (on [devices that support SimulScan](../../../../simulscan))
 
-#### New in DataWedge 6.3
+#### New in DataWedge 6.4
+
+OLD OLD OLD
 
 **New APIs**: 
 
@@ -31,7 +33,7 @@ DataWedge provides barcode scanning and processing services for Zebra devices ru
 * **[SET_CONFIG](../api/setconfig) -** create new, or overwrite or update an existing Profile 
 * **[UNREGISTER_FOR_NOTIFICATION](../api/registerfornotification) -** cancels request for app notification.
 
-**DataWedge 6.3 builds on the new structure for launching Android intents introduced with DataWedge 6.2**, and can launch multiple intents as extras in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
+**DataWedge 6.4 continues to build on the new structure for launching Android intents introduced with DataWedge 6.2**, and can launch multiple intents as extras in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
 
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 

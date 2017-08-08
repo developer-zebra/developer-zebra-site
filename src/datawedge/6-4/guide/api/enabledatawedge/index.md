@@ -2,7 +2,7 @@
 title: Enable DataWedge
 layout: guide.html
 product: DataWedge
-productversion: '6.3'
+productversion: '6.4'
 ---
 
 ## ENABLE_DATAWEDGE

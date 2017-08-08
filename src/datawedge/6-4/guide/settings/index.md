@@ -2,7 +2,7 @@
 title: DataWedge Settings
 layout: guide.html
 product: DataWedge
-productversion: '6.3'
+productversion: '6.4'
 ---
   
 ## Overview

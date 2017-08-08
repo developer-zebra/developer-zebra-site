@@ -2,7 +2,7 @@
 title: Create Profile 
 layout: guide.html
 product: DataWedge
-productversion: '6.3'
+productversion: '6.4'
 ---
 
 ## CREATE_PROFILE

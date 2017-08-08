@@ -49,7 +49,6 @@ The following software must be installed prior to using the EMDK for Android.
 * TC8000 - KitKat,Lollipop
 * WT6000 - Lollipop
 
-
 ## Important News
 
 * **EMDK OS update package support limited to KitKat devices** - The EMDK v6.4 OS update package distributed with the PC/MAC installation will only support installation on KitKat devices. For all Lollypop+ devices, the EMDK update for a specific device will be distributed with the latest BSP or security incremental patch.

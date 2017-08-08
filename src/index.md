@@ -55,25 +55,27 @@ products:
         label: '5.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
-    url: /emdk-for-android/6-4/guide/about
+    url: /emdk-for-android/6-6/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /emdk-for-android/6-4/guide/about
+        url: /emdk-for-android/6-6/guide/about
       - title: Getting Started
-        url: /emdk-for-android/6-4/guide/gettingstarted
+        url: /emdk-for-android/6-6/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-android/6-4/tutorial/
+        url: /emdk-for-android/6-6/tutorial/
       - title: Samples
-        url: /emdk-for-android/6-4/samples
+        url: /emdk-for-android/6-6/samples
       - title: Guides
-        url: /emdk-for-android/6-4/guide/programming-guides
+        url: /emdk-for-android/6-6/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-android/6-4/guide/profile-manager-guides
+        url: /emdk-for-android/6-6/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-android/6-4/api
+        url: /emdk-for-android/6-6/api
     versions:
+      - url: emdk-for-android/6-6/guide/about/
+        label: '6.6'
       - url: emdk-for-android/6-4/guide/about/
         label: '6.4'
       - url: emdk-for-android/6-3/guide/about/
@@ -88,25 +90,27 @@ products:
         label: '4.0'
   - title: EMDK For Xamarin
     description: Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra devices.
-    url: /emdk-for-xamarin/2-4/guide/about
+    url: /emdk-for-xamarin/2-5/guide/about
     btn-text: Latest Docs
     image: /images/products/emdk-for-xamarin.png
     sections:
       - title: About
-        url: /emdk-for-xamarin/2-4/guide/about
+        url: /emdk-for-xamarin/2-5/guide/about
       - title: Getting Started
-        url: /emdk-for-xamarin/2-4/guide/gettingstarted
+        url: /emdk-for-xamarin/2-5/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-xamarin/2-4/tutorial/
+        url: /emdk-for-xamarin/2-5/tutorial/
       - title: Samples
-        url: /emdk-for-xamarin/2-4/samples
+        url: /emdk-for-xamarin/2-5/samples
       - title: Guides
-        url: /emdk-for-xamarin/2-4/guide/programming-guides
+        url: /emdk-for-xamarin/2-5/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-xamarin/2-4/guide/profile-manager-guides
+        url: /emdk-for-xamarin/2-5/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-xamarin/2-4/api
+        url: /emdk-for-xamarin/2-5/api
     versions:
+      - url: emdk-for-xamarin/2-5/guide/about/
+        label: '2.5'
       - url: emdk-for-xamarin/2-4/guide/about/
         label: '2.4'
       - url: emdk-for-xamarin/2-3/guide/about/
@@ -289,11 +293,11 @@ products:
         label: '2.3'
       - url: stagenow/2-2/about
         label: '2.2'
-  - title: I need to...
-    description: Not sure where to go? Click on "I need to..." for help figuring out which Zebra tool best suits the requirements, skills and experience of your organization.
+  - title: I Need To...
+    description: Not sure where to go? Click on "I Need To..." for help figuring out which Zebra tool best suits the requirements, skills and experience of your organization.
     url: /help
     btn-text: Latest Guides
-    image: /images/products/blue-question-mark.jpg
+    image: /images/logo_techdocs.png
     sections:
       - title: About TechDocs
         url: /about
@@ -313,7 +317,7 @@ menu:
   items:
     - title: About TechDocs
       url: /about
-    - title: I need to...
+    - title: I Need To...
       url: /help
     - title: Feedback
       url: /contact

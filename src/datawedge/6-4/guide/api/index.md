@@ -10,6 +10,8 @@ automenu:
       items:
         - title: How to Use DataWedge APIs 
           url: overview
+        - title: DataWedge APIs - Benefits & Usage Scenarios
+          url: https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges
     - title: DataWedge APIs
       items:
         - title: Clone Profile 

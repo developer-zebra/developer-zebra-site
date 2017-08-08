@@ -7,7 +7,7 @@ productversion: '6.4'
 
 ## Overview
 
-Barcode Input options specify the device hardware to be used to acquire barcode data before sending it for processing. Those included with DataWedge are explained below. **DataWedge also provides audio and other feedback to alert the user of scanning results and barcode type. The the [Scanner Parameters](../../decoders/#scanparams) section for more information**. 
+Barcode Input options specify the device hardware to be used to acquire barcode data before sending it for processing. Those included with DataWedge are explained below. **DataWedge also provides audio and other feedback to alert the user of scanning results and barcode type. The the [Scanner Parameters](#scanparams) section for more information**. 
 
 For input using SimulScan, see the [SimulScan Input Plug-in](../simulscan). 
 
@@ -684,6 +684,17 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 **Different Symbol Timeout -** This parameter is used to prevent the scanner from decoding another symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
+**Scanning Modes -** This parameter is used to select between Single (normal) mode and UDI mode, which acquires multiple inputs as specified in the selected Universal Device Identifier UDI parameter(s).  
+
+<img style="height:350px" src="scanning_modes.png"/>
+_Selecting the UDI scanning mode (as above) activates the selected UDI input parameters (shown below)_.  
+<br>
+<img style="height:350px" src="udi_params.png"/>
+_UDI settings vary by geographic region. Also see important note, below_. 
+<br>
+
+> **Note**: Output of collected UDI data might require settings adjustments of token separation character and output order. See the relevant sections of [Keystroke Output](../../output/keystroke) and/or [IP Output](../../output/ip) guides for more information. 
+
 **LCD Mode -** Enable/Disable LCD Mode, which enhances the ability of the imager to read barcodes from LCD displays such as cellphones. **Applies to Scan Module only**.
 
 **Note: Use of LCD mode might lead to performance degradation and a blinking reticle prior to decoding**.
@@ -781,6 +792,11 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 >**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
 ------
+
+**Other DataWedge Input Options**:
+
+* **[Mag-stripe Reader](../msr) -** credit/debit and identity cards
+* **[SimulScan](../simulscan) -** document capture and muti-barcode scanning 
 
 **Related guides**:
 

@@ -775,6 +775,13 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 
 ------
 
+**DataWedge Input Options**:
+
+* **[Barcodes](../barcode) -** scan barcodes of all types   
+* **[Mag-stripe Reader](../msr) -** capture credit/debit and identity card numbers
+* **[SimulScan](../simulscan) -** document capture and muti-barcode scanning 
+
+
 **Related Guides**:
 
 * [Profiles](../profiles)

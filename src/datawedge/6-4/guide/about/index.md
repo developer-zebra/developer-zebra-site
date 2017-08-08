@@ -14,11 +14,18 @@ DataWedge provides barcode scanning and processing services for Zebra devices ru
 * **Scanner Framework 5.1.0** or higher, and
 * **SimulScan 1.9 or higher** (on [devices that support SimulScan](../../../../simulscan))
 
-#### New in DataWedge 6.4
+To learn more about DataWedge APIs, read an excellent [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
 
-OLD OLD OLD
+-----
+
+### New in DataWedge 6.4
+ 
+>>> UDI and MORE TO COME!! 
+
 
 **New APIs**: 
+
+OLD OLD OLD
 
 * **[CLONE_PROFILE](../api/cloneprofile) -** creates a copy of an existing DataWedge Profile wuth settings.
 * **[DELETE_PROFILE](../api/deleteprofile) -** deletes Profile(s) from the device. 

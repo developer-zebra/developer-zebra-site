@@ -71,8 +71,8 @@ This call can be used with the following String tags:
 
 **Other DataWedge Output Options**:
 
-* [Internet Protocol](../ip) (network output via TCP or UDP) 
-* [Keystroke](../keystroke) (keyboard emulation)
+* **[Internet Protocol](../ip) -** network output via TCP or UDP 
+* **[Keystroke](../keystroke) -** keyboard emulation
 
 **Related guides**:
 

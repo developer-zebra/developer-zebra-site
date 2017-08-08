@@ -37,6 +37,34 @@ _IP Output options_
 
 &#53;. **Enter the Port number** if other than the default of 58627. 
 
+-----
+
+### UDI Data Collection
+This setting applies when the Scanning mode in [Barcode Reader Params](../../input/barcode/#readerparams) is set to UDI, which acquires multiple data points (tokens) as specified in the Universal Device Identifier parameter(s) (also selected in the above-referenced section). 
+
+<img style="height:350px" src="../token_ip_output.png"/>
+
+**Token selection -** allows the output order of acquired UDI data to be adjusted and the optional insertion of a Tab, Line Feed or Carriage Return character between tokens, if required.
+
+**To adjust UDI Token settings**: 
+
+**&#49;. Tap "Send tokens" to select the desired output** for acquired UDI data. 
+<img style="height:350px" src="../token_selector.png"/>
+**Tokens only -** DataWedge parses the UDI data into separate Tokens for output (separated by a separator character, if selected).
+
+**Barcodes and tokens -** DataWedge sends the barcode string appended by the tokenized data. If no separator character is selected (see Step 2), DataWedge sends two instances of the same data.
+
+**&#50;. Tap "Token separator" to select a separator character** to insert between Tokens, if desired. If Barcode and token mode is selected, this character is also inserted between the two. 
+<img style="height:350px" src="../separator.png"/>
+_This setting is not available if "Send tokens" is disabled_.
+<br>
+
+**&#51;. Tap "Token order" to include/exclude Tokens** from the output and adjust their output order. 
+<img style="height:350px" src="../token_order.png"/>
+<br>
+
+-----
+
 ### Using IP Output Plug-in without IPWedge
 
 To use IP Output to send captured data to a remote device that's not running IPWedge, the system at the receiving end must be running a client app that monitors a port for data coming via TCP or UDP on the port specified on the device as described above. **Warning: Zebra does not support this usage scenario**.
@@ -95,8 +123,8 @@ The PC is now ready to receive data from DataWedge IP Output (with IP address an
 
 **Other DataWedge Output Options**:
 
-* [Intent](../intent) (programmatic data hand-off)
-* [Keystroke](../keystroke) (keyboard emulation)
+* **[Intent](../intent) -** programmatic data hand-off
+* **[Keystroke](../keystroke) -** keyboard emulation
 
 **Related guides**:
 

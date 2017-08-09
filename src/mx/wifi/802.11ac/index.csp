@@ -16,7 +16,7 @@ parm:
     - code: 1
       mx: "7.0"
       name: Enable
-      description: Enables 802.11ac wireless protocol on the device. 
+      description: Enables 802.11ac and 802.11n wireless protocols on the device. 
     - code: 0
       mx: "7.0"
       name: Disable
@@ -24,3 +24,5 @@ parm:
 ---
 
 This is the On/Off switch for 802.11ac wireless protocol on the device, which operates on the 5GHz band and provides faster transfer rates than 802.11n and other earlier protocols. **Requires network infrastructure that explicitly supports the 802.11ac protocol**. 
+
+> **Note**: Enabling 802.11ac also enables the 802.11n protocol on the device. 

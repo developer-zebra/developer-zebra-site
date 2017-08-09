@@ -20,7 +20,7 @@ parm:
       name: MaxPasswordAttempts
       mx: "4.3"
       osx: "3.5"
-      description: Detect that the lockscreen in Multi-user MX has reached the maximum number of failed password attempts (see note, above). 
+      description: Detect when the Multi-user MX lockscreen has reached the maximum number of failed password attempts (9). See important note above. 
     - code: 2
       name: MDMClientRemoval 
       mx: "4.3"
@@ -42,4 +42,4 @@ parm:
       osx: "3.5"
       description: Detects that root-level access has been given to one or more device users and/or apps on the device. 
 ---
-Used to specify the name of the Threat to detect. **Note: Multi-user MX has been discontinued, rendering the MaxPasswordAttempts feature inoperable on most devices**. 
+Used to specify the name of the Threat to detect. **Note: Zebra Multi-user MX has been discontinued, rendering the MaxPasswordAttempts feature inoperable on most devices**. 

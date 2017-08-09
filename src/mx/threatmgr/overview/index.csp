@@ -11,11 +11,11 @@ The Threat Manager feature allows an application to control security Threats act
 
 * Enable/Disable Threat Detection
 * Detect common threats: 
-	* Maximum failed password attempts
 	* MDM client removal
 	* Microsoft Exchange ActiveSync Threat
 	* External Threat detected
 	* Device has been rooted
+	* Maximum failed password attempts (Multi-user MX lockscreen only)
 * Perform Countermeasures when a Threat is Detected
 	* Lock the device
 	* Perform a Factory Reset

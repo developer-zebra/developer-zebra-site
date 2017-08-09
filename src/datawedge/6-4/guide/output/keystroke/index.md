@@ -23,14 +23,14 @@ _Keystroke Output options_
 * **Line feed -** inject action key in place of ASCII LF (0x0A) character
 * **Carriage return -** inject action key in place of ASCII CR (0x0D) character
 
-**Multi byte character delay -** used to set an inter-character delay (in ms) for sending multibyte characters. This parameter can help avoid problems that arise when sending Unicode and multibyte characters to the Android browser. Value is set to zero by default. If experiencing errors in the delivery of keystrokes, increase the delay value in increments of 100 ms.
+**Multi byte character delay -** used to set an inter-character delay (in ms) for sending multi-byte characters. This parameter can help avoid problems that arise when sending Unicode and multi-byte characters to the Android browser. Value is set to zero by default. If experiencing errors in the delivery of keystrokes, increase the delay value in increments of 100 ms.
 
 **Key event delay -** used to set a delay (in ms) for dispatching control characters as keystrokes to the foreground application.
 
 -----
 
 ### UDI Data Output
-This setting applies when the Scanning mode in [Barcode Reader Params](../../input/barcode/#readerparams) is set to UDI, which acquires multiple data points (tokens) as specified in the Universal Device Identifier parameter(s) (also selected in the above-referenced section). 
+This setting applies when the Scanning mode in [Barcode Reader Params](../../input/barcode/#readerparams) is set to UDI, which acquires multiple data points (tokens) as specified in the Universal Device Identifier parameter(s) selected in the above-referenced section. 
 
 <img style="height:350px" src="../token_selection_highlighted.png"/>
 
@@ -40,6 +40,7 @@ This setting applies when the Scanning mode in [Barcode Reader Params](../../inp
 
 **&#49;. Tap "Send tokens" to select the desired output** for acquired UDI data. 
 <img style="height:350px" src="../token_selector.png"/>
+
 **Tokens only -** DataWedge parses the UDI data into separate Tokens for output (separated by a separator character, if selected).
 
 **Barcodes and tokens -** DataWedge sends the barcode string appended by the tokenized data. If no separator character is selected (see Step 2), DataWedge sends two instances of the same data.

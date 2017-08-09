@@ -40,7 +40,7 @@ _IP Output options_
 -----
 
 ### UDI Data Output
-This setting applies when the Scanning mode in [Barcode Reader Params](../../input/barcode/#readerparams) is set to UDI, which acquires multiple data points (tokens) as specified in the Universal Device Identifier parameter(s) (also selected in the above-referenced section). 
+This setting applies when the Scanning mode in [Barcode Reader Params](../../input/barcode/#readerparams) is set to UDI, which acquires multiple data points (tokens) as specified in the Universal Device Identifier parameter(s) selected in the above-referenced section. 
 
 <img style="height:350px" src="../token_ip_output.png"/>
 
@@ -50,6 +50,7 @@ This setting applies when the Scanning mode in [Barcode Reader Params](../../inp
 
 **&#49;. Tap "Send tokens" to select the desired output** for acquired UDI data. 
 <img style="height:350px" src="../token_selector.png"/>
+
 **Tokens only -** DataWedge parses the UDI data into separate Tokens for output (separated by a separator character, if selected).
 
 **Barcodes and tokens -** DataWedge sends the barcode string appended by the tokenized data. If no separator character is selected (see Step 2), DataWedge sends two instances of the same data.

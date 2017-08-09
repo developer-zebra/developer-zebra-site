@@ -264,8 +264,8 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ## New in EHS 2.6
 
-* Support for ET50/ET55 tablet computers runing Marshmallow
-* Bug fixes (see [Release Notes](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) for details) 
+* **Support for ET50/ET55** tablet computers runing Marshmallow
+* **Significant bug fixes** (For details, please visit the [EHS download page](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) and refer to the Release Notes for "Enterprise Home Screen v2.6.") 
 
 -----
 

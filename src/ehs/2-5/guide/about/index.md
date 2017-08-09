@@ -260,6 +260,9 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ## What's New
 
+#### EHS 2.5.3 includes significant bug fixes 
+For full details, please visit the [EHS download page](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) and refer to the Release Notes for "Enterprise Home Screen v2.5 Update1." 
+
 #### EHS 2.5 Now Supports:
 
 * **[TC51/TC56](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html) and [TC75x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html) Touch Computers** running Android Marshmallow 6.0.1 (see [Android 6.x Marshmallow Notes](#androidmarshmallownotes))

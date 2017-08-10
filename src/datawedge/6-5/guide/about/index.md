@@ -2,7 +2,7 @@
 title: About DataWedge
 layout: guide.html
 product: DataWedge
-productversion: '6.4'
+productversion: '6.5'
 ---
 
 ## Overview
@@ -41,16 +41,7 @@ The following APIs have been enhanced to include result codes.
 [RENAME_PROFILE]()
 [RESTORE_CONFIG]()
 
-
-
-* **[GET_VERSION_INFO](../api/getversioninfo) -** gets version numbers of DataWedge and of scanner and SimulScan frameworks on the device. 
-* **[GET_DATAWEDGE_STATUS](../api/getdatawedgestatus) -** returns the DataWedge state (enabled/disabled). 
-* **[RESTORE_CONFIG](../api/restoreconfig) -** restores a DataWedge configuration to its default settings.
-* **[SET_CONFIG](../api/setconfig) -** create new, or overwrite or update an existing Profile, associate with an app, set a scanner config, select intent and/or keystroke plug-in.
-* **[REGISTER_FOR_NOTIFICATION](../api/registerfornotification) -** tells DataWedge to inform specified app or activity of updates to scanner and/or Profile status. 
-* **[UNREGISTER_FOR_NOTIFICATION](../api/registerfornotification) -** cancels request for app notification.
-
-**DataWedge 6.4 continues to build on the new structure for launching Android intents introduced with DataWedge 6.2**, and can launch multiple intents as extras in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
+**DataWedge 6.5 continues to enhance the new structure for launching Android intents introduced with DataWedge 6.2**, and can launch multiple intents as extras in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
 
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 

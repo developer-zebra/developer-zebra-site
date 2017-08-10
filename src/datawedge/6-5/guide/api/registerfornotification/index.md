@@ -2,7 +2,7 @@
 title: Register for Notification 
 layout: guide.html
 product: DataWedge
-productversion: '6.4'
+productversion: '6.5'
 ---
 
 ## REGISTER_FOR_NOTIFICATION

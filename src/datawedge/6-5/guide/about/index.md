@@ -21,10 +21,14 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 ### New in DataWedge 6.5
 
 **New APIs**: 
-[SWITCH_SCANNER]()
-[SWITCH_SCANNER_PARAMS]()
-[SET_DISABLED_APP_LIST]()
-[GET_DISABLED_APP_LIST]()
+
+* **[SWITCH_SCANNER](../api/switchscanner) -**
+
+* **[SWITCH_SCANNER_PARAMS](../api/switchscannerparams) -**
+
+* **[SET_DISABLED_APP_LIST](../api/setdisabledapplist) -**
+
+* **[GET_DISABLED_APP_LIST](../api/getdisabledapplist) -**
 
 **Updated APIs**: 
 The following APIs have been enhanced to include result codes. 
@@ -41,7 +45,9 @@ The following APIs have been enhanced to include result codes.
 [RENAME_PROFILE]()
 [RESTORE_CONFIG]()
 
-**DataWedge 6.5 continues to enhance the new structure for launching Android intents introduced with DataWedge 6.2**, and can launch multiple intents as extras in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
+**DataWedge 6.5 continues to enhance its intent launching structure, which can launch multiple intents (as extras) in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
+
+-----
 
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 

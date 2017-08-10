@@ -33,7 +33,7 @@ Selecting "Always" locks EHS in as the default home app and **locks users out of
 
 Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
 
-> **Note: After selecting "Always," some devices require a five-second pause before restarting to ensure the change is permanent**. This applies to ET50, ET55, TC51, TC56, TC70x and TC75x devices **running Marshmallow**.
+> **Note: After selecting "Always," some devices require a 10-second pause before restarting to ensure the change remains persistent**. 
 
 Ready to get started? [Download Enterprise Home Screen 2.6](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
 
@@ -264,8 +264,8 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ## New in EHS 2.6
 
-* Support for ET50/ET55 tablet computers runing Marshmallow
-* Bug fixes (see [Release Notes](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) for details) 
+* **Support for ET50/ET55** tablet computers runing Marshmallow
+* **Significant bug fixes** (For details, please visit the [EHS download page](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) and refer to the Release Notes for "Enterprise Home Screen v2.6.") 
 
 -----
 

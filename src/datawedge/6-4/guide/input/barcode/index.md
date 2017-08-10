@@ -687,13 +687,11 @@ Reader Parameters control specific configuration options for the barcode reader 
 **Scanning Modes -** This parameter is used to select between Single (normal) mode and UDI mode, which acquires multiple inputs as specified in the selected Universal Device Identifier UDI parameter(s).  
 
 <img style="height:350px" src="scanning_modes.png"/>
-_Selecting the UDI scanning mode (as above) activates the selected UDI input parameters (shown below)_.  
-<br>
+_When UDI scanning mode is enabled (as above)_... 
 <img style="height:350px" src="udi_params.png"/>
-_UDI settings vary by geographic region. Also see important note, below_. 
-<br>
+..._the selected UDI input parameter(s) will be used_.  
 
-> **Note**: Output of collected UDI data might require settings adjustments of token separation character and output order. See the relevant sections of [Keystroke Output](../../output/keystroke) and/or [IP Output](../../output/ip) guides for more information. 
+> **Note**: Output of collected UDI data might require settings adjustments of token separation character and output order. UDI settings might also vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke) and/or [IP Output](../../output/ip) guides for more information.
 
 **LCD Mode -** Enable/Disable LCD Mode, which enhances the ability of the imager to read barcodes from LCD displays such as cellphones. **Applies to Scan Module only**.
 
@@ -725,7 +723,7 @@ _UDI settings vary by geographic region. Also see important note, below_.
 
 **Behavior of these levels will vary based on the marginless decoder selected. See the [Reduced Quiet Zone](#reducedquietzone) table for behaviors**. 
 
->**Note**: Higher marginless levels will increase decoding times and the risk of decoding errors. Zebra therefore recommends enabling only the symbologies that require a higher marginless level, and leaving all other symbologies at the default level of 1. 
+>**Note**: Higher marginless levels will increase decoding times and the risk of decoding errors. Zebra recommends enabling only the symbologies that require a higher marginless level and leaving all other symbologies at the default level of 1. 
 
 ------
 

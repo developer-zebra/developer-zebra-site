@@ -2,6 +2,8 @@
 title: DataWedge APIs
 description: DataWedge APIs operate primarily through Android intents--specific commands that can be used by other applications to control data capture without the need to directly access the DataWedge UI.  
 layout: list-apis.html
+product: 'DataWedge'
+productversion: '6.3'
 automenu:
   items:
     - title: General Information
@@ -38,8 +40,6 @@ automenu:
           url: restoreconfig
         - title: Scanner Input Plug-in 
           url: scannerinputplugin
-        - title: Set Config 
-          url: setconfig
         - title: Set Default Profile 
           url: setdefaultprofile
         - title: Soft Scan Trigger 

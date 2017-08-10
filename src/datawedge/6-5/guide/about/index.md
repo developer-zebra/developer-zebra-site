@@ -18,11 +18,30 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 -----
 
-### New in DataWedge 6.4
-
-* **Support for [UDI Reader parameters](../input/barcode/#readerparams) -** which enable simultaneous input of barcodes conforming to [Unique Device Identification](https://www.fda.gov/medicaldevices/deviceregulationandguidance/uniquedeviceidentification/udibasics/default.htm) standards. 
+### New in DataWedge 6.5
 
 **New APIs**: 
+[SWITCH_SCANNER]()
+[SWITCH_SCANNER_PARAMS]()
+[SET_DISABLED_APP_LIST]()
+[GET_DISABLED_APP_LIST]()
+
+**Updated APIs**: 
+The following APIs have been enhanced to include result codes. 
+
+[ENABLE_DATAWEDGE]()
+[SOFTSCAN_TRIGGER]()
+[ENABLE_SCANNER]()
+[SET_DEFAULT_PROFILE]()
+[RESET_DEFAULT_PROFILE]()
+[SWITCH_TO_PROFILE]()
+[CREATE_PROFILE]()
+[DELETE_PROFILE]()
+[CLONE_PROFILE]()
+[RENAME_PROFILE]()
+[RESTORE_CONFIG]()
+
+
 
 * **[GET_VERSION_INFO](../api/getversioninfo) -** gets version numbers of DataWedge and of scanner and SimulScan frameworks on the device. 
 * **[GET_DATAWEDGE_STATUS](../api/getdatawedgestatus) -** returns the DataWedge state (enabled/disabled). 

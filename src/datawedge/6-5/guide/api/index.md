@@ -28,6 +28,8 @@ automenu:
           url: getactiveprofile
         - title: Get DataWedge Status 
           url: getdatawedgestatus
+        - title: Get Disabled App List 
+          url: getdisabledapplist
         - title: Get Profiles List 
           url: getprofileslist
         - title: Get Version Info 
@@ -46,8 +48,14 @@ automenu:
           url: setconfig
         - title: Set Default Profile 
           url: setdefaultprofile
+        - title: Set Disabled App List 
+          url: setdisabledapplist
         - title: Soft Scan Trigger 
           url: softscantrigger
         - title: Switch to Profile 
           url: switchtoprofile
+        - title: Switch Scanner 
+          url: switchscanner
+        - title: Switch Scanner Params 
+          url: switchscannerparams
 ---

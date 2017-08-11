@@ -46,7 +46,7 @@ When ActivityA (or ActivityB) comes back to the foreground it will use `SWITCH_T
 
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.SWITCH_TO_PROFILE"
 
-**&lt;profile name**&gt;: The Profile name (a case-sensitive string) to set as the active Profile.
+**&lt;profile name&gt;**: The Profile name (a case-sensitive string) to set as the active Profile.
 
 ###Return Values
 (None)

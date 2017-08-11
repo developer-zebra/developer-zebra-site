@@ -9,54 +9,50 @@ productversion: '6.5'
 
 Introduced in DataWedge 6.5. 
 
-Used to switch to the specified Profile. **Specified Profile must not already be associated with another application**. A Profile can be associated with many applications, but an application cannot be associated with more than one Profile. 
+The application will be able to set scanner parameters (decoders, decoder params, reader params, etc.) by sending an intent to make the scanner works according to the application requirement. For example, when low light environment is detected application should be able to enable illumination in the scanner.
 
-### Profiles Recap
-DataWedge is based on Profiles and Plug-ins. A Profile contains information about how DataWedge will behave with a given application.
+Pre-conditions and assumptions when using the API:
+Barcode scanning should be enabled in the active profile
+DataWedge has to be enabled and respective profile has to be enabled.
+If Intent contains an invalid/ unsupported scanner parameters or values the result code(s) will be sent.
 
-Profile information consists of:
-
-* Associated application
-* Input plug-in configurations
-* Output plug-in configurations
-* Process plug-in configurations
-
-DataWedge includes a default Profile, Profile0, which is created automatically the first time DataWedge runs.
-
-Using Profiles, each application can have a specific DataWedge configuration. For example, each user application can have a Profile that outputs scanned data in the required format when that application comes to the foreground. DataWedge can be configured to process the same set of captured data differently based on the requirements of each application.
-
-### Note
-A single Profile can be associated with one or more activities or apps. However, an activity can be associated with no more than one Profile. 
-
-### Usage Scenario
-Let’s say an application has two activities. ActivityA only requires EAN13 barcodes to be scanned. ActivityB only requires MSR card data. ProfileB is configured to only scan EAN13 barcodes and is left unassociated. ProfileM is configured to only accept MSR input and is left unassociated. When ActivityA launches it uses `SWITCH_TO_PROFILE` to activate ProfileB. Similarly, when ActivityB launches it uses `SWITCH_TO_PROFILE` to activate ProfileM.
-
-If another activity/app comes to the foreground, DataWedge auto Profile switching will set the DataWedge Profile accordingly either to the default Profile or to an associated Profile.
-
-When ActivityA (or ActivityB) comes back to the foreground it will use `SWITCH_TO_PROFILE` to reset the Profile back to ProfileB (or ProfileM).
 
 ### Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.SWITCH_TO_PROFILE", "<profile name>");
+	i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS", "<profile name>");
 
 ### Parameters
 **ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.SWITCH_TO_PROFILE"
+**EXTRA_DATA** [String]: "com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS"
 
-**&lt;profile name**&gt;: The Profile name (a case-sensitive string) to set as the active Profile.
+**&lt;name, value&gt;** [Bundle]: The Profile name (a case-sensitive string) to set as the active Profile.
 
 ###Return Values
-(None)
+
+DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+
+* **DATAWEDGE_DISABLED -** DataWedge is disabled
+* **PROFILE_DISABLED -** Profile is disabled
+* **PLUGIN_DISABLED -** Scanner plug-in is disabled
+* **SCANNER_DISABLED -** Scanner is disabled
+* **PARAMETER_INVALID -** Given scanner parameter is invalid
+* **PARAMETER_NOT_SUPPORTED -** Given scanner parameter is not supported
+* **VALUE_INVALID -** Given value for a scanner parameter is invalid
+* **VALUE_NOT_SUPPORTED -** Given value for a scanner parameter is not supported
+
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 
 	:::term
 	$ adb logcat -s DWAPI
 
-Error messages are logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
+Error messages are logged for invalid actions, missing parameters or other failures.
+
+
+-----
 
 ### Example
 	// define action and data strings

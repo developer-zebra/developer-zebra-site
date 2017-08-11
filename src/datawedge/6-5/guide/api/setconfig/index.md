@@ -9,7 +9,7 @@ productversion: '6.5'
 
 Introduced in DataWedge 6.4.
 
-Used to create, update or replace a DataWedge Profile and its settings. Supports [nested bundles](../overview/#nestedbundles). To create a Profile without configuring its settings parameters, see [CREATE_PROFILE](../createprofile).
+Used to create, update or replace a DataWedge Profile and its settings. This API contains [nested bundles](../overview/#nestedbundles). To create a Profile without configuring its settings parameters, see [CREATE_PROFILE](../createprofile).
 
 ### Function Prototype
 

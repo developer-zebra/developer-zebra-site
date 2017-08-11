@@ -9,47 +9,52 @@ productversion: '6.5'
 
 Introduced in DataWedge 6.5. 
 
-Used to switch to the specified Profile. **Specified Profile must not already be associated with another application**. A Profile can be associated with many applications, but an application cannot be associated with more than one Profile. 
-
-### Profiles Recap
-DataWedge is based on Profiles and Plug-ins. A Profile contains information about how DataWedge will behave with a given application.
-
-Profile information consists of:
-
-* Associated application
-* Input plug-in configurations
-* Output plug-in configurations
-* Process plug-in configurations
-
-DataWedge includes a default Profile, Profile0, which is created automatically the first time DataWedge runs.
-
-Using Profiles, each application can have a specific DataWedge configuration. For example, each user application can have a Profile that outputs scanned data in the required format when that application comes to the foreground. DataWedge can be configured to process the same set of captured data differently based on the requirements of each application.
-
-### Note
-A single Profile can be associated with one or more activities or apps. However, an activity can be associated with no more than one Profile. 
-
-### Usage Scenario
-Let’s say an application has two activities. ActivityA only requires EAN13 barcodes to be scanned. ActivityB only requires MSR card data. ProfileB is configured to only scan EAN13 barcodes and is left unassociated. ProfileM is configured to only accept MSR input and is left unassociated. When ActivityA launches it uses `SWITCH_TO_PROFILE` to activate ProfileB. Similarly, when ActivityB launches it uses `SWITCH_TO_PROFILE` to activate ProfileM.
-
-If another activity/app comes to the foreground, DataWedge auto Profile switching will set the DataWedge Profile accordingly either to the default Profile or to an associated Profile.
-
-When ActivityA (or ActivityB) comes back to the foreground it will use `SWITCH_TO_PROFILE` to reset the Profile back to ProfileB (or ProfileM).
+Used to add, remove or update an item on list of apps and activities that are blocked from using DataWedge. Contains [nested bundles](../overview/#nestedbundles). This API also can be used by an app to prevent the app itself from using DataWedge. 
 
 ### Function Prototype
 
+	:::javascript
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.SWITCH_TO_PROFILE", "<profile name>");
+	i.putExtra("com.symbol.datawedge.api.SET_DISABLED_APP_LIST", "<bundle>");
 
 ### Parameters
 **ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.SWITCH_TO_PROFILE"
+**EXTRA_DATA** [Bundle]: "com.symbol.datawedge.api.SET_DISABLED_APP_LIST"
 
-**&lt;profile name&gt;**: The Profile name (a case-sensitive string) to set as the active Profile.
+#### MAIN BUNDLE
 
-###Return Values
-(None)
+The main bundle `DISABLED_APP_LIST` contains the following properties:
+
+* **CONFIG_MODE** [String]:
+ * **UPDATE**: Adds the specified packages and/or activities to the existing list 
+ * **REMOVE**: Removes the specified packages and/or activities from existing list
+ * **OVERWRITE**: Replaces the existing list with the specified list. **Erases existing list if no apps are specified**.   
+* **APP_LIST** [Bundle array]: 
+ * **APP_LIST [0]**:
+  * **PACKAGE_NAME [String]**: "com.symbol.emdk.barcodesample1"
+  * **ACTIVITY_LIST &lt;List&gt;**: [“com.symbol.emdk.barcodesample1.MainActivity” ,”com.symbol.emdk.barcodesample1.ResultsActivity”]
+
+* **APP_LIST [1]**:
+ * **PACKAGE_NAME**: "com.symbol.emdk.notificationsample1"
+ * **ACTIVITY_LIST &lt;List&gt;**: [“*”]
+
+See [Notes](#notes). 
+
+-----
+
+### Return Values
+
+**APP_LIST [ ]**:
+
+* **APP_LIST [0]**:
+ * **PACKAGE_NAME [String]**: "com.symbol.emdk.barcodesample1"
+ * **ACTIVITY_LIST &lt;List&gt;**: [“com.symbol.emdk.barcodesample1.MainActivity” ,”com.symbol.emdk.barcodesample1.ResultsActivity”]
+
+* **APP_LIST [1]**:
+ * **PACKAGE_NAME**: "com.symbol.emdk.notificationsample1"
+ * **ACTIVITY_LIST &lt;List&gt;**: [“*”]
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 
@@ -58,53 +63,87 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
 
+
+#### Result Codes
+
+DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+
+* **PARAMETER_INVALID -** CONFIG_MODE not defined or has invalid string value
+If mode is set to ‘UPDATE’ or ‘REMOVE’ and ‘APP_LIST’ is not provided.
+* **INVALID PACKAGE OR ACTIVITY -** Package or activity name contains invalid characters
+* **APP_ALREADY_IN_DISABLED_LIST -** package or activity already in Disabled App List
+* **APP_ALREADY_ASSOCIATED -** Activity is associated with an app
+* **APP_NOT_IN_DISABLED_LIST -** Package or activity not in disabled app list
+
+Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
+
+	:::term
+	$ adb logcat -s DWAPI
+
+Error messages are logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
+
+-----
+
 ### Example
-	// define action and data strings
-	String switchToProfile = "com.symbol.datawedge.api.ACTION";
-	String extraData = "com.symbol.datawedge.api.SWITCH_TO_PROFILE";
 
-	public void onResume() {
-	        super.onResume();
-	      
-	        // create the intent
-	        Intent i = new Intent();
-	      
-	        // set the action to perform
-	        i.setAction(switchToProfile);
-	      
-	        // add additional info
-	        i.putExtra(extraData, "myProfile");
-	      
-	        // send the intent to DataWedge
-	        context.this.sendBroadcast(i);
-	}
+The code below sends an intent to add apps to the Disabled Apps List in DataWedge. To verify results of the switch (or if errors are expected), include the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
 
-### Comments
-This API function will have no effect if the specified Profile does not exist or is already associated with an application.
+	:::javascript
+	Bundle bMain = new Bundle();
 
-DataWedge has a one-to-one relationship between Profiles and activities; a Profile can be associated only with a single activity. When a Profile is first created, it's not associated with any application, and will not be activated until associated. This makes it possible to create multiple unassociated Profiles.
+	bMain.putString("CONFIG_MODE ","UPDATE");
 
-This API function activates such Profiles.
+	Bundle bundleApp1 = new Bundle();
+	bundleApp1.putString("PACKAGE_NAME","com.android.calculator2");
+	bundleApp1.putStringArray("ACTIVITY_LIST", new String[]{
+	        "com.android.calculator2.Calculator",
+	        "com.android.calculator2.Licenses"});
 
-For example, let's say that ProfileA is unassociated and ProfileB is associated with activity B. If activity A is launched and uses the `SWITCH_TO_PROFILE` function to switch to ProfileA, then ProfileA will be active whenever activity A is in the foreground. When activity B comes to the foreground, DataWedge will automatically switch to ProfileB. 
+	Bundle bundleApp2 = new Bundle();
+	bundleApp2.putString("PACKAGE_NAME","com.android.phone");
+	bundleApp2.putStringArray("ACTIVITY_LIST", new String[]{
+	        "com.android.phone.EmargencyDialer",
+	        "com.android.phone.ADNList",
 
-When activity A returns to the foreground, the app must use `SWITCH_TO_PROFILE` again to switch back to ProfileA. This would be done in the `onResume` method of activity A.
+	        "com.android.phone.Settings"});
+
+	Bundle bundleApp3 = new Bundle();
+	bundleApp3.putString("PACKAGE_NAME","com.android.email");
+	bundleApp3.putStringArray("ACTIVITY_LIST", new String[]{"*"});
+
+	Bundle bundleApp4 = new Bundle();
+	bundleApp4.putString("PACKAGE_NAME","com.symbol.myzebraapp");
+
+
+	bMain.putParcelableArray("APP_LIST", new Bundle[]{
+	        bundleApp1
+	        ,bundleApp2
+	        ,bundleApp3
+	        ,bundleApp4
+	});
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.GET_DISABLED_APP_LIST", bMain);
+	sendBroadcast(i);
+
+-----
 
 ### Notes
-* Because DataWedge will automatically switch Profile when the activity is paused, Zebra recommends that this API function be called from the onResume method of the activity.
-* After switching to a Profile, this unassociated Profile does not get assigned to the application/activity and is available to be used in the future with a different app/activity.
-* For backward compatibility, DataWedge’s automatic Profile switching is not affected by the above API commands. This why the commands work only with unassociated Profiles and apps.
 
-DataWedge auto Profile switching works as follows: 
+* **In UPDATE mode**, if the specified package name exists in the Disabled Apps List, DataWedge add the specified activities to those previously specified for the package. If not, it adds the package and the specified activities.
 
-**Every second…**
-* Sets **newProfileId** to the associated Profile ID of the current foreground activity. 
-* If no associated Profile is found, sets **newProfileId** to the associated Profile ID of the current foreground app. 
-* If no associated Profile is found, sets **newProfileId** to the current default Profile (which  MAY NOT be Profile0). 
-* Checks the **newProfileId** against the **currentProfileId**. If they are different: 
-	* deactivates current Profile
-	* activates new Profile (**newProfileId**)
-	* sets **currentProfileId** = **newProfileId**
+If mode set as ‘REMOVE’, DataWedge will first check whether given package and activities are available in disabled list. If so it will remove those from the list, otherwise it will return the error as invalid parameters.
+
+APP_LIST [1] example
+If mode set as ‘UPDATE’ then DataWedge will be disabled for all the activities of this package.
+If mode set as ‘REMOVE’, DataWedge will remove whole package from the disabled list. 
+NOTE: DataWege consider wildcard (*) in this scenario only; it is not considered wildcard as substring of package name or activity name. In that case user, should mention whole package name and activity names as parameters.
+
+[after that]
+If bundle extra ‘APP_LIST’ is not given as parameter in bundle data, it is valid only when configuration mode is set to ‘OVERWRITE; in that case, it is considered as request to replace existing disabled list with NULL, and hence delete the whole packages and activities in the disabled list.        
+
+If a package or activity is associated with an app, modifications will not per permitted (must be confirmed; I got that from the result codes) 
 
 -----
 

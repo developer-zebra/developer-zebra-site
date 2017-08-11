@@ -9,7 +9,7 @@ productversion: '6.5'
 
 Introduced in DataWedge 6.5. 
 
-Returns the Disabled Apps List, a list of apps and their activities that are blocked from using DataWedge.
+Returns the Disabled Apps List, a list of apps and activities that are blocked from using DataWedge.
 
 ### Function Prototype
 
@@ -24,15 +24,15 @@ Returns the Disabled Apps List, a list of apps and their activities that are blo
 
 ###Return Values
 
-APP_LIST [ ]:
+**APP_LIST [ ]**:
 
-* APP_LIST [0]
-* **PACKAGE_NAME [string]**: "com.symbol.emdk.barcodesample1"
-* **ACTIVITY_LIST &lt;List&gt;**: [“com.symbol.emdk.barcodesample1.MainActivity” ,”com.symbol.emdk.barcodesample1.ResultsActivity”]
+* **APP_LIST [0]**:
+ * **PACKAGE_NAME [String]**: "com.symbol.emdk.barcodesample1"
+ * **ACTIVITY_LIST &lt;List&gt;**: [“com.symbol.emdk.barcodesample1.MainActivity” ,”com.symbol.emdk.barcodesample1.ResultsActivity”]
 
-APP_LIST [1]
-**PACKAGE_NAME**: "com.symbol.emdk.notificationsample1"
-**ACTIVITY_LIST &lt;List7gt;**: [“*”]
+* **APP_LIST [1]**:
+ * **PACKAGE_NAME**: "com.symbol.emdk.notificationsample1"
+ * **ACTIVITY_LIST &lt;List&gt;**: [“*”]
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 
@@ -44,32 +44,10 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 -----
 
 ### Example
-	// define action and data strings
-	String switchToProfile = "com.symbol.datawedge.api.ACTION";
-	String extraData = "com.symbol.datawedge.api.SWITCH_TO_PROFILE";
-
-	public void onResume() {
-	        super.onResume();
-	      
-	        // create the intent
-	        Intent i = new Intent();
-	      
-	        // set the action to perform
-	        i.setAction(switchToProfile);
-	      
-	        // add additional info
-	        i.putExtra(extraData, "myProfile");
-	      
-	        // send the intent to DataWedge
-	        context.this.sendBroadcast(i);
-	}
-
-NEW NEW NEW
 
 The code below sends an intent to request the current Disabled App List: 
 
 	:::javascript
-
 	// create the intent and action
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
@@ -96,9 +74,9 @@ The code below sends an intent to request the current Disabled App List:
 		        }
 		    }
 		}
-			else{
+		else{
 		    Log.d("TAG","Disabled app list is empty");
-		}
+			}
 
 
 ### Notes

@@ -51,18 +51,16 @@ The code below shows how to pass an intent to change to scanner "3" from the cur
 	:::javascript
 	String scannerIndex = “3”;
 
-	// create the intent
+	// create the intent and action
 		Intent i = new Intent();
-
-	// set the action to perform
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER", scannerIndex);
 
-	// ask to receive results
+	// generate result codes
 		i.putExtra("RECEIVE_RESULT","true");
 		i.putExtra("COMMAND_IDENTIFIER","123456789");
 		     
-	// send the intent to DataWedge
+	// send the intent
 		this.sendBroadcast(i); 
 
 ### Notes

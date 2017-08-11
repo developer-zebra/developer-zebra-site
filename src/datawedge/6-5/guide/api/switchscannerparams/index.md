@@ -9,26 +9,20 @@ productversion: '6.5'
 
 Introduced in DataWedge 6.5. 
 
-The application will be able to set scanner parameters (decoders, decoder params, reader params, etc.) by sending an intent to make the scanner works according to the application requirement. For example, when low light environment is detected application should be able to enable illumination in the scanner.
-
-Pre-conditions and assumptions when using the API:
-Barcode scanning should be enabled in the active profile
-DataWedge has to be enabled and respective profile has to be enabled.
-If Intent contains an invalid/ unsupported scanner parameters or values the result code(s) will be sent.
-
+Used to pass one or more [barcode, scanner and/or reader parameters](../../input/barcode/#decoderselection) as intent extras, updating the settings of the active Profile. This API can be used to change scanner settings in response to changing conditions in real time. For example, a developer might wish to enable scanner illumination whenever a low-light condition is detected. 
 
 ### Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS", "<profile name>");
+	i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS", "param_name", "value");
 
 ### Parameters
 **ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS"
 
-**&lt;name, value&gt;** [Bundle]: The Profile name (a case-sensitive string) to set as the active Profile.
+**&lt;name, value&gt;** [Bundle]: Accepts name-value pairs of scanner parameters
 
 ###Return Values
 
@@ -43,7 +37,6 @@ DataWedge will return the following error codes if the app includes the intent e
 * **VALUE_INVALID -** Given value for a scanner parameter is invalid
 * **VALUE_NOT_SUPPORTED -** Given value for a scanner parameter is not supported
 
-
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 
 	:::term
@@ -51,56 +44,58 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions, missing parameters or other failures.
 
-
 -----
 
 ### Example
-	// define action and data strings
-	String switchToProfile = "com.symbol.datawedge.api.ACTION";
-	String extraData = "com.symbol.datawedge.api.SWITCH_TO_PROFILE";
 
-	public void onResume() {
-	        super.onResume();
-	      
-	        // create the intent
-	        Intent i = new Intent();
-	      
-	        // set the action to perform
-	        i.setAction(switchToProfile);
-	      
-	        // add additional info
-	        i.putExtra(extraData, "myProfile");
-	      
-	        // send the intent to DataWedge
-	        context.this.sendBroadcast(i);
-	}
+The code below passes an intent that switches a scanner parameter for the active scanner in the active profile. To verify results of the switch (or if errors are expected), include the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
 
-### Comments
-This API function will have no effect if the specified Profile does not exist or is already associated with an application.
+		:::javascript
+	// create the intent and action
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
 
-DataWedge has a one-to-one relationship between Profiles and activities; a Profile can be associated only with a single activity. When a Profile is first created, it's not associated with any application, and will not be activated until associated. This makes it possible to create multiple unassociated Profiles.
+		Bundle bScannerParams = new Bundle();
+		bScannerParams.putString("illumination_mode", "off");
+		bScannerParams.putString("decode_audio_feedback_uri", "Pollux");
 
-This API function activates such Profiles.
+		i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS", bScannerParams);
 
-For example, let's say that ProfileA is unassociated and ProfileB is associated with activity B. If activity A is launched and uses the `SWITCH_TO_PROFILE` function to switch to ProfileA, then ProfileA will be active whenever activity A is in the foreground. When activity B comes to the foreground, DataWedge will automatically switch to ProfileB. 
+	// generate result codes
+		i.putExtra(“RECEIVE_RESULT”,"true");
+		i.putExtra("COMMAND_IDENTIFIER", "123456789"); //returned as it is with the result
 
-When activity A returns to the foreground, the app must use `SWITCH_TO_PROFILE` again to switch back to ProfileA. This would be done in the `onResume` method of activity A.
+	// send the intent
+		sendBroadcast(i);
+
+	// register the broadcast receiver (for result codes)
+		:::javascript
+		String command = intent.getStringExtra("COMMAND");
+		String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+		String result = intent.getStringExtra("RESULT");
+
+		Bundle bundle = new Bundle();
+		String resultInfo = "";
+
+		if (intent.hasExtra("RESULT_INFO")) {
+			bundle = intent.getBundleExtra("RESULT_INFO");
+			Set<String> keys = bundle.keySet();
+			    for (String key : keys) {
+			        if(key.equalsIgnoreCase("RESULT_CODE")){
+			            resultInfo += key + ": " + Arrays.toString(bundle.getStringArray(key));
+			        }else {
+			            resultInfo += key + ": " + bundle.getString(key) + "\n";
+		        }
+		    }
+		}
 
 ### Notes
-* Because DataWedge will automatically switch Profile when the activity is paused, Zebra recommends that this API function be called from the onResume method of the activity.
-* After switching to a Profile, this unassociated Profile does not get assigned to the application/activity and is available to be used in the future with a different app/activity.
-* For backward compatibility, DataWedge’s automatic Profile switching is not affected by the above API commands. This why the commands work only with unassociated Profiles and apps.
 
-DataWedge auto Profile switching works as follows: 
+**Pre-conditions and assumptions**:
 
-**Every second…**
-* Sets **newProfileId** to the associated Profile ID of the current foreground activity. 
-* If no associated Profile is found, sets **newProfileId** to the associated Profile ID of the current foreground app. 
-* If no associated Profile is found, sets **newProfileId** to the current default Profile (which  MAY NOT be Profile0). 
-* Checks the **newProfileId** against the **currentProfileId**. If they are different: 
-	* deactivates current Profile
-	* activates new Profile (**newProfileId**)
-	* sets **currentProfileId** = **newProfileId**
+* DataWedge and the respective Profile must be enabled
+* Barcode scanning should be enabled in the active Profile
+* If Intent contains an invalid or unsupported scanner parameter or value, result code(s) will be sent
 
 -----
 

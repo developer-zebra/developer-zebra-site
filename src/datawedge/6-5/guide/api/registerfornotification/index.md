@@ -7,6 +7,8 @@ productversion: '6.5'
 
 ## REGISTER_FOR_NOTIFICATION
 
+Introduced in DataWedge 6.4.
+
 Used to register/unregister an app to receive a notification when the status of a DataWedge parameter changes. 
 
 ### Function Prototype

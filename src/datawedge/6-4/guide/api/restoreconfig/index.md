@@ -7,6 +7,8 @@ productversion: '6.4'
 
 ## RESTORE_CONFIG
 
+Introduced in DataWedge 6.4.
+
 Resets all user-configured settings and restores DataWedge to its factory-default settings. **This action cannot be undone**. More about [DataWedge Restore](../../settings/#restoredefaults).
 
 ### Function Prototype

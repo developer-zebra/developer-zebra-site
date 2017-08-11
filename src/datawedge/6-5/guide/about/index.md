@@ -22,28 +22,24 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 **New APIs**: 
 
-* **[SWITCH_SCANNER](../api/switchscanner) -**
+* **[GET_DISABLED_APP_LIST](../api/getdisabledapplist) -** returns the list of apps prohibited from using DataWedge. 
+* **[SET_DISABLED_APP_LIST](../api/setdisabledapplist) -** allows updates to the Disabled Apps List, which specifies apps prohibited from using DataWedge. 
+* **[SWITCH_SCANNER](../api/switchscanner) -** allows an app to select from multiple connected scanners at runtime. 
+* **[SWITCH_SCANNER_PARAMS](../api/switchscannerparams) -** allows an app to set scanner parameters at runtime without persisting those settings. 
 
-* **[SWITCH_SCANNER_PARAMS](../api/switchscannerparams) -**
+These **updated APIs** have been enhanced to include result codes: 
 
-* **[SET_DISABLED_APP_LIST](../api/setdisabledapplist) -**
-
-* **[GET_DISABLED_APP_LIST](../api/getdisabledapplist) -**
-
-**Updated APIs**: 
-The following APIs have been enhanced to include result codes. 
-
-[ENABLE_DATAWEDGE]()
-[SOFTSCAN_TRIGGER]()
-[ENABLE_SCANNER]()
-[SET_DEFAULT_PROFILE]()
-[RESET_DEFAULT_PROFILE]()
-[SWITCH_TO_PROFILE]()
-[CREATE_PROFILE]()
-[DELETE_PROFILE]()
-[CLONE_PROFILE]()
-[RENAME_PROFILE]()
-[RESTORE_CONFIG]()
+[CLONE_PROFILE](../api/cloneprofile)
+[CREATE_PROFILE](../api/createprofile)
+[DELETE_PROFILE](../api/deleteprofile)
+[ENABLE_DATAWEDGE](../api/enabledatawedge)
+[ENABLE_SCANNER](../api/enablescanner)
+[RENAME_PROFILE](../api/renameprofile)
+[RESET_DEFAULT_PROFILE](../api/resetdefaultprofile)
+[RESTORE_CONFIG](../api/restoreconfig)
+[SET_DEFAULT_PROFILE](../api/setdefaultprofile)
+[SOFTSCAN_TRIGGER](../api/softscantrigger)
+[SWITCH_TO_PROFILE](../api/switchtoprofile)
 
 **DataWedge 6.5 continues to enhance its intent launching structure, which can launch multiple intents (as extras) in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
 

@@ -7,6 +7,8 @@ productversion: '6.4'
 
 ## GET_DATAWEDGE_STATUS 
 
+Introduced in DataWedge 6.4.
+
 Gets the name of the Profile currently in use by DataWedge.
 
 ### Function Prototype

@@ -1,11 +1,13 @@
 ---
-title: Switch to Profile 
+title: Switch Scanner 
 layout: guide.html
 product: DataWedge
 productversion: '6.5'
 ---
 
-## SWITCH_TO_PROFILE
+## SWITCH_SCANNER
+
+Introduced in DataWedge 6.5. 
 
 Used to switch to the specified Profile. **Specified Profile must not already be associated with another application**. A Profile can be associated with many applications, but an application cannot be associated with more than one Profile. 
 

@@ -1,11 +1,13 @@
 ---
-title: Switch to Profile 
+title: Set Disabled App List
 layout: guide.html
 product: DataWedge
 productversion: '6.5'
 ---
 
-## SWITCH_TO_PROFILE
+## SET_DISABLED_APP_LIST
+
+Introduced in DataWedge 6.5. 
 
 Used to switch to the specified Profile. **Specified Profile must not already be associated with another application**. A Profile can be associated with many applications, but an application cannot be associated with more than one Profile. 
 

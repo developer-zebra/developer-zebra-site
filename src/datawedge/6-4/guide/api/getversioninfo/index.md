@@ -7,6 +7,8 @@ productversion: '6.4'
 
 ## GET_VERSION_INFO
 
+Introduced in DataWedge 6.4.
+
 Gets the version numbers of DataWedge, SimulScan, the Scanner Framework/Decoder Library currently installed on the device. 
 
 ### Function Prototype

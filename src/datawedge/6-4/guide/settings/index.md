@@ -142,6 +142,8 @@ If an external SD card is installed, an alternate path can be selected:
 
 &#51;. **Retrieve the exported file from the device** and distribute to other devices manually or through a Mobile Device Management (MDM) system. 
 
+> **DO NOT RENAME THE EXPORTED FILE**. Doing so will result in errors and import failure. 
+
 **Warning: If a Profile exists on the device with the same name as one being imported, the existing profile will be overwritten by the imported one**. 
 
 -----

@@ -120,9 +120,9 @@ Once DataWedge is set up and configured as desired on a device, its settings fil
 -----
 
 ### Export a Profile
-Once a DataWedge Profile is set up and configured as desired on a device, it can be exported and distributed for use on other devices throughout an enterprise. This enables a company to fine-tune settings for the acquisition, manipulation and disposition of data for specific applications(s), and easily propagate those settings to others in the organization.  
+Once a DataWedge Profile is set up and configured as desired on a device, it can be exported and distributed for use on other devices throughout an enterprise. This enables a company to fine-tune settings for the acquisition, manipulation and disposition of data for specific applications(s), and easily propagate those settings to others in the organization. 
 
-If more than one Profile is to be created, exported and distributed at the same time, it might be beneficial to create and export the Profiles together as a single DataWedge Configuration file. 
+**Note** If more than one Profile is to be created, exported and distributed at the same time, it might be beneficial to create and export the Profiles together as a single DataWedge Configuration file. 
 
 **To Export a Profile**: 
 
@@ -141,6 +141,8 @@ If an external SD card is installed, an alternate path can be selected:
 `/storage/sdcard1/Android/data/com.symbol.datawedge/files/dwprofile_profilename.db`
 
 &#51;. **Retrieve the exported file from the device** and distribute to other devices manually or through a Mobile Device Management (MDM) system. 
+
+> **DO NOT RENAME THE EXPORTED FILE**. Doing so will result in errors and import failure. 
 
 **Warning: If a Profile exists on the device with the same name as one being imported, the existing profile will be overwritten by the imported one**. 
 

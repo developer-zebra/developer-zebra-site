@@ -134,7 +134,7 @@ If an external SD card is installed, an alternate path can be selected:
 
 **Notes**:
 * **If a Profile exists on the device with the same name** as one being imported, the existing profile will be overwritten by the imported one. 
-* **Profiles created on one device might be incompatible with another** due to variances in device peripherals and configurations. 
+* **Profiles created on one device might be incompatible with another** due to variations in device peripherals and configurations. 
 
 ### Restore (defaults)
 DataWedge has the ability to reset all user-configured settings and restore them to their original factory defaults. **This action cannot be undone**. 

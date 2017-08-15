@@ -92,7 +92,8 @@ To learn how to access DataWedge programmatically, see the [DataWedge APIs](../a
 -----
 
 ## Mass Deployment
-Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system.  
+
+Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system. DataWedge 6.5 improves compatibility of exported Profiles. Profiles created with DataWedge 6.5 will work on any Zebra device model, as long as it's running DataWedge 6.5 or higher. 
 
 ### Export a Config
 Once DataWedge is set up and configured as desired on a device, its settings file can be exported, distributed to other devices, imported and activated automatically (or imported manually, as above). 

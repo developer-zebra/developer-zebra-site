@@ -15,42 +15,53 @@ menu:
 ---
 ## Overview
 
-Zebra Technologies provides devices for the enterprise to acquire, process and consume myriad forms of data, be it from a barcode, magnetic stripe, RFID tag, smart card, image, text or other technology. To enable Zebra partners and customers of varying skills and requirements to make use of its devices, we offer a broad array of tools designed to suit the requirements and capabilities of most any organization. 
+Zebra Technologies provides devices for the enterprise to acquire, process and consume data from barcodes, magnetic stripe cards, RFID tags, smart cards, images, text and other technologies. To enable Zebra partners and customers of varying skills and requirements to make use of its devices, Zebra offers a broad array of tools designed to suit the requirements and capabilities of most any organization. 
 
 -----
 
 ## Scanning
 Zebra mobile and touch computers are equipped with a variety of scanning devices, each of which can be accessed through software included with the device or with apps developed by a partner or customer. Zebra's solutions are described below in order from easiest (and with the least coding required) to the most powerful and complex.  
 
-### DataWedge - Easiest; Coding Optional
+### DataWedge
+##### PROS: Free; Easy to set up; Built into all Zebra devices; Controlled with UI or intents
+##### CONS: Fixed feature set; Programmatic access requires coding
 
-[DataWedge](../datawedge) provides barcode scanning and processing services for devices running Android, and is the fastest and easiest way to add scanning to an existing app. Included with every Zebra device, DataWedge enables any app on the device to acquire scanned data without using the scanner APIs directly. DataWedge can be configured in minutes to automatically activate a particular scanner or reader whenever a particular app is launched, and can manipulate and hand off acquired data according to simple or complex rules. 
+> **Zebra recommends considering DataWedge before any other Zebra solution**. 
 
-**PROS**: **No coding required**, APIs increase power and versatility
+[DataWedge](../datawedge) provides barcode scanning and processing services for devices running Android, and is the fastest and easiest way to perform scanning out of the box or add it to an existing app. Included with every Zebra device, DataWedge enables any app on the device to acquire scanned data without the need to access the scanner APIs directly. DataWedge can be configured in minutes to automatically activate the desired scanner or reader whenever a particular app is launched, and can modify and pass acquired data to an app according to simple or complex rules. 
 
-**CONS**: Fixed feature set
-
------
-
-### SimulScan - Easy, No Coding; Some Setup Required
-
-[SimulScan](../simulscan) is included only with [supported devices](../simulscan/1-1/guide/about/#supporteddevices), and is designed to optimize workflow by enabling acquisition of multiple points of data in a single step. SimulScan is well suited to organizations in which scanning is frequent, and scanned forms have one or more barcodes, or if multiple data types (such as barcodes, text and images) are to be acquired. Optionally, SimulScan can integrate with an organization's native Android app and parse captured data directly into the app. 
-
-**PROS**: **No coding required**, APIs increase efficiency, effectiveness
-
-**CONS**: Limited device support; longer setup time than DataWedge; subject to per-device licensing
+##### Go to [DataWedge docs](../datawedge). 
 
 -----
 
-[Enterprise Browser](../enterprise-browser) is a small-footprint web browser for which apps can be built   
+### SimulScan
+##### PROS: Easy to set up; Built into many devices; No coding required; Controlled with APIs 
+##### CONS: Limited device support; Setup can be complex; Advanced features require per-device licensing
 
-builds cross-platform scanning apps with minimal coding. 
+[SimulScan](../simulscan) is designed to optimize workflow by enabling acquisition of multiple points of data in a single step. It is included with [supported devices](../simulscan/1-1/guide/about/#supporteddevices) and is free for many scanning scenarios. SimulScan is well suited to organizations in which scanning is frequent and scanned forms have either one or more barcodes, or multiple data types to acquire (such as barcodes, text and images). Optionally, SimulScan can integrate with an organization's native Android app and parse captured data directly into the app. **A per-device licensing requirement applies to some scenarios**. 
 
-Use EMDK for Android or EMDK for Xamarin SDKs to build or modify Java or C# apps that acquire data on Android devices. 
+##### Go to [SimulScan docs](../simulscan).
 
-**PROS**: Uses familiar HTML interface; apps are cross-platform; broad device support
+-----
 
-**CONS**: Longer setup time; some JavaScript coding; per-device licensing required 
+### Enterprise Browser
+##### PROS: Build UIs with HTML5; Apps are cross-platform; Broad device support; Access to device APIs
+##### CONS: Longer setup time; Requires JavaScript coding; Per-device licensing required 
+
+[Enterprise Browser](../enterprise-browser) is a small-footprint web browser platform for building cross-platform scanning apps with minimal coding. 
+
+##### Go to [Enterprise Browser docs](../enterprise-browser). 
+
+-----
+
+### EMDK
+##### PROS: Most customizable solution; Complete control of source code 
+##### CONS: Requires Java or C# coding; Potentially long setup and testing times  
+
+Organizations with access to Java and/or C# developers can use [EMDK for Android docs](../emdk-for-android) and [EMDK for Xamarin docs](../emdk-for-xamarin) SDKs to build or modify Java or C# apps that acquire data on Android devices. Both SDKs offer simplified access to device APIs through Profile Manager, which automatically generates the XML to drive Zebra's device management layer.   
+
+##### Go to [EMDK for Android docs](../emdk-for-android). 
+##### Go to [EMDK for Xamarin docs](../emdk-for-xamarin). 
 
 -----
 
@@ -98,13 +109,10 @@ EHS can be used with or without an Enterprise Browser app. For an concise overvi
 
 -----
 
-## Migrating Apps
-When the need arises to migrate existing apps from one device platform to another, such as from Windows CE to Android,  
+## Migrate An App
+When the need arises to move an existing app from one device platform to another, such as from Windows CE to Android, Zebra offers multiple solutions to ease the transition. 
 
 Migration tools can put a new face on older apps, modernize apps for terminal emulation or help move apps from older platforms to new ones.
-
-All Touch TE (fake)
-/link-os/latest/android
 
 Pocket Browser
 /enterprise-browser/1-6/guide/pb2/
@@ -123,11 +131,22 @@ C# to Android
 
 -----
 
-## Modernize the UI of an app
+## Modernize An App
+
+Some legacy apps are simply too mission-critical to risk losing, even for a day. For such situations, Zebra offers solutions that can put a modern face on green-screen and other types of legacy apps while leaving the underlying business logic intact.  
+
+All Touch TE (fake)
+/link-os/latest/android
+
+SAP ITSmobile
+
+
+
+Modernize user interface
 
 -----
 
-## Managing and Staging Devices
+## Manage and Staging Devices
 StageNow is Zebra's world-class device staging and management system. 
 
 StageNow

@@ -7,9 +7,9 @@ productversion: '6.5'
 
 ## REGISTER_FOR_NOTIFICATION
 
-Introduced in DataWedge 6.4.
+Introduced in DataWedge 6.4. 
 
-Used to register/unregister an app to receive a notification when the status of a DataWedge parameter changes. 
+Used to register/unregister an app to receive a notification when the status of a DataWedge parameter changes by means of an intent. **This function does not monitor changes made using the device UI**. 
 
 ### Function Prototype
 
@@ -31,7 +31,7 @@ Used to register/unregister an app to receive a notification when the status of 
 
 * `APPLICATION_NAME` - Package name of the app to register 
 * `NOTIFICATION_TYPE` - Supported types:
- * `PROFILE_SWITCH`  
+ * `PROFILE_SWITCH` - `PROFILE_IMPORTED`; `FULL_DB_IMPORTED`
  * `SCANNER_STATUS` 
 
 ### Return Values

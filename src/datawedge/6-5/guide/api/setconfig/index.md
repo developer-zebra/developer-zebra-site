@@ -49,10 +49,10 @@ The PLUGIN_CONFIG bundle is configured using the following properties:
  * BARCODE input
  * INTENT output
  * KEYSTROKE output
+ * BDF (basic data formatting) processing
 
 To be implemented in the future: 
   * ADF (advanced data formatting) processing 
-  * BDF (basic data formatting) processing 
   * DCP input
   * IP output
   * MSR input
@@ -64,15 +64,32 @@ To be implemented in the future:
 The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the table below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
 
 * **BARCODE –** Use values from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
+
+* **BDF -** Applies Basic Data Formatting rules to the acquired data. 
+
+ `bdf_enabled` [string]- true/false
+
+ `bdf_prefix` [string]- Prefix to acquired data
+
+ `bdf_suffix` [string]- Suffix to acquired data
+
+ `bdf_send_data` [string]- true/false
+
+ `bdf_send_hex` [string]- true/false
+
+ `bdf_send_tab` [string]- true/false
+
+ `bdf_send_enter` [string]- true/false
+
 * **INTENT -** Use values as indicated below: 
 
- `intent_output_enabled` [string] &lt;true/false&gt;
+ `intent_output_enabled` [string]- true/false
 
  `intent_action` [string]
 
- `intent_category` [string]  
+ `intent_category` [string] 
 
- `intent_delivery` [string] Use "0" for Start Activity, "1" for Start Service, "2" for Broadcast
+ `intent_delivery` [string]- Use "0" for Start Activity, "1" for Start Service, "2" for Broadcast
 
 <!-- `intent_flag_receiver_foreground` [string] &lt;true/false&gt; -->
 
@@ -98,77 +115,108 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters
 
-### Example
+### Examples
 
-	//MAIN BUNDLE PROPERTIES
-	Bundle bMain = new Bundle();
-	bMain.putString("PROFILE_NAME","Profile12");
-	bMain.putString("PROFILE_ENABLED","true");
-	bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
+#### Code for nested bundles
 
-	//PLUGIN_CONFIG BUNDLE PROPERTIES
-	Bundle bConfig = new Bundle();
-	bConfig.putString("PLUGIN_NAME","Barcode");
-	bConfig.putString("RESET_CONFIG","true"); 
+	// MAIN BUNDLE PROPERTIES
+		Bundle bMain = new Bundle();
+		bMain.putString("PROFILE_NAME","Profile12");
+		bMain.putString("PROFILE_ENABLED","true");
+		bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
+
+	// PLUGIN_CONFIG BUNDLE PROPERTIES
+		Bundle bConfig = new Bundle();
+		bConfig.putString("PLUGIN_NAME","Barcode");
+		bConfig.putString("RESET_CONFIG","true"); 
 
 
-	//PARAM_LIST BUNDLE PROPERTIES
-	Bundle bParams = new Bundle();
-	bParams.putString("current-device-id","0");
-	bParams.putString("scanner_input_enabled","true");
+	// PARAM_LIST BUNDLE PROPERTIES
+		Bundle bParams = new Bundle();
+		bParams.putString("current-device-id","0");
+		bParams.putString("scanner_input_enabled","true");
 	// 
 	// NOTE: The "current-device-id" varies by device; it depends on the number of
 	// supported scanners (internal and/or external) installed and/or connected to 
 	// the device at the time the index is generated.     
 	// 
 
-	//PUT bParams into bConfig
-	bConfig.putBundle("PARAM_LIST", bParams);
+	// PUT bParams into bConfig
+		bConfig.putBundle("PARAM_LIST", bParams);
 
-	//PUT bConfig into bMain
-	bMain.putBundle("PLUGIN_CONFIG", bConfig);
+	// PUT bConfig into bMain
+		bMain.putBundle("PLUGIN_CONFIG", bConfig);
 
 	// APP_LIST BUNDLES
-	Bundle bundleApp1 = new Bundle();
-	bundleApp1.putString("PACKAGE_NAME","com.symbol.emdk.simulscansample1");
-	bundleApp1.putStringArray("ACTIVITY_LIST", new String[]{
-	        "com.symbol.emdk.simulscansample1.DeviceControl",
-	        "com.symbol.emdk.simulscansample1.MainActivity",
-	        "com.symbol.emdk.simulscansample1.ResultsActivity.*",
-	        "com.symbol.emdk.simulscansample1.ResultsActivity2",
-	        "com.symbol.emdk.simulscansample1.SettingsFragment1"});
+		Bundle bundleApp1 = new Bundle();
+		bundleApp1.putString("PACKAGE_NAME","com.symbol.emdk.simulscansample1");
+		bundleApp1.putStringArray("ACTIVITY_LIST", new String[]{
+		        "com.symbol.emdk.simulscansample1.DeviceControl",
+		        "com.symbol.emdk.simulscansample1.MainActivity",
+		        "com.symbol.emdk.simulscansample1.ResultsActivity.*",
+		        "com.symbol.emdk.simulscansample1.ResultsActivity2",
+		        "com.symbol.emdk.simulscansample1.SettingsFragment1"});
+
+		Bundle bundleApp2 = new Bundle();
+		bundleApp2.putString("PACKAGE_NAME","com.example.intents.datawedgeintent");
+		bundleApp2.putStringArray("ACTIVITY_LIST", new String[]{
+		        "com.example.intents.datawedgeintent.DeviceControl",
+		        "com.example.intents.datawedgeintent.MainActivity",
+		        "com.example.intents.datawedgeintent.ResultsActivity",
+		        "com.example.intents.datawedgeintent.SettingsFragment1"});
+
+		Bundle bundleApp3 = new Bundle();
+		bundleApp3.putString("PACKAGE_NAME","*");
+		bundleApp3.putStringArray("ACTIVITY_LIST", new String[]{"*"});
 
 
-	Bundle bundleApp2 = new Bundle();
-	bundleApp2.putString("PACKAGE_NAME","com.example.intents.datawedgeintent");
-	bundleApp2.putStringArray("ACTIVITY_LIST", new String[]{
-	        "com.example.intents.datawedgeintent.DeviceControl",
-	        "com.example.intents.datawedgeintent.MainActivity",
-	        "com.example.intents.datawedgeintent.ResultsActivity",
-	        "com.example.intents.datawedgeintent.SettingsFragment1"});
+		Bundle bundleApp4 = new Bundle();
+		bundleApp4.putString("PACKAGE_NAME","com.symbol.myzebraapp");
+		bundleApp4.putStringArray("ACTIVITY_LIST", new String[]{"*"});
 
-	Bundle bundleApp3 = new Bundle();
-	bundleApp3.putString("PACKAGE_NAME","*");
-	bundleApp3.putStringArray("ACTIVITY_LIST", new String[]{"*"});
+	// PUT THEM ALL TOGETHER INTO THE MAIN BUNDLE
+		bMain.putParcelableArray("APP_LIST", new Bundle[]{
+		        bundleApp1
+		        ,bundleApp2
+		        ,bundleApp3
+		        ,bundleApp4
+		});
 
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
 
-	Bundle bundleApp4 = new Bundle();
-	bundleApp4.putString("PACKAGE_NAME","com.symbol.myzebraapp");
-	bundleApp4.putStringArray("ACTIVITY_LIST", new String[]{"*"});
+		this.sendBroadcast(i);
 
-	//PUT THEM ALL TOGETHER INTO THE MAIN BUNDLE
-	bMain.putParcelableArray("APP_LIST", new Bundle[]{
-	        bundleApp1
-	        ,bundleApp2
-	        ,bundleApp3
-	        ,bundleApp4
-	});
+#### Code to send a BDF configuration
 
-	Intent i = new Intent();
-	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+	// Main bundle properties
+		Bundle bMain = new Bundle();
+		bMain.putString("PROFILE_NAME","Profile12");
+		bMain.putString("PROFILE_ENABLED","true");
+		bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
 
-	this.sendBroadcast(i);
+	// plugin_config bundle properties
+		Bundle bConfig = new Bundle();
+		bConfig.putString("PLUGIN_NAME","bdf");
+		bConfig.putString("RESET_CONFIG","true");
+		bConfig.putString("OUTPUT_PLUGIN_NAME","keystroke");
+
+	// param_list bundle properties
+		Bundle bParams = new Bundle();
+		bParams.putString("bdf_enabled","true");
+		bParams.putString("bdf_prefix","AAA");
+		bParams.putString("bdf_send_enter","true");
+
+		bConfig.putBundle("PARAM_LIST", bParams);
+
+		bMain.putBundle("PLUGIN_CONFIG", bConfig);
+
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+		sendBroadcast(i);
+
 
 -----
 

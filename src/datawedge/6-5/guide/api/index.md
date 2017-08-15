@@ -26,6 +26,8 @@ automenu:
           url: enumeratescanners
         - title: Get Active Profile 
           url: getactiveprofile
+        - title: Get Config 
+          url: getconfig
         - title: Get DataWedge Status 
           url: getdatawedgestatus
         - title: Get Disabled App List 

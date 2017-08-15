@@ -27,49 +27,61 @@ Used to add, remove or update an item on list of apps and activities that are bl
 
 The main bundle `DISABLED_APP_LIST` contains the following properties:
 
-* **CONFIG_MODE** [String]:
- * **UPDATE**: Adds the specified packages and/or activities to the existing list 
- * **REMOVE**: Removes the specified packages and/or activities from existing list
- * **OVERWRITE**: Replaces the existing list with the specified list. **Erases existing list if no apps are specified**.   
-* **APP_LIST** [Bundle array]: 
- * **APP_LIST [0]**:
-  * **PACKAGE_NAME [String]**: "com.symbol.emdk.barcodesample1"
-  * **ACTIVITY_LIST &lt;List&gt;**: [“com.symbol.emdk.barcodesample1.MainActivity” ,”com.symbol.emdk.barcodesample1.ResultsActivity”]
+**CONFIG_MODE** [String]:
+* **UPDATE**: Adds the specified packages and/or activities to the existing list 
+* **REMOVE**: Removes the specified packages and/or activities from existing list
+* **OVERWRITE**: Replaces the existing list with the specified list. **Erases existing list if no apps are specified**.
 
-* **APP_LIST [1]**:
- * **PACKAGE_NAME**: "com.symbol.emdk.notificationsample1"
- * **ACTIVITY_LIST &lt;List&gt;**: [“*”]
-
-See [Notes](#notes). 
+**APP_LIST** [Bundle array]: 
+* **APP_LIST [0]**:
+ * **PACKAGE_NAME** [String]: Package name of the app. Required field; wildcard ("&#42;") not supported. 
+ * **ACTIVITY_LIST** [Array of strings]: Leave blank or use wildcard ("&#42;") to indicate whole package.  
 
 -----
 
-### Return Values
+#### Examples
 
-**APP_LIST [ ]**:
+**APP_LIST [0]**:
+* **PACKAGE_NAME** ["com.symbol.emdk.notificationsample1"]
+* **ACTIVITY_LIST** [“com.symbol.emdk.barcodesample1.MainActivity” ,”com.symbol.emdk.barcodesample1.ResultsActivity”] 
 
-* **APP_LIST [0]**:
- * **PACKAGE_NAME [String]**: "com.symbol.emdk.barcodesample1"
- * **ACTIVITY_LIST &lt;List&gt;**: [“com.symbol.emdk.barcodesample1.MainActivity” ,”com.symbol.emdk.barcodesample1.ResultsActivity”]
+For the scenario above...
 
-* **APP_LIST [1]**:
- * **PACKAGE_NAME**: "com.symbol.emdk.notificationsample1"
- * **ACTIVITY_LIST &lt;List&gt;**: [“*”]
+* **In UPDATE mode**, if the specified package name already exists in the Disabled Apps List, DataWedge adds the specified activities to those previously specified for the package. If not, it adds the package and the specified activities.
 
-Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
+* **In REMOVE mode**, if the specified package name exists in the Disabled Apps List, DataWedge removes it. It otherwise returns an `INVALID_PARAMETER` error.
 
-	:::term
-	$ adb logcat -s DWAPI
+-----
 
-Error messages are logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
+**APP_LIST [1]**:
+* **PACKAGE_NAME** [String]: "com.symbol.emdk.notificationsample1"
+* **ACTIVITY_LIST** [“*”]
 
+For the scenario above...
 
-#### Result Codes
+* **In UPDATE mode**, DataWedge is disabled for all activities of the specified package.
+* **In REMOVE mode**, DataWedge removes the specified package from the disabled list and ignores the wildcard character, which is not considered as a substring of the package name or activity name. To remove one or more individual activities, specify the whole package name and the activities for removal.
+
+-----
+
+**APP_LIST [2]**:
+* **PACKAGE_NAME**: "com.symbol.emdk.notificationsample1"
+
+For the scenario above...
+
+* **In UPDATE mode**, DataWedge is disabled for all the activities of the specified package.
+* **In REMOVE mode**, DataWedge removes the specified package from the disabled list (enabling the app to use DataWedge). 
+
+**Important: The APP_LIST bundle extra must be specified only when using UPDATE and REMOVE configuration modes. It is not required for OVERWRITE mode, which in that case replaces the existing disabled list with NULL, thereby deleting all packages and activities in the disabled list**.
+
+-----
+
+### Result Codes
 
 DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
-* **PARAMETER_INVALID -** CONFIG_MODE not defined or has invalid string value
-If mode is set to ‘UPDATE’ or ‘REMOVE’ and ‘APP_LIST’ is not provided.
+* **PARAMETER_INVALID -** CONFIG_MODE not defined or has invalid string value. Also returned 
+if mode is set to UPDATE or REMOVE and APP_LIST is not provided.
 * **INVALID PACKAGE OR ACTIVITY -** Package or activity name contains invalid characters
 * **APP_ALREADY_IN_DISABLED_LIST -** package or activity already in Disabled App List
 * **APP_ALREADY_ASSOCIATED -** Activity is associated with an app
@@ -130,20 +142,7 @@ The code below sends an intent to add apps to the Disabled Apps List in DataWedg
 -----
 
 ### Notes
-
-* **In UPDATE mode**, if the specified package name exists in the Disabled Apps List, DataWedge add the specified activities to those previously specified for the package. If not, it adds the package and the specified activities.
-
-If mode set as ‘REMOVE’, DataWedge will first check whether given package and activities are available in disabled list. If so it will remove those from the list, otherwise it will return the error as invalid parameters.
-
-APP_LIST [1] example
-If mode set as ‘UPDATE’ then DataWedge will be disabled for all the activities of this package.
-If mode set as ‘REMOVE’, DataWedge will remove whole package from the disabled list. 
-NOTE: DataWege consider wildcard (*) in this scenario only; it is not considered wildcard as substring of package name or activity name. In that case user, should mention whole package name and activity names as parameters.
-
-[after that]
-If bundle extra ‘APP_LIST’ is not given as parameter in bundle data, it is valid only when configuration mode is set to ‘OVERWRITE; in that case, it is considered as request to replace existing disabled list with NULL, and hence delete the whole packages and activities in the disabled list.        
-
-If a package or activity is associated with an app, modifications will not per permitted (must be confirmed; I got that from the result codes) 
+(none)
 
 -----
 

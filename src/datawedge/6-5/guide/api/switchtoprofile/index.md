@@ -87,6 +87,47 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 	        context.this.sendBroadcast(i);
 	}
 
+#### Code for generating and receiving result codes
+Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. **Note: Be sure to modify the code for the API being used**.  
+
+	// send the intent
+		Intent i = new Intent();
+		i.setAction(ACTION);
+		i.putExtra("com.symbol.datawedge.api.CREATE_PROFILE", "Profile1");
+
+	// request and identify the result code
+		i.putExtra("SEND_RESULT","true");
+		i.putExtra("COMMAND_IDENTIFIER","123456789");
+		sendBroadcast(i);
+
+	// register to receive the result
+		public void onReceive(Context context, Intent intent){
+
+		    String command = intent.getStringExtra("COMMAND");
+		    String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+		    String result = intent.getStringExtra("RESULT");
+
+		    Bundle bundle = new Bundle();
+		    String resultInfo = "";
+		    if(intent.hasExtra("RESULT_INFO")){
+		        bundle = intent.getBundleExtra("RESULT_INFO");
+		        Set<String> keys = bundle.keySet();
+		        for (String key: keys) {
+		            resultInfo += key + ": "+bundle.getString(key) + "\n";
+		        }
+		    }
+
+		    String text = "Command: "+command+"\n" +
+		                  "Result: " +result+"\n" +
+		                  "Result Info: " +resultInfo + "\n" +
+		                  "CID:"+commandidentifier;
+		    
+		    Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+
+		};
+
+-----
+
 ### Comments
 This API function will have no effect if the specified Profile does not exist or is already associated with an application.
 

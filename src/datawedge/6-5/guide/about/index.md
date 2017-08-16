@@ -20,10 +20,9 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 ### New in DataWedge 6.5
 
+**Improved Profile Exporting** 
 
-**Improved Profile Export** 
-
-DataWedge 6.5 improves compatibility of exported Profiles for deployment to dissimilar devices. Previously, DataWedge supported deployment of exported Profiles only to devices that are functionally equivalent to the device that created original Profile. Now, Profiles created with DataWedge 6.5 will work on any Zebra device model, as long as it's running DataWedge 6.5 or higher. 
+DataWedge 6.5 improves compatibility of exported Profiles for deployment to dissimilar devices. Previously, DataWedge supported deployment of exported Profiles only to devices that are functionally equivalent to the device that created original Profile. Now, Profiles created with DataWedge 6.5 will work on any Zebra device model running DataWedge 6.5 or higher. 
 
 **New APIs**: 
 
@@ -33,19 +32,20 @@ DataWedge 6.5 improves compatibility of exported Profiles for deployment to diss
 * **[SWITCH_SCANNER](../api/switchscanner) -** allows an app to select from multiple connected scanners at runtime. 
 * **[SWITCH_SCANNER_PARAMS](../api/switchscannerparams) -** allows an app to set scanner parameters at runtime without persisting those settings. 
 
-These **updated APIs** have been enhanced to include result codes: 
+**Updated APIs**
+These APIs have been enhanced to include result codes. 
 
-*[CLONE_PROFILE](../api/cloneprofile)
-*[CREATE_PROFILE](../api/createprofile)
-*[DELETE_PROFILE](../api/deleteprofile)
-*[ENABLE_DATAWEDGE](../api/enabledatawedge)
-*[ENABLE_SCANNER](../api/enablescanner)
-*[RENAME_PROFILE](../api/renameprofile)
-*[RESET_DEFAULT_PROFILE](../api/resetdefaultprofile)
-*[RESTORE_CONFIG](../api/restoreconfig)
-*[SET_DEFAULT_PROFILE](../api/setdefaultprofile)
-*[SOFTSCAN_TRIGGER](../api/softscantrigger)
-*[SWITCH_TO_PROFILE](../api/switchtoprofile)
+* [CLONE_PROFILE](../api/cloneprofile)
+* [CREATE_PROFILE](../api/createprofile)
+* [DELETE_PROFILE](../api/deleteprofile)
+* [ENABLE_DATAWEDGE](../api/enabledatawedge)
+* [ENABLE_SCANNER](../api/enablescanner)
+* [RENAME_PROFILE](../api/renameprofile)
+* [RESET_DEFAULT_PROFILE](../api/resetdefaultprofile)
+* [RESTORE_CONFIG](../api/restoreconfig)
+* [SET_DEFAULT_PROFILE](../api/setdefaultprofile)
+* [SOFTSCAN_TRIGGER](../api/softscantrigger)
+* [SWITCH_TO_PROFILE](../api/switchtoprofile)
 
 **DataWedge 6.5 continues to enhance its intent launching structure**, which can launch multiple intents (as extras) in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
 

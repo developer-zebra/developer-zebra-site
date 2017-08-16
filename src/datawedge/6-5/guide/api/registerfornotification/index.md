@@ -31,7 +31,8 @@ Used to register/unregister an app to receive a notification when the status of 
 
 * `APPLICATION_NAME` - Package name of the app to register 
 * `NOTIFICATION_TYPE` - Supported types:
- * `PROFILE_SWITCH` - `PROFILE_IMPORTED`; `FULL_DB_IMPORTED`
+ * `CONFIGURATION_UPDATE`
+ * `PROFILE_SWITCH` 
  * `SCANNER_STATUS` 
 
 ### Return Values
@@ -41,28 +42,31 @@ Returns a bundle with status of the requested DataWedge `NOTIFICATION_TYPE`
 
 **BUNDLE**:
 
+* `CONFIGURATION_UPDATE`:
+ * "PROFILE_IMPORTED" "FULL_DB_IMPORTED" 
+ * "PROFILE_NAME": "&lt;name of Profile now in use&gt;""
+
 * `PROFILE_SWITCH`: 
- * NOTIFICATION_TYPE: "PROFILE_SWITCH"
- * PROFILE_NAME: &lt;name of Profile now in use&gt;
+ * "PROFILE_IMPORTED" "FULL_DB_IMPORTED" 
+ * "PROFILE_NAME": "&lt;name of Profile now in use&gt;"
 
 * `SCANNER_STATUS`: 
- * NOTIFICATION_TYPE: "SCANNER_STATUS" 
+ * `NOTIFICATION_TYPE`: "SCANNER_STATUS" 
  * SCANNER_STATUS: WAITING, SCANNING, CONNECTED, DISCONNECTED or DISABLED
 
 > **Scanner status notifications are sent <u>only if the scanner in the active Profile is enabled</u>**. 
 
-**WAITING** – Scanner is enabled and ready to scan. When profile is switched and the scanner is enabled and waiting for trigger or soft scan intent.  When this event is received to the application it can broadcast a Soft scan intent to start scanning. 
+**WAITING** – Scanner is enabled and ready to scan using a physical trigger or SOFT_SCAN_TRIGGER intent. 
 
-**SCANNING** - Scanner has emitted the scan beam and scanning in progress. When application needs to disable other controls in the activity while the scanning in progress it can do the disabling when receiving this event.
+**SCANNING** - Scanner has emitted the scan beam and scanning is in progress. This event does not prevent the application from disabling other controls as necessary.
 
-**CONNECTED** – Bluetooth scanner has connected with the device. This event can be used by applications to enable the Bluetooth scanner when it connected with the device. For that Scanner selection, should be set to Auto in the currently active profile. When this event is received, application can send the Disable scanner intent and the send the Enable scanner intent which will enable the Bluetooth scanner. 
+**CONNECTED** – A Bluetooth scanner has connected with the device and can now be enabled (or disabled) by the application. Scanner selection should be set to Auto in the currently active profile. 
 
-**DISCONNECTED** – Bluetooth scanner has disconnected with the device. Similar to the Connected state in the event of Bluetooth scanner disconnection application can send Disable scanner intent followed by the Enable scanner intent which will enable the current default scanner. 
+**DISCONNECTED** – A Bluetooth scanner has disconnected from the device. Sending an intent to enable or disable the scanner in this state will enable/disable the current default scanner. 
 
-**DISABLED** – Scanner is disabled. This will be broadcast by the ScannerPlugin when profile gets disabled or scanner is disabled with disabled scanner intent.
+**DISABLED** – Scanner is disabled. This will be broadcast by the scanner plug-in when the active Profile becomes disabled or the scanner is disabled with an intent.
 
-**Note**: The `PROFILE_NAME` (of the currently active profile) is returned with `SCANNER_STATUS` to allow the developer to filter scanner events only for the required profile. 
-
+**Note**: The `PROFILE_NAME` (of the currently active profile) is returned with `SCANNER_STATUS` to allow the developer to filter scanner events for the required Profile only. 
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 

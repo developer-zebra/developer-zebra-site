@@ -23,6 +23,12 @@ Used to reset the default Profile to Profile0.
 
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.RESET_DEFAULT_PROFILE"
 
+### Result Codes
+
+DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+
+* **PROFILE_ALREADY_SET -** FAILURE
+
 ### Return Values
 (None)
 

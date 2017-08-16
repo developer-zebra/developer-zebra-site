@@ -26,6 +26,13 @@ Used to delete an existing _**deletable**_ Profile, **including the "Launcher" P
 
 **WARNING: Supports use of the wildcard character (“*”), which deletes all deletable Profiles from the configuration, including the "Launcher" Profile**.
 
+## Result Codes
+
+DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+
+* **PROFILE_NOT_FOUND -** FAILURE 
+* **OPERATION_NOT_ALLOWED -** FAILURE
+
 ### Return Values
 (None)
 

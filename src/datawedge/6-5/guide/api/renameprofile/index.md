@@ -22,7 +22,19 @@ Used to rename an existing DataWedge Profile.
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.RENAME_PROFILE"
 
 **String[ ] &lt;values&gt;**: Profile name to be renamed, New Profile name
- 
+
+### Result Codes
+
+DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+
+* **PROFILE_NOT_FOUND -** FAILURE 
+* **PROFILE_ALREADY_EXIST -** FAILURE
+* **UNKNOWN -** FAILURE
+* **OPERATION_NOT_ALLOWED -** FAILURE
+* **PARAMETER_INVALID -** FAILURE
+* **PROFILE_NAME_EMPTY -** FAILURE
+
+
 ### Return Values
 (None)
 

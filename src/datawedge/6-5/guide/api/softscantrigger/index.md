@@ -32,6 +32,16 @@ Used to start, stop or toggle a software scanning trigger.
 
 * `TOGGLE_SCANNING` - toggles between `START_SCANNING` and `STOP_SCANNING` when triggered
 
+### Result Codes
+
+DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+
+* **INPUT_NOT_ENABLED -** FAILURE
+* **PROFILE_DISABLED -** FAILURE 
+* **DATAWEDGE_DISABLED -** FAILURE
+* **PARAMETER_INVALID -** FAILURE
+* **PLUGIN_DISABLED_IN_CONFIG -** FAILURE
+
 ### Return Values
 (None)
 

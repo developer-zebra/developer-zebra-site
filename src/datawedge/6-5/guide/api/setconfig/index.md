@@ -105,6 +105,19 @@ Contains the following properties:
 
 **ACTIVITY_LIST** [List]: A list of activities for the `PACKAGE_NAME`. Wildcard (*) character also supported.
 
+### Result Codes
+
+DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+
+* **PLUGIN_NOT_SUPPORTED -** FAILURE
+* **BUNDLE_EMPTY -** FAILURE 
+* **PROFILE_NAME_EMPTY -** FAILURE
+* **PROFILE_NOT_FOUND -** FAILURE
+* **PLUGIN_BUNDLE_INVALID -** FAILURE
+* **PARAMETER_INVALID -** FAILURE 
+* **APP_ALREADY_ASSOCIATED -** FAILURE
+* **OPERATION_NOT_ALLOWED -** FAILURE
+
 ### Return Values
 (None)
 

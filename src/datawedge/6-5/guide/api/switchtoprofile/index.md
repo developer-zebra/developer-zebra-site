@@ -46,6 +46,16 @@ When ActivityA (or ActivityB) comes back to the foreground it will use `SWITCH_T
 
 **&lt;profile name**&gt;: The Profile name (a case-sensitive string) to set as the active Profile.
 
+### Result Codes
+
+DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+
+* **PROFILE_HAS_APP_ASSOCIATION -** FAILURE
+* **PROFILE_NOT_FOUND -** FAILURE 
+* **PROFILE_ALREADY_SET -** FAILURE
+* **PROFILE_NAME_EMPTY -** FAILURE
+* **DATAWEDGE_DISABLED -** FAILURE
+
 ###Return Values
 (None)
 

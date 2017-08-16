@@ -36,6 +36,15 @@ If the launched app already has an associated DataWedge Profile, the `setDefault
 
 **&lt;profile name**&gt;: The Profile name (a case-sensitive string) to set as the default Profile.
 
+### Result Codes
+
+DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+
+* **PROFILE_ALREADY_SET -** FAILURE
+* **PROFILE_NOT_FOUND -** FAILURE 
+* **PROFILE_HAS_APP_ASSOCIATION -** FAILURE
+* **PROFILE_NAME_EMPTY -** FAILURE
+
 ### Return Values
 (None)
 

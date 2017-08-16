@@ -61,8 +61,10 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 - added an empty string to extra data (in prototype and sample)
 -->
 
-#### Code for generating and receiving result codes
-Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. **Note: Be sure to modify the code for the API being used**.  
+#### Generate and receive result codes
+Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. 
+
+**Note: Modify this generic code to match the API being used**.  
 
 	// send the intent
 		Intent i = new Intent();

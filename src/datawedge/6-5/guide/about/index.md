@@ -33,7 +33,7 @@ DataWedge 6.5 improves compatibility of exported Profiles for deployment to diss
 * **[SWITCH_SCANNER_PARAMS](../api/switchscannerparams) -** allows an app to set scanner parameters at runtime without persisting those settings. 
 
 **Updated APIs**
-These APIs have been enhanced to include result codes. 
+These APIs have been enhanced to support [RESULT_INFO](../api/resultinfo) feedback mechanism for intents and include result codes. 
 
 * [CLONE_PROFILE](../api/cloneprofile)
 * [CREATE_PROFILE](../api/createprofile)

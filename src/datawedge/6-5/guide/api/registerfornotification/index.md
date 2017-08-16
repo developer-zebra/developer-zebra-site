@@ -42,9 +42,9 @@ Returns a bundle with status of the requested DataWedge `NOTIFICATION_TYPE`
 
 **BUNDLE**:
 
-* `CONFIGURATION_UPDATE`:
+* `CONFIGURATION_UPDATE` [String]: 
  * "PROFILE_IMPORTED" "FULL_DB_IMPORTED" 
- * "PROFILE_NAME": "&lt;name of Profile now in use&gt;""
+ * "PROFILE_NAME": "&lt;Application package name&gt;"
 
 * `PROFILE_SWITCH`: 
  * "PROFILE_IMPORTED" "FULL_DB_IMPORTED" 

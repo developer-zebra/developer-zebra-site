@@ -26,7 +26,8 @@ Used to switch to a specific scanner at runtime, enabling selection of the optim
 
 **Use [ENUMERATE_SCANNERS](../enumeratescanners) to retrieve the index of scanners**. 
 
-###Return Values
+### Result Codes
+
 DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
 * **DATAWEDGE_DISABLED -** DataWedge is disabled
@@ -35,6 +36,8 @@ DataWedge will return the following error codes if the app includes the intent e
 * **SCANNER_DISABLED -** Scanner is disabled
 * **PARAMETER_INVALID -** Given scanner parameter is invalid
 * **PARAMETER_NOT_SUPPORTED -** Given scanner parameter is not supported
+
+### Return Values
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 

@@ -24,7 +24,7 @@ Used to pass one or more [barcode, scanner and/or reader parameters](../../input
 
 **&lt;name, value&gt;** [Bundle]: Accepts name-value pairs of scanner parameters
 
-###Return Values
+### Result Codes
 
 DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
@@ -36,6 +36,8 @@ DataWedge will return the following error codes if the app includes the intent e
 * **PARAMETER_NOT_SUPPORTED -** Given scanner parameter is not supported
 * **VALUE_INVALID -** Given value for a scanner parameter is invalid
 * **VALUE_NOT_SUPPORTED -** Given value for a scanner parameter is not supported
+
+### Return Values
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 

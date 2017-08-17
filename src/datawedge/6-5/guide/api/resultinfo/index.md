@@ -7,84 +7,65 @@ productversion: '6.5'
 
 ## Overview
 
+Introduced in DataWedge 6.5.
 
->>> FIXXXXX
-**Intent Result Codes were introduced in DataWedge 6.5** with several new APIs and as enhancements to APIs that existed previously.  
+**Intent result codes deliver status information about DataWedge API commands** to help developers determine the flow of data and the function of their business logic. Result codes are implemented with some of the APIs introduced with DataWedge 6.5 and have been added to many APIs that existed previously.  
 
-
-Result codes are accessed using the `RESULT_INFO` intent mechanism, which delivers status information about DataWedge API commands to help developers determine the flow of business logic.
-
-
-Note that parameter level validation will not be done when sending the result intent. As an example, consider about barcode input settings, not every scanner connected with the device so DataWedge cannot verify the validity of a parameter value. However, when DataWedge loads the profile, if the value in the configuration not valid DataWedege will use the default value for the same parameter.  
-
-Success or Failure for the command and descriptive information will be send with the result bundle. This is similar to the user experience when user creates a profile using DataWedge configuration UI.
-
-Result info and result codes
-
-Result Intent will have the following extra names. 
-
-RESULT	- SUCCESS or FAILURE
-
-COMMAND - Received intent’s command
-
-COMMAND_IDENTIFIER - This is an optional parameter. User can include a unique identifier in their intent that sends to DW. DW will send this same identifier in the result intent. 
-
-RESULT_INFO - Bundle
-
-Results intents will contain a bundle named “RESULT_INFO”.
-
-RESULT_INFO bundle may have the following fields based on the API in use: 
-
-PREVIOUS_DEFAULT_PROFILE - When setting default profile, this specifies the previous default profile
-PREVIOUS_PROFILE - When switching, and renaming a profile, this specifies the previous profile mentioned in the parameter
-PROFILE_NAME- Always the current/next profile name
-RESULT_CODE- List of possible result codes are shown in below table
-SOURCE_PROFILE_NAME - When cloning a profile, this specifies the source profile
-
-Available values for the RESULT_CODE is mentioned in below table. RESULT_CODE will be returned only for failed scenarios.
-
-APP_ALREADY_ASSOCIATED - Trying to associate an app to a profile while that is being associated to another profile
-BUNDLE_EMPTY - Passed bundle is empty
-DATAWEDGE_ALREADY_DISABLED - Trying to disable DataWedge, when it is already disabled
-DATAWEDGE_ALREADY_ENABLED - Trying to enable DataWedge, when it is already enabled
-DATAWEDGE_DISABLED - Trying to perform an operation when DataWedge is disabled
-INPUT_NOT_ENABLED - When both Barcode and SimulScan plugins are disabled and trying to submit a read
-OPERATION_NOT_ALLOWED - Returns when trying to rename or delete non-editable/non-deletable profiles or trying to associate an app to Profile0
-PARAMETER_INVALID - Passed parameters are empty, null or invalid
-PLUGIN_NOT_SUPPORTED - Trying to set configuration on a plugin that is not supported by DataWedge intent APIs
-PLUGIN_BUNDLE_INVALID - When the provided param bundle for a plugin is null or not contains all the required information to perform the command
-PROFILE_ALREADY_EXISTS - Trying to create a profile with a name that is already exist and when cloning, and renaming a profile, if the destination profile already exists
-PROFILE_ALREADY_SET - When a profile is already the default profile
-PROFILE_DISABLED - Trying to perform an operation when Profile is disabled
-PLUGIN_DISABLED_IN_CONFIG - Trying to disable/enable scanner when barcode plugin is disabled manually from DataWedge UI
-PROFILE_HAS_APP_ASSOCIATION - Trying to switch/set default to a profile that already has an application association
-PROFILE_NAME_EMPTY - Trying to set configuration on an empty profile name
-PROFILE_NOT_FOUND - Trying to perform an operation on a profile that does not exist
-Ex: Occurs when trying to rename or clone a profile and when the source profile does not exist
-SCANNER_ALREADY_DISABLED - Trying to disable scanner, when it is already disabled
-SCANNER_ALREADY_ENABLED - Trying to enable scanner, when it is already enabled
-SCANNER_DISABLE_FAILED - When an exception occurs while disabling scanner
-SCANNER_ENABLE_FAILED - When an exception occurs while enabling scanner
-UNKNOWN - An unidentified error occurred
-
+Result codes are accessed using the `RESULT_INFO` intent mechanism, which returns error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` as shown in the prototype below. See the [Example section](#example) below for code showing how to register the app to receive result codes. 
 
 ### Function Prototype
 
-	Intent i = new Intent();
-	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.RESTORE_CONFIG", "");
+	// send the intent
+		Intent i = new Intent();
+		i.setAction(ACTION);
+		i.putExtra("com.symbol.datawedge.api.CREATE_PROFILE", "Profile1");
 
+	// request and identify the result code
+		i.putExtra("SEND_RESULT","true");
+		i.putExtra("COMMAND_IDENTIFIER","123456789");
+		sendBroadcast(i);
 
 ### Parameters
 
-**ACTION** [String]: "com.symbol.datawedge.api.ACTION"
+**RESULT** [String]: Success/failure of the operation
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.RESTORE_CONFIG"
+**COMMAND** [String]: Name of the received intent command
 
-**EXTRA VALUE**: Empty string 
- 
+**COMMAND_IDENTIFIER** [String]: Optional parameter for linking results to a specific command
+
+**RESULT_INFO** [Bundle]: Can contain any of the fields below depending on the API in use: 
+
+* **PREVIOUS_DEFAULT_PROFILE -** Specifies the previous default Profile when setting a new default Profile
+* **PREVIOUS_PROFILE -** Specifies the previous Profile in the parameter when switching and renaming a Profile
+* **PROFILE_NAME -** Always the current or next Profile name
+* **RESULT_CODE -** One of the possible result codes shown in list table
+* **SOURCE_PROFILE_NAME -** Specifies the source Profile when cloning a Profile
+* **RESULT_CODE -** returned only for FAILURE. Can contain any of the fields below depending on the API in use:
+
+ * **APP_ALREADY_ASSOCIATED -** An attempt was made to associate an app that was already associated with another Profile
+ * **BUNDLE_EMPTY -** The bundle contains no data
+ * **DATAWEDGE_ALREADY_DISABLED -** An attempt was made to disable DataWedge when it was already disabled
+ * **DATAWEDGE_ALREADY_ENABLED -** An attempt was made to enable DataWedge when it was already enabled
+ * **DATAWEDGE_DISABLED -** An attempt was made to perform an operation when DataWedge was disabled
+ * **INPUT_NOT_ENABLED -** An attempt was made to acquire data when the Barcode or SimulScan plug-in was disabled
+ * **OPERATION_NOT_ALLOWED -** An attempt was made to rename or delete a protected Profile or to associate an app with Profile0
+ * **PARAMETER_INVALID -** The passed parameters were empty, null or invalid
+ * **PLUGIN_NOT_SUPPORTED -** An attempt was made to configure a plug-in that is not supported by DataWedge intent APIs
+ * **PLUGIN_BUNDLE_INVALID -** A passed plug-in parameter bundle is empty or contains insufficient information
+ * **PROFILE_ALREADY_EXISTS -** An attempt was made to create, clone or rename a Profile with a name that already exists
+ * **PROFILE_ALREADY_SET -** An attempt was made to set the default Profile as the default Profile
+ * **PROFILE_DISABLED -** An attempt was made to perform an operation on a disabled Profile
+ * **PLUGIN_DISABLED_IN_CONFIG -** An attempt was made to enable or disable the scanner when barcode plug-in was disabled manually from the DataWedge UI
+ * **PROFILE_HAS_APP_ASSOCIATION -** An attempt was made to switch to or set as the default a Profile that is already associated with another app
+ * **PROFILE_NAME_EMPTY -** An attempt was made to configure an empty Profile name
+ * **PROFILE_NOT_FOUND -** An attempt was made to perform an operation on a Profile that does not exist
+ * **SCANNER_ALREADY_DISABLED -** An attempt was made to disable a scanner that is already disabled
+ * **SCANNER_ALREADY_ENABLED -** An attempt was made to enable a scanner that is already enabled
+ * **SCANNER_DISABLE_FAILED -** An exception occurred while disabling the scanner
+ * **SCANNER_ENABLE_FAILED -** An exception occurred while enabling the scanner
+ * **UNKNOWN -** An unidentified error occurred
+
 ### Return Values
-(none)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 
@@ -141,6 +122,11 @@ Command and configuration intent parameters determine whether to send result cod
 		    Toast.makeText(context, text, Toast.LENGTH_LONG).show();
 
 		};
+
+
+### Comments
+
+The result intent mechanism does not perform parameter-level validation. It would be impossible, for example, for any app to validate every possible parameter for a scanner that's no longer connected. However, if a parameter value in a configuration is not valid when that Profile is loaded, DataWedege will use the default value for that parameter.  
 
 -----
 

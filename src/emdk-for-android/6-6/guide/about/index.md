@@ -70,8 +70,6 @@ The following software must be installed prior to using the EMDK for Android.
 	* Wi-Fi
 		* Added support for 802.11ac and 802.11n.
 		* Added 802.11ac and 802.11n parameters in advanced parameters.
-	* File Manager – Added support for HTTPS.
-	* License Manager – Fixed: Sensitive information is not getting logged.
 	* Bluetooth Manager – Added new feature to support for admin to add new silent pairing rule by providing just the name of the remote Bluetooth device.
 * Enhanced Barcode Manager API to support Unique Device Identification (UDI) barcodes to be used with TC51/TC56 healthcare devices:
 	* Added support to enable/disable the UDI Standards such as GS1, HIBCC and ICCBBA. Refer to the parameter “ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific.udiParams” for details.

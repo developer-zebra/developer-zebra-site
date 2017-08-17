@@ -33,7 +33,7 @@ _The DataWedge Settings panel_
 
 * **Disabled app list -** Disables scanning functions for selected apps and/or activities anywhere on the device. [See more](#disableapps). 
 
-* **Import -** Invokes navigation for importing a DataWedge config file from device storage, replacing the current DataWedge settings. [See more](#importaconfig).
+* **Import -** Invokes navigation for importing a DataWedge Config file from device storage, replacing the current DataWedge settings. [See more](#importaconfig).
 
 * **Export -** Exports the current DataWedge configuration to device storage. [See more](#exportaconfig).
 
@@ -93,12 +93,12 @@ To learn how to access DataWedge programmatically, see the [DataWedge APIs](../a
 
 ## Mass Deployment
 
-Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system. DataWedge 6.5 improves compatibility of exported Profiles. Profiles created with DataWedge 6.5 will work on any Zebra device model running DataWedge 6.5 or higher. 
+Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system. DataWedge 6.5 improves compatibility of exported Profiles. Profiles created with DataWedge 6.5 will work on any Zebra device model running DataWedge 6.5 or higher. See [Export a Profile](#exportaprofile) for more information. 
 
 ### Export a Config
 Once DataWedge is set up and configured as desired on a device, its settings file can be exported, distributed to other devices, imported and activated automatically (or imported manually, as above). 
 
-**To Export a DataWedge config file**: 
+**To Export a DataWedge Config file**: 
 
 &#49;. From the DataWedge Settings panel, **tap Export** as highlighted below. A screen appears similar to the one in Step 2. 
 <img style="height:350px" src="datawedge_export_config.png"/>
@@ -110,7 +110,7 @@ Once DataWedge is set up and configured as desired on a device, its settings fil
 
 **Notes**: 
 
-* The DataWedge config file is always named `datawedge.db`. 
+* The DataWedge Config file is always named `datawedge.db`. 
 * The default path and filename of an exported configuration file is:
 `/storage/sdcard0/Android/data/com.symbol.datawedge/files/datawedge.db` 
 * If an external SD card is installed, an alternate path can be selected. For example: 
@@ -121,9 +121,14 @@ Once DataWedge is set up and configured as desired on a device, its settings fil
 -----
 
 ### Export a Profile
+
 Once a DataWedge Profile is set up and configured as desired on a device, it can be exported and distributed for use on other devices throughout an enterprise. This enables a company to fine-tune settings for the acquisition, manipulation and disposition of data for specific applications(s), and easily propagate those settings to others in the organization. 
 
-**Note** If more than one Profile is to be created, exported and distributed at the same time, it might be beneficial to create and export the Profiles together as a single DataWedge Configuration file. 
+**Notes**: 
+
+* **If more than one Profile is to be created, exported and distributed** at the same time, it might be beneficial to create and export the Profiles together as a single DataWedge Configuration file using [Export a Config](#exportaconfig). 
+* **If a Profile exists on the device with the same name as one being imported**, the existing profile will be overwritten by the imported one.
+* **Profiles created with DataWedge 6.5 will work on any Zebra device model running DataWedge 6.5 or higher**. See [Cross-Device Import](#crossdeviceimport) for more info. 
 
 **To Export a Profile**: 
 
@@ -147,10 +152,15 @@ If an external SD card is installed, an alternate path can be selected:
 
 **Warning: If a Profile exists on the device with the same name as one being imported, the existing profile will be overwritten by the imported one**. 
 
+* **Profiles created with DataWedge 6.5 will work on any Zebra device model running DataWedge 6.5 or higher**. 
+
 -----
 
 ### Import a Config
+
 DataWedge can accept settings created on another device and distributed throughout an enterprise by importing a DataWedge Configuration file. This file contains Profiles, Plug-ins and all DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters. 
+
+> **Importing a Config file overwrites all DataWedge settings and Profiles previously stored on the device**.
 
 **To Import a DataWedge Configuration file**:    
 
@@ -163,14 +173,19 @@ DataWedge can accept settings created on another device and distributed througho
 Imported settings take effect immediately and overwrite all prior settings.   
 <br>
 
-The DataWedge config file is always named `datawedge.db`. 
+The DataWedge Config file is always named `datawedge.db`. 
+
+See [Cross-Device Import](#crossdeviceimport) for more information. 
 
 -----
 
 ### Import a Profile
+
 Importing a Profile enables settings created elsewhere to quickly be activated on a device. This enables organizations to develop and fine-tune Profiles in a test lab, for example, before exporting and deploying them to the field or across an enterprise. For more information, see Export a Profile, below.  
 
-While the Profile importing _process_ is similar to that of the Configuration file, the Profile _itself_ is very different. A Profile is a single group of settings that control how DataWedge will behave with one or more specific applications and devices. A Config file can contain numerous Profiles as well as other DataWedge settings. **Importing a Config file overwrites all previous DataWedge settings and Profiles**. Importing a Profile simply adds the imported Profile to the list of available Profiles on the device. If a Profile exists on the device with the same name as the one being imported, the existing Profile will be modified by the imported one.
+While the Profile importing _process_ is similar to that of the Configuration file, the Profile _itself_ is very different. A Profile is a single group of settings that control how DataWedge will behave with one or more specific applications and devices. A Config file can contain numerous Profiles as well as other DataWedge settings. 
+
+**Importing a Config file overwrites all previous DataWedge settings and Profiles**. Importing a Profile simply adds the imported Profile to the list of available Profiles on the device. If a Profile exists on the device with the same name as the one being imported, the existing Profile will be modified by the imported one.
 
 **To Import a DataWedge Profile**:  
 
@@ -183,10 +198,41 @@ While the Profile importing _process_ is similar to that of the Configuration fi
 **Warning**: If a Profile exists on the device with the same name as the one being imported, the existing Profile will be modified by the imported one. 
 <br>
 
-DataWedge Profiles are always named `dwprofile_profilename.db`.  
+DataWedge Profile naming convention: `dwprofile_<profilename>.db`.  
+
+-----
+
+### Cross-device Import
+
+Profiles and Config files exported from a device with DataWedge 6.5 (or higher) can be imported to other devices running DataWedge 6.5 (or higher), even if the source and destination devices contain different scanning and/or imaging peripherals. To accommodate hardware differences, DataWedge 6.5 implements the following user-interface changes.
+<br>
+
+##### Peripheral Not Present, 'Auto' not selected
+If a source Profile is configured for a scanner that's not supported by the destination device, a dialog similar to the image below will appear when selecting a scanner for the Profile. For example, the Zebra TC75 has a camera; the TC51 does not. If a Profile configured for a camera created on the TC75 was imported by the TC51, a message like the one below appears, prompting the user to select a peripheral for scanning. After selection, DataWedge applies the input settings (i.e. decoder parameters, etc.) as originally configured for the source scanning device to the manually selected peripheral on the destination device.
+
+<img style="height:350px" src="dw_65_scanner_selection.png"/>
+_Image shown if no Auto device (radio button) was selected_ 
+<br>
+<br>
+
+##### Peripheral Not Present, 'Auto' selected
+If the selected scanner in the original device is not supported in the destination device but the "Auto" checkbox and "Auto" radio button are selected (as shown below), DataWedge applies the input settings (i.e. decoder parameters, etc.) as originally configured for the source scanning device to the automatically selected peripheral on the destination device. 
+
+<img style="height:350px" src="dw_65_use_auto.png"/>
+_Image shown if an Auto device (radio button) was selected_ 
+<br>
+<br>
+
+##### Conversion from DataWedge 6.4 (and lower)
+DataWedge makes it possible to covert Config files and Profiles that reside on (or were made with) a device containing a version of DataWedge prior to 6.5 by upgrading the device to DataWedge 6.5 and importing (if necessary) and then exporting the files. **This applies to devices running KitKat only**; devices running Marshmallow (and higher) already have DataWedge 6.5 (or higher). 
+
+**IMPORTANT: The device that's being upgraded to DataWedge 6.5 for the purpose of converting files must be the same model device as that which made the original files**. For example, Profiles made with an older version of DataWedge on a TC70 must be imported into DataWedge 6.5 <u>running on a TC70</u>. 
+
+-----
 
 ### Restore (defaults)
-DataWedge has the ability to reset all user-configured settings and restore them to their original factory defaults. **This action cannot be undone**. 
+
+DataWedge has the ability to reset all user-configured settings, restoring them to their original factory defaults. **Caution: This action cannot be undone**. 
 
 **To Restore DataWedge to its factory-default settings**:
 
@@ -198,7 +244,10 @@ DataWedge has the ability to reset all user-configured settings and restore them
 <img style="height:350px" src="05_restore_defaults.png"/>
 <br>
 
+-----
+
 ### Enterprise Folder
+
 On Zebra devices, internal storage contains a directory named `/enterprise` that persists (is not erased) after an Enterprise reset is performed on the device. DataWedge stores its files in several directories below `/enterprise`, which allows them to persist after an Enterprise reset. 
 
 **Directory Behavior**:
@@ -207,26 +256,27 @@ On Zebra devices, internal storage contains a directory named `/enterprise` that
 
 * `/enterprise/device/settings/datawedge/autoimport` - DataWedge monitors this folder whenever it's running and immediately imports and activates any configuration file placed here, overwriting prior settings. See Auto Import, below.   
 
-**Notes:** 
+**Notes**: 
 * A DataWedge Restore operation will delete the working .db file.
 * A _**Factory**_ reset **deletes all files** in the `/enterprise` folder.
-* If a `datawedge.db` file exists in the `/enterprisereset` directory, DataWedge will activate it as the new working config file.
+* If a `datawedge.db` file exists in the `/enterprisereset` directory, DataWedge will activate it as the new working Config file.
 
 -----
 
 ### Auto Import
-DataWedge supports remote deployment of config files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices through commercially available third-party Mobile Device Management (MDM) systems. When DataWedge launches, it checks the `/enterprise/device/settings/datawedge/autoimport` directory for the presence of such files. If any are found, it executes the functions below.
+
+DataWedge supports remote deployment of Config files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices through commercially available third-party Mobile Device Management (MDM) systems. When DataWedge launches, it checks the `/enterprise/device/settings/datawedge/autoimport` directory for the presence of such files. If any are found, it executes the functions below.
 
 **DataWedge Auto-Import routine**:
 1. Import the new file(s) 
-2. Replace the existing config file and like-named Profile(s) (if any) 
+2. Replace the existing Config file and like-named Profile(s) (if any) 
 3. Delete the imported files
 4. Put new settings immediately into effect
 
-While DataWedge is running, it receives a system notification whenever a config file or Profile is placed in the `/autoimport` folder and executes the same four functions. 
+While DataWedge is running, it receives a system notification whenever a Config file or Profile is placed in the `/autoimport` folder and executes the same four functions. 
 
 **Notes**:
-* For the best experience, **Zebra strongly recommends that users be advised to exit DataWedge** before new config files are remotely deployed. 
+* For the best experience, **Zebra strongly recommends that users be advised to exit DataWedge** before new Config files are remotely deployed. 
 * On devices running Android KitKat or later, the `/enterprise` folder cannot be seen with File Explorer or other user-level tools. Moving configuration files to and from the `/autoimport` or `/enterprisereset` folders must be done programmatically, with a staging client app or MDM.
 * DataWedge will attempt to consume any of the monitored “.db” files as soon the file name(s) appear in the `/autoimport` folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, Zebra recommends initially storing the file with an alternate extension (i.e. ".tmp") and changing the extension to .db once writing is complete. See sample code, below. 
 * **Zebra recommends applying explicit file permissions to the all .db files** so that DataWedge will not be impeded from any of its file procedures.

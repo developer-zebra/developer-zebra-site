@@ -1,16 +1,18 @@
 ---
-title: Result Info 
+title: Intent Result Codes 
 layout: guide.html
 product: DataWedge
 productversion: '6.5'
 ---
 
-## RESULT_INFO
-
-Introduced in DataWedge 6.5.
+## Overview
 
 
-The Result Info intent mechanism allows developers to receive status information about DataWedge API commands to help determine the flow of business logic.
+>>> FIXXXXX
+**Intent Result Codes were introduced in DataWedge 6.5** with several new APIs and as enhancements to APIs that existed previously.  
+
+
+Result codes are accessed using the `RESULT_INFO` intent mechanism, which delivers status information about DataWedge API commands to help developers determine the flow of business logic.
 
 
 Note that parameter level validation will not be done when sending the result intent. As an example, consider about barcode input settings, not every scanner connected with the device so DataWedge cannot verify the validity of a parameter value. However, when DataWedge loads the profile, if the value in the configuration not valid DataWedege will use the default value for the same parameter.  

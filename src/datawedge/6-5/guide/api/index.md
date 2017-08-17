@@ -8,11 +8,11 @@ automenu:
   items:
     - title: General Information
       items:
-        - title: How to Use DataWedge APIs 
+        - title: Using DataWedge APIs 
           url: overview
-       - title: About Result Info Feedback Mechanism  
+        - title: Using Intent Result Codes  
           url: resultinfo
-        - title: DataWedge APIs - Benefits & Usage Scenarios
+        - title: DataWedge API Benefits & Usage (article) 
           url: https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges
     - title: DataWedge APIs
       items:

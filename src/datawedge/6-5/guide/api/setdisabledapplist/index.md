@@ -87,6 +87,10 @@ if mode is set to UPDATE or REMOVE and APP_LIST is not provided.
 * **APP_ALREADY_ASSOCIATED -** Activity is associated with an app
 * **APP_NOT_IN_DISABLED_LIST -** Package or activity not in disabled app list
 
+Also see the [Result Codes guide](../resultinfo) for more information.  
+
+### Return Values
+
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 
 	:::term

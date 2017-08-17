@@ -33,8 +33,9 @@ DataWedge will return the following error codes if the app includes the intent e
 * **PROFILE_NOT_FOUND -** FAILURE 
 * **OPERATION_NOT_ALLOWED -** FAILURE
 
+Also see the [Result Codes guide](../resultinfo) for more information.  
+
 ### Return Values
-(None)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 

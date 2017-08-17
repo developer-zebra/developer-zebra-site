@@ -31,8 +31,9 @@ DataWedge will return the following error codes if the app includes the intent e
 * **PROFILE_ALREADY_ENABLED -** FAILURE 
 * **PROFILE_ALREADY_DISABLED -** FAILURE
 
+Also see the [Result Codes guide](../resultinfo) for more information.  
+
 ### Return Values
-(None)
 
 Error and debug messages are logged to the Android logging system, which then can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 

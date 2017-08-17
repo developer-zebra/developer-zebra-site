@@ -32,6 +32,8 @@ DataWedge will return the following error codes if the app includes the intent e
 * **PROFILE_ALREADY_EXIST -** FAILURE 
 * **PROFILE_NAME_EMPTY -** FAILURE
 
+Also see the [Result Codes guide](../resultinfo) for more information.  
+
 ### Return Values
 (None)
 

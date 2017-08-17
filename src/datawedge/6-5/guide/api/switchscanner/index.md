@@ -37,6 +37,8 @@ DataWedge will return the following error codes if the app includes the intent e
 * **PARAMETER_INVALID -** Given scanner parameter is invalid
 * **PARAMETER_NOT_SUPPORTED -** Given scanner parameter is not supported
 
+Also see the [Result Codes guide](../resultinfo) for more information.  
+
 ### Return Values
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:

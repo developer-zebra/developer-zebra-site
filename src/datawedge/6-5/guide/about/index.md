@@ -43,6 +43,7 @@ These APIs have been enhanced to support [RESULT_INFO](../api/resultinfo) feedba
 * [RENAME_PROFILE](../api/renameprofile)
 * [RESET_DEFAULT_PROFILE](../api/resetdefaultprofile)
 * [RESTORE_CONFIG](../api/restoreconfig)
+* [SCANNER_INPIT_PLUGIN](../api/scannerinputplugin)
 * [SET_DEFAULT_PROFILE](../api/setdefaultprofile)
 * [SOFTSCAN_TRIGGER](../api/softscantrigger)
 * [SWITCH_TO_PROFILE](../api/switchtoprofile)

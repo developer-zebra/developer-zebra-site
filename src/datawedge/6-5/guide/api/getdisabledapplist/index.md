@@ -28,11 +28,11 @@ Returns the Disabled Apps List, a list of apps and activities that are blocked f
 
 * **APP_LIST [0]**:
  * **PACKAGE_NAME [String]**: "com.symbol.emdk.barcodesample1"
- * **ACTIVITY_LIST &lt;List&gt;**: [“com.symbol.emdk.barcodesample1.MainActivity” ,”com.symbol.emdk.barcodesample1.ResultsActivity”]
+ * **ACTIVITY_LIST [String array]**: [“com.symbol.emdk.barcodesample1.MainActivity” ,”com.symbol.emdk.barcodesample1.ResultsActivity”]
 
 * **APP_LIST [1]**:
- * **PACKAGE_NAME**: "com.symbol.emdk.notificationsample1"
- * **ACTIVITY_LIST &lt;List&gt;**: [“*”]
+ * **PACKAGE_NAME** [String]: "com.symbol.emdk.notificationsample1"
+ * **ACTIVITY_LIST [String array]**: [“*”]
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 

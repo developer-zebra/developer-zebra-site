@@ -39,7 +39,6 @@ These APIs have been enhanced to support [RESULT_INFO](../api/resultinfo) feedba
 * [CREATE_PROFILE](../api/createprofile)
 * [DELETE_PROFILE](../api/deleteprofile)
 * [ENABLE_DATAWEDGE](../api/enabledatawedge)
-* [ENABLE_SCANNER](../api/enablescanner)
 * [RENAME_PROFILE](../api/renameprofile)
 * [RESET_DEFAULT_PROFILE](../api/resetdefaultprofile)
 * [RESTORE_CONFIG](../api/restoreconfig)

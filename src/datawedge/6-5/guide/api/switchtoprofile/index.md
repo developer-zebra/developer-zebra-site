@@ -7,7 +7,7 @@ productversion: '6.5'
 
 ## SWITCH_TO_PROFILE
 
-Used to switch to the specified Profile. **Specified Profile must not already be associated with another application**. A Profile can be associated with many applications, but an application cannot be associated with more than one Profile. 
+Used to switch the application's association to the specified Profile. **Specified Profile must not already be associated with another application**; an application cannot be associated with more than one Profile. 
 
 ### Profiles Recap
 DataWedge is based on Profiles and Plug-ins. A Profile contains information about how DataWedge will behave with a given application.
@@ -29,9 +29,9 @@ A single Profile can be associated with one or more activities or apps. However,
 ### Usage Scenario
 Let’s say an application has two activities. ActivityA only requires EAN13 barcodes to be scanned. ActivityB only requires MSR card data. ProfileB is configured to only scan EAN13 barcodes and is left unassociated. ProfileM is configured to only accept MSR input and is left unassociated. When ActivityA launches it uses `SWITCH_TO_PROFILE` to activate ProfileB. Similarly, when ActivityB launches it uses `SWITCH_TO_PROFILE` to activate ProfileM.
 
-If another activity/app comes to the foreground, DataWedge auto Profile switching will set the DataWedge Profile accordingly either to the default Profile or to an associated Profile.
+If another activity/app comes to the foreground, DataWedge automatic Profile switching will set the DataWedge Profile accordingly, either to the default Profile or to an associated Profile.
 
-When ActivityA (or ActivityB) comes back to the foreground it will use `SWITCH_TO_PROFILE` to reset the Profile back to ProfileB (or ProfileM).
+When ActivityA (or ActivityB) returns to the foreground, it will use `SWITCH_TO_PROFILE` to return the Profile to ProfileB (or ProfileM).
 
 ### Function Prototype
 

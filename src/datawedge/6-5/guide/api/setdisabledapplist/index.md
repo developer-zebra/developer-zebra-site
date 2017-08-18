@@ -9,7 +9,7 @@ productversion: '6.5'
 
 Introduced in DataWedge 6.5. 
 
-Used to add, remove or update an item on list of apps and activities that are blocked from using DataWedge. Contains [nested bundles](../overview/#nestedbundles). This API also can be used by an app to prevent the app itself from using DataWedge. 
+Used to add, remove or update an item on the Disabled App List, the list of apps and activities that are blocked from using DataWedge. Contains [nested bundles](../overview/#nestedbundles). This API also can be used by an app to prevent the app itself from using DataWedge. 
 
 ### Function Prototype
 
@@ -72,7 +72,7 @@ For the scenario above...
 * **In UPDATE mode**, DataWedge is disabled for all the activities of the specified package.
 * **In REMOVE mode**, DataWedge removes the specified package from the disabled list (enabling the app to use DataWedge). 
 
-**Important: The APP_LIST bundle extra must be specified only when using UPDATE and REMOVE configuration modes. It is not required for OVERWRITE mode, which in that case replaces the existing disabled list with NULL, thereby deleting all packages and activities in the disabled list**.
+**Important**: The APP_LIST bundle extra is **required** only when using UPDATE and REMOVE configuration modes. <u>If APP_LIST is left blank when using OVERWRITE mode, the existing Disabled App List is deleted</u>.
 
 -----
 

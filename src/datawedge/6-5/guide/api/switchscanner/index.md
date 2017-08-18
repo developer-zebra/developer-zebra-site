@@ -9,7 +9,7 @@ productversion: '6.5'
 
 Introduced in DataWedge 6.5. 
 
-Used to switch to a specific scanner at runtime, enabling selection of the optimal scanning device for the application, requirement or situation when the app is run. **Scanner must be available to the device at runtime**. 
+Used to switch to a specific scanner at runtime, enabling selection of the optimal scanning device for the application, requirement or situation when an app is launched. **Scanner must be available to the device at runtime**. 
 
 ### Function Prototype
 
@@ -22,9 +22,9 @@ Used to switch to a specific scanner at runtime, enabling selection of the optim
 
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.SWITCH_SCANNER"
 
-**&lt;scanner index&gt;**[string]: The index number of the scanner (as a string) to use in the active Profile
+**EXTRA_DATA** [String]: "&lt;scanner index&gt;" -  index number of the scanner to use in the active Profile
 
-**Use [ENUMERATE_SCANNERS](../enumeratescanners) to retrieve the index of scanners**. 
+**Use [ENUMERATE_SCANNERS](../enumeratescanners) to retrieve an index of scanners**. 
 
 ### Result Codes
 

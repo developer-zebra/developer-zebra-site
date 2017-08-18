@@ -97,7 +97,7 @@ Error messages are logged for invalid actions and parameters.
                                 Bundle params = configBundle.getBundle("PARAM_LIST");
                                 Set<String> keys3 = params.keySet();
                                 for (String key3 : keys3) {
-                                    //TODO consume the params
+                                //TODO consume the params
                                 }
                             }
                         }
@@ -106,7 +106,7 @@ Error messages are logged for invalid actions and parameters.
             }
         }
     }
-};
+	};
 
 #### Code to query app associations
 

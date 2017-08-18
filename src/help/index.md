@@ -6,7 +6,7 @@ menu:
   items:
     - title: About TechDocs
       url: /about
-    - title: I Need To...
+    - title: I Need Tools For...
       url: /help
     - title: Feedback
       url: /contact
@@ -15,7 +15,7 @@ menu:
 ---
 ## Overview
 
-Zebra Technologies provides devices for the enterprise to acquire, process and consume myriad forms of data, be it from a barcode, magnetic stripe, RFID tag, smart card, image, text or other technology. To enable Zebra partners and customers of varying skills and requirements to make use of its devices, we offer a broad array of tools designed to suit the requirements and capabilities of most any organization. 
+Zebra Technologies provides devices for the enterprise to acquire, process and consume data from barcodes, magnetic stripe cards, RFID tags, smart cards, images, text or other technologies. To enable Zebra partners and customers of varying skills and requirements to make use of its devices, we offer a broad array of tools designed to suit the requirements and capabilities of most any organization. 
 
 -----
 

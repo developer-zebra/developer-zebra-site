@@ -7,6 +7,8 @@ productversion: '6.4'
 
 ## SET_CONFIG
 
+Introduced in DataWedge 6.4.
+
 Used to create, update or replace a DataWedge Profile and its settings. Supports [nested bundles](../overview/#nestedbundles). To create a Profile without configuring its settings parameters, see [CREATE_PROFILE](../createprofile).
 
 ### Function Prototype
@@ -70,7 +72,7 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 
  `intent_category` [string]  
 
- `intent_delivery` [integer] 0=Start Activity, 1=Start Service, 2=Broadcast
+ `intent_delivery` [string] Use "0" for Start Activity, "1" for Start Service, "2" for Broadcast
 
 <!-- `intent_flag_receiver_foreground` [string] &lt;true/false&gt; -->
 

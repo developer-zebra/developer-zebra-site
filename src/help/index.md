@@ -26,89 +26,86 @@ Zebra mobile and touch computers are equipped with a variety of scanning devices
 ##### PROS: Free; Easy to set up; Built into all Zebra devices; Controlled with UI or intents
 ##### CONS: Fixed feature set; Programmatic access requires coding
 
-> **Zebra recommends considering DataWedge before any other Zebra solution**. 
+###### Zebra recommends considering DataWedge before other Zebra solutions. 
 
 [DataWedge](../datawedge) provides barcode scanning and processing services for devices running Android, and is the fastest and easiest way to perform scanning out of the box or add it to an existing app. Included with every Zebra device, DataWedge enables any app on the device to acquire scanned data without the need to access the scanner APIs directly. DataWedge can be configured in minutes to automatically activate the desired scanner or reader whenever a particular app is launched, and can modify and pass acquired data to an app according to simple or complex rules. 
 
-##### Go to [DataWedge docs](../datawedge). 
+##### Go to [DataWedge docs](../datawedge) 
 
 -----
 
 ### SimulScan
 ##### PROS: Easy to set up; Built into many devices; No coding required; Controlled with APIs 
-##### CONS: Limited device support; Setup can be complex; Advanced features require per-device licensing
+##### CONS: Limited device support; Setup can be complex; Some features require licensing
 
-[SimulScan](../simulscan) is designed to optimize workflow by enabling acquisition of multiple points of data in a single step. It is included with [supported devices](../simulscan/1-1/guide/about/#supporteddevices) and is free for many scanning scenarios. SimulScan is well suited to organizations in which scanning is frequent and scanned forms have either one or more barcodes, or multiple data types to acquire (such as barcodes, text and images). Optionally, SimulScan can integrate with an organization's native Android app and parse captured data directly into the app. **A per-device licensing requirement applies to some scenarios**. 
+[SimulScan](../simulscan) can optimize workflow by acquiring multiple points of data in a single step. It's included with [supported devices](../simulscan/1-1/guide/about/#supporteddevices) and is free for many scanning scenarios. SimulScan is well suited to organizations in which scanning is frequent and scanned forms have either one or more barcodes or contain multiple data types to acquire (such as barcodes, text and images). Optionally, SimulScan can integrate with an organization's native Android app and parse captured data directly into the app. **A per-device licensing requirement applies to some scenarios**. 
 
-##### Go to [SimulScan docs](../simulscan).
+##### Go to [SimulScan docs](../simulscan)
 
 -----
 
 ### Enterprise Browser
-##### PROS: Build UIs with HTML5; Apps are cross-platform; Broad device support; Access to device APIs
-##### CONS: Longer setup time; Requires JavaScript coding; Per-device licensing required 
+##### PROS: Build cross-platform apps with HTML5 that access device APIs; Broad device support
+##### CONS: Requires some JavaScript coding; Longer setup times; Licensing required 
 
-[Enterprise Browser](../enterprise-browser) is a small-footprint web browser platform for building cross-platform scanning apps with minimal coding. 
+[Enterprise Browser](../enterprise-browser) is a small-footprint web browser platform that uses industry-standard HTML5 for building cross-platform scanning apps with minimal coding. Runtime settings are stored in a single config file that's simple to understand, easy to modify and suitable for mass-deployment. Tools included with the platform simplify initial on-ramping and device configuration and debugging. 
 
-##### Go to [Enterprise Browser docs](../enterprise-browser). 
+##### Go to [Enterprise Browser docs](../enterprise-browser)
 
 -----
 
 ### EMDK
-##### PROS: Most customizable solution; Complete control of source code 
-##### CONS: Requires Java or C# coding; Potentially long setup and testing times  
+##### PROS: Most customizable solution; Complete control over all source code 
+##### CONS: Requires Java or C# coding; Potentially long setup and testing times
 
-Organizations with access to Java and/or C# developers can use [EMDK for Android docs](../emdk-for-android) and [EMDK for Xamarin docs](../emdk-for-xamarin) SDKs to build or modify Java or C# apps that acquire data on Android devices. Both SDKs offer simplified access to device APIs through Profile Manager, which automatically generates the XML to drive Zebra's device management layer.   
+Organizations with access to Java and/or C# developers can use [EMDK for Android](../emdk-for-android) and/or [EMDK for Xamarin](../emdk-for-xamarin) SDKs to build or modify Java or C# apps that acquire data on Android devices. Both SDKs offer simplified access to device APIs through Profile Manager, which automatically generates the XML to drive Zebra's device management layer.  
 
-##### Go to [EMDK for Android docs](../emdk-for-android). 
-##### Go to [EMDK for Xamarin docs](../emdk-for-xamarin). 
+##### Go to [EMDK for Android docs](../emdk-for-android)
+##### Go to [EMDK for Xamarin docs](../emdk-for-xamarin)
 
 -----
 
 ## Printing
-Zebra output solutions range from simple line printing from an Enterprise Browser to the development of printer apps and firmware using Link-OS.
+
+Zebra output solutions range from simple line printing to one of [Zebra's printers](https://www.zebra.com/us/en/products/printers.html) to the development of printer apps and firmware using the [Link-OS Multiplatform SDK](../link-os/).
+
+##### Explore [Enterprise Browser printing](http://techdocs.zebra.com/enterprise-browser/1-7/tutorial/printing/)
+##### See [LinkOS Code Samples](https://km.zebra.com/kb/index?page=content&channel=SAMPLE_CODE) 
 
 -----
 
 ## Security
 
-### Secure an App
-Zebra security ranges from simple, feature-based solutions to whole-device lock-down and encryption.
+### Application Security
+Zebra security ranges from simple, feature-based solutions to whole-device lock-down with or without encryption. 
 
-Enterprise Home Screen 
-/ehs
+**[Enterprise Home Screen](../ehs) for Android** is a simple way to control user access to apps, settings and files on Zebra devices without the need for custom code.  
 
-Enterprise Browser
-/enterprise-browser/1-6/guide/security
+**[Enterprise Browser security options](../enterprise-browser/1-7/guide/security)** protect devices and data with a variety of solutions including basic authentication, client-server certificates, encryption, kiosk mode, and settings lock-out.  
 
-Android Security
-/stagenow/2-3/Profiles/managesecurity/
+**[Zebra StageNow manages security](../stagenow/2-7/Profiles/managesecurity/)** with Zebra Mobility DNA, which can lock down peripherals, keys and ports, implement application whitelists and blacklists and set up services to monitor threats and send alerts in real time. Learn more about Zebra Mobility DNA features, which can:  
+* **[Verify the signature of an app before launching](../mx/accessmgr)**
+* **[Set up encryption on a device](../mx/encryptmgr/)**
+* **[Control device persistence settings](../mx/persistmgr/)**
+* **[Lock down one or more device cameras](../mx/cameramgr/)**
+* **[Prevent use of the device Clipboard, Notification panel and other potential leaks](../mx/uimgr)**
 
-Scanner Security Level (Android app)
-/emdk-for-android/6-3/.../ScannerConfig.SecurityLevel.html
+### Whole-device Security
 
-### Secure a Device
+#### Create a Single-Use Device (Kiosk)
+When a device will be dedicated to a single task&mdash;an information kiosk, patient check-in system or price scanner, for example&mdash;Zebra's Enterprise Home Screen might be a good choice. Kiosk Mode opens one app in full-screen mode and prevents exiting when BACK and HOME keys are pressed.
 
-### Device Encryption
-/mx/encryptmgr/
-
-### Device Persistence
-/mx/persistmgr/
-
-### Lock Down Device Camera(s)
-/mx/cameramgr/
-
-### Create a Single-Use Device (Kiosk)
-For use cases in which a device will be dedicated to a single task&mdash;such as that of an information kiosk, patient check-in system or price scanner&mdash;Zebra's Enterprise Home Screen can be used  >>> BLAH BLAH BLAH. 
-
-
-
-Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's hand-held barcode scanner. Kiosk Mode opens the app in full-screen mode and prevents exit by blocking the BACK and HOME keys.
-
-EHS can be used with or without an Enterprise Browser app. For an concise overview of EHS configuration, see the [Device Lock-down With EHS](http://techdocs.zebra.com/enterprise-browser/1-6/guide/ehs/) section of the Enterprise Browser docs. The [EHS User Guide](http://techdocs.zebra.com/ehs/2-5/guide/features/) contains complete instructions. 
+Learn more about [EHS Kiosk Mode](../ehs/2-6/guide/features/#kioskmode) 
 
 -----
 
+### Feedback
+
+> Have an idea for a feature? [Let Us Know!](../contact)
+
+[Back to Main page](../)
+
+<!-- 
 ## Migrate An App
 When the need arises to move an existing app from one device platform to another, such as from Windows CE to Android, Zebra offers multiple solutions to ease the transition. 
 
@@ -129,7 +126,6 @@ Windows Mobile/CE
 C# to Android
 /emdk-for-xamarin/2-4/guide/about/
 
------
 
 ## Modernize An App
 
@@ -144,7 +140,6 @@ SAP ITSmobile
 
 Modernize user interface
 
------
 
 ## Manage and Staging Devices
 StageNow is Zebra's world-class device staging and management system. 
@@ -152,7 +147,7 @@ StageNow is Zebra's world-class device staging and management system.
 StageNow
 /stagenow
 
-
+ -->
 
 <!-- 
 layout: list-products.html

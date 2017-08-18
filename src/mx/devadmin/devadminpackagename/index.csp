@@ -5,6 +5,7 @@ type: parm
 order: 4
 mx: "4.3"
 osx: "1.3"
+devicetype: p
 parm:
   pivotal: No
   presentif: Device Administration Action is "Turn On as Device Administrator" or "Turn Off as Device Administrator"

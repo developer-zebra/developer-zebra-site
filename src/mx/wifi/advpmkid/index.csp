@@ -4,6 +4,7 @@ title: PMKID
 type: parm
 order: 56
 mx: "4.2"
+devicetype: p
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False

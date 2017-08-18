@@ -4,6 +4,7 @@ title: XML Processing Mode
 type: parm
 order: 3
 mx: "4.2"
+devicetype: p
 parm:
   pivotal: No
   name: ProcessingMode

@@ -5,6 +5,7 @@ type: parm
 order: 3
 mx: "4.3"
 apilevel: "1"
+devicetype: p
 parm:
   pivotal: No
   name: TimeoutInterval

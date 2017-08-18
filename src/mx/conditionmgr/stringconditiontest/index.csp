@@ -4,6 +4,7 @@ title: String Condition Test
 type: parm
 order: 24
 mx: 6.0
+devicetype: p
 parm:
   presentif: Data Type is "String"
   pivotal: No

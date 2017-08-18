@@ -5,6 +5,7 @@ type: parm
 order: 9
 mx: "4.1"
 osx: "1.0"
+devicetype: p
 parm:
   presentif: The Certificate Action is "Initialize Android Keystore"
   pivotal: No

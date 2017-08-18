@@ -4,6 +4,7 @@ title: Boot File Name Enable/Disable (67)
 type: parm
 order: 27
 mx: "4.4"
+devicetype: p
 parm:
   pivotal: No
   name: BootFileState

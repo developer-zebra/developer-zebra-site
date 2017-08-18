@@ -4,6 +4,7 @@ title: Protect Hotspot Passphrases (checkbox)
 type: parm
 order: 82
 mx: "6.3"
+devicetype: p
 parm:
   presentif: Hotspot is set to "Enable" and Hotspot Security mode is not "Open" 
   pivotal: No

@@ -4,6 +4,7 @@ title: Set 5.0GHz Channels
 type: parm
 order: 9
 mx: "4.2"
+devicetype: p
 parm:
   presentif: The selected RF Band is "5.0GHz" or "Auto"
   pivotal: No

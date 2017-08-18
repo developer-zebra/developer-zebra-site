@@ -4,6 +4,7 @@ title: OmniTrail Interval
 type: parm
 order: 101
 mx: "6.3"
+devicetype: p
 parm:
   presentif: The "Specify OmniTrail Options" checkbox is checked 
   pivotal: No

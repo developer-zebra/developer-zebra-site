@@ -4,6 +4,7 @@ title: Hotspot RF Band
 type: parm
 order: 75
 mx: "6.3"
+devicetype: p
 parm:
   pivotal: No
   presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot" is set to "Enable"

@@ -4,6 +4,7 @@ title: Keypress Vibration Duration Mode
 type: parm
 order: 10
 mx: "6.0"
+devicetype: p
 parm:
   pivotal: No
   name: KeypressVibrationDurationMode

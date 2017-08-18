@@ -4,6 +4,7 @@ title: Set Host Name
 type: parm
 order: 3
 mx: "5.1"
+devicetype: p
 parm:
   pivotal: No
   name: HostName

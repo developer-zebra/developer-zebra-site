@@ -4,6 +4,7 @@ title: Password
 type: parm
 order: 27
 mx: "4.2"
+devicetype: p
 parm:
   name: PasswordClear, PasswordEncrypted
   pivotal: Yes

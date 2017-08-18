@@ -4,6 +4,7 @@ title: Host Name (12)
 type: parm
 order: 2
 mx: "4.4"
+devicetype: p
 parm:
   pivotal: Yes
   name: HostNameState

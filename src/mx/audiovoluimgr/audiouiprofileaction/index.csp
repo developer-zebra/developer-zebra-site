@@ -5,6 +5,7 @@ type: parm
 order: 6
 mx: "4.4"
 osx: "4.4"
+devicetype: p
 parm:
   pivotal: Yes
   name: UIProfileAction

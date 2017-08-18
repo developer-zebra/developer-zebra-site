@@ -4,6 +4,7 @@ title: Touch Actions for TC series
 type: parm
 order: 3
 mx: "4.2"
+devicetype: p
 parm:
   presentif: Device Type is set to "8956" or "8960" 
   pivotal: No

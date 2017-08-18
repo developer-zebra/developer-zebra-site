@@ -4,6 +4,7 @@ title: Persist As Name
 type: parm
 order: 3
 mx: "4.1"
+devicetype: p
 parm:
   pivotal: No
   name: PersistAsName

@@ -4,6 +4,7 @@ title: Captive Portal Detection
 type: parm
 order: 101
 mx: "6.3"
+devicetype: p
 parm:
   pivotal: No
   name: OmniTrailPriority

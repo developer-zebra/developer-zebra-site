@@ -5,6 +5,7 @@ type: parm
 order: 15
 mx: "6.3"
 apilevel: "23"
+devicetype: p
 parm: 
   presentif: BugReportProfile parameter is set to "New"
   pivotal: No

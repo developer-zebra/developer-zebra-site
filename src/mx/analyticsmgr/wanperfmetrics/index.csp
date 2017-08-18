@@ -5,6 +5,7 @@ type: parm
 mx: "5.1"
 apilevel: "19"
 order: 36
+devicetype: p
 parm:
   presentif: Analytics Action is set to "Enable" and Group Action is set to "Configure Details for a Single Group" and Group Name is set to "WWAN Performance"
   pivotal: No

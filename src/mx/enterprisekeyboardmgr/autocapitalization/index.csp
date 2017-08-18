@@ -4,6 +4,7 @@ title: Auto-capitalization Enable/Disable
 type: parm
 order: 2
 mx: "6.0"
+devicetype: p
 parm:
   pivotal: No
   name: AutoCapitalization

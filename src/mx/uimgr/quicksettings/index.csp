@@ -5,6 +5,7 @@ type: parm
 order: 16
 mx: "5.2"
 apilevel: "16"
+devicetype: p
 parm:
   pivotal: Yes
   name: QuickSettings

@@ -4,6 +4,7 @@ title: Enable Restricted Settings UI
 type: parm
 order: 61
 mx: "4.2"
+devicetype: p
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False

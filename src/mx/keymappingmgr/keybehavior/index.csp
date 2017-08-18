@@ -4,6 +4,7 @@ title: Key Base Behavior
 type: parm
 order: 5
 mx: "4.4"
+devicetype: p
 parm:
   presentif: The Action value is "Remap a key" and Choose a key to modify is not "None"
   pivotal: Yes

@@ -5,6 +5,7 @@ type: parm
 order: 2
 mx: "4.1"
 osx: "1.0"
+devicetype: p
 parm:
   pivotal: Yes
   name: CertAction

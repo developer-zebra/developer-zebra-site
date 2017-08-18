@@ -5,6 +5,7 @@ type: parm
 order: 7
 mx: "4.2"
 osx: "4.1"
+devicetype: p
 parm:
   presentif:  The "USB Module Usage" value is not "Disable" *AND* the "Access device storage from PC via USB" value is not "Enable" or "Disable"  
   pivotal: No

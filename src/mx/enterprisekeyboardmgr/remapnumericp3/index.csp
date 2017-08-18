@@ -4,6 +4,7 @@ title: Remap Numeric Key P3
 type: parm
 order: 33
 mx: "6.0"
+devicetype: p
 parm:
   pivotal: No
   name: RemapNumericP3

@@ -5,6 +5,7 @@ type: parm
 order: 4
 mx: "6.1"
 apilevel: "1"
+devicetype: p
 parm:
   pivotal: No
   name: GPSLocationMode

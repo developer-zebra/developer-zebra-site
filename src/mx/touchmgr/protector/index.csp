@@ -5,6 +5,7 @@ type: parm
 order: 10
 mx: "6.2"
 osx: "6.2"
+devicetype: p
 parm:
   pivotal: no
   name: Protector

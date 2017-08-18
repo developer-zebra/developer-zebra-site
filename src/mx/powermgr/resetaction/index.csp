@@ -4,6 +4,7 @@ title: Reset Action
 type: parm
 order: 2
 mx: "4.2"
+devicetype: p
 parm:
   pivotal: Yes
   name: ResetAction

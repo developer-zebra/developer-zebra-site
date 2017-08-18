@@ -4,6 +4,7 @@ title: Host Name Option Value
 type: parm
 order: 3
 mx: "4.4"
+devicetype: p
 parm:
   presentif: Host Name is "Enable"
   pivotal: Yes

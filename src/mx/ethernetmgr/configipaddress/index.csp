@@ -6,6 +6,7 @@ order: 2
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"
+devicetype: p
 parm:
   pivotal: No
   name: ConfigIpAddr

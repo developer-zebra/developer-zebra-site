@@ -4,6 +4,7 @@ title:  Application Launch
 type: parm
 order: 18
 mx: "4.4"
+devicetype: p
 parm:
   presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Launch application"
   name: BaseLaunchActivityName,BlueLaunchActivityName,OrangeLaunchActivityName,GreyLaunchActivityName,ShiftLaunchActivityName,ControlLaunchActivityName

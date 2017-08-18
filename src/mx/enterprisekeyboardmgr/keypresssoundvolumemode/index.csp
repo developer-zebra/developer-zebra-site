@@ -4,6 +4,7 @@ title: Keypress Sound Volume Mode
 type: parm
 order: 8
 mx: "6.0"
+devicetype: p
 parm:
   pivotal: No
   name: KeypressSoundVolumeMode

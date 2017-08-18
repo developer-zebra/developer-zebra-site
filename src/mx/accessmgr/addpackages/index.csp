@@ -5,6 +5,7 @@ type: parm
 order: 8
 mx: "4.1"
 osx: "1.0"
+devicetype: p
 parm:
   presentif: The Operation Mode is "Single User With Whitelist"
   pivotal: Yes

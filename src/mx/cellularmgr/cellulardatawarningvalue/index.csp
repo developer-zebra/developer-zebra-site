@@ -4,6 +4,7 @@ title: Set Cellular Data Warning
 type: parm
 order: 29
 mx: "6.3"
+devicetype: p
 parm:
   presentif: Cellular Data State is set to "Turn On" and Cellular Data Warning is set to "Set new warning"
   pivotal: No

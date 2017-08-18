@@ -4,6 +4,7 @@ title: Device Type
 type: parm
 order: 1
 mx: "6.2"
+devicetype: p
 parm:
   pivotal: No
   name: DeviceType

@@ -4,6 +4,7 @@ title: Vendor Class Value
 type: parm
 order: 21
 mx: "5.0"
+devicetype: p
 parm:
   presentif: Vendor Class is "Enable"
   pivotal: Yes

@@ -4,6 +4,7 @@ title: Require Opaque
 type: parm
 order: 7
 mx: "4.3"
+devicetype: p
 parm:
   pivotal: No
   presentif:  File Access method is batch file type is binary and require encoding is set.

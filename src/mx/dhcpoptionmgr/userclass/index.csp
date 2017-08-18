@@ -4,6 +4,7 @@ title: User Class Enable/Disable (77)
 type: parm
 order: 35
 mx: "4.4"
+devicetype: p
 parm:
   pivotal: Yes
   name: UserClassState

@@ -4,6 +4,7 @@ title: Integer Constant Value
 type: parm
 order: 13
 mx: 4.4
+devicetype: p
 parm:
   presentif: Data Type is "Integer" 
   pivotal: No

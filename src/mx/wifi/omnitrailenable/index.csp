@@ -4,6 +4,7 @@ title: OmniTrail Enable/Disable
 type: parm
 order: 85
 mx: "6.3"
+devicetype: p
 parm:
   presentif: The "Specify OmniTrail Options" checkbox is checked
   pivotal: No  

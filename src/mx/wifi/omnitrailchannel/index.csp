@@ -4,6 +4,7 @@ title: OmniTrail Channel
 type: parm
 order: 99
 mx: "6.3"
+devicetype: p
 parm:
   presentif: The "Specify OmniTrail Options" checkbox is checked 
   pivotal: No

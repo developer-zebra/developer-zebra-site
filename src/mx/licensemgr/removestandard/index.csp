@@ -4,6 +4,7 @@ title: Remove By Standard Feature Name
 type: parm
 order: 11
 mx: "4.3"
+devicetype: p
 parm:
   pivotal: No
   presentif: The "Specify license action to perform" is "Remove" *AND* "Specify selection method to use" is "Select using a standard feature name"

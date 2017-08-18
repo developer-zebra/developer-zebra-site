@@ -5,6 +5,7 @@ type: parm
 order: 7
 mx: "4.1"
 osx: "1.0"
+devicetype: p
 parm:
   pivotal: No
   name: CertFileClient

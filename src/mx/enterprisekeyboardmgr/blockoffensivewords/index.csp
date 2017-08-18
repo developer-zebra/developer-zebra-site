@@ -4,6 +4,7 @@ title: Block Offensive Words Enable/Disable
 type: parm
 order: 4
 mx: "6.0"
+devicetype: p
 parm:
   pivotal: No
   name: BlockOffensiveWords

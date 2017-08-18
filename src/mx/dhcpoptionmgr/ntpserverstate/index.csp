@@ -4,6 +4,7 @@ title: NTP Server (42)
 type: parm
 order: 10
 mx: "4.4"
+devicetype: p
 parm:
   pivotal: No
   name: NTPServerState

@@ -4,6 +4,7 @@ title: Condition Wait Message
 type: parm
 order: 35
 mx: 4.4
+devicetype: p
 parm:
   presentif: Condition Met Action or Condition Not Met Action is "Retry (up to specified times) then Fail"
   pivotal: No

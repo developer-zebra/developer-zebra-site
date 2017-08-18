@@ -4,6 +4,7 @@ title: Scan Mode Action
 type: parm
 order: 2
 mx: "4.3"
+devicetype: p
 parm:
   pivotal: No
   name: ScanModeAction

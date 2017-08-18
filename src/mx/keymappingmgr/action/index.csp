@@ -4,6 +4,7 @@ title:  Action
 type: parm
 order: 2
 mx: "4.4"
+devicetype: p
 parm:
   pivotal: Yes
   type: list

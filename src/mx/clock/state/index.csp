@@ -4,6 +4,7 @@ title: 24-Hour Time Enable/Disable
 type: parm
 order: 14
 mx: "6.0"
+devicetype: p
 parm:
   pivotal: No
   name: MilitaryTime

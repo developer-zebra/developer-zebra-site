@@ -4,6 +4,7 @@ title: Cellular Data Limit Enable/Disable
 type: parm
 order: 25
 mx: "6.3"
+devicetype: p
 parm:
   pivotal: No
   name: CellularDataLimitUsage

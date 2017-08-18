@@ -5,6 +5,7 @@ type: parm
 order: 50
 mx: "6.3"
 apilevel: "23"
+devicetype: p
 parm: 
   pivotal: No
   name: SetDialogTimeout

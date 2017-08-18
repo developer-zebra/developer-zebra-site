@@ -4,6 +4,7 @@ title: WPA Mode
 type: parm
 order: 23
 mx: "4.2"
+devicetype: p
 parm:
   pivotal: Yes
   presentif: The Network Action is "Add a New Network" and the Security Mode is "Personal" or "Enterprise"

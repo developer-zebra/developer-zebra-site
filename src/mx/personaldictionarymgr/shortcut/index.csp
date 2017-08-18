@@ -4,6 +4,7 @@ title: Shortcut
 type: parm
 order: 11
 mx: "6.0"
+devicetype: p
 parm:
   presentif: Action is "Add word" or "Delete word"
   pivotal: No

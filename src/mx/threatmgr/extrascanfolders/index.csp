@@ -5,6 +5,7 @@ type: parm
 order: 50
 mx: "6.1"
 osx: "3.5"
+devicetype: p
 parm:
   pivotal: Yes
   name: ExtraScanFolders

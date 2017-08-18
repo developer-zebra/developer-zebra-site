@@ -4,7 +4,7 @@ title: OmniTrail "abg" Data Rates
 type: parm
 order: 92
 mx: "6.3"
-devicetype: p
+devicetype: p,v
 parm:
   pivotal: No
   presentif: The "Specify OmniTrail Options" checkbox is checked and "OmniTrail DataRate Options" is set to "abg"

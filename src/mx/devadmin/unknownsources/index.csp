@@ -5,7 +5,7 @@ type: parm
 order: 8
 mx: "4.3"
 apilevel: "3"
-devicetype: p
+devicetype: p,v
 parm:
   pivotal: No
   name: UnknownSourcesStatus

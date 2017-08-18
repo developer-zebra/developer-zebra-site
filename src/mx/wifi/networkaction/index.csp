@@ -4,7 +4,7 @@ title: Network Action
 type: parm
 order: 20
 mx: "4.2"
-devicetype: p
+devicetype: p,v
 parm:
   pivotal: Yes
   name: NetworkAction

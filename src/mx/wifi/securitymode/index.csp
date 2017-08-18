@@ -4,7 +4,7 @@ title: Security Mode
 type: parm
 order: 22
 mx: "4.2"
-devicetype: p
+devicetype: p,v
 parm:
   pivotal: Yes
   presentif: The Network Action is "Add a New Network"

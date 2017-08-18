@@ -4,7 +4,7 @@ title: Request Status Filter
 type: parm
 order: 3
 mx: "5.0"
-devicetype: p
+devicetype: p,v
 parm:
   pivotal: No 
   presentif: The Status Request Action is "Add/Replace Status Request"

@@ -5,7 +5,7 @@ type: parm
 order: 9
 mx: "4.1"
 osx: "1.0"
-devicetype: p
+devicetype: p,v
 parm:
   presentif: The Certificate Action is "Install certificate" *AND* the Certificate Type is "Client Certificate and Private Key (.PFX file)" or "Client Certificate and Private Key (.P12 file)" or "Client Certificate and Private Key (.PKCS12 file)"
   pivotal: No

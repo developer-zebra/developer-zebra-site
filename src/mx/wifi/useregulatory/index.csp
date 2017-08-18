@@ -4,7 +4,7 @@ title: Country Selection Auto/Manual
 type: parm
 order: 5
 mx: "4.2"
-devicetype: p
+devicetype: p,v
 parm:
   pivotal: No
   name: UseRegulatory

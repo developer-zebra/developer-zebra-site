@@ -4,7 +4,7 @@ title: Integer Source Type
 type: parm
 order: 10
 mx: 4.4
-devicetype: p
+devicetype: p,v
 parm:
   presentif: Data Type is "Integer"
   pivotal: No

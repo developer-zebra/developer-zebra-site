@@ -4,7 +4,7 @@ title: Notify State
 type: parm
 order: 8
 mx: "5.0"
-devicetype: p
+devicetype: p,v
 parm:
   pivotal: Yes
   name: NotifyState

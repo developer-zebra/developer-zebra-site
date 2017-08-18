@@ -4,7 +4,7 @@ title: Cellular Data Limit Value
 type: parm
 order: 27
 mx: "6.3"
-devicetype: p
+devicetype: p,v
 parm:
   presentif: Cellular Data State is set to "Enable" and Cellular Data Limit State is set to "Enable and set custom limit"
   pivotal: No

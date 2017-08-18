@@ -4,7 +4,7 @@ title: Source URI
 type: parm
 order: 6
 mx: "4.3"
-devicetype: p
+devicetype: p,v
 parm:
   presentif: File Action is Transfer/Copy and source is remote server
   pivotal: No

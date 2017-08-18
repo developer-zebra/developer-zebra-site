@@ -4,7 +4,7 @@ title: Password Protect Encryption
 type: parm
 order: 29
 mx: "6.1"
-devicetype: p
+devicetype: p,v
 parm:
   pivotal: No
   name: PasswordProtectEncryption

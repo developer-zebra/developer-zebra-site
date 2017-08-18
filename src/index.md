@@ -232,9 +232,7 @@ products:
         url: /mx/mx-version-on-device
     versions:
       - url: mx
-        label: '6.3'      
-      - url: mx/mxvt
-        label: 'Value Tier'
+        label: '7.0' 
   - title: SimulScan
     description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.
     url: /simulscan/1-1/guide/about

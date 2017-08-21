@@ -1,6 +1,6 @@
 ---
 publish: false
-title: I Need Tools for...
+title: I Need Tools For...
 layout: guide.html
 menu:
   items:
@@ -22,8 +22,9 @@ Zebra Technologies provides devices for the enterprise to acquire, process and c
 ## Scanning
 Zebra mobile and touch computers are equipped with a variety of scanning devices, each of which can be accessed through software included with the device or with apps developed by a partner or customer. Zebra's solutions are described below in order from easiest (and with the least coding required) to the most powerful and complex.  
 
-### DataWedge - Add scanning to existing app
-#### Easiest: minimal setup, coding optional
+### DataWedge
+##### PROS: Free; Easy to set up; Built into all Zebra devices; Controlled with UI or intents
+##### CONS: Fixed feature set; Programmatic access requires coding
 
 ###### Zebra recommends considering DataWedge before other Zebra solutions. 
 
@@ -68,8 +69,8 @@ Organizations with access to Java and/or C# developers can use [EMDK for Android
 
 Zebra output solutions range from simple line printing to one of [Zebra's printers](https://www.zebra.com/us/en/products/printers.html) to the development of printer apps and firmware using the [Link-OS Multiplatform SDK](../link-os/).
 
-##### Explore [Enterprise Browser printing](http://techdocs.zebra.com/enterprise-browser/1-7/tutorial/printing/)
-##### See [LinkOS Code Samples](https://km.zebra.com/kb/index?page=content&channel=SAMPLE_CODE) 
+##### [Printing from Enterprise Browser](http://techdocs.zebra.com/enterprise-browser/1-7/tutorial/printing/)
+##### [LinkOS Code Samples](https://km.zebra.com/kb/index?page=content&channel=SAMPLE_CODE) 
 
 -----
 
@@ -98,33 +99,32 @@ Learn more about [EHS Kiosk Mode](../ehs/2-6/guide/features/#kioskmode)
 
 -----
 
-### Feedback
+## Migrate An App
+When the need arises to move an existing app from one device platform to another, such as from Windows CE to Android, Zebra offers multiple solutions to ease the transition. Migration tools can put a new face on older apps or help move apps from older platforms to new ones.
+
+### Enterprise Browser 
+
+[Migrate from Pocket Browser](../enterprise-browser/1-6/guide/pb2/)
+
+[Migrat from Rho Elements](../enterprise-browser/1-6/guide/elements/)
+
+[Migrate from Rho Mobile](../enterprise-browser/1-6/guide/rhomobile/)
+
+### EMDK for Xamarin
+
+[From Windows Mobile/CE](../emdk-for-xamarin/latest/guide/about/)
+
+[From C#](../emdk-for-xamarin/latest/guide/about/)
+
+-----
+
+#### Feedback
 
 > Have an idea for a feature? [Let Us Know!](../contact)
 
 [Back to Main page](../)
 
-<!-- 
-## Migrate An App
-When the need arises to move an existing app from one device platform to another, such as from Windows CE to Android, Zebra offers multiple solutions to ease the transition. 
-
-Migration tools can put a new face on older apps, modernize apps for terminal emulation or help move apps from older platforms to new ones.
-
-Pocket Browser
-/enterprise-browser/1-6/guide/pb2/
-
-Rho Elements
-/enterprise-browser/1-6/guide/elements/
-
-Rho Mobile
-/enterprise-browser/1-6/guide/rhomobile/
-
-Windows Mobile/CE
-/emdk-for-xamarin/2-4/guide/about/
-
-C# to Android
-/emdk-for-xamarin/2-4/guide/about/
-
+<!--
 
 ## Modernize An App
 

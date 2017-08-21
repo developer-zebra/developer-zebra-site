@@ -22,9 +22,8 @@ Zebra Technologies provides devices for the enterprise to acquire, process and c
 ## Scanning
 Zebra mobile and touch computers are equipped with a variety of scanning devices, each of which can be accessed through software included with the device or with apps developed by a partner or customer. Zebra's solutions are described below in order from easiest (and with the least coding required) to the most powerful and complex.  
 
-### DataWedge
-##### PROS: Free; Easy to set up; Built into all Zebra devices; Controlled with UI or intents
-##### CONS: Fixed feature set; Programmatic access requires coding
+### DataWedge - Add scanning to existing app
+#### Easiest: minimal setup, coding optional
 
 ###### Zebra recommends considering DataWedge before other Zebra solutions. 
 

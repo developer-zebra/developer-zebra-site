@@ -299,13 +299,8 @@ products:
         label: '2.3'
       - url: stagenow/2-2/about
         label: '2.2'
-<<<<<<< HEAD
   - title: I Need Tools For...
     description: Not sure where to go? Click on "I Need Tools For..." for help figuring out which Zebra tool best suits the requirements, skills and experience of your organization.
-=======
-  - title: I Need To...
-    description: Not sure where to go? Click on "I Need To..." for help figuring out which Zebra tool best suits the requirements, skills and experience of your organization.
->>>>>>> eb-1.7
     url: /help
     btn-text: Latest Guides
     image: /images/logo_techdocs.png
@@ -328,11 +323,7 @@ menu:
   items:
     - title: About TechDocs
       url: /about
-<<<<<<< HEAD
     - title: I Need Tools For...
-=======
-    - title: I Need To...
->>>>>>> eb-1.7
       url: /help
     - title: Feedback
       url: /contact

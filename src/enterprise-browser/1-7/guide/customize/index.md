@@ -113,16 +113,20 @@ The &lt;customxmlfile&gt; tag specifies the location of `CustomScript.xml` in an
 
 ## Sample Button Layouts
 
-![img](EB_BarcodeScan.png)
-_Shows F2, F3, F4 and ENTER functions depicted as custom buttons (top) and as custom keys (bottom, along with a custom scan button)_
+
+The image below shows F2, F3, F4 and ENTER functions depicted as custom buttons (top) and as custom keys (bottom), along with a custom scan button. 
+
+<img style="height:300px" src="EB_BarcodeScan.png"/>
 <br>
 
-![img](EB_Fullscreen_BatterySignal.png)
-_Adds to the layout with more custom keys (bottom, in place of the scan button) and a numbered list of keys that execute custom JavaScript_
+Adding to the layout above, this image replaces the scan button with additional custom keys and a numbered list of buttons that could execute JavaScript, send intents, launch apps or perform other tasks. 
+
+<img style="height:300px" src="EB_Fullscreen_BatterySignal.png"/>
 <br>
 
-![img](EB_WT6000.png)
-_Buttons can be used to display/hide other layouts and can be configured to automatically align with the top, bottom or sides of the screen_. 
+As seen in the sample below, buttons also can be used to display and hide other layouts, and can be configured to automatically align with the top, bottom or sides of the screen. Here are seen vertically-oriented buttons and keys on a device with landscape screen orientation.  
+
+<img style="height:300px" src="EB_WT6000.png"/>
 <br>
 
 See the [Button Parameter Guide](button) and [Bar Orientation](button/#barorientation) for more information.

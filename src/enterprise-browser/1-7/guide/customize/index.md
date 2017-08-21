@@ -122,7 +122,7 @@ _Adds to the layout with more custom keys (bottom, in place of the scan button) 
 <br>
 
 ![img](EB_WT6000.png)
-_Automatic vertical key layout on a screen with landscape orientation_ 
+_Buttons can be used to display/hide other layouts and can be configured to automatically align with the top, bottom or sides of the screen_. 
 <br>
 
 See the [Button Parameter Guide](button) and [Bar Orientation](button/#barorientation) for more information.

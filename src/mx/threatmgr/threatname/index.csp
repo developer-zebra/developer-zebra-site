@@ -17,29 +17,29 @@ parm:
       osx: "3.5"
       description: This value (or the absence of this parm from the XML) will make no change to the Threat(s) being detected on the device; any previously selected setting will be retained.
     - code: 1
-      name: Max Password Attempts
+      name: MaxPasswordAttempts
       mx: "4.3"
       osx: "3.5"
-      description: Detect that the device has reached the maximum number of failed password attempts.
+      description: Detect when the Multi-user MX lockscreen has reached the maximum number of failed password attempts (9). See important note above. 
     - code: 2
-      name: MDM Client Removal 
+      name: MDMClientRemoval 
       mx: "4.3"
       osx: "3.5"
       description: Detects that an MDM client app has been removed from the device.
     - code: 3
-      name: Externally Detected
+      name: ExternallyDetected
       mx: "4.3"
       osx: "3.5"
       description: A custom Threat defined by an intent that can be triggered from an application.
     - code: 4
-      name: Exchange Active Sync Command 
+      name: ExchangeActiveSyncCommand 
       mx: "4.3"
       osx: "3.5"
       description: Detects a Threat encountered while syncing with Microsoft Exchange.
     - code: 5
-      name: Device is Rooted 
+      name: DeviceisRooted 
       mx: "4.3"
       osx: "3.5"
       description: Detects that root-level access has been given to one or more device users and/or apps on the device. 
 ---
-Used to specify the name of the Threat to detect. 
+Used to specify the name of the Threat to detect. **Note: Zebra Multi-user MX has been discontinued, rendering the MaxPasswordAttempts feature inoperable on most devices**. 

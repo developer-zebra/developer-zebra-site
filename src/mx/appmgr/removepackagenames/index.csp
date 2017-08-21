@@ -1,0 +1,19 @@
+---
+csp: appmgr
+title: Battery Optimization Remove Apps
+type: parm
+order: 15
+mx: "7.0"
+parm:
+  presentif: The Action is "Battery Optimization"
+  pivotal: No
+  name: RemovePackageNames
+  type: string
+---
+
+Used to specify one or more Package Names of apps from which to remove Battery Optimization. 
+
+**Input value rules**: 
+
+* String containing one or more Package Names 
+* Multiple names must be separated by commas

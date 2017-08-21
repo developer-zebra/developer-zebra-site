@@ -14,8 +14,10 @@ The Bug Report Manager (BugReportMgr) provides a framework for reporting the tim
 * Store an unlimited number of bug report files in available flash
 * Capture audio and attach to bug reports
 * Trigger "silent" bug reports with an intent 
-* **Enable or Disable**: 
- * Generate Bug Report from Power Off Menu
+* **Enable/Disable on device**: 
+ * Generate bug report from Power-Off Menu
+ * Take a screenshot with a bug report
+ * Trigger a bug report with an intent 
  * Store reports in flash memory
  * Send reports to a specified email address
  * Upload reports to the Zebra Cloud

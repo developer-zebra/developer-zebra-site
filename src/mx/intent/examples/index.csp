@@ -18,3 +18,14 @@ order: 99
 	</wap-provisioningdoc>
 
 
+### Enroll a Device Owner
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="Intent" version="7.0" >
+			<parm name="Action" value="EnrollDeviceOwner"/>
+			<parm name="Package" value="com.symbol.osx.testdpc"/>
+			<parm name="Class" value="com.symbol.osx.testdpc.AdminClass"/>
+		</characteristic>
+	</wap-provisioningdoc>
+

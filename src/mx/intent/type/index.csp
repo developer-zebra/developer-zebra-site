@@ -6,7 +6,7 @@ mx: "4.1"
 apilevel: "1"
 order: 10
 parm:
-  presentif: The Action is "StartActivity" or "StartService"
+  presentif: The Action is NOT "Enroll Device Owner"
   pivotal: No
   name: Type
   type: string

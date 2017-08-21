@@ -53,7 +53,9 @@ order: 99
 	   </characteristic>
 	</wap-provisioningdoc>
   
-The XML above enables detection of the “MaxPasswordAttempts” threat and sets the countermeasure to trigger an unsolicited alert, an explicit intent sent to the package and class defined in the “AlertPackage” and “AlertClass” parameters. In this example, the intent is sent to the "**testactivity**” **class** of the "**com.example.testapp**" **package**, and includes an “**AlertMessage**” **extra** with the value of “**MaxPasswordAttempts has been reached**."
+The XML above enables detection of the “MaxPasswordAttempts” threat on devices running Zebra Multi-user MX, and sets the countermeasure to trigger an unsolicited alert, an explicit intent sent to the package and class defined in the “AlertPackage” and “AlertClass” parameters. In this example, the intent is sent to the "**testactivity**” **class** of the "**com.example.testapp**" **package**, and includes an “**AlertMessage**” **extra** with the value of “MaxPasswordAttempts has been reached." 
+
+**Note: Zebra Multi-user MX has been discontinued, rendering the MaxPasswordAttempts feature inoperable on most devices**. 
 
 Assuming that the “testactivity” class has already been created, this explicit intent can be handled by overriding the `onNewIntent` method. The following JavaScript code illustrates how this could be done:
 

@@ -79,7 +79,7 @@ Zebra output solutions range from simple line printing to one of [Zebra's printe
 ### Application Security
 Zebra security ranges from simple, feature-based solutions to whole-device lock-down with or without encryption. 
 
-**[Enterprise Home Screen](../ehs) for Android** is a simple way to control user access to apps, settings and files on Zebra devices without the need for custom code.  
+**[Enterprise Home Screen](../ehs)** is a simple way to control user access to apps, settings and files on Zebra devices running Android without the need for custom code.  
 
 **[Enterprise Browser security options](../enterprise-browser/1-7/guide/security)** protect devices and data with a variety of solutions including basic authentication, client-server certificates, encryption, kiosk mode, and settings lock-out.  
 
@@ -99,28 +99,26 @@ Learn more about [EHS Kiosk Mode](../ehs/2-6/guide/features/#kioskmode)
 
 -----
 
-## Migrate An App
-When the need arises to move an existing app from one device platform to another, such as from Windows CE to Android, Zebra offers multiple solutions to ease the transition. Migration tools can put a new face on older apps or help move apps from older platforms to new ones.
+## App Migration
+When there's a need to move an existing app from one device platform to another&mdash;such as from Windows CE to Android&mdash;Zebra offers multiple solutions to help ease the transition. Migration tools can put a new face on older apps or help move apps from older platforms to new ones.
 
-### Enterprise Browser 
+### Enterprise Browser
 
 [Migrate from Pocket Browser](../enterprise-browser/1-6/guide/pb2/)
 
-[Migrat from Rho Elements](../enterprise-browser/1-6/guide/elements/)
+[Migrate from Rho Elements](../enterprise-browser/1-6/guide/elements/)
 
 [Migrate from Rho Mobile](../enterprise-browser/1-6/guide/rhomobile/)
 
 ### EMDK for Xamarin
 
-[From Windows Mobile/CE](../emdk-for-xamarin/latest/guide/about/)
-
-[From C#](../emdk-for-xamarin/latest/guide/about/)
+[Migrate a C# Windows Mobile/CE app](../emdk-for-xamarin)
 
 -----
 
 #### Feedback
 
-> Have an idea for a feature? [Let Us Know!](../contact)
+**Have an idea for a feature? [Let Us Know!](../contact)**
 
 [Back to Main page](../)
 

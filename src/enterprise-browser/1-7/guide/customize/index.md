@@ -10,8 +10,8 @@ Enterprise Browser 1.7 (and higher) for Android includes [ButtonBar APIs](../../
 
 **Customization Guides**:
 
-* **[Button Parameter Guide](button) -** 
-* **[JavaScript Parameter Guide](script) -**
+* **[Button Parameter Guide](button) -** details XML coding for button display and configuration
+* **[JavaScript Parameter Guide](script) -** details XML coding for assigning JavaScript to buttons
 
 
 ![img](EB_ButtonBar_API.png)
@@ -111,11 +111,29 @@ The &lt;customxmlfile&gt; tag specifies the location of `CustomScript.xml` in an
 
 -----
 
+## Sample Button Layouts
+
+![img](EB_BarcodeScan.png)
+_Shows F2, F3, F4 and ENTER functions depicted as custom buttons (top) and as custom keys (bottom, along with a custom scan button)_
+<br>
+
+![img](EB_Fullscreen_BatterySignal.png)
+_Adds to the layout with more custom keys (bottom, in place of the scan button) and a numbered list of keys that execute custom JavaScript_
+<br>
+
+![img](EB_WT6000.png)
+_Automatic vertical key layout on a screen with landscape orientation_ 
+<br>
+
+See the [Button Parameter Guide](button) and [Bar Orientation](button/#barorientation) for more information.
+
+-----
+
 **Related Guides**:
 
+* **[Button Parameter Guide](button)**
+* **[JavaScript Parameter Guide](script)**
 * **[&lt;buttonxmlfile&gt;](../configreference/#buttonxmlfile) path tag** in `Config.xml`
 * **[&lt;customxmlfile&gt;](../configreference/#customxmlfile)  path tag** in `Config.xml`
 * **[ButtonBar APIs](../../api/re2x/ButtonBar)** 
-* **[Button.xml Guide]()**
-* **[CustomScript.xml Guide]()**
 

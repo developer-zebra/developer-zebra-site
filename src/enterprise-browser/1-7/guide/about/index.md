@@ -23,10 +23,12 @@ A new Android-only ButtonBar API permits a series of custom buttons or keys to b
 
 **Related links**:
 
-* [Custom Button guide](../customize)
-* [Button XML file parameter](../configreference/#buttonxmlfile) in `Config.xml` reference
+* [Customization Guide](../customize)
+ * [Button Parameter Guide](../customize/button)
+ * [JavaScript Parameter Guide](../customize/script)
+* [Button Config.xml tag](../configreference/#buttonxmlfile) in `Config.xml` reference
 * [ButtonBar API](../../api/re2x/ButtonBar)
-* [Other new and updated APIs](#neworupdatedapis)
+* [Other new and updated APIs](#updatedapis)
 
 -----
 
@@ -116,7 +118,7 @@ For details, see the [Config.xml Reference](../configreference/#substitutionvari
 
 ----
 
-### New or Updated APIs
+### Updated APIs
 
 * An **updated [WebView API](../../api/webview)** provides programmatic control over the Android WebView using new **clearApplicationCache, clearCache, clearHistory, clearCookies, resizeWebviewLayout and resetWebviewLayout** methods, and **blockNetworkImage, blockNetworkLoads and contentHeight** properties.  
 * An **updated [Device API](../../api/device) -** adds a **reboot** method for Android. 
@@ -126,11 +128,13 @@ For details, see the [Config.xml Reference](../configreference/#substitutionvari
 
 -----
 
-New or Updated Guides
+### New or Updated Guides
 
 * A **new [Web Page Capture guide](../capture)** covers diagnostic features introduced in EB 1.7 that can capture screenshots and source code files for all app pages. 
 
-* The **new [Customization guide](../customize)** shows how to customize the on-screen buttons on a device and how to include custom JavaScript snippets for use by the buttons or apps.
+* A **new [Customization guide](../customize)** shows how to customize the on-screen buttons on a device and how to include custom JavaScript snippets for use by the buttons or apps.
+ * [Button Parameter Guide](../customize/button)
+ * [JavaScript Parameter Guide](../customize/script)
 
 * An **updated [Security Overview guide](../security)** includes the new security-related `Config.xml`-file tags.  
 

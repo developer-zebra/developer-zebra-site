@@ -33,14 +33,13 @@ Used to enable/disable the scanner Plug-in being used by the currently active Pr
 
 DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
-* **PLUGIN_DISABLED_IN_CONFIG -** FAILURE
 * **DATAWEDGE_DISABLED -** FAILURE
-* **PROFILE_DISABLED -** FAILURE
 * **PARAMETER_INVALID -** FAILURE
-* **SCANNER_ENABLE_FAILED -** FAILURE
-* **SCANNER_DISABLE_FAILED -** FAILURE
-* **SCANNER_ALREADY_ENABLED -** FAILURE
+* **PROFILE_DISABLED -** FAILURE
 * **SCANNER_ALREADY_DISABLED -** FAILURE
+* **SCANNER_ALREADY_ENABLED -** FAILURE
+* **SCANNER_DISABLE_FAILED -** FAILURE
+* **SCANNER_ENABLE_FAILED -** FAILURE
 
 Also see the [Result Codes guide](../resultinfo) for more information.  
 

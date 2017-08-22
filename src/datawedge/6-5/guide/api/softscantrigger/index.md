@@ -36,11 +36,10 @@ Used to start, stop or toggle a software scanning trigger.
 
 DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
-* **INPUT_NOT_ENABLED -** FAILURE
-* **PROFILE_DISABLED -** FAILURE 
 * **DATAWEDGE_DISABLED -** FAILURE
+* **INPUT_NOT_ENABLED -** FAILURE
 * **PARAMETER_INVALID -** FAILURE
-* **PLUGIN_DISABLED_IN_CONFIG -** FAILURE
+* **PROFILE_DISABLED -** FAILURE 
 
 Also see the [Result Codes guide](../resultinfo) for more information.  
 

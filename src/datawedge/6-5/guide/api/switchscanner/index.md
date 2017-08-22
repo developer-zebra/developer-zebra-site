@@ -31,11 +31,13 @@ Used to switch to a specific scanner at runtime, enabling selection of the optim
 DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
 * **DATAWEDGE_DISABLED -** DataWedge is disabled
-* **PROFILE_DISABLED -** Profile is disabled
-* **PLUGIN_DISABLED -** Scanner plug-in is disabled
-* **SCANNER_DISABLED -** Scanner is disabled
+* **NO_ACTIVE_PROFILE -** 
 * **PARAMETER_INVALID -** Given scanner parameter is invalid
-* **PARAMETER_NOT_SUPPORTED -** Given scanner parameter is not supported
+* **PLUGIN_DISABLED -** Scanner plug-in is disabled
+* **PROFILE_DISABLED -** Profile is disabled
+* **SCANNER_ALREADY_ENABLED -** Scanner is disabled
+* **SCANNER_DISABLE_FAILED -** Scanner is disabled
+* **SCANNER_NOT_CONNECTED -**
 
 Also see the [Result Codes guide](../resultinfo) for more information.  
 

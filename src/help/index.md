@@ -67,7 +67,7 @@ Organizations with access to Java and/or C# developers can use [EMDK for Android
 
 ## Printing
 
-Zebra output solutions range from simple line printing to one of [Zebra's printers](https://www.zebra.com/us/en/products/printers.html) to the development of printer apps and firmware using the [Link-OS Multiplatform SDK](../link-os/).
+Zebra output solutions range from simple line printing with [Zebra's printers](https://www.zebra.com/us/en/products/printers.html) to the development of printer apps and firmware using the [Link-OS Multiplatform SDK](../link-os/).
 
 ##### [Printing from Enterprise Browser](http://techdocs.zebra.com/enterprise-browser/1-7/tutorial/printing/)
 ##### [LinkOS Code Samples](https://km.zebra.com/kb/index?page=content&channel=SAMPLE_CODE) 

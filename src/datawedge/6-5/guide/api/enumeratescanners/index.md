@@ -45,7 +45,7 @@ Error messages are logged for invalid actions and parameters.
 	i.setAction(enumerateScanners);
 	
 	// send the intent to DataWedge:
-	context.this.sendBroadcast(i);
+	this.sendBroadcast(i);
 
 	// enable the app to receive the enumerated list of available scanners:
 	String enumeratedList = "com.symbol.datawedge.api.ACTION";

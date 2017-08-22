@@ -54,7 +54,7 @@ Error messages are logged for invalid actions and parameters.
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	String[ ] values = {"Source profile","Destination Profile"};
 	i.putExtra("com.symbol.datawedge.api.CLONE_PROFILE", values);
-	context.this.sendBroadcast(i);
+	this.sendBroadcast(i);
 
 #### Generate and receive result codes
 Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. 

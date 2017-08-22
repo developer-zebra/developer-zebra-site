@@ -85,7 +85,7 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 	        i.putExtra(extraData, "myProfile");
 	      
 	        // send the intent to DataWedge
-	        context.this.sendBroadcast(i);
+	        this.sendBroadcast(i);
 	}
 
 #### Generate and receive result codes

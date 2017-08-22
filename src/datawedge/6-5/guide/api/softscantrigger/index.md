@@ -69,7 +69,7 @@ Error messages are logged for invalid actions and parameters.
 	i.putExtra(extraData, "START_SCANNING");
 	
 	// send the intent to DataWedge
-	context.this.sendBroadcast(i);
+	this.sendBroadcast(i);
 
 #### Sample delay code 
 The soft scan trigger command should be delayed sufficiently to enable the scanner to complete the task. Delay code similar to that shown below could be used:

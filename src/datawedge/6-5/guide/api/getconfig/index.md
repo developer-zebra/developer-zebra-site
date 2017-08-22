@@ -45,7 +45,7 @@ Error messages are logged for invalid actions and parameters.
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.GET_CONFIG", "");
-		context.this.sendBroadcast(i);
+		this.sendBroadcast(i);
 
 	// RECEIVING THE RESULT
 		private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver(){

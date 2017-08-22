@@ -72,7 +72,7 @@ Error messages are logged for invalid actions and parameters.
 		        i.putExtra(extraData, "DISABLE_PLUGIN");
 		        
 		    // send the intent to DataWedge
-		        context.this.sendBroadcast(i);
+		        this.sendBroadcast(i);
 	}
 
 #### Generate and receive result codes

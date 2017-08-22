@@ -70,7 +70,7 @@ The code below passes an intent that switches a scanner parameter for the active
 		i.putExtra("COMMAND_IDENTIFIER", "123456789"); //returned as it is with the result
 
 	// send the intent
-		sendBroadcast(i);
+		this.sendBroadcast(i);
 
 	// register the broadcast receiver (for result codes)
 		:::javascript

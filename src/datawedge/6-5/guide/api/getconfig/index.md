@@ -75,7 +75,7 @@ Error messages are logged for invalid actions and parameters.
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.GET_CONFIG", bMain);
-		sendBroadcast(i);
+		this.sendBroadcast(i);
 
 	// RECEIVING THE RESULT
 		private BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver() {
@@ -119,7 +119,7 @@ Error messages are logged for invalid actions and parameters.
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.GET_CONFIG", bConfig);
-		sendBroadcast(i);
+		this.sendBroadcast(i);
 
 	// RECEIVING THE RESULT
 		private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {

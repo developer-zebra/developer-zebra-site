@@ -154,7 +154,7 @@ The Java code below implements a nested bundle.
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
-	sendBroadcast(i);
+	this.sendBroadcast(i);
 
 -----
 

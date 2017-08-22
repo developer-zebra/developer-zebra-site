@@ -23,7 +23,7 @@ Result codes are accessed using the `RESULT_INFO` intent mechanism, which return
 	// request and identify the result code
 		i.putExtra("SEND_RESULT","true");
 		i.putExtra("COMMAND_IDENTIFIER","123456789");
-		sendBroadcast(i);
+		this.sendBroadcast(i);
 
 ### Parameters
 
@@ -95,7 +95,7 @@ Command and configuration intent parameters determine whether to send result cod
 	// request and identify the result code
 		i.putExtra("SEND_RESULT","true");
 		i.putExtra("COMMAND_IDENTIFIER","123456789");
-		sendBroadcast(i);
+		this.sendBroadcast(i);
 
 	// register to receive the result
 		public void onReceive(Context context, Intent intent){

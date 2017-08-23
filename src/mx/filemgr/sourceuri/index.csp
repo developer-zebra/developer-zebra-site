@@ -11,9 +11,9 @@ parm:
   type: string
 ---
 
-Used to specify the URI of the location of the file on the server.
-
+Used to specify the URI of the location of the file on the server. Supports HTTP and HTTPS protocols and basic authentication of URL-embedded credentials.  
 
 **Parm value input rules**:
 
 * String containing the URI of the source file
+* Credentials must be embedded within URI 

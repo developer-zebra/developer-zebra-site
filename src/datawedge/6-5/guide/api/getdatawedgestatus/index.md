@@ -9,7 +9,7 @@ productversion: '6.5'
 
 Introduced in DataWedge 6.4.
 
-Gets the name of the Profile currently in use by DataWedge.
+Returns the status of DataWedge as "enabled" or "disabled" as a bundle extra.
 
 ### Function Prototype
 
@@ -27,7 +27,7 @@ Gets the name of the Profile currently in use by DataWedge.
  
 
 ### Return Values
-Returns a Bundle with the status (enabled/disabled) of DataWedge. 
+Returns a Bundle with the status ("enabled" or "disabled") of DataWedge. 
 
 **EXTRA NAME**: "com.symbol.datawedge.api.GET_DATAWEDGE_STATUS_RESULT" 
 

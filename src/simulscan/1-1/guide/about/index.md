@@ -120,7 +120,7 @@ SimulScan works with all device cameras, and **on devices with a supported 2D im
  </tr>
  <tr>
   <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="tc8000.png" height="75"></td>
-  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC8000 L</b></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC8000 KK, L</b></td>
   <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">  √</td>
   <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img style="height:105px" src="TC8000_models.png"/>•<i>Only codes "1" and "2" are supported</i>
 </td>

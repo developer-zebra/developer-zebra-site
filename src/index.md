@@ -236,11 +236,6 @@ products:
         url: /mx/compatibility
       - title: Which version do I have?
         url: /mx/mx-version-on-device
-    versions:
-      - url: mx
-        label: '6.3'      
-      - url: mx/mxvt
-        label: 'Value Tier'
   - title: SimulScan
     description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.
     url: /simulscan/1-1/guide/about
@@ -271,22 +266,24 @@ products:
     image: /images/products/stagenow.png
     sections:
       - title: About
-        url: /stagenow/2-7/about
+        url: /stagenow/2-8/about
       - title: Getting Started
-        url: /stagenow/2-7/gettingstarted
+        url: /stagenow/2-8/gettingstarted
       - title: Profiles
-        url: /stagenow/2-7/stagingprofiles
+        url: /stagenow/2-8/stagingprofiles
       - title: Profile Wizards
-        url: /stagenow/2-7/ProfileWizards
+        url: /stagenow/2-8/ProfileWizards
       - title: Settings
-        url: /stagenow/2-7/settingconfig
+        url: /stagenow/2-8/settingconfig
       - title: Setting Types
-        url: /stagenow/2-7/settingtypes
+        url: /stagenow/2-8/settingtypes
       - title: Device Staging
-        url: /stagenow/2-7/stageclient
+        url: /stagenow/2-8/stageclient
       - title: Download
-        url: /stagenow/2-7/download
+        url: /stagenow/2-8/download
     versions:
+      - url: stagenow/2-8/about
+        label: '2.8'      
       - url: stagenow/2-7/about
         label: '2.7'
       - url: stagenow/2-6/about

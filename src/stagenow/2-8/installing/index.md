@@ -2,7 +2,7 @@
 title: Installing StageNow
 layout: guide.html
 product: Stagenow
-productversion: '2.7'
+productversion: '2.8'
 ---
 
 ## Introduction

@@ -2,7 +2,7 @@
 title: Perform OS Update
 layout: guide.html
 product: Stagenow
-productversion: '2.7'
+productversion: '2.8'
 ---
 Use this Wizard to perform an OS update on a device. This applies an update or a patch to the OS by downloading a zip file to the device or using an existing zip file on the device.  This Wizard also allows you to connect to a network. 
 

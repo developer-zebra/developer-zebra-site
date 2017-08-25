@@ -2,7 +2,7 @@
 title: Wipe a Device
 layout: guide.html
 product: Stagenow
-productversion: '2.7'
+productversion: '2.8'
 ---
 Use this Wizard to destroy device data using Enterprise or Factory Reset. 
 

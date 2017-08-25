@@ -2,7 +2,7 @@
 title: Manage Device Security
 layout: guide.html
 product: Stagenow
-productversion: '2.7'
+productversion: '2.8'
 ---
 Use this Wizard to configure security options and policies for a device.  This can whitelist and blacklist applications, control screen time-outs, and enable or disable an SD card, camera, GPRS, Bluetooth, GPS, or USB. This can also encrypt SD cards and control the PowerKey menu, settings UI, unknown sources, and threat management. 
 

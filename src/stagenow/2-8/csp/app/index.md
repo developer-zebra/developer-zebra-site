@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: appmgr
 product: Stagenow
-productversion: '2.7'
+productversion: '2.8'
 ---
 
 

@@ -45,7 +45,7 @@ This setting applies when the Scanning mode in [Barcode Reader Params](../../inp
 
 **Barcodes and tokens -** DataWedge sends the barcode string appended by the tokenized data. If no separator character is selected (see Step 2), DataWedge sends two instances of the same data.
 
-**&#50;. Tap "Token separator" to select a separator character** to insert between Tokens, if desired. If Barcode and token mode is selected, this character is also inserted between the two. 
+**&#50;. Tap "Token separator" to select a separator character** to insert between Tokens, if desired. If "Barcode and tokens" mode is selected, the selected character also is inserted between the two. 
 <img style="height:350px" src="../separator.png"/>
 _This setting is not available if "Send tokens" is disabled_.
 <br>

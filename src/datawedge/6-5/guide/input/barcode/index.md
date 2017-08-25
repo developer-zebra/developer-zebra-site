@@ -684,14 +684,14 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 **Different Symbol Timeout -** This parameter is used to prevent the scanner from decoding another symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
-**Scanning Modes -** This parameter is used to select between Single (normal) mode and UDI mode, which acquires multiple inputs as specified in the selected Universal Device Identifier UDI parameter(s).  
+**Scanning Modes -** This parameter is used to select between Single (normal) mode and UDI mode, which acquires multiple inputs as specified in the selected Universal Device Identifier UDI parameter(s).  **See Note below**. 
 
 <img style="height:350px" src="scanning_modes.png"/>
 _When UDI scanning mode is enabled (as above)_... 
 <img style="height:350px" src="udi_params.png"/>
 ..._the selected UDI input parameter(s) will be used_.  
 
-> **Note**: Output of collected UDI data might require settings adjustments of token separation character and output order. UDI settings might also vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke) and/or [IP Output](../../output/ip) guides for more information.
+> **Note**: Output of collected UDI data might require settings adjustments of token separation character and output order. UDI settings also might vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke), [Intent Output](../../output/intent) and/or [IP Output](../../output/ip) guides for more information.
 
 **LCD Mode -** Enable/Disable LCD Mode, which enhances the ability of the imager to read barcodes from LCD displays such as cellphones. **Applies to Scan Module only**.
 

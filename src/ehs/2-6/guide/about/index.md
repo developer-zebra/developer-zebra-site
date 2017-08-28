@@ -78,13 +78,28 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
-<tr bgcolor="#ccffcc" >
+<tr>
 <td style="width: 150.35pt;"  width="250">
 <p class="MsoNormal"><font color="#333399" size="3">MC18</font></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
     *</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td></tr>
+
+<tr>
+<td style="width: 150.35pt;"  width="250">
+<p class="MsoNormal"><font color="#333399" size="3">MC32</font></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    &nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
@@ -108,7 +123,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
-<tr bgcolor="#ccffcc" >
+<tr>
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">MC67</font></p>
 </td>
@@ -140,7 +155,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </tr>
 
 <tr >
-<tr bgcolor="#ccffcc" >
+<tr>
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC51 / TC56</font></p>
 </td>
@@ -171,7 +186,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
-<tr bgcolor="#ccffcc" >
+<tr>
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
 </td>
@@ -198,7 +213,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 </tr>
-<tr bgcolor="#ccffcc" >
+<tr>
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC75</font></p>
 </td>
@@ -228,7 +243,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
-<tr bgcolor="#ccffcc" >
+<tr>
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC8000</font></p>
 </td>

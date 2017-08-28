@@ -1441,9 +1441,9 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 	:::xml
 	<HourglassTop value="200"/>
 
-## DOM injection
+## DOM Injection
 ### CustomDOMElements 
-Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, please refer to the [DOM Injection guide](../DOMInjection). **Applies to Android and Windows Mobile/CE Webkit engines**. 
+Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS and/or meta tags) into a running application without modifying the underlying application. Injected CSS and JavaScript can be local or server-based; meta tags must be device-local. For more information, please refer to the [DOM Injection guide](../DOMinjection). **Applies to Android and Windows Mobile/CE Webkit engines**. 
 
 **Possible Values**:
 

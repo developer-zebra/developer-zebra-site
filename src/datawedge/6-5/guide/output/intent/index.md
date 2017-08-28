@@ -8,7 +8,7 @@ productversion: '6.5'
 ## Overview
 Intent Output sends the processed data to the associated foreground application as payload within an Android intent. This allows acquired data to be passed programmatically to an application, where it can be consumed or further processed. The core components of an application (its activities, services and broadcast receivers) also can be activated by intents. 
 
-An intent object is a bundle of information that describes a desired action. It includes the data to be acted upon, the category of component that should perform the action and other pertinent instructions. When an intent is initiated, Android locates an appropriate component to respond to the intent, launches a new instance of the component (if needed), and passes the intent object to it.
+An intent object is a bundle of information that describes a desired action. It includes the data to be acted upon, the category of component that should perform the action and other pertinent data and/or instructions. When an intent is initiated, Android locates an appropriate component to respond to the intent, launches a new instance of the component (if needed), and passes the intent object to it.
 
 Components advertise the kinds of intents they can handle through intent filters, which are specified in the `AndroidManifest.xml` file as &lt;intent-filter&gt; elements. A component may have any number of intent filters, each describing a different capability. 
 
@@ -52,13 +52,11 @@ _Intent Output options_
 
 -----
 
-UDI-related Data
+### UDI Decoding
 
-FROM THE DASUN DOC:
+When decoding a UDI-compliant label, DataWedge acquires data from multiple barcodes simultaneously and outputs the data as a bundle. This differs from the single-decode bundle 
 
-### UDI and normal decode:
-
-With the introduction of UDI decoding DataWedge send two types of data Bundles. Following parameters are included in the single decode data bundle.
+and a UDI bundle, which contains data from multiple barcodes acquired simultaneously from UDI-encoded labels. The parameters of both bundle types are explained below.
 
 #### Single decode (3 columns)
 
@@ -76,6 +74,11 @@ Parameter - Type - Description
 
 QUESTION (should this say "decode_mode" instead of "decoded_mode"?)
 **"com.symbol.datawedge.decoded_mode" [String] -** determines UDI or Single (normal) mode. Possible values: "multiple_decode" or "single_decode"
+
+
+
+
+
 
 #### Multiple decode (UDI mode)
 

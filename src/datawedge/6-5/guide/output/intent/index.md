@@ -54,75 +54,65 @@ _Intent Output options_
 
 ### UDI Decoding
 
-When decoding a UDI-compliant label, DataWedge acquires data from multiple barcodes simultaneously and outputs the data as a bundle. This differs from the single-decode bundle 
+When decoding a UDI-compliant label, DataWedge acquires data from multiple barcodes simultaneously and outputs the data as a multi-decode bundle. This differs slightly from a single-decode bundle. The parameters of both bundle types are explained below.
 
-and a UDI bundle, which contains data from multiple barcodes acquired simultaneously from UDI-encoded labels. The parameters of both bundle types are explained below.
+-----
 
-#### Single decode (3 columns)
+#### Single (normal) Decode Mode
 
-Parameter - Type - Description
-
-(SCANNER INDEX OR FRIENDLY NAME?)
 **"com.symbol.datawedge.source" [String] -** contains the “scanner” for barcode input
 
 **"com.symbol.datawedge.label_type" [String] -** contains the label type such as "EAN128" 
 
 **"com.symbol.datawedge.data_string" [String] -** contains the acquired barcode characters as "abcde12345"
 
-(IS THIS A LIST OF BYTE ARRAYS?)
 **"com.symbol.datawedge.decode_data" [List] -** List - &lt; byte []&gt; - (blank)
 
-QUESTION (should this say "decode_mode" instead of "decoded_mode"?)
 **"com.symbol.datawedge.decoded_mode" [String] -** determines UDI or Single (normal) mode. Possible values: "multiple_decode" or "single_decode"
 
+-----
 
+#### Multiple (UDI) Decode Mode
 
+* **"com.symbol.datawedge.decode_mode" [String] -** determines decode mode. Possible values: "multiple_decode" or "single_decode"
 
+* **"com.symbol.datawedge.smart_decode_type" [String] -** possible values “udi”or “multibarcode” are the currently supported values
 
+* **"com.symbol.datawedge.data_string" [String] -** Full barcode in string format
 
-#### Multiple decode (UDI mode)
+* **"com.symbol.datawedge.decode_data" [byte [ ] ] -** Same in byte format
 
-**"com.symbol.datawedge.decoded_mode" [String] - String - New parameter- possible values "multiple_decode" or "single_decode"
+* **"com.symbol.datawedge.source" [String] -** “scanner” for barcode input
 
-**"com.symbol.datawedge.smart_decoded_type" [String] -** “udi”or “multibarcode” are the currently supported values
+* **"com.symbol.datawedge.label_id" [String] -** Possible values: “UDI_HIBCC”, “UDI_GS1”, “UDI_ICCBBA”, “UNDEFINED”
 
-**"com.symbol.datawedge.data_string" [String] -** Full barcode in string format
+* **"com.symbol.datawedge.barcodes" [List &lt;Bundle&gt;] -** See below for Bundle description
 
-(IS THIS A BYTE ARRAY?)
-"com.symbol.datawedge.decode_data" -** byte [] - Same in byte format
+* **"com.symbol.datawedge.tokenized_data" [List &lt;Bundle&gt;] -** See below for Bundle description
 
-**"com.symbol.datawedge.source" [String] -** “scanner” for barcode input
-
-(ARE THESE THE ONLY POSSIBLE VALUES?)
-**"com.symbol.datawedge.label_id" [String] -** “UDI_HIBCC”, “UDI_GS1”, “UDI_ICCBBA”, “UNDEFINED”
-
-**"com.symbol.datawedge.barcodes" [List &lt;Bundle&gt;] -** See below for Bundle description
-
-**"com.symbol.datawedge.tokenized_data" [List &lt;Bundle&gt;] -** See below for Bundle description
+-----
 
 #### Bundle ("com.symbol.datawedge.barcodes")
 
-**"com.symbol.datawedge.label_type" [String] -** Original symbology
+* **"com.symbol.datawedge.label_type" [String] -** Original symbology
 
-(IS THIS A BYTE ARRAY?)
-**"com.symbol.datawedge.decode_data" - byte [] -** Raw data
+* **"com.symbol.datawedge.decode_data" - [byte [ ] ] -** Raw data
 
-**"com.symbol.datawedge.data_string" - [String] -** String data
+* **"com.symbol.datawedge.data_string" - [String] -** String data
 
+-----
 
 #### Bundle ("com.symbol.datawedge.tokenized_data")
 
-**"token_id" [String] -** (blank)
+* **"token_id" [String] -** (blank)
 
-(IS THIS DATA OR DATE?)
-**"token_data_type" [String] -** String/Date etc.
+* **"token_data_type" [String] -** String/Date etc.
 
-**"token_format" - [String] -** Format string e.g.: YYYYMMDD
+* **"token_format" - [String] -** Format string e.g.: YYYYMMDD
 
-**"token_string_data" - [String] -** String format
+* **"token_string_data" - [String] -** String format
 
-(IS THIS A BYTE ARRAY?)
-**"token_binary_data" - byte [] -** Binary format
+* **"token_binary_data" [byte [] ] -** Binary format
 
 -----
 

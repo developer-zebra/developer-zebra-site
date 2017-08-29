@@ -36,7 +36,7 @@ The Feature Demo Application for Enterprise Browser pulls in demo files using us
 
 **Note**: The [Config Editor Utility](../ConfigEditor) can be used for this task. 
 
-&#50;. In the `Config.xml` file, locate the `<WebServer>` node and change the values as shown below:  
+&#50;. In the `Config.xml` file, locate the `<WebServer>` node and set the values as shown below:  
 
       
     :::xml
@@ -54,7 +54,6 @@ The Feature Demo Application for Enterprise Browser pulls in demo files using us
 &#51;. In `Config.xml` specify the start page value as below, save changes and push file to the device.   
 		
 		:::HTML
-
 	    <StartPage value="http://127.0.0.1:8082/feature-demo.html" name="Menu"/>
 
 &#52;. Create a folder called `fd` (case sensitive) in the root of the device's SDCard. If it doesn't have an SDCard, create the folder at the root level of the device's internal memory.  

@@ -28,27 +28,31 @@ The Feature Demo Application for Enterprise Browser pulls in demo files using us
 
 **Enable the on-device web server**:
 
-&#49;. Locate the `Config.xml` file on the device that will be running the Feature Demo: 
+&#49;. Locate and prepare to edit the `Config.xml` file on the device that will be running the Feature Demo: 
 
 **Path to Config.xml file**: 
   * **On Android devices**: `/sdcard/Android/data/com.symbol.enterprisebrowser/Config.xml`
   * **On Windows devices**: `\Program Files\EnterpriseBrowser\Config\Config.xml`
 
-&#50;. Add the following lines to the `Config.xml` immediately under the `<Configuration>` tag, as below:
+**Note**: The [Config Editor Utility](../ConfigEditor) can be used for this task. 
+
+&#50;. In the `Config.xml` file, locate the `<WebServer>` node and set the values as shown below:  
 
       
     :::xml
     <Configuration>
+    ...
       <WebServer>
-    	 <Enabled value="1" />
-    	 <Port value="8082" />
-    	 <WebFolder value="/fd/" />
-    	 <Public value="1" />
+       <Enabled value="1" />
+       <Port value="8082" />
+       <WebFolder value="/fd/" />
+       <Public value="1" />
       </WebServer>
+    ...
 
 
-&#51;. In `Config.xml` specify the start page value as below:  
-		
+&#51;. In `Config.xml` specify the start page value as below, save changes and push file to the device.   
+  		
 		:::HTML
 
 	    <StartPage value="http://127.0.0.1:8082/feature-demo.html" name="Menu"/>

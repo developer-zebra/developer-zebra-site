@@ -14,7 +14,7 @@ automenu:
           url: optimization
     - title: App Configuration
       items:
-        - title: Config Editor Utility
+        - title: Config.xml Editor Utility
           url: ConfigEditor
         - title: Config.xml Reference
           url: configreference

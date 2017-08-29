@@ -28,7 +28,7 @@ Boolean value used to enable (true) or disable (false) DataWedge on the device.
 
 DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
-* **PDATAWEDGE_ALREADY_ENABLED -** FAILURE 
+* **DATAWEDGE_ALREADY_ENABLED -** FAILURE 
 * **DATAWEDGE_ALREADY_DISABLED -** FAILURE
 
 Also see the [Result Codes guide](../resultinfo) for more information.  

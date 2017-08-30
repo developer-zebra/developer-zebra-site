@@ -63,27 +63,93 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 <table border="0" cellspacing="0" cellpadding="0" class="Table7">
 <tbody>
 <colgroup>
-<col width="125"/><col width="347"/><col width="249"/></colgroup>
+<col width="125"/><col width="125"/><col width="125"/></colgroup>
 <tr class="Table71" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Parameter</strong></span></p></td>
-<td style="text-align:left;width:3.125in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Type</strong></span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Description</strong></span></p>
+<td style="text-align:left;width:3.125in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Type</strong></span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Contents</strong></span></p>
 </td>
 </tr>
-<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A3"><p class="P22"><span class="T13"></span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B3"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C3"><p class="P26"> </p>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.source"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">Source of incoming data. Possible values: "msr" <br>"scanner" <br>"simulscan"</span></p>
 </td>
 </tr>
-<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.source"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">Contains the scanner index number for barcode input</span></p>
+<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A7"><p class="P22"><span class="T13">"com.symbol.datawedge.label_type"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B7"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C7"><p class="P23"><span class="T13">Label type (i.e. "EAN128")</span></p>
 </td>
 </tr>
-<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A7"><p class="P22"><span class="T13">"com.symbol.datawedge.label_type"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B7"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C7"><p class="P23"><span class="T13">Contains the label type (i.e. "EAN128")</span></p>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.data_string"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">Acquired barcode characters (i.e. "abcde12345")</span></p>
 </td>
 </tr>
-<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.data_string"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">Contains the acquired barcode characters (i.e. "abcde12345")</span></p>
+<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A9"><p class="P22"><span class="T13">"com.symbol.datawedge.decode_data"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B9"><p class="P23"><span class="T13">[List &lt;byte [ ]&gt;]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C9"><p class="P23"><span class="T13">Acquired raw (unmodified) data as an array list of byte arrays (i.e. ListItem_1(array_1(byte11,byte12,byte13)), ListItem_2(array_2(byte21,byte22,byte23)), etc.)</span></p>
 </td>
 </tr>
-<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A9"><p class="P22"><span class="T13">"com.symbol.datawedge.decode_data"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B9"><p class="P23"><span class="T13">[List]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C9"><p class="P23"><span class="T13">(description needed)</span></p>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.decoded_mode"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.4382in; " class="Table5_C2"><p class="P23"><span class="T13">Mode by which data is decoded. Possible values: "multiple_decode"<br>"single_decode"</span></p></td>
 </td>
 </tr>
-<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.decode_mode"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.4382in; " class="Table5_C2"><p class="P23"><span class="T13">Determines UDI or Single (normal) mode. Possible values: "multiple_decode" or "single_decode"</span></p></td>
+</tbody>
+</table>
+
+**Note**: Source of incoming data is "scanner" for camera, imager and scanner. 
+
+-----
+
+### Multiple/UDI Decode Mode
+
+<table border="0" cellspacing="0" cellpadding="0" class="Table7">
+<tbody>
+<colgroup>
+<col width="125"/><col width="125"/><col width="125"/></colgroup>
+<tr class="Table71" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Parameter</strong></span></p></td>
+<td style="text-align:left;width:3.125in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Type</strong></span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Contents</strong></span></p>
+</td>
+</tr>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.decode_mode"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">Mode by which data is decoded. Possible values: "multiple_decode"<br>"single_decode"</span></p>
+</td>
+</tr>
+<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A7"><p class="P22"><span class="T13">"com.symbol.datawedge.smart_decode_type"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B7"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C7"><p class="P23"><span class="T13">Decode type. Possible values: “udi”<br>“multibarcode”</span></p>
+</td>
+</tr>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.data_string"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">Acquired barcode characters (i.e. "abcde12345")</span></p>
+</td>
+</tr>
+<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A9"><p class="P22"><span class="T13">"com.symbol.datawedge.decode_data"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B9"><p class="P23"><span class="T13">[List &lt;byte [ ]&gt;]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C9"><p class="P23"><span class="T13">Acquired raw (unmodified) data as an array list of byte arrays (i.e. ListItem_1(array_1(byte11,byte12,byte13)), ListItem_2(array_2(byte21,byte22,byte23)), etc.)</span></p>
+</td>
+</tr>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.source"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.4382in; " class="Table5_C2"><p class="P23"><span class="T13">Source of incoming data. Possible values: "msr"<br> "scanner" <br> "simulscan"</span></p></td>
+</td>
+</tr>
+<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.label_id"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.4382in; " class="Table5_C2"><p class="P23"><span class="T13">UDI type of incoming data. Possible values: “UDI_HIBCC” <br>“UDI_GS1” <br>“UDI_ICCBBA” <br>“UNDEFINED”</span></p></td>
+</td>
+</tr>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.barcodes"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13"> [List &lt;Bundle&gt;]</span></p></td><td style="text-align:left;width:2.4382in; " class="Table5_C2"><p class="P23"><span class="T13">See Bundle description (below)</span></p></td>
+</td>
+</tr>
+<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.tokenized_data"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13"> [List &lt;Bundle&gt;]</span></p></td><td style="text-align:left;width:2.4382in; " class="Table5_C2"><p class="P23"><span class="T13">See Bundle description (below)</span></p></td>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Note**: Source of incoming data is "scanner" for camera, imager and scanner. 
+
+-----
+
+### Bundles 
+
+#### Bundle "com.symbol.datawedge.barcodes"
+
+<table border="0" cellspacing="0" cellpadding="0" class="Table7">
+<tbody>
+<colgroup>
+<col width="125"/><col width="125"/><col width="125"/></colgroup>
+<tr class="Table71" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Parameter</strong></span></p></td>
+<td style="text-align:left;width:3.125in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Type</strong></span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Contents</strong></span></p>
+</td>
+</tr>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.label_type"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">Original symbology</span></p>
+</td>
+</tr>
+<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A7"><p class="P22"><span class="T13">"com.symbol.datawedge.decode_data"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B7"><p class="P23"><span class="T13">[byte [ ] ]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C7"><p class="P23"><span class="T13">Acquired raw (unmodified) data as a byte array</span></p>
+</td>
+</tr>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"com.symbol.datawedge.data_string"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">Acquired barcode characters (i.e. "abcde12345")</span></p>
 </td>
 </tr>
 </tbody>
@@ -91,47 +157,33 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 -----
 
-### Multiple (UDI) Decode Mode
+#### Bundle: "com.symbol.datawedge.tokenized_data"
 
-**"com.symbol.datawedge.decode_mode" [String] -** determines decode mode. Possible values: "multiple_decode" or "single_decode"
-
-**"com.symbol.datawedge.smart_decode_type" [String] -** possible values “udi”or “multibarcode” are the currently supported values
-
-**"com.symbol.datawedge.data_string" [String] -** Full barcode in string format
-
-**"com.symbol.datawedge.decode_data" [byte [ ] ] -** Same in byte format
-
-**"com.symbol.datawedge.source" [String] -** “scanner” for barcode input
-
-**"com.symbol.datawedge.label_id" [String] -** Possible values: “UDI_HIBCC”, “UDI_GS1”, “UDI_ICCBBA”, “UNDEFINED”
-
-**"com.symbol.datawedge.barcodes" [List &lt;Bundle&gt;] -** See below for Bundle description
-
-**"com.symbol.datawedge.tokenized_data" [List &lt;Bundle&gt;] -** See below for Bundle description
-
------
-
-### Bundle ("com.symbol.datawedge.barcodes")
-
-**"com.symbol.datawedge.label_type" [String] -** Original symbology
-
-**"com.symbol.datawedge.decode_data" - [byte [ ] ] -** Raw data
-
-**"com.symbol.datawedge.data_string" - [String] -** String data
-
------
-
-### Bundle ("com.symbol.datawedge.tokenized_data")
-
-**"token_id" [String] -** (blank)
-
-**"token_data_type" [String] -** String/Date etc.
-
-**"token_format" - [String] -** Format string e.g.: YYYYMMDD
-
-**"token_string_data" - [String] -** String format
-
-**"token_binary_data" [byte [ ] ] -** Binary format
+<table border="0" cellspacing="0" cellpadding="0" class="Table7">
+<tbody>
+<colgroup>
+<col width="125"/><col width="125"/><col width="125"/></colgroup>
+<tr class="Table71" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Parameter</strong></span></p></td>
+<td style="text-align:left;width:3.125in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Type</strong></span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Contents</strong></span></p>
+</td>
+</tr>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"token_id"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">(description needed)</span></p>
+</td>
+</tr>
+<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A7"><p class="P22"><span class="T13">"token_data_type"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B7"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C7"><p class="P23"><span class="T13">Incoming data type (i.e. date, long, string etc.)</span></p>
+</td>
+</tr>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"token_format"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">Indicates format of incoming string (i.e. YYYYMMDD)</span></p>
+</td>
+</tr>
+<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"token_string_data"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[String]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">Acquired barcode characters (i.e. "abcde12345")</span></p>
+</td>
+</tr>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">"token_binary_data"</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">[byte [ ] ]</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">Acquired barcode data as a byte array</span></p>
+</td>
+</tr>
+</tbody>
+</table>
 
 -----
 
@@ -142,14 +194,27 @@ The decode-related data added to an intent bundle can be retrieved using the fol
 	:::java
 	Intent.getStringtExtra()
 
+This call can be used with the String tags shown in the table below.
 
-This call can be used with the following String tags:
-
-**LABEL_TYPE_TAG [String] = "com.symbol.datawedge.label_type"**; String contains the barcode label type
-
-**DATA_STRING_TAG [String] = "com.symbol.datawedge.data_string"**; String contains the output data as a String. In the case of concatenated barcodes, the decode data is concatenated and sent out as a single string.
-
-**DECODE_DATA_TAG [String] = "com.symbol.datawedge.decode_data"**; Decode data is returned as a list of byte arrays. In most cases there will be one byte array per decode. For barcode symbologies that support concatenation (i.e. Codabar, Code128, MicroPDF, etc.) the decoded data is stored in multiple byte arrays (one byte array per bar code). Clients can get data in each byte array by passing an index.
+<table border="0" cellspacing="0" cellpadding="0" class="Table7">
+<tbody>
+<colgroup>
+<col width="125"/><col width="125"/><col width="125"/></colgroup>
+<tr class="Table71" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Tag [Type]</strong></span></p></td>
+<td style="text-align:left;width:3.125in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Parameter</strong></span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_A1"><p class="P22"><span class="T12"><strong>Contents</strong></span></p>
+</td>
+</tr>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">LABEL_TYPE_TAG [String]</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">"com.symbol.datawedge.label_type"</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">barcode label type (i.e. "EAN128")</span></p>
+</td>
+</tr>
+<tr class="Table72" bgcolor="#e0e0eb"><td style="text-align:left;width:1.125in; " class="Table7_A7"><p class="P22"><span class="T13">DATA_STRING_TAG [String]</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B7"><p class="P23"><span class="T13">"com.symbol.datawedge.data_string"</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C7"><p class="P23"><span class="T13">Output data as a String. For multiple barcodes, the decode data is concatenated and sent out as a single string.</span></p>
+</td>
+</tr>
+<tr class="Table72"><td style="text-align:left;width:1.125in; " class="Table7_A2"><p class="P22"><span class="T13">DECODE_DATA_TAG [String]</span></p></td><td style="text-align:left;width:3.125in; " class="Table7_B2"><p class="P23"><span class="T13">"com.symbol.datawedge.decode_data"</span></p></td><td style="text-align:left;width:2.2431in; " class="Table7_C2"><p class="P23"><span class="T13">Decode data is returned as a list of byte arrays. In most cases there will be one byte array per decode. For barcode symbologies that support concatenation (i.e. Codabar, Code128, MicroPDF, etc.) the decoded data is stored in multiple byte arrays (one byte array per bar code). Data in each byte array can be retrieved by passing an index.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
 
 -----
 

@@ -140,7 +140,7 @@ The code below sends an intent to add apps to the Disabled Apps List in DataWedg
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.GET_DISABLED_APP_LIST", bMain);
+	i.putExtra("com.symbol.datawedge.api.SET_DISABLED_APP_LIST", bMain);
 	this.sendBroadcast(i);
 
 #### Generate and receive result codes

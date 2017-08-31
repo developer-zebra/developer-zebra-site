@@ -30,14 +30,14 @@ When combined, these two values are like a "channel" to which an app can listen 
 
 **To set a DataWedge Action and Category pair**: 
 
-&#49;. Locate the Intent Output section of the Profile being configured.
+**&#49;. Locate the Intent Output section of the Profile** being configured.
 
-&#50;. **Check "Enabled" box** to activate Intent Output:  
+**&#50;. Check "Enabled" box** to activate Intent Output:  
 <img style="height:350px" src="../intent_output 2.png"/>
-_Intent Output options_
+_Intent Output options for the "Launcher" Profile_
 <br>
 
-&#51;. **Specify action, category and delivery** as described below: 
+**&#51;. Specify action, category and delivery** as described below: 
 
 **Intent action -** specifies the action to handle the intent 
 
@@ -75,7 +75,7 @@ _Intent Output options_
 
 **Type**: [String]
 
-**Contents**: Label type (i.e. "EAN128")
+**Contents**: Barcode label type (i.e. "EAN128")
 
 -----
 
@@ -85,7 +85,7 @@ _Intent Output options_
 
 **Contents**: Acquired barcode characters
 
-Example: "abcde12345"
+**Example**: "abcde12345"
 
 -----
 
@@ -95,7 +95,7 @@ Example: "abcde12345"
 
 **Contents**: Acquired raw (unmodified) data as an array list of byte arrays
 
-Example: ListItem_1(array_1(byte11,byte12,byte13)),ListItem_2(array_2(byte21,byte22,byte23))...
+**Example**: List_Item_1(array_1(byte11,byte12,byte13)),List_Item_2(array_2(byte21,byte22,byte23)) ...
 
 -----
 
@@ -103,7 +103,7 @@ Example: ListItem_1(array_1(byte11,byte12,byte13)),ListItem_2(array_2(byte21,byt
 
 **Type**: [String]
 
-**Contents**: *ode used to decode the incoming data.
+**Contents**: Mode used to decode the incoming data
 
 **Possible values**: 
 * "multiple_decode"
@@ -113,7 +113,7 @@ Example: ListItem_1(array_1(byte11,byte12,byte13)),ListItem_2(array_2(byte21,byt
 
 ## UDI/Multiple Decode Mode
 
-When decoding a UDI-compliant object, data is acquired from multiple barcodes simultaneously and output as a multi-decode bundle, which differs slightly from a single-decode bundle. DataWedge also can acquire multiple non-UDI barcodes in a single scan. 
+When decoding a UDI-compliant object, data is acquired from multiple barcodes simultaneously and output as a multi-decode bundle, which differs from a single-decode bundle. DataWedge also can acquire multiple non-UDI barcodes in a single scan. This section applies to both modes.
 
 ### Parameters
 
@@ -121,7 +121,7 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 **Type**: [String]
 
-**Contents**: Mode by which data is decoded.
+**Contents**: Mode used to decode incoming data
 
 **Possible values**: 
 * "multiple_decode"
@@ -147,7 +147,7 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 **Contents**: Acquired barcode characters 
 
-**Example: "abcde12345"
+**Example**: "abcde12345"
 
 -----
 
@@ -157,7 +157,7 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 **Contents**: Acquired raw (unmodified) data as an array list of byte arrays
 
-**Example**: ListItem_1(array_1(byte11,byte12,byte13)), ListItem_2(array_2(byte21,byte22,byte23)), etc.)
+**Example**: List_Item_1(array_1(byte11,byte12,byte13)), List_Item_2(array_2(byte21,byte22,byte23)) ...
 
 -----
 
@@ -206,17 +206,17 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 -----
 
-## Barcode Bundle
+### Barcode Bundle
 
-#### Bundle name: "com.symbol.datawedge.barcodes"
+##### Bundle name: "com.symbol.datawedge.barcodes"
 
-### Parameters
+#### Parameters
 
 **Name**: "com.symbol.datawedge.label_type"
 
 **Type**: [String]
 
-**Contents**: Original symbology
+**Contents**: Barcode label type, original symbology (i.e. "EAN128")
 
 -----
 
@@ -238,11 +238,11 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 -----
 
-## Tokenized Data Bundle
+### Tokenized Data Bundle
 
-#### Bundle name: "com.symbol.datawedge.tokenized_data"
+##### Bundle name: "com.symbol.datawedge.tokenized_data"
 
-### Parameters
+#### Parameters
 
 **Name**: "token_id"
 
@@ -266,7 +266,7 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 **Name**: "token_format"
 
-**type**: [String]
+**Type**: [String]
 
 **Contents**: Format of incoming string 
 
@@ -284,9 +284,9 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 -----
 
-**name**: "token_binary_data"
+**Name**: "token_binary_data"
 
-**type**: [byte [ ] ]
+**Type**: [byte [ ] ]
 
 **Contents**: Acquired barcode data as a byte array
 
@@ -336,13 +336,9 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 -----
 
-**Token ID**: 
+**Token ID**: labeler_identification_code
 
-**Display Name**: 
-
-labeler_identification_code
-
-Labeler id code
+**Display Name**: Labeler ID code
 
 -----
 

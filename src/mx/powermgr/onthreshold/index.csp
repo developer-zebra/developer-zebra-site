@@ -1,0 +1,20 @@
+---
+csp: powermgr
+title: Heater-On Threshold
+type: parm
+order: 22
+mx: "7.1"
+apilevel: "16"
+parm:
+  presentif: The Heater Action is "Set ON/OFF Thresholds"
+  pivotal: No
+  name: ZipFile
+  type: string
+
+---
+
+Used to specify the temerature (in degrees) at which the device heater should turn on. **This feature applies only the VC80 vehicle computer**. 
+
+**Parm value input rules**: 
+
+* Integer value

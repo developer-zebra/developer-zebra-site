@@ -11,13 +11,17 @@ The PowerMgr allows an app to perform certain OS- and power-related actions on t
 
 ### Main Functionality
 
-* Put a Device into Sleep Mode
-* Reboot a Device
-* Perform an Enterprise Reset on a Device
-* Perform a Factory Reset on a Device
-* Wipe a Device (and erase all cards) 
-* Update the OS on a Device
+* Put a device into Sleep Mode
+* Reboot a device
+* Perform an Enterprise Reset on a device
+* Perform a Factory Reset on a device
+* Wipe a device (and erase all cards) 
+* Update the OS on a device
 * Perform multiple updates in a single step 
+* **On the VC80 vehicle computer only**: 
+ * Turn power on/off for specific serial and USB ports
+ * Control heaters for touch panel and battery, and on serial and USB ports
+ * Set temperature thresholds (in degrees) for turning heaters on/off
 
 ### Sleep Mode
 

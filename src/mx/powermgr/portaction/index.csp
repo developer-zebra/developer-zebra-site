@@ -1,0 +1,26 @@
+---
+csp: powermgr
+title: Port Action
+type: parm
+order: 11
+mx: "7.1"
+parm:
+  pivotal: Yes
+  name: PortAction
+  type: list
+  list:
+    - code: 0
+      mx: "7.1"
+      name: Do Nothing
+      description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
+    - code: 1
+      name: Turn Output Power On
+      mx: "7.1"
+      description: Applies power to the selected port. 
+    - code: 2
+      name: Turn Output Power Off
+      mx: "7.1"
+      description: Removes power from the selected port. 
+---
+
+Used to specify an action to perform on the selected port. Turning off power when not needed for a port can help reduce pin corrosion. **This feature applies only the VC80 vehicle computer**. 

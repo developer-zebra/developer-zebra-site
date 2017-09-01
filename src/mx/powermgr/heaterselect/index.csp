@@ -12,7 +12,7 @@ parm:
     - code: 1
       name: Serial IO
       mx: "7.1"
-      description: Selects the heater connected to a Serial port.  
+      description: Selects the heater connected to a serial port.  
     - code: 2
       name: USB IO
       mx: "7.1"
@@ -29,7 +29,7 @@ parm:
       mx: "7.1"
       osx: "4.2"
       apilevel: "19"
-      description: Selects the touch panel heater.  
+      description: Selects the touch-panel heater.  
 ---
 
-Used to specify the device heater upon which to perform an action using the Heater Action parameter. Device heaters are used to compensate for external temperatures and humidity levels to help maintain proper device operation, prevent screen and/or internal frost or condensation and to keep the device battery at optimal temperature. **This feature applies only the VC80 vehicle computer**. 
+Used to specify the device heater upon which to perform an action using the Heater Action parameter. Device heaters are used to compensate for external temperatures and humidity levels, to help maintain proper device operation, prevent screen and/or internal frost or condensation, and to keep the device battery at optimal temperature. **This feature applies only the VC80 vehicle computer**. 

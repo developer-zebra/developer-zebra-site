@@ -16,18 +16,18 @@ parm:
     - code: 1
       name: Enable
       mx: "7.1"
-      description: Enables the specified heater. 
+      description: Enables the selected heater. 
     - code: 2
       name: Disable
       mx: "7.1"
       apilevel: 16
-      description: Disables the specified heater. 
+      description: Disables the selected heater. 
     - code: 3
       name: Set ON/OFF Thresholds
       mx: "7.1"
       osx: "4.2"
       apilevel: "19"
-      description: 
+      description: Enables a temperature threshold to be set for the selected heater.  
 ---
 
 This is the On/Off switch for performing actions on the device heater(s), including the ability to set temperature thresholds using the relevant Threshold parameters. **This feature applies only the VC80 vehicle computer**. 

@@ -1,6 +1,6 @@
 ---
 csp: powermgr
-title: Heater Select
+title: Heater Selection
 type: parm
 order: 20
 mx: "7.1"

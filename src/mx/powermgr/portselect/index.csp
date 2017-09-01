@@ -1,6 +1,6 @@
 ---
 csp: powermgr
-title: Select Port
+title:  Port Selection
 type: parm
 order: 10
 mx: "7.1"

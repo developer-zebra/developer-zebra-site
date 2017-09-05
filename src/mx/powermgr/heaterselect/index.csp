@@ -16,19 +16,14 @@ parm:
     - code: 2
       name: USB IO
       mx: "7.1"
-      apilevel: 16
       description: Selects the heater connected to the USB port.  
     - code: 3
       name: Battery
       mx: "7.1"
-      osx: "4.2"
-      apilevel: "19"
       description: Selects the battery heater.  
     - code: 4
       name: Touch Panel
       mx: "7.1"
-      osx: "4.2"
-      apilevel: "19"
       description: Selects the touch-panel heater.  
 ---
 

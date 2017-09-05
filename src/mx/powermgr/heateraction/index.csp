@@ -20,13 +20,10 @@ parm:
     - code: 2
       name: Disable
       mx: "7.1"
-      apilevel: 16
       description: Disables the selected heater. 
     - code: 3
       name: Set ON/OFF Thresholds
       mx: "7.1"
-      osx: "4.2"
-      apilevel: "19"
       description: Enables a temperature threshold to be set for the selected heater.  
 ---
 

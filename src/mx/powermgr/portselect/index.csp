@@ -16,13 +16,10 @@ parm:
     - code: 2
       name: Serial Port 2
       mx: "7.1"
-      apilevel: 16
       description: Selects Serial Port 2 for the specified Action.
     - code: 3
       name: USB Port 2
       mx: "7.1"
-      osx: "4.2"
-      apilevel: "19"
       description: Selects USB Port 2 for the specified Action. 
 ---
 

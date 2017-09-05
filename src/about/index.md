@@ -9,6 +9,8 @@ menu:
       url: /about
     - title: I NEED TOOLS FOR...
       url: /help
+    - title: DEVELOPER PORTAL
+      url: https://developer.zebra.com/welcome
     - title: FEEDBACK
       url: /contact
     - icon: fa fa-search

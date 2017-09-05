@@ -6,11 +6,11 @@ product: Google Search
 productversion:
 menu:
   items:
-    - title: About TechDocs
+    - title: ABOUT TECHDOCS
       url: /about
-    - title: I Need Tools For...
+    - title: I NEED TOOLS FOR...
       url: /help
-    - title: Feedback
+    - title: FEEDBACK
       url: /contact
     - icon: fa fa-search
       url: /search

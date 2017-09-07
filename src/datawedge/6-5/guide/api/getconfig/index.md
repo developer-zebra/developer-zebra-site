@@ -17,7 +17,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.GET_CONFIG", "<profile name>");
 
-### Parameters
+## Parameters
 
 **ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
@@ -25,12 +25,31 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 **EXTRA VALUE** [Bundle]: "&lt;Profile name&gt;", "&lt;Plug-in&gt;"
 
-### Return Values
-Returns an array of parameter name/value pairs. 
+## Return Values
+Returns a nested bundle with the Profile name, status and a Profile config bundle containing the param list as a bundle.  
 
 **EXTRA NAME**: "com.symbol.datawedge.api.GET_CONFIG_RESULT" 
 
-**EXTRA TYPE** [String]:
+**BUNDLE**: &lt;mainbundle&gt; (see parameters below)
+
+### Main Bundle
+
+The main Get_Result_Config bundle contains the following properties:
+
+**PROFILE_NAME** [String]: Name of the Profile being queried
+
+**PROFILE_ENABLED** [String]: True/False
+
+**PLUGIN_CONFIG** [bundle]: Nested bundle with the following properties:
+* **PLUGIN_NAME** [String]: Name of the Plug-in being reported (i.e. Barcode)  
+* **PARAM_LIST** [Bundle]: Nested List of name-value pairs:
+  * current-device-index, 0
+  * Aztec, True
+  * Canadian_Postal, False
+  * Code11, Null (resets to default)
+  * Picklist, HARDWARE
+  * AimType, PRESS_AND_RELEASE
+  * ... (etc.)
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 
@@ -208,3 +227,5 @@ Error messages are logged for invalid actions and parameters.
 [Intents and Intent Filters](http://developer.android.com/guide/components/intents-filters.html) | Android Developers
 
 [Android Intents](http://www.vogella.com/tutorials/AndroidIntent/article.html) | Tutorial
+
+-----

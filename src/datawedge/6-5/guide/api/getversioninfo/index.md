@@ -30,7 +30,7 @@ Returns a bundle with the version numbers of DataWedge, SimulScan, the Scanner F
 
 **EXTRA NAME**: "com.symbol.datawedge.api.GET_VERSION_INFO_RESULT"
 
-**EXTRA TYPE**: Bundle 
+**EXTRA TYPE**: [Bundle] 
 
 **BUNDLE**:
 

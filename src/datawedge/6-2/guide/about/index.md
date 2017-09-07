@@ -18,6 +18,17 @@ DataWedge provides barcode scanning and processing services for Zebra devices ru
 
 DataWedge 6.2 implements a new structure for launching Android intents, part of a transition that will ultimately support multiple intents launched as a single command. For details, see the [DataWedge Data Capture API](../api) guide.
 
+**New APIs in DataWedge 6.2**: 
+
+* **DELETE_PROFILE -** used to delete one or more Profiles
+* **GET_PROFILES_LIST -** returns a list of Profiles in the device
+* **CLONE_PROFILE -** creates a copy of an existing Profile
+* **RENAME_PROFILE -** changes the name of an existing Profile 
+* **GET_ACTIVE_PROFILE -** returns the name of the currently selected Profile
+* **ENABLE_DATAWEDGE -** used to enable/disable the DataWedge app
+
+See the [DataWedge Data Capture API](../api) guide for details. 
+
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 
 

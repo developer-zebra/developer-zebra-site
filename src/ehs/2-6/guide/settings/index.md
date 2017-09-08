@@ -741,16 +741,20 @@ _The Android Keyguard (also known as the Lock Screen)_.
 ### Keyguard Camera Disabled
 Controls whether the device camera will be accessible from the Keyguard screen (also known as the "Lock Screen") when the screen lock is set to "Swipe" mode. Camera access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
 
-Applies only if **_all_** of the following conditions are true:
+**The Keyguard camera is disabled only if <u>all</u> of the following conditions are true**:
 
 * The camera app is enabled on the device
 * The Keyguard screen is in "Swipe" mode 
 * The camera icon is visible on the Keyguard screen 
 * The Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag
 
-Unless **_all four_** of the above conditions are true, the value in this tag is ignored. Note: If no camera shortcut exists on the device lockscreen, use of this tag is not required. 
+Unless **_all four_** of the above conditions are true, the value in this tag is ignored. 
 
-**To prevent use of the camera, Zebra recommends using this tag _and_ removing the camera app from the User Mode screen**.
+**Notes**: 
+* If no camera shortcut exists on the device lockscreen, use of this tag is not required. 
+* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. See additional notes, below. 
+
+**To prevent use of the camera, Zebra recommends using this tag <u>and</u> removing the camera app from the User Mode screen**.
 
 <img alt="" style="height:350px" src="camera_disable.png"/>
 
@@ -762,7 +766,46 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 #### Example
 
     <keyguard_camera_disabled>1</keyguard_camera_disabled>
+
+#### User-Mode Camera Usage
+
+On some devices, disabling access to the camera app from the lock screen also disables it from the User-Mode screen, even if camera usage is permitted on the device. There are two ways to work around this scenario. 
+
+##### Option 1: Allow access to camera app from lock screen
+If users are permitted to access the camera app from User Mode, some organizations also might permit access directly from the lock screen without having to unlock the device. For such cases, modify the `enterprisehomescreen.xml` file as below. 
+
+**To allow access to camera app from lock screen**: 
+
+    :::xml
+    // Allow camera access: 
+
+    <keyguard_camera_disabled>0</keyguard_camera_disabled>
+
+    // Display lock screen:
     
+    <bypass_keyguard>1</bypass_keyguard>
+
+-----
+
+##### Option 2: Add camera app to 'enabled' list
+
+To permit access to the camera app only after the device has been unlocked, set the &lt;keyguard_camera_disabled&gt; value to "1" and add the package name of the camera app to the (optional) &lt;apps_enabled&gt; list in the `enterprisehomescreen.xml` file as below. **If no such tag exists in the file for this optional parameter, see** [Enable/Disable Apps](#enabledisableapps) **for help adding it**. 
+
+**To allow access to camera app <u>only after device is unlocked</u>**: 
+
+
+    :::xml
+    <keyguard_camera_disabled>1</keyguard_camera_disabled>
+    <bypass_keyguard>1</bypass_keyguard>
+    ...
+    <apps_enabled>
+    ...
+    <application package="camera.app.package.name"/> // i.e. "com.android.camera2"
+    ...
+    </apps_enabled>
+
+**Note: The package name of the camera app can vary by device, Android version or other factors**.
+
 ------
 
 ### Keyguard Search Disabled

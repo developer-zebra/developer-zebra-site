@@ -28,7 +28,7 @@ automenu:
           url: http://techdocs.zebra.com/simulscan
         - title: StageNow
           url: http://techdocs.zebra.com/stagenow/
-    - title: App/Device Security Tools
+    - title: App/Device Security
       items:
         - title: Enterprise Home Screen
           url: http://techdocs.zebra.com/ehs
@@ -36,7 +36,7 @@ automenu:
           url: http://techdocs.zebra.com/enterprise-browser/1-7/guide/security
         - title: StageNow 
           url: http://techdocs.zebra.com/stagenow/2-7/Profiles/managesecurity/
-    - title: App Migration Tools
+    - title: App Migration
       items:
         - title: From Pocket Browser 2.x/3x
           url: http://techdocs.zebra.com/enterprise-browser/1-6/guide/pb2/
@@ -72,6 +72,12 @@ automenu:
           url: http://techdocs.zebra.com/enterprise-keyboard
         - title: SimulScan
           url: http://techdocs.zebra.com/simulscan    
+    - title: Printing
+      items:
+        - title: Link-OS SDKs
+          url: http://techdocs.zebra.com/link-os/
+        - title: Printing with Enterprise Browser 
+          url: http://techdocs.zebra.com/enterprise-browser/1-7/tutorial/printing/    
     - title: Scanning Tools
       items:
         - title: DataWedge

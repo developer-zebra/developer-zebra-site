@@ -12,6 +12,8 @@ menu:
       url: https://developer.zebra.com/welcome
     - title: FEEDBACK
       url: /contact
+    - icon: fa fa-sitemap
+      url: /sitemap
     - icon: fa fa-search
       url: /search
 ---

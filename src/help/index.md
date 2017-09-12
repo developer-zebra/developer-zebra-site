@@ -8,15 +8,16 @@ menu:
       url: /about
     - title: I NEED TOOLS FOR...
       url: /help
-    - title: DEVELOPER PORTAL
-      url: https://developer.zebra.com/welcome
     - title: FEEDBACK
       url: /contact
+    - icon: fa fa-comment
+      url: https://developer.zebra.com/welcome
     - icon: fa fa-sitemap
       url: /sitemap
     - icon: fa fa-search
       url: /search
 ---
+
 ## Overview
 
 Zebra Technologies provides devices for the enterprise to acquire, process and consume data from barcodes, magnetic stripe cards, RFID tags, smart cards, images, text and other technologies. To enable Zebra partners and customers of varying skills and requirements to make use of its devices, Zebra offers a broad array of tools designed to suit the requirements and capabilities of most any organization. 

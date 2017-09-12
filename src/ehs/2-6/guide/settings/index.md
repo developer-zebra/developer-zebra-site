@@ -752,7 +752,7 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 **Notes**: 
 * If no camera shortcut exists on the device lockscreen, use of this tag is not required. 
-* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. See additional notes, below. 
+* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. See additional notes below. 
 
 **To prevent use of the camera, Zebra recommends using this tag <u>and</u> removing the camera app from the User Mode screen**.
 
@@ -769,7 +769,7 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 #### User-Mode Camera Usage
 
-On some devices, disabling access to the camera app from the lock screen also disables it from the User-Mode screen, even if camera usage is permitted on the device. There are two ways to work around this scenario. 
+On some devices, disabling access to the camera app from the lock screen also disables it from the User-Mode screen, even if camera usage is permitted on the device. This occurs if the device is rebooted from the lock screen; there are two ways to work around it. 
 
 ##### Option 1: Allow access to camera app from lock screen
 If users are permitted to access the camera app from User Mode, some organizations also might permit access directly from the lock screen without having to unlock the device. For such cases, modify the `enterprisehomescreen.xml` file as below. 

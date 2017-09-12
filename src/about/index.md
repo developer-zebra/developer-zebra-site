@@ -9,15 +9,16 @@ menu:
       url: /about
     - title: I NEED TOOLS FOR...
       url: /help
-    - title: DEVELOPER PORTAL
-      url: https://developer.zebra.com/welcome
     - title: FEEDBACK
       url: /contact
+    - icon: fa fa-comment
+      url: https://developer.zebra.com/welcome
     - icon: fa fa-sitemap
       url: /sitemap
     - icon: fa fa-search
       url: /search
 ---
+
 
 TechDocs (techdocs.zebra.com) is the main documentation site for Zebra's development tools, and is intended for Zebra partners, developers, sales engineers, support teams and anyone seeking in-depth technical information. The site includes user guides, feature descriptions, usage scenarios, tutorials, sample code and links to discussion sites on the [Zebra Developer Portal](https://developer.zebra.com/welcome), downloads at [Support Central](https://www.zebra.com/us/en/support-downloads.html) and other information and resources. 
 

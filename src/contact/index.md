@@ -6,15 +6,19 @@ product: Feedback
 productversion:
 menu:
   items:
-    - title: About TechDocs
+    - title: ABOUT TECHDOCS
       url: /about
-    - title: I Need Tools For...
+    - title: I NEED TOOLS FOR...
       url: /help
-    - title: Feedback
+    - title: FEEDBACK
       url: /contact
+    - icon: fa fa-comment
+      url: https://developer.zebra.com/welcome
+    - icon: fa fa-sitemap
+      url: /sitemap
     - icon: fa fa-search
       url: /search
----  
+---
 
 Thank you for using TechDocs. 
 

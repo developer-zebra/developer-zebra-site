@@ -297,33 +297,33 @@ products:
       - url: stagenow/2-2/about
         label: '2.2'
   - title: I Need Tools For...
-    description: Not sure where to go? Click on "I Need Tools For..." for help figuring out which Zebra tool best suits the requirements, skills and experience of your organization.
+    description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
     url: /help
     btn-text: Latest Guides
     image: /images/logo_techdocs.png
     sections:
       - title: About TechDocs
         url: /about
-      - title: TechDocs Help
+      - title: Tools Help
         url: /help
-      - title: Zebra Devices
-        url: https://www.zebra.com/us/en/products.html
-      - title: Zebra Services
-        url: /stagenow/2-6/ProfileWizards
-      - title: Zebra Solutions
-        url: https://www.zebra.com/us/en/solutions.html
-      - title: Zebra Support
-        url: /stagenow/2-6/settingconfig
       - title: Developer Portal
         url: https://developer.zebra.com/welcome
+      - title: Contact
+        url: /contact
+      - title: Search
+        url: /search
 menu:
   items:
-    - title: About TechDocs
+    - title: ABOUT TECHDOCS
       url: /about
-    - title: I Need Tools For...
+    - title: I NEED TOOLS FOR...
       url: /help
-    - title: Feedback
+    - title: FEEDBACK
       url: /contact
+    - icon: fa fa-comment
+      url: https://developer.zebra.com/welcome
+    - icon: fa fa-sitemap
+      url: /sitemap
     - icon: fa fa-search
       url: /search
 ---

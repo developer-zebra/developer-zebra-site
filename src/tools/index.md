@@ -1,9 +1,6 @@
 ---
-title: Search
-layout: search.html
-index: /index.json
-product: Google Search
-productversion:
+publish: false
+layout: guide.html
 menu:
   items:
     - title: ABOUT TECHDOCS
@@ -20,3 +17,8 @@ menu:
       url: /search
 ---
 
+![img](TD_mockup.png)
+
+<!-- 
+<img style="height:350px" src="datawedge_settings.png"/>
+-->

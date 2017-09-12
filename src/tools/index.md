@@ -1,6 +1,5 @@
 ---
 publish: false
-title: 
 layout: guide.html
 menu:
   items:
@@ -18,7 +17,7 @@ menu:
       url: /search
 ---
 
-[img](TD_mockup.png)
+![img](TD_mockup.png)
 
 <!-- 
 <img style="height:350px" src="datawedge_settings.png"/>

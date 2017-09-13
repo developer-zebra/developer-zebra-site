@@ -11,7 +11,7 @@ parm:
   type: string
 ---
 
-This parm allows you to specify a Custom Licensed Feature Name that identifies the Software License to be removed from the device.
+Used to specify a Custom Licensed Feature Name that identifies the Software License to be removed from the device.
 
 >**Note:** Be careful to enter the exact Licensed Feature Name as acquired from the Zebra Software License Server with identical case and without any additional whitespace or other characters.
 

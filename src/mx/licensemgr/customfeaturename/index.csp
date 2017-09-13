@@ -6,15 +6,15 @@ order: 5
 mx: "4.3"
 parm:
   pivotal: No
-  presentif: The "Specify license action to perform" is "Apply" *AND* "Specify verification method to use" is "Verify against a custom feature name"
+  presentif: The Verify Method is "Verify against a custom feature name" AND License Choice is "Perform legacy Symbol license action"
   name: VerifyCustomFeatureName
   type: string
 ---
 
-This parm allows you to enter a Custom Licensed Feature Name, which must match exactly the Licensed Feature Name contained within the Software License File acquired from Zebra Software License Server.
+Used to specify a Custom Licensed Feature Name, which must match exactly the Licensed Feature Name contained within the Software License File acquired from Zebra Software License Server.
 
->**Note:** You must use this option to verify any Licensed Feature Name that is not contained within the list of Standard Licensed Feature Names. Be careful to enter the exact Licensed Feature Name as acquired from the Zebra Software License Server with identical case and without any additional whitespace or other characters.
+**Note:** This option must be used to verify any Licensed Feature Name other than those contained in the list of Standard Licensed Feature Names. **The Licensed Feature Name must be entered exactly** as acquired from the Zebra Software License Server with identical case and without any additional whitespace or other characters.
 
-Parm value input rules: 
+**Parm value input rules**: 
 
-* String with a valid Custom Licensed Feature Name that was contained within a Software License File acquired from the Zebra Software License Server.
+* String with a valid Custom Licensed Feature Name that was contained within a Software License File acquired from the Zebra Software License Server

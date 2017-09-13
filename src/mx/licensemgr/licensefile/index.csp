@@ -6,12 +6,12 @@ order: 7
 mx: "4.3"
 parm:
   pivotal: No
-  presentif: The "Specify license action to perform" is "Apply" *AND* "Specify licensing method" is "Embed the license blob from the license file into the XML"
+  presentif: The "Specify license action to perform" is "Apply" AND "Specify licensing method" is "Embed the license blob from the license file into the XML" AND
   name: LicenseBlob
   type: string
 ---
 
-This parm allows you to specify the Software License File whose contents should be embedded in the XML. The contents will be Base64 encoded, and hence will result in increasing the size of the contents by 33%. The Software License encoded within the Request XML will be extracted and applied to the device.
+Used to specify the Software License File whose contents should be embedded in the XML. The contents will be Base64 encoded, and hence will result in increasing the size of the contents by 33%. The Software License encoded within the Request XML will be extracted and applied to the device.
 
 Parm value input rules: 
 

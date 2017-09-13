@@ -23,4 +23,4 @@ parm:
       description: This value will cause a Software License to be removed from the device. Removing a required Software License from a device for a Software Component that requires licensing make the controlled capability of the associated Software Component unusable on that device.</p><p><b>Note:</b> This will only delete the licence from the private store. The actual license file will still exist on the device and will need to be deleted.
 ---
 
-This parm allows you to specify whether a Software License should be applied or removed from the device.
+Used to apply or remove a Software License from the device.

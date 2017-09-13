@@ -1,6 +1,6 @@
 ---
 csp: licensemgr
-title: Remove by Custom Feature Name
+title: Remove Custom Feature
 type: parm
 order: 12
 mx: "4.3"

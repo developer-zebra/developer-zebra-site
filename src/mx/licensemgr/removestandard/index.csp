@@ -1,6 +1,6 @@
 ---
 csp: licensemgr
-title: Remove By Standard Feature Name
+title: Remove Standard Feature
 type: parm
 order: 11
 mx: "4.3"

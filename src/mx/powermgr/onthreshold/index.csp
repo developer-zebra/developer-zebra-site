@@ -12,7 +12,7 @@ parm:
 
 ---
 
-Used to specify the temperature (in degrees Celsius) at which the device heater should turn on. **This feature applies only the VC80 vehicle computer**. 
+Used to specify the temperature (in degrees Celsius) at which the device heater should turn on. **This feature applies only to the VC80 vehicle computer**. 
 
 **Parm value input rules**: 
 

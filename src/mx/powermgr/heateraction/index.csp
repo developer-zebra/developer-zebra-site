@@ -27,4 +27,4 @@ parm:
       description: Enables a temperature threshold to be set for the selected heater.  
 ---
 
-This is the On/Off switch for performing actions on the device heater(s), including the ability to set temperature thresholds using the relevant Threshold parameters. **This feature applies only the VC80 vehicle computer**. 
+This is the On/Off switch for performing actions on the device heater(s), including the ability to set temperature thresholds using the relevant Threshold parameters. **This feature applies only to the VC80 vehicle computer**. 

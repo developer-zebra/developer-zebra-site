@@ -23,4 +23,4 @@ parm:
       description: Removes power from the selected port. 
 ---
 
-Used to specify an action to perform on the selected port. Turning off power when not needed for a port can help reduce pin corrosion. **This feature applies only the VC80 vehicle computer**. 
+Used to specify an action to perform on the selected port. Turning off power when not needed for a port can help reduce pin corrosion. **This feature applies only to the VC80 vehicle computer**. 

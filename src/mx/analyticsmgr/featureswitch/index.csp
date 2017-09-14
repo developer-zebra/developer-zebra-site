@@ -5,7 +5,7 @@ type: parm
 order: 7
 mx: "6.0"
 apilevel: "19"
-device: p
+device: p,v
 parm:
   presentif: Analytics Client is set to "Enable" and Analytics Action is NOT set to "Disable"
   pivotal: No

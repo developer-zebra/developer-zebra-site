@@ -5,7 +5,7 @@ type: parm
 order: 3
 mx: "4.2"
 osx: "1.0"
-device: p
+device: p,v
 parm:
   presentif: The Action is "Install" or "Upgrade"
   pivotal: No

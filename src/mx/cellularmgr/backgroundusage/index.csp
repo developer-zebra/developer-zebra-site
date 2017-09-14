@@ -5,7 +5,7 @@ type: parm
 order: 40
 mx: "4.4"
 osx: "4.4"
-device: p
+device: p,v
 parm:
   pivotal: No
   name: BackgroundDataUsage

@@ -4,7 +4,7 @@ title: Set 2.4GHz Channels
 type: parm
 order: 8
 mx: "4.2"
-device: p
+device: p,v
 parm:
   presentif: The selected RF Band is "2.4GHz" or "Auto"
   pivotal: No

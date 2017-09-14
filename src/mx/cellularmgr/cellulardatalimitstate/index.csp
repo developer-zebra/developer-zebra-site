@@ -4,7 +4,7 @@ title: Cellular Data Limit On/Off
 type: parm
 order: 26
 mx: "6.3"
-device: p
+device: p,v
 parm:
   presentif: Cellular Data State is set to "Enable"
   pivotal: No

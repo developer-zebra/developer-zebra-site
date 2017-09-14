@@ -4,7 +4,7 @@ title: Cellular Data Enable/Disable
 type: parm
 order: 20
 mx: "6.3"
-device: p
+device: p,v
 parm:
   pivotal: No
   name: CellularDataUsage

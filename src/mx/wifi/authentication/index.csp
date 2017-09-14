@@ -4,7 +4,7 @@ title: Authentication
 type: parm
 order: 24
 mx: "4.2"
-device: p
+device: p,v
 parm:
   pivotal: No
   presentif: The Network Action is "Add a New Network" and the Security Mode is "Enterprise"

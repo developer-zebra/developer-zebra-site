@@ -4,7 +4,7 @@ title: Package Name
 type: parm
 order: 5
 mx: "5.0"
-device: p
+device: p,v
 parm:
   pivotal: No 
   presentif: The Status Request Action is "Add/Replace Status Request" or "Remove State Request"

@@ -4,7 +4,7 @@ title: Use OmniTrail Options (checkbox)
 type: parm
 order: 84
 mx: "6.3"
-device: p
+device: p,v
 parm:
   pivotal: No
   name: UseOmniTrailOptions

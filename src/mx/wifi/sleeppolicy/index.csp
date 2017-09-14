@@ -4,7 +4,7 @@ title: Sleep Policy
 type: parm
 order: 3
 mx: "4.2"
-device: p
+device: p,v
 parm:
   pivotal: No
   name: WifiSleepPolicy

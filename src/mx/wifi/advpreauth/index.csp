@@ -4,7 +4,7 @@ title: PreAuth
 type: parm
 order: 56
 mx: "4.2"
-device: p
+device: p,v
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False

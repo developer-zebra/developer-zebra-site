@@ -4,7 +4,7 @@ title: Boolean System Value
 type: parm
 order: 6
 mx: 4.4
-device: p
+device: p,v
 parm:
   presentif: Data Type is "Boolean" and Boolean Source Type is "Pre-defined System Boolean Value"
   pivotal: No

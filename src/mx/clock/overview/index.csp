@@ -2,7 +2,7 @@
 csp: clock
 title: Overview
 type: text
-device: p
+device: p,v
 order: 0
 ---
 

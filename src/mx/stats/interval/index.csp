@@ -4,7 +4,7 @@ title: Reporting Interval
 type: parm
 order: 7
 mx: "5.1"
-device: p
+devicetype: p
 parm:
   presentif: Statistics gathering is Enabled (EnableStats = True)
   pivotal: No

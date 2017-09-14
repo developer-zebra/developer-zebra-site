@@ -5,7 +5,7 @@ type: parm
 order: 3
 mx: "4.1"
 osx: "1.0"
-device: p,v
+devicetype: p,v
 parm:
   pivotal: No
   name: CertAlias

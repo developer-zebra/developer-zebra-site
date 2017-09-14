@@ -4,7 +4,7 @@ title: Show Correction Suggestions Enable/Disable
 type: parm
 order: 15
 mx: "6.0"
-device: p
+devicetype: p
 parm:
   pivotal: No
   name: ShowCorrectionSuggestions

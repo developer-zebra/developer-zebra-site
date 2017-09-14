@@ -5,7 +5,7 @@ type: parm
 order: 15
 mx: "4.3"
 osx: "1.3"
-device: p
+devicetype: p
 parm:
   presentif: The SDcard Operation is "Encrypt SDcard"
   pivotal: No

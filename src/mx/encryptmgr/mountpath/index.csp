@@ -5,7 +5,7 @@ type: parm
 order: 11
 mx: "4.3"
 osx: "1.0"
-device: p
+devicetype: p
 parm:
   presentif: The Create EFS action is "Create EFS"
   pivotal: No

@@ -4,7 +4,7 @@ title: Condition Repeat Count
 type: parm
 order: 32
 mx: 4.4
-device: p,v
+devicetype: p,v
 parm:
   presentif: Condition Met Action or Condition Not Met Action is "Retry (up to specified times) then Fail"
   pivotal: No

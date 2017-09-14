@@ -4,7 +4,7 @@ title: 802.11n
 type: parm
 order: 7
 mx: "7.0"
-device: p,v
+devicetype: p,v
 parm:
   pivotal: No
   name: 802.11n

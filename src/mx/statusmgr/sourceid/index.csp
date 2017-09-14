@@ -4,7 +4,7 @@ title: Source ID
 type: parm
 order: 7
 mx: "5.0"
-device: p,v
+devicetype: p,v
 parm:
   pivotal: No 
   presentif: The Status Request Action is "Notify Status"

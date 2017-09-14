@@ -5,7 +5,7 @@ type: parm
 order: 2
 mx: "4.3"
 osx: "3.5"
-device: p
+devicetype: p
 parm:
   pivotal: Yes
   name: ThreatAction

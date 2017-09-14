@@ -5,7 +5,7 @@ type: parm
 order: 10
 mx: "6.0"
 osx: "6.0"
-device: p,v
+devicetype: p,v
 parm:
   pivotal: No
   name: ScreenLockType

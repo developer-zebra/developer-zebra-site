@@ -4,7 +4,7 @@ title: Persist If Error
 type: parm
 order: 6
 mx: "4.2"
-device: p,v
+devicetype: p,v
 parm:
   presentif: Persist Action is "Add current XML as a persistent profile"
   pivotal: Yes

@@ -5,7 +5,7 @@ type: parm
 order: 21
 mx: "6.3"
 apilevel: "23"
-device: p
+devicetype: p
 parm:
   presentif: EmailEnable parameter is set to "True"
   pivotal: No

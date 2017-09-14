@@ -4,7 +4,7 @@ title: License Action
 type: parm
 order: 2
 mx: "4.3"
-device: p
+devicetype: p
 parm:
   pivotal: Yes
   name: LicenseAction

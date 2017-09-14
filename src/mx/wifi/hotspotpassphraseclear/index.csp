@@ -4,7 +4,7 @@ title: Hotspot Passphrase Clear
 type: parm
 order: 81
 mx: "6.3"
-device: p,v
+devicetype: p,v
 parm:
   presentif: The "Specify Hotspot Options" is checked, the "Protect Hotspot Passphrase" checkbox is unchecked and "Hotspot" is set to "Enable"
   pivotal: No

@@ -4,7 +4,7 @@ title: TFTP Ser. Name (66)
 type: parm
 order: 26
 mx: "4.4"
-device: p
+devicetype: p
 parm:
   pivotal: No
   name: TFTPSerNameState

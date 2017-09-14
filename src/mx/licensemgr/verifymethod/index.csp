@@ -4,7 +4,7 @@ title: Verification Method
 type: parm
 order: 3
 mx: "4.3"
-device: p
+devicetype: p
 parm:
   pivotal: Yes
   presentif: The "Specify license action to perform" is "Apply"

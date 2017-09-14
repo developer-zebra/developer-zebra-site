@@ -5,7 +5,7 @@ type: parm
 mx: "4.3"
 apilevel: "19"
 order: 35
-device: p,v
+devicetype: p,v
 parm:
   presentif: Analytics Action is set to "Enable" and Group Action is set to "Configure Levels for Multiple Groups"
   pivotal: No

@@ -4,7 +4,7 @@ title: Boolean Source Type
 type: parm
 order: 5
 mx: 4.4
-device: p,v
+devicetype: p,v
 parm:
   presentif: Data Type is "Boolean"
   pivotal: No

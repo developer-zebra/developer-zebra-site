@@ -5,7 +5,7 @@ type: parm
 order: 3
 mx: "4.3"
 osx: "1.0"
-device: p
+devicetype: p
 parm:
   presentif: The Install Key action is "Install key"
   pivotal: No

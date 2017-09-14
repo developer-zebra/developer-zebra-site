@@ -5,7 +5,7 @@ type: parm
 order: 13
 mx: "4.3"
 apilevel: "16"
-device: p,v
+devicetype: p,v
 parm:
   pivotal: Yes
   presentif: The "Set Default Input Method?" value is "Change Current Input Method"

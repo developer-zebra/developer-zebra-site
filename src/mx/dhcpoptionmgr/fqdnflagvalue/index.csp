@@ -4,7 +4,7 @@ title: FQDN Flag Value
 type: parm
 order: 42
 mx: "6.3"
-device: p
+devicetype: p
 parm:
   presentif: FQDN is set to "Enable"
   pivotal: Yes

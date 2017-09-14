@@ -5,7 +5,7 @@ type: parm
 order: 8
 mx: "6.0"
 apilevel: "19"
-device: p,v
+devicetype: p,v
 parm:
   presentif: Group Action is set to "Configure Details for a Single Group" and Feature Switch is NOT set to "Unused"
   pivotal: No

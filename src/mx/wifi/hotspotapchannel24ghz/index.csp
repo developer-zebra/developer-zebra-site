@@ -4,7 +4,7 @@ title: Set Hotspot 2.4GHz Channel
 type: parm
 order: 76
 mx: "6.3"
-device: p,v
+devicetype: p,v
 parm:
   presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot Band" is "2.4GHz" 
   pivotal: No

@@ -4,7 +4,7 @@ title: Touch Panel Show/Hide
 type: parm
 order: 3
 mx: "5.0"
-device: p
+devicetype: p
 parm:
   pivotal: Yes
   name: TouchPanel

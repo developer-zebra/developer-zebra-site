@@ -4,7 +4,7 @@ title: Scanner Serial Number
 type: parm
 order: 5
 mx: "5.2"
-device: p
+devicetype: p
 parm:
   pivotal: No
   presentif: Scanner Action is not "Do Nothing"

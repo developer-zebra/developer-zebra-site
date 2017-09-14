@@ -5,7 +5,7 @@ type: parm
 order: 7
 mx: "4.2"
 osx: "1.2"
-device: p,v
+devicetype: p,v
 parm:
   presentif: The Protected List Action is "Add Application to Protected List" or "Remove Application from Protected List"
   pivotal: No

@@ -6,7 +6,7 @@ order: 10
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"
-device: p
+devicetype: p
 parm:
   pivotal: No
   name: SetEthernetProxySettings

@@ -4,7 +4,7 @@ title: Action
 type: parm
 order: 2
 mx: "5.2"
-device: p
+devicetype: p
 parm:
   pivotal: No
   name: Action

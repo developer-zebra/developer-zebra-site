@@ -4,7 +4,7 @@ title: User Name
 type: parm
 order: 13
 mx: "6.0"
-device: p
+devicetype: p
 parm:
   presentif: Set Credentials is set to "Enable" and Use Default Credentials is set to "Disable"
   pivotal: No

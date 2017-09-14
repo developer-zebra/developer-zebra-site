@@ -4,7 +4,7 @@ title: Set Credentials
 type: parm
 order: 10
 mx: "6.0"
-device: p
+devicetype: p
 parm:
   presentif: AppGallery Client State is set to "Turn On" and Use Default Credentials is set to "Disable"
   pivotal: No

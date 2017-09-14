@@ -4,7 +4,7 @@ title: Add Words From File
 type: parm
 order: 7
 mx: "6.3"
-device: p
+devicetype: p
 parm:
   presentif: Action is "Add words from file"
   pivotal: No

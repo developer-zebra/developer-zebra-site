@@ -5,7 +5,7 @@ type: parm
 order: 7
 mx: "4.3"
 osx: "1.3"
-device: p,v
+devicetype: p,v
 parm:
   pivotal: No
   name: CurrentLocale

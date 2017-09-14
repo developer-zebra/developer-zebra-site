@@ -5,7 +5,7 @@ type: parm
 order: 9
 mx: "4.3"
 apilevel: "19"
-device: p,v
+devicetype: p,v
 parm:
   presentif: Analytics Action is set to "Enable"
   pivotal: Yes

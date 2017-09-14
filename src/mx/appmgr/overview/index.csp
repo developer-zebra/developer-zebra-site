@@ -2,7 +2,7 @@
 csp: appmgr
 title: Overview
 type: text
-device: p,v
+devicetype: p,v
 order: 0
 ---
 

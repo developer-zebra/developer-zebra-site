@@ -4,7 +4,7 @@ title: Set Path for Statistics File Storage
 type: parm
 order: 4
 mx: "5.1"
-device: p
+devicetype: p
 parm:
   presentif: Statistics gathering is enabled (EnableStats = True)
   pivotal: No

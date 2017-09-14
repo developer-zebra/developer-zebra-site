@@ -4,7 +4,7 @@ title: Use Proxy
 type: parm
 order: 46
 mx: "4.2"
-device: p,v
+devicetype: p,v
 parm:
   pivotal: Yes
   name: UseProxy

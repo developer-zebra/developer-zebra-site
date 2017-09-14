@@ -5,7 +5,7 @@ type: parm
 order: 20
 mx: "4.1"
 apilevel: "1"
-device: p,v
+devicetype: p,v
 parm:
   presentif: The Action is "StartActivity" or "StartService"
   pivotal: No

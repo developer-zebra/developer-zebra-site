@@ -4,7 +4,7 @@ title: FQDN Enable/Disable (81)
 type: parm
 order: 40
 mx: "6.3"
-device: p
+devicetype: p
 parm:
   pivotal: Yes
   name: FqdnState

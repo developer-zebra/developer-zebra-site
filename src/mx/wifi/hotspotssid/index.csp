@@ -4,7 +4,7 @@ title: Hotspot SSID
 type: parm
 order: 72
 mx: "6.3"
-device: p,v
+devicetype: p,v
 parm:
   presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot" is set to "Enable"  
   pivotal: No

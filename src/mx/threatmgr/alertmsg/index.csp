@@ -5,7 +5,7 @@ type: parm
 order: 38
 mx: "4.3"
 osx: "3.5"
-device: p
+devicetype: p
 parm:
   presentif: Shown if Threat Action is "Turn On" and any Threat Action is selected and countermeasure is "Unsolicited Alert"
   pivotal: No

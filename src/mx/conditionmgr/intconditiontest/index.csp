@@ -4,7 +4,7 @@ title: Integer Condition Test
 type: parm
 order: 14
 mx: 4.4
-device: p,v
+devicetype: p,v
 parm:
   presentif: Data Type is "Integer"
   pivotal: No

@@ -6,7 +6,7 @@ order: 4
 mx: "4.3"
 osx: "4.3"
 apilevel: "23"
-device: p
+devicetype: p
 parm:
   pivotal: Yes
   name: AutoScreenLockOption

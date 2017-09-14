@@ -4,7 +4,7 @@ title: FQDN Value
 type: parm
 order: 41
 mx: "6.3"
-device: p
+devicetype: p
 parm:
   presentif: FQDN is set to "Enable"
   pivotal: Yes

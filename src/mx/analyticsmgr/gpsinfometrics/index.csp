@@ -5,7 +5,7 @@ type: parm
 mx: "5.1"
 apilevel: "19"
 order: 26
-device: p,v
+devicetype: p,v
 parm:
   presentif: Analytics Action is set to "Enable" and Group Action is set to "Configure Details for a Single Group" and Group Name is set to "GPS Performance"
   pivotal: No

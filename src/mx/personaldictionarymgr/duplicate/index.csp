@@ -4,7 +4,7 @@ title: Duplicate (checkbox)
 type: parm
 order: 8
 mx: "6.3"
-device: p
+devicetype: p
 parm:
   presentif: Action is "Add word from file"
   pivotal: No

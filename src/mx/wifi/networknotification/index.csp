@@ -4,7 +4,7 @@ title: Network Notification
 type: parm
 order: 7
 mx: "4.2"
-device: p,v
+devicetype: p,v
 parm:
   pivotal: No
   name: NetworkNotification

@@ -5,15 +5,20 @@ product: About
 productversion:
 menu:
   items:
-    - title: About TechDocs
+    - title: ABOUT TECHDOCS
       url: /about
-    - title: I Need To...
+    - title: I NEED TOOLS FOR...
       url: /help
-    - title: Feedback
+    - title: FEEDBACK
       url: /contact
+    - icon: fa fa-comment
+      url: https://developer.zebra.com/welcome
+    - icon: fa fa-sitemap
+      url: /sitemap
     - icon: fa fa-search
       url: /search
 ---
+
 
 TechDocs (techdocs.zebra.com) is the main documentation site for Zebra's development tools, and is intended for Zebra partners, developers, sales engineers, support teams and anyone seeking in-depth technical information. The site includes user guides, feature descriptions, usage scenarios, tutorials, sample code and links to discussion sites on the [Zebra Developer Portal](https://developer.zebra.com/welcome), downloads at [Support Central](https://www.zebra.com/us/en/support-downloads.html) and other information and resources. 
 
@@ -24,7 +29,7 @@ TechDocs (techdocs.zebra.com) is the main documentation site for Zebra's develop
 -----
 
 ### Main "Tile" Page
-Below is the main TechDocs page, reachable at [techdocs.zebra.com](http://techdocs.zebra.com/) or by clicking the Zebra icon from within any product. Each product has its own "tile" with the product name linking to the "About" page and buttons to the product's main sections. When multiple versions of a product are documented, a drop-down list on the right side of the tile (shown) links to docs for each of the available versions. 
+**Below is the main TechDocs page**, reachable at [techdocs.zebra.com](http://techdocs.zebra.com/) or by clicking the Zebra icon from within any product. Each product has its own "tile" with the product name linking to the "About" page and buttons to the product's main sections. When multiple versions of a product are documented, a drop-down list on the right side of the tile (shown) links to docs for each of the available versions. 
 
 ![img](techdocs_tilepage.png)
 _Click on image to enlarge_
@@ -32,7 +37,7 @@ _Click on image to enlarge_
 -----
 
 ### Product Pages
-When viewing the docs of an individual product, a series of tabs along the top of each page link to the product's main sections and to other resources, when available (see image, below). A navigation pane along the left side displays anchor links to the main sections of the current page. Click an anchor link to scroll to that section; right-click it to copy the link for pasting into other documents or communications.  
+**When viewing the docs of an individual product**, a series of tabs along the top of each page link to the product's main sections and to other resources, when available (see image, below). A navigation pane along the left side displays anchor links to the main sections of the current page. Click an anchor link to scroll to that section; right-click it to copy the link for pasting into other documents or communications.  
 
 ![img](product_page.png)
 _Click on image to enlarge_
@@ -41,7 +46,7 @@ _Click on image to enlarge_
 -----
 
 ### Getting Started Page
-Some of the more complex products include a "Getting Started" page, an index of available guides designed to help new users set up and get up to speed quickly. These guides are meant to be consumed from top to bottom. 
+**Some of the more complex products include a "Getting Started" page**, an index of available guides designed to help new users set up and get up to speed quickly. These guides are meant to be consumed from top to bottom. 
 
 ![img](getting_started.png)
 _An "on-ramp" for getting up to speed with Enterprise Browser_ 
@@ -50,7 +55,7 @@ _An "on-ramp" for getting up to speed with Enterprise Browser_
 -----
 
 ### Guides Page
-For feature-rich products such as Enterprise Browser, TechDocs provides numerous guides categorized by type for easy identification and quick access. 
+**For feature-rich products** such as Enterprise Browser, TechDocs provides numerous guides categorized by type for easy identification and quick access. 
 
 ![img](guides.png)
 _Index of Enterprise Browser guides classifies available information for quick reference_ 
@@ -59,7 +64,7 @@ _Index of Enterprise Browser guides classifies available information for quick r
 -----
 
 ### Redirection 
-The TechDocs Redirection feature enables permanent links to be created for printed materials and other collateral that never go stale and always lead to the current doc version.
+**The TechDocs Redirection feature enables permanent links to be created** for use in printed materials and other collateral. These links never get "stale" and will always lead to the current doc version. 
 
 **Links that always bring up the current version**:
 
@@ -87,7 +92,7 @@ _Shows that a device with OSX 4.1 cannot perform Enterprise or Factory Resets or
 -----
 
 ### Integrated Google Search
-Through integration with Google Search, TechDocs instantly delivers results for any product ranked by relevance, enabling TechDocs users to find the required information as quickly as possible.
+**TechDocs integrates with Google Search** to deliver results for any product (or the whole TechDocs site) ranked by relevance, enabling users to find the required information as quickly as possible.
 
 ![img](google_results.png)
 _Results of a search for "Barcode" from within DataWedge 6.3 docs_ 

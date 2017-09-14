@@ -19,14 +19,15 @@ parm:
       name: Uninstall certificate
       mx: "4.1"
       osx: "1.0"
-      description: Uninstalls the specified certificate from the device.
+      description: Removes the specified certificate from the device.
     - code: 3
       name: Initialize Android Keystore
       mx: "4.2"
       osx: "1.0"
-      description: Causes a new Android Keystore to be initialized (Can be performend only once. See Note above). 
+      description: Causes a new Android Keystore to be initialized or the password reset (see Note above). 
 ---
 
-Used to specify whether to initialize the Android Keystore, Install a Certificate, or Uninstall a Certificate. 
+Used to Install or Uninstall a certificate or to initialize the Android Keystore. If a certificate is installed with the same alias as one that already exists in the Keystore, the existing certificate is overwritten by the new one.
 
-**Note: Initializing the Android Keystore can be done only once**. If an attempt is made to Initialize the Android Keystore when it has previously been initialized (via the CertMgr or the device user through the System Settings Menu), an error will be returned in the Result XML. Aside from an Enterprise Reset (performed using the [Power Manager](../powermgr)), no method is currently provided to re-initialize the Android Keystore or to return it to an uninitialized state.
+**Note: The Android Keystore can be "initialized" only once; subsequent uses of the Initialize Android Keystore function will simply reset the password, leaving the Keystore intact**. To return the Android Keystore to a pre-initialized state, see the Enterprise Reset and Factory Reset functions of [Power Manager](../powermgr).
+

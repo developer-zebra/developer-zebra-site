@@ -33,7 +33,7 @@ Selecting "Always" locks EHS in as the default home app and **locks users out of
 
 Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
 
-> **Note: After selecting "Always," some devices require a five-second pause before restarting to ensure the change is permanent**. This applies to ET50, ET55, TC51, TC56, TC70x and TC75x devices **running Marshmallow**.
+> **Note: After selecting "Always," some devices require a 10-second pause before restarting to ensure the change remains persistent**. 
 
 Ready to get started? [Download Enterprise Home Screen 2.6](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
 
@@ -78,13 +78,28 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
-<tr bgcolor="#ccffcc" >
+<tr>
 <td style="width: 150.35pt;"  width="250">
 <p class="MsoNormal"><font color="#333399" size="3">MC18</font></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
     *</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td></tr>
+
+<tr>
+<td style="width: 150.35pt;"  width="250">
+<p class="MsoNormal"><font color="#333399" size="3">MC32</font></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
+    &nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
@@ -108,7 +123,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
-<tr bgcolor="#ccffcc" >
+<tr>
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">MC67</font></p>
 </td>
@@ -140,7 +155,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </tr>
 
 <tr >
-<tr bgcolor="#ccffcc" >
+<tr>
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC51 / TC56</font></p>
 </td>
@@ -171,7 +186,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
-<tr bgcolor="#ccffcc" >
+<tr>
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
 </td>
@@ -198,7 +213,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 </tr>
-<tr bgcolor="#ccffcc" >
+<tr>
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC75</font></p>
 </td>
@@ -228,7 +243,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
-<tr bgcolor="#ccffcc" >
+<tr>
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC8000</font></p>
 </td>
@@ -264,15 +279,14 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ## New in EHS 2.6
 
-* Support for ET50/ET55 tablet computers runing Marshmallow
-* Bug fixes (see [Release Notes](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) for details) 
+* **Support for ET50/ET55** tablet computers runing Marshmallow
 
 -----
 
 ## New in EHS 2.5
 
 ### Device Support:
-
+* [MC32](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3200.html) running Android 5.1.1 Lollipop (see [Android 6.x Marshmallow Notes](#androidmarshmallownotes))
 * [TC51/TC56](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc51-tc56.html) and [TC75x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc7x-touch-computer-series.html) Touch Computers running Android Marshmallow 6.0.1 (see [Android 6.x Marshmallow Notes](#androidmarshmallownotes))
 * [ET50/ET55 Tablet Computers](https://www.zebra.com/us/en/products/tablets/et50-55.html) running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes) and [ET50/ET55 Device Notes](#et50et55devicenotes)) 
 * [TC8000 Touch Mobile Computer and Scanner](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc8000.html) running Android Lollipop 5.1.1 (see [Android 5+ Notes](#androidlollipopandmarshmallownotes))

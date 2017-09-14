@@ -14,22 +14,14 @@ DataWedge provides barcode scanning and processing services for Zebra devices ru
 * **Scanner Framework 5.1.0** or higher, and
 * **SimulScan 1.9 or higher** (on [devices that support SimulScan](../../../../simulscan))
 
-#### New in DataWedge 6.3
+#### APIs in DataWedge 6.3
 
-**New APIs**: 
-
-* **[CLONE_PROFILE](../api/cloneprofile) -** creates a copy of an existing DataWedge Profile wuth settings.
+* **[CLONE_PROFILE](../api/cloneprofile) -** creates a copy of an existing DataWedge Profile with settings.
 * **[DELETE_PROFILE](../api/deleteprofile) -** deletes Profile(s) from the device. 
 * **[ENABLE_DATAWEDGE](../api/enabledatawedge) -** switches DataWedge on or off. 
 * **[GET_ACTIVE_PROFILE](../api/getactiveprofile) -** retrieves the name of the Profile currently in use. 
-* **[GET_DATAWEDGE_STATUS](../api/getdatawedgestatus) -** returns the DataWedge state (enabled/disabled). 
 * **[GET_PROFILES_LIST](../api/getprofileslist) -** retrieves a list of DataWedge Profiles on the device.
-* **[GET_VERSION_INFO](../api/getversioninfo) -** gets version numbers of DataWedge and of scanner and SimulScan frameworks on the device. 
-* **[RESTORE_CONFIG](../api/restoreconfig) -** restores a DataWedge configuration to its default settings.
-* **[REGISTER_FOR_NOTIFICATION](../api/registerfornotification) -** tells DataWedge to inform specified app or activity of updates to scanner and/or Profile status. 
 * **[RENAME_PROFILE](../api/renameprofile) -** changes the name of an existing Profile. 
-* **[SET_CONFIG](../api/setconfig) -** create new, or overwrite or update an existing Profile 
-* **[UNREGISTER_FOR_NOTIFICATION](../api/registerfornotification) -** cancels request for app notification.
 
 **DataWedge 6.3 builds on the new structure for launching Android intents introduced with DataWedge 6.2**, and can launch multiple intents as extras in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
 

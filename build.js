@@ -880,6 +880,9 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'stagenow/2-7/'
     }))
     .use(foldermenu({
+        folder: 'stagenow/2-8/'
+    }))
+    .use(foldermenu({
         folder: 'ehs/2-3/'
     }))
     .use(foldermenu({
@@ -903,6 +906,12 @@ var sitebuild = Metalsmith(__dirname)
    .use(foldermenu({
         folder: 'datawedge/6-3/'
     }))
+   .use(foldermenu({
+        folder: 'datawedge/6-4/'
+    }))
+  .use(foldermenu({
+        folder: 'datawedge/6-5/'
+    }))
     .use(foldermenu({
         folder: 'enterprise-browser/1-4/'
     }))
@@ -911,6 +920,9 @@ var sitebuild = Metalsmith(__dirname)
     }))
     .use(foldermenu({
         folder: 'enterprise-browser/1-6/'
+    }))
+    .use(foldermenu({
+        folder: 'enterprise-browser/1-7/'
     }))
         .use(foldermenu({
         folder: 'enterprise-keyboard/1-0/'

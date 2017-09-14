@@ -34,7 +34,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/6-6/tutorial/
         <uses-library android:name="com.symbol.emdk" />
 
 ##Adding Some Code    
-1. Now we will start to add some code. 
+**1.** Now we will start to add some code. 
 
     First you must add references to the libraries:  
     
@@ -95,8 +95,11 @@ Start by creating a new Android Studio [project](/emdk-for-android/6-6/tutorial/
 		// Edit Text that is used to display scanned barcode data
 		private EditText dataView = null;
 
+		//boolean flag to start scanning after scanner initialization, Used in OnStatus callback to insure scanner is idle before read() is called 
+		private boolean startRead = false;
 
-2. Now, let us design the simple UI that has a [TextView](http://developer.android.com/reference/android/widget/TextView.html) to display the status of scanning operation and above that an [EditText](http://developer.android.com/reference/android/widget/EditText.html) to populate scanned barcode data.
+
+**3.** Now, let us design the simple UI that has a [TextView](http://developer.android.com/reference/android/widget/TextView.html) to display the status of scanning operation and above that an [EditText](http://developer.android.com/reference/android/widget/EditText.html) to populate scanned barcode data.
 
     So, remove all the code, inside "res/layout/activity_main.xml" and add following XML layout code for UI.
 
@@ -136,9 +139,9 @@ Start by creating a new Android Studio [project](/emdk-for-android/6-6/tutorial/
 
         </RelativeLayout>
 
-    > Note: Press CTRL+SHFT+F or CMD+SHFT+F for indentation.     
+        
  
-3. In the onCreate method, we take reference of UI elements that are declared in "res/layout/activity_main.xml" in order to use them in our [Activity](http://developer.android.com/reference/android/app/Activity.html). We then call getEMDKManager so that the EMDK can be initialized and checked to see if it is ready. 
+**3.** In the onCreate method, we take reference of UI elements that are declared in "res/layout/activity_main.xml" in order to use them in our [Activity](http://developer.android.com/reference/android/app/Activity.html). We then call getEMDKManager so that the EMDK can be initialized and checked to see if it is ready. 
 
         :::java
         // Reference to UI elements
@@ -155,12 +158,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/6-6/tutorial/
 		}
 
 
-4. We will write a method `initializeScanner` to initialize and enable the scanner and its listeners by using [Barcode Manager](/emdk-for-android/6-6/api/barcode/BarcodeManager) object. The `enable` method enables the scanner hardware. This method does not make the scanner to scan or turn on the laser. Basically it will make the scanner device available for your application. If the same of scanner is enabled by other applications, this will throws ScannerExceptions. You must call `disable()` when you are done the scanning, otherwise it will remain locked and be unavailable to other applications.
-
-	Once the barcode is enabled, we will call `read` method on scanner. The scanning API provides `read` method that starts an asynchronous Scan. The method will not turn ON the scanner. It will, however, put the scanner in a state in which the scanner can be turned ON either by pressing a hardware trigger or can be turned ON automatically. This is determined by the `Scanner.TriggerType`. The data notification must registered in order to scan and get the Scan Data. The read request can be canceled by issuing a `cancelRead`. If a `read()` is submitted while another read is pending, the method call will fail. It is recommended to check whether a read is pending by calling `isReadPending()` before submitting a `read()`. A read() can also be submitted from within `onData` and `onStatus` events. If called within `onStatus`, it should be called only when IDLE status is received. If called within `onData`, then checking for `isReadPending()` is recommended.
-
-	> Note: The `read` method allows you to scan the barcode only once. If you want to scan the barcodes multiple times then call `read` multiple times. Hence later in this tutorial, we will also call `read` in the `onData` callback method, which is executed every time a barcode is scanned. 
-
+**4.** We will write a method `initializeScanner` to initialize and enable the scanner and its listeners by using Barcode Manager object. The `enable` method enables the scanner hardware. This method does not turn on the laser start scanning, it will make the scanner device available to your application. If the same of scanner is enabled by other applications, calling enable() will throw a ScannerException. You must call `disable()` when you are done the scanning, otherwise it will remain locked and be unavailable to other applications.
 
         :::java
         // Method to initialize and enable Scanner and its listeners
@@ -179,19 +177,45 @@ Start by creating a new Android Studio [project](/emdk-for-android/6-6/tutorial/
 				scanner.triggerType = TriggerType.HARD;
 				// Enable the scanner
 				scanner.enable();
-				// Starts an asynchronous Scan. The method will not turn ON the
-				// scanner. It will, however, put the scanner in a state in which
-				// the scanner can be turned ON either by pressing a hardware
-				// trigger or can be turned ON automatically.
-				scanner.read();
+				//set startRead flag to true. this flag will be used in the OnStatus callback to insure 
+				//the scanner is at an IDLE state and a read is not pending before calling scanner.read()
+				startRead = true;
+			}
+		}
+
+**5.** We will also need a method to release scanner resources when we are no longer using them. We will name this method `deInitilazeScanner`.
+
+        :::java
+		private void deInitializeScanner() throws ScannerException {
+			if (scanner != null) {
+				
+				try {
+					if(scanner.isReadPending()){
+						scanner.cancelRead();
+					}
+                	scanner.disable();
+				} catch (Exception e) {
+					e.printStackTrace();
+            	}
+				try {
+					scanner.removeDataListener(this);
+                	scanner.removeStatusListener(this);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				try {
+                	scanner.release();
+				} catch (Exception e) {
+					e.printStackTrace();
+            	}
+
+            scanner = null;
 			}
 		}
 
 
-5. Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the earlier steps. We have used that instance to get an instance [Barcode Manager](/emdk-for-android/6-6/api/barcode/BarcodeManager) to enable scanning.
 
-    > Note: 
-    > Rename the argument of `onOpened` method from `arg0` to `emdkManager`  
+**6.** Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the earlier steps. We have used that instance to get an instance [Barcode Manager](/emdk-for-android/6-6/api/barcode/BarcodeManager) to enable scanning.
 
         :::java
         this.emdkManager = emdkManager;
@@ -203,10 +227,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/6-6/tutorial/
 			e.printStackTrace();
 		}
 
-		// Toast to indicate that the user can now start scanning
-		Toast.makeText(MainActivity.this,
-				"Press Hard Scan Button to start scanning...",
-				Toast.LENGTH_SHORT).show();  
+		
 
 
 
@@ -479,3 +500,11 @@ Now that you have learned how to perform Basic Scanning operations on your Symbo
 
 
 
+
+
+
+## CONTENT BACKUP
+
+Once the barcode is enabled, we will call `read` method on scanner. The scanning API provides `read` method that starts an asynchronous Scan. The method will not turn ON the scanner. It will, however, put the scanner in a state in which the scanner can be turned ON either by pressing a hardware trigger or can be turned ON automatically. This is determined by the `Scanner.TriggerType`. The data notification must registered in order to scan and get the Scan Data. The read request can be canceled by issuing a `cancelRead`. If a `read()` is submitted while another read is pending, the method call will fail. It is recommended to check whether a read is pending by calling `isReadPending()` before submitting a `read()`. A read() can also be submitted from within `onData` and `onStatus` events. If called within `onStatus`, it should be called only when IDLE status is received. If called within `onData`, then checking for `isReadPending()` is recommended.
+
+	> Note: The `read` method allows you to scan the barcode only once. If you want to scan the barcodes multiple times then call `read` multiple times. Hence later in this tutorial, we will also call `read` in the `onData` callback method, which is executed every time a barcode is scanned. 

@@ -26,25 +26,29 @@ products:
         label: '3.0'
   - title: DataWedge
     description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for other apps on the device.
-    url: /datawedge/6-3/guide/about
+    url: /datawedge/6-5/guide/about
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /datawedge/6-3/guide/about
+        url: /datawedge/6-5/guide/about
       - title: Setup
-        url: /datawedge/6-3/guide/setup
+        url: /datawedge/6-5/guide/setup
       - title: Profiles
-        url: /datawedge/6-3/guide/profiles
+        url: /datawedge/6-5/guide/profiles
       - title: Settings
-        url: /datawedge/6-3/guide/settings
+        url: /datawedge/6-5/guide/settings
       - title: MSR
-        url: /datawedge/6-3/guide/input/msr
+        url: /datawedge/6-5/guide/input/msr
       - title: APIs
-        url: /datawedge/6-3/guide/api
+        url: /datawedge/6-5/guide/api
       - title: Demo App
-        url: /datawedge/6-3/guide/demo
+        url: /datawedge/6-5/guide/demo
     versions:
+      - url: datawedge/6-5/guide/about
+        label: '6.5'      
+      - url: datawedge/6-4/guide/about
+        label: '6.4'      
       - url: datawedge/6-3/guide/about
         label: '6.3'      
       - url: datawedge/6-2/guide/about
@@ -125,25 +129,27 @@ products:
         label: '1.0'
   - title: Enterprise Browser
     description: A platform for building apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript.
-    url: /enterprise-browser/1-6/guide/about
+    url: /enterprise-browser/1-7/guide/about
     image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-browser/1-6/guide/about
+        url: /enterprise-browser/1-7/guide/about
       - title: Getting Started
-        url: /enterprise-browser/1-6/guide/gettingstarted/
+        url: /enterprise-browser/1-7/guide/gettingstarted/
       - title: Setup
-        url: /enterprise-browser/1-6/guide/setup/
+        url: /enterprise-browser/1-7/guide/setup/
       - title: Tutorials
-        url: /enterprise-browser/1-6/tutorial/
+        url: /enterprise-browser/1-7/tutorial/
       - title: Usage Guides
-        url: /enterprise-browser/1-6/guide
+        url: /enterprise-browser/1-7/guide
       - title: Config.xml
-        url: /enterprise-browser/1-6/guide/configreference
+        url: /enterprise-browser/1-7/guide/configreference
       - title: APIs
-        url: /enterprise-browser/1-6/api
+        url: /enterprise-browser/1-7/api
     versions:
+      - url: enterprise-browser/1-7/guide/about
+        label: '1.7'
       - url: enterprise-browser/1-6/guide/about
         label: '1.6'
       - url: enterprise-browser/1-5/guide/about
@@ -230,11 +236,6 @@ products:
         url: /mx/compatibility
       - title: Which version do I have?
         url: /mx/mx-version-on-device
-    versions:
-      - url: mx
-        label: '6.3'      
-      - url: mx/mxvt
-        label: 'Value Tier'
   - title: SimulScan
     description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.
     url: /simulscan/1-1/guide/about
@@ -265,22 +266,24 @@ products:
     image: /images/products/stagenow.png
     sections:
       - title: About
-        url: /stagenow/2-7/about
+        url: /stagenow/2-8/about
       - title: Getting Started
-        url: /stagenow/2-7/gettingstarted
+        url: /stagenow/2-8/gettingstarted
       - title: Profiles
-        url: /stagenow/2-7/stagingprofiles
+        url: /stagenow/2-8/stagingprofiles
       - title: Profile Wizards
-        url: /stagenow/2-7/ProfileWizards
+        url: /stagenow/2-8/ProfileWizards
       - title: Settings
-        url: /stagenow/2-7/settingconfig
+        url: /stagenow/2-8/settingconfig
       - title: Setting Types
-        url: /stagenow/2-7/settingtypes
+        url: /stagenow/2-8/settingtypes
       - title: Device Staging
-        url: /stagenow/2-7/stageclient
+        url: /stagenow/2-8/stageclient
       - title: Download
-        url: /stagenow/2-7/download
+        url: /stagenow/2-8/download
     versions:
+      - url: stagenow/2-8/about
+        label: '2.8'      
       - url: stagenow/2-7/about
         label: '2.7'
       - url: stagenow/2-6/about
@@ -293,34 +296,34 @@ products:
         label: '2.3'
       - url: stagenow/2-2/about
         label: '2.2'
-  - title: I Need To...
-    description: Not sure where to go? Click on "I Need To..." for help figuring out which Zebra tool best suits the requirements, skills and experience of your organization.
+  - title: I Need Tools For...
+    description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
     url: /help
     btn-text: Latest Guides
     image: /images/logo_techdocs.png
     sections:
       - title: About TechDocs
         url: /about
-      - title: TechDocs Help
+      - title: Tools Help
         url: /help
-      - title: Zebra Devices
-        url: https://www.zebra.com/us/en/products.html
-      - title: Zebra Services
-        url: /stagenow/2-6/ProfileWizards
-      - title: Zebra Solutions
-        url: https://www.zebra.com/us/en/solutions.html
-      - title: Zebra Support
-        url: /stagenow/2-6/settingconfig
       - title: Developer Portal
         url: https://developer.zebra.com/welcome
+      - title: Contact
+        url: /contact
+      - title: Search
+        url: /search
 menu:
   items:
-    - title: About TechDocs
+    - title: ABOUT TECHDOCS
       url: /about
-    - title: I Need To...
+    - title: I NEED TOOLS FOR...
       url: /help
-    - title: Feedback
+    - title: FEEDBACK
       url: /contact
+    - icon: fa fa-comment
+      url: https://developer.zebra.com/welcome
+    - icon: fa fa-sitemap
+      url: /sitemap
     - icon: fa fa-search
       url: /search
 ---

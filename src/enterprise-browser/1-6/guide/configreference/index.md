@@ -1339,7 +1339,7 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 	<AutoPlayMediaElements  VALUE="1"/>
 
 ###JavascriptEnabled
-**Applies only to Windows Mobile with IE engine**. Controls whether JavaScript is enabled on Windows Mobile devices. JavaScript is always enabled on Android and WM/CE with Zebra Webkit. 
+**Applies only to Windows Mobile/CE**. Controls whether JavaScript is enabled on Windows Mobile devices. JavaScript is always enabled on Android. 
 
 **Possible Values**:
 
@@ -1600,7 +1600,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 
 ## DOM injection
 ### CustomDOMElements 
-**Applies to Android and Windows Mobile/CE Webkit engines**. Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, please refer to the [DOM Injection guide](../DOMInjection).  
+**Applies to Android and Windows Mobile/CE Webkit engines**. Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS and/or meta tags) into a running application without modifying the underlying application. Injected CSS and JavaScript can be local or server-based; meta tags must be device-local. For more information, please refer to the [DOM Injection guide](../DOMinjection).  
 
 **Possible Values**:
 

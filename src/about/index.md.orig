@@ -8,10 +8,10 @@ menu:
     - title: About TechDocs
       url: /about
 <<<<<<< HEAD
-    - title: I Need a Tool For...
+    - title: I Need Tools For...
 =======
-    - title: I Need To...
->>>>>>> develop
+    - title: I Need a Tool For...
+>>>>>>> eb-1.7
       url: /help
     - title: Feedback
       url: /contact

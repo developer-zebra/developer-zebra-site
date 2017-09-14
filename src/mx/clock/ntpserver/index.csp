@@ -5,6 +5,7 @@ type: parm
 order: 4
 mx: "4.2"
 apilevel: "19"
+device: p
 parm:
   presentif: Auto Time is "true"
   pivotal: No

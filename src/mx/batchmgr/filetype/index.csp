@@ -4,6 +4,7 @@ title: Batch File Type
 type: parm
 order: 2
 mx: "4.3"
+device: p
 parm:
   pivotal: Yes
   name: BatchFileType

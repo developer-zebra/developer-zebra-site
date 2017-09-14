@@ -4,6 +4,7 @@ title: FT Over The DS
 type: parm
 order: 65
 mx: "4.3"
+device: p
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False

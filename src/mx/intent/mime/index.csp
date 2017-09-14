@@ -5,6 +5,7 @@ type: parm
 order: 25
 mx: "4.1"
 apilevel: "1"
+device: p
 parm:
   pivotal: No
   name: Type

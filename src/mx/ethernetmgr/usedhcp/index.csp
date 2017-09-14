@@ -6,6 +6,7 @@ order: 3
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"
+device: p
 parm:
   presentif: ConfigIPAddress is "checked" 
   pivotal: No

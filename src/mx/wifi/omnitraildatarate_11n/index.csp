@@ -4,6 +4,7 @@ title: OmniTrail "11n" Data Rates
 type: parm
 order: 94
 mx: "6.3"
+device: p
 parm:
   pivotal: No
   presentif: The "Specify OmniTrail Options" checkbox is checked and "OmniTrail DataRate Options" is set to "11n"

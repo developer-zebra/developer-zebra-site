@@ -5,6 +5,7 @@ type: parm
 order: 28
 mx: "7.0"
 apilevel: "24"
+device: p
 parm: 
   pivotal: No
   name: EnableScreenshot

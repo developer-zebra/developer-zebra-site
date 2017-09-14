@@ -4,6 +4,7 @@ title: Set Primary DNS
 type: parm
 order: 45
 mx: "4.2"
+device: p
 parm:
   pivotal: No
   presentif: The Network Action is "Add a New Network" and "Use DHCP" box is unchecked 

@@ -5,6 +5,7 @@ type: parm
 order: 5
 mx: "6.1"
 osx: "6.0"
+device: p
 parm:
   pivotal: No
   name: NetworkMonitorNotification

@@ -4,6 +4,7 @@ title: FIPS
 type: parm
 order: 61
 mx: "4.2"
+device: p
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False

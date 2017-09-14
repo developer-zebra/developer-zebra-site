@@ -5,6 +5,7 @@ type: parm
 order: 8
 mx: "4.2"
 osx: "4.2"
+device: p
 parm:
   pivotal: No
   presentif: The Action is NOT "Battery Optimization" 

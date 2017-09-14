@@ -5,6 +5,7 @@ type: parm
 order: 5
 mx: "4.1"
 osx: "1.0"
+device: p
 parm:
   presentif: The Certificate Action is "Install certificate"
   pivotal: Yes

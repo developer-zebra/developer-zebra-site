@@ -5,6 +5,7 @@ type: parm
 order: 3
 mx: "4.2"
 osx: "4.2"
+device: p
 parm:
   pivotal: No
   name: ClipBoardClear

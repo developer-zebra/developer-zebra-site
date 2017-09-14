@@ -4,6 +4,7 @@ title: 802.11ac
 type: parm
 order: 7
 mx: "7.0"
+device: p
 parm:
   pivotal: No
   name: 802.11ac

@@ -2,7 +2,8 @@
 csp: uimgr
 title: Overview
 type: text
-order: 1
+device: p
+order: 0
 ---
 
 The UI Manager (UiMgr) provides control of miscellaneous UI configuration settings, such as those for language and locale, the device notification pull-down, Quick Settings controls, default input device and Clipboard behavior.

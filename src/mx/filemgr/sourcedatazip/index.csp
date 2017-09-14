@@ -4,6 +4,7 @@ title: OS Update Embedded Source
 type: parm
 order: 13
 mx: "4.3"
+device: p
 parm:
   presentif: File Action is Transfer/Copy and source type is 'File embedded in XML' and Embed type is 'Android OS Update' remote server
   pivotal: No

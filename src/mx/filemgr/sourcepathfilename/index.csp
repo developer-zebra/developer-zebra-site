@@ -4,6 +4,7 @@ title: Source Path and File
 type: parm
 order: 7
 mx: "4.3"
+device: p
 parm:
   presentif: File Action is Transfer/Copy and source is on device
   pivotal: No

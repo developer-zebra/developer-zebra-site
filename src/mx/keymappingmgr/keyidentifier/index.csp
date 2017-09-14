@@ -4,6 +4,7 @@ title: Key Identifier
 type: parm
 order: 3
 mx: "4.4"
+device: p
 parm:
   presentif: The Action value is "Remap a key"
   pivotal: Yes

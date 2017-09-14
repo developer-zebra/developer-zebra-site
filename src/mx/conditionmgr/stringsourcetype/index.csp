@@ -4,6 +4,7 @@ title: String Source Type
 type: parm
 order: 20
 mx: 6.0
+device: p
 parm:
   presentif: Data Type is "String"
   pivotal: No

@@ -4,6 +4,7 @@ title: Embedded File Type
 type: parm
 order: 8
 mx: "4.3"
+device: p
 parm:
   pivotal: No
   presentif: File Action is Transfer/Copy and source is embedded

@@ -5,6 +5,7 @@ type: parm
 order: 2
 mx: "6.1"
 apilevel: "23"
+device: p
 parm:
   pivotal: No
   name: AllowDiscoverability

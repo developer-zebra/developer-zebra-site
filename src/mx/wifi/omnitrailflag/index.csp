@@ -4,6 +4,7 @@ title: OmniTrail Flag
 type: parm
 order: 100
 mx: "6.3"
+device: p
 parm:
   pivotal: No
   presentif: The "Specify OmniTrail Options" checkbox is checked

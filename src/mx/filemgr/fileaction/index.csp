@@ -4,6 +4,7 @@ title: File Action
 type: parm
 order: 1
 mx: "4.3"
+device: p
 parm:
   pivotal: Yes
   name: FileAction

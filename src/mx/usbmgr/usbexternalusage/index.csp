@@ -5,6 +5,7 @@ type: parm
 order: 3
 mx: "4.2"
 osx: "4.1"
+device: p
 parm:
   presentif:  The "USB Module Usage" value is not "Disable" 
   pivotal: No

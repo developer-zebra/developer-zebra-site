@@ -4,6 +4,7 @@ title: Select SIM Socket
 type: parm
 order: 6
 mx: "6.2"
+device: p
 parm:
   pivotal: No
   name: SimSocketSelect

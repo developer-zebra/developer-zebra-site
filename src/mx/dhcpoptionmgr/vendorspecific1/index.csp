@@ -4,6 +4,7 @@ title: Vendor Specific 186 Enable/Disable
 type: parm
 order: 60
 mx: "5.0"
+device: p
 parm:
   pivotal: No
   name: VendorSpecific1State

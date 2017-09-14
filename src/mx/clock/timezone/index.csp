@@ -5,6 +5,7 @@ type: parm
 order: 8
 mx: "4.1"
 apilevel: "1"
+device: p
 parm:
   presentif: Auto Time Zone is "false" 
   pivotal: No

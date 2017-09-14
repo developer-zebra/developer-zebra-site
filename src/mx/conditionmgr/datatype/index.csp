@@ -4,6 +4,7 @@ title: Data Type
 type: parm
 order: 2
 mx: 4.4
+device: p
 parm:
   pivotal: Yes
   name: DataType

@@ -4,6 +4,7 @@ title: Condition Fail Message
 type: parm
 order: 34
 mx: 4.4
+device: p
 parm:
   presentif: Condition Met Action or Condition Not Met Action is not "Success"
   pivotal: No

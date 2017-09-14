@@ -4,6 +4,7 @@ title: Client Identifier Enable/Disable (61)
 type: parm
 order: 23
 mx: "6.3"
+device: p
 parm:
   pivotal: Yes
   name: ClientIdentifier

@@ -5,6 +5,7 @@ type: parm
 order: 43
 mx: "6.3"
 apilevel: "23"
+device: p
 parm:
   presentif: DialogAction parameter is set to "True"
   pivotal: No

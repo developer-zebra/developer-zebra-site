@@ -4,6 +4,7 @@ title: Set a Custom Locale
 type: parm
 order: 8
 mx: "5.1"
+device: p
 parm:
   presentif: Current Locale value is "Custom" (99)
   pivotal: No

@@ -5,6 +5,7 @@ type: parm
 order: 2
 mx: "4.3"
 osx: "4.3"
+device: p
 parm:
   pivotal: No
   name: SdCardUsage

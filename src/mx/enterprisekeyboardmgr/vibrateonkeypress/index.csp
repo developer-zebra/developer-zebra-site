@@ -4,6 +4,7 @@ title: Vibrate On Keypress Enable/Disable
 type: parm
 order: 22
 mx: "6.0"
+device: p
 parm:
   presentif: Vibrate on Keypress is set to "Enable"
   pivotal: No

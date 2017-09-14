@@ -4,6 +4,7 @@ title: Advanced Options
 type: text
 order: 49
 mx: "4.2"
+device: p
 parm:
   type: string
 ---

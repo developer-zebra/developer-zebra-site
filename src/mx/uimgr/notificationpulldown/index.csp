@@ -5,6 +5,7 @@ type: parm
 order: 15
 mx: "5.1"
 apilevel: "16"
+device: p
 parm:
   pivotal: Yes
   name: NotificationPullDown

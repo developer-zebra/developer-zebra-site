@@ -4,6 +4,7 @@ title: Remap Symbol Key P1
 type: parm
 order: 40
 mx: "6.2"
+device: p
 parm:
   pivotal: No
   name: RemapSymbolP1

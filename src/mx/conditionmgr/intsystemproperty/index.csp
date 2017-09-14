@@ -4,6 +4,7 @@ title: Integer System Property
 type: parm
 order: 11
 mx: 4.4
+device: p
 parm:
   presentif: Data Type is "Integer"
   pivotal: No

@@ -4,6 +4,7 @@ title: Key Code
 type: parm
 order: 7
 mx: "4.4"
+device: p
 parm:
   presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send key-code" 
   pivotal: No

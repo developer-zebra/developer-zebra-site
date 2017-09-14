@@ -4,6 +4,7 @@ title: Condition Met Action
 type: parm
 order: 30
 mx: 4.4
+device: p,v
 parm:
   pivotal: No
   name: ConditionMetAction

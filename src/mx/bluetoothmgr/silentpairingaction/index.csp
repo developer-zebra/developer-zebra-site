@@ -5,6 +5,7 @@ type: parm
 order: 10
 mx: "7.0"
 apilevel: "24"
+device: p
 parm:
   presentif: Allow Pairing and Allow Silent Pairing are BOTH set to "Enable"
   pivotal: No

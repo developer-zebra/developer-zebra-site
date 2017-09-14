@@ -5,6 +5,7 @@ type: parm
 order: 51
 mx: "4.4"
 osx: "4.4"
+device: p
 parm:
   presentif: The Audio UI Profile Action is "Add an Audio UI Profile"
   pivotal: No

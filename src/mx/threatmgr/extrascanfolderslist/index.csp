@@ -5,6 +5,7 @@ type: parm
 order: 51
 mx: "6.1"
 osx: "3.5"
+device: p
 parm:
   pivotal: No
   name: ExtraScanFoldersList

@@ -2,7 +2,8 @@
 csp: licensemgr
 title: Overview
 type: text
-order: 1
+device: p
+order: 0
 ---
 
 The LicenseMgr administers the set of Software Licenses present on a device, thereby allowing an app to control the usability of Software Components that require licensing.

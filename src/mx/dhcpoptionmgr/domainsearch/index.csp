@@ -4,6 +4,7 @@ title: Domain Search Enable/Disable (119)
 type: parm
 order: 45
 mx: "4.4"
+device: p
 parm:
   pivotal: No
   name: DomainSearchState

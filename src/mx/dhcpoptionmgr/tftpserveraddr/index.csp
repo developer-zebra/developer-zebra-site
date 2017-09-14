@@ -4,6 +4,7 @@ title: TFTP Server Address Enable/Disable (150)
 type: parm
 order: 50
 mx: "4.4"
+device: p
 parm:
   pivotal: No
   name: TFTPServerAddrState

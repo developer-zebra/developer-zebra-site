@@ -2,6 +2,7 @@
 csp: gprsmgr
 title: Overview
 type: text
+device: p,v
 order: 0
 ---
 

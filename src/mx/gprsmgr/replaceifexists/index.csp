@@ -5,6 +5,7 @@ type: parm
 order: 5
 mx: "4.1.1"
 apilevel: "16"
+device: p,v
 parm:
   presentif: The APN Action is "Add/replace named APN"
   pivotal: No

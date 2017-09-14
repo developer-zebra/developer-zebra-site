@@ -4,6 +4,7 @@ title:  Send Intent
 type: parm
 order: 13
 mx: "4.4"
+device: p
 parm:
   presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
   pivotal: No
@@ -54,7 +55,7 @@ Used to specify how the Intent should be sent as the Key Behavior for the specif
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
-Pivotal parm: Yes
+Pivotal parm? Yes
 
 <div class="parm-table">
  <table>
@@ -81,7 +82,7 @@ Used to specify the Action Name attribute for the Intent that will be sent as th
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
-Pivotal parm: No
+Pivotal parm? No
 
 **Parm names**:
 
@@ -101,7 +102,7 @@ Used to specify the Category attribute for the Intent that will be sent as the K
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
-Pivotal parm: No
+Pivotal parm? No
 
 **Parm names**:
 
@@ -121,7 +122,7 @@ Used to specify the Package Name attribute for the Intent that will be sent as t
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent" and the Intent Type is "Start activity"
 
-Pivotal parm: No
+Pivotal parm? No
 
 **Parm names**:
 
@@ -141,7 +142,7 @@ Used to specify the Class Name attribute for the Intent that will be sent as the
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent" and the Intent Type is "Start activity"
 
-Pivotal parm: No
+Pivotal parm? No
 
 **Parm names**:
 
@@ -161,7 +162,7 @@ Used to specify the Data URI attribute for the Intent that will be sent as the K
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
-Pivotal parm: No
+Pivotal parm? No
 
 **Parm names**:
 
@@ -181,7 +182,7 @@ Used to specify the MIME Type attribute for the Intent that will be sent as the 
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
-Pivotal parm: No
+Pivotal parm? No
 
 **Parm names**:
 
@@ -201,7 +202,7 @@ Used to specify the Name of an Extra Data attribute for the Intent that will be 
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
-Pivotal parm: No
+Pivotal parm? No
 
 **Parm names**:
 
@@ -221,7 +222,7 @@ Used to specify the Value of an Extra Data attribute for the Intent that will be
 
 >Settable if: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
 
-Pivotal parm: No
+Pivotal parm? No
 
 **Parm names**:
 

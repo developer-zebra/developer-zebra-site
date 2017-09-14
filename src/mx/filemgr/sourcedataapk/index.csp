@@ -4,6 +4,7 @@ title: APK Embedded Source
 type: parm
 order: 11
 mx: "4.3"
+device: p,v
 parm:
   presentif: File Action is Transfer/Copy and source type is 'File embedded in XML' and Embed type is 'Android Application' remote server
   pivotal: No

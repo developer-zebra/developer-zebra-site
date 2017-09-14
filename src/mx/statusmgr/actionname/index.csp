@@ -4,6 +4,7 @@ title: Android Action Name
 type: parm
 order: 4
 mx: "5.0"
+device: p,v
 parm:
   pivotal: No 
   presentif: The Status Request Action is "Add/Replace Status Request"

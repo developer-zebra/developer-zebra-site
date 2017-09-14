@@ -4,6 +4,7 @@ title: Numeric Layout Mode
 type: parm
 order: 12
 mx: "6.1"
+device: p
 parm:
   pivotal: No
   name: NumericLayoutMode

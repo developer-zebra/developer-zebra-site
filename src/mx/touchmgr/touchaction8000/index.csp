@@ -4,6 +4,7 @@ title: Touch Actions for TC8000
 type: parm
 order: 8
 mx: "6.2"
+device: p
 parm:
   presentif: Device Type is set to "TC8000"
   pivotal: No

@@ -5,6 +5,7 @@ type: parm
 order: 9
 mx: "4.3"
 apilevel: "16"
+device: p,v
 parm:
   presentif: Current Locale value is "Extended" (98)
   pivotal: Yes

@@ -4,6 +4,7 @@ title: Use Hotspot Options (checkbox)
 type: parm
 order: 70
 mx: "6.3"
+device: p,v
 parm:
   pivotal: No
   name: UseHotspotOptions

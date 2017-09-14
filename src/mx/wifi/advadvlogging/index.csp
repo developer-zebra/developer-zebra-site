@@ -4,6 +4,7 @@ title: Advanced Logging
 type: parm
 order: 59
 mx: "4.2"
+device: p,v
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False

@@ -2,7 +2,8 @@
 csp: appmgr
 title: Overview
 type: text
-order: 1
+device: p,v
+order: 0
 ---
 
 Application Manager (AppMgr) administers the user applications on the device. It can be used to programmatically install, uninstall, upgrade and turn on (or off) the ability to launch an application, all with no need for user interaction. AppMgr also can designate an application as the Default Launcher (invoked when pressing the HOME Key), and can perform other tasks related to the management of applications.

@@ -2,6 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Overview
 type: text
+device: p
 order: 0
 ---
 Enterprise Keyboard Manager controls the settings of Enterprise Keyboard, Zebra's soft input device that provides an efficient means of hand-inputting data into Zebra devices running Android. Building on the stock Android keyboard, Enterprise Keyboard adds programmable keys, switches quickly between languages and key layouts, and can scan data directly into an application. 

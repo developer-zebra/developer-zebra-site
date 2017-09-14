@@ -5,6 +5,7 @@ type: parm
 order: 2
 mx: "4.2"
 osx: "4.2"
+device: p,v
 parm:
   pivotal: No
   name: ClipBoardUsage

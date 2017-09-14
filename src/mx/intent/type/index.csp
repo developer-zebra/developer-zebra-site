@@ -5,6 +5,7 @@ type: parm
 mx: "4.1"
 apilevel: "1"
 order: 10
+device: p,v
 parm:
   presentif: The Action is NOT "Enroll Device Owner"
   pivotal: No

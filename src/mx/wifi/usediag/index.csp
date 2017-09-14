@@ -4,6 +4,7 @@ title: Use Diagnostic Options (checkbox)
 type: parm
 order: 10
 mx: "4.4"
+device: p,v
 parm:
   pivotal: No
   name: UseDiagnosticOptions

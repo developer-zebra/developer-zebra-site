@@ -5,6 +5,7 @@ type: parm
 order: 10
 mx: "4.3"
 apilevel: "16"
+device: p,v
 parm:
   pivotal: Yes
   name: InputMethodAction

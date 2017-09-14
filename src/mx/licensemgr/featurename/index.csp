@@ -4,6 +4,7 @@ title: Standard Feature Name
 type: parm
 order: 4
 mx: "4.3"
+device: p
 parm:
   pivotal: No
   presentif: The "Specify license action to perform" is "Apply" *AND* "Specify verification method to use" is "Verify against a standard feature name"

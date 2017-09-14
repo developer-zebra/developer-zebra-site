@@ -4,6 +4,7 @@ title: Protect Password
 type: parm
 order: 28
 mx: "4.2"
+device: p,v
 parm:
   pivotal: No
   presentif: The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and the Authentication is NOT "EAP-TLS"

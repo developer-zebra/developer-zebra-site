@@ -4,6 +4,7 @@ title: Condition Not Met Action
 type: parm
 order: 31
 mx: 4.4
+device: p,v
 parm:
   pivotal: No
   name: ConditionNotMetAction

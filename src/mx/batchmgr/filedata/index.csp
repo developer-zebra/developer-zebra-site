@@ -4,6 +4,7 @@ title: File Data
 type: parm
 order: 5
 mx: "4.3"
+device: p,v
 parm:
   pivotal: No
   presentif: File Access method is embedded in XML

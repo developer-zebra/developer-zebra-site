@@ -4,6 +4,7 @@ title: TFTP Server Name Enable/Disable (66)
 type: parm
 order: 25
 mx: "4.4"
+device: p
 parm:
   pivotal: No
   name: TFTPServerNameState

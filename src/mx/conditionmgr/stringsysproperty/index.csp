@@ -4,6 +4,7 @@ title: String System Property
 type: parm
 order: 21
 mx: 6.0
+device: p,v
 parm:
   presentif: Data Type is "String" and String Source Type is "String System Property"
   pivotal: No

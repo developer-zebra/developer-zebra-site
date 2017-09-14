@@ -4,6 +4,7 @@ title: Target OS
 type: parm
 order: 1
 mx: "4.2"
+device: p,v
 parm:
   pivotal: Yes
   name: TargetOS

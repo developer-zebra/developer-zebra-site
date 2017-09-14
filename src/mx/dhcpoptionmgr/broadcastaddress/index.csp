@@ -4,6 +4,7 @@ title: Broadcast Address (28)
 type: parm
 order: 5
 mx: "4.4"
+device: p
 parm:
   pivotal: No
   name: BroadcastAddrState

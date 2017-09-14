@@ -4,6 +4,7 @@ title: Use Advanced Options (checkbox)
 type: parm
 order: 50
 mx: "4.2"
+device: p,v
 parm:
   pivotal: True
   name: UseAdvancedOptions

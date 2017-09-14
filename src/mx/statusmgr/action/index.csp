@@ -4,6 +4,7 @@ title: Status Request Action
 type: parm
 order: 2
 mx: "5.0"
+device: p,v
 parm:
   pivotal: Yes
   name: RequestAction

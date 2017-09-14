@@ -2,6 +2,7 @@
 csp: wifi
 title: Overview
 type: text
+device: p,v
 order: 0
 ---
 

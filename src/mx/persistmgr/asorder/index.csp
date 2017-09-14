@@ -4,6 +4,7 @@ title: Persist As Order
 type: parm
 order: 5
 mx: "4.2"
+device: p,v
 parm:
   pivotal: No
   name: PersistAsOrder

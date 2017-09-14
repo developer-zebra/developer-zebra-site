@@ -4,6 +4,7 @@ title: Show Scan Tab Enable/Disable
 type: parm
 order: 16
 mx: "6.0"
+device: p
 parm:
   pivotal: No
   name: ShowScanTab

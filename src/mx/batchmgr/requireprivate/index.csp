@@ -4,6 +4,7 @@ title: Require Private
 type: parm
 order: 10
 mx: "4.3"
+device: p,v
 parm:
   pivotal: No
   presentif:  Determines whether private encryption is required.

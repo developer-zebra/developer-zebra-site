@@ -4,6 +4,7 @@ title: Delete Word
 type: parm
 order: 6
 mx: "6.0"
+device: p
 parm:
   presentif: Action is "Delete word"
   pivotal: No

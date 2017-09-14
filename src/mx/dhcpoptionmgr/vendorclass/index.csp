@@ -4,6 +4,7 @@ title: Vendor Class Identifier (60)
 type: parm
 order: 20
 mx: "5.0"
+device: p
 parm:
   pivotal: No
   name: VendorClassIdState

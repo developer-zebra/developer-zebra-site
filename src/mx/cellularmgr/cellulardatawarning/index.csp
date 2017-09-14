@@ -4,6 +4,7 @@ title: Cellular Data Warning
 type: parm
 order: 28
 mx: "6.3"
+device: p,v
 parm:
   presentif: Cellular Data State is set to "Turn On"
   pivotal: No

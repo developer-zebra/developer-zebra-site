@@ -4,6 +4,7 @@ title: Client Identifier Value
 type: parm
 order: 24
 mx: "6.3"
+device: p
 parm:
   presentif: Client Identifier is set to "Enable"
   pivotal: Yes

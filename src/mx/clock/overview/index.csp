@@ -2,6 +2,7 @@
 csp: clock
 title: Overview
 type: text
+device: p,v
 order: 0
 ---
 

@@ -4,6 +4,7 @@ title: RF Band Selection
 type: parm
 order: 7
 mx: "4.2"
+device: p,v
 parm:
   pivotal: Yes
   name: BandSelection

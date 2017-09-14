@@ -5,6 +5,7 @@ type: parm
 order: 5
 mx: "5.1"
 apilevel: "22"
+device: p
 parm:
   pivotal: No
   name: AllowPairing

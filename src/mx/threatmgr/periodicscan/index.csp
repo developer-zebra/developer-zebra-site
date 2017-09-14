@@ -5,6 +5,7 @@ type: parm
 order: 45
 mx: "6.1"
 osx: "3.5"
+device: p
 parm:
   presentif: Shown if Threat Action is "Turn On"
   pivotal: Yes

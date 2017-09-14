@@ -4,6 +4,7 @@ title: Custom Feature Name
 type: parm
 order: 5
 mx: "4.3"
+device: p
 parm:
   pivotal: No
   presentif: The Verify Method is "Verify against a custom feature name" AND License Choice is "Perform legacy Symbol license action"

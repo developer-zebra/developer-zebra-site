@@ -4,6 +4,7 @@ title: Captive Portal Detection
 type: parm
 order: 101
 mx: "6.3"
+device: p,v
 parm:
   pivotal: No
   name: CaptivePortalDetection

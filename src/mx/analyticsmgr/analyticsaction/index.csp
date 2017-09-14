@@ -5,6 +5,7 @@ type: parm
 order: 1
 mx: "4.3"
 apilevel: "19"
+device: p,v
 parm:
   pivotal: No
   name: AnalyticsAction

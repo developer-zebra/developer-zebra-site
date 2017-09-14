@@ -4,6 +4,7 @@ title: Organization Key
 type: parm
 order: 18
 mx: "6.0"
+device: p
 parm:
   presentif: Set Credentials is set to "Enable" and Use Default Credentials is set to "Disable"
   pivotal: No

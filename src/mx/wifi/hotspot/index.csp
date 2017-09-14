@@ -4,6 +4,7 @@ title: Hotspot Enable/Disable
 type: parm
 order: 71
 mx: "6.3"
+device: p,v
 parm:
   pivotal: No
   presentif: The "Use Hotspot Options" checkbox is checked

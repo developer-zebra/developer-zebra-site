@@ -4,6 +4,7 @@ title: Persist Action
 type: parm
 order: 2
 mx: "4.2"
+device: p,v
 parm:
   pivotal: Yes
   name: PersistAction

@@ -4,6 +4,7 @@ title: License File
 type: parm
 order: 7
 mx: "4.3"
+device: p
 parm:
   pivotal: No
   presentif: The "Specify license action to perform" is "Apply" AND "Specify licensing method" is "Embed the license blob from the license file into the XML" AND

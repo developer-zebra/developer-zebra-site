@@ -4,6 +4,7 @@ title: User Class Value
 type: parm
 order: 36
 mx: "4.4"
+device: p
 parm:
   presentif: User Class is "Enable"
   pivotal: Yes

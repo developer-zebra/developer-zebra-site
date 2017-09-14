@@ -4,6 +4,7 @@ title: Batch File Access
 type: parm
 order: 3
 mx: "4.3"
+device: p,v
 parm:
   pivotal: Yes
   name: BatchFileAccessMethod

@@ -4,6 +4,7 @@ title: Set Hotspot 5GHz Channel
 type: parm
 order: 77
 mx: "6.3"
+device: p,v
 parm:
   presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot Band" is "5GHz" 
   pivotal: No

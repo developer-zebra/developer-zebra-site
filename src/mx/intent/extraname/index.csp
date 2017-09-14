@@ -5,6 +5,7 @@ type: parm
 order: 45
 mx: "4.1"
 apilevel: "1"
+device: p,v
 parm:
   presentif: The Extra Type is not "none"
   pivotal: No

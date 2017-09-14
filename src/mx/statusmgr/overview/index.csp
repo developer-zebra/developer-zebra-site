@@ -2,7 +2,8 @@
 csp: statusmgr
 title: Overview
 type: text
-order: 1
+device: p,v
+order: 0
 ---
 
 The Status Manager allows you to set notification options while MX is processing the XML stream.

@@ -4,6 +4,7 @@ title: Source Access
 type: parm
 order: 5
 mx: "4.3"
+device: p,v
 parm:
   pivotal: Yes
   name: SourceAccessMethod

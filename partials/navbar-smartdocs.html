@@ -72,11 +72,11 @@
           </ul>
         </li>
       <li class="dropdown">
-          <a href="#" class="dropdown-toggle" id="smartdocs-device-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Device class: All <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" id="smartdocs-device-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Device: All <span class="caret"></span></a>
           <ul class="dropdown-menu">
         <li class="smartdocs-device" data-value="" ><a>All</a></li>
-        <li class="smartdocs-device" data-value="24"><a>Premium</a></li>
-        <li class="smartdocs-device" data-value="23"><a>Value</a></li>
+        <li class="smartdocs-device" data-value="p"><a>Premium</a></li>
+        <li class="smartdocs-device" data-value="v"><a>Value</a></li>
           </ul>
         </li>
       </ul>
@@ -118,6 +118,7 @@
 		mx: "",
 		osx: "",
 		api: "",
+    device: "",    
 		index: -1
 	}
 
@@ -137,7 +138,7 @@
     var showelement = function(el,filter){
     	// console.log("Showing");
     	// console.log(el);
-    	var filters=["mx","osx","api"];
+    	var filters=["mx","osx","api","device"];
     	var otherhidden = false;
     	//check if something else is hiden element
     	for (var i = 0; i < filters.length; i++) {
@@ -177,6 +178,11 @@
 	            showelement($(this),'api');
 	        });
     	}
+      if(selection =='device' || selection =='all'){
+          $('[data-device]').each(function() {
+              showelement($(this),'device');
+          });
+      }
     }
     var smartdocsStatus = function(enabled){
     	var filtered = $('[data-smartdoc]').not('[data-filter]');
@@ -224,6 +230,22 @@
 
             if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
                 hideelement($(this),'api');
+            }
+            else{
+                // showelement($(this));
+            }
+            
+        });
+        smartdocsStatus(true);
+    }
+    var showdevice = function(haveVersion){
+        clear('device');
+      smartdocOptions.device = haveVersion;
+        $('[data-device]').each(function() {
+            var needVersion = $(this).attr("data-device");
+
+            if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
+                hideelement($(this),'devicetype');
             }
             else{
                 // showelement($(this));
@@ -360,12 +382,13 @@
 					enabled: false,
 					mx: "",
 					osx: "",
-					api: ""
+					api: "",
+          device: ""
 				};
 				$("#smartdocs-mx-selected").html("MX: All" + '<span class="caret"></span>');
   				$("#smartdocs-osx-selected").html("OSX: All" + '<span class="caret"></span>');
   				$("#smartdocs-api-selected").html("Android: All" + '<span class="caret"></span>')
-          $("#smartdocs-device-selected").html("Device class: All" + '<span class="caret"></span>')
+          $("#smartdocs-device-selected").html("Device: All" + '<span class="caret"></span>')
           ;
   				clear('all');    		
   				
@@ -414,7 +437,7 @@
 
     $( ".smartdocs-device" ).click(function() {
       var device=$(this).attr("data-value");
-        $("#smartdocs-device-selected").html("Device class: " + $(this).text() + '<span class="caret"></span>');
+        $("#smartdocs-device-selected").html("Device: " + $(this).text() + '<span class="caret"></span>');
         console.log('Setting device');
         if(device ==""){
           clear('device')

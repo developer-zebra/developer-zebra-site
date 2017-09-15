@@ -51,14 +51,15 @@
                                         <table class="table">
                                             <tr>
                                                 <th></th>
-                                                <th> OSX</th>
+                                                <th> OSX </th>
                                                 <th> MX </th>
                                                 <th> Android API Level </th>
+                                                <th> Device type </th>
                                             </tr>
                                             {{#each ../collections.csp}}
                                             {{#is ../csp this.csp}}
                                                  {{#isnt this.type "text"}}
-                                                    <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
+                                                    <tr data-devicetype="{{this.devicetype}}" data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
                                                         <td><span ><i>{{this.title}}</i></td>
                                                         <td class="col-md-2">
 
@@ -95,11 +96,18 @@
                                                                 All
                                                             {{/if}}
                                                         </td>
+                                                      <td class="col-md-2">
+                                                            {{#if this.devicetype}}
+                                                                {{this.devicetype}}
+                                                            {{else}}
+                                                                All
+                                                            {{/if}}
+                                                        </td>
                                                     </tr>                                                          
 
                                                 {{#is this.parm.type "list"}}
                                                     {{#each this.parm.list}}
-                                                    <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
+                                                    <tr data-devicetype="{{this.devicetype}}" data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
                                                         <td class="col-md-4"><span style="padding-left:15px"><i>{{this.name}}</i></td>
                                                         <td class="col-md-2">
                                                             {{#if this.osx}}
@@ -131,6 +139,13 @@
                                                         <td class="col-md-2">
                                                             {{#if this.apilevel}}
                                                                 {{this.apilevel}}+
+                                                            {{else}}
+                                                                All
+                                                            {{/if}}
+                                                        </td>
+                                                        <td class="col-md-2">
+                                                            {{#if this.devicetype}}
+                                                                {{this.devicetype}}
                                                             {{else}}
                                                                 All
                                                             {{/if}}

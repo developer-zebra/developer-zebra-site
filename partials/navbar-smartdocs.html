@@ -72,7 +72,7 @@
           </ul>
         </li>
       <li class="dropdown">
-          <a href="#" class="dropdown-toggle" id="smartdocs-devicetype-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Device type: All <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" id="smartdocs-devicetype-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Type: All <span class="caret"></span></a>
           <ul class="dropdown-menu">
         <li class="smartdocs-devicetype" data-value="" ><a>All</a></li>
         <li class="smartdocs-devicetype" data-value="p"><a>Premium</a></li>
@@ -238,14 +238,19 @@
         });
         smartdocsStatus(true);
     }
-    var showdevicetype = function(haveVersion){
+    var showdevicetype = function(haveType){
         clear('devicetype');
-      smartdocOptions.devicetype = haveVersion;
+      smartdocOptions.devicetype = haveType;
         $('[data-devicetype]').each(function() {
             var needVersion = $(this).attr("data-devicetype");
 
-            if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
-                hideelement($(this),'devicetype');
+            // .include(haveType) = "" | "p" | "v" | "p,v"
+            // if str.includes
+            // if (str.includes(haveType))= "" | "p" | "v" | "p,v" 
+            if (needVersion.includes(haveType)== false); 
+            {
+             //   hideelement($(this),!= 'v'); 
+                  hideelement($(this),'devicetype');
             }
             else{
                 // showelement($(this));

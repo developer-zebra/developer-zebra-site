@@ -240,23 +240,57 @@
         smartdocsStatus(true);
     }
 
-    var showdevicetype = function(haveVersion){
-        clear('devicetype');
-      smartdocOptions.devicetype = haveVersion;
-        $('[data-devicetype]').each(function() {
-            var needVersion = $(this).attr("data-devicetype");
+// SHOW THE SELECTED VERSION
 
-            if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
-                hideelement($(this),'devicetype');
-            }
-            else{
-                // showelement($(this));
-            }
+    var showdevicetype = function(haveType){
+        clear('devicetype');
+      smartdocOptions.devicetype = haveType;
+        $('[data-devicetype]').each(function() {
+            var needType = $(this).attr("data-devicetype");
+
+// HIDE EVERYTHING ELSE
+
+            // ORIGINAL LOGIC (for numeric characters)
+            //   if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
             
+            //  hideelement($(this),'devicetype');
+            //  }
+
+            if (haveType.includes("v")) {
+            
+            hideelement($(this),'devicetype');
+            }
+
+
+            // MODIFIED LOGIC (for alpha characters)
+            // THIS CODE BREAKS ALL THE SELECTORS
+
+          // if (needType.includes(haveType) == false);{
+
+            //  hideelement($(this),!= 'v'); 
+          // hideelement($(this),'devicetype');
+          // }
+
+          //TRYING TO GET THERE USING STRING LENGTH
+          // DIDN'T WORK (and wrecked the selectors) 
+          // if (haveVersion != null && haveVersion != "" && haveVersion.length == 1{
+
+          //    hideelement($(this),'devicetype');
+            
+          //    }
+
+
+
+          //   if (str.includes('v'));{
+          //    hideelement($(this),'devicetype');
+          //  }
+
+              else {
+          //  showelement($(this));
+              }            
         });
         smartdocsStatus(true);
     }
-
 
     var showosx = function(haveVersion){
         clear('osx');
@@ -351,6 +385,9 @@
       }
     }
     
+
+// AFTER THE DOCUMENT HAS BEEN LOADED
+// AND IS READY FOR USER INTERACTION
 
     $(document).ready(function() {
 

@@ -161,7 +161,7 @@
         el.attr('data-filter-'+filter,"");
         el.attr('data-filter',"");
     } 
-    // SMARTDOCS VERSION SELECTOR FUNCTION
+    // SMARTDOCS VERSION SELECTOR FUNCTIONS
     var clear = function(selection){
       if(selection =='mx' || selection =='all'){
           $('[data-mx]').each(function() {
@@ -223,19 +223,24 @@
         });
         smartdocsStatus(true);
     }
+
+// SHOW THE SELECTED VERSION
     var showapi = function(haveVersion){
         clear('api');
       smartdocOptions.api = haveVersion;
+
+// CALL FOR ALL HTML [SQUARE BRACKETS] ROWS WITH 'data-<something>' ATTRIBUTE
         $('[data-api]').each(function() {
             var needVersion = $(this).attr("data-api");
 
+// CONVERT THE STRING TO A FLOAT, LOOP TO COMPARE/FORMAT EACH ROW 
             if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
                 hideelement($(this),'api');
             }
             else{
                 // showelement($(this));
             }
-            
+
         });
         smartdocsStatus(true);
     }
@@ -245,49 +250,23 @@
     var showdevicetype = function(haveType){
         clear('devicetype');
       smartdocOptions.devicetype = haveType;
+
+// [SQUARE BRACKETS] CALL FOR ALL HTML WITH 'data-devicetype' ATTRIBUTE
         $('[data-devicetype]').each(function() {
             var needType = $(this).attr("data-devicetype");
 
 // HIDE EVERYTHING ELSE
-
-            // ORIGINAL LOGIC (for numeric characters)
-            //   if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
             
-            //  hideelement($(this),'devicetype');
-            //  }
-
-            if (haveType.includes("v")) {
+            // IF IT MATCHES OR IS BLANK, DON'T DO ANYTHING
+            if (needType.includes(haveType) || needType == "") {
+            }
+            // OTHERWISE HIDE OTHERS
+            
+            else {
             
             hideelement($(this),'devicetype');
             }
 
-
-            // MODIFIED LOGIC (for alpha characters)
-            // THIS CODE BREAKS ALL THE SELECTORS
-
-          // if (needType.includes(haveType) == false);{
-
-            //  hideelement($(this),!= 'v'); 
-          // hideelement($(this),'devicetype');
-          // }
-
-          //TRYING TO GET THERE USING STRING LENGTH
-          // DIDN'T WORK (and wrecked the selectors) 
-          // if (haveVersion != null && haveVersion != "" && haveVersion.length == 1{
-
-          //    hideelement($(this),'devicetype');
-            
-          //    }
-
-
-
-          //   if (str.includes('v'));{
-          //    hideelement($(this),'devicetype');
-          //  }
-
-              else {
-          //  showelement($(this));
-              }            
         });
         smartdocsStatus(true);
     }
@@ -391,6 +370,7 @@
 
     $(document).ready(function() {
 
+    //
     $( "#smartdocs-help" ).click(function() {
         console.log('Show SmartDocs help');
         $("#modal-smartdocs-info").modal({show: true});
@@ -451,10 +431,16 @@
           showmx(mx);
         }
     });
+
+// GET THE VERSION (data-value) FOR THE CLICKED SELECTION (var = osx, etc.)
     $( ".smartdocs-osx" ).click(function() {
       var osx=$(this).attr("data-value");
         $("#smartdocs-osx-selected").html("OSX: " + $(this).text() + '<span class="caret"></span>');
-        console.log('Setting osx');
+
+//REPORT ACTIVITY IN THE JAVASCRIPT CONSOLE 
+         console.log('Setting osx');
+
+//DISPLAY SELECTED VERSION IN THE SMARTDOCS NAVBAR 
         if(osx ==""){
           clear('osx')
         }
@@ -475,7 +461,7 @@
     });
 
     $( ".smartdocs-devicetype" ).click(function() {
-      var api=$(this).attr("data-value");
+      var devicetype=$(this).attr("data-value");
         $("#smartdocs-devicetype-selected").html("Type: " + $(this).text() + '<span class="caret"></span>');
         console.log('Setting device type');
         if(devicetype ==""){

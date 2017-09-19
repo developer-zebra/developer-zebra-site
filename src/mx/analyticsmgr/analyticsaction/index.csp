@@ -12,6 +12,7 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p,v
       mx: "4.3"
       apilevel: "19"
       name: Do not change

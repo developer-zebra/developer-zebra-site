@@ -98,7 +98,11 @@
                                                         </td>
                                                       <td class="col-md-2">
                                                             {{#if this.devicetype}}
-                                                                {{this.devicetype}}
+                                                                {{#is this.devicetype "p,v" }}
+                                                                    All
+                                                                {{else}}
+                                                                    {{this.devicetype}}
+                                                                {{/is}}
                                                             {{else}}
                                                                 All
                                                             {{/if}}
@@ -145,7 +149,11 @@
                                                         </td>
                                                         <td class="col-md-2">
                                                             {{#if this.devicetype}}
-                                                                {{this.devicetype}}
+                                                                {{#is this.devicetype "p,v" }}
+                                                                    All
+                                                                {{else}}
+                                                                    {{this.devicetype}}
+                                                                {{/is}}
                                                             {{else}}
                                                                 All
                                                             {{/if}}

@@ -13,32 +13,32 @@ parm:
   list:
     - code: 1
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: Equal-to a Constant Integer
       description: Tested value is the same as the specified value. 
     - code: 2
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: Not-Equal-to a Constant Integer
       description: Tested value is not the same as the specified value. 
     - code: 3
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: Greater-than a Constant Integer
       description: Tested value is higher than the specified value. 
     - code: 4
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: Less-than a Constant Integer
       description: Tested value is lower than the specified value. 
     - code: 5
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: Greater-than-or-equal-to a Constant Integer
       description: Tested value is the same as or higher than the specified value. 
     - code: 6
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: Less-than-or-equal-to a Constant Integer
       description: Tested value is the same as or lower than the specified value. 
 ---

@@ -13,60 +13,60 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p
+      devicetype: p,v
       name: Do nothing
       description: This value (or the absence of this parm from the XML) will cause no changes to the applications on the device.
       mx: "4.1"
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: Install
       description: Causes a User application contained within an .apk file in the specified path on the device to be Installed on the device. If for any reason the requested application cannot be installed, an error will be returned in the Result XML document. Note- If an attempt is made to install an application with the same Package Name as an application that is already installed on the device, an error will be returned in the Result XML document. To replace an application that is already installed on the device with a different version with the same Package Name, use the value Upgrade instead.
       mx: "4.2"
       osx: "1.0"
     - code: 2
-      devicetype: p
+      devicetype: p,v
       name: Uninstall
       description: Causes a User application with the specified Package Name to be Uninstalled from the device. If for any reason the requested application cannot be uninstalled, an error will be returned in the Result XML document. Note- If no User application with the specified Package Name is installed on the device, an error will be returned in the Result XML document. Note- When an application is Uninstalled, data that is stored in sandbox areas owned by that application also will be removed. If the application requiring such data is later Installed again, the data will must be recreated.
       mx: "4.1"
       osx: "1.0"
     - code: 3
-      devicetype: p
+      devicetype: p,v
       name: Upgrade
       description: Causes a User application contained within an .apk file in the specified path on the device to Upgrade the application with the same Package Name that is already on the device. If for any reason the requested application cannot be upgraded, an error will be returned in the Result XML document. Note- If an attempt is made to upgrade an application with a Package Name that does not match any Package Names present on the device, an error will be returned in the Result XML document. To install an application that is not already installed on the device, use the value "Install" instead. Note- When an application is upgraded, the data for that application is maintained. This allows the new version of the application to access (and possibly convert) data created by the old version. Note- In devices running the Jelly Bean version of Android, an Upgrade can replace any version of an application with any other version of the same application. However, in devices running the KitKat or higher version of Android, an Upgrade can only replace an application with a higher (numerically greater) version of the same application. This change was made to reduce issues involving older versions of an application that were unable to understand data produced by a newer version.
       mx: "4.1"
       osx: "1.0"
     - code: 4
-      devicetype: p
+      devicetype: p,v
       name: SetDefaultLauncher
       description: Sets a System or User app with the specified Package Name as the new Default Launcher. The specified app must already be installed on the device and generally should be designed to be a Launcher according to the relevant Android specifications. If no application with the specified Package Name is installed on the device, an error will be returned in the Result XML document.
       mx: "4.1"
       osx: "1.3"
     - code: 5
-      devicetype: p
+      devicetype: p,v
       name: EnableApplication
       description: Enables the System app with the specified Package Name to be launched. If the Package Name does not exist on the device, an error will be returned in the Result XML document.
       mx: "4.2"
       apilevel: "1"
     - code: 6
-      devicetype: p
+      devicetype: p,v
       name: DisableApplication
       description: Prevents the System app with the specified Package Name from being launched. If Package Name does not exist on the device, an error will be returned in the Result XML document.
       mx: "4.2"
       apilevel: "1"
     - code: 7
-      devicetype: p
+      devicetype: p,v
       name: ClearRecentApps
       description: Clears the Android Recent Applications List, which otherwise would allow a user to see and launch recently used apps.
       mx: "4.2"
       apilevel: "16"
     - code: 8
-      devicetype: p
+      devicetype: p,v
       name: LaunchApplication
       description: Allows a System or User app to be launched by its visible Name rather than by its package name. This refers to the app name as it appears in Launcher, App Drawer, Application Manager or app_name field of the strings.xml file (i.e. "Calculator"). To use this value, the app and its icon or widget must be visible in the Launcher screen and launchable with its main activity using that icon or widget. If the app is not present, does not have an icon or widget, cannot be launched using its main activity or contains only services and receivers, an error will be returned in the Result XML document. Not case sensitive.
       mx: "5.1"
       apilevel: "1"
     - code: 9
-      devicetype: p
+      devicetype: p,v
       name: BatteryOptimization
       description: Allows one or more apps to be designated for Battery Optimization. 
       mx: "7.0"

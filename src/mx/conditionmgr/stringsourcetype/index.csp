@@ -13,12 +13,12 @@ parm:
   list:
     - code: 1
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: String System Property
       description: A string of characters not defined by the device operating system.  
     - code: 2
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: Pre-defined String System Value
       description: A string of characters defined by the device operating system. 
 ---

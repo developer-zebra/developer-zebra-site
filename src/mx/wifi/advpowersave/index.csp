@@ -12,36 +12,36 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p
+      devicetype: p,v
       name:  Do not change
       mx: "4.2"
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: Always Active
       mx: "4.2"
     - code: 2
-      devicetype: p
+      devicetype: p,v
       name: Fast Power Save (Deprecated)
       mx: "4.2"
     - code: 3
-      devicetype: p
+      devicetype: p,v
       name: Max Power Save (Deprecated)
       mx: "4.2"
     - code: 4
-      devicetype: p
+      devicetype: p,v
       name: WMM-PS
       mx: "4.4"
     - code: 5
-      devicetype: p
+      devicetype: p,v
       name: Null Data Power Save
       mx: "4.4"
     - code: 6
       mx: "4.4"
-      devicetype: p
+      devicetype: p,v
       name: PS-POLL
     - code: 99
       mx: "6.2"
-      devicetype: p
+      devicetype: p,v
       name: Unsupported
 ---
 Used to configure the Power Save Mode from the settings table below. **The default "Fast Power Save" value must be used for the "Power Save" parameter; the "Do not change" value will result in failure**.

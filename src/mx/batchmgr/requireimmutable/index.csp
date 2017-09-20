@@ -12,12 +12,12 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p
+      devicetype: p,v
       name: False
       description: 
       mx: "4.3"
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: True
       description: Cannot be modifed, but anyone can decrypt with a public key. Future, not supported in StageNow V2.0.
       mx: "4.3"

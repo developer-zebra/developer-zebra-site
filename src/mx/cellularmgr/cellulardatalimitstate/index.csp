@@ -13,21 +13,21 @@ parm:
   list:
     - code: 0
       mx: "6.3"
-      devicetype: p
+      devicetype: p,v
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to CellularMgr settings; any previously selected setting will be retained.
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: Enable and set default limit
       mx: "6.3"
       description: Limits cellular data usage to the Android default value. 
     - code: 2
-      devicetype: p
+      devicetype: p,v
       name: Enable and set custom limit
       mx: "6.3"
       description: Limits cellular data usage to the amount set in the Cellular Data Limit Value parameter. 
     - code: 3
-      devicetype: p
+      devicetype: p,v
       name: Disable
       mx: "6.3"
       description: Prevents a limit on cellular data usage from being imposed on the device. 

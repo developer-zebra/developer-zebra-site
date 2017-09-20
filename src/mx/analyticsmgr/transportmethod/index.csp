@@ -15,19 +15,19 @@ parm:
     - code: 0
       mx: "4.3"
       apilevel: "19"
-      devicetype: p
+      devicetype: p,v
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the Transport Method used by the Analytics Engine; any previously selected setting will be retained. 
     - code: 1
       mx: "4.3"
       apilevel: "19"
-      devicetype: p
+      devicetype: p,v
       name: Select Cloud Transport
       description: Causes the Analytics Engine to send data to the Zebra Cloud.
     - code: 2
       mx: "4.3"
       apilevel: "19"
-      devicetype: p
+      devicetype: p,v
       name: Select File Transport
       description: Causes the Analytics Engine to store data locally on the device. 
 ---

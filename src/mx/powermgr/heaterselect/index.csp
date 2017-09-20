@@ -10,22 +10,22 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: Serial IO
       mx: "7.1"
       description: Selects the heater connected to a serial port.  
     - code: 2
-      devicetype: p
+      devicetype: p,v
       name: USB IO
       mx: "7.1"
       description: Selects the heater connected to the USB port.  
     - code: 3
-      devicetype: p
+      devicetype: p,v
       name: Battery
       mx: "7.1"
       description: Selects the battery heater.  
     - code: 4
-      devicetype: p
+      devicetype: p,v
       name: Touch Panel
       mx: "7.1"
       description: Selects the touch-panel heater.  

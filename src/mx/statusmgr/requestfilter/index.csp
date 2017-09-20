@@ -12,11 +12,11 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p
+      devicetype: p,v
       name: Request ALL Status
       description: 
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: Request Completion Status
       description: 
 ---

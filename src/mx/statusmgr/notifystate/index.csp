@@ -11,15 +11,15 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p
+      devicetype: p,v
       name: None
       description: 
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: In progress
       description: Notify the percent of progress
     - code: 3
-      devicetype: p
+      devicetype: p,v
       name: Complete
       description: Notify when complete
 ---

@@ -12,16 +12,16 @@ parm:
   list:
     - code: 0
       mx: "6.2"
-      devicetype: p
+      devicetype: p,v
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to user control over SIM Socket selection; any previously selected setting will be retained.
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: Enable
       mx: "6.2"
       description: Enables the device user to control which SIM Socket is used.
     - code: 2
-      devicetype: p
+      devicetype: p,v
       name: Disable
       mx: "6.2"
       description: Prevents the user from changing the selected SIM Socket.

@@ -13,7 +13,7 @@ parm:
   list:
     - code: 2
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: Have any valid IP Address
       description: Returns "True" if the device has a valid IP address at the time of testing. 
 ---

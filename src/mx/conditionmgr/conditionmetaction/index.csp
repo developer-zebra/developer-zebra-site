@@ -12,17 +12,17 @@ parm:
   list:
     - code: 0
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: Success
       description: Action to perform when a tested condition is successful. 
     - code: 1
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: Fail with characteristic-error
       description: Action to perform when a tested condition fails. 
     - code: 2
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: Retry (up to specified times) then Fail
       description: Repeatedly tests the condition before failing.
 ---

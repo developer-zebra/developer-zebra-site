@@ -12,17 +12,17 @@ parm:
   list:
     - code: 2
       mx: "4.2"
-      devicetype: p
+      devicetype: p,v
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the current network notification setting; any previously selected setting will be retained.
     - code: 1
       mx: "4.2"
-      devicetype: p
+      devicetype: p,v
       name: true
       description: Enables user notifications to be displayed when unknown, open network(s) come into range.
     - code: 0
       mx: "4.2"
-      devicetype: p
+      devicetype: p,v
       name: false
       description: Disables user notifications when unknown, open networks come into range.
 ---

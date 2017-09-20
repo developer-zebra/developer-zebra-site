@@ -12,12 +12,12 @@ parm:
   type: string
   list:
     - code: ll
-      devicetype: p
+      devicetype: p,v
       name: Language
       mx: "5.1"
       description: Selects the language to be used on the device.
     - code: ll_RR
-      devicetype: p
+      devicetype: p,v
       name: Language and Region 
       mx: "5.1"
       description: Selects the language and the region that language is used for the device. 

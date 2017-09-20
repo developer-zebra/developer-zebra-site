@@ -14,17 +14,17 @@ parm:
     - code: 0
       mx: "4.3"
       apilevel: "17"
-      devicetype: p
+      devicetype: p,v
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the current state of the Data Roaming; any previously selected setting will be retained.
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: Turn On
       mx: "4.3"
       apilevel: "17"
       description: Turns On Data Roaming, allowing cellular data connections while a device is outside the carrier's home network.
     - code: 2
-      devicetype: p
+      devicetype: p,v
       name: Turn Off
       mx: "4.3"
       apilevel: "17"

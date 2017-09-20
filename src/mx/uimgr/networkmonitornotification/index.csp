@@ -14,17 +14,17 @@ parm:
     - code: 0
       mx: "6.1"
       osx: "6.0"
-      devicetype: p
+      devicetype: p,v
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to whether the "Network may be monitored..." message will be displayed; any previously selected setting will be retained.
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: Turn On 
       mx: "6.1"
       osx: "6.0"
       description: Allows "Network may be monitored..." notifications to be displayed.
     - code: 2
-      devicetype: p
+      devicetype: p,v
       name: Turn Off
       mx: "6.1"
       osx: "6.0"

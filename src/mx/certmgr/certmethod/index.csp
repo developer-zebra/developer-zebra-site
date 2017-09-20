@@ -13,7 +13,7 @@ parm:
   type: list
   list:
     - code: 2
-      devicetype: p
+      devicetype: p,v
       name: Reference certificate file
       mx: "4.1"
       osx: "1.0"

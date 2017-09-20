@@ -13,7 +13,7 @@ parm:
   list:
     - code: 2
       mx: 4.4
-      devicetype: p
+      devicetype: p,v
       name: Pre-defined System Integer Value
       description: A numeric value defined by the device operating system.  
 ---

@@ -15,31 +15,31 @@ parm:
     - code: 0
       mx: "4.3"
       apilevel: "19"
-      devicetype: p
+      devicetype: p,v
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected; any previously selected setting will be retained.
     - code: 1
       mx: "4.3"
       apilevel: "19"
-      devicetype: p
+      devicetype: p,v
       name: None
       description: Disables Battery and CPU Status data collection.
     - code: 2
       mx: "4.3"
       apilevel: "19"
-      devicetype: p
+      devicetype: p,v
       name: Low
       description: Sets Battery and CPU Status data to be collected every 60 minutes.
     - code: 3
       mx: "4.3"
       apilevel: "19"
-      devicetype: p
+      devicetype: p,v
       name: Medium
       description: Sets Battery and CPU Status data to be collected every 30 minutes.
     - code: 4
       mx: "4.3"
       apilevel: "19"
-      devicetype: p
+      devicetype: p,v
       name: High
       description: Sets Battery and CPU Status data to be collected every 10 minutes.
 ---

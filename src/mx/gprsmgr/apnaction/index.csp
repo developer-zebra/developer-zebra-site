@@ -12,19 +12,19 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: Add/replace named APN
       mx: "4.1.1"
       apilevel: "16"
       description: Causes the specified APN to be added (replacing the existing APN, if any).
     - code: 2
-      devicetype: p
+      devicetype: p,v
       name: Remove existing named APN
       mx: "4.1.1"
       apilevel: "16"
       description: Causes the specified APN to be removed.
     - code: 3
-      devicetype: p
+      devicetype: p,v
       name: Remove all existing APNs
       mx: "4.1.1"
       apilevel: "16"

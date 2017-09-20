@@ -15,13 +15,13 @@ parm:
     - code: 0
       mx: "5.1"
       apilevel: "19"
-      devicetype: p
+      devicetype: p,v
       name: Disable
       description: Disables data collection for a given metric. 
     - code: 1
       mx: "5.1"
       apilevel: "19"
-      devicetype: p
+      devicetype: p,v
       name: Enable
       description: Enables data collection for a given metric.
 

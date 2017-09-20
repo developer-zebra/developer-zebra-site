@@ -12,12 +12,12 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p
+      devicetype: p,v
       name: False
       description: 
       mx: "4.3"
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: True
       description: Cannot be examined, only the StageNow Client can decrypt with a private key.
       mx: "4.3"

@@ -15,11 +15,11 @@ parm:
     - code: 1
       mx: "4.1.1"
       apilevel: "16"
-      devicetype: p
+      devicetype: p,v
       name: True
       description: Causes a new APN to be set as the default APN.
     - code: 0
-      devicetype: p
+      devicetype: p,v
       name: False
       mx: "4.1.1"
       apilevel: "16"

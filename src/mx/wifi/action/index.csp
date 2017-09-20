@@ -12,17 +12,17 @@ parm:
   list:
     - code: 0
       mx: "4.2"
-      devicetype: p
+      devicetype: p,v
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to Wi-Fi settings; any previously selected setting will be retained.
     - code: 1
       mx: "4.2"
-      devicetype: p
+      devicetype: p,v
       name: Enable
       description: Turns the Wi-Fi radio On.
     - code: 2
       mx: "4.2"
-      devicetype: p
+      devicetype: p,v
       name: Disable
       description: Turns the Wi-Fi radio Off.
 ---

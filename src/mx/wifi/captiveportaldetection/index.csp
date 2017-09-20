@@ -12,17 +12,17 @@ parm:
   list:
     - code: 2
       mx: "6.3"
-      devicetype: p
+      devicetype: p,v
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the setting; any previously selected setting will be retained.
     - code: 1
       mx: "6.3"
-      devicetype: p
+      devicetype: p,v
       name: Enable
       description: Enables the detection of a captive portal. 
     - code: 0
       mx: "6.3"
-      devicetype: p
+      devicetype: p,v
       name: Disable
       description: Disables the detection of a captive portal. 
 ---

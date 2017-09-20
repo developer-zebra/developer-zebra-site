@@ -13,12 +13,12 @@ parm:
   list:
     - code: 1
       mx: "4.2"
-      devicetype: p
+      devicetype: p,v
       name: WEP-40
       description: Selects use of the Wireless Equivalency Privacy (WEP) standard with a key size of 40 bits.
     - code: 2
       mx: "4.2"
-      devicetype: p
+      devicetype: p,v
       name: WEP-104
       description: Selects use of the Wireless Equivalency Privacy (WEP) standard with a key size of 104 bits.
 ---

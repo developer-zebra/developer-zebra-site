@@ -12,26 +12,26 @@ parm:
   list:
     - code: 0
       mx: "6.2"
-      devicetype: p
+      devicetype: p,v
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change; the previously selected SIM socket will be used.
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: SIM1
       mx: "6.2"
       description: Uses SIM1 to connect the device to the carrier network.
     - code: 2
-      devicetype: p
+      devicetype: p,v
       name: SIM2
       mx: "6.2"
       description: Uses SIM2 to connect the device to the carrier network.
     - code: 3
-      devicetype: p
+      devicetype: p,v
       name: SIM3
       mx: "6.2"
       description: Uses SIM3 to connect the device to the carrier network.
     - code: 4
-      devicetype: p
+      devicetype: p,v
       name: SIM4
       mx: "6.2"
       description: Uses SIM4 to connect the device to the carrier network.

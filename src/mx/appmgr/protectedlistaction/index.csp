@@ -13,25 +13,25 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p
+      devicetype: p,v
       name: Do nothing
       description: This value (or the absence of this parm from the XML) will cause no changes to the Protected List.
       mx: "4.2"
       osx: "1.2"
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: AddAppToProtectedList
       description: Adds the specified app package name to the Protected List.
       mx: "4.2"
       osx: "1.2"
     - code: 2
-      devicetype: p
+      devicetype: p,v
       name: RemoveAppFromProtectedList
       description: Removes the specified app package name from the Protected List.
       mx: "4.2"
       osx: "1.2"
     - code: 3
-      devicetype: p
+      devicetype: p,v
       name: ClearProtectedList
       description: Removes all app package names from the Protected List.
       mx: "4.2"

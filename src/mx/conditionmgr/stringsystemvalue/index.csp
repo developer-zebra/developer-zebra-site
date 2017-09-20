@@ -13,12 +13,12 @@ parm:
   list:
     - code: 12
       mx: 6.0
-      devicetype: p
+      devicetype: p,v
       name: MX version
       description: The version of MX installed on the device. 
     - code: 13
       mx: 6.0
-      devicetype: p
+      devicetype: p,v
       name: OSX version
       description: The version of OSx installed on the device. 
 ---

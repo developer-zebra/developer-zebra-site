@@ -13,25 +13,25 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: p
+      devicetype: p,v
       name: English
       mx: "4.3"
       apilevel: "16"
       description: Sets the standard English Input Method as the Default Input Method.
     - code: 2
-      devicetype: p
+      devicetype: p,v
       name: Japanese 
       mx: "4.3"
       apilevel: "16"
       description: Sets the standard Japanese Input Method as the Default Input Method.
     - code: 3
-      devicetype: p
+      devicetype: p,v
       name: Chinese(China) 
       mx: "4.3"
       apilevel: "16"
       description: Sets the standard Chinese Input Method as the Default Input Method.
     - code: 4
-      devicetype: p
+      devicetype: p,v
       name: User defined Input Method 
       mx: "4.3"
       apilevel: "16"

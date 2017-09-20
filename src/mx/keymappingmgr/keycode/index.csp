@@ -12,600 +12,799 @@ parm:
   type: list
   list:
     - name: 0
+      devicetype: p
       code: 7
       mx: "4.4"
     - name: 1
+      devicetype: p
       code: 8
       mx: "4.4"
     - name: 2
+      devicetype: p
       code: 9
       mx: "4.4"
     - name: 3
+      devicetype: p
       code: 10
       mx: "4.4"
     - name: 4
+      devicetype: p
       code: 11
       mx: "4.4"
     - name: 5
+      devicetype: p
       code: 12
       mx: "4.4"
     - name: 6
+      devicetype: p
       code: 13
       mx: "4.4"
     - name: 7
+      devicetype: p
       code: 14
       mx: "4.4"
     - name: 8
+      devicetype: p
       code: 15
       mx: "4.4"
     - name: 9
+      devicetype: p
       code: 16
       mx: "4.4"
     - name: A
+      devicetype: p
       code: 29
       mx: "4.4"
     - name: B
+      devicetype: p
       code: 30
       mx: "4.4"
     - name: C
+      devicetype: p
       code: 31
       mx: "4.4"
     - name: D
+      devicetype: p
       code: 32
       mx: "4.4"
     - name: E
+      devicetype: p
       code: 33
       mx: "4.4"
     - name: F
+      devicetype: p
       code: 34
       mx: "4.4"
     - name: G
+      devicetype: p
       code: 35
       mx: "4.4"
     - name: H
+      devicetype: p
       code: 36
       mx: "4.4"
     - name: I
+      devicetype: p
       code: 37
       mx: "4.4"
     - name: J
+      devicetype: p
       code: 38
       mx: "4.4"
     - name: K
+      devicetype: p
       code: 39
       mx: "4.4"
     - name: L
+      devicetype: p
       code: 40
       mx: "4.4"
     - name: M
+      devicetype: p
       code: 41
       mx: "4.4"
     - name: N
+      devicetype: p
       code: 42
       mx: "4.4"
     - name: O
+      devicetype: p
       code: 43
       mx: "4.4"
     - name: P
+      devicetype: p
       code: 44
       mx: "4.4"
     - name: Q
+      devicetype: p
       code: 45
       mx: "4.4"
     - name: R
+      devicetype: p
       code: 46
       mx: "4.4"
     - name: S
+      devicetype: p
       code: 47
       mx: "4.4"
     - name: T
+      devicetype: p
       code: 48
       mx: "4.4"
     - name: U
+      devicetype: p
       code: 49
       mx: "4.4"
     - name: V
+      devicetype: p
       code: 50
       mx: "4.4"
     - name: W
+      devicetype: p
       code: 51
       mx: "4.4"
     - name: X
+      devicetype: p
       code: 52
       mx: "4.4"
     - name: Y
+      devicetype: p
       code: 53
       mx: "4.4"
     - name: Z
+      devicetype: p
       code: 54
       mx: "4.4"
     - name: Enter
+      devicetype: p
       code: 66
       mx: "4.4"
     - name: Tab
+      devicetype: p
       code: 61
       mx: "4.4"
     - name: Space
+      devicetype: p
       code: 62
       mx: "4.4"
     - name: Escape
+      devicetype: p
       code: 111
       mx: "4.4"
     - name: Delete
+      devicetype: p
       code: 67
       mx: "4.4"
     - name: F1
+      devicetype: p
       code: 131
       mx: "4.4"
     - name: F2
+      devicetype: p
       code: 132
       mx: "4.4"
     - name: F3
+      devicetype: p
       code: 133
       mx: "4.4"
     - name: F4
+      devicetype: p
       code: 134
       mx: "4.4"
     - name: F5
+      devicetype: p
       code: 135
       mx: "4.4"
     - name: F6
+      devicetype: p
       code: 136
       mx: "4.4"
     - name: F7
+      devicetype: p
       code: 137
       mx: "4.4"
     - name: F8
+      devicetype: p
       code: 138
       mx: "4.4"
     - name: F9
+      devicetype: p
       code: 139
       mx: "4.4"
     - name: F10
+      devicetype: p
       code: 140
       mx: "4.4"
     - name: F11
+      devicetype: p
       code: 141
       mx: "4.4"
     - name: F12
+      devicetype: p
       code: 142
       mx: "4.4"
     - name: NUMPAD 0
+      devicetype: p
       code: 144
       mx: "4.4"
     - name: NUMPAD 1
+      devicetype: p
       code: 145
       mx: "4.4"
     - name: NUMPAD 2
+      devicetype: p
       code: 146
       mx: "4.4"
     - name: NUMPAD 3
+      devicetype: p
       code: 147
       mx: "4.4"
     - name: NUMPAD 4
+      devicetype: p
       code: 148""
       mx: "4.4"
     - name: NUMPAD 5
+      devicetype: p
       code: 149
       mx: "4.4"
     - name: NUMPAD 6
+      devicetype: p
       code: 150
       mx: "4.4"
     - name: NUMPAD 7
+      devicetype: p
       code: 151
       mx: "4.4"
     - name: NUMPAD 8
+      devicetype: p
       code: 152
       mx: "4.4"
     - name: NUMPAD 9
+      devicetype: p
       code: 153
       mx: "4.4"
     - name: NUMPAD Divide
+      devicetype: p
       code: 154
       mx: "4.4"
     - name: NUMPAD Multiply
+      devicetype: p
       code: 155
       mx: "4.4"
     - name: NUMPAD Subtract
+      devicetype: p
       code: 156
       mx: "4.4"
     - name: NUMPAD Add
+      devicetype: p
       code: 157
       mx: "4.4"
     - name: NUMPAD Period
+      devicetype: p
       code: 158
       mx: "4.4"
     - name: NUMPAD Comma
+      devicetype: p
       code: 159
       mx: "4.4"
     - name: NUMPAD Enter
+      devicetype: p
       code: 160
       mx: "4.4"
     - name: NUMPAD Equals
+      devicetype: p
       code: 161
       mx: "4.4"
     - name: NUMPAD Left Parenthesis
+      devicetype: p
       code: 162
       mx: "4.4"
     - name: NUMPAD Right Parenthesis
+      devicetype: p
       code: 163
       mx: "4.4"
     - name: DPAD Up
+      devicetype: p
       code: 19
       mx: "4.4"
     - name: DPAD Down
+      devicetype: p
       code: 20
       mx: "4.4"
     - name: DPAD Left
+      devicetype: p
       code: 21
       mx: "4.4"
     - name: DPAD Right
+      devicetype: p
       code: 22
       mx: "4.4"
     - name: DPAD Center
+      devicetype: p
       code: 23
       mx: "4.4"
     - name: Move Home
+      devicetype: p
       code: 122
       mx: "4.4"
     - name: Move End
+      devicetype: p
       code: 123
       mx: "4.4"
     - name: Page Up
+      devicetype: p
       code: 92
       mx: "4.4"
     - name: Page Down
+      devicetype: p
       code: 93
       mx: "4.4"
     - name: Insert
+      devicetype: p
       code: 124
       mx: "4.4"
     - name: Forward Delete
+      devicetype: p
       code: 112
       mx: "4.4"
     - name: Clear
+      devicetype: p
       code: 28
       mx: "4.4"
     - name: Blue
+      devicetype: p
       code: 10027
       mx: "4.4"
     - name: Orange
+      devicetype: p
       code: 10028
       mx: "4.4"
     - name: Grey
+      devicetype: p
       code: 10029
       mx: "4.4"
     - name: Alt
+      devicetype: p
       code: 10030
       mx: "4.4"
     - name: Control
+      devicetype: p
       code: 10031
       mx: "4.4"
     - name: Shift
+      devicetype: p
       code: 10032
       mx: "4.4"
     - name: Left Shift
+      devicetype: p
       code: 59
       mx: "4.4"
     - name: Right Shift
+      devicetype: p
       code: 60
       mx: "4.4"
     - name: Left Alt
+      devicetype: p
       code: 57
       mx: "4.4"
     - name: Right Alt
+      devicetype: p
       code: 58
       mx: "4.4"
     - name: Left Control
+      devicetype: p
       code: 113
       mx: "4.4"
     - name: Right Control
+      devicetype: p
       code: 114
       mx: "4.4"
     - name: Meta Left
+      devicetype: p
       code: 117
       mx: "4.4"
     - name: Meta Right
+      devicetype: p
       code: 118
       mx: "4.4"
     - name: Caps Lock
+      devicetype: p
       code: 115
       mx: "4.4"
     - name: Num Lock
+      devicetype: p
       code: 143
       mx: "4.4"
     - name: Scroll Lock
+      devicetype: p
       code: 116
       mx: "4.4"
     - name: SysRq
+      devicetype: p
       code: 120
       mx: "4.4"
     - name: Break
+      devicetype: p
       code: 121
       mx: "4.4"
     - name: Function
+      devicetype: p
       code: 119
       mx: "4.4"
     - name: Plus
+      devicetype: p
       code: 81
       mx: "4.4"
     - name: Minus
+      devicetype: p
       code: 69
       mx: "4.4"
     - name: Equals
+      devicetype: p
       code: 70
       mx: "4.4"
     - name: Left Bracket
+      devicetype: p
       code: 71
       mx: "4.4"
     - name: Right Bracket
+      devicetype: p
       code: 72
       mx: "4.4"
     - name: Grave
+      devicetype: p
       code: 68
       mx: "4.4"
     - name: Slash
+      devicetype: p
       code: 76
       mx: "4.4"
     - name: Backslash
+      devicetype: p
       code: 73
       mx: "4.4"
     - name: Semicolon
+      devicetype: p
       code: 74
       mx: "4.4"
     - name: Apostrophe
+      devicetype: p
       code: 75
       mx: "4.4"
     - name: Comma
+      devicetype: p
       code: 55
       mx: "4.4"
     - name: Period
+      devicetype: p
       code: 56
       mx: "4.4"
     - name: Star
+      devicetype: p
       code: 17
       mx: "4.4"
     - name: Pound
+      devicetype: p
       code: 18
       mx: "4.4"
     - name: At
+      devicetype: p
       code: 77
       mx: "4.4"
     - name: Back
+      devicetype: p
       code: 4
       mx: "4.4"
     - name: Forward
+      devicetype: p
       code: 125
       mx: "4.4"
     - name: Home
+      devicetype: p
       code: 3
       mx: "4.4"
     - name: Menu
+      devicetype: p
       code: 82
       mx: "4.4"
     - name: Settings
+      devicetype: p
       code: 176
       mx: "4.4"
     - name: Application Switch
+      devicetype: p
       code: 187
       mx: "4.4"
     - name: Calculator
+      devicetype: p
       code: 210
       mx: "4.4"
     - name: Explorer
+      devicetype: p
       code: 64
       mx: "4.4"
     - name: Envelope
+      devicetype: p
       code: 65
       mx: "4.4"
     - name: Bookmark
+      devicetype: p
       code: 174
       mx: "4.4"
     - name: Music
+      devicetype: p
       code: 209
       mx: "4.4"
     - name: Call
+      devicetype: p
       code: 5
       mx: "4.4"
     - name: End Call
+      devicetype: p
       code: 6
       mx: "4.4"
     - name: Microphone Mute
+      devicetype: p
       code: 91
       mx: "4.4"
     - name: Camera
+      devicetype: p
       code: 27
       mx: "4.4"
     - name: Search
+      devicetype: p
       code: 84
       mx: "4.4"
     - name: Contacts
+      devicetype: p
       code: 207
       mx: "4.4"
     - name: Calendar
+      devicetype: p
       code: 208
       mx: "4.4"
     - name: Volume Up
+      devicetype: p
       code: 24
       mx: "4.4"
     - name: Volume Down
+      devicetype: p
       code: 25
       mx: "4.4"
     - name: Volume Mute
+      devicetype: p
       code: 164
       mx: "4.4"
     - name: Brightness Up
+      devicetype: p
       code: 221
       mx: "4.4"
     - name: Brightness Down
+      devicetype: p
       code: 220
       mx: "4.4"
     - name: Power
+      devicetype: p
       code: 26
       mx: "4.4"
     - name: Sleep
+      devicetype: p
       code: 223
       mx: "4.4"
     - name: Wakeup
+      devicetype: p
       code: 224
       mx: "4.4"
     - name: Headset
+      devicetype: p
       code: 79
       mx: "4.4"
     - name: Push-to-talk
+      devicetype: p
       code: 228
       mx: "4.4"
     - name: Camera Focus
+      devicetype: p
       code: 80
       mx: "4.4"
     - name: Media Play/Pause
+      devicetype: p
       code: 85
       mx: "4.4"
     - name: Media Stop
+      devicetype: p
       code: 86
       mx: "4.4"
     - name: Media Next
+      devicetype: p
       code: 87
       mx: "4.4"
     - name: Media Previous
+      devicetype: p
       code: 88
       mx: "4.4"
     - name: Media Rewind
+      devicetype: p
       code: 89
       mx: "4.4"
     - name: Media Fast-Forward
+      devicetype: p
       code: 90
       mx: "4.4"
     - name: Media Play
+      devicetype: p
       code: 126
       mx: "4.4"
     - name: Media Pause
+      devicetype: p
       code: 127
       mx: "4.4"
     - name: Media Close
+      devicetype: p
       code: 128
       mx: "4.4"
     - name: Media Eject
+      devicetype: p
       code: 129
       mx: "4.4"
     - name: Media Record
+      devicetype: p
       code: 130
       mx: "4.4"
     - name: Button L1
+      devicetype: p
       code: 102
       mx: "4.4"
     - name: Button R1
+      devicetype: p
       code: 103
       mx: "4.4"
     - name: Button L2
+      devicetype: p
       code: 104
       mx: "4.4"
     - name: Button R2
+      devicetype: p
       code: 105
       mx: "4.4"
     - name: Button A
+      devicetype: p
       code: 96
       mx: "4.4"
     - name: Button B
+      devicetype: p
       code: 97
       mx: "4.4"
     - name: Button C
+      devicetype: p
       code: 98
       mx: "4.4"
     - name: Button X
+      devicetype: p
       code: 99
       mx: "4.4"
     - name: Button Y
+      devicetype: p
       code: 100
       mx: "4.4"
     - name: Button Z
+      devicetype: p
       code: 101
       mx: "4.4"
     - name: Left Thumb Button
+      devicetype: p
       code: 106
       mx: "4.4"
     - name: Right Thumb Button
+      devicetype: p
       code: 107
       mx: "4.4"
     - name: Start Button
+      devicetype: p
       code: 108
       mx: "4.4"
     - name: Select Button
+      devicetype: p
       code: 109
       mx: "4.4"
     - name: Mode Button
+      devicetype: p
       code: 110
       mx: "4.4"
     - name: Gamepad Button 1
+      devicetype: p
       code: 188
       mx: "4.4"
     - name: Gamepad Button 2
+      devicetype: p
       code: 189
       mx: "4.4"
     - name: Gamepad Button 3
+      devicetype: p
       code: 190
       mx: "4.4"
     - name: Gamepad Button 4
+      devicetype: p
       code: 191
       mx: "4.4"
     - name: Gamepad Button 5
+      devicetype: p
       code: 192
       mx: "4.4"
     - name: Gamepad Button 6
+      devicetype: p
       code: 193
       mx: "4.4"
     - name: Gamepad Button 7
+      devicetype: p
       code: 194
       mx: "4.4"
     - name: Gamepad Button 8
+      devicetype: p
       code: 195
       mx: "4.4"
     - name: Gamepad Button 9
+      devicetype: p
       code: 196
       mx: "4.4"
     - name: Gamepad Button 10
+      devicetype: p
       code: 197
       mx: "4.4"
     - name: Gamepad Button 11
+      devicetype: p
       code: 198
       mx: "4.4"
     - name: Gamepad Button 12
+      devicetype: p
       code: 199
       mx: "4.4"
     - name: Gamepad Button 13
+      devicetype: p
       code: 200
       mx: "4.4"
     - name: Gamepad Button 14
+      devicetype: p
       code: 201
       mx: "4.4"
     - name: Gamepad Button 15
+      devicetype: p
       code: 202
       mx: "4.4"
     - name: Gamepad Button 16
+      devicetype: p
       code: 203
       mx: "4.4"
     - name: Zenkaku/Hankaku
+      devicetype: p
       code: 211
       mx: "4.4"
     - name: Eisu
+      devicetype: p
       code: 212
       mx: "4.4"
     - name: Muhenkan
+      devicetype: p
       code: 213
       mx: "4.4"
     - name: Henkan
+      devicetype: p
       code: 214
       mx: "4.4"
     - name: Katakana/Hiragana
+      devicetype: p
       code: 215
       mx: "4.4"
     - name: Yen
+      devicetype: p
       code: 216
       mx: "4.4"
     - name: Ro
+      devicetype: p
       code: 217
       mx: "4.4"
     - name: Kana
+      devicetype: p
       code: 218
       mx: "4.4"
 ---

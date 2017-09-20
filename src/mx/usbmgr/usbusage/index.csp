@@ -31,4 +31,4 @@ parm:
       description: This value will cause all usage of the USB module to be prevented.  This value will also prevent other parms from being presented since individual USB functions cannot be used if all usage of the USB module is being prevented.
 ---
 
-This parm allows you to specify whether the use of USB module will be allowed. Setting this parm would cause all of the USB features to be enabled or disabled.
+Controls whether the use of USB module will be allowed. Setting this parm would cause all of the USB features to be enabled or disabled.

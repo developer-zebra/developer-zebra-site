@@ -14,14 +14,17 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "1.3"
+      devicetype: p
       name: Do Nothing
       description: This value (or the absence of this parm from the XML) will cause no changes to whether Full Storage Card Encryption is activated or deactivated.
     - code: 1
+      devicetype: p
       name: Encrypt SDcard
       mx: "4.3"
       osx: "1.3"
       description: This value will cause Full Storage Card Encryption to be activated, thus causing the Storage Card to be reformatted as encrypted.
     - code: 2
+      devicetype: p
       name: Format SDcard
       mx: "4.3"
       osx: "1.3"

@@ -13,28 +13,34 @@ parm:
   type: list
   list:
     - code: en_AU 
+      devicetype: p
       name: AUSTRALIA_ENGLISH
       mx: "5.1"
       osx: "1.3"
       description: Not supported on TC55 KitKat
     - code: en_IN 
+      devicetype: p
       name: INDIA_ENGLISH
       mx: "5.1"
       osx: "1.3"
       description: Not supported on TC55 KitKat
     - code: sv_SE 
+      devicetype: p
       name: SWEDEN_SWEDISH
       mx: "5.1"
       osx: "1.3"
     - code: nb_NO 
+      devicetype: p
       name: NORWAY_NORWEGIAN-BOKMAL
       mx: "5.1"
       osx: "1.3"
     - code: fi_FI 
+      devicetype: p
       name: FINLAND_FINISH
       mx: "5.1"
       osx: "1.3"
     - code: da_DK 
+      devicetype: p
       name: DENMARK_DANISH
       mx: "5.1"
       osx: "1.3"

@@ -12,11 +12,13 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: none
       description: This value (or the absence of this parm from the XML) will cause no change to Bug Report Manager settings; any previously selected setting will be retained.
       mx: "6.3"
       apilevel: "23"
     - code: 1
+      devicetype: p
       name: True
       description: Enables the Dialog timeout to be set to a custom value.
       mx: "6.3"

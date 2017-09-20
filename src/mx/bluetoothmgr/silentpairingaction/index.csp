@@ -15,19 +15,23 @@ parm:
     - code: 0
       mx: "7.0"
       apilevel: "24"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to the device's ability to pair with discovered Bluetooth devices; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Add Silent Pairing Rule
       mx: "7.0"
       apilevel: "24"
       description: Adds a Silent Pairing Rule to the list.
     - code: 2
+      devicetype: p
       name: Remove Silent Pairing Rule
       mx: "7.0"
       apilevel: "24"
       description: Removes the specified Silent Pairing Rule.
     - code: 3
+      devicetype: p
       name: Remove all Silent Pairing Rules
       mx: "7.0"
       apilevel: "24"

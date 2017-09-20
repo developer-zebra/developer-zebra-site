@@ -12,11 +12,13 @@ parm:
   type: list
   list:
     - code: false
+      devicetype: p
       name: (unchecked)
       mx: "6.2"
       osx: "6.2"
       description: Screen protector not present; sensitivity will not be adjusted to compensate.
     - code: true
+      devicetype: p
       name: (checked)
       mx: "6.2"
       osx: "6.2"

@@ -13,6 +13,7 @@ parm:
   list:
     - code: 2
       mx: 4.4
+      devicetype: p
       name: Pre-defined System Boolean Value
       description: A true/false value defined by the system.  
 ---

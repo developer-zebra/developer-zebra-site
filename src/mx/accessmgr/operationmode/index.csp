@@ -14,11 +14,13 @@ parm:
     - code: 1
       mx: "4.1"
       osx: "1.0"
+      devicetype: p
       name: Single User without Whitelist
       description: This value will cause Whitelisting to be turned off and hence disable all Whitelisting functionality.
     - code: 2
       mx: "4.1"
       osx: "1.0"
+      devicetype: p
       name: Single User with Whitelist
       description: This value will cause Whitelisting to be turned on and hence enable Whitelisting functionality. The exact behavior of Whitelisting will depend on the configuration of the other parms.
 ---

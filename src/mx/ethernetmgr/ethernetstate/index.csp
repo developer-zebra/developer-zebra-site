@@ -15,16 +15,19 @@ parm:
     - code: 0
       mx: "6.2"
       osx: "6.2"
+      devicetype: p
       name: Do not change
       apilevel: "23"
       description: This value (or the absence of this parm from the XML) will cause no changes to the Ethernet state; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Turn On
       mx: "6.2"
       osx: "6.2"
       apilevel: "23"
       description: Enables network connectivity through an Ethernet cradle port.
     - code: 2
+      devicetype: p
       name: Turn Off
       mx: "6.2"
       osx: "6.2"

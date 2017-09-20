@@ -12,16 +12,19 @@ parm:
   type: list
   list:
     - code: 1
+      devicetype: p
       name: Install certificate
       mx: "4.1"
       osx: "1.0"
       description: Installs the specified certificate on the device.
     - code: 2
+      devicetype: p
       name: Uninstall certificate
       mx: "4.1"
       osx: "1.0"
       description: Removes the specified certificate from the device.
     - code: 3
+      devicetype: p
       name: Initialize Android Keystore
       mx: "4.2"
       osx: "1.0"

@@ -12,36 +12,43 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: none
       description: This value (or the absence of this parm from the XML) will cause no change to the Bug Report Manager settings on the device; any previously selected setting will be retained.
       mx: "6.3"
       apilevel: "23"
     - code: 1
+      devicetype: p
       name: ClearDialog
       description: Signals the beginning of a new dialog box layout. 
       mx: "6.3"
       apilevel: "23"
     - code: 2
+      devicetype: p
       name: AddErrorNameTextBox
       description: Adds a Text Box for providing a bug name, which is appended to the file name of the bug report and becomes name of the file containing user-entered data within the report.
       mx: "6.3"
       apilevel: "23"
     - code: 3
+      devicetype: p
       name: AddLabel
       description: Optional static text field used to ask a question or provide instructions for entering data into a Text Box.
       mx: "6.3"
       apilevel: "23"
     - code: 4
+      devicetype: p
       name: AddTextBox
       description: Adds a blank Text Box into which the device user enters information about the bug being reported. 
       mx: "6.3"
       apilevel: "23"
     - code: 6
+      devicetype: p
       name: AddVoiceRecordButton
       description: Displays a button for activating a voice capture function for creating a message to accompany the bug report.
       mx: "6.3"
       apilevel: "23"
     - code: 7
+      devicetype: p
       name: LayoutEnd
       description: Signals the end of a dialog box layout. 
       mx: "6.3"

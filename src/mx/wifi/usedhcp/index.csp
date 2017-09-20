@@ -10,10 +10,12 @@ order: 41
   list:
     - code: 1
       mx: "4.4"
+      devicetype: p
       name: (checked)
       description: Sets the device to obtain IP settings from a DHCP server.
     - code: 0
       mx: "4.4"
+      devicetype: p
       name: (unchecked)
       description: Allows IP address settings to be configured manually. 
 ---

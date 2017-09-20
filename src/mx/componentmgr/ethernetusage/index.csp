@@ -14,14 +14,17 @@ parm:
     - code: 0
       mx: "4.4"
       osx: "4.4"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to whether the Ethernet can be used.
     - code: 1
+      devicetype: p
       name: Enable
       mx: "4.4"
       osx: "4.4"
       description: This value will cause the state of the Ethernet Option to be unlocked, allowing it to be changed, either by the device user or by the ComponentMgr.
     - code: 2
+      devicetype: p
       name: Disable
       mx: "4.4"
       osx: "4.4"

@@ -14,14 +14,17 @@ parm:
     - code: 0
       mx: "4.3"
       apilevel: "1"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether the AutoCorrect function is allowed to be used; any previously selected setting will be retained. 
     - code: 1
+      devicetype: p
       name: Enable 
       mx: "4.3"
       apilevel: "1"
       description: Enables use of the AutoCorrect function, allowing an administrator or device user to the turn the function on and off and configure its settings using the System Settings panel.
     - code: 2
+      devicetype: p
       name: Disable
       mx: "4.3"
       apilevel: "1"

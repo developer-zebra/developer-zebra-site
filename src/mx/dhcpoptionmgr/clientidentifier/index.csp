@@ -12,13 +12,16 @@ parm:
   list:
     - code: 0
       mx: "6.3"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
     - code: 1
+      devicetype: p
       name: Enable
       mx: "6.3"
       description: Enables a client identifier to be specified. 
     - code: 2
+      devicetype: p
       name: Disable
       mx: "6.3"
       description: Prevents a client identifier from being specified. 

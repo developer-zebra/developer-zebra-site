@@ -14,9 +14,11 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "1.0"
+      devicetype: p
       name: Do Nothing
       description: This value (or the absence of this parm from the XML) will not cause a Named Key to be added to the Key Storage Database.
     - code: 1
+      devicetype: p
       name: Install Key
       mx: "4.3"
       osx: "1.0"

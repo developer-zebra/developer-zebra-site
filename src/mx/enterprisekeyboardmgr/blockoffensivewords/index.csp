@@ -12,13 +12,16 @@ parm:
   list:
     - code: 0
       mx: "6.0"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Turn on
       mx: "6.0"
       description: Activates Google's routines for blocking offensive words as spelling suggestions.
     - code: 2
+      devicetype: p
       name: Turn off
       mx: "6.0"
       description: Disables the Block Offensive Words feature, allowing all spelling suggestions to be shown.

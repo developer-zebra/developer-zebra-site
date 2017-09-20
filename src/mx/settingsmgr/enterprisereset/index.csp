@@ -14,14 +14,17 @@ parm:
     - code: 0
       mx: "4.2"
       osx: "4.2"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to invoke the "Enterprise data reset" function from the System Settings Menu.
     - code: 1
+      devicetype: p
       name: Enable
       mx: "4.2"
       osx: "4.2"
       description: This value will cause the device user to be allowed to invoke the "Enterprise data reset" function from the System Settings Menu.
     - code: 2
+      devicetype: p
       name: Disable
       mx: "4.2"
       osx: "4.2"

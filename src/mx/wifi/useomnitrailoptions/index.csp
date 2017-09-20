@@ -12,10 +12,12 @@ parm:
   list:
     - code: 0
       mx: "6.3"
+      devicetype: p
       name: (unchecked)
       description: Disables OmniTrail device location services and options.
     - code: 1
       mx: "6.3"      
+      devicetype: p
       name: (checked)
       description: Enables OmniTrail device location services and options.
 ---

@@ -15,10 +15,12 @@ parm:
     - code: 0
       mx: "6.2"
       osx: "6.2"
+      devicetype: p
       name: (unchecked)
       apilevel: "23"
       description: Prevents an IP address from being assigned manually or through DHCP.
     - code: 1
+      devicetype: p
       name: (checked)
       mx: "6.2"
       osx: "6.2"

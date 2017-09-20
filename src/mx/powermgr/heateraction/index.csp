@@ -11,17 +11,21 @@ parm:
   list:
     - code: 0
       mx: "7.1"
+      devicetype: p
       name: Do Nothing
       description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Enable
       mx: "7.1"
       description: Enables the selected heater. 
     - code: 2
+      devicetype: p
       name: Disable
       mx: "7.1"
       description: Disables the selected heater. 
     - code: 3
+      devicetype: p
       name: Set ON/OFF Thresholds
       mx: "7.1"
       description: Enables a temperature threshold to be set for the selected heater.  

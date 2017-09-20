@@ -13,16 +13,19 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: Do nothing
       mx: "6.1"
       osx: "3.5"
       description: This value (or the absence of this parm from the XML) will make  no change to whether the Periodic Scan feature is enabled; any previously selected setting will be retained. 
     - code: 1
+      devicetype: p
       name: Turn On 
       mx: "6.1"
       osx: "3.5"
       description: Enables Periodic Scans to be performed on the device.
     - code: 2
+      devicetype: p
       name: Turn Off
       mx: "6.1"
       osx: "3.5"

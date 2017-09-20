@@ -13,18 +13,22 @@ parm:
   list:
     - code: 1
       mx: "4.2"
+      devicetype: p
       name: WPA
       description: This indicates that the network requires encryption using the Wi-Fi Protected Access (WPA) standard. WPA only performs encryption using the Temporal Key Integrity Protocol. A TKIP-compatible key will therefore need to be specified.
     - code: 2
       mx: "4.2"
+      devicetype: p
       name: WPA2
       description: This indicates that the network requires encryption using the Wi-Fi Protected Access version 2 (WPA2) standard. WPA2 supports encryption using either the Temporal Key Integrity Protocol (TKIP) for backward compatibility with WPA, or the more secure Advanced Encryption Standard (AES) algorithm. A decision about whether to use TKIP or AES (or auto-select) will need to be made and then a TKIP or AES-compatible key will need to be specified.
     - code: 3
       mx: "4.2"
+      devicetype: p
       name: WPA/WPA2
       description: This indicates that the network supports both the Wi-Fi Protected Access (WPA) standard and the Wi-Fi Protected Access version 2 (WPA2) standard. This is essentially the same effect as selecting WPA2 since WPA2 supports backward compatibility with WPA.
     - code: 4
       mx: "4.2"
+      devicetype: p
       name: WEP
       description: This indicates that the network requires encryption using the older, and less secure, Wired Equivalency Privacy (WEP) standard. A decision about the WEP key size to use will need to be made and then a WEP key of the selected size will need to be specified.
 ---

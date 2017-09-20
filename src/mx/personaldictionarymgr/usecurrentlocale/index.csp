@@ -12,10 +12,12 @@ parm:
   list:
     - code: 0
       mx: "6.0"
+      devicetype: p
       name: Specify locale
       description: Enables a locale to be specified on which to perform Actions.
     - code: 1
       mx: "6.0"      
+      devicetype: p
       name: Use current locale
       description: Actions will be performed on the currently selected locale (default).
 ---

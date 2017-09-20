@@ -18,9 +18,11 @@ parm:
       osx-specific-list: "3.6,4.5"
       osx-exclude: "4.0"
       osx-exclude-end: "4.4"
+      devicetype: p
       name: Do Nothing
       description: This value (or the absence of this parm from the XML) will cause no change to the current behavior; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Enable
       mx: "5.0"
       osx-specific-list: "3.6,4.5"
@@ -28,6 +30,7 @@ parm:
       osx-exclude-end: "4.4"
       description: Enables the ability to use the Android screen capture feature.
     - code: 2
+      devicetype: p
       name: Disable
       mx: "5.0"
       osx-specific-list: "3.6,4.5"

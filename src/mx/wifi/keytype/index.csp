@@ -13,10 +13,12 @@ parm:
   list:
     - code: HexKey
       mx: "4.2"
+      devicetype: p
       name: Hex Key
       description: The key used by the network to perform encryption will be specified.
     - code: Passphrase
       mx: "4.2"
+      devicetype: p
       name: Passphrase
       description: A passphrase derived from the specified key and used by the network to perform encryption.
 ---

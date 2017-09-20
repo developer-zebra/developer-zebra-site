@@ -13,6 +13,7 @@ parm:
   list:
     - code: 2
       mx: "4.3"
+      devicetype: p
       name: File in Device File System
       description: Specifies that the file is in the device file system.
 ---

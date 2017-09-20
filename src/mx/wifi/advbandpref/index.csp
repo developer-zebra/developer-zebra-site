@@ -13,18 +13,23 @@ parm:
   list:
     - code: 0
       mx: "4.3"
+      devicetype: p
       name: No Preference
     - code: 1
       mx: "4.3"
+      devicetype: p
       name: Prefer 2.4GHz
     - code: 2
       mx: "4.3"
+      devicetype: p
       name: Prefer 5.0GHz
     - code: 3
       mx: "4.3"
+      devicetype: p
       name: Do not change
     - code: 99
       mx: "6.2"
+      devicetype: p
       name: Unsupported
 ---
 Used to specify the preferred Wi-Fi band. _**Not supported on MPA3 RevB-based devices running Android Jelly Bean**_. 

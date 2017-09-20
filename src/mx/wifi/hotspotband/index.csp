@@ -13,10 +13,12 @@ parm:
   list:
     - code: 0
       mx: "6.3"
+      devicetype: p
       name: 2.4GHz
       description: Enables the 2.4GHz band for hotspot communications.
     - code: 1
       mx: "6.3"
+      devicetype: p
       name: 5GHz
       description: Enables the 5GHz band for hotspot communications.
 ---

@@ -12,11 +12,13 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: Do Nothing
       description: TThis value (or the absence of this parm from the XML) will not cause an Encrypted File System to be Deleted.
       mx: "4.3"
       osx: "1.0"
     - code: 1
+      devicetype: p
       name: Delete EFS
       mx: "4.3"
       osx: "1.0"

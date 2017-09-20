@@ -13,10 +13,12 @@ parm:
   list:
     - code: 0
       mx: "6.3"
+      devicetype: p
       name: (unchecked)
       description: Terms are appended to the Personal Dictionary only if not already present.
     - code: 1
       mx: "6.3"      
+      devicetype: p
       name: (checked)
       description: All terms are appended to the Personal Dictionary without regard to duplication.
 ---

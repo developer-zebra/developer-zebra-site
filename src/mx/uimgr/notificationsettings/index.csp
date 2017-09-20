@@ -12,16 +12,19 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: Do not change
       mx: "5.1"
       osx: "5.1"
       description: This value (or the absence of this parm from the XML) will cause no change to visibility of the Gear icon in the Notifications panel; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Show 
       mx: "5.1"
       osx: "5.1"
       description: Shows the Gear icon in the Notifications panel. 
     - code: 2
+      devicetype: p
       name: Hide 
       mx: "5.1"
       osx: "5.1"

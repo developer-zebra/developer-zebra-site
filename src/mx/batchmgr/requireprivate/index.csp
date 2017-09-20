@@ -12,10 +12,12 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: False
       description: 
       mx: "4.3"
     - code: 1
+      devicetype: p
       name: True
       description: Sets private encryption to be required.
       mx: "4.3"

@@ -11,10 +11,12 @@ parm:
   type: list
   list:
     - code: True
+      devicetype: p
       name: Enable
       mx: "5.1"
       description: Enables the device to collect statistics on XML submitted to the MXMF. 
     - code: False
+      devicetype: p
       name: Disable
       mx: "5.1"
       description: Disables the collection of statistics on XML submitted to the MXMF.

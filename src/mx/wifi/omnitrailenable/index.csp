@@ -13,14 +13,17 @@ parm:
   list:
     - code: 2
       mx: "6.3"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
     - code: 1
       mx: "6.3"
+      devicetype: p
       name: Enable
       description: Enables OmniTrail device location services and options. 
     - code: 0
       mx: "6.3"
+      devicetype: p
       name: Disable
       description: Disables OmniTrail device location services and options. 
 ---

@@ -14,14 +14,17 @@ parm:
     - code: 0
       mx: "4.2"
       osx: "4.2"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the state of the Bluetooth radio; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Enable 
       mx: "4.2"
       osx: "4.2"
       description: On KitKat devices, puts the Bluetooth radio (if Turned On) in an active state. On Jelly Bean devices, Turns On the Bluetooth radio, enabling its usage on the device and changes to its state.
     - code: 2
+      devicetype: p
       name: Disable
       mx: "4.2"
       osx: "4.2"

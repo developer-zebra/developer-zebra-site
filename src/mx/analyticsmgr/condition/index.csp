@@ -15,31 +15,37 @@ parm:
     - code: 0
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: Unconditional
       description: Causes data to be collected according to the selected frequency for the Group regardless of data condition. 
     - code: 1
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: Equal to a Threshold Value
       description: Causes data to be collected only when the threshold value is equal to the value given for the given metric.
     - code: 2
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: Less Than a Threshold Value
       description: Causes data to be collected only when the threshold value is less than to the value given for the given metric.
     - code: 3
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: Greater Than a Threshold Value
       description: Causes data to be collected only when the threshold value is greater than to the value given for the given metric.
     - code: 4
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: Less Than or Equal to a Threshold Value
       description: Causes data to be collected only when the threshold value is less than or equal to the value given for the given metric.
     - code: 5
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: Greater Than or Equal to a Threshold Value
       description: Causes data to be collected only when the threshold value is greater than or equal to the value given for the given metric.
       

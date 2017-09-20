@@ -12,9 +12,11 @@ parm:
   type: list
   list:
     - code: 1
+      devicetype: p
       name: Select using a standard feature name
       description: This value indicates that a Standard Licensed Feature Name will be specified to identify the Software License to be removed from the device.
     - code: 2
+      devicetype: p
       name: Select using a custom feature name
       description: This value indicates that a Custom Licensed Feature Name will be specified to identify the Software License to be removed from the device.
 ---

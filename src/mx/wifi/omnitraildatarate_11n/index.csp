@@ -13,66 +13,82 @@ parm:
   list:
     - code: 12
       mx: "6.3"
+      devicetype: p
       name: MCS0
       description: Sets the data rate to 6.5 Mbps 
     - code: 13
       mx: "6.3"
+      devicetype: p
       name: MCS1
       description: Sets the data rate to 13 Mbps 
     - code: 14
       mx: "6.3"
+      devicetype: p
       name: MCS2
       description: Sets the data rate to 19.5 Mbps
     - code: 15
       mx: "6.3"
+      devicetype: p
       name: MCS3
       description: Sets the data rate to 26 Mbps
     - code: 16
       mx: "6.3"
+      devicetype: p
       name: MCS4
       description: Sets the data rate 39 Mbps
     - code: 17
       mx: "6.3"
+      devicetype: p
       name: MCS5
       description: Sets the data rate to 52 Mbps
     - code: 18
       mx: "6.3"
+      devicetype: p
       name: MCS6
       description: Sets the data rate 58.5 Mbps 
     - code: 19
       mx: "6.3"
+      devicetype: p
       name: MCS7
       description: Sets the data rate 65 Mbps
     - code: 20
       mx: "6.3"
+      devicetype: p
       name: MCS8
       description: Sets the data rate 13 Mbps
     - code: 21
       mx: "6.3"
+      devicetype: p
       name: MCS9
       description: Sets the data rate to 26 Mbps
     - code: 22
       mx: "6.3"
+      devicetype: p
       name: MCS10
       description: Sets the data rate to 39 Mbps
     - code: 23
       mx: "6.3"
+      devicetype: p
       name: MCS11
       description: Sets the data rate to 52 Mbps
     - code: 24
       mx: "6.3"
+      devicetype: p
       name: MCS12
       description: Sets the data rate to 78 Mbps
     - code: 25
       mx: "6.3"
+      devicetype: p
       name: MCS13
       description: Sets the data rate to 104 Mbps
     - code: 26
       mx: "6.3"
+      devicetype: p
       name: MCS14
       description: Sets the data rate to 117 Mbps
     - code: 27
       mx: "6.3"
+      devicetype: p
       name: MCS15
       description: Sets the data rate to 130 Mbps
 ---

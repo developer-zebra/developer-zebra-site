@@ -13,11 +13,13 @@ parm:
   type: list
   list:
     - code: 1
+      devicetype: p
       name: True
       mx: "4.1.1"
       apilevel: "16"
       description: Causes an APN already defined on the device to be replaced by a new one of the same name. 
     - code: 0
+      devicetype: p
       name: False
       mx: "4.1.1"
       apilevel: "16"

@@ -13,10 +13,12 @@ parm:
   list:
     - code: 1
       mx: "4.4"
+      devicetype: p
       name: (checked)
       description: Enables logging on the device. 
     - code: 0
       mx: "4.4"
+      devicetype: p
       name: (unchecked)
       description: Disables logging on the device. 
 ---

@@ -13,21 +13,25 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to whether Signature verification will occur or for which applications.
       mx: "4.3"
       osx: "3.5"
     - code: 1
+      devicetype: p
       name: Do not verify app signature
       description: This value will cause Signature verification to be turned off, thus causing Package Names alone to be used in to determine if an application is on the "white" list.
       mx: "4.3"
       osx: "3.5"
     - code: 2
+      devicetype: p
       name: Verify user app signature
       description: This value will cause Signature verification to be turned on, thus causing Signature verification to be used in addition to Package Names to determine if a user, or "installable," application is on the "white" list.
       mx: "4.3"
       osx: "3.5"
     - code: 3
+      devicetype: p
       name: Verify all apps signature
       description: This value will cause Signature verification to be turned on, thus causing Signature verification to be used in addition to Package Names to determine if any application, "built-in" or "installable," is on the "white" list.
       mx: "4.3"

@@ -15,21 +15,25 @@ parm:
     - code: 0
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: No Command
       description: This value (or the absence of this parm from the XML) will execute no command.  
     - code: 1
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: Engine.UploadCurrentLogFile
       description: Instructs the Analytics Engine to upload the current log file.
     - code: 2
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: Engine.UploadAllLogFiles
       description: Instructs the Analytics Engine to upload all log files.
     - code: 3
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: Custom Command
       description: Accepts a custom command. 
 

@@ -12,14 +12,17 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: Do Not Change
       description: This value (or the absence of this parm from the XML) will cause no changes; any previously selected setting will be retained.
       mx: "6.0"
     - code: 1
+      devicetype: p
       name: Turn On
       description: Enables an administrator to set log-in credentials for the device.
       mx: "6.0"
     - code: 2
+      devicetype: p
       name: Turn Off
       description: Disables the setting of log-in credentials for the device.
       mx: "6.0"

@@ -13,11 +13,13 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: Do not perform
       mx: "4.3"
       osx: "3.5"
       description: Secure Storage Keys will not be removed.
     - code: 1
+      devicetype: p
       name: Perform
       description: Secure Storage Keys will be removed upon threat detection.
       mx: "4.3"

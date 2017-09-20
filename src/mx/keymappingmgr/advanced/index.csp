@@ -13,9 +13,11 @@ parm:
   list:
     - code: 1
       mx: "4.4"
+      devicetype: p
       name: True
       description: This value indicates that Advanced section will be specified.
     - code: 2
+      devicetype: p
       name: False
       mx: "4.4"
       description: This value (or the absence of this parm from the XML) indicates that the Advanced section will not be specified.

@@ -12,36 +12,43 @@ parm:
   list:
     - code: 0
       mx: "4.2"
+      devicetype: p
       name: Do nothing
       description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Sleep Mode
       mx: "4.1"
       description: Puts the device into Sleep mode, reducing power usage and some app functions. See Overview for more information.
     - code: 4
+      devicetype: p
       name: Reboot
       mx: "4.2"
       apilevel: 16
       description: Reboots the operating system on the device, resetting volatile memory and terminating execution of any subsequent PowerMgr actions (non-volatile settings and storage are preserved).
     - code: 5
+      devicetype: p
       name: Enterprise Reset
       mx: "4.2"
       osx: "4.2"
       apilevel: "19"
       description: Performs an Enterprise Reset, returning the device to an enterprise-defined default state as generally determined by the contents of the /enterprise partition. See Overview for more information. 
     - code: 6
+      devicetype: p
       name: Factory Reset
       mx: "4.2"
       osx: "4.2"
       apilevel: "19"
       description: Performs a Factory Reset, erasing all data partitions, including /data, /cache and /enterprise, and some storage cards. See Overview for more information. 
     - code: 7
+      devicetype: p
       name: Full Device Wipe
       mx: "4.2"
       osx: "4.2"
       apilevel: "19"
       description: Erases all data on the device and storage cards, if any. See Overview for more information.
     - code: 8
+      devicetype: p
       name: OS Update
       mx: "4.1"
       apilevel: "16"

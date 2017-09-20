@@ -16,10 +16,12 @@ parm:
     - code: 0
       mx: "6.2"
       osx: "6.2"
+      devicetype: p
       name: (unchecked)
       apilevel: "23"
       description: Allows IP address settings to be configured manually. 
     - code: 1
+      devicetype: p
       name: (checked)
       mx: "6.2"
       osx: "6.2"

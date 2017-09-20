@@ -14,14 +14,17 @@ parm:
     - code: 0
       mx: "5.1"
       apilevel: "22"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to the device's ability to pair with discovered Bluetooth devices; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Enable
       mx: "5.1"
       apilevel: "22"
       description: Enables the device to pair with newly discovered Bluetooth devices.
     - code: 2
+      devicetype: p
       name: Disable
       mx: "5.1"
       apilevel: "22"

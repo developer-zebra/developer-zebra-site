@@ -14,14 +14,17 @@ parm:
     - code: 0
       mx: "4.3"
       apilevel: "3"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will not make any change to the Unknown Sources Option; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Turn On
       mx: "4.3"
       apilevel: "3"
       description: Turns the Unknown Sources Option on, allowing the device user to install apps from sources other than Google Play.
     - code: 2
+      devicetype: p
       name: Turn Off
       mx: "4.3"
       apilevel: "3"

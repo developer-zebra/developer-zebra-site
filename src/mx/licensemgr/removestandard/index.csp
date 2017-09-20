@@ -12,6 +12,7 @@ parm:
   type: list
   list:
     - code: SIMULDC1_0_0
+      devicetype: p
       name: SimulScan OCR/OMR
       description: This value will cause the Software License for the SimulScan Software Component to be removed from the device.
 ---

@@ -12,14 +12,17 @@ parm:
   type: list
   list:
     - code: 1
+      devicetype: p
       name: General Data File
       mx: "4.3"
       description: Indicates a source file with any extension type.
     - code: 2
+      devicetype: p
       name: Android Application
       mx: "4.3"
       description: Indicates a source file with an .APK extension
     - code: 3
+      devicetype: p
       name: Android OS Update
       mx: "4.3"
       description: Indicates a source file with a .ZIP extension.

@@ -13,13 +13,16 @@ parm:
   list:
     - code: 0
       mx: "4.2"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the Touch Mode; any previously selected setting will be retained. 
     - code: 1
+      devicetype: p
       name: Stylus and Finger 
       mx: "4.2"
       description: Adjusts touch-screen sensitivity for input with a stylus or bare finger.
     - code: 2
+      devicetype: p
       name: Glove and Finger
       mx: "4.2"
       description: Adjusts touch-screen sensitivity for input with a bare or gloved finger.

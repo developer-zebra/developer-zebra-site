@@ -12,41 +12,49 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: Do not change
       mx: "4.3"
       apilevel: "1"
       description: This value (or the absence of this parm from the XML) will cause no change to the current display screen timeout interval; any previously selected setting will be retained. 
     - code: 15
+      devicetype: p
       name: 15 seconds after Display Timeout
       mx: "4.3"
       apilevel: "1"
       description: Causes the display screen to timeout after 15 seconds of device-user inaction.
     - code: 30
+      devicetype: p
       name: 30 seconds after Display Timeout
       mx: "4.3"
       apilevel: "1"
       description: Causes the display screen to timeout after 30 seconds of device-user inaction.
     - code: 60
+      devicetype: p
       name: 1 minute after Display Timeout
       mx: "4.3"
       apilevel: "1"
       description: Causes the display screen to timeout after one minute of device-user inaction.
     - code: 120
+      devicetype: p
       name: 2 minutes after Display Timeout
       mx: "4.3"
       apilevel: "1"
       description: Causes the display screen to timeout after two minutes of device-user inaction.
     - code: 300
+      devicetype: p
       name: 5 minutes after Display Timeout
       mx: "4.3"
       apilevel: "1"
       description: Causes the display screen to timeout after five minutes of device-user inaction.
     - code: 600
+      devicetype: p
       name: 10 minutes after Display Timeout
       mx: "4.3"
       apilevel: "1"
       description: Causes the display screen to timeout after 10 minutes of device-user inaction.
     - code: 1800
+      devicetype: p
       name: 30 minutes after Display Timeout
       mx: "4.3"
       apilevel: "1"

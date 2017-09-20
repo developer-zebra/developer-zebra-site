@@ -11,15 +11,18 @@ parm:
   type: list
   list:
     - code: 1
+      devicetype: p
       name: Transfer/Copy File
       mx: "4.3"
       description: Copies a specified file to the device.
     - code: 4
+      devicetype: p
       name: Delete File
       mx: "4.3"
       description: Erases a specified file from the device.
     - code: 9
       mx: "5.0"
+      devicetype: p
       name: Download and Expand Archive File
       description: Copies an archive file to the device and extracts its contents.
 ---

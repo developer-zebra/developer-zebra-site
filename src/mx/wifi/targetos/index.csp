@@ -12,6 +12,7 @@ parm:
   list:
     - code: 2
       mx: "4.2"
+      devicetype: p
       name: Android
       description: Specifies Android as the operating system of the target device. 
 ---

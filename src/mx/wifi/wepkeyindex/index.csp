@@ -12,12 +12,16 @@ parm:
   type: list
   list:
     - code: 1
+      devicetype: p
       name: wep[0]
     - code: 2
+      devicetype: p
       name: wep[1]
     - code: 3
+      devicetype: p
       name: wep[2]
     - code: 4
+      devicetype: p
       name: wep[3]
 ---
 

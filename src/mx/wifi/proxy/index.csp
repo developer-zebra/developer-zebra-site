@@ -11,14 +11,17 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: None
       mx: "5.0"
       description: Since MX 5.0 the use of a code over a boolean value was implemented. This value was unaffected.
     - code: 1
+      devicetype: p
       name: Manual
       mx: "5.0"
       description: Since MX 5.0 the use of a code over a boolean was implemented. This value indicates a Manual Proxy.
     - code: 3
+      devicetype: p
       name: Proxy Auto-Config
       mx: "5.0"
       description: Automatically use a proxy. This value was introduced in MX 5.0.

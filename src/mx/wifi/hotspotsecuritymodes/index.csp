@@ -13,10 +13,12 @@ parm:
   list:
     - code: 0
       mx: "6.3"
+      devicetype: p
       name: Open
       description: Allows any device to connect to the Wi-Fi hotspot without entering credentials.
     - code: 1
       mx: "6.3"
+      devicetype: p
       name: WPA2/PSK
       description: Requires user credentials to be entered before allowing a connection to the Wi-Fi hotspot. 
 ---

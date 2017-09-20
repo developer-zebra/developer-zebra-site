@@ -12,10 +12,12 @@ parm:
   list:
     - code: 1
       mx: "4.2"
+      devicetype: p
       name: (checked)
       description: Enables the use of Wi-Fi Advanced Options on the device. 
     - code: 0
       mx: "4.2"
+      devicetype: p
       name: (unchecked)
       description: Disables the use of Wi-Fi Advanced Options on the device. 
 ---

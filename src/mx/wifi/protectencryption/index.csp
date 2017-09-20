@@ -12,14 +12,17 @@ parm:
   list:
     - code: 2
       mx: "6.1"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the current Password Protect Encryption setting; any previously selected setting will be retained.
     - code: 1
       mx: "6.1"
+      devicetype: p
       name: Enable
       description: Causes passwords stored on the device to be encrypted. 
     - code: 0
       mx: "6.1"
+      devicetype: p
       name: Disable
       description: Disables encryption for passwords stored on the device. 
 ---

@@ -14,9 +14,11 @@ parm:
     - code: true
       mx: "4.2"
       osx: "4.2"
+      devicetype: p
       name: True
       description: Clears the clipboard, erasing any content that was previously copied and preventing such content from being pasted.
     - code: false
+      devicetype: p
       name: False 
       mx: "4.2"
       osx: "4.2"

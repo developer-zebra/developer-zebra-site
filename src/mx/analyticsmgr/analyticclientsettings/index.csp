@@ -15,16 +15,19 @@ parm:
     - code: 0
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to whether the Analytics Client Settings are enabled; any previously selected setting will be retained. 
     - code: 1
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: Enable
       description: Enables Analytics Client Settings to be configured for throttling or controlling data and events upload.
     - code: 2
       mx: "5.1"
       apilevel: "19"
+      devicetype: p
       name: Disable
       description: Disables the ability to configure Analytics Client Settings for throttling or data and events upload.
 ---

@@ -14,14 +14,17 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "1.3"
+      devicetype: p
       name: Do nothing
       description: This value (or the absence of this parm from the XML) will not make any change to whether any application is approved to be a Device Administrator; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Turn On as Device Administrator
       mx: "4.3"
       osx: "1.3"
       description: Approves a specific application as a Device Administrator.
     - code: 2
+      devicetype: p
       name: Turn Off as Device Administrator
       mx: "4.3"
       osx: "1.3"

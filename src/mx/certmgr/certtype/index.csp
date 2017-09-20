@@ -13,26 +13,31 @@ parm:
   type: list
   list:
     - code: 5
+      devicetype: p
       name: CA Certificate (.PEM file)
       mx: "4.1"
       osx: "1.0"
       description: This value indicates that the Certificate to be installed is a CA Certificate (contained within a .PEM or .CER file) that will be added to both the Trusted Store and Android Keystore.
     - code: 6
+      devicetype: p
       name: Client Certificate (.PEM file)
       mx: "4.1"
       osx: "1.0"
       description: This value indicates that the Certificate to be installed is the Public Certificate only (contained within a .PEM or .CER file) for a Client Certificate that will be added only to the Android Keystore.
     - code: 8
+      devicetype: p
       name: Client Certificate and Private Key (.PFX file)
       mx: "4.1"
       osx: "1.0"
       description: This value indicates that the Certificate to be installed is a Public Certificate and Private Key (contained within a .PFX file) for a Client Certificate that will be added only to the Android Keystore.
     - code: 9
+      devicetype: p
       name: Client Certificate and Private Key (.P12 file)
       mx: "4.1"
       osx: "1.0"
       description: This value indicates that the Certificate to be installed is a Public Certificate and Private Key (contained within a .P12 file) for a Client Certificate that will be added only to the Android Keystore.
     - code: 10
+      devicetype: p
       name: Client Certificate and Private Key (.PKCS12 file)
       mx: "4.1"
       osx: "1.0"

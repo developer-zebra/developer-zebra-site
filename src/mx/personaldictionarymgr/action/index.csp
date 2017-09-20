@@ -12,26 +12,32 @@ parm:
   list:
     - code: 1
       mx: "6.0"
+      devicetype: p
       name: Add a word
       description: Adds the specified term to the dictionary.
     - code: 2
       mx: "6.0"
+      devicetype: p
       name: Delete a word
       description: Deletes the specified term from the dictionary.
     - code: 3
       mx: "6.0"
+      devicetype: p
       name: Delete all words
       description: Deletes all terms from the dictionary. WARNING- This action clears all saved data.
     - code: 4
       mx: "6.3"
+      devicetype: p
       name: Add words from a file
       description: Adds words to the dictionary from a file on the device.
     - code: 5
       mx: "6.3"
+      devicetype: p
       name: Delete words from a file
       description: Removes terms from the dictionary that match terms specified in a file on the device.
     - code: 6
       mx: "6.3"
+      devicetype: p
       name: Export words to a file
       description: Saves terms in the current dictionary to a file on the device.
 ---

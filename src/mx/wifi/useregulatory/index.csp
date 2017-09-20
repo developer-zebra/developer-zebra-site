@@ -12,10 +12,12 @@ parm:
   list:
     - code: 11
       mx: "4.2"
+      devicetype: p
       name: UseRegulatory
       description: Permits manual country selection. 
     - code: 12
       mx: "4.2"
+      devicetype: p
       name: Country
       description: Allows the country to be determined by the router.
 ---

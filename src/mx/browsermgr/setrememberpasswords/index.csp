@@ -14,6 +14,7 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the Remember Passwords Option; any previously selected setting will be retained.
       mx: "4.3"
@@ -21,6 +22,7 @@ parm:
       osx-end: "3.9"
       osx-exclude: "4.0"
     - code: 1
+      devicetype: p
       name: Turn On
       mx: "4.3"
       osx: "1.3"
@@ -28,6 +30,7 @@ parm:
       osx-exclude: "4.0"
       description: Enables the Remember Passwords option, which will prompt the user to save any password entered.
     - code: 2
+      devicetype: p
       name: Turn Off
       mx: "4.4"
       osx: "1.3"

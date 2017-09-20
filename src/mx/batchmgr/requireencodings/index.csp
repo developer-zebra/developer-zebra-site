@@ -12,10 +12,12 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: False
       description: Binary file does not require encoding.
       mx: "4.3"
     - code: 1
+      devicetype: p
       name: True
       description: Binary file requires to be encoded.
       mx: "4.3"

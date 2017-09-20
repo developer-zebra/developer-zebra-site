@@ -13,11 +13,13 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: Do Nothing
       mx: "4.3"
       osx: "1.0"
       description: This value indicates that the BSF for the EFS to be Deleted is in the internal storage (i.e. /data) of the device.
     - code: 1
+      devicetype: p
       name: Install Key
       mx: "4.3"
       osx: "1.0"

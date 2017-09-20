@@ -12,13 +12,16 @@ parm:
   list:
     - code: 0
       mx: "6.0"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Turn on
       mx: "6.0"
       description: Enables Enterprise Keyboard to suggest contact names from contacts stored on the device as they're being typed.
     - code: 2
+      devicetype: p
       name: Turn off
       mx: "6.0"
       description: Disables the suggestion of contact names from contacts stored on the device as they're being typed.

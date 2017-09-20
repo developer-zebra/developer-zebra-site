@@ -14,14 +14,17 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "3.5"
+      devicetype: p
       name: Control Individual Cameras
       description: This value (or the absence of this parm from the XML) causes no change to whether any of the device's cameras are individually enabled or disabled, only whether they CAN be enabled or disabled by a subsequent command from another parm. A zero or null value here permits the front- and rear-facing cameras to be controlled individually by their respective parms. Cameras and other imaging devices enabled or disabled previously by CameraMgr will remain in that state until explicitly commanded to do otherwise. 
     - code: 1
+      devicetype: p
       name: Enable ALL Cameras
       mx: "4.3"
       osx: "3.5"
       description: Enables all cameras and devices classified as cameras, allowing any camera to take pictures or otherwise acquire documents or images if an application exists on the device to do so.
     - code: 2
+      devicetype: p
       name: Disable ALL Cameras
       mx: "4.3"
       osx: "3.5"

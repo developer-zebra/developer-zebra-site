@@ -13,202 +13,252 @@ parm:
   list:
     - code: (null)
       mx: "4.4"
+      devicetype: p
       name: None
       description: A null value (or the absence this parm from the XML) will result in no Key Mapping action; any previously selected setting will be retained.
     - code: 0-9
       mx: "4.4"
+      devicetype: p
       name: Number Keys
       description: Specify a number to select the corresponding numerical key. For example, specify the number "2" to select the "2" key.
     - code: A-Z
       mx: "4.4"
+      devicetype: p
       name: Alpha Keys
       description: Specify a letter of the alphabet to select the corresponding key. For example, specify the letter "A" to select the "A" key.
     - code: F1-F12
       mx: "4.4"
+      devicetype: p
       name: Function Keys
       description: Use "F" plus the number of the desired function key. For example, specify "F10" to select the "F10" key.
     - code: ENTER
       mx: "4.4"
+      devicetype: p
       name: Enter
       description: The "Enter" key on the device (might be different than the "Return" key)
     - code: UP
       mx: "4.4"
+      devicetype: p
       name: Up
       description: The Up-arrow key
     - code: DOWN
       mx: "4.4"
+      devicetype: p
       name: Down
       description: The Down-arrow key
     - code: LEFT
       mx: "4.4"
+      devicetype: p
       name: Left
       description: The Left-arrow key
     - code: RIGHT
       mx: "4.4"
+      devicetype: p
       name: Right
       description: The Right-arrow key
     - code: ESC
       mx: "4.4"
+      devicetype: p
       name: Escape
       description: The Escape or "ESC" key
     - code: BACKSPACE
       mx: "4.4"
+      devicetype: p
       name: Backspace
       description: The Backspace or "BKSP" key
     - code: DOT
       mx: "4.4"
+      devicetype: p
       name: Period
       description: The period or "dot" key
     - code: STAR
       mx: "4.4"
+      devicetype: p
       name: Star
       description: The "Star" key (this is not the "asterisk" key)
     - code: POUND
       mx: "4.4"
+      devicetype: p
       name: Pound
       description: The Pound ("#") or number-sign key
     - code: SPACE
       mx: "4.4"
+      devicetype: p
       name: Space
       description: The Space key or spacebar
     - code: RETURN
       mx: "4.4"
+      devicetype: p
       name: Return
       description: The "Return" key (might be different than the "Enter" key)
     - code: CLR
       mx: "4.4"
+      devicetype: p
       name: Clear
       description: The "Clear" key
     - code: FIELD_EXIT
       mx: "4.4"
+      devicetype: p
       name: Field Exit
       description: The "Field Exit" key
     - code: ALT 
       mx: "4.4"
+      devicetype: p
       name: Alt
       description: The "Alt" modifier/meta key
     - code: CTRL
       mx: "4.4"
+      devicetype: p
       name: Control
       description: The Control or "CRTL" modifier/meta key
     - code: SHIFT
       mx: "4.4"
+      devicetype: p
       name: Shift
       description: The "SHIFT" modifier/meta key
     - code: BLUE
       mx: "4.4"
+      devicetype: p
       name: Blue
       description: The key that is colored completely blue (sometimes known as the "Function" key)
     - code: ORANGE
       mx: "4.4"
+      devicetype: p
       name: Orange
       description: The key that is colored completely orange (sometimes known as the "Alpha" key)
     - code: GREEN
       mx: "4.4"
+      devicetype: p
       name: Green Dot
       description: The key with a green dot on it
     - code: RED
       mx: "4.4"
+      devicetype: p
       name: Red Dot
       description: The key with a red dot on it
     - code: VOLUMEUP
       mx: "4.4"
+      devicetype: p
       name: Volume Up
       description: The key that increases the audio volume on the device
     - code: VOLUMEDOWN
       mx: "4.4"
+      devicetype: p
       name: Volume Down
       description: The key that decreases the audio volume on the device
     - code: SCAN
       mx: "4.4"
+      devicetype: p
       name: Scan
       description: The key or button that invokes the device scanner
     - code: GRIP_TRIGGER
       mx: "4.4"
+      devicetype: p
       name: Grip Trigger
       description: Usually the upper-most button on the hand grip
     - code: GRIP_TRIGGER_2
       mx: "6.1"
+      devicetype: p
       name: Grip Trigger 2
       description: The lower button on the hand grip when two grip buttons are present on the device
     - code: LEFT_TRIGGER_1
       mx: "4.4"
+      devicetype: p
       name: Button L1
       description: Usually the upper-most button on the left side of the device 
     - code: LEFT_TRIGGER_2
       mx: "4.4"
+      devicetype: p
       name: Button L2
       description: The lower button on the left side of the device when two buttons are present on the left side
     - code: RIGHT_TRIGGER_1
       mx: "4.4"
+      devicetype: p
       name: Button R1
       description: Usually the upper-most button on the right side of the device
     - code: RIGHT_TRIGGER_2
       mx: "4.4"
+      devicetype: p
       name: Button R2
       description: The lower button on the right side of the device when two buttons are present on the right side
     - code: HEADSET_HOOK
       mx: "4.4"
+      devicetype: p
       name: Headset Button
       description: The button that picks up/hangs up the headset
     - code: BACK
       mx: "4.4"
+      devicetype: p
       name: Back
       description: The "BACK" key, button or capacitive button on the device
     - code: HOME
       mx: "4.4"
+      devicetype: p
       name: Home
       description: The "HOME" key, button or capacitive button on the device
     - code: MENU
       mx: "4.4"
+      devicetype: p
       name: Menu
       description: The "MENU" key, button or capacitive button on the device
     - code: RECENT
       mx: "4.4"
+      devicetype: p
       name: Recent
       description: The "Recent Apps" key, button or capacitive button on the device
     - code: SEARCH
       mx: "4.4"
+      devicetype: p
       name: Search
       description: The "Search" key, button or capacitive button on the device
     - code: KEYLIGHT 
       mx: "4.4"
+      devicetype: p
       name: Keyboard Backlight
       description: The keyboard backlight key or button on the device
     - code: LAMP
       mx: "4.4"
+      devicetype: p
       name: Display Backlight
       description: The display-screen backlight key or button on the device
     - code: POWER
       mx: "4.4"
+      devicetype: p
       name: Power
       description: The "Power" (on/off) key or button on the device
     - code: P1
       mx: "5.2"
+      devicetype: p
       name: P1 Button
       description: The button marked "P1"
     - code: P2
       mx: "5.2"
+      devicetype: p
       name: P2 Button
       description: The button marked "P2"
     - code: P3
       mx: "5.2"
+      devicetype: p
       name: P3 Button
       description: The button marked "P3"
     - code: REAR_BUTTON
       mx: "6.1"
+      devicetype: p
       name: Rear Button
       description: The button on the rear of the device
     - code: LEFT_EXTERNAL_TRIGGER
       mx: "5.2"
+      devicetype: p
       name: Left External Trigger
       description: The trigger button on the left side of an external triggering device
     - code: RIGHT_EXTERNAL_TRIGGER
       mx: "5.2"
+      devicetype: p
       name: Right External Trigger
       description: The trigger button on the right side of an external triggering device
     - code: NAV_PAD
       mx: "6.2"
+      devicetype: p
       name: Touch NAV_PAD
       description: The touch-sensitive navigation pad on a device
 ---

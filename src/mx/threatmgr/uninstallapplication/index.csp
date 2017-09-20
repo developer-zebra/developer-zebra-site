@@ -13,11 +13,13 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: p
       name: Do not perform
       mx: "4.3"
       osx: "3.5"
       description: Countermeasure will not be executed.
     - code: 1
+      devicetype: p
       name: Perform
       mx: "4.3"
       osx: "3.5"

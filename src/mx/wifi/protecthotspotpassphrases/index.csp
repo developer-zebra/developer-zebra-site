@@ -13,10 +13,12 @@ parm:
   list:
     - code: 0
       mx: "6.3"
+      devicetype: p
       name: (unchecked)
       description: Stores hotspot passwords as clear text
     - code: 1
       mx: "6.3"      
+      devicetype: p
       name: (checked)
       description: Stores hotspot password as encrypted text
 ---

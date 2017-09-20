@@ -15,11 +15,13 @@ parm:
     - code: 0
       mx: "6.0"
       apilevel: "19"
+      devicetype: p
       name: Disable
       description: Disables data collection for a given Feature. 
     - code: 1
       mx: "6.0"
       apilevel: "19"
+      devicetype: p
       name: Enable
       description: Enables data collection for a given Feature.
 

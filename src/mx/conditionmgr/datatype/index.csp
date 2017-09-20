@@ -12,13 +12,16 @@ parm:
   list:
     - code: 1
       mx: 4.4
+      devicetype: p
       name: Boolean
       description: The tested value will be either true or false. 
     - code: 2
+      devicetype: p
       name: Integer
       mx: 4.4
       description: The tested value will be a number. 
     - code: 3
+      devicetype: p
       name: String
       mx: 6.0
       description: The tested value will be a string of characters.  

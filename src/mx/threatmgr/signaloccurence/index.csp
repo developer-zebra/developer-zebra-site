@@ -15,9 +15,11 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "3.5"
+      devicetype: p
       name: Do nothing
       description: Performs no signaling when an externally occurring Threat is detected. 
     - code: 1
+      devicetype: p
       name: Signal Occurrence
       mx: "4.3"
       osx: "3.5"

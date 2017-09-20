@@ -13,6 +13,7 @@ parm:
   list:
     - code: 1
       mx: 4.4
+      devicetype: p
       name: Battery Level
       description: The current percentage of battery charge from 0-100 
 ---

@@ -15,14 +15,17 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "3.5"
+      devicetype: p
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to whether the device's rear-facing camera can be used; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: Enable
       mx: "4.3"
       osx: "3.5"
       description: Enables use of the rear-facing camera on the device, allowing that camera to take pictures or otherwise acquire documents or images if an application exists on the device to do so.
     - code: 2
+      devicetype: p
       name: Disable
       mx: "4.3"
       osx: "3.5"

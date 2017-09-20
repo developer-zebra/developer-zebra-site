@@ -11,14 +11,17 @@ parm:
   type: list
   list:
     - code: 1
+      devicetype: p
       name: File on remote server
       mx: "4.3"
       description: Indicates the source file is on a remote server.
     - code: 2
+      devicetype: p
       name: File on device file system
       mx: "4.3"
       description: Indicates the source file is on the device.
     - code: 3
+      devicetype: p
       name: File embedded in XML
       mx: "4.3"
       description: Indicates the source file is embedded in XML.

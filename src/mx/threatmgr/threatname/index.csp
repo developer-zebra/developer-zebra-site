@@ -13,31 +13,37 @@ parm:
   type: list
   list:
     - code: 1
+      devicetype: p
       name: Do Nothing
       mx: "6.1"
       osx: "3.5"
       description: This value (or the absence of this parm from the XML) will make no change to the Threat(s) being detected on the device; any previously selected setting will be retained.
     - code: 1
+      devicetype: p
       name: MaxPasswordAttempts
       mx: "4.3"
       osx: "3.5"
       description: Detect when the Multi-user MX lockscreen has reached the maximum number of failed password attempts (9). See important note above. 
     - code: 2
+      devicetype: p
       name: MDMClientRemoval 
       mx: "4.3"
       osx: "3.5"
       description: Detects that an MDM client app has been removed from the device.
     - code: 3
+      devicetype: p
       name: ExternallyDetected
       mx: "4.3"
       osx: "3.5"
       description: A custom Threat defined by an intent that can be triggered from an application.
     - code: 4
+      devicetype: p
       name: ExchangeActiveSyncCommand 
       mx: "4.3"
       osx: "3.5"
       description: Detects a Threat encountered while syncing with Microsoft Exchange.
     - code: 5
+      devicetype: p
       name: DeviceisRooted 
       mx: "4.3"
       osx: "3.5"

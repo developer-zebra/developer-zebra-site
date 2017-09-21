@@ -71,7 +71,7 @@ Error messages are logged for invalid actions and parameters.
 	this.sendBroadcast(i);
 
 #### Sample delay code 
-The soft scan trigger command should be delayed sufficiently to enable the scanner to complete the task. Delay code similar to that shown below could be used:
+The soft scan trigger command should be sufficiently delayed to enable the scanner to complete the task. Delay code similar to that shown below could be used:
 
 	// SAMPLE DELAY CODE
 	int triggerDelay = 250; // delay in milliseconds
@@ -83,6 +83,8 @@ The soft scan trigger command should be delayed sufficiently to enable the scann
 	                startSoftScan();
 	        }
 	}, triggerDelay);
+
+While generally effective for this purpose, delay code can work inconsistently across devices. As an alternative, **Zebra recommends using the** `SCANNER_STATUS` **parameter of the [NOTIFICATION API](../registerfornotification) as a signal**. 
 
 #### Generate and receive result codes
 Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. 

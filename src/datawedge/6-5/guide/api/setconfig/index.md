@@ -46,10 +46,11 @@ The PLUGIN_CONFIG bundle is configured using the following properties:
 
 **PLUGIN_NAME** [String]: Name of the Plug-in to configure. See tables below for `PARAM_LIST` values. 
 
- * BARCODE input
- * INTENT output
- * KEYSTROKE output
- * BDF (basic data formatting) processing
+
+ * **BARCODE** input
+ * **INTENT** output
+ * **KEYSTROKE** output
+ * **BDF** (basic data formatting) processing
 
 To be implemented in the future: 
   * ADF (advanced data formatting) processing 
@@ -57,6 +58,10 @@ To be implemented in the future:
   * IP output
   * MSR input
   * SIMULSCAN input 
+
+**Notes**: 
+* Plug-in names are case sensitive.
+* Each intent involving a Plug-in requires a separate intent Action.   
 
 **PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters that should be updated under the specified Plug-in. Setting an empty string in any parameter value resets that parameter to its default setting. 
 
@@ -101,9 +106,9 @@ An array of bundles that contains a set of `PACKAGE_NAMES` and an `ACTIVITY_LIST
 ##### APP_LIST BUNDLE
 Contains the following properties:
 
-**PACKAGE_NAME** [String]: ex: "com.symbol.emdk.barcodesample1" or a wild card (*) character 
+**PACKAGE_NAME** [String]: ex: "com.symbol.emdk.barcodesample1" or a wildcard (&#42;) character 
 
-**ACTIVITY_LIST** [List]: A list of activities for the `PACKAGE_NAME`. Wildcard (*) character also supported.
+**ACTIVITY_LIST** [List]: A list of activities for the `PACKAGE_NAME`. Wildcard (&#42;) character also supported.
 
 ### Result Codes
 
@@ -141,20 +146,19 @@ Error messages are logged for invalid actions and parameters
 
 	// PLUGIN_CONFIG BUNDLE PROPERTIES
 		Bundle bConfig = new Bundle();
-		bConfig.putString("PLUGIN_NAME","Barcode");
+		bConfig.putString("PLUGIN_NAME","BARCODE");
 		bConfig.putString("RESET_CONFIG","true"); 
 
 
 	// PARAM_LIST BUNDLE PROPERTIES
 		Bundle bParams = new Bundle();
-		bParams.putString("current-device-id","0");
+		bParams.putString("scanner_selection","auto");
 		bParams.putString("scanner_input_enabled","true");
 	// 
-	// NOTE: The "current-device-id" varies by device; it depends on the number of
-	// supported scanners (internal and/or external) installed and/or connected to 
-	// the device at the time the index is generated.     
+	// NOTE: The "scanner_selection" parameter (above) supports "auto" selection
+	// or the assignment of a scanner device index, which is obtained by using the
+	// ENUMERATE_SCANNERS API.
 	// 
-
 	// PUT bParams into bConfig
 		bConfig.putBundle("PARAM_LIST", bParams);
 
@@ -212,9 +216,9 @@ Error messages are logged for invalid actions and parameters
 
 	// plugin_config bundle properties
 		Bundle bConfig = new Bundle();
-		bConfig.putString("PLUGIN_NAME","bdf");
+		bConfig.putString("PLUGIN_NAME","BDF");
 		bConfig.putString("RESET_CONFIG","true");
-		bConfig.putString("OUTPUT_PLUGIN_NAME","keystroke");
+		bConfig.putString("OUTPUT_PLUGIN_NAME","KEYSTROKE");
 
 	// param_list bundle properties
 		Bundle bParams = new Bundle();
@@ -278,6 +282,8 @@ Command and configuration intent parameters determine whether to send result cod
 
 **Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
+> All parameters are case sensitive.
+
 <table class="c19">
 <tbody>
 <tr class="c6" bgcolor="#e0e0eb">
@@ -294,7 +300,7 @@ Command and configuration intent parameters determine whether to send result cod
 </tr>
 <tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">scanner_input_enabled</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">trigger-wakeup</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
-<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">scanner_selection</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Auto</span></p><p class="c1"><span class="c0">0&ndash;n (valid scanner index from <a href="../enumeratescanners">ENUMERATE_SCANNERS</a>)</span></p></td></tr>
+<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">scanner_selection</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">auto</span></p><p class="c1"><span class="c0">0&ndash;n (valid scanner index from <a href="../enumeratescanners">ENUMERATE_SCANNERS</a>)</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoder_upca</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoder_upce0</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">decoder_ean13</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>

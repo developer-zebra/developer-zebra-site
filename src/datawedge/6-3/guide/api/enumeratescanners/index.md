@@ -7,7 +7,7 @@ productversion: '6.3'
 
 ## ENUMERATE_SCANNERS
 
-Introduced with DataWedge 6.3. 
+Introduced in DataWedge 6.3. 
 
 Generates a numbered list (index) of scanners available on the device. 
 

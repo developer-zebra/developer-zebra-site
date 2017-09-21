@@ -9,7 +9,7 @@ productversion: '6.5'
 
 Introduced in DataWedge 6.5.
 
-**Intent result codes deliver status information about DataWedge API commands** to help developers determine the flow of data and the function of their business logic. Result codes are implemented with some of the APIs introduced with DataWedge 6.5 and have been added to many APIs that existed previously.  
+**Intent result codes deliver status information about DataWedge API commands** to help developers determine the flow of data and the function of their business logic. Result codes are implemented with some of the APIs Introduced in DataWedge 6.5 and have been added to many APIs that existed previously.  
 
 Result codes are accessed using the `RESULT_INFO` intent mechanism, which returns error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` as shown in the prototype below. See the [Example section](#example) below for code showing how to register the app to receive result codes. 
 

@@ -19,13 +19,13 @@ parm:
       devicetype: p
       name: Turn on
       mx: "7.1"
-      description: Enables Enterprise Keyboard to perform Auto-capitalization.
+      description: Causes the numeric layout to be displayed.
     - code: 2
       devicetype: p
       name: Turn off
       mx: "7.1"
-      description: Disables the Auto-capitalization feature.
+      description: Causes the numeric layout to be hidden.
 ---
 
-Controls whether to capitalize the first word of each sentence following a period. 
+Controls whether to display the numeric layout. 
 

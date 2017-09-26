@@ -10,22 +10,16 @@ parm:
   name: NavigationMode
   type: list
   list:
-    - code: 0
-      mx: "7.1"
-      devicetype: p
-      name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
     - code: 1
       devicetype: p
-      name: Turn on
+      name: Tabs
       mx: "7.1"
-      description: Enables Enterprise Keyboard to perform Auto-capitalization.
+      description: Uses tabs to navigate between keyboard layouts.
     - code: 2
       devicetype: p
-      name: Turn off
+      name: Legacy
       mx: "7.1"
-      description: Disables the Auto-capitalization feature.
+      description: Uses swipes to navigate between keyboard layouts.
 ---
 
-Controls whether to capitalize the first word of each sentence following a period. 
-
+Controls the means of navigating between keyboard layouts.  

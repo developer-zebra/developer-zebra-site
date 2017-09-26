@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Suggest Contact Names Enable/Disable
 type: parm
-order: 20
+order: 21
 mx: "6.0"
 devicetype: p
 parm:

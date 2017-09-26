@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Sound On Keypress Enable/Disable
 type: parm
-order: 18
+order: 20
 mx: "6.0"
 devicetype: p
 parm:

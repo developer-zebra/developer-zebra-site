@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Numeric Tab Show/Hide
 type: parm
-order: 60
+order: 17
 mx: "7.1"
 devicetype: p
 parm:
@@ -19,13 +19,12 @@ parm:
       devicetype: p
       name: Turn on
       mx: "7.1"
-      description: Causes the numeric layout to be displayed.
+      description: Shows the numeric tab among the other key layout tabs.
     - code: 2
       devicetype: p
       name: Turn off
       mx: "7.1"
-      description: Causes the numeric layout to be hidden.
+      description: Hides the numeric tab and prevents selection of the numeric key layout.
 ---
 
-Controls whether to display the numeric layout. 
-
+Controls whether to display the numeric tab among the other keyboard layout tabs. Hiding this tab prevents the numeric key layout from being selected by the device user. 

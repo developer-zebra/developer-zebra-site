@@ -1,0 +1,31 @@
+---
+csp: enterprisekeyboardmgr
+title: Navigation Mode
+type: parm
+order: 45
+mx: "7.1"
+devicetype: p
+parm:
+  pivotal: No
+  name: NavigationMode
+  type: list
+  list:
+    - code: 0
+      mx: "7.1"
+      devicetype: p
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
+    - code: 1
+      devicetype: p
+      name: Turn on
+      mx: "7.1"
+      description: Enables Enterprise Keyboard to perform Auto-capitalization.
+    - code: 2
+      devicetype: p
+      name: Turn off
+      mx: "7.1"
+      description: Disables the Auto-capitalization feature.
+---
+
+Controls whether to capitalize the first word of each sentence following a period. 
+

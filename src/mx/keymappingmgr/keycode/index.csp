@@ -375,6 +375,10 @@ parm:
       devicetype: p
       code: 10032
       mx: "4.4"
+    - name: Shift
+      devicetype: p
+      code: 10034
+      mx: "7.1"
     - name: Left Shift
       devicetype: p
       code: 59

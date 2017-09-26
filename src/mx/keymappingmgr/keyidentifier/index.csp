@@ -261,7 +261,63 @@ parm:
       devicetype: p
       name: Touch NAV_PAD
       description: The touch-sensitive navigation pad on a device
+    - code: M1
+      mx: "7.1"
+      devicetype: p
+      name: Macro 1
+      description: 
+    - code: M2
+      mx: "7.1"
+      devicetype: p
+      name: Macro 2
+      description: 
+    - code: M3
+      mx: "7.1"
+      devicetype: p
+      name: Macro 3
+      description: 
+    - code: M4
+      mx: "7.1"
+      devicetype: p
+      name: Macro 4
+      description: 
+    - code: M5
+      mx: "7.1"
+      devicetype: p
+      name: Macro 5
+      description: 
+    - code: M6
+      mx: "7.1"
+      devicetype: p
+      name: Macro 6
+      description: 
+    - code: BRIGHTNESSUP
+      mx: "7.1"
+      devicetype: p
+      name: Brightness Up
+      description: Increases the brightness of the display backlight
+    - code: BRIGHTNESSDOWN
+      mx: "7.1"
+      devicetype: p
+      name: Touch Brightness Down
+      description: Decreases the brightness of the display backlight
+    - code: KEYBOARD
+      mx: "7.1"
+      devicetype: p
+      name: Touch Keyboard
+      description: 
 ---
+
+   <item text="M1"                 ui="Macro 1" />
+        <item text="M2"                 ui="Macro 2" />
+        <item text="M3"                 ui="Macro 3" />
+        <item text="M4"                 ui="Macro 4" />
+        <item text="M5"                 ui="Macro 5" />
+        <item text="M6"                 ui="Macro 6" />
+        <item text="BRIGHTNESSUP"       ui="Brightness Up" />
+        <item text="BRIGHTNESSDOWN"     ui="Brightness Down" />
+        <item text="KEYBOARD"           ui="Keyboard" />
+
 Used to identify the Key for which an Override-Key Mapping will be added or modified. To add or modify an Override Mapping for a Key, specify the **Option** (Key Identifier) listed in the table below that matches the friendly **Name** and **Description** of the Key to be mapped.
 
 **Not all devices have Keys for every Key Identifier in the table**. Attempts to add an Override Mapping for a Key that is not present on a device will produce an error in the Result XML. For a list of supported Keys on a specific device, query the KeyMappingMgr for Key Identifiers (see Queries, below) or refer to the device documentation. For known deviations from these standards, **see the [Standards and Deviations section](#standardsanddeviations)** of the Overview at the top of this page. 

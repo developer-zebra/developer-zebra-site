@@ -29,4 +29,4 @@ parm:
 
 Controls whether to display the numeric tab among the other keyboard layout tabs. Hiding this tab prevents the numeric key layout from being selected by the device user. 
 
-**Note**: Enabling the Numeric tab disables remapping of the Alphanumeric P1 key.
+**Note: Enabling the Numeric tab disables remapping of the Alphanumeric P1 key**.

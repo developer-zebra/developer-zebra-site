@@ -20,15 +20,14 @@ Also see the [Enterprise Keyboard User Guide](../../../../enterprise-keyboard).
 * Auto-correction
 * Blocking of Offensive Words
 * Keypress Vibration, Sound and Key Pop-ups
-* Suggest Corrections, Personalized Terms and Contacts
+* Suggest Next Word, Spelling Corrections, Personalized Terms and Contacts
 * Display of Alphanumeric, Numeric, Scan and Symbol Tabs 
 * Display of Voice Input Key (microphone icon)
 * Use of "Flick" to input shift/long-press characters
 
-
 #### Unique Features:
 * Direct scanning of barcodes 
-* Swipe or use tabs to switch keyboard layouts
+* Swipe, use tabs and/or keys to switch keyboard layouts
 * Set a preferred tab to appear whenever keyboard is invoked
 * Easily switch between calculator, phone and other layouts
 * Single-tap to switch languages
@@ -44,7 +43,6 @@ Also see the [Enterprise Keyboard User Guide](../../../../enterprise-keyboard).
 * Italian
 * Spanish
 * Russian
-
 
 #### About Tab-key Navigation
 The Enterprise Keyboard Tab key is designed to move the cursor or UI focus from one text field or UI component to the next. Zebra recommends that apps be built to use the Tab key to navigate in this way. **On devices with versions prior to MX 6.2 and/or Enterprise Keyboard 1.3, the Tab key might not move the cursor as expected**. For help with native-app navigation, please refer to the [Android Tab-key navigation](https://developer.android.com/training/keyboard-input/navigation.html) section of the Android developer docs.

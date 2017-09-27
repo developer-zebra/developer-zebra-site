@@ -19,22 +19,22 @@ parm:
       devicetype: p
       name: Numeric
       mx: "7.1"
-      description: Causes the numeric layout to appear when EKB is first invoked.
+      description: Causes the numeric layout to appear whenever EKB is invoked.
     - code: 2
       devicetype: p
       name: Alpha numeric
       mx: "7.1"
-      description: Causes the alphanumeric layout to appear when EKB is first invoked.
+      description: Causes the alphanumeric layout to appear whenever EKB is invoked.
     - code: 3
       devicetype: p
       name: Symbol
       mx: "7.1"
-      description: Causes the symbol layout to appear when EKB is first invoked.
+      description: Causes the symbol layout to appear whenever EKB is invoked.
     - code: 4
       devicetype: p
       name: Scan
       mx: "7.1"
-      description: Causes the scan tab to appear when EKB is first invoked.
+      description: Causes the scan tab to appear whenever EKB is invoked.
 ---
 
-Used to specify the tab to appear when EKB is first invoked. 
+Used to specify the tab to appear when EKB is invoked **for text input**. 

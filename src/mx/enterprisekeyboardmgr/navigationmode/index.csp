@@ -14,12 +14,20 @@ parm:
       devicetype: p
       name: Tabs
       mx: "7.1"
-      description: Uses tabs to navigate between keyboard layouts.
+      description: Enables tab-based navigation to switch between keyboard layouts.
     - code: 2
       devicetype: p
       name: Legacy
       mx: "7.1"
-      description: Uses swipes to navigate between keyboard layouts.
+      description: Enables key-based navigation to switch between keyboard layouts.
 ---
 
-Controls the means of navigating between keyboard layouts.  
+Controls the means of navigating between keyboard layouts. "Tabs" mode permits switching layouts by swiping or tapping directly on the desired tab. The tab bar will be visible at all times except when next-word suggestions (if enabled) are being displayed. "Legacy" mode permits keys to be used to switch layouts. Such keys are typically in the lower-left corner of the layout. 
+
+**Notes**:
+* Both the tab bar and suggestion bar will appear if either is enabled.
+* The tab bar will not appear if both the [Next Word Suggestions](#nextwordsuggestions) and [Voice Input Key](#voiceinputkey) are disabled.
+* On GMS devices, if voice is enabled and the next-word suggestions feature is disabled, a blank suggestion bar will appear over the tab bar when words are being suggested.* Neither the tab bar nor the suggestion bar will appear if the `TYPE_TEXT_FLAG_NO_SUGGESTIONS` input type is enabled. [Learn about Android input types](https://developer.android.com/reference/android/text/InputType.html). 
+* Enabling the Symbol tab disables remapping of the Numeric P3 key.
+* Enabling the Alpha tab disables remapping of the Numeric P4 key.
+* Enabling the Numeric tab disables remapping of the Alphanumeric P1 key.

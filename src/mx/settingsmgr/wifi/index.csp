@@ -1,6 +1,6 @@
 ---
 csp: settingsmgr
-title: Access Wi-Fi
+title: Wi-Fi Access
 type: parm
 order: 3
 mx: "4.3"

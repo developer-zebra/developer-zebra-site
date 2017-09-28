@@ -1,6 +1,6 @@
 ---
 csp: settingsmgr
-title: Access Airplane Mode 
+title: Airplane Mode Access 
 type: parm
 order: 5
 mx: "4.3"

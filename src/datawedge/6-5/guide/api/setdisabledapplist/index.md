@@ -39,7 +39,7 @@ The main bundle `DISABLED_APP_LIST` contains the following properties:
 
 -----
 
-#### Examples
+## Example Code
 
 **APP_LIST [0]**:
 * **PACKAGE_NAME** ["com.symbol.emdk.notificationsample1"]

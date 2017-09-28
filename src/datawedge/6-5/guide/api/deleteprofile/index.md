@@ -44,7 +44,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters
 
-### Example
+## Example Code
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");

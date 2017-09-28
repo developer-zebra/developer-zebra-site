@@ -67,7 +67,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
 
-### Example
+## Example Code
 	// define action and data strings
 	String switchToProfile = "com.symbol.datawedge.api.ACTION";
 	String extraData = "com.symbol.datawedge.api.SWITCH_TO_PROFILE";

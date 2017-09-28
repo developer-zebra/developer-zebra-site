@@ -74,7 +74,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters.
 
-### Example
+## Example Code
 
 	//SENDING THE INTENT
 	Intent i = new Intent();
@@ -82,7 +82,7 @@ Error messages are logged for invalid actions and parameters.
 	i.putExtra("com.symbol.datawedge.api.RESTORE_CONFIG", "");
 	this.sendBroadcast (i);
 
-#### Generate and receive result codes
+### Generate and receive result codes
 Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. 
 
 **Note: Modify this generic code to match the API being used**.  

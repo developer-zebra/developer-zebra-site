@@ -75,7 +75,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters.
 
-### Examples
+## Example Code
 
 	// TO REGISTER AN APP TO RECIEVE NOTIFICATIONS
 

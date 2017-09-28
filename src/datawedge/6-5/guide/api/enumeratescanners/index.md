@@ -32,7 +32,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters. 
 
-### Example
+## Example Code
 
 	// First send the intents to enumerate the available scanners on the device:
 	i.setAction("com.symbol.datawedge.api.ACTION");

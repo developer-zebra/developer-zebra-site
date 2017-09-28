@@ -52,7 +52,7 @@ Error messages are logged for invalid actions, missing parameters or other failu
 
 -----
 
-### Example
+## Example Code
 The code below shows how to pass an intent to change to scanner "3" from the current scanner. To verify results of the switch (or if errors are expected), include the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to get results.
 
 	:::javascript

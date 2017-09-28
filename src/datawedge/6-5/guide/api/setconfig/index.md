@@ -156,8 +156,13 @@ Error messages are logged for invalid actions and parameters
 		bParams.putString("scanner_input_enabled","true");
 	// 
 	// NOTE: The "scanner_selection" parameter (above) supports "auto" selection
-	// or the assignment of a scanner device index, which is obtained by using the
-	// ENUMERATE_SCANNERS API.
+	// or the assignment of a scanner device index (syntax below), which is obtained by 
+	// using the ENUMERATE_SCANNERS API. See syntax below: 
+	//
+	// 		Bundle bParams = new Bundle();
+	// 	-->	bParams.putString("current-device-id","0"); <---
+	// 		bParams.putString("scanner_input_enabled","true");
+	//
 	// 
 	// PUT bParams into bConfig
 		bConfig.putBundle("PARAM_LIST", bParams);
@@ -206,7 +211,121 @@ Error messages are logged for invalid actions and parameters
 
 		this.sendBroadcast(i);
 
-### Send a BDF configuration
+### Set KEYSTROKE Output 
+
+	public void setKeystrokeOutputPluginConfiguration() {
+
+	    Bundle configBundle = new Bundle();
+	    configBundle.putString("PROFILE_NAME","UserProfile");
+	    configBundle.putString("PROFILE_ENABLED","true");
+	    configBundle.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
+
+	    Bundle bConfig = new Bundle();
+
+	    bConfig.putString("PLUGIN_NAME", "KEYSTROKE");
+	    Bundle bParams = new Bundle();
+	    bParams.putString("keystroke_output_enabled","true");
+	    bParams.putString("keystroke_action_char","9"); // 0, 9 , 10, 13
+	    bParams.putString("keystroke_delay_extended_ascii","500");
+	    bParams.putString("keystroke_delay_control_chars","800");
+	    bConfig.putBundle("PARAM_LIST", bParams);
+
+	    configBundle.putBundle("PLUGIN_CONFIG", bConfig);
+
+	    Intent i = new Intent();
+	    i.setAction("com.symbol.datawedge.api.ACTION");
+	    i.putExtra("com.symbol.datawedge.api.SET_CONFIG", configBundle);
+	    i.putExtra("SEND_RESULT", "true");
+	    i.putExtra("COMMAND_IDENTIFIER", "KEYSTROKE_API");
+	    this.sendBroadcast(i);
+	}
+
+	public void setIntentOutputPluginConfiguration() {
+
+	    Bundle bMain = new Bundle();
+	    Bundle bConfig = new Bundle();
+	    Bundle bParams = new Bundle();
+
+	    bParams.putString("intent_output_enabled","true");
+	    bParams.putString("intent_action","com.symbol.dwudiusertokens.udi");
+	    bParams.putString("intent_category","zebra.intent.dwudiusertokens.UDI");
+	    bParams.putInt("intent_delivery",2); //Use "0" for Start Activity, "1" for Start Service, "2" for Broadcast
+
+	    bConfig.putString("PLUGIN_NAME", "INTENT");
+	    bConfig.putString("RESET_CONFIG","false");
+	    bConfig.putBundle("PARAM_LIST", bParams);
+
+	    bMain.putBundle("PLUGIN_CONFIG", bConfig);
+	    bMain.putString("PROFILE_NAME","UserProfile");
+	    bMain.putString("PROFILE_ENABLED","true");
+	    bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
+
+	    Intent i = new Intent();
+	    i.setAction("com.symbol.datawedge.api.ACTION");
+	    i.putExtra("com.symbol.datawedge.api.SET_CONFIG",bMain);
+	    i.putExtra("SEND_RESULT", "true");
+	    i.putExtra("COMMAND_IDENTIFIER", "INTENT_API");
+	    this.sendBroadcast(i);
+	}
+
+	@Override
+	protected void onDestroy() {
+	    super.onDestroy();
+	    unregisterReceiver(datawedgeKeystrokeNIntentStatusBR);
+	}
+
+### Set INTENT Output
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+	    super.onCreate(savedInstanceState);
+	    setContentView(R.layout.activity_main);
+	    registerReceivers();
+	}
+
+	@Override
+	protected void onResume() {
+	    super.onResume();
+	    setKeystrokeOutputPluginConfiguration();
+	    setIntentOutputPluginConfiguration();
+	}
+
+	private void registerReceivers() {
+	    IntentFilter filter = new IntentFilter();
+	    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+	    filter.addCategory("android.intent.category.DEFAULT");
+	    registerReceiver(datawedgeKeystrokeNIntentStatusBR, filter);
+	}
+
+	private BroadcastReceiver datawedgeKeystrokeNIntentStatusBR = new BroadcastReceiver() {
+	    @Override
+	    public void onReceive(Context context, Intent intent) {
+	        String command = intent.getStringExtra("COMMAND").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND");
+	        String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND_IDENTIFIER");
+	        String result = intent.getStringExtra("RESULT").equals("") ? "EMPTY" : intent.getStringExtra("RESULT");
+
+	        Bundle bundle;
+	        String resultInfo = "";
+	        if (intent.hasExtra("RESULT_INFO")) {
+	            bundle = intent.getBundleExtra("RESULT_INFO");
+	            Set<String> keys = bundle.keySet();
+	            for (String key : keys) {
+	                resultInfo += key + ": " + bundle.getString(key) + "\n";
+	            }
+	        }
+
+	        String text = "Command:      " + command + "\n" +
+	                      "Result:       " + result + "\n" +
+	                      "Result Info:  " + resultInfo + "\n" +
+	                      "CID:          " + commandIdentifier;
+
+	        Log.d("TAG",text);
+	    }
+	};
+
+
+### Set BDF processing
+Process Plug-ins manipulate the acquired data in a specified way before sending it to the associated app via the Output Plug-in. More [about BDF](../../guide/process/bdf). 
 
 	// Main bundle properties
 		Bundle bMain = new Bundle();
@@ -235,7 +354,7 @@ Error messages are logged for invalid actions and parameters
 		i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
 		this.sendBroadcast(i);
 
-### Generate and receive result codes
+### Set/Get Result Codes
 Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. 
 
 **Note: Modify this generic code to match the API being used**.  
@@ -278,9 +397,9 @@ Command and configuration intent parameters determine whether to send result cod
 
 -----
 
-### Scanner Input Parameters 
+## Scanner Input Parameters 
 
-**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
+**Important**: Support for decode parameters can varies depending on the selected scanning device. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
 > All parameters are case sensitive.
 
@@ -475,7 +594,7 @@ Command and configuration intent parameters determine whether to send result cod
 
 -----
 
-### Keystroke Output Parameters 
+## Keystroke Output Parameters 
 
 <table class="c19">
 <tbody>

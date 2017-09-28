@@ -1,6 +1,6 @@
 ---
 csp: settingsmgr
-title: Ability to invoke Enterprise Reset in Settings UI
+title: Access Enterprise Reset
 type: parm
 order: 2
 mx: "4.2"

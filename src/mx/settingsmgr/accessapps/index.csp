@@ -1,6 +1,6 @@
 ---
 csp: settingsmgr
-title: Ability to Access Apps Section in Settings UI
+title: Access App Manager
 type: parm
 order: 6
 mx: "4.4"

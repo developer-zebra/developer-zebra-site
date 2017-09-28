@@ -1,6 +1,6 @@
 ---
 csp: settingsmgr
-title: Ability to Turn Wifi On/Off in Settings UI
+title: Access Wi-Fi
 type: parm
 order: 3
 mx: "4.3"

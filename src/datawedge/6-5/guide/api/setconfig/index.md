@@ -140,9 +140,9 @@ Error messages are logged for invalid actions and parameters
 
 	// MAIN BUNDLE PROPERTIES
 		Bundle bMain = new Bundle();
-		bMain.putString("PROFILE_NAME","Profile12");
-		bMain.putString("PROFILE_ENABLED","true");
-		bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
+		bMain.putString("PROFILE_NAME","Profile12"); 			// <- "Profile12" is a bundle
+		bMain.putString("PROFILE_ENABLED","true"); 				// <- that will be enabled
+		bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST"); 	// <- or created if necessary.
 
 	// PLUGIN_CONFIG BUNDLE PROPERTIES
 		Bundle bConfig = new Bundle();
@@ -156,18 +156,20 @@ Error messages are logged for invalid actions and parameters
 		bParams.putString("scanner_input_enabled","true");
 	// 
 	// NOTE: The "scanner_selection" parameter (above) supports "auto" selection
-	// or the assignment of a scanner device index (syntax below), which is obtained by 
-	// using the ENUMERATE_SCANNERS API. See syntax below: 
+	// --OR-- the assignment of a scanner device index, which is obtained by 
+	// using the ENUMERATE_SCANNERS API.  
 	//
-	// 		Bundle bParams = new Bundle();
-	// 	-->	bParams.putString("current-device-id","0"); <---
-	// 		bParams.putString("scanner_input_enabled","true");
+	// 		Syntax for scanner index:
+	//
+	// 				Bundle bParams = new Bundle();
+	// 		diff-->	bParams.putString("current-device-id","0");
+	// 				bParams.putString("scanner_input_enabled","true");
 	//
 	// 
-	// PUT bParams into bConfig
+	// NEST THE BUNDLE "bParams" WITHIN THE BUNDLE "bConfig"
 		bConfig.putBundle("PARAM_LIST", bParams);
 
-	// PUT bConfig into bMain
+	// THEN NEST THE "bConfig" BUNDLE WITHIN THE MAIN BUNDLE "bMain"
 		bMain.putBundle("PLUGIN_CONFIG", bConfig);
 
 	// APP_LIST BUNDLES
@@ -213,6 +215,52 @@ Error messages are logged for invalid actions and parameters
 
 ### Set KEYSTROKE Output 
 
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+	    super.onCreate(savedInstanceState);
+	    setContentView(R.layout.activity_main);
+	    registerReceivers();
+	}
+
+	@Override
+	protected void onResume() {
+	    super.onResume();
+	    setKeystrokeOutputPluginConfiguration();
+	}
+
+	private void registerReceivers() {
+	    IntentFilter filter = new IntentFilter();
+	    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+	    filter.addCategory("android.intent.category.DEFAULT");
+	    registerReceiver(datawedgeKeystrokeNIntentStatusBR, filter);
+	}
+
+	private BroadcastReceiver datawedgeKeystrokeNIntentStatusBR = new BroadcastReceiver() {
+	    @Override
+	    public void onReceive(Context context, Intent intent) {
+	        String command = intent.getStringExtra("COMMAND").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND");
+	        String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND_IDENTIFIER");
+	        String result = intent.getStringExtra("RESULT").equals("") ? "EMPTY" : intent.getStringExtra("RESULT");
+
+	        Bundle bundle;
+	        String resultInfo = "";
+	        if (intent.hasExtra("RESULT_INFO")) {
+	            bundle = intent.getBundleExtra("RESULT_INFO");
+	            Set<String> keys = bundle.keySet();
+	            for (String key : keys) {
+	                resultInfo += key + ": " + bundle.getString(key) + "\n";
+	            }
+	        }
+
+	         String text="\n"+"Command:      " + command + "\n" +
+	                          "Result:       " + result + "\n" +
+	                          "Result Info:  " + resultInfo + "\n" +
+	                          "CID:          " + commandIdentifier;
+
+	        Log.d("TAG”,text);
+	    }
+	};
+
 	public void setKeystrokeOutputPluginConfiguration() {
 
 	    Bundle configBundle = new Bundle();
@@ -239,6 +287,59 @@ Error messages are logged for invalid actions and parameters
 	    i.putExtra("COMMAND_IDENTIFIER", "KEYSTROKE_API");
 	    this.sendBroadcast(i);
 	}
+
+	@Override
+	protected void onDestroy() {
+	    super.onDestroy();
+	    unregisterReceiver(datawedgeKeystrokeNIntentStatusBR);
+	}
+
+
+### Set INTENT Output
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+	    super.onCreate(savedInstanceState);
+	    setContentView(R.layout.activity_main);
+	    registerReceivers();
+	}
+
+	@Override
+	protected void onResume() {
+	    super.onResume();
+	    setIntentOutputPluginConfiguration();
+	}
+
+	private void registerReceivers() {
+	    IntentFilter filter = new IntentFilter();
+	    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+	    filter.addCategory("android.intent.category.DEFAULT");
+	    registerReceiver(datawedgeKeystrokeNIntentStatusBR, filter);
+	}
+
+	private BroadcastReceiver datawedgeKeystrokeNIntentStatusBR = new BroadcastReceiver() {
+	    @Override
+	    public void onReceive(Context context, Intent intent) {
+	        String command = intent.getStringExtra("COMMAND").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND");
+	        String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND_IDENTIFIER");
+	        String result = intent.getStringExtra("RESULT").equals("") ? "EMPTY" : intent.getStringExtra("RESULT");
+
+	        Bundle bundle;
+	        String resultInfo = "";
+	        if (intent.hasExtra("RESULT_INFO")) {
+	            bundle = intent.getBundleExtra("RESULT_INFO");
+	            Set<String> keys = bundle.keySet();
+	            for (String key : keys) {
+	                resultInfo += key + ": " + bundle.getString(key) + "\n";
+	            }
+	        }
+	        String text ="\n" + "Command:      " + command + "\n" +
+	                            "Result:       " + result + "\n" +
+	                            "Result Info:  " + resultInfo + "\n" +
+	                            "CID:          " + commandIdentifier;
+	        Log.d("TAG”,text);
+	    }
+	};
 
 	public void setIntentOutputPluginConfiguration() {
 
@@ -273,56 +374,6 @@ Error messages are logged for invalid actions and parameters
 	    super.onDestroy();
 	    unregisterReceiver(datawedgeKeystrokeNIntentStatusBR);
 	}
-
-### Set INTENT Output
-
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-	    super.onCreate(savedInstanceState);
-	    setContentView(R.layout.activity_main);
-	    registerReceivers();
-	}
-
-	@Override
-	protected void onResume() {
-	    super.onResume();
-	    setKeystrokeOutputPluginConfiguration();
-	    setIntentOutputPluginConfiguration();
-	}
-
-	private void registerReceivers() {
-	    IntentFilter filter = new IntentFilter();
-	    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
-	    filter.addCategory("android.intent.category.DEFAULT");
-	    registerReceiver(datawedgeKeystrokeNIntentStatusBR, filter);
-	}
-
-	private BroadcastReceiver datawedgeKeystrokeNIntentStatusBR = new BroadcastReceiver() {
-	    @Override
-	    public void onReceive(Context context, Intent intent) {
-	        String command = intent.getStringExtra("COMMAND").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND");
-	        String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND_IDENTIFIER");
-	        String result = intent.getStringExtra("RESULT").equals("") ? "EMPTY" : intent.getStringExtra("RESULT");
-
-	        Bundle bundle;
-	        String resultInfo = "";
-	        if (intent.hasExtra("RESULT_INFO")) {
-	            bundle = intent.getBundleExtra("RESULT_INFO");
-	            Set<String> keys = bundle.keySet();
-	            for (String key : keys) {
-	                resultInfo += key + ": " + bundle.getString(key) + "\n";
-	            }
-	        }
-
-	        String text = "Command:      " + command + "\n" +
-	                      "Result:       " + result + "\n" +
-	                      "Result Info:  " + resultInfo + "\n" +
-	                      "CID:          " + commandIdentifier;
-
-	        Log.d("TAG",text);
-	    }
-	};
-
 
 ### Set BDF processing
 Process Plug-ins manipulate the acquired data in a specified way before sending it to the associated app via the Output Plug-in. More [about BDF](../../guide/process/bdf). 

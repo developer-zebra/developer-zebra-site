@@ -172,7 +172,7 @@ Error messages are logged for invalid actions and parameters
 	// THEN NEST THE "bConfig" BUNDLE WITHIN THE MAIN BUNDLE "bMain"
 		bMain.putBundle("PLUGIN_CONFIG", bConfig);
 
-	// APP_LIST BUNDLES
+	// CREATE APP_LIST BUNDLES (apps and/or activities to be associated with the Profile)
 		Bundle bundleApp1 = new Bundle();
 		bundleApp1.putString("PACKAGE_NAME","com.symbol.emdk.simulscansample1");
 		bundleApp1.putStringArray("ACTIVITY_LIST", new String[]{
@@ -194,12 +194,11 @@ Error messages are logged for invalid actions and parameters
 		bundleApp3.putString("PACKAGE_NAME","*");
 		bundleApp3.putStringArray("ACTIVITY_LIST", new String[]{"*"});
 
-
 		Bundle bundleApp4 = new Bundle();
 		bundleApp4.putString("PACKAGE_NAME","com.symbol.myzebraapp");
 		bundleApp4.putStringArray("ACTIVITY_LIST", new String[]{"*"});
 
-	// PUT THEM ALL TOGETHER INTO THE MAIN BUNDLE
+	// NEXT APP_LIST BUNDLE(S) INTO THE MAIN BUNDLE
 		bMain.putParcelableArray("APP_LIST", new Bundle[]{
 		        bundleApp1
 		        ,bundleApp2
@@ -294,7 +293,6 @@ Error messages are logged for invalid actions and parameters
 	    unregisterReceiver(datawedgeKeystrokeNIntentStatusBR);
 	}
 
-
 ### Set INTENT Output
 
 	@Override
@@ -376,7 +374,7 @@ Error messages are logged for invalid actions and parameters
 	}
 
 ### Set BDF processing
-Process Plug-ins manipulate the acquired data in a specified way before sending it to the associated app via the Output Plug-in. More [about BDF](../../guide/process/bdf). 
+Process Plug-ins manipulate the acquired data in a specified way before sending it to the associated app via the Output Plug-in. [About BDF](../../process/bdf). [About ADF](../../process/adf). 
 
 	// Main bundle properties
 		Bundle bMain = new Bundle();

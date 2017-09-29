@@ -24,7 +24,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 DataWedge 6.5 improves compatibility of exported Config files and Profiles for deployment to dissimilar devices. Previous versions of DataWedge support deployment of exported Profiles only to devices that are functionally equivalent to the device that created original Profile. Now, Config files and Profiles created with DataWedge 6.5 will work on any Zebra device model running DataWedge 6.5 or higher. See the [Cross-Device Import](../settings/#crossdeviceimport) section of the DataWedge Settings guide for more information. 
 
-**New APIs**: 
+**New APIs**
 
 * **[GET_DISABLED_APP_LIST](../api/getdisabledapplist) -** returns the list of apps prohibited from using DataWedge. 
 * **[GET_CONFIG](../api/getconfig) -** returns a list of parameter settings in the specified Profile.
@@ -33,6 +33,7 @@ DataWedge 6.5 improves compatibility of exported Config files and Profiles for d
 * **[SWITCH_SCANNER_PARAMS](../api/switchscannerparams) -** allows an app to set scanner parameters at runtime without persisting those settings. 
 
 **Updated APIs**
+
 These APIs have been enhanced to support [RESULT_INFO](../api/resultinfo) feedback mechanism for intents and include result codes. 
 
 * [CLONE_PROFILE](../api/cloneprofile)
@@ -42,7 +43,7 @@ These APIs have been enhanced to support [RESULT_INFO](../api/resultinfo) feedba
 * [RENAME_PROFILE](../api/renameprofile)
 * [RESET_DEFAULT_PROFILE](../api/resetdefaultprofile)
 * [RESTORE_CONFIG](../api/restoreconfig)
-* [SCANNER_INPIT_PLUGIN](../api/scannerinputplugin)
+* [SCANNER_INPUT_PLUGIN](../api/scannerinputplugin)
 * [SET_DEFAULT_PROFILE](../api/setdefaultprofile)
 * [SOFTSCAN_TRIGGER](../api/softscantrigger)
 * [SWITCH_TO_PROFILE](../api/switchtoprofile)

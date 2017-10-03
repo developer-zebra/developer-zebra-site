@@ -9,6 +9,22 @@ productversion: '6.5'
 
 DataWedge provides barcode scanning and processing services for Zebra devices running Android. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
 
+### Language Support
+
+DataWedge has been approved to run on device operating systems localized for the following languages:
+
+* English
+* French
+* German
+* Italian
+* Spanish
+* Simplified Chinese
+* Traditional Chinese
+
+For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
+
+-----
+
 #### This document applies to:
 * **DataWedge 6.5.x**, which requires:
 * **Scanner Framework 5.1.0** or higher, and

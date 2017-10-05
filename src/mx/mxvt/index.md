@@ -1,19 +1,9 @@
 ---
-title: MX Value Tier Features
+title: Entry-level Device Features
 layout: csp-mxvt-support.html
 mxversions:
-  - text: MX 4.2
-    value: 4.2
-  - text: MX 4.3
-    value: 4.3
-  - text: MX 4.4
-    value: 4.4
-  - text: MX 5.0
-    value: 5
-  - text: MX 6.0
-    value: 6
-  - text: MX 6.1
-    value: 6.1
+  - text: MX 7.x
+    value: 7.0
 csps:
   - type: section
     title: Analytics Manager

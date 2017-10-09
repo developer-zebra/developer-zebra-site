@@ -1,0 +1,18 @@
+---
+csp: displaymgr
+title: Set Blanking Debounce Delay
+type: parm
+order: 30
+mx: "7.1"
+devicetype: p
+parm:
+  pivotal: No
+  name: ScreenBlankingDebounceDelay
+  type: integer
+---
+
+Used to specify a delay (in ms) after a signal change is detected before blanking or unblanking the screen. This field accepts an integer value between 250 and 32767. 
+
+**Parm value input rules**:
+
+* Accepts an integer from 250-32767

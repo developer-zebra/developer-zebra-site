@@ -1,0 +1,32 @@
+---
+csp: displaymgr
+title: Screen Blanking Enable/Disable
+type: parm
+order: 10
+mx: "7.1"
+devicetype: p
+parm:
+  pivotal: No
+  name: ScreenBlanking
+  type: list
+  list:
+    - code: 0
+      mx: "7.1"
+      devicetype: p
+      name: Do Nothing
+      description: This value (or the absence of this parm from the XML) will cause no change to the current behavior; any previously selected setting will be retained.
+    - code: 1
+      devicetype: p
+      name: Never blanked
+      mx: "7.1"
+      description: Prevents blanking of the screen.
+    - code: 2
+      devicetype: p
+      name: When Triggered by Signal
+      mx: "7.1"
+      description: Enables the screen to be blanked when triggered by a signal external to the device.
+---
+
+Controls whether a device display can be made blank when triggered by the signal set in the Screen Blanking Signal parameter. Blanking the screen blocks all user interaction with the device and its apps. 
+
+This feature was developed for safety reasons. It is intended to block interaction with a vehicle-mount computer while the vehicle is in motion based on an electrical signal wired to the vehicle’s accelerator, for example.

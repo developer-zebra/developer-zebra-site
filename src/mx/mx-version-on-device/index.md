@@ -26,10 +26,14 @@ The same is not always true of MX, which provides a uniform interface into privi
 
 &#50;. **Locate MX in the list of components**.   
 
-&#51;. **The left-most two digits** indicate the MX and OSX versions. 
+&#51;. **The left-most two digits** indicate the major and minor MX and OSX versions. 
 
 <img style="height:400px" src="sw_components.png"/>
 _Settings panel showing OSX 4.4 and MX 4.4_
+<br>
+
+<img style="height:400px" src="osx_ultralight.png"/>
+_Settings panel of a Zebra TC20 device showing OSX 7.1UL and MX 7.0_
 <br>
 
 **Note: On some devices, version information is returned in two groups of digits separated by an underscore (_) character. The numbers relevant to the version are those immediately <u>following</u> the underscore, as below**:

@@ -14,14 +14,15 @@ parm:
       devicetype: p
       name: Input 1
       mx: "7.1"
-      description: Sets the screen blanking signal to Input 1 (see Note, above).
+      description: Sets the screen blanking signal to Input 1 (VC80x serial port 1).
     - code: 2
       devicetype: p
       name: Input 2
       mx: "7.1"
-      description: Sets the screen blanking signal to Input 2 (see Note, above).
+      description: Sets the screen blanking signal to Input 2 (VC80x serial port 2).
 ---
 
-Used to specify which external signal till be used to control Screen Blanking, if enabled. 
+Used to specify which external signal will control Screen Blanking, if enabled. 
 
-**Note**: On the Zebra VC80x vehicle-mount computer, inputs 1 and 2 correspond to serial ports 1 and 2. The signal of interest is CTS. Vehicle wiring in most cases is configured such that RTS and CTS are connected upon vehicle accelerator press and disconnected otherwise.
+**Note**: On the Zebra VC80x vehicle-mount computer, inputs 1 and 2 correspond to serial ports 1 and 2. Vehicle wiring is generally configured such that "Clear to Send" (CTS) and "Ready to Send" (RTS) signals are connected when the vehicle accelerator is pressed and disconnected otherwise. The signal of interest to this parameter is CTS. 
+

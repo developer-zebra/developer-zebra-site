@@ -29,4 +29,4 @@ parm:
 
 Controls whether a device display can be made blank when triggered by the signal set in the Screen Blanking Signal parameter. Blanking the screen blocks all user interaction with the device and its apps. 
 
-This feature was developed for safety reasons. It is intended to block interaction with a vehicle-mount computer while the vehicle is in motion based on an electrical signal wired to the vehicle’s accelerator, for example.
+This feature was developed for safety reasons and is intended for use with vehicle-mount computers while the vehicle is in motion. It can be activated, for example, by an electrical signal wired to the vehicle accelerator.

@@ -1,0 +1,18 @@
+---
+csp: powermgr
+title: Auto Power Control (checkbox)
+type: parm
+order: 25
+mx: "7.1"
+parm:
+  pivotal: No
+  name: AutoPowerControl
+  type: string
+
+---
+
+Used to indicate whether automatic power controls will be configured. **This feature applies only to the VC80x vehicle computer**.
+
+**Parm value input rules**: 
+
+* Integer value

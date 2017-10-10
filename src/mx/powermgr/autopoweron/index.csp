@@ -1,12 +1,12 @@
 ---
 csp: powermgr
-title: Port Action
+title: Auto Power-on
 type: parm
-order: 11
+order: 40
 mx: "7.1"
 parm:
   pivotal: Yes
-  name: PortAction
+  name: AutoPowerOn
   type: list
   list:
     - code: 0

@@ -20,7 +20,7 @@ The PowerMgr allows an app to perform certain OS- and power-related actions on t
 * Wipe a device (and erase all cards) 
 * Update the OS on a device
 * Perform multiple updates in a single step
-* **On the VC80 vehicle computer only**: 
+* **On the VC80x vehicle computer only**: 
  * Turn power to specific serial and USB ports on and off
  * Control heaters for touch panel and battery, and on serial and USB ports
  * Set temperature thresholds (in degrees Celsius) for turning heaters on and off

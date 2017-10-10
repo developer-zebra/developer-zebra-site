@@ -375,7 +375,7 @@ parm:
       devicetype: p
       code: 10032
       mx: "4.4"
-    - name: Shift
+    - name: Keyboard
       devicetype: p
       code: 10034
       mx: "7.1"

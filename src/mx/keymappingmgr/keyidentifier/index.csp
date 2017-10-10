@@ -265,47 +265,47 @@ parm:
       mx: "7.1"
       devicetype: p
       name: Macro 1
-      description: Used for mapping the Zebra VC80 M1 key 
+      description: The Zebra VC80x M1 key 
     - code: M2
       mx: "7.1"
       devicetype: p
       name: Macro 2
-      description: Used for mapping the Zebra VC80 M2 key
+      description: The Zebra VC80x M2 key
     - code: M3
       mx: "7.1"
       devicetype: p
       name: Macro 3
-      description: Used for mapping the Zebra VC80 M3 key
+      description: The Zebra VC80x M3 key
     - code: M4
       mx: "7.1"
       devicetype: p
       name: Macro 4
-      description: Used for mapping the Zebra VC80 M4 key
+      description: The Zebra VC80x M4 key
     - code: M5
       mx: "7.1"
       devicetype: p
       name: Macro 5
-      description: Used for mapping the Zebra VC80 M5 key
+      description: The Zebra VC80x M5 key
     - code: M6
       mx: "7.1"
       devicetype: p
       name: Macro 6
-      description: Used for mapping the Zebra VC80 M6 key
+      description: The Zebra VC80x M6 key
     - code: BRIGHTNESSUP
       mx: "7.1"
       devicetype: p
       name: Brightness Up
-      description: Increases the brightness of the Zebra VC80 display backlight
+      description: The "brightness up" key of the Zebra VC80x
     - code: BRIGHTNESSDOWN
       mx: "7.1"
       devicetype: p
-      name: Touch Brightness Down
-      description: Decreases the brightness of the Zebra VC80 display backlight
+      name: Brightness Down
+      description: The "brightness down" key of the Zebra VC80x
     - code: KEYBOARD
       mx: "7.1"
       devicetype: p
       name: Keyboard
-      description: 
+      description: The keyboard key of the Zebra VC80x
 ---
 
 Used to identify the Key for which an Override-Key Mapping will be added or modified. To add or modify an Override Mapping for a Key, specify the **Option** (Key Identifier) listed in the table below that matches the friendly **Name** and **Description** of the Key to be mapped.

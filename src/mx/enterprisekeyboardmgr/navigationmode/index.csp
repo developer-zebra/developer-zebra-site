@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Navigation Mode
 type: parm
-order: 45
+order: 16
 mx: "7.1"
 devicetype: p
 parm:
@@ -14,19 +14,19 @@ parm:
       devicetype: p
       name: Tabs
       mx: "7.1"
-      description: Enables tab-based navigation to switch between keyboard layouts.
+      description: Enables tab-based navigation for switching between keyboard layouts.
     - code: 2
       devicetype: p
-      name: Legacy
+      name: Keys
       mx: "7.1"
-      description: Enables key-based navigation to switch between keyboard layouts.
+      description: Enables key-based navigation for switching between keyboard layouts.
 ---
 
-Controls the means of navigating between keyboard layouts. "Tabs" mode permits switching layouts by swiping or tapping directly on the desired tab. The tab bar will be visible at all times except when next-word suggestions (if enabled) are being displayed. "Legacy" mode permits keys to be used to switch layouts. Such keys are typically in the lower-left corner of the layout. 
+Controls the means of navigating between keyboard layouts. "Tabs" mode permits switching layouts by swiping or tapping directly on the desired tab. The tab bar will be visible at all times except when next-word suggestions (if enabled) are being displayed. "Keys" mode permits keys to be used to switch layouts. Such keys are typically in the lower-left corner of the layout and are subject to restrictions listed below. 
 
 **Notes**:
-* Both the tab bar and suggestion bar will appear if either is enabled.
-* The tab bar will not appear if both the Next Word Suggestions bar and Voice Input Key are disabled.
+* If either the tab bar _**or**_ the suggestion bar are enabled, both will appear.
+* The tab bar will not appear if the Next Word Suggestions bar _**and**_ the Voice Input Key are both disabled.
 * On GMS devices, if voice is enabled and the next-word suggestions feature is disabled, a blank suggestion bar will appear over the tab bar when words are being suggested.
 * If the `TYPE_TEXT_FLAG_NO_SUGGESTIONS` input type is enabled, neither the tab bar nor the suggestion bar will appear. [About Android input types](https://developer.android.com/reference/android/text/InputType.html). 
 * Enabling the Symbol tab disables remapping of the Numeric P3 key.

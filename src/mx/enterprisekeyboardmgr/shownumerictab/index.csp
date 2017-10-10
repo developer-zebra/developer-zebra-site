@@ -27,6 +27,8 @@ parm:
       description: Hides the numeric tab and prevents selection of the numeric key layout.
 ---
 
-Controls whether to display the numeric tab among the other keyboard layout tabs. Hiding this tab prevents the numeric key layout from being selected by the device user. 
+Controls whether to display the numeric tab among other selected keyboard layout tabs. 
 
-**Note: Enabling the Numeric tab disables remapping of the Alphanumeric P1 key**.
+**Notes**: 
+* **Enabling this tab disables remapping of the Alphanumeric P1 key**.
+* Hiding this tab prevents the numeric key layout from being selected by the device user. 

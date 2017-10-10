@@ -27,4 +27,4 @@ parm:
       description: Hides the alphanumeric tab and prevents selection of the alphanumeric key layout.
 ---
 
-Controls whether to display the alphanumeric tab among the other keyboard layout tabs. Hiding this tab prevents the alphanumeric key layout from being selected by the device user. 
+Controls whether to display the alphanumeric tab among other selected keyboard layout tabs. **Note: Hiding this tab prevents the alphanumeric key layout from being selected by the device user**. 

@@ -117,17 +117,33 @@ Keys that are not labeled are identified by their physical location on the devic
 
 Naming conventions for unlabeled buttons and Keys occasionally deviate due to engineering limitations, production restrictions or other factors. This can cause confusion as to which Key is which, and increases the guesswork required for Keymapping. The most common deviations are shown below (in red lettering). Use the Key Identifiers shown for each unlabeled button when remapping on these devices: 
 
+-----
+
+### MC33 Key Identifiers
+![img](../../../../../images/mx/MC33_key_ids.png)
+
+-----
+
 ### MC40 Key Identifiers
 ![img](../../../../../images/mx/MC40_key_ids.png)
+
+-----
 
 ### MC67 Key Identifiers
 ![img](../../../../../images/mx/MC67_key_ids.png)
 
+-----
+
 ### TC51/TC56/TC56HC Key Identifiers
 ![img](../../../../../images/mx/tc51_key_ids.jpg)
 
+-----
+
 ### TC70x/TC75x Key Identifiers
 ![img](../../../../../images/mx/tc75x_key_ids.jpg)
+
+-----
+
 
 <!-- 
 notes from "Key Mapping Improvements" email thread starting on Oct. 7 

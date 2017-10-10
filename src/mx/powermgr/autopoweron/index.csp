@@ -2,28 +2,24 @@
 csp: powermgr
 title: Auto Power-on
 type: parm
-order: 40
+order: 30
 mx: "7.1"
 parm:
-  pivotal: Yes
+  presentif: The Auto-Power Control is "Checked"
+  pivotal: No
   name: AutoPowerOn
   type: list
   list:
     - code: 0
       mx: "7.1"
       devicetype: p,v
-      name: Do Nothing
-      description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
+      name: Never
+      description: Does not power up device when vehicle ignition is turned on. 
     - code: 1
       devicetype: p,v
-      name: Turn Output Power On
+      name: When Ignition Turned On
       mx: "7.1"
-      description: Applies power to the selected port. 
-    - code: 2
-      devicetype: p,v
-      name: Turn Output Power Off
-      mx: "7.1"
-      description: Removes power from the selected port. 
+      description: Powers up device when vehicle ignition is turned on. 
 ---
 
-Used to specify an action to perform on the selected port. Turning off power when not needed for a port can help reduce pin corrosion. **This feature applies only to the VC80x vehicle computer**. 
+Used to control whether the device will power up when vehicle ignition is turned on. **This feature applies only to the VC80x vehicle computer**. 

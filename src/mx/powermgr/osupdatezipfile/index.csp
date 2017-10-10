@@ -11,7 +11,6 @@ parm:
   pivotal: No
   name: ZipFile
   type: string
-
 ---
 
 Used to specify the path and filename of the file to be consumed when updating the device using the OS Update Reset Action. The OS Update file must either be the specific .zip file being applied, or a text file (with .upl extension) containing a list of patches (multiple .zip files) to be applied in the desired order from top to bottom. 

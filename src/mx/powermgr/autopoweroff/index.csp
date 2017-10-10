@@ -5,25 +5,21 @@ type: parm
 order: 35
 mx: "7.1"
 parm:
-  pivotal: Yes
+  presentif: The Auto-Power Control is "Checked"
+  pivotal: No
   name: AutoPowerOff
   type: list
   list:
     - code: 0
       mx: "7.1"
       devicetype: p,v
-      name: Do Nothing
-      description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
+      name: Never
+      description: Does not power down device when vehicle ignition is turned off. 
     - code: 1
       devicetype: p,v
-      name: Turn Output Power On
+      name: When Ignition Turned Off
       mx: "7.1"
-      description: Applies power to the selected port. 
-    - code: 2
-      devicetype: p,v
-      name: Turn Output Power Off
-      mx: "7.1"
-      description: Removes power from the selected port. 
+      description: Powers down device when vehicle ignition is turned off. 
 ---
 
-Used to specify an action to perform on the selected port. Turning off power when not needed for a port can help reduce pin corrosion. **This feature applies only to the VC80x vehicle computer**. 
+Used to control whether the device will power down when vehicle ignition is turned off. **This feature applies only to the VC80x vehicle computer**. 

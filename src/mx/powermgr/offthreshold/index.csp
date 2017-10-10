@@ -16,4 +16,4 @@ Used to specify the temperature (in degrees Celsius) at which the device heater 
 
 **Parm value input rules**: 
 
-* Integer value
+* Integer value from -30 to 50

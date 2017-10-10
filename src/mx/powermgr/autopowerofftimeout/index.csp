@@ -2,19 +2,19 @@
 csp: powermgr
 title: Auto Power-off Timeout
 type: parm
-order: 30
+order: 40
 mx: "7.1"
 parm:
-  presentif: The Auto Power-off Action is "When Ignition Turned Off"
+  presentif:  The Auto Power Control is "Checked" and Auto Power-off Action is "When Ignition Turned Off"
   pivotal: No
   name: AutoPowerOffTimeout
   type: string
 
 ---
 
-Used to specify the time (in seconds) before the device will shut down after power is removed. Default value is 30 seconds. **This feature applies only to the VC80x vehicle computer**. 
+Used to specify the time (in minutes) before the device will shut down after vehicle ignition is turned off. Default value is 30 minutes. **This feature applies only to the VC80x vehicle computer**. 
 
 **Parm value input rules**: 
 
-* Integer value from 0-60 seconds
-* If no value is entered, default value of 30 (seconds) will be used
+* Integer value from 0-60 minutes (0=none)
+* If no value is entered, default value of 30 (minutes) will be used

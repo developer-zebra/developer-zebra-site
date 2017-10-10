@@ -2,10 +2,11 @@
 csp: powermgr
 title:  Port Selection
 type: parm
-order: 10
+order: 11
 mx: "7.1"
 parm:
   pivotal: Yes
+  presentif: The Port Action is not "Do Nothing"
   name: PortSelect
   type: list
   list:

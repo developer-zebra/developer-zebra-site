@@ -1,0 +1,30 @@
+---
+csp: wirelessmgr
+title: Antenna Selection
+type: parm
+order: 1
+mx: 7.1
+devicetype: p
+parm:
+  pivotal: No
+  name: AntennaSelection
+  type: list
+  list:
+    - code: 0
+      mx: 7.1
+      devicetype: p
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to settings; any previously selected setting will be retained.
+    - code: 1
+      devicetype: p
+      name: Use Internal Antenna 
+      mx: 7.1
+      description: Sets the VC80x vehicle computer to use its built-in Bluetooth/Wi-Fi antenna.
+    - code: 2
+      devicetype: p
+      name: Use External Antenna
+      mx: 7.1
+      description: Sets the VC80x vehicle computer to use an (optional) external Bluetooth/Wi-Fi antenna.
+---
+
+Used to select between built-in and external antennas for Bluetooth and Wi-Fi (WLAN) communications on the device. **This feature applies only to the VC80x vehicle computer**. 

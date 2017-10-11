@@ -5,7 +5,7 @@ type: text
 order: 99
 ---
 
-###Enable Changes to be made to Bluetooth State
+### Enable Changes to be made to Bluetooth State
 
 >**Note:** In JellyBean devices, this XML will change the state of the Bluetooth radio by Turning it On.
 
@@ -16,7 +16,7 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 
-###Disable Changes from being made to Bluetooth State
+### Disable Changes from being made to Bluetooth State
 
 >**Note:** In JellyBean devices, this XML will change the state of the Bluetooth radio by Turning it Off.
 
@@ -27,7 +27,7 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 	
-###Turn On All Radios (For JellyBean Devices)
+### Turn On All Radios (For JellyBean Devices)
 
 	:::xml
 	<wap-provisioningdoc>
@@ -39,7 +39,7 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 
-###Turn Off All Radios (For JellyBean Devices)
+### Turn Off All Radios (For JellyBean Devices)
 	:::xml
 	<wap-provisioningdoc>
 		<characteristic type="WirelessMgr" version="4.3" >
@@ -50,7 +50,7 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 	
-###Turn On All Radios (For KitKat Devices)
+### Turn On All Radios (For KitKat Devices)
 
 	:::xml
 	<wap-provisioningdoc>
@@ -62,7 +62,7 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 
-###Turn Off All Radios (For KitKat Devices)
+### Turn Off All Radios (For KitKat Devices)
 	:::xml
 	<wap-provisioningdoc>
 		<characteristic type="WirelessMgr" version="4.3" >
@@ -73,3 +73,11 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 
+### Select the external antenna for Bluetooth and Wi-Fi (VC80x only)
+
+	:::xml
+	<wap-provisioningdoc> 
+		<characteristic type=”WirelessMgr”> 
+			<parm name=”AntennaSelection” value=”2” /> 
+		</characteristic>
+	 </wap-provisioningdoc>

@@ -1,6 +1,6 @@
 ---
 csp: uimgr
-title: Select a Default Input Method Option
+title: Set Default Input Method
 type: parm
 order: 13
 mx: "4.3"
@@ -8,7 +8,7 @@ apilevel: "16"
 devicetype: p,v
 parm:
   pivotal: Yes
-  presentif: The "Set Default Input Method?" value is "Change Current Input Method"
+  presentif: The "Input Method Action" is "Change Current Input Method"
   name: InputMethodOption
   type: list
   list:
@@ -38,4 +38,4 @@ parm:
       description: Sets a non-standard user-defined Input Method as the Default Input Method.
 ---
 
-Allows the selection of the Default Input Method (i.e. the soft keyboard). If the selected Input Method is not already enabled, this parm will first enable it and then set it as the new default. The desired Input Method must have been previously installed and must be specified via its Android Package Name and Class Name.
+Allows the selection of the Default Input Method (i.e. the soft keyboard). If the selected Input Method is not already enabled, this parameter will first enable it and then set it as the new default. The desired Input Method must have been previously installed and must be specified using its Android Package Name and Class Name.

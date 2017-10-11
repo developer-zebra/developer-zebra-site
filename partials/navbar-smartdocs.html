@@ -465,6 +465,8 @@
         }
     });
 
+// NEED TO CHANGE OTHER SETTINGS TO 'ALL' BELOW
+
     $( ".smartdocs-devicetype" ).click(function() {
       var devicetype=$(this).attr("data-value");
         $("#smartdocs-devicetype-selected").html("Type: " + $(this).text() + '<span class="caret"></span>');
@@ -473,6 +475,9 @@
           clear('devicetype')
         }
         else{
+          clear("api");
+          clear("mx");
+          clear("osx");
           showdevicetype(devicetype);
         }
     }); 

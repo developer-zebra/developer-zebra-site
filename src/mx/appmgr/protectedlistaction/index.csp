@@ -5,7 +5,7 @@ type: parm
 order: 6
 mx: "4.2"
 osx: "1.2"
-devicetype: p,v
+devicetype: p
 parm:
   pivotal: Yes
   presentif: The Action is NOT "Battery Optimization" 
@@ -13,25 +13,25 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p,v
+      devicetype: p
       name: Do nothing
       description: This value (or the absence of this parm from the XML) will cause no changes to the Protected List.
       mx: "4.2"
       osx: "1.2"
     - code: 1
-      devicetype: p,v
+      devicetype: p
       name: AddAppToProtectedList
       description: Adds the specified app package name to the Protected List.
       mx: "4.2"
       osx: "1.2"
     - code: 2
-      devicetype: p,v
+      devicetype: p
       name: RemoveAppFromProtectedList
       description: Removes the specified app package name from the Protected List.
       mx: "4.2"
       osx: "1.2"
     - code: 3
-      devicetype: p,v
+      devicetype: p
       name: ClearProtectedList
       description: Removes all app package names from the Protected List.
       mx: "4.2"

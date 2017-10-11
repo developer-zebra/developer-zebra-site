@@ -96,9 +96,21 @@
                                                 <li>Android API Level: {{this.apilevel}}+ </li>
                                             {{/if}}
                                             {{#if this.devicetype}}
-                                                <li>Device Type: {{this.devicetype}}</li>
+                                            {{#is this.devicetype "p,v"}}
+
+                                            All
+                                        
+                                            {{else}}
+                                            
+                                            <li>Device Type: {{this.devicetype}}</li>
+                                            
+                                            {{/is}}
+                                            
+                                            {{else}}
+                                            All
                                             {{/if}}
-                                            </ul>
+<!-- PICK UP HERE (ABOVE) THURSDAY --> 
+                                           </ul>
                                         </p>
                                         {{/is}}
                                         

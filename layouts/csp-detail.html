@@ -95,6 +95,9 @@
                                             {{#if this.apilevel}}
                                                 <li>Android API Level: {{this.apilevel}}+ </li>
                                             {{/if}}
+                                            {{#if this.devicetype}}
+                                                <li>Device Type: {{this.devicetype}}</li>
+                                            {{/if}}
                                             </ul>
                                         </p>
                                         {{/is}}
@@ -112,6 +115,7 @@
                                                 <th>Option</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
+                                                <th>Device Type</th>
                                                 <th>Requires</th>
                                             </tr>
                                             {{#each this.parm.list}}
@@ -119,6 +123,7 @@
                                                 <td>{{this.code}}</td>
                                                 <td>{{this.name}}</td>
                                                 <td>{{this.description}}</td>
+                                                <td>{{this.devicetype}}</td>
                                                 <td>
                                                     
                                                     {{#if this.osx}}
@@ -191,7 +196,8 @@
                             osxSpecific: "{{this.osx-specific}}",
                             osxSpecificList: "{{this.osx-specific-list}}",
                             osxExclude: "{{this.osx-exclude}}",
-                            osxExcludeEnd: "{{this.osx-exclude-end}}"
+                            osxExcludeEnd: "{{this.osx-exclude-end}}",
+                            devicetype: "{{this.devicetype}}"
                         },
 
                         {{/is}}

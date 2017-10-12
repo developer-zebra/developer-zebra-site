@@ -127,12 +127,11 @@
                                                 {{#if this.devicetype}}
                                                     {{#is this.devicetype "p,v"}} 
                                                     All
-                                                    
-                                                    {{/is}}
                                                 {{else}}
                                                     {{this.devicetype}}
-                                                    A
-                                                    
+                                                    {{/is}}
+                                                {{else}}
+                                                    All
                                                 {{/if}} 
                                                 </td>
                                                 

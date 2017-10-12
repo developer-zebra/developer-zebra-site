@@ -4,7 +4,7 @@ title: Hotspot Security Mode
 type: parm
 order: 80
 mx: "6.3"
-devicetype: p,v
+devicetype: A,B
 parm:
   presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot" is set to "Enable"
   pivotal: No
@@ -13,12 +13,12 @@ parm:
   list:
     - code: 0
       mx: "6.3"
-      devicetype: p,v
+      devicetype: A,B
       name: Open
       description: Allows any device to connect to the Wi-Fi hotspot without entering credentials.
     - code: 1
       mx: "6.3"
-      devicetype: p,v
+      devicetype: A,B
       name: WPA2/PSK
       description: Requires user credentials to be entered before allowing a connection to the Wi-Fi hotspot. 
 ---

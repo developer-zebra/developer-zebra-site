@@ -4,7 +4,7 @@ title: Network Action
 type: parm
 order: 20
 mx: "4.2"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: Yes
   name: NetworkAction
@@ -12,47 +12,47 @@ parm:
   list:
     - code: 0
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Do nothing
       description: This value (or the absence of this parm from the XML) will perform no Network Action.
     - code: 1
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Add
       description: This value will add a new profile with the profile settings specified.
     - code: 2
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Remove
       description: Remove an existing network profile based on the SSID specified.
     - code: 3
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Connect
       description: Initiates a connection to an existing network based on the SSID specified.
     - code: 4
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Disconnect
       description: Disconnects from a network based on the SSID specified.
     - code: 5
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Enable
       description: Enables a network profile based on the SSID specified.
     - code: 6
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Disable
       description: Disables a network profile based on the SSID specified.
     - code: 7
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: DisableAll
       description: Disables all network profiles on the device.
     - code: 8
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: RemoveAll
       description: Deletes all network profiles from the device.
 ---

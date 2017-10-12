@@ -4,7 +4,7 @@ title: Archive Source URI
 type: parm
 order: 15
 mx: "5.0"
-devicetype: p,v
+devicetype: A,B
 parm:
   presentif: File Action is Download and Expand Archive
   pivotal: No

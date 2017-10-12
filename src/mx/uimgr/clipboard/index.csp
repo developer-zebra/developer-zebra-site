@@ -5,7 +5,7 @@ type: parm
 order: 2
 mx: "4.2"
 osx: "4.2"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: ClipBoardUsage
@@ -14,17 +14,17 @@ parm:
     - code: 0
       mx: "4.2"
       osx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes as to whether the Clipboard function can be used; any previously selected setting will be retained. 
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: Enable 
       mx: "4.2"
       osx: "4.2"
       description: Enables the Clipboard function to be used.
     - code: 2
-      devicetype: p,v
+      devicetype: A,B
       name: Disable
       mx: "4.2"
       osx: "4.2"

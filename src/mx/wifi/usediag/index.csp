@@ -4,7 +4,7 @@ title: Use Diagnostic Options (checkbox)
 type: parm
 order: 10
 mx: "4.4"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: UseDiagnosticOptions
@@ -12,12 +12,12 @@ parm:
   list:
     - code: 1
       mx: "4.4"
-      devicetype: p,v
+      devicetype: A,B
       name: (checked)
       description: Allows device diagnostics options to be selected.
     - code: 0
       mx: "4.4"
-      devicetype: p,v
+      devicetype: A,B
       name: (unchecked)
       description: Prevents diagnostics options from being displayed for selection. 
 ---

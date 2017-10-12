@@ -4,7 +4,7 @@ title: WLAN Power Save Mode
 type: parm
 order: 57
 mx: "4.3"
-devicetype: p,v
+devicetype: A,B
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False
@@ -12,24 +12,24 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p,v
+      devicetype: A,B
       name: WMM-PS
       mx: "4.3"
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: Null Data Power Save
       mx: "4.3"
     - code: 2
-      devicetype: p,v
+      devicetype: A,B
       name: PS-POLL
       mx: "4.3"
     - code: 3
-      devicetype: p,v
+      devicetype: A,B
       name:  Do not change
       mx: "4.3"
     - code: 99
       mx: "6.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Unsupported
 ---
 Used to select the Power Save Mode for the WLAN radio. 

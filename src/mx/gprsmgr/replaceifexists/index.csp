@@ -5,7 +5,7 @@ type: parm
 order: 5
 mx: "4.1.1"
 apilevel: "16"
-devicetype: p,v
+devicetype: A,B
 parm:
   presentif: The APN Action is "Add/replace named APN"
   pivotal: No
@@ -13,13 +13,13 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: True
       mx: "4.1.1"
       apilevel: "16"
       description: Causes an APN already defined on the device to be replaced by a new one of the same name. 
     - code: 0
-      devicetype: p,v
+      devicetype: A,B
       name: False
       mx: "4.1.1"
       apilevel: "16"

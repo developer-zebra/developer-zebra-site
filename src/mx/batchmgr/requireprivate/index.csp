@@ -4,7 +4,7 @@ title: Require Private
 type: parm
 order: 10
 mx: "4.3"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   presentif:  Determines whether private encryption is required.
@@ -12,12 +12,12 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p,v
+      devicetype: A,B
       name: False
       description: 
       mx: "4.3"
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: True
       description: Sets private encryption to be required.
       mx: "4.3"

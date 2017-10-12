@@ -5,7 +5,7 @@ type: parm
 order: 9
 mx: "4.3"
 apilevel: "16"
-devicetype: p,v
+devicetype: A,B
 parm:
   presentif: Current Locale value is "Extended" (98)
   pivotal: Yes
@@ -13,34 +13,34 @@ parm:
   type: list
   list:
     - code: en_AU 
-      devicetype: p,v
+      devicetype: A,B
       name: AUSTRALIA_ENGLISH
       mx: "5.1"
       osx: "1.3"
       description: Not supported on TC55 KitKat
     - code: en_IN 
-      devicetype: p,v
+      devicetype: A,B
       name: INDIA_ENGLISH
       mx: "5.1"
       osx: "1.3"
       description: Not supported on TC55 KitKat
     - code: sv_SE 
-      devicetype: p,v
+      devicetype: A,B
       name: SWEDEN_SWEDISH
       mx: "5.1"
       osx: "1.3"
     - code: nb_NO 
-      devicetype: p,v
+      devicetype: A,B
       name: NORWAY_NORWEGIAN-BOKMAL
       mx: "5.1"
       osx: "1.3"
     - code: fi_FI 
-      devicetype: p,v
+      devicetype: A,B
       name: FINLAND_FINISH
       mx: "5.1"
       osx: "1.3"
     - code: da_DK 
-      devicetype: p,v
+      devicetype: A,B
       name: DENMARK_DANISH
       mx: "5.1"
       osx: "1.3"

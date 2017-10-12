@@ -4,7 +4,7 @@ title: 24-Hour Time Enable/Disable
 type: parm
 order: 14
 mx: "6.0"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: MilitaryTime
@@ -12,16 +12,16 @@ parm:
   list:
     - code: 0
       mx: "6.0"
-      devicetype: p,v
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to time display format; any previously selected setting will be retained.
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: Turn on
       mx: "6.0"
       description: Displays time in 24-hour (military time) format.
     - code: 2
-      devicetype: p,v
+      devicetype: A,B
       name: Turn off
       mx: "6.0"
       description: Displays time in 12-hour (a.m./p.m.) format.

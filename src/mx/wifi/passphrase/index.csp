@@ -4,7 +4,7 @@ title: Passphrase
 type: parm
 order: 38
 mx: "4.2"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: PassphraseWEPClear, PassphraseWEPEncrypted, PassphraseWPAClear, PassphraseWPAEncrypted

@@ -4,7 +4,7 @@ title: Hotspot Passphrase Encrypted
 type: parm
 order: 83
 mx: "6.3"
-devicetype: p,v
+devicetype: A,B
 parm:
   presentif: The "Specify Hotspot Options" and "Protect Hotspot Passphrase" checkboxes are checked, "Hotspot" is set to "Enable" and "Hotspot Security Mode" is "WPA2/PSK"
   pivotal: No

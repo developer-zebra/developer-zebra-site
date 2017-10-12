@@ -4,7 +4,7 @@ title: Use OmniTrail Options (checkbox)
 type: parm
 order: 84
 mx: "6.3"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: UseOmniTrailOptions
@@ -12,12 +12,12 @@ parm:
   list:
     - code: 0
       mx: "6.3"
-      devicetype: p,v
+      devicetype: A,B
       name: (unchecked)
       description: Disables OmniTrail device location services and options.
     - code: 1
       mx: "6.3"      
-      devicetype: p,v
+      devicetype: A,B
       name: (checked)
       description: Enables OmniTrail device location services and options.
 ---

@@ -4,7 +4,7 @@ title: OmniTrail Data-Rate Option
 type: parm
 order: 90
 mx: "6.3"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The "Specify OmniTrail Options" checkbox is checked
@@ -13,22 +13,22 @@ parm:
   list:
     - code: 0
       mx: "6.3"
-      devicetype: p,v
+      devicetype: A,B
       name: abg
       description: Sets Wi-Fi for 802.11abg mode. 
     - code: 1
       mx: "6.3"
-      devicetype: p,v
+      devicetype: A,B
       name: 11n
       description: Sets Wi-Fi for 802.11n mode. 
     - code: 2
       mx: "6.3"
-      devicetype: p,v
+      devicetype: A,B
       name: 11ac
       description: Sets Wi-Fi for 802.11ac mode.
     - code: 3
       mx: "6.3"
-      devicetype: p,v
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
 ---

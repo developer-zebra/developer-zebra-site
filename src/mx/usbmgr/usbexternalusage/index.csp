@@ -5,7 +5,7 @@ type: parm
 order: 3
 mx: "4.2"
 osx: "4.1"
-devicetype: p,v
+devicetype: A,B
 parm:
   presentif:  The "USB Module Usage" value is not "Disable" 
   pivotal: No
@@ -15,17 +15,17 @@ parm:
     - code: 0
       mx: "4.2"
       osx: "4.1"
-      devicetype: p,v
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not use of USB External Storage will be allowed.
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: Enable 
       mx: "4.2"
       osx: "4.1"
       description: This value will cause use of USB External Storage to be allowed.
     - code: 2
-      devicetype: p,v
+      devicetype: A,B
       name: Disable
       mx: "4.2"
       osx: "4.1"

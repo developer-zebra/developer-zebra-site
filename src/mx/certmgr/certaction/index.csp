@@ -5,26 +5,26 @@ type: parm
 order: 2
 mx: "4.1"
 osx: "1.0"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: Yes
   name: CertAction
   type: list
   list:
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: Install certificate
       mx: "4.1"
       osx: "1.0"
       description: Installs the specified certificate on the device.
     - code: 2
-      devicetype: p,v
+      devicetype: A,B
       name: Uninstall certificate
       mx: "4.1"
       osx: "1.0"
       description: Removes the specified certificate from the device.
     - code: 3
-      devicetype: p,v
+      devicetype: A,B
       name: Initialize Android Keystore
       mx: "4.2"
       osx: "1.0"

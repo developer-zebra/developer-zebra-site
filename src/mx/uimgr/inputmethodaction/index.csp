@@ -5,20 +5,20 @@ type: parm
 order: 10
 mx: "4.3"
 apilevel: "16"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: Yes
   name: InputMethodAction
   type: list
   list:
     - code: 0
-      devicetype: p,v
+      devicetype: A,B
       name: Do not change
       mx: "4.3"
       apilevel: "16"
       description: This value (or the absence of this parm from the XML) will cause no change to be made to the Current Default Input Method; any previously selected setting will be retained.
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: Change Current Input Method 
       mx: "4.3"
       apilevel: "16"

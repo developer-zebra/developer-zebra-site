@@ -5,7 +5,7 @@ type: parm
 order: 5
 mx: "4.1"
 osx: "1.0"
-devicetype: p,v
+devicetype: A,B
 parm:
   presentif: The Certificate Action is "Install certificate"
   pivotal: Yes
@@ -13,7 +13,7 @@ parm:
   type: list
   list:
     - code: 2
-      devicetype: p,v
+      devicetype: A,B
       name: Reference certificate file
       mx: "4.1"
       osx: "1.0"

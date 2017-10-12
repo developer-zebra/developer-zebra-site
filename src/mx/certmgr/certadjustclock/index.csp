@@ -5,7 +5,7 @@ type: parm
 order: 8
 mx: "4.2"
 apilevel: "1.0"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: CertAdjustClock

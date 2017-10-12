@@ -4,7 +4,7 @@ title: Require Specific Encodings
 type: parm
 order: 6
 mx: "4.3"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   presentif: File Access method is batch file type is binary.
@@ -12,12 +12,12 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p,v
+      devicetype: A,B
       name: False
       description: Binary file does not require encoding.
       mx: "4.3"
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: True
       description: Binary file requires to be encoded.
       mx: "4.3"

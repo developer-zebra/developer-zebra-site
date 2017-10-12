@@ -5,7 +5,7 @@ type: parm
 order: 20
 mx: "7.1"
 osx: "7.1"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: NavigationBarUsage
@@ -14,17 +14,17 @@ parm:
     - code: 0
       mx: "7.1"
       osx: "7.1"
-      devicetype: p,v
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no setting change; any previously selected setting will be retained. 
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: Enable 
       mx: "7.1"
       osx: "7.1"
       description: Enables the navigation soft keys (BACK, HOME and RECENT) on the screen-bound Navigation Bar to be displayed and usable. 
     - code: 2
-      devicetype: p,v
+      devicetype: A,B
       name: Disable
       mx: "7.1"
       osx: "7.1"

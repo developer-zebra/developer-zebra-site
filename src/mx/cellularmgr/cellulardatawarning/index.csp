@@ -4,7 +4,7 @@ title: Cellular Data Warning
 type: parm
 order: 28
 mx: "6.3"
-devicetype: p,v
+devicetype: A,B
 parm:
   presentif: Cellular Data State is set to "Turn On"
   pivotal: No
@@ -13,11 +13,11 @@ parm:
   list:
     - code: 0
       mx: "6.3"
-      devicetype: p,v
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to CellularMgr settings; any previously selected setting will be retained.
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: Set new warning
       mx: "6.3"
       description: Enables a data limit warning threshold (in MB) to be specified.

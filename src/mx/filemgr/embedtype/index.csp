@@ -4,7 +4,7 @@ title: Embedded File Type
 type: parm
 order: 8
 mx: "4.3"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   presentif: File Action is Transfer/Copy and source is embedded
@@ -12,17 +12,17 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: General Data File
       mx: "4.3"
       description: Indicates a source file with any extension type.
     - code: 2
-      devicetype: p,v
+      devicetype: A,B
       name: Android Application
       mx: "4.3"
       description: Indicates a source file with an .APK extension
     - code: 3
-      devicetype: p,v
+      devicetype: A,B
       name: Android OS Update
       mx: "4.3"
       description: Indicates a source file with a .ZIP extension.

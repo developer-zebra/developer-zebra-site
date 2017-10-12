@@ -5,7 +5,7 @@ type: parm
 order: 11
 mx: "4.3"
 apilevel: "16"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The "Input Method Action" is "Change Current Input Method" and the "Select a Default Input Method Option" is "User defined Input Method"

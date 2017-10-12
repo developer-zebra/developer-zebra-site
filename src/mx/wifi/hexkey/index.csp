@@ -4,7 +4,7 @@ title: Hex Key
 type: parm
 order: 39
 mx: "4.2"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: HexKeyWEPClear, HexKeyWEPEncrypted, HexKeyWPAClear, HexKeyWPAEncrypted

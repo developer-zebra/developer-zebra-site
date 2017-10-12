@@ -4,7 +4,7 @@ title: Require Opaque
 type: parm
 order: 7
 mx: "4.3"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   presentif:  File Access method is batch file type is binary and require encoding is set.
@@ -12,12 +12,12 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p,v
+      devicetype: A,B
       name: False
       description: 
       mx: "4.3"
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: True
       description: Cannot be examined, only the StageNow Client can decrypt with a private key.
       mx: "4.3"

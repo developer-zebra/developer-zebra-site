@@ -4,7 +4,7 @@ title: Use Advanced Options (checkbox)
 type: parm
 order: 50
 mx: "4.2"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: True
   name: UseAdvancedOptions
@@ -12,12 +12,12 @@ parm:
   list:
     - code: 1
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: (checked)
       description: Enables the use of Wi-Fi Advanced Options on the device. 
     - code: 0
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: (unchecked)
       description: Disables the use of Wi-Fi Advanced Options on the device. 
 ---

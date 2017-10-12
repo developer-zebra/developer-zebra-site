@@ -11,16 +11,16 @@ parm:
   list:
     - code: 0
       mx: "7.1"
-      devicetype: p,v
+      devicetype: A,B
       name: Do Nothing
       description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: True
       mx: "7.1"
       description: Causes the setup wizard to be skipped  
     - code: 2
-      devicetype: p,v
+      devicetype: A,B
       name: False
       mx: "7.1"
       description: Disables the selected heater. 

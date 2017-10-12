@@ -5,7 +5,7 @@ type: parm
 order: 4
 mx: "5.1"
 apilevel: "19"
-devicetype: p,v
+devicetype: A,B
 parm:
   presentif: Analytics Action is set to "Enable" and Analytics Client Settings is set to "Enable" 
   pivotal: No
@@ -15,43 +15,43 @@ parm:
     - code: 0
       mx: "5.1"
       apilevel: "19"
-      devicetype: p,v
+      devicetype: A,B
       name: Do Not Change
       description: This value (or the absence of this parm from the XML) will cause no change to the Data Throttling setting; any previously selected setting will be retained.  
     - code: 1
       mx: "5.1"
       apilevel: "19"
-      devicetype: p,v
+      devicetype: A,B
       name: 1 MB
       description: Sets the data upload limit to 1 MB per day.
     - code: 2
       mx: "5.1"
       apilevel: "19"
-      devicetype: p,v
+      devicetype: A,B
       name: 5 MB
       description: Sets the data upload limit to 5 MB per day.
     - code: 3
       mx: "5.1"
       apilevel: "19"
-      devicetype: p,v
+      devicetype: A,B
       name: 10 MB
       description: Sets the data upload limit to 10 MB per day.
     - code: 4
       mx: "5.1"
       apilevel: "19"
-      devicetype: p,v
+      devicetype: A,B
       name: 50 MB
       description: Sets the data upload limit to 50 MB per day.
     - code: 5
       mx: "5.1"
       apilevel: "19"
-      devicetype: p,v
+      devicetype: A,B
       name: 100 MB
       description: Sets the data upload limit to 100 MB per day.
     - code: 99
       mx: "5.1"
       apilevel: "19"
-      devicetype: p,v
+      devicetype: A,B
       name: Custom Data Limit in MB
       description: Accepts an integer from 1-9999 to set a custom daily data upload limit (in MB).
 

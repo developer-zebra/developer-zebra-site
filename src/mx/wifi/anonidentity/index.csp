@@ -4,7 +4,7 @@ title: Anonymous Identity
 type: parm
 order: 26
 mx: "4.2"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and the Authentication is NOT "EAP-TLS" or "LEAP"

@@ -5,7 +5,7 @@ type: parm
 order: 6
 mx: "4.3"
 osx: "4.3"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: BluetoothPairingPopupUsage
@@ -14,17 +14,17 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "4.3"
-      devicetype: p,v
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether the Bluetooth Pairing Popup is will be presented; any previously selected setting will be retained. 
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: Enable 
       mx: "4.3"
       osx: "4.3"
       description: Causes the Bluetooth Pairing Popup to be presented whenever a pairing operation is performed.
     - code: 2
-      devicetype: p,v
+      devicetype: A,B
       name: Disable
       mx: "4.3"
       osx: "4.3"

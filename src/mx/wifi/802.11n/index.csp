@@ -4,7 +4,7 @@ title: 802.11n
 type: parm
 order: 7
 mx: "7.0"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: 802.11n
@@ -12,17 +12,17 @@ parm:
   list:
     - code: 2
       mx: "7.0"
-      devicetype: p,v
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the setting; any previously selected setting will be retained.
     - code: 1
       mx: "7.0"
-      devicetype: p,v
+      devicetype: A,B
       name: Enable
       description: Enables 802.11n wireless protocol on the device. 
     - code: 0
       mx: "7.0"
-      devicetype: p,v
+      devicetype: A,B
       name: Disable
       description: Disables 802.11n and 802.11ac wireless protocols on the device. 
 ---

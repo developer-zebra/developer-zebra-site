@@ -5,7 +5,7 @@ type: parm
 order: 1
 mx: "4.3"
 apilevel: "19"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: AnalyticsAction
@@ -14,19 +14,19 @@ parm:
     - code: 0
       mx: "4.3"
       apilevel: "19"
-      devicetype: p,v
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to whether the Analytics Engine collects data on the device; any previously selected setting will be retained. 
     - code: 1
       mx: "4.3"
       apilevel: "19"
-      devicetype: p,v
+      devicetype: A,B
       name: Enable
       description: Enable Analytics Engine to collect data on the device.
     - code: 2
       mx: "4.3"
       apilevel: "19"
-      devicetype: p,v
+      devicetype: A,B
       name: Disable
       description: Stop the Analytics Engine from collecting data and the Elemez B2M client from providing cloud transportation services.
 ---

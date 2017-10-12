@@ -4,7 +4,7 @@ title: Target OS
 type: parm
 order: 1
 mx: "4.2"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: Yes
   name: TargetOS
@@ -12,7 +12,7 @@ parm:
   list:
     - code: 2
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Android
       description: Specifies Android as the operating system of the target device. 
 ---

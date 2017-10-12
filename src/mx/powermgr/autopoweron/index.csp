@@ -12,11 +12,11 @@ parm:
   list:
     - code: 0
       mx: "7.1"
-      devicetype: p,v
+      devicetype: A,B
       name: Never
       description: Does not power up device when vehicle ignition is turned on. 
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: When Ignition Turned On
       mx: "7.1"
       description: Powers up device when vehicle ignition is turned on. 

@@ -2,7 +2,7 @@
 csp: xmlmgr
 title: Overview
 type: text
-devicetype: p,v
+devicetype: A,B
 order: 0
 ---
 

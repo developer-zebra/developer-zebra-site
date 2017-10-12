@@ -4,7 +4,7 @@ title: Select Band Preference
 type: parm
 order: 64
 mx: "4.3"
-devicetype: p,v
+devicetype: A,B
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False
@@ -13,23 +13,23 @@ parm:
   list:
     - code: 0
       mx: "4.3"
-      devicetype: p,v
+      devicetype: A,B
       name: No Preference
     - code: 1
       mx: "4.3"
-      devicetype: p,v
+      devicetype: A,B
       name: Prefer 2.4GHz
     - code: 2
       mx: "4.3"
-      devicetype: p,v
+      devicetype: A,B
       name: Prefer 5.0GHz
     - code: 3
       mx: "4.3"
-      devicetype: p,v
+      devicetype: A,B
       name: Do not change
     - code: 99
       mx: "6.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Unsupported
 ---
 Used to specify the preferred Wi-Fi band. _**Not supported on MPA3 RevB-based devices running Android Jelly Bean**_. 

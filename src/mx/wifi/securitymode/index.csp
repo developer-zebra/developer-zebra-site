@@ -4,7 +4,7 @@ title: Security Mode
 type: parm
 order: 22
 mx: "4.2"
-devicetype: p,v
+devicetype: A,B
 parm:
   pivotal: Yes
   presentif: The Network Action is "Add a New Network"
@@ -13,17 +13,17 @@ parm:
   list:
     - code: 0
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Open
       description: An open network indicates that the network uses no security. These kinds of networks are generally not advised to be used for transmitting sensitive data unless other protection mechanisms are used, such as VPNs, data encryption, etc. No additional security information will need to be supplied to configure these networks.
     - code: 1
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Personal
       description: This indicates that the network uses basic security. A Pre-Shared Key (PSK) or Wired Equivalency Privacy (WEP) key, which is known to both the device and the Wi-Fi infrastructure, is used to encrypt data. These networks are more secure than open networks, but may be compromised if the keys are not handled securely and/or are not changed periodically. Security information pertaining to the required key will need to be supplied to configure these networks.
     - code: 2
       mx: "4.2"
-      devicetype: p,v
+      devicetype: A,B
       name: Enterprise
       description: This value will remove the a network profile based on the SSID
 ---

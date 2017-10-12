@@ -4,7 +4,7 @@ title: Set a Custom Locale
 type: parm
 order: 8
 mx: "5.1"
-devicetype: p,v
+devicetype: A,B
 parm:
   presentif: Current Locale value is "Custom" (99)
   pivotal: No
@@ -12,12 +12,12 @@ parm:
   type: string
   list:
     - code: ll
-      devicetype: p,v
+      devicetype: A,B
       name: Language
       mx: "5.1"
       description: Selects the language to be used on the device.
     - code: ll_RR
-      devicetype: p,v
+      devicetype: A,B
       name: Language and Region 
       mx: "5.1"
       description: Selects the language and the region that language is used for the device. 

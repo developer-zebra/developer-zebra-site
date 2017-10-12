@@ -11,17 +11,17 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: p,v
+      devicetype: A,B
       name: Serial Port 1
       mx: "7.1"
       description: Selects Serial Port 1 for the specified Action.
     - code: 2
-      devicetype: p,v
+      devicetype: A,B
       name: Serial Port 2
       mx: "7.1"
       description: Selects Serial Port 2 for the specified Action.
     - code: 3
-      devicetype: p,v
+      devicetype: A,B
       name: USB Port 2
       mx: "7.1"
       description: Selects USB Port 2 for the specified Action. 

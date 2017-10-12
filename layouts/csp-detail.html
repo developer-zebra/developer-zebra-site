@@ -95,21 +95,6 @@
                                             {{#if this.apilevel}}
                                                 <li>Android API Level: {{this.apilevel}}+ </li>
                                             {{/if}}
-                                            {{#if this.devicetype}}
-                                            {{#is this.devicetype "p,v"}}
-
-                                            All
-                                        
-                                            {{else}}
-                                            
-                                            <li>Device Type: {{this.devicetype}}</li>
-                                            
-                                            {{/is}}
-                                            
-                                            {{else}}
-                                            All
-                                            {{/if}}
-<!-- PICK UP HERE (ABOVE) THURSDAY --> 
                                            </ul>
                                         </p>
                                         {{/is}}
@@ -127,15 +112,30 @@
                                                 <th>Option</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
-                                                <th>Device Type</th>
+                                                <th>Device Group</th>
                                                 <th>Requires</th>
                                             </tr>
                                             {{#each this.parm.list}}
-                                            <tr data-osx="{{this.osx}}" data-osx-end="{{this.osx-end}}" data-osx-specific-list="{{this.osx-specific-list}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-osx-exclude-end="{{this.osx-exclude-end}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}" data-smartdoc>
+                                            <tr data-osx="{{this.osx}}" data-osx-end="{{this.osx-end}}" data-osx-specific-list="{{this.osx-specific-list}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-osx-exclude-end="{{this.osx-exclude-end}}" data-mx="{{this.mx}}" data-devicetype="{{this.devicetype}}" data-api="{{this.apilevel}}" data-smartdoc>
                                                 <td>{{this.code}}</td>
                                                 <td>{{this.name}}</td>
                                                 <td>{{this.description}}</td>
-                                                <td>{{this.devicetype}}</td>
+
+                                        <!-- DEVICETYPE LOGIC FOR LIST TABLE --> 
+                                        
+                                            <td> 
+                                                {{#if this.devicetype}}
+                                                    {{#is this.devicetype "p,v"}} 
+                                                    All
+                                                    
+                                                    {{/is}}
+                                                {{else}}
+                                                    {{this.devicetype}}
+                                                    A
+                                                    
+                                                {{/if}} 
+                                                </td>
+                                                
                                                 <td>
                                                     
                                                     {{#if this.osx}}

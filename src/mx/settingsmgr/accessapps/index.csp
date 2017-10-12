@@ -5,7 +5,7 @@ type: parm
 order: 6
 mx: "4.4"
 osx: "4.4"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   name: AccessAppsSection
@@ -14,17 +14,17 @@ parm:
     - code: 0
       mx: "4.4"
       osx: "4.4"
-      devicetype: p
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to access the "Apps" section of the System Settings Menu.
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Enable
       mx: "4.4"
       osx: "4.4"
       description: This value will cause the device user to be allowed to access the "Apps" section of the System Settings Menu.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Disable
       mx: "4.4"
       osx: "4.4"

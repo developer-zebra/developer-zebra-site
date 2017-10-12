@@ -4,7 +4,7 @@ title: Symbol Tab Show/Hide
 type: parm
 order: 18
 mx: "7.1"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   name: ShowSymbolTab
@@ -12,16 +12,16 @@ parm:
   list:
     - code: 0
       mx: "7.1"
-      devicetype: p
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Turn on
       mx: "7.1"
       description: Shows the symbol tab among other key layout tabs.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Turn off
       mx: "7.1"
       description: Hides the symbol tab and prevents selection of the symbol key layout.

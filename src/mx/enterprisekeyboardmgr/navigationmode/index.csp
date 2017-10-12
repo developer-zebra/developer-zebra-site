@@ -4,19 +4,19 @@ title: Navigation Mode
 type: parm
 order: 16
 mx: "7.1"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   name: NavigationMode
   type: list
   list:
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Tabs
       mx: "7.1"
       description: Enables tab-based navigation for switching between keyboard layouts.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Keys
       mx: "7.1"
       description: Enables key-based navigation for switching between keyboard layouts.

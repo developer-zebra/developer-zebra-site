@@ -4,7 +4,7 @@ title: Set Blanking Debounce Delay
 type: parm
 order: 30
 mx: "7.1"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   name: ScreenBlankingDebounceDelay

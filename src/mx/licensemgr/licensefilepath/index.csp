@@ -4,7 +4,7 @@ title: License File Path
 type: parm
 order: 8
 mx: "4.3"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   presentif:  The "Specify license action to perform" is "Apply" *AND* "Specify licensing method" is "Reference a license file already on the mobile device"

@@ -4,7 +4,7 @@ title: Key Long-Press Delay Mode
 type: parm
 order: 6
 mx: "6.0"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   name: KeyLongPressDelayMode
@@ -12,11 +12,11 @@ parm:
   list:
     - code: 0
       mx: "6.0"
-      devicetype: p
+      devicetype: A
       name: Do not change
       description: A null value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Specify duration
       mx: "6.0"
       description: Enables specification of the length of time (in ms) that a key must be held before being considered a long press.

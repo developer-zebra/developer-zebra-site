@@ -5,7 +5,7 @@ type: parm
 order: 42
 mx: "6.3"
 apilevel: "23"
-devicetype: p
+devicetype: A
 parm:
   presentif: DialogAction parameter is set to "AddLabel (3)"
   pivotal: No

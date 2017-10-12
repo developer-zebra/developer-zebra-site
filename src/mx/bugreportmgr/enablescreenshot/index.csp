@@ -5,26 +5,26 @@ type: parm
 order: 28
 mx: "7.0"
 apilevel: "24"
-devicetype: p
+devicetype: A
 parm: 
   pivotal: No
   name: EnableScreenshot
   type: list
   list:
     - code: 0
-      devicetype: p
+      devicetype: A
       name: none
       description: This value (or the absence of this parm from the XML) will cause no change to Bug Report Manager settings; any previously selected setting will be retained.
       mx: "7.0"
       apilevel: "24"
     - code: 1
-      devicetype: p
+      devicetype: A
       name: True
       description: Enables screenshots to be taken and saved with each Bug Report.
       mx: "7.0"
       apilevel: "24"
     - code: 2
-      devicetype: p
+      devicetype: A
       name: False
       description: Prevents screenshots from being taken with Bug Reports.
       mx: "7.0"

@@ -2,7 +2,7 @@
 csp: batterymgr
 title: Overview
 type: text
-devicetype: p
+devicetype: A
 order: 0
 ---
 The BatteryMgr allows configuration of the thresholds used to determine when a battery needs to be decommissioned.

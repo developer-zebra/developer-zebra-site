@@ -4,7 +4,7 @@ title:  Trigger
 type: parm
 order: 12
 mx: "4.4"
-devicetype: p
+devicetype: A
 parm:
   presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior for the corresponding Key Table is "Send trigger"
   pivotal: No
@@ -13,42 +13,42 @@ parm:
   list:
     - code: 10016
       mx: "4.4"
-      devicetype: p
+      devicetype: A
       name: Trigger 1
       description: Commonly used to initiate Barcode Scanning. This value indicates that the designated Trigger will be sent as the Key Behavior for the specified Key in the specified Key Mapping Table. 
     - code: 10017
       mx: "4.4"
-      devicetype: p
+      devicetype: A
       name: Trigger 2
       description: Causes the designated Trigger to be sent as the Key Behavior for the specified Key in the specified Key Mapping Table. 
     - code: 10018
       mx: "4.4"
-      devicetype: p
+      devicetype: A
       name: Trigger 3
       description: Causes the designated Trigger to be sent as the Key Behavior for the specified Key in the specified Key Mapping Table.
     - code: 10019
       mx: "4.4"
-      devicetype: p
+      devicetype: A
       name: Trigger 4
       description: Causes the designated Trigger to be sent as the Key Behavior for the specified Key in the specified Key Mapping Table.
     - code: 10020
       mx: "4.4"
-      devicetype: p
+      devicetype: A
       name: Trigger 5
       description: Causes the designated Trigger to be sent as the Key Behavior for the specified Key in the specified Key Mapping Table.
     - code: 10021
       mx: "4.4"
-      devicetype: p
+      devicetype: A
       name: Trigger 6
       description: Causes the designated Trigger to be sent as the Key Behavior for the specified Key in the specified Key Mapping Table. 
     - code: 10022
       mx: "4.4"
-      devicetype: p
+      devicetype: A
       name: Trigger 7
       description: Causes the designated Trigger to be sent as the Key Behavior for the specified Key in the specified Key Mapping Table.
     - code: 10023
       mx: "4.4"
-      devicetype: p
+      devicetype: A
       name: Trigger 8
       description: This value indicates that the designated Trigger will be sent as the Key Behavior for the specified Key in the specified Key Mapping Table. 
 ---

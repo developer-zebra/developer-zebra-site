@@ -5,7 +5,7 @@ type: parm
 order: 25
 mx: "4.3"
 osx: "3.5"
-devicetype: p
+devicetype: A
 parm:
   presentif: Shown if Threat Action is "Turn On" and any Threat Action is selected.
   pivotal: No
@@ -13,13 +13,13 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p
+      devicetype: A
       name: Do not perform
       mx: "4.3"
       osx: "3.5"
       description: Secure Storage Keys will not be removed.
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Perform
       description: Secure Storage Keys will be removed upon threat detection.
       mx: "4.3"

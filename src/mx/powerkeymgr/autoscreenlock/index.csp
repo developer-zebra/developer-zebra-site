@@ -6,7 +6,7 @@ order: 4
 mx: "4.3"
 osx: "4.3"
 apilevel: "23"
-devicetype: p
+devicetype: A
 parm:
   pivotal: Yes
   name: AutoScreenLockOption
@@ -16,18 +16,18 @@ parm:
       mx: "4.3"
       osx: "4.3"
       apilevel: "23"
-      devicetype: p
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to Power Off Menu settings; any previously selected setting will be retained.
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Show Menu Option
       mx: "4.3"
       osx: "4.3"
       apilevel: "23"
       description: Enables the Auto Screen Lock option to be controlled from the Android Settings panel.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Do not show Menu Option
       mx: "4.3"
       osx: "4.3"

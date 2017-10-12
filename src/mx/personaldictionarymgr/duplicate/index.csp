@@ -4,7 +4,7 @@ title: Duplicate (checkbox)
 type: parm
 order: 8
 mx: "6.3"
-devicetype: p
+devicetype: A
 parm:
   presentif: Action is "Add word from file"
   pivotal: No
@@ -13,12 +13,12 @@ parm:
   list:
     - code: 0
       mx: "6.3"
-      devicetype: p
+      devicetype: A
       name: (unchecked)
       description: Terms are appended to the Personal Dictionary only if not already present.
     - code: 1
       mx: "6.3"      
-      devicetype: p
+      devicetype: A
       name: (checked)
       description: All terms are appended to the Personal Dictionary without regard to duplication.
 ---

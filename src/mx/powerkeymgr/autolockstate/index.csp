@@ -5,7 +5,7 @@ type: parm
 order: 4
 mx: "4.3"
 osx: "4.3"
-devicetype: p
+devicetype: A
 parm:
   pivotal: Yes
   name: AutoScreenLockState
@@ -14,17 +14,17 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "4.3"
-      devicetype: p
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to screen lock settings; any previously selected setting will be retained.
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Turn on
       mx: "4.3"
       osx: "4.3"
       description: Forces the screen to lock whenever the screen is turned off using the power key.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Turn off
       mx: "4.3"
       osx: "4.3"

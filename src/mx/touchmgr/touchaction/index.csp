@@ -4,7 +4,7 @@ title: Touch Actions for TC series
 type: parm
 order: 3
 mx: "4.2"
-devicetype: p
+devicetype: A
 parm:
   presentif: Device Type is set to "8956" or "8960" 
   pivotal: No
@@ -13,16 +13,16 @@ parm:
   list:
     - code: 0
       mx: "4.2"
-      devicetype: p
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the Touch Mode; any previously selected setting will be retained. 
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Stylus and Finger 
       mx: "4.2"
       description: Adjusts touch-screen sensitivity for input with a stylus or bare finger.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Glove and Finger
       mx: "4.2"
       description: Adjusts touch-screen sensitivity for input with a bare or gloved finger.

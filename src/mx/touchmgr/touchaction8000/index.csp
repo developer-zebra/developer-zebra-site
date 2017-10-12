@@ -4,7 +4,7 @@ title: Touch Actions for TC8000
 type: parm
 order: 8
 mx: "6.2"
-devicetype: p
+devicetype: A
 parm:
   presentif: Device Type is set to "TC8000"
   pivotal: No
@@ -13,16 +13,16 @@ parm:
   list:
     - code: 0
       mx: "6.2"
-      devicetype: p
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the Touch Mode on a TC8000; any previously selected setting will be retained. 
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Finger Only 
       mx: "6.2"
       description: Adjusts touch-screen sensitivity for input with a bare finger.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Stylus, Glove and Finger
       mx: "6.2"
       description: Adjusts touch-screen sensitivity for input with a stylus, or bare or gloved finger.

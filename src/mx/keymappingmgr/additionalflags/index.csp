@@ -4,7 +4,7 @@ title:  Include Additional Flags
 type: parm
 order: 16
 mx: "4.4"
-devicetype: p
+devicetype: A
 parm:
   presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
   name: BaseIntentIncludeFlags,BlueIntentIncludeFlags,OrangeIntentIncludeFlags,GreyIntentIncludeFlags,ShiftIntentIncludeFlags,ControlIntentIncludeFlags

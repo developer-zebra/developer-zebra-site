@@ -4,7 +4,7 @@ title: License Method
 type: parm
 order: 6
 mx: "4.3"
-devicetype: p
+devicetype: A
 parm:
   pivotal: Yes
   presentif: The "Specify license action to perform" is "Apply"
@@ -12,12 +12,12 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: p
+      devicetype: A
       name: embed
       mx: "4.3"
       description: Embed the license blob from the license file into the XML This value indicates that the contents of the Software License File will be embedded (Base64 encoded) into the Request XML. To use this option, the contents of the Software License File acquired from the Zebra Software License Server, which are already Base64 encoded, must be Base64 encoded a second time by the MDM Agent before it is added into this Request XML document.  Note- This option has the advantage of making the Request XML self-contained, although it does make the total data size somewhat larger due to the Base64 encoding the Software License File contents.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: reference
       mx: "4.3"
       description: Reference a license file already on the mobile device This value indicates that a Software License File, which must be present in the device file system, will be referenced by its path and file name. Note- This option requires that the Software License File be transferred to the device file system before the Request XML is submitted and requires that the exact path and file name of the Software License File in the device file system be specified. Also, if the license should be applied after an Enterprise Reset, the license file should be stored in a persistent location so that it is not deleted after the reset.

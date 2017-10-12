@@ -4,7 +4,7 @@ title:  Add Key Event
 type: parm
 order: 14
 mx: "4.4"
-devicetype: p
+devicetype: A
 parm:
   presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send intent"
   pivotal: Yes
@@ -13,11 +13,11 @@ parm:
   list:
     - code: 0
       mx: "4.4"
-      devicetype: p
+      devicetype: A
       name: True
       description: Causes Key Event that occurred when the Key was pressed or released to be attached to the Intent. This would generally be valuable only when an application was written specifically to receive such an Intent since it would require the application to understand and interpret the data format used to encode a Key Event.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: False
       mx: "4.4"
       description: Prevents Key Event that occurred when the Key was pressed or released from being attached to the Intent.

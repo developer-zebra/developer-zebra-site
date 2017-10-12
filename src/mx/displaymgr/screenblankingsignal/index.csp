@@ -4,19 +4,19 @@ title: Set Screen Blanking Signal
 type: parm
 order: 15
 mx: "7.1"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   name: ScreenBlankingSignal
   type: list
   list:
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Input 1
       mx: "7.1"
       description: Sets the screen blanking signal to Input 1 (VC80x serial port 1).
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Input 2
       mx: "7.1"
       description: Sets the screen blanking signal to Input 2 (VC80x serial port 2).

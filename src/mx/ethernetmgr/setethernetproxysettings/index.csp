@@ -6,7 +6,7 @@ order: 10
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   name: SetEthernetProxySettings
@@ -15,19 +15,19 @@ parm:
     - code: 0
       mx: "6.2"
       osx: "6.2"
-      devicetype: p
+      devicetype: A
       name: Do not change
       apilevel: "23"
       description: This value (or the absence of this parm from the XML) will cause no changes to Ethernet Proxy settings; any previously selected setting will be retained.
     - code: 1
-      devicetype: p
+      devicetype: A
       name: None
       mx: "6.2"
       osx: "6.2"
       apilevel: "23"
       description: Disables the use of an Ethernet Proxy.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Manual
       mx: "6.2"
       osx: "6.2"

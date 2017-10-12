@@ -4,7 +4,7 @@ title: Numeric Tab Show/Hide
 type: parm
 order: 17
 mx: "7.1"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   name: ShowNumericTab
@@ -12,16 +12,16 @@ parm:
   list:
     - code: 0
       mx: "7.1"
-      devicetype: p
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Turn on
       mx: "7.1"
       description: Shows the numeric tab among the other key layout tabs.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Turn off
       mx: "7.1"
       description: Hides the numeric tab and prevents selection of the numeric key layout.

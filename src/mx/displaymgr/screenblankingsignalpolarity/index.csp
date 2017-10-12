@@ -4,19 +4,19 @@ title: Set Blanking Signal Polarity
 type: parm
 order: 20
 mx: "7.1"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   name: ScreenBlankingSignalPolarity
   type: list
   list:
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Blank screen when vehicle goes active (ON)
       mx: "7.1"
       description: Sets the screen to go blank when a signal is present.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Blank screen when vehicle goes inactive (OFF)
       mx: "7.1"
       description: Sets the screen to go blank when a signal is absent.

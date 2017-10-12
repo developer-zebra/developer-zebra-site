@@ -4,7 +4,7 @@ title: Use Default Credentials
 type: parm
 order: 7
 mx: "6.0"
-devicetype: p
+devicetype: A
 parm:
   presentif: AppGallery Client State is set to "Turn On"
   pivotal: No
@@ -12,17 +12,17 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: p
+      devicetype: A
       name: Do Not Change
       description: This value (or the absence of this parm from the XML) will cause no changes; any previously selected setting will be retained.
       mx: "6.0"
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Turn On
       description: Enables the AppGallery client app to accept default log-in credentials.
       mx: "6.0"
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Turn Off
       description: Prevents the AppGallery client app from accepting default log-in credentials.
       mx: "6.0"

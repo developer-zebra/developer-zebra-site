@@ -4,7 +4,7 @@ title: Touch Actions for ET50, ET55
 type: parm
 order: 4
 mx: "6.3"
-devicetype: p
+devicetype: A
 parm:
   presentif: Device Type is set to "ET5x"
   pivotal: No
@@ -13,21 +13,21 @@ parm:
   list:
     - code: 0
       mx: "6.3"
-      devicetype: p
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the Touch Mode on a TC8000; any previously selected setting will be retained. 
     - code: 7
-      devicetype: p
+      devicetype: A
       name: Finger Only 
       mx: "6.3"
       description: Adjusts touch-screen sensitivity for input with a bare finger.
     - code: 8
-      devicetype: p
+      devicetype: A
       name: Glove and Finger
       mx: "6.3"
       description: Adjusts touch-screen sensitivity for input with a bare or gloved finger.
     - code: 9
-      devicetype: p
+      devicetype: A
       name: Stylus, Glove and Finger
       mx: "6.3"
       description: Adjusts touch-screen sensitivity for input with a stylus, or bare or gloved finger.

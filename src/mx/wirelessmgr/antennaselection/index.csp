@@ -4,7 +4,7 @@ title: Antenna Selection
 type: parm
 order: 1
 mx: 7.1
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   name: AntennaSelection
@@ -12,16 +12,16 @@ parm:
   list:
     - code: 0
       mx: 7.1
-      devicetype: p
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to settings; any previously selected setting will be retained.
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Use Internal Antenna 
       mx: 7.1
       description: Sets the VC80x vehicle computer to use its built-in Bluetooth/Wi-Fi antenna.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Use External Antenna
       mx: 7.1
       description: Sets the VC80x vehicle computer to use an (optional) external Bluetooth/Wi-Fi antenna.

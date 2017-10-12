@@ -4,7 +4,7 @@ title:  Action
 type: parm
 order: 2
 mx: "4.4"
-devicetype: p
+devicetype: A
 parm:
   pivotal: Yes
   type: list
@@ -12,11 +12,11 @@ parm:
   list:
     - code: 1
       mx: "4.4"
-      devicetype: p
+      devicetype: A
       name: Remap a key
       description: Adds or modifies Override Key Mappings for a single Key for one or more Key Mapping Tables. Each Override Key Mapping added or modified alters the Behavior of exactly one Key in one or more of its Key States.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Default all key mappings
       mx: "4.4"
       description: Causes all Override Key Mappings to be removed from all Key Mapping Tables and sets all Key Mappings to their default values for the device.

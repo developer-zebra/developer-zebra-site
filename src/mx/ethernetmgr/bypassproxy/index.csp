@@ -6,7 +6,7 @@ order: 15
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"
-devicetype: p
+devicetype: A
 parm:
   presentif: Ethernet Proxy Setting is "Manual"
   pivotal: No

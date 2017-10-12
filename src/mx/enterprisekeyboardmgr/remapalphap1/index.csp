@@ -4,7 +4,7 @@ title: Remap Alpha Key P1
 type: parm
 order: 35
 mx: "6.0"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   name: RemapAlphaP1

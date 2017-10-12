@@ -5,7 +5,7 @@ type: parm
 order: 5
 mx: "4.3"
 osx: "3.5"
-devicetype: p
+devicetype: A
 parm:
   presentif: Use All Cameras is set to "Control Individual Cameras"
   pivotal: No
@@ -15,17 +15,17 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "3.5"
-      devicetype: p
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to whether the device's rear-facing camera can be used; any previously selected setting will be retained.
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Enable
       mx: "4.3"
       osx: "3.5"
       description: Enables use of the rear-facing camera on the device, allowing that camera to take pictures or otherwise acquire documents or images if an application exists on the device to do so.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Disable
       mx: "4.3"
       osx: "3.5"

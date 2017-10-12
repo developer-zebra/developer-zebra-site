@@ -5,7 +5,7 @@ type: parm
 order: 3
 mx: "4.1"
 osx: "3.5"
-devicetype: p
+devicetype: A
 parm:
   presentif: The Operation Mode is "Single User With Whitelist"
   pivotal: No
@@ -13,13 +13,13 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Full Access
       mx: "4.1"
       osx: "3.5"
       description: This value will cause the device user to be allowed to access the full capabilities of the in-device System Settings Menu.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Reduced Access
       mx: "4.1"
       osx: "3.5"

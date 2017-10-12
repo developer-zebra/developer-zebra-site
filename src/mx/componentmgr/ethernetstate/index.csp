@@ -5,7 +5,7 @@ type: parm
 order: 4
 mx: "4.4"
 osx: "4.4"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   name: EthernetState
@@ -14,17 +14,17 @@ parm:
     - code: 0
       mx: "4.4"
       osx: "4.4"
-      devicetype: p
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to whether the Ethernet Option is turned On or Off.
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Turn on
       mx: "4.4"
       osx: "4.4"
       description: This value will cause the Ethernet Option to be turned On, thus allowing the use of an Ethernet connection on the device.
     - code: 2
-      devicetype: p
+      devicetype: A
       name: Turn off
       mx: "4.4"
       osx: "4.4"

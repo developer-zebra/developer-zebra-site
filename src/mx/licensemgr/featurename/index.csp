@@ -4,7 +4,7 @@ title: Standard Feature Name
 type: parm
 order: 4
 mx: "4.3"
-devicetype: p
+devicetype: A
 parm:
   pivotal: No
   presentif: The "Specify license action to perform" is "Apply" AND "Specify verification method to use" is "Verify against a standard feature name"
@@ -12,7 +12,7 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: p
+      devicetype: A
       name: SIMULDC1_0_0
       mx: "4.3"
       description: Verifies that the SimulScan OCR/OMR Licensed Feature Name contained in the Software License File matches the Standard Licensed Feature Name of the SimulScan software component.

@@ -5,20 +5,20 @@ type: parm
 order: 5
 mx: "4.3"
 osx: "1.0"
-devicetype: p
+devicetype: A
 parm:
   pivotal: Yes
   name: RevokeKeyAction
   type: list
   list:
     - code: 0
-      devicetype: p
+      devicetype: A
       name: Do Nothing
       mx: "4.3"
       osx: "1.0"
       description: This value (or the absence of this parm from the XML) will not cause any Named Key to be Removed from the Key Storage Database.
     - code: 1
-      devicetype: p
+      devicetype: A
       name: Revoke Key
       mx: "4.3"
       osx: "1.0"

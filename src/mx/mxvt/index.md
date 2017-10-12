@@ -1,5 +1,5 @@
 ---
-title: Entry-level Device Features
+title: Group B Device Features
 layout: csp-mxvt-support.html
 mxversions:
   - text: MX 7.x
@@ -72,6 +72,10 @@ csps:
   - type: section
     title: Wi-Fi
     url: /mx/wifi
+    csp: wifi
+  - type: section
+    title: XML Manager
+    url: /mx/xmlmgr
     csp: wifi
 ---
            

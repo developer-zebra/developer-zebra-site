@@ -22,7 +22,8 @@ parm:
       description: Sets the screen blanking signal to Input 2 (VC80x serial port 2).
 ---
 
-Used to specify which external signal will control Screen Blanking, if enabled. 
+Used to specify which external signal will control Screen Blanking, if enabled. Inputs 1 and 2 correspond to serial ports 1 and 2 on the device. On Zebra vehicle-mount computers such as the VC80x, a serial port can be used to determine whether the vehicle’s accelerator pedal is pressed. 
 
-**Note**: On the Zebra VC80x vehicle-mount computer, inputs 1 and 2 correspond to serial ports 1 and 2. Vehicle wiring is generally configured such that "Clear to Send" (CTS) and "Ready to Send" (RTS) signals are connected when the vehicle accelerator is pressed and disconnected otherwise. The signal of interest to this parameter is CTS. 
+**Flow Control**: In serial-port communications, the "Request to Send" (RTS) output signal is activated to indicate readiness to receive data. Usually active, RTS would be deactivated when internal buffers are nearly full, signaling to the "Clear to Send" (CTS) input signal on the other side to stop sending data. The CTS is wired electrically to the RTS on the opposite end, signaling its ability to receive more data. 
 
+**Accelerator detection**: In this application, pins 7 (RTS) and 8 (CTS) are wired into a simple switch that's connected when the pedal is pressed and disconnected when released. The VC80x can activate RTS at all times and simply read CTS to determine the status of the switch. When disconnected, CTS is electrically pulled to the inactive state.

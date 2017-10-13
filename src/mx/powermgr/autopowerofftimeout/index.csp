@@ -4,6 +4,7 @@ title: Auto Power-off Timeout
 type: parm
 order: 40
 mx: "7.1"
+devicetype: A
 parm:
   presentif:  The Auto Power Control is "Checked" and Auto Power-off Action is "When Ignition Turned Off"
   pivotal: No

@@ -4,7 +4,7 @@ title: Persist If Error
 type: parm
 order: 6
 mx: "4.2"
-devicetype: A,B
+devicetype: A
 parm:
   presentif: Persist Action is "Add current XML as a persistent profile"
   pivotal: Yes
@@ -13,11 +13,11 @@ parm:
   list:
     - code: true
       mx: "4.2"
-      devicetype: A,B
+      devicetype: A
       name: True
       description: Causes the Request XML document in which this PersistMgr Feature is contained to be made Persistent even if top-level characteristic errors are reported in the Result XML returned when the Request XML document is submitted.
     - code: false
-      devicetype: A,B
+      devicetype: A
       name: False
       mx: "4.2"
       description: Prevents the Request XML document in which this PersistMgr Feature is contained from being made Persistent if any top-level characteristic errors are reported in the Result XML returned when the Request XML document is submitted.

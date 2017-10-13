@@ -5,7 +5,7 @@ type: parm
 order: 4
 mx: "4.3"
 apilevel: "1"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   name: AutoCorrectUsage
@@ -14,17 +14,17 @@ parm:
     - code: 0
       mx: "4.3"
       apilevel: "1"
-      devicetype: A,B
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether the AutoCorrect function is allowed to be used; any previously selected setting will be retained. 
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: Enable 
       mx: "4.3"
       apilevel: "1"
       description: Enables use of the AutoCorrect function, allowing an administrator or device user to the turn the function on and off and configure its settings using the System Settings panel.
     - code: 2
-      devicetype: A,B
+      devicetype: A
       name: Disable
       mx: "4.3"
       apilevel: "1"

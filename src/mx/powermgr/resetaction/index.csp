@@ -41,7 +41,7 @@ parm:
       apilevel: "19"
       description: Performs a Factory Reset, erasing all data partitions, including /data, /cache and /enterprise, and some storage cards. See Overview for more information. 
     - code: 7
-      devicetype: A,B
+      devicetype: A
       name: Full Device Wipe
       mx: "4.2"
       osx: "4.2"

@@ -5,7 +5,7 @@ type: parm
 order: 5
 mx: "4.3"
 osx: "1.0"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   name: HomeKeyUsage
@@ -14,17 +14,17 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "1.0"
-      devicetype: A,B
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to HOME key functionality; any previously selected setting will be retained.
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: Enable 
       mx: "4.3"
       osx: "1.0"
       description: Allows use of the HOME key to exit the current app and launch the Home Screen app.
     - code: 2
-      devicetype: A,B
+      devicetype: A
       name: Disable
       mx: "4.3"
       osx: "1.0"

@@ -4,6 +4,7 @@ title: Auto Power-on
 type: parm
 order: 30
 mx: "7.1"
+devicetype: A
 parm:
   presentif: The Auto-Power Control is "Checked"
   pivotal: No
@@ -12,11 +13,11 @@ parm:
   list:
     - code: 0
       mx: "7.1"
-      devicetype: A,B
+      devicetype: A
       name: Never
       description: Does not power up device when vehicle ignition is turned on. 
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: When Ignition Turned On
       mx: "7.1"
       description: Powers up device when vehicle ignition is turned on. 

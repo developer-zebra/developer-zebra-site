@@ -4,6 +4,7 @@ title: Auto Power-off
 type: parm
 order: 35
 mx: "7.1"
+devicetype: A
 parm:
   presentif: The Auto-Power Control is "Checked"
   pivotal: No
@@ -12,11 +13,11 @@ parm:
   list:
     - code: 0
       mx: "7.1"
-      devicetype: A,B
+      devicetype: A
       name: Never
       description: Does not power down device when vehicle ignition is turned off. 
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: When Ignition Turned Off
       mx: "7.1"
       description: Powers down device when vehicle ignition is turned off. 

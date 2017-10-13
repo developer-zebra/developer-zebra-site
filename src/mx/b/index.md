@@ -76,7 +76,7 @@ csps:
   - type: section
     title: XML Manager
     url: /mx/xmlmgr
-    csp: wifi
+    csp: xmlmgr
 ---
            
 

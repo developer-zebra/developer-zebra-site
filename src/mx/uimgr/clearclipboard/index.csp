@@ -5,7 +5,7 @@ type: parm
 order: 3
 mx: "4.2"
 osx: "4.2"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   name: ClipBoardClear
@@ -14,11 +14,11 @@ parm:
     - code: true
       mx: "4.2"
       osx: "4.2"
-      devicetype: A,B
+      devicetype: A
       name: True
       description: Clears the clipboard, erasing any content that was previously copied and preventing such content from being pasted.
     - code: false
-      devicetype: A,B
+      devicetype: A
       name: False 
       mx: "4.2"
       osx: "4.2"

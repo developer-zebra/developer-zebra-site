@@ -4,6 +4,7 @@ title: Auto Power Control (checkbox)
 type: parm
 order: 25
 mx: "7.1"
+devicetype: A
 parm:
   pivotal: No
   name: AutoPowerControl

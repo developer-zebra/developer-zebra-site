@@ -129,7 +129,11 @@
     var hideelement = function(el,filter){
     	// console.log("Hiding");
     	// console.log(el);
-        el.addClass( "not-available" );
+      //  el.addClass( "not-available" );
+      
+      //HIDE FEATURES NOT AVAILABLE
+
+        el.hide();
         el.attr('data-filter-'+filter,"");
         el.attr('data-filter',"");
     }

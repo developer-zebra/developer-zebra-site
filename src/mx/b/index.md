@@ -1,6 +1,6 @@
 ---
-title: Group B Device Features
-layout: csp-mxvt-support.html
+title: OSx UltraLite Features
+layout: csp-ul-support.html
 mxversions:
   - text: MX 7.x
     value: 7.0

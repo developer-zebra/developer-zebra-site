@@ -2,7 +2,7 @@
 csp: powermgr
 title: Heater Action
 type: parm
-order: 21
+order: 20
 mx: "7.1"
 devicetype: A
 parm:
@@ -32,4 +32,4 @@ parm:
       description: Enables temperature thresholds to be set for the selected heater.  
 ---
 
-This is the On/Off switch for performing actions on the device heater(s), including the ability to set temperature thresholds using the relevant Threshold parameters. **This feature applies only to the VC80x vehicle computer**. 
+This is the On/Off switch for performing actions on the device heater(s), including the ability to set temperature thresholds using the relevant Threshold parameters. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices computer**. 

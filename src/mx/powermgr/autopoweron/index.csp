@@ -15,12 +15,12 @@ parm:
       mx: "7.1"
       devicetype: A
       name: Never
-      description: Does not power up device when vehicle ignition is turned on. 
+      description: Does not power up device when vehicle-mounted computer and similarly equipped Zebra devices ignition is turned on. 
     - code: 1
       devicetype: A
       name: When Ignition Turned On
       mx: "7.1"
-      description: Powers up device when vehicle ignition is turned on. 
+      description: Powers up device when vehicle-mounted computer and similarly equipped Zebra devices ignition is turned on. 
 ---
 
-Used to control whether the device will power up when vehicle ignition is turned on. **This feature applies only to the VC80x vehicle computer**. 
+Used to control whether the device will power up when vehicle-mounted computer and similarly equipped Zebra devices ignition is turned on. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices computer**. 

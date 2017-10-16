@@ -4,7 +4,7 @@ title: Hotspot Enable/Disable
 type: parm
 order: 71
 mx: "6.3"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   presentif: The "Use Hotspot Options" checkbox is checked
@@ -13,21 +13,21 @@ parm:
   list:
     - code: 2
       mx: "6.3"
-      devicetype: A,B
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
     - code: 1
       mx: "6.3"
-      devicetype: A,B
+      devicetype: A
       name: Enable
       description: Enables the device to be used as a Wi-Fi hotspot. 
     - code: 0
       mx: "6.3"
-      devicetype: A,B
+      devicetype: A
       name: Disable
       description: Disables use of the device as a Wi-Fi hotspot. 
 ---
 
-This parameter applies the hotspot configuration on the device. When enabled, the device uses the settings configured with the hotspot parameters below to act as an access point for nearby devices to connect to the internet, sharing the device's Wi-Fi or cellular connection. **Hotspot functionality is supported only on Zebra ET50 and ET56 devices running Android 5.0 Lollipop**. 
+This parameter applies the hotspot configuration on the device. When enabled, the device uses the settings configured with the hotspot parameters below to act as an access point for nearby devices to connect to the internet, sharing the device's Wi-Fi or cellular connection. **Hotspot functionality is supported only on certain Zebra devices, including the ET50, ET55 and TC56 devices running Android 5.0 Lollipop and higher**. 
 
 > **Note**: This parameter does not control activation of the hotspot feature on the device. 

@@ -4,7 +4,7 @@ title: Use Hotspot Options (checkbox)
 type: parm
 order: 70
 mx: "6.3"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   name: UseHotspotOptions
@@ -12,12 +12,12 @@ parm:
   list:
     - code: 0
       mx: "6.3"
-      devicetype: A,B
+      devicetype: A
       name: (unchecked)
       description: Prevents the device from being used as a Wi-Fi hotspot.
     - code: 1
       mx: "6.3"      
-      devicetype: A,B
+      devicetype: A
       name: (checked)
       description: Allows the device to be used as a Wi-Fi hotspot.
 ---

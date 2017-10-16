@@ -24,4 +24,4 @@ The OSX layer provides extensions to the base operating system to implement func
 
 * [Which version of MX/OSX is installed?](../mx-version-on-device)
 * [EMDK for Android](../../../../emdk-for-android)
-* [Setting up ADB](http://zebra-stage.github.io/enterprise-browser/1-6/guide/setup/#connections)
+* [Setting up ADB](http://techdocs.zebra.com/enterprise-browser/1-6/guide/setup/#connections)

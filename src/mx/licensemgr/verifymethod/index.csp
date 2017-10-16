@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Verification Method
 type: parm
-order: 3
+order: 10
 mx: "4.3"
 devicetype: A
 parm:

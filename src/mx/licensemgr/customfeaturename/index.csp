@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Custom Feature Name
 type: parm
-order: 5
+order: 20
 mx: "4.3"
 devicetype: A
 parm:

@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Set Default Gateway
+title: Set Primary Default Gateway
 type: parm
 order: 43
 mx: "4.2"

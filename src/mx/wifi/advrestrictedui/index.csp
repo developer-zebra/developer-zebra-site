@@ -4,21 +4,21 @@ title: Enable Restricted Settings UI
 type: parm
 order: 61
 mx: "4.2"
-devicetype: A,B
+devicetype: A
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False
-  name: PowerSave
+  name: EnableRestrictedSettingsUI
   type: list
   list:
     - code: 0
-      devicetype: A,B
+      devicetype: A
       name:  Do not change
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: Disable Restricted WLAN Settings UI
     - code: 2
-      devicetype: A,B
+      devicetype: A
       name: Enable Restricted WLAN Settings UI
 ---
 Used to enable/disable read-only mode for Wi-Fi settings according to the values in the table below. _**Not supported on TC70 QC GA1/GA2 running Android KitKat**_.

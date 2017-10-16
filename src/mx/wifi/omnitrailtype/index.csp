@@ -4,7 +4,7 @@ title: OmniTrail Type
 type: parm
 order: 96
 mx: "6.3"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   presentif: The "Specify OmniTrail Options" checkbox is checked
@@ -13,17 +13,17 @@ parm:
   list:
     - code: 2
       mx: "6.3"
-      devicetype: A,B
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
     - code: 1
       mx: "6.3"
-      devicetype: A,B
+      devicetype: A
       name: Enable 
       description: Enables OmniTrail services for Extreme Networks APs. 
     - code: 0
       mx: "6.3"
-      devicetype: A,B
+      devicetype: A
       name: Disable
       description: Enables OmniTrail services for Cisco APs.  
 ---

@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Sleep Policy 
+title: Wi-Fi Sleep Policy 
 type: parm
 order: 3
 mx: "4.2"
@@ -19,19 +19,19 @@ parm:
       mx: "4.2"
       devicetype: A,B
       name: AlwaysOn
-      description: Causes the Wi-Fi radio to remain enabled when the device goes to sleep, allowing continued access to Wi-Fi for running apps. 
+      description: Causes the Wi-Fi radio to remain enabled when the device goes to sleep, providing running apps with uninterrupted access to Wi-Fi. 
     - code: 1
       mx: "4.2"
       devicetype: A,B
       name: PluggedIn
-      description: Causes the Wi-Fi radio to remain enabled whenever the device is plugged in and not running on battery power regardless of sleep state, allowing continued access to Wi-Fi for running apps. 
+      description: Causes the Wi-Fi radio to remain enabled whenever the device is plugged in and not running on battery power regardless of sleep state, providing running apps with uninterrupted access to Wi-Fi. 
     - code: 2
       mx: "4.2"
       devicetype: A,B
       name: NeverOn
-      description: Causes the Wi-Fi radio to be disabled off when the device enters sleep mode, dropping any existing Wi-Fi connections.
+      description: Causes the Wi-Fi radio to be disabled when the device enters sleep mode, dropping any existing Wi-Fi connections.
 ---
 
 Specifies the state of the Wi-Fi radio when the device enters sleep mode. When Wi-Fi remains enabled during sleep, existing Wi-Fi connections will be maintained as during normal operations. While preferrable for some situations, **this mode can significantly reduce battery life**.
 
-Android devices by default enter suspend mode after being idle for a specified period of time. While in this mode, software continues to run, but in a lower-power state. 
+Android devices by default enter sleep mode after being idle for a specified period of time. While in this mode, apps run in a lower-power state. 

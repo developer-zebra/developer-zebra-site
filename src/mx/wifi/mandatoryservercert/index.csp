@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Server Certificate Name 
+title: Mandatory Server Certificate Name 
 type: parm
 order: 30
 mx: "4.2"
@@ -12,7 +12,7 @@ parm:
   type: string
 
 ---
-Optional parameter that allows the name of a certificate alias to be used to verify the server.
+Used to specify the name of a madatory certificate alias to be used to verify the server.
 
 Parm value input rules: 
 

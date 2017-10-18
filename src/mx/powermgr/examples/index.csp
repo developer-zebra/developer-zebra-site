@@ -53,35 +53,46 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 
-### Turn On Power to Serial Port 1
+### INTeNTIOAL DUPLICATE OF THE ONE ABOVE (Perform an OS Update)
 
-		
-		<wap-provisioningdoc> 
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="PowerMgr" version="4.2" >
+			<parm name="ResetAction" value="8"/>
+			<characteristic type="file-details">
+				<parm name="ZipFile" value="/sdcard/osupdate.zip"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Turn On Power to Serial Port 1
+	:::xml
+	<wap-provisioningdoc> 
 		<characteristic type=”PowerMgr”>
 			<parm name=”PortAction” value=”1” /> 
-				<characteristic type=”port-details”> 
-					<parm name=”PortSelect” value=”Serial Port 1” /> 
-				</characteristic> 
-			</characteristic>
-		 </wap-provisioningdoc>
+			<characteristic type=”port-details”> 
+				<parm name=”PortSelect” value=”Serial Port 1” /> 
+			</characteristic> 
+		</characteristic>
+	 </wap-provisioningdoc>
 
 
 ### Turn Off Power to USB Port 2
 
-		
+		:::XML
 		<wap-provisioningdoc> 
-		<characteristic type=”PowerMgr”> 
-			<parm name=”PortAction” value=”2” />
-				<characteristic type=”port-details”>
-					<parm name=”PortSelect” value=”USB Port 2” />
-				</characteristic>
-		</characteristic>
+			<characteristic type=”PowerMgr”> 
+				<parm name=”PortAction” value=”2” />
+					<characteristic type=”port-details”>
+						<parm name=”PortSelect” value=”USB Port 2” />
+					</characteristic>
+			</characteristic>
 	 	</wap-provisioningdoc>
 
 
 ### Turn On and Off Vehicle-mount Computer Immediately with Vehicle Power
 
-		
+		:::XML
 		<wap-provisioningdoc> 
 			<characteristic type=”PowerMgr”> 
 				<parm name=”AutoPowerControl” value=”1” /> 
@@ -96,7 +107,7 @@ order: 99
 
 ### Turn Off Vehicle-mount Computer 10 Minutes After Vehicle Turns Off; Do Not Turn On Device Automatically
 
-		
+		:::XML
 		<wap-provisioningdoc> 	
 			<characteristic type=”PowerMgr”>
 				<parm name=”AutoPowerControl” value=”1” />
@@ -111,7 +122,7 @@ order: 99
 
 ### Enable Touch Panel Heater to Operate in the Temperature range -10°C to 5°C
 
-		
+		:::XML
 		<wap-provisioningdoc> 
 			<characteristic type=”PowerMgr”>
 				<parm name=”HeaterAction” value=”3” />
@@ -135,7 +146,7 @@ order: 99
 
 ### Disable the USB IO heater
 
-		
+		:::XML
 		<wap-provisioningdoc>
 			<characteristic type=”PowerMgr”>
 				<parm name=”HeaterAction” value=”2” />

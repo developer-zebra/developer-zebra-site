@@ -6,7 +6,7 @@ order: 15
 mx: "5.0"
 devicetype: A,B
 parm:
-  presentif: File Action is Download and Expand Archive
+  presentif: File Action is "Download and Expand Archive"
   pivotal: No
   name: ArchiveSourceURI
   type: string

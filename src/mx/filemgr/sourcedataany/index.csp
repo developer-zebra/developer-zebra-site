@@ -6,7 +6,7 @@ order: 10
 mx: "4.3"
 devicetype: A,B
 parm:
-  presentif: File Action is Transfer/Copy and source type is 'File embedded in XML' and Embed type is 'General Data File' remote server
+  presentif: File Action is "Transfer/Copy "and Source Type is "File Embedded in XML" and Source Type is "General Data File"
   pivotal: No
   name: SourceDataAny
   type: string

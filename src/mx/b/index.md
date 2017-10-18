@@ -38,6 +38,10 @@ csps:
     url: /mx/devadmin
     csp: devadmin
   - type: section
+    title: DhcpOptionsMgr
+    url: /mx/dhcpoptionsmgr
+    csp: dhcpoptionsmgr
+  - type: section
     title: File Manager
     url: /mx/filemgr
     csp: filemgr

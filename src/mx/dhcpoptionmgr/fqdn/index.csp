@@ -4,7 +4,7 @@ title: FQDN Enable/Disable (81)
 type: parm
 order: 40
 mx: "6.3"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: Yes
   name: FqdnState
@@ -12,16 +12,16 @@ parm:
   list:
     - code: 0
       mx: "6.3"
-      devicetype: A,B
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: Enable
       mx: "6.3"
       description: Enables the DHCP client send an FQDN value and optional flag.
     - code: 2
-      devicetype: A,B
+      devicetype: A
       name: Disable
       mx: "6.3"
       description: Prevents the DHCP client from sending FQDN information.

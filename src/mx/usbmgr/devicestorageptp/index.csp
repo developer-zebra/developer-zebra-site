@@ -1,6 +1,6 @@
 ---
 csp: usbmgr
-title: Access device storage from PC via USB PTP
+title: Access Storage via PTP
 type: parm
 order: 9
 mx: "4.2"

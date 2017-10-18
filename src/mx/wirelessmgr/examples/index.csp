@@ -76,8 +76,9 @@ order: 99
 ### Select the external antenna for Bluetooth and Wi-Fi
 
 	:::xml
-	<wap-provisioningdoc> 
-		<characteristic type=”WirelessMgr” version="7.1" > 
-			<parm name=”AntennaSelection” value=”2”/> 
-		</characteristic>
-	 </wap-provisioningdoc>
+	<wap-provisioningdoc>
+	    <characteristic type=”WirelessMgr”>
+	        <parm name=”AntennaSelection” value=”2” />
+	    </characteristic>
+	</wap-provisioningdoc>
+

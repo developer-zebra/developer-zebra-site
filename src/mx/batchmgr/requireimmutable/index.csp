@@ -7,7 +7,7 @@ mx: "4.3"
 devicetype: A
 parm:
   pivotal: No
-  presentif:  File Access method is "Batch File Type" and Bin File Require Encodings is "Checked"
+  presentif:  File Access method is "Batch File Type" and Bin File Require Encodings checkbox is checked
   name: RequireImmutable
   type: list
   list:

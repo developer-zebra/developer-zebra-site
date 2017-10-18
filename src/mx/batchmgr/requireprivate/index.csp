@@ -7,7 +7,7 @@ mx: "4.3"
 devicetype: A,B
 parm:
   pivotal: No
-  presentif: Batch File Type is "Binary" and Require Encodings is "Checked"
+  presentif: Batch File Type is "Binary" and Require Encodings checkbox is checked
   name: RequirePrivate
   type: list
   list:

@@ -7,7 +7,7 @@ mx: "4.3"
 devicetype: A,B
 parm:
   pivotal: No
-  presentif: File Access method is batch file type is binary.
+  presentif: Batch File Type is "Binary"
   name: BinFileRequireEncodings
   type: list
   list:

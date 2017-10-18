@@ -4,7 +4,7 @@ title: Vendor Class Identifier (60)
 type: parm
 order: 20
 mx: "5.0"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   name: VendorClassIdState
@@ -12,16 +12,16 @@ parm:
   list:
     - code: 0
       mx: "5.0"
-      devicetype: A
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Enable
       mx: "5.0"
       description: This value will cause this DHCP Option to be turned on and hence will cause the specified Vendor Class to be sent by the DHCP Client to the DHCP Server in the DHCP Request.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Disable
       mx: "5.0"
       description: This value will cause this DHCP Option to be turned off and hence will prevent a Vendor Class from being to be sent by the DHCP Client to the DHCP Server.

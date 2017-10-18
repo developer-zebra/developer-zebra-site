@@ -4,7 +4,7 @@ title: TFTP Ser. Name (66)
 type: parm
 order: 26
 mx: "4.4"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   name: TFTPSerNameState
@@ -12,16 +12,16 @@ parm:
   list:
     - code: 0
       mx: "4.4"
-      devicetype: A
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured.
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Enable
       mx: "4.4"
       description: This value will cause this DHCP Option to be turned on and hence will cause the TFTP Server Name to be requested by the DHCP Client in the DHCP Request.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Disable
       mx: "4.4"
       description: This value will cause this DHCP Option to be turned off and hence will prevent the TFTP Server Name from being requested by the DHCP Client in the DHCP Request.

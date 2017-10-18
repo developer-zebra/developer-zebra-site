@@ -4,7 +4,7 @@ title: Vendor Specific 230 Enable/Disable
 type: parm
 order: 62
 mx: "6.3"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   name: VendorSpecific230State
@@ -12,16 +12,16 @@ parm:
   list:
     - code: 0
       mx: "6.3"
-      devicetype: A
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured; any previously selected setting will be retianed.
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Enable
       mx: "6.3"
       description: Enables vendor-specific DHCP Option 230 to be requested by the DHCP Client.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Disable
       mx: "6.3"
       description: Prevents vendor-specific DHCP Option 230 from being requested.

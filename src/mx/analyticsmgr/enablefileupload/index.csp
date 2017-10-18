@@ -5,7 +5,7 @@ type: parm
 order: 6
 mx: "5.1"
 apilevel: "19"
-devicetype: A,B
+devicetype: A
 parm:
   presentif: Analytics Action is set to "Enable" and Analytics Client Settings is set to "Enable"
   pivotal: No
@@ -15,19 +15,19 @@ parm:
     - code: 0
       mx: "5.1"
       apilevel: "19"
-      devicetype: A,B
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the ability to upload file and/or events from the device to the Zebra Cloud; any previously selected setting will be retained.  
     - code: 1
       mx: "5.1"
       apilevel: "19"
-      devicetype: A,B
+      devicetype: A
       name: Disable
       description: Disables the ability to upload files and/or events from the device to the Zebra Cloud.
     - code: 2
       mx: "5.1"
       apilevel: "19"
-      devicetype: A,B
+      devicetype: A
       name: Enable
       description: Enables the ability to upload files and/or events from the device to the Zebra Cloud.
 

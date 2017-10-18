@@ -5,7 +5,7 @@ type: parm
 order: 10
 mx: "5.1"
 apilevel: "19"
-devicetype: A,B
+devicetype: A
 parm:
   presentif: Analytics Action is set to "Enable" and Group Action is set to "Configure Details for a Single Group"
   pivotal: Yes
@@ -15,31 +15,31 @@ parm:
     - code: 1
       mx: "5.1"
       apilevel: "19"
-      devicetype: A,B
+      devicetype: A
       name: WWAN Performance
       description: Permits collection of WWAN stats such as signal quality, outgoing call attempts, successful incoming calls and duration, radio on-time and WWAN error rates.
     - code: 2
       mx: "5.1"
       apilevel: "19"
-      devicetype: A,B
+      devicetype: A
       name: WLAN Performance
       description: Permits collection of WLAN stats such as signal quality, transmit and receive packet and byte deltas, Wi-Fi status, IP address, DNS name, BSSID and RSSI info, roam events and radio on-time.
     - code: 3
       mx: "5.1"
       apilevel: "19"
-      devicetype: A,B
+      devicetype: A
       name: Smart Battery Status
       description: Permits collection of battery and CPU stats, including (but not limited to) battery status, temperature, charge count and cumulative charge, level, serial and part numbers, manufacture date, voltage, backup voltage, on time and rated capacity. CPU stats include process and device CPU time deltas, device model and serial numbers, Android version and build numbers and the DataAnalytics version.     
     - code: 4
       mx: "5.1"
       apilevel: "19"
-      devicetype: A,B
+      devicetype: A
       name: System Information
       description: Permits collection of system information such as available and total device RAM and storage space.
     - code: 5
       mx: "5.1"
       apilevel: "19"
-      devicetype: A,B
+      devicetype: A
       name: GPS Information
       description: Permits collection of GPS stats such as GPS device state, GPS on-time, current location, altitude and course heading, current GPS time and ground speed, position dilution of precision and current and maximum satellite counts.   
 

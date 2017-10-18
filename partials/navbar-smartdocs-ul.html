@@ -375,8 +375,11 @@
 
 // AFTER THE DOCUMENT HAS BEEN LOADED
 // AND IS READY FOR USER INTERACTION
-
+    
     $(document).ready(function() {
+
+    //Select Group B (first (and only) item on the list)
+    $(".smartdocs-devicetype")[0].click();
 
     //
     $( "#smartdocs-help" ).click(function() {
@@ -411,7 +414,7 @@
           mx: "",
           osx: "",
           api: "",
-          devicetype: "B"
+          devicetype: ""
         };
           $("#smartdocs-mx-selected").html("MX: All" + '<span class="caret"></span>');
           $("#smartdocs-osx-selected").html("OSX: All" + '<span class="caret"></span>');

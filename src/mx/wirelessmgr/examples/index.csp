@@ -73,7 +73,7 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 
-### Select the external antenna for Bluetooth and Wi-Fi (VC80x only)
+### Select the external antenna for Bluetooth and Wi-Fi
 
 	:::xml
 	<wap-provisioningdoc> 

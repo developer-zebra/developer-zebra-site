@@ -19,12 +19,12 @@ parm:
       devicetype: A
       name: Use Internal Antenna 
       mx: 7.1
-      description: Sets the VC80x vehicle computer to use its built-in Bluetooth/Wi-Fi antenna.
+      description: Sets the device to use its built-in Bluetooth/Wi-Fi antenna.
     - code: 2
       devicetype: A
       name: Use External Antenna
       mx: 7.1
-      description: Sets the VC80x vehicle computer to use an (optional) external Bluetooth/Wi-Fi antenna.
+      description: Sets the device to use an (optional) external Bluetooth/Wi-Fi antenna.
 ---
 
-Used to select between built-in and external antennas for Bluetooth and Wi-Fi (WLAN) communications on the device. **This feature applies only to the VC80x vehicle computer**. 
+Used to select between built-in and external antennas for Bluetooth and Wi-Fi (WLAN) communications on the device. **This feature applies only to the Zebra VC80x and similarly equipped vehicle-mounted computers**. 

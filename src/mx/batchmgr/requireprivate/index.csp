@@ -7,7 +7,7 @@ mx: "4.3"
 devicetype: A,B
 parm:
   pivotal: No
-  presentif:  Determines whether private encryption is required.
+  presentif: Batch File Type is "Binary" and Require Encodings is "Checked"
   name: RequirePrivate
   type: list
   list:

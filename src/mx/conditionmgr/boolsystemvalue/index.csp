@@ -4,7 +4,7 @@ title: Boolean System Value
 type: parm
 order: 6
 mx: 4.4
-devicetype: A
+devicetype: A,B
 parm:
   presentif: Data Type is "Boolean" and Boolean Source Type is "Pre-defined System Boolean Value"
   pivotal: No
@@ -13,7 +13,7 @@ parm:
   list:
     - code: 2
       mx: 4.4
-      devicetype: A
+      devicetype: A,B
       name: Have any valid IP Address
       description: Returns "True" if the device has a valid IP address at the time of testing. 
 ---

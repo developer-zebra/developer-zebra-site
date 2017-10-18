@@ -4,14 +4,14 @@ title: Android Action Name
 type: parm
 order: 4
 mx: "5.0"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No 
   presentif: The Status Request Action is "Add/Replace Status Request"
   name: ActionName
 ---
 
-This parm allows you to specify the action name of the Android package that this status notification pertains to.
+Used to specify the Action Name of the Android package that this status notification pertains to.
 
 Parm value input rules: 
 

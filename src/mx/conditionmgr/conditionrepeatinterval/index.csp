@@ -4,7 +4,7 @@ title: Condition Repeat Interval
 type: parm
 order: 33
 mx: 4.4
-devicetype: A,B
+devicetype: A
 parm:
   presentif: Condition Met Action or Condition Not Met Action is "Retry (up to specified times) then Fail"
   pivotal: No

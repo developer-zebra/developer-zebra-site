@@ -4,7 +4,7 @@ title: Boolean Source Type
 type: parm
 order: 5
 mx: 4.4
-devicetype: A,B
+devicetype: A
 parm:
   presentif: Data Type is "Boolean"
   pivotal: No
@@ -13,7 +13,7 @@ parm:
   list:
     - code: 2
       mx: 4.4
-      devicetype: A,B
+      devicetype: A
       name: Pre-defined System Boolean Value
       description: A true/false value defined by the system.  
 ---

@@ -4,7 +4,7 @@ title: String Source Type
 type: parm
 order: 20
 mx: 6.0
-devicetype: A,B
+devicetype: A
 parm:
   presentif: Data Type is "String"
   pivotal: No
@@ -13,12 +13,12 @@ parm:
   list:
     - code: 1
       mx: 4.4
-      devicetype: A,B
+      devicetype: A
       name: String System Property
       description: A string of characters not defined by the device operating system.  
     - code: 2
       mx: 4.4
-      devicetype: A,B
+      devicetype: A
       name: Pre-defined String System Value
       description: A string of characters defined by the device operating system. 
 ---

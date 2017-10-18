@@ -4,24 +4,24 @@ title: Status Request Action
 type: parm
 order: 2
 mx: "5.0"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: Yes
   name: RequestAction
   type: list
   list:
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: Add/Replace Status Request
       mx: "5.0"
       description: Add or replace the a status request
     - code: 2
-      devicetype: A,B
+      devicetype: A
       name: Remove Status Request
       mx: "5.0"
       description: Remove a status request
     - code: 3
-      devicetype: A,B
+      devicetype: A
       name: Notify Status
       mx: "5.0"
       description: Set the notification state

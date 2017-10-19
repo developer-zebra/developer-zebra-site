@@ -1,5 +1,5 @@
 ---
-title: Group B Device Features
+title: Zebra TC20/25 Device Features
 layout: csp-ul-support.html
 mxversions:
   - text: MX 7.x

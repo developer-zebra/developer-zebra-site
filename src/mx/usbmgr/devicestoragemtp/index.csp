@@ -5,7 +5,7 @@ type: parm
 order: 8
 mx: "4.2"
 osx: "4.1"
-devicetype: A,B
+devicetype: A
 parm:
   presentif:  The "USB Module Usage" value is not "Disable" *AND* the "Access device storage from PC via USB" value is not "Enable" or "Disable"  
   pivotal: No
@@ -15,17 +15,17 @@ parm:
     - code: 0
       mx: "4.2"
       osx: "4.1"
-      devicetype: A,B
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not access to the device storage from a PC via USB MTP can be used.
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: Enable 
       mx: "4.2"
       osx: "4.1"
       description: This value will cause access to the device storage from a PC via USB MTP to be allowed.
     - code: 2
-      devicetype: A,B
+      devicetype: A
       name: Disable
       mx: "4.2"
       osx: "4.1"

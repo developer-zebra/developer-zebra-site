@@ -81,7 +81,7 @@
           <a href="#" class="dropdown-toggle" id="smartdocs-devicetype-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Group: All <span class="caret"></span></a>
           <ul class="dropdown-menu">
 <!--    <li class="smartdocs-devicetype" data-value="" ><a>All Devices</a></li> -->
-        <li class="smartdocs-devicetype" data-value=""><a>All Devices</a></li>
+ <!--   <li class="smartdocs-devicetype" data-value=""><a>All Devices</a></li> -->
         <li class="smartdocs-devicetype" data-value="B"><a>TC20/TC25</a></li>
           </ul>
         </li>
@@ -378,8 +378,10 @@
     
     $(document).ready(function() {
 
-    //Pre-select the first item on the list (Group B)
+    //Pre-select an item on the list (0, 1, 2...) once the page loads
     $(".smartdocs-devicetype")[0].click();
+    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
+         console.log('pre-selecting an item');
 
     //
     $( "#smartdocs-help" ).click(function() {

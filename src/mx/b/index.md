@@ -1,5 +1,5 @@
 ---
-title: OSx UltraLite Features
+title: 'Group B' Device Features
 layout: csp-ul-support.html
 mxversions:
   - text: MX 7.x

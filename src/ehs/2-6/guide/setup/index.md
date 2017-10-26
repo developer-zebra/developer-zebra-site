@@ -311,6 +311,6 @@ From Admin or User Mode, **tap the "i" icon** as indicated below:
 <img alt="" style="height:350px" src="2-4_info_icon.png"/>
 
 The Battery/Wi-Fi Quick View panels appears, displaying real-time status of both devices:
-<img alt="" style="height:350px" src="2-7_battery-wifi_status.png"/>
+<img alt="" style="height:450px" src="2-7_battery-wifi_status.png"/>
 <br>
 

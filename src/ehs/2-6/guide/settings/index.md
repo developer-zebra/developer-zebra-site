@@ -558,7 +558,7 @@ Enables one or more services to be automatically launched after EHS starts up. W
 ### Wallpaper
 Allows a background image to be specified for display in User Mode. If left unspecified, the system's default image will be displayed. **Supports .PNG format files in the `/enterprise/usr` directory only. Resolution support varies by device**. If a selected image fails to display, Zebra recommends scaling down the resolution or selecting a different image. 
 
-<img alt="" style="height:350px" src="2-7_wallpaper.png"/>
+<img alt="" style="height:350px" src="wallpaper.png"/>
 
 <b>Possible values</b>:
 
@@ -568,11 +568,14 @@ Allows a background image to be specified for display in User Mode. If left unsp
 
     <wallpaper>/enterprise/usr/mybackground.png</wallpaper>
     
-<!--
 ------
 
 ### Wallpaper Stretching
 Used to enable/disable the background image for display in User Mode to be stretched to fill the screen. If left unspecified, stretching is disabled. 
+
+<!--
+PUT IN SECTION ABOVE:  
+<img alt="" style="height:350px" src="2-7_wallpaper.png"/>
 
 <img alt="" style="height:350px" src="2-7_wallpaper_stretch.png"/>
 
@@ -584,6 +587,7 @@ Used to enable/disable the background image for display in User Mode to be stret
 #### Example
 
     <wallpaperstretching>/enterprise/usr/mybackground.png</wallpaperstretching>
+
 -->
 
 ------

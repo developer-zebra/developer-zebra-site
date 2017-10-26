@@ -540,16 +540,24 @@ These instructions apply to remote uninstallation using an organization's own MD
 
 The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
 
-&#50;. <b>OPTIONAL</b>: If a new `enterprisehomescreen.xml` configuration file will be deployed with the new version of EHS, **skip to Step 3**. Otherwise, instruct the MDM to remove the `/enterprise/usr` folder. This will remove any previous config file. 
+&#50;. <b>OPTIONAL</b>: If a new `enterprisehomescreen.xml` configuration file will be deployed with the new version of EHS, **skip to Step 3**. Otherwise, instruct the MDM to remove the file `/enterprise/usr/enterprisehomescreen.xml` from the device. This will clear configuration settings from the previously installed EHS app. 
+
+>**Warning**: Do not remove the `/enterprise/usr` folder; it could effect the behavior of other apps. 
 
 &#51;. It is sometimes necessary to <b>reboot the device</b> to complete the uninstallation. 
 
 Remote uninstallation of EHS is now complete. 
 
-## Change the Default Launcher
-Removing EHS as the default launcher on a device can be done with a simple change in the Settings panel or by uninstalling EHS. Either of these scenarios can be accomplished manually on the device, programmatically through EMDK or remotely using StageNow or an MDM (if supported). If EHS is removed from the device, the Android Launcher in most cases will be the only remaining launcher on the device, and therefore will become the default launcher. 
+**Note: Capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about command usage**. 
 
-The following process applies only to Android 4.4.3 and higher. to remove EHS as the default launcher on Android versions prior to 4.4.3, follow the instructions (above) for manually uninstalling EHS using Android App Manager. 
+-----
+
+## Change the Default Launcher
+Removing EHS as the default launcher on a device can be done with a simple change in the Settings panel or by uninstalling EHS. Either of these scenarios can be accomplished manually on the device, programmatically through EMDK or remotely using StageNow or an MDM (if supported). 
+
+If EHS is removed from the device and the Android Launcher is the only remaining launcher on the device, it will become the default launcher. **If more than one launcher will remain on the device after EHS is removed, a new default launcher should be selected to ensure desired operation**.  
+
+**The following process applies only to Android 4.4.3 and higher**. To remove EHS as the default launcher on Android versions prior to 4.4.3, follow the instructions (above) for manually uninstalling EHS using Android App Manager. 
 
 **To manually change the default launcher on a device without removing EHS**: 
 (Android 4.4.3 and higher)

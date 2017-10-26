@@ -570,6 +570,22 @@ Allows a background image to be specified for display in User Mode. If left unsp
     
 ------
 
+### Wallpaper Stretching
+Used to enable/disable the background image for display in User Mode to be stretched to fill the screen. If left unspecified, stretching is disabled. 
+
+<img alt="" style="height:350px" src="wallpaper_stretch.png"/>
+
+<b>Possible values</b>:
+
+* 1 (stretching enabled)
+* <b>0 (default)</b>
+
+#### Example
+
+    <wallpaperstretching>/enterprise/usr/mybackground.png</wallpaperstretching>
+
+------
+
 ### Fullscreen
 EHS can be made to run in full-screen mode by setting the value of this tag to 1. Default is 0. Applies only to EHS; apps launched from within EHS will behave as individually designed. Will not prevent access to the Android Status/Notification Bar on some devices. See [Disable Status Bar Settings](#disablestatusbarsettings) to prevent user access to this feature in EHS. 
 
@@ -582,11 +598,9 @@ EHS can be made to run in full-screen mode by setting the value of this tag to 1
 
 #### Example
 
-
     <preferences>
         <fullscreen>1</fullscreen>
     </preferences>
-
 
 ------
 

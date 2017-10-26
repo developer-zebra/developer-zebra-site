@@ -380,10 +380,11 @@ _App icons can be displayed in five sizes; changes apply to both Admin and User 
 
 #### Example
 
-    <user_options>   
-        <app_icon_size>XL</app_icon_size>   
     <user_options>
-
+        <icon_settings>
+            <app_icon_size>XL</app_icon_size>
+        </icon_settings>   
+    <user_options>
 
 ------
 

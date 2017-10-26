@@ -19,7 +19,7 @@ This section describes important interactions between EHS and the `enterprisehom
 
 #### Config File Location
 
-* The config file is stored in the `/enterprise/usr` directory on the device. (does not apply to [Secure Mode](../features#securemode))
+* The config file is initially stored in the `/enterprise/usr` directory on the device. <!-- (does not apply to [Secure Mode](../features#securemode))-->
 * This directory is <b>invisible</b> to most apps, <b>including Windows Explorer and Android File Transfer (Mac)</b>. 
 * The directory is <b>visible to Android File Browser</b>, which can be used to manage its contents. 
 * The file is <b>accessible via Android Debug Bridge (ADB)</b> "pull" and "push" commands. 

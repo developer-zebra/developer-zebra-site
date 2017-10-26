@@ -65,9 +65,9 @@ Kiosk Mode can be controlled from within an Android application using Android In
 
 ## Secure Mode
 
-In Secure Mode, EHS will accept only a signed EHS configuration file, thereby preventing unauthorized changes to the file. To operate in Secure mode, EHS requires a signed config file (`enterprisehomescreen.xml`) and a matching signature file (`enterprisehomescreen.pem`). 
+In Secure Mode, EHS will accept only a signed EHS configuration file, thereby preventing unauthorized changes to the file. To operate in Secure mode, EHS requires a signed config file (`enterprisehomescreen.xml`) and a matching signature file (`enterprisehomescreen.pem`) to be present on the device. 
 
-A device that is not in Secure Mode is considered to be running in Normal Mode. When in Normal Mode (the default), EHS will accept an unsigned config file and act on any configuration settings within it, as long as the name of the file and its contents meet [EHS specifications](../settings).
+A device not in Secure Mode is running in Normal Mode, which is the default. When in Normal Mode, EHS will accept an unsigned config file and act on any configuration settings within it, as long as the name of the file and its contents meet [EHS specifications](../settings).
 
 ### Enable Secure Mode
 These instructions require [Android Debug Bridge (ADB)](https://developer.android.com/studio/command-line/adb.html) for communication with the device and [OpenSSL for Windows](#installopenssl) for the creation of device certificate and private key files. If necessary, please install ADB and OpenSSL before proceeding. 
@@ -116,9 +116,9 @@ If successful, the process of signing the `enterprisehomescreen.xml` file will p
 
 &#56;. <b>Push the signed config and signature files</b> to the `/enterprise/usr` folder.
 
-&#57;. <b>Install and run the EHS APK</b> as described in the [Setup Guide](../setup). 
+&#57;. <b>Install and run the EHS .apk </b> as described in the [Setup Guide](../setup). 
 
-At launch, EHS will attempt to match the config and signatures files with the device certificate. If successful, EHS will run in Secure mode and implement the settings in the signed config file. 
+At launch, EHS will attempt to match the config and signatures files with the device certificate. If successful, EHS will enter Secure mode and implement the settings in the signed config file. 
 
 To confirm, the current operating mode can be viewed in the Preferences panel when in Admin Mode. The image below shows that Secure Mode is OFF: 
 <img alt="" style="height:250px" src="secure_mode.png"/>
@@ -126,7 +126,7 @@ To confirm, the current operating mode can be viewed in the Preferences panel wh
 
 If matching is unsuccessful, the device will go into a [Lockdown State](#lockdownstate) (see below).
 
-> <b>Note</b>: When running in Secure Mode, the configuration and signature files are no longer stored in the `/enterprise/usr` folder. To retrieve the config file when the device is in Secure Mode, use the [Export Configuration File](../settings#configfileaccess) option available under Tools menu in Admin Mode.
+> <b>Note</b>: When EHS enters Secure Mode, the configuration and signature files are moved from the `/enterprise/usr` folder to a secure location. To retrieve the config file from a device in Secure Mode, use the [Export Configuration File](../settings#configfileaccess) option available under the Tools menu in Admin Mode.
 
 ------
 

@@ -380,10 +380,11 @@ _App icons can be displayed in five sizes; changes apply to both Admin and User 
 
 #### Example
 
-    <user_options>   
-        <app_icon_size>XL</app_icon_size>   
     <user_options>
-
+        <icon_settings>
+            <app_icon_size>XL</app_icon_size>
+        </icon_settings>   
+    <user_options>
 
 ------
 
@@ -752,7 +753,7 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 **Notes**: 
 * If no camera shortcut exists on the device lock screen, use of this tag is not required. 
-* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. See additional notes below. 
+* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for working around this. See User-Mode Camera Usage section below. 
 
 **To prevent use of the camera, Zebra recommends using this tag <u>and</u> removing the camera app from the User Mode screen**.
 

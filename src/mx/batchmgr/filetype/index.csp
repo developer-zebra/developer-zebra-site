@@ -4,16 +4,18 @@ title: Batch File Type
 type: parm
 order: 2
 mx: "4.3"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: Yes
   name: BatchFileType
   type: list
   list:
     - code: 1
+      devicetype: A,B
       name: XML File
       description: The batch file is encoded as XML.
     - code: 2
+      devicetype: A,B
       name: Binary File
       description: The batch file is encoded as binary.
 ---

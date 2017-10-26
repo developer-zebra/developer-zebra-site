@@ -5,7 +5,7 @@ type: parm
 order: 8
 mx: "4.2"
 osx: "4.2"
-device: p,v
+devicetype: A
 parm:
   pivotal: No
   presentif: The Action is NOT "Battery Optimization" 
@@ -13,16 +13,19 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: A
       name: Do nothing
       description: This value (or the absence of this parm from the XML) will cause no changes to be made.
       mx: "4.2"
       osx: "4.2"
     - code: 1
+      devicetype: A
       name: EnableAccessAllInfo
       description: Enables access to App Info for all applications on the device if access to the System Settings Menu application is enabled.
       mx: "4.2"
       osx: "4.2"
     - code: 2
+      devicetype: A
       name: DisableAccessAllInfo
       description: Disables access access to App Info for all application on the device.
       mx: "4.2"

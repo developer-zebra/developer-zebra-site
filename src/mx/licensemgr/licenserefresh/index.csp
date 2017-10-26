@@ -1,0 +1,40 @@
+---
+csp: licensemgr
+title: License Refresh
+type: parm
+order: 5
+mx: "7.1"
+devicetype: A
+parm:
+  pivotal: No
+  name: LicenseRefresh
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: do_not_change
+      mx: "7.1"
+      description: This value (or the absence of this parm from the XML) will cause no change to device settings; any previously selected setting will be retained.
+    - code: 1
+      devicetype: A
+      name: disabled
+      mx: "7.1"
+      description: 
+    - code: 2
+      devicetype: A
+      name: default
+      mx: "7.1"
+      description: 
+    - code: 3
+      devicetype: A
+      name: all
+      mx: "7.1"
+      description: 
+    - code: 4
+      devicetype: A
+      name: specific
+      mx: "7.1"
+      description: 
+---
+
+OLD

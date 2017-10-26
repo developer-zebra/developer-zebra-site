@@ -4,7 +4,7 @@ title: Battery Optimization Remove Apps
 type: parm
 order: 15
 mx: "7.0"
-device: p,v
+devicetype: A
 parm:
   presentif: The Action is "Battery Optimization"
   pivotal: No

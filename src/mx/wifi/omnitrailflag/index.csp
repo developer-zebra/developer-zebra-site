@@ -4,7 +4,7 @@ title: OmniTrail Flag
 type: parm
 order: 100
 mx: "6.3"
-device: p,v
+devicetype: A
 parm:
   pivotal: No
   presentif: The "Specify OmniTrail Options" checkbox is checked
@@ -13,24 +13,29 @@ parm:
   list:
     - code: 4
       mx: "6.3"
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
     - code: 3
       mx: "6.3"
+      devicetype: A
       name: 3
       description: Sets the OmniTrail flag to 3. 
     - code: 2
       mx: "6.3"
+      devicetype: A
       name: 2
       description: Sets the OmniTrail flag to 2. 
     - code: 1
       mx: "6.3"
+      devicetype: A
       name: 1
       description: Sets the OmniTrail flag to 1. 
     - code: 0
       mx: "6.3"
+      devicetype: A
       name: 0
       description: Sets the OmniTrail flag to 0. 
 ---
 
-Used to specify the OmniTrail flag. 
+Used to set a Flag for the OmniTrail beacon frame on Extreme Networks access points.

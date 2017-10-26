@@ -4,7 +4,7 @@ title: Export Words to File
 type: parm
 order: 10
 mx: "6.3"
-device: p
+devicetype: A
 parm:
   presentif: Action is "Export words to file"
   pivotal: No

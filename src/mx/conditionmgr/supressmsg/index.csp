@@ -4,7 +4,7 @@ title: Suppress Message
 type: parm
 order: 36
 mx: 6.0
-device: p,v
+devicetype: A
 parm:
   presentif: Condition Met Action or Condition Not Met Action is not "Success"
   pivotal: No

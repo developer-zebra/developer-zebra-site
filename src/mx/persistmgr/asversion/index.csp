@@ -4,7 +4,7 @@ title: Persist As Version
 type: parm
 order: 4
 mx: "4.2"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: PersistAsVersion

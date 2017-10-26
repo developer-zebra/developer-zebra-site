@@ -5,7 +5,7 @@ type: parm
 order: 7
 mx: "6.0"
 apilevel: "19"
-device: p,v
+devicetype: A
 parm:
   presentif: Analytics Client is set to "Enable" and Analytics Action is NOT set to "Disable"
   pivotal: No
@@ -15,41 +15,49 @@ parm:
     - code: 99
       mx: "6.0"
       apilevel: "19"
+      devicetype: A
       name: Unused
       description: This parameter is unused.  
     - code: 0
       mx: "6.0"
       apilevel: "19"
+      devicetype: A
       name: FileUpload
       description: Enables all apps on the device to upload data to the Zebra Cloud using the Analytics Engine cloud transport mechanism.
     - code: 1
       mx: "6.0"
       apilevel: "19"
+      devicetype: A
       name: ANR
       description: Collects information about Applications Not Responding.
     - code: 2
       mx: "6.0"
       apilevel: "19"
+      devicetype: A
       name: Ruggedness
       description: Collects information related to device drops from a height of three feet or higher.
     - code: 3
       mx: "6.0"
       apilevel: "19"
+      devicetype: A
       name: FeatureUsage
       description: Collects usage frequency of Bluetooth, NFC and Wi-Fi on the device. 
     - code: 4
       mx: "6.0"
       apilevel: "19"
+      devicetype: A
       name: RestrictSelfUpdateWiFi
       description: Limits updates of the Analytics Engine and AnalyticsMgr CSP to Wi-Fi connections. 
     - code: 5
       mx: "6.0"
       apilevel: "19"
+      devicetype: A
       name: DeviceInfo
       description: Collects hardware revision number, keyboard type and other hardware-related device info. 
     - code: 999
       mx: "6.0"
       apilevel: "19"
+      devicetype: A
       name: Custom
       description: A free text field from 1-64 characters that allows a custom data collection agent to be specified. 
 

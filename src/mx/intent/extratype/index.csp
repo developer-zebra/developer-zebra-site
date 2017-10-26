@@ -5,66 +5,78 @@ type: parm
 order: 40
 mx: "4.1"
 apilevel: "1"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: Yes
   name: ExtraType
   type: list
   list:
     - code: none
+      devicetype: A,B
       name: None
       mx: "4.1"
       apilevel: "1"
       description: This value (or the absence of this parm from the XML) will cause no change to the corresponding extra data item to be attached to the Intent; any previously selected setting will be retained.
     - code: int
+      devicetype: A,B
       name: Standard Integer
       mx: "4.1"
       apilevel: "1"
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of Standard Integer. The value provided must therefore be a string representing a valid standard integer value between -2^31 and 2^31 -1.
     - code: char
+      devicetype: A,B
       name: Character
       mx: "4.1"
       apilevel: "1"
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of character. The value provided must therefore be a string containing a single character.
     - code: charsequence
+      devicetype: A,B
       name: Character Sequence
       mx: "4.1"
       apilevel: "1"
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of Character Sequence. The value provided must therefore be a string containing a sequence of characters. This data type is can be used to supply values comparable to the String data type and should be used if the receiver explicitly requires a Character Sequence instead of a String.
     - code: float
+      devicetype: A,B
       name: Floating Point
       mx: "4.1"
       apilevel: "1"
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of Single Precision Floating Point. The value provided must therefore be a string representing a valid single-precision 32-bit IEEE 754 floating point number.
     - code: long
+      devicetype: A,B
       name: Long Integer
       mx: "4.1"
       apilevel: "1"
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of Long Integer. The value provided must therefore be a string representing a valid long integer value between -2^63 and 2^63-1.
     - code: boolean
+      devicetype: A,B
       name: Boolean
       mx: "4.1"
       apilevel: "1"
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of Boolean. The value provided must therefore be a string representing a valid boolean ("true" or "false") value.
     - code: char
+      devicetype: A,B
       name: Character
       mx: "4.1"
       apilevel: "1"
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of character. The value provided must therefore be a string containing a single character.
     - code: short
+      devicetype: A,B
       name: Short
       mx: "4.1"
       apilevel: "1"
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of Short Integer. The value provided must therefore be a string representing a valid short integer value between -2^15 and 2^15-1.
     - code: double
+      devicetype: A,B
       name: Double Precision Floating Point
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of Double Precision Floating Point. The value provided must therefore be a string representing a valid double-precision 64-bit IEEE 754 floating point number.
     - code: string
+      devicetype: A,B
       name: String
       mx: "4.1"
       apilevel: "1"
       description: Causes the corresponding extra data item to be attached to the Intent with a data type of character sequence. The value provided must therefore be a string containing a sequence of characters. This data type is can be used to supply values comparable to the Character Sequence data type and should be used if the receiver explicitly requires a String instead of a Character Sequence.
     - code: byte
+      devicetype: A,B
       name: Single Byte Integer
       mx: "4.1"
       apilevel: "1"

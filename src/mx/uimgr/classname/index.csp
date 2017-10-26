@@ -5,10 +5,10 @@ type: parm
 order: 12
 mx: "4.3"
 apilevel: "16"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: No
-  presentif: The "Set Default Input Method?" value is "Change Current Input Method" *AND* the "Select a Default Input Method Option" is "User defined Input Method"
+  presentif: The "Input Method Action" is "Change Current Input Method" and the "Select a Default Input Method Option" is "User defined Input Method"
   name: InputMethodClassName
   type: string
 ---

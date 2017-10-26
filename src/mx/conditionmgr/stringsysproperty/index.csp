@@ -4,7 +4,7 @@ title: String System Property
 type: parm
 order: 21
 mx: 6.0
-device: p,v
+devicetype: A,B
 parm:
   presentif: Data Type is "String" and String Source Type is "String System Property"
   pivotal: No
@@ -13,14 +13,17 @@ parm:
   list:
     - code: 2
       mx: 6.0
+      devicetype: A,B
       name: Product Model
       description: The model number of the Zebra device. 
     - code: 11
       mx: 6.0
+      devicetype: A,B
       name: Android Version
       description: The version of Android running on the device. 
     - code: 12
       mx: 6.0
+      devicetype: A,B
       name: Build Number
       description: The specific number of the BSP build installed on the device. 
 ---

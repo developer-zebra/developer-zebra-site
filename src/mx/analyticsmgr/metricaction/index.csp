@@ -5,7 +5,7 @@ type: parm
 order: 11
 mx: "5.1"
 apilevel: "19"
-device: p,v
+devicetype: A
 parm:
   presentif: Analytics Action is set to "Enable" and Group Action is set to "Configure Details for a Single Group"
   pivotal: No
@@ -15,11 +15,13 @@ parm:
     - code: 0
       mx: "5.1"
       apilevel: "19"
+      devicetype: A
       name: Disable
       description: Disables data collection for a given metric. 
     - code: 1
       mx: "5.1"
       apilevel: "19"
+      devicetype: A
       name: Enable
       description: Enables data collection for a given metric.
 

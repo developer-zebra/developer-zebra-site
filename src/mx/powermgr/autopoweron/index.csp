@@ -1,0 +1,26 @@
+---
+csp: powermgr
+title: Auto Power-on
+type: parm
+order: 30
+mx: "7.1"
+devicetype: A
+parm:
+  presentif: The Auto-Power Control is "Checked"
+  pivotal: No
+  name: AutoPowerOn
+  type: list
+  list:
+    - code: 0
+      mx: "7.1"
+      devicetype: A
+      name: Never
+      description: Does not power up device when vehicle-mounted computer and similarly equipped Zebra devices ignition is turned on. 
+    - code: 1
+      devicetype: A
+      name: When Ignition Turned On
+      mx: "7.1"
+      description: Powers up device when vehicle-mounted computer and similarly equipped Zebra devices ignition is turned on. 
+---
+
+Used to control whether the device will power up when vehicle-mounted computer and similarly equipped Zebra devices ignition is turned on. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**. 

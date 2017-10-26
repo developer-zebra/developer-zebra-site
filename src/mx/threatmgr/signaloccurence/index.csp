@@ -5,7 +5,7 @@ type: parm
 order: 40
 mx: "4.3"
 osx: "3.5"
-device: p
+devicetype: A
 parm:
   presentif: Shown if Threat Action is "Turn On" and any Threat Action is selected
   pivotal: No
@@ -15,9 +15,11 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "3.5"
+      devicetype: A
       name: Do nothing
       description: Performs no signaling when an externally occurring Threat is detected. 
     - code: 1
+      devicetype: A
       name: Signal Occurrence
       mx: "4.3"
       osx: "3.5"

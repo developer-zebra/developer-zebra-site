@@ -1,11 +1,11 @@
 ---
 csp: usbmgr
-title: Access device storage from PC via USB MTP
+title: Access Storage via MTP
 type: parm
 order: 8
 mx: "4.2"
 osx: "4.1"
-device: p,v
+devicetype: A
 parm:
   presentif:  The "USB Module Usage" value is not "Disable" *AND* the "Access device storage from PC via USB" value is not "Enable" or "Disable"  
   pivotal: No
@@ -15,18 +15,23 @@ parm:
     - code: 0
       mx: "4.2"
       osx: "4.1"
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not access to the device storage from a PC via USB MTP can be used.
     - code: 1
+      devicetype: A
       name: Enable 
       mx: "4.2"
       osx: "4.1"
       description: This value will cause access to the device storage from a PC via USB MTP to be allowed.
     - code: 2
+      devicetype: A
       name: Disable
       mx: "4.2"
       osx: "4.1"
       description: This value will cause access to the device storage from a PC via USB MTP to be prevented.
 ---
 
-This parm allows you to control whether the use of Media Transfer Protocol (MTP) is allowed. When this mode is allowed, a PC could be connected to the device via a USB port that supports Peripheral mode or via an OTG USB port. Once connected, such a PC could browse exposed portions of the device file system, copy files to or from the device, or delete files. Use of this mode could represent a security risk since it could be used as a path to extract sensitive data from a device, to inject unwanted data or applications into a device, or to delete important information from a device.
+The is the On/Off switch for the use of Media Transfer Protocol (MTP) on the device. When this mode is enabled, a PC can connect to the device through a USB port that supports Peripheral mode or the "on-the-go" specification. Once connected, such a PC could browse exposed portions of the device file system, copy files to or from the device, or delete files. Use of this mode could represent a security risk since it could be used as a path to extract sensitive data from a device, to inject unwanted data or applications into a device, or to delete important information from a device.
+
+**Note: This parameter is not supported on Group B devices**; use the USB Storage Enable/Disable parameter instead.

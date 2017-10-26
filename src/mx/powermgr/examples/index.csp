@@ -14,7 +14,7 @@ order: 99
 	    </characteristic>
 	</wap-provisioningdoc>
 
-### Enterprise Reset the Device
+### Perform an Enterprise Reset
 
 	:::XML
 	<wap-provisioningdoc>
@@ -23,7 +23,7 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 	
-### Factory Reset the Device
+### Perform a Factory Reset
 
     :::XML
     <wap-provisioningdoc>
@@ -32,7 +32,7 @@ order: 99
         </characteristic>
     </wap-provisioningdoc>
 	
-### Full Device Wipe
+### Perform a Full Device Wipe
 
 	:::XML
 	<wap-provisioningdoc>
@@ -41,7 +41,8 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 
-### OS Update
+### Perform an OS Update
+
 	:::xml
 	<wap-provisioningdoc>
 		<characteristic type="PowerMgr" version="4.2" >
@@ -51,5 +52,95 @@ order: 99
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
+
+### Turn On Power to Serial Port 1
+	:::xml
+	<wap-provisioningdoc>
+	    <characteristic type=”PowerMgr”>
+	        <parm name=”PortAction” value=”1” />
+	        <characteristic type=”port-details”>
+	            <parm name=”PortSelect” value=”Serial Port 1” />
+	        </characteristic>
+	    </characteristic>
+	</wap-provisioningdoc>
+
+### Turn Off Power to USB Port 2
+
+	:::XML
+	<wap-provisioningdoc>
+	    <characteristic type=”PowerMgr”>
+	        <parm name=”PortAction” value=”2” />
+	        <characteristic type=”port-details”>
+	            <parm name=”PortSelect” value=”USB Port 2” />
+	        </characteristic>
+	    </characteristic>
+	</wap-provisioningdoc>
+
+
+### Turn On and Off Vehicle-mount Computer Immediately with Vehicle Power
+
+	:::XML
+	<wap-provisioningdoc>
+	    <characteristic type=”PowerMgr”>
+	        <parm name=”AutoPowerControl” value=”1” />
+	        <characteristic type=”auto-power-details”>
+	            <parm name=”AutoPowerOff” value=”1” />
+	            <parm name=”AutoPowerOffTimeout” value=”0” />
+	            <parm name=”AutoPowerOn” value=”1” />
+	        </characteristic>
+	    </characteristic>
+	</wap-provisioningdoc>
+
+
+### Turn Off Vehicle-mount Computer 10 Minutes After Vehicle Turns Off; Do Not Turn On Device Automatically
+
+	:::XML
+	<wap-provisioningdoc>
+	    <characteristic type=”PowerMgr”>
+	        <parm name=”AutoPowerControl” value=”1” />
+	        <characteristic type=”auto-power-details”>
+	            <parm name=”AutoPowerOff” value=”1” />
+	            <parm name=”AutoPowerOffTimeout” value=”10” />
+	            <parm name=”AutoPowerOn” value=”0” />
+	        </characteristic>
+	    </characteristic>
+	</wap-provisioningdoc>
+
+### Enable Touch Panel Heater to Operate in the Temperature range -10°C to 5°C
+
+	:::XML
+	<wap-provisioningdoc>
+	    <characteristic type=”PowerMgr”>
+	        <parm name=”HeaterAction” value=”3” />
+	        <characteristic type=”heater-details”>
+	            <parm name=”HeaterSelect” value=”4” />
+	            <parm name=”OnThreshold” value=”-10” />
+	            <parm name=”OffThreshold” value=”5” />
+	        </characteristic>
+	    </characteristic>
+	</wap-provisioningdoc>
+
+	<wap-provisioningdoc>
+	    <characteristic type=”PowerMgr”>
+	        <parm name=”HeaterAction” value=”1” />
+	        <characteristic type=”heater-details”>
+	            <parm name=”HeaterSelect” value=”4” />
+	        </characteristic>
+	    </characteristic>
+	</wap-provisioningdoc>
+
+
+### Disable the USB IO heater
+
+	:::XML
+	<wap-provisioningdoc>
+	    <characteristic type=”PowerMgr”>
+	        <parm name=”HeaterAction” value=”2” />
+	        <characteristic type=”heater-details”>
+	            <parm name=”HeaterSelect” value=”2” />
+	        </characteristic>
+	    </characteristic>
+	</wap-provisioningdoc>
+		
 
 

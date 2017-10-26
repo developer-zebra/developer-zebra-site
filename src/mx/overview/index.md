@@ -7,12 +7,6 @@ layout: guide.html
 
 The MX Management System (MXMS) is an XML-based communication framework that provides a common interface for managing the capabilities and behaviors of Zebra Android devices. The XML documents used by the framework conform to the [Open Mobile Alliance specification for Client Provisioning](http://www.openmobilealliance.org/wp/) (OMA-CP) and the Microsoft [MSPROV DTD format](https://msdn.microsoft.com/en-us/library/bb737266.aspx) on which it's based ([read more](http://www.advancedinstaller.com/user-guide/wince-winmobile-xmlprov.html)). The framework affords developers and administrators an extensible, efficient, reliable and scalable means to configure and administer devices in their organization. MXMS exposes capabilities provided by the underlying CSPs on a device, which provide uniform access to privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files included with the MDM Toolkit. A DSD tool, loaded with the DSD files for a particular device or set of devices, can generate XML code that when sent to the MXMS running on the device, can change the devices' configuration and/or behavior.
 
-### MX Value Tier
-
-In addition to the all-inclusive version of MX, Zebra has developed MX Value Tier, which contains a select subset of MX features for entry-level devices such as the TC20 and TC25. Each of the CSPs in Value Tier MX contains its full complement of features.
-
-**Note: An error will result if a Value-Tier CSP calls a device feature implemented by a CSP that's not among those in the Value Tier**. 
-
 ## Definition of Terms
 
 ### Android Open Source Project (AOSP)

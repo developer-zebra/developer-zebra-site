@@ -5,23 +5,26 @@ type: parm
 order: 2
 mx: "4.1.1"
 apilevel: "16"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: Yes
   name: GprsAction
   type: list
   list:
     - code: 1
+      devicetype: A,B
       name: Add/replace named APN
       mx: "4.1.1"
       apilevel: "16"
       description: Causes the specified APN to be added (replacing the existing APN, if any).
     - code: 2
+      devicetype: A,B
       name: Remove existing named APN
       mx: "4.1.1"
       apilevel: "16"
       description: Causes the specified APN to be removed.
     - code: 3
+      devicetype: A,B
       name: Remove all existing APNs
       mx: "4.1.1"
       apilevel: "16"

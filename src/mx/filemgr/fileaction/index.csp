@@ -4,22 +4,25 @@ title: File Action
 type: parm
 order: 1
 mx: "4.3"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: Yes
   name: FileAction
   type: list
   list:
     - code: 1
+      devicetype: A,B
       name: Transfer/Copy File
       mx: "4.3"
       description: Copies a specified file to the device.
     - code: 4
+      devicetype: A,B
       name: Delete File
       mx: "4.3"
       description: Erases a specified file from the device.
     - code: 9
       mx: "5.0"
+      devicetype: A,B
       name: Download and Expand Archive File
       description: Copies an archive file to the device and extracts its contents.
 ---

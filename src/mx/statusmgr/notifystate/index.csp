@@ -4,19 +4,22 @@ title: Notify State
 type: parm
 order: 8
 mx: "5.0"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: Yes
   name: NotifyState
   type: list
   list:
     - code: 0
+      devicetype: A,B
       name: None
       description: 
     - code: 1
+      devicetype: A,B
       name: In progress
       description: Notify the percent of progress
     - code: 3
+      devicetype: A,B
       name: Complete
       description: Notify when complete
 ---

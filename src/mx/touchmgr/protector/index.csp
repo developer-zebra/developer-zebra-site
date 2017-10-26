@@ -5,18 +5,20 @@ type: parm
 order: 10
 mx: "6.2"
 osx: "6.2"
-device: p
+devicetype: A
 parm:
   pivotal: no
   name: Protector
   type: list
   list:
     - code: false
+      devicetype: A
       name: (unchecked)
       mx: "6.2"
       osx: "6.2"
       description: Screen protector not present; sensitivity will not be adjusted to compensate.
     - code: true
+      devicetype: A
       name: (checked)
       mx: "6.2"
       osx: "6.2"

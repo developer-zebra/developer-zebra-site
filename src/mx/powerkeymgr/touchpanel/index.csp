@@ -4,7 +4,7 @@ title: Touch Panel Show/Hide
 type: parm
 order: 3
 mx: "5.0"
-device: p
+devicetype: A
 parm:
   pivotal: Yes
   name: TouchPanel
@@ -12,13 +12,16 @@ parm:
   list:
     - code: 0
       mx: "5.0"
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the Power Off Menu; any previously selected setting will be retained.
     - code: 1
+      devicetype: A
       name: Show Menu Option
       mx: "5.0"
       description: Enables the Touch Panel to be controlled from the Power Off Menu (if the device supports this option).
     - code: 2
+      devicetype: A
       name: Do not show Menu Option
       mx: "5.0"
       description: Prevents the Touch Panel from being controlled from the Power Off Menu (if the device supports this option).

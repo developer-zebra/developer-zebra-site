@@ -4,7 +4,7 @@ title:  Alt State
 type: parm
 order: 10
 mx: "4.4"
-device: p
+devicetype: A
 parm:
   presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior is "Send key-code" and Advanced is "True"
   pivotal: No
@@ -13,13 +13,16 @@ parm:
   list:
     - code: 0
       mx: "4.4"
+      devicetype: A
       name: Use existing state
       description: This value (or the absence of this parm from the XML) will cause the ALT Key State Modifier to be left unchanged, thus making it the same as when the Key was pressed.
     - code: 1
+      devicetype: A
       name: Force On
       mx: "4.4"
       description: This value will set the ALT Key State Modifier, thus forcing the Key Code sent to be interpreted as ALT.
     - code: 2
+      devicetype: A
       name: Force Off
       mx: "4.4"
       description: This value will clear the Shift Key State Modifier, thus forcing the Key Code sent to be interpreted as non-ALT.

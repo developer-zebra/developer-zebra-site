@@ -2,7 +2,7 @@
 csp: touchmgr
 title: Overview
 type: text
-device: p
+devicetype: A
 order: 0
 ---
 

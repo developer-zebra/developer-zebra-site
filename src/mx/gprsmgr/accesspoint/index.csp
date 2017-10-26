@@ -5,7 +5,7 @@ type: parm
 order: 7
 mx: "4.1.1"
 apilevel: "16"
-device: p,v
+devicetype: A,B
 parm:
   presentif: The APN Action is "Add/replace named APN" and the GPRS Carrier is "Custom"
   pivotal: No

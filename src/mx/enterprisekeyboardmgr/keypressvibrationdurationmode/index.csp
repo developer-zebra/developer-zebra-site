@@ -4,7 +4,7 @@ title: Keypress Vibration Duration Mode
 type: parm
 order: 10
 mx: "6.0"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: KeypressVibrationDurationMode
@@ -12,13 +12,16 @@ parm:
   list:
     - code: 0
       mx: "6.0"
+      devicetype: A
       name: Do not change
       description: A null value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
     - code: 1
+      devicetype: A
       name: Specify duration
       mx: "6.0"
       description: Enables a vibration duration (in ms) to be specified for each keypress.
     - code: 2
+      devicetype: A
       name: System default
       mx: "6.0"
       description: Accepts the System setting for the keypress vibration duration.

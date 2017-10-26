@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: Overview
 type: text
-device: p,v
+devicetype: A
 order: 0
 ---
 

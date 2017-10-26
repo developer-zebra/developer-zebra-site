@@ -5,7 +5,7 @@ type: parm
 order: 2
 mx: "5.1"
 apilevel: "19"
-device: p,v
+devicetype: A
 parm:
   presentif: Analytics Action is set to "Disable"
   pivotal: No
@@ -15,11 +15,13 @@ parm:
     - code: 0
       mx: "5.1"
       apilevel: "19"
+      devicetype: A
       name: Do not clear
       description: This value (or the absence of this parm from the XML) will ignore any data stored on the device by the Analytics Engine and/or AnalyticsMgr CSP. Use this option to Disable the Analytics Engine and retain saved data.  
     - code: 1
       mx: "5.1"
       apilevel: "19"
+      devicetype: A
       name: Clear Data
       description: Causes any data stored on the device by the Analytics Engine or AnalyticsMgr CSP to be immediately cleared (erased). Use this option to Disable the Analytics Engine and erase saved data. 
 

@@ -1,0 +1,26 @@
+---
+csp: wifi
+title: Hotspot Security Mode 
+type: parm
+order: 80
+mx: "6.3"
+devicetype: A
+parm:
+  presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot" is set to "Enable"
+  pivotal: No
+  name: HotspotSecurityMode
+  type: list
+  list:
+    - code: 0
+      mx: "6.3"
+      devicetype: A
+      name: Open
+      description: Allows any device to connect to the Wi-Fi hotspot without entering credentials.
+    - code: 1
+      mx: "6.3"
+      devicetype: A
+      name: WPA2/PSK
+      description: Requires user credentials to be entered before allowing a connection to the Wi-Fi hotspot. 
+---
+
+Controls whether user credentials will be required on a device before allowing it to connect to the Wi-Fi hotspot. 

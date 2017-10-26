@@ -5,7 +5,7 @@ type: parm
 order: 8
 mx: "6.0"
 apilevel: "19"
-device: p,v
+devicetype: A
 parm:
   presentif: Group Action is set to "Configure Details for a Single Group" and Feature Switch is NOT set to "Unused"
   pivotal: No
@@ -15,11 +15,13 @@ parm:
     - code: 0
       mx: "6.0"
       apilevel: "19"
+      devicetype: A
       name: Disable
       description: Disables data collection for a given Feature. 
     - code: 1
       mx: "6.0"
       apilevel: "19"
+      devicetype: A
       name: Enable
       description: Enables data collection for a given Feature.
 

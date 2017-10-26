@@ -4,7 +4,7 @@ title: Device Type
 type: parm
 order: 1
 mx: "6.2"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: DeviceType
@@ -12,17 +12,21 @@ parm:
   list:
     - code: 0
       mx: "6.2"
+      devicetype: A
       name: Any
       description: This value (or the absence of this parm from the XML) will apply Touch Mode settings for any and all devices. 
     - code: 1
+      devicetype: A
       name: 8960
       mx: "6.2"
       description: Applies settings for TC55, TC70, or TC75 devices.
     - code: 3
+      devicetype: A
       name: 8956
       mx: "6.2"
       description: Applies settings for TC51, TC56, TC70x, or TC75x devices.
     - code: 4
+      devicetype: A
       name: ET5x
       mx: "6.3"
       description: Applies settings for ET50 and ET55 devices.
@@ -32,6 +36,7 @@ Used to specify the set of Zebra devices for which to apply settings for touch-s
 
 <!--
     - code: 2
+      devicetype: A
       name: 8000
       mx: "6.2"
       description: Applies settings for the TC8000 device only.

@@ -5,7 +5,7 @@ type: parm
 order: 10
 mx: "4.4"
 osx: "4.4"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: DataRoamingUsage
@@ -14,14 +14,17 @@ parm:
     - code: 0
       mx: "4.4"
       osx: "4.4"
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to usage of the Data Roaming Option; any previously selected setting will be retained.
     - code: 1
+      devicetype: A,B
       name: Enable
       mx: "4.4"
       osx: "4.4"
       description: Enables Data Roaming to be used on the device and its state (active/inactive) to be controlled programmatically or by the device user.
     - code: 2
+      devicetype: A,B
       name: Disable
       mx: "4.4"
       osx: "4.4"

@@ -6,7 +6,7 @@ order: 4
 mx: "4.2"
 osx: "1.0,1.3"
 apilevel: 1
-device: p,v
+devicetype: A,B
 parm:
   presentif: The Action is "Uninstall" or "Set as Default Launcher" or "Enable Application" or "Disable Application"
   pivotal: No

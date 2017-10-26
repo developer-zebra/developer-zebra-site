@@ -1,0 +1,20 @@
+---
+csp: powermgr
+title: Heater-On Threshold
+type: parm
+order: 22
+mx: "7.1"
+devicetype: A
+parm:
+  presentif: The Heater Action is "Set ON/OFF Thresholds"
+  pivotal: No
+  name: OnThreshold
+  type: string
+
+---
+
+Used to specify the temperature (in degrees Celsius) at which the device heater should turn on. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**. 
+
+**Parm value input rules**: 
+
+* Integer value from -30 to 50

@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: Overview
 type: text
-device: p
+devicetype: A,B
 order: 0
 ---
 

@@ -2,7 +2,7 @@
 csp: audiovoluimgr
 title: Overview
 type: text
-device: p
+devicetype: A
 order: 0
 ---
 

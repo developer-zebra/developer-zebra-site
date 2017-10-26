@@ -4,7 +4,7 @@ title: Key Long-Press Delay
 type: parm
 order: 7
 mx: "6.0"
-device: p
+devicetype: A
 parm:
   presentif: Key Long-Press Delay Mode is set to "Specify duration" 
   pivotal: No

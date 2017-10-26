@@ -4,7 +4,7 @@ title: Delete Words From File
 type: parm
 order: 9
 mx: "6.3"
-device: p
+devicetype: A
 parm:
   presentif: Action is "Delete words from file"
   pivotal: No

@@ -4,7 +4,7 @@ title: Vendor Specific 188 Enable/Disable
 type: parm
 order: 61
 mx: "5.0"
-device: p
+devicetype: A,B
 parm:
   pivotal: No
   name: VendorSpecific2State
@@ -12,13 +12,16 @@ parm:
   list:
     - code: 0
       mx: "5.0"
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to how this DHCP Option is configured; any previously selected setting will be retianed.
     - code: 1
+      devicetype: A,B
       name: Enable
       mx: "5.0"
       description: Enables vendor-specific option 188 to be requested by the DHCP Client.
     - code: 2
+      devicetype: A,B
       name: Disable
       mx: "5.0"
       description: Prevents vendor-specific option 188 from being requested.

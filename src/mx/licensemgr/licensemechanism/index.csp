@@ -1,0 +1,26 @@
+---
+csp: licensemgr
+title: License Mechanism
+type: parm
+order: 5
+mx: "7.1"
+devicetype: A
+parm:
+  pivotal: No
+  name: LicenseMechanism
+  type: list
+  list:
+    - code: 1
+      devicetype: A
+      name: Symbol
+      mx: "7.1"
+      description: Applies a Software License using the (legacy) Symbol mechanism.
+    - code: 2
+      devicetype: A
+      name: Zebra
+      mx: "7.1"
+      description: Applies a Software License using the Flexera-based Zebra Licensing mechanism.
+---
+
+Used to select the mechanism for applying a License according to device vintage.  
+

@@ -6,7 +6,7 @@ order: 2
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: ConfigIpAddr
@@ -15,10 +15,12 @@ parm:
     - code: 0
       mx: "6.2"
       osx: "6.2"
+      devicetype: A
       name: (unchecked)
       apilevel: "23"
       description: Prevents an IP address from being assigned manually or through DHCP.
     - code: 1
+      devicetype: A
       name: (checked)
       mx: "6.2"
       osx: "6.2"

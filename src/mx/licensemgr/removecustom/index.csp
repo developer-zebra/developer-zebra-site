@@ -1,10 +1,10 @@
 ---
 csp: licensemgr
-title: Remove by Custom Feature Name
+title: Remove Custom Feature
 type: parm
-order: 12
+order: 45
 mx: "4.3"
-device: p
+devicetype: A
 parm:
   pivotal: No
   presentif: The "Specify license action to perform" is "Remove" *AND* "Specify selection method to use" is "Select using a custom feature name"
@@ -12,10 +12,10 @@ parm:
   type: string
 ---
 
-This parm allows you to specify a Custom Licensed Feature Name that identifies the Software License to be removed from the device.
+Used to specify a custom Licensed Feature Name to identify the Software License to be removed from the device.
 
 >**Note:** Be careful to enter the exact Licensed Feature Name as acquired from the Zebra Software License Server with identical case and without any additional whitespace or other characters.
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String with a valid Custom Licensed Feature Name that was contained within a Software License File acquired from the Zebra Software License Server.

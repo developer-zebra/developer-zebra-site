@@ -5,7 +5,7 @@ type: parm
 order: 5
 mx: "4.4"
 osx: "4.4"
-device: p
+devicetype: A
 parm:
   presentif: The Current Active Profile Action is "Set an Audio UI Profile as the current Profile"
   pivotal: No
@@ -13,11 +13,13 @@ parm:
   type: list
   list:
     - code: 1
+      devicetype: A
       name: Do not adjust the volume level
       mx: "4.4"
       osx: "4.4"
       description: This value will cause the Preset volume levels specified for all Audio Streams in the new current Audio Profile to be ignored. If the current volume level of an Audio Stream is less than the minimum, then it will be changed to the minimum and if the current volume level of an Audio Stream is greater than the minimum, then it will be changed to the maximum.  Otherwise, the current volume level of an Audio Stream will be unchanged.
     - code: 2
+      devicetype: A
       name: Adjust the volume level
       mx: "4.4"
       osx: "4.4"

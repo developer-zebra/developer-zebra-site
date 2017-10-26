@@ -1,0 +1,31 @@
+---
+csp: displaymgr
+title: Set Blanking Signal Polarity
+type: parm
+order: 20
+mx: "7.1"
+devicetype: A
+parm:
+  pivotal: No
+  name: ScreenBlankingSignalPolarity
+  type: list
+  list:
+    - code: 1
+      devicetype: A
+      name: Blank screen when vehicle goes active (ON)
+      mx: "7.1"
+      description: Sets the screen to go blank when a signal is present.
+    - code: 2
+      devicetype: A
+      name: Blank screen when vehicle goes inactive (OFF)
+      mx: "7.1"
+      description: Sets the screen to go blank when a signal is absent.
+---
+
+Controls whether to blank the screen when the signal designated in the Screen Blank Signal parameter is present or absent. 
+
+<!-- Passage removed because referred section was removed, per eng.
+
+**Setting 1 is most common** when RTS and CTS are wired as described in the Screen Blanking Signal parameter section. 
+
+-->

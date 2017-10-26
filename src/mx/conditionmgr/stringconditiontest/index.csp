@@ -4,7 +4,7 @@ title: String Condition Test
 type: parm
 order: 24
 mx: 6.0
-device: p,v
+devicetype: A
 parm:
   presentif: Data Type is "String"
   pivotal: No
@@ -13,34 +13,42 @@ parm:
   list:
     - code: 5
       mx: 6.0
+      devicetype: A
       name: Equal-to a Constant String
       description: Tested string is the same as the specified string.
     - code: 6
       mx: 6.0
+      devicetype: A
       name: Not-Equal-to a Constant String
       description: Tested string is not the same as the specified string.
     - code: 7
       mx: 6.0
+      devicetype: A
       name: Contains a Constant String
       description: Tested string contains the specified string.
     - code: 8
       mx: 6.0
+      devicetype: A
       name: Does-not-contain a Constant String
       description: Tested string does not contain the specified string.
     - code: 9
       mx: 6.0
+      devicetype: A
       name: Starts-with a Constant String
       description: Tested string begins with the specified string.
     - code: 10
       mx: 6.0
+      devicetype: A
       name: Does-not-start-with a Constant String
       description: Tested string does not begin with the specified string.
     - code: 11
       mx: 6.0
+      devicetype: A
       name: Ends-with a Constant String
       description: Tested string ends with the specified string.
     - code: 12
       mx: 6.0
+      devicetype: A
       name: Does-not-end-with a Constant String
       description: Tested string does not end with the specified string.
 ---

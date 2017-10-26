@@ -5,7 +5,7 @@ type: parm
 order: 2
 mx: "4.3"
 osx: "4.3"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: SdCardUsage
@@ -14,14 +14,17 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "4.3"
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to Storage Card usage on a device.
     - code: 1
+      devicetype: A
       name: Enable
       mx: "4.3"
       osx: "4.3"
       description: Blocks access to the Storage Card selected to support this feature on a given device.
     - code: 2
+      devicetype: A
       name: Enable the specified persistent profile
       mx: "4.3"
       osx: "4.3"

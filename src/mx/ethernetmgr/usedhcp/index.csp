@@ -6,7 +6,7 @@ order: 3
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"
-device: p
+devicetype: A
 parm:
   presentif: ConfigIPAddress is "checked" 
   pivotal: No
@@ -16,10 +16,12 @@ parm:
     - code: 0
       mx: "6.2"
       osx: "6.2"
+      devicetype: A
       name: (unchecked)
       apilevel: "23"
       description: Allows IP address settings to be configured manually. 
     - code: 1
+      devicetype: A
       name: (checked)
       mx: "6.2"
       osx: "6.2"

@@ -4,7 +4,7 @@ title: Request Status Filter
 type: parm
 order: 3
 mx: "5.0"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: No 
   presentif: The Status Request Action is "Add/Replace Status Request"
@@ -12,9 +12,11 @@ parm:
   type: list
   list:
     - code: 0
+      devicetype: A,B
       name: Request ALL Status
       description: 
     - code: 1
+      devicetype: A,B
       name: Request Completion Status
       description: 
 ---

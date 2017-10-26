@@ -1,0 +1,34 @@
+---
+csp: enterprisekeyboardmgr
+title: Numeric Tab Show/Hide
+type: parm
+order: 17
+mx: "7.1"
+devicetype: A
+parm:
+  pivotal: No
+  name: ShowNumericTab
+  type: list
+  list:
+    - code: 0
+      mx: "7.1"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
+    - code: 1
+      devicetype: A
+      name: Turn on
+      mx: "7.1"
+      description: Shows the numeric tab among the other key layout tabs.
+    - code: 2
+      devicetype: A
+      name: Turn off
+      mx: "7.1"
+      description: Hides the numeric tab and prevents selection of the numeric key layout.
+---
+
+Controls whether to display the numeric tab among other selected keyboard layout tabs. 
+
+**Notes**: 
+* **Enabling this tab disables remapping of the Alphanumeric P1 key**.
+* Hiding this tab prevents the numeric key layout from being selected by the device user. 

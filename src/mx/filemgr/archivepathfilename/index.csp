@@ -4,9 +4,9 @@ title: Archive Target Path and Folder Name
 type: parm
 order: 14
 mx: "5.0"
-device: p,v
+devicetype: A,B
 parm:
-  presentif: File Action is Download and Expand Archive
+  presentif: File Action is "Download and Expand Archive"
   pivotal: No
   name: ArchiveTargetPathAndFolderName
   type: string

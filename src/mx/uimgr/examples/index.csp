@@ -5,7 +5,7 @@ type: text
 order: 99
 ---
 
-### Configuring Device Region and Keyboard
+### Configure Device Region and Keyboard
 
     :::XML
     <wap-provisioningdoc>
@@ -197,3 +197,50 @@ order: 99
         </characteristic>
     </wap-provisioningdoc>
 
+### Get Recent App Button status
+
+#### Input
+
+    <wap-provisioningdoc>
+        <characteristic type="UiMgr" version="7.1" >
+            <parm-query name="RecentAppButtonUsage" />
+        </characteristic>
+    </wap-provisioningdoc>
+
+<!-- (not validated)
+#### Output (button enabled)
+
+    <wap-provisioningdoc>
+        <characteristic type="UiMgr" version="7.1" >
+            <parm-query name="RecentAppButtonUsage" value="1"/>
+        </characteristic>
+    </wap-provisioningdoc>
+-->
+
+### Enable Navigation Bar
+
+    <wap-provisioningdoc>
+        <characteristic type="UiMgr" version="7.1" >
+            <parm name="RecentAppButtonUsage" value="1"/>
+        </characteristic>
+    </wap-provisioningdoc>
+
+### Get Navigation Bar Status 
+
+#### Input
+
+    <wap-provisioningdoc>
+        <characteristic type="UiMgr">
+            <parm-query name="NavigationBarUsage"/>
+        </characteristic>
+    </wap-provisioningdoc>
+
+<!-- (not validated)
+#### Output (Navigation Bar enabled)
+
+    <wap-provisioningdoc>
+        <characteristic type="UiMgr" version="7.1" >
+            <parm name="RecentAppButtonUsage" value="1"/>
+        </characteristic>
+    </wap-provisioningdoc>
+-->

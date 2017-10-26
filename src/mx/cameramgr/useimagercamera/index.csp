@@ -5,7 +5,7 @@ type: parm
 order: 10
 mx: "6.0"
 osx: "5.0"
-device: p
+devicetype: A
 parm:
   presentif: Use All Cameras is set to "Control Individual Cameras"
   pivotal: No
@@ -15,14 +15,17 @@ parm:
     - code: 0
       mx: "6.0"
       osx: "5.0"
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes to whether the device's imager can be used to take pictures; any previously selected setting will be retained.
     - code: 1
+      devicetype: A
       name: Enable
       mx: "6.0"
       osx: "5.0"
       description: Controls whether the imager on the device (if so equipped) can be used to take pictures.
     - code: 2
+      devicetype: A
       name: Disable
       mx: "6.0"
       osx: "5.0"

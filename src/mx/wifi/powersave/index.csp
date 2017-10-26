@@ -1,0 +1,50 @@
+---
+csp: wifi
+title: Power Save Mode 
+type: parm
+order: 56
+mx: "4.2"
+devicetype: A,B
+parm:
+  presentif: The "Use Advanced Options" box is checked.
+  pivotal: False
+  name: PowerSave
+  type: list
+  list:
+    - code: 0
+      devicetype: A,B
+      name:  Do not change
+      mx: "4.2"
+    - code: 1
+      devicetype: A,B
+      name: Always Active
+      mx: "4.2"
+    - code: 2
+      devicetype: A,B
+      name: Fast Power Save (Deprecated)
+      mx: "4.2"
+    - code: 3
+      devicetype: A,B
+      name: Max Power Save (Deprecated)
+      mx: "4.2"
+    - code: 4
+      devicetype: A,B
+      name: WMM-PS
+      mx: "4.4"
+    - code: 5
+      devicetype: A,B
+      name: Null Data Power Save
+      mx: "4.4"
+    - code: 6
+      mx: "4.4"
+      devicetype: A,B
+      name: PS-POLL
+    - code: 99
+      mx: "6.2"
+      devicetype: A,B
+      name: Unsupported
+---
+Used to configure the Power Save Mode from the settings table below. **The default "Fast Power Save" value must be used for the "Power Save" parameter; the "Do not change" value will result in failure**.
+
+**Important: Wi-Fi Advanced Options should be used only at the direction of Zebra Support or other qualified personnel. Altering this setting can result in undesirable behavior**.
+

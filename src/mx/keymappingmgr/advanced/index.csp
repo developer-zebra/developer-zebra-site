@@ -4,7 +4,7 @@ title:  Advanced
 type: parm
 order: 8
 mx: "4.4"
-device: p
+devicetype: A
 parm:
   presentif: The Action value is "Remap a key" and Choose a key to modify is not "None" and the Key Behavior for the Mapping Table is "Send key-code"
   pivotal: Yes
@@ -13,9 +13,11 @@ parm:
   list:
     - code: 1
       mx: "4.4"
+      devicetype: A
       name: True
       description: This value indicates that Advanced section will be specified.
     - code: 2
+      devicetype: A
       name: False
       mx: "4.4"
       description: This value (or the absence of this parm from the XML) indicates that the Advanced section will not be specified.

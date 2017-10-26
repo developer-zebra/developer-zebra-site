@@ -1,0 +1,35 @@
+---
+csp: powermgr
+title: Heater Action
+type: parm
+order: 20
+mx: "7.1"
+devicetype: A
+parm:
+  pivotal: Yes
+  name: HeaterAction
+  type: list
+  list:
+    - code: 0
+      mx: "7.1"
+      devicetype: A
+      name: Do Nothing
+      description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "7.1"
+      description: Enables the selected heater. 
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "7.1"
+      description: Disables the selected heater. 
+    - code: 3
+      devicetype: A
+      name: Set ON/OFF Thresholds
+      mx: "7.1"
+      description: Enables temperature thresholds to be set for the selected heater.  
+---
+
+This is the On/Off switch for performing actions on the device heater(s), including the ability to set temperature thresholds using the relevant Threshold parameters. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**. 

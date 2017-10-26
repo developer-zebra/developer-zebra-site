@@ -5,7 +5,7 @@ type: parm
 order: 6
 mx: "4.3"
 osx: "1.0"
-device: p
+devicetype: A
 parm:
   presentif: The Revoke Key action is "Revoke key"
   pivotal: No

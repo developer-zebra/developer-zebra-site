@@ -4,7 +4,7 @@ title: Locale
 type: parm
 order: 13
 mx: "6.0"
-device: p
+devicetype: A
 parm:
   presentif: Use Current Locale is "Unchecked" (value=0) 
   pivotal: No

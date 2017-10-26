@@ -4,7 +4,7 @@ title: Country
 type: parm
 order: 6
 mx: "4.2"
-device: p,v
+devicetype: A,B
 parm:
   presentif: The "Configure Country (Auto/Manual)" box is unchecked
   pivotal: No

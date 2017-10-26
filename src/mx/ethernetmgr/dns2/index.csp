@@ -6,7 +6,7 @@ order: 8
 mx: "6.2"
 osx: "6.2"
 apilevel: "23"
-device: p
+devicetype: A
 parm:
   presentif: The "Configure IP Address" box is checked and "Use DHCP" box is unchecked
   pivotal: No

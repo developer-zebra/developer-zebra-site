@@ -4,7 +4,7 @@ title: 123Scan Config File Name
 type: parm
 order: 3
 mx: "5.2"
-device: p
+devicetype: A
 parm:
   pivotal: No
   presentif: Scanner Action is not "Do Nothing"

@@ -7,7 +7,7 @@ mx: "4.3"
 osx: "1.3"
 osx-end: "3.9"
 osx-exclude: "4.0"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: SetSaveFormData
@@ -18,15 +18,18 @@ parm:
       osx: "1.3"
       osx-end: "3.9"
       osx-exclude: "4.0"
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the Save Form Data Option; any previously selected setting will be retained.
     - code: 1
+      devicetype: A
       name: Turn On
       mx: "4.3"
       osx: "1.3"
       osx-end: "3.9"
       description: Enables the Save Form Data option, which will prompt the device user to save form data.
     - code: 2
+      devicetype: A
       name: Turn Off
       mx: "4.3"
       osx: "1.3"

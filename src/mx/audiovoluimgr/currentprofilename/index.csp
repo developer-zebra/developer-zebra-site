@@ -5,7 +5,7 @@ type: parm
 order: 4
 mx: "4.4"
 osx: "4.4"
-device: p
+devicetype: A
 parm:
   presentif: The Current Active Profile Action is "Set an Audio UI Profile as the current Profile"
   pivotal: No

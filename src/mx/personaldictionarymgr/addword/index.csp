@@ -4,7 +4,7 @@ title: Add Word
 type: parm
 order: 5
 mx: "6.0"
-device: p
+devicetype: A
 parm:
   presentif: Action is "Add word"
   pivotal: No

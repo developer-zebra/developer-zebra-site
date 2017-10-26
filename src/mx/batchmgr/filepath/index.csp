@@ -4,7 +4,7 @@ title: File Path
 type: parm
 order: 4
 mx: "4.3"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: No
   presentif: File Access method is file system

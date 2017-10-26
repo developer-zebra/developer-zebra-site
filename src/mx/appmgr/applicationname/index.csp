@@ -4,7 +4,7 @@ title: Application Name
 type: parm
 order: 5
 mx: "5.1"
-device: p,v
+devicetype: A,B
 parm:
   presentif: The Action is "Launch an application"
   pivotal: No

@@ -2,11 +2,11 @@
 csp: wirelessmgr
 title: Overview
 type: text
-device: p
+devicetype: A
 order: 0
 ---
 
-The WirelessMgr controls usage of all radios on the device, which can include Bluetooth, GPS, NFC and WWAN radios. Through control of device radios, the WirelessMgr permits administrators to prevent device users from accessing any of a given radio's functions or those of the devices or networks they connect with, providing a measure of security that is impenetrable by the device user.
+The Wireless Manager (WirelessMgr) controls usage of all radios on the device, which varies by device and can include Bluetooth, GPS, NFC and WWAN radios. Through control of device radios, the WirelessMgr permits administrators to prevent device users from accessing any of a given radio's functions or those of the devices or networks they connect with, providing a measure of security that is impenetrable by the device user.
 
 The WirelessMgr also can control the GPS Location Mode to help preserve battery life, and on some devices the state (active/inactive) of the Bluetooth radio. 
 
@@ -22,6 +22,7 @@ Android devices often come with a variety of wireless communication interfaces. 
 	* Global Positioning System (GPS)
 	* Wireless Wide Area Network (WWAN/cellular data)
 * Control State of the Bluetooth radio 
+* Select internal or external Bluetooth/Wi-Fi antenna
 * Select GPS Location Mode to control battery usage: 
 	* High accuracy
 	* Battery savings

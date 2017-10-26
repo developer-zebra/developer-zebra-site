@@ -4,37 +4,44 @@ title: Action
 type: parm
 order: 2
 mx: "5.2"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: Action
   type: list
   list:
     - code: 0
+      devicetype: A
       name: Do Nothing
       mx: "5.2"
       description: This value (or the absence of this parm from the XML) will cause no scanner management action to be performed.
     - code: 1
+      devicetype: A
       name: Apply 123Scan configuration package (see desc.)
       mx: "5.2"
       description: Applies the 123Scan (.scncfg) configuration package to configure the scanner. File downloaded separately. Supports RS6000 and DS3678 only; DS requires MX 6.3 or higher. 
     - code: 2
+      devicetype: A
       name: Update Scanner Firmware
       mx: "5.2"
       description: Applies the firmware (.dat file downloaded separately) specified in the corresponding field to update the scanner firmware.
     - code: 3
+      devicetype: A
       name: Reset Scanner (see desc.)
       mx: "5.2"
       description: Cycles the power of the connected scanner to clear its memory and other volatile settings. Supports RS6000 and DS3678 only; DS requires MX 6.3 or higher. 
     - code: 4
+      devicetype: A
       name: Page Scanner (see desc.)
       mx: "5.2"
       description: Activates a device-location sequence on the paired scanner consisting of beep sounds, LED flashes and vibration to help locate a misplaced device. Supports RS6000 and DS3678 only; DS requires MX 6.3 or higher.   
     - code: 5
+      devicetype: A
       name: Disconnect Bluetooth Scanner (see desc.)
       mx: "5.2"
       description: Disconnects the currently connected Bluetooth scanner. Supports RS6000 and DS3678 only; DS requires MX 6.3 or higher. 
     - code: 6
+      devicetype: A
       name: Unpair Bluetooth Scanner (see desc.)
       mx: "5.2"
       description: Removes the pairing information from the device for the selected Bluetooth scanner. Supports RS6000 and DS3678; DS requires MX 6.3 or higher. 

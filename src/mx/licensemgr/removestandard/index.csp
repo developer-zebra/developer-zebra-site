@@ -1,10 +1,10 @@
 ---
 csp: licensemgr
-title: Remove By Standard Feature Name
+title: Remove Standard Feature
 type: parm
-order: 11
+order: 40
 mx: "4.3"
-device: p
+devicetype: A
 parm:
   pivotal: No
   presentif: The "Specify license action to perform" is "Remove" *AND* "Specify selection method to use" is "Select using a standard feature name"
@@ -12,8 +12,9 @@ parm:
   type: list
   list:
     - code: SIMULDC1_0_0
+      devicetype: A
       name: SimulScan OCR/OMR
       description: This value will cause the Software License for the SimulScan Software Component to be removed from the device.
 ---
 
-This parm allows you to specify the desired Standard Licensed Feature Name that identifies the Software License to be removed from the device.
+Used to specify the desired Standard Licensed Feature Name that identifies the Software License to be removed from the device.

@@ -4,17 +4,19 @@ title: Statistics Enable/Disable
 type: parm
 order: 2
 mx: "5.1"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: EnableStats
   type: list
   list:
     - code: True
+      devicetype: A
       name: Enable
       mx: "5.1"
       description: Enables the device to collect statistics on XML submitted to the MXMF. 
     - code: False
+      devicetype: A
       name: Disable
       mx: "5.1"
       description: Disables the collection of statistics on XML submitted to the MXMF.

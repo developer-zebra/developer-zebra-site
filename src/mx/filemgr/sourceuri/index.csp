@@ -4,7 +4,7 @@ title: Source URI
 type: parm
 order: 6
 mx: "4.3"
-device: p,v
+devicetype: A,B
 parm:
   presentif: File Action is Transfer/Copy and source is remote server
   pivotal: No
@@ -12,9 +12,12 @@ parm:
   type: string
 ---
 
-Used to specify the URI of the location of the file on the server. Supports HTTP and HTTPS protocols and basic authentication of URL-embedded credentials.  
+Used to specify the URI of the location of the file on the server. Supports HTTP, HTTPS, FTP and FTPS (FTP over TLS or SSL) protocols and basic authentication of URL-embedded credentials. See [Examples section](#examples) for syntax. 
 
 **Parm value input rules**:
 
 * String containing the URI of the source file
 * Credentials must be embedded within URI 
+* Use "protocol=SSL" to override default (TLS)
+* Use "implicit=true" to override default (false)
+

@@ -4,21 +4,24 @@ title: AppGallery Enable/Disable
 type: parm
 order: 4
 mx: "6.0"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: State
   type: list
   list:
     - code: 0
+      devicetype: A
       name: Do Not Change
       description: This value (or the absence of this parm from the XML) will cause no changes; any previously selected setting will be retained.
       mx: "6.0"
     - code: 1
+      devicetype: A
       name: Turn On
       description: Enables the AppGallery client app on the device.
       mx: "6.0"
     - code: 2
+      devicetype: A
       name: Turn Off
       description: Disables the AppGallery client app on the device.
       mx: "6.0"

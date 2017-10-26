@@ -4,7 +4,7 @@ title: Set Hotspot 5GHz Channel
 type: parm
 order: 77
 mx: "6.3"
-device: p,v
+devicetype: A
 parm:
   presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot Band" is "5GHz" 
   pivotal: No
@@ -13,94 +13,117 @@ parm:
   list:
     - code: 36
       mx: "6.3"
+      devicetype: A
       name: 36
       description: Selects channel 36 on the 5GHz band
     - code: 40
       mx: "6.3"
+      devicetype: A
       name: 40
       description: Selects channel 40 on the 5GHz band
     - code: 44
       mx: "6.3"
+      devicetype: A
       name: 44
       description: Selects channel 44 on the 5GHz band    
     - code: 48
       mx: "6.3"
+      devicetype: A
       name: 48
       description: Selects channel 48 on the 5GHz band
     - code: 52
       mx: "6.3"
+      devicetype: A
       name: 52
       description: Selects channel 52 on the 5GHz band
     - code: 60
       mx: "6.3"
+      devicetype: A
       name: 60
       description: Selects channel 60 on the 5GHz band    
     - code: 64
       mx: "6.3"
+      devicetype: A
       name: 64
       description: Selects channel 64 on the 5GHz band
     - code: 100
       mx: "6.3"
+      devicetype: A
       name: 100
       description: Selects channel 100 on the 5GHz band
     - code: 104
       mx: "6.3"
+      devicetype: A
       name: 104
       description: Selects channel 104 on the 5GHz band
     - code: 108
       mx: "6.3"
+      devicetype: A
       name: 108
       description: Selects channel 108 on the 5GHz band
     - code: 112
       mx: "6.3"
+      devicetype: A
       name: 112
       description: Selects channel 112 on the 5GHz band
     - code: 116
       mx: "6.3"
+      devicetype: A
       name: 116
       description: Selects channel 116 on the 5GHz band
     - code: 120
       mx: "6.3"
+      devicetype: A
       name: 120
       description: Selects channel 120 on the 5GHz band
     - code: 124
       mx: "6.3"
+      devicetype: A
       name: 124
       description: Selects channel 124 on the 5GHz band
     - code: 128
       mx: "6.3"
+      devicetype: A
       name: 128
       description: Selects channel 128 on the 5GHz band
     - code: 132
       mx: "6.3"
+      devicetype: A
       name: 132
       description: Selects channel 132 on the 5GHz band
     - code: 136
       mx: "6.3"
+      devicetype: A
       name: 136
       description: Selects channel 136 on the 5GHz band
     - code: 140
       mx: "6.3"
+      devicetype: A
       name: 140
       description: Selects channel 140 on the 5GHz band
     - code: 149
       mx: "6.3"
+      devicetype: A
       name: 149
       description: Selects channel 149 on the 5GHz band
     - code: 153
       mx: "6.3"
+      devicetype: A
       name: 153
       description: Selects channel 153 on the 5GHz band
     - code: 157
       mx: "6.3"
+      devicetype: A
       name: 157
       description: Selects channel 157 on the 5GHz band
     - code: 161
       mx: "6.3"
+      devicetype: A
       name: 161
       description: Selects channel 161 on the 5GHz band
     - code: 165
       mx: "6.3"
+      devicetype: A
       name: 165
       description: Selects channel 165 on the 5GHz band
 ---

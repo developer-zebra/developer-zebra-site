@@ -4,7 +4,7 @@ title: Condition Met Action
 type: parm
 order: 30
 mx: 4.4
-device: p,v
+devicetype: A
 parm:
   pivotal: No
   name: ConditionMetAction
@@ -12,14 +12,17 @@ parm:
   list:
     - code: 0
       mx: 4.4
+      devicetype: A
       name: Success
       description: Action to perform when a tested condition is successful. 
     - code: 1
       mx: 4.4
+      devicetype: A
       name: Fail with characteristic-error
       description: Action to perform when a tested condition fails. 
     - code: 2
       mx: 4.4
+      devicetype: A
       name: Retry (up to specified times) then Fail
       description: Repeatedly tests the condition before failing.
 ---

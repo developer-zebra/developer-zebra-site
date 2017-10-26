@@ -4,7 +4,7 @@ title: Clear Statistics File
 type: parm
 order: 6
 mx: "5.1"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: ClearStats
@@ -12,9 +12,11 @@ parm:
   list:
     - code: 0
       mx: "5.1"
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change; the statistics file will not be cleared.
     - code: True
+      devicetype: A
       name: Clear Stats file
       mx: "5.1"
       description: This will clear the Statistics file.

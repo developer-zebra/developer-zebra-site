@@ -5,7 +5,7 @@ type: parm
 order: 4
 mx: "6.1"
 apilevel: "1"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: GPSLocationMode
@@ -14,19 +14,23 @@ parm:
     - code: 0
       mx: "6.1"
       apilevel: "1"
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the GPS Location Mode; any previously selected setting will be retained.
     - code: 1
+      devicetype: A
       name: High Accuracy 
       mx: "6.1"
       apilevel: "1"
       description: Uses GPS, Wi-Fi and cellular network information to determine device location with the highest degree of accuracy. 
     - code: 2
+      devicetype: A
       name: Battery Saving
       mx: "6.1"
       apilevel: "1"
       description: Determines device location using only Wi-Fi and cellular information, preserving battery life.
     - code: 3
+      devicetype: A
       name: Device Only
       mx: "6.1"
       apilevel: "1"

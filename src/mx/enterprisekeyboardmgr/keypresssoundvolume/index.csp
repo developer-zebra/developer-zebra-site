@@ -4,7 +4,7 @@ title: Set Keypress Sound Volume
 type: parm
 order: 9
 mx: "6.0"
-device: p
+devicetype: A
 parm:
   presentif: Keypress Sound Volume Mode is set to "Specify duration" 
   pivotal: No

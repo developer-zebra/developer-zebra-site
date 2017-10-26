@@ -1,0 +1,39 @@
+---
+csp: licensemgr
+title: License Refresh Interval
+type: parm
+order: 5
+mx: "7.1"
+devicetype: A
+parm:
+  pivotal: No
+  name: LicenseRefreshInterval
+  type: list
+  list:
+    - code: 1
+      devicetype: A
+      name: disabled
+      mx: "7.1"
+      description: Disables the refresh interval for perpetual or offline licensing. 
+    - code: 2
+      devicetype: A
+      name: 1Day
+      mx: "7.1"
+      description: Sets the License Refresh Interval to one day. 
+    - code: 2
+      devicetype: A
+      name: 1Week
+      mx: "7.1"
+      description: Sets the License Refresh Interval to one week (seven days).
+    - code: 2
+      devicetype: A
+      name: 1Month
+      mx: "7.1"
+      description: Sets the License Refresh Interval to one month (30 days).
+    - code: 2
+      devicetype: A
+      name: 1Year
+      mx: "7.1"
+      description: Sets the License Refresh Interval to one year (365 days).
+---
+

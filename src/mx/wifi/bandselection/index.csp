@@ -4,7 +4,7 @@ title: RF Band Selection
 type: parm
 order: 7
 mx: "4.2"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: Yes
   name: BandSelection
@@ -12,18 +12,22 @@ parm:
   list:
     - code: 0
       mx: "4.2"
+      devicetype: A,B
       name: Unchanged
       description: This value (or the absence of this parm from the XML) causes no change to the band(s) currently selected on the device; any previously selected setting will be retained.
     - code: 1
       mx: "4.2"
+      devicetype: A,B
       name: 2.4GHz
       description: Selects the 2.4GHz band for Wi-Fi communications.
     - code: 2
       mx: "4.2"
+      devicetype: A,B
       name: 5.0GHZ
       description: Selects the 5.0GHz band for Wi-Fi communications.
     - code: 3
       mx: "4.2"
+      devicetype: A,B
       name: Auto
       description: Enables 2.4GHz and 5.0GHz bands to operate on the device and allows the connection to selected automatically.
 ---

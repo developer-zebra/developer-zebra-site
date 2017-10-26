@@ -4,7 +4,7 @@ title: Data Type
 type: parm
 order: 2
 mx: 4.4
-device: p,v
+devicetype: A
 parm:
   pivotal: Yes
   name: DataType
@@ -12,13 +12,16 @@ parm:
   list:
     - code: 1
       mx: 4.4
+      devicetype: A
       name: Boolean
       description: The tested value will be either true or false. 
     - code: 2
+      devicetype: A
       name: Integer
       mx: 4.4
       description: The tested value will be a number. 
     - code: 3
+      devicetype: A
       name: String
       mx: 6.0
       description: The tested value will be a string of characters.  

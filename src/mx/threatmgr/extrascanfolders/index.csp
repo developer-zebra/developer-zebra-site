@@ -5,23 +5,26 @@ type: parm
 order: 50
 mx: "6.1"
 osx: "3.5"
-device: p
+devicetype: A
 parm:
   pivotal: Yes
   name: ExtraScanFolders
   type: list
   list:
     - code: 0
+      devicetype: A
       name: Do nothing
       mx: "6.1"
       osx: "3.5"
       description: This value (or the absence of this parm from the XML) will make no change to Folder Monitoring; any previously selected setting will be retained.
     - code: 1
+      devicetype: A
       name: Turn On 
       mx: "6.1"
       osx: "3.5"
       description: Enables folder monitoring, and sends an Intent when changes occur to the specified folder(s).
     - code: 2
+      devicetype: A
       name: Turn Off
       mx: "6.1"
       osx: "3.5"

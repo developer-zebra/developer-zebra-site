@@ -5,7 +5,7 @@ type: parm
 order: 5
 mx: "4.2"
 apilevel: "16"
-device: p,v
+devicetype: A,B
 parm:
   presentif: AutoTime is "true"
   pivotal: No
@@ -13,21 +13,25 @@ parm:
   type: list
   list:
     - code: 00:30:00
+      devicetype: A,B
       name: 30 minutes
       mx: "4.2"
       apilevel: "16"
       description: Sets the device to contact the NTP server every 30 minutes.
     - code: 00:60:00
+      devicetype: A,B
       name: 60 minutes
       mx: "4.2"
       apilevel: "16"
       description: Sets the device to contact the NTP server every 60 minutes.
     - code: 06:00:00
+      devicetype: A,B
       name: 6 hours
       mx: "4.2"
       apilevel: "16"
       description: Sets the device to contact the NTP server every 6 hours.
     - code: '24:00:00'
+      devicetype: A,B
       name: 24 hours
       mx: "4.2"
       apilevel: "16"

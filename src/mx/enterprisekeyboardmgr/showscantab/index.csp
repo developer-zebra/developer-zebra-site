@@ -1,10 +1,10 @@
 ---
 csp: enterprisekeyboardmgr
-title: Show Scan Tab Enable/Disable
+title: Scan Tab Show/Hide
 type: parm
-order: 16
+order: 19
 mx: "6.0"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: ShowScanTab
@@ -12,18 +12,21 @@ parm:
   list:
     - code: 0
       mx: "6.0"
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to Enterprise Keyboard settings; any previously selected setting will be retained.
     - code: 1
+      devicetype: A
       name: Turn on
       mx: "6.0"
-      description: Shows the Scan Tab for activating the device scanner.
+      description: Shows the scan tab for activating the device scanner.
     - code: 2
+      devicetype: A
       name: Turn off
       mx: "6.0"
-      description: Hides the Scan Tab.
+      description: Hides the scan tab.
 ---
 
-Controls whether to display the Scan Tab among the other keyboard layout tabs. The Scan Tab displays the scanner controls for collecting barcode data. **Scanning from within Enterprise Keyboard requires the DataWedge service to be enabled on the device**. 
+Controls whether to display the scan tab among the other keyboard layout tabs. The scan tab displays the scanner controls for collecting barcode data. **Scanning from within Enterprise Keyboard requires the [DataWedge](../../../../datawedge) service to be enabled on the device**. 
 
->**Note**: The Scan Tab is disabled whenever an app that uses the scanner is running.     
+>**Note**: The scan tab is disabled whenever a scanning app is running.   

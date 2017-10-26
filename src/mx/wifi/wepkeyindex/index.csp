@@ -4,7 +4,7 @@ title: WEP Key Index
 type: parm
 order: 40
 mx: "4.2"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The Network Action is "Add a New Network" and the Security Mode is "Personal" and the WPA Mode is "WEP"
@@ -12,12 +12,16 @@ parm:
   type: list
   list:
     - code: 1
+      devicetype: A,B
       name: wep[0]
     - code: 2
+      devicetype: A,B
       name: wep[1]
     - code: 3
+      devicetype: A,B
       name: wep[2]
     - code: 4
+      devicetype: A,B
       name: wep[3]
 ---
 

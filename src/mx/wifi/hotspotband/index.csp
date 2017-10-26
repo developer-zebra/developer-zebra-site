@@ -4,7 +4,7 @@ title: Hotspot RF Band
 type: parm
 order: 75
 mx: "6.3"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The "Specify Hotspot Options" checkbox is checked and "Hotspot" is set to "Enable"
@@ -13,10 +13,12 @@ parm:
   list:
     - code: 0
       mx: "6.3"
+      devicetype: A,B
       name: 2.4GHz
       description: Enables the 2.4GHz band for hotspot communications.
     - code: 1
       mx: "6.3"
+      devicetype: A,B
       name: 5GHz
       description: Enables the 5GHz band for hotspot communications.
 ---

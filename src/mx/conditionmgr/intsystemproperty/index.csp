@@ -4,7 +4,7 @@ title: Integer System Property
 type: parm
 order: 11
 mx: 4.4
-device: p,v
+devicetype: A
 parm:
   presentif: Data Type is "Integer"
   pivotal: No
@@ -13,18 +13,22 @@ parm:
   list:
     - code: 1
       mx: 4.4
+      devicetype: A
       name: Platform SDK version
       description: Indicates the Android API level.
     - code: 2
       mx: 4.4
+      devicetype: A
       name: BSP major version
       description: The digit of the Board Support Package prior to the decimal.
     - code: 3
       mx: 4.4
+      devicetype: A
       name: BSP minor version
       description: The digit of the Board Support Package following to the decimal.
     - code: 4
       mx: 4.4
+      devicetype: A
       name: BSP build number
       description: The specific number of the BSP build installed on the device.
 ---

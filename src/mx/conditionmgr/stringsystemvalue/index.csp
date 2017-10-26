@@ -4,7 +4,7 @@ title: String System Value
 type: parm
 order: 22
 mx: 6.0
-device: p,v
+devicetype: A
 parm:
   presentif: Data Type is "String" and String Source Type is "Pre-defined System String Value"
   pivotal: No
@@ -13,10 +13,12 @@ parm:
   list:
     - code: 12
       mx: 6.0
+      devicetype: A
       name: MX version
       description: The version of MX installed on the device. 
     - code: 13
       mx: 6.0
+      devicetype: A
       name: OSX version
       description: The version of OSx installed on the device. 
 ---

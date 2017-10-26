@@ -5,23 +5,26 @@ type: parm
 order: 10
 mx: "6.3"
 apilevel: "23"
-device: p
+devicetype: A
 parm: 
   pivotal: No
   name: EnableBRInPwrMenu
   type: list
   list:
     - code: 0
+      devicetype: A
       name: none
       description: This value (or the absence of this parm from the XML) will cause no change to Bug Report Manager settings; any previously selected setting will be retained.
       mx: "6.3"
       apilevel: "23"
     - code: 1
+      devicetype: A
       name: True
       description: Displays the "Take bug report" button on the Power Off Menu.
       mx: "6.3"
       apilevel: "23"
     - code: 2
+      devicetype: A
       name: False
       description: Hides the "Take bug report" button from the Power Off Menu.
       mx: "6.3"

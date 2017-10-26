@@ -5,7 +5,7 @@ type: parm
 order: 7
 mx: "4.3"
 osx: "4.3"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: WWANState
@@ -14,14 +14,17 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "4.3"
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the WWAN radio usage setting; any previously selected setting will be retained.
     - code: 1
+      devicetype: A
       name: Turn On 
       mx: "4.3"
       osx: "4.3"
       description: Turns On the WWAN radio, enabling usage and changes to its state.
     - code: 2
+      devicetype: A
       name: Turn Off
       mx: "4.3"
       osx: "4.3"

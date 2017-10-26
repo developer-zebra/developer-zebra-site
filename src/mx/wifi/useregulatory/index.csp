@@ -4,7 +4,7 @@ title: Country Selection Auto/Manual
 type: parm
 order: 5
 mx: "4.2"
-device: p,v
+devicetype: A,B
 parm:
   pivotal: No
   name: UseRegulatory
@@ -12,10 +12,12 @@ parm:
   list:
     - code: 11
       mx: "4.2"
+      devicetype: A,B
       name: UseRegulatory
       description: Permits manual country selection. 
     - code: 12
       mx: "4.2"
+      devicetype: A,B
       name: Country
       description: Allows the country to be determined by the router.
 ---

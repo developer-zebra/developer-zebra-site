@@ -6,7 +6,7 @@ order: 2
 mx: "4.4"
 osx: "4.4"
 apilevel: "16"
-device: p
+devicetype: A
 parm:
   pivotal: No
   name: SetBatteryUsageDecommissionThreshold

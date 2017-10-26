@@ -4,7 +4,7 @@ title: Key Base Behavior
 type: parm
 order: 5
 mx: "4.4"
-device: p
+devicetype: A
 parm:
   presentif: The Action value is "Remap a key" and Choose a key to modify is not "None"
   pivotal: Yes
@@ -13,29 +13,36 @@ parm:
   list:
     - code: 0
       mx: "4.4"
+      devicetype: A
       name: No change
       description: This value (or the absence of this parm from the XML) will make no change to the Key Behavior of the specified Key in the Base Key State Mapping Table; any previously selected setting will be retained.
     - code: 1
+      devicetype: A
       name: Send trigger
       mx: "4.4"
       description: Causes the Key Behavior for the specified Key in the Base Key State Mapping Table to act as one of the pre-defined Triggers, notifying whichever applications are registered for the selected Trigger.
     - code: 2
+      devicetype: A
       name: Send key-code
       mx: "4.4"
       description: Causes the Key Behavior for the specified Key in the Base Key State Mapping Table to act like a different specified Key.
     - code: 3
+      devicetype: A
       name: Send Intent
       mx: "4.4"
       description: Causes the Key Behavior for the Key in the Base Key State Mapping Table to send an Intent with specified attributes.
     - code: 4
+      devicetype: A
       name: Launch application
       mx: "4.4"
       description: Causes the Key Behavior for the Key in the Base Key State Mapping Table to launch a specified application.
     - code: 5
+      devicetype: A
       name: Suppress key
       mx: "4.4"
       description: Causes the Key Behavior for the Key in the Base Key State Mapping Table to be ignored and to act as if the Key was never pressed.
     - code: 7
+      devicetype: A
       name: Reset to default
       mx: "4.4"
       description: Causes the Key Behavior for the Key in the Base Key State Mapping Table to revert to the Default Key Behavior.

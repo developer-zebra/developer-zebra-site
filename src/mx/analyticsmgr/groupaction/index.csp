@@ -5,7 +5,7 @@ type: parm
 order: 9
 mx: "4.3"
 apilevel: "19"
-device: p,v
+devicetype: A
 parm:
   presentif: Analytics Action is set to "Enable"
   pivotal: Yes
@@ -15,16 +15,19 @@ parm:
     - code: 0
       mx: "4.3"
       apilevel: "19"
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to which groups of metrics are collected by the Analytics Engine or how often they are collected; any previously selected setting will be retained. 
     - code: 1
       mx: "4.3"
       apilevel: "19"
+      devicetype: A
       name: Configure Levels for Multiple Groups
       description: Controls the frequency (i.e. every 10 minutes) of data collection for all metrics in a group. Each group can have its own frequency, but all selected metrics in a group must be collected at the same frequency. 
     - code: 2
       mx: "5.1"
       apilevel: "19"
+      devicetype: A
       name: Configure Levels for a Single Group
       description: Controls selection of individual metrics within a group to be collected. The metrics within each group are configured independently of other groups, and not all metrics need be collected within in a group. Metrics collected in a single group will be governed by that group's frequency, but each metric can be assigned a unique collection threshold, which can selectively include or exclude it from reports based on its collected data. (See "Condition" for details). 
 

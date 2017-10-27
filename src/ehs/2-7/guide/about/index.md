@@ -52,29 +52,31 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 <td style="width: 220px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
-    Android 4.4 (KitKat)</font></b></p>
-</td>
-<td style="width: 220px;">
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
     Android 5.0/5.1 (Lollipop) </font></b></p>
 </td>
 <td style="width: 220px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
     Android 6.0 (Marshmallow) </font></b></p>
 </td>
+<td style="width: 220px;">
+<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
+    Android 7.1 (Nougat)</font></b></p>
+</td>
+
 </tr>
 
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">ET50/ET55</font></p>
 </td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
 
@@ -83,42 +85,45 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">MC18</font></p>
 </td>
 <td style="width: 220px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
-<td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td></tr>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
 
 <tr>
 <td style="width: 150.35pt;"  width="250">
 <p class="MsoNormal"><font color="#333399" size="3">MC32</font></p>
 </td>
-<td style="width: 220px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    &nbsp;</font></b></p>
+
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td></tr>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
 
 <tr >
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
 </td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
@@ -127,29 +132,29 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">MC67</font></p>
 </td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
 </td>
 
 <tr >
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">MC92</font></p>
 </td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
@@ -160,14 +165,13 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC51 / TC56</font></p>
 </td>
 
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+<td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 </tr>
@@ -176,55 +180,61 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
 </td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
 </tr>
+
 <tr>
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC70</font></p>
 </td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
-</td>
+
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
 </tr>
+
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC70x</font></p>
 </td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
+
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
 </tr>
+
 <tr>
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC75</font></p>
 </td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 
@@ -232,13 +242,14 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC75x</font></p>
 </td>
-<td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+<td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 </tr>
@@ -247,14 +258,14 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC8000</font></p>
 </td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    *</font></b></p>
-</td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 
@@ -262,32 +273,36 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">WT6000</font></p>
 </td>
-<td style="width: 96px;" >
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="4">
-    &nbsp;</font></b></p>
-</td>
+
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
 </tr>
-
 </tbody>
 </table>
 
 ## New in EHS 2.7
 
 >**This version does not support Android KitKat**. 
-<br>
-EHS 2.7 supports Zebra devices running Android Lollipop and higher only. Zebra continues to support earlier versions of EHS for use on devices running KitKat. To use EHS on a device running KitKat, please [download EHS 2.6](../../ehs/2-6/download) or an earlier version. 
 
-* **Support for TC51, TC56, TC70x, TC75x** Touch Computers running Android Nougat.
-* **Enable/Disable Recent Apps button** on Android Nougat devices. 
-* **Enable/Disable EHS Logging** and set a maximum log file size. 
-* **Battery Health Percentage now displayed** on Battery info and Quick info screens on devices equipped with Zebra Power Precision Plus battery.
-* **Enable/Disable wallpaper stretching** to display an image on the full screen.
+<br>
+
+**EHS 2.7 supports Zebra devices running Android Lollipop and higher only**. Zebra continues to support earlier versions of EHS for use on devices running KitKat. To use EHS on a device running KitKat, please [download EHS 2.6](../../ehs/2-6/download) or an earlier version. 
+
+#### Device Support
+* **Support for TC51, TC56, TC70x, TC75x** Touch Computers running Android Nougat
+
+#### New Features
+* **Enable/Disable Recent Apps button** on Android Nougat devices
+* **Enable/Disable EHS Logging** and set a maximum log file size 
+* **Battery Health Percentage now displayed** on Battery info and Quick info screens on devices equipped with Zebra Power Precision Plus battery
+* **Enable/Disable wallpaper stretching** to display an image on the full screen
 
 -----
 

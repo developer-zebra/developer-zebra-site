@@ -571,7 +571,7 @@ Allows a background image to be specified for display in User Mode. If left unsp
 ------
 
 ### Wallpaper Stretching
-Used to enable/disable the background image for display in User Mode to be stretched to fill the screen. Stretching is disabled by default or if this value is unspecified. See Wallpaper parameter for supported file format and location.  
+Used to enable/disable the background image for display in User Mode to be stretched to fill the screen. Disabled by default. Stretching is disabled if this value is unspecified. **See Wallpaper parameter for supported file format and location**.  
 
 <img alt="" style="height:350px" src="2-7_wallpaper_stretch.png"/>
 

@@ -279,25 +279,15 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ## New in EHS 2.7
 
-EHS support for all KitKat (Android 4.4.2) devices has been terminated - Starting from EHS v2.7, only Lollipop and higher devices are supported. EHS v2.6 is the last version that supports Android KitKat devices. EHS v2.6 and earlier versions are still available on the Support Portal for use on KitKat devices. 
+>**This version does not support Android KitKat**. 
+<br>
+EHS 2.7 supports Zebra devices running Android Lollipop and higher only. Zebra continues to support earlier versions of EHS for use on devices running KitKat. To use EHS on a device running KitKat, please [download EHS 2.6](../../ehs/2-6/download) or an earlier version. 
 
-USE THIS STYLE: 
-
-* **Support for ET50/ET55** tablet computers runing Marshmallow
-
-
-Added support for TC51, TC56, TC70x, TC75x Android Nougat 7.1.2 devices
-
-Removed Support for all KitKat (Android 4.4.2) devices. EHS v2.6 and earlier versions are still available on the Support Portal for use on those devices.
-
-Added a new feature to support enable/disable recent apps button in Android Nougat devices. By default, recent apps button is disabled by EHS in order to disable multi-window mode.
-
-Added a new feature to enable/disable logging in EHS and also an option to set maximum log file size. Once maximum log file size is reached it will be rolled over to a new file.
-
-Added support to display Battery Health Percentage under Battery info and Quick info screens on devices having Power Precision Plus battery type such as TC51 and TC56.
-
-Added a new feature to enable/disable wallpaper stretching to fullscreen. By default stretching is disabled so EHS home screen wallpaper is not extended over the title bar.
-
+* **Support for TC51, TC56, TC70x, TC75x** Touch Computers running Android Nougat.
+* **Enable/Disable Recent Apps button** on Android Nougat devices. 
+* **Enable/Disable EHS Logging** and set a maximum log file size. 
+* **Battery Health Percentage now displayed** on Battery info and Quick info screens on devices equipped with Zebra Power Precision Plus battery.
+* **Enable/Disable wallpaper stretching** to display an image on the full screen.
 
 -----
 
@@ -307,7 +297,7 @@ Added a new feature to enable/disable wallpaper stretching to fullscreen. By def
 
 -----
 
-## New in EHS 2.5
+## Added in EHS 2.5
 
 ### Device Support:
 * [MC32](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3200.html) running Android 5.1.1 Lollipop (see [Android 6.x Marshmallow Notes](#androidmarshmallownotes))
@@ -385,7 +375,7 @@ See the [Advanced Settings](../settings) section for a complete `enterprisehomes
 
 ------
 
-## New in EHS 2.4
+## Added in EHS 2.4
 
 * **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (see [Android Notes](#androidlollipopandmarshmallownotes)) 
 
@@ -413,6 +403,6 @@ _The User Mode screen with XXL icons_. -->
 
 ------
 
-## New in EHS 2.3
+## Added in EHS 2.3
 * [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
 * TC8000 KitKat version 4.4 support (added January, 2016)

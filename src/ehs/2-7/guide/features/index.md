@@ -171,6 +171,10 @@ The log is a plain text file and can be retrieved with ADB or an MDM and viewed 
 _In EHS 2.7 and higher, logging can be disabled through the UI or config file._
 <br>
 
+Added a new feature to enable/disable logging in EHS and also an option to set maximum log file size. Once maximum log file size is reached it will be rolled over to a new file.
+
+
+
 ------
 
 ## EHS File Interactions
@@ -320,6 +324,7 @@ This section covers important interactions between EHS and Android features that
 ### Recent Apps List
 
 * Accessing an app from the Recent Apps list could represent a security risk; apps not cleared from the list can be activated with the BACK button, potentially exposing a non-EHS home screen.
+* On Android Nougat devices, **the Recent Apps button can be Enabled/Disabled**. It is disabled by default to prevent the use of multi-window mode. 
 * EHS does not add apps or activities to the Android Recent Apps list, but apps/activities launched from within EHS might. Such apps/activities could launch others that might appear on the Recent Apps list and pose a security risk.  
 * The Recent Apps list can be cleared on pre-Android L devices by rebooting the device. 
 * Android L devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system to clear the list. 

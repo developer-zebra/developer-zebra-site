@@ -892,6 +892,61 @@ Controls whether full or limited settings are available when the device is in Us
 
 ------
 
+### Recent Apps Button Disabled 
+**Applies only to devices running Android Nougat and higher**. Controls whether the Recent Apps button can be used to potentially launch unaproved apps and/or a non-EHS home screen. Recent apps button is disabled by default on Nougat devices; otherwise ignored. See important [EHS Security Notes](../features/#securitynotes). 
+
+<img alt="" style="height:450px" src="2-7_recent_apps_button.png"/>
+_On devices running Android L and M, Recent apps button Preference is grayed_.
+<br>
+
+<b>Possible values</b>:
+
+* <b>1 (disabled by default)</b>
+* 0 
+
+#### Example
+
+    <recent_apps_button_disabled>1</recent_apps_button_disabled>
+
+------
+
+### Logging Disabled
+
+Controls logging of EHS activities, failures and security events. These include failed attempts to enter Admin Mode, switches of the operating mode and all EHS errors. Enabled by default. Logs are stored in the `/enterprise/usr/enterprisehomescreen.log` file as plain text file that can be retrieved with ADB or an MDM and viewed with any text editor. 
+
+<img alt="" style="height:450px" src="2-7_logging_disabled.png"/>
+
+<b>Possible values</b>:
+
+* 1 
+* <b>0 (logging is enabled by default)</b>
+
+#### Example
+
+    <logging>
+        <logging_disabled>0</logging_disabled>
+    </logging>
+
+------
+
+### Log File Max Size
+Permits a maximum size (in MB) to be specified for the EHS log file. When the maximum file size is reached, the current log is renamed to `enterprisehomescreen.log.bak` (overwriting the existing .bak file, if any) and a new `enterprisehomescreen.log` file is created. **This effectively doubles the storage requirement of the specified maximum since two log files of maximum size will be present at certain times**. 
+
+<img alt="" style="height:450px" src="2-7_logging_file_size.png"/>
+
+<b>Possible values</b>:
+
+* Integer from 1-99999 
+* Default = 10 (MB)
+
+#### Example
+
+    <logging>
+        <log_file_max_size>10</log_file_max_size>
+    </logging>
+
+------
+
 ## Optional Feature Tags
 This section covers optional features and tags not included in the `enterprisehomescreen.xml` file by default. These tags are added by EHS for enabled options or can be added as needed by an administrator.
 

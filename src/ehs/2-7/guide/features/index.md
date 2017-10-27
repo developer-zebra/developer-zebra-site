@@ -163,17 +163,13 @@ Log into Admin Mode and delete the signature file from the `/enterprise/usr` dir
 
 ## EHS Log
 
-EHS records all major activities, failures and security events in the `/enterprise/usr/enterprisehomescreen.log` file. These include failed attempts to enter Admin Mode, switches of the operating mode and all EHS errors.
+EHS records all major activities, failures and security events in the `/enterprise/usr/enterprisehomescreen.log` file. These include failed attempts to enter Admin Mode, switches of the operating mode and all EHS errors. The log is a plain text file and can be retrieved with ADB or an MDM and viewed with any text editor.  
 
-The log is a plain text file and can be retrieved with ADB or an MDM and viewed with any text editor.  
+For more information about logging, see [Logging Preferences](../settings/#loggingdisabled). 
 
-<img alt="" style="height:250px" src="2-7_logging_disabled.png"/>
+<img alt="" style="height:450px" src="2-7_logging_disabled.png"/>
 _In EHS 2.7 and higher, logging can be disabled through the UI or config file._
 <br>
-
-Added a new feature to enable/disable logging in EHS and also an option to set maximum log file size. Once maximum log file size is reached it will be rolled over to a new file.
-
-
 
 ------
 

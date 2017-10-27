@@ -567,13 +567,14 @@ Allows a background image to be specified for display in User Mode. If left unsp
 #### Example
 
     <wallpaper>/enterprise/usr/mybackground.png</wallpaper>
+
+<!--
     
 ------
 
 ### Wallpaper Stretching
 Used to enable/disable the background image for display in User Mode to be stretched to fill the screen. If left unspecified, stretching is disabled. 
 
-<!--
 PUT IN SECTION ABOVE:  
 <img alt="" style="height:350px" src="2-7_wallpaper.png"/>
 

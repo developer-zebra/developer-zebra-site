@@ -2,7 +2,7 @@
 title: Download Enterprise Home Screen
 layout: guide.html
 product: Enterprise Home Screen
-productversion: '2.6'
+productversion: '2.7'
 ---
 
 ## Download EHS

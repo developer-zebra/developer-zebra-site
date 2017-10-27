@@ -167,10 +167,9 @@ EHS records all major activities, failures and security events in the `/enterpri
 
 The log is a plain text file and can be retrieved with ADB or an MDM and viewed with any text editor.  
 
-<!--
 <img alt="" style="height:250px" src="2-7_logging_disabled.png"/>
+_In EHS 2.7 and higher, logging can be disabled through the UI or config file._
 <br>
--->
 
 ------
 

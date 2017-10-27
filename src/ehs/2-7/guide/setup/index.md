@@ -16,7 +16,7 @@ Many of the capabilities of EHS can be accomplished manually on the device, prog
 -----
 
 ## Manual Installation
-These instructions apply to direct installation (from a computer to a single device) using the `EHS_0206xx.apk` EHS 2.6 installer file.  
+These instructions apply to direct installation (from a computer to a single device) using the `EHS_0207xx.apk` EHS 2.7 installer file.  
 
 Read about how to [uninstall EHS](#uninstallation) later in this guide. 
 

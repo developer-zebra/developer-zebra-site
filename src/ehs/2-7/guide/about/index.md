@@ -14,7 +14,7 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 
 _Enterprise Home Screen does not support localization_. 
 
-**[What's New in EHS 2.6](#newinehs26)**
+**[What's New in EHS 2.7](#newinehs27)**
 
 ------
 
@@ -35,7 +35,7 @@ Administrators can grant or restrict access to individual features or hide the s
 
 > **Note: After selecting "Always," some devices require a 10-second pause before restarting to ensure the change remains persistent**. 
 
-Ready to get started? [Download Enterprise Home Screen 2.6](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
+Ready to get started? [Download Enterprise Home Screen 2.7](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
 
 -----
 
@@ -277,7 +277,31 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </tbody>
 </table>
 
-## New in EHS 2.6
+## New in EHS 2.7
+
+EHS support for all KitKat (Android 4.4.2) devices has been terminated - Starting from EHS v2.7, only Lollipop and higher devices are supported. EHS v2.6 is the last version that supports Android KitKat devices. EHS v2.6 and earlier versions are still available on the Support Portal for use on KitKat devices. 
+
+USE THIS STYLE: 
+
+* **Support for ET50/ET55** tablet computers runing Marshmallow
+
+
+Added support for TC51, TC56, TC70x, TC75x Android Nougat 7.1.2 devices
+
+Removed Support for all KitKat (Android 4.4.2) devices. EHS v2.6 and earlier versions are still available on the Support Portal for use on those devices.
+
+Added a new feature to support enable/disable recent apps button in Android Nougat devices. By default, recent apps button is disabled by EHS in order to disable multi-window mode.
+
+Added a new feature to enable/disable logging in EHS and also an option to set maximum log file size. Once maximum log file size is reached it will be rolled over to a new file.
+
+Added support to display Battery Health Percentage under Battery info and Quick info screens on devices having Power Precision Plus battery type such as TC51 and TC56.
+
+Added a new feature to enable/disable wallpaper stretching to fullscreen. By default stretching is disabled so EHS home screen wallpaper is not extended over the title bar.
+
+
+-----
+
+## Added in EHS 2.6
 
 * **Support for ET50/ET55** tablet computers runing Marshmallow
 

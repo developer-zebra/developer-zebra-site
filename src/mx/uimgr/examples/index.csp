@@ -207,15 +207,13 @@ order: 99
         </characteristic>
     </wap-provisioningdoc>
 
-<!-- (not validated)
 #### Output (button enabled)
 
     <wap-provisioningdoc>
         <characteristic type="UiMgr" version="7.1" >
-            <parm-query name="RecentAppButtonUsage" value="1"/>
+            <parm name="RecentAppButtonUsage" value="1"/>
         </characteristic>
     </wap-provisioningdoc>
--->
 
 ### Enable Navigation Bar
 
@@ -235,7 +233,6 @@ order: 99
         </characteristic>
     </wap-provisioningdoc>
 
-<!-- (not validated)
 #### Output (Navigation Bar enabled)
 
     <wap-provisioningdoc>
@@ -243,4 +240,3 @@ order: 99
             <parm name="RecentAppButtonUsage" value="1"/>
         </characteristic>
     </wap-provisioningdoc>
--->

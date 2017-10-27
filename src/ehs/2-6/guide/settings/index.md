@@ -568,29 +568,6 @@ Allows a background image to be specified for display in User Mode. If left unsp
 
     <wallpaper>/enterprise/usr/mybackground.png</wallpaper>
 
-<!--
-    
-------
-
-### Wallpaper Stretching
-Used to enable/disable the background image for display in User Mode to be stretched to fill the screen. If left unspecified, stretching is disabled. 
-
-PUT IN SECTION ABOVE:  
-<img alt="" style="height:350px" src="2-7_wallpaper.png"/>
-
-<img alt="" style="height:350px" src="2-7_wallpaper_stretch.png"/>
-
-<b>Possible values</b>:
-
-* 1 (stretching enabled)
-* <b>0 (default)</b>
-
-#### Example
-
-    <wallpaperstretching>/enterprise/usr/mybackground.png</wallpaperstretching>
-
--->
-
 ------
 
 ### Fullscreen

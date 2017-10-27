@@ -291,7 +291,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 >**This version does not support Android KitKat**. 
 
-**EHS 2.7 supports Zebra devices running Android Lollipop and higher only**. Zebra continues to support earlier versions of EHS for use on devices running KitKat. To use EHS on a device running KitKat, please [download EHS 2.6](../../ehs/2-6/download) or an earlier version. 
+**EHS 2.7 supports Zebra devices running Android Lollipop and higher only**. Zebra continues to support earlier versions of EHS for use on devices running KitKat. To use EHS on a device running KitKat, please [download EHS 2.6](/ehs/2-6/download) or an earlier version. 
 
 #### Device Support
 * **Support for TC51, TC56, TC70x, TC75x** Touch Computers running Android Nougat

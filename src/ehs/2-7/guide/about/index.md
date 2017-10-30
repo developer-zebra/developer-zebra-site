@@ -314,7 +314,7 @@ _**Stretching enabled** with custom wallpaper image_:
 -----
 
 ### Android Nougat Notes
-**_Applies to devices running Android Nougat 7.1 and higher_**:
+**_Applies to devices running Android Nougat 7.x and higher_**:
 
 * **Manual push is no longer supported**. To deploy files to the device, use [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android) Profile Manager. 
 

@@ -958,7 +958,7 @@ Controls whether full or limited settings are available when the device is in Us
 >This setting persists after EHS is removed.
 
 <img alt="" style="height:450px" src="2-7_recent_apps_button.png"/>
-_Recent apps button cannot be disabled on devices running Android L or M (shown),_.
+_Recent apps button cannot be disabled on devices running Android L or M (shown)_.
 <br>
 
 <b>Possible values</b>:

@@ -330,13 +330,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 * **If Wi-Fi is disabled** on a Marshmallow device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS.
 
------
-
-### Android KitKat Notes 
-**_Applies to devices running Android 4.4+ KitKat only_**:
-
-* **When starting up in Kiosk Mode on a device running KitKat**, a "please wait" prompt remains displayed. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
-
 ------
 
 ### ET50/ET55 Device Notes

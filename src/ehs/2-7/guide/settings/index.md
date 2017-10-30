@@ -404,7 +404,10 @@ Specifies the title bar text for the EHS app. The default title "Enterprise Home
 
 #### Example
 
-    <title>MetaCorp Home Screen</title>
+    <preferences>
+        <title>MetaCorp Home Screen</title>
+    </preferences>
+
 
 ------
 
@@ -420,12 +423,12 @@ Controls whether an icon will be displayed in the Title Bar. **A value of 0 (fal
 
 #### Example
     <preferences>
-    ...
         <title_bar_icon>
             <title_bar_icon_disabled>0</title_bar_icon_disabled>
             <title_bar_icon_file>/storage/sdcard0/Android/data/com.symbol.enterprisehomescreen/files/title.jpg</title_bar_icon_file > 
         </title_bar_icon >
-    ...
+    </preferences>
+
 
 ------
 
@@ -440,10 +443,13 @@ Allows an image to be specified for display in the EHS Title Bar. **Supports .bm
 
 #### Example
 
-    <title_bar_icon>
-        <title_bar_icon_disabled>0</title_bar_icon_disabled>
-        <title_bar_icon_file>/storage/sdcard0/Android/data/com.symbol.enterprisehomescreen/files/title.jpg</title_bar_icon_file > 
-    </title_bar_icon >
+    <preferences>
+        <title_bar_icon>
+            <title_bar_icon_disabled>0</title_bar_icon_disabled>
+            <title_bar_icon_file>/storage/sdcard0/Android/data/com.symbol.enterprisehomescreen/files/title.jpg</title_bar_icon_file > 
+        </title_bar_icon >
+    </preferences>
+
 
 ------
 
@@ -467,10 +473,12 @@ Specifies the background color of the icon label text of applications displayed 
 
 #### Examples
 
-    <icon_label_background_color>#00FFFFFF</icon_label_background_color>
-    <icon_label_background_color>#75A319</icon_label_background_color>
-    <icon_label_background_color>#80EF671B</icon_label_background_color>
-    <icon_label_background_color>magenta</icon_label_background_color>
+    <preferences>
+        <icon_label_background_color>#00FFFFFF</icon_label_background_color>
+        <icon_label_background_color>#75A319</icon_label_background_color>
+        <icon_label_background_color>#80EF671B</icon_label_background_color>
+        <icon_label_background_color>magenta</icon_label_background_color>
+    </preferences>
 
 
 ------
@@ -495,10 +503,14 @@ Specifies the color of the icon label text of applications displayed in User Mod
 
 #### Examples
 
-    <icon_label_text_color>#FFFFFFFF</icon_label_text_color>
-    <icon_label_text_color>#75A319</icon_label_text_color>
-    <icon_label_text_color>#80EF671B</icon_label_text_color>
-    <icon_label_text_color>magenta</icon_label_text_color>
+
+    <preferences>
+        <icon_label_text_color>#FFFFFFFF</icon_label_text_color>
+        <icon_label_text_color>#75A319</icon_label_text_color>
+        <icon_label_text_color>#80EF671B</icon_label_text_color>
+        <icon_label_text_color>magenta</icon_label_text_color>
+    </preferences>
+
 
 ------
 
@@ -518,7 +530,9 @@ Allows the screen orientation to be fixed in landscape or portrait mode. Omittin
 
 #### Example
 
-    <orientation></orientation>
+    <preferences>
+        <orientation></orientation>
+    </preferences>
     
 ------
 
@@ -534,8 +548,11 @@ Enables one or more apps to be automatically launched after EHS starts up. Works
 
 #### Example
 
-    <service_auto_launch_enable>0</service_auto_launch_enable>
-    
+
+    <preferences>
+        <service_auto_launch_enable>0</service_auto_launch_enable>
+    </preferences>
+
 
 ------
 
@@ -551,7 +568,9 @@ Enables one or more services to be automatically launched after EHS starts up. W
 
 #### Example
 
-    <service_auto_launch_enable>1</service_auto_launch_enable>
+    <preferences>
+        <service_auto_launch_enable>1</service_auto_launch_enable>
+    </preferences>
 
 ------
 
@@ -566,7 +585,10 @@ Allows a background image to be specified for display in User Mode. If left unsp
 
 #### Example
 
-    <wallpaper>/enterprise/usr/mybackground.png</wallpaper>
+    <preferences>
+        <wallpaper>/enterprise/usr/mybackground.png</wallpaper>
+    </preferences>
+
 
 ------
 
@@ -582,7 +604,9 @@ Used to enable/disable the background image for display in User Mode to be stret
 
 #### Example
 
-    <wallpaperstretching>/enterprise/usr/mybackground.png</wallpaperstretching>
+    <preferences>
+          <wallpaper_stretching_enabled >0</wallpaper_stretching_enabled >
+    </preferences>
 
 ------
 

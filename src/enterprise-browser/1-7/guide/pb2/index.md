@@ -237,7 +237,7 @@ Optionally, an edited file can be placed in both directories, with changes takin
 
 -----
 
-**Related Guides**: 
+**Related**: 
 * **[RhoElements Migration Guide](../elements)**
 * **[RhoMobile Migration guide](../rhomobile)**
 * **[Optimization Guide](../optimization) -** for help minimizing device memory footprint

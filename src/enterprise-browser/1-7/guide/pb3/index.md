@@ -208,9 +208,8 @@ This section provides remarks on peculiarities or dependencies concerning specif
 
 -----
 
-**Related Guides**: 
+**Related**: 
 * **[PocketBrowser 2.x Migration Guide](../pb2/)** 
-**Related Guides**: 
 * **[RhoElements Migration Guide](../elements)**
 * **[RhoMobile Migration guide](../rhomobile)**
 * **[Optimization Guide](../optimization) -** for help minimizing device memory footprint

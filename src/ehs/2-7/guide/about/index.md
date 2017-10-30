@@ -306,10 +306,28 @@ _EHS with default wallpaper_:
 <img style="height:250px" src="default_wallpaper.png"/>
 
 _**Stretching disabled** (default) with custom wallpaper image_:
-<img style="height:300px" src="default_no_stretching.png"/>
+<img style="height:275px" src="default_no_stretching.png"/>
 
 _**Stretching enabled** with custom wallpaper image_:
 <img style="height:250px" src="with_stretching.png"/>
+
+-----
+
+### Android Nougat Notes
+**_Applies to devices running Android Nougat 7.1 and higher_**:
+
+* **Manual push is no longer supported**. To deploy files to the device, use [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android) Profile Manager. 
+
+-----
+
+### Android Marshmallow Notes
+**_Apply to devices running Android 6.x Marshmallow only_**:
+
+* **Selecting EHS as the default launcher will not be permanent** after a reboot on some devices if the selection was made while in User Mode. <img style="height:100px" src="homePrompt.png"/> **To avoid this issue, switch to Admin Mode** and press the HOME button; the "Select a home app" pop-up appears. **Select EHS and tap "Always"** to make the selection permanent.
+
+* **If Location Permission is revoked** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented under "Scan Results" in the "Wireless info" screen in EHS. Enabled by default, Location Permission is accessed in **Settings -> Apps -> EHS -> Permissions**. 
+
+* **If Wi-Fi is disabled** on a Marshmallow device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS.
 
 -----
 
@@ -327,17 +345,6 @@ _**Stretching enabled** with custom wallpaper image_:
 * **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after an Android L device is rebooted**. This feature works normally on devices running KitKat and Jelly Bean. 
 
 * **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
-
------
-
-### Android Marshmallow Notes
-**_Apply to devices running Android 6.x Marshmallow only_**:
-
-* **Selecting EHS as the default launcher will not be permanent** after a reboot on some devices if the selection was made while in User Mode. <img style="height:100px" src="homePrompt.png"/> **To avoid this issue, switch to Admin Mode** and press the HOME button; the "Select a home app" pop-up appears. **Select EHS and tap "Always"** to make the selection permanent.
-
-* **If Location Permission is revoked** on a device running Android 6.0 Marshmallow, a blank list of available access points will be presented under "Scan Results" in the "Wireless info" screen in EHS. Enabled by default, Location Permission is accessed in **Settings -> Apps -> EHS -> Permissions**. 
-
-* **If Wi-Fi is disabled** on a Marshmallow device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS.
 
 ------
 

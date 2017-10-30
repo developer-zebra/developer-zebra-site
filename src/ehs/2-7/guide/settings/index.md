@@ -757,7 +757,7 @@ Controls whether the Keyguard screen (also known as the "Lock Screen") is displa
 
 * **On devices running Android L**, the Bypass Keyguard feature fails to unlock the screen after rebooting the device.
 
-* **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent the multi-user login screen from being displayed**. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
+* **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent dusplay of the multi-user login screen. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
 <img alt="" style="height:350px" src="keyguard.png"/>
 _The Android Keyguard (also known as the Lock Screen)_.
@@ -832,7 +832,6 @@ To permit access to the camera app only after the device has been unlocked, set 
 
 **To allow access to camera app <u>only after device is unlocked</u>**: 
 
-
     :::xml
     <keyguard_camera_disabled>1</keyguard_camera_disabled>
     <bypass_keyguard>1</bypass_keyguard>
@@ -861,6 +860,8 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 **To prevent use of search, Zebra recommends using this tag _and_ removing the search app from the User Mode screen**. 
 
+**Note**: Disabling access to the search app from the lock screen also disables it from the User-Mode screen on some devices, even if search is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for working around this. See User-Mode Search Usage section below. 
+
 <img alt="" style="height:350px" src="search_disable.png"/>
 
 <b>Possible values</b>:
@@ -872,6 +873,42 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
     <keyguard_search_disabled>1</keyguard_search_disabled>
     
+#### User-Mode Search Usage
+
+On some devices, disabling access to the search app from the lock screen also disables it from the User-Mode screen, even if search usage is permitted on the device. This occurs if the device is rebooted from the lock screen; there are two options for preventing it. 
+
+##### Option 1: Allow access to search app from lock screen
+If users are permitted to access the search app from User Mode, some organizations also might permit access directly from the lock screen without having to unlock the device. For such cases, modify the `enterprisehomescreen.xml` file as below. 
+
+**To allow access to search app from lock screen**: 
+
+    :::xml
+    // Allow search access: 
+
+    <keyguard_search_disabled>0</keyguard_search_disabled>
+
+    // Display lock screen:
+    
+    <bypass_keyguard>1</bypass_keyguard>
+
+-----
+
+##### Option 2: Add search app to 'enabled' list
+
+To permit access to the search app only after the device has been unlocked, set the &lt;keyguard_search_disabled&gt; value to "1" and add the package name of the search app to the (optional) &lt;apps_enabled&gt; list in the `enterprisehomescreen.xml` file as below. **If no such tag exists in the file for this optional parameter, see** [Enable/Disable Apps](#enabledisableapps) **for help adding it**. 
+
+**To allow access to search app <u>only after device is unlocked</u>**: 
+
+    :::xml
+    <keyguard_search_disabled>1</keyguard_search_disabled>
+    <bypass_keyguard>1</bypass_keyguard>
+    ...
+    <apps_enabled>
+    ...
+    <application package="search.app.package.name"/> // i.e. "com.android.search"
+    ...
+    </apps_enabled>
+
 ------
 
 ### USB Debugging Disabled

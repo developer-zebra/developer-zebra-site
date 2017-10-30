@@ -917,10 +917,12 @@ Controls whether full or limited settings are available when the device is in Us
 ------
 
 ### Recent Apps Button Disabled 
-**Applies only to devices running Android Nougat and higher**. Controls whether the Recent Apps button can be used to potentially launch unaproved apps and/or a non-EHS home screen. Recent apps button is disabled by default on Nougat devices; otherwise ignored. See important [EHS Security Notes](../features/#securitynotes). 
+**Applies only to devices running Android Nougat and higher**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Nougat devices only; otherwise enabled**. Default value will be used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
+
+>This setting persists after EHS is removed.
 
 <img alt="" style="height:450px" src="2-7_recent_apps_button.png"/>
-_On devices running Android L and M, Recent apps button Preference is grayed_.
+_Recent apps button cannot be disabled on devices running Android L or M (shown),_.
 <br>
 
 <b>Possible values</b>:
@@ -930,7 +932,10 @@ _On devices running Android L and M, Recent apps button Preference is grayed_.
 
 #### Example
 
-    <recent_apps_button_disabled>1</recent_apps_button_disabled>
+    <preferences>
+          <Recent_apps_button_disabled>1</Recent_apps_button_disabled>
+    </preferences>
+
 
 ------
 

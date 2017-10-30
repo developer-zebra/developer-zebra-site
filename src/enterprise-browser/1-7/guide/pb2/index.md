@@ -241,10 +241,13 @@ Optionally, an edited file can be placed in both directories, with changes takin
 * **[RhoElements Migration Guide](../elements)**
 * **[RhoMobile Migration guide](../rhomobile)**
 * **[Optimization Guide](../optimization) -** for help minimizing device memory footprint
+* **[PocketBrowser 3.x download and release notes](https://www.zebra.com/us/en/support-downloads/software/utilities/pocketbrowser.html)**
+* **[Enterprise Browser Config.xml Reference](../configreference) -** for more information about settings, parameters and other requirements.
 
+<!--
 * **[PocketBrowser 2.x online docs](http://goo.gl/H1Fuik)**
 * **[PocketBrowser 3.x online docs](http://goo.gl/H8G4IW)** 
+-->
 
-* **[Enterprise Browser Config.xml Reference](../configreference) -** for more information about settings, parameters and other requirements.
 
 

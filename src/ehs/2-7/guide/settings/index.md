@@ -904,10 +904,9 @@ To permit access to the search app only after the device has been unlocked, set 
     <bypass_keyguard>1</bypass_keyguard>
     ...
     <apps_enabled>
-    ...
-    <application package="search.app.package.name"/> // i.e. "com.android.search"
-    ...
+        <application package="search.app.package.name"/> // i.e. "com.android.search"
     </apps_enabled>
+    
 
 ------
 

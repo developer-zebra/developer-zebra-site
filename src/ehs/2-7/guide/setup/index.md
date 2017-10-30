@@ -22,7 +22,7 @@ These instructions apply to direct installation (from a computer to a single dev
 
 Read about how to [uninstall EHS](#uninstallation) later in this guide. 
 
-**To install EHS manually**: 
+**To install EHS manually** (pre-Android N devices): 
 
 &#49;. <b>Connect the device</b> via USB to a PC or Mac.
 

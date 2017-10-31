@@ -71,7 +71,8 @@
                                                                 {{else}}
                                                                     {{#if this.osx-specific-list}}{{this.osx-specific-list}} 
                                                                     ONLY
-                                                                    {{else}}N/A
+                                                                    {{else}}
+                                                                    N/A
                                                                     {{/if}}
                                                                 {{/if}}
                                                             {{/if}}
@@ -100,7 +101,8 @@
                                                                 {{#is this.devicetype "A,B" }}
                                                                     All
                                                                 {{else}}
-                                                                    {{this.devicetype}}
+                                                                    <!-- {{this.devicetype}} -->
+                                                                    Non-TC2x
                                                                 {{/is}}
                                                             {{else}}
                                                                 All
@@ -151,7 +153,8 @@
                                                                 {{#is this.devicetype "A,B" }}
                                                                     All
                                                                 {{else}}
-                                                                    {{this.devicetype}}
+                                                                    <!-- {{this.devicetype}} -->
+                                                                    Non-TC2x
                                                                 {{/is}}
                                                             {{else}}
                                                                 All

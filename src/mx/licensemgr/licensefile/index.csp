@@ -1,13 +1,13 @@
 ---
 csp: licensemgr
-title: License File
+title: License File 'Blob'
 type: parm
 order: 30
 mx: "4.3"
 devicetype: A
 parm:
   pivotal: No
-  presentif: The "Specify license action to perform" is "Apply" AND "Specify licensing method" is "Embed the license blob from the license file into the XML" AND
+  presentif: The License Method is "Embed the license blob from the license file into the XML" AND License Choice is "Perform legacy Symbol license action" 
   name: LicenseBlob
   type: string
 ---

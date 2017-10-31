@@ -1,14 +1,14 @@
 ---
-csp: LicensePathAndFileName
+csp: LicenseMgr
 title: License File Path
 type: parm
-order: 8
+order: 31
 mx: "4.3"
 devicetype: A
 parm:
   pivotal: No
   presentif:  The "Specify license action to perform" is "Apply" *AND* "Specify licensing method" is "Reference a license file already on the mobile device"
-  name: LicenseBlob
+  name: LicensePathAndFileName
   type: string
 ---
 

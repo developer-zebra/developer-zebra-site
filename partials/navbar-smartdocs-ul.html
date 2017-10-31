@@ -366,14 +366,14 @@
         $('html, body').animate({
               scrollTop: target.offset().top - 220
           }, 1000);
-          
+
+    //Pre-select an item on the list (0, 1, 2...) after the page loads 
+    $(".smartdocs-devicetype")[0].click();
+    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
+        console.log('pre-selecting an item');      
 
       }
     }
-
-    $(".smartdocs-devicetype")[0].click();
-    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
-         console.log('pre-selecting an item');
     
 
 // AFTER THE DOCUMENT HAS BEEN LOADED
@@ -384,7 +384,16 @@
     //Pre-select an item on the list (0, 1, 2...) after the page loads
     $(".smartdocs-devicetype")[0].click();
     //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
-         console.log('pre-selecting an item');
+        console.log('pre-selecting devicetype');
+    $(".smartdocs-devicetype")[0].click();
+    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
+        console.log('pre-selecting devicetype');
+    $(".smartdocs-devicetype")[0].click();
+    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
+        console.log('pre-selecting devicetype');
+    $(".smartdocs-devicetype")[0].click();
+    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
+        console.log('pre-selecting devicetype');
 
     //
     $( "#smartdocs-help" ).click(function() {
@@ -428,6 +437,10 @@
           clear('all');       
           
         }
+   $(".smartdocs-devicetype")[0].click();
+    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
+        console.log('pre-selecting after the smartdocs menu is drawn');
+
     });
     $( "#smartdocs-next" ).click(function() {
       gotoNextAvailable();

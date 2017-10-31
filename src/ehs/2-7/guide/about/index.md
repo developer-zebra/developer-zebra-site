@@ -300,16 +300,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * [Enable/Disable Recent Apps button]() on Android Nougat devices
 * [Enable/Disable EHS Logging](../features/#ehslog) and set a maximum log file size 
 * [Battery Health Percentage now displayed](../setup/#batteryandwifiquickview) on Battery info and Quick info screens on devices equipped with Zebra Power Precision Plus battery
-* [Enable/Disable wallpaper stretching](../settings/#wallpaperstretching) to expand an image to fill the device screen:
-
-_EHS with default wallpaper_:
-<img style="height:250px" src="default_wallpaper.png"/>
-
-_**Stretching disabled** (default) with custom wallpaper image_:
-<img style="height:275px" src="default_no_stretching.png"/>
-
-_**Stretching enabled** with custom wallpaper image_:
-<img style="height:250px" src="with_stretching.png"/>
+* [Enable/Disable wallpaper stretching](../settings/#wallpaperstretching) to expand an image to fill the device screen. 
 
 -----
 

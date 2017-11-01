@@ -370,31 +370,34 @@
     //Pre-select an item on the list (0, 1, 2...) after the page loads 
     $(".smartdocs-devicetype")[0].click();
     //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
-        console.log('pre-selecting an item');      
+    console.log('pre-selecting devicetype before "ready" function');      
 
       }
     }
     
 
-// AFTER THE DOCUMENT HAS BEEN LOADED
-// AND IS READY FOR USER INTERACTION
+/*  PERFORM THE FOLLOWING AFTER THE 
+    DOCUMENT HAS BEEN LOADED AND IS 
+    READY FOR USER INTERACTION */
     
     $(document).ready(function() {
 
-    //Pre-select an item on the list (0, 1, 2...) after the page loads
-    $(".smartdocs-devicetype")[0].click();
-    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
-        console.log('pre-selecting devicetype');
-    $(".smartdocs-devicetype")[0].click();
-    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
-        console.log('pre-selecting devicetype');
-    $(".smartdocs-devicetype")[0].click();
-    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
-        console.log('pre-selecting devicetype');
-    $(".smartdocs-devicetype")[0].click();
-    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
-        console.log('pre-selecting devicetype');
+    /* Delay while page loads
+    function delay(time) {
+      var d1 = new Date();
+      var d2 = new Date();
+      while (d2.valueOf() < d1.valueOf() + time) {
+      d2 = new Date();
+      }
+    } */
 
+      var myVariable = 'Select a Model from the SmartDocs bar';
+      window.alert(myVariable);
+
+    // Pre-select an item on the list (0, 1, 2...) after the page loads
+    $(".smartdocs-devicetype")[0].click();
+    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
+        console.log('pre-selecting devicetype');
     //
     $( "#smartdocs-help" ).click(function() {
         console.log('Show SmartDocs help');

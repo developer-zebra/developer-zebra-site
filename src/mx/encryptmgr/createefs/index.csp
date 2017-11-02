@@ -25,7 +25,7 @@ parm:
       description: This value will cause an Encrypted File System to be created.
 ---
 
-Used to choose whether or not to create an Encrypted File System on the device.
+Used to choose whether to create an Encrypted File System on the device.
 
 >**Note:** The process of Creating an Encrypted File System takes time since it must create the Backing Storage File and mount the EFS on its designated Mount Point. As a result, applications will not be able to access an EFS via its Mount Point until it is successfully mounted. Further, an EFS could later be un-mounted if the Key Name it is using is Removed from the Key Storage Database. Applications that use an EFS should thus include error handling logic that can deal with situations where the EFS is not mounted and hence cannot be accessed.
 

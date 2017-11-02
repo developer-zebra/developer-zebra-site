@@ -99,10 +99,10 @@
                                                       <td class="col-md-2">
                                                             {{#if this.devicetype}}
                                                                 {{#is this.devicetype "A,B" }}
-                                                                    All
+                                                                    TC2x, All
                                                                 {{else}}
                                                                     <!-- {{this.devicetype}} -->
-                                                                    Non-TC2x
+                                                                    All except TC2x
                                                                 {{/is}}
                                                             {{else}}
                                                                 All
@@ -124,7 +124,8 @@
                                                                 {{else}}
                                                                     {{#if this.osx-specific-list}}{{this.osx-specific-list}} 
                                                                     ONLY
-                                                                    {{else}}N/A
+                                                                    {{else}}
+                                                                    N/A
                                                                     {{/if}}
                                                                 {{/if}}
                                                             {{/if}}

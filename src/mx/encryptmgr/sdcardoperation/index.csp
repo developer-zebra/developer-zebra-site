@@ -1,6 +1,6 @@
 ---
 csp: encryptmgr
-title: SDcard Operation
+title: SD Card Operation
 type: parm
 order: 14
 mx: "4.3"

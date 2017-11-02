@@ -1,6 +1,6 @@
 ---
 csp: encryptmgr
-title: EFS Location (internal/SDcard)
+title: EFS Location
 type: parm
 order: 10
 mx: "4.3"

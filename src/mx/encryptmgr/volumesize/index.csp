@@ -1,6 +1,6 @@
 ---
 csp: encryptmgr
-title: Size of EFS in MB
+title: EFS Size
 type: parm
 order: 11
 mx: "4.3"

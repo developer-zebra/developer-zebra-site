@@ -1,6 +1,6 @@
 ---
 csp: encryptmgr
-title: Mount path for EFS
+title: EFS Mount Path
 type: parm
 order: 11
 mx: "4.3"

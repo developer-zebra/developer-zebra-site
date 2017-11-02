@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-This parm allows you to specify the size of the Backing Storage File in Megabytes (MB) for the Encrypted File System to be Created.
+Used to specify the size of the Backing Storage File in Megabytes (MB) for the Encrypted File System to be Created.
 
 Parm value input rules: 
 

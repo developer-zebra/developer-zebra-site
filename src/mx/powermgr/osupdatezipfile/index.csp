@@ -33,6 +33,11 @@ For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101
 * The .upl file and all referenced .zip files must be **in the same device folder**. 
 * The folder used for storing file(s) must be a supported location according to the  Android Location Rules and Device Location Rules below. 
 * **Location rules and characteristics vary by device**. 
+* **The following devices are not supported**:
+ * **TC70 KitKat**
+ * **TC70 Lollipop**
+ * **TC75 KitKat**
+ * **TC75 Lollipop**
 
 ### Android Location Rules
 

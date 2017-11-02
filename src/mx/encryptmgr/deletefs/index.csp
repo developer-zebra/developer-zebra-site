@@ -25,4 +25,4 @@ parm:
       description: This value will cause an Encrypted File System to be Deleted.
 ---
 
-This parm allows you to choose whether or not to Delete an Encrypted File System.
+Used to choose whether or not to Delete an Encrypted File System.

@@ -31,7 +31,7 @@ parm:
       description: This value will cause Full Storage Card Encryption to be deactivated, thus causing the Storage Card to be reformatted as unencrypted.
 ---
 
-This parm allows you to choose whether Full Storage Card Encryption should be activated or deactivated.
+Used to choose whether Full Storage Card Encryption should be activated or deactivated.
 
 An attempt to Activate or Deactivate Full Storage Card Encryption may fail for various reasons, including:
 

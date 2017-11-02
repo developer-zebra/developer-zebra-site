@@ -25,7 +25,7 @@ parm:
       description: This value will cause an Encryption Key to be Removed from the Key Storage Database.
 ---
 
-This parm allows you to choose whether or not to Remove a Named Key from the Key Storage Database.
+Used to choose whether or not to Remove a Named Key from the Key Storage Database.
 
 >**Note:** If an attempt is made to Remove a Named Key that is not currently in the Key Storage Database, then an error will be returned in the Result XML.
 

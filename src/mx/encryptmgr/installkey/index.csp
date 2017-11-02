@@ -25,7 +25,7 @@ parm:
       description: This value will cause a Named Key, along with an associated Key Value, to be added to the Key Storage Database.
 ---
 
-This parm allows you to choose whether or not to Add a Named Key to the Key Storage Database on the device.
+Used to choose whether or not to Add a Named Key to the Key Storage Database on the device.
 
 >**Note:** Only one Encrypted File System can be mounted at a time using a given Mount Point. If an attempt to create an EFS with a Mount Point that is already in used by a mounted EFS, the new EFS will be created, but will not be mounted.
 

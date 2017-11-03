@@ -1,0 +1,20 @@
+---
+csp: licensemgr
+title: Activation ID Return
+type: parm
+order: 5
+mx: "7.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: The License Action Zebra is "Return AID" and License Choice is "Perform Zebra Action"
+  name: ActivationIDReturn
+  type: string
+---
+
+Used to manually specify the 39-character code provided by the Zebra licensing system for revoking a license on the device. Revoked license are returned to the organization for assignment elsewhere.   
+
+**Parm value input rules**: 
+
+* String containing the 39-character license code 
+* Must contain at least one character

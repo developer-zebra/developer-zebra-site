@@ -74,3 +74,23 @@ The query below applies only to Software Licenses for the SimulScan Software Com
 				<characteristic-error type="ExistingLicense" desc="Feature is not licensed" />
 			</characteristic>
 		</wap-provisioningdoc>
+
+### Perform Activation ID Action
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="LicenseMgr" version="5.1" >
+			<parm name="LicenseChoice" value="zebra"/>
+			<characteristic type="LicenseZebra">
+				<parm name="LicenseActionZebra" value="activate"/>
+				<characteristic type="NewLicenseZebra">
+					<characteristic type="LicenseSourceURL">
+						<parm name="LicenseSource" value="fno_cloud_uat"/>
+					</characteristic>
+					<parm name="ActivationID" value="9f55-3413-9430-45de-b8ff-0fa2-b75d-203b"/>
+					<parm name="ActivationQuantity" value="1"/>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+

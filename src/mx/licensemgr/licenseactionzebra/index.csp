@@ -38,7 +38,14 @@ parm:
       description: OLD-> Removes a Software License from the device.
 ---
 
-AID = activation ID
+sym, local lic. file
+
+flexera enabled online activation, licenses hosted on server
+one aID provided tocustomer
+device contacts server, gets AID and all licenses
+
+AID = activation ID (39-digit)
+
 
 
 OLD: 

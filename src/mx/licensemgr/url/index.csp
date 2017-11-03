@@ -1,0 +1,22 @@
+---
+csp: licensemgr
+title: License Server URL
+type: parm
+order: 5
+mx: "7.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: The License Source is "Specify a custom URL for Cloud Licensing Service" and License Choice is "Zebra"
+  name: URL
+  type: string
+---
+
+Used to specify the URL (and optional port number) of a custom, on-premise server containing Zebra License Activation ID(s). This parameter is designed for license activation on devices that do not have access to networks outside the walls of their organization. 
+
+**Parm value input rules**: 
+
+* String containing a valid URL (and optional port number)
+* Must contain at least 1 character
+
+**Example**: http://InternalLicenseServer.lan:8080/request

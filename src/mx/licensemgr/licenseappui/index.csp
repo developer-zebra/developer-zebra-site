@@ -2,7 +2,7 @@
 csp: licensemgr
 title: License App UI
 type: parm
-order: 12
+order: 90
 mx: "7.1"
 devicetype: A
 parm:
@@ -27,4 +27,6 @@ parm:
       description: Enables the Zebra license management app on the device.
 ---
 
-Used to Enable/Disable the Zebra license management app on the device. This app is used for viewing and managing the software licenses on the device. 
+> **This parameter is reserved for future use**. 
+
+Used to Enable/Disable the Zebra license management app on the device. The license app is used for viewing and managing the software licenses on the device. 

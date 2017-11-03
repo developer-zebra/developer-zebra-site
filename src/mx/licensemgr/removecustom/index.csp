@@ -7,14 +7,14 @@ mx: "4.3"
 devicetype: A
 parm:
   pivotal: No
-  presentif: The "Specify license action to perform" is "Remove" and "Specify selection method to use" is "Select using a custom feature name"
+  presentif: The Select Method is "Custom" and the License Choice "Symbol"
   name: SelectCustomFeatureName
   type: string
 ---
 
 Used to specify a custom Licensed Feature Name to identify the Software License to be removed from the device.
 
->**Note:** Be careful to enter the exact Licensed Feature Name as acquired from the Zebra Software License Server with identical case and without any additional whitespace or other characters.
+>**Note:** To ensure proper removal, specify the exact Licensed Feature Name contained in the original Software License File applied to the device, including letter case, white space, etc.
 
 **Parm value input rules**: 
 

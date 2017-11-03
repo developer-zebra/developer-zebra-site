@@ -7,7 +7,7 @@ mx: "4.3"
 devicetype: A
 parm:
   pivotal: Yes
-  presentif: The "Specify license action to perform" is "Apply"
+  presentif: The License Action is "Symbol" and License Choice is "Symbol"
   name: VerifyMethod
   type: list
   list:

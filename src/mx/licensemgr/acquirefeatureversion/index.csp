@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Acquire Feature Version
 type: parm
-order: 91
+order: 92
 mx: "7.1"
 devicetype: A
 parm:
@@ -14,7 +14,7 @@ parm:
 
 >**This parameter is not intended for user interaction**. 
 
-Used to specify the version number of the feature to be acquired using the Feature To Acquire parameter. 
+Used to programmatically specify the version number of the feature to be acquired using the Feature To Acquire parameter. 
 
 **Parm value input rules**: 
 

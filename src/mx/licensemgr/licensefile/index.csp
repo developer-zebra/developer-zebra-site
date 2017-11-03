@@ -7,7 +7,7 @@ mx: "4.3"
 devicetype: A
 parm:
   pivotal: No
-  presentif: The License Method is "Embed the license blob from the license file into the XML" AND License Choice is "Perform legacy Symbol license action" 
+  presentif: The License Action is "Apply" and License Method is "Embed" and License Choice is "Symbol"  
   name: LicenseBlob
   type: string
 ---

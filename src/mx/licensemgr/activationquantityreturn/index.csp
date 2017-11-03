@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Activation Quantity Return
 type: parm
-order: 5
+order: 21
 mx: "7.1"
 devicetype: A
 parm:
@@ -12,5 +12,5 @@ parm:
   type: string
 ---
 
-Used to specify the number of license copies to be revoked on the device.  
+Used to specify the number of license copies to be reclaimed from the device.  
 

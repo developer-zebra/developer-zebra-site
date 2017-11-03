@@ -1,0 +1,21 @@
+---
+csp: licensemgr
+title: Acquire Feature Version
+type: parm
+order: 91
+mx: "7.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: License Action Zebra is "Acquire Feature" and License Choice is "Perform Zebra license action"
+  name: AcquireFeatureVersion
+  type: string
+---
+
+>**This parameter is not intended for user interaction**. 
+
+Used to specify the version number of the feature to be acquired using the Feature To Acquire parameter. 
+
+**Parm value input rules**: 
+
+* Integer or decimal value from 1-10 digits 

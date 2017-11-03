@@ -2,11 +2,12 @@
 csp: licensemgr
 title: License Action
 type: parm
-order: 5
+order: 8
 mx: "4.3"
 devicetype: A
 parm:
   pivotal: Yes
+  presentif: License Choice is set to "Symbol"
   name: LicenseAction
   type: list
   list:
@@ -14,12 +15,12 @@ parm:
       devicetype: A
       name: apply
       mx: "4.3"
-      description: Applies a Software License for a software component on the device.
+      description: Applies a Software License on a Symbol device.
     - code: 2
       devicetype: A
       name: remove
       mx: "4.3"
-      description: Removes a Software License from the device.
+      description: Removes a Software License from a Symbol device.
 ---
 
-Used to apply or remove a Software License on the device. Applying a Software License on a device for an associated Software Component (that requires licensing) makes the specific capabilities of that Software Component usable on that device. Removing a Software License from a device for a Software Component makes the controlled capability of the associated Software Component unusable on that device or limits its features. **Note**: The license removal action deletes the licence from the private store only; the license file will still exist on the device and must be deleted separately.
+Used to apply or remove a Software License on a legacy Symbol device. Applying a Software License on a device for an associated Software Component (that requires licensing) makes the specific capabilities of that Software Component usable on that device. Removing a Software License from a device for a Software Component makes the controlled capability of the associated Software Component unusable on that device or limits its features. **Note**: The license removal action deletes the licence from the private store only; the license **_file_** still exists on the device and must be deleted separately.

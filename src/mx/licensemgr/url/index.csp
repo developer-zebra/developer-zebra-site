@@ -2,7 +2,7 @@
 csp: licensemgr
 title: License Server URL
 type: parm
-order: 5
+order: 10
 mx: "7.1"
 devicetype: A
 parm:

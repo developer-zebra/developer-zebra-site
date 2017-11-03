@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Activation ID
 type: parm
-order: 5
+order: 12
 mx: "7.1"
 devicetype: A
 parm:

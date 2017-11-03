@@ -7,7 +7,7 @@ mx: "4.3"
 devicetype: A
 parm:
   pivotal: No
-  presentif: The "Specify license action to perform" is "Remove" *AND* "Specify selection method to use" is "Select using a custom feature name"
+  presentif: The "Specify license action to perform" is "Remove" and "Specify selection method to use" is "Select using a custom feature name"
   name: SelectCustomFeatureName
   type: string
 ---

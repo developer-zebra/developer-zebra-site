@@ -6,9 +6,7 @@ devicetype: A
 order: 0
 ---
 
-The License Manager (LicenseMgr) administers the software licenses on a device, allowing an administrator or a application on the device to control the usability of software features that require licensing.
-
-If a software component does not require licensing, the presence of a license will have no impact on that component. If a component requires licensing, the absence of a suitable license will limit that component's functionality. Software components can be made usable, unusable or limited based on the license on the device.
+The License Manager (LicenseMgr) administers the software licenses on a device, allowing an administrator or application on the device to control the usability of software features that require licensing. Software components can be made usable, unusable or feature-limited based on the license on the device. If a component requires licensing, the absence of a valid license will limit or prevent its functionality. Software components that to not require licensing are not effected by this CSP. 
 
 ### License Acquisition
 

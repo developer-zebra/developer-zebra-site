@@ -94,3 +94,52 @@ The query below applies only to Software Licenses for the SimulScan Software Com
 		</characteristic>
 	</wap-provisioningdoc>
 
+### Return an Activation ID
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="LicenseMgr" version="5.1" >
+			<parm name="LicenseChoice" value="zebra"/>
+			<characteristic type="LicenseZebra">
+				<parm name="LicenseActionZebra" value="return"/>
+				<characteristic type="ExistingLicenseZebra">
+					<parm name="ActivationIDReturn" value="9f55-3413-9430-45de-b8ff-0fa2-b75d-203b"/>
+					<parm name="ActivationQuantityReturn" value="0"/>
+			</characteristic>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+
+### Return All Activation IDs
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="LicenseMgr" version="5.1" >
+			<parm name="LicenseChoice" value="zebra"/>
+			<characteristic type="LicenseZebra">
+				<parm name="LicenseActionZebra" value="reset"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+
+### Select the Zebra License Server as License Source 
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="LicenseMgr" version="5.1" >
+			<parm name="LicenseChoice" value="zebra"/>
+			<characteristic type="LicenseZebra">
+				<parm name="LicenseActionZebra" value="activate"/>
+				<characteristic type="NewLicenseZebra">
+				<characteristic type="LicenseSourceURL">
+					<parm name="LicenseSource" value="fno_cloud_production"/>
+				</characteristic>
+					<parm name="ActivationID" value="9f55-3413-9430-45de-b8ff-0fa2-b75d-203b"/>
+					<parm name="ActivationQuantity" value="1"/>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+

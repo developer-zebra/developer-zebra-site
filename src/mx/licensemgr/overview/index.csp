@@ -23,19 +23,14 @@ To prevent this scenario, Zebra recommends using the [Verification Method](#veri
 ### Main Functionality
 
 * Apply/Revoke Software License(s) from a device
-* Perform actions using (legacy) Symbol or Zebra method
+* Perform licensing actions using (legacy) Symbol or Zebra method
+* Perform licensing actions on standard and custom features
 * Verify licenses on the device
+* Specify an Activation ID
 * Select whether to embed or reference a license
 * Specify device-local and web-based license files
-* Specify an Activation ID
-* Enable/disable the Zebra license management UI
-* Acquire feature names and version numbers 
-
-
-EXPOSED IN STAGENOW BUT USED ONLY BY APP INTERNALS
-Feature to Acquire - the exact name of the feature to be enabled for use by the application. 
-Acquire Feature Version
-Return All Features
+* Specify the URL for an on-premise license administration server  
+* Enable/disable the Zebra license management UI app
 
 <!--
 as of 11/3- NOT EXPOSED IN MX 7.1: 

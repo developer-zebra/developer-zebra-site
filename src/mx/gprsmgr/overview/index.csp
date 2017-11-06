@@ -3,6 +3,7 @@ csp: gprsmgr
 title: Overview
 type: text
 devicetype: A,B
+info: WWAN-enabled devices only
 order: 0
 ---
 

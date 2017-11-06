@@ -2,7 +2,7 @@
 title: EHS Advanced Settings
 layout: guide.html
 product: Enterprise Home Screen
-productversion: '2.6'
+productversion: '2.7'
 ---
 
 ## Overview
@@ -404,7 +404,10 @@ Specifies the title bar text for the EHS app. The default title "Enterprise Home
 
 #### Example
 
-    <title>MetaCorp Home Screen</title>
+    <preferences>
+        <title>MetaCorp Home Screen</title>
+    </preferences>
+
 
 ------
 
@@ -420,12 +423,12 @@ Controls whether an icon will be displayed in the Title Bar. **A value of 0 (fal
 
 #### Example
     <preferences>
-    ...
         <title_bar_icon>
             <title_bar_icon_disabled>0</title_bar_icon_disabled>
             <title_bar_icon_file>/storage/sdcard0/Android/data/com.symbol.enterprisehomescreen/files/title.jpg</title_bar_icon_file > 
         </title_bar_icon >
-    ...
+    </preferences>
+
 
 ------
 
@@ -440,10 +443,13 @@ Allows an image to be specified for display in the EHS Title Bar. **Supports .bm
 
 #### Example
 
-    <title_bar_icon>
-        <title_bar_icon_disabled>0</title_bar_icon_disabled>
-        <title_bar_icon_file>/storage/sdcard0/Android/data/com.symbol.enterprisehomescreen/files/title.jpg</title_bar_icon_file > 
-    </title_bar_icon >
+    <preferences>
+        <title_bar_icon>
+            <title_bar_icon_disabled>0</title_bar_icon_disabled>
+            <title_bar_icon_file>/storage/sdcard0/Android/data/com.symbol.enterprisehomescreen/files/title.jpg</title_bar_icon_file > 
+        </title_bar_icon >
+    </preferences>
+
 
 ------
 
@@ -467,10 +473,12 @@ Specifies the background color of the icon label text of applications displayed 
 
 #### Examples
 
-    <icon_label_background_color>#00FFFFFF</icon_label_background_color>
-    <icon_label_background_color>#75A319</icon_label_background_color>
-    <icon_label_background_color>#80EF671B</icon_label_background_color>
-    <icon_label_background_color>magenta</icon_label_background_color>
+    <preferences>
+        <icon_label_background_color>#00FFFFFF</icon_label_background_color>
+        <icon_label_background_color>#75A319</icon_label_background_color>
+        <icon_label_background_color>#80EF671B</icon_label_background_color>
+        <icon_label_background_color>magenta</icon_label_background_color>
+    </preferences>
 
 
 ------
@@ -495,10 +503,14 @@ Specifies the color of the icon label text of applications displayed in User Mod
 
 #### Examples
 
-    <icon_label_text_color>#FFFFFFFF</icon_label_text_color>
-    <icon_label_text_color>#75A319</icon_label_text_color>
-    <icon_label_text_color>#80EF671B</icon_label_text_color>
-    <icon_label_text_color>magenta</icon_label_text_color>
+
+    <preferences>
+        <icon_label_text_color>#FFFFFFFF</icon_label_text_color>
+        <icon_label_text_color>#75A319</icon_label_text_color>
+        <icon_label_text_color>#80EF671B</icon_label_text_color>
+        <icon_label_text_color>magenta</icon_label_text_color>
+    </preferences>
+
 
 ------
 
@@ -518,7 +530,9 @@ Allows the screen orientation to be fixed in landscape or portrait mode. Omittin
 
 #### Example
 
-    <orientation></orientation>
+    <preferences>
+        <orientation></orientation>
+    </preferences>
     
 ------
 
@@ -534,8 +548,11 @@ Enables one or more apps to be automatically launched after EHS starts up. Works
 
 #### Example
 
-    <service_auto_launch_enable>0</service_auto_launch_enable>
-    
+
+    <preferences>
+        <service_auto_launch_enable>0</service_auto_launch_enable>
+    </preferences>
+
 
 ------
 
@@ -551,14 +568,16 @@ Enables one or more services to be automatically launched after EHS starts up. W
 
 #### Example
 
-    <service_auto_launch_enable>1</service_auto_launch_enable>
+    <preferences>
+        <service_auto_launch_enable>1</service_auto_launch_enable>
+    </preferences>
 
 ------
 
 ### Wallpaper
 Allows a background image to be specified for display in User Mode. If left unspecified, the system's default image will be displayed. **Supports .PNG format files in the `/enterprise/usr` directory only. Resolution support varies by device**. If a selected image fails to display, Zebra recommends scaling down the resolution or selecting a different image. 
 
-<img alt="" style="height:350px" src="wallpaper.png"/>
+<img alt="" style="height:350px" src="2-7_wallpaper.png"/>
 
 <b>Possible values</b>:
 
@@ -566,7 +585,36 @@ Allows a background image to be specified for display in User Mode. If left unsp
 
 #### Example
 
-    <wallpaper>/enterprise/usr/mybackground.png</wallpaper>
+    <preferences>
+        <wallpaper>/enterprise/usr/mybackground.png</wallpaper>
+    </preferences>
+
+------
+
+### Wallpaper Stretching
+Used to enable/disable the background image for display in User Mode to be stretched to fill the screen. Disabled by default. Stretching is disabled if this value is unspecified. **See Wallpaper parameter for supported file format and location**.  
+
+<img alt="" style="height:350px" src="2-7_wallpaper_stretch.png"/>
+
+_EHS with default wallpaper_:
+<img style="height:250px" src="../about/default_wallpaper.png"/>
+
+_**Stretching disabled** (default) with custom wallpaper image_:
+<img style="height:275px" src="../about/default_no_stretching.png"/>
+
+_**Stretching enabled** with custom wallpaper image_:
+<img style="height:250px" src="../about/with_stretching.png"/>
+
+<b>Possible values</b>:
+
+* 1 (stretching enabled)
+* <b>0 (default)</b>
+
+#### Example
+
+    <preferences>
+          <wallpaper_stretching_enabled >0</wallpaper_stretching_enabled >
+    </preferences>
 
 ------
 
@@ -717,7 +765,7 @@ Controls whether the Keyguard screen (also known as the "Lock Screen") is displa
 
 * **On devices running Android L**, the Bypass Keyguard feature fails to unlock the screen after rebooting the device.
 
-* **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent the multi-user login screen from being displayed**. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
+* **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent dusplay of the multi-user login screen. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
 <img alt="" style="height:350px" src="keyguard.png"/>
 _The Android Keyguard (also known as the Lock Screen)_.
@@ -792,7 +840,6 @@ To permit access to the camera app only after the device has been unlocked, set 
 
 **To allow access to camera app <u>only after device is unlocked</u>**: 
 
-
     :::xml
     <keyguard_camera_disabled>1</keyguard_camera_disabled>
     <bypass_keyguard>1</bypass_keyguard>
@@ -821,6 +868,8 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 **To prevent use of search, Zebra recommends using this tag _and_ removing the search app from the User Mode screen**. 
 
+**Note**: Disabling access to the search app from the lock screen also disables it from the User-Mode screen on some devices, even if search is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for working around this. See User-Mode Search Usage section below. 
+
 <img alt="" style="height:350px" src="search_disable.png"/>
 
 <b>Possible values</b>:
@@ -832,6 +881,41 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
     <keyguard_search_disabled>1</keyguard_search_disabled>
     
+#### User-Mode Search Usage
+
+On some devices, disabling access to the search app from the lock screen also disables it from the User-Mode screen, even if search usage is permitted on the device. This occurs if the device is rebooted from the lock screen; there are two options for preventing it. 
+
+##### Option 1: Allow access to search app from lock screen
+If users are permitted to access the search app from User Mode, some organizations also might permit access directly from the lock screen without having to unlock the device. For such cases, modify the `enterprisehomescreen.xml` file as below. 
+
+**To allow access to search app from lock screen**: 
+
+    :::xml
+    // Allow search access: 
+
+    <keyguard_search_disabled>0</keyguard_search_disabled>
+
+    // Display lock screen:
+    
+    <bypass_keyguard>1</bypass_keyguard>
+
+-----
+
+##### Option 2: Add search app to 'enabled' list
+
+To permit access to the search app only after the device has been unlocked, set the &lt;keyguard_search_disabled&gt; value to "1" and add the package name of the search app to the (optional) &lt;apps_enabled&gt; list in the `enterprisehomescreen.xml` file as below. **If no such tag exists in the file for this optional parameter, see** [Enable/Disable Apps](#enabledisableapps) **for help adding it**. 
+
+**To allow access to search app <u>only after device is unlocked</u>**: 
+
+    :::xml
+    <keyguard_search_disabled>1</keyguard_search_disabled>
+    <bypass_keyguard>1</bypass_keyguard>
+    ...
+    <apps_enabled>
+        <application package="search.app.package.name"/> // i.e. "com.android.search"
+    </apps_enabled>
+    
+
 ------
 
 ### USB Debugging Disabled
@@ -873,6 +957,66 @@ Controls whether full or limited settings are available when the device is in Us
 * With System settings restricted, it is still possible to add shortcuts to restricted System-settings components (i.e. apps) using a third-party shortcut creator. However, such shortcuts also will be available in User Mode. If a system setting component should be accessible only to administrators, it should not be mapped using a shortcut.
 
 * Uninstalling EHS will not revert Restricted System Settings to its original state. If required, this must be done manually before uninstalling EHS.
+
+------
+
+### Recent Apps Button Disabled 
+**Applies only to devices running Android Nougat and higher**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Nougat devices only; otherwise enabled**. Default value will be used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
+
+>This setting persists after EHS is removed.
+
+<img alt="" style="height:450px" src="2-7_recent_apps_button.png"/>
+_Recent apps button cannot be disabled on devices running Android L or M (shown)_.
+<br>
+
+<b>Possible values</b>:
+
+* <b>1 (disabled by default)</b>
+* 0 
+
+#### Example
+
+    <preferences>
+          <Recent_apps_button_disabled>1</Recent_apps_button_disabled>
+    </preferences>
+
+
+------
+
+### Logging Disabled
+
+Controls logging of EHS activities, failures and security events. These include failed attempts to enter Admin Mode, switches of the operating mode and all EHS errors. Enabled by default. Logs are stored in the `/enterprise/usr/enterprisehomescreen.log` file as plain text file that can be retrieved with ADB or an MDM and viewed with any text editor. 
+
+<img alt="" style="height:450px" src="2-7_logging_disabled.png"/>
+
+<b>Possible values</b>:
+
+* 1 
+* <b>0 (logging is enabled by default)</b>
+
+#### Example
+
+    <logging>
+        <logging_disabled>0</logging_disabled>
+    </logging>
+
+------
+
+### Log File Max Size
+Permits a maximum size (in MB) to be specified for the EHS log file. When the maximum file size is reached, the current log is renamed to `enterprisehomescreen.log.bak` (overwriting the existing .bak file, if any) and a new `enterprisehomescreen.log` file is created. **This effectively doubles the storage requirement of the specified maximum since two log files of maximum size will be present at certain times**. 
+
+<img alt="" style="height:450px" src="2-7_logging_file_size.png"/>
+
+<b>Possible values</b>:
+
+* Integer from 1-99999 
+* Default = 10 (MB)
+
+#### Example
+
+    <logging>
+        <log_file_max_size>10</log_file_max_size>
+    </logging>
 
 ------
 

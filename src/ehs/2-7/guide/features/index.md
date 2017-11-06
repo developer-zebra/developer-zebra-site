@@ -2,7 +2,7 @@
 title: EHS Special Features
 layout: guide.html
 product: Enterprise Home Screen
-productversion: '2.6'
+productversion: '2.7'
 ---
 
 ## Overview
@@ -163,9 +163,13 @@ Log into Admin Mode and delete the signature file from the `/enterprise/usr` dir
 
 ## EHS Log
 
-EHS records all major activities, failures and security events in the `/enterprise/usr/enterprisehomescreen.log` file. These include failed attempts to enter Admin Mode, switches of the operating mode and all EHS errors.
+EHS records all major activities, failures and security events in the `/enterprise/usr/enterprisehomescreen.log` file. These include failed attempts to enter Admin Mode, switches of the operating mode and all EHS errors. The log is a plain text file and can be retrieved with ADB or an MDM and viewed with any text editor.  
 
-The log is a plain text file and can be retrieved with ADB or an MDM and viewed with any text editor.  
+For more information about logging, see [Logging Preferences](../settings/#loggingdisabled). 
+
+<img alt="" style="height:450px" src="2-7_logging_disabled.png"/>
+_In EHS 2.7 and higher, logging can be disabled through the UI or config file._
+<br>
 
 ------
 
@@ -316,6 +320,7 @@ This section covers important interactions between EHS and Android features that
 ### Recent Apps List
 
 * Accessing an app from the Recent Apps list could represent a security risk; apps not cleared from the list can be activated with the BACK button, potentially exposing a non-EHS home screen.
+* On Android Nougat devices, **the Recent Apps button can be Enabled/Disabled**. It is disabled by default to prevent the use of multi-window mode. 
 * EHS does not add apps or activities to the Android Recent Apps list, but apps/activities launched from within EHS might. Such apps/activities could launch others that might appear on the Recent Apps list and pose a security risk.  
 * The Recent Apps list can be cleared on pre-Android L devices by rebooting the device. 
 * Android L devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system to clear the list. 

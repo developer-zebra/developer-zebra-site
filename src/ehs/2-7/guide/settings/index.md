@@ -799,7 +799,7 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 **Notes**: 
 * If no camera shortcut exists on the device lock screen, use of this tag is not required. 
-* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for working around this. See User-Mode Camera Usage section below. 
+* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Camera Usage section below. 
 
 **To prevent use of the camera, Zebra recommends using this tag <u>and</u> removing the camera app from the User Mode screen**.
 
@@ -868,7 +868,7 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 **To prevent use of search, Zebra recommends using this tag _and_ removing the search app from the User Mode screen**. 
 
-**Note**: Disabling access to the search app from the lock screen also disables it from the User-Mode screen on some devices, even if search is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for working around this. See User-Mode Search Usage section below. 
+**Note**: Disabling access to the search app from the lock screen also disables it from the User-Mode screen on some devices, even if search is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Search Usage section below. 
 
 <img alt="" style="height:350px" src="search_disable.png"/>
 

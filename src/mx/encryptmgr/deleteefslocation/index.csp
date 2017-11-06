@@ -17,7 +17,7 @@ parm:
       name: Do Nothing
       mx: "4.3"
       osx: "1.0"
-      description: This value indicates that the BSF for the EFS to be Deleted is in the internal storage (i.e. /data) of the device.
+      description: Indicates that the BSF for the EFS to be Deleted is in the internal storage (i.e. /data) of the device.
     - code: 1
       devicetype: A
       name: Install Key
@@ -26,4 +26,4 @@ parm:
       description: This value indicates that the BSF for the EFS to be Deleted is on the Primary Storage Card of the device.
 ---
 
-This parm allows you to specify the storage location of the Backing Storage File of the Encrypted File System to be deleted.
+Used to specify the storage location of the Backing Storage File (BSF) of the Encrypted File System (EFS) to be deleted.

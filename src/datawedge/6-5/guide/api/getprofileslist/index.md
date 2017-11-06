@@ -39,7 +39,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters.
 
-### Example
+## Example Code
 
 	//SENDING THE INTENT
 	Intent i = new Intent();

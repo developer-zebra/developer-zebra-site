@@ -7,7 +7,11 @@ productversion: '6.3'
 
 ## ENUMERATE_SCANNERS
 
-Generates a numbers list (index) of scanners available on the device. **The scanner index varies by device; it depends on the number of supported scanners (internal and/or external) installed and/or connected to the device at the time the index is generated**. 
+Introduced in DataWedge 6.3. 
+
+Generates a numbered list (index) of scanners available on the device. 
+
+**IMPORTANT**: The scanner index is not fixed for all devices. It varies depending on the number of supported internal and/or external scanners installed and/or connected to the device at the time the index is generated. 
 
 ### Function Prototype
 

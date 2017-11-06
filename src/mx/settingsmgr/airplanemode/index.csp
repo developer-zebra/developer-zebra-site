@@ -1,6 +1,6 @@
 ---
 csp: settingsmgr
-title: Ability to Turn Airplane Mode On/Off in Settings UI
+title: Airplane Mode Access 
 type: parm
 order: 5
 mx: "4.3"

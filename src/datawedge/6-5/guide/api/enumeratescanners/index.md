@@ -7,7 +7,11 @@ productversion: '6.5'
 
 ## ENUMERATE_SCANNERS
 
-Generates a numbers list (index) of scanners available on the device. **The scanner index varies by device; it depends on the number of supported scanners (internal and/or external) installed and/or connected to the device at the time the index is generated**. 
+Introduced in DataWedge 6.3. 
+
+Generates a numbered list (index) of scanners available on the device. 
+
+**IMPORTANT**: The scanner index is not fixed for all devices. It varies depending on the number of supported internal and/or external scanners installed and/or connected to the device at the time the index is generated. 
 
 ### Function Prototype
 
@@ -28,7 +32,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters. 
 
-### Example
+## Example Code
 
 	// First send the intents to enumerate the available scanners on the device:
 	i.setAction("com.symbol.datawedge.api.ACTION");

@@ -9,6 +9,22 @@ productversion: '6.5'
 
 DataWedge provides barcode scanning and processing services for Zebra devices running Android. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
 
+### Language Support
+
+DataWedge has been approved to run on device operating systems localized for the following languages:
+
+* English
+* French
+* German
+* Italian
+* Spanish
+* Simplified Chinese
+* Traditional Chinese
+
+For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
+
+-----
+
 #### This document applies to:
 * **DataWedge 6.5.x**, which requires:
 * **Scanner Framework 5.1.0** or higher, and
@@ -24,7 +40,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 DataWedge 6.5 improves compatibility of exported Config files and Profiles for deployment to dissimilar devices. Previous versions of DataWedge support deployment of exported Profiles only to devices that are functionally equivalent to the device that created original Profile. Now, Config files and Profiles created with DataWedge 6.5 will work on any Zebra device model running DataWedge 6.5 or higher. See the [Cross-Device Import](../settings/#crossdeviceimport) section of the DataWedge Settings guide for more information. 
 
-**New APIs**: 
+**New APIs**
 
 * **[GET_DISABLED_APP_LIST](../api/getdisabledapplist) -** returns the list of apps prohibited from using DataWedge. 
 * **[GET_CONFIG](../api/getconfig) -** returns a list of parameter settings in the specified Profile.
@@ -33,6 +49,7 @@ DataWedge 6.5 improves compatibility of exported Config files and Profiles for d
 * **[SWITCH_SCANNER_PARAMS](../api/switchscannerparams) -** allows an app to set scanner parameters at runtime without persisting those settings. 
 
 **Updated APIs**
+
 These APIs have been enhanced to support [RESULT_INFO](../api/resultinfo) feedback mechanism for intents and include result codes. 
 
 * [CLONE_PROFILE](../api/cloneprofile)
@@ -42,7 +59,7 @@ These APIs have been enhanced to support [RESULT_INFO](../api/resultinfo) feedba
 * [RENAME_PROFILE](../api/renameprofile)
 * [RESET_DEFAULT_PROFILE](../api/resetdefaultprofile)
 * [RESTORE_CONFIG](../api/restoreconfig)
-* [SCANNER_INPIT_PLUGIN](../api/scannerinputplugin)
+* [SCANNER_INPUT_PLUGIN](../api/scannerinputplugin)
 * [SET_DEFAULT_PROFILE](../api/setdefaultprofile)
 * [SOFTSCAN_TRIGGER](../api/softscantrigger)
 * [SWITCH_TO_PROFILE](../api/switchtoprofile)

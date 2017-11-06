@@ -45,7 +45,7 @@ The ebapi.js file is necessary for all single API inclusions.
 Cancel audio recording. During recording if 'cancel' method is called, the status of recording will be 'cancel' in the callback returning parameter of 'start' method. No file is saved. In android, it will delete the file if it exists.
 
 ####Parameters
-<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+(none)
 
 ####Returns
 Synchronous Return:

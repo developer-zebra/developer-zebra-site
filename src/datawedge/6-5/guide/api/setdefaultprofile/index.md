@@ -56,7 +56,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
 
-### Example
+## Example Code
 
 	:::javascript
 	// define action and data strings
@@ -77,7 +77,7 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 	        this.sendBroadcast(i);
 	}
 
-#### Generate and receive result codes
+### Generate and receive result codes
 Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. 
 
 **Note: Modify this generic code to match the API being used**.  

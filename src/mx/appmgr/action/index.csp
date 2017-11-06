@@ -15,7 +15,7 @@ parm:
     - code: 0
       devicetype: A,B
       name: Do nothing
-      description: This value (or the absence of this parm from the XML) will cause no changes to the applications on the device.
+      description: This value (or the absence of this parm from the XML) will cause no change to applications on the device.
       mx: "4.1"
     - code: 1
       devicetype: A,B
@@ -26,7 +26,7 @@ parm:
     - code: 2
       devicetype: A,B
       name: Uninstall
-      description: Causes a User application with the specified Package Name to be Uninstalled from the device. If for any reason the requested application cannot be uninstalled, an error will be returned in the Result XML document. Note- If no User application with the specified Package Name is installed on the device, an error will be returned in the Result XML document. Note- When an application is Uninstalled, data that is stored in sandbox areas owned by that application also will be removed. If the application requiring such data is later Installed again, the data will must be recreated.
+      description: Causes a User application with the specified Package Name to be removed from the device. If for any reason the requested application cannot be removed, an error will be returned in the Result XML document. Note- If no User application with the specified Package Name is installed on the device, an error will be returned in the Result XML document. Note- When an application is removed, data that is stored in sandbox areas owned by that application also will be removed. If the application requiring such data is reinstalled, the data must be recreated.
       mx: "4.1"
       osx: "1.0"
     - code: 3
@@ -56,7 +56,7 @@ parm:
     - code: 7
       devicetype: A,B
       name: ClearRecentApps
-      description: Clears the Android Recent Applications List, which otherwise would allow a user to see and launch recently used apps.
+      description: Clears the Android Recent Applications List, which otherwise would allow a user to see and launch recently used apps (Protected Apps excluded. See Note above).
       mx: "4.2"
       apilevel: "16"
     - code: 8
@@ -73,4 +73,5 @@ parm:
       apilevel: "23"
 ---
 
-Used to specify the action to perform on an application or app-related setting. **Note: Actions can apply only to System apps, only to User apps, or to both (as noted below)**. 
+Used to specify the action to perform on an application or app-related setting. Actions can apply only to System apps, only to User apps, or to both (as noted below). **Note: <u>"Protected" Apps remain on the Recent Apps list after it has been cleared</u> using the "ClearRecentApps" Action**. See Protected List Action parameter for more information.
+

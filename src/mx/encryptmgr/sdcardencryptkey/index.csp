@@ -1,6 +1,6 @@
 ---
 csp: encryptmgr
-title: Key to encrypt SDcard
+title: SD Card Encrypt Key
 type: parm
 order: 15
 mx: "4.3"
@@ -13,10 +13,10 @@ parm:
   type: string
 ---
 
-This parm allows you to specify the Named Key that will be used to perform Full Storage Card Encryption.
+Used to specify the Named Key that will be used to perform Full Storage Card Encryption.
 
->**Note:** If the Named Key is not present in the Key Storage Database then an error will be returned in the Result XML.
+>**Note:** If the Named Key is not present in the Key Storage Database, an error will be returned in the Result XML.
 
-Parm value input rules: 
+**Parm value input rules**:  
 
 * String with a minimum size of 1 character

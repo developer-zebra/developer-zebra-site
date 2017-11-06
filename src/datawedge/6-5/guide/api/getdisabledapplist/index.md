@@ -43,7 +43,7 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 
 -----
 
-### Example
+## Example Code
 
 The code below sends an intent to request the current Disabled App List: 
 

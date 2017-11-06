@@ -19,7 +19,7 @@ This section describes important interactions between EHS and the `enterprisehom
 
 #### Config File Location
 
-* The config file is stored in the `/enterprise/usr` directory on the device. (does not apply to [Secure Mode](../features#securemode))
+* The config file is initially stored in the `/enterprise/usr` directory on the device. <!-- (does not apply to [Secure Mode](../features#securemode))-->
 * This directory is <b>invisible</b> to most apps, <b>including Windows Explorer and Android File Transfer (Mac)</b>. 
 * The directory is <b>visible to Android File Browser</b>, which can be used to manage its contents. 
 * The file is <b>accessible via Android Debug Bridge (ADB)</b> "pull" and "push" commands. 
@@ -380,10 +380,11 @@ _App icons can be displayed in five sizes; changes apply to both Admin and User 
 
 #### Example
 
-    <user_options>   
-        <app_icon_size>XL</app_icon_size>   
     <user_options>
-
+        <icon_settings>
+            <app_icon_size>XL</app_icon_size>
+        </icon_settings>   
+    <user_options>
 
 ------
 
@@ -566,7 +567,7 @@ Allows a background image to be specified for display in User Mode. If left unsp
 #### Example
 
     <wallpaper>/enterprise/usr/mybackground.png</wallpaper>
-    
+
 ------
 
 ### Fullscreen
@@ -581,11 +582,9 @@ EHS can be made to run in full-screen mode by setting the value of this tag to 1
 
 #### Example
 
-
     <preferences>
         <fullscreen>1</fullscreen>
     </preferences>
-
 
 ------
 
@@ -752,7 +751,7 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 **Notes**: 
 * If no camera shortcut exists on the device lock screen, use of this tag is not required. 
-* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. See additional notes below. 
+* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Camera Usage section below. 
 
 **To prevent use of the camera, Zebra recommends using this tag <u>and</u> removing the camera app from the User Mode screen**.
 
@@ -793,7 +792,6 @@ To permit access to the camera app only after the device has been unlocked, set 
 
 **To allow access to camera app <u>only after device is unlocked</u>**: 
 
-
     :::xml
     <keyguard_camera_disabled>1</keyguard_camera_disabled>
     <bypass_keyguard>1</bypass_keyguard>
@@ -822,6 +820,8 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 **To prevent use of search, Zebra recommends using this tag _and_ removing the search app from the User Mode screen**. 
 
+**Note**: Disabling access to the search app from the lock screen also disables it from the User-Mode screen on some devices, even if search is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Search Usage section below. 
+
 <img alt="" style="height:350px" src="search_disable.png"/>
 
 <b>Possible values</b>:
@@ -833,6 +833,41 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
     <keyguard_search_disabled>1</keyguard_search_disabled>
     
+#### User-Mode Search Usage
+
+On some devices, disabling access to the search app from the lock screen also disables it from the User-Mode screen, even if search usage is permitted on the device. This occurs if the device is rebooted from the lock screen; there are two options for preventing it. 
+
+##### Option 1: Allow access to search app from lock screen
+If users are permitted to access the search app from User Mode, some organizations also might permit access directly from the lock screen without having to unlock the device. For such cases, modify the `enterprisehomescreen.xml` file as below. 
+
+**To allow access to search app from lock screen**: 
+
+    :::xml
+    // Allow search access: 
+
+    <keyguard_search_disabled>0</keyguard_search_disabled>
+
+    // Display lock screen:
+    
+    <bypass_keyguard>1</bypass_keyguard>
+
+-----
+
+##### Option 2: Add search app to 'enabled' list
+
+To permit access to the search app only after the device has been unlocked, set the &lt;keyguard_search_disabled&gt; value to "1" and add the package name of the search app to the (optional) &lt;apps_enabled&gt; list in the `enterprisehomescreen.xml` file as below. **If no such tag exists in the file for this optional parameter, see** [Enable/Disable Apps](#enabledisableapps) **for help adding it**. 
+
+**To allow access to search app <u>only after device is unlocked</u>**: 
+
+    :::xml
+    <keyguard_search_disabled>1</keyguard_search_disabled>
+    <bypass_keyguard>1</bypass_keyguard>
+    ...
+    <apps_enabled>
+        <application package="search.app.package.name"/> // i.e. "com.android.search"
+    </apps_enabled>
+    
+ 
 ------
 
 ### USB Debugging Disabled

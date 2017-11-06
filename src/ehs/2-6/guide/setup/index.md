@@ -11,7 +11,9 @@ These instructions provide a basic understanding of the installation, configurat
 
 Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts these capabilities into a single, convenient tool.
 
-> <b>Note</b>: Installation and setup requires that EHS be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](../../download) and establish connectivity between the computer and device. Then resume from here. 
+> <b>Note</b>: Installation and setup requires that the EHS .apk file be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](../../download) and establish connectivity between the computer and device. Then resume from here. 
+
+-----
 
 ## Manual Installation
 These instructions apply to direct installation (from a computer to a single device) using the `EHS_0206xx.apk` EHS 2.6 installer file.  
@@ -22,14 +24,14 @@ Read about how to [uninstall EHS](#uninstallation) later in this guide.
 
 &#49;. <b>Connect the device</b> via USB to a PC or Mac.
 
-&#50;. <b>Copy the APK file</b> from the PC to any writable device folder.
+&#50;. <b>Copy the .apk file</b> from the PC to any writable device folder.
 
 &#51;. On the device, <b>launch File Browser</b> from the App Drawer:
 
 <img alt="" style="height:500px" src="file_browser_in_drawer.png"/>
 <br>
 
-&#52;. <b>Locate and launch the APK file</b>:
+&#52;. <b>Locate and launch the .apk file</b>:
 
 <img alt="" style="height:350px" src="file_browser_search.png"/>
 _File name of the .apk will match that of the version number being installed_. 
@@ -125,6 +127,8 @@ In User Mode, the following features are disabled by default:
 
 For scenarios that require even more security, EHS offers Secure and Kiosk modes, which are documented in the [Advanced Features]() section. For a complete usage reference for the `enterprisehomescreen.xml` configuration file, please see the [Advanced Settings](../settings) section. 
 
+-----
+
 ## Automated Installation
 These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](../../../../emdk-for-android) or [StageNow](../../../../stagenow) tools using its App Manager Setting Type service. 
 
@@ -175,6 +179,8 @@ These instructions apply to remote installation of EHS, an `enterprisehomescreen
 The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
 
 **Note: App installation, uninstallation, setting the default launcher and other operations are possible using the [App Manager](/mx/#app-manager) through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools**. 
+
+-----
 
 ## Uninstallation
 
@@ -263,18 +269,24 @@ These instructions apply to remote uninstallation using an organization's own MD
 </table>
 <br>
 
-&#50;. <b>OPTIONAL</b>: If a new `enterprisehomescreen.xml` configuration file will be deployed with the new version of EHS, **skip to Step 3**. Otherwise, instruct the MDM to remove the `/enterprise/usr` folder. This will remove any previous config file. 
+&#50;. <b>OPTIONAL</b>: If a new `enterprisehomescreen.xml` configuration file will be deployed with the new version of EHS, **skip to Step 3**. Otherwise, instruct the MDM to remove the file `/enterprise/usr/enterprisehomescreen.xml` from the device. This will clear configuration settings from the previously installed EHS app. 
+
+>**Warning**: Do not remove the `/enterprise/usr` folder; it could effect the behavior of other apps. 
 
 &#51;. It is sometimes necessary to <b>reboot the device</b> to complete the uninstallation. 
 
 Remote uninstallation of EHS is now complete. 
 
-> The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
+**Note: Capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about command usage**. 
+
+-----
 
 ## Change the Default Launcher
-Removing EHS as the default launcher on a device can be done with a simple change in the Settings panel or by uninstalling EHS. Either of these scenarios can be accomplished manually on the device, programmatically through EMDK or remotely using StageNow or an MDM (if supported). If EHS is removed from the device, the Android Launcher in most cases will be the only remaining launcher on the device, and therefore will become the default launcher. 
+Removing EHS as the default launcher on a device can be done with a simple change in the Settings panel or by uninstalling EHS. Either of these scenarios can be accomplished manually on the device, programmatically through EMDK or remotely using StageNow or an MDM (if supported). 
 
-The following process applies only to Android 4.4.3 and higher. to remove EHS as the default launcher on Android versions prior to 4.4.3, follow the instructions (above) for manually uninstalling EHS using Android App Manager. 
+If EHS is removed from the device and the Android Launcher is the only remaining launcher on the device, it will become the default launcher. **If more than one launcher will remain on the device after EHS is removed, a new default launcher should be selected to ensure desired operation**.  
+
+**The following process applies only to Android 4.4.3 and higher**. To remove EHS as the default launcher on Android versions prior to 4.4.3, follow the instructions (above) for manually uninstalling EHS using Android App Manager. 
 
 **To manually change the default launcher on a device without removing EHS**: 
 (Android 4.4.3 and higher)
@@ -288,6 +300,8 @@ The following process applies only to Android 4.4.3 and higher. to remove EHS as
 
 <b>Note</b>: The trash can icon seen here offers an alternative means of uninstalling EHS and restoring the Android Launcher. 
 
+-----
+
 ## Battery and Wi-Fi Quick View
 In addition to the separate panels for viewing Battery and Wi-Fi status provided in the menus of Admin- and User-Mode Launcher screens, EHS provides Quick View, an alternate way of accessing real-time status of these critical devices from a single screen.
 
@@ -297,6 +311,6 @@ From Admin or User Mode, **tap the "i" icon** as indicated below:
 <img alt="" style="height:350px" src="2-4_info_icon.png"/>
 
 The Battery/Wi-Fi Quick View panels appears, displaying real-time status of both devices:
-<img alt="" style="height:350px" src="2-4_battery-wifi_status.png"/>
+<img alt="" style="height:450px" src="2-7_battery-wifi_status.png"/>
 <br>
 

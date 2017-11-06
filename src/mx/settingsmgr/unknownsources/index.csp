@@ -1,6 +1,6 @@
 ---
 csp: settingsmgr
-title: Ability to Turn UnknownSources On/Off in Settings UI
+title: Install From Unknown Sources
 type: parm
 order: 4
 mx: "4.3"

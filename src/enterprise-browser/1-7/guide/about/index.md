@@ -13,7 +13,33 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 
 The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. For more information about API crossover, see the [API Compatibility matrix](../compatibility). 
 
+### Language Support
+
+Enterprise Browser has been approved to run on device operating systems localized for the following languages:
+
+* English
+* French
+* German
+* Italian
+* Japanese
+* Korean (Windows Embedded Handheld only)
+* Portuguese
+* Spanish
+* Simplified Chinese
+* Traditional Chinese
+
+For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
+
+Localization is not supported on the following Zebra devices:
+
+* Omnii XT15 Windows CE 6.0
+* Omnii XT15 Windows Embedded Handheld 6.5
+* VH10 Windows CE 6.0
+* WorkAbout Pro 4 Windows Embedded Handheld 6.5
+* WorkAbout Pro 4 Windows CE 6.0
+
 -----
+
 ## New in v1.7
 
 ### ButtonBar API

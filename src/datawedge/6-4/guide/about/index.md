@@ -31,7 +31,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 * **[REGISTER_FOR_NOTIFICATION](../api/registerfornotification) -** tells DataWedge to inform specified app or activity of updates to scanner and/or Profile status. 
 * **[UNREGISTER_FOR_NOTIFICATION](../api/registerfornotification) -** cancels request for app notification.
 
-**DataWedge 6.4 continues to build on the new structure for launching Android intents introduced with DataWedge 6.2**, and can launch multiple intents as extras in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
+**DataWedge 6.4 continues to build on the new structure for launching Android intents Introduced in DataWedge 6.2**, and can launch multiple intents as extras in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
 
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 

@@ -4,13 +4,13 @@ productversion: '1.7'
 product: Enterprise Browser
 layout: guide.html
 ---
-##Overview
+## Overview
 Keycodes are constants that uniquely identify the ASCII values of device keypresses (hard or soft). Android apps made with Enterprise Browser 1.4 and higher permit Android keycode values to be assigned from a file when an Enterprise Browser app starts up. **Note**: The keycodes for keys with multiple values accessed with the shift or other modifier key (such as upper and lower case) might not be capturable. See the [KeyCapture API remarks](../../api/keycapture/#remarks) for more information. 
 
 **Note: The WorkAbout Pro 4 and Omnii XT15** are among a small group of Zebra devices running Windows Mobile that return proprietary keycode values inconsistent with those of other devices and incompatible with Windows. To address this issue, apps made with Enterprise Browser 1.5 or higher can remap those proprietary keycodes to Microsoft standard codes. See the [Mapping Proprietary Function Keycodes](#mappingproprietaryfunctionkeycodes) section below. 
 
 #### Android Keycode Handling 
-On Android devices, the keycode values of certain keys are sometimes not returned as expected or desired. To ensure control and accuracy of key presses, the desired keycode value(s) can be assigned through the current [KeyCapture 4.x API](../../api/keycapture) as well as legacy 2.x versions. The steps in thie guide apply to all API versions. 
+On Android devices, the keycode values of certain keys are sometimes not returned as expected or desired. To ensure control and accuracy of key presses, the desired keycode value(s) can be assigned through the current [KeyCapture 4.x API](../../api/keycapture) as well as legacy 2.x versions. The steps in this guide apply to all API versions. 
 
 The following facts apply generally to Android keycode mapping for Enterprise Browser: 
 
@@ -23,13 +23,14 @@ The following facts apply generally to Android keycode mapping for Enterprise Br
 * Keycodes not mapped (or left blank in the mapping file) retain their default values. 
 * [Additional restrictions](../../api/keycapture/#remarks) apply to keycapture and keycode mapping. 
 
-##Mapping Android Keycodes 
+## Mapping Android Keycodes 
+For proper key remapping, the `keycodemapping.xml` file must not be blank, and must contain valid key codes and the XML and syntax described in this guide. 
+
 To assign custom keycodes to Android hard or soft keys, follow these simple steps:  
 
 &#49;. [Deploy Enterprise Browser](../setup) to the device. 
 
-&#50;. Navigate to the installation directory on the device. 
-This is usually the `sdcard0/android/data/com.symbol.enterprisebrowser` directory.
+&#50;. Navigate to the installation directory on the device, which by default is `sdcard0/android/data/com.symbol.enterprisebrowser`.
 
 &#51;. Copy the `keycodemapping.xml` template to a PC and open it for editing. 
 
@@ -65,9 +66,9 @@ The template should look similar to the image below:
 	</KeyCodes>
 	...
 
-&#53;. Replace the values (within the quotes) for 'name,' 'from' and 'to' fields, as required. 
+&#53;. Replace the values (within the quotes) for the name=, from= and to= fields, as required. 
 
-> **Note**: The 'from' field refers to the key's current keycode value; the 'to' will hold the value that replaces it. In the example above, pressing the '0' key (after mapping) will generate a keycode value of '0x30' instead of its former value of '7.' The 'name' field can hold any value; [standard Android key names](http://developer.android.com/reference/android/view/KeyEvent.html) are recommended.  
+> **Note**: The "from=" field refers to the key's current keycode value and "to=" will hold the value that replaces it. In the example above, pressing the "0" key (after mapping) will generate a keycode value of "0x30" instead of "7" (its former value). The "name=" field can hold any value; Zebra recommends using [standard Android key names](http://developer.android.com/reference/android/view/KeyEvent.html). 
 
 **For help exposing the keycodes, see the Handling Incorrect Keycodes section below**.
 
@@ -97,7 +98,9 @@ For example:
 
 &#56;. Relaunch the Enterprise Browser app and check that its keycodes are mapped as specified.  
 
-##Handling Incorrect Keycodes
+>**Important**: For proper key remapping, the `keycodemapping.xml` file must not be blank, and must contain valid key codes and the XML and syntax described in this guide. 
+
+## Handling Incorrect Keycodes
 Once it is determined that correct keypresses are generating incorrect keycodes, the incorrect keycode value must be determined before the correct one can be substituted. This process uses JavaScript to expose the keycodes that appear when pressing one or more keys. 
 
 The first step is to confirm that Windows keycodes are not being forced as a result of the &lt;isWindowsKey&gt; tag:
@@ -129,7 +132,7 @@ where "KEYCODE_X" = the name of the keycode. [Standard Android key names](http:/
 
 &#52;. Relaunch Enterprise Browser and **repeat Step 2 to confirm** that correct code(s) are generated.  
 
-##More Information
+## More Information
 
 * **[KeyCapture API](../../api/keycapture) -** how to include the API and use its methods
 * **[Keys that cannot be captured](../../api/keycapture/#remarks) -** including the SHIFT and ALT keys 

@@ -6,13 +6,18 @@ content-items:
   - type: section
     level: 4
     title: Installation
-    text: Installing Enterprise Browser on a computer and Zebra device, and configure them for making apps.  
+    text: How to install Enterprise Browser on a computer and Zebra device and configure them for making apps.  
     url: ../setup
   - type: section
     level: 4
     title: Licensing
-    text: Obtaining the Enterprise Browser license required for each device being deployed.
+    text: How to obtain the Enterprise Browser license required for each device being deployed.
     url: ../licensing
+  - type: section
+    level: 4
+    title: Language Support
+    text: See the list of local languages supported by Enterprise Browser and get started setting them up.
+    url: ../about/#languagesupport
   - type: section
     level: 4
     title: Using The APIs

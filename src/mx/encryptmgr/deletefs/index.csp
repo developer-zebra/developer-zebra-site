@@ -14,7 +14,7 @@ parm:
     - code: 0
       devicetype: A
       name: Do Nothing
-      description: TThis value (or the absence of this parm from the XML) will not cause an Encrypted File System to be Deleted.
+      description: This value (or the absence of this parm from the XML) will cause no change to the Encrypted File System.
       mx: "4.3"
       osx: "1.0"
     - code: 1
@@ -22,7 +22,7 @@ parm:
       name: Delete EFS
       mx: "4.3"
       osx: "1.0"
-      description: This value will cause an Encrypted File System to be Deleted.
+      description: Deletes an Encrypted File System.
 ---
 
-This parm allows you to choose whether or not to Delete an Encrypted File System.
+Used to choose whether to Delete an Encrypted File System.

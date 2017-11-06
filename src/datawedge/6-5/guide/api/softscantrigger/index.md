@@ -52,7 +52,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters.
 
-### Example
+## Example Code
 
 	// define action and data strings
 	String softScanTrigger = "com.symbol.datawedge.api.ACTION";
@@ -70,8 +70,114 @@ Error messages are logged for invalid actions and parameters.
 	// send the intent to DataWedge
 	this.sendBroadcast(i);
 
-#### Sample delay code 
-The soft scan trigger command should be delayed sufficiently to enable the scanner to complete the task. Delay code similar to that shown below could be used:
+### Sample 'SCANNER_STATUS' Notification
+Soft scan trigger commands might be ignored if the scanner is busy at the time a command is executed. **Zebra recommends using the** `SCANNER_STATUS` **parameter of the [NOTIFICATION API](../registerfornotification) to signal that the scanner is ready**. Use the sample code below:
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+	    super.onCreate(savedInstanceState);
+	    setContentView(R.layout.activity_main);
+	    registerReceivers();
+	}
+
+	@Override
+	protected void onResume(){
+	    super.onResume();
+	    switchToProfile();
+	}
+
+	public static final String ACTION = "com.symbol.datawedge.api.ACTION";
+	public static final String NOTIFICATION_ACTION = "com.symbol.datawedge.api.NOTIFICATION_ACTION";
+	public static final String NOTIFICATION_TYPE_SCANNER_STATUS = "SCANNER_STATUS";
+	public static final String SCAN_STATUS_WAITING = "WAITING";
+	public static final String NOTIFICATION_TYPE_PROFILE_SWITCH = "PROFILE_SWITCH";
+
+	public static final String ACTION_EXTRA_REGISTER_FOR_NOTIFICATION = "com.symbol.datawedge.api.REGISTER_FOR_NOTIFICATION";
+	public static final String ACTION_EXTRA_UNREGISTER_FOR_NOTIFICATION = "com.symbol.datawedge.api.UNREGISTER_FOR_NOTIFICATION";
+
+	private void registerReceivers() {
+	    IntentFilter filter = new IntentFilter();
+	    filter.addAction(NOTIFICATION_ACTION);
+	    registerReceiver(broadcastReceiver, filter);
+	    registerForScannerStatus();
+	}
+
+	@Override
+	protected void onDestroy() {
+	    super.onDestroy();
+	    unregisterReceiver(broadcastReceiver);
+	    unRegisterForScannerStatus();
+	}
+
+	private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+	    @Override
+	    public void onReceive(Context context, Intent intent) {
+	        String action = intent.getAction();
+	        Log.d(TAG, "#DataWedge-APP# Action: " + action);
+	        if(action.equals(NOTIFICATION_ACTION)){
+	            // handle notification
+	            if(intent.hasExtra("com.symbol.datawedge.api.NOTIFICATION")) {
+	                Bundle b = intent.getBundleExtra("com.symbol.datawedge.api.NOTIFICATION");
+	                String NOTIFICATION_TYPE  = b.getString("NOTIFICATION_TYPE");
+	                if(NOTIFICATION_TYPE!= null) {
+	                    switch (NOTIFICATION_TYPE) {
+	                        case NOTIFICATION_TYPE_SCANNER_STATUS:
+	                            Log.d(TAG, "SCANNER_STATUS: status: " + b.getString("STATUS") + ", profileName: " + b.getString("PROFILE_NAME"));
+	                            String status = b.getString("STATUS");
+	                            if(status!=null && status.equals(SCAN_STATUS_WAITING)){
+	                                //toggle scanner when scanner is ready
+	                                scanToggle();
+	                                unRegisterForScannerStatus();
+	                            }
+	                            break;
+	                        case NOTIFICATION_TYPE_PROFILE_SWITCH:
+	                            Log.d(TAG, "PROFILE_SWITCH: profileName: " + b.getString("PROFILE_NAME") + ", profileEnabled: " + b.getBoolean("PROFILE_ENABLED"));
+	                            break;
+	                    }
+	                }
+	            }
+	        }
+	    }
+	};
+
+
+	public void registerForScannerStatus() {
+	    Bundle b = new Bundle();
+	    b.putString("com.symbol.datawedge.api.APPLICATION_NAME", "com.dwapi.dwnotifiation");
+	    b.putString("com.symbol.datawedge.api.NOTIFICATION_TYPE", NOTIFICATION_TYPE_SCANNER_STATUS);
+	    Intent i = new Intent();
+	    i.setAction(ACTION);
+	    i.putExtra(ACTION_EXTRA_REGISTER_FOR_NOTIFICATION, b);
+	    this.sendBroadcast(i);
+	}
+
+	public void unRegisterForScannerStatus() {
+	    Bundle b = new Bundle();
+	    b.putString("com.symbol.datawedge.api.APPLICATION_NAME", "com.dwapi.dwnotifiation");
+	    b.putString("com.symbol.datawedge.api.NOTIFICATION_TYPE", NOTIFICATION_TYPE_SCANNER_STATUS);
+	    Intent i = new Intent();
+	    i.setAction(ACTION);
+	    i.putExtra(ACTION_EXTRA_UNREGISTER_FOR_NOTIFICATION, b);
+	    this.sendBroadcast(i);
+	}
+
+	public void switchToProfile(){
+	    Intent i = new Intent();
+	    i.setAction(ACTION);
+	    i.putExtra("com.symbol.datawedge.api.SWITCH_TO_PROFILE","Launcher");
+	    this.sendBroadcast(i);
+	}
+
+	public void scanToggle(){
+	    Intent i = new Intent();
+	    i.setAction(ACTION);
+	    i.putExtra("com.symbol.datawedge.api.SOFT_SCAN_TRIGGER","TOGGLE_SCANNING");
+	    this.sendBroadcast(i);
+	}
+
+
+### Delay code 
+Execution of the soft scan trigger command should be sufficiently delayed to enable the scanner to complete existing tasks before being asked to perform another. As an alternative to scanner status notification (explained above), delay code similar to that shown below could be used:
 
 	// SAMPLE DELAY CODE
 	int triggerDelay = 250; // delay in milliseconds
@@ -84,7 +190,9 @@ The soft scan trigger command should be delayed sufficiently to enable the scann
 	        }
 	}, triggerDelay);
 
-#### Generate and receive result codes
+**Note**: While generally effective for this purpose, delay code can work inconsistently across devices. 
+
+### Generate and receive results
 Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. 
 
 **Note: Modify this generic code to match the API being used**.  

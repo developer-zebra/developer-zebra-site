@@ -50,7 +50,7 @@ Error messages are logged for invalid actions, missing parameters or other failu
 
 -----
 
-### Example
+## Example Code
 
 The code below passes an intent that switches a scanner parameter for the active scanner in the active profile. To verify results of the switch (or if errors are expected), include the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
 

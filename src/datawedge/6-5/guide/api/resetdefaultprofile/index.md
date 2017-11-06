@@ -40,7 +40,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions, parameters and failures (e.g. Profile not found or associated with an application).
 
-### Example
+## Example Code
 
 	::javascript
 	// define action string
@@ -56,6 +56,48 @@ Error messages are logged for invalid actions, parameters and failures (e.g. Pro
 		i.putExtra(extraData, ""); // empty since a name is not required
 		this.sendBroadcast;
 	}
+
+### Set/Get Result Codes
+Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. 
+
+**Note: Modify this generic code to match the API being used**.  
+
+	// send the intent
+		Intent i = new Intent();
+		i.setAction(ACTION);
+		i.putExtra("com.symbol.datawedge.api.CREATE_PROFILE", "Profile1");
+
+	// request and identify the result code
+		i.putExtra("SEND_RESULT","true");
+		i.putExtra("COMMAND_IDENTIFIER","123456789");
+		this.sendBroadcast(i);
+
+	// register to receive the result
+		public void onReceive(Context context, Intent intent){
+
+		    String command = intent.getStringExtra("COMMAND");
+		    String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+		    String result = intent.getStringExtra("RESULT");
+
+		    Bundle bundle = new Bundle();
+		    String resultInfo = "";
+		    if(intent.hasExtra("RESULT_INFO")){
+		        bundle = intent.getBundleExtra("RESULT_INFO");
+		        Set<String> keys = bundle.keySet();
+		        for (String key: keys) {
+		            resultInfo += key + ": "+bundle.getString(key) + "\n";
+		        }
+		    }
+
+		    String text = "Command: "+command+"\n" +
+		                  "Result: " +result+"\n" +
+		                  "Result Info: " +resultInfo + "\n" +
+		                  "CID:"+commandidentifier;
+		    
+		    Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+
+		};
+
 
 <!--
 6/27/17- per eng. TUT-14724:

@@ -25,7 +25,7 @@ parm:
       devicetype: A
       name: reset
       mx: "7.1"
-      description: Deactivates all AIDs on a Zebra device, returning them to general use.
+      description: Deactivates all AIDs on a Zebra device and returns them to general use.
     - code: 4
       devicetype: A
       name: acquirefeature
@@ -38,4 +38,4 @@ parm:
       description: Used programmatically on the device; no human interaction.
 ---
 
-Used to specify the action to perform on an Activation ID on the device. This parameter is for Zebra-branded devices only. For legacy Symbol-branded devices, use the License Action parameter. **Note: Options 4 and 5 are used programmatically on the device and are not intended for administrator use. 
+Used to specify the action to perform on an Activation ID (AID) on the device. This parameter is for Zebra-branded devices only. For legacy Symbol-branded devices, use the License Action parameter. **Note: Options 4 and 5 are used programmatically on the device and are not intended for administrator use**. 

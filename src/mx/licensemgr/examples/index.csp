@@ -124,7 +124,7 @@ The query below applies only to Software Licenses for the SimulScan Software Com
 	</wap-provisioningdoc>
 
 
-### Select the Zebra License Server as License Source 
+### Select Zebra License Server as License Source 
 
 	:::xml
 	<wap-provisioningdoc>

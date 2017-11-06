@@ -15,7 +15,7 @@ parm:
       devicetype: A
       name: fno_cloud_uat
       mx: "7.1"
-      description: Not for use by the general public.
+      description: Not for general use.
     - code: 2
       devicetype: A
       name: fno_cloud_production
@@ -28,4 +28,4 @@ parm:
       description: Allows a custom URL for on-premise license server (uncommon).
 ---
 
-Used to specify the source for Zebra server-based licenseing on the device. **Option 2 is the most common selection**.
+Used to specify the source for Zebra server-based licenseing on the device, which in most cases is "fno_cloud_production" (option 2). 

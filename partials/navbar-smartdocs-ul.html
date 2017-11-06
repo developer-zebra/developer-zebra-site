@@ -367,11 +367,6 @@
               scrollTop: target.offset().top - 220
           }, 1000);
 
-    //Pre-select an item on the list (0, 1, 2...) after the page loads 
-    $(".smartdocs-devicetype")[0].click();
-    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
-    console.log('pre-selecting devicetype before "ready" function');      
-
       }
     }
     
@@ -391,14 +386,18 @@
       }
     } */
 
+/*    PROMPT THE USER TO SELECT A DEVICE
+
       var myVariable = 'Select a Model from the SmartDocs bar';
       window.alert(myVariable);
 
+/*       
     // Pre-select an item on the list (0, 1, 2...) after the page loads
     $(".smartdocs-devicetype")[0].click();
     //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
         console.log('pre-selecting devicetype');
     //
+*/
     $( "#smartdocs-help" ).click(function() {
         console.log('Show SmartDocs help');
         $("#modal-smartdocs-info").modal({show: true});
@@ -440,9 +439,6 @@
           clear('all');       
           
         }
-   $(".smartdocs-devicetype")[0].click();
-    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
-        console.log('pre-selecting after the smartdocs menu is drawn');
 
     });
     $( "#smartdocs-next" ).click(function() {
@@ -509,5 +505,8 @@
         }
     }); 
 
+   $(".smartdocs-devicetype")[0].click();
+    //REPORT THE ACTIVITY IN THE JAVASCRIPT CONSOLE 
+        console.log('pre-selecting devicetype before the final });');
     });
 </script>

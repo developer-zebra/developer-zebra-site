@@ -4,7 +4,8 @@ title: Hotspot Enable/Disable
 type: parm
 order: 71
 mx: "6.3"
-devicetype: A
+devicetype: A,B
+info: WWAN-enabled devices only 
 parm:
   pivotal: No
   presentif: The "Use Hotspot Options" checkbox is checked
@@ -18,12 +19,14 @@ parm:
       description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
     - code: 1
       mx: "6.3"
-      devicetype: A
+      devicetype: A,B
+      info: WWAN-enabled devices only 
       name: Enable
       description: Enables the device to be used as a Wi-Fi hotspot. 
     - code: 0
       mx: "6.3"
-      devicetype: A
+      devicetype: A,B
+      info: WWAN-enabled devices only 
       name: Disable
       description: Disables use of the device as a Wi-Fi hotspot. 
 ---

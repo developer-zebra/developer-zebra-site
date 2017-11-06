@@ -5,6 +5,7 @@ type: parm
 order: 81
 mx: "6.3"
 devicetype: A,B
+info: WWAN-enabled devices only 
 parm:
   presentif: The "Specify Hotspot Options" is checked, the "Protect Hotspot Passphrase" checkbox is unchecked and "Hotspot" is set to "Enable"
   pivotal: No

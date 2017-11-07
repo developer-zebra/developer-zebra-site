@@ -13,9 +13,30 @@ Works with the RFID accessory for Zebra devices.
 
 ### Main Functionality
 
-* Enable/Disable 
- *  
- * 
- * 
-*   
+* Set the link profile
+* Set the Tari level from 6250 - 25000
+* Update device firmware 
+* Enable/Disable: 
+ * First-seen timestamp
+ * Last-seen timestamp
+ * Protocol control field
+ * Received signal strength indicator
+ * Phase difference
+ * Channel index
+ * Unique tag reporting
+ * Tag-seen count
+ * Dynamic power optimization
+ * Channel hopping
+ * Start/Stop RFID operation on trigger
+ * ZETI Echo/ZETI CRC
+ * ZETI operation-end notifications
+ * ZETI operation-start notifications
+ * ZETI operation-stop notifications
+* Enable/Disable UI for: 
+ * UI for RFID Manager
+ * Firmware Update
+ * Settings Control
+* Set the country of operation
+* Select tag queries on all, or SL-asserted or de-asserted
+* Query session S0-S3
 

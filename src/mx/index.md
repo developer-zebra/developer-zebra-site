@@ -159,6 +159,10 @@ csps:
     url: /mx/remotescannermgr
     csp: remotescannermgr
   - type: section
+    title: RFID Manager
+    url: /mx/rfidmgr
+    csp: rfidmgr  
+  - type: section
     title: Scan Mode Manager
     url: /mx/scanmodemgr
     csp: scanmodemgr

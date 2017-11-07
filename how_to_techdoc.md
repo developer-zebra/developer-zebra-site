@@ -87,7 +87,7 @@ From within the branch that develop is merging into:
 * Create a folder for the new MX version, following the existing naming convention
 * Copy the new DSDs to the new folder
 * Open the file "/DSD/index.dsd" 
-* Create a new <characteristic> node by copying that of the prior version
+* Create a new &lt;characteristic&gt; node by copying that of the prior version
 * Modify where necessary for the new version number
 * Add new line(s) for new CSPs, if any 
 * Launch EMDK and select Profile Manager from EMDK menu
@@ -100,7 +100,8 @@ From within the branch that develop is merging into:
 * Rename the folders as needed to correspond to the new DSD
 * Search and replace the contents of the copied index.md files for mx: "x.x"; osx: "x.x"; apilevel: "xx"; csp: name; and any other global information, as appropriate
 * Manually edit remaining file content as appropriate to document usage CSP (see gerrit repo for Mini-HLD, release notes and other techteam artifacts provided by engineering. Also see APA slides)
-* Edit /mx/index.md; /mx/newCSPname/index.md; /mx/compatibility/index.md as needed for the new CSP
-* Edit /src/build.js
+* Edit /mx/index.md; /mx/&lt;newCSPname&gt;/index.md; /mx/compatibility/index.md as needed for the new CSP
+* Edit /src/build.js (if necessary)
 * If a new version of MX or OSx is required, edit /partials/navbar-smartdocs.html
-* copy edited build and navbar-smartdocs files to stage and production servers
+* Build and copy new /mx folder to stage for validation 
+* Once validated and corrected, rebuild and copy to production server

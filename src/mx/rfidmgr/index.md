@@ -1,7 +1,7 @@
 ---
 csp: rfidmgr
-title: Bluetooth Manager
-description: The BluetoothMgr controls whether to allow new devices to pair.
+title: RFID Manager
+description: The RfidMgr is a plug-in CSP for controlling optional RFID scanning accessories.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

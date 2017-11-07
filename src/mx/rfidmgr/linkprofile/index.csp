@@ -14,16 +14,221 @@ parm:
   list:
     - code: 0
       devicetype: A
-      name: Disable
+      name: Link Profile 0
       mx: "6.1"
       apilevel: "23"
       description: Disables the timestamp for first-sent codes.
     - code: 1
       devicetype: A
-      name: Enable
+      name: Link Profile 1
       mx: "6.1"
       apilevel: "23"
       description: Enables the timestamp for first-sent codes.
+    - code: 2
+      devicetype: A
+      name: Link Profile 2
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 3
+      devicetype: A
+      name: Link Profile 3
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 4
+      devicetype: A
+      name: Link Profile 4
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 5
+      devicetype: A
+      name: Link Profile 5
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 6
+      devicetype: A
+      name: Link Profile 6
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 7
+      devicetype: A
+      name: Link Profile 7
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 8
+      devicetype: A
+      name: Link Profile 8
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 9
+      devicetype: A
+      name: Link Profile 9
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 10
+      devicetype: A
+      name: Link Profile 10
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 11
+      devicetype: A
+      name: Link Profile 11
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 12
+      devicetype: A
+      name: Link Profile 12
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 13
+      devicetype: A
+      name: Link Profile 3513
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 14
+      devicetype: A
+      name: Link Profile 14
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 15
+      devicetype: A
+      name: Link Profile 15
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 16
+      devicetype: A
+      name: Link Profile 16
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 17
+      devicetype: A
+      name: Link Profile 17
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 18
+      devicetype: A
+      name: Link Profile 18
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 19
+      devicetype: A
+      name: Link Profile 19
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 20
+      devicetype: A
+      name: Link Profile 20
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 21
+      devicetype: A
+      name: Link Profile 21
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 22
+      devicetype: A
+      name: Link Profile 22
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 23
+      devicetype: A
+      name: Link Profile 23
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 24
+      devicetype: A
+      name: Link Profile 24
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 25
+      devicetype: A
+      name: Link Profile 25
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 26
+      devicetype: A
+      name: Link Profile 26
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 27
+      devicetype: A
+      name: Link Profile 27
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 28
+      devicetype: A
+      name: Link Profile 28
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 29
+      devicetype: A
+      name: Link Profile 29
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 30
+      devicetype: A
+      name: Link Profile 30
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 31
+      devicetype: A
+      name: Link Profile 31
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 32
+      devicetype: A
+      name: Link Profile 32
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 33
+      devicetype: A
+      name: Link Profile 33
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 34
+      devicetype: A
+      name: Link Profile 34
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+    - code: 35
+      devicetype: A
+      name: Link Profile 35
+      mx: "6.1"
+      apilevel: "23"
+      description: Enables the timestamp for first-sent codes.
+
 ---
 
 Controls whether send a timestamp. 

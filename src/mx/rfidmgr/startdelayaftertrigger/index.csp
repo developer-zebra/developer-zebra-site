@@ -1,0 +1,20 @@
+---
+csp: rfidmgr
+title: Start Delay After Trigger
+type: parm
+order: 15
+mx: "7.0"
+apilevel: "24"
+devicetype: A
+parm:
+  presentif: The "RFID Advanced Options" checkbox is Checked
+  pivotal: No
+  name: StartDelayafterTrigger
+  type: string
+---
+
+Used to specify the 
+
+**Input value rules**: 
+
+* String representing the BLAH BLAH BLAH. For example: "002900" 

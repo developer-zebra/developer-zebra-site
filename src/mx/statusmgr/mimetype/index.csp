@@ -1,6 +1,6 @@
 ---
 csp: statusmgr
-title: Action Name
+title: MIME Type
 type: parm
 order: 4
 mx: "5.0"
@@ -8,10 +8,10 @@ devicetype: A
 parm:
   pivotal: No 
   presentif: The Request Action is "Add/Replace Status Request" or "Remove State Request"
-  name: ActionName
+  name: MimeType
 ---
 
-Used to specify the Action Name of the Android package about which to send the status notification.
+Used to specify an optional MIME type, which signals the format of a document. 
 
 **Parm value input rules**: 
 

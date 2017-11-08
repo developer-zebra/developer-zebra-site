@@ -1,6 +1,6 @@
 ---
 csp: statusmgr
-title: Notify Body
+title: Notify Header
 type: parm
 order: 9
 mx: "5.0"
@@ -8,12 +8,12 @@ devicetype: A,B
 parm:
   pivotal: No 
   presentif: The Status Request Action is "Notify Status"
-  name: NotifyBody
+  name: NotifyHeader
 ---
 
-Used to specify text to send in the status notification.
+Used to specify optional text to send as the header of the status notification.
 
 **Parm value input rules**: 
 
-* String from 1-100 characters
+* String with at least 1 character, if used
 

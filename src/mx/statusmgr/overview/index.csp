@@ -6,4 +6,4 @@ devicetype: A,B
 order: 0
 ---
 
-The Status Manager allows you to set notification options while MX is processing the XML stream.
+The Status Manager (StatusMgr) offers a mechanism for setting optional notifications to be displayed while MX is processing the XML stream.

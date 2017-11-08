@@ -7,6 +7,7 @@ mx: "5.0"
 devicetype: A,B
 parm:
   pivotal: Yes
+  presentif: The Status Request Action is "Notify Status"
   name: NotifyState
   type: list
   list:
@@ -16,12 +17,12 @@ parm:
       description: 
     - code: 1
       devicetype: A,B
-      name: In progress
-      description: Notify the percent of progress
+      name: Inprogress
+      description: Returns the progress as a percentage.
     - code: 3
       devicetype: A,B
       name: Complete
-      description: Notify when complete
+      description: Sends a notification when complete. 
 ---
 
-This parm allows you to specify the action to take for status requests.
+Used to specify the action to take for status requests.

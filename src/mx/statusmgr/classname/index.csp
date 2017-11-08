@@ -7,13 +7,13 @@ mx: "5.0"
 devicetype: A,B
 parm:
   pivotal: No 
-  presentif: The Status Request Action is "Add/Replace Status Request" or "Remove State Request"
+  presentif: The Request Action is "Add/Replace Status Request" or "Remove State Request"
   name: ClassName
 ---
 
-This parm allows you to specify the class name of the Android package that this status notification pertains to.
+Used to specify the class name of the Android package about which to send the status notification.
 
-Parm value input rules: 
+**Parm value input rules**: 
 
-* String with a minimum size of 1
+* String with a minimum of 1 character
 

@@ -15,12 +15,12 @@ parm:
       mx: "4.4"
       devicetype: A,B
       name: (checked)
-      description: Uses firmware update.
+      description: Causes device firmware to be updated.
     - code: 0
       mx: "4.4"
       devicetype: A,B
       name: (unchecked)
-      description: Does not use the firmware update. 
+      description: Skips the device firmware update. 
 ---
 
-Used to 
+Used to control whether device firmware will be updated using the firmware update file specified in the Firmware Update parameter. **File must be present in device storage for this action to be successful**. 

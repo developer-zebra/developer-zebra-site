@@ -587,7 +587,7 @@ If users are permitted to access the camera app from User Mode, some organizatio
 
     // Display lock screen:
     
-    <bypass_keyguard>1</bypass_keyguard>
+    <bypass_keyguard>0</bypass_keyguard>
 
 -----
 
@@ -599,7 +599,7 @@ To permit access to the camera app only after the device has been unlocked, set 
 
     :::xml
     <keyguard_camera_disabled>1</keyguard_camera_disabled>
-    <bypass_keyguard>1</bypass_keyguard>
+    <bypass_keyguard>0</bypass_keyguard>
     ...
     <apps_enabled>
     ...
@@ -654,7 +654,7 @@ If users are permitted to access the search app from User Mode, some organizatio
 
     // Display lock screen:
     
-    <bypass_keyguard>1</bypass_keyguard>
+    <bypass_keyguard>0</bypass_keyguard>
 
 -----
 
@@ -666,7 +666,7 @@ To permit access to the search app only after the device has been unlocked, set 
 
     :::xml
     <keyguard_search_disabled>1</keyguard_search_disabled>
-    <bypass_keyguard>1</bypass_keyguard>
+    <bypass_keyguard>0</bypass_keyguard>
     ...
     <apps_enabled>
         <application package="search.app.package.name"/> // i.e. "com.android.search"

@@ -717,7 +717,7 @@ Controls whether the Keyguard screen (also known as the "Lock Screen") is displa
 
 * **On devices running Android L**, the Bypass Keyguard feature fails to unlock the screen after rebooting the device.
 
-* **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent the multi-user login screen from being displayed**. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
+* **On devices that employ MX Multi-user features**, a setting of 1 for this tag **will prevent the multi-user login screen from being displayed**. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
 <img alt="" style="height:350px" src="keyguard.png"/>
 _The Android Keyguard (also known as the Lock Screen)_.
@@ -782,7 +782,7 @@ If users are permitted to access the camera app from User Mode, some organizatio
 
     // Display lock screen:
     
-    <bypass_keyguard>1</bypass_keyguard>
+    <bypass_keyguard>0</bypass_keyguard>
 
 -----
 
@@ -794,7 +794,7 @@ To permit access to the camera app only after the device has been unlocked, set 
 
     :::xml
     <keyguard_camera_disabled>1</keyguard_camera_disabled>
-    <bypass_keyguard>1</bypass_keyguard>
+    <bypass_keyguard>0</bypass_keyguard>
     ...
     <apps_enabled>
     ...
@@ -849,7 +849,7 @@ If users are permitted to access the search app from User Mode, some organizatio
 
     // Display lock screen:
     
-    <bypass_keyguard>1</bypass_keyguard>
+    <bypass_keyguard>0</bypass_keyguard>
 
 -----
 
@@ -861,7 +861,7 @@ To permit access to the search app only after the device has been unlocked, set 
 
     :::xml
     <keyguard_search_disabled>1</keyguard_search_disabled>
-    <bypass_keyguard>1</bypass_keyguard>
+    <bypass_keyguard>0</bypass_keyguard>
     ...
     <apps_enabled>
         <application package="search.app.package.name"/> // i.e. "com.android.search"

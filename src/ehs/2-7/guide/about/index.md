@@ -307,7 +307,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 ### Android Nougat Notes
 **_Applies to devices running Android Nougat 7.x and higher_**:
 
-* **Manual push is no longer supported**. To deploy files to the device, use [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android) Profile Manager. 
+* **Manual push is no longer supported for installing a device root certificate**. To deploy cert files to the device, use [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android) Profile Manager. 
 
 -----
 

@@ -297,7 +297,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **Support for TC51, TC56, TC70x, TC75x** Touch Computers running Android Nougat
 
 #### New Features
-* [Enable/Disable Recent Apps button]() on Android Nougat devices
+* [Enable/Disable Recent Apps button](../settings/#recentappsbuttondisabled) on Android Nougat devices
 * [Enable/Disable EHS Logging](../features/#ehslog) and set a maximum log file size 
 * [Battery Health Percentage now displayed](../setup/#batteryandwifiquickview) on Battery info and Quick info screens on devices equipped with Zebra Power Precision Plus battery
 * [Enable/Disable wallpaper stretching](../settings/#wallpaperstretching) to expand an image to fill the device screen. 

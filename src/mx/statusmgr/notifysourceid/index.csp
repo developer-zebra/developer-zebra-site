@@ -11,7 +11,7 @@ parm:
   name: NotifySourceId
 ---
 
-Used to specify identifier string of the status notification.
+Used to specify an identifier string of a status notification.
 
 **Parm value input rules**: 
 

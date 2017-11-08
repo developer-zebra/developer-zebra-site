@@ -19,7 +19,7 @@ parm:
       devicetype: A,B
       name: Notify Status
       mx: "5.0"
-      description: Removes the specified status request.
+      description: Performs a notification action.
 ---
 
 Used to specify the nofitication action to take for status requests.

@@ -16,7 +16,14 @@ Many of the capabilities of EHS can be accomplished manually on the device, prog
 -----
 
 ## Manual Installation
-These instructions apply to direct installation (from a computer to a single device) using the `EHS_0207xx.apk` EHS 2.7 installer file. 
+These instructions apply to direct installation (from a computer to a single device) using the EHS 2.7 installer (.apk) file. 
+
+<!--
+### Installer (.apk) File Info
+
+* Zebra TC20/TC25 devices: `EHS_0207xx.apk` 
+* All other [supported Zebra devices](../about/#supporteddevices): `EHS_0207xx.apk` 
+-->
 
 Read about how to [uninstall EHS](#uninstallation) later in this guide. 
 

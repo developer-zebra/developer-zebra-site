@@ -2,12 +2,12 @@
 title: Download Enterprise Keyboard
 layout: guide.html
 product: Enterprise Keyboard
-productversion: '1.5'
+productversion: '1.6'
 ---
 
 ### Supported Devices
 
-EKB 1.5 can be downloaded <u>as a stand-alone app (.apk)</u> for the following Zebra Android devices: 
+EKB 1.6 can be downloaded <u>as a stand-alone app (.apk)</u> for the following Zebra Android devices: 
 
 **Running Android KitKat**: 
 

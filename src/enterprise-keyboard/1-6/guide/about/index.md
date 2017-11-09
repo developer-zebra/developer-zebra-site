@@ -2,7 +2,7 @@
 title: About Enterprise Keyboard
 layout: guide.html
 product: Enterprise Keyboard
-productversion: '1.5'
+productversion: '1.6'
 ---
 
 ## Overview
@@ -37,6 +37,8 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### New in v1.5
 
+
+OLD OLD OLD:
 **New device support**: 
 * **MC40 KK**
 * **TC55 KK**
@@ -44,7 +46,19 @@ This version of Enterprise Keyboard includes the following languages:
 * **MTC8000 L**
 * **WT6000 L**
 
-See the [EKB 1.5 download page](../../download) for a full list of supported devices. 
+OLD OLD OLD
+See the [EKB 1.6 download page](../../download) for a full list of supported devices. 
+
+-----
+
+### Added in v1.5
+
+**New device support**: 
+* **MC40 KK**
+* **TC55 KK**
+* **TC75x KK, L, M**
+* **MTC8000 L**
+* **WT6000 L**
 
 -----
 

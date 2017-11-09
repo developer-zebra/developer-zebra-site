@@ -236,8 +236,10 @@ products:
     sections:
       - title: About
         url: /mx/overview
-      - title: Compatibility
+      - title: Feature Matrix
         url: /mx/compatibility
+      - title: TC20/TC25 Feature Matrix
+        url: /mx/tc2x
       - title: Which version do I have?
         url: /mx/mx-version-on-device
   - title: SimulScan

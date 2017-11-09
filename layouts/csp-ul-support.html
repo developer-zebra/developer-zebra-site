@@ -53,7 +53,7 @@
                                                 <th> OSX </th>
                                                 <th> MX </th>
                                                 <th> Android API </th>
-                                                <th> Model </th>
+                                                 <!-- <th> Model </th> -->
                                             </tr>
                                             {{#each ../collections.csp}}
                                             {{#is ../csp this.csp}}
@@ -96,17 +96,18 @@
                                                                 All
                                                             {{/if}}
                                                         </td>
-                                                      <td class="col-md-2">
+                                                    <!--   <td class="col-md-2">
                                                             {{#if this.devicetype}}
                                                                 {{#is this.devicetype "A,B" }}
                                                                     TC20/TC25
-                                                                {{else}}
-                                                                    <!-- {{this.devicetype}} -->
-                                                                    N/A on TC20/TC25
+                                                                {{else}} -->
+                                                                    <!-- KEEP THIS COMMENTED
+                                                                        {{this.devicetype}} -->
+                                                    <!--    N/A on TC20/TC25
                                                                 {{/is}}
                                                             {{else}}
                                                                 All
-                                                            {{/if}}
+                                                            {{/if}} -->
                                                         </td>
                                                     </tr>                                                          
 
@@ -149,17 +150,18 @@
                                                                 All
                                                             {{/if}}
                                                         </td>
-                                                        <td class="col-md-2">
+                                                   <!--      <td class="col-md-2">
                                                             {{#if this.devicetype}}
                                                                 {{#is this.devicetype "A,B" }}
                                                                     TC20/TC25
-                                                                {{else}}
-                                                                    <!-- {{this.devicetype}} -->
-                                                                    N/A on TC20/TC25
+                                                                {{else}} -->
+                                                                    <!-- KEEP THIS COMMENTED
+                                                                        {{this.devicetype}} -->
+                                                    <!--                 N/A on TC20/TC25
                                                                 {{/is}}
                                                             {{else}}
                                                                 All
-                                                            {{/if}}
+                                                            {{/if}} -->
                                                         </td>
                                                     </tr>                                                                                     
                                                     {{/each}}

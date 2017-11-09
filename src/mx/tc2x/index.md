@@ -1,5 +1,5 @@
 ---
-title: Zebra TC20/TC25 Device Features
+title: TC20/TC25 Feature Matrix
 layout: csp-ul-support.html
 mxversions:
   - text: MX 7.x

@@ -25,7 +25,7 @@ products:
       - url: https://developer.zebra.com/docs/DOC-3040
         label: '3.0'
   - title: DataWedge
-    description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for other apps on the device.
+    description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for virtually any other app on the device.
     url: /datawedge/6-5/guide/about
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs

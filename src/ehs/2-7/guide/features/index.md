@@ -72,7 +72,7 @@ A device not in Secure Mode is running in Normal Mode, which is the default. Whe
 ### Enable Secure Mode
 These instructions require [Android Debug Bridge (ADB)](https://developer.android.com/studio/command-line/adb.html) for communication with the device and [OpenSSL for Windows](#installopenssl) for the creation of device certificate and private key files. If necessary, please install ADB and OpenSSL before proceeding. 
 
-**Important: Manual push is not supported on devices running Android N and higher**. Use [StageNow](../../../../stagenow) with the Certificate Manager Setting Type or [EMDK](../../../../emdk-for-android) and the Certificate Manager CSP in Profile Manager to deploy certificates to a device.
+**Important: To enable Secure Mode in EHS, manual file-push is no longer supported in Android N (and higher) for installing a device root certificate**. Deployment of certificates to a device to enable Secure Mode requires use of the Certificate Manager Setting Type in [Zebra StageNow](../../../../stagenow) or the Certificate Manager CSP in [EMDK](../../../../emdk-for-android)'s Profile Manager.  
 
 &#49;. Create a device root certificate (`caroot.pem`) and private key (`privatekey.pem`) using the following OpenSSL command: 
 

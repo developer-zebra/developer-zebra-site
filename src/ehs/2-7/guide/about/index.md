@@ -307,12 +307,12 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 ### Android Nougat Notes
 **_Applies to devices running Android Nougat 7.x and higher_**:
 
-* **Manual push is no longer supported for installing a device root certificate**. To deploy cert files to the device, use [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android) Profile Manager. 
+* **To enable Secure Mode in EHS, manual file-push is no longer supported in Android N for installing a device root certificate**. To deploy cert files to the device, use Certificate Manager through [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android). Learn more [about Secure Mode](../features/#securemode). 
 
 -----
 
 ### Android Marshmallow Notes
-**_Apply to devices running Android 6.x Marshmallow only_**:
+**_Applies to devices running Android 6.x Marshmallow only_**:
 
 * **Selecting EHS as the default launcher will not be permanent** after a reboot on some devices if the selection was made while in User Mode. <img style="height:100px" src="homePrompt.png"/> **To avoid this issue, switch to Admin Mode** and press the HOME button; the "Select a home app" pop-up appears. **Select EHS and tap "Always"** to make the selection permanent.
 
@@ -323,7 +323,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 -----
 
 ### Android Lollipop and Marshmallow Notes 
-**_Apply to devices running Android Lollipop 5.x and higher (including Marshmallow)_**:
+**_Applies to devices running Android Lollipop 5.x and higher (including Marshmallow)_**:
 
 * **[Status Bar Pull-down](../settings#disablestatusbarpulldown) behavior has changed**. A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (referred to there as Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
 

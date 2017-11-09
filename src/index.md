@@ -185,21 +185,23 @@ products:
         label: '2.3'
   - title: Enterprise Keyboard
     description: A customizable soft keyboard made specifically for fast and accurate input by workers in the enterprise.
-    url: /enterprise-keyboard/1-5/guide/about
+    url: /enterprise-keyboard/1-6/guide/about
     image: /enterprise-keyboard/ekb_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-keyboard/1-5/guide/about
+        url: /enterprise-keyboard/1-6/guide/about
       - title: Setup
-        url: /enterprise-keyboard/1-5/guide/setup
+        url: /enterprise-keyboard/1-6/guide/setup
       - title: Customize
-        url: /enterprise-keyboard/1-5/guide/settings
+        url: /enterprise-keyboard/1-6/guide/settings
       - title: Download
-        url: /enterprise-keyboard/1-5/download
+        url: /enterprise-keyboard/1-6/download
     versions:
+      - url: enterprise-keyboard/1-6/guide/about
+        label: '1.6'
       - url: enterprise-keyboard/1-5/guide/about
-        label: '1.5'
+        label: '1.5'      
       - url: enterprise-keyboard/1-4/guide/about
         label: '1.4'
       - url: enterprise-keyboard/1-3/guide/about

@@ -50,6 +50,7 @@ parm:
     - code: 8
       devicetype: A,B
       name: OS Update
+      info: TC70/TC75 KK and L do not support .upl files
       mx: "4.1"
       apilevel: "16"
       description: Launches an OS Update on the device using the specified OS Update Zip file. See Overview for more information.

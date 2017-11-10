@@ -159,7 +159,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
-<tr >
 <tr>
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC51 / TC56</font></p>
@@ -175,6 +174,23 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 </tr>
+
+<tr>
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC20 / TC25</font></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+</tr>
+
 
 <tr >
 <td style="width: 118.35pt;" width="158">
@@ -291,21 +307,21 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 >**This version does not support Android KitKat**. 
 
-<!-- LEAVE ONE LINE OF BLANK SPACE BETWEEN THIS AND ABOVE 
->**Zebra TC20/TC25 devices require a device-specific .apk file**. 
--->
-
 **EHS 2.7 supports Zebra devices running Android Lollipop and higher only**. Zebra continues to support earlier versions of EHS for use on devices running KitKat. To use EHS on a device running KitKat, please [download EHS 2.6](/ehs/2-6/download) or an earlier version. 
 
 #### Device Support
-* **Support for TC51, TC56, TC70x, TC75x** Touch Computers running Android Nougat
-* **TC20, TC25** Touch Computers running Android Nougat (device-specific .apk)
+EHS 2.7 adds support for the following devices running Android Nougat:  
+
+* **Support for TC51, TC56, TC70x, TC75x** Touch Computers 
+* **TC20, TC25** Touch Computers (discrete .apk)
+
+>**Zebra TC20/TC25 devices require a separate, device-specific .apk file** (both included in download). 
 
 #### New Features
 * [Enable/Disable Recent Apps button](../settings/#recentappsbuttondisabled) on Android Nougat devices
 * [Enable/Disable EHS Logging](../features/#ehslog) and set a maximum log file size 
 * [Battery Health Percentage now displayed](../setup/#batteryandwifiquickview) on Battery info and Quick info screens on devices equipped with Zebra Power Precision Plus battery
-* [Enable/Disable wallpaper stretching](../settings/#wallpaperstretching) to expand an image to fill the device screen. 
+* [Enable/Disable wallpaper stretching](../settings/#wallpaperstretching) to expand an image to fill the device screen
 
 -----
 

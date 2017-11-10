@@ -5,22 +5,28 @@ product: Enterprise Home Screen
 productversion: '2.7'
 ---
 
-## Latest Release
+### EHS 2.7 Compatibility Notes
 
-Zebra recommends using the latest release of EHS whenever possible. EHS 2.7 adds support for the following devices running Android Nougat:  
+* **Supports Android Lollipop and higher only** 
+* **Supports Android Nougat on**:  
+ * TC20 
+ * TC25 
+ * TC51
+ * TC56
+ * TC70x
+ * TC75x 
+* Download package includes two separate .apk files: 
+ * `EHS_0207xx_A.apk` - for all [supported devices](../guide/about#supporteddevices) **_<u>except</u>_ TC20/TC25**
+ * `EHS_0207xx_B.apk` - for TC20/TC25 devices
 
-* **TC51, TC56, TC70x, TC75x** 
-* **TC20, TC25**
 
-The EHS 2.7 download includes two separate .apk files: 
-
-* `EHS_0207xx_A.apk` - for all devices and Android versions **_except_ TC20/TC25**
-* `EHS_0207xx_B.apk` - for TC20/TC25 devices
-
-See the full list of [devices supported by EHS v2.7](../guide/about#supporteddevices). 
-
-## Download EHS
+### Download EHS 2.7
 
 Visit the [Enterprise Home Screen download page](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) to select a version for download. 
 
 After download, proceed to the [EHS Setup page](../guide/setup). 
+
+### KitKat Support
+
+For KitKat support, [download EHS 2.6](/ehs/2-6/download) or earlier. 
+

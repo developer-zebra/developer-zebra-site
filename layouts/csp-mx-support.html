@@ -18,7 +18,7 @@
                                 <div class="">
                                     <h1>{{ title }}</h1>
                                     <p>
-                                    <h4>See the <a href="/mx/tc2x">TC20/TC25 Feature Matrix</a></h4></p> 
+                                    <h4>See the <a href="/mx/tc2x">TC20/TC25 MX Feature Subset</a></h4></p> 
                                     <p>
                                     {{#if product}}
                                     {{ product }}
@@ -55,7 +55,7 @@
                                                 <th> OSX </th>
                                                 <th> MX </th>
                                                 <th> Android API </th>
-                                                <th> Model </th>
+                                                <!-- <th> Model </th> -->
                                             </tr>
                                             {{#each ../collections.csp}}
                                             {{#is ../csp this.csp}}
@@ -97,18 +97,18 @@
                                                                 All
                                                             {{/if}}
                                                         </td>
-                                                      <td class="col-md-2">
-                                                            {{#if this.devicetype}}
+                                                   <!--   <td class="col-md-2">
+                                                             {{#if this.devicetype}}
                                                                 {{#is this.devicetype "A,B" }}
                                                                     All
-                                                                {{else}}
+                                                                {{else}} -->
                                                                 <!-- {{this.devicetype}} -->
-                                                                <del>TC20/TC25</del>
+                                                                <!-- <del>TC20/TC25</del>
                                                                 {{/is}}
                                                             {{else}}
                                                                 All
                                                             {{/if}}
-                                                        </td>
+                                                        </td> -->
                                                     </tr>                                                          
 
                                                 {{#is this.parm.type "list"}}
@@ -149,17 +149,17 @@
                                                                 All
                                                             {{/if}}
                                                         </td>
-                                                        <td class="col-md-2">
+                                                        <!-- <td class="col-md-2">
                                                             {{#if this.devicetype}}
                                                                 {{#is this.devicetype "A,B" }}
                                                                     All
-                                                                {{else}}
+                                                                {{else}} -->
                                                                     <!-- {{this.devicetype}} -->
-                                                                <del>TC20/TC25</del>
+                                                                <!-- <del>TC20/TC25</del>
                                                                 {{/is}}
                                                             {{else}}
                                                                 All
-                                                            {{/if}}
+                                                            {{/if}} -->
                                                         </td>
                                                     </tr>                                                                                     
                                                     {{/each}}

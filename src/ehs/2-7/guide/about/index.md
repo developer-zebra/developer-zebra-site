@@ -161,14 +161,14 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC51 / TC56</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">TC20, TC25</font></p>
 </td>
 
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
@@ -177,20 +177,19 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC20 / TC25</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">TC51, TC56</font></p>
 </td>
 
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
 </td>
 </tr>
-
 
 <tr >
 <td style="width: 118.35pt;" width="158">
@@ -312,10 +311,14 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 #### Device Support
 EHS 2.7 adds support for the following devices running Android Nougat:  
 
-* **Support for TC51, TC56, TC70x, TC75x** Touch Computers 
-* **TC20, TC25** Touch Computers (discrete .apk)
+* TC20* 
+* TC25* 
+* TC51
+* TC56
+* TC70x
+* TC75x 
 
->**Zebra TC20/TC25 devices require a separate, device-specific .apk file** (both included in download). 
+( * ) Requires a device-specific .apk file. See [download page](../../download) for details. 
 
 #### New Features
 * [Enable/Disable Recent Apps button](../settings/#recentappsbuttondisabled) on Android Nougat devices

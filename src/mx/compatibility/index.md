@@ -1,5 +1,5 @@
 ---
-title: MX Feature Matrix
+title: Full MX Feature Matrix
 layout: csp-mx-support.html
 mxversions:
   - text: MX 4.2

@@ -1,5 +1,5 @@
 ---
-title: MX Feature Matrix
+title: Full MX Feature Matrix
 publish: false
 menu:
   items:
@@ -210,9 +210,7 @@ csps:
     title: XML Manager
     url: /mx/xmlmgr
     csp: xmlmgr
----
-                      
----
+---              
 
 
 

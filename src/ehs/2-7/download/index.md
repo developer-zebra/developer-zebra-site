@@ -9,6 +9,7 @@ productversion: '2.7'
 
 * **Supports Android Lollipop and higher only** 
 * **Supports Android Nougat on**:  
+ * MC33
  * TC20 
  * TC25 
  * TC51

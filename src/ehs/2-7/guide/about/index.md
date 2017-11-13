@@ -112,6 +112,23 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
+<tr>
+<td style="width: 150.35pt;"  width="250">
+<p class="MsoNormal"><font color="#333399" size="3">MC33</font></p>
+</td>
+
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+</tr>
+
 <tr >
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
@@ -311,6 +328,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 #### Device Support
 EHS 2.7 adds support for the following devices running Android Nougat:  
 
+* MC33
 * TC20* 
 * TC25* 
 * TC51

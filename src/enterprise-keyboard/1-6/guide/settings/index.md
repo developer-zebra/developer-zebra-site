@@ -70,30 +70,59 @@ Selected languages will appear in the language  menu in the Enterprise Keyboard:
 ------
 
 ### Preferences
-The Preferences section controls keypress feedback and other aids to productivity. Default settings are shown here:  
+The Preferences section controls keypress feedback, default layout and tab selections, and other aids to productivity. Default settings are shown here:  
 
 <img alt="" style="height:350px" src="ekb_prefs.png"/>
+<img alt="" style="height:91px" src="ekb1.6_prefs_crop.png"/>
 <br>
 
 ##### Set preferences as desired: 
 
-* <b>Auto-capitalization</b> automatically capitalizes the first word of each sentence following a period. 
+* <b><u>Auto-capitalization</u></b> automatically capitalizes the first word of each sentence following a period. 
 
-* <b>Double-space period</b> automatically inserts a period and space when double-tapping the spacebar. 
+* <b><u>Double-space period</u></b> automatically inserts a period and space after double-tapping the spacebar. 
 
-* <b>Vibration on keypress</b> sets the device to vibrate when a key is pressed. Duration is configurable in [Advanced settings](#advanced). 
+* <b><u>Vibration on keypress</u></b> sets the device to vibrate when a key is pressed. Duration is configurable in [Advanced settings](#advanced). 
 
-* <b>Sound on keypress</b> plays a sound when a key is pressed. Volume is configurable in [Advanced settings](#advanced).
+* <b><u>Sound on keypress</u></b> plays a sound when a key is pressed. Volume is configurable in [Advanced settings](#advanced).
 
-* <b>Popup on keypress</b> displays a pop-up of the key being pressed. <!--A delay can be added in [Advanced settings](#advanced).-->
+* <b><u>Popup on keypress</u></b> displays a pop-up of the key being pressed. <!--A delay can be added in [Advanced settings](#advanced).-->
 
-* <b>Voice input key</b> displays a key for allowing Enterprise Keyboard to accept spoken input using the mic (on GMS-enabled devices only). 
+* <b><u>Voice input key</u></b> displays a key for allowing Enterprise Keyboard to accept spoken input using the mic (on GMS-enabled devices only). 
 
-* <b>Show scan tab</b> displays a tab for switching to the scanner to collect barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
+* <b><u>Show scan tab</u></b> displays a tab for switching to the scanner to collect barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
 
-* <b>Flick</b> enables the alternate (long-press) character of a key to be input by "flicking" the key. 
+* <b><u>Flick</u></b> enables the alternate (long-press) character of a key to be input by "flicking" the key. 
 
-* <b>Numeric (Telephone)</b> layout appears when the numeric keypad is in focus. When disabled, the Calculator layout is used. 
+* <b><u>Numeric (Telephone)</u></b> layout appears when the numeric keypad is in focus. When disabled, the Calculator layout is used. 
+
+<!-- 
+<img alt="" style="height:350px" src="ekb1.6_nav.png"/>
+<br>
+ -->
+
+* <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar will be visible at all times except when next-word suggestions (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
+
+<!-- 
+<img alt="" style="height:350px" src="ekb1.6_prefs.png"/>
+<br>
+ -->
+* <b><u>Tab configuration</u></b> allows a user or administrator to enable or disable the numeric, alphanumeric, symbol and/or scan key-layout tab(s), hiding them from view and preventing display of the corresponding layout. <!-- **EKB will not permit all four tabs to be disabled at the same time**. -->
+
+* <b><u>Select prefer tab</u></b> causes that tab to appear whenever EKB is invoked. This option is controlled from within the Tab configuration panel (shown below). 
+
+<img alt="" style="height:350px" src="ekb1.6_tab_config.png"/>
+<br>
+
+**Tab Bar Notes**:
+
+* If either the tab bar or the suggestion bar are enabled, both will appear.
+* The tab bar will not appear if the Next Word Suggestions bar and the Voice Input Key are both disabled.
+* On GMS devices, if voice is enabled and the next-word suggestions feature is disabled, a blank suggestion bar will appear over the tab bar when words are being suggested.
+* If the `TYPE_TEXT_FLAG_NO_SUGGESTIONS` input type is enabled, neither the tab bar nor the suggestion bar will appear. [More about Android input types](https://developer.android.com/reference/android/text/InputType.html).
+* Enabling the Symbol tab disables remapping of the Numeric P3 key.
+* Enabling the Alpha tab disables remapping of the Numeric P4 key.
+* Enabling the Numeric tab disables remapping of the Alphanumeric P1 key.
 
 ------
 
@@ -105,17 +134,17 @@ Text Correction controls automatic corrections to typed text based the predefine
 
 ##### Set preferences as desired: 
 
-<b>Block offensive words</b> prevents display of spelling suggestions that might be deemed offensive or insensitive as determined by external standards of decency.
+<b><u>Block offensive words</u></b> prevents display of spelling suggestions that might be deemed offensive or insensitive as determined by external standards of decency.
 
-<b>Auto-correction</b> automatically replaces misspelled words with those found in the Add-on and Personal dictionaries (see below). Replacements are executed by pressing the spacebar. 
+<b><u>Auto-correction</u></b> automatically replaces misspelled words with those found in the Add-on and Personal dictionaries (see below). Replacements are executed by pressing the spacebar. 
 
-<b>Show correction suggestions</b> displays suggested words while typing but does not replace them when the spacebar is pressed unless Auto-correction is also enabled.
+<b><u>Show correction suggestions</u></b> displays suggested words while typing but does not replace them when the spacebar is pressed unless Auto-correction is also enabled.
 
-<b>Personalized suggestions</b> learns from communications and typed data to improve suggestions.
+<b><u>Personalized suggestions</u></b> learns from communications and typed data to improve suggestions.
 
-<b>Suggest Contact names</b> automatically displays contacts from the contact list when typing names. 
+<b><u>Suggest Contact names</u></b> automatically displays contacts from the contact list when typing names. 
 
-<b>Next-word suggestions</b> looks at the word prior to the one being typed and displays words that might come next. This is sometimes referred to as "predictive text."
+<b><u>Next-word suggestions</u></b> looks at the word prior to the one being typed and displays words that might come next. This is sometimes referred to as "predictive text."
 
 -----
 

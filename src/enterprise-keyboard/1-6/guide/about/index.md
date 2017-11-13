@@ -35,19 +35,15 @@ This version of Enterprise Keyboard includes the following languages:
 
 -----
 
-### New in v1.5
+### New in v1.6
 
+A user (or administrator) can now enable or disable any key-layout tab (numeric, alphanumeric, symbol, scan). For Example, disabling the symbol tab hides the symbol-key layout tab and prevents navigation to that layout.
 
-OLD OLD OLD:
-**New device support**: 
-* **MC40 KK**
-* **TC55 KK**
-* **TC75x KK, L, M**
-* **MTC8000 L**
-* **WT6000 L**
+At least one tab must be enabled at all times. EKB will not permit all tabs to he disabled. (IS THIS CORRECT?)
 
-OLD OLD OLD
-See the [EKB 1.6 download page](../../download) for a full list of supported devices. 
+One tab can be selected as the default, to appear when EKB is launched (default tab must be enabled).
+
+See the [EKB 1.6 download page](../../download) for a list of supported devices. 
 
 -----
 

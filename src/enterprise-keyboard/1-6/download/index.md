@@ -15,8 +15,8 @@ EKB 1.6 can be downloaded <u>as a stand-alone app (.apk)</u> for the following Z
 * **TC55**
 * **TC70**
 * **TC75**
-* **TC8000**
 * **TC75x** 
+* **TC8000**
 
 **Running Android Lollipop**: 
 
@@ -25,8 +25,8 @@ EKB 1.6 can be downloaded <u>as a stand-alone app (.apk)</u> for the following Z
 * **MC40**
 * **TC70**
 * **TC75**
-* **TC8000**
 * **TC75x** 
+* **TC8000**
 * **WT6000**
 
 **Running Android Marshmallow**: 
@@ -37,6 +37,22 @@ EKB 1.6 can be downloaded <u>as a stand-alone app (.apk)</u> for the following Z
 * **TC56**
 * **TC70x**
 * **TC75x** 
+
+
+<!-- 
+SC shows support for M, L, KK on: 
+- ET50
+- ET55
+- MC40
+- TC51
+- TC55
+- TC56
+- TC70
+- TC70x
+- TC75
+- TC75x
+- TC8000
+-->
 
 <!-- 
 **NOTE**: The ability install OS Updates on Zebra devices running Android Lollipop has been disabled. **Enterprise Keyboard versions prior to 1.4 install as an OS update and therefore cannot be installed on devices running Lollipop**. For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

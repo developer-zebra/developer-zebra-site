@@ -1,0 +1,203 @@
+<Type Name="CradleLedFlashInfo" FullName="Symbol.XamarinEMDK.PersonalShopper.CradleLedFlashInfo">
+  <TypeSignature Language="C#" Value="public class CradleLedFlashInfo : Java.Lang.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CradleLedFlashInfo extends Java.Lang.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
+    <AssemblyVersion>2.4.0.87</AssemblyVersion>
+    <AssemblyVersion>2.5.0.41</AssemblyVersion>
+    <AssemblyVersion>2.5.0.48</AssemblyVersion>
+    <AssemblyVersion>2.6.0.69</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Java.Lang.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Android.Runtime.Register("com/symbol/emdk/personalshopper/CradleLedFlashInfo", DoNotGenerateAcw=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The class to hold the LED Flash settings.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CradleLedFlashInfo (IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="javaReference" Type="System.IntPtr" />
+        <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
+      </Parameters>
+      <Docs>
+        <param name="javaReference">
+        </param>
+        <param name="transfer">
+        </param>
+        <summary>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CradleLedFlashInfo (int p0, int p1, bool p2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 p0, int32 p1, bool p2) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register(".ctor", "(IIZ)V", "")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="p0" Type="System.Int32" />
+        <Parameter Name="p1" Type="System.Int32" />
+        <Parameter Name="p2" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="p0">onDuration: - LED on Duration in milliseconds .This is in mSecs and the range is from 0 mSec (minimum) to 65535 mSec (maximum) seconds.</param>
+        <param name="p1">offduration: - LED off Duration in milliseconds .This is in mSecs and the range is from 0 mSec (minimum) to 65535 mSec (maximum) seconds.</param>
+        <param name="p2">smoothEffect: - True - enable smooth effect, False - disable smooth effect</param>
+        <summary>Constructor to instantiate the CradleLEDConfig.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OffDuration">
+      <MemberSignature Language="C#" Value="public int OffDuration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 OffDuration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("offDuration")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cradle LED off time in milliseconds.This is in mSecs and the range is from 0 mSec (minimum) to 65535 mSec (maximum) seconds.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDuration">
+      <MemberSignature Language="C#" Value="public int OnDuration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 OnDuration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("onDuration")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cradle LED on time in milliseconds.This is in mSecs and the range is from 0 mSec (minimum) to 65535 mSec (maximum) seconds.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmoothEffect">
+      <MemberSignature Language="C#" Value="public bool SmoothEffect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SmoothEffect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("smoothEffect")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enable or disable the smooth effect of the LED blinking</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdClass">
+      <MemberSignature Language="C#" Value="protected override IntPtr ThresholdClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdType">
+      <MemberSignature Language="C#" Value="protected override Type ThresholdType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,261 @@
+<Type Name="SerialCommConfig+ParityBits" FullName="Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits">
+  <TypeSignature Language="C#" Value="public sealed class SerialCommConfig.ParityBits : Java.Lang.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit SerialCommConfig/ParityBits extends Java.Lang.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
+    <AssemblyVersion>2.4.0.87</AssemblyVersion>
+    <AssemblyVersion>2.5.0.41</AssemblyVersion>
+    <AssemblyVersion>2.5.0.48</AssemblyVersion>
+    <AssemblyVersion>2.6.0.69</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Java.Lang.Enum</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Android.Runtime.Register("com/symbol/emdk/serialcomm/SerialCommConfig$ParityBits", DoNotGenerateAcw=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the parity bits for a SerialComm object.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Even">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits Even { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SerialComm.SerialCommConfig/ParityBits Even" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("EVEN")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets the parity bit so that the count of bits set is an even number</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mark">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits Mark { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SerialComm.SerialCommConfig/ParityBits Mark" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("MARK")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Leaves the parity bit set to 1</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits None { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SerialComm.SerialCommConfig/ParityBits None" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("NONE")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No parity check occurs</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Odd">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits Odd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SerialComm.SerialCommConfig/ParityBits Odd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("ODD")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets the parity bit so that the count of bits set is an odd number</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Space">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits Space { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SerialComm.SerialCommConfig/ParityBits Space" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("SPACE")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Leaves the parity bit set to 0</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdClass">
+      <MemberSignature Language="C#" Value="protected override IntPtr ThresholdClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdType">
+      <MemberSignature Language="C#" Value="protected override Type ThresholdType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueOf">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits ValueOf (string this_);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.SerialComm.SerialCommConfig/ParityBits ValueOf(string this_) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("valueOf", "(Ljava/lang/String;)Lcom/symbol/emdk/serialcomm/SerialCommConfig$ParityBits;", "")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="this_" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="this_">
+        </param>
+        <summary>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits[] Values ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.SerialComm.SerialCommConfig/ParityBits[] Values() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("values", "()[Lcom/symbol/emdk/serialcomm/SerialCommConfig$ParityBits;", "")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

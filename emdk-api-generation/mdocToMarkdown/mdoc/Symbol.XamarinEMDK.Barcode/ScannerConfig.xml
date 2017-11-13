@@ -1,0 +1,376 @@
+<Type Name="ScannerConfig" FullName="Symbol.XamarinEMDK.Barcode.ScannerConfig">
+  <TypeSignature Language="C#" Value="public class ScannerConfig : Java.Lang.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScannerConfig extends Java.Lang.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <AssemblyVersion>1.0.3.1</AssemblyVersion>
+    <AssemblyVersion>1.0.3.2</AssemblyVersion>
+    <AssemblyVersion>2.0.0.1</AssemblyVersion>
+    <AssemblyVersion>2.1.0.4</AssemblyVersion>
+    <AssemblyVersion>2.1.0.5</AssemblyVersion>
+    <AssemblyVersion>2.4.0.87</AssemblyVersion>
+    <AssemblyVersion>2.5.0.41</AssemblyVersion>
+    <AssemblyVersion>2.5.0.48</AssemblyVersion>
+    <AssemblyVersion>2.6.0.69</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Java.Lang.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Android.Runtime.Register("com/symbol/emdk/barcode/ScannerConfig", DoNotGenerateAcw=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The ScannerConfig class provides access to scanner configuration settings.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ScannerConfig (IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="javaReference" Type="System.IntPtr" />
+        <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
+      </Parameters>
+      <Docs>
+        <param name="javaReference">
+        </param>
+        <param name="transfer">
+        </param>
+        <summary>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecoderParams">
+      <MemberSignature Language="C#" Value="public Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters DecoderParams { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/DecoderParameters DecoderParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("decoderParams")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The DecoderParams class contains decoder parameters that are used by multiple decoder symbologies. The property provides access to such decoder parameters as Enabled and isSupported, among others. NOTE: When calling enable() after disable(), all the latest configuration parameter values (Config.DecoderParams, Config.ScannerParams, Config.ReaderParams) will be set automatically.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsParamSupported">
+      <MemberSignature Language="C#" Value="public virtual bool IsParamSupported (string p0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsParamSupported(string p0) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("isParamSupported", "(Ljava/lang/String;)Z", "GetIsParamSupported_Ljava_lang_String_Handler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p0" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="p0">Field name</param>
+        <summary>This method helps to check scanner config parameters supported Returns true if specified parameter is supported. The field name should be specify complete access path till the field in the string format. The scanner config object name can be any name, but following field names should exactly match the fields defined by scanner config class.</summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="readerParam">
+      <MemberSignature Language="C#" Value="public Symbol.XamarinEMDK.Barcode.ScannerConfig.ReaderParams readerParam { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/ReaderParams readerParam" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("readerParams")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+ReaderParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderParams">
+      <MemberSignature Language="C#" Value="public Symbol.XamarinEMDK.Barcode.ScannerConfig.ReaderParameters ReaderParams { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/ReaderParameters ReaderParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("readerParams")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+ReaderParameters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ReaderParams class holds the parameters for a scanner. Reader parameters are global to all reads on all open handles on the same scanner. NOTE: When calling enable() after disable(), all the latest configuration parameter values (Config.DecoderParams, Config.ScannerParams, Config.ReaderParams) will be set automatically.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetToDefault">
+      <MemberSignature Language="C#" Value="public virtual void ResetToDefault (Symbol.XamarinEMDK.Barcode.Scanner p0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetToDefault(class Symbol.XamarinEMDK.Barcode.Scanner p0) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("resetToDefault", "(Lcom/symbol/emdk/barcode/Scanner;)V", "GetResetToDefault_Lcom_symbol_emdk_barcode_Scanner_Handler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p0" Type="Symbol.XamarinEMDK.Barcode.Scanner" />
+      </Parameters>
+      <Docs>
+        <param name="p0">Scanner Object</param>
+        <summary>Resets the scanner parameters to defaults values for the specified scanner. The unsupported parameters left as it is.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScanParams">
+      <MemberSignature Language="C#" Value="public Symbol.XamarinEMDK.Barcode.ScannerConfig.ScanParameters ScanParams { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/ScanParameters ScanParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("scanParams")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+ScanParameters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ScanParams property provides access to scanning parameters that are available for all decoders. NOTE: When calling enable() after disable(), all the latest configuration parameter values (Config.DecoderParams, Config.ScannerParams, Config.ReaderParamss) will be set automatically.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipOnUnsupported">
+      <MemberSignature Language="C#" Value="public Symbol.XamarinEMDK.Barcode.ScannerConfig.SkipOnUnSupported SkipOnUnsupported { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/SkipOnUnSupported SkipOnUnsupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("skipOnUnsupported")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+SkipOnUnSupported</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This flag to tells whether to skip the unsupported parameter/values and continue or stop setting the configuration. Its set to UNSUPPORTED_PARAM by default which skips the unsupported params and continues.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdClass">
+      <MemberSignature Language="C#" Value="protected override IntPtr ThresholdClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdType">
+      <MemberSignature Language="C#" Value="protected override Type ThresholdType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UdiParams">
+      <MemberSignature Language="C#" Value="public Symbol.XamarinEMDK.Barcode.ScannerConfig.UdiParameters UdiParams { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/UdiParameters UdiParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("udiParams")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+UdiParameters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The UdiParams class holds the parameters for UDI.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

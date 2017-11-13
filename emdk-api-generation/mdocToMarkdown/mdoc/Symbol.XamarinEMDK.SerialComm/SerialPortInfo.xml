@@ -1,0 +1,148 @@
+<Type Name="SerialPortInfo" FullName="Symbol.XamarinEMDK.SerialComm.SerialPortInfo">
+  <TypeSignature Language="C#" Value="public class SerialPortInfo : Java.Lang.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SerialPortInfo extends Java.Lang.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
+    <AssemblyVersion>2.4.0.87</AssemblyVersion>
+    <AssemblyVersion>2.5.0.41</AssemblyVersion>
+    <AssemblyVersion>2.5.0.48</AssemblyVersion>
+    <AssemblyVersion>2.6.0.69</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Java.Lang.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Android.Runtime.Register("com/symbol/emdk/serialcomm/SerialPortInfo", DoNotGenerateAcw=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Supported in EMDK v6.1.0 or higher.Not supported on all BSP eventhough the EMDK provides this interface. Refer to release notes for more details.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SerialPortInfo (IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="javaReference" Type="System.IntPtr" />
+        <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
+      </Parameters>
+      <Docs>
+        <param name="javaReference">
+        </param>
+        <param name="transfer">
+        </param>
+        <summary>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FriendlyName">
+      <MemberSignature Language="C#" Value="public virtual string FriendlyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FriendlyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: Android.Runtime.Register("getFriendlyName", "()Ljava/lang/String;", "GetGetFriendlyNameHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the friendly name used for the serial port.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortName">
+      <MemberSignature Language="C#" Value="public virtual string PortName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PortName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: Android.Runtime.Register("getPortName", "()Ljava/lang/String;", "GetGetPortNameHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Return the serial port name</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdClass">
+      <MemberSignature Language="C#" Value="protected override IntPtr ThresholdClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdType">
+      <MemberSignature Language="C#" Value="protected override Type ThresholdType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

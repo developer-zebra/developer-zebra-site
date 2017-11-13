@@ -1,0 +1,554 @@
+<Type Name="EMDKResults+STATUS_CODE" FullName="Symbol.XamarinEMDK.EMDKResults+STATUS_CODE">
+  <TypeSignature Language="C#" Value="public sealed class EMDKResults.STATUS_CODE : Java.Lang.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit EMDKResults/STATUS_CODE extends Java.Lang.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <AssemblyVersion>1.0.3.1</AssemblyVersion>
+    <AssemblyVersion>1.0.3.2</AssemblyVersion>
+    <AssemblyVersion>2.0.0.1</AssemblyVersion>
+    <AssemblyVersion>2.1.0.4</AssemblyVersion>
+    <AssemblyVersion>2.1.0.5</AssemblyVersion>
+    <AssemblyVersion>2.4.0.87</AssemblyVersion>
+    <AssemblyVersion>2.5.0.41</AssemblyVersion>
+    <AssemblyVersion>2.5.0.48</AssemblyVersion>
+    <AssemblyVersion>2.6.0.69</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Java.Lang.Enum</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Android.Runtime.Register("com/symbol/emdk/EMDKResults$STATUS_CODE", DoNotGenerateAcw=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines all the status codes the library returns.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckXml">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE CheckXml { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE CheckXml" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("CHECK_XML")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This is returned when multiple features are present in the profile. In such a case the only way to verify if the API call was successful is to analyze the XML.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmdkNotOpened">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE EmdkNotOpened { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE EmdkNotOpened" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("EMDK_NOT_OPENED")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>EMDK is not opened</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyProfilename">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE EmptyProfilename { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE EmptyProfilename" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("EMPTY_PROFILENAME")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Profile name passed Process profile was empty.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Failure">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE Failure { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE Failure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("FAILURE")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Process profile was a failure.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FeatureNotReadyToUse">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE FeatureNotReadyToUse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE FeatureNotReadyToUse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("FEATURE_NOT_READY_TO_USE")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The requested feature is not ready to use. Try later.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FeatureNotSupported">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE FeatureNotSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE FeatureNotSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("FEATURE_NOT_SUPPORTED")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The requested feature is not supported on this device.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoDataListener">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE NoDataListener { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE NoDataListener" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("NO_DATA_LISTENER")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The asynchronous method (Ex: processProfileAsync) is issued without adding the data listener.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NullPointer">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE NullPointer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE NullPointer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("NULL_POINTER")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Process profile had a null value.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousRequestInProgress">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE PreviousRequestInProgress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE PreviousRequestInProgress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("PREVIOUS_REQUEST_IN_PROGRESS")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The previous request is in progress, wait for it to complete before next request.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Processing">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE Processing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE Processing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("PROCESSING")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The processing of profile started, the result will be returned through the data listener callback registered.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE Success { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE Success" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("SUCCESS")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Process profile was a success.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdClass">
+      <MemberSignature Language="C#" Value="protected override IntPtr ThresholdClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdType">
+      <MemberSignature Language="C#" Value="protected override Type ThresholdType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE Unknown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE Unknown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("UNKNOWN")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Process profile had mixed results.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueOf">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE ValueOf (string this_);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE ValueOf(string this_) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("valueOf", "(Ljava/lang/String;)Lcom/symbol/emdk/EMDKResults$STATUS_CODE;", "")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p0" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="this_">
+        </param>
+        <summary>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.EMDKResults.STATUS_CODE[] Values ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.EMDKResults/STATUS_CODE[] Values() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("values", "()[Lcom/symbol/emdk/EMDKResults$STATUS_CODE;", "")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.EMDKResults+STATUS_CODE[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

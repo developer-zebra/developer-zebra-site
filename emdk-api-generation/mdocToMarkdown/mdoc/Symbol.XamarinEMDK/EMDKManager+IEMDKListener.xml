@@ -1,0 +1,108 @@
+<Type Name="EMDKManager+IEMDKListener" FullName="Symbol.XamarinEMDK.EMDKManager+IEMDKListener">
+  <TypeSignature Language="C#" Value="public interface EMDKManager.IEMDKListener : Android.Runtime.IJavaObject, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class nested public interface auto ansi abstract EMDKManager/IEMDKListener implements class Android.Runtime.IJavaObject, class System.IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <AssemblyVersion>1.0.3.1</AssemblyVersion>
+    <AssemblyVersion>1.0.3.2</AssemblyVersion>
+    <AssemblyVersion>2.0.0.1</AssemblyVersion>
+    <AssemblyVersion>2.1.0.4</AssemblyVersion>
+    <AssemblyVersion>2.1.0.5</AssemblyVersion>
+    <AssemblyVersion>2.4.0.87</AssemblyVersion>
+    <AssemblyVersion>2.5.0.41</AssemblyVersion>
+    <AssemblyVersion>2.5.0.48</AssemblyVersion>
+    <AssemblyVersion>2.6.0.69</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Android.Runtime.IJavaObject</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Android.Runtime.Register("com/symbol/emdk/EMDKManager$EMDKListener", "", "Symbol.XamarinEMDK.EMDKManager/IEMDKListenerInvoker")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>This is the interface for the callback to notify the opening and closing status of the EMDK. On a successful opening, the EMDKManager object will be returned. An interface for notifying clients when they the EMDKManager is ready to use or closed abruptly.
+    </summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnClosed">
+      <MemberSignature Language="C#" Value="public void OnClosed ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnClosed() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("onClosed", "()V", "GetOnClosedHandler:Symbol.XamarinEMDK.EMDKManager/IEMDKListenerInvoker, Symbol.XamarinEMDK")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called to notify the client that this EMDKManager object has been abruptly closed. The clients must call EMDKManager.Release() to free all the resources used by EMDKManager even after onClosed(). 
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnOpened">
+      <MemberSignature Language="C#" Value="public void OnOpened (Symbol.XamarinEMDK.EMDKManager p0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnOpened(class Symbol.XamarinEMDK.EMDKManager p0) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("onOpened", "(Lcom/symbol/emdk/EMDKManager;)V", "GetOnOpened_Lcom_symbol_emdk_EMDKManager_Handler:Symbol.XamarinEMDK.EMDKManager/IEMDKListenerInvoker, Symbol.XamarinEMDK")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p0" Type="Symbol.XamarinEMDK.EMDKManager" />
+      </Parameters>
+      <Docs>
+        <param name="p0">
+        </param>
+        <summary>Called to notify the client when the EMDKManager object has been opened and its ready to use.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

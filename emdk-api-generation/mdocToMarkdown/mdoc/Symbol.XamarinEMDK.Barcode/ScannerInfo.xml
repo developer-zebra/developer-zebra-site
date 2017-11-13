@@ -1,0 +1,387 @@
+<Type Name="ScannerInfo" FullName="Symbol.XamarinEMDK.Barcode.ScannerInfo">
+  <TypeSignature Language="C#" Value="public class ScannerInfo : Java.Lang.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScannerInfo extends Java.Lang.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <AssemblyVersion>1.0.3.1</AssemblyVersion>
+    <AssemblyVersion>1.0.3.2</AssemblyVersion>
+    <AssemblyVersion>2.0.0.1</AssemblyVersion>
+    <AssemblyVersion>2.1.0.4</AssemblyVersion>
+    <AssemblyVersion>2.1.0.5</AssemblyVersion>
+    <AssemblyVersion>2.4.0.87</AssemblyVersion>
+    <AssemblyVersion>2.5.0.41</AssemblyVersion>
+    <AssemblyVersion>2.5.0.48</AssemblyVersion>
+    <AssemblyVersion>2.6.0.69</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Java.Lang.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Android.Runtime.Register("com/symbol/emdk/barcode/ScannerInfo", DoNotGenerateAcw=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>ScannerInfo provides information of the scanner device.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ScannerInfo (IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="javaReference" Type="System.IntPtr" />
+        <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
+      </Parameters>
+      <Docs>
+        <param name="javaReference">
+        </param>
+        <param name="transfer">
+        </param>
+        <summary>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceIdentifier">
+      <MemberSignature Language="C#" Value="public virtual Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier DeviceIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.BarcodeManager/DeviceIdentifier DeviceIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: Android.Runtime.Register("getDeviceIdentifier", "()Lcom/symbol/emdk/barcode/BarcodeManager$DeviceIdentifier;", "GetGetDeviceIdentifierHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the Device Identifier. Note: DeviceIdentifier.DEFAULT will not be returned for any scanner.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FriendlyName">
+      <MemberSignature Language="C#" Value="public virtual string FriendlyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FriendlyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: Android.Runtime.Register("getFriendlyName", "()Ljava/lang/String;", "GetGetFriendlyNameHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the friendly name of the Device..</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnectionType">
+      <MemberSignature Language="C#" Value="public virtual Symbol.XamarinEMDK.Barcode.ScannerInfo.ConnectionType GetConnectionType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.Barcode.ScannerInfo/ConnectionType GetConnectionType() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("getConnectionType", "()Lcom/symbol/emdk/barcode/ScannerInfo$ConnectionType;", "GetGetConnectionTypeHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerInfo+ConnectionType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the scanner connection type to mobile computer Note: The connection type information is not available on Scanner Framework 1.18.P03 on TC55 REV A device.</summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDecoderType">
+      <MemberSignature Language="C#" Value="public virtual Symbol.XamarinEMDK.Barcode.ScannerInfo.DecoderType GetDecoderType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.Barcode.ScannerInfo/DecoderType GetDecoderType() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("getDecoderType", "()Lcom/symbol/emdk/barcode/ScannerInfo$DecoderType;", "GetGetDecoderTypeHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerInfo+DecoderType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the barcode scanning type supported by scanner. Note: The decoder type information is not available on Scanner Framework 1.18.P03 on TC55 REV A device.</summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceType">
+      <MemberSignature Language="C#" Value="public virtual Symbol.XamarinEMDK.Barcode.ScannerInfo.DeviceType GetDeviceType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.Barcode.ScannerInfo/DeviceType GetDeviceType() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("getDeviceType", "()Lcom/symbol/emdk/barcode/ScannerInfo$DeviceType;", "GetGetDeviceTypeHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerInfo+DeviceType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the scanner device type</summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConnected">
+      <MemberSignature Language="C#" Value="public virtual bool IsConnected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConnected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: Android.Runtime.Register("isConnected", "()Z", "GetIsConnectedHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultScanner">
+      <MemberSignature Language="C#" Value="public virtual bool IsDefaultScanner { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDefaultScanner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: Android.Runtime.Register("isDefaultScanner", "()Z", "GetIsDefaultScannerHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns true if it is a default scanner else false.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelNumber">
+      <MemberSignature Language="C#" Value="public virtual string ModelNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ModelNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: Android.Runtime.Register("getModelNumber", "()Ljava/lang/String;", "GetGetModelNumberHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the scanner device model number. This information will be available only after the scanner is enabled. Note: The model number is supported on the Scanner Framework version 3.0.11 or later.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdClass">
+      <MemberSignature Language="C#" Value="protected override IntPtr ThresholdClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdType">
+      <MemberSignature Language="C#" Value="protected override Type ThresholdType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

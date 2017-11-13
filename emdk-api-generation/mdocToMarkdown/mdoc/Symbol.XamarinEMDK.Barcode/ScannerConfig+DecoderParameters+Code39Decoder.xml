@@ -1,0 +1,447 @@
+<Type Name="ScannerConfig+DecoderParameters+Code39Decoder" FullName="Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Code39Decoder">
+  <TypeSignature Language="C#" Value="public class ScannerConfig.DecoderParameters.Code39Decoder : Symbol.XamarinEMDK.Barcode.ScannerConfig.DecoderParameters.BaseDecoder" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ScannerConfig/DecoderParameters/Code39Decoder extends Symbol.XamarinEMDK.Barcode.ScannerConfig/DecoderParameters/BaseDecoder" />
+  <AssemblyInfo>
+    <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <AssemblyVersion>1.0.3.1</AssemblyVersion>
+    <AssemblyVersion>1.0.3.2</AssemblyVersion>
+    <AssemblyVersion>2.0.0.1</AssemblyVersion>
+    <AssemblyVersion>2.1.0.4</AssemblyVersion>
+    <AssemblyVersion>2.1.0.5</AssemblyVersion>
+    <AssemblyVersion>2.4.0.87</AssemblyVersion>
+    <AssemblyVersion>2.5.0.41</AssemblyVersion>
+    <AssemblyVersion>2.5.0.48</AssemblyVersion>
+    <AssemblyVersion>2.6.0.69</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+BaseDecoder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Android.Runtime.Register("com/symbol/emdk/barcode/ScannerConfig$DecoderParams$Code39", DoNotGenerateAcw=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The Code39 class provides access to parameters that are available for the Code39 decoder.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Code39Decoder (IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="javaReference" Type="System.IntPtr" />
+        <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
+      </Parameters>
+      <Docs>
+        <param name="javaReference">
+        </param>
+        <param name="transfer">
+        </param>
+        <summary>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToCode32">
+      <MemberSignature Language="C#" Value="public bool ConvertToCode32 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConvertToCode32" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("convertToCode32")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Code 32 is a variant of Code 39 used by the Italian pharmaceutical industry.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullAscii">
+      <MemberSignature Language="C#" Value="public bool FullAscii { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FullAscii" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("fullAscii")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Code 39 Full ASCII is a variant of Code 39 that pairs characters to encode the full ASCII character set.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length1">
+      <MemberSignature Language="C#" Value="public int Length1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("length1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use to set decode lengths. The valid range is 0 to 55.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length2">
+      <MemberSignature Language="C#" Value="public int Length2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("length2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use to set decode lengths. The valid range is 0 to 55.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReducedQuietZone">
+      <MemberSignature Language="C#" Value="public bool ReducedQuietZone { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReducedQuietZone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("reducedQuietZone")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Flag to Enable or Disable decoding of Code 39 barcodes with reduced quiet zones. If you enable, select a OneDQuietZoneLevel to set the effort level.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Redundancy">
+      <MemberSignature Language="C#" Value="public bool Redundancy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Redundancy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("redundancy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets the reader to read the bar code twice before accepting data.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportCheckDigit">
+      <MemberSignature Language="C#" Value="public bool ReportCheckDigit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReportCheckDigit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("reportCheckDigit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Transmit Code 39 data with or without the check digit.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportCode32Prefix">
+      <MemberSignature Language="C#" Value="public bool ReportCode32Prefix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReportCode32Prefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("reportCode32Prefix")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Scan the appropriate bar code to enable or disable adding the prefix character "A" to all Code 32 bar codes.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityLevel">
+      <MemberSignature Language="C#" Value="public Symbol.XamarinEMDK.Barcode.ScannerConfig.SecurityLevel SecurityLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/SecurityLevel SecurityLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("securityLevel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+SecurityLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Options: Security level 0 , Security Level 1 , Security Level 2 and Security Level 3. Use enum ScannerConfig.SecurityLevel.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdClass">
+      <MemberSignature Language="C#" Value="protected override IntPtr ThresholdClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdType">
+      <MemberSignature Language="C#" Value="protected override Type ThresholdType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyCheckDigit">
+      <MemberSignature Language="C#" Value="public bool VerifyCheckDigit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool VerifyCheckDigit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.2.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.0</AssemblyVersion>
+        <AssemblyVersion>1.0.3.1</AssemblyVersion>
+        <AssemblyVersion>1.0.3.2</AssemblyVersion>
+        <AssemblyVersion>2.0.0.1</AssemblyVersion>
+        <AssemblyVersion>2.1.0.4</AssemblyVersion>
+        <AssemblyVersion>2.1.0.5</AssemblyVersion>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("verifyCheckDigit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enable this feature to check the integrity of all Code 39 symbols to verify that the data complies with a specified check digit algorithm. The digital scanner decodes only those Code 39 symbols that include a modulo 43 check digit. Enable this feature only if the Code 39 symbols contain a modulo 43 check digit.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

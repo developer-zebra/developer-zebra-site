@@ -1,0 +1,287 @@
+<Type Name="SerialCommMgr+ControlSignal" FullName="Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal">
+  <TypeSignature Language="C#" Value="public sealed class SerialCommMgr.ControlSignal : Java.Lang.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit SerialCommMgr/ControlSignal extends Java.Lang.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
+    <AssemblyVersion>2.4.0.87</AssemblyVersion>
+    <AssemblyVersion>2.5.0.41</AssemblyVersion>
+    <AssemblyVersion>2.5.0.48</AssemblyVersion>
+    <AssemblyVersion>2.6.0.69</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Java.Lang.Enum</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Android.Runtime.Register("com/symbol/emdk/serialcomm/SerialComm$ControlSignal", DoNotGenerateAcw=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>List of control signals</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cts">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal Cts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SerialComm.SerialCommMgr/ControlSignal Cts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("CTS")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Clear To Send</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dcd">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal Dcd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SerialComm.SerialCommMgr/ControlSignal Dcd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("DCD")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Data Carrier Detect</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dsr">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal Dsr { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SerialComm.SerialCommMgr/ControlSignal Dsr" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("DSR")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Data Set Ready</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dtr">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal Dtr { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SerialComm.SerialCommMgr/ControlSignal Dtr" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("DTR")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Data Terminal Ready</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ri">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal Ri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SerialComm.SerialCommMgr/ControlSignal Ri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("RI")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ring Indicator</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rts">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal Rts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SerialComm.SerialCommMgr/ControlSignal Rts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("RTS")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Request To Send</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdClass">
+      <MemberSignature Language="C#" Value="protected override IntPtr ThresholdClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdType">
+      <MemberSignature Language="C#" Value="protected override Type ThresholdType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueOf">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal ValueOf (string this_);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.SerialComm.SerialCommMgr/ControlSignal ValueOf(string this_) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("valueOf", "(Ljava/lang/String;)Lcom/symbol/emdk/serialcomm/SerialComm$ControlSignal;", "")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="this_" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="this_">
+        </param>
+        <summary>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal[] Values ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.SerialComm.SerialCommMgr/ControlSignal[] Values() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("values", "()[Lcom/symbol/emdk/serialcomm/SerialComm$ControlSignal;", "")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

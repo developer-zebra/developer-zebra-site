@@ -1,0 +1,730 @@
+<Type Name="SimulScanResults" FullName="Symbol.XamarinEMDK.SimulScan.SimulScanResults">
+  <TypeSignature Language="C#" Value="public sealed class SimulScanResults : Java.Lang.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SimulScanResults extends Java.Lang.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
+    <AssemblyVersion>2.4.0.87</AssemblyVersion>
+    <AssemblyVersion>2.5.0.41</AssemblyVersion>
+    <AssemblyVersion>2.5.0.48</AssemblyVersion>
+    <AssemblyVersion>2.6.0.69</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Java.Lang.Enum</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Android.Runtime.Register("com/symbol/emdk/simulscan/SimulScanResults", DoNotGenerateAcw=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines all the error codes the SimulScan API returns.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AlreadyScanning">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults AlreadyScanning { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults AlreadyScanning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("ALREADY_SCANNING")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A scan operation is already in progress.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlreadyStoppedScanning">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults AlreadyStoppedScanning { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults AlreadyStoppedScanning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("ALREADY_STOPPED_SCANNING")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The reader has already stopped scanning</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: Android.Runtime.Register("getDescription", "()Ljava/lang/String;", "GetGetDescriptionHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the description for the error.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmdkNotOpened">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults EmdkNotOpened { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults EmdkNotOpened" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("EMDK_NOT_OPENED")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>EMDK is not opened</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FailedToLoadTemplate">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults FailedToLoadTemplate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults FailedToLoadTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("FAILED_TO_LOAD_TEMPLATE")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Failed to load template</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FailedToSetTemplate">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults FailedToSetTemplate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults FailedToSetTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("FAILED_TO_SET_TEMPLATE")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Failed to set template</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Failure">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults Failure { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults Failure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("FAILURE")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Failure</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FeatureNotSupported">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults FeatureNotSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults FeatureNotSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("FEATURE_NOT_SUPPORTED")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The feature is not supported completely or for specified input.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FetchTemplateInProgress">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults FetchTemplateInProgress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults FetchTemplateInProgress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("FETCH_TEMPLATE_IN_PROGRESS")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fetch template is in progress</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FetchTemplateNotAllowed">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults FetchTemplateNotAllowed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults FetchTemplateNotAllowed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("FETCH_TEMPLATE_NOT_ALLOWED")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fetch template not allowed while a read is in progress</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidObject">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults InvalidObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults InvalidObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("INVALID_OBJECT")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The reader has been released and is not valid.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidValue">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults InvalidValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults InvalidValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("INVALID_VALUE")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The value passed is not valid.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoDataListener">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults NoDataListener { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults NoDataListener" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("NO_DATA_LISTENER")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Data listner is not set</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderAlreadyDisabled">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults ReaderAlreadyDisabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults ReaderAlreadyDisabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("READER_ALREADY_DISABLED")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The reader is already disabled</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderAlreadyEnabled">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults ReaderAlreadyEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults ReaderAlreadyEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("READER_ALREADY_ENABLED")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reader is already enabled</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderDeinitFailed">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults ReaderDeinitFailed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults ReaderDeinitFailed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("READER_DEINIT_FAILED")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reader de-initialization failed.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderInitFailed">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults ReaderInitFailed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults ReaderInitFailed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("READER_INIT_FAILED")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reader initialization failed.
+</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderInUse">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults ReaderInUse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults ReaderInUse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("READER_IN_USE")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Another reader is already enabled and in use.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderNotEnabled">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults ReaderNotEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults ReaderNotEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("READER_NOT_ENABLED")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The selected reader is not enabled.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults Success { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults Success" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("SUCCESS")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Success</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateNotSet">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults TemplateNotSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults TemplateNotSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("TEMPLATE_NOT_SET")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Failed to set template</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdClass">
+      <MemberSignature Language="C#" Value="protected override IntPtr ThresholdClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdType">
+      <MemberSignature Language="C#" Value="protected override Type ThresholdType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Undefined">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults Undefined { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.SimulScan.SimulScanResults Undefined" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("UNDEFINED")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Undefined</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public int Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: Android.Runtime.Register("getValue", "()I", "GetGetValueHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get the error code integer value assigned to the SimulScanResults</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueOf">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults ValueOf (string p0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.SimulScan.SimulScanResults ValueOf(string p0) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("valueOf", "(Ljava/lang/String;)Lcom/symbol/emdk/simulscan/SimulScanResults;", "")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p0" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="p0">
+        </param>
+        <summary>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.SimulScan.SimulScanResults[] Values ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.SimulScan.SimulScanResults[] Values() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("values", "()[Lcom/symbol/emdk/simulscan/SimulScanResults;", "")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,15 +1,15 @@
 ---
-title: MX Framework
+title: Full MX Feature Matrix
 publish: false
 menu:
   items:
-    - title: About
+    - title: About MX
       url: /mx/overview
-    - title: Compatibility
+    - title: Feature Matrix
       url: /mx/compatibility
     - title: Choosing an MX Version
       url: /mx/choosing-a-version
-    - title: Show Device's MX Version
+    - title: Show Device MX Version
       url: /mx/mx-version-on-device
     - icon: fa fa-search
       url: /mx/search
@@ -210,9 +210,7 @@ csps:
     title: XML Manager
     url: /mx/xmlmgr
     csp: xmlmgr
----
-                      
----
+---              
 
 
 

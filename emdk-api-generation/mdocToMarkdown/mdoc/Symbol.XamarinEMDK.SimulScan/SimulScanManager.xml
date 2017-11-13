@@ -1,0 +1,182 @@
+<Type Name="SimulScanManager" FullName="Symbol.XamarinEMDK.SimulScan.SimulScanManager">
+  <TypeSignature Language="C#" Value="public class SimulScanManager : Symbol.XamarinEMDK.EMDKBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SimulScanManager extends Symbol.XamarinEMDK.EMDKBase" />
+  <AssemblyInfo>
+    <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
+    <AssemblyVersion>2.4.0.87</AssemblyVersion>
+    <AssemblyVersion>2.5.0.41</AssemblyVersion>
+    <AssemblyVersion>2.5.0.48</AssemblyVersion>
+    <AssemblyVersion>2.6.0.69</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Symbol.XamarinEMDK.EMDKBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Android.Runtime.Register("com/symbol/emdk/simulscan/SimulScanManager", DoNotGenerateAcw=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>This is the primary object to access the SimulScan feature.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SimulScanManager (IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="javaReference" Type="System.IntPtr" />
+        <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
+      </Parameters>
+      <Docs>
+        <param name="javaReference">
+        </param>
+        <param name="transfer">
+        </param>
+        <summary>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDevice">
+      <MemberSignature Language="C#" Value="public virtual Symbol.XamarinEMDK.SimulScan.SimulScanReader GetDevice (Symbol.XamarinEMDK.SimulScan.SimulScanManager.DeviceIdentifier p0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.SimulScan.SimulScanReader GetDevice(class Symbol.XamarinEMDK.SimulScan.SimulScanManager/DeviceIdentifier p0) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("getDevice", "(Lcom/symbol/emdk/simulscan/SimulScanManager$DeviceIdentifier;)Lcom/symbol/emdk/simulscan/SimulScanReader;", "GetGetDevice_Lcom_symbol_emdk_simulscan_SimulScanManager_DeviceIdentifier_Handler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p0" Type="Symbol.XamarinEMDK.SimulScan.SimulScanManager+DeviceIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="p0">deviceIdentifier - The device identifier specifies which reader the application wants.</param>
+        <summary>This method returns the reader object based on device identifier specified.</summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDevice">
+      <MemberSignature Language="C#" Value="public virtual Symbol.XamarinEMDK.SimulScan.SimulScanReader GetDevice (Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo p0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.SimulScan.SimulScanReader GetDevice(class Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo p0) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("getDevice", "(Lcom/symbol/emdk/simulscan/SimulScanReaderInfo;)Lcom/symbol/emdk/simulscan/SimulScanReader;", "GetGetDevice_Lcom_symbol_emdk_simulscan_SimulScanReaderInfo_Handler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p0" Type="Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo" />
+      </Parameters>
+      <Docs>
+        <param name="p0">simulscanReaderInfo - The SimulScanReadInfo specifies which reader the application wants.</param>
+        <summary>This method returns the reader object based on the input SimulScanReaderInfo object.</summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedDevicesInfo">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo&gt; SupportedDevicesInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo&gt; SupportedDevicesInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: Android.Runtime.Register("getSupportedDevicesInfo", "()Ljava/util/List;", "GetGetSupportedDevicesInfoHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns list of supported reader devices information.</summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdClass">
+      <MemberSignature Language="C#" Value="protected override IntPtr ThresholdClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThresholdType">
+      <MemberSignature Language="C#" Value="protected override Type ThresholdType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.87</AssemblyVersion>
+        <AssemblyVersion>2.5.0.41</AssemblyVersion>
+        <AssemblyVersion>2.5.0.48</AssemblyVersion>
+        <AssemblyVersion>2.6.0.69</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

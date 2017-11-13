@@ -1,0 +1,55 @@
+---
+title: ScannerConfig.AimType
+layout: guide.html
+product: EMDK For Xamarin 
+productversion: '2.6' 
+---
+Describes the type of aiming to use. This will take affect only when the continuous read is set to false.
+
+**Type** - Java.Lang.Enum
+
+##Methods
+###ValueOf
+
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimType ValueOf (string this_);**
+
+Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)
+
+**Parameters:**
+
+System.String **this_**  -  the name of the enum constant to be returned.
+
+**Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType
+
+###Values
+
+**public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimType[] Values ();**
+
+Returns an array containing the constants of this enum type, in the order they are declared.
+
+**Parameters:**
+
+**Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType[]
+
+##Properties
+
+###ContinuousRead
+Scan the barcodes continuously.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType
+###PressAndRelease
+Press and release aim type; the scan status goes from idle to scanning by pressing and releasing the trigger.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType
+###TimedHold
+Timed hold aim type; The scan status is idle until the trigger is pressed.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType
+###TimedRelease
+Timed release aim type; The scan status is idle until the trigger is pressed.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType
+###Trigger
+Dual-stage trigger based aiming; The standard triggering mode that remains idle until the trigger is pressed.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType

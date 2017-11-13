@@ -6,6 +6,7 @@ order: 3
 mx: "4.1"
 apilevel: "16"
 devicetype: A,B
+info: TC70/TC75 KK and L do not support .upl files
 parm:
   presentif: The Reset Action is "OS Update"
   pivotal: No

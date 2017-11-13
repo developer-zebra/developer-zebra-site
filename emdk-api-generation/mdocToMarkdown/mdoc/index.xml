@@ -1,0 +1,301 @@
+<Overview>
+  <Assemblies>
+    <Assembly Name="Symbol.XamarinEMDK" Version="2.6.0.69">
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.barcode", Managed="Symbol.XamarinEMDK.Barcode")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.personalshopper", Managed="Symbol.XamarinEMDK.PersonalShopper")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk", Managed="Symbol.XamarinEMDK")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.notification", Managed="Symbol.XamarinEMDK.Notification")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.scanandpair", Managed="Symbol.XamarinEMDK.ScanAndPair")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.serialcomm", Managed="Symbol.XamarinEMDK.SerialComm")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.simulscan", Managed="Symbol.XamarinEMDK.SimulScan")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Java.Interop.DoNotPackage("com.symbol.emdk.jar")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Zebra Technologies Corp")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright (C) 2015-2017 Zebra Technologies Corp")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("EMDK for Xamarin")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyFileVersion("2.6.0.69")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("2.6.0.69")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("EMDK for Xamarin")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Symbol.XamarinEMDK")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Versioning.TargetFramework("MonoAndroid,Version=v5.1", FrameworkDisplayName="Xamarin.Android v5.1 Support")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+  </Assemblies>
+  <Remarks>
+  </Remarks>
+  <Copyright>
+  </Copyright>
+  <Types>
+    <Namespace Name="Symbol.XamarinEMDK">
+      <Type Name="EMDKBase" Kind="Class" />
+      <Type Name="EMDKException" Kind="Class" />
+      <Type Name="EMDKManager" Kind="Class" />
+      <Type Name="EMDKManager+FEATURE_TYPE" Kind="Class" />
+      <Type Name="EMDKManager+IEMDKListener" Kind="Interface" />
+      <Type Name="EMDKManager+IStatusListener" Kind="Interface" />
+      <Type Name="EMDKManager+OpenedEventArgs" Kind="Class" />
+      <Type Name="EMDKManager+StatusData" Kind="Class" />
+      <Type Name="EMDKManager+StatusEventArgs" Kind="Class" />
+      <Type Name="EMDKResults" Kind="Class" />
+      <Type Name="EMDKResults+EXTENDED_STATUS_CODE" Kind="Class" />
+      <Type Name="EMDKResults+STATUS_CODE" Kind="Class" />
+      <Type Name="ProfileManager" Kind="Class" />
+      <Type Name="ProfileManager+DataEventArgs" Kind="Class" />
+      <Type Name="ProfileManager+PROFILE_FLAG" Kind="Class" />
+      <Type Name="ProfileManager+ResultData" Kind="Class" />
+      <Type Name="VersionManager" Kind="Class" />
+      <Type Name="VersionManager+VERSION_TYPE" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Symbol.XamarinEMDK.Barcode">
+      <Type Name="BarcodeManager" Kind="Class" />
+      <Type Name="BarcodeManager+ConnectionState" Kind="Class" />
+      <Type Name="BarcodeManager+DeviceIdentifier" Kind="Class" />
+      <Type Name="BarcodeManager+ScannerConnectionEventArgs" Kind="Class" />
+      <Type Name="InterfaceConfig" Kind="Class" />
+      <Type Name="ScanDataCollection" Kind="Class" />
+      <Type Name="ScanDataCollection+LabelType" Kind="Class" />
+      <Type Name="ScanDataCollection+ScanData" Kind="Class" />
+      <Type Name="Scanner" Kind="Class" />
+      <Type Name="Scanner+DataEventArgs" Kind="Class" />
+      <Type Name="Scanner+StatusEventArgs" Kind="Class" />
+      <Type Name="Scanner+TriggerTypes" Kind="Class" />
+      <Type Name="ScannerConfig" Kind="Class" />
+      <Type Name="ScannerConfig+AdaptiveScanning" Kind="Class" />
+      <Type Name="ScannerConfig+AimingPattern" Kind="Class" />
+      <Type Name="ScannerConfig+AimType" Kind="Class" />
+      <Type Name="ScannerConfig+AudioStreamType" Kind="Class" />
+      <Type Name="ScannerConfig+BeamWidth" Kind="Class" />
+      <Type Name="ScannerConfig+BooklandFormat" Kind="Class" />
+      <Type Name="ScannerConfig+CheckDigit" Kind="Class" />
+      <Type Name="ScannerConfig+CheckDigitScheme" Kind="Class" />
+      <Type Name="ScannerConfig+CheckDigitType" Kind="Class" />
+      <Type Name="ScannerConfig+CodeIdType" Kind="Class" />
+      <Type Name="ScannerConfig+CouponReport" Kind="Class" />
+      <Type Name="ScannerConfig+DecodeAudioFeedbackMode" Kind="Class" />
+      <Type Name="ScannerConfig+DecodeLEDFeedbackMode" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+AustralianPostalDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+AztecDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+BaseDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+CanadianPostalDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Chinese2of5Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+CodaBarDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Code11Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Code128Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Code39Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Code93Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+CompositeABDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+CompositeCDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+D2of5Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+DataMatrixDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+DutchPostalDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Ean13Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Ean8Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Gs1DatabarDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Gs1DatabarExpDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Gs1DatabarLimDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+HanXinDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+I2of5Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+JapanesePostalDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Korean3of5Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+MailMarkDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Matrix2of5Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+MaxiCodeDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+MicroPdfDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+MicroQrDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+MsiDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+OcrA" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+OcrB" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Pdf417Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+QrCodeDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+SignatureDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Tlc39Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+TriOptic39Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+UkPostalDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+UpcaDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Upce0Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Upce1Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+UpcEanParameters" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Us4StateDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Us4StateFicsDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+UsPlanetDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+UsPostNetDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+GS1LimitedSecurityLevel" Kind="Class" />
+      <Type Name="ScannerConfig+HanXinInverse" Kind="Class" />
+      <Type Name="ScannerConfig+IlluminationMode" Kind="Class" />
+      <Type Name="ScannerConfig+InterfaceParams" Kind="Class" />
+      <Type Name="ScannerConfig+Inverse1DMode" Kind="Class" />
+      <Type Name="ScannerConfig+InverseOcr" Kind="Class" />
+      <Type Name="ScannerConfig+Isbt128ConcatMode" Kind="Class" />
+      <Type Name="ScannerConfig+LcdMode" Kind="Class" />
+      <Type Name="ScannerConfig+LinearSecurityLevel" Kind="Class" />
+      <Type Name="ScannerConfig+OcrAVariant" Kind="Class" />
+      <Type Name="ScannerConfig+OcrBVariant" Kind="Class" />
+      <Type Name="ScannerConfig+OcrLines" Kind="Class" />
+      <Type Name="ScannerConfig+OcrParams" Kind="Class" />
+      <Type Name="ScannerConfig+OneDQuietZoneLevel" Kind="Class" />
+      <Type Name="ScannerConfig+PairAfterScannerReboot" Kind="Class" />
+      <Type Name="ScannerConfig+PickList" Kind="Class" />
+      <Type Name="ScannerConfig+PicklistEx" Kind="Class" />
+      <Type Name="ScannerConfig+PoorQualityDecodeEffortLevel" Kind="Class" />
+      <Type Name="ScannerConfig+PowerMode" Kind="Class" />
+      <Type Name="ScannerConfig+Preamble" Kind="Class" />
+      <Type Name="ScannerConfig+ReaderParameters" Kind="Class" />
+      <Type Name="ScannerConfig+ReaderParameters+ReaderSpecifics" Kind="Class" />
+      <Type Name="ScannerConfig+ReaderParameters+ReaderSpecifics+CameraSpecifics" Kind="Class" />
+      <Type Name="ScannerConfig+ReaderParameters+ReaderSpecifics+ContinuousRead" Kind="Class" />
+      <Type Name="ScannerConfig+ReaderParameters+ReaderSpecifics+ImagerSpecifics" Kind="Class" />
+      <Type Name="ScannerConfig+ReaderParameters+ReaderSpecifics+LaserSpecifics" Kind="Class" />
+      <Type Name="ScannerConfig+ScanMode" Kind="Class" />
+      <Type Name="ScannerConfig+ScanParameters" Kind="Class" />
+      <Type Name="ScannerConfig+SecurityLevel" Kind="Class" />
+      <Type Name="ScannerConfig+SkipOnUnSupported" Kind="Class" />
+      <Type Name="ScannerConfig+SupplementalMode" Kind="Class" />
+      <Type Name="ScannerConfig+UccLinkMode" Kind="Class" />
+      <Type Name="ScannerConfig+UdiParameters" Kind="Class" />
+      <Type Name="ScannerConfig+VerifyCheckDigit" Kind="Class" />
+      <Type Name="ScannerConfig+ViewFinderMode" Kind="Class" />
+      <Type Name="ScannerException" Kind="Class" />
+      <Type Name="ScannerInfo" Kind="Class" />
+      <Type Name="ScannerInfo+ConnectionType" Kind="Class" />
+      <Type Name="ScannerInfo+DecoderType" Kind="Class" />
+      <Type Name="ScannerInfo+DeviceType" Kind="Class" />
+      <Type Name="ScannerResults" Kind="Class" />
+      <Type Name="StatusData" Kind="Class" />
+      <Type Name="StatusData+ScannerStates" Kind="Class" />
+      <Type Name="TokenizedData" Kind="Class" />
+      <Type Name="TokenizedData+Keys" Kind="Class" />
+      <Type Name="TokenizedData+Token" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Symbol.XamarinEMDK.Notification">
+      <Type Name="ConnectionType" Kind="Class" />
+      <Type Name="DeviceInfo" Kind="Class" />
+      <Type Name="DeviceType" Kind="Class" />
+      <Type Name="NotificationConfig" Kind="Class" />
+      <Type Name="NotificationConfig+Beeping" Kind="Class" />
+      <Type Name="NotificationConfig+BeepParams" Kind="Class" />
+      <Type Name="NotificationConfig+LEDParams" Kind="Class" />
+      <Type Name="NotificationConfig+VibrateParams" Kind="Class" />
+      <Type Name="NotificationDevice" Kind="Class" />
+      <Type Name="NotificationException" Kind="Class" />
+      <Type Name="NotificationManager" Kind="Class" />
+      <Type Name="NotificationManager+DeviceIdentifier" Kind="Class" />
+      <Type Name="NotificationResults" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Symbol.XamarinEMDK.PersonalShopper">
+      <Type Name="Cradle" Kind="Class" />
+      <Type Name="CradleConfig" Kind="Class" />
+      <Type Name="CradleConfig+CradleLocation" Kind="Class" />
+      <Type Name="CradleException" Kind="Class" />
+      <Type Name="CradleInfo" Kind="Class" />
+      <Type Name="CradleLedFlashInfo" Kind="Class" />
+      <Type Name="CradleResults" Kind="Class" />
+      <Type Name="Diagnostic" Kind="Class" />
+      <Type Name="DiagnosticConfig" Kind="Class" />
+      <Type Name="DiagnosticData" Kind="Class" />
+      <Type Name="DiagnosticException" Kind="Class" />
+      <Type Name="DiagnosticParamId" Kind="Class" />
+      <Type Name="DiagnosticResults" Kind="Class" />
+      <Type Name="PersonalShopperMgr" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Symbol.XamarinEMDK.ScanAndPair">
+      <Type Name="ScanAndPairConfig" Kind="Class" />
+      <Type Name="ScanAndPairConfig+BluetoothInformation" Kind="Class" />
+      <Type Name="ScanAndPairConfig+DeviceIdentifier" Kind="Class" />
+      <Type Name="ScanAndPairConfig+NotificationTypes" Kind="Class" />
+      <Type Name="ScanAndPairConfig+ScanDataType" Kind="Class" />
+      <Type Name="ScanAndPairConfig+ScanInformation" Kind="Class" />
+      <Type Name="ScanAndPairConfig+TriggerType" Kind="Class" />
+      <Type Name="ScanAndPairException" Kind="Class" />
+      <Type Name="ScanAndPairManager" Kind="Class" />
+      <Type Name="ScanAndPairManager+StatusEventArgs" Kind="Class" />
+      <Type Name="ScanAndPairResults" Kind="Class" />
+      <Type Name="StatusData" Kind="Class" />
+      <Type Name="StatusData+ScanAndPairStates" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Symbol.XamarinEMDK.SerialComm">
+      <Type Name="SerialCommConfig" Kind="Class" />
+      <Type Name="SerialCommConfig+BaudRates" Kind="Class" />
+      <Type Name="SerialCommConfig+DataBits" Kind="Class" />
+      <Type Name="SerialCommConfig+FlowControlMode" Kind="Class" />
+      <Type Name="SerialCommConfig+ParityBits" Kind="Class" />
+      <Type Name="SerialCommConfig+StopBits" Kind="Class" />
+      <Type Name="SerialCommException" Kind="Class" />
+      <Type Name="SerialCommMgr" Kind="Class" />
+      <Type Name="SerialCommMgr+ControlSignal" Kind="Class" />
+      <Type Name="SerialCommMgrEX" Kind="Class" />
+      <Type Name="SerialCommResults" Kind="Class" />
+      <Type Name="SerialPortInfo" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Symbol.XamarinEMDK.SimulScan">
+      <Type Name="RegionType" Kind="Class" />
+      <Type Name="SimulScanConfig" Kind="Class" />
+      <Type Name="SimulScanData" Kind="Class" />
+      <Type Name="SimulScanElement" Kind="Class" />
+      <Type Name="SimulScanException" Kind="Class" />
+      <Type Name="SimulScanGroup" Kind="Class" />
+      <Type Name="SimulScanManager" Kind="Class" />
+      <Type Name="SimulScanManager+DeviceIdentifier" Kind="Class" />
+      <Type Name="SimulScanMultiTemplate" Kind="Class" />
+      <Type Name="SimulScanReader" Kind="Class" />
+      <Type Name="SimulScanReader+DataEventArgs" Kind="Class" />
+      <Type Name="SimulScanReader+StatusEventArgs" Kind="Class" />
+      <Type Name="SimulScanReaderInfo" Kind="Class" />
+      <Type Name="SimulScanReaderInfo+DeviceType" Kind="Class" />
+      <Type Name="SimulScanRegion" Kind="Class" />
+      <Type Name="SimulScanResults" Kind="Class" />
+      <Type Name="SimulScanStatusData" Kind="Class" />
+      <Type Name="SimulScanStatusData+ExtendedStatus" Kind="Class" />
+      <Type Name="SimulScanStatusData+SimulScanStatus" Kind="Class" />
+      <Type Name="SimulScanTemplate" Kind="Class" />
+      <Type Name="SimulScanTemplateElement" Kind="Class" />
+      <Type Name="SimulScanTemplateGroup" Kind="Class" />
+      <Type Name="SimulScanTemplateRegion" Kind="Class" />
+    </Namespace>
+  </Types>
+  <Title>Symbol.XamarinEMDK</Title>
+</Overview>

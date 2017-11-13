@@ -1,0 +1,30 @@
+---
+csp: 
+title: Doze Mode Enable/Disable
+type: parm
+order: 50
+mx: "7.2"
+devicetype: A
+parm:
+  pivotal: Yes
+  name: HeaterAction
+  type: list
+  list:
+    - code: 0
+      mx: "7.2"
+      devicetype: A
+      name: Do Nothing
+      description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "7.2"
+      description: Enables Doze Mode energy saving features on the device. 
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "7.2"
+      description: Disables Doze Mode energy saving features on the device. 
+---
+
+This is the On/Off switch for Doze Mode energy saving features on the device. 

@@ -109,7 +109,7 @@ The Preferences section controls keypress feedback, default layout and tab selec
  -->
 * <b><u>Tab configuration</u></b> allows a user or administrator to enable or disable the numeric, alphanumeric, symbol and/or scan key-layout tab(s), hiding them from view and preventing display of the corresponding layout. <!-- **EKB will not permit all four tabs to be disabled at the same time**. -->
 
-* <b><u>Select prefer tab</u></b> causes that tab to appear whenever EKB is invoked. This option is controlled from within the Tab configuration panel (shown below). 
+* <b><u>Select prefer tab</u></b> causes the selected tab to appear whenever EKB is invoked. This option is controlled from within the Tab configuration panel (shown below). 
 
 <img alt="" style="height:350px" src="ekb1.6_tab_config.png"/>
 <br>

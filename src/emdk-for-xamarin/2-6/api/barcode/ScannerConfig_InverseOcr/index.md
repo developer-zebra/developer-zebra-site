@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.6' 
 ---
-To be added.
+
 
 **Type** - Java.Lang.Enum
 
@@ -13,11 +13,11 @@ To be added.
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.InverseOcr ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:**
 
-System.String **p0**  - To be added.
+System.String **p0**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+InverseOcr
 
@@ -25,7 +25,7 @@ System.String **p0**  - To be added.
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.InverseOcr[] Values ();**
 
-To be added.
+
 
 **Parameters:**
 
@@ -34,14 +34,14 @@ To be added.
 ##Properties
 
 ###AutoDiscriminate
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+InverseOcr
 ###InverseOnly
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+InverseOcr
 ###RegularOnly
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+InverseOcr

@@ -2,7 +2,7 @@
 title: Set Default Profile 
 layout: guide.html
 product: DataWedge
-productversion: '6.5'
+productversion: '6.6'
 ---
 
 ## SET_DEFAULT_PROFILE

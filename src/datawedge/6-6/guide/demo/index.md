@@ -2,7 +2,7 @@
 title: DataWedge Demo App
 layout: guide.html
 product: DataWedge
-productversion: '6.5'
+productversion: '6.6'
 ---
 
 ## DWDemo App

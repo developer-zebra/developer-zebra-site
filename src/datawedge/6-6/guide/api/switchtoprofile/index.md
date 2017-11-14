@@ -2,7 +2,7 @@
 title: Switch to Profile 
 layout: guide.html
 product: DataWedge
-productversion: '6.5'
+productversion: '6.6'
 ---
 
 ## SWITCH_TO_PROFILE

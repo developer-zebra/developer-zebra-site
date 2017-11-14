@@ -915,6 +915,9 @@ var sitebuild = Metalsmith(__dirname)
   .use(foldermenu({
         folder: 'datawedge/6-5/'
     }))
+ .use(foldermenu({
+        folder: 'datawedge/6-6/'
+    }))
     .use(foldermenu({
         folder: 'enterprise-browser/1-4/'
     }))

@@ -8,7 +8,7 @@ productversion: '6.6'
 ## Overview
 The 
 
-<img style="height:350px" src="DW_serial_02.png"/>
+<img style="height:450px" src="DW_serial_02.png"/>
 _Serial port input enabled_
 <br>
 
@@ -23,21 +23,6 @@ DW_serial_07.png
 **Device Selection -** permits selection between the device camera and the default scanning device set by the system (recommended).
 
 **Template selection -** sets a SimulScan template for the Profile being configured. **Templates included with DataWedge**:
-
- * **BankCheck.xml -** captures the account number and routing number from the machine-readable zone (MRZ) of a check.
- * **Barcode1.xml -** decodes a single barcode of any symbology.
- * **Barcode2.xml -** decodes two barcodes of the same or differing symbologies.
- * **Barcode4.xml -** decodes four barcodes of the same or differing symbologies.
- * **Barcode5.xml -** decodes five barcodes of the same or differing symbologies.
- * **Barcode10.xml -** decodes 10 barcodes of the same or differing symbologies.
- * **BookNumber.xml -** decodes 10- or 13-digit [ISBN codes](http://www.isbn.org/faqs_general_questions).
- * **DocCap+Optional-Barcode.xml -** captures the form as an image and optionally decodes a barcode, if present. **This is the default form if none is selected**.
- * **DocCap+Required-Barcode.xml -** captures the form and decodes any available barcode.
- * **TravelDoc.xml -** captures information from the machine-readable zone (MRZ) of a travel document such as a passport.
- * **Unstructured Multi-Line.xml -** uses OCR to acquire multiple lines of alpha/numeric text.
- * **Unstructured Single Line.xml -** uses OCR to acquire a single line of alpha/numeric text.
-
-_The names of all Templates included with SimulScan are preceded by the word "Default" plus a hyphen_.
 
 Custom template XML files copied to the `/enterprise/device/settings/datawedge/templates` directory are added to the list above and available for selection. 
 
@@ -78,18 +63,6 @@ The calls above can use the following String tags:
 
 * **String SIMULSCAN_TEMPLATE_NAME_TAG = "com.symbol.datawedge.simulscan_template_name"**; The name of the template which used by SimulScan to capture the form.
 
-* **String SIMULSCAN_REGIONS_BUNDLE_TAG= "com.symbol.datawedge.simulscan_region_data"**; Return an array of Bundles where each bundle contains data and information about a region and the form.
-
-* **String SIMULSCAN_REGION_NAME_TAG = "com.symbol.datawedge.simulscan_region_name"**; Returns the region name of the bundle object for reach region. To get the region name `Bundle.getString()` should be called.
-
-* **String SIMULSCAN_REGION_ID_TAG = "com.symbol.datawedge.simulscan_region_id"**; Returns the region id of the bundle object for reach region. Region id is an integer and can be retrieved by calling `Bundle.getInt ()`.
-
-* **String SIMULSCAN_REGION_STRING_DATA= "com.symbol.datawedge.simulscan_region_string_data"**; Returns the string data of the region. String data comes with barcode, OCR and OMR data.
-
-* **String SIMULSCAN_REGION_BINARY_DATA= "com.symbol.datawedge.simulscan_region_string_data"**;
-Returns the data of the region in the form of byte array. Binary data comes only for picture regions and the form image. Both picture and form data can be load in to a bitmap and display in the application.
-
-* **String SIMULSCAN_REGION_TYPE_TAG = "com.symbol.datawedge.simulscan_region_type"**; Returns the region type of the bundle object for reach region. Region type is a string and can be retrieved by calling `Bundle.getString ()`. 
 
 Possible return values for the region type:
 
@@ -107,7 +80,6 @@ For more information about Android Intents, please refer to the [Android Develop
 
 **Related guides**:
 
-* [SimulScan User Guide](../../../../../simulscan) 
 * [DataWedge Profiles](../../profiles)
 * [DataWedge APIs](../../api) 
 

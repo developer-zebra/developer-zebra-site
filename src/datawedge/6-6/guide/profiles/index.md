@@ -20,7 +20,7 @@ automenu:
           url: ../input/dcp
         - title: Mag-stripe Reader (MSR) 
           url: ../input/msr
-        - title: Serial
+        - title: Serial/USB Port
           url: ../input/serial
         - title: SimulScan Capture
           url: ../input/simulscan

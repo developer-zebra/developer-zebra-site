@@ -13,8 +13,8 @@ Input Plug-ins are used to specify:
 
 * Barcode scanners (laser, imager, camera, bluetooth scanner)
 * Magnetic Stripe Readers (MSR)
+* Serial port(s)
 * SimulScan hardware
-
 
 **The Barcode Scanner Input Plug-in** reads data from the integrated barcode scanner built into the device, attached by cable or implemented as a snap-on module. This Plug-in supports laser, imager and internal cameras. The raw barcode data that's acquired is processed or formatted as required using Process Plug-ins. 
 

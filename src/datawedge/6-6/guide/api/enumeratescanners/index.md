@@ -23,7 +23,30 @@ Generates a numbered list (index) of scanners available on the device.
 **ACTION** [String]: "com.symbol.datawedge.api.ENUMERATE_SCANNERS"
 
 ### Return Values
-The enumerated list of scanners is returned via the broadcast intent `com.symbol.datawedge.api.ACTION_ENUMERATEDSCANNERLIST`. The list of scanners is returned as a string array (see example below).
+The enumerated list of scanners is returned via the broadcast intent `com.symbol.datawedge.api.ACTION_ENUMERATEDSCANNERLIST`. The list of scanners is returned as a string array (see below).
+
+### Bundle Extras
+
+**SCANNER_NAME** [String]: 
+
+**SCANNER_INDEX** [String]:  
+
+**SCANNER_CONNECTION_STATE** [String]: 
+
+**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device (introduced in DataWedge 6.5). Possible values:
+
+* **AUTO** - Automatic scanner selection
+* **INTERNAL_IMAGER** - Built-in imager scanner
+* **INTERNAL_LASER** - Built-in laser scanner
+* **INTERNAL_CAMERA** - Built-in camera scanner
+* **SERIAL_SSI** - Pluggable Z-back scanner for ET50/ET55 
+* **BLUETOOTH_SSI** - RS507 Bluetooth scanner
+* **BLUETOOTH_RS6000** - RS6000 Bluetooth scanner
+* **BLUETOOTH_DS3678** - DS3678 Bluetooth scanner
+* **PLUGABLE_SSI** - Serial SSI scanner RS429 (for use with WT6000)
+* **PLUGABLE_SSI_RS5000** - Serial SSI scanner RS5000 (for use with WT6000)
+* **USB_SSI_DS3608** - DS3608 pluggable USB scanner
+
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 

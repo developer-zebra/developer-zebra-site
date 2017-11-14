@@ -27,9 +27,7 @@ For more information about approved languages or to download a localized operati
 
 #### This document applies to:
 * **DataWedge 6.6.x**, which requires:
-
-OLD OLD OLD:
-* **Scanner Framework 5.1.0** or higher, and
+* **Scanner Framework 18.0.9.0** or higher, and
 * **SimulScan 1.9 or higher** (on [devices that support SimulScan](../../../../simulscan))
 
 To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
@@ -37,6 +35,9 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 -----
 
 ### New in DataWedge 6.6
+
+Serial input plugin
+ENUMERATE_SCANNER updated with BLAHzee
 
 OLD OLD OLD:
 **Improved Profile Exporting** 
@@ -67,7 +68,8 @@ These APIs have been enhanced to support [RESULT_INFO](../api/resultinfo) feedba
 * [SOFTSCAN_TRIGGER](../api/softscantrigger)
 * [SWITCH_TO_PROFILE](../api/switchtoprofile)
 
-**DataWedge 6.5 continues to enhance its intent launching structure**, which can launch multiple intents (as extras) in a single intent action. DataWedge continues to support all original commands using their original syntax. For details, see the [DataWedge API guide](../api/overview).
+**Version 6.6 continues to enhance the DataWedge intent structure**, which can now configure multiple Plug-in settings from a single intent action. For details, see the [DataWedge API guide](../api/overview).
+
 
 -----
 

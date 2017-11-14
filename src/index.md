@@ -26,25 +26,27 @@ products:
         label: '3.0'
   - title: DataWedge
     description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for other apps on the device.
-    url: /datawedge/6-5/guide/about
+    url: /datawedge/6-6/guide/about
     image: /datawedge/datawedge_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /datawedge/6-5/guide/about
+        url: /datawedge/6-6/guide/about
       - title: Setup
-        url: /datawedge/6-5/guide/setup
+        url: /datawedge/6-6/guide/setup
       - title: Profiles
-        url: /datawedge/6-5/guide/profiles
+        url: /datawedge/6-6/guide/profiles
       - title: Settings
-        url: /datawedge/6-5/guide/settings
+        url: /datawedge/6-6/guide/settings
       - title: MSR
-        url: /datawedge/6-5/guide/input/msr
+        url: /datawedge/6-6/guide/input/msr
       - title: APIs
-        url: /datawedge/6-5/guide/api
+        url: /datawedge/6-6/guide/api
       - title: Demo App
-        url: /datawedge/6-5/guide/demo
+        url: /datawedge/6-6/guide/demo
     versions:
+      - url: datawedge/6-6/guide/about
+        label: '6.6'
       - url: datawedge/6-5/guide/about
         label: '6.5'      
       - url: datawedge/6-4/guide/about
@@ -234,11 +236,13 @@ products:
     url: /mx
     image: /images/products/mx.png
     sections:
-      - title: About
+      - title: About MX
         url: /mx/overview
-      - title: Compatibility
+      - title: MX Features
         url: /mx/compatibility
-      - title: Which version do I have?
+      - title: TC20/TC25 Features
+        url: /mx/tc2x
+      - title: Which MX is installed?
         url: /mx/mx-version-on-device
   - title: SimulScan
     description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.

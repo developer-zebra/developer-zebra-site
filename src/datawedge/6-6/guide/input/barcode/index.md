@@ -17,8 +17,9 @@ Barcode Input is used to specify:
 * 1D and 2D and imagers 
 * Laser-based barcode scanners 
 * Bluetooth-connected scanners 
+* USB synchronous serial interface (SSI) scanners 
 
-**Barcode Scanner Input** reads data from the integrated barcode scanner built into the device, attached via cable or Bluetooth or implemented as a snap-on module. DataWedge supports lasers, imagers and internal cameras. The raw barcode data that's acquired is processed or formatted as using the Basic and Advanced Data Formatting Processing options that are found near the Output options. 
+**Barcode Scanner Input** reads data from the integrated barcode scanner built into the device, or attached via cable or Bluetooth connection, or implemented as a snap-on module. DataWedge supports lasers, imagers and internal cameras. The raw barcode data that's acquired is processed or formatted as using the Basic and Advanced Data Formatting Processing options that are found near the Output options. 
 
 **Note**: When SimulScan is used, DataWedge concatenates all captured text into a single string, and performs processing on the concatenated string. See the **[SimulScan section](../simulscan)** for details. 
 
@@ -49,6 +50,18 @@ Bluetooth scanners are supported according to the following rules:
 * **DataWedge will not automatically reconnect** to a Bluetooth scanner if that scanner is connected while DataWedge is using a different auto-selected scanner. To re-enable a Bluetooth scanner, connect the scanner and select it in the Profile or re-choose the Auto select option.
 * **Auto-selection and Battery Swap -** If Scanner selection is set to Auto and the RS507 was enabled prior to a battery swap, DataWedge will continue working with that RS507 scanner upon reconnection after the battery is swapped. If the RS507 does not reconnect with after the swap, DataWedge will revert to the current default scanner.
 * **Keep Enabled on Suspend -** This mode is supported on Bluetooth and pluggable scanners, and might result in faster battery drain than would otherwise be expected while in suspend mode. **Note: The Zebra computing device will wake from suspend mode when the RS507 scan trigger is pressed**.
+
+### USB SSI Scanners
+DataWedge supports the following Zebra USB SSI scanners: 
+
+* **DS3608** USB SSI Scanner
+
+Support notes: 
+
+* The DS3608 scanner is supported only on VC80, ET50 and ET55 devices running Windows 
+* Scanner must be configured using Symbol Native API (SNAPI) with Imager Interface
+* SNAPI drivers are included with supported devices
+* The scanner connects via USB port and cable
 
 >**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 

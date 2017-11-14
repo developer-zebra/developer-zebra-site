@@ -34,6 +34,58 @@ Error messages are logged for invalid actions and parameters.
 
 ## Example Code
 
+	//
+	//  Call before sending the enumeration query
+	//
+	public void registerReciever(){
+	    IntentFilter filter = new IntentFilter();
+	    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");//RESULT_ACTION
+	    filter.addCategory(Intent.CATEGORY_DEFAULT);
+	    registerReceiver(enumeratingBroadcastReceiver, filter);
+	}
+	//
+	// Send the enumeration command to DataWedge
+	//
+	public void enumerateScanners(){
+	    Intent i = new Intent();
+	    i.setAction("com.symbol.datawedge.api.ACTION");
+	    i.putExtra("com.symbol.datawedge.api.ENUMERATE_SCANNERS", "");
+	    this.sendBroadcast(i);
+	}
+
+	public void unRegisterReciever(){
+	    unregisterReceiver(enumeratingBroadcastReceiver);
+	}
+
+	//
+	// Create broadcast receiver to receive the enumeration result
+	//
+	private BroadcastReceiver enumeratingBroadcastReceiver = new BroadcastReceiver() {
+	    @Override
+	    public void onReceive(Context context, Intent intent) {
+	        String action = intent.getAction();
+	        Log.d(TAG, "Action: " + action);
+	        if(action.equals("com.symbol.datawedge.api.RESULT_ACTION")){
+	            // enumerate scanners
+	            if(intent.hasExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS")) {
+	                ArrayList<Bundle> scannerList = (ArrayList<Bundle>) intent.getSerializableExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS");
+	                if((scannerList != null) && (scannerList.size() > 0)) {
+	                    for (Bundle bunb : scannerList){
+	                        String[] entry = new String[3];
+	                        entry[0] = bunb.getString("SCANNER_NAME");
+	                        entry[1] = bunb.getBoolean("SCANNER_CONNECTION_STATE")+"";
+	                        entry[2] = bunb.getInt("SCANNER_INDEX")+"";
+	                        Log.d(TAG, "Scanner:" + entry[0]  + " Connection:" + entry[1] + " Index:" + entry[2]);
+	                    }
+	                }
+	            }
+	        }
+	    }
+	};
+
+
+<!-- 11/14/17- COMMENTED AND REPLACED WITH SAMPLE ABOVE, PER ENG. 
+
 	// First send the intents to enumerate the available scanners on the device:
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.ENUMERATE_SCANNERS", "");
@@ -81,7 +133,7 @@ Error messages are logged for invalid actions and parameters.
 			}
         }
     };
-
+ -->
 <!--  	// The following code provided by engineering on 6/26/17 [TUT-14724]
  		// Integrated with main code sample as indicated below: 
 

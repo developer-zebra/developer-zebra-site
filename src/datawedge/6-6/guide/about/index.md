@@ -26,7 +26,9 @@ For more information about approved languages or to download a localized operati
 -----
 
 #### This document applies to:
-* **DataWedge 6.5.x**, which requires:
+* **DataWedge 6.6.x**, which requires:
+
+OLD OLD OLD:
 * **Scanner Framework 5.1.0** or higher, and
 * **SimulScan 1.9 or higher** (on [devices that support SimulScan](../../../../simulscan))
 
@@ -34,8 +36,9 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 -----
 
-### New in DataWedge 6.5
+### New in DataWedge 6.6
 
+OLD OLD OLD:
 **Improved Profile Exporting** 
 
 DataWedge 6.5 improves compatibility of exported Config files and Profiles for deployment to dissimilar devices. Previous versions of DataWedge support deployment of exported Profiles only to devices that are functionally equivalent to the device that created original Profile. Now, Config files and Profiles created with DataWedge 6.5 will work on any Zebra device model running DataWedge 6.5 or higher. See the [Cross-Device Import](../settings/#crossdeviceimport) section of the DataWedge Settings guide for more information. 

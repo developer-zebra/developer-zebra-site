@@ -93,7 +93,7 @@ To learn how to access DataWedge programmatically, see the [DataWedge APIs](../a
 
 ## Mass Deployment
 
-Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system. DataWedge 6.5 improves compatibility of exported Profiles. Profiles created with DataWedge 6.5 will work on any Zebra device model running DataWedge 6.5 or higher. See [Export a Profile](#exportaprofile) for more information. 
+Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system. DataWedge 6.5 introduced improvements to the compatibility of exported Profiles. Profiles created with DataWedge 6.5 (or higher) will work on any Zebra device model running DataWedge 6.5 or higher. See [Export a Profile](#exportaprofile) for more information. 
 
 ### Export a Config
 Once DataWedge is set up and configured as desired on a device, its settings file can be exported, distributed to other devices, imported and activated automatically (or imported manually, as above). 
@@ -128,7 +128,7 @@ Once a DataWedge Profile is set up and configured as desired on a device, it can
 
 * **If more than one Profile is to be created, exported and distributed** at the same time, it might be beneficial to create and export the Profiles together as a single DataWedge Configuration file using [Export a Config](#exportaconfig). 
 * **If a Profile exists on the device with the same name as one being imported**, the existing profile will be overwritten by the imported one.
-* **Profiles created with DataWedge 6.5 will work on any Zebra device model running DataWedge 6.5 or higher**. See [Cross-Device Import](#crossdeviceimport) for more info. 
+* **Profiles created with DataWedge 6.5 (or higher) will work on any Zebra device model running DataWedge 6.5 or higher**. See [Cross-Device Import](#crossdeviceimport) for more info. 
 
 **To Export a Profile**: 
 
@@ -152,7 +152,7 @@ If an external SD card is installed, an alternate path can be selected:
 
 **Warning: If a Profile exists on the device with the same name as one being imported, the existing profile will be overwritten by the imported one**. 
 
-* **Profiles created with DataWedge 6.5 will work on any Zebra device model running DataWedge 6.5 or higher**. 
+* **Profiles created with DataWedge 6.5 (or higher) will work on any Zebra device model running DataWedge 6.5 or higher**. 
 
 -----
 
@@ -224,9 +224,9 @@ _Image shown if an Auto device (radio button) was selected_
 <br>
 
 ##### Conversion from DataWedge 6.4 (and lower)
-DataWedge makes it possible to covert Config files and Profiles that reside on (or were made with) a device containing a version of DataWedge prior to 6.5 by upgrading the device to DataWedge 6.5 and importing (if necessary) and then exporting the files. **This applies to devices running KitKat only**; devices running Marshmallow (and higher) already have DataWedge 6.5 (or higher). 
+DataWedge makes it possible to covert Config files and Profiles that reside on (or were made with) a device containing a version of DataWedge prior to 6.5 by upgrading the device to DataWedge 6.5 (or higher) and importing (if necessary) and then exporting the files. **This applies to devices running KitKat only**; devices running Marshmallow (and higher) already have DataWedge 6.5 (or higher). 
 
-**IMPORTANT: The device that's being upgraded to DataWedge 6.5 for the purpose of converting files must be the same model device as that which made the original files**. For example, Profiles made with an older version of DataWedge on a TC70 must be imported into DataWedge 6.5 <u>running on a TC70</u>. 
+**IMPORTANT: The device that's being upgraded for the purpose of converting files must be the same model device as that which made the original files**. For example, Profiles made with an older version of DataWedge on a TC70 must be imported into DataWedge 6.5 (or higher) <u>running on a TC70</u>. 
 
 -----
 

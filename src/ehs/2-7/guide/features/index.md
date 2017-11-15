@@ -17,7 +17,7 @@ Kiosk Mode is designed for devices to run a single application, often with a tou
 Also see the EHS [Auto-Launch](../settings#autolaunch) feature, which provides functionality similar to Kiosk Mode without changing the HOME and BACK key functions. 
 
 ##### Android Platform Notes: 
-* **On devices running Android 5.x Lollipop**, Kiosk Mode should not be used with Screen Pinning, an Android L feature that provides similar functionality.
+* **On devices running Android 5.x Lollipop**, Kiosk Mode should not be used with Screen Pinning, an feature in Android L and higher that provides similar functionality.
 * **On devices running Android 4.4 KitKat**, a "please wait" prompt remains displayed when starting up the device in Kiosk Mode. Press the HOME key to launch the Kiosk app and resume normal behavior. 
 
 ##### Kiosk Mode tags:

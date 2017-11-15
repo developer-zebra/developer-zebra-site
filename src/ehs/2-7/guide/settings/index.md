@@ -517,7 +517,7 @@ Specifies the color of the icon label text of applications displayed in User Mod
 ### Orientation
 Allows the screen orientation to be fixed in landscape or portrait mode. Omitting or leaving this setting blank (default) allows Android system settings to control screen orientation.  
 
-**On Android L devices**: screen orientation can be changed through the Quick Settings panel only when EHS is set to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
+**On devices running Android L and higher**: screen orientation can be changed through the Quick Settings panel only when EHS is set to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 
 <img alt="" style="height:350px" src="orientation.png"/>
@@ -743,7 +743,7 @@ Controls whether the device will automatically reboot when EHS is launched for t
 ------
 
 ### Airplane Option Disabled
-Controls whether the device can be put into "airplane mode" from the Power menu or Quick Settings bar. Depending on the device, airplane mode can disable Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu is not available on some MC18, MC40 and MC92 devices running Android 4.4 KitKat. If this feature is greyed out, it might be possible to disable airplane mode on the device using [PowerKeyMgr](/mx/powerkeymgr) through Zebra EMDK or StageNow tools. 
+Controls whether the device can be put into "airplane mode" from the Power menu or Quick Settings bar. Depending on the device, airplane mode disables Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu is not available on some MC18, MC40 and MC92 devices running Android 4.4 KitKat. If this feature is greyed out, it might be possible to disable airplane mode on the device using [PowerKeyMgr](/mx/powerkeymgr) through Zebra EMDK or StageNow tools. **This feature is not supported on devices running Android M or N**. 
 
 <img alt="" style="height:350px" src="airplane_disable.png"/>
 

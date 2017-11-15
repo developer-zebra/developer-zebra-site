@@ -41,7 +41,7 @@ This version of Enterprise Keyboard includes the following languages:
 * **MC40 KK**
 * **TC55 KK**
 * **TC75x KK, L, M**
-* **MTC8000 L**
+* **TC8000 L**
 * **WT6000 L**
 
 See the [EKB 1.5 download page](../../download) for a full list of supported devices. 

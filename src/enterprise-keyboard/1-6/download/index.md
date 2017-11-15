@@ -7,7 +7,7 @@ productversion: '1.6'
 
 ### Supported Devices
 
-EKB 1.6 can be downloaded <u>as a stand-alone app (.apk)</u> for the following Zebra Android devices: 
+EKB 1.6 <u>installs as a stand-alone app (.apk)</u> and is supported on the following Zebra Android devices: 
 
 **Running Android KitKat**: 
 
@@ -15,17 +15,16 @@ EKB 1.6 can be downloaded <u>as a stand-alone app (.apk)</u> for the following Z
 * **TC55**
 * **TC70**
 * **TC75**
-* **TC75x** 
 * **TC8000**
 
 **Running Android Lollipop**: 
 
 * **ET50**
 * **ET55**
+* **MC18**
 * **MC40**
 * **TC70**
 * **TC75**
-* **TC75x** 
 * **TC8000**
 * **WT6000**
 
@@ -33,7 +32,14 @@ EKB 1.6 can be downloaded <u>as a stand-alone app (.apk)</u> for the following Z
 
 * **ET50**
 * **ET55**
-* **TC51**
+* **TC51** (including HC model)
+* **TC56**
+* **TC70x**
+* **TC75x** 
+
+**Running Android Nougat**: 
+
+* **TC51** (including HC model)
 * **TC56**
 * **TC70x**
 * **TC75x** 

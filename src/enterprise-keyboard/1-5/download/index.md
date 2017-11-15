@@ -16,7 +16,6 @@ EKB 1.5 can be downloaded <u>as a stand-alone app (.apk)</u> for the following Z
 * **TC70**
 * **TC75**
 * **TC8000**
-* **TC75x** 
 
 **Running Android Lollipop**: 
 
@@ -26,14 +25,13 @@ EKB 1.5 can be downloaded <u>as a stand-alone app (.apk)</u> for the following Z
 * **TC70**
 * **TC75**
 * **TC8000**
-* **TC75x** 
 * **WT6000**
 
 **Running Android Marshmallow**: 
 
 * **ET50**
 * **ET55**
-* **TC51**
+* **TC51** (including HC model)
 * **TC56**
 * **TC70x**
 * **TC75x** 

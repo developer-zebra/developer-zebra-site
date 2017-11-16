@@ -375,7 +375,7 @@ REPLICATE ABOVE NOTE ON SETTINGS PAGE
 
 * **[Status Bar Settings Icon](../settings#disablestatusbarsettings) behavior has changed**. While disabling such access to the Settings panel is not supported through EHS on all devices, a new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (referred to there as Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain. 
 
-* **[Airplane Option Disabled](../settings#airplaneoptiondisabled) feature cannot be accessed through the EHS UI on any device running Android M or N, and is available on only some devices running Android L**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools, which can override EHS UI settings.
+* **[Airplane Option Disabled](../settings#airplaneoptiondisabled) feature cannot be accessed through the EHS UI on any device running Android M or N, and is accessible on only some devices running Android L**. For (Android L?) devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools, which can override EHS UI settings.
 
 <!-- 
 REPLICATE ABOVE NOTE ON SETTINGS PAGE 

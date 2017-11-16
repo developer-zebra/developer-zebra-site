@@ -236,9 +236,11 @@ products:
     sections:
       - title: About
         url: /mx/overview
-      - title: Compatibility
+      - title: MX Features
         url: /mx/compatibility
-      - title: Which version do I have?
+      - title: TC20/25 MX Features
+        url: /mx/tc2x
+      - title: Which MX is installed?
         url: /mx/mx-version-on-device
   - title: SimulScan
     description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.

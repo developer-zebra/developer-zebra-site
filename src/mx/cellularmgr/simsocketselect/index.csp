@@ -5,6 +5,7 @@ type: parm
 order: 6
 mx: "6.2"
 devicetype: A,B
+info: WWAN-enabled devices only
 parm:
   pivotal: No
   name: SimSocketSelect

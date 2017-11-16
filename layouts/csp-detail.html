@@ -112,7 +112,7 @@
                                                 <th>Option</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
-                                                <th>Model</th>
+                                           <!-- <th>Model</th> -->
                                                 <th>Requires</th>
                                             </tr>
                                             {{#each this.parm.list}}
@@ -123,19 +123,19 @@
 
                                         <!-- DEVICETYPE LOGIC FOR LIST TABLE --> 
                                         
-                                            <td> 
+<!--                                                <td> 
                                                 {{#if this.devicetype}}
                                                     {{#is this.devicetype "A,B"}} 
                                                     All
                                                 {{else}}
-                                                    <!-- {{this.devicetype}} -->
-                                                    N/A on TC20/TC25
+ -->                                                    <!-- {{this.devicetype}} -->
+<!--                                                     N/A on TC20/TC25
                                                     {{/is}}
                                                 {{else}}
                                                     All
                                                 {{/if}} 
                                                 </td>
-                                                
+ -->                                                
                                                 <td>
                                                     
                                                     {{#if this.osx}}

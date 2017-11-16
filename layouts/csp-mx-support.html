@@ -17,8 +17,12 @@
                             <section id="cta" class="wow fadeIn">
                                 <div class="">
                                     <h1>{{ title }}</h1>
-                                    <p> {{subtitle}}</p>
+                                    <h4>See the <a href="/mx/tc2x">TC20/TC25 MX Feature Subset</a></h4>
+                                    <!-- <p> {{ subtitle }}</p> -->
                                     <p>
+                                    {{#if info}}
+                                    icon
+                                    {{/if}}
                                     {{#if product}}
                                     {{ product }}
                                     {{/if}}
@@ -51,10 +55,11 @@
                                         <table class="table">
                                             <tr>
                                                 <th></th>
+                                                <th> Info </th>
                                                 <th> OSX </th>
                                                 <th> MX </th>
                                                 <th> Android API </th>
-                                                <th> Model </th>
+                                                <!--  <th> Model </th> -->
                                             </tr>
                                             {{#each ../collections.csp}}
                                             {{#is ../csp this.csp}}
@@ -62,7 +67,11 @@
                                                     <tr data-devicetype="{{this.devicetype}}" data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
                                                         <td><span ><i>{{this.title}}</i></td>
                                                         <td class="col-md-2">
+                                                        {{#if info}}
+                                                        icon
+                                                        {{/if}}
 
+                                                        <td class="col-md-2">
                                                             {{#if this.osx}}
                                                                 {{this.osx}}{{#if this.osx-end}}- {{this.osx-end}}{{else}}+{{/if}}
                                                             {{else}}
@@ -72,7 +81,8 @@
                                                                 {{else}}
                                                                     {{#if this.osx-specific-list}}{{this.osx-specific-list}} 
                                                                     ONLY
-                                                                    {{else}}N/A
+                                                                    {{else}}
+                                                                    N/A
                                                                     {{/if}}
                                                                 {{/if}}
                                                             {{/if}}
@@ -96,24 +106,30 @@
                                                                 All
                                                             {{/if}}
                                                         </td>
-                                                      <td class="col-md-2">
+<!--                                                       <td class="col-md-2">
                                                             {{#if this.devicetype}}
                                                                 {{#is this.devicetype "A,B" }}
                                                                     All
                                                                 {{else}}
-                                                                <!-- {{this.devicetype}} -->
-                                                                Non-TC2x
+ -->                                                                <!-- {{this.devicetype}} -->
+ <!--                                                                Non-TC2x
                                                                 {{/is}}
                                                             {{else}}
                                                                 All
                                                             {{/if}}
                                                         </td>
-                                                    </tr>                                                          
+  -->                                                   </tr>                                                          
 
                                                 {{#is this.parm.type "list"}}
                                                     {{#each this.parm.list}}
                                                     <tr data-devicetype="{{this.devicetype}}" data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
-                                                        <td class="col-md-4"><span style="padding-left:15px"><i>{{this.name}}</i></td>
+                                                        <td class="col-md-4">
+                                                        <span style="padding-left:15px"><i>{{this.name}}</i></td>
+                                                        <td class="col-md-2">
+                                                        {{#if info}}
+                                                        icon
+                                                        {{/if}}
+                                                        </td>
                                                         <td class="col-md-2">
                                                             {{#if this.osx}}
                                                                 {{this.osx}}{{#if this.osx-end}}- {{this.osx-end}}{{else}}+{{/if}}
@@ -124,7 +140,8 @@
                                                                 {{else}}
                                                                     {{#if this.osx-specific-list}}{{this.osx-specific-list}} 
                                                                     ONLY
-                                                                    {{else}}N/A
+                                                                    {{else}}
+                                                                    N/A
                                                                     {{/if}}
                                                                 {{/if}}
                                                             {{/if}}
@@ -148,19 +165,19 @@
                                                                 All
                                                             {{/if}}
                                                         </td>
-                                                        <td class="col-md-2">
+<!--                                                         <td class="col-md-2">
                                                             {{#if this.devicetype}}
                                                                 {{#is this.devicetype "A,B" }}
                                                                     All
                                                                 {{else}}
-                                                                    <!-- {{this.devicetype}} -->
-                                                                Non-TC2x
+ -->                                                                    <!-- {{this.devicetype}} -->
+<!--                                                                 Non-TC2x
                                                                 {{/is}}
                                                             {{else}}
                                                                 All
                                                             {{/if}}
                                                         </td>
-                                                    </tr>                                                                                     
+ -->                                                    </tr>                                                                                     
                                                     {{/each}}
                                                     
                                                     

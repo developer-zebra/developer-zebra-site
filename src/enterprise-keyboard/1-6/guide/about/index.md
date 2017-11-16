@@ -46,9 +46,9 @@ New settings in the [Preferences panel](../settings/#preferences):
 * <b><u>Select prefer tab</u></b> causes the selected tab to appear whenever EKB is invoked. 
 
 <img alt="" style="height:350px" src="../settings/ekb1.6_prefs.png"/>
-<br>
+**_Navigation and Tab configuration features are supported only on devices with MX 7.1 and higher_**.
 
-See the [EKB 1.6 downlaod page](../../download) for supported devices.  
+See the [EKB 1.6 download page](../../download) for supported devices.  
 
 -----
 
@@ -58,7 +58,7 @@ See the [EKB 1.6 downlaod page](../../download) for supported devices.
 * **MC40 KK**
 * **TC55 KK**
 * **TC75x KK, L, M**
-* **MTC8000 L**
+* **TC8000 L**
 * **WT6000 L**
 
 -----

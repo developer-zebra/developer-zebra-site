@@ -101,6 +101,7 @@ The Preferences section controls keypress feedback, default layout and tab selec
 <br>
  -->
 
+##### On devices with MX 7.1 and higher only: 
 * <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar will be visible at all times except when next-word suggestions (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
 
 <!-- 
@@ -123,6 +124,7 @@ The Preferences section controls keypress feedback, default layout and tab selec
 * Enabling the Symbol tab disables remapping of the Numeric P3 key.
 * Enabling the Alpha tab disables remapping of the Numeric P4 key.
 * Enabling the Numeric tab disables remapping of the Alphanumeric P1 key.
+* Navigation and Tab configuration features are supported only on devices with MX 7.1 and higher.
 
 ------
 

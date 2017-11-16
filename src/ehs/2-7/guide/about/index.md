@@ -367,11 +367,19 @@ EHS 2.7 adds support for the following devices running Android Nougat:
 ### Android Lollipop, Marshmallow and Nougat Notes 
 **_Applies to devices running Android Lollipop 5.x and higher (including Marshmallow and Nougat)_**:
 
-* **[Status Bar Pull-down](../settings#disablestatusbarpulldown) behavior has changed** and is not supported on some L, M and N devices. A feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (referred to there as the "Notification Pulldown") to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
+* **[Status Bar Pull-down](../settings#disablestatusbarpulldown) cannot be accessed through the EHS UI on devices running Android L, M or N**. To access this feature (also known as the "Notification Pulldown"), use the [UI Manager](/mx/uimgr) through Zebra EMDK or StageNow tools, which can override EHS UI settings.
+
+<!-- 
+REPLICATE ABOVE NOTE ON SETTINGS PAGE 
+ -->
 
 * **[Status Bar Settings Icon](../settings#disablestatusbarsettings) behavior has changed**. While disabling such access to the Settings panel is not supported through EHS on all devices, a new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (referred to there as Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain. 
 
-* **[Airplane Option Disabled](../settings#airplaneoptiondisabled) behavior has changed** on some L devices, and is disabled in the EHS UI on devices running M and N. However, if "Airplane option disabled" appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to disable it using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
+* **[Airplane Option Disabled](../settings#airplaneoptiondisabled) feature cannot be accessed through the EHS UI on any device running Android M or N, and is available on only some devices running Android L**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools, which can override EHS UI settings.
+
+<!-- 
+REPLICATE ABOVE NOTE ON SETTINGS PAGE 
+ -->
 
 * **Devices running Android L and higher retain the "Recent Apps" list after device reboot**, posing a potential security risk. EHS 2.7 disables the Recent Apps button on <u>Nougat devices only</u> to help address this risk. For all devices, the list can be cleared using [App Manager](/mx/appmgr) through Zebra EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
 

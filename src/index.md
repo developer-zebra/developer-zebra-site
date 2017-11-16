@@ -234,7 +234,7 @@ products:
     url: /mx
     image: /images/products/mx.png
     sections:
-      - title: About
+      - title: About MX
         url: /mx/overview
       - title: MX Features
         url: /mx/compatibility

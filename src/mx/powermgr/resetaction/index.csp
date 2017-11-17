@@ -5,7 +5,7 @@ type: parm
 order: 2
 mx: "4.2"
 devicetype: A,B
-info: ".upl" files are not supported on TC70/TC75 KK or L devices
+info: Upload list (.upl) files are not supported on TC70/TC75 devices running Android KK or L
 parm:
   pivotal: Yes
   name: ResetAction

@@ -55,7 +55,7 @@
                                         <table class="table">
                                             <tr>
                                                 <th></th>
-                                                <th> Info </th>
+                                                <th> Notes </th>
                                                 <th> OSX </th>
                                                 <th> MX </th>
                                                 <th> Android API </th>
@@ -66,9 +66,10 @@
                                                  {{#isnt this.type "text"}}
                                                     <tr data-devicetype="{{this.devicetype}}" data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
                                                         <td><span ><i>{{this.title}}</i></td>
+                                                        
                                                         <td class="col-md-2">
-                                                        {{#if info}}
-                                                        icon
+                                                         {{#if info}}
+                                                        <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="{{info}}" aria-hidden="true"></i>
                                                         {{/if}}
 
                                                         <td class="col-md-2">

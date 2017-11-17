@@ -5,8 +5,15 @@ product: DataWedge
 productversion: '5.0'
 ---
 
-## DWDemo App
-DWDemo is an app that demonstrates how data is acquired by an application using the DataWedge service. A DataWedge Profile called "DWDemo" is installed along with DataWedge and associated with the demo app. Disabled by default, the Profile can be modified as needed for testing and demo purposes. Once the demo Profile is enabled (see below), pressing the app's Scan button or a device trigger initiates a barcode scan and decoded data is displayed on the screen. The DWDemo app supports scanning with the imager, camera, Bluetooth device or a magstripe reader (MSR), if one is connected. 
+
+## Demo Apps
+
+DataWedge features can be demonstrated and tested using: 
+
+* **DWDemo -** included with all Zebra devices, documented below
+* **[Kitchen Sink app](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/07/14/kitchen-sink-sample-v10-for-zebra-android-enterprise-mobile-features) -** downloadable, customizable app documented on download page 
+
+DWDemo shows how data is acquired by an application using the DataWedge service. A DataWedge Profile called "DWDemo" is installed along with DataWedge and associated with the demo app. Disabled by default, the Profile can be modified as needed for testing and demo purposes. Once the demo Profile is enabled (see below), pressing the app's Scan button or a device trigger initiates a barcode scan and decoded data is displayed on the screen. The DWDemo app supports scanning with the imager, camera, Bluetooth device or a magstripe reader (MSR), if one is connected. 
 
 This guide requires a working knowledge of DataWedge Profiles. For more information about Profile settings, see the [DataWedge Setup Guide](../setup).  
 

@@ -367,7 +367,7 @@ EHS 2.7 adds support for the following devices running Android Nougat:
 ### Android Lollipop, Marshmallow and Nougat Notes 
 **_Applies to devices running Android Lollipop 5.x and higher (including Marshmallow and Nougat)_**:
 
-* **[Status Bar Pull-down](../settings#disablestatusbarpulldown) cannot be controlled through EHS on devices running Android L, M or N** (the feature appears "grayed out" in the Admin-Mode Preferences panel in those devices). To contol the Status Bar Pull-down (also known as the "Notification Pulldown"), use the [UI Manager](/mx/uimgr) through Zebra EMDK or StageNow tools.
+* **[Status Bar Pull-down](../settings#disablestatusbarpulldown) cannot be controlled through EHS on devices running Android L, M or N** (the feature appears "grayed out" in the Admin-Mode Preferences panel on those devices). To contol the Status Bar Pull-down (also known as the "Notification Pulldown"), use the [UI Manager](/mx/uimgr) through Zebra EMDK or StageNow tools.
 
 <!-- 
 REPLICATE ABOVE NOTE ON SETTINGS PAGE 

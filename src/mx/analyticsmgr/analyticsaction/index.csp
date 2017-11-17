@@ -6,6 +6,7 @@ order: 1
 mx: "4.3"
 apilevel: "19"
 devicetype: A,B
+info: Enabling Analytics indicates acceptance of the Zebra End-User License Agreement.
 parm:
   pivotal: No
   name: AnalyticsAction
@@ -22,7 +23,6 @@ parm:
       apilevel: "19"
       devicetype: A,B
       name: Enable
-      info: Indicates acceptance of the Zebra End-User License Agreement.
       description: Enables Analytics Engine to collect data on the device. Selecting this option indicates acceptance of the Zebra End User License Agreement (referenced above).  
     - code: 2
       mx: "4.3"

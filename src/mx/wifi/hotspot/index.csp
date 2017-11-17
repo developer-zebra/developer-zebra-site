@@ -20,13 +20,11 @@ parm:
     - code: 1
       mx: "6.3"
       devicetype: A,B
-      info: WWAN-enabled devices only 
       name: Enable
       description: Enables the device to be used as a Wi-Fi hotspot. 
     - code: 0
       mx: "6.3"
       devicetype: A,B
-      info: WWAN-enabled devices only 
       name: Disable
       description: Disables use of the device as a Wi-Fi hotspot. 
 ---

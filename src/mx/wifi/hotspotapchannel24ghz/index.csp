@@ -19,7 +19,7 @@ parm:
     - code: 2
       mx: "6.3"
       devicetype: A
-      name: 1
+      name: 2
       description: Selects channel 2 on the 2.4GHz band
     - code: 3
       mx: "6.3"

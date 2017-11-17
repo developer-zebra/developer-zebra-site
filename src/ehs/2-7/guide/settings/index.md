@@ -681,7 +681,7 @@ Controls whether the Settings icon is displayed in the Android Status Bar, and t
 ### Disable Status Bar Pull-down
 Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status Bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status Bar Pull-down will be enabled. To disable, enter a value of 1. 
 
-**On Android L devices**: A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (which UI Manager calls the Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) systems. **This will override any EHS setting for controlling the Status Bar**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
+**Note: The Status Bar Pull-down cannot be controlled through EHS on devices running Android L, M or N** (the feature appears "grayed out" in the Admin-Mode Preferences panel in those devices). To contol the Status Bar Pull-down (also known as the "Notification Pulldown"), use the [UI Manager](/mx/uimgr) through Zebra EMDK or StageNow tools.
 
 <img alt="" style="height:350px" src="disable_status_bar.png"/>
 
@@ -743,7 +743,9 @@ Controls whether the device will automatically reboot when EHS is launched for t
 ------
 
 ### Airplane Option Disabled
-Controls whether the device can be put into "airplane mode" from the Power menu or Quick Settings bar. Depending on the device, airplane mode disables Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu is not available on some MC18, MC40 and MC92 devices running Android 4.4 KitKat. If this feature is greyed out, it might be possible to disable airplane mode on the device using [PowerKeyMgr](/mx/powerkeymgr) through Zebra EMDK or StageNow tools. **This feature is not supported on devices running Android M or N**. 
+Controls whether the device can be put into "airplane mode" from the Power menu or Quick Settings bar. Depending on the device, airplane mode disables Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu is not available on some MC18, MC40 and MC92 devices running Android 4.4 KitKat. 
+
+**Note: The Airplane Option Disabled feature cannot be controlled through EHS on devices running Android M or N, nor on some devices running Android L**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
 
 <img alt="" style="height:350px" src="airplane_disable.png"/>
 

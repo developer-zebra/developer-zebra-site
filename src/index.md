@@ -156,60 +156,6 @@ products:
         label: '1.5'
       - url: enterprise-browser/1-4/guide/about
         label: '1.4'
-  - title: Enterprise Home Screen
-    description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
-    url: /ehs/2-7/guide/about
-    image: /ehs/ehs-logo.png
-    btn-text: Latest Docs
-    sections:
-      - title: About
-        url: /ehs/2-7/guide/about
-      - title: Setup
-        url: /ehs/2-7/guide/setup
-      - title: Advanced Settings
-        url: /ehs/2-7/guide/settings
-      - title: Special Features
-        url: /ehs/2-7/guide/features
-      - title: Download
-        url: /ehs/2-7/download
-    versions:
-      - url: ehs/2-7/guide/about/
-        label: '2.7'
-      - url: ehs/2-6/guide/about/
-        label: '2.6'
-      - url: ehs/2-5/guide/about/
-        label: '2.5'
-      - url: ehs/2-4/guide/about/
-        label: '2.4'
-      - url: ehs/2-3/guide/about/
-        label: '2.3'
-  - title: Enterprise Keyboard
-    description: A customizable soft keyboard made specifically for fast and accurate input by workers in the enterprise.
-    url: /enterprise-keyboard/1-5/guide/about
-    image: /enterprise-keyboard/ekb_logo.png
-    btn-text: Latest Docs
-    sections:
-      - title: About
-        url: /enterprise-keyboard/1-5/guide/about
-      - title: Setup
-        url: /enterprise-keyboard/1-5/guide/setup
-      - title: Customize
-        url: /enterprise-keyboard/1-5/guide/settings
-      - title: Download
-        url: /enterprise-keyboard/1-5/download
-    versions:
-      - url: enterprise-keyboard/1-5/guide/about
-        label: '1.5'
-      - url: enterprise-keyboard/1-4/guide/about
-        label: '1.4'
-      - url: enterprise-keyboard/1-3/guide/about
-        label: '1.3'
-      - url: enterprise-keyboard/1-2/guide/about
-        label: '1.2'
-      - url: enterprise-keyboard/1-1/guide/about
-        label: '1.1'
-      - url: enterprise-keyboard/1-0/guide/about
-        label: '1.0'
   - title: Link-OS SDK
     description: The Link-OS SDK makes creating powerful printer apps simple and straightforward.
     url: /link-os
@@ -316,6 +262,18 @@ products:
         url: /contact
       - title: Search
         url: /search
+  - title: User Solutions
+    description: Apps built by Zebra to help end-users increase productivity and improve workflow efficiency.
+    url: /solutions
+    btn-text: Latest Guides
+    image: /images/products/stagenow.png
+    sections:
+      - title: CartScan
+        url: ../cartscan
+      - title: Enterprise Home Screen
+        url: ../ehs
+      - title: Enterprise Keyboard
+        url: ../enterprise-keyboard
 menu:
   items:
     - title: ABOUT TECHDOCS

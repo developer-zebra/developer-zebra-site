@@ -8,6 +8,8 @@ automenu:
       items:
         - title: AppGallery
           url: https://developer.zebra.com/docs/DOC-3040
+        - title: CartScan
+          url: http://techdocs.zebra.com/cartscan
         - title: DataWedge
           url: http://techdocs.zebra.com/datawedge
         - title: EMDK for Android
@@ -68,6 +70,8 @@ automenu:
           url: http://techdocs.zebra.com/stagenow/
     - title: Productivity Tools
       items:
+        - title: CartScan
+          url: http://techdocs.zebra.com/cartscan
         - title: Enterprise Keyboard
           url: http://techdocs.zebra.com/enterprise-keyboard
         - title: SimulScan

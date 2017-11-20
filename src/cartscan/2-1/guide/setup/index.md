@@ -1,11 +1,12 @@
 ---
-title: Enterprise Keyboard Setup
+title: CartScan Setup
 layout: guide.html
 product: CartScan
 productversion: '2.1'
 ---
 
 ## Overview
+
 The Zebra Enterprise Keyboard is delivered as part of the operating system on Zebra Android Lollipop devices and installed as an OS patch on some KitKat devices. Depending on the device, activation might be required to make Enterprise Keyboard available to users. Zebra's keyboard also can be set as the default input method, if desired. This section covers manual activation of Enterprise Keyboard and the steps for setting it as the default input device. For advanced settings, such as language selection and scan-tab configuration, please see the [Customize section](../settings). 
 
 Enterprise Keyboard 1.1 (and higher) can be activated and configured: 

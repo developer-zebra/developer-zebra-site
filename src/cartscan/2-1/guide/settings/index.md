@@ -2,7 +2,7 @@
 title: Enterprise Keyboard Customization
 layout: guide.html
 product: CartScan
-productversion: '1.6'
+productversion: '2.1'
 ---
 
 ## Overview

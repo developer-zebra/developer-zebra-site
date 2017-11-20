@@ -24,7 +24,7 @@ content-items:
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod'
     url: null
 product: CartScan
-productversion: '1.6'
+productversion: '2.1'
 ---
 
 

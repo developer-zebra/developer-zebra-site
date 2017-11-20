@@ -56,14 +56,16 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-keyboard/1-5/guide/about
+        url: /enterprise-keyboard/1-6/guide/about
       - title: Setup
-        url: /enterprise-keyboard/1-5/guide/setup
+        url: /enterprise-keyboard/1-6/guide/setup
       - title: Customize
-        url: /enterprise-keyboard/1-5/guide/settings
+        url: /enterprise-keyboard/1-6/guide/settings
       - title: Download
-        url: /enterprise-keyboard/1-5/download
+        url: /enterprise-keyboard/1-6/download
     versions:
+      - url: enterprise-keyboard/1-6/guide/about
+        label: '1.6'
       - url: enterprise-keyboard/1-5/guide/about
         label: '1.5'
       - url: enterprise-keyboard/1-4/guide/about
@@ -80,18 +82,18 @@ products:
     description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
     url: /help
     btn-text: Latest Guides
-    image: /images/logo_techdocs.png
+    image: /images/products/blue-question-mark.jpg
     sections:
       - title: About TechDocs
-        url: /about
+        url: ../about
       - title: Tools Help
-        url: /help
+        url: ../help
       - title: Developer Portal
         url: https://developer.zebra.com/welcome
       - title: Contact
-        url: /contact
+        url: ../contact
       - title: Search
-        url: /search
+        url: ../search
 menu:
   items:
     - title: ABOUT TECHDOCS

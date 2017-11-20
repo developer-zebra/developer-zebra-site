@@ -9,7 +9,9 @@ productversion: '2.1'
 
 CartScan is an app for Zebra Android devices that scans barcode data and delivers it as keystrokes to a nearby Windows PC via Bluetooth. CartScan enables users in healthcare and other industries to collect data wirelessly, helping to increase productivity and workflow efficiency. CartScan communicates only with CartScan PC Wedge, a Windows service that must be on the PC running the line-of-business application that is collecting the scanned data. 
 
-The CartScan solution includes both required components:
+-----
+
+The CartScan solution includes both required components, which include:
 
 * The CartScan app for Android (`cartscan/apk`): 
 

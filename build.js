@@ -945,6 +945,9 @@ var sitebuild = Metalsmith(__dirname)
        .use(foldermenu({
         folder: 'enterprise-keyboard/1-5/'
     }))
+       .use(foldermenu({
+        folder: 'cartscan/2-1/'
+    }))
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({
       maxLength: 250,

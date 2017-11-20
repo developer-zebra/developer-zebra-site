@@ -7,9 +7,13 @@ productversion: '2.1'
 
 ## Overview
 
-CartScan was initially developed as way to simplify patient data collection by healthcare workers as they make their rounds through a facility. This process often involves a computer wheeled from room to room on a cart, and the worker manually entering patient data using the keyboard. 
+CartScan was initially developed as way to simplify patient data collection by healthcare workers as they make their rounds through a facility. This process often involves a computer wheeled from room to room on a cart, with the worker manually entering patient data using the keyboard. 
 
+The CartScan solution provides the worker with a wireless scanner that collects the data from barcodes and sends the data via Bluetooth to the computer as keystrokes.   
 
+saving the worker time by eliminating trips to the keyboard, which is typically parked in the hallway outside the room. 
+
+enables a Zebra device 
 
 solution is intended to simplify the process of collecting data from a patient 
 

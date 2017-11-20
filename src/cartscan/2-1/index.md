@@ -9,8 +9,10 @@ menu:
       url: /cartscan/2-1/guide/about
     - title: Setup
       url: /cartscan/2-1/guide/setup
-    - title: Customize
+    - title: Settings
       url: /cartscan/2-1/guide/settings
+    - title: How to Use
+      url: /cartscan/2-1/guide/usage
     - icon: fa fa-download
       url: /cartscan/2-1/download
     - icon: fa fa-search

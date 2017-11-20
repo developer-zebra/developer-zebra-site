@@ -7,7 +7,7 @@ productversion: '2.1'
 
 ## Overview
 
-CartScan settings can be 
+CartScan settings can be set. 
 
 builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing long-press characters and swiping to switch key layouts. 
 

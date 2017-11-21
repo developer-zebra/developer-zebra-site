@@ -5,19 +5,9 @@ product: RxLogger
 productversion: '5.4'
 ---
 
-### Supported Devices
+A version of RxLogger is included with every Zebra device. 
 
-RxLogger consists of two components: 
-
-1. The "RxLogger" app, supported on the following Zebra Android devices: 
-	* **MC40 HC KitKat**
-	* **MC40 HC Lollipop**
-	* **TC51 HC Marshmallow**
-2. The "RxLogger PC Wedge" app, supported on Windows PCs with the following components:
-	* Windows 7, 8 or 10
-	* Bluetooth 4+ (built-in or dongle) 
-
------
+RxLogger modules can be upgraded. 
 
 ### How To Download
 

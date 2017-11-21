@@ -241,10 +241,10 @@ products:
       - title: Which version do I have?
         url: /mx/mx-version-on-device
   - title: RxLogger
-    description: A GUI-based tool for capturing information about system and application events a Zebra device.
+    description: A GUI-based tool for capturing log information from system and application events in a Zebra device.
     url: /rxlogger/5-4/guide/about
     btn-text: Latest Guides
-    image: /simulscan/rxlogger_logo.png
+    image: /rxlogger/rxlogger_logo.png
     sections:
       - title: About
         url: /rxlogger/5-4/guide/about
@@ -321,7 +321,7 @@ products:
     description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
     url: /help
     btn-text: Latest Guides
-    image: /images/logo_techdocs.png
+    image: /images/blue_question_mark.png
     sections:
       - title: About TechDocs
         url: /about

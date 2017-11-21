@@ -12,7 +12,9 @@ menu:
     - title: Settings
       url: /rxlogger/5-4/guide/settings
     - title: Modules
-      url: /rxlogger/5-4/guide/usage
+      url: /rxlogger/5-4/guide/modules
+    - title: APIs
+      url: /rxlogger/5-4/guide/apis
     - icon: fa fa-download
       url: /rxlogger/5-4/download
     - icon: fa fa-search

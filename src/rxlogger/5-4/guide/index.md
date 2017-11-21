@@ -7,7 +7,7 @@ content-items:
     level: 4
     title: Setup Guide
     text: A step-by-step guide to installation and basic usage of RxLogger on Android and Windows devices
-    url: /enterprise-keyboard/1-6/guide/setup
+    url: /rxlogger/5-4/guide/setup
   - type: section
     level: 4
     title: Customize

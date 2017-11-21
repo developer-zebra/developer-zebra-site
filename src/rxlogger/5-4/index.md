@@ -11,7 +11,7 @@ menu:
       url: /rxlogger/5-4/guide/setup
     - title: Settings
       url: /rxlogger/5-4/guide/settings
-    - title: How to Use
+    - title: Modules
       url: /rxlogger/5-4/guide/usage
     - icon: fa fa-download
       url: /rxlogger/5-4/download

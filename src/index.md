@@ -240,6 +240,23 @@ products:
         url: /mx/compatibility
       - title: Which version do I have?
         url: /mx/mx-version-on-device
+  - title: RxLogger
+    description: A GUI-based tool for capturing information about system and application events a Zebra device.
+    url: /rxlogger/5-4/guide/about
+    btn-text: Latest Guides
+    image: /simulscan/rxlogger_logo.png
+    sections:
+      - title: About
+        url: /rxlogger/5-4/guide/about
+      - title: Setup
+        url: /rxlogger/5-4/guide/setup
+      - title: Modules
+        url: /rxlogger/5-4/guide/modules
+      - title: APIs
+        url: /rxlogger/5-4/api
+    versions:
+      - url: /rxlogger/5-4/guide/about
+        label: '5.4'
   - title: SimulScan
     description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.
     url: /simulscan/1-1/guide/about

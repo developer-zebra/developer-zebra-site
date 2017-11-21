@@ -7,23 +7,34 @@ productversion: '2.1'
 
 ## Overview
 
-CartScan is an app for Zebra Android devices that scans barcode data and delivers it as keystrokes to a nearby Windows PC via Bluetooth. CartScan enables users in healthcare and other industries to collect data wirelessly, helping to increase productivity and workflow efficiency. CartScan communicates only with CartScan PC Wedge, a Windows service that must be on the PC running the line-of-business application that is collecting the scanned data. 
+CartScan was developed to simplify patient data collection by healthcare workers as they make their rounds through a facility. This process often involves a computer wheeled from room to room on a cart, with the worker manually entering patient data using the keyboard. The CartScan solution saves trips to the keyboard by sending collected data to the computer as keystrokes over Bluetooth. The solution also has applications in the warehouse, transportation and logistics, and numerous other industries. 
+
+### Supported Devices
+
+* **MC40 HC KitKat**
+* **MC40 HC Lollipop**
+* **TC51 HC Marshmallow**
+
+<!-- CartScan is an app for Zebra Android devices that scans barcode data and delivers it as keystrokes to a nearby Windows PC via Bluetooth. CartScan enables users in healthcare and other industries to collect data wirelessly, helping to increase productivity and workflow efficiency. CartScan communicates only with CartScan PC Wedge, a Windows service that must be on the PC running the line-of-business application that is collecting the scanned data. 
+-->
 
 -----
 
-The CartScan solution includes both required components, which include:
+## How It Works
 
-* The CartScan app for Android (`cartscan/apk`): 
+The CartScan solution includes two components:
 
-* CartScan PC Wedge (`CartScanPCwedge.exe`): 
+* The CartScan app for Android (`"cartscan.apk"`)
+
+* The CartScan PC Wedge service for Windows (`"CartScanPCwedge.exe"`)
 
 <img alt="" style="height:350px" src="cartscan_01.png"/>
+_The CartScan app for Android_
+<br>
 
+The PC Wedge service continuously monitors the Bluetooth connection that tethers the host computer to a supported Zebra mobile device. By design, only one mobile device can be connected with the PC at a time, and the CartScan app can communicate only with PC Wedge. When the PC receives scanned data, it inserts the data as ordinary keystrokes into the active field of the foreground application. 
 
-On the computer, PC Wedge continuously monitors the Bluetooth connection that tethers it to a Zebra mobile device. By design, only one mobile device can be connected with the PC at a time. When the PC receives scanned data, it inserts the data (as ordinary keystrokes) into the active field of the foreground application. 
-
-If the need is to populate multiple fields with separate types of scanned data (for example patient and doctor names plus an administered medication), the mobile device can be configured to move the cursor to a subsequent field after each segment of scanned data is transmitted. For more information, see [Settings](../settings). 
-
+If the need is to populate multiple fields with separate types of scanned data (for example patient and doctor names plus an administered medication), the mobile device can be configured to move the cursor to a subsequent field after each segment of scanned data is transmitted. Data also can be processed on the device before transmittal. See [Settings](../settings) for more information. 
 
 <!-- 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dPzyDFMcJzI" frameborder="0" allowfullscreen></iframe>

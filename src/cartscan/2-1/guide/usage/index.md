@@ -7,17 +7,9 @@ productversion: '2.1'
 
 ## Overview
 
-CartScan was initially developed as way to simplify patient data collection by healthcare workers as they make their rounds through a facility. This process often involves a computer wheeled from room to room on a cart, with the worker manually entering patient data using the keyboard. 
+CartScan was initially developed to simplify patient data collection by healthcare workers as they make their rounds through a facility. This process often involves a computer wheeled from room to room on a cart, with the worker manually entering patient data using the keyboard. The CartScan solution saves trips to the keyboard by sending collected data to the computer as keystrokes over Bluetooth. 
 
-The CartScan solution provides the worker with a wireless scanner that collects the data from barcodes and sends the data via Bluetooth to the computer as keystrokes.   
 
-saving the worker time by eliminating trips to the keyboard, which is typically parked in the hallway outside the room. 
-
-enables a Zebra device 
-
-solution is intended to simplify the process of collecting data from a patient 
-
- is delivered as part of the operating system on Zebra Android Lollipop devices and installed as an OS patch on some KitKat devices. Depending on the device, activation might be required to make Enterprise Keyboard available to users. Zebra's keyboard also can be set as the default input method, if desired. This section covers manual activation of Enterprise Keyboard and the steps for setting it as the default input device. For advanced settings, such as language selection and scan-tab configuration, please see the [Customize section](../settings). 
 
 Enterprise Keyboard 1.1 (and higher) can be activated and configured: 
 

@@ -15,7 +15,24 @@ Diag_daemon uses a modular system to collect log data from logcat, the kernel an
 
 ## Screens and States
 
-RxLogger main screen has four buttons that do not change but the availability of the buttons is determined by which state RxLogger is in. It has a title bar to show which state it currently is in. A version number is available in the bottom right corner of the screen.
+The startup screen of RxLogger contains four simple buttons that change in appearance depending on its state. The app's title bar also displays the state, and its version number appears in the lower-right corner.
+
+<img alt="" style="height:350px" src="rxlogger_stopped.png"/>
+_Stopped: the initial state of RxLogger and the diag_daemon service_ 
+<br>
+
+<img alt="" style="height:350px" src="rxlogger_transitioning.png"/>
+_Transitioning: the state immediately following a press of Start or Stop_ 
+<br>
+
+<img alt="" style="height:350px" src="rxlogger_running.png"/>
+_Running: the diag_daemon service is collecting data_ 
+<br>
+
+<img alt="" style="height:350px" src="rxlogger_unknown.png"/>
+_Unknown: RxLogger has lost its connection to the diag_daemon service_ 
+<br>
+
 
 The four buttons on the main screen are Start, Stop, About and Settings.
 
@@ -35,9 +52,6 @@ The Main flow of states for the RxLogger main screen are:
 
 2. From Running and Stop is clicked, Running -> Transition -> Stopped 
 
-<img alt="" style="height:350px" src="rxlogger_stopped.png"/>
-_RxLogger GUI for the diag_daemon service_ 
-<br>
 
 
 -----

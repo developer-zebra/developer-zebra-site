@@ -4,6 +4,7 @@ title: Gear Icon Show/Hide
 type: parm
 order: 14
 mx: "5.1"
+osx: "5.1"
 apilevel: "16"
 devicetype: A,B
 parm:

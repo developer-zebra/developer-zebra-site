@@ -7,125 +7,112 @@ productversion: '2.1'
 
 ## Overview
 
-The Zebra Enterprise Keyboard is delivered as part of the operating system on Zebra Android Lollipop devices and installed as an OS patch on some KitKat devices. Depending on the device, activation might be required to make Enterprise Keyboard available to users. Zebra's keyboard also can be set as the default input method, if desired. This section covers manual activation of Enterprise Keyboard and the steps for setting it as the default input device. For advanced settings, such as language selection and scan-tab configuration, please see the [Customize section](../settings). 
+Overview
+This chapter provides system requirements, installation procedures, and post installation tasks for associating the mobile device to a PC.
 
-Enterprise Keyboard 1.1 (and higher) can be activated and configured: 
+<!-- 
+System Requirements
+Supported PC
+Microsoft® Windows 7, 8 or 10 (with Built-in Bluetooth or Bluetooth 4.0 Dongle connected)
+Supported Devices
+MC40 HC KitKat
+MC40 HC Lollipop
+TC51 HC Marshmallow
 
-* Manually at the device
-* Programmatically through [EMDK for Android](../../../../emdk-for-android) development tools 
-* Remotely:
-    * Using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service 
-    * Through a company's own mobile device management (MDM) system (if supported by that system) 
 
-## Manual Activation
-The section covers direct activation of Enterprise Keyboard on a single device. If using one of the remote methods referenced above to activate and configure multiple managed devices, please see the [Automated Activation section](#automatedactivation) later in this guide. 
+Installation
+Installation requires two steps.
+Install CartScan PC Wedge on a PC
+Install CartScan on a Device
+Install CartScan PC Wedge on a PC
+To install CartScan PC Wedge on a PC:
+Double-click setup.exe to install CartScan PC Wedge on a supported PC.
 
-<b>To quickly determine whether Enterprise Keyboard has been activated</b>: 
+Click Next.
+Figure 1    Welcome to the Zebra CartScan PC Wedge Setup Wizard Screen
 
-&#49;. Bring up the Android keyboard and long-press the spacebar. 
+Specify the installation folder or click Browse.
+(Optional) Click Disk Cost to view the drives you can install Zebra CartScan PC Wedge to, along with each drive’s available and required disk space and click OK.
+To specify who to install Zebra CartScan PC Wedge for, select Everyone or Just Me.
 
-&#50;. If "Enterprise Keyboard" appears in a screen like the one below, tap its radio button (arrow) to set it as the default input device:
-<img alt="" style="height:150px" src="2a_choose_input.png"/>
-<br>
 
-If the Enterprise Keyboard does not appear, proceed to the steps below. 
 
-#####Activate Enterprise Keyboard: 
+Click Next.
+Figure 2    Select Installation Folder Screen
 
-&#49;. <b>Open the Settings panel</b> on the device:
-<img alt="" style="height:350px" src="home_screen.png"/>
-<br>
+Click Next.
+Figure 3    Confirm Installation Screen
 
-&#50;. Scroll to and <b>tap the "Language and input" control</b>:
-<img alt="" style="height:350px" src="input_in_settings.png"/>
-<br>
+Click Close.
+Figure 4    Installation Complete Screen
 
-&#51;. <b>Place a check next to "Enterprise Keyboard"</b> to enable it on the device. Uncheck other input devices to disable them, if desired. If Enterprise Keyboard was included with the device by default (and not downloaded as an OS patch), this step might not be necessary. 
-<img alt="" style="height:350px" src="panel_default.png"/>
-<br> 
+Install CartScan on a Device
+To install CartScan on a Device:
+Copy the CartScan.apk file to the internal or external storage of the device.
+Using a file manager app, locate and tap CartScan.apk to install (alternatively, execute the .apk with the adb command: adb install cartscan.apk).
 
-&#52;. <b>Tap "Default"</b> to set the default input device:
-<img alt="" style="height:350px" src="default_input.png"/>
 
-&#53;. <b>Tap the Enterprise Keyboard radio button</b> to set it as default input device:
-<img alt="" style="height:150px" src="2a_choose_input.png"/>
-<b>Note</b>: This panel also can be invoked by long-pressing the spacebar whenever the Android or Zebra keyboard is visible.
-<br>
+Post Installation Tasks
+After installing CartScanPCWedge on a PC and CartScan on a device, the mobile device must be associated with the PC. By design, only one mobile device can be connected with the PC at a time. When connecting a device for the first time to a PC that is not already connected with another device, follow the steps below to associate the mobile device to a PC.
+Associate Mobile Device to PC
+To associate the mobile device to the PC, perform the following steps on the PC and on the device.
+On the PC
+To associate the mobile device to the PC, perform the following steps on the PC:
+In Windows Bluetooth settings, enable Bluetooth and allow Bluetooth mobile devices to connect to the computer. If the PC does not support Bluetooth, insert a Bluetooth dongle and follow the setup instructions.
 
-&#54;. <B>Tap the HOME key</b> to exit the Settings panel.  
+Run the CartScan PC Wedge application shortcut from the desktop or click Start > All Programs > Zebra CartScan PC Wedge > CartScanPCwedge.
+Figure 5    Run CartScan PC Wedge from Desktop Shortcut or from Start Menu
 
-Enterprise Keyboard is now ready to use with default settings. 
+Instructions appear for connecting the device, including a barcode to scan.
+The pairing barcode contains the PC name and the last four digits of the PC’s BT MAC address. For example, TestPC-1234.
+Figure 6    Connect Device
 
-------
 
-### Change Settings
-Following installation, Enterprise Keyboard settings can be changed through the Android Settings panel. 
+On the Device
+To associate the mobile device to the PC, perform the following steps on the device:
+From the Home Screen, touch   Settings >  Bluetooth.
+Slide the Bluetooth switch to the ON position.
+Touch the Home Screen icon.
 
-#####Change Enterprise Keyboard settings:
 
-&#49;. <b>Open the Settings panel</b> on the device:
-<img alt="" style="height:350px" src="home_screen.png"/>
-<br>
+Touch    All Apps > CartScan.
+Figure 7    CartScan App
 
-&#50;. <b>Tap the "Language and input" control</b>:
-<img alt="" style="height:350px" src="input_in_settings.png"/>
-<br>
 
-&#51;. <b>Tap the Enterprise Keyboard Settings button</b> to change settings:
-<img alt="" style="height:350px" src="ekb_settings_button.png"/>
-<br>
+Scan the barcode displayed on the PC by pressing a scan trigger or the scan button on the device.
+Figure 8    Device is Not Connected to PC
 
-&#52;. On the Enterprise Keyboard Preferences panel, <b>tap the setting(s) that require change</b>:
-<img alt="" style="height:350px" src="ekb_settings_panel.png"/>
-See the [Customize section](../settings) for more information about Enterprise Keyboard settings. 
 
-------
+Touch PAIR or follow the prompts for pairing the device with the PC (if connecting for the first time, as shown below).
+Figure 9    Pair Device to PC
 
-## Automated Activation
-Enterprise Keyboard 1.1 (and higher) can be configured remotely on multiple managed devices using Zebra's [StageNow](../../../../) tools and the [UI Manager](/mx/uimgr/) service or an organization's own MDM system. Configuration also can be handled programmatically through Zebra's [EMDK for Android](../../../../) software development kit. 
+The Bluetooth pairing request dialog displays only if the mobile device has not been paired previously with the PC. On the dialog box, the user does not need to select the check box Allow xxxxxx to access your contacts and call history.
 
-Actions to be executed on the Android Settings panel:
-1. <b>Open Language and input</b> 
-2. Add a check for <b>"Enterprise Keyboard"</b> to enable it on the device
-3. <b>Select Enterprise Keyboard</b> as the default input device
-4. <b>Select a language</b> (if other than the system default)
+NOTE During the pairing process, on the PC side, the user may see a Windows notification pop up similar to A Bluetooth device is trying to connect, click to allow this. Ignore this message, and do not click it.
+When successfully connected, a message displays on the device, similar to the one below.
+Figure 10    Device is Connected to PC
 
-### Set as Default Input Device
-Whether using the UI Manager service through Zebra's StageNow or EMDK tools, or if deploying Enterprise Keyboard from a company's own MDM, it is necessary to specify Enterprise Keyboard's package and class names to select it as the default keyboard on the device. 
+The device model plus the last four digits of the MAC address and the PC name plus the last four digits of the MAC address display.
 
-The required package and class names are shown as the values below, wrapped by the coding necessary for using one of Zebra's tools: 
 
-		:::xml  
-		<parm name="InputMethodPackageName" value="com.symbol.mxmf.csp.enterprisekeyboard"/>
-		<parm name="InputMethodClassName" value="com.android.inputmethod.latin.LatinIME"/>
+CartScan is ready to use.
 
-For additional information about usage and syntax, please refer to respective documentation.
 
------
+Uninstallation
+Uninstallation requires two steps.
+Uninstall CartScanPCWedge on a PC
+Uninstall CartScan on a Device
+Uninstall CartScanPCWedge from a PC
+To uninstall CartScanPCWedge from a PC:
+Click Start > Control Panel > Programs.
+On the Uninstall or change a program screen, locate Zebra CartScan PC Wedge.
+Right-click Zebra CartScan PC Wedge and select Uninstall.
+Uninstall CartScan from a Device
+To uninstall CartScan from a device:
+Touch    Settings >  Apps.
+Touch CartScan.
+Touch UNINSTALL.
+Touch OK to confirm.
+Touch the Home Screen icon.
+ -->
 
-## Manual Deactivation
-
-Enterprise Keyboard cannot be removed if it was included with the device operating system. However, it can be deactivated by reversing the activation process described in the Activation section. The steps below describe how to deactivate Enterprise Keyboard using the Android Settings panel. 
-
-<b>Warning: This action renders Enterprise Keyboard inaccessible, including its scanning and other capabilities</b>. 
-
-**Deactivate Enterprise Keyboard on a device**: 
-
-&#49;. <b>Open the Settings panel</b> on the device:
-<img alt="" style="height:350px" src="home_screen.png"/>
-<br>
-
-&#50;. Scroll to and <b>tap the "Language and input" control</b>:
-<img alt="" style="height:350px" src="input_in_settings.png"/>
-<br>
-
-&#51;. <b>Remove the check next to "Enterprise Keyboard"</b> to disable it on the device. If the Android keyboard is the only other input device, it automatically becomes the default input device and cannot be disabled. 
-<img alt="" style="height:350px" src="panel_default.png"/>
-<br> 
-
-Manual deactivation of Enterprise Keyboard is complete. 
-
------
-
-## Automated Deactivation
-Enterprise Keyboard 1.1 (and higher) can be deactivated on multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote uninstallation can be accomplished through Zebra's [EMDK](/../../../../) or [StageNow](../../../../) tools using the [App Manager](/mx/appmgr) service. 

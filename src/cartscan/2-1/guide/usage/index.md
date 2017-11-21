@@ -9,125 +9,64 @@ productversion: '2.1'
 
 CartScan was initially developed to simplify patient data collection by healthcare workers as they make their rounds through a facility. This process often involves a computer wheeled from room to room on a cart, with the worker manually entering patient data using the keyboard. The CartScan solution saves trips to the keyboard by sending collected data to the computer as keystrokes over Bluetooth. 
 
-
-
-Enterprise Keyboard 1.1 (and higher) can be activated and configured: 
-
-* Manually at the device
-* Programmatically through [EMDK for Android](../../../../emdk-for-android) development tools 
-* Remotely:
-    * Using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service 
-    * Through a company's own mobile device management (MDM) system (if supported by that system) 
-
-## Manual Activation
-The section covers direct activation of Enterprise Keyboard on a single device. If using one of the remote methods referenced above to activate and configure multiple managed devices, please see the [Automated Activation section](#automatedactivation) later in this guide. 
-
-<b>To quickly determine whether Enterprise Keyboard has been activated</b>: 
-
-&#49;. Bring up the Android keyboard and long-press the spacebar. 
-
-&#50;. If "Enterprise Keyboard" appears in a screen like the one below, tap its radio button (arrow) to set it as the default input device:
-<img alt="" style="height:150px" src="2a_choose_input.png"/>
-<br>
-
-If the Enterprise Keyboard does not appear, proceed to the steps below. 
-
-#####Activate Enterprise Keyboard: 
-
-&#49;. <b>Open the Settings panel</b> on the device:
-<img alt="" style="height:350px" src="home_screen.png"/>
-<br>
-
-&#50;. Scroll to and <b>tap the "Language and input" control</b>:
-<img alt="" style="height:350px" src="input_in_settings.png"/>
-<br>
-
-&#51;. <b>Place a check next to "Enterprise Keyboard"</b> to enable it on the device. Uncheck other input devices to disable them, if desired. If Enterprise Keyboard was included with the device by default (and not downloaded as an OS patch), this step might not be necessary. 
-<img alt="" style="height:350px" src="panel_default.png"/>
-<br> 
-
-&#52;. <b>Tap "Default"</b> to set the default input device:
-<img alt="" style="height:350px" src="default_input.png"/>
-
-&#53;. <b>Tap the Enterprise Keyboard radio button</b> to set it as default input device:
-<img alt="" style="height:150px" src="2a_choose_input.png"/>
-<b>Note</b>: This panel also can be invoked by long-pressing the spacebar whenever the Android or Zebra keyboard is visible.
-<br>
-
-&#54;. <B>Tap the HOME key</b> to exit the Settings panel.  
-
-Enterprise Keyboard is now ready to use with default settings. 
-
-------
-
-### Change Settings
-Following installation, Enterprise Keyboard settings can be changed through the Android Settings panel. 
-
-#####Change Enterprise Keyboard settings:
-
-&#49;. <b>Open the Settings panel</b> on the device:
-<img alt="" style="height:350px" src="home_screen.png"/>
-<br>
-
-&#50;. <b>Tap the "Language and input" control</b>:
-<img alt="" style="height:350px" src="input_in_settings.png"/>
-<br>
-
-&#51;. <b>Tap the Enterprise Keyboard Settings button</b> to change settings:
-<img alt="" style="height:350px" src="ekb_settings_button.png"/>
-<br>
-
-&#52;. On the Enterprise Keyboard Preferences panel, <b>tap the setting(s) that require change</b>:
-<img alt="" style="height:350px" src="ekb_settings_panel.png"/>
-See the [Customize section](../settings) for more information about Enterprise Keyboard settings. 
-
-------
-
-## Automated Activation
-Enterprise Keyboard 1.1 (and higher) can be configured remotely on multiple managed devices using Zebra's [StageNow](../../../../) tools and the [UI Manager](/mx/uimgr/) service or an organization's own MDM system. Configuration also can be handled programmatically through Zebra's [EMDK for Android](../../../../) software development kit. 
-
-Actions to be executed on the Android Settings panel:
-1. <b>Open Language and input</b> 
-2. Add a check for <b>"Enterprise Keyboard"</b> to enable it on the device
-3. <b>Select Enterprise Keyboard</b> as the default input device
-4. <b>Select a language</b> (if other than the system default)
-
-### Set as Default Input Device
-Whether using the UI Manager service through Zebra's StageNow or EMDK tools, or if deploying Enterprise Keyboard from a company's own MDM, it is necessary to specify Enterprise Keyboard's package and class names to select it as the default keyboard on the device. 
-
-The required package and class names are shown as the values below, wrapped by the coding necessary for using one of Zebra's tools: 
-
-		:::xml  
-		<parm name="InputMethodPackageName" value="com.symbol.mxmf.csp.enterprisekeyboard"/>
-		<parm name="InputMethodClassName" value="com.android.inputmethod.latin.LatinIME"/>
-
-For additional information about usage and syntax, please refer to respective documentation.
-
 -----
 
-## Manual Deactivation
+### FROM GERI's USER GUIDE
+(unedited)
+<!-- 
+To use CartScan:
+??? This section was updated based on Miriam’s comments in the PDF she sent. Please review this entire section as I don’t have the apps or a mobile computer.
+On the target PC, launch the CartScan PC Wedge business application that will receive data acquired from the mobile device and place the cursor in the appropriate field.
 
-Enterprise Keyboard cannot be removed if it was included with the device operating system. However, it can be deactivated by reversing the activation process described in the Activation section. The steps below describe how to deactivate Enterprise Keyboard using the Android Settings panel. 
+NOTE The receiving app must remain in the foreground.
 
-<b>Warning: This action renders Enterprise Keyboard inaccessible, including its scanning and other capabilities</b>. 
+On the mobile computer, launch the CartScan application.
+Using the mobile computer, scan the barcode in the user interface on the target PC to establish connectivity to the PC.
+On the mobile computer, check the CartScan user interface to confirm the Bluetooth connection was established.
+Launch the Line of Business application ???which app is this?. Place the cursor in the target input field to which scanned data should be populated.
+On the mobile computer, select the profile to be used for the scanning work flow.
+Scan the desired work flow barcode(s) using the mobile device. The data scanned by the mobile computer displays in the scan data field.
 
-**Deactivate Enterprise Keyboard on a device**: 
+NOTE The fact that the data displays does not mean the data was received by the PC. ???not sure what this means
+On the target PC always confirm that the scan data was received and that it populated as desired into the target input field. If the cursor was moved or another application appeared in the foreground of the PC, the data does not populate into the intended field on the line of business application.
 
-&#49;. <b>Open the Settings panel</b> on the device:
-<img alt="" style="height:350px" src="home_screen.png"/>
-<br>
+Acquired data is sent as keystrokes to the PC. The scanned data displays (in Scanned Data field of the application) on the device. A blue check mark indicates successful transmission of the data to the PC.
+???Comment from Miriam: Based on the handshake implementation and what is displayed on the UI,
 
-&#50;. Scroll to and <b>tap the "Language and input" control</b>:
-<img alt="" style="height:350px" src="input_in_settings.png"/>
-<br>
+the documentation should call out what the user should look for in terms of confirmation that the data was transmitted and received at the connected PC...need to know what this will be.
 
-&#51;. <b>Remove the check next to "Enterprise Keyboard"</b> to disable it on the device. If the Android keyboard is the only other input device, it automatically becomes the default input device and cannot be disabled. 
-<img alt="" style="height:350px" src="panel_default.png"/>
-<br> 
+NOTE The user should always validate that the data was delivered and populated into the intended input field on the PC. .
 
-Manual deactivation of Enterprise Keyboard is complete. 
+Figure 11    Successful Scan
 
------
+To continue scanning data, repeat Step 5 through Step 8. Before scanning, confirm that the mobile computer is still connected via Bluetooth to the target PC. If the mobile computer goes out of range of the PC or loses connection due to a timeout, a message displays indicating that the mobile device is disconnected from the PC.
 
-## Automated Deactivation
-Enterprise Keyboard 1.1 (and higher) can be deactivated on multiple managed devices using an organization's own MDM server in the same way as other Android apps. Alternatively, remote uninstallation can be accomplished through Zebra's [EMDK](/../../../../) or [StageNow](../../../../) tools using the [App Manager](/mx/appmgr) service. 
+NOTE The disconnect message may not appear immediately.
+
+Figure 12    Device is Disconnected from PC
+
+If a barcode is scanned without an active connection to the PC, an alert dialog displays and data is not sent. A red “x” indicates the failure. However, scanned data is displayed in the Scanned Data field of the application.
+Figure 13    Device Connection Error
+
+While running, CartScan PC Wedge is available in the system tray. The system administrator can enable and disable CartScan (disconnecting the device from the PC), display the pairing barcode to connect (or reconnect) with a device, view the app version and Bluetooth MAC address, and exit the app (and stop the service).
+Figure 14    CartScan PC Wedge System Tray
+
+BT Mac - displays the Bluetooth Mac address of the PC.
+Pairing Barcode - displays the CartScan UI and instructions for pairing and/or connection.
+Enable/Disable CartScan - starts/stops the CartScan PC Wedge service. When disabled, the CartScan icon turns red.
+Disconnect From Device - drops the Bluetooth connection with the device.
+
+
+
+Exit CartScan - exits the CartScan PC Wedge application. To re-launch, double-click the CartScanPCwedge.exe icon.
+About - shows CartScan PC Wedge version information.
+
+
+Re-Establish the Bluetooth Connection
+To re-establish the Bluetooth connection:
+On the PC, select the CartScan PC Wedge icon on the system tray.
+Select Pairing Barcode to display the barcode and pairing instructions.
+Follow the instructions to connect the device, displayed below the barcode.
+Figure 15    Re-Establish Bluetooth Connection from System Tray
+ -->
+

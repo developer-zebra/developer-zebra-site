@@ -9,322 +9,247 @@ productversion: '2.1'
 
 CartScan settings can be set. 
 
-builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing long-press characters and swiping to switch key layouts. 
-
-Enterprise Keyboard uses Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Terms can saved and mass-deployed using Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools.
-
-## Customizing Keyboard Settings
-
-Enterprise Keyboard Settings are accessed through the Android Settings panel: 
-
-&#49;. <b>Open the Settings panel</b> on the device:
-<img alt="" style="height:350px" src="home_screen.png"/>
-<br>
-
-&#50;. <b>Tap the "Language and input" control</b>:
-<img alt="" style="height:350px" src="input_in_settings.png"/>
-<br>
-
-&#51;. <b>Tap the Enterprise Keyboard Settings button</b>:
-<img alt="" style="height:350px" src="ekb_settings_button.png"/>
-<br>
-
-&#53;. <b>Tap the setting(s) to be changed</b>:
-<img alt="" style="height:350px" src="ekb_settings_panel.png"/>
-
-------
-
-### Languages
-By default, Enterprise Keyboard uses the language selected in the "Language and input" part of the Android Settings panel: 
-
-<img alt="" style="height:350px" src="android_lang.png"/>
-
-#####Switch from system-selected language to one provided with Enterprise Keyboard: 
-
-&#49;. <b>Tap on "Languages"</b> in the Enterprise Keyboard Preferences panel: 
-<img alt="" style="height:350px" src="ekb_settings_panel.png"/>
-This version of Enterprise Keyboard includes the following languages: 
-
-* English (UK)
-* English (US) 
-* French
-* Italian
-* German
-* Spanish
-* Russian
-
-&#50;. <b>Uncheck "Use system language" checkbox</b>: 
-<img alt="" style="height:350px" src="pref_language.png"/>
-<br>
-
-With the "Use system language" preference unchecked, language packs become available for selection. 
-
-&#51;. <b>Tap one or more languages</b> to select them: 
-<img alt="" style="height:350px" src="pref_language_2.png"/>
-<br>
-
-<!--
-Selected languages will appear in the language  menu in the Enterprise Keyboard: 
-<img alt="" style="height:350px" src="sample_2.png"/>
-<br>
--->
-
-------
-
-### Preferences
-The Preferences section controls keypress feedback, default layout and tab selections, and other aids to productivity. Default settings are shown here:  
-
-<img alt="" style="height:350px" src="ekb_prefs.png"/>
-<img alt="" style="height:91px" src="ekb1.6_prefs_crop.png"/>
-<br>
-
-##### Set preferences as desired: 
-
-* <b><u>Auto-capitalization</u></b> automatically capitalizes the first word of each sentence following a period. 
-
-* <b><u>Double-space period</u></b> automatically inserts a period and space after double-tapping the spacebar. 
-
-* <b><u>Vibration on keypress</u></b> sets the device to vibrate when a key is pressed. Duration is configurable in [Advanced settings](#advanced). 
-
-* <b><u>Sound on keypress</u></b> plays a sound when a key is pressed. Volume is configurable in [Advanced settings](#advanced).
-
-* <b><u>Popup on keypress</u></b> displays a pop-up of the key being pressed. <!--A delay can be added in [Advanced settings](#advanced).-->
-
-* <b><u>Voice input key</u></b> displays a key for allowing Enterprise Keyboard to accept spoken input using the mic (on GMS-enabled devices only). 
-
-* <b><u>Show scan tab</u></b> displays a tab for switching to the scanner to collect barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
-
-* <b><u>Flick</u></b> enables the alternate (long-press) character of a key to be input by "flicking" the key. 
-
-* <b><u>Numeric (Telephone)</u></b> layout appears when the numeric keypad is in focus. When disabled, the Calculator layout is used. 
+Overview
+This chapter explains how to configure audio and vibrate options and profile settings.
 
 <!-- 
-<img alt="" style="height:350px" src="ekb1.6_nav.png"/>
-<br>
+Configure Audio and Vibrate Options
+CartScan provides control over audio and tactile feedback to indicate a successful scan. Set these options as desired, for example to quiet a device so as not to disturb patients. Scan beeps can be muted by setting the Audio option to OFF.
+To configure the audio and vibrate options:
+From the device Home Screen, touch  All Apps > CartScan.
+Tap to toggle the ON/OFF switch.
+Audio - default is ON.
+Vibrate - default is OFF.
+Figure 16    Configure Audio and Vibrate Options
+
+Configure Profiles
+CartScan behavior is controlled by Profiles, which define how acquired data is processed and delivered to a line-of-business application.
+View/Edit the Default Profile
+To view/edit a profile:
+From the device Home Screen, touch  All Apps > CartScan.
+Touch    > Profiles.
+Tap and hold the Default profile.
+Figure 17    Default Profile Screen
+
+
+Touch Edit Profile.
+Figure 18    Edit Profile Screen
+
+
+View or Edit the Profile Settings as needed.
+Figure 19    Default Profile Settings Screen
+
+
+SESSION TIMEOUT
+
+WARNING! Disabling Session Timeout is strongly discouraged. ???new warning
+
+Ignore Session Timeout - Select this option to maintain the connection indefinitely (or until the user exits the CartScan app or the device moves out of range).
+Session Timeout - Enter a timeout period value between 1 and 60 minutes. Default is 2. This option enables the system administrator to configure the length of time to maintain the Bluetooth connection between the mobile device and the PC during periods of inactivity.
+
+
+BLUETOOTH OUTPUT
+Enable/disable BT Output - This option provides a measure of security by restricting delivery of acquired data to the application running on a PC. The administrator can enable or disable the output option to deliver the data to the PC. If this setting is disabled, the scanned data will not be delivered to the connected PC.
+DATA FORMATTING
+Data formatting provides an easy way to append or prepend acquired data with custom values or keystrokes before passing it to a line-of-business application on the PC. This can be useful for adding application-specific characters to acquired data or sending an ENTER and/or TAB character after submitting the data to advance the cursor to the next field.
+
+NOTE Do not use Data Formatting in Zebra DataWedge Profile settings for CartScan. Modifying the basic data formatting and/or the advanced data formatting will result in conflicts with the Zebra CartScan application.
+Enable/disable data formatting - Enable Data Formatting to access Basic or Advanced Data Formatting functions. If Data Formatting is not enabled, scanned data is passed to the app without modification or extra keystrokes.
+BASIC DATA FORMATTING
+Basic Data Formatting provides an easy way to append or prepend acquired data with custom values or special keystrokes. The supported options are:
+Prefix to data - adds (prepends) the specified character(s) to the beginning of the acquired data before sending.
+Suffix to data - adds (appends) the specified character(s) to the end of the acquired data before sending.
+Send as hex - sends the data in hexadecimal format. For example, if the acquired barcode data is 012345, this option sends the hex equivalent of 303132333435.
+Send as Upper Case - sends the data in all caps. For example, if the acquired barcode data is abcde, this option sends the string of ABCDE. Any selected prefix and/or suffix data is also converted to upper case (if appropriate).
+Send TAB key - appends a TAB character to the processed data.
+Send ENTER key - appends an ENTER character to the processed data.
+ADVANCED DATA FORMATTING
+Advanced Data Formatting can append or prepend acquired data with special characters and keystrokes such as functional keys, mouse clicks, space bar and num-lock.
+Prefix ADF Rule - Can be configured as displayed in the following table. Keys can be selected from the scrolling list without manually entering the details.
+Suffix ADF Rule - Can be configured as displayed in the following table. Keys can be selected from the scrolling list without manually entering the details.
+
+Table 1    Supported ADF Keystrokes
+
+NOTE ADF Keystrokes will be visible only on the line-of-business application on the PC, not in the CartScan app.
+
+Table 2    ADF Keystrokes available in the UI, but not supported in this release
+
+Export Profile Settings
+The MDM Administrator configures and deploys profiles. Once configured by the MDM Administrator, Profile settings can be exported (as an XML file) and deployed to other devices.
+To export Profile settings:
+From the device Home Screen, touch  All Apps > CartScan.
+Touch    > Profiles.
+Touch        > Export Profile to XML. Figure 20    CartScan Profiles Settings Menu
+
+
+Select one or more Profiles to export, and touch Export.
+
+
+The Profile(s) selected for export are saved as a single XML file and each Profile will have a set of features. If more than one Profile is exported, that same number of Profiles (along with their original Profile names) will be available on the target device after that file is imported.
+Figure 21    Export Profiles Screen
+
+
+A confirmation screen appears with the path to the Profile XML file:
+/sdcard/Android/data/com.symbol.cartscan/CartScan/Export/Profiles/CartScanConfig.xml This file can be viewed in the File Browser on the device.
+Figure 22    Confirmation Screen
+
+
+
+
+
+
+Information about the Profile active on the device is not contained in the exported file; an imported Profile must be set as the active Profile either manually or with an intent (See Import Profile Remotely on page 30).
+Touch the Home Screen icon.
+
+
+
+NOTE Exported profiles contain the following settings by default, regardless of how they were configured on the device when exported:
+RestoreToDefault = false
+AllowProfileEditing = true
+
+Import Profile Settings
+Profile settings can be imported manually or remotely. Consider the following:
+RestoreToDefault = true in an imported XML file, erases all Profiles on the device, and resets the default Profile to its default values without user confirmation.
+AllowProfileEditing = false in an imported XML file, and prevents modifications to any Profile settings by device user.
+If a Profile of the same name exists on the device as one being imported:
+A user performing a manual import is prompted to replace or cancel.
+An intent-based import will replace the existing Profile.
+An imported Profile is not automatically selected as the active Profile.
+Import Profile Manually
+The CartScan Profile XML exported from one device can be imported onto other devices automatically or manually after being pushed to the device by an MDM or other means.
+To import a Profile settings file that has already been pushed to the device:
+From the device Home Screen, touch All Apps > CartScan.
+Touch    > Profiles.
+Touch        > Import Profile From XML. Figure 23    CartScan Profiles Settings Menu
+
+
+Navigate to the location of the file being imported and select it.
+
+
+
+For    example,    /storage/emulated/0/Android/data/com.symbol.cartscan/CartScan/Export/CartScanConfig.xml
+Touch Yes on the Import Profile confirmation screen.
+Figure 24    Import Profile Confirmation Screen
+
+
+Touch the Home Screen icon.
+Import Profile Remotely
+CartScan supports remote deployment of the configuration file (CartScanConfig.xml) to devices through commercially available third-party Mobile Device Management (MDM) systems. When CartScan is launched, it checks its sandbox folder and sees if a CartScanConfig.xml is present. If so, CartScan imports the new profile and uses it until settings are changed.
+An MDM can configure CartScan using intents. For example, the following commands push an XML file to the device, and start ConfigIntentService (using activity manager) with the extra value pair of SET_CONFIG_FILE and the config file:
+adb push CartScanConfig.xml /sdcard/.
+adb shell am startservice -a com.symbol.cartscan.ConfigIntentService -e SET_CONFIG_FILE “/sdcard/CartScanConfig.xml”.
+CartScan Profile settings in an XML file can be configured after export from a device by an administrator or by an MDM tool. Once settings are configured as desired, deploy the file using the following process:
+Push the XML to /sdcard on the device.
+Send intent to com.symbol.cartscan.ConfigIntentService with the XML file path.
+For more information about sending and receiving intents, see Configuring Intents on page 33.
+Close and restart CartScan.
+Settings are applied the next time CartScan launches.
+
+NOTE When AllowProfileEditing is set to false, some menu items are disabled. This can be undone only by deploying a new configuration file with AllowProfileEditing set to true.
+
+Either remote configuration or importing a Profile xml file locally, does not change the current selected Profile unless the RestoreToDefault is set to true. If RestoreToDefault is set to true, the selected Profile is set as the
+
+
+Default Profile. If RestoreToDefault is set to true, the Default profile gets selected as the default and it will replace the existing Profiles and if RestoreToDefault is set to false, new Profiles will get added to the existing Profiles.
+Edit, Rename, or Delete a Profile
+To edit, rename or delete a Profile:
+From the device Home Screen, touch  All Apps > CartScan.
+Touch    > Profiles.
+Tap and hold the Profile to be edited, renamed, or deleted.
+Select one of the following options and follow the prompts as appropriate for the desired action.
+View Profile
+Edit Profile
+Rename Profile
+Delete Profile
+Figure 25    Profile Options
+
+
+
+If AllowProfileEditing is set to false, the user can View Profile settings but cannot make changes, and the Rename and Delete iotuibs are not available.
+If a Profile is renamed using a name that already exists, an error results. The Default Profile cannot be renamed or deleted.
+
+
+Restore to Factory Default Settings
+To restore CartScan to the factory default settings:
+From the device Home Screen, touch  All Apps > CartScan.
+Touch    > Profiles.
+
+
+Touch    > Restore to factory defaults.
+Figure 26    CartScan Profiles Settings Menu
+
+
+Touch the Home Screen icon.
+
+
+
+
+CartScanConfig.xml Example
+The following screen shows the CartScanConfig.xml file, which can be displayed on the device or it can be viewed on the PC using Notepad.
+
+	<wap-provisioningdoc>
+		<characteristic type="CartScan" version="1.0">
+			<parm name="AllowProfileEditing" value="true"/>
+			<parm name="RestoreToDefault" value="false"/>
+			<parm name="EnableLogging" value="true"/>
+		<characteristic type="CartScanProfile">
+			<parm name="ProfileName" value="Default"/>
+			<parm name="AudioMode" value="2"/>
+			<parm name="HapticMode" value="1"/>
+			<parm name="IgnoreSessionTimeout" value="false"/>
+			<parm name="TimeOut" value="2"/>
+			<parm name="BTEnable" value="true"/>
+			<parm name="DataFormattingEnable" value="true"/>
+			<parm name="BdfPrefix" value=""/>
+			<parm name="BdfSuffix" value=""/>
+			<parm name="BdfSendHex" value="false"/>
+			<parm name="BdfSendUpper" value="false"/>
+			<parm name="BdfSendTab" value="false"/>
+			<parm name="BdfSendEnter" value="false"/>
+			<parm name="AdfPrefix" value=""/>
+			<parm name="AdfSuffix" value=""/>
+		</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+
+NOTE Enable Logging, Audio Mode, and Haptic Mode settings are not configurable in the current release.
+
+
+Configuring Intents
+Send an Intent
+An administrator or MDM solution can provide the CartScan Service a new configuration by sending an Intent with the following values:
+Intent Type - StartService
+Package Name - com.symbol.cartscan
+Class Name - com.symbol.cartscan.ConfigIntentService
+
+
+Extras:
+SET_CONFIG_FILE: Configuration XML string.
+
+Example
+		Intent AdminStartServiceIntent = new Intent(); AdminStartServiceIntent.setComponent(new      ComponentName("com.symbol.cartscan", "com.symbol.cartscan.ConfigIntentService"));
+		AdminStartServiceIntent.putExtra("SET_CONFIG_FILE", "<YOUR CARTSCAN XML CONFIGURATION PATH ON DEVICE>");
+		startService(AdminStartServiceIntent);
+Receive an Intent
+When the processing is complete (or if an error occurs during processing), a Broadcast Intent will be sent to any MDM application that is registered for the "com.symbol.cartscan.RESPONSE".
+For example:
+
+		<intent-filter>
+		<action     android:name="com.symbol.cartscan.RESPONSE"/>
+		</intent-filter.
+
+Intent Type - Broadcast
+Action Name - com.symbol.cartscan.RESPONSE.
+Extras:
+STATUS: Pass or Fail
+ERROR_MESSAGE: Error Message
+CONFIG_XML: Configuration XML string.
+Example
+		public void onReceive(Context context, Intent intentReceived) {
+		if ( 0 == intentReceived.getAction().compareToIgnoreCase("com.symbol.cartscan.RESPONSE") ) { Log.d(TAG, "com.symbol.cartscan.RESPONSE: Status:" + intentReceived.getStringExtra("STATUS"));
+		Log.d(TAG, "com.symbol.cartscan.RESPONSE: Error msg:" + intentReceived.getStringExtra("ERROR_MESSAGE"));
+		...
+
  -->
-
-##### On devices with MX 7.1 and higher only: 
-* <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar will be visible at all times except when next-word suggestions (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
-
-<!-- 
-<img alt="" style="height:350px" src="ekb1.6_prefs.png"/>
-<br>
- -->
-* <b><u>Tab configuration</u></b> allows a user or administrator to enable or disable the numeric, alphanumeric, symbol and/or scan key-layout tab(s), hiding them from view and preventing display of the corresponding layout. <!-- **EKB will not permit all four tabs to be disabled at the same time**. -->
-
-* <b><u>Select prefer tab</u></b> causes the selected tab to appear whenever EKB is invoked. This option is controlled from within the Tab configuration panel (shown below). 
-
-<img alt="" style="height:350px" src="ekb1.6_tab_config.png"/>
-<br>
-
-**Tab Bar Notes**:
-
-* If either the tab bar or the suggestion bar are enabled, both will appear.
-* The tab bar will not appear if the Next Word Suggestions bar and the Voice Input Key are both disabled.
-* On GMS devices, if voice is enabled and the next-word suggestions feature is disabled, a blank suggestion bar will appear over the tab bar when words are being suggested.
-* If the `TYPE_TEXT_FLAG_NO_SUGGESTIONS` input type is enabled, neither the tab bar nor the suggestion bar will appear. [More about Android input types](https://developer.android.com/reference/android/text/InputType.html).
-* Enabling the Symbol tab disables remapping of the Numeric P3 key.
-* Enabling the Alpha tab disables remapping of the Numeric P4 key.
-* Enabling the Numeric tab disables remapping of the Alphanumeric P1 key.
-* Navigation and Tab configuration features are supported only on devices with MX 7.1 and higher.
-
-------
-
-### Text Correction
-Text Correction controls automatic corrections to typed text based the predefined parameters explained below. In addition, the Personal dictionary feature allows a list of custom or industry-specific terms to be stored and presented as spelling suggestions along with those of the selected language(s).
-
-<img alt="" style="height:350px" src="pref_text_2.png"/>
-<br>
-
-##### Set preferences as desired: 
-
-<b><u>Block offensive words</u></b> prevents display of spelling suggestions that might be deemed offensive or insensitive as determined by external standards of decency.
-
-<b><u>Auto-correction</u></b> automatically replaces misspelled words with those found in the Add-on and Personal dictionaries (see below). Replacements are executed by pressing the spacebar. 
-
-<b><u>Show correction suggestions</u></b> displays suggested words while typing but does not replace them when the spacebar is pressed unless Auto-correction is also enabled.
-
-<b><u>Personalized suggestions</u></b> learns from communications and typed data to improve suggestions.
-
-<b><u>Suggest Contact names</u></b> automatically displays contacts from the contact list when typing names. 
-
-<b><u>Next-word suggestions</u></b> looks at the word prior to the one being typed and displays words that might come next. This is sometimes referred to as "predictive text."
-
------
-
-#### Personal dictionary
-The Personal dictionary can be used to store terms specific to a particular industry to help improve the speed and accuracy of keyboard input. For example, if configured for a medical device, the acronym "gerd" could be added as a shortcut and replaced with "gastroesophageal reflux disease" whenever it was typed.
-
-<img alt="" style="height:350px" src="pref_text_1.png"/>
-<br>
-
-<b>Notes</b>:
-
-* Terms must be added to the Personal dictionary one at a time. 
-* There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
-* When displayed, longer terms and phrases might be injected with an ellipsis (...) in the suggestion bar. 
-* Spelling suggestions do not appear with all field types.  
-* For mass deployment, the Personal dictionary must be populated beforehand using Zebra's [StageNow](../../../../) tool. 
-
-#####Add a term to the Personal dictionary: 
-
-&#49;. <b>Tap "Personal dictionary"</b> in the Text correction Preference panel: 
-<img alt="" style="height:350px" src="personal_dic.png"/>
-<br>
-
-&#50;. <b>Tap the language</b> with which to associate the personal term(s). Select "For all languages" to display Personal dictionary terms with every language pack:  
-<img alt="" style="height:350px" src="pref_dic.png"/>
-<br>
-
-&#51;. <b>Tap the plus sign (+)</b> to define a new word or phrase: 
-<img alt="" style="height:350px" src="pref_dic_add.png"/>
-<br>
-
-&#51;. <b>Enter the word or phrase</b> (and shortcut, if desired), then <b>tap the gear icon to save</b>. 
-<img alt="" style="height:350px" src="enter_term_gerd.png"/>
-<br>
-
-&#52;. <b>Repeat Steps 3 and 4</b> until all terms are added. <b> Words and/or phrases must be added one at a time</b>. After each term is added, the terms list is displayed: 
-<img alt="" style="height:350px" src="term_list_gerd.png"/>
-<br>
-
-When a shortcut is typed as input, its associated term will appear in a list of spelling corrections: 
-<img alt="" style="height:350px" src="autocorrected_gerd.png"/>
-Press the spacebar to accept the highlighted word (which in this case is "Gerd") or tap the desired word or phrase to insert it. 
-<br>
-
-**Note**: To maximize screen space for apps, the spelling Suggestion Bar shares space with the keypad Navigation Tab bar. The nav bar fades out temporarily when suggestions are available.
-
-#####Edit or delete a term: 
-
-&#49;. Bring up the terms list and <b>tap the term</b>  to be edited:
-<img alt="" style="height:350px" src="term_list_gerd.png"/>
-<br>
-
-&#50;. <b>Edit the term</b> or tap the trashcan icon to delete: 
-<img alt="" style="height:350px" src="enter_term_gerd.png"/>
-<br>
-
-#### Add-on dictionaries
-Add-on dictionaries contain predefined word corrections and suggested words for each language installed on the device. <!--As Enterprise Keyboard is used, it stores new words and patterns of frequently used words and phrases so that its word suggestions can improve over time.Those words and patterns are appended to the Add-on dictionaries according to language in use by the keyboard at the time the pattern was identified. -->From this panel, user actions are limited to viewing the list of installed Add-on dictionaries and deleting/reinstalling them. No further actions are permitted. 
-
-<img alt="" style="height:350px" src="pref_dic_addon_1.png"/>
-<!--
-<img alt="" style="height:350px" src="pref_dic_addon_2.png"/>
-
-<img alt="" style="height:350px" src="pref_dic_addon_3.png"/>
--->
-------
-
-### Advanced 
-The Advanced panel allows the setting of keypress feedback parameters for feedback types that are enabled in the Preferences panel. The image below shows sound feedback disabled (by default):  
-<img alt="" style="height:350px" src="pref_advanced.png"/>
-<br>
-
-Tap on a setting to bring up a panel for adjusting that setting: 
-<!--
-<b>Key Popup dismiss delay</b> controls whether to delay when dismissing the key popup. 
-<img alt="" style="height:150px" src="adv_popup.png"/>
-<br>-->
-
-<b>Keypress vibration duration</b> sets the length of time (from 0 to 100ms) the device will vibrate to indicate that a key was pressed (default = 0ms). 
-<img alt="" style="height:150px" src="adv_vibrate.png"/>
-<br>
-
-<b>Keypress sound volume</b> controls the loudness (from 0 to 100) of the sound that coincides with a keypress (default = System setting). 
-<img alt="" style="height:150px" src="adv_sound.png"/>
-<br>
-
-<b>Key long press delay</b> sets the time (from 100 to 700ms) a key must be held down before being considered a long-press (default = 300ms).
-<img alt="" style="height:150px" src="adv_longpress.png"/>
-<br>
-
-------
-
-### Remapping Keys
-Enterprise Keyboard designates five keys as user-programmable: one in the alpha-key layout and four in the numerical layout. The Remapping panel shows the current character and Unicode mappings for each key. The images below show default settings, including the Alpha P1 key mapped to display the EMOJI panel. 
-
-One key can be remapped in the alpha-key layout: 
-<img alt="" style="height:150px" src="keyboard_alone.png"/>
-
-Four keys can be remapped in the numerical layout: 
-<img alt="" style="height:150px" src="keyboard_numerical.png"/>
-
-Remapping panel shows current settings of remappable keys: 
-<img alt="" style="height:350px" src="pref_remap.png"/>
-<br>
-
-#####Remap a key: 
-
-&#49;. Bring up the Remapping panel and <b>tap on the key to be remapped</b>:
-<img alt="" style="height:350px" src="remap.png"/>
-<br>
-
-&#50;. <b>Specify a Unicode value or type an alternative character</b> to associate with that key:  
-<img alt="" style="height:350px" src="remap_keypad.png"/>
-<br>
-
-&#51;. <b>Tap "OK"</b> to store the setting. Changes take effect immediately. 
-
-------
-
-## DataWedge
-The scan tab in Enterprise Keyboard uses scanning services provided by [DataWedge](../../../../), Zebra's data acquisition and delivery tool that's included on every Zebra device. <b>DataWedge must be enabled on the device for the Scan tab to be operational</b>. 
-
-<img alt="" style="height:350px" src="scan_tab.png"/>
-<br>
-
-**To enable DataWedge on a device** (or confirm that it's enabled): 
-
-&#49;. On the device, locate and <b>tap the DataWedge icon</b>: 
-<img alt="" style="height:350px" src="datawedge_home_screen.png"/>
-<br>
-
-&#50;. From the DataWedge Profiles screen, tap the "hamburger" menu (see arrow), then <b>Tap "Settings"</b> on the menu: 
-<img alt="" style="height:350px" src="datawedge_settings.png"/>
-<br>
-
-&#51;. The DataWedge Settings panel appears. Confirm that the <b>"DataWedge enabled"</b> box is checked. 
-<img alt="" style="height:350px" src="datawedge_enabled.png"/>
-<br>
-
-**Important**: See the [Scanner Control](#scannercontrol) section, below. 
-
-For more information about scanning with Enterprise Keyboard, see [Enterprise Keyboard Setup](../setup). 
-
-Also refer to the [DataWedge User Guide](../../../../) for complete documentation.
-
-------
-
-## Dynamic Input Method 
-**_This feature applies to native apps only_**. 
-
-Enterprise Keyboard (1.2 and higher) supports programmatic access to the Input Method Editor (IME), which can dynamically change the input method depending on the selected field. For example, when the cursor enters a field intended for barcode data, the scan tab can be automatically invoked and the device scanner used to populate the field. The keyboard returns when the cursor lands on a text field, and so on. 
-
-**To set the input method as static**: 
-
-* Include the line `android:privateImeOptions="scan"` in the &lt;EditText&gt; field of the `StaticLayout.xml` file as shown below: 
-
-<img alt="" style="height:350px" src="IME_code_placement.png"/>
-_The EditText parameter of the StaticLayout.xml file, in Android Studio. Click on the image to enlarge_.
-<br>
-
-**To set the input method as dynamic**: 
-
-* Call the `setPrivateImeOptions()` method with “scan” as the parameter, as below: 
-	* `editTextTest.setPrivateImeOptions("scan")`
-
-**_This feature applies to native apps only_**. 
-
-------
-
-## Tab-key Navigation
-The Tab key is designed to move the cursor or UI focus from one text field or UI component to the next. On apps that are unaware of this context, the Enterprise Keyboard Tab key might input spaces instead of moving the cursor. For HTML apps, Zebra recommends using the Tab key to navigate from field to field. For help with native-app navigation, please refer to Android developer docs for information about [Android Tab-key navigation](https://developer.android.com/training/keyboard-input/navigation.html).
-
-------
-
-## Scanner Control
-It's important to note that **control of a device's barcode scanning hardware is exclusive**. When an application that uses the scanner is active (such as one made with EMDK that uses the Barcode API), DataWedge (and hence the Enterprise Keyboard scan tab) will not operate. Likewise, when an app such as Enterprise Keyboard controls the scanning hardware, other apps are prevented from doing so. It is therefore important to understand how to take control of a device's scanner hardware and if necessary, release it to other apps when scanning is complete. For more information, see the section on [Disabling DataWedge](../../../../datawedge/6-0/guide/setup/#disabledatawedge) in the [DataWedge User Guide](../../../../datawedge). 
-
-
 

@@ -1,5 +1,5 @@
 ---
-title: EMDK For Android Setup (Android Studio)
+title: Set up EMDK For Android
 layout: guide.html
 product: EMDK For Android
 productversion: '6.7'
@@ -7,20 +7,18 @@ productversion: '6.7'
 
 ##Installing EMDK for Android 
 
-###Installing Android Studio
+### 1. Install Android Studio
 Download and install **Android Studio** from [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
 
+>NOTE: Android Studio should be installed on your computer before running the EMDK for Andriod installer. If Android Studio is already installed, please quit any open sessions before proceeding. 
 
->NOTE: Android Studio should be installed on your computer before running the EMDK for Andriod installer. Prior to installing, all Android Studio sessions must be closed if already running.
+### 2. Install EMDK for Android
 
+1. Run the EMDK Installer as Administrator, then click Next.
 
-### Installing EMDK for Android
+2. Click "I Agree" after reading the License Agreement to continue.
 
-1. Run the EMDK Installer as Administrator, Then Click Next.
-
-2. Click I Agree after reading the License Agreement to continue the installation.
-
-3. Click next or select a custom install location by clicking Browse and then click next.
+3. Click "Next" or select a custom install location by clicking Browse and then click next.
 
 	![img](../../images/setup/emdkInstall03.png)
 

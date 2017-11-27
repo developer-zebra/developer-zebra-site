@@ -113,7 +113,9 @@ _Intent Output options for the "Launcher" Profile_
 
 ## Serial Output 
 
-To fill the intent data bundle, serial input data uses the bundle extras listed below. 
+### Parameters
+
+To fill the intent data bundle, serial input data uses the bundle extras listed below. See important note that follows. 
 
 **Extra Name**: com.symbol.datawedge.device_id
 
@@ -127,20 +129,21 @@ To fill the intent data bundle, serial input data uses the bundle extras listed 
 
 **Type**: [String]
 
-**Contents**: Friendly name of the port
+**Contents**: Friendly name of the port (i.e. "Serial port 1")
 
 -----
 
 **Extra Name**: "com.symbol.datawedge.data_raw"
 
-**Type**: [Byte Array extra]
+**Type**: [Byte Array]
 
 **Contents**: Byte array containing the acquired data in unprocessed form
 
+-----
 
 **Extra Name**: "com.symbol.datawedge.data_string"
 
-**Type**: [Byte Array extra]
+**Type**: [String]
 
 **Contents**: UTF8-encoded string data
 
@@ -148,11 +151,11 @@ To fill the intent data bundle, serial input data uses the bundle extras listed 
 
 **Extra Name**: "com.symbol.datawedge.source"
 
-**Type**: [Byte Array extra]
+**Type**: [String]
 
 **Contents**: Value will be always “serial”
 
->**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched on every decode, and the data sent to each newly spawned instance. 
+>**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched on every decode, and the acquired data sent to each newly spawned instance. 
 
 -----
 

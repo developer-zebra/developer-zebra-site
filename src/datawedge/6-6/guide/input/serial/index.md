@@ -49,9 +49,7 @@ For more information about required serial communication settings, please refer 
 
 ### Output Using Intents
 
-**Important**: For some scanning applications, **it might be preferable not to display decoded data** but instead to output directly to the current application activity. For such instances, **the activity must be designated as "singleTop"** in its `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched on every decode, and the data sent to each newly spawned instance. 
-
-See [Intent Output](../../output/intent) for more information.  
+For some scanning applications, it might be preferable not to display decoded data but to output directly to an application activity. This is done using Android Intents. For more information and important warnings, please see the [Intent Output guide](../../output/intent).  
 
 For general information about Android Intents, please refer to the [Android Developer site](https://developer.android.com/guide/components/intents-filters.html).
 

@@ -111,6 +111,51 @@ _Intent Output options for the "Launcher" Profile_
 
 -----
 
+## Serial Output 
+
+To fill the intent data bundle, serial input data uses the bundle extras listed below. 
+
+**Extra Name**: com.symbol.datawedge.device_id
+
+**Type**: [String]
+
+**Contents**: Device identifier (usually the port name)
+
+-----
+
+**Extra Name**: "com.symbol.datawedge.device_name"
+
+**Type**: [String]
+
+**Contents**: Friendly name of the port
+
+-----
+
+**Extra Name**: "com.symbol.datawedge.data_raw"
+
+**Type**: [Byte Array extra]
+
+**Contents**: Byte array containing the acquired data in unprocessed form
+
+
+**Extra Name**: "com.symbol.datawedge.data_string"
+
+**Type**: [Byte Array extra]
+
+**Contents**: UTF8-encoded string data
+
+-----
+
+**Extra Name**: "com.symbol.datawedge.source"
+
+**Type**: [Byte Array extra]
+
+**Contents**: Value will be always “serial”
+
+>**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched on every decode, and the data sent to each newly spawned instance. 
+
+-----
+
 ## UDI/Multiple Decode Mode
 
 When decoding a UDI-compliant object, data is acquired from multiple barcodes simultaneously and output as a multi-decode bundle, which differs from a single-decode bundle. DataWedge also can acquire multiple non-UDI barcodes in a single scan. This section applies to both modes.

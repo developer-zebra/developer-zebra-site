@@ -43,44 +43,17 @@ DW_serial_06.png (parity)
 DW_serial_07.png (stop bits)
  -->
 
-For more information about serial communication values, please refer to documentation that accompanied the peripheral being connected.
+For more information about required serial communication settings, please refer to documentation that accompanied the peripheral being connected.
 
 -----
 
 ### Output Using Intents
 
-How to read Serial input data when using Intent Output bundle?
-Update this section under Intent output plugin or where ever you think suits this.
-Serial input data uses few new bundle extras as well as existing bundle extra names to fill the intent data bundle. 
+**Important**: For some scanning applications, **it might be preferable not to display decoded data** but instead to output directly to the current application activity. For such instances, **the activity must be designated as "singleTop"** in its `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched on every decode, and the data sent to each newly spawned instance. 
 
-Extra name
-Type
-Description
+See [Intent Output](../../output/intent) for more information.  
 
-**Extra Name** com.symbol.datawedge.device_id
-String extra 
-Device identifier. This is usually the port name.
-
-com.symbol.datawedge.device_name
-String extra
-Friendly name of the port
-
-com.symbol.datawedge.data_raw
-Byte Array extra
-Byte array which contains the raw data. 
-
-com.symbol.datawedge.data_string
-String extra
-UTF8 encoded string data.
-
-com.symbol.datawedge.source
-String extra 
-Value will be always “serial”
-
-
-**Important**: For some scanning applications, it might be preferable for decoded data to be sent directly to the current activity and not necessarily displayed. For such instances, the activity must be designated as "singleTop" in its `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched on every decode, and the data sent to each newly spawned copy. 
-
-For more information about Android Intents, please refer to the [Android Developer site](https://developer.android.com/guide/components/intents-filters.html).
+For general information about Android Intents, please refer to the [Android Developer site](https://developer.android.com/guide/components/intents-filters.html).
 
 ------
 

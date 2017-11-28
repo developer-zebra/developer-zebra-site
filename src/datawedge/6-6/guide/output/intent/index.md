@@ -91,7 +91,6 @@ _Intent Output options for the "Launcher" Profile_
 **Name**: "com.symbol.datawedge.decoded_mode"<br>
 **Type**: [String]<br>
 **Contents**: Mode used to decode the incoming data<br>
-
 **Possible values**: 
 * "multiple_decode"
 * "single_decode"
@@ -245,7 +244,7 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 **Name**: "token_id"<br>
 **Type**: [String]<br>
 **Contents**: Data in a UDI-defined tag <br>
-**Possible values**: (see table below)<br>
+**Possible values**: (see token IDs, below)<br>
 
 -----
 

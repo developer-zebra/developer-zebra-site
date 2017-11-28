@@ -112,11 +112,11 @@ To fill the intent data bundle, serial input data uses the bundle extras listed 
 
 **Extra Name**: "com.symbol.datawedge.source"<br>
 **Type**: [String]<br>
-**Contents**: Value will be always “serial”<br>
+**Contents**: Value is always “serial”<br>
 
 -----
 
-#### Introduced with DataWedge 6.5
+#### Extras Introduced with DataWedge 6.5
 
 **Extra Name**: com.symbol.datawedge.device_id<br>
 **Type**: [String]<br>
@@ -126,7 +126,8 @@ To fill the intent data bundle, serial input data uses the bundle extras listed 
 
 **Extra Name**: "com.symbol.datawedge.device_name"<br>
 **Type**: [String]<br>
-**Contents**: Friendly name of the port (i.e. "Serial port 1")<br>
+**Contents**: Friendly name of the port<br> 
+**Example**: "Serial port 1"<br>
 
 -----
 

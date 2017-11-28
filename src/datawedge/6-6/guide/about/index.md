@@ -41,7 +41,7 @@ Scanner Identifiers (might have come with 6.5)
 
 
 
-ENUMERATE_SCANNER updated with BLAHzee
+ENUMERATE_SCANNER updated with new code, scanner ID parm 
 
 OLD OLD OLD:
 

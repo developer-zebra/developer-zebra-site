@@ -33,7 +33,9 @@ The enumerated list of scanners is returned via the broadcast intent `com.symbol
 
 **SCANNER_CONNECTION_STATE** [String]: 
 
-**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device (introduced in DataWedge 6.5). Possible values:
+**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device (introduced in DataWedge 6.5). 
+
+**Possible values**:
 
 * **AUTO** - Automatic scanner selection
 * **INTERNAL_IMAGER** - Built-in imager scanner

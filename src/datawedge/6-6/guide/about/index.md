@@ -36,7 +36,11 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 ### New in DataWedge 6.6
 
-Serial input plugin
+Serial Input (plug-in)
+Scanner Identifiers (might have come with 6.5)
+
+
+
 ENUMERATE_SCANNER updated with BLAHzee
 
 OLD OLD OLD:

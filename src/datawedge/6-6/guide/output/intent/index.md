@@ -56,12 +56,9 @@ _Intent Output options for the "Launcher" Profile_
 
 ### Parameters
 
-**Name**: "com.symbol.datawedge.source"
-
-**Type**: [String]
-
-**Contents**: Source of incoming data
-
+**Name**: "com.symbol.datawedge.source"<br>
+**Type**: [String]<br>
+**Contents**: Source of incoming data<br>
 **Possible values**: 
 * "msr"
 * "scanner"
@@ -71,39 +68,29 @@ _Intent Output options for the "Launcher" Profile_
 
 -----
 
-**Name**: "com.symbol.datawedge.label_type"
-
-**Type**: [String]
-
-**Contents**: Barcode label type (i.e. "EAN128")
+**Name**: "com.symbol.datawedge.label_type"<br>
+**Type**: [String]<br>
+**Contents**: Barcode label type (i.e. "EAN128")<br>
 
 -----
 
-**Name**: "com.symbol.datawedge.data_string"
-
-**Type**: [String]
-
-**Contents**: Acquired barcode characters
-
-**Example**: "abcde12345"
+**Name**: "com.symbol.datawedge.data_string"<br>
+**Type**: [String]<br>
+**Contents**: Acquired barcode characters<br>
+**Example**: "abcde12345"<br>
 
 -----
 
-**Name**: "com.symbol.datawedge.decode_data"
-
-**Type**: [List &lt;byte [ ]&gt;]
-
-**Contents**: Acquired raw (unmodified) data as an array list of byte arrays
-
-**Example**: List_Item_1(array_1(byte11,byte12,byte13)),List_Item_2(array_2(byte21,byte22,byte23)) ...
+**Name**: "com.symbol.datawedge.decode_data"<br>
+**Type**: [List &lt;byte [ ]&gt;]<br>
+**Contents**: Acquired raw (unmodified) data as an array list of byte arrays<br>
+**Example**: List_Item_1(array_1(byte11,byte12,byte13)),List_Item_2(array_2(byte21,byte22,byte23)) ...<br>
 
 -----
 
-**Name**: "com.symbol.datawedge.decoded_mode"
-
-**Type**: [String]
-
-**Contents**: Mode used to decode the incoming data
+**Name**: "com.symbol.datawedge.decoded_mode"<br>
+**Type**: [String]<br>
+**Contents**: Mode used to decode the incoming data<br>
 
 **Possible values**: 
 * "multiple_decode"
@@ -115,47 +102,39 @@ _Intent Output options for the "Launcher" Profile_
 
 ### Parameters
 
-To fill the intent data bundle, serial input data uses the bundle extras listed below. See important note that follows. 
+To fill the intent data bundle, serial input data uses the bundle extras listed below, some of which were introduced with DataWedge 6.5, as indicated. **See important note that follows**. 
 
-**Extra Name**: com.symbol.datawedge.device_id
-
-**Type**: [String]
-
-**Contents**: Device identifier (usually the port name)
+**Extra Name**: "com.symbol.datawedge.data_string"<br>
+**Type**: [String]<br>
+**Contents**: UTF8-encoded string data<br>
 
 -----
 
-**Extra Name**: "com.symbol.datawedge.device_name"
-
-**Type**: [String]
-
-**Contents**: Friendly name of the port (i.e. "Serial port 1")
+**Extra Name**: "com.symbol.datawedge.source"<br>
+**Type**: [String]<br>
+**Contents**: Value will be always “serial”<br>
 
 -----
 
-**Extra Name**: "com.symbol.datawedge.data_raw"
+#### Introduced with DataWedge 6.5
 
-**Type**: [Byte Array]
-
-**Contents**: Byte array containing the acquired data in unprocessed form
-
------
-
-**Extra Name**: "com.symbol.datawedge.data_string"
-
-**Type**: [String]
-
-**Contents**: UTF8-encoded string data
+**Extra Name**: com.symbol.datawedge.device_id<br>
+**Type**: [String]<br>
+**Contents**: Device identifier (usually the port name)<br>
 
 -----
 
-**Extra Name**: "com.symbol.datawedge.source"
+**Extra Name**: "com.symbol.datawedge.device_name"<br>
+**Type**: [String]<br>
+**Contents**: Friendly name of the port (i.e. "Serial port 1")<br>
 
-**Type**: [String]
+-----
 
-**Contents**: Value will be always “serial”
+**Extra Name**: "com.symbol.datawedge.data_raw"<br>
+**Type**: [Byte Array]<br>
+**Contents**: Byte array containing the acquired data in unprocessed form<br>
 
->**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched on every decode, and the acquired data sent to each newly spawned instance. 
+>**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched with every decode, and the acquired data sent to each newly spawned instance. 
 
 -----
 
@@ -165,56 +144,41 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 ### Parameters
 
-**Name**: "com.symbol.datawedge.decode_mode"
-
-**Type**: [String]
-
-**Contents**: Mode used to decode incoming data
-
+**Name**: "com.symbol.datawedge.decode_mode"<br>
+**Type**: [String]<br>
+**Contents**: Mode used to decode incoming data<br>
 **Possible values**: 
 * "multiple_decode"
 * "single_decode"
 
 -----
 
-**Name**: "com.symbol.datawedge.smart_decode_type"
-
-**Type**: [String]
-
-**Contents**: Decode type 
-
+**Name**: "com.symbol.datawedge.smart_decode_type"<br>
+**Type**: [String]<br>
+**Contents**: Decode type <br>
 **Possible values**:
 * “udi”
 * “multibarcode”
 
 -----
 
-**Name**: "com.symbol.datawedge.data_string"
-
-**Type**: [String]
-
-**Contents**: Acquired barcode characters 
-
-**Example**: "abcde12345"
+**Name**: "com.symbol.datawedge.data_string"<br>
+**Type**: [String]<br>
+**Contents**: Acquired barcode characters <br>
+**Example**: "abcde12345"<br>
 
 -----
 
-**Name**: "com.symbol.datawedge.decode_data"
-
-**Type**: [List &lt;byte [ ]&gt;]
-
-**Contents**: Acquired raw (unmodified) data as an array list of byte arrays
-
+**Name**: "com.symbol.datawedge.decode_data"<br>
+**Type**: [List &lt;byte [ ]&gt;]<br>
+**Contents**: Acquired raw (unmodified) data as an array list of byte arrays<br>
 **Example**: List_Item_1(array_1(byte11,byte12,byte13)), List_Item_2(array_2(byte21,byte22,byte23)) ...
 
 -----
 
-**Name**: "com.symbol.datawedge.source"
-
-**Type**: [String]
-
-**Contents**: Source of incoming data. 
-
+**Name**: "com.symbol.datawedge.source"<br>
+**Type**: [String]<br>
+**Contents**: Source of incoming data<br>
 **Possible values**:
 * "msr"
 * "scanner" 
@@ -222,12 +186,9 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 -----
 
-**Name**: "com.symbol.datawedge.label_id"
-
-**Type**: [String]
-
-**Contents**: UDI type of incoming data
-
+**Name**: "com.symbol.datawedge.label_id"<br>
+**Type**: [String]<br>
+**Contents**: UDI type of incoming data<br>
 **Possible values**:
 * “UDI_HIBCC” 
 * “UDI_GS1” 
@@ -236,21 +197,16 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 -----
 
-**Name**: "com.symbol.datawedge.barcodes"
-
-**Type**: [List &lt;Bundle&gt;]
-
-**Contents**: See Bundle description (below)
+**Name**: "com.symbol.datawedge.barcodes"<br>
+**Type**: [List &lt;Bundle&gt;]<br>
+**Contents**: See Bundle description (below)<br>
 
 -----
 
-**Name**: "com.symbol.datawedge.tokenized_data"
-
-**Type**: [List &lt;Bundle&gt;]
-
-**Contents**: See Bundle description (below)
-
-**Note**: Source of incoming data is "scanner" for camera, imager or scanner. 
+**Name**: "com.symbol.datawedge.tokenized_data"<br>
+**Type**: [List &lt;Bundle&gt;]<br>
+**Contents**: See Bundle description (below)<br>
+**Note**: Source of incoming data is "scanner" for camera, imager or scanner<br>
 
 -----
 
@@ -260,29 +216,22 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 #### Parameters
 
-**Name**: "com.symbol.datawedge.label_type"
-
-**Type**: [String]
-
-**Contents**: Barcode label type, original symbology (i.e. "EAN128")
+**Name**: "com.symbol.datawedge.label_type"<br>
+**Type**: [String]<br>
+**Contents**: Barcode label type, original symbology (i.e. "EAN128")<br>
 
 -----
 
-**Name**: "com.symbol.datawedge.decode_data"
-
-**Type**: [byte [ ] ]
-
-**Contents**: Acquired raw (unmodified) data as a byte array
+**Name**: "com.symbol.datawedge.decode_data"<br>
+**Type**: [byte [ ] ]<br>
+**Contents**: Acquired raw (unmodified) data as a byte array<br>
 
 -----
 
-**Name**: "com.symbol.datawedge.data_string"
-
-**Type**: [String]
-
-**Contents**: Acquired barcode characters 
-
-**Example**: "abcde12345"
+**Name**: "com.symbol.datawedge.data_string"<br>
+**Type**: [String]<br>
+**Contents**: Acquired barcode characters <br>
+**Example**: "abcde12345"<br>
 
 -----
 
@@ -292,119 +241,94 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 #### Parameters
 
-**Name**: "token_id"
-
-**Type**: [String]
-
-**Contents**: Data in a UDI-defined tag. 
-
-**Possible values**: (see table below)
+**Name**: "token_id"<br>
+**Type**: [String]<br>
+**Contents**: Data in a UDI-defined tag <br>
+**Possible values**: (see table below)<br>
 
 -----
 
-**Name**: "token_data_type"
-
-**Type**: [String]
-
-**Contents**: Incoming data type 
-
-**Example**: date, long, string 
+**Name**: "token_data_type"<br>
+**Type**: [String]<br>
+**Contents**: Incoming data type <br>
+**Example**: date, long, string <br>
 
 -----
 
-**Name**: "token_format"
-
-**Type**: [String]
-
-**Contents**: Format of incoming string 
-
-**Example**: YYYYMMDD
+**Name**: "token_format"<br>
+**Type**: [String]<br>
+**Contents**: Format of incoming string <br>
+**Example**: YYYYMMDD<br>
 
 -----
 
-**Name**: "token_string_data"
-
-**Type**: [String]
-
-**Contents**: Acquired barcode characters 
-
-**Example**: "abcde12345"
+**Name**: "token_string_data"<br>
+**Type**: [String]<br>
+**Contents**: Acquired barcode characters <br>
+**Example**: "abcde12345"<br>
 
 -----
 
-**Name**: "token_binary_data"
-
-**Type**: [byte [ ] ]
-
-**Contents**: Acquired barcode data as a byte array
+**Name**: "token_binary_data"<br>
+**Type**: [byte [ ] ]<br>
+**Contents**: Acquired barcode data as a byte array<br>
 
 -----
 
 ### Token IDs
 
-**Token ID**: di
-
-**Display Name**: Device identifier
-
------
-
-**Token ID**: manufacturing_date_original
-
-**Display Name**: Manufacturing date
+**Token ID**: di<br>
+**Display Name**: Device identifier<br>
 
 -----
 
-**Token ID**: expiration_date_original
-
-**Display Name**: Expiration date
-
------
-
-**Token ID**: lot_number
-
-**Display Name**: Lot number
+**Token ID**: manufacturing_date_original<br>
+**Display Name**: Manufacturing date<br>
 
 -----
 
-**Token ID**: serial_number
-
-**Display Name**: Serial number
-
------
-
-**Token ID**: mpho_lot_number
-
-**Display Name**: Medical products of human origin (MPHO) lot number 
+**Token ID**: expiration_date_original<br>
+**Display Name**: Expiration date<br>
 
 -----
 
-**Token ID**: donation_id
-
-**Display Name**: Donation ID number
-
------
-
-**Token ID**: labeler_identification_code
-
-**Display Name**: Labeler ID code
+**Token ID**: lot_number<br>
+**Display Name**: Lot number<br>
 
 -----
 
-**Token ID**: product_or_catalog_number
-
-**Display Name**: Product or catalog number
-
------
-
-**Token ID**: unit_of_measure_id
-
-**Display Name**: Unit of measure ID
+**Token ID**: serial_number<br>
+**Display Name**: Serial number<br>
 
 -----
 
-**Token ID**: Quantity
+**Token ID**: mpho_lot_number<br>
+**Display Name**: Medical products of human origin (MPHO) lot number <br>
 
-**Display Name**: Quantity
+-----
+
+**Token ID**: donation_id<br>
+**Display Name**: Donation ID number<br>
+
+-----
+
+**Token ID**: labeler_identification_code<br>
+**Display Name**: Labeler ID code<br>
+
+-----
+
+**Token ID**: product_or_catalog_number<br>
+**Display Name**: Product or catalog number<br>
+
+-----
+
+**Token ID**: unit_of_measure_id<br>
+**Display Name**: Unit of measure ID<br>
+
+-----
+
+**Token ID**: Quantity<br>
+**Display Name**: Quantity<br>
 
 -----
 
@@ -415,41 +339,29 @@ The decode-related data added to an intent bundle can be retrieved using specifi
 	:::java
 	Intent.getStringtExtra()
 
-**Tag**: LABEL_TYPE_TAG 
-
-**Type**: [String]
-
-**Name**: "com.symbol.datawedge.label_type"
-
-**Contents**: Barcode label type 
-
-**Example**: "EAN128"
+**Tag**: LABEL_TYPE_TAG <br>
+**Type**: [String]<br>
+**Name**: "com.symbol.datawedge.label_type"<br>
+**Contents**: Barcode label type <br>
+**Example**: "EAN128"<br>
 
 -----
 
-**Tag**: DATA_STRING_TAG
-
-**Type**: [String]
-
-**Name**: "com.symbol.datawedge.data_string"
-
-**Contents**: Acquired barcode characters 
-
-**Example**: "abcde12345"
+**Tag**: DATA_STRING_TAG<br>
+**Type**: [String]<br>
+**Name**: "com.symbol.datawedge.data_string"<br>
+**Contents**: Acquired barcode characters <br>
+**Example**: "abcde12345"<br>
 
 **Note**: When multiple barcodes are acquired simultaneously, the decoded data is concatenated and sent out as a single string.
 
 -----
 
-**Tag**: DECODE_DATA_TAG
-
-**Type**: [byte [ ] ]
-
+**Tag**: DECODE_DATA_TAG<br>
+**Type**: [byte [ ] ]<br>
 <!-- or list of byte arrays? -> [List <byte [ ]>] --> 
-
-**Name**: "com.symbol.datawedge.decode_data"
-
-**Contents**: Decoded data returned as a list of byte arrays. 
+**Name**: "com.symbol.datawedge.decode_data"<br>
+**Contents**: Decoded data returned as a list of byte arrays.<br>
 
 **Note**: In most cases there will be one byte array per decode. <!-- REMOVED 10/5/17 PER ENG. EMAIL 10/4/17 2:06 pm << For barcode symbologies that support concatenation (i.e. Codabar, Code128, MicroPDF, etc.) the decoded data is stored in multiple byte arrays (one byte array per bar code). Data in each byte array can be retrieved by passing an index.
 --> 

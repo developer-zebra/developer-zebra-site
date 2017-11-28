@@ -125,6 +125,26 @@ DataWedge will return the following error codes if the app includes the intent e
 
 Also see the [Result Codes guide](../resultinfo) for more information.  
 
+### Scanner Identifiers
+The scanner identifier (introduced in DataWedge 6.5) permits scanners to be identified by a friendly name rather than an index number.   
+
+**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device (introduced in DataWedge 6.5). Both parameters are supported in DataWedge 6.6; the scanner identifier value takes precedence if both are present in the code.  
+
+**Possible values**:
+
+* **AUTO** - Automatic scanner selection
+* **INTERNAL_IMAGER** - Built-in imager scanner
+* **INTERNAL_LASER** - Built-in laser scanner
+* **INTERNAL_CAMERA** - Built-in camera scanner
+* **SERIAL_SSI** - Pluggable Z-back scanner for ET50/ET55 
+* **BLUETOOTH_SSI** - RS507 Bluetooth scanner
+* **BLUETOOTH_RS6000** - RS6000 Bluetooth scanner
+* **BLUETOOTH_DS3678** - DS3678 Bluetooth scanner
+* **PLUGABLE_SSI** - Serial SSI scanner RS429 (for use with WT6000)
+* **PLUGABLE_SSI_RS5000** - Serial SSI scanner RS5000 (for use with WT6000)
+* **USB_SSI_DS3608** - DS3608 pluggable USB scanner
+
+
 ### Return Values
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -458,14 +478,16 @@ Command and configuration intent parameters determine whether to send result cod
 <td class="c20" colspan="1" rowspan="1">
 <p class="c1">
 <span class="c9">
-<strong>Param name</strong>
+<u><strong>Param name</strong></u>
 </span>
 </p>
 </td>
 <td class="c14" colspan="1" rowspan="1">
-<p class="c1"> <span class="c9"><strong>Param values</strong></span></p>
+<p class="c1"> <span class="c9"><u><strong>Param values</strong></u></span></p>
 </td>
 </tr>
+<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">scanner_selection_by_identifier</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">See <a href="#scanneridentifiers">Scanner Identifiers</a> table</span></p></td></tr>
+<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">trigger-wakeup</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">scanner_input_enabled</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">trigger-wakeup</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 <tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">scanner_selection</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">auto</span></p><p class="c1"><span class="c0">0&ndash;n (valid scanner index from <a href="../enumeratescanners">ENUMERATE_SCANNERS API</a>)</span></p></td></tr>

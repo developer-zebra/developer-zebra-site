@@ -39,6 +39,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 Serial Input (plug-in)
 Scanner Identifiers (might have come with 6.5)
 
+Import Reporting
 
 
 ENUMERATE_SCANNER updated with new code, scanner ID parm 

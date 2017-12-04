@@ -6,7 +6,7 @@ productversion: '6.6'
 ---
   
 ## Overview
-This guide covers settings for the DataWedge app, including enabling and disabling DataWedge on the device and the management of Profile and Configuration files for backup and mass-deployment. For information about creating and implementing Profiles and Plug-ins, see the [Profile Guides](../profiles). 
+This guide covers settings for the DataWedge app, including enabling and disabling DataWedge on the device, import reporting, and the management of Profile and Configuration files for backup and mass-deployment. For information about creating and implementing Profiles and Plug-ins, see the [Profile Guides](../profiles). 
 
 -----
 
@@ -280,6 +280,39 @@ While DataWedge is running, it receives a system notification whenever a Config 
 * On devices running Android KitKat or later, the `/enterprise` folder cannot be seen with File Explorer or other user-level tools. Moving configuration files to and from the `/autoimport` or `/enterprisereset` folders must be done programmatically, with a staging client app or MDM.
 * DataWedge will attempt to consume any of the monitored “.db” files as soon the file name(s) appear in the `/autoimport` folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, Zebra recommends initially storing the file with an alternate extension (i.e. ".tmp") and changing the extension to .db once writing is complete. See sample code, below. 
 * **Zebra recommends applying explicit file permissions to the all .db files** so that DataWedge will not be impeded from any of its file procedures.
+
+-----
+## Reporting
+
+DataWedge 6.6 and higher can report the results of the importation of device profiles. These HTML reports display any settings differences that exist between source and destination devices, allowing administrators to make adjustments for disparities in hardware or software capabilities from one device to another. 
+
+Information in the reports varies when importing a full `datawedge.db` file versus a profile-specific `dwprofile_<profile_name>.db` file. In either case, report information is based on the recieving device's configuration database. 
+
+<img style="height:350px" src="DW_6.6_Settings_reporting.png"/>
+_Reporting introduced in DataWedge 6.6_. 
+<br>
+
+<img style="height:350px" src="DW_6.6_Reporting_settings.png"/>
+_Reporting is enabled; report is displayed after manual import_.   
+<br>
+
+**Functions of the Reporting panel**:
+
+* **Reporting enabled -** used to enable or disable report generation for import operations. **Disabled by default**. 
+* **Generate report for -** allows reporting to be generated only for "Manual import," only for "Auto import" or for both.
+* **Show report after manual import -** displays the generated report using the default browser on the device. **Supported only for manual imports**.
+
+**Notes**: 
+
+* Note that for the full db import if reporting is enabled in either of the imported db or the current db it will be taken as enabled by the datawedge.
+
+
+The structure of two reports is similar except for minor differences of displayed information e.g.: profile specific information or DataWedge configuration related information.
+
+
+implements a reporting module that generates HTML report on databased import operations. This feature is supported from DataWedge version 6.6.X. 
+
+
 
 -----
 

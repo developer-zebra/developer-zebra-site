@@ -37,10 +37,13 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 ### New in DataWedge 6.6
 
 Serial Input (plug-in)
-Scanner Identifiers (might have come with 6.5)
+Scanner Identifiers (might have come with 6.5?? - per 12/5/GTX, intro'd in 6.6)
 
 Import Reporting
+full db or profile import
+(scanner config only for now - supported params, value and default changes)
 
+Configure more than one plug-in at a time with a single intent. 
 
 ENUMERATE_SCANNER updated with new code, scanner ID parm 
 

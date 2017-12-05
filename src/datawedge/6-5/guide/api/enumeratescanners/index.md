@@ -34,53 +34,55 @@ Error messages are logged for invalid actions and parameters.
 
 ## Example Code
 
-	// First send the intents to enumerate the available scanners on the device:
-	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.ENUMERATE_SCANNERS", "");
-	this.sendBroadcast(i);
-	
-	// define action string:
-	String enumerateScanners = "com.symbol.datawedge.api.ACTION";
 
-	// create the intent:
-	Intent i = new Intent();
-	
-	// set the action to perform:
-	i.setAction(enumerateScanners);
-	
-	// send the intent to DataWedge:
-	this.sendBroadcast(i);
+	//
+	//  Call before sending the enumeration query
+	//
+	public void registerReciever(){
+	    IntentFilter filter = new IntentFilter();
+	    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");//RESULT_ACTION
+	    filter.addCategory(Intent.CATEGORY_DEFAULT);
+	    registerReceiver(enumeratingBroadcastReceiver, filter);
+	}
+	//
+	// Send the enumeration command to DataWedge
+	//
+	public void enumerateScanners(){
+	    Intent i = new Intent();
+	    i.setAction("com.symbol.datawedge.api.ACTION");
+	    i.putExtra("com.symbol.datawedge.api.ENUMERATE_SCANNERS", "");
+	    this.sendBroadcast(i);
+	}
 
-	// enable the app to receive the enumerated list of available scanners:
-	String enumeratedList = "com.symbol.datawedge.api.ACTION";
+	public void unRegisterReciever(){
+	    unregisterReceiver(enumeratingBroadcastReceiver);
+	}
 
-	// create a filter for the broadcast intent
-	IntentFilter filter = new IntentFilter();
-	 	filter.addAction(enumeratedList);
-	  	filter.addCategory(Intent.CATEGORY_DEFAULT);  // NOTE: REQUIRED for DW6.2 and higher
-	  	registerReceiver(myBroadcastReceiver, filter);
-
-	// create a broadcast receiver
-	private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver() {
-	   @Override
-	   public void onReceive(Context context, Intent intent) {
+	//
+	// Create broadcast receiver to receive the enumeration result
+	//
+	private BroadcastReceiver enumeratingBroadcastReceiver = new BroadcastReceiver() {
+	    @Override
+	    public void onReceive(Context context, Intent intent) {
 	        String action = intent.getAction();
-	        Log.d(TAG, "Action: " + action); 
-	                
-         	if(action.equals("com.symbol.datawedge.api.RESULT_ACTION")){
-            	Bundle b = intent.getExtras();
-
-    // enumerate scanners
-    if(intent.hasExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS")) {
-        ArrayList<Bundle> scannerList = (ArrayList<Bundle>) intent.getSerializableExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS");
-    if((scannerList != null) && (scannerList.size() > 0)) {
-        for ( Bundle bunb: scannerList)
-            Log.d(TAG,"Scanner:"+bunb.getString("SCANNER_NAME")+" Connection:"+bunb.getBoolean("SCANNER_CONNECTION_STATE")+" Index:"+bunb.getInt("SCANNER_INDEX"));
-                    }
-                }
-			}
-        }
-    };
+	        Log.d(TAG, "Action: " + action);
+	        if(action.equals("com.symbol.datawedge.api.RESULT_ACTION")){
+	            // enumerate scanners
+	            if(intent.hasExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS")) {
+	                ArrayList<Bundle> scannerList = (ArrayList<Bundle>) intent.getSerializableExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS");
+	                if((scannerList != null) && (scannerList.size() > 0)) {
+	                    for (Bundle bunb : scannerList){
+	                        String[] entry = new String[3];
+	                        entry[0] = bunb.getString("SCANNER_NAME");
+	                        entry[1] = bunb.getBoolean("SCANNER_CONNECTION_STATE")+"";
+	                        entry[2] = bunb.getInt("SCANNER_INDEX")+"";
+	                        Log.d(TAG, "Scanner:" + entry[0]  + " Connection:" + entry[1] + " Index:" + entry[2]);
+	                    }
+	                }
+	            }
+	        }
+	    }
+	};
 
 <!--  	// The following code provided by engineering on 6/26/17 [TUT-14724]
  		// Integrated with main code sample as indicated below: 

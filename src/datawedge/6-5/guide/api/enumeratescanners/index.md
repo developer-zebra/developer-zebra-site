@@ -67,7 +67,9 @@ Error messages are logged for invalid actions and parameters.
 	        String action = intent.getAction();
 	        Log.d(TAG, "Action: " + action);
 	        if(action.equals("com.symbol.datawedge.api.RESULT_ACTION")){
+	        	//
 	            // enumerate scanners
+	            //
 	            if(intent.hasExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS")) {
 	                ArrayList<Bundle> scannerList = (ArrayList<Bundle>) intent.getSerializableExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS");
 	                if((scannerList != null) && (scannerList.size() > 0)) {

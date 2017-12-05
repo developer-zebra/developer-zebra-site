@@ -91,16 +91,21 @@ Error messages are logged for invalid actions and parameters.
 	        String action = intent.getAction();
 	        Log.d(TAG, "Action: " + action);
 	        if(action.equals("com.symbol.datawedge.api.RESULT_ACTION")){
+	            //
 	            // enumerate scanners
+	            //
 	            if(intent.hasExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS")) {
-	                ArrayList<Bundle> scannerList = (ArrayList<Bundle>) intent.getSerializableExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS");
-	                if((scannerList != null) && (scannerList.size() > 0)) {
-	                    for (Bundle bunb : scannerList){
-	                        String[] entry = new String[3];
-	                        entry[0] = bunb.getString("SCANNER_NAME");
-	                        entry[1] = bunb.getBoolean("SCANNER_CONNECTION_STATE")+"";
-	                        entry[2] = bunb.getInt("SCANNER_INDEX")+"";
-	                        Log.d(TAG, "Scanner:" + entry[0]  + " Connection:" + entry[1] + " Index:" + entry[2]);
+                ArrayList<Bundle> scannerList = (ArrayList<Bundle>) intent.getSerializableExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS");
+                if((scannerList != null) && (scannerList.size() > 0)) {
+                    for (Bundle bunb : scannerList){
+                        String[] entry = new String[4];
+                        entry[0] = bunb.getString("SCANNER_NAME");
+                        entry[1] = bunb.getBoolean("SCANNER_CONNECTION_STATE")+"";
+                        entry[2] = bunb.getInt("SCANNER_INDEX")+"";
+
+                        entry[3] = bunb.getString("SCANNER_IDENTIFIER");
+
+                        Log.d(TAG, "Scanner:" + entry[0]  + " Connection:" + entry[1] + " Index:" + entry[2] + " ID:" + entry[3]);
 	                    }
 	                }
 	            }

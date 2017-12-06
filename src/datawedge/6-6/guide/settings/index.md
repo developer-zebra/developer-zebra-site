@@ -284,41 +284,56 @@ While DataWedge is running, it receives a system notification whenever a Config 
 -----
 ## Reporting
 
-DataWedge 6.6 and higher can report the results of the importation of device profiles. These HTML reports display any settings differences that exist between source and destination (target) devices, allowing administrators to make adjustments in settings to compensate for disparities in hardware or software capabilities from one device to another. 
+DataWedge 6.6 (and higher) can report the results of the importation of device Profiles. These HTML reports display any settings differences that exist between the originating source device and the target or destination device. This allows administrators to easily identify differences and make adjustments to compensate for disparities in hardware or software capabilities from one device to another. 
+
+The following parameter categories are supported in DataWedge reporting module: 
+
+* **DECODER**
+* **DECODER_PARAMS**
+* **UPCEAN_PARAMS**
+* **READER_PARAMS**
+* **SCAN_PARAMS**
+* **UDI_PARAMS**
+
+**Reports always use the destination device as the basis against which to compare incoming settings files**. 
 
 <img style="height:350px" src="DW_6.6_Settings_reporting.png"/>
-_Reporting introduced in DataWedge 6.6_. 
+_Import reporting introduced in DataWedge 6.6_. 
 <br>
 
 <img style="height:350px" src="DW_6.6_Reporting_settings.png"/>
-_Reporting enabled; display report in device browser_.   
-<br>
+
 **Functions of the Reporting panel**:
 
-* **Reporting enabled -** used to enable or disable report generation following import operations. **Disabled by default**. See Notes below. 
+* **Reporting enabled -** used to enable or disable report generation following import operations. **Disabled by default**. See Note below. 
 * **Generate report for -** allows reporting to be generated only for Manual import, only for Auto import, or for both.
 * **Show report after manual import -** displays the generated report using the default browser on the device. **Supported for Manual import only**.
 
 **Note**: If Reporting is disabled in DataWedge prior to importing a full database file in which reporting is enabled, Reporting is enabled in DataWedge following the operation. 
 
+-----
+
+### File Names
+
+**These file names are always the same**:
+
+* `datawedge.db` - the DataWedge configuration database
+* `dw_report_for_full_config.html` - the report generated after importing `datawedge.db`
+
+**These file names correspond with the Profile name**:
+
+* `dwprofile_<profile_name>.db` - a Profile to be imported 
+* `dw_report_for_profile_<profile_name>.html` - report generated after importing Profile `dwprofile_<profile_name>.db`
+
+-----
+
 ### Report Formats
 
-Information in the reports varies when importing a full `datawedge.db` file versus a profile-specific `dwprofile_<profile_name>.db` file. In either case, report information is based on the receiving device's configuration database. 
+Report information varies slightly when importing a full `datawedge.db` file and a profile-specific `dwprofile_<profile_name>.db` file. Importing either file type generates a summary like the one shown below, with the last two field displaying information specific to the file type.  
 
+<img style="height:250px" src="DW_6.6_report_summary.png"/>
 
-Imported database name: `datawedge.db`<br>
-Generated report name: `dw_report_for_full_config.html`<br>
-<br>
-
-Imported Profile name: `dwprofile_<Name_of_Profile>.db`<br> 
-Generated report name: `dw_report_for_profile_<Name_of_Profile>.html`<br>
-
-
-<img style="height:350px" src="DW_6.6_report_summary.png"/>
-_Sample summary report following the importation of a full database file_.   
-<br>
-
-**Summary Elements, Full Database Import**:  
+**Summary Elements, Full Database Import**:
 
 * **DataWedge version -** the version installed in the target device.
 * **Source DataWedge version -** the version installed in the source device and used to generate the imported file.
@@ -327,12 +342,12 @@ _Sample summary report following the importation of a full database file_.
 * **Imported time -** date and time of the import operation.
 * **Importing mode -** indicates whether the import was manual or automatic.
 * **Configuration file -** fully qualified path of the imported database file.
-* **<u>DataWedge Enabled</u>* -** reports the status of DataWedge following import operation.*
-* **<u>DataWedge Logging</u>* -** reports the status of DataWedge logging following the import operation.*
+* **<u>DataWedge Enabled</u>* -** reports the status of DataWedge following import operation.
+* **<u>DataWedge Logging</u>* -** reports the status of DataWedge logging following the import operation.
 
-&#42; These fields are different in Profile database reports. 
+&#42; _This field varies for Profile database reports_. 
 
-**Summary Elements, Profile Database Import**:  
+**Summary Elements, Profile Database Import**:
 
 * **DataWedge version -** the version installed in the target device.
 * **Source DataWedge version -** the version installed in the source device and used to generate the imported file.
@@ -344,24 +359,67 @@ _Sample summary report following the importation of a full database file_.
 * **<u>Profile Name</u>* -** indicates the name of the imported profile.
 * **<u>Profile Enabled</u>* -** reports the status of imported Profile following the import operation.
 
-&#42; These fields are different in full database reports. 
+&#42; _This field varies for full database reports_. 
+
+#### Profile Summary
+
+Full database imports can include any number of individual Profiles. Reports for such imports include a list of the imported Profiles similar to the one shown below. Tap on a Profile name to display the report for that Profile. **Imports of a single Profile contain one entry in Profile summary**.
+
+<img style="height:200px" src="DW_6.6_profile_summary.png"/>
+
+#### Profile Report
+
+A report generated for each imported Profile indicates the scanner currently selected for that Profile and whether the Plug-in is enabled and set to automatically select a different scanning device if the selected device is unsupported (see [Cross-device Import](#crossdeviceimport) for more information). 
+
+<img style="height:550px" src="DW_6.6_profile_report.png"/>
+
+**Impacted parameters -** section lists parameters that contain different values in the source and destination databases. The example report above shows four such parameters, two for decoders and one each for reader and scan parameters. 
+
+**Unchanged parameters -** section lists parameters that contain values from the imorted file that apply directly to the destination device. <!-- other than the default values for that parameter and are applies in the destination device without change. The number of entries in this section corresponds with the number of parameters (enabled on the source device?) changed by the user before exporting the database file.  -->
+
+-----
+
+### Scanner Params Summary
+
+This section lists the scanners supported on the current device and the compatibility of each for all imported parameters. 
+
+<img style="height:350px" src="DW_6.6_scanner_parameter_summary.png"/>
+
+**Unsupported params -** are parameters exported from the source device that are not recognized by the destination device.
+
+**Default changed params -** are parameters supported in both devices but with differing default values. 
+
+**New params -** are parameters supported in the current device but not found or supported in the source device. 
+
+MORE TO COME
+<!-- 
+After the scanner params summary section a breakdown of the params shown in the summary will be available for each scanner. In Figure 7 a sample is shown. For 2D Barcode Imager, one default change parameter and six new parameters are shown in the summary table. In the detail section these parameters are listed with the category they belong to where default change parameter is in the SCAN_PARAMS section and the six new parameters are shown under the DECODERS section.
+
+For unsupported parameters report shows the source value since there is no destination value that can be matched. For default changed parameters it will display the source value and the destination value. For new parameters, it will display the default value only.
 
 
-The structure of two reports is similar except for minor differences of displayed information e.g.: profile specific information or DataWedge configuration related information.
+The profile section lists the currently selected scanner, scanner plugin enabled/disabled state and the use auto if unsupported parameter value. The profile section has two sub sections.
 
-Since the full db import and profile db import differ only with respect to few entries but the general format and order of sections are similar we will describe the full db format and specify changes when relevant.
+**Default changed** parameters are the ones that have different default values in two devices. 
 
+**Param Unsupported** category indicates that the current device does not recognize the given parameter. 
 
-implements a reporting module that generates HTML report on databased import operations. This feature is supported from DataWedge version 6.6.X. 
+**Value unsupported** is a parameter that user has configure to a value that is not supported in the current device. -->
+
+-----
 
 ### User Notices
 
-A user notice appears when one or more of the imported settings has no corresponding setting on the target device. For example, a user notice will be generated if the source device was connected to a Bluetooth scanner that's absent from the target device.  
+A user notice appears when one or more of the imported settings has no corresponding setting on the target device. For example, a user notice is generated if the source device was connected to a Bluetooth scanner that's absent from the destination device.
 
+<img style="height:350px" src="DW_6.6_user_notice.png"/>
+_Sample user notice_
+
+<!-- 
 section as shown in the Figure 5 notifies the user if the report is incomplete. This section should not appear if all the information needed to generate the report is available at the time of importing. If the device has not been able to get information for some scanners such as dynamically connected scanners, then the report will have some information in this section. Note that a scanner should have been connected to the device at least once for DataWedge to update the internal database with information required to generate report. Otherwise the scanners that lack information will be listed as above in the report in a list. 
+
 Older datawedge versions (before 6.6.5) will not have source information hence a database created in those versions will generate and incomplete report if imported directly to a new version of datawedge.
-
-
+ -->
 -----
 
 ## Programming Notes

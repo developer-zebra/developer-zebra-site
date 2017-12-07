@@ -284,21 +284,19 @@ While DataWedge is running, it receives a system notification whenever a Config 
 -----
 ## Reporting
 
-DataWedge 6.6 (and higher) can report the results of the importation of device Profiles. These HTML reports display any settings differences that exist between the originating source device and the target or destination device. This allows administrators to easily identify differences and make adjustments to compensate for disparities in hardware or software capabilities from one device to another. 
+DataWedge 6.6 (and higher) can report the results of the importation of device Profiles. These HTML reports display settings differences between the originating (source) database and the target (destination) device. This allows administrators to easily identify differences and make adjustments to compensate for disparities in hardware or software capabilities from one device to another. **Reports always use the destination device as the basis against which to compare incoming settings files**. 
 
-The following parameter categories are supported in DataWedge reporting module: 
+The following parameter categories are currently supported in DataWedge reporting: 
 
 * **DECODER**
 * **DECODER_PARAMS**
-* **UPCEAN_PARAMS**
 * **READER_PARAMS**
 * **SCAN_PARAMS**
 * **UDI_PARAMS**
-
-**Reports always use the destination device as the basis against which to compare incoming settings files**. 
+* **UPCEAN_PARAMS**
 
 <img style="height:350px" src="DW_6.6_Settings_reporting.png"/>
-_Import reporting introduced in DataWedge 6.6_. 
+_Reporting added in DataWedge 6.6_. 
 <br>
 
 <img style="height:350px" src="DW_6.6_Reporting_settings.png"/>
@@ -313,17 +311,21 @@ _Import reporting introduced in DataWedge 6.6_.
 
 -----
 
-### File Names
+### File Names and Locations
 
 **These file names are always the same**:
 
-* `datawedge.db` - the DataWedge configuration database
-* `dw_report_for_full_config.html` - the report generated after importing `datawedge.db`
+* `datawedge.db` - the (exported) DataWedge configuration database to be imported
+* `dw_report_for_full_config.html` - report generated after importing `datawedge.db`
 
 **These file names correspond with the Profile name**:
 
-* `dwprofile_<profile_name>.db` - a Profile to be imported 
+* `dwprofile_<profile_name>.db` - an individual (exported) Profile to be imported 
 * `dw_report_for_profile_<profile_name>.html` - report generated after importing Profile `dwprofile_<profile_name>.db`
+
+**Files are generally located in the following device directory**: 
+
+* `/Android/data/com.symbol.datawedge/files`
 
 -----
 
@@ -363,9 +365,9 @@ Report information varies slightly when importing a full `datawedge.db` file and
 
 #### Profile Summary
 
-Full database imports can include any number of individual Profiles. Reports for such imports include a list of the imported Profiles similar to the one shown below. Tap on a Profile name to display the report for that Profile. **Imports of a single Profile contain one entry in Profile summary**.
+Full database imports can include any number of individual Profiles. Reports for full database imports include a list of the imported Profiles like the one pictured below. Tap on a Profile name to display the report for that Profile. **When importing an individual Profile, the Profile Summary contains a single entry**.
 
-<img style="height:200px" src="DW_6.6_profile_summary.png"/>
+<img style="height:150px" src="dw_6.6_profiles_summary.png"/>
 
 #### Profile Report
 
@@ -412,7 +414,7 @@ The profile section lists the currently selected scanner, scanner plugin enabled
 
 A user notice appears when one or more of the imported settings has no corresponding setting on the target device. For example, a user notice is generated if the source device was connected to a Bluetooth scanner that's absent from the destination device.
 
-<img style="height:350px" src="DW_6.6_user_notice.png"/>
+<img style="height:150px" src="DW_6.6_user_notice.png"/>
 _Sample user notice_
 
 <!-- 

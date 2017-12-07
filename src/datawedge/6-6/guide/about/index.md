@@ -47,6 +47,10 @@ Configure more than one plug-in at a time with a single intent.
 
 ENUMERATE_SCANNER updated with new code, scanner ID parm 
 
+**New APIs**
+
+* **[SET_REPORTING_OPTIONS](../api/setreportingoptions) -** controls options for the new Import Reporting feature. 
+
 OLD OLD OLD:
 
 **Improved Profile Exporting** 

@@ -54,6 +54,8 @@ automenu:
           url: setdefaultprofile
         - title: Set Disabled App List 
           url: setdisabledapplist
+        - title: Set Reporting Options 
+          url: setreportingoptions   
         - title: Soft Scan Trigger 
           url: softscantrigger
         - title: Switch to Profile 

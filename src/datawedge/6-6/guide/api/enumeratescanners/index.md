@@ -59,6 +59,8 @@ Error messages are logged for invalid actions and parameters.
 
 ## Example Code
 
+### Enumerate scanners
+
 	//
 	//  Call before sending the enumeration query
 	//
@@ -112,6 +114,26 @@ Error messages are logged for invalid actions and parameters.
 	        }
 	    }
 	};
+
+
+### Get scanner identifier
+
+	// RESULT_ACTION_EXTRA_ENUMERATE_SCANNERS
+
+	if(intent.hasExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS")) {
+	    Log.d(TAG, ">>> RESULT_ACTION_EXTRA_ENUMERATE_SCANNERS <<<");
+	    ArrayList<Bundle> scannerList = (ArrayList<Bundle>) intent.getSerializableExtra("com.symbol.datawedge.api.RESULT_ENUMERATE_SCANNERS");
+	    if((scannerList != null) && (scannerList.size() > 0)) {
+	        for ( Bundle bunb: scannerList) {
+	          
+	            String ScannerName = bunb.getString("SCANNER_NAME");
+	            int ScannerIndex = bunb.getInt("SCANNER_INDEX"));
+	            bunb ScannerConnectionState = bunb.getBoolean("SCANNER_CONNECTION_STATE");
+	            String ScannerId = bunb.getString("SCANNER_IDENTIFIER");
+
+	        }
+	    }
+	}
 
 
 <!-- 11/14/17- COMMENTED AND REPLACED WITH SAMPLE ABOVE, PER ENG. 

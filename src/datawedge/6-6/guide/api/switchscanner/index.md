@@ -28,7 +28,7 @@ Used to switch to a specific scanner at runtime, enabling selection of the optim
 
 ### Result Codes
 
-DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#examplecode), below. 
 
 * **DATAWEDGE_DISABLED -** DataWedge is disabled
 * **NO_ACTIVE_PROFILE -** 

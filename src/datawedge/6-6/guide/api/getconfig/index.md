@@ -27,6 +27,8 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 **SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device (introduced in DataWedge 6.5). Both parameters are supported in DataWedge 6.6; the scanner identifier value takes precedence if an index also is referenced in the code.  
 
+ `scanner_selection_by_identifier` [string]- takes a value from the list of Scanner Identifiers below:
+
 **Possible values**:
 
 * **AUTO** - Automatic scanner selection
@@ -94,7 +96,7 @@ Error messages are logged for invalid actions and parameters.
 					String[] profilesList = intent.getStringArrayExtra("com.symbol.datawedge.api.GET_CONFIG_RESULT")
 
 
-#### Code to query the config of plug-ins
+### Get Plug-ins
 
 	// SENDING THE INTENT
 		Bundle bMain = new Bundle();
@@ -103,7 +105,7 @@ Error messages are logged for invalid actions and parameters.
 		ArrayList<String> pluginName = new ArrayList<>();
 		pluginName.add("BARCODE");
 
-	//pluginName.add("INTENT"); to add more plugins
+	// pluginName.add("INTENT"); to add more plugins
 		
 		bConfig.putStringArrayList("PLUGIN_NAME", pluginName);
 		bMain.putBundle("PLUGIN_CONFIG", bConfig);
@@ -144,7 +146,7 @@ Error messages are logged for invalid actions and parameters.
     }
 	};
 
-#### Code to query app associations
+### Get app associations
 
 	// SENDING THE INTENT
 		selectedProfileName = "DWDemo";
@@ -191,7 +193,7 @@ Error messages are logged for invalid actions and parameters.
 		    }
 		};
 
-#### Query the scanner status
+### Get scanner status
 
 	// SENDING THE INTENT
 		Intent i = new Intent();
@@ -229,6 +231,36 @@ Error messages are logged for invalid actions and parameters.
 		        }
 		    };
 		};
+
+
+### Get scanner identifier
+
+	//Bundle extras = intent.getExtras();
+
+	if (intent.hasExtra(RESULT_ACTION_EXTRA_GET_CONFIG)) {
+	    Bundle results = intent.getBundleExtra(RESULT_ACTION_EXTRA_GET_CONFIG);
+	    if(results!=null){
+	        if(results.containsKey(BUNDLE_EXTRA_PLUGIN_CONFIG)){
+	            ArrayList<Bundle> list = (ArrayList<Bundle>)results.get(BUNDLE_EXTRA_PLUGIN_CONFIG);
+	            Bundle x = new Bundle();
+
+	            if(list!=null){
+	                for(Bundle it : list){
+	                    if(it.containsKey(BUNDLE_EXTRA_PARAM_LIST)){
+	                        Bundle b =(Bundle)it.get(BUNDLE_EXTRA_PARAM_LIST);
+	                        String sEnabled = b.getString("scanner_input_enabled");
+	                        String sSelection = b.getString("scanner_selection");
+	                        String sSelectionId = b.getString("scanner_selection_by_identifier");
+	                        String sType = b.getString("scanner_type");
+
+	                        Log.d(TAG,"scanner_selection : "+sSelection);
+	                        Log.d(TAG,"scanner_selection_by_identifier  : "+sSelectionId);
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
 
 
 -----

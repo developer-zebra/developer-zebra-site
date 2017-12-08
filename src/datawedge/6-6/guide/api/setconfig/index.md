@@ -68,7 +68,9 @@ To be implemented in the future:
 #### PARAM_LIST BUNDLE
 The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the table below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
 
-* **BARCODE –** Use values from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
+* **BARCODE –** takes a value from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
+
+ `scanner_selection_by_identifier` [string]- takes a value from the list of [Scanner Identifiers](#scanneridentifiers) below
 
 * **BDF -** Applies Basic Data Formatting rules to the acquired data. 
 
@@ -98,7 +100,7 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 
 <!-- `intent_flag_receiver_foreground` [string] &lt;true/false&gt; -->
 
-* **KEYSTROKE -** Use values from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
+* **KEYSTROKE -** takes a value from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
 
 #### APP_LIST
 An array of bundles that contains a set of `PACKAGE_NAMES` and an `ACTIVITY_LIST` to be associated with the Profile. 
@@ -110,25 +112,10 @@ Contains the following properties:
 
 **ACTIVITY_LIST** [List]: A list of activities for the `PACKAGE_NAME`. Wildcard (&#42;) character also supported.
 
-### Result Codes
-
-DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
-
-* **PLUGIN_NOT_SUPPORTED -** FAILURE
-* **BUNDLE_EMPTY -** FAILURE 
-* **PROFILE_NAME_EMPTY -** FAILURE
-* **PROFILE_NOT_FOUND -** FAILURE
-* **PLUGIN_BUNDLE_INVALID -** FAILURE
-* **PARAMETER_INVALID -** FAILURE 
-* **APP_ALREADY_ASSOCIATED -** FAILURE
-* **OPERATION_NOT_ALLOWED -** FAILURE
-
-Also see the [Result Codes guide](../resultinfo) for more information.  
-
 ### Scanner Identifiers
-The scanner identifier (introduced in DataWedge 6.5) permits scanners to be identified by a friendly name rather than an index number.   
+The scanner identifier (introduced in DataWedge 6.5) permits scanners to be identified by a friendly name rather than an index number. 
 
-**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device (introduced in DataWedge 6.5). Both parameters are supported in DataWedge 6.6; the scanner identifier value takes precedence if an index also is referenced in the code.  
+**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device. Both parameters are supported in DataWedge 6.6; the scanner identifier value takes precedence if an index also is referenced in the code.  
 
 **Possible values**:
 
@@ -144,6 +131,20 @@ The scanner identifier (introduced in DataWedge 6.5) permits scanners to be iden
 * **PLUGABLE_SSI_RS5000** - Serial SSI scanner RS5000 (for use with WT6000)
 * **USB_SSI_DS3608** - DS3608 pluggable USB scanner
 
+### Result Codes
+
+DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+
+* **PLUGIN_NOT_SUPPORTED -** FAILURE
+* **BUNDLE_EMPTY -** FAILURE 
+* **PROFILE_NAME_EMPTY -** FAILURE
+* **PROFILE_NOT_FOUND -** FAILURE
+* **PLUGIN_BUNDLE_INVALID -** FAILURE
+* **PARAMETER_INVALID -** FAILURE 
+* **APP_ALREADY_ASSOCIATED -** FAILURE
+* **OPERATION_NOT_ALLOWED -** FAILURE
+
+Also see the [Result Codes guide](../resultinfo) for more information.  
 
 ### Return Values
 
@@ -463,6 +464,21 @@ Command and configuration intent parameters determine whether to send result cod
 		    Toast.makeText(context, text, Toast.LENGTH_LONG).show();
 
 		};
+
+### Use the internal imager for scanning: 
+
+	Bundle bConfig = new Bundle();
+
+	bConfig.putString("PLUGIN_NAME","BARCODE");
+
+	Bundle bParams = new Bundle();
+	bParams.putString("scanner_input_enabled", "true");
+	//
+	// auto or valid scanner identifier:
+	//
+	bParams.putString("scanner_selection_by_identifier", "INTERNAL_IMAGER");
+	bConfig.putBundle("PARAM_LIST",bParams);
+
 
 -----
 

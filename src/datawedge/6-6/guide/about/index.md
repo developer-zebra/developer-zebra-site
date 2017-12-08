@@ -36,53 +36,14 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 ### New in DataWedge 6.6
 
-Serial Input (plug-in)
-Scanner Identifiers (might have come with 6.5?? - per 12/5/GTX, intro'd in 6.6)
+A new set of [serial input options](../input/serial) allow DataWedge to specify communications parameters for a scanner or other device connected to a serial port used to acquire data.
 
-Import Reporting
-full db or profile import
-(scanner config only for now - supported params, value and default changes)
+A new [Reporting module](../settings/#reporting) displays the results of the importation of device Profiles. This allows administrators to easily identify source/destination differences and make adjustments to compensate.
 
-Configure more than one plug-in at a time with a single intent. 
+A new [SET_REPORTING_OPTIONS](../api/setreportingoptions) API provides control of Reporting features with intenets. 
 
-ENUMERATE_SCANNER updated with new code, scanner ID parm 
-
-**New APIs**
-
-* **[SET_REPORTING_OPTIONS](../api/setreportingoptions) -** controls options for the new Import Reporting feature. 
-
-OLD OLD OLD:
-
-**Improved Profile Exporting** 
-
-DataWedge 6.5 improves compatibility of exported Config files and Profiles for deployment to dissimilar devices. Previous versions of DataWedge support deployment of exported Profiles only to devices that are functionally equivalent to the device that created original Profile. Now, Config files and Profiles created with DataWedge 6.5 will work on any Zebra device model running DataWedge 6.5 or higher. See the [Cross-Device Import](../settings/#crossdeviceimport) section of the DataWedge Settings guide for more information. 
-
-**New APIs**
-
-* **[GET_DISABLED_APP_LIST](../api/getdisabledapplist) -** returns the list of apps prohibited from using DataWedge. 
-* **[GET_CONFIG](../api/getconfig) -** returns a list of parameter settings in the specified Profile.
-* **[SET_DISABLED_APP_LIST](../api/setdisabledapplist) -** allows updates to the Disabled Apps List, which specifies apps prohibited from using DataWedge. 
-* **[SWITCH_SCANNER](../api/switchscanner) -** allows an app to select from multiple connected scanners at runtime. 
-* **[SWITCH_SCANNER_PARAMS](../api/switchscannerparams) -** allows an app to set scanner parameters at runtime without persisting those settings. 
-
-**Updated APIs**
-
-These APIs have been enhanced to support [RESULT_INFO](../api/resultinfo) feedback mechanism for intents and include result codes. 
-
-* [CLONE_PROFILE](../api/cloneprofile)
-* [CREATE_PROFILE](../api/createprofile)
-* [DELETE_PROFILE](../api/deleteprofile)
-* [ENABLE_DATAWEDGE](../api/enabledatawedge)
-* [RENAME_PROFILE](../api/renameprofile)
-* [RESET_DEFAULT_PROFILE](../api/resetdefaultprofile)
-* [RESTORE_CONFIG](../api/restoreconfig)
-* [SCANNER_INPUT_PLUGIN](../api/scannerinputplugin)
-* [SET_DEFAULT_PROFILE](../api/setdefaultprofile)
-* [SOFTSCAN_TRIGGER](../api/softscantrigger)
-* [SWITCH_TO_PROFILE](../api/switchtoprofile)
-
-**Version 6.6 continues to enhance the DataWedge intent structure**, which can now configure multiple Plug-in settings from a single intent action. For details, see the [DataWedge API guide](../api/overview).
-
+The [SET_CONFIG](../api/setconfig) API now allows 
+multiple plug-ins to be configured with a single intent. 
 
 -----
 

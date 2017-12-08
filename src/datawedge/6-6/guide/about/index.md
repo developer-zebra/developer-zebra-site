@@ -36,14 +36,13 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 ### New in DataWedge 6.6
 
-A new set of [serial input options](../input/serial) allow DataWedge to specify communications parameters for a scanner or other device connected to a serial port used to acquire data.
+* **New [serial input options](../input/serial) allow DataWedge to specify communications parameters for a scanner or other device connected to a serial port and used to acquire data**.
 
-A new [Reporting module](../settings/#reporting) displays the results of the importation of device Profiles. This allows administrators to easily identify source/destination differences and make adjustments to compensate.
+* **[Import Reporting](../settings/#reporting) displays the results of imported databases and Profiles, allowing administrators to easily identify source/destination differences and make adjustments to compensate**.
 
-A new [SET_REPORTING_OPTIONS](../api/setreportingoptions) API provides control of Reporting features with intenets. 
+* **A new [SET_REPORTING_OPTIONS](../api/setreportingoptions) API provides control of Reporting features with intents**. 
 
-The [SET_CONFIG](../api/setconfig) API now allows 
-multiple plug-ins to be configured with a single intent. 
+* **The [SET_CONFIG](../api/setconfig) API now configures multiple plug-ins with a single intent action**. 
 
 -----
 

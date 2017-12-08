@@ -23,6 +23,8 @@ Used to configure reporting options, which are optionally generated after import
 **ACTION** [String]: `com.symbol.datawedge.api.ACTION`
 
 **EXTRA_DATA** [String]: `com.symbol.datawedge.api.SET_REPORTING_OPTIONS`
+
+**Reporting Options**:
 * **reporting_enabled -** controls whether to enable reports, generated following import operations. 
  * true
  * false (default)

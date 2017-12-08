@@ -25,6 +25,23 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 **EXTRA VALUE** [Bundle]: "&lt;Profile name&gt;", "&lt;Plug-in&gt;"
 
+**SCANNER_IDENTIFIER** [String]:  in each scanner info bundle for each scanner supported in the device (introduced in DataWedge 6.5). Both parameters are supported in DataWedge 6.6; the scanner identifier value takes precedence if both are present in the code.  
+
+**Possible values**:
+
+* **AUTO** - Automatic scanner selection
+* **INTERNAL_IMAGER** - Built-in imager scanner
+* **INTERNAL_LASER** - Built-in laser scanner
+* **INTERNAL_CAMERA** - Built-in camera scanner
+* **SERIAL_SSI** - Pluggable Z-back scanner for ET50/ET55 
+* **BLUETOOTH_SSI** - RS507 Bluetooth scanner
+* **BLUETOOTH_RS6000** - RS6000 Bluetooth scanner
+* **BLUETOOTH_DS3678** - DS3678 Bluetooth scanner
+* **PLUGABLE_SSI** - Serial SSI scanner RS429 (for use with WT6000)
+* **PLUGABLE_SSI_RS5000** - Serial SSI scanner RS5000 (for use with WT6000)
+* **USB_SSI_DS3608** - DS3608 pluggable USB scanner
+
+
 ## Return Values
 Returns a nested bundle with the Profile name, status and a Profile config bundle containing the param list as a bundle.  
 

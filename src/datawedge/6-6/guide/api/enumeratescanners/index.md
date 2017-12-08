@@ -33,7 +33,7 @@ The enumerated list of scanners is returned via the broadcast intent `com.symbol
 
 **SCANNER_CONNECTION_STATE** [String]: 
 
-**SCANNER_IDENTIFIER** [String]:  in each scanner info bundle for each scanner supported in the device (introduced in DataWedge 6.5). Both parameters are supported in DataWedge 6.6; the scanner identifier value takes precedence if both are present in the code.  
+**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device (introduced in DataWedge 6.5). Both parameters are supported in DataWedge 6.6; the scanner identifier value takes precedence if an index also is referenced in the code.  
 
 **Possible values**:
 

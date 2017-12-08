@@ -112,6 +112,23 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
+<tr>
+<td style="width: 150.35pt;"  width="250">
+<p class="MsoNormal"><font color="#333399" size="3">MC33</font></p>
+</td>
+
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+</tr>
+
 <tr >
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">MC40</font></p>
@@ -128,10 +145,56 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
+<tr>
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">MC67</font></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</td>
+
 <tr >
+<td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">MC92</font></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
+
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC51 / TC56</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">TC20, TC25</font></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+</tr>
+
+<tr>
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC51, TC56</font></p>
 </td>
 
 <td style="width: 96px;" >
@@ -142,6 +205,22 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+</td>
+</tr>
+
+<tr >
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC55</font></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
 
@@ -247,25 +326,35 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 **EHS 2.7 supports Zebra devices running Android Lollipop and higher only**. Zebra continues to support earlier versions of EHS for use on devices running KitKat. To use EHS on a device running KitKat, please [download EHS 2.6](/ehs/2-6/download) or an earlier version. 
 
 #### Device Support
-* **Support for TC51, TC56, TC70x, TC75x** Touch Computers running Android Nougat
+EHS 2.7 adds support for the following devices running Android Nougat:  
+
+* MC33
+* TC20* 
+* TC25* 
+* TC51
+* TC56
+* TC70x
+* TC75x 
+
+( * ) Requires a device-specific .apk file. See [download page](../../download) for details. 
 
 #### New Features
-* [Enable/Disable Recent Apps button]() on Android Nougat devices
+* [Enable/Disable Recent Apps button](../settings/#recentappsbuttondisabled) on Android Nougat devices
 * [Enable/Disable EHS Logging](../features/#ehslog) and set a maximum log file size 
 * [Battery Health Percentage now displayed](../setup/#batteryandwifiquickview) on Battery info and Quick info screens on devices equipped with Zebra Power Precision Plus battery
-* [Enable/Disable wallpaper stretching](../settings/#wallpaperstretching) to expand an image to fill the device screen. 
+* [Enable/Disable wallpaper stretching](../settings/#wallpaperstretching) to expand an image to fill the device screen
 
 -----
 
 ### Android Nougat Notes
 **_Applies to devices running Android Nougat 7.x and higher_**:
 
-* **Manual push is no longer supported**. To deploy files to the device, use [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android) Profile Manager. 
+* **To enable Secure Mode in EHS, manual file-push is no longer supported in Android N for installing a device root certificate**. To deploy cert files to the device, use Certificate Manager through [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android). Learn more [about Secure Mode](../features/#securemode). 
 
 -----
 
 ### Android Marshmallow Notes
-**_Apply to devices running Android 6.x Marshmallow only_**:
+**_Applies to devices running Android 6.x Marshmallow only_**:
 
 * **Selecting EHS as the default launcher will not be permanent** after a reboot on some devices if the selection was made while in User Mode. <img style="height:100px" src="homePrompt.png"/> **To avoid this issue, switch to Admin Mode** and press the HOME button; the "Select a home app" pop-up appears. **Select EHS and tap "Always"** to make the selection permanent.
 
@@ -275,20 +364,30 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 -----
 
-### Android Lollipop and Marshmallow Notes 
-**_Apply to devices running Android Lollipop 5.x and higher (including Marshmallow)_**:
+### Android Lollipop, Marshmallow and Nougat Notes 
+**_Applies to devices running Android Lollipop 5.x and higher (including Marshmallow and Nougat)_**:
 
-* **[Status Bar Pull-down](../settings#disablestatusbarpulldown) behavior has changed**. A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (referred to there as Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
+* **[Status Bar Pull-down](../settings#disablestatusbarpulldown) cannot be controlled through EHS on devices running Android L, M or N** (the feature appears "grayed out" in the Admin-Mode Preferences panel on those devices). To contol the Status Bar Pull-down (also known as the "Notification Pulldown"), use the [UI Manager](/mx/uimgr) through Zebra EMDK or StageNow tools.
+
+<!-- 
+REPLICATE ABOVE NOTE ON SETTINGS PAGE 
+ -->
 
 * **[Status Bar Settings Icon](../settings#disablestatusbarsettings) behavior has changed**. While disabling such access to the Settings panel is not supported through EHS on all devices, a new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (referred to there as Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain. 
 
-* **Android L retains the Recent Apps list after device reboot**. If this poses a security risk, the list can be cleared using [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
+* **[Airplane Option Disabled](../settings#airplaneoptiondisabled) feature cannot be controlled through EHS on devices running Android M or N, nor on some devices running Android L**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
 
-* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature in Android L that works in a similar way.
+<!-- 
+REPLICATE ABOVE NOTE ON SETTINGS PAGE 
+ -->
 
-* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after an Android L device is rebooted**. This feature works normally on devices running KitKat and Jelly Bean. 
+* **Devices running Android L and higher retain the "Recent Apps" list after device reboot**, posing a potential security risk. EHS 2.7 disables the Recent Apps button on <u>Nougat devices only</u> to help address this risk. For all devices, the list can be cleared using [App Manager](/mx/appmgr) through Zebra EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
 
-* **Android L allows [screen orientation](../settings#orientation) to be changed through the Quick Settings panel** only when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
+* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature in Android L and higher that works in a similar way.
+
+* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after rebooting a device running Android L and higher**. This feature works normally on devices running KitKat and Jelly Bean. 
+
+* **[Screen orientation](../settings#orientation) can be changed through the Quick Settings panel on devices running Android L and higher** <u>only</u> when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 ------
 

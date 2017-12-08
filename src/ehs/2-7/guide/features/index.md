@@ -17,7 +17,7 @@ Kiosk Mode is designed for devices to run a single application, often with a tou
 Also see the EHS [Auto-Launch](../settings#autolaunch) feature, which provides functionality similar to Kiosk Mode without changing the HOME and BACK key functions. 
 
 ##### Android Platform Notes: 
-* **On devices running Android 5.x Lollipop**, Kiosk Mode should not be used with Screen Pinning, an Android L feature that provides similar functionality.
+* **On devices running Android 5.x Lollipop**, Kiosk Mode should not be used with Screen Pinning, an feature in Android L and higher that provides similar functionality.
 * **On devices running Android 4.4 KitKat**, a "please wait" prompt remains displayed when starting up the device in Kiosk Mode. Press the HOME key to launch the Kiosk app and resume normal behavior. 
 
 ##### Kiosk Mode tags:
@@ -72,7 +72,7 @@ A device not in Secure Mode is running in Normal Mode, which is the default. Whe
 ### Enable Secure Mode
 These instructions require [Android Debug Bridge (ADB)](https://developer.android.com/studio/command-line/adb.html) for communication with the device and [OpenSSL for Windows](#installopenssl) for the creation of device certificate and private key files. If necessary, please install ADB and OpenSSL before proceeding. 
 
-**Important: Manual push is not supported on devices running Android N and higher**. Use [StageNow](../../../../stagenow) with the Certificate Manager Setting Type or [EMDK](../../../../emdk-for-android) and the Certificate Manager CSP in Profile Manager to deploy certificates to a device.
+**Important: To enable Secure Mode in EHS, manual file-push is no longer supported in Android N (and higher) for installing a device root certificate**. Deployment of certificates to a device to enable Secure Mode requires use of the Certificate Manager Setting Type in [Zebra StageNow](../../../../stagenow) or the Certificate Manager CSP in [EMDK](../../../../emdk-for-android)'s Profile Manager.  
 
 &#49;. Create a device root certificate (`caroot.pem`) and private key (`privatekey.pem`) using the following OpenSSL command: 
 
@@ -155,7 +155,7 @@ There are two ways to recover from Lockdown State and return a device to Secure 
 Copy the valid EHS config and signature files to the `/enterprise/usr` directory on the device. This will cause EHS to exit the Lockdown State, import the config file and return to Secure Mode. The valid files can be copied manually via ADB or deployed using an MDM.
 
 ##### Method 2: Delete Signature File
-Log into Admin Mode and delete the signature file from the `/enterprise/usr` directory. This will cause EHS to exit the Lockdown State and enter Secure Mode. This method will work only if EHS was already running in Secure Mode. If EHS was previously running in Normal Mode and entered Lockdown State due to an unsuccessful attempt to switch to Secure Mode, EHS will remain in Lockdown State. 
+Log into Admin Mode and delete the signature file from the `/enterprise/usr` directory. This will cause EHS to exit the Lockdown State and enter Secure Mode. This method will work only if EHS was already running in Secure Mode. If EHS was previously running in Normal Mode and entered Lockdown State due to an unsuccessful attempt to switch to Secure Mode, EHS returns to Normal Mode when the signature file is deleted. 
 
 <b>Note: Whether running in Normal or Secure Mode, reaching the maximum number of 10 unsuccessful admin login attempts (or the number otherwise specified in the EHS config file) will disable Admin Mode login. To exit this state, copy a valid config file (and its matching signature file if previously running in Secure Mode) to the device or delete the existing signature file remotely via MDM</b>.
 

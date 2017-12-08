@@ -16,13 +16,20 @@ Many of the capabilities of EHS can be accomplished manually on the device, prog
 -----
 
 ## Manual Installation
-These instructions apply to direct installation (from a computer to a single device) using the `EHS_0207xx.apk` EHS 2.7 installer file. 
+These instructions apply to direct installation (from a computer to a single device) using the EHS 2.7 installer (.apk) file. 
 
-**Note**: Manual push is not supported on devices running Android N and higher. To deploy files to such devices, use [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android) Profile Manager. 
+### Installer (.apk) File Info
+
+The EHS 2.7 download includes two separate .apk files: 
+
+* `EHS_0207xx_A.apk` - for all devices **_except_ TC20/TC25**
+* `EHS_0207xx_B.apk` - for TC20/TC25 devices
+
+See the full list of [devices supported by EHS v2.7](../guide/about#supporteddevices). 
 
 Read about how to [uninstall EHS](#uninstallation) later in this guide. 
 
-**To install EHS manually** (pre-Android N devices): 
+**To install EHS manually**: 
 
 &#49;. <b>Connect the device</b> via USB to a PC or Mac.
 

@@ -517,7 +517,7 @@ Specifies the color of the icon label text of applications displayed in User Mod
 ### Orientation
 Allows the screen orientation to be fixed in landscape or portrait mode. Omitting or leaving this setting blank (default) allows Android system settings to control screen orientation.  
 
-**On Android L devices**: screen orientation can be changed through the Quick Settings panel only when EHS is set to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
+**On devices running Android L and higher**: screen orientation can be changed through the Quick Settings panel only when EHS is set to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 
 <img alt="" style="height:350px" src="orientation.png"/>
@@ -681,7 +681,7 @@ Controls whether the Settings icon is displayed in the Android Status Bar, and t
 ### Disable Status Bar Pull-down
 Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status Bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status Bar Pull-down will be enabled. To disable, enter a value of 1. 
 
-**On Android L devices**: A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (which UI Manager calls the Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) systems. **This will override any EHS setting for controlling the Status Bar**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
+**Note: The Status Bar Pull-down cannot be controlled through EHS on devices running Android L, M or N** (the feature appears "grayed out" in the Admin-Mode Preferences panel in those devices). To contol the Status Bar Pull-down (also known as the "Notification Pulldown"), use the [UI Manager](/mx/uimgr) through Zebra EMDK or StageNow tools.
 
 <img alt="" style="height:350px" src="disable_status_bar.png"/>
 
@@ -743,9 +743,9 @@ Controls whether the device will automatically reboot when EHS is launched for t
 ------
 
 ### Airplane Option Disabled
-Controls whether the device can be put into "airplane mode" from the Power menu or Quick Settings bar. Depending on the device, airplane mode can disable Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks access to airplane mode by default, or if this tag is missing or left unspecified. **Enter a value of 0 to permit the device to enter airplane mode**. 
+Controls whether the device can be put into "airplane mode" from the Power menu or Quick Settings bar. Depending on the device, airplane mode disables Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu is not available on some MC18, MC40 and MC92 devices running Android 4.4 KitKat. 
 
-**Note**: Access to airplane mode from the Power menu is not available on some MC18, MC40 and MC92 devices running Android 4.4 KitKat. If this feature is greyed out, it might be possible to disable airplane mode on the device using [PowerKeyMgr](/mx/powerkeymgr) through Zebra EMDK or StageNow tools. 
+**Note: The Airplane Option Disabled feature cannot be controlled through EHS on devices running Android M or N, nor on some devices running Android L**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
 
 <img alt="" style="height:350px" src="airplane_disable.png"/>
 
@@ -801,7 +801,7 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 **Notes**: 
 * If no camera shortcut exists on the device lock screen, use of this tag is not required. 
-* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for working around this. See User-Mode Camera Usage section below. 
+* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Camera Usage section below. 
 
 **To prevent use of the camera, Zebra recommends using this tag <u>and</u> removing the camera app from the User Mode screen**.
 
@@ -832,7 +832,7 @@ If users are permitted to access the camera app from User Mode, some organizatio
 
     // Display lock screen:
     
-    <bypass_keyguard>1</bypass_keyguard>
+    <bypass_keyguard>0</bypass_keyguard>
 
 -----
 
@@ -844,7 +844,7 @@ To permit access to the camera app only after the device has been unlocked, set 
 
     :::xml
     <keyguard_camera_disabled>1</keyguard_camera_disabled>
-    <bypass_keyguard>1</bypass_keyguard>
+    <bypass_keyguard>0</bypass_keyguard>
     ...
     <apps_enabled>
     ...
@@ -870,7 +870,7 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 **To prevent use of search, Zebra recommends using this tag _and_ removing the search app from the User Mode screen**. 
 
-**Note**: Disabling access to the search app from the lock screen also disables it from the User-Mode screen on some devices, even if search is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for working around this. See User-Mode Search Usage section below. 
+**Note**: Disabling access to the search app from the lock screen also disables it from the User-Mode screen on some devices, even if search is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Search Usage section below. 
 
 <img alt="" style="height:350px" src="search_disable.png"/>
 
@@ -899,7 +899,7 @@ If users are permitted to access the search app from User Mode, some organizatio
 
     // Display lock screen:
     
-    <bypass_keyguard>1</bypass_keyguard>
+    <bypass_keyguard>0</bypass_keyguard>
 
 -----
 
@@ -911,7 +911,7 @@ To permit access to the search app only after the device has been unlocked, set 
 
     :::xml
     <keyguard_search_disabled>1</keyguard_search_disabled>
-    <bypass_keyguard>1</bypass_keyguard>
+    <bypass_keyguard>0</bypass_keyguard>
     ...
     <apps_enabled>
         <application package="search.app.package.name"/> // i.e. "com.android.search"

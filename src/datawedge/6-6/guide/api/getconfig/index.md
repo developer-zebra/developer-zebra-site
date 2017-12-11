@@ -25,7 +25,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 **EXTRA VALUE** [Bundle]: "&lt;Profile name&gt;", "&lt;Plug-in&gt;"
 
-**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device (introduced in DataWedge 6.5). Both parameters are supported in DataWedge 6.6; the scanner identifier value takes precedence if an index also is referenced in the code.  
+**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device. Both parameters are supported in DataWedge 6.6; the scanner identifier value takes precedence if an index also is referenced in the code.  
 
  `scanner_selection_by_identifier` [string]- takes a value from the list of Scanner Identifiers below:
 

@@ -50,6 +50,8 @@ _Intent Output options for the "Launcher" Profile_
 
 **When Intent delivery is set to Broadcast Intent**, DataWedge sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. **Zebra recommends using this flag <u>only if delays are seen</u> in delivery of intents immediately following device boot-up**.
 
+>**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched with every decode, and the acquired data sent to each newly spawned instance. 
+
 -----
 
 ## Single (normal) Decode Mode
@@ -133,8 +135,6 @@ To fill the intent data bundle, serial input data uses the bundle extras listed 
 **Extra Name**: "com.symbol.datawedge.data_raw"<br>
 **Type**: [Byte Array]<br>
 **Contents**: Byte array containing the acquired data in unprocessed form<br>
-
->**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched with every decode, and the acquired data sent to each newly spawned instance. 
 
 -----
 

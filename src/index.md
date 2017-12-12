@@ -234,22 +234,22 @@ products:
     url: /mx
     image: /images/products/mx.png
     sections:
-      - title: About
+      - title: About MX
         url: /mx/overview
       - title: Compatibility
         url: /mx/compatibility
-      - title: Which version do I have?
+      - title: Which version is installed?
         url: /mx/mx-version-on-device
   - title: RxLogger
-    description: A GUI-based tool for capturing log information from system and application events in a Zebra device.
+    description: A GUI-based tool for capturing log information from system and application events in a Zebra Android device.
     url: /rxlogger/5-4/guide/about
     btn-text: Latest Guides
     image: /rxlogger/rxlogger_logo.png
     sections:
       - title: About
         url: /rxlogger/5-4/guide/about
-      - title: Setup
-        url: /rxlogger/5-4/guide/setup
+      - title: Settings
+        url: /rxlogger/5-4/guide/settings
       - title: Modules
         url: /rxlogger/5-4/guide/modules
       - title: APIs
@@ -335,11 +335,11 @@ products:
         url: /search
 menu:
   items:
-    - title: ABOUT TECHDOCS
+    - title: About Techdocs
       url: /about
-    - title: I NEED TOOLS FOR...
+    - title: I Need Tools For...
       url: /help
-    - title: FEEDBACK
+    - title: Feedback
       url: /contact
     - icon: fa fa-comment
       url: https://developer.zebra.com/welcome

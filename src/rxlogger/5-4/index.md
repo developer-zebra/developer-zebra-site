@@ -7,8 +7,6 @@ menu:
   items:
     - title: About
       url: /rxlogger/5-4/guide/about
-    - title: Setup
-      url: /rxlogger/5-4/guide/setup
     - title: Settings
       url: /rxlogger/5-4/guide/settings
     - title: Modules

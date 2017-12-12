@@ -48,9 +48,11 @@ New settings in the [Preferences panel](../settings/#preferences):
 <img alt="" style="height:350px" src="../settings/ekb1.6_prefs.png"/>
 **_Navigation and Tab configuration features are supported only on devices with MX 7.1 and higher_**.
 
-See the [EKB 1.6 download page](../../download) for supported devices.  
+See the [EKB 1.6 download page](../../download) for a list of supported devices.  
 
 -----
+
+## Version History
 
 ### Added in v1.5
 

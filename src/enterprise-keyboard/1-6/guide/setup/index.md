@@ -6,7 +6,13 @@ productversion: '1.6'
 ---
 
 ## Overview
-The Zebra Enterprise Keyboard is delivered as part of the operating system on Zebra Android Lollipop devices and installed as an OS patch on some KitKat devices. Depending on the device, activation might be required to make Enterprise Keyboard available to users. Zebra's keyboard also can be set as the default input method, if desired. This section covers manual activation of Enterprise Keyboard and the steps for setting it as the default input device. For advanced settings, such as language selection and scan-tab configuration, please see the [Customize section](../settings). 
+The setup process for Enterprise Keyboard can vary by device, and activation is sometimes necessary to make it available to users. Zebra's keyboard also can be set as the default input method, if desired. This section of the guide covers manual activation of Enterprise Keyboard and the steps required for setting it as the default input device. 
+
+For advanced settings, such as language selection and scan-tab configuration, please see the [Customize section](../settings). 
+
+See the [EKB 1.6 download page](../../download) for a list of supported devices. 
+
+-----
 
 Enterprise Keyboard 1.1 (and higher) can be activated and configured: 
 
@@ -15,6 +21,8 @@ Enterprise Keyboard 1.1 (and higher) can be activated and configured:
 * Remotely:
     * Using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service 
     * Through a company's own mobile device management (MDM) system (if supported by that system) 
+
+-----
 
 ## Manual Activation
 The section covers direct activation of Enterprise Keyboard on a single device. If using one of the remote methods referenced above to activate and configure multiple managed devices, please see the [Automated Activation section](#automatedactivation) later in this guide. 

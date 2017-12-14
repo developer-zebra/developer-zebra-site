@@ -36,19 +36,17 @@ Modules enabled by default:
 Modules disabled by default: 
 * [LTS](#ltsmodule)
 * [Qxdm](#qxdmmodule)
-* [Tcp Dump](#tcpdumpmodule)
+* [Tcpdump](#tcpdumpmodule)
 
-**Tap the About button** for a list of active RxLogger modules: 
+**Tap the "About" button** for a list of active RxLogger modules: 
 <img alt="" style="height:350px" src="rxlogger_about_screen.png"/>
-<br>
 
 **Tap the Settings button** to edit module settings: 
 <img alt="" style="height:350px" src="rxlogger_running.png"/>
-<br>
 
 **See also**:
 
-* [How to edit and save Settings](../settings/#settingsgui)
+* [Changing RxLogger Settings](../settings/#settingsgui)
 * [About the Settings file](../settings/#settingsfile)
 
 -----

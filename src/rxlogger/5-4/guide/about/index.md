@@ -11,27 +11,33 @@ RxLogger is a software tool that provides metrics for application and system dia
 
 -----
 
-### Screens and States
+## Screens and States
 
 The startup screen of RxLogger contains four simple buttons that change in appearance depending on state. The app's title bar also displays the state. The software version number is visible in the lower-right corner.
 
 
-**Stopped**. Initial state of RxLogger and `diagdaemon` service: 
+### Stopped 
+
+Initial state of RxLogger and `diagdaemon` service: 
 <img alt="" style="height:350px" src="rxlogger_stopped.png"/>
 <br>
 
-**Transitioning**. State immediately following press of Start or Stop:
+### Transitioning
+State immediately following press of Start or Stop:
 <img alt="" style="height:350px" src="rxlogger_transitioning.png"/>
 <br>
 
-**Running**. The `diagdaemon` service is collecting data:
+### Running
+The `diagdaemon` service is collecting data:
 <img alt="" style="height:350px" src="rxlogger_running.png"/>
 <br>
 
-**Unknown**. RxLogger has lost connection to the `diagdaemon`:
+### Unknown 
+RxLogger has lost connection to the `diagdaemon`:
 <img alt="" style="height:350px" src="rxlogger_unknown.png"/>
 <br>
 
+### Buttons 
 * **Start button -** starts the `diagdaemon` service and begins data collection.
 
 * **Stop button -** stops the `diagdaemon` service and halts data collection.

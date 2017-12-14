@@ -7,43 +7,54 @@ productversion: '5.4'
 
 ## Overview
 
-RxLogger modules control the logging of individual components of an Android system. 
+RxLogger modules control the logging of individual components of an Android system; they can be enabled or disabled as needed. The following modules are loaded by default
 
-Modules are maintained separately. Each has its own version number and is updated separately. Modules can be turned on or off as needed. 
 
-See the [Settings page](../settings/#settingsfile) for storage details. 
 
-**To display the loaded RxLogger modules and version numbers**: 
+By default, seven modules are loaded only at . Each module is maintained separately. Each has its own version number and is updated separately. 
 
-**Tap the About button**: 
+downloaded separately? no. updated with BSP as needed 
+
+
+Zebra maintains them? YES
+
+
+
+log file path
+
+
+
+Modules enabled by default:
+* [ANR](#anrmodule)
+* [Kernel](#kernelmodule)
+* [Logcat](#logcatmodule)
+* [Ramoops](#ramoopsmodule)
+* [Resource](#resourcemodule)
+* [Snapshot](#snapshotmodule)
+* [Tombstone](#tombstonemodule)
+
+Modules disabled by default: 
+* [LTS](#ltsmodule)
+* [Qxdm](#qxdmmodule)
+* [Tcp Dump](#tcpdumpmodule)
+
+**Tap the About button** for a list of active RxLogger modules: 
 <img alt="" style="height:350px" src="rxlogger_about_screen.png"/>
 <br>
 
------
-## Configure Modules
-
-**To configure Settings through the GUI**: 
-
-1. **Tap the Settings button** to display a list of configurable modules currently loaded by `diagdaemon`: 
+**Tap the Settings button** to edit module settings: 
 <img alt="" style="height:350px" src="rxlogger_running.png"/>
 <br>
-2. **Tap the module to be edited** to display a list of its parameters: 
-<img alt="" style="height:350px" src="rxlogger_settings_screen.png"/>
-<br>
-3. **Edit settings as required**. Tap the BACK key when done. 
-<img alt="" style="height:350px" src="rxlogger_module_settings.png"/>
-<br>
-4. **Repeat Steps 2 and 3** until all modules are edited as desired. 
-5. On the modules listing screen, **tap "SAVE" when finished to preserve changes**.  
-<img alt="" style="height:350px" src="rxlogger_settings_save.png"/>
-<br>
+
+**See also**:
+
+* [How to edit and save Settings](../settings/#settingsgui)
+* [About the Settings file](../settings/#settingsfile)
 
 -----
 
 ## ANR Module
-Controls collection of data from "application not responding" (ANR) events and the location of collected data on the device. 
-
-The ANR module copies ANR data directly from the Android system and outputs a series of `trace.txt` files.
+Controls collection of data from Android's "application not responding" (ANR) events. Event data is copied directly from the Android system and saved in a file called `trace.txt` or some variant thereof. For example, the ANR event for a post-loaded app would be similar to `trace-<app_package_name>.txt`. 
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
@@ -307,17 +318,18 @@ The Kernel module captures `kmsg` data from the Android system and outputs it to
 
 ## Logcat Module
 
-Logcat Module is used to capture the internal logging mechanism in android (logcat buffers). There are 5 logcat buffers System, Event, Radio, Main, Crash. Logcat module can capture each one separate and can also capture multiple in a single file (combined file).
+Captures data from Android's internal logging mechanism, sometimes known as logcat buffers. The Logcat module captures any or all of the logcat buffers: 
 
-Note: See http://developer.android.com/tools/debugging/debugging-log.html for more information on logcat filtering options.
+* System
+* Event
+* Radio
+* Main
+* Crash
 
-3.3.3. Output
+Module options allow data from any or all enabled buffers to be stored in separate files or in a single combined file. Output is stored in a series of numbered text files (i.e. `Main0.txt`, `Main1.txt`, `Main2.txt`) with 0 being the newest.
 
-The output will be txt files numbered with 0 being the newest.
-
-There will be a txt file for each of the buffers enabled with the name associated with each one.
-
-Example: Main0.txt and Main1.txt where Main0.txt is the newest data captured form the system.
+**Reference material**:
+* [Android logging and filtering](http://developer.android.com/tools/debugging/debugging-log.html)
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:47.05pt;border-collapse:collapse;border:none'>
@@ -1514,7 +1526,7 @@ Example: Main0.txt and Main1.txt where Main0.txt is the newest data captured for
 
 ## LTS Module
 
-The LTS (Long Term Storage) Module is used to capture data over a long deration of time without losing any data. Whenever a file is done being written too LTS will then GZ the file and save it in an organize path for later use.
+The Long Term Storage (LTS) module is designed to allow data capture over long periods of time without losing data when older files are overwritten. Whenever a file is done being written too LTS will then GZ the file and save it in an organize path for later use.
 
 The Path is “<Model>/<BSP>/<Serial>/<Date>/<Time>/”
 
@@ -1523,6 +1535,14 @@ Example: ”TC51/91-01-21-NN-00/16885225D0029/170621/2100/”
 Date is stored in YYMMDD and time is stored in HH00.
 
 The output will be gz files that have the original names but with new numbers. The numbers will count from 0 up for each base name in each time folder.
+
+???
+
+Newest files begin with 0?
+Can I say "RxLogger will use gzip to concatenate the log files during the period..." 
+LTS module is proprietary to Zebra?
+
+
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
@@ -1601,10 +1621,20 @@ The output will be gz files that have the original names but with new numbers. T
 
 ## Qxdm Module
 
-The Qxdm Module captures Qxdm (Qualcomm Modem Logs) from the device.
+The Qxdm Module captures Qualcomm Modem Logs from the device.
 
 output
 Qxdm is unique in the fact that it will not contain data up to a limit before removing the oldest. If Qxdm is started and not stopped it can take up an extreme amount of memory.
+
+**Warning**: Output from this module has the potential to occupy large amounts of device storage. **Zebra recommends capping the log size in accordance with available storage**.  
+
+??? 
+Log size is in MB? 
+
+EXPLAIN:- The file name used if a User Defined config is selected to be used
+<RxLogger_Path>/qxdm/cfg/Custom_filer.cfg
+
+
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
@@ -1790,9 +1820,15 @@ Qxdm is unique in the fact that it will not contain data up to a limit before re
 
 ## Ramoops Module
 
-Ramoops Module captures last kmsg from the device.
+Captures the last kmsg from the device, writing it to persistent memory immediately prior to a system crash. Ramoops outputs text files directly by the system at boot or after a kernel panic. These files will have raw kmsg data from the last boot.
 
-Ramoops will output txt files that are directly generated by the system at boot or after a kernel panic. These files will have raw kmsg data from the last boot.
+??? 
+
+EXPLAIN: 
+"These files will have raw kmsg data from the last boot."
+
+FROM KERNEL.ORG:
+Ramoops is an oops/panic logger that writes its logs to RAM before the system crashes. It works by logging oopses and panics in a circular buffer. Ramoops needs a system with persistent RAM so that the content of that area can survive after a restart.
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
@@ -1923,10 +1959,7 @@ Ramoops will output txt files that are directly generated by the system at boot 
 
 ## Resource Module
 
-The Resource Module captures devices information on an interval. The data collected contains system statistics to see the health of device over a period of time.
-
-Resource will create csv (comma separated values) files that contain the enabled statistics from the device.
-
+Captures device information and system statistics at specified intervals to determine the health and behavior of device resources over a period of time. Outputs collected metrics as a series of comma separated values stored in files with a `.csv` extension. 
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
@@ -2214,9 +2247,22 @@ Resource will create csv (comma separated values) files that contain the enabled
 
 ## Snapshot Module
 
-The snapshot Module collects detailed devices statistics on an interval to see detailed device information.
+Captures device information and system statistics at specified intervals to determine the health and behavior of device resources over a period of time. Outputs a single text file containing collected metrics for selected parameters for each specified interval. 
 
-Snapshot will create one txt file per-data collection set. This file will contain the output off all enabled data selections in the order they appear. The file will have a header contianing the current system fingerprint and time. Each section of the file will heave a tag and the current header.
+???
+
+With the exception of the number and type of parameters collected, how is this diff from Resources module? 
+
+Why "snapshot"? 
+
+What's a system "fingerprint" ? 
+
+ORIG:
+Collects detailed device statistics on an interval to see detailed device information.
+
+Snapshot will create one text file per data collection set. This `.txt` file will contain the output of all enabled data selections in the order they appear. 
+
+The file will have a header containing the current system fingerprint and time. Each section of the file will have a tag and the current header.
 
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
@@ -2778,11 +2824,13 @@ Snapshot will create one txt file per-data collection set. This file will contai
 
 -----
 
-## Tcp Dump
+## Tcpdump Module
 
-The TcpDump Module captures tcp data that happens over the devices networks.
+Captures packet data for all device network connections and outputs a binary file that can be read with Wireshark and other standards-based network analysis tools.
 
-TcpDump will create a binary file that should be used with an outside tool such as wireshark to view tha data.
+??? 
+captures packets? 
+
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>
@@ -2826,7 +2874,7 @@ TcpDump will create a binary file that should be used with an outside tool such 
   <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
   border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>Enables or disables TcpDump collection</p>
+  normal'>Enables or disables tcpdump collection</p>
   </td>
  </tr>
  <tr>
@@ -2852,7 +2900,7 @@ TcpDump will create a binary file that should be used with an outside tool such 
   <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
   border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>The path where the TcpDump files will be stored</p>
+  normal'>The path where the tcpdump files will be stored</p>
   </td>
  </tr>
  <tr>
@@ -2878,14 +2926,14 @@ TcpDump will create a binary file that should be used with an outside tool such 
   <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
   border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>The base file name of stored TcpDump file</p>
+  normal'>The base file name of stored tcpdump file</p>
   </td>
  </tr>
  <tr>
   <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
   border-top:none;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>Tcpdump file size (MB)</p>
+  normal'>tcpdump file size (MB)</p>
   </td>
   <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2911,7 +2959,7 @@ TcpDump will create a binary file that should be used with an outside tool such 
   <td width=187 valign=top style='width:140.2pt;border:solid windowtext 1.0pt;
   border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>Tcpdump file count</p>
+  normal'>tcpdump file count</p>
   </td>
   <td width=187 valign=top style='width:140.25pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2930,7 +2978,7 @@ TcpDump will create a binary file that should be used with an outside tool such 
   <td width=561 colspan=3 valign=top style='width:420.7pt;border:solid windowtext 1.0pt;
   border-top:none;background:#AEAAAA;padding:1.45pt 5.75pt 1.45pt 5.75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'>The max number of Tcpdump files to keep</p>
+  normal'>The max number of tcpdump files to keep</p>
   </td>
  </tr>
 </table>
@@ -2939,9 +2987,15 @@ TcpDump will create a binary file that should be used with an outside tool such 
 
 ## Tombstone Module 
 
-The Tombstone Module is used to collect tombstone (Linux Native Crashes) logs from the device.
+Collects the Android native crash logs from the device, which contain stack traces and other details about the crashed process. Tombstone files are output as `tombstone_00`through `tombstone_09`, with `tombstone_00` being the most recent. 
 
-The output form the Tombstone Module will be tombstone_0X (where X is a number between 0-9) files that are directly copied from the android system.
+[More info](https://source.android.com/devices/tech/debug/#debuggerd)
+
+
+??? 
+is the above correct? 
+
+
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.65in;border-collapse:collapse;border:none'>

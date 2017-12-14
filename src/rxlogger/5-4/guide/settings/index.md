@@ -32,17 +32,17 @@ RxLogger settings are configured through the RxLogger user interface or by pushi
 <img alt="" style="height:350px" src="rxlogger_module_settings.png"/>
 <br>
 4. **Repeat Steps 2 and 3** until all modules are edited as desired. 
-5. On the modules listing screen, **tap "SAVE" when finished to preserve changes**.  
+5. On the modules listing screen, **tap "SAVE" to preserve all changes**.  
 <img alt="" style="height:350px" src="rxlogger_settings_save.png"/>
 <br>
 
-See the [Modules page](../modules) for Module details. 
+See the [Modules page](../modules) for settings information. 
 
 ----
 
 ### Settings File
 
-All RxLogger settings are stored in a file on the device, permitting remote and mass deployment of settings to devices across an enterprise. While this file is human-readable and can be edited by hand, **Zebra recommends modifying RxLogger settings using the UI and deploying the automatically generated settings file to other devices** to avoid unpredictable behavior.
+All RxLogger settings are stored in a file on the device, permitting remote configuration and mass deployment of settings files to devices across an enterprise. **Warning**: While this human-readable file can be edited by hand, **Zebra recommends modifying RxLogger settings only through the RxLogger UI or intents** to avoid unpredictable behavior.
 
 * **File name -** `config.json`
 
@@ -56,9 +56,9 @@ All RxLogger settings are stored in a file on the device, permitting remote and 
 
 When a new settings file is pushed to the device, RxLogger restarts all affected modules and applies the new settings immediately. 
 
->**Important**: Zebra recommends modifying RxLogger settings using the UI and deploying the automatically generated settings file to other devices rather than editing the file by hand.  
+>**Important**: Zebra recommends modifying RxLogger settings only through the RxLogger UI or intents. 
 
+**Related Guides**: 
 
-
-
+[RxLogger Intent APIs](../apis)
 

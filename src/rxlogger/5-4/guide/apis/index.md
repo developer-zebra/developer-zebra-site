@@ -7,27 +7,29 @@ productversion: '5.4'
 
 ## Overview
 
-RxLogger can be controlled using intents. 
+A few RxLogger functions are controlled using intents. 
 
+### Enable RxLogger
 
-4.1. Enable
+Enable RxLogger begins data collection for all enabled modules. This is the equivalent of tapping the Start button. 
 
-Will Start RxLogger data collection
+??? FULL FUNCTIONAL PROTOTYPE 
 
-“com.symbol.rxlogger.intent.action.ENABLE”
+	com.symbol.rxlogger.intent.action.ENABLE
 
-4.2. Disable
+### Disable RxLogger
 
-Will Stop RxLogger data collection
+Disable RxLogger stops data collection for all modules. This is the equivalent of tapping the Stop button. 
 
-“com.symbol.rxlogger.intent.action.DISABLE”
+	com.symbol.rxlogger.intent.action.DISABLE
 
-4.3. BackupNow
+### BackupNow
 
-Will trigger a backup to take place for files currently in the RxLogger folder
+This intent triggers a backup for files currently in the RxLogger folder. 
 
-“com.symbol.rxlogger.intent.action.BACKUP_NOW”
+	com.symbol.rxlogger.intent.action.BACKUP_NOW
 
+??? where is this backup saved? 
 
 -----
 

@@ -6,11 +6,13 @@ productversion: '5.4'
 ---
 
 ## Overview
-RxLogger settings are configured through the RxLogger user interface or by pushing a configuration file to the device. Settings are stored as one of four data types: 
+RxLogger settings are configured through the RxLogger user interface or by pushing a configuration file to the device. All settings are stored in a single `.json` file that can be exported and mass-deployed to devices across an enterprise. 
 
-* **Integer -** used to hold data that must be numerical such as the number of files to store. Allowable integers range between 0 - 2,147,483,647. For fields such as file size that do not allow a value of 0, a 1 is substituted at runtime. For integer fields, the UI accepts only numerical input.  
+###Settings Data Types 
 
-* **String -** used to hold text, such as for file names and storage paths. The UI accepts any alphanumeric input and symbols as permitted by the file system. 
+* **Integer -** used to store numerical data such as the number of files to store. Allowable integers range from 0 - 2,147,483,647 (max int). For fields such as file size that do not allow a value of 0, a 1 is substituted at runtime. For integer fields, the UI accepts only numerical input.  
+
+* **String -** used to store text such as file names and storage paths. The UI accepts any alphanumeric input and symbols as permitted by the file system. 
 
 * **Boolean -** used to store true/false information such as to enable/disable a module; represented in the UI as a checkbox.
 
@@ -42,7 +44,9 @@ See the [Modules page](../modules) for settings information.
 
 ### Settings File
 
-All RxLogger settings are stored in a file on the device, permitting remote configuration and mass deployment of settings files to devices across an enterprise. **Warning**: While this human-readable file can be edited by hand, **Zebra recommends modifying RxLogger settings only through the RxLogger UI or intents** to avoid unpredictable behavior.
+All RxLogger settings are stored in a file on the device, permitting remote configuration and mass deployment of settings files using an enterprise mobile management (EMM) system. **Warning**: The RxLogger configuration file is human-readable, but should not be edited by hand as doing so can lead to unpredictable behavior. 
+
+**Zebra recommends modifying RxLogger settings only through the RxLogger UI**.
 
 * **File name -** `config.json`
 
@@ -56,9 +60,10 @@ All RxLogger settings are stored in a file on the device, permitting remote conf
 
 When a new settings file is pushed to the device, RxLogger restarts all affected modules and applies the new settings immediately. 
 
->**Important**: Zebra recommends modifying RxLogger settings only through the RxLogger UI or intents. 
+>**Important**: Zebra recommends modifying RxLogger settings only through the RxLogger UI. 
 
-**Related Guides**: 
+-----
 
-[RxLogger Intent APIs](../apis)
-
+## Related Links
+* [RxLogger Modules](../modules) - Explains data collection module parameters and settings
+* [Intent APIs](../apis) - Used to start and stop RxLogger and back up all data  

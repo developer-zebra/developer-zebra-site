@@ -45,9 +45,70 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters.
 
+### Result Codes
+ 
+DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example Code](#example), below.
+
+* **BUNDLE_EMPTY -** FAILURE
+* **FAILURE –** FAILURE
+* **SUCCESS -** SUCCESS
+
+Also see the [Result Codes guide](../resultinfo) for more information. 
+
 ## Example Code
+
+### Enable Reporting
+
 The code below enables reporting on the device, enables reports for manual and automatic imports, and enables manual-import reports to be displayed: 
 
+	:::java
+	private BroadcastReceiver resultsReceiver = new BroadcastReceiver() {
+	    @Override
+	    public void onReceive(Context context, Intent intent) {
+	        String command = intent.getStringExtra("COMMAND").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND");
+	        String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER").equals("") ? "EMPTY" : intent.getStringExtra("COMMAND_IDENTIFIER");
+	        String result = intent.getStringExtra("RESULT").equals("") ? "EMPTY" : intent.getStringExtra("RESULT");
+
+	        Bundle bundle;
+	        String resultInfo = "";
+	        if (intent.hasExtra("RESULT_INFO")) {
+	            bundle = intent.getBundleExtra("RESULT_INFO");
+	            Set<String> keys = bundle.keySet();
+	            for (String key : keys) {
+	                resultInfo += key + ": " + bundle.getString(key) + "\n";
+	            }
+	        }
+	        String text ="\n" + "Command:      " + command + "\n" +
+	                "Result:       " + result + "\n" +
+	                "Result Info:  " + resultInfo + "\n" +
+	                "CID:          " + commandIdentifier;
+	        Log.d("TAG",text);
+	    }
+	};
+
+	public void setReportingOptions() {
+	    Intent i = new Intent();
+	    i.setAction("com.symbol.datawedge.api.ACTION");
+	    Bundle bReporting = new Bundle();
+	    bReporting.putString("reporting_enabled", "true"); //true, false
+	    bReporting.putString("reporting_generate_option", "manual"); //manual, auto, both
+	    bReporting.putString("reporting_show_for_manual_import", "false"); //true, false
+
+	    i.putExtra("com.symbol.datawedge.api.SET_REPORTING_OPTIONS", bReporting);
+	    i.putExtra("SEND_RESULT","true");
+	    i.putExtra("COMMAND_IDENTIFIER", "123456789");
+	    this.sendBroadcast(i);
+	}
+	 
+	private void registerReceivers() {
+	    IntentFilter filter = new IntentFilter();
+	    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+	    filter.addCategory("android.intent.category.DEFAULT");
+	    registerReceiver(resultsReceiver, filter);
+	}
+
+
+<!-- PRIOR EXAMPLE GIVEN BY ENGINEERING (replaced by above 12/15/17)
 	:::java
 	Intent i = new Intent();
 	i.setAction(ACTION);
@@ -61,6 +122,10 @@ The code below enables reporting on the device, enables reports for manual and a
 	i.putExtra(ACTION_EXTRA_SEND_RESULT,"true");
 	i.putExtra("COMMAND_IDENTIFIER", "123456789");
 	this.sendBroadcast(i);
+
+ -->
+
+
 
 -----
 

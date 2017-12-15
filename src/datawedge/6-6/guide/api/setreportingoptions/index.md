@@ -22,9 +22,9 @@ Used to configure reporting options, which are optionally generated after import
 
 **ACTION** [String]: `com.symbol.datawedge.api.ACTION`
 
-**EXTRA_DATA** [String]: `com.symbol.datawedge.api.SET_REPORTING_OPTIONS`
+**EXTRA_DATA** [bundle]: `com.symbol.datawedge.api.SET_REPORTING_OPTIONS`
 
-**Reporting Options**:
+**Reporting Options Bundle**:
 * **reporting_enabled -** controls whether to enable reports, generated following import operations. 
  * true
  * false (default)
@@ -47,7 +47,7 @@ Error messages are logged for invalid actions and parameters.
 
 ### Result Codes
  
-DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example Code](#example), below.
+DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example Code](#example), below.
 
 * **BUNDLE_EMPTY -** FAILURE
 * **FAILURE –** FAILURE

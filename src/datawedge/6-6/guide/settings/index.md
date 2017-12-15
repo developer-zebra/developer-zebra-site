@@ -377,7 +377,9 @@ A report generated for each imported Profile indicates the scanner currently sel
 
 **Impacted parameters -** section lists parameters that contain different values in the source and destination databases. The example report above shows four such parameters, two for decoders and one each for reader and scan parameters. 
 
-**Unchanged parameters -** section lists parameters that contain values from the imorted file that apply directly to the destination device. <!-- other than the default values for that parameter and are applies in the destination device without change. The number of entries in this section corresponds with the number of parameters (enabled on the source device?) changed by the user before exporting the database file.  -->
+**Unchanged parameters -** section lists parameters that contain values from the imported file that were changed from their default values but remain applicable in the destination device. 
+
+**Note**: Settings left in their default state in the source device are not reported unless they cannot be applied or have a different default value in the destination. 
 
 -----
 

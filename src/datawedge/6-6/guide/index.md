@@ -1,9 +1,9 @@
 ---
-title: DataWedge 6.5
+title: DataWedge 6.6
 img: datawedge_logo.png
 layout: list-mx.html
 menu: 
-  title: DataWedge 6.5
+  title: DataWedge 6.6
   items:
     - title: About
       url: /datawedge/6-6/guide/about

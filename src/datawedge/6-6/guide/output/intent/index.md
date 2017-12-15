@@ -10,7 +10,9 @@ Intent Output sends the processed data to the associated foreground application 
 
 An intent object is a bundle of information that describes a desired action. It includes the data to be acted upon, the category of component that should perform the action and other pertinent data and/or instructions. When an intent is initiated, Android locates an appropriate component to respond to the intent, launches a new instance of the component (if needed), and passes the intent object to it.
 
-Components advertise the kinds of intents they can handle through intent filters, which are specified in the `AndroidManifest.xml` file as &lt;intent-filter&gt; elements. A component may have any number of intent filters, each describing a different capability. 
+Components advertise the kinds of intents they can handle through intent filters, which are specified in the `AndroidManifest.xml` file as &lt;intent-filter&gt; elements. A component can have any number of intent filters, each describing a different capability. 
+
+> The parameters of this feature can be configured using the [Set Config API](../../api/setconfig).
 
 -----
 

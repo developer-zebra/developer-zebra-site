@@ -15,7 +15,7 @@ menu:
       url: /datawedge/6-6/guide/settings
     - title: APIs
       url: /datawedge/6-6/guide/api
-    - title: Demo App
+    - title: Demo Apps
       url: /datawedge/6-6/guide/demo
     - icon: fa fa-comment
       url: https://developer.zebra.com/community/technologies/advanced-data-capture

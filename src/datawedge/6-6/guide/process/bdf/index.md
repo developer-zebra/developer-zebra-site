@@ -18,6 +18,8 @@ If desired, BDF also can convert acquired data to hexidecimal notation. For exam
 
 Get more info about [how Profiles work](../../overview). 
 
+> The parameters of this feature can be configured using the [Set Config API](../../api/setconfig).
+
 -----
 
 ## Basic Data Formatting

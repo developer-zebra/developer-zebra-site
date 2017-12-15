@@ -50,12 +50,12 @@ The PLUGIN_CONFIG bundle is configured using the following properties:
 
 **PLUGIN_NAME** [String]: Name of the Plug-in to configure. See tables below for `PARAM_LIST` values. 
 
-
  * **BARCODE** input
  * **INTENT** output
  * **KEYSTROKE** output
  * **BDF** (basic data formatting) processing
 
+<!-- 
 To be implemented in the future: 
   * ADF (advanced data formatting) processing 
   * DCP input
@@ -63,9 +63,10 @@ To be implemented in the future:
   * MSR input
   * SIMULSCAN input 
 
-**Notes**: 
+ -->
+ **Notes**: 
 * Plug-in names are case sensitive.
-* Each intent involving a Plug-in requires a separate intent Action.   
+* For DataWedge 6.5 and below, each intent involving a Plug-in requires a separate intent Action.
 
 **PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters that should be updated under the specified Plug-in. Setting an empty string in any parameter value resets that parameter to its default setting. 
 

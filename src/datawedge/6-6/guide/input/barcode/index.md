@@ -23,6 +23,10 @@ Barcode Input is used to specify:
 
 **Note**: When SimulScan is used, DataWedge concatenates all captured text into a single string, and performs processing on the concatenated string. See the **[SimulScan section](../simulscan)** for details. 
 
+> The parameters of this feature can be configured using the [Set Config API](../../api/setconfig).
+
+-----
+
 ## Scanner Selection
 For Barcode Input, the Scanner selection panel determines which scanning device will be used for data capture. The list of available scanners will be based devices that are present on (or connected to) the unit being configured. 
 <img style="height:350px" src="../11_select_input.png"/>
@@ -73,7 +77,7 @@ Many input methods include parameters that are configurable according to the exp
 
 Parameters for individual Decoders are modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters (where applicable) to use with its associated application(s). This guide covers the selection of Decoders and provides details for those with configurable parameters.
 
-DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles, and are indicated by an (*) in the table below. **To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile**.
+DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles, and are indicated by an (&#42;) in the table below. **To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile**.
 
 ### Default Decoders 
 <div class="table-striped">

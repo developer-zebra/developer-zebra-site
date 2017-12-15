@@ -9,7 +9,9 @@ productversion: '6.6'
 
 Introduced in DataWedge 6.5. 
 
-Used to switch to a specific scanner at runtime, enabling selection of the optimal scanning device for the application, requirement or situation when an app is launched. **Scanner must be available to the device at runtime**. The `SWITCH_SCANNER_EX` extra added in DataWedge 6.6 allow scanners to be selected by a friendly name as defined in the [scanner identifier table](#scanneridentifiers).  
+Used to switch to a specific scanner at runtime, enabling selection of the optimal scanning device for the application, requirement or situation when an app is launched. **Scanner must be available to the device at runtime**. 
+
+The `SWITCH_SCANNER_EX` extra (added in DataWedge 6.6) allow scanners to be selected by a friendly name as defined in the [scanner identifier table](#scanneridentifiers).  
 
 ### Function Prototypes
 

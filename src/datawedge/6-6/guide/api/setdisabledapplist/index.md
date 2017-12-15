@@ -78,7 +78,7 @@ For the scenario above...
 
 ### Result Codes
 
-DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
 * **PARAMETER_INVALID -** CONFIG_MODE not defined or has invalid string value. Also returned 
 if mode is set to UPDATE or REMOVE and APP_LIST is not provided.

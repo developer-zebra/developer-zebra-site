@@ -26,7 +26,7 @@ Used to pass one or more [barcode, scanner and/or reader parameters](../../input
 
 ### Result Codes
 
-DataWedge will return the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
 * **DATAWEDGE_DISABLED -** DataWedge is disabled
 * **PROFILE_DISABLED -** Profile is disabled

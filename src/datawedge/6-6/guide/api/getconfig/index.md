@@ -233,7 +233,7 @@ Error messages are logged for invalid actions and parameters.
 		};
 
 
-### Get scanner identifier
+### Get scanner details
 
 	//Bundle extras = intent.getExtras();
 

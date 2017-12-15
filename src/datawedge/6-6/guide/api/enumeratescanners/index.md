@@ -116,7 +116,7 @@ Error messages are logged for invalid actions and parameters.
 	};
 
 
-### Get scanner identifier
+### Get scanner details
 
 	// RESULT_ACTION_EXTRA_ENUMERATE_SCANNERS
 

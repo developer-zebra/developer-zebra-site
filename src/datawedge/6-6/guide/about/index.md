@@ -44,6 +44,9 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 * **The [SET_CONFIG](../api/setconfig) API now configures multiple plug-ins with a single intent action**. 
 
+* **The [SWITCH_SCANNER](../api/switchscanner) API now supports friendly device names with a new extra**. 
+
+
 -----
 
 ### Main Functionality

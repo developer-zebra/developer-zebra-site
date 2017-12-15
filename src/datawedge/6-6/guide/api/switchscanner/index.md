@@ -9,13 +9,19 @@ productversion: '6.6'
 
 Introduced in DataWedge 6.5. 
 
-Used to switch to a specific scanner at runtime, enabling selection of the optimal scanning device for the application, requirement or situation when an app is launched. **Scanner must be available to the device at runtime**. 
+Used to switch to a specific scanner at runtime, enabling selection of the optimal scanning device for the application, requirement or situation when an app is launched. **Scanner must be available to the device at runtime**. The `SWITCH_SCANNER_EX` extra added in DataWedge 6.6 allow scanners to be selected by a friendly name as defined in the [scanner identifier table](#scanneridentifiers).  
 
-### Function Prototype
+### Function Prototypes
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER", "<scanner index>");
+
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER_EX","<SCANNER_IDENTIFIER>");
+	this.sendBroadcast(i);
 
 ### Parameters
 **ACTION** [String]: "com.symbol.datawedge.api.ACTION"
@@ -25,6 +31,26 @@ Used to switch to a specific scanner at runtime, enabling selection of the optim
 **EXTRA_DATA** [String]: "&lt;scanner index&gt;" -  index number of the scanner to use in the active Profile
 
 **Use [ENUMERATE_SCANNERS](../enumeratescanners) to retrieve an index of scanners**. 
+
+### Scanner Identifiers
+The scanner identifier permits scanners to be identified by a friendly name rather than an index number. 
+
+**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device. Both parameters are supported in DataWedge 6.6; the scanner identifier value takes precedence if an index also is referenced in the code.  
+
+**Possible values**:
+
+* **AUTO** - Automatic scanner selection
+* **INTERNAL_IMAGER** - Built-in imager scanner
+* **INTERNAL_LASER** - Built-in laser scanner
+* **INTERNAL_CAMERA** - Built-in camera scanner
+* **SERIAL_SSI** - Pluggable Z-back scanner for ET50/ET55 
+* **BLUETOOTH_SSI** - RS507 Bluetooth scanner
+* **BLUETOOTH_RS6000** - RS6000 Bluetooth scanner
+* **BLUETOOTH_DS3678** - DS3678 Bluetooth scanner
+* **PLUGABLE_SSI** - Serial SSI scanner RS429 (for use with WT6000)
+* **PLUGABLE_SSI_RS5000** - Serial SSI scanner RS5000 (for use with WT6000)
+* **USB_SSI_DS3608** - DS3608 pluggable USB scanner
+
 
 ### Result Codes
 

@@ -7,7 +7,7 @@ productversion: '5.4'
 
 ## Overview
 
-A few RxLogger functions are controlled using intents. 
+RxLogger functions controlled using intents. 
 
 ### Enable RxLogger
 

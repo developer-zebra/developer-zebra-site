@@ -28,9 +28,13 @@ DataWedge invokes an intent though an **Intent action** in an **Intent category*
 
 ...the **Intent action** is `com.myapp.action` and the **Intent category** is `android.intent.category.DEFAULT`.
 
-When combined, these two values are like a "channel" to which an app can listen for intents that use the same combination, and filtering out the "noise" from other intents that use different value pairs. **Once these values are known, DataWedge Intent Output must be set to match**. 
+When combined, these two values are like a "channel" to which an app can listen for intents that use the same combination, filtering out "noise" from other intents that use different value pairs. **Once these values are known, DataWedge Intent Output must be set to match**. 
 
-**To set a DataWedge Action and Category pair**: 
+>**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched with every decode, and the acquired data sent to each newly spawned instance. 
+
+-----
+
+**To set a DataWedge Action/Category pair**: 
 
 **&#49;. Locate the Intent Output section of the Profile** being configured.
 
@@ -51,8 +55,6 @@ _Intent Output options for the "Launcher" Profile_
 * **Broadcast Intent** 
 
 **When Intent delivery is set to Broadcast Intent**, DataWedge sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. **Zebra recommends using this flag <u>only if delays are seen</u> in delivery of intents immediately following device boot-up**.
-
->**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched with every decode, and the acquired data sent to each newly spawned instance. 
 
 -----
 

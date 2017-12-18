@@ -14,6 +14,10 @@ Components advertise the kinds of intents they can handle through intent filters
 
 > The parameters of this feature can be configured using the [Set Config API](../../api/setconfig).
 
+#### See also: 
+
+**Tutorial: [Scanning with Datawedge Intent Output on Zebra Devices](http://www.darryncampbell.co.uk/2017/12/13/tutorial-scan-with-datawedge-intent-output-on-zebra-devices/)**
+
 -----
 
 ## Intent Output Setup

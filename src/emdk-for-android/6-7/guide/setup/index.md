@@ -8,8 +8,9 @@ productversion: '6.7'
 ## Overview
 
 EMDK for Android provides the interface to Zebra value-adds such as scanners and magstripe readers for developing Enterprise applications on Zebra Android devices. This document is a guide to start working EMDK for Android in your preferred development environment.
-
+<!-- 
 >**EMDK for Android 6.7 does not support Android Studio 3.0**
+ -->
 
 ##Configuring Development Environment
 In order to develop Android applications with Android Studio you must first install the Java Development Kit.
@@ -32,8 +33,9 @@ In order to develop Android applications with Android Studio you must first inst
 ##Choosing a Development Environment
 ###Android Studio
 Android studio is now Google's official IDE for Android development. Using Android Studio will give you access to the latest IDE updates.
-
+<!-- 
 >**EMDK for Android 6.7 does not support Android Studio 3.0**
+ -->
 
 **Windows** - Follow this [**guide**](/emdk-for-android/6-7/guide/setupAndroidStudio) to setup the EMDK for Android in Android Studio.
 

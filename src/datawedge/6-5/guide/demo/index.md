@@ -36,6 +36,7 @@ The DWDemo app provides a menu of available scanning input devices, making it ea
 ------
 
 ####DWDemo Settings
+
 <img style="height:350px" src="03_dwdemo_settings_menu.png"/>
 <br>
 DWDemo's "hamburger" menu (above) provides access to "Settings," which invoke the DWDemo Profile screen (below). 
@@ -53,6 +54,6 @@ Acquired data appears in the window, as below.
 _The DWDemo app showing two acquired values_. 
 <br>
 
-By making changes in the DWdemo Profile, the DWDemo app can be used to test different decoders, rules for processing acquired data and other DataWedge configuration variations. For information about changing Profile settings, see the [Profiles/Plug-ins page](../profiles).  
+By making changes in the DWdemo Profile, the DWDemo app can be used to test different decoders, rules for processing acquired data and other DataWedge configuration variations. For information about changing Profile settings, see [Managing Profiles](../createprofile). 
 
 

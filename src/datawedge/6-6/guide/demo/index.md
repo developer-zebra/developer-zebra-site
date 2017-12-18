@@ -5,27 +5,24 @@ product: DataWedge
 productversion: '6.6'
 ---
 
-## Overview
+## DataWedge Demo Apps
 
-DataWedge offers two options for demonstrating features of its data acquisition services. DWDemo, which is included with all Zebra devices, shows scanning with the imager, camera, Bluetooth device and a magstripe reader (MSR), if one is connected. DWDemo is documented here in this guide. 
+DataWedge features can be demonstrated and tested using: 
 
-DataWedge features also can be demonstrated and tested using the [Kitchen Sink app](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/07/14/kitchen-sink-sample-v10-for-zebra-android-enterprise-mobile-features), a downloadable, customizable app documented on the download page linked above. 
+* **DWDemo -** included with all Zebra devices, documented below
+* **[Kitchen Sink app](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/07/14/kitchen-sink-sample-v10-for-zebra-android-enterprise-mobile-features) -** downloadable, customizable app documented on download page 
 
------
-
-## DWDemo 
-
-DWDemo shows how data is acquired by an application using the DataWedge service. A DataWedge Profile called "DWDemo" is installed along with DataWedge and associated with the demo app. Disabled by default, the Profile can be modified as needed for testing and demo purposes. Once the demo Profile is enabled (see below), pressing the app's Scan button or a device trigger initiates a barcode scan and decoded data is displayed on the screen. 
+DWDemo shows how data is acquired by an application using the DataWedge service. A DataWedge Profile called "DWDemo" is installed along with DataWedge and associated with the demo app. Disabled by default, the Profile can be modified as needed for testing and demo purposes. Once the demo Profile is enabled (see below), pressing the app's Scan button or a device trigger initiates a barcode scan and decoded data is displayed on the screen. The DWDemo app supports scanning with the imager, camera, Bluetooth device or a magstripe reader (MSR), if one is connected. 
 
 This guide requires a working knowledge of DataWedge Profiles. For more information about Profile settings, see the [DataWedge Setup Guide](../setup).  
 
 <img style="height:350px" src="DWDemo-icon-in-launcher.png"/>
-_The DWDemo app as it appears in the Android App Drawer_ 
+_The DWDemo app as it appears in the Android App Drawer_. 
 <br>
 
 ------
 
-### Device Selector
+####Device Selector
 The DWDemo app provides a menu of available scanning input devices, making it easy to switch from one to another for testing purposes. This and other DataWedge settings and preferences also can be configured in the DWDemo Profile, shown below. For information about Profile settings, see the [DataWedge Setup Guide](../setup).  
 
 <img style="height:350px" src="02_dwdemo_device_selector.png"/>
@@ -38,7 +35,8 @@ The DWDemo app provides a menu of available scanning input devices, making it ea
 
 ------
 
-### DWDemo Settings
+####DWDemo Settings
+
 <img style="height:350px" src="03_dwdemo_settings_menu.png"/>
 <br>
 DWDemo's "hamburger" menu (above) provides access to "Settings," which invoke the DWDemo Profile screen (below). 

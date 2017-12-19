@@ -114,7 +114,7 @@ _SimulScan options within DataWedge_
 
 **Template selection -** sets a SimulScan Template for the Profile being configured. Custom Templates installed in the `/enterprise/device/settings/datawedge/templates` directory on the device will appear along with the templates included with SimulScan (listed above). **Note: Files and folders within the** `/enterprise` **directory are invisible to Android File Browser by default**; they can be made visible by manually inputting the path. 
 
-**Region separator -** used to configure a separator character for SimulScan text-region data. When multiple text regions exist, the region separator will be inserted between the data strings from each region on the acquisition form. Region separators can be used with the Keystrokes Plug-in Action key character setting (see below) to dispatch data acquired in SimulScan regions to specific fields of an app.
+**Region separator -** used to configure a separator character for SimulScan text-region data. When multiple text regions exist, the region separator will be inserted between the data strings from each region on the acquisition form. Region separators can be used with the [Keystrokes Output Action key](../../../../datawedge/6-3/guide/output/keystroke) character setting (see below) to dispatch data acquired in SimulScan regions to specific fields of an app.
 
 **Region Separator possible values**:
 

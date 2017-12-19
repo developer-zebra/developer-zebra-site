@@ -31,7 +31,7 @@ Alternatively, SimulScan [Document Capture](../templatebuilder/#structuredtempla
 
 ### Requirements
 
-* A Zebra TC55, TC70, TC75, TC8000 device running Android
+* A Zebra TC51/TC56, TC55, TC70/TC75, TC70x/TC75x, TC8000 device running Android
 * Camera or supported 2D imager ([see table](#supporteddevices), below)
 * An app (or [DataWedge](../../../../datawedge)) configured to access SimulScan
 * A per-device [license](../license) if using [advanced features](../license)
@@ -90,7 +90,7 @@ SimulScan works with all device cameras, and **on devices with a supported 2D im
  </tr>
  <tr>
   <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc51Pic" src="tc51.jpg" height="10px"></td>
-  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC51 M</b></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC51/TC56 M</b></td>
   <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">  √</td>
   <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><br>•<i>All models support SimulScan</i><br>•<i>Must have BSP 19-xx or later</i></td>
  </tr>
@@ -107,8 +107,8 @@ SimulScan works with all device cameras, and **on devices with a supported 2D im
   <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img style="height:67px" src="TC70_models.png"/>•<i>SimulScan supported on GA2 devices only</i><br>•<i>Model code must contain an "A" where indicated</i><br>•<i>Decoded imagers not supported</i></td>
  </tr>
  <tr>
-  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="tc70.png" height="25px"></td>
-  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC70X M</b></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><img id="tc7xxPic" src="tc75x.png" height="25px"></td>
+  <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><b>TC70X/TC75X M</b></td>
   <td width="15%" align="left" valign="middle" class="clsSyntaxCells clsOddRow">  √</td>
   <td width="55%" align="left" valign="middle" class="clsSyntaxCells clsOddRow"><br>•<i>All models support SimulScan</i><br>•<i>Must have BSP 19-xx or later</i></td>
  </tr>

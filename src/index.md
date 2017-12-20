@@ -3,6 +3,34 @@ publish: false
 title: Zebra TechDocs
 layout: list-products.html
 products: 
+  - title: I Need Tools For...
+    description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
+    url: /help
+    btn-text: Latest Guides
+    image: /images/products/blue-question-mark.jpg
+    sections:
+      - title: About TechDocs
+        url: /about
+      - title: Tools Help
+        url: /help
+      - title: Developer Portal
+        url: https://developer.zebra.com/welcome
+      - title: Contact
+        url: /contact
+      - title: Search
+        url: /search
+  - title: User Solutions
+    description: Apps built by Zebra to help end-users increase productivity and improve workflow efficiency.
+    url: /solutions
+    btn-text: Latest Guides
+    image: /images/products/mobility_dna.png
+    sections:
+      - title: CartScan
+        url: ../cartscan
+      - title: Enterprise Home Screen
+        url: ../ehs
+      - title: Enterprise Keyboard
+        url: ../enterprise-keyboard
   - title: AppGallery
     description: A free app deployment tool to help Zebra customers and partners keep their enterprise apps up to date and their workers most productive.
     url: https://developer.zebra.com/docs/DOC-3040
@@ -248,41 +276,13 @@ products:
         label: '2.3'
       - url: stagenow/2-2/about
         label: '2.2'
-  - title: I Need Tools For...
-    description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
-    url: /help
-    btn-text: Latest Guides
-    image: /images/products/blue-question-mark.jpg
-    sections:
-      - title: About TechDocs
-        url: /about
-      - title: Tools Help
-        url: /help
-      - title: Developer Portal
-        url: https://developer.zebra.com/welcome
-      - title: Contact
-        url: /contact
-      - title: Search
-        url: /search
-  - title: User Solutions
-    description: Apps built by Zebra to help end-users increase productivity and improve workflow efficiency.
-    url: /solutions
-    btn-text: Latest Guides
-    image: /images/products/mobility_dna.png
-    sections:
-      - title: CartScan
-        url: ../cartscan
-      - title: Enterprise Home Screen
-        url: ../ehs
-      - title: Enterprise Keyboard
-        url: ../enterprise-keyboard
 menu:
   items:
-    - title: ABOUT TECHDOCS
+    - title: About Techdocs
       url: /about
-    - title: I NEED TOOLS FOR...
+    - title: I Need Tools For...
       url: /help
-    - title: FEEDBACK
+    - title: Feedback
       url: /contact
     - icon: fa fa-comment
       url: https://developer.zebra.com/welcome

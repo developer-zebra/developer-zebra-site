@@ -11,7 +11,7 @@ menu:
       url: /cartscan/2-1/guide/setup
     - title: Settings
       url: /cartscan/2-1/guide/settings
-    - title: How to Use
+    - title: Using CartScan
       url: /cartscan/2-1/guide/usage
     - icon: fa fa-download
       url: /cartscan/2-1/download

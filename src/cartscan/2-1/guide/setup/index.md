@@ -5,300 +5,120 @@ product: CartScan
 productversion: '2.1'
 ---
 
-## Overview
+## Setup and Activation
 
-Upon receipt and processing of a valid software order, Zebra Software Distribution Services sends an email to the provided customer contact with an entitlement activation ID and software download instructions for both CartScanPCWedge for the PC and CartScan for the mobile device.
+Upon receipt and processing of a valid software order, Zebra Software Distribution Services sends an email with an activation ID and software download instructions to the customer contact provided with the order. Instructions apply to both CartScanPCWedge (for the PC) and CartScan for the Android mobile device. Target devices must meet the minimum [system requirements](../about/#systemrequirements). 
 
-Installation requires two steps:
-Install CartScanPCWedge on a PC.
-Install CartScan on a mobile device.
+### Install on PC
 
-Installing CartScanPCWedge on a PC
+**To install CartScanPCWedge on a PC**:
 
-To install CartScan PC Wedge on a PC:
-Upon receipt of an entitlement activation ID from Zebra Software Distribution Services, use the software download instructions to locate and unzip the download files.
-
-Click the setup.exe to install CartScan PC Wedge on a supported PC. The Welcome screen displays.
-
-
-Figure 1 (below) Welcome to the Zebra CartScan PC Wedge Setup Wizard Screen
-
-figure_01.png
-figure_02.png
-
-<img alt="" style="height:350px" src="cartscan_01.png"/>
-_The CartScan app for Android_
-<br><img alt="" style="height:350px" src="cartscan_01.png"/>
-_The CartScan app for Android_
+1. Follow the download instructions emailed by the Zebra Software Distribution Services.
+2. Locate and unzip the download package, which includes a `setup.exe` installer package. 
+3. Launch `setup.exe` to install CartScanPCWedge on a supported PC.<br>The Welcome screen appears:
+<img alt="" style="height:350px" src="figure_01.png"/>
+<br>
+4. **Click Next** to proceed to the "Select Installation Folder" screen. 
+5. **Specify the installation folder** or click Browse and navigate to the desired folder. 
+6. **Optional**: Select "Disk Cost..." to view the drives to which you can install Zebra CartScanPCWedge, along with available and required storage on each drive. Make desired selections and click "OK" to exit Disk Cost screen.
+7. **Specify for whom to install** ZebraCartScanPCWedge ("Everyone" or "Just me"). 
+8. **Click "Next" when finished** making selections:
+<img alt="" style="height:350px" src="figure_02.png"/>
+<br> 
+9. The Confirmation screen appears. **Click "Next" to begin the installation**:
+<img alt="" style="height:350px" src="figure_03.png"/>
+<br>
+10. Upon successful installation, the "Installation Complete" screen appears.<br>**Click "Close"** to dismiss the screen:
+<img alt="" style="height:350px" src="figure_04.png"/>
 <br>
 
-Click Next. The Select Installation Folder screen displays.
+CartScanPCWedge installation is complete. 
 
+> **Proceed to next section**. 
 
-Figure 2 (below) Select Installation Folder Screen
+-----
 
+## Install on Mobile Device
 
-Specify the installation folder or click Browse.
+**Instructions for downloading and installing CartScan are emailed to the customer contact** provided to Zebra Software Distribution Services along with the original software order. 
 
-(Optional) Click Disk Cost to view the drives to which you can install Zebra CartScan PC Wedge, along with available and required disk space on each drive. Click OK to exit.
+> **Proceed to next section**. 
 
-To specify for whom to install Zebra CartScan PC Wedge, select Everyone or Just me.
+-----
 
-Click Next.
+## Associate the Devices  
 
-Figure 3 (below) Confirm Installation Screen
+Once the CartScan software is installed on a PC and mobile device, the two must be associated before the solution can be used. The first time a mobile device makes contact with a particular PC, it initiates a Bluetooth pairing request and tries to connect. This step can take a some time and technical know-how. 
 
-figure_03.png
-figure_04.png
+>**Zebra recommends that an IT associate perform this step ahead of time**.
 
-<img alt="" style="height:350px" src="cartscan_01.png"/>
-_The CartScan app for Android_
-<br><img alt="" style="height:350px" src="cartscan_01.png"/>
-_The CartScan app for Android_
+**IMPORTANT**: Multiple mobile devices can be paired via Bluetooth to an individual PC, but only one mobile device can connect to CartScanPCWedge at a time.
+
+**Associating the mobile device with the PC**
+
+### Enable Bluetooth On PC
+
+**On the PC**:
+
+1. In Windows Bluetooth settings, select "enable Bluetooth" and "allow Bluetooth mobile devices to connect" to the computer. If the PC does not have built-in Bluetooth, insert a Bluetooth dongle and follow the setup instructions that came with it. 
+2. Run the CartScanPCWedge application shortcut from the desktop or click Start > All Programs > Zebra CartScan PC Wedge > CartScanPCwedge:
+<img alt="" style="height:185px" src="figure_05.png"/>
+_Run CartScan PC Wedge from Desktop Shortcut or from Start Menu_
+<br>
+3. Instructions appear for connecting the mobile device, including a barcode to scan. NOTE: For best scanning results, remove any privacy screens that cover the monitor before scanning a barcode.
+<img alt="" style="height:350px" src="figure_06.png"/>
+_Connect Mobile Device_
 <br>
 
-Click Next to begin the installation.
+### Enable Bluetooth On Mobile Device
 
-The Installation Complete screen displays when the installation completes successfully.
+**On the mobile device**: 
 
-Figure 4 (below) Installation Complete Screen
-
-Click Close.
-
-Installing CartScan on a Mobile Device
-
-Upon receipt of an entitlement activation ID from Zebra Software Distribution Services, follow the instructions in email to install the CartScan Mobile application.
-
-
-Post-Installation Tasks
-
-After installing CartScanPCWedge on a PC and CartScan on a mobile device, the mobile device must be paired to the PC.
-
-IMPORTANT:  Multiple mobile devices can be paired to a single PC, but only one mobile device at a time can connect to CartScanPCWedge.
-
-
-Associating the Mobile Device the PC
-
-NOTE:  The first time a mobile device is associated with a PC, it initiates a pairing request and tries to connect. This step can take a some time. Zebra recommends that an IT associate performs the pairing ahead of time.
-
-On the PC
-
-To associate the mobile device to the PC, perform the following steps on the PC: 
-
-In Windows Bluetooth settings, enable Bluetooth and allow Bluetooth mobile devices to connect to the computer. If the PC does not support Bluetooth, insert a Bluetooth dongle and follow the setup instructions 
-Run the CartScanPCWedge application shortcut from the desktop or click Start > All Programs > Zebra CartScan PC Wedge > CartScanPCwedge.
-
-Figure 5 (below) Run CartScan PC Wedge from Desktop Shortcut or from Start Menu
-
-
-figure_05.png
-figure_06.png
-
-<img alt="" style="height:350px" src="cartscan_01.png"/>
-_The CartScan app for Android_
-<br><img alt="" style="height:350px" src="cartscan_01.png"/>
-_The CartScan app for Android_
+1. From the HOME screen, **tap Settings > Bluetooth**.
+2. **Slide the Bluetooth switch to ON** position.
+3. **Tap the HOME** key.
+4. **Tap All Apps > CartScan**. 
+<img alt="" style="height:350px" src="figure_07.png"/>
+_CartScan App icon_
+<br>
+5. Use the CartScan app to **scan the barcode displayed on the PC** by pressing the large scan button in the app (or one of the device's scan triggers).
+<img alt="" style="height:350px" src="figure_08.png"/>
+_Mobile Device Not Yet Connected to PC_
+<br>
+6. **Tap PAIR** or follow the prompts for pairing the mobile device with the PC (if connecting for the first time, as shown below).
+<img alt="" style="height:350px" src="figure_09.png"/>
+_Pair Mobile Device to PC_
 <br>
 
-
-Instructions appear for connecting the mobile device, including a barcode to scan.
-
-NOTE:  For best scanning results, remove any privacy screens covering the monitor before scanning a barcode.
-
-The pairing barcode contains the PC name and the last four digits of the PC BT MAC address. For example, TestPC-1234.
-
-Figure 6 (below) Connect Mobile Device
-
-On the Mobile Device
-
-To associate the mobile device to the PC, perform the following steps on the mobile device:
-
-From the Home screen, tap   Settings >  Bluetooth.
-
-Slide the Bluetooth switch to the ON position.
-
-Tap the Home screen icon (  ).
-
-Tap		All Apps > CartScan. Figure 7	CartScan App
-
-figure_07.png
-figure_08.png
-
-<img alt="" style="height:350px" src="cartscan_01.png"/>
-_The CartScan app for Android_
-<br><img alt="" style="height:350px" src="cartscan_01.png"/>
-_The CartScan app for Android_
+**When successfully connected, a message appears on the mobile device similar to the one pictured below, left**:
+<img alt="" style="height:350px" src="figure_10.png"/>
 <br>
 
-Scan the barcode displayed on the PC by pressing a scan trigger or the scan button on the mobile device.
-Figure 8 (below) Mobile Device is Not Connected to PC
+>**CartScan is ready to use**.
 
-Tap PAIR or follow the prompts for pairing the mobile device with the PC (if connecting for the first time, as shown below).
+**Notes**: 
 
-Figure 9 (below) Pair Mobile Device to PC
-
-figure_09.png
-figure_10.png
-
-<img alt="" style="height:350px" src="cartscan_01.png"/>
-_The CartScan app for Android_
-<br><img alt="" style="height:350px" src="cartscan_01.png"/>
-_The CartScan app for Android_
-<br>
+* Bluetooth pairing dialog appears only if mobile device was not previously paired with that PC.
+* Allowing access to contacts and call history (checkbox) is not required for CartScan.
 
 
-NOTE: The Bluetooth pairing request dialog displays only if the mobile device was not paired previously with the PC.
-
-Allowing access to contacts and call history is not required for CartScan functionality. Tapping the check box is not required.
-
-When successfully connected, a message displays on the mobile device, similar to the one below.
-
-Figure 10 (below) Mobile Device is Connected to PC
-
-
-
-CartScan App (Mobile Device)	CartScan PC Wedge (PC)
-
-CartScan is ready to use.
+-----
 
 ## Uninstallation
 
-Uninstallation
+### Remove From PC
 
-Uninstallation requires two steps.
+**To uninstall CartScanPCWedge from a PC**:
 
-Uninstall CartScanPCWedge on a PC
+1. Click **Start > Control Panel > Programs**
+2. On the Uninstall or change a program screen, locate **"Zebra CartScan PC Wedge" app**
+3. **Right-click "Zebra CartScan PC Wedge" and select Uninstall**
 
-Uninstall CartScan on a mobile device
+### Remove from Mobile Device
 
-Uninstalling CartScanPCWedge from a PC
+**To uninstall CartScan from a mobile device**:
 
-To uninstall CartScanPCWedge from a PC:
-
-Click Start > Control Panel > Programs.
-
-On the Uninstall or change a program screen, locate Zebra CartScan PC Wedge.
-
-Right-click Zebra CartScan PC Wedge and select Uninstall.
-
-Uninstalling CartScan from a Mobile Device
-
-To uninstall CartScan from a mobile device:
-
-Tap   Settings >  Apps.
-
-Tap CartScan.
-
-Tap UNINSTALL.
-
-Tap OK to confirm.
-
-Tap the Home screen icon (	).
-
-
-<!-- 
-System Requirements
-Supported PC
-Microsoft® Windows 7, 8 or 10 (with Built-in Bluetooth or Bluetooth 4.0 Dongle connected)
-Supported Devices
-MC40 HC KitKat
-MC40 HC Lollipop
-TC51 HC Marshmallow
-
-
-Installation
-Installation requires two steps.
-Install CartScan PC Wedge on a PC
-Install CartScan on a Device
-Install CartScan PC Wedge on a PC
-To install CartScan PC Wedge on a PC:
-Double-click setup.exe to install CartScan PC Wedge on a supported PC.
-
-Click Next.
-Figure 1    Welcome to the Zebra CartScan PC Wedge Setup Wizard Screen
-
-Specify the installation folder or click Browse.
-(Optional) Click Disk Cost to view the drives you can install Zebra CartScan PC Wedge to, along with each drive’s available and required disk space and click OK.
-To specify who to install Zebra CartScan PC Wedge for, select Everyone or Just Me.
-
-
-
-Click Next.
-Figure 2    Select Installation Folder Screen
-
-Click Next.
-Figure 3    Confirm Installation Screen
-
-Click Close.
-Figure 4    Installation Complete Screen
-
-Install CartScan on a Device
-To install CartScan on a Device:
-Copy the CartScan.apk file to the internal or external storage of the device.
-Using a file manager app, locate and tap CartScan.apk to install (alternatively, execute the .apk with the adb command: adb install cartscan.apk).
-
-
-Post Installation Tasks
-After installing CartScanPCWedge on a PC and CartScan on a device, the mobile device must be associated with the PC. By design, only one mobile device can be connected with the PC at a time. When connecting a device for the first time to a PC that is not already connected with another device, follow the steps below to associate the mobile device to a PC.
-Associate Mobile Device to PC
-To associate the mobile device to the PC, perform the following steps on the PC and on the device.
-On the PC
-To associate the mobile device to the PC, perform the following steps on the PC:
-In Windows Bluetooth settings, enable Bluetooth and allow Bluetooth mobile devices to connect to the computer. If the PC does not support Bluetooth, insert a Bluetooth dongle and follow the setup instructions.
-
-Run the CartScan PC Wedge application shortcut from the desktop or click Start > All Programs > Zebra CartScan PC Wedge > CartScanPCwedge.
-Figure 5    Run CartScan PC Wedge from Desktop Shortcut or from Start Menu
-
-Instructions appear for connecting the device, including a barcode to scan.
-The pairing barcode contains the PC name and the last four digits of the PC’s BT MAC address. For example, TestPC-1234.
-Figure 6    Connect Device
-
-
-On the Device
-To associate the mobile device to the PC, perform the following steps on the device:
-From the Home Screen, touch   Settings >  Bluetooth.
-Slide the Bluetooth switch to the ON position.
-Touch the Home Screen icon.
-
-
-Touch    All Apps > CartScan.
-Figure 7    CartScan App
-
-
-Scan the barcode displayed on the PC by pressing a scan trigger or the scan button on the device.
-Figure 8    Device is Not Connected to PC
-
-
-Touch PAIR or follow the prompts for pairing the device with the PC (if connecting for the first time, as shown below).
-Figure 9    Pair Device to PC
-
-The Bluetooth pairing request dialog displays only if the mobile device has not been paired previously with the PC. On the dialog box, the user does not need to select the check box Allow xxxxxx to access your contacts and call history.
-
-NOTE During the pairing process, on the PC side, the user may see a Windows notification pop up similar to A Bluetooth device is trying to connect, click to allow this. Ignore this message, and do not click it.
-When successfully connected, a message displays on the device, similar to the one below.
-Figure 10    Device is Connected to PC
-
-The device model plus the last four digits of the MAC address and the PC name plus the last four digits of the MAC address display.
-
-
-CartScan is ready to use.
-
-
-Uninstallation
-Uninstallation requires two steps.
-Uninstall CartScanPCWedge on a PC
-Uninstall CartScan on a Device
-Uninstall CartScanPCWedge from a PC
-To uninstall CartScanPCWedge from a PC:
-Click Start > Control Panel > Programs.
-On the Uninstall or change a program screen, locate Zebra CartScan PC Wedge.
-Right-click Zebra CartScan PC Wedge and select Uninstall.
-Uninstall CartScan from a Device
-To uninstall CartScan from a device:
-Touch    Settings >  Apps.
-Touch CartScan.
-Touch UNINSTALL.
-Touch OK to confirm.
-Touch the Home Screen icon.
- -->
-
+1. **Tap Settings > Apps**
+2. **Tap "CartScan"**
+3. **Tap "UNINSTALL"**
+4. **Tap "OK" to confirm**

@@ -49,7 +49,6 @@ By design, **only one mobile device can be connected with the PC at a time, and 
  -->
 
 <!-- 
------
 
 #### Learn more about:
 * [Text correction features](../settings#textcorrection)

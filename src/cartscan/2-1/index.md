@@ -9,7 +9,7 @@ menu:
       url: /cartscan/2-1/guide/about
     - title: Setup
       url: /cartscan/2-1/guide/setup
-    - title: Settings
+    - title: Admin Settings
       url: /cartscan/2-1/guide/settings
     - title: Using CartScan
       url: /cartscan/2-1/guide/usage

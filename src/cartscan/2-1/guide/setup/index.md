@@ -9,7 +9,7 @@ productversion: '2.1'
 
 After processing a software order, Zebra Software Distribution Services emails an activation ID and software download instructions **to the customer contact provided with the order**. The instructions apply to both CartScanPCWedge (for the PC) and the CartScan app for the Zebra Android device. 
 
-**Note**: Target devices must meet the minimum [system requirements](../about/#overview). 
+**NOTE**: Target devices must meet the minimum [system requirements](../about/#overview). 
 
 > **Zebra recommends that an IT associate perform first-time setup in advance**.
 
@@ -56,9 +56,7 @@ CartScanPCWedge installation is complete.
 
 ### 2. Install on Mobile Device
 
-**Instructions for downloading and installing CartScan are emailed to the customer contact** provided to Zebra Software Distribution Services along with the original software order.
-
-The `CartScan.apk` installer package can be downloaded from [Zebra AppGallery](https://appgallery.zebra.com/home) or from the [Google Play Store](https://play.google.com/store?hl=en) and installed using the standard procedure. 
+**Instructions for downloading and installing CartScan are emailed to the customer contact** provided to Zebra Software Distribution Services along with the original software order. The `CartScan.apk` installer package can be downloaded from [Zebra AppGallery](https://appgallery.zebra.com/home) or from the [Google Play Store](https://play.google.com/store?hl=en) and installed using the standard procedure. 
 
 -----
 
@@ -111,6 +109,19 @@ _Pair mobile device to PC_
 * Bluetooth pairing dialog appears only if mobile device was not previously paired with that PC.
 * Allowing access to contacts and call history (checkbox) is not required for CartScan.
 * Multiple mobile devices can be paired via Bluetooth to an individual PC, but only one mobile device can connect to CartScanPCWedge at a time.
+
+-----
+
+## Admin Best Practices
+
+> **Zebra strongly recommends following these suggested best practices**:
+
+1. **DO NOT MODIFY CARTSCAN PROFILES FROM WITHIN DATAWEDGE ON THE MOBILE DEVICE**. Doing so will result in unpredictable CartScan behavior. 
+2. **Create all necessary CartScan Profile(s) for the end-user scanning workflow(s)**. See [Settings page](../settings) for details.
+3. **Before deployment, always test CartScan Profile(s)** with the intended line-of-business application(s) to ensure compatibility and desired behavior.
+4. **Create the end-user training materials and guidelines** for proper use of CartScan, its features and functions. This minimizes errors when scanning with CartScan.
+5. **Deploy workflow Profiles along with the CartScan app** when staging target mobile devices.
+6. **Pair each mobile device to its intended end-user workstation** prior to deployment to end users.  
 
 -----
 

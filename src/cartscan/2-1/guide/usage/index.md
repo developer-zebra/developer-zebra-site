@@ -9,104 +9,53 @@ productversion: '2.1'
 
 CartScan uses Bluetooth to turn a [supported Zebra mobile device](../about/#supporteddevices) into a wireless barcode scanner, sending collected data as keystrokes to a nearby computer running a line-of-business application. CartScan was initially developed for healthcare workers, but has applications in the warehouse, transportation and logistics, and numerous other industries. 
 
-## Using CartScan
+### Connecting PC to Mobile Device
 
-This section explains how to use CartScan and CartScanPCWedge. Topics include connecting the mobile device to the PC, performing a successful scan, transferring data to the PC, and re-establishing a Bluetooth connection.
+**NOTE**: If the mobile device was not previously paired with the PC, see the [Setup guide](../setup/#3enablebluetoothpairdevices).
 
+**To connect the mobile device to target PC**:
 
-### Connecting the Mobile Device and PC
-
-NOTE:  If the mobile device was not previously paired to the PC before connecting, the user is prompted to pair the mobile device. For pairing instructions, see Post Installation Tasks on page 13.
-
-To connect the mobile device and target PC:
-On the target PC, launch the CartScan PC Wedge application.
-On the mobile device, launch the CartScan application.
-Using the mobile device, scan the barcode displayed on the CartScanPCWedge screen. Once scanned, the mobile device attempts to establish the connection to the PC.
-Figure 22	
-
-
-
+1. On the target PC, launch CartScanPCWedge.
+2. On the mobile device, launch the CartScan app.
+3. Using the mobile device, scan the barcode displayed on the CartScanPCWedge screen. Once scanned, the mobile device attempts to establish the connection to the PC.
 
 <img alt="" style="height:350px" src="figure_22.png"/>
-_Connecting Screen_
+_Connecting screen and instructions on PC_
 <br>
 
+### Using CartScan
 
-1:21 PM
-Profile selection icon Connection status
+**To use CartScan**:
 
-Audio/Vibrate toggle buttons
+With the mobile device connected to the target PC:
 
- _	Data scanned/transmit status
-
-
-
-
-Scan button Profile
-
-
-## Using CartScan
-
-To use CartScan:
-
-Ensure the mobile device and target PC are connected.
-Launch the LOB application to receive the intended scan data on the target PC.
-Ensure the LOB application is in the foreground (i.e., visible and in front of any other open applications) on the PC monitor.
-Place the cursor in the target input field of the LOB application to which scanned data should be deposited.
-On the mobile device, select the Profile to be used for the scanning workflow.
-
-
-Figure 23	
-
+1. On the target PC, **launch the "line-of-business" app** intended to receive the scanned data.
+2. **Place the cursor in the target input field** of the LOB app into which scanned data should be deposited.
+3. On the mobile device, **select the Profile** to be used for the scanning workflow.
 <img alt="" style="height:350px" src="figure_23.png"/>
-_Profile Selection_
+_Profile selection_
 <br>
-
-
-Profile selection icon
- 
- 
-
-
-
-Data scanned/transmit status
-
-
-
-
-
-
-Scan the desired workflow barcode(s) using the mobile device. The data scanned by the mobile device displays in the scan data field.
-
-NOTE:  When a barcode is successfully decoded by the mobile device, the scanner beeps or vibrates (if enabled). A beep does not reflect the status of the transmission of the scanned data to the PC.
-
-When data is scanned by the mobile device and received by the PC, the CartScan application displays a green check box under Transmit Status (see Figure 23).
-On the PC, the user should confirm that the data scanned was delivered properly into the target application. For example, if the cursor was moved, the PC was locked, or another application appeared in the foreground (i.e., visible and in front of any other open applications) of the PC, the data cannot populate into the intended input field.
-Acquired data is sent as keystrokes to the PC. The scanned data displays in the Scanned Data field of the application on the mobile device. A green check mark indicates successful transmission of the data to the PC.
-
-
-Figure 24	
-
-
-
-
+4. Scan the desired workflow barcode(s) using the mobile device. <br>Scanned data appears in the "Scanned Data" field:
 <img alt="" style="height:350px" src="figure_24.png"/>
-_Successful Scan_
 <br>
+**NOTE**: When a barcode is successfully decoded by the mobile device, the scanner beeps and/or vibrates (if enabled). **A beep does not reflect successful transmission of the scanned data to the PC**.
+5. **Confirm successful transmission of scanned data** to the PC by looking for a green check mark under "Transmit Status" as seen above. 
+6. **Repeat Steps 4 and 5** until all data is acquired. [See Notes](#notes), below. 
 
+## Notes
 
-To continue scanning data, repeat Step 6 through Step 8. Before scanning, confirm that the mobile device is still connected via Bluetooth to the target PC. If the mobile device goes out of range of the PC or loses connection due to a timeout, a message displays indicating that the mobile device is disconnected from the PC.
-Figure 25	
-
+* If the mobile device goes out of range of the PC or loses connection due to a timeout, a message similar to the one pictured below appears indicating that the mobile device is disconnected from the PC:
 <img alt="" style="height:350px" src="figure_25.png"/>
 _Mobile Device is Disconnected from PC_
 <br>
+* On the PC, the user should periodically confirm that the scanned data is delivered properly to the target application. If the cursor was moved out of the target app, another application appeared in the foreground, or Windows caused the PC to lock, the data will not populate into the intended input field. 
+* If a barcode is scanned without an active connection to the PC, an alert dialog displays and data is not transmitted to the PC. A red “x” indicates the failure. The scanner still beeps or vibrates (if enabled) and the scan data appears in the Mobile Device Scanned Data field only, but not on the PC.
+* The disconnect message may not appear immediately. To re-connect, see Re-Establishing the Bluetooth Connection on page 35.
 
 
-NOTE: The disconnect message may not appear immediately. To re-connect, see Re-Establishing the Bluetooth Connection on page 35.
+Confirm that the mobile device is still connected to the target PC and the cursor is advancing to the desired fields. 
 
 
-If a barcode is scanned without an active connection to the PC, an alert dialog displays and data is not transmitted to the PC. A red “x” indicates the failure. The scanner still beeps or vibrates (if enabled) and the scan data appears in the Mobile Device Scanned Data field only, but not on the PC.
 
 Figure 26	
 
@@ -156,23 +105,6 @@ Follow the instructions to connect the mobile device, displayed below the barcod
 
 Overview
 This chapter provides best practices and troubleshooting for the Zebra CartScan and CartScan PC Wedge applications.
-
-
-## Best Practices
-Zebra strongly recommends that IT administrators, workflow managers (when applicable), and end users follow these suggested best practices.
-Best Practices for IT Administrators and Workflow Managers
-
-NOTE: DO NOT MODIFY CARTSCAN PROFILES FROM WITHIN DATAWEDGE ON THE MOBILE DEVICE.
-
-Create the necessary CartScan Profile(s) required for the end user scanning workflow(s). See Configuring Profiles on page 19.
-
-Use CartScan Profile(s) to test scanning into the target PC-based workflow applications to ensure compatibility and desired behavior.
-
-Create the proper training materials and guidelines for end users on the proper use of CartScan, its features, and functionality. This minimizes errors when scanning with CartScan.
-
-Deploy the CartScan application along with the required end user workflow Profiles to the target mobile devices.
-
-Prior to deploying the mobile devices to the end user, pair each mobile device to each of the targeted end user workstations.
 
 
 ## Best Practices for the End User

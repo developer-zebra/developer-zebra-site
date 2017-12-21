@@ -41,20 +41,20 @@ From the mobile device Home screen, tap  All Apps > CartScan.
 Tap Menu > Profiles:
 
 <img alt="" style="height:350px" src="figure_12.png"/>
-_Default Profile Screen_
+_Default Profile screen_
 <br>
 
 Tap and hold Default:
 
 <img alt="" style="height:350px" src="figure_13.png"/>
-_Edit Profile Screen_
+_Edit Profile screen_
 <br>
 
 
 Tap Edit Profile to view and/or edit the Profile settings as needed.
 
 <img alt="" style="height:350px" src="figure_14.png"/>
-_Default Profile Settings Screen_
+_Default Profile settings screen_
 <br>
 
 

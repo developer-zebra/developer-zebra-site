@@ -1030,11 +1030,11 @@ A sample of the `CartScanConfig.xml` is shown below. This file which can be disp
 		<parm name="AllowProfileEditing" value="true"/>
 		<parm name="RestoreToDefault" value="false"/>
 		<parm name=" BTTimeOut " value="1000"/>
-		<parm name="EnableLogging" value="true"/>
+		<parm name="EnableLogging" value="true"/> //not supported in CartScan 2.1
 			<characteristic type="CartScanProfile">
 				<parm name="ProfileName" value="Default"/>
-				<parm name="AudioMode" value="2"/>
-				<parm name="HapticMode" value="1"/>
+				<parm name="AudioMode" value="2"/> //not supported in CartScan 2.1
+				<parm name="HapticMode" value="1"/> //not supported in CartScan 2.1
 				<parm name="IgnoreSessionTimeout" value="false"/>
 				<parm name="TimeOut" value="2"/>
 				<parm name="BTEnable" value="true"/>
@@ -1050,8 +1050,6 @@ A sample of the `CartScanConfig.xml` is shown below. This file which can be disp
 			</characteristic>
 	</characteristic>
 
-
-**NOTE**: The ability to enable Logging and configure Audio- and Haptic-Mode settings is not supported in the current release.
 
 -----
 

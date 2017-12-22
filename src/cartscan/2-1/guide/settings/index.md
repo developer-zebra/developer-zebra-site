@@ -22,8 +22,11 @@ From the CartScan Home screen, tap Audio and Vibrate switches to set as desired:
 _Configure Audio and Vibrate Options_
 <br>
 
-* **Audio -** controls beep sound played with each successful scan (default = ON)
-* **Vibrate -** controls tactile feedback activated with each successful scan (default = OFF)
+**Feedback Settings**:
+
+**Audio -** controls beep sound played with each successful scan (default = ON)
+
+**Vibrate -** controls tactile feedback activated with each successful scan (default = OFF)
 
 **Note**: These settings apply only to barcodes scanned with CartScan; sounds and feedback settings of other apps and the system are not effected by these controls.
 
@@ -31,7 +34,7 @@ _Configure Audio and Vibrate Options_
 
 ## Configure Profiles
 
-CartScan behavior is controlled by Profiles, which define how acquired data is processed and delivered to a line-of-business (LOB) application. Profiles also can be used to control cursor movement. For example, the addition of a TAB keystroke at the end of an acquired data string moves the cursor to the next field after the data is deposited into the current field. See the [ADF Keystrokes](#adfkeystrokes) section of this page for more information. 
+CartScan behavior is controlled by Profiles, which define how acquired data is processed and delivered to a line-of-business (LOB) application. Profiles also can be used to control cursor movement. For example, the addition of a TAB keystroke at the end of an acquired data string moves the cursor to the next field after the data is deposited into the current field. See the [ADF Keystrokes](#advanceddataformatting) section of this page for more information. 
 
 **IMPORTANT: <u>Do not modify CartScan Profile settings from within DataWedge on the mobile device</u>**. Doing so results in unpredictable CartScan behavior. 
 
@@ -45,26 +48,35 @@ CartScan behavior is controlled by Profiles, which define how acquired data is p
 2. **Tap Menu > Profiles**.<br>
 <img alt="" style="height:350px" src="figure_23.png"/>
 <br>
-3. A list of device Profiles appears.<br>
-**Tap and hold "Default"** (or another Profile to be edited).
+3. The Profiles list appears.<br>
+**Tap and hold "Default"**:
 <img alt="" style="height:350px" src="figure_12.png"/>
 <br>
-4. **Tap "Edit Profile"** to view and/or edit the Default Profile settings as needed:
+4. For Profiles other than "Default," select "Rename" or "Delete" options as needed:
+<img alt="" style="height:350px" src="figure_20.png"/>
+<br>
+4. For editing, **tap "Edit Profile"** to view and/or edit the Profile settings:
 <img alt="" style="height:350px" src="figure_13.png"/>
 <br>
-5. **Configure Profile settings and Data Formating** as required (see below).  
+5. **Configure Profile settings and Data Formating** as required:  
 <img alt="" style="height:350px" src="figure_14.png"/>
 <br>
 
------
+**Profile Settings**:
 
-### Profile Settings
+**Ignore Session Timeout -** maintain the connection indefinitely (or until the user exits the CartScan app or the mobile device moves out of range). **Disabling the session timeout is strongly discouraged**.
 
-* **Ignore Session Timeout -** maintain the connection indefinitely (or until the user exits the CartScan app or the mobile device moves out of range). **Disabling the session timeout is strongly discouraged**.
+**Session Timeout -** sets the length of time (from 1 - 60 minutes) to maintain the Bluetooth connection between the mobile device and the PC during periods of inactivity. **Default = 2 minutes**. Active only when Ignore Session Timeout is disabled.  
 
-* **Session Timeout -** sets the length of time (from 1 - 60 minutes) to maintain the Bluetooth connection between the mobile device and the PC during periods of inactivity. **Default = 2 minutes**. Active only when Ignore Session Timeout is disabled.  
+**Enable/disable BT Output -** provides a measure of security by restricting delivery via Bluetooth of acquired data to the application running on a PC. If this setting is disabled, the scanned data is not delivered to the connected PC.
 
-* **Enable/disable BT Output -** provides a measure of security by restricting delivery via Bluetooth of acquired data to the application running on a PC. If this setting is disabled, the scanned data is not delivered to the connected PC.
+**Profile Notes**: 
+
+* The Default Profile cannot be renamed or deleted
+* **If** `AllowProfileEditing` **option is set to false**:
+ * Profile settings can be viewed but not changed
+ * Rename and Delete options are not available
+* If a Profile is renamed using a name that already exists, an error occurs
 
 -----
 
@@ -74,20 +86,25 @@ Data formatting provides an easy way to append or prepend acquired data with cus
 
 **IMPORTANT: <u>Do not modify CartScan Profile settings from within DataWedge on the mobile device</u>**. Doing so results in unpredictable CartScan behavior. 
 
-* **Enable/disable data formatting -** controls access to Basic or Advanced Data Formatting functions. If Data Formatting is not enabled, scanned data is passed to the LOB application without modification or extra keystrokes.
+**Enable/disable data formatting -** controls access to Basic or Advanced Data Formatting functions. If Data Formatting is not enabled, scanned data is passed to the LOB application without modification or extra keystrokes.
 
 -----
 
 ### Basic Data Formatting
 
-Appends or prepends acquired data with a simple set of values or special keystrokes. 
+Appends or prepends acquired data with a simple set of values and special keystrokes. 
 
-* **Prefix to data -** adds (prepends) the specified character(s) to the beginning of the acquired data before sending.
-* **Suffix to data -** adds (appends) the specified character(s) to the end of the acquired data before sending.
-* **Send as hex -** sends the data in hexadecimal format. For example, if the acquired barcode data is 012345, this option sends the hex equivalent of 303132333435.
-* **Send as Upper Case -** sends the data in all caps. For example, if the acquired barcode data is abcde, this option sends the string of ABCDE. Any selected prefix and/or suffix data also is converted to upper case, as appropriate.
-* **Send TAB key -** appends a TAB character to the processed data.
-* **Send ENTER key -** appends an ENTER character to the processed data.
+**Prefix to data -** adds (prepends) the specified character(s) to the beginning of the acquired data before sending.
+
+**Suffix to data -** adds (appends) the specified character(s) to the end of the acquired data before sending.
+
+**Send as hex -** sends the data in hexadecimal format. For example, if the acquired barcode data is 012345, this option sends the hex equivalent of 303132333435.
+
+**Send as Upper Case -** sends the data in all caps. For example, if the acquired barcode data is abcde, this option sends the string of ABCDE. Any selected prefix and/or suffix data also is converted to upper case, as appropriate.
+
+**Send TAB key -** appends a TAB character to the processed data.
+
+**Send ENTER key -** appends an ENTER character to the processed data.
 
 -----
 
@@ -95,8 +112,9 @@ Appends or prepends acquired data with a simple set of values or special keystro
 
 Append or prepends acquired data with special characters and keystrokes such as functional keys, mouse clicks, spaces and num-lock characters.
 
-* **Prefix ADF Rule -** Can be configured as displayed in the following table. Keys can be selected from the scrolling list without manually entering the details.
-* **Suffix ADF Rule -** Can be configured as displayed in the following table. Keys can be selected from the scrolling list without manually entering the details.
+**Prefix ADF Rule -** Can be configured as displayed in the following table. Keys can be selected from the scrolling list without manually entering the details.
+
+**Suffix ADF Rule -** Can be configured as displayed in the following table. Keys can be selected from the scrolling list without manually entering the details.
 
 **NOTE**: ADF keystrokes are visible only in the LOB application on the PC and not in the CartScan app.
 
@@ -672,7 +690,7 @@ Append or prepends acquired data with special characters and keystrokes such as 
 
 -----
 
-## Unsupported ADF Keystrokes
+### Unsupported ADF Keystrokes
 
 
 <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
@@ -882,170 +900,130 @@ Append or prepends acquired data with special characters and keystrokes such as 
 
 -----
 
-## Import/Export Settings 
+## Mass Deployment
+Once CartScan is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system. Profiles created with CartScan will work on all Zebra [devices that support CartScan](../about/#systemrequirements). 
 
-- IT Administrators Only
-Exporting Profile Settings
-The IT administrator configures and deploys Profiles. Once configured by the IT administrator, Profile settings can be exported (as an XML file) and deployed to other mobile devices.
-To export Profile settings:
+### Export Profiles
+Settings for all the Profiles on a device are saved in a single file called `CartScanConfig.xml`. This file can be exported, distributed and imported onto other devices, where its settings are activated automatically. 
 
-From the mobile device Home screen, tap  All Apps > CartScan.
-Tap      > Profiles.
-Tap     .
+**To export Profile settings**:
 
+1. On the mobile device, locate and **tap the CartScan icon**:
+<img alt="" style="height:350px" src="figure_07.png"/>
+<br>
+2. **Tap Menu > Profiles**.
+<img alt="" style="height:350px" src="figure_23.png"/>
+<br>
+3. From the Profiles screen, **Tap Menu again and Tap the "Export Profile to XML"** option:
 <img alt="" style="height:350px" src="figure_15.png"/>
-_CartScan Profiles Settings Menu_
 <br>
-
-
-Tap Export Profile to XML. Figure 16	
-
+4. **Place checkmark(s) next to the Profile(s) to export**.<br>
+All selected Profiles will appear on the destination device just as they do on the source. 
+**Tap "Export"** when all desired Profiles are selected.
 <img alt="" style="height:350px" src="figure_16.png"/>
-_Export Profiles Screen_
 <br>
-
-
-
-Select one or more Profiles to export, and tap Export.
-
-The Profile(s) selected for export are saved as a single XML file and each Profile has a set of features. If more than one Profile is exported, that same number of Profiles (along with their original Profile names) are available on the target mobile device after that file is imported.
-
-A confirmation screen appears with the path to the Profile XML file:
-
-/sdcard/Android/data/com.symbol.cartscan/CartScan/Export/CartScanConfig.xml 
-
-This file can be viewed in the File Browser on the mobile device.
-
-Figure 17	
-
+5. **Make note of the file path** in the confirmation screen that appears:
 <img alt="" style="height:350px" src="figure_17.png"/>
-_Confirmation Screen_
 <br>
 
+#### Export Notes
 
-Information about the Profile active on the mobile device is not contained in the exported file; an imported Profile must be set as the active Profile either manually or with an intent (See Importing a Profile Remotely on page 26).
+* **The config file is saved in the path**:<br> 
+`/sdcard/Android/data/com.symbol.cartscan/CartScan/Export/CartScanConfig.xml`
+* **The config file can be viewed using the File Browser on the mobile device**.
+* **Exported Profiles are always stored with the following settings by default**:  
+ * `AllowProfileEditing` = true
+ * `RestoreToDefault` = false (see below)
+* **Information about the Profile active on the mobile device is not contained in the exported file**. An imported Profile must be set as the active Profile either manually or with an intent (See [Import Notes](#importnotes), below).
 
-Tap the Home screen icon (  ).
+-----
 
-NOTE: Exported Profiles contain the following settings by default, regardless of how they were configured on the mobile device when exported:
+### Import Profiles
 
-RestoreToDefault = false
-AllowProfileEditing = true
+CartScan configuration (`.xml`) files exported from one mobile device can be imported onto other mobile devices automatically or manually after being pushed to the device using a Mobile Device Management (MDM) system or other means.
 
-Importing Profile Settings
-Profile settings can be imported manually or remotely. Consider the following:
-RestoreToDefault = true in an imported XML file, erases all Profiles on the mobile device, and resets the default Profile to its default values without user confirmation.
-AllowProfileEditing = false in an imported XML file, and prevents modifications to any Profile settings by mobile device user.
-If a Profile of the same name exists on the mobile device as one being imported:
-A user performing a manual import is prompted to replace or cancel.
-An intent-based import replaces the existing Profile.
-An imported Profile is not automatically selected as the active Profile.
+**To manually import a config file already on the device**:
 
-
-Importing a Profile Manually
-The CartScan Profile XML exported from one mobile device can be imported onto other mobile devices automatically or manually after being pushed to the mobile device by an IT administrator or other means.
-To import a Profile settings file that was already pushed to the mobile device:
-From the mobile device Home screen, tap All Apps > CartScan.
-Tap      > Profiles.
-Tap      again.
-
-Figure 18	
-
+1. On the mobile device, locate and **tap the CartScan icon**:
+<img alt="" style="height:350px" src="figure_07.png"/>
+<br>
+2. **Tap Menu > Profiles**.
+<img alt="" style="height:350px" src="figure_23.png"/>
+<br>
+3. From the Profiles screen, **Tap Menu again and Tap the "Import Profile From XML"** option:
 <img alt="" style="height:350px" src="figure_18.png"/>
-_CartScan Profiles Settings Menu_
 <br>
-
-
-Tap Import Profile From XML.
-Navigate to the location of the file being imported and select it.
-For    example,    /storage/emulated/0/Android/data/com.symbol.cartscan/CartScan/Export/CartScanConfig.xml
-
-
-
-Tap Yes on the Import Profile confirmation screen.
-Figure 19	
-
+4. Navigate to the location of the file being imported and select it. For example:<br>
+`/storage/emulated/0/Android/data/com.symbol.cartscan/CartScan/Export/CartScanConfig.xml`<br>
+**Confirm whether to replace the existing Profile** (if so, Tap "Yes"):
 <img alt="" style="height:350px" src="figure_19.png"/>
-_Import Profile Confirmation Screen_
 <br>
+5. **Tap the HOME key** to quit CartScan. 
 
+> **New settings are applied the next time CartScan is launched**. 
 
-Tap the Home screen icon (  ).
-Importing a Profile Remotely
-A Mobile Device Management (MDM) administrator can configure CartScan using intents. For example, the following commands push an XML file to the mobile device and start ConfigIntentService (using activity manager) with the extra value pair of SET_CONFIG_FILE and the config file:
+#### Import Notes
 
+* **When importing an exported Profile, the following default settings are imported**: 
+ * `AllowProfileEditing` = true
+ * `RestoreToDefault` = false
+* **`AllowProfileEditing` controls the ability of a device user to make modifications** to Profile settings of an imported file (default = false).
+* **When `AllowProfileEditing` is set to FALSE, some menu items are disabled. **This can be undone only by deploying a new configuration file with `AllowProfileEditing` set to TRUE**.
+* **`RestoreToDefault` (when true) replaces all existing Profiles on the mobile device** with those of the imported file and resets the default Profile to its default values without user confirmation (default = false). 
+* **Remote configuration and importing a Profile XML file locally do not change the active Profile** unless the `RestoreToDefault` parameter is set to TRUE.
+* **If RestoreToDefault is set to TRUE, the selected Profile replaces ALL existing Profiles** and is set as the default Profile.
+* An imported Profile is not automatically selected as the active Profile.
+* **If RestoreToDefault is set to FALSE, new Profiles are added** to the existing Profiles.
+* If a Profile of the same name exists on the mobile device as one being imported:
+ * A manual import prompts to "Replace "or "Cancel" incoming profile
+ * An intent-based import replaces the existing Profile
+ 
+
+See the [Intents section](#configureintents) for more information about sending and receiving intents.
+
+-----
+
+## Restore Factory Default Settings
+
+To restore CartScan to the factory default settings:
+1. On the mobile device, locate and **tap the CartScan icon**:
+<img alt="" style="height:350px" src="figure_07.png"/>
+<br>
+2. **Tap Menu > Profiles**.
+<img alt="" style="height:350px" src="figure_23.png"/>
+<br>
+3. From the Profiles screen, **Tap Menu again and Tap the "Reset to factory defaults"** option:
+<img alt="" style="height:350px" src="figure_21.png"/>
+<br>
+4. **Tap "Restore" to confirm** resetting the device to factory defaults.
+5. **Tap the HOME key** to quit CartScan. 
+
+> **New settings are applied the next time CartScan is launched**. 
+
+-----
+
+### Remote Deployment
+
+A Mobile Device Management (MDM) administrator can configure CartScan settings on a device using intents. For example, the following commands push an XML file to the mobile device and start `ConfigIntentService` (using Activity Manager) with the intent extra value pair of `SET_CONFIG_FILE` and  `CartScanConfig.xml` config file itself:
+
+#### Example
 	:::term
 	adb push CartScanConfig.xml /sdcard/
 	adb shell am startservice -a com.symbol.cartscan.ConfigIntentService -e SET_CONFIG_FILE “/sdcard/CartScanConfig.xml”
 
+**To deploy a `CartScanConfig.xml` file**:
 
-CartScan Profile settings in an XML file can be configured after export from a mobile device by an administrator or by an MDM tool. Once settings are configured as desired, deploy the file using the following process:
+1. **Push the config file to** `/sdcard` on the mobile device.
+2. **Send intent to** `com.symbol.cartscan.ConfigIntentService` with the XML file path.
+3. **Tap the HOME key** to quit CartScan. 
 
-Push the XML to /sdcard on the mobile device.
+> **New settings are applied the next time CartScan is launched**. 
 
-Send intent to com.symbol.cartscan.ConfigIntentService with the XML file path.
+-----
 
-For more information about sending and receiving intents, see Configuring Intents on page 30.
+## Sample CartScan Config File
 
-Close and restart CartScan.
-
-Settings are applied the next time CartScan launches.
-
-NOTE:  When AllowProfileEditing is set to FALSE, some menu items are disabled. This can be undone only by deploying a new configuration file with AllowProfileEditing set to true.
-
-Remote configuration and importing a Profile XML file locally do not change the current selected Profile unless the
-RestoreToDefault parameter is set to TRUE.
-If RestoreToDefault is set to TRUE, the selected Profile is set as the default Profile and replaces ALL existing Profiles.
-If RestoreToDefault is set to FALSE, new Profiles are added to the existing Profiles.
-
-
-
-Editing, Renaming, or Deleting a Profile
-Profile Options
-If AllowProfileEditing is set to false, the user can View Profile settings but cannot make changes, and the Rename and Delete options are not available.
-If a Profile is renamed using a name that already exists, an error results.
-The Default Profile cannot be renamed or deleted.
-To edit, rename or delete a Profile:
-From the mobile device Home screen, tap  All Apps > CartScan.
-Tap      > Profiles.
-Tap and hold the Profile to be edited, renamed, or deleted.
-Select one of the following options and follow the prompts as appropriate for the desired action.
-View Profile
-Edit Profile
-Rename Profile
-Delete Profile
-Figure 20	Profile Options
-
-
-
-
-
-<img alt="" style="height:350px" src="figure_20.png"/>
-
-<br>
-
-
-Restoring to Factory Default Settings
-To restore CartScan to the factory default settings:
-From the mobile device Home screen, tap  All Apps > CartScan.
-Tap	> Profiles.
-Tap	.
-Figure 21	
-
-<img alt="" style="height:350px" src="figure_21.png"/>
-_CartScan Profiles Settings Menu_
-<br>
-
-
-Tap Restore to factory defaults.
-Tap the Home screen icon (	).
-
-
-
-
-CartScanConfig.xml Example
-The following screen shows the CartScanConfig.xml file which can be displayed on the mobile device or viewed on the PC using Notepad.
-
+A sample of the `CartScanConfig.xml` is shown below. This file which can be displayed on the mobile device and viewed or edited on the PC using an ordinary text editor. 
 
 	<wap-provisioningdoc>
 	<characteristic type="CartScan" version="1.0">
@@ -1073,23 +1051,33 @@ The following screen shows the CartScanConfig.xml file which can be displayed on
 	</characteristic>
 
 
-NOTE: Enable Logging, Audio Mode, and Haptic Mode settings are not configurable in the current release.
+**NOTE**: The ability to enable Logging and configure Audio- and Haptic-Mode settings is not supported in the current release.
 
+-----
 
-Configuring Intents
+## Configure Intents
+
 Sending an Intent
+
 An administrator or MDM solution can deploy a new CartScan configuration by sending an Intent with the following values:
-Intent Type - StartService
-Package Name - com.symbol.cartscan
-Class Name - com.symbol.cartscan.ConfigIntentService
-Extras:
-SET_CONFIG_FILE: Configuration XML string.
-Example
-Intent AdminStartServiceIntent = new Intent(); AdminStartServiceIntent.setComponent(new    ComponentName("com.symbol.cartscan", "com.symbol.cartscan.ConfigIntentService"));
-AdminStartServiceIntent.putExtra("SET_CONFIG_FILE", "<PATH TO CARTSCAN XML CONFIGURATION>");
-startService(AdminStartServiceIntent);
-Receiving an Intent
-When the processing completes (or if an error occurs during processing), a Broadcast Intent is sent to any MDM application that is registered for the com.symbol.cartscan.RESPONSE intent.
+
+* **Intent Type -** StartService
+* **Package Name -** com.symbol.cartscan
+* **Class Name -** com.symbol.cartscan.ConfigIntentService
+
+**Extras**:
+
+* **SET_CONFIG_FILE**: Configuration XML string
+
+#### Example
+
+	:::java
+	Intent AdminStartServiceIntent = new Intent(); AdminStartServiceIntent.setComponent(new    ComponentName("com.symbol.cartscan", "com.symbol.cartscan.ConfigIntentService"));
+	AdminStartServiceIntent.putExtra("SET_CONFIG_FILE", "<PATH TO CARTSCAN XML CONFIGURATION>");
+	startService(AdminStartServiceIntent);
+
+##### Receiving an Intent
+When the processing completes (or if an error occurs during processing), a Broadcast Intent is sent to any MDM application that is registered for the `com.symbol.cartscan.RESPONSE` intent.
 
 Example:
 

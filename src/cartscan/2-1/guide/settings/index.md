@@ -1059,9 +1059,9 @@ Sending an Intent
 
 An administrator or MDM solution can deploy a new CartScan configuration by sending an Intent with the following values:
 
-* **Intent Type -** StartService
-* **Package Name -** com.symbol.cartscan
-* **Class Name -** com.symbol.cartscan.ConfigIntentService
+* **Intent Type -** `StartService`
+* **Package Name -** `com.symbol.cartscan`
+* **Class Name -** `com.symbol.cartscan.ConfigIntentService`
 
 **Extras**:
 

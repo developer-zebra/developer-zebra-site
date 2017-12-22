@@ -38,7 +38,7 @@ After processing a software order, Zebra Software Distribution Services emails a
 <br>
 4. **Click Next** to proceed to the "Select Installation Folder" screen. 
 5. **Specify the installation folder** or click Browse and navigate to the desired folder. 
-6. **Optional**: Select "Disk Cost..." to view the drives to which you can install Zebra CartScanPCWedge, along with available and required storage on each drive. Make desired selections and click "OK" to exit Disk Cost screen.
+6. **Optional**: Select "Disk Cost..." to view the drives onto which CartScanPCWedge can be installed, along with available and required storage for each. Make desired selections and click "OK" to exit Disk Cost screen.
 7. **Specify for whom to install** ZebraCartScanPCWedge ("Everyone" or "Just me"). 
 8. **Click "Next" when finished** making selections:
 <img alt="" style="height:350px" src="figure_02.png"/>
@@ -114,14 +114,15 @@ _Pair mobile device to PC_
 
 ## Admin Best Practices
 
-> **Zebra strongly recommends following these suggested best practices**:
+#### Zebra strongly recommends the following best practices for a seamless user experience.  
 
-1. **DO NOT MODIFY CARTSCAN PROFILES FROM WITHIN DATAWEDGE ON THE MOBILE DEVICE**. Doing so will result in unpredictable CartScan behavior. 
-2. **Create all necessary CartScan Profile(s) for the end-user scanning workflow(s)**. See [Settings page](../settings) for details.
-3. **Before deployment, always test CartScan Profile(s)** with the intended line-of-business application(s) to ensure compatibility and desired behavior.
-4. **Create the end-user training materials and guidelines** for proper use of CartScan, its features and functions. This minimizes errors when scanning with CartScan.
-5. **Deploy workflow Profiles along with the CartScan app** when staging target mobile devices.
-6. **Pair each mobile device to its intended end-user workstation** prior to deployment to end users.  
+1. **IMPORTANT: <u>Do not modify CartScan Profile settings from within DataWedge on the mobile device</u>**. Doing so will result in unpredictable CartScan behavior. 
+2. **Analyze end-user scanning workflows and create the necessary CartScan Profile(s) in advance**. See [Settings page](../settings) for details.
+3. **Before deployment, test CartScan Profile(s)** with the intended line-of-business application(s) to ensure compatibility and desired behavior.
+4. **Conduct workflow testing with an end-user representative**, if possible,  
+5. **Create the end-user training materials and guidelines** for proper use of CartScan, its features and functions. This minimizes errors when putting CartScan into use.
+6. When staging target mobile devices, **always deploy workflow Profiles along with the CartScan app**.
+7. **Pair each mobile device to its intended end-user workstation** prior to deployment to end users.  
 
 -----
 

@@ -13,87 +13,98 @@ This section explains how to configure audio and vibrate options of the device, 
 
 ## Audio and Vibrate Options
 
-CartScan provides control over audio and tactile feedback to indicate each successful scan. For example, audio can be disabled on the mobile device so as not to disturb patients. **These settings apply only to barcodes scanned with CartScan; device sounds and feedback settings of other apps are not effected**.  
+CartScan provides control over audio and tactile feedback to indicate each successful scan. This allows audio feedback, for example, to be disabled on the mobile device so as not to disturb patients. The CartScan Home screen displays ON/OFF switches to set audio and vibration feedback when scanning. 
 
 **To configure the audio and vibrate options**:
 
-1. From the mobile device Home screen, tap All Apps > CartScan. 
-
-When CartScan launches, the Home screen displays ON/OFF toggle switches to set audio and vibrate when scanning. Tap a switch to change its setting.
-
-* **Audio -** controls beep sound played with each successful scan (default = ON)
-* **Vibrate -** controls tactile feedback activated with each successful scan (default = OFF)
-
+From the CartScan Home screen, tap Audio and Vibrate switches to set as desired: 
 <img alt="" style="height:350px" src="figure_11.png"/>
 _Configure Audio and Vibrate Options_
 <br>
 
+* **Audio -** controls beep sound played with each successful scan (default = ON)
+* **Vibrate -** controls tactile feedback activated with each successful scan (default = OFF)
+
+**Note**: These settings apply only to barcodes scanned with CartScan; sounds and feedback settings of other apps and the system are not effected by these controls.
+
 -----
 
-## Configuring Profiles
+## Configure Profiles
 
-CartScan behavior is controlled by Profiles, which define how acquired data is processed and delivered to a line of business (LOB) application.
-Viewing/Editing the Default Profile
+CartScan behavior is controlled by Profiles, which define how acquired data is processed and delivered to a line-of-business (LOB) application. Profiles also can be used to control cursor movement. For example, the addition of a TAB keystroke at the end of an acquired data string moves the cursor to the next field after the data is deposited into the current field. See the [ADF Keystrokes](#adfkeystrokes) section of this page for more information. 
 
-To view/edit a Profile:
-From the mobile device Home screen, tap  All Apps > CartScan.
+**IMPORTANT: <u>Do not modify CartScan Profile settings from within DataWedge on the mobile device</u>**. Doing so results in unpredictable CartScan behavior. 
 
-Tap Menu > Profiles:
+-----
 
+**To view/edit a Profile**:
+
+1. On the mobile device, locate and **tap the CartScan icon**:
+<img alt="" style="height:350px" src="figure_07.png"/>
+<br>
+2. **Tap Menu > Profiles**.<br>
+<img alt="" style="height:350px" src="figure_23.png"/>
+<br>
+3. A list of device Profiles appears.<br>
+**Tap and hold "Default"** (or another Profile to be edited).
 <img alt="" style="height:350px" src="figure_12.png"/>
-_Default Profile screen_
 <br>
-
-Tap and hold Default:
-
+4. **Tap "Edit Profile"** to view and/or edit the Default Profile settings as needed:
 <img alt="" style="height:350px" src="figure_13.png"/>
-_Edit Profile screen_
 <br>
-
-
-Tap Edit Profile to view and/or edit the Profile settings as needed.
-
+5. **Configure Profile settings and Data Formating** as required (see below).  
 <img alt="" style="height:350px" src="figure_14.png"/>
-_Default Profile settings screen_
 <br>
 
+-----
 
+### Profile Settings
 
-Profile Settings
-Session Timeout
+* **Ignore Session Timeout -** maintain the connection indefinitely (or until the user exits the CartScan app or the mobile device moves out of range). **Disabling the session timeout is strongly discouraged**.
 
-WARNING:  Disabling Session Timeout is strongly discouraged.
+* **Session Timeout -** sets the length of time (from 1 - 60 minutes) to maintain the Bluetooth connection between the mobile device and the PC during periods of inactivity. **Default = 2 minutes**. Active only when Ignore Session Timeout is disabled.  
 
-Ignore Session Timeout - Select this option to maintain the connection indefinitely (or until the user exits the CartScan app or the mobile device moves out of range).
-Session Timeout - Enter a timeout period value from 1 to 60 minutes. The default is 2 minutes. This option enables the system administrator to configure the length of time to maintain the Bluetooth connection between the mobile device and the PC during periods of inactivity.
-Bluetooth Output
-Enable/disable BT Output - This option provides a measure of security by restricting delivery of acquired data to the application running on a PC. If this setting is disabled, the scanned data is not delivered to the connected PC.
-Data Formatting
+* **Enable/disable BT Output -** provides a measure of security by restricting delivery via Bluetooth of acquired data to the application running on a PC. If this setting is disabled, the scanned data is not delivered to the connected PC.
+
+-----
+
+### Data Formatting
+
 Data formatting provides an easy way to append or prepend acquired data with custom values or keystrokes before passing it to the LOB application on the PC. This can be useful for adding application-specific characters to acquired data or for sending an ENTER and/or TAB character after submitting the data to advance the cursor to the next field.
 
-NOTE: Do not use Data Formatting in Zebra DataWedge Profile settings for CartScan. Modifying the basic data formatting and/or the advanced data formatting results in conflicts with the Zebra CartScan application.
+**IMPORTANT: <u>Do not modify CartScan Profile settings from within DataWedge on the mobile device</u>**. Doing so results in unpredictable CartScan behavior. 
 
-Enable/disable data formatting - Enable Data Formatting to access Basic or Advanced Data Formatting functions. If Data Formatting is not enabled, scanned data is passed to the app without modification or extra keystrokes.
+* **Enable/disable data formatting -** controls access to Basic or Advanced Data Formatting functions. If Data Formatting is not enabled, scanned data is passed to the LOB application without modification or extra keystrokes.
 
+-----
 
-Basic Data Formatting
-Basic Data Formatting provides an easy way to append or prepend acquired data with custom values or special keystrokes. The supported options are:
-Prefix to data - adds (prepends) the specified character(s) to the beginning of the acquired data before sending.
-Suffix to data - adds (appends) the specified character(s) to the end of the acquired data before sending.
-Send as hex - sends the data in hexadecimal format. For example, if the acquired barcode data is 012345, this option sends the hex equivalent of 303132333435.
-Send as Upper Case - sends the data in all caps. For example, if the acquired barcode data is abcde, this option sends the string of ABCDE. Any selected prefix and/or suffix data is also converted to upper case (if appropriate).
-Send TAB key - appends a TAB character to the processed data.
-Send ENTER key - appends an ENTER character to the processed data.
-Advanced Data Formatting
-Advanced Data Formatting can append or pre-pend acquired data with special characters and keystrokes such as functional keys, mouse clicks, spaces and num-lock characters.
-Prefix ADF Rule - Can be configured as displayed in the following table. Keys can be selected from the scrolling list without manually entering the details.
-Suffix ADF Rule - Can be configured as displayed in the following table. Keys can be selected from the scrolling list without manually entering the details.
+### Basic Data Formatting
 
-NOTE:  ADF keystrokes are visible only in the LOB application on the PC and not in the CartScan app.
+Appends or prepends acquired data with a simple set of values or special keystrokes. 
 
+* **Prefix to data -** adds (prepends) the specified character(s) to the beginning of the acquired data before sending.
+* **Suffix to data -** adds (appends) the specified character(s) to the end of the acquired data before sending.
+* **Send as hex -** sends the data in hexadecimal format. For example, if the acquired barcode data is 012345, this option sends the hex equivalent of 303132333435.
+* **Send as Upper Case -** sends the data in all caps. For example, if the acquired barcode data is abcde, this option sends the string of ABCDE. Any selected prefix and/or suffix data also is converted to upper case, as appropriate.
+* **Send TAB key -** appends a TAB character to the processed data.
+* **Send ENTER key -** appends an ENTER character to the processed data.
 
-## Supported ADF Keystrokes
+-----
 
+### Advanced Data Formatting
+
+Append or prepends acquired data with special characters and keystrokes such as functional keys, mouse clicks, spaces and num-lock characters.
+
+* **Prefix ADF Rule -** Can be configured as displayed in the following table. Keys can be selected from the scrolling list without manually entering the details.
+* **Suffix ADF Rule -** Can be configured as displayed in the following table. Keys can be selected from the scrolling list without manually entering the details.
+
+**NOTE**: ADF keystrokes are visible only in the LOB application on the PC and not in the CartScan app.
+
+-----
+
+### Supported ADF Keystrokes
+
+**Only the Advanced Data Formatting options listed <u>in this table</u> are supported**.
 
 <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
  style='margin-left:59.7pt;border-collapse:collapse'>
@@ -657,10 +668,9 @@ NOTE:  ADF keystrokes are visible only in the LOB application on the PC and not 
  </tr>
 </table>
 
-**Although the CartScan app lists additional Advanced Data Formatting options, only those listed in this table are supported**.
+**Only the Advanced Data Formatting options listed <u>in the table above</u> are supported**.
 
 -----
-
 
 ## Unsupported ADF Keystrokes
 
@@ -1076,7 +1086,7 @@ Extras:
 SET_CONFIG_FILE: Configuration XML string.
 Example
 Intent AdminStartServiceIntent = new Intent(); AdminStartServiceIntent.setComponent(new    ComponentName("com.symbol.cartscan", "com.symbol.cartscan.ConfigIntentService"));
-AdminStartServiceIntent.putExtra("SET_CONFIG_FILE", "<YOUR CARTSCAN XML CONFIGURATION PATH ON DEVICE>");
+AdminStartServiceIntent.putExtra("SET_CONFIG_FILE", "<PATH TO CARTSCAN XML CONFIGURATION>");
 startService(AdminStartServiceIntent);
 Receiving an Intent
 When the processing completes (or if an error occurs during processing), a Broadcast Intent is sent to any MDM application that is registered for the com.symbol.cartscan.RESPONSE intent.

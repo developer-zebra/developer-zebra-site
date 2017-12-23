@@ -1021,9 +1021,9 @@ A Mobile Device Management (MDM) administrator can configure CartScan settings o
 
 -----
 
-## Sample CartScan Config File
+## Sample Config File
 
-A sample of the `CartScanConfig.xml` is shown below. This file which can be displayed on the mobile device and viewed or edited on the PC using an ordinary text editor. 
+A sample of the `CartScanConfig.xml` is shown below. This file can be displayed on the mobile device and viewed or edited on a PC using an ordinary text editor. **Note**: Some parameters (as indicated) are not supported in CartScan 2.1. 
 
 	<wap-provisioningdoc>
 	<characteristic type="CartScan" version="1.0">
@@ -1055,9 +1055,9 @@ A sample of the `CartScanConfig.xml` is shown below. This file which can be disp
 
 ## Configure Intents
 
-Sending an Intent
+A new CartScan configuration can be pushed to a device by sending an intent with the following values:
 
-An administrator or MDM solution can deploy a new CartScan configuration by sending an Intent with the following values:
+### Sending an Intent
 
 * **Intent Type -** `StartService`
 * **Package Name -** `com.symbol.cartscan`
@@ -1074,27 +1074,30 @@ An administrator or MDM solution can deploy a new CartScan configuration by send
 	AdminStartServiceIntent.putExtra("SET_CONFIG_FILE", "<PATH TO CARTSCAN XML CONFIGURATION>");
 	startService(AdminStartServiceIntent);
 
-##### Receiving an Intent
-When the processing completes (or if an error occurs during processing), a Broadcast Intent is sent to any MDM application that is registered for the `com.symbol.cartscan.RESPONSE` intent.
 
-Example:
+-----
 
+### Receiving an Intent
+
+When the processing completes (or if an error occurs during processing), a Broadcast intent is sent, and can be received by any app registered using the `com.symbol.cartscan.RESPONSE` receiver with the following values: 
+
+* **Intent Type -** `Broadcast`
+* **Action Name -** `com.symbol.cartscan.RESPONSE`
+
+**Extras**:
+
+* **STATUS**: Pass or Fail
+* **ERROR_MESSAGE**: Error Message
+* **CONFIG_XML**: Configuration XML string
+
+#### Example
+
+	:::Java
 	<intent-filter>
 	<action android:name="com.symbol.cartscan.RESPONSE"/>
-	</intent-filter.
+	</intent-filter
 
-**Intent Type -** `Broadcast`
-**Action Name -** `com.symbol.cartscan.RESPONSE`
 
-Extras:
-
-**STATUS**: Pass or Fail
-
-**ERROR_MESSAGE**: Error Message
-
-**CONFIG_XML**: Configuration XML string
-
-Example:
 
 		:::Java
 		public void onReceive(Context context, Intent intentReceived) {

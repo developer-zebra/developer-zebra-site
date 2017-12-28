@@ -1023,18 +1023,18 @@ A Mobile Device Management (MDM) administrator can configure CartScan settings o
 
 ## Sample Config File
 
-A sample of the `CartScanConfig.xml` is shown below. This file can be displayed on the mobile device and viewed or edited on a PC using an ordinary text editor. **Note**: Some parameters (as indicated) are not supported in CartScan 2.1. 
+A sample of the `CartScanConfig.xml` is shown below. This file can be displayed on the mobile device and viewed or edited on a PC using an ordinary text editor. **Note: The CartScan 2.1 parameters indicated below cannot be controlled remotely through the config file**. 
 
 	<wap-provisioningdoc>
 	<characteristic type="CartScan" version="1.0">
 		<parm name="AllowProfileEditing" value="true"/>
 		<parm name="RestoreToDefault" value="false"/>
 		<parm name=" BTTimeOut " value="1000"/>
-		<parm name="EnableLogging" value="true"/> //not supported in CartScan 2.1
+		<parm name="EnableLogging" value="true"/> //remote config not supported
 			<characteristic type="CartScanProfile">
 				<parm name="ProfileName" value="Default"/>
-				<parm name="AudioMode" value="2"/> //not supported in CartScan 2.1
-				<parm name="HapticMode" value="1"/> //not supported in CartScan 2.1
+				<parm name="AudioMode" value="2"/> //remote config not supported
+				<parm name="HapticMode" value="1"/> //remote config not supported
 				<parm name="IgnoreSessionTimeout" value="false"/>
 				<parm name="TimeOut" value="2"/>
 				<parm name="BTEnable" value="true"/>
@@ -1063,14 +1063,16 @@ A new CartScan configuration can be pushed to a device by sending an intent with
 * **Package Name -** `com.symbol.cartscan`
 * **Class Name -** `com.symbol.cartscan.ConfigIntentService`
 
-**Extras**:
+#### Extras
 
 * **SET_CONFIG_FILE**: Configuration XML string
 
 #### Example
+This code sends an intent to CartScan with the path to the config file on the device.   
 
 	:::java
-	Intent AdminStartServiceIntent = new Intent(); AdminStartServiceIntent.setComponent(new    ComponentName("com.symbol.cartscan", "com.symbol.cartscan.ConfigIntentService"));
+	Intent AdminStartServiceIntent = new Intent(); 
+	AdminStartServiceIntent.setComponent(new ComponentName("com.symbol.cartscan", "com.symbol.cartscan.ConfigIntentService"));
 	AdminStartServiceIntent.putExtra("SET_CONFIG_FILE", "<PATH TO CARTSCAN XML CONFIGURATION>");
 	startService(AdminStartServiceIntent);
 
@@ -1079,18 +1081,19 @@ A new CartScan configuration can be pushed to a device by sending an intent with
 
 ### Receiving an Intent
 
-When the processing completes (or if an error occurs during processing), a Broadcast intent is sent, and can be received by any app registered using the `com.symbol.cartscan.RESPONSE` receiver with the following values: 
+When config file processing is completed (or if an error occurs during processing), a Broadcast intent is sent, and can be received by any app registered using the `com.symbol.cartscan.RESPONSE` receiver with the following values: 
 
 * **Intent Type -** `Broadcast`
 * **Action Name -** `com.symbol.cartscan.RESPONSE`
 
-**Extras**:
+#### Extras
 
 * **STATUS**: Pass or Fail
 * **ERROR_MESSAGE**: Error Message
 * **CONFIG_XML**: Configuration XML string
 
 #### Example
+Register to receive CartScan broadcast intents.  
 
 	:::Java
 	<intent-filter>
@@ -1099,6 +1102,7 @@ When the processing completes (or if an error occurs during processing), a Broad
 
 
 #### Example
+Code for writing the broadcast message to the device log.  
 
 		:::Java
 		public void onReceive(Context context, Intent intentReceived) {

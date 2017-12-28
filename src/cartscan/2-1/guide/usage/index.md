@@ -48,7 +48,7 @@ With the mobile device connected to the target PC:
 ### Usage Notes
 
 * **When a barcode is successfully decoded by the mobile device**, the scanner beeps and/or vibrates (if enabled). 
-* **A <u>beep does <u>not</u> reflect successful transmission</u> of the scanned data to the PC**.
+* **A <u>beep does not reflect successful transmission</u> of the scanned data to the PC**.
 * **Periodically confirm that scanned data is delivered properly** to the target application. 
 * **Data will not populate into the intended input field if**: 
  * The PC cursor moves out of the target app or intended field

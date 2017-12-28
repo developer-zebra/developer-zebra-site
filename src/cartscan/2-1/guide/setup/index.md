@@ -122,11 +122,11 @@ _Pair mobile device to PC_
 
 #### Zebra strongly recommends the following best practices for a seamless user experience.  
 
-1. **IMPORTANT: <u>Do not modify CartScan Profile settings from within DataWedge on the mobile device</u>**. Doing so will result in unpredictable CartScan behavior. 
+1. **IMPORTANT: <u>Do not modify CartScan Profile settings from within DataWedge on the mobile device</u>**.<br>Doing so will result in unpredictable CartScan behavior. 
 2. **Analyze end-user scanning workflows and create the necessary CartScan Profile(s) in advance**. See [Settings page](../settings) for details.
 3. **Before deployment, test CartScan Profile(s)** with the intended line-of-business application(s) to ensure compatibility and desired behavior.
 4. **Conduct workflow testing with an end-user representative**, if possible,  
-5. **Create the end-user training materials and guidelines** for proper use of CartScan, its features and functions. This minimizes errors when putting CartScan into use.
+5. **Create the end-user training materials and guidelines** for proper use of CartScan, its features and functions.<br>This minimizes errors when putting CartScan into use.
 6. When staging target mobile devices, **always deploy workflow Profiles along with the CartScan app**.
 7. **Pair each mobile device to its intended end-user workstation** prior to deployment to end users.  
 

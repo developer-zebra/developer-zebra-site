@@ -1098,6 +1098,7 @@ When the processing completes (or if an error occurs during processing), a Broad
 	</intent-filter
 
 
+#### Example
 
 		:::Java
 		public void onReceive(Context context, Intent intentReceived) {
@@ -1108,4 +1109,11 @@ When the processing completes (or if an error occurs during processing), a Broad
 		Log.d(TAG, "com.symbol.cartscan.RESPONSE: Error msg:" + intentReceived.getStringExtra("ERROR_MESSAGE"));
 		...
 
+-----
+
+## See Also
+
+* [About CartScan](../about)
+* [CartScan Setup Guide](../setup)
+* [CartScan Usage Guide](../usage)
 

@@ -13,7 +13,7 @@ CartScan consists of two components:
 	* **MC40 HC KitKat**
 	* **MC40 HC Lollipop**
 	* **TC51 HC Marshmallow**
-2. The "CartScan PC Wedge" app, supported on Windows PCs with the following components:
+2. The "CartScanPCWedge" app, supported on Windows PCs with the following components:
 	* Windows 7, 8 or 10
 	* Bluetooth 4+ (built-in or dongle) 
 
@@ -21,13 +21,17 @@ CartScan consists of two components:
 
 ### How To Download
 
-1. **[Visit the CartScan download page](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)**
-2. Download the package and install the Android and Windows devices using standard procedures
-3. Proceed to [CartScan set-up](../guide/setup) to continue
+1. **Download CartScan for Android from**: 
+	* [Zebra AppGallery](https://appgallery.zebra.com/showcase/apps/174?type=showcase) **-or-**
+	* [Google Play Store](https://play.google.com/store/apps/details?id=com.symbol.cartscan&hl=en)
+3. **Install the app** using the platform's standard installation procedures.
+4. **Follow instructions emailed from Zebra licensing server** for downloading `CartScanPCWedge.exe`.
+5. **Proceed to the [CartScan Setup Guide](../guide/setup)**.
 
-<!-- 
-### Remote Management
-Enterprise Keyboard can be managed programmatically through [EMDK for Android](../../../../emdk-for-android) development tools or remotely using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service (requires MX 6.3 or higher) or a company's own enterprise mobile management (EMM) system (if supported by that system). 
+-----
 
-See the [Enterprise Keyboard Manager guide](../../../../mx/enterprisekeyboardmgr) for details.
- -->
+## See Also
+
+* [CartScan Setup Guide](../guide/setup)
+* [Administrative Guide](../guide/settings)
+* [CartScan Usage Guide](../guide/usage)

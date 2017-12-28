@@ -40,14 +40,11 @@ If the need is to populate multiple fields with separate pieces of scanned data 
 
 By design, **only one mobile device can be connected with the PC at a time, and the CartScan app can communicate only with PC Wedge**. 
 
+-----
 
-<!-- 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dPzyDFMcJzI" frameborder="0" allowfullscreen></iframe>
- -->
+## See Also
 
-<!-- 
+* [CartScan Setup Guide](../setup)
+* [Administrative Guide](../settings)
+* [CartScan Usage Guide](../usage)
 
-#### Learn more about:
-* [Text correction features](../settings#textcorrection)
-* The "Loadable" [Personal Dictionary](../../../../mx/personaldictionarymgr) 
--->

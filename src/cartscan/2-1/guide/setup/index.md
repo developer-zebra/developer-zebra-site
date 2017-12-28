@@ -56,7 +56,14 @@ CartScanPCWedge installation is complete.
 
 ### 2. Install on Mobile Device
 
-**Instructions for downloading and installing CartScan are emailed to the customer contact** provided to Zebra Software Distribution Services along with the original software order. The `CartScan.apk` installer package can be downloaded from [Zebra AppGallery](https://appgallery.zebra.com/home) or from the [Google Play Store](https://play.google.com/store?hl=en) and installed using the standard procedure. 
+**Instructions for downloading and installing CartScan are emailed to the customer contact** provided to Zebra Software Distribution Services along with the original software order. 
+
+**CartScan (`CartScan.apk`) can be downloaded from**:
+
+* [Zebra AppGallery](https://appgallery.zebra.com/showcase/apps/174?type=showcase) 
+* [Google Play Store](https://play.google.com/store/apps/details?id=com.symbol.cartscan&hl=en)
+
+CartScan for Android is installed on the device using standard installation procedures. 
 
 -----
 
@@ -70,7 +77,6 @@ Before using the CartScan solution for the first time, the PC and mobile device 
 2. **Run the CartScanPCWedge** shortcut from the desktop or click Start > All Programs > Zebra CartScan PC Wedge > CartScanPCwedge.<br> Instructions appear for connecting the mobile device, including a barcode to scan. 
 <img alt="" style="height:185px" src="figure_05.png"/>
 <br>
-
 3. After running CartScanPCWedge, **skip to the mobile device instructions**.
 <img alt="" style="height:350px" src="figure_06.png"/>
 _PC screen for pairing with a mobile device_
@@ -144,3 +150,12 @@ _Pair mobile device to PC_
 2. **Tap "CartScan"**
 3. **Tap "UNINSTALL"**
 4. **Tap "OK" to confirm**
+
+-----
+
+## See Also
+
+* [About CartScan](../about)
+* [Administrative Guide](../settings)
+* [CartScan Usage Guide](../usage)
+

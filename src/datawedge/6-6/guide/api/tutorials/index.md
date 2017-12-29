@@ -1,48 +1,63 @@
 ---
-title: DataWedge Intent Example 1
+title: DataWedge Intent Example
 layout: guide.html
 product: DataWedge
 productversion: '6.6'
 ---
 
 ## Overview
-This tutorial includes a simplified application that shows how to use the DataWedge service on Zebra mobile computing devices to receive scanned barcode data via an intent. 
+This example includes a simplified application that shows how to use the DataWedge service on Zebra mobile computing devices to receive scanned barcode data via an intent. 
+
+-----
 
 ### Configure DataWedge
 
 **Configure DataWedge to output scans via intent**: 
 
-1. **Launch DataWedge** via Applications --> DataWedge
-2. **Select a Profile** (the example uses "Profile0 (default)")
-3. **Confirm the following Profile settings**:
-  * The Profile is enabled
-  * Barcode input is enabled
-  * Intent output is enabled
-4. Configure the intent output as follows:
-  * Intent action: com.dwexample.ACTION (This matches the value defined at https://github.com/darryncampbell/DataWedge-Intent-Example-1/blob/master/app/src/main/res/values/strings.xml)
-  * Intent category: leave blank
-  * Intent delivery: Broadcast intent
-  * The following image shows the Intent output configuration
-  
-![Datawedge Configuration](https://raw.githubusercontent.com/darryncampbell/DataWedge-Intent-Example-1/master/screenshots/datawedge_settings.png?raw=true)
+&#49;. **Launch DataWedge** via Applications --> DataWedge
+
+&#50;. **Select a Profile** (Profile0 is used by DataWedge for all apps not explicitly assigned a Profile)
+
+&#51;. Confirm the following **Profile settings**:
+  * The Profile is **enabled**
+  * Barcode input is **enabled**
+  * Intent output is **enabled**
+
+&#52;. **Configure the intent output** as follows:
+  * Intent action: **com.dwexample.ACTION** (to match value defined in [strings.xml](https://github.com/darryncampbell/DataWedge-Intent-Example-1/blob/master/app/src/main/res/values/strings.xml))
+  * Intent category: (**leave blank**)
+  * Intent delivery: **Broadcast intent**
+
+The image below shows the correct Profile settings:
+  ![Datawedge Configuration](datawedge_settings.png)
+
+-----
 
 ### Run Application
 
-Launch the application
+&#49;. Visit the [project page](https://github.com/darryncampbell/DataWedge-Intent-Example-1) and download, build and launch the sample app. 
+<br>
 
-![Application](https://raw.githubusercontent.com/darryncampbell/DataWedge-Intent-Example-1/master/screenshots/application_before_scan.png?raw=true)
+&#50;. **Upon first launch**, a screen appears similar to the image below: 
+![Application_before](application_before_scan.png)
+<br>
 
-Scan a barcode.  The read barcode should be shown on the UI
+&#51;. **After scanning a barcode**, fields are populated as pictured below:
+![Application_after](application_after_scan.png)
+<br>
 
-![Application](https://raw.githubusercontent.com/darryncampbell/DataWedge-Intent-Example-1/master/screenshots/application_after_scan.png?raw=true)
-
-Here's [the whole project](https://github.com/darryncampbell/DataWedge-Intent-Example-1)
+-----
 
 ## Source Code
-Below is the sourcecode for the sample app described above. For the `build.gradle` and other resources, see the [entire project on github](https://github.com/darryncampbell/DataWedge-Intent-Example-1).
+Below is the sourcecode for the main activity of the sample app. <br>
+For the `build.gradle` and other resources, visit the [app's project page on github](https://github.com/darryncampbell/DataWedge-Intent-Example-1).
 
 
 		:::java
+		//
+		// WARNING: This app is for demonstration purposes only.
+		// It is not intended for use in a production environment
+		//
 		package com.darryncampbell.datawedgeintentexample1;
 
 		import android.content.BroadcastReceiver;
@@ -103,8 +118,7 @@ Below is the sourcecode for the sample app described above. For the `build.gradl
 	                    displayScanResult(intent, "via Broadcast");
 	                } catch (Exception e) {
 	                    //
-	                    // Catch if the UI does not exist when we receive the broadcast... 
-	                    // This app is not designed to be used in production
+	                    // Catch if the UI does not exist when broadcast is received 
 	                    //
 	                }
 	            }

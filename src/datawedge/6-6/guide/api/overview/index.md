@@ -12,6 +12,8 @@ In DataWedge versions prior to 6.2, applications access DataWedge APIs by broadc
 
 To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
 
+Also see this [sample DataWedge app](../tutorials) that shows how to receive scanned barcode data via an intent.
+
 -----
 
 ### Requirements

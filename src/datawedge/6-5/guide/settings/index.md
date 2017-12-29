@@ -276,7 +276,7 @@ DataWedge supports remote deployment of Config files (`datawedge.db`) and Profil
 While DataWedge is running, it receives a system notification whenever a Config file or Profile is placed in the `/autoimport` folder and executes the same four functions. 
 
 **Notes**:
-* For the best experience, **Zebra strongly recommends that users be advised to exit DataWedge** before new Config files are remotely deployed. 
+* For the best experience, **Zebra strongly recommends that users be advised to <u>exit any DataWedge configuration UI screen</u>** before new Config files are remotely deployed. 
 * On devices running Android KitKat or later, the `/enterprise` folder cannot be seen with File Explorer or other user-level tools. Moving configuration files to and from the `/autoimport` or `/enterprisereset` folders must be done programmatically, with a staging client app or MDM.
 * DataWedge will attempt to consume any of the monitored “.db” files as soon the file name(s) appear in the `/autoimport` folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, Zebra recommends initially storing the file with an alternate extension (i.e. ".tmp") and changing the extension to .db once writing is complete. See sample code, below. 
 * **Zebra recommends applying explicit file permissions to the all .db files** so that DataWedge will not be impeded from any of its file procedures.

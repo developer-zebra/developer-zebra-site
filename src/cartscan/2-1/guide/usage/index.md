@@ -22,8 +22,10 @@ CartScan uses Bluetooth to turn a [supported Zebra mobile device](../about/#supp
 3. Using the mobile device, scan the barcode displayed on the CartScanPCWedge screen. Once scanned, the mobile device attempts to establish the connection to the PC.
 
 <img alt="" style="height:350px" src="figure_22.png"/>
-_The connecting screen and instructions on PC_
+_The connecting screen during (left) and after pairing with PC_
 <br>
+
+-----
 
 ### Using CartScan
 
@@ -126,7 +128,7 @@ Users of Zebra CartScan and CartScanPCWedge applications should have proper trai
 * **Possible cause**: BT output is disabled
 * **Solution**: Request an IT administrator to check the [Profile Settings](../settings/#configureprofiles) to ensure that "Enable/disable BT Output" is enabled
 * **Possible cause**: The mobile device is out of range, has timed out or otherwise lost connection to the PC
-* **Solution**: See [Lost Connection](#lostconnection)
+* **Solution**: See [Reconnecting the Device](#reconnectingthedevice)
 
 -----
 
@@ -137,7 +139,7 @@ Users of Zebra CartScan and CartScanPCWedge applications should have proper trai
 	* Device or PC has moved out of Bluetooth range (about 25 feet)
 	* RF interference is blocking the Bluetooth signal 
 	* Another user disconnected CartScan from the target PC
-* **Solution**: Rescan the pairing barcode as explained in [Reconnecting the Device](#reconnectingthedevice) section
+* **Solution**: See [Reconnecting the Device](#reconnectingthedevice) to rescan the pairing barcode
 
 -----
 
@@ -153,7 +155,7 @@ Users of Zebra CartScan and CartScanPCWedge applications should have proper trai
 ### Unexpected Characters in Data
 
 * **Possible cause**: Prefix or suffix data is being added by the selected Profile
-* **Solution**: Request an IT administrator to check the profile's data formatting settings in the [Profile Settings guide](../settings/#basicdataformatting) 
+* **Solution**: Request an IT administrator to check the profile's [data formatting settings](../settings/#basicdataformatting) 
 
 -----
 

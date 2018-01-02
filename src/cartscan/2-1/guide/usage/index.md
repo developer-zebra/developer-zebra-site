@@ -9,6 +9,8 @@ productversion: '2.1'
 
 CartScan uses Bluetooth to turn a [supported Zebra mobile device](../about/#supporteddevices) into a wireless barcode scanner, sending collected data as keystrokes to a nearby computer running a line-of-business application. CartScan was initially developed for health care workers, but has applications in warehouse, transportation, logistics and numerous other industries. 
 
+-----
+
 ### Connecting PC to Mobile Device
 
 **NOTE**: If the mobile device was not previously paired with the PC, see the [Setup guide](../setup/#3enablebluetoothpairdevices).
@@ -20,7 +22,7 @@ CartScan uses Bluetooth to turn a [supported Zebra mobile device](../about/#supp
 3. Using the mobile device, scan the barcode displayed on the CartScanPCWedge screen. Once scanned, the mobile device attempts to establish the connection to the PC.
 
 <img alt="" style="height:350px" src="figure_22.png"/>
-_Connecting screen and instructions on PC_
+_The connecting screen and instructions on PC_
 <br>
 
 ### Using CartScan
@@ -70,10 +72,9 @@ _Disconnect messages might not appear immediately_
 When CartScanPCWedge launches, the UI screen displays the Bluetooth connection barcode, the status of the connection and instructions to pair and connect a mobile device with the PC. When minimized, the CartScanPCWedge app continues to run in the background, and quits only after "Exit CartScan" is selected from its system tray icon. To restore the UI or change its settings, click the CartScan icon from the system tray.
 
 <img alt="" style="height:350px" src="figure_27.png"/>
-_CartScan PC Wedge System Tray_
 <br>
 
-**CartScanPC Wedge functions**:
+#### CartScanPCWedge functions:
 
 **BT Mac**:	Displays the Bluetooth MAC address of the PC.
 
@@ -85,7 +86,7 @@ _CartScan PC Wedge System Tray_
 
 **Disconnect From Device -** severs the connection between the PC and the currently connected device. Use this feature to take one device out of service and connect with another.
 
-**Exit CartScan -** Quits CartScanPCWedge and the CartScan service, and disconnects the PC from the currently connected mobile device. Select this option when scanning is no longer required on the PC. To re-launch, double-click the CartScanPCWedge icon (or `CartScanPCwedge.exe`) from the desktop or Start menu.
+**Exit CartScan -** Quits CartScanPCWedge, stops the CartScan service and disconnects the PC from the currently connected mobile device. Select this option when scanning is no longer required on the PC. To re-launch, double-click the CartScanPCWedge icon (or `CartScanPCwedge.exe`) from the desktop or Start menu.
 
 **About -**	Displays CartScanPCWedge version information.
 

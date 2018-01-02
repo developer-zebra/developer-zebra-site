@@ -22,7 +22,7 @@ CartScan uses Bluetooth to turn a [supported Zebra mobile device](../about/#supp
 3. Using the mobile device, scan the barcode displayed on the CartScanPCWedge screen. Once scanned, the mobile device attempts to establish the connection to the PC.
 
 <img alt="" style="height:350px" src="figure_22.png"/>
-_The connecting screen during (left) and after pairing with PC_
+_The device connecting message during (left) and after connecting with PC_
 <br>
 
 -----

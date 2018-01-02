@@ -108,9 +108,9 @@ If CartScanPCWedge is not already running, launch it from the desktop or Start m
 
 Users of Zebra CartScan and CartScanPCWedge applications should have proper training, reference materials and usage guidelines to understand how CartScan works and how to use it. Below is a list of suggested end user best practices.
 
-* **Always check the status of the connection before scanning** ("...connected to PC...". 
-* **Always confirm that data was transmitted after scanning** (green checkmark).
-* **Periodically confirm correct placement of scanned data** into the target fields.
+* **Always check the status of the connection before scanning** (look for "...connected to PC..." message). 
+* **Always confirm that data was transmitted after scanning** (green checkmark in CartScan UI).
+* **Periodically confirm correct placement of scanned data** into desired fields on the target PC.
 * **Do not allow other users to interact with the PC or scanning device** while workflow scanning is in progress. 
 * **Close the CartScan app** on the mobile device when scanning is complete.
 
@@ -118,75 +118,41 @@ Users of Zebra CartScan and CartScanPCWedge applications should have proper trai
 
 ## Troubleshooting
 
-### No Data Appears on PC
+### Scanned Data Not on PC
 
-#### Possible cause
-
-* Cursor is in the wrong field on PC
-
-#### Solution
-
-Ensure that the target PC application is in the foreground and the cursor is placed in the target field. 
-
-#### Possible cause
-
-* BT Output is Disabled
-
-#### Solution
-
-Have an IT administrator check the [Profile Settings](../settings/#configureprofiles) to ensure that "Enable/disable BT Output" is enabled. 
-
-#### Possible cause
-
-* The mobile device is out of range, has timed out or otherwise lost connection to the PC. 
-
-#### Solution
-
-See [Lost Connection](#lostconnection).  
+* **Possible cause**: Cursor is in the wrong field on PC
+* **Solution**: Ensure that the target PC application is in the foreground and the cursor is placed in the target field
+* **Possible cause**: BT output is disabled
+* **Solution**: Request an IT administrator to check the [Profile Settings](../settings/#configureprofiles) to ensure that "Enable/disable BT Output" is enabled
+* **Possible cause**: The mobile device is out of range, has timed out or otherwise lost connection to the PC
+* **Solution**: See [Lost Connection](#lostconnection)
 
 -----
 
 ### Lost Connection
 
-#### Possible causes
-
- * CartScan session has timed out
- * Device or PC has moved out of Bluetooth range (about 25 feet)
- * RF interference is blocking the Bluetooth signal 
- * Another user disconnected CartScan from the target PC
-
-#### Solution
-**Rescan the pairing barcode** as explained in [Reconnecting the Device](#reconnectingthedevice) section.
+* **Possible causes**:
+	* CartScan session has timed out
+	* Device or PC has moved out of Bluetooth range (about 25 feet)
+	* RF interference is blocking the Bluetooth signal 
+	* Another user disconnected CartScan from the target PC
+* **Solution**: Rescan the pairing barcode as explained in [Reconnecting the Device](#reconnectingthedevice) section
 
 -----
 
 ### Unable to Scan Barcode
 
-#### Possible causes 
-
-* Unrecognized or invalid barcode symbology
-
-#### Solution
-
-Check for damage or obstructions to the barcode or its label. 
-
-* Defective scanner
-
-#### Solution
-
-Have an IT administrator check the device. 
+* **Possible cause**: Unrecognized or invalid barcode symbology
+* **Solution**: Check for damage or obstructions to the barcode or its label
+* **Possible cause**: Defective scanner
+* **Solution**: Request an IT administrator to check the device 
 
 -----
 
 ### Unexpected Characters in Data
 
-#### Possible cause
-
-* A prefix or suffix was added through Advanced Data Formatting in the selected Profile.
-
-#### Solution
-
-Have an IT administrator check the [Profile Settings](../settings/#configureprofiles). 
+* **Possible cause**: Prefix or suffix data is being added by the selected Profile
+* **Solution**: Request an IT administrator to check the profile's data formatting settings in the [Profile Settings guide](../settings/#basicdataformatting) 
 
 -----
 

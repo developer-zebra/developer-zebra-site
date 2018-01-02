@@ -41,7 +41,7 @@ Details and source code follow.
 The image below shows the correct Profile settings:
   ![DataWedge Configuration](datawedge_settings.png)
 
-See the DataWedge [Intent Output guide](../../output/intent)) for more information about these settings. 
+See the DataWedge [Intent Output guide](../../output/intent) for more information about these settings. 
 
 <!-- 
 ### NOTES

@@ -774,7 +774,8 @@ Controls the symbology for Aztec barcodes. If an application is not expected to 
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Specifies the format in which the barcode data is returned, binary data is returned in Data URI format with the appropriate mime type. This parameter is designed to be used primarily with image based symbologies (eg. Signature). Binary data will not be output as keystrokes, you must set a decode callback in order to receive scanned data.
+Specifies the format in which the barcode data is returned, binary data is returned in Data URI format with the appropriate mime type. This parameter is designed to be used primarily with image based symbologies (eg. Signature). Binary data will not be output as keystrokes. Set a decode callback to receive scanned data.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -2140,12 +2141,14 @@ When the aimType:continuousRead property is applied this value defines the inter
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
-By default if you have enabled the Scanner on a page, through either JavaScript or Ruby and navigate to a new page the Scanner will automatically disable. To override this behavior you can set this option to false and once enabled the Scanner will remain so in the foreground application until you disable it.
+If a scanner is enabled on a page and the user navigates to a new page, the scanner is automatically disabled by default. To override this behavior, set this option to false. The scanner will remain in the foreground application until disabled.
+
 ####Params
 <p><strong>Default:</strong> true</p>
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.disableScannerDuringNavigate</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
@@ -2181,7 +2184,7 @@ Forces the scanner to disconnect from the terminal when disabled. Since the scan
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-If set to true the Bluetooth address will be displayed as a barcode on the screen during the pairing process, initiated by calling 'enable' on a Bluetooth scanner. Not all devices support this functionality. Note you must specify this parameter before or within the call to 'enable'.
+If set to true the Bluetooth address will be displayed as a barcode on the screen during the pairing process, initiated by calling 'enable' on a Bluetooth scanner. Not all devices support this functionality. Note: Specify this parameter before or within the call to enable.
 
 ####Access
 
@@ -2307,15 +2310,13 @@ When true, EAN 8 barcodes will be converted to EAN 13 and EAN 13 parameters used
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Configures the time (in seconds) allowed to pair with the external Bluetooth scanner after calling the 'enable()' method. You must specify this parameter before calling 'enable' to change the default.
-####Access
+Configures the time (in seconds) allowed to pair with the external Bluetooth scanner after calling the 'enable()' method. Specify this parameter before calling 'enable' to change the default.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.enableTimeout</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.enableTimeout</code> 
-
-
 
 ####Platforms
 
@@ -4156,14 +4157,13 @@ Low battery indication cycle time, in seconds. Must be one of 15, 30, 60, 90 or 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-If you press the trigger on an RSM scanner, proximity enabled will be turned off, even though it still reports its self as being turned on if you query the property. In order to use ProximityEnable you need to also have Mems enabled, this is the motion sensor and if you disable Mems the scanner will not function.
-####Access
+If the trigger is pressed on an RSM scanner, "proximity enabled" will be turned off, even though it might still report itself as "turned on" if queried. To use ProximityEnable, Mems (motion sensor) also must be enabled. **The scanner will not function if the motion sensor is disabled**.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmMems</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmMems</code> 
-
 
 
 ####Platforms
@@ -4278,15 +4278,13 @@ Specify the distance for the proximity feature as 'short', 'medium' or 'long'
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-If you press the trigger on an RSM scanner, proximity enabled will be turned off, even though it still reports its self as being turned on if you query the property. In order to use ProximityEnable you need to also have Mems enabled, this is the motion sensor and if you disable Mems the scanner will not function.
-####Access
+If the trigger is pressed on an RSM scanner, "proximity enabled" will be turned off, even though it might still report itself as "turned on" if queried. To use ProximityEnable, Mems (motion sensor) also must be enabled. **The scanner will not function if the motion sensor is disabled**.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmProximityEnable</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmProximityEnable</code> 
-
-
 
 ####Platforms
 
@@ -4305,7 +4303,6 @@ The laser scan line width, 'wide' or 'narrow'.
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmScanLineWidth</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmScanLineWidth</code> 
-
 
 
 ####Platforms
@@ -4422,15 +4419,13 @@ The type of scanner in use, will be one of 'Camera', 'Imager' or 'Laser'. Camera
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Controls the symbology for Signature barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. Signature barcodes return their data in Data URI format, it is recommended you adjust the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes.
-####Access
+Controls the symbology for Signature barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. Signature barcodes return their data in Data URI format. Zebra recommends adjusting the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.signature</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.signature</code> 
-
-
 
 ####Platforms
 
@@ -4444,15 +4439,13 @@ Controls the symbology for Signature barcodes. If an application is not expected
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the output height of the captured signature barcode. Signature barcodes return their data in Data URI format, it is recommended you adjust the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes. Provide a number greater than or equal to 20.
-####Access
+Specifies the output height of the captured signature barcode. Signature barcodes return their data in Data URI format. Zebra recommends adjusting the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes. Provide a number greater than or equal to 20.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.signatureImageHeight</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.signatureImageHeight</code> 
-
-
 
 ####Platforms
 

@@ -5200,14 +5200,12 @@ Controls the symbology for US 4-State barcodes. If an application is not expecte
 <span class='text-info'>BOOLEAN</span> 
 ####Description
 Controls the symbology for US 4-State FICS barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.us4stateFics</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.us4stateFics</code> 
-
-
 
 ####Platforms
 
@@ -5310,11 +5308,11 @@ Configures the feedback given after a successful scan. This value is ignored if 
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.VF_FEEDBACK_ENABLED - String: enabled The last image that was successfully decoded is displayed. The time for which the image is displayed can be configured by the viewfinderFeedbackTime parameter.
-* Constant: EB.Barcode.VF_FEEDBACK_DISABLED - String: disabled No feedback is given in the viewfinder after a successful decode.
-* Constant: EB.Barcode.VF_FEEDBACK_RETICLE - String: reticle The last image that was successfully decoded is displayed along with a red reticle in the center of the image. The time for which the image is displayed can be configured by the viewfinderFeedbackTime parameter.
-####Access
+* Constant: EB.Barcode.VF_FEEDBACK_ENABLED - String: "enabled" The last image that was successfully decoded is displayed. The time for which the image is displayed can be configured by the viewfinderFeedbackTime parameter.
+* Constant: EB.Barcode.VF_FEEDBACK_DISABLED - String: "disabled" No feedback is given in the viewfinder after a successful decode.
+* Constant: EB.Barcode.VF_FEEDBACK_RETICLE - String: "reticle" The last image that was successfully decoded is displayed along with a red reticle in the center of the image. The time for which the image is displayed can be configured by the viewfinderFeedbackTime parameter.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.viewfinderFeedback</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
@@ -5381,12 +5379,12 @@ Configures the mode of the scanner viewfinder window. This attribute is not supp
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.VIEWFINDER_ENABLED - String: enabled Only the viewfinder is enabled (not the reticle). Displays a viewfinder on the screen showing the image being captured by the camera.
-* Constant: EB.Barcode.VIEWFINDER_DISABLED - String: disabled The viewfinder will not be displayed during aiming or scanning.
-* Constant: EB.Barcode.VIEWFINDER_STATIC_RETICLE - String: staticReticle Displays the viewfinder as well as draws a red reticle in the center of the image which helps with tracking the barcode.
-* Constant: EB.Barcode.VIEWFINDER_DYNAMIC_RETICLE - String: dynamicReticle Displays the viewfinder as well as draws a red reticle in the center of the image. If the barcode in the image is 'decodable' the reticle turns green to indicate this. This mode requires a second trigger press to decode the barcode after the reticle turns green. Not supported on Android.
-####Access
+* Constant: EB.Barcode.VIEWFINDER_ENABLED - String: "enabled" Only the viewfinder is enabled (not the reticle). Displays a viewfinder on the screen showing the image being captured by the camera.
+* Constant: EB.Barcode.VIEWFINDER_DISABLED - String: "disabled" The viewfinder will not be displayed during aiming or scanning.
+* Constant: EB.Barcode.VIEWFINDER_STATIC_RETICLE - String: "staticReticle" Displays the viewfinder as well as draws a red reticle in the center of the image which helps with tracking the barcode.
+* Constant: EB.Barcode.VIEWFINDER_DYNAMIC_RETICLE - String: "dynamicReticle" Displays the viewfinder as well as draws a red reticle in the center of the image. If the barcode in the image is 'decodable' the reticle turns green to indicate this. This mode requires a second trigger press to decode the barcode after the reticle turns green. Not supported on Android.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.viewfinderMode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
@@ -5427,14 +5425,12 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 <span class='text-info'>INTEGER</span> 
 ####Description
 When scanning a barcode using a Camera scanner the viewfinder preview window will appear this number of pixels from the left hand side of the screen. The images displayed in the viewfinder will be scaled as appropriate.
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.viewfinderX</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.viewfinderX</code> 
-
-
 
 ####Platforms
 
@@ -5447,14 +5443,12 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 <span class='text-info'>INTEGER</span> 
 ####Description
 When scanning a barcode using a Camera scanner the viewfinder preview window will appear this number of pixels from the top of the screen. The images displayed in the viewfinder will be scaled as appropriate.
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.viewfinderY</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.viewfinderY</code> 
-
-
 
 ####Platforms
 
@@ -5467,14 +5461,12 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 <span class='text-info'>BOOLEAN</span> 
 ####Description
 Controls the symbology for Webcode barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. Deprecated in Android 4.1 (Jelly Bean).
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.webcode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.webcode</code> 
-
-
 
 ####Platforms
 
@@ -5489,14 +5481,12 @@ Controls the symbology for Webcode barcodes. If an application is not expected t
 <span class='text-info'>BOOLEAN</span> 
 ####Description
 If true, the GT Webcode subtype will be decoded. Deprecated in Android 4.1 (Jelly Bean).
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.webcodeDecodeGtSubtype</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.webcodeDecodeGtSubtype</code> 
-
-
 
 ####Platforms
 
@@ -5510,47 +5500,31 @@ If true, the GT Webcode subtype will be decoded. Deprecated in Android 4.1 (Jell
 ###Methods and Properties
 Barcode respective APIs will only work if the underlying layers supports it. For further details, refer EMDK documentation.
 
-###Limitation of Scanner and Barcode API
+###Scanner and Barcode Limitations
 
 The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneously in any Enterprise Browser application; only one or the other should be used. 
 
-###Limitation of decodeSound property on Android Platform
-If decodeSound property contains '.wav'/'.ogg' filename same as system filename, then the system '.wav'/'.ogg' file will be selected for playing when a scanned barcode is successfully decoded.
+###DecodeSound Limitation
+If decodeSound property contains '.wav'/'.ogg' filename same as system filename, the system '.wav'/'.ogg' file is selected for playing when a scanned barcode is successfully decoded.
 
-###Limitation of custom decode sound properties on Android Platform
-On some Android devices, only the first set values of custom decode sound properties (i.e. decodeVolume, decodeFrequency and decodeDuration) will take effect even after setting multiple times with different values. User need to restart the Enterprise Browser application to apply the different values for custom decode sound properties.
+###Custom Sound Limitation
+On some Android devices, only the first set values of custom decode sound properties (i.e. decodeVolume, decodeFrequency and decodeDuration) take effect, even after setting multiple times with different values. The Enterprise Browser application must be restarted to apply the different values for custom decode sound properties.
 
 ###Omnii XT15
-
 On the Zebra Omnii XT15 device running Windows Mobile/CE, the decode success and failure sounds are not audible unless the decode sound is configured manually in the `Config.xml` file. To configure this setting, see the [&lt;ScanDecodeWav&gt; parameter](../../guide/configreference/#scandecodewav) in the Config.xml Reference Guide.
 
 ###Bluetooth Scanner Overview
+Once a Bluetooth scanner is associated with a device, it remains associated even after losing the BT connection. To associate a different Bluetooth scanner with the device, it is necessary to scan the 'unpairing' barcode and invoke the 'disabled' method followed by the 'enabled' method. This allows scanning of the BT association barcode to associate with a different scanner. Override this default behavior using the `disconnectBtOnDisable` property.
 
-Once associated with the Device a Bluetooth Scanner will remain associated even after losing the BT connection. In order to associate a different Bluetooth scanner with the device it is necessary to scan the 'unpairing' barcode and then invoke the 'disabled' method followed by the 'enabled' method, this will allow you to scan the BT association barcode with a different scanner. You can override this default behavior using the disconnectBtOnDisable property.
+The `BluetoothStatus` event provides the following Bluetooth scanner messages:
 
-The following messages will be received from the Bluetooth Scanner in the BluetoothStatus event:
+* **BTScanAssociationBarcode -** The device is ready to be associated with a Bluetooth scanner. To perform a first-time association, use the scanner to scan the association barcode. This pairing is remembered until the unpairing barcode is scanned.
 
-**'BTScanAssociationBarcode'**
+* **BluetoothConnected -** The remote scanner has successfully connected to the device.
 
-Means the device is ready to be associated with a BT scanner. You must scan the
-association barcode. It is only necessary to scan the association
-barcode when you first associate a scanner with the device, this pairing will be remembered until
-you scan the unpairing barcode.
+* **BluetoothDisconnected -** The remote scanner is disconnected from the device. This can be due to a dead battery, being out of range, or scanning the unpairing barcode. The scanner automatically attempts to reconnect for a period of time once it regains power or signal. Press the "reconnect" button if it fails to reconnect automatically. Once the unpairing barcode is scanned, it is necessary to disable and re-enable the scanner before another scanner can be associated.
 
-**'BluetoothConnected'**
-
-The remote scanner has successfully connected to the device.
-
-**'BluetoothDisconnected'**
-
-The remote scanner has become disconnected from the device, this may be due to loss of battery, being out
-of range or scanning the 'unpairing' barcode. The scanner will attempt to reconnect automatically for
-a period of time once it regains power or goes out of range, if it fails to reconnect after the specified
-timeout the reconnect button on the device should be pushed. Once the unpairing barcode is scanned
-it is necessary to disable the scanner and then re-enable it before another scanner can be associated.
-                
-
-###Bluetooth Scanner Support On Android Devices
+###Bluetooth Scanners On Android
 
 Enterprise Browser does not support Bluetooth scanners on the Zebra TC70 GA1 device. 
 
@@ -5558,9 +5532,7 @@ Enterprise Browser supports Bluetooth scanners on devices running Android KitKat
                
 
 ###Viewfinder Position Parameters
-
-On Symbol Technologies' scanners the scanner viewfinder window is not infinitely resizable, when setting ViewFinderX, ViewFinderY, ViewFinderWidth and ViewFinderHeight ensure you do not exceed the size of the screen and it is recommended to use the same aspect ratio as your device. For applications designed to handle screen rotation it is recommended to use a scan window whose longest side will fit within both the screen width and screen height. If your viewfinder position fails to be applied it is recommended you query your log file to see which parameter is causing trouble, or reposition the window away from the edges of the screen.
-                
+On Zebra Technologies' scanners, the scanner viewfinder window is not infinitely resizable. When setting ViewFinderX, ViewFinderY, ViewFinderWidth and ViewFinderHeight, do not exceed the size of the screen. Zebra also recommends using the same aspect ratio as that of the device. For applications designed to handle screen rotation, longest side of the scan window should fit within both the screen width **_and_** screen height. If the viewfinder position fails to be applied, query the log file to see which parameter is causing trouble or reposition the window away from the edges of the screen.
 
 ###Scanning and Camera Interaction
 In some device configurations the scanner and camera share the same hardware. Where two modules share the same physical hardware they cannot be enabled simultaneously, in this circumstance once the scanner is enabled it must be disabled before the camera can be used, and vice versa.
@@ -5575,20 +5547,23 @@ On WM/CE, for some properties, it is first necessary to apply those properties b
 As google barcode scanning library(Zxing library) supported only in Landscape mode. Barcode scanning window only appears at centre of screen in Landscape mode.
 
 ###Devices lacking support
-Due to platform limitations this API is not available on the following Zebra Technologies devices on specific platform.  Note: However one can enable legacy scanner service and can scan the respective barcode.
+This API is not available on the following Zebra Technologies devices and/or platform(s): 
 
 * VH10 CE 6.0
 
+**Note**: The legacy scanner service can be enabled and can perform some barcode scans.
+
 ##Examples
 
-###Enable barcode scanner and scan a bacrode
-This example shows how to enable your device's barcode scanner and access the data gathered by the scanner. Note that this example assumes that your ebapi-modules.js file is in the same folder as the HTML invoking it. On symbol devices, data wedge needs to be disabled or the Enterprise Browser will not be able to claim any of the scanners.
-<pre><code>:::javascript
-&lt;head&gt;
-    &lt;title&gt;Barcode API Test&lt;/title&gt;
-    &lt;script type="text/javascript" charset="utf-8" src="ebapi-modules.js"&gt;&lt;/script&gt;
+###Enable scanner, scan a bacrode
+This example shows how to enable a device's barcode scanner and access the data gathered by the scanner. Note that this example assumes that `ebapi-modules.js` file is in the same folder as the HTML invoking it. **DataWedge must be disabled for Enterprise Browser to access any scanners**.
 
-    &lt;script type="text/javascript"&gt;
+	<pre><code>:::javascript
+	&lt;head&gt;
+	    &lt;title&gt;Barcode API Test&lt;/title&gt;
+	    &lt;script type="text/javascript" charset="utf-8" src="ebapi-modules.js"&gt;&lt;/script&gt;
+
+	    &lt;script type="text/javascript"&gt;
         function scanReceived(params){
             // No data or no timestamp, scan failed.
             if(params['data']== "" || params['time']==""){
@@ -5610,30 +5585,33 @@ This example shows how to enable your device's barcode scanner and access the da
             // Disable Barcode on unload of page to free it up for other operations.
         }
     &lt;/script&gt;
-&lt;/head&gt;
+	&lt;/head&gt;
 
-&lt;body onunload='unloadEvent()'&gt;
-    &lt;h1&gt;Barcode API Test&lt;/h1&gt;
-    &lt;div id="display"&gt;
-        Barcode Data: &lt;br&gt;
-        Time: &lt;br&gt;
-    &lt;/div&gt;
-    &lt;button onclick="enableScanners()"&gt;Enable Barcode Scanners&lt;/button&gt;
-&lt;/body&gt;              
-</code></pre>
+	&lt;body onunload='unloadEvent()'&gt;
+	    &lt;h1&gt;Barcode API Test&lt;/h1&gt;
+	    &lt;div id="display"&gt;
+	        Barcode Data: &lt;br&gt;
+	        Time: &lt;br&gt;
+	    &lt;/div&gt;
+	    &lt;button onclick="enableScanners()"&gt;Enable Barcode Scanners&lt;/button&gt;
+	&lt;/body&gt;              
+	</code></pre>
 
 ###Setting pre-defined decode sound
-The example shows how to set the existing '.wav' or '.ogg' file for decode notification using decodeSound property on Android platform.
-<pre><code>:::javascript
-function setDecodeSoundwav() {
-   EB.Barcode.decodeSound = 'file:///sdcard/badread.wav'; //For Android	
-}
-</code></pre>
+This example shows how to set a '.wav' or '.ogg' file for decode notification using decodeSound property on Android platform. **Sound file must be stored on the device.**
+
+	<pre><code>:::javascript
+	function setDecodeSoundwav() {
+	   EB.Barcode.decodeSound = 'file:///sdcard/badread.wav'; //For Android	
+	}
+	</code></pre>
 
 ###Setting custom created decode sound
-The example shows how to create and set the custom notification file for getting decode notification. Note: It is recommended to not to set decodeSound property if user want to create and set the custom notification using below barcode properties.
-<pre><code>:::javascript
-function setCustomDecodeSound(){
-   EB.Barcode.enable({'decodeDuration': 1000,'decodeFrequency':2000,'decodeVolume':3}, callback); //This is the recommended approach for creating and setting custom notification.
-}
-</code></pre>
+
+This example shows how to create and set the custom notification file for getting decode notification. Note: It is recommended to not to set decodeSound property if user want to create and set the custom notification using below barcode properties.
+
+	<pre><code>:::javascript
+	function setCustomDecodeSound(){
+	   EB.Barcode.enable({'decodeDuration': 1000,'decodeFrequency':2000,'decodeVolume':3}, callback); //This is the recommended approach for creating and setting custom notification.
+	}
+	</code></pre>

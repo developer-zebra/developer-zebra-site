@@ -82,7 +82,7 @@ automenu:
           url: system
         - title: Timer
           url: Timer
-        - title: Webview
+        - title: WebView
           url: webview
     - title: RhoElements 2.x APIs
       items:

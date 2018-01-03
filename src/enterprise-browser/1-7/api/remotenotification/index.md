@@ -8,7 +8,7 @@ layout: guide.html
 ## Overview
 Remote Notification APIs enable Enterprise Browser applications to control device annunciators such as the beeper, vibrator and multi-color LEDs to notify the user of custom events in their workflow.
 
->**This API is supported only on Android devices with the following accessories (_RS6000_ and _External Vibrator - CBL-NGWT-HDVBAP-01_) only.**
+>**This API is supported only on Android devices with the Zebra RS6000 and External Vibrator (CBL-NGWT-HDVBAP-01).**
 
 ## Enabling the API
 
@@ -24,7 +24,7 @@ Either way, the included files will be found in:
 a directory on the computer that contains the Enterprise Browser installation.
 
 ### Include all API modules
-To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include the JavaScript modules file in the app. For instance, to include the modules file in the `index.html` file, copy the file to the same directory as the index.html and add the following line to the HEAD section of the index.html:
+To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include the JavaScript modules file in the app. For instance, to include the modules file in the `index.html` file, copy the file to the same directory as the `index.html` and add the following line to the HEAD section of the `index.html`:
 
 	    :::html
 	    <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>

@@ -30,7 +30,7 @@ To include all APIs, copy the `ebapi-modules.js` file to a location accessible b
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
 
-> The code above defines the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required must include a reference to the required .js file(s) in this fashion.
+> The code above defines the EB class within the page. **Note that the path for this file is relative to the current page** (`index.html`). Any page on which the modules are required must include a reference to the required .js file(s) in this fashion.
 
 ### Include only the required modules
 To include individual APIs, first include a reference to the `ebapi.js` module in the HTML, and then the additional required API file(s). For instance, to use the Barcode API, add the following code to the HTML file(s), assuming the API files have been copied to the same directory as the HTML.
@@ -45,7 +45,7 @@ To include individual APIs, first include a reference to the `ebapi.js` module i
 
 
 ### addConnectionListener()
-If you are using an RS507/RS6000/RS4000 barcode scanner you can add a connection listener to receive connected or disconnected callbacks through this method.
+If using an RS507/RS6000/RS4000 barcode scanner, it is possible to add a connection listener to receive connected or disconnected callbacks through this method.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -101,7 +101,7 @@ Synchronous Return:
 Instruct the connected RS507 scanner to perform some action.
 
 ####Parameters
-<ul><li>command : <span class='text-info'>STRING</span><p>The action the RS507 scanner should perform, can be 'Disconnect' which disconnects the bluetooth RS507; 'unpair' which unpairs the RS507 from the device for association with another device; 'StartPaging' or 'StopPaging' which will cause the RS507 scanner to start or stop emitting a beep, to allow it to be located. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+<ul><li>command : <span class='text-info'>STRING</span><p>The action the RS507 scanner should perform, can be 'Disconnect' which disconnects the Bluetooth RS507; 'unpair' which unpairs the RS507 from the device for association with another device; 'StartPaging' or 'StopPaging' which will cause the RS507 scanner to start or stop emitting a beep, to allow it to be located. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
 ####Returns
 Synchronous Return:
@@ -148,10 +148,10 @@ Synchronous Return:
 
 
 ### enable(<span class="text-info">HASH</span> propertyMap)
-Enabling the scanner puts it in a state where it will respond to the trigger (on devices with a hardware trigger) or will accept a command to initiate a soft scan (start method). Scanned barcodes will be available to the application through the callback provided to this method. Only one scanner on the device can be enabled at any one time, to switch between the imager and camera scanners (for example) then first disable the currently enabled scanner. If you do not specify a callback to this method you will received the scanned data as keystrokes. Note that it is necessary to enable the scanner on WM/CE devices prior to being able to retrieve the state of properties.
+Enabling the scanner puts it in a state that responds to the trigger (on devices with a hardware trigger) or will accept a command to initiate a soft scan (start method). Scanned barcodes will be available to the application through the callback provided to this method. Only one scanner can be enabled on the device at any one time. To switch between the imager and camera scanners (for example), then first disable the currently enabled scanner. If a callback to this method is not specified, the scanned data will be returned as keystrokes. **Note**: It is necessary to enable the scanner on Windows Mobile/CE devices prior to retrieving the state of properties.
 
 ####Parameters
-<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the scanner, for example enable specific symbologies or check digits. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-barcode?Properties'>property section</a> for applicable properties. Not providing properties to this function will use the scanner's default properties, or those previously set on the Scanner instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the scanner, for example to enable specific symbologies or check digits. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-barcode?Properties'>property section</a> for applicable properties. failure to provide properties to this function will use the scanner's default properties, or those previously set on the Scanner instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
 ####Callback
 Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>data : <span class='text-info'>STRING</span><p>The data decoded by the scanner or imaging device. </p></li><li>source : <span class='text-info'>STRING</span><p>The source device and human readable decoder type of the decoded barcode or symbol. </p></li><li>type : <span class='text-info'>STRING</span><p>Hex value representing the decoder type. </p></li><li>time : <span class='text-info'>STRING</span><p>The time at which the decode occurred (hh:mm:ss) </p></li><li>length : <span class='text-info'>STRING</span><p>The length of the decoded barcode or symbol. </p></li><li>direction : <span class='text-info'>STRING</span><p>The direction the barcode was scanned, either forward, reverse or unavailable. </p></li></ul></ul>
@@ -177,7 +177,7 @@ Synchronous Return:
 
 
 ### enumerate()
-Used to gain access to all scanner objects present on the device. For consumer devices you will most likely only have a single scanner, your device's camera but Enterprise grade hardware may have two or more scanners attached.
+Used to gain access to all scanner objects present on the device. Consumer devices are most likely equipped with a single scanner, while enterprise-grade hardware is generally equipped with two or more scanners.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -360,13 +360,13 @@ Synchronous Return:
 
 
 ### registerBluetoothStatus()
-If you are using an RS507 barcode scanner you can register to receive connected or disconnected events through this method.
+If using an RS507 barcode scanner, use this method to register to receive connect/disconnect events.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
 ####Callback
-Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>status : <span class='text-info'>STRING</span><p>The message describing the bluetooth connection: BluetoothConnected, BluetoothDisconnected or BTScanAssociationBarcode. See below for further descriptions. </p></li></ul></ul>
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>status : <span class='text-info'>STRING</span><p>The message describing the Bluetooth connection: BluetoothConnected, BluetoothDisconnected or BTScanAssociationBarcode. See below for further descriptions. </p></li></ul></ul>
 
 ####Returns
 Synchronous Return:
@@ -387,7 +387,7 @@ Synchronous Return:
 
 
 ### removeConnectionListener()
-If you are using an RS507/RS6000/RS4000 barcode scanner you can remove a connection listener to receive connected or disconnected callbacks through this method.
+If using an RS507/RS6000/RS4000 barcode scanner, use this method to remove a connection listener to receive connected or disconnected callbacks.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -434,7 +434,7 @@ Synchronous Return:
 
 
 ### setDefault(<span class="text-info">SELF_INSTANCE: EB.Barcode</span> defaultInstance)
-This method allows you to set the attributes of the default object instance by passing in an object of the same class.
+Used to set the attributes of the default object instance by passing in an object of the same class.
 
 ####Parameters
 <ul><li>defaultInstance : <span class='text-info'>SELF_INSTANCE: EB.Barcode</span><p>An instance object that is of the same class. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -451,12 +451,12 @@ Synchronous Return:
 
 ####Method Access:
 
-* Class Method: This method can only be accessed via the API class object. 
+* Class Method: This method can be accessed only via the API class object. 
 	* <code>EB.Barcode.setDefault(<span class="text-info">SELF_INSTANCE: EB.Barcode</span> defaultInstance)</code> 
 
 
 ### setProperties(<span class="text-info">HASH</span> propertyMap)
-This method will set the values of a list of properties for the API class. The propertyName must be a valid property for the class and must also not be read only.
+This method will set the values of a list of properties for the API class. The propertyName must be a valid property for the class and must not be read-only.
 
 ####Parameters
 <ul><li>propertyMap : <span class='text-info'>HASH</span><p>Map of properties I want to set </p></li><ul><li><i>Object</i> : <span class='text-info'>STRING</span><p> </p></li></ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -480,7 +480,7 @@ Synchronous Return:
 
 
 ### setProperty(<span class="text-info">STRING</span> propertyName, <span class="text-info">STRING</span> propertyValue)
-This method will set the value of a property for the API class. The propertyName must be a valid property for the class and must also not be read only.
+This method will set the value of a property for the API class. The propertyName must be a valid property for the class and must not be read-only.
 
 ####Parameters
 <ul><li>propertyName : <span class='text-info'>STRING</span><p>The one property name that I want to set </p></li><li>propertyValue : <span class='text-info'>STRING</span><p>The one property value that I want to set </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -504,7 +504,7 @@ Synchronous Return:
 
 
 ### start()
-Performs a soft trigger start, initiating a scan without pressing the hardware trigger. If the scan does not result in a decode it is necessary to perform a soft stop before another soft start.
+Performs a soft trigger start, initiating a scan without pressing the hardware trigger. If the scan does not result in a decode, it is necessary to perform a soft stop before initiating another soft start.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -556,13 +556,13 @@ Synchronous Return:
 
 
 ### take(<span class="text-info">HASH</span> propertyMap)
-Enable the scanner and start capturing the barcode automatically. On Symbol Technologies' devices the amount of time to scan the barcode is defined by the scanTimeout property. On Android if a barcode is found, the user can confirm barcode recognition, or continue to try to recognize the barcode. When the user confirms or cancels, the callback is called. Once the callback has been called the barcode hardware is disabled.This method will work only on scanners which support soft scan.
+Enables the scanner and starts capturing the barcode automatically. On Zebra Technologies' devices, the amount of time to scan the barcode is defined by the scanTimeout property. On Android, if a barcode is found, the user can confirm barcode recognition or continue to try to recognize the barcode. When the user confirms or cancels, the callback is called. Once the callback has been called, the barcode hardware is disabled. This method will work only on scanners which support soft scan.
 
 ####Parameters
-<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the scanner, for example enable specific symbologies or check digits. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-barcode?Properties'>property section</a> for applicable properties. Not providing properties to this function will use the scanner's default properties, or those previously set on the Scanner instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+<ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provides a set of properties to configure the scanner, for example to enable specific symbologies or check digits. Valid properties for this parameter are the properties available to this API module. Check the <a href='#api-barcode?Properties'>property section</a> for applicable properties. If no properties are provided to this function, scanner default properties (or those previously set on the Scanner instance) will be used.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
 ####Callback
-Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>barcode : <span class='text-info'>STRING</span><p>The data decoded by the scanner or imaging device. </p></li><li>status : <span class='text-info'>STRING</span><p>Whether or not the barcode was successfully scanned, status will be 'ok' or 'cancel' </p></li></ul></ul>
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>barcode : <span class='text-info'>STRING</span><p>The data decoded by the scanner or imaging device. </p></li><li>status : <span class='text-info'>STRING</span><p>Based on whether the barcode was successfully scanned, status will be 'ok' or 'cancel' </p></li></ul></ul>
 
 ####Returns
 Synchronous Return:
@@ -592,9 +592,9 @@ Synchronous Return:
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables adaptive scanning. When set to true, the scan engine will automatically toggle between 2 scan angles, wide and narrow, allowing the scan engine to decode barcodes both in close proximity and far away (~100 inches). Adaptive scanning is only supported in high performance, long working range scan engines such as SE960.
-####Access
+Controls adaptive scanning. When set to true, the scan engine will automatically toggle between wide and narrow scan angles, allowing the scan engine to decode barcodes either in close proximity or far away (~100 inches). Adaptive scanning is supported only in high performance, long-working range scan engines such as the SE960.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.adaptiveScanning</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
@@ -605,7 +605,7 @@ Enables or disables adaptive scanning. When set to true, the scan engine will au
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Laser Scanners on Symbol Technologies' devices)
+* Zebra Devices Only (laser scanners on Symbol-branded devices)
 
 ###aimMode
 
@@ -633,112 +633,105 @@ Defines the aiming mode to use.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra Devices Only (scanners on Symbol-branded devices)
 
 ###aimType
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
-Describes the type of aiming to use. It supports on Android with EMDK version 6.3 and above.
+Describes the type of aiming to use. Supported on Android with EMDK version 6.3 and higher.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.AIMTYPE_TRIGGER - String: trigger Standard trigger mode. Holding the trigger will start a decoding session.
-* Constant: EB.Barcode.AIMTYPE_TIMED_HOLD - String: timedHold Aiming lasts for the time specified by 'timedAimDuration' before decoding. The opportunity to scan will last until the barcode is decoded or scanTimeout occurs.
-* Constant: EB.Barcode.AIMTYPE_TIMED_RELEASE - String: timedRelease Aiming lasts until trigger is released. If the timedAimDuration has expired when the trigger is released then a decode session is started until a barcode is decoded or for the remaining time equal to the scanTimeout value.
-* Constant: EB.Barcode.AIMTYPE_PRESENTATION - String: presentation Provided to support Kiosk devices. The scanner illuminates when movement is detected in the range of the scanner window. In order to use this mode the scanner must be initiated with a softscan using the EB.Barcode.start() method and again after each decode. The device must be equipped with a sensor to detect movement to use presentation mode. MK31XX devices come with presentation mode pre-enabled in the scanner driver and the aimType cannot be modified for these devices. This parameter is not supported on Android platform.
-* Constant: EB.Barcode.AIMTYPE_PRESS_AND_RELEASE - String: pressAndRelease Scan will continue after the trigger is released until scanTimeout occurs.
-* Constant: EB.Barcode.AIMTYPE_CONTINUOUS_READ - String: continuousRead Once the trigger is pulled barcodes will continue to be scanned as long as the trigger is held, enabling rapid scanning, to be used in conjunction with sameSymbolTimeout and differentSymbolTimeout. This value is ignored if viewfinderMode is set to 'dynamicReticle'
-####Access
+* Constant: EB.Barcode.AIMTYPE_TRIGGER - String: "trigger" Standard trigger mode. Holding the trigger starts a decoding session.
+* Constant: EB.Barcode.AIMTYPE_TIMED_HOLD - String: "timedHold" Aiming lasts for the time specified by 'timedAimDuration' before decoding. The opportunity to scan will last until the barcode is decoded or scanTimeout occurs.
+* Constant: EB.Barcode.AIMTYPE_TIMED_RELEASE - String: "timedRelease" Aiming lasts until trigger is released. If the timedAimDuration has expired when the trigger is released, a decode session starts until a barcode is decoded or for the remaining time specified in the scanTimeout value.
+* Constant: EB.Barcode.AIMTYPE_PRESENTATION - String: "presentation" Provided to support Kiosk devices. The scanner illuminates when movement is detected in the range of the scanner window. To use this mode, the scanner must be initiated with a softscan using the `EB.Barcode.start()` method and again after each decode. The device must be equipped with a sensor to detect movement. MK31XX devices come with presentation mode pre-enabled in the scanner driver; the aimType cannot be modified for these devices. **Not supported on Android devices**.
+* Constant: EB.Barcode.AIMTYPE_PRESS_AND_RELEASE - String: "pressAndRelease" Scan continues after the trigger is released until scanTimeout occurs.
+* Constant: EB.Barcode.AIMTYPE_CONTINUOUS_READ - String: "continuousRead" Once the trigger is pulled, barcodes continue to be scanned as long as the trigger is held, enabling rapid scanning. To be used in conjunction with sameSymbolTimeout and differentSymbolTimeout. This value is ignored if viewfinderMode is set to 'dynamicReticle'
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.aimType</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.aimType</code> 
 
-
-
 ####Platforms
 
 * Android
 * Windows Mobile
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra Devices Only (scanners on Symbol-branded devices)
 
 ###allDecoders
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-When set to true, the barcode scanner will read all barcode types that the scanner is capable of reading. When set to false, the barcode scanner will not be able to decode any symbologies, this is most useful if you want to set the scanner to a default state before only enabling your required symbologies. The fewer symbologies that are enabled the faster the decoding performance of the scanning engine will be. This property will return true only if all supported symbologies by the scanner are enabled, if only a subset of supported symbologies are enabled then false will be returned. Note that some decoders will not be enabled as some symbologies use the same systems to encode data, making it impossible to differentiate between them. For example: "canpostal" and "auspostal" both use a 4-state system, so devices will only enable either "canpostal" OR "auspostal" when "alldecoders" is enabled. Note that other symbologies also share the 4-state system.
-####Access
+When set to true, the barcode scanner reads all barcode types that the scanner is capable of reading. When set to false, the barcode scanner will not be able to decode any symbologies. This is most useful when settine the scanner to a default state before enabling only the required symbologies. The fewer symbologies enabled, the faster the decoding performance of. This property will return true only if all symbologies supported by the scanner are enabled. Returns a value of false if only a subset of supported symbologies are enabled. Note that some decoders will not be enabled as some symbologies use the same systems to encode data, making it impossible to differentiate between them. For example: "canpostal" and "auspostal" both use a 4-state system, so devices will enable either "canpostal" OR "auspostal" ONLY when "alldecoders" is enabled. Note that other symbologies also share the 4-state system.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.allDecoders</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.allDecoders</code> 
 
-
-
 ####Platforms
 
 * Android
 * Windows Mobile
-* Windows CE(Scanners on Symbol Technologies' devices)
+* Windows CE (Scanners on Symbol-branded devices)
 
 ###ausPostal
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Australian Postal barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
-####Access
+Controls whether the Australian Postal barcodes symbology is enabled. If this symbology is not needed, disable to improve scanning performance.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.ausPostal</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.ausPostal</code> 
-
-
 
 ####Platforms
 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra Devices Only (some symbologies/properties not supported by all scanning engines)
 
 ###autoEnter
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-When true, automatically appends the character code for 'enter' to the end of any barcodes scanned. This is useful if you want to submit forms following a scan without further interaction. This property will only take effect if you have not specified a callback to the enable method. AutoEnter and AutoTab are mutually exclusive properties.
+Automatically appends the 'enter' character code' to the end of scanned barcodes. Useful for submitting forms following a scan without further interaction. This property takes effect only if a callback to the enable method is not specified. AutoEnter and AutoTab are mutually exclusive properties.
 ####Access
-
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.autoEnter</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.autoEnter</code> 
-
-
 
 ####Platforms
 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra Devices Only (scanners on Symbol-branded devices)
 
 ###autoTab
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-When true, automatically appends the tab character to the end of any barcodes scanned. This is useful if you are populating a form and want to jump to the next field in the form without further interaction. This property will only take effect if you have not specified a callback to the enable method. AutoTab and AutoEnter are mutually exclusive properties.
-####Access
+When true, automatically appends the tab character to the end of any barcodes scanned. Useful when populating a forms for moving the cursor to a subsequent field without further interaction. This property takes effect  only take effect if a callback to the enable method is not specified. AutoTab and AutoEnter are mutually exclusive properties.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.autoTab</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
@@ -751,7 +744,7 @@ When true, automatically appends the tab character to the end of any barcodes sc
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###aztec
 
@@ -773,7 +766,7 @@ Enables or disables the symbology for Aztec barcodes. If your application does n
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###barcodeDataFormat
 
@@ -799,7 +792,7 @@ Specifies the format in which the barcode data is returned, binary data is retur
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Camera / Imager Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera / Imager Scanners on Symbol Technologies' devices)
 
 ###beamWidth
 
@@ -826,7 +819,7 @@ Specifies the width of the laser beam. All devices will support normal beam widt
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Laser Scanners on Symbol Technologies' devices)
+* Zebra devices only (Laser Scanners on Symbol Technologies' devices)
 
 ###bidirectionalRedundancy
 
@@ -846,7 +839,7 @@ Enables or disables bidirectional redundancy.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Laser Scanners on Symbol Technologies' devices)
+* Zebra devices only (Laser Scanners on Symbol Technologies' devices)
 
 ###canPostal
 
@@ -868,7 +861,7 @@ Enables or disables the symbology for Canadian Postal barcodes. If your applicat
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###chinese2of5
 
@@ -890,7 +883,7 @@ Enables or disables the symbology for Chinese 2of5 barcodes. If your application
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###codabar
 
@@ -912,7 +905,7 @@ Enables or disables the symbology for Codabar barcodes. If your application does
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###codabarClsiEditing
 
@@ -934,7 +927,7 @@ Enables Codabar CLSi formatting when set to true.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###codabarMaxLength
 
@@ -956,7 +949,7 @@ Specifies the maximum number of allowable characters in a Codabar barcode. If yo
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###codabarMinLength
 
@@ -978,7 +971,7 @@ Specifies the minimum number of allowable characters in a Codabar barcode. If yo
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###codabarNotisEditing
 
@@ -1000,7 +993,7 @@ Enables Codabar NotisEditing formatting when set to true.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###codabarRedundancy
 
@@ -1022,7 +1015,7 @@ Sets the Codabar Redundancy property, if set the barcode must be decoded twice b
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code11
 
@@ -1044,7 +1037,7 @@ Enables or disables the symbology for Code11 barcodes. If your application does 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code11checkDigitCount
 
@@ -1073,7 +1066,7 @@ Specifies whether to verify 0, 1 or 2 check digits.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code11maxLength
 
@@ -1095,7 +1088,7 @@ Specifies the maximum number of allowable characters in a Code 11 barcode. If yo
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code11minLength
 
@@ -1117,7 +1110,7 @@ Specifies the minimum number of allowable characters in a Code 11 barcode. If yo
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code11redundancy
 
@@ -1139,7 +1132,7 @@ Sets the Code 11 Redundancy property, if set the barcode must be decoded twice b
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code11reportCheckDigit
 
@@ -1161,7 +1154,7 @@ When true, the barcode check digit(s) will be reported for scanned Code 11 barco
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code128
 
@@ -1183,7 +1176,7 @@ Enables or disables the symbology for Code128 barcodes. If your application does
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code128checkIsBtTable
 
@@ -1205,7 +1198,7 @@ When true, decodes concatenated Code128 output only if the pair belongs to one o
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code128ean128
 
@@ -1227,7 +1220,7 @@ When true, barcodes with the EAN128 subtype property set will be read.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code128isbt128
 
@@ -1249,7 +1242,7 @@ When true, barcodes with the isbt128 subtype property set will be read.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code128isbt128ConcatMode
 
@@ -1278,7 +1271,7 @@ Sets the Code128 ISBT concatenation mode property. This feature allows a pair of
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code128maxLength
 
@@ -1300,7 +1293,7 @@ Specifies the maximum number of allowable characters in a Code 128 barcode. If y
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code128minLength
 
@@ -1322,7 +1315,7 @@ Specifies the minimum number of allowable characters in a Code 128 barcode. If y
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code128other128
 
@@ -1344,7 +1337,7 @@ Sets the other 128 property which enables the non EAN and non ISBT 128 subtype.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code128redundancy
 
@@ -1366,7 +1359,7 @@ Sets the Code 128 Redundancy property, if set the barcode must be decoded twice 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code128securityLevel
 
@@ -1388,7 +1381,7 @@ Sets the Code 128 security level and accepts a value between 0 and 3 inclusive. 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code39
 
@@ -1410,7 +1403,7 @@ Enables or disables the symbology for Code 39 barcodes. If your application does
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code39code32Prefix
 
@@ -1432,7 +1425,7 @@ Enables reporting of the Code32 prefix when a Code39 barcode is converted.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code39convertToCode32
 
@@ -1454,7 +1447,7 @@ Enables conversion from Code39 to Code 32 barcodes, when set the decoded barcode
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code39fullAscii
 
@@ -1476,7 +1469,7 @@ Enables full ASCII conversion of Code 39 barcodes.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code39maxLength
 
@@ -1498,7 +1491,7 @@ Specifies the maximum number of allowable characters in a Code 39 barcode. If yo
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code39minLength
 
@@ -1520,7 +1513,7 @@ Specifies the minimum number of allowable characters in a Code 39 barcode. If yo
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code39redundancy
 
@@ -1542,7 +1535,7 @@ Sets the Code 39 Redundancy property, if set the barcode must be decoded twice b
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code39reportCheckDigit
 
@@ -1564,7 +1557,7 @@ Enables reporting of the Code 39 check digit when a Code 39 barcode is scanned.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code39securityLevel
 
@@ -1586,7 +1579,7 @@ Sets the Code 128 security level and accepts a value between 0 and 3 inclusive. 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code39verifyCheckDigit
 
@@ -1608,7 +1601,7 @@ Turns on verification of the Code 39 check digit.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code93
 
@@ -1630,7 +1623,7 @@ Enables or disables the symbology for Code 93 barcodes. If your application does
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code93maxLength
 
@@ -1652,7 +1645,7 @@ Specifies the maximum number of allowable characters in a Code 93 barcode. If yo
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code93minLength
 
@@ -1674,7 +1667,7 @@ Specifies the minimum number of allowable characters in a Code 93 barcode. If yo
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###code93redundancy
 
@@ -1696,7 +1689,7 @@ Sets the Code 93 Redundancy property, if set the barcode must be decoded twice b
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###compositeAb
 
@@ -1718,7 +1711,7 @@ Enables or disables the symbology for Composite AB barcodes. If your application
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###compositeAbUccLinkMode
 
@@ -1747,7 +1740,7 @@ Describes whether UCC link mode is enabled.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###compositeAbUseUpcPreambleCheckDigitRules
 
@@ -1767,7 +1760,7 @@ This setting causes the UPC rules specified in the UPC EAN parameters to be used
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###compositeC
 
@@ -1789,7 +1782,7 @@ Enables or disables the symbology for Composite C barcodes. If your application 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###connectionIdleTimeout
 
@@ -1809,7 +1802,7 @@ Specifies the time, in seconds, that an external scanner will be allowed to rema
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Bluetooth Scanners on Symbol Technologies' devices)
+* Zebra devices only (Bluetooth Scanners on Symbol Technologies' devices)
 
 ###d2of5
 
@@ -1831,7 +1824,7 @@ Enables or disables the symbology for D2of5 barcodes. If your application does n
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###d2of5maxLength
 
@@ -1853,7 +1846,7 @@ Specifies the maximum number of allowable characters in a D2of5 barcode. If your
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###d2of5minLength
 
@@ -1875,7 +1868,7 @@ Specifies the minimum number of allowable characters in a D2of5 barcode. If your
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###d2of5redundancy
 
@@ -1897,7 +1890,7 @@ Sets the D2of5 Redundancy property, if set the barcode must be decoded twice bef
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###dataBufferSize
 
@@ -1917,16 +1910,17 @@ Specifies the number of bytes allocated to receive the scanned barcode. This par
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###datamatrix
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Enables or disables the symbology for Datamatrix barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.datamatrix</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
@@ -1939,7 +1933,7 @@ Enables or disables the symbology for Datamatrix barcodes. If your application d
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (not all scanning engines support all symbologies/properties)
 
 ###dbpMode
 
@@ -1960,12 +1954,10 @@ Describes the type of Digital Bar Pulse (DBP) being produced by the scan engine.
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.dbpMode</code> 
 
-
-
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Laser Scanners on Symbol Technologies' devices)
+* Zebra devices only (laser scanners on Symbol Technologies' devices)
 
 ###decodeDuration
 
@@ -1973,10 +1965,10 @@ Describes the type of Digital Bar Pulse (DBP) being produced by the scan engine.
 <span class='text-info'>INTEGER</span> 
 ####Description
 The duration of the device beeper when a barcode is scanned, in milliseconds. It will accept values in the range 0 to 5000 milliseconds. Note: On Android platform, calling this method, the DecodeDuration config tags value will not be applied. 
+
 ####Params
 <p><strong>Default:</strong> 250</p>
 ####Access
-
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeDuration</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
@@ -1987,7 +1979,7 @@ The duration of the device beeper when a barcode is scanned, in milliseconds. It
 * Android(KitKat and above platform only)
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###decodeFrequency
 
@@ -2009,7 +2001,7 @@ The frequency of the device beeper when a barcode is successfully decoded. This 
 * Android(KitKat and above platform only)
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###decodeLEDFeedback
 
@@ -2029,7 +2021,7 @@ Enable and Disable Decode LED notification. When set to true, The Decode LED Not
 ####Platforms
 
 * Android
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###decodeLEDFeedbackMode
 
@@ -2057,7 +2049,7 @@ Specifies the Decode LED Notification Mode on the host device and remote scanner
 ####Platforms
 
 * Android
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###decodeLEDTime
 
@@ -2077,7 +2069,7 @@ Maximum time in milliseconds that the Decode LED notification will glow a green 
 ####Platforms
 
 * Android
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###decodeVolume
 
@@ -2099,7 +2091,7 @@ The volume of the device beeper when a barcode is scanned. It will accept values
 * Android(KitKat and above platform only)
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###decodeSound
 
@@ -2119,7 +2111,7 @@ Path to a local '.wav' file to be played when the scanner successfully decodes a
 * Android(KitKat and above platform only)
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###differentSymbolTimeout
 
@@ -2140,7 +2132,7 @@ When the aimType:continuousRead property is applied this value defines the inter
 
 * Android
 * Windows Mobile
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###disableScannerDuringNavigate
 
@@ -2162,36 +2154,34 @@ By default if you have enabled the Scanner on a page, through either JavaScript 
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###disconnectBtOnDisable
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Forces the scanner to disconnect from the terminal when it is 'disabled'. Since the scanner is disabled when you navigate to a new page, set this value to false if you want to maintain the bluetooth connection to your remote scanner.
-####Access
+Forces the scanner to disconnect from the terminal when disabled. Since the scanner is disabled when navigating to a new page, set this value to false to maintain the Bluetooth connection to a remote scanner.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.disconnectBtOnDisable</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.disconnectBtOnDisable</code> 
 
-
-
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Bluetooth Scanners on Symbol Technologies' devices)
+* Zebra devices only (Bluetooth Scanners on Symbol Technologies' devices)
 
 ###displayBtAddressBarcodeOnEnable
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-If set to true the bluetooth address will be displayed as a barcode on the screen during the pairing process, initiated by calling 'enable' on a bluetooth scanner. Not all devices support this functionality. Note you must specify this parameter before or within the call to 'enable'.
-####Access
+If set to true the Bluetooth address will be displayed as a barcode on the screen during the pairing process, initiated by calling 'enable' on a Bluetooth scanner. Not all devices support this functionality. Note you must specify this parameter before or within the call to 'enable'.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.displayBtAddressBarcodeOnEnable</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
@@ -2202,7 +2192,7 @@ If set to true the bluetooth address will be displayed as a barcode on the scree
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Bluetooth Scanners on Symbol Technologies' devices)
+* Zebra devices only (Bluetooth Scanners on Symbol Technologies' devices)
 
 ###dpmMode
 
@@ -2222,7 +2212,7 @@ Allows Direct Part Marking (DPM) barcodes to be read When true, but may adversel
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Imager / Camera Scanners on Symbol Technologies' devices. The scanning engine must support DPM barcodes.)
+* Zebra devices only (Imager / Camera Scanners on Symbol Technologies' devices. The scanning engine must support DPM barcodes.)
 
 ###dutchPostal
 
@@ -2244,7 +2234,7 @@ Enables or disables the symbology for Dutch Postal barcodes. If your application
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###ean13
 
@@ -2266,7 +2256,7 @@ Enables or disables the symbology for EAN 13 barcodes. If your application does 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###ean8
 
@@ -2288,7 +2278,7 @@ Enables or disables the symbology for EAN 8 barcodes. If your application does n
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###ean8convertToEan13
 
@@ -2310,14 +2300,14 @@ When true, EAN 8 barcodes will be converted to EAN 13 and EAN 13 parameters used
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###enableTimeout
 
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Configures the time (in seconds) allowed to pair with the external bluetooth scanner after calling the 'enable()' method. You must specify this parameter before calling 'enable' to change the default.
+Configures the time (in seconds) allowed to pair with the external Bluetooth scanner after calling the 'enable()' method. You must specify this parameter before calling 'enable' to change the default.
 ####Access
 
 
@@ -2330,7 +2320,7 @@ Configures the time (in seconds) allowed to pair with the external bluetooth sca
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Bluetooth Scanners on Symbol Technologies' devices)
+* Zebra devices only (Bluetooth Scanners on Symbol Technologies' devices)
 
 ###focusMode
 
@@ -2356,7 +2346,7 @@ Sets the focus mode in use.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Imager / Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Imager / Camera Scanners on Symbol Technologies' devices)
 
 ###friendlyName
 
@@ -2378,7 +2368,7 @@ Returns the friendly name associated with the scanner.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###gs1dataBar
 
@@ -2400,7 +2390,7 @@ Enables or disables the symbology for GS1 DataBar barcodes. If your application 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###gs1dataBarExpanded
 
@@ -2422,7 +2412,7 @@ Enables or disables the symbology for GS1 Databar Expanded barcodes. If your app
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###gs1dataBarLimited
 
@@ -2444,7 +2434,7 @@ Enables or disables the symbology for GS1 Databar Limited barcodes. If your appl
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###hapticFeedback
 
@@ -2466,7 +2456,7 @@ Controls the haptic feedback on decode. This means that if this is set to true, 
 ####Platforms
 
 * Android
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###i2of5
 
@@ -2488,7 +2478,7 @@ Enables or disables the symbology for I2of5 barcodes. If your application does n
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###i2of5convertToEan13
 
@@ -2510,7 +2500,7 @@ When true, EAN 8 barcodes will be converted to EAN 13 and EAN 13 parameters used
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###i2of5maxLength
 
@@ -2532,7 +2522,7 @@ Specifies the maximum number of allowable characters in a I2of5 barcode. If your
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###i2of5minLength
 
@@ -2554,7 +2544,7 @@ Specifies the minimum number of allowable characters in a I2of5 barcode. If your
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###i2of5redundancy
 
@@ -2576,7 +2566,7 @@ Sets the I2of5 Redundancy property, if set the barcode must be decoded twice bef
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###i2of5reportCheckDigit
 
@@ -2598,7 +2588,7 @@ When true, the barcode check digit(s) will be reported for scanned I2of5 barcode
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###i2of5verifyCheckDigit
 
@@ -2627,7 +2617,7 @@ Enables the verification of the I2of5 check digit.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###illuminationMode
 
@@ -2655,7 +2645,7 @@ Selects the illumination mode to use.
 
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Imager / Camera Scanners on Symbol Technologies devices)
+* Zebra devices only (Imager / Camera Scanners on Symbol Technologies devices)
 
 ###invalidDecodeFrequency
 
@@ -2677,7 +2667,7 @@ The frequency of the device beeper when a barcode is scanned but not successfull
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###invalidDecodeSound
 
@@ -2697,7 +2687,7 @@ Path to a local wave file to be played when a barcode is scanned but not success
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###inverse1dMode
 
@@ -2726,7 +2716,7 @@ Allows the user to select inverse 1D barcodes for decoding.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Scanners on Symbol Technologies' devices. The scanning engine must support inverse barcodes)
+* Zebra devices only (Scanners on Symbol Technologies' devices. The scanning engine must support inverse barcodes)
 
 ###japPostal
 
@@ -2748,7 +2738,7 @@ Enables or disables the symbology for Japanese Postal barcodes. If your applicat
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###klasseEins
 
@@ -2768,7 +2758,7 @@ Enables or disables the Klasse Eins laser on time function.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Laser Scanners on Symbol Technologies' devices)
+* Zebra devices only (Laser Scanners on Symbol Technologies' devices)
 
 ###korean3of5
 
@@ -2790,7 +2780,7 @@ Enables or disables the symbology for Korean 3of5 barcodes. If your application 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###korean3of5maxLength
 
@@ -2810,7 +2800,7 @@ Specifies the maximum number of allowable characters in a Korean 3of5 barcode. I
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###korean3of5minLength
 
@@ -2830,7 +2820,7 @@ Specifies the minimum number of allowable characters in a Korean 3of5 barcode. I
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###korean3of5redundancy
 
@@ -2850,7 +2840,7 @@ Sets Korean 3of5 Redundancy property, if set the barcode must be decoded twice b
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###lcdMode
 
@@ -2872,7 +2862,7 @@ Controls whether LCD Mode is enabled on the scanner. LCD Mode makes it easier to
 ####Platforms
 
 * Android
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###linearSecurityLevel
 
@@ -2903,7 +2893,7 @@ Describes the linear security level used during decoding. This determines the nu
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###lowBatteryScan
 
@@ -2925,7 +2915,7 @@ Set to false to disable scanning when the battery is low / critical or set to tr
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###macroMicroPdf
 
@@ -2945,7 +2935,7 @@ Enables or disables the symbology for MacroMicroPDF barcodes. If your applicatio
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###macroMicroPdfBufferLabels
 
@@ -2965,7 +2955,7 @@ If true, the scanner driver will return the barcode data only after the complete
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###macroMicroPdfConvertToMicroPdf
 
@@ -2985,7 +2975,7 @@ If true, MacroMicroPDF barcodes will be converted to MicroPDF codes.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###macroMicroPdfExclusive
 
@@ -3005,7 +2995,7 @@ If true, the scanner driver will not complete read requests while in the middle 
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###macroMicroPdfReportAppendInfo
 
@@ -3025,7 +3015,7 @@ If true, the appended info is concatenated to the decoded data before being retu
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###macroPdf
 
@@ -3045,7 +3035,7 @@ Enables or disables the symbology for Macro PDF barcodes. If your application do
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###macroPdfBufferLabels
 
@@ -3065,7 +3055,7 @@ When true, the scanner driver will return  he barcode data only after the comple
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###macroPdfConvertToPdf417
 
@@ -3085,7 +3075,7 @@ If true, MacroPDF barcodes will be converted to PDF417 codes.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###macroPdfExclusive
 
@@ -3105,7 +3095,7 @@ If true, the scanner driver will not complete read requests while in the middle 
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###matrix2of5
 
@@ -3127,7 +3117,7 @@ Enables or disables the symbology for Matrix 2of5 barcodes. If your application 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###matrix2of5maxLength
 
@@ -3149,7 +3139,7 @@ Specifies the maximum number of allowable characters in a Matrix 2of5 barcode. I
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###matrix2of5minLength
 
@@ -3171,7 +3161,7 @@ Specifies the minimum number of allowable characters in a Matrix 2of5 barcode. I
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###matrix2of5reportCheckDigit
 
@@ -3193,7 +3183,7 @@ When true, the barcode check digit(s) will be reported for scanned Matrix 2of5 b
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###matrix2of5verifyCheckDigit
 
@@ -3215,7 +3205,7 @@ Enables verification of the Matrix 2of5 symbology check digit.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###maxiCode
 
@@ -3237,7 +3227,7 @@ Enables or disables the symbology for Maxicode barcodes. If your application doe
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###microPdf
 
@@ -3259,7 +3249,7 @@ Enables or disables the symbology for Micro PDF barcodes. If your application do
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###microQr
 
@@ -3281,7 +3271,7 @@ Enables or disables the symbology for Micro QR barcodes. If your application doe
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###msi
 
@@ -3303,7 +3293,7 @@ Enables or disables the symbology for MSI barcodes. If your application does not
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###msiCheckDigitScheme
 
@@ -3331,7 +3321,7 @@ Specifies the check digit scheme used to verify MSI barcodes.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###msiCheckDigits
 
@@ -3359,7 +3349,7 @@ Sets the number of MSI check digits to use.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###msiMaxLength
 
@@ -3381,7 +3371,7 @@ Specifies the maximum number of allowable characters in a MSI barcode. If your a
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###msiMinLength
 
@@ -3403,7 +3393,7 @@ Specifies the minimum number of allowable characters in a MSI barcode. If your a
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###msiRedundancy
 
@@ -3425,7 +3415,7 @@ Sets the MSI Redundancy property, if set the barcode must be decoded twice befor
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###msiReportCheckDigit
 
@@ -3447,7 +3437,7 @@ When true, the barcode check digit(s) will be reported for scanned MSI barcodes.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###OneDQuietZoneLevel
 
@@ -3475,7 +3465,7 @@ Specifies the effort at which the decoder will attempt to decode margin-less bar
 ####Platforms
 
 * Android
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###pdf417
 
@@ -3497,7 +3487,7 @@ Enables or disables the symbology for PDF 417 barcodes. If your application does
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###picklistEx
 
@@ -3524,7 +3514,7 @@ Allows the imager or camera to decode only the barcode that is directly under th
 ####Platforms
 
 * Android
-* Zebra Devices Only(Imager / Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Imager / Camera Scanners on Symbol Technologies' devices)
 
 ###picklistMode
 
@@ -3553,7 +3543,7 @@ Allows the imager to decode only the barcode that is directly under the cross-ha
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Imager / Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Imager / Camera Scanners on Symbol Technologies' devices)
 
 ###poorQuality1dMode
 
@@ -3573,7 +3563,7 @@ Allows poor quality 1D barcodes to be read When true, but this will adversely af
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Imager / Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Imager / Camera Scanners on Symbol Technologies' devices)
 
 ###poorQualityDecodeEffortLevel
 
@@ -3601,7 +3591,7 @@ It provides enhancement modes for decoding barcodes of poor or degraded quality.
 ####Platforms
 
 * Android
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###qrCode
 
@@ -3623,7 +3613,7 @@ Enables or disables the symbology for QR Code barcodes. If your application does
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###rasterHeight
 
@@ -3643,7 +3633,7 @@ Vertical rastering height to use, as a percentage, when rasterMode:openAlways is
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Laser Scanners on Symbol Technologies' devices)
+* Zebra devices only (Laser Scanners on Symbol Technologies' devices)
 
 ###rasterMode
 
@@ -3671,7 +3661,7 @@ Describes the type of vertical rastering to use.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###rsmBatteryCapacity
 
@@ -3691,7 +3681,7 @@ The remaining capacity of the battery, in the range 0 to 100. 'unknown' will be 
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBatteryId
 
@@ -3711,7 +3701,7 @@ One of 'simple', 'double', 'disabled' or 'unknown'
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBatteryStatus
 
@@ -3731,7 +3721,7 @@ Indicates the status of the remote scanner's battery, will be one of 'unknown', 
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBluetoothAddress
 
@@ -3751,7 +3741,7 @@ Bluetooth address as FF:FF:FF:FF:FF:FF where FF is a hex number.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBluetoothAuthentication
 
@@ -3771,7 +3761,7 @@ True if authentication is required.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBluetoothAutoReconnect
 
@@ -3799,7 +3789,7 @@ Bluetooth reconnection scheme.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBluetoothBeepOnReconnectAttempt
 
@@ -3819,7 +3809,7 @@ When true, scanner will emit 5 beeps every 5 seconds whilst re-connection in pro
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBluetoothEncryption
 
@@ -3839,7 +3829,7 @@ True if encryption is required.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBluetoothFriendlyName
 
@@ -3859,7 +3849,7 @@ Friendly Bluetooth name, e.g. 'MyBTScanner'
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBluetoothHidAutoReconnect
 
@@ -3879,7 +3869,7 @@ Friendly Bluetooth name, e.g. 'MyBTScanner'
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBluetoothInquiryMode
 
@@ -3899,7 +3889,7 @@ To use a general inquiry mode, 'general' else, 'limited'
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBluetoothPinCode
 
@@ -3919,7 +3909,7 @@ Up to 5 character PIN code used for Bluetooth authentication.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBluetoothPinCodeType
 
@@ -3939,7 +3929,7 @@ Up to 5 character PIN code used for Bluetooth authentication.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmBluetoothReconnectionAttempts
 
@@ -3959,7 +3949,7 @@ How long the scanner tries to re-establish connection if it goes out of range, i
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmDateOfManufacture
 
@@ -3979,7 +3969,7 @@ Ring scanner date of manufacture as DDMMYY.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmDateOfService
 
@@ -3999,7 +3989,7 @@ Ring scanner date of service as DDMMYY.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmDecodeFeedback
 
@@ -4019,7 +4009,7 @@ If true, the remote scanner beeps and illuminates its green LED on a successful 
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmDeviceClass
 
@@ -4039,7 +4029,7 @@ The device class of the ring scanner.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmFirmwareVersion
 
@@ -4059,7 +4049,7 @@ Scanner's operating system version.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmForceSavePairingBarcode
 
@@ -4079,7 +4069,7 @@ Force saving the barcode assigned to the device to which the scanner has been pa
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmGoodScansDelay
 
@@ -4099,7 +4089,7 @@ Delay between good scans in proximity continuous mode, measured in milliseconds.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmIgnoreCode128Usps
 
@@ -4119,7 +4109,7 @@ Feature for ignoring Code 128 barcodes beginning with 420 and 421.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmLowBatteryIndication
 
@@ -4139,7 +4129,7 @@ Whether or not the ring scanner should give a low battery indication.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmLowBatteryIndicationCycle
 
@@ -4159,7 +4149,7 @@ Low battery indication cycle time, in seconds. Must be one of 15, 30, 60, 90 or 
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmMems
 
@@ -4179,7 +4169,7 @@ If you press the trigger on an RSM scanner, proximity enabled will be turned off
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmModelNumber
 
@@ -4199,7 +4189,7 @@ Ring scanner model number.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmPagingBeepSequence
 
@@ -4219,7 +4209,7 @@ Range 0 to 15 to specify the pattern for the paging beep sequence.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmPagingEnable
 
@@ -4239,7 +4229,7 @@ Specify whether paging the device is enabled.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmProximityContinuous
 
@@ -4259,7 +4249,7 @@ Proximity continuous mode.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmProximityDistance
 
@@ -4279,7 +4269,7 @@ Specify the distance for the proximity feature as 'short', 'medium' or 'long'
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmProximityEnable
 
@@ -4299,7 +4289,7 @@ If you press the trigger on an RSM scanner, proximity enabled will be turned off
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmScanLineWidth
 
@@ -4319,7 +4309,7 @@ The laser scan line width, 'wide' or 'narrow'.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmScanTriggerWakeup
 
@@ -4339,7 +4329,7 @@ Scanner trigger will wakeup the device from a low power state.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###rsmSerialNumber
 
@@ -4359,7 +4349,7 @@ Ring scanner serial number.
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Symbol Technologies' Bluetooth barcode scanners, model RS507)
+* Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
 
 ###sameSymbolTimeout
 
@@ -4380,7 +4370,7 @@ When the aimType:continuousRead property is applied this value defines the inter
 
 * Android
 * Windows Mobile
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###scanTimeout
 
@@ -4402,7 +4392,7 @@ Maximum time in milliseconds that laser scanners will emit a beam or imager scan
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###scannerType
 
@@ -4445,7 +4435,7 @@ Enables or disables the symbology for Signature barcodes. If your application do
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###signatureImageHeight
 
@@ -4465,7 +4455,7 @@ Specifies the output height of the captured signature barcode. Signature barcode
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###signatureImageQuality
 
@@ -4485,7 +4475,7 @@ Specifies the output quality of the captured signature barcode. Signature barcod
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###signatureImageWidth
 
@@ -4505,7 +4495,7 @@ Specifies the output width of the captured signature barcode. Signature barcodes
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###timedAimDuration
 
@@ -4526,7 +4516,7 @@ Aim duration in milliseconds for aimType:timedHold and aimType:timedRelease. The
 
 * Android
 * Windows Mobile
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###tlc39
 
@@ -4548,7 +4538,7 @@ Enables or disables the symbology for TLC 39 barcodes. If your application does 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###triggerConnected
 
@@ -4570,7 +4560,7 @@ Only applies to an enabled laser or imaging scanner. Disconnecting the trigger w
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Scanners on Symbol Technologies' devices)
+* Zebra devices only (scanners on Symbol-branded devices)
 
 ###trioptic39
 
@@ -4592,7 +4582,7 @@ Enables or disables the symbology for Trioptic 39 barcodes. If your application 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###trioptic39Redundancy
 
@@ -4614,7 +4604,7 @@ Sets the Trioptic 39 Redundancy property, if set the barcode must be decoded twi
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###ukPostal
 
@@ -4636,7 +4626,7 @@ Enables or disables the symbology for UK Postal barcodes. If your application do
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###ukPostalReportCheckDigit
 
@@ -4656,7 +4646,7 @@ When true, the barcode check digit(s) will be reported for scanned UK Postal bar
 ####Platforms
 
 * Android
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcEanBookland
 
@@ -4678,7 +4668,7 @@ Enables or disables decoding of UPC EAN Bookland barcodes.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcEanBooklandFormat
 
@@ -4706,7 +4696,7 @@ Specifies the bookland format to use when decoding UPC EAN Bookland barcodes.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcEanConvertGs1dataBarToUpcEan
 
@@ -4728,7 +4718,7 @@ If true, RSS barcodes will be converted to UPC/EAN format. For this setting to w
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcEanCoupon
 
@@ -4750,7 +4740,7 @@ Enables or disables decoding of UPC EAN Coupon barcodes.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcEanLinearDecode
 
@@ -4772,7 +4762,7 @@ Sets the linear decode property.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcEanRandomWeightCheckDigit
 
@@ -4794,7 +4784,7 @@ When true, enables random weight check digit verification.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcEanRetryCount
 
@@ -4816,7 +4806,7 @@ Sets the retry count for auto-discriminating for supplementals. The value must b
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcEanSecurityLevel
 
@@ -4838,7 +4828,7 @@ Sets the Security level for decoding UPC EAN barcodes and accepts a value betwee
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcEanSupplemental2
 
@@ -4860,7 +4850,7 @@ When true, enables the supplemental barcode decoding. Note you must have upcEanS
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcEanSupplemental5
 
@@ -4882,7 +4872,7 @@ When true, enables the supplemental barcode decoding. Note you must have upcEanS
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcEanSupplementalMode
 
@@ -4915,7 +4905,7 @@ Describes the UPC EAN Supplemental mode.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upca
 
@@ -4937,7 +4927,7 @@ Enables or disables the symbology for UPCA barcodes. If your application does no
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcaPreamble
 
@@ -4966,7 +4956,7 @@ Controls the preamble applied to the UPCA barcode.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upcaReportCheckDigit
 
@@ -4988,7 +4978,7 @@ When true, the barcode check digit(s) will be reported for scanned UPCA barcodes
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upce0
 
@@ -5010,7 +5000,7 @@ Enables or disables the symbology for UPCE0 barcodes. If your application does n
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upce0convertToUpca
 
@@ -5032,7 +5022,7 @@ When true, scanned UPCE0 barcodes will be converted to UPCA and UPCA parameters 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upce0preamble
 
@@ -5061,7 +5051,7 @@ Controls the preamble applied to the UPCE0 barcode.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upce0reportCheckDigit
 
@@ -5083,7 +5073,7 @@ When true, the barcode check digit(s) will be reported for scanned UPCE0 barcode
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upce1
 
@@ -5105,7 +5095,7 @@ Enables or disables the symbology for UPCE1 barcodes. If your application does n
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upce1convertToUpca
 
@@ -5127,7 +5117,7 @@ When true, scanned UPCE1 barcodes will be converted to UPCA and UPCA parameters 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upce1preamble
 
@@ -5156,7 +5146,7 @@ Controls the preamble applied to the UPCE1 barcode.
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###upce1reportCheckDigit
 
@@ -5178,7 +5168,7 @@ When true, the barcode check digit(s) will be reported for scanned UPCE1 barcode
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###us4state
 
@@ -5200,7 +5190,7 @@ Enables or disables the symbology for US 4-State barcodes. If your application d
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###us4stateFics
 
@@ -5222,7 +5212,7 @@ Enables or disables the symbology for US 4-State FICS barcodes. If your applicat
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###usPlanet
 
@@ -5244,7 +5234,7 @@ Enables or disables the symbology for US Planet barcodes. If your application do
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###usPlanetReportCheckDigit
 
@@ -5264,7 +5254,7 @@ When true, the barcode check digit(s) will be reported for scanned US Planet bar
 ####Platforms
 
 * Android
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###usPostNet
 
@@ -5286,7 +5276,7 @@ Enables or disables the symbology for US Post Net barcodes. If your application 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###usPostNetReportCheckDigit
 
@@ -5306,7 +5296,7 @@ When true, the barcode check digit(s) will be reported for scanned US Post Net b
 ####Platforms
 
 * Android
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###viewfinderFeedback
 
@@ -5335,7 +5325,7 @@ Configures the feedback given after a successful scan. This value is ignored if 
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
 
 ###viewfinderFeedbackTime
 
@@ -5357,7 +5347,7 @@ If the viewfinderFeedback:enabled or viewfinderFeedback:reticle are applied then
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
 
 ###viewfinderHeight
 
@@ -5377,7 +5367,7 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
 
 ###viewfinderMode
 
@@ -5407,7 +5397,7 @@ Configures the mode of the scanner viewfinder window. This attribute is not supp
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
 
 ###viewfinderWidth
 
@@ -5427,7 +5417,7 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
 
 ###viewfinderX
 
@@ -5447,7 +5437,7 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
 
 ###viewfinderY
 
@@ -5467,7 +5457,7 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 ####Platforms
 
 * Windows Mobile
-* Zebra Devices Only(Camera Scanners on Symbol Technologies' devices)
+* Zebra devices only (Camera Scanners on Symbol Technologies' devices)
 
 ###webcode
 
@@ -5489,7 +5479,7 @@ Enables or disables the symbology for Webcode barcodes. If your application does
 * Android
 * Windows Mobile
 * Windows CE
-* Zebra Devices Only(Not all scanning engines support all symbologies or all symbology properties)
+* Zebra devices only (Not all scanning engines support all symbologies or all symbology properties)
 
 ###webcodeDecodeGtSubtype
 
@@ -5536,7 +5526,7 @@ On the Zebra Omnii XT15 device running Windows Mobile/CE, the decode success and
 
 Once associated with the Device a Bluetooth Scanner will remain associated even after losing the BT connection. In order to associate a different Bluetooth scanner with the device it is necessary to scan the 'unpairing' barcode and then invoke the 'disabled' method followed by the 'enabled' method, this will allow you to scan the BT association barcode with a different scanner. You can override this default behavior using the disconnectBtOnDisable property.
 
-The following messages will be received from the Bluetooth Scanner in the bluetoothStatus event:
+The following messages will be received from the Bluetooth Scanner in the BluetoothStatus event:
 
 **'BTScanAssociationBarcode'**
 

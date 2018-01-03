@@ -7,42 +7,39 @@ layout: guide.html
 
 
 ## Overview
-The `Webview` is the core container used for rendering your application code. You can control certain behaviors of the webview by using this API class.
+This is the core container used for rendering application code. Certain behaviors of the WebView can be controlled by using this API class.
 
-> Note: There is currently an issue with hyperlinks on CE devices using the IE Engine: if you are attempting to click a link while holding the shift hardware key on the device, the link will not work properly. This is a known issue and is being worked on currently.
-        
+> Note: On CE devices that use the IE Engine, clicking a hyperlink while holding the shift hardware key on the device does not work properly.
+
 ## Enabling the API
-There are two methods of enabling the Webview API:
+There are two methods of enabling the WebView API:
 
 * Include all ebapi modules
 * Include only the required API modules
 
-For either of these methods, you'll need to include files from the `/Enterprise Browser/JavaScript Files/Enterprise Browser` directory on the computer that you installed the Enterprise Browser.
+Either way, the included files will be from: 
+`/Enterprise Browser/JavaScript Files/Enterprise Browser`,
+a directory on the computer that contains the Enterprise Browser installation.
 
 ### Include all JS API modules
-To include all JS APIs, copy the ebapi-modules.js file to a location accessible by the app's files and include a reference to the JavaScript file in the app's HTML. For instance, to include the modules file in the app's `index.html`, copy the file to the same directory as that `index.html` and add the following line to the HTML's HEAD section:
+To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include the JavaScript modules file in the app. For instance, to include the modules file in the app's `index.html`, copy the modules file to the same directory as the `index.html` and add the following line to the HEAD section of the app's `index.html` file:
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
 
-> Note: that the pathing for this file is relative to the current page.
-
-This will define the EB class within the page. Any page you need to use the modules will need to have the .js file included in this fashion.
+> This will define the EB class within the page. **Note that the path for this file is relative to the current page** (index.html). Any page on which the modules are required will need to have the required .js file(s) included in this fashion.
 
 ### Include only the required modules
-To include single APIs, you must first include the `ebapi.js` in your HTML as well as the API file you want to use. For instance, to use the Webview API, I would add the following code to my HTML file(s), assuming the API files have been copied to the same directory as the HTML.
+To include individual APIs, include the `ebapi.js` in the HTML, and then the additional required API file(s). For instance, to use the WebView API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
     <script type="text/javascript" charset="utf-8" src="eb.webview.js"></script>
 
-The ebapi.js file is necessary for all single API inclusions.
-        
 
+> In the code lines above, notice that `ebapi.js` is included first, followed by `eb.webview.js`, which is the WebView API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
 
 ##Methods
-
-
 
 ### clearApplicationCache()
 Used for clearing HTML5 Application Cache data in Enterprise Browser application. Note: Use WebView clearCache API for clearing cache data.
@@ -285,14 +282,12 @@ Return an active tab index. For change active tab use Use EB.NativeTabbar.curren
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Sets whether the WebView should not load image resources from the network. Note that disabling all network loads using blockNetworkLoads property or via BlockNetworkLoads config tag will also prevent network images from loading, even if this flag is set to false. When the value of this setting is changed from true to false, network images resources referenced by content currently displayed by the WebView are fetched automatically. Note: This property overrides the value which was set using BlockNetworkImage configuration tag.
-####Access
+Controls whether the WebView loads image resources from the network. Note that disabling all network loads using blockNetworkLoads property or via BlockNetworkLoads config tag also will prevent network images from loading, even if this flag is set to false. When the value of this setting is changed from true to false, network images resources referenced by content currently displayed by the WebView are fetched automatically. **Note**: This property overrides the value set using BlockNetworkImage configuration tag.
 
+####Access
 
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.blockNetworkImage</code>
-
-
 
 ####Platforms
 
@@ -303,14 +298,12 @@ Sets whether the WebView should not load image resources from the network. Note 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Sets whether the WebView should not load resources from the network. Use blockNetworkImage property or BlockNetworkImage config tag to only avoid loading image resources. Note that if the value of this setting is changed from true to false, network resources referenced by content currently displayed by the WebView are not fetched until reloading of page is not done. Note: This property overrides the value which was set using BlockNetworkLoads configuration tag.
-####Access
+Controls whether the WebView loads resources from the network. Use blockNetworkImage property or BlockNetworkImage config tag to only avoid loading image resources. If the value of this setting is changed from true to false, network resources referenced by content currently displayed by the WebView are not fetched until reloading of page is not done. **Note**: This property overrides the value which was set using BlockNetworkLoads configuration tag.
 
+####Access
 
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.blockNetworkLoads</code>
-
-
 
 ####Platforms
 
@@ -321,32 +314,28 @@ Sets whether the WebView should not load resources from the network. Use blockNe
 ####Type
 <span class='text-info'>INTEGER</span> <span class='label label-warning'>Read Only</span>
 ####Description
-The browser cache size, in whole MBs. Defines in config.xml: Navigation\\Cache.
+The browser cache size, in whole MBs. Defined in the Navigation\\Cache parameter of the `config.xml` file.
 ####Access
-
 
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.cacheSize</code>
 
-
-
 ####Platforms
 
-* Windows Mobile(WebKit)
+* Windows Mobile (WebKit)
 
 ###contentHeight
 
 ####Type
 <span class='text-info'>INTEGER</span> <span class='label label-warning'>Read Only</span>
+
 ####Description
 Gets the height of the HTML content.
-####Access
 
+####Access
 
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.contentHeight</code>
-
-
 
 ####Platforms
 
@@ -357,16 +346,13 @@ Gets the height of the HTML content.
 ####Type
 <span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
 ####Description
-Enable WebView zoom. Use 'EnableZoom' parameter in Config.xml to configure this value.
+Enable WebView zoom. Use 'EnableZoom' parameter in the `config.xml` file to configure this value.
 ####Params
 <p><strong>Default:</strong> true</p>
 ####Access
 
-
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.enableZoom</code>
-
-
 
 ####Platforms
 
@@ -377,18 +363,16 @@ Enable WebView zoom. Use 'EnableZoom' parameter in Config.xml to configure this 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
 ####Description
-Specifies the default font to use when rendering text in web pages. The specified font should be a TrueType font present on the device. On Windows the default font has been set to 'Tahoma' as this is present on all Symbol WM / CE devices, note that Tahoma has no italic or oblique variants. On the Enterprise Tablet the default is Droid Sans Fallback. The font specified must be stored in \Windows for Windows WM / CE devices, or /system/fonts for Enterprise Tablet. Defines in config.xml: HTMLStyles\\FontFamily 
+Specifies the default font to use when rendering text in web pages. The specified font should be a TrueType font present on the device. On Windows, the default font has been set to 'Tahoma' as this is present on all Zebra devices running Windows Mobile/CE. Note that Tahoma has no italic or oblique variants. On the Enterprise Tablet, the default is Droid Sans Fallback. The font specified must be stored in \Windows for Windows Mobile/CE devices or /system/fonts folder for Enterprise Tablet. Defined in the HTMLStyles\\FontFamily parameter of the `config.xml` file.  
+
 ####Access
 
-
-* Class: This property can only be accessed via the API class object.
+* Class: This property can be accessed only via the API class object.
 	* <code>EB.WebView.fontFamily</code>
-
-
 
 ####Platforms
 
-* Windows Mobile(WebKit)
+* Windows Mobile (WebKit)
 
 ###framework
 
@@ -401,8 +385,6 @@ Same as System.webViewFramework.
 
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.framework</code>
-
-
 
 ####Platforms
 
@@ -437,7 +419,8 @@ Use full screen mode.
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Can be defined in config.xml: Navigation\\NavTimeout. Number of milliseconds(maximum is 45000) before the browser times out and navigates to the page specified in the badlink setting. If it is determined that the destination is unreachable regardless of wait time, the badlink may be loaded before NAVTIMEOUT. This is the time taken to establish communication with the server, not the time taken to fully load the page.Note that the navigation timeout will not be invoked when navigating to the start page, best practice is to store your first page locally to avoid connectivity issues at start up, you can then redirect to an online page if desired.
+Number of milliseconds (max. = 45000) before the browser times out and navigates to the page specified in the badlink setting. Can be defined using the Navigation\\NavTimeout parameter of the `config.xml` file. If it is determined that the destination is unreachable regardless of wait time, the badlink may be loaded before NAVTIMEOUT. This is the time taken to establish communication with the server, not the time taken to fully load the page. Note that the navigation timeout will not be invoked when navigating to the start page. The best practice is to store the first page locally to avoid connectivity issues at start up, and then redirect to an online page if desired.
+
 ####Params
 <p><strong>Default:</strong> 45000</p>
 ####Access
@@ -450,34 +433,32 @@ Can be defined in config.xml: Navigation\\NavTimeout. Number of milliseconds(max
 
 ####Platforms
 
-* Windows Mobile(WebKit)
+* Windows Mobile (WebKit)
 
 ###scrollTechnique
 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
 ####Description
-Specifies the technique used to scroll about the page.Defines in config.xml: Scrolling\\ScrollTechnique.
+Specifies the technique used to scroll about the page. Defined in the Scrolling\\ScrollTechnique paramter of the `config.xml` file.
 ####Params
 <p><strong>Default:</strong> FingerScroll</p>
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.WebView.SCROLL_NONE - String: None No scrollbars will be displayed and the page will not respond to finger swipes.
-* Constant: EB.WebView.SCROLL_SCROLLBARS - String: Scrollbars When the size of the page is larger than the screen scrollbars will be presented which can be used to scroll the page.
-* Constant: EB.WebView.SCROLL_FINGER - String: FingerScroll You can scroll around the page using finger swiping.
-####Access
+* Constant: EB.WebView.SCROLL_NONE - String: (None). No scrollbars will be displayed and the page will not respond to finger swipes.
+* Constant: EB.WebView.SCROLL_SCROLLBARS - String: "Scrollbars" When the size of the page is larger than the screen, scrollbars will be presented for scrolling the page.
+* Constant: EB.WebView.SCROLL_FINGER - String: "FingerScroll" Scrolling is possible using finger swiping.
 
+#### Access
 
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.scrollTechnique</code>
 
-
-
 ####Platforms
 
-* Windows Mobile(WebKit)
+* Windows Mobile (WebKit)
 
 ###textZoomLevel
 
@@ -496,44 +477,45 @@ Sets the font size to be displayed on the page, set to 0 for the smallest font a
 ####Platforms
 
 * Android
-* Windows Mobile(WebKit)
+* Windows Mobile (WebKit)
 
 ###userAgent
 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
 ####Description
-Defines in config.xml: Navigation\\UserAgent. When visiting a web server the WebKit browser will report its self as the specified user agent. Use the following substitution variables:
+Defined in in the Navigation\\UserAgent parameter of the `config,.xml` file. When visiting a web server, the WebKit browser reports itself as the specified user agent. Use the following substitution variables:
 
 * %p - platform name ("Windows CE " + version number)
 * %w - WebKit version number
-* %e - WebKit version number.
+* %e - WebKit version number
 
-Use the UserAgent setting to spoof your device to the server, e.g. to view content designed for the desktop on your mobile screen.
-From RhoElements 2.1 onwards the default value was changed to work out of the box with a greater number of server configurations, prior to RhoElements 2.1 the default user agent was: "Mozilla/5.0 (%p) AppleWebKit/%w (KHTML, like Gecko) WebKit/%e Safari/%w"
+Use the UserAgent setting to spoof the device to the server (i.e. to view content designed for the desktop on a mobile screen).
+
+From RhoElements 2.1 onward, the default value was changed to work out of the box with a greater number of server configurations. Prior to RhoElements 2.1, the default user agent was "**Mozilla/5.0 (%p) AppleWebKit/%w (KHTML, like Gecko) WebKit/%e Safari/%w**"
                 
 ####Access
-
 
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.userAgent</code>
 
 
-
 ####Platforms
 
-* Windows Mobile(WebKit)
+* Windows Mobile (WebKit)
 
 ###viewportEnabled
 
 ####Type
 <span class='text-info'>BOOLEAN</span> <span class='label label-warning'>Read Only</span>
+
 ####Description
-Get whether viewport meta tag processing is enabled or disabled in config.xml: Navigation\\ViewportEnabled.
+Get whether viewport meta tag processing is enabled or disabled in the Navigation\\ViewportEnabled parameter of the `config.xml` file.
+
 ####Params
 <p><strong>Default:</strong> true</p>
-####Access
 
+####Access
 
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.viewportEnabled</code>
@@ -542,14 +524,15 @@ Get whether viewport meta tag processing is enabled or disabled in config.xml: N
 
 ####Platforms
 
-* Windows Mobile(WebKit)
+* Windows Mobile (WebKit)
 
 ###viewportWidth
 
 ####Type
 <span class='text-info'>INTEGER</span> <span class='label label-warning'>Read Only</span>
 ####Description
-Default viewport width to use for pages that do not have a viewport meta tag (uses 1:1 scaling if not specified).Defines in config.xml: Navigation\\ViewportWidth.
+Default viewport width to use for pages that do not have a viewport meta tag (uses 1:1 scaling if not specified). Defined in the Navigation\\ViewportWidth parameter of the `config.xml` file.
+
 ####Access
 
 
@@ -560,7 +543,7 @@ Default viewport width to use for pages that do not have a viewport meta tag (us
 
 ####Platforms
 
-* Windows Mobile(WebKit)
+* Windows Mobile (WebKit)
 
 ###zoomPage
 
@@ -579,5 +562,5 @@ Sets the zoom factor of the page. Factor 1.0 is no zoom, values less than 1.0 ar
 ####Platforms
 
 * Android
-* Windows Mobile(WebKit)
+* Windows Mobile (WebKit)
 

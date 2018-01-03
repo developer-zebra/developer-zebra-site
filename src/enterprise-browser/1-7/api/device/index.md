@@ -7,7 +7,7 @@ layout: guide.html
 
 
 ## Overview
-The Device API provides access to some device-level functionality such as suspend, calibrate, powerOff, wake, reboot etc. and available only on Zebra devices.
+The Device API provides access to some device-level functionality such as suspend, calibrate, powerOff, wake, reboot etc. Available only on Zebra devices.
 
 ## Enabling the API
 There are two methods of enabling the Device API: 
@@ -37,7 +37,8 @@ To include individual APIs, first include a reference to the `ebapi.js` module i
 ##Methods
 
 ### acquirePartialWakeLock()
-This API is used for acquiring partial wake lock in Android device. It ensures that the CPU is running; the screen and keyboard backlight will be allowed to go off, if the user presses the power button. Note: On calling this method, the wakelocktype config tags will be affected.
+This API is used for acquiring partial wake lock in Android device. It ensures that the CPU is running; the screen and keyboard backlight will be allowed to go off, if the user presses the power button. Note: On calling this method, the wakelocktype 
+ tags will be affected.
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>

@@ -21,7 +21,7 @@ Either way, the included files will be from:
 a directory on the computer that contains the Enterprise Browser installation.
 
 ### Include all JS API modules
-To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by your app's files and include the JavaScript modules file in your app. For instance, to include the modules file in your `index.html`, copy the file to the same directory as your index.html and add the following line to the HEAD section of your index.html file:
+To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location accessible by the app's files and include the JavaScript modules file in the app. For instance, to include the modules file in the app's `index.html`, copy the modules file to the same directory as the index.html and add the following line to the HEAD section of the app's index.html file:
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi-modules.js"></script>
@@ -30,7 +30,7 @@ To include all JavaScript APIs, copy the `ebapi-modules.js` file to a location a
 
 ### Include only the required modules
 
-To include individual APIs, you must first include the `ebapi.js` in your HTML, and then the additional required API file(s). For instance, to use the SIP API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
+To include individual APIs, include the `ebapi.js` in the HTML, and then the additional required API file(s). For instance, to use the SIP API, add the following code to the HTML file(s). Again, this assumes that relevant API files have been copied to the same directory as the HTML.
 
     :::html
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>

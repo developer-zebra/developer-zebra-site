@@ -13,7 +13,7 @@ In essence, the process boils down to this:
 1. **Deploy the target Android app** (on which to enable scanning) to a Zebra device.  
 2. **Launch DataWedge** on the device.
 3. **Configure DataWedge INPUT (barcode scanner) and OUTPUT (Intent)**.
-4. **Optional: Create a Profile** to associate with the target app. If no Profile is created and assigned, DataWedge will use Profile0, a built-in app designed for this purpose. 
+4. **Optional: Create a Profile** to associate with the target app. If no Profile is created and assigned, DataWedge will use Profile0, a built-in Profile designed for this purpose. 
 
 Details and source code follow. 
 

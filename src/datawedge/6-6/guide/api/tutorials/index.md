@@ -74,7 +74,8 @@ See the DataWedge [Intent Output guide](../../output/intent) for more informatio
 ## Source Code
 
 ### Main Activity
-Below is the sourcecode for the main activity of the sample app. <br>
+
+Below is the sourcecode for the MainActivity.java of the sample app. <br>
 For the `build.gradle` and other resources, visit the [app's project page on github](https://github.com/darryncampbell/DataWedge-Intent-Example-1).
 
 
@@ -101,6 +102,20 @@ For the `build.gradle` and other resources, visit the [app's project page on git
 
 		public class MainActivity extends AppCompatActivity {
 
+		// 
+		// The section snippet below registers to receive the data broadcast from the
+		// DataWedge intent output. In the example, a dynamic broadcast receiver is 
+		// registered in the onCreate() call of the target app. Notice that the filtered action 
+		// matches the "Intent action" specified in the DataWedge Intent Output configuration.
+		// 
+		// For a production app, a more efficient way to the register and unregister the receiver 
+		// might be to use the onResume() and onPause() calls. 
+
+		// Note: If DataWedge had been configured to start an activity (instead of a broadcast), 
+		// the intent could be handled in the app's manifest by calling getIntent() in onCreate(). 
+		// If configured as startService, then a service must be created to receive the intent.
+		//
+
 	    @Override
 	    protected void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
@@ -118,7 +133,13 @@ For the `build.gradle` and other resources, visit the [app's project page on git
 	        super.onDestroy();
 	        unregisterReceiver(myBroadcastReceiver);
 	    }
-
+	    //
+	    // After registering the broadcast receiver, the next step (below) is to define it.  
+	    // Here it's done in the MainActivity.java, but also can be handled by a separate class.
+	    // The logic of extracting the scanned data and displaying it on the screen 
+	    // is executed in its own method (later in the code). Note the use of the 
+	    // extra keys defined in the strings.xml file.  
+	    //  
 	    private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver() {
 	        @Override
 	        public void onReceive(Context context, Intent intent) {
@@ -139,17 +160,22 @@ For the `build.gradle` and other resources, visit the [app's project page on git
 	                //
 	                //  Received a barcode scan
 	                //
+	                
 	                try {
 	                    displayScanResult(intent, "via Broadcast");
 	                } catch (Exception e) {
-	                    //
-	                    // Catch if the UI does not exist when broadcast is received 
-	                    //
+	                
+	                //
+	                // Catch if the UI does not exist when broadcast is received 
+	                //
 	                }
 	            }
 	        }
 	    };
-
+	    //
+	    // The section below assumes that a UI exists in which to place the data. A production 
+	    // application would be driving much of the behavior following a scan.
+	    //
 	    private void displayScanResult(Intent initiatingIntent, String howDataReceived)
 	    {
 	        String decodedSource = initiatingIntent.getStringExtra(getResources().getString(R.string.datawedge_intent_key_source));
@@ -177,11 +203,13 @@ Predefining some of the strings simplifies the process of receiving and extracti
 	    <string name="datawedge_intent_key_data">com.symbol.datawedge.data_string</string>
 	</resources>
 
+<!-- Notes integrated into Main Activity
+
 ### Register broadcast receiver
 
 The snippet below is the section of the main activity (above) that registers to receive the data broadcast from the DataWedge intent output. In the example, a dynamic broadcast receiver is registered in the `onCreate()` call of the target app. For a production app, a more efficient way to the register and unregister the receiver might be to use the `onResume()` and `onPause()` calls. Notice that the filtered action matches the "Intent action" specified in [Step 4](#configuredatawedge), above.
 
-**Note**: If DataWedge had been configured to start an activity (instead of a broadcast), it could be handled in the app's manifest by calling `getIntent()` in `onCreate()`. 
+**Note**: If DataWedge had been configured to start an activity (instead of a broadcast), it could be handled in the app's manifest by calling `getIntent()` in `onCreate()`. If configured as startService, then a service must be created to receive the intent.
 
 	:::java
 	@Override
@@ -192,6 +220,8 @@ The snippet below is the section of the main activity (above) that registers to 
 	    filter.addAction(getResources().getString(R.string.dw_action));
 	    registerReceiver(myBroadcastReceiver, filter);
 	}
+
+ -->
 
 -----
 

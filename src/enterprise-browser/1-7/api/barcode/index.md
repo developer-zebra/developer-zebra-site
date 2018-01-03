@@ -4,10 +4,11 @@ productversion: '1.7'
 product: Enterprise Browser
 layout: guide.html
 ---
-## Overview
-The Barcode Module controls functionality of the device scanner. Check the platform indicators in each property or method section. If developing for a device with only a camera, the number of symbologies available will be limited only to the most common such as EAN13 and UPCA, and scanning will be available only through the device camera. If the app is running on more well-equipped hardware, finer control over a more fully featured Scanner wilol be available, often with a choice of scanner hardware to use on the device. 
 
-If the use case involves capturing a single barcode (for example, a pricing kiosk app) Zebra recommends using the `Barcode.take(callback)` method. If the app will decode multiple barcode types common in enterprise scenarios (for example a warehouse inventory and receiving app), Zebra recommends using the `Barcode.enable(callback)` method. 
+## Overview
+The Barcode Module controls functionality of the device scanner. Check the platform indicators in each property or method section. If developing for a device with only a camera, the number of symbologies available will be limited to the most common, such as EAN13 and UPCA, and scanning will be available only through the device camera. If the app is running on more well-equipped hardware, finer control over a more fully featured Scanner is available, often with a choice of scanner hardware to use on the device. 
+
+If the use case involves capturing a single barcode type (for example, a pricing kiosk app) Zebra recommends using the `Barcode.take(callback)` method. If the app will decode multiple barcode types common in enterprise scenarios (for example a warehouse inventory and receiving app), Zebra recommends using the `Barcode.enable(callback)` method. 
 
 **Notes**: 
 * **Only foreground apps have access to scanning hardware**. When an app is sent to the background, its state is saved and scanner control is automatically relinquished. When a scanner app returns to the foreground, its previous state is reapplied. 
@@ -751,9 +752,9 @@ When true, automatically appends the tab character to the end of any barcodes sc
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Aztec barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
-####Access
+Controls the symbology for Aztec barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.aztec</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
@@ -807,6 +808,7 @@ Specifies the width of the laser beam. All devices will support normal beam widt
 * Constant: EB.Barcode.BEAM_NORMAL - String: normal Laser beam width is normal.
 * Constant: EB.Barcode.BEAM_WIDE - String: wide Laser beam width is wide.
 * Constant: EB.Barcode.BEAM_NARROW - String: narrow Laser beam width is narrow.
+
 ####Access
 
 
@@ -826,7 +828,7 @@ Specifies the width of the laser beam. All devices will support normal beam widt
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables bidirectional redundancy.
+Controls bidirectional redundancy.
 ####Access
 
 
@@ -846,7 +848,7 @@ Enables or disables bidirectional redundancy.
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Canadian Postal barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Canadian Postal barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -868,7 +870,7 @@ Enables or disables the symbology for Canadian Postal barcodes. If your applicat
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Chinese 2of5 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Chinese 2of5 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -890,7 +892,7 @@ Enables or disables the symbology for Chinese 2of5 barcodes. If your application
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Codabar barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Codabar barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -1022,7 +1024,7 @@ Sets the Codabar Redundancy property, if set the barcode must be decoded twice b
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Code11 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Code11 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -1161,7 +1163,7 @@ When true, the barcode check digit(s) will be reported for scanned Code 11 barco
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Code128 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Code128 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -1388,7 +1390,7 @@ Sets the Code 128 security level and accepts a value between 0 and 3 inclusive. 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Code 39 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Code 39 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -1608,7 +1610,7 @@ Turns on verification of the Code 39 check digit.
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Code 93 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Code 93 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -1696,7 +1698,7 @@ Sets the Code 93 Redundancy property, if set the barcode must be decoded twice b
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Composite AB barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Composite AB barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -1767,7 +1769,7 @@ This setting causes the UPC rules specified in the UPC EAN parameters to be used
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Composite C barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Composite C barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -1809,7 +1811,7 @@ Specifies the time, in seconds, that an external scanner will be allowed to rema
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for D2of5 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for D2of5 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -1918,7 +1920,7 @@ Specifies the number of bytes allocated to receive the scanned barcode. This par
 <span class='text-info'>BOOLEAN</span> 
 
 ####Description
-Enables or disables the symbology for Datamatrix barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Datamatrix barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 
 ####Access
 
@@ -2219,7 +2221,7 @@ Allows Direct Part Marking (DPM) barcodes to be read When true, but may adversel
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Dutch Postal barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Dutch Postal barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -2241,7 +2243,7 @@ Enables or disables the symbology for Dutch Postal barcodes. If your application
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for EAN 13 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for EAN 13 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -2263,7 +2265,7 @@ Enables or disables the symbology for EAN 13 barcodes. If your application does 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for EAN 8 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for EAN 8 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -2292,8 +2294,6 @@ When true, EAN 8 barcodes will be converted to EAN 13 and EAN 13 parameters used
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.ean8convertToEan13</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.ean8convertToEan13</code> 
-
-
 
 ####Platforms
 
@@ -2375,7 +2375,7 @@ Returns the friendly name associated with the scanner.
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for GS1 DataBar barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance. This symbology was previously known as rss.
+Controls the symbology for GS1 DataBar barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. This symbology was previously known as rss.
 ####Access
 
 
@@ -2397,7 +2397,7 @@ Enables or disables the symbology for GS1 DataBar barcodes. If your application 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for GS1 Databar Expanded barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance. This symbology was previously known as rssExp.
+Controls the symbology for GS1 Databar Expanded barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. This symbology was previously known as rssExp.
 ####Access
 
 
@@ -2419,7 +2419,7 @@ Enables or disables the symbology for GS1 Databar Expanded barcodes. If your app
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for GS1 Databar Limited barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance. This symbology was previously known as rssLim.
+Controls the symbology for GS1 Databar Limited barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. This symbology was previously known as rssLim.
 ####Access
 
 
@@ -2463,7 +2463,7 @@ Controls the haptic feedback on decode. This means that if this is set to true, 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for I2of5 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for I2of5 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -2723,7 +2723,7 @@ Allows the user to select inverse 1D barcodes for decoding.
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Japanese Postal barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Japanese Postal barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -2745,7 +2745,7 @@ Enables or disables the symbology for Japanese Postal barcodes. If your applicat
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the Klasse Eins laser on time function.
+Controls the Klasse Eins laser on time function.
 ####Access
 
 
@@ -2765,7 +2765,7 @@ Enables or disables the Klasse Eins laser on time function.
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Korean 3of5 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Korean 3of5 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -2922,7 +2922,7 @@ Set to false to disable scanning when the battery is low / critical or set to tr
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for MacroMicroPDF barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for MacroMicroPDF barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -3022,7 +3022,7 @@ If true, the appended info is concatenated to the decoded data before being retu
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Macro PDF barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Macro PDF barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -3102,7 +3102,7 @@ If true, the scanner driver will not complete read requests while in the middle 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Matrix 2of5 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Matrix 2of5 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -3212,7 +3212,7 @@ Enables verification of the Matrix 2of5 symbology check digit.
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Maxicode barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Maxicode barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -3234,7 +3234,7 @@ Enables or disables the symbology for Maxicode barcodes. If your application doe
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Micro PDF barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Micro PDF barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -3256,7 +3256,7 @@ Enables or disables the symbology for Micro PDF barcodes. If your application do
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Micro QR barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Micro QR barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -3278,7 +3278,7 @@ Enables or disables the symbology for Micro QR barcodes. If your application doe
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for MSI barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for MSI barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -3472,7 +3472,7 @@ Specifies the effort at which the decoder will attempt to decode margin-less bar
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for PDF 417 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for PDF 417 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -3598,7 +3598,7 @@ It provides enhancement modes for decoding barcodes of poor or degraded quality.
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for QR Code barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for QR Code barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -4420,7 +4420,7 @@ The type of scanner in use, will be one of 'Camera', 'Imager' or 'Laser'. Camera
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Signature barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance. Signature barcodes return their data in Data URI format, it is recommended you adjust the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes.
+Controls the symbology for Signature barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. Signature barcodes return their data in Data URI format, it is recommended you adjust the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes.
 ####Access
 
 
@@ -4523,7 +4523,7 @@ Aim duration in milliseconds for aimType:timedHold and aimType:timedRelease. The
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for TLC 39 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for TLC 39 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -4567,7 +4567,7 @@ Only applies to an enabled laser or imaging scanner. Disconnecting the trigger w
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Trioptic 39 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for Trioptic 39 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -4611,7 +4611,7 @@ Sets the Trioptic 39 Redundancy property, if set the barcode must be decoded twi
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for UK Postal barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for UK Postal barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -4653,7 +4653,7 @@ When true, the barcode check digit(s) will be reported for scanned UK Postal bar
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables decoding of UPC EAN Bookland barcodes.
+Controls decoding of UPC EAN Bookland barcodes.
 ####Access
 
 
@@ -4725,7 +4725,7 @@ If true, RSS barcodes will be converted to UPC/EAN format. For this setting to w
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables decoding of UPC EAN Coupon barcodes.
+Controls decoding of UPC EAN Coupon barcodes.
 ####Access
 
 
@@ -4912,7 +4912,7 @@ Describes the UPC EAN Supplemental mode.
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for UPCA barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for UPCA barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -4985,7 +4985,7 @@ When true, the barcode check digit(s) will be reported for scanned UPCA barcodes
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for UPCE0 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for UPCE0 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -5080,7 +5080,7 @@ When true, the barcode check digit(s) will be reported for scanned UPCE0 barcode
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for UPCE1 barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for UPCE1 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -5175,7 +5175,7 @@ When true, the barcode check digit(s) will be reported for scanned UPCE1 barcode
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for US 4-State barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for US 4-State barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -5197,7 +5197,7 @@ Enables or disables the symbology for US 4-State barcodes. If your application d
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for US 4-State FICS barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for US 4-State FICS barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -5219,7 +5219,7 @@ Enables or disables the symbology for US 4-State FICS barcodes. If your applicat
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for US Planet barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for US Planet barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -5261,7 +5261,7 @@ When true, the barcode check digit(s) will be reported for scanned US Planet bar
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for US Post Net barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance.
+Controls the symbology for US Post Net barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
 
@@ -5464,7 +5464,7 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Enables or disables the symbology for Webcode barcodes. If your application does not expect to scan this symbology you should disable it to improve scanning performance. Deprecated in Android 4.1 (Jelly Bean).
+Controls the symbology for Webcode barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. Deprecated in Android 4.1 (Jelly Bean).
 ####Access
 
 

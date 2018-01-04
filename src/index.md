@@ -27,7 +27,7 @@ products:
   - title: DataWedge
     description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for virtually any other app on the device.
     url: /datawedge/6-5/guide/about
-    image: /datawedge/datawedge_logo.png
+    image: /images/products/datawedge.png
     btn-text: Latest Docs
     sections:
       - title: About
@@ -132,7 +132,7 @@ products:
   - title: Enterprise Browser
     description: A platform for building apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript.
     url: /enterprise-browser/1-7/guide/about
-    image: /enterprise-browser/enterprise_browser_logo.png
+    image: /images/products/enterprise_browser.png
     btn-text: Latest Docs
     sections:
       - title: About
@@ -161,7 +161,7 @@ products:
   - title: Enterprise Home Screen
     description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
     url: /ehs/2-7/guide/about
-    image: /ehs/ehs-logo.png
+    image: /images/products/ehs.png
     btn-text: Latest Docs
     sections:
       - title: About
@@ -188,7 +188,7 @@ products:
   - title: Enterprise Keyboard
     description: A customizable soft keyboard made specifically for fast and accurate input by workers in the enterprise.
     url: /enterprise-keyboard/1-5/guide/about
-    image: /enterprise-keyboard/ekb_logo.png
+    image: /images/products/Enterprise Keyboard.png
     btn-text: Latest Docs
     sections:
       - title: About
@@ -248,7 +248,7 @@ products:
     description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.
     url: /simulscan/1-1/guide/about
     btn-text: Latest Guides
-    image: /simulscan/simulscan_logo.png
+    image: /images/products/simulscan.png
     sections:
       - title: About
         url: /simulscan/1-1/guide/about

@@ -9,7 +9,7 @@ automenu:
         - title: Hello EB
           url: helloeb
         - title: Sample Apps 
-          url: /enterprise-browser/1-7/guide/samples
+          url: /enterprise-browser/1-8/guide/samples
     - title: API Walk-throughs
       items:
         - title: Scanning Barcodes

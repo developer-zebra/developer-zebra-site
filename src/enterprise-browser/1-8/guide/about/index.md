@@ -16,6 +16,7 @@ The base [EB installation](../setup) includes all necessary components to allow 
 -----
 ## New in v1.8
 
+-----
 
 ## Added in EB 1.7
 
@@ -139,7 +140,7 @@ New or Updated Guides
 
 -----
 
-## New in v1.6
+## Added in v1.6
 
 ### Android Jelly Bean - End of Support
 Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower.

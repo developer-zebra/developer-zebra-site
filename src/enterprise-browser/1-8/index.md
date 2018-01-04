@@ -34,5 +34,5 @@ menu:
     - icon: fa fa-search
       url: /enterprise-browser/1-7/search
 product: Enterprise Browser
-productversion: '1.7'
+productversion: '1.8'
 ---

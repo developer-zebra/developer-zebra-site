@@ -29,5 +29,5 @@ automenu:
         - title: Saving Data with WebSQL
           url: websql
 product: Enterprise Browser
-productversion: '1.7'
+productversion: '1.8'
 ---

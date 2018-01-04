@@ -44,7 +44,7 @@ content-items:
     text: How to optimize the footprint and runtime performance of an Enterprise Browser app.  
     url: ../optimization
 product: Enterprise Browser
-productversion: '1.7'
+productversion: '1.8'
 ---
            
 

@@ -24,7 +24,7 @@ automenu:
           url: ../upce1preamble
         - title: Upce1reportCheckDigit
           url: ../upce1ReportCheckDigit
-productversion: '1.7'
+productversion: '1.8'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

@@ -38,7 +38,7 @@ automenu:
           url: ../Code39securityLevel
         - title: Code39verifyCheckDigit
           url: ../Code39VerifyCheckDigit
-productversion: '1.7'
+productversion: '1.8'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

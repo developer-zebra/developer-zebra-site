@@ -1,6 +1,6 @@
 ---
 title: RhoMobile 4.x Migration Guide
-productversion: '1.7'
+productversion: '1.8'
 product: Enterprise Browser
 layout: guide.html
 ---

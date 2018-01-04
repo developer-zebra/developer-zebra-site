@@ -52,7 +52,7 @@ automenu:
           url: ../generic/WriteConfigSetting
         - title: WriteUserSetting
           url: ../generic/WriteUserSetting
-productversion: '1.7'
+productversion: '1.8'
 product: Enterprise Browser
 subhead: PocketBrowser 3.x API
 ---

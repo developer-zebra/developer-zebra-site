@@ -1,6 +1,6 @@
 ---
 title: CeODAX.Delete Method
-productversion: '1.7'
+productversion: '1.8'
 product: Enterprise Browser
 layout: guide.html
 subhead: PocketBrowser 3.x API

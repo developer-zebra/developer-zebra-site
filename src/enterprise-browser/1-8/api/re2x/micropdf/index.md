@@ -1,6 +1,6 @@
 ---
 title: MicroPdf Decoder
-productversion: '1.7'
+productversion: '1.8'
 product: Enterprise Browser
 layout: guide.html
 subhead: RhoElements 2.x API

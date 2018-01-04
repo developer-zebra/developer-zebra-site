@@ -38,7 +38,7 @@ automenu:
           url: ../upcEanSupplemental5
         - title: UpcEanSupplementalmode
           url: ../upcEanSupplementalMode
-productversion: '1.7'
+productversion: '1.8'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

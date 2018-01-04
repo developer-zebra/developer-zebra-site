@@ -38,7 +38,7 @@ automenu:
           url: buttonbar9
         - title: ButtonBar10
           url: buttonbar10          
-productversion: '1.7'
+productversion: '1.8'
 product: Enterprise Browser
 ---
 

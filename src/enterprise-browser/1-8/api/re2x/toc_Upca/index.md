@@ -22,7 +22,7 @@ automenu:
           url: ../upca_preamble
         - title: UpcaReportCheckDigit
           url: ../upcaReportCheckDigit
-productversion: '1.7'
+productversion: '1.8'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

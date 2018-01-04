@@ -45,7 +45,7 @@ When Enterprise Browser is uninstalled from an Android device using the Android 
 -----
 
 ### Windows Installation
-Enterprise Browser 1.7 for Windows eliminates the need to manually remove a prior EB version before installing a new one. 
+Enterprise Browser 1.7 (and higher) for Windows eliminates the need to manually remove a prior EB version before installing a new one. 
 
 **To install Enterprise Browser for Windows**:
 

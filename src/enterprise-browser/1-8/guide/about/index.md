@@ -1,5 +1,5 @@
 ---
-title: About Enterprise Browser 1.7
+title: About Enterprise Browser 1.8
 productversion: '1.8'
 product: Enterprise Browser
 layout: guide.html
@@ -14,7 +14,10 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. For more information about API crossover, see the [API Compatibility matrix](../compatibility). 
 
 -----
-## New in v1.7
+## New in v1.8
+
+
+## Added in EB 1.7
 
 ### ButtonBar API
 A new Android-only ButtonBar API permits a series of custom buttons or keys to be displayed on the screen and configured to launch an app, execute a JavaScript snippet or perform other operations available to the device. 

@@ -309,6 +309,7 @@ Synchronous Return:
 	* <code>EB.Barcode.getProperty(<span class="text-info">STRING</span> propertyName)</code> 
 
 
+
 ### getSupportedProperties()
 Return array of properties supported by this scanner.
 
@@ -672,7 +673,9 @@ Describes the type of aiming to use. Supported on Android with EMDK version 6.3 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-When set to true, the barcode scanner reads all barcode types that the scanner is capable of reading. When set to false, the barcode scanner will not be able to decode any symbologies. This is most useful when settine the scanner to a default state before enabling only the required symbologies. The fewer symbologies enabled, the faster the decoding performance of. This property will return true only if all symbologies supported by the scanner are enabled. Returns a value of false if only a subset of supported symbologies are enabled. Note that some decoders will not be enabled as some symbologies use the same systems to encode data, making it impossible to differentiate between them. For example: "canpostal" and "auspostal" both use a 4-state system, so devices will enable either "canpostal" OR "auspostal" ONLY when "alldecoders" is enabled. Note that other symbologies also share the 4-state system.
+When set to true, the barcode scanner reads all barcode types that the scanner is capable of reading. When set to false, the barcode scanner can decode no symbologies. A setting of false can be useful for resetting the scanner to a default state before subsequently enabling only the required symbologies. The fewer symbologies enabled, the faster the decoding performance. 
+
+This property will return true only if all symbologies supported by the scanner are enabled. Returns a value of false if only a subset of supported symbologies are enabled. Note that some decoders will not be enabled as some symbologies use the same systems to encode data, making it impossible to differentiate between them. For example: "canpostal" and "auspostal" both use a 4-state system, so devices will enable either "canpostal" OR "auspostal" ONLY when "alldecoders" is enabled. Note that other symbologies also share the 4-state system.
 
 ####Access
 
@@ -774,7 +777,7 @@ Controls the symbology for Aztec barcodes. If an application is not expected to 
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Specifies the format in which the barcode data is returned, binary data is returned in Data URI format with the appropriate mime type. This parameter is designed to be used primarily with image based symbologies (eg. Signature). Binary data will not be output as keystrokes. Set a decode callback to receive scanned data.
+Specifies the format in which the barcode data is returned, binary data is returned in Data URI format with the appropriate mime type. This parameter is designed to be used primarily with image based symbologies (i.e. Signature). Binary data will not be output as keystrokes. Set a decode callback to receive scanned data.
 
 ####Values
 
@@ -1900,7 +1903,7 @@ Sets the D2of5 Redundancy property, if set the barcode must be decoded twice bef
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the number of bytes allocated to receive the scanned barcode. This parameter is designed to be used primarily with image based symbologies and should not be modified unless absolutely necessary (eg. Signature).
+Specifies the number of bytes allocated to receive the scanned barcode. This parameter is designed to be used primarily with image based symbologies and should not be modified unless absolutely necessary (i.e. Signature).
 ####Access
 
 
@@ -1990,11 +1993,11 @@ The duration of the device beeper when a barcode is scanned, in milliseconds. It
 <span class='text-info'>INTEGER</span> 
 ####Description
 The frequency of the device beeper when a barcode is successfully decoded. This should be within the range of the beeper but the API will accept values in the range 0 to 65535. Note: On Android platform, calling this method, the DecodeFrequency config tags value will not be applied.
+
 ####Params
 <p><strong>Default:</strong> 3000</p>
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeFrequency</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.decodeFrequency</code> 
@@ -2080,11 +2083,11 @@ Maximum time in milliseconds that the Decode LED notification will glow a green 
 <span class='text-info'>INTEGER</span> 
 ####Description
 The volume of the device beeper when a barcode is scanned. It will accept values in the range 0 to 5. On Window Mobile/CE, the value of 0 is device dependent, some devices interpret this as the quietest volume. Note: On Android platform, calling this method, the DecodeVolume config tags value will not be applied.
+
 ####Params
 <p><strong>Default:</strong> 5</p>
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeVolume</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.decodeVolume</code> 
@@ -2100,11 +2103,11 @@ The volume of the device beeper when a barcode is scanned. It will accept values
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Path to a local '.wav' file to be played when the scanner successfully decodes a barcode. The '.wav' file must reside on the device. This will override the existing scanner beeper settings. The decodeSound property doesnot rely on decodeDuration, decodeFrequency and decodeVolume properties. Calling this method, the ScanDecodeWav config tags value will not be applied. Note: On Android platform, '.ogg' file is also supported. See [remarks](#limitation-of-decodesound-property-on-android-platform) section below.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.decodeSound</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.decodeSound</code> 
@@ -2375,16 +2378,14 @@ Returns the friendly name associated with the scanner.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for GS1 DataBar barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. This symbology was previously known as rss.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.gs1dataBar</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.gs1dataBar</code> 
-
-
 
 ####Platforms
 
@@ -2397,16 +2398,14 @@ Controls the symbology for GS1 DataBar barcodes. If an application is not expect
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for GS1 Databar Expanded barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. This symbology was previously known as rssExp.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.gs1dataBarExpanded</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.gs1dataBarExpanded</code> 
-
-
 
 ####Platforms
 
@@ -2419,16 +2418,14 @@ Controls the symbology for GS1 Databar Expanded barcodes. If an application is n
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for GS1 Databar Limited barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. This symbology was previously known as rssLim.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.gs1dataBarLimited</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.gs1dataBarLimited</code> 
-
-
 
 ####Platforms
 
@@ -2443,16 +2440,14 @@ Controls the symbology for GS1 Databar Limited barcodes. If an application is no
 <span class='text-info'>BOOLEAN</span> 
 ####Description
 Controls the haptic feedback on decode. This means that if this is set to true, then the device will vibrate when a decode occurs.
+
 ####Params
 <p><strong>Default:</strong> true</p>
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.hapticFeedback</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.hapticFeedback</code> 
-
-
 
 ####Platforms
 
@@ -2507,16 +2502,14 @@ When true, EAN 8 barcodes will be converted to EAN 13 and EAN 13 parameters used
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
-Specifies the maximum number of allowable characters in a I2of5 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the maximum number of allowable characters in an i2of5 barcode. If the application is expected to scan barcode lengths within a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.i2of5maxLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.i2of5maxLength</code> 
-
-
 
 ####Platforms
 
@@ -2530,15 +2523,12 @@ Specifies the maximum number of allowable characters in a I2of5 barcode. If your
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the minimum number of allowable characters in a I2of5 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the minimum number of allowable characters in an i2of5 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.i2of5minLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.i2of5minLength</code> 
-
-
 
 ####Platforms
 
@@ -2551,16 +2541,14 @@ Specifies the minimum number of allowable characters in a I2of5 barcode. If your
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
-Sets the I2of5 Redundancy property, if set the barcode must be decoded twice before being accepted. This will slow scanning but improve reliability.
+Sets the i2of5 Redundancy property, if set the barcode must be decoded twice before being accepted. This will slow scanning but improve reliability.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.i2of5redundancy</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.i2of5redundancy</code> 
-
-
 
 ####Platforms
 
@@ -2573,16 +2561,14 @@ Sets the I2of5 Redundancy property, if set the barcode must be decoded twice bef
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
-When true, the barcode check digit(s) will be reported for scanned I2of5 barcodes.
+When true, the barcode check digit(s) will be reported for scanned i2of5 barcodes.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.i2of5reportCheckDigit</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.i2of5reportCheckDigit</code> 
-
-
 
 ####Platforms
 
@@ -2595,23 +2581,23 @@ When true, the barcode check digit(s) will be reported for scanned I2of5 barcode
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
-Enables the verification of the I2of5 check digit.
+Enables the verification of the i2of5 check digit.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.I2OF5_VERIFY_NONE - String: none Disables verification of the check digit.
-* Constant: EB.Barcode.I2OF5_VERIFY_USS - String: uss Enables the USS format for the check digit.
-* Constant: EB.Barcode.I2OF5_VERIFY_OPCC - String: opcc Enables the OPCC format for the check digit.
+* Constant: EB.Barcode.I2OF5_VERIFY_NONE - String: (none) Disables verification of the check digit.
+* Constant: EB.Barcode.I2OF5_VERIFY_USS - String: "uss" Enables the USS format for the check digit.
+* Constant: EB.Barcode.I2OF5_VERIFY_OPCC - String: "opcc" Enables the OPCC format for the check digit.
 ####Access
 
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.i2of5verifyCheckDigit</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.i2of5verifyCheckDigit</code> 
-
-
 
 ####Platforms
 
@@ -2654,16 +2640,14 @@ Selects the illumination mode to use.
 <span class='text-info'>INTEGER</span> 
 ####Description
 The frequency of the device beeper when a barcode is scanned but not successfully decoded. This should be within the range of the beeper but the API will accept values in the range 0 to 65535.
+
 ####Params
 <p><strong>Default:</strong> 2500</p>
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.invalidDecodeFrequency</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.invalidDecodeFrequency</code> 
-
-
 
 ####Platforms
 
@@ -2807,16 +2791,14 @@ Specifies the maximum number of allowable characters in a Korean 3of5 barcode. I
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
-Specifies the minimum number of allowable characters in a Korean 3of5 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the minimum number of allowable characters in a Korean 3of5 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.korean3of5minLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.korean3of5minLength</code> 
-
-
 
 ####Platforms
 
@@ -2827,11 +2809,11 @@ Specifies the minimum number of allowable characters in a Korean 3of5 barcode. I
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Sets Korean 3of5 Redundancy property, if set the barcode must be decoded twice before being accepted. This will slow scanning but improve reliability.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.korean3of5redundancy</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.korean3of5redundancy</code> 
@@ -2849,16 +2831,14 @@ Sets Korean 3of5 Redundancy property, if set the barcode must be decoded twice b
 <span class='text-info'>BOOLEAN</span> 
 ####Description
 Controls whether LCD Mode is enabled on the scanner. LCD Mode makes it easier to scan barcodes off of LCD screens (like mobile device screens)
+
 ####Params
 <p><strong>Default:</strong> false</p>
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.lcdMode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.lcdMode</code> 
-
-
 
 ####Platforms
 
@@ -2869,8 +2849,10 @@ Controls whether LCD Mode is enabled on the scanner. LCD Mode makes it easier to
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Describes the linear security level used during decoding. This determines the number of times a barcode must be read before it is decoded. If the successive reads of the barcode do not match, it will not be decoded.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -2887,8 +2869,6 @@ Describes the linear security level used during decoding. This determines the nu
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.linearSecurityLevel</code> 
 
-
-
 ####Platforms
 
 * Android
@@ -2900,18 +2880,17 @@ Describes the linear security level used during decoding. This determines the nu
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Set to false to disable scanning when the battery is low / critical or set to true to enable it.
+
 ####Params
 <p><strong>Default:</strong> false</p>
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.lowBatteryScan</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.lowBatteryScan</code> 
-
-
 
 ####Platforms
 
@@ -2922,16 +2901,14 @@ Set to false to disable scanning when the battery is low / critical or set to tr
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for MacroMicroPDF barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.macroMicroPdf</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.macroMicroPdf</code> 
-
-
 
 ####Platforms
 
@@ -2942,16 +2919,14 @@ Controls the symbology for MacroMicroPDF barcodes. If an application is not expe
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 If true, the scanner driver will return the barcode data only after the complete macroMicroPdf sequence has been read. If false, the scanner driver will return each barcode in the macroMicroPdf sequence as it is read.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.macroMicroPdfBufferLabels</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.macroMicroPdfBufferLabels</code> 
-
-
 
 ####Platforms
 
@@ -3124,16 +3099,14 @@ Controls the symbology for Matrix 2of5 barcodes. If an application is not expect
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
-Specifies the maximum number of allowable characters in a Matrix 2of5 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the maximum number of allowable characters in a Matrix 2of5 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.matrix2of5maxLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.matrix2of5maxLength</code> 
-
-
 
 ####Platforms
 
@@ -3146,16 +3119,14 @@ Specifies the maximum number of allowable characters in a Matrix 2of5 barcode. I
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
-Specifies the minimum number of allowable characters in a Matrix 2of5 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the minimum number of allowable characters in a Matrix 2of5 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.matrix2of5minLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.matrix2of5minLength</code> 
-
-
 
 ####Platforms
 
@@ -3190,16 +3161,14 @@ When true, the barcode check digit(s) will be reported for scanned Matrix 2of5 b
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Enables verification of the Matrix 2of5 symbology check digit.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.matrix2of5verifyCheckDigit</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.matrix2of5verifyCheckDigit</code> 
-
-
 
 ####Platforms
 
@@ -3212,16 +3181,14 @@ Enables verification of the Matrix 2of5 symbology check digit.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for Maxicode barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.maxiCode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.maxiCode</code> 
-
-
 
 ####Platforms
 
@@ -3278,16 +3245,14 @@ Controls the symbology for Micro QR barcodes. If an application is not expected 
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for MSI barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.msi</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.msi</code> 
-
-
 
 ####Platforms
 
@@ -3300,8 +3265,10 @@ Controls the symbology for MSI barcodes. If an application is not expected to sc
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Specifies the check digit scheme used to verify MSI barcodes.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -3472,16 +3439,14 @@ Specifies the effort at which the decoder will attempt to decode margin-less bar
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for PDF 417 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.pdf417</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.pdf417</code> 
-
-
 
 ####Platforms
 
@@ -3600,14 +3565,11 @@ It provides enhancement modes for decoding barcodes of poor or degraded quality.
 <span class='text-info'>BOOLEAN</span> 
 ####Description
 Controls the symbology for QR Code barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.qrCode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.qrCode</code> 
-
-
 
 ####Platforms
 
@@ -3620,16 +3582,14 @@ Controls the symbology for QR Code barcodes. If an application is not expected t
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Vertical rastering height to use, as a percentage, when rasterMode:openAlways is applied. This value must be between 0 and 100.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rasterHeight</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rasterHeight</code> 
-
-
 
 ####Platforms
 
@@ -3688,16 +3648,14 @@ The remaining capacity of the battery, in the range 0 to 100. 'unknown' will be 
 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
+
 ####Description
 One of 'simple', 'double', 'disabled' or 'unknown'
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmBatteryId</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBatteryId</code> 
-
-
 
 ####Platforms
 
@@ -3708,16 +3666,14 @@ One of 'simple', 'double', 'disabled' or 'unknown'
 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
+
 ####Description
 Indicates the status of the remote scanner's battery, will be one of 'unknown', 'full', 'medium', 'empty', 'chargingFullRate', 'chargingHalfRate', 'chargingTrickle' or 'discharging'
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmBatteryStatus</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBatteryStatus</code> 
-
-
 
 ####Platforms
 
@@ -3728,16 +3684,14 @@ Indicates the status of the remote scanner's battery, will be one of 'unknown', 
 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
+
 ####Description
 Bluetooth address as FF:FF:FF:FF:FF:FF where FF is a hex number.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmBluetoothAddress</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBluetoothAddress</code> 
-
-
 
 ####Platforms
 
@@ -3748,16 +3702,14 @@ Bluetooth address as FF:FF:FF:FF:FF:FF where FF is a hex number.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 True if authentication is required.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmBluetoothAuthentication</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBluetoothAuthentication</code> 
-
-
 
 ####Platforms
 
@@ -3768,8 +3720,10 @@ True if authentication is required.
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Bluetooth reconnection scheme.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -3785,8 +3739,6 @@ Bluetooth reconnection scheme.
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBluetoothAutoReconnect</code> 
 
-
-
 ####Platforms
 
 * Windows Mobile
@@ -3796,16 +3748,14 @@ Bluetooth reconnection scheme.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 When true, scanner will emit 5 beeps every 5 seconds whilst re-connection in progress.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmBluetoothBeepOnReconnectAttempt</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBluetoothBeepOnReconnectAttempt</code> 
-
-
 
 ####Platforms
 
@@ -3818,14 +3768,11 @@ When true, scanner will emit 5 beeps every 5 seconds whilst re-connection in pro
 <span class='text-info'>BOOLEAN</span> 
 ####Description
 True if encryption is required.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmBluetoothEncryption</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBluetoothEncryption</code> 
-
-
 
 ####Platforms
 
@@ -3836,16 +3783,14 @@ True if encryption is required.
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Friendly Bluetooth name, e.g. 'MyBTScanner'
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmBluetoothFriendlyName</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBluetoothFriendlyName</code> 
-
-
 
 ####Platforms
 
@@ -3856,16 +3801,14 @@ Friendly Bluetooth name, e.g. 'MyBTScanner'
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 'neverReconnect', 'reconnectOnData' or 'reconnectImmediately'
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmBluetoothHidAutoReconnect</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBluetoothHidAutoReconnect</code> 
-
-
 
 ####Platforms
 
@@ -3876,16 +3819,14 @@ Friendly Bluetooth name, e.g. 'MyBTScanner'
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 To use a general inquiry mode, 'general' else, 'limited'
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmBluetoothInquiryMode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBluetoothInquiryMode</code> 
-
-
 
 ####Platforms
 
@@ -3896,16 +3837,14 @@ To use a general inquiry mode, 'general' else, 'limited'
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Up to 5 character PIN code used for Bluetooth authentication.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmBluetoothPinCode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBluetoothPinCode</code> 
-
-
 
 ####Platforms
 
@@ -3916,16 +3855,14 @@ Up to 5 character PIN code used for Bluetooth authentication.
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 'UseStored' will use the PIN code stored in the memory of the ring scanner, by default '12345'. 'PromptUser' indicates that the ring scanner should be used to scan 5 alpha numeric barcodes to define the PIN, eg. "1", "2", "3", "4", "5" (for PIN 12345). This parameter is not saved permanently on the ring scanner.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmBluetoothPinCodeType</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBluetoothPinCodeType</code> 
-
-
 
 ####Platforms
 
@@ -3936,16 +3873,14 @@ Up to 5 character PIN code used for Bluetooth authentication.
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 How long the scanner tries to re-establish connection if it goes out of range, in seconds. This value must be a multiple of 5 and in the range 30 to 60 seconds.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmBluetoothReconnectionAttempts</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmBluetoothReconnectionAttempts</code> 
-
-
 
 ####Platforms
 
@@ -3956,16 +3891,14 @@ How long the scanner tries to re-establish connection if it goes out of range, i
 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
+
 ####Description
 Ring scanner date of manufacture as DDMMYY.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmDateOfManufacture</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmDateOfManufacture</code> 
-
-
 
 ####Platforms
 
@@ -3976,16 +3909,14 @@ Ring scanner date of manufacture as DDMMYY.
 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
+
 ####Description
 Ring scanner date of service as DDMMYY.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmDateOfService</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmDateOfService</code> 
-
-
 
 ####Platforms
 
@@ -3996,16 +3927,14 @@ Ring scanner date of service as DDMMYY.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 If true, the remote scanner beeps and illuminates its green LED on a successful decode.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmDecodeFeedback</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmDecodeFeedback</code> 
-
-
 
 ####Platforms
 
@@ -4016,16 +3945,14 @@ If true, the remote scanner beeps and illuminates its green LED on a successful 
 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
+
 ####Description
 The device class of the ring scanner.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmDeviceClass</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmDeviceClass</code> 
-
-
 
 ####Platforms
 
@@ -4036,16 +3963,14 @@ The device class of the ring scanner.
 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
+
 ####Description
 Scanner's operating system version.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmFirmwareVersion</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmFirmwareVersion</code> 
-
-
 
 ####Platforms
 
@@ -4056,16 +3981,14 @@ Scanner's operating system version.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Force saving the barcode assigned to the device to which the scanner has been paired.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmForceSavePairingBarcode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmForceSavePairingBarcode</code> 
-
-
 
 ####Platforms
 
@@ -4076,16 +3999,14 @@ Force saving the barcode assigned to the device to which the scanner has been pa
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Delay between good scans in proximity continuous mode, measured in milliseconds. Range 0 to 15000. This value must be a multiple of 100.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmGoodScansDelay</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmGoodScansDelay</code> 
-
-
 
 ####Platforms
 
@@ -4096,16 +4017,14 @@ Delay between good scans in proximity continuous mode, measured in milliseconds.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Feature for ignoring Code 128 barcodes beginning with 420 and 421.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmIgnoreCode128Usps</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmIgnoreCode128Usps</code> 
-
-
 
 ####Platforms
 
@@ -4116,16 +4035,14 @@ Feature for ignoring Code 128 barcodes beginning with 420 and 421.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Whether or not the ring scanner should give a low battery indication.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmLowBatteryIndication</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmLowBatteryIndication</code> 
-
-
 
 ####Platforms
 
@@ -4136,16 +4053,14 @@ Whether or not the ring scanner should give a low battery indication.
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Low battery indication cycle time, in seconds. Must be one of 15, 30, 60, 90 or 120.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmLowBatteryIndicationCycle</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmLowBatteryIndicationCycle</code> 
-
-
 
 ####Platforms
 
@@ -4156,15 +4071,14 @@ Low battery indication cycle time, in seconds. Must be one of 15, 30, 60, 90 or 
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 If the trigger is pressed on an RSM scanner, "proximity enabled" will be turned off, even though it might still report itself as "turned on" if queried. To use ProximityEnable, Mems (motion sensor) also must be enabled. **The scanner will not function if the motion sensor is disabled**.
 
 ####Access
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmMems</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmMems</code> 
-
 
 ####Platforms
 
@@ -4175,16 +4089,14 @@ If the trigger is pressed on an RSM scanner, "proximity enabled" will be turned 
 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
+
 ####Description
 Ring scanner model number.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmModelNumber</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmModelNumber</code> 
-
-
 
 ####Platforms
 
@@ -4195,16 +4107,14 @@ Ring scanner model number.
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Range 0 to 15 to specify the pattern for the paging beep sequence.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmPagingBeepSequence</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmPagingBeepSequence</code> 
-
-
 
 ####Platforms
 
@@ -4215,16 +4125,14 @@ Range 0 to 15 to specify the pattern for the paging beep sequence.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Specify whether paging the device is enabled.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmPagingEnable</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmPagingEnable</code> 
-
-
 
 ####Platforms
 
@@ -4235,16 +4143,14 @@ Specify whether paging the device is enabled.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Proximity continuous mode.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmProximityContinuous</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmProximityContinuous</code> 
-
-
 
 ####Platforms
 
@@ -4266,8 +4172,6 @@ Specify the distance for the proximity feature as 'short', 'medium' or 'long'
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmProximityDistance</code> 
 
-
-
 ####Platforms
 
 * Windows Mobile
@@ -4277,6 +4181,7 @@ Specify the distance for the proximity feature as 'short', 'medium' or 'long'
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 If the trigger is pressed on an RSM scanner, "proximity enabled" will be turned off, even though it might still report itself as "turned on" if queried. To use ProximityEnable, Mems (motion sensor) also must be enabled. **The scanner will not function if the motion sensor is disabled**.
 
@@ -4295,15 +4200,14 @@ If the trigger is pressed on an RSM scanner, "proximity enabled" will be turned 
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 The laser scan line width, 'wide' or 'narrow'.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmScanLineWidth</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmScanLineWidth</code> 
-
 
 ####Platforms
 
@@ -4314,16 +4218,14 @@ The laser scan line width, 'wide' or 'narrow'.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Scanner trigger will wakeup the device from a low power state.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmScanTriggerWakeup</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmScanTriggerWakeup</code> 
-
-
 
 ####Platforms
 
@@ -4334,16 +4236,14 @@ Scanner trigger will wakeup the device from a low power state.
 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
+
 ####Description
 Ring scanner serial number.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.rsmSerialNumber</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.rsmSerialNumber</code> 
-
-
 
 ####Platforms
 
@@ -4354,16 +4254,14 @@ Ring scanner serial number.
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 When the aimType:continuousRead property is applied this value defines the interval between which the same barcode can be decoded twice. The value is specified in milliseconds, use 0 to indicate no interval between successive reads. Use this value to prevent accidental duplicate scans. It supports on Android with EMDK version 6.3 and above.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.sameSymbolTimeout</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.sameSymbolTimeout</code> 
-
-
 
 ####Platforms
 
@@ -4375,16 +4273,14 @@ When the aimType:continuousRead property is applied this value defines the inter
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Maximum time in milliseconds that laser scanners will emit a beam or imager scanners will enable the imager. A value of 0 indicates an infinite timeout. This parameter is compatible with aimType:trigger, aimType:timedHold, aimType:timedRelease and aimType:pressAndRelease. Note that for regulatory reasons scanTimeout is not configurable on all laser / imager scanners. Scan timeout is extent to hardware capabilities and limitations.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.scanTimeout</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.scanTimeout</code> 
-
-
 
 ####Platforms
 
@@ -4397,16 +4293,14 @@ Maximum time in milliseconds that laser scanners will emit a beam or imager scan
 
 ####Type
 <span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
+
 ####Description
 The type of scanner in use, will be one of 'Camera', 'Imager' or 'Laser'. Camera scanners capture and process an image taken via the devices camera. Imager scanners rely on capturing and processing an image of the barcode via dedicated scanning hardware. Both camera and imager scanners are capable of decoding 1D and 2D barcodes. Laser scanners are only capable of decoding 1D barcodes and rely on a sweeping laser.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.scannerType</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.scannerType</code> 
-
-
 
 ####Platforms
 
@@ -4418,11 +4312,11 @@ The type of scanner in use, will be one of 'Camera', 'Imager' or 'Laser'. Camera
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for Signature barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. Signature barcodes return their data in Data URI format. Zebra recommends adjusting the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes.
 
 ####Access
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.signature</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.signature</code> 
@@ -4438,11 +4332,11 @@ Controls the symbology for Signature barcodes. If an application is not expected
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Specifies the output height of the captured signature barcode. Signature barcodes return their data in Data URI format. Zebra recommends adjusting the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes. Provide a number greater than or equal to 20.
 
 ####Access
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.signatureImageHeight</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.signatureImageHeight</code> 
@@ -4456,16 +4350,14 @@ Specifies the output height of the captured signature barcode. Signature barcode
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Specifies the output quality of the captured signature barcode. Signature barcodes return their data in Data URI format, it is recommended you adjust the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes. Provide a value between 10 and 100 inclusive.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.signatureImageQuality</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.signatureImageQuality</code> 
-
-
 
 ####Platforms
 
@@ -4476,16 +4368,14 @@ Specifies the output quality of the captured signature barcode. Signature barcod
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Specifies the output width of the captured signature barcode. Signature barcodes return their data in Data URI format, it is recommended you adjust the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes. Provide a number greater than or equal to 20.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.signatureImageWidth</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.signatureImageWidth</code> 
-
-
 
 ####Platforms
 
@@ -4496,16 +4386,14 @@ Specifies the output width of the captured signature barcode. Signature barcodes
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Aim duration in milliseconds for aimType:timedHold and aimType:timedRelease. The duration must be less than the scanTimeout. It supports on Android with EMDK version 6.3 and above.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.timedAimDuration</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.timedAimDuration</code> 
-
-
 
 ####Platforms
 
@@ -4517,16 +4405,14 @@ Aim duration in milliseconds for aimType:timedHold and aimType:timedRelease. The
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for TLC 39 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.tlc39</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.tlc39</code> 
-
-
 
 ####Platforms
 
@@ -4539,18 +4425,18 @@ Controls the symbology for TLC 39 barcodes. If an application is not expected to
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Only applies to an enabled laser or imaging scanner. Disconnecting the trigger will prevent the scan beam from being emitted, this can temporarily prevent a user from scanning without having to disable the scanner, which can take longer. By default the trigger will be connected when the scanner is first enabled, you do not have to connect it separately. Please note that disconnecting the trigger will also prevent the start method from emitting a laser. This property will only affect the scanner and will have no effect on the 'captureTrigger' API.
+
 ####Params
 <p><strong>Default:</strong> true</p>
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.triggerConnected</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.triggerConnected</code> 
-
-
 
 ####Platforms
 
@@ -4561,16 +4447,15 @@ Only applies to an enabled laser or imaging scanner. Disconnecting the trigger w
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for Trioptic 39 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.trioptic39</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.trioptic39</code> 
-
-
 
 ####Platforms
 
@@ -4583,16 +4468,14 @@ Controls the symbology for Trioptic 39 barcodes. If an application is not expect
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Sets the Trioptic 39 Redundancy property, if set the barcode must be decoded twice before being accepted. This will slow scanning but improve reliability.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.trioptic39Redundancy</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.trioptic39Redundancy</code> 
-
-
 
 ####Platforms
 
@@ -4605,16 +4488,14 @@ Sets the Trioptic 39 Redundancy property, if set the barcode must be decoded twi
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for UK Postal barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.ukPostal</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.ukPostal</code> 
-
-
 
 ####Platforms
 
@@ -4627,16 +4508,14 @@ Controls the symbology for UK Postal barcodes. If an application is not expected
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 When true, the barcode check digit(s) will be reported for scanned UK Postal barcodes.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.ukPostalReportCheckDigit</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.ukPostalReportCheckDigit</code> 
-
-
 
 ####Platforms
 
@@ -4647,16 +4526,14 @@ When true, the barcode check digit(s) will be reported for scanned UK Postal bar
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls decoding of UPC EAN Bookland barcodes.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcEanBookland</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upcEanBookland</code> 
-
-
 
 ####Platforms
 
@@ -4669,8 +4546,10 @@ Controls decoding of UPC EAN Bookland barcodes.
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Specifies the bookland format to use when decoding UPC EAN Bookland barcodes.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -4684,8 +4563,6 @@ Specifies the bookland format to use when decoding UPC EAN Bookland barcodes.
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upcEanBooklandFormat</code> 
 
-
-
 ####Platforms
 
 * Android
@@ -4697,17 +4574,14 @@ Specifies the bookland format to use when decoding UPC EAN Bookland barcodes.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 If true, RSS barcodes will be converted to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled.
 
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcEanConvertGs1dataBarToUpcEan</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upcEanConvertGs1dataBarToUpcEan</code> 
-
-
 
 ####Platforms
 
@@ -4720,16 +4594,14 @@ If true, RSS barcodes will be converted to UPC/EAN format. For this setting to w
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls decoding of UPC EAN Coupon barcodes.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcEanCoupon</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upcEanCoupon</code> 
-
-
 
 ####Platforms
 
@@ -4742,16 +4614,14 @@ Controls decoding of UPC EAN Coupon barcodes.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Sets the linear decode property.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcEanLinearDecode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upcEanLinearDecode</code> 
-
-
 
 ####Platforms
 
@@ -4764,16 +4634,14 @@ Sets the linear decode property.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 When true, enables random weight check digit verification.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcEanRandomWeightCheckDigit</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upcEanRandomWeightCheckDigit</code> 
-
-
 
 ####Platforms
 
@@ -4786,16 +4654,14 @@ When true, enables random weight check digit verification.
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Sets the retry count for auto-discriminating for supplementals. The value must be between 2 - 20 inclusive.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcEanRetryCount</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upcEanRetryCount</code> 
-
-
 
 ####Platforms
 
@@ -4808,6 +4674,7 @@ Sets the retry count for auto-discriminating for supplementals. The value must b
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 Sets the Security level for decoding UPC EAN barcodes and accepts a value from 0 - 3, as follows: 
 * 0 - allows the scanner to operate in its most aggressive state, while providing sufficient security in decoding most 'in-spec' barcodes. 
@@ -4816,11 +4683,9 @@ Sets the Security level for decoding UPC EAN barcodes and accepts a value from 0
 * 3 - Select if security levels 1 and 2 fail to eliminate mis-decodes. **Warning**: Level 3 significantly impairs the decoding ability of the scanner.
 
 ####Access
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcEanSecurityLevel</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upcEanSecurityLevel</code> 
-
 
 ####Platforms
 
@@ -4833,16 +4698,14 @@ Sets the Security level for decoding UPC EAN barcodes and accepts a value from 0
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 When true, enables the supplemental barcode decoding. Note you must have upcEanSupplementalMode:always set for this parameter to take effect.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcEanSupplemental2</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upcEanSupplemental2</code> 
-
-
 
 ####Platforms
 
@@ -4860,13 +4723,9 @@ When true, enables the supplemental barcode decoding. Note you must have upcEanS
 When true, enables the supplemental barcode decoding. Note you must have `upcEanSupplementalMode:always` set for this parameter to take effect.
 
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcEanSupplemental5</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upcEanSupplemental5</code> 
-
-
 
 ####Platforms
 
@@ -4879,8 +4738,10 @@ When true, enables the supplemental barcode decoding. Note you must have `upcEan
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Describes the UPC EAN Supplemental mode.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -4911,15 +4772,14 @@ Describes the UPC EAN Supplemental mode.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for UPCA barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 
 ####Access
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upca</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upca</code> 
-
 
 ####Platforms
 
@@ -4932,8 +4792,10 @@ Controls the symbology for UPCA barcodes. If an application is not expected to s
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Controls the preamble applied to the UPCA barcode.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -4943,7 +4805,6 @@ Controls the preamble applied to the UPCA barcode.
 * Constant: EB.Barcode.UPCA_PREAMBLE_COUNTRY - String: "countryAndSystemChars" Applies both system and country code preamble to the bar code.
 
 ####Access
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcaPreamble</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upcaPreamble</code> 
@@ -4959,16 +4820,14 @@ Controls the preamble applied to the UPCA barcode.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 When true, the barcode check digit(s) will be reported for scanned UPCA barcodes.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcaReportCheckDigit</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upcaReportCheckDigit</code> 
-
-
 
 ####Platforms
 
@@ -4983,14 +4842,11 @@ When true, the barcode check digit(s) will be reported for scanned UPCA barcodes
 <span class='text-info'>BOOLEAN</span> 
 ####Description
 Controls the symbology for UPCE0 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upce0</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upce0</code> 
-
-
 
 ####Platforms
 
@@ -5003,16 +4859,14 @@ Controls the symbology for UPCE0 barcodes. If an application is not expected to 
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 When true, scanned UPCE0 barcodes will be converted to UPCA and UPCA parameters used.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upce0convertToUpca</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upce0convertToUpca</code> 
-
-
 
 ####Platforms
 
@@ -5025,8 +4879,10 @@ When true, scanned UPCE0 barcodes will be converted to UPCA and UPCA parameters 
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Controls the preamble applied to the UPCE0 barcode.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -5036,12 +4892,9 @@ Controls the preamble applied to the UPCE0 barcode.
 * Constant: EB.Barcode.UPCE0_PREAMBLE_COUNTRY - String: countryAndSystemChars Applies both system and country code preamble to the bar code.
 
 ####Access
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upce0preamble</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upce0preamble</code> 
-
-
 
 ####Platforms
 
@@ -5054,16 +4907,14 @@ Controls the preamble applied to the UPCE0 barcode.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 When true, the barcode check digit(s) will be reported for scanned UPCE0 barcodes.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upce0reportCheckDigit</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upce0reportCheckDigit</code> 
-
-
 
 ####Platforms
 
@@ -5076,16 +4927,14 @@ When true, the barcode check digit(s) will be reported for scanned UPCE0 barcode
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for UPCE1 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upce1</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upce1</code> 
-
-
 
 ####Platforms
 
@@ -5098,16 +4947,14 @@ Controls the symbology for UPCE1 barcodes. If an application is not expected to 
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 When true, scanned UPCE1 barcodes will be converted to UPCA and UPCA parameters used.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upce1convertToUpca</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upce1convertToUpca</code> 
-
-
 
 ####Platforms
 
@@ -5120,6 +4967,7 @@ When true, scanned UPCE1 barcodes will be converted to UPCA and UPCA parameters 
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Controls the preamble applied to the UPCE1 barcode.
 
@@ -5137,8 +4985,6 @@ Controls the preamble applied to the UPCE1 barcode.
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upce1preamble</code> 
 
-
-
 ####Platforms
 
 * Android
@@ -5150,11 +4996,11 @@ Controls the preamble applied to the UPCE1 barcode.
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 When true, the barcode check digit(s) will be reported for scanned UPCE1 barcodes.
 
 ####Access
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upce1reportCheckDigit</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.upce1reportCheckDigit</code> 
@@ -5211,16 +5057,14 @@ Controls the symbology for US 4-State FICS barcodes. If an application is not ex
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for US Planet barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.usPlanet</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.usPlanet</code> 
-
-
 
 ####Platforms
 
@@ -5233,16 +5077,14 @@ Controls the symbology for US Planet barcodes. If an application is not expected
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 When true, the barcode check digit(s) will be reported for scanned US Planet barcodes.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.usPlanetReportCheckDigit</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.usPlanetReportCheckDigit</code> 
-
-
 
 ####Platforms
 
@@ -5253,16 +5095,14 @@ When true, the barcode check digit(s) will be reported for scanned US Planet bar
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for US Post Net barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.usPostNet</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.usPostNet</code> 
-
-
 
 ####Platforms
 
@@ -5275,16 +5115,14 @@ Controls the symbology for US Post Net barcodes. If an application is not expect
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 When true, the barcode check digit(s) will be reported for scanned US Post Net barcodes.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.usPostNetReportCheckDigit</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.usPostNetReportCheckDigit</code> 
-
-
 
 ####Platforms
 
@@ -5295,8 +5133,10 @@ When true, the barcode check digit(s) will be reported for scanned US Post Net b
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Configures the feedback given after a successful scan. This value is ignored if aimType is set to continuousRead and no feedback will be given. Not supported on Android with EMDK version 3.1 and above.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -5306,12 +5146,9 @@ Configures the feedback given after a successful scan. This value is ignored if 
 * Constant: EB.Barcode.VF_FEEDBACK_RETICLE - String: "reticle" The last image that was successfully decoded is displayed along with a red reticle in the center of the image. The time for which the image is displayed can be configured by the viewfinderFeedbackTime parameter.
 
 ####Access
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.viewfinderFeedback</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.viewfinderFeedback</code> 
-
-
 
 ####Platforms
 
@@ -5324,16 +5161,14 @@ Configures the feedback given after a successful scan. This value is ignored if 
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 If the viewfinderFeedback:enabled or viewfinderFeedback:reticle are applied then the decoded barcode will remain on the screen for this duration, specified in milliseconds. Not supported on Android with EMDK version 3.1 and above.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.viewfinderFeedbackTime</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.viewfinderFeedbackTime</code> 
-
-
 
 ####Platforms
 
@@ -5346,16 +5181,14 @@ If the viewfinderFeedback:enabled or viewfinderFeedback:reticle are applied then
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 When scanning a barcode using a Camera scanner the viewfinder preview window will be this number of pixels in height. The images displayed in the viewfinder will be scaled as appropriate.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.viewfinderHeight</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.viewfinderHeight</code> 
-
-
 
 ####Platforms
 
@@ -5366,8 +5199,10 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 
 ####Type
 <span class='text-info'>STRING</span> 
+
 ####Description
 Configures the mode of the scanner viewfinder window. This attribute is not supported on all scanners and will interact with the picklistMode parameter, see the EMDK for C help file for more information.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -5383,8 +5218,6 @@ Configures the mode of the scanner viewfinder window. This attribute is not supp
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.viewfinderMode</code> 
 
-
-
 ####Platforms
 
 * Android
@@ -5396,16 +5229,14 @@ Configures the mode of the scanner viewfinder window. This attribute is not supp
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 When scanning a barcode using a Camera scanner the viewfinder preview window will be this number of pixels wide. The images displayed in the viewfinder will be scaled as appropriate.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.viewfinderWidth</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.viewfinderWidth</code> 
-
-
 
 ####Platforms
 
@@ -5416,11 +5247,11 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
 When scanning a barcode using a Camera scanner the viewfinder preview window will appear this number of pixels from the left hand side of the screen. The images displayed in the viewfinder will be scaled as appropriate.
 
 ####Access
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.viewfinderX</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.viewfinderX</code> 
@@ -5452,11 +5283,11 @@ When scanning a barcode using a Camera scanner the viewfinder preview window wil
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 Controls the symbology for Webcode barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance. Deprecated in Android 4.1 (Jelly Bean).
 
 ####Access
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.webcode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.webcode</code> 
@@ -5472,6 +5303,7 @@ Controls the symbology for Webcode barcodes. If an application is not expected t
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
+
 ####Description
 If true, the GT Webcode subtype will be decoded. Deprecated in Android 4.1 (Jelly Bean).
 

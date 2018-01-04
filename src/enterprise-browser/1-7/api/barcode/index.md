@@ -785,14 +785,11 @@ Specifies the format in which the barcode data is returned, binary data is retur
  
 * Constant: EB.Barcode.FORMAT_BINARY - String: binary Scanned data will be returned in Data URI format.
 * Constant: EB.Barcode.FORMAT_TEXT - String: text Scanned data will be returned in Text format.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.barcodeDataFormat</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.barcodeDataFormat</code> 
-
-
 
 ####Platforms
 
@@ -804,7 +801,8 @@ Specifies the format in which the barcode data is returned, binary data is retur
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Specifies the width of the laser beam. All devices will support normal beam widths but other widths may not be supported on your device.
+Specifies the width of the laser beam. All devices support normal beam widths; support for other beam widths varies by device.
+
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
@@ -814,13 +812,9 @@ Specifies the width of the laser beam. All devices will support normal beam widt
 * Constant: EB.Barcode.BEAM_NARROW - String: narrow Laser beam width is narrow.
 
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.beamWidth</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.beamWidth</code> 
-
-
 
 ####Platforms
 
@@ -940,7 +934,7 @@ Enables Codabar CLSi formatting when set to true.
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the maximum number of allowable characters in a Codabar barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the maximum number of allowable characters in a Codabar barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
 ####Access
 
 
@@ -962,7 +956,7 @@ Specifies the maximum number of allowable characters in a Codabar barcode. If yo
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the minimum number of allowable characters in a Codabar barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the minimum number of allowable characters in a Codabar barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
 ####Access
 
 
@@ -1079,7 +1073,7 @@ Specifies whether to verify 0, 1 or 2 check digits.
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the maximum number of allowable characters in a Code 11 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the maximum number of allowable characters in a Code 11 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
 ####Access
 
 
@@ -1101,7 +1095,7 @@ Specifies the maximum number of allowable characters in a Code 11 barcode. If yo
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the minimum number of allowable characters in a Code 11 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the minimum number of allowable characters in a Code 11 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
 ####Access
 
 
@@ -1263,14 +1257,11 @@ Sets the Code128 ISBT concatenation mode property. This feature allows a pair of
 * Constant: EB.Barcode.CODE128ISBT_NEVER - String: never Will ignore the barcode pair and only output decode data for one of the barcodes.
 * Constant: EB.Barcode.CODE128ISBT_ALWAYS - String: always Will not decode if both barcodes are not present or if one of them can not be decoded.
 * Constant: EB.Barcode.CODE128ISBT_AUTO - String: auto Auto-Discriminate.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.code128isbt128ConcatMode</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.code128isbt128ConcatMode</code> 
-
-
 
 ####Platforms
 
@@ -1284,15 +1275,12 @@ Sets the Code128 ISBT concatenation mode property. This feature allows a pair of
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the maximum number of allowable characters in a Code 128 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the maximum number of allowable characters in a Code 128 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.code128maxLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.code128maxLength</code> 
-
-
 
 ####Platforms
 
@@ -1306,15 +1294,12 @@ Specifies the maximum number of allowable characters in a Code 128 barcode. If y
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the minimum number of allowable characters in a Code 128 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the minimum number of allowable characters in a Code 128 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.code128minLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.code128minLength</code> 
-
-
 
 ####Platforms
 
@@ -1468,8 +1453,6 @@ Enables full ASCII conversion of Code 39 barcodes.
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.code39fullAscii</code> 
 
-
-
 ####Platforms
 
 * Android
@@ -1482,15 +1465,12 @@ Enables full ASCII conversion of Code 39 barcodes.
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the maximum number of allowable characters in a Code 39 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the maximum number of allowable characters in a Code 39 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.code39maxLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.code39maxLength</code> 
-
-
 
 ####Platforms
 
@@ -1503,16 +1483,14 @@ Specifies the maximum number of allowable characters in a Code 39 barcode. If yo
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
-Specifies the minimum number of allowable characters in a Code 39 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the minimum number of allowable characters in a Code 39 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.code39minLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.code39minLength</code> 
-
-
 
 ####Platforms
 
@@ -1636,15 +1614,12 @@ Controls the symbology for Code 93 barcodes. If an application is not expected t
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the maximum number of allowable characters in a Code 93 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the maximum number of allowable characters in a Code 93 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.code93maxLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.code93maxLength</code> 
-
-
 
 ####Platforms
 
@@ -1657,16 +1632,14 @@ Specifies the maximum number of allowable characters in a Code 93 barcode. If yo
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
-Specifies the minimum number of allowable characters in a Code 93 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the minimum number of allowable characters in a Code 93 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.code93minLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.code93minLength</code> 
-
-
 
 ####Platforms
 
@@ -1837,15 +1810,12 @@ Controls the symbology for D2of5 barcodes. If an application is not expected to 
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the maximum number of allowable characters in a D2of5 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the maximum number of allowable characters in a D2of5 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.d2of5maxLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.d2of5maxLength</code> 
-
-
 
 ####Platforms
 
@@ -1858,16 +1828,14 @@ Specifies the maximum number of allowable characters in a D2of5 barcode. If your
 
 ####Type
 <span class='text-info'>INTEGER</span> 
+
 ####Description
-Specifies the minimum number of allowable characters in a D2of5 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the minimum number of allowable characters in a D2of5 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.d2of5minLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.d2of5minLength</code> 
-
-
 
 ####Platforms
 
@@ -2772,15 +2740,12 @@ Controls the symbology for Korean 3of5 barcodes. If an application is not expect
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the maximum number of allowable characters in a Korean 3of5 barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the maximum number of allowable characters in a Korean 3of5 barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.korean3of5maxLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.korean3of5maxLength</code> 
-
-
 
 ####Platforms
 
@@ -3303,14 +3268,11 @@ Sets the number of MSI check digits to use.
  
 * Constant: EB.Barcode.MSI_CHECKDIGITS_ONE - String: one Use one check digit for MSI barcodes.
 * Constant: EB.Barcode.MSI_CHECKDIGITS_TWO - String: two Use two check digits for MSI barcodes.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.msiCheckDigits</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.msiCheckDigits</code> 
-
-
 
 ####Platforms
 
@@ -3324,15 +3286,12 @@ Sets the number of MSI check digits to use.
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the maximum number of allowable characters in a MSI barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the maximum number of allowable characters in a MSI barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.msiMaxLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.msiMaxLength</code> 
-
-
 
 ####Platforms
 
@@ -3346,15 +3305,12 @@ Specifies the maximum number of allowable characters in a MSI barcode. If your a
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the minimum number of allowable characters in a MSI barcode. If your application only expects barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+Specifies the minimum number of allowable characters in a MSI barcode. If the application is expected to scan barcode lengths in a certain range, reducing the allowed range can improve scanning performance. Allowed values are 0 to 55.
+
 ####Access
-
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.msiMinLength</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.msiMinLength</code> 
-
-
 
 ####Platforms
 
@@ -4352,7 +4308,7 @@ Specifies the output height of the captured signature barcode. Signature barcode
 <span class='text-info'>INTEGER</span> 
 
 ####Description
-Specifies the output quality of the captured signature barcode. Signature barcodes return their data in Data URI format, it is recommended you adjust the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes. Provide a value between 10 and 100 inclusive.
+Specifies the output quality of the captured signature barcode. Signature barcodes return their data in Data URI format, Zebra recommends adjusting the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes. Provide a value from 10-100.
 
 ####Access
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.signatureImageQuality</code>
@@ -4370,7 +4326,7 @@ Specifies the output quality of the captured signature barcode. Signature barcod
 <span class='text-info'>INTEGER</span> 
 
 ####Description
-Specifies the output width of the captured signature barcode. Signature barcodes return their data in Data URI format, it is recommended you adjust the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes. Provide a number greater than or equal to 20.
+Specifies the output width of the captured signature barcode. Signature barcodes return their data in Data URI format, Zenra recommends adjusting the dataBufferSize and barcodeDataFormat properties when scanning Signature barcodes. Provide a number greater than or equal to 20.
 
 ####Access
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.signatureImageWidth</code>
@@ -4427,7 +4383,7 @@ Controls the symbology for TLC 39 barcodes. If an application is not expected to
 <span class='text-info'>BOOLEAN</span> 
 
 ####Description
-Only applies to an enabled laser or imaging scanner. Disconnecting the trigger will prevent the scan beam from being emitted, this can temporarily prevent a user from scanning without having to disable the scanner, which can take longer. By default the trigger will be connected when the scanner is first enabled, you do not have to connect it separately. Please note that disconnecting the trigger will also prevent the start method from emitting a laser. This property will only affect the scanner and will have no effect on the 'captureTrigger' API.
+Only applies to an enabled laser or imaging scanner. Disconnecting the trigger will prevent the scan beam from being emitted, this can temporarily prevent a user from scanning without having to disable the scanner, which can take longer. By default the trigger is connected when the scanner is first enabled; it does not have to be connected separately. Please note that disconnecting the trigger will prevents the start method from emitting a laser. This property affects only the scanner and has no effect on the 'captureTrigger' API.
 
 ####Params
 <p><strong>Default:</strong> true</p>
@@ -4700,7 +4656,7 @@ Sets the Security level for decoding UPC EAN barcodes and accepts a value from 0
 <span class='text-info'>BOOLEAN</span> 
 
 ####Description
-When true, enables the supplemental barcode decoding. Note you must have upcEanSupplementalMode:always set for this parameter to take effect.
+When true, enables the supplemental barcode decoding. Please note that `upcEanSupplementalMode:always` must be set for this parameter to take effect.
 
 ####Access
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcEanSupplemental2</code>
@@ -4720,7 +4676,7 @@ When true, enables the supplemental barcode decoding. Note you must have upcEanS
 <span class='text-info'>BOOLEAN</span> 
 
 ####Description
-When true, enables the supplemental barcode decoding. Note you must have `upcEanSupplementalMode:always` set for this parameter to take effect.
+When true, enables the supplemental barcode decoding. Please note that `upcEanSupplementalMode:always` must be set for this parameter to take effect.
 
 ####Access
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.upcEanSupplemental5</code>

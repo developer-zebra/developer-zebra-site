@@ -865,6 +865,24 @@ Name of device application running on. Examples: '9000' (BB), 'iPhone', 'dream' 
 * Android
 * Windows Mobile
 
+###deviceHostName
+
+####Type
+<span class='text-info'>STRING</span> <span class='label label-warning'>Read Only</span>
+####Description
+Hostname of the device. Supported only on Android Platform. 
+####Access
+
+
+* Class: This property can only be accessed via the API class object.
+	* <code>EB.System.deviceHostName</code>
+
+
+
+####Platforms
+
+* Android
+
 ###deviceOwnerEmail
 
 ####Type

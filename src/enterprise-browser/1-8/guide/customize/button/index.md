@@ -466,7 +466,7 @@ Button-specific parameters are used to specify attributes that apply to an indiv
             <buttonHeight value="120" />
             <buttonImage value="file://%INSTALLDIR%/UpArrow.png" />
             <buttonImagePressed value="file://%INSTALLDIR%/UpArrow.png" />
-            <buttonAction value="key-19" />
+            <buttonActionClick value="key-19" />
         </Button1>
         <Button2>
         ...
@@ -498,11 +498,11 @@ Used to specify the left coordinate value of the particular button inside the Bu
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonLeft value="413"/>
       ...
-    </ButtonBar1>
+    </Button1>
   
 
 -----
@@ -514,11 +514,11 @@ Used to specify the top coordinate value of the button inside the ButtonBar. **U
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonTop value="1063"/>
       ...
-    </ButtonBar1>
+    </Button1>
   
 
 -----
@@ -530,11 +530,11 @@ Used to specify the height of the button inside the ButtonBar. **Use only if the
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonHeight value="120"/>
       ...
-    </ButtonBar1>
+    </Button1>
 
 -----
 
@@ -545,11 +545,11 @@ Used to specify the width of the particular button inside the ButtonBar. **Use o
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonWidth value="204"/>
       ...
-    </ButtonBar1>  
+    </Button1>  
 
 -----
 
@@ -573,11 +573,11 @@ If any special characters such as (< > \ / " ') need to be set as a [buttonText]
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonText value="Submit"/>
       ...
-    </ButtonBar1>
+    </Button1>
 
 -----
 
@@ -596,11 +596,11 @@ If any special characters such as (< > \ / " ') need to be set as a [buttonSecon
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonSecondaryText value="5"/>
       ...
-    </ButtonBar1>
+    </Button1>
 
 -----
 
@@ -618,12 +618,12 @@ Used to specify a device-resident image file (.png format only) for the particul
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonImage value="file://%INSTALLDIR%/space_bar.png"/>
       <buttonImage value="/storage/emulated/0/deviceinfo.png"/>
       ...
-    </ButtonBar1>
+    </Button1>
 
 -----
 
@@ -641,13 +641,35 @@ Used to specify a device-resident image file (.png format only) for the particul
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonImagePressed value="file://%INSTALLDIR%/scan_pressed.png"/>
       <buttonImagePressed value="/storage/emulated/0/scan_pressed.png"/>
       ...
-    </ButtonBar1>
+    </Button1>
 
+
+-----
+
+### buttonClickable 
+
+Used to specify the clickable property of the button. Button is clickable if the value is set to “true” if you don’t want the button to be clickable than value should be “false”. By default this will be true(button is clickable) for all the buttons and doesn’t have to be mentioned explicitly.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonClickable value="false"/>
+      ...
+    </Button1>
+    
+The following Button Actions are supported:
+
+* For [Adding Delay Between Actions](#adding-delay-between-actions)
+* For performing [keyevent](#keyevent) actions
+* For executing [JavaScript](#javascriptexecution) operations
+* For invoking specific [Commands](#commandexecution)
 
 -----
 
@@ -663,17 +685,18 @@ Used to specify the action to be taken when a particular button is pressed. Acce
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonActionClick value="key-62"/>
       <buttonActionClick value="key-131"/>
       <buttonActionClick value="quit"/>
       <buttonActionClick value="runscript-camerascript"/>
       ...
-    </ButtonBar1>
+    </Button1>
     
 The following Button Actions are supported:
 
+* For [Adding Delay Between Actions](#adding-delay-between-actions)
 * For performing [keyevent](#keyevent) actions
 * For executing [JavaScript](#javascriptexecution) operations
 * For invoking specific [Commands](#commandexecution)
@@ -691,17 +714,18 @@ Used to specify the action to be taken when a particular button is long pressed.
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonActionLongClick value="key-62"/>
       <buttonActionLongClick value="key-131"/>
       <buttonActionLongClick value="quit"/>
       <buttonActionLongClick value="runscript-camerascript"/>
       ...
-    </ButtonBar1>
+    </Button1>
     
 The following Button Actions are supported:
 
+* For [Adding Delay Between Actions](#adding-delay-between-actions)
 * For performing [keyevent](#keyevent) actions
 * For executing [JavaScript](#javascriptexecution) operations
 * For invoking specific [Commands](#commandexecution)
@@ -715,17 +739,18 @@ Used to specify the action to be taken when a particular button is pressed(*simi
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonActionDown value="key-62"/>
       <buttonActionDown value="key-131"/>
       <buttonActionDown value="quit"/>
       <buttonActionDown value="runscript-camerascript"/>
       ...
-    </ButtonBar1>
+    </Button1>
     
 The following Button Actions are supported:
 
+* For [Adding Delay Between Actions](#adding-delay-between-actions)
 * For performing [keyevent](#keyevent) actions
 * For executing [JavaScript](#javascriptexecution) operations
 * For invoking specific [Commands](#commandexecution)
@@ -739,17 +764,18 @@ Used to specify the action to be taken when a particular button is pressed and r
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonActionUp value="key-62"/>
       <buttonActionUp value="key-131"/>
       <buttonActionUp value="quit"/>
       <buttonActionUp value="runscript-camerascript"/>
       ...
-    </ButtonBar1>
+    </Button1>
     
 The following Button Actions are supported:
 
+* For [Adding Delay Between Actions](#adding-delay-between-actions)
 * For performing [keyevent](#keyevent) actions
 * For executing [JavaScript](#javascriptexecution) operations
 * For invoking specific [Commands](#commandexecution)
@@ -763,14 +789,14 @@ Used for generating the delay between actions. After execution of the first acti
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonActionUp value="key-62 + delay-500 + key-53"/>
       <buttonActionDown value="key-62 + delay-500 + key-53"/>
       <buttonActionClick value="key-62 + delay-500 + key-53"/>
       <buttonActionLongClick value="key-62 + delay-500 + key-53"/>
       ...
-    </ButtonBar1>
+    </Button1>
 
 -----
 
@@ -778,16 +804,6 @@ Used for generating the delay between actions. After execution of the first acti
 Used to generate a particular keyevent or to output a character. Specify the key and value in **key-value** format from among the standard [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent.html).
 
 **This feature can be used to create custom keyboard layouts by invoking multiple ButtonBars placed in rows or columns on the screen**. Generating a keyevent for a particular key can be captured inside JavaScript onkeydown events, and also will output the value, if associated.
-
-#### Example
-
-    :::xml
-    <ButtonBar1>
-      ...
-      <barColor value="#AF7AC5"/>
-      ...
-    </ButtonBar1>
-
 
 #### Key Event Examples
 

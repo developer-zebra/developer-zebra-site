@@ -166,6 +166,7 @@ Determines whether NFC is supported on the device. Returns true if NFC is suppor
 2. It is mandatory to disable default NFC application of the device before using this API.
 3. The APIs are designed to read NON-Secure NFC Tags.
 4. The NFC APIs are designed to work in Reader Mode only.
+5. The callback parameter TagManufacturerName of enableRead method will return manufacturer name if and only if the UUID of the NFC card is 7 byte or 8 byte. In all other cases, it will display as Not Specified.
                     
                 
 

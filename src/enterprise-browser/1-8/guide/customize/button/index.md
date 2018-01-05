@@ -7,15 +7,15 @@ layout: guide.html
 
 ## Overview
 
-Apps made with Enterprise Browser 1.7 (and higher) for Android can be accompanied by a series 1-10 custom on-screen buttons or keys that can perform virtually any function available to the device, including launching an app or activity, scanning a barcode, sending an intent or executing a JavaScript code snippet. 
+Apps made with Enterprise Browser 1.8 (and higher) for Android can be accompanied by a series 1-50 custom on-screen buttons or keys that can perform virtually any function available to the device, including launching an app or activity, scanning a barcode, sending an intent or executing a JavaScript code snippet. 
 
-The number of buttons or keys and the appearance, layout, on-screen position, functions and all other attributes are controlled through a file called `button.xml`. If one or more of the buttons is to execute JavaScript, the code is contained in a second file called `CustomScript.xml`. Both files are stored on the device, and their paths are specified in corresponding tags in the app's `Config.xml` file. ButtonBars can be shown and hidden programmatically as required by an app's pages through methods implemented in one of 10 [ButtonBar APIs](../../../api/re2x/ButtonBar) currently supported. See [Customize Enterprise Browser](../) for details. 
+The number of buttons or keys and the appearance, layout, on-screen position, functions and all other attributes are controlled through a file called `button.xml`. If one or more of the buttons is to execute JavaScript, the code is contained in a second file called `CustomScript.xml`. Both files are stored on the device, and their paths are specified in corresponding tags in the app's `Config.xml` file. ButtonBars can be shown and hidden programmatically as required by an app's pages through methods implemented in one of 50 [ButtonBar APIs](../../../api/re2x/ButtonBar) currently supported. See [Customize Enterprise Browser](../) for details. 
 
 -----
 
 ## Button.xml File
 
-The `button.xml` file stores all configuration settings for custom on-screen buttons of an app. Enterprise Browser currently supports 10 ButtonBars (ButtonBar1 through ButtonBar10) and all definitions are maintained in the `button.xml` file. 
+The `button.xml` file stores all configuration settings for custom on-screen buttons of an app. Enterprise Browser currently supports 50 ButtonBars (ButtonBar1 through ButtonBar50) and all definitions are maintained in the `button.xml` file. 
 
 The positional attributes, action, color, transparency and all other view related parameters can be fully customized by specifying those values as key value pair in this xml file.  
 
@@ -186,7 +186,7 @@ This is the head or parent node of the `button.xml` file; all tags should be con
 -----
 
 ### ButtonBarN
-Numbered ButtonBar1 through ButtonBar10, this node contains all the specific [ButtonBar parameters](#buttonbarparameters) (color, transparency, position, etc.) and attributes of a particular numbered ButtonBar, as well as the &lt;ButtonN&gt; nodes. If multiple ButtonBars are required, they must be defined one after another within the the &lt;Buttonbargroup&gt; parent node (as explained above).
+Numbered ButtonBar1 through ButtonBar50, this node contains all the specific [ButtonBar parameters](#buttonbarparameters) (color, transparency, position, etc.) and attributes of a particular numbered ButtonBar, as well as the &lt;ButtonN&gt; nodes. If multiple ButtonBars are required, they must be defined one after another within the the &lt;Buttonbargroup&gt; parent node (as explained above).
 
 **Note**: If an attribute defined for a ButtonBar conflicts with one or more [Button-specific parameters](#buttonspecificparameters), the individual Button setting will take precedence.   
 

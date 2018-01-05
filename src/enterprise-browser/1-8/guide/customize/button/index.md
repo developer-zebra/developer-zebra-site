@@ -651,9 +651,62 @@ Used to specify a device-resident image file (.png format only) for the particul
 
 -----
 
+### buttonPopUp 
+
+Used for previewing the value of button whenever pressed. Button value is previewed if and only if the value is set to true. By default, the value is set to true for all the buttons.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonPopUp value="false"/>
+      ...
+    </Button1>
+
+-----
+
+### buttonHapticfeedback 
+
+Used to specify the Haptic feedback property for the button. Set the value as true to vibrate on click of button. By default, the value is set to false for all the buttons.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonHapticfeedback value="true"/>
+      ...
+    </Button1>
+
+-----
+
+### buttonHapticfeedbackduration 
+
+Used to specify the vibrate duration of the particular button. By default, the duration value is set to 40 milliseconds. 
+
+**Notes**:
+
+* The vibration will start if [buttonHapticfeedback](buttonhapticfeedback) is set to true.
+* The vibration will stop either if duration is completed or button is released.
+* Set any value in milliseconds in the range of 1 to 1000 milliseconds.
+* The maximum allowed value for duration is 1000 milliseconds. Setting value more than the maximum range will override to 1000 milliseconds.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonHapticfeedback value="true"/>
+      <buttonHapticfeedbackduration value="100"/>
+      ...
+    </Button1>
+
+-----
+
 ### buttonClickable 
 
-Used to specify the clickable property of the button. Button is clickable if the value is set to “true” if you don’t want the button to be clickable than value should be “false”. By default this will be true(button is clickable) for all the buttons and doesn’t have to be mentioned explicitly.
+Used to specify the clickable property of the button. Button is clickable if and only if the value is set to true. By default, the value is set to true for all the buttons. This is useful when no action has to be performed on click of button but want to show the same in the ButtonBar layout.
 
 #### Example
 
@@ -663,13 +716,6 @@ Used to specify the clickable property of the button. Button is clickable if the
       <buttonClickable value="false"/>
       ...
     </Button1>
-    
-The following Button Actions are supported:
-
-* For [Adding Delay Between Actions](#adding-delay-between-actions)
-* For performing [keyevent](#keyevent) actions
-* For executing [JavaScript](#javascriptexecution) operations
-* For invoking specific [Commands](#commandexecution)
 
 -----
 
@@ -734,7 +780,11 @@ The following Button Actions are supported:
 
 ### buttonActionDown 
 
-Used to specify the action to be taken when a particular button is pressed(*similar to keydown event*). Accepts predefined command strings only.
+Used to specify the action to be taken when a particular button is pressed(*similar to keydown event*). Accepts predefined command strings only. This is useful when seperate actions need to be associated with button down and up event.
+
+**Notes**:
+
+* [buttonActionClick](#buttonactionclick) & [buttonActionLongClick](#buttonactionlongclick) doesnot gets executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) is defined for that particular button.
 
 #### Example
 
@@ -759,7 +809,11 @@ The following Button Actions are supported:
 
 ### buttonActionUp 
 
-Used to specify the action to be taken when a particular button is pressed and released(*similar to keyup event*). Accepts predefined command strings only.
+Used to specify the action to be taken when a particular button is pressed and released(*similar to keyup event*). Accepts predefined command strings only. This is useful when seperate actions need to be associated with button down and up event.
+
+**Notes**:
+
+* [buttonActionClick](#buttonactionclick) & [buttonActionLongClick](#buttonactionlongclick) doesnot gets executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) is defined for that particular button.
 
 #### Example
 

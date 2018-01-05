@@ -756,6 +756,24 @@ The following Button Actions are supported:
 
 -----
 
+### Adding Delay Between Actions
+
+Used for generating the delay between actions. After execution of the first action, if the second action need to be executed with a delay then providing the delay command in between two actions will be useful. This can be used in all four kind of button actions i.e. (buttonActionClick, buttonActionLongClick, buttonActionup and buttonActionDown). The command name is  ***delay*-value**.
+
+#### Example
+
+    :::xml
+    <ButtonBar1>
+      ...
+      <buttonActionUp value="key-62 + delay-500 + key-53"/>
+      <buttonActionDown value="key-62 + delay-500 + key-53"/>
+      <buttonActionClick value="key-62 + delay-500 + key-53"/>
+      <buttonActionLongClick value="key-62 + delay-500 + key-53"/>
+      ...
+    </ButtonBar1>
+
+-----
+
 ### keyevent
 Used to generate a particular keyevent or to output a character. Specify the key and value in **key-value** format from among the standard [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent.html).
 

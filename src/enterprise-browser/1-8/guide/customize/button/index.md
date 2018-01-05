@@ -223,7 +223,7 @@ ButtonBar-specific parameters are used to specify attributes that apply to the e
 -----
 
 ### barColor
-Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp). Uses hex format #RRGGBB. 
+Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp). Uses hex format #RRGGBB or #AARRGGBB. 
 
 **Notes**:
 
@@ -231,6 +231,7 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
 * If no color is specified, the default color is blue.
 * If an image is specified as a button background, barColor setting is ignored.
 * If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the [buttonImage](#buttonimage) parameter.
+* The following standard color names are also accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
     
 #### Example
 
@@ -245,7 +246,7 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
 
 ### barColorPressed
 
-Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp) when any button in the bar is pressed. Uses hex format #RRGGBB. 
+Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp) when any button in the bar is pressed. Uses hex format #RRGGBB or #AARRGGBB. 
 
 **Notes**:
 
@@ -253,6 +254,7 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
 * If no color is specified, the default color is yellow.
 * If an image is specified as a button background, barColor setting is ignored.
 * If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the [buttonImagePressed](#buttonimagepressed) parameter.
+* The following standard color names are also accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
 
 #### Example
 
@@ -260,6 +262,42 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
     <ButtonBar1>
       ...
       <barColorPressed value="#3498DB"/>
+      ...
+    </ButtonBar1>
+   
+-----
+
+### barTextColor
+
+Used to specify the text color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp) when any button in the bar is pressed. Uses hex format #RRGGBB or #AARRGGBB. 
+
+**Notes**:
+
+* Setting the text color for individual buttons is not supported.
+* If no color is specified, the default color is white.
+* The following standard color names are also accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
+
+#### Example
+
+    :::xml
+    <ButtonBar1>
+      ...
+      <barTextColor value="#AF7AC5"/>
+      ...
+    </ButtonBar1>
+   
+-----
+
+### barTextStyle
+
+Used to specify the style of the text of all buttons of that particular ButtonBar. All buttons in that particular ButtonBar will have the same style. Allowed values are: `bold`, `bolditalic`, `italic` and `normal`. 
+
+#### Example
+
+    :::xml
+    <ButtonBar1>
+      ...
+      <barTextStyle value="bold"/>
       ...
     </ButtonBar1>
    
@@ -279,6 +317,22 @@ Used to specify the default text size interpreted as "scaled pixel" units. This 
     </ButtonBar1>
 
 -----
+
+### barGapBtwnButtons
+
+Used to specify the space in between the buttons of the particular ButtonBar. Value should be given as pixels in INTEGER format. 
+
+#### Example
+
+    :::xml
+    <ButtonBar1>
+      ...
+      <barGapBtwnButtons value="10"/>
+      ...
+    </ButtonBar1>
+   
+-----
+
 
 ### barTransparency
 
@@ -315,6 +369,19 @@ Used to select the horizontal or vertical orientation of buttons on the ButtonBa
 Used to specify the placement of the ButtonBar on the device screen. 
 
 > **Important**: If any of the four positional attributes (barLeft, barTop, barHeight, barWidth) are unspecified, a buttonBar with horizontal orientation will be placed at the bottom of the screen and occupy the full screen width; and with vertical orientation placed along the right edge of the screen and occupy the full screen height. 
+
+### Using Relative Co-ordinates For ButtonBar Positioning
+
+For positioning related tags you can give the value as either the absolute measure in pixel or you can use the constants like `deviceheight` and `devicewidth` and perform some basic mathematical operations on them. The `deviceheight` and `devicewidth` will be automatically substituted internally with that respective device screenheight and screenwidth. By using these constants we can generate single generic button.xml for all similar devices. Only one mathematical operation should be used for this.
+
+#### Valid Examples
+
+    :::xml
+    <barLeft value="0.25*devicewidth"/>    
+    <barTop value="0.25*deviceheight"/>
+    <barLeft value="0.5*devicewidth"/>
+    <barheight value="deviceheight-100"/>
+    <barwidth value="devicewidth/2"/>
 
 -----
 
@@ -408,6 +475,22 @@ Button-specific parameters are used to specify attributes that apply to an indiv
 
 -----
 
+
+## Using Relative Co-ordinates For Button-Specific Positioning
+
+For positioning related tags(buttonLeft, buttonTop, buttonHeight, buttonWidth) you can give the value as either the absolute measure in pixel or you can use the constants like `deviceheight` and `devicewidth` and perform some basic mathematical operations on them. The `deviceheight` and `devicewidth` will be automatically substituted internally with that respective device screenheight and screenwidth. By using these constants we can generate single generic button.xml for all similar devices. Only one mathematical operation should be used for this.
+
+#### Valid Examples
+
+    :::xml
+    <buttonLeft value="0.25*devicewidth"/>    
+    <buttonTop value="0.25*deviceheight"/>
+    <buttonHeight value="0.5*devicewidth"/>
+    <buttonWidth value="deviceheight-100"/>
+
+-----
+
+
 ### buttonLeft
 
 Used to specify the left coordinate value of the particular button inside the ButtonBar. **Use only if the size of a particular button must be larger or smaller than others in the ButtonBar**. If left unspecified, this value is calculated as described under [Button-specific Parameters](#buttonspecificparameters), above.
@@ -498,6 +581,29 @@ If any special characters such as (< > \ / " ') need to be set as a [buttonText]
 
 -----
 
+### buttonSecondaryText
+
+Used to specify the secondary text to be displayed for the particular button at the top right corner of that button when that particular button is long pressed. **Applies only if a background image is not specified**. 
+
+can accept  unless otherwise noted. Entering non-text characters (< > \ / " ') in these fields could cause the Config.xml file to become corrupt.
+
+If any special characters such as (< > \ / " ') need to be set as a [buttonSecondaryText](#buttonSecondaryText) then .
+
+**Notes**:
+
+* **The buttonSecondaryText field accepts alpha-numeric characters only**. Use of non-text characters (i.e. < > \ / " ') will corrupt the `Button.xml` file.
+
+#### Example
+
+    :::xml
+    <ButtonBar1>
+      ...
+      <buttonSecondaryText value="5"/>
+      ...
+    </ButtonBar1>
+
+-----
+
 ### buttonImage
 
 Used to specify a device-resident image file (.png format only) for the particular button inside the ButtonBar. Supports [substitution variables](../../configreference/#substitutionvariables) (recommended) or full path plus file name.
@@ -545,19 +651,52 @@ Used to specify a device-resident image file (.png format only) for the particul
 
 -----
 
-### buttonAction
+### buttonActionClick 
 
 Used to specify the action to be taken when a particular button is pressed. Accepts predefined command strings only.
+
+**Notes**:
+
+* The parameter name has been changed from `buttonAction` to `buttonActionClick`. However the older tag name will also work.
+* `buttonActionClick` doesnot gets executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) is defined for that particular button.
 
 #### Example
 
     :::xml
     <ButtonBar1>
       ...
-      <buttonAction value="key-62"/>
-      <buttonAction value="key-131"/>
-      <buttonAction value="quit"/>
-      <buttonAction value="runscript-camerascript"/>
+      <buttonActionClick value="key-62"/>
+      <buttonActionClick value="key-131"/>
+      <buttonActionClick value="quit"/>
+      <buttonActionClick value="runscript-camerascript"/>
+      ...
+    </ButtonBar1>
+    
+The following Button Actions are supported:
+
+* For performing [keyevent](#keyevent) actions
+* For executing [JavaScript](#javascriptexecution) operations
+* For invoking specific [Commands](#commandexecution)
+
+-----
+
+### buttonActionLongClick 
+
+Used to specify the action to be taken when a particular button is long pressed. Accepts predefined command strings only.
+
+**Notes**:
+
+* `buttonActionLongClick` doesnot gets executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) is defined for that particular button.
+
+#### Example
+
+    :::xml
+    <ButtonBar1>
+      ...
+      <buttonActionLongClick value="key-62"/>
+      <buttonActionLongClick value="key-131"/>
+      <buttonActionLongClick value="quit"/>
+      <buttonActionLongClick value="runscript-camerascript"/>
       ...
     </ButtonBar1>
     

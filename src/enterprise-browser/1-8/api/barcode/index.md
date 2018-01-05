@@ -598,7 +598,7 @@ Synchronous Return:
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Controls adaptive scanning. When set to true, the scan engine will automatically toggle between wide and narrow scan angles, allowing the scan engine to decode barcodes either in close proximity or far away (~100 inches). Adaptive scanning is supported only in high performance, long-working range scan engines such as the SE960.
+Controls adaptive scanning. When set to true, the scan engine will automatically toggle between wide and narrow scan angles, allowing the scan engine to decode barcodes either in close proximity or far away (~100 inches). Adaptive scanning is supported only in high performance, long-working range scan engines such as the SE960. On Android platform, it supports only with Laser scanner such as RS4000. It supports on Android with EMDK version 6.6 and above.
 
 ####Access
 
@@ -610,6 +610,7 @@ Controls adaptive scanning. When set to true, the scan engine will automatically
 
 ####Platforms
 
+* Android
 * Windows Mobile
 * Zebra Devices Only (laser scanners on Symbol-branded devices)
 
@@ -671,6 +672,31 @@ Describes the type of aiming to use. Supported on Android with EMDK version 6.3 
 * Android
 * Windows Mobile
 * Zebra Devices Only (scanners on Symbol-branded devices)
+
+###aimingPattern
+
+####Type
+<span class='text-info'>STRING</span> 
+
+####Description
+It describes the aiming pattern to be turned ON or OFF. It supports on Android with EMDK version 6.6 and above.
+
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.AIMINGPATTERN_ON - String: "ON" Aiming pattern is turned on.
+* Constant: EB.Barcode.AIMINGPATTERN_OFF - String: "OFF" Aiming pattern is turned off.
+
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.aimingPattern</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.aimingPattern</code> 
+
+####Platforms
+
+* Android
 
 ###allDecoders
 

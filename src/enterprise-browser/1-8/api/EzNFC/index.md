@@ -94,7 +94,7 @@ Enables NFC read of the application if device supports NFC.
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
 ####Callback
-Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>Type : <span class='text-info'>STRING</span><p>The Type of NFC Tag that has been read </p></li><li>ID : <span class='text-info'>STRING</span><p>The ID of the Tag that has been read </p></li><li>Payload : <span class='text-info'>STRING</span><p>Payload is the data overall data of NFC Tag </p></li><li>TNF : <span class='text-info'>STRING</span><p>TNF is last 3 bits of Payload </p></li><li>EncodingFormat  : <span class='text-info'>STRING</span><p>Text encoding format applied </p></li><li>data : <span class='text-info'>STRING</span><p>The String data that is read from Tag </p></li><li>TagIDHexa : <span class='text-info'>STRING</span><p>NFC Tag id in Hexacode </p></li></ul></ul>
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>Type : <span class='text-info'>STRING</span><p>The Type of NFC Tag that has been read </p></li><li>ID : <span class='text-info'>STRING</span><p>The ID of the Tag that has been read </p></li><li>Payload : <span class='text-info'>STRING</span><p>Payload is the data overall data of NFC Tag </p></li><li>TNF : <span class='text-info'>STRING</span><p>TNF is last 3 bits of Payload </p></li><li>EncodingFormat  : <span class='text-info'>STRING</span><p>Text encoding format applied </p></li><li>result : <span class='text-info'>STRING</span><p>The String data that is read from Tag </p></li><li>TagIDHexa : <span class='text-info'>STRING</span><p>NFC Tag id in Hexacode </p></li><li>TagManufacturerName : <span class='text-info'>STRING</span><p>The manufacturer of NFC Tag that has been read </p></li><li>TagTechnologies : <span class='text-info'>STRING</span><p>The techonlogy list supported by Tag that has been read </p></li><li>ATQA : <span class='text-info'>STRING</span><p>Return the ATQA/SENS_RES bytes from tag discovery, if the Tag type is NfcA </p></li><li>SAK : <span class='text-info'>STRING</span><p>Return the SAK/SEL_RES bytes from tag discovery, if the Tag type is NfcA </p></li><li>ATS : <span class='text-info'>STRING</span><p>Return the ATS bytes from tag discovery, if the Tag type is contact smartcards </p></li></ul></ul>
 
 ####Returns
 Synchronous Return:
@@ -166,6 +166,7 @@ Determines whether NFC is supported on the device. Returns true if NFC is suppor
 2. It is mandatory to disable default NFC application of the device before using this API.
 3. The APIs are designed to read NON-Secure NFC Tags.
 4. The NFC APIs are designed to work in Reader Mode only.
+5. The callback parameter TagManufacturerName of enableRead method will return manufacturer name if and only if the UUID of the NFC card is 7 byte or 8 byte. In all other cases, it will display as Not Specified.
                     
                 
 
@@ -254,6 +255,12 @@ TNF
 Payload
 EncodingFormat
 Result
+TagIDHexa
+TagManufacturerName, Note: Return manufacturer name if and only if the UUID of the NFC card is 7 byte or 8 byte. In all other cases, it will display as Not Specified.
+TagTechnologies
+ATQA
+SAK
+ATS
 */
 function enableNfcCallback1(dat) {
 	var ID = dat.id;
@@ -263,7 +270,13 @@ function enableNfcCallback1(dat) {
 	var EncodingFormat = dat.encodingformat;
 	var Result = dat.result;
 	var TagIDHexa = dat.tagidhexa;
-	var ShowData = "ID:" + ID + "&lt;BR&gt;Type:" + Type + "&lt;BR&gt;TNF:" + TNF + "&lt;BR&gt;Payload:" + Payload + "&lt;BR&gt;EncodingFormat:" + EncodingFormat + "&lt;BR&gt;Result:" + Result + "&lt;BR&gt;TagIDHexa: " + TagIDHexa ;
+	var Manufacturer = dat.tagManufacturerName;
+	var TagTechnologies = dat.tagTechnologies;
+	var ATQA = dat.atqa;
+	var SAK = dat.sak;
+	var ATS= dat.ats;
+	var ShowData = "ID:" + ID + "&lt;BR&gt;Type:" + Type + "&lt;BR&gt;TNF:" + TNF + "&lt;BR&gt;Payload:" + Payload + "&lt;BR&gt;EncodingFormat:" + EncodingFormat + "&lt;BR&gt;Result:" + Result + "&lt;BR&gt;TagIDHexa: " + TagIDHexa + "&lt;BR&gt;Manufacturer: " + Manufacturer+ "&lt;BR&gt;TagTechnologies: " + TagTechnologies + "&lt;BR&gt;ATQA: " + ATQA +
+	"&lt;BR&gt;SAK: " + SAK + "&lt;BR&gt;ATS: " + ATS ;
 	
 	document.getElementById("demo5").innerHTML = ShowData;
 }

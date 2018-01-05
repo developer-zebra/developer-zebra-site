@@ -3363,7 +3363,7 @@ When true, the barcode check digit(s) will be reported for scanned MSI barcodes.
 * Windows CE
 * Zebra devices only (Some scan engines do not support all symbologies/symbology properties)
 
-###OneDQuietZoneLevel
+###oneDQuietZoneLevel
 
 ####Type
 <span class='text-info'>STRING</span> 
@@ -3380,9 +3380,9 @@ Specifies the effort at which the decoder will attempt to decode margin-less bar
 ####Access
 
 
-* Instance: This property can be accessed via an instance object of this class: <code>myObject.OneDQuietZoneLevel</code>
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.oneDQuietZoneLevel</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
-	* <code>EB.Barcode.OneDQuietZoneLevel</code> 
+	* <code>EB.Barcode.oneDQuietZoneLevel</code> 
 
 
 

@@ -2306,6 +2306,54 @@ When true, EAN 8 barcodes will be converted to EAN 13 and EAN 13 parameters used
 * Windows CE
 * Zebra devices only (Some scan engines do not support all symbologies/symbology properties)
 
+###enableGS1
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+Enable or disable the GS1 decoding of UDI. It supports on Android with EMDK version 6.6 and above.
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.enableGS1</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.enableGS1</code> 
+
+####Platforms
+
+* Android
+
+###enableHIBCC
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+Enable or disable the HIBCC decoding of UDI. It supports on Android with EMDK version 6.6 and above.
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.enableHIBCC</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.enableHIBCC</code> 
+
+####Platforms
+
+* Android
+
+###enableICCBBA
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+Enable or disable the ICCBBA decoding of UDI. It supports on Android with EMDK version 6.6 and above.
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.enableICCBBA</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.enableICCBBA</code> 
+
+####Platforms
+
+* Android
+
 ###enableTimeout
 
 ####Type
@@ -4254,6 +4302,31 @@ When the aimType:continuousRead property is applied this value defines the inter
 * Android
 * Windows Mobile
 * Zebra devices only (scanners on Symbol-branded devices)
+
+###scanMode
+
+####Type
+<span class='text-info'>STRING</span> 
+
+####Description
+Describes the available scanning modes such as Single Barcode and UDI. This property allows to set one type at a time. It supports on Android with EMDK version 6.6 and above.
+
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.SCANMODE_SINGLE_BARCODE - String: "single_barcode" Decode only a single barcode at a time.
+* Constant: EB.Barcode.SCANMODE_UDI - String: "udi" Decode UDI standard barcodes. This will decode AI fields of the barcodes as well. Note that the UDI scanning is only available with Imager based scanners.
+
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.scanMode</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.scanMode</code> 
+
+####Platforms
+
+* Android
 
 ###scanTimeout
 

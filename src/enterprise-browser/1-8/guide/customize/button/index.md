@@ -708,6 +708,54 @@ The following Button Actions are supported:
 
 -----
 
+### buttonActionDown 
+
+Used to specify the action to be taken when a particular button is pressed(*similar to keydown event*). Accepts predefined command strings only.
+
+#### Example
+
+    :::xml
+    <ButtonBar1>
+      ...
+      <buttonActionDown value="key-62"/>
+      <buttonActionDown value="key-131"/>
+      <buttonActionDown value="quit"/>
+      <buttonActionDown value="runscript-camerascript"/>
+      ...
+    </ButtonBar1>
+    
+The following Button Actions are supported:
+
+* For performing [keyevent](#keyevent) actions
+* For executing [JavaScript](#javascriptexecution) operations
+* For invoking specific [Commands](#commandexecution)
+
+-----
+
+### buttonActionUp 
+
+Used to specify the action to be taken when a particular button is pressed and released(*similar to keyup event*). Accepts predefined command strings only.
+
+#### Example
+
+    :::xml
+    <ButtonBar1>
+      ...
+      <buttonActionUp value="key-62"/>
+      <buttonActionUp value="key-131"/>
+      <buttonActionUp value="quit"/>
+      <buttonActionUp value="runscript-camerascript"/>
+      ...
+    </ButtonBar1>
+    
+The following Button Actions are supported:
+
+* For performing [keyevent](#keyevent) actions
+* For executing [JavaScript](#javascriptexecution) operations
+* For invoking specific [Commands](#commandexecution)
+
+-----
+
 ### keyevent
 Used to generate a particular keyevent or to output a character. Specify the key and value in **key-value** format from among the standard [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent.html).
 

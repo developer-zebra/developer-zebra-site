@@ -16,7 +16,7 @@ Enterprise Browser 1.7 (and higher) for Android includes [ButtonBar APIs](../../
 
 ![img](EB_ButtonBar_API.png)
 <br>
-The [10 new ButtonBar APIs](../../api/re2x/ButtonBar/) can be used to: 
+The [50 new ButtonBar APIs](../../api/re2x/ButtonBar/) can be used to: 
 
 * Deliver a rich GUI more like native Android apps
 * Access enterprise features through JavaScript APIs
@@ -38,7 +38,7 @@ The [10 new ButtonBar APIs](../../api/re2x/ButtonBar/) can be used to:
 
 The settings, parameters, actions and attributes of the desired on-screen button(s) are stored in an XML container called `Button.xml`. If any of those buttons are to execute JavaScript, the JavaScript code is contained in a second file called `CustomScript.xml`. Both files are stored on the device, and their paths specified in corresponding tags in the app's `Config.xml` file. 
 
-ButtonBars can be shown and hidden programmatically as required by an app's pages through methods implemented in one of 10 [ButtonBar APIs](../../api/re2x/ButtonBar) currently supported. Enterprise Browser can send API calls by any of the means listed below, which can be used in any combination.  
+ButtonBars can be shown and hidden programmatically as required by an app's pages through methods implemented in one of 50 [ButtonBar APIs](../../api/re2x/ButtonBar) currently supported. Enterprise Browser can send API calls by any of the means listed below, which can be used in any combination.  
 
 **Call EB APIs using**: 
 
@@ -51,7 +51,7 @@ ButtonBars can be shown and hidden programmatically as required by an app's page
 <!-- One can create their own custom on-screen buttons placed in the container called ButtonBar and all buttons related parameters/attributes is defined there. The custom on-screen buttons is managed via button xml file. After creation, the button xml file must be placed inside the device and the same path must be set inside Enterprise Browser buttonxmlfile config tag. In runtime, Enterprise Browser will read the button xml file and will create the user defined custom on-screen buttons.
 ButtonBar and it's button
 
-There are 10 ButtonBars which are currently supported on Enterprise Browser.
+There are 50 ButtonBars which are currently supported on Enterprise Browser.
 Background color, background image, button text size, transparency and other UI related parameters of ButtonBars (and its respective buttons) can be configured via button xml file.
 The size and the coordinates of a particular button can also be set via button xml file which will be helpful to place the buttons in small screen size devices without loosing much space.
 One can even create a row/column of buttons and place them vertically/horizontally in the device screen as per their choice.

@@ -258,7 +258,7 @@ The following example sets the SIP to manual:
 <div id="RemarksSpan" style="display:block">
 <blockquote>
 <DIV class="clsRef">Applicable Platforms</DIV>
-<DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">Manual and Automatic methods apply only to Windows Mobile.
+<DIV style="font-family:verdana,arial,helvetica;font-size:x-small;">Manual and Automatic methods applies to both Windows Mobile and Windows CE platform.
 </DIV>
 <pre style="font-family:courier;font-size:small;"></pre>
 <DIV class="clsRef">Disabling the SIP</DIV>
@@ -275,7 +275,7 @@ If you want to completely disable to the use of the SIP, set it to appear off th
 <table>
 <tr>
 <th>Supported Platforms</th>
-<td>Windows CE, Windows Mobile.  Manual and Automatic do not apply for Windows CE</td>
+<td>Windows CE, Windows Mobile.
 </tr>
 <tr>
 <th>Persistence</th>

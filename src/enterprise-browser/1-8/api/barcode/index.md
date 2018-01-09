@@ -1824,7 +1824,7 @@ Controls the symbology for Composite C barcodes. If an application is not expect
 ####Type
 <span class='text-info'>INTEGER</span> 
 ####Description
-Specifies the time, in seconds, that an external scanner will be allowed to remain idle before the connection between the terminal and the scanner is severed to conserve power. The value should be in mutilple of 5. This is currently applicable to Bluetooth scanners only. For Android L and above the valid range start from 0. When time is set to 0, BT scanner will remain connected with terminal.It supports on Android with EMDK version 6.6 and above.
+Specifies the time, in seconds, that an external scanner will be allowed to remain idle before the connection between the terminal and the scanner is severed to conserve power. The value should be in multiple of 5. This is currently applicable to Bluetooth scanners only. For Android L and above the valid range start from 0. When time is set to 0, BT scanner will remain connected with terminal.It supports on Android with EMDK version 6.6 and above.
 
 ####Access
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.connectionIdleTime</code>

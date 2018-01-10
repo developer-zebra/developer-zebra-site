@@ -46,31 +46,31 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
             <Buttons>
                 <Button1>
                     <buttonText value="F1" />
-                    <buttonAction value="key-131" />
+                    <buttonActionClick value="key-131" />
                 </Button1>
                 <Button2>
                     <buttonText value="F2" />
-                    <buttonAction value="key-132" />
+                    <buttonActionClick value="key-132" />
                 </Button2>
                 <Button3>
                     <buttonText value="0" />
-                    <buttonAction value="key-7" />
+                    <buttonActionClick value="key-7" />
                 </Button3>
                 <Button4>
                     <buttonText value="1" />
-                    <buttonAction value="key-8" />
+                    <buttonActionClick value="key-8" />
                 </Button4>
                 <Button5>
                     <buttonText value="A" />
-                    <buttonAction value="key-29" />
+                    <buttonActionClick value="key-29" />
                 </Button5>
                 <Button6>
                     <buttonText value="B" />
-                    <buttonAction value="key-57" />
+                    <buttonActionClick value="key-57" />
                 </Button6>
                 <Button7>
                     <buttonText value="Ent" />
-                    <buttonAction value="key-66" />
+                    <buttonActionClick value="key-66" />
                 </Button7>
             </Buttons>
         </ButtonBar1>
@@ -87,7 +87,7 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
                     <buttonHeight value="120" />
                     <buttonImage value="file://%INSTALLDIR%/UpArrow.png" />
                     <buttonImagePressed value="file://%INSTALLDIR%/UpArrow.png" />
-                    <buttonAction value="key-19" />
+                    <buttonActionClick value="key-19" />
                 </Button1>
                 <Button2>
                     <buttonLeft value="105" />
@@ -96,7 +96,7 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
                     <buttonHeight value="120" />
                     <buttonImage value="file://%INSTALLDIR%/DownArrow.png" />
                     <buttonImagePressed value="file://%INSTALLDIR%/DownArrow.png" />
-                    <buttonAction value="key-20" />
+                    <buttonActionClick value="key-20" />
                 </Button2>
                 <Button3>
                     <buttonLeft value="208" />
@@ -105,7 +105,7 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
                     <buttonHeight value="120" />
                     <buttonImage value="file://%INSTALLDIR%/scan.png" />
                     <buttonImagePressed value="file://%INSTALLDIR%/scan_pressed.png" />
-                    <buttonAction value="runscript-scantriggerscript" />
+                    <buttonActionClick value="runscript-scantriggerscript" />
                 </Button3>
                 <Button4>
                     <buttonLeft value="413" />
@@ -114,7 +114,7 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
                     <buttonHeight value="120" />
                     <buttonImage value="file://%INSTALLDIR%/space_bar.png" />
                     <buttonImagePressed value="file://%INSTALLDIR%/space_bar.png" />
-                    <buttonAction value="key-62" />
+                    <buttonActionClick value="key-62" />
                 </Button4>
                 <Button5>
                     <buttonLeft value="618" />
@@ -122,7 +122,7 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
                     <buttonWidth value="102" />
                     <buttonHeight value="120" />
                     <buttonText value="Quit" />
-                    <buttonAction value="quit" />
+                    <buttonActionClick value="quit" />
                 </Button5>
             </Buttons>
         </ButtonBar2>
@@ -133,23 +133,23 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
             <barHeight value="140" />
             <Buttons>
                 <Button1>
-                    <buttonAction value="runscript-deviceinfoscript" />
+                    <buttonActionClick value="runscript-deviceinfoscript" />
                     <buttonImage value="file://%INSTALLDIR%/deviceinfo.png" />
                 </Button1>
                 <Button2>
-                    <buttonAction value="runscript-camerascript" />
+                    <buttonActionClick value="runscript-camerascript" />
                     <buttonImage value="file://%INSTALLDIR%/camera.png" />
                 </Button2>
                 <Button3>
-                    <buttonAction value="runscript-barcodescript" />
+                    <buttonActionClick value="runscript-barcodescript" />
                     <buttonImage value="file://%INSTALLDIR%/button1image.bmp" />
                 </Button3>
                 <Button4>
-                    <buttonAction value="runscript-signaturescript" />
+                    <buttonActionClick value="runscript-signaturescript" />
                     <buttonImage value="file://%INSTALLDIR%/signature.png" />
                 </Button4>
                 <Button5>
-                    <buttonAction value="quit" />
+                    <buttonActionClick value="quit" />
                     <buttonImage value="file://%INSTALLDIR%/quit.png" />
                 </Button5>
             </Buttons>
@@ -651,7 +651,7 @@ Used to specify a device-resident image file (.png format only) for the particul
 
 -----
 
-### buttonPopUp 
+### buttonPreview 
 
 Used for previewing the value of button whenever pressed. Button value is previewed if and only if the value is set to true. By default, the value is set to true for all the buttons.
 
@@ -660,7 +660,7 @@ Used for previewing the value of button whenever pressed. Button value is previe
     :::xml
     <Button1>
       ...
-      <buttonPopUp value="false"/>
+      <buttonPreview value="false"/>
       ...
     </Button1>
 
@@ -861,19 +861,22 @@ Used to generate a particular keyevent or to output a character. Specify the key
 
 #### Key Event Examples
 
-**To generate an F1 key as a buttonAction** for a particular button in a ButtonBar, set the buttonAction syntax as follows:
+**To generate an F1 key as a button action** for a particular button in a ButtonBar, set the [buttonActionClick](#buttonactionclick) or [buttonActionLongClick](#buttonactionlongclick) or [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) syntax as follows:
 
     :::xml        
-    <buttonAction value ="key-131"/>
+    <buttonActionClick value ="key-131"/>
+    <buttonActionLongClick value ="key-131"/>
+    <buttonActionDown value ="key-131"/>
+    <buttonActionUp value ="key-131"/>
 
 
-**To set the scan trigger key as a buttonAction**, send the trigger KeyEvent code (key-104) to the Enterprise Browser app, which will pass it to the barcode scanning framework and activate the scanner. The example below also selects images for the button states: 
+**To set the scan trigger key as a button action**, send the trigger KeyEvent code (key-104) to the Enterprise Browser app, which will pass it to the barcode scanning framework and activate the scanner. The example below also selects images for the button states: 
         
     :::xml
     <Button1>
     	<buttonImage value ="file://%INSTALLDIR%/scan.png"/>
     	<buttonImagePressed value ="file://%INSTALLDIR%/scan_pressed.png"/>
-    	<buttonAction value ="key-104"/>
+    	<buttonActionClick value ="key-104"/>
     </Button1>
 
 
@@ -881,14 +884,14 @@ Used to generate a particular keyevent or to output a character. Specify the key
 
 ## JavaScript Execution
 
-A button can be used to invoke any JavaScript code block, including any of the [Enterprise Browser APIs](../../../api/). Code is assigned to a **buttonAction** value using the **runscript-scriptname** format. 
+A button can be used to invoke any JavaScript code block, including any of the [Enterprise Browser APIs](../../../api/). Code is assigned to a **button action** value using the **runscript-scriptname** format. 
 
-* **runscript -** indicates that a **buttonAction** is associated with a JavaScript code block.
+* **runscript -** indicates that a **button action** is associated with a JavaScript code block.
 * **scriptname -** specifies the name of the script (an .xml file) containing the desired JavaScript block. [More about this file](../script)
 
 **Notes**:
 
-* If a **buttonAction** is to be associated with JavaScript execution, the .xml file containing the code must be stored on the device and identified as above. 
+* If a **button action** is to be associated with JavaScript execution, the .xml file containing the code must be stored on the device and identified as above. 
 * See the [Custom JavaScript Guide](../script) for details on creating custom script .xml files.
 * See also the [&lt;customxmlfile&gt; tag](../../configreference/#customxmlfile) in the `Config.xml` reference to specify or change the name and/or location of the script .xml file.
 
@@ -906,7 +909,7 @@ The two snippets below show the code required to configure a button as a scan tr
         <Button1>
         	<buttonImage value ="file://%INSTALLDIR%/scan.png"/>
         	<buttonImagePressed value ="file://%INSTALLDIR%/scan_pressed.png"/>
-        	<buttonAction value ="runscript-scantriggerscript"/>
+        	<buttonActionClick value ="runscript-scantriggerscript"/>
         </Button1>
         ...
 
@@ -930,7 +933,7 @@ The two snippets below show how to use a button to fetch and display information
 
       :::xml
       <Button1>
-        <buttonAction value ="runscript-deviceinfoscript"/>
+        <buttonActionClick value ="runscript-deviceinfoscript"/>
       </Button1>
            
 ##### In the `CustomScript.xml` file:
@@ -967,7 +970,7 @@ The example below shows how to use a button to execute a command to quit the app
 
     :::xml
     <Button5>
-        <buttonAction value ="quit"/>
+        <buttonActionClick value ="quit"/>
         <buttonImage value ="file://%INSTALLDIR%/quit.png"/>
     </Button5>
 

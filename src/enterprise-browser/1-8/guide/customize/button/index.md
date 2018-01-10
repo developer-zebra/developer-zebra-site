@@ -43,6 +43,9 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
             <barTop value="942" />
             <barWidth value="720" />
             <barHeight value="120" />
+            <barTextColor value="#AF7AC5" />
+            <barTextStyle value="bold" />
+            <barGapBtwnButtons value="10" /> 
             <Buttons>
                 <Button1>
                     <buttonText value="F1" />
@@ -79,6 +82,9 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
             <barColorPressed value="#3498DB" />
             <barTransparency value="100" />
             <barFontSize value="14" />
+            <barTextColor value="#AF7AC5" />
+            <barTextStyle value="bold" />
+            <barGapBtwnButtons value="10" /> 
             <Buttons>
                 <Button1>
                     <buttonLeft value="2" />
@@ -218,6 +224,9 @@ ButtonBar-specific parameters are used to specify attributes that apply to the e
         <barTop value="942" />
         <barWidth value="720" />
         <barHeight value="120" />
+        <barTextColor value="#AF7AC5" />
+        <barTextStyle value="bold" />
+        <barGapBtwnButtons value="10" /> 
     </ButtonBar1>
 
 -----
@@ -461,12 +470,20 @@ Button-specific parameters are used to specify attributes that apply to an indiv
       <Buttons>
         <Button1>
             <buttonLeft value="2" />
-            <buttonTop value="1063" />
-            <buttonWidth value="102" />
-            <buttonHeight value="120" />
+            <buttonTop value="0.25*deviceheight"/>
+            <buttonHeight value="0.5*devicewidth"/>
+            <buttonWidth value="deviceheight-100"/>
             <buttonImage value="file://%INSTALLDIR%/UpArrow.png" />
             <buttonImagePressed value="file://%INSTALLDIR%/UpArrow.png" />
+            <buttonSecondaryText value="5"/>
+            <buttonPreview value="false"/>
+            <buttonHapticfeedback value="true"/>
+            <buttonHapticfeedbackduration value="100"/>
+            <buttonClickable value="false"/>
             <buttonActionClick value="key-19" />
+            <buttonActionLongClick value="runscript-camerascript"/>
+            <buttonActionDown value="quit" />
+            <buttonActionUp value="key-62 + delay-500 + key-53"/>
         </Button1>
         <Button2>
         ...

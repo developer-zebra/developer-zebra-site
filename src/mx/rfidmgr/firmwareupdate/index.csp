@@ -3,7 +3,7 @@ csp: rfidmgr
 title: Firmware Filename
 type: parm
 order: 2
-mx: "7.0"
+mx: "7.1"
 apilevel: "24"
 devicetype: A
 parm:

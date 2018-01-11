@@ -6,10 +6,7 @@ devicetype: A
 order: 0
 ---
 
-The RFID Manager (RfidMgr) is a plug-in CSP, and can be added to any device. 
-
-Works with the RFID accessory for Zebra devices. 
-
+The RFID Manager (RfidMgr) is a plug-in CSP that can be added to any device and used to update and control Zebra RFID accessories.  
 
 ### Main Functionality
 

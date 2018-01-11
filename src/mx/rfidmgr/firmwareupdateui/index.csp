@@ -13,11 +13,13 @@ parm:
   list:
     - code: 1
       mx: "7.1"
+      apilevel: "24"
       devicetype: A,B
       name: (checked)
       description: Uses firmware update.
     - code: 0
       mx: "7.1"
+      apilevel: "24"
       devicetype: A,B
       name: (unchecked)
       description: Does not use the firmware update. 

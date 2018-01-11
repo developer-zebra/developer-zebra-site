@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Enable Channel Hopping
 type: parm
 order: 2

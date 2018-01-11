@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Operation Stop Triggering Mode
 type: parm
 order: 2

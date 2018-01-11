@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Dynamic Power Optimization
 type: parm
 order: 2

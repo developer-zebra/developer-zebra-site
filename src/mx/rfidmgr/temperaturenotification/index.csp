@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Temperature Notification (Checkbox)
 type: parm
 order: 1

@@ -14,6 +14,7 @@ Works with the RFID accessory for Zebra devices.
 ### Main Functionality
 
 * Update device firmware 
+<!--
 * Set the link profile
 * Set the Tari level from 6250 - 25000
 * Enable/Disable: 
@@ -42,4 +43,4 @@ Works with the RFID accessory for Zebra devices.
  * Only SL-asserted scans 
  * Only SL de-asserted scans
 * Query session S0-S3
-
+-->

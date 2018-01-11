@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Unique Tag Reporting
 type: parm
 order: 2

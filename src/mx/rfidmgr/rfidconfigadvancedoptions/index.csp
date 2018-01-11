@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: RFID Advanced Options (Checkbox)
 type: parm
 order: 1

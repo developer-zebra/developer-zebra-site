@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Stop RFID Operation on Trigger
 type: parm
 order: 2

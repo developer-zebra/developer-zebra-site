@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Phase Difference
 type: parm
 order: 2

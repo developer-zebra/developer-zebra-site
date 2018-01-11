@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Tag Seen Count
 type: parm
 order: 2

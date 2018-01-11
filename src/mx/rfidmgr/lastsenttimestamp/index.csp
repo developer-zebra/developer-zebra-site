@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Last Sent Timestamp
 type: parm
 order: 2

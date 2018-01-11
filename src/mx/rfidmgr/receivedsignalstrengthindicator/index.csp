@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Received Signal Strength Indicator (RSSI)
 type: parm
 order: 2

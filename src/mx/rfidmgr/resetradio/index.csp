@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Reset Radio (Checkbox)
 type: parm
 order: 1

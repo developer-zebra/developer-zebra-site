@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Stop Trigger Timeout
 type: parm
 order: 15

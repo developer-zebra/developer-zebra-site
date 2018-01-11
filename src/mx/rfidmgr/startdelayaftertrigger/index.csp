@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Start Delay After Trigger
 type: parm
 order: 15

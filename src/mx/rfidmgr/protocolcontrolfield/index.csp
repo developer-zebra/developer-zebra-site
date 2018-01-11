@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Protocol Control Field
 type: parm
 order: 2

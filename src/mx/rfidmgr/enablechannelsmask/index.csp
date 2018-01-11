@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Enabled Channels Mask
 type: parm
 order: 2

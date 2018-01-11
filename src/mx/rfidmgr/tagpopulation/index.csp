@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Tag Population
 type: parm
 order: 15

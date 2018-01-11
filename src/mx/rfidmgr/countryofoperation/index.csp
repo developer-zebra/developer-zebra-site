@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Country of Operation
 type: parm
 order: 2

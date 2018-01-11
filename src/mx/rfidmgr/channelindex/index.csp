@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Channel Index
 type: parm
 order: 2

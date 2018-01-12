@@ -128,7 +128,7 @@ _Pair mobile device to PC_
 4. **Conduct workflow testing with an end-user representative** whenever possible.  
 5. **Create the end-user training materials and guidelines** for proper use of CartScan, its features and functions.<br>This minimizes errors when putting CartScan into use.
 6. **Always deploy workflow Profiles along with the CartScan app** when staging target mobile devices.
-7. **Pair each mobile device to its intended end-user workstation** prior to deployment to end users.  
+7. **Pair each mobile device to its intended end-user workstation** before handing devices off to end users.
 
 -----
 

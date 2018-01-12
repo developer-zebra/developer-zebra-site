@@ -53,8 +53,8 @@ With the mobile device connected to the target PC:
 
 * **When a barcode is successfully decoded by the mobile device**, the scanner beeps and/or vibrates (if enabled). 
 * **A <u>beep does not reflect successful transmission</u> of the scanned data to the PC**.
-* **Periodically confirm that scanned data is delivered properly** to the target application. 
-* **Data will not populate into the intended input field if**: 
+* **Always confirm that scanned data is delivered properly** to the target application. 
+* **Data will <u>not populate into the intended input field</u> if**: 
  * The PC cursor moves out of the target app or intended field
  * Another application appeared in the foreground
  * The device lost its connection to the PC
@@ -111,9 +111,10 @@ If CartScanPCWedge is not already running, launch it from the desktop or Start m
 
 Users of Zebra CartScan and CartScanPCWedge applications should have proper training, reference materials and usage guidelines to understand how CartScan works and how to use it. Below is a list of suggested end user best practices.
 
-* **Always check the status of the connection before scanning** (look for "...connected to PC..." message). 
-* **Always confirm that data was transmitted after scanning** (green checkmark in CartScan UI).
-* **Periodically confirm correct placement of scanned data** into desired fields on the target PC.
+* **Always check the status of the connection before scanning** (look for "...connected to PC..." message on the device). 
+* **Keep the device within 25 feet of the target PC** to maintain the connection.
+* **Always confirm that data was transmitted after scanning** (look for the green checkmark in CartScan UI).
+* **Always confirm correct placement of scanned data** into desired fields on the target PC.
 * **Do not allow other users to interact with the PC or scanning device** while workflow scanning is in progress. 
 * **Close the CartScan app** on the mobile device when scanning is complete.
 

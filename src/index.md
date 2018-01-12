@@ -4,7 +4,7 @@ title: Zebra TechDocs
 layout: list-products.html
 products: 
   - title: I Need Tools For...
-    description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
+    description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra development tools might best suit the requirements, skills and experience of your organization.
     url: /help
     btn-text: Latest Guides
     image: /images/products/blue-question-mark.jpg
@@ -19,12 +19,14 @@ products:
         url: /contact
       - title: Search
         url: /search
-  - title: User Solutions
+  - title: Solutions
     description: Apps built by Zebra to help end-users increase productivity and improve workflow efficiency.
     url: /solutions
     btn-text: Latest Guides
     image: /images/products/mobility_dna.png
     sections:
+      - title: Active Edge
+        url: ../activeedge
       - title: CartScan
         url: ../cartscan
       - title: Enterprise Home Screen
@@ -55,7 +57,7 @@ products:
   - title: DataWedge
     description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for other apps on the device.
     url: /datawedge/6-5/guide/about
-    image: /datawedge/datawedge_logo.png
+    image: /images/products/datawedge.png
     btn-text: Latest Docs
     sections:
       - title: About
@@ -220,7 +222,7 @@ products:
     description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.
     url: /simulscan/1-1/guide/about
     btn-text: Latest Guides
-    image: /simulscan/simulscan_logo.png
+    image: /images/products/simulscan.png
     sections:
       - title: About
         url: /simulscan/1-1/guide/about

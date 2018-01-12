@@ -1,5 +1,5 @@
 ---
-title: TechDocs Site Map
+title: Techdocs Site Map
 description: 
 layout: list-apis.html
 automenu:
@@ -96,11 +96,11 @@ automenu:
           url: http://techdocs.zebra.com/enterprise-browser
 menu:
   items:
-    - title: ABOUT TECHDOCS
+    - title: About Techdocs
       url: /about
-    - title: I NEED TOOLS FOR...
+    - title: I Need Tools For...
       url: /help
-    - title: FEEDBACK
+    - title: Feedback
       url: /contact
     - icon: fa fa-comment
       url: https://developer.zebra.com/welcome

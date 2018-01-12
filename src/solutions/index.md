@@ -3,6 +3,25 @@ publish: false
 title: Zebra TechDocs
 layout: list-products.html
 products: 
+  - title: ActiveEdge
+    description: A service for Zebra Android devices that can be customized to display scan buttons or an app drawer at the left and right edges of the screen.
+    url: /activeedge
+    image: /images/products/ActiveEdge.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /activeedge/2-1/guide/about
+      - title: Setup
+        url: /activeedge/2-1/guide/setup
+      - title: Settings
+        url: /activeedge/2-1/guide/settings
+      - title: Usage
+        url: /activeedge/2-1/guide/usage
+      - title: Troubleshooting
+        url: /activeedge/2-1/guide/troubleshooting
+    versions:
+      - url: /activeedge/2-1/guide/about
+        label: '2.1'
   - title: CartScan
     description: An app for Zebra Android devices that scans barcode data and delivers it as keystrokes to a PC via Bluetooth.
     url: /cartscan/2-1/guide/about
@@ -25,7 +44,7 @@ products:
   - title: Enterprise Home Screen
     description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
     url: /ehs/2-7/guide/about
-    image: /ehs/ehs-logo.png
+    image: /images/products/ehs.png
     btn-text: Latest Docs
     sections:
       - title: About
@@ -78,11 +97,11 @@ products:
         label: '1.1'
       - url: enterprise-keyboard/1-0/guide/about
         label: '1.0'
-  - title: I Need Tools For...
-    description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
-    url: /help
+  - title: Developer Tools
+    description: Zebra offers tools for developers at any skill level to help customers use build apps for Zebra devices that take advantage of their fullest potential. 
+    url: /
     btn-text: Latest Guides
-    image: /images/products/blue-question-mark.jpg
+    image: /images/products/emdk-for-xamarin.png
     sections:
       - title: About TechDocs
         url: ../about
@@ -96,11 +115,11 @@ products:
         url: ../search
 menu:
   items:
-    - title: ABOUT TECHDOCS
+    - title: About Techdocs
       url: /about
-    - title: I NEED TOOLS FOR...
+    - title: I Need Tools For...
       url: /help
-    - title: FEEDBACK
+    - title: Feedback
       url: /contact
     - icon: fa fa-comment
       url: https://developer.zebra.com/welcome

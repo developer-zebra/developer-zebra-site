@@ -1,5 +1,5 @@
 ---
-csp: 
+csp: powermgr
 title: Doze Mode Enable/Disable
 type: parm
 order: 50

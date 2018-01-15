@@ -68,7 +68,7 @@ Depending on the underlying operating system the SIP position may change followi
 ###Backward Compatibility
 The SIP methods `manual` and `automatic` exhibit slightly different behavior when the &lt;EngineInUse&gt; `Config.xml` setting is set to "Internet Explorer." In manual mode, the SIP will be shown only after the SIP button is pressed, and from then on will show and hide whenever a text field has focus. In automatic, the SIP will appear automatically whenever a text field has focus and is otherwise hidden.
 
-Applying `automatic` SIP control in an app will prevent the app from later invoking `manual` SIP control. Press any hardware key to return the device to manual SIP control. In backward compatibility mode, `manual` and `automatic` methods are supported on both Windows Mobile and Windows CE platform.
+Applying `automatic` SIP control in an app will prevent the app from later invoking `manual` SIP control. Press any hardware key to return the device to manual SIP control. In backward compatibility mode, `manual` and `automatic` methods are supported on both Windows Mobile and Windows CE platforms.
 
 
 ##Requirements

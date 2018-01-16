@@ -16,4 +16,4 @@ The Settings Manager (SettingsMgr) controls access to specific device capabiliti
  * Install apps from unknown sources (i.e. other than the Google Play store)
  * Turn Airplane Mode On or Off
  * Access the App Manager, where installed and running applications can be affected
- * Control app notification settings on the device
+ * Control the use of notification messages to access app notification settings 

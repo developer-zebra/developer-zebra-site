@@ -6,7 +6,7 @@ devicetype: A,B
 order: 0
 ---
 
-The Power Manager (PowerMgr) allows an app to perform certain OS- and power-related actions on the device, such as resetting to a factory-fresh state, putting the device into Sleep mode, rebooting or performing an OS update. On some devices, such as the VC80x vehicle-mounted computer and similarly equipped Zebra devices-mounted computer and similarly equipped Zebra devices, it also can control device heaters and perform actions based on vehicle-mounted computer and similarly equipped Zebra devices ignition status. PowerMgr performs only actions; it currently supports no queries other than to determine the version of the CSP that implements PowerMgr itself.
+The Power Manager (PowerMgr) allows an app to perform certain OS- and power-related actions on the device, such as resetting to a factory-fresh state, putting the device into Sleep mode, rebooting or performing an OS update. On some devices, such as the VC80x vehicle-mounted computer and similarly equipped Zebra devices, it also can control device heaters and perform actions based on vehicle-mounted computer and similarly equipped Zebra devices ignition status. PowerMgr performs only actions; it currently supports no queries other than to determine the version of the CSP that implements PowerMgr itself.
 
 **It's important to note that PowerMgr actions such as Reboot and Reset, once executed, will prevent the execution of subsequent actions submitted by the Request XML document**, including the submission of a Result XML to the application sending the original Request. Zebra therefore recommends using [Condition Manager](../conditionmgr) in conjunction with PowerMgr to ensure that appropriate conditions exist on a device before attempting to perform "risky" operations such as OS updates, the failure of which can render a device unusable, severely limited or otherwise in need of service.
 
@@ -20,7 +20,7 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
 * Wipe a device (erase all storage) 
 * Update the OS on a device
 * Perform multiple updates in a single step
-* **On the VC80x vehicle-mounted computer and similarly equipped Zebra devices-mounted computer and similarly equipped Zebra devices**: 
+* **On the VC80x vehicle-mounted computer and similarly equipped Zebra devices**: 
  * Turn power to specific serial and USB ports on and off
  * Control heaters for touch panel and battery, and on serial and USB ports
  * Set temperature thresholds (in degrees Celsius) for turning heaters on and off

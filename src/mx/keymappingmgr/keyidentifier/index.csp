@@ -185,22 +185,22 @@ parm:
       mx: "7.2"
       devicetype: A
       name: Left Trigger
-      description: 
+      description: The button on the left side of a Zebra MC330k device
     - code: RIGHT_TRIGGER
       mx: "7.2"
       devicetype: A
       name: Right Trigger
-      description: 
+      description: The button on the right side of a Zebra MC330k device
     - code: CENTER_TRIGGER
       mx: "7.2"
       devicetype: A
       name: Center Trigger
-      description: 
+      description: The button at the top of the keypad on a Zebra device
     - code: GUN_TRIGGER
       mx: "7.2"
       devicetype: A
       name: Gun Trigger
-      description: 
+      description: The button in the front of the upper handle of a Zebra device
     - code: HEADSET_HOOK
       mx: "4.4"
       devicetype: A

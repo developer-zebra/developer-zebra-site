@@ -13,6 +13,7 @@ The Settings Manager (SettingsMgr) controls access to specific device capabiliti
 * Enable and Disable the ability to: 
  * Perform an Enterprise Reset on the device
  * Change the Wi-Fi configuration
- * Install apps from unknown sources (i.e. other than the Google Play)
+ * Install apps from unknown sources (i.e. other than the Google Play store)
  * Turn Airplane Mode On or Off
- * Access the "Apps" section, where installed and running applications can be affected
+ * Access the App Manager, where installed and running applications can be affected
+ * Control app notification settings on the device

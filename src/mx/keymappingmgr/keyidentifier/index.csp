@@ -181,6 +181,26 @@ parm:
       devicetype: A
       name: Button R2
       description: The lower button on the right side of the device when two buttons are present on the right side
+    - code: LEFT_TRIGGER
+      mx: "7.2"
+      devicetype: A
+      name: Left Trigger
+      description: 
+    - code: RIGHT_TRIGGER
+      mx: "7.2"
+      devicetype: A
+      name: Right Trigger
+      description: 
+    - code: CENTER_TRIGGER
+      mx: "7.2"
+      devicetype: A
+      name: Center Trigger
+      description: 
+    - code: GUN_TRIGGER
+      mx: "7.2"
+      devicetype: A
+      name: Gun Trigger
+      description: 
     - code: HEADSET_HOOK
       mx: "4.4"
       devicetype: A
@@ -241,6 +261,11 @@ parm:
       devicetype: A
       name: P3 Button
       description: The button marked "P3"
+    - code: P4
+      mx: "7.2"
+      devicetype: A
+      name: P4 Button
+      description: The button marked "P4"
     - code: REAR_BUTTON
       mx: "6.1"
       devicetype: A

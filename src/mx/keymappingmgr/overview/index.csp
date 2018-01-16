@@ -11,10 +11,11 @@ The KeyMappingMgr allows an app to modify the behavior of one or more physical (
 ####Requirements
 
 * KeyMappingMgr is **supported only on the following devices**:
-	* **MC92**
-	* **MC67**
-	* **MC40**
 	* **MC18**
+	* **MC33**
+	* **MC40**
+	* **MC67**
+	* **MC92**
 	* **TC51**
 	* **TC56**
 	* **TC70x**

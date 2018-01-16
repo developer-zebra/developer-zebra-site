@@ -20,6 +20,7 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
 * Wipe a device (erase all storage) 
 * Update the OS on a device
 * Perform multiple updates in a single step
+* Enable/disable Doze Mode
 * **On the VC80x vehicle-mounted computer and similarly equipped Zebra devices**: 
  * Turn power to specific serial and USB ports on and off
  * Control heaters for touch panel and battery, and on serial and USB ports

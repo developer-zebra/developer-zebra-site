@@ -30,10 +30,10 @@ For key-mapping options on Android devices not listed above, please see the [Ent
 
 * KeyMappingMgr is **NOT supported on the following devices**:
 	* Any device not listed above, including:
-	* TC75
-	* TC70
+	* MC36	
 	* TC55
-	* MC36
+	* TC70
+	* TC75
 
 For TC55 key-mapping options, see the [Scan Mode Manager](../../../../mx/scanmodemgr) (not supported by EMDK). 
 

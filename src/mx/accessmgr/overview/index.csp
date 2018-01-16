@@ -6,7 +6,7 @@ devicetype: A
 order: 0
 ---
 
-Access Manager (AccessMgr) enables the configuration of a device to control which user, or "installable" application(s) can be used on a given device as well as what the application(s) can do.
+The Access Manager (AccessMgr) enables the configuration of a device to control which user, or "installable" application(s) can be used on a given device as well as what the application(s) can do.
 
 A key feature of AccessMgr is the ability to turn Whitelisting on or off. Whitelisting is off by default, imposing no restrictions. When Whitelisting is turned on, various restrictions can be applied using AccessMgr.
 

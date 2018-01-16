@@ -19,12 +19,14 @@ parm:
       devicetype: A
       name: Enable
       mx: "7.2"
-      description: Enables the device user to control app notification settings on the device.
+      description: Enables the device user to control app notification settings through a notification message.
     - code: 2
       devicetype: A
       name: Disable
       mx: "7.2"
-      description: Prevents the device user from changing app notification settings on the device.
+      description: Prevents the device user from changing app notification settings through a notification message.
 ---
 
-Controls whether the device user can change the notification setting for an application by long-pressing its app notification message. **See [AccessMgr](../../.././mx/accessmgr) to restrict other methods of user access to app notifications**.
+Controls whether the device user can change the notification setting for an application by long-pressing one of its notification messages. 
+
+>**See [AccessMgr](../../.././mx/accessmgr) to restrict other methods of accessing app notification controls**.

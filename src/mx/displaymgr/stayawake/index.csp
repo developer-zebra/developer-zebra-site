@@ -1,0 +1,44 @@
+---
+csp: displaymgr
+title: Stay Awake Enable/Disable
+type: parm
+order: 6
+mx: "7.2"
+osx-specific-list: "3.6,4.5"
+osx-exclude: "4.0"
+osx-exclude-end: "4.4"
+devicetype: A
+parm:
+  pivotal: No
+  name: StayAwake
+  type: list
+  list:
+    - code: 0
+      mx: "7.2"
+      osx-specific-list: "3.6,4.5"
+      osx-exclude: "4.0"
+      osx-exclude-end: "4.4"
+      devicetype: A
+      name: Do Nothing
+      description: This value (or the absence of this parm from the XML) will cause no change to the current behavior; any previously selected setting will be retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "7.2"
+      osx-specific-list: "3.6,4.5"
+      osx-exclude: "4.0"
+      osx-exclude-end: "4.4"
+      description: Prevents the device from entering sleep mode when it is connected to an external power source.
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "7.2"
+      osx-specific-list: "3.6,4.5"
+      osx-exclude: "4.0"
+      osx-exclude-end: "4.4"
+      description: Allows the device to enter sleep mode regardless of its connection to an external power source.
+---
+
+Controls whether a device is allowed to enter sleep mode based on its connection to an external power source. 
+
+

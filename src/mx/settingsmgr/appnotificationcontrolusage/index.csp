@@ -4,6 +4,8 @@ title: App Notification Control
 type: parm
 order: 7
 mx: "7.2"
+osx: "7.4"
+apilevel: "24"
 devicetype: A
 parm:
   pivotal: No
@@ -12,6 +14,8 @@ parm:
   list:
     - code: 0
       mx: "7.2"
+      osx: "7.4"
+      apilevel: "24"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no changes; any previously selected setting will be retained.
@@ -19,14 +23,18 @@ parm:
       devicetype: A
       name: Enable
       mx: "7.2"
+      osx: "7.4"
+      apilevel: "24"
       description: Enables the device user to control app notification settings through a notification message.
     - code: 2
       devicetype: A
       name: Disable
       mx: "7.2"
+      osx: "7.4"
+      apilevel: "24"
       description: Prevents the device user from changing app notification settings through a notification message.
 ---
 
-Controls whether the device user can change the notification setting for an application by long-pressing one of its notification messages. 
+Controls whether the device user can change the notification setting for an application by long-pressing one of its notification messages. **Supported only on devices running Android Nougat and higher**. 
 
 >**See [AccessMgr](../../.././mx/accessmgr) to restrict other methods of accessing app notification controls**.

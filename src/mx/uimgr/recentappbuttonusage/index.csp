@@ -5,7 +5,7 @@ type: parm
 order: 25
 mx: "7.1"
 osx: "7.2"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   name: RecentAppButtonUsage
@@ -14,17 +14,17 @@ parm:
     - code: 0
       mx: "7.1"
       osx: "7.2"
-      devicetype: A,B
+      devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no setting change; any previously selected setting will be retained. 
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: Enable 
       mx: "7.1"
       osx: "7.2"
       description: Enables the Recent Apps button, which displays a list of recently used apps that can be viewed and launched.
     - code: 2
-      devicetype: A,B
+      devicetype: A
       name: Disable
       mx: "7.1"
       osx: "7.2"

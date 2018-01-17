@@ -6,26 +6,26 @@ order: 14
 mx: "5.1"
 osx: "5.1"
 apilevel: "16"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: Yes
   name: NotificationSettings
   type: list
   list:
     - code: 0
-      devicetype: A,B
+      devicetype: A
       name: Do not change
       mx: "5.1"
       osx: "5.1"
       description: This value (or the absence of this parm from the XML) will cause no change to visibility of the Gear icon in the Notifications panel; any previously selected setting will be retained.
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: Show 
       mx: "5.1"
       osx: "5.1"
       description: Shows the Gear icon in the Notifications panel. 
     - code: 2
-      devicetype: A,B
+      devicetype: A
       name: Hide 
       mx: "5.1"
       osx: "5.1"

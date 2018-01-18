@@ -40,11 +40,8 @@ parm:
       devicetype: A
       name: refreshAID
       mx: "7.2"
-      description: EXPLAIN
+      description: Causes the device to contact the licensing server to renew a device license based on a new purchase.  
 ---
 
-Used to specify the action to perform on an Activation ID (AID) on the device. This parameter is for Zebra-branded devices only. For legacy Symbol-branded devices, use the License Action parameter. **Note: Options 4 and 5 are used programmatically on the device and are not intended for use by administrators**. 
-
-EXPLAIN CODE 6 "refreshAID"
-
+Used to specify the action to perform on an Activation ID (AID) on the device. This parameter is for Zebra-branded devices only. For legacy Symbol-branded devices, use the License Action parameter. **Note: Options 4 and 5 are used programmatically on the device and are not intended for human interaction**. 
 

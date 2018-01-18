@@ -13,16 +13,14 @@ parm:
   list:
     - code: 1
       devicetype: A
+      mx: "4.3"
       name: standard
       description: Indicates that a Standard Licensed Feature Name will identify the Software License to be removed from the device.
     - code: 2
       devicetype: A
+      mx: "4.3"
       name: custom
       description: Indicates that a Custom Licensed Feature Name will identify the Software License to be removed from the device.
 ---
 
-Used to specify the method that will be used to specify the Licensed Feature Name that identifies the Software License to be removed from the device.
-
-<!--
-WHY DO THE OPTIONS HAVE NO NAMES in DSD?  
--->
+Controls the method of selecting the Licensed Feature Name, which identifies the Software License to be removed from the device.

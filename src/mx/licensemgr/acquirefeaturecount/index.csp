@@ -12,12 +12,8 @@ parm:
   type: integer
 ---
 
-Used to obtain the coiunt of features BLAH BLAH BLAH. 
+Used by licensed apps on the device to obtain the number of times a feature can be used. **This feature is used programmatically, and is not intended for human interaction**. 
 
 **Parm value input rules**: 
 
 * Must be a positive integer (default = 1) 
-
-<!-- 
-DEFINE FEATURE "COUNT"
--->

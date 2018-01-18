@@ -1,5 +1,5 @@
 ---
-csp: licensemgr
+csp: 
 title: License Management UI
 type: parm
 order: 90
@@ -19,16 +19,19 @@ parm:
       devicetype: A
       name: disabled
       mx: "7.2"
-      description: Disables the Zebra license management UI on the device.
+      description: Enables the Zebra license management UI on the device.
     - code: 2
       devicetype: A
       name: enabled
       mx: "7.2"
-      description: Enables the Zebra license management UI on the device.
+      description: Disables the Zebra license management UI on the device.
 ---
 
 Used to enable/disable the Zebra license management user interface (UI), which is used for viewing and managing the software licenses on the device. 
 
 <!-- 
-OPTIONAS MIXED UP in DSD? 
+1/18/18- not currently used. removed from techdocs
+
+NOTE- in DSD, options are reversed. 
+
 -->

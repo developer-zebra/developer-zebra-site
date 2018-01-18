@@ -1,0 +1,19 @@
+---
+csp: licensemgr
+title: Server Friendly Name
+type: parm
+order: 11
+mx: "7.2"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: The License Source is "Zebra Cloud" and License Action Zebra is "Activate AID" and License Choice is "Perform Zebra license action" and License Choice is "Use a local license server option"
+  name: ServerFriendlyName
+  type: string
+---
+
+Used to specify a "friendly" name for the local licensing server as an aid to easy identification. 
+
+**Parm value input rules**: 
+
+* String of at least one character 

@@ -19,4 +19,4 @@ Used to specify the URL (and optional port number) of an on-premise server conta
 * String containing a valid URL (and optional port number)
 * Must contain at least 1 character
 
-**Example**: http://InternalLicenseServer.lan:8080/request
+**Example**: http://InternalLicenseServer.lan:8080

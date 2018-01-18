@@ -22,3 +22,7 @@ parm:
 ---
 
 Used to specify the method that will be used to specify the Licensed Feature Name that identifies the Software License to be removed from the device.
+
+<!--
+WHY DO THE OPTIONS HAVE NO NAMES in DSD?  
+-->

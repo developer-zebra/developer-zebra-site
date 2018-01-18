@@ -1,0 +1,23 @@
+---
+csp: licensemgr
+title: Acquire Feature Count
+type: parm
+order: 93
+mx: "7.2"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: License Action Zebra is "Acquire Feature" and License Choice is "Perform Zebra license action"
+  name: AcquireFeatureCount
+  type: integer
+---
+
+Used to obtain the coiunt of features BLAH BLAH BLAH. 
+
+**Parm value input rules**: 
+
+* Must be a positive integer (default = 1) 
+
+<!-- 
+DEFINE FEATURE "COUNT"
+-->

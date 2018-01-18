@@ -13,19 +13,14 @@ parm:
   list:
     - code: 1
       devicetype: A
-      name: fno_cloud_uat
-      mx: "7.1"
-      description: Not for general use.
+      name: Zebra Cloud
+      mx: "7.2"
+      description: Indicates that one of the Zebra Licensing cloud options is used.
     - code: 2
       devicetype: A
-      name: fno_cloud_production
-      mx: "7.1"
-      description: Selects the Zebra License Server as the License Source.
-    - code: 3
-      devicetype: A
-      name: custom
-      mx: "7.1"
-      description: Allows a custom URL for on-premise license server (uncommon).
+      name: LLS
+      mx: "7.2"
+      description: Indicates that a local licensing server is used.
 ---
 
-Used to specify the source for Zebra server-based licenseing on the device, which in most cases is "fno_cloud_production" (option 2). 
+Controls whether a cloud-based or local Zebra Licensing Server is used. When Zebra Cloud is selected (option 1), specify the server location using the License Cloud URL parameter. 

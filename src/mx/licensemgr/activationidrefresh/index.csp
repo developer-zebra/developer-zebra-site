@@ -1,0 +1,24 @@
+---
+csp: licensemgr
+title: Refresh Activation ID
+type: parm
+order: 11
+mx: "7.2"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: License Action Zebra is "Refresh ID" and License Choice is "Perform Zebra license action"
+  name: ActivationIDRefresh
+  type: string
+---
+
+Used to specify a license code to refresh on a device. 
+
+**Parm value input rules**: 
+
+* Must be a 39-character string containing a valid Activation ID code 
+
+<!-- 
+DEFINE "REFRESH"  - renew? 
+-->
+

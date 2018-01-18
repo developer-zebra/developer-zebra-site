@@ -1,0 +1,34 @@
+---
+csp: audiomgr
+title: Audio Replication Action
+type: parm
+order: 2
+mx: "7.2"
+apilevel: "25"
+devicetype: A
+parm:
+  pivotal: No
+  name: AudioReplicationAction
+  type: list
+  list:
+    - code: 0
+      mx: "7.2"
+      apilevel: "23"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Replicate headset audio on built-in speaker
+      mx: "7.2"
+      apilevel: "23"
+      description: Plays device audio through headset and device speaker.
+    - code: 2
+      devicetype: A
+      name: Do not replicate headset audio on built-in speaker
+      mx: "7.2"
+      apilevel: "23"
+      description: Plays device audio only through the connected headset.
+---
+
+Controls whether audio on the device plays audio only through the built-in speaker, through a connected headset or through both. 

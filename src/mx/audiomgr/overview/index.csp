@@ -1,0 +1,13 @@
+---
+csp: audiomgr
+title: Overview
+type: text
+devicetype: A
+order: 0
+---
+
+The VC80x vehicle-mount computer has a custom port for attaching an M1000 mic/speaker handset. When not being actively used, this handset is either hung on the side of the computer mount or placed on the dashboard, in both cases not ideal for hearing any audio through its speaker. The AudioMgr CSP may be used to force audio normally sent to the M1000 speaker only, to be replicated to the VC80x built-in speaker as well.
+
+### Main Functionality
+
+* Enable/Disable replication of device audio through headset and built-in speaker

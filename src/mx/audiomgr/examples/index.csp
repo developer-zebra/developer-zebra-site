@@ -1,0 +1,17 @@
+---
+csp: bluetoothmgr
+title: Examples
+type: text
+order: 99
+---
+
+### Replicate audio
+
+Send audio to both a headset and the VC80x built-in speaker
+
+    :::xml
+    <wap-provisioningdoc>
+        ​<characteristic type=”AudioMgr”>
+            ​​<parm name=”AudioReplicationAction” value=”1” />
+        ​</characteristic>
+    </wap-provisioningdoc>

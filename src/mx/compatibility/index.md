@@ -32,6 +32,10 @@ csps:
     url: /mx/appmgr
     csp: appmgr
   - type: section
+    title: Audio Manager
+    url: /mx/audiomgr
+    csp: audiomgr
+  - type: section
     title: Audio Vol UI Manager
     url: /mx/audiovoluimgr
     csp: audiovoluimgr

@@ -6,8 +6,8 @@ devicetype: A
 order: 0
 ---
 
-The VC80x vehicle-mount computer has a custom port for attaching an M1000 mic/speaker handset. When not being actively used, this handset is either hung on the side of the computer mount or placed on the dashboard, in both cases not ideal for hearing any audio through its speaker. The AudioMgr CSP may be used to force audio normally sent to the M1000 speaker only, to be replicated to the VC80x built-in speaker as well.
+The Audio Manager (AudioMgr) controls whether audio on the device plays audio only through the built-in speaker, through a connected headset or through both. It was developed for the Zebra VC80x vehicle-mount computer, which has a custom port for attaching a Zebra M1000 headset. When the headset is not being worn, its speaker volume might be difficult to hear and lead to missed communications. AudioMgr was designed to combat this issue; it can be used to force audio normally sent only to the M1000 speaker to be replicated on the VC80x's built-in speaker.
 
 ### Main Functionality
 
-* Enable/Disable replication of device audio through headset and built-in speaker
+* Enable/disable replication of headset audio through the built-in device speaker

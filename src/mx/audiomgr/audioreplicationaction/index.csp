@@ -13,7 +13,7 @@ parm:
   list:
     - code: 0
       mx: "7.2"
-      apilevel: "23"
+      apilevel: "25"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
@@ -21,13 +21,13 @@ parm:
       devicetype: A
       name: Replicate headset audio on built-in speaker
       mx: "7.2"
-      apilevel: "23"
+      apilevel: "25"
       description: Plays device audio through headset and device speaker.
     - code: 2
       devicetype: A
       name: Do not replicate headset audio on built-in speaker
       mx: "7.2"
-      apilevel: "23"
+      apilevel: "25"
       description: Plays device audio only through the connected headset.
 ---
 

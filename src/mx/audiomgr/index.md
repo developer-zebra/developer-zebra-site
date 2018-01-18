@@ -1,6 +1,6 @@
 ---
-title: Bluetooth Manager
-description: The BluetoothMgr controls whether to allow new devices to pair.
+title: Audio Manager
+description: The AudioMgr can route sound to the built-in speaker, a headset or both.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,7 +11,7 @@ mxversions:
     value: 4.4
   - text: MX 5.0
     value: 5
-csp: bluetoothmgr
+csp: audiomgr
 ---
 
 

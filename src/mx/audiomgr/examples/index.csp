@@ -1,5 +1,5 @@
 ---
-csp: bluetoothmgr
+csp: audiomgr
 title: Examples
 type: text
 order: 99
@@ -7,7 +7,7 @@ order: 99
 
 ### Replicate audio
 
-Send audio to both a headset and the VC80x built-in speaker
+#### Send audio to headset and built-in speaker
 
     :::xml
     <wap-provisioningdoc>

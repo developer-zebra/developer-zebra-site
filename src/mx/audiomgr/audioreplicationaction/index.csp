@@ -6,6 +6,7 @@ order: 2
 mx: "7.2"
 apilevel: "25"
 devicetype: A
+info: Supported on VC80x devices only.
 parm:
   pivotal: No
   name: AudioReplicationAction

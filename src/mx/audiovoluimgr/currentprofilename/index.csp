@@ -1,6 +1,6 @@
 ---
 csp: audiovoluimgr
-title: Name of the Current Audio UI Profile
+title: Current Profile Name
 type: parm
 order: 4
 mx: "4.4"

@@ -43,9 +43,8 @@ An Audio Profile can also configure the volume levels for each of four audio mod
 >**Note:** The ZVC is included on most Zebra Android devices running KitKat and higher, and AudioVolUIMgr is supported only on devices that include the ZVC.
 
 ### Main Functionality
-* Create a new Audio Profile
-* Delete a created Audio Profile
-* Set an Audio Profile to be the current Audio Profile
-* Set the Factory Preset Audio Profile to be the current Audio Profile
+* Create, delete and modify Audio Profiles
+* Set an Audio Profile as the current Audio Profile
+* Set the Factory Preset Audio Profile as the current Audio Profile
 * Change the volume levels to be the Preset volume levels of the current Audio Profile
-* Directly control the global Mute and Vibrate states of the device
+* Control the global mute and vibrate states of the device

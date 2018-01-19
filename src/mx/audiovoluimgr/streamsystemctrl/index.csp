@@ -17,5 +17,5 @@ Controls whether the ZVC allow the device user to view and modify the volume set
 
 **Parm value input rules**: 
 
-* String that has a minimum size of 0 character and a maximum size of 255 characters
+* String from 0 - 255 characters
 * The value that is entered must be either "1", which will make the stream visible, or "0", which will make the Audio Stream hidden.

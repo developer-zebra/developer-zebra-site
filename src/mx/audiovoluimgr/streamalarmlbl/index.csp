@@ -19,4 +19,4 @@ Used to set a customized label that the ZVC will display to visually identify th
 
 **Parm value input rules**: 
 
-* String that has a minimum size of 0 character and a maximum size of 255 characters
+* String from 0 - 255 characters

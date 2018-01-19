@@ -22,13 +22,13 @@ parm:
       name: Add an Audio UI Profile
       mx: "4.4"
       osx: "4.4"
-      description: This value will cause a new Audio Profile to be created, a previously created Audio Profile to be modified, or the Factory Preset Audio Profile to be modified. **Note:** If an Audio Profile with the specified name exists in the device, then it will be replaced by the new definition.
+      description: This value will cause a new Audio Profile to be created, an existing Audio Profile or the Factory Preset Audio Profile to be modified.
     - code: 2
       devicetype: A
       name: Remove an Audio UI Profile
       mx: "4.4"
       osx: "4.4"
-      description: This value will cause a previously-created Audio Profile to be deleted. **Note:** If no Audio Profile with the specified name exists in the device, then an error will be returned in the Result XML document.
+      description: This value will cause a previously created Audio Profile to be deleted. 
 ---
 
-This parm allows you to Create a new Audio Profile, Modify a previously created Audio Profile, Modify the Factory Present Audio Profile, or Delete a previously-created Audio Profile.
+Used to create a new Audio Profile, modify the Factory Present Audio Profile or modify or delete an existing Audio Profile. If an Audio Profile with the specified name exists in the device, it will be replaced by the newly defined one. If an Audio Profile with the specified does not exist in the device, an error will be returned in the Result XML document.

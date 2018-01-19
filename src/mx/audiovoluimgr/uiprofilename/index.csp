@@ -1,6 +1,6 @@
 ---
 csp: audiovoluimgr
-title: Name of the Audio UI Profile
+title: Audio UI Profile Name
 type: parm
 order: 7
 mx: "4.4"

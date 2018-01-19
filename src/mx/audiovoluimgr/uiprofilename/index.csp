@@ -19,4 +19,4 @@ Used to specify the name of the Audio Profile that will be Created, Modified, or
 
 **Parm value input rules**: 
 
-* String that has a minimum size of 1 character and a maximum size of 255 characters
+* String from 1 - 255 characters

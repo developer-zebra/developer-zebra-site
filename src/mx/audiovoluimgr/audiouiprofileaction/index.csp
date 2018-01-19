@@ -16,19 +16,19 @@ parm:
       name: Do nothing
       mx: "4.4"
       osx: "4.4"
-      description: This value (or the absence of this parm from the XML) will cause no change to the set of defined Audio Profiles or the Factory Preset Audio Profile.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Add an Audio UI Profile
       mx: "4.4"
       osx: "4.4"
-      description: This value will cause a new Audio Profile to be created, an existing Audio Profile or the Factory Preset Audio Profile to be modified.
+      description: Causes a new Audio Profile to be created, or an existing Audio Profile or the Factory Preset Audio Profile to be modified.
     - code: 2
       devicetype: A
       name: Remove an Audio UI Profile
       mx: "4.4"
       osx: "4.4"
-      description: This value will cause a previously created Audio Profile to be deleted. 
+      description: Deletes the named Audio Profile. 
 ---
 
 Used to create a new Audio Profile, modify the Factory Present Audio Profile or modify or delete an existing Audio Profile. If an Audio Profile with the specified name exists in the device, it will be replaced by the newly defined one. If an Audio Profile with the specified does not exist in the device, an error will be returned in the Result XML document.

@@ -13,9 +13,9 @@ parm:
   type: string
 ---
 
-Controls whether the ZVC allow the device user to view and modify the volume settings for the decode beep virtual volume stream. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no change to this Audio Stream's visibility. 
+Controls whether the ZVC allows the device user to view and modify the volume settings for the decode beep virtual volume stream. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no change to this audio stream's visibility. 
 
 **Parm value input rules**: 
 
 * String from 0 - 255 characters
-* The value that is entered must be either "1", which will make the stream visible, or "0", which will make the Audio Stream hidden.
+* A value of "1" makes the stream visible to the device user; "0" makes it invisible.

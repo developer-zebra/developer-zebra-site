@@ -16,7 +16,7 @@ parm:
       name: Do nothing
       mx: "4.4"
       osx: "4.4"
-      description: This value (or the absence of this parm from the XML) will cause no change to device settings; any previously selected setting is retained.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Set an Audio UI Profile as the current Profile
@@ -28,7 +28,7 @@ parm:
       name: Adjust to the Preset volume level of the current Profile
       mx: "4.4"
       osx: "4.4"
-      description: Causes the volume levels of all Audio Streams to be reset to the Preset volume levels configured for the current Audio Profile. 
+      description: Causes the volume levels of all audio streams to be reset to the Preset volume levels configured for the current Audio Profile. 
     - code: 3
       devicetype: A
       name: Set the FactoryPreset Profile as the current Profile
@@ -38,6 +38,6 @@ parm:
 
 ---
 
-Used to set a previously created Audio Profile or the Factory Preset Audio Profile to be the current Audio Profile. It also can be used to force the volumes of all Audio Streams back to the Preset volumes specified for the current Audio Profile.
+Used to set a previously created Audio Profile or the Factory Preset Audio Profile to be the current Audio Profile. It also can be used to force the volumes of all audio streams back to the Preset volumes specified for the current Audio Profile.
 
 **Note: Since the configuration of the Factory Preset Audio Profile can be modified, resetting to the FactoryPreset profile (option 3) might not result in "Factory Defined" settings.

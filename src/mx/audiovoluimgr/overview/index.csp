@@ -6,7 +6,7 @@ devicetype: A
 order: 0
 ---
 
-The Audio Volume UI Manager (AudioVolUIMgr) can add, delete and replace Audio Profiles, and can select an Audio Profile to be in effect on the device. It also allows administrators to modify the "Factory Preset" Audio Profile (which cannot be deleted), and to directly control the Mute and Vibrate states of the device, which are independent of all Audio Streams and Audio Profiles.
+The Audio Volume UI Manager (AudioVolUIMgr) can add, delete and replace Audio Profiles, and can select an Audio Profile to be in effect on the device. It also allows administrators to modify the "Factory Preset" Audio Profile (which cannot be deleted), and to directly control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles.
 
 Many Zebra Android devices contain a Zebra Audio Volume Control UI (ZVC), which allows a device user to adjust the volumes of various audio streams in the device. An audio stream is a channel through which audio can be generated and output to a speaker or headset. The number of audio streams supported by an Android device is generally fixed, but the number of possible purposes for which audio can be generated is theoretically unlimited. As a result, a particular audio stream might be used for a purpose other than that for which it was intended.
 
@@ -34,13 +34,13 @@ An Audio Profile can be defined to configure the following settings for any or a
 * **Icon  -** An icon displayed by the ZVC to identify the audio stream.
 * **Visibility -** Controls whether the ZVC allows the device user to view and modify the volume settings for the audio stream. For example, this could be used to prevent a device user from making any changes to the volume of the audio stream used for incoming call notification.
 
-An Audio Profile can also configure the volume levels for each of four audio modes: Speaker, Receiver, Wired headset, and Bluetooth headset. The specified modes are determined based on the physical output path to which an Audio Stream is directed. For each mode, the following volume levels can be specified.
+An Audio Profile can also configure the volume levels for each of four audio modes: Speaker, Receiver, Wired headset, and Bluetooth headset. The specified modes are determined based on the physical output path to which an audio stream is directed. For each mode, the following volume levels can be specified.
 
-* **Minimum volume level -** This will cause the ZVC to prevent a device user from changing the volume of the Audio Stream to a value that is below the specified value. For example, this could be used to prevent the user from setting the Audio Stream used for notifications too low in noisy environments.
-* **Maximum volume level -** This will cause the ZVC to prevent a device user from changing the volume of the Audio Stream to a value that is above the specified value. For example, this could be used to prevent the user from setting the Audio Stream used for music playback too high in quiet environments.
-* **Preset volume level -** This will cause the ZVC to set the volume of the Audio Stream to the specified value when this Audio Profile becomes selected as the current Audio Profile.
+* **Minimum volume level -** This will cause the ZVC to prevent a device user from changing the volume of the audio stream to a value that is below the specified value. For example, this could be used to prevent the user from setting the audio stream used for notifications too low in noisy environments.
+* **Maximum volume level -** This will cause the ZVC to prevent a device user from changing the volume of the audio stream to a value that is above the specified value. For example, this could be used to prevent the user from setting the audio stream used for music playback too high in quiet environments.
+* **Preset volume level -** This will cause the ZVC to set the volume of the audio stream to the specified value when this Audio Profile becomes selected as the current Audio Profile.
 
->**Note:** The ZVC is only available on selected Zebra Android devices running the Kit Kat version of Android, as listed in the Feature Compatibility table.  Since the AudioVolUIMgr configures the ZVC, it is only supported on Zebra Android devices that include the ZVC.
+>**Note:** The ZVC is included on most Zebra Android devices running KitKat and higher, and AudioVolUIMgr is supported only on devices that include the ZVC.
 
 ### Main Functionality
 * Create a new Audio Profile

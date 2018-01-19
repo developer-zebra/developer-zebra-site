@@ -7,7 +7,7 @@ order: 99
 
 ### Replicate audio
 
-#### Send audio to headset and built-in speaker
+#### Send audio to handset and built-in speaker
 
     :::xml
     <wap-provisioningdoc>

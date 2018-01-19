@@ -1,6 +1,6 @@
 ---
 title: Audio Manager
-description: The AudioMgr can route sound to the built-in speaker, a headset or both.
+description: The AudioMgr can route sound to the built-in VC80x speaker, an M1000 handset or both.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

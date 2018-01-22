@@ -59,25 +59,27 @@ products:
         label: '5.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
-    url: /emdk-for-android/6-7/guide/about
+    url: /emdk-for-android/6-8/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /emdk-for-android/6-7/guide/about
+        url: /emdk-for-android/6-8/guide/about
       - title: Getting Started
-        url: /emdk-for-android/6-7/guide/gettingstarted
+        url: /emdk-for-android/6-8/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-android/6-7/tutorial/
+        url: /emdk-for-android/6-8/tutorial/
       - title: Samples
-        url: /emdk-for-android/6-7/samples
+        url: /emdk-for-android/6-8/samples
       - title: Guides
-        url: /emdk-for-android/6-7/guide/programming-guides
+        url: /emdk-for-android/6-8/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-android/6-7/guide/profile-manager-guides
+        url: /emdk-for-android/6-8/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-android/6-7/api
+        url: /emdk-for-android/6-8/api
     versions:
+      - url: emdk-for-android/6-8/guide/about/
+        label: '6.8'
       - url: emdk-for-android/6-7/guide/about/
         label: '6.7'
       - url: emdk-for-android/6-6/guide/about/
@@ -269,27 +271,29 @@ products:
         label: '1.1'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
-    url: /stagenow/2-9/about
+    url: /stagenow/2-10/about
     btn-text: Latest Guides
     image: /images/products/stagenow.png
     sections:
       - title: About
-        url: /stagenow/2-9/about
+        url: /stagenow/2-10/about
       - title: Getting Started
-        url: /stagenow/2-9/gettingstarted
+        url: /stagenow/2-10/gettingstarted
       - title: Profiles
-        url: /stagenow/2-9/stagingprofiles
+        url: /stagenow/2-10/stagingprofiles
       - title: Profile Wizards
-        url: /stagenow/2-9/ProfileWizards
+        url: /stagenow/2-10/ProfileWizards
       - title: Settings
-        url: /stagenow/2-9/settingconfig
+        url: /stagenow/2-10/settingconfig
       - title: Setting Types
-        url: /stagenow/2-9/settingtypes
+        url: /stagenow/2-10/settingtypes
       - title: Device Staging
-        url: /stagenow/2-9/stageclient
+        url: /stagenow/2-10/stageclient
       - title: Download
-        url: /stagenow/2-9/download
+        url: /stagenow/2-10/download
     versions:
+      - url: stagenow/2-10/about
+        label: '2.10.x'
       - url: stagenow/2-9/about
         label: '2.9'
       - url: stagenow/2-8/about

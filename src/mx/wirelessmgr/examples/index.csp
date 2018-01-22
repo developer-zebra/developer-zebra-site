@@ -77,8 +77,8 @@ order: 99
 
 	:::xml
 	<wap-provisioningdoc>
-	    <characteristic type=”WirelessMgr”>
-	        <parm name=”AntennaSelection” value=”2” />
+	    <characteristic type="WirelessMgr">
+	        <parm name="AntennaSelection" value="2" />
 	    </characteristic>
 	</wap-provisioningdoc>
 

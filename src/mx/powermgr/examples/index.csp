@@ -56,10 +56,10 @@ order: 99
 ### Turn On Power to Serial Port 1
 	:::xml
 	<wap-provisioningdoc>
-	    <characteristic type=”PowerMgr”>
-	        <parm name=”PortAction” value=”1” />
-	        <characteristic type=”port-details”>
-	            <parm name=”PortSelect” value=”Serial Port 1” />
+	    <characteristic type="PowerMgr">
+	        <parm name="PortAction" value="1" />
+	        <characteristic type="port-details">
+	            <parm name="PortSelect" value="Serial Port 1" />
 	        </characteristic>
 	    </characteristic>
 	</wap-provisioningdoc>
@@ -68,10 +68,10 @@ order: 99
 
 	:::XML
 	<wap-provisioningdoc>
-	    <characteristic type=”PowerMgr”>
-	        <parm name=”PortAction” value=”2” />
-	        <characteristic type=”port-details”>
-	            <parm name=”PortSelect” value=”USB Port 2” />
+	    <characteristic type="PowerMgr">
+	        <parm name="PortAction" value="2" />
+	        <characteristic type="port-details">
+	            <parm name="PortSelect" value="USB Port 2" />
 	        </characteristic>
 	    </characteristic>
 	</wap-provisioningdoc>
@@ -81,12 +81,12 @@ order: 99
 
 	:::XML
 	<wap-provisioningdoc>
-	    <characteristic type=”PowerMgr”>
-	        <parm name=”AutoPowerControl” value=”1” />
-	        <characteristic type=”auto-power-details”>
-	            <parm name=”AutoPowerOff” value=”1” />
-	            <parm name=”AutoPowerOffTimeout” value=”0” />
-	            <parm name=”AutoPowerOn” value=”1” />
+	    <characteristic type="PowerMgr">
+	        <parm name="AutoPowerControl" value="1" />
+	        <characteristic type="auto-power-details">
+	            <parm name="AutoPowerOff" value="1" />
+	            <parm name="AutoPowerOffTimeout" value="0" />
+	            <parm name="AutoPowerOn" value="1" />
 	        </characteristic>
 	    </characteristic>
 	</wap-provisioningdoc>
@@ -96,12 +96,12 @@ order: 99
 
 	:::XML
 	<wap-provisioningdoc>
-	    <characteristic type=”PowerMgr”>
-	        <parm name=”AutoPowerControl” value=”1” />
-	        <characteristic type=”auto-power-details”>
-	            <parm name=”AutoPowerOff” value=”1” />
-	            <parm name=”AutoPowerOffTimeout” value=”10” />
-	            <parm name=”AutoPowerOn” value=”0” />
+	    <characteristic type="PowerMgr">
+	        <parm name="AutoPowerControl" value="1" />
+	        <characteristic type="auto-power-details">
+	            <parm name="AutoPowerOff" value="1" />
+	            <parm name="AutoPowerOffTimeout" value="10" />
+	            <parm name="AutoPowerOn" value="0" />
 	        </characteristic>
 	    </characteristic>
 	</wap-provisioningdoc>
@@ -110,21 +110,21 @@ order: 99
 
 	:::XML
 	<wap-provisioningdoc>
-	    <characteristic type=”PowerMgr”>
-	        <parm name=”HeaterAction” value=”3” />
-	        <characteristic type=”heater-details”>
-	            <parm name=”HeaterSelect” value=”4” />
-	            <parm name=”OnThreshold” value=”-10” />
-	            <parm name=”OffThreshold” value=”5” />
+	    <characteristic type="PowerMgr">
+	        <parm name="HeaterAction" value="3" />
+	        <characteristic type="heater-details">
+	            <parm name="HeaterSelect" value="4" />
+	            <parm name="OnThreshold" value="-10" />
+	            <parm name="OffThreshold" value="5" />
 	        </characteristic>
 	    </characteristic>
 	</wap-provisioningdoc>
 
 	<wap-provisioningdoc>
-	    <characteristic type=”PowerMgr”>
-	        <parm name=”HeaterAction” value=”1” />
-	        <characteristic type=”heater-details”>
-	            <parm name=”HeaterSelect” value=”4” />
+	    <characteristic type="PowerMgr">
+	        <parm name="HeaterAction" value="1" />
+	        <characteristic type="heater-details">
+	            <parm name="HeaterSelect" value="4" />
 	        </characteristic>
 	    </characteristic>
 	</wap-provisioningdoc>
@@ -134,10 +134,10 @@ order: 99
 
 	:::XML
 	<wap-provisioningdoc>
-	    <characteristic type=”PowerMgr”>
-	        <parm name=”HeaterAction” value=”2” />
-	        <characteristic type=”heater-details”>
-	            <parm name=”HeaterSelect” value=”2” />
+	    <characteristic type="PowerMgr">
+	        <parm name="HeaterAction" value="2" />
+	        <characteristic type="heater-details">
+	            <parm name="HeaterSelect" value="2" />
 	        </characteristic>
 	    </characteristic>
 	</wap-provisioningdoc>

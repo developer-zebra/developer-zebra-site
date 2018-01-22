@@ -32,4 +32,4 @@ parm:
       description: Plays device audio only through the connected handset.
 ---
 
-Controls whether audio on the device plays audio only through the built-in speaker, through a connected Zebra M1000 handset, or through both. 
+Controls whether audio on the device plays only through a connected Zebra M1000 handset or is replicated on the built-in speaker. 

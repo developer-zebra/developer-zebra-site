@@ -11,7 +11,7 @@ order: 99
 
     :::xml
     <wap-provisioningdoc>
-        ​<characteristic type=”AudioMgr”>
-            ​​<parm name=”AudioReplicationAction” value=”1” />
+        ​<characteristic type="AudioMgr">
+            ​​<parm name="AudioReplicationAction" value="1" />
         ​</characteristic>
     </wap-provisioningdoc>

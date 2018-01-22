@@ -31,8 +31,8 @@ The sample below turns on the screen-blanking feature, selects serial port 1 on 
 ### Turn off the stay-awake feature
 
 	<wap-provisioningdoc>
-		​<characteristic type=”DisplayMgr”>
-			​​<parm name=”StayAwake” value=”2” />
+		​<characteristic type="DisplayMgr">
+			​​<parm name="StayAwake" value="2" />
 		​</characteristic>
 	</wap-provisioningdoc>
 	

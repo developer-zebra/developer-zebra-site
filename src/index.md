@@ -269,29 +269,31 @@ products:
         label: '1.1'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
-    url: /stagenow/2-7/about
+    url: /stagenow/2-9/about
     btn-text: Latest Guides
     image: /images/products/stagenow.png
     sections:
       - title: About
-        url: /stagenow/2-8/about
+        url: /stagenow/2-9/about
       - title: Getting Started
-        url: /stagenow/2-8/gettingstarted
+        url: /stagenow/2-9/gettingstarted
       - title: Profiles
-        url: /stagenow/2-8/stagingprofiles
+        url: /stagenow/2-9/stagingprofiles
       - title: Profile Wizards
-        url: /stagenow/2-8/ProfileWizards
+        url: /stagenow/2-9/ProfileWizards
       - title: Settings
-        url: /stagenow/2-8/settingconfig
+        url: /stagenow/2-9/settingconfig
       - title: Setting Types
-        url: /stagenow/2-8/settingtypes
+        url: /stagenow/2-9/settingtypes
       - title: Device Staging
-        url: /stagenow/2-8/stageclient
+        url: /stagenow/2-9/stageclient
       - title: Download
-        url: /stagenow/2-8/download
+        url: /stagenow/2-9/download
     versions:
+      - url: stagenow/2-9/about
+        label: '2.9'
       - url: stagenow/2-8/about
-        label: '2.8'      
+        label: '2.8'
       - url: stagenow/2-7/about
         label: '2.7'
       - url: stagenow/2-6/about

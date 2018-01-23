@@ -12,9 +12,7 @@ It also includes an exclusive Profile Manager Technology within the your IDE, pr
 
 ## Requirements
 The following software must be installed prior to using the EMDK for Android.
-<!-- 
->**EMDK for Android 6.7 does not support Android Studio 3.0**
- --> 
+
 **Windows:**
 * Microsoft Windows 7 (32-bit and 64-bit)  or Microsoft&copy; Windows 8 (32-bit and 64-bit) or Microsoft&copy; Windows 8.1 (32-bit and 64-bit)
 * Java Development Kit (JDK) v7u45 or higher
@@ -54,6 +52,8 @@ The following software must be installed prior to using the EMDK for Android.
 * WT6000 - Lollipop
 
 ## Important News
+
+OLD OLD OLD
 
 * EMDK for Android support for all KitKat (Android 4.4.x) devices has been dropped. - EMDK for Android v6.6 was the final version supporting KitKat (Android 4.4.3 or higher) devices. Starting from EMDK for Android v6.7, only the Lollipop or higher devices are supported.
 * EMDK OS update package for KitKat devices will no longer be distributed- The EMDK for Android v6.6 was the final version distributing EMDK OS update package with the PC/MAC installations for KitKat devices. For all Lollipop or higher devices, the EMDK update for a specific device will be distributed with the latest BSP or security incremental patch.

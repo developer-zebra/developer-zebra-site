@@ -8,9 +8,9 @@ order: 0
 
 The Audio Volume UI Manager (AudioVolUIMgr) can add, delete and replace Audio Profiles, and can select an Audio Profile to be in effect on the device. It also allows administrators to modify the "Factory Preset" Audio Profile (which cannot be deleted), and to directly control the Mute and Vibrate states of the device, which are independent of all audio streams and Audio Profiles.
 
-Many Zebra Android devices contain a Zebra Audio Volume Control UI (ZVC), which allows a device user to adjust the volumes of various audio streams in the device. An audio stream is a channel through which audio can be generated and output to a speaker or headset. The number of audio streams supported by an Android device is generally fixed, but the number of possible purposes for which audio can be generated is theoretically unlimited. As a result, a particular audio stream might be used for a purpose other than that for which it was intended.
+Many Zebra Android devices contain a Zebra Volume Control (ZVC), a UI component that allows a device user to easily adjust the volumes of various audio streams in the device. An audio stream is a channel through which audio can be generated and output to a speaker or headset. The number of audio streams supported by an Android device is generally fixed, but the number of possible purposes for which audio can be generated is theoretically unlimited. As a result, a particular audio stream might be used for a purpose other than that for which it was intended.
 
->**Note:** The ZVC is included on most Zebra Android devices running KitKat and higher. It is enabled by default on all devices except those running Lollipop, on which it must be enabled manually. AudioVolUIMgr is supported only on devices that include the ZVC.
+>**Note:** The Zebra Volume Control component is included on most Zebra Android devices running KitKat and higher. It is enabled by default on all devices except those running Lollipop, on which it must be enabled manually. AudioVolUIMgr is supported only on devices that include the ZVC.
 
 The standard Android Audio Volume Control UI identifies each audio stream that can be controlled in a fixed manner that is predefined for each audio stream. Such identification might not accurately reflect the purposes for which a given audio stream is being used. This can produce less than optimal user experiences since the device user might change the volume of an audio stream without realizing its affect on other systems.
 
@@ -42,7 +42,7 @@ An Audio Profile can also configure the volume levels for each of four audio mod
 * **Maximum volume level -** This will cause the ZVC to prevent a device user from changing the volume of the audio stream to a value that is above the specified value. For example, this could be used to prevent the user from setting the audio stream used for music playback too high in quiet environments.
 * **Preset volume level -** This will cause the ZVC to set the volume of the audio stream to the specified value when this Audio Profile becomes selected as the current Audio Profile.
 
->**Note:** The ZVC is included on most Zebra Android devices running KitKat and higher. It is enabled by default on all devices except those running Lollipop, on which it must be enabled manually. AudioVolUIMgr is supported only on devices that include the ZVC.
+>**Note:** The Zebra Volume Control component is included on most Zebra Android devices running KitKat and higher. It is enabled by default on all devices except those running Lollipop, on which it must be enabled manually. AudioVolUIMgr is supported only on devices that include the ZVC.
 
 ### Main Functionality
 * Create, delete and modify Audio Profiles

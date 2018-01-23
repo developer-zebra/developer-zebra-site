@@ -1,0 +1,39 @@
+---
+csp: analyticsmgr
+title: DAE Toggle Enable/Disable
+type: parm
+order: 14
+mx: "7.2"
+apilevel: "19"
+devicetype: A
+parm:
+  presentif: Analytics Action is set to "Enable"
+  pivotal: No
+  name: EnableDAEToggle
+  type: list
+  list:
+    - code: 0
+      mx: "7.2"
+      apilevel: "19"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no settings change; any previously selected setting is retained. 
+    - code: 1
+      mx: "7.2"
+      apilevel: "19"
+      devicetype: A
+      name: Enable
+      description: Enables the device user or an app to switch data collection on or off. 
+    - code: 2
+      mx: "7.2"
+      apilevel: "19"
+      devicetype: A
+      name: Disable
+      description: Prevents the device user or an app from switching data collection on or off. 
+---
+
+
+
+FROM DSD: "If disabled, toggle option to enable/disable Analytics will be disabled" 
+
+Controls whether data collected by the Analytics Engine is stored on the device or in the cloud. When "Cloud" is the selected Transport Method, data is stored temporarily on the device until transport to the Zebra Cloud is complete. **At no time is locally stored data available to users or third-party apps**. Cloud transport is provided on Zebra devices by the Elemez B2M client, which is switched on whenever the Analytics Engine is enabled.

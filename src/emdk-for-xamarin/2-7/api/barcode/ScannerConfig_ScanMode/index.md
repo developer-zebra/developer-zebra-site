@@ -2,7 +2,7 @@
 title: ScannerConfig.ScanMode
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 Available scanning modes. This allows to select one type at a time.
 

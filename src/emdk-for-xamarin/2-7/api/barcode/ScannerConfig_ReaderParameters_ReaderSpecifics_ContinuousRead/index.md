@@ -2,7 +2,7 @@
 title: ScannerConfig.ReaderParameters.ReaderSpecifics.ContinuousRead
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 ContinuousRead class provides access to continuous scanning related parameters.
 

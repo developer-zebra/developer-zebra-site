@@ -2,7 +2,7 @@
 title: EMDK For Xamarin
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.6'
+productversion: '2.7'
 ---
 The EMDK for Xamarin provides developers with a comprehensive set of tools to easily create powerful line of business applications for Android enterprise mobile computing devices using their C# skills and tools. The EMDK for Xamarin includes class libraries, sample applications with source code, and all of the associated documentation for building applications take full advantage of what Zebra devices have to offer.
 

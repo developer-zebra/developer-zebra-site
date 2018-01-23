@@ -6,7 +6,7 @@ mxversions:
     value: 7
 csp: batchmgr
 product: EMDK for Xamarin
-productversion: '2.6'
+productversion: '2.7'
 ---
 
 

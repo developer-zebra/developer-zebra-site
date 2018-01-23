@@ -2,7 +2,7 @@
 title: EMDKResults.EXTENDED_STATUS_CODE
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 Defines all the extended status codes the library returns.
 

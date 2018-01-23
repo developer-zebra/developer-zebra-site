@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.UsPlanetDecoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 The UsPlanet class provides access to parameters that are available for the UsPlanet decoder.
 

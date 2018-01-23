@@ -2,7 +2,7 @@
 title: EMDK For Xamarin API List
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.6'
+productversion: '2.7'
 ---
 
 ## Core and ProfileManager APIs

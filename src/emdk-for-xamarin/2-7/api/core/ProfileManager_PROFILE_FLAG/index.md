@@ -2,7 +2,7 @@
 title: ProfileManager.PROFILE_FLAG
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 All the possible actions for ProfileManager.processProfile(String, PROFILE_FLAG, Document) and ProfileManager.processProfile(String, PROFILE_FLAG, String[])is enumerated here.
 

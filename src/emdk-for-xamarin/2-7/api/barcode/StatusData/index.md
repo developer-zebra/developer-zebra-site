@@ -2,7 +2,7 @@
 title: StatusData
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 
     

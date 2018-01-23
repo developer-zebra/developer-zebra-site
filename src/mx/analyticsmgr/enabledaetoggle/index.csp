@@ -1,13 +1,12 @@
 ---
 csp: analyticsmgr
-title: DAE Toggle Enable/Disable
+title: Data Analytics Usage
 type: parm
-order: 14
+order: 3
 mx: "7.2"
 apilevel: "19"
 devicetype: A
 parm:
-  presentif: Analytics Action is set to "Enable"
   pivotal: No
   name: EnableDAEToggle
   type: list
@@ -32,4 +31,4 @@ parm:
       description: Prevents the device user or an app from switching data collection on or off. 
 ---
 
-Controls access to the Analytics Action parameter, which is the On/Off switch for the Data Analytics Engine (DAE) and data collection on the device. When the DAE Toggle is disabled (option 2), the data collection On/Off setting cannot be changed by the device user by or an app running on the device. **This parameter can act as a safeguard against undesired changes to data connection activities on the device**. 
+Controls access to the Data Analytics State (AnalyticsAction) parameter, which is the On/Off switch for the Data Analytics Engine (DAE) and data collection on the device. When the DAE Toggle is disabled (option 2), the data collection On/Off setting cannot be changed by the device user by or an app running on the device. **This parameter can act as a safeguard against undesired changes to data collection activities on the device**. 

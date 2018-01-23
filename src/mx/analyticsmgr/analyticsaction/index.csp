@@ -1,6 +1,6 @@
 ---
 csp: analyticsmgr
-title: Analytics Action
+title: Data Analytics State
 type: parm
 order: 1
 mx: "4.3"
@@ -32,6 +32,6 @@ parm:
       description: Stops the Analytics Engine from collecting data and halts the Elemez B2M cloud transportation service.
 ---
 
-**This is the On/Off switch for the Analytics Engine, which performs data collection on the device, when enabled**. Enabling the Analytics Engine also launches the Elemez B2M client, which provides cloud transportation services for data collected on the device (See Enable File/Events Upload and Transport Method). 
+**This is the On/Off switch for the Analytics Engine, which performs data collection on the device, when enabled**. Enabling the Analytics Engine also launches the Elemez B2M client, which provides cloud transportation services for data collected on the device (See Enable File/Events Upload and Transport Method). **Access to this parameter can be blocked with the Data Analytics Usage (EnableDAEToggle) parameter**.
 
-**Use of the Analytics Manager indicates acceptance of the Zebra [End User License Agreement](../../../../../images/mx/analytics_eula/zebra-unrestricted-eula-170613.pdf)**. 
+> **Use of the Analytics Manager indicates acceptance of the Zebra [End User License Agreement](../../../../../images/mx/analytics_eula/zebra-unrestricted-eula-170613.pdf)**. 

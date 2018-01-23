@@ -2,7 +2,7 @@
 csp: analyticsmgr
 title: Clear Data
 type: parm
-order: 2
+order: 5
 mx: "5.1"
 apilevel: "19"
 devicetype: A

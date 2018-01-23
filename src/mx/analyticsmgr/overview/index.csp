@@ -14,7 +14,8 @@ Central to Zebra Analytics is the Analytics Engine, which collects information a
 
 ### Main Functionality
  
-* Enable or disable data collection by the Analytics Engine
+* Enable/disable data collection by the Analytics Engine
+* Enable/disable ability of device user or app to change data collection setting
 * Set data collection thresholds for individual metrics
 * Control whether data is stored on the device or in the Zebra Cloud
 * Automatically clear on-device data when Analytics Engine is disabled 

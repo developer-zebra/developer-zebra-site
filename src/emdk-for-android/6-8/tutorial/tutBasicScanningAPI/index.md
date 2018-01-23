@@ -7,9 +7,9 @@ productversion: '6.8'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [Barcode/Scanning APIs](/emdk-for-android/6-7/api) introduced in EMDK V 3.0, to perform Scanning operations on your Symbol Android devices without using Profile Wizard. The API uses [Barcode Manager](/emdk-for-android/6-7/api/barcode/BarcodeManager), which is the primary object to access barcode scanning feature. 
+This guide will walk you through creating an EMDK For Android application that will use [Barcode/Scanning APIs](/emdk-for-android/6-8/api) introduced in EMDK V 3.0, to perform Scanning operations on your Symbol Android devices without using Profile Wizard. The API uses [Barcode Manager](/emdk-for-android/6-8/api/barcode/BarcodeManager), which is the primary object to access barcode scanning feature. 
 
-In this tutorial, we will explore the [Barcode/Scanning API](/emdk-for-android/6-7/api) by using it for developing a basic application that will scan barcodes.
+In this tutorial, we will explore the [Barcode/Scanning API](/emdk-for-android/6-8/api) by using it for developing a basic application that will scan barcodes.
 
 > Note: You don't need the Profile Wizard while using the Barcode/Scanning APIs as everything could be configured programmatically through code.   
         
@@ -18,7 +18,7 @@ In this tutorial, we will explore the [Barcode/Scanning API](/emdk-for-android/6
 
 > Note: Provide "BasicScanningTutorial" as the project name for this tutorial.
 
-Start by creating a new Android Studio [project](/emdk-for-android/6-7/tutorial/tutCreateProjectAndroidStudio).
+Start by creating a new Android Studio [project](/emdk-for-android/6-8/tutorial/tutCreateProjectAndroidStudio).
 
 ## Enabling Android Permissions
 1. Modify the Application's Manifest.xml to use the EMDK library and to set permission for the EMDK to scan the barcodes.
@@ -215,7 +215,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/6-7/tutorial/
 
 
 
-**6.** Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the earlier steps. We have used that instance to get an instance [Barcode Manager](/emdk-for-android/6-7/api/barcode/BarcodeManager) to enable scanning.
+**6.** Now we need to use the `onOpened` method to get a reference to the EMDKManager. The EMDKListener interface will trigger this event when the EMDK is ready to be used. The EMDKListener interface must be implemented in order to get a reference to the EMDKManager APIs. This event will pass the EMDKManager instance and we assign it to the global variable `emdkManager` that we created in the earlier steps. We have used that instance to get an instance [Barcode Manager](/emdk-for-android/6-8/api/barcode/BarcodeManager) to enable scanning.
 
         :::java
         this.emdkManager = emdkManager;
@@ -233,7 +233,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/6-7/tutorial/
 
 6. As mentioned earlier that whenever a barcode is scanned, its data will be received in a callback `onData` method upon data availability. So we need to get that data, process it in the format we want and populate in the [EditText](http://developer.android.com/reference/android/widget/EditText.html) of UI.
 
-    The received data should be processed on a background thread not to block the UI thread. Hence we will use Android's own [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) to process the scanned data on background thread. So we create AsyncTask `AsyncDataUpdate` that takes [ScanDataCollection](/emdk-for-android/6-7/api/barcode/ScanDataCollection), which has the scanned data. It then processes this object in `doInBackground` method to filter the barcode data and label type in strings, which is then passed to the UI thread in `onPostExecute` method of AsyncTask to Populate.
+    The received data should be processed on a background thread not to block the UI thread. Hence we will use Android's own [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) to process the scanned data on background thread. So we create AsyncTask `AsyncDataUpdate` that takes [ScanDataCollection](/emdk-for-android/6-8/api/barcode/ScanDataCollection), which has the scanned data. It then processes this object in `doInBackground` method to filter the barcode data and label type in strings, which is then passed to the UI thread in `onPostExecute` method of AsyncTask to Populate.
 
 	As mentioned earlier we would call `read` method here in this callback so that the user can scan multiple barcodes.
 
@@ -323,7 +323,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/6-7/tutorial/
   
 7. Whether we scan the barcode by pressing the hard scan key or keep it idle, it returns the status of the scanner at specific point of time in the overridden `onStatus` method of implemented `StatusListener` interface. Since we are also displaying the status along with barcode data, we will make use of this method and populate the status.
 
-    Just like scanned data, we are also processing the scanner status on a background thread. Hence we will create another [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) named `AsyncStatusUpdate` that takes [StatusData](/emdk-for-android/6-7/api/barcode/StatusData) and processes it in `doInBackground` method to retrieve state in string format which is populated in status Text View on UI thread in `onPostExecute` method of the AsyncTask.              
+    Just like scanned data, we are also processing the scanner status on a background thread. Hence we will create another [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) named `AsyncStatusUpdate` that takes [StatusData](/emdk-for-android/6-8/api/barcode/StatusData) and processes it in `doInBackground` method to retrieve state in string format which is populated in status Text View on UI thread in `onPostExecute` method of the AsyncTask.              
 
         :::java
         // AsyncTask that configures the current state of scanner on background
@@ -434,7 +434,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/6-7/tutorial/
 			this.emdkManager = null;
 		}
         	
-That's it!!! We are done with all the coding part that will let us scan the barcodes of configured decoder params on Symbol Android device using [Barcode/Scanning APIs](/emdk-for-android/6-7/api) introduced in EMDK V 3.0. Now let us run the application.
+That's it!!! We are done with all the coding part that will let us scan the barcodes of configured decoder params on Symbol Android device using [Barcode/Scanning APIs](/emdk-for-android/6-8/api) introduced in EMDK V 3.0. Now let us run the application.
  
 ## Running the Application
 
@@ -457,7 +457,7 @@ That's it!!! We are done with all the coding part that will let us scan the barc
 
     ![img](../../images/BasicScanningTutorialImages/status_idle.png)  
 
-    This is how [Barcode/Scanning APIs](/emdk-for-android/6-7/api) introduced in EMDK V 3.0 can be used to perform Basic Scanning operations on your Symbol devices without using Profile Wizard. We will see the [Barcode/Scanning APIs](/emdk-for-android/6-7/api) in depth to perform advanced scanning operations in the next tutorial. 
+    This is how [Barcode/Scanning APIs](/emdk-for-android/6-8/api) introduced in EMDK V 3.0 can be used to perform Basic Scanning operations on your Symbol devices without using Profile Wizard. We will see the [Barcode/Scanning APIs](/emdk-for-android/6-8/api) in depth to perform advanced scanning operations in the next tutorial. 
 
 ##Important Programming Tips##
 
@@ -480,7 +480,7 @@ That's it!!! We are done with all the coding part that will let us scan the barc
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to perform Basic Scanning operations on your Symbol Android devices through applications without using Profile Wizard, let us try to understand the API in depth and perform some advanced scanning. So in the next tutorial, we will concentrate on [Barcode/Scanning APIs](/emdk-for-android/6-7/api) in depth and use it to perform advanced scanning operations by creating a tutorial.
+Now that you have learned how to perform Basic Scanning operations on your Symbol Android devices through applications without using Profile Wizard, let us try to understand the API in depth and perform some advanced scanning. So in the next tutorial, we will concentrate on [Barcode/Scanning APIs](/emdk-for-android/6-8/api) in depth and use it to perform advanced scanning operations by creating a tutorial.
 
 
 

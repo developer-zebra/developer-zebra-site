@@ -43,7 +43,7 @@ Android API 19 must be installed via the SDK Manager before attempting to load t
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/6-7/guide/emdksamples_androidstudio)
+* [Android Studio](/emdk-for-android/6-8/guide/emdksamples_androidstudio)
 
 
 ##Using This Sample

@@ -37,18 +37,18 @@ productversion: '6.8'
 ---
 
 ##Overview
-The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](/emdk-for-android/6-7/api) introduced in EMDK V3.0. These API's work independently of any [Data Capture profiles.](/emdk-for-android/6-7/mx/data-capture/barcode).  
+The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](/emdk-for-android/6-8/api) introduced in EMDK V3.0. These API's work independently of any [Data Capture profiles.](/emdk-for-android/6-8/mx/data-capture/barcode).  
 
-The available actions in the [Barcode/Scanning API](/emdk-for-android/6-7/api) are:
+The available actions in the [Barcode/Scanning API](/emdk-for-android/6-8/api) are:
   
-* Set [Scanner Device](/emdk-for-android/6-7/api/barcode/BarcodeManager-DeviceIdentifier/)  
-* Set [TriggerType](/emdk-for-android/6-7/api/barcode/Scanner)
-* Set [Decoder Params](/emdk-for-android/6-7/api/barcode/ScannerConfig-DecoderParams)
-* Set [Reader Params](/emdk-for-android/6-7/api/barcode/ScannerConfig-ReaderParams)
-* Set [Scan Params](/emdk-for-android/6-7/api/barcode/ScannerConfig-ScanParams)
+* Set [Scanner Device](/emdk-for-android/6-8/api/barcode/BarcodeManager-DeviceIdentifier/)  
+* Set [TriggerType](/emdk-for-android/6-8/api/barcode/Scanner)
+* Set [Decoder Params](/emdk-for-android/6-8/api/barcode/ScannerConfig-DecoderParams)
+* Set [Reader Params](/emdk-for-android/6-8/api/barcode/ScannerConfig-ReaderParams)
+* Set [Scan Params](/emdk-for-android/6-8/api/barcode/ScannerConfig-ScanParams)
 * Scan barcodes based on selected features   
 
-This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-android/6-7/api/barcode/ScannerConfig-DecoderParams).
+This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-android/6-8/api/barcode/ScannerConfig-DecoderParams).
 
 
 >Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
@@ -59,7 +59,7 @@ Android API 19 must be installed via the SDK Manager before attempting to load t
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/6-7/guide/emdksamples_androidstudio)
+* [Android Studio](/emdk-for-android/6-8/guide/emdksamples_androidstudio)
 
 
 ##Using This Sample

@@ -6,14 +6,14 @@ productversion: '6.8'
 ---
 ## Developing an EMDK for Android Application Part 3
 
-This guide will walk you through adding MSR support and multiple profiles to the Android application you made using [Developing an EMDK for Android Application Part 2](/emdk-for-android/6-7/tutorial/tutdatacaptureprofilePt2). This tutorial will add some more complexity by adding a second screen as well as adding a second Data Capture Profile.
+This guide will walk you through adding MSR support and multiple profiles to the Android application you made using [Developing an EMDK for Android Application Part 2](/emdk-for-android/6-8/tutorial/tutdatacaptureprofilePt2). This tutorial will add some more complexity by adding a second screen as well as adding a second Data Capture Profile.
 
 ###Prerequisites
 
-* Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/6-7/tutorial/tutdatacaptureprofile)
-* Completion of [Developing an EMDK for Android Application Part 2](/emdk-for-android/6-7/tutorial/tutdatacaptureprofilePt2)
+* Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/6-8/tutorial/tutdatacaptureprofile)
+* Completion of [Developing an EMDK for Android Application Part 2](/emdk-for-android/6-8/tutorial/tutdatacaptureprofilePt2)
  
-For more information about setting up the EMDK please see the EMDK [Setup](/emdk-for-android/6-7/guide/setup).
+For more information about setting up the EMDK please see the EMDK [Setup](/emdk-for-android/6-8/guide/setup).
 
 ##Adding MSR Activity
 Let's start by defining a second activity for the application. This activity will be used to to activate a Data Capture profile that listens for MSR data.
@@ -411,7 +411,7 @@ Lastly we will run and test our application.
 7. Press return to go back to the MSR where you can swipe another card, or hit return again to go back to the main screen. 
 
 ## What's Next
-The [next tutorial](/emdk-for-android/6-7/tutorial/tutdatacaptureprofilePt4) will show you how to use the Intent Output as a Broadcast instead of starting an activity.
+The [next tutorial](/emdk-for-android/6-8/tutorial/tutdatacaptureprofilePt4) will show you how to use the Intent Output as a Broadcast instead of starting an activity.
 
 
 

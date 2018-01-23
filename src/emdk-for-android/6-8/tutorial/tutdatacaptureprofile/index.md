@@ -6,17 +6,17 @@ productversion: '6.8'
 ---
 ## Developing an EMDK for Android Application Part 1
 
-This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](/emdk-for-android/6-7/mx/data-capture/barcode) to get barcode data into your application using the [KeyStroke output](/emdk-for-android/6-7/mx/data-capture/keystroke) feature of EMDK Profiles.
+This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](/emdk-for-android/6-8/mx/data-capture/barcode) to get barcode data into your application using the [KeyStroke output](/emdk-for-android/6-8/mx/data-capture/keystroke) feature of EMDK Profiles.
 
 
 ## Creating The Project
 
 > Note: Provide "EMDKSample" as the project name for this tutorial.
 
-Start by creating a new Android Studio [project](/emdk-for-android/6-7/tutorial/tutCreateProjectAndroidStudio).
+Start by creating a new Android Studio [project](/emdk-for-android/6-8/tutorial/tutCreateProjectAndroidStudio).
 
 ## Adding a DataCapture Profile
-1. Click [here](/emdk-for-android/6-7/guide/profile-manager/) to see how to add a specific feature to A profile with the Profile Manager.
+1. Click [here](/emdk-for-android/6-8/guide/profile-manager/) to see how to add a specific feature to A profile with the Profile Manager.
 
 2. Provide "DataCaptureProfile" as the Profile Name for this tutorial.
 
@@ -255,7 +255,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/6-7/tutorial/
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned the basics of an EMDK for Android application, the [next tutorial](/emdk-for-android/6-7/tutorial/tutdatacaptureprofilePt2)</a> will show you how to use the [Intent Output](/emdk-for-android/6-7/mx/data-capture/intent) feature of EMDK Profiles to handle Data Capture output programmatically.
+Now that you have learned the basics of an EMDK for Android application, the [next tutorial](/emdk-for-android/6-8/tutorial/tutdatacaptureprofilePt2)</a> will show you how to use the [Intent Output](/emdk-for-android/6-8/mx/data-capture/intent) feature of EMDK Profiles to handle Data Capture output programmatically.
 
 
 

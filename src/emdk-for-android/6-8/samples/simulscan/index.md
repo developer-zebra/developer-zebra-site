@@ -38,7 +38,7 @@ You will need:
 * A Simulscan template
 * A printed copy of the form used to create the template
 
-Follow the template generation and device licensing sections of the [SimulScan API tutorial](/emdk-for-android/6-7/tutorial/tutSimulScanAPI)
+Follow the template generation and device licensing sections of the [SimulScan API tutorial](/emdk-for-android/6-8/tutorial/tutSimulScanAPI)
 
 >Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
 
@@ -49,7 +49,7 @@ Android API 19 must be installed via the SDK Manager before attempting to load t
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/6-7/guide/emdksamples_androidstudio)
+* [Android Studio](/emdk-for-android/6-8/guide/emdksamples_androidstudio)
 
 
 ##Using This Sample

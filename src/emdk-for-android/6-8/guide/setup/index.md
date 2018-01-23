@@ -35,9 +35,9 @@ Android studio is now Google's official IDE for Android development. Using Andro
 <!-- 
 >**EMDK for Android 6.7 does not support Android Studio 3.0**
  -->
-**Windows** - Follow this [**guide**](/emdk-for-android/6-7/guide/setupAndroidStudio) to setup the EMDK for Android in Android Studio.
+**Windows** - Follow this [**guide**](/emdk-for-android/6-8/guide/setupAndroidStudio) to setup the EMDK for Android in Android Studio.
 
-**Mac** - Follow this [**guide**](/emdk-for-android/6-7/guide/setupAndroidStudioMac) to manually setup the EMDK for Android in Android Studio.
+**Mac** - Follow this [**guide**](/emdk-for-android/6-8/guide/setupAndroidStudioMac) to manually setup the EMDK for Android in Android Studio.
 
 
 

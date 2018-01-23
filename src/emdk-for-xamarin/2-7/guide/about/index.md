@@ -14,6 +14,8 @@ The EMDK for Xamarin provides developers with a comprehensive set of tools to ea
 ## Devices Supported
 EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. 
 
+OLD OLD OLD
+
 **The following devices have been tested and validated**:
 
 * ET5X   - Lollipop

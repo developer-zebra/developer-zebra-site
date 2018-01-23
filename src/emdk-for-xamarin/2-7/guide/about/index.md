@@ -46,8 +46,11 @@ OLD OLD OLD
     * Xamarin Studio
         * 6.x
 
-##What's New in Version 2.6
+##What's New in Version 2.7
 
+
+
+OLD OLD OLD 
 * Added support for Nougat devices
 * Added support to scan barcode using Camera on TC51, TC56, TC70x and TC75x Nougat (Android 7.1.2) devices. This is supported if the system has Scanner Framework 19.0.8.0 or above.
 * Added support for MX v7.1 in Profile Manager:

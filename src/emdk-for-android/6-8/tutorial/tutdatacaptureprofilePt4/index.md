@@ -2,7 +2,7 @@
 title: Using Broadcast Intent in DataCapture Profiles
 layout: guide.html
 product: EMDK For Android
-productversion: '6.7'
+productversion: '6.8'
 ---
 ## Developing an EMDK for Android Application Part 4
 

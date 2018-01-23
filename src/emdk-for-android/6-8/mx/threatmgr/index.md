@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: threatmgr
 product: EMDK For Android
-productversion: '6.7'
+productversion: '6.8'
 ---
 
 

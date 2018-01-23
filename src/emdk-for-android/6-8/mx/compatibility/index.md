@@ -175,7 +175,7 @@ csps:
     url: /mx/xmlmgr
     csp: xmlmgr
 product: EMDK For Android
-productversion: '6.7'
+productversion: '6.8'
 ---
            
 

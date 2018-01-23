@@ -2,7 +2,7 @@
 title: Pairing with Bluetooth Scanning device using Bluetooth Scanner API
 layout: guide.html
 product: EMDK For Android
-productversion: '6.7'
+productversion: '6.8'
 ---
 
 ## Overview

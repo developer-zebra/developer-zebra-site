@@ -49,7 +49,7 @@ content-items:
     text: This guide describes the functionality of the Battery Intent API Interface.
     url: /emdk-for-android/6-7/guide/reference/refbatteryintent
 product: EMDK For Android
-productversion: '6.7'
+productversion: '6.8'
 ---
            
 

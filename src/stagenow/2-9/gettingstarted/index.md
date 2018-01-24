@@ -2,7 +2,7 @@
 title: Getting Started
 layout: guide.html
 product: Stagenow
-productversion: '2.8'
+productversion: '2.9'
 ---
 
 ## Introduction
@@ -27,23 +27,19 @@ The StageNow Staging Solution includes the following components:
 ### Devices Supported
 Following is a list of the Zebra Android devices and versions that StageNow supports. 
 
-* TC70 (Non-rebranded): KitKat
-* TC55:	KitKat, Jelly Bean
-* MC40: Lollipop, KitKat, Jelly Bean
-* MC67NA: KitKat, Jelly Bean
-* MC92: KitKat
-* MC18: KitKat
-* MC32: Jelly Bean
-* TC70: Lollipop, KitKat
-* TC75: Lollipop, KitKat
-* TC8000: Lollipop, KitKat
+* MC33: Nougat
+* MC40: Lollipop
+* TC25: Nougat
+* TC70: Lollipop
+* TC75: Lollipop
+* TC8000: Lollipop
 * WT6000: Lollipop
 * ET51: Lollipop
 * ET55: Lollipop
-* TC51: Marshmallow
-* TC56: Marshmallow
-* TC70X: Marshmallow
-* TC75X: Marshmallow
+* TC51: Marshmallow, Nougat
+* TC56: Marshmallow, Nougat
+* TC70X: Marshmallow, Nougat
+* TC75X: Marshmallow, Nougat
 
 >Note:  
 >The MX features that each device supports depend on the Android OS, OSX, and MX versions in the BSP. Select the applicable device version in the matrix located at http://techdocs.zebra.com/mx/compatibility/ to determine the supported features.

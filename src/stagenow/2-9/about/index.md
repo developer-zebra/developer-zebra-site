@@ -1,16 +1,15 @@
 ---
-title: StageNow 2.8
+title: StageNow 2.9
 layout: guide.html
 product: Stagenow
-productversion: '2.8'
+productversion: '2.9'
 ---
 
-StageNow 2.8 User Guide, Revision A
+StageNow 2.9 User Guide, Revision A
 
-P/N MN-002672-04
 
 ## Introduction
-This help file provides the staging administrator instructions on using StageNow 2.8 to create profiles to use for staging devices.
+This help file provides the staging administrator instructions on using StageNow 2.9 to create profiles to use for staging devices.
 
 ## Supported Web Browsers
 
@@ -40,41 +39,34 @@ Topics covered in this guide:
 * [Troubleshooting](../troubleshooting) discusses errors that can occur in the StageNow Tool, and possible solutions.
 
 ## What's New
-StageNow 2.8 now supports [MX 7.0](../stagingprofiles/#mx6xselection), which introduces or enhances the following CSPs and capabilities:
+StageNow 2.9 now supports [MX 7.1](../stagingprofiles/#mx6xselection), which introduces or enhances the following CSPs and capabilities:
 
-* [App Manager](../csp/app) – New CSP features:
- * Adding/Removing App form Battery optimization List
 
-* [Cert Manager](../csp/cert) - Fixes: 
- * Fix for Customer issue provided (deleting uninstalled cert from UI)
+* [License Manager](../csp/license) – 
+ *  Added new feature to perform license management operations such as configure license source, license activation etc.
 
-* [Intent Manager](../csp/intent) - Setting applications as Device owner.
-* [Key Mapping Manager](../csp/keymap) – Added key mapping support for NAV PAD Button
+* [Display Manager ](../csp/display) – 
+ *  Added ability to control display blanking.
 
-* [BugReportManager ](../csp/bugreportmgr) – New CSP features:
- * Ability to disable triggering reports via intent
- * Ability to disable taking snapshots Android N changes.
- * Block user from taking a new report while one is being collected
+* [Key Mapping Manager  ](../csp/keymap) – 
+ *  Added macro keys, brightness keys and keyboard as options.
 
-* [Cellular Manager ](../csp/cellular) – Bug fixes:
- * Gracefully handle invalid OSX version in CellularMgr CSP: reject only those parameters  that depend on OSX
- * Improve error handling for SIM selection and CellularData parameters.
+* [Wireless Manager ](../csp/wireless) – 
+ *  Added ability to select antenna to use for both WiFi and Bluetooth.
 
-* [Wifi Manager ](../csp/wifi) – New Feature:
- * 802.11ac implementation and 802.11n Implementation
- * 802.11ac,802.11n parameters are added in advanced parameters
+* [Power Manager](../csp/power) – 
+ *  Added ability to select ports and specify port action.
+ * Added ability to select the Heater and specify heater action
+ * Added ability to configure auto power options
+ * Added ability to disable GMS Welcome Screen on Enterprise Reset
+ * Added ability to specify the temperature at which the heater should turn ON or OFF
 
-* [File Manager ](../csp/file) – New Feature:
- * HTTPS support.
+* [UI Manager](../csp/ui) – 
+ *  Added ability to enable/disable Navigation Bar.
+ * Added ability to enable/disable Recent App button.
 
-* [License Manager](../csp/license) – Bug fixes:
- * Sensitive information is not getting logged.
+* [Wi-Fi Manager](../csp/wifi) – 
+ *  Added ability to enable/disable Wireless Network Management (802.11v).
 
-* [Analytics Manager](../csp/analyticsmgr) – New Feature:
- * Support for “N” Device.
+* Support for KitKat devices has been removed
 
-* [Bluetooth Manager](../csp/bluetoothmgr) – New Feature:
- * Provided support for admin to add new silent pairing rule by providing just the name of the remote Bluetooth device
-
-* Fix for upgrade from 2.5 to 2.8
-* Audio gain fix for Frenzy by ZVC

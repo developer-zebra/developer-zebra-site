@@ -15,19 +15,19 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 
 ## New in v2.7
 
-* **[Support for MX 7.2](../stagingprofiles/#mx6xselection)** adds the following Setting Types and features:
+* **Support for MX 7.2** adds the following Setting Types and features:
 
-* [Audio Manager](../csp/audiomgr) new CSP:
+* [Audio Manager](../mx/audio) new CSP:
  * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
-* [Display Manager](../csp/display) new feature:
+* [Display Manager](../mx/displaymgr) new feature:
  * On VC80 devices, adds the ability to force the display to “Stay Awake” and remain on.
-* [Power Manager](../csp/power) new feature:
-    * Turn ON/OFF “Doze Mode” energy saving features on the device. When enabled, only specially designated apps can prevent the device from entering a low-power state to preserve battery life. 
-* [Remote Scanner Manager](../csp/rsm) new feature:
+* [Power Manager](../mx/powermgr) new feature:
+	* Turn ON/OFF “Doze Mode” energy saving features on the device. When enabled, only specially designated apps can prevent the device from entering a low-power state to preserve battery life. 
+* [Remote Scanner Manager](../mx/remotescannermgr) new feature:
  * Supports RS-507 and DS-3608 scanners
-* [Settings Manager](../csp/settingsmgr) new feature:
+* [Settings Manager](../mx/settingsmgr) new feature:
  * Enable/Disable application notification control on devices running Android Nougat
-
+ 
 ### Devices Supported
 
 EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. 

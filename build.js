@@ -201,115 +201,12 @@ var sitebuild = Metalsmith(__dirname)
 	        pattern: '**/samples/**',
 	        sortBy: 'date',
 	        reverse: true
-	    },
-        mx: {
-            pattern: 'mx/**/*.md'
-        },
-        md: {
-            pattern: '/**/**.md'
-        },
-        csp: {
-            pattern: 'mx/**/*.csp',
-            sortBy: 'order'
-        },
+	    }
+
 
 	}))
 
 
-    //emdk for android 6.7
-    .use(foldermenu({
-        folder: 'emdk-for-android/6-7/api/',
-        automenu: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-android/6-7/api/barcode',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-android/6-7/api/core',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-android/6-7/api/notification',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-android/6-7/api/payment',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-android/6-7/api/PersonalShopper',
-        automenu: true,
-        ascontent: true
-    }))
-    
-    .use(foldermenu({
-        folder: 'emdk-for-android/6-7/api/scanandpair',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-android/6-7/api/securenfc',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-android/6-7/api/serialcomm',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-android/6-7/api/simulscan',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-android/6-7/api/notification',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-android/6-7/'
-    }))
-
-
-        //emdk-x 2.6
-    .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-6/api/',
-        automenu: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-6/api/simulscan',
-        automenu: true,
-        ascontent: true
-    })) 
-    .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-6/api/notification',
-        automenu: true,
-        ascontent: true
-    }))    
-    .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-6/api/scanandpair',
-        automenu: true,
-        ascontent: true
-    }))    
-    .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-6/api/barcode',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-6/api/core',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-6/'
-    }))
 
     .use(foldermenu({
         folder: 'mx/',

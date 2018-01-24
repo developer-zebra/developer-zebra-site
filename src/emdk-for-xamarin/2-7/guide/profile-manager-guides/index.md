@@ -47,6 +47,8 @@ automenu:
         - title: Analytics Manager
           url: /emdk-for-xamarin/2-7/mx/analytics/
         - title: Audio Manager
+          url: /emdk-for-xamarin/2-7/mx/audio/
+        - title: Audio Volume UI Manager
           url: /emdk-for-xamarin/2-7/mx/audiomgr/
         - title: Batch Manager
           url: /emdk-for-xamarin/2-7/mx/batchmgr/

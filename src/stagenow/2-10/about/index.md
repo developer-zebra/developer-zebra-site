@@ -9,15 +9,15 @@ StageNow 2.10 User Guide, Revision A
 
 StageNow MN-002910 
 
-Jan 12, 2018
-
+January, 2018
 
 ## Introduction
-This help file provides the staging administrator instructions for using StageNow 2.10 to create profiles to use for staging devices.
 
 #### This guide covers StageNow 2.10.x and higher. 
 
-## Supported Web Browsers
+This guide provides the staging administrator with instructions for using StageNow 2.10 to create profiles for staging devices.
+
+### Supported Web Browsers
 
 * Firefox 29 or newer
 
@@ -25,43 +25,47 @@ This help file provides the staging administrator instructions for using StageNo
 
 * Internet Explorer 9 or newer
 
-## Section Descriptions
-Topics covered in this guide:
+-----
 
-* [Installing StageNow](../installing) provides instructions for installing, uninstalling, and upgrading the StageNow Staging Solution, including system requirements.
+### Sections of This Guide
 
-* [Getting Started](../gettingstarted) describes StageNow and includes information on users, use cases, and devices supported.
+* [Installing StageNow](../installing) provides instructions for installing, uninstalling, and upgrading the StageNow staging solution, including system requirements.
 
-* [Profiles](../stagingprofiles) provides information on the StageNow Wizards which allow the staging administrator to define software configuration and installation for enterprise devices.
+* [Getting Started](../gettingstarted) describes the StageNow solution, including information about users, use cases and supported devices.
 
-* [Profile Wizards](../ProfileWizards) describes how to use each available profile creation Wizard.
+* [Profiles](../stagingprofiles) provides information about StageNow Wizards, which allow the staging administrator to define software configurations and installation scenarios for enterprise devices.
 
-* [Settings](../settingconfig) provides information for the staging administrator on configuring and managing settings for use in creating profiles.
+* [Profile Wizards](../ProfileWizards) describes how to use the profile-creation Wizards.
 
-* [Setting Types](../CSPreference) lists the parameters and values available when creating settings.
+* [Settings](../settingconfig) provides information for the staging administrator about configuring and managing settings for use in profile creation.
 
-* [Device Staging](../stageclient) provides information for the staging operator on selecting a profile for configuring the target devices, and deploying the profile material to the devices.
+* [Setting Types](../settingtypes) lists the parameters and values available when creating settings.
 
-* [Troubleshooting](../troubleshooting) discusses errors that can occur in the StageNow Tool, and possible solutions.
+* [Device Staging](../stageclient) provides information for the staging operator about selecting a profile for configuring the target devices and deploying the profile material to the devices.
 
-## New in StageNow 2.10
+* [Troubleshooting](../troubleshooting) describes errors that can occur in the StageNow Tool and provides possible solutions.
 
-### IMPORTANT NEWS 
+-----
 
-* StageNow 2.10 no longer supports the OSupdatepackage for Jelly Bean (JB) or KitKat (KK) devices.
-* The StageNow update file for devices running Android Lollipop and higher will be distributed with the latest BSP or security incremental patch for the specific device(s). 
+## New in v2.10
+
+### Important News 
+
+* StageNow 2.10 no longer supports the OSupdatepackage for Jelly Bean or KitKat devices.
+* The StageNow update file for devices running Android Lollipop and higher is distributed with the latest BSP or security incremental patch for the specific device(s). 
 
 ### New Features
 
-**External Staging Server Support**
-* Staging and deployment content can now be hosted on a server or system other than the StageNow workstation
-* An external staging server can use FTP, FTPS, HTTP or HTTPS protocols 
+* **External Staging Server Support**
+ * Staging and deployment content can now be hosted on a server or system other than the StageNow workstation
+ * An external staging server can use FTP, FTPS, HTTP or HTTPS protocols 
 
-**Zebra VC80 devices can now be staged using a serial scanner (RS232)**
+* **Zebra VC80 devices can now be staged using a serial scanner (RS232)**
 
-**When staging Zebra TC20/TC25 devices, administrators can now prevent Analytics Manager from being disabled**
+* **When staging Zebra TC20/TC25 devices, administrators can now prevent Analytics Manager from being disabled**
 
-**[Support for MX 7.2](../stagingprofiles/#mx6xselection) adds the following Setting Types and features**:
+* **[Support for MX 7.2](../stagingprofiles/#mx6xselection)** adds the following Setting Types and features:
+
 * [Audio Manager](../csp/audiomgr) new CSP:
  * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
 * [Display Manager](../csp/display) new feature:
@@ -91,24 +95,23 @@ Topics covered in this guide:
 
 -----
 
-Contents
- 
-StageNow V2.10 Release consists of the deliverables listed below:
-  
-Deliverables
-Details
-staging_solution_signed.2.10.exe
-StageNow v2.10 Tool Installable 
-StagingInstallGuide_V2.10.pdf
-StageNow v2.10 Install Guide 
+### Additional information
 
-Device Compatibility
- 
-For a full list of the Zebra Android supported devices and versions that StageNow supports, go to:
-http://techdocs.zebra.com/stagenow/2-103-0/gettingstarted/
-Zebra devices running Android Nougat, Marshmallow, Lollipop, KitKat, and Jelly Bean devices that ship with the StageNow Client support all device configuration options that the StageNow Tool offers.
+**Included in the StageNow 2.10 download package**: 
 
-NOTE: The MX features that each device supports depend on the Android OS, OSX, and MX versions in the BSP. Select the applicable device version in the matrix located at http://techdocs.zebra.com/mx/compatibility/ to determine the supported features.
-Installation Requirements
+* `staging_solution_signed.2.10.exe` - StageNow v2.10 Tool Installable 
+
+* `StagingInstallGuide_V2.10.pdf` - StageNow v2.10 Install Guide 
+
+### Compatibility Notes
  
-The application can be downloaded for free and installed on any Windows 7 PC with no pre-requisite software — no need to purchase, locate, license or install other components
+* See the full list of [Zebra Android devices that support StageNow 2.10](http://techdocs.zebra.com/stagenow/2-10/gettingstarted/)
+
+* Zebra devices running Android Nougat, Marshmallow, Lollipop, KitKat and Jelly Bean that ship with the StageNow Client support all device configuration options offered by the StageNow tool.
+
+* The MX features supported by a given device depends on the versions of Android, OSX, and MX versions in the device BSP. Refer to the [MX feature matrix](http://techdocs.zebra.com/mx/compatibility/) to determine features supported by devices in your organization.    
+ 
+* The free StageNow application can be downloaded and installed on any Windows 7 PC with no pre-requisite software and with no need to purchase, locate, license or install other components. 
+
+-----
+

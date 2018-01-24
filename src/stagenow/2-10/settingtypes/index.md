@@ -32,6 +32,8 @@ automenu:
       items:
         - title: Analytics Manager
           url: /stagenow/2-10/csp/analyticsmgr
+       - title: Audio Manager
+          url: /stagenow/2-10/csp/audiomgr
         - title: AudioVolUI Manager
           url: /stagenow/2-10/csp/audio
         - title: Batch Manager

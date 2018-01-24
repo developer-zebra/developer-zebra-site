@@ -7,6 +7,10 @@ productversion: '2.10'
 
 StageNow 2.10 User Guide, Revision A
 
+StageNow MN-002910 
+
+Jan 12, 2018
+
 
 ## Introduction
 This help file provides the staging administrator instructions for using StageNow 2.10 to create profiles to use for staging devices.
@@ -57,11 +61,13 @@ Topics covered in this guide:
 
 **When staging Zebra TC20/TC25 devices, administrators can now prevent Analytics Manager from being disabled**
 
-**[Support for MX 7.2](../stagingprofiles/#mx6xselection) adds the following device setting types and features**:
-* [Power Manager](../csp/power) new feature:
-	* Turn ON/OFF “Doze Mode” energy saving features on the device. When enabled, only specially designated apps can prevent the device from entering a low-power state to preserve battery life. 
+**[Support for MX 7.2](../stagingprofiles/#mx6xselection) adds the following Setting Types and features**:
+* [Audio Manager](../csp/audiomgr) new CSP:
+ * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
 * [Display Manager](../csp/display) new feature:
  * On VC80 devices, adds the ability to force the display to “Stay Awake” and remain on.
+* [Power Manager](../csp/power) new feature:
+	* Turn ON/OFF “Doze Mode” energy saving features on the device. When enabled, only specially designated apps can prevent the device from entering a low-power state to preserve battery life. 
 * [Remote Scanner Manager](../csp/rsm) new feature:
  * Supports RS-507 and DS-3608 scanners
 * [Settings Manager](../csp/settingsmgr) new feature:
@@ -84,3 +90,25 @@ Topics covered in this guide:
 * MX 5.1
 
 -----
+
+Contents
+ 
+StageNow V2.10 Release consists of the deliverables listed below:
+  
+Deliverables
+Details
+staging_solution_signed.2.10.exe
+StageNow v2.10 Tool Installable 
+StagingInstallGuide_V2.10.pdf
+StageNow v2.10 Install Guide 
+
+Device Compatibility
+ 
+For a full list of the Zebra Android supported devices and versions that StageNow supports, go to:
+http://techdocs.zebra.com/stagenow/2-103-0/gettingstarted/
+Zebra devices running Android Nougat, Marshmallow, Lollipop, KitKat, and Jelly Bean devices that ship with the StageNow Client support all device configuration options that the StageNow Tool offers.
+
+NOTE: The MX features that each device supports depend on the Android OS, OSX, and MX versions in the BSP. Select the applicable device version in the matrix located at http://techdocs.zebra.com/mx/compatibility/ to determine the supported features.
+Installation Requirements
+ 
+The application can be downloaded for free and installed on any Windows 7 PC with no pre-requisite software — no need to purchase, locate, license or install other components

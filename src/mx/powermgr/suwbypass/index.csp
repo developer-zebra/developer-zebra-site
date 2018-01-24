@@ -14,17 +14,19 @@ parm:
       mx: "7.1"
       devicetype: A
       name: Do Nothing
-      description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no action on the device; the default value is used.
     - code: 1
       devicetype: A
       name: True
       mx: "7.1"
-      description: Causes the setup wizard to be skipped  
+      description: Causes the Android device setup wizard to be skipped following an Enterprise Reset initiated through PowerMgr.  
     - code: 2
       devicetype: A
       name: False
       mx: "7.1"
-      description: Disables the selected heater. 
+      description: Allows the setup wizard to be performed following an Enterprise Reset initiated through PowerMgr (default). 
 ---
 
-Controls whether to bypass the device setup wizard (also known as the "Welcome Screen") on devices with Google Mobile Services (GMS) following an Enterprise reset. See the [Overview section](#overview) for more information. **Applies only to GMS devices**. 
+Controls whether to bypass the "Android device setup wizard" (also known as the "Welcome Screen") following an Enterprise Reset initiated through PowerMgr. **Applies only on devices with Google Mobile Services (GMS) and <u>only when Enterprise Reset is initiated by PowerMgr</u>**. 
+
+**Important: This setting does not persist on the device**. If SUW bypass is desired following an Enterprise Reset, this parameter must be included in the same Profile that is used to initiate the Enterprise Reset.

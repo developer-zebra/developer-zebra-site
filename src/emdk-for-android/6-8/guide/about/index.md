@@ -6,9 +6,10 @@ productversion: '6.8'
 ---
 
 ## Overview
-The EMDK for Android provides developers with a comprehensive set of tools to easily create powerful line of business applications for enterprise mobile computing devices and is designed for use with Google's Android SDK and Android Studio. The EMDK for Android includes class libraries, sample applications with source code, as well as all of the associated documentation to help your applications take full advantage of what our devices have to offer.
 
-It also includes an exclusive Profile Manager Technology within the your IDE, providing a GUI based development tool. This allows you to write fewer lines of code resulting in reduced development time, effort and errors.
+EMDK for Android is an extension for the Android Studio IDE that provides developers with a comprehensive set of tools to easily create powerful line-of-business applications for Zebra Android devices. EMDK for Android includes class libraries, sample applications with source code, and all associated documentation to help applications take full advantage of the power of Zebra devices.
+
+EMDK for Android also inserts exclusive Profile Manager technology within the the IDE, providing a GUI-based development tool for configuring Zebra devices. This allows developers to write fewer lines of code, produce fewer errors, and reduce overall development time and effort.
 
 ## Requirements
 The following software must be installed prior to using the EMDK for Android.
@@ -51,44 +52,47 @@ The following software must be installed prior to using the EMDK for Android.
 * TC8000 - KitKat,Lollipop
 * WT6000 - Lollipop
 
-## Important News
+-----
 
-OLD OLD OLD
+## New in v6.8
 
-* EMDK for Android support for all KitKat (Android 4.4.x) devices has been dropped. - EMDK for Android v6.6 was the final version supporting KitKat (Android 4.4.3 or higher) devices. Starting from EMDK for Android v6.7, only the Lollipop or higher devices are supported.
-* EMDK OS update package for KitKat devices will no longer be distributed- The EMDK for Android v6.6 was the final version distributing EMDK OS update package with the PC/MAC installations for KitKat devices. For all Lollipop or higher devices, the EMDK update for a specific device will be distributed with the latest BSP or security incremental patch.
-* EMDK for Android support for all Jelly Bean (Android 4.1.2) and TC70 KitKat (Android 4.4.2) BSP version 112414 devices has been terminated - EMDK for Android v5.0 was the final version supporting these devices.
-* EMDK for Android support for Payment APIs is terminated - The EMDK for Android v5.0 is the final version that supports Payment APIs.
-* Support for ProfileConfig class has been deprecated - The ProfileConfig class which can be used to access the profile data has been deprecated. It is recommended to use the name-value pair function of Profile Manager feature. The Profile XML can also be directly modified. Refer to the Clock Sample for information on modifying Profile XML data.
-* Support for ContinuousRead class is deprecated - The ContinuousRead class which can be used to enable the continuous scanning has been deprecated. It is recommended to use the aimType, sameSymbolTimeout, differentSymbolTimeout of camera, imager and laser specific reader parameters.
+* Supports compiling applications to API 26 with new "EMDK APIs, Android 26, rev xx (API 26)" add-on
 
+* **Enhanced Barcode Manager API**:
+ * Supports MultiBarcode decoding
+ * New `MULTI_BARCODE` value in `enum` ScanMode enables simultaneous decoding of multiple barcodes
+ * New `MultiBarcodeParams` class in `ScannerConfig` adds `barcodeCount` parameter to set the barcode count to be scanned
 
-## What's New
+* New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
 
-* Added support for Nougat devices
-* Added support to scan barcode using Camera on TC51, TC56, TC70x and TC75x Nougat (Android 7.1.2) devices. This is supported if the system has Scanner Framework 19.0.8.0 or above.
-* Added support for MX v7.1 in Profile Manager:
-    * License Manager – Added new feature to perform license management operations such as configure license source, license activation etc.
-    * Display Manager – Added ability to control display blanking.
-    * Key Mapping Manager – Added macro keys, brightness keys and keyboard as options
-    * Wireless Manager – Added ability to select antenna to use for both WiFi and Bluetooth.
-    * Power Manager
-        * Added ability to select ports and specify port action.
-        * Added ability to select the Heater and specify heater action
-        * Added ability to configure auto power options
-        * Added ability to disable GMS Welcome Screen on Enterprise Reset
-        * Added ability to specify the temperature at which the heater should turn ON or OFF
-    * UI Manager
-        * Added ability to enable/disable Navigation Bar.
-        * Added ability to enable/disable Recent App button.
-    * Wi-Fi
-        * Added ability to enable/disable Wireless Network Management (802.11v).
-* Enhanced SerialComm API:
-    * Added a feature to concurrently communicate with the multiple connected serial devices on VC80x
-* Enhanced Barcode Manager API with the following features:
-    * Added support for new USB Scanner DS3608; A new enum under BarcodeManager.DeviceIdentifier for selecting the DS3608 USB Scanner was added.
-    * This scanner is supported with VC80x and ET5X devices.
-* Terminated EMDK for Android support for all KitKat (Android 4.4.x) devices. - The Xamarin EMDK v2.5 was the final version supporting KitKat (Android 4.4.x) devices. Starting from Xamarin EMDK v2.5, only the Lollipop or higher devices are supported.
+* **Enhanced SerialComm API**:
+ * `flowControlMode` under Serial Config takes `RTS_CTS`, `XON_XOFF` and `NONE` values
+
+* **Enhanced Profile Manager DataCapture**: 
+ * Supports Serial Input plug-in
+ * Support Zebra DS-3608 scanner
+
+* Support for MultiBarcode decoding:
+ * New `Multi Barcode` Scanning Mode option in Reader parameters enables simultaneous decoding of multiple barcodes
+ * New `Barcode count` field under Multi-barcode parameters allows a barcode count to be set
+ * Supports sending ENTER command as a string
+ * Enhanced support for Inter-Character Delay
+ * New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
+
+* **Support for MX 7.2** adds the following Setting Types and features:
+
+* [Audio Manager](../../mx/audio) new CSP:
+ * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
+* [Display Manager](../../mx/displaymgr) new feature:
+ * On VC80 devices, adds the ability to force the display to “Stay Awake” and remain on.
+* [Power Manager](../../mx/powermgr) new feature:
+    * Turn ON/OFF “Doze Mode” energy saving features on the device. When enabled, only specially designated apps can prevent the device from entering a low-power state to preserve battery life. 
+* [Remote Scanner Manager](../../mx/remotescannermgr) new feature:
+ * Supports RS-507 and DS-3608 scanners
+* [Settings Manager](../../mx/settingsmgr) new feature:
+ * Enable/Disable application notification control on devices running Android Nougat
+
+-----
 
 ## Components
 

@@ -19,7 +19,7 @@ menu:
       default: /emdk-for-android/4-0/guide/about
       label: '4.0'
   items:
-    - title: Home
+    - title: About
       url: /emdk-for-android/6-8/guide/about
     - title: Getting Started
       url: /emdk-for-android/6-8/guide/gettingstarted

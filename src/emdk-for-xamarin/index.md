@@ -11,7 +11,7 @@ menu:
   title: EMDK For Xamarin 2.7
   img: /emdk-for-xamarin/images/logo.png
   items:
-    - title: Home
+    - title: About
       url: /emdk-for-xamarin/2-7/guide/about
     - title: Getting Started
       url: /emdk-for-xamarin/2-7/guide/gettingstarted

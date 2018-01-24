@@ -45,7 +45,7 @@ menu:
     - icon: fa fa-search
       url: /stagenow/2-9/search
 product: Stagenow
-productversion: '2.9'
+productversion: '2.10'
 ---
 
 

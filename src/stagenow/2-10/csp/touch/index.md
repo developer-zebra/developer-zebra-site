@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: touchmgr
 product: Stagenow
-productversion: '2.9'
+productversion: '2.10'
 ---
 
 

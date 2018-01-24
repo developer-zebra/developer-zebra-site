@@ -2,7 +2,7 @@
 title: StageNow 2.9
 layout: guide.html
 product: Stagenow
-productversion: '2.9'
+productversion: '2.10'
 ---
 
 StageNow 2.9 User Guide, Revision A

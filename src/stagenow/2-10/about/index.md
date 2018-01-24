@@ -1,15 +1,17 @@
 ---
-title: StageNow 2.9
+title: StageNow 2.10
 layout: guide.html
 product: Stagenow
 productversion: '2.10'
 ---
 
-StageNow 2.9 User Guide, Revision A
+StageNow 2.10 User Guide, Revision A
 
 
 ## Introduction
-This help file provides the staging administrator instructions on using StageNow 2.9 to create profiles to use for staging devices.
+This help file provides the staging administrator instructions for using StageNow 2.10 to create profiles to use for staging devices.
+
+These pages cover StageNow 2.10.x and higher. 
 
 ## Supported Web Browsers
 
@@ -39,6 +41,11 @@ Topics covered in this guide:
 * [Troubleshooting](../troubleshooting) discusses errors that can occur in the StageNow Tool, and possible solutions.
 
 ## What's New
+
+StageNow 2.10 now supports [MX 7.2](../stagingprofiles/#mx6xselection), which introduces or enhances the following CSPs and capabilities:
+
+
+OLD OLD OLD
 StageNow 2.9 now supports [MX 7.1](../stagingprofiles/#mx6xselection), which introduces or enhances the following CSPs and capabilities:
 
 

@@ -1,8 +1,8 @@
 ---
-title: StageNow 2.9
+title: StageNow 2.10
 layout: list-mx.html
 menu:
-  title: StageNow 2.9
+  title: StageNow 2.10
   img: /images/products/stagenow.png
   versions:
     - versionto: 2-2

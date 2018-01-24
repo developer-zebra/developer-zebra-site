@@ -2,7 +2,7 @@
 title: Bluetooth Manager
 layout: csp-detail.html
 csp: bluetoothmgr
-product: Stagenow
+product: StageNow
 productversion: '2.8'
 ---
 

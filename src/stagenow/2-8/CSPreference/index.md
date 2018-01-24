@@ -1,7 +1,7 @@
 ---
 title: Setting Types
 layout: guide.html
-product: Stagenow
+product: StageNow
 productversion: '2.8'
 ---
 

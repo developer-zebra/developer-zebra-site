@@ -1,7 +1,7 @@
 ---
 title: StageNow Troubleshooting
 layout: guide.html
-product: Stagenow
+product: StageNow
 productversion: '2.8'
 ---
 

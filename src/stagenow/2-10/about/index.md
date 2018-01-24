@@ -1,7 +1,7 @@
 ---
 title: StageNow 2.10
 layout: guide.html
-product: Stagenow
+product: StageNow
 productversion: '2.10'
 ---
 

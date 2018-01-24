@@ -110,6 +110,6 @@ automenu:
           url: /stagenow/2-10/csp/settingsmgr
         - title: UI Manager
           url: /stagenow/2-10/csp/ui
-product: Stagenow
+product: StageNow
 productversion: '2.10'
 ---

@@ -44,7 +44,7 @@ menu:
       url: /stagenow/2-8/download    
     - icon: fa fa-search
       url: /stagenow/2-8/search
-product: Stagenow
+product: StageNow
 productversion: '2.8'
 ---
 

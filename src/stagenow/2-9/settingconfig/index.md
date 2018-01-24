@@ -1,7 +1,7 @@
 ---
 title: Settings
 layout: guide.html
-product: Stagenow
+product: StageNow
 productversion: '2.9'
 ---
 

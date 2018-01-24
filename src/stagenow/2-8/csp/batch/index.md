@@ -11,7 +11,7 @@ mxversions:
   - text: MX 5.0
     value: 5
 csp: batchmgr
-product: Stagenow
+product: StageNow
 productversion: '2.8'
 ---
 

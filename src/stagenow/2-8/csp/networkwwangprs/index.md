@@ -1,7 +1,7 @@
 ---
 title: Network.WWAN.GPRS
 layout: guide.html
-product: Stagenow
+product: StageNow
 productversion: '2.8'
 ---
 

@@ -2,7 +2,7 @@
 title: Remote Scanner Manager
 layout: csp-detail.html
 csp: remotescannermgr
-product: Stagenow
+product: StageNow
 productversion: '2.10'
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Profile Wizards
 layout: guide.html
-product: Stagenow
+product: StageNow
 productversion: '2.10'
 ---
 

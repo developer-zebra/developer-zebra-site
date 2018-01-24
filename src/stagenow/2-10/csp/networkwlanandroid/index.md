@@ -1,7 +1,7 @@
 ---
 title: Network.WLAN.Android
 layout: guide.html
-product: Stagenow
+product: StageNow
 productversion: '2.10'
 ---
 

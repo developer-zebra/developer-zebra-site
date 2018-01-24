@@ -57,7 +57,7 @@ Topics covered in this guide:
 
 **When staging Zebra TC20/TC25 devices, administrators can now prevent Analytics Manager from being disabled**
 
-**Support for MX 7.2 adds the following device setting types and features**:
+**[Support for MX 7.2](../stagingprofiles/#mx6xselection) adds the following device setting types and features**:
 * [Power Manager](../csp/power) new feature:
 	* Turn ON/OFF “Doze Mode” energy saving features on the device. When enabled, only specially designated apps can prevent the device from entering a low-power state to preserve battery life. 
 * [Display Manager](../csp/display) new feature:
@@ -73,7 +73,6 @@ Topics covered in this guide:
 * Android Marshmallow
 * Android Lollipop
 * Android KitKat
-
 * MX 7.2
 * MX 7.1
 * MX 7.0
@@ -84,39 +83,4 @@ Topics covered in this guide:
 * MX 5.2
 * MX 5.1
 
-StageNow 2.10 now supports [MX 7.2](../stagingprofiles/#mx6xselection), which introduces or enhances the following CSPs and capabilities:
-
-
-
-OLD OLD OLD
-StageNow 2.9 now supports [MX 7.1](../stagingprofiles/#mx6xselection), which introduces or enhances the following CSPs and capabilities:
-
-
-* [License Manager](../csp/license) – 
- *  Added new feature to perform license management operations such as configure license source, license activation etc.
-
-* [Display Manager ](../csp/display) – 
- *  Added ability to control display blanking.
-
-* [Key Mapping Manager  ](../csp/keymap) – 
- *  Added macro keys, brightness keys and keyboard as options.
-
-* [Wireless Manager ](../csp/wireless) – 
- *  Added ability to select antenna to use for both WiFi and Bluetooth.
-
-* [Power Manager](../csp/power) – 
- *  Added ability to select ports and specify port action.
- * Added ability to select the Heater and specify heater action
- * Added ability to configure auto power options
- * Added ability to disable GMS Welcome Screen on Enterprise Reset
- * Added ability to specify the temperature at which the heater should turn ON or OFF
-
-* [UI Manager](../csp/ui) – 
- *  Added ability to enable/disable Navigation Bar.
- * Added ability to enable/disable Recent App button.
-
-* [Wi-Fi Manager](../csp/wifi) – 
- *  Added ability to enable/disable Wireless Network Management (802.11v).
-
-* Support for KitKat devices has been removed
-
+-----

@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: componentmgr
 product: Stagenow
-productversion: '2.8'
+productversion: '2.9'
 ---
 
 

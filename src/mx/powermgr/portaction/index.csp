@@ -4,6 +4,7 @@ title: Port Action
 type: parm
 order: 10
 mx: "7.1"
+devicetype: A
 parm:
   pivotal: Yes
   name: PortAction

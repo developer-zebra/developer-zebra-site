@@ -4,6 +4,7 @@ title:  Port Selection
 type: parm
 order: 11
 mx: "7.1"
+devicetype: A
 parm:
   pivotal: Yes
   presentif: The Port Action is not "Do Nothing"

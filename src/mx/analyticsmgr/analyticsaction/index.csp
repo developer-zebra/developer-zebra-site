@@ -15,7 +15,7 @@ parm:
     - code: 0
       mx: "4.3"
       apilevel: "19"
-      devicetype: A
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to whether the Analytics Engine collects data on the device; any previously selected setting will be retained. 
     - code: 1

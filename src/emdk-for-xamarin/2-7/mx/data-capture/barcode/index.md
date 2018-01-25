@@ -247,13 +247,13 @@ Select the algorithm used to encode the check digit.
 
 The allowable decode lengths are specified by options Length1 and Length2 as follows:
 
-* Variable length: Decode symbols containing any number of characters.
+* **Variable length -** Decode symbols containing any number of characters.
 	* Set both Length1 and Length2 to 0.
-* Range: Decode a symbol with a specific length range (from a to b, including a and b).
+* **Range -** Decode a symbol with a specific length range (from a to b, including a and b).
 	* Set Length1 to a and set Length2 to b.
-* Two Discrete Lengths: Decode only symbols containing either of two selected lengths.
+* **Two Discrete Lengths -** Decode only symbols containing either of two selected lengths.
 	* Set either Length1 or Length2 to the specific lengths.
-* One Discrete Length: Decode only symbols containing a specific length.
+* **One Discrete Length -** Decode only symbols containing a specific length.
 	* Set both Length1 and Length2 to the specific length.
 
 -----
@@ -262,40 +262,53 @@ The allowable decode lengths are specified by options Length1 and Length2 as fol
 
 Allows the configuration of the parameters that apply to more than one UPC or EAN decoder.
 
-* Security Level - The scanner offers four levels of decode security for UPC/EAN bar codes. Select higher security levels for lower quality bar codes. There is an inverse relationship between security and decode speed, so be sure to choose only that level of security necessary for the application.
-	* Level 0 - This default setting allows the scanner to operate fastest, while providing sufficient security in decoding "in-spec" UPC/EAN bar codes.
-	* Level 1 - As bar code quality levels diminish, certain characters become prone to misdecodes before others (i.e., 1, 2, 7, 8). If the scanner is misdecoding poorly printed bar codes, and the misdecodes are limited to these characters, select this security level.
-	* Level 2 - If the scanner is misdecoding poorly printed bar codes, and the misdecodes are not limited to characters 1, 2, 7, and 8, select this security level.
-	* Level 3 - If the scanner is still misdecoding, select this security level. Be advised, selecting this option is an extreme measure against misdecoding severely out of spec bar codes. Selecting this level of security can significantly impair the decoding ability of the scanner. If this level of security is necessary, try to improve the quality of the bar codes.
-* Supplemental2 - Enables or disables this option.
-* Supplemental5 - Enables or disables this option.
-* Supplemental Mode
-	* No Supplementals - the scanner is presented with a UPC/EAN plus supplemental symbol, the
+* **Security Level -** The scanner offers four levels of decode security for UPC/EAN bar codes. Select higher security levels for lower quality bar codes. There is an inverse relationship between security and decode speed, so be sure to choose only that level of security necessary for the application.
+
+	* **Level 0 -** This default setting allows the scanner to operate fastest, while providing sufficient security in decoding "in-spec" UPC/EAN bar codes.
+	
+	* **Level 1 -** As bar code quality levels diminish, certain characters become prone to misdecodes before others (i.e., 1, 2, 7, 8). If the scanner is misdecoding poorly printed bar codes, and the misdecodes are limited to these characters, select this security level.
+	
+	* **Level 2 -** If the scanner is misdecoding poorly printed bar codes, and the misdecodes are not limited to characters 1, 2, 7, and 8, select this security level.
+	
+	* **Level 3 -** If the scanner is still misdecoding, select this security level. Be advised, selecting this option is an extreme measure against misdecoding severely out of spec bar codes. Selecting this level of security can significantly impair the decoding ability of the scanner. If this level of security is necessary, try to improve the quality of the bar codes.
+
+* **Supplemental2 -** Enables or disables this option.
+
+* **Supplemental5 -** Enables or disables this option.
+
+* **Supplemental Mode**:
+	* **No Supplementals -** the scanner is presented with a UPC/EAN plus supplemental symbol, the
 	scanner decodes UPC/EAN and ignores the supplemental characters.
-	* Supplemental Always - the scanner only decodes UPC/EAN symbols with supplemental characters, and ignores symbols without supplementals.
-	* Supplements Auto - the scanner decodes UPC/EAN symbols with supplemental characters immediately. If the symbol does not have a supplemental, the scanner must decode the bar code the number of times set via UPC/EAN Supplemental Redundancy before transmitting its data to confirm that there is no supplemental.
-	* Supplemental Smart - Enables smart supplementals. In this mode the decoder returns the decoded value of the main block right away if it does not belong to one of the following supplemental types: 378, 379, 977, 978, 979, 414, 419, 434 or 439. If the bar code starts with one of the prefixes it searches the image more aggressively for a supplemental. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
-	* Supplemental 378-379 - Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 378 or 379. Disables reading of supplementals for any other UPC/EAN bar code not starting with 378 or 379. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
-	* Supplemental 978-979 - Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 978 or 979. Disables reading of supplementals for another UPC/EAN bar code not starting with 978 or 979. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main barcode is returned.
-	* Supplemental 414-419-434-439 - Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 414, 419, 434 or 439. Disables reading of supplementals for another UPC/EAN bar code not starting with 414, 419, 434 or 439. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
-	* Supplemental 977 - Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 977. Disables reading of supplementals for another UPC/EAN barcode not starting with 977. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
-* Retry Count - Retry count for auto-discriminating for supplementals. Possible values are 2 to 20 inclusive. Note that this flag is only considered if Supplemental Mode - UPC EAN is set to one of the following values: Supplementals Auto, Supplementals Smart, Supplementals 378-379, Supplementals 978-979, Supplementals 977 or Supplementals 414-419-434-439 (2 to 20).
-* Random Weight Check Digit - Enable random weight check digit verification.
-* Bookland - Enable or disable this option.
-* Coupon - Enables Coupon code decoding. Note that in order to successfully decode Coupon codes, all
+	* **Supplemental Always -** the scanner only decodes UPC/EAN symbols with supplemental characters, and ignores symbols without supplementals.
+	* **Supplements Auto -** the scanner decodes UPC/EAN symbols with supplemental characters immediately. If the symbol does not have a supplemental, the scanner must decode the bar code the number of times set via UPC/EAN Supplemental Redundancy before transmitting its data to confirm that there is no supplemental.
+	* **Supplemental Smart -** Enables smart supplementals. In this mode the decoder returns the decoded value of the main block right away if it does not belong to one of the following supplemental types: 378, 379, 977, 978, 979, 414, 419, 434 or 439. If the bar code starts with one of the prefixes it searches the image more aggressively for a supplemental. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
+	* **Supplemental 378-379 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 378 or 379. Disables reading of supplementals for any other UPC/EAN bar code not starting with 378 or 379. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
+	* **Supplemental 978-979 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 978 or 979. Disables reading of supplementals for another UPC/EAN bar code not starting with 978 or 979. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main barcode is returned.
+	* **Supplemental 414-419-434-439 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 414, 419, 434 or 439. Disables reading of supplementals for another UPC/EAN bar code not starting with 414, 419, 434 or 439. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
+	* **Supplemental 977 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 977. Disables reading of supplementals for another UPC/EAN barcode not starting with 977. Tries to scan the supplemental if it is present. If the supplemental scanning failed, then the main bar code is returned.
+* **Retry Count -** Retry count for auto-discriminating for supplementals. Possible values are 2 to 20 inclusive. Note that this flag is only considered if Supplemental Mode - UPC EAN is set to one of the following values: Supplementals Auto, Supplementals Smart, Supplementals 378-379, Supplementals 978-979, Supplementals 977 or Supplementals 414-419-434-439 (2 to 20).
+
+* **Random Weight Check Digit -** Enable random weight check digit verification.
+
+* **Bookland -** Enable or disable this option.
+
+* **Coupon -** Enables Coupon code decoding. Note that in order to successfully decode Coupon codes, all
 of the correct decoders must be enabled.
-* Coupon Report Mode - Enables one of the coupon report modes
+
+* **Coupon Report Mode -** Enables one of the coupon report modes
 	* Old Coupon Report Mode
 	* New Coupon Report Mode
 	* Both Coupon Report Mode
-* EAN Zero Extend - Enable this parameter to add five leading zeros to decoded EAN-8 symbols to make them compatible in format to EAN-13 symbols. Disable this to transmit EAN-8 symbols as is.
 
-* Bookland Format - if Bookland option is enabled, select on of the formats for Bookland data
+* **EAN Zero Extend -** Enable this parameter to add five leading zeros to decoded EAN-8 symbols to make them compatible in format to EAN-13 symbols. Disable this to transmit EAN-8 symbols as is.
+
+* **Bookland Format -** if Bookland option is enabled, select on of the formats for Bookland data
 	* Format ISBN-10
 	* Format ISBN-13
 
-* Convert DataBar To UPC EAN - If this is set it converts DataBar bar codes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled.
-* UPC Reduced Quiet Zone - Enable decoding of marginless UPC barcodes
+* **Convert DataBar To UPC EAN -** If this is set it converts DataBar bar codes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled.
+
+* **UPC Reduced Quiet Zone -** Enable decoding of marginless UPC barcodes
 
 -----
 
@@ -303,28 +316,29 @@ of the correct decoders must be enabled.
 
 Allows the configuration of parameters specific to the selected bar code reader.
 
-* Beam Timer - Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in increments of 100 ms). A value of 0 sets the reader to stay on indefinitely.
-* Adaptive Scanning - Enable/Disable Adaptive Scanning
-* Beam Width - Set Beam Width
+* **Beam Timer -** Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in increments of 100 ms). A value of 0 sets the reader to stay on indefinitely.
+* **Adaptive Scanning -** Enable/Disable Adaptive Scanning
+
+* **Beam Width -** Set Beam Width
 	* Narrow
 	* Normal
 	* Wide
 
-* Power Mode - Set scanner power mode
+* **Power Mode -** Set scanner power mode
 	* Low Power Mode
 	* Optimized Power Mode
 	* High Power Mode
 	* Always On
 
-* Mobile Phone Display Mode - Defines finer reader by the DS457
+* **Mobile Phone Display Mode -** Defines finer reader by the DS457
 	* Disable Mobile Display Mode
 	* Enable Mobile Display Mode
 
-* Reader Mode - Defines how the SSI scanner triggers
+* **Reader Mode -** Defines how the SSI scanner triggers
 	* Presentation Mode
 	* Triggered Mode
 
-* Linear Security Level - Sets the number of times a bar code is read to confirm an accurate decode.
+* **Linear Security Level -** Sets the number of times a bar code is read to confirm an accurate decode.
 	* Security Redundancy and Length - Two times read redundancy based on redundancy flags and
 	code length.
 	* Security Short or Codabar - Two times read redundancy if short bar code or Codabar.
@@ -332,48 +346,48 @@ Allows the configuration of parameters specific to the selected bar code reader.
 	* Security Long and Short - Two times read redundancy for long bar codes, three times for short bar codes.
 	* Security All Thrice - Three times read redundancy for all bar codes.
 
-* Picklist - Allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern. This feature is useful in applications where multiple bar codes may appear in the field of view during a decode session and only one of them is targeted for decode.
+* **Picklist -** Allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern. This feature is useful in applications where multiple bar codes may appear in the field of view during a decode session and only one of them is targeted for decode.
 	* Disable - Disables Picklist mode. Any bar code within the field of view can be decoded.
 	* Centered - Enables the Picklist mode so that only the bar code in the center of the image is decoded. This is most useful when used in conjunction with the static and dynamic reticle viewfinder modes. Note: This mode is only valid for decoder modules that supports a viewfinder. If one tries to set this for a unsupported decoder then the device would issue an error. (Camera scanner only).
 	* Reticle - Enables the Picklist mode so that only the bar code that is directly under the cross-hair (reticle) is decoded. This is useful when used in conjunction with the static and dynamic reticle viewfinder modes. (Scan Module Only)
 
-* Aim Type - Type Trigger Modes
+* **Aim Type -** Type Trigger Modes
 	* Trigger
 	* Continuous Read
 	* PRESS_AND_SUSTAIN (select devices only)
 
-* Same Symbol Timeout - Suppress decoding same symbol within this time interval in Continuous Trigger Mode. From 0 to 5000, Steps of 500. Eg: 0, 500, 1000, 1500...
+* **Same Symbol Timeout -** Suppress decoding same symbol within this time interval in Continuous Trigger Mode. From 0 to 5000, Steps of 500. Eg: 0, 500, 1000, 1500...
 
-* Different Symbol Timeout - Suppress decoding another symbol within this time interval in Continuous Trigger Mode. From 0 to 5000, Steps of 500. Eg: 0, 500, 1000, 1500...
+* **Different Symbol Timeout -** Suppress decoding another symbol within this time interval in Continuous Trigger Mode. From 0 to 5000, Steps of 500. Eg: 0, 500, 1000, 1500...
 
-* Illumination mode - Enable/Disable illumination depending on ambient light conditions
+* **Illumination mode -** Enable/Disable illumination depending on ambient light conditions
 
-* LCD Mode - Enables or disables LCD mode. LCD mode enhances the ability of the imager to read bar codes from LCD displays such as cellphones (Scan Module Only).
+* **LCD Mode -** Enables or disables LCD mode. LCD mode enhances the ability of the imager to read bar codes from LCD displays such as cellphones (Scan Module Only).
 	* Disable - Disables the LCD mode.
 	* Enable - Enables LCD mode.
 
 ** Note**: When using the LCD mode**, a degradation in performance may be observed and the aiming crosshair may blink until the bar code is decoded.
 
-* Time Delay to Low Power - Time delay for scanner to enter low power mode
+* **Time Delay to Low Power -** Time delay for scanner to enter low power mode
 	* 1 Second
 	* 30 Seconds
 	* 1 Minute
 	* 5 Minutes
 
-* Illumination Brightness Value - Illumination Brightness of the Imager
+* **Illumination Brightness Value -** Illumination Brightness of the Imager
 
-* Inverse 1D Mode - This parameter allows the user to select decoding on inverse 1D bar codes.
+* **Inverse 1D Mode -** This parameter allows the user to select decoding on inverse 1D bar codes.
 	* Disable - Disables decoding of inverse 1D bar codes.
 	* Enable - Enables decoding of only inverse 1D bar codes.
 	* Auto - Allows decoding of both positive and inverse 1D bar codes.
 
-* Poor Quality Decode Effort
+* **Poor Quality Decode Effort -**
 	* Level 0
 	* Level 1
 	* Level 2
 	* Level 3
 
-* Viewfinder Mode - Configures the Viewfinder modes supported for camera scanning.
+* **Viewfinder Mode -** Configures the Viewfinder modes supported for camera scanning.
 	* Viewfinder Enabled - Enables only the viewfinder.
 	* Static Reticle - Enables the viewfinder and a red reticle in the center of the screen which helps selecting the bar code.
 
@@ -383,35 +397,35 @@ Allows the configuration of parameters specific to the selected bar code reader.
 
 Allows the configuration of Code Id and decode feedback options.
 
-* Code ID Type - A Code ID character identifies the code type of a scanned bar code. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
+* **Code ID Type -** A Code ID character identifies the code type of a scanned bar code. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
 	* Code ID Type None - No prefix (default).
 	* Code ID Type Aim - A standards based three character prefix.
 	* Code ID Type Symbol - A Symbol defined single character prefix.
 
 **Note: Not all ringtones are fully supported as decode tones**. Ringtones of longer length may be truncated when used as a decode tone. The recommendation is to test the selected tone for operation before deployment to a customer site.
 
-* Volume Type
+* **Volume Type -**
 	* Ringer
 	* Music and Media
 	* Alarms
 	* Notification
 
-* Decode Audio Feedback - Select an audio tone to sound upon a good decode.
+* **Decode Audio Feedback -** Select an audio tone to sound upon a good decode.
 	* The audio tones stored as Application’s private data (i.e. cache, asset) should not be specified for this field to avoid access violation. Therefore any audio tones meant for this purpose must be stored under shared public directories (Music/ , Ringtones/) or shared “external storage”.
 
-* Decode Haptic Feedback - Enable the MC40 to vibrate upon a good decode.
+* **Decode Haptic Feedback -** Enable the MC40 to vibrate upon a good decode.
 
-* BT Disconnect On Exit - Enable/Disable Bluetooth disconnect on exit.
+* **BT Disconnect On Exit -** Enable/Disable Bluetooth disconnect on exit.
 
-* Connection Idle Time - If a bluetooth scanner associated application is opened, Bluetooth scanner will be automatically disconnected after this Connection Time duration of inactivity. From 60 to 1800, Steps of 5. Eg: 60, 65, 70, 75...
+* **Connection Idle Time -** If a bluetooth scanner associated application is opened, Bluetooth scanner will be automatically disconnected after this Connection Time duration of inactivity. From 60 to 1800, Steps of 5. Eg: 60, 65, 70, 75...
 
-* Decode Feedback LED Timer - Time for which Good Decode LED Notification Runs
+* **Decode Feedback LED Timer -** Time for which Good Decode LED Notification Runs
 
-* Display BT Address Barcode - If this value is set to true, the Bluetooth Pairing Utility Application will be opened when the enable method is called
+* **Display BT Address Barcode -** If this value is set to true, the Bluetooth Pairing Utility Application will be opened when the enable method is called
 
-* Decoding LED Notification - Time for which Good Decode LED Notification Runs
+* **Decoding LED Notification -** Time for which Good Decode LED Notification Runs
 
-* Engine Decode LED - Controls Engines' decode LED behavior
+* **Engine Decode LED -** Controls Engines' decode LED behavior
 	* Disabled
 	* Off on power down
 	* Power down only after LED off

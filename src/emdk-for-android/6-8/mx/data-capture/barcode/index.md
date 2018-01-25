@@ -227,6 +227,8 @@ Select the algorithm used to encode the check digit.
 ## HAN XIN
 * HAN XIN Inverse - HAN XIN Inverse
 
+
+
 ##Matrix 2 of 5
 * Length1 - Use to set decode lengths.
 * Length2 - Use to set decode lengths.
@@ -242,6 +244,8 @@ Select the algorithm used to encode the check digit.
 	* Preamble None - Transmit no preamble (default). Select the appropriate option to match the host system.
 * Convert UPCE1 To UPCA - Enable this to convert UPCE1 decoded data to UPC-A format before transmission. After conversion, the data follows UPC-A format and is affected by UPC-A programming selections. Disable this to transmit UPCE1 decoded data as UPCE1 data, without conversion.
 
+-----
+
 ## Decode Lengths
 The allowable decode lengths are specified by options Length1 and Length2 as follows:
 
@@ -253,6 +257,8 @@ The allowable decode lengths are specified by options Length1 and Length2 as fol
 	* Set either Length1 or Length2 to the specific lengths.
 * One Discrete Length: Decode only symbols containing a specific length.
 	* Set both Length1 and Length2 to the specific length.
+
+-----
 
 ## UPC EAN Params
 Allows the configuration of the parameters that apply to more than one UPC or EAN decoder.
@@ -292,58 +298,78 @@ of the correct decoders must be enabled.
 * Convert DataBar To UPC EAN - If this is set it converts DataBar bar codes to UPC/EAN format. For this setting to work UPC/EAN symbologies must be enabled.
 * UPC Reduced Quiet Zone - Enable decoding of marginless UPC barcodes
 
+-----
+
 ## Reader Params
+
 Allows the configuration of parameters specific to the selected bar code reader.
 
-* Beam Timer - Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in increments of 100 ms). A value of 0 sets the reader to stay on indefinitely.
-* Adaptive Scanning - Enable/Disable Adaptive Scanning
-* Beam Width - Set Beam Width
+* **Beam Timer -** Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in increments of 100 ms). A value of 0 sets the reader to stay on indefinitely.
+
+* **Adaptive Scanning -** Enable/Disable Adaptive Scanning
+
+* **Beam Width -** Set Beam Width
 	* Narrow
 	* Normal
 	* Wide
-* Power Mode - Set scanner power mode
+
+* **Power Mode -** Set scanner power mode
 	* Low Power Mode
 	* Optimized Power Mode
 	* High Power Mode
 	* Always On
-* Mobile Phone Display Mode - Defines finer reader by the DS457
+
+* **Mobile Phone Display Mode -** Defines finer reader by the DS457
 	* Disable Mobile Display Mode
 	* Enable Mobile Display Mode
-* Reader Mode - Defines how the SSI scanner triggers
+
+* **Reader Mode -** Defines how the SSI scanner triggers
 	* Presentation Mode
 	* Triggered Mode
-* Linear Security Level - Sets the number of times a bar code is read to confirm an accurate decode.
+
+* **Linear Security Level -** Sets the number of times a bar code is read to confirm an accurate decode.
 	* Security Redundancy and Length - Two times read redundancy based on redundancy flags and
 	code length.
 	* Security Short or Codabar - Two times read redundancy if short bar code or Codabar.
 	* Security All Twice - Two times read redundancy for all bar codes.
 	* Security Long and Short - Two times read redundancy for long bar codes, three times for short bar codes.
 	* Security All Thrice - Three times read redundancy for all bar codes.
-* Picklist - Allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern. This feature is useful in applications where multiple bar codes may appear in the field of view during a decode session and only one of them is targeted for decode.
+
+* **Picklist -** Allows the imager to decode only the bar code that is directly under the cross-hair/reticle (+) part of the pattern. This feature is useful in applications where multiple bar codes may appear in the field of view during a decode session and only one of them is targeted for decode.
 	* Disable - Disables Picklist mode. Any bar code within the field of view can be decoded.
 	* Centered - Enables the Picklist mode so that only the bar code in the center of the image is decoded. This is most useful when used in conjunction with the static and dynamic reticle viewfinder modes. Note: This mode is only valid for decoder modules that supports a viewfinder. If one tries to set this for a unsupported decoder then the device would issue an error. (Camera scanner only).
 	* Reticle - Enables the Picklist mode so that only the bar code that is directly under the cross-hair (reticle) is decoded. This is useful when used in conjunction with the static and dynamic reticle viewfinder modes. (Scan Module Only)
-* Aim Type - Type Trigger Modes
+
+* **Aim Type -** Type Trigger Modes
 	* Trigger
 	* Continuous Read
-* Same Symbol Timeout - Suppress decoding same symbol within this time interval in Continuous Trigger Mode. From 0 to 5000, Steps of 500. Eg: 0, 500, 1000, 1500...
-* Different Symbol Timeout - Suppress decoding another symbol within this time interval in Continuous Trigger Mode. From 0 to 5000, Steps of 500. Eg: 0, 500, 1000, 1500...
-* Illumination mode - Enable/Disable illumination depending on ambient light conditions
-* LCD Mode - Enables or disables LCD mode. LCD mode enhances the ability of the imager to read bar codes from LCD displays such as cellphones (Scan Module Only).
+	* PRESS_AND_SUSTAIN (select devices only)
+
+* **Same Symbol Timeout -** Suppress decoding same symbol within this time interval in Continuous Trigger Mode. From 0 to 5000, Steps of 500. Eg: 0, 500, 1000, 1500...
+
+* **Different Symbol Timeout -** Suppress decoding another symbol within this time interval in Continuous Trigger Mode. From 0 to 5000, Steps of 500. Eg: 0, 500, 1000, 1500...
+
+* **Illumination mode -** Enable/Disable illumination depending on ambient light conditions
+
+* **LCD Mode -** Enables or disables LCD mode. LCD mode enhances the ability of the imager to read bar codes from LCD displays such as cellphones (Scan Module Only).
 	* Disable - Disables the LCD mode.
 	* Enable - Enables LCD mode.
 
-	NOTE When using the LCD mode, a degradation in performance may be observed and the aiming crosshair may blink until the bar code is decoded.
+**Note: When using the LCD mode**, a degradation in performance may be observed and the aiming crosshair may blink until the bar code is decoded.
+
 * Time Delay to Low Power - Time delay for scanner to enter low power mode
 	* 1 Second
 	* 30 Seconds
 	* 1 Minute
 	* 5 Minutes
+
 * Illumination Brightness Value - Illumination Brightness of the Imager
+
 * Inverse 1D Mode - This parameter allows the user to select decoding on inverse 1D bar codes.
 	* Disable - Disables decoding of inverse 1D bar codes.
 	* Enable - Enables decoding of only inverse 1D bar codes.
 	* Auto - Allows decoding of both positive and inverse 1D bar codes.
+
 * Poor Quality Decode Effort
 	* Level 0
 	* Level 1
@@ -354,7 +380,10 @@ Allows the configuration of parameters specific to the selected bar code reader.
 	* Viewfinder Enabled - Enables only the viewfinder.
 	* Static Reticle - Enables the viewfinder and a red reticle in the center of the screen which helps selecting the bar code.
 
+-----
+
 ## Scan Params
+
 Allows the configuration of Code Id and decode feedback options.
 
 * Code ID Type - A Code ID character identifies the code type of a scanned bar code. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
@@ -362,26 +391,38 @@ Allows the configuration of Code Id and decode feedback options.
 	* Code ID Type Aim - A standards based three character prefix.
 	* Code ID Type Symbol - A Symbol defined single character prefix.
 
-	NOTE Not all ringtones are fully supported as decode tones. Ringtones of longer length may be truncated when used as a decode tone. The recommendation is to test the selected tone for operation before deployment to a customer site.
+**Not: Not all ringtones are fully supported as decode tones**. Ringtones of longer length may be truncated when used as a decode tone. The recommendation is to test the selected tone for operation before deployment to a customer site.
+
 * Volume Type
 	* Ringer
 	* Music and Media
 	* Alarms
 	* Notification
+
 * Decode Audio Feedback - Select an audio tone to sound upon a good decode.
 	* The audio tones stored as Application’s private data (i.e. cache, asset) should not be specified for this field to avoid access violation. Therefore any audio tones meant for this purpose must be stored under shared public directories (Music/ , Ringtones/) or shared “external storage”.
+
 * Decode Haptic Feedback - Enable the MC40 to vibrate upon a good decode.
+
 * BT Disconnect On Exit - Enable/Disable Bluetooth disconnect on exit.
+
 * Connection Idle Time - If a bluetooth scanner associated application is opened, Bluetooth scanner will be automatically disconnected after this Connection Time duration of inactivity. From 60 to 1800, Steps of 5. Eg: 60, 65, 70, 75...
+
 * Decode Feedback LED Timer - Time for which Good Decode LED Notification Runs
+
 * Display BT Address Barcode - If this value is set to true, the Bluetooth Pairing Utility Application will be opened when the enable method is called
+
 * Decoding LED Notification - Time for which Good Decode LED Notification Runs
+
 * Engine Decode LED - Controls Engines' decode LED behavior
 	* Disabled
 	* Off on power down
 	* Power down only after LED off
 
+-----
+
 ## Output Data
+
 For an application to receive barcode data, one or more Output Features must be specified. See individual reference documentation for more information:
 
 * [Intent](../intent)

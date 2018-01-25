@@ -28,6 +28,8 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 * [Settings Manager](../../mx/settingsmgr) new feature:
  * Enable/Disable application notification control on devices running Android Nougat
 
+-----
+
 ### Devices Supported
 
 EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. 

@@ -12,11 +12,11 @@ parm:
   type: string
 ---
 
-Used to specify the full path and file name of the file containing terms to be deleted from the Personal Dictionary. 
+Used to specify the full path and name of the file containing words or multi-word terms to delete from the Personal Dictionary. 
 
 **Parm value input rules**:
 
 * Accepts a string from 1-64 characters
-* Must contain full path and file name (i.e. `/storage/sdcard1/DeleteTerms.txt`). 
+* Must contain full path and file name (i.e. `/storage/sdcard1/DeleteTerms.txt`)
 * Must be a plain text file
-* Each term must be on a separate line
+* Each word (or multi-word term) must be on a separate line

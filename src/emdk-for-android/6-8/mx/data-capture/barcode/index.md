@@ -247,7 +247,7 @@ Select the algorithm used to encode the check digit.
 	* No Check Digit - Do not verify check digit.
 	* 1 Check Digit - barcode contains one check digit.
 	* 2 Check Digits - barcode contains two check digits.
-* Report Check DIgit - Transmit Code 11 data with or without the check digit.
+* Report Check Digit - Transmit Code 11 data with or without the check digit.
 
 ## HAN XIN
 * HAN XIN Inverse - HAN XIN Inverse
@@ -294,13 +294,13 @@ Allows the configuration of the parameters that apply to more than one UPC or EA
 
 * **Security Level -** The scanner offers four levels of decode security for UPC/EAN barcodes. Select higher security levels for lower quality barcodes. There is an inverse relationship between security and decode speed, so be sure to choose only that level of security necessary for the application.
 	* **Level 0 -** This default setting allows the scanner to operate fastest, while providing sufficient security in decoding "in-spec" UPC/EAN barcodes.
-	* **Level 1 -** As barcode quality levels diminish, certain characters become prone to misdecodes before others (i.e., 1, 2, 7, 8). If the scanner is misdecoding poorly printed barcodes, and the misdecodes are limited to these characters, select this security level.
+	* **Level 1 -** As barcode quality levels diminish, certain characters become prone to misdecodes before others (for example 1, 2, 7 and 8). If the scanner is misdecoding poorly printed barcodes, and the misdecodes are limited to these characters, select this security level.
 	* **Level 2 -** If the scanner is misdecoding poorly printed barcodes, and the misdecodes are not limited to characters 1, 2, 7, and 8, select this security level.
-	* **Level 3 -** If the scanner is still misdecoding, select this security level. Be advised, selecting this option is an extreme measure against misdecoding severely out of spec barcodes. Selecting this level of security can significantly impair the decoding ability of the scanner. If this level of security is necessary, try to improve the quality of the barcodes.
+	* **Level 3 -** If the scanner is misdecoding after having tried Level 2, select this security level. Be advised, selecting this option is an extreme measure against misdecoding severely out-of-spec barcodes. Selecting this level of security can significantly impair the decoding ability of the scanner. If this level of security is necessary, try improving barcode quality.
 
-* **Supplemental2 -** Enables or disables this option.
+* **Supplemental2 -** Enables or disables the length 2 supplementals.
 
-* **Supplemental5 -** Enables or disables this option.
+* **Supplemental5 -** Enables or disables the length 2 supplementals.
 
 * **Supplemental Mode -**
 	* **No Supplementals -** the scanner is presented with a UPC/EAN plus supplemental symbol, the
@@ -328,7 +328,7 @@ Allows the configuration of the parameters that apply to more than one UPC or EA
 
 * **EAN Zero Extend -** Enable this parameter to add five leading zeros to decoded EAN-8 symbols to make them compatible in format to EAN-13 symbols. Disable this to transmit EAN-8 symbols as is.
 
-* **Bookland Format -** if Bookland option is enabled, select on of the formats for Bookland data
+* **Bookland Format -** if Bookland option is enabled, select one of the formats for Bookland data
 	* Format ISBN-10
 	* Format ISBN-13
 
@@ -340,6 +340,8 @@ Allows the configuration of the parameters that apply to more than one UPC or EA
 ## Reader Params
 
 Allows the configuration of parameters specific to the selected barcode reader.
+
+* **Aim Mode -** Switch on/off scanner aiming while scanning. 
 
 * **Beam Timer -** Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in increments of 100 ms). A value of 0 sets the reader to stay on indefinitely.
 
@@ -374,25 +376,34 @@ Allows the configuration of parameters specific to the selected barcode reader.
 
 * **Picklist -** Allows the imager to decode only the barcode that is directly under the cross-hair/reticle (+) part of the pattern. This feature is useful in applications where multiple barcodes may appear in the field of view during a decode session and only one of them is targeted for decode.
 	* Disable - Disables Picklist mode. Any barcode within the field of view can be decoded.
-	* Centered - Enables the Picklist mode so that only the barcode in the center of the image is decoded. This is most useful when used in conjunction with the static and dynamic reticle viewfinder modes. Note: This mode is only valid for decoder modules that supports a viewfinder. If one tries to set this for a unsupported decoder then the device would issue an error. (Camera scanner only).
-	* Reticle - Enables the Picklist mode so that only the barcode that is directly under the cross-hair (reticle) is decoded. This is useful when used in conjunction with the static and dynamic reticle viewfinder modes. (Scan Module Only)
+	* Enable (Centered) - Enables the Picklist mode so that only the barcode in the center of the image is decoded. This is most useful when used in conjunction with the static and dynamic reticle viewfinder modes. Note: This mode is only valid for decoder modules that supports a viewfinder. Attempting to set this for an unsupported decoder will result in an error (camera scanner only).
+	* Enable (Reticle) - Enables the Picklist mode so that only the barcode that is directly under the cross-hair (reticle) is decoded. This is useful when used in conjunction with the static and dynamic reticle viewfinder modes (scan module only)
 
 * **Aim Type -** Type Trigger Modes
-	* Trigger
-	* Continuous Read
-	* PRESS_AND_SUSTAIN (select devices only)
+	* Trigger - For each trigger press, a single barcode can be scanned.
+	* Timed Hold – Once trigger is pressed, an aiming session is started for a time specified by Aim Timer. When this time expires, a decode session is started and scan beam will be visible. The decode session will remain active until the Beam Timer expires, the trigger is released or a barcode is decoded.
+	* Timed Release - Once the trigger is pressed, an aiming session is started and will continue until the trigger is released. If the Aim Timer is expired when the trigger is released, a decode session will be started with scan beam visible for a remaining time equal to the Beam Timer or until a barcode is decoded.
+	* Press and Release - The scan beam starts when the trigger is pressed and released. The decode session will remain active until the Beam Timer expires or a barcode is decoded.
+	* Continuous Read - A press and hold of the scan trigger will continuously scan barcodes. Not supported with the Zebra RS507 Bluetooth Ring Scanner.
+	* Press and Sustain - Continue the decode session until the Beam Timer is expired, barcode is decoded or read is canceled. This avoids unexpected cancellations of a read by subsequently pressing the trigger button of the device. If the trigger button of the device is pressed while the beam is ON, it has no effect. 
 
-* **Same Symbol Timeout -** Suppress decoding same symbol within this time interval in Continuous Trigger Mode. From 0 to 5000, Steps of 500. Eg: 0, 500, 1000, 1500...
+* **Aim Timer -** Sets the duration (in ms) for timed aim modes. Supports values from 0-60000, in steps of 100 (i.e. 0, 100, 200, 300...). 
 
-* **Different Symbol Timeout -** Suppress decoding another symbol within this time interval in Continuous Trigger Mode. From 0 to 5000, Steps of 500. Eg: 0, 500, 1000, 1500...
+* **Same Symbol Timeout -** Suppress decoding the same symbol within the specified time interval (in ms) while in Continuous Trigger Mode. Supports values from 0-5000, in steps of 500 (i.e. 0, 500, 1000, 1500...). 
 
-* **Illumination mode -** Enable/Disable illumination depending on ambient light conditions
+* **Different Symbol Timeout -** Suppress decoding an additional symbol within the specified time interval (in ms) while in Continuous Trigger Mode. Supports values from 0-5000 in steps of 500 (i.e. 0, 500, 1000, 1500...).
 
-* **LCD Mode -** Enables or disables LCD mode. LCD mode enhances the ability of the imager to read barcodes from LCD displays such as cellphones (Scan Module Only).
-	* Disable - Disables the LCD mode.
-	* Enable - Enables LCD mode.
+* **Illumination mode -** Enable/disable illumination depending on ambient light conditions.
 
-**Note: When using the LCD mode**, a degradation in performance may be observed and the aiming crosshair may blink until the barcode is decoded.
+* **Keep pairing info after reboot -** Enable/disable automatic reconnection after scanner reboot. Applies to DS3678 Bluetooth scanner only.
+
+* **LCD Mode -** Enables/disables LCD mode. LCD mode enhances the ability of the imager to read barcodes from LCD displays such as cellphones (scan module only).
+	* Disable - Disables the LCD mode
+	* Enable - Enables LCD mode
+
+**Note: When using the LCD mode**, a degradation in performance might be observed and the aiming crosshair might blink until the barcode is decoded.
+
+* HW Engine Low Power Timeout - Timeout value (in ms) for the scanner engine to enter Low Power mode. Supports values from 0-1000 in steps of 50 (i.e. 0, 50, 100, 150...). 
 
 * Time Delay to Low Power - Time delay for scanner to enter low power mode
 	* 1 Second
@@ -407,15 +418,57 @@ Allows the configuration of parameters specific to the selected barcode reader.
 	* Enable - Enables decoding of only inverse 1D barcodes.
 	* Auto - Allows decoding of both positive and inverse 1D barcodes.
 
+<!-- removed per eng. 1/26/18 per eng TUT-22329
 * Poor Quality Decode Effort
 	* Level 0
 	* Level 1
 	* Level 2
 	* Level 3
+ -->
+
+* Viewfinder size - Viewfinder window size in camera scanner as a percentage of device display size from 0-100.
+
+* Viewfinder X offset - Viewfinder window position in X axis as a percentage of device screen width from 0-100.
+ 
+ * Viewfinder Y offset - Viewfinder window position in Y axis as a percentage of device screen height from 0-100.
+
+* 1D Quiet Zone Level - Sets the effort at which the decoder will attempt to decode "marginless" barcodes:
+	* Level 0 - Decoder performs margin decoding as usual
+	* Level 1 - Decoder performs more aggressively
+	* Level 2 - Decoder requires only one side end of barcode
+	* Level 3 - Decoder decodes anything
+
+* Poor Quality Decode Effort - Permits selection of enhancement modes for decoding barcodes of poor or degraded quality. Available options:
+	* Level 0 - Decoding performance on regular 1D and 2D barcodes is not affected
+	* Level 1 - Scanner performance on regular 2-D barcodes is impacted; decoding performance on Tesco Thailand barcode and Suppository barcode is improved
+	* Level 2 - same as Level 1
+	* Level 3 - same as Level 1
+
+Note: Performance is the same from Level 1 to Level 3.
+
+* Character Set Selection - Allows the user to convert the barcode data if different from default encoding type. 
+	* UTF-8 
+	* ISO-8859-1
+	* Shift_JIS
 
 * **Viewfinder Mode -** Configures the Viewfinder modes supported for camera scanning.
 	* Viewfinder Enabled - Enables only the viewfinder.
-	* Static Reticle - Enables the viewfinder and a red reticle in the center of the screen which helps selecting the barcode.
+	* Static Reticle - Enables the viewfinder and a red reticle in the center of the screen to aid in barcode selection.
+
+* Scanning Mode - Sets the desired scanning mode from the following options:
+	* Single – Scans only one barcode at a time.
+	* UDI – Attempts to decode UDI labels with multiple barcodes and optionally parses data according to the UDI standard.
+	* Multi-barcode – Scan multiple barcodes simultaneously.
+
+**Note**: The Unique Device Identification (UDI) system was established in 2007 by the U.S. Food and Drug Administration as a means to track medical devices. 
+
+### Decode Behavior Notes
+
+**Picklist Behavior -** When a picklist reader parameter is set to a value other than “Disabled” during the multi-barcode scanning mode, the user is expected to move the crosshair to each barcode to be scanned. If the picklist parameter is set to “Disabled,” the device will scan the set number of barcodes if appear in the field of view.
+
+**Decoding with duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same data and label type), only one barcode from that label will be decoded; the remainder are ignored as duplicates.
+
+**Decoding behavior with number of barcodes -** Barcodes can be of multiple label types. If the required number of barcodes is not in view of the scanner, it will not decode any data. If it contains more number of barcodes than the set value for barcode count, it will decode any barcode up to the count configured. Assume the parameter is set to 2 and 8 barcodes are in the field of view, it will return data for any 2 barcodes. Returned data will be in random order and there is no guarantee that the order is same as they are appearing in the label.
 
 -----
 
@@ -428,33 +481,51 @@ Allows the configuration of Code Id and decode feedback options.
 	* Code ID Type Aim - A standards based three character prefix.
 	* Code ID Type Symbol - A Symbol defined single character prefix.
 
-**Not: Not all ringtones are fully supported as decode tones**. Ringtones of longer length may be truncated when used as a decode tone. The recommendation is to test the selected tone for operation before deployment to a customer site.
+**Note: Not all ringtones are fully supported as decode tones**. Ringtones of longer length may be truncated when used as a decode tone. Zebra recommends testing the selected tone(s) for desired operation before deployment.
 
-* **Volume Type -**
+* **Beep Volume Channel -**
 	* Ringer
 	* Music and Media
 	* Alarms
 	* Notification
 
 * **Decode Audio Feedback -** Select an audio tone to sound upon a good decode.
-	* The audio tones stored as Application’s private data (i.e. cache, asset) should not be specified for this field to avoid access violation. Therefore any audio tones meant for this purpose must be stored under shared public directories (Music/ , Ringtones/) or shared “external storage”.
+	* The audio tones stored as Application’s private data (i.e. cache, asset) should not be specified for this field to avoid access violation. Therefore any audio tones meant for this purpose must be stored under shared public directories (i.e. /Music, /Ringtones, etc.) or in shared external storage.
 
 * **Decode Haptic Feedback -** Enable the MC40 to vibrate upon a good decode.
 
 * **BT Disconnect On Exit -** Enable/Disable Bluetooth disconnect on exit.
 
-* **Connection Idle Time -** If a Bluetooth scanner associated application is opened, Bluetooth scanner will be automatically disconnected after this Connection Time duration of inactivity. From 60 to 1800, Steps of 5. Eg: 60, 65, 70, 75...
+* **Connection Idle Time -** If a Bluetooth-scanner associated application is opened, the Bluetooth scanner will be automatically disconnected after this Connection Time duration of inactivity. From 60 to 1800, Steps of 5. Eg: 60, 65, 70, 75...
 
-* **Decode Feedback LED Timer -** Time for which Good Decode LED Notification Runs
+* **Establish Connection Time -** Time (from 30-60 seconds) that the `enable` method will be blocked before returning if a Bluetooth scanner connection is not established.
 
-* **Display BT Address Barcode -** If this value is set to true, the Bluetooth Pairing Utility Application will be opened when the enable method is called
+* **Display BT Address Barcode -** If this value is set to true, the Bluetooth Pairing Utility Application will be opened when the enable method is called.
 
-* **Decoding LED Notification -** Time for which Good Decode LED Notification Runs
+* **Decode Feedback LED Timer -** Length of time to illuminate the LED to indicate a successful decode. 
+
+* **Decoding LED Notification -** Length of time to illuminate the LED to indicate a successful decode. 
 
 * **Engine Decode LED -** Controls Engines' decode LED behavior
 	* Disabled
 	* Off on power down
 	* Power down only after LED off
+
+-----
+
+## UDI Params
+
+* **Enable UDI-GS1 -** Enable/Disable GS1 format decoding.
+
+* **Enable UDI-HIBCC -** Enable/Disable HIBCC format decoding.
+
+* **Enable UDI-ICCBBA -** Enable/Disable ICCBBA format decoding.
+
+-----
+
+## Multi-barcode Params
+
+* **Barcode count -** Number of barcodes (from 2-10) to decode.
 
 -----
 
@@ -465,16 +536,6 @@ For an application to receive barcode data, one or more Output Features must be 
 * [Intent](../intent)
 * [Keystroke](../keystroke)
 * [IP](../IP)
-
-
-
-
-
-
-
-
-
-
 
 
 

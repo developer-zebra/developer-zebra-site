@@ -464,9 +464,9 @@ Note: Performance is the same from Level 1 to Level 3.
 
 ### Multi-barcode Notes
 
-**Picklist Behavior -** In multi-barcode scanning mode, when a picklist reader parameter is set to a value other than “Disabled," the user is expected to move the crosshair to the specified number of barcodes to be scanned. Set this value (from 1-10) using the `BarcodeCount` parameter. **Data is returned only after the specified number of barcodes is read**. 
+**Picklist Behavior -** In multi-barcode scanning mode, when a picklist reader parameter is set to a value other than “Disabled," the user is expected to move the crosshair to the specified number of barcodes to be scanned. Set this value (from 2-10) using the `BarcodeCount` parameter. **Data is returned only after the specified number of barcodes is read**. 
 
-**Decoding with duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same data and label type), only one barcode from that label will be decoded; the remainder are ignored as duplicates. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded and one will be ignored as a duplicate.
+**Decoding with duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same data and label type), only one barcode from the duplicates will be decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded and one will be ignored as a duplicate.
 
 **Decoding behavior with number of barcodes -** Barcodes can be of multiple label types. If the required number of barcodes (from 1-10, as set using the `BarcodeCount` parameter) is not in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the value set by `BarcodeCount`, the scanner will randomly decode any barcode(s) until the count is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will return data for the first two barcodes it sees, and return the data in random order.
 

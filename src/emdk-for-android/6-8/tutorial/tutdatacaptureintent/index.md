@@ -59,7 +59,7 @@ The following is a list of the data item names that the bundle could contain.
 * String LABEL_TYPE_TAG = "com.motorolasolutions.emdk.datawedge.label_type";
 * String contains the label type of the bar code.
 * String DECODE_DATA_TAG = "com.motorolasolutions.emdk.datawedge.decode_data";
-    * Decode data returned as a list of byte arrays. In most cases there will be one byte array per decode. For bar-code symbologies that support concatenation e.g. Codabar, Code128, MicroPDF, etc., the decoded data is stored in multiple byte arrays (one byte array per bar code). Clients can get data in each byte array by passing an index.
+    * Decode data returned as a list of byte arrays. In most cases there will be one byte array per decode. For bar-code symbologies that support concatenation (i.e. Codabar, Code128, MicroPDF, etc.), the decoded data is stored in multiple byte arrays (one byte array per bar code). Clients can get data in each byte array by passing an index.
 
 ### MSR Intent Names
 Let's list the MSR intent names (in case we want to use these in the future).

@@ -26,10 +26,10 @@ AOSP is the method that Google uses to release and distribute the source code fo
 MX is the umbrella term used to refer collectively to the entire experience offered by the Zebra Android devices. This means that MX represents all the value that a BSP offers over and above that provided by AOSP, including:
 
 * Changes and extensions to the Core Operating System (OSX)
-* Value-Add Features (e.g. Multi-User, Whitelisting)
+* Value-Add Features (i.e. Multi-user, Whitelisting, etc.)
 * The MX Management Framework (MXMF)
 * Configuration Service Providers (CSPs)
-* Changes and extensions to standard applications (e.g. Settings UI, Browser, Email Client, etc.)
+* Changes and extensions to standard applications (i.e. Settings UI, browser, email client, etc.)
 
 >**Note:** All of the above components may or may not be present on a device. Specifically, MXMF and the CSPs may be absent. Therefore, these components would need to be installed on the device before they can be used.
 
@@ -43,7 +43,7 @@ MXMF is a device subsystem that provides an interface to applications that wish 
 
 ### Configuration Service Provider (CSP)
 
-A CSP is a device code module that implements the ability to set and query the configuration of a subsystem on a device (e.g. Clock, Wi-Fi, etc.). The capabilities that are supported and exposed by a CSP are defined by a corresponding DSD. 
+A CSP is a device code module that implements the ability to set and query the configuration of a subsystem on a device (i.e. clock, Wi-Fi, etc.). The capabilities that are supported and exposed by a CSP are defined by a corresponding DSD. 
 
 A CSP is a plug-in to the MXMF which can ship as part of the MXMF, can be included in a BSP along with the MXMF, or can be downloaded to a device as needed. Before it can be used on a device, a CSP must be registered with the MXMF on that device and all calls to a CSP must go through the MXMF. The MXMF and CSPs communicate through XMLs that conform to the **XML.DTD**, as described in the document **MX MF XML DTD**.
 

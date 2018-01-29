@@ -59,7 +59,7 @@ The following software must be installed prior to using the EMDK for Android.
 * Supports compiling applications to API 26 with new "EMDK APIs, Android 26, rev xx (API 26)" add-on
 
 * **Enhanced Barcode Manager API**:
- * Supports MultiBarcode decoding
+ * Supports Multi-barcode decoding
  * New `MULTI_BARCODE` value in `enum` ScanMode enables simultaneous decoding of multiple barcodes
  * New `MultiBarcodeParams` class in `ScannerConfig` adds `barcodeCount` parameter to set the barcode count to be scanned
 
@@ -72,7 +72,7 @@ The following software must be installed prior to using the EMDK for Android.
  * Supports Serial Input plug-in
  * Support Zebra DS-3608 scanner
 
-* Support for MultiBarcode decoding:
+* Support for Multi-barcode decoding:
  * New `Multi Barcode` Scanning Mode option in Reader parameters enables simultaneous decoding of multiple barcodes
  * New `Barcode count` field under Multi-barcode parameters allows a barcode count to be set
  * Supports sending ENTER command as a string

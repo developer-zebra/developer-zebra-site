@@ -56,7 +56,7 @@ The SoftScanTrigger API command can be used to start, stop or toggle the soft sc
 #### Return Values
 
 * None.
-* Error and debug messages will be logged to the Android logging system which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
+* Error and debug messages will be logged to the Android logging system, which can then be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages. For example:
 * `$ adb logcat -s DWAPI`
 * Error messages will be logged for invalid actions and parameters
 
@@ -112,7 +112,7 @@ The ScannerInputPlugin API command can be used to enable/disable the scanner plu
 #### Return Values
 
 * None.
-* Error and debug messages will be logged to the Android logging system which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
+* Error and debug messages will be logged to the Android logging system, can then be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages. For example:
 	* `$ adb logcat -s DWAPI`
 * Error messages will be logged for invalid actions and parameters
 
@@ -155,7 +155,7 @@ The enumerateScanners API command can be used to get a list of scanners availabl
 
 #### Return Values
 * The enumerated list of scanners will be returned via a broadcast intent. The broadcast intent action is "com.motorolasolutions.emdk.datawedge.api.ACTION_ENUMERATEDSCANNERLIST" and the list of scanners is returned as a string array (see the example below).
-* Error and debug messages will be logged to the Android logging system which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
+* Error and debug messages will be logged to the Android logging system, can then be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages. For example:
 	* $ adb logcat -s DWAPI
 * Error messages will be logged for invalid actions and parameters
 
@@ -222,9 +222,9 @@ When control is returned to the launcher application, resetDefaultProfile can be
 #### Return Values
 
 * None.
-* Error and debug messages will be logged to the Android logging system which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
+* Error and debug messages will be logged to the Android logging system, can then be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages. For example:
 	* `$ adb logcat -s DWAPI`
-* Error messages will be logged for invalid actions, parameters and failures (e.g. profile not found or associated to an application).
+* Error messages will be logged for invalid actions, parameters and failures (for example "profile not found or associated to an application.").
 
 #### Example
 
@@ -272,9 +272,9 @@ The resetDefaultProfile API function can be used to reset the default profile ba
 #### Return Values
 
 * None.
-* Error and debug messages will be logged to the Android logging system which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
+* Error and debug messages will be logged to the Android logging system, can then be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages. For example:
 	* `$ adb logcat -s DWAPI`
-* Error messages will be logged for invalid actions, parameters and failures (e.g. profile not found or associated to an application).
+* Error messages will be logged for invalid actions, parameters and failures (for example "profile not found or associated to an application.").
 
 #### Example
 
@@ -337,9 +337,9 @@ When ActivityA (or ActivityB) comes back to the foreground it will use switchToP
 #### Return Values
 
 * None.
-* Error and debug messages will be logged to the Android logging system which then can be viewed and filtered by the logcat command. You can use logcat from an ADB shell to view the log messages, e.g.
+* Error and debug messages will be logged to the Android logging system, can then be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages. For example:
 	* `$ adb logcat -s DWAPI`
-* Error messages will be logged for invalid actions, parameters and failures (e.g. profile not found or associated to an application).
+* Error messages will be logged for invalid actions, parameters and failures (for example "profile not found or associated to an application.").
 
 #### Example
 

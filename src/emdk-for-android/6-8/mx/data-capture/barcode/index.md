@@ -393,9 +393,9 @@ Allows the configuration of parameters specific to the selected barcode reader.
 
 * **Different Symbol Timeout -** Suppress decoding an additional symbol within the specified time interval (in ms) while in Continuous Trigger Mode. Supports values from 0-5000 in steps of 500 (i.e. 0, 500, 1000, 1500...).
 
-* **Illumination mode -** Enable/disable illumination depending on ambient light conditions.
+* **Illumination mode -** Enable/Disable illumination depending on ambient light conditions.
 
-* **Keep pairing info after reboot -** Enable/disable automatic reconnection after scanner reboot. Applies to DS3678 Bluetooth scanner only.
+* **Keep pairing info after reboot -** Enable/Disable automatic reconnection after scanner reboot. Applies to DS3678 Bluetooth scanner only.
 
 * **LCD Mode -** Enables/disables LCD mode. LCD mode enhances the ability of the imager to read barcodes from LCD displays such as cellphones (scan module only).
 	* Disable - Disables the LCD mode

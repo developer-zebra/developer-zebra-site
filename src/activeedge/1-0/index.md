@@ -7,7 +7,7 @@ menu:
   items:
     - title: About
       url: /activeedge/1-0/guide/about
-    - title: Admin Settings
+    - title: Setup
       url: /activeedge/1-0/guide/setup
     - title: Using ActiveEdge
       url: /activeedge/1-0/guide/usage

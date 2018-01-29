@@ -63,6 +63,17 @@ When the ActiveEdge Zone is configured to open a drawer, a drawer will slide out
 
 
 -----
+### Launching an Application
+
+When the Active Edge Zone is configured to launch an application, the following will happen:
+
+* The application icon of the associated application will be shown on tap-down and the application will be opened.
+* The icon will be removed on tap-up when the Active Edge Zone is released. This is similar to how the Scanning option works: The barcode icon is shown for as long as the Active Edge Zone is pressed.
+
+> Pressing the Active Edge Zone for a second time while the associated application is already in the foreground shall have no effect
+
+
+-----
 
 ### Launching Intents
 
@@ -73,3 +84,9 @@ When the ActiveEdge Zone is configured to launch an intent, the following will h
 
 > Each press of the Active Edge Zone will cause the Intent to be sent.
 
+-----
+
+## See Also
+
+* [About ActiveEdge](../about)
+* [Administrative Guide](../setup)

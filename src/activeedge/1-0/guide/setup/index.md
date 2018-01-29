@@ -35,147 +35,159 @@ up. the Service is always running and always available.
 
 > Select the Settings menu : About to open the About ActiveEdge window, which displays the version number.
 
+-----
 
+### ActiveEdge Configuration By XML
+When configuring multiple devices, using an XML based approach may be preferred. In this scenario, an admin would
 
-#### Summary
+1. Create XML with the ActiveEdge configuration settings
+2. Deploy the XML file to a device using MDM methods
+3. Trigger an intent to the ActiveEdge Service
 
-**After downloading software from the Zebra licensing server**:
-
-1. Run `setup.exe` on Windows PC
-2. Install `CartScan.apk` on Zebra mobile device
-3. Enable Bluetooth and pair PC with mobile device
 
 -----
 
-### 1. Install on PC
+#### 1) Creating the XML
+Use a text or XML editor to create a file using the options and settings to control the behavior of ActiveEdge. 
 
-**To install CartScanPCWedge on a PC**:
+The following is an example of ActiveEdgeConfig.xml : 
 
-1. Follow the download instructions emailed by the Zebra Software Distribution Services.
-2. Locate and unzip the download package, which includes a `setup.exe` installer. 
-3. Launch `setup.exe` to install CartScanPCWedge on a supported PC.<br>The Welcome screen appears:
-<img alt="" style="height:350px" src="figure_01.png"/>
-<br>
-4. **Click Next** to proceed to the "Select Installation Folder" screen. 
-5. **Specify the installation folder** or click Browse and navigate to the desired folder. 
-6. **Optional**: Select "Disk Cost..." to view the drives onto which CartScanPCWedge can be installed, along with available and required storage for each. Make desired selections and click "OK" to exit Disk Cost screen.
-7. **Specify for whom to install** ZebraCartScanPCWedge ("Everyone" or "Just me"). 
-8. **Click "Next" when finished** making selections:
-<img alt="" style="height:350px" src="figure_02.png"/>
-<br> 
-9. The Confirmation screen appears. **Click "Next" to begin the installation**:
-<img alt="" style="height:350px" src="figure_03.png"/>
-<br>
-10. Upon successful installation, the "Installation Complete" screen appears.<br>**Click "Close"** to dismiss the screen:
-<img alt="" style="height:350px" src="figure_04.png"/>
-<br>
+	<?xml version="1.0" encoding="UTF-8"?>
+	<wap-provisioningdoc>
+	  <characteristic type="Profile">
+	    <characteristic type="ActiveEdge" version="0.1">
+	      <parm name="ServiceAction" value="StartService"/>
+	      <parm name="RunAtStartup" value="True"/>
+	      <parm name="OperationMode" value="White"/>
+	      <parm name="LeftZone" value="Scanner"/>
+	      <parm name="RightZone" value="Drawer"/>
+	      <parm name="DrawerPackageNames" value=" com.symbol.datawedge/com.symbol.datawedge.DWDemoActivity,com.android.dialer"/>
+	      <parm name="WhiteListPackageNames" value="com.android.launcher3/.Launcher,com.zebra.hotswap/.MainActivity,com.symbol.datawedge"/>
+	      <parm name="BlackListPackageNames" value="com.android.launcher3/.Launcher,com.zebra.hotswap/.MainActivity,com.symbol.datawedge"/>
+	      <parm name="LaunchAppLeft" value="com.android.browser"/>
+	      <parm name="LaunchAppRight" value="com.android.calculator2"/>
 
-CartScanPCWedge installation is complete. 
+	    </characteristic>
+	  </characteristic>
 
------
+	</wap-provisioningdoc>
 
-### 2. Install on Mobile Device
+> Note: There may be more options available through XML than what is presented in the ActiveEdge Settings app.
 
-**Instructions for downloading and installing CartScan are emailed to the customer contact** provided to Zebra Software Distribution Services along with the original software order. 
+##### ServiceAction
+This parameter controls if the ActiveEdge service is running or if you need to reset the configuration back to default.
 
-**CartScan (`CartScan.apk`) can be downloaded from**:
+The following are valid values:
 
-* [Zebra AppGallery](https://appgallery.zebra.com/showcase/apps/174?type=showcase) 
-* [Google Play Store](https://play.google.com/store/apps/details?id=com.symbol.cartscan&hl=en)
+* StopService: This will Stop the service
+* StartService: This will Start the ActiveEdge Service 
+* Restore: This will reset the configuration to factory defaults (not running, Scan/Drawer, Default Apps on Drawer)
 
-CartScan for Android is installed on the device using standard installation procedures. 
 
------
+##### RunAtStartup
+This parameter configures whether ActiveEdge is running at device startup.
 
-### 3. Enable Bluetooth, Pair Devices
+The following are valid values:
 
-Before using the CartScan solution for the first time, the PC and mobile device must be known to each other. Following the initial software installation and Bluetooth activation, the mobile device initiates a Bluetooth pairing request and tries to connect to the PC. Detailed instructions are provided below. 
+* True: This will cause ActiveEdge to start at device boot
+* False: This will cause ActiveEdge to not start at device boot
 
-#### On the PC:
 
-1. **In Windows Bluetooth settings, select "enable Bluetooth"** and **"allow Bluetooth mobile devices to connect"** options. If the PC does not have built-in Bluetooth, insert a Bluetooth dongle and follow the setup instructions that came with it. 
-2. **Run the CartScanPCWedge** shortcut from the desktop or click Start > All Programs > Zebra CartScan PC Wedge > CartScanPCwedge.<br> Instructions appear for connecting the mobile device, including a barcode to scan. 
-<img alt="" style="height:185px" src="figure_05.png"/>
-<br>
-3. After running CartScanPCWedge, **skip to the mobile device instructions**.
-<img alt="" style="height:350px" src="figure_06.png"/>
-_PC screen for pairing with a mobile device_
-<br>
+##### OperationMode
+This parameter determines the mode that ActiveEdge is using while running.
 
-**NOTE**: For best results, remove monitor privacy screen before attempting to scan a barcode.
+The following are valid values:
 
-#### On the mobile device: 
+* Open: This will put ActiveEdge into a mode where it functions for all applications
+* White: This will put ActiveEdge into a mode where it is only enabled for applications on the White List
+* Black: This will put ActiveEdge into a mode where it will be enabled for ALL applications and be disabled for applications on the BlackList
 
-1. From the HOME screen, **tap Settings > Bluetooth**
-2. **Slide the Bluetooth switch to ON** position
-3. **Tap the HOME** key
-4. **Locate and Tap the CartScan app icon**:
-<img alt="" style="height:350px" src="figure_07.png"/>
-_CartScan App icon_
-<br>
-5. Use the CartScan app to **scan the barcode displayed on the PC** by pressing the large scan button in the app (or press one of the device's scan triggers).<br> **NOTE**: For best results, remove monitor privacy screen before attempting to scan a barcode.
-<img alt="" style="height:350px" src="figure_08.png"/>
-_Mobile device not yet connected to PC_
-<br>
-6. **Tap PAIR** or follow the prompts for pairing the mobile device with the PC (if connecting for the first time, as shown below).
-<img alt="" style="height:350px" src="figure_09.png"/>
-_Pair mobile device to PC_
-<br>
+##### WhiteListPackageNames/ BlackListPackageNames
+This is a comma separated string that contains the package names/activity of applications that should be placed on the White/BlackList. The ActiveEdge Mode will determine what list to be used for WhiteListing or BlackListing. The values will also be saved even if the mode is `All`
 
-**When successfully connected, a message appears on the mobile device similar to the one pictured below, left**:
-<img alt="" style="height:350px" src="figure_10.png"/>
-<br>
+Format of string: `[package name]/.[activity name]`
 
->**CartScan is now ready to use**. Go to [User Guide](../usage). 
+Ex: `com.android.launcher3/.Launcher,com.zebra.hotswap/.MainActivity, com.symbol.datawedge/.DWDemoActivity`
 
------
+The package name can also be supplied without an Activity to have all activities covered:
+Ex: `com.symbol.datawedge`
 
-## Setup Notes 
+##### LeftZone / RightZone
+These parameters control the behavior of either the Left or Right ActiveEdge Zone (respectively). 
 
-* Bluetooth pairing dialog appears only if mobile device was not previously paired with that PC.
-* Allowing access to contacts and call history (checkbox) is not required for CartScan.
-* Multiple mobile devices can be paired via Bluetooth to an individual PC, but only one mobile device can connect to CartScanPCWedge at a time.
+The following are valid values:
 
------
+* Scanner: The zone will be configured for barcode scanning
+* Drawer: The zone will be configured for an application drawer
+* LaunchApp: The zone will be configured to launch an application
+* LaunchIntent: The zone will be configured to launch an Intent 
 
-## Admin Best Practices
+##### DrawerPackageNames
+This paremeter is a comma separated string that contains the package names of applications that should be placed on the ActiveEdge Drawer. 
 
-#### Zebra strongly recommends the following best practices for a seamless user experience.  
+The format can be package name only (in which case it will launch the default activity):
+Ex: `com.android.dialer`
 
-1. **IMPORTANT: <u>Do not modify CartScan Profile settings from within DataWedge on the mobile device</u>**.<br>Doing so will result in unpredictable CartScan behavior. 
-2. **Analyze end-user scanning workflows and create the necessary CartScan Profile(s) in advance**. See [Settings page](../settings) for details.
-3. **Before deployment, test CartScan Profile(s)** with the intended line-of-business application(s) to ensure compatibility and desired behavior.
-4. **Conduct workflow testing with an end-user representative** whenever possible.  
-5. **Create the end-user training materials and guidelines** for proper use of CartScan, its features and functions.<br>This minimizes errors when putting CartScan into use.
-6. **Always deploy workflow Profiles along with the CartScan app** when staging target mobile devices.
-7. **Pair each mobile device to its intended end-user workstation** prior to deployment to end users.  
+Or it can include a specific activity:
+Ex: `com.symbol.datawedge/com.symbol.datawedge.DWDemoActivity`
+
+> Note: A zone does not have to be configured for a drawer for this setting to be saved. The setting will always be saved regardless if the current configuration is for a drawer. A maximum of 3 applications are accepted. Anything beyond (3) will be ignored.
+
+##### LaunchAppLeft / LaunchAppRight
+This parameter may contain an application name of (1) application that should be launched when a ActiveEdge Zone is configured for launching an application for that particular zone. 
+
+Format of string: `[package name]`
+Ex: `com.android.browser`
+
+> Note: this setting can be saved even if the current Active Edge Zone is not configured for Launching an Application.
 
 -----
 
-## Uninstallation
+#### 2) Deploying the XML
+The XML file that was created above can be deployed by any means, but will typically be deployed by standard MDM tools. The location of the XML file should be on the device file system, and accessible by the application (usually the MDM client). It should not be included in the client application as an embedded resource.
 
-### Remove From PC
+-----
 
-**To uninstall CartScanPCWedge from a PC**:
+#### 3) Triggering the Intent
+An admin or MDM solution can trigger the ActiveEdge Service to process a new configuration file by sending an Intent with the following values:
 
-1. Click **Start > Control Panel > Programs**
-2. On the Uninstall or change a program screen, locate **"Zebra CartScan PC Wedge" app**
-3. **Right-click "Zebra CartScan PC Wedge" and select Uninstall**
+* **Intent Type:** StartService 
+* **Package Name:** com.symbol.activeedge
+* **Class Name:** ConfigParserService
+* **Extras:**
+	* `SET_CONFIG_FILE` : fully qualified path to the ActiveEdgeConfig.XML file
 
-### Remove from Mobile Device
+Ex: 
+		adb shell am startservice -a com.symbol.activeedge.ConfigParserService -e SET_CONFIG_FILE "/sdcard/ActiveEdgeConfig.xml”
 
-**To uninstall CartScan from a mobile device**:
+##### XML Processing
+When ActiveEdge receives the intent it will:
 
-1. **Tap Settings > Apps**
-2. **Tap "CartScan"**
-3. **Tap "UNINSTALL"**
-4. **Tap "OK" to confirm**
+1.	Open the File
+	* The XML file will be opened and validated to be valid XML. If the XML is not valid then a message will be logged to the system log and the Active Edge Result Intent will be broadcasted (see below for details on Active Edge Result Intent)
+2.	Parse the File
+	* If any elements are present that are not expected, then an error will be reported via the Active Edge Result Intent. The processing will then be stopped and no effects on the AE Service will occur.
+	* If the file passes both the XML validity test and AE XML config test, then the settings will be saved.
+	Besides malformed XML parameters the following conditions will result in “invalid XML”:
+		* LeftZone and Right Zone both set to Drawer (the end result of the settings will be used to verify, not what is in the XML file)
+3.	Save the settings from the XML File
+	* The settings will only be saved if all XML is valid. The XML can contain partial settings and only the settings that are included will be effected. Each XML parameter has a corresponding Android Shared Preferences reference that both the AE Service and AE Settings app uses.
+4.	Change the Active Edge behavior as needed
+	* After an XML is processed successfully, the ActiveEdge Settings UI will be locked and not editable from an end user. It can only be unlocked if an admin sends a Restore to factory defaults.
+5.	Send the Active Edge Result Intent
+	* When the processing is complete (or an error occurs during processing), an Broadcast Intent will be sent so that any MDM application can be notified of the results:
+	* **Intent Type:** Broadcast 
+	* **Action Name:** com.symbol.activeedge
+	* **Extras:**
+		* `STATUS` : Pass or Fail
+		* `ERROR_MESSAGE`: Error Message
+
 
 -----
 
 ## See Also
 
-* [About CartScan](../about)
-* [Administrative Guide](../settings)
-* [CartScan Usage Guide](../usage)
+* [About ActiveEdge](../about)
+* [ActiveEdge Usage Guide](../usage)
+
 

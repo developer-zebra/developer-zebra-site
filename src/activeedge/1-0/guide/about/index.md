@@ -12,8 +12,8 @@ The ActiveEdge Touch Zone application provides configurable settings which enabl
 ### Supported Devices
 ActiveEdge comes shipped with the device's operating system and may not be available on all devices. Some
 
-* **TC51 Health Care SKU **
-* **TC56 Health Care SKU **
+* TC51 Health Care SKU 
+* TC56 Health Care SKU 
 
 -----
 

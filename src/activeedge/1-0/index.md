@@ -1,6 +1,6 @@
 ---
 title: ActiveEdge
-img: cartscan_logo.png
+img: /images/products/ActiveEdge.png
 layout: list-mx.html
 menu:
   title: ActiveEdge
@@ -12,7 +12,7 @@ menu:
     - title: Using ActiveEdge
       url: /activeedge/1-0/guide/usage
     - icon: fa fa-search
-      url: /activeedge/2-1/search
+      url: /activeedge/1-0/search
 product: ActiveEdge
 productversion: '1.0'
 ---

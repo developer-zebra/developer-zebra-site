@@ -209,8 +209,7 @@ var sitebuild = Metalsmith(__dirname)
 
 
     .use(foldermenu({
-        folder: 'mx/',
-        automenu: false
+        folder: 'activeedge/1-0/'
     }))
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({

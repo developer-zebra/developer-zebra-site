@@ -462,13 +462,13 @@ Note: Performance is the same from Level 1 to Level 3.
 
 **Note**: The Unique Device Identification (UDI) system was established in 2007 by the U.S. Food and Drug Administration as a means to track medical devices. 
 
-### Decode Behavior Notes
+### Multi-barcode Notes
 
-**Picklist Behavior -** When a picklist reader parameter is set to a value other than “Disabled” during the multi-barcode scanning mode, the user is expected to move the crosshair to each barcode to be scanned. If the picklist parameter is set to “Disabled,” the device will scan the set number of barcodes if appear in the field of view.
+**Picklist Behavior -** In multi-barcode scanning mode, when a picklist reader parameter is set to a value other than “Disabled," the user is expected to move the crosshair to the specified number of barcodes to be scanned. Set this value (from 1-10) using the `BarcodeCount` parameter. **Data is returned only after the specified number of barcodes is read**. 
 
-**Decoding with duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same data and label type), only one barcode from that label will be decoded; the remainder are ignored as duplicates.
+**Decoding with duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same data and label type), only one barcode from that label will be decoded; the remainder are ignored as duplicates. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded and one will be ignored as a duplicate.
 
-**Decoding behavior with number of barcodes -** Barcodes can be of multiple label types. If the required number of barcodes is not in view of the scanner, it will not decode any data. If it contains more number of barcodes than the set value for barcode count, it will decode any barcode up to the count configured. Assume the parameter is set to 2 and 8 barcodes are in the field of view, it will return data for any 2 barcodes. Returned data will be in random order and there is no guarantee that the order is same as they are appearing in the label.
+**Decoding behavior with number of barcodes -** Barcodes can be of multiple label types. If the required number of barcodes (from 1-10, as set using the `BarcodeCount` parameter) is not in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the value set by `BarcodeCount`, the scanner will randomly decode any barcode(s) until the count is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will return data for the first two barcodes it sees, and return the data in random order.
 
 -----
 

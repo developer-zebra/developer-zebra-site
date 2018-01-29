@@ -30,19 +30,24 @@ Enables or disables this feature. Default is enabled.
 ## Scanner Selection
 Configures which scanning device to use for data capture.
 
-* Auto - Automatically determines the best scanning device. If a Scan Module or Scan/MSR Module is installed on the MC40, then the 2D imager is selected. Otherwise the camera is selected.
-* Internal Laser 1 - Scanning is performed using the internal 1D laser scanner.
-* Internal Imager 1 - Scanning is performed using the internal 2D scanner or MSR module.
-* Internal Camera 1 - Scanning is performed with the rear-facing camera.
-* Pluggable Laser 1 - Scanning is performed using an external 1D laser scanner plugged into the device.
-* Bluetooth Imager 1 - Scanning is performed using an external 2D scanner connected via BlueTooth.
-* RS5000 Pluggable Imager - Scanning is performed using a Pluggable RS5000 Scanner.
-* RS6000 Bluetooth Imager - Scanning is performed using a RS6000 over Bluetooth.
+* **Auto -** Automatically determines the best scanning device. If a Scan Module or Scan/MSR Module is installed on the MC40, then the 2D imager is selected. Otherwise the camera is selected.
+* **Internal Laser 1 -** Scanning is performed using the internal 1D laser scanner.
+* **Internal Imager 1 -** Scanning is performed using the internal 2D scanner or MSR module.
+* **Internal Camera 1 -** Scanning is performed with the rear-facing camera.
+* **Pluggable Laser 1 -** Scanning is performed using an external 1D laser scanner plugged into the device.
+* **Bluetooth Imager 1 -** Scanning is performed using an RS507 over Bluetooth.
+* **RS4000 Pluggable Imager -** Scanning is performed using an RS4000 pluggable scanner.
+* **RS5000 Pluggable Imager -** Scanning is performed using an RS5000 pluggable scanner.
+* **RS6000 Bluetooth Imager -** Scanning is performed using an RS6000 over Bluetooth.
+* **DS3678 Bluetooth Imager -** Scanning is performed using a DS3678 over Bluetooth. 
+* **DS3608 Pluggable Imager -** Scanning is performed using a DS3608 pluggable scanner.
 
+<!-- removed 1/26/18 per eng TUT-22329
 The following Bluetooth scanners are supported: 
 
 * **Zebra RS507** Cordless Ring Scanner
 * **RS6000 Bluetooth Ring Scanner** (when used with WT6000 only)  
+ -->
 
 Bluetooth scanners are supported according to the following rules:
 

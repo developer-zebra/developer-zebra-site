@@ -36,8 +36,9 @@ Configures which scanning device to use for data capture.
 * **Internal Camera 1 -** Scanning is performed with the rear-facing camera.
 * **Pluggable Laser 1 -** Scanning is performed using an external 1D laser scanner plugged into the device.
 * **Bluetooth Imager 1 -** Scanning is performed using an RS507 over Bluetooth.
-* **RS6000 Bluetooth Imager -** Scanning is performed using an RS6000 over Bluetooth.
+* **RS4000 Pluggable Imager -** Scanning is performed using an RS4000 pluggable scanner.
 * **RS5000 Pluggable Imager -** Scanning is performed using an RS5000 pluggable scanner.
+* **RS6000 Bluetooth Imager -** Scanning is performed using an RS6000 over Bluetooth.
 * **DS3678 Bluetooth Imager -** Scanning is performed using a DS3678 over Bluetooth. 
 * **DS3608 Pluggable Imager -** Scanning is performed using a DS3608 pluggable scanner.
 
@@ -502,9 +503,9 @@ Allows the configuration of Code Id and decode feedback options.
 
 * **Display BT Address Barcode -** If this value is set to true, the Bluetooth Pairing Utility Application will be opened when the enable method is called.
 
-* **Decode Feedback LED Timer -** Length of time to illuminate the LED to indicate a successful decode. 
+* **Decode Feedback LED Timer -** Defines the length of time (in ms) to flash the Green LED to indicate a successful decode.
 
-* **Decoding LED Notification -** Length of time to illuminate the LED to indicate a successful decode. 
+**Decoding LED Notification -** When enabled, causes the Red LED to flash when the scan trigger is pressed.
 
 * **Engine Decode LED -** Controls Engines' decode LED behavior
 	* Disabled

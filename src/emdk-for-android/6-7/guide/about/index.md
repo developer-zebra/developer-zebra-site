@@ -36,21 +36,20 @@ The following software must be installed prior to using the EMDK for Android.
 
 ## Devices Supported
 
+## Devices Supported
+
 * ET5X   - Lollipop
-* MC18   - KitKat
 * MC33   - Nougat
-* MC40   - KitKat 
-* MC67   - KitKat	 
-* MC92   - KitKat 
+* TC20   - Nougat
 * TC25   - Nougat
 * TC51   - Marshmallow, Nougat
-* TC55   - KitKat	 
 * TC56   - Marshmallow, Nougat
-* TC70   - KitKat, Lollipop
+* TC70   - Lollipop
 * TC70x  - Marshmallow, Nougat
-* TC75   - KitKat, Lollipop
+* TC75   - Lollipop
 * TC75x  - Marshmallow, Nougat 
-* TC8000 - KitKat,Lollipop
+* TC8000 - Lollipop
+* VC80x  - Nougat
 * WT6000 - Lollipop
 
 ## Important News
@@ -95,8 +94,10 @@ The following software must be installed prior to using the EMDK for Android.
 ### Profile Manager
 The EMDK's exclusive [Profile Manager](../profile-manager) Technology is an additional advantage for developers giving you a GUI based development tool built on our open framework. This allows you to write fewer lines of code resulting in reduced development time, effort and errors. This innovative feature not only gives you easy access to critical functions such as bar code scanning and transaction processing via a magnetic stripe reader (MSR) but also functionality not available in Google's Android SDK.
 
+<!-- 1/29/18- removed per eng. 
 ### EMDK Device Runtime
 In order for your application to use the EMDK For Android, you will need to install the EMDK Device Runtime on each device. This runtime is included with the EMDK For Android installation. Check the [Setup Guide](../setupDevice) for instructions. In the future the EMDK Services will be included with the default operating system for the device.
+-->
 
 ### Samples & Programmer's Guide
 There are sample projects that are included as part of the EMDK For Android installation. You can import the project into your IDE and run on your device. Look at the [Sample Guide](../..//samples/) for more details on using these samples. You can also reference the [Programmers Guide](../../tutorial/) for a complete walk-through of building your first EMDK For Android application.
@@ -104,9 +105,10 @@ There are sample projects that are included as part of the EMDK For Android inst
 ### Java APIs
 The EMDK for Android offers access to the device's Barcode capabilities through traditional native Java Barcode APIs.
 
+<!-- 1/29/18- removed per eng. 
 ### Intent APIs
 The EMDK for Android will continue to support the [DataCapture](../reference/refdatacaptureintent) and [Battery Intent](../reference/refbatteryintent) APIs that were previously available on individual device types. 
-
+-->
 
 
 

@@ -1,5 +1,7 @@
-##EMDK for X
-* Get latest code from Jenkins http://10.17.13.50:8080/job/tut_emdka_build/ (SDK-Addon highest api level - has javadocs)
+
+## EMDK for Xamarin
+
+* Get latest code from Jenkins http://10.17.13.50:8080/job/tut_emdkx_build/ (SDK-Addon highest api level - has javadocs)
 * Get DLL from Praveen
 * Copy DLL to Lib folder in mDocToMarkdown
 * Go to shell in parent folder MDoc - then run command in readme (cross fingers - need mdoc - from Xamarin tools)
@@ -16,13 +18,14 @@
 * Markdown is in "markdown" folder - look again for TBA
 * Copy the markdown and "merge" into techdocs E4X API folder
 
-##EMDK For Android
+## EMDK For Android
 
 1. Log onto the [Jenkins build server](http://10.17.13.50:8080/job/tut_emdka_build/) (ID=kelani, pw= kelani@123)
 2. Download the latest `adk-addon.zip` file. This should have the current API level that the tool can target (i.e. Android API level 26). 
-3. Open the .zip file and navigate to addon.../docs/reference
-4. Copy all files from /reference **EXCEPT** `stylesheet.css`. 
-5. Copy these files into  `/build/emdk-for-android/x-x/api/` folder. **DO NOT COPY TO `/SRC` folder!** 
-6. Push to staging-server repo (zebra-stage.github.io) to test.
-7. When all changes are validated, copy to production-server repo (zebra.github.io).
-
+3. Open the .zip file and navigate to /addon-symbol_emdk-symbol-26/docs/reference
+4. Copy the `/reference` folder to your local `/build/emdk-for-android/x-x/api/` folder (where x-x = the version number, i.e. 6-8). **DO NOT COPY TO `/SRC` folder!** 
+5. Copy the `stylesheet.css` file from a prior version into the `api/reference` folder, overwriting the existing `stylesheet.css` file copied from the zip. 
+6. View the local copy of the APIs and confirm the look and new feature(s).
+7. Copy the local version to the staging-server repo (zebra-stage.github.io).
+8. View the staging-server copy to confirm and test as in Step 6.
+9. When all changes are validated, copy to production-server repo (zebra.github.io).

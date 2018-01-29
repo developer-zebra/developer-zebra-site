@@ -17,5 +17,12 @@
 * Copy the markdown and "merge" into techdocs E4X API folder
 
 ##EMDK For Android
-* Take HTML from SDK Add on/ Docs/ Ref (take entire reference folder) - do not take stylesheet
-* Pushed to stage / public directly (not built - after build)
+
+1. Log onto the [Jenkins build server](http://10.17.13.50:8080/job/tut_emdka_build/) (ID=kelani, pw= kelani@123)
+2. Download the latest `adk-addon.zip` file. This should have the current API level that the tool can target (i.e. Android API level 26). 
+3. Open the .zip file and navigate to addon.../docs/reference
+4. Copy all files from /reference **EXCEPT** `stylesheet.css`. 
+5. Copy these files into  `/build/emdk-for-android/x-x/api/` folder. **DO NOT COPY TO `/SRC` folder!** 
+6. Push to staging-server repo (zebra-stage.github.io) to test.
+7. When all changes are validated, copy to production-server repo (zebra.github.io).
+

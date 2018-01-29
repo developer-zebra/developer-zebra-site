@@ -55,6 +55,7 @@ Bluetooth scanners are supported according to the following rules:
 * **After initial configuration**, the Bluetooth scanner can be enabled and disabled in the Profile even if it is disconnected from the device. However, to configure reader parameters, decoders and other scanner settings, the Bluetooth scanner must be connected.
 * **The device will not automatically reconnect** to a Bluetooth scanner if that scanner is connected while it is using a different auto-selected scanner. To re-enable a Bluetooth scanner, connect the scanner and select it in the Profile or re-choose the Auto select option.
 * **Auto-selection and Battery Swap -** If Scanner selection is set to Auto and the RS507 was enabled prior to a battery swap, DataWedge will continue working with that RS507 scanner upon reconnection after the battery is swapped. If the RS507 does not reconnect with after the swap, DataCapture will revert to the current default scanner.
+* **The RS6000 Bluetooth scanner when used with Android N devices-** does not support the `disconnectOnExit` API even though the `isParamSupported`("disconnectonExit") method call might return a "true" value. 
 
 ## Use Auto when not supported
 

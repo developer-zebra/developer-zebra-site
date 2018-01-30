@@ -14,23 +14,27 @@ EMDK for Android also inserts exclusive Profile Manager technology within the th
 ## Requirements
 The following software must be installed prior to using the EMDK for Android.
 
-**Windows:**
+**Windows**:
 * Microsoft Windows 7 (32-bit and 64-bit)  or Microsoft&copy; Windows 8 (32-bit and 64-bit) or Microsoft&copy; Windows 8.1 (32-bit and 64-bit)
 * Java Development Kit (JDK) v7u45 or higher
 * Android Studio v2.x or higher
  
-**Mac OS X:**  
+**Mac OS X**:  
 * Yosemite (10.10.x) | (64-bit)  or El Capitan (10.11.x) | (64-bit)
 * Java for OS X 2014-10x or higher
 * Java Development Kit (JDK) v7u75 or higher
-* Installed via Android SDK manager 
+
+<!-- 1/30/18- removed per eng. TUT-22799
+* Installed via Android SDK manager: 
 	* The Android API 19 packages
 	* The Android SDK Build-tools rev.21.1.x or higher
+ -->
 
-* Notes:
-	* The appropriate Android SDK Platform package must be installed on the development machine in order to target the right EMDK APIs SDK add-on. For example, Android 6.0 (API 23) must be installed for targeting EMDK APIs (API 23) as Compile SDK Version in Android Studio.
-	* For building EMDK samples, the Android SDK Build-tools rev.23.0.x or higher must be installed.
-	* Prior to installing, all Android Studio sessions must be closed if already running.
+**Notes**:
+
+* The appropriate Android SDK Platform package must be installed on the development machine in order to target the right EMDK APIs SDK add-on. For example, Android 6.0 (API 23) must be installed for targeting EMDK APIs (API 23) as Compile SDK Version in Android Studio.
+* For building EMDK samples, the Android SDK Build-tools rev.23.0.x or higher must be installed.
+* Prior to installing, all Android Studio sessions must be closed if already running.
 
 
 ## Devices Supported
@@ -98,7 +102,6 @@ The following software must be installed prior to using the EMDK for Android.
 * **Support for the** `ContinuousRead` **class is deprecated**. This class, which can be used to enable continuous scanning, is still supported but will no longer be advanced. Zebra recommends using the `aimType`, `sameSymbolTimeout`, `differentSymbolTimeout` reader parameters for the device camera, imager or laser.
 
 * **Support for the** `picklist` **field is deprecated**. This field, which is used for enabling the `picklist` mode, is still support but will ultimately be replaced by the `picklistEx` field. 
-
 -----
 
 ## Components

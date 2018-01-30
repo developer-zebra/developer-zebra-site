@@ -61,7 +61,6 @@ This mode is supported on Bluetooth and pluggable scanners only, and might resul
 
 **Note: The Zebra computing device will wake from suspend mode when the RS507 scan trigger is pressed**.
 
-
 ## Decoders
 Configures which bar code decoders are enabled or disabled. For best performance disable all unnecessary decoders. By default the most commonly used decoders are enabled (shown below with an asterisk). The supported decoders are:
 

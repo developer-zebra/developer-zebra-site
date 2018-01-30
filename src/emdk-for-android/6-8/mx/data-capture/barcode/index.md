@@ -36,7 +36,6 @@ Configures which scanning device to use for data capture.
 * **Internal Camera 1 -** Scanning is performed with the rear-facing camera.
 * **Pluggable Laser 1 -** Scanning is performed using an external 1D laser scanner plugged into the device.
 * **Bluetooth Imager 1 -** Scanning is performed using an RS507 over Bluetooth.
-* **RS4000 Pluggable Imager -** Scanning is performed using an RS4000 pluggable scanner.
 * **RS5000 Pluggable Imager -** Scanning is performed using an RS5000 pluggable scanner.
 * **RS6000 Bluetooth Imager -** Scanning is performed using an RS6000 over Bluetooth.
 * **DS3678 Bluetooth Imager -** Scanning is performed using a DS3678 over Bluetooth. 

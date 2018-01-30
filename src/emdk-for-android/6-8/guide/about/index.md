@@ -39,6 +39,8 @@ The following software must be installed prior to using the EMDK for Android.
 
 ## Devices Supported
 
+### Mobile devices
+
 * ET5X   - Lollipop
 * MC33   - Nougat
 * TC20   - Nougat
@@ -52,6 +54,15 @@ The following software must be installed prior to using the EMDK for Android.
 * TC8000 - Lollipop
 * VC80x  - Nougat
 * WT6000 - Lollipop
+
+### Scanners and imagers
+
+* RS507
+* RS6000
+* RS5000
+* RS4000
+* DS3678
+* DS3608
 
 -----
 

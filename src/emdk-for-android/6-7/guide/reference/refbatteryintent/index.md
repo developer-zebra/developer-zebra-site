@@ -25,7 +25,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 	</tr>
 	<tr>
 		<td>Power Precision </td>
-		<td>MC40, MC92, TC55, TC75, TC70, MC67</td>
+		<td>MC40, MC92, TC20, TC25, TC55, TC75, TC70, MC67</td>
 	</tr>
 	<tr>
 		<td>Power Precision Plus </td>

@@ -9,7 +9,7 @@ productversion: '6.7'
 
 Introduced in DataWedge 6.4.
 
-Used to create, update or replace a DataWedge Profile and its settings. Beginning with DataWedge 6.6, this API can configure multiple Plug-ins with a single intent action. 
+Used to create, update or replace a DataWedge Profile and its settings. In DataWedge 6.6 and higher, this API also can be used to configure multiple Plug-ins with a single intent action. 
 
 This API contains [nested bundles](../overview/#nestedbundles). 
 
@@ -120,7 +120,7 @@ Contains the following properties:
 ### Scanner Identifiers
 The scanner identifier (introduced in DataWedge 6.5) permits scanners to be identified by a friendly name rather than an index number. 
 
-**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device. Both parameters are supported in DataWedge 6.6; the scanner identifier value takes precedence if an index also is referenced in the code.  
+**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device. Both parameters are supported in DataWedge and higher; the scanner identifier value takes precedence if an index also is referenced in the code.  
 
 **Possible values**:
 

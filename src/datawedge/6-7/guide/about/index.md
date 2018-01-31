@@ -26,7 +26,7 @@ For more information about approved languages or to download a localized operati
 -----
 
 #### This document applies to:
-* **DataWedge 6.6.x**, which requires:
+* **DataWedge 6.7.x**, which requires:
 * **Scanner Framework 18.0.9.0** or higher, and
 * **SimulScan 1.9 or higher** (on [devices that support SimulScan](../../../../simulscan))
 
@@ -34,7 +34,13 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 -----
 
-### New in DataWedge 6.6
+### New in DataWedge 6.7
+
+
+
+## Version History
+
+### Added in v6.6
 
 * **New [serial input options](../input/serial) allow DataWedge to specify communications parameters for a scanner or other device connected to a serial port and used to acquire data**.
 

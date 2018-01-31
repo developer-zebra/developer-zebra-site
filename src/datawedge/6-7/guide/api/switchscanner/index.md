@@ -37,7 +37,7 @@ The `SWITCH_SCANNER_EX` extra (added in DataWedge 6.6) allow scanners to be sele
 ### Scanner Identifiers
 The scanner identifier permits scanners to be identified by a friendly name rather than an index number. 
 
-**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device. Both parameters are supported in DataWedge 6.6; the scanner identifier value takes precedence if an index also is referenced in the code.  
+**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device. Both parameters are supported in DataWedge and higher; the scanner identifier value takes precedence if an index also is referenced in the code.  
 
 **Possible values**:
 

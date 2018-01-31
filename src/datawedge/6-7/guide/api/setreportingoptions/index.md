@@ -2,7 +2,7 @@
 title: Set Reporting Options 
 layout: guide.html
 product: DataWedge
-productversion: '6.6'
+productversion: '6.7'
 ---
 
 ## SET_REPORTING_OPTIONS

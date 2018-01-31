@@ -2,7 +2,7 @@
 title: Mag-Stripe Reader Input
 layout: guide.html
 product: DataWedge
-productversion: '6.6'
+productversion: '6.7'
 ---
 
 ## Overview

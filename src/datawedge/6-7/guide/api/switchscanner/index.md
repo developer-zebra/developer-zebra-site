@@ -2,7 +2,7 @@
 title: Switch Scanner 
 layout: guide.html
 product: DataWedge
-productversion: '6.6'
+productversion: '6.7'
 ---
 
 ## SWITCH_SCANNER

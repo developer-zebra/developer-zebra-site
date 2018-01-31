@@ -36,6 +36,11 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 ### New in DataWedge 6.7
 
+**Enhanced intercharacter delay function** allows a delay to be specified for all characters or for multi-byte characters only.  
+
+**AimType now supports Press and Sustain** function continues a decode session until the Beam Timer is expired, barcode is decoded or the read is canceled.  
+
+For forms with multiple barcodes, a **Dynamic Templates** parameter allows the specification of a number of barcodes (from 1-99) to be decoded.
 
 
 ## Version History

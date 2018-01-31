@@ -1,18 +1,30 @@
 ## Document a NEW PRODUCT
-(example: Enterprise Browser 1.6)
+Example is based on creating "Enterprise Browser 1.6," a new version based on EB 1.5.  
+
+1/31/18- Process modified for product-specific branches. 
 
 ### I. Create a new BRANCH off the "develop" branch of developer-zebra-site repo
 
 	:::term
-	$ git checkout develop
-	$ git checkout -b eb-1.6 develop ("eb-1.6" = new branch name off the "develop" branch)
+	$ git checkout eb-1.5
 
+In product folder ("enterprise-browser"), copy folder of prior version (1-5)
+
+Rename the copied folder to "1-6" (notice we use a **dash**, **NOT a dot**)
+
+	$ git checkout -b eb-1.6 develop
+
+The "-b" creates a new branch, which is called "eb-1.6" and it's off the "develop" branch
 
 ### II. Create folder structure
-In product folder ("enterprise-browser"), copy folder of prior version
-Rename the copied folder to "1-6" (separate digits with a **dash**, **NOT a dot**)
-Search and replace " 'productversion: 1-5' " with " 'productversion: 1-6' " on all pages
-Search and replace "1.5" with "1.6" in appropriate places (a manual replacement process is recommended; some search results will be "false positives")
+
+**Search and replace** "productversion: 1-5" with "productversion: 1-6" on all pages
+
+**Search and replace** "1-5" with "1-6" in all places. This updates menu links and other hard-wired references for the new version.  
+
+**Search and replace** "1.5" with "1.6" in appropriate places (a manual replacement process is recommended; some search results will be false positives, such as "In Enterprise Browser 1.5 and higher..."). 
+
+Add and commit these changes to git as the initial commit. This will allow you to revert to "square one" if anything goes haywire later. 
 
 	:::term
 	$ git add . (stages all changed files for commit)  

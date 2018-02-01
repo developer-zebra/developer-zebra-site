@@ -270,16 +270,12 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
 **Check Digit -** With MSI symbols, one check digit is required, and is always verified by the reader. The second check digit is optional.
+* **One Check Digit -** Verify one check digit.
+* **Two Check Digits -** Verify two check digits.
 
-**One Check Digit -** Verify one check digit.
-
-**Two Check Digits -** Verify two check digits.
-
-**Check Digit Scheme -** Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit.
-
-**Mod-11-10 -** First check digit is MOD 11; the second check digit is MOD 10.
-
-**Mod-10-10 -** Both check digits are MOD 10.
+**Check Digit Scheme -** Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit:
+* **Mod-11-10 -** First check digit is MOD 11; the second check digit is MOD 10.
+* **Mod-10-10 -** Both check digits are MOD 10.
 
 **Report Check Digit -** Transmit MSI data with or without the check digit. A check in this checkbox will send MSI data with a check digit.
 

@@ -9,7 +9,7 @@ productversion: '6.7'
 
 Introduced in DataWedge 6.4.
 
-Used to create, update or replace a DataWedge Profile and its settings. In DataWedge 6.6 and higher, this API also can be used to configure multiple Plug-ins with a single intent action. 
+Used to create, update or replace a DataWedge Profile and its settings. In DataWedge 6.6 and higher, this API also can be used to configure multiple Plug-ins with a single intent action. Beginning with DataWedge 6.7, the behavior of inter-character delay is enhanced. See the [Keystroke Output guide](../../output/keystroke) for more information.  
 
 This API contains [nested bundles](../overview/#nestedbundles). 
 
@@ -716,6 +716,12 @@ Command and configuration intent parameters determine whether to send result cod
 <span class="c0">keystroke_delay_multibyte_chars_only</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td></tr>
 </tbody>
 </table>
+
+### Keystroke Delay Notes
+
+* The `keystroke_delay_extended_ascii` parameter is deprecated. 
+* If a Keystroke Plug-in bundle uses the `keystroke_delay_extended_ascii` parameter, DataWedge will set the `keystroke_delay_multibyte_chars_only` parameter to true. 
+* If the `keystroke_delay_extended_ascii` and `keystroke_character_delay` parameters are both sent, the value of the `keystroke_character_delay` is retained under `keystroke_delay_extended_ascii`; and the `keystroke_delay_multibyte_chars_only` parameter is set to true. 
 
 -----
 

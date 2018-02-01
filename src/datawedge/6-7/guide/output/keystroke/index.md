@@ -31,6 +31,8 @@ _Keystroke Output options_
 
 **Key event delay -** used to set a delay (in ms) for dispatching control characters as keystrokes to the foreground application.
 
+-----
+
 ### Profile Import Behavior
 
 * **For Profiles imported <u>into DataWedge 6.7</u> from prior versions**, the value specified for the "Multi byte character delay" is applied to the Inter-character delay and the “Delay Multi-byte characters only” parameter is enabled. 

@@ -37,8 +37,6 @@ _Keystroke Output options_
 
 * **For Profiles created with DataWedge 6.7 and <u>imported into a prior version</u>**, the specified delay, if any, is applied only to multi-byte characters. 
 
-
-
 -----
 
 ### UDI Data Output

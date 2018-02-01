@@ -14,7 +14,7 @@ Keystroke Output collects the processed data and sends it to the associated appl
 
 ## Keystroke Output Setup
 To enable Keystroke output for a Profile, place a check in the checkbox:
-<img style="height:350px" src="../keystroke-output.png"/>
+<img style="height:350px" src="../keystroke-output_6.7.png"/>
 _Keystroke Output options_
 <br>
 
@@ -25,9 +25,14 @@ _Keystroke Output options_
 * **Line feed -** inject action key in place of ASCII LF (0x0A) character
 * **Carriage return -** inject action key in place of ASCII CR (0x0D) character
 
-**Multi byte character delay -** used to set an inter-character delay (in ms) for sending multi-byte characters. This parameter can help avoid problems that arise when sending Unicode and multi-byte characters to the Android browser. Value is set to zero by default. If experiencing errors in the delivery of keystrokes, increase the delay value in increments of 100 ms.
+**Inter-character delay –** used to set a delay (in ms) following the delivery of each character to the application. This parameter is intended to help avoid issues that arise when data is dispatched too quickly for an application to accept. **Default=0**. If experiencing errors in keystroke delivery, increase this value in increments of 100 until errors cease (max. value= 1000). **Note: This parameter can negatively effect application performance**. 
+
+**Multi-byte character delay -** applies the inter-character delay (in ms) to multi-byte characters only. This parameter is intended to help avoid problems that arise when sending Unicode and multi-byte characters to the Android browser. Available only when Inter-character delay is enabled. **Disabled by default**. 
 
 **Key event delay -** used to set a delay (in ms) for dispatching control characters as keystrokes to the foreground application.
+
+### Imported Profiles
+**For Profiles imported to DataWedge 6.7 from prior versions**, the value specified for the "Multi byte character delay" is applied to the Inter-character delay and the “Delay Multi-byte characters only” parameter is enabled. 
 
 -----
 

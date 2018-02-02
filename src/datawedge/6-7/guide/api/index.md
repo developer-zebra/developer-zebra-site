@@ -40,6 +40,8 @@ automenu:
           url: getprofileslist
         - title: Get Version Info 
           url: getversioninfo
+        - title: Import Profile 
+          url: importprofile
         - title: Register/Unregister for Notification 
           url: registerfornotification
         - title: Rename Profile 

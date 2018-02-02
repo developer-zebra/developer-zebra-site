@@ -25,9 +25,9 @@ _Keystroke Output options_
 * **Line feed -** inject action key in place of ASCII LF (0x0A) character
 * **Carriage return -** inject action key in place of ASCII CR (0x0D) character
 
-**Inter-character delay –** used to set a delay (in ms) following the delivery of each character to the application. This parameter is intended to help avoid issues that arise when data is dispatched too quickly for an application to accept. **Default=0**. If experiencing errors in keystroke delivery, increase this value in increments of 100 until errors cease (max. value= 1000). **Note: This parameter can negatively effect application performance**. 
+**Inter-character delay –** used to set a delay (in ms) following the delivery of each character to the application. This parameter is intended to help avoid issues that arise when data is dispatched too quickly for an application to accept. **Default=0**. If experiencing errors in keystroke delivery, increase this value in increments of 100 (to a max. of 1000) until errors cease. **Note: This parameter can negatively effect application performance**. 
 
-**Multi-byte character delay -** applies the inter-character delay (in ms) to multi-byte characters only. This parameter is intended to help avoid problems that arise when sending Unicode and multi-byte characters to the Android browser. Available only when Inter-character delay is enabled. **Disabled by default**. 
+**Multi-byte character delay -** applies the Inter-character delay (described above) to multi-byte characters only. This parameter is intended to help avoid problems that arise when sending Unicode and multi-byte characters to the Android browser. Available only when Inter-character delay is enabled. **Disabled by default**. 
 
 **Key event delay -** used to set a delay (in ms) for dispatching control characters as keystrokes to the foreground application.
 

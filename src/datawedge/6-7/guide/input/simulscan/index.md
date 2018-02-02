@@ -39,21 +39,12 @@ Custom template XML files copied to the `/enterprise/device/settings/datawedge/t
 
 Zebra partners and other authorized users can create custom templates online using Zebra's [SimulScan Template Builder](../../../../../simulscan/1-1/guide/templatebuilder). 
 
-**Dynamic Template Params –** permits the configuration of parameters when using Dynamic Templates. Currently allows the number of barcodes (from 1-99) to be decoded on a form to be specified. 
+**Dynamic Template Params –** permits the configuration of parameters when using Dynamic Templates, which are created using [Template Builder](http://simulscan.zebra.com/). Currently supports Dynamic Quantity, the specification of the number of barcodes (from 1-99; default=5) to be decoded on a form. 
 
-This configuration option will be enabled only when the selected template has dynamic parameters. If no dynamic parameters present for the selected template, this option will be disabled.
-When a template with dynamic parameters is selected from the “Template Selection”, a dialog will be prompted to configure dynamic template parameters. For templates without any parameters, this prompt message will not be shown.
-
-<img style="height:350px" src="dynamic_template.png"/>
+<!-- <img style="height:350px" src="dynamic_template.png"/>
 _Dynamic Barcode Quantity_
 <br>
-
-* **Dynamic Quantity -** is a dynamic template parameter that can be added when a template is created using the [Zebra Template Builder](http://simulscan.zebra.com/) online tool. 
-
-This parameter specifies how many barcodes needed be captured in a form. Value can be set from 1 to 99. The default value is 5. 
-
-Ex: if a document with 5 barcodes scanned with Dynamic Quantity specified as 3, then only 3 barcodes will be scanned out of 5.  There is no way to specify what barcodes to scan as it will scan any 3 out of the 5.
-
+ -->
 **Region separator -** used to configure a separator character for SimulScan text-region data (see Notes, below). When multiple text regions exist, the region separator will be inserted between the data strings from each region on the acquisition form. Region separators can be used with the [Keystroke Output Action key](../../output/keystroke) character settings to dispatch SimulScan region data to separate text fields.
 
 **Possible values**:

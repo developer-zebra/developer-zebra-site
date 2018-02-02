@@ -9,12 +9,11 @@ productversion: '6.7'
 
 Introduced in DataWedge 6.7.
 
-Used to import a Profile, which contains configuration settings for a particular application. 
+Used to import a Profile, which contains DataWedge configuration settings for a particular application. 
 
-### Import Behavior
-
-* When the `IMPORT_CONFIG` intent is called, it checks the `FOLDER_PATH` for the presence of configuration files. If `datawedge.db` is found, DataWedge restarts with the settings stored there. 
-* If a folder specified with this API contains any Profile configuration files (i.e. `dwprofile_profilename.db`) related to the newly loaded Profile, that Profile loads and the new settings are applied immediately.
+### Intent Behavior
+* When the `IMPORT_PROFILE` intent is called, it checks the folder specified with the `FOLDER_PATH` attribute for the presence of DataWedge database (`*.db`) files. If `datawedge.db` is found, DataWedge restarts with the settings stored there. 
+* If the specified folder contains any Profile configuration files (i.e. `dwprofile_profilename.db`) related to the newly loaded database, that Profile loads and its settings are applied immediately.
 * While the `IMPORT_CONFIG` intent is running, the Auto Import function is disabled. 
 
 [More about importing Profiles](../../settings/#importaprofile)
@@ -31,11 +30,11 @@ Used to import a Profile, which contains configuration settings for a particular
 
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.IMPORT_CONFIG"
 
-**BUNDLE**: &lt;mainbundle&gt; (see parameters below)
+**BUNDLE**: &lt;mainbundle&gt;
 
 * **FOLDER_PATH** [String]: (required) The fully qualified on-device path to the file being imported.  
 
-* **FILE_LIST** [String ArrayList]: (optional) Used to specify one or more required database (`.db`) files in the folder specified in `FOLDER_PATH`. If not specified, DataWedge uses files with a `.db` extension in the specified folder. **Can be used to specify a specific file**. 
+* **FILE_LIST** [String ArrayList]: (optional) Used to specify one or more required database (`.db`) files in the folder specified in `FOLDER_PATH`. If not specified, DataWedge uses files with a `.db` extension in the specified folder. 
 
 **Zebra recommends using the `getExternalFilesDirs` method** to identify accessible external storage locations in the device before sending the `IMPORT_PROFILE` intent. For example: 
 
@@ -50,23 +49,18 @@ Used to import a Profile, which contains configuration settings for a particular
 
 ### Result Codes
 
-Following the use of `IMPORT_PROFILE`, DataWedge broadcasts a result intent with the  status (success or failure) of the import. Result info returns as an ArrayList of bundles containing `RESULT_CODE` and `RESULT_CODE_INFO` sections to describe the additional information.
+After an `IMPORT_PROFILE` intent is sent, DataWedge broadcasts a result intent with the  status (success or failure) of the import. Result info is returned as an ArrayList of bundles containing `RESULT_CODE` and `RESULT_CODE_INFO` sections to describe the additional information.
 
-**RESULT_CODE -** INVALID_FOLDER_PATH
-**RESULT_CODE_INFO -** “folder path”
-
-**RESULT_CODE -** CONFIG_FILE_NOT_EXIST
-**RESULT_CODE_INFO -** “dwprofile_profilename.txt" , “dwA_profilename.db”
-
-New RESULT_CODE set
-Following result code will return with the specified folder/file name
-
-**EMPTY_FOLDER_PATH –** `FOLDER_PATH` is empty or not specified
-**INVALID_FOLDER_PATH –** Specified `FOLDER_PATH` is invalid
-**INVALID_CONFIG_FILE –** Corrupted DataWedge database files present in the folder
-**CONFIG_FILE_NOT_EXIST -** No valid DataWedge database files in the folder
-**INVALID_FILE_NAME –** Folder contains valid and invalid DataWedge .db file names; returns invalid file name(s)
-**CANNOT_READ_FILE –** Cannot read the specified database file
+* **RESULT_CODE -** CONFIG_FILE_NOT_EXIST
+* **EMPTY_FOLDER_PATH –** Specified `FOLDER_PATH` is empty or not specified
+* **INVALID_FOLDER_PATH –** Specified `FOLDER_PATH` is invalid
+ * **RESULT_CODE_INFO -** “&lt;folder path&gt;”
+* **INVALID_CONFIG_FILE –** Corrupted database files present in specified folder
+* **CONFIG_FILE_NOT_EXIST -** No valid DataWedge database files in the folder
+ * **RESULT_CODE_INFO -** “dwprofile_&lt;profilename&gt;.txt" , “dwA_&lt;profilename&gt;.db”
+* **INVALID_FILE_NAME –** Folder contains valid and invalid DataWedge .db file names
+ * **RESULT_CODE_INFO -** "&lt;invalid file name&gt;"
+* **CANNOT_READ_FILE –** Cannot read the specified database file
 
 [More about Result Codes](../resultinfo)  
 
@@ -91,6 +85,7 @@ Error messages are logged for invalid actions and parameters
 	fileNames.add("dwprofile_profileB.db");
 
 	bMain.putStringArrayList("FILE_LIST", fileNames);
+
 	// send the intent
 	Intent i = new Intent();
 	i.setAction(ACTION);

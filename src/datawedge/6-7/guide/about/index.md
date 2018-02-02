@@ -44,8 +44,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 **A Dynamic Templates parameter** allows the number of barcodes (from 1-99) to be decoded for a form to be specified.
 
-
-
+-----
 
 ## Version History
 

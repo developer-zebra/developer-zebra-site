@@ -15,17 +15,39 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 
 ## New in v2.7
 
-* **Support for MX 7.2** adds the following Setting Types and features:
+* **Enhanced Barcode Manager API**:
+ * Supports Multi-barcode decoding
+ * New `MULTI_BARCODE` value in `enum` ScanMode enables simultaneous decoding of multiple barcodes
+ * New `MultiBarcodeParams` class in `ScannerConfig` adds `barcodeCount` parameter to set the barcode count to be scanned
 
-* [Audio Manager](../../mx/audio) new CSP:
+* New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
+
+* **Enhanced SerialComm API**:
+ * `flowControlMode` under Serial Config takes `RTS_CTS`, `XON_XOFF` and `NONE` values
+
+* **Enhanced Profile Manager DataCapture**: 
+ * Supports Serial Input plug-in
+ * Support Zebra DS-3608 scanner
+
+* **Support for Multi-barcode decoding**:
+ * New `Multi Barcode` Scanning Mode option in Reader parameters enables simultaneous decoding of multiple barcodes
+ * New `Barcode count` field under Multi-barcode parameters allows a barcode count to be set
+ * Supports sending ENTER command as a string
+ * Enhanced support for Inter-character delay
+ * New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
+
+-----
+
+* **Support for MX 7.2** adds the following Setting Types and features:
+* **New [Audio Manager](../../mx/audio) CSP**:
  * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
-* [Display Manager](../../mx/displaymgr) new feature:
+* **Enhanced [Display Manager](../../mx/displaymgr) CSP**:
  * On VC80 devices, adds the ability to force the display to “Stay Awake” and remain on.
-* [Power Manager](../../mx/powermgr) new feature:
+* **Enhanced [Power Manager](../../mx/powermgr) CSP**:
 	* Turn ON/OFF “Doze Mode” energy saving features on the device. When enabled, only specially designated apps can prevent the device from entering a low-power state to preserve battery life. 
-* [Remote Scanner Manager](../../mx/remotescannermgr) new feature:
+* **Enhanced [Remote Scanner Manager](../../mx/remotescannermgr) CSP**:
  * Supports RS-507 and DS-3608 scanners
-* [Settings Manager](../../mx/settingsmgr) new feature:
+* **Enhanced [Settings Manager](../../mx/settingsmgr) CSP**:
  * Enable/Disable application notification control on devices running Android Nougat
 
 -----
@@ -36,22 +58,30 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 
 **The following devices have been tested and validated**:
 
+### Mobile devices
+
 * ET5X   - Lollipop
-* MC18   - KitKat
 * MC33   - Nougat
-* MC40   - KitKat 
-* MC67   - KitKat	 
-* MC92   - KitKat 
+* TC20   - Nougat
 * TC25   - Nougat
 * TC51   - Marshmallow, Nougat
-* TC55   - KitKat	 
 * TC56   - Marshmallow, Nougat
-* TC70   - KitKat, Lollipop
+* TC70   - Lollipop
 * TC70x  - Marshmallow, Nougat
-* TC75   - KitKat, Lollipop
+* TC75   - Lollipop
 * TC75x  - Marshmallow, Nougat 
-* TC8000 - KitKat,Lollipop
+* TC8000 - Lollipop
+* VC80x  - Nougat
 * WT6000 - Lollipop
+
+### Scanners and imagers
+
+* RS507
+* RS6000
+* RS5000
+* RS4000
+* DS3678
+* DS3608
 
 ### Development Tools Supported
 
@@ -60,9 +90,23 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
         * 2013
         * 2015
         * 2017
-* **Mac**
+* **Mac OS X**
     * Xamarin Studio
         * 6.x
+
+> **This version cannot target devices running KitKat**. 
+
+-----
+
+### Deprecations
+
+* **Support for configuring DataWedge using EMDK Profile Manager is deprecated**. Profile Manager capabilities categorized under Data Capture are still supported but will no longer be advanced. Zebra recommends using [DataWedge intent-based APIs](/datawedge) to configure DataWedge profiles going forward.
+
+* **Support for the** `ContinuousRead` **class is deprecated**. This class, which can be used to enable continuous scanning, is still supported but will no longer be advanced. Zebra recommends using the `aimType`, `sameSymbolTimeout`, `differentSymbolTimeout` reader parameters for the device camera, imager or laser.
+
+* **Support for the** `picklist` **field is deprecated**. This field, which is used for enabling the `picklist` mode, is still support but will ultimately be replaced by the `picklistEx` field. 
+
+-----
 
 ### Compatibility Notes
 

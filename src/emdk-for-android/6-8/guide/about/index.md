@@ -64,6 +64,8 @@ The following software must be installed prior to using the EMDK for Android.
 * DS3678
 * DS3608
 
+> **This version cannot target devices running KitKat**. 
+
 -----
 
 ## New in v6.8
@@ -84,24 +86,26 @@ The following software must be installed prior to using the EMDK for Android.
  * Supports Serial Input plug-in
  * Support Zebra DS-3608 scanner
 
-* Support for Multi-barcode decoding:
+* **Support for Multi-barcode decoding**:
  * New `Multi Barcode` Scanning Mode option in Reader parameters enables simultaneous decoding of multiple barcodes
  * New `Barcode count` field under Multi-barcode parameters allows a barcode count to be set
  * Supports sending ENTER command as a string
- * Enhanced support for Inter-Character Delay
+ * Enhanced support for Inter-character delay
  * New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
+
+-----
 
 * **Support for MX 7.2** adds the following Setting Types and features:
 
-* [Audio Manager](../../mx/audio) new CSP:
+* **New [Audio Manager](../../mx/audio) CSP**:
  * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
-* [Display Manager](../../mx/displaymgr) new feature:
+* **Enhanced [Display Manager](../../mx/displaymgr) CSP**:
  * On VC80 devices, adds the ability to force the display to “Stay Awake” and remain on.
-* [Power Manager](../../mx/powermgr) new feature:
+* **Enhanced [Power Manager](../../mx/powermgr) CSP**:
     * Turn ON/OFF “Doze Mode” energy saving features on the device. When enabled, only specially designated apps can prevent the device from entering a low-power state to preserve battery life. 
-* [Remote Scanner Manager](../../mx/remotescannermgr) new feature:
+* **Enhanced [Remote Scanner Manager](../../mx/remotescannermgr) CSP**:
  * Supports RS-507 and DS-3608 scanners
-* [Settings Manager](../../mx/settingsmgr) new feature:
+* **Enhanced [Settings Manager](../../mx/settingsmgr) CSP**:
  * Enable/Disable application notification control on devices running Android Nougat
 
 ### Deprecations

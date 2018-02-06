@@ -262,6 +262,89 @@ Error messages are logged for invalid actions and parameters.
 	    }
 	}
 
+### Get inter-character settings
+
+	private Integer ctrlCharacterDelayValue;
+	private Integer genericCharacterDelayValue;
+	private Boolean flagExtendedASCIIOnly;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+	    super.onCreate(savedInstanceState);
+	    setContentView(R.layout.activity_main);
+
+	    registerReceivers();
+	    ctrlCharacterDelayValue = null;
+	    genericCharacterDelayValue = null;
+	    flagExtendedASCIIOnly = null;
+	}
+
+	private void registerReceivers() {
+	    IntentFilter filter = new IntentFilter();
+	    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+	    filter.addCategory(Intent.CATEGORY_DEFAULT);
+	    registerReceiver(broadcastReceiver, filter);
+	}
+
+	@Override
+	protected void onDestroy() {
+	    super.onDestroy();
+	    unregisterReceiver(broadcastReceiver);
+	}
+
+	//Get configuration 
+	public void getKeyStrokeConfiguration(View arg){
+	    Bundle bMain = new Bundle();
+	    bMain.putString("PROFILE_NAME","Profile0 (default)");
+
+	    Bundle bConfig = new Bundle();
+	    bConfig.putString("PLUGIN_NAME","KEYSTROKE");
+
+	    bMain.putBundle("PLUGIN_CONFIG", bConfig);
+	    Intent i = new Intent();
+	    i.setAction("com.symbol.datawedge.api.ACTION");
+	    i.putExtra("com.symbol.datawedge.api.GET_CONFIG", bMain);
+	    this.sendBroadcast(i);
+	}
+
+	//broadcast receiver
+	private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+	    @Override
+	    public void onReceive(Context context, Intent intent) {
+	        String action = intent.getAction();
+	        Log.d(TAG, "#DataWedge-APP# Action: " + action);
+		
+	 
+		//result of get config
+	            if(intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG")){
+	                Bundle bundle = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG");
+	                if(bundle != null && !bundle.isEmpty()){
+	                    String profileName = bundle.getString("PROFILE_NAME");
+	                    String profileEnabled = bundle.getString("PROFILE_ENABLED");
+	                    ArrayList<Bundle> configBundleList = bundle.getParcelableArrayList("PLUGIN_CONFIG");
+	                    if(configBundleList!=null) {
+	                        for (Bundle configBundle : configBundleList) {
+	                            if (configBundle.getString("PLUGIN_NAME").equalsIgnoreCase("KEYSTROKE")) {
+	                                Bundle paramBundle = configBundle.getBundle("PARAM_LIST");
+	                                String keyStrokePluginEnabled = paramBundle.getString("keystroke_output_enabled");
+	                                String mExtendedAsciiDelay = paramBundle.getString("keystroke_delay_extended_ascii");
+	                                String mCtrlDelay = paramBundle.getString("keystroke_delay_control_chars");
+	                                String actionKeyChar = paramBundle.getString("keystroke_action_char");
+
+	                                Log.d(TAG, " ProfileName :" + profileName);
+	                                Log.d(TAG, " Profile enabled :" + profileEnabled);
+	                                Log.d(TAG, " Plugin enabled :" + keyStrokePluginEnabled);
+	                                Log.d(TAG, " Ctrl Char Delay :" + mCtrlDelay);
+	                                Log.d(TAG, " Character Delay :" + mExtendedAsciiDelay);
+	                                Log.d(TAG, " ActionKey Char :" + actionKeyChar);
+	                            }
+	                        }
+	                    }
+	                }
+	            }//end get config
+	            
+	    }//end onRecieve
+	};
 
 
 -----

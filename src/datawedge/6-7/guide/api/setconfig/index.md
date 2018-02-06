@@ -484,6 +484,104 @@ Command and configuration intent parameters determine whether to send result cod
 	bParams.putString("scanner_selection_by_identifier", "INTERNAL_IMAGER");
 	bConfig.putBundle("PARAM_LIST",bParams);
 
+### Configure an inter-character delay
+
+	private Integer ctrlCharacterDelayValue;
+	private Integer genericCharacterDelayValue;
+	private Boolean flagExtendedASCIIOnly;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+	    super.onCreate(savedInstanceState);
+	    setContentView(R.layout.activity_main);
+
+	    registerReceivers();
+	    ctrlCharacterDelayValue = null;
+	    genericCharacterDelayValue = null;
+	    flagExtendedASCIIOnly = null;
+	}
+
+	private void registerReceivers() {
+	    IntentFilter filter = new IntentFilter();
+	    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+	    filter.addCategory(Intent.CATEGORY_DEFAULT);
+	    registerReceiver(broadcastReceiver, filter);
+	}
+
+	@Override
+	protected void onDestroy() {
+	    super.onDestroy();
+	    unregisterReceiver(broadcastReceiver);
+	}
+
+	//Set configuration
+	public void setKeystrokeOutputPluginConfiguration(View v) {
+
+	    Bundle configBundle = new Bundle();
+	    configBundle.putString("PROFILE_NAME","Profile0 (default)");
+	    configBundle.putString("PROFILE_ENABLED","true");
+	    configBundle.putString("CONFIG_MODE","UPDATE");
+
+	    Bundle bConfig = new Bundle();
+
+	    bConfig.putString("PLUGIN_NAME", "KEYSTROKE");
+	    Bundle bParams = new Bundle();
+	    bParams.putString("keystroke_output_enabled","true");
+	    if(ctrlCharacterDelayValue!=null){
+	        bParams.putString("keystroke_delay_control_chars",ctrlCharacterDelayValue+"");
+	    }
+	    if(genericCharacterDelayValue !=null){
+	        bParams.putString("keystroke_character_delay", genericCharacterDelayValue +"");
+	    }
+	    if(flagExtendedASCIIOnly!=null){
+	        bParams.putString("keystroke_delay_multibyte_chars_only", flagExtendedASCIIOnly +"");
+	    }
+
+	    bConfig.putBundle("PARAM_LIST", bParams);
+	    configBundle.putBundle("PLUGIN_CONFIG", bConfig);
+
+	    Intent i = new Intent();
+	    i.setAction("com.symbol.datawedge.api.ACTION");
+	    i.putExtra("com.symbol.datawedge.api.SET_CONFIG", configBundle);
+	    i.putExtra("SEND_RESULT", "true");
+	    i.putExtra("COMMAND_IDENTIFIER", "KEYSTROKE_API");
+	    this.sendBroadcast(i);
+		}
+
+	//broadcast receiver
+	private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+	    @Override
+	    public void onReceive(Context context, Intent intent) {
+	        String action = intent.getAction();
+	        Log.d(TAG, "#DataWedge-APP# Action: " + action);
+
+
+		//result of set config
+	        if(action.equals("com.symbol.datawedge.api.RESULT_ACTION")){
+	            Bundle extrasBundle = intent.getExtras();
+	            Set<String> keys = extrasBundle.keySet();
+	            if(keys!=null&&keys.contains("RESULT")){
+	                String result = (String)extrasBundle.get("RESULT");
+	                Log.d(TAG,"Result:"+result);
+	                //get additional info
+	                Bundle resultInforBundle = (Bundle) extrasBundle.get("RESULT_INFO");
+	                Object resultCode = resultInforBundle.get("RESULT_CODE");
+	                if(resultCode instanceof String){
+	                    String code = (String)resultCode;
+	                    Log.d(TAG,"Code:"+code);
+	                }else if(resultCode instanceof String[]){
+	                    String[] codesArray = (String[])resultCode;
+	                    if(codesArray!=null){
+	                        for(String code : codesArray){
+	                            Log.d(TAG,"Code:"+code);
+	                        }
+	                    }
+	                }
+	            }
+
+	        }//end result of set config
+	    }//end onReceive
+		};
 
 -----
 

@@ -30,7 +30,7 @@ To create a Profile without configuring its settings parameters, see [CREATE_PRO
 **BUNDLE**: &lt;mainbundle&gt; (see parameters below)
 
 #### MAIN BUNDLE
-The main SetConfig bundle includes the following properties:
+The main `SET_CONFIG` bundle includes the following properties:
 
 * **PROFILE_NAME** [String]: The name of the Profile on which to perform action(s)
 * **CONFIG_MODE** [String]: (Default=OVERWRITE)
@@ -159,6 +159,8 @@ Error and debug messages are logged to the Android logging system, which can be 
 	$ adb logcat -s DWAPI
 
 Error messages are logged for invalid actions and parameters
+
+-----
 
 ## Example Code
 
@@ -470,7 +472,7 @@ Command and configuration intent parameters determine whether to send result cod
 
 		};
 
-### Use the internal imager for scanning: 
+### Use the internal imager for scanning
 
 	Bundle bConfig = new Bundle();
 
@@ -581,7 +583,7 @@ Command and configuration intent parameters determine whether to send result cod
 
 	        }//end result of set config
 	    }//end onReceive
-		};
+	};
 
 -----
 

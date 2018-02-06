@@ -46,8 +46,6 @@ automenu:
       items:
         - title: Analytics Manager
           url: /emdk-for-android/6-8/mx/analytics/
-        - title: Audio Manager
-          url: /emdk-for-android/6-8/mx/audio/
         - title: Audio Volume UI Manager
           url: /emdk-for-android/6-8/mx/audiomgr/
         - title: Batch Manager

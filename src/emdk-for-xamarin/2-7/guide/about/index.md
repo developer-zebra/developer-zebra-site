@@ -15,32 +15,31 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 
 ## New in v2.7
 
-* **Enhanced Barcode Manager API**:
- * Supports Multi-barcode decoding
- * New `MULTI_BARCODE` value in `enum` ScanMode enables simultaneous decoding of multiple barcodes
- * New `MultiBarcodeParams` class in `ScannerConfig` adds `barcodeCount` parameter to set the barcode count to be scanned
+**Enhanced Barcode Manager API**:
 
+* Supports Multi-barcode decoding
+* New `MULTI_BARCODE` value in `enum` ScanMode enables simultaneous decoding of multiple barcodes
+* New `MultiBarcodeParams` class in `ScannerConfig` adds `barcodeCount` parameter to set the barcode count to be scanned
 * New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
 
-* **Enhanced SerialComm API**:
- * `flowControlMode` under Serial Config takes `RTS_CTS`, `XON_XOFF` and `NONE` values
+**Enhanced SerialComm API**:
 
-* **Enhanced Profile Manager DataCapture**: 
- * Supports Serial Input plug-in
- * Support Zebra DS-3608 scanner
+* `flowControlMode` under Serial Config takes `RTS_CTS`, `XON_XOFF` and `NONE` values
 
+**Enhanced Profile Manager DataCapture**: 
+
+* Supports Serial Input plug-in
+* Support Zebra DS-3608 scanner
 * **Support for Multi-barcode decoding**:
  * New `Multi Barcode` Scanning Mode option in Reader parameters enables simultaneous decoding of multiple barcodes
  * New `Barcode count` field under Multi-barcode parameters allows a barcode count to be set
- * Supports sending ENTER command as a string
- * Enhanced support for Inter-character delay
- * New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
+* Supports sending ENTER command as a string
+* Enhanced support for Inter-character delay
+* New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
 
 -----
 
-* **Support for MX 7.2** adds the following Setting Types and features:
-* **New [Audio Manager](../../mx/audio) CSP**:
- * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
+**Support for MX 7.2** adds the following Setting Types and features:
 * **Enhanced [Display Manager](../../mx/displaymgr) CSP**:
  * On VC80 devices, adds the ability to force the display to “Stay Awake” and remain on.
 * **Enhanced [Power Manager](../../mx/powermgr) CSP**:
@@ -49,6 +48,11 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
  * Supports RS-507 and DS-3608 scanners
 * **Enhanced [Settings Manager](../../mx/settingsmgr) CSP**:
  * Enable/Disable application notification control on devices running Android Nougat
+
+<!-- 2/6/18- removed per eng. 
+* **New [Audio Manager](../../mx/audio) CSP**:
+ * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
+ -->
 
 -----
 

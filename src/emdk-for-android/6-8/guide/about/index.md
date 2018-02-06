@@ -97,8 +97,6 @@ The following software must be installed prior to using the EMDK for Android.
 
 * **Support for MX 7.2** adds the following Setting Types and features:
 
-* **New [Audio Manager](../../mx/audio) CSP**:
- * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
 * **Enhanced [Display Manager](../../mx/displaymgr) CSP**:
  * On VC80 devices, adds the ability to force the display to “Stay Awake” and remain on.
 * **Enhanced [Power Manager](../../mx/powermgr) CSP**:
@@ -107,6 +105,11 @@ The following software must be installed prior to using the EMDK for Android.
  * Supports RS-507 and DS-3608 scanners
 * **Enhanced [Settings Manager](../../mx/settingsmgr) CSP**:
  * Enable/Disable application notification control on devices running Android Nougat
+
+<!-- 2/6/18- removed per eng. 
+* **New [Audio Manager](../../mx/audio) CSP**:
+ * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
+ -->
 
 ### Deprecations
 

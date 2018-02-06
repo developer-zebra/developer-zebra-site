@@ -72,30 +72,31 @@ The following software must be installed prior to using the EMDK for Android.
 
 * Supports compiling applications to Android API level 26 with new "EMDK APIs, Android 26, rev xx (API 26)" add-on
 
-* **Enhanced Barcode Manager API**:
- * Supports Multi-barcode decoding
- * New `MULTI_BARCODE` value in `enum` ScanMode enables simultaneous decoding of multiple barcodes
- * New `MultiBarcodeParams` class in `ScannerConfig` adds `barcodeCount` parameter to set the barcode count to be scanned
+**Enhanced Barcode Manager API**:
 
+* Supports Multi-barcode decoding
+* New `MULTI_BARCODE` value in `enum` ScanMode enables simultaneous decoding of multiple barcodes
+* New `MultiBarcodeParams` class in `ScannerConfig` adds `barcodeCount` parameter to set the barcode count to be scanned
 * New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
 
-* **Enhanced SerialComm API**:
- * `flowControlMode` under Serial Config takes `RTS_CTS`, `XON_XOFF` and `NONE` values
+**Enhanced SerialComm API**:
 
-* **Enhanced Profile Manager DataCapture**: 
- * Supports Serial Input plug-in
- * Support Zebra DS-3608 scanner
+* `flowControlMode` under Serial Config takes `RTS_CTS`, `XON_XOFF` and `NONE` values
 
+**Enhanced Profile Manager DataCapture**: 
+
+* Supports Serial Input plug-in
+* Support Zebra DS-3608 scanner
 * **Support for Multi-barcode decoding**:
  * New `Multi Barcode` Scanning Mode option in Reader parameters enables simultaneous decoding of multiple barcodes
  * New `Barcode count` field under Multi-barcode parameters allows a barcode count to be set
- * Supports sending ENTER command as a string
- * Enhanced support for Inter-character delay
- * New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
+* Supports sending ENTER command as a string
+* Enhanced support for Inter-character delay
+* New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
 
 -----
 
-* **Support for MX 7.2** adds the following Setting Types and features:
+**Support for MX 7.2** adds the following Setting Types and features:
 
 * **Enhanced [Display Manager](../../mx/displaymgr) CSP**:
  * On VC80 devices, adds the ability to force the display to “Stay Awake” and remain on.

@@ -44,6 +44,8 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 **A Dynamic Templates parameter** allows the number of barcodes (from 1-99) to be decoded for a form to be specified.
 
+**A new [IMPORT_CONFIG API](../api/importconfig)** allows settings files to be imported using an intent. 
+
 -----
 
 ## Version History

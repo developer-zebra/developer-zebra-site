@@ -1,22 +1,22 @@
 ---
-title: Import Profile 
+title: Import Config 
 layout: guide.html
 product: DataWedge
 productversion: '6.7'
 ---
 
-## IMPORT_PROFILE
+## IMPORT_CONFIG
 
 Introduced in DataWedge 6.7.
 
-Used to import a Profile, which contains DataWedge configuration settings for a particular application. 
+Used to import a DataWedge Config file, which contains DataWedge settings for Profiles, Plug-ins and all other DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters.
 
 ### Intent Behavior
-* When the `IMPORT_PROFILE` intent is called, it checks the folder specified with the `FOLDER_PATH` attribute for the presence of DataWedge database (`*.db`) files. If `datawedge.db` is found, DataWedge restarts with the settings stored there. 
+* When the `IMPORT_CONFIG` intent is called, it checks the folder specified with the `FOLDER_PATH` attribute for the presence of DataWedge database (`*.db`) files. If `datawedge.db` is found, DataWedge restarts with the settings stored there. 
 * If the specified folder contains any Profile configuration files (i.e. `dwprofile_profilename.db`) related to the newly loaded database, that Profile loads and its settings are applied immediately.
 * While the `IMPORT_CONFIG` intent is running, the Auto Import function is disabled. 
 
-[More about importing Profiles](../../settings/#importaprofile)
+[More about importing DataWedge Configurations](../../settings/#importacconfig)
 
 ### Function Prototype
 
@@ -36,7 +36,7 @@ Used to import a Profile, which contains DataWedge configuration settings for a 
 
 * **FILE_LIST** [String ArrayList]: (optional) Used to specify one or more required database (`.db`) files in the folder specified in `FOLDER_PATH`. If not specified, DataWedge uses files with a `.db` extension in the specified folder. 
 
-**Zebra recommends using the `getExternalFilesDirs` method** to identify accessible external storage locations in the device before sending the `IMPORT_PROFILE` intent. For example: 
+**Zebra recommends using the `getExternalFilesDirs` method** to identify accessible external storage locations in the device before sending the `IMPORT_CONFIG` intent. For example: 
 
 	File[] fileDirs = getExternalFilesDirs(null);
 
@@ -49,7 +49,7 @@ Used to import a Profile, which contains DataWedge configuration settings for a 
 
 ### Result Codes
 
-After an `IMPORT_PROFILE` intent is sent, DataWedge broadcasts a result intent with the  status (success or failure) of the import. Result info is returned as an ArrayList of bundles containing `RESULT_CODE` and `RESULT_CODE_INFO` sections to describe the additional information.
+After an `IMPORT_CONFIG` intent is sent, DataWedge broadcasts a result intent with the  status (success or failure) of the import. Result info is returned as an ArrayList of bundles containing `RESULT_CODE` and `RESULT_CODE_INFO` sections to describe the additional information.
 
 * **RESULT_CODE -** CONFIG_FILE_NOT_EXIST
 * **EMPTY_FOLDER_PATH –** Specified `FOLDER_PATH` is empty or not specified

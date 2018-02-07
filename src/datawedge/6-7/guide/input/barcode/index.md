@@ -691,26 +691,55 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 * **Software Picklist -** Picklist feature is handled in the software; no commands are sent to hardware.
 
-**Note: Performance might vary on some devices if Hardware or Software Picklist modes are set**.
+**Picklist Notes** 
+
+* Performance might vary on some devices if Hardware or Software Picklist modes are set.
+* If using Multibarcode mode, see important behavior notes below. 
 
 ------
 
-**Same Symbol Timeout -** This parameter is used to prevent the scanner from decoding the same symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
+**Same Symbol Timeout -** Used to prevent the scanner from decoding the same symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
-**Different Symbol Timeout -** This parameter is used to prevent the scanner from decoding another symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
+**Different Symbol Timeout -** Used to prevent the scanner from decoding another symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
-**Scanning Modes -** This parameter is used to select between Single (normal) mode and UDI mode, which acquires multiple inputs as specified in the selected Universal Device Identifier UDI parameter(s).  **See Note below**. 
+-----
+
+**Scanning Modes -** Used to select between Single (normal), UDI and MultiBarcode modes. UDI mode acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). MultiBarcode mode acquires from 2-10 barcodes with each scan as specified in the Multibarcode params panel. **Default=5**.
+
+> See important notes below.
+
+### UDI Decoding
 
 <img style="height:350px" src="scanning_modes.png"/>
 _When UDI scanning mode is enabled (as above)_... 
 <img style="height:350px" src="udi_params.png"/>
 ..._the selected UDI input parameter(s) will be used_.  
 
-> **Note**: Output of collected UDI data might require settings adjustments of token separation character and output order. UDI settings also might vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke), [Intent Output](../../output/intent) and/or [IP Output](../../output/ip) guides for more information.
+**UDI Decoding Notes** 
 
-**LCD Mode -** Enable/Disable LCD Mode, which enhances the ability of the imager to read barcodes from LCD displays such as cellphones. **Applies to Scan Module only**.
+* Output of collected UDI data might require settings adjustments of the token-separation character and/or output order. 
+* UDI settings can vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke), [Intent Output](../../output/intent) and/or [IP Output](../../output/ip) guides for more information.
 
-**Note: Use of LCD mode might lead to performance degradation and a blinking reticle prior to decoding**.
+### MultiBarcode Decoding
+
+<img style="height:350px" src="dw_6.7_multibarcode.png"/>
+_When MultiBarcode scanning mode is enabled (as above)_... 
+<img style="height:350px" src="dw_6.7_multibarcode_param_embed.png"/>
+..._specify the number of barcodes to be decoded with each scan_.  
+
+**Multi-barcode Notes**
+
+* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes (from 2-10) specified in the MultiBarcode params panel. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
+
+* **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
+
+* **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a MultiBarcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
+
+* **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
+
+-----
+
+**LCD Mode -** Used to Enable/Disable LCD Mode, which enhances the ability of the imager to read barcodes from LCD displays such as cellphones (applies to Scan Module only). **Use of LCD mode might lead to performance degradation and a blinking reticle prior to decoding**.
 
 ------
 

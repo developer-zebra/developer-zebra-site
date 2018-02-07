@@ -36,15 +36,17 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 ### New in DataWedge 6.7
 
-**This version supports devices running Android Lollipop and higher only**. 
+* **This version supports devices running Android Lollipop and higher only**. 
 
-**Enhanced intercharacter delay function** allows a delay to be specified for all characters or for multi-byte characters only.  
+* **Supports [multi-barcode input](../input/barcode/#readerparams)** for simultaneous scanning of more than one barcode at a time.  
 
-**AimType now supports Press and Sustain** function continues a decode session until the Beam Timer is expired, barcode is decoded or the read is canceled.  
+* **Enhanced [inter-character delay](../output/keystroke/#keystrokeoutputsetup) function** allows a delay to be specified for all characters or for multi-byte characters only.  
 
-**A Dynamic Templates parameter** allows the number of barcodes (from 1-99) to be decoded for a form to be specified.
+* **AimType now supports [Press and Sustain](../input/barcode/#readerparams)** function continues a decode session until the Beam Timer is expired, barcode is decoded or the read is canceled.  
 
-**A new [IMPORT_CONFIG API](../api/importconfig)** allows settings files to be imported using an intent. 
+* **A [Dynamic Templates parameter](../input/simulscan)** allows the number of barcodes to be specified (from 1-99) for decoding on a form when using SimulScan Dynamic Templates.
+
+* **A new [IMPORT_CONFIG API](../api/importconfig)** allows settings files to be imported using an intent. 
 
 -----
 

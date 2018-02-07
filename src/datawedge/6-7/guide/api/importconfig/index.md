@@ -12,7 +12,11 @@ Introduced in DataWedge 6.7.
 Used to import a DataWedge Config file, which contains DataWedge settings for Profiles, Plug-ins and all other DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters.
 
 ### Intent Behavior
-* When the `IMPORT_CONFIG` intent is called, it checks the folder specified with the `FOLDER_PATH` attribute for the presence of DataWedge database (`*.db`) files. If `datawedge.db` is found, DataWedge restarts with the settings stored there. 
+
+<!-- waiting for confirmation from engineering on this:
+* **Warning**: Successfully importing a Config file overwrites all DataWedge settings and Profiles previously stored on the device.
+ -->
+ * When the `IMPORT_CONFIG` intent is called, it checks the folder specified with the `FOLDER_PATH` attribute for the presence of DataWedge database (`*.db`) files. If `datawedge.db` is found, DataWedge restarts with the settings stored there. 
 * If the specified folder contains any Profile configuration files (i.e. `dwprofile_profilename.db`) related to the newly loaded database, that Profile loads and its settings are applied immediately.
 * While the `IMPORT_CONFIG` intent is running, the Auto Import function is disabled. 
 

@@ -6,35 +6,42 @@ productversion: '6.7'
 ---
 
 ## Overview
-Intent Output sends the processed data to the associated foreground application as payload within an Android intent. This allows acquired data to be passed programmatically to an application, where it can be consumed or further processed. The core components of an application (its activities, services and broadcast receivers) also can be activated by intents. 
 
+Intent Output allows data acquired and processed by DataWedge to be sent to the associated foreground application as payload within an Android intent. This allows acquired data to be passed programmatically to an application, where it can be consumed or further processed. The core components of an application (its activities, services and broadcast receivers) also can be activated by intents. 
+
+### Intent 101
 An intent object is a bundle of information that describes a desired action. It includes the data to be acted upon, the category of component that should perform the action and other pertinent data and/or instructions. When an intent is initiated, Android locates an appropriate component to respond to the intent, launches a new instance of the component (if needed), and passes the intent object to it.
 
-Components advertise the kinds of intents they can handle through intent filters, which are specified in the `AndroidManifest.xml` file as &lt;intent-filter&gt; elements. A component can have any number of intent filters, each describing a different capability. 
+Components advertise their capabilities (the kinds of intents they can respond to) through intent filters. Since the system must learn which intents a component can handle before it launches the component, intent filters are specified in the app's `AndroidManifest.xml` file as &lt;intent-filter&gt; elements. A component can have any number of intent filters, each describing a different capability.  
 
-> The parameters of this feature can be configured using the [Set Config API](../../api/setconfig).
+For example, if the manifest contains...
 
-#### See also: 
+	<intent-filter>
+	...
+	<action android:name="android.intent.action.DEFAULT" />
+	<category android:name="android.intent.category.MAIN" />
+	</intent-filter>
 
-**Tutorial: [Scanning with Datawedge Intent Output on Zebra Devices](http://www.darryncampbell.co.uk/2017/12/13/tutorial-scan-with-datawedge-intent-output-on-zebra-devices/)**
+...the intent action in the Intent Output configuration would be:
+
+`android.intent.category.DEFAULT`
+
+and the Intent category would be:
+
+`android.intent.category.MAIN`
 
 -----
 
 ## Intent Output Setup
-DataWedge invokes an intent though an **Intent action** in an **Intent category** as described in its `AndroidManifest.xml` file. For example, if the DataWedge manifest contains the lines...
 
-    <intent-filter>
-        ...
-        <action android:name="com.myapp.action" />
-		<category android:name="android.intent.category.DEFAULT" />
-        ...
-    </intent-filter>
-
-...the **Intent action** is `com.myapp.action` and the **Intent category** is `android.intent.category.DEFAULT`.
+DataWedge invokes an intent though an **Intent action** in an **Intent category** as described in its `AndroidManifest.xml` file. 
 
 When combined, these two values are like a "channel" to which an app can listen for intents that use the same combination, filtering out "noise" from other intents that use different value pairs. **Once these values are known, DataWedge Intent Output must be set to match**. 
 
 >**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched with every decode, and the acquired data sent to each newly spawned instance. 
+
+
+> The parameters of this feature can be configured through the UI or by using the [Set Config API](../../api/setconfig).
 
 -----
 
@@ -376,6 +383,10 @@ The decode-related data added to an intent bundle can be retrieved using specifi
 --> 
 
 -----
+
+**See also**: 
+
+**Tutorial: [Scanning with Datawedge Intent Output on Zebra Devices](http://www.darryncampbell.co.uk/2017/12/13/tutorial-scan-with-datawedge-intent-output-on-zebra-devices/)**
 
 **Other DataWedge Output Options**:
 

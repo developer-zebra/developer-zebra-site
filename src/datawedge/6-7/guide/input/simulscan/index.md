@@ -39,7 +39,7 @@ Custom template XML files copied to the `/enterprise/device/settings/datawedge/t
 
 Zebra partners and other authorized users can create custom templates online using Zebra's [SimulScan Template Builder](../../../../../simulscan/1-1/guide/templatebuilder). 
 
-**Dynamic Template Params –** permits the configuration of parameters when using Dynamic Templates, which are created using [Template Builder](http://simulscan.zebra.com/). Currently supports Dynamic Quantity, the specification of the number of barcodes (from 1-99; default=5) to be decoded on a form. 
+**Dynamic Template Params –** permits the configuration of parameters when using Dynamic Templates, which offer the flexiblity of accepting input parameters based on varying usage scenarios without requiring a different template for each. If the selected template contains Dynamic-Template parameters, DataWedge prompts the user to configure the parameters. Currently supports Dynamic Quantity, the number of barcodes (from 1-99; default=5) to be decoded on a form. Dynamic Templates are created using [Template Builder](http://simulscan.zebra.com/). 
 
 <!-- <img style="height:350px" src="dynamic_template.png"/>
 _Dynamic Barcode Quantity_

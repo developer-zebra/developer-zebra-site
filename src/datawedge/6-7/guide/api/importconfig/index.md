@@ -16,7 +16,7 @@ Used to import a DataWedge Config file, which contains DataWedge settings for Pr
 * If the specified folder contains any Profile configuration files (i.e. `dwprofile_profilename.db`) related to the newly loaded database, that Profile loads and its settings are applied immediately.
 * While the `IMPORT_CONFIG` intent is running, the Auto Import function is disabled. 
 
-[More about importing DataWedge Configurations](../../settings/#importacconfig)
+[More about importing DataWedge Configurations](../../settings/#importaconfig)
 
 ### Function Prototype
 

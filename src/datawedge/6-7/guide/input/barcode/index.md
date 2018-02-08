@@ -717,7 +717,7 @@ _When UDI scanning mode is enabled (as above)_...
 
 **UDI Decoding Notes** 
 
-* Output of collected UDI data might require settings adjustments of the token-separation character and/or output order. 
+* Output of collected UDI data might require settings adjustments of the token-separation character and/or output order. See the [Keystroke Output guide](../../output/keystroke/#udidataoutput) guide for more information. 
 * UDI settings can vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke), [Intent Output](../../output/intent) and/or [IP Output](../../output/ip) guides for more information.
 
 ### MultiBarcode Decoding
@@ -728,6 +728,10 @@ _When MultiBarcode scanning mode is enabled (as above)_...
 ..._specify the number of barcodes to be decoded with each scan_.  
 
 **Multi-barcode Notes**
+
+* **Supported on select devices only**. See the [About page](../../about) for details. 
+
+* **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke). 
 
 * **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes (from 2-10) specified in the MultiBarcode params panel. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
 

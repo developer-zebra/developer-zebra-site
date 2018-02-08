@@ -38,7 +38,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 * **This version supports devices running Android Lollipop and higher only**. 
 
-* **Supports [multi-barcode input](../input/barcode/#readerparams)** for simultaneous scanning of more than one barcode at a time.  
+* **Supports [multi-barcode input](../input/barcode/#readerparams)** for simultaneous acquisition of more than one barcode at a time (**TC20/TC25 devices only**).  
 
 * **Enhanced [inter-character delay](../output/keystroke/#keystrokeoutputsetup) function** allows a delay to be specified for all characters or for multi-byte characters only.  
 
@@ -46,7 +46,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 * **A [Dynamic Templates parameter](../input/simulscan)** allows the number of barcodes to be specified (from 1-99) for decoding on a form when using SimulScan Dynamic Templates.
 
-* **A new [IMPORT_CONFIG API](../api/importconfig)** allows settings files to be imported using an intent. 
+* **A new [IMPORT_CONFIG API](../api/importconfig)** allows Config and Profile settings files to be imported using an intent. 
 
 -----
 

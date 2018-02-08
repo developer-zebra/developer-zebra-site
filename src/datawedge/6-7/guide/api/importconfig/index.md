@@ -9,18 +9,24 @@ productversion: '6.7'
 
 Introduced in DataWedge 6.7.
 
-Used to import a DataWedge Config file, which contains DataWedge settings for Profiles, Plug-ins and all other DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters.
+Used to import a DataWedge Profile and/or Config settings files. **A Profile is a single group of settings** that control how DataWedge will behave with one or more specific applications and devices. **A Config file can contain numerous Profiles**, and stores all other DataWedge settings, including its status (enabled/disabled), logging and other configurable parameters.
+
+> **Importing a Config file** (`database.db`) **<u>overwrites all DataWedge settings</u> and Profiles previously stored on the device**. 
 
 ### Intent Behavior
 
-<!-- waiting for confirmation from engineering on this:
-* **Warning**: Successfully importing a Config file overwrites all DataWedge settings and Profiles previously stored on the device.
- -->
- * When the `IMPORT_CONFIG` intent is called, it checks the folder specified with the `FOLDER_PATH` attribute for the presence of DataWedge database (`*.db`) files. If `datawedge.db` is found, DataWedge restarts with the settings stored there. 
-* If the specified folder contains any Profile configuration files (i.e. `dwprofile_profilename.db`) related to the newly loaded database, that Profile loads and its settings are applied immediately.
-* While the `IMPORT_CONFIG` intent is running, the Auto Import function is disabled. 
+* This API is designed for use **_after_** a new settings file (Config or Profile) has been pushed to the device.  
+* When the `IMPORT_CONFIG` intent is called, it checks the folder specified with the `FOLDER_PATH` attribute for the presence of DataWedge settings files. 
+* If a Config file (always called "`datawedge.db`") is found, DataWedge restarts and immediately applies the settings in that file, permanentely erasing all previous DataWedge settings. 
+* All imported Profile configuration files (always called "`dwprofile_<profilename>.db`") are added to the list of available Profiles on the device. 
+* If a Profile exists on the device with the same name as one being imported, **the existing Profile will be modified by the imported one**.
+* If the specified folder contains a Profile with the same name as the currently active Profile, the new Profile is imported and its settings are applied immediately.
+* While the `IMPORT_CONFIG` intent is running, the [Auto Import](../settings/#autoimport) function is disabled. 
 
-[More about importing DataWedge Configurations](../../settings/#importaconfig)
+**See also**: 
+
+* [Importing DataWedge Config files](../../settings/#importaconfig)
+* [Importing DataWedge profiles](../../settings/#importaprofile)
 
 ### Function Prototype
 
@@ -64,7 +70,6 @@ After an `IMPORT_CONFIG` intent is sent, DataWedge broadcasts a result intent wi
 
 **RESULT_CODE**: The following result codes are returned with the specified folder/file name or the `RESULT_CODE_INFO` as indicated:
 
-* **RESULT_CODE -** CONFIG_FILE_NOT_EXIST
 * **EMPTY_FOLDER_PATH –** `FOLDER_PATH` is empty or not specified
 * **INVALID_FOLDER_PATH –** Specified `FOLDER_PATH` is invalid
  * **RESULT_CODE_INFO -** “&lt;folder path&gt;”

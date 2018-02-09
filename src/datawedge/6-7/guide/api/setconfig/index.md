@@ -38,7 +38,7 @@ The main `SET_CONFIG` bundle includes the following properties:
  * **OVERWRITE**: If Profile exists, resets all options to default, then configures specified settings
  * **UPDATE**: Updates only specified settings
 * **PROFILE_ENABLED** [String]: Optional; Controls whether to enable (true) or disable (false) a Profile (default=true). If not specified, no change is made to the Profile state.
-* **PLUGIN_CONFIG** [Bundle]: A bundle (nested within the main bundle) that contains settings of a specific Plug-in
+* **PLUGIN_CONFIG** [Bundle[ ]]: A bundle array (nested within the main bundle) that contains settings of each Plug-in
 * **APP_LIST** [Array]: List of applications and/or activities to associate with the Profile
 
 #### PLUGIN_CONFIG BUNDLE
@@ -822,7 +822,10 @@ Command and configuration intent parameters determine whether to send result cod
 
 * The `keystroke_delay_extended_ascii` parameter is deprecated. 
 * If a Keystroke Plug-in bundle uses the `keystroke_delay_extended_ascii` parameter, DataWedge sets the `keystroke_delay_multibyte_chars_only` parameter to true. 
-* If the `keystroke_delay_extended_ascii` and `keystroke_character_delay` parameters are both sent, the value of the `keystroke_character_delay` is retained, the `keystroke_delay_extended_ascii` value is ignored. If available, the `keystroke_delay_multibyte_chars_only` setting is saved, and is otherwise considered false.
+* If both the `keystroke_delay_extended_ascii` and `keystroke_character_delay` parameters are sent: 
+ * The `keystroke_character_delay` value is retained.
+ * The `keystroke_delay_extended_ascii` value is ignored. 
+ * If available, the `keystroke_delay_multibyte_chars_only` value is saved; it is otherwise considered false.
 
 -----
 

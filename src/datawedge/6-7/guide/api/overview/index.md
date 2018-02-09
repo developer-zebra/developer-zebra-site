@@ -10,10 +10,11 @@ DataWedge APIs operate primarily through Android intents--specific commands that
 
 In DataWedge versions prior to 6.2, applications access DataWedge APIs by broadcasting an intent, and use the primary pieces of information in the intent (action and data) to specify which API function to perform. DataWedge 6.2 and later implement intents as extras of an action intent, permitting multiple API calls to be sent as extras using a single intent action. 
 
-**Also see**:
+**SEE ALSO**:
 
+* **[Using Intents](../../output/intent) -** A brief primer on intents and how to configure DataWedge to use them
 * **[DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges) -** by Zebra engineer Darryn Campbell 
-* **[Sample DataWedge app](../tutorials) -** shows how to receive scanned barcode data via an intent
+* **[Sample DataWedge app](../tutorials) -** Demonstrates how to receive scanned data through an intent
 
 -----
 

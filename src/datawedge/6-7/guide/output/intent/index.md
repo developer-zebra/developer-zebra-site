@@ -7,9 +7,9 @@ productversion: '6.7'
 
 ## Overview
 
-Intent Output allows data acquired and processed by DataWedge to be sent to the associated foreground application as payload within an Android intent. This allows acquired data to be passed programmatically to an application, where it can be consumed or further processed. The core components of an application (its activities, services and broadcast receivers) also can be activated by intents. 
+Intent Output allows data acquired and processed by DataWedge to be sent to the associated foreground application as payload within an Android intent object. This allows acquired data to be passed programmatically to an application, where it can be consumed or further processed. The core components of an application (its activities, services and broadcast receivers) also can be activated by intents, as can many DataWedge features through the [DataWedge APIs](../../api).   
 
-### Intent 101
+### The Intent Object
 An intent object is a bundle of information that describes a desired action. It includes the data to be acted upon, the category of component that should perform the action and other pertinent data and/or instructions. When an intent is initiated, Android locates an appropriate component to respond to the intent, launches a new instance of the component (if needed), and passes the intent object to it.
 
 Components advertise their capabilities (the kinds of intents they can respond to) through intent filters. Since the system must learn which intents a component can handle before it launches the component, intent filters are specified in the app's `AndroidManifest.xml` file as &lt;intent-filter&gt; elements. A component can have any number of intent filters, each describing a different capability.  
@@ -29,6 +29,13 @@ For example, if the manifest contains...
 and the Intent category would be:
 
 `android.intent.category.MAIN`
+
+-----
+
+**SEE ALSO**:
+
+* **[DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges) -** by Zebra engineer Darryn Campbell 
+* **[Sample DataWedge app](../../api/tutorials) -** Demonstrates how to receive scanned data through an intent
 
 -----
 
@@ -384,9 +391,12 @@ The decode-related data added to an intent bundle can be retrieved using specifi
 
 -----
 
-**See also**: 
+**SEE ALSO**: 
 
-**Tutorial: [Scanning with Datawedge Intent Output on Zebra Devices](http://www.darryncampbell.co.uk/2017/12/13/tutorial-scan-with-datawedge-intent-output-on-zebra-devices/)**
+* **[DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges) -** by Zebra engineer Darryn Campbell 
+* **[Sample DataWedge app](../../api/tutorials) -** Demonstrates how to receive scanned data through an intent
+
+-----
 
 **Other DataWedge Output Options**:
 

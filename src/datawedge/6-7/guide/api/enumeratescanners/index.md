@@ -128,7 +128,7 @@ Error messages are logged for invalid actions and parameters.
 	          
 	            String ScannerName = bunb.getString("SCANNER_NAME");
 	            int ScannerIndex = bunb.getInt("SCANNER_INDEX"));
-	            bunb ScannerConnectionState = bunb.getBoolean("SCANNER_CONNECTION_STATE");
+	            Boolean ScannerConnectionState = bunb.getBoolean("SCANNER_CONNECTION_STATE");
 	            String ScannerId = bunb.getString("SCANNER_IDENTIFIER");
 
 	        }

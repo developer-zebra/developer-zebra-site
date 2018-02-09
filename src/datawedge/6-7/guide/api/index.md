@@ -8,6 +8,8 @@ automenu:
   items:
     - title: General Information
       items:
+        - title: Using Intents 
+          url: ../output/intent
         - title: Using DataWedge APIs 
           url: overview
         - title: Using Intent Result Codes  

@@ -1,0 +1,389 @@
+---
+title: Intent Output
+layout: guide.html
+product: DataWedge
+productversion: '6.6'
+---
+
+## Overview
+Intent Output sends the processed data to the associated foreground application as payload within an Android intent. This allows acquired data to be passed programmatically to an application, where it can be consumed or further processed. The core components of an application (its activities, services and broadcast receivers) also can be activated by intents. 
+
+An intent object is a bundle of information that describes a desired action. It includes the data to be acted upon, the category of component that should perform the action and other pertinent data and/or instructions. When an intent is initiated, Android locates an appropriate component to respond to the intent, launches a new instance of the component (if needed), and passes the intent object to it.
+
+Components advertise the kinds of intents they can handle through intent filters, which are specified in the `AndroidManifest.xml` file as &lt;intent-filter&gt; elements. A component can have any number of intent filters, each describing a different capability. 
+
+> The parameters of this feature can be configured using the [Set Config API](../../api/setconfig).
+
+#### See also: 
+
+**Tutorial: [Scanning with Datawedge Intent Output on Zebra Devices](http://www.darryncampbell.co.uk/2017/12/13/tutorial-scan-with-datawedge-intent-output-on-zebra-devices/)**
+
+-----
+
+## Intent Output Setup
+DataWedge invokes an intent though an **Intent action** in an **Intent category** as described in its `AndroidManifest.xml` file. For example, if the DataWedge manifest contains the lines...
+
+    <intent-filter>
+        ...
+        <action android:name="com.myapp.action" />
+		<category android:name="android.intent.category.DEFAULT" />
+        ...
+    </intent-filter>
+
+...the **Intent action** is `com.myapp.action` and the **Intent category** is `android.intent.category.DEFAULT`.
+
+When combined, these two values are like a "channel" to which an app can listen for intents that use the same combination, filtering out "noise" from other intents that use different value pairs. **Once these values are known, DataWedge Intent Output must be set to match**. 
+
+>**Important**: For scanning applications that output directly to an activity, **the activity must be designated as "singleTop"** in the app's `AndroidManifest.xml` file. Failure to designate an activity in this way will cause an instance of the activity to be launched with every decode, and the acquired data sent to each newly spawned instance. 
+
+-----
+
+**To set a DataWedge Action/Category pair**: 
+
+**&#49;. Locate the Intent Output section of the Profile** being configured.
+
+**&#50;. Check "Enabled" box** to activate Intent Output:  
+<img style="height:350px" src="../intent_output 2.png"/>
+_Intent Output options for the "Launcher" Profile_
+<br>
+
+**&#51;. Specify action, category and delivery** as described below: 
+
+**Intent action -** specifies the action to handle the intent 
+
+**Intent category -** specifies the category of intent to be handled 
+
+**Intent delivery -** used to select one of three delivery methods for intent-based data:
+* **Send via startActivity** 
+* **Send via startService** 
+* **Broadcast Intent** 
+
+**When Intent delivery is set to Broadcast Intent**, DataWedge sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. **Zebra recommends using this flag <u>only if delays are seen</u> in delivery of intents immediately following device boot-up**.
+
+-----
+
+## Serial Output 
+When acquiring data with a device connected to a serial/USB port, data populates the intent bundle using the bundle extras listed below. **Note**: Some of these extras were introduced with DataWedge 6.5, as indicated. <!-- **See important note that follows**.  --> 
+
+### Parameters
+
+**Extra Name**: "com.symbol.datawedge.data_string"<br>
+**Type**: [String]<br>
+**Contents**: UTF8-encoded string data<br>
+
+-----
+
+**Extra Name**: "com.symbol.datawedge.source"<br>
+**Type**: [String]<br>
+**Contents**: Value is always “serial”<br>
+
+-----
+
+#### Extras Introduced with DataWedge 6.5
+
+**Extra Name**: com.symbol.datawedge.device_id<br>
+**Type**: [String]<br>
+**Contents**: Device identifier (usually the port name)<br>
+
+-----
+
+**Extra Name**: "com.symbol.datawedge.device_name"<br>
+**Type**: [String]<br>
+**Contents**: Friendly name of the port<br> 
+**Example**: "Serial port 1"<br>
+
+-----
+
+**Extra Name**: "com.symbol.datawedge.data_raw"<br>
+**Type**: [Byte Array]<br>
+**Contents**: Byte array containing the acquired data in unprocessed form<br>
+
+-----
+
+## Single Decode Mode
+
+Single mode reads and decodes a single barcode at a time, and is the most common decoding mode. For decoding multiple barcodes simultaneously, such as with UDI-compliant objects, see [UDI/Multiple Decode Mode](#udimultipledecodemode). 
+
+### Parameters
+
+**Name**: "com.symbol.datawedge.source"<br>
+**Type**: [String]<br>
+**Contents**: Source of incoming data<br>
+**Possible values**: 
+* "msr"
+* "scanner"
+* "simulscan"
+
+**NOTE**: Source of incoming data is "scanner" for camera, imager or scanner. 
+
+-----
+
+**Name**: "com.symbol.datawedge.label_type"<br>
+**Type**: [String]<br>
+**Contents**: Barcode label type (i.e. "EAN128")<br>
+
+-----
+
+**Name**: "com.symbol.datawedge.data_string"<br>
+**Type**: [String]<br>
+**Contents**: Acquired barcode characters<br>
+**Example**: "abcde12345"<br>
+
+-----
+
+**Name**: "com.symbol.datawedge.decode_data"<br>
+**Type**: [List &lt;byte [ ]&gt;]<br>
+**Contents**: Acquired raw (unmodified) data as an array list of byte arrays<br>
+**Example**: List_Item_1(array_1(byte11,byte12,byte13)),List_Item_2(array_2(byte21,byte22,byte23)) ...<br>
+
+-----
+
+**Name**: "com.symbol.datawedge.decoded_mode"<br>
+**Type**: [String]<br>
+**Contents**: Mode used to decode the incoming data<br>
+**Possible values**: 
+* "multiple_decode"
+* "single_decode"
+
+-----
+
+## UDI/Multiple Decode Mode
+
+When decoding a UDI-compliant object, data is acquired from multiple barcodes simultaneously and output as a multi-decode bundle, which differs from a single-decode bundle. DataWedge also can acquire multiple non-UDI barcodes in a single scan. This section applies to both modes.
+
+### Parameters
+
+**Name**: "com.symbol.datawedge.decode_mode"<br>
+**Type**: [String]<br>
+**Contents**: Mode used to decode incoming data<br>
+**Possible values**: 
+* "multiple_decode"
+* "single_decode"
+
+-----
+
+**Name**: "com.symbol.datawedge.smart_decode_type"<br>
+**Type**: [String]<br>
+**Contents**: Decode type <br>
+**Possible values**:
+* “udi”
+* “multibarcode”
+
+-----
+
+**Name**: "com.symbol.datawedge.data_string"<br>
+**Type**: [String]<br>
+**Contents**: Acquired barcode characters <br>
+**Example**: "abcde12345"<br>
+
+-----
+
+**Name**: "com.symbol.datawedge.decode_data"<br>
+**Type**: [List &lt;byte [ ]&gt;]<br>
+**Contents**: Acquired raw (unmodified) data as an array list of byte arrays<br>
+**Example**: List_Item_1(array_1(byte11,byte12,byte13)), List_Item_2(array_2(byte21,byte22,byte23)) ...
+
+-----
+
+**Name**: "com.symbol.datawedge.source"<br>
+**Type**: [String]<br>
+**Contents**: Source of incoming data<br>
+**Possible values**:
+* "msr"
+* "scanner" 
+* "simulscan"
+
+-----
+
+**Name**: "com.symbol.datawedge.label_id"<br>
+**Type**: [String]<br>
+**Contents**: UDI type of incoming data<br>
+**Possible values**:
+* “UDI_HIBCC” 
+* “UDI_GS1” 
+* “UDI_ICCBBA” 
+* “UNDEFINED”
+
+-----
+
+**Name**: "com.symbol.datawedge.barcodes"<br>
+**Type**: [List &lt;Bundle&gt;]<br>
+**Contents**: See Bundle description (below)<br>
+
+-----
+
+**Name**: "com.symbol.datawedge.tokenized_data"<br>
+**Type**: [List &lt;Bundle&gt;]<br>
+**Contents**: See Bundle description (below)<br>
+**Note**: Source of incoming data is "scanner" for camera, imager or scanner<br>
+
+-----
+
+### Barcode Bundle
+
+##### Bundle name: "com.symbol.datawedge.barcodes"
+
+#### Parameters
+
+**Name**: "com.symbol.datawedge.label_type"<br>
+**Type**: [String]<br>
+**Contents**: Barcode label type, original symbology (i.e. "EAN128")<br>
+
+-----
+
+**Name**: "com.symbol.datawedge.decode_data"<br>
+**Type**: [byte [ ] ]<br>
+**Contents**: Acquired raw (unmodified) data as a byte array<br>
+
+-----
+
+**Name**: "com.symbol.datawedge.data_string"<br>
+**Type**: [String]<br>
+**Contents**: Acquired barcode characters <br>
+**Example**: "abcde12345"<br>
+
+-----
+
+### Tokenized Data Bundle
+
+##### Bundle name: "com.symbol.datawedge.tokenized_data"
+
+#### Parameters
+
+**Name**: "token_id"<br>
+**Type**: [String]<br>
+**Contents**: Data in a UDI-defined tag <br>
+**Possible values**: (see token IDs, below)<br>
+
+-----
+
+**Name**: "token_data_type"<br>
+**Type**: [String]<br>
+**Contents**: Incoming data type <br>
+**Example**: date, long, string <br>
+
+-----
+
+**Name**: "token_format"<br>
+**Type**: [String]<br>
+**Contents**: Format of incoming string <br>
+**Example**: YYYYMMDD<br>
+
+-----
+
+**Name**: "token_string_data"<br>
+**Type**: [String]<br>
+**Contents**: Acquired barcode characters <br>
+**Example**: "abcde12345"<br>
+
+-----
+
+**Name**: "token_binary_data"<br>
+**Type**: [byte [ ] ]<br>
+**Contents**: Acquired barcode data as a byte array<br>
+
+-----
+
+### Token IDs
+
+**Token ID**: di<br>
+**Display Name**: Device identifier<br>
+
+-----
+
+**Token ID**: manufacturing_date_original<br>
+**Display Name**: Manufacturing date<br>
+
+-----
+
+**Token ID**: expiration_date_original<br>
+**Display Name**: Expiration date<br>
+
+-----
+
+**Token ID**: lot_number<br>
+**Display Name**: Lot number<br>
+
+-----
+
+**Token ID**: serial_number<br>
+**Display Name**: Serial number<br>
+
+-----
+
+**Token ID**: mpho_lot_number<br>
+**Display Name**: Medical products of human origin (MPHO) lot number <br>
+
+-----
+
+**Token ID**: donation_id<br>
+**Display Name**: Donation ID number<br>
+
+-----
+
+**Token ID**: labeler_identification_code<br>
+**Display Name**: Labeler ID code<br>
+
+-----
+
+**Token ID**: product_or_catalog_number<br>
+**Display Name**: Product or catalog number<br>
+
+-----
+
+**Token ID**: unit_of_measure_id<br>
+**Display Name**: Unit of measure ID<br>
+
+-----
+
+**Token ID**: Quantity<br>
+**Display Name**: Quantity<br>
+
+-----
+
+## Other Decode Tags
+
+The decode-related data added to an intent bundle can be retrieved using specific string tags. Use the JavaScript call below with the string tags in the section that follows.
+
+	:::java
+	Intent.getStringtExtra()
+
+**Tag**: LABEL_TYPE_TAG <br>
+**Type**: [String]<br>
+**Name**: "com.symbol.datawedge.label_type"<br>
+**Contents**: Barcode label type <br>
+**Example**: "EAN128"<br>
+
+-----
+
+**Tag**: DATA_STRING_TAG<br>
+**Type**: [String]<br>
+**Name**: "com.symbol.datawedge.data_string"<br>
+**Contents**: Acquired barcode characters <br>
+**Example**: "abcde12345"<br>
+
+**Note**: When multiple barcodes are acquired simultaneously, the decoded data is concatenated and sent out as a single string.
+
+-----
+
+**Tag**: DECODE_DATA_TAG<br>
+**Type**: [byte [ ] ]<br>
+<!-- or list of byte arrays? -> [List <byte [ ]>] --> 
+**Name**: "com.symbol.datawedge.decode_data"<br>
+**Contents**: Decoded data returned as a list of byte arrays.<br>
+
+**Note**: In most cases there will be one byte array per decode. <!-- REMOVED 10/5/17 PER ENG. EMAIL 10/4/17 2:06 pm << For barcode symbologies that support concatenation (i.e. Codabar, Code128, MicroPDF, etc.) the decoded data is stored in multiple byte arrays (one byte array per bar code). Data in each byte array can be retrieved by passing an index.
+--> 
+
+-----
+
+**Other DataWedge Output Options**:
+
+* **[Internet Protocol](../ip) -** network output via TCP or UDP 
+* **[Keystroke](../keystroke) -** keyboard emulation
+
+**Related guides**:
+
+* [Profiles/Plug-ins](../../profiles)
+* [DataWedge APIs](../../api) 
+

@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Network Notification 
+title: Networks 'Available' Notification 
 type: parm
 order: 7
 mx: "4.2"

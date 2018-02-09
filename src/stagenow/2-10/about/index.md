@@ -53,6 +53,7 @@ This guide provides the staging administrator with instructions for using StageN
 
 * StageNow 2.10 no longer supports the OSupdatepackage for Jelly Bean or KitKat devices.
 * The StageNow update file for devices running Android Lollipop and higher is distributed with the latest BSP or security incremental patch for the specific device(s). 
+* The [Wipe a Device guide](../Profiles/wipedevice) now includes instructions for bypassing the Android Setup Wizard following an Enterprise Reset. 
 
 ### New Features
 

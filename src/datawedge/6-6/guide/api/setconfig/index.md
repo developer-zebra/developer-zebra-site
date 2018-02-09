@@ -38,7 +38,7 @@ The main SetConfig bundle includes the following properties:
  * **OVERWRITE**: If Profile exists, resets all options to default, then configures specified settings
  * **UPDATE**: Updates only specified settings
 * **PROFILE_ENABLED** [String]: Optional; Controls whether to enable (true) or disable (false) a Profile (default=true). If not specified, no change is made to the Profile state.
-* **PLUGIN_CONFIG** [Bundle]: A bundle (nested within the main bundle) that contains settings of a specific Plug-in
+* **PLUGIN_CONFIG** [Bundle [ ]]: A bundle array (nested within the main bundle) that contains settings of each Plug-in
 * **APP_LIST** [Array]: List of applications and/or activities to associate with the Profile
 
 #### PLUGIN_CONFIG BUNDLE

@@ -6,13 +6,13 @@ menu:
   title: ActiveEdge
   items:
     - title: About
-      url: /activeedge/1-0/guide/about
-    - title: Setup
-      url: /activeedge/1-0/guide/setup
+      url: /activeedge/2-5/guide/about
+    - title: Setup & Configuration
+      url: /activeedge/2-5/guide/setup
     - title: Using ActiveEdge
-      url: /activeedge/1-0/guide/usage
+      url: /activeedge/2-5/guide/usage
     - icon: fa fa-search
-      url: /activeedge/1-0/search
+      url: /activeedge/2-5/search
 product: ActiveEdge
-productversion: '1.0'
+productversion: '2.5'
 ---

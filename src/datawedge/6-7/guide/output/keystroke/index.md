@@ -13,6 +13,7 @@ Keystroke Output collects the processed data and sends it to the associated appl
 -----
 
 ## Keystroke Output Setup
+
 To enable Keystroke output for a Profile, place a check in the checkbox:
 <img style="height:350px" src="../keystroke-output_6.7.png"/>
 _Keystroke Output options_
@@ -83,7 +84,7 @@ This setting applies when the Scanning mode in [Barcode Reader Params](../../inp
 **&#49;. Tap "Data formatting and ordering" to specify a separator character** to be inserted between the data from each barcode. 
 <img style="height:350px" src="../dw_6.7_data_formatting_and_ordering.png"/>
 <br>
-**&#50;. Tap "Barcode separator" to specify the desired insertion character** (CR, LF or TAB). Data from each barcode is otherwise concatenated and delivered as a single string of keystrokes.
+**&#50;. Tap "Barcode separator" to specify the desired insertion character** (CR, LF or TAB).<br>Data from each barcode is otherwise concatenated and delivered as a single string of keystrokes.
 <img style="height:350px" src="../dw_6.7_data_separating.png"/>
 
 

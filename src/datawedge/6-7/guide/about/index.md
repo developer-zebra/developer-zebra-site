@@ -23,13 +23,12 @@ DataWedge has been approved to run on device operating systems localized for the
 
 For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
 
------
-
+<!-- 2/9/18- Section removed at suggestion of engineering (TUT-22170)
 #### This document applies to:
 * **DataWedge 6.7.x**, which requires:
 * **Scanner Framework 18.0.9.0** or higher, and
 * **SimulScan 1.9 or higher** (on [devices that support SimulScan](../../../../simulscan))
-
+ -->
 To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
 
 -----
@@ -110,7 +109,7 @@ _Launcher icon for DataWedge 6.x_
 <br>
 
 &#51;. **Tap About**. The "About DataWedge" screen appears. The DataWedge version number is highlighted in the image below. Notice that the Scanner Framework version also is shown.     
-<img style="height:350px" src="03_datawedge_about_screen.png"/>
+<img style="height:350px" src="dw_6.7_about_screen.jpg"/>
 _The "About DataWedge" box showing version numbers_ 
 <br>
 

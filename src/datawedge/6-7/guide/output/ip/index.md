@@ -42,7 +42,10 @@ _IP Output options_
 ### UDI Data Output
 This setting applies when the Scanning mode in [Barcode Reader Params](../../input/barcode/#readerparams) is set to UDI, which acquires multiple data points (tokens) as specified in the Universal Device Identifier parameter(s) selected in the above-referenced section. 
 
-<img style="height:350px" src="../token_ip_output.png"/>
+<!-- 2/8/18- removed pre-DW 6.7 panel 
+<img style="height:350px" src="../token_selection_highlighted.png"/>
+ -->
+<img style="height:350px" src="../dw_6.7_data_formatting_and_ordering.png"/>
 
 **Token selection -** allows the output order of acquired UDI data to be adjusted and the optional insertion of a Tab, Line Feed or Carriage Return character between tokens, if required.
 
@@ -55,14 +58,31 @@ This setting applies when the Scanning mode in [Barcode Reader Params](../../inp
 
 **Barcodes and tokens -** DataWedge sends the barcode string appended by the tokenized data. If no separator character is selected (see Step 2), DataWedge sends two instances of the same data.
 
-**&#50;. Tap "Token separator" to select a separator character** to insert between Tokens, if desired. If Barcode and token mode is selected, this character is also inserted between the two. 
+**&#50;. Tap "Token separator" in the Token selection screen to specify a separator character** to be inserted between Tokens, if desired. If "Barcode and tokens" mode is selected, the selected character also is inserted between the two. 
 <img style="height:350px" src="../separator.png"/>
 _This setting is not available if "Send tokens" is disabled_.
 <br>
 
 **&#51;. Tap "Token order" to include/exclude Tokens** from the output and adjust their output order. 
 <img style="height:350px" src="../token_order.png"/>
+_Drag tokens to adjust output order_.
 <br>
+
+-----
+
+### MultiBarcode Data Output
+
+This setting applies when the Scanning mode in [Barcode Reader Params](../../input/barcode/#readerparams) is set to MultiBarcode, which simultaneously acquires the number of barcodes (from 2-10) specified in the corresponding reader parameter. 
+
+**Note: Supported on select devices only**. See the [About page](../../about) for details. 
+
+**To configure MultiBarcode output**: 
+
+**&#49;. Tap "Data formatting and ordering" to specify a separator character** to be inserted between the data from each barcode. 
+<img style="height:350px" src="../dw_6.7_data_formatting_and_ordering.png"/>
+<br>
+**&#50;. Tap "Barcode separator" to specify the desired insertion character** (CR, LF or TAB).<br>Data from each barcode is otherwise concatenated and delivered as a single string of keystrokes.
+<img style="height:350px" src="../dw_6.7_data_separating.png"/>
 
 -----
 

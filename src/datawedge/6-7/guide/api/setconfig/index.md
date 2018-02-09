@@ -822,9 +822,7 @@ Command and configuration intent parameters determine whether to send result cod
 
 * The `keystroke_delay_extended_ascii` parameter is deprecated. 
 * If a Keystroke Plug-in bundle uses the `keystroke_delay_extended_ascii` parameter, DataWedge sets the `keystroke_delay_multibyte_chars_only` parameter to true. 
-* If the `keystroke_delay_extended_ascii` and `keystroke_character_delay` parameters are both sent, the value of the `keystroke_character_delay` is retained, the `keystroke_delay_extended_ascii` value is ignored and the `keystroke_delay_multibyte_chars_only` parameter is set to true.
-
-<!-- QUESTION PENDING ABOUT THAT LAST PART ABOVE -->
+* If the `keystroke_delay_extended_ascii` and `keystroke_character_delay` parameters are both sent, the value of the `keystroke_character_delay` is retained, the `keystroke_delay_extended_ascii` value is ignored. If available, the `keystroke_delay_multibyte_chars_only` setting is saved, and is otherwise considered false.
 
 -----
 

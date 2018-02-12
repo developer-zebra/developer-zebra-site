@@ -13,7 +13,7 @@ Use this Wizard to erase data on the device using Factory Reset (all data) or En
 
 * **On devices with MX 7.1 or higher**, it is possible to automatically bypass the Android Setup Wizard (also known as the "Welcome Screen") following an Enterprise Reset. More [about Setup Wizard Bypass](/mx/powermgr/#setup-wizard-bypass). 
 
-* **On devices with Android N and higher**, it's also possible to skip the Android Setup Wizard by scanning a barcode when the wizard appears or at any time thereafter. See section below for details. 
+* **On devices with Android M and higher**, it's also possible to skip the Android Setup Wizard by scanning a barcode when the wizard appears or at any time thereafter. [See below](/#setupwizardmanualbypass) for details. 
 
 -----
 
@@ -50,9 +50,9 @@ Use this Wizard to erase data on the device using Factory Reset (all data) or En
 
 ### Setup Wizard Manual Bypass
 
-If the Android setup Wizard appears, it's possible to skip it by scanning one of the barcodes below during any phase of the wizard. **Android N and higher only**.
+If the Android setup Wizard appears, it's possible to skip it by scanning one of the barcodes below during any phase of the wizard. **This feature is supported on all devices running Android N and higher, and on Android M devices with BSP21 and higher. [Learn more](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc51-operating-system-for-gms-devices.html)**.
 
-**To manually skip the Android Setup Wizard**: 
+**Options to manually skip the Android Setup Wizard**: 
 
 #### Skip wizard and run StageNow client:
 

@@ -7,11 +7,13 @@ productversion: '2.10'
 
 ##Overview 
 
-Use this Wizard to erase data on the device using Factory Reset (all data) or Enterprise Reset (only non-persistent data) actions. Read important additional information [about device reset](/mx/powermgr/#reboot) about these actions. 
+Use this Wizard to erase data on the device using Factory Reset (all data) or Enterprise Reset (only non-persistent data). **See important additional information [about reset actions](/mx/powermgr/#reboot)**. 
 
-For devices with MX 7.1 or higher, it is possible to automatically [bypass the Android Setup Wizard](#/bypasssetupwizard) (also known as the "GMS Welcome Screen") following an Enterprise Reset. More [about Setup Wizard Bypass](/mx/powermgr/#setup-wizard-bypass). 
+### Bypass Notes
 
-**On devices running Android N and higher**, it's also possible to skip the Android Setup Wizard by scanning a barcode when the wizard appears or at any time thereafter. [See below](/#setupwizardmanualbypass) for details. 
+* **On devices with MX 7.1 or higher**, it is possible to automatically bypass the Android Setup Wizard (also known as the "Welcome Screen") following an Enterprise Reset. More [about Setup Wizard Bypass](/mx/powermgr/#setup-wizard-bypass). 
+
+* **On devices with Android N and higher**, it's also possible to skip the Android Setup Wizard by scanning a barcode when the wizard appears or at any time thereafter. See section below for details. 
 
 -----
 
@@ -44,20 +46,21 @@ For devices with MX 7.1 or higher, it is possible to automatically [bypass the A
 
 7. Select "Continue" to proceed to the [Review window](../../stagingprofiles?Review).
 
+-----
 
 ### Setup Wizard Manual Bypass
 
 If the Android setup Wizard appears, it's possible to skip it by scanning one of the barcodes below during any phase of the wizard. **Android N and higher only**.
 
-**To manually skip the Android Setup Wizard** 
+**To manually skip the Android Setup Wizard**: 
 
-Skip wizard and run StageNow client:
+#### Skip wizard and run StageNow client:
 
-   ![img](../../images/profiles/skip_suw_and_run_sn.png)
+![img](../../images/profiles/skip_suw_and_run_sn.png)
 
 
-Skip wizard and run Android Launcher:
+#### Skip wizard and run Android Launcher:
 
-   ![img](../../images/profiles/skip_suw_only.png)
+![img](../../images/profiles/skip_suw_only.png)
 
 

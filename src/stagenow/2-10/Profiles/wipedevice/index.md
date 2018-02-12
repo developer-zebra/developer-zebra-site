@@ -4,25 +4,36 @@ layout: guide.html
 product: StageNow
 productversion: '2.10'
 ---
-Use this Wizard to destroy device data using Enterprise or Factory Reset. 
 
-To create a Wipe a Device profile:
+##Overview 
 
-1. Select Create New Profile.
+Use this Wizard to erase data on the device using Factory Reset (all data) or Enterprise Reset (only non-persistent data) actions. Read important additional information [about device reset](/mx/powermgr/#reboot) about these actions. 
 
-2. Select the MX version from the drop-down menu.
+For devices with MX 7.1 or higher, it is possible to automatically [bypass the Android Setup Wizard](#/bypasssetupwizard) (also known as the "GMS Welcome Screen") following an Enterprise Reset. More [about Setup Wizard Bypass](/mx/powermgr/#setup-wizard-bypass). 
 
-3. Select the Wipe a Device Wizard, and select Create.
+**On devices running Android N and higher**, it's also possible to skip the Android Setup Wizard by scanning a barcode when the wizard appears or at any time thereafter. [See below](/#setupwizardmanualbypass) for details. 
+
+-----
+
+### Wipe a Device
+
+**To create a "Wipe a Device" profile**:
+
+1. Select "Create New Profile"
+
+2. Select the MX version from the drop-down menu
+
+3. Select the "Wipe a Device Wizard" and select "Create"
 
     ![img](../../images/profiles/WipeDevice_name.jpg)
 
-4. Enter a name for the profile and select Start.
+4. Enter a name for the profile. Select "Start" to proceed.
 
     ![img](../../images/profiles/WipeDevice_method.jpg)
 
-    Note: During profile creation, the top right of the window indicates the status of the profile, e.g., Incomplete.
+    Note: During profile creation, an indicator at the top-right corner of the window displays creation status.
 
-5. Choose a method to destroy device data, and then select Continue.
+5. Choose the desired erasure method. Select "Continue" to proceed.
 
     * Select Enterprise Reset to destroy device-specific data and return the device to its persistent default state. All non-persistent data is discarded.
     * Select Factory Reset to destroy all data and return the device to its factory defaults. No user content persists.
@@ -31,11 +42,22 @@ To create a Wipe a Device profile:
 
 6. Select the required information, and then select Continue. See [Setting Types / Power](../../csp/power) for more information.
 
-7. Select Continue to proceed to the [Review window](../../stagingprofiles?Review).
+7. Select "Continue" to proceed to the [Review window](../../stagingprofiles?Review).
 
 
+### Setup Wizard Manual Bypass
+
+If the Android setup Wizard appears, it's possible to skip it by scanning one of the barcodes below during any phase of the wizard. **Android N and higher only**.
+
+**To manually skip the Android Setup Wizard** 
+
+Skip wizard and run StageNow client:
+
+   ![img](../../images/profiles/skip_suw_and_run_sn.png)
 
 
+Skip wizard and run Android Launcher:
 
+   ![img](../../images/profiles/skip_suw_only.png)
 
 

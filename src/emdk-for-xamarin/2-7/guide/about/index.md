@@ -37,7 +37,7 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 * Enhanced support for Inter-character delay
 * New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
 
-**Supports Visual Studio on Mac OS X (beta)**
+**Beta support for Visual Studio on Mac OS X**
 
 -----
 

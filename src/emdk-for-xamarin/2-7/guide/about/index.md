@@ -37,6 +37,8 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 * Enhanced support for Inter-character delay
 * New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
 
+**Supports Visual Studio on Mac OS X (beta)**
+
 -----
 
 **Support for MX 7.2** adds the following Setting Types and features:
@@ -109,6 +111,8 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 * **Support for the** `ContinuousRead` **class is deprecated**. This class, which can be used to enable continuous scanning, is still supported but will no longer be advanced. Zebra recommends using the `aimType`, `sameSymbolTimeout`, `differentSymbolTimeout` reader parameters for the device camera, imager or laser.
 
 * **Support for the** `picklist` **field is deprecated**. This field, which is used for enabling the `picklist` mode, is still support but will ultimately be replaced by the `picklistEx` field. 
+
+* **Xamarin Studio on Mac OS X** remains supported but will no longer be advanced. 
 
 -----
 

@@ -50,17 +50,43 @@ Use this Wizard to erase data on the device using Factory Reset (all data) or En
 
 ### Setup Wizard Manual Bypass
 
-If the Android setup Wizard appears, it's possible to skip it by scanning one of the barcodes below during any phase of the wizard. **This feature is supported on all devices running Android N and higher, and on Android M devices with BSP21 and higher. [Learn more](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc51-operating-system-for-gms-devices.html)**.
+If the Android setup Wizard appears, it's possible to skip it by scanning one of the barcodes below during any phase of the wizard. **Supported on devices as indicated below**.  
+
+**Support Notes**:
+
+**8956-platform Devices**:
+
+* **Android Nougat** with BSP49 and higher
+* **Android Marshmallow** with BSP21 (G-00-08) or higher 
+
+<!-- WAITING FOR BSP # from ENG. 
+**TC20/TC25 Devices**:
+
+* **Android Nougat** with BSPxx or higher
+ -->
+
+ Go to the **[BSP download page](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc51-operating-system-for-gms-devices.html)**.
+
+-----
 
 **Options to manually skip the Android Setup Wizard**: 
 
 #### Skip wizard and run StageNow client:
 
+<img style="height:50px" src="../../images/profiles/skip_suw_and_run_sn.png"/>
+<br>
+
+<!-- 
 ![img](../../images/profiles/skip_suw_and_run_sn.png)
 
-
+ -->
 #### Skip wizard and run Android Launcher:
 
+<img style="height:50px" src="../../images/profiles/skip_suw_only.png"/>
+<br>
+
+
+<!-- 
 ![img](../../images/profiles/skip_suw_only.png)
 
-
+ -->

@@ -195,6 +195,12 @@ var sitebuild = Metalsmith(__dirname)
 	  engine: 'handlebars',
 	  partials: 'partials',
 	  pattern: '**/*.md'
+    })) 
+        .use(foldermenu({
+        folder: 'enterprise-browser/1-8/' 
+    })) 
+        .use(foldermenu({
+        folder: 'enterprise-browser/1-7/'
 	}))	
         .use(foldermenu({
         folder: 'enterprise-browser/1-6/'

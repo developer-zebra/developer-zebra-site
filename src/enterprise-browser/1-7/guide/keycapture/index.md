@@ -21,7 +21,8 @@ The following facts apply generally to Android keycode mapping for Enterprise Br
 * The mapping file is read each time Enterprise Browser is launched.
 * Upon app install, a mapping-file template is placed in the EB installation directory, usually `sdcard0/android/data/com.symbol.enterprisebrowser`.
 * Keycodes not mapped (or left blank in the mapping file) retain their default values. 
-* [Additional restrictions](../../api/keycapture/#remarks) apply to keycapture and keycode mapping. 
+* [Additional restrictions](../../api/keycapture/#remarks) apply to keycapture and keycode mapping.
+* The `keycodemapping.xml` file must not be empty or contain improperly formatted data. 
 
 ##Mapping Android Keycodes 
 To assign custom keycodes to Android hard or soft keys, follow these simple steps:  

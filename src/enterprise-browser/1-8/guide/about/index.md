@@ -13,14 +13,36 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 
 The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. For more information about API crossover, see the [API Compatibility matrix](../compatibility). 
 
+> Note: Enterprise Browser does not support JavaScript Alerts that use the syntax "`window.alert("XYZ")`" or `alert("XYZ")`". 
+
 -----
 ## New in v1.8
 
+### New Config tags
+
+* **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** Optionally disables hardware acceleration at WebView level within an Enterprise Browser app. 
+
+* **[&lt;ClientCertificate&gt;](../configreference#clientcertificate) -** Optionally allows the alias name of a client certification to be specified. **Applies only to devices running Android Lollipop and higher**. 
+
+* **[&lt;DisableAllIME&gt;](../configreference#disableallime) -** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **Applies to Android devices running Lollipop and higher.** 
+
+* **[&lt;HideSystemBar&gt;](../configreference#hidesystembar) -** Controls whether the System bar (also known as the Navigation bar, which contains HOME, BACK and RECENT buttons) is displayed within the Enterprise Browser app. **Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1 and higher and OSX 6.2 and higher**. 
+
+### Enhanced Config tags
+
+* **[&lt;setHomeKeyDisable&gt;](../configreference#sethomekeydisable) -** Now supported on all Android devices with MX 4.3 and higher OSX 1.0 and higher; no longer limited to Lollipop.
+* **[&lt;setStatusBarDisable&gt;](../configreference#setstatusbardisable) -** Now supported on all Android devices with MX 5.1 and higher OSX 5.1 and higher; no longer limited to Lollipop.
+* **[&lt;setBackKeyDisable&gt;](../configreference#setbackkeydisable) -** Now supported on all Android devices; no longer limited to Lollipop.
+* **[&lt;setVolumeButtonDisable&gt;](../configreference#setvolumebuttondisable) -** Now supported on all Android devices; no longer limited to Lollipop.
+* **[&lt;setRecentAppDisable&gt;](../configreference#setrecentappdisable) -** Now supported on all Android devices; no longer limited to Lollipop.
+
 -----
 
-## Added in EB 1.7
+## Version History
 
-### ButtonBar API
+### Added in EB 1.7
+
+#### ButtonBar API
 A new Android-only ButtonBar API permits a series of custom buttons or keys to be displayed on the screen and configured to launch an app, execute a JavaScript snippet or perform other operations available to the device. 
 ![img](EB_ButtonBar_API.png)
 <br>
@@ -34,7 +56,7 @@ A new Android-only ButtonBar API permits a series of custom buttons or keys to b
 
 -----
 
-### Device Support
+#### Device Support
 
 EB 1.7 now supports the following **new devices** (shown in **bold**) and/or existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallow: 
 
@@ -56,7 +78,7 @@ EB 1.7 now supports the following **new devices** (shown in **bold**) and/or exi
 
 -----
 
-### WebView Control
+#### WebView Control
 Enterprise Browser 1.7 now permits many features of the Android WebView to be controlled through the `Config.xml` file, helping to simplify access to device- and web-related security capabilities and user-experience features. EB 1.7 also increases the methods and properties provided in the [WebView API](../../api/webview). 
 
 > **These tags apply only to devices running KitKat and higher**. 
@@ -76,7 +98,7 @@ Enterprise Browser 1.7 now permits many features of the Android WebView to be co
 
 -----
 
-### New Substitution Variables
+#### New Substitution Variables
 The following new substitution variables are now supported by Enterprise Browser for use in Config.xml parameters: 
 
 * **%PRIMARYDIR% -** resolves to the root directory of internal device storage (i.e. `/storage/sdcard0`)
@@ -87,7 +109,7 @@ For details, see the [Config.xml Reference](../configreference/#substitutionvari
 
 -----
 
-### Web Security Features
+#### Web Security Features
 * **[&lt;ApplicationCacheEnabled&gt;](../configreference#applicationcacheenabled) -** allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load.
 * **[&lt;ApplicationCacheOnExit&gt;](../configreference#applicationcacheonexit) -** controls whether to erase a cached HTML5 app upon exiting it. 
 * **[&lt;SetCacheMode&gt;](../configreference#setcachemode) -** controls rules for loading pages from cache vs. loading from the server.
@@ -120,7 +142,7 @@ For details, see the [Config.xml Reference](../configreference/#substitutionvari
 
 ----
 
-### New or Updated APIs
+#### New or Updated APIs
 
 * An **updated [WebView API](../../api/webview)** provides programmatic control over the Android WebView using new **clearApplicationCache, clearCache, clearHistory, clearCookies, resizeWebviewLayout and resetWebviewLayout** methods, and **blockNetworkImage, blockNetworkLoads and contentHeight** properties.  
 * An **updated [Device API](../../api/device) -** adds a **reboot** method for Android. 
@@ -140,13 +162,13 @@ New or Updated Guides
 
 -----
 
-## Added in v1.6
+### Added in v1.6
 
-### Android Jelly Bean - End of Support
+#### Android Jelly Bean - End of Support
 Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower.
 
 
-### Device Support
+#### Device Support
 EB 1.6 now supports the following new devices and/or existing devices running Android 5.0 Lollipop and Android 6.0 Marshmallow: 
 
 * **ET50** with Android Lollipop
@@ -161,7 +183,7 @@ EB 1.6 now supports the following new devices and/or existing devices running An
 
 This release also adds a range of additional new features for all supported Android devices.
 
-### New or Updated APIs
+#### New or Updated APIs
 
 * **New [Enterprise Keyboard API](../../api/ekb) -** provides programmatic access to Zebra's software keyboard and some of its settings (**applies only to Android devices with EKB 1.2 and higher**). 
 
@@ -171,15 +193,15 @@ This release also adds a range of additional new features for all supported Andr
 
 * **Updated [Sensor API](../../api/sensor) -** implements a **proximitySensorType** property to **set** the value of proximity sensor type or **get** its current value.
 
-#### Ring Scanner Support
+##### Ring Scanner Support
 
 * **[RS6000 Ring Scanner](#wearable) -** is now supported on TC75x devices running Android Marshmallow.
 
-### Enterprise Browser Kiosk Mode
+#### Enterprise Browser Kiosk Mode
 
 * **New [Enterprise Browser Lockdown Option](../ehs) -** integrates with Zebra [Enterprise Home Screen](../../../../ehs) (EHS) to provide an easily configurable lock-down feature for any Enterprise Browser app, preventing access to device settings and other apps installed on the device.
 
-### New Tags for Android
+#### New Tags for Android
 The following Enterprise Browser configuration tags are now supported on Android (formerly Windows-only).
 
 * **[&lt;ScanDecodeWav&gt;](../configreference#scandecodewav) -** allows specification of a .wav or .ogg file to be played when a scanned barcode is successfully decoded.
@@ -190,18 +212,18 @@ The following Enterprise Browser configuration tags are now supported on Android
 
 * **[&lt;DecodeDuration&gt;](../configreference#decodeduration) -** controls the duration (in milliseconds) of the device beeper sound when a barcode is scanned.
 
-### New and Updated Guides
+#### New and Updated Guides
 
 * **New [Security Guide](../security) -** explains Enterprise Browser's numerous security features and provides links to their individual guides or guide sections.
 
 * **Updated [DataWedge Usage Guide](../datawedge) -** adds detailed steps for enabling and disabling DataWedge based on the version installed on the device.
 
-#### Android Jelly Bean Deprecated
+##### Android Jelly Bean Deprecated
 Enterprise Browser 1.6 and higher will no longer support devices running Android Jelly Bean. For Jelly Bean support, please use [Enterprise Browser 1.5](../../../../enterprise-browser/1-5/guide/about) or lower versions for Android Jelly Bean device support.
 
 -----
 
-### Key EB Features
+#### Key EB Features
 
 * **A development toolkit for mobile cross-platform enterprise apps**. Supports all enterprise devices: mobile computers, tablets, kiosks, wearables and vehicle-mounted devices. Supports multiple operating systems: Android, Windows Embedded Handheld and Windows Mobile/CE.
 * **Build apps using HTML5, CSS and JavaScript**. Use web skills to create great-looking applications. Based on open source and standard technologies, not proprietary toolkits. Access to the world's largest developer community.
@@ -213,7 +235,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 * **Full-screen display**. Maximizes available display space for a richer, more effective user interface; hides command bar and Start menu. 
 * **Extensive logging capability**. Flexibility to easily capture logging information, reducing management and support effort. 
 
-### Key EB Benefits
+#### Key EB Benefits
 
 * **Reduces application and development costs** and eliminates the need to develop, manage and maintain multiple versions of an application to support different types of devices and operating systems; provides highly cost effective support for a mixed-OS environment.
 * **Protects the business from OS market uncertainty**. Devices and platforms can continue to churn without impacting the business. These OS-agnostic applications work on Symbol, Motorola and Zebra Technologies platforms of yesterday (MPA2), today and tomorrow.

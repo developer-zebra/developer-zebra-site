@@ -348,9 +348,6 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 ### HideSystemBar
 **Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1 and higher and OSX 6.2 and higher**. Controls whether the System bar (also known as the Navigation bar, which contains HOME, BACK and RECENT buttons) is displayed within the Enterprise Browser app. Disabled by default (System bar is showing). [Which MX/OSX is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
 
-
-EnterpriseBrowser introduced a new EB config tag i.e. HideSystemBar which controls hiding of system bar inside Enterprise Browser application. Default value for HideSystemBar config tag is set to 0 in Enterprise Browser Config.xml file.
-
 **Possible values**:
 
 * **0 - Disabled (default; shows System bar)**
@@ -364,9 +361,9 @@ EnterpriseBrowser introduced a new EB config tag i.e. HideSystemBar which contro
 	</Configuration>
 
 ### ClientCertificate
-**Applies only to Android devices running Lollipop and higher**. Allows the name of a client certification to be specified. **This tag is not present in the default `Config.xml` file and must be added manually**. use of this tag enables Enterprise Browser to silently select and validate a client certificate. 
+**Applies only to Android devices running Lollipop and higher**. Allows the alias name of a client certification to be specified. **This tag is not present in the default `Config.xml` file and must be added manually**. Use of this tag enables Enterprise Browser to silently select and validate a client certificate. 
 
-Attribute value should be set to alias name entered while installing the Client certificate.  With this attribute set, user will be prompted to select the client certificate only once until Enterprise Browser is uninstalled. Multiple client certificates validation are not presently supported by this attribute. Applicable to only https server applications where server is configured for validating a client certificate.
+**Note**: Once this attribute is set, the user is initially prompted to select the client certificate, and is not promoted again unless Enterprise Browser is reinstalled. Supports one client certificate validation only. Applies only to https server applications configured for validating a client certificate.
 
 **Possible values**:
 
@@ -1609,7 +1606,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 	<useDWforScanning value="0"/>
 
 ### DisableHardwareAcceleration
-**Applies to Android KitKat and higher only**. Controls whether hardware acceleration at WebView level within an Enterprise Browser application should be disabled. **By default, acceleration is always enabled** (tag value=0). 
+**Applies to Android KitKat and higher only**. Controls whether hardware acceleration at WebView level within an Enterprise Browser app is disabled. **By default, acceleration is enabled** (tag value=0). 
 
 **Possible Values**:
 

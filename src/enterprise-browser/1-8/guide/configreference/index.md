@@ -85,10 +85,11 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 > **WARNING**: Free-form text fields (i.e. username and password) can accept alpha-numeric characters unless otherwise noted. Entering non-text characters (< > \ / " ') in these fields could cause the `Config.xml` file to become corrupt. 
 
 	:::xml
-	// Enterprise Browser 1.7 configuration file for Android
+	// Enterprise Browser 1.8 configuration file for Android
 	// IMPORTANT: Differences exist in Windows Mobile/CE version
 
-	<Configuration>
+		<Configuration>
+	   <EB_VERSION value="1.8.0.0"/>
 	   
 	  <DebugButtons>
 	    <DebugButtonsEnabled value="0" />
@@ -124,13 +125,15 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	  </Shortcut>
 	  
 	  <CustomKioskMode>
-		<setHomeKeyDisable		value ="0"/>
+		<setHomeKeyDisable	value ="0"/>
 		<setStatusBarDisable 	value ="0"/>
-		<setBackKeyDisable 		value ="0"/> 
-		<setVolumeButonDisable 	value ="0"/>
+		<setBackKeyDisable 	value ="0"/> 
+		<setVolumeButtonDisable 	value ="0"/>
 		<setRecentAppDisable    value ="0"/>
 	  </CustomKioskMode>
-		
+	  <IME>
+		<DisableAllIME value ="0"/>
+	  </IME>
 	  <ZoomKey>
 	    <ZoomInKey value=""/> 
 	    <ZoomOutKey value=""/> 
@@ -235,7 +238,8 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	      <HTTP_Proxy value=""/>
 	      <HTTPS_Proxy value=""/>
 	      <isWindowsKey  value="0"/>
-	      <usedwforscanning  value="0"/>	 
+	      <usedwforscanning  value="0"/>
+	      <DisableHardwareAcceleration value="0"/>
 		  
 		  <BackgroundOnHomeKeyPressed>
 			<ClearWebData value="0"/>
@@ -272,7 +276,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	      <HTMLStyles>
 	        <JavascriptEnabled value="1"/>
 			<DatabaseEnabled value="0"/>
-			<DomStorageEnabled value="0"/>
+			<DomStorageEnabled value="1"/>
 			<GeoLocationEnabled	value="0"/>
 	        <FontFamily value="Droid Sans Fallback"/>
 			<BackgroundColor value=""/>
@@ -335,7 +339,6 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	    </Application>
 	  </Applications>
 	</Configuration>
-
 
 
 -----

@@ -7,15 +7,15 @@ layout: guide.html
 
 ## Overview
 
-Apps made with Enterprise Browser 1.7 (and higher) for Android can be accompanied by a series 1-10 custom on-screen buttons or keys that can perform virtually any function available to the device, including launching an app or activity, scanning a barcode, sending an intent or executing a JavaScript code snippet. 
+Apps made with Enterprise Browser 1.7 (and higher) for Android can be accompanied by a series 1-50 (40 more added in Enterprise Browser 1.8) custom on-screen buttons or keys that can perform virtually any function available to the device, including launching an app or activity, scanning a barcode, sending an intent or executing a JavaScript code snippet. 
 
-The number of buttons or keys and the appearance, layout, on-screen position, functions and all other attributes are controlled through a file called `button.xml`. If one or more of the buttons is to execute JavaScript, the code is contained in a second file called `CustomScript.xml`. Both files are stored on the device, and their paths are specified in corresponding tags in the app's `Config.xml` file. ButtonBars can be shown and hidden programmatically as required by an app's pages through methods implemented in one of 10 [ButtonBar APIs](../../../api/re2x/ButtonBar) currently supported. See [Customize Enterprise Browser](../) for details. 
+The number of buttons or keys and the appearance, layout, on-screen position, functions and all other attributes are controlled through a file called `button.xml`. If one or more of the buttons is to execute JavaScript, the code is contained in a second file called `CustomScript.xml`. Both files are stored on the device, and their paths are specified in corresponding tags in the app's `Config.xml` file. ButtonBars can be shown and hidden programmatically as required by an app's pages through methods implemented in one of 50 [ButtonBar APIs](../../../api/re2x/ButtonBar) currently supported. See [Customize Enterprise Browser](../) for details. 
 
 -----
 
 ## Button.xml File
 
-The `button.xml` file stores all configuration settings for custom on-screen buttons of an app. Enterprise Browser currently supports 10 ButtonBars (ButtonBar1 through ButtonBar10) and all definitions are maintained in the `button.xml` file. 
+The `button.xml` file stores all configuration settings for custom on-screen buttons of an app. Enterprise Browser currently supports 50 ButtonBars (ButtonBar1 through ButtonBar50) and all definitions are maintained in the `button.xml` file. 
 
 The positional attributes, action, color, transparency and all other view related parameters can be fully customized by specifying those values as key value pair in this xml file.  
 
@@ -43,34 +43,37 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
             <barTop value="942" />
             <barWidth value="720" />
             <barHeight value="120" />
+            <barTextColor value="#AF7AC5" />
+            <barTextStyle value="bold" />
+            <barGapBtwnButtons value="10" /> 
             <Buttons>
                 <Button1>
                     <buttonText value="F1" />
-                    <buttonAction value="key-131" />
+                    <buttonActionClick value="key-131" />
                 </Button1>
                 <Button2>
                     <buttonText value="F2" />
-                    <buttonAction value="key-132" />
+                    <buttonActionClick value="key-132" />
                 </Button2>
                 <Button3>
                     <buttonText value="0" />
-                    <buttonAction value="key-7" />
+                    <buttonActionClick value="key-7" />
                 </Button3>
                 <Button4>
                     <buttonText value="1" />
-                    <buttonAction value="key-8" />
+                    <buttonActionClick value="key-8" />
                 </Button4>
                 <Button5>
                     <buttonText value="A" />
-                    <buttonAction value="key-29" />
+                    <buttonActionClick value="key-29" />
                 </Button5>
                 <Button6>
                     <buttonText value="B" />
-                    <buttonAction value="key-57" />
+                    <buttonActionClick value="key-57" />
                 </Button6>
                 <Button7>
                     <buttonText value="Ent" />
-                    <buttonAction value="key-66" />
+                    <buttonActionClick value="key-66" />
                 </Button7>
             </Buttons>
         </ButtonBar1>
@@ -79,6 +82,9 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
             <barColorPressed value="#3498DB" />
             <barTransparency value="100" />
             <barFontSize value="14" />
+            <barTextColor value="#AF7AC5" />
+            <barTextStyle value="bold" />
+            <barGapBtwnButtons value="10" /> 
             <Buttons>
                 <Button1>
                     <buttonLeft value="2" />
@@ -87,7 +93,7 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
                     <buttonHeight value="120" />
                     <buttonImage value="file://%INSTALLDIR%/UpArrow.png" />
                     <buttonImagePressed value="file://%INSTALLDIR%/UpArrow.png" />
-                    <buttonAction value="key-19" />
+                    <buttonActionClick value="key-19" />
                 </Button1>
                 <Button2>
                     <buttonLeft value="105" />
@@ -96,7 +102,7 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
                     <buttonHeight value="120" />
                     <buttonImage value="file://%INSTALLDIR%/DownArrow.png" />
                     <buttonImagePressed value="file://%INSTALLDIR%/DownArrow.png" />
-                    <buttonAction value="key-20" />
+                    <buttonActionClick value="key-20" />
                 </Button2>
                 <Button3>
                     <buttonLeft value="208" />
@@ -105,7 +111,7 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
                     <buttonHeight value="120" />
                     <buttonImage value="file://%INSTALLDIR%/scan.png" />
                     <buttonImagePressed value="file://%INSTALLDIR%/scan_pressed.png" />
-                    <buttonAction value="runscript-scantriggerscript" />
+                    <buttonActionClick value="runscript-scantriggerscript" />
                 </Button3>
                 <Button4>
                     <buttonLeft value="413" />
@@ -114,7 +120,7 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
                     <buttonHeight value="120" />
                     <buttonImage value="file://%INSTALLDIR%/space_bar.png" />
                     <buttonImagePressed value="file://%INSTALLDIR%/space_bar.png" />
-                    <buttonAction value="key-62" />
+                    <buttonActionClick value="key-62" />
                 </Button4>
                 <Button5>
                     <buttonLeft value="618" />
@@ -122,7 +128,7 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
                     <buttonWidth value="102" />
                     <buttonHeight value="120" />
                     <buttonText value="Quit" />
-                    <buttonAction value="quit" />
+                    <buttonActionClick value="quit" />
                 </Button5>
             </Buttons>
         </ButtonBar2>
@@ -133,23 +139,23 @@ If user sets any invalid value for button parameters, ButtonBar may not show up 
             <barHeight value="140" />
             <Buttons>
                 <Button1>
-                    <buttonAction value="runscript-deviceinfoscript" />
+                    <buttonActionClick value="runscript-deviceinfoscript" />
                     <buttonImage value="file://%INSTALLDIR%/deviceinfo.png" />
                 </Button1>
                 <Button2>
-                    <buttonAction value="runscript-camerascript" />
+                    <buttonActionClick value="runscript-camerascript" />
                     <buttonImage value="file://%INSTALLDIR%/camera.png" />
                 </Button2>
                 <Button3>
-                    <buttonAction value="runscript-barcodescript" />
+                    <buttonActionClick value="runscript-barcodescript" />
                     <buttonImage value="file://%INSTALLDIR%/button1image.bmp" />
                 </Button3>
                 <Button4>
-                    <buttonAction value="runscript-signaturescript" />
+                    <buttonActionClick value="runscript-signaturescript" />
                     <buttonImage value="file://%INSTALLDIR%/signature.png" />
                 </Button4>
                 <Button5>
-                    <buttonAction value="quit" />
+                    <buttonActionClick value="quit" />
                     <buttonImage value="file://%INSTALLDIR%/quit.png" />
                 </Button5>
             </Buttons>
@@ -186,7 +192,7 @@ This is the head or parent node of the `button.xml` file; all tags should be con
 -----
 
 ### ButtonBarN
-Numbered ButtonBar1 through ButtonBar10, this node contains all the specific [ButtonBar parameters](#buttonbarparameters) (color, transparency, position, etc.) and attributes of a particular numbered ButtonBar, as well as the &lt;ButtonN&gt; nodes. If multiple ButtonBars are required, they must be defined one after another within the the &lt;Buttonbargroup&gt; parent node (as explained above).
+Numbered ButtonBar1 through ButtonBar50, this node contains all the specific [ButtonBar parameters](#buttonbarparameters) (color, transparency, position, etc.) and attributes of a particular numbered ButtonBar, as well as the &lt;ButtonN&gt; nodes. If multiple ButtonBars are required, they must be defined one after another within the the &lt;Buttonbargroup&gt; parent node (as explained above).
 
 **Note**: If an attribute defined for a ButtonBar conflicts with one or more [Button-specific parameters](#buttonspecificparameters), the individual Button setting will take precedence.   
 
@@ -218,12 +224,15 @@ ButtonBar-specific parameters are used to specify attributes that apply to the e
         <barTop value="942" />
         <barWidth value="720" />
         <barHeight value="120" />
+        <barTextColor value="#AF7AC5" />
+        <barTextStyle value="bold" />
+        <barGapBtwnButtons value="10" /> 
     </ButtonBar1>
 
 -----
 
 ### barColor
-Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp). Uses hex format #RRGGBB. 
+Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp). Uses hex format #RRGGBB or #AARRGGBB. 
 
 **Notes**:
 
@@ -231,6 +240,7 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
 * If no color is specified, the default color is blue.
 * If an image is specified as a button background, barColor setting is ignored.
 * If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the [buttonImage](#buttonimage) parameter.
+* The following standard color names are also accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
     
 #### Example
 
@@ -245,7 +255,7 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
 
 ### barColorPressed
 
-Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp) when any button in the bar is pressed. Uses hex format #RRGGBB. 
+Used to specify the color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp) when any button in the bar is pressed. Uses hex format #RRGGBB or #AARRGGBB. 
 
 **Notes**:
 
@@ -253,6 +263,7 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
 * If no color is specified, the default color is yellow.
 * If an image is specified as a button background, barColor setting is ignored.
 * If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the [buttonImagePressed](#buttonimagepressed) parameter.
+* The following standard color names are also accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
 
 #### Example
 
@@ -260,6 +271,42 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
     <ButtonBar1>
       ...
       <barColorPressed value="#3498DB"/>
+      ...
+    </ButtonBar1>
+   
+-----
+
+### barTextColor
+
+Used to specify the text color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp) when any button in the bar is pressed. Uses hex format #RRGGBB or #AARRGGBB. 
+
+**Notes**:
+
+* Setting the text color for individual buttons is not supported.
+* If no color is specified, the default color is white.
+* The following standard color names are also accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
+
+#### Example
+
+    :::xml
+    <ButtonBar1>
+      ...
+      <barTextColor value="#AF7AC5"/>
+      ...
+    </ButtonBar1>
+   
+-----
+
+### barTextStyle
+
+Used to specify the style of the text of all buttons of that particular ButtonBar. All buttons in that particular ButtonBar will have the same style. Allowed values are: `bold`, `bolditalic`, `italic` and `normal`. 
+
+#### Example
+
+    :::xml
+    <ButtonBar1>
+      ...
+      <barTextStyle value="bold"/>
       ...
     </ButtonBar1>
    
@@ -279,6 +326,22 @@ Used to specify the default text size interpreted as "scaled pixel" units. This 
     </ButtonBar1>
 
 -----
+
+### barGapBtwnButtons
+
+Used to specify the space in between the buttons of the particular ButtonBar. Value should be given as pixels in INTEGER format. 
+
+#### Example
+
+    :::xml
+    <ButtonBar1>
+      ...
+      <barGapBtwnButtons value="10"/>
+      ...
+    </ButtonBar1>
+   
+-----
+
 
 ### barTransparency
 
@@ -315,6 +378,19 @@ Used to select the horizontal or vertical orientation of buttons on the ButtonBa
 Used to specify the placement of the ButtonBar on the device screen. 
 
 > **Important**: If any of the four positional attributes (barLeft, barTop, barHeight, barWidth) are unspecified, a buttonBar with horizontal orientation will be placed at the bottom of the screen and occupy the full screen width; and with vertical orientation placed along the right edge of the screen and occupy the full screen height. 
+
+### Using Relative Co-ordinates For ButtonBar Positioning
+
+For positioning related tags you can give the value as either the absolute measure in pixel or you can use the constants like `deviceheight` and `devicewidth` and perform some basic mathematical operations on them. The `deviceheight` and `devicewidth` will be automatically substituted internally with that respective device screenheight and screenwidth. By using these constants we can generate single generic button.xml for all similar devices. Only one mathematical operation should be used for this.
+
+#### Valid Examples
+
+    :::xml
+    <barLeft value="0.25*devicewidth"/>    
+    <barTop value="0.25*deviceheight"/>
+    <barLeft value="0.5*devicewidth"/>
+    <barheight value="deviceheight-100"/>
+    <barwidth value="devicewidth/2"/>
 
 -----
 
@@ -394,12 +470,20 @@ Button-specific parameters are used to specify attributes that apply to an indiv
       <Buttons>
         <Button1>
             <buttonLeft value="2" />
-            <buttonTop value="1063" />
-            <buttonWidth value="102" />
-            <buttonHeight value="120" />
+            <buttonTop value="0.25*deviceheight"/>
+            <buttonHeight value="0.5*devicewidth"/>
+            <buttonWidth value="deviceheight-100"/>
             <buttonImage value="file://%INSTALLDIR%/UpArrow.png" />
             <buttonImagePressed value="file://%INSTALLDIR%/UpArrow.png" />
-            <buttonAction value="key-19" />
+            <buttonSecondaryText value="5"/>
+            <buttonPreview value="false"/>
+            <buttonHapticfeedback value="true"/>
+            <buttonHapticfeedbackduration value="100"/>
+            <buttonClickable value="false"/>
+            <buttonActionClick value="key-19" />
+            <buttonActionLongClick value="runscript-camerascript"/>
+            <buttonActionDown value="quit" />
+            <buttonActionUp value="key-62 + delay-500 + key-53"/>
         </Button1>
         <Button2>
         ...
@@ -408,6 +492,22 @@ Button-specific parameters are used to specify attributes that apply to an indiv
 
 -----
 
+
+## Using Relative Co-ordinates For Button-Specific Positioning
+
+For positioning related tags(buttonLeft, buttonTop, buttonHeight, buttonWidth) you can give the value as either the absolute measure in pixel or you can use the constants like `deviceheight` and `devicewidth` and perform some basic mathematical operations on them. The `deviceheight` and `devicewidth` will be automatically substituted internally with that respective device screenheight and screenwidth. By using these constants we can generate single generic button.xml for all similar devices. Only one mathematical operation should be used for this.
+
+#### Valid Examples
+
+    :::xml
+    <buttonLeft value="0.25*devicewidth"/>    
+    <buttonTop value="0.25*deviceheight"/>
+    <buttonHeight value="0.5*devicewidth"/>
+    <buttonWidth value="deviceheight-100"/>
+
+-----
+
+
 ### buttonLeft
 
 Used to specify the left coordinate value of the particular button inside the ButtonBar. **Use only if the size of a particular button must be larger or smaller than others in the ButtonBar**. If left unspecified, this value is calculated as described under [Button-specific Parameters](#buttonspecificparameters), above.
@@ -415,11 +515,11 @@ Used to specify the left coordinate value of the particular button inside the Bu
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonLeft value="413"/>
       ...
-    </ButtonBar1>
+    </Button1>
   
 
 -----
@@ -431,11 +531,11 @@ Used to specify the top coordinate value of the button inside the ButtonBar. **U
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonTop value="1063"/>
       ...
-    </ButtonBar1>
+    </Button1>
   
 
 -----
@@ -447,11 +547,11 @@ Used to specify the height of the button inside the ButtonBar. **Use only if the
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonHeight value="120"/>
       ...
-    </ButtonBar1>
+    </Button1>
 
 -----
 
@@ -462,11 +562,11 @@ Used to specify the width of the particular button inside the ButtonBar. **Use o
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonWidth value="204"/>
       ...
-    </ButtonBar1>  
+    </Button1>  
 
 -----
 
@@ -490,11 +590,34 @@ If any special characters such as (< > \ / " ') need to be set as a [buttonText]
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonText value="Submit"/>
       ...
-    </ButtonBar1>
+    </Button1>
+
+-----
+
+### buttonSecondaryText
+
+Used to specify the secondary text to be displayed for the particular button at the top right corner of that button when that particular button is long pressed. **Applies only if a background image is not specified**. 
+
+can accept  unless otherwise noted. Entering non-text characters (< > \ / " ') in these fields could cause the Config.xml file to become corrupt.
+
+If any special characters such as (< > \ / " ') need to be set as a [buttonSecondaryText](#buttonSecondaryText) then .
+
+**Notes**:
+
+* **The buttonSecondaryText field accepts alpha-numeric characters only**. Use of non-text characters (i.e. < > \ / " ') will corrupt the `Button.xml` file.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonSecondaryText value="5"/>
+      ...
+    </Button1>
 
 -----
 
@@ -512,12 +635,12 @@ Used to specify a device-resident image file (.png format only) for the particul
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonImage value="file://%INSTALLDIR%/space_bar.png"/>
       <buttonImage value="/storage/emulated/0/deviceinfo.png"/>
       ...
-    </ButtonBar1>
+    </Button1>
 
 -----
 
@@ -535,37 +658,216 @@ Used to specify a device-resident image file (.png format only) for the particul
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
       <buttonImagePressed value="file://%INSTALLDIR%/scan_pressed.png"/>
       <buttonImagePressed value="/storage/emulated/0/scan_pressed.png"/>
       ...
-    </ButtonBar1>
+    </Button1>
 
 
 -----
 
-### buttonAction
+### buttonPreview 
 
-Used to specify the action to be taken when a particular button is pressed. Accepts predefined command strings only.
+Used for previewing the value of button whenever pressed. Button value is previewed if and only if the value is set to true. By default, the value is set to true for all the buttons.
 
 #### Example
 
     :::xml
-    <ButtonBar1>
+    <Button1>
       ...
-      <buttonAction value="key-62"/>
-      <buttonAction value="key-131"/>
-      <buttonAction value="quit"/>
-      <buttonAction value="runscript-camerascript"/>
+      <buttonPreview value="false"/>
       ...
-    </ButtonBar1>
+    </Button1>
+
+-----
+
+### buttonHapticfeedback 
+
+Used to specify the Haptic feedback property for the button. Set the value as true to vibrate on click of button. By default, the value is set to false for all the buttons.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonHapticfeedback value="true"/>
+      ...
+    </Button1>
+
+-----
+
+### buttonHapticfeedbackduration 
+
+Used to specify the vibrate duration of the particular button. By default, the duration value is set to 40 milliseconds. 
+
+**Notes**:
+
+* The vibration will start if [buttonHapticfeedback](buttonhapticfeedback) is set to true.
+* The vibration will stop either if duration is completed or button is released.
+* Set any value in milliseconds in the range of 1 to 1000 milliseconds.
+* The maximum allowed value for duration is 1000 milliseconds. Setting value more than the maximum range will override to 1000 milliseconds.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonHapticfeedback value="true"/>
+      <buttonHapticfeedbackduration value="100"/>
+      ...
+    </Button1>
+
+-----
+
+### buttonClickable 
+
+Used to specify the clickable property of the button. Button is clickable if and only if the value is set to true. By default, the value is set to true for all the buttons. This is useful when no action has to be performed on click of button but want to show the same in the ButtonBar layout.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonClickable value="false"/>
+      ...
+    </Button1>
+
+-----
+
+### buttonActionClick 
+
+Used to specify the action to be taken when a particular button is pressed. Accepts predefined command strings only.
+
+**Notes**:
+
+* The parameter name has been changed from `buttonAction` to `buttonActionClick`. However the older tag name will also work.
+* `buttonActionClick` doesnot gets executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) is defined for that particular button.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonActionClick value="key-62"/>
+      <buttonActionClick value="key-131"/>
+      <buttonActionClick value="quit"/>
+      <buttonActionClick value="runscript-camerascript"/>
+      ...
+    </Button1>
     
 The following Button Actions are supported:
 
+* For [Adding Delay Between Actions](#adding-delay-between-actions)
 * For performing [keyevent](#keyevent) actions
 * For executing [JavaScript](#javascriptexecution) operations
 * For invoking specific [Commands](#commandexecution)
+
+-----
+
+### buttonActionLongClick 
+
+Used to specify the action to be taken when a particular button is long pressed. Accepts predefined command strings only.
+
+**Notes**:
+
+* `buttonActionLongClick` doesnot gets executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) is defined for that particular button.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonActionLongClick value="key-62"/>
+      <buttonActionLongClick value="key-131"/>
+      <buttonActionLongClick value="quit"/>
+      <buttonActionLongClick value="runscript-camerascript"/>
+      ...
+    </Button1>
+    
+The following Button Actions are supported:
+
+* For [Adding Delay Between Actions](#adding-delay-between-actions)
+* For performing [keyevent](#keyevent) actions
+* For executing [JavaScript](#javascriptexecution) operations
+* For invoking specific [Commands](#commandexecution)
+
+-----
+
+### buttonActionDown 
+
+Used to specify the action to be taken when a particular button is pressed(*similar to keydown event*). Accepts predefined command strings only. This is useful when seperate actions need to be associated with button down and up event.
+
+**Notes**:
+
+* [buttonActionClick](#buttonactionclick) & [buttonActionLongClick](#buttonactionlongclick) doesnot gets executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) is defined for that particular button.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonActionDown value="key-62"/>
+      <buttonActionDown value="key-131"/>
+      <buttonActionDown value="quit"/>
+      <buttonActionDown value="runscript-camerascript"/>
+      ...
+    </Button1>
+    
+The following Button Actions are supported:
+
+* For [Adding Delay Between Actions](#adding-delay-between-actions)
+* For performing [keyevent](#keyevent) actions
+* For executing [JavaScript](#javascriptexecution) operations
+* For invoking specific [Commands](#commandexecution)
+
+-----
+
+### buttonActionUp 
+
+Used to specify the action to be taken when a particular button is pressed and released(*similar to keyup event*). Accepts predefined command strings only. This is useful when seperate actions need to be associated with button down and up event.
+
+**Notes**:
+
+* [buttonActionClick](#buttonactionclick) & [buttonActionLongClick](#buttonactionlongclick) doesnot gets executed if either of [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) is defined for that particular button.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonActionUp value="key-62"/>
+      <buttonActionUp value="key-131"/>
+      <buttonActionUp value="quit"/>
+      <buttonActionUp value="runscript-camerascript"/>
+      ...
+    </Button1>
+    
+The following Button Actions are supported:
+
+* For [Adding Delay Between Actions](#adding-delay-between-actions)
+* For performing [keyevent](#keyevent) actions
+* For executing [JavaScript](#javascriptexecution) operations
+* For invoking specific [Commands](#commandexecution)
+
+-----
+
+### Adding Delay Between Actions
+
+Used for generating the delay between actions. After execution of the first action, if the second action need to be executed with a delay then providing the delay command in between two actions will be useful. This can be used in all four kind of button actions i.e. (buttonActionClick, buttonActionLongClick, buttonActionup and buttonActionDown). The command name is  ***delay*-value**.
+
+#### Example
+
+    :::xml
+    <Button1>
+      ...
+      <buttonActionUp value="key-62 + delay-500 + key-53"/>
+      <buttonActionDown value="key-62 + delay-500 + key-53"/>
+      <buttonActionClick value="key-62 + delay-500 + key-53"/>
+      <buttonActionLongClick value="key-62 + delay-500 + key-53"/>
+      ...
+    </Button1>
 
 -----
 
@@ -574,31 +876,24 @@ Used to generate a particular keyevent or to output a character. Specify the key
 
 **This feature can be used to create custom keyboard layouts by invoking multiple ButtonBars placed in rows or columns on the screen**. Generating a keyevent for a particular key can be captured inside JavaScript onkeydown events, and also will output the value, if associated.
 
-#### Example
-
-    :::xml
-    <ButtonBar1>
-      ...
-      <barColor value="#AF7AC5"/>
-      ...
-    </ButtonBar1>
-
-
 #### Key Event Examples
 
-**To generate an F1 key as a buttonAction** for a particular button in a ButtonBar, set the buttonAction syntax as follows:
+**To generate an F1 key as a button action** for a particular button in a ButtonBar, set the [buttonActionClick](#buttonactionclick) or [buttonActionLongClick](#buttonactionlongclick) or [buttonActionDown](#buttonactiondown) or [buttonActionUp](#buttonactionup) syntax as follows:
 
     :::xml        
-    <buttonAction value ="key-131"/>
+    <buttonActionClick value ="key-131"/>
+    <buttonActionLongClick value ="key-131"/>
+    <buttonActionDown value ="key-131"/>
+    <buttonActionUp value ="key-131"/>
 
 
-**To set the scan trigger key as a buttonAction**, send the trigger KeyEvent code (key-104) to the Enterprise Browser app, which will pass it to the barcode scanning framework and activate the scanner. The example below also selects images for the button states: 
+**To set the scan trigger key as a button action**, send the trigger KeyEvent code (key-104) to the Enterprise Browser app, which will pass it to the barcode scanning framework and activate the scanner. The example below also selects images for the button states: 
         
     :::xml
     <Button1>
     	<buttonImage value ="file://%INSTALLDIR%/scan.png"/>
     	<buttonImagePressed value ="file://%INSTALLDIR%/scan_pressed.png"/>
-    	<buttonAction value ="key-104"/>
+    	<buttonActionClick value ="key-104"/>
     </Button1>
 
 
@@ -606,14 +901,14 @@ Used to generate a particular keyevent or to output a character. Specify the key
 
 ## JavaScript Execution
 
-A button can be used to invoke any JavaScript code block, including any of the [Enterprise Browser APIs](../../../api/). Code is assigned to a **buttonAction** value using the **runscript-scriptname** format. 
+A button can be used to invoke any JavaScript code block, including any of the [Enterprise Browser APIs](../../../api/). Code is assigned to a **button action** value using the **runscript-scriptname** format. 
 
-* **runscript -** indicates that a **buttonAction** is associated with a JavaScript code block.
+* **runscript -** indicates that a **button action** is associated with a JavaScript code block.
 * **scriptname -** specifies the name of the script (an .xml file) containing the desired JavaScript block. [More about this file](../script)
 
 **Notes**:
 
-* If a **buttonAction** is to be associated with JavaScript execution, the .xml file containing the code must be stored on the device and identified as above. 
+* If a **button action** is to be associated with JavaScript execution, the .xml file containing the code must be stored on the device and identified as above. 
 * See the [Custom JavaScript Guide](../script) for details on creating custom script .xml files.
 * See also the [&lt;customxmlfile&gt; tag](../../configreference/#customxmlfile) in the `Config.xml` reference to specify or change the name and/or location of the script .xml file.
 
@@ -631,7 +926,7 @@ The two snippets below show the code required to configure a button as a scan tr
         <Button1>
         	<buttonImage value ="file://%INSTALLDIR%/scan.png"/>
         	<buttonImagePressed value ="file://%INSTALLDIR%/scan_pressed.png"/>
-        	<buttonAction value ="runscript-scantriggerscript"/>
+        	<buttonActionClick value ="runscript-scantriggerscript"/>
         </Button1>
         ...
 
@@ -655,7 +950,7 @@ The two snippets below show how to use a button to fetch and display information
 
       :::xml
       <Button1>
-        <buttonAction value ="runscript-deviceinfoscript"/>
+        <buttonActionClick value ="runscript-deviceinfoscript"/>
       </Button1>
            
 ##### In the `CustomScript.xml` file:
@@ -692,7 +987,7 @@ The example below shows how to use a button to execute a command to quit the app
 
     :::xml
     <Button5>
-        <buttonAction value ="quit"/>
+        <buttonActionClick value ="quit"/>
         <buttonImage value ="file://%INSTALLDIR%/quit.png"/>
     </Button5>
 

@@ -346,7 +346,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 ## Configuration
 
 ### HideSystemBar
-**Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1 and higher and OSX 6.2 and higher**. Controls whether the System bar (also known as the Notification bar) is displayed within the Enterprise Browser app. Disabled by default (System bar is showing). [Which MX/OSX is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
+**Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1 and higher and OSX 6.2 and higher**. Controls whether the System bar (also known as the Navigation bar, which contains HOME, BACK and RECENT buttons) is displayed within the Enterprise Browser app. Disabled by default (System bar is showing). [Which MX/OSX is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
 
 
 EnterpriseBrowser introduced a new EB config tag i.e. HideSystemBar which controls hiding of system bar inside Enterprise Browser application. Default value for HideSystemBar config tag is set to 0 in Enterprise Browser Config.xml file.
@@ -480,7 +480,7 @@ Attribute value should be set to alias name entered while installing the Client 
 		<setBackKeyDisable value ="0"/> 
 	  </CustomKioskMode>
 
-### setVolumeButonDisable
+### setVolumeButtonDisable
 **Applies to Android devices only.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the hardware controls for audio volume, which could otherwise silence the kiosk app. Disabled by default (volume control is active.
 
 **Possible Values**:
@@ -491,7 +491,7 @@ Attribute value should be set to alias name entered while installing the Client 
 #### Example 	
 	:::xml
 	  <CustomKioskMode>
-		<setVolumeButonDisable value ="0"/>
+		<setVolumeButtonDisable value ="0"/>
 	  </CustomKioskMode>
 
 ### setRecentAppDisable

@@ -127,7 +127,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 		<setHomeKeyDisable		value ="0"/>
 		<setStatusBarDisable 	value ="0"/>
 		<setBackKeyDisable 		value ="0"/> 
-		<setVolumeButonDisable 	value ="0"/>
+		<setVolumeButtonDisable 	value ="0"/>
 		<setRecentAppDisable    value ="0"/>
 	  </CustomKioskMode>
 		
@@ -272,7 +272,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	      <HTMLStyles>
 	        <JavascriptEnabled value="1"/>
 			<DatabaseEnabled value="0"/>
-			<DomStorageEnabled value="1"/>
+			<DomStorageEnabled value="0"/>
 			<GeoLocationEnabled	value="0"/>
 	        <FontFamily value="Droid Sans Fallback"/>
 			<BackgroundColor value=""/>
@@ -443,7 +443,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 		<setBackKeyDisable value ="0"/> 
 	  </CustomKioskMode>
 
-### setVolumeButonDisable
+### setVolumeButtonDisable
 **Applies to Android devices running <u>Lollipop and higher</u>.** Designed as an enhancement to the Kiosk Mode feature of Lollipop, this parameter can disable the hardware controls for audio volume, which could otherwise silence the kiosk app. Disabled by default (volume control is active.
 
 **Possible Values**:
@@ -454,7 +454,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 #### Example 	
 	:::xml
 	  <CustomKioskMode>
-		<setVolumeButonDisable value ="0"/>
+		<setVolumeButtonDisable value ="0"/>
 	  </CustomKioskMode>
 
 ### setRecentAppDisable
@@ -1680,8 +1680,8 @@ Examples
 
 **Possible Values**:
 
-* 0 - Disabled 
-* **1 - Enabled (default)**
+* **0 - Disabled (default)** 
+* 1 - Enabled
 
 #### Example
 

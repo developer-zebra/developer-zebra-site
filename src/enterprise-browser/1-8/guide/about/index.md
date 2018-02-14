@@ -13,7 +13,7 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 
 The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. For more information about API crossover, see the [API Compatibility matrix](../compatibility). 
 
-> Note: Enterprise Browser does not support JavaScript Alerts that use the syntax "`window.alert("XYZ")`" or `alert("XYZ")`". 
+Note: Enterprise Browser does not support JavaScript Alerts that use the syntax "`window.alert("XYZ")`" or `alert("XYZ")`". 
 
 -----
 ## New in v1.8
@@ -21,11 +21,8 @@ The base [EB installation](../setup) includes all necessary components to allow 
 ### New Config tags
 
 * **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** Optionally disables hardware acceleration at WebView level within an Enterprise Browser app. 
-
 * **[&lt;ClientCertificate&gt;](../configreference#clientcertificate) -** Optionally allows the alias name of a client certification to be specified. **Applies only to devices running Android Lollipop and higher**. 
-
 * **[&lt;DisableAllIME&gt;](../configreference#disableallime) -** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **Applies to Android devices running Lollipop and higher.** 
-
 * **[&lt;HideSystemBar&gt;](../configreference#hidesystembar) -** Controls whether the System bar (also known as the Navigation bar, which contains HOME, BACK and RECENT buttons) is displayed within the Enterprise Browser app. **Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1 and higher and OSX 6.2 and higher**. 
 
 ### Enhanced Config tags
@@ -40,7 +37,7 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## Version History
 
-### Added in EB 1.7
+### Added in v1.7
 
 #### ButtonBar API
 A new Android-only ButtonBar API permits a series of custom buttons or keys to be displayed on the screen and configured to launch an app, execute a JavaScript snippet or perform other operations available to the device. 
@@ -137,7 +134,7 @@ For details, see the [Config.xml Reference](../configreference/#substitutionvari
 * **[&lt;setHomeKeyDisable&gt;](../configreference#sethomekeydisable) -** prevents the HOME key (or capacitive button) on the device from exiting the current app. 
 * **[&lt;setStatusBarDisable&gt;](../configreference#setstatusbardisable) -** prevents the status bar from being displayed (either automatically or by dragging down from the top of the screen). 
 * **[&lt;setBackKeyDisable&gt;](../configreference#setbackkeydisable) -** disables the BACK key (or capacitive button), which could otherwise exit the current app and invoke the previously active app or Launcher screen. 
-* **[&lt;setVolumeButonDisable&gt;](../configreference#setvolumebutondisable) -** prevents the user from controlling the speaker volume using device hardware keys. 
+* **[&lt;setVolumeButtonDisable&gt;](../configreference#setvolumebuttondisable) -** prevents the user from controlling the speaker volume using device hardware keys. 
 * **[&lt;setRecentAppDisable&gt;](../configreference#setrecentappdisable) -** prevents display of the Recent Apps list, which could otherwise allow the user exit the current app by selecting one from the "recents" list. 
 
 ----
@@ -152,7 +149,7 @@ For details, see the [Config.xml Reference](../configreference/#substitutionvari
 
 -----
 
-New or Updated Guides
+#### New or Updated Guides
 
 * A **new [Web Page Capture guide](../capture)** covers diagnostic features introduced in EB 1.7 that can capture screenshots and source code files for all app pages. 
 
@@ -212,7 +209,7 @@ The following Enterprise Browser configuration tags are now supported on Android
 
 * **[&lt;DecodeDuration&gt;](../configreference#decodeduration) -** controls the duration (in milliseconds) of the device beeper sound when a barcode is scanned.
 
-#### New and Updated Guides
+#### New or Updated Guides
 
 * **New [Security Guide](../security) -** explains Enterprise Browser's numerous security features and provides links to their individual guides or guide sections.
 

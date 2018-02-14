@@ -16,22 +16,118 @@ The base [EB installation](../setup) includes all necessary components to allow 
 Note: Enterprise Browser does not support JavaScript Alerts that use the syntax "`window.alert("XYZ")`" or `alert("XYZ")`". 
 
 -----
+
 ## New in v1.8
 
-### New Config tags
+### Device Support 
+EB 1.8 now supports the following devices and mobile operating systems: 
+
+* **CC5000-10** Android Lollipop
+* **MC33X** Android Nougat
+* **MC55X** Windows Embedded Handheld 6.5
+* **MC55X Health Care** Windows Embedded Handheld 6.5
+* **TC51** Android Nougat
+* **TC51 Health Care** Android Nougat
+* **TC56** Android Nougat
+* **TC70X** Android Nougat
+* **TC75X** Android Nougat
+* **VC80X** Android Nougat
+
+**Ultra-Rugged Scanner Support** 
+
+* **DS3678** - Now also supported on Android Nougat devices.
+
+
+### New Config.xml tags
 
 * **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** Optionally disables hardware acceleration at WebView level within an Enterprise Browser app. 
 * **[&lt;ClientCertificate&gt;](../configreference#clientcertificate) -** Optionally allows the alias name of a client certification to be specified. **Applies only to devices running Android Lollipop and higher**. 
 * **[&lt;DisableAllIME&gt;](../configreference#disableallime) -** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **Applies to Android devices running Lollipop and higher.** 
 * **[&lt;HideSystemBar&gt;](../configreference#hidesystembar) -** Controls whether the System bar (also known as the Navigation bar, which contains HOME, BACK and RECENT buttons) is displayed within the Enterprise Browser app. **Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1 and higher and OSX 6.2 and higher**. 
 
-### Enhanced Config tags
+### Enhanced Config.xml tags
 
 * **[&lt;setHomeKeyDisable&gt;](../configreference#sethomekeydisable) -** Now supported on all Android devices with MX 4.3 and higher OSX 1.0 and higher; no longer limited to Lollipop.
 * **[&lt;setStatusBarDisable&gt;](../configreference#setstatusbardisable) -** Now supported on all Android devices with MX 5.1 and higher OSX 5.1 and higher; no longer limited to Lollipop.
 * **[&lt;setBackKeyDisable&gt;](../configreference#setbackkeydisable) -** Now supported on all Android devices; no longer limited to Lollipop.
 * **[&lt;setVolumeButtonDisable&gt;](../configreference#setvolumebuttondisable) -** Now supported on all Android devices; no longer limited to Lollipop.
 * **[&lt;setRecentAppDisable&gt;](../configreference#setrecentappdisable) -** Now supported on all Android devices; no longer limited to Lollipop.
+
+-----
+
+### API Enhancements
+
+The following new methods, properties and/or callbacks were added to Android APIs:
+
+**[System API](../../api/system)**
+* Property - deviceHostName
+
+**[SignalIndicators API](../../api/signalindicators)**
+* New Callback Parameter of wlanStatus Method - New parameters have been added to the existing callback of wlanStatus method.
+* Callback Parameter - deviceHostName
+
+**[Signal API](../../api/re2x/signal)**
+* New signalEvent Parameter - New parameters have been added to the existing signalEvent.
+* Parameter - deviceHostName
+
+**[Barcode API](../../api/barcode)** - Applicable on Android with EMDK version 6.6 and higher.
+* Multi-Barcode UDI Support
+New Callback Parameter of enable Method - New parameters have been added to the existing callback of enable method for supporting Multi-Barcode UDI.
+
+* Callback Parameter - isUDIData
+* Callback Parameter - label
+* Callback Parameter - UDITokenizedData
+* Property - scanMode
+* Property - enableGS1
+* Property - enableHIBCC
+* Property - enableICCBBA
+* Property - adaptiveScanning
+* Property - aimingPattern
+* Property - connectionIdleTime
+* Property - codeIdType
+* Property - disconnectOnExit
+* Property - gs1LimitedSecurityLevel
+* Property - hanXin
+* Property - hanXinInverse
+* Property - mailMark
+* Property - pairAfterScannerReboot
+* Property - upcEanCouponReport
+
+**[EzNFC API](../../api/EzNFC)**
+* New Callback Parameter of enableRead Method - New parameters have been added to the existing callback of enableRead method.
+* Callback Parameter - TagManufacturerName
+* Callback Parameter - TagTechnologies
+* Callback Parameter - ATQA
+* Callback Parameter - SAK
+* Callback Parameter - ATS
+* Existing proximitySensorType Property - The default value of proximitySensorType has been changed from 22 to 65538 for Android Lollipop & above.
+* Existing <DomStorageEnabled> Configuration Tag - DOM Storage will always be enabled by default within Enterprise Browser Application.
+
+Enterprise Browser Application And Configuration Version Comparision - From Enterprise Browser 1.8 and above, Enterprise Browser Application and Configuration version comparison is now gets captured at Enterprise Browser log file.
+
+-----
+
+### ButtonBar Enhancements
+
+* Enhancement To Existing Custom On-screen Buttons/Keyboard Feature For Android Platform
+* Custom On-screen Buttons/Keyboard Usage Guide
+* ButtonBar XML Guide - New ButtonBar and Button-Specific parameters have been introduced.
+* ButtonBar Parameters
+* barTextColor
+* barTextStyle
+* barGapBtwnButtons
+* Button-Specific Parameters
+* buttonSecondaryText
+* buttonActionClick
+* buttonActionLongClick
+* buttonActionDown
+* buttonActionUp
+* buttonClickable
+* buttonPreview
+* buttonHapticfeedback
+* buttonHapticfeedbackduration
+* delay
+* ButtonBar API - 40 New ButtonBar APIs have been added.
 
 -----
 

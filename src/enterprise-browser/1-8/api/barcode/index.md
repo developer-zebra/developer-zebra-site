@@ -151,11 +151,15 @@ Synchronous Return:
 ### enable(<span class="text-info">HASH</span> propertyMap)
 Enabling the scanner puts it in a state that responds to the trigger (on devices with a hardware trigger) or will accept a command to initiate a soft scan (start method). Scanned barcodes will be available to the application through the callback provided to this method. Only one scanner can be enabled on the device at any one time. To switch between the imager and camera scanners (for example), then first disable the currently enabled scanner. If a callback to this method is not specified, the scanned data will be returned as keystrokes. **Note**: It is necessary to enable the scanner on Windows Mobile/CE devices prior to retrieving the state of properties.
 
+On Android platform, to enable the UDI scanning mode in Enterprise Browser, the user must set the scanMode to UDI. The UDI scanning mode will be enabled either using barcode enable method with barcode properties or calling barcode properties separately with/after enable method. The UDI scanning is only available with Imager based scanners. Supported only on Android platform with EMDK version 6.6 and above.
+
+The Scanned Data of UDI labels will be available to the application through callback of this method and it can be differentiated from Barcode data using isUDIData parameter of callback. There are parameters available for scanned UDI data through callback of this method. If callback is not specified to this method then the user will receive the UDI tokenized data collectively as keystrokes.
+
 ####Parameters
 <ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the scanner, for example to enable specific symbologies or check digits. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-barcode?Properties'>property section</a> for applicable properties. failure to provide properties to this function will use the scanner's default properties, or those previously set on the Scanner instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
 
 ####Callback
-Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>data : <span class='text-info'>STRING</span><p>The data decoded by the scanner or imaging device. </p></li><li>source : <span class='text-info'>STRING</span><p>The source device and human readable decoder type of the decoded barcode or symbol. </p></li><li>type : <span class='text-info'>STRING</span><p>Hex value representing the decoder type. </p></li><li>time : <span class='text-info'>STRING</span><p>The time at which the decode occurred (hh:mm:ss) </p></li><li>length : <span class='text-info'>STRING</span><p>The length of the decoded barcode or symbol. </p></li><li>direction : <span class='text-info'>STRING</span><p>The direction the barcode was scanned, either forward, reverse or unavailable. </p></li></ul></ul>
+Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>data : <span class='text-info'>STRING</span><p>The data decoded by the scanner or imaging device. </p></li><li>source : <span class='text-info'>STRING</span><p>The source device and human readable decoder type of the decoded barcode or symbol. </p></li><li>type : <span class='text-info'>STRING</span><p>Hex value representing the decoder type. </p></li><li>time : <span class='text-info'>STRING</span><p>The time at which the decode occurred (hh:mm:ss) </p></li><li>length : <span class='text-info'>STRING</span><p>The length of the decoded barcode or symbol. </p></li><li>direction : <span class='text-info'>STRING</span><p>The direction the barcode was scanned, either forward, reverse or unavailable. </p></li><li>isUDIData : <span class='text-info'>BOOLEAN</span><p>Whether the Scanned Data is UDI decoded data or not. Supported only on Android platform with EMDK version 6.6 and above. </p></li><li>label : <span class='text-info'>STRING</span><p>Get the decoder type of the decoded barcode or symbol. Note: This is specially applicable for UDI decoding. Supported only on Android platform with EMDK version 6.6 and above. </p></li><li>UDITokenizedData : <span class='text-info'>ARRAY</span><p>Array of tokenized data received after processing the UDI barcode Data i.e. it returns the array of hash data. The data read from a UDI Barcode labels contain embedded key/value pairs delimited by characters defined by their UDI type which is mentioned below. Note: This is specially applicable for UDI decoding. Supported only on Android platform with EMDK version 6.6 and above.<ul><li>key : <span class='text-info'>STRING</span><p>Get key of the token data. </p></li><li>data : <span class='text-info'>STRING</span><p>Get data of the token data. </p></li><li>type : <span class='text-info'>STRING</span><p>Get data type of the token data. </p></li><li>format : <span class='text-info'>STRING</span><p>Get format of the token data. </p></li><li>rawData : <span class='text-info'>STRING</span><p>Get raw data of the token data. </p></li></ul></p></li></ul></ul>
 
 ####Returns
 Synchronous Return:
@@ -594,7 +598,7 @@ Synchronous Return:
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
-Controls adaptive scanning. When set to true, the scan engine will automatically toggle between wide and narrow scan angles, allowing the scan engine to decode barcodes either in close proximity or far away (~100 inches). Adaptive scanning is supported only in high performance, long-working range scan engines such as the SE960.
+Controls adaptive scanning. When set to true, the scan engine will automatically toggle between wide and narrow scan angles, allowing the scan engine to decode barcodes either in close proximity or far away (~100 inches). Adaptive scanning is supported only in high performance, long-working range scan engines such as the SE960. On Android platform, it supports only with Laser scanner such as RS4000. It supports on Android with EMDK version 6.6 and above.
 
 ####Access
 
@@ -606,6 +610,7 @@ Controls adaptive scanning. When set to true, the scan engine will automatically
 
 ####Platforms
 
+* Android
 * Windows Mobile
 * Zebra Devices Only (laser scanners on Symbol-branded devices)
 
@@ -667,6 +672,31 @@ Describes the type of aiming to use. Supported on Android with EMDK version 6.3 
 * Android
 * Windows Mobile
 * Zebra Devices Only (scanners on Symbol-branded devices)
+
+###aimingPattern
+
+####Type
+<span class='text-info'>STRING</span> 
+
+####Description
+It describes the aiming pattern to be turned ON or OFF. It supports on Android with EMDK version 6.6 and above.
+
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.AIMINGPATTERN_ON - String: "ON" Aiming pattern is turned on.
+* Constant: EB.Barcode.AIMINGPATTERN_OFF - String: "OFF" Aiming pattern is turned off.
+
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.aimingPattern</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.aimingPattern</code> 
+
+####Platforms
+
+* Android
 
 ###allDecoders
 
@@ -1670,6 +1700,32 @@ Sets the Code 93 Redundancy property, if set the barcode must be decoded twice b
 * Windows CE
 * Zebra devices only (Some scan engines do not support all symbologies/symbology properties)
 
+###codeIdType
+
+####Type
+<span class='text-info'>STRING</span> 
+
+####Description
+Allows the code type of a scanned barcode and select a code ID character to insert between the prefix and the decoded symbol. This is useful when the reader is decoding more than one code type. It supports on Android with EMDK version 6.6 and above.
+
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.CODEIDTYPE_NONE - String: "NONE" Disable the prefix.
+* Constant: EB.Barcode.CODEIDTYPE_AIM - String: "AIM" Enables the standards based three character prefix.
+* Constant: EB.Barcode.CODEIDTYPE_SYMBOL - String: "SYMBOL" Enables the defined single character prefix.
+
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.codeIdType</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.codeIdType</code> 
+
+####Platforms
+
+* Android
+
 ###compositeAb
 
 ####Type
@@ -1762,6 +1818,22 @@ Controls the symbology for Composite C barcodes. If an application is not expect
 * Windows Mobile
 * Windows CE
 * Zebra devices only (Some scan engines do not support all symbologies/symbology properties)
+
+###connectionIdleTime
+
+####Type
+<span class='text-info'>INTEGER</span> 
+####Description
+Specifies the time, in seconds, that an external scanner will be allowed to remain idle before the connection between the terminal and the scanner is severed to conserve power. The value should be in multiple of 5. This is currently applicable to Bluetooth scanners only. For Android L and above the valid range start from 0. When time is set to 0, BT scanner will remain connected with terminal.It supports on Android with EMDK version 6.6 and above.
+
+####Access
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.connectionIdleTime</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.connectionIdleTime</code> 
+
+####Platforms
+
+* Android
 
 ###connectionIdleTimeout
 
@@ -2150,6 +2222,22 @@ Forces the scanner to disconnect from the terminal when disabled. Since the scan
 * Windows Mobile
 * Zebra devices only (Bluetooth scanners on Symbol Technologies' devices)
 
+###disconnectOnExit
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+It indicates to the scan driver to disconnect any existing connection between an external Bluetooth scanner and the terminal. When a BT scanner establishes connection to the terminal it will not automatically disconnect when the scanner is disabled by calling Scanner.disable(). If this parameter is set the scanning driver will force the scanner to disconnect. Please note that if this parameter is set to true, it will not fire the DISCONNECTED state. It supports on Android with EMDK version 6.6 and above.
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.disconnectOnExit</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.disconnectOnExit</code> 
+
+####Platforms
+
+* Android
+
 ###displayBtAddressBarcodeOnEnable
 
 ####Type
@@ -2276,6 +2364,54 @@ When true, EAN 8 barcodes will be converted to EAN 13 and EAN 13 parameters used
 * Windows CE
 * Zebra devices only (Some scan engines do not support all symbologies/symbology properties)
 
+###enableGS1
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+Enable or disable the GS1 decoding of UDI. It supports on Android with EMDK version 6.6 and above.
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.enableGS1</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.enableGS1</code> 
+
+####Platforms
+
+* Android
+
+###enableHIBCC
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+Enable or disable the HIBCC decoding of UDI. It supports on Android with EMDK version 6.6 and above.
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.enableHIBCC</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.enableHIBCC</code> 
+
+####Platforms
+
+* Android
+
+###enableICCBBA
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+Enable or disable the ICCBBA decoding of UDI. It supports on Android with EMDK version 6.6 and above.
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.enableICCBBA</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.enableICCBBA</code> 
+
+####Platforms
+
+* Android
+
 ###enableTimeout
 
 ####Type
@@ -2401,6 +2537,75 @@ Controls the symbology for GS1 Databar Limited barcodes. If an application is no
 * Windows Mobile
 * Windows CE
 * Zebra devices only (Some scan engines do not support all symbologies/symbology properties)
+
+###gs1LimitedSecurityLevel
+
+####Type
+<span class='text-info'>STRING</span> 
+
+####Description
+Specifies the Security level addition of GS1 DataBar lim decoder. Increasing the level of security may result in reduced aggressiveness in scanning, so choose only that level of security necessary. It supports on Android with EMDK version 6.6 and above.
+
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.LEVEL_1 - String: "LEVEL_1" No clear margin required. This complies with the original GS1 standard, yet might result in erroneous decoding of the DataBar Limited barcode when scanning some UPC symbols that start with digits "9" and "7".
+* Constant: EB.Barcode.LEVEL_2 - String: "LEVEL_2" Automatic risk detection. This level of security may result in erroneous decoding of DataBar Limited barcodes when scanning some UPC symbols.
+* Constant: EB.Barcode.LEVEL_3 - String: "LEVEL_3" Security level reflects newly proposed GS1 standard that requires a 5 times trailing clear margin.
+* Constant: EB.Barcode.LEVEL_4 - String: "LEVEL_4" Security level extends beyond the standard required by GS1. This level of security requires a 5 times leading and trailing clear margin.
+
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.gs1LimitedSecurityLevel</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.gs1LimitedSecurityLevel</code> 
+
+####Platforms
+
+* Android
+
+###hanXin
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+Enables or disables the symbology for the HanXin decoder. It supports on Android with EMDK version 6.6 and above.
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.hanXin</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.hanXin</code> 
+
+####Platforms
+
+* Android
+
+###hanXinInverse
+
+####Type
+<span class='text-info'>STRING</span> 
+
+####Description
+This property allows the user to select decoding on inverse HanXin barcodes. It supports on Android with EMDK version 6.6 and above.
+
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.HANXININVERSE_AUTO - String: "AUTO" It allows decoding of both positive as well as inverse HanXin symbologies.
+* Constant: EB.Barcode.HANXININVERSE_DISABLED - String: "DISABLED" It disables decoding of inverse HanXin symbologies.
+* Constant: EB.Barcode.HANXININVERSE_ENABLED - String: "ENABLED" It enables decoding of only inverse HanXin symbologies.
+
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.hanXinInverse</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.hanXinInverse</code> 
+
+####Platforms
+
+* Android
 
 ###hapticFeedback
 
@@ -3038,6 +3243,22 @@ If true, the scanner driver will not complete read requests while in the middle 
 * Windows Mobile
 * Zebra devices only (Some scan engines do not support all symbologies/symbology properties)
 
+###mailMark
+
+####Type
+<span class='text-info'>BOOLEAN</span> 
+####Description
+Enables or disables the symbology for MailMark decoder. Supported only on Android Platform with EMDK version 6.6 & above.
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.mailMark</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.mailMark</code> 
+
+####Platforms
+
+* Android
+
 ###matrix2of5
 
 ####Type
@@ -3363,7 +3584,7 @@ When true, the barcode check digit(s) will be reported for scanned MSI barcodes.
 * Windows CE
 * Zebra devices only (Some scan engines do not support all symbologies/symbology properties)
 
-###OneDQuietZoneLevel
+###oneDQuietZoneLevel
 
 ####Type
 <span class='text-info'>STRING</span> 
@@ -3380,9 +3601,9 @@ Specifies the effort at which the decoder will attempt to decode margin-less bar
 ####Access
 
 
-* Instance: This property can be accessed via an instance object of this class: <code>myObject.OneDQuietZoneLevel</code>
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.oneDQuietZoneLevel</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
-	* <code>EB.Barcode.OneDQuietZoneLevel</code> 
+	* <code>EB.Barcode.oneDQuietZoneLevel</code> 
 
 
 
@@ -3390,6 +3611,31 @@ Specifies the effort at which the decoder will attempt to decode margin-less bar
 
 * Android
 * Zebra devices only (Symbol Technologies' Bluetooth barcode scanners, model RS507)
+
+###pairAfterScannerReboot
+
+####Type
+<span class='text-info'>STRING</span> 
+
+####Description
+Enable and disable automatic reconnection after scanner reboot. Applicable to DS3678 Bluetooth scanner only. It supports on Android with EMDK version 6.6 and above.
+
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.PASR_DISABLE - String: "DISABLE" Don't keep paring Info after bluetooth scanner reboot.
+* Constant: EB.Barcode.PASR_ENABLE - String: "ENABLE" Keep pairing info after bluetooth scanner reboot.
+
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.pairAfterScannerReboot</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.pairAfterScannerReboot</code> 
+
+####Platforms
+
+* Android
 
 ###pdf417
 
@@ -4225,6 +4471,31 @@ When the aimType:continuousRead property is applied this value defines the inter
 * Windows Mobile
 * Zebra devices only (scanners on Symbol-branded devices)
 
+###scanMode
+
+####Type
+<span class='text-info'>STRING</span> 
+
+####Description
+Describes the available scanning modes such as Single Barcode and UDI. This property allows to set one type at a time. It supports on Android with EMDK version 6.6 and above.
+
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.SCANMODE_SINGLE_BARCODE - String: "single_barcode" Decode only a single barcode at a time.
+* Constant: EB.Barcode.SCANMODE_UDI - String: "udi" Decode UDI standard barcodes. This will decode AI fields of the barcodes as well. Note that the UDI scanning is only available with Imager based scanners.
+
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.scanMode</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.scanMode</code> 
+
+####Platforms
+
+* Android
+
 ###scanTimeout
 
 ####Type
@@ -4565,6 +4836,32 @@ Controls decoding of UPC EAN Coupon barcodes.
 * Windows Mobile
 * Windows CE
 * Zebra devices only (Some scan engines do not support all symbologies/symbology properties)
+
+###upcEanCouponReport
+
+####Type
+<span class='text-info'>STRING</span> 
+
+####Description
+It Used to differentiate between old coupon (UPC/EAN and Code128) and new GS1 DataBar Coupons. Supported only on Android Platform with EMDK version 6.6 & above.
+
+####Values
+
+<strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
+ 
+* Constant: EB.Barcode.COUPONREPORT_OLD - String: "OLD" Scanner will read only the old coupon format.
+* Constant: EB.Barcode.COUPONREPORT_NEW - String: "NEW" Scanner will read only the new GS1 DataBar coupon format.
+* Constant: EB.Barcode.COUPONREPORT_BOTH - String: "BOTH" Scanner will read both old coupon format as well as the new GS1 DataBar coupon format.
+
+####Access
+
+* Instance: This property can be accessed via an instance object of this class: <code>myObject.upcEanCouponReport</code>
+* Default Instance: This property can be accessed via the default instance object of this class. 
+	* <code>EB.Barcode.upcEanCouponReport</code> 
+
+####Platforms
+
+* Android
 
 ###upcEanLinearDecode
 

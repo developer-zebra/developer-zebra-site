@@ -272,7 +272,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	      <HTMLStyles>
 	        <JavascriptEnabled value="1"/>
 			<DatabaseEnabled value="0"/>
-			<DomStorageEnabled value="0"/>
+			<DomStorageEnabled value="1"/>
 			<GeoLocationEnabled	value="0"/>
 	        <FontFamily value="Droid Sans Fallback"/>
 			<BackgroundColor value=""/>
@@ -1676,17 +1676,17 @@ Examples
 
 
 ### DomStorageEnabled
-**Applies only to Android devices running KitKat and higher**. Controls whether application data is stored locally using HTML5 Web Storage. Disabled by default. <!-- See also [ApplicationCacheEnabled](#applicationcacheenabled). -->
+**Applies only to Android devices running KitKat and higher**. Controls whether application data is stored locally using HTML5 Web Storage. Enabled by default. <!-- See also [ApplicationCacheEnabled](#applicationcacheenabled). -->
 
 **Possible Values**:
 
-* **0 - Disabled (default)**
-* 1 - Enabled
+* 0 - Disabled 
+* **1 - Enabled (default)**
 
 #### Example
 
 	:::xml
-	<DomStorageEnabled value="0"/>
+	<DomStorageEnabled value="1"/>
 
 
 ### DatabaseEnabled

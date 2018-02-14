@@ -86,7 +86,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 
 	:::xml
 	// Enterprise Browser 1.8 configuration file for Android
-	// IMPORTANT: Differences exist in Windows Mobile/CE version
+	// IMPORTANT: File differs for Windows Mobile/CE
 
 		<Configuration>
 	   <EB_VERSION value="1.8.0.0"/>
@@ -345,6 +345,40 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 
 ## Configuration
 
+### HideSystemBar
+**Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1 and higher and OSX 6.2 and higher**. Controls whether the System bar (also known as the Notification bar) is displayed within the Enterprise Browser app. Disabled by default (System bar is showing). 
+
+
+EnterpriseBrowser introduced a new EB config tag i.e. HideSystemBar which controls hiding of system bar inside Enterprise Browser application. Default value for HideSystemBar config tag is set to 0 in Enterprise Browser Config.xml file.
+
+**Possible values**:
+
+* **0 - Disabled (default; shows System bar)**
+* 1 - Enabled (hides System bar)
+
+#### Example
+	<Configuration>
+	...
+		<HideSystemBar value ="0"/> 
+	...
+	</Configuration>
+
+### ClientCertificate
+**Applies only to Android devices running Lollipop and higher**. Allows the name of a client certification to be specified. **This tag is not present in the default `Config.xml` file and must be added manually**. use of this tag enables Enterprise Browser to silently select and validate a client certificate. 
+
+Attribute value should be set to alias name entered while installing the Client certificate.  With this attribute set, user will be prompted to select the client certificate only once until Enterprise Browser is uninstalled. Multiple client certificates validation are not presently supported by this attribute. Applicable to only https server applications where server is configured for validating a client certificate.
+
+**Possible values**:
+
+* A string containing an alias of the certificate name specified when the original client certificate was installed.
+
+#### Example
+	<Configuration>
+	...
+		<ClientCertificate value="your_client_cert_alias"/>
+	...
+	</Configuration>
+
 ### buttonxmlfile
 **Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings for the custom on-screen buttons on the device. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will read the `button.xml` file (if present) from the specified folder when the app launches. For more information, see the [Customize EB Functions](../customize) guide.
 
@@ -391,7 +425,7 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 
 
 ### WebPageCapture
-**Applies to Android devices only**. Controls the ability of an Enterprise Browser app to capture for diagnostics purposes the source location and rendered screen of the WebView window currently in the foreground. When enabled (value=1), For complete instructions, see the [Capture a Screen](../capture) user guide.  
+**Applies to Android devices only**. Controls the ability of an Enterprise Browser app to capture for diagnostics purposes the source location and rendered screen of the WebView window currently in the foreground. When enabled (value=1), screens are captured. For complete instructions, see the [Capture a Screen](../capture) user guide.  
 
 **Possible Values**:
 
@@ -473,6 +507,24 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	  <CustomKioskMode>
 		<setRecentAppDisable value ="0"/>
 	  </CustomKioskMode>
+
+### DisableAllIME
+**Applies to Android devices running <u>Lollipop and higher</u>.** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. 
+
+**Possible values**:
+
+* **0 - Disabled (default; IMEs can be used)**
+* 1 - Enabled (IMEs cannot be used)
+
+####Example
+	<Configuration>
+	...
+	 <IME>
+	 	<DisableAllIME value ="0"/>
+	 </IME>
+	 ...
+	</Configuration>
+
 
 ### JSLibraries
 **Applies only to devices running Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into [the DOM](../DOMinjection/#whatisthedom) of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called, but in most cases will not conflict with such references. **See Notes**. 
@@ -1556,6 +1608,18 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 	:::xml
 	<useDWforScanning value="0"/>
 
+### DisableHardwareAcceleration
+**Applies to Android KitKat and higher only**. Controls whether hardware acceleration at WebView level within an Enterprise Browser application should be disabled. **By default, acceleration is always enabled** (tag value=0). 
+
+**Possible Values**:
+
+* **0 - Enable hardware acceleration at WebView level (default)**
+* 1 - Disable hardware acceleration at WebView level
+
+#### Example
+	:::xml
+	<DisableHardwareAcceleration value="0"/>
+
 -----
 
 ## Authentication
@@ -1679,17 +1743,17 @@ Examples
 
 
 ### DomStorageEnabled
-**Applies only to Android devices running KitKat and higher**. Controls whether application data is stored locally using HTML5 Web Storage. Disabled by default. <!-- See also [ApplicationCacheEnabled](#applicationcacheenabled). -->
+**Applies only to Android devices running KitKat and higher**. Controls whether application data is stored locally using HTML5 Web Storage. Enabled by default. <!-- See also [ApplicationCacheEnabled](#applicationcacheenabled). -->
 
 **Possible Values**:
 
-* **0 - Disabled (default)**
-* 1 - Enabled
+* 0 - Disabled 
+* **1 - Enabled (default)**
 
 #### Example
 
 	:::xml
-	<DomStorageEnabled value="0"/>
+	<DomStorageEnabled value="1"/>
 
 
 ### DatabaseEnabled

@@ -87,8 +87,9 @@ The default `Config.xml` file for Android is shown below for reference. **Import
 	:::xml
 	// Enterprise Browser 1.8 configuration file for Android
 	// IMPORTANT: File differs for Windows Mobile/CE
+	// DO NOT modify contents of the EB_VERSION tag (below)
 
-		<Configuration>
+	<Configuration>
 	   <EB_VERSION value="1.8.0.0"/>
 	   
 	  <DebugButtons>

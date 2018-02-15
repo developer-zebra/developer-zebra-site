@@ -4,7 +4,9 @@ productversion: '1.8'
 product: Enterprise Browser
 layout: guide.html
 ---
-##Overview
+
+## Overview
+
 Keycodes are constants that uniquely identify the ASCII values of device keypresses (hard or soft). Android apps made with Enterprise Browser 1.4 and higher permit Android keycode values to be assigned from a file when an Enterprise Browser app starts up. **Note**: The keycodes for keys with multiple values accessed with the shift or other modifier key (such as upper and lower case) might not be capturable. See the [KeyCapture API remarks](../../api/keycapture/#remarks) for more information. 
 
 **Note: The WorkAbout Pro 4 and Omnii XT15** are among a small group of Zebra devices running Windows Mobile that return proprietary keycode values inconsistent with those of other devices and incompatible with Windows. To address this issue, apps made with Enterprise Browser 1.5 or higher can remap those proprietary keycodes to Microsoft standard codes. See the [Mapping Proprietary Function Keycodes](#mappingproprietaryfunctionkeycodes) section below. 
@@ -22,8 +24,11 @@ The following facts apply generally to Android keycode mapping for Enterprise Br
 * Upon app install, a mapping-file template is placed in the EB installation directory, usually `sdcard0/android/data/com.symbol.enterprisebrowser`.
 * Keycodes not mapped (or left blank in the mapping file) retain their default values. 
 * [Additional restrictions](../../api/keycapture/#remarks) apply to keycapture and keycode mapping. 
+* The `keycodemapping.xml` file must not be empty nor contain data not formatted according to the guidelines described in this guide. 
 
-##Mapping Android Keycodes 
+-----
+
+## Mapping Android Keycodes 
 To assign custom keycodes to Android hard or soft keys, follow these simple steps:  
 
 &#49;. [Deploy Enterprise Browser](../setup) to the device. 
@@ -97,7 +102,9 @@ For example:
 
 &#56;. Relaunch the Enterprise Browser app and check that its keycodes are mapped as specified.  
 
-##Handling Incorrect Keycodes
+-----
+
+## Handling Incorrect Keycodes
 Once it is determined that correct keypresses are generating incorrect keycodes, the incorrect keycode value must be determined before the correct one can be substituted. This process uses JavaScript to expose the keycodes that appear when pressing one or more keys. 
 
 The first step is to confirm that Windows keycodes are not being forced as a result of the &lt;isWindowsKey&gt; tag:
@@ -129,7 +136,9 @@ where "KEYCODE_X" = the name of the keycode. [Standard Android key names](http:/
 
 &#52;. Relaunch Enterprise Browser and **repeat Step 2 to confirm** that correct code(s) are generated.  
 
-##More Information
+-----
+
+## More Information
 
 * **[KeyCapture API](../../api/keycapture) -** how to include the API and use its methods
 * **[Keys that cannot be captured](../../api/keycapture/#remarks) -** including the SHIFT and ALT keys 

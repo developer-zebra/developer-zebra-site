@@ -35,20 +35,22 @@ EB 1.8 now supports the following devices and mobile operating systems:
 
 **Ultra-Rugged Scanner Support** 
 
-* **DS3678** - Now also supported on Android Nougat devices.
-
+* **DS3678** - Now supported when connected to Android Nougat devices
 
 ### New Config.xml tags
 
 * **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** Optionally disables hardware acceleration at WebView level within an Enterprise Browser app. 
 * **[&lt;ClientCertificate&gt;](../configreference#clientcertificate) -** Optionally allows the alias name of a client certification to be specified. **Applies only to devices running Android Lollipop and higher**. 
 * **[&lt;DisableAllIME&gt;](../configreference#disableallime) -** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **Applies to Android devices running Lollipop and higher.** 
-* **[&lt;HideSystemBar&gt;](../configreference#hidesystembar) -** Controls whether the System bar (also known as the Navigation bar, which contains HOME, BACK and RECENT buttons) is displayed within the Enterprise Browser app. **Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1 and higher and OSX 6.2 and higher**. 
+* **[&lt;HideSystemBar&gt;](../configreference#hidesystembar) -** Controls whether the System bar (also known as the Navigation bar, which contains HOME, BACK and RECENT buttons) is displayed within the Enterprise Browser app. **Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1/OSX 6.2 and higher**. 
+
+* **[&lt;EB_CONFIG&gt;](../configreference#ebconfig) -** 
+
 
 ### Enhanced Config.xml tags
 
-* **[&lt;setHomeKeyDisable&gt;](../configreference#sethomekeydisable) -** Now supported on all Android devices with MX 4.3 and higher OSX 1.0 and higher; no longer limited to Lollipop.
-* **[&lt;setStatusBarDisable&gt;](../configreference#setstatusbardisable) -** Now supported on all Android devices with MX 5.1 and higher OSX 5.1 and higher; no longer limited to Lollipop.
+* **[&lt;setHomeKeyDisable&gt;](../configreference#sethomekeydisable) -** Now supported on all Android devices with MX 4.3/OSX 1.0 and higher; no longer limited to Lollipop.
+* **[&lt;setStatusBarDisable&gt;](../configreference#setstatusbardisable) -** Now supported on all Android devices with MX 5.1/OSX 5.1 and higher; no longer limited to Lollipop.
 * **[&lt;setBackKeyDisable&gt;](../configreference#setbackkeydisable) -** Now supported on all Android devices; no longer limited to Lollipop.
 * **[&lt;setVolumeButtonDisable&gt;](../configreference#setvolumebuttondisable) -** Now supported on all Android devices; no longer limited to Lollipop.
 * **[&lt;setRecentAppDisable&gt;](../configreference#setrecentappdisable) -** Now supported on all Android devices; no longer limited to Lollipop.
@@ -764,35 +766,35 @@ The printers shown below have been tested for compatibility with USB printing fr
   <th width="25%" class="text-centered">Interface(s)</th>
  </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="mz220pic" src="https://raw.githubusercontent.com/EBZebra/docs/d05601dc71f2531672f39c00238de2ea250d851f/edge/images/zebra-mz220.jpg" width="175"></img></td>
+<td class="clsSyntaxCells clsOddRow"><img id="mz220pic" src="https://raw.githubusercontent.com/EBZebra/docs/d05601dc71f2531672f39c00238de2ea250d851f/edge/images/zebra-mz220.jpg"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>MZ</b></td>
 <td class="clsSyntaxCells clsOddRow">MZ 220, MZ 320</td>
 <td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
 </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="imz220pic" src="../../images/imz320.jpg" width="175"></img></td>
+<td class="clsSyntaxCells clsOddRow"><img id="imz220pic" src="../../images/imz320.jpg"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>iMZ</b></td>
 <td class="clsSyntaxCells clsOddRow">iMZ 220, iMZ 320</td>
 <td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
 </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="rw420pic" src="../../images/rw420_inCradle.jpg" width="175"></img></td>
+<td class="clsSyntaxCells clsOddRow"><img id="rw420pic" src="../../images/rw420_inCradle.jpg"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>RW</b></td>
 <td class="clsSyntaxCells clsOddRow">RW 220, RW 420, RW 420 Print Station</td>
 <td class="clsSyntaxCells usb comp">Android, Windows Mobile/CE</td>
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
 </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="rp4tpic" src="https://raw.githubusercontent.com/EBZebra/docs/d05601dc71f2531672f39c00238de2ea250d851f/edge/images/zebra-p4t.jpg" width="175"></img></td>
+<td class="clsSyntaxCells clsOddRow"><img id="rp4tpic" src="https://raw.githubusercontent.com/EBZebra/docs/d05601dc71f2531672f39c00238de2ea250d851f/edge/images/zebra-p4t.jpg"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>P4T</b></td>
 <td class="clsSyntaxCells clsOddRow">P4T, RP4T Passive RFID Printer</td>
 <td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
 </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="zd500rpic" src="../../images/zd500r.jpg" width="175"></img></td>
+<td class="clsSyntaxCells clsOddRow"><img id="zd500rpic" src="../../images/zd500r.jpg"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>ZD500R</b></td>
 <td class="clsSyntaxCells clsOddRow">ZD500R RFID Printer</td>
 <td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>

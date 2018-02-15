@@ -24,6 +24,8 @@ automenu:
           url: ShortcutCreator
     - title: App Customization
       items:
+        - title: API Usage Guide
+          url: apioverview
         - title: Custom On-screen Buttons/Keys
           url: customize
         - title: Button Parameter Guide

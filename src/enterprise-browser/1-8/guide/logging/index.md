@@ -5,14 +5,14 @@ product: Enterprise Browser
 layout: guide.html
 ---
 ##Overview 
-Enterprise Browser includes a powerful logging engine, offering administrators, developers and tech support teams the potential to access a rich, multi-level data streams relating to application execution, events and failures for  debugging an app and analyzing events following a crash or other failure. This guide explains how to enable logging, select logging levels, send messages to the log and to retrieve the log file. 
+Enterprise Browser includes a powerful logging engine, which offers administrators, developers and tech support teams the potential to access rich, multi-level data streams relating to application execution, events and failures for debugging an app and analyzing events following a crash or other failure. This guide explains how to enable logging, select logging levels, send messages to the log and to retrieve the log file. Logging for an Enterprise Browser app is controlled in the [Logger section](../configreference/#logger) of the app's `Config.xml` file. 
 
-Logging is hierarchical, and log-event settings in the `Config.xml` file can override or be overridden by others. See the [Logger section of the Config.xml Reference](../configreference/#logger) for more information. 
+In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSION&gt; tag](../configreference#eb_versiontag) stores version information in the `Config.xml` file, which is analyzed for logging and diagnostics purposes. 
 
 -----
 
-## Enabling Logging
-Logging for an Enterprise Browser app is controlled in the [Logger section](../configreference/#logger) of the app's `Config.xml` file. 
+## Enable Logging
+Logging is hierarchical, with lower-order log-event settings overridden by higher ones. For example, the LogError setting can be overridden by any other setting, but LogUser can be superseded only by LogMemory. The list below describes each of the logger settings and is arranged in ascending order of precedence. 
 
 **The five levels of log messages**:
 
@@ -26,7 +26,7 @@ Logging for an Enterprise Browser app is controlled in the [Logger section](../c
 
 **LogMemory -** Controls the logging of memory usage in the system. Supports Android, WM/CE; does not apply to the Enterprise Tablet.
 
-The &lt;Logger&gt; section of the `Config.xml` file is shown below with its default settings. To enable a logging of a particular event, change the value in the event's tag to "1" as shown below for Error, Warning and Info events:
+The &lt;Logger&gt; section of the `Config.xml` file is shown below with its default settings. To enable logging for a particular event, change the value in the event's tag to "1" as shown below for Error, Warning and Info events:
 
 	:::xml
 	<Logger>
@@ -56,6 +56,8 @@ Enterprise Browser logging offers the following additional options:
 **LogMemPeriod -** Specifies the time interval (in ms) after which memory logs will be generated (accepts an integer). Supports Android and WM/CE; does not apply to the Enterprise Tablet. 
 
 **LogMaxSize -** Specifies the maximum allowable size (in KB) of the log file, after which no more logs will be saved (accepts an integer). 
+
+-----
 
 ## Logging Messages
 For added visibility into an app, log messages can be invoked from program code. The easiest way to do this is usually to add a print statement to the segment where insight is needed. In JavaScript, this is done via the `console.log()` method. For instance, to gain visibility into the contents of the variable "name," try something like to the following:

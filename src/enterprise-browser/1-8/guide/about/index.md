@@ -13,7 +13,7 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 
 The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. For more information about API crossover, see the [API Compatibility matrix](../compatibility). 
 
-Note: Enterprise Browser does not support JavaScript Alerts that use the syntax "`window.alert("XYZ")`" or `alert("XYZ")`". 
+**Note**: Enterprise Browser does not work well with JavaScript Alerts that use the syntax "`window.alert("XYZ")`" or `alert("XYZ")`".<br> **Zebra recommends avoiding the use of the JavaScript Alert function on any Enterprise Browser page**. 
 
 -----
 
@@ -43,8 +43,7 @@ EB 1.8 now supports the following devices and mobile operating systems:
 * **[&lt;ClientCertificate&gt;](../configreference#clientcertificate) -** Optionally allows the alias name of a client certification to be specified. **Applies only to devices running Android Lollipop and higher**. 
 * **[&lt;DisableAllIME&gt;](../configreference#disableallime) -** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **Applies to Android devices running Lollipop and higher.** 
 * **[&lt;HideSystemBar&gt;](../configreference#hidesystembar) -** Controls whether the System bar (also known as the Navigation bar, which contains HOME, BACK and RECENT buttons) is displayed within the Enterprise Browser app. **Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1/OSX 6.2 and higher**. 
-
-* **[&lt;EB_CONFIG&gt;](../configreference#ebconfig) -** 
+* **[&lt;EB_VERSION&gt;](../configreference#eb_versiontag) -** Automatically generated tag stores version information for logging and diagnostics purposes. 
 
 
 ### Enhanced Config.xml tags
@@ -54,6 +53,7 @@ EB 1.8 now supports the following devices and mobile operating systems:
 * **[&lt;setBackKeyDisable&gt;](../configreference#setbackkeydisable) -** Now supported on all Android devices; no longer limited to Lollipop.
 * **[&lt;setVolumeButtonDisable&gt;](../configreference#setvolumebuttondisable) -** Now supported on all Android devices; no longer limited to Lollipop.
 * **[&lt;setRecentAppDisable&gt;](../configreference#setrecentappdisable) -** Now supported on all Android devices; no longer limited to Lollipop.
+* **[&lt;DomStorageEnabled&gt;](../configreference#domstorageenabled) -** New "enabled" default setting helps preserve Enterprise Browser app data.
 
 -----
 
@@ -73,39 +73,40 @@ The following new methods, properties and/or callbacks were added to Android API
 * Parameter - deviceHostName
 
 **[Barcode API](../../api/barcode)** - Applicable on Android with EMDK version 6.6 and higher.
-* Multi-Barcode UDI Support
-New Callback Parameter of enable Method - New parameters have been added to the existing callback of enable method for supporting Multi-Barcode UDI.
 
-* Callback Parameter - isUDIData
-* Callback Parameter - label
-* Callback Parameter - UDITokenizedData
-* Property - scanMode
-* Property - enableGS1
-* Property - enableHIBCC
-* Property - enableICCBBA
-* Property - adaptiveScanning
-* Property - aimingPattern
-* Property - connectionIdleTime
-* Property - codeIdType
-* Property - disconnectOnExit
-* Property - gs1LimitedSecurityLevel
-* Property - hanXin
-* Property - hanXinInverse
-* Property - mailMark
-* Property - pairAfterScannerReboot
-* Property - upcEanCouponReport
+**Multi-barcode UDI support**
+The following new callback parameters and properties have been added to the `enable` method:
+
+* **Callbacks**:
+ * isUDIData
+ * label
+ * UDITokenizedData
+
+* **Properties**:
+ * scanMode
+ * enableGS1
+ * enableHIBCC
+ * enableICCBBA
+ * adaptiveScanning
+ * aimingPattern
+ * connectionIdleTime
+ * codeIdType
+ * disconnectOnExit
+ * gs1LimitedSecurityLevel
+ * hanXin
+ * hanXinInverse
+ * mailMark
+ * pairAfterScannerReboot
+ * upcEanCouponReport
 
 **[EzNFC API](../../api/EzNFC)**
-* New Callback Parameter of enableRead Method - New parameters have been added to the existing callback of enableRead method.
-* Callback Parameter - TagManufacturerName
-* Callback Parameter - TagTechnologies
-* Callback Parameter - ATQA
-* Callback Parameter - SAK
-* Callback Parameter - ATS
-* Existing proximitySensorType Property - The default value of proximitySensorType has been changed from 22 to 65538 for Android Lollipop & above.
-* Existing <DomStorageEnabled> Configuration Tag - DOM Storage will always be enabled by default within Enterprise Browser Application.
-
-Enterprise Browser Application And Configuration Version Comparision - From Enterprise Browser 1.8 and above, Enterprise Browser Application and Configuration version comparison is now gets captured at Enterprise Browser log file.
+* The following new callback parameters have been added to the `enableRead` method:
+ * Callback Parameter - TagManufacturerName
+ * Callback Parameter - TagTechnologies
+ * Callback Parameter - ATQA
+ * Callback Parameter - SAK
+ * Callback Parameter - ATS
+* The default value of the `proximitySensorType` property has been changed from 22 to 65538 for Android Lollipop and higher
 
 -----
 
@@ -412,14 +413,14 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="mc32Pic" src="../../images/mc3200.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC32N0</b></td>
   <td class="clsSyntaxCells clsOddRow">MC32N0</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Android 5.0 (Lollipop)<br>Windows CE 7.0</td>
+  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  
  </tr><tr>
@@ -461,7 +462,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="mc67Pic" src="../../images/mc67.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br>Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
@@ -524,7 +525,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc55.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
   <td class="clsSyntaxCells clsOddRow">TC55</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)<br>Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>

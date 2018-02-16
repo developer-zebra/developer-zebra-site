@@ -95,21 +95,23 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 #### State 1
 
 * **Condition**: The version of Enterprise Browser installed on the device matches the value stored in the &lt;EB_VERSION&gt; tag.
-* **Log Entry**: "EB Config.xml (vX.x.n.n) is matching with the EB application (vX.x.n.n) running on the device."
+* **Log Entry**: "EB Config.xml (vX.y.m.n) is matching with the EB application (vX.y.m.n) running on the device."
 
 #### State 2
 
 * **Condition**: The version of Enterprise Browser installed on the device **does not match** the value stored in the &lt;EB_VERSION&gt; tag. 
-* **Log Entry**: "EB Config.xml (vX.x.n.n) is not matching with the EB application (vX.y.n.n) running on the device. Please use the associated EB Config.xml which matches with the EB application version i.e. (vK.L.M.N)."
+* **Log Entry**: "EB Config.xml (vX.y.m.n) is not matching with the EB application (vA.b.c.d) running on the device. Please use the associated EB Config.xml which matches with the EB application version i.e. (vA.b.c.d)."
 
 #### State 3
 
 * **Condition**: The `Config.xml` file contains no &lt;EB_VERSION&gt; tag. 
-* **Log Entry**: "EB Config.xml is not matching with the EB application (vX.x.n.n) running on the device. Probably you are using the older EB Config.xml. Please use the associated EB Config.xml which matches with the EB application version i.e. (vX.x.n.n)."
+* **Log Entry**: "EB Config.xml is not matching with the EB application (vX.y.m.n) running on the device. Probably you are using the older EB Config.xml. Please use the associated EB Config.xml which matches with the EB application version i.e. (vX.y.m.n)."
 
-**KEY**
-* **"X.x"** = Major and minor version numbers of the Enterprise Browser release (i.e. "v1.8.n.n") 
-* **"n.n"** = Build and revision numbers of the release (i.e. "vX.x.1.0")
+#### KEY
+* **"X"** = Major version number of the Enterprise Browser release (i.e. v**_1_**.8.2.7)
+* **"y"** = Minor version number of the release (i.e. v1.**_8_**.2.7) 
+* **"m"** = Build number of the release (i.e. v1.8.**_2_**.7)
+* **"n"** = Revision number of the release (i.e. v1.8.2.**_7_**)
 
 -----
 

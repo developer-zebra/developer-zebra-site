@@ -13,7 +13,7 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 
 The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. For more information about API crossover, see the [API Compatibility matrix](../compatibility). 
 
-**Note**: Enterprise Browser does not work well with JavaScript Alerts that use the syntax "`window.alert("XYZ")`" or `alert("XYZ")`".<br> **Zebra recommends avoiding the use of the JavaScript Alert function on any Enterprise Browser page**. 
+**Note: JavaScript Alerts that use the syntax** "`window.alert("XYZ")`" **or** `alert("XYZ")`" **can result in unpredictable behavior when used with Enterprise Browser apps**  <br> **Zebra recommends avoiding the use of the JavaScript Alert function on any Enterprise Browser page**. 
 
 -----
 
@@ -62,17 +62,23 @@ EB 1.8 now supports the following devices and mobile operating systems:
 The following new methods, properties and/or callbacks were added to Android APIs:
 
 **[System API](../../api/system)**
-* Property - deviceHostName
+* New property:
+ * deviceHostName
 
 **[SignalIndicators API](../../api/signalindicators)**
-* New Callback Parameter of wlanStatus Method - New parameters have been added to the existing callback of wlanStatus method.
-* Callback Parameter - deviceHostName
+
+* New callback parameter of wlanStatus method: 
+ * deviceHostName
 
 **[Signal API](../../api/re2x/signal)**
-* New signalEvent Parameter - New parameters have been added to the existing signalEvent.
-* Parameter - deviceHostName
+
+* New signalEvent parameter: 
+ * deviceHostName
 
 **[Barcode API](../../api/barcode)** - Applicable on Android with EMDK version 6.6 and higher.
+
+**[ButtonBar API family](../../api/re2x/ButtonBar)** - Now contains 40 new ButtonBar APIs.
+
 
 **Multi-barcode UDI support**
 The following new callback parameters and properties have been added to the `enable` method:
@@ -81,23 +87,22 @@ The following new callback parameters and properties have been added to the `ena
  * isUDIData
  * label
  * UDITokenizedData
-
 * **Properties**:
- * scanMode
- * enableGS1
- * enableHIBCC
- * enableICCBBA
- * adaptiveScanning
- * aimingPattern
- * connectionIdleTime
- * codeIdType
- * disconnectOnExit
- * gs1LimitedSecurityLevel
- * hanXin
- * hanXinInverse
- * mailMark
- * pairAfterScannerReboot
- * upcEanCouponReport
+	* scanMode
+	* enableGS1
+	* enableHIBCC
+	* enableICCBBA
+	* adaptiveScanning
+	* aimingPattern
+	* connectionIdleTime
+	* codeIdType
+	* disconnectOnExit
+	* gs1LimitedSecurityLevel
+	* hanXin
+	* hanXinInverse
+	* mailMark
+	* pairAfterScannerReboot
+	* upcEanCouponReport
 
 **[EzNFC API](../../api/EzNFC)**
 * The following new callback parameters have been added to the `enableRead` method:
@@ -111,26 +116,27 @@ The following new callback parameters and properties have been added to the `ena
 -----
 
 ### ButtonBar Enhancements
+The following enhancements to existing custom on-screen buttons and keyboard features for Android have been added:
 
-* Enhancement To Existing Custom On-screen Buttons/Keyboard Feature For Android Platform
 * Custom On-screen Buttons/Keyboard Usage Guide
 * ButtonBar XML Guide - New ButtonBar and Button-Specific parameters have been introduced.
-* ButtonBar Parameters
-* barTextColor
-* barTextStyle
-* barGapBtwnButtons
-* Button-Specific Parameters
-* buttonSecondaryText
-* buttonActionClick
-* buttonActionLongClick
-* buttonActionDown
-* buttonActionUp
-* buttonClickable
-* buttonPreview
-* buttonHapticfeedback
-* buttonHapticfeedbackduration
-* delay
-* ButtonBar API - 40 New ButtonBar APIs have been added.
+* ButtonBar parameters
+ * barTextColor
+ * barTextStyle
+ * barGapBtwnButtons
+* Button-specific parameters
+ * buttonSecondaryText
+ * buttonActionClick
+ * buttonActionLongClick
+ * buttonActionDown
+ * buttonActionUp
+ * buttonClickable
+ * buttonPreview
+ * buttonHapticfeedback
+ * buttonHapticfeedbackduration
+ * delay
+
+**[ButtonBar API family](../../api/re2x/ButtonBar)** - Now contains 40 new ButtonBar APIs.
 
 -----
 
@@ -360,32 +366,12 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="et1Pic" src="../../images/et1.jpeg" height="25"></td>
-  <td class="clsSyntaxCells clsOddRow"><b>ET1</b></td>
-  <td class="clsSyntaxCells clsOddRow">ET1 (Enterprise Tablet)<br> ET1 WAN</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.1 (Jelly Bean)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
- </tr>
+  <tr>
   <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="et5xPic" src="../../images/et5x.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>ET5X</b></td>
   <td class="clsSyntaxCells clsOddRow">ET50, ET55</td>
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>Android 6.0 (Marshmallow)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="tc75FalconPic" src="../../images/tc75Falcon.jpg" height="25"></td>
-  <td class="clsSyntaxCells clsOddRow"><b>TC75x</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC75x</td>
-  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="tc51IronmanPic" src="../../images/tc51Ironman.jpg" height="25"></img></td>
-  <td class="clsSyntaxCells clsOddRow"><b>TC5x</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC51, TC51HC, TC56</td>
-  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -415,6 +401,13 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">MC32N0</td>
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
+ </tr>
+<tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="mc33Pic" src="../../images/mc33x.png" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>MC33X</b></td>
+  <td class="clsSyntaxCells clsOddRow">MC3300</td>
+  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc40Pic" src="../../images/mc40.jpeg" height="25"></td>
@@ -448,6 +441,13 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="mc55n0Pic" src="../../images/mc55.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC55N0</b></td>
   <td class="clsSyntaxCells clsOddRow">MC55N0</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="mc55xPic" src="../../images/mc55x.png" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>MC55X</b></td>
+  <td class="clsSyntaxCells clsOddRow">MC55-HC Healthcare</td>
   <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
@@ -529,10 +529,24 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc51IronmanPic" src="../../images/tc51Ironman.jpg" height="25"></img></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC5x</b></td>
+  <td class="clsSyntaxCells clsOddRow">TC51, TC51HC, TC56</td>
+  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+ <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc70Pic" src="../../images/tc70.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
   <td class="clsSyntaxCells clsOddRow">TC70 GA1, TC70 GA2</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc70xPic" src="../../images/tc75Falcon.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC70x</b></td>
+  <td class="clsSyntaxCells clsOddRow">TC70x</td>
+  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -543,6 +557,13 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc75FalconPic" src="../../images/tc75Falcon.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC75x</b></td>
+  <td class="clsSyntaxCells clsOddRow">TC75x</td>
+  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="../../images/tc8000.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC8000</nobr></td>
@@ -596,6 +617,13 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
+<tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="vc80xPic" src="../../images/vc80x.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>VC80X</b></td>
+  <td class="clsSyntaxCells clsOddRow">VC80C</td>
+  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Stock Android Webkit</td>
+ </tr>
 </tbody>
 </table>
 
@@ -608,6 +636,13 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <th width="25%" class="clsSyntaxHeadings">Device</th>
   <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
   <th width="25%" class="clsSyntaxHeadings">Supported WebView(s)</th>
+ </tr>
+  <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="cc5000" src="../../images/cc5000.png" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>CC5000-10</b></td>
+  <td class="clsSyntaxCells clsOddRow">Customer Concierge</td>
+  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mk3000Pic" src="../../images/mk3000.jpeg" height="25"></td>
@@ -729,7 +764,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>DS3678</b></td>
   <td class="clsSyntaxCells clsOddRow">Ultra-Rugged Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">Supported for use with TC51 and TC51HC (Marshmallow)</td>
+  <td class="clsSyntaxCells clsOddRow">Supported for use with TC51 and TC51HC (Marshmallow) and devices running Android Nougat</td>
  </tr>
 </tbody>
 </table>

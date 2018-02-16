@@ -197,9 +197,9 @@ On devices with a hardware keyboard, Android apps made with Enterprise 1.2 or la
 -----
 
 ## UI Rendering
-UI rendering varies by rendering engine, and also can be effected by web page layout and design, font selection and other factors. Many of the styles available today are not supported by the default IE rendering engine, and pages rendered on WM/CE device using the IE engine will render differently than devices with the Zebra Webkit engine. When designing web pages for Enterprise Browser, Zebra therefore recommends adhering to [Responsive Web Design](https://developers.google.com/web/fundamentals/design-and-ui/responsive/fundamentals/?hl=en) practices whenever possible.
+UI rendering varies by the rendering engine present in the device. Rendering also can be effected by web page layout and design, font selection and other factors. Many of the styles available today are not supported by the default IE rendering engine, and pages rendered on WM/CE devices using the IE engine will render differently than devices with the Zebra Webkit engine. When designing web pages for Enterprise Browser, **Zebra recommends adhering to [Responsive Web Design](https://developers.google.com/web/fundamentals/design-and-ui/responsive/fundamentals/?hl=en) practices whenever possible**.
 
-To ease the usage of applications running on Enterprise Browser, users can now configure hardware function keys to perform ZoomIn and ZoomOut operations without having to make changes to the application.
+To simply the usage of applications running on Enterprise Browser, users can now configure hardware function keys to perform ZoomIn and ZoomOut operations without having to make changes to the application.
 
 **Note: The function keys used for ZoomIn and/or ZoomOut operations are not accessible via any Key Capture API**. <!--Configuration for Zoom IN & Zoom OUT feature is supported in WM/CE platform. WHAT DOES THIS MEAN?-->
 
@@ -230,40 +230,125 @@ To avoid rebooting the device after every failed log-in attempt, Zebra recommend
 
 -----
 
-## Optimize Performance
-If an app is performing poorly, the following tips and tricks might help improve it.
+## Optimizing Performance
 
-* If the scanner is required for multiple pages of an SAP app, Zebra recommends [keeping the scanner enabled](../configreference/#disablescannerduringnavigation) when navigating from one page to another (it's disabled during navigation by default). The scanner should be disabled only when quitting the app or when reaching a page after which it will no longer be used. 
+If an app is performing poorly, the following techniques might help improve it.
 
-* Avoid pre-loading unwanted capabilities that are not required in SAP environment. Some common pre-loads are listed below. If they're not needed by the app, enter a "0" in their tag in the `Config.xml` (as shown) to disable them.
+* If the scanner is required by multiple pages of an SAP app, Zebra recommends [keeping the scanner enabled](../configreference/#disablescannerduringnavigation) when navigating from one page to another (it's disabled during navigation by default). The scanner should be disabled only when quitting the app or when reaching a page after which it will no longer be used. 
 
-            :::xml
-
-            <PreloadLegacyODAX value="0"/>
-            <PreloadLegacyNoSIP value="0"/>
-            <PreloadLegacyAirBeam value="0"/>
-            <PreloadLegacyAPD value="0"/>
-
-* Zebra recommends disabling the Hourglass "page loading" icon (as shown) to improve performance during page navigation:
+* Avoid pre-loading unwanted capabilities that are not required in SAP environment. Some common pre-loads are listed below. If they're not needed by the app, enter a "0" in their tag in the `Config.xml` (shown below) to disable them:
 
             :::xml
-
-            <HourglassEnabled value="0"/>
-
-* Zebra recommends disabling screen orientation (as shown) to avoid issues while scanning:
+          <PreloadLegacyODAX value="0"/>
+          <PreloadLegacyNoSIP value="0"/>
+          <PreloadLegacyAirBeam value="0"/>
+          <PreloadLegacyAPD value="0"/>
+<br>
+* Zebra recommends disabling the Hourglass "page loading" icon (shown below) to improve performance during page navigation:
 
             :::xml
+          <HourglassEnabled value="0"/>
+<br>
+* Zebra recommends disabling screen orientation (shown below) to avoid issues while scanning:
 
-            <ScreenOrientation value="0"/>
-
-* Zebra recommends loading only the API modules required by the app and adopting as many additional [Optimization techniques](../optimization) as possible.
+            :::xml
+          <ScreenOrientation value="0"/>
+<br>
+* Zebra recommends loading only the API modules required by the app, and adopting as many additional [Optimization techniques](../optimization) as possible.
 
 -----
 
-## Handle Bad Links
-Since ITSmobile apps require the internet (an imperfect medium), apps should be designed to handle communication and navigation failures gracefully. Enterprise Browser is designed to automatically display a [bad link page](../configreference/#badlinkuri) if the user encounters a link that no longer exists or navigation is taking too long. 
+## Handling Service Interruptions
 
-When designing the page, consider adding Quit, Back and Reload buttons so users never feel stuck. For ITSmobile apps, Zebra recommends that the Reload button redirect the app back to the SAP authentication page.
+As with any app that relies on the internet, ITSmobile apps should be designed to gracefully handle occasional service interruptions and navigation failures. Enterprise Browser is designed to automatically display a [bad link page](../configreference/#badlinkuri) if the user encounters a link that no longer exists or if navigation is taking too long. 
+
+One technique that page designers might consider is to add "Quit," "Back" and "Reload" buttons to pages so users never feel stuck. For ITSmobile apps, Zebra recommends that the Reload button direct the app back to the SAP authentication page.
+
+-----
+
+## User Agent
+
+For cases in which a page loads properly on one device and not on another, UserAgent values might be the cause, particularly when migrating an app from WM/CE to Android or vice versa. To check for this issue, follow the steps below. 
+
+**&#49;. Identify the browser and platform** of the properly loading page from these possible combinations: 
+
+* Enterprise Browser on Windows Mobile/CE
+* Enterprise Browser on Android 
+* Internet Explorer on Windows Mobile/CE
+* Stock Android Browser on Android
+* Google Chrome browser on Android
+* Desktop browser (IE/Chrome/Mozilla/Opera) 
+
+**&#50;. In the working browser, enter the URL below** to display the UserAgent values: 
+
+[https://www.whatismybrowser.com/detect/what-is-my-user-agent](https://www.whatismybrowser.com/detect/what-is-my-user-agent)
+
+**&#50;a. Alternatively, execute the JavaScript commands below** at the browser's JavaScript console on the working device to retrieve its UserAgent values from the sample HTML page:
+
+    :::xml
+    var userAgentValue = navigator.userAgent.toString();
+    alert(userAgentValue); //Note: alert is not recommended
+
+    //Example UserAgent values:
+
+    "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36"
+
+**&#51;. Copy the** `Config.xml` **from to non-working device** to the local development host, open the file in a text editor and locate the UserAgent tag. 
+
+The `Config.xml` file is located: 
+
+* **On Android**: `/Android/data/com.symbol.enterprisebrowser`
+* **On Windows Mobile/CE**: `\Program Files\EnterpriseBrowser\Config`
+
+**&#52;. Transfer the UserAgent values of the working device to the non-working device** using one of the methods below. The method used will depend on the formatting of the UserAgent data retrieved from the working device. 
+
+#### Method 1 
+
+If the retrieved data is formatted as below:
+
+    "Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36".
+
+Copy all the data within the quotes and paste it into the UserAgent config tag inside quotes as shown below:
+
+    <UserAgent value="Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"/>
+
+
+#### Method 2 
+
+If the retrieved data is formatted as below:
+
+    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5.3.5)"
+
+### TO BE CONTINUED...
+Then, one can append only the necessary portion of the string in the existing UserAgent value which can resolve the page loading issue using the UserAgent config tag available inside EB Config.xml as shown in the below example.
+
+Example:
+
+If the UserAgent value is "Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36".
+
+And just by adding can MSIE 6.0 can resolve the issue then once can add details in the below manner:
+
+<UserAgent value ="MSIE 6.0; Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"/>
+
+5. Once the UserAgent value is modified in Enterprise Browser Config.xml. Place the same inside EnterpriseBrowser installed directory in the device and restart the Enterprise Browser.
+
+6. SAP page should now be loading properly if there are no further issues other than UserAgent.
+
+-----
+
+## Function Key Mapping
+
+Function Key Mapping SAP Guide
+
+(Regarding WorkAbout Pro 4 WEH(WM) and Omnii XT15 WEH(WM) Device - Function Key Usage Notes to be added)
+
+As SAP application is highly dependent on function keys. But on few WM devices as mentioned above when user presses any function key, it returns a proprietary set of Unicode values via Windows character messages rather than the values expected from Windows keydown/keyup messages.
+
+For example, pressing the F1 key returns the hexadecimal value E001 (57345 decimal) rather than the hex value 0x70 (112 decimal) as generally expected. This can lead to compatibility issues for Enterprise Browser apps when running on such WM devices.
+
+Therefore, we need to add a note for such scenario mentioning that this can be handled by Function Key Mapping.
+
+Please to refer Enterprise Browser Function Key Mapping Guide i.e. http://techdocs.zebra.com/enterprise-browser/1-7/guide/keycapture/#mappingproprietaryfunctionkeycodes
 
 -----
 

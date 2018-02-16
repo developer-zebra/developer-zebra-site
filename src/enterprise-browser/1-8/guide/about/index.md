@@ -37,6 +37,14 @@ EB 1.8 now supports the following devices and mobile operating systems:
 
 * **DS3678** - Now supported when connected to Android Nougat devices
 
+-----
+
+### Updated Guides
+
+* **[SAP ITSmobile Usage Guide](../sap) -** Now offers new sections for User Agent Function Key Mapping. 
+
+-----
+
 ### New Config.xml tags
 
 * **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** Optionally disables hardware acceleration at WebView level within an Enterprise Browser app. 
@@ -61,48 +69,32 @@ EB 1.8 now supports the following devices and mobile operating systems:
 
 The following new methods, properties and/or callbacks were added to Android APIs:
 
-**[System API](../../api/system)**
-* New property:
- * deviceHostName
-
-**[SignalIndicators API](../../api/signalindicators)**
-
-* New callback parameter of wlanStatus method: 
- * deviceHostName
-
-**[Signal API](../../api/re2x/signal)**
-
-* New signalEvent parameter: 
- * deviceHostName
-
-**[Barcode API](../../api/barcode)** - Applicable on Android with EMDK version 6.6 and higher.
+* **[System API](../../api/system)** - Added `deviceHostName` property.
+* **[SignalIndicators API](../../api/signalindicators)** - Added `deviceHostName` callback parameter to `wlanStatus` method. 
+* **[Signal API](../../api/re2x/signal)** - Added `deviceHostName` parameter added to `signalEvent` method. 
+* **[Barcode API](../../api/barcode)** - Added Multi-barcode UDI support, including the following new callback parameters and properties added to the `enable` method (Applicable on Android with EMDK version 6.6 and higher):
+	* **Callbacks**:
+ 		* isUDIData
+ 		* label
+ 		* UDITokenizedData
+	* **Properties**:
+		* scanMode
+		* enableGS1
+		* enableHIBCC
+		* enableICCBBA
+		* adaptiveScanning
+		* aimingPattern
+		* connectionIdleTime
+		* codeIdType
+		* disconnectOnExit
+		* gs1LimitedSecurityLevel
+		* hanXin
+		* hanXinInverse
+		* mailMark
+		* pairAfterScannerReboot
+		* upcEanCouponReport
 
 **[ButtonBar API family](../../api/re2x/ButtonBar)** - Now contains 40 new ButtonBar APIs.
-
-
-**Multi-barcode UDI support**
-The following new callback parameters and properties have been added to the `enable` method:
-
-* **Callbacks**:
- * isUDIData
- * label
- * UDITokenizedData
-* **Properties**:
-	* scanMode
-	* enableGS1
-	* enableHIBCC
-	* enableICCBBA
-	* adaptiveScanning
-	* aimingPattern
-	* connectionIdleTime
-	* codeIdType
-	* disconnectOnExit
-	* gs1LimitedSecurityLevel
-	* hanXin
-	* hanXinInverse
-	* mailMark
-	* pairAfterScannerReboot
-	* upcEanCouponReport
 
 **[EzNFC API](../../api/EzNFC)**
 * The following new callback parameters have been added to the `enableRead` method:

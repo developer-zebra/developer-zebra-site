@@ -13,7 +13,7 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 
 The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. For more information about API crossover, see the [API Compatibility matrix](../compatibility). 
 
-**Note: Zebra recommends avoiding the use of the JavaScript Alert function on any Enterprise Browser page**. Use of the syntax "`window.alert("XYZ")`" or `alert("XYZ")`" can result in unpredictable behavior when present in Enterprise Browser apps.  
+**Note: Zebra recommends avoiding the use of the JavaScript Alert function on any Enterprise Browser page**. Use of the syntax "`window.alert("a message")`" or `alert("another message")`" can result in unpredictable behavior when present in Enterprise Browser apps.  
 
 -----
 
@@ -37,54 +37,54 @@ EB 1.8 now supports the following mobile computing devices and operating systems
 EB 1.8 is now supported for use with the following scanners when connected to these Zebra devices and operating systems:
 
 * **DS3678 Ultra-Rugged Scanner** 
- * Running Android 6.0 (Marshmallow)
- 	* TC51
- 	* TC51-HC
- 	* TC56
- 	* TC70X
- * Running Android 7.0 (Nougat **BSP 01.01.49 or higher**)
- 	* MC33X
- 	* TC51
- 	* TC51-HC
- 	* TC56
- 	* TC70X
- 	* TC75X
- 	* VC80X
+	* Running Android 6.0 (Marshmallow)
+ 		* TC51
+ 		* TC51-HC
+ 		* TC56
+ 		* TC70X
+	* Running Android 7.0 (**Nougat BSP 01.01.49 or higher**)
+ 		* MC33X
+ 		* TC51
+ 		* TC51-HC
+ 		* TC56
+ 		* TC70X
+ 		* TC75X
+ 		* VC80X
 * **RS507 Cordless Ring Scanner**
- * Android 4.4 (KitKat)
-	* TC70
- * Android 5.0 (Lollipop)
-	* TC75
-	* TC8000
- * Android 6.0 (Marshmallow)
-	* TC51
-	* TC51-HC
-	* TC56
-	* TC70X
- * Android 7.0 (Nougat **BSP 01.01.49 or higher**)
-	* MC33X
-	* TC51
-	* TC51-HC
-	* TC56
-	* TC70X
-	* TC75X
-	* VC80X
+	* Android 4.4 (KitKat)
+		* TC70
+	* Android 5.0 (Lollipop)
+		* TC75
+		* TC8000
+	* Android 6.0 (Marshmallow)
+		* TC51
+		* TC51-HC
+		* TC56
+		* TC70X
+	* Android 7.0 (**Nougat BSP 01.01.49 or higher**)
+		* MC33X
+		* TC51
+		* TC51-HC
+		* TC56
+		* TC70X
+		* TC75X
+		* VC80X
 * **RS6000 Bluetooth Ring Scanner**
- * Android 5.0 (Lollipop)
-	* TC75
-	* TC8000
- * Android 6.0 (Marshmallow)
-	* TC51
-	* TC56
-	* TC70X
- * Android 7.0 (Nougat **BSP 01.01.49 or higher**)
-	* MC33X
-	* TC51
-	* TC51-HC
-	* TC56
-	* TC70X
-	* TC75X
-	* VC80X
+	* Android 5.0 (Lollipop)
+		* TC75
+		* TC8000
+	* Android 6.0 (Marshmallow)
+		* TC51
+		* TC56
+		* TC70X
+	* Android 7.0 (**Nougat BSP 01.01.49 or higher**)
+		* MC33X
+		* TC51
+		* TC51-HC
+		* TC56
+		* TC70X
+		* TC75X
+		* VC80X
 
 -----
 

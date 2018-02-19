@@ -13,46 +13,94 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 
 The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. For more information about API crossover, see the [API Compatibility matrix](../compatibility). 
 
-**Note: JavaScript Alerts that use the syntax** "`window.alert("XYZ")`" **or** `alert("XYZ")`" **can result in unpredictable behavior when used with Enterprise Browser apps**  <br> **Zebra recommends avoiding the use of the JavaScript Alert function on any Enterprise Browser page**. 
+**Note: Zebra recommends avoiding the use of the JavaScript Alert function on any Enterprise Browser page**. Use of the syntax "`window.alert("XYZ")`" or `alert("XYZ")`" can result in unpredictable behavior when present in Enterprise Browser apps.  
 
 -----
 
 ## New in v1.8
 
 ### Device Support 
-EB 1.8 now supports the following devices and mobile operating systems: 
+EB 1.8 now supports the following mobile computing devices and operating systems: 
 
 * **CC5000-10** Android Lollipop
 * **MC33X** Android Nougat
 * **MC55X** Windows Embedded Handheld 6.5
-* **MC55X Health Care** Windows Embedded Handheld 6.5
+* **MC55X Healthcare** Windows Embedded Handheld 6.5
 * **TC51** Android Nougat
-* **TC51 Health Care** Android Nougat
+* **TC51 Healthcare** Android Nougat
 * **TC56** Android Nougat
 * **TC70X** Android Nougat
 * **TC75X** Android Nougat
 * **VC80X** Android Nougat
 
-**Ultra-Rugged Scanner Support** 
+### Scanner Support
+EB 1.8 is now supported for use with the following scanners when connected to these Zebra devices and operating systems:
 
-* **DS3678** - Now supported when connected to Android Nougat devices
+* **DS3678 Ultra-Rugged Scanner** 
+ * Running Android 6.0 (Marshmallow)
+ 	* TC51
+ 	* TC51-HC
+ 	* TC56
+ 	* TC70X
+ * Running Android 7.0 (Nougat **BSP 01.01.49 or higher**)
+ 	* MC33X
+ 	* TC51
+ 	* TC51-HC
+ 	* TC56
+ 	* TC70X
+ 	* TC75X
+ 	* VC80X
+* **RS507 Cordless Ring Scanner**
+ * Android 4.4 (KitKat)
+	* TC70
+ * Android 5.0 (Lollipop)
+	* TC75
+	* TC8000
+ * Android 6.0 (Marshmallow)
+	* TC51
+	* TC51-HC
+	* TC56
+	* TC70X
+ * Android 7.0 (Nougat **BSP 01.01.49 or higher**)
+	* MC33X
+	* TC51
+	* TC51-HC
+	* TC56
+	* TC70X
+	* TC75X
+	* VC80X
+* **RS6000 Bluetooth Ring Scanner**
+ * Android 5.0 (Lollipop)
+	* TC75
+	* TC8000
+ * Android 6.0 (Marshmallow)
+	* TC51
+	* TC56
+	* TC70X
+ * Android 7.0 (Nougat **BSP 01.01.49 or higher**)
+	* MC33X
+	* TC51
+	* TC51-HC
+	* TC56
+	* TC70X
+	* TC75X
+	* VC80X
 
 -----
 
 ### Updated Guides
 
-* **[SAP ITSmobile Usage Guide](../sap) -** Now offers new sections for User Agent Function Key Mapping. 
+* **[SAP ITSmobile Usage Guide](../sap) -** Now offers new sections for User Agent and Function Key Mapping. 
 
 -----
 
 ### New Config.xml tags
 
 * **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** Optionally disables hardware acceleration at WebView level within an Enterprise Browser app. 
-* **[&lt;ClientCertificate&gt;](../configreference#clientcertificate) -** Optionally allows the alias name of a client certification to be specified. **Applies only to devices running Android Lollipop and higher**. 
+* **[&lt;ClientCertificate&gt;](../configreference#clientcertificate) -** Optionally allows the alias name of a client certificate to be specified. **Applies only to devices running Android Lollipop and higher**. 
 * **[&lt;DisableAllIME&gt;](../configreference#disableallime) -** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **Applies to Android devices running Lollipop and higher.** 
 * **[&lt;HideSystemBar&gt;](../configreference#hidesystembar) -** Controls whether the System bar (also known as the Navigation bar, which contains HOME, BACK and RECENT buttons) is displayed within the Enterprise Browser app. **Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1/OSX 6.2 and higher**. 
-* **[&lt;EB_VERSION&gt;](../configreference#eb_versiontag) -** Automatically generated tag stores version information for logging and diagnostics purposes. 
-
+* **Enterprise Browser version info is now captured in the** `Config.xml` **file**. On startup, EB apps compare and log information about possible mismatches between the `Config.xml` in use and the version of EB installed on the device. [More info](../configreference#eb_versiontag). 
 
 ### Enhanced Config.xml tags
 
@@ -398,7 +446,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="mc33Pic" src="../../images/mc33x.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC33X</b></td>
   <td class="clsSyntaxCells clsOddRow">MC3300</td>
-  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat BSP 01.01.49 or higher)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -510,21 +558,21 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="xt15pic" src="../../images/xt15.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>Omnii XT15</b></td>
   <td class="clsSyntaxCells clsOddRow">XT15</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 (Omnii CE-12.2.44149 BSP or higher)<br>Windows Embedded Handheld 6.5 (Omnii CE-12.2.44149 BSP or higher)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
+ </tr>
+<tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc51IronmanPic" src="../../images/tc51Ironman.jpg" height="25"></img></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC5x</b></td>
+  <td class="clsSyntaxCells clsOddRow">TC51, TC51HC, TC56</td>
+  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>Android 7.0 (Nougat BSP 01.01.49 or higher)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc55.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
   <td class="clsSyntaxCells clsOddRow">TC55</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="tc51IronmanPic" src="../../images/tc51Ironman.jpg" height="25"></img></td>
-  <td class="clsSyntaxCells clsOddRow"><b>TC5x</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC51, TC51HC, TC56</td>
-  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>Android 7.0 (Nougat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -538,7 +586,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="tc70xPic" src="../../images/tc75Falcon.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC70x</b></td>
   <td class="clsSyntaxCells clsOddRow">TC70x</td>
-  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat BSP 01.01.49 or higher)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -553,7 +601,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="tc75FalconPic" src="../../images/tc75Falcon.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC75x</b></td>
   <td class="clsSyntaxCells clsOddRow">TC75x</td>
-  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>Android 7.0 (Nougat BSP 01.01.49 or higher)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="../../images/tc8000.png" height="25"></td>
@@ -566,7 +614,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="wap4Pic" src="../../images/wap4.png" ></td>
   <td class="clsSyntaxCells clsOddRow"><b>Workabout Pro 4</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>7528</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 (WAP4 CE-2.4 BSP or higher)<br>Windows Embedded Handheld 6.5 (WAP4 WEH-3.0.1 BSP or higher)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
 </tbody>
@@ -585,7 +633,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="vh10pic" src="../../images/vh10.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>VH10</b></td>
   <td class="clsSyntaxCells clsOddRow">VH10</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 (Omnii CE-12.2.44149 BSP or higher)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
@@ -613,7 +661,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="vc80xPic" src="../../images/vc80x.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>VC80X</b></td>
   <td class="clsSyntaxCells clsOddRow">VC80C</td>
-  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat BSP 01.01.49 or higher)</td>
   <td class="clsSyntaxCells clsOddRow">Stock Android Webkit</td>
  </tr>
 </tbody>
@@ -701,43 +749,43 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <th width="15%" class="clsSyntaxHeadings"></th>
   <th width="10%" class="clsSyntaxHeadings">Device family</th>
   <th width="25%" class="clsSyntaxHeadings">Device</th>
-  <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
-  <th width="25%" class="clsSyntaxHeadings">Supported WebView(s)</th>
+  <th width="25%" class="clsSyntaxHeadings">Device type</th>
+  <th width="25%" class="clsSyntaxHeadings">Supported for use with:</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs5000Pic" src="../../images/rs5000.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS5000</b></td>
   <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">Supported for use with WT6000 (Lollipop) only.</td>
+  <td class="clsSyntaxCells clsOddRow">WT6000 Android 5.0 (Lollipop)</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs6000Pic" src="../../images/rs6000.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
   <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">Supported for use with:<br>WT6000 (Lollipop)<br>TC8000 (Lollipop)<br>TC75x (Marshmallow)<br>TC51 and TC51HC (Marshmallow)</td>
+  <td class="clsSyntaxCells clsOddRow">TC75, TC8000 Android 5.0 (Lollipop)<br>TC51, TC56, TC70X Android 6.0 (Marshmallow)<br>MC33X, TC51, TC51-HC, TC56, TC70X, TC75X, VC80X Android 7.0 (Nougat)</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs4000Pic" src="../../images/rs4000.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS4000</b></td>
   <td class="clsSyntaxCells clsOddRow">1D Corded Ring Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">For WT6000 only</td>
+  <td class="clsSyntaxCells clsOddRow">WT6000 Android 5.0 (Lollipop)</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs507Pic" src="../../images/rs507.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>RS507</b></td>
   <td class="clsSyntaxCells clsOddRow">Cordless Ring Imager</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">For devices with KitKat and higher. See support notes (below).</td>
+  <td class="clsSyntaxCells clsOddRow">TC70 Android 4.4 (KitKat)<br>TC75, TC8000 Android 5.0 (Lollipop)<br>TC51, TC51-HC, TC56, TC70X Android 6.0 (Marshmallow)<br>MC33X, TC51, TC51-HC, TC56, TC70X, TC75X, VC80X Android 7.0 (Nougat)<br>See RS507 Support Notes below.</td>
  </tr>
 </tbody>
 </table>
 
 **RS507 Support Notes**: 
 
-* Works with the Enterprise Browser Barcode API on all supported devices running KitKat or higher (relies on the EMDK service, which is standard on those devices; optional on some Jelly Bean devices).
+* Works with the Enterprise Browser Barcode API on all supported devices running KitKat or higher (relies on the EMDK service, which is standard on such devices).
 
 * Works with RhoElements 2.x and PocketBrowser 2.x/3.x APIs on all supported devices running KitKat or higher **except the TC70-GA1**. 
 
@@ -748,15 +796,16 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <th width="15%" class="clsSyntaxHeadings"></th>
   <th width="10%" class="clsSyntaxHeadings">Device family</th>
   <th width="25%" class="clsSyntaxHeadings">Device</th>
-  <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
-  <th width="25%" class="clsSyntaxHeadings">Supported WebView(s)</th>
+  <th width="25%" class="clsSyntaxHeadings">Device type</th>
+  <th width="25%" class="clsSyntaxHeadings">Supported for use with:</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="ds3678" src="../../images/ds3678.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>DS3678</b></td>
   <td class="clsSyntaxCells clsOddRow">Ultra-Rugged Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">Supported for use with TC51 and TC51HC (Marshmallow) and devices running Android Nougat</td>
+  <td class="clsSyntaxCells clsOddRow">TC51, TC51-HC, TC56, TC70X Android 6.0 (Marshmallow)<br>
+MC33X, TC51, TC51-HC, TC56, TC70X, TC75X, VC80X Android 7.0 (Nougat)</td>
  </tr>
 </tbody>
 </table>

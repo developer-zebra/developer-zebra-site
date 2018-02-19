@@ -140,7 +140,9 @@ Most JavaScript-based key handling for SAP ITSmobile applications is handled by 
           <body onkeydown="jsKeyEvent(event);"></body>
         </html>
         
-<br>
+
+-----
+
 #### Invoke API through DefaultMetaTags 
 
 Invoking an API using DefaultMetaTags adds functionality without modifying the original HTML. The disadvantage is scalability; any functionality added by meta tags is available only on device(s) that contain the tags.
@@ -157,7 +159,6 @@ It's important to note that the functionality added by meta tags is available to
 What's more, a series of meta tags can be included once to interact with an API from anywhere in the HTML. For example, the following code in an app's `Config.xml` file would use the Signal API to display the network signal icon in the app. This way it will be available in all HTML pages but can be controlled from one location (the `Config.xml` file):
 
           :::xml
-
           <DefaultMetaTags>
             <MetaTag value="Signal~left:10;top:200;color:#663300;"/>
           </DefaultMetaTags>
@@ -173,7 +174,7 @@ On devices equipped with a hardware keyboard, Android apps created with Enterpri
 
 The function keys of certain Zebra devices running Windows Mobile, including the WorkAbout Pro 4 and Omnii XT15 (with Windows Embedded Handheld 6.5), return a proprietary set of Unicode values via Windows character messages rather than the expected values. 
 
-For help handling these situations, please see the Enterprise Browser [Function Key Mapping Guide](/keycapture/#mappingproprietaryfunctionkeycodes).
+For help handling these situations, please see the Enterprise Browser [Function Key Mapping Guide](../keycapture/#mappingproprietaryfunctionkeycodes).
 
 <!-- 
 Notes regarding WorkAbout Pro 4 WEH(WM) and Omnii XT15 WEH(WM) to be added.

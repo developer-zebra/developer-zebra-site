@@ -97,7 +97,8 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
         * 2015
         * 2017
 * **Mac OS X**
-    * Xamarin Studio
+    * Visual Studio (beta)
+    * Xamarin Studio (deprecated)
         * 6.x
 
 > **This version cannot target devices running KitKat**. 

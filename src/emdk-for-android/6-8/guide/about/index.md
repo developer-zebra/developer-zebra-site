@@ -41,7 +41,7 @@ The following software must be installed prior to using the EMDK for Android.
 
 ### Mobile devices
 
-* ET5X   - Lollipop
+* ET5X   - Lollipop, Marshmallow
 * MC33   - Nougat
 * TC20   - Nougat
 * TC25   - Nougat

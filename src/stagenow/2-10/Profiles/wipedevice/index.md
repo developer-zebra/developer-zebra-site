@@ -50,7 +50,7 @@ Use this Wizard to erase data on the device using Factory Reset (all data) or En
 
 ### Setup Wizard Manual Bypass
 
-If the Android setup Wizard appears, it's possible to skip it by scanning one of the barcodes below during any phase of the wizard. **Supported on devices as indicated below**.  
+If the Android setup Wizard appears, it's possible to skip it by scanning the barcode below during any phase of the wizard. **Supported on devices as indicated below**.  
 
 **Support Notes**:
 
@@ -69,24 +69,9 @@ If the Android setup Wizard appears, it's possible to skip it by scanning one of
 
 -----
 
-**Options to manually skip the Android Setup Wizard**: 
+**Barcode to manually skip the Android Setup Wizard**: 
 
 #### Skip wizard and run StageNow client:
 
 <img style="height:50px" src="../../images/profiles/skip_suw_and_run_sn.png"/>
 <br>
-
-<!-- 
-![img](../../images/profiles/skip_suw_and_run_sn.png)
-
- -->
-#### Skip wizard and run Android Launcher:
-
-<img style="height:50px" src="../../images/profiles/skip_suw_only.png"/>
-<br>
-
-
-<!-- 
-![img](../../images/profiles/skip_suw_only.png)
-
- -->

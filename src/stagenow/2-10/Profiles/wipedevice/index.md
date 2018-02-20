@@ -52,7 +52,7 @@ Use this Wizard to erase data on the device using Factory Reset (all data) or En
 
 If the Android setup Wizard appears, it's possible to skip it by scanning the barcode below during any phase of the wizard. **Supported on devices as indicated below**.  
 
-**Support Notes**:
+#### Support Notes
 
 **8956-platform Devices**:
 

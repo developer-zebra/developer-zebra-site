@@ -33,9 +33,6 @@ The following software must be installed prior to using the EMDK for Android.
 	* For building EMDK samples, the Android SDK Build-tools rev.23.0.x or higher must be installed.
 	* Prior to installing, all Android Studio sessions must be closed if already running.
 
-
-## Devices Supported
-
 ## Devices Supported
 
 * ET5X   - Lollipop, Marshmallow

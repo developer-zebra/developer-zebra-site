@@ -14,13 +14,11 @@ parm:
   type: string
 ---
 
-Used to specify the Package Name of the application for the selected Action.
+Used to specify the Package Name(s) of one or more applications for the selected Action. Separate multiple Package Names using commas. Package Name(s) must be specified exactly, and can be acquired from the application developer, by extracting the Package Name from the .apk file or by finding it in the device. 
 
->**Note:** To perform the above listed Actions on an application, the Package Name of that application must be known and specified. The Package Name can be acquired from the application developer, by looking up the Package Name on a device, or using developer tools to extract the Package Name from the .apk file. 
+> **Important: If a Package Name is specified incorrectly in a list, all names following that name are ignored**. 
 
 **Input value rules**: 
 
-* String containing the valid name of the package. For example: `com.mycompany.mypackage`
-* String containing the Name of the application as it appears in the Launcher, App Drawer, Application Manager or `app_name` field of the `strings.xml` file  (i.e. "Calculator")
-* The minimum length is 1 character; the maximum length is 255 characters
-* Package Names must be separated by commas
+* String from 1-255 characters containing a valid Package Name. For example: `com.mycompany.mypackage`.
+* Use commas to seperate multiple names

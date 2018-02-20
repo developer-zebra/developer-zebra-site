@@ -18,6 +18,6 @@ Used to specify the Name of the application for the selected Action.
 
 **Input value rules**: 
 
+* String from 1-255 characters
 * String containing the Name of the application as it appears in the Launcher, App Drawer, Application Manager or `app_name` field of the `strings.xml` file  (i.e. "Calculator")
-* The minimum length is 1 character and the maximum length is 255 characters
-* The application names are not case sensitive
+* Application names are **_not_** case sensitive

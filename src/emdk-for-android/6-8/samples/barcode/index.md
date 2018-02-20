@@ -37,7 +37,7 @@ productversion: '6.8'
 ---
 
 ##Overview
-The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](/emdk-for-android/6-8/api) introduced in EMDK V3.0. These API's work independently of any [Data Capture profiles.](/emdk-for-android/6-8/mx/data-capture/barcode).  
+The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](/emdk-for-android/6-8/api) introduced in EMDK V3.0. These APIs work independently of any [Data Capture profiles](/emdk-for-android/6-8/mx/data-capture/barcode).  
 
 The available actions in the [Barcode/Scanning API](/emdk-for-android/6-8/api) are:
   
@@ -48,8 +48,7 @@ The available actions in the [Barcode/Scanning API](/emdk-for-android/6-8/api) a
 * Set [Scan Params](/emdk-for-android/6-8/api/barcode/ScannerConfig-ScanParams)
 * Scan barcodes based on selected features   
 
-This sample application will allow you to scan barcodes based on selected scanner device, trigger type and few decoder [Decoder Params](/emdk-for-android/6-8/api/barcode/ScannerConfig-DecoderParams).
-
+This sample application permits barcode scanning based on selected scanner, trigger type and few [Decoder Params](/emdk-for-android/6-8/api/barcode/ScannerConfig-DecoderParams).
 
 >Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
 

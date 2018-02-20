@@ -21,6 +21,8 @@ menu:
       url: /enterprise-browser/1-8/guide/samples
     - title: Guides
       url: /enterprise-browser/1-8/guide
+    - title: Migration
+      url: /enterprise-browser/1-8/guide/migration
     - title: Config.xml
       url: /enterprise-browser/1-8/guide/configreference
     - title: APIs

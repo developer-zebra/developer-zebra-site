@@ -13,7 +13,7 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 
 The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. For more information about API crossover, see the [API Compatibility matrix](../compatibility). 
 
-**Note: Zebra recommends avoiding the use of the JavaScript Alert function on any Enterprise Browser page**. Use of the syntax "`window.alert("a message")`" or `alert("another message")`" can result in unpredictable behavior when present in Enterprise Browser apps.  
+**Note: Zebra recommends avoiding the use of the JavaScript Alert function on any Enterprise Browser page**. Use of the syntax `window.alert("some alert message")` or `alert("some other message")` can result in unpredictable behavior when present in Enterprise Browser apps.  
 
 -----
 
@@ -37,12 +37,7 @@ EB 1.8 now supports the following mobile computing devices and operating systems
 EB 1.8 is now supported for use with the following scanners when connected to these Zebra devices and operating systems:
 
 * **DS3678 Ultra-Rugged Scanner** 
-	* Running Android 6.0 (Marshmallow)
- 		* TC51
- 		* TC51-HC
- 		* TC56
- 		* TC70X
-	* Running Android 7.0 (**Nougat BSP 01.01.49 or higher**)
+	* Running Android 7.0 (**Nougat BSP 01.01.49 or higher**) on:
  		* MC33X
  		* TC51
  		* TC51-HC
@@ -50,6 +45,9 @@ EB 1.8 is now supported for use with the following scanners when connected to th
  		* TC70X
  		* TC75X
  		* VC80X
+
+<!-- The following is not new to v1.8; mistakenly added when included in a xfer doc table. 
+
 * **RS507 Cordless Ring Scanner**
 	* Android 4.4 (KitKat)
 		* TC70
@@ -84,13 +82,14 @@ EB 1.8 is now supported for use with the following scanners when connected to th
 		* TC56
 		* TC70X
 		* TC75X
-		* VC80X
+		* VC80X 
+-->
 
 -----
 
 ### Updated Guides
 
-* **[SAP ITSmobile Usage Guide](../sap) -** Now offers new sections for User Agent and Function Key Mapping. 
+* **[SAP ITSmobile Usage Guide](../sap) -** Now offers a new UserAgent section and enhanced Function Key Mapping information. 
 
 -----
 
@@ -586,7 +585,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="tc70xPic" src="../../images/tc75Falcon.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC70x</b></td>
   <td class="clsSyntaxCells clsOddRow">TC70x</td>
-  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat BSP 01.01.49 or higher)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshamallow)<br>Android 7.0 (Nougat BSP 01.01.49 or higher)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>

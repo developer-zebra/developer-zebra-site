@@ -60,12 +60,16 @@ automenu:
           url: capture
     - title: Migration
       items:
+        - title: Migration Overview
+          url: migration
         - title: From Pocket Browser 2.x/3x
           url: pb2
         - title: From RhoElements 2.x
           url: elements
         - title: From RhoMobile 4.x
           url: rhomobile
+        - title: From SAP ITSmobile
+          url: sap
     - title: Security
       items:
         - title: Security Overview

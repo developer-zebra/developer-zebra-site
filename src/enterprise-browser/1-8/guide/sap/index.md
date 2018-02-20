@@ -167,18 +167,14 @@ What's more, a series of meta tags can be included once to interact with an API 
 
 Function Keys can be configured to perform custom tasks on the device, and are captured in the same way as other keys. However, Function Keys are sometimes predefined by the operating system to perform certain default behaviors. For example, the F6 and F7 keys on some Zebra devices are reserved for controlling speaker volume. In such cases, Enterprise Browser cannot reassign those keys. **For Windows Mobile/CE, also see important [interaction notes](../configreference/#remarks)**.
 
-#### Windows Keys on Android
+#### Windows keys on Android
 On devices equipped with a hardware keyboard, Android apps created with Enterprise 1.2 or later might benefit by using the [&lt;isWindowKey&gt;](../configreference/#iswindowskey) tag in the `Config.xml` file. This tag makes Android F1-F12 behave like those of a Windows Mobile device (returning the same key codes). This enables an app to support Android and Windows devices using a single instance of the application code. This feature is available only on Enterprise Browser 1.2 and higher, and supports PocketBrowser 2.x/3.x and RhoElements 2.x KeyCapture APIs.
 
-#### Microsoft Proprietary keycode values 
+#### Microsoft proprietary keycode values 
 
 The function keys of certain Zebra devices running Windows Mobile, including the WorkAbout Pro 4 and Omnii XT15 (with Windows Embedded Handheld 6.5), return a proprietary set of Unicode values via Windows character messages rather than the expected values. 
 
 For help handling these situations, please see the Enterprise Browser [Function Key Mapping Guide](../keycapture/#mappingproprietaryfunctionkeycodes).
-
-<!-- 
-Notes regarding WorkAbout Pro 4 WEH(WM) and Omnii XT15 WEH(WM) to be added.
- -->
 
 -----
 
@@ -188,7 +184,7 @@ UI rendering varies depending on the rendering engine present in the device. Ren
 
 To simply the usage of applications running on Enterprise Browser, users can now configure hardware function keys to perform ZoomIn and ZoomOut operations without having to make changes to the application.
 
-**Note: The function keys used for ZoomIn and/or ZoomOut operations are not accessible via any Key Capture API**. <!--Configuration for Zoom IN & Zoom OUT feature is supported in WM/CE platform. WHAT DOES THIS MEAN?-->
+**Note: The function keys used for ZoomIn and/or ZoomOut operations are not accessible via any Key Capture API**. 
 
 -----
 
@@ -266,34 +262,32 @@ For cases in which a page loads properly on one device and not on another, UserA
 * Google Chrome browser on Android
 * Desktop browser (IE/Chrome/Mozilla/Opera) 
 
-**&#50;. Using the working browser, enter the URL below** to display the UserAgent values: 
+**&#50;. Using the working browser, enter the URL below** to display the UserAgent values currently in use on the device: 
 
 [https://www.whatismybrowser.com/detect/what-is-my-user-agent](https://www.whatismybrowser.com/detect/what-is-my-user-agent)
 
-**&#50;a. Alternatively, add one of the JavaScript snippets below** to the HTML on the working device. When the modified page is reloaded, the UserAgent value will be displayed. Copy that value and go to Step 3. 
+**&#50;a. Alternatively, add one of the JavaScript snippets below** to the HTML on the working device. The UserAgent values will be displayed when the modified page is reloaded. Copy those values and go to Step 3. 
 
 #### JavaScript Alert Display
-Extracts and displays the UserAgent value as a JavaScript Alert **not recommended for production use**
+Extracts and displays the UserAgent value as a JavaScript Alert **not recommended for production use**:
  
     :::JavaScript
     <html>
-    ...
     <head>
     <title>UserAgent Sample Page</title>
       <script type="text/javascript">  
             function getUserAgentValue(){
                     var userAgentValue = navigator.userAgent.toString();
-                    alert(userAgentValue); //Note: JavaScript Alerts are not recommended for use in production apps.
+                    alert(userAgentValue); //Note: JavaScript Alerts are not recommended for use in EB production apps.
             }      
       </script>
     </head>
     <body onload="getUserAgentValue();"></body>
-    ...
     </html>
      
 
 #### On-page Display
-Extracts and displays the UserAgent value inside an HTML page 
+Extracts and displays the UserAgent value inside the HTML page:
 
     :::JavaScript
     <html>
@@ -316,39 +310,43 @@ Extracts and displays the UserAgent value inside an HTML page
      
 
 
-**&#51;. Use the Config Editor utility** to extract, edit and redeploy the `Config.xml` file as described beginning with in Step 4. 
+**&#51;. Use the [Config Editor utility](../ConfigEditor)** to extract the `Config.xml` from the non-working device in preparation for editing the UserAgent tag. 
 
-As an alternative to Config Editor, copy the** `Config.xml` **from to non-working device** to the local development host, open the file in a text editor and locate the UserAgent tag. 
+**As an alternative to Config Editor, copy the** `Config.xml` **from to non-working device** to the local development host, open the file in a text editor and locate the UserAgent tag. 
 
 The `Config.xml` file is located: 
 
 * **On Android**: `/Android/data/com.symbol.enterprisebrowser`
 * **On Windows Mobile/CE**: `\Program Files\EnterpriseBrowser\Config`
 
-**&#52;. Transfer the UserAgent values of the working device to the non-working device** using one of the methods below. The method used will depend on the formatting of the UserAgent data retrieved from the working device. 
+**&#52;. Transfer the UserAgent values of the working device to the non-working device** using one of the procedures below, which are listed in order of difficulty. 
 
-#### Method 1 
+#### Procedure 1 
 
-If the retrieved data is formatted as below:
+Try this first. The data below is an example of UserAgent data from a working device:
 
-    "Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36".
+    "Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"
 
-Copy all the data within the quotes and paste it into the UserAgent tag (in the `Config.xml` file) inside quotes as shown below:
+**Copy all UserAgent data <u>within the quotes</u>** and paste it into the UserAgent tag of the `Config.xml` file from the non-working device. **Be sure to paste the data <u>inside the quotes</u>** and replace anything that was there before. When finished, the UserAgent tag should look similar to the example below:
 
     <UserAgent value="Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"/>
 
------
+**Proceed to Step 5**. 
 
-#### Method 2 
+#### Procedure 2 
 
-If the retrieved data is formatted as below:
+Try this only if Procedure 1 has failed. This process could require some trial and error. If the UserAgent data from the working device is formatted as below...
 
     "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5.3.5)"
 
------
 
-### TO BE CONTINUED...
-Then, one can append only the necessary portion of the string in the existing UserAgent value which can resolve the page loading issue using the UserAgent config tag available inside EB Config.xml as shown in the below example.
+...**append only the necessary portion** of the string in the existing UserAgent value which can resolve the page loading issue using the UserAgent config tag available inside EB Config.xml as shown in the below example.
+
+rendering issues:
+not supported by browser?
+caching pages?
+
+we suggest that if you have WM and designed a web app for particular user agent value and it works not on Android, you can take values from the working on to the other. replace whole thing, or try appending with one piece at a time, perhaps those missing. or isolate the problem issue with page debugging or a page element inspector. (debug mode enable in config tag) Chrome Inspect
 
 Example:
 
@@ -357,6 +355,8 @@ If the UserAgent value is "Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23
 And just by adding can MSIE 6.0 can resolve the issue then once can add details in the below manner:
 
 <UserAgent value ="MSIE 6.0; Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"/>
+
+**&#53;. After the**
 
 5. Once the UserAgent value is modified in Enterprise Browser Config.xml. Place the same inside EnterpriseBrowser installed directory in the device and restart the Enterprise Browser.
 

@@ -1,5 +1,5 @@
 ---
-title: PocketBrowser 2.x/3.x Migration Guide
+title: PocketBrowser Migration Guide
 productversion: '1.8'
 product: Enterprise Browser
 layout: guide.html
@@ -17,7 +17,11 @@ These instructions require a development host (desktop or laptop) connected to a
 -----
 
 ## About PocketBrowser 3.x
-The migration procedures for PocketBrowser 3.x are the same as those for 2.x. The following device notes apply to PocketBrowser 3.x migrations only. See the **[PocketBrowser 3.x online docs](http://goo.gl/H8G4IW)** for more information. 
+The migration procedures for PocketBrowser 3.x are the same as those for 2.x. The following device notes apply to PocketBrowser 3.x migrations only. 
+
+<!-- NO DOCS THERE! 
+See the **[PocketBrowser 3.x online docs](http://goo.gl/H8G4IW)** for more information.  
+-->
 
 ####Notes:
 

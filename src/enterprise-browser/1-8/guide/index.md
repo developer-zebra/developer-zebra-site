@@ -62,7 +62,7 @@ automenu:
       items:
         - title: Migration Overview
           url: migration
-        - title: From Pocket Browser 2.x/3x
+        - title: From PocketBrowser
           url: pb2
         - title: From RhoElements 2.x
           url: elements
@@ -70,6 +70,8 @@ automenu:
           url: rhomobile
         - title: From SAP ITSmobile
           url: sap
+        - title: From SAP Console / TekTerm
+          url: migration/#fromsapconsoletekterm
     - title: Security
       items:
         - title: Security Overview

@@ -249,27 +249,38 @@ One technique that page designers might consider is to add "Quit," "Back" and "R
 
 -----
 
-## User Agent
+## UserAgent
 
 For cases in which a page loads properly on one device and not on another, UserAgent values might be the cause, particularly when migrating an app from WM/CE to Android or vice versa. To check for this issue, follow the steps below. 
 
-**&#49;. Identify the browser and platform** of the properly loading page from these possible combinations: 
+-----
 
-* Enterprise Browser on Windows Mobile/CE
-* Enterprise Browser on Android 
-* Internet Explorer on Windows Mobile/CE
-* Stock Android Browser on Android
-* Google Chrome browser on Android
-* Desktop browser (IE/Chrome/Mozilla/Opera) 
+### 1. Browser and Platform
 
-**&#50;. Using the working browser, enter the URL below** to display the UserAgent values currently in use on the device: 
+**Identify the browser and platform** being used by the properly loading page from these possible combinations: 
+
+* Windows Mobile/CE
+  * with Enterprise Browser
+  * with Internet Explorer
+* Android 
+  * with Enterprise Browser
+  * with stock Android browser
+  * with Google Chrome browser 
+* Mac OSX or Windows 
+  with desktop browser (IE/Chrome/Mozilla/Opera/Safari) 
+
+-----
+
+### 2. UserAgent Values
+
+**Using the working browser, enter the URL below** to display the UserAgent values currently in use on the device. <br> If no connection is available, skip to Step 2a. 
 
 [https://www.whatismybrowser.com/detect/what-is-my-user-agent](https://www.whatismybrowser.com/detect/what-is-my-user-agent)
 
 **&#50;a. Alternatively, add one of the JavaScript snippets below** to the HTML on the working device. The UserAgent values will be displayed when the modified page is reloaded. Copy those values and go to Step 3. 
 
 #### JavaScript Alert Display
-Extracts and displays the UserAgent value as a JavaScript Alert **not recommended for production use**:
+Extracts and displays the UserAgent value as a JavaScript Alert (**not recommended for production use**):
  
     :::JavaScript
     <html>
@@ -309,58 +320,68 @@ Extracts and displays the UserAgent value inside the HTML page:
      
      
 
+-----
 
-**&#51;. Use the [Config Editor utility](../ConfigEditor)** to extract the `Config.xml` from the non-working device in preparation for editing the UserAgent tag. 
+### 3. Edit Config.xml File
+
+**Use the [Config Editor utility](../ConfigEditor)** to extract the `Config.xml` <u>from the non-working device</u> in preparation for editing its UserAgent tag. 
 
 **As an alternative to Config Editor, copy the** `Config.xml` **from to non-working device** to the local development host, open the file in a text editor and locate the UserAgent tag. 
 
-The `Config.xml` file is located: 
+**Location of** `Config.xml` **file**: 
 
 * **On Android**: `/Android/data/com.symbol.enterprisebrowser`
 * **On Windows Mobile/CE**: `\Program Files\EnterpriseBrowser\Config`
 
-**&#52;. Transfer the UserAgent values of the working device to the non-working device** using one of the procedures below, which are listed in order of difficulty. 
+-----
+
+### 4. Transfer UserAgent Values
+
+**Transfer the UserAgent values of the working device to the non-working device** using one of the procedures below. 
 
 #### Procedure 1 
 
-Try this first. The data below is an example of UserAgent data from a working device:
+**Try this first**. Below is an example of UserAgent data from a working device:
 
     "Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"
 
-**Copy all UserAgent data <u>within the quotes</u>** and paste it into the UserAgent tag of the `Config.xml` file from the non-working device. **Be sure to paste the data <u>inside the quotes</u>** and replace anything that was there before. When finished, the UserAgent tag should look similar to the example below:
+**Copy all data <u>within the quotes</u>** and paste it into the UserAgent tag of the `Config.xml` file from the non-working device. **Be sure to paste the data <u>inside the quotes</u>** and replace everything that was there before. 
+
+When finished, the UserAgent tag should look similar to the example below:
 
     <UserAgent value="Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"/>
 
 **Proceed to Step 5**. 
 
+-----
+
 #### Procedure 2 
 
-Try this only if Procedure 1 has failed. This process could require some trial and error. If the UserAgent data from the working device is formatted as below...
+**Try this only if Procedure 1 has failed**; it might require some trial and error. 
+
+To effectively troubleshoot, it's helpful to identify the issue and append the UserAgent data accordingly. Migration issues can involve page loading, loading from cache, an unsupported browser, page logic tightly coupled with one of the UserAgent values, or a combination of factors. 
+
+If possible, enable debugging on the device (including the [DebugModeEnable tag](../configreference/#debugmodeenable) on Android devices) and use Chrome Inspector or a similar tool to identify problematic page elements. This procedure can apply to devices running Android, Windows Mobile/CE, or a combination, as in the example below. 
+
+**If the UserAgent data from the working device appears as below**...
 
     "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5.3.5)"
 
+...and the UserAgent data from the non-working device appears as below... 
 
-...**append only the necessary portion** of the string in the existing UserAgent value which can resolve the page loading issue using the UserAgent config tag available inside EB Config.xml as shown in the below example.
+    "Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36".
 
-rendering issues:
-not supported by browser?
-caching pages?
+...try adding portions of the working data to the non-working data until the issue is resolved. For example, by adding the value `MSIE 6.0` from the working data as shown below, some rendering issues can be resolved.
 
-we suggest that if you have WM and designed a web app for particular user agent value and it works not on Android, you can take values from the working on to the other. replace whole thing, or try appending with one piece at a time, perhaps those missing. or isolate the problem issue with page debugging or a page element inspector. (debug mode enable in config tag) Chrome Inspect
+    <UserAgent value ="MSIE 6.0; Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"/>
 
-Example:
+-----
 
-If the UserAgent value is "Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36".
+### 5. Push and Relaunch
 
-And just by adding can MSIE 6.0 can resolve the issue then once can add details in the below manner:
+**Following each change to the UserAgent data**, push the edited `Config.xml` file to the non-working device, launch Enterprise Browser and test the troublesome page(s). 
 
-<UserAgent value ="MSIE 6.0; Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"/>
-
-**&#53;. After the**
-
-5. Once the UserAgent value is modified in Enterprise Browser Config.xml. Place the same inside EnterpriseBrowser installed directory in the device and restart the Enterprise Browser.
-
-6. SAP page should now be loading properly if there are no further issues other than UserAgent.
+If the page fails, **perform Procedure 2** until the page loads correctly. 
 
 -----
 

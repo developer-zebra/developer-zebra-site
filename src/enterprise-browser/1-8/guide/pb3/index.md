@@ -7,7 +7,9 @@ layout: guide.html
 ##Overview
 Enterprise Browser supports PocketBrowser 3.x applications, which in many cases will run in EB with just a few small changes. This guide explains the changes that will always be required for migration to EB, and a few that might be. 
 
-See also the **[PocketBrowser 3.x online docs](http://goo.gl/H8G4IW)**. 
+<!-- NO DOCS THERE! 
+See the **[PocketBrowser 3.x online docs](http://goo.gl/H8G4IW)** for more information.  
+-->
 
 -----
 

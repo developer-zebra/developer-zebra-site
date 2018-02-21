@@ -376,7 +376,7 @@ When finished, the UserAgent tag should look similar to the example below:
 
     "Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36".
 
-...try adding portions of the working data to the non-working data until the issue is resolved. For example, by inserting the value `MSIE 6.0` from the working UserAgent data (at the top) into the non-working data as below, some rendering issues can be resolved.
+...**insert portions of the working UserAgent data into the non-working data** until the issue is resolved. For example, inserting the value `MSIE 6.0` from the working UserAgent data (at the top) into the non-working data as below could resolve some rendering issues.
 
 ![img](useragent.png)
 

@@ -357,11 +357,16 @@ When finished, the UserAgent tag should look similar to the example below:
 
 #### Procedure 2 
 
-**Try this only if Procedure 1 has failed**; it might require some trial and error. 
+**Try this only if Procedure 1 has failed**. For the most effective troubleshooting, it's best to identify the issue and append the UserAgent data accordingly. If possible, enable debugging on the device (which on Android devices requires setting the [DebugModeEnable tag](../configreference/#debugmodeenable)) and use Chrome Inspector or a similar tool to identify problematic page elements. 
 
-To effectively troubleshoot, it's helpful to identify the issue and append the UserAgent data accordingly. Migration issues can involve page loading, loading from cache, an unsupported browser, page logic tightly coupled with one of the UserAgent values, or a combination of factors. 
+**Possible UserAgent/migration issues**: 
 
-If possible, enable debugging on the device (including the [DebugModeEnable tag](../configreference/#debugmodeenable) on Android devices) and use Chrome Inspector or a similar tool to identify problematic page elements. This procedure can apply to devices running Android, Windows Mobile/CE, or a combination, as in the example below. 
+* Locally stored pages not present 
+* Error loading pages from cache
+* Unsupported browser
+* Unsupported rendering engine 
+* Page logic coupled with one or more UserAgent values
+* A combination of these factors
 
 **If the UserAgent data from the working device appears as below**...
 
@@ -371,9 +376,15 @@ If possible, enable debugging on the device (including the [DebugModeEnable tag]
 
     "Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36".
 
-...try adding portions of the working data to the non-working data until the issue is resolved. For example, by adding the value `MSIE 6.0` from the working data as shown below, some rendering issues can be resolved.
+...try adding portions of the working data to the non-working data until the issue is resolved. For example, by inserting the value `MSIE 6.0` from the working UserAgent data (at the top) into the non-working data as below, some rendering issues can be resolved.
 
+![img](useragent.png)
+
+<!-- 
     <UserAgent value ="MSIE 6.0; Mozilla/5.0 (Linux; Android 4.4.3; TC700H Build/01-23257-K-15-04-00-MV) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"/>
+
+ -->
+*This procedure is not specific to Android or Windows Mobile/CE devices*.
 
 -----
 
@@ -381,7 +392,7 @@ If possible, enable debugging on the device (including the [DebugModeEnable tag]
 
 **Following each change to the UserAgent data**, push the edited `Config.xml` file to the non-working device, launch Enterprise Browser and test the troublesome page(s). 
 
-If the page fails, **perform Procedure 2** until the page loads correctly. 
+**Repeat Procedure 2** until the page loads correctly. 
 
 -----
 

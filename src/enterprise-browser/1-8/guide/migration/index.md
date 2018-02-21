@@ -19,11 +19,25 @@ In many cases, PocketBrowser 2.x/3.x apps can run within Enterprise Browser afte
 
 -----
 
+### From RhoElements
+
+RhoElements is an extension of the RhoMobile HTML5 development environment that enables connected and non-connected apps to perform seamlessly on Android and Windows Mobile/CE devices. Enterprise Browser supports RhoElements 2.x applications, which in many cases will run in EB with just a few small changes. The [RhoElements Migration Guide explains](../elements) explains the changes that will always be required for migration to EB, and a few others that might be.
+
+-----
+
+### From RhoMobile
+
+The RhoMobile HTML5 development environment allows apps to target Android and Windows Mobile/CE devices using the same code. Enterprise Browser supports RhoElements 4.x Shared Runtime applications and HTML-based hybrid RhoMobile applications for Android and Windows Mobile/CE that use HTML and JavaScript. **Ruby APIs and Ruby-language program code are NOT supported**.
+
+The [RhoMobile Migration Guide](../rhomobile) explains the changes required for migrating RhoMobile apps to EB.
+
+-----
+
 ### From SAP Console / TekTerm
 
 For companies moving away from terminal-based mobile applications that use SAPConsole, [Zebra TekTerm](https://www.zebra.com/us/en/support-downloads/software/demo/Terminal-Emulators-Open-TekTerm.html) or similar character-based front-end solutions, Enterprise Browser should be considered for its simple means of developing portable UIs with industry-standard HTML, CSS and JavaScript. 
 
-
+Learn more [about Enterprise Browser](../about).
 
 -----
 

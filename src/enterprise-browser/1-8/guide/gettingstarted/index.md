@@ -40,6 +40,11 @@ content-items:
     url: ../launching
   - type: section
     level: 4
+    title: Migration from Other Platforms
+    text: Explains all the available options for moving from competitive or legacy platforms to Enterprise Browser.
+    url: ../migration
+  - type: section
+    level: 4
     title: Optimization
     text: How to optimize the footprint and runtime performance of an Enterprise Browser app.  
     url: ../optimization

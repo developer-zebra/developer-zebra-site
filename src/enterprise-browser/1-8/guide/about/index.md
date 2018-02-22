@@ -90,6 +90,7 @@ EB 1.8 is now supported for use with the following scanners when connected to th
 ### Updated Guides
 
 * **[SAP ITSmobile Usage Guide](../sap) -** Now offers a new UserAgent section and enhanced Function Key Mapping information. 
+* **[Migration Overview](../migration) -** Lists all options for migrating to Enterprise Browser from other platforms or solutions. 
 
 -----
 

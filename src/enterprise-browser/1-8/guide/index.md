@@ -68,8 +68,6 @@ automenu:
           url: elements
         - title: From RhoMobile 4.x
           url: rhomobile
-        - title: From SAP ITSmobile
-          url: sap
         - title: From SAP Console / TekTerm
           url: migration/#fromsapconsoletekterm
     - title: Security

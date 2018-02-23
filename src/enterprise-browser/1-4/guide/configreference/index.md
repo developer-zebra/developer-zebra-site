@@ -1627,7 +1627,7 @@ Controls HTML5 Geolocation. When enabled on a device that supports geolocation a
 
 ## Engine
 ### EngineInUse
-Permits the selection of a rendering engine (IE or Webkit) when deploying a Webkit installation of Enterprise Browser to Windows CE6 or Windows Mobile 6.5 and above. If you are deploying an IE-only installation, Webkit will not be available as an option.
+**Applies to Windows Mobile/CE only**. Permits the selection of a rendering engine (IE or Webkit) when deploying a Webkit installation of Enterprise Browser to Windows CE6 or Windows Mobile 6.5 and above. If you are deploying an IE-only installation, Webkit will not be available as an option.
 
 **Possible Values**:
 

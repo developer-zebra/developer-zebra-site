@@ -262,7 +262,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	  </TabInstance>
 	  
 	  <Engine>
-	    <EngineInUse value="AndroidStock"/>
+	    <EngineInUse value="IE"/>
 	  </Engine>
 	  
 	  <Applications>
@@ -2550,7 +2550,7 @@ Permits a default meta tag to be specified so that a tag required by the applica
 
 ## Engine
 ### EngineInUse
-Permits the selection of a rendering engine (IE or Webkit) when deploying a Webkit installation of Enterprise Browser to Windows CE6 or Windows Mobile 6.5 and above. If deploying an IE-only installation, Webkit will not be available as an option.
+**Applies to Windows Mobile/CE only**. Permits the selection of a rendering engine (IE or Webkit) when deploying a Webkit installation of Enterprise Browser to Windows CE6 or Windows Mobile 6.5 and above. If deploying an IE-only installation, Webkit will not be available as an option.
 
 **Possible Values**:
 

@@ -193,7 +193,7 @@ To stage a bar code profile:
 
 1. Select the Barcode tab. 
 
-    ![img](../images/wifi_publish.jpg)
+    ![img](../images/sn210_publish.png)
 
 2. To create a direct connection via hotspot instead of using the configured staging network, check the "Yes, use WiFi Hotspot" checkbox. This allows staging with a single staging barcode without requiring an external Wi-Fi network, and eliminates the need for reprinting barcodes if there is a profile change.
 
@@ -202,8 +202,6 @@ To stage a bar code profile:
 4. Select the checkbox for PDF417 or Linear to specify the type of barcode for deployment, or choose Select All to select all bar code types.
 
 5. Select Test to test the functionality of the profile before publishing. This generates a PDF of test staging bar code(s). While this step is optional, it is important to determine whether the profile functions as intended before making it available to the operator(s) for staging devices.
-
-    ![img](../images/sn210_publish.png)
 
 6. If the staging material functions properly, select Publish to publish the material for operator use. Note that the administrator can choose to publish only certain types of bar codes that were successfully tested, and publish the others when they are ready.
 

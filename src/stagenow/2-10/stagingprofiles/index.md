@@ -195,28 +195,29 @@ To stage a bar code profile:
 
     ![img](../images/wifi_publish.jpg)
 
-2. To create a direct connection via hotspot instead of using the configured staging network, check the "Yes, use Wifi Direct" checkbox. This allows staging with a single staging barcode without requiring an external Wi-Fi network, and eliminates the need for reprinting barcodes if there is a profile change.
+2. To create a direct connection via hotspot instead of using the configured staging network, check the "Yes, use WiFi Hotspot" checkbox. This allows staging with a single staging barcode without requiring an external Wi-Fi network, and eliminates the need for reprinting barcodes if there is a profile change.
 
-3. Select the checkbox for PDF417 or Linear to specify the type of barcode for deployment, or choose Select All to select all bar code types.
+3. To stage devices from content stored on a server, check the "Host the Deployment Package Outside of StageNow FTP Server" and enter the address and location using the [Source URI syntax](../csp/file/#source-uri). Supports HTTP, HTTPS, FTP and FTPS (FTP over TLS or SSL) protocols and basic authentication of URL-embedded credentials. 
 
-4. Select Test to test the functionality of the profile before publishing. This generates a PDF of test staging bar code(s). While this step is optional, it is important to determine whether the profile functions as intended before making it available to the operator(s) for staging devices.
+4. Select the checkbox for PDF417 or Linear to specify the type of barcode for deployment, or choose Select All to select all bar code types.
 
-    ![img](../images/Publish_BarCodeTab_Test.jpg)
+5. Select Test to test the functionality of the profile before publishing. This generates a PDF of test staging bar code(s). While this step is optional, it is important to determine whether the profile functions as intended before making it available to the operator(s) for staging devices.
 
-5. If the staging material functions properly, select Publish to publish the material for operator use. Note that the administrator can choose to publish only certain types of bar codes that were successfully tested, and publish the others when they are ready.
+    ![img](../images/sn210_publish.png)
 
-6. Enter staging instructions for the operator.
+6. If the staging material functions properly, select Publish to publish the material for operator use. Note that the administrator can choose to publish only certain types of bar codes that were successfully tested, and publish the others when they are ready.
+
+7. Enter staging instructions for the operator.
 
     ![img](../images/ConnectNetwork_Publish_Instructions.jpg)
 
-7. Select Publish Now.
+8. Select Publish Now.
 
     ![img](../images/Publish_BarCodeTab_published.jpg)
 
-8. To make the profile available for staging, select Stage. This generates a PDF of staging bar code(s) that devices can scan for staging. See [Device Staging](../stageclient).
+9. To make the profile available for staging, select Stage. This generates a PDF of staging bar code(s) that devices can scan for staging. See [Device Staging](../stageclient).
 
-9. To export the profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
-
+10. To export the profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
 
 To unpublish a profile to remove operator access, select Unpublish.
 

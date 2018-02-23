@@ -5,7 +5,8 @@ product: StageNow
 productversion: '2.10'
 ---
 
-## Introduction
+## Overview
+
 This section provides information for the staging administrator on creating and managing profiles. The StageNow Workstation Tool offers pre-defined Wizards that represent common use cases for deploying information to mobile devices within the enterprise. 
 
 ### Welcome Tips
@@ -13,6 +14,7 @@ Several screens throughout the Workstation Tool offer helpful pop-up tips. Selec
 
 ![img](../images/Review_withHelppopup.jpg)
 
+-----
 
 ## Creating a Staging Profile
 The staging administrator uses the provided StageNow Wizards to configure settings which define software configuration and installation for enterprise devices. When creating a profile for staging the device, the administrator progresses through the following steps in the banner provided in the Workstation Tool:
@@ -91,6 +93,8 @@ At any point, click the Home button to return to the Home screen.
 
 When populating a setting template window within a Wizard, to make the setting available for selection when creating other profiles, select the Save Setting for Re-use checkbox, and enter a name for the setting. See [Save for Reuse](../settingconfig?Save%20for%20Reuse) for more information.
 
+-----
+
 ## Configure
 To create a profile, open the StageNow Workstation Tool and log in.
 
@@ -98,7 +102,7 @@ Select Create New Profile, and then select the device MX version from the drop-d
 
 Initially, a warning appears indicating that selecting an incorrect version can cause staging to fail. If your devices run multiple versions of MX, select the lowest common version. Select the checkbox on this window if you do not need to view it in future profile creations.
 
-![img](../images/WizardList_MXdropdown.jpg)
+![img](../images/WizardList_MXdropdown.png)
 
 Select one of the following Wizards and select Create.
 
@@ -120,30 +124,38 @@ Select one of the following Wizards and select Create.
 
 After completing the StageNow Config and RD Config sections of the Wizard, proceed to the next section of the Wizard.  Certain Wizards include a Deployment section, whereas others proceed to the Review section.
 
-### MX 6.X Selection
+### MX Selection
 
-Selecting MX 6.X from the MX version drop-down menu supports a Wi-Fi hotspot option for some Wizards. If you select MX 6.X for the applicable Wizards, the first Wizard window prompts you to select one of the following options from the drop-down menu:
+Selecting MX 6.x or higher from the MX version drop-down menu supports a Wi-Fi hotspot option for some Wizards. If selecting MX 6.X for the applicable Wizards, the first Wizard window displays a prompt for selecting one of the following options from the drop-down menu:
 
-* The devices I wish to provision are currently not connected to a network. I will define a network with this profile that will be used for staging.
+* "The devices I wish to provision are currently not connected to a network. I will define a network with this profile that will be used for staging."
 
-* The devices I wish to provision are already connected to a network that will be used for staging. 
+* "The devices I wish to provision are already connected to a network that will be used for staging." 
 
-* I wish to use the WiFi Hotspot feature which will automatically create a network for staging using this computer's network card. 
+* "I wish to use the WiFi Hotspot feature which will automatically create a network for staging using this computer's network card." 
 
 ![img](../images/profiles/configdevice_wifi.jpg)
 
 Select an option and proceed to the instructions for the selected Wizard.
 
->Note:  
->The second and third options are only supported by Wizards that utilize the Deployment section of the tool.
+### MX Notes
+* The second and third options above are supported only by Wizards that use the Deployment section of the tool.
+* StageNow 2.10 and higher supports plug-in CSPs, accessed by selecting CSP Library from the StageNow Home screen menu (below). 
+
+![img](../images/profiles/sn_210_csp_lib.png)
+
+-----
 
 ## Deployment
 Use the Deployment section of the Wizard to specify the subset of the settings that define what the profile does, and store these settings on a deployment server. See the specific [Profile Wizard](../ProfileWizards) for instructions. 
-Note that this section is not available in certain Wizards. 
+
+**Note**: This section is not available on some Wizards. 
 
 Wizards that include the Deployment section require that device(s) access the Deployment Server in order to acquire the information provided there. Specifically, the device and the server should be on the same network, or there should be routing from the device network that allows connection to the Deployment Server. 
 
 ![img](../images/createprofile_deploy1.jpg)
+
+-----
 
 ## Review
 The Review section of the Wizard allows you to verify your selections.
@@ -169,6 +181,8 @@ The Review section of the Wizard allows you to verify your selections.
 
 6. Select Complete Profile to proceed to the Publish window. The profile status at the top right of the screen is now Complete.
 
+-----
+
 ## Publish
 The Publish section of the Wizard allows you to select a staging method, test the method for profile functionality, and make the profile available to the staging operator.
 
@@ -181,9 +195,9 @@ To stage a bar code profile:
 
     ![img](../images/wifi_publish.jpg)
 
-2. To create a direct connection via hotspot instead of using the configured staging network, select the Yes, use Wifi Direct checkbox. This allows staging without requiring an external Wi-Fi network and with a single staging bar code, and eliminates the need for reprinting bar codes if there is a profile change.
+2. To create a direct connection via hotspot instead of using the configured staging network, check the "Yes, use Wifi Direct" checkbox. This allows staging with a single staging barcode without requiring an external Wi-Fi network, and eliminates the need for reprinting barcodes if there is a profile change.
 
-3. Select the checkbox for PDF417 or Linear to specify the type of bar code for deployment, or choose Select All to select all bar code types.
+3. Select the checkbox for PDF417 or Linear to specify the type of barcode for deployment, or choose Select All to select all bar code types.
 
 4. Select Test to test the functionality of the profile before publishing. This generates a PDF of test staging bar code(s). While this step is optional, it is important to determine whether the profile functions as intended before making it available to the operator(s) for staging devices.
 
@@ -260,6 +274,7 @@ To stage an NFC profile:
 
 To unpublish a profile to remove operator access, select Unpublish.
 
+-----
 
 ## Copying a Staging Profile
 
@@ -274,6 +289,8 @@ To copy a profile in order to create a new, similar profile:
 3. A window indicates the profile was copied successfully. Select OK.
 
 4. See the next section for instructions on editing the new profile.
+
+-----
 
 ## Editing a Staging Profile
 
@@ -295,6 +312,8 @@ To edit a profile:
 5. Select Continue and proceed through the Wizard.
 
 6. In the Review section, select Complete Profile to move to the Publish section to generate updated bar codes, NFC tags, or audio files.
+
+-----
 
 ## Exporting Staging Profiles
 
@@ -344,6 +363,8 @@ To export all staging profiles:
 
 6. Select OK.
 
+-----
+
 ## Importing a Staging Profile
 
 To import a profile:
@@ -368,6 +389,7 @@ Profiles created in StageNow 2.0 are imported as MX 4.3 profiles.
 
 Note: RD settings are not exported and so cannot be imported.
 
+-----
 
 ## Deleting a Staging Profile
 
@@ -381,6 +403,7 @@ To delete a profile:
 
 3. A window indicates that the profile was successfully deleted. Select OK.
 
+-----
 
 ## Upgrading Profiles
 

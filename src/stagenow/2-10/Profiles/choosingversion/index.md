@@ -5,35 +5,21 @@ product: StageNow
 productversion: '2.10'
 ---
 
-This window displays the Wizard templates available for creating profiles and allows a Wizard for profile creation. 
+This window displays the Wizard templates available for profile creation. 
 
-The drop-down offers the following MX versions for profile creation:
+Select the MX version that corresponds with that of the device(s) being configured. The MX version number on the device usually (but not always) will match that of the device's Android verison. For example: 
 
-* MX 6.1/6.2 - Select this for Zebra Marshmallow devices, which include the StageNow Client, and to use the Wi-Fi Hotspot feature.
+* **MX 7.x -** Nougat devices
+* **MX 6.x -** Marshmallow devices
+* **MX 5.1/MX 5.2 -** Lollipop devices
+* **MX 5.0 -** Some KitKat devices
+* **MX 4.4 -** Some KitKat devices
+* **MX 4.3 -** Jelly Bean devices and some older TC70 devices running KitKat that ship with the Rapid Deployment Client.
 
-* MX 6.0 - Select this for Zebra Lollipop devices, which include the StageNow Client, and to use the Wi-Fi Hotspot feature.
+![img](../../images/WizardList_MXdropdown.png)
 
-* MX 5.1/MX5.2 - Select this for Zebra Lollipop devices, which include the StageNow Client.
-
-* MX 5.0 - Select this for Zebra KitKat devices, which include the StageNow Client.
-
-* MX 4.4 - Select this for Zebra KitKat devices, which include the StageNow Client.
-
-* MX 4.3 - Select this for Zebra Jelly Bean and older TC70 Kit Kat devices that ship with the Rapid Deployment Client.
-
-Once you select the MX version, the selection is saved for subsequent profile creation.
-
-![img](../../images/WizardList_MXdropdown.jpg)
-
-
-
-
-
-
-
-
-
-
-
-
+**Notes**:
+* **Devices with MX 6.0 and higher support staging through a Wi-Fi Hotspot**. 
+* **The selected MX version is saved for subsequent profile creation**.
+* **The StageNow client is pre-installed on all devices running KitKat 4.4 and higher**. 
 

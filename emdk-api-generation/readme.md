@@ -34,6 +34,9 @@
 
 ### Create new code sample repos for a new EMDK version
 
+do this: 
+https://help.github.com/articles/duplicating-a-repository/
+
 ### Create a repo for a new code sample
 
 

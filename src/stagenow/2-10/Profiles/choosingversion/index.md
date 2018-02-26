@@ -21,5 +21,5 @@ Select the MX version that corresponds with that of the device(s) being configur
 **Notes**:
 * **Devices with MX 6.0 and higher support staging through a Wi-Fi Hotspot**. 
 * **The selected MX version is saved for subsequent profile creation**.
-* **The StageNow client is pre-installed on all devices running KitKat 4.4 and higher**. 
+* **The StageNow client is preinstalled on all devices running KitKat 4.4 and higher**. 
 

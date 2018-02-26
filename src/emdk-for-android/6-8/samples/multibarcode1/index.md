@@ -1,13 +1,13 @@
 ---
 publish: true
-title: Multi-barcode APIs
-description: 'This sample application will scans multiple barcodes simultaneously based on selected scanner device, trigger type and a few decoder Decoder Params.'
+title: Multi-barcode Scanning
+description: 'This sample application scans multiple barcodes simultaneously based on selected scanner device, trigger type and a few decoder Decoder Parameters.'
 downloads:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/archive/BarcodeSample1.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/archive/MultiBarcodeSample1.zip'
 sources:
   - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/tree/BarcodeSample1'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/tree/MultiBarcodeSample1'
 features:
   - Profile Manager
   - Barcode
@@ -37,7 +37,7 @@ productversion: '6.8'
 ---
 
 ##Overview
-The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](/emdk-for-android/6-8/api) introduced in EMDK V3.0. These APIs work independently of any [Data Capture profiles](/emdk-for-android/6-8/mx/data-capture/barcode).  
+This sample demonstrates simultaneous scanning of multiple barcodes using new capabilities in the Barcode API [Barcode/Scanning APIs](/emdk-for-android/6-8/api) introduced with EMDK for Android 6.8. These APIs work independently of any [Data Capture profiles](/emdk-for-android/6-8/mx/data-capture/barcode).  
 
 The available actions in the [Barcode/Scanning API](/emdk-for-android/6-8/api) are:
   

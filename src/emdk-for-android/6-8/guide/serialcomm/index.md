@@ -77,7 +77,7 @@ The `SerialComm.Read()` method reads the available data and returns it immediate
 
 ### Get/Set Config
 
-#### Get config
+#### Get Config
 
 Get the current configuration settings of the `SerialComm` channel: 
 
@@ -100,7 +100,7 @@ Set the `SerialComm` settings for the currently selected port:
     config.stopBit = SerialCommConfig.StopBits.ONE;
     serialComm.setConfig(config);
 
-If the given value is not supported or invalid, an exception will be thrown with an error code and failure description. The `SerialComm` object must be enabled before calling `getConfig()` and `setConfig()` methods.
+If the given value is not supported or is invalid, an exception will be thrown with an error code and failure description. The `SerialComm` object must be enabled before calling `getConfig()` and `setConfig()` methods.
 
 -----
 
@@ -117,7 +117,6 @@ Use this method to query the signal status of DTR, DCD, DSR, RI, RTS and CTS:
     boolean signalState = serialComm.getSignalState(SerialComm.ControlSignal.DTR);
 
 #### Set Signal State
-
 
 This method allows the application to set the status of control signal. 
 

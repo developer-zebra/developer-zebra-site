@@ -9,9 +9,11 @@ productversion: '6.8'
 
 The `serialCommManager` is the primary object created by the `SerialCommManager` class. It is used to communicate with remote devices through a serial or USB port on the mobile device.
 
+-----
+
 ### Get SerialCommManager
 
-An EMDK app must be opened before getting the `serialCommManager` object and must release the `SerialCommManager` before quitting.
+An EMDK app must be opened before getting the `serialCommManager` object and must release the `SerialCommManager` class before quitting.
 
 To get the `SerialCommManager`:
 

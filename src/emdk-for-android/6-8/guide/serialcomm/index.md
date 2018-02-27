@@ -7,11 +7,11 @@ productversion: '6.8'
 
 ## Overview
 
-The `SerialCommManager` is the primary object used communicate with remote devices using serial or USB ports of the mobile device.
+The `serialCommManager` is the primary object created by the `SerialCommManager` class. It is used to communicate with remote devices through a serial or USB port on the mobile device.
 
 ### Get SerialCommManager
 
-An EMDK app must be opened before getting the `SerialCommManager` object and must release the `SerialCommManager` before quitting.
+An EMDK app must be opened before getting the `serialCommManager` object and must release the `SerialCommManager` before quitting.
 
 To get the `SerialCommManager`:
 
@@ -31,15 +31,20 @@ If serial communication is not supported in a device, a `getInstance()` call wil
 
 -----
 
-### Enumerate SerialComm/Port
+### Get SerialComm/Port
 
-An app can get `SerialComm` by enumerating the `SerialPortInfo`. 
+An app can get a `SerialComm` port object by enumerating the `SerialPortInfo`. 
 
 First use the `SerialCommManager.getSupportedPorts()` first and pass one of the received `SerialPortInfo` objects to `SerialCommManager.getPort(SerialPortInfo portInfo)`: 
 
     :::java
     List<SerialPortInfo> serialPorts = serialCommManager.getSupportedPorts();
     serialComm = serialCommManager.getPort(serialPorts.get(0));
+
+**Support Notes**: 
+
+* **TC70/TC75** devices enumerate only one port. 
+* **VC80X** devices enumerate two or more ports.
 
 -----
 
@@ -77,6 +82,8 @@ The `SerialComm.Read()` method reads the available data and returns it immediate
 
 ### Get/Set Config
 
+**Note**: TC70/TC75 devices running Lollipop and Marshmallow do not support `getConfig` or `setConfig` functions. 
+
 #### Get Config
 
 Get the current configuration settings of the `SerialComm` channel: 
@@ -93,12 +100,15 @@ The `SerialComm` object must be enabled before calling `getConfig()` and `setCon
 Set the `SerialComm` settings for the currently selected port: 
 
     :::java
-    SerialCommConfig config = serialComm.getConfig();
-    config.baudRate = 9600;
-    config.dataBit = SerialCommConfig.DataBits.EIGHT;
-    config.parity = SerialCommConfig.ParityBits.EVEN;
-    config.stopBit = SerialCommConfig.StopBits.ONE;
-    serialComm.setConfig(config);
+    //Get the supported configuration for the serial port:
+    SerialCommConfig config = serialComm.getConfig(); 
+    config.baudRate = SerialCommConfig.BaudRates.BR_9600; //Set baud rate
+    config.dataBit = SerialCommConfig.DataBits.EIGHT; //Set dataBit
+    config.parity = SerialCommConfig.ParityBits.EVEN; //Set parity
+    config.stopBit = SerialCommConfig.StopBits.ONE; //Set stopBit
+    config.flowControlMode = SerialCommConfig.FlowControlMode.RTS_CTS; //Set flow control
+    serialComm.setConfig(config); // Save the configuration for the port
+
 
 If the given value is not supported or is invalid, an exception will be thrown with an error code and failure description. The `SerialComm` object must be enabled before calling `getConfig()` and `setConfig()` methods.
 
@@ -106,8 +116,7 @@ If the given value is not supported or is invalid, an exception will be thrown w
 
 ### Signal State
 
-* Supported on EMDK 6.1.0 and higher
-* Not supported on all BSPs
+**Note: Some BSPs do not support this function**. 
 
 #### Get Signal State
 
@@ -130,7 +139,9 @@ This method allows the application to set the status of control signal.
 
 ## Sample Code
 
-    :::java
+The code below demonstrates how to get the `SerialCommManager` object, enumerate, get, configure and write to a serial port, and to disable it when the app is finished using it.  
+
+        :::java
     public class MainActivity extends Activity implements EMDKListener {
         SerialComm serialComm;
         SerialCommManager serialCommManager;
@@ -138,30 +149,58 @@ This method allows the application to set the status of control signal.
         private String TAG = MainActivity.class.getSimpleName();
         @Override
         protected void onCreate(Bundle savedInstanceState) {
-            EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);
+            super.onCreate(savedInstanceState);
+            //
+            // Get the EMDK manager:
+            EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this); 
         }
         @Override
         public void onOpened(EMDKManager emdkManager) {
             this.emdkManager = emdkManager;
             Log.d(TAG, "EMDK Opened and ready to use.");
-            serialCommManager = (SerialCommManager) this.emdkManager.getInstance(FEATURE_TYPE.SERIALCOMM_EX);
+            //
+            // Get the serialCommManager instance:
+            serialCommManager = (SerialCommManager) this.emdkManager.getInstance(FEATURE_TYPE.SERIALCOMM_EX); 
             try {
                 //...
+                // Note: For most devices, this method (below) will return only one port.
+                // On the VC80, this could return two or more ports.
+                //
+                // Get the list of supported ports on the device. 
                 List<SerialPortInfo> serialPorts = serialCommManager.getSupportedPorts();
-                serialComm = serialCommManager.getPort(serialPorts.get(0));
+                //
+                // Get the serialComm/port object by passing a SerialPortInfo object:
+                serialComm = serialCommManager.getPort(serialPorts.get(0)); 
                 //...
-                serialComm.enable();
+                //
+                // Enable the serial port:
+                serialComm.enable(); 
+                //
+                // Get the supported configuration for the serial port:
+                SerialCommConfig config = serialComm.getConfig(); 
+                config.baudRate = SerialCommConfig.BaudRates.BR_9600; // Set baud rate
+                config.dataBit = SerialCommConfig.DataBits.EIGHT; // Set dataBit
+                config.parity = SerialCommConfig.ParityBits.EVEN; // Set parity
+                config.stopBit = SerialCommConfig.StopBits.ONE; // Set stopBit
+                config.flowControlMode = SerialCommConfig.FlowControlMode.RTS_CTS; // Set flow control
+                serialComm.setConfig(config); // Set the configuration for the port
+                
                 //...
                 String writeData = "Text to write";
-                int bytesWritten = serialComm.write(writeData.getBytes(), writeData.getBytes().length);
+                //
+                // Write the data in writeData object to serial port:
+                int bytesWritten = serialComm.write(writeData.getBytes(), writeData.getBytes().length); 
                 //...
-                serialComm.disable();
+                //
+                // Disable the serial port after using:
+                serialComm.disable(); 
                 //...
+                //
+                // Release the serialCommManager after using:
                 emdkManager.release(FEATURE_TYPE.SERIALCOMM_EX);
             }
             catch (Exception ex)
             {
-                
             }
         }
         @Override
@@ -180,3 +219,4 @@ This method allows the application to set the status of control signal.
             Log.d(TAG, "EMDK closed");
         }
     }
+     

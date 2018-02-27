@@ -12,7 +12,7 @@ productversion: '1.1'
 
 **SimulScan is free when**: 
 
-* SimulScan is **used to scan only barcodes** ([Multi-barcode mode](../glossary/#multibarcodemode))
+* SimulScan is **used to scan a fixed number of barcodes fewer than 10** ([Multi-barcode mode](../glossary/#multibarcodemode))
 * **No more than 10 barcodes** are present on any single scan target 
 * **Text is captured using OCR-A, OCR-B or MRZ** barcode symbologies
 * **SimulScan is accessed through DataWedge** using any of its default Templates
@@ -41,7 +41,7 @@ productversion: '1.1'
 
 -----
 
-<IFRAME WIDTH=1000 HEIGHT=1000 FRAMEBORDER=0 SRC="https://app.smartsheet.com/b/publish?EQBCT=fdb2e12c9d6440649e09cf2fae055b8a"></IFRAME>
+<IFRAME WIDTH=1000 HEIGHT=800 FRAMEBORDER=0 SRC="https://app.smartsheet.com/b/publish?EQBCT=fdb2e12c9d6440649e09cf2fae055b8a"></IFRAME>
 
 -----
 

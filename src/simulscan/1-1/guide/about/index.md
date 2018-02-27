@@ -79,8 +79,11 @@ In addition, some Fields are designated as "Anchor Elements," which help SimulSc
 -----
 
 ## Supported Devices
-SimulScan works with all device cameras, and **on devices with a supported 2D imager; 1D imagers are not supported**. To identify the imager installed on a device, see **About Device > Hardware Configuration** in the device Settings panel or refer to the table below for a supported device model code in place of the "?" character as indicated.
+SimulScan works with all device cameras, and **on devices with a supported 2D imager; 1D imagers are not supported**. To identify the imager installed on a device, see **About Device > Hardware Configuration** in the device Settings panel.<!--  or refer to the table below for a supported device model code in place of the "?" character as indicated -->
 
+<IFRAME WIDTH=1000 HEIGHT=1700 FRAMEBORDER=0 SRC="https://app.smartsheet.com/b/publish?EQBCT=f40c04e31a2c4193b4ee455955ce237a"></IFRAME>
+
+<!-- 
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th width="15%" align="left" valign="middle" class="clsSyntaxHeadings">Zebra Device</th>
@@ -127,7 +130,7 @@ SimulScan works with all device cameras, and **on devices with a supported 2D im
  </tr>
  <tr>
 </tbody></table>
-
+ -->
 
 <!-- 
 <img style="height:100px" src="TC55_models.png"/>

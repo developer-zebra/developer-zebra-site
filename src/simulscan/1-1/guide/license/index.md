@@ -41,6 +41,10 @@ productversion: '1.1'
 
 -----
 
+<IFRAME WIDTH=1000 HEIGHT=1000 FRAMEBORDER=0 SRC="https://app.smartsheet.com/b/publish?EQBCT=fdb2e12c9d6440649e09cf2fae055b8a"></IFRAME>
+
+-----
+
 ## Obtain a License
 SimulScan Licenses are purchased directly from Zebra Technologies or through resellers of Zebra products. The section below explains the process for licensing devices for SimulScan use. 
 

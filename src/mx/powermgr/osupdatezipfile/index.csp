@@ -30,11 +30,12 @@ For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101
 
 ### Update File Rules
 
+* **Zebra recommends always matching case when specifying file names** to avoid case-sensitivity errors on some devices. 
 * **Required file(s) must be on the device before the Reset Action** is initiated.
 * The .upl file and all referenced .zip files must be **in the same device folder**. 
-* The folder used for storing file(s) must be a supported location according to the  Android Location Rules and Device Location Rules below. 
+* The folder used for storing file(s) must be a supported location according to the Android Location/Device Location Rules below. 
 * **Location rules and characteristics vary by device**. 
-* **<u>These devices do not support .upl files</u>**:
+* **The following devices <u>do not support</u> .upl files**:
  * **TC70 KitKat**
  * **TC70 Lollipop**
  * **TC75 KitKat**
@@ -43,15 +44,10 @@ For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101
 ### Android Location Rules
 
 * **Update file location must not be blocked** by [SdCardMgr](../sdcardmgr) or any other means. 
-
 * **Removable media must be physically present**. Storage partitions implemented on a removable medium such as a Micro SD Card must be inserted in the device when the Reset Action is initiated. 
-
 * **The location must not be encrypted**. A location that is encrypted cannot be used for OS Updates. For example, if Full Storage Card Encryption is enabled for a particular Storage Card, that card contains no suitable locations for OS Updates. Similarly, if an Encrypted File System was mounted on a Storage Card, that card also would be unsuitable for OS Updates.
-
 * **The update entity must have write permissions** in the update file location. 
-
 * **Emulated Storage Cards are not supported on Jelly Bean**. Devices running KitKat and higher are not effected by this limitation.
-
 * **[Adoptable Storage](https://source.android.com/devices/storage/adoptable) is not supported**. Zebra devices by default do not implement the Android Adoptable Storage spec, which formats the SD Card for use with a single device. An Adoptable SD Card cannot be used to store update files. 
 
 **Note:** The path specified using this parameter would normally be the same as the path to which the file was written when it was transferred to the device. However, path names can sometimes appear to be different while ending at the same destination, and it's possible that some such paths will fail to initiate an OS Update when specified using this parameter. Therefore, **Zebra recommends using paths in the following table when specifying the OS Update file to the PowerMgr**.

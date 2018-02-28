@@ -42,7 +42,7 @@ content-items:
     level: 4
     title: SerialComm Programmer's Guide
     text: How to communicate with devices connected to the serial and/or USB ports.
-    url: /emdk-for-android/6-8/guide/serialcomm
+    url: /emdk-for-android/6-7/guide/serialcomm
   - type: section
     level: 4
     title: SimulScan API Programmer's Guide

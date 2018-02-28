@@ -14,6 +14,7 @@
     <AssemblyVersion>2.5.0.41</AssemblyVersion>
     <AssemblyVersion>2.5.0.48</AssemblyVersion>
     <AssemblyVersion>2.6.0.69</AssemblyVersion>
+    <AssemblyVersion>2.7.0.76</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Object</BaseTypeName>
@@ -47,6 +48,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
@@ -133,6 +135,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -193,6 +196,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Symbol.XamarinEMDK.Barcode.Scanner+DataEventArgs&gt;</ReturnType>
@@ -219,6 +223,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -251,6 +256,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -280,6 +286,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -311,6 +318,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -374,6 +382,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -407,6 +416,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -440,6 +450,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -472,6 +483,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -558,6 +570,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -588,6 +601,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -620,6 +634,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -657,6 +672,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Symbol.XamarinEMDK.Barcode.Scanner+StatusEventArgs&gt;</ReturnType>
@@ -683,6 +699,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -712,6 +729,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -741,6 +759,7 @@ Scanner class will represent and provides access to the physical scanner device.
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

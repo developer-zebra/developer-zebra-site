@@ -2,7 +2,7 @@
 title: ScannerConfig.ScanMode
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 Available scanning modes. This allows to select one type at a time.
 
@@ -36,6 +36,10 @@ System.String **this_**  -
 
 ##Properties
 
+###MultiBarcode
+Decode multiple barcodes at a time. Number of barcodes to be decoded needs to be configured from 2 to 10.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+ScanMode
 ###SingleBarcode
 Decode only a single barcode at a time.
 

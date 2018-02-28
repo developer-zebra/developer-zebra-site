@@ -2,7 +2,7 @@
 title: BarcodeManager.ScannerConnectionEventArgs
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 used internally by BarcodeManager - not to be used in applications.
 

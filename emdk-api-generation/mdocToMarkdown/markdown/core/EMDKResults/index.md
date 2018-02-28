@@ -2,7 +2,7 @@
 title: EMDKResults
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 Class for holding EMDK result data.
 

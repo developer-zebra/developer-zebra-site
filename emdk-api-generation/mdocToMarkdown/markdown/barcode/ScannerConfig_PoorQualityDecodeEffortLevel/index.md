@@ -2,7 +2,7 @@
 title: ScannerConfig.PoorQualityDecodeEffortLevel
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 Describes the selection of enhancement modes for decoding barcodes of poor or degraded quality.
 

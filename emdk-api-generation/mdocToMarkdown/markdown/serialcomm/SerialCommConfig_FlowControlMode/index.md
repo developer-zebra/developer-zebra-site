@@ -2,7 +2,7 @@
 title: SerialCommConfig.FlowControlMode
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 Pre-defined constants to specify flow control.
 
@@ -15,10 +15,12 @@ Pre-defined constants to specify flow control.
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.FlowControlMode ValueOf (string this_);**
 
 
+        
 
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+FlowControlMode
 
@@ -27,6 +29,7 @@ System.String **this_**  -
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.FlowControlMode[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,7 +38,7 @@ System.String **this_**  -
 ##Properties
 
 ###DsrDtr
-Hardware flow control DSR/DTR
+Deprecated
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+FlowControlMode
 ###None

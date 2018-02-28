@@ -4,7 +4,8 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '2.7' 
 ---
-To be added.
+
+    
 
 **Type** - Java.Lang.Enum
 
@@ -13,11 +14,13 @@ To be added.
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.OcrAVariant ValueOf (string p0);**
 
-To be added.
+
+        
 
 **Parameters:**
 
-System.String **p0**  - To be added.
+System.String **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrAVariant
 
@@ -25,7 +28,8 @@ System.String **p0**  - To be added.
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.OcrAVariant[] Values ();**
 
-To be added.
+
+        
 
 **Parameters:**
 
@@ -34,18 +38,22 @@ To be added.
 ##Properties
 
 ###Banking
-To be added.
+
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrAVariant
 ###FullAscii
-To be added.
+
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrAVariant
 ###Reserved1
-To be added.
+
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrAVariant
 ###Reserved2
-To be added.
+
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrAVariant

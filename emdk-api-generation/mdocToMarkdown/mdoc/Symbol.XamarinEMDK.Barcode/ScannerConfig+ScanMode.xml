@@ -6,6 +6,7 @@
     <AssemblyVersion>2.5.0.41</AssemblyVersion>
     <AssemblyVersion>2.5.0.48</AssemblyVersion>
     <AssemblyVersion>2.6.0.69</AssemblyVersion>
+    <AssemblyVersion>2.7.0.76</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Enum</BaseTypeName>
@@ -22,6 +23,27 @@
     </remarks>
   </Docs>
   <Members>
+    <Member MemberName="MultiBarcode">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.Barcode.ScannerConfig.ScanMode MultiBarcode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/ScanMode MultiBarcode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("MULTI_BARCODE")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+ScanMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Decode multiple barcodes at a time. Number of barcodes to be decoded needs to be configured from 2 to 10.</summary>
+        <value></value>
+        <remarks></remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SingleBarcode">
       <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.Barcode.ScannerConfig.ScanMode SingleBarcode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/ScanMode SingleBarcode" />
@@ -30,6 +52,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -55,6 +78,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -76,6 +100,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -97,6 +122,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -122,6 +148,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -153,6 +180,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

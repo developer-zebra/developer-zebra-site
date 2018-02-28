@@ -2,9 +2,10 @@
 title: ScannerConfig.OcrAVariant
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -14,10 +15,12 @@ productversion: '2.6'
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.OcrAVariant ValueOf (string p0);**
 
 
+        
 
 **Parameters:**
 
 System.String **p0**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrAVariant
 
@@ -26,6 +29,7 @@ System.String **p0**  -
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.OcrAVariant[] Values ();**
 
 
+        
 
 **Parameters:**
 
@@ -35,17 +39,21 @@ System.String **p0**  -
 
 ###Banking
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrAVariant
 ###FullAscii
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrAVariant
 ###Reserved1
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrAVariant
 ###Reserved2
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrAVariant

@@ -14,6 +14,7 @@
     <AssemblyVersion>2.5.0.41</AssemblyVersion>
     <AssemblyVersion>2.5.0.48</AssemblyVersion>
     <AssemblyVersion>2.6.0.69</AssemblyVersion>
+    <AssemblyVersion>2.7.0.76</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Enum</BaseTypeName>
@@ -46,6 +47,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -79,6 +81,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -112,6 +115,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -145,6 +149,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -174,6 +179,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -203,6 +209,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -236,6 +243,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -269,6 +277,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -302,6 +311,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -335,6 +345,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -368,6 +379,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -401,6 +413,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -430,6 +443,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -459,6 +473,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -492,6 +507,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -531,6 +547,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -7,6 +7,7 @@
     <AssemblyVersion>2.5.0.41</AssemblyVersion>
     <AssemblyVersion>2.5.0.48</AssemblyVersion>
     <AssemblyVersion>2.6.0.69</AssemblyVersion>
+    <AssemblyVersion>2.7.0.76</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Enum</BaseTypeName>
@@ -32,6 +33,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -58,6 +60,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -75,6 +78,27 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="PressAndSustain">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimType PressAndSustain { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/AimType PressAndSustain" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("PRESS_AND_SUSTAIN")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Press and sustain aim type; This mode helps to continue the decode session until the beamTimer is expired, barcode is decoded or cancels the read. It avoids unexpected cancellations of a read by pressing the trigger button of the device. If the trigger button of the device is pressed while the beam is ON, it has no effect.</summary>
+        <value></value>
+        <remarks></remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ThresholdClass">
       <MemberSignature Language="C#" Value="protected override IntPtr ThresholdClass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
@@ -84,6 +108,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -106,6 +131,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -128,6 +154,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -154,6 +181,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -180,6 +208,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -206,6 +235,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -235,6 +265,7 @@
         <AssemblyVersion>2.5.0.41</AssemblyVersion>
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
+        <AssemblyVersion>2.7.0.76</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

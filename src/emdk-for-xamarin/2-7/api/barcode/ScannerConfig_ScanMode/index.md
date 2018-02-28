@@ -36,6 +36,10 @@ System.String **this_**  -
 
 ##Properties
 
+###MultiBarcode
+Decode multiple barcodes at a time. Number of barcodes to be decoded needs to be configured from 2 to 10.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+ScanMode
 ###SingleBarcode
 Decode only a single barcode at a time.
 

@@ -20,7 +20,6 @@ This method returns the SerialComm object if the serial port info specified is v
 **Parameters:**
 
 Symbol.XamarinEMDK.SerialComm.SerialPortInfo **p0**  - 
-          
         
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr

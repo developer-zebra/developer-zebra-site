@@ -2,7 +2,7 @@
 title: ScannerConfig
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 The ScannerConfig class provides access to scanner configuration settings.
 

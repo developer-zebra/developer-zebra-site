@@ -1,18 +1,18 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="Symbol.XamarinEMDK" Version="2.6.0.69">
+    <Assembly Name="Symbol.XamarinEMDK" Version="2.7.0.76">
       <Attributes>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.barcode", Managed="Symbol.XamarinEMDK.Barcode")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.personalshopper", Managed="Symbol.XamarinEMDK.PersonalShopper")</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk", Managed="Symbol.XamarinEMDK")</AttributeName>
         </Attribute>
         <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.barcode", Managed="Symbol.XamarinEMDK.Barcode")</AttributeName>
+        </Attribute>
+        <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.notification", Managed="Symbol.XamarinEMDK.Notification")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.personalshopper", Managed="Symbol.XamarinEMDK.PersonalShopper")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.scanandpair", Managed="Symbol.XamarinEMDK.ScanAndPair")</AttributeName>
@@ -39,10 +39,10 @@
           <AttributeName>System.Reflection.AssemblyDescription("EMDK for Xamarin")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyFileVersion("2.6.0.69")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("2.7.0.76")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("2.6.0.69")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("2.7.0.76")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyProduct("EMDK for Xamarin")</AttributeName>
@@ -173,6 +173,7 @@
       <Type Name="ScannerConfig+Isbt128ConcatMode" Kind="Class" />
       <Type Name="ScannerConfig+LcdMode" Kind="Class" />
       <Type Name="ScannerConfig+LinearSecurityLevel" Kind="Class" />
+      <Type Name="ScannerConfig+MultiBarcodeParams" Kind="Class" />
       <Type Name="ScannerConfig+OcrAVariant" Kind="Class" />
       <Type Name="ScannerConfig+OcrBVariant" Kind="Class" />
       <Type Name="ScannerConfig+OcrLines" Kind="Class" />

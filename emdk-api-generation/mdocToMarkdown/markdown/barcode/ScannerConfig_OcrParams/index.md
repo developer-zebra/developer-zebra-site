@@ -2,9 +2,10 @@
 title: ScannerConfig.OcrParams
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 
+    
 
 **Type** - Java.Lang.Object
 
@@ -12,25 +13,31 @@ productversion: '2.6'
 
 ###InverseOcr
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+InverseOcr
 ###MaxCharacters
 
+        
 
 **Type** - System.Int32
 ###MinCharacters
 
+        
 
 **Type** - System.Int32
 ###OcrLines
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrLines
 ###QuietZone
 
+        
 
 **Type** - System.Int32
 ###Template
 
+        
 
 **Type** - System.String

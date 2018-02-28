@@ -2,7 +2,7 @@
 title: ScannerConfig.AimType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 Describes the type of aiming to use. This will take affect only when the continuous read is set to false.
 
@@ -39,6 +39,10 @@ Scan the barcodes continuously.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType
 ###PressAndRelease
 Press and release aim type; the scan status goes from idle to scanning by pressing and releasing the trigger.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType
+###PressAndSustain
+Press and sustain aim type; This mode helps to continue the decode session until the beamTimer is expired, barcode is decoded or cancels the read. It avoids unexpected cancellations of a read by pressing the trigger button of the device. If the trigger button of the device is pressed while the beam is ON, it has no effect.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType
 ###TimedHold

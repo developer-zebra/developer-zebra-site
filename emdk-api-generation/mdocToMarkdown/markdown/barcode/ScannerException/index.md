@@ -2,7 +2,7 @@
 title: ScannerException
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 The methods of barcode scanning object throws ScannerException when an error occurs. The error could be due to the application using the API incorrectly or because an unexpected error occurred
 

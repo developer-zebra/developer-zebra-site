@@ -2,7 +2,7 @@
 title: VersionManager.VERSION_TYPE
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.6' 
+productversion: '2.7' 
 ---
 All the version keys for VersionManager#getVersion(VERSION_TYPE) are enumerated here.
 

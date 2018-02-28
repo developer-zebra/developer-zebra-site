@@ -1,12 +1,13 @@
 
 ## EMDK for Xamarin
 
-* Get latest code from Jenkins http://10.17.216.63:8080/jenkins/ and look for something similar to "tut_emdkx_build" and open the latest. 
-* (The SDK-Addon at the highest api level has the javadocs)
-* Get DLL from Praveen
-* Copy DLL to Lib folder in mDocToMarkdown
-* Go to shell in parent folder MDoc - then run command in readme (cross fingers - need mdoc - from Xamarin tools)
+* Get latest EMDK For Android code from Jenkins  http://10.17.216.63:8080/jenkins/job/tut_emdka_build/ and look for something similar to "tut_emdkx_build" and open the latest. 
+* Download sdk-addon.zip  and unzip (The SDK-Addon at the highest api level has the javadocs ex; addon-symbol_emdk-symbol-26)
+* Get latest Symbol.XamarinEMDK.dll from Praveen (should be here: http://10.17.216.63:8080/jenkins/job/tut_emdkx_build/)
+* Replace Symbol.XamarinEMDK.dll to Lib folder in mDocToMarkdown
+* Go to shell in folder mDocToMarkdown - then run command in readme (cross fingers - need mdoc - from Xamarin tools)
 * This updates mdoc folder
+* Do sanity check to see if new API are in there (you can also check assembly version inside a MDOC API)
 * Find "To be added" in mdocs folder (this is all new/changed stuff)
 * Find same thing in Javadocs and get description - replace Summary TBA - remove other TBA
 * When looking at javadocs - always click down into the details (do not take "first sentence" from summary)
@@ -16,7 +17,7 @@
 * Generate Markdown
 	* ex: node generate_markdown.js -a 2.6.0.69 -p 2.6 
 * check for latest assembly number in xml
-* Markdown is in "markdown" folder - look again for TBA
+* Markdown is in "mDocToMarkdown/markdown" folder - look again for TBA
 * Copy the markdown and "merge" into techdocs E4X API folder
 
 ## EMDK For Android

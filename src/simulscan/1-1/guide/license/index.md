@@ -6,7 +6,7 @@ productversion: '1.1'
 ---
 ## Overview
 
-**SimulScan is free for many scanning scenarios, including when used with Zebra's [DataWedge](../../../../datawedge) service** and its default Templates, from a custom app to scan only barcodes and/or for certain types of optical character recognition (OCR). A per-device license is required for advanced SimulScan features such as detection and capture of checkmarks and for scanning highly complex targets. A complete breakdown is below. 
+**SimulScan is free for many scanning scenarios, including when used with Zebra's [DataWedge](../../../../datawedge) service** and its default Templates, from a custom app to scan only barcodes and/or for certain types of optical character recognition (OCR). A per-device license is required for advanced SimulScan features such as detection and capture of checkmarks and for scanning highly complex targets. A complete breakdown is below and shown in the [Licensing Matrix](#licensingmatrix). 
 
 ### When a License is Not Required 
 
@@ -15,19 +15,26 @@ productversion: '1.1'
 * SimulScan is **used to scan a fixed number of barcodes fewer than 10** ([Multi-barcode mode](../glossary/#multibarcodemode))
 * **No more than 10 barcodes** are present on any single scan target 
 * **Text is captured using OCR-A, OCR-B or MRZ** barcode symbologies
-* **SimulScan is accessed through DataWedge** using any of its default Templates
+* **SimulScan is accessed through DataWedge** using many of its default Templates (except OCR)
 * **Capturing the presence of a signature**
-* **Capturing an image** 
+* **Capturing an image** or an entire document as an image 
 
 ### When a License is Required 
 
-**A per-device License is required when**: 
+**A per-device License is required when capturing**: 
 
-* SimulScan is used **to capture an entire Document** ([Document Capture mode](../glossary/#documentcapturemode))
-* **More than 10 (but no more than 20) barcodes** (or other fields) are present on any single scan target
-* **Text is captured using OCR**
-* **Optical mark recognition (OMR) is used** to detect the presence of check marks  
-* **SimulScan is used with [Enterprise Browser](../../../../enterprise-browser)**
+<!-- * SimulScan is used **to capture an entire Document** ([Document Capture mode](../glossary/#documentcapturemode))-->
+* **More than 10 (but no more than 20) barcodes** (or other fields) on any single scan target
+* **A changing number of barcodes from one scan to another** (Dynamic or Variable Quantity Groups) 
+* **Text using optical character recognition (OCR)**
+* **Optical marks using optical mark recognition (OMR)** to detect check marks  
+<!-- * **SimulScan is used with [Enterprise Browser](../../../../enterprise-browser)**
+-->
+
+<!--
+info from PM: SimulScan_MB-PREM is required for advanced Barcoding features, and SimilScan_PREM (higher price) is required for OCR/OMR and includes the Advanced Barcoding Features as well 
+ -->
+
 
 ### Licensing General Rules
 
@@ -40,6 +47,8 @@ productversion: '1.1'
 * **A Factory Reset clears the license** from the device; redeployment is required. 
 
 -----
+
+## Licensing Matrix
 
 <IFRAME WIDTH=1000 HEIGHT=800 FRAMEBORDER=0 SRC="https://app.smartsheet.com/b/publish?EQBCT=fdb2e12c9d6440649e09cf2fae055b8a"></IFRAME>
 

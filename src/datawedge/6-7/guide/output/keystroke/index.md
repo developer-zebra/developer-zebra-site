@@ -12,6 +12,23 @@ Keystroke Output collects the processed data and sends it to the associated appl
 
 -----
 
+### Outputting Raw Data
+
+In addition to its normal plain-text and hexadecimal modes, DataWedge also can output acquired data in its raw form, before the application of any encoders. This can be useful if custom encoders are needed for acquiring symbologies not supported by Zebra.  
+
+> **Raw data can be received only by [Intent Output](../intent) and only as a byte stream**. 
+
+Hex data is based on the encoded data received from the scanner framework after it's converted from its raw form to the selected character set. When the hex-output option is selected, the plain-text string is converted to the corresponding hex digits and sent as a string.
+
+**To acquire hex data programmatically**, use the following Java code:
+
+	:::java
+	String hex = Hex.encodeHex(data.getString(DATA_STRING_TAG).toCharArray(), false);
+
+The command above will return the data in the keystroke or intent output string.
+
+-----
+
 ## Keystroke Output Setup
 
 To enable Keystroke output for a Profile, place a check in the checkbox:

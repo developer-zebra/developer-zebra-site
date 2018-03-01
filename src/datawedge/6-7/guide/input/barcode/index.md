@@ -153,7 +153,7 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table">Aztec<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">MicroQR</p></td>
-<td align="left" valign="top"><p class="table">Korean 3 of 5</p></td>
+<td align="left" valign="top"><p class="table">Korean 3of5</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">US4state</p></td>
@@ -162,6 +162,11 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">HAN XIN</p></td>
+<td align="left" valign="top"><p class="table">Bookland</p></td>
+<td align="left" valign="top"><p class="table">Coupon</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">ISBT128</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
@@ -207,6 +212,8 @@ The quiet zone is the blank space on either side of a bar code that indicates wh
 <img style="height:350px" src="Marginless_C128_param_table.png"/>
 _**Descriptions of the 1D Quiet Zone Levels** shown above are in the [Reader Params](#readerparams) section along with important warnings_. 
 <br>
+
+-----
 
 ### UPCE0
 **Report Check Digit -** The check digit is the last character of the symbol used to verify the integrity of the data. Enables or disables this option. A check in the checkbox indicates that the option is enabled.
@@ -325,6 +332,8 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Security Level -** Options: Security level 0, Security Level 1, Security Level 2 and Security Level 3.
 
+-----
+
 ### Discrete 2of5
 
 **Length1&#42; -** To decode a Discrete 2of5 symbol with a specific length range, set this value to the lower limit. For example, to decode Discrete 2of5 symbols containing between 4 and 12 characters, this value would be set to 4.
@@ -382,6 +391,8 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 **Two Check Digits -** Barcode contains two check digits.
 
 **Report Check Digit -** Transmit Code 11 data with or without the check digit. A check in the checkbox sends Code 11 data with a check digit.
+
+-----
 
 ### Code93
 
@@ -580,6 +591,8 @@ The UPC/EAN Parameter allows configuration of parameters that apply to more than
 
 **Supplemental5 -** A check in the checkbox enables this option.
 
+-----
+
 ### Supplemental Mode
 
 **No Supplementals -** The scanner is presented with a UPC/EAN plus supplemental symbol, the scanner decodes UPC/EAN and ignores the supplemental characters.
@@ -694,7 +707,7 @@ Reader Parameters control specific configuration options for the barcode reader 
 **Picklist Notes** 
 
 * Performance might vary on some devices if Hardware or Software Picklist modes are set.
-* If using Multibarcode mode, see important behavior notes below. 
+* If using Multi-barcode mode, see important behavior notes below. 
 
 ------
 
@@ -704,9 +717,11 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 -----
 
-**Scanning Modes -** Used to select between Single (normal), UDI and MultiBarcode modes. UDI mode acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). MultiBarcode mode acquires from 2-10 barcodes with each scan as specified in the Multibarcode params panel. **Default=5**.
+**Scanning Modes -** Used to select between Single (normal), UDI and Multi-barcode modes. UDI mode acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). Multi-barcode mode acquires from 2-10 barcodes with each scan as specified in the Multi-barcode params panel. **Default=5**.
 
 > See important notes below.
+
+-----
 
 ### UDI Decoding
 
@@ -720,10 +735,12 @@ _When UDI scanning mode is enabled (as above)_...
 * Output of collected UDI data might require settings adjustments of the token-separation character and/or output order. See the [Keystroke Output guide](../../output/keystroke/#udidataoutput) guide for more information. 
 * UDI settings can vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke), [Intent Output](../../output/intent) and/or [IP Output](../../output/ip) guides for more information.
 
-### MultiBarcode Decoding
+-----
+
+### Multi-barcode Decoding
 
 <img style="height:350px" src="dw_6.7_multibarcode.png"/>
-_When MultiBarcode scanning mode is enabled (as above)_... 
+_When Multi-barcode scanning mode is enabled (as above)_... 
 <img style="height:350px" src="dw_6.7_multibarcode_param_embed.png"/>
 ..._specify the number of barcodes to be decoded with each scan_.  
 
@@ -733,11 +750,11 @@ _When MultiBarcode scanning mode is enabled (as above)_...
 
 * **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke). 
 
-* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes (from 2-10) specified in the MultiBarcode params panel. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
+* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes (from 2-10) specified in the Multi-barcode params panel. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
 
 * **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
 
-* **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a MultiBarcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
+* **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a Multi-barcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
 
 * **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
 

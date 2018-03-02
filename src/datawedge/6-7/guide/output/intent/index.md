@@ -382,7 +382,6 @@ The decode-related data added to an intent bundle can be retrieved using specifi
 
 **Tag**: DECODE_DATA_TAG<br>
 **Type**: [byte [ ] ]<br>
-<!-- or list of byte arrays? -> [List <byte [ ]>] --> 
 **Name**: "com.symbol.datawedge.decode_data"<br>
 **Contents**: Decoded data returned as a list of byte arrays.<br>
 

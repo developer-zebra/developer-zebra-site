@@ -81,8 +81,10 @@ Parameters for individual Decoders are modified within a Profile. Each DataWedge
 
 DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles, and are indicated by an (&#42;) in the table below. **To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile**.
 
-**Note**: Decoders lacking configurable parameters do not appear in the [Decoder Parameters](#decoderparameters) section.
+**Note**: Decoders lacking configurable parameters do not appear in the [Decoder Parameters](#decoderparameters) section later in this guide. Others are linked to their corresponding sections. 
 <br>
+
+-----
 
 <div class="table-striped">
 <table rules="none"
@@ -177,8 +179,6 @@ cellspacing="0" cellpadding="4">
 </div>
 &#42; _Enabled by default_
 
-**Note**: Decoders lacking configurable parameters do not appear in the Decoder Parameters section.
-
 -----
 
 ### Enable/Disable Decoders
@@ -209,7 +209,7 @@ cellspacing="0" cellpadding="4">
 
 ## Decoder Parameters
 
-Editable parameters of individual Decoders are explained below. **Note: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section**. For further instructions about creating and editing DataWedge Profiles, see "[Manage Profiles](../../createprofile)" page. 
+Editable parameters of individual Decoders are explained below. **Note: Decoders lacking configurable parameters do not appear in the Decoder Parameters section below**. For further instructions about creating and editing DataWedge Profiles, see "[Manage Profiles](../../createprofile)" page. 
 
 ### Reduced Quiet Zone 
 The quiet zone is the blank space on either side of a bar code that indicates where the symbology begins and ends, and is intended to prevent the reader from scanning irrelevant information. When marginless decoders are used with Reduced Quiet Zone Level reader parameters, the decoders behave according to the following table: 

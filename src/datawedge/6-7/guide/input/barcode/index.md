@@ -73,13 +73,17 @@ Support notes:
 
 ## Decoder Selection
 
-Many input methods include parameters that are configurable according to the expected scan targets and/or preferences of an organization. Enabling a narrow selection of decoders can be used as a means of increasing security, reducing decode errors and improving scan performance. For example, a company that routinely receives packages encoded with Code 128 symbology might help improve efficiency and reduce scan errors by limiting the Code 128 decoders it implements to those of the non-EAN variety. 
+Many input methods include parameters that are configurable according to the expected scan targets and/or preferences of an organization. Enabling a narrow selection of decoders can help increase security, reduce decode errors and improve scan performance. **For example, a company that routinely receives packages encoded with Code 128 symbology might consider limiting the Code 128 decoders it implements to those of the non-EAN variety**. 
 
 Parameters for individual Decoders are modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters (where applicable) to use with its associated application(s). This guide covers the selection of Decoders and provides details for those with configurable parameters.
 
+### Default Decoders 
+
 DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles, and are indicated by an (&#42;) in the table below. **To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile**.
 
-### Default Decoders 
+**Note**: Decoders lacking configurable parameters do not appear in the [Decoder Parameters](#decoderparameters) section.
+<br>
+
 <div class="table-striped">
 <table rules="none"
 width="100%"
@@ -91,82 +95,80 @@ cellspacing="0" cellpadding="4">
 <col width="33%" />
 <tbody>
 <tr>
-<td align="left" valign="top"><p class="table">UPC-E0<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">UPC-E1</p></td>
-<td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">MSI</p></td>
-<td align="left" valign="top"><p class="table">EAN-8<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Codabar<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">Code 39<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">Discrete 2of5</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Interleaved 2of5</p></td>
-<td align="left" valign="top"><p class="table">Code 11</p></td>
-<td align="left" valign="top"><p class="table">Code 93</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Code 128<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">Trioptic 39</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">MicroPDF<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Datamatrix<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">MacromicroPDF<sup>*</sup></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">GS1 DataBar</p></td>
-<td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
-<td align="left" valign="top"><p class="table">GS1 DataBar Expanded</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">Composite AB<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">Webcode</p></td>
-<td align="left" valign="top"><p class="table">Composite C<sup>*</sup></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">USPostnet</p></td>
-<td align="left" valign="top"><p class="table">USPlanet</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">UK Postal</p></td>
-<td align="left" valign="top"><p class="table">Japanese Postal</p></td>
 <td align="left" valign="top"><p class="table">Australian Postal</p></td>
+<td align="left" valign="top"><p class="table">Aztec<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#supplementalmode">Bookland</a></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Canadian Postal</p></td>
-<td align="left" valign="top"><p class="table">Dutch Postal</p></td>
 <td align="left" valign="top"><p class="table">Chinese 2of5</p></td>
+<td align="left" valign="top"><p class="table"><a href="#codabar">Codabar</a><sup>*</sup></p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">Aztec<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#code11">Code 11</a></p></td>
+<td align="left" valign="top"><p class="table">Code 32<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#code39">Code 39</a><sup>*</sup></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><a href="#code93">Code 93</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="#code128">Code 128</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#compositeab">Composite AB</a><sup>*</sup></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><a href="#compositec">Composite C</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#supplementalmode">Coupon</a></p></td>
+<td align="left" valign="top"><p class="table">Datamatrix<sup>*</sup></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><a href="#discrete2of5">Discrete 2of5</a></p></td>
+<td align="left" valign="top"><p class="table">Dutch Postal</p></td>
+<td align="left" valign="top"><p class="table"><a href="#ean8">EAN-8</a><sup>*</sup></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">GS1 DataBar</p></td>
+<td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">GS1 DataBar Expanded</p></td>
+<td align="left" valign="top"><p class="table"><a href="#hanxin">HAN XIN</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="#interleaved2of5">Interleaved 2of5</a></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><a href="#code128">ISBT128</a></p></td>
+<td align="left" valign="top"><p class="table">Japanese Postal</p></td>
+<td align="left" valign="top"><p class="table"><a href="#korean3of5">Korean 3of5</a></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#matrix2of5">Matrix 2of5</a></p></td>
+<td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><a href="#micropdf">MicroPDF</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">MicroQR</p></td>
-<td align="left" valign="top"><p class="table">Korean 3of5</p></td>
+<td align="left" valign="top"><p class="table">MacromicroPDF<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#msi">MSI</a></p></td>
+<td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
+</tr>
+<td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#trioptic39">Trioptic 39</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="#usplanet">US Planet</a></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
+<td align="left" valign="top"><p class="table">US Postal</p></td>
+<td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
+</tr>
+<td align="left" valign="top"><p class="table"><a href="#upce0">UPC-E0</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#upce1">UPC E1</a></p></td>
 <td align="left" valign="top"><p class="table">US4state</p></td>
+</tr>
+<tr>
 <td align="left" valign="top"><p class="table">US4state FICS</p></td>
-<td align="left" valign="top"><p class="table">Matrix 2of5</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">HAN XIN</p></td>
-<td align="left" valign="top"><p class="table">Bookland</p></td>
-<td align="left" valign="top"><p class="table">Coupon</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">ISBT128</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
@@ -175,7 +177,9 @@ cellspacing="0" cellpadding="4">
 </div>
 &#42; _Enabled by default_
 
-**Note**: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section.
+**Note**: Decoders lacking configurable parameters do not appear in the Decoder Parameters section.
+
+-----
 
 ### Enable/Disable Decoders
 

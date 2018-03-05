@@ -18,7 +18,7 @@ Components advertise the kinds of intents they can handle through intent filters
 
 **SEE ALSO**:
 
-* **[DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges) -** by Zebra engineer Darryn Campbell 
+* **[DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) -** by Zebra engineer Darryn Campbell 
 * **[Sample DataWedge app](../../api/tutorials) -** Demonstrates how to receive scanned data through an intent
 
 -----

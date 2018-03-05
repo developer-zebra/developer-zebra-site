@@ -14,7 +14,7 @@ DataWedge provides barcode scanning and processing services for Zebra devices ru
 * **Scanner Framework 18.0.xx** or higher, and
 * **SimulScan 1.9 or higher** (on [devices that support SimulScan](../../../../simulscan))
 
-To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
+To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
 
 -----
 

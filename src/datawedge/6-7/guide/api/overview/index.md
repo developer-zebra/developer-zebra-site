@@ -13,7 +13,7 @@ In DataWedge versions prior to 6.2, applications access DataWedge APIs by broadc
 **SEE ALSO**:
 
 * **[Using Intents](../../output/intent) -** A brief primer on intents and how to configure DataWedge to use them
-* **[DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges) -** by Zebra engineer Darryn Campbell 
+* **[DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) -** by Zebra engineer Darryn Campbell 
 * **[Sample DataWedge app](../tutorials) -** Demonstrates how to receive scanned data through an intent
 
 -----

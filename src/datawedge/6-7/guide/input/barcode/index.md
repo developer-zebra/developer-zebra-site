@@ -7,9 +7,9 @@ productversion: '6.7'
 
 ## Overview
 
-Barcode Input options specify the device hardware to be used to acquire barcode data before sending it for processing. Those included with DataWedge are explained below. **DataWedge also provides audio and other feedback to alert the user of scanning results and barcode type. The the [Scanner Parameters](#scanparams) section for more information**. 
+Barcode Input options specify the device hardware to use for scanning and the decoders to be applied on the acquired data before sending it for processing. Decoders included with DataWedge are explained below. **DataWedge also provides audio and other feedback to alert the user of scanning results and barcode type. See the [Scanner Parameters](#scanparams) section for more information**. 
 
-For input using SimulScan, see the [SimulScan Input Plug-in](../simulscan). 
+If using SimulScan, see [SimulScan Input profile guide](../simulscan). 
 
 Barcode Input is used to specify: 
 
@@ -185,12 +185,13 @@ cellspacing="0" cellpadding="4">
 
 **To enable or disable Decoders**: 
 
-&#49;. **From the Profile being edited, tap Decoders** as highlighted below. A list of Decoders appears similar to the image in Step 2.  
+&#49;. **From the Profile being edited, tap Decoders** as highlighted below.<br> 
+A list of Decoders appears similar to the image in Step 2.  
 <img style="height:350px" src="select_decoders.png"/>
 <br>
 
 &#50;. **Select/deselect the desired Decoders** by checking/unchecking the corresponding checkbox.<br> 
-**Reducing nonessential Decoders can improve scanning performance**. 
+**Note**: Reducing nonessential Decoders can improve scanning performance. 
 <img style="height:350px" src="decoder_selection.png"/>
 <br>
 
@@ -198,7 +199,8 @@ cellspacing="0" cellpadding="4">
 
 **To edit Decoder parameters**:
 
-&#49;. **From the Profile being edited, tap Decoder params** as highlighted below. A list of Decoders appears similar to the image in Step 2, below.
+&#49;. **From the Profile being edited, tap Decoder params** as highlighted below.<br>
+A list of Decoders appears similar to the image in Step 2, below.
 <img style="height:350px" src="decoder_params.png"/>
 <br>
 
@@ -210,7 +212,7 @@ cellspacing="0" cellpadding="4">
 
 ## Decoder Parameters
 
-Editable parameters of individual Decoders are explained below. **Note: Decoders lacking configurable parameters do not appear in the Decoder Parameters section below**. For further instructions about creating and editing DataWedge Profiles, see "[Manage Profiles](../../createprofile)" page. 
+Editable parameters of individual Decoders are explained below. **Note: Decoders lacking configurable parameters do not appear in the Decoder Parameters section below**. For further instructions about creating and editing DataWedge Profiles, see "[Manage Profiles](../../createprofile)" guide. 
 
 ### Reduced Quiet Zone 
 The quiet zone is the blank space on either side of a bar code that indicates where the symbology begins and ends, and is intended to prevent the reader from scanning irrelevant information. When marginless decoders are used with Reduced Quiet Zone Level reader parameters, the decoders behave according to the following table: 

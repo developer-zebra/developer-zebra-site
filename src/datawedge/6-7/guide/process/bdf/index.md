@@ -23,28 +23,35 @@ Get more info about [how Profiles work](../../overview).
 -----
 
 ## Basic Data Formatting
-The Basic Format Process Plug-in provides an easy way to append or prepend acquired data with custom values or keystrokes before passing it to an Output Plug-in. It also permits the conversion of data to hexadecimal format. If the Basic Formatting Plug-in is not enabled, captured data is passed to the selected Output Plug-in without modification.
+
+**Basic Data Formatting** provides an easy way to append or prepend acquired data with custom values or keystrokes before passing it to an Output Plug-in. It also permits the conversion of data to hexadecimal format. If the Basic Data Formatting is not enabled, captured data is passed to the selected Output Plug-in without modification. 
 
 <img style="height:350px" src="../basic_data_formatting.png"/>
-_Basic Data Formatting Output Plug-in options_. 
+_Basic Data Formatting Output options_
 <br>
 
 **Prefix to data -** adds (prepends) the specified characters(s) **to the beginning** of the acquired data before sending.
 
 **Suffix to data -** adds (appends) the specified characters(s) **to the end** of the acquired data before sending.
 
-**Send data -** Enabled by default, this allows transfer of the captured data to the associated application when it comes to the foreground. **Note**: Disabling this option prevents only the _captured_ data from being transferred; any prefix and/or suffix strings will be handed to the associated application(s), even when this option is disabled.
+**Send data -** allows transfer of the captured data to the associated application when it comes to the foreground. **Enabled by default**.<br>**<u>Note</u>**: Disabling this option prevents only the <u>_captured_</u> data from being transferred; any prefix and/or suffix strings will <u>_always_</u> be handed to the associated app(s), even when this option is disabled. 
 
 **Send as hex -** sends the data in hexadecimal format. For example, if the acquired barcode data is 012345, this option would send the hex equivalent of 30**31**32**33**34**35**. 
 
 **Send TAB key -** appends a TAB character to the processed data. 
 
-**Send ENTER key -** appends an Enter character to the processed data. 
+**Send ENTER key -** appends an ENTER character to the processed data. 
 
 -----
 
-**Related guides**:
+**DataWedge Output options**: 
 
+* **[Keystroke](../output/keystroke) -** outputs acquired data as if the keyboard was pressed
+* **[Internet Protocol](../ip) -** outputs data over a network using TCP or UDP
+* **[Intent](../intent) -** delivers data to the app as an intent extra
+
+
+**Related guides**:
 * [Advanced Data Formatting](../adf)
 * [DataWedge Profiles](../../profiles)
 * [DataWedge APIs](../../api) 

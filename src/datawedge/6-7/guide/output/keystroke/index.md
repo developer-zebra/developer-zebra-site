@@ -14,9 +14,11 @@ Keystroke Output collects the processed data and sends it to the associated appl
 
 ### Outputting Raw Data
 
-In addition to its normal plain-text and hexadecimal modes, DataWedge also can output acquired data in its raw form, before the application of any encoders. This can be useful if custom encoders are needed for acquiring character sets not supported by Zebra.  
+In addition to its normal plain-text and hexadecimal modes, DataWedge can output acquired data in its raw form, before the application of any encoders. This can be useful if custom encoders are needed for acquiring character sets not supported by Zebra.  
 
 Raw data is received as a byte stream using the `com.symbol.datawedge.decode_data` intent extra. For more information, see the [Intent Output guide](../intent). 
+
+> **Raw data cannot be output as keystrokes**. 
 
 -----
 
@@ -113,12 +115,14 @@ Hex data is based on the encoded data received from the scanner framework after 
 
 The command above will return the data in the keystroke or intent output string.
 
+To enable hex output through the DataWedge UI, see [Basic Data Formatting (BDF)](../process/bdf). 
+
 -----
 
 **Other DataWedge Output Options**:
 
-* **[Intent](../intent) -** programmatic data hand-off
-* **[Internet Protocol](../ip) -** network output via TCP or UDP
+* **[Internet Protocol](../ip) -** outputs data over a network using TCP or UDP
+* **[Intent](../intent) -** delivers data to the app as an intent extra
 
 **Related guides**:
 

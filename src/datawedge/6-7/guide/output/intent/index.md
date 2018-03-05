@@ -39,6 +39,16 @@ and the Intent category would be:
 
 -----
 
+### Outputting Raw Data
+
+In addition to its normal plain-text and hexadecimal modes, DataWedge can output acquired data in its raw form, before the application of any encoders. This can be useful if custom encoders are needed for acquiring character sets not supported by Zebra.  
+
+Raw data is received as a byte stream using the `com.symbol.datawedge.decode_data` intent extra. See the [Single Decode Mode section](#singledecodemode) below. 
+
+> **Raw data cannot be output as keystrokes**. 
+
+-----
+
 ## Intent Output Setup
 
 DataWedge invokes an intent though an **Intent action** in an **Intent category** as described in its `AndroidManifest.xml` file. 
@@ -392,15 +402,15 @@ The decode-related data added to an intent bundle can be retrieved using specifi
 
 **SEE ALSO**: 
 
-* **[DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges) -** by Zebra engineer Darryn Campbell 
+* **[DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) -** by Zebra engineer Darryn Campbell 
 * **[Sample DataWedge app](../../api/tutorials) -** Demonstrates how to receive scanned data through an intent
 
 -----
 
 **Other DataWedge Output Options**:
 
-* **[Internet Protocol](../ip) -** network output via TCP or UDP 
-* **[Keystroke](../keystroke) -** keyboard emulation
+* **[Keystroke](../keystroke) -** outputs acquired data as if the keyboard was pressed
+* **[Internet Protocol](../ip) -** outputs data over a network using TCP or UDP
 
 **Related guides**:
 

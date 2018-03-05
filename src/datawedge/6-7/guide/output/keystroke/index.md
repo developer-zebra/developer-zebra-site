@@ -106,14 +106,14 @@ Send data - Set to transfer the captured data to the foreground application. Dis
 
 ### Hexadecimal Data Output
 
-Hex data is based on the encoded data received from the scanner framework after it's converted from its raw form to the selected character set. When the hex-output option is selected, the plain-text string is converted to the corresponding hex digits and sent as a string.
+Hex data is based on the encoded data received from the scanner framework after it's converted from its raw form to the selected character set. When the hex-output option is selected, the plain-text string is converted to the corresponding hex digits and output as a string. That hex data can be acquired programmatically. 
 
-**To enable hex output through the DataWedge UI, see [Basic Data Formatting (BDF)](../../process/bdf)**. 
-
-Hex data also can be acquired programmatically. The Java command below will return the data stored in the keystroke or intent output string:
+The Java command below returns the hex data stored in the keystroke or intent output string:
 
 	:::java
 	String hex = Hex.encodeHex(data.getString(DATA_STRING_TAG).toCharArray(), false);
+
+**For more information and to enable hex output using the DataWedge UI, see [Basic Data Formatting (BDF)](../../process/bdf)**. 
 
 -----
 

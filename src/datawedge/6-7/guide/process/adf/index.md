@@ -313,9 +313,9 @@ The Rule0 screen should appear similar to the image below.
 
 **DataWedge Output options**: 
 
-* **[Keystroke](../output/keystroke) -** outputs acquired data as if the keyboard was pressed
-* **[Internet Protocol](../ip) -** outputs data over a network using TCP or UDP
-* **[Intent](../intent) -** delivers data to the app as an intent extra
+* **[Keystroke](../../output/keystroke) -** outputs acquired data as if the keyboard was pressed
+* **[Internet Protocol](../../output/ip) -** outputs data over a network using TCP or UDP
+* **[Intent](../../output/intent) -** delivers data to the app as an intent extra
 
 
 **Related guides**:

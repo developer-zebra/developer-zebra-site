@@ -115,7 +115,7 @@ Hex data is based on the encoded data received from the scanner framework after 
 
 The command above will return the data in the keystroke or intent output string.
 
-To enable hex output through the DataWedge UI, see [Basic Data Formatting (BDF)](../process/bdf). 
+To enable hex output through the DataWedge UI, see [Basic Data Formatting (BDF)](../../process/bdf). 
 
 -----
 

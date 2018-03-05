@@ -25,13 +25,11 @@ Download and install the Xamarin Studio Add-in(Mac) using the Add-in Manager.
 - [Read the Xamarin Studio Setup Guide](/emdk-for-xamarin/2-7/guide/xs/setup)
 
 
-### 2) Install The Xamarin Component
+### 2) Install The EMDK For Xamarin NuGet Package
 
-- [Read the Xamarin Component Install Guide](/emdk-for-xamarin/2-7/guide/component/install)
+- [Read the EMDK For Xamarin NuGet Package Install Guide](/emdk-for-xamarin/2-7/guide/nuget)
 
-    >NOTE: When multiple versions of the EMDK for Xamarin component are installed, all versions of the component will be visible in the **Edit Components** screen for your project.
-    
-	![img](../../images/component/add.jpg)
+>NOTE: Microsoft no longer supports Xamarin components and is requiring providers to use NuGet distribution. If you are not using Visual Studio 2017, you should consider upgrading - [the instructions for installing EMDK For Xamarin components](/emdk-for-xamarin/2-7/component/install) will no longer work.  
 
 
 ### 3) Try the Sample

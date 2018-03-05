@@ -79,9 +79,9 @@ Parameters for individual Decoders are modified within a Profile. Each DataWedge
 
 ### Default Decoders 
 
-DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles, and are indicated by an (&#42;) in the table below. **To help improve scanning performance, Zebra recommends disabling any Decoders that are not required by the application(s) associated with a given Profile**.
+DataWedge decodes all major barcode symbologies. Popular formats are enabled by default in all DataWedge Profiles (indicated by an &#42;). **To improve scanning performance, Zebra recommends disabling all Decoders not required by the app(s) associated with a given Profile**.
 
-**Note**: Decoders lacking configurable parameters do not appear in the [Decoder Parameters](#decoderparameters) section later in this guide. Others are linked to their corresponding sections. 
+**Note**: Decoders lacking configurable parameters do not appear in the [Decoder Parameters section](#decoderparameters). Others are linked to their corresponding parameter descriptions. 
 <br>
 
 -----
@@ -99,85 +99,85 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table">Australian Postal</p></td>
 <td align="left" valign="top"><p class="table">Aztec<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#supplementalmode">Bookland</a></p></td>
+<td align="left" valign="top"><p class="table">Canadian Postal</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">Canadian Postal</p></td>
 <td align="left" valign="top"><p class="table">Chinese 2of5</p></td>
 <td align="left" valign="top"><p class="table"><a href="#codabar">Codabar</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#code11">Code 11</a></p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table"><a href="#code11">Code 11</a></p></td>
 <td align="left" valign="top"><p class="table">Code 32<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#code39">Code 39</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#code93">Code 93</a></p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table"><a href="#code93">Code 93</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#code128">Code 128</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#compositeab">Composite AB</a><sup>*</sup></p></td>
-</tr>
-<tr>
 <td align="left" valign="top"><p class="table"><a href="#compositec">Composite C</a><sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#supplementalmode">Coupon</a></p></td>
-<td align="left" valign="top"><p class="table">Datamatrix<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">Datamatrix<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#discrete2of5">Discrete 2of5</a></p></td>
 <td align="left" valign="top"><p class="table">Dutch Postal</p></td>
-<td align="left" valign="top"><p class="table"><a href="#ean8">EAN-8</a><sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#ean8">EAN-8</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar</p></td>
-<td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar Expanded</p></td>
 <td align="left" valign="top"><p class="table"><a href="#hanxin">HAN XIN</a></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><a href="#code128">IATA 2of5</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#interleaved2of5">Interleaved 2of5</a></p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table"><a href="#code128">ISBT128</a></p></td>
 <td align="left" valign="top"><p class="table">Japanese Postal</p></td>
-<td align="left" valign="top"><p class="table"><a href="#korean3of5">Korean 3of5</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#korean3of5">Korean 3of5</a></p></td>
 <td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">MAILMARK</p></td>
+</tr>
+<tr>
 <td align="left" valign="top"><p class="table"><a href="#matrix2of5">Matrix 2of5</a></p></td>
 <td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
-</tr>
-<tr>
 <td align="left" valign="top"><p class="table"><a href="#micropdf">MicroPDF</a><sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">MicroQR</p></td>
-<td align="left" valign="top"><p class="table">MacromicroPDF<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">MicroQR</p></td>
+<td align="left" valign="top"><p class="table">MacroMicroPDF<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#msi">MSI</a></p></td>
+</tr>
+<tr>
 <td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
-</tr>
 <td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
+</tr>
 <td align="left" valign="top"><p class="table"><a href="#trioptic39">Trioptic 39</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#usplanet">US Planet</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
 <td align="left" valign="top"><p class="table">US Postal</p></td>
 <td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
-</tr>
 <td align="left" valign="top"><p class="table"><a href="#upce0">UPC-E0</a><sup>*</sup></p></td>
+</tr>
+<td align="left" valign="top"><p class="table">US4state FICS</p></td>
 <td align="left" valign="top"><p class="table"><a href="#upce1">UPC E1</a></p></td>
 <td align="left" valign="top"><p class="table">US4state</p></td>
 </tr>
+<td align="left" valign="top"><p class="table"></p></td>
 <tr>
-<td align="left" valign="top"><p class="table">US4state FICS</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
-<td align="left" valign="top"><p class="table"></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 &#42; _Enabled by default_
+
+**Note**: Hyperlinked decoders indicate (and link to) configurable parameters.
 
 -----
 
@@ -185,11 +185,12 @@ cellspacing="0" cellpadding="4">
 
 **To enable or disable Decoders**: 
 
-&#49;. **From the Profile being edited, tap Decoders** as highlighted below. A list of Decoders appears similar to the image in Step 2, below.  
+&#49;. **From the Profile being edited, tap Decoders** as highlighted below. A list of Decoders appears similar to the image in Step 2.  
 <img style="height:350px" src="select_decoders.png"/>
 <br>
 
-&#50;. **Select the desired Decoders** by checking the corresponding checkbox. **Deselect Decoders not required** for the app associated with the Profile. 
+&#50;. **Select/deselect the desired Decoders** by checking/unchecking the corresponding checkbox.<br> 
+**Reducing nonessential Decoders can improve scanning performance**. 
 <img style="height:350px" src="decoder_selection.png"/>
 <br>
 
@@ -420,7 +421,7 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data. 
 
-**Enable EAN128 -** Set the EAN128 subtype. A check in the checkbox indicates that the option is enabled.
+**Enable EAN128 -** Set the EAN128 subtype. A check in the checkbox indicates that the option is enabled for this label type.
 
 **Enable ISBT128 -** Set the ISBT128 subtype. A check in the checkbox indicates that the option is enabled.
 
@@ -566,7 +567,7 @@ The allowable decode lengths are specified by **Length1** and **Length2** as fol
 
 * **Variable length -** Decode symbols containing any number of characters:
 	* Set both Length1 and Length2 to "0" (zero)
-* **Range -** Decode a symbol with a specific length range from a-b (inclusive):
+* **Range -** Decode a symbol with a specific length range from a-b:
 	* Set Length1 to "a" (the lower bound) and set Length2 to "b" (the upper bound)
 * **Two Discrete Lengths -** Decode only symbols containing either of two specific lengths:
 	* Set Length2 as the _**shorter**_ length and Length1 as the _**longer**_ one
@@ -626,7 +627,7 @@ If the barcode is preceded by one of the prefixes above, the image is searched m
 
 **Supplemental 977 -** Enables (auto-discriminate) supplemental for UPC/EAN codes starting with 977. Disables reading of supplementals for another UPC/EAN barcode not starting with 977. Tries to scan the supplemental if present. If the supplemental scanning fails, only the main barcode is returned.
 
-**Retry Count -** Retry count for auto-discriminating for supplementals. Possible values are 2 to 20 inclusive. Note that this flag is only considered if Supplemental Mode is set to one of the following values: Supplementals Auto, Supplementals Smart, Supplementals 378-379, Supplementals 978-979, Supplementals 977 or Supplementals 414-419-434-439 (2 to 20).
+**Retry Count -** Retry count for auto-discriminating for supplementals. Possible values are 2 to 20. Note that this flag is only considered if Supplemental Mode is set to one of the following values: Supplementals Auto, Supplementals Smart, Supplementals 378-379, Supplementals 978-979, Supplementals 977 or Supplementals 414-419-434-439 (2 to 20).
 
 **Random Check Digit -** Enables random weight check digit verification. 
 

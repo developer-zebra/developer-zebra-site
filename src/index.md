@@ -324,10 +324,17 @@ menu:
       url: /help
     - title: FEEDBACK
       url: /contact
-    - icon: fa fa-comment
+    - icon: Community
       url: https://developer.zebra.com/welcome
-    - icon: fa fa-sitemap
+    - icon: Sitemap
       url: /sitemap
     - icon: fa fa-search
       url: /search
 ---
+
+<!-- 
+    - icon: fa fa-comment
+      url: https://developer.zebra.com/welcome
+    - icon: fa fa-sitemap
+      url: /sitemap
+ -->

@@ -301,7 +301,7 @@ products:
       - url: stagenow/2-2/about
         label: '2.2'
   - title: I Need Tools For...
-    description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
+    description: Not sure where to go? Click "TOOLS" above to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
     url: /help
     btn-text: Latest Guides
     image: /images/logo_techdocs.png
@@ -318,21 +318,23 @@ products:
         url: /search
 menu:
   items:
-    - title: ABOUT TECHDOCS
+    - title: ABOUT
       url: /about
-    - title: I NEED TOOLS FOR...
+    - title: TOOLS
       url: /help
-    - title: FEEDBACK
-      url: /contact
-    - icon: Community
-      url: https://developer.zebra.com/welcome
-    - icon: Sitemap
+    - title: SITEMAP
       url: /sitemap
+    - title: COMMUNITY
+      url: https://developer.zebra.com/welcome
     - icon: fa fa-search
       url: /search
 ---
 
 <!-- 
+
+    - title: FEEDBACK
+      url: /contact
+
     - icon: fa fa-comment
       url: https://developer.zebra.com/welcome
     - icon: fa fa-sitemap

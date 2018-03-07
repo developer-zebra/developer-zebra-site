@@ -304,7 +304,7 @@ products:
     description: Not sure where to go? Click "TOOLS" above to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
     url: /help
     btn-text: Latest Guides
-    image: /images/logo_techdocs.png
+    image: /images/products/mobility_dna.png
     sections:
       - title: About TechDocs
         url: /about

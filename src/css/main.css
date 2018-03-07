@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Proxima Nova:400,300,100,700,100italic,300italic,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
 /*
 Template Name: Multi
 Version: 1.0
@@ -11,7 +11,7 @@ Author URL: http://shapebootstrap.net
 body {
   padding-top: 100px;
   background: #fff;
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #64686d;
   line-height: 26px;
@@ -24,7 +24,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #272727;
 }
 a {
@@ -176,6 +176,8 @@ ul.nostyle i {
 }
 @media only screen and (min-width: 768px) {
   #main-menu.navbar-default {
+    font-family: "Proxima Nova",Helvetica,Arial, sans-serif;
+    font-size: 14px;
     background: rgba(255, 255, 255, 0.9);
     -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);

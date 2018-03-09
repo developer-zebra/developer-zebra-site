@@ -1,14 +1,16 @@
 ---
-title: EMDK For Xamarin NuGet Install [BETA]
+title: EMDK for Xamarin NuGet Install [BETA]
 layout: guide.html
-product: EMDK For Xamarin
+product: EMDK for Xamarin
 productversion: '2.7'
 ---
-The EMDK For Xamarin NuGet package includes the API libraries required for an Android application. The package must be installed and added to any Android project before the APIs will be available for use. In previous versions of EMDK For Xamarin, the EMDK APIs were distributed via a Xamarin component. Late in 2017, [Microsoft announced](https://blog.xamarin.com/hello-nuget-new-home-xamarin-components/) that it would be sunsetting support for Xamarin components and that all providers should use NuGet packages instead.
+The EMDK for Xamarin NuGet package includes the API libraries required for an building an Android application with Xamarin. The package must be installed and added to any Android project before the APIs will be available for use. 
 
-Zebra will officially support NuGet packages in a future EMDK for Xamarin version. In the meantime, the instructions below cover the Beta release of the EMDK For Xamarin NuGet package, which is based on the EMDK for Xamarin 2.7 APIs.
+In previous versions of EMDK for Xamarin, the EMDK APIs were distributed via a Xamarin component. In late 2017, [Microsoft announced](https://blog.xamarin.com/hello-nuget-new-home-xamarin-components/) that it would be sunsetting support for Xamarin components and that all providers would be required to use NuGet packages.
 
-**Review the instructions for the Visual Studio in use**:
+Zebra will officially support NuGet packages in a future EMDK for Xamarin version. In the meantime, the instructions below cover the EMDK for Xamarin NuGet package (beta), which is based on the EMDK for Xamarin 2.7 APIs.
+
+**Visual Studio versions covered these instructions**:
 
 * [Visual Studio 2017 for Windows](#visualstudio2017forwindows)
 * [Visual Studio 2017 for Mac](#visualstudio2017formac)
@@ -23,7 +25,7 @@ Zebra will officially support NuGet packages in a future EMDK for Xamarin versio
 ## Visual Studio 2017 for Windows
 
 ### Installing the NuGet Package (beta)
-1. [Download the EMDK For Xamarin NuGet file](https://github.com/zebra-stage/zebra-stage.github.io/blob/master/emdk-for-xamarin/nuget/Symbol.XamarinEMDK.2.7.0.76-rc.nupkg?raw=true) and save to a local folder.  
+1. [Download the EMDK for Xamarin NuGet file](https://github.com/zebra-stage/zebra-stage.github.io/blob/master/emdk-for-xamarin/nuget/Symbol.XamarinEMDK.2.7.0.76-rc.nupkg?raw=true) and save to a local folder.  
 
 2. From within a project, right-click the project name and select `Manage NuGet Packages...` from the menu:
 	![img](win-manage-nuget.jpg)
@@ -31,18 +33,17 @@ Zebra will officially support NuGet packages in a future EMDK for Xamarin versio
 3. Click the `Settings` (gear) icon in the upper-right corner:
 	![img](settings-icon.jpg)
 <br>
-
 4. Click the "`+`" button in the upper-right corner:
 	![img](plus_button.jpg)
 <br>
-5. Change the `Name` to "`Local`" and specify the path to where the downloaded EMDK For Xamarin NuGet file is located.<br>Then click the "`Update`" button: 
+5. Change the `Name` to "`Local`" and specify the path to the downloaded EMDK for Xamarin NuGet file. Then click the "`Update`" button: 
 	![img](add_local.jpg)
 <br>
 6. Click the "`OK`" button.
 7. Check the "`Include prerelease`" checkbox and in the upper-right corner, change the package source to "`Local`" as shown: 
 	![img](change_local.jpg)
 <br>
-8. Select the `Symbol.XamarinEMDK` package, if it is not already selected, and then click the "`Install`" button: 
+8. Select the `Symbol.XamarinEMDK` package (if not already selected) and click the "`Install`" button: 
 	![img](install-package.jpg)
 <br>
 9. When prompted, click "`OK`" to accept the changes and "`I Accept`" for the license: 
@@ -57,7 +58,7 @@ Zebra will officially support NuGet packages in a future EMDK for Xamarin versio
 
 ### Removing the NuGet Package
 
-**To remove the EMDK For Xamarin NuGet package**:
+**To remove the EMDK for Xamarin NuGet package from a Windows project**:
 
 Right-click on the `Symbol.EMDKForXamarin` package and select "`Remove`" as below:
 	![img](remove-package-win.jpg)
@@ -68,54 +69,43 @@ Right-click on the `Symbol.EMDKForXamarin` package and select "`Remove`" as belo
 ## Visual Studio 2017 for Mac
 Microsoft has replaced Xamarin Studio for Mac with [Visual Studio 2017 for Mac](https://docs.microsoft.com/en-us/visualstudio/mac/). Install the latest version before proceeding.
 
-### Installing the Beta NuGet Package
-1. [Download the EMDK For Xamarin NuGet file](https://github.com/zebra-stage/zebra-stage.github.io/blob/master/emdk-for-xamarin/nuget/Symbol.XamarinEMDK.2.7.0.76-rc.nupkg?raw=true) and save to a local folder. 
+### Installing the NuGet Package (beta)
+1. [Download the EMDK for Xamarin NuGet file](https://github.com/zebra-stage/zebra-stage.github.io/blob/master/emdk-for-xamarin/nuget/Symbol.XamarinEMDK.2.7.0.76-rc.nupkg?raw=true) and save to a local folder. 
 
 2. In the project right-click "`Packages`" folder.
-
 3. Click "`Add Packages`" as below:
 	![img](addpackage.png)
 <br>
-4. In the drop down where it says `nuget.org`, select `Configure sources`
+4. Select "`Configure sources`" from the drop-down, which initially displays `nuget.org` as below: 
 	![img](nugetorg.png)
 <br>
-5. Click the `Add` button in the lower right corner
+5. Click the "`Add`" button in the lower-right corner:
 	![img](addserver.png)
 <br>
-6. Select the folder where you saved the EMDK For Xamarin NuGet file and click the `Open` button
+6. Select the folder that contains the downloaded EMDK for Xamarin NuGet file and click the "`Open`" button:
 	![img](selectfolder.png)
 <br>
-7. Click the `Add Source` button
+7. Click the "`Add Source`" button:
 	![img](addsource.png)
 <br>
-8. You should now see the `Local` source listed. Click `Ok` to save
+8. The `Local` source should now be shown. Click `OK` to save:
 	![img](addedsource.png)
 <br>
-9. Make sure `Show pre-release packages` checkbox is selected
+9. **On the "Add Packages" screen**, select the "`Symbol.XamarinEMDK`" package (if not already selected), confirm that the "`Show pre-release packages`" checkbox is checked, and click the "`Add package`" button:
 	![img](showprerelease.png)
 <br>
-10. Select the `Symbol.XamarinEMDK` package, if it is not already selected, and then click "Add package". Accept the license when prompted.
+10. **Accept the license** when prompted:
 	![img](license.png)
 <br>
-11. You can now use the EMDK For Xamarin API's
+
+>**EMDK for Xamarin APIs are now ready for use**. 
 
 -----
 
 ### Removing the NuGet Package
 
-**To remove the EMDK For Xamarin NuGet package**:
+**To remove the EMDK for Xamarin NuGet package from a Mac project**:
 
 Right-click the `Symbol.EMDKForXamarin` package and select "`Remove`" as below:
 	![img](remove-package.png)
 <br>
-
-
-
-
-
-
-
-
-
-
-

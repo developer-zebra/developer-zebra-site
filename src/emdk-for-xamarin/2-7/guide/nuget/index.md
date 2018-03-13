@@ -1,21 +1,21 @@
 ---
-title: EMDK for Xamarin NuGet Install [BETA]
+title: EMDK for Xamarin NuGet Install (beta)
 layout: guide.html
 product: EMDK for Xamarin
 productversion: '2.7'
 ---
 The EMDK for Xamarin NuGet package includes the API libraries required for an building an Android application with Xamarin. The package must be installed and added to any Android project before the APIs will be available for use. 
 
-In previous versions of EMDK for Xamarin, the EMDK APIs were distributed via a Xamarin component. In late 2017, [Microsoft announced](https://blog.xamarin.com/hello-nuget-new-home-xamarin-components/) that it would be sunsetting support for Xamarin components and that all providers would be required to use NuGet packages.
+In previous versions of EMDK for Xamarin, the EMDK APIs were distributed through a Xamarin component. In late 2017, [Microsoft announced](https://blog.xamarin.com/hello-nuget-new-home-xamarin-components/) that it would be sunsetting support for Xamarin components and that all providers would be required to use NuGet packages.
 
-Zebra will officially support NuGet packages in a future EMDK for Xamarin version. In the meantime, the instructions below cover the EMDK for Xamarin NuGet package (beta), which is based on the EMDK for Xamarin 2.7 APIs.
+Zebra will officially support NuGet packages in a future EMDK for Xamarin release. In the meantime, the instructions below cover the EMDK for Xamarin NuGet package (beta), which is based on the EMDK for Xamarin 2.7 APIs.
 
 **Visual Studio versions covered these instructions**:
 
 * [Visual Studio 2017 for Windows](#visualstudio2017forwindows)
 * [Visual Studio 2017 for Mac](#visualstudio2017formac)
 
->**WARNING**: Do not use `Add Xamarin Component` from the `EMDK` menu shown below; it will not function as intended.
+>**WARNING**: Do not use the `Add Xamarin Component` from the `EMDK` menu shown below; it will not function as intended.
 
 ![img](xam-component-menu.jpg)
 <br>

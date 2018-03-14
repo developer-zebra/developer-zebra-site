@@ -5,6 +5,7 @@ type: parm
 order: 6
 mx: "4.3"
 devicetype: A,B
+info: HTTP/S requires MX 7.0+; FTP/S requires MX 7.1+
 parm:
   presentif: File Action is Transfer/Copy and source is remote server
   pivotal: No
@@ -13,6 +14,8 @@ parm:
 ---
 
 Used to specify the URI of the location of the file on the server. Supports HTTP, HTTPS, FTP and FTPS (FTP over TLS or SSL) protocols and basic authentication of URL-embedded credentials. See [Examples section](#examples) for syntax. 
+
+**Note: HTTP/HTTPS requires MX 7.0 or higher; FTP/FTPS requires MX 7.1 or higher**. 
 
 **Parm value input rules**:
 

@@ -120,22 +120,27 @@ Select one of the following Wizards and select Create.
 
 After completing the StageNow Config and RD Config sections of the Wizard, proceed to the next section of the Wizard.  Certain Wizards include a Deployment section, whereas others proceed to the Review section.
 
-### MX 6.X Selection
+### MX Selection
 
-Selecting MX 6.X from the MX version drop-down menu supports a Wi-Fi hotspot option for some Wizards. If you select MX 6.X for the applicable Wizards, the first Wizard window prompts you to select one of the following options from the drop-down menu:
+StageNow 2.9 supports MX versions as high as 7.1. Selecting MX 6.x or higher from the MX version drop-down menu supports a Wi-Fi hotspot option for some Wizards. If selecting MX 6.X for the applicable Wizards, the first Wizard window displays a prompt for selecting one of the following options from the drop-down menu:
 
-* The devices I wish to provision are currently not connected to a network. I will define a network with this profile that will be used for staging.
+* "The devices I wish to provision are currently not connected to a network. I will define a network with this profile that will be used for staging."
 
-* The devices I wish to provision are already connected to a network that will be used for staging. 
+* "The devices I wish to provision are already connected to a network that will be used for staging." 
 
-* I wish to use the WiFi Hotspot feature which will automatically create a network for staging using this computer's network card. 
+* "I wish to use the WiFi Hotspot feature which will automatically create a network for staging using this computer's network card." 
 
 ![img](../images/profiles/configdevice_wifi.jpg)
 
 Select an option and proceed to the instructions for the selected Wizard.
 
->Note:  
->The second and third options are only supported by Wizards that utilize the Deployment section of the tool.
+### MX Notes
+* The second and third options above are supported only by Wizards that use the Deployment section of the tool.
+* StageNow 2.9 and higher supports plug-in CSPs, accessed by selecting CSP Library from the StageNow Home screen menu (below). 
+
+![img](../images/profiles/sn_210_csp_lib.png)
+
+-----
 
 ## Deployment
 Use the Deployment section of the Wizard to specify the subset of the settings that define what the profile does, and store these settings on a deployment server. See the specific [Profile Wizard](../ProfileWizards) for instructions. 
@@ -169,42 +174,45 @@ The Review section of the Wizard allows you to verify your selections.
 
 6. Select Complete Profile to proceed to the Publish window. The profile status at the top right of the screen is now Complete.
 
-## Publish
-The Publish section of the Wizard allows you to select a staging method, test the method for profile functionality, and make the profile available to the staging operator.
+-----
 
-This window lists the profile delivery types available, with dates and times of when the profile was Last Tested, Published, and Last Staged.
+## Publish
+The Publish section of the Wizard permits selection of a staging method, testing of the method for profile functionality, and making the profile available to the staging operator. This window lists the available profile delivery types, and displays dates and times when the profile was Last Tested, Published and Staged.
 
 ### Staging a Bar Code Profile
 To stage a bar code profile:
 
-1. Select the Barcode tab. 
+1. Select the Barcode tab: 
 
-    ![img](../images/wifi_publish.jpg)
+    ![img](../images/sn210_publish.png)
 
-2. To create a direct connection via hotspot instead of using the configured staging network, select the Yes, use Wifi Direct checkbox. This allows staging without requiring an external Wi-Fi network and with a single staging bar code, and eliminates the need for reprinting bar codes if there is a profile change.
+2. To create a direct connection via hotspot instead of using the configured staging network, check the "Yes, use WiFi Hotspot" checkbox. This allows staging with a single staging barcode without requiring an external Wi-Fi network, and eliminates the need for reprinting barcodes if there is a profile change.
 
-3. Select the checkbox for PDF417 or Linear to specify the type of bar code for deployment, or choose Select All to select all bar code types.
+3. To stage devices from content stored on a server, check the "Host the Deployment Package Outside of StageNow FTP Server" and enter the server address and fully qualified file name (including path, see image above) of server-based content using the Source URI syntax. For more information and examples of this syntax, see the [Source URI](../csp/file/#source-uri) and [Examples](../csp/file/#examples) sections of the [File Manager guide](../csp/file). This feature supports HTTP, HTTPS, FTP and FTPS (FTP over TLS or SSL) protocols and basic authentication of URL-embedded credentials (**HTTP/HTTPS requires MX 7.0 or higher on device; FTP/FTPS requires MX 7.1 or higher**). 
 
-4. Select Test to test the functionality of the profile before publishing. This generates a PDF of test staging bar code(s). While this step is optional, it is important to determine whether the profile functions as intended before making it available to the operator(s) for staging devices.
+4. Select the checkbox for PDF417 or Linear to specify the type of barcode for deployment, or choose Select All to select all bar code types.
+
+5. Select Test to test the functionality of the profile before publishing. This generates a PDF of test staging bar code(s). While this step is optional, it is important to determine whether the profile functions as intended before making it available to the operator(s) for staging devices.
 
     ![img](../images/Publish_BarCodeTab_Test.jpg)
 
-5. If the staging material functions properly, select Publish to publish the material for operator use. Note that the administrator can choose to publish only certain types of bar codes that were successfully tested, and publish the others when they are ready.
+6. If the staging material functions properly, select "Publish" to publish the material for operator use. Note that the administrator can choose to publish only certain types of bar codes that were successfully tested, and publish the others when they are ready.
 
-6. Enter staging instructions for the operator.
+7. Enter staging instructions for the operator.
 
     ![img](../images/ConnectNetwork_Publish_Instructions.jpg)
 
-7. Select Publish Now.
+8. Select "Publish Now" to continue.
 
     ![img](../images/Publish_BarCodeTab_published.jpg)
 
-8. To make the profile available for staging, select Stage. This generates a PDF of staging bar code(s) that devices can scan for staging. See [Device Staging](../stageclient).
+9. To make the profile available for staging, select "Stage" to generate a PDF of staging bar code(s) that devices can scan for staging. See [Device Staging](../stageclient).
 
-9. To export the profile for an MDM or for StageNow, select the Export For MDM or Export For StageNow button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
+10. To export the profile for consumption by StageNow or an MDM, select the "Export For StageNow" or "Export For MDM" button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
 
+**Select "Unpublish" to unpublish a profile** and remove operator access. 
 
-To unpublish a profile to remove operator access, select Unpublish.
+-----
 
 ### Staging an Audio Profile
 To stage an audio profile:

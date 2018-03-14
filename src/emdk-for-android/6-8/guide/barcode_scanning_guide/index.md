@@ -82,49 +82,39 @@ EMDK must be opened before getting the `BarcodeManager` object:
         :::java
         BarcodeManager barcodeManager = (BarcodeManager)emdkManager.getInstance(FEATURE_TYPE.BARCODE);
 
-Before exiting, release the `BarcodeManager` object: 
+Before exiting, release the `BarcodeManager` object. 
 
 -----
 
 ### Getting Scanner
 
-There are two options here:
+There are two options for taking control of a scanner:
 
-1.  **Get Scanner using DeviceIdentifier without device enumeration**
+1.  **Get Scanner using** `DeviceIdentifier` **_without_** device enumeration:
 
-	Use the BarcodeManager.getDevice(DeviceIdentifier deviceIdentifier) API
-
-	If the specified Device Identifier is not supported on the target platform, call to “getDevice” will return null.
+	Use the `BarcodeManager.getDevice(DeviceIdentifier deviceIdentifier)` API call:
 
         :::java
         Scanner scanner = barcodeManager.getDevice(DeviceIdentifier.BLUETOOTH_IMAGER_RS6000);
 
-2.  **Get Scanner using ScannerInfo from device enumeration**
+    If the specified `DeviceIdentifier` is not supported on the target platform, a call to `getDevice` will return null.
 
-    Use the BarcodeManager.getSupportedDevicesInfo () first and then pass one of the received ScannerInfo objects to BarcodeManager.getDevice(ScannerInfo scnInfo)
+2.  **Get Scanner using** `ScannerInfo` **_with_** device enumeration:
+
+    Use the `BarcodeManager.getSupportedDevicesInfo()` method first. Then pass one of the received `ScannerInfo` objects to `BarcodeManager.getDevice(ScannerInfo scnInfo)`:
 
         :::java
         
-        List<ScannerInfo> supportedDevList =
-
-        barcodeManager.getSupportedDevicesInfo();
-        
+        List<ScannerInfo> supportedDevList = barcodeManager.getSupportedDevicesInfo();
         Scanner scanner = null;
-        
+
         Iterator<ScannerInfo> it = deviceList.iterator();
-
-        while(it.hasNext()) {
-        
-        ScannerInfo scnInfo = it.next();
-
-        if(scnInfo.getDeviceIdentifier()==DeviceIdentifier.BLUETOOTH_IMAGER_RS6000){
-        
-        scanner = barcodeManager.getDevice(scnInfo);
-
-        break;
-
-        }
-
+            while(it.hasNext()) {
+            ScannerInfo scnInfo = it.next();
+            if(scnInfo.getDeviceIdentifier()==DeviceIdentifier.BLUETOOTH_IMAGER_RS6000){        
+            scanner = barcodeManager.getDevice(scnInfo);
+            break;
+            }
         }
 
 -----
@@ -147,7 +137,7 @@ An app can modify the `ScannerConfig` object returned by `Scanner.getconfig`. Th
 
 Setting scanner configurations is not allowed while a read is pending. If a read is pending, the developer must call the `Scanner.cancelRead()` and must wait for the idle status through the register status listener before setting the configuration.
 
-The code below shows how to disable the Code 128 symbology and set beam timer for imager:
+The code below disables the Code 128 symbology and sets beam timer for the imager:
 
         :::java
         try {

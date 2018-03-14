@@ -3,18 +3,16 @@ publish: true
 title: Document Capture
 description: "This sample application will show how the Simulscan API's can be used to capture multiple types of data from paper forms."
 downloads:
-  - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_6/archive/SimulScanSample1.zip'
+  - title: Sample Projects
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/archive/master.zip'
 sources:
-  - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_6/tree/SimulScanSample1'
+  - title: Github Repo
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8'
 features:
   - Profile Manager
   - Simulscan
   - Java APIs
-devices:
-  - TC55KK
-  - TC75KK
+
 image: 1.png
 screenshots:
   - 1.png

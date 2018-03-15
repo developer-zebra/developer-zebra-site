@@ -127,6 +127,8 @@ The `Scanner.enable()` method is an async call and exception will be thrown if a
 
 Issuing any read request while the previous read is pending will result in an error. Zebra recommends waiting for the `IDLE` status from the application before issuing the next command to read barcodes.
 
+-----
+
 ### Configuring the Scanner
 
 The EMDK Barcode API provides three categories of scanner configuration to control the behavior of the scanner. The scanner configurations are "Decoder Parameters," "Reader Parameters" and "Scan Parameters." 

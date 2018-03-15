@@ -5,77 +5,39 @@ product: EMDK For Android
 productversion: '6.8'
 ---
 
-##Barcode API
+## Overview
 
 The EMDK Barcode API provides applications with the ability to read numerous barcode label formats using a variety of built-in and pluggable cameras, imagers, lasers and scanners. For the full list, see [scanners supported by EMDK for Android](../about/#devicessupported).
 
-### API Notes
+### Barcode API Notes
 
-The `BarcodeManager` is the primary object to enumerate the supported scanner devices and access the scanner devices to read barcodes.
+The `BarcodeManager` is the primary object to enumerate the supported scanner devices and access scanners for reading barcodes.
 
-**Points to consider during application design**:
+**Points to consider when designing a barcode scanning app**:
 
-* For scanning barcodes, an app should use either the barcode APIs or the DataCapture feature of ProfileManager. Apps cannot access both at the same time. 
+* **Apps should use either barcode APIs or DataCapture** (a feature of the ProfileManager); an app cannot use both at the same time. 
 
-* The EMDKManager > BarcodeManager takes precedence over the DataCapture feature of the ProfileManager.
+* **The** `EMDKManager` > `BarcodeManager` **takes precedence** over DataCapture. 
 
-* The EMDKManager > BarcodeManager must be released before another application can use it.
+* **Control of scanning hardware is exclusive**. When a scanning app takes control of a scanner, it must release it when quitting or going to the background before other apps can access any scanner.
 
-* When a scanner is disconnected and reconnected, calling any method on the barcode object will result in an `INVALID_OBJECT` error. As a remedy, register the application for connection notifications so it can be notified of reconnections and programmatically re-initialize the scanner.
+* **Disabling the scanner immediately cancels any pending read in progress** and closes the session, giving other applications access to scanners. 
 
-* If a Bluetooth Scanner is not paired, enabling that scanner will automatically launch the pairing utility, prompting the user to scan a barcode (displayed on the mobile device) to pair the scanner with the mobile device.
+* **If** `BarcodeManager` **is used in an app, it must be explicitly released** before any other application (including DataWedge) can access scanners.
 
-* Control of scanning hardware is exclusive. When a scanning app takes control of a scanner, it must release it when quitting or going to the background before other apps can access that scanner.  
+* **When a scanner is disconnected and reconnected**, calling any method on the barcode object will result in an `INVALID_OBJECT` error. As a remedy, register the application for connection notifications so it can be notified of reconnections and programmatically re-initialize the scanner, when necessary.
 
-* Disabling the scanner cancels the pending read in progress and closes the session, allowing others applications to use the device. 
-
-**To disable the scanner, use the code below**:
-
-        :::java
-        // Release the barcode manager resources:
-        //
-            if (emdkManager != null) {
-                emdkManager.release(FEATURE_TYPE.BARCODE);
-            }
-
-<!-- Full code sample provided by engineering:
-        :::java
-    // De-initialize scanner
-    //
-    if (scanner != null) {
-        try {
-            scanner.cancelRead();
-            scanner.disable();
-
-            scanner.removeDataListener(this);
-            scanner.removeStatusListener(this);
-
-            scanner.release();
-
-            scanner = null;
-        } catch (Exception e) {
-
-            textViewStatus.setText("Status: " + e.getMessage());
-        }
-    }
-
-    // Remove connection listener
-    //
-    if (barcodeManager != null) {
-        barcodeManager.removeConnectionListener(this);
-        barcodeManager = null;
-    }
-
-    // Release the barcode manager resources
-    //
-    if (emdkManager != null) {
-        emdkManager.release(FEATURE_TYPE.BARCODE);
-    }
- -->
+* **If a Bluetooth Scanner is not paired**, enabling that scanner will automatically launch the pairing utility, prompting the user to scan a barcode (displayed on the mobile device) to pair the scanner with the mobile device.
 
 -----
 
-### Getting Barcode Manager
+## Using the Barcode API
+
+The guidance below is typical of many scanarios, but the process can vary depending individual needs. 
+
+-----
+
+### 1. Get Barcode Manager
 
 EMDK must be opened before getting the `BarcodeManager` object: 
 
@@ -86,7 +48,7 @@ Before exiting, release the `BarcodeManager` object.
 
 -----
 
-### Getting Scanner
+### 2. Get Scanner
 
 There are two options for taking control of a scanner:
 
@@ -119,27 +81,31 @@ There are two options for taking control of a scanner:
 
 -----
 
-### Using Scanner
+### 3. Use Scanner
 
-The scanner must be enabled first to open a session with the hardware. If scanner is already enabled by another application, this will throw an exception with error as "scanner in use." Zebra recommends disabling the scanner when finished using it. It will otherwise remain locked by the current application and will be unavailable other applications that want to use it.
+The scanner must be enabled first to open a session with the hardware. If any scanner is enabled by another application, an exception will occur with the "scanner in use" error. Zebra recommends disabling the scanner when finished using it. Scanners otherwise remain locked by the application and are unavailable to other applications.
 
-The `Scanner.enable()` method is an async call and exception will be thrown if any error occurs during a request. After the scanner is successfully enabled, the `IDLE` status event is sent to the application using a registered status listener. If an error occurs while enabling the scanner, the `ERROR` status is sent to application using the registered status listener.
+The `Scanner.enable()` method is an asynchronous call and an exception will be thrown if any error occurs during a request. After the scanner is successfully enabled, the `IDLE` status event is sent to the application using a registered status listener. If an error occurs while enabling the scanner, the `ERROR` status is sent to application using the registered status listener.
 
-Issuing any read request while the previous read is pending will result in an error. Zebra recommends waiting for the `IDLE` status from the application before issuing the next command to read barcodes.
+Issuing any read request while the previous read is pending will result in an error. Zebra recommends waiting for the `IDLE` status from the application before issuing subsequent commands to read barcodes.
 
 -----
 
-### Configuring the Scanner
+### 4. Configure the Scanner
 
-The EMDK Barcode API provides three categories of scanner configuration to control the behavior of the scanner. The scanner configurations are "Decoder Parameters," "Reader Parameters" and "Scan Parameters." 
+The EMDK Barcode API provides three categories of scanner configuration to control the behavior of the scanner: 
+
+* Decoder Parameters
+* Reader Parameters 
+* Scan Parameters 
 
 An app can get current settings by calling the `Scanner.getConfig()` method after the scanner is successfully enabled. This method returns a `ScannerConfig` object.
 
-An app can modify the `ScannerConfig` object returned by `Scanner.getconfig`. The modified `ScannerConfig` object must be set by calling `Scanner.setConfig(ScannerConfig)` before the settings will take effect. The user must call the `Scanner.setConfig(ScannerConfig)` only when the scanner is enabled and in idle state. The modified settings applied will persist until the scanner object is released. This means that when an app calls `enable()` after `disable()`, all the latest configuration parameter values will be set automatically.  
+An app can modify the `ScannerConfig` object returned by `Scanner.getconfig`. The modified `ScannerConfig` object must be set by calling `Scanner.setConfig(ScannerConfig)` before the settings will take effect. The user must call the `Scanner.setConfig(ScannerConfig)` only when the scanner is enabled and in an idle state. The modified settings applied will persist until the scanner object is released. This means that when an app calls `enable()` after `disable()`, all the latest configuration parameter values are set automatically.  
 
-Setting scanner configurations is not allowed while a read is pending. If a read is pending, the developer must call the `Scanner.cancelRead()` and must wait for the idle status through the register status listener before setting the configuration.
+Setting scanner configurations is not allowed while a read is pending. If a read is pending, the developer must call the `Scanner.cancelRead()` and wait for the idle status through the register status listener before setting the configuration.
 
-The code below disables the Code 128 symbology and sets beam timer for the imager:
+The sample code below disables the Code 128 symbology and sets the beam timer for the imager:
 
         :::java
         try {
@@ -172,7 +138,7 @@ Below is an example of how that should be done:
 
 -----
 
-### Decoder Parameters
+#### Set Decoder Parameters
 
 The `ScannerConfig.DecoderParams` class provides an interface for the developer to enable or disable decoder symbologies, such as Code39, Code128, Code93, UPCEAN, etc.  
 
@@ -183,7 +149,7 @@ The following code disables the Code128 symbology:
 
 -----
 
-### Reader Parameters
+#### Set Reader Parameters
 
 The `ScannerConfig.ReaderParams` class provides an interface for configuring scanner engine-specific settings for `LaserSpecific`, `ImagerSpecific` and `CameraSpecific` related parameters such as picklist, aim type, aim timer, beam timer, illumination mode, etc.
 
@@ -199,7 +165,7 @@ The following code shows how to modify the beam timer for different scanner engi
 
 -----
 
-### Scan Parameters
+#### Set Scan Parameters
 
 The `ScannerConfig.ScanParams` class provides an interface for configuring scanner parameters such as decode LED time, vibrate on successful decode, beep on successful decode, beep audio file, etc. 
 
@@ -207,6 +173,21 @@ The following code sets the decode LED time to 75:
 
         :::java
         config.scanParams.decodeLEDTime = 75;
+
+-----
+
+### 5. Releasing the Scanner
+
+Control of scanning hardware is exclusive. When a scanning app takes control of a scanner, it must release it when quitting or going to the background before other apps can access that scanner. Disabling the scanner immediately cancels any pending read in progress and closes the session, giving other applications access to scanners. 
+
+**To disable the scanner, use the code below**:
+
+        :::java
+        // Release the barcode manager resources:
+        //
+            if (emdkManager != null) {
+                emdkManager.release(FEATURE_TYPE.BARCODE);
+            }
 
 -----
 

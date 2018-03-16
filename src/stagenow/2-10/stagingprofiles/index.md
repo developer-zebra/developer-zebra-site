@@ -21,13 +21,13 @@ The staging administrator uses the provided StageNow Wizards to configure settin
 
 ![img](../images/banner.jpg)
 
-* [Config](../stagingprofiles?Configure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow bar codes, NFC tags, and/or an audio file.  The setting information entered in the RD Config section is stored within RD bar codes.  Note that the RD Config section only appears if you turned on Legacy Mode in the [Settings](../gettingstarted?Settings) screen. The amount of settings created in this section affect the number of bar codes and/or NFC tags that the system generates later.
+* [Config](../stagingprofiles?Configure) (StageNow and RD) - The setting information entered in the StageNow Config section is stored within StageNow barcodes, NFC tags, and/or an audio file.  The setting information entered in the RD Config section is stored within RD barcodes.  Note that the RD Config section only appears if you turned on Legacy Mode in the [Settings](../gettingstarted?Settings) screen. The amount of settings created in this section affect the number of barcodes and/or NFC tags that the system generates later.
 
-* [Deployment](../stagingprofiles?Deployment) - This information includes settings that do not reside in StageNow bar codes, NFC tags, or audio file, and is represented as a file on the StageNow deployment server and so requires network connection. Reading the bar code or NFC tag, or playing an audio file created in the Config section connects the client device to the server and points to this file for deployment. Note that this section does NOT appear in the Connect Network, Manage Device Security, and Wipe a Device Wizards.
+* [Deployment](../stagingprofiles?Deployment) - This information includes settings that do not reside in StageNow barcodes, NFC tags, or audio file, and is represented as a file on the StageNow deployment server and so requires network connection. Reading the barcode or NFC tag, or playing an audio file created in the Config section connects the client device to the server and points to this file for deployment. Note that this section does NOT appear in the Connect Network, Manage Device Security, and Wipe a Device Wizards.
 
 * [Review](../stagingprofiles?Review) - The Review section presents all setting information entered in the Config and Deployment sections in a single page. The administrator can add comments, complete the profile, or return to any setting to update it.
 
-* [Publish](../stagingprofiles?Publish) - The Publish section allows the administrator to select the method of delivery (linear bar codes, PDF417 bar codes, NFC tags, or Audio file) for the completed profile, as well as test, publish, and stage the profile.
+* [Publish](../stagingprofiles?Publish) - The Publish section allows the administrator to select the method of delivery (linear barcodes, PDF417 barcodes, NFC tags, or Audio file) for the completed profile, as well as test, publish, and stage the profile.
 
 ### Profile States
 As you progress through the Wizard, the top right corner of the window reflects the state of the profile: 
@@ -42,7 +42,7 @@ As you progress through the Wizard, the top right corner of the window reflects 
 
 * Published - The profile is visible to the operator.
 
-* Staged - The operator has acquired the profile, i.e., generated bar codes, exported data to write to an NFC tag, or downloaded the audio file for staging the device.
+* Staged - The operator has acquired the profile, i.e., generated barcodes, exported data to write to an NFC tag, or downloaded the audio file for staging the device.
 
 ### Navigating the Wizard
 Following are tips for navigating through the Wizard.
@@ -177,7 +177,7 @@ The Review section of the Wizard allows you to verify your selections.
 
 4. Enter the description and select Save.
 
-5. Encryption for staging data is selected by default in order to protect the sensitive data encoded in the profile bar code or NFC tag. See [StageNow Encryption](../gettingstarted?StageNow%20Encryption)  for more information. De-select this checkbox if necessary to save space.
+5. Encryption for staging data is selected by default in order to protect the sensitive data encoded in the profile barcode or NFC tag. See [StageNow Encryption](../gettingstarted?StageNow%20Encryption)  for more information. De-select this checkbox if necessary to save space.
 
 6. Select Complete Profile to proceed to the Publish window. The profile status at the top right of the screen is now Complete.
 
@@ -186,8 +186,8 @@ The Review section of the Wizard allows you to verify your selections.
 ## Publish
 The Publish section of the Wizard permits selection of a staging method, testing of the method for profile functionality, and making the profile available to the staging operator. This window lists the available profile delivery types, and displays dates and times when the profile was Last Tested, Published and Staged.
 
-### Staging a Bar Code Profile
-To stage a bar code profile:
+### Staging a Barcode Profile
+To stage a barcode profile:
 
 1. Select the Barcode tab: 
 
@@ -197,13 +197,13 @@ To stage a bar code profile:
 
 3. To stage devices from content stored on a server, check the "Host the Deployment Package Outside of StageNow FTP Server" and enter the server address and fully qualified file name (including path, see image above) of server-based content using the Source URI syntax. For more information and examples of this syntax, see the [Source URI](../csp/file/#source-uri) and [Examples](../csp/file/#examples) sections of the [File Manager guide](../csp/file). This feature supports HTTP, HTTPS, FTP and FTPS (FTP over TLS or SSL) protocols and basic authentication of URL-embedded credentials (**HTTP/HTTPS requires MX 7.0 or higher on device; FTPS requires MX 7.1 or higher**). 
 
-4. Select the checkbox for PDF417 or Linear to specify the type of barcode for deployment, or choose Select All to select all bar code types.
+4. Select the checkbox for PDF417 or Linear to specify the type of barcode for deployment, or choose Select All to select all barcode types.
 
-5. Select Test to test the functionality of the profile before publishing. This generates a PDF of test staging bar code(s). While this step is optional, it is important to determine whether the profile functions as intended before making it available to the operator(s) for staging devices.
+5. Select Test to test the functionality of the profile before publishing. This generates a PDF of test staging barcode(s). While this step is optional, it is important to determine whether the profile functions as intended before making it available to the operator(s) for staging devices.
 
     ![img](../images/Publish_BarCodeTab_Test.jpg)
 
-6. If the staging material functions properly, select "Publish" to publish the material for operator use. Note that the administrator can choose to publish only certain types of bar codes that were successfully tested, and publish the others when they are ready.
+6. If the staging material functions properly, select "Publish" to publish the material for operator use. Note that the administrator can choose to publish only certain types of barcodes that were successfully tested, and publish the others when they are ready.
 
 7. Enter staging instructions for the operator.
 
@@ -213,7 +213,7 @@ To stage a bar code profile:
 
     ![img](../images/Publish_BarCodeTab_published.jpg)
 
-9. To make the profile available for staging, select "Stage" to generate a PDF of staging bar code(s) that devices can scan for staging. See [Device Staging](../stageclient).
+9. To make the profile available for staging, select "Stage" to generate a PDF of staging barcode(s) that devices can scan for staging. See [Device Staging](../stageclient).
 
 10. To export the profile for consumption by StageNow or an MDM, select the "Export For StageNow" or "Export For MDM" button. See [Exporting Staging Profiles](../stagingprofiles?Exporting%20Staging%20Profiles).
 
@@ -312,7 +312,7 @@ To edit a profile:
 
 5. Select Continue and proceed through the Wizard.
 
-6. In the Review section, select Complete Profile to move to the Publish section to generate updated bar codes, NFC tags, or audio files.
+6. In the Review section, select Complete Profile to move to the Publish section to generate updated barcodes, NFC tags, or audio files.
 
 -----
 

@@ -3,11 +3,11 @@ publish: true
 title: Rebooting The Device
 description: 'This sample application will allow you to set the power state to "Suspend" (sleep mode) or "Reset" (reboot).'
 downloads:
-  - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_6/archive/ProfilePowerMgrSample1.zip'
+  - title: Sample Projects
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/archive/master.zip'
 sources:
-  - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_6/tree/ProfilePowerMgrSample1'
+  - title: Github Repo
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8'
 features:
   - Profile Manager
   - Power Manager

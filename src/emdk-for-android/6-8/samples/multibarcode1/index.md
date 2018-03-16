@@ -3,11 +3,11 @@ publish: true
 title: Multi-barcode Scanning
 description: 'This sample application scans multiple barcodes simultaneously based on selected scanner device, trigger type and a few decoder Decoder Parameters.'
 downloads:
-  - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/archive/MultiBarcodeSample1.zip'
+  - title: Sample Projects
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/archive/master.zip'
 sources:
-  - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/tree/MultiBarcodeSample1'
+  - title: Github Repo
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8'
 features:
   - Profile Manager
   - Barcode

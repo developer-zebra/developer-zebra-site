@@ -3,12 +3,11 @@ publish: true
 title: UDI Label Scanning
 description: "This sample application will show how the Barcode API's UDI Label scanning features can be used to scan Barcodes in a UDI Label."
 downloads:
-  - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_6/archive/SimulScanSample1.zip'
+  - title: Sample Projects
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/archive/master.zip'
 sources:
-  - title: Android Studio Project
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_6/tree/SimulScanSample1'
-
+  - title: Github Repo
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8'
 image: 1.png
 screenshots:
   - 1.png

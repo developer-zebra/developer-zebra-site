@@ -141,5 +141,5 @@ The incremental update is used to perform OS updates on multiple devices based o
 18. Select whether to provide an error message if any conditional update fails:
     ![img](../../images/profiles/OSUpdate_6_Review.jpg)
 
-19. Select "Continue" to apply the update and proceed to the [Review window](../../stagingprofiles?Review):
+19. Select "Complete Profile" to apply the update and proceed to the [Review window](../../stagingprofiles?Review). 
 

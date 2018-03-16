@@ -184,7 +184,7 @@ To stage a bar code profile:
 
 1. Select the Barcode tab: 
 
-    ![img](../images/sn210_publish.png)
+    ![img](../images/wifi_publish.jpg)
 
 2. To create a direct connection via hotspot instead of using the configured staging network, check the "Yes, use WiFi Hotspot" checkbox. This allows staging with a single staging barcode without requiring an external Wi-Fi network, and eliminates the need for reprinting barcodes if there is a profile change.
 

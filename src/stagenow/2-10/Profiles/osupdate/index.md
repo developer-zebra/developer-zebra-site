@@ -30,7 +30,7 @@ Use this Wizard to perform an OS update on a device. The OS Update action applie
 
     **Note**: This wizard includes a Deployment section. Deployment requires that the host computer and the device(s) are on the same network. 
 
-6. If offered, select whether to connect to this network using the Rapid Deployment (RD) Client. Note that the RD Config section appears only if Legacy Mode is enabled in the [Settings](../../gettingstarted?Settings) screen. Click "Yes" for devices that don't include the StageNow Client see [Rapid Deployment (RD) Client](../../stageclient?Rapid%20Deployment%20Client) for more information).
+6. If offered, select whether to connect to this network using the Rapid Deployment (RD) Client. Note that the RD Config section appears only if Legacy Mode is enabled in the [Settings](../../gettingstarted?Settings) screen. Click "Yes" for devices that don't include the StageNow Client (see [Rapid Deployment (RD) Client](../../stageclient?Rapid%20Deployment%20Client) for more information).
 
 7. If selecting "Yes," choose whether to set up Wi-Fi options and/or Wi-Fi profiles (see [Setting Types > Wifi mgr](../../csp/wifi)):
 
@@ -39,18 +39,20 @@ Use this Wizard to perform an OS update on a device. The OS Update action applie
 
 8. Choose a method for performing the OS update, and then click "Continue" to proceed:
 
-    * Select "No, I would like to Download the file" to push an OS update `.zip` file to the device.
-    * Select "Yes, I want to Apply the file" to use an OS update `.zip` file that already resides on the device.
+    * **To push an OS update** `.zip` **file to the device**, select "No, I would like to Download the file."
+    * **To use an OS update** `.zip` **file that already resides on the device**, select "Yes, I want to Apply the file."
 
-9. If selecting No: 
+9. **If selecting "No..."** 
 
     a. Select whether to prevent Wi-Fi from turning off while downloading (see [Setting Types > Wi-Fi](../../csp/wifi) for more information): 
 
     ![img](../../images/profiles/OSupdate_sleep.jpg)
+<br>
 
     b. Enter the information for the `.zip` file (see [Setting Types > File](../../csp/file) for more information):
 
     ![img](../../images/profiles/OSupdate_setting.jpg)
+<br>
 
     c. Select whether to allow Wi-Fi to turn off after downloading (see [Setting Types > Wi-Fi](../../csp/wifi) for more information):
 
@@ -103,6 +105,7 @@ The incremental update is used to perform OS updates on multiple devices based o
 7. In the Deployment section, select "Incremental Update" from the update type drop-down menu.
     **Note**: If selecting Full OS Update, **go to Step 8 of the [previous section](#performosupdate)**.
    ![img](../../images/profiles/OSUpdate_6_UpdateType.jpg)
+<br>
 
 8. Select "Continue" on the "Begin" window to define update conditions for the first device:
 
@@ -110,15 +113,15 @@ The incremental update is used to perform OS updates on multiple devices based o
 <br>
 
 9. Define the update conditions and click "Continue" (see the [Condition Manager guide](../../csp/condition/) for more information). <br>
-   The boolean data type (highlighted below) checks for true/false conditions such as whether the device has a valid IP address:  
+   **The boolean data type** (highlighted below) checks for true/false conditions such as whether the device has a valid IP address:  
    ![img](../../images/profiles/OSUpdate_6_Incremental2.jpg)
 <br>
 
-   The Integer data type checks for numerical conditions such as battery charge level: 
+   **The Integer data type** checks for numerical conditions such as battery charge level: 
    ![img](../../images/profiles/sn_OS_incr1_upl.png)
 <br>
 
-   The String data type checks for constants such as device model number:  
+   **The String data type** checks for constants such as device model number:  
    ![img](../../images/profiles/sn_OS_incr_upl.png)
 <br>
 
@@ -127,12 +130,12 @@ The incremental update is used to perform OS updates on multiple devices based o
     ![img](../../images/profiles/OSupdate_sleep.jpg)
 <br>
 
-11. Enter information for the first OS update file. Select "Yes" to add information for additional files.
+11. Enter information for the first OS update file. Select "Yes" to add information for additional files:
 
     ![img](../../images/profiles/OSUpdate_6_DownloadFile.jpg)
 <br>
 
-12. When finished entering file information, select "No" and click Continue.
+12. When finished entering file information, select "No" and click "Continue" to proceed.
 
 13. **IMPORTANT**: If applying multiple OS update packages at one time, a `.upl` file must also be downloaded to the device (see [Setting Types > File](../../csp/file) for more information).
 

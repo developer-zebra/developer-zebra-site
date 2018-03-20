@@ -70,7 +70,7 @@ Use this Wizard to perform an OS update on a device. The OS Update action applie
 
 ## Perform Incremental OS Update
 
-The incremental update is used to perform OS updates on multiple devices based on defined conditions present on specific target devices. For example, if seeking to perform an operation only on TC51 devices, a condition could be defined that checks for the "TC51" in the Product Model field. For more information, see the [Condition Manager guide](../../csp/condition/).  
+The incremental update is used to perform OS updates on multiple devices based on defined conditions present on specific target devices. For example, if seeking to perform an operation only on TC51 devices, a condition could be defined that checks for the string "TC51" in the Product Model field. For more information, see the [Condition Manager guide](../../csp/condition/).  
 
 > **Incremental OS Update is supported only on devices with MX 6.0 or higher**.
 

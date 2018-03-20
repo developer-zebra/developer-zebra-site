@@ -9,31 +9,29 @@ productversion: '2.5'
 
 ActiveEdge can be configured through:
 
-* An ActiveEdge settings app that is built into the device 
-* XML file configured by a system admin or MDM solution
+* The ActiveEdge settings panel  
+* An XML file configured by a system admin or MDM solution
 
-> Note: once an admin deploys an XML based configuration, the local settings app will be in read-only mode. Also, the local settings app may not display all available settings that the administrator has configured.
-  
+> Note: Once an XML-based configuration is deployed, the settings panel changes to read-only mode, and might not display all settings.
+
 -----
 
-### ActiveEdge Settings App 
+### ActiveEdge Settings Panel
 
 <img alt="" style="height:350px" src="img1.jpg"/>
 
-After launching the ActiveEdge settings application, you will be able to configure the behavior of ActiveEdge and whether it is running or not.
+After launching the ActiveEdge settings panel, ActiveEdge behavior can be configured regardless of whether it the app is running.
 
-The following options are available through the ActiveEdge settings application:
+The following settings can be configured:
 
-* Start or Stop ActiveEdge Service - Touch to start/stop the ActiveEdge Service to enable/disable the
-ActiveEdge Zone.
-* Start ActiveEdge Service on Boot Up - Automatically start the ActiveEdge Service when the device boots
-up. the Service is always running and always available.
-* Left ActiveEdge Zone - Configure the left ActiveEdge Zone to Scanner, Drawer, or None.
-* Right ActiveEdge Zone - Configure the right ActiveEdge Zone to Scanner, Drawer, or None.
+* Start or Stop ActiveEdge Service - Touch to start/stop the ActiveEdge Service to enable/disable the ActiveEdge Zone.
+* Start ActiveEdge Service on Boot Up - Automatically start the ActiveEdge Service when the device boots up. The Service is always running and always available.
+* Left ActiveEdge Zone - Configure the left ActiveEdge Zone to Scanner, Drawer or None.
+* Right ActiveEdge Zone - Configure the right ActiveEdge Zone to Scanner, Drawer or None.
 * Select Apps for Drawer - Select up to three applications to appear on the Drawer.
 * Restore - Restore the settings to the factory defaults.
 
-> Select the Settings menu : About to open the About ActiveEdge window, which displays the version number.
+> Select the Settings menu: About to open the About ActiveEdge window, which displays the version number.
 
 -----
 

@@ -139,7 +139,7 @@ This parameter may contain an application name of (1) application that should be
 Format of string: `[package name]`
 Ex: `com.android.browser`
 
-> Note: this setting can be saved even if the current Active Edge Zone is not configured for Launching an Application.
+> Note: this setting can be saved even if the current ActiveEdge Zone is not configured for Launching an Application.
 
 -----
 
@@ -164,17 +164,17 @@ Ex:
 When ActiveEdge receives the intent it will:
 
 1.	Open the File
-	* The XML file will be opened and validated to be valid XML. If the XML is not valid then a message will be logged to the system log and the Active Edge Result Intent will be broadcasted (see below for details on Active Edge Result Intent)
+	* The XML file will be opened and validated to be valid XML. If the XML is not valid then a message will be logged to the system log and the ActiveEdge Result Intent will be broadcasted (see below for details on ActiveEdge Result Intent)
 2.	Parse the File
-	* If any elements are present that are not expected, then an error will be reported via the Active Edge Result Intent. The processing will then be stopped and no effects on the AE Service will occur.
+	* If any elements are present that are not expected, then an error will be reported via the ActiveEdge Result Intent. The processing will then be stopped and no effects on the AE Service will occur.
 	* If the file passes both the XML validity test and AE XML config test, then the settings will be saved.
 	Besides malformed XML parameters the following conditions will result in “invalid XML”:
 		* LeftZone and Right Zone both set to Drawer (the end result of the settings will be used to verify, not what is in the XML file)
 3.	Save the settings from the XML File
 	* The settings will only be saved if all XML is valid. The XML can contain partial settings and only the settings that are included will be effected. Each XML parameter has a corresponding Android Shared Preferences reference that both the AE Service and AE Settings app uses.
-4.	Change the Active Edge behavior as needed
+4.	Change the ActiveEdge behavior as needed
 	* After an XML is processed successfully, the ActiveEdge Settings UI will be locked and not editable from an end user. It can only be unlocked if an admin sends a Restore to factory defaults.
-5.	Send the Active Edge Result Intent
+5.	Send the ActiveEdge Result Intent
 	* When the processing is complete (or an error occurs during processing), an Broadcast Intent will be sent so that any MDM application can be notified of the results:
 	* **Intent Type:** Broadcast 
 	* **Action Name:** com.symbol.activeedge

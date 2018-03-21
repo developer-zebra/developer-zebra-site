@@ -7,8 +7,9 @@ productversion: '2.5'
 
 ## Overview
 
-Zebra devices that ship with ActiveEdge “easy activation points” built into the right and left side of the device allows the user to quickly access applications or perform tasks like barcode scanning very quickly. Typically, a user would be holding the device with one hand and then move either their thumb or finger to the "activation points” that have been strategically placed within easy reach.
-The ActiveEdge service will detect when one of the activation points are touched and then perform the action that has been configured:
+Zebra devices that ship with ActiveEdge “easy activation points” built into the right and left sides of the device allow users to quickly access applications or perform tasks such as barcode scanning with a single tap. Typically a user would be holding the device with one hand and moving either their thumb or finger to "activation points” strategically placed for easy access.
+
+The ActiveEdge service detects when one of the activation points are touched and performs the pre-configured action:
 
 <img alt="" style="height:350px" src="img1.jpg"/>
 

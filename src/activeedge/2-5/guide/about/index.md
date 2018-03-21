@@ -10,15 +10,28 @@ productversion: '2.5'
 ActiveEdge Touch Zone provides a customizable "application drawer" that gives users a quick and easy way to launch an organizations's apps or functions from inside any other app or task. 
 
 <img alt="" style="height:80px" src="img3.jpg"/>
+<br>
 
-A customizable drawer (shown above) can hold as many as three launching icons, giving workers convenient one-touch access to workflow or line-of-business apps. A second drawer accessed from the opposite edge of the screen, can hold an additional app, launch an intent or perform other tasks. Once configured, soft keys near the perimeter of the display provide access to those frequently used applications or functions. 
+A customizable drawer (shown above) can hold as many as three launching icons, giving workers convenient one-touch access to workflow or line-of-business apps. A second drawer accessed from the opposite edge of the screen can hold an additional app, launch an intent or be configured to perform other tasks. 
+
+<img alt="" style="height:350px" src="img1.jpg"/>
+_The ActiveEdge settings panel_
+<br>
+
+ActiveEdge tray icons are easily configured on the device through a settings panel (above) or deployed throughout an enterprise by pushing an XML file. 
+
+-----
 
 ### Supported Devices
 
-ActiveEdge comes preinstalled on the following devices:
+ActiveEdge is supported (and comes preinstalled) on the following devices:
 
-* TC51 Health Care 
-* TC56 Health Care
+* TC51  
+* TC51-HC (Healthcare) 
+* TC56 
+* TC56-HC (Healthcare)
+
+If ActiveEdge is not present on a device, an [OS Update](/stagenow/latest/Profiles/osupdate/) might be required. 
 
 -----
 

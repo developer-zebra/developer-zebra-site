@@ -7,7 +7,7 @@ menu:
   items:
     - title: About
       url: /activeedge/2-5/guide/about
-    - title: Setup & Configuration
+    - title: Setup and Configuration
       url: /activeedge/2-5/guide/setup
     - title: Using ActiveEdge
       url: /activeedge/2-5/guide/usage

@@ -7,28 +7,35 @@ productversion: '2.5'
 
 ## Overview
 
-Zebra devices that ship with ActiveEdge “easy activation points” built into the right and left sides of the device allow users to quickly access applications or perform tasks such as barcode scanning with a single tap. Typically a user would be holding the device with one hand and moving either their thumb or finger to "activation points” strategically placed for easy access.
+ActiveEdge Touch Zones are customizable drawers that slide out from the left and right sides of the screen and provide one-touch access to: 
 
-The ActiveEdge service detects when one of the activation points are touched and performs the pre-configured action:
+* Scan a barcode
+* Launch an app
+* Launch a specific app activity
+* Trigger an Android intent
 
 <img alt="" style="height:350px" src="img1.jpg"/>
 
-* Barcode scanning
-* Open a “drawer” of applications to launch
-* Launch a specific application or Android intent
+An App Drawer can contain as many as three app icons, giving workers quick access to an organization's line-of-business apps:
+<img alt=""  src="img3.jpg"/>
+<br>
+
+The opposite Touch Zone can trigger an intent or invoke the barcode scanner (shown): 
+<img alt=""  src="img2.jpg"/>
+<br>
 
 -----
 
 ### ActiveEdge Zones
 
-The ActiveEdge zones are two discreet “soft” tap areas that users would touch to perform the associated actions. To use the ActiveEdge Zones, the simply touch or tap the area of the zone and the associated action will be triggered. 
+ActiveEdge Touch Zones are two discreet “soft” tap areas that users would touch to perform the associated actions. To use the ActiveEdge Zones, the simply touch or tap the area of the zone and the associated action will be triggered. 
 
 Each ActiveEdge Zone can be configured to perform the following actions
 
-* Barcode Scanning
-* Open a Drawer
+* Active the barcode scanner
+* Open an App Drawer
 * Launch an Application
-* Launch an Intent
+* Trigger an intent
 
 **NOTE**: The following are invalid combinations (left/right zones):
 Drawer / Drawer

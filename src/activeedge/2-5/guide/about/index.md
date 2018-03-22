@@ -7,7 +7,7 @@ productversion: '2.5'
 
 ## Overview
 
-ActiveEdge Touch Zone provides a customizable "application drawer" that gives users a quick and easy way to launch an organizations's apps or functions from inside any other app or task. 
+Zebra ActiveEdge Touch Zone provides a customizable "App Drawer" that gives users a quick and easy way to launch an organizations's apps or functions from inside any other app or task. 
 
 <img alt="" style="height:80px" src="img3.jpg"/>
 <br>

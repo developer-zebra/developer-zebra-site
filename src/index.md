@@ -99,9 +99,9 @@ products:
         url: /emdk-for-android/6-8/api
     versions:
       - url: emdk-for-android/6-8/guide/about/
-        label: '6.6'
+        label: '6.8'
       - url: emdk-for-android/6-7/guide/about/
-        label: '6.6'
+        label: '6.7'
       - url: emdk-for-android/6-6/guide/about/
         label: '6.6'
       - url: emdk-for-android/6-4/guide/about/
@@ -138,9 +138,9 @@ products:
         url: /emdk-for-xamarin/2-7/api
     versions:
       - url: emdk-for-xamarin/2-7/guide/about/
-        label: '2.5'
+        label: '2.7'
       - url: emdk-for-xamarin/2-6/guide/about/
-        label: '2.5'
+        label: '2.6'
       - url: emdk-for-xamarin/2-5/guide/about/
         label: '2.5'
       - url: emdk-for-xamarin/2-4/guide/about/

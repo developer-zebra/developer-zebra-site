@@ -29,33 +29,37 @@ _The ActiveEdge settings panel_
 * **Start or Stop ActiveEdge Service -** toggles the ActiveEdge service on and off, which enables and disables the ActiveEdge Touch Zones.
 * **Start ActiveEdge Service on Boot Up -** determines whether ActiveEdge runs when the device boots up. By default, the service is always running and available.
 * **Left ActiveEdge Zone -** configures the left-hand Touch Zone for Scanner, App Drawer or None.
-* **Right ActiveEdge Zone -** configures the right-hand Touch Zone to Scanner, Drawer or None.
-* **Select Apps for Drawer -** permits selection of as many as three applications to appear in the Drawer. Apps must be installed on the device. 
+* **Right ActiveEdge Zone -** configures the right-hand Touch Zone for Scanner, App Drawer or None.
+* **Select Apps for Drawer -** permits selection of as many as three applications to appear in the Drawer. Apps must already be installed on the device. 
 * **Restore -** returns all settings to factory defaults.
 
 **Notes**: 
 
 * **Only one Touch Zone can contain an App Drawer** at a time. 
 * **The settings panel cannot configure the ActiveEdge Operation Mode** or specify apps on the whitelist or blacklist.
-* **To Display the ActiveEdge version number**, select Settings (menu dots) > About.
+* **To display the ActiveEdge version number**, tap the Settings (dots) menu->About.
 
 -----
 
 ## XML Configuration
 
-When configuring multiple devices, using an XML based approach may be preferred. In this scenario, an admin would: 
+Zebra recommends using the file-based approach when configuring multiple devices. The administrative process involves three basic steps:
 
-1. Create XML with the desired ActiveEdge settings
+1. Create an XML file containing the desired ActiveEdge settings
 2. Deploy the XML file to device(s) using an enterprise mobile management (EMM) system
-3. Trigger an intent to run the ActiveEdge Service
+3. Trigger an intent to run the ActiveEdge Service and activate settings in the file
+
+Each of these steps is detailed below. 
 
 -----
 
-### 1. Create the XML File
+### 1. Create XML File
 
-Use a text or XML editor to create an AML file and configure it for the desired ActiveEdge behavior based on the settings described below. 
+Use a text or XML editor to create an XML file and configure it for the desired ActiveEdge behavior based on the settings described below. 
 
-The following sample `ActiveEdgeConfig.xml` file can be used as a starting point: 
+1. As a starting point, copy the sample `ActiveEdgeConfig.xml` file below.
+2. Paste it into the editor and change settings as desired.
+3. Save the file on the host computer as "ActiveEdgeConfig.xml" (use this exact spelling and letter case). The required location on the device is covered later. 
 
 	<?xml version="1.0" encoding="UTF-8"?>
 	<wap-provisioningdoc>
@@ -108,13 +112,12 @@ The following sample `ActiveEdgeConfig.xml` file can be used as a starting point
 * **LaunchApp -** configures the zone to launch an application
 * **LaunchIntent -** configures the zone to launch an intent 
 * **DrawerPackageNames -** configures the list of apps in the App Drawer through a comma-separated string containing the package name(s) of app(s) to be placed in the drawer. The maximum number of apps in a drawer is three. Listed apps beyond the first three are ignored. Specify package name only (i.e. `com.android.dialer`) to launch the default activity. Specify a specific activity (i.e. `com.symbol.datawedge/com.symbol.datawedge.DWDemoActivity`) to launch app with that activity. **Note**: The list of drawer package names is saved regardless of whether an App Drawer is enabled.
-
-* **LaunchAppLeft / LaunchAppRight-** allows an application package name to be specified (i.e. `com.android.browser`) for launch if/when the LaunchApp parameter is enabled for the Touch Zone. **Note**: The package name is saved regardless of whether a Touch Zone is configured to launch an app.
+* **LaunchAppLeft / LaunchAppRight-** allows an application package name to be specified (i.e. `com.android.browser`) for launch if/when the LaunchApp parameter is enabled for the Touch Zone. **Note**: The specified package name is saved regardless of whether a Touch Zone is configured to launch an app.
 
 -----
 
 ### 2. Deploy the XML File
-The XML file will typically be deployed by an organization's EMM system, but can be deployed by any available means. The location of the XML file should be on the device file system, and accessible by the application (usually the EMM client). It should not be included in the client application as an embedded resource.
+The XML file is typically deployed by an organization's EMM system, but can be pushed to devices by any available means. The location of the XML file should be on the device file system, and accessible by the application (usually the EMM client). It should not be included in any client application as an embedded resource.
 
 -----
 
@@ -125,7 +128,7 @@ An admin or EMM system can trigger the ActiveEdge Service to process a new confi
 * **Package Name:** com.symbol.activeedge
 * **Class Name:** ConfigParserService
 * **Extras:**
-	* `SET_CONFIG_FILE` : fully qualified path to the ActiveEdgeConfig.XML file
+	* `SET_CONFIG_FILE`: fully qualified path to the `ActiveEdgeConfig.XML` file
 
 #### Example:
 

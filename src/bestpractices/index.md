@@ -1,6 +1,6 @@
 ---
 title: Best Practices
-description: "Downloadable documents that describe Zebra-recommended best practices for tackling common issues."
+description: Downloadable documents that describe Zebra-recommended best practices for tackling common issues.
 layout: list-content-items.html
 content-items:
   - type: section

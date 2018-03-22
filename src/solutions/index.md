@@ -19,7 +19,7 @@ products:
       - url: /activeedge/2-5/guide/about
         label: '2.5'
   - title: Best Practices
-    description: Downloadable documents that provide Zebra-recommended best practices and guidance for tackling a varety of common issues.
+    description: Downloadable documents that describe Zebra-recommended best practices for tackling common issues.
     url: /bestpractices
     image: /images/products/the-light-bulb-349400_1280.png
     btn-text: Latest Docs

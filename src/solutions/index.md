@@ -19,13 +19,15 @@ products:
       - url: /activeedge/2-5/guide/about
         label: '2.5'
   - title: Best Practices
-    description: Downloadable documents that describe Zebra-recommended best practices for tackling common issues.
+    description: Documents and links to Zebra-recommended best practices for tackling common issues.
     url: /bestpractices
     image: /images/products/the-light-bulb-349400_1280.png
     btn-text: Latest Docs
     sections:
       - title: Kiosk Persistence After Reset
         url: /bestpractices/kiosk_persistence_after_reset.pdf
+      - title: Printing Best Practices
+        url: http://techdocs.zebra.com/link-os/2-13/bestpractices/
   - title: CartScan
     description: An app for Zebra Android devices that scans barcode data and delivers it as keystrokes to a PC via Bluetooth.
     url: /cartscan/2-1/guide/about

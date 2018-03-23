@@ -12,7 +12,7 @@ ActiveEdge can be configured through:
 * The ActiveEdge **settings panel**  
 * **An XML file** pushed to the device
 
-**IMPORTANT**: Once an XMLconfiguration file is deployed to a device, the ActiveEdge settings panel can no longer be used to change settings on that device, only to display them. 
+**IMPORTANT**: Once an XML configuration file is deployed to a device, the ActiveEdge settings panel can no longer be used to change settings on that device, only to display them. 
 
 -----
 
@@ -33,7 +33,7 @@ _The ActiveEdge settings panel_
 * **Select Apps for Drawer -** permits selection of as many as three applications to appear in the Drawer. Apps must already be installed on the device. 
 * **Restore -** returns all settings to factory defaults.
 
-**Notes**: 
+**NOTES**: 
 
 * **Only one Touch Zone can contain an App Drawer** at a time. 
 * **The settings panel cannot configure the ActiveEdge Operation Mode** or specify apps on the whitelist or blacklist.
@@ -134,30 +134,29 @@ An admin or EMM system can trigger the ActiveEdge Service to process a new confi
 
 		:::term 
 		adb shell am startservice -a com.symbol.activeedge.ConfigParserService -e SET_CONFIG_FILE "/sdcard/ActiveEdgeConfig.xml”
-
-
+<br>
 
 #### XML Processing
-When ActiveEdge receives the intent it will:
+When ActiveEdge receives the intent, it performs the following:
 
-1.	Open the File
-	* The XML file is opened and its XML validated. If the XML is not valid, a message is appended to the system log and the ActiveEdge result intent is broadcast (see below for details on ActiveEdge Result intent)
-2.	Parse the File
+1.	**Open the file**:
+	* The XML file is opened and its XML validated. If the XML is not valid, a message is appended to the system log and the ActiveEdge result intent is broadcast (see below for details on ActiveEdge Result intent).
+2.	**Parse the file**:
 	* If unexpected or erroneous elements are present, an error is reported via the ActiveEdge result intent, processing is stopped and no ActiveEdge Service changes occur. 
 	* If the file is valid, the settings are saved.
-	Beside malformed XML parameters the following conditions will result in “invalid XML”:
-		* LeftZone and Right Zone both set to "Drawer" (the end result of the settings will be used to verify, not what is in the XML file)
-3.	Save the settings from the XML File
-	* The settings will only be saved if all XML is valid. The XML can contain partial settings and only the settings that are included will be effected. Each XML parameter has a corresponding Android Shared Preferences reference that both the AE Service and AE Settings app uses.
-4.	Change the ActiveEdge behavior as needed
-	* After an XML is processed successfully, the ActiveEdge Settings UI will be locked and not editable from an end user. It can only be unlocked if an admin sends a Restore to factory defaults.
-5.	Send the ActiveEdge result intent
+	Aside from malformed XML parameters, the following conditions will result in an “invalid XML” message:
+		* LeftZone and RightZone both set to "Drawer" (the end result of the settings will be used to verify, not what is in the XML file)
+3.	**Save the settings from the XML file**:
+	* The settings will be saved only if all XML is valid. If the XML contains partial settings, only the included settings will be effected. Each XML parameter has a corresponding Android Shared Preferences reference that is used by both the AE Service and AE Settings apps.
+4.	**Change the ActiveEdge behavior as needed**:
+	* After XML is processed successfully, the ActiveEdge settings panel UI is locked; settings can be read but no longer changed by the user. **Note**: The settings panel UI can be restored to user control by pushing an `ActiveEdgeConfig.xml` file containing a "Restore" Service Action to the device. This action returns ActiveEdge to its factory default settings.
+5.	**Send the ActiveEdge result intent**:
 	* When the processing is complete (or an error occurs during processing), an Broadcast intent will be sent so that any MDM application can be notified of the results:
 	* **Intent Type:** Broadcast 
 	* **Action Name:** com.symbol.activeedge
 	* **Extras:**
 		* `STATUS`: Pass or Fail
-		* `ERROR_MESSAGE`: Error Message
+		* `ERROR_MESSAGE`: an error occurred
 
 
 -----

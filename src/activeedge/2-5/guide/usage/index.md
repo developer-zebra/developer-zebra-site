@@ -50,7 +50,7 @@ _The ActiveEdge settings panel_
 
 ### Scan Barcode
 
-When tapping an ActiveEdge Zone configured for barcode scanning, the device immediately activates the default scanner and attempts to acquire data. This is done by sending a [Soft Scan Trigger](/datawedge/latest/guide/api/softscantrigger/) intent to [DataWedge](/datawedge), the Zebra scanning service preinstalled on all Zebra devices. Acquired data is usually passed to the foreground app as keystrokes, but is governed by DataWedge Profile settings (see below). **Refer to [DataWedge Profiles](/datawedge/latest/guide/profiles/) for more information about DataWedge processing and handling options**.  
+When tapping an ActiveEdge Zone configured for barcode scanning, the device immediately activates the default scanner and attempts to acquire data. This is done by sending a [Soft Scan Trigger](/datawedge/latest/guide/api/softscantrigger/) intent to [DataWedge](/datawedge), the Zebra scanning service preinstalled on all Zebra devices. Acquired data is usually passed to the foreground app as keystrokes, but is governed by DataWedge Profile settings (see below). **Refer to [DataWedge Profiles](/datawedge/latest/guide/profiles/) for more information about DataWedge processing and handling options**.
 
 <img alt="" style="height:100px" src="img2.jpg"/>
 _ActiveEdge scanner icon displayed on tap-down_
@@ -102,7 +102,7 @@ When an ActiveEdge Zone is configured to launch an app, tapping that zone immedi
 
 ### Trigger an intent
 
-An ActiveEdge Zone can be configured to trigger an intent. This is useful for launching activities "behind the scenes" such **as...
+An ActiveEdge Zone can be configured to trigger an intent. This is useful for launching activities "behind the scenes" such as Android services or other apps that might be listening for a particular broadcast intent. 
 
 **Notes**: 
 

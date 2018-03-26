@@ -7,7 +7,7 @@ productversion: '2.5'
 
 ## Overview
 
-ActiveEdge Touch Zones are customizable drawers that slide out from the left and right sides of the screen over any other application. 
+ActiveEdge Touch Zones are touch-sensitive areas on the device screen that can be configured to perform desired actions when tapped. Touch Zones can configured as single-purpose buttons or customizable drawers that slide out from the left or right side of the screen. Both can work over any other application. 
 <br>
 
 With a single touch, ActiveEdge lets users: 
@@ -30,43 +30,15 @@ A Touch Zone also can invoke the device's barcode scanner (shown) or trigger an 
 
 -----
 
-QUESTIONS:
-
-1. ActiveEdge settings panel change settings "regardless of whether the app is running?" 
-CANNOT
-
-
-2. Is the file name case sensitive? I've seen it as "ActiveEdgeConfig.XML" and "ActiveEdgeConfig.xml" (Raj- yes, case sensitive. Really? Not just a matter of matching the intent?)
-YES
-
-3. Is operation mode and black/white list the only settings not available to the panel? 
-also LANUCHAPPLEFT, RIGHT (immed. launch app)
-
-4. when used to scan, where does the data go and how is it processed (ActiveEdge profile?)? 
-data goes into the firground app and is proceesed accorfing to the profile assoc with that ap. 
-
-5. (from setup page ->) * LeftZone and Right Zone both set to "Drawer" (the end result of the settings will be used to verify, not what is in the XML file)
-change to "verify the result byu looking at the settings panel" (raj- will also return an error)
-
-6. The settings panel UI can be restored to user control by pushing an `ActiveEdgeConfig.xml` file containing a "Restore" Service Action to the device. This action returns ActiveEdge to its factory default settings.
-
------
-
 ## Setting ActiveEdge Zones
 
-ActiveEdge Touch Zones can be configured through the [ActiveEdge settings panel](../setup/#settingspanel or by an administrator pushing an XML file to the device. 
+ActiveEdge Touch Zones are configured through the [ActiveEdge settings panel](../setup/#settingspanel or by an administrator pushing an XML file to the device. 
 
-**IMPORTANT**: Once an XML configuration file is deployed to a device, the ActiveEdge settings panel can no longer be used to change settings on that device, only to display them. 
+<img alt="" style="height:350px" src="img1.jpg"/>
+_The ActiveEdge settings panel_
+<br>
 
-
-ActiveEdge Touch Zones are two discreet “soft” tap areas that users would touch to perform the associated actions. To use the ActiveEdge Zones, the simply touch or tap the area of the zone and the associated action will be triggered. 
-
-Each ActiveEdge Zone can be configured to perform the following actions:
-
-* **Activate the barcode scanner**
-* **Open an App Drawer**
-* **Launch an App**
-* **Trigger an intent**
+**IMPORTANT: Once an XML configuration file is deployed to a device, the ActiveEdge settings panel can no longer be used to change settings on that device**. For more information, see [ActiveEdge Setup](../setup) or Contact an IT administrator.  
 
 **NOTES**: 
 
@@ -87,18 +59,13 @@ When tapping an ActiveEdge Zone configured for barcode scanning, a [Soft Scan Tr
 When DataWedge recieves the Soft Scan Trigger intent from ActiveEdge, it does the following: 
 
 * Activates the scanner currently selected in DataWedge and attempts to acquire data.
-	* If acquired, data is processed according to the ActiveEdge Profile, if any.
-	* If no ActiveEdge Profile is configured, 
- 	* 
+	* If acquired, data is processed according to DataWedge Profile assigned to the foreground app, if any.
+	* If no app is in the foreground, acquired data is handled according to the "Launcher" Profile or Profile0, if enabled.
+* Continues to attempt data acquisition as long as button is held or pressed repeatedly.
+* Scan is cancelled when data is acquired or button is released. 
+* Acquired data is typically delivered as keystrokes to the foreground application. 
 
-
-* If no data is acquired, continue pressing the ActiveEdge Zone until data is acquired.
-
-for scanning. The user must be continue to press the ActiveEdge zone to keep the scanner active until a barcode is read or the user wishes to cancel this action. After a barcode is read, DataWedge handles the processing based on the way DataWedge profiles are configured.
-
-Typically, this means that the barcode data will be sent as keystrokes to the current application that is in the foreground. However an application can have a DataWedge profile configured to do something else with the data. If no foreground application is running, the “Launcher” DataWedge profile will be used if it is enabled. 
-
-**Note**: Standard device rules apply with applications “competing” for the scanner. If an application currently has the scanner "locked", ActiveEdge scanning will not function (just as other applications would). In this case, pressing the ActiveEdge zone that has been configured for barcode scanning will result in no operation.
+**Note**: Standard device rules apply with applications “competing” for the scanner. If an application currently has the scanner "locked," ActiveEdge scanning will not function (just as other applications would). In this case, pressing the ActiveEdge zone that has been configured for barcode scanning will result in no operation.
 
 Equally, the ActiveEdge service shall not lock use of the scanner. When a button that is configured for barcode scanning is pressed, ActiveEdge will immediately release the scanner either after the barcode is read or the user releases the ActiveEdge zone.
 

@@ -18,21 +18,13 @@ ActiveEdge can be configured through:
 
 ### Settings Panel
 
-**NOTES**: 
-
-* **The ActiveEdge service must be stopped** before making changes through the settings panel.
-* **The settings panel is read-only** if the app has been configured remotely (via XML file).
-* **The settings panel cannot configure the ActiveEdge Operation Mode** or specify apps on the whitelist or blacklist.
-* **The settings panel cannot configure the LaunchAppLeft or LaunchAppRight settings**.
-* **Only one Touch Zone can contain an App Drawer** at a time. 
-* **To display the ActiveEdge version number**, tap the Settings (dots) menu->About.
+The ActiveEdge settings panel presents a UI on the device to allow the device user to make changes to Touch Zone settings as needed or desired. **This panel becomes "read-only" and cannot be used to change settings if the device is configured remotely using an XML configuration file**.
 
 <img alt="" style="height:350px" src="img1.jpg"/>
 _The ActiveEdge settings panel_
 <br>
 
 **Settings configured through this panel**:
-
 * **Start or Stop ActiveEdge Service -** toggles the ActiveEdge service on and off, which enables and disables the ActiveEdge Touch Zones. **Service must be stopped before changing other settings**. 
 * **Start ActiveEdge Service on Boot Up -** determines whether ActiveEdge runs when the device boots up (**enabled by default**).
 * **Left ActiveEdge Zone -** configures the left-hand Touch Zone for Scanner, App Drawer or None.
@@ -40,13 +32,23 @@ _The ActiveEdge settings panel_
 * **Select Apps for Drawer -** permits selection of as many as three applications to appear in the Drawer. Apps must already be installed on the device. 
 * **Restore -** returns all settings to factory defaults.
 
+**NOTES**: 
+* **The ActiveEdge service must be stopped** before making changes through the settings panel.
+* **The settings panel is read-only** if the app has been configured remotely (via XML file).
+* **The settings panel <u>cannot</u> be used to configure**: 
+ * **ActiveEdge Operation Mode** (open, black, white) 
+ * **Apps on the Op Mode's black or white lists**
+ * **LaunchAppLeft or LaunchAppRight settings**
+* **Only one Touch Zone can contain an App Drawer** at a time. 
+* **To display the ActiveEdge version number**, tap the Settings (dots) menu->About.
+
 -----
 
 ## XML Configuration
 
 Zebra recommends using the file-based approach when configuring multiple devices. The administrative process involves three basic steps:
 
-1. **Create an XML file containing the desired ActiveEdge settings
+1. **Create an XML file** containing the desired ActiveEdge settings
 2. **Deploy the XML file to device(s)** using an enterprise mobile management (EMM) system
 3. **Trigger an intent** to run the ActiveEdge Service and activate settings in the file
 

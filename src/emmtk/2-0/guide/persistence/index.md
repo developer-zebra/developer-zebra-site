@@ -9,14 +9,37 @@ productversion: '2.0'
 
 This document explains how to preserve device administrator (DA) and device owner (DO) settings, and to persist EMM agents and/or services so that devices return to a manageable state following an Enterprise Reset.
 
+<img alt="image" style="height:350px" src="staging_flowchart_no_title.png"/>
+_Zebra's latest staging processes, a one-tool solution with Config, Deploy and Persist sections_
+<br>
 
+* Optimum Staging is best accomplished by dividing the Staging Steps into three Sections: Config, Deployment, and Persist​
+ * The primary reason for separating Deployment Staging Steps for from Persist Staging Steps that is to avoid unnecessary repetition of Staging Steps that do not need to be repeated following an Enterprise Reset​
+* For optimum support of persistence of management across an Enterprise Reset:​
+ * The Persist Section should NOT download files from the EMM Server, because it is likely that there will NOT be a network connection available at the time the Persist Section is executed following an Enterprise Reset​
+ * It is highly recommended that the Deployment Section download any files that will be referenced by the Persist Section to a location that will survive an Enterprise Reset​
+* To achieve persistence of management across an Enterprise Reset, the Persist Section should:​
+ * Install the EMM Agent APK and any other APKs on which it may be dependent, all of which should be located where they will survive an Enterprise Reset, as noted above​
+ * Enroll the EMM Agent as a Device Owner, if running in DO Mode​
+ * Configure the EMM Agent as required to contact the appropriate EMM Server instance​
+ * Launch the EMM Agent​
+* To achieve persistence of management across an Enterprise Reset, the EMM Agent itself should:​
+ * Store any critical configuration, especially network configuration, in a location that will survive an Enterprise Reset​
+ * Automatically reapply that critical configuration when the EMM Agent is launched by the Persist Section following an Enterprise Reset​
+ * Most customers will expect the EMM, not the Staging process, to control access to the Production network configuration, since it will likely change over time.  As a result, the EMM Agent, not the Staging process, should ensure that the Production network configuration is re-established following an Enterprise Reset​
+
+<!-- 
 <img alt="image" style="height:350px" src="legacy_staging_mechanism.png"/>
 _Zebra "legacy" staging process_
 <br>
 
------
+ -->
 
-from slide 15:
+ -----
+
+## Recommended Practice
+
+Zebra recommends that EMM solution providers use a process similar to the following when adapting their solution for Zebra devices and software. A set of minimum specific steps is shown in the section that follows.
 
 * Work out the required set of Staging Steps​
  * Minimum Staging Steps required to bring a device under management​
@@ -36,29 +59,11 @@ from slide 15:
  * Disposition of Staging Barcodes (e.g. View, Print, Email)​
  * Storage of generated XML and/or Staging Barcodes for later use
 
-slide 16 - recom staging mech, notes about staging and persistence 
-
-* Optimum Staging is best accomplished by dividing the Staging Steps into three Sections: Config, Deployment, and Persist​
- * The primary reason for separating Deployment Staging Steps for from Persist Staging Steps that is to avoid unnecessary repetition of Staging Steps that do not need to be repeated following an Enterprise Reset​
-* For optimum support of persistence of management across an Enterprise Reset:​
- * The Persist Section should NOT download files from the EMM Server, because it is likely that there will NOT be a network connection available at the time the Persist Section is executed following an Enterprise Reset​
- * It is highly recommended that the Deployment Section download any files that will be referenced by the Persist Section to a location that will survive an Enterprise Reset​
-* To achieve persistence of management across an Enterprise Reset, the Persist Section should:​
- * Install the EMM Agent APK and any other APKs on which it may be dependent, all of which should be located where they will survive an Enterprise Reset, as noted above​
- * Enroll the EMM Agent as a Device Owner, if running in DO Mode​
- * Configure the EMM Agent as required to contact the appropriate EMM Server instance​
- * Launch the EMM Agent​
-* To achieve persistence of management across an Enterprise Reset, the EMM Agent itself should:​
- * Store any critical configuration, especially network configuration, in a location that will survive an Enterprise Reset​
- * Automatically reapply that critical configuration when the EMM Agent is launched by the Persist Section following an Enterprise Reset​
- * Most customers will expect the EMM, not the Staging process, to control access to the Production network configuration, since it will likely change over time.  As a result, the EMM Agent, not the Staging process, should ensure that the Production network configuration is re-established following an Enterprise Reset​
 
 -----
 
-<img alt="image" style="height:350px" src="staging_flowchart_no_title.png"/>
-_Staging processes showing Config, Deploy and Persist sections_
-<br>
 
+## Three-part Process
 
 **The Config Section -** refers to XML that is sent to the StageNow API to produce barcodes that will be executed during Initial Staging​
 * It is called the Config Section because it contains Staging Steps related to configuration (e.g. Wi-Fi) that absolutely MUST be in the barcodes in order for successful Staging to occur since it can come from nowhere else​
@@ -73,37 +78,30 @@ _Staging processes showing Config, Deploy and Persist sections_
 * It is called the Persist Section because it typically contains Staging Steps that must be executed during initial Staging AND following Enterprise Reset to restore conditions that need to be persistent​
 * The Persist Section is typically downloaded and executed by Staging Steps contained within the Deployment Section​
 
------
-
-## Three-section Process
-
-
 ### Config​ Section
 
-* **Wi-Fi**
+* **Wi-Fi**:
  * Configure Staging WLAN​
-* FileMgr
+* **File Manager**:
  * Download Deployment Section XML File from Server to Device​
-* Batch	
+* **Batch	Manager**:
  * Execute Deployment Section XML File​
 
 ### Deployment​
 
-* FileMgr
+* **File Manager**:
  * Download Agent APK File from Server to Device​ to Persistent Location on Device​
  * Download Agent Configuration File from Server​ to Persistent Location on Device​
  * Download Persist Section XML File from Server to Device​ to Persistent Location on Device​
-* Batch
+* **Batch**:
  * Execute Persist Section XML File​
 
-**Persist​**
+### Persist​
 
-* AppMgr
+* **Application Manager**:
  * Install Agent APK File​
-* Intent
+* **Intent**: 
  * Launch Agent APK and/or Enroll Agent APK as Device Owner​
-
-
 
 -----
 <!-- 

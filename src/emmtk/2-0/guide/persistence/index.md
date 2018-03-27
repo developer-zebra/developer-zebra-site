@@ -91,9 +91,7 @@ _Staging processes showing Config, Deploy and Persist sections_
 
 * FileMgr
  * Download Agent APK File from Server to Device​ to Persistent Location on Device​
-* FileMgr
  * Download Agent Configuration File from Server​ to Persistent Location on Device​
-* FileMgr
  * Download Persist Section XML File from Server to Device​ to Persistent Location on Device​
 * Batch
  * Execute Persist Section XML File​

@@ -10,6 +10,11 @@ productversion: '2.0'
 This document explains how to preserve settings for device administrator (DA) and device owner (DO), and EMM agents and/or services, so that devices return to a manageable state following an Enterprise Reset.
 
 
+<img alt="image" style="height:350px" src="legacy_staging_mechanism.png"/>
+_Current "legacy" staging process_
+<br>
+
+-----
 
 from slide 15:
 
@@ -49,6 +54,11 @@ slide 16 - recom staging mech, notes about staging and persistence
  * Most customers will expect the EMM, not the Staging process, to control access to the Production network configuration, since it will likely change over time.  As a result, the EMM Agent, not the Staging process, should ensure that the Production network configuration is re-established following an Enterprise Reset​
 
 -----
+
+<img alt="image" style="height:350px" src="staging_flowchart_no_title.png"/>
+_Staging processes showing Config, Deploy and Persist sections_
+<br>
+
 
 **The Config Section -** refers to XML that is sent to the StageNow API to produce barcodes that will be executed during Initial Staging​
 * It is called the Config Section because it contains Staging Steps related to configuration (e.g. Wi-Fi) that absolutely MUST be in the barcodes in order for successful Staging to occur since it can come from nowhere else​
@@ -134,9 +144,10 @@ If an Enterprise Reset is sent to a device while it is being charged, the reset 
 AirWatch does not support persistence on devices in Android enterprise work-managed device mode.
 
 
-<img alt="image" style="height:350px" src="active_edge_01.png"/>
-_caption_
-<br>
+
+
+
+
 
 -----
 

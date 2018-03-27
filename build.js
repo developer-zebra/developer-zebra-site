@@ -208,8 +208,15 @@ var sitebuild = Metalsmith(__dirname)
 
 
 
+
     .use(foldermenu({
         folder: 'activeedge/2-5/'
+    }))
+    .use(foldermenu({
+        folder: 'cartscan/2-1/'
+    }))
+    .use(foldermenu({
+        folder: 'emmtk/2-0/'
     }))
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({

@@ -3,47 +3,78 @@ publish: false
 title: Zebra TechDocs
 layout: list-products.html
 products: 
+  - title: I Need Tools For...
+    description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra development tools might best suit the requirements, skills and experience of your organization.
+    url: /help
+    btn-text: Latest Guides
+    image: /images/products/blue-question-mark.jpg
+    sections:
+      - title: About TechDocs
+        url: /about
+      - title: Tools Help
+        url: /help
+      - title: Developer Portal
+        url: https://developer.zebra.com/welcome
+      - title: Contact
+        url: /contact
+      - title: Search
+        url: /search
   - title: Solutions
-    description: Apps and practices developed by Zebra to help end-users increase productivity and improve workflow efficiency.
+    description: Apps built by Zebra to help end-users increase productivity and improve workflow efficiency.
     url: /solutions
     btn-text: Latest Guides
     image: /images/products/mobility_dna.png
     sections:
       - title: Active Edge
         url: ../activeedge
-      - title: Best Practices
-        url: ../bestpractices
       - title: CartScan
         url: ../cartscan
       - title: Enterprise Home Screen
         url: ../ehs
       - title: Enterprise Keyboard
         url: ../enterprise-keyboard
-  - title: DataWedge
-    description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for virtually any other app on the device.
-    url: /datawedge/6-7/guide/about
-    image: /datawedge/datawedge_logo.png
+  - title: AppGallery
+    description: A free app deployment tool to help Zebra customers and partners keep their enterprise apps up to date and their workers most productive.
+    url: https://developer.zebra.com/docs/DOC-3040
+    image: /images/products/AppGallery.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /datawedge/6-7/guide/about
-      - title: Setup
-        url: /datawedge/6-7/guide/setup
-      - title: Profiles
-        url: /datawedge/6-7/guide/profiles
-      - title: Settings
-        url: /datawedge/6-7/guide/settings
-      - title: MSR
-        url: /datawedge/6-7/guide/input/msr
-      - title: APIs
-        url: /datawedge/6-7/guide/api
-      - title: Demo App
-        url: /datawedge/6-7/guide/demo
+        url: https://developer.zebra.com/docs/DOC-3035
+      - title: Admin
+        url: https://developer.zebra.com/docs/DOC-4151
+      - title: AppGallery Mobile
+        url: https://developer.zebra.com/docs/DOC-3071
+      - title: Supported Devices
+        url: https://developer.zebra.com/docs/DOC-3853
+      - title: Help Index
+        url: https://developer.zebra.com/docs/DOC-3040
+      - title: Download
+        url: /appgallery/download
     versions:
-      - url: datawedge/6-7/guide/about
-        label: '6.7'      
-      - url: datawedge/6-6/guide/about
-        label: '6.6'      
+      - url: https://developer.zebra.com/docs/DOC-3040
+        label: '3.0'
+  - title: DataWedge
+    description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for other apps on the device.
+    url: /datawedge/6-5/guide/about
+    image: /images/products/datawedge.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /datawedge/6-5/guide/about
+      - title: Setup
+        url: /datawedge/6-5/guide/setup
+      - title: Profiles
+        url: /datawedge/6-5/guide/profiles
+      - title: Settings
+        url: /datawedge/6-5/guide/settings
+      - title: MSR
+        url: /datawedge/6-5/guide/input/msr
+      - title: APIs
+        url: /datawedge/6-5/guide/api
+      - title: Demo App
+        url: /datawedge/6-5/guide/demo
+    versions:
       - url: datawedge/6-5/guide/about
         label: '6.5'      
       - url: datawedge/6-4/guide/about
@@ -58,29 +89,25 @@ products:
         label: '5.0'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
-    url: /emdk-for-android/6-8/guide/about
+    url: /emdk-for-android/6-6/guide/about
     image: /images/products/emdk-for-android.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /emdk-for-android/6-8/guide/about
+        url: /emdk-for-android/6-6/guide/about
       - title: Getting Started
-        url: /emdk-for-android/6-8/guide/gettingstarted
+        url: /emdk-for-android/6-6/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-android/6-8/tutorial/
+        url: /emdk-for-android/6-6/tutorial/
       - title: Samples
-        url: /emdk-for-android/6-8/samples
+        url: /emdk-for-android/6-6/samples
       - title: Guides
-        url: /emdk-for-android/6-8/guide/programming-guides
+        url: /emdk-for-android/6-6/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-android/6-8/guide/profile-manager-guides
+        url: /emdk-for-android/6-6/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-android/6-8/api
+        url: /emdk-for-android/6-6/api
     versions:
-      - url: emdk-for-android/6-8/guide/about/
-        label: '6.8'
-      - url: emdk-for-android/6-7/guide/about/
-        label: '6.7'
       - url: emdk-for-android/6-6/guide/about/
         label: '6.6'
       - url: emdk-for-android/6-4/guide/about/
@@ -97,27 +124,25 @@ products:
         label: '4.0'
   - title: EMDK For Xamarin
     description: Use C# APIs such as Data Capture and Profile Manager to build Android applications for Zebra devices.
-    url: /emdk-for-xamarin/2-7/guide/about
+    url: /emdk-for-xamarin/2-6/guide/about
     btn-text: Latest Docs
     image: /images/products/emdk-for-xamarin.png
     sections:
       - title: About
-        url: /emdk-for-xamarin/2-7/guide/about
+        url: /emdk-for-xamarin/2-6/guide/about
       - title: Getting Started
-        url: /emdk-for-xamarin/2-7/guide/gettingstarted
+        url: /emdk-for-xamarin/2-6/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-xamarin/2-7/tutorial/
+        url: /emdk-for-xamarin/2-6/tutorial/
       - title: Samples
-        url: /emdk-for-xamarin/2-7/samples
+        url: /emdk-for-xamarin/2-6/samples
       - title: Guides
-        url: /emdk-for-xamarin/2-7/guide/programming-guides
+        url: /emdk-for-xamarin/2-6/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-xamarin/2-7/guide/profile-manager-guides
+        url: /emdk-for-xamarin/2-6/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-xamarin/2-7/api
+        url: /emdk-for-xamarin/2-6/api
     versions:
-      - url: emdk-for-xamarin/2-7/guide/about/
-        label: '2.7'
       - url: emdk-for-xamarin/2-6/guide/about/
         label: '2.6'
       - url: emdk-for-xamarin/2-5/guide/about/
@@ -136,27 +161,25 @@ products:
         label: '1.0'
   - title: Enterprise Browser
     description: A platform for building apps that work with virtually any Zebra device using standard web technologies such as HTML5, CSS3 and JavaScript.
-    url: /enterprise-browser/1-8/guide/about
+    url: /enterprise-browser/1-7/guide/about
     image: /enterprise-browser/enterprise_browser_logo.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /enterprise-browser/1-8/guide/about
+        url: /enterprise-browser/1-7/guide/about
       - title: Getting Started
-        url: /enterprise-browser/1-8/guide/gettingstarted/
+        url: /enterprise-browser/1-7/guide/gettingstarted/
       - title: Setup
-        url: /enterprise-browser/1-8/guide/setup/
+        url: /enterprise-browser/1-7/guide/setup/
       - title: Tutorials
-        url: /enterprise-browser/1-8/tutorial/
+        url: /enterprise-browser/1-7/tutorial/
       - title: Usage Guides
-        url: /enterprise-browser/1-8/guide
+        url: /enterprise-browser/1-7/guide
       - title: Config.xml
-        url: /enterprise-browser/1-8/guide/configreference
+        url: /enterprise-browser/1-7/guide/configreference
       - title: APIs
-        url: /enterprise-browser/1-8/api
+        url: /enterprise-browser/1-7/api
     versions:
-      - url: enterprise-browser/1-8/guide/about
-        label: '1.8'
       - url: enterprise-browser/1-7/guide/about
         label: '1.7'
       - url: enterprise-browser/1-6/guide/about
@@ -199,7 +222,7 @@ products:
     description: A tool for simultaneously capturing scanned data from multiple regions of a label or document.
     url: /simulscan/1-1/guide/about
     btn-text: Latest Guides
-    image: /simulscan/simulscan_logo.png
+    image: /images/products/simulscan.png
     sections:
       - title: About
         url: /simulscan/1-1/guide/about
@@ -220,31 +243,27 @@ products:
         label: '1.1'
   - title: StageNow
     description: The easy way to set up and mass-deploy Zebra Technologies' Android-based mobile computers.
-    url: /stagenow/2-10/about
+    url: /stagenow/2-7/about
     btn-text: Latest Guides
     image: /images/products/stagenow.png
     sections:
       - title: About
-        url: /stagenow/2-10/about
+        url: /stagenow/2-8/about
       - title: Getting Started
-        url: /stagenow/2-10/gettingstarted
+        url: /stagenow/2-8/gettingstarted
       - title: Profiles
-        url: /stagenow/2-10/stagingprofiles
+        url: /stagenow/2-8/stagingprofiles
       - title: Profile Wizards
-        url: /stagenow/2-10/ProfileWizards
+        url: /stagenow/2-8/ProfileWizards
       - title: Settings
-        url: /stagenow/2-10/settingconfig
+        url: /stagenow/2-8/settingconfig
       - title: Setting Types
-        url: /stagenow/2-10/settingtypes
+        url: /stagenow/2-8/settingtypes
       - title: Device Staging
-        url: /stagenow/2-10/stageclient
+        url: /stagenow/2-8/stageclient
       - title: Download
-        url: /stagenow/2-10/download
+        url: /stagenow/2-8/download
     versions:
-      - url: stagenow/2-10/about
-        label: '2.10.x'      
-      - url: stagenow/2-9/about
-        label: '2.8'      
       - url: stagenow/2-8/about
         label: '2.8'      
       - url: stagenow/2-7/about
@@ -259,29 +278,13 @@ products:
         label: '2.3'
       - url: stagenow/2-2/about
         label: '2.2'
-  - title: I Need Tools For...
-    description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
-    url: /help
-    btn-text: Latest Guides
-    image: /images/logo_techdocs.png
-    sections:
-      - title: About TechDocs
-        url: /about
-      - title: Tools Help
-        url: /help
-      - title: Developer Portal
-        url: https://developer.zebra.com/welcome
-      - title: Contact
-        url: /contact
-      - title: Search
-        url: /search
 menu:
   items:
-    - title: ABOUT TECHDOCS
+    - title: About Techdocs
       url: /about
-    - title: I NEED TOOLS FOR...
+    - title: I Need Tools For...
       url: /help
-    - title: FEEDBACK
+    - title: Feedback
       url: /contact
     - icon: fa fa-comment
       url: https://developer.zebra.com/welcome

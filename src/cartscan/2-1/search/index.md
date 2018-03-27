@@ -1,22 +1,10 @@
 ---
 title: Search
 layout: search.html
-index: /index.json
-product: Google Search
-productversion:
-menu:
-  items:
-    - title: About Techdocs
-      url: /about
-    - title: I Need Tools For...
-      url: /help
-    - title: Feedback
-      url: /contact
-    - icon: fa fa-comment
-      url: https://developer.zebra.com/welcome
-    - icon: fa fa-sitemap
-      url: /sitemap
-    - icon: fa fa-search
-      url: /search
+index: /cartscan/2-1/index.json
+product: CartScan
+productversion: '2.1'
 ---
+
+
 

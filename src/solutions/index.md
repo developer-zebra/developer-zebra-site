@@ -18,6 +18,27 @@ products:
     versions:
       - url: /activeedge/2-5/guide/about
         label: '2.5'
+  - title: AppGallery
+    description: A free app deployment tool to help Zebra customers and partners keep their enterprise apps up to date and their workers most productive.
+    url: https://developer.zebra.com/docs/DOC-3040
+    image: /images/products/AppGallery.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: https://developer.zebra.com/docs/DOC-3035
+      - title: Admin
+        url: https://developer.zebra.com/docs/DOC-4151
+      - title: AppGallery Mobile
+        url: https://developer.zebra.com/docs/DOC-3071
+      - title: Supported Devices
+        url: https://developer.zebra.com/docs/DOC-3853
+      - title: Help Index
+        url: https://developer.zebra.com/docs/DOC-3040
+      - title: Download
+        url: /appgallery/download
+    versions:
+      - url: https://developer.zebra.com/docs/DOC-3040
+        label: '3.0'
   - title: Best Practices
     description: Documents and links to Zebra-recommended best practices for tackling common issues.
     url: /bestpractices
@@ -26,6 +47,8 @@ products:
     sections:
       - title: Kiosk Persistence After Reset
         url: /bestpractices/kiosk_persistence_after_reset.pdf
+      - title: Persistence for EMMs
+        url: /emmtk/guide/persistence
       - title: Printing Best Practices
         url: http://techdocs.zebra.com/link-os/2-13/bestpractices/
   - title: CartScan
@@ -43,10 +66,26 @@ products:
       - title: Usage
         url: /cartscan/2-1/guide/usage
       - title: Troubleshooting
-        url: /cartscan/2-1/guide/troubleshooting
+        url: /cartscan/2-1/guide/usage/#troubleshooting
     versions:
       - url: /cartscan/2-1/guide/about
         label: '2.1'      
+  - title: EMM Toolkit
+    description: 'Documentation and best practices to help Enterprise Mobility Management solution providers tailor their systems for Zebra devices and software.'
+    url: /emmtk/2-0/guide/about
+    image: /images/products/emmtk_logo.jpg
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /emmtk/2-0/guide/about
+      - title: Staging API
+        url: /emmtk/2-0/guide/api
+      - title: Agent Persistence
+        url: /emmtk/2-0/guide/persistence
+      - title: Special Features
+        url: /emmtk/2-0/guide/features
+      - title: Download
+        url: /emmtk/2-0/download
   - title: Enterprise Home Screen
     description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
     url: /ehs/2-7/guide/about

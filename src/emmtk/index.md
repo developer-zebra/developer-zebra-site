@@ -1,11 +1,11 @@
 ---
-title: ActiveEdge
-img: /images/products/ActiveEdge.png
+title: EMM Toolkit
+img: /images/products/emmtk_logo.jpg
 layout: redirect.html
-redirect_url: /activeedge/2-5/guide/about
+redirect_url: /emmtk/2-0/guide/about
 ---
 
-### Loading the latest ActiveEdge documentation...
+### Loading the latest EMM Toolkit docs...
 
 
 

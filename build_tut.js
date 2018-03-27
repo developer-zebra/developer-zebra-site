@@ -896,7 +896,11 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'stagenow/2-10/'
     }))
+    .use(foldermenu({
+        folder: 'emmtk/2-0/'
+    }))
 
+/*
     .use(foldermenu({
         folder: 'ehs/2-3/'
     }))
@@ -954,6 +958,7 @@ var sitebuild = Metalsmith(__dirname)
        .use(foldermenu({
         folder: 'enterprise-keyboard/1-4/'
     }))
+*/
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({
       maxLength: 250,

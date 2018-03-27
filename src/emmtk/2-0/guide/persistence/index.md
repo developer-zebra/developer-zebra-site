@@ -7,11 +7,11 @@ productversion: '2.0'
 
 ## Overview
 
-This document explains how to preserve settings for device administrator (DA) and device owner (DO), and EMM agents and/or services, so that devices return to a manageable state following an Enterprise Reset.
+This document explains how to preserve device administrator (DA) and device owner (DO) settings, and to persist EMM agents and/or services so that devices return to a manageable state following an Enterprise Reset.
 
 
 <img alt="image" style="height:350px" src="legacy_staging_mechanism.png"/>
-_Current "legacy" staging process_
+_Zebra "legacy" staging process_
 <br>
 
 -----
@@ -75,38 +75,40 @@ _Staging processes showing Config, Deploy and Persist sections_
 
 -----
 
+## Three-section Process
 
-**Config​**
 
-Wi-Fi:	Configure Staging WLAN​
+### Config​ Section
 
-FileMgr:	Download Deployment Section XML File from Server to Device​
+* **Wi-Fi**
+ * Configure Staging WLAN​
+* FileMgr
+ * Download Deployment Section XML File from Server to Device​
+* Batch	
+ * Execute Deployment Section XML File​
 
-Batch:	Execute Deployment Section XML File​
+### Deployment​
 
-**Deployment​**
-
-FileMgr:	Download Agent APK File from Server to Device​
-to Persistent Location on Device​
-
-FileMgr:	Download Agent Configuration File from Server​
-to Persistent Location on Device​
-
-FileMgr:	Download Persist Section XML File from Server to Device​
-to Persistent Location on Device​
-
-Batch:	Execute Persist Section XML File​
+* FileMgr
+ * Download Agent APK File from Server to Device​ to Persistent Location on Device​
+* FileMgr
+ * Download Agent Configuration File from Server​ to Persistent Location on Device​
+* FileMgr
+ * Download Persist Section XML File from Server to Device​ to Persistent Location on Device​
+* Batch
+ * Execute Persist Section XML File​
 
 **Persist​**
 
-AppMgr:	Install Agent APK File​
-
-Intent:	Launch Agent APK and/or Enroll Agent APK as Device Owner​
+* AppMgr
+ * Install Agent APK File​
+* Intent
+ * Launch Agent APK and/or Enroll Agent APK as Device Owner​
 
 
 
 -----
-
+<!-- 
 
 on a persistence-enabled device 
 
@@ -143,7 +145,7 @@ The AirWatch agent will not execute an Enterprise Reset command on any device wi
 If an Enterprise Reset is sent to a device while it is being charged, the reset action will be executed when the battery charge level reaches 50%.   
 AirWatch does not support persistence on devices in Android enterprise work-managed device mode.
 
-
+ -->
 
 
 

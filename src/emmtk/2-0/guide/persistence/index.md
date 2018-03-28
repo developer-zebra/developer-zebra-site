@@ -7,37 +7,102 @@ productversion: '2.0'
 
 ## Overview
 
-This document explains how to preserve device administrator (DA) and device owner (DO) settings, and to persist EMM agents and/or services so that devices return to a manageable state following an Enterprise Reset.
+This guide provides Zebra-recommended best practices for preserving device settings and/or apps to enable devices to return to a manageable state following an [Enterprise Reset](/mx/powermgr). 
 
-<img alt="image" style="height:350px" src="staging_flowchart_no_title.png"/>
-_Zebra's latest staging processes, a one-tool solution with Config, Deploy and Persist sections_
-<br>
+**Persistence can include**: 
 
-* Optimum Staging is best accomplished by dividing the Staging Steps into three Sections: Config, Deployment, and Persist​
- * The primary reason for separating Deployment Staging Steps for from Persist Staging Steps that is to avoid unnecessary repetition of Staging Steps that do not need to be repeated following an Enterprise Reset​
-* For optimum support of persistence of management across an Enterprise Reset:​
- * The Persist Section should NOT download files from the EMM Server, because it is likely that there will NOT be a network connection available at the time the Persist Section is executed following an Enterprise Reset​
- * It is highly recommended that the Deployment Section download any files that will be referenced by the Persist Section to a location that will survive an Enterprise Reset​
-* To achieve persistence of management across an Enterprise Reset, the Persist Section should:​
- * Install the EMM Agent APK and any other APKs on which it may be dependent, all of which should be located where they will survive an Enterprise Reset, as noted above​
- * Enroll the EMM Agent as a Device Owner, if running in DO Mode​
- * Configure the EMM Agent as required to contact the appropriate EMM Server instance​
- * Launch the EMM Agent​
-* To achieve persistence of management across an Enterprise Reset, the EMM Agent itself should:​
- * Store any critical configuration, especially network configuration, in a location that will survive an Enterprise Reset​
- * Automatically reapply that critical configuration when the EMM Agent is launched by the Persist Section following an Enterprise Reset​
- * Most customers will expect the EMM, not the Staging process, to control access to the Production network configuration, since it will likely change over time.  As a result, the EMM Agent, not the Staging process, should ensure that the Production network configuration is re-established following an Enterprise Reset​
+* **Device owner** (DO) settings
+* **Device administrator** (DA) settings 
+* **EMM agent and/or service** apps and settings
+* **A company's own apps, data and settings**
 
-<!-- 
-<img alt="image" style="height:350px" src="legacy_staging_mechanism.png"/>
-_Zebra "legacy" staging process_
-<br>
+**Important: An Enterprise Reset returns a device to its enterprise-defined state** as generally determined by the contents of the `/enterprise` partition in the device file system. The Zebra solution makes this possible only on devices configured in advance with its persistence framework. This is typically done during initial device enrollment. Some EMM systems have the ability to apply persistence or "fault tolerance" settings retroactively, giving administrators the ability to preserve certain device settings and/or apps immediately prior to a reset. This can return a reset device to its EMM-enrolled state without further intervention. For further information, please see the guides below or refer to the documentation for the specific EMM system in use. 
 
- -->
+**Vendor-specific practices**: 
+* **[AirWatch persistence info](http://techdocs.zebra.com/bestpractices/persistence_airwatch.pdf)**
+* **[SOTI persistence info](http://techdocs.zebra.com/bestpractices/persistence_soti.pdf)**
+
+-----
+
+## Persistence Practices 
+
+For optimal device staging and persistence of settings, agent software and enrollment status following an Enterprise Reset, observe these best practices whenever possible. 
+
+Zebra recommends dividing the staging process into three phases: 
+
+ 1. **Configure**
+ 2. **Deploy**
+ 3. **Persist**
+
+-----
+
+### 1. Configure Phase
+
+**The Configure Phase includes creation of XML sent to the StageNow API to produce barcodes to be executed during the initial staging​ of a device**. This phase should contain the minimum steps required configure a device so it's able to execute the steps in the Deploy Phase, the second phase of the staging process. For example, the Configure Phase might contain only Wi-Fi settings, allowing it to connect to a network and begin executing steps in the Deploy Phase. 
+
+**Notes**: 
+
+* **Configure settings are <u>absolutely required</u> for successful staging to occur** 
+* **Everything in the Configure Phase is encoded in the barcodes**
+* **The number of features configured determines barcode size** and count
+* **To reduce barcode size and count**, reduce the number of parameters being configured
+
+-----
+
+### 2. Deploy Phase
+
+**The Deploy Phase generally includes XML downloaded from a server and executed during initial staging​**. Deploy typically contains staging steps related to deployment (i.e. downloading files), steps that typically <u>do not</u> need to be included in the barcodes​. 
+
+**Note**: 
+
+* Steps in the Deploy Phase are typically downloaded and executed during initial staging by steps contained within the Config Phase. 
+
+-----
+
+### 3. Persist Phase
+
+**The Persist Phase is XML downloaded from a server and executed during initial staging _and_ following an Enterprise Reset​**. This is true only of the steps in this phase. 
+
+**The Persist Phase <u>should</u>**:
+​
+* **Install the EMM Agent** .apk and all other files on which it depends.
+* **Install files in a persistent location** on the device.
+* **Enroll the EMM Agent as a Device Owner** (if running in DO Mode​).
+* **Pre-configure the EMM Agent** as required to contact the appropriate EMM Server.
+* **Launch the EMM Agent​**.
+
+**The Persist Phase <u>should not</u>**:
+​
+* **Download files from an EMM Server** since it is unlikely that a network connection will be available immediately following an Enterprise Reset​, when the Persist steps are executed.
+* **If Persist steps must access files downloaded by Deploy steps**, such files must be stored in a location that persists following an Enterprise Reset​.
+
+**Notes**: 
+
+* Steps in the Persist Phase are typically downloaded and executed during initial staging by steps contained within the Deploy Phase. 
+* Deploy and Persist Phases are separated to avoid the need to repeat steps following an Enterprise Reset​. 
+* Following an Enterprise Reset, only steps in the Persist Phase are executed. 
+
+-----
+
+#### EMM Agent Notes
+
+**EMM Agents <u>should</u>**:​
+
+* **Store network and other critical config settings in a persistent location** on the device.
+* **Automatically re-apply critical settings** when launched by the Persist Phase following an Enterprise Reset​.
+* **Re-establish production-network configuration**.
+
+
+* **EMM Agent settings must be persistent** following an Enterprise Reset. 
+* **Agent settings must allow the device to connect to the appropriate EMM server**. 
+* **Agent settings must allow management of the device**.
+* **the EMM Agent (not the Staging process) in most cases is expected to control access to production-network configuration**, since such configurations often change over time. 
+* ** The agent settings should ensure that production-network configuration is re-established following an Enterprise Reset​. 
+
 
  -----
 
-## Recommended Practice
+## Persistence Planning
 
 Zebra recommends that EMM solution providers use a process similar to the following when adapting their solution for Zebra devices and software. A set of minimum specific steps is shown in the section that follows.
 
@@ -59,26 +124,24 @@ Zebra recommends that EMM solution providers use a process similar to the follow
  * Disposition of Staging Barcodes (e.g. View, Print, Email)​
  * Storage of generated XML and/or Staging Barcodes for later use
 
+<img alt="image" style="height:350px" src="staging_flowchart_no_title.png"/>
+_Zebra's latest staging processes, which implements configuration, deployment and persistence in a single tool_
+<br>
+
+<!-- 
+<img alt="image" style="height:350px" src="legacy_staging_mechanism.png"/>
+_Zebra "legacy" staging process_
+<br>
+
+ -->
 
 -----
+## Minimum Staging Steps
+
+As a general rule, steps involved in staging a device should be kept to a minimum. 
 
 
-## Three-part Process
-
-**The Config Section -** refers to XML that is sent to the StageNow API to produce barcodes that will be executed during Initial Staging​
-* It is called the Config Section because it contains Staging Steps related to configuration (e.g. Wi-Fi) that absolutely MUST be in the barcodes in order for successful Staging to occur since it can come from nowhere else​
-* Everything in the Config Section will be encoded in the barcodes and hence will contribute to barcode size/count​
-* To reduce barcode size/count, you MUST reduce the amount of data the Config Section contributes to the barcodes​
-
-**The Deployment Section -** refers to XML that will be downloaded from a Server and executed during Initial Staging​. 
-* It is called the Deployment Section because it typically contains Staging Steps related to deployment (e.g. downloading files) that typically do NOT need to be in the barcodes​
-* The Deployment Section is typically downloaded and executed during initial Staging by Staging Steps contained within the Config Section​
-
-**The Persist Section -** refers to XML that will be downloaded from a Server and executed during Initial Staging and following Enterprise Reset​
-* It is called the Persist Section because it typically contains Staging Steps that must be executed during initial Staging AND following Enterprise Reset to restore conditions that need to be persistent​
-* The Persist Section is typically downloaded and executed by Staging Steps contained within the Deployment Section​
-
-### Config​ Section
+### Config​ Steps
 
 * **Wi-Fi**:
  * Configure Staging WLAN​
@@ -87,7 +150,7 @@ Zebra recommends that EMM solution providers use a process similar to the follow
 * **Batch	Manager**:
  * Execute Deployment Section XML File​
 
-### Deployment​
+### Deploy Steps
 
 * **File Manager**:
  * Download Agent APK File from Server to Device​ to Persistent Location on Device​
@@ -96,12 +159,14 @@ Zebra recommends that EMM solution providers use a process similar to the follow
 * **Batch**:
  * Execute Persist Section XML File​
 
-### Persist​
+### Persist​ Steps
 
 * **Application Manager**:
  * Install Agent APK File​
 * **Intent**: 
  * Launch Agent APK and/or Enroll Agent APK as Device Owner​
+
+
 
 -----
 <!-- 
@@ -117,7 +182,7 @@ This process addresses configuration conflicts that exist between the Persistenc
 ZEBRA STAGENOW
 When creating a persistent profile that includes an Enterprise Reset, use PowerMgr to set the "Bypass GMS Welcome Screen" parameter to True, as shown below. This will cause the Android Setup Wizard to be skipped when the device restarts following the reset.   
 
-This guide explains how to persist an EMM agent and/or service on a device following an enterprise reset, a Zebra feature that erases alll device data **_except_** that which was designated as persistent.  
+This guide explains how to persist an EMM agent and/or service on a device following an enterprise reset, a Zebra feature that erases all device data **_except_** that which was designated as persistent.  
 
 
 NOTE: The bypass setting does not persist on the device following an Enterprise Reset. If SUW bypass is desired following an Enterprise Reset, the setting (bypass=true) must be included in the same Profile that is used to initiate the Enterprise Reset. Note: The bypass flag was intended to be available as an option ONLY when Enterprise Reset is selected. However, MX 7.1 and 7.2 allow SUW bypass to be configurable regardless of the Enterprise Reset parameter setting. Once pushed to such devices, a bypass flag value of "true" will persist until an Enterprise Reset is executed or the flag is changed to "false" by a subsequent profile. 

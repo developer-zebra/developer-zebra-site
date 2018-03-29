@@ -7,7 +7,7 @@ productversion: '2.0'
 
 ## Overview
 
-This guide provides Zebra-recommended best practices for preserving device settings and/or apps to enable devices to return to a manageable state following an [Enterprise Reset](/mx/powermgr). 
+Zebra provides a persistence framework that allows customers and partners to provision apps and settings to Zebra devices that remain in place following an [Enterprise Reset](/mx/powermgr) (which erases all non-persistent data). For providers of enterprise mobility management (EMM) solutions, this permits a device to remain manageable (with an EMM Agent and settings) after all other software is erases. 
 
 **Persistence can include**: 
 
@@ -17,6 +17,8 @@ This guide provides Zebra-recommended best practices for preserving device setti
 * **A company's own apps, data and settings**
 
 **Important: An Enterprise Reset returns a device to its enterprise-defined state** as generally determined by the contents of the `/enterprise` partition in the device file system. The Zebra solution makes this possible only on devices configured in advance with its persistence framework. This is typically done during initial device enrollment. Some EMM systems have the ability to apply persistence or "fault tolerance" settings retroactively, giving administrators the ability to preserve certain device settings and/or apps immediately prior to a reset. This can return a reset device to its EMM-enrolled state without further intervention. For further information, please see the guides below or refer to the documentation for the specific EMM system in use. 
+
+**This guide describes Zebra-recommended best practices to return a device to a manageable device state using the Zebra persistence framework**. 
 
 **Vendor-specific practices**: 
 * **[AirWatch persistence info](http://techdocs.zebra.com/bestpractices/persistence_airwatch.pdf)**
@@ -53,9 +55,7 @@ Zebra recommends dividing the staging process into three phases:
 
 **The Deploy Phase generally includes XML downloaded from a server and executed during initial staging​**. Deploy typically contains staging steps related to deployment (i.e. downloading files), steps that typically <u>do not</u> need to be included in the barcodes​. 
 
-**Note**: 
-
-* Steps in the Deploy Phase are typically downloaded and executed during initial staging by steps contained within the Config Phase. 
+**Note**: Steps in the Deploy Phase are typically downloaded and executed during initial staging by steps contained within the Config Phase. 
 
 -----
 
@@ -97,10 +97,9 @@ Zebra recommends dividing the staging process into three phases:
 * **Agent settings must allow the device to connect to the appropriate EMM server**. 
 * **Agent settings must allow management of the device**.
 * **the EMM Agent (not the Staging process) in most cases is expected to control access to production-network configuration**, since such configurations often change over time. 
-* ** The agent settings should ensure that production-network configuration is re-established following an Enterprise Reset​. 
+* ** The agent settings should ensure that production-network configuration is re-established** following an Enterprise Reset​. 
 
-
- -----
+-----
 
 ## Persistence Planning
 

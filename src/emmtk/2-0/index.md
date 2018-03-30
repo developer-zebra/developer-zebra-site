@@ -8,7 +8,7 @@ menu:
     - title: About
       url: /emmtk/2-0/guide/about
     - title: Guides
-      url: /emmtk/2-0/guide/guide
+      url: /emmtk/2-0/guide
     - title: Persistence
       url: /emmtk/2-0/guide/persistence
     - title: Staging API

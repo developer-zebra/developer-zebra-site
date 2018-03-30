@@ -7,7 +7,9 @@ menu:
   items:
     - title: About
       url: /emmtk/2-0/guide/about
-    - title: Agent Persistence
+    - title: Guides
+      url: /emmtk/2-0/guide/guide
+    - title: Persistence
       url: /emmtk/2-0/guide/persistence
     - title: Staging API
       url: /emmtk/2-0/guide/api

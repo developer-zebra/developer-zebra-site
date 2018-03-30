@@ -7,7 +7,7 @@ productversion: '2.0'
 
 ## Overview
 
-Zebra provides a persistence framework that allows customers and partners to provision apps and settings to Zebra devices that remain in place following an [Enterprise Reset](/mx/powermgr) (which erases all non-persistent data). For providers of enterprise mobility management (EMM) solutions, this permits a device to remain manageable (with an EMM Agent and settings) after all other software is erases. 
+Zebra provides a persistence framework that allows designated apps and settings to remain in place following an [Enterprise Reset](/mx/powermgr) (which otherwise erases all data). For providers of enterprise mobility management solutions, this permits EMM agent and related files to be preserved after all other software is erased, restoring the device to manageability. 
 
 **Persistence can include**: 
 
@@ -16,10 +16,13 @@ Zebra provides a persistence framework that allows customers and partners to pro
 * **EMM agent and/or service** apps and settings
 * **A company's own apps, data and settings**
 
-**Important: An Enterprise Reset returns a device to its enterprise-defined state** as generally determined by the contents of the `/enterprise` partition in the device file system. The Zebra solution makes this possible only on devices configured in advance with its persistence framework. This is typically done during initial device enrollment. Some EMM systems have the ability to apply persistence or "fault tolerance" settings retroactively, giving administrators the ability to preserve certain device settings and/or apps immediately prior to a reset. This can return a reset device to its EMM-enrolled state without further intervention. For further information, please see the guides below or refer to the documentation for the specific EMM system in use. 
+**Important: An Enterprise Reset returns a device to its enterprise-defined state** as generally determined by the contents of the `/enterprise` partition in the device file system. The Zebra solution makes this possible only on devices configured in advance with its persistence framework. This is typically done during initial device enrollment. Some EMM systems have the ability to apply persistence or "fault tolerance" settings retroactively, giving administrators the ability to preserve certain device settings and/or apps immediately prior to a reset. This can return a reset device to its EMM-enrolled state without further intervention. 
 
-**This guide describes Zebra-recommended best practices to return a device to a manageable device state using the Zebra persistence framework**. 
+**Zebra recommends using EMM-specific methods for device restoration whenever such capabilities are available**. For further information, please see the guides below or refer to the documentation for the specific EMM system in use. 
 
+<!-- 
+**This guide describes Zebra-recommended best practices for returning a device to a manageable state using the Zebra persistence framework**. 
+ -->
 **Vendor-specific practices**: 
 * **[AirWatch persistence info](http://techdocs.zebra.com/bestpractices/persistence_airwatch.pdf)**
 * **[SOTI persistence info](http://techdocs.zebra.com/bestpractices/persistence_soti.pdf)**

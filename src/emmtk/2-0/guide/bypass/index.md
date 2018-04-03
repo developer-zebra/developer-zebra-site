@@ -1,5 +1,5 @@
 ---
-title: Bypass Android Setup Wizard
+title: Bypass Setup Wizard
 layout: guide.html
 product: EMM Toolkit
 productversion: '2.0'
@@ -7,25 +7,28 @@ productversion: '2.0'
 
 ## Overview
 
-On GMS devices with MX 7.1 or higher, it is possible to automatically bypass the Android Setup Wizard (also known as the "Welcome Screen") following an Enterprise Reset. The Setup Wizard also can be bypassed manually by scanning a barcode. [See below](#manuallyskipwizard). 
+On some Android devices running Google Mobile Services (GMS), it is possible to skip the Android Setup Wizard (SUW, also known as the "Welcome Screen") following an Enterprise Reset, which removes all non-persistent data from the device. Zebra offers two mechanisms for bypassing the Android Setup Wizard. 
+
+**Mechanisms for SUW bypass**: 
+
+* **Include a "Setup Wizard Bypass" command** in the staging profile. 
+ * Requires MX 7.1 or higher on the device. 
+ * Must be in the same profile as the Enterprise Reset [Learn more](/mx/powermgr/#setup-wizard-bypass). 
+* **Scan a special barcode** 
+ * Requires Android M or higher.
+ * Supported only on [specific BSPs](#manuallyskipwizard).
 
 > Applies only to devices with Google Mobile Services (GMS) and only when the Enterprise Reset is initiated by PowerMgr.
 
-
-More [about Setup Wizard Bypass](/mx/powermgr/#setup-wizard-bypass) MX feature. 
-
 -----
 
-### Setup Wizard Manual Bypass
+## Setup Wizard Bypass
 
 If the Android setup Wizard appears, it's possible to skip it by scanning the barcode below during any phase of the wizard. 
 
-
------
-
 ### Manually Skip Wizard
 
-For devices being staged manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below when the wizard appears or at any time thereafter. **<u>Supported only on devices as indicated below</u>**. 
+When staging manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. **<u>Supported only on devices as indicated below</u>**. 
 
 #### Skip wizard and run StageNow client:
 
@@ -36,7 +39,7 @@ For devices being staged manually, it's possible to skip the Android Setup Wizar
 
 The scan-to-bypass SUW feature works only on devices with OS images as indicated below.    
 
-**8956-platform Devices**:
+**8956-platform devices**:
 
 * **Android Nougat** with BSP49 and higher
 * **Android Marshmallow** with BSP21 (G-00-08) or higher 

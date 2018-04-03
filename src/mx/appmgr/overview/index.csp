@@ -15,8 +15,10 @@ When considering the capabilities of AppMgr, it is important to understand that 
 ### Main Functionality
 
 * Install, Uninstall and Upgrade User applications (with no device user involvement)
-* Set an app to be launched by the HOME key
-* Turn On and Off the ability of an application to Launch (Whitelisting and Blacklisting, respectively)
+* Set an app to be launched by pressing the HOME key
+* Turn On/Off the ability of an application to Launch (Whitelisting and Blacklisting)
 * Clear the Recent Application List
-* Specify one or more apps for Battery Optimization  
-* Enable and Disable Access to Application Info
+* Clear an application's cache 
+* Specify one or more apps for Battery Optimization
+* Enable/Disable all apps on the "Safe to Disable" list
+* Enable/Disable access to application info

@@ -50,14 +50,18 @@ Use this Wizard to erase data on the device using Factory Reset (all data) or En
 
 ### Setup Wizard Manual Bypass
 
-If the Android setup Wizard appears, it's possible to skip it by scanning the barcode below during any phase of the wizard. **Supported on devices as indicated below**.  
+When staging manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. This feature is **<u>supported only on devices as indicated below</u>**. **IMPORTANT**: If the wizard is partially completed, data entered prior to the scan is applied. 
 
 #### Support Notes
 
-**8956-platform Devices**:
+The scan-to-bypass wizard feature works only on devices with OS images as indicated below.    
+
+**8956-platform devices**:
 
 * **Android Nougat** with BSP49 and higher
 * **Android Marshmallow** with BSP21 (G-00-08) or higher 
+
+**IMPORTANT**: If the wizard is partially completed, data entered prior to the scan is applied. 
 
 <!-- WAITING FOR BSP # from ENG. 
 **TC20/TC25 Devices**:

@@ -16,7 +16,7 @@ On some Android devices running Google Mobile Services (GMS), it is possible to 
  * Must be in the same profile as the Enterprise Reset [Learn more](/mx/powermgr/#setup-wizard-bypass). 
 * **Scan a special barcode** 
  * Requires Android M or higher.
- * Supported only on [specific BSPs](#manuallyskipwizard).
+ * Supported only on [specific BSPs](#supportnotes).
 
 > Applies only to devices with Google Mobile Services (GMS) and only when the Enterprise Reset is initiated by PowerMgr.
 
@@ -24,22 +24,11 @@ On some Android devices running Google Mobile Services (GMS), it is possible to 
 
 ## Setup Wizard Bypass
 
-If the Android setup Wizard appears, it's possible to skip it by scanning the barcode below during any phase of the wizard. 
+When staging manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. This feature is **<u>supported only on devices as indicated below</u>**. **IMPORTANT**: If the wizard is partially completed, data entered prior to the scan is applied. 
 
-### Manually Skip Wizard
+### Support Notes
 
-When staging manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. This feature is **<u>supported only on devices as indicated below</u>**. 
-
-**IMPORTANT: If the wizard is partially completed, data entered prior to the scan is applied**. 
-
-#### Skip wizard and run StageNow client:
-
-<img style="height:50px" src="skip_suw_and_run_sn.png"/>
-<br>
-
-#### Support Notes
-
-The scan-to-bypass SUW feature works only on devices with OS images as indicated below.    
+The scan-to-bypass wizard feature works only on devices with OS images as indicated below.    
 
 **8956-platform devices**:
 
@@ -52,13 +41,22 @@ The scan-to-bypass SUW feature works only on devices with OS images as indicated
 * **Android Nougat** with BSPxx or higher
  -->
 
+-----
+
+#### Skip wizard and run StageNow client:
+
+<img style="height:50px" src="skip_suw_and_run_sn.png"/>
+<br>
+
+
+
 To update a device, visit the **[BSP download page](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc51-operating-system-for-gms-devices.html)**.
 
 -----
 
 ## See Also
 
-* [About ActiveEdge](../about)
-* [ActiveEdge Usage Guide](../usage)
+* [About EMM Toolkit](../about)
+* [Staging API Service](../api)
 
 

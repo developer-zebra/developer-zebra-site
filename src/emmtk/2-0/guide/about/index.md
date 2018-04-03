@@ -7,7 +7,7 @@ productversion: '2.0'
 
 ## Overview
 
-The Zebra Enterprise Mobility Management Toolkit (EMM TK) is designed to allow developers of EMM (sometimes known as mobile device management or MDM) solutions to adapt their products to manage Zebra devices. This primarily involves interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. Through this mechanism, an EMM solution provider can offer customers the option of managing Zebra devices using only their solution. 
+The Zebra Enterprise Mobility Management Toolkit (EMM TK) is designed to allow developers of EMM (sometimes known as mobile device management, or MDM) solutions to adapt their products to manage Zebra devices. This primarily involves interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. Through this mechanism, an EMM solution provider can offer customers the option of managing Zebra devices using only their solution. 
 
 **Zebra staging mechanisms follow these basic processes**:​
 
@@ -18,21 +18,24 @@ The Zebra Enterprise Mobility Management Toolkit (EMM TK) is designed to allow d
  * Download, install, configure and launch an EMM Agent on the device​
  * Perform persistence and/or other desired staging tasks
 
+
+This guide contains all information necessary for adding these capabilities to an EMM management console. 
+
 -----
 
-### Guides in EMM Toolkit 2.0
+### Guides in the EMM Toolkit
 
-* **Android Setup Wizard Bypass -** explains Zebra's method for skipping the Android Setup Wizard (also known as the "Welcome Screen") following an Enterprise Reset, which erases non-persistent software on the device. 
-* **Persistence Best Practices -** details Zebra-recommended processes for preserving EMM agent and related files and restoring a device to manageability after an Enterprise Reset.
-* **General Programming Practices -** explains how to use the Staging API service from an EMM console to produce StageNow barcodes and to enroll an AEDO EMM Agent using the StageNow client app.
-* **Enrolling an AEDO -** covers the workings of Android Enterprise Device Owner mode, how the features works in relation to sharing and the steps necessary for an EMM to enable use of this feature.
-* **DA-to-DO Migration -** Describes the method for moving a device from DA (or NON-DO) to DO mode without loss of data or device reset.
-* **DA+MX-to-AEDO Migration -** Describes how to transition an EMM Agent from MX to AEDO to enable managment of Zebra Android N devices, on which AEDO is the recommended management strategy.
-* **EMM Toolkit Roadmap -**  Explains the migration period and basic processes for moving devices from legacy Android versions and Zebra management processes to Android N and beyond, including a time line for when such migrations become mandatory.
-* **AEDO-OEMconfig Function Map -** Provides a list of MX functions and their ADEO, OemConfig and/or OemInfo equivalent functions.
-* **OEMconfig/OEMinfo Schema -** Documents the content, usage and management of OemConfig and OenInfo schema, including approaches for encoding managed configurations for delivery an EMM server to an EMM agent and recommendations for implementing a data-driven UI.
-* **Code Samples -** Provides validated code that EMM solution providers can use to implement managed configurations within their agent.
-* **OEMinfo Developer Guide -** Documents API usage and development requirements for OemInfo, a standards-based mechanism by which applications can acquire published information about a Zebra device.
+* **[Android Setup Wizard Bypass](../bypass) -** explains Zebra's method for skipping the Android Setup Wizard (also known as the "Welcome Screen") following an Enterprise Reset, which erases non-persistent software on the device. 
+* **[Persistence Best Practices](../persistence) -** details Zebra-recommended processes for preserving EMM agent and related files and restoring a device to manageability after an Enterprise Reset.
+* **[Staging API Service](../api) -** explains how to use the Staging API service from an EMM console to produce StageNow barcodes and to enroll an AEDO EMM Agent using the StageNow client app.
+* **[Enrolling an AEDO](../enrollaedo) -** covers the workings of Android Enterprise Device Owner mode, how the features works in relation to sharing and the steps necessary for an EMM to enable use of this feature.
+* **[DA-to-DO Migration](migratedado) -** Describes the method for moving a device from DA (or NON-DO) to DO mode without loss of data or device reset.
+* **[DA+MX-to-AEDO Migration](../migrateaedo) -** Describes how to transition an EMM Agent from MX to AEDO to enable managment of Zebra Android N devices, on which AEDO is the recommended management strategy.
+* **[EMM Toolkit Roadmap](../roadmap) -**  Explains the migration period and basic processes for moving devices from legacy Android versions and Zebra management processes to Android N and beyond, including a time line for when such migrations become mandatory.
+* **[AEDO-OEMconfig Function Map](../functionmap) -** Provides a list of MX functions and their ADEO, OemConfig and/or OemInfo equivalent functions.
+* **[OEMconfig/OEMinfo Schema](../schema) -** Documents the content, usage and management of OemConfig and OenInfo schema, including approaches for encoding managed configurations for delivery an EMM server to an EMM agent and recommendations for implementing a data-driven UI.
+* **[Code Samples](../samples) -** Provides validated code that EMM solution providers can use to implement managed configurations within their agent.
+* **[OEMinfo Developer Guide](../oeminfodevguide) -** Documents API usage and development requirements for OemInfo, a standards-based mechanism by which applications can acquire published information about a Zebra device.
 
 -----
 

@@ -28,7 +28,9 @@ If the Android setup Wizard appears, it's possible to skip it by scanning the ba
 
 ### Manually Skip Wizard
 
-When staging manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. **<u>Supported only on devices as indicated below</u>**. 
+When staging manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. This feature is **<u>supported only on devices as indicated below</u>**. 
+
+**IMPORTANT: If the wizard is partially completed, data entered prior to the scan is applied**. 
 
 #### Skip wizard and run StageNow client:
 

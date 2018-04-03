@@ -63,11 +63,6 @@ content-items:
     title: OemInfo Developer Guide
     text: Explains API usage and development requirements for OemInfo, a standards-based mechanism by which applications can acquire published information about a Zebra device.
     url: oeminfodevguide
-  - type: section
-    level: 4
-    title: Secure NFC API Programmer's Guide
-    text: This guide contains examples and best practices when using the Secure NFC API's including MifareDesfire, MiFareSam, SamKey, etc.
-    url: securenfc
 product: EMM Toolkit
 productversion: '2.0'
 ---

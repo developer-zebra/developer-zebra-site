@@ -13,7 +13,7 @@ On some Android devices running Google Mobile Services (GMS), it is possible to 
 
 * **Include a "Setup Wizard Bypass" command** in the staging profile. 
  * Requires MX 7.1 or higher on the device. 
- * Must be in the same profile as the Enterprise Reset [Learn more](/mx/powermgr/#setup-wizard-bypass). 
+ * Must be in the same profile as the Enterprise Reset action. [Learn more](/mx/powermgr/#setup-wizard-bypass). 
 * **Scan a special barcode** 
  * Requires Android M or higher.
  * Supported only on [specific BSPs](#supportnotes).

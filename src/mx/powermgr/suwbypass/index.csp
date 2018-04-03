@@ -6,6 +6,7 @@ order: 4
 mx: "7.1"
 devicetype: A
 parm:
+  presentif: The Reset Action is "Enterprise Reset"
   pivotal: No
   name: SUWByPass
   type: list

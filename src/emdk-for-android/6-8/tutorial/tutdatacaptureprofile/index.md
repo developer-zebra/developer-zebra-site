@@ -253,6 +253,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/6-8/tutorial/
 2. When using the "Barcode" feature in EMDK Wizard, the specified value for "Scanner" is not supported on the device, it will be considered as "Auto" during runtime (Ex: BT_LASER1, BT_IMAGER1 and BT_CAMERA1).
 3. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device. 
 4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
+5. The final step is to create a dependency on EMDK in your app's **build.gradle** file. **[Learn how](../../guide/programming_practices/#emdkasadependencyinbuildgradle).** 
 
 ## What's Next
 Now that you have learned the basics of an EMDK for Android application, the [next tutorial](/emdk-for-android/6-8/tutorial/tutdatacaptureprofilePt2)</a> will show you how to use the [Intent Output](/emdk-for-android/6-8/mx/data-capture/intent) feature of EMDK Profiles to handle Data Capture output programmatically.

@@ -79,6 +79,7 @@ parm:
       apilevel: "24"
     - code: 11
       devicetype: A
+      info: Available on SDM660-platform devices only. 
       name: EnableGMSApps
       description: Enables GMS and all GMS apps on the "Safe to Disable" list. 
       mx: "8.0"
@@ -86,6 +87,7 @@ parm:
       apilevel: "24"
     - code: 12
       devicetype: A
+      info: Available on SDM660-platform devices only. 
       name: DisableGMSApps
       description: Disables GMS and all GMS apps on the "Safe to Disable" list. 
       mx: "8.0"

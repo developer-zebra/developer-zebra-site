@@ -10,7 +10,9 @@ The Bug Report Manager (BugReportMgr) provides a framework for reporting the tim
 
 ### Main Functionality
 
-* Set Bug Report Handling to default (Android) or custom (Zebra)
+* Set bug report handling to default (Android) or custom (Zebra)
+* Automatically capture bug report or logcat when an app crashes unexpectedly
+* Automatically capture bug report or logcat when an app stops responding
 * Present device-user questionnaire to collect additional information
 * Store an unlimited number of bug report files in available flash
 * Capture audio and attach to bug reports

@@ -26,7 +26,7 @@ parm:
     - code: 2
       devicetype: A
       name: True
-      description: Sets Bug Report Manager to send bug reports via email (see warning above).
+      description: Sets Bug Report Manager to send bug reports via email (see SECURITY WARNING above).
       mx: "6.3"
       apilevel: "23"
 ---

@@ -97,3 +97,14 @@ order: 99
 		</characteristic>
 		</wap-provisioningdoc>
 
+### Clear Application Cache
+
+		:::xml
+		<wap-provisioningdoc>
+		<characteristic type="AppMgr" version="8.0" >
+			<parm name="Action" value="ClearApplicationCache"/>
+			<parm name="Package" value="com.symbol.tool.stagenow"/>
+		</characteristic>
+		</wap-provisioningdoc>
+
+

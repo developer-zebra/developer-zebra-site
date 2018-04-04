@@ -8,9 +8,9 @@ order: 0
 
 Application Manager (AppMgr) administers the user applications on the device. It can be used to programmatically install, uninstall, upgrade and turn on (or off) the ability to launch an application, all with no need for user interaction. AppMgr also can designate an application as the Default Launcher (invoked when pressing the HOME Key), and can perform other tasks related to the management of applications.
 
-On consumer Android devices, application management generally requires a device user to interact with a management UI presented on the device. Scenarios in which a device is being managed by an MDM often require the MDM to tightly control which user applications are installed without user consent or approval. This enables an MDM to take full control of user applications installed on the device.
+On consumer Android devices, application management generally requires a device user to interact with a management UI presented on the device. Scenarios in which a device is being managed by an Enterprise Mobility Management (EMM) system (sometimes referred to as mobile device management, or MDM) often require the tool to perform app management without user consent or approval, giving companies full control over the user applications installed on a device.
 
-When considering the capabilities of AppMgr, it is important to understand that applications can be divided into two classes: System applications and User applications. System applications are built into the device and hence are always installed. User applications are not built in, and hence must be installed onto a device before they can be used. Some AppMgr functions apply only to System applications, some only to User applications, and some to both. Each function will identify the class of the application(s) to which it applies.
+When considering the capabilities of AppMgr, it is important to understand the difference between System apps and User apps. System applications are built into the device and always by default. User applications are not built in, and must be installed before use. Some AppMgr functions apply only to System apps, some only to User apps, and some to both. Each function identifies the class of the app(s) to which it applies.
 
 ### Main Functionality
 
@@ -18,7 +18,7 @@ When considering the capabilities of AppMgr, it is important to understand that 
 * Set an app to be launched by pressing the HOME key
 * Turn On/Off the ability of an application to Launch (Whitelisting and Blacklisting)
 * Clear the Recent Application List
-* Clear an application's cache 
+* Clear an application's cache (which stores the app's temporary files) 
 * Specify one or more apps for Battery Optimization
-* Enable/Disable all apps on the "Safe to Disable" list
+* Enable/Disable GMS and all GMS apps on the "Safe to Disable" list
 * Enable/Disable access to application info

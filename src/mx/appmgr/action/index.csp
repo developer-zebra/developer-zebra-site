@@ -72,22 +72,24 @@ parm:
       mx: "7.0"
       apilevel: "23"
     - code: 10
-      devicetype: A
+      devicetype: A,B
       name: ClearApplicationCache
-      description: Erases the application cache, which stores temporary files. 
+      description: Erases the application cache, which stores an app's temporary files. 
       mx: "8.0"
       apilevel: "24"
     - code: 11
       devicetype: A
       name: EnableGMSApps
-      description: Enables all GMS applications on the "Safe to Disable" list. 
+      description: Enables GMS and all GMS apps on the "Safe to Disable" list. 
       mx: "8.0"
+      osx: "8.1"
       apilevel: "24"
     - code: 12
       devicetype: A
       name: DisableGMSApps
-      description: Disables all GMS applications on the "Safe to Disable" list. 
+      description: Disables GMS and all GMS apps on the "Safe to Disable" list. 
       mx: "8.0"
+      osx: "8.1"
       apilevel: "24"
 ---
 

@@ -1,0 +1,40 @@
+---
+csp: bugreportmgr
+title: ANR Error Action
+type: parm
+order: 5
+mx: "8.0"
+apilevel: "26"
+devicetype: A
+parm: 
+  pivotal: No
+  name: ANRErrAction
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: none
+      description: This value (or the absence of this parm from the XML) will cause no change to Bug Report Manager settings; any previously selected setting will be retained.
+      mx: "8.0"
+      apilevel: "26"
+    - code: 1
+      devicetype: A
+      name: NoCapture
+      description: Sets the device to use Android bug reporting functionality.
+      mx: "8.0"
+      apilevel: "26"
+    - code: 2
+      devicetype: A
+      name: CaptureBR
+      description: Sets the device to use Zebra Bug Report Manager for bug reporting and handling.
+      mx: "8.0"
+      apilevel: "26"
+    - code: 3
+      devicetype: A
+      name: CaptureLogcat
+      description: Sets the device to use Zebra Bug Report Manager for bug reporting and handling.
+      mx: "8.0"
+      apilevel: "26"
+---
+
+This is the On/Off switch for Zebra Bug Reporting on the device. When enabled (option 2), Zebra Bug Reporting is used to generate, store and transport bug reports and to supplement reports with information provided by the device user, if desired. When this parameter is disabled (option 1), the device uses Android bug reporting functionality.

@@ -37,4 +37,4 @@ parm:
       apilevel: "26"
 ---
 
-Controls whether an error report is captured when an app crashes unexpectedly, and which type of report (Bug Report/logcat) is captured. A Bug Report contains information described in the [Overview](#overview) section above. The Android logging system (accessed using the "logcat" command) stores system messages, stack traces and any log information written by the app.
+Controls whether an error report is captured when an app crashes unexpectedly, and which type of report (Bug Report/logcat) is captured. A Bug Report contains information described in the [Overview](#overview) section above. The Android system log (sometimes called "logcat" after the command used to retrieve it) stores system messages, stack traces and any log information written by the app.

@@ -1,0 +1,20 @@
+---
+csp: intent
+title: Device Owner JSON File
+type: parm
+mx: "8.0"
+apilevel: "1"
+order: 21
+devicetype: A,B
+parm:
+  presentif: The Action is "Enroll Device Owner"
+  pivotal: No
+  name: Type
+  type: string
+---
+
+Used to specify the JSON file, which must reside on the device and be executed to set the Device Owner.
+
+**Parm value input rules**: 
+
+* String containing the name of the JSON file on the device

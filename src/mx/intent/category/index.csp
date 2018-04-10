@@ -1,0 +1,20 @@
+---
+csp: intent
+title: Category
+type: parm
+mx: "8.0"
+apilevel: "1"
+order: 7
+devicetype: A,B
+parm:
+  presentif: The Action is NOT "Enroll Device Owner"
+  pivotal: No
+  name: Type
+  type: string
+---
+
+Used to specify the Android Category of the application to which the Intent will be sent. A Category and Action Name combine to form a "channel" to which an app can listen for intents that use the same combination. This has the effect of filtering out the "chatter" of other intents using different value pairs. **An app's intent Category is defined in its** `AndroidManifest.xml` **file**. 
+
+**Parm value input rules**: 
+
+* String containing the Category of the target app

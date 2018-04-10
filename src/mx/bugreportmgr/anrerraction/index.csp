@@ -26,15 +26,15 @@ parm:
     - code: 2
       devicetype: A
       name: CaptureBR
-      description: Sets the device to capture a bug report if an app stops responding.
+      description: Sets the device to capture a bug report when an app stops responding.
       mx: "8.0"
       apilevel: "26"
     - code: 3
       devicetype: A
       name: CaptureLogcat
-      description: Sets the device to capture the "logcat" if an app stops responding..
+      description: Sets the device to capture the "logcat" when an app stops responding.
       mx: "8.0"
       apilevel: "26"
 ---
 
-Controls whether an error report is captured when an app stops responding, and which type of report (Bug Report/logcat) is captured. A Bug Report contains information described in the [Overview](#overview) section above. The Android system log (sometimes called "logcat" after the command used to retrieve it) stores system messages, stack traces and any log information written by the app.
+Controls whether an error report is captured when an app stops responding, and which type of report (Bug Report/logcat) is captured. A Bug Report contains information described in the [Overview](#overview) section above. The Android system log (sometimes called "logcat" after the command used to retrieve it) stores system messages, stack traces and log information written by apps running at the time of the crash.  

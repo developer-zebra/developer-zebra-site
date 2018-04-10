@@ -1,9 +1,9 @@
 ---
-csp: <!-- enterprisekeyboardmgr -->
+csp: enterprisekeyboardmgr
 title: Remap Symbol Key P1
 type: parm
 order: 40
-mx: "6.2"
+mx: "8.0"
 devicetype: A
 parm:
   pivotal: No
@@ -15,8 +15,8 @@ Used to specify a character, UNICODE value or EMOJI selection panel for substitu
 
 **Parm input rules:**
 
-* A string of between 0 and 8 characters
-* A UNICODE value corresponding to the desired key
+* A string from 0 - 8 characters
+* A UNICODE value (\uXXXXXX) corresponding to the desired key
 * The actual character to be substituted
 
 <!--

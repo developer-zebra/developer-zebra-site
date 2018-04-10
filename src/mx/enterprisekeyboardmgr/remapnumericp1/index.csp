@@ -16,5 +16,5 @@ Used to specify a character, UNICODE value or EMOJI selection panel for substitu
 **Parm input rules:**
 
 * A string of between 0 and 8 characters
-* A UNICODE value corresponding to the desired key
+* A UNICODE value (\uXXXXXX) corresponding to the desired key
 * The actual character to be substituted

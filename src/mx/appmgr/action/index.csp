@@ -20,25 +20,25 @@ parm:
     - code: 1
       devicetype: A,B
       name: Install
-      description: Causes a User application contained within an .apk file in the specified path on the device to be Installed on the device. If for any reason the requested application cannot be installed, an error will be returned in the Result XML document. Note- If an attempt is made to install an application with the same Package Name as an application that is already installed on the device, an error will be returned in the Result XML document. To replace an application that is already installed on the device with a different version with the same Package Name, use the value Upgrade instead.
+      description: Installs the user app contained within an .apk file in the specified path on the device. If the requested app cannot be installed, an error is returned in the Result XML document. Note- Attempts to install an app with the same Package Name as one already installed on the device, an error is returned in the Result XML. To replace an app already installed on the device with a different version with the same Package Name, use the Upgrade action (option 3).
       mx: "4.2"
       osx: "1.0"
     - code: 2
       devicetype: A,B
       name: Uninstall
-      description: Causes a User application with the specified Package Name to be removed from the device. If for any reason the requested application cannot be removed, an error will be returned in the Result XML document. Note- If no User application with the specified Package Name is installed on the device, an error will be returned in the Result XML document. Note- When an application is removed, data that is stored in sandbox areas owned by that application also will be removed. If the application requiring such data is reinstalled, the data must be recreated.
+      description: Removes the user app with the specified Package Name from the device. If the requested app cannot be removed, an error is returned in the Result XML document. Note- If no user app with the specified Package Name is installed on the device, an error is returned in the Result XML document. Note- When an app is removed, data stored in sandbox areas owned by that app also are removed. If the app requiring such data is reinstalled, the data must be recreated.
       mx: "4.1"
       osx: "1.0"
     - code: 3
       devicetype: A,B
       name: Upgrade
-      description: Causes a User application contained within an .apk file in the specified path on the device to Upgrade the application with the same Package Name that is already on the device. If for any reason the requested application cannot be upgraded, an error will be returned in the Result XML document. Note- If an attempt is made to upgrade an application with a Package Name that does not match any Package Names present on the device, an error will be returned in the Result XML document. To install an application that is not already installed on the device, use the value "Install" instead. Note- When an application is upgraded, the data for that application is maintained. This allows the new version of the application to access (and possibly convert) data created by the old version. Note- In devices running the Jelly Bean version of Android, an Upgrade can replace any version of an application with any other version of the same application. However, in devices running the KitKat or higher version of Android, an Upgrade can only replace an application with a higher (numerically greater) version of the same application. This change was made to reduce issues involving older versions of an application that were unable to understand data produced by a newer version.
+      description: Uogrades the user app contained within an .apk file in the specified path with the same Package Name on the device. If the requested app cannot be upgraded, an error is returned in the Result XML document. Note- Attempts to upgrade an app with a Package Name that does not match any Package Names present on the device, an error is returned in the Result XML document. To install an application that is not already installed on the device, use the "Install" action (option 1). Note- When an application is upgraded, the data for that application is maintained. This allows the new version of the app to access (and possibly convert) data created by the old version. Note- In devices running Android Jelly Bean, an Upgrade can replace any version of an app with any other version of the same app. However, in devices running Android KitKat or higher, an Upgrade can replace only apps with a higher (numerically greater) version number. This change was made to reduce issues involving older versions of an application that were unable to understand data produced by a newer version.
       mx: "4.1"
       osx: "1.0"
     - code: 4
       devicetype: A,B
       name: SetDefaultLauncher
-      description: Sets a System or User app with the specified Package Name as the new Default Launcher. The specified app must already be installed on the device and generally should be designed to be a Launcher according to the relevant Android specifications. If no application with the specified Package Name is installed on the device, an error will be returned in the Result XML document.
+      description: Sets a System or User app with the specified Package Name as the new default launcher. The specified app must already be installed on the device and generally should be designed to be a Android Launcher according to the relevant Android specifications. If no app with the specified Package Name is installed on the device, an error is returned in the Result XML document.
       mx: "4.1"
       osx: "1.3"
     - code: 5
@@ -74,7 +74,7 @@ parm:
     - code: 10
       devicetype: A,B
       name: ClearApplicationCache
-      description: Erases the application cache, which stores an app's temporary files. 
+      description: Erases the application cache, which stores an app's temporary files. This is the functional equivalent of pressing the "Clear Cache" button in the Android App Manager, accessed through the Settings panel.  
       mx: "8.0"
       apilevel: "24"
     - code: 11

@@ -3,7 +3,7 @@ csp: intent
 title: Device Owner JSON File
 type: parm
 mx: "8.0"
-apilevel: "1"
+apilevel: "23"
 order: 21
 devicetype: A,B
 parm:

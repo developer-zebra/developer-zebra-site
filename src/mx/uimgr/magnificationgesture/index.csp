@@ -1,0 +1,34 @@
+---
+csp: uimgr
+title: Magnification Gesture
+type: parm
+order: 5
+mx: "8.0"
+osx: "6.0"
+devicetype: A
+parm:
+  pivotal: No
+  name: MagnificationGesture
+  type: list
+  list:
+    - code: 0
+      mx: "8.0"
+      osx: "6.0"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Turn On 
+      mx: "8.0"
+      osx: "6.0"
+      description: Allows "Network may be monitored..." notifications to be displayed.
+    - code: 2
+      devicetype: A
+      name: Turn Off
+      mx: "8.0"
+      osx: "6.0"
+      description: Prevents "Network may be monitored..." notifications from being displayed.
+---
+
+Controls whether 

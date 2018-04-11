@@ -1,0 +1,31 @@
+---
+csp: uimgr
+title: Virtual Keyboard Show/Hide
+type: parm
+order: 14
+mx: "8.0"
+apilevel: "16"
+devicetype: A
+parm:
+  pivotal: Yes
+  name: ShowVirtualKeyBoard
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: Do not change
+      mx: "8.0"
+      description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting will be retained.
+    - code: 1
+      devicetype: A
+      name: Show 
+      mx: "8.0"
+      description: Shows the Gear icon in the Notifications panel. 
+    - code: 2
+      devicetype: A
+      name: Hide 
+      mx: "8.0"
+      description: Hides the Gear icon in the Notifications panel. 
+---
+
+Controls whether to display the virtual keyboard on the device screen while a physical keyboard is active. 

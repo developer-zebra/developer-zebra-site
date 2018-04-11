@@ -240,3 +240,22 @@ order: 99
             <parm name="RecentAppButtonUsage" value="1"/>
         </characteristic>
     </wap-provisioningdoc>
+
+### Disable Magnification Gesture
+
+    <wap-provisioningdoc>
+        <characteristic type="UiMgr" version="8.0" >
+            <parm name="MagnificationGesture" value="2"/>
+        </characteristic>
+    </wap-provisioningdoc>
+
+
+### Hide Virtual Keyboard
+
+    <wap-provisioningdoc>
+        <characteristic type="UiMgr" version="8.0" >
+            <parm name="ShowVirtualKeyBoard" value="2"/>
+        </characteristic>
+    </wap-provisioningdoc>
+
+

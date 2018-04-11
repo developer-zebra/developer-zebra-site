@@ -141,6 +141,14 @@ order: 99
 	        </characteristic>
 	    </characteristic>
 	</wap-provisioningdoc>
+
+### Enable Wake-up Sources
+
+	<wap-provisioningdoc>
+		<characteristic type="PowerMgr" version="8.0" >
+			<parm name="WakeUpSources" value="1"/>
+		</characteristic>
+	</wap-provisioningdoc>
 		
 
 

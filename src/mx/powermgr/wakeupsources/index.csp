@@ -1,0 +1,37 @@
+---
+csp: powermgr
+title: Wake-up Sources Enable/Disable
+type: parm
+order: 50
+mx: "8.0"
+osx: "7.7"
+devicetype: B
+info: Supported on TC20/TC25 devices only.
+parm:
+  pivotal: Yes
+  name: WakeUpSources
+  type: list
+  list:
+    - code: 0
+      mx: "8.0"
+      osx: "7.7"
+      devicetype: B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change to the device; any previously selected setting is retained.
+    - code: 1
+      devicetype: B
+      name: Enable
+      mx: "8.0"
+      osx: "7.7"
+      description: Enables all sources to wake the device from sleep. 
+    - code: 2
+      devicetype: B
+      name: Disable
+      mx: "8.0"
+      osx: "7.7"
+      description: Disables all sources from waking the device from sleep. 
+---
+
+This is the On/Off switch for Wake-up Sources 
+
+energy saving features on the device. When Doze Mode is enabled, only apps specifically "whitelisted" on the device can prevent the device from entering this low-power state. Apps are designated as such using the [App Manager CSP](../appmgr).

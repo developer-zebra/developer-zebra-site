@@ -32,6 +32,7 @@ parm:
       description: Disables all sources from waking the device from sleep. 
 ---
 
-This is the On/Off switch for Wake-up Sources 
+This is the On/Off switch for Wake-up Sources, which can wake the device from sleep. 
 
-energy saving features on the device. When Doze Mode is enabled, only apps specifically "whitelisted" on the device can prevent the device from entering this low-power state. Apps are designated as such using the [App Manager CSP](../appmgr).
+> Supported on TC20/TC25 devices only.
+

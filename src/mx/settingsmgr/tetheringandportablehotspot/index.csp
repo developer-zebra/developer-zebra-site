@@ -1,6 +1,6 @@
 ---
 csp: settingsmgr
-title: Tethering and Hotspot  
+title: Tethering and Hotspot Access  
 type: parm
 order: 5
 mx: "8.0"
@@ -19,7 +19,7 @@ parm:
       devicetype: A
       name: Enable
       mx: "8.0"
-      description: Allows the device user to access device tethering and Wi-Fi hotspot features.
+      description: Allows the device user to access and make changes to device tethering and Wi-Fi hotspot features.
     - code: 2
       devicetype: A
       name: Disable
@@ -27,9 +27,4 @@ parm:
       description: Prevents the device user from accessing device tethering and Wi-Fi hotspot features.
 ---
 
-Controls whether the device user is allowed to access device tethering and Wi-Fi hotspot features. Tethering share the device's internet connection with a computer or other device attached with USB cable. The Hotspot feature allows the device to act as an access point for nearby devices to connect to the internet, sharing the device's Wi-Fi or cellular connection.  
-
-
-<!--
-../wifi/#hotspot-enabledisable
--->
+Controls device-user access to device tethering and Wi-Fi hotspot settings through the Android Settings panel or Quick Settings control. **Note: This parameter does not change tethering or hotspot features settings**. 

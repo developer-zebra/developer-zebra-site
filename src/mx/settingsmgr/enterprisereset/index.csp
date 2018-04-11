@@ -2,7 +2,7 @@
 csp: settingsmgr
 title: Enterprise Reset Access
 type: parm
-order: 2
+order: 5
 mx: "4.2"
 osx: "4.2"
 devicetype: A
@@ -16,21 +16,26 @@ parm:
       osx: "4.2"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to invoke the "Enterprise data reset" function from the System Settings Menu.
+      description: This value (or the absence of this parm from the XML) will cause no change on the device; any previously selected settings are retained.
     - code: 1
       devicetype: A
       name: Enable
       mx: "4.2"
       osx: "4.2"
-      description: This value will cause the device user to be allowed to invoke the "Enterprise data reset" function from the System Settings Menu.
+      description: Allows the device user to invoke the "Enterprise Reset" function from the Android Settings panel.
     - code: 2
       devicetype: A
       name: Disable
       mx: "4.2"
       osx: "4.2"
-      description: This value will cause the device user to be prevented from invoking the "Enterprise data reset" function from the System Settings Menu.
+      description: Prevents the device user from invoking the "Enterprise Reset" function on the Android Settings panel.
 ---
 
-This parm allows you to specify whether or not the device user will be allowed invoke the "Enterprise data reset" function, usually found in the "Backup & reset" section of the System Settings Menu. Since this function could lead to data loss or could render a device less functional, it may be advisable to prevent device users from invoking it.
+Controls device-user access to the "Enterprise Reset" function of the Android Settings panel. An Enterprise Reset is intended to return the device to an enterprise-defined default state, generally as determined by the contents of the `/enterprise` partition on the device. **Note: This parameter does not perform an Enterprise data reset**.  
 
+**An Enterprise Reset can cause data loss. For more information, see [Power Manager](../mx/powermgr/#enterprisereset)**. 
+
+<!-- 
+4/10/18- removed because it doesn't seem to relate; possibly placed here by mistake:
 >**Note:** Just because access to a Storage Card is not blocked, the Storage Card may or may not be accessible. For example, if the Storage Card is implemented by physically removable media and there is no media in the slot, then the Storage Card would not be accessible even though access to the Storage Card was enabled. Or, if the Storage Card was encrypted, and the Named Key was removed from the Key Storage Database (see the EncryptMgr), the Storage Card would not be accessible even though it was present and not blocked.
+-->

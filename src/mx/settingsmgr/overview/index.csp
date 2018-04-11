@@ -10,10 +10,11 @@ The Settings Manager (SettingsMgr) controls access to specific device capabiliti
 
 ### Main Functionality
 
-* Enable and Disable the ability to: 
- * Perform an Enterprise Reset on the device
- * Change the Wi-Fi configuration
+* Enable/Disable access to: 
+ * Enterprise Reset function
+ * Wi-Fi configuration settings changes
+ * Device Tethering and Hotspot settings changes 
  * Install apps from unknown sources (i.e. other than the Google Play store)
  * Turn Airplane Mode On or Off
- * Access the App Manager, where installed and running applications can be affected
- * Control the use of notification messages to access app notification settings 
+ * App Manager, which can effect installed and running applications
+ * Notification messages and app notification settings 

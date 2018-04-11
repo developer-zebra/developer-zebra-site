@@ -16,19 +16,19 @@ parm:
       osx: "4.4"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to access the "Apps" section of the System Settings Menu.
+      description: This value (or the absence of this parm from the XML) will cause no change to the device; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Enable
       mx: "4.4"
       osx: "4.4"
-      description: This value will cause the device user to be allowed to access the "Apps" section of the System Settings Menu.
+      description: Allows the device user to access and make changes in the "Apps" section of the Android Settings panel.
     - code: 2
       devicetype: A
       name: Disable
       mx: "4.4"
       osx: "4.4"
-      description: This value will cause the device user to be prevented from accessing the "Apps" section of the System Settings Menu.
+      description: Prevents the device user from accessing the "Apps" section of the Android Settings panel.
 ---
 
-This parm allows you to specify whether or not the device user will be allowed to access the "Apps" section of the System Settings Menu.
+Controls whether the device user is allowed to access the "Apps" section of the Android Settings panel, and potentially effect installed and running applications.

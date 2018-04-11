@@ -1,0 +1,35 @@
+---
+csp: settingsmgr
+title: Tethering and Hotspot  
+type: parm
+order: 5
+mx: "8.0"
+devicetype: A
+parm:
+  pivotal: No
+  name: TetheringandPortableHotspot
+  type: list
+  list:
+    - code: 0
+      mx: "8.0"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no change on the device; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "8.0"
+      description: Allows the device user to access device tethering and Wi-Fi hotspot features.
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "8.0"
+      description: Prevents the device user from accessing device tethering and Wi-Fi hotspot features.
+---
+
+Controls whether the device user is allowed to access device tethering and Wi-Fi hotspot features. Tethering share the device's internet connection with a computer or other device attached with USB cable. The Hotspot feature allows the device to act as an access point for nearby devices to connect to the internet, sharing the device's Wi-Fi or cellular connection.  
+
+
+<!--
+../wifi/#hotspot-enabledisable
+-->

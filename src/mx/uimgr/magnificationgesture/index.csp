@@ -2,9 +2,8 @@
 csp: uimgr
 title: Magnification Gesture
 type: parm
-order: 5
+order: 30
 mx: "8.0"
-osx: "6.0"
 devicetype: A
 parm:
   pivotal: No
@@ -13,7 +12,6 @@ parm:
   list:
     - code: 0
       mx: "8.0"
-      osx: "6.0"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting is retained.
@@ -21,14 +19,12 @@ parm:
       devicetype: A
       name: Turn On 
       mx: "8.0"
-      osx: "6.0"
-      description: Allows "Network may be monitored..." notifications to be displayed.
+      description: Allows screen magnification by use of a touch gesture.
     - code: 2
       devicetype: A
       name: Turn Off
       mx: "8.0"
-      osx: "6.0"
-      description: Prevents "Network may be monitored..." notifications from being displayed.
+      description: Prevents screen magnification by use of a touch gesture.
 ---
 
-Controls whether 
+Controls whether a touch gesture (i.e. triple-tapping) can be used to magnify the image shown on the device display. 

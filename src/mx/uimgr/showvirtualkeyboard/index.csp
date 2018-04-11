@@ -2,7 +2,7 @@
 csp: uimgr
 title: Virtual Keyboard Show/Hide
 type: parm
-order: 14
+order: 35
 mx: "8.0"
 apilevel: "16"
 devicetype: A

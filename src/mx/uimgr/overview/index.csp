@@ -14,8 +14,8 @@ Android devices contain a variety of System applications that access UI elements
 
 ### Main Functionality
 
-* Enable/Disable use of the following:
-  * Quick Settings for user access to Wi-Fi, Bluetooth and other settings
+* Enable/Disable the following:
+  * Quick Settings controls for user access to Wi-Fi, Bluetooth and other settings
   * Clipboard function, which allows a device user to copy and paste information between applications
   * The AutoCorrect function, which stores commonly entered words and allows them to be entered instead of similar words that were mistyped
   * The Home Key function, which exits current application and presents the Home Screen application
@@ -23,6 +23,8 @@ Android devices contain a variety of System applications that access UI elements
   * "The network may be monitored..." message
   * "Recent Apps" button
   * Navigation Bar
+  * Display of the virtual keyboard
+  * Screen magnification gesture 
 * Configure localization settings to:
   * Set the Current Locale for a desired language and region
   * Set the Default Input Method to enhance entry of localized data

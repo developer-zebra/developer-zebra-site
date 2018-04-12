@@ -14,7 +14,7 @@ parm:
     - code: 0
       devicetype: A
       name: none
-      description: This value (or the absence of this parm from the XML) will cause no change to Bug Report Manager settings; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) will cause no change to Bug Report Manager settings; any previously selected setting is retained.
       mx: "6.3"
       apilevel: "23"
     - code: 1
@@ -31,4 +31,9 @@ parm:
       apilevel: "23"
 ---
 
-Controls whether to upload bug reports to the Zebra Cloud. When this feature is enabled, data is stored temporarily in a private area on the device until transport to the Zebra Cloud is complete. **At no time is this pre-transport data available to users or third-party apps**. Cloud transport is provided on Zebra devices by the Elemez B2M client.
+Controls whether to upload bug reports to the Zebra Cloud. When this feature is enabled, data is stored temporarily in a private area on the device until transport to the Zebra Cloud is complete. **At no time is this pre-transport data available to users or third-party apps**. 
+
+<!-- 
+removed 4/12/18 per eng:
+Cloud transport is provided on Zebra devices by the Elemez B2M client.
+-->

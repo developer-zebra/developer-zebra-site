@@ -8,6 +8,8 @@ productversion: '2.0'
 ## Overview
 The tables below show how the functions currently implemented through the MX Managament System (MXMS) will be handled through Android Enterprise Device Owner (AEDO) APIs. 
 
+-----
+
 ### CSP-to-AEDO APIs
 <table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
  width=714 style='border-collapse:collapse;mso-table-layout-alt:fixed;
@@ -2807,6 +2809,8 @@ page-break-before:always'>
 
 <p class=MsoNormal> </p>
 -->
+
+-----
 
 ### CSP-to-OemConfig (Managed) 
 <table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
@@ -13230,6 +13234,8 @@ page-break-before:always'>
 <p class=MsoNormal> </p>
  -->
 
+-----
+
 ### CSP Query-to-OemInfo URI
 <table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
  width=720 style='border-collapse:collapse;mso-table-layout-alt:fixed;
@@ -13872,7 +13878,10 @@ normal'><span style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal> </p> -->
 
+-----
+
 ### CSP Functions without AEDO or OemConfig
+
 <table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
  width=720 style='border-collapse:collapse;mso-table-layout-alt:fixed;
  border:none;mso-border-alt:solid #8EAADB .5pt;mso-border-themecolor:accent1;
@@ -14680,12 +14689,17 @@ mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
 EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
 page-break-before:always'>
 </span>
+
+-----
+
 <!-- 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal> </p> -->
+
+<!--
 
 ### Notes
 <table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
@@ -15973,10 +15987,13 @@ page-break-before:always'>
   </td>
  </tr>
 </table>
+-->
 
 -----
 
 ## See Also
 
 * [About EMM Tolkit](../about)
+<!-- 
 * [Staging Service API](../api)
+ -->

@@ -4,6 +4,8 @@ title: Tethering and Hotspot Access
 type: parm
 order: 5
 mx: "8.0"
+osx: "7.6"
+apilevel: "24"
 devicetype: A
 parm:
   pivotal: No
@@ -12,19 +14,25 @@ parm:
   list:
     - code: 0
       mx: "8.0"
+      osx: "7.6"
+      apilevel: "24"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change on the device; any previously selected setting is retained.
+      description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Enable
       mx: "8.0"
-      description: Allows the device user to access and make changes to device tethering and Wi-Fi hotspot features.
+      osx: "7.6"
+      apilevel: "24"
+      description: Allows the device user to access and make changes to device tethering and Wi-Fi hotspot features through the Android Settings panel.
     - code: 2
       devicetype: A
       name: Disable
       mx: "8.0"
-      description: Prevents the device user from accessing device tethering and Wi-Fi hotspot features.
+      osx: "7.6"
+      apilevel: "24"
+      description: Prevents the device user from accessing device tethering and Wi-Fi hotspot features  through the Android Settings panel.
 ---
 
-Controls device-user access to device tethering and Wi-Fi hotspot settings through the Android Settings panel or Quick Settings control. **Note: This parameter does not change tethering or hotspot features settings**. 
+Controls whether the device user can access tethering and Wi-Fi hotspot settings through the Android Settings panel or Quick Settings control. If tethering and/or hotspot features are disabled on the device, setting this parameter to "Disabled" (option 2) prevents the user from enabling them. **Note: This parameter does not change tethering or hotspot settings**. 

@@ -31,4 +31,4 @@ parm:
       description: Prevents the device user from accessing or making changes to the Wi-Fi configuration from the System Settings Menu or Quick Settings controls.
 ---
 
-Controls device-user access to Wi-Fi settings through the Android Settings panel or Quick Settings control. **Note: This parameter does not change Wi-Fi settings**.  
+Controls whether the device user can access Wi-Fi settings through the Android Settings panel or Quick Settings control. **Note: This parameter does not change Wi-Fi settings**.  

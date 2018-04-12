@@ -16,7 +16,7 @@ Software Licenses acquired from a Zebra Software License Server may be Individua
 
 ### License Verification
 
-Software License Files are acquired from the Zebra Software License Server, stored locally or online and referenced through the LicenseMgr. However, the sever does not verify whether such files are matched to a particular Licensed Feature. If a valid Software License File is wrongly applied to Licensed Feature other than the intended feature, that feature will not be enabled and no error will result.
+Software License Files are acquired from the Zebra Software License Server, stored locally or online and referenced through the LicenseMgr. However, the server does not verify whether such files are matched to a particular Licensed Feature. If a valid Software License File is wrongly applied to Licensed Feature other than the intended feature, that feature will not be enabled and no error will result.
 
 To prevent this scenario, Zebra recommends using the [Verification Method](#verificationmethod) parameter to verify that Licensed Feature Name(s) match those contained in the Software License File(s). This will cause an error to be returned in the Result XML in the event of a mismatch.
 

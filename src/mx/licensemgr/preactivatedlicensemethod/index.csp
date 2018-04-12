@@ -1,0 +1,26 @@
+---
+csp: licensemgr
+title: Preactivated License Method
+type: parm
+order: 9
+mx: "8.0"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: The License Action Zebra is "Activate AID" and License Choice is "Perform Zebra Action"
+  name: LicenseSource
+  type: list
+  list:
+    - code: 1
+      devicetype: A
+      name: embed
+      mx: "8.0"
+      description: Embeds the preactivated license file into the profile XML.
+    - code: 2
+      devicetype: A
+      name: reference
+      mx: "8.0"
+      description: References a preactivated license file already on the device.
+---
+
+Used to specify the delivery method of the preactivated license file on the device. When "reference" is selected (option 2), use the "Preactivated License Path And File Name" parameter to specify the path and file name of the licence file on the device.

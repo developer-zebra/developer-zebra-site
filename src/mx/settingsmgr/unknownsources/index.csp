@@ -1,6 +1,6 @@
 ---
 csp: settingsmgr
-title: Install From Unknown Sources
+title: Unknown Sources Access
 type: parm
 order: 4
 mx: "4.3"
@@ -22,13 +22,13 @@ parm:
       name: Enable
       mx: "4.3"
       osx: "4.3"
-      description: Allows the device user access to the "Unknown Sources" option for app installation in the Android Settings panel.
+      description: Allows the device user access to the "Unknown Sources" option in the Android Settings panel for app installation.
     - code: 2
       devicetype: A
       name: Disable
       mx: "4.3"
       osx: "4.3"
-      description: Prevents the device user from accessing the "Unknown Sources" option for app installation in the Android Settings panel.
+      description: Prevents the device user from accessing the "Unknown Sources" option in the Android Settings panel for app installation.
 ---
 
 Controls whether the device user can access the section of the Android Settings panel that controls the ability to install applications from sources other than the Google Play store.

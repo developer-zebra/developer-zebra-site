@@ -34,7 +34,7 @@ parm:
       name: CaptureLogcat
       description: Sets the device to capture the "logcat" when an app crashes unexpectedly.
       mx: "8.0"
-      apilevel: "265"
+      apilevel: "26"
 ---
 
 Controls whether an error report is captured when an app crashes unexpectedly (non-ANR), and which type of report (Bug Report/logcat) is captured. A Bug Report contains information described in the [Overview](#overview) section above. The Android system log (sometimes called "logcat" after the command used to retrieve it) stores system messages, stack traces and log information written by apps running at the time of the crash. 

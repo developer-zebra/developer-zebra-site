@@ -23,11 +23,14 @@ Zebra provides a persistence framework that allows designated apps and settings 
 <!-- 
 **This guide describes Zebra-recommended best practices for returning a device to a manageable state using the Zebra persistence framework**. 
  -->
+<!--  
 **Vendor-specific practices**: 
 * **[AirWatch persistence info](http://techdocs.zebra.com/bestpractices/persistence_airwatch.pdf)**
 * **[SOTI persistence info](http://techdocs.zebra.com/bestpractices/persistence_soti.pdf)**
 
------
+ -->
+
+ -----
 
 ## Persistence Practices 
 
@@ -100,7 +103,7 @@ Zebra recommends dividing the staging process into three phases:
 * **Agent settings must allow the device to connect to the appropriate EMM server**. 
 * **Agent settings must allow management of the device**.
 * **the EMM Agent (not the Staging process) in most cases is expected to control access to production-network configuration**, since such configurations often change over time. 
-* ** The agent settings should ensure that production-network configuration is re-established** following an Enterprise Reset​. 
+* **The agent settings should ensure that production-network configuration is re-established** following an Enterprise Reset​. 
 
 -----
 

@@ -9,10 +9,6 @@ menu:
       url: /emmtk/2-0/guide/about
     - title: Guides
       url: /emmtk/2-0/guide
-    - title: Persistence
-      url: /emmtk/2-0/guide/persistence
-    - title: Staging API
-      url: /emmtk/2-0/guide/api
     - icon: fa fa-search
       url: /emmtk/2-0/search
 product: EMM Toolkit

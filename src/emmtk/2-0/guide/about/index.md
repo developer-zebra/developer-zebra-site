@@ -29,10 +29,7 @@ This guide contains all information necessary for adding these capabilities to a
 
 * **[Android Setup Wizard Bypass](../bypass) -** explains Zebra's method for skipping the Android Setup Wizard (also known as the "Welcome Screen") following an Enterprise Reset, which erases non-persistent software on the device. 
 * **[Persistence Best Practices](../persistence) -** details Zebra-recommended processes for preserving EMM agent and related files and restoring a device to manageability after an Enterprise Reset.
-<!-- 
-* **[Staging API Service](../api) -** explains how to use the Staging API service from an EMM console to produce StageNow barcodes and to enroll an AEDO EMM Agent using the StageNow client app.
- -->
- * **[Enrolling an AEDO](../enrollaedo) -** covers the workings of Android Enterprise Device Owner mode, how the features works in relation to sharing and the steps necessary for an EMM to enable use of this feature.
+* **[Enrolling an AEDO](../enrollaedo) -** covers the workings of Android Enterprise Device Owner mode, how the features works in relation to sharing and the steps necessary for an EMM to enable use of this feature.
 * **[DA-to-DO Migration](migratedado) -** Describes the method for moving a device from DA (or NON-DO) to DO mode without loss of data or device reset.
 * **[DA+MX-to-AEDO Migration](../migrateaedo) -** Describes how to transition an EMM Agent from MX to AEDO to enable management of Zebra Android N devices, on which AEDO is the recommended management strategy.
 * **[EMM Toolkit Roadmap](../roadmap) -**  Explains the migration period and basic processes for moving devices from legacy Android versions and Zebra management processes to Android N and beyond, including a time line for when such migrations become mandatory.
@@ -40,6 +37,11 @@ This guide contains all information necessary for adding these capabilities to a
 * **[OEMconfig/OEMinfo Schema](../schema) -** Documents the content, usage and management of OemConfig and OenInfo schema, including approaches for encoding managed configurations for delivery an EMM server to an EMM agent and recommendations for implementing a data-driven UI.
 * **[Code Samples](../samples) -** Provides validated code that EMM solution providers can use to implement managed configurations within their agent.
 * **[OEMinfo Developer Guide](../oeminfodevguide) -** Documents API usage and development requirements for OemInfo, a standards-based mechanism by which applications can acquire published information about a Zebra device.
+
+<!-- 
+* **[Staging API Service](../api) -** explains how to use the Staging API service from an EMM console to produce StageNow barcodes and to enroll an AEDO EMM Agent using the StageNow client app.
+ -->
+
 
 -----
 

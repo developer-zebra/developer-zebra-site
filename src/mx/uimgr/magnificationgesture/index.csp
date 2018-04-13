@@ -4,7 +4,8 @@ title: Magnification Gesture
 type: parm
 order: 30
 mx: "8.0"
-devicetype: A
+apilevel: "26"
+devicetype: A,B
 parm:
   pivotal: No
   name: MagnificationGesture
@@ -12,19 +13,22 @@ parm:
   list:
     - code: 0
       mx: "8.0"
-      devicetype: A
+      apilevel: "26"
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting is retained.
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Turn On 
       mx: "8.0"
+      apilevel: "26"
       description: Allows screen magnification by use of a touch gesture.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Turn Off
       mx: "8.0"
+      apilevel: "26"
       description: Prevents screen magnification by use of a touch gesture.
 ---
 
-Controls whether a touch gesture (i.e. triple-tapping) can be used to magnify the image shown on the device display. 
+Controls the "Magnification gesture" setting on the device, which is found in the Accessibility section of the Android Settings Panel. By turning this feature on (option 1), triple-tapping the screen magnifies the device display (except navigation bar and keyboard). 

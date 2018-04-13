@@ -4,27 +4,30 @@ title: Virtual Keyboard Show/Hide
 type: parm
 order: 35
 mx: "8.0"
-apilevel: "16"
-devicetype: A
+apilevel: "26"
+devicetype: A,B
 parm:
   pivotal: Yes
   name: ShowVirtualKeyBoard
   type: list
   list:
     - code: 0
-      devicetype: A
+      devicetype: A,B
       name: Do not change
       mx: "8.0"
+      apilevel: "26"
       description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting will be retained.
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Show 
       mx: "8.0"
+      apilevel: "26"
       description: Shows the Gear icon in the Notifications panel. 
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Hide 
       mx: "8.0"
+      apilevel: "26"
       description: Hides the Gear icon in the Notifications panel. 
 ---
 

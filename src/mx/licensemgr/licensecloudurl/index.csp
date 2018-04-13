@@ -3,33 +3,39 @@ csp: licensemgr
 title: License Cloud URL
 type: parm
 order: 9
-mx: "7.2"
+mx: "8.0"
 devicetype: A
 parm:
   pivotal: No
-  presentif: The License Source is "Zebra Cloud" and License Action Zebra is "Activate AID" and License Choice is "Perform Zebra license action"
+  presentif: The License Source is "Zebra Cloud" and License Action Zebra is "Activate " and License Choice is "Zebra"
   name: LicenseCloudURL
   type: list
   list:
     - code: 1
       devicetype: A
-      name: 
-      mx: "7.2"
-      description: Selects the cloud-based Zebra Licensing test server.
+      name: Zebra UAT Cloud
+      mx: "8.0"
+      description: Selects cloud-based Zebra licensing test server.
     - code: 2
       devicetype: A
-      name: 
-      mx: "7.2"
-      description: Selects the cloud-based Zebra Licensing production server.
+      name: Zebra Production Cloud
+      mx: "8.0"
+      description: Selects the cloud-based Zebra licensing production server.
     - code: 3
       devicetype: A
-      name: Custom URL License
-      mx: "7.2"
+      name: Zebra Production Cloud Via Proxy
+      mx: "8.0"
+      description: Used when the Zebra production cloud-based licensing server is accessed through a proxy.
+    - code: 4
+      devicetype: A
+      name: Zebra Test Cloud Via Proxy
+      mx: "8.0"
+      description: Used when the Zebra test cloud-based licensing server is accessed through a proxy.
+    - code: 5
+      devicetype: A
+      name: Zebra Custom Cloud
+      mx: "8.0"
       description: Allows a custom URL for an on-premise license server or relay server to be specified.
 ---
 
-Used to specify the source for Zebra server-based licensing on the device. 
-
-<!--
-1/18/18- NOTE- option names have been removed because they are incorrect in DSD (options are reversed). "Will be fixed in the next version," per eng.
--->
+Used to specify the source for Zebra cloud-based licensing on the device. 

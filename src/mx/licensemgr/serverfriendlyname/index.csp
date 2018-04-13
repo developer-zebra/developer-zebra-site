@@ -7,7 +7,7 @@ mx: "7.2"
 devicetype: A
 parm:
   pivotal: No
-  presentif: The License Source is "Zebra Cloud" and License Action Zebra is "Activate AID" and License Choice is "Perform Zebra license action" and License Choice is "Use a local license server option"
+  presentif: The License Action Zebra is "Activate" and License Choice is "Zebra" and License Source is "LLS" OR License Source is "Zebra Cloud" and License Choice URL is "Zebra Production Cloud Via Proxy, Zebra Test Cloud Via Proxy or Zebra Custom Cloud"
   name: ServerFriendlyName
   type: string
 ---

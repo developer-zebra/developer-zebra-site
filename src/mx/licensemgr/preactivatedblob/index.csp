@@ -1,0 +1,19 @@
+---
+csp: licensemgr
+title: Preactivated Blob
+type: parm
+order: 13
+mx: "8.0"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: The License Action Zebra is "Activate" and License Choice is "Zebra" and License Source is "Preactivated" and Preactivated License Method is "Reference"
+  name: PreactivatedBlob
+  type: string
+---
+
+Used to specify the path and file name of the preactivated license file on the device.  
+
+**Parm value input rules**: 
+
+* String containing at least one character

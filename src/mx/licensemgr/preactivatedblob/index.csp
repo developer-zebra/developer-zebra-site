@@ -1,6 +1,6 @@
 ---
 csp: licensemgr
-title: Preactivated Blob
+title: Preactivated 'Blob'
 type: parm
 order: 13
 mx: "8.0"
@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to specify the path and file name of the preactivated license file on the device.  
+Used to specify the path and file name of the preactivated license file on the device. 
 
 **Parm value input rules**: 
 

@@ -58,6 +58,9 @@
                                     <p class="">{{{this.contents}}}</p>
                                     {{#is this.type "parm"}}
                                         <blockquote>
+                                        {{#if this.info}}
+                                        <p><b>Note:</b> {{this.info}}</p>
+                                        {{/if}}
                                         {{#if this.parm.presentif}}
                                         <p><b>Shown if:</b> {{this.parm.presentif}}</p>
                                         {{/if}}
@@ -114,6 +117,7 @@
                                                 <th>Name</th>
                                                 <th>Description</th>
                                            <!-- <th>Model</th> -->
+                                                <th>Note</th>
                                                 <th>Requires</th>
                                             </tr>
                                             {{#each this.parm.list}}
@@ -121,6 +125,9 @@
                                                 <td>{{this.code}}</td>
                                                 <td>{{this.name}}</td>
                                                 <td>{{this.description}}</td>
+                                                <td>{{#if info}}
+                                    <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="{{info}}" aria-hidden="true"></i>
+                                    {{/if}}</td>
 
                                         <!-- DEVICETYPE LOGIC FOR LIST TABLE --> 
                                         
@@ -190,6 +197,7 @@
         </div>
     </section>   
 
+// filtering 
 <script type="text/javascript">
     var mxJSON = {
         csp: "{{csp}}",

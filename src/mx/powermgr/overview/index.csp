@@ -21,12 +21,13 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
 * Update the OS on a device
 * Perform multiple updates in a single step
 * Enable/disable Doze Mode
+* Enable/disable Wake-up Sources 
 * **On the VC80x vehicle-mounted computer and similarly equipped Zebra devices**: 
  * Turn power to specific serial and USB ports on and off
  * Control heaters for touch panel and battery, and on serial and USB ports
  * Set temperature thresholds (in degrees Celsius) for turning heaters on and off
  * Set the device to automatically turn on and/or off with the vehicle-mounted computer and similarly equipped Zebra devices ignition switch
- * Set a delay (in minutes) for automatic device turn-off
+ * Set a delay (in minutes) for device auto-off
 
 ### Sleep Mode
 

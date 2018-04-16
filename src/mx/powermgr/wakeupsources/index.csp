@@ -33,6 +33,3 @@ parm:
 ---
 
 This is the On/Off switch for Wake-up Sources, which can wake the device from sleep. 
-
-> Supported on TC20/TC25 devices only.
-

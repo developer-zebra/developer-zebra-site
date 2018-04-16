@@ -34,7 +34,6 @@ The Bug Report Manager (BugReportMgr) provides a framework for reporting the tim
 
 ### About Bug Reports
 
-#### KEY FACTS
 * **Bug reports are stored in a file called** `bugreport-YYYY-MM-DD-HH-MM-SS.zip`.
 * **If the user enters an "Error name" through the** [FileNameTextBox](#error-name) parameter, that text will append the report name as `bugreport-YYYY-MM-DD-HH-MM-SS-Error_name.zip`.
 * **Text entered in the FileNameTextBox parameter becomes the name of the file** containing the user-entered data in the bug report.  

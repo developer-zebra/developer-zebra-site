@@ -27,14 +27,19 @@ The Bug Report Manager (BugReportMgr) provides a framework for reporting the tim
 
 ### About Bug Reports
 
-**Key Facts**
+**KEY FACTS**:
 
-* Bug reports are stored in a file called `bugreport-YYYY-MM-DD-HH-MM-SS.zip`.
-* If the user enters an "Error name" through the [FileNameTextBox](#error-name) parameter, that text will append the report name as `bugreport-YYYY-MM-DD-HH-MM-SS-Error_name.zip`.
-* Text entered in the FileNameTextBox parameter becomes the name of the file containing the user-entered data in the bug report.  
-* The bug report also includes the standard Android bug report (.txt) and screenshot (.png) files.
-* Bug reports can be triggered silently (no user Dialog) using the broadcast message: `com.symbol.mxmf.intent.START_FOR_BUG_REPORT`.
-* Bug reports can be triggered silently (no user dialog) from the Settings panel on devices with USB debugging enabled.
+* **Bug reports are stored in a file called** `bugreport-YYYY-MM-DD-HH-MM-SS.zip`.
+* **If the user enters an "Error name" through the** [FileNameTextBox](#error-name) parameter, that text will append the report name as `bugreport-YYYY-MM-DD-HH-MM-SS-Error_name.zip`.
+* **Text entered in the FileNameTextBox parameter becomes the name of the file** containing the user-entered data in the bug report.  
+* **The bug report <u>includes the standard Android bug report</u> (.txt) and screenshot (.png) files.
+* **Bug reports can be triggered silently** (no user dialog) using the broadcast message: `com.symbol.mxmf.intent.START_FOR_BUG_REPORT`.
+* **On devices with USB debugging enabled**, bug reports also can be triggered silently from the Settings panel .
+
+**SECURITY WARNINGS**: 
+
+* **Bug reports should be shared only with trusted people and apps**. They contain app-usage, location and other data from system logs that might be considered sensitive. 
+* **Sending bug reports via email should be used only if end-to-end delivery occurs entirely within a secure environment**. This option might expose sensitive application data not otherwise obtainable to undisclosed recipients resulting in security and privacy implications.
 
 <!--
 ![img](../../../images/mx/sample_bug_report_zip.png)

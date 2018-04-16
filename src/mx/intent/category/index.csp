@@ -9,7 +9,7 @@ devicetype: A,B
 parm:
   presentif: The Action is NOT "Enroll Device Owner"
   pivotal: No
-  name: Type
+  name: Category
   type: string
 ---
 

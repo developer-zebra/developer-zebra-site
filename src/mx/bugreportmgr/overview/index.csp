@@ -25,22 +25,22 @@ The Bug Report Manager (BugReportMgr) provides a framework for reporting the tim
  * Send reports to a specified email address
  * Upload reports to the Zebra Cloud
 
+
+### SECURITY WARNINGS
+* **Bug reports should be shared only with trusted people and apps**. They contain app-usage, location and other data from system logs that might be considered sensitive.
+* **Sending bug reports via email should be used only if end-to-end delivery occurs entirely within a secure environment**. Emailing bug reports can expose sensitive application data not otherwise obtainable to undisclosed recipients resulting in security and privacy implications.
+
 -----
 
 ### About Bug Reports
 
-
-### SECURITY WARNINGS
-* **Bug reports should be shared only with trusted people and apps**. They contain app-usage, location and other data from system logs that might be considered sensitive. 
-* **Sending bug reports via email should be used only if end-to-end delivery occurs entirely within a secure environment**. This option might expose sensitive application data not otherwise obtainable to undisclosed recipients resulting in security and privacy implications.
-
-####KEY FACTS
+#### KEY FACTS
 * **Bug reports are stored in a file called** `bugreport-YYYY-MM-DD-HH-MM-SS.zip`.
 * **If the user enters an "Error name" through the** [FileNameTextBox](#error-name) parameter, that text will append the report name as `bugreport-YYYY-MM-DD-HH-MM-SS-Error_name.zip`.
 * **Text entered in the FileNameTextBox parameter becomes the name of the file** containing the user-entered data in the bug report.  
 * **The bug report <u>includes the standard Android bug report</u> (.txt) and screenshot (.png) files.
 * **Bug reports can be triggered silently** (no user dialog) using the broadcast message: `com.symbol.mxmf.intent.START_FOR_BUG_REPORT`.
-* **On devices with USB debugging enabled**, bug reports also can be triggered silently from the Settings panel .
+* **On devices with USB debugging enabled**, bug reports also can be triggered silently from the Settings panel.
 
 <!--
 ![img](../../../images/mx/sample_bug_report_zip.png)
@@ -53,7 +53,7 @@ _A Zebra bug report (called 'browser-crash') adds a user-generated input file to
 -----
 
 ### About the User Dialog
-Among the value-adds of Bug Report Manager is the user Dialog, which can gather information from the person using the device on which a bug has manifested, often providing valuable insight to the root cause of the defect. This "questionnaire" appears when the bug report is generated, and should be designed to gather relevant information from the device user about activities that might have led to or caused the malfunction being reported. User-entered data is stored in a separate text file within the `bugreport.zip`. **The construction of a Dialog is cumulative; any number of user-entry fields (Text Boxes) and field Labels can be added until all desired questions are asked and all data-gathering needs are addressed**. 
+Among the value-adds of Bug Report Manager is the Dialog, which can gather information from the person using the device on which a bug has manifested, often providing valuable insight to the root cause of the defect. A "questionnaire" appears when the bug report is generated, and can be designed by an organization to gather relevant information from the device user about activities that might have led to or caused the malfunction being reported. User-entered data is stored in a separate text file within the `bugreport.zip`. **The construction of a Dialog is cumulative; any number of user-entry fields (Text Boxes) and field Labels can be added until all desired questions are asked and all data-gathering needs are addressed**. 
 
 ![img](../../../../../images/mx/sample_user_dialog.png)
 _A sample user Dialog or "questionnaire" for the device user._

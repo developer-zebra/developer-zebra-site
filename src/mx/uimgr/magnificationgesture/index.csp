@@ -4,7 +4,7 @@ title: Magnification Gesture
 type: parm
 order: 30
 mx: "8.0"
-apilevel: "26"
+apilevel: "24"
 devicetype: A,B
 parm:
   pivotal: No
@@ -13,7 +13,7 @@ parm:
   list:
     - code: 0
       mx: "8.0"
-      apilevel: "26"
+      apilevel: "24"
       devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting is retained.
@@ -21,13 +21,13 @@ parm:
       devicetype: A,B
       name: Turn On 
       mx: "8.0"
-      apilevel: "26"
+      apilevel: "24"
       description: Allows screen magnification by use of a touch gesture.
     - code: 2
       devicetype: A,B
       name: Turn Off
       mx: "8.0"
-      apilevel: "26"
+      apilevel: "24"
       description: Prevents screen magnification by use of a touch gesture.
 ---
 

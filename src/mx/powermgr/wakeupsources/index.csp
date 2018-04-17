@@ -17,19 +17,19 @@ parm:
       osx: "7.7"
       devicetype: B
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to the device; any previously selected setting is retained.
+      description: This value (or the absence of this parm from the XML) causes no change to the device; any previously selected setting is retained.
     - code: 1
       devicetype: B
       name: Enable
       mx: "8.0"
       osx: "7.7"
-      description: Enables all sources to wake the device from sleep. 
+      description: Enables all sources to wake the device from suspend mode. 
     - code: 2
       devicetype: B
       name: Disable
       mx: "8.0"
       osx: "7.7"
-      description: Disables all sources from waking the device from sleep. 
+      description: Disables all sources from waking the device from suspend mode. 
 ---
 
-This is the On/Off switch for Wake-up Sources, which can wake the device from sleep. 
+This is the On/Off switch for Wake-up Sources, which wake the device from power-saving suspend mode when pressed. Supported devices by default wake only by pressing the power button. When this paramater is enabled )option 1), a device also wakes at the press of the push-to-talk (PTT) button on the left side of the device or any of its scan buttons.

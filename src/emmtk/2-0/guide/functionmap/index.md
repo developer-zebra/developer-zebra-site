@@ -10,7 +10,8 @@ The tables below show how the functions currently implemented through the MX Man
 
 -----
 
-### CSP-to-AEDO APIs
+## CSP-to-AEDO APIs
+
 <table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
  width=714 style='border-collapse:collapse;mso-table-layout-alt:fixed;
  border:none;mso-border-alt:solid #8EAADB .5pt;mso-border-themecolor:accent1;
@@ -2812,7 +2813,8 @@ page-break-before:always'>
 
 -----
 
-### CSP-to-OemConfig (Managed) 
+## CSP-to-OemConfig (Managed) 
+
 <table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
  width=720 style='border-collapse:collapse;mso-table-layout-alt:fixed;
  border:none;mso-border-alt:solid #8EAADB .5pt;mso-border-themecolor:accent1;
@@ -12686,6 +12688,9 @@ page-break-before:always'>
  </tr>
 </table>
 
+-----
+
+<!-- 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <span style='font-size:11.0pt;line-height:106%;font-family:"Calibri",sans-serif;
@@ -12695,13 +12700,19 @@ mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
 EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
 page-break-before:always'>
 </span>
+ -->
 
+<!-- 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>EMMTK MXMS CSP Query Mappings to AEDO APIs</p>
+<p class=MsoNormal>
 
+
+-->
+
+## CSP Query-to-AEDO API Mappings
 <table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
  width=720 style='width:539.75pt;border-collapse:collapse;border:none;
  mso-border-alt:solid #8EAADB .5pt;mso-border-themecolor:accent1;mso-border-themetint:
@@ -13216,6 +13227,7 @@ page-break-before:always'>
  <![endif]>
 </table>
 
+<!-- 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
 normal'><span style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
 
@@ -13226,6 +13238,8 @@ mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
 EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
 page-break-before:always'>
 </span>
+ -->
+
 <!-- 
 <p class=MsoNormal><span style='font-size:9.0pt;line-height:106%'><o:p>&nbsp;</o:p></span></p>
 
@@ -13236,7 +13250,7 @@ page-break-before:always'>
 
 -----
 
-### CSP Query-to-OemInfo URI
+## CSP Query-to-OemInfo URI
 <table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
  width=720 style='border-collapse:collapse;mso-table-layout-alt:fixed;
  border:none;mso-border-alt:solid #8EAADB .5pt;mso-border-themecolor:accent1;
@@ -13857,6 +13871,9 @@ page-break-before:always'>
  </tr>
 </table>
 
+-----
+
+<!-- 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
 normal'><span style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
 
@@ -13870,17 +13887,20 @@ mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
 EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
 page-break-before:always'>
 </span>
+
+-->
+
 <!-- 
 <p class=MsoNormal><span style='font-size:9.0pt;line-height:106%'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
 normal'><span style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal> </p> -->
+<p class=MsoNormal> </p> 
+-->
 
------
 
-### CSP Functions without AEDO or OemConfig
+## CSP Functions without AEDO or OemConfig
 
 <table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
  width=720 style='border-collapse:collapse;mso-table-layout-alt:fixed;
@@ -13902,8 +13922,8 @@ normal'><span style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
    <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:
    0in;margin-left:3.4pt;margin-bottom:.0001pt;line-height:normal;mso-yfti-cnfc:
    5'><b><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
-   color:white;mso-themecolor:background1'>CSP<span style='mso-tab-count:2'>                </span><span
-   style='mso-spacerun:yes'>  </span>Parm<o:p></o:p></span></b></p>
+   color:white;mso-themecolor:background1'>CSP<span style='mso-tab-count:2'></span>
+   <span style='mso-spacerun:yes'>  </span>Parm<o:p></o:p></span></b></p>
    </td>
    <td width=72 valign=top style='width:.75in;border-top:solid #4472C4 1.0pt;
    mso-border-top-themecolor:accent1;border-left:none;border-bottom:solid #4472C4 1.0pt;
@@ -14676,6 +14696,9 @@ normal'><span style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
  </tr>
 </table>
 
+-----
+
+<!-- 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
 normal'><span style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
 
@@ -14689,8 +14712,7 @@ mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
 EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
 page-break-before:always'>
 </span>
-
------
+-->
 
 <!-- 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
@@ -14699,9 +14721,9 @@ page-break-before:always'>
 
 <p class=MsoNormal> </p> -->
 
-<!--
 
-### Notes
+## Notes
+
 <table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
  width=720 style='border-collapse:collapse;mso-table-layout-alt:fixed;
  border:none;mso-border-alt:solid #8EAADB .5pt;mso-border-themecolor:accent1;
@@ -14739,7 +14761,7 @@ page-break-before:always'>
   mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
   style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   </span></span></span></b><![endif]><b><span style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></b></p>
-  </td>
+                                                 </td>
   <td width=624 style='width:6.5in;border-top:none;border-left:none;border-bottom:
   solid #8EAADB 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-bottom-themetint:
   153;border-right:solid #8EAADB 1.0pt;mso-border-right-themecolor:accent1;
@@ -14800,7 +14822,7 @@ page-break-before:always'>
   153;mso-border-alt:solid #8EAADB .5pt;mso-border-themecolor:accent1;
   mso-border-themetint:153;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:9.0pt'>Controlled Per User<o:p></o:p></span></p>
+  normal'><span style='font-size:9.0pt'>Controlled per user<o:p></o:p></span></p>
   <p class=MsoListParagraphCxSpFirst style='margin-bottom:0in;margin-bottom:
   .0001pt;mso-add-space:auto;text-indent:-.25in;line-height:normal;mso-list:
   l5 level1 lfo12'><![if !supportLists]><span style='font-size:9.0pt;
@@ -14841,7 +14863,7 @@ page-break-before:always'>
   mso-border-themetint:153;background:#D9E2F3;mso-background-themecolor:accent1;
   mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal;mso-yfti-cnfc:64'><span style='font-size:9.0pt'>Controlled Per User<o:p></o:p></span></p>
+  normal;mso-yfti-cnfc:64'><span style='font-size:9.0pt'>Controlled per user<o:p></o:p></span></p>
   <p class=MsoListParagraphCxSpFirst style='margin-bottom:0in;margin-bottom:
   .0001pt;mso-add-space:auto;text-indent:-.25in;line-height:normal;mso-list:
   l5 level1 lfo12;mso-yfti-cnfc:64'><![if !supportLists]><span
@@ -14901,7 +14923,7 @@ page-break-before:always'>
   153;mso-border-alt:solid #8EAADB .5pt;mso-border-themecolor:accent1;
   mso-border-themetint:153;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:9.0pt'>Controlled Per User<o:p></o:p></span></p>
+  normal'><span style='font-size:9.0pt'>Controlled per user<o:p></o:p></span></p>
   <p class=MsoListParagraphCxSpFirst style='margin-bottom:0in;margin-bottom:
   .0001pt;mso-add-space:auto;text-indent:-.25in;line-height:normal;mso-list:
   l5 level1 lfo12'><![if !supportLists]><span style='font-size:9.0pt;
@@ -15141,7 +15163,7 @@ page-break-before:always'>
   style='font-size:9.0pt'>boolean Settings.Secure.putInt(LOCATION_PROVIDERS_ALLOWED,newProviders);<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:9.0pt'>The above code requires
-  WRITE_SECURE_SETTINGS permission, which is NOT granted to a Device Owner
+  WRITE_SECURE_SETTINGS permission, which  is NOT granted to a Device Owner
   application, except through use of the DevicePolicyManager.setSecureSetting()
   API, which limits the set of values that can be passed, with
   “LOCATION_PROVIDERS_ALLOWED” NOT being included.<o:p></o:p></span></p>
@@ -15610,7 +15632,7 @@ page-break-before:always'>
   normal;mso-yfti-cnfc:64'><span style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;mso-yfti-cnfc:64'><b style='mso-bidi-font-weight:normal'><span
-  style='font-size:9.0pt;color:red'>Recent discussions with AirWatch have led
+  style='font-size:9.0pt;color:red'>Recent discussions <!-- with AirWatch--> have led
   to a set of use cases where the EMM Agent is not StageNow, but instead is
   Staged using one or more Google methods (e.g. NFC Bump, QR Code, Hash Tag,
   Google Account, or Zero Touch).<span style='mso-spacerun:yes'>  </span>In
@@ -15987,7 +16009,7 @@ page-break-before:always'>
   </td>
  </tr>
 </table>
--->
+
 
 -----
 

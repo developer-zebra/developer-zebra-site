@@ -7,7 +7,7 @@ productversion: '2.0'
 
 ## Overview
 
-Zebra provides a persistence framework that allows designated apps and settings to remain on a device following an [Enterprise Reset](/mx/powermgr) (which otherwise erases all data). For providers of enterprise mobility management solutions, this permits EMM agent and related files to be preserved after all other software is erased, restoring the device to manageability. 
+Zebra provides a persistence framework that allows designated apps, settings and data to remain on a device following an [Enterprise Reset](/mx/powermgr), which otherwise erases all non-factory apps and data. For providers of enterprise mobility management (EMM) solutions, this permits an EMM agent and related services and files to be preserved after all other software is erased, restoring the device to a manageable state. 
 
 **Persistence can include**: 
 
@@ -18,7 +18,7 @@ Zebra provides a persistence framework that allows designated apps and settings 
 
 **Important: An Enterprise Reset returns a device to its enterprise-defined state** as generally determined by the contents of the `/enterprise` partition in the device file system. The Zebra solution makes this possible only on devices configured in advance with its persistence framework, which is typically installed during initial device enrollment. Some EMM systems have the ability to apply persistence or "fault tolerance" settings retroactively, giving administrators the ability to preserve certain device settings and/or apps immediately prior to a reset. This can return a reset device to its EMM-enrolled state without further intervention. 
 
-**Zebra recommends using EMM-specific persistence methods for device restoration whenever such capabilities are available**. For further information about EMM-specific persistence, please see the guides below or refer to the documentation for the specific EMM system in use. 
+**Zebra recommends using EMM-specific persistence methods for device restoration whenever such capabilities are available**. For further information about EMM-specific persistence, please <!-- see the guidance below or  -->refer to the documentation for the specific EMM system in use. 
 
 <!-- 
 **This guide describes Zebra-recommended best practices for returning a device to a manageable state using the Zebra persistence framework**. 
@@ -171,9 +171,14 @@ As a general rule, steps involved in staging a device should be kept to a minimu
 * **Intent**: 
  * Launch Agent APK and/or Enroll Agent APK as Device Owner​
 
-
-
 -----
+
+## Kiosk Mode
+
+
+
+When kiosk (lockdown) mode is enabled, the device user loses the ability to pair new Bluetooth devices. It is recommended that Bluetooth devices are paired with devices before kiosk mode is enabled. If a new Bluetooth device needs to be paired when kiosk mode is already enabled, then an administrator needs to exit kiosk mode, pair the Bluetooth device and then re-enable kiosk mode.
+
 <!-- 
 
 on a persistence-enabled device 

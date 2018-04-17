@@ -22,13 +22,19 @@ parm:
       description: Enables key-based navigation for switching between keyboard layouts.
 ---
 
-Controls the means of navigating between keyboard layouts. "Tabs" mode permits switching layouts by swiping or tapping directly on the desired tab. The tab bar will be visible at all times except when next-word suggestions (if enabled) are being displayed. "Keys" mode permits keys to be used to switch layouts. Such keys are typically in the lower-left corner of the layout and are subject to restrictions listed below. 
+Controls the means of navigating between keyboard layouts. "Tabs" mode permits switching layouts by swiping the key layout in either direction or by tapping directly on the desired tab. The tab bar will be visible at all times except when next-word suggestions (if enabled) are being displayed. "Keys" mode permits specific keys to be used to switch layouts, as with the default Android keyboard. However, this mode prevents certain keys from being remapped and overrides any previous assignment, mapping those keys to their respective keyboard layouts. **See important notes, below**. 
 
-**Notes**:
-* If either the tab bar _**or**_ the suggestion bar are enabled, both will appear.
-* The tab bar will not appear if the Next Word Suggestions bar _**and**_ the Voice Input Key are both disabled.
-* On GMS devices, if voice is enabled and the next-word suggestions feature is disabled, a blank suggestion bar will appear over the tab bar when words are being suggested.
-* If the `TYPE_TEXT_FLAG_NO_SUGGESTIONS` input type is enabled, neither the tab bar nor the suggestion bar will appear. [About Android input types](https://developer.android.com/reference/android/text/InputType.html). 
-* Enabling the Symbol tab disables remapping of the Numeric P3 key.
+**Remapping Notes**:
+* In "Keys" mode: 
+ * Numeric P3 and P4, Alpha P1 and Symbol P1 keys are mapped to keyboard layouts; custom remapping for these keys is disabled.
+ * Numeric P1 and P2 remain remappable.
 * Enabling the Alpha tab disables remapping of the Numeric P4 key.
 * Enabling the Numeric tab disables remapping of the Alphanumeric P1 key.
+* Enabling the Symbol tab disables remapping of the Numeric P3 key.
+* When the Symbol, Alpha or Numeric tab is disabled, the last-saved key remapping assignment for the corresponding key (if any) is restored.
+
+**Behavior Notes**:
+* If either the tab bar _**or**_ the suggestion bar are enabled, both appear.
+* The tab bar does not appear if the Next Word Suggestions bar _**and**_ the Voice Input Key are both disabled.
+* On GMS devices, if voice is enabled and the next-word suggestions feature is disabled, a blank suggestion bar appears over the tab bar when words are being suggested.
+* If the `TYPE_TEXT_FLAG_NO_SUGGESTIONS` input type is enabled, neither the tab bar nor the suggestion bar appears. [About Android input types](https://developer.android.com/reference/android/text/InputType.html). 

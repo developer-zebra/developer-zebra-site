@@ -13,7 +13,7 @@ parm:
 
 Used to specify a character, UNICODE value or EMOJI selection panel for substitution with the default key on the Numeric Keypad Row 4, Column 1. **If this field is left blank, no change will be made and any previously selected value will be retained**.
 
-**Note: Enabling the Numeric tab disables remapping of the Alphanumeric P1 key**. Remapping of this key also is disabled when "Keys" is selected as the [Navigation mode](#navigation-mode). 
+**Note: Enabling the Numeric tab disables remapping of the Alphanumeric P1 key. Remapping of this key also is disabled when "Keys" is selected as the [Navigation mode](#navigation-mode)**. 
 
 **Parm input rules:**
 

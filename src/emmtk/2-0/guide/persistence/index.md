@@ -20,17 +20,7 @@ Zebra provides a persistence framework that allows designated apps, settings and
 
 **Zebra recommends using EMM-specific persistence methods for device restoration whenever such capabilities are available**. For further information about EMM-specific persistence, please <!-- see the guidance below or  -->refer to the documentation for the specific EMM system in use. 
 
-<!-- 
-**This guide describes Zebra-recommended best practices for returning a device to a manageable state using the Zebra persistence framework**. 
- -->
-<!--  
-**Vendor-specific practices**: 
-* **[AirWatch persistence info](http://techdocs.zebra.com/bestpractices/persistence_airwatch.pdf)**
-* **[SOTI persistence info](http://techdocs.zebra.com/bestpractices/persistence_soti.pdf)**
-
- -->
-
- -----
+-----
 
 ## Persistence Practices 
 
@@ -175,9 +165,22 @@ As a general rule, steps involved in staging a device should be kept to a minimu
 
 ## Kiosk Mode
 
+Kiosk mode is generally defined as a single app running full-screen on a device with no obvious means of exiting. The kiosk feature is often used as a means of dedicating a device to a particular usage scenario while securing it from damage or misuse. Common examples include retail price checkers, auto parts look-ups and patient check-in systems. Kiosk mode also can be useful for dedicating devices to a single task, such as the hand-held barcode scanner at a retail checkout counter. 
+
+### Peripheral Connections
+
+When a kiosk lockdown is enabled, the device user generally loses the ability to connect with devices not previously known, such as Bluetooth peripherals. Zebra recommends that such peripherals be paired with devices running the kiosk app before kiosk mode is enabled. If a new Bluetooth device must be paired after kiosk mode is enabled, an administrator must exit kiosk mode, pair the Bluetooth device and re-enable kiosk mode.
+
+#### Vendor-specific practices
+
+**[AirWatch persistence info](http://techdocs.zebra.com/bestpractices/kiosk_persistence_airwatch.pdf)** | returning a kiosk-locked device to a manageable state
 
 
-When kiosk (lockdown) mode is enabled, the device user loses the ability to pair new Bluetooth devices. It is recommended that Bluetooth devices are paired with devices before kiosk mode is enabled. If a new Bluetooth device needs to be paired when kiosk mode is already enabled, then an administrator needs to exit kiosk mode, pair the Bluetooth device and then re-enable kiosk mode.
+<!--  
+
+* **[SOTI persistence info](http://techdocs.zebra.com/bestpractices/kiosk_persistence_soti.pdf)**
+
+-->
 
 <!-- 
 

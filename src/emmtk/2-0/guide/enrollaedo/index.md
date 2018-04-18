@@ -66,6 +66,11 @@ Save.
 Copy/Paste Provisioning.JSON to the /snaw/install/ folder.
 IMPORTANT: Filenames are case-sensitive. Make sure the file is named exactly as shown above.
 
+
+<img alt="image" style="height:350px" src="04_json_file.png"/>
+_caption_
+<br>
+
 5. Import the First of two StageNow Profiles as follows:
 Launch StageNow and log in as an Administrator.  
 On StageNow UI, select:
@@ -76,12 +81,22 @@ Then select: (screenshot of "Import Profiles")
 Navigate to the PERE-DO.zip file on the Workstation that was downloaded earlier from Zebra.  
 Then select Import.
 
+
+<img alt="image" style="height:350px" src="06_import_pere-do.png"/>
+_caption_
+<br>
+
 7. StageNow
 Edit the StageNow Profile as follows: 
 Rename Profile to: PERE-DO
 Select Stagenow Config.
 Select Wi-Fi.  Select Edit. 
 Edit the Wi-Fi profile for your network. Save.
+
+
+<img alt="image" style="height:350px" src="07_wifi.png"/>
+_caption_
+<br>
 
 8. StageNow
 Complete the StageNow Profile as follows:
@@ -123,12 +138,23 @@ Edit the StageNow Profile further:
 Select the first FileMgr.  Select Edit.
 Revise the Source File URI: Navigate to the EnrollDO.pem certificate file on your Workstation.  Save.
 
+
+<img alt="image" style="height:350px" src="14_filemgr.png"/>
+_caption_
+<br>
+
 15. StageNow
 Edit the StageNow Profile further:
 Select the second FileMgr.  Select Edit.
 Revise the Source File URI: Navigate to the /snaw/ folder that you created on your Workstation.  Save.
 
-16. tageNow
+
+<img alt="image" style="height:350px" src="15_filemgr.png"/>
+_caption_
+<br>
+
+
+16. StageNow
 Complete the StageNow Profile as follows:
 Select: (review)
 
@@ -141,6 +167,11 @@ Select Stage.  This will produce the staging barcode
 <Optional> 
 Save the barcode PDF file.  
 Print the barcodes.
+
+
+<img alt="image" style="height:350px" src="17_generate_barcodes.png"/>
+_caption_
+<br>
 
 18. Before scanning the Staging barcode(s):
 Ensure the StageNow Workstation is connected to the local staging WIFI network (same as set up in the Profiles).

@@ -20,6 +20,11 @@ content-items:
     url: persistence
   - type: section
     level: 4
+    title: Staging API Service
+    text: How to use Staging API Service to produce StageNow barcodes from an EMM Console to enroll an AEDO EMM Agent using the StageNow Client
+    url: stagingapi
+  - type: section
+    level: 4
     title: How to Enroll an AEDO
     text: Explains the workings of Android Enterprise Device Owner mode, how the features works in relation to sharing and the steps necessary for an EMM to enable use of this feature.
     url: enrollaedo

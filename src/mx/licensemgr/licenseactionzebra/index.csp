@@ -45,3 +45,7 @@ parm:
 
 Used to specify the action to perform on an Activation ID (AID) on the device. This parameter is for Zebra-branded devices only (for Symbol-branded devices, use the License Action parameter). To use Option 6, specify the 39-character Activitation ID using the Activation ID Refresh parameter. **Note: Options 4 and 5 are used programmatically on the device and are not intended for human interaction**. 
 
+QQQ
+is "refreshAID" option for MX 8.0? (DSD says 7.2)
+
+Confirm description for option 6

@@ -25,12 +25,12 @@ parm:
       devicetype: A
       name: Zebra Production Cloud Via Proxy
       mx: "8.0"
-      description: Used when the Zebra production cloud-based licensing server is accessed through a proxy.
+      description: Used when the Zebra production cloud-based licensing server is accessed through a proxy or relay server.
     - code: 4
       devicetype: A
       name: Zebra Test Cloud Via Proxy
       mx: "8.0"
-      description: Used when the Zebra test cloud-based licensing server is accessed through a proxy.
+      description: Used when the Zebra test cloud-based licensing server is accessed through a proxy or relay server.
     - code: 5
       devicetype: A
       name: Zebra Custom Cloud
@@ -39,3 +39,5 @@ parm:
 ---
 
 Used to specify the source for Zebra cloud-based licensing on the device. 
+
+QQQ more description needed (re: relay server)

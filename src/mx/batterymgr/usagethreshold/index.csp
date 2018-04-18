@@ -25,5 +25,5 @@ Smart Batteries retain the total number of charge/discharge cycles that accumula
 
 **Parm value input rules**: 
 
-* Integer from 0 - 65535
+* Integer from 0&ndash;65535
 * A setting of 0 (or the absence of this parm from the XML) causes no change or indicates "not applicable"

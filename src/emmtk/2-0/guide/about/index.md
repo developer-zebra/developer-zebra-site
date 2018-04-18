@@ -7,7 +7,7 @@ productversion: '2.0'
 
 ## Overview
 
-The Zebra Enterprise Mobility Management Toolkit (EMM TK) is designed to allow developers of EMM (sometimes known as mobile device management, or MDM) solutions to adapt their products to manage Zebra devices. This primarily involves interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. Through this mechanism, an EMM solution provider can offer customers the option of managing Zebra devices using only their solution. 
+The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow developers of EMM (sometimes known as mobile device management, or MDM) solutions to adapt their products to manage Zebra devices. This primarily involves interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. Through this mechanism, an EMM solution provider can offer customers the option of managing Zebra devices using their EMM solution alone. 
 
 **Zebra staging mechanisms follow these basic processes**:​
 

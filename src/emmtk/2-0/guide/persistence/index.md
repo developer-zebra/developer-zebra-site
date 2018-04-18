@@ -165,11 +165,11 @@ As a general rule, steps involved in staging a device should be kept to a minimu
 
 ## Kiosk Mode
 
-Kiosk mode is generally defined as a single app running full-screen on a device with no obvious means of exiting. The kiosk feature is often used as a means of dedicating a device to a particular usage scenario while securing it from damage or misuse. Common examples include retail price checkers, auto parts look-ups and patient check-in systems. Kiosk mode also can be useful for dedicating devices to a single task, such as the hand-held barcode scanner at a retail checkout counter. 
+Kiosk mode is generally defined as a single app running full-screen on a device with no obvious means of exiting. The kiosk feature is often used to dedicate a device to a particular usage scenario while securing it from damage or misuse. Common examples include retail price checkers, auto parts look-ups and patient check-in systems. Kiosk mode also can be useful for dedicating devices to a single task, such as the hand-held barcode scanner at a retail checkout counter. 
 
 ### Peripheral Connections
 
-When a kiosk lockdown is enabled, the device user generally loses the ability to connect with devices not previously known, such as Bluetooth peripherals. Zebra recommends that such peripherals be paired with devices running the kiosk app before kiosk mode is enabled. If a new Bluetooth device must be paired after kiosk mode is enabled, an administrator must exit kiosk mode, pair the Bluetooth device and re-enable kiosk mode.
+When a kiosk lockdown is enabled, the device user generally loses the ability to connect devices not previously known, such as Bluetooth peripherals. Zebra recommends that such peripherals be paired with devices running the kiosk app before kiosk mode is enabled. If a new Bluetooth device must be paired after kiosk mode is enabled, an administrator must exit kiosk mode, pair the Bluetooth device and re-enable kiosk mode.
 
 #### Vendor-specific practices
 

@@ -70,20 +70,16 @@ var inject_frontMatter = function(setting){
 var settings = [
 
     {
-<<<<<<< HEAD
-        "path": "emdk-for-android/6-3/",
+        "path": "stagenow/3-0/",
         "frontmatter": [
             {
-                "item" :  "productversion",
-                "value" : "6.3",
-=======
-        "path": "stagenow/2-6/",
-        "frontmatter": [
-            {
-                "item" :  "productversion",
-                "value" : "2.6",
->>>>>>> develop
-                "override": true,
+                "languages" :  [
+                    {
+                        "lang": "ch",
+                        "label": "Chinese"
+    
+                    }
+                ]
             }
         ]
     },

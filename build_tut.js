@@ -16,7 +16,6 @@ var Metalsmith = require('metalsmith'),
     serve = require('metalsmith-serve'),
     watch = require('metalsmith-watch'),
     foldermenu = require('metalsmith-folder-menu'),
-    imagemin = require('metalsmith-imagemin'),
     paths = require('metalsmith-paths'),
     codehighlight = require('metalsmith-code-highlight'),
     blc = require('metalsmith-broken-link-checker'),
@@ -895,6 +894,9 @@ var sitebuild = Metalsmith(__dirname)
     }))
     .use(foldermenu({
         folder: 'stagenow/2-10/'
+    }))
+    .use(foldermenu({
+        folder: 'stagenow/3-0/'
     }))
     .use(foldermenu({
         folder: 'emmtk/2-0/'

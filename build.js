@@ -311,6 +311,10 @@ var sitebuild = Metalsmith(__dirname)
     }))
 
     .use(foldermenu({
+        folder: 'stagenow/3-10/',
+        automenu: false
+    }))
+    .use(foldermenu({
         folder: 'mx/',
         automenu: false
     }))

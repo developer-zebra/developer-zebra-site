@@ -15,7 +15,6 @@ var Metalsmith = require('metalsmith'),
     serve = require('metalsmith-serve'),
     watch = require('metalsmith-watch'),
     foldermenu = require('metalsmith-folder-menu'),
-    imagemin = require('metalsmith-imagemin'),
     paths = require('metalsmith-paths'),
     codehighlight = require('metalsmith-code-highlight'),
     blc = require('metalsmith-broken-link-checker'),
@@ -896,6 +895,9 @@ var sitebuild = Metalsmith(__dirname)
     }))
     .use(foldermenu({
         folder: 'ehs/2-7/'
+    }))
+    .use(foldermenu({
+        folder: 'ehs/2-8/'
     }))
     .use(foldermenu({
         folder: 'datawedge/5-0/'

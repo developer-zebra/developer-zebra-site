@@ -7,7 +7,7 @@ mx: "7.1"
 devicetype: A
 parm:
   pivotal: No
-  presentif: The License Action Zebra is "Activate AID" and License Choice is "Perform Zebra Action"
+  presentif: The License Action Zebra is "Activate" and License Choice is "Zebra"
   name: LicenseSource
   type: list
   list:
@@ -29,6 +29,3 @@ parm:
 ---
 
 Controls whether to use a cloud-based or local Zebra Licensing Server, or preactivated file on the device. When Zebra Cloud is selected (option 1), specify the server location using the License Cloud URL parameter. 
-
-QQQ
-is "preactivated" option for MX 8.0 only? (DSD says 7.2) 

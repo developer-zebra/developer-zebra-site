@@ -11,50 +11,66 @@ overview text that explains device owner stuff.
 
 Android Enterprise Device Owner
 
+DO - device owner
+DA - 
+AFW - Android for Work
+AE - 
+AEDO - 
+EMM - 
+MDM - 
+GID - 
+DA - 
 
-<img alt="image" style="height:350px" src="active_edge_01.png"/>
-_caption_
-<br>
 
 -----
 
 ## raw from slides
 
 Assumptions
-The device(s) to be staged is starting from a Factory Default state with no 3rd Party files/apps (not included with the OS) resident on the device. Device(s) supported: TC51, Android Nougat or greater, MX7.1 or greater. 
+The device(s) to be staged is starting from a factory-default state with no third-party files and no apps other than those included with the operating system. 
 
-Prerequisites
-Download and install StageNow.  
-Note: The 2 StageNow Profiles that are required for this procedure were built with StageNow tool version 2.10.1.  Make sure your version is at least as current.  Older versions may result in an import error.
- 
-Set up the Organization Group on your AirWatch server console for AFW.  Contact VMWare for this procedure.
-Make sure you have the device enrollment credentials listed below. They are created on the console and will be required later.
-GID (Group ID)
-Username
-Password 
-Also required: Your AirWatch Console URL
+### Device(s) supported
 
-Obtain 2 AirWatch APK files (AirWatchAgent.apk and AirWatchMotorolaMXService.apk) as follows:
+QQQ
 
-Log in your AW Console. Create and download a “Sideload-Stage” (.ZIP file) package from the AW Console to your Workstation. (Contact VMWare for this procedure.)  
+* TC51
+* Android Nougat or higher
+* MX7.1 or higher. 
 
-Your staging package must include a version of AW Agent that supports DO (e.g. v8.0.1 or greater).  Download the package and decompress the file.  It has 3 folders as shown below.  
+### Prerequisites
+* A Windows computer with StageNow 2.10.1 or higher installed (for compatibility with sample profiles)
+* The "server console" or like-functioned EMM client for the solution in use 
+* An Organization Group created for "Android For Work" 
+* The following device enrollment credentials (created on the console): 
+ * Group ID (GID)
+ * Username
+ * Password 
+ * The console URL
+* Any agent and/or service apps (`.apk` files) required by the EMM solution to be present on the device being managed (agent must support DO mode)
+* A certificate file 
 
-The two files you need are in the /agent folder.  Copy and paste them to a folder on your Workstation.
- 
+QQQ huh?
 
-Contact David Degrassi at Zebra for access to the necessary files and customer Certificate requests
+Get these files too (from Zebra?): 
+AirWatch_Device_Owner_Enrollment.zip - StageNow Profile
+EnrollDO.pem - Certificate for AW Agent app
+PERE-DO.zip - StageNow Profile
+Provision.apk - Android Application***
+Provisioning.JSON - Credentials file
 
-## Steps (still raw)
 
-1. Prepare a folder on the Workstation that will be required for device enrollment.  
-Create folder path: /snaw/install/
+-----
 
-2. Copy these 2 files that were obtained in Prerequisite section step4:
-AirWatchAgent.apk
-AirWatchMotorolaMXService.apk
-Paste files to the /snaw/install/ folder.
-IMPORTANT: Filenames are case-sensitive. Make sure the files are renamed exactly as shown above and remove any version information from the filename.
+## 1. Prepare the Workstation
+This part is required only when configuring a workstation for the first time. If this ain't your first rodeo, [skip to Part 2](#2enrolladevice)
+
+1. Create a folder on the workstation to contain files for device enrollment. If desired, modify the name used for this guide:
+
+* `/sn/install/`
+
+2. Copy the agent files required for device management to the `/sn/install/` folder. **IMPORTANT: Filenames are case-sensitive**. 
+
+QQQ (provision.akp?)
 
 3. Copy Provision.apk that was downloaded earlier in Prerequisite section step5.
 Paste file to the /snaw/install/ folder

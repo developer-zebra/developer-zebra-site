@@ -7,89 +7,87 @@ productversion: '2.0'
 
 ## Overview
 
-overview text that explains device owner stuff. 
+This section explains device owner stuff. 
 
 Android Enterprise Device Owner
 
-DO - device owner
-DA - 
-AFW - Android for Work
-AE - 
-AEDO - 
-EMM - 
-MDM - 
-GID - 
-DA - 
+### Terms used in this guide
 
+* **DO -** Device owner
+* **DA -** Device administrator
+* **AFW -** Android for Work
+* **AE -** Android Enterprise
+* **AEDO -** Android Enterprise Device Owner
+* **EMM -** Enterprise Mobility Management
+* **MDM -** Mobile Device Management
+* **GID -** Group ID
 
 -----
 
-## raw from slides
+### Supported Devices
 
-Assumptions
-The device(s) to be staged is starting from a factory-default state with no third-party files and no apps other than those included with the operating system. 
-
-### Device(s) supported
-
-QQQ
-
-* TC51
-* Android Nougat or higher
-* MX7.1 or higher. 
+* TC51 (QQQ unnecessary??) 
+* Zebra devices running Android Nougat or higher
+* Devices with MX 7.1 or higher (QQQ redundant?)
 
 ### Prerequisites
 * A Windows computer with StageNow 2.10.1 or higher installed (for compatibility with sample profiles)
-* The "server console" or like-functioned EMM client for the solution in use 
-* An Organization Group created for "Android For Work" 
+* The "server console" or utility of the EMM solution in use 
+* An "organization group" created for "Android For Work" 
 * The following device enrollment credentials (created on the console): 
- * Group ID (GID)
- * Username
- * Password 
- * The console URL
-* Any agent and/or service apps (`.apk` files) required by the EMM solution to be present on the device being managed (agent must support DO mode)
-* A certificate file 
-
-QQQ huh?
-
-Get these files too (from Zebra?): 
-AirWatch_Device_Owner_Enrollment.zip - StageNow Profile
-EnrollDO.pem - Certificate for AW Agent app
-PERE-DO.zip - StageNow Profile
-Provision.apk - Android Application***
-Provisioning.JSON - Credentials file
-
+ * **Group ID (GID)**
+ * **User name**
+ * **Password** 
+ * **The console URL** (should this be EMM management server URL?)
+* Any agent and/or service apps (`.apk` files) required by the EMM solution to be present on the device being managed (agent must support DO mode). **Required files**:
+ * `Agent.apk(s)` - **EMM device-resident agent file(s)**
+ * `Device_Owner_Enrollment_Profile.zip` - **StageNow profile for enrolling device**
+ * `EnrollDO.pem` - **Certificate for EMM Agent app**
+ * `PERE-DO.zip` - **StageNow profile (for WHAT??? QQQ)**
+ * `Provision.apk` - **Android app (FOR WHAT??? QQQ)**
+ * `Provisioning.JSON` - **Credentials file, including User name, password, group ID**
 
 -----
 
-## 1. Prepare the Workstation
-This part is required only when configuring a workstation for the first time. If this ain't your first rodeo, [skip to Part 2](#2enrolladevice)
+## How to Enroll a Device Owner
 
-1. Create a folder on the workstation to contain files for device enrollment. If desired, modify the name used for this guide:
+A small graf here explaining basic assumptions (i.e. the device to be staged is starting from a factory-default state with no third-party files and no apps other than those included with the operating system). 
 
-* `/sn/install/`
+**Three-step process**: 
 
-2. Copy the agent files required for device management to the `/sn/install/` folder. **IMPORTANT: Filenames are case-sensitive**. 
+1. Prepare the staging workstation (5 steps)
+2. Create provisioning barcodes (13 steps)
+3. Enroll the device (4 steps)
 
-QQQ (provision.akp?)
+-----
 
-3. Copy Provision.apk that was downloaded earlier in Prerequisite section step5.
-Paste file to the /snaw/install/ folder
+### 1. Prepare the Workstation
+This part is required only when configuring a staging workstation for the first time. If this ain't your first rodeo, [skip to Part 2](#2createprovisioningbarcodes)
 
-4. Edit the credentials in the Provisioning.JSON file that was downloaded earlier in Prerequisite section step5.
-Open the JSON file with any editing application e.g. Notepad++.
-See the 4 highlighted parameters below.  Edit these with the credentials required for enrollment into your AW Console and Organization Group.
-Save.
-Copy/Paste Provisioning.JSON to the /snaw/install/ folder.
-IMPORTANT: Filenames are case-sensitive. Make sure the file is named exactly as shown above.
+**&#49;. Create a folder** of any name on the workstation to contain files for device enrollment. 
+<br>The folder name used for this guide is "`/sn/install/`". 
 
+**&#50;. Copy the agent files** required for device management to the `/sn/install/` folder. 
+<br>**IMPORTANT: Filenames are case-sensitive**. 
+
+**&#51;. Copy the** `Provision.apk` **file** to the `/sn/install/` folder
+
+**&#52;. Open the** `Provisioning.JSON` **file with a text editor**, and enter the server, group ID and user credentials in the appropriate section (see image, below). 
+
+**&#53;. Save the changes and copy the updated file** to the  `/sn/install/` folder. <br>**IMPORTANT: Filenames are case-sensitive**. Make sure the file is named exactly as shown above.
 
 <img alt="image" style="height:350px" src="04_json_file.png"/>
 _caption_
 <br>
 
-5. Import the First of two StageNow Profiles as follows:
-Launch StageNow and log in as an Administrator.  
-On StageNow UI, select:
+-----
+
+### 2. Create Provisioning Barcodes
+
+**&#49;. Import the first of two StageNow profiles** using the following steps: 
+
+ a.Launch StageNow and log in as an Administrator.  
+ b. On StageNow UI, select: (home?)
 
 Then select: (screenshot of "Import Profiles")
 
@@ -189,6 +187,8 @@ Print the barcodes.
 _caption_
 <br>
 
+### 3. Enroll a Device
+
 18. Before scanning the Staging barcode(s):
 Ensure the StageNow Workstation is connected to the local staging WIFI network (same as set up in the Profiles).
 Ensure StageNow is running on the Workstation.
@@ -198,7 +198,11 @@ Install a charged battery and press the Power key to turn on.
 After initial power up, device will display the Setup Wizard (SUW).
 Scan the barcode below to skip the SUW and launch the StageNow application.  
 
-(barcode image)
+19_barcode.png
+<img alt="image" style="height:350px" src="19_barcode.png"/>
+_caption_
+<br>
+
 
 Note:
 The barcode above is supported by MX7.1 and greater. If the SUW is not bypassed after scanning, then manually navigate the SUW screens and launch StageNow from its icon.

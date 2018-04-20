@@ -7,7 +7,7 @@ productversion: '1.7'
 
 ### Supported Devices
 
-EKB 1.6 <u>installs as a stand-alone app (.apk)</u> and is supported on the following Zebra Android devices: 
+EKB 1.7 <u>comes pre-installed</u> on the following supported Zebra Android devices: 
 
 **Running Android KitKat**: 
 

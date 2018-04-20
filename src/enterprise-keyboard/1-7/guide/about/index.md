@@ -29,13 +29,65 @@ This version of Enterprise Keyboard includes the following languages:
 * Spanish
 * Russian
 
-####Learn more about:
+#### Learn more about:
 * [Text correction features](../settings#textcorrection)
 * The "Loadable" [Personal Dictionary](../../../../mx/personaldictionarymgr)
 
 -----
 
-### New in v1.6
+## Unique EKB features  
+All versions of Enterprise Keyboard offer these other unique capabilities to help improve the speed and accuracy of input:  
+
+<b>Switch layouts with taps or swipes</b> across the keypad:  
+<img alt="" style="height:350px" src="sample_1.png"/>
+_The Tab bar automatically hides away when spelling suggestions appear, maximizing screen space for applications_. 
+<br>
+
+<b>Scan directly with the Barcode tab</b> to collect data where and when it's needed:
+<img alt="" style="height:350px" src="sample_5.png"/>
+<br>
+
+<b>Input long-press characters with a finger-flick</b> of the main key:
+<img alt="" style="height:350px" src="emailAddress.png"/>
+<br>
+
+<!--
+The <b>Language tab</b> quickly selects languages to include:  
+<img alt="" style="height:350px" src="sample_2.png"/>
+<br>
+-->
+
+<b>Quickly page through selected languages</b> using the "globe" key:  
+<img alt="" style="height:150px" src="keyboard_globe.png"/>
+<br>
+
+<!--
+The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function key layouts: 
+<img alt="" style="height:350px" src="sample_3.png"/>
+<br>
+-->
+
+<b>Design custom key layouts easily</b> with five remappable keys: 
+<img alt="" style="height:150px" src="keyboard_alpha.png"/>
+
+<img alt="" style="height:150px" src="keyboard_numerical.png"/>
+_Shown here with the EMOJI key (top) and other default key assignments_. 
+<br>
+
+<b>View the keyboard indoors or out</b> thanks to a specially designed color scheme: 
+<br>
+_Enterprise Keyboard_:
+<img alt="" style="height:150px" src="keyboard_alone.png"/>
+
+_Stock Android keyboard_:
+<img alt="" style="height:150px" src="keyboard_android.png"/>
+<br>
+
+-----
+
+## Version History
+
+### Added in v1.6
 
 New settings in the [Preferences panel](../settings/#preferences): 
 
@@ -51,8 +103,6 @@ New settings in the [Preferences panel](../settings/#preferences):
 See the [EKB 1.6 download page](../../download) for a list of supported devices.  
 
 -----
-
-## Version History
 
 ### Added in v1.5
 
@@ -116,58 +166,10 @@ See the [EKB 1.3 download page](../../../1-3/download) for a complete list of su
 
 -----
 
-### Unique EKB features  
-All versions of Enterprise Keyboard offer these other unique capabilities to help improve the speed and accuracy of input:  
-
-<b>Switch layouts with taps or swipes</b> across the keypad:  
-<img alt="" style="height:350px" src="sample_1.png"/>
-_The Tab bar automatically hides away when spelling suggestions appear, maximizing screen space for applications_. 
-<br>
-
-<b>Scan directly with the Barcode tab</b> to collect data where and when it's needed:
-<img alt="" style="height:350px" src="sample_5.png"/>
-<br>
-
-<b>Input long-press characters with a finger-flick</b> of the main key:
-<img alt="" style="height:350px" src="emailAddress.png"/>
-<br>
-
-<!--
-The <b>Language tab</b> quickly selects languages to include:  
-<img alt="" style="height:350px" src="sample_2.png"/>
-<br>
--->
-
-<b>Quickly page through selected languages</b> using the "globe" key:  
-<img alt="" style="height:150px" src="keyboard_globe.png"/>
-<br>
-
-<!--
-The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function key layouts: 
-<img alt="" style="height:350px" src="sample_3.png"/>
-<br>
--->
-
-<b>Design custom key layouts easily</b> with five remappable keys: 
-<img alt="" style="height:150px" src="keyboard_alpha.png"/>
-
-<img alt="" style="height:150px" src="keyboard_numerical.png"/>
-_Shown here with the EMOJI key (top) and other default key assignments_. 
-<br>
-
-<b>View the keyboard indoors or out</b> thanks to a specially designed color scheme: 
-<br>
-_Enterprise Keyboard_:
-<img alt="" style="height:150px" src="keyboard_alone.png"/>
-
-_Stock Android keyboard_:
-<img alt="" style="height:150px" src="keyboard_android.png"/>
-<br>
-
------
-
 ## How to Get It
 
-Enterprise Keyboard can be downloaded as a stand-alone app for select Zebra devices. See the [Download page](../../download) for details. 
-
+Enterprise Keyboard 1.7 comes pre-installed on supported Zebra devices. 
+<!-- 
+See the [Download page](../../download) for details. 
+ -->
 For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

@@ -16,5 +16,5 @@ menu:
     - icon: fa fa-search
       url: /enterprise-keyboard/1-6/search
 product: Enterprise Keyboard
-productversion: '1.6'
+productversion: '1.7'
 ---

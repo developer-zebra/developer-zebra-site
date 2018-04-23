@@ -54,7 +54,8 @@ EKB 1.7 is certified on the following Zebra devices running Android 7.x Nougat:
  * **TC75x**
  * **VC80x**
 
-For pre-Nougat options, see the [download page](../../download/#prenougatoptions).  
+For more information, see the [download page](../../download).
+
 -----
 
 ## Unique EKB features  
@@ -190,8 +191,6 @@ See the [EKB 1.3 download page](../../../1-3/download) for a complete list of su
 
 ## How to Get It
 
-Enterprise Keyboard 1.7 comes pre-installed on [supported Zebra devices](/). 
+Enterprise Keyboard 1.7 comes pre-installed on [supported Zebra devices](#supporteddevices). 
 
-See the [EKB download page](../../download/#prenougatoptions) for more information and pre-Nougat options.  
-
-For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 
+For more information, please see the [EKB download page](../../download) or [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

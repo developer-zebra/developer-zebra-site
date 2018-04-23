@@ -17,7 +17,9 @@ Enterprise Keyboard (1.1 and higher) can be configured in the following ways:
 * **Remotely** using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service
 * Remotely through a company's own enterprise mobile management (EMM) system (if supported by that system)
 
-Zebra's keyboard also makes use of the Android Personal Dictionary for spelling suggestions and corrections, and permits the dictionary to be easily populated with industry-specific terms to help improve the speed and accuracy of keyboard input. A custom dictionary can be populated in bulk and mass-deployed through Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools. 
+-----
+
+**Enterprise Keyboard makes use of the Android Personal Dictionary for spelling suggestions and corrections**, and permits the dictionary to be easily populated with industry-specific terms to help improve the speed and accuracy of keyboard input. A custom dictionary can be populated in bulk and mass-deployed through Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools. 
 
 This version of Enterprise Keyboard includes the following languages: 
 
@@ -33,6 +35,26 @@ This version of Enterprise Keyboard includes the following languages:
 * [Text correction features](../settings#textcorrection)
 * The "Loadable" [Personal Dictionary](../../../../mx/personaldictionarymgr)
 
+-----
+
+## New in v1.7
+
+**Enterprise Keyboard 1.7 comes pre-installed on Zebra devices running Android 7.x Nougat and higher**. 
+
+### Supported Devices
+
+EKB 1.7 is certified on the following Zebra devices running Android 7.x Nougat:
+
+ * **MC33**
+ * **TC51**
+ * **TC51 Healthcare**
+ * **TC56**
+ * **TC56 Healthcare**
+ * **TC70x**
+ * **TC75x**
+ * **VC80x**
+
+For pre-Nougat options, see the [download page](../../download/#prenougatoptions).  
 -----
 
 ## Unique EKB features  
@@ -168,8 +190,8 @@ See the [EKB 1.3 download page](../../../1-3/download) for a complete list of su
 
 ## How to Get It
 
-Enterprise Keyboard 1.7 comes pre-installed on supported Zebra devices. 
-<!-- 
-See the [Download page](../../download) for details. 
- -->
+Enterprise Keyboard 1.7 comes pre-installed on [supported Zebra devices](/). 
+
+See the [EKB download page](../../download/#prenougatoptions) for more information and pre-Nougat options.  
+
 For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

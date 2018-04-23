@@ -7,17 +7,33 @@ productversion: '1.7'
 
 ### Supported Devices
 
-EKB 1.7 <u>comes pre-installed</u> on the following supported Zebra Android devices: 
+EKB 1.7 <u>comes pre-installed</u> on the following Zebra Android devices running Android 7.x Nougat: 
 
-**Running Android KitKat**: 
+ * **MC33**
+ * **TC51**
+ * **TC51 Healthcare**
+ * **TC56**
+ * **TC56 Healthcare**
+ * **TC70x**
+ * **TC75x**
+ * **VC80x**
 
-* **MC40**
-* **TC55**
-* **TC70**
-* **TC75**
-* **TC8000**
+-----
 
-**Running Android Lollipop**: 
+### Pre-Nougat Options
+
+For devices running Android versions prior to Nougat, download EKB 1.6 for the following: 
+
+**Running Android 6.x Marshmallow**: 
+
+* **ET50**
+* **ET55**
+* **TC51** (including Healthcare model)
+* **TC56** (including Healthcare model)
+* **TC70x**
+* **TC75x** 
+
+**Running Android 5.x Lollipop**: 
 
 * **ET50**
 * **ET55**
@@ -28,37 +44,13 @@ EKB 1.7 <u>comes pre-installed</u> on the following supported Zebra Android devi
 * **TC8000**
 * **WT6000**
 
-**Running Android Marshmallow**: 
+**Running Android 4.4 KitKat**: 
 
-* **ET50**
-* **ET55**
-* **TC51** (including HC model)
-* **TC56**
-* **TC70x**
-* **TC75x** 
-
-**Running Android Nougat**: 
-
-* **TC51** (including HC model)
-* **TC56**
-* **TC70x**
-* **TC75x** 
-
-
-<!-- 
-SC shows support for M, L, KK on: 
-- ET50
-- ET55
-- MC40
-- TC51
-- TC55
-- TC56
-- TC70
-- TC70x
-- TC75
-- TC75x
-- TC8000
--->
+* **MC40**
+* **TC55**
+* **TC70**
+* **TC75**
+* **TC8000**
 
 <!-- 
 **NOTE**: The ability install OS Updates on Zebra devices running Android Lollipop has been disabled. **Enterprise Keyboard versions prior to 1.4 install as an OS update and therefore cannot be installed on devices running Lollipop**. For more information, please [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

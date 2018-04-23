@@ -54,7 +54,7 @@ EKB 1.7 is certified on the following Zebra devices running Android 7.x Nougat:
  * **TC75x**
  * **VC80x**
 
-For more information, see the [download page](../../download).
+For more information and device options, see the [download page](../../download).
 
 -----
 

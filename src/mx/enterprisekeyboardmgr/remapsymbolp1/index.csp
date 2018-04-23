@@ -13,7 +13,10 @@ parm:
 
 Used to specify a character, UNICODE value or EMOJI selection panel for substitution with the default key on the Symbol Keypad Row 4, Column 1. **If this field is left blank, no change is made and any previously selected value is retained**.
 
-**Note: Symbol P1 key remapping is disabled when "Keys" is selected as the [Navigation mode](#navigation-mode)**. 
+**Notes**: 
+
+* Enabling the Numeric tab disables remapping of the Symbol P1 key.
+* Remapping of this key is disabled when "Keys" is selected as the [Navigation mode](#navigation-mode).
 
 **Parm input rules:**
 

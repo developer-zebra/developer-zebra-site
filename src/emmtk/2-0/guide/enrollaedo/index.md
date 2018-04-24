@@ -79,6 +79,8 @@ For more information about device states, [see power manager?](seePowerManager??
 
 ### 1. Prepare the Workstation
 
+SOME STEPS MIGHT BE NECESSARY EVERY TIME (i.e. creation of Provisioning.JSON file) CONSIDER MOVING THAT STEP OR REWORD INTRO
+
 **Required only for first-time Staging Workstation set-up**. If the Staging Workstation is already prepared, **[skip to Part 2](#2createprovisioningbarcodes)**. 
 
 **&#49;. Create a folder** of any name on the workstation to contain files for device enrollment. 

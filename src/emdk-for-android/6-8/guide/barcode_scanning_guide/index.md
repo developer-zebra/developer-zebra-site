@@ -91,7 +91,7 @@ Issuing any read request while the previous read is pending will result in an er
 
 -----
 
-### 4. Configure the Scanner
+### 4. Configure Scanner
 
 The EMDK Barcode API provides three categories of scanner configuration to control the behavior of the scanner: 
 
@@ -176,11 +176,11 @@ The following code sets the decode LED time to 75:
 
 -----
 
-### 5. Releasing the Scanner
+### 5. Release Scanner
 
-Control of scanning hardware is exclusive. When a scanning app takes control of a scanner, it must release it when quitting or going to the background before other apps can access that scanner. Disabling the scanner immediately cancels any pending read in progress and closes the session, giving other applications access to scanners. 
+Control of scanning hardware is exclusive. When a scanning app takes control of scanning on the device, it must programmatically release it when quitting or going to the background before other apps (including DataWedge) can access any scanner on the device.
 
-**To disable the scanner, use the code below**:
+**To release scanner resources, use the code below**:
 
         :::java
         // Release the barcode manager resources:

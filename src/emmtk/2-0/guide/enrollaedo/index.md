@@ -7,51 +7,65 @@ productversion: '2.0'
 
 ## Overview
 
-This section explains device owner stuff. 
+This section explains device owner stuff, and why a Nougat device _should_ be enrolled as a DO and why an Oreo _must_. 
 
-Android Enterprise Device Owner
+* DO is recommended with Nougat. With Oreo, it's required. 
+* Agent Uses AEDO + Zebra OemConfig Managed Configs​
+* Android N or higher​
+* EMM must leverage Zebra EMM TK V4​
+* Supported from Android Nougat onwards​
+* Provides parity of functionality to EMM TK V2 when combined with AEDO APIs​
+* Standard-based​
+* Not available prior to Android Nougat​
+* Requires special Device Owner Enrollment​
+* It is OPTIONAL for all EMMs to use OemConfig, but NOT doing so will leave the EMM unable to provide parity of functionality once they can no longer use MX via EMM TK V1 and V2 to augment the capabilities of AEDO APIs​
+* SHOULD support use of OemConfig  by the start of Android P​
+* SHOULD support use of OemConfig  as early as possible, preferably by the by the end of Android Nougat​
+
+> Info in the QR code is identical to contents of the `Provisioning.JSON` file.  
 
 ### Terms used in this guide
 
-* **DO -** Device owner
-* **DA -** Device administrator
-* **AFW -** Android for Work
 * **AE -** Android Enterprise
 * **AEDO -** Android Enterprise Device Owner
+* **AFW -** Android for Work
+* **DA -** Device administrator
+* **DO -** Device owner
 * **EMM -** Enterprise Mobility Management
-* **MDM -** Mobile Device Management
 * **GID -** Group ID
+* **MDM -** Mobile Device Management
 
 -----
 
 ### Supported Devices
 
-* TC51 (QQQ unnecessary??) 
-* Zebra devices running Android Nougat or higher
-* Devices with MX 7.1 or higher (QQQ redundant?)
+* All Zebra devices running Android Nougat or higher
 
 ### Prerequisites
-* A Windows computer with StageNow 2.10.1 or higher installed (for compatibility with sample profiles)
-* The "server console" or utility of the EMM solution in use 
-* An "organization group" created for "Android For Work" 
-* The following device enrollment credentials (created on the console): 
- * **Group ID (GID)**
+* A Staging Workstation running Windows with StageNow 2.10.1 or higher installed (for compatibility with sample profiles)
+* **Access to the "main console"** of the EMM solution 
+* **Adequate EMM priviledges** to create the following: 
+ * **At least one group** in which to categorize devices to be staged
+ * **Group ID(s) (GIDs)** for the group(s)
+ * **Enroll a "Device Owner"** 
  * **User name**
  * **Password** 
- * **The console URL** (should this be EMM management server URL?)
+* **The EMM management server URL**
 * Any agent and/or service apps (`.apk` files) required by the EMM solution to be present on the device being managed (agent must support DO mode). **Required files**:
- * `Agent.apk(s)` - **EMM device-resident agent file(s)**
- * `Device_Owner_Enrollment_Profile.zip` - **StageNow profile for enrolling device**
- * `EnrollDO.pem` - **Certificate for EMM Agent app**
- * `PERE-DO.zip` - **StageNow profile (for WHAT??? QQQ)**
- * `Provision.apk` - **Android app (FOR WHAT??? QQQ)**
- * `Provisioning.JSON` - **Credentials file, including User name, password, group ID**
+ * `Agent.apk(s)` - **Device-resident agent file(s)** required by the EMM solution
+ * `EMM_Device_Owner_Enrollment_Profile.zip` - **StageNow profile for enrolling device** provided by Zebra
+ * `EnrollDO.pem` - **Certificate for EMM Agent app** 
+ * `EMM_PERE-DO.zip` - **StageNow persistence profile** template provided by Zebra
+ * `Provision.apk` - **Android app**
+ * `Provisioning.JSON` - **Credentials file, including user name, password, group ID** (created during the enrollment process below)
 
 -----
 
 ## How to Enroll a Device Owner
 
-A small graf here explaining basic assumptions (i.e. the device to be staged is starting from a factory-default state with no third-party files and no apps other than those included with the operating system). 
+This process assumes that the device to be staged is in a factory-default state with no third-party files and no apps other than those included with the operating system. 
+
+For more information about device states, [see power manager?](seePowerManager??)
 
 **Three-step process**: 
 
@@ -59,26 +73,31 @@ A small graf here explaining basic assumptions (i.e. the device to be staged is 
 2. Create provisioning barcodes (13 steps)
 3. Enroll the device (4 steps)
 
+> **Note**: File and folder names are case-sensitive.
+
 -----
 
 ### 1. Prepare the Workstation
-This part is required only when configuring a staging workstation for the first time. If this ain't your first rodeo, [skip to Part 2](#2createprovisioningbarcodes)
+
+**Required only for first-time Staging Workstation set-up**. If the Staging Workstation is already prepared, **[skip to Part 2](#2createprovisioningbarcodes)**. 
 
 **&#49;. Create a folder** of any name on the workstation to contain files for device enrollment. 
-<br>The folder name used for this guide is "`/sn/install/`". 
+<br>The folder name used for this guide is "`/EMM-downloads/`". 
 
-**&#50;. Copy the agent files** required for device management to the `/sn/install/` folder. 
+**&#50;. Copy the agent files** required for device management to the `/EMM-downloads/` folder. 
 <br>**IMPORTANT: Filenames are case-sensitive**. 
 
-**&#51;. Copy the** `Provision.apk` **file** to the `/sn/install/` folder
+**&#51;. Copy the** `Provision.apk` **file** to the `/EMM/install/` folder
 
 **&#52;. Open the** `Provisioning.JSON` **file with a text editor**, and enter the server, group ID and user credentials in the appropriate section (see image, below). 
 
-**&#53;. Save the changes and copy the updated file** to the  `/sn/install/` folder. <br>**IMPORTANT: Filenames are case-sensitive**. Make sure the file is named exactly as shown above.
+**&#53;. Save the changes and copy the updated file** to the  `/EMM-downloads/` folder. <br>**IMPORTANT: Filenames are case-sensitive**. Make sure the file is named exactly as shown above.
 
 <img alt="image" style="height:350px" src="04_json_file.png"/>
 _caption_
 <br>
+
+> **Note**: File and folder names are case-sensitive.
 
 -----
 
@@ -92,9 +111,9 @@ _caption_
 Then select: (screenshot of "Import Profiles")
 
 6. StageNow
-Navigate to the PERE-DO.zip file on the Workstation that was downloaded earlier from Zebra.  
-Then select Import.
+Navigate to the `EMM_PERE-DO.zip` file on the Workstation that was downloaded earlier from Zebra.  
 
+Then select Import.
 
 <img alt="image" style="height:350px" src="06_import_pere-do.png"/>
 _caption_
@@ -102,7 +121,7 @@ _caption_
 
 7. StageNow
 Edit the StageNow Profile as follows: 
-Rename Profile to: PERE-DO
+Rename Profile to: EMM_PERE-DO
 Select Stagenow Config.
 Select Wi-Fi.  Select Edit. 
 Edit the Wi-Fi profile for your network. Save.
@@ -122,10 +141,10 @@ Then select: (publish)
 Export an XML file from the StageNow Profile as follows:
 Select:
 
-Export the file to the /snaw/install/ folder on the Workstation.
+Export the file to the `/EMM-downloads/` folder on the Workstation.
 Make sure the file is named exactly like this: PERE-DO.xml.
 
-10. Folder Check: On the Workstation, make sure the /snaw/install/ folder has ALL the required files listed below.
+10. Folder Check: On the Workstation, make sure the `/EMM-downloads/` folder has ALL the required files listed below.
 IMPORTANT: Filenames are case-sensitive. Make sure each file is named exactly as shown.
 
 11. StageNow
@@ -137,12 +156,12 @@ Then select: (profiles)
 Then select: (import profiles)
 
 12. StageNow
-Navigate to the AirWatch_Device_Owner_Enrollment.zip file on the Workstation that was downloaded earlier from Zebra.  
+Navigate to the EMM_Device_Owner_Enrollment.zip file on the Workstation that was downloaded earlier from Zebra.  
 Then select Import.
 
 13. StageNow
 Edit the StageNow Profile as follows: 
-Rename Profile to: AirWatch_Device_Owner_Enrollment
+Rename Profile to: EMM_Device_Owner_Enrollment
 Select Stagenow Config
 Select Wi-Fi.  Select Edit. 
 Edit the Wi-Fi profile for your network. Save.
@@ -187,6 +206,10 @@ Print the barcodes.
 _caption_
 <br>
 
+> **Note**: File and folder names are case-sensitive.
+
+-----
+
 ### 3. Enroll a Device
 
 18. Before scanning the Staging barcode(s):
@@ -216,6 +239,7 @@ Device displays may go dark due to timeout while the enrollment finishes.  This 
 21. (optional)
 Log in to your AirWatch Console to monitor the progress of enrolled devices.
 Devices will be added the Device List as they complete enrollment.  
+
 
 
 

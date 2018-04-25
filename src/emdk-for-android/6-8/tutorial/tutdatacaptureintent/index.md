@@ -452,10 +452,12 @@ In this article, we covered:
 * Defining intent filters
 * Configuring DataWedge to send intents to our application
 
+
+<!-- 4/24/18- dead link removed. No corresponding folder or sample found. -EC
 ## Sample Code
 Download the source for this project in the [associated sample](/emdk-for-android/6-8/guide/sample/sampledatacaptureintent).
 
-
+ -->
 
 
 

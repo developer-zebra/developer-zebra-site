@@ -40,10 +40,12 @@ In the below code we are getting the Symbol specific battery information provide
 		}  
 	} 
 
+
+<!-- 4/24/18- dead link removed. No corresponding folder or sample found. -EC
 ## Downloading the Sample
 Download the source for this project in the [associated sample](/emdk-for-android/6-8/guide/sample/samplebatteryintent).
 
-
+ -->
 
 
 

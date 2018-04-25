@@ -10,8 +10,8 @@ sources:
     url: 'https://github.com/Zebra/samples-emdkforandroid-6_8'
 image: 1.png
 devices:
-  - TC51 M or N, 
-  - TC56 M or N
+  - TC51 M/N, 
+  - TC56 M/N
 screenshots:
   - 1.png
   - 2.png

@@ -13,10 +13,10 @@ features:
   - Simulscan
   - Java APIs
 devices:
-  - TC51 M or N, 
-  - TC56 M or N, 
+  - TC51 M/N, 
+  - TC56 M/N, 
   - TC75 L, 
-  - TC75x M or N
+  - TC75x M/N
 image: 1.png
 screenshots:
   - 1.png

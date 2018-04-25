@@ -11,10 +11,10 @@ sources:
 features:
   - Java APIs
 devices:
-  - TC51 M or N, 
-  - TC56 M or N, 
-  - TC70x M or N, 
-  - TC75x M or N, 
+  - TC51 M/N, 
+  - TC56 M/N, 
+  - TC70x M/N, 
+  - TC75x M/N, 
   - WT6000 L (w/RS6000 scanner)
 image: 1.png
 screenshots:

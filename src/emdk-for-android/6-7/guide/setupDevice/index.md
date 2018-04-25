@@ -5,9 +5,9 @@ product: EMDK For Android
 productversion: '6.7'
 ---
 
->`NOTICE:`  
-	The instructions below for updating the EMDK runtime via the EMDK OS update package pertain to devices running KitKat only. Devices running Lollipop+ will have the EMDK built in to the devices OS and can only be updated with a device BSP update package. `The OS Update package that comes with the EMDK will not be supported on Lollipop+`
-
+>**NOTICE**:  
+	<u>**The instructions below pertain only to devices running Android KitKat**</u>. 
+	On devices running Lollipop (and higher), the EMDK runtime is built into the operating system, and is changed by downloading and applying an updated BSP compatible <u>only</u> with those devices.	See the [EMDK download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html) for more information. 
 
 
 ##	Installing EMDK for Android Device Runtime using Deployment utility

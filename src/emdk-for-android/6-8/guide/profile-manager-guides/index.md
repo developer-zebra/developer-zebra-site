@@ -111,8 +111,10 @@ productversion: '6.8'
 ---
 <!-- 4/24/18: 
 
-Data Capture deprecated in 6.7; terminated in 6.8. 
-All functions are now available through intent APIs 
+DataWedge configuration through Profile Manager Data Capture was terminated in 6.8. 
+All functions are now available through DW intent APIs 
+
+All guides below were updated with a note to that effect. 
 
     - title: Data Capture
       items:

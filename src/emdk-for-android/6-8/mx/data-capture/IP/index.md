@@ -31,6 +31,8 @@ Use to configure the Keystroke Output Feature for the profile.
 * IP address - Enter the IP address used by the remote application (default - 0.0.0.0).
 * Port - Enter the port number used by the remote application (default - 58627).
 
+> **Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead. 
+
 ## Basic Data Formatting 
 Allows the configuration of any data formatting. When disabled, any data is passed on without modification.
 

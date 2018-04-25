@@ -60,6 +60,7 @@ Allows configuration of the Intent Feature for the profile. The Intent Output Fe
 
 > Note: Most scanning applications might want the user to be able to decode data and for that decode data to be sent to the *current* activity but not necessarily displayed. If this is the case, then the activity needs to be marked as ‘singleTop’ in its AndroidManifest.xml file. If your activity is not defined as singleTop, then on every decode, the system will create another copy of your Activity and send the decode data to this second copy.
 
+> **Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead. 
 
 ## Basic Data Formatting
 Allows configuration of any data formatting. When disabled, any data is passed on without modification.

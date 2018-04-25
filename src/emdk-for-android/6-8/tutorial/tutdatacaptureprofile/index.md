@@ -8,6 +8,7 @@ productversion: '6.8'
 
 This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](/emdk-for-android/6-8/mx/data-capture/barcode) to get barcode data into your application using the [KeyStroke output](/emdk-for-android/6-8/mx/data-capture/keystroke) feature of EMDK Profiles.
 
+>**Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
 
 ## Creating The Project
 

@@ -1,6 +1,6 @@
 ---
 title: Profile Manager
-description: 'Profile Manager is an exclusive EMDK technology offered within your IDE, providing a GUI based development tool. This allows you to write fewer lines of code resulting in reduced development time, effort and errors.'
+description: 'Profile Manager is an exclusive Zebra technology offered within the EMDK IDE, providing a GUI-based development tool for accessing many of the features provided by Zebra devices. Profile Manager generates the required code automatically, resulting in reduced development time, less coding effort and fewer errors.'
 layout: list-apis.html
 automenu:
   items:
@@ -26,22 +26,6 @@ automenu:
           url: /emdk-for-android/6-8/mx/browsermgr
         - title: Enterprise Keyboard Manager
           url: /emdk-for-android/6-8/mx/enterprisekeyboardmgr/
-    - title: Data Capture
-      items:
-        - title: Activity Selection
-          url: /emdk-for-android/6-8/mx/data-capture/activity
-        - title: Barcode Input
-          url: /emdk-for-android/6-8/mx/data-capture/barcode
-        - title: Data Capture Plus
-          url: /emdk-for-android/6-8/mx/data-capture/data-capture-plus
-        - title: Int Output
-          url: /emdk-for-android/6-8/mx/data-capture/intent
-        - title: IP Output
-          url: /emdk-for-android/6-8/mx/data-capture/IP
-        - title: Keystroke Output
-          url: /emdk-for-android/6-8/mx/data-capture/keystroke
-        - title: MSR Input
-          url: /emdk-for-android/6-8/mx/data-capture/msr
     - title: Device Configuration
       items:
         - title: Analytics Manager
@@ -125,21 +109,27 @@ automenu:
 product: EMDK For Android
 productversion: '6.8'
 ---
+<!-- 4/24/18: 
+
+Data Capture deprecated in 6.7; terminated in 6.8. 
+All functions are now available through intent APIs 
+
+    - title: Data Capture
+      items:
+        - title: Activity Selection
+          url: /emdk-for-android/6-8/mx/data-capture/activity
+        - title: Barcode Input
+          url: /emdk-for-android/6-8/mx/data-capture/barcode
+        - title: Data Capture Plus
+          url: /emdk-for-android/6-8/mx/data-capture/data-capture-plus
+        - title: Int Output
+          url: /emdk-for-android/6-8/mx/data-capture/intent
+        - title: IP Output
+          url: /emdk-for-android/6-8/mx/data-capture/IP
+        - title: Keystroke Output
+          url: /emdk-for-android/6-8/mx/data-capture/keystroke
+        - title: MSR Input
+          url: /emdk-for-android/6-8/mx/data-capture/msr
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ -->

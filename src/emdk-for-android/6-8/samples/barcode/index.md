@@ -28,6 +28,8 @@ productversion: '6.8'
 ##Overview
 The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](/emdk-for-android/6-8/api) introduced in EMDK V3.0. These APIs work independently of any [Data Capture profiles](/emdk-for-android/6-8/mx/data-capture/barcode).  
 
+>**Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
+
 The available actions in the [Barcode/Scanning API](/emdk-for-android/6-8/api) are:
   
 * Set [Scanner Device](/emdk-for-android/6-8/api/barcode/BarcodeManager-DeviceIdentifier/)  

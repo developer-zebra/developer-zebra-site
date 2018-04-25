@@ -33,7 +33,7 @@ The available actions are:
 
 This sample application will allow you to install, upgrade, and uninstall an application. 
 
->Note: Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
+
 
 ##Requirements
 Android API 19 must be installed via the SDK Manager before attempting to load this sample.

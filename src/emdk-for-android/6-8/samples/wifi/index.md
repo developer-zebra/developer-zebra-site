@@ -43,7 +43,7 @@ This sample application will allow you to perform all the above mentioned Wi-Fi 
 
 
 ##Requirements
-Android API 19 must be installed via the SDK Manager before attempting to load this sample.
+Android API 22 (or higher) must be installed via the SDK Manager before attempting to load this sample.
 
 
 ##Loading the Sample Application

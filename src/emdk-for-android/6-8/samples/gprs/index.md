@@ -37,7 +37,7 @@ This sample application will allow you to Add/Replace named APN and remove exist
 
 
 ##Requirements
-Android API 19 must be installed via the SDK Manager before attempting to load this sample.
+Android API 22 (or higher) must be installed via the SDK Manager before attempting to load this sample.
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.

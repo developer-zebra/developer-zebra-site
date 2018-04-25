@@ -27,7 +27,7 @@ One of the features of the EMDK is the ability to create Barcode scanning profil
 
 
 ##Requirements
-Android API 19 must be installed via the SDK Manager before attempting to load this sample.
+Android API 22 (or higher) must be installed via the SDK Manager before attempting to load this sample.
 
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.

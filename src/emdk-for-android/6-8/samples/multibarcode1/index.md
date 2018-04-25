@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Multi-barcode Scanning
-description: 'This sample application scans multiple barcodes simultaneously based on selected scanner device, trigger type and a few decoder Decoder Parameters.'
+description: Shows how to scan multiple barcodes simultaneously based on selected scanner device, trigger type and a few decoder parameters.
 downloads:
   - title: Sample Projects
     url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/archive/master.zip'
@@ -13,8 +13,8 @@ features:
   - Barcode
   - Java APIs
 devices:
-  - TC20N
-  - TC25N
+  - TC20 N,
+  - TC25 N
 image: 1.png
 screenshots:
   - 1.png

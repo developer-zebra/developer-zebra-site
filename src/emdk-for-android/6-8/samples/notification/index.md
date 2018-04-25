@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Notification
-description: This sample application will show how to use the Notification APIs
+description: Shows how to use the Notification APIs.
 downloads:
   - title: Sample Projects
     url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/archive/master.zip'
@@ -11,7 +11,11 @@ sources:
 features:
   - Java APIs
 devices:
-  - WT6000
+  - TC51 M or N, 
+  - TC56 M or N, 
+  - TC70x M or N, 
+  - TC75x M or N, 
+  - WT6000 L (w/RS6000 scanner)
 image: 1.png
 screenshots:
   - 1.png

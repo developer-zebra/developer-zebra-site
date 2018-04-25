@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Setting The Clock
-description: This sample application will show you how you can create a custom application for setting the system time using the Clock Feature of Profile Manager.
+description: Shows how to create a custom application for setting system time using the Profile Manager's Clock feature.
 downloads:
   - title: Sample Projects
     url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/archive/master.zip'
@@ -11,6 +11,8 @@ sources:
 features:
   - Profile Manager
   - Clock
+devices:
+  - All supported devices
 image: 1.png
 screenshots:
   - 1.png

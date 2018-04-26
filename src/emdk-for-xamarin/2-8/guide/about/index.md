@@ -51,14 +51,9 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 
 * **Windows**
     * Visual Studio
-        * 2013
-        * 2015
         * 2017
 * **Mac OS X**
-    * Visual Studio (beta)
-    * Xamarin Studio (deprecated)
-        * 6.x
-
+    * Microsoft Visual Studio
 -----
 
 ## New in v2.8
@@ -90,7 +85,7 @@ EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
 * A new `getDeviceIdentifier()` method in `DeviceInfo` class identifies the notification device
  * A new enum `DeviceIdentifier` supports `getDeviceIdentifier()` with following values:
 	DEFAULT - default
-	BLUETOOTH_IMAGER_RS6000 - Bluetooth Imager RS6000
+	BLUETOOTH_IMAGER_RS6000 - Bluetooth imager RS6000
 	EXTERNAL_VIBRATOR1 - External Vibrator
 
 ### Software Support

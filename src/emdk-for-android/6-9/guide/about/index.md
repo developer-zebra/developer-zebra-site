@@ -94,7 +94,7 @@ EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 * A new `getDeviceIdentifier()` method in `DeviceInfo` class identifies the notification device
  * A new enum `DeviceIdentifier` supports `getDeviceIdentifier()` with following values:
 	DEFAULT - default
-	BLUETOOTH_IMAGER_RS6000 - Bluetooth Imager RS6000
+	BLUETOOTH_IMAGER_RS6000 - Bluetooth imager RS6000
 	EXTERNAL_VIBRATOR1 - External Vibrator
 
 ### Software Support

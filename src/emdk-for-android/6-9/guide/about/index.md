@@ -7,20 +7,20 @@ productversion: '6.9'
 
 ## Overview
 
-EMDK for Android is an extension for the Android Studio IDE that provides developers with a comprehensive set of tools to easily create powerful line-of-business applications for Zebra Android devices. EMDK for Android includes class libraries, sample applications with source code, and all associated documentation to help applications take full advantage of the power of Zebra devices.
+EMDK for Android is an extension for the Android Studio IDE that provides developers with a comprehensive set of tools to easily create powerful line-of-business applications for Zebra Android devices. EMDK for Android includes class libraries, sample applications with source code and all associated documentation to help applications take full advantage of the power of Zebra devices.
 
-EMDK for Android also inserts exclusive Profile Manager technology within the the IDE, providing a GUI-based development tool for configuring Zebra devices. This allows developers to write fewer lines of code, produce fewer errors, and reduce overall development time and effort.
+EMDK for Android also inserts exclusive Profile Manager technology within the the IDE, providing a GUI-based development tool for configuring Zebra devices. This allows developers to write fewer lines of code, produce fewer errors and reduce overall development time and effort.
 
 ## Requirements
-The following software must be installed prior to using the EMDK for Android.
+The following software must be installed prior to using the EMDK for Android:
 
 **Windows**:
-* Microsoft Windows 7 (32-bit and 64-bit)  or Microsoft&copy; Windows 8 (32-bit and 64-bit) or Microsoft&copy; Windows 8.1 (32-bit and 64-bit)
+* Microsoft Windows 7, Windows 8/8.1 (32- or 64-bit)
 * Java Development Kit (JDK) v7u45 or higher
 * Android Studio v2.x or higher
  
 **Mac OS X**:  
-* Yosemite (10.10.x) | (64-bit)  or El Capitan (10.11.x) | (64-bit)
+* Yosemite 10.10.x or El Capitan 10.11.x (64-bit)
 * Java for OS X 2014-10x or higher
 * Java Development Kit (JDK) v7u75 or higher
 
@@ -75,70 +75,52 @@ The following software must be installed prior to using the EMDK for Android.
 ## New in v6.9
 
 ### Device Support
-EMDK for Android 6.9 adds support for the following Zebra devices:
+EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 
 * **LI3608** rugged USB scanner
 * **LI3678** rugged Bluetooth scanner 
 * **WT6000 running Android Nougat** 
 
+### API Enhancements
+
+**Enhanced Barcode Manager API**:
+* Added support for LI3608 rugged USB scanner
+ * A new enum under `BarcodeManager.DeviceIdentifier` can be used to select the LI3608
+* Added support for LI3678 rugged Bluetooth scanner
+ * A new enum under `BarcodeManager.DeviceIdentifier` can be used to select the LI3678
+**Enhanced Notification Manager API**:
+* A new `getDeviceIdentifier()` method in `DeviceInfo` class identifies the notification device
+ * A new enum `DeviceIdentifier` supports `getDeviceIdentifier()` with following values:
+	DEFAULT - default
+	BLUETOOTH_IMAGER_RS6000 - Bluetooth Imager RS6000
+	EXTERNAL_VIBRATOR1 - External Vibrator
+
 ### Software Support
 
-* **Supports [Android Studio v3.1](https://android-developers.googleblog.com/2018/03/android-studio-3-1.html)**
+**Supports [Android Studio v3.1](https://android-developers.googleblog.com/2018/03/android-studio-3-1.html)**
 
-* **Supports MX v8.0** in Profile Manager:
+**Support for MX v8.0** in Profile Manager adds the following Settings Types and features:
 
-App Manager � Added actions to clear Application Cache and enable or disable All GMS Applications on the Safe to Disable list.
+* **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
+ * Clear Application Cache 
+ * Enable/disable All GMS Applications on the "Safe to Disable" list
+* **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions: 
+ * Select a licensing file to be embedded in the XML
+ * Select a preactivated license source 
+ * Query product-specific license information
+ * Specify product name to be queried
+ * Select the method used to supply the license .bin file
+* **[Settings Manager](../../mx/settingsmgr)** adds these new actions: 
+ * Enable/disable tethering and portable hotspot features
+* **[UI Manager](../../mx/uimgr)** adds these new actions:
+ * Enable/disable the Magnification Gesture
+ * Show/hide the Virtual KeyBoard while Physical Keyboard is active
 
-License Manager
-
-Added ability to select the licensing file whose data should be embedded in the XML.
-
-Added ability to select the preactivated license source type from where license procured.
-
-Added ability to query product specific license information.
-
-Added ability to specify product name to be queried.
-
-Added ability to select the method that will be used to supply the license .bin file.
-
-Settings Manager � Added ability to specify whether the user has the ability to perform Tethering and portable hotspot.
-
-UI Manager
-
-Added ability to select whether the Magnification Gesture will be allowed.
-
-Added ability to select whether to Show the Virtual KeyBoard while Physical Keyboard is active.
-
-Enhanced Barcode Manager API:
-
-Added support for new USB Scanner LI3608:
-
- 
-
-Added new enum under BarcodeManager.DeviceIdentifier for selecting the LI3608 USB Scanner.
-
- 
-
-Added support for new Bluetooth Scanner LI3678:
-
-Added new enum under BarcodeManager.DeviceIdentifier for selecting the LI3678 Bluetooth Scanner.
-
-Enhanced Notification Manager API:
-
-Added new method "getDeviceIdentifier()" in DeviceInfo class to identify the notification device.
-
-Added new enum "DeviceIdentifier" to support getDeviceIdentifier() with following values:
-
-DEFAULT - default
-
-BLUETOOTH_IMAGER_RS6000 - Bluetooth Imager RS6000
-
-EXTERNAL_VIBRATOR1 - External Vibrator
-
-Deprecated support for SecureNFC APIs - The EMDK SecureNFC APIs which allow applications to perform secure communications with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM) has been deprecated.
-
+-----
 
 ### Deprecations
+
+Deprecated support for SecureNFC APIs - The EMDK SecureNFC APIs which allow applications to perform secure communications with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM) has been deprecated.
 
 -----
 

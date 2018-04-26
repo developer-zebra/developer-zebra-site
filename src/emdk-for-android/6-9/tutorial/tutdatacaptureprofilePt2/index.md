@@ -6,14 +6,14 @@ productversion: '6.9'
 ---
 ## Developing an EMDK for Android Application Part 2
 
-This tutorial will walk you through adding [Intent Output](/emdk-for-android/6-8/mx/data-capture/intent) support to the EMDK For Android application you made using [Developing an EMDK for Android Application Part 1](/emdk-for-android/6-8/tutorial/tutdatacaptureprofile). This tutorial will assume your project is at the state of the end of that tutorial and build on top of it. You can follow the tutorial in the previous step of download the source from the previous step and start from there.
+This tutorial will walk you through adding [Intent Output](/emdk-for-android/6-9/mx/data-capture/intent) support to the EMDK For Android application you made using [Developing an EMDK for Android Application Part 1](/emdk-for-android/6-9/tutorial/tutdatacaptureprofile). This tutorial will assume your project is at the state of the end of that tutorial and build on top of it. You can follow the tutorial in the previous step of download the source from the previous step and start from there.
 
 The tutorial uses EMDK V 2.1 that has organized existing features as well as got some new features that would be discussed later in the tutorial.
 
 >**Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
 
 ###Prerequisites
-* Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/6-8/tutorial/tutdatacaptureprofile)
+* Completion of [Developing an EMDK for Android Application Part 1](/emdk-for-android/6-9/tutorial/tutdatacaptureprofile)
 
 
 ## Adding Intents to the DataCapture Profile
@@ -216,7 +216,7 @@ The tutorial uses EMDK V 2.1 that has organized existing features as well as got
 
 
 ## What's Next
-The [next tutorial](/emdk-for-android/6-8/tutorial/tutdatacaptureprofilePt3) will show you how to use multiple Data Capture Profiles that are handled by multiple activities.
+The [next tutorial](/emdk-for-android/6-9/tutorial/tutdatacaptureprofilePt3) will show you how to use multiple Data Capture Profiles that are handled by multiple activities.
 
 
 

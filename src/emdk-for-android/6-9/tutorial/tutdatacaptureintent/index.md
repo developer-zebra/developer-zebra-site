@@ -455,7 +455,7 @@ In this article, we covered:
 
 <!-- 4/24/18- dead link removed. No corresponding folder or sample found. -EC
 ## Sample Code
-Download the source for this project in the [associated sample](/emdk-for-android/6-8/guide/sample/sampledatacaptureintent).
+Download the source for this project in the [associated sample](/emdk-for-android/6-9/guide/sample/sampledatacaptureintent).
 
  -->
 

@@ -12,22 +12,22 @@ content-items:
     level: 4
     title: EMDK For Android Setup
     text: Get your development environment setup
-    url: /emdk-for-android/6-8/guide/setup
+    url: /emdk-for-android/6-9/guide/setup
   - type: section
     level: 4
     title: Configuring A Device
     text: Update your device to provide full feature support
-    url: /emdk-for-android/6-8/guide/setupDevice
+    url: /emdk-for-android/6-9/guide/setupDevice
   - type: section
     level: 4
     title: Build Hello EMDK
     text: Follow a simple getting started tutorial
-    url: /emdk-for-android/6-8/tutorial/tutdatacaptureprofile
+    url: /emdk-for-android/6-9/tutorial/tutdatacaptureprofile
   - type: section
     level: 4
     title: Using Profile Manager
     text: Understand how to use the powerful Profile Manager
-    url: /emdk-for-android/6-8/guide/profile-manager
+    url: /emdk-for-android/6-9/guide/profile-manager
 product: EMDK For Android
 productversion: '6.9'
 ---

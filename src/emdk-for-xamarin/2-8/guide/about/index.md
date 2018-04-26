@@ -50,8 +50,7 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 ### Development Tools Supported
 
 * **Windows**
-    * Visual Studio
-        * 2017
+    * Visual Studio 2017
 * **Mac OS X**
     * Microsoft Visual Studio
 
@@ -59,7 +58,7 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 
 ## New in v2.8
 
-> NOTICE:
+> NOTICE:<br>
 	**EMDK for Xamarin 2.8 no longer supports the following IDEs**:<br>
 	**Visual Studio 2013**<br>
 	**Visual Studio 2015**<br>
@@ -120,7 +119,7 @@ EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
 
 * **Configuring DataWedge using EMDK Profile Manager has been deprecated**. Zebra recommends using DataWedge intent-based APIs to configure DataWedge profiles going forward (since v2.7).
 
-**No longer supports Visual Studio 2013, Visual Studio 2015 or Xamarin Studio (Mac/Windows)**
+* **No longer supports Visual Studio 2013, Visual Studio 2015 or Xamarin Studio (Mac/Windows)**
 
 -----
 

@@ -13,7 +13,126 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 
 -----
 
-## New in v2.7
+
+### Devices Supported
+
+EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. 
+
+**The devices listed below have been tested and validated**. Devices and/or OSes new to this version are shown **in bold**. 
+
+### Mobile devices
+
+* ET5X   - Lollipop
+* MC33   - Nougat
+* TC20   - Nougat
+* TC25   - Nougat
+* TC51   - Marshmallow, Nougat
+* TC56   - Marshmallow, Nougat
+* TC70   - Lollipop
+* TC70x  - Marshmallow, Nougat
+* TC75   - Lollipop
+* TC75x  - Marshmallow, Nougat 
+* TC8000 - Lollipop
+* VC80x  - Nougat
+* WT6000 - Lollipop, **Nougat**
+
+### Scanners and imagers
+
+* RS507
+* RS6000
+* RS5000
+* RS4000
+* DS3678
+* DS3608
+* **LI3608**
+* **LI3678**
+
+### Development Tools Supported
+
+* **Windows**
+    * Visual Studio
+        * 2013
+        * 2015
+        * 2017
+* **Mac OS X**
+    * Visual Studio (beta)
+    * Xamarin Studio (deprecated)
+        * 6.x
+
+-----
+
+## New in v2.8
+
+### Device Support
+EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
+
+* **LI3608** rugged USB scanner
+* **LI3678** rugged Bluetooth scanner 
+* **WT6000 running Android Nougat** 
+
+### API Enhancements
+
+**Enhanced Barcode Manager API**:
+* Adds support for LI3608 rugged USB scanner
+ * A new enum under `BarcodeManager.DeviceIdentifier` can be used to select the LI3608
+* Adds support for LI3678 rugged Bluetooth scanner
+ * A new enum under `BarcodeManager.DeviceIdentifier` can be used to select the LI3678
+
+**Enhanced Notification Manager API**:
+* A new `getDeviceIdentifier()` method in `DeviceInfo` class identifies the notification device
+ * A new enum `DeviceIdentifier` supports `getDeviceIdentifier()` with following values:
+	DEFAULT - default
+	BLUETOOTH_IMAGER_RS6000 - Bluetooth Imager RS6000
+	EXTERNAL_VIBRATOR1 - External Vibrator
+
+### Software Support
+
+**Now support [Visual Studio for Mac OS X](https://www.visualstudio.com/vs/mac/)**
+
+**Now supports MX v8.0** in Profile Manager, adding the following features:
+
+* **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions: 
+ * Select a licensing file to be embedded in the XML
+ * Select a preactivated license source 
+ * Query product-specific license information
+ * Specify product name to be queried
+ * Select the method used to supply the license .bin file
+* **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
+ * Clear Application Cache 
+ * Enable/disable All GMS Applications on the "Safe to Disable" list
+* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds these new actions: 
+ * Enable/disable tethering and portable hotspot features
+* **Enhanced [UI Manager](../../mx/uimgr)** adds these new actions:
+ * Enable/disable the Magnification Gesture
+ * Show/hide the Virtual KeyBoard while Physical Keyboard is active
+
+-----
+
+### Deprecations
+
+* **SecureNFC APIs** allow applications to perform secure communications with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM). These APIs remain supported but are no longer being advanced.
+
+* **The ContinuousRead class**, used to enable continuous scanning, remains supported but is no longer being advanced. Zebra recommends using the `aimType`, `sameSymbolTimeout`, `differentSymbolTimeout` of the camera-, imager- and laser-specific reader parameters.
+
+* **The picklist field**, used for enabling picklist mode, remains supported but is no longer being advanced. Use the `picklistEx` field instead.
+
+
+
+Support for configuring DataWedge using EMDK Profile Manager has been deprecated - Profile Manager capabilities categorized under Data Capture has been deprecated. Zebra recommends using DataWedge intent-based APIs to configure DataWedge profiles going forward.
+
+EMDK for Xamarin support for VS2013 has been terminated- EMDK for Xamarin v2.7 was the last version for VS2013.
+
+�       EMDK for Xamarin support for Xamarin Studio (on Mac/Windows) has been terminated- EMDK for Xamarin v2.7 was the last version for Xamarin Studio (On Mac/Windows)
+
+�       EMDK for Xamarin support for VS2015 will be terminated-EMDK for Xamarin v2.8 will be the last version for VS2015
+
+
+
+-----
+
+## Version History
+
+### New in v2.7
 
 **Enhanced Barcode Manager API**:
 
@@ -55,53 +174,6 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 * **New [Audio Manager](../../mx/audio) CSP**:
  * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
  -->
-
------
-
-### Devices Supported
-
-EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. 
-
-**The following devices have been tested and validated**:
-
-### Mobile devices
-
-* ET5X   - Lollipop
-* MC33   - Nougat
-* TC20   - Nougat
-* TC25   - Nougat
-* TC51   - Marshmallow, Nougat
-* TC56   - Marshmallow, Nougat
-* TC70   - Lollipop
-* TC70x  - Marshmallow, Nougat
-* TC75   - Lollipop
-* TC75x  - Marshmallow, Nougat 
-* TC8000 - Lollipop
-* VC80x  - Nougat
-* WT6000 - Lollipop
-
-### Scanners and imagers
-
-* RS507
-* RS6000
-* RS5000
-* RS4000
-* DS3678
-* DS3608
-
-### Development Tools Supported
-
-* **Windows**
-    * Visual Studio
-        * 2013
-        * 2015
-        * 2017
-* **Mac OS X**
-    * Visual Studio (beta)
-    * Xamarin Studio (deprecated)
-        * 6.x
-
-> **This version cannot target devices running KitKat**. 
 
 -----
 

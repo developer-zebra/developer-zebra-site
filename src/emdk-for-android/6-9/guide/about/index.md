@@ -103,7 +103,7 @@ EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 
 **Now supports MX v8.0** in Profile Manager adds the following Settings Types and features:
 
-* **Now supports [License Manager](../../mx/licensemgr)**, including these new actions: 
+* **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions: 
  * Select a licensing file to be embedded in the XML
  * Select a preactivated license source 
  * Query product-specific license information

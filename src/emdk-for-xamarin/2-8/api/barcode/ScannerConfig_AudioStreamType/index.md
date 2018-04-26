@@ -2,7 +2,7 @@
 title: ScannerConfig.AudioStreamType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '2.8' 
 ---
 Volume slider type for decode audio feedback.
 

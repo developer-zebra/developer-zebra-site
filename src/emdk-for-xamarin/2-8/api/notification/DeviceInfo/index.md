@@ -2,7 +2,7 @@
 title: DeviceInfo
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '2.8' 
 ---
 DeviceInfo provides information of the notification device.
 

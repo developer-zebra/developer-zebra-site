@@ -2,7 +2,7 @@
 title: EMDK for Xamarin NuGet Install (beta)
 layout: guide.html
 product: EMDK for Xamarin
-productversion: '2.7'
+productversion: '2.8'
 ---
 The EMDK for Xamarin NuGet package includes the API libraries required for an building an Android application with Xamarin. The package must be installed and added to any Android project before the APIs will be available for use. 
 

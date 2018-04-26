@@ -2,7 +2,7 @@
 title: Intent Profile Feature Reference
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.7'
+productversion: '2.8'
 ---
 
 ## Overview

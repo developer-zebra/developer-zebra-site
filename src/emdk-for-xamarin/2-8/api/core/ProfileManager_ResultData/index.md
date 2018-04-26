@@ -2,7 +2,7 @@
 title: ProfileManager.ResultData
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '2.8' 
 ---
 This class provides the Status detail of processProfileAsync method.
 

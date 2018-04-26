@@ -2,7 +2,7 @@
 title: Visual Studio Setup
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.7'
+productversion: '2.8'
 ---
 
 ## Watch This Guide

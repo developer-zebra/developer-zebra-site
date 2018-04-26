@@ -132,7 +132,7 @@ csps:
     url: /emdk-for-xamarin/2-7/mx/xml
     csp: xmlmgr
 product: EMDK For Xamarin
-productversion: '2.7'
+productversion: '2.8'
 ---
  
 

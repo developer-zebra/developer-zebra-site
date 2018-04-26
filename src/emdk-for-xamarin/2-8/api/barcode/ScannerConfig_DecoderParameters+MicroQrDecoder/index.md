@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters+MicroQrDecoder
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '2.8' 
 ---
 The MicroQr class provides access to parameters that are available for the MicroQr decoder.
 

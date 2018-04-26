@@ -2,7 +2,7 @@
 title: CradleResults
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '2.8' 
 ---
 Defines all the error codes the cradle API returns. 
 

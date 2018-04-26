@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters+CompositeABDecoder
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '2.8' 
 ---
 The CompositeAB class provides access to parameters that are available for the CompositeAB decoder.
 

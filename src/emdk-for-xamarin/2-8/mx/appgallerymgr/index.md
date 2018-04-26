@@ -6,7 +6,7 @@ mxversions:
     value: 7
 csp: appmgr
 product: EMDK for Xamarin
-productversion: '2.7'
+productversion: '2.8'
 ---
 
 

@@ -2,7 +2,7 @@
 title: SimulScanException
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '2.8' 
 ---
 The SimulScan APIs throw a SimulScanException when an error occurs. 
 

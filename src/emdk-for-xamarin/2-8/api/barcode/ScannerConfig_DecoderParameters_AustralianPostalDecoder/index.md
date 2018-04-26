@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.AustralianPostalDecoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '2.8' 
 ---
 The AustralianPostal class provides access to parameters that are available for the AustralianPostal decoder.
 

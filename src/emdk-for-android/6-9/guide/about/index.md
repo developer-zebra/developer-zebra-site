@@ -15,12 +15,12 @@ EMDK for Android also inserts exclusive Profile Manager technology within the th
 The following software must be installed prior to using the EMDK for Android:
 
 **Windows**:
-* Microsoft Windows 7, Windows 8/8.1 (32- or 64-bit)
+* Windows 7, 8, 8.1 (32- or 64-bit)
 * Java Development Kit (JDK) v7u45 or higher
 * Android Studio v2.x or higher
  
 **Mac OS X**:  
-* Yosemite 10.10.x or El Capitan 10.11.x (64-bit)
+* Mac OS X 10.10.x Yosemite or 10.11.x El Capitan (64-bit)
 * Java for OS X 2014-10x or higher
 * Java Development Kit (JDK) v7u75 or higher
 
@@ -33,12 +33,13 @@ The following software must be installed prior to using the EMDK for Android:
 **Notes**:
 
 * **Install the Android SDK Platform package on the development host** appropriate for targeting the corresponding EMDK API SDK add-on. For example, Android 6.0 (API 23) must be installed for targeting EMDK APIs (API 23) as Compile SDK Version in Android Studio.
-* For building EMDK samples, the Android SDK build-tools rev.23.0.x or higher must be installed.
+* **Android SDK 23.0.x or higher build tools must be installed** for building EMDK samples.
 * **Close any running Android Studio sessions** prior to installing.
 
 -----
 
 ## Devices Supported
+_Devices/OSes new to this version are shown **in bold**_
 
 ### Mobile devices
 
@@ -57,14 +58,14 @@ The following software must be installed prior to using the EMDK for Android:
 * TC75x  - Marshmallow, Nougat 
 * TC8000 - Lollipop
 * VC80x  - Nougat
-* WT6000 - Lollipop, Nougat
+* WT6000 - Lollipop, **Nougat**
 
 ### Scanners and imagers
 
 * DS3608
 * DS3678
-* LI3608
-* LI3678
+* **LI3608**
+* **LI3678**
 * RS507
 * RS4000
 * RS5000
@@ -84,10 +85,11 @@ EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 ### API Enhancements
 
 **Enhanced Barcode Manager API**:
-* Added support for LI3608 rugged USB scanner
+* Adds support for LI3608 rugged USB scanner
  * A new enum under `BarcodeManager.DeviceIdentifier` can be used to select the LI3608
-* Added support for LI3678 rugged Bluetooth scanner
+* Adds support for LI3678 rugged Bluetooth scanner
  * A new enum under `BarcodeManager.DeviceIdentifier` can be used to select the LI3678
+
 **Enhanced Notification Manager API**:
 * A new `getDeviceIdentifier()` method in `DeviceInfo` class identifies the notification device
  * A new enum `DeviceIdentifier` supports `getDeviceIdentifier()` with following values:
@@ -97,22 +99,22 @@ EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 
 ### Software Support
 
-**Supports [Android Studio v3.1](https://android-developers.googleblog.com/2018/03/android-studio-3-1.html)**
+**Now supports [Android Studio v3.1](https://android-developers.googleblog.com/2018/03/android-studio-3-1.html)**
 
-**Support for MX v8.0** in Profile Manager adds the following Settings Types and features:
+**Now supports MX v8.0** in Profile Manager adds the following Settings Types and features:
 
-* **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
- * Clear Application Cache 
- * Enable/disable All GMS Applications on the "Safe to Disable" list
-* **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions: 
+* **Now supports [License Manager](../../mx/licensemgr)**, including these new actions: 
  * Select a licensing file to be embedded in the XML
  * Select a preactivated license source 
  * Query product-specific license information
  * Specify product name to be queried
  * Select the method used to supply the license .bin file
-* **[Settings Manager](../../mx/settingsmgr)** adds these new actions: 
+* **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
+ * Clear Application Cache 
+ * Enable/disable All GMS Applications on the "Safe to Disable" list
+* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds these new actions: 
  * Enable/disable tethering and portable hotspot features
-* **[UI Manager](../../mx/uimgr)** adds these new actions:
+* **Enhanced [UI Manager](../../mx/uimgr)** adds these new actions:
  * Enable/disable the Magnification Gesture
  * Show/hide the Virtual KeyBoard while Physical Keyboard is active
 
@@ -120,7 +122,13 @@ EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 
 ### Deprecations
 
-Deprecated support for SecureNFC APIs - The EMDK SecureNFC APIs which allow applications to perform secure communications with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM) has been deprecated.
+**SecureNFC APIs -** allow applications to perform secure communications with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM). These APIs remain supported but are no longer being advanced.
+
+**The** `ProfileConfig` **class -** is used to access profile data. It remains supported but is no longer being advanced. Zebra recommends using the name-value pair function of the Profile Manager. Profile XML data also can be modified directly. See the [Clock Sample](../../samples/clock) for information about how to modify Profile XML data.
+
+**The** `ContinuousRead` class -** is used to enable continuous scanning. It remains supported but are no longer being advanced. Zebra recommends using the `aimType`, `sameSymbolTimeout`, `differentSymbolTimeout` of camera-, imager- and laser-specific reader parameters.
+
+**The** `picklist` field -** is used for enabling the picklist mode. It remains supported but is no longer being advanced. Use the `picklistEx` field instead.
 
 -----
 

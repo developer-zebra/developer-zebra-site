@@ -64,20 +64,22 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /emdk-for-android/6-8/guide/about
+        url: /emdk-for-android/6-9/guide/about
       - title: Getting Started
-        url: /emdk-for-android/6-8/guide/gettingstarted
+        url: /emdk-for-android/6-9/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-android/6-8/tutorial/
+        url: /emdk-for-android/6-9/tutorial/
       - title: Samples
-        url: /emdk-for-android/6-8/samples
+        url: /emdk-for-android/6-9/samples
       - title: Guides
-        url: /emdk-for-android/6-8/guide/programming-guides
+        url: /emdk-for-android/6-9/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-android/6-8/guide/profile-manager-guides
+        url: /emdk-for-android/6-9/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-android/6-8/api
+        url: /emdk-for-android/6-9/api
     versions:
+      - url: emdk-for-android/6-9/guide/about/
+        label: '6.9'
       - url: emdk-for-android/6-8/guide/about/
         label: '6.8'
       - url: emdk-for-android/6-7/guide/about/
@@ -103,20 +105,22 @@ products:
     image: /images/products/emdk-for-xamarin.png
     sections:
       - title: About
-        url: /emdk-for-xamarin/2-7/guide/about
+        url: /emdk-for-xamarin/2-8/guide/about
       - title: Getting Started
-        url: /emdk-for-xamarin/2-7/guide/gettingstarted
+        url: /emdk-for-xamarin/2-8/guide/gettingstarted
       - title: Tutorials
-        url: /emdk-for-xamarin/2-7/tutorial/
+        url: /emdk-for-xamarin/2-8/tutorial/
       - title: Samples
-        url: /emdk-for-xamarin/2-7/samples
+        url: /emdk-for-xamarin/2-8/samples
       - title: Guides
-        url: /emdk-for-xamarin/2-7/guide/programming-guides
+        url: /emdk-for-xamarin/2-8/guide/programming-guides
       - title: Profile Manager
-        url: /emdk-for-xamarin/2-7/guide/profile-manager-guides
+        url: /emdk-for-xamarin/2-8/guide/profile-manager-guides
       - title: APIs
-        url: /emdk-for-xamarin/2-7/api
+        url: /emdk-for-xamarin/2-8/api
     versions:
+      - url: emdk-for-xamarin/2-8/guide/about/
+        label: '2.8'
       - url: emdk-for-xamarin/2-7/guide/about/
         label: '2.7'
       - url: emdk-for-xamarin/2-6/guide/about/

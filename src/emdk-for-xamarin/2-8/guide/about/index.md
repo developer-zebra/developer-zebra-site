@@ -63,6 +63,14 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 
 ## New in v2.8
 
+
+#### NOTICE:
+**EMDK for Xamarin 2.8 no longer supports the following IDEs**:
+
+* **Visual Studio 2013**
+* **Visual Studio 2015**
+* **Xamarin Studio (Mac/Windows)**
+
 ### Device Support
 EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
 
@@ -87,7 +95,7 @@ EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
 
 ### Software Support
 
-**Now support [Visual Studio for Mac OS X](https://www.visualstudio.com/vs/mac/)**
+**Now supports [Visual Studio for Mac OS X](https://www.visualstudio.com/vs/mac/)**
 
 **Now supports MX v8.0** in Profile Manager, adding the following features:
 
@@ -112,21 +120,13 @@ EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
 
 * **SecureNFC APIs** allow applications to perform secure communications with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM). These APIs remain supported but are no longer being advanced.
 
-* **The ContinuousRead class**, used to enable continuous scanning, remains supported but is no longer being advanced. Zebra recommends using the `aimType`, `sameSymbolTimeout`, `differentSymbolTimeout` of the camera-, imager- and laser-specific reader parameters.
+* **The ContinuousRead class**, used to enable continuous scanning, remains supported but is no longer being advanced. Zebra recommends using the `aimType`, `sameSymbolTimeout`, `differentSymbolTimeout` of the camera-, imager- and laser-specific reader parameters (since v2.7). 
 
-* **The picklist field**, used for enabling picklist mode, remains supported but is no longer being advanced. Use the `picklistEx` field instead.
+* **The picklist field**, used for enabling picklist mode, remains supported but is no longer being advanced. Use the `picklistEx` field instead (since v2.7).
 
+* **Configuring DataWedge using EMDK Profile Manager has been deprecated**. Zebra recommends using DataWedge intent-based APIs to configure DataWedge profiles going forward (since v2.7).
 
-
-Support for configuring DataWedge using EMDK Profile Manager has been deprecated - Profile Manager capabilities categorized under Data Capture has been deprecated. Zebra recommends using DataWedge intent-based APIs to configure DataWedge profiles going forward.
-
-EMDK for Xamarin support for VS2013 has been terminated- EMDK for Xamarin v2.7 was the last version for VS2013.
-
-�       EMDK for Xamarin support for Xamarin Studio (on Mac/Windows) has been terminated- EMDK for Xamarin v2.7 was the last version for Xamarin Studio (On Mac/Windows)
-
-�       EMDK for Xamarin support for VS2015 will be terminated-EMDK for Xamarin v2.8 will be the last version for VS2015
-
-
+**No longer supports Visual Studio 2013, Visual Studio 2015 or Xamarin Studio (Mac/Windows)**
 
 -----
 
@@ -184,8 +184,6 @@ EMDK for Xamarin support for VS2013 has been terminated- EMDK for Xamarin v2.7 w
 * **Support for the** `ContinuousRead` **class is deprecated**. This class, which can be used to enable continuous scanning, is still supported but will no longer be advanced. Zebra recommends using the `aimType`, `sameSymbolTimeout`, `differentSymbolTimeout` reader parameters for the device camera, imager or laser.
 
 * **Support for the** `picklist` **field is deprecated**. This field, which is used for enabling the `picklist` mode, is still support but will ultimately be replaced by the `picklistEx` field. 
-
-* **Xamarin Studio on Mac OS X** remains supported but will no longer be advanced. 
 
 -----
 

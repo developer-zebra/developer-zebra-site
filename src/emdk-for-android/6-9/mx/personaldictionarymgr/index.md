@@ -6,7 +6,7 @@ mxversions:
     value: 7
 csp: personaldictionarymgr
 product: EMDK For Android
-productversion: '6.8'
+productversion: '6.9'
 ---
 
 

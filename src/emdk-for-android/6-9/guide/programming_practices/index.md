@@ -2,7 +2,7 @@
 title: EMDK for Android Programming Practices
 layout: guide.html
 product: EMDK For Android
-productversion: '6.8'
+productversion: '6.9'
 ---
 
 ##EMDK concurrency guidelines

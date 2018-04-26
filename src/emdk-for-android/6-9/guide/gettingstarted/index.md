@@ -29,7 +29,7 @@ content-items:
     text: Understand how to use the powerful Profile Manager
     url: /emdk-for-android/6-8/guide/profile-manager
 product: EMDK For Android
-productversion: '6.8'
+productversion: '6.9'
 ---
            
 

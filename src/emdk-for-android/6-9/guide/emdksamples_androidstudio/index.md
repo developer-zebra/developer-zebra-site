@@ -2,7 +2,7 @@
 title: Using the EMDK Samples with Android Studio
 layout: sample.html
 product: EMDK For Android
-productversion: '6.8'
+productversion: '6.9'
 ---
 
 ##Loading the Sample Application

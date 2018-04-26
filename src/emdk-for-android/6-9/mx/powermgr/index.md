@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: powermgr
 product: EMDK For Android
-productversion: '6.8'
+productversion: '6.9'
 ---
 
 

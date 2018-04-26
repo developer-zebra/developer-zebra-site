@@ -2,7 +2,7 @@
 title: Controlling Application Access using Access Manager
 layout: guide.html
 product: EMDK For Android
-productversion: '6.8'
+productversion: '6.9'
 ---
 
 ## Overview

@@ -32,10 +32,11 @@ The following software must be installed prior to using the EMDK for Android.
 
 **Notes**:
 
-* The appropriate Android SDK Platform package must be installed on the development machine in order to target the right EMDK APIs SDK add-on. For example, Android 6.0 (API 23) must be installed for targeting EMDK APIs (API 23) as Compile SDK Version in Android Studio.
-* For building EMDK samples, the Android SDK Build-tools rev.23.0.x or higher must be installed.
-* Prior to installing, all Android Studio sessions must be closed if already running.
+* **Install the Android SDK Platform package on the development host** appropriate for targeting the corresponding EMDK API SDK add-on. For example, Android 6.0 (API 23) must be installed for targeting EMDK APIs (API 23) as Compile SDK Version in Android Studio.
+* For building EMDK samples, the Android SDK build-tools rev.23.0.x or higher must be installed.
+* **Close any running Android Studio sessions** prior to installing.
 
+-----
 
 ## Devices Supported
 
@@ -56,22 +57,94 @@ The following software must be installed prior to using the EMDK for Android.
 * TC75x  - Marshmallow, Nougat 
 * TC8000 - Lollipop
 * VC80x  - Nougat
-* WT6000 - Lollipop
+* WT6000 - Lollipop, Nougat
 
 ### Scanners and imagers
 
-* RS507
-* RS6000
-* RS5000
-* RS4000
-* DS3678
 * DS3608
-
-> **This version cannot target devices running KitKat**. 
+* DS3678
+* LI3608
+* LI3678
+* RS507
+* RS4000
+* RS5000
+* RS6000
 
 -----
 
-## New in v6.8
+## New in v6.9
+
+### Device Support
+EMDK for Android 6.9 adds support for the following Zebra devices:
+
+* **LI3608** rugged USB scanner
+* **LI3678** rugged Bluetooth scanner 
+* **WT6000 running Android Nougat** 
+
+### Software Support
+
+* **Supports [Android Studio v3.1](https://android-developers.googleblog.com/2018/03/android-studio-3-1.html)**
+
+* **Supports MX v8.0** in Profile Manager:
+
+App Manager � Added actions to clear Application Cache and enable or disable All GMS Applications on the Safe to Disable list.
+
+License Manager
+
+Added ability to select the licensing file whose data should be embedded in the XML.
+
+Added ability to select the preactivated license source type from where license procured.
+
+Added ability to query product specific license information.
+
+Added ability to specify product name to be queried.
+
+Added ability to select the method that will be used to supply the license .bin file.
+
+Settings Manager � Added ability to specify whether the user has the ability to perform Tethering and portable hotspot.
+
+UI Manager
+
+Added ability to select whether the Magnification Gesture will be allowed.
+
+Added ability to select whether to Show the Virtual KeyBoard while Physical Keyboard is active.
+
+Enhanced Barcode Manager API:
+
+Added support for new USB Scanner LI3608:
+
+ 
+
+Added new enum under BarcodeManager.DeviceIdentifier for selecting the LI3608 USB Scanner.
+
+ 
+
+Added support for new Bluetooth Scanner LI3678:
+
+Added new enum under BarcodeManager.DeviceIdentifier for selecting the LI3678 Bluetooth Scanner.
+
+Enhanced Notification Manager API:
+
+Added new method "getDeviceIdentifier()" in DeviceInfo class to identify the notification device.
+
+Added new enum "DeviceIdentifier" to support getDeviceIdentifier() with following values:
+
+DEFAULT - default
+
+BLUETOOTH_IMAGER_RS6000 - Bluetooth Imager RS6000
+
+EXTERNAL_VIBRATOR1 - External Vibrator
+
+Deprecated support for SecureNFC APIs - The EMDK SecureNFC APIs which allow applications to perform secure communications with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM) has been deprecated.
+
+
+### Deprecations
+
+-----
+
+## Version History
+
+### Added in v6.8
 
 * Supports compiling applications to Android API level 26 with new "EMDK APIs, Android 26, rev xx (API 26)" add-on
 

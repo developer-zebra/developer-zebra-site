@@ -58,11 +58,11 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 
 ## New in v2.8
 
-> NOTICE:<br>
+> **NOTICE**:<br>
 	**EMDK for Xamarin 2.8 no longer supports the following IDEs**:<br>
-	**Visual Studio 2013**<br>
-	**Visual Studio 2015**<br>
-	**Xamarin Studio (Mac/Windows)**
+	Visual Studio 2013<br>
+	Visual Studio 2015<br>
+	Xamarin Studio (Mac/Windows)
 
 ### Device Support
 EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:

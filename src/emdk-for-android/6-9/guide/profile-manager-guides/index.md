@@ -26,6 +26,8 @@ automenu:
           url: /emdk-for-android/6-9/mx/browsermgr
         - title: Enterprise Keyboard Manager
           url: /emdk-for-android/6-9/mx/enterprisekeyboardmgr/
+        - title: License Manager 
+          url: /emdk-for-android/6-9/mx/licensemgr/
     - title: Device Configuration
       items:
         - title: Analytics Manager
@@ -109,6 +111,7 @@ automenu:
 product: EMDK For Android
 productversion: '6.9'
 ---
+
 <!-- 4/24/18: 
 
 DataWedge configuration through Profile Manager Data Capture was terminated in 6.8. 

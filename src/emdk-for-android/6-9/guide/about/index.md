@@ -122,13 +122,10 @@ EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 
 ### Deprecations
 
-**SecureNFC APIs** allow applications to perform secure communications with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM). These APIs remain supported but are no longer being advanced.
-
-**The ProfileConfig class**, used to access profile data, remains supported but is no longer being advanced. Zebra recommends using the name-value pair function of the Profile Manager. Profile XML data also can be modified directly. See the [Clock Sample](../../samples/clock) for information about how to modify Profile XML data.
-
-**The ContinuousRead class**, used to enable continuous scanning, remains supported but is no longer being advanced. Zebra recommends using the `aimType`, `sameSymbolTimeout`, `differentSymbolTimeout` of the camera-, imager- and laser-specific reader parameters.
-
-**The picklist field**, used for enabling picklist mode, remains supported but is no longer being advanced. Use the `picklistEx` field instead.
+* **SecureNFC APIs** allow applications to perform secure communications with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM). These APIs remain supported but are no longer being advanced.
+* **The ProfileConfig class**, used to access profile data, remains supported but is no longer being advanced. Zebra recommends using the name-value pair function of the Profile Manager. Profile XML data also can be modified directly. See the [Clock Sample](../../samples/clock) for information about how to modify Profile XML data.
+* **The ContinuousRead class**, used to enable continuous scanning, remains supported but is no longer being advanced. Zebra recommends using the `aimType`, `sameSymbolTimeout`, `differentSymbolTimeout` of the camera-, imager- and laser-specific reader parameters.
+* **The picklist field**, used for enabling picklist mode, remains supported but is no longer being advanced. Use the `picklistEx` field instead.
 
 -----
 

@@ -1,5 +1,5 @@
 ---
-title: EMDK For Xamarin
+title: About EMDK For Xamarin
 layout: guide.html
 product: EMDK For Xamarin
 productversion: '2.8'
@@ -11,17 +11,25 @@ EMDK for Xamarin is an IDE extension that provides developers with a comprehensi
 
 EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within the IDE, providing a GUI-based development tool for configuring Zebra devices. This allows developers to write fewer lines of code, produce fewer errors, and reduce overall development time and effort.
 
------
+### Prerequisites
+The following is required for using EMDK for Xamarin:
 
+**Windows**:
+* Windows 7, 8, 8.1, 10 (32- or 64-bit)
+* Visual Studio 2017
+* Java Development Kit (JDK) v7u45 or higher
+
+**Mac OS X**:  
+* Mac OS X 10.10 or higher (64-bit)
+* Microsoft Visual Studio
+* Java for OS X 2014-10x or higher
+* Java Development Kit (JDK) v7u75 or higher
+
+-----
 
 ### Devices Supported
 
-EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. 
-
-**The devices listed below have been tested and validated**. 
-
-_**Devices in bold text** are new to this version_. 
-
+EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. **Devices below are tested and validated**. **Devices in bold** are new to this version. 
 
 ### Mobile devices
 
@@ -37,7 +45,7 @@ _**Devices in bold text** are new to this version_.
 * TC75x  - Marshmallow, Nougat 
 * TC8000 - Lollipop
 * VC80x  - Nougat
-* WT6000 - Lollipop, **Nougat**
+* **WT6000** - Lollipop, **Nougat** `New!`
 
 ### Scanners and imagers
 
@@ -47,15 +55,8 @@ _**Devices in bold text** are new to this version_.
 * RS4000
 * DS3678
 * DS3608
-* **LI3608**
-* **LI3678**
-
-### Development Tools Supported
-
-* **Windows**
-    * **Visual Studio 2017**
-* **Mac OS X**
-    * **Microsoft Visual Studio**
+* **LI3608** `New!`
+* **LI3678** `New!`
 
 -----
 

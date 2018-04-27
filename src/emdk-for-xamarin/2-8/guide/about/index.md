@@ -18,7 +18,10 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 
 EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. 
 
-**The devices listed below have been tested and validated**. Devices and/or OSes new to this version are shown **in bold**. 
+**The devices listed below have been tested and validated**. 
+
+_**Devices in bold text** are new to this version_. 
+
 
 ### Mobile devices
 
@@ -50,16 +53,16 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 ### Development Tools Supported
 
 * **Windows**
-    * Visual Studio 2017
+    * **Visual Studio 2017**
 * **Mac OS X**
-    * Microsoft Visual Studio
+    * **Microsoft Visual Studio**
 
 -----
 
 ## New in v2.8
 
 > **NOTICE**:<br>
-	**EMDK for Xamarin 2.8 no longer supports the following IDEs**:<br>
+	**EMDK for Xamarin 2.8 no longer supports**:<br>
 	Visual Studio 2013<br>
 	Visual Studio 2015<br>
 	Xamarin Studio (Mac/Windows)

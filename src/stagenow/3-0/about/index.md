@@ -13,11 +13,11 @@ StageNow 3.0 User Guide, Revision A
 
 StageNow MN-002910 
 
-January, 2018
+April, 2018
 
 ## Introduction
 
-#### This guide covers StageNow 3.0.x and higher. 
+#### Covers StageNow 3.0.x and higher. 
 
 This guide provides the staging administrator with instructions for using StageNow 3.0 to create profiles for staging devices.
 
@@ -53,13 +53,40 @@ This guide provides the staging administrator with instructions for using StageN
 
 ## New in v3.0
 
-### Important News 
+* **Support for Chinese language**. A language selector is found in the upper-right corner of the English-language screen. **Note**: The selector disappears after selecting the Chinese language. 
 
-* StageNow 3.0 no longer supports the OSupdatepackage for Jelly Bean or KitKat devices.
-* The StageNow update file for devices running Android Lollipop and higher is distributed with the latest BSP or security incremental patch for the specific device(s). 
+* **Support for server-based device staging on devices with MX 4.4 and higher**.<br>
+**IMPORTANT**, network transport protocols are subject to the following MX-dependencies: 
+ * **MX 4.4+ - FTP only**
+ * **MX 7.0+ - HTTP/HTTPS** 
+ * **MX 7.1+ - FTPS**
+
+**Now supports MX v8.0** in Profile Manager adds the following Settings Types and features:
+
+* **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions: 
+ * Select a licensing file to be embedded in the XML
+ * Select a preactivated license source 
+ * Query product-specific license information
+ * Specify product name to be queried
+ * Select the method used to supply the license .bin file
+* **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
+ * Clear Application Cache 
+ * Enable/disable All GMS Applications on the "Safe to Disable" list
+* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds these new actions: 
+ * Enable/disable tethering and portable hotspot features
+* **Enhanced [UI Manager](../../mx/uimgr)** adds these new actions:
+ * Enable/disable the Magnification Gesture
+ * Show/hide the Virtual KeyBoard while Physical Keyboard is active
+
+* **Supports Windows 10**
+
+-----
+
+## Version History
+
+### Added in v2.10
+
 * The [Wipe a Device guide](../Profiles/wipedevice) now includes instructions for bypassing the Android Setup Wizard following an Enterprise Reset. 
-
-### New Features
 
 * **External Staging Server Support**
  * Staging and deployment content can now be hosted on a server or system other than the StageNow workstation

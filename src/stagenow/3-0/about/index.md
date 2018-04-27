@@ -119,7 +119,7 @@ The following software must be installed on the staging workstation prior to usi
 
 * **When staging Zebra TC20/TC25 devices, administrators can now prevent Analytics Manager from being disabled**
 
-* **[Support for MX 7.2](../stagingprofiles/#mx6xselection)** adds the following Setting Types and features:
+* **[Support for MX 7.2](../stagingprofiles/#mxselection)** adds the following Setting Types and features:
 
 * [Audio Manager](../csp/audiomgr) new CSP:
  * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
@@ -144,11 +144,11 @@ The following software must be installed on the staging workstation prior to usi
 
 ### Compatibility Notes
  
-* See the full list of [Zebra Android devices that support StageNow 3.0](http://techdocs.zebra.com/stagenow/3-0/gettingstarted/)
+* See the full list of [Zebra Android devices that support StageNow 3.0](../gettingstarted/)
 
 * Zebra devices running Android Nougat, Marshmallow, Lollipop, KitKat and Jelly Bean that ship with the StageNow Client support all device configuration options offered by the StageNow tool.
 
-* The MX features supported by a given device depends on the versions of Android, OSX, and MX versions in the device BSP. Refer to the [MX feature matrix](http://techdocs.zebra.com/mx/compatibility/) to determine features supported by devices in your organization.    
+* The MX features supported by a given device depends on the versions of Android, OSX, and MX versions in the device BSP. Refer to the [MX feature matrix](/mx/compatibility/) to determine features supported by devices in your organization.    
  
 * The free StageNow application can be downloaded and installed on any Windows 7 PC with no pre-requisite software and with no need to purchase, locate, license or install other components. 
 

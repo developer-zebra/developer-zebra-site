@@ -29,7 +29,7 @@ The following is required for using EMDK for Xamarin:
 
 ### Devices Supported
 
-EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. **Devices below are tested and validated**. **Devices in bold** are new to this version. 
+EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. **Devices below are tested and validated**.
 
 ### Mobile devices
 
@@ -45,7 +45,7 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 * TC75x  - Marshmallow, Nougat 
 * TC8000 - Lollipop
 * VC80x  - Nougat
-* **WT6000** - Lollipop, **Nougat** `New!`
+* **WT6000** - Lollipop, **Nougat** `NEW`
 
 ### Scanners and imagers
 
@@ -55,18 +55,15 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 * RS4000
 * DS3678
 * DS3608
-* **LI3608** `New!`
-* **LI3678** `New!`
+* **LI3608** `NEW`
+* **LI3678** `NEW`
 
 -----
 
 ## New in v2.8
 
-> **NOTICE**:<br>
-	**EMDK for Xamarin 2.8 no longer supports**:<br>
-	Visual Studio 2013<br>
-	Visual Studio 2015<br>
-	Xamarin Studio (Mac/Windows)
+### SUPPORT NOTICE
+> EMDK for Xamarin 2.8 **no longer supports Visual Studio 2013, Visual Studio 2015 or Xamarin Studio** (Mac/Windows). 
 
 ### Device Support
 EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
@@ -74,6 +71,8 @@ EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
 * **LI3608** rugged USB scanner
 * **LI3678** rugged Bluetooth scanner 
 * **WT6000 running Android Nougat** 
+
+-----
 
 ### API Enhancements
 
@@ -90,9 +89,13 @@ EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
 	BLUETOOTH_IMAGER_RS6000 - Bluetooth imager RS6000
 	EXTERNAL_VIBRATOR1 - External Vibrator
 
+-----
+
 ### Software Support
 
-**Now supports [Visual Studio for Mac OS X](https://www.visualstudio.com/vs/mac/)**
+**On Windows, now supports <u>only</u> [Visual Studio 2017](https://www.visualstudio.com/vs/win)**
+
+**On Mac OS X, now supports [Visual Studio for Mac](https://www.visualstudio.com/vs/mac/)**
 
 **Now supports MX v8.0** in Profile Manager, adding the following features:
 

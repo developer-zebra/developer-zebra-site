@@ -11,15 +11,15 @@ EMDK for Android is an extension for the Android Studio IDE that provides develo
 
 EMDK for Android also inserts exclusive Profile Manager technology within the the IDE, providing a GUI-based development tool for configuring Zebra devices. This allows developers to write fewer lines of code, produce fewer errors and reduce overall development time and effort.
 
-## Requirements
+## Prerequisites
 The following software must be installed prior to using the EMDK for Android:
 
 **Windows**:
 * Windows 7, 8, 8.1, 10 (32- or 64-bit)
 * Java Development Kit (JDK) v7u45 or higher
 * Android Studio v2.x or higher
-(EMDK for Android has been validated with Android Studio 2.2.x, 2.3.x, 3.0 and 3.1)
- 
+(EMDK for Android validated on Android Studio 2.2.x, 2.3.x, 3.0 and 3.1)
+
 **Mac OS X**:  
 * Mac OS X 10.10.x Yosemite or 10.11.x El Capitan (64-bit)
 * Java for OS X 2014-10x or higher
@@ -40,7 +40,6 @@ The following software must be installed prior to using the EMDK for Android:
 -----
 
 ## Devices Supported
-_Devices/OSes new to this version are shown **in bold**_
 
 ### Mobile devices
 
@@ -59,14 +58,14 @@ _Devices/OSes new to this version are shown **in bold**_
 * TC75x  - Marshmallow, Nougat 
 * TC8000 - Lollipop
 * VC80x  - Nougat
-* **WT6000** - Lollipop, **Nougat** `New!`
+* **WT6000** - Lollipop, **Nougat** `NEW`
 
 ### Scanners and imagers
 
 * DS3608
 * DS3678
-* **LI3608** `New!`
-* **LI3678** `New!`
+* **LI3608** `NEW`
+* **LI3678** `NEW`
 * RS507
 * RS4000
 * RS5000
@@ -83,6 +82,8 @@ EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 * **LI3678** rugged Bluetooth scanner 
 * **WT6000 running Android Nougat** 
 
+-----
+
 ### API Enhancements
 
 **Enhanced Barcode Manager API**:
@@ -97,6 +98,8 @@ EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 	DEFAULT - default
 	BLUETOOTH_IMAGER_RS6000 - Bluetooth imager RS6000
 	EXTERNAL_VIBRATOR1 - External Vibrator
+
+-----
 
 ### Software Support
 

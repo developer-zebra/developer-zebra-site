@@ -10,24 +10,45 @@ languages:
 ---
 
 StageNow 3.0 User Guide, Revision A
+#### Covers StageNow 3.0.x and higher
 
-StageNow MN-002910 
+StageNow MN-003004 
 
-April, 2018
+April 20, 2018
 
-## Introduction
+## Overview
 
-#### Covers StageNow 3.0.x and higher. 
+This guide provides the staging administrator with instructions for using StageNow 3.0 to create XML-based profiles for staging devices.
 
-This guide provides the staging administrator with instructions for using StageNow 3.0 to create profiles for staging devices.
+### Prerequisites
+The following software must be installed on the staging workstation prior to using StageNow:
 
-### Supported Web Browsers
+* **Windows 7, 10 Pro** (English or Chinese)
+* **A supported web browser**:
+ * Firefox 29 or higher
+ * Google Chrome 35 or higher 
+ * Internet Explorer 9 or higher
 
-* Firefox 29 or newer
+-----
 
-* Google Chrome 35 or newer 
+### Device Support
 
-* Internet Explorer 9 or newer
+**StageNow v3.0 supports all Zebra devices with the following operating systems and extensions**: 
+
+* Android Nougat
+* Android Marshmallow
+* Android Lollipop
+* Android KitKat
+* MX 8.0
+* MX 7.2
+* MX 7.1
+* MX 7.0
+* MX 6.3
+* MX 6.2
+* MX 6.1
+* MX 6.0
+* MX 5.2
+* MX 5.1
 
 -----
 
@@ -53,32 +74,34 @@ This guide provides the staging administrator with instructions for using StageN
 
 ## New in v3.0
 
-* **Support for Chinese language**. A language selector is found in the upper-right corner of the English-language screen. **Note**: The selector disappears after selecting the Chinese language. 
+**Support for Chinese language**. The StageNow tool and device client now support localization for the Chinese language and Chinese version of Windows. 
 
-* **Support for server-based device staging on devices with MX 4.4 and higher**.<br>
-**IMPORTANT**, network transport protocols are subject to the following MX-dependencies: 
- * **MX 4.4+ - FTP only**
- * **MX 7.0+ - HTTP/HTTPS** 
- * **MX 7.1+ - FTPS**
+**Techdocs Chinese**. Techdocs, the technical documentation site for Zebra solutions, now offers a language selector for StageNow in the upper-right corner of the English-language screen. **Note**: The selector disappears after selecting the Chinese language. 
 
-**Now supports MX v8.0** in Profile Manager adds the following Settings Types and features:
+**Support for server-based device staging on devices with MX 4.4 and higher**.<br>
+**IMPORTANT**: Network transport protocols are subject to the following MX dependencies: 
+* **MX 4.4+ - FTP only**
+* **MX 7.0+ - HTTP/HTTPS** 
+* **MX 7.1+ - FTPS**
 
-* **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions: 
+**Supports MX v8.0**, adding the following features:
+* **Enhanced [License Manager](../csp/license)**: 
  * Select a licensing file to be embedded in the XML
  * Select a preactivated license source 
  * Query product-specific license information
  * Specify product name to be queried
  * Select the method used to supply the license .bin file
-* **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
+* **Enhanced [App Manager](../csp/app)**:  
  * Clear Application Cache 
  * Enable/disable All GMS Applications on the "Safe to Disable" list
-* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds these new actions: 
+* **Enhanced [Settings Manager](../csp/settingsmgr)**: 
  * Enable/disable tethering and portable hotspot features
-* **Enhanced [UI Manager](../../mx/uimgr)** adds these new actions:
+* **Enhanced [UI Manager](../csp/ui)**:
  * Enable/disable the Magnification Gesture
  * Show/hide the Virtual KeyBoard while Physical Keyboard is active
+* **Enhanced [Personal Dictionary](../csp/personaldictionary)** now accepts shortcuts when bulk-adding terms from a file
 
-* **Supports Windows 10**
+**Supports Windows 10 Pro** (English and Chinese)
 
 -----
 
@@ -108,22 +131,6 @@ This guide provides the staging administrator with instructions for using StageN
  * Supports RS-507 and DS-3608 scanners
 * [Settings Manager](../csp/settingsmgr) new feature:
  * Enable/Disable application notification control on devices running Android Nougat
-
-**StageNow v3.0 now supports these operating systems and extensions**: 
-
-* Android Nougat
-* Android Marshmallow
-* Android Lollipop
-* Android KitKat
-* MX 7.2
-* MX 7.1
-* MX 7.0
-* MX 6.3
-* MX 6.2
-* MX 6.1
-* MX 6.0
-* MX 5.2
-* MX 5.1
 
 -----
 

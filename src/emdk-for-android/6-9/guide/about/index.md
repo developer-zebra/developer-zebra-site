@@ -12,7 +12,7 @@ EMDK for Android is an extension for the Android Studio IDE that provides develo
 EMDK for Android also inserts exclusive Profile Manager technology within the the IDE, providing a GUI-based development tool for configuring Zebra devices. This allows developers to write fewer lines of code, produce fewer errors and reduce overall development time and effort.
 
 ## Prerequisites
-The following software must be installed prior to using the EMDK for Android:
+The following software must be installed prior to using EMDK for Android:
 
 **Windows**:
 * Windows 7, 8, 8.1, 10 (32- or 64-bit)

@@ -284,22 +284,24 @@ products:
     image: /images/products/stagenow.png
     sections:
       - title: About
-        url: /stagenow/2-10/about
+        url: /stagenow/3-0/about
       - title: Getting Started
-        url: /stagenow/2-10/gettingstarted
+        url: /stagenow/3-0/gettingstarted
       - title: Profiles
-        url: /stagenow/2-10/stagingprofiles
+        url: /stagenow/3-0/stagingprofiles
       - title: Profile Wizards
-        url: /stagenow/2-10/ProfileWizards
+        url: /stagenow/3-0/ProfileWizards
       - title: Settings
-        url: /stagenow/2-10/settingconfig
+        url: /stagenow/3-0/settingconfig
       - title: Setting Types
-        url: /stagenow/2-10/settingtypes
+        url: /stagenow/3-0/settingtypes
       - title: Device Staging
-        url: /stagenow/2-10/stageclient
+        url: /stagenow/3-0/stageclient
       - title: Download
-        url: /stagenow/2-10/download
+        url: /stagenow/3-0/download
     versions:
+      - url: stagenow/3-0/about
+        label: '3.0'
       - url: stagenow/2-10/about
         label: '2.10.x'
       - url: stagenow/2-9/about

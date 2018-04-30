@@ -163,16 +163,20 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /ehs/2-6/guide/about
+        url: /ehs/2-8/guide/about
       - title: Setup
-        url: /ehs/2-6/guide/setup
+        url: /ehs/2-8/guide/setup
       - title: Advanced Settings
-        url: /ehs/2-6/guide/settings
+        url: /ehs/2-8/guide/settings
       - title: Special Features
-        url: /ehs/2-6/guide/features
+        url: /ehs/2-8/guide/features
       - title: Download
-        url: /ehs/2-6/download
+        url: /ehs/2-8/download
     versions:
+      - url: ehs/2-8/guide/about/
+        label: '2.8'
+      - url: ehs/2-7/guide/about/
+        label: '2.7'
       - url: ehs/2-6/guide/about/
         label: '2.6'
       - url: ehs/2-5/guide/about/

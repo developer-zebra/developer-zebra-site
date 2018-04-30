@@ -70,10 +70,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
@@ -85,7 +85,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">MC18</font></p>
 </td>
 <td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
@@ -102,7 +102,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 </td>
 <td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
@@ -125,7 +125,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 </tr>
 
@@ -135,7 +135,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
@@ -188,7 +188,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 </tr>
 
@@ -201,10 +201,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 </tr>
 
@@ -230,7 +230,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 
 <td style="width: 96px;">
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
@@ -248,10 +248,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 </tr>
 
@@ -261,7 +261,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
@@ -279,10 +279,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 </tr>
 
@@ -292,7 +292,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
@@ -307,42 +307,57 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">*</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 </tr>
 </tbody>
 </table>
 
+-----
+
 ## New in EHS 2.8
 
->**This version does not support Android KitKat**. 
+### Device Support
 
-**EHS 2.8 supports Zebra devices running Android Lollipop and higher only**. Zebra continues to support earlier versions of EHS for use on devices running KitKat. To use EHS on a device running KitKat, please [download EHS 2.6](/ehs/2-6/download) or an earlier version. 
+EHS 2.8 adds support for the following devices running Android Nougat:
 
-#### Device Support
-EHS 2.8 adds support for the following devices running Android Nougat:  
+* **WT6000** 
 
-* MC33
-* TC20* 
-* TC25* 
-* TC51
-* TC56
-* TC70x
-* TC75x 
+### New Features
 
-( * ) Requires a device-specific .apk file. See [download page](../../download) for details. 
+* **Simplified Chinese -** EHS has been approved to run on device operating systems localized for the Simplified Chinese language.
 
-#### New Features
-* [Enable/Disable Recent Apps button](../settings/#recentappsbuttondisabled) on Android Nougat devices
-* [Enable/Disable EHS Logging](../features/#ehslog) and set a maximum log file size 
-* [Battery Health Percentage now displayed](../setup/#batteryandwifiquickview) on Battery info and Quick info screens on devices equipped with Zebra Power Precision Plus battery
-* [Enable/Disable wallpaper stretching](../settings/#wallpaperstretching) to expand an image to fill the device screen
+* **Enhanced Device Identifier Options -**. Information to uniquely identify a device&mdash;its serial number, MAC address, network host name, Bluetooth address, Bluetooth name or IMEI number&mdash;can be displayed as the title bar text of the EHS home screen.
+
+* **Custom EHS home-screen icon displays on other screens**. If a custom icon is installed to replace the stock EHS icon, that icon can optionally be set to display on screens for Battery Info, Wireless Info, Preferences and the Tools menu.
+
+* **File browsing is now supported** when selecting a title-bar icon or wallpaper image through the Preferences panel. 
+
+* **Password encryption has been enhanced** for the Admin login. 
+
+* **A colored screen is displayed** while EHS is starting up. 
+
+Preferences screen will expose the feature to enable/disable airplane option only in supported devices like ET5X Android Marshmallow
+
+Fixed � camera/search app disable issue when rebooted the device from Lock screen with default EHS setting keyguard camera/search disabled.
+
+
+### Deprecations
+
+* Secure Mode feature has been deprecated
+
+* Dropped support for the following features: 
+ * Enable/disable status bar pull-down
+ * Enable/disable status bar settings icon
+ * Enable/disable exit instead of reboot
+
+These features can be accessed using Zebra's [StageNow](/stagenow) administrative tools or [EMDK](/) developer tools.
 
 -----
 
@@ -403,13 +418,42 @@ See the [Advanced Settings](../settings) section for a complete `enterprisehomes
 
 -----
 
-## Added in EHS 2.6
+## Version History
+
+### Added in EHS 2.7
+
+>**This version does not support Android KitKat**. 
+
+**EHS 2.8 supports Zebra devices running Android Lollipop and higher only**. Zebra continues to support earlier versions of EHS for use on devices running KitKat. To use EHS on a device running KitKat, please [download EHS 2.6](/ehs/2-6/download) or an earlier version. 
+
+#### Device Support
+EHS 2.8 adds support for the following devices running Android Nougat:  
+
+* MC33
+* TC20* 
+* TC25* 
+* TC51
+* TC56
+* TC70x
+* TC75x 
+
+( * ) Requires a device-specific .apk file. See [download page](../../download) for details. 
+
+#### New Features
+* [Enable/Disable Recent Apps button](../settings/#recentappsbuttondisabled) on Android Nougat devices
+* [Enable/Disable EHS Logging](../features/#ehslog) and set a maximum log file size 
+* [Battery Health Percentage now displayed](../setup/#batteryandwifiquickview) on Battery info and Quick info screens on devices equipped with Zebra Power Precision Plus battery
+* [Enable/Disable wallpaper stretching](../settings/#wallpaperstretching) to expand an image to fill the device screen
+
+-----
+
+### Added in EHS 2.6
 
 * **Support for ET50/ET55** tablet computers runing Marshmallow
 
 -----
 
-## Added in EHS 2.5
+### Added in EHS 2.5
 
 #### Device Support:
 * [MC32](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3200.html) running Android 5.1.1 Lollipop (see [Android 6.x Marshmallow Notes](#androidmarshmallownotes))
@@ -440,7 +484,7 @@ See the [Advanced Settings](../settings) section for a complete `enterprisehomes
 
 ------
 
-## Added in EHS 2.4
+### Added in EHS 2.4
 
 * **Support for the [Zebra WT6000](https://www.zebra.com/us/en/products/mobile-computers/wearable-computers/wt6000.html) -** wearable terminal running Android 5.0 Lollipop. (see [Android Notes](#androidlollipopandmarshmallownotes)) 
 
@@ -468,6 +512,6 @@ _The User Mode screen with XXL icons_. -->
 
 ------
 
-## Added in EHS 2.3
+### Added in EHS 2.3
 * [Enable/disable device reboot](../settings#rebootoninstallenabled) when EHS is first launched after installation. 
 * TC8000 KitKat version 4.4 support (added January, 2016)

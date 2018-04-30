@@ -137,14 +137,14 @@ EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 
 ### General Interest
 
-1. Initial settings for a project can be found at **[Creating a Project using Android Studio](../../tutorial/tutCreateProjectAndroidStudio/)**
-1. Integrator is a utility that can be used to install EMDK for Android components to installations of Android Studio development environment on the host PC.
-1. If two applications are making modifications to the same profile, the settings of last modification will be effective for that profile. If both applications need their own settings to be effective and still want to use the same profile name, both applications must set the profile every time they come to foreground. However, if both applications need to create or modify the same DataCapture profile simultaneously, it will cause one application operation to fail.
-1. Zebra recommends closing all Android Studio windows before proceeding with uninstallation. Failure to do so might not remove the plug-in component from Android Studio. To remove it manually, go to plug-ins folder ("<Android Studio installation path>\plugins") and delete folder "com.symbol.emdk.wizard.intellijIdea."
+1. Initial settings for a project can be found at **[Creating a Project using Android Studio](../../tutorial/tutCreateProjectAndroidStudio/)**.
+1. Integrator is a utility included with EMDK that can be used to install EMDK for Android components to installations of Android Studio development environment on the host PC.
+1. If two applications are making modifications to the same profile, the settings of last modification will be effective for that profile. If both applications need their own settings to be effective and still want to use the same profile name, both applications must set the profile every time they come to foreground. However, if both applications create or modify the same DataCapture profile simultaneously, one of the operations will fail.
+1. Zebra recommends closing all Android Studio windows before proceeding with uninstallation. Failure to do so might not remove the plug-in component from Android Studio. To remove it manually, go to plug-ins folder (`<Android Studio installation path>\plugins`) and delete folder: `com.symbol.emdk.wizard.intellijIdea`.
 1. **Wi-Fi**: To use the Advanced Options under Wi-Fi, follow these steps:
-	* PMKID must be enabled to enable PreAuth (PreAuth =1 and PMKID =1)   
-	* FT must be enabled to enable FTRIC (FT=1 and FTRIC =1)
-	* OKC must be disabled (OKC =0 and PMKID =1) to use PMKID caching
+	* PMKID must be enabled to enable PreAuth (PreAuth=1 and PMKID=1)   
+	* FT must be enabled to enable FTRIC (FT=1 and FTRIC=1)
+	* OKC must be disabled (OKC=0 and PMKID=1) to use PMKID caching
 	* **Important Note**: The default “Fast Power Savings” value must be used for the “Power Save” parameter under the Advanced Options. Using the “Do Not Change” value will fail.   
 1. **Analytics Manager**: “Enable File Upload” option is deprecated and removed (in MX 6.0). Use “File Upload” switch under newly introduced “Feature Switch” section instead. When migrating the profile to new MX version, please note that the configuration will lose the user selection for this field. Zebra recommends editing the configuration to set the “File Upload” options as required in the Analytics Manager configuration.
 1. If the Bluetooth pairing information for RS507 in previous connection attempts has been deleted on the device side, the next connection attempt might fail. The workaround is to clean-boot the RS507 and retry.

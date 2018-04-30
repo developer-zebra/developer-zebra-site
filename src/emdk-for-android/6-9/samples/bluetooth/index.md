@@ -1,6 +1,6 @@
 ---
 publish: true
-title: Controlling Bluetooth
+title: Bluetooth Control Using WirelessMgr
 description: Shows how to enable and disable the Bluetooth radio on a device.
 downloads:
   - title: Sample Projects
@@ -11,6 +11,8 @@ sources:
 features:
   - Profile Manager
   - Clock
+devices:
+  - All supported devices
 image: 1.png
 screenshots:
   - 1.png

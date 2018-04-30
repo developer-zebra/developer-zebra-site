@@ -1,6 +1,6 @@
 ---
 publish: true
-title: Bluetooth Control Using WirelessMgr 
+title: Using WirelessMgr 
 description: Shows how to enable and disable the Bluetooth radio on a device.
 downloads:
   - title: Sample Projects

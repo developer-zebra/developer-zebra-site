@@ -16,19 +16,20 @@ parm:
       name: Execute all to end
       description: Sets the MXMS to execute all Features in the Request XML document regardless of success or failure of each Feature (default mode). 
     - code: 2
+      mx: "4.2"
       devicetype: A,B
       name: Execute until error, then stop 
-      mx: "4.2"
       description: Sets the MXMS to execute Features in the Request XML document and stops at the first failure. 
     - code: 3
+      mx: "4.2"
       devicetype: A,B
       name: Try until error, then Skip to Catch
-      mx: "4.2"
       description: Sets the MXMS to execute Features in the Request XML document until the first failure, when it begins skipping Features until resuming when a "Catch error, Execute remainder" XmlMgr Feature is found or terminating when the end of the Request XML document is reached.
     - code: 4
+      mx: "4.2"
       devicetype: A,B
       name: Catch error, Execute remainder
       description: Indicates the location of a "Catch" point as described above.
 ---
 
-Used to specify the Processing Mode used by the MXMS to handle errors encountered while processing a Request XML document. See Overview section (above) for behavior details. 
+Used to specify the Processing Mode used by the MXMS to handle errors encountered while processing a Request XML document. See [Overview section](#overview) for more information. 

@@ -400,7 +400,7 @@ Control various aspects of EHS behavior, security and display settings correspon
 
 ------
 
-#### Title
+### Title
 Specifies the title bar text for the EHS app. The default title "Enterprise Home Screen" can be changed to any string of characters. 
 
 <img alt="" style="height:350px" src="title_bar_1.png"/>
@@ -418,7 +418,34 @@ Specifies the title bar text for the EHS app. The default title "Enterprise Home
 
 ------
 
-#### Title Bar Icon Disabled
+### Device ID in Title
+
+Allows information that uniquely identifies the device to be displayed as the title bar text of the EHS home screen. Specify serial number, Wi-Fi MAC address, Wi-Fi host name, Bluetooth address, Bluetooth name or IMEI number.
+
+<img alt="" style="height:350px" src="28_device_ID_title.png"/>
+
+
+<b>Possible values</b>:
+
+* Plain text before and/or after any single device ID:
+ * [serial_number] - Device serial number
+ * [mac_address] - Wi-Fi MAC address
+ * [network_host_name] - Wi-Fi host name
+ * [bluetooth_address] - Bluetooth MAC address
+ * [bluetooth_name] - Bluetooth "friendly" device name
+ * [imei_number] - International Mobile Equipment Identity (WWAN devices only) 
+
+
+#### Example
+    <preferences>
+            <title>
+                <value>MetaCorp device #[serial_number]</value>
+            </title>
+    </preferences>
+
+------
+
+### Title Bar Icon Disabled
 Controls whether an icon is displayed in the Title Bar of the EHS home screen. **A value of 0 (false) allows EHS to display a custom icon**. 
 
 <img alt="" style="height:350px" src="title_bar_2.png"/>
@@ -439,7 +466,7 @@ Controls whether an icon is displayed in the Title Bar of the EHS home screen. *
 
 ------
 
-#### Title Bar Icon File
+### Title Bar Icon File
 Allows an image to be specified for display in the EHS Title Bar. **Supports .bmp, .jpg, and .png image formats of medium resolution** (varies by device; some high-res images might not display). Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file or in the UI using the full path. Images are scaled (up or down) using the aspect ratio of the image to fill the available space (which varies by device). Default EHS icon (shown below) is displayed if tag is missing or left blank, or if the specified image file is missing or invalid. Icon can optionally be displayed on other screens. See [Reuse Custom Icon](#reusecustomicon) below.
 
 <img alt="" style="height:350px" src="title_bar_3.png"/>

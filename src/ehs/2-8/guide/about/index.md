@@ -12,9 +12,10 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 
 <b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
 
+<!-- 
 _Enterprise Home Screen does not support localization_. 
-
-**[What's New in EHS 2.8](#newinehs28)**
+ -->
+ **[What's New in EHS 2.8](#newinehs28)**
 
 ------
 
@@ -351,11 +352,11 @@ EHS 2.8 adds support for the following devices running Android Nougat:
 
 ### Deprecations
 
-* Secure Mode feature has been deprecated
-* Dropped support for the following features: 
+* Secure Mode remains supported but is no longer being advanced
+* Support is dropped for the following: 
  * Enable/disable status bar pull-down
  * Enable/disable status bar settings icon
- * Enable/disable exit instead of reboot
+ * Enable/disable "exit instead of reboot"
 
 These features can be accessed using Zebra's [StageNow](/stagenow) administrative tools or [EMDK](/) developer tools.
 

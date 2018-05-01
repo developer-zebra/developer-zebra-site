@@ -954,7 +954,9 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 <!-- 5/1/18- issue fixed, section removed per eng. 
 **Note**: Disabling access to the search app from the lock screen also disables it from the User-Mode screen on some devices, even if search is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Search Usage section below. 
 
- --><img alt="" style="height:350px" src="search_disable.png"/>
+ -->
+
+<img alt="" style="height:350px" src="search_disable.png"/>
 
 <b>Possible values</b>:
 

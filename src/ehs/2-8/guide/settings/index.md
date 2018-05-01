@@ -64,10 +64,10 @@ From a computer connected to a target device that has EHS installed:
 ##### Other Notes
 
 * Config file must be named "`enterprisehomescreen.xml`" in lower-case letters. 
-* A file with any other spelling or letter case will be ignored.
+* A file with any other spelling or letter case is ignored.
 * If the config file is deleted from the device, EHS will spawn a new config file with default settings.
 * If a mixed-case config file of the same name is deployed, it will overwrite a correctly cased file.
-* An incorrectly cased config file will be treated as missing or cause unpredictable results.
+* An incorrectly cased config file is treated as missing or cause unpredictable results.
 * Once configured, a config file is suitable for [mass-deployment using an MDM](../setup/#automatedinstallation) with or without the EHS app.
 
 ##### Exporting the Config File
@@ -267,7 +267,7 @@ When specifying links, the package and activity parameters can be used to launch
 **Wildcard rules**:
 
 * Individual apps and wildcard sets will appear in the User Mode Launcher in the same order as they are listed in the &lt;applications&gt; node. 
-* Apps within each wildcard set will be listed alphabetically by label relative to other apps in that set. 
+* Apps within each wildcard set are listed alphabetically by label relative to other apps in that set. 
 * Wildcard search is designed to work with packages that comply with the &#34;&lt;any_name&gt;.&lt;any_name&gt;&#42;&#34; format. 
 * If **bundle** and **icon** attributes are used, the same specified attributes apply to all wildcard-selected apps. 
 * Wildcard search works only with User Mode apps; it is not supported for apps specified for the Tools Menu, Auto Launch, or Kiosk Mode. 
@@ -275,8 +275,8 @@ When specifying links, the package and activity parameters can be used to launch
 * Apps excluded from a wildcard search cannot be added using the long-press feature in Admin Mode.
 * The exclude attribute does not support the wildcard character; apps must be excluded one at a time.
 * Apps individually specified in the &lt;applications&gt; node and included in a wildcard search cannot be excluded using an "exclude" attribute or tag.
-* If the label is undefined in XML, labels of wildcard-selected apps will be applied to icons as they appear in the Android manifest (if undefined in the Manifest, app will appear with a blank label).
-* Labels longer than 18 characters will be truncated at the 18th character and appended with an ellipsis (...).
+* If the label is undefined in XML, labels of wildcard-selected apps are applied to icons as they appear in the Android manifest (if undefined in the Manifest, app will appear with a blank label).
+* Labels longer than 18 characters are truncated at the 18th character and appended with an ellipsis (...).
 * The label specified in a wildcard search will apply to all apps identified by the search. 
 * The wildcard character might appear only once per line and **only at the end of the line**. 
 * The following wildcard searches have been blocked by EHS as a security measure, avoiding the accidental inclusion of all standard Android apps: 
@@ -339,14 +339,14 @@ Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>No
 ------
 
 ### Passwords
-Stores the encrypted password for logging into Admin Mode (blank by default). <b>Do not populate this tag manually in the config file or edit it in any way</b>. The administrator password will be stored here programmatically by EHS after being entered or changed through the Tools menu in EHS Admin Mode. EHS uses this tag to store the password as a 256-bit AES-encrypted hash. Once a password is created and stored in the config file, it can be mass-deployed along with all other settings.
+Stores the encrypted password for logging into Admin Mode (blank by default). <b>Do not populate this tag manually in the config file or edit it in any way</b>. The administrator password is stored here programmatically by EHS after being entered or changed through the Tools menu in EHS Admin Mode. EHS uses this tag to store the password as a 256-bit AES-encrypted hash. Once a password is created and stored in the config file, it can be mass-deployed along with all other settings.
 
 <img alt="" style="height:350px" src="admin_password.png"/>
 The admin password <b><i>must</i></b> be entered and changed using the Admin Tools menu in the EHS GUI. 
 
 <b>Possible values</b>:
 
-* (EHS USE ONLY; DO NOT ADD TO OR EDIT THE CONTENTS OF THIS TAG)
+* (**EHS USE ONLY; Do not add to or edit the contents of this tag**)
 
 #### Example
 
@@ -419,14 +419,14 @@ Specifies the title bar text for the EHS app. The default title "Enterprise Home
 ------
 
 #### Title Bar Icon Disabled
-Controls whether an icon will be displayed in the Title Bar. **A value of 0 (false) will allow EHS to display a custom icon**. 
+Controls whether an icon is displayed in the Title Bar of the EHS home screen. **A value of 0 (false) allows EHS to display a custom icon**. 
 
 <img alt="" style="height:350px" src="title_bar_2.png"/>
 
 <b>Possible values</b>:
 
-* <b>1 (disabled by default)</b>
-* 0 
+* <b>1 - (disabled by default)</b>
+* 0 - enables custom icon
 
 #### Example
     <preferences>
@@ -440,7 +440,7 @@ Controls whether an icon will be displayed in the Title Bar. **A value of 0 (fal
 ------
 
 #### Title Bar Icon File
-Allows an image to be specified for display in the EHS Title Bar. **Supports .bmp, .jpg, and .png image formats of medium resolution** (varies by device; some hi-res images might not be displayed). Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file or in the UI using the full path. Images will be scaled (up or down) using the aspect ratio of the image to fill the available space (which varies by device). Default EHS icon (shown below) will be displayed if tag is missing or left blank, or if the specified icon is missing or invalid. 
+Allows an image to be specified for display in the EHS Title Bar. **Supports .bmp, .jpg, and .png image formats of medium resolution** (varies by device; some high-res images might not display). Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file or in the UI using the full path. Images are scaled (up or down) using the aspect ratio of the image to fill the available space (which varies by device). Default EHS icon (shown below) is displayed if tag is missing or left blank, or if the specified image file is missing or invalid. Icon can optionally be displayed on other screens. See [Reuse Custom Icon](#reusecustomicon) below.
 
 <img alt="" style="height:350px" src="title_bar_3.png"/>
 
@@ -457,6 +457,33 @@ Allows an image to be specified for display in the EHS Title Bar. **Supports .bm
         </title_bar_icon >
     </preferences>
 
+**Notes**: 
+
+* **Use of this tag requires addition of &lt;title_bar_icon&gt; node** to `enterprisehomescreen.xml` file; not included by default.
+* **Default EHS logo is used if tag is missing or left blank**, or if the specified image file is missing or invalid (such instances are [logged](../features/#ehslog)).
+
+-----
+
+### Reuse Custom Icon
+Optionally designates the custom graphic specified using the [Title Bar Icon File tag](#titlebariconfile) (above) to display on most EHS screens, including those for Battery Info, Wireless Info, Preferences and the Tools menu (excludes "About" box). 
+
+<img alt="" style="height:350px" src="28_reuse_icon.png"/>
+
+<b>Possible values</b>:
+
+* 1 - Reuse the custom icon in other EHS screens
+* **0 - Do not reuse icon (default)** 
+
+#### Example
+    <preferences>
+        <title_bar_icon>
+                   <title_bar_icon_file>/storage/sdcard0/title.jpg</title_bar_icon_file >
+                   <reuse_custom_icon>1</reuse_custom_icon>
+        </title_bar_icon >
+    </preferences>
+
+
+**Note: To hide a custom icon from the EHS screens effected by this tag, set the tag value to "0."** The "Title Bar Icon Disabled" tag applies only to the home screen. 
 
 ------
 
@@ -582,9 +609,9 @@ Enables one or more services to be automatically launched after EHS starts up. W
 ------
 
 ### Wallpaper
-Allows a background image to be specified for display in User Mode. If left unspecified, the system's default image will be displayed. **Supports .PNG format files in the `/enterprise/usr` directory only. Resolution support varies by device**. If a selected image fails to display, Zebra recommends scaling down the resolution or selecting a different image. 
+Allows a background image to be specified for display in User Mode. If left unspecified, the system's default image is displayed. **Supports .PNG format files in the `/enterprise/usr` directory only. Resolution support varies by device**. If a selected image fails to display, Zebra recommends scaling down the resolution or selecting a different image. 
 
-<img alt="" style="height:350px" src="2-8_wallpaper.png"/>
+<img alt="" style="height:350px" src="2-7_wallpaper.png"/>
 
 <b>Possible values</b>:
 
@@ -601,7 +628,7 @@ Allows a background image to be specified for display in User Mode. If left unsp
 ### Wallpaper Stretching
 Used to enable/disable the background image for display in User Mode to be stretched to fill the screen. Disabled by default. Stretching is disabled if this value is unspecified. **See Wallpaper parameter for supported file format and location**.  
 
-<img alt="" style="height:350px" src="2-8_wallpaper_stretch.png"/>
+<img alt="" style="height:350px" src="2-7_wallpaper_stretch.png"/>
 
 _EHS with default wallpaper_:
 <img style="height:250px" src="../about/default_wallpaper.png"/>
@@ -626,7 +653,7 @@ _**Stretching enabled** with custom wallpaper image_:
 ------
 
 ### Fullscreen
-EHS can be made to run in full-screen mode by setting the value of this tag to 1. Default is 0. Applies only to EHS; apps launched from within EHS will behave as individually designed. Will not prevent access to the Android Status/Notification Bar on some devices. See [Disable Status Bar Settings](#disablestatusbarsettings) to prevent user access to this feature in EHS. 
+EHS can be made to run in full-screen mode by setting the value of this tag to 1. Default is 0. Applies only to EHS; apps launched from within EHS behave as individually designed. Does not prevent access to the Android Status/Notification Bar on some devices. See [Disable Status Bar Settings](#disablestatusbarsettings) to prevent user access to this feature in EHS. 
 
 <img alt="" style="height:350px" src="fullscreen.png"/>
 
@@ -686,7 +713,7 @@ Controls whether the Settings icon is displayed in the Android Status Bar, and t
 ------
 
 ### Disable Status Bar Pull-down
-Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status Bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status Bar Pull-down will be enabled. To disable, enter a value of 1. 
+Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status Bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status Bar Pull-down is enabled. To disable, enter a value of 1. 
 
 **Note: The Status Bar Pull-down cannot be controlled through EHS on devices running Android L, M or N** (the feature appears "grayed out" in the Admin-Mode Preferences panel in those devices). To contol the Status Bar Pull-down (also known as the "Notification Pulldown"), use the [UI Manager](/mx/uimgr) through Zebra EMDK or StageNow tools.
 
@@ -720,7 +747,7 @@ Controls whether shortcuts can be added to local or remote apps through Android 
 ------
 
 ### Exit Instead of Reboot
-Controls whether EHS will trigger an automatic device reboot when a setting that requires a reboot is changed. Permits Mobile Device Management (MDM) systems to maintain device control after making such changes. <b>Note: The setting in this tag will be overridden if the [&lt;reboot_on_install_enabled&gt;](#rebootoninstallenabled) tag has a value of 1</b>. 
+Controls whether EHS will trigger an automatic device reboot when a setting that requires a reboot is changed. Permits Mobile Device Management (MDM) systems to maintain device control after making such changes. <b>Note: The setting in this tag is overridden if the [&lt;reboot_on_install_enabled&gt;](#rebootoninstallenabled) tag has a value of 1</b>. 
 
 <b>Possible values</b>:
 
@@ -795,7 +822,7 @@ _The Android Keyguard (also known as the Lock Screen)_.
 ------
 
 ### Keyguard Camera Disabled
-Controls whether the device camera will be accessible from the Keyguard screen (also known as the "Lock Screen") when the screen lock is set to "Swipe" mode. Camera access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
+Controls whether the device camera is accessible from the Keyguard screen (also known as the "Lock Screen") when the screen lock is set to "Swipe" mode. Camera access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
 
 **The Keyguard camera is disabled only if <u>all</u> of the following conditions are true**:
 
@@ -807,9 +834,10 @@ Controls whether the device camera will be accessible from the Keyguard screen (
 Unless **_all four_** of the above conditions are true, the value in this tag is ignored. 
 
 **Notes**: 
-* **If no camera shortcut exists on the device lock screen**, use of this tag is not required. 
 * **To prevent use of the camera**, Zebra recommends using this tag _and_ removing the camera app from the User Mode screen.  
+* **If no camera shortcut exists on the device lock screen**, use of this tag is not required. 
 * **Display of the camera app icon on the Admin home screen can be delayed** by as much as five seconds after unlocking the screen following a configuration change. 
+* **On some devices running Nougat, disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. This occurs if the device is rebooted from the lock screen. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
 
 <!-- 5/1/18- issue fixed, section removed per eng. 
 
@@ -873,7 +901,7 @@ To permit access to the camera app only after the device has been unlocked, set 
 ------
 
 ### Keyguard Search Disabled
-Controls whether the Search app will be accessible from the Keyguard screen (also known as the "Lock Screen") when the screen lock is set to "Swipe" mode. Search access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
+Controls whether the Search app is accessible from the Keyguard screen (also known as the "Lock Screen") when the screen lock is set to "Swipe" mode. Search access from the Keyguard screen is disabled if this tag has a value of 1 (default) or is left unspecified. 
 
 Applies only if **_all_** of the following conditions are true:
 
@@ -978,18 +1006,18 @@ Controls whether full or limited settings are available when the device is in Us
 
 * This mode limits user access to certain features by preventing their **display** in the UI. **It does not block the features themselves**; in some situations, Android makes restricted settings available to the user. For example, if the charge in a device battery becomes critically low, Android provides access to apps in the low battery warning display so they may be stopped, disabled or uninstalled. This can be prevented only by disabling the Settings app completely.
 
-* With System settings restricted, it is still possible to add shortcuts to restricted System-settings components (i.e. apps) using a third-party shortcut creator. However, such shortcuts also will be available in User Mode. If a system setting component should be accessible only to administrators, it should not be mapped using a shortcut.
+* With System settings restricted, it is still possible to add shortcuts to restricted System-settings components (i.e. apps) using a third-party shortcut creator. However, such shortcuts also are available in User Mode. If a system setting component should be accessible only to administrators, it should not be mapped using a shortcut.
 
 * Uninstalling EHS will not revert Restricted System Settings to its original state. If required, this must be done manually before uninstalling EHS.
 
 ------
 
 ### Recent Apps Button Disabled 
-**Applies only to devices running Android Nougat and higher**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Nougat devices only; otherwise enabled**. Default value will be used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
+**Applies only to devices running Android Nougat and higher**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Nougat devices only; otherwise enabled**. Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
 
 >This setting persists after EHS is removed.
 
-<img alt="" style="height:450px" src="2-8_recent_apps_button.png"/>
+<img alt="" style="height:450px" src="2-7_recent_apps_button.png"/>
 _Recent apps button cannot be disabled on devices running Android L or M (shown)_.
 <br>
 
@@ -1011,7 +1039,7 @@ _Recent apps button cannot be disabled on devices running Android L or M (shown)
 
 Controls logging of EHS activities, failures and security events. These include failed attempts to enter Admin Mode, switches of the operating mode and all EHS errors. Enabled by default. Logs are stored in the `/enterprise/usr/enterprisehomescreen.log` file as plain text file that can be retrieved with ADB or an MDM and viewed with any text editor. 
 
-<img alt="" style="height:450px" src="2-8_logging_disabled.png"/>
+<img alt="" style="height:450px" src="2-7_logging_disabled.png"/>
 
 <b>Possible values</b>:
 
@@ -1027,9 +1055,9 @@ Controls logging of EHS activities, failures and security events. These include 
 ------
 
 ### Log File Max Size
-Permits a maximum size (in MB) to be specified for the EHS log file. When the maximum file size is reached, the current log is renamed to `enterprisehomescreen.log.bak` (overwriting the existing .bak file, if any) and a new `enterprisehomescreen.log` file is created. **This effectively doubles the storage requirement of the specified maximum since two log files of maximum size will be present at certain times**. 
+Permits a maximum size (in MB) to be specified for the EHS log file. When the maximum file size is reached, the current log is renamed to `enterprisehomescreen.log.bak` (overwriting the existing .bak file, if any) and a new `enterprisehomescreen.log` file is created. **This effectively doubles the storage requirement of the specified maximum since two log files of maximum size is present at certain times**. 
 
-<img alt="" style="height:450px" src="2-8_logging_file_size.png"/>
+<img alt="" style="height:450px" src="2-7_logging_file_size.png"/>
 
 <b>Possible values</b>:
 
@@ -1157,7 +1185,7 @@ Permits the option of injecting key-value pairs via XML into an app when it laun
 ------
 
 ### Icon
-Permits a custom graphic to be specified in place of the system or default icon for an application or link when displayed on the User-Mode screen. **Supports .bmp, .jpg, and .png image formats**. Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file using the full path. Default icon will be used if tag is left blank or specified icon is missing or invalid. When used with apps specified using the wildcard attribute, all apps will display the same icon. **Compatible with EHS Secure Mode**.  
+Permits a custom graphic to be specified in place of the system or default icon for an application or link when displayed on the User-Mode screen. **Supports .bmp, .jpg, and .png image formats**. Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file using the full path. Default icon is used if tag is left blank or specified image file is missing or invalid. When used with apps specified using the wildcard attribute, all apps will display the same icon. **Compatible with EHS Secure Mode**. 
 
 #### Examples
 
@@ -1187,8 +1215,8 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 <b>Notes</b>: 
 
 * Settings defined by **these tags override EHS defaults** and any settings applied with other tags.
-* If one of these tags is present without the other, Settings and Search apps will be disabled in User Mode.
-* If the same package name is present under both (enable and disable) tags, that app will be disabled.
+* If one of these tags is present without the other, Settings and Search apps is disabled in User Mode.
+* If the same package name is present under both (enable and disable) tags, that app is disabled.
 * Uninstalling EHS will not re-enable apps disabled using the &lt;apps_disabled&gt; tag. 
 * **Disabled apps must be manually returned to their desired state before uninstalling EHS**.  
 * To re-enable an app that was disabled using the &lt;apps_disabled&gt; tag, the app must be explicitly enabled using the &lt;apps_enabled&gt; tag.
@@ -1217,7 +1245,7 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 ------
 
 ### Admin Max Attempts
-The number of failed attempts to log into Admin Mode before EHS disables Admin Mode login. EHS keeps a count of the failed consecutive login attempts with an attribute in the password admin node as in the Example Failed Login Counter below. The counter is reset if a successful login occurs before the maximum is reached. Once disabled, can be reset only by pushing a new `enterprisehomescreen.xml` file to the device. If this tag is not present or contains no value, the default of 10 will be used. Failed login attempts are added to the [EHS log](../features#ehslog).  
+The number of failed attempts to log into Admin Mode before EHS disables Admin Mode login. EHS keeps a count of the failed consecutive login attempts with an attribute in the password admin node as in the Example Failed Login Counter below. The counter is reset if a successful login occurs before the maximum is reached. Once disabled, can be reset only by pushing a new `enterprisehomescreen.xml` file to the device. If this tag is not present or contains no value, the default of 10 is used. Failed login attempts are added to the [EHS log](../features#ehslog).  
 
 <img alt="" style="height:350px" src="max_logins.png"/>
 
@@ -1243,7 +1271,7 @@ The counter clears after a successful login or when a new `enterprisehomescreen.
 ------
 
 ### Admin Inactivity Timeout
-Controls the time (in seconds) that a device will remain in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section to specify the timeout period. The default period is 60 seconds, which will be used if this tag is missing or left unspecified. Minimum period is 15 seconds (lower values will be ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. **Note**: Use of the Android Search app has no effect on the timeout counter.
+Controls the time (in seconds) that a device will remain in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section to specify the timeout period. The default period is 60 seconds, which is used if this tag is missing or left unspecified. Minimum period is 15 seconds (lower values are ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. **Note**: Use of the Android Search app has no effect on the timeout counter.
 
 <img alt="" style="height:350px" src="admin_timeout.png"/>
 
@@ -1274,10 +1302,10 @@ Represents the shortcut name; equivalent to the `Intent.EXTRA_SHORTCUT_NAME` val
 Represents the intent in text format; equivalent to the URI representation of the `Intent.EXTRA_SHORTCUT_INTENT` intent data.
 
 #### Icon
-Specifies the the path of the icon file stored in the device. If the extra data `Intent.EXTRA_SHORTCUT_ICON` is available in the received broadcast intent, the icon will be stored in the device as an image file.
+Specifies the the path of the icon file stored in the device. If the extra data `Intent.EXTRA_SHORTCUT_ICON` is available in the received broadcast intent, the icon is stored in the device as an image file.
 
 #### icon_ref
-Specifies the package name to retrieve the icon later. If the extra data `Intent.EXTRA_SHORTCUT_ICON_RESOURCE` is available in the received broadcast intent, the icon will be generated at runtime using the package name (and there is therefore no need to store the icon image in the device).
+Specifies the package name to retrieve the icon later. If the extra data `Intent.EXTRA_SHORTCUT_ICON_RESOURCE` is available in the received broadcast intent, the icon is generated at runtime using the package name (and there is therefore no need to store the icon image in the device).
 
 #### Example 
 A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver would be represented by the following link node: 
@@ -1297,7 +1325,7 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 <b>Android Notes</b>:
 
 * The Android Launcher monitors the same broadcast intent as EHS, and therefore also receives shortcuts sent to EHS. 
-* If the Android Home screen space limit is reached, Android Launcher displays an error message in EHS. 
+* If the Android home screen space limit is reached, Android Launcher displays an error message in EHS. 
 * To eliminate the error message, temporarily [enable the Android Launcher](../setup#changethedefaultlauncher) and delete the shortcuts. 
 
 ------

@@ -14,7 +14,7 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 
 _Enterprise Home Screen does not support localization_. 
 
-**[What's New in EHS 2.8](#newinehs27)**
+**[What's New in EHS 2.8](#newinehs28)**
 
 ------
 
@@ -333,32 +333,25 @@ EHS 2.8 adds support for the following devices running Android Nougat:
 
 * **Simplified Chinese -** EHS has been approved to run on device operating systems localized for the Simplified Chinese language.
 
-* **Enhanced Device Identifier Options -**. Information to uniquely identify a device&mdash;its serial number, MAC address, network host name, Bluetooth address, Bluetooth name or IMEI number&mdash;can be displayed as the title bar text of the EHS home screen.
+* **Enhanced Device Identifier Options -** Information to uniquely identify a device&mdash;its serial number, MAC address, network host name, Bluetooth address, Bluetooth name or IMEI number&mdash;can be displayed as the title bar text of the EHS home screen. 
 
-* **Custom EHS home-screen icon displays on other screens**. If a custom icon is installed to replace the stock EHS icon, that icon can optionally be set to display on screens for Battery Info, Wireless Info, Preferences and the Tools menu.
+* **Custom EHS icon no longer limited to home screen -** When a custom icon used to replace the stock EHS icon, it can optionally be set to display on screens for Battery Info, Wireless Info, Preferences and the Tools menu. 
 
-* **File browsing is now supported** when selecting a title-bar icon or wallpaper image through the Preferences panel. 
+* **File browsing is now supported -** When selecting a title-bar icon or wallpaper image through the Preferences panel, tap-navigation is now possible to find the image file. 
 
-### Enhancements
+### Enhancements/Fixes
 
 * **Airplane mode enable/disable option is displayed** in the Preferences panel only on devices on which it is supported.
 
-Fixed � camera/search app disable issue when rebooted the device from Lockscreen with default EHS setting keyguard camera/search disabled.
+* **Disabling access to the camera and/or search apps from the lock screen no longer disables them from the User-Mode screen** if camera and/or search usage are permitted on the device. This issue arose when rebooting from the lock screen, and has been fixed for TC20 and TC25 models as well as devices running KitKat, Lollipop, Marshmallow. See [Android Nougat Notes](#androidnougatnotes). 
 
 * **Password encryption has been enhanced** for the Admin login. 
 
 * **A colored screen is displayed** while EHS is starting up. 
 
-
-REMOVE THE FOLLOWING FROM BELOW???
-* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after rebooting a device running Android L and higher**. This feature works normally on devices running KitKat and Jelly Bean. 
-
-
-
 ### Deprecations
 
 * Secure Mode feature has been deprecated
-
 * Dropped support for the following features: 
  * Enable/disable status bar pull-down
  * Enable/disable status bar settings icon
@@ -370,6 +363,12 @@ These features can be accessed using Zebra's [StageNow](/stagenow) administrativ
 
 ### Android Nougat Notes
 **_Applies to devices running Android Nougat 7.x and higher_**:
+
+* **Disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. This occurs on some devices running Android N if the device is rebooted from the lock screen. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
+
+<!-- 
+ABOVE NOTE REPLICATED ON SETTINGS PAGE 
+ -->
 
 * **To enable Secure Mode in EHS, manual file-push is no longer supported in Android N for installing a device root certificate**. To deploy cert files to the device, use Certificate Manager through [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android). Learn more [about Secure Mode](../features/#securemode). 
 
@@ -392,7 +391,7 @@ These features can be accessed using Zebra's [StageNow](/stagenow) administrativ
 * **[Status Bar Pull-down](../settings#disablestatusbarpulldown) cannot be controlled through EHS on devices running Android L, M or N** (the feature appears "grayed out" in the Admin-Mode Preferences panel on those devices). To contol the Status Bar Pull-down (also known as the "Notification Pulldown"), use the [UI Manager](/mx/uimgr) through Zebra EMDK or StageNow tools.
 
 <!-- 
-REPLICATE ABOVE NOTE ON SETTINGS PAGE 
+ABOVE NOTE REPLICATED ON SETTINGS PAGE 
  -->
 
 * **[Status Bar Settings Icon](../settings#disablestatusbarsettings) behavior has changed**. While disabling such access to the Settings panel is not supported through EHS on all devices, a new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (referred to there as Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain. 
@@ -400,16 +399,18 @@ REPLICATE ABOVE NOTE ON SETTINGS PAGE
 * **[Airplane Option Disabled](../settings#airplaneoptiondisabled) feature cannot be controlled through EHS on devices running Android M or N, nor on some devices running Android L**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
 
 <!-- 
-REPLICATE ABOVE NOTE ON SETTINGS PAGE 
+ABOVE NOTE REPLICATED ON SETTINGS PAGE 
  -->
 
-* **Devices running Android L and higher retain the "Recent Apps" list after device reboot**, posing a potential security risk. EHS 2.8 disables the Recent Apps button on <u>Nougat devices only</u> to help address this risk. For all devices, the list can be cleared using [App Manager](/mx/appmgr) through Zebra EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
+* **Devices running Android L and higher retain the "Recent Apps" list after device reboot**, posing a potential security risk. EHS 2.7 (and higher) disables the Recent Apps button on <u>Nougat devices only</u> to help address this risk. For all devices, the list can be cleared using [App Manager](/mx/appmgr) through Zebra EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
 
 * **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature in Android L and higher that works in a similar way.
 
 * **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after rebooting a device running Android L and higher**. This feature works normally on devices running KitKat and Jelly Bean. 
 
 * **[Screen orientation](../settings#orientation) can be changed through the Quick Settings panel on devices running Android L and higher** <u>only</u> when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
+
+* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after rebooting a device running Android L and higher**. This feature works normally on devices running KitKat and Jelly Bean. 
 
 ------
 
@@ -431,10 +432,10 @@ See the [Advanced Settings](../settings) section for a complete `enterprisehomes
 
 >**This version does not support Android KitKat**. 
 
-**EHS 2.8 supports Zebra devices running Android Lollipop and higher only**. Zebra continues to support earlier versions of EHS for use on devices running KitKat. To use EHS on a device running KitKat, please [download EHS 2.6](/ehs/2-6/download) or an earlier version. 
+**EHS 2.7 supports Zebra devices running Android Lollipop and higher only**. Zebra continues to support earlier versions of EHS for use on devices running KitKat. To use EHS on a device running KitKat, please [download EHS 2.6](/ehs/2-6/download) or an earlier version. 
 
 #### Device Support
-EHS 2.8 adds support for the following devices running Android Nougat:  
+EHS 2.7 adds support for the following devices running Android Nougat:  
 
 * MC33
 * TC20* 

@@ -167,8 +167,8 @@ EHS records all major activities, failures and security events in the `/enterpri
 
 For more information about logging, see [Logging Preferences](../settings/#loggingdisabled). 
 
-<img alt="" style="height:450px" src="2-8_logging_disabled.png"/>
-_In EHS 2.8 and higher, logging can be disabled through the UI or config file._
+<img alt="" style="height:450px" src="2-7_logging_disabled.png"/>
+_In EHS 2.7 and higher, logging can be disabled through the UI or config file._
 <br>
 
 ------

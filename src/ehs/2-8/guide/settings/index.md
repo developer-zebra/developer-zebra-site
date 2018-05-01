@@ -435,7 +435,7 @@ Allows (dynamic) information that uniquely identifies the device to be displayed
  * [network_host_name] - Wi-Fi host name
  * [serial_number] - Device serial number
 
-**WARNING: Do not use square brackets in any other way inside the &lt;value&gt; tags** 
+**WARNING: Square brackets must not be used** inside the &lt;value&gt; tags except as specified above**. 
 
 #### Example
     <preferences>
@@ -446,10 +446,10 @@ Allows (dynamic) information that uniquely identifies the device to be displayed
 
 **Notes**:
 
-* The &lt;title&gt; tags must contain either a static title or the &lt;value&gt; tags; it may not contain both except as described above.
-* If &lt;title&gt; tag is not present in the `enterprisehomescreen.xml` file or if identifier data retrieval fails, the text “Enterprise Home Screen” is inserted. 
-* Errors retrieving identifier data are written in the [EHS log](../features/#ehslog)). 
-* **Square brackets must not be used inside the &lt;value&gt; tags** except as specified above. 
+* **The &lt;title&gt; tags must contain either a static title or the &lt;value&gt; tags**; never both.
+* **If &lt;title&gt; tags are not present in the** `enterprisehomescreen.xml` **file** or if identifier data retrieval fails, the text “Enterprise Home Screen” is inserted. 
+* **Errors retrieving identifier data** are written in the [EHS log](../features/#ehslog). 
+* **Square brackets must not be used** inside the &lt;value&gt; tags except as specified above. 
 
 ------
 

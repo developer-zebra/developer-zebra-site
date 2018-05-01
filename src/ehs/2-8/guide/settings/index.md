@@ -401,7 +401,7 @@ Control various aspects of EHS behavior, security and display settings correspon
 ------
 
 ### Title
-Specifies the title bar text for the EHS app. The default title "Enterprise Home Screen" can be changed to any string of characters. 
+Specifies the title bar text for the EHS app. The default title "Enterprise Home Screen" can be changed to any static string of characters or emoji(s). For device-specific (dynamic) options, see [Device ID in Title](#deviceidintitle) below.  
 
 <img alt="" style="height:350px" src="title_bar_1.png"/>
 
@@ -420,21 +420,22 @@ Specifies the title bar text for the EHS app. The default title "Enterprise Home
 
 ### Device ID in Title
 
-Allows information that uniquely identifies the device to be displayed as the title bar text of the EHS home screen. Specify serial number, Wi-Fi MAC address, Wi-Fi host name, Bluetooth address, Bluetooth name or IMEI number.
+Allows (dynamic) information that uniquely identifies the device to be displayed as the title bar text of the EHS home screen. Specify serial number, Wi-Fi MAC address, Wi-Fi host name, Bluetooth address, Bluetooth name or IMEI number.
 
 <img alt="" style="height:350px" src="28_device_ID_title.png"/>
 
 
 <b>Possible values</b>:
 
-* Plain text before and/or after any single device ID:
- * [serial_number] - Device serial number
- * [mac_address] - Wi-Fi MAC address
- * [network_host_name] - Wi-Fi host name
+* Plain (static) text or emojis before and/or after any single device ID:
  * [bluetooth_address] - Bluetooth MAC address
  * [bluetooth_name] - Bluetooth "friendly" device name
  * [imei_number] - International Mobile Equipment Identity (WWAN devices only) 
+ * [mac_address] - Wi-Fi MAC address
+ * [network_host_name] - Wi-Fi host name
+ * [serial_number] - Device serial number
 
+**WARNING: Do not use square brackets in any other way inside the &lt;value&gt; tags** 
 
 #### Example
     <preferences>
@@ -442,6 +443,13 @@ Allows information that uniquely identifies the device to be displayed as the ti
                 <value>MetaCorp device #[serial_number]</value>
             </title>
     </preferences>
+
+**Notes**:
+
+* The &lt;title&gt; tags must contain either a static title or the &lt;value&gt; tags; it may not contain both except as described above.
+* If &lt;title&gt; tag is not present in the `enterprisehomescreen.xml` file or if identifier data retrieval fails, the text “Enterprise Home Screen” is inserted. 
+* Errors retrieving identifier data are written in the [EHS log](../features/#ehslog)). 
+* **Square brackets must not be used inside the &lt;value&gt; tags** except as specified above. 
 
 ------
 

@@ -8,11 +8,14 @@ productversion: '2.8'
 ## Overview
 This section assumes a basic knowledge of Enterprise Home Screen and its capabilities and essential workings. For those not familiar with Zebra's free security tool for its Android devices, please see the [About](../about) and [Setup](../setup) pages before continuing with this guide. Also see the [Special Features Guide](../features) for information about Kiosk Mode, Secure Mode and other special EHS features. 
 
-The behavior of Enterprise Home Screen is controlled entirely through `enterprisehomescreen.xml`, an easy-to-read file that can be modified with any text editor. A default version of the file contains many common device security settings plus a few standard apps, and is part of every EHS installation. In many instances, all that's needed to begin using EHS is to add an organization's own applications and to apply its preferred security and display settings. 
+The behavior of Enterprise Home Screen is controlled entirely through `enterprisehomescreen.xml`, an easy-to-read file that can be modified with any text editor. A default version of the file contains many common device security settings plus a few standard apps, and is part of every EHS installation. In many instances, all that's needed to begin using EHS is to add an organization's own applications and to apply preferred security and display settings. 
 
-This guide describes the how to add apps and configure settings using the config file alone (if the setting also can be configured through the GUI, a screenshot is shown). It details the interaction between EHS and the config file, and provides instructions for accessing and customizing the file for a company's specific requirements, and for deploying the settings to device(s). A detailed analysis of the config file follows, with explanations of each of the parameters and examples of how to configure them. 
+#### About this Guide
+This guide describes the how to add apps and configure settings using the `enterprisehomescreen.xml` config file alone (if the setting also can be configured through the GUI, a screenshot is shown). It details the interaction between EHS and the config file, and provides instructions for accessing and customizing the file for a company's specific requirements, and for deploying the settings to device(s). A detailed analysis of the config file follows, with explanations of each of the parameters and examples of how to configure them. 
 
-<b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
+<b>Note</b>: Many of the capabilities of EHS also can be accomplished by other means on the device, either programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts these capabilities into a single tool.
+
+-----
 
 ## Working with the Config File
 This section describes important interactions between EHS and the `enterprisehomescreen.xml` config file, and instructions for retrieving, modifying and deploying the file to devices. 
@@ -62,7 +65,7 @@ From a computer connected to a target device that has EHS installed:
 
 * Config file must be named "`enterprisehomescreen.xml`" in lower-case letters. 
 * A file with any other spelling or letter case will be ignored.
-* If the config file is deleted at any time, EHS will spawn a new config file with default settings.
+* If the config file is deleted from the device, EHS will spawn a new config file with default settings.
 * If a mixed-case config file of the same name is deployed, it will overwrite a correctly cased file.
 * An incorrectly cased config file will be treated as missing or cause unpredictable results.
 * Once configured, a config file is suitable for [mass-deployment using an MDM](../setup/#automatedinstallation) with or without the EHS app.
@@ -70,7 +73,7 @@ From a computer connected to a target device that has EHS installed:
 ##### Exporting the Config File
 For device troubleshooting and certain other scenarios, it is sometimes useful to make the config file (`enterprisehomescreen.xml`) visible or to look inside the file and check its settings. The file can be made visible from Admin Mode by exporting it to a visible area of the file system. Alternatively, the config file can be viewed, copied, moved and shared via email or other means using the Android File Browser. 
 
-<b>Note</b>: An exported file might remain invisible to the PC until the device is rebooted. 
+<b>Note</b>: A config file exported to a visible area of the device file system might remain invisible to the PC until the device is rebooted. 
 
 &#49;. In Admin Mode on the device, <b>select Export Configuration File</b> from the Tools menu:
 <img alt="" style="height:350px" src="admin_menu.png"/>
@@ -87,7 +90,7 @@ For device troubleshooting and certain other scenarios, it is sometimes useful t
 &#52;. <b>Drag the config file</b> (arrow) to a PC for editing using Windows Explorer, Android File Transfer (shown) or a similar means:
 <img alt="" style="height:300px" src="ehs_folder.png"/>
 <br>
-<b>Note</b>: An exported file might remain invisible to the PC until the device is rebooted. 
+<b>Note</b>: A config file exported to a visible area of the device file system might remain invisible to the PC until the device is rebooted. 
 
 ##### Using File Browser 
 The Android File Browser offers a fast way to get a quick view inside the config file on a device. It also permits the file to be copied, moved or shared via email, Bluetooth or any means enabled on the device. 
@@ -105,11 +108,13 @@ To look inside the config file on a device:
 &#51;. <b>Select "Open as.."</b> to select a viewer and <b>hit Launch</b>:
 <img alt="" style="height:350px" src="open_as.png"/>
 <br>
-It may be necessary to also tap "txt" to specify the extension type.  
+It might be necessary to also tap "txt" to specify the extension type.  
 
 &#51;. The config file will open in the Android HTML Viewer:
 <img alt="" style="height:350px" src="html_viewer.png"/>
 <br>
+
+-----
 
 ## Default Config File
 This section explains the `enterprisehomescreen.xml` config file, which controls all aspects of EHS behavior. The default version is shown below, followed by an explanation of the file's XML tags and the configuration options for each. 
@@ -122,7 +127,7 @@ The EHS config file is broken into five sections:
 * <b>Passwords -</b> Stores the encrypted password for logging into Admin Mode. 
 * <b>Preferences -</b> Controls which features and settings the device will display.  
 
-##### Default `enterprisehomescreen.xml` file:
+**Default** `enterprisehomescreen.xml` **file**:
 
     :::xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -165,6 +170,8 @@ The EHS config file is broken into five sections:
     </preferences>
     </config>
 
+-----
+
 ## Config Tags
 This section describes all tags in the `enterprisehomescreen.xml` file and their possible values. They're shown below in the same order they appear in the default file, and are followed by optional tags. Tags can appear in any order, but must be contained within the &lt;config&gt; &lt;/config&gt; tag set. 
 
@@ -199,7 +206,7 @@ Specifies the applications and/or browser links to be displayed to users while E
 
 When specifying links, the package and activity parameters can be used to launch the URL with a specific app, such as Mozilla Mobile browser. If no activity is specified, EHS will open the link using the default browser.
 
-<b>Note</b>: Package names may vary from one Android version to another. 
+<b>Note</b>: Package names might vary from one Android version to another. 
 
 #### Application Example 
 
@@ -271,7 +278,7 @@ When specifying links, the package and activity parameters can be used to launch
 * If the label is undefined in XML, labels of wildcard-selected apps will be applied to icons as they appear in the Android manifest (if undefined in the Manifest, app will appear with a blank label).
 * Labels longer than 18 characters will be truncated at the 18th character and appended with an ellipsis (...).
 * The label specified in a wildcard search will apply to all apps identified by the search. 
-* The wildcard character may appear only once per line and **only at the end of the line**. 
+* The wildcard character might appear only once per line and **only at the end of the line**. 
 * The following wildcard searches have been blocked by EHS as a security measure, avoiding the accidental inclusion of all standard Android apps: 
 
     * com.android.&#42;
@@ -314,7 +321,7 @@ To remove a web link from the User Mode screen:
 ------
 
 ### Tools
-Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>Note</b>: Package names may vary from one Android version to another. 
+Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>Note</b>: Package names might vary from one Android version to another. 
 
 <b>Possible values</b>:
 * Label: string
@@ -356,16 +363,16 @@ Permits the size of application icons to be set to Small, Medium, Large, Extra L
 
 In Admin or User Mode, **tap the menu icon** and **select Icon settings**: 
 <img alt="" style="height:350px" src="2-4_icon_menu.png"/>
-_Icon size is accessible from Admin or User Modes and will apply to both_.
+_Icon size setting applies to Admin and User Modes_.
 <br>
 
-**Tap on the desired icon size**, then tap OK. Selected size is immediately applied. 
+**Tap on the desired icon size**, then tap OK. Selected size is applied immediately. 
 <img alt="" style="height:350px" src="2-4_icon_size.png"/>
 _Medium (shown) is the default icon size_. 
 <br>
 
 <img alt="" style="height:500px" src="app_icon_sizes.png"/>
-_App icons can be displayed in five sizes; changes apply to both Admin and User Modes_.  
+_App icons can be displayed in five sizes; changes apply to Admin and User Modes_.  
 <br>
 
 **To set icon size through the** `enterprisehomescreen.xml` **file**: 
@@ -697,7 +704,7 @@ Controls whether the Android Status Bar can be pulled down to reveal controls an
 ------
 
 ### Install Shortcuts
-Controls whether shortcuts may be added to local or remote apps through Android Intents. Disabled by default. 
+Controls whether shortcuts can be added to local or remote apps through Android Intents. Disabled by default. 
 
 <img alt="" style="height:350px" src="install_shortcuts.png"/>
 
@@ -767,7 +774,7 @@ Controls whether the Keyguard screen (also known as the "Lock Screen") is displa
 
 * **On devices running Android L**, the Bypass Keyguard feature fails to unlock the screen after rebooting the device.
 
-* **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent dusplay of the multi-user login screen. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
+* **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent display of the multi-user login screen. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
 <img alt="" style="height:350px" src="keyguard.png"/>
 _The Android Keyguard (also known as the Lock Screen)_.
@@ -800,10 +807,14 @@ Controls whether the device camera will be accessible from the Keyguard screen (
 Unless **_all four_** of the above conditions are true, the value in this tag is ignored. 
 
 **Notes**: 
-* If no camera shortcut exists on the device lock screen, use of this tag is not required. 
-* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Camera Usage section below. 
+* **If no camera shortcut exists on the device lock screen**, use of this tag is not required. 
+* **To prevent use of the camera**, Zebra recommends using this tag _and_ removing the camera app from the User Mode screen.  
+* **Display of the camera app icon on the Admin home screen can be delayed** by as much as five seconds after unlocking the screen following a configuration change. 
 
-**To prevent use of the camera, Zebra recommends using this tag <u>and</u> removing the camera app from the User Mode screen**.
+<!-- 5/1/18- issue fixed, section removed per eng. 
+
+* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Camera Usage section below. 
+ -->
 
 <img alt="" style="height:350px" src="camera_disable.png"/>
 
@@ -816,7 +827,10 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
     <keyguard_camera_disabled>1</keyguard_camera_disabled>
 
+<!-- 5/1/18- issue fixed, section removed per eng. 
+
 #### User-Mode Camera Usage
+
 
 On some devices, disabling access to the camera app from the lock screen also disables it from the User-Mode screen, even if camera usage is permitted on the device. This occurs if the device is rebooted from the lock screen; there are two options for preventing it. 
 
@@ -852,7 +866,9 @@ To permit access to the camera app only after the device has been unlocked, set 
     ...
     </apps_enabled>
 
+
 **Note: The package name of the camera app can vary by device, Android version or other factors**.
+ -->
 
 ------
 
@@ -868,11 +884,14 @@ Applies only if **_all_** of the following conditions are true:
 
 Unless **_all four_** of the above conditions are true, the value in this tag is ignored. Note: If no search-app shortcut exists on the device lock screen, use of this tag is not required. 
 
-**To prevent use of search, Zebra recommends using this tag _and_ removing the search app from the User Mode screen**. 
+**IMPORTANT**:
+* **To prevent use of search**, Zebra recommends using this tag _and_ removing the search app from the User Mode screen.  
+* **Display of the camera app icon on the Admin home screen can be delayed** by as much as five seconds after unlocking the screen following a configuration change. 
 
+<!-- 5/1/18- issue fixed, section removed per eng. 
 **Note**: Disabling access to the search app from the lock screen also disables it from the User-Mode screen on some devices, even if search is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Search Usage section below. 
 
-<img alt="" style="height:350px" src="search_disable.png"/>
+ --><img alt="" style="height:350px" src="search_disable.png"/>
 
 <b>Possible values</b>:
 
@@ -882,7 +901,9 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 #### Example
 
     <keyguard_search_disabled>1</keyguard_search_disabled>
-    
+
+<!--  5/1/18- issue fixed, section removed per eng. 
+
 #### User-Mode Search Usage
 
 On some devices, disabling access to the search app from the lock screen also disables it from the User-Mode screen, even if search usage is permitted on the device. This occurs if the device is rebooted from the lock screen; there are two options for preventing it. 
@@ -917,6 +938,7 @@ To permit access to the search app only after the device has been unlocked, set 
         <application package="search.app.package.name"/> // i.e. "com.android.search"
     </apps_enabled>
     
+ -->
 
 ------
 
@@ -1028,7 +1050,7 @@ This section covers optional features and tags not included in the `enterpriseho
 ------
 
 ### Auto Launch
-Permits any number of apps to be launched when EHS starts up. Similar to [Kiosk Mode](#kiosk), auto-launch apps are specified in a separate section, can be launched with a specific app activity (optional) and the feature is activated with a tag in the Preferences section. <b>Note</b>: Package names may vary from one Android version to another. 
+Permits any number of apps to be launched when EHS starts up. Similar to [Kiosk Mode](#kiosk), auto-launch apps are specified in a separate section, can be launched with a specific app activity (optional) and the feature is activated with a tag in the Preferences section. <b>Note</b>: Package names might vary from one Android version to another. 
 
 Auto-launch differs from Kiosk Mode in that BACK and HOME keys can be used, and it allows apps to be set to launch after a specified delay to allow for SD card mounting. Works when the &lt;auto_launch_enable&gt; tag contains a value of 1; otherwise ignored. <b>Auto-launch apps need not be listed in the &lt;applications&gt; section</b>. 
 
@@ -1076,7 +1098,7 @@ _The EHS 2.4 showing Service auto launch enabled in the UI_.
 * **class**: class name of the service
 * **action**: allows one of the actions supported by a Service to be specified
 
-<b>Note: Package names may vary from one Android version to another</b>. 
+<b>Note: Package names might vary from one Android version to another</b>. 
 
 **Service Auto-Launch Rules**: 
 * Services that support just a single action can be auto-launched using only the package name. 
@@ -1243,7 +1265,7 @@ Notes:
 ------
 
 ### Adding Apps/Shortcuts With Intents
-When shortcuts that link to local or remote applications are added using Android Intents, EHS will add a link tag to the config file with the attributes listed below. Disabled by default. Must be enabled using the [Install Shortcuts tag](#installshortcuts). </b>Note</b>: Package names may vary from one Android version to another. 
+When shortcuts that link to local or remote applications are added using Android Intents, EHS will add a link tag to the config file with the attributes listed below. Disabled by default. Must be enabled using the [Install Shortcuts tag](#installshortcuts). </b>Note</b>: Package names might vary from one Android version to another. 
 
 #### Label
 Represents the shortcut name; equivalent to the `Intent.EXTRA_SHORTCUT_NAME` value. 

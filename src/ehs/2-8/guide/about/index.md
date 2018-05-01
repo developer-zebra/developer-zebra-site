@@ -339,13 +339,20 @@ EHS 2.8 adds support for the following devices running Android Nougat:
 
 * **File browsing is now supported** when selecting a title-bar icon or wallpaper image through the Preferences panel. 
 
+### Enhancements
+
+* **Airplane mode enable/disable option is displayed** in the Preferences panel only on devices on which it is supported.
+
+Fixed � camera/search app disable issue when rebooted the device from Lockscreen with default EHS setting keyguard camera/search disabled.
+
 * **Password encryption has been enhanced** for the Admin login. 
 
 * **A colored screen is displayed** while EHS is starting up. 
 
-Preferences screen will expose the feature to enable/disable airplane option only in supported devices like ET5X Android Marshmallow
 
-Fixed � camera/search app disable issue when rebooted the device from Lock screen with default EHS setting keyguard camera/search disabled.
+REMOVE THE FOLLOWING FROM BELOW???
+* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after rebooting a device running Android L and higher**. This feature works normally on devices running KitKat and Jelly Bean. 
+
 
 
 ### Deprecations

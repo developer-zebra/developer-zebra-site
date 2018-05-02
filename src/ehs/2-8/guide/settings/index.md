@@ -651,19 +651,11 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 **Notes**: 
 * **Only files in the** `/enterprise` **directory are persistent**, remaining on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
 
-<!-- 
-WAITING FOR ENG CONFIRMATION: 
-EHS 2.8:
-Now supports (.jpg, .png, .bmp, .gif, .webp) anywhere on device. 
-
-Warning: files placed outside the /enterprise partition will not be persistent (and will be erased by an Enterprise Reset)
-
- -->
 <img alt="" style="height:350px" src="2-7_wallpaper.png"/>
 
 <b>Possible values</b>:
 
-* fully qualified local (on-device) path to file
+* fully qualified local (on-device) path to .BMP, .GIF, .JPG, .PNG or .WEBP file
 
 #### Example
 

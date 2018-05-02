@@ -20,6 +20,8 @@ This guide describes the how to add apps and configure settings using the `enter
 ## Working with the Config File
 This section describes important interactions between EHS and the `enterprisehomescreen.xml` config file, and instructions for retrieving, modifying and deploying the file to devices. 
 
+-----
+
 #### Config File Location
 
 * The config file is initially stored in the `/enterprise/usr` directory on the device. <!-- (does not apply to [Secure Mode](../features#securemode))-->
@@ -28,6 +30,20 @@ This section describes important interactions between EHS and the `enterprisehom
 * The file is <b>accessible via Android Debug Bridge (ADB)</b> "pull" and "push" commands. 
 
 > <b>Note</b>: Use caution when exposing File Browser to users; it can be used to manipulate the EHS config file and change security or other settings.
+
+-----
+
+#### Forbidden Characters
+
+The EHS config file is fully XML-compliant, and must remain so to be readable by the XML parser in EHS. XML specifications forbid the use of the five characters ( " ' < > & ) except in the ways described in the spec. If those characters are required as part of XMl content, they must substituted with their "escaped" equivalents as follows: 
+
+`"` (quote) `&quot;`<br>
+`'` (apostrophe) `&apos;`<br>
+`<` (less-than) `&lt;`<br>
+`>` (greater-than) `&gt;`<br>
+`&` (ampersand) `&amp;`<br>
+
+-----
 
 #### Config File Access
 

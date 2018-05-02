@@ -16,9 +16,10 @@ productversion: '2.8'
  * TC56
  * TC70x
  * TC75x 
+ * WT6000
 * Download package includes two separate .apk files: 
- * `EHS_0207xx_A.apk` - for all [supported devices](../guide/about#supporteddevices) **_<u>except</u>_ TC20/TC25**
- * `EHS_0207xx_B.apk` - for TC20/TC25 devices
+ * `EHS_0208xx_A.apk` - for all [supported devices](../guide/about#supporteddevices) **_<u>except</u>_ TC20/TC25**
+ * `EHS_0208xx_B.apk` - for TC20/TC25 devices
 
 
 ### Download EHS 2.8

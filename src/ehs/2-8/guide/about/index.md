@@ -352,6 +352,8 @@ EHS 2.8 adds support for the following devices running Android Nougat:
 
 * **A colored screen is displayed** while EHS is starting up. 
 
+* **Wallpaper and Title Bar Icon** features now support .bmp, .gif, .jpg, .png and .webp file formats. 
+
 ### Deprecations
 
 * Secure Mode remains supported but is no longer being advanced

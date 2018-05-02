@@ -485,7 +485,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 
 <b>Possible values</b>:
 
-* fully qualified local (on-device) path to a .bmp, .jpg or .png file
+* fully qualified local (on-device) path to a .bmp, .gif, .jpg, .png or .webp image file
 
 #### Example
 

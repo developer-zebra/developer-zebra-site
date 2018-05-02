@@ -644,8 +644,21 @@ Enables one or more services to be automatically launched after EHS starts up. W
 ------
 
 ### Wallpaper
-Allows a background image to be specified for display in User Mode. If left unspecified, the system's default image is displayed. **Supports .PNG format files in the `/enterprise/usr` directory only. Resolution support varies by device**. If a selected image fails to display, Zebra recommends scaling down the resolution or selecting a different image. 
+Allows a background image to be specified for display in User Mode. If left unspecified, the system's default image is displayed. **Supports .BMP, .GIF, .JPG, .PNG and .WEBP file formats. Resolution support varies by device**. If a selected image fails to display, Zebra recommends scaling down the resolution or selecting a different image. 
 
+When selecting an image using the Preferences panel UI, use tap-navigation to locate the image in the device file system or specify the file name and path using the keyboard (required for restricted areas not visible to the file browser). 
+
+**Notes**: 
+* **Only files in the** `/enterprise` **directory are persistent**, remaining on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
+
+<!-- 
+WAITING FOR ENG CONFIRMATION: 
+EHS 2.8:
+Now supports (.jpg, .png, .bmp, .gif, .webp) anywhere on device. 
+
+Warning: files placed outside the /enterprise partition will not be persistent (and will be erased by an Enterprise Reset)
+
+ -->
 <img alt="" style="height:350px" src="2-7_wallpaper.png"/>
 
 <b>Possible values</b>:

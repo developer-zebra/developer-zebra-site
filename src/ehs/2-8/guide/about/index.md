@@ -12,10 +12,12 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 
 <b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
 
-<!-- 
-_Enterprise Home Screen does not support localization_. 
- -->
- **[What's New in EHS 2.8](#newinehs28)**
+
+**Enterprise Home Screen supports the following languages**: 
+* US English
+* Simplified Chinese
+
+**[What's New in EHS 2.8](#newinehs28)**
 
 ------
 
@@ -338,7 +340,7 @@ EHS 2.8 adds support for the following devices running Android Nougat:
 
 * **Custom EHS icon no longer limited to home screen -** When a custom icon used to replace the stock EHS icon, it can optionally be set to display on screens for Battery Info, Wireless Info, Preferences and the Tools menu. 
 
-* **File browsing is now supported -** When selecting a title-bar icon or wallpaper image through the Preferences panel, tap-navigation is now possible to find the image file. 
+* **File browsing in Preferences panel -** When selecting a title-bar icon or wallpaper image through the Preferences panel, tap-navigation is now possible to locate the image file and specify its path. 
 
 ### Enhancements/Fixes
 

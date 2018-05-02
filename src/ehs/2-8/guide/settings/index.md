@@ -475,7 +475,11 @@ Controls whether an icon is displayed in the Title Bar of the EHS home screen. *
 ------
 
 ### Title Bar Icon File
-Allows an image to be specified for display in the EHS Title Bar. **Supports .bmp, .jpg, and .png image formats of medium resolution** (varies by device; some high-res images might not display). Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file or in the UI using the full path. Images are scaled (up or down) using the aspect ratio of the image to fill the available space (which varies by device). Default EHS icon (shown below) is displayed if tag is missing or left blank, or if the specified image file is missing or invalid. Icon can optionally be displayed on other screens. See [Reuse Custom Icon](#reusecustomicon) below.
+Allows an image to be specified for display in the EHS Title Bar. **Supports .bmp, .gif, .jpg, .png and .webp image formats of medium resolution** (varies by device; some high-res images might not display). Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file or in the UI using the full path. Images are scaled (up or down) using the aspect ratio of the image to fill the available space (which varies by device). Default EHS icon (shown below) is displayed if tag is missing or left blank, or if the specified image file is missing or invalid. Icon can optionally be displayed on other screens. See [Reuse Custom Icon](#reusecustomicon) below.
+
+When selecting an image using the Preferences panel UI, use tap-navigation to locate the image in the device file system or specify the file name and path using the keyboard (required for restricted areas not visible to the file browser). 
+
+**Note: Only files in the** `/enterprise` **directory are persistent**, remaining on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
 
 <img alt="" style="height:350px" src="title_bar_3.png"/>
 
@@ -644,18 +648,17 @@ Enables one or more services to be automatically launched after EHS starts up. W
 ------
 
 ### Wallpaper
-Allows a background image to be specified for display in User Mode. If left unspecified, the system's default image is displayed. **Supports .BMP, .GIF, .JPG, .PNG and .WEBP file formats. Resolution support varies by device**. If a selected image fails to display, Zebra recommends scaling down the resolution or selecting a different image. 
+Allows a background image to be specified for display in User Mode. If left unspecified, the system's default image is displayed. **Supports .bmp, .gif, .jpg, .png and .webp file formats. Resolution support varies by device**. If a selected image fails to display, Zebra recommends scaling down the resolution or selecting a different image. 
 
 When selecting an image using the Preferences panel UI, use tap-navigation to locate the image in the device file system or specify the file name and path using the keyboard (required for restricted areas not visible to the file browser). 
 
-**Notes**: 
-* **Only files in the** `/enterprise` **directory are persistent**, remaining on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
+**Note: Only files in the** `/enterprise` **directory are persistent**, remaining on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
 
 <img alt="" style="height:350px" src="2-7_wallpaper.png"/>
 
 <b>Possible values</b>:
 
-* fully qualified local (on-device) path to .BMP, .GIF, .JPG, .PNG or .WEBP file
+* fully qualified local (on-device) path to .bmp, .gif, .jpg, .png and .webp file
 
 #### Example
 

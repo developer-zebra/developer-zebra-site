@@ -339,10 +339,12 @@ Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>No
 ------
 
 ### Passwords
-Stores the encrypted password for logging into Admin Mode (blank by default). <b>Do not populate this tag manually in the config file or edit it in any way</b>. The administrator password is stored here programmatically by EHS after being entered or changed through the Tools menu in EHS Admin Mode. EHS uses this tag to store the password as a 256-bit AES-encrypted hash. Once a password is created and stored in the config file, it can be mass-deployed along with all other settings.
+Stores the encrypted password for logging into Admin Mode (blank by default). <b><u>Do not populate this tag manually</u> in the config file or edit in any way</b>. The administrator password is stored here programmatically by EHS after being entered or changed through the Tools menu in EHS Admin Mode. EHS uses this tag to store the password as a 256-bit AES-encrypted hash. Once a password is created and stored in the config file, it can be mass-deployed along with all other settings.
+
+>EHS 2.8 (and higher) implements a more secure encryption method than prior versions.<br> **See Important Notes below**. 
 
 <img alt="" style="height:350px" src="admin_password.png"/>
-The admin password <b><i>must</i></b> be entered and changed using the Admin Tools menu in the EHS GUI. 
+_The admin password <b><u>must</u></b> be entered and changed using the Admin Tools menu in the EHS GUI_. 
 
 <b>Possible values</b>:
 
@@ -353,6 +355,12 @@ The admin password <b><i>must</i></b> be entered and changed using the Admin Too
     <passwords>
         <admin></admin>
     </passwords>
+
+**Important Password Encryption Notes**:
+
+* **EHS 2.8 is backward-compatible with passwords** stored in configuration of older EHS versions.
+* **After EHS 2.8 accesses an Admin password from a prior version**, it stores that password in the config file using the new encryption method. 
+* **Once a config file is updated using the new encryption**, that file is no longer compatible with older EHS versions. 
 
 ------
 
@@ -735,6 +743,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 
 ------
 
+<!--  5/2/18- dropped from EHS 2.8
 ### Disable Status Bar Settings
 Controls whether the Settings icon is displayed in the Android Status Bar, and therefore whether the Settings panel is accessible by users. <b>Not supported on all devices</b>. A setting of 0 in this tag will enable the Status Bar Settings icon. 
 
@@ -753,7 +762,7 @@ Controls whether the Settings icon is displayed in the Android Status Bar, and t
 
     <disable_status_bar_settings_icon>1</disable_status_bar_settings_icon>
     
-------
+5/2/18- dropped from EHS 2.8
 
 ### Disable Status Bar Pull-down
 Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status Bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status Bar Pull-down is enabled. To disable, enter a value of 1. 
@@ -770,7 +779,9 @@ Controls whether the Android Status Bar can be pulled down to reveal controls an
 #### Example
 
     <disable_statusbar_pulldown>0</disable_statusbar_pulldown>
-    
+
+-->
+
 ------
 
 ### Install Shortcuts
@@ -786,8 +797,9 @@ Controls whether shortcuts can be added to local or remote apps through Android 
 #### Example
 
     <install_shortcuts>0</install_shortcuts>
-    
-------
+
+
+<!-- 5/2/18- dropped from EHS 2.8
 
 ### Exit Instead of Reboot
 Controls whether EHS will trigger an automatic device reboot when a setting that requires a reboot is changed. Permits Mobile Device Management (MDM) systems to maintain device control after making such changes. <b>Note: The setting in this tag is overridden if the [&lt;reboot_on_install_enabled&gt;](#rebootoninstallenabled) tag has a value of 1</b>. 
@@ -801,6 +813,8 @@ Controls whether EHS will trigger an automatic device reboot when a setting that
 
     <exit_instead_of_reboot>0</exit_instead_of_reboot>
     
+-->
+
 ------
 
 ### Reboot on Install Enabled

@@ -348,7 +348,7 @@ EHS 2.8 adds support for the following devices running Android Nougat:
 
 * **Disabling access to the camera and/or search apps from the lock screen no longer disables them from the User-Mode screen** if camera and/or search usage are permitted on the device. This issue arose when rebooting from the lock screen, and has been fixed for TC20 and TC25 models as well as devices running KitKat, Lollipop, Marshmallow. See [Android Nougat Notes](#androidnougatnotes). 
 
-* **Password encryption has been enhanced** for the Admin login. 
+* **Password encryption has been enhanced** for the Admin login. See [important notes](../settings/#passwords). 
 
 * **A colored screen is displayed** while EHS is starting up. 
 
@@ -357,12 +357,14 @@ EHS 2.8 adds support for the following devices running Android Nougat:
 ### Deprecations
 
 * Secure Mode remains supported but is no longer being advanced
-* Support is dropped for the following: 
+* The following features have been removed from EHS 2.8 and higher: 
  * Enable/disable status bar pull-down
  * Enable/disable status bar settings icon
  * Enable/disable "exit instead of reboot"
 
-These features can be accessed using Zebra's [StageNow](/stagenow) administrative tools or [EMDK](/) developer tools.
+**Notes**: 
+* The discontinued features listed above can be accessed using Zebra's [StageNow](/stagenow) administrative tools or [EMDK](/) developer tools.
+* A config file that contains settings for discontinued features generates an error in the EHS log file.
 
 -----
 
@@ -373,7 +375,7 @@ These features can be accessed using Zebra's [StageNow](/stagenow) administrativ
 
 <!-- 
 ABOVE NOTE REPLICATED ON SETTINGS PAGE 
- -->
+-->
 
 * **To enable Secure Mode in EHS, manual file-push is no longer supported in Android N for installing a device root certificate**. To deploy cert files to the device, use Certificate Manager through [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android). Learn more [about Secure Mode](../features/#securemode). 
 
@@ -393,19 +395,21 @@ ABOVE NOTE REPLICATED ON SETTINGS PAGE
 ### Android Lollipop, Marshmallow and Nougat Notes 
 **_Applies to devices running Android Lollipop 5.x and higher (including Marshmallow and Nougat)_**:
 
+<!-- 5/2/18- feature dropped from EHS 2.8 
 * **[Status Bar Pull-down](../settings#disablestatusbarpulldown) cannot be controlled through EHS on devices running Android L, M or N** (the feature appears "grayed out" in the Admin-Mode Preferences panel on those devices). To contol the Status Bar Pull-down (also known as the "Notification Pulldown"), use the [UI Manager](/mx/uimgr) through Zebra EMDK or StageNow tools.
 
-<!-- 
-ABOVE NOTE REPLICATED ON SETTINGS PAGE 
- -->
+-->
 
+<!-- 5/2/18- feature dropped from EHS 2.8
 * **[Status Bar Settings Icon](../settings#disablestatusbarsettings) behavior has changed**. While disabling such access to the Settings panel is not supported through EHS on all devices, a new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (referred to there as Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain. 
+
+-->
 
 * **[Airplane Option Disabled](../settings#airplaneoptiondisabled) feature cannot be controlled through EHS on devices running Android M or N, nor on some devices running Android L**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
 
 <!-- 
 ABOVE NOTE REPLICATED ON SETTINGS PAGE 
- -->
+-->
 
 * **Devices running Android L and higher retain the "Recent Apps" list after device reboot**, posing a potential security risk. EHS 2.7 (and higher) disables the Recent Apps button on <u>Nougat devices only</u> to help address this risk. For all devices, the list can be cleared using [App Manager](/mx/appmgr) through Zebra EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
 

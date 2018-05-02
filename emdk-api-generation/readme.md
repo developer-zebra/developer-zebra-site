@@ -23,15 +23,16 @@
 ## EMDK For Android
 
 ### Load APIs
-1. Log onto the [Jenkins build server](http://10.17.216.63:8080/jenkins/) (ID=kelani, pw= kelani@123) and look for something similar to "tut_emdka_build" and open the latest.
-2. Download the latest `sdk-addon.zip` file. This should have the current API level that the tool can target (i.e. Android API level 26). 
-3. Open the .zip file and navigate to /addon-symbol_emdk-symbol-26/docs/reference
-4. Copy the `/reference` folder to your local `/build/emdk-for-android/x-x/api/` folder (where x-x = the version number, i.e. 6-8). **DO NOT COPY TO `/SRC` folder!** 
-5. Copy the `stylesheet.css` file from a prior version into the `api/reference` folder, overwriting the existing `stylesheet.css` file copied from the zip. 
-6. View the local copy of the APIs and confirm the look and new feature(s).
-7. Copy the local version to the staging-server repo (zebra-stage.github.io).
-8. View the staging-server copy to confirm and test as in Step 6.
-9. When all changes are validated, copy to production-server repo (zebra.github.io).
+1. Log onto the [Jenkins build server](http://10.17.216.63:8080/jenkins/) (ID=kelani, pw= kelani@123) 
+2. In the main pane, look for something similar to "tut_emdka_build" and open the latest.
+3. Download the latest `sdk-addon.zip` file. This should have the current API level that the tool can target (i.e. Android API level 26). 
+4. Open the .zip file and navigate to /addon-symbol_emdk-symbol-XX/docs/reference (where "XX" is the highest number if multiple choices exist). 
+5. Copy the `/reference` folder to your local `/build/emdk-for-android/x-x/api/` folder (where x-x = the version number, i.e. 6-8). **DO NOT COPY TO `/src` folder!** 
+6. Copy the `stylesheet.css` file from a prior version into the `/api/reference` folder, overwriting the existing `stylesheet.css` file copied from the zip. 
+7. View the local version of the APIs and confirm the style and that new feature(s) are present (see release notes for new API features).
+8. Copy the local version to the staging-server repo (zebra-stage.github.io).
+9. View the staging-server copy to confirm and test as in Step 6.
+10. When all changes are validated, copy to production-server repo (zebra.github.io).
 
 ### Create new code sample repos for a new EMDK version
 

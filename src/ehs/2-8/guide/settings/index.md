@@ -35,7 +35,7 @@ This section describes important interactions between EHS and the `enterprisehom
 
 #### Forbidden Characters
 
-The EHS config file is fully XML-compliant, and must remain so to be readable by the XML parser in EHS. XML specifications forbid the use of the five characters ( " ' < > & ) except in the ways described in the spec. If those characters are required as part of XMl content, they must substituted with their "escaped" equivalents as follows: 
+The EHS config file is fully XML-compliant, and must remain so to be readable by EHS's XML parser. XML specifications forbid the use of five characters ( " ' < > & ) except in the ways described in the spec. If those characters are required as part of XML content, they must substituted with their "escaped" equivalents as follows: 
 
 `"` (quote) `&quot;`<br>
 `'` (apostrophe) `&apos;`<br>

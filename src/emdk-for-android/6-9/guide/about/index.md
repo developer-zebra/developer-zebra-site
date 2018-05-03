@@ -94,10 +94,10 @@ EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 
 **Enhanced Notification Manager API**:
 * A new `getDeviceIdentifier()` method in `DeviceInfo` class identifies the notification device
- * A new enum `DeviceIdentifier` supports `getDeviceIdentifier()` with following values:
-	DEFAULT - default
-	BLUETOOTH_IMAGER_RS6000 - Bluetooth imager RS6000
-	EXTERNAL_VIBRATOR1 - External Vibrator
+* A new enum `DeviceIdentifier` supports `getDeviceIdentifier()` with following values:
+ * DEFAULT - default
+ * BLUETOOTH_IMAGER_RS6000 - Bluetooth imager RS6000
+ * EXTERNAL_VIBRATOR1 - External Vibrator
 
 -----
 
@@ -107,16 +107,18 @@ EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 
 **Now supports MX v8.0** in Profile Manager adds the following Settings Types and features:
 
+* **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
+ * Clear Application Cache 
+ * Enable/disable All GMS Applications on the "Safe to Disable" list
 * **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions: 
  * Select a licensing file to be embedded in the XML
  * Select a preactivated license source 
  * Query product-specific license information
  * Specify product name to be queried
  * Select the method used to supply the license .bin file
-* **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
- * Clear Application Cache 
- * Enable/disable All GMS Applications on the "Safe to Disable" list
-* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds these new actions: 
+* **Enhanced [Power Manager](../../mx/powermgr)** adds a new action:
+ * Enable/disable PTT and scan buttons to wake the device from suspend mode 
+* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds a new action: 
  * Enable/disable tethering and portable hotspot features
 * **Enhanced [UI Manager](../../mx/uimgr)** adds these new actions:
  * Enable/disable the Magnification Gesture
@@ -172,11 +174,11 @@ EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
 1. **Profile API**: The profile applied by passing `extraData` in Profile Manager's process profile method is stored in the memory until the Profile Manager is released or process profile method is called with `PROFILE_FLAG.RESET`.
 1. To determine if the `processProfile` API is successful, check the “statusCode." If the statusCode is set to “CHECK_XML," traverse through the response XML (embedded in `EMDKResults`) to obtain the error. The EMDK samples demonstrate the manipulation of response XML for errors.
 1. In some cases the `EMDKResults.getExtendedStatusMessage()` might not provide correct status information.
-1. **Barcode API**: Setting scanner configurations is not allowed while a read is pending. This behavior is demonstrated in the [BarcodeSample1](../samples/barcode) code as well.
-1. **Barcode API**: To handle barcode scanning during device suspend-resume cycle (ex: pressing Power key) or background-foreground switching (ex: pressing Home key), it is required to release BarcodeManager instance by calling `EMDKManager.release(FEATURE_TYPE.BARCODE)` during suspend/switching to background and gain new BarcodeManager instance by calling `EMDKManager.getInstance(FEATURE_TYPE.BARCODE)` during resume/switching to foreground. Zebra recommends using `onPause()` and `onResume()` callbacks for this purpose. This behavior is demonstrated in the [BarcodeSample1](../samples/barcode) code as well.
+1. **Barcode API**: Setting scanner configurations is not allowed while a read is pending. This behavior is demonstrated in the [BarcodeSample1](../../samples/barcode) code as well.
+1. **Barcode API**: To handle barcode scanning during device suspend-resume cycle (ex: pressing Power key) or background-foreground switching (ex: pressing Home key), it is required to release BarcodeManager instance by calling `EMDKManager.release(FEATURE_TYPE.BARCODE)` during suspend/switching to background and gain new BarcodeManager instance by calling `EMDKManager.getInstance(FEATURE_TYPE.BARCODE)` during resume/switching to foreground. Zebra recommends using `onPause()` and `onResume()` callbacks for this purpose. This behavior is demonstrated in the [BarcodeSample1](../../samples/barcode) code as well.
 1. **Barcode API**: The RS507 Bluetooth scanner supports device wake-up from suspend by pressing RS507 trigger. To use this feature, the RS507 scanner should not be disabled when the device goes to suspend. The generally recommended practice is to release the barcode scanner during device suspend or moving an app to the background.
 1. EMDK API calls such as Barcode, SimulScan and SerialComm are designed to be called sequentially. If called within separate threads, such as from AsyncTasks, some kind of synchronization mechanism should be employed to prevent multiple EMDK API calls getting called simultaneously.
-1. **Barcode API** While using Bluetooth and Pluggable scanners such as RS507, RS6000, RS4000, when the scanner DISCONNECTED event is received, the created scanner object must be released and cannot be used for future scanning tasks. When the subsequent CONNECTED event is received, a new scanner object must be created and used for scanning. See the [Using Bluetooth Scanner](../tutorial/tutBluetoothScannerAPI/) tutorial or the [BarcodeSample1](../samples/barcode) application for more programming information. Zebra recommends maintaining a time gap between every DISCONNECT and CONNECT for the Pluggable scanner devices.
+1. **Barcode API** While using Bluetooth and Pluggable scanners such as RS507, RS6000, RS4000, when the scanner DISCONNECTED event is received, the created scanner object must be released and cannot be used for future scanning tasks. When the subsequent CONNECTED event is received, a new scanner object must be created and used for scanning. See the [Using Bluetooth Scanner](../../tutorial/tutBluetoothScannerAPI/) tutorial or the [BarcodeSample1](../../samples/barcode) application for more programming information. Zebra recommends maintaining a time gap between every DISCONNECT and CONNECT for the Pluggable scanner devices.
 1. The beam timer for RS507 scanners has a maximum value of 10 (seconds).
 1. **Barcode API** Specifying any custom audio file with the same name as one of the system audio files (/system/media/audio/notifications/) for `decodeAudioFeedbackUri` in `ScannerConfig.ScannerParams` will play a system audio file instead of the specified custom audio file. This is working as designed.
 1. **SimulScan API** When `SimulScanReader.read()` is called and if there are any unlicensed features in the selected template, an ERROR state is returned with extended status as "`UNLICENSED_FEATURE`" for each unlicensed feature in the template. Use `SimulScanStatusData.getStatusDescription()` to view the name of the unlicensed feature(s).

@@ -84,10 +84,10 @@ EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
 
 **Enhanced Notification Manager API**:
 * A new `getDeviceIdentifier()` method in `DeviceInfo` class identifies the notification device
- * A new enum `DeviceIdentifier` supports `getDeviceIdentifier()` with following values:
-	DEFAULT - default
-	BLUETOOTH_IMAGER_RS6000 - Bluetooth imager RS6000
-	EXTERNAL_VIBRATOR1 - External Vibrator
+* A new enum `DeviceIdentifier` supports `getDeviceIdentifier()` with following values:
+ * DEFAULT - default
+ * BLUETOOTH_IMAGER_RS6000 - Bluetooth imager RS6000
+ * EXTERNAL_VIBRATOR1 - External Vibrator
 
 -----
 
@@ -99,20 +99,23 @@ EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
 
 **Now supports MX v8.0** in Profile Manager, adding the following features:
 
+* **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
+ * Clear Application Cache 
+ * Enable/disable All GMS Applications on the "Safe to Disable" list
 * **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions: 
  * Select a licensing file to be embedded in the XML
  * Select a preactivated license source 
  * Query product-specific license information
  * Specify product name to be queried
  * Select the method used to supply the license .bin file
-* **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
- * Clear Application Cache 
- * Enable/disable All GMS Applications on the "Safe to Disable" list
-* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds these new actions: 
+* **Enhanced [Power Manager](../../mx/powermgr)** adds a new action:
+ * Enable/disable PTT and scan buttons to wake the device from suspend mode 
+* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds a new action: 
  * Enable/disable tethering and portable hotspot features
 * **Enhanced [UI Manager](../../mx/uimgr)** adds these new actions:
  * Enable/disable the Magnification Gesture
  * Show/hide the Virtual KeyBoard while Physical Keyboard is active
+
 
 -----
 

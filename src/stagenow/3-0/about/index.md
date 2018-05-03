@@ -85,21 +85,23 @@ The following software must be installed on the staging workstation prior to usi
 * **MX 7.1+ - FTPS**
 
 **Supports MX v8.0**, adding the following features:
-* **Enhanced [License Manager](../csp/license)**: 
+* **Enhanced [App Manager](../csp/app)** adds these new actions:  
+ * Clear Application Cache 
+ * Enable/disable All GMS Applications on the "Safe to Disable" list
+* **Enhanced [License Manager](../csp/license)** adds these new actions: 
  * Select a licensing file to be embedded in the XML
  * Select a preactivated license source 
  * Query product-specific license information
  * Specify product name to be queried
  * Select the method used to supply the license .bin file
-* **Enhanced [App Manager](../csp/app)**:  
- * Clear Application Cache 
- * Enable/disable All GMS Applications on the "Safe to Disable" list
-* **Enhanced [Settings Manager](../csp/settingsmgr)**: 
+* **Enhanced [Personal Dictionary](../csp/personaldictionary)** now accepts shortcuts when bulk-adding terms from a file.
+* **Enhanced [Power Manager](../csp/power)** adds a new action:
+ * Enable/disable PTT and scan buttons to wake the device from suspend mode 
+* **Enhanced [Settings Manager](../csp/settingsmgr)** adds a new action: 
  * Enable/disable tethering and portable hotspot features
-* **Enhanced [UI Manager](../csp/ui)**:
+* **Enhanced [UI Manager](../csp/ui)** adds these new actions:
  * Enable/disable the Magnification Gesture
  * Show/hide the Virtual KeyBoard while Physical Keyboard is active
-* **Enhanced [Personal Dictionary](../csp/personaldictionary)** now accepts shortcuts when bulk-adding terms from a file
 
 **Supports Windows 10 Pro** (English and Chinese)
 

@@ -20,7 +20,7 @@ content-items:
     url: persistence
   - type: section
     level: 4
-    title: Staging API Service
+    title: Staging Service API
     text: How to use Staging API Service to produce StageNow barcodes from an EMM Console to enroll an AEDO EMM Agent using the StageNow Client
     url: stagingapi
   - type: section

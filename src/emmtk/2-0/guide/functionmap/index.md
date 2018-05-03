@@ -12712,7 +12712,8 @@ page-break-before:always'>
 
 -->
 
-## CSP Query-to-AEDO API Mappings
+<h2>CSP Query-to-AEDO API Mappings</h2>
+
 <table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
  width=720 style='width:539.75pt;border-collapse:collapse;border:none;
  mso-border-alt:solid #8EAADB .5pt;mso-border-themecolor:accent1;mso-border-themetint:

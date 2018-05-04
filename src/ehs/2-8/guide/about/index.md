@@ -340,7 +340,7 @@ EHS 2.8 adds support for the following devices running Android Nougat:
 
 * **Custom EHS icon no longer limited to home screen -** When a custom icon used to replace the stock EHS icon, it can optionally be set to display on screens for Battery Info, Wireless Info, Preferences and the Tools menu. 
 
-* **File browsing in Preferences panel -** When selecting a title-bar icon or wallpaper image through the Preferences panel, tap-navigation is now possible to locate the image file and specify its path. 
+* **File browsing in Preferences panel -** When selecting a title-bar icon or wallpaper image through the Preferences panel, tap-navigation is now possible to locate the image file and specify its path. File location is no longer limited to `/enterprise/usr` folder.
 
 ### Enhancements/Fixes
 
@@ -352,7 +352,7 @@ EHS 2.8 adds support for the following devices running Android Nougat:
 
 * **A colored screen is displayed** while EHS is starting up. 
 
-* **Wallpaper and Title Bar Icon** features now support .bmp, .gif, .jpg, .png and .webp file formats. 
+* **Wallpaper and Title Bar Icon** features now support .bmp, .gif, .jpg, .png and .webp file formats and file location is no longer limited to `/enterprise/usr` folder.
 
 ### Deprecations
 
@@ -380,6 +380,13 @@ ABOVE NOTE REPLICATED ON SETTINGS PAGE
 * **To enable Secure Mode in EHS, manual file-push is no longer supported in Android N for installing a device root certificate**. To deploy cert files to the device, use Certificate Manager through [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android). Learn more [about Secure Mode](../features/#securemode). 
 
 -----
+
+### Android Marshmallow and Nougat Notes
+**_Applies to devices running Android Marshmallow and Nougat_**:
+
+* **When referencing a file stored on a removable SD Card in a device running Android M or N**, references to that card must include its symbolic link (rather than its direct path). When navigating to the card on such devices, a symbolic link is visible in the file browser and is **<u>unique to that device</u>**. For example, on pre-M devices, the file path might be visible as `/storage/sdcard1/image.png` while the same path on M and N devices appears as `/storage/0097-B7BA/image.png`. Therefore, **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**. 
+
+------
 
 ### Android Marshmallow Notes
 **_Applies to devices running Android 6.x Marshmallow only_**:

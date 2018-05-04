@@ -495,13 +495,18 @@ Allows an image to be specified for display in the EHS Title Bar. **Supports .bm
 
 When selecting an image using the Preferences panel UI, use tap-navigation to locate the image in the device file system or specify the file name and path using the keyboard (required for restricted areas not visible to the file browser). 
 
-**Note: Only files in the** `/enterprise` **directory are persistent**, remaining on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
-
 <img alt="" style="height:350px" src="title_bar_3.png"/>
 
 <b>Possible values</b>:
 
 * fully qualified local (on-device) path to a .bmp, .gif, .jpg, .png or .webp image file
+
+**Notes**: 
+
+* **Use of this tag requires addition of &lt;title_bar_icon&gt; node** to `enterprisehomescreen.xml` file; not included by default.
+* **Default EHS logo is used if tag is missing or left blank**, or if the specified image file is missing or invalid (such instances are [logged](../features/#ehslog)).
+* **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
+* **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**. [More info](../about/#androidandnougatnotes).
 
 #### Example
 
@@ -511,11 +516,6 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
             <title_bar_icon_file>/storage/sdcard0/Android/data/com.symbol.enterprisehomescreen/files/title.jpg</title_bar_icon_file > 
         </title_bar_icon >
     </preferences>
-
-**Notes**: 
-
-* **Use of this tag requires addition of &lt;title_bar_icon&gt; node** to `enterprisehomescreen.xml` file; not included by default.
-* **Default EHS logo is used if tag is missing or left blank**, or if the specified image file is missing or invalid (such instances are [logged](../features/#ehslog)).
 
 -----
 
@@ -668,13 +668,16 @@ Allows a background image to be specified for display in User Mode. If left unsp
 
 When selecting an image using the Preferences panel UI, use tap-navigation to locate the image in the device file system or specify the file name and path using the keyboard (required for restricted areas not visible to the file browser). 
 
-**Note: Only files in the** `/enterprise` **directory are persistent**, remaining on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
-
 <img alt="" style="height:350px" src="2-7_wallpaper.png"/>
 
 <b>Possible values</b>:
 
 * fully qualified local (on-device) path to .bmp, .gif, .jpg, .png or .webp file
+
+**Notes**: 
+* **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
+* **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**. [More info](../about/#androidandnougatnotes).
+
 
 #### Example
 

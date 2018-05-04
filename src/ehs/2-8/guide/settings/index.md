@@ -145,45 +145,37 @@ The EHS config file is broken into five sections:
 
 **Default** `enterprisehomescreen.xml` **file**:
 
-    :::xml
     <?xml version="1.0" encoding="utf-8"?>
-     <kiosk>
-        <application label="Calculator" package="com.android.calculator2" activity=""/>
-    </kiosk>
-
     <config>
-    <applications>
-        <application label="Calculator" package="com.android.calculator2" activity="com.android.calculator2.Calculator"/>
-        <application label="DWDemo" package="com.symbol.datawedge" activity="com.symbol.datawedge.DWDemoActivity"/>
-    </applications>
-
-    <tools>
-        <application label="Calculator" package="com.android.calculator2" activity=""/>
-    </tools>
-
-    <passwords>
-        <admin></admin>
-    </passwords>
-
-    <preferences>
-        <title>Enterprise Home Screen</title>
-        <icon_label_background_color>#00FFFFFF</icon_label_background_color>
-        <icon_label_text_color>#FFFFFFFF</icon_label_text_color>
-        <orientation></orientation>
-        <bypass_keyguard>1</bypass_keyguard>
-        <auto_launch_enable>0</auto_launch_enable>
-        <wallpaper></wallpaper>
-        <kiosk_mode_enabled>0</kiosk_mode_enabled>
-        <disable_status_bar_settings_icon>1</disable_status_bar_settings_icon>
-        <disable_statusbar_pulldown>0</disable_statusbar_pulldown>
-        <install_shortcuts>0</install_shortcuts>
-        <exit_instead_of_reboot>0</exit_instead_of_reboot>
-        <airplane_option_disabled>1</airplane_option_disabled>
-        <keyguard_camera_disabled>1</keyguard_camera_disabled>
-        <keyguard_search_disabled>1</keyguard_search_disabled>
-        <usb_debugging_disabled>1</usb_debugging_disabled>
-        <system_settings_restricted>1</system_settings_restricted>
-    </preferences>
+        <kiosk>
+            <application label="Calculator" package="com.android.calculator2" activity=""/>
+        </kiosk>
+        <applications>      
+            <application label="Calculator" package="com.android.calculator2" activity="com.android.calculator2.Calculator"/>
+            <application label="DWDemo" package="com.symbol.datawedge" activity="com.symbol.datawedge.DWDemoActivity"/>     
+        </applications>
+        <tools>
+            <application label="Calculator" package="com.android.calculator2" activity=""/>     
+        </tools>
+        <passwords>
+            <admin></admin>
+        </passwords>        
+        <preferences>
+            <title>Enterprise Home Screen</title>
+            <icon_label_background_color>#00FFFFFF</icon_label_background_color>
+            <icon_label_text_color>#FFFFFFFF</icon_label_text_color>
+            <orientation></orientation>
+            <bypass_keyguard>1</bypass_keyguard>
+            <auto_launch_enable>0</auto_launch_enable>
+            <service_auto_launch_enable>0</service_auto_launch_enable>
+            <wallpaper></wallpaper>
+            <kiosk_mode_enabled>0</kiosk_mode_enabled>
+            <install_shortcuts>0</install_shortcuts>
+            <keyguard_camera_disabled>1</keyguard_camera_disabled>
+            <keyguard_search_disabled>1</keyguard_search_disabled>      
+            <usb_debugging_disabled>1</usb_debugging_disabled>
+            <system_settings_restricted>1</system_settings_restricted>
+        </preferences>
     </config>
 
 -----

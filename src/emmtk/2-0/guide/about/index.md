@@ -18,10 +18,8 @@ The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow de
  * Download, install, configure and launch an EMM Agent on the device​
  * Perform persistence and/or other desired staging tasks
 
-<!-- 
-This guide contains all information necessary for adding these capabilities to an EMM management console through the Zebra [Staging API Service](../api). 
 
- -->
+The primary vehicle for integrating an EMM solution with Zebra's staging tools is the [Staging Service API](../api). This guide contains all information necessary for Zebra-device staging capabilities to an EMM management console. 
 
 -----
 

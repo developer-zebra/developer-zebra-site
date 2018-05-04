@@ -506,7 +506,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 * **Use of this tag requires addition of &lt;title_bar_icon&gt; node** to `enterprisehomescreen.xml` file; not included by default.
 * **Default EHS logo is used if tag is missing or left blank**, or if the specified image file is missing or invalid (such instances are [logged](../features/#ehslog)).
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
-* **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**. [More info](../about/#androidandnougatnotes).
+* **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**. [More info](../about/#androidnougatnotes).
 
 #### Example
 
@@ -676,7 +676,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 
 **Notes**: 
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
-* **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**. [More info](../about/#androidandnougatnotes).
+* **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**. [More info](../about/#androidnougatnotes).
 
 
 #### Example

@@ -14,7 +14,7 @@ menu:
     - title: Code Samples
       url: /emmtk/2-0/guide/samples
     - title: Staging APIs
-      url: /emmtk/2-0/guide/stagingapi
+      url: /emmtk/2-0/guide/api
     - icon: fa fa-search
       url: /emmtk/2-0/search
 product: EMM Toolkit

@@ -33,7 +33,22 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 -----
 
-### New in DataWedge 6.7
+## New in DataWedge 6.8
+
+Scanner auto-switching on disconnect
+Global parameter changes
+Advanced string manipulation 
+Function key dispatch
+Support for Digimarc, LI3608 and 3678 scanners 
+Features for scanner presentation mode
+Updated Intent API (Set/Get ?)
+GB3212
+Ignore switches to disabled Profiles
+Updates to auto-import
+Press and Sustain aimtype?
+
+
+OLD OLD OLD
 
 * **This version supports devices running Android Lollipop and higher only**. 
 
@@ -51,6 +66,22 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 ## Version History
 
+### Added in DataWedge 6.7
+
+* **This version supports devices running Android Lollipop and higher only**. 
+
+* **Supports [multi-barcode input](../input/barcode/#readerparams)** for simultaneous acquisition of more than one barcode at a time (**TC20/TC25 devices only**).  
+
+* **Enhanced [inter-character delay](../output/keystroke/#keystrokeoutputsetup) function** allows a delay to be specified for all characters or for multi-byte characters only.  
+
+* **AimType now supports [Press and Sustain](../input/barcode/#readerparams)** function continues a decode session until the Beam Timer is expired, barcode is decoded or the read is canceled.  
+
+* **A [Dynamic Templates parameter](../input/simulscan)** allows the number of barcodes to be specified (from 1-99) for decoding on a form when using SimulScan Dynamic Templates.
+
+* **A new [IMPORT_CONFIG API](../api/importconfig)** allows Config and Profile settings files to be imported using an intent. 
+
+-----
+
 ### Added in v6.6
 
 * **New [serial input options](../input/serial) allow DataWedge to specify communications parameters for a scanner or other device connected to a serial port and used to acquire data**.
@@ -62,7 +93,6 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 * **The [SET_CONFIG](../api/setconfig) API now configures multiple plug-ins with a single intent action**. 
 
 * **The [SWITCH_SCANNER](../api/switchscanner) API now supports friendly device names with a new extra**. 
-
 
 -----
 

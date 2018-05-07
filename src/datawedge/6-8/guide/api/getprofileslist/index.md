@@ -2,7 +2,7 @@
 title: Get Profiles List 
 layout: guide.html
 product: DataWedge
-productversion: '6.7'
+productversion: '6.8'
 ---
 
 ## GET_PROFILES_LIST

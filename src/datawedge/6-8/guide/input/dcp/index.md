@@ -2,7 +2,7 @@
 title: DCP Input
 layout: guide.html
 product: DataWedge
-productversion: '6.7'
+productversion: '6.8'
 ---
 
 ## Overview

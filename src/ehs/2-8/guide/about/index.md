@@ -338,7 +338,7 @@ EHS 2.8 adds support for the following devices running Android Nougat:
 
 * **Enhanced Device Identifier Options -** Information to uniquely identify a device&mdash;its serial number, MAC address, network host name, Bluetooth address, Bluetooth name or IMEI number&mdash;can be displayed as the title bar text of the EHS home screen. 
 
-* **Custom EHS icon no longer limited to home screen -** When a custom icon used to replace the stock EHS icon, it can optionally be set to display on screens for Battery Info, Wireless Info, Preferences and the Tools menu. 
+* **Custom EHS icon no longer limited to home screen -** When a custom icon is used to replace the stock EHS icon, the icon can optionally be set to also display on other screens, including those for Battery Info, Wireless Info, Preferences and the Tools menu. 
 
 * **File browsing in Preferences panel -** When selecting a title-bar icon or wallpaper image through the Preferences panel, tap-navigation is now possible to locate the image file and specify its path. File location is no longer limited to `/enterprise/usr` folder.
 

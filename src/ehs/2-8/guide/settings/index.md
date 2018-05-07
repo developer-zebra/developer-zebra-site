@@ -181,7 +181,7 @@ The EHS config file is broken into five sections:
 -----
 
 ## Config Tags
-This section describes all tags in the `enterprisehomescreen.xml` file and their possible values. They're shown below in the same order they appear in the default file, and are followed by optional tags. Tags can appear in any order, but must be contained within the &lt;config&gt; &lt;/config&gt; tag set. 
+This section describes all tags in the `enterprisehomescreen.xml` file and their possible values. They're shown below in the same order they appear in the default file, and are followed by optional tags. Tags can appear in any order, but must be contained within the &lt;config&gt; &lt;/config&gt; tag set (node). 
 
 ------
 
@@ -215,6 +215,13 @@ Specifies the applications and/or browser links to be displayed to users while E
 When specifying links, the package and activity parameters can be used to launch the URL with a specific app, such as Mozilla Mobile browser. If no activity is specified, EHS will open the link using the default browser.
 
 <b>Note</b>: Package names might vary from one Android version to another. 
+
+------
+
+#### Chinese Edition
+In the EHS version localized for Simplified Chinese, the default `enterprisehomescreen.xml` config file contains sample apps with English-language titles. If any of the same apps are added in the Chinese edition, those apps will appear twice in User Mode&mdash;once with the English title and again with the Chinese. If this is undesired, remove the unwanted `<application>` entry from the `<applications>` node in the config file. 
+
+------
 
 #### Application Example 
 
@@ -302,6 +309,8 @@ When specifying links, the package and activity parameters can be used to launch
 * Wildcard searches can include "com.androidX" where X=any character except dot (.).  
 * The `enterprisehomescreen.log` file will store error messages resulting from invalid wildcard usare. 
 * The EHS app and EHS installer always are excluded from any filtered app list. 
+
+-----
 
 #### URL Example
 

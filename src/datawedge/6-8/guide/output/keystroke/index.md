@@ -46,9 +46,9 @@ _Keystroke Output options_
 
 ### Profile Import Behavior
 
-* **For Profiles imported <u>into DataWedge 6.7</u> from prior versions**, the value specified for the "Multi byte character delay" is applied to the Inter-character delay and the “Delay Multi-byte characters only” parameter is enabled. 
+* **For Profiles imported <u>into DataWedge 6.7 (and higher)</u> from prior versions**, the value specified for the "Multi byte character delay" is applied to the Inter-character delay and the “Delay Multi-byte characters only” parameter is enabled. 
 
-* **For Profiles created with DataWedge 6.7 and <u>imported into a prior version</u>**, the specified delay, if any, is applied only to multi-byte characters. 
+* **For Profiles created with DataWedge 6.7 (and higher) <u>and imported into a prior version</u>**, the specified delay, if any, is applied only to multi-byte characters. 
 
 -----
 

@@ -20,9 +20,9 @@ The "-b" creates a new branch, which is called "eb-1.6" and it's off the "develo
 
 **Search and replace** "productversion: 1-5" with "productversion: 1-6" on all pages
 
-**Search and replace** "1-5" with "1-6" in all places. This updates menu links and other hard-wired references for the new version.  
+**Search and replace** "1-5" with "1-6" in all places. This updates menu links and other hard-wired references for the new version (double-check the results list for "false pisitives" before global-replacing everything). 
 
-**Search and replace** "1.5" with "1.6" in appropriate places (a manual replacement process is recommended; some search results will be false positives, such as "In Enterprise Browser 1.5 and higher..."). 
+**Search and replace** "1.5" with "1.6" in appropriate places (a manual replacement process is recommended; some search results will be false positives, such as "In Enterprise Browser 1.5 'and higher'..."). 
 
 Add and commit these changes to git as the initial commit. This will allow you to revert to "square one" if anything goes haywire later. 
 

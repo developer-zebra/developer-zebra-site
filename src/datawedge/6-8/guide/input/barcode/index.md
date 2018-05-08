@@ -46,6 +46,7 @@ DataWedge supports the following Zebra Bluetooth scanners:
 * **RS507** Cordless Ring Scanner
 * **RS6000** Ring Scanner
 * **DS3678** Ultra-Rugged Scanner
+* **LI3678** Ultra-Rugged Laser Scanner
 
 Bluetooth scanners are supported according to the following rules:
 
@@ -59,6 +60,7 @@ Bluetooth scanners are supported according to the following rules:
 DataWedge supports the following Zebra USB SSI scanners: 
 
 * **DS3608** USB SSI Scanner
+* **LI3608** Ultra-Rugged USB Laser Scanner
 
 Support notes: 
 

@@ -61,6 +61,8 @@ The scan-to-bypass wizard feature works only on devices with OS images as indica
 * **Android Nougat** with BSP49 and higher
 * **Android Marshmallow** with BSP21 (G-00-08) or higher 
 
+To update a device, visit the **[BSP download page](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc51-operating-system-for-gms-devices.html)**.
+
 **IMPORTANT**: If the wizard is partially completed, data entered prior to the scan is applied. 
 
 <!-- WAITING FOR BSP # from ENG. 
@@ -69,7 +71,6 @@ The scan-to-bypass wizard feature works only on devices with OS images as indica
 * **Android Nougat** with BSPxx or higher
  -->
 
-To update a device, visit the **[BSP download page](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc51-operating-system-for-gms-devices.html)**.
 
 -----
 

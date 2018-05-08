@@ -45,12 +45,9 @@ This feature automatically changes the active scanner upon a Bluetooth scanner c
 
 Enabling this feature will switch the scanner automatically upon a Bluetooth scanner connection or disconnection. By default, this feature is disabled and can only be enabled when Scanner selection is set as “Auto”
 
-
 <img style="height:350px" src="68_switch_on_event.png"/>
-
 *'Auto switch to default on event' is available only when 'Auto' is selected*. 
 <br>
-
 
 * **Disabled -** No scanner switching occurs when a Bluetooth scanner is connected or disconnected (default).
 * **On connect -** Enabled scanner is switched to the external scanner upon connect if the newly connected scanner is the current default scanner. 

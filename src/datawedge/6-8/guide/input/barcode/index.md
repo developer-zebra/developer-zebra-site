@@ -28,17 +28,39 @@ Barcode Input is used to specify:
 -----
 
 ## Scanner Selection
-For Barcode Input, the Scanner selection panel determines which scanning device will be used for data capture. The list of available scanners will be based devices that are present on (or connected to) the unit being configured. 
+For Barcode Input, the Scanner selection panel determines which scanning device will be used for data capture. The list of available scanners is based on devices present in (or connected to) the unit being configured. 
 <img style="height:350px" src="../11_select_input.png"/>
 <br>
 
 The "Auto" option automatically determines the best scanning device from the list of available devices based on the rules below. 
 
 **Auto Scanner Selection Rules**:
-* If a Zebra Scan Module or Scan/MSR Module is installed, the 2D imager will be selected. 
-* If no Scan Module is installed, the camera will be selected. 
+* If a Zebra Scan Module or Scan/MSR Module is installed, the 2D imager is selected. 
+* If no Scan Module is installed, the camera is selected. 
 * When the camera is selected, scanning is performed with the rear-facing camera.
 * When 2D Imager is selected, scanning is performed using the installed Scan or Scan/MSR module.
+
+#### Auto Switch to default on event
+This feature automatically changes the active scanner upon a Bluetooth scanner connection or disconnection. By default, this feature is disabled and can only be enabled when Scanner selection is set as “Auto”
+
+Enabling this feature will switch the scanner automatically upon a Bluetooth scanner connection or disconnection. By default, this feature is disabled and can only be enabled when Scanner selection is set as “Auto”
+
+
+<img style="height:350px" src="68_switch_on_event.png"/>
+
+*'Auto switch to default on event' is available only when 'Auto' is selected*. 
+<br>
+
+
+* **Disabled -** No scanner switching occurs when a Bluetooth scanner is connected or disconnected (default).
+* **On connect -** Enabled scanner is switched to the external scanner upon connect if the newly connected scanner is the current default scanner. 
+(Ex: Connecting a Bluetooth scanner while scanning via Internal Imager, scanner will be switched to the Bluetooth scanner)
+* **On disconnect -** Enabled scanner is switched to the new default scanner when the current default scanner is disconnected.
+(Ex: Disconnect Bluetooth scanner while scanning, Scanner will be switched to internal scanner)
+
+* **On connect/disconnect -** Enabled scanner is switched to the new default scanner if the current default scanner gets disconnected or the connected scanner is the new default scanner.
+
+
 
 ### Bluetooth Scanners
 DataWedge supports the following Zebra Bluetooth scanners: 
@@ -51,18 +73,18 @@ DataWedge supports the following Zebra Bluetooth scanners:
 Bluetooth scanners are supported according to the following rules:
 
 * **To initially configure the RS507** in a Profile, the scanner must be paired and connected.
-* **After initial configuration**, the Bluetooth scanner can be enabled and disabled in the Profile even if it is disconnected from the device. However, to configure reader parameters, decoders and other scanner settings, the Bluetooth scanner must be connected.
-* **DataWedge will not automatically reconnect** to a Bluetooth scanner if that scanner is connected while DataWedge is using a different auto-selected scanner. To re-enable a Bluetooth scanner, connect the scanner and select it in the Profile or re-choose the Auto select option.
-* **Auto-selection and Battery Swap -** If Scanner selection is set to Auto and the RS507 was enabled prior to a battery swap, DataWedge will continue working with that RS507 scanner upon reconnection after the battery is swapped. If the RS507 does not reconnect with after the swap, DataWedge will revert to the current default scanner.
-* **Keep Enabled on Suspend -** This mode is supported on Bluetooth and pluggable scanners, and might result in faster battery drain than would otherwise be expected while in suspend mode. **Note: The Zebra computing device will wake from suspend mode after pressing the scan trigger of any supported scanner**.
+* **After initial configuration**, a Bluetooth scanner can be enabled and disabled in the Profile, even if it is disconnected from the device. However, to configure decoders, reader parameters and other scanner settings, a Bluetooth scanner must be connected.
+* **DataWedge does not automatically reconnect** to a Bluetooth scanner if that scanner is connected while DataWedge is using a different auto-selected scanner. To re-enable a Bluetooth scanner, connect the scanner and select it in the Profile or re-choose the "Auto" selection option.
+* **Auto-selection and Battery Swap -** If Scanner selection is set to Auto and an RS507 was enabled prior to a battery swap, DataWedge continues working with that RS507 scanner upon reconnection after a battery is swapped. If the RS507 does not reconnect after the swap, DataWedge reverts to the current default scanner.
+* **Keep Enabled on Suspend -** This mode is supported on Bluetooth and pluggable scanners, and might result in faster battery drain than would otherwise be expected while in suspend mode. **Note: The Zebra computing device wakes from suspend mode when pressing the scan trigger of any supported scanner**.
 
 ### USB SSI Scanners
 DataWedge supports the following Zebra USB SSI scanners: 
 
 * **DS3608** USB SSI Scanner
-* **LI3608** Ultra-Rugged USB Laser Scanner
+* **LI3608** Ultra-Rugged USB SSI Laser Scanner
 
-Support notes: 
+**Support notes**: 
 
 * The DS3608 scanner is supported only on VC80, ET50 and ET55 devices running Windows 
 * Scanner must be configured using Symbol Native API (SNAPI) with Imager Interface

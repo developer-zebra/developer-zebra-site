@@ -691,7 +691,7 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 * **Continuous Read -** A press and hold of the scan trigger will continuously scan barcodes. **Not supported with the Zebra RS507 Bluetooth Ring Scanner**.
 
-* **Press and Sustain -** Starts the scan beam when the trigger is pressed and continues the decode session until the Beam Timer is expired, barcode is decoded or read is canceled. **Scan beam is not stopped when the trigger is released**. This avoids unexpected cancellations of a read by subsequently pressing the trigger button of the device; subsequent trigger presses while the beam is ON have no effect. 
+* **Press and Sustain -** Starts the scan beam when the trigger is pressed and continues the decode session until the Beam Timer is expired, barcode is decoded or read is canceled. **Scan beam is not stopped when the trigger is released**. This avoids unexpected cancellations of a read by subsequently pressing the trigger button of the device; subsequent trigger presses while the beam is ON have no effect. **Applies to internal imager on TC20/TC25 only**. 
 
 **Beam Timer -** Sets the maximum amount of time (in ms) that the reader remains on. Supports a range from 0 - 60,000 ms in increments of 100 ms. A value of 0 sets the reader to stay on indefinitely.
 
@@ -751,6 +751,16 @@ Reader Parameters control specific configuration options for the barcode reader 
 -----
 
 ### UDI Decoding
+The Universal Device Identifier (UDI) parameter acquires multiple barcodes simultaneously. 
+
+**This feature is supported using the imager on the following devices only**:
+
+* **TC51**
+* **TC56**
+* **TC70x**
+* **TC75x**
+
+**Tap Scanning Modes to enable UDI decoding**: 
 
 <img style="height:350px" src="scanning_modes.png"/>
 _When UDI scanning mode is enabled (as above)_... 
@@ -759,7 +769,8 @@ _When UDI scanning mode is enabled (as above)_...
 
 **UDI Decoding Notes** 
 
-* Output of collected UDI data might require settings adjustments of the token-separation character and/or output order. See the [Keystroke Output guide](../../output/keystroke/#udidataoutput) guide for more information. 
+* **UDI decoding is supported only on the devices listed above**. 
+* **Output of collected UDI data might require settings adjustments** of the token-separation character and/or output order. See the [Keystroke Output guide](../../output/keystroke/#udidataoutput) guide for more information. 
 * UDI settings can vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke), [Intent Output](../../output/intent) and/or [IP Output](../../output/ip) guides for more information.
 
 -----
@@ -773,16 +784,11 @@ _When Multi-barcode scanning mode is enabled (as above)_...
 
 **Multi-barcode Notes**
 
-* **Supported on select devices only**. See the [About page](../../about) for details. 
-
-* **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke). 
-
+* **Supported with internal imager on TC20/TC25 devices only**.  
+* **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke/#multibarcodedataoutput). 
 * **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes (from 2-10) specified in the Multi-barcode params panel. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
-
 * **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
-
 * **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a Multi-barcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
-
 * **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
 
 -----

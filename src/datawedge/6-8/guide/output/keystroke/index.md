@@ -87,7 +87,7 @@ _Drag tokens to adjust output order_.
 
 This setting applies when the Scanning mode in [Barcode Reader Params](../../input/barcode/#readerparams) is set to MultiBarcode, which simultaneously acquires the number of barcodes (from 2-10) specified in the corresponding reader parameter. 
 
-**Note: Supported on select devices only**. See the [About page](../../about) for details. 
+**Note: Supported with internal imager on TC20/TC25 devices only**. 
 
 **To configure MultiBarcode output**: 
 

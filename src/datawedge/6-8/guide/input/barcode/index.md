@@ -892,7 +892,7 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 **Other DataWedge Input Options**:
 
 * **[Mag-stripe Reader](../msr) -** credit/debit and identity cards
-* **[SimulScan](../simulscan) -** document capture and muti-barcode scanning 
+* **[SimulScan](../simulscan) -** document capture and multi-barcode scanning 
 
 **Related guides**:
 

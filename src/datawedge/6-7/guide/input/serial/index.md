@@ -16,11 +16,11 @@ Serial Input options are used to specify communications parameters for a scanner
 -----
 
 ### Serial Port Configuration 
+**_Applies only to devices running Android N and higher_**.  
 
 <img style="height:450px" src="DW_serial_02.png"/>
 _Input enabled on Serial port 1 of a Zebra VC80x; second serial port (disabled) also shown._
 <br>
-
 
 **Baud rate -** specifies the modulation rate of the connected serial device. 
 
@@ -39,6 +39,8 @@ _Input enabled on Serial port 1 of a Zebra VC80x; second serial port (disabled) 
 <img style="height:450px" src="DW_serial_04.png"/>
 _Tapping on a setting displays a dialog box for changing its value._
 <br>
+
+**Note: Serial port configuration is available only on devices running Android N and higher**. For prior versions, only the Enable/Disable options are available for serial ports.
 
 <!-- 
 DW_serial_04.png (baud rate)

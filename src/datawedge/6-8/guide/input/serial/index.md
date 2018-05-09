@@ -16,6 +16,7 @@ Serial Input options are used to specify communications parameters for a scanner
 -----
 
 ### Serial Port Configuration 
+**_Applies only to devices running Android N and higher_**.  
 
 <img style="height:450px" src="DW_serial_02.png"/>
 _Input enabled on Serial port 1 of a Zebra VC80x; second serial port (disabled) also shown._
@@ -46,6 +47,9 @@ DW_serial_05.png (data bits)
 DW_serial_06.png (parity) 
 DW_serial_07.png (stop bits)
  -->
+**_Applies only to devices running Android N and higher_**.  
+
+**Note: Serial port configuration is available only on devices running Android N and higher**. For prior versions, only the Enable/Disable options are available for serial ports.
 
 For more information about required serial communication settings, please refer to documentation that accompanied the peripheral being connected.
 

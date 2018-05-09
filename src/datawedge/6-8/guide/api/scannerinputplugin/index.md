@@ -9,6 +9,12 @@ productversion: '6.8'
 
 Used to enable/disable the scanner Plug-in being used by the currently active Profile. Disabling the scanner Plug-in effectively disables scanning in that Profile, regardless of whether the Profile is associated with an app. **This API changes only the runtime status of the scanner; it does not make persistent changes to the Profile**. 
 
+**<u>Zebra Recommends</u>**: **checking the status of the current scanner and confirming the name of the active Profile <u>before</u> using this intent to enable or disable the scanner**. Commands to enable or disable a scanner must be sent to the correct Profile, and only when required to change the scanner status. 
+
+<!-- 
+1. once approved, propogate note to 6.7
+2. note should reference get_active_profile and get_scanner_status APIs, but the latter was never documented.
+ -->
 > **Functional only when Barcode Input is enabled in the active Profile**. 
 
 ### Function Prototype

@@ -6,14 +6,19 @@ productversion: '6.8'
 ---
 
 ## SET_CONFIG
+Used to create, update or replace a DataWedge Profile and its settings, and can configure multiple Plug-ins with a single intent action. 
 
-Introduced in DataWedge 6.4.
+**Note**: This API contains [nested bundles](../overview/#nestedbundles). 
 
-Used to create, update or replace a DataWedge Profile and its settings. In DataWedge 6.6 and higher, this API also can be used to configure multiple Plug-ins with a single intent action. Beginning with DataWedge 6.7, the behavior of inter-character delay is enhanced. See the [Keystroke Output guide](../../output/keystroke) for more information.  
+To create a Profile without configuring its settings parameters, use [CREATE_PROFILE](../createprofile).
 
-This API contains [nested bundles](../overview/#nestedbundles). 
-
-To create a Profile without configuring its settings parameters, see [CREATE_PROFILE](../createprofile).
+### Version History
+* **DataWedge 6.4 -** SET_CONFIG API introduced
+* **DataWedge 6.6 -** Added support for configuring multiple Plug-ins
+* **DataWedge 6.7 -** Enhanced inter-character delay feature [(More info)](../../output/keystroke/#keystrokeoutputsetup)
+* **DataWedge 6.8 -** Support for ADF settings: 
+ * **New ADF_RULE bundle** with Action, Device, Decoder and Label_ID sub-bundles
+ * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
 
 ### Function Prototype
 
@@ -42,42 +47,48 @@ The main `SET_CONFIG` bundle includes the following properties:
 * **APP_LIST** [Array]: List of applications and/or activities to associate with the Profile
 
 #### PLUGIN_CONFIG BUNDLE
-The PLUGIN_CONFIG bundle is configured using the following properties:
+The `PLUGIN_CONFIG` bundle is configured using the following properties:
 
 **RESET_CONFIG** [String]: Optional
   * True (Default) – Clear any existing configuration and create a new configuration with the specified parameter values  
   * False – Update the existing values and add values not already in the configuration
 
-**PLUGIN_NAME** [String]: Name of the Plug-in to configure. See tables below for `PARAM_LIST` values. 
-
+**PLUGIN_NAME** [String]: Name of the Plug-in to configure:
  * **BARCODE** input
  * **INTENT** output
  * **KEYSTROKE** output
  * **BDF** (basic data formatting) processing
+ * **ADF** (advanced data formatting) processing
 
-<!-- 
-To be implemented in the future: 
-  * ADF (advanced data formatting) processing 
-  * DCP input
-  * IP output
-  * MSR input
-  * SIMULSCAN input 
-
- -->
- **Notes**: 
+**Notes**: 
 * Plug-in names are case sensitive.
 * For DataWedge 6.5 and below, each intent involving a Plug-in requires a separate intent Action.
+* See tables below for `PARAM_LIST` values. 
 
-**PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters that should be updated under the specified Plug-in. Setting an empty string in any parameter value resets that parameter to its default setting. 
+**PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters to be updated under the specified Plug-in. Setting an empty string in any parameter value resets that parameter to its default setting. 
 
 #### PARAM_LIST BUNDLE
 The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the table below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
 
-* **BARCODE –** takes a value from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
+* **BARCODE –** takes a value from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
 
- `scanner_selection_by_identifier` [string]- takes a value from the list of [Scanner Identifiers](#scanneridentifiers) below
+ `scanner_selection_by_identifier` [string]- takes a value from the list of [Scanner Identifiers](#scanneridentifiers) below.
 
-* **BDF -** Applies Basic Data Formatting rules to the acquired data. 
+* **INTENT -** takes values as indicated below: 
+
+ `intent_output_enabled` [string]- true/false
+
+ `intent_action` [string]
+
+ `intent_category` [string] 
+
+ `intent_delivery` [string]- Use "0" for Start Activity, "1" for Start Service, "2" for Broadcast
+
+<!-- `intent_flag_receiver_foreground` [string] &lt;true/false&gt; -->
+
+* **KEYSTROKE -** takes a value from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
+
+* **BDF -** Applies Basic Data Formatting rules to the acquired data. Takes values: 
 
  `bdf_enabled` [string]- true/false
 
@@ -93,19 +104,151 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 
  `bdf_send_enter` [string]- true/false
 
-* **INTENT -** Use values as indicated below: 
+* **ADF -** Applies Advanced Data Formatting rules to the acquired data. Takes values:
 
- `intent_output_enabled` [string]- true/false
+ `adf_enabled` [string] – true/false (default=false)
 
- `intent_action` [string]
+ `ADF_RULE` [bundle] - Takes values:
 
- `intent_category` [string] 
+	* `name` [string] – Name of the ADF rule to use
+	* `enabled` [string] –  Rule enabled; true/false (default=true)
+	* `string` [string] – String to check for (default=empty string)
+	* `string_pos` [string] – String position (default=0)
+	* `string_len` [string] -  String length (default=0)
+	* `ACTIONS` [bundle] - takes value(s) from the [Actions table](#actions) below; specify Actions as `EXTRA_DATA` in the `ACTION` nested bundle.
+	* `DEVICE` [bundle] - takes values		
+		* the other
+	* DECODER
+	* LABEL_ID
 
- `intent_delivery` [string]- Use "0" for Start Activity, "1" for Start Service, "2" for Broadcast
+ `alldevices` [string] - Accept data from all supported input sources or not
+ 
+ `type` [string] –Name of the action (Ex: Remove characters)
+ 
+ `device_id` [string] – Name of the input source
+ 
+ `enabled` [string] – Accept data from this source or not
+ 
+ `alldecoders` [string] – Allow all barcode symbologies
+ 
+ `all_label_ids` [string] – Allow all UDI label IDs
+ 
+ `decoder` [string] – Name of the decoder
+ 
+ `label_id` [string] – Name of the label id
 
-<!-- `intent_flag_receiver_foreground` [string] &lt;true/false&gt; -->
+DEVICES
+device_id i.e. BARCODE, MSR, SIMULSCAN 
+enabled true/false(default-true)
+alldecoders true/false(default-true)
+all_label_ids true/false(default-true)
 
-* **KEYSTROKE -** takes a value from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
+DECODERS
+device_id i.e. BARCODE
+decoder i.e. Australian Postal
+enabled true/false (default=true)
+
+LABEL IDS
+device_id i.e. BARCODE
+label_id i.e. UDI_GS1
+enabled true/false (default=true)
+
+
+### ACTIONS
+
+SKIP_AHEAD
+action_param_1 – number of characters (default - 1)
+
+SKIP_BACK
+action_param_1 – number of characters (default - 1)
+
+SKIP_TO_START
+None
+
+SEND_NEXT
+action_param_1 – number of characters (default - 0)
+
+SEND_UP_TO
+action_param_1 – string to search for (default - empty)
+
+SEND_REMAINING*
+None
+
+DELAY
+action_param_1 – number of milliseconds (default - 0)
+(max – 120000 ms)
+
+MOVE_AHEAD_TO
+action_param_1 – string to search for (default - empty)
+
+MOVE_PAST_A
+action_param_1 – string to search for (default - empty)
+
+REMOVE_SPACES
+None
+
+STOP_REMOVE_SPACES
+None
+
+CRUNCH_SPACES
+None
+
+STOP_CRUNCH_SPACE
+None
+
+TRIM_LEFT_ZEROS
+None
+(Remove leading zeros)
+
+STOP_TRIM_LEFT_ZEROS
+None
+
+PAD_LEFT_ZEROS
+action_param_1 – number of zeros (default - 0)
+
+STOP_PAD_LEFT_ZEROS
+None
+
+PAD_LEFT_SPACES
+action_param_1 – number of spaces (default - 0)
+
+STOP_PAD_LEFT_SPACES
+None
+
+REPLACE_STRING
+action_param_1 – string to search for (default - empty)
+action_param_2 – string to replace with (default - empty)
+
+STOP_REPLACE_ALL
+None
+
+SEND_STRING
+action_param_1 – string to search for (default - empty)
+
+SEND_CHAR
+action_param_1 – ASCII/ Unicode character (default – 32 space)
+Comments:
+Maximum Unicode character value can be entered is U-10FFFF (= 1114111 in decimal).
+
+
+REMOVE_CHARACTERS
+action_param_1 – 0,1,2,3 (default - 0)
+action_param_2 – start position number (default - 0)
+action_param_3 – number of characters (default - 0)
+Comments: 
+action_param_1 – 0 front, 1 - in between, 2 – end, 3 – center.
+action_param_2 is applicable if action_param_1 is 1 (in between).
+
+
+STOP_REMOVE_CHARS 
+None
+
+
+**Important Notes**:
+
+* **A default rule is created** if a created Profile contains no rules.
+* **Default rule values are used** if values in the bundle are empty or invalid.
+* **To update any existing action(s) in a rule**, all action parameters in the original rule must be sent.
 
 #### APP_LIST
 An array of bundles that contains a set of `PACKAGE_NAMES` and an `ACTIVITY_LIST` to be associated with the Profile. 

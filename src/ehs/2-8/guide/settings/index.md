@@ -358,7 +358,11 @@ Specifies the apps to be listed in the Tools menu of Admin and User Modes. <b>No
 ### Passwords
 Stores the encrypted password for logging into Admin Mode (blank by default). <b><u>Do not populate this tag manually</u> in the config file or edit in any way</b>. The administrator password is stored here programmatically by EHS after being entered or changed through the Tools menu in EHS Admin Mode. EHS uses this tag to store the password as a 256-bit AES-encrypted hash. Once a password is created and stored in the config file, it can be mass-deployed along with all other settings.
 
->EHS 2.8 (and higher) implements a more secure encryption method than prior versions.<br> **See Important Notes below**. 
+##### Important Password Encryption Notes: 
+* **EHS 2.8 (and higher) implements a more secure encryption method** than prior versions. 
+* **EHS 2.8 is backward-compatible** with passwords stored in config files of older EHS versions.
+* **After EHS 2.8 accesses a password from a prior version**, it stores that password in the config file using the new encryption method. 
+* **Once a config file is updated using the new encryption**, that file is no longer compatible with older EHS versions. 
 
 <img alt="" style="height:350px" src="admin_password.png"/>
 _The admin password <b><u>must</u></b> be entered and changed using the Admin Tools menu in the EHS GUI_. 
@@ -370,14 +374,8 @@ _The admin password <b><u>must</u></b> be entered and changed using the Admin To
 #### Example
 
     <passwords>
-        <admin></admin>
+        <admin>EHS USE ONLY</admin>
     </passwords>
-
-**Important Password Encryption Notes**:
-
-* **EHS 2.8 is backward-compatible with passwords** stored in configuration of older EHS versions.
-* **After EHS 2.8 accesses an Admin password from a prior version**, it stores that password in the config file using the new encryption method. 
-* **Once a config file is updated using the new encryption**, that file is no longer compatible with older EHS versions. 
 
 ------
 
@@ -481,7 +479,7 @@ Allows (dynamic) information that uniquely identifies the device to be displayed
 ### Title Bar Icon Disabled
 Controls whether an icon is displayed in the Title Bar of the EHS home screen. **A value of 0 (false) allows EHS to display a custom icon**. 
 
-<img alt="" style="height:350px" src="title_bar_2.png"/>
+<img alt="" style="height:350px" src="ehs28_title_icon_panels.png"/>
 
 <b>Possible values</b>:
 
@@ -547,7 +545,7 @@ Optionally designates the custom graphic specified using the [Title Bar Icon Fil
     </preferences>
 
 
-**Note: To hide a custom icon from the EHS screens effected by this tag, set the tag value to "0."** The "Title Bar Icon Disabled" tag applies only to the home screen. 
+**Note: To hide a custom icon from the EHS screens effected by this tag (and display the default EHS logo instead), set the tag value to "0."** The "Title Bar Icon Disabled" tag applies only to the home screen. 
 
 ------
 
@@ -724,7 +722,7 @@ _**Stretching enabled** with custom wallpaper image_:
 ------
 
 ### Fullscreen
-EHS can be made to run in full-screen mode by setting the value of this tag to 1. Default is 0. Applies only to EHS; apps launched from within EHS behave as individually designed. Does not prevent access to the Android Status/Notification Bar on some devices. See [Disable Status Bar Settings](#disablestatusbarsettings) to prevent user access to this feature in EHS. 
+EHS can be made to run in full-screen mode by setting the value of this tag to 1. Default is 0. Applies only to EHS; apps launched from within EHS behave as individually designed. Does not prevent access to the Android Status/Notification Bar on some devices.  
 
 <img alt="" style="height:350px" src="fullscreen.png"/>
 
@@ -838,7 +836,7 @@ Controls whether EHS will trigger an automatic device reboot when a setting that
 ------
 
 ### Reboot on Install Enabled
-Controls whether the device will automatically reboot when EHS is launched for the first time after a successful installation, a requirement to activate EHS. Permits Mobile Device Management (MDM) systems to maintain device control following installation. Automatic device reboot is disabled by default. <b>Note: When enabled, this tag will override any setting of the [&lt;exit_instead_of_reboot&gt;](#exitinsteadofreboot) tag</b>. 
+Controls whether the device will automatically reboot when EHS is launched for the first time after a successful installation, a requirement to activate EHS. Permits Mobile Device Management (MDM) systems to maintain device control following installation. Automatic device reboot is disabled by default.
 
 <b>Possible values</b>:
 
@@ -875,9 +873,7 @@ Controls whether the device can be put into "airplane mode" from the Power menu 
 Controls whether the Keyguard screen (also known as the "Lock Screen") is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag will enable the Keyguard. 
 
 **Notes** 
-
 * **On devices running Android L**, the Bypass Keyguard feature fails to unlock the screen after rebooting the device.
-
 * **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent display of the multi-user login screen. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
 <img alt="" style="height:350px" src="keyguard.png"/>
@@ -914,7 +910,7 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 * **To prevent use of the camera**, Zebra recommends using this tag _and_ removing the camera app from the User Mode screen.  
 * **If no camera shortcut exists on the device lock screen**, use of this tag is not required. 
 * **Display of the camera app icon on the Admin home screen can be delayed** by as much as five seconds after unlocking the screen following a configuration change. 
-* **On some devices running Nougat, disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. This occurs if the device is rebooted from the lock screen. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
+* **On some devices running Nougat (except TC20/TC25), disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
 
 <!-- 5/1/18- issue fixed, section removed per eng. 
 
@@ -991,7 +987,9 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 **IMPORTANT**:
 * **To prevent use of search**, Zebra recommends using this tag _and_ removing the search app from the User Mode screen.  
-* **Display of the camera app icon on the Admin home screen can be delayed** by as much as five seconds after unlocking the screen following a configuration change. 
+* **Display of the camera app icon on the Admin home screen can be delayed** by as much as five seconds after unlocking the screen following a configuration change.
+* **If no search shortcut exists on the device lock screen**, use of this tag is not required.  
+* **On some devices running Nougat (except TC20/TC25), disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
 
 <!-- 5/1/18- issue fixed, section removed per eng. 
 **Note**: Disabling access to the search app from the lock screen also disables it from the User-Mode screen on some devices, even if search is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Search Usage section below. 

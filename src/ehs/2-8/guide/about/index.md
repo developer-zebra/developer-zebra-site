@@ -31,7 +31,6 @@ Selecting "Always" locks EHS in as the default home app and **locks users out of
 * Access to the file system
 * Keyguard (for unlocking the screen)
 * Keyguard-screen camera and search functions
-* The status-bar Settings icon  
 * Full access to the System Settings panel  
 
 Administrators can grant or restrict access to individual features or hide the settings panel entirely. 

@@ -17,6 +17,7 @@ EKB 1.7 <u>comes pre-installed</u> on the following Zebra Android devices runnin
  * **TC70x**
  * **TC75x**
  * **VC80x**
+ * **WT6000**
 
 **Note: For Nougat devices not listed above** and/or that do not have EKB pre-installed, see ["How to Download"](#howtodownload) below. 
 

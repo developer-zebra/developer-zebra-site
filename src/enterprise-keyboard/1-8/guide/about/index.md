@@ -37,25 +37,9 @@ This version of Enterprise Keyboard includes the following languages:
 
 -----
 
-## New in v1.7
+## New in v1.8
 
-**Enterprise Keyboard 1.7 comes pre-installed on Zebra devices running Android 7.x Nougat and higher**. 
 
-### Supported Devices
-
-EKB 1.7 is certified on the following Zebra devices running Android 7.x Nougat:
-
- * **MC33**
- * **TC51**
- * **TC51 Healthcare**
- * **TC56**
- * **TC56 Healthcare**
- * **TC70x**
- * **TC75x**
- * **VC80x**
- * **WT6000**
-
-For more information and device options, see the [download page](../../download).
 
 -----
 
@@ -110,6 +94,28 @@ _Stock Android keyboard_:
 -----
 
 ## Version History
+
+### Added in v1.7
+
+**Enterprise Keyboard 1.7 comes pre-installed on Zebra devices running Android 7.x Nougat and higher**. 
+
+### Supported Devices
+
+EKB 1.7 is certified on the following Zebra devices running Android 7.x Nougat:
+
+ * **MC33**
+ * **TC51**
+ * **TC51 Healthcare**
+ * **TC56**
+ * **TC56 Healthcare**
+ * **TC70x**
+ * **TC75x**
+ * **VC80x**
+ * **WT6000**
+
+For more information and device options, see the [download page](../../download).
+
+-----
 
 ### Added in v1.6
 

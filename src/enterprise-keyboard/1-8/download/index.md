@@ -7,7 +7,7 @@ productversion: '1.8'
 
 ### Supported Devices
 
-EKB 1.7 <u>comes pre-installed</u> on the following Zebra Android devices running Android 7.x Nougat: 
+EKB 1.8 <u>comes pre-installed</u> on the following Zebra Android devices running Android 7.x Nougat: 
 
  * **MC33**
  * **TC51**

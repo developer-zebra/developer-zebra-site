@@ -39,7 +39,12 @@ This version of Enterprise Keyboard includes the following languages:
 
 ## New in v1.8
 
+* **Symbol Key P1 can be remapped** to any key value or to invoke an alternate key layout.
+* **Suggestion bar remains visible** whenever voice input key is enabled.
 
+#### Discontinued Features
+
+* **Personalized suggestion and Next Word suggestion features have been removed**.
 
 -----
 

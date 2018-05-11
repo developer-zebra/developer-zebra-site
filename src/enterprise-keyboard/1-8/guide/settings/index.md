@@ -122,7 +122,7 @@ The Preferences section controls keypress feedback, default layout and tab selec
 * On GMS devices, if voice is enabled and the next-word suggestions feature is disabled, a blank suggestion bar will appear over the tab bar when words are being suggested.
 * If the `TYPE_TEXT_FLAG_NO_SUGGESTIONS` input type is enabled, neither the tab bar nor the suggestion bar will appear. [More about Android input types](https://developer.android.com/reference/android/text/InputType.html).
 * Enabling the Symbol tab disables remapping of the Numeric P3 key.
-* Enabling the Alpha tab disables remapping of the Numeric P4 key.
+* Enabling the Alphanumeric tab disables remapping of the Numeric P4 and Symbol P1 keys.
 * Enabling the Numeric tab disables remapping of the Alphanumeric P1 key.
 * Navigation and Tab configuration features are supported only on devices with MX 7.1 and higher.
 
@@ -240,13 +240,16 @@ Tap on a setting to bring up a panel for adjusting that setting:
 ------
 
 ### Remapping Keys
-Enterprise Keyboard designates five keys as user-programmable: one in the alpha-key layout and four in the numerical layout. The Remapping panel shows the current character and Unicode mappings for each key. The images below show default settings, including the Alpha P1 key mapped to display the EMOJI panel. 
+Enterprise Keyboard designates certain keys as user-programmable: one in the alphanumeric layout, four in the numerical layout and one in the symbol key layout. The Remapping panel shows the current character and Unicode mappings for each key. The images below show default settings, including the alphanumeric and symbol P1 keys mapped to the EMOJI panel. 
 
-One key can be remapped in the alpha-key layout: 
+One key can be remapped in the alphanumeric layout: 
 <img alt="" style="height:150px" src="keyboard_alone.png"/>
 
 Four keys can be remapped in the numerical layout: 
 <img alt="" style="height:150px" src="keyboard_numerical.png"/>
+
+One key can be remapped in the symbol layout: 
+<img alt="" style="height:150px" src="EKB_symbol_layout.png"/>
 
 Remapping panel shows current settings of remappable keys: 
 <img alt="" style="height:350px" src="pref_remap.png"/>

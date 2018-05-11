@@ -15,7 +15,7 @@ Used to specify a character, UNICODE value or EMOJI selection panel for substitu
 
 **Notes**: 
 
-* Enabling the Numeric tab disables remapping of the Symbol P1 key.
+* Enabling the Alphanumeric tab disables remapping of the Symbol P1 key.
 * Remapping of this key is disabled when "Keys" is selected as the [Navigation mode](#navigation-mode).
 
 **Parm input rules:**

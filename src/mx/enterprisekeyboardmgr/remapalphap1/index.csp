@@ -2,7 +2,7 @@
 csp: enterprisekeyboardmgr
 title: Remap Alpha Key P1
 type: parm
-order: 35
+order: 29
 mx: "6.0"
 devicetype: A
 parm:
@@ -23,6 +23,3 @@ Used to specify a character, UNICODE value or EMOJI selection panel for substitu
 * A string from 0&ndash;8 characters
 * A UNICODE value (\uXXXXXX) corresponding to the desired key
 * The actual character to be substituted
-
-3. Remap Alpha Key P1
-Note: Enabling the Numeric tab disables remapping of the Alphanumeric P1 key. Remapping of this key also is disabled when "Keys" is selected as the Navigation mode ---- This is possible only when user is in "keys" Navigationmode  AND also change 'Enabling the Numeric tab disables remapping of the Alphanumeric P1 key' sentence to 'Enabling the Numeric tab disables remapping of the Alphanumeric P1 and also Symbol P1 key'

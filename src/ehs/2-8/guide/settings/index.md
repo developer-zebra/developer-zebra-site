@@ -477,14 +477,14 @@ Allows (dynamic) information that uniquely identifies the device to be displayed
 ------
 
 ### Title Bar Icon Disabled
-Controls whether an icon is displayed in the Title Bar of the EHS home screen. **A value of 0 (false) allows EHS to display a custom icon**. 
+Controls whether an icon is displayed in the Title Bar of the EHS home screen. **A value of 0 (false) allows EHS to display the standard EHS icon or a custom icon specified in the [Title Bar Icon File parameter](#titlebariconfile) below**. 
 
 <img alt="" style="height:350px" src="ehs28_title_icon_panels.png"/>
 
 <b>Possible values</b>:
 
-* <b>1 - (disabled by default)</b>
-* 0 - enables custom icon
+* <b>1 - (default, no icon displayed)</b>
+* 0 - (displays EHS icon or icon specified [below](#titlebariconfile))
 
 #### Example
     <preferences>
@@ -502,7 +502,7 @@ Allows an image to be specified for display in the EHS Title Bar. **Supports .bm
 
 When selecting an image using the Preferences panel UI, use tap-navigation to locate the image in the device file system or specify the file name and path using the keyboard (required for restricted areas not visible to the file browser). 
 
-<img alt="" style="height:350px" src="title_bar_3.png"/>
+<img alt="" style="height:350px" src="ehs28_title_bar_icon_noarrow.png"/>
 
 <b>Possible values</b>:
 
@@ -987,7 +987,7 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 
 **IMPORTANT**:
 * **To prevent use of search**, Zebra recommends using this tag _and_ removing the search app from the User Mode screen.  
-* **Display of the camera app icon on the Admin home screen can be delayed** by as much as five seconds after unlocking the screen following a configuration change.
+* **Display of the search app icon on the Admin home screen can be delayed** by as much as five seconds after unlocking the screen following a configuration change.
 * **If no search shortcut exists on the device lock screen**, use of this tag is not required.  
 * **On some devices running Nougat (except TC20/TC25), disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
 

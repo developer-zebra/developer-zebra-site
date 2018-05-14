@@ -256,7 +256,7 @@ _One key can be remapped in the symbol layout_.
 <br>
 
 <img alt="" style="height:350px" src="EKB_18_remapping_panel.png"/>
-_The Remapping panel shows current settings of remappable keys_. 
+_The Remapping panel showing current settings of remappable keys; tap to edit_. 
 
 <br>
 

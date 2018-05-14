@@ -502,7 +502,7 @@ Allows an image to be specified for display in the EHS Title Bar. **Supports .bm
 
 When selecting an image using the Preferences panel UI, use tap-navigation to locate the image in the device file system or specify the file name and path using the keyboard (required for restricted areas not visible to the file browser). 
 
-<img alt="" style="height:350px" src="ehs28_title_bar_icon_noarrow.png"/>
+<img alt="" style="height:350px" src="ehs_28_titlebar_icon.png"/>
 
 <b>Possible values</b>:
 

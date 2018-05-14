@@ -260,9 +260,9 @@ _The Remapping panel shows current settings of remappable keys_.
 
 <br>
 
-#####Remap a key: 
+#####To remap a key: 
 
-&#49;. Bring up the Remapping panel and <b>tap on the key to be remapped</b>:
+&#49;. Tap EKB app > Remapping and <b>tap on the key to be remapped</b>:
 <img alt="" style="height:350px" src="remap.png"/>
 <br>
 

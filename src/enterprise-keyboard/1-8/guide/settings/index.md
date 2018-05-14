@@ -242,17 +242,22 @@ Tap on a setting to bring up a panel for adjusting that setting:
 ### Remapping Keys
 Enterprise Keyboard designates certain keys as user-programmable: one in the alphanumeric layout, four in the numerical layout and one in the symbol key layout. The Remapping panel shows the current character and Unicode mappings for each key. The images below show default settings, including the alphanumeric and symbol P1 keys mapped to the EMOJI panel. 
 
-One key can be remapped in the alphanumeric layout: 
+
 <img alt="" style="height:150px" src="keyboard_alone.png"/>
+_One key can be remapped in the alphanumeric layout_.
+<br> 
 
-Four keys can be remapped in the numerical layout: 
 <img alt="" style="height:150px" src="keyboard_numerical.png"/>
+_Four keys can be remapped in the numerical layout_. 
+<br>
 
-One key can be remapped in the symbol layout: 
 <img alt="" style="height:150px" src="EKB_symbol_layout.png"/>
+_One key can be remapped in the symbol layout_. 
+<br>
 
-Remapping panel shows current settings of remappable keys: 
-<img alt="" style="height:350px" src="pref_remap.png"/>
+<img alt="" style="height:350px" src="EKB_18_remapping_panel.png"/>
+_The Remapping panel shows current settings of remappable keys_. 
+
 <br>
 
 #####Remap a key: 

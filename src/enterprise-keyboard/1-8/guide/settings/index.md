@@ -158,7 +158,8 @@ The Personal Dictionary can be used to store industry-specific terms and their a
 
 <b>Notes</b>:
 
-* Terms can be added to the Personal Dictionary one at a time or in bulk. 
+* Terms can be added to the Personal Dictionary one at a time or in bulk.
+* For bulk loading, see StageNow's [Personal Dictionary Manager](/stagenow/latest/csp/personaldictionary/). 
 * There is no set limit on the length of terms and phrases that can be entered into the Personal Dictionary.
 * When displayed, longer terms and phrases might be injected with an ellipsis (...) in the correction bar. 
 * Spelling corrections do not appear with all field types.  
@@ -192,6 +193,8 @@ Press the spacebar to accept the highlighted word (which in this case is "Gerd")
 <br>
 
 **Note**: To maximize screen space for apps, the spelling Correction Bar shares space with the keypad Navigation Tab bar. The nav bar fades out temporarily when corrections are displayed.
+
+> For bulk loading, see [Personal Dictionary Manager](/stagenow/latest/csp/personaldictionary/). 
 
 #####Edit or delete a term: 
 

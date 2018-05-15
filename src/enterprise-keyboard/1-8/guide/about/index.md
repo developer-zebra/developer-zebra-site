@@ -44,7 +44,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 #### Discontinued Features
 
-* **Personalized suggestion and Next Word suggestion features have been removed**.
+* **Personalized suggestion and Next Word suggestion** features have been removed ([Text Correction](../settings/#textcorrection) and other Personal Dictionary features remain). 
 
 -----
 

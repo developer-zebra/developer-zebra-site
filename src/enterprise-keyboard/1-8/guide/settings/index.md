@@ -9,7 +9,7 @@ productversion: '1.8'
 
 Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing long-press characters and swiping to switch key layouts. 
 
-Enterprise Keyboard uses Android's Personal dictionary feature for spelling corrections and shortcut substitutions, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Terms can saved and mass-deployed using Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools.
+Enterprise Keyboard uses Android's Personal Dictionary feature for spelling corrections and shortcut substitutions, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Terms can saved and mass-deployed using Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools.
 
 ## Customizing Keyboard Settings
 
@@ -150,27 +150,27 @@ Text Correction controls automatic corrections to typed text based the predefine
 
 -----
 
-#### Personal dictionary
-The Personal dictionary can be used to store terms specific to a particular industry to help improve the speed and accuracy of keyboard input. For example, if configured for a medical device, the acronym "gerd" could be added as a shortcut and replaced with "gastroesophageal reflux disease" whenever it was typed.
+#### Personal Dictionary
+The Personal Dictionary can be used to store industry-specific terms and their abbreviations to help improve the speed and accuracy of keyboard input. For example, if configured for a medical device, the acronym "gerd" could be added as a shortcut and replaced with "gastroesophageal reflux disease" whenever it was typed.
 
 <img alt="" style="height:350px" src="pref_text_1.png"/>
 <br>
 
 <b>Notes</b>:
 
-* Terms must be added to the Personal dictionary one at a time. 
-* There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
+* Terms can be added to the Personal Dictionary one at a time or in bulk. 
+* There is no set limit on the length of terms and phrases that can be entered into the Personal Dictionary.
 * When displayed, longer terms and phrases might be injected with an ellipsis (...) in the correction bar. 
 * Spelling corrections do not appear with all field types.  
-* For mass deployment, the Personal dictionary must be populated beforehand using Zebra's [StageNow](../../../../) tool. 
+* For mass deployment, the Personal Dictionary must be populated beforehand using Zebra's [StageNow](../../../../) tool. 
 
-#####Add a term to the Personal dictionary: 
+#####Add a term to the Personal Dictionary: 
 
 &#49;. <b>Tap "Personal dictionary"</b> in the Text correction Preference panel: 
 <img alt="" style="height:350px" src="personal_dic.png"/>
 <br>
 
-&#50;. <b>Tap the language</b> with which to associate the personal term(s). Select "For all languages" to display Personal dictionary terms with every language pack:  
+&#50;. <b>Tap the language</b> with which to associate the personal term(s). Select "For all languages" to display Personal Dictionary terms with every language pack:  
 <img alt="" style="height:350px" src="pref_dic.png"/>
 <br>
 

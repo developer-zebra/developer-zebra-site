@@ -9,7 +9,7 @@ productversion: '1.8'
 
 Enterprise Keyboard builds on the stock Android keyboard to provide a more effective means of inputting data into Zebra devices. The Zebra keyboard permits quick switching between languages, can to scan directly from the keyboard to collect data, and can set keys to perform specific tasks. It also implements finger-flicks for typing long-press characters and swiping to switch key layouts. 
 
-Enterprise Keyboard uses Android's Personal dictionary feature for spelling suggestions and corrections, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Terms can saved and mass-deployed using Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools.
+Enterprise Keyboard uses Android's Personal dictionary feature for spelling corrections and shortcut substitutions, giving it the ability to store industry-specific terms to help improve speed and accuracy of keyboard input. Terms can saved and mass-deployed using Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools.
 
 ## Customizing Keyboard Settings
 
@@ -102,7 +102,7 @@ The Preferences section controls keypress feedback, default layout and tab selec
  -->
 
 ##### On devices with MX 7.1 and higher only: 
-* <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar will be visible at all times except when next-word suggestions (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
+* <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar is visible at all times except spelling corrections (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
 
 <!-- 
 <img alt="" style="height:350px" src="ekb1.6_prefs.png"/>
@@ -129,7 +129,7 @@ The Preferences section controls keypress feedback, default layout and tab selec
 ------
 
 ### Text Correction
-Text Correction controls automatic corrections to typed text based the predefined parameters explained below. In addition, the Personal dictionary feature allows a list of custom or industry-specific terms to be stored and presented as spelling suggestions along with those of the selected language(s).
+Text Correction controls automatic corrections to typed text based the predefined parameters explained below. This functionality is provided by the Personal Dictionary, which also permits lists of custom or industry-specific terms and shortcuts (abbreviations) to be loaded into a device and presented as substitution suggestions along with those of the selected language(s).
 
 <img alt="" style="height:350px" src="pref_text_2.png"/>
 <br>
@@ -160,8 +160,8 @@ The Personal dictionary can be used to store terms specific to a particular indu
 
 * Terms must be added to the Personal dictionary one at a time. 
 * There is no set limit on the length of terms and phrases that can be entered into the Personal dictionary.
-* When displayed, longer terms and phrases might be injected with an ellipsis (...) in the suggestion bar. 
-* Spelling suggestions do not appear with all field types.  
+* When displayed, longer terms and phrases might be injected with an ellipsis (...) in the correction bar. 
+* Spelling corrections do not appear with all field types.  
 * For mass deployment, the Personal dictionary must be populated beforehand using Zebra's [StageNow](../../../../) tool. 
 
 #####Add a term to the Personal dictionary: 
@@ -191,7 +191,7 @@ When a shortcut is typed as input, its associated term will appear in a list of 
 Press the spacebar to accept the highlighted word (which in this case is "Gerd") or tap the desired word or phrase to insert it. 
 <br>
 
-**Note**: To maximize screen space for apps, the spelling Suggestion Bar shares space with the keypad Navigation Tab bar. The nav bar fades out temporarily when suggestions are available.
+**Note**: To maximize screen space for apps, the spelling Correction Bar shares space with the keypad Navigation Tab bar. The nav bar fades out temporarily when corrections are displayed.
 
 #####Edit or delete a term: 
 
@@ -204,7 +204,7 @@ Press the spacebar to accept the highlighted word (which in this case is "Gerd")
 <br>
 
 #### Add-on dictionaries
-Add-on dictionaries contain predefined word corrections and suggested words for each language installed on the device. <!--As Enterprise Keyboard is used, it stores new words and patterns of frequently used words and phrases so that its word suggestions can improve over time.Those words and patterns are appended to the Add-on dictionaries according to language in use by the keyboard at the time the pattern was identified. -->From this panel, user actions are limited to viewing the list of installed Add-on dictionaries and deleting/reinstalling them. No further actions are permitted. 
+Add-on dictionaries contain predefined word corrections for each language installed on the device. <!--As Enterprise Keyboard is used, it stores new words and patterns of frequently used words and phrases so that its word suggestions can improve over time.Those words and patterns are appended to the Add-on dictionaries according to language in use by the keyboard at the time the pattern was identified. -->From this panel, user actions are limited to viewing the list of installed Add-on dictionaries and deleting/reinstalling them. No further actions are permitted. 
 
 <img alt="" style="height:350px" src="pref_dic_addon_1.png"/>
 <!--

@@ -19,7 +19,7 @@ Enterprise Keyboard (1.1 and higher) can be configured in the following ways:
 
 -----
 
-**Enterprise Keyboard makes use of the Android Personal Dictionary for spelling suggestions and corrections**, and permits the dictionary to be easily populated with industry-specific terms to help improve the speed and accuracy of keyboard input. A custom dictionary can be populated in bulk and mass-deployed through Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools. 
+**Enterprise Keyboard makes use of the Android Personal Dictionary for spelling corrections and shortcut substitutions**, and permits the dictionary to be easily populated with industry-specific terms to help improve the speed and accuracy of keyboard input. A custom dictionary can be populated in bulk and mass-deployed through Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools. 
 
 This version of Enterprise Keyboard includes the following languages: 
 
@@ -53,15 +53,17 @@ All versions of Enterprise Keyboard offer these other unique capabilities to hel
 
 <b>Switch layouts with taps or swipes</b> across the keypad:  
 <img alt="" style="height:350px" src="sample_1.png"/>
-_The Tab bar automatically hides away when spelling suggestions appear, maximizing screen space for applications_. 
+_The Tab bar can be set to automatically hide away, maximizing screen space for applications_. 
 <br>
 
 <b>Scan directly with the Barcode tab</b> to collect data where and when it's needed:
 <img alt="" style="height:350px" src="sample_5.png"/>
+_The scan tab displays a scanner button for in-app data acquisition from barcode(s)_.
 <br>
 
 <b>Input long-press characters with a finger-flick</b> of the main key:
 <img alt="" style="height:350px" src="emailAddress.png"/>
+_High-contrast key colors are visible in all lighting conditions_. 
 <br>
 
 <!--
@@ -126,7 +128,7 @@ For more information and device options, see the [download page](../../download)
 
 New settings in the [Preferences panel](../settings/#preferences): 
 
-* <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar will be visible at all times except when next-word suggestions (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout.
+* <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar is visible at all times except when word corrections (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout.
 
 * <b><u>Tab configuration</u></b> allows a user or administrator to enable or disable the numeric, alphanumeric, symbol and/or scan key-layout tab(s), hiding them from view and preventing display of the corresponding layout.
 

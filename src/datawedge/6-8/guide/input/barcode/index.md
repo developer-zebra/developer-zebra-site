@@ -40,24 +40,26 @@ The "Auto" option automatically determines the best scanning device from the lis
 * When the camera is selected, scanning is performed with the rear-facing camera.
 * When 2D Imager is selected, scanning is performed using the installed Scan or Scan/MSR module.
 
-#### Auto Switch to default on event
-This feature automatically changes the active scanner upon a Bluetooth scanner connection or disconnection. By default, this feature is disabled and can only be enabled when Scanner selection is set as “Auto”
+#### Auto Switch to Default on Event
 
-Enabling this feature will switch the scanner automatically upon a Bluetooth scanner connection or disconnection. By default, this feature is disabled and can only be enabled when Scanner selection is set as “Auto”
+This feature configures DataWedge to select a Bluetooth scanner as the default scanning device immediately upon connection and revert to another scanner when disconnected. If the device was not previously paired, a pairing barcode is displayed prior to automatic connection. **Disabled by default**. Available only when “Auto" is selected in the [Scanner selection panel](#scannerselection). 
+
+This feature is intended to help reduce scanning workflow interruptions when a Bluetooth scanner is introduced and/or it becomes disconnected by losing power or moving out of range. 
 
 <img style="height:350px" src="68_switch_on_event.png"/>
 *'Auto switch to default on event' is available only when 'Auto' is selected*. 
 <br>
 
+**Available Options**:
+
 * **Disabled -** No scanner switching occurs when a Bluetooth scanner is connected or disconnected (default).
-* **On connect -** Enabled scanner is switched to the external scanner upon connect if the newly connected scanner is the current default scanner. 
-(Ex: Connecting a Bluetooth scanner while scanning via Internal Imager, scanner will be switched to the Bluetooth scanner)
-* **On disconnect -** Enabled scanner is switched to the new default scanner when the current default scanner is disconnected.
-(Ex: Disconnect Bluetooth scanner while scanning, Scanner will be switched to internal scanner)
+* **On connect -** Selects a Bluetooth scanner as the default scanning device immediately upon connection. If the device was not previously paired, a pairing barcode is displayed, and the paired device is connected. 
+* **On disconnect -** When a Bluetooth scanner is disconnected, scanning reverts to the scanner set as the default prior to the wireless connection. This varies by host device, but is usually the scanner most recently used prior to the wireless connection. 
+* **On connect/disconnect -** Selects a Bluetooth scanner as the default scanning device immediately upon connection. Upon disconnection, reverts to the scanner set as the default prior to the wireless connection. 
 
-* **On connect/disconnect -** Enabled scanner is switched to the new default scanner if the current default scanner gets disconnected or the connected scanner is the new default scanner.
-
-
+**Notes**: 
+* On devices with only one built-in scanner or imager, "On disconnect" reverts to the built-in scanner or imager. 
+* On devices with more than one built-in scanner or imager, "On disconnect" reverts to the built-in scanner or imager set as the default prior to Bluetooth connection.
 
 ### Bluetooth Scanners
 DataWedge supports the following Zebra Bluetooth scanners: 
@@ -83,7 +85,7 @@ DataWedge supports the following Zebra USB SSI scanners:
 
 **Support notes**: 
 
-* The DS3608 scanner is supported only on VC80, ET50 and ET55 devices running Windows 
+* The DS3608 and LI3608 scanners are supported only on VC80, ET50 and ET55 devices running Android 
 * Scanner must be configured using Symbol Native API (SNAPI) with Imager Interface
 * SNAPI drivers are included with supported devices
 * The scanner connects via USB port and cable

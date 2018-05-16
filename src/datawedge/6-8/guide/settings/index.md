@@ -11,6 +11,7 @@ This guide covers settings for the DataWedge app, including enabling and disabli
 -----
 
 ## DataWedge Settings
+
 Most of the functionality referenced in this guide is accessed through the DataWedge Settings panel. 
 
 **To access DataWedge Settings**: 
@@ -21,29 +22,25 @@ _Access the DataWedge Settings panel from the Profiles screen_.
 <br>
 
 &#50;. **Tap the desired feature** to invoke it or change its state. 
-<img style="height:350px" src="datawedge_settings_panel.png"/>
+<img style="height:350px" src="68_datawedge_settings_panel.png"/> <!-- datawedge_settings_panel.png -->
 _The DataWedge Settings panel_
 <br>
-
 **Functions of the DataWedge Settings panel**: 
 
 * **DataWedge enabled -** Controls the DataWedge service. Uncheck this box to disable DataWedge on the device and return control of scanning hardware to the system.
-
-* **Enable logging -** Enables DataWedge to output logs for viewing in Logcat, Android Studio or a compatible viewer.
-
+* **Enable logging -** Enables DataWedge to output logs for viewing with Logcat or in Android Studio or another compatible viewer.
+* **Ignore disabled profiles -** Prevents DataWedge from switching to a Profile that is disabled.  
 * **Disabled app list -** Disables scanning functions for selected apps and/or activities anywhere on the device. [See more](#disableapps). 
-
 * **Import -** Invokes navigation for importing a DataWedge Config file from device storage, replacing the current DataWedge settings. [See more](#importaconfig).
-
 * **Export -** Exports the current DataWedge configuration to device storage. [See more](#exportaconfig).
-
 * **Import Profile -** Invokes navigation for importing a DataWedge Profile from device storage. If a Profile of the same name already exists in DataWedge, settings of the existing Profile will be updated to match those of the imported file. [See more](#importaprofile).
-
 * **Export Profile -** Exports an individual DataWedge profile to device storage. [See more](#exportaprofile).
-
 * **Restore -** Returns DataWedge on the device to factory default settings. [See more](#restoredefaults).
 
+-----
+
 ### Logging
+
 DataWedge provides the option of outputting system log messages for viewing through the Logcat command line tool, Android Studio or another compatible viewer, usually over a USB connection. 
 
 **To Enable/Disable Logging**: 
@@ -52,7 +49,22 @@ From the DataWedge Settings panel, **tap Enable Logging** to enable or disable l
 <img style="height:350px" src="datawedge_logging.png"/>
 <br>
 
+-----
+
+### Ignore Disabled Profiles
+
+This feature prevents an app using the [SwitchToProfile API](../api/switchtoprofile) from switching to a Profile that is disabled. This can use useful, for example, for preventing an activity intended to disable from switching to a Profile that keeps the scanner enabled. Attempts to switch to a disabled scanner are ignored; no switch takes place.  
+
+> **To enable this feature, [Profile0](../overview/#profile0) must be disabled**. 
+
+From the DataWedge Settings panel, **tap Ignore disabled profiles** to enable or disable as desired:  
+<img style="height:350px" src="68_ignore_disabled_profiles.png"/>
+<br>
+
+-----
+
 ### Disable Apps
+
 DataWedge can prohibit certain apps from accessing its data capture services. This can be useful as a security measure to ensure that acquired data is sent only to approved apps, or simply as a means of controlling which apps will have access to the scanner. By default, all apps have access. 
 
 **To Disable Data Capture for an app**: 
@@ -72,7 +84,10 @@ A list appears showing all installed apps and packages, similar to the image bel
 * Disabling a parent package disables all of its activies.
 * A disabled activity **does not** disable the parent or its other activities. 
 
+-----
+
 ### Disable DataWedge
+
 **Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. 
 
 **To disable DataWedge**:
@@ -95,12 +110,15 @@ To learn how to access DataWedge programmatically, see the [DataWedge APIs](../a
 
 Once DataWedge is set up and configured as desired on a device, settings can be saved to a file and distributed to other devices either manually or using a Mobile Device Management (MDM) system. DataWedge 6.5 introduced improvements to the compatibility of exported Profiles. Profiles created with DataWedge 6.5 (or higher) will work on any Zebra device model running DataWedge 6.5 or higher. See [Export a Profile](#exportaprofile) for more information. 
 
+-----
+
 ### Export a Config
 Once DataWedge is set up and configured as desired on a device, its settings file can be exported, distributed to other devices, imported and activated automatically (or imported manually, as above). 
 
 **To Export a DataWedge Config file**: 
 
-&#49;. From the DataWedge Settings panel, **tap Export** as highlighted below. A screen appears similar to the one in Step 2. 
+&#49;. From the DataWedge Settings panel, **tap Export** as highlighted below. <br>
+A screen appears similar to the one in Step 2. 
 <img style="height:350px" src="datawedge_export_config.png"/>
 <br>
 

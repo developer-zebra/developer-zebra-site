@@ -35,16 +35,15 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 ## New in DataWedge 6.8
 
-* **Control scanner auto-switching behavior** after connect/disconnect events
+* **Control over scanner auto-switching behavior** after connecting and disconnecting external scanners
+* **Ignore switches to disabled Profiles** helps maintain full functionality at all times 
+* **Enhancements to automatic Profile importing** improve reliability and reduce required coding 
 
 Advanced string manipulation 
 Function key dispatch
 Support for Digimarc, LI3608 and 3678 scanners 
-Features for scanner presentation mode
 Updated Intent API (Set/Get ?)
-GB3212
-Ignore switches to disabled Profiles
-Updates to auto-import
+
 Press and Sustain aimtype?
 SimulScan API runtime param
 

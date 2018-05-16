@@ -40,11 +40,15 @@ The "Auto" option automatically determines the best scanning device from the lis
 * When the camera is selected, scanning is performed with the rear-facing camera.
 * When 2D Imager is selected, scanning is performed using the installed Scan or Scan/MSR module.
 
-#### Auto Switch to Default on Event
+-----
 
-This feature configures DataWedge to select a Bluetooth scanner as the default scanning device immediately upon connection and revert to another scanner when disconnected. If the device was not previously paired, a pairing barcode is displayed prior to automatic connection. **Disabled by default**. Available only when “Auto" is selected in the [Scanner selection panel](#scannerselection). 
+### Auto Switch to Default on Event
+
+This feature configures DataWedge to select an external scanner as the default scanning device immediately upon connection and revert to a built-in scanner when the external scanner is disconnected. External scanners include those connecting by Bluetooth, serial cable or snap-on module. **Disabled by default**. Available only when “Auto" is selected in the [Scanner selection panel](#scannerselection). 
 
 This feature is intended to help reduce scanning workflow interruptions when a Bluetooth scanner is introduced and/or it becomes disconnected by losing power or moving out of range. 
+
+For Bluetooth scanners, if the device was not previously paired, a pairing barcode is displayed prior to automatic connection. 
 
 <img style="height:350px" src="68_switch_on_event.png"/>
 *'Auto switch to default on event' is available only when 'Auto' is selected*. 
@@ -52,12 +56,14 @@ This feature is intended to help reduce scanning workflow interruptions when a B
 
 **Available Options**:
 
-* **Disabled -** No scanner switching occurs when a Bluetooth scanner is connected or disconnected (default).
-* **On connect -** Selects a Bluetooth scanner as the default scanning device immediately upon connection. If the device was not previously paired, a pairing barcode is displayed, and the paired device is connected. 
-* **On disconnect -** When a Bluetooth scanner is disconnected, scanning reverts to the scanner set as the default prior to the wireless connection. This varies by host device, but is usually the scanner most recently used prior to the wireless connection. 
-* **On connect/disconnect -** Selects a Bluetooth scanner as the default scanning device immediately upon connection. Upon disconnection, reverts to the scanner set as the default prior to the wireless connection. 
+* **Disabled -** No scanner switching occurs when an external scanner is connected or disconnected (default).
+* **On connect -** Selects the external scanner as the default scanning device immediately upon connection. 
+* **On disconnect -** Reverts to a built-in scanner based on its position in an internally managed scanner list (which varies by host device). This is usually the scanner most recently used prior to the external connection. 
+* **On connect/disconnect -** Selects a Bluetooth scanner as the default scanning device immediately upon connection. Upon disconnection, reverts to the scanner set as the default prior to the external connection. 
 
+   
 **Notes**: 
+* The system selects the default scanner based on the connection state and the scanner's position in an internally managed scanner list. If the newly connected scanner is lower in the scanner list than the one currently selected as the default scanner, the newly connected scanner becomes the default scanner.
 * On devices with only one built-in scanner or imager, "On disconnect" reverts to the built-in scanner or imager. 
 * On devices with more than one built-in scanner or imager, "On disconnect" reverts to the built-in scanner or imager set as the default prior to Bluetooth connection.
 

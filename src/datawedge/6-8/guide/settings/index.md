@@ -278,10 +278,10 @@ DataWedge supports remote deployment of Config files (`datawedge.db`) and Profil
 
 While DataWedge is running, it receives a system notification whenever a Config file or Profile is placed in the `/autoimport` folder and executes the same four functions. 
 
-**Notes**:
+#### Important Notes:
 * For the best experience, **Zebra strongly recommends that users be advised to <u>exit any DataWedge configuration UI screen</u>** before new Config files are remotely deployed. 
-* On devices running Android KitKat or later, the `/enterprise` folder cannot be seen with File Explorer or other user-level tools. Moving configuration files to and from the `/autoimport` or `/enterprisereset` folders must be done programmatically, with a staging client app or MDM.
-* DataWedge will attempt to consume any of the monitored “.db” files as soon the file name(s) appear in the `/autoimport` folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, Zebra recommends initially storing the file with an alternate extension (i.e. ".tmp") and changing the extension to .db once writing is complete. See sample code, below. 
+* **On devices running Android KitKat or later**, the `/enterprise` folder cannot be seen with File Explorer or other user-level tools. Moving configuration files to and from the `/autoimport` or `/enterprisereset` folders must be done programmatically, or with a staging client app or MDM.
+* **DataWedge versions prior to 6.8** attempt to consume any of the monitored “.db” files as soon the file name(s) appear in the `/autoimport` folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, **Zebra recommends initially storing the file with an alternate extension** (i.e. ".tmp") and changing the extension to .db once writing is complete. See sample code, below. 
 * **Zebra recommends applying explicit file permissions to the all .db files** so that DataWedge will not be impeded from any of its file procedures.
 
 -----
@@ -454,53 +454,69 @@ The following sample Java code can be modified to suit individual needs.
 
 		:::java
 		//NOTE: This Java code for demo purposes only; it should not be used without testing.
-	    
-	    InputStream fis = null;
-	    FileOutputStream fos = null;
-	    String autoImportDir = "/enterprise/device/settings/datawedge/autoimport/"
-	    String temporaryFileName = "datawedge.tmp";
-	    String finalFileName = "datawedge.db";
 
-	    // Open the db as the input stream
-	    fis = context.getAssets().open("datawedge.db");
-	    
-	    // create a File object for the parent directory
-	    File outputDirectory = new File(autoImportDir);
-	    
-	    // create a temporary File object for the output file
-	    File outputFile = new File(outputDirectory,temporaryFileName);
-	    File finalFile = new File(outputDirectory, finalFileName);
-	    
-	    // attach the OutputStream to the file object
-	    fos = new FileOutputStream(outputFile);
-	    
-	    // transfer bytes from the input file to the output file
-	    byte[] buffer = new byte[1024];
-	    int length;
-	    int tot = 0;
-	    while ((length = fis.read(buffer)) > 0) {
-	            fos.write(buffer, 0, length);
-	            tot+= length;
-	    }
-	    Log.d("DEMO",tot+" bytes copied");
-	    
-	    //flush the buffers
-	    fos.flush();
-	    
-	    //release resources
-	    try {
-	            fos.close();
-	    }catch (Exception e){
-	    }finally {
-	            fos = null;
-	            //set permission to the file to read, write and exec.
-	            outputFile.setExecutable(true, false);
-	            outputFile.setReadable(true, false);
-	            outputFile.setWritable(true, false);
-	            //rename the file
-	            outputFile.renameTo(finalFile);
-	    }
+        InputStream fis = null;
+        FileOutputStream fos = null;
+        String autoImportDir = "/enterprise/device/settings/datawedge/autoimport/";
+        String outputFileName = "datawedge.db";
 
+        try {
+            // Open the db as the input stream
+            fis = context.getAssets().open("datawedge.db");
+        }
+        catch (IOException ex)
+        {
+            Log.e("DEMO",ex.getMessage());
+        }
+
+        // create a File object for the parent directory
+        File outputDirectory = new File(autoImportDir);
+
+        // create a temporary File object for the output file
+        File outputFile = new File(outputDirectory,outputFileName);
+
+        // attach the OutputStream to the file object
+        try {
+            fos = new FileOutputStream(outputFile);
+        }catch (FileNotFoundException ex){
+            Log.e("DEMO",ex.getMessage());
+        }
+
+        // transfer bytes from the input file to the output file
+        byte[] buffer = new byte[1024];
+        int length;
+        int tot = 0;
+        try {
+            while ((length = fis.read(buffer)) > 0) {
+                fos.write(buffer, 0, length);
+                tot += length;
+            }
+        }
+        catch (IOException ex){
+            Log.e("DEMO",ex.getMessage());
+        }
+        Log.d("DEMO",tot+" bytes copied");
+
+        //flush the buffers
+        try {
+            fos.flush();
+        }
+        catch (IOException ex)
+        {
+            Log.e("DEMO",ex.getMessage());
+        }
+
+        //release resources
+        try {
+            fos.close();
+        }catch (Exception e){
+        }finally {
+            fos = null;
+            //set permission to the file to read, write and exec.
+            outputFile.setExecutable(true, false);
+            outputFile.setReadable(true, false);
+            outputFile.setWritable(true, false);
+        }
 
 -----
 

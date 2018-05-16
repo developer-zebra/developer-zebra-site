@@ -35,7 +35,8 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 ## New in DataWedge 6.8
 
-Scanner auto-switching on disconnect
+* **Control scanner auto-switching behavior** after connect/disconnect events
+
 Advanced string manipulation 
 Function key dispatch
 Support for Digimarc, LI3608 and 3678 scanners 

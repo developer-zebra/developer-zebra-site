@@ -38,7 +38,7 @@ _SimulScan standard templates (not all shown)_
 
 _The names of all Templates included with SimulScan are preceded by the word "Default" plus a hyphen_.
 
-Custom template XML files copied to the `/enterprise/device/settings/datawedge/templates` directory are added to the list above and available for selection. 
+**To add custom templates to the list above**, copy the template XML files to the `/enterprise/device/settings/datawedge/templates` directory. 
 
 **Note: Files and folders in the** `/enterprise` **directory are <u>invisible</u> to the Android File Browser**; they can be made visible in File Browser by manually inputting the path.
 

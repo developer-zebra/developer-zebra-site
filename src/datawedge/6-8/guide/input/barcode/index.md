@@ -58,14 +58,13 @@ For Bluetooth scanners, if the device was not previously paired, a pairing barco
 
 * **Disabled -** No scanner switching occurs when an external scanner is connected or disconnected (default).
 * **On connect -** Selects the external scanner as the default scanning device immediately upon connection. 
-* **On disconnect -** Reverts to a built-in scanner based on its position in an internally managed scanner list (which varies by host device). This is usually the scanner most recently used prior to the external connection. 
-* **On connect/disconnect -** Selects a Bluetooth scanner as the default scanning device immediately upon connection. Upon disconnection, reverts to the scanner set as the default prior to the external connection. 
+* **On disconnect -** Reverts to a built-in scanner based on its position in an internally managed scanner list (which varies by host device). This is usually the scanner most recently used prior to the external connection (see notes below). 
+* **On connect/disconnect -** Selects a Bluetooth scanner as the default scanning device immediately upon connection; reverts to a built-in scanner based on its position in an internally managed scanner list (which varies by host device). This is usually the scanner most recently used prior to the external connection (see notes below).
 
    
 **Notes**: 
 * The system selects the default scanner based on the connection state and the scanner's position in an internally managed scanner list. If the newly connected scanner is lower in the scanner list than the one currently selected as the default scanner, the newly connected scanner becomes the default scanner.
-* On devices with only one built-in scanner or imager, "On disconnect" reverts to the built-in scanner or imager. 
-* On devices with more than one built-in scanner or imager, "On disconnect" reverts to the built-in scanner or imager set as the default prior to Bluetooth connection.
+* On devices with only one built-in scanner or imager, "On disconnect" reverts to that built-in scanner or imager. 
 
 ### Bluetooth Scanners
 DataWedge supports the following Zebra Bluetooth scanners: 

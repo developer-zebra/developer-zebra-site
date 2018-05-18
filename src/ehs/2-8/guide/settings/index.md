@@ -1064,9 +1064,9 @@ Controls whether communication via USB is permitted between the device and a com
 ------
 
 ### System Settings Restricted
-Controls whether full or limited settings are available when the device is in User Mode. A setting of 1 (default) or if left unspecified will restrict user access to device settings. <b>A setting of 0 will permit user access to all device settings</b>.
+Controls whether full or limited settings are available when the device is in User Mode. A setting of 1 (default) or if left unspecified limits user access to Display and Sound settings and the "About phone" panel. <b>A setting of 0 permits user access to all device settings</b>.
 
-<img alt="" style="height:350px" src="settings_restrict.png"/>
+<img alt="" style="height:350px" src="settings_restricted_panels.png"/>
 
 <b>Possible values</b>:
 
@@ -1079,13 +1079,10 @@ Controls whether full or limited settings are available when the device is in Us
 
 **Notes and Warnings**: 
 
-* To make use of this setting, the **System settings app must be explicitly enabled in advance** using the [Enable/Disable Apps](#enabledisableapps) feature. 
-
-* This mode limits user access to certain features by preventing their **display** in the UI. **It does not block the features themselves**; in some situations, Android makes restricted settings available to the user. For example, if the charge in a device battery becomes critically low, Android provides access to apps in the low battery warning display so they may be stopped, disabled or uninstalled. This can be prevented only by disabling the Settings app completely.
-
-* With System settings restricted, it is still possible to add shortcuts to restricted System-settings components (i.e. apps) using a third-party shortcut creator. However, such shortcuts also are available in User Mode. If a system setting component should be accessible only to administrators, it should not be mapped using a shortcut.
-
-* Uninstalling EHS will not revert Restricted System Settings to its original state. If required, this must be done manually before uninstalling EHS.
+* **The System settings app must be explicitly enabled in advance** to make use of this setting. See the [Enable/Disable Apps](#enabledisableapps) feature for more information. 
+* **This does not block Settings features**, but only prevents their **_display_** in the Settings panel. **Android makes restricted settings available to the user in some situations**. For example, if the charge in a device battery becomes critically low, Android provides access to apps in the low battery warning display so they can be stopped, disabled or uninstalled. This can be prevented only by disabling the Settings app completely.
+* **It is still possible to add shortcuts to restricted System-settings components** (i.e. apps) using a third-party shortcut creator. However, such shortcuts also are available in User Mode. If a system setting component should be accessible only to administrators, it should not be mapped using a shortcut.
+* **Uninstalling EHS does not revert Restricted System Settings to its original state**. If required, this must be done manually before uninstalling EHS.
 
 ------
 

@@ -13,8 +13,8 @@ Used to create, update or replace a DataWedge Profile and its settings, and can 
 To create a Profile without configuring its settings parameters, use [CREATE_PROFILE](../createprofile).
 
 ### Version History
-* **DataWedge 6.4 -** SET_CONFIG API introduced
-* **DataWedge 6.6 -** Added support for configuring multiple Plug-ins
+* **DataWedge 6.4 -** API introduced
+* **DataWedge 6.6 -** Added support for configuring multiple Plug-ins with a single Action
 * **DataWedge 6.7 -** Enhanced inter-character delay feature [(More info)](../../output/keystroke/#keystrokeoutputsetup)
 * **DataWedge 6.8 -** Support for ADF settings: 
  * **New ADF_RULE bundle** with Action, Device, Decoder and Label_ID sub-bundles
@@ -65,7 +65,7 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
 * For DataWedge 6.5 and below, each intent involving a Plug-in requires a separate intent Action.
 * See tables below for `PARAM_LIST` values. 
 
-**PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters to be updated under the specified Plug-in. Setting an empty string in any parameter value resets that parameter to its default setting. 
+**PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters to be updated under the specified Plug-in. **Setting an empty string in any parameter value resets that parameter to its default setting**. 
 
 #### PARAM_LIST BUNDLE
 The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the table below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
@@ -82,7 +82,10 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 
  `intent_category` [string] 
 
- `intent_delivery` [string]- Use "0" for Start Activity, "1" for Start Service, "2" for Broadcast
+ `intent_delivery` [string]:
+ 	* "0" = Start Activity
+ 	* "1" = Start Service
+ 	* "2" = Broadcast
 
 <!-- `intent_flag_receiver_foreground` [string] &lt;true/false&gt; -->
 
@@ -111,11 +114,11 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
  `ADF_RULE` [bundle] - Takes values:
 
 	* `name` [string] – Name of the ADF rule to use
-	* `enabled` [string] –  Rule enabled; true/false (default=true)
+	* `enabled` [string] – Rule enabled; true/false (default=true)
 	* `string` [string] – String to check for (default=empty string)
 	* `string_pos` [string] – String position (default=0)
-	* `string_len` [string] -  String length (default=0)
-	* `ACTIONS` [bundle] - takes value(s) from the [Actions table](#actions) below; specify Actions as `EXTRA_DATA` in the `ACTION` nested bundle.
+	* `string_len` [string] - String length (default=0)
+	* `ACTIONS` [bundle] - Takes value(s) from the [Actions table](#actions) below; specify Actions as `EXTRA_DATA`.
 	* `DEVICE` [bundle] - takes values		
 		* the other
 	* DECODER
@@ -156,23 +159,6 @@ enabled true/false (default=true)
 
 ### ACTIONS
 
-SKIP_AHEAD
-action_param_1 – number of characters (default - 1)
-
-SKIP_BACK
-action_param_1 – number of characters (default - 1)
-
-SKIP_TO_START
-None
-
-SEND_NEXT
-action_param_1 – number of characters (default - 0)
-
-SEND_UP_TO
-action_param_1 – string to search for (default - empty)
-
-SEND_REMAINING*
-None
 
 DELAY
 action_param_1 – number of milliseconds (default - 0)

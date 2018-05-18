@@ -35,9 +35,11 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 ## New in DataWedge 6.8
 
+* **The Set Config API** now supports Advanced Data Formatting
 * **Control over scanner auto-switching behavior** after connecting and disconnecting external scanners
 * **Ignore switches to disabled Profiles** helps maintain full functionality at all times 
 * **Enhancements to automatic Profile importing** improve reliability and reduce required coding 
+
 
 Advanced string manipulation 
 Function key dispatch
@@ -46,6 +48,10 @@ Updated Intent API (Set/Get ?)
 
 Press and Sustain aimtype?
 SimulScan API runtime param
+
+#### Other changes
+
+The SimulScan Input Plug-in default template is now "Default - Barcode4.xml" 
 
 -----
 

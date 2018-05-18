@@ -51,7 +51,7 @@ This feature is intended to help reduce scanning workflow interruptions when a B
 For Bluetooth scanners, if the device was not previously paired, a pairing barcode is displayed prior to automatic connection. 
 
 <img style="height:350px" src="68_switch_on_event.png"/>
-*'Auto switch to default on event' is available only when 'Auto' is selected*. 
+*"Auto switch to default on event" is available only when "Auto" is selected*. 
 <br>
 
 **Available Options**:

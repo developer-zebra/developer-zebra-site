@@ -92,7 +92,7 @@ The main sections of this window include the following fields:
 
 * MX Version - The version of MX used when creating the profile.
 
-* Connection Type - How StageNow connects to a network (MX 6.X only).
+* Connection Type - How StageNow connects to a network (MX 6.x and higher).
 
 * RD - Indicates whether the profile is RD enabled, i.e., whether RD bar codes can be printed from this profile.
 

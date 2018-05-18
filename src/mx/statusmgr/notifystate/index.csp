@@ -3,7 +3,7 @@ csp: statusmgr
 title: Notify State
 type: parm
 order: 8
-mx: "5.0"
+mx: "4.4"
 devicetype: A,B
 parm:
   pivotal: Yes
@@ -14,14 +14,17 @@ parm:
     - code: 0
       devicetype: A,B
       name: None
+      mx: "4.4"
       description: 
     - code: 1
       devicetype: A,B
       name: Inprogress
+      mx: "4.4"
       description: Returns the progress as a percentage.
     - code: 3
       devicetype: A,B
       name: Complete
+      mx: "4.4"
       description: Sends a notification when complete. 
 ---
 

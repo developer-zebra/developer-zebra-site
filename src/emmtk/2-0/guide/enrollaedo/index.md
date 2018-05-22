@@ -26,7 +26,7 @@ This section explains device owner stuff, and why a Nougat device _should_ be en
 
 ### Terms used in this guide
 
-* **AE -** Android Enterprise
+* **AE -** Android Enterprise (formerly Android for Work)
 * **AEDO -** Android Enterprise Device Owner
 * **AFW -** Android for Work
 * **DA -** Device administrator
@@ -42,7 +42,9 @@ This section explains device owner stuff, and why a Nougat device _should_ be en
 * All Zebra devices running Android Nougat or higher
 
 ### Prerequisites
-* A Staging Workstation running Windows with StageNow 2.10.1 or higher installed (for compatibility with sample profiles)
+* For the Staging Workstation:
+ * A computer running Windows 7 (or Windows 10 with StageNow 3.0 or higher)
+ * StageNow 2.10.1 or higher installed (for compatibility with sample profiles provided)
 * **Access to the "main console"** of the EMM solution 
 * **Adequate EMM priviledges** to create the following: 
  * **At least one group** in which to categorize devices to be staged
@@ -67,7 +69,7 @@ This process assumes that the device to be staged is in a factory-default state 
 
 For more information about device states, [see power manager?](seePowerManager??)
 
-**Three-step process**: 
+**Three-part process**: 
 
 1. Prepare the staging workstation (5 steps)
 2. Create provisioning barcodes (13 steps)

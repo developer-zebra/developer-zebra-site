@@ -87,6 +87,14 @@ EB 1.8 is now supported for use with the following scanners when connected to th
 
 -----
 
+### Updated Installation SKUs
+
+**Enterprise Browser 1.8 (and higher) no longer downloads as a single SKU** for targeting devices running Android and/or Windows Mobile/CE. Separate downloads are now required for each target platform. 
+
+See the [EB download page](../download) for more information. 
+
+-----
+
 ### Updated Guides
 
 * **[SAP ITSmobile Usage Guide](../sap) -** Now offers a new UserAgent section and enhanced Function Key Mapping information. 

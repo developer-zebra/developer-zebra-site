@@ -58,11 +58,15 @@ To uninstall EB, select **Start Menu -> Enterprise Browser -> Uninstall Enterpri
 
 &#51;. Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html). Then: 
 
-* Scroll to find the desired EB version. The corresponding installation packages for Windows and Mac OS X appear.
+* Scroll to find the desired EB version. The corresponding installation packages for Windows and Mac OS X appear:
+ * Windows host targeting Android devices
+ * Windows host targeting Windows Mobile/CE devices
+ * Mac OS X host targeting Android devices
+ * MAC OS X host targeting Windows Mobile/CE devices
 
-* For Windows, click on the Windows ".msi" package, accept the end-user license agreement and begin the download.
+* For Windows hosts, click on the Windows ".msi" package(s), accept the end-user license agreement and begin the download.
 
-&#52;. When the download completes, launch the installer and follow the prompts. After installation, a screen similar to the image below appears. 
+&#52;. When the download completes, launch the installer(s) and follow the prompts. After installation, a screen similar to the image below appears. 
 
 ![img](../../images/getting-started/setup/ebsetup_01.jpg)
 

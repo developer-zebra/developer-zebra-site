@@ -27,4 +27,4 @@ parm:
       description: Disables Doze Mode energy saving features on the device. 
 ---
 
-This is the On/Off switch for Doze Mode energy saving features on the device. When Doze Mode is enabled, only apps specifically "whitelisted" on the device can prevent the device from entering this low-power state. Apps are designated as such using the [App Manager CSP](../appmgr).
+This is the On/Off switch for Doze Mode energy saving features on the device. When Doze Mode is enabled, only apps specifically added to the "exemption whitelist" prevent the device from entering this low-power state. Apps are designated as such using the [App Manager CSP](../appmgr).

@@ -68,7 +68,7 @@ parm:
     - code: 9
       devicetype: A
       name: BatteryOptimization
-      description: Allows one or more apps to be designated for Battery Optimization. 
+      description: Allows one or more apps to be added or removed from the Battery Optimization exemption list. 
       mx: "7.0"
       apilevel: "23"
     - code: 10

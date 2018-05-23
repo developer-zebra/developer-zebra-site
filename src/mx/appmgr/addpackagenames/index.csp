@@ -19,4 +19,4 @@ Used to specify one or more Package Names of apps on which to apply Battery Opti
 **Input value rules**: 
 
 * String containing one or more Package Names. For example: `com.mycompany.mypackage`.
-* Use commas to seperate multiple names
+* Seperate multiple names with commas

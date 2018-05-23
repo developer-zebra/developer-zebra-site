@@ -11,6 +11,7 @@ The same is not always true of MX, which provides a uniform interface into privi
 ##### The MX/OSX version can be obtained: 
 
 * [Manually using the Settings panel](#usingthesettingspanel) on the device (not fully supported pre-KitKat)
+* [Manually in the StageNow client](#inthestagenowclient) menu
 * [Programmatically using EMDK](#usingemdkforandroid) for Android
 * [By submitting XML](#submittingxml) to the MX CSP through Zebra StageNow (or EMDK and Profile Manager)
 * [Using ADB](#usingadb) to query a connected device from a PC or Mac 
@@ -22,24 +23,46 @@ The same is not always true of MX, which provides a uniform interface into privi
 
 **To view MX and/or OSX versions using the Settings panel**: 
 
-&#49;. In the Settings panel, **tap "About Device" (or Phone), then tap SW Components**. 
+&#49;. In the Settings panel, **tap "About Device" (or "About Phone"), then tap SW Components**. 
 
 &#50;. **Locate MX in the list of components**.   
 
-&#51;. **The left-most two digits** indicate the major and minor MX and OSX versions. 
+&#51;. **On most pre-L devices, the left-most two numerical digits indicate the major and minor MX and OSX versions**. On devices running Android Lollipop and higher, the first number following the letters on in OSX field still indicates the Android version (5=L, 6=M, etc.) but the full OSX major.minor version is indicated by the **first two of the four digits at the end of the string**. 
+
+> **Note**: The major OSX version number always matches the major number of the Android version that it extends. For example, OSX 7.1 through 7.4 all extend Android 7.x.
 
 <img style="height:400px" src="sw_components.png"/>
 _Settings panel showing OSX 4.4 and MX 4.4_
 <br>
 
-<img style="height:400px" src="osx_ultralight.png"/>
-_Settings panel of a Zebra TC20 device showing OSX 7.1UL and MX 7.0_
+<img style="height:400px" src="hawkeye_MX_screenshot_highlighted.png"/>
+_Settings panel of a Zebra TC20 device showing OSX 7.3 (UL) and MX 7.0_
 <br>
 
-**Note: On some devices, version information is returned in two groups of digits separated by an underscore (_) character. The numbers relevant to the version are those immediately <u>following</u> the underscore, as below**:
+**Note: On some older devices, version information is returned in two groups of digits separated by an underscore ( _ ) character. The numbers relevant to the version are those immediately <u>following</u> the underscore, as below**:
 
 <img style="height:400px" src="osx_version_older.jpg"/>
-_This panel shows OSX 4.2 running Android Jelly Bean (kernel 3.4.0)_
+_This panel shows **OSX 4.2** running Android Jelly Bean (kernel 3.4.0)_
+<br>
+
+-----
+
+### In the StageNow Client
+
+**Most devices running KitKat and higher include the StageNow client app**, which is used for device configuration and management.  
+
+**To view MX and OSX versions on the device using the StageNow client app**: 
+
+&#49;. **Tap the StageNow client app** on the device:
+<img style="height:400px" src="stagenow_app_icon.png"/>
+<br>
+
+&#50;. **Tap the menu and select "View Client Info"**:
+<img style="height:400px" src="stagenow_menu.png"/>
+<br>
+
+&#51;. **MX and OSX versions are displayed**:
+<img style="height:400px" src="client_info.png"/>
 <br>
 
 -----

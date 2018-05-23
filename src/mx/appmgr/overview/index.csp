@@ -19,6 +19,10 @@ When considering the capabilities of AppMgr, it is important to understand the d
 * Turn On/Off the ability of an application to Launch (Whitelisting and Blacklisting)
 * Clear the Recent Application List
 * Clear an application's cache (which stores the app's temporary files) 
-* Specify one or more apps for Battery Optimization
+* Add and remove apps from the Battery Optimization exemption list
 * Enable/Disable GMS and all GMS apps on the "Safe to Disable" list
 * Enable/Disable access to application info
+
+### Battery Optimization
+
+

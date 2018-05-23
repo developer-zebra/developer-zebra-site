@@ -17,4 +17,4 @@ Used to specify one or more Package Names of apps from which to remove Battery O
 **Input value rules**: 
 
 * String containing one or more Package Names 
-* Multiple names must be separated by commas
+* Seperate multiple names with commas

@@ -54,10 +54,10 @@ This section explains device owner stuff, and why a Nougat device _should_ be en
  * **Password** 
 * **The EMM management server URL**
 * Any agent and/or service apps (`.apk` files) required by the EMM solution to be present on the device being managed (agent must support DO mode). **Required files**:
- * `Agent.apk(s)` - **Device-resident agent file(s)** required by the EMM solution
- * `EMM_Device_Owner_Enrollment_Profile.zip` - **StageNow profile for enrolling device** provided by Zebra
+ * `Agent.apk(s)` - **Device-resident agent file(s)** required and provided by the EMM vendor
+ * `EMM_Device_Owner_Enrollment_Profile.zip` - **StageNow profile for enrolling device** (provided by Zebra)
  * `EnrollDO.pem` - **Certificate for EMM Agent app** 
- * `EMM_PERE-DO.zip` - **StageNow persistence profile** template provided by Zebra
+ * `EMM_PERE-DO.zip` - **StageNow persistence profile** template (provided by Zebra)
  * `Provision.apk` - **Android app**
  * `Provisioning.JSON` - **Credentials file, including user name, password, group ID** (created during the enrollment process below)
 
@@ -85,13 +85,13 @@ SOME STEPS MIGHT BE NECESSARY EVERY TIME (i.e. creation of Provisioning.JSON fil
 
 **Required only for first-time Staging Workstation set-up**. If the Staging Workstation is already prepared, **[skip to Part 2](#2createprovisioningbarcodes)**. 
 
-**&#49;. Create a folder** of any name on the workstation to contain files for device enrollment. 
-<br>The folder name used for this guide is "`/EMM-downloads/`". 
+**&#49;. Create a folder** on the workstation to contain files for device enrollment. 
+<br>The folder name used for this guide is "`/EMM/install/`". 
 
-**&#50;. Copy the agent files** required for device management to the `/EMM-downloads/` folder. 
+**&#50;. Copy the agent files** required for device management to the `/EMM/install/` folder. 
 <br>**IMPORTANT: Filenames are case-sensitive**. 
 
-**&#51;. Copy the** `Provision.apk` **file** to the `/EMM/install/` folder
+**&#51;. Copy the** `Provision.apk` **file** to the `/EMM/install/` folder.
 
 **&#52;. Open the** `Provisioning.JSON` **file with a text editor**, and enter the server, group ID and user credentials in the appropriate section (see image, below). 
 

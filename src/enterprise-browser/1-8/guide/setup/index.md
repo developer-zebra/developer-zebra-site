@@ -53,7 +53,9 @@ Enterprise Browser 1.7 (and higher) for Windows eliminates the need to manually 
 
 **&#50;. THIS STEP IS NOT REQUIRED IF USING EB 1.7 OR HIGHER**: 
 To uninstall EB, select **Start Menu -> Enterprise Browser -> Uninstall Enterprise Browser** (similar to the image below) and follow the prompts. 
-![img](../../images/getting-started/setup/ebsetup_00.png)
+
+
+<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Android_install_complete.png"/>
 <br>
 
 &#51;. Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html). Then: 
@@ -62,18 +64,23 @@ To uninstall EB, select **Start Menu -> Enterprise Browser -> Uninstall Enterpri
  * Windows host targeting Android devices
  * Windows host targeting Windows Mobile/CE devices
  * Mac OS X host targeting Android devices
- * MAC OS X host targeting Windows Mobile/CE devices
+ * Mac OS X host targeting Windows Mobile/CE devices
 
 * For Windows hosts, click on the Windows ".msi" package(s), accept the end-user license agreement and begin the download.
 
-&#52;. When the download completes, launch the installer(s) and follow the prompts. After installation, a screen similar to the image below appears. 
+&#52;. When the download completes, launch the installer(s) and follow the prompts to install. After installation, a screen appears similar to the image below. 
+<br>
+**Click "Close" to quit the installer**. 
+<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Android_install_complete.png"/>
+<br>
+&#53;. In the Windows menu, select the desired EB installer:
+<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_windows_menu.png"/>
+<br>
 
-![img](../../images/getting-started/setup/ebsetup_01.jpg)
-
-&#53;. Confirm that the "Launch" box is checked. **Click "Close" to quit the installer and launch Enterprise Browser**. An Enterprise Browser "Installer" screen similar to the image below appears. Supported platforms are listed on the left and a description appears at right when a platform is selected. 
-
-![img](../../images/getting-started/setup/ebsetup_02.jpg)
-_To bring up this screen at a later time, select **Start Menu -> Enterprise Browser -> Enterprise Browser Installer**_. 
+An Enterprise Browser "Installer" screen appears similar to the image below. Supported platform OSes are listed on the left and a description appears at right when a platform is selected.
+<img alt="" style="height:150px" src="../../images/getting-started/setup/18_EB_Android_installer.png"/>
+<br>
+<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Windows_installer.png"/>
 <br>
 
 **Windows instructions continue in the [Deployment to Device(s)](#deploymenttodevices) section, below**. 
@@ -89,13 +96,11 @@ _To bring up this screen at a later time, select **Start Menu -> Enterprise Brow
 2. When the download completes, double-click the .dmg file to open it. A window similar to the image below appears. 
 3. Drag and drop the Enterprise Browser icon onto the Applications folder (in the direction of the arrow). 
 
-![img](../../images/getting-started/setup/setup-dmg-install.png)
-
+<img alt="" style="height:350px" src="../../images/getting-started/setup/setup-dmg-install.png"/>
 The Enterprise Browser files and folders will be copied into the Application folder on the host Mac, creating a directory structure similar to the one shown in the image below. 
 
-![img](../../images/getting-started/setup/setup-macosx-directories.png)
-
-**Files in the "Runtimes" folder (red arrows) correspond with those deployed by the Windows version**. These are the same runtimes listed on the left side of the [Windows "Installer" screen](../../images/getting-started/setup/ebsetup_02.jpg) above. 
+<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Mac_runtimes.png"/>
+**Files in the "Runtimes" folder (red arrows) correspond with those deployed by the Android or Windows Mobile/CE installers for Windows PCs**. These are the same runtimes as those listed on the left side of the ["Installer" screens](../../images/getting-started/setup/18_both_installers.png). 
 
 -----
 
@@ -108,7 +113,10 @@ On Windows host systems, communication from the host to target device(s) is hand
 
 Once a connection has been established, install the Enterprise Browser runtime onto a device:
 
-![img](../../images/getting-started/setup/setup-eb-installer-platform-select.jpg)
+<img alt="" style="height:150px" src="../../images/getting-started/setup/18_EB_Android_installer.png"/>
+<br>
+<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Windows_installer.png"/>
+<br>
 
 1. Select **Start -> Enterprise Browser -> Enterprise Browser Installer** to bring up the EB Installer. A window will appear similar to the image above.  
 2. **Select the platform that matches the device, OS and webview being targeted**. Information in the right-hand pane will vary according to the selection.
@@ -117,7 +125,8 @@ Once a connection has been established, install the Enterprise Browser runtime o
 
 > **Note: For persistent installations on Windows CE (the lowermost two options on the "Installer" screen above), a cold boot/cleanPS (clean persistent storage) is required to complete the installation**.
 
-![img](../../images/getting-started/setup/WM_setup_01.jpg)
+<img alt="" style="height:350px" src="../../images/getting-started/setup/WM_setup_01.jpg"/>
+<br>
 
 > **Note**: Prior to installation, some Windows devices might prompt for the installation location on the device. **Enterprise Browser overrides any selection made here; it will always be installed in `\Program Files\EnterpriseBrowser\`**.
 
@@ -134,7 +143,9 @@ The preferred deployment method of Enterprise Browser runtimes from a Mac OS hos
 
 &#53;. Copy the Enterprise Browser runtime for Android to internal storage, which is opened by default. Storage buttons (red arrow) will be shown only if an additional storage card is present in the device.
 
-![img](../../images/getting-started/setup/AndroidFileTransfer.png)
+
+<img alt="" style="height:350px" src="../../images/getting-started/setup/AndroidFileTransfer.png"/>
+<br>
 
 **Note: All connected devices must be unlocked before any file transfers can be performed**. 
 
@@ -153,13 +164,15 @@ The preferred deployment method of Enterprise Browser runtimes from a Mac OS hos
 
 &#51;. Right-click the newly paired device and select "Send File to Device..." (as below). 
 
-![img](../../images/getting-started/setup/PocketPCsend.png)
+<img alt="" style="height:250px" src="../../images/getting-started/setup/PocketPCsend.png"/>
+<br>
 
 &#52;. A file dialog will appear. Navigate to and select the Enterprise Browser runtime to be deployed to the WM/CE device and click Send.   
 
 While the file is in transit, a dialog will appear on the Mac similar to the image below: 
 
-![img](../../images/getting-started/setup/BluetoothDeploy.png)
+<img alt="" style="height:150px" src="../../images/getting-started/setup/BluetoothDeploy.png"/>
+<br>
 
 &#53;. When the transfer is complete, tap "Yes" on the device to save the file.
 
@@ -199,7 +212,8 @@ To add the platform-tools path to the system's environment variable:
 * Select "Advanced System Settings" in the System Properties window
 * In the "Advanced" tab, Click the "Environment Variables" button to bring up a window similar to the one below:
 
-![img](../../images/getting-started/setup/setup-environment-variables-window.jpg)
+<img alt="" style="height:350px" src="../../images/getting-started/setup/setup-environment-variables-window.jpg"/>
+<br>
 
 * In the <u>LOWER</u> window, scroll down to "Path"
 * Select Path and click "Edit..." to bring up the path for editing
@@ -212,7 +226,8 @@ To add the platform-tools path to the system's environment variable:
 
 This command should result in something like this: 
 
-![img](../../images/getting-started/setup/dos_dir_command.png)
+<img alt="" style="height:150px" src="../../images/getting-started/setup/dos_dir_command.png"/>
+<br>
 
 * If there's more than one path to adb.exe, enter the one that ends with `\platform-tools`
 * The correct string for this example would be `;C:\Users\AppData\Local\Android\sdk\platform-tools` (notice the semicolon separator at the beginning of the line)
@@ -226,7 +241,8 @@ This command should result in something like this:
 
 If everything is setup correctly, a display like the following will be seen:
 
-![img](../../images/getting-started/setup/adb_devices_command.png)
+<img alt="" style="height:150px" src="../../images/getting-started/setup/adb_devices_command.png"/>
+<br>
 
 The system is now ready to deploy Enterprise Browser apps and shortcuts to an Android device.
 
@@ -238,13 +254,15 @@ Upon connecting a Windows Mobile/CE device to a Windows 7 (or higher) PC, the Mo
 * If no such prompt appears, go to Device Manager and select Action -> "Scan for hardware changes" When USB drivers are installed correctly, a box like the image below will appear.  
 * Restart Windows after any software or driver is installed or updated 
 
-![img](../../images/getting-started/setup/WM_setup_00.jpg)
+<img alt="" style="height:150px" src="../../images/getting-started/setup/WM_setup_00.jpg"/>
+<br>
 
 > **Note: If Windows doesn't recognize a devices connected to a USB 3.0 port, try connecting it to a USB 2.0 port**.
 
 When a device is properly connected and recognized, the Mobile Device Center application should appear something like this:
 
-![img](../../images/getting-started/setup/setup-mobile-device-center-connected.png)
+<img alt="" style="height:350px" src="../../images/getting-started/setup/setup-mobile-device-center-connected.png"/>
+<br>
 
 The system is now ready to deploy Enterprise Browser using the Enterprise Browser installer. 
 
@@ -259,14 +277,14 @@ Enterprise Browser also can be mass-deployed using Zebra [StageNow](../../../../
 
 #### Windows systems
 Go to **Start Menu -> Enterprise Browser -> Resources ->Enterprise Browser Runtimes**. 
-![img](../../images/getting-started/setup/EB_resources_menu.jpg)
+<img alt="" style="height:350px" src="../../images/getting-started/setup/EB_resources_menu.jpg"/>
 <br>
-On Windows, this will bring up a window that looks similar to the image below: 
-![img](../../images/getting-started/setup/setup-enterprise-browser-runtimes.png)
+On Windows, this brings up a window similar to the image below: 
+<img alt="" style="height:350px" src="../../images/getting-started/setup/setup-enterprise-browser-runtimes.png"/>
 
 #### Mac OS X systems
 Open **Applications -> Enterprise Browser -> Runtimes**. The Runtimes folder on a Mac looks like the image below: 
-![img](../../images/getting-started/setup/setup-macosx-directories.png)
+<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Mac_runtimes.png"/>
 
 #### The remaining steps apply to both platforms
 
@@ -292,6 +310,8 @@ Open **Applications -> Enterprise Browser -> Runtimes**. The Runtimes folder on 
 
 Therefore, new versions of those settings files should be placed in the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory. The next time Enterprise Browser is restarted, copies of the new settings file(s) will automatically be placed in the appropriate locations for execution and backup, and the original(s) will be deleted. 
 
+-----
+
 ## Mass Deployment
 The Enterprise Browser runtimes and configuration and licensing files can be deployed to one or more devices using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system by using the instructions below. 
 
@@ -299,14 +319,15 @@ The Enterprise Browser runtimes and configuration and licensing files can be dep
 
 #### Windows systems
 Go to **Start Menu -> Enterprise Browser -> Resources ->Enterprise Browser Runtimes**. 
-![img](../../images/getting-started/setup/EB_resources_menu.jpg)
+<img alt="" style="height:350px" src="../../images/getting-started/setup/EB_resources_menu.jpg"/>
 <br>
-On Windows, this will bring up a window that looks similar to the image below: 
-![img](../../images/getting-started/setup/setup-enterprise-browser-runtimes.png)
+On Windows, this brings up a window similar to the image below: 
+<img alt="" style="height:350px" src="../../images/getting-started/setup/setup-enterprise-browser-runtimes.png"/>
+<br>
 
 #### Mac OS X systems
 Open **Applications -> Enterprise Browser -> Runtimes**. The Runtimes folder on a Mac looks like the image below: 
-![img](../../images/getting-started/setup/setup-macosx-directories.png)
+<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Mac_runtimes.png"/>
 
 **&#50;. Copy the desired runtime file to the MDM system**, and configure the system to push the file to the root directory of the device. 
 
@@ -345,13 +366,13 @@ After installation and first launch, an Enterprise Browser app icon will appear 
 
 With default settings, the startup screen appears similar to the image below: 
 
-![img](../../images/OndeviceConfig/On-device_config_01.png)
+<img alt="" style="height:350px" src="../../images/OndeviceConfig/On-device_config_01.png"/>
 
 Press the "Return to OS" button to skip settings configuration and bring up the operating system. **To display the Settings button again, simply relaunch the Enterprise Browser app**. 
 
 **Press the "Settings" button to edit the on-device `Config.xml` file**. A screen appears like the image below:
 
-![img](../../images/OndeviceConfig/On-device_config_02.png)
+<img alt="" style="height:350px" src="../../images/OndeviceConfig/On-device_config_02.png"/>
 
 ###Setting the start page
 **To activate an EB app's start page, enter the URL in the Value field of the StartPage parameter**, as highlighted above, but **do not apply the changes yet**. Applying changes immediately will cause the new start page to be displayed next time EB is launched and will remove access to the Settings panel. 
@@ -360,15 +381,15 @@ Press the "Return to OS" button to skip settings configuration and bring up the 
 
 If on-device access to runtime settings is desired after setting up the start page (for example, to experiment with various settings before deployment), set the SettingsButtonEnabled parameter to "Enable" (as below). This will cause a Settings button to appear in the UI at all times. Passwords also can be set here, if desired. 
 
-![img](../../images/OndeviceConfig/On-device_config_03.png)
+<img alt="" style="height:350px" src="../../images/OndeviceConfig/On-device_config_03.png"/>
 
 Press "Apply" to update the `Config.xml` file with the new settings. A screen like the one below will be displayed. Restart the app to activate the changes. 
 
-![img](../../images/OndeviceConfig/On-device_config_04.png)
+<img alt="" style="height:350px" src="../../images/OndeviceConfig/On-device_config_04.png"/>
 
 The Settings button, if enabled, appears in the UI like the one in the red box below.
 
-![img](../../images/OndeviceConfig/On-device_config_05.png)
+<img alt="" style="height:350px" src="../../images/OndeviceConfig/On-device_config_05.png"/>
 
 **Note: When the IE engine is used on a Windows CE device**, displaying the Settings button in this way might cause screen distortion when scrolling.
 

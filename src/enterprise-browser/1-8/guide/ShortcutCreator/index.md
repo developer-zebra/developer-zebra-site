@@ -1,23 +1,37 @@
 ---
-title: Shortcuts and the Shortcut Utility
+title: The Shortcut Utility
 productversion: '1.8'
 product: Enterprise Browser
 layout: guide.html
 ---
 
-##Overview
-Shortcuts on a mobile device are small files that launch an application with a set of specific settings contained in the shortcut file. Depending on the app, some shortcuts can even invoke some of the app's functions, such as the phone dialer or sound recorder. On Enterprise Browser, each shortcut can contain a separate start page for the app and can also link to a custom `config.xml` file with as many runtime settings as required. On devices running Android, different EB shortcuts can have different icons. 
-
-## Shortcut Utility
+## Overview
 The Shortcut Utility is a Windows tool that quickly creates shortcuts for Enterprise Browser apps for Android or Windows Mobile/CE and can deploy them directly to devices. From a single screen, the tool can create and deploy multiple shortcuts, each with a unique name, startpage URL and `Config.xml` file, if desired. Shortcuts for different platforms can be created at one time and easily deployed en masse to their respective platforms using a Mobile Device Management (MDM) system. 
+
+**Shortcuts are small files that launch an application with a set of specific settings** contained in the shortcut file. Depending on the app, some shortcuts can even invoke some of the app's functions, such as the phone dialer or sound recorder. On Enterprise Browser, each shortcut can contain a separate start page for the app and can also link to a custom `config.xml` file with as many runtime settings as required. On devices running Android, different EB shortcuts can have different icons. 
 
 The Shortcut Utility was introduced with Enterprise Browser 1.3. **As of version EB 1.8, there are separate versions of the utility for targeting devices running Android and Windows Mobile/CE**. 
 
 >**IMPORTANT: This tool relies on settings in** `Config.xml`, a device-resident file that controls all runtime settings for Enterprise Browser. For help editing `Config.xml` files, please refer to the [Config Editor utility guide](../ConfigEditor) and the [Config.xml Reference](../configreference). 
 
-### QUICK STEPS
-1. Use these instructions only after [installing Enterprise Browser](../setup) (version 1.3 is required). 
-2. Open the Shortcut Utility and **select a platform** (Android or Windows Mobile/CE).
+-----
+
+### Prerequisites
+The following are required for using the Shortcut Utility: 
+
+* **Windows development host**
+* **Zebra Enterprise Browser 1.3** or higher
+* **USB driver for targeting Zebra devices**
+* **Android Debug Bridge** (if targeting Android devices)
+* **Microsoft ActiveSync** (if targeting Windows Mobile/CE devices)
+
+The Shortcut Utility is included with Zebra Enterprise Browser 1.3. If you don't already have EB 1.3, please [install Enterprise Browser](../setup), then resume from here. 
+
+-----
+
+### Procedure Summary
+1. Use these instructions only after [installing Enterprise Browser](../setup). 
+2. **Select and launch the platform-specific utility** (Android or Windows Mobile/CE).
 3. **Select Default or Custom** `Config.xml` (if Custom, navigate to the file).
 4. **Enter a name** for the shortcut.
 5. **Specify a start page** (fully qualified path or URL).
@@ -31,24 +45,11 @@ The Shortcut Utility was introduced with Enterprise Browser 1.3. **As of version
 
 -----
 
-## Prerequisites
-The following are required for using the Shortcut Utility: 
-
-* **Windows development host**
-* **Zebra Enterprise Browser 1.3** or higher
-* **USB driver for targeting Zebra devices**
-* **Android Debug Bridge** (if targeting Android devices)
-* **Microsoft ActiveSync** (if targeting Windows Mobile/CE devices)
-
-The Shortcut Utility is included with Zebra Enterprise Browser 1.3. If you don't already have EB 1.3, please [install Enterprise Browser](../setup), then resume from here. 
-
------
-
 ## Using Shortcut Utility
 
-* **Launch the "Shortcuts Utility"** from the Enterprise Browser folder of the Windows Start Menu, as below. 
+* **Launch the target-specific "Shortcuts Utility"** from the Enterprise Browser folder of the Windows Start Menu, as below. 
 
-<img alt="" style="height:250px" src="../../images/Utilities/Shortcut_Creator_01.jpg"/>
+<img alt="" style="height:300px" src="../../images/Utilities/18_eb_windows_menu.png"/>
 
 A Shortcut Utility window appears similar to the ones below, depending on the target platform:  
 

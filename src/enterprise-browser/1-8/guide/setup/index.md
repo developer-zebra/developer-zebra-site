@@ -100,6 +100,8 @@ An Enterprise Browser "Installer" screen appears similar to the image below. Sup
 The Enterprise Browser files and folders will be copied into the Application folder on the host Mac, creating a directory structure similar to the one shown in the image below. 
 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Mac_runtimes.png"/>
+<br>
+
 **Files in the "Runtimes" folder (red arrows) correspond with those deployed by the Android or Windows Mobile/CE installers for Windows PCs**. These are the same runtimes as those listed on the left side of the ["Installer" screens](../../images/getting-started/setup/18_both_installers.png). 
 
 -----
@@ -285,6 +287,7 @@ On Windows, this brings up a window similar to the image below:
 #### Mac OS X systems
 Open **Applications -> Enterprise Browser -> Runtimes**. The Runtimes folder on a Mac looks like the image below: 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Mac_runtimes.png"/>
+<br>
 
 #### The remaining steps apply to both platforms
 

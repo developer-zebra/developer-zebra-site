@@ -89,9 +89,9 @@ EB 1.8 is now supported for use with the following scanners when connected to th
 
 ### Updated Installation SKUs
 
-**Enterprise Browser 1.8 (and higher) no longer downloads as a single SKU** for targeting devices running Android and/or Windows Mobile/CE. Separate downloads are now required for each target platform. 
+**Enterprise Browser 1.8 (and higher) no longer downloads as a single SKU** for targeting devices running Android and/or Windows Mobile/CE. Separate downloads are now required for each target platform and each host platform. 
 
-See the [EB download page](../download) for more information. 
+See the [EB download page](../../download) for more information. 
 
 -----
 

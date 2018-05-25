@@ -26,6 +26,7 @@ productversion: '1.8'
  * `EnterpriseBrowser_1.8.0.0_WK.Cab` - **Enterprise Browser app for Windows Mobile**
  * `EnterpriseBrowser_1.8.0.0_WK_p.Cab` - **Enterprise Browser app for Windows Mobile (persistent)**
  * `EnterpriseBrowserForWindows_1_8_ReleaseNotes.html` - Release notes
+<br>
 
 * **Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)** and select the desired download(s). 
 

@@ -9,16 +9,16 @@ layout: guide.html
 Shortcuts on a mobile device are small files that launch an application with a set of specific settings contained in the shortcut file. Depending on the app, some shortcuts can even invoke some of the app's functions, such as the phone dialer or sound recorder. On Enterprise Browser, each shortcut can contain a separate start page for the app and can also link to a custom `config.xml` file with as many runtime settings as required. On devices running Android, different EB shortcuts can have different icons. 
 
 ## Shortcut Utility
-The Shortcut Utility is a Windows tool that quickly creates shortcuts for Enterprise Browser apps for Android or Windows Mobile/CE and can deploy them directly to devices. From a single screen, the tool can create and deploy multiple shortcuts, each with a unique name, startpage URL and Config.xml file, if desired. Shortcuts for different platforms can be created at one time and easily deployed en masse to their respective platforms using a Mobile Device Management (MDM) system. 
+The Shortcut Utility is a Windows tool that quickly creates shortcuts for Enterprise Browser apps for Android or Windows Mobile/CE and can deploy them directly to devices. From a single screen, the tool can create and deploy multiple shortcuts, each with a unique name, startpage URL and `Config.xml` file, if desired. Shortcuts for different platforms can be created at one time and easily deployed en masse to their respective platforms using a Mobile Device Management (MDM) system. 
 
 The Shortcut Utility was introduced with Enterprise Browser 1.3. **As of version EB 1.8, there are separate versions of the utility for targeting devices running Android and Windows Mobile/CE**. 
 
->**IMPORTANT: This tool relies on settings in** `Config.xml`, a device-resident file that controls all runtime settings for Enterprise Browser. For help editing Config.xml files, please refer to the [Config Editor utility guide](../ConfigEditor) and the [Config.xml Reference](../configreference). 
+>**IMPORTANT: This tool relies on settings in** `Config.xml`, a device-resident file that controls all runtime settings for Enterprise Browser. For help editing `Config.xml` files, please refer to the [Config Editor utility guide](../ConfigEditor) and the [Config.xml Reference](../configreference). 
 
 ### QUICK STEPS
 1. Use these instructions only after [installing Enterprise Browser](../setup) (version 1.3 is required). 
 2. Open the Shortcut Utility and **select a platform** (Android or Windows Mobile/CE).
-3. **Select Default or Custom** Config.xml (if Custom, navigate to the file).
+3. **Select Default or Custom** `Config.xml` (if Custom, navigate to the file).
 4. **Enter a name** for the shortcut.
 5. **Specify a start page** (fully qualified path or URL).
 6. **Select an icon** for your shortcut (Android only).
@@ -27,7 +27,7 @@ The Shortcut Utility was introduced with Enterprise Browser 1.3. **As of version
 9. Click **Push to Device** to deploy (via ADB or ActiveSync).
 10. **Launch Enterprise Browser** to create shortcut(s) on device.&#42;
 
-&#42; *Shortcut creation behavior is determined by the **&lt;shortcut&gt; tag** in the Config.xml file on the target device. This tag must be configured prior to shortcut deployment*.
+&#42; *Shortcut creation behavior is determined by the **&lt;shortcut&gt; tag** in the `Config.xml` file on the target device. This tag must be configured prior to shortcut deployment*.
 
 -----
 
@@ -41,6 +41,8 @@ The following are required for using the Shortcut Utility:
 * **Microsoft ActiveSync** (if targeting Windows Mobile/CE devices)
 
 The Shortcut Utility is included with Zebra Enterprise Browser 1.3. If you don't already have EB 1.3, please [install Enterprise Browser](../setup), then resume from here. 
+
+-----
 
 ## Using Shortcut Utility
 
@@ -57,10 +59,10 @@ A Shortcut Utility window appears similar to the ones below, depending on the ta
 
 ### Create shortcut(s)
 
-1. **Select the platform** (Android or Windows Mobile/CE) to be targeted by the shortcut.
-2. **Select Default or Custom** for the Config.xml to be used with the shortcut (selecting Custom will cause the Startpage field to change to a navigation box).
+1. **Select the platform** (Android or Windows Mobile/CE) to be targeted by the shortcut and launch the corresponding utility.
+2. **Select Default or Custom** for the `Config.xml` to be used with the shortcut (selecting Custom will cause the Startpage field to change to a navigation box).
 3. **Enter a name** for the shortcut.
-4. **Specify a start page**. Must be a fully qualified local path using `file://` or URL using `http://`. (**If 'Custom' was chosen in step 3, navigate to the Config.XML file to be used**). 
+4. **Specify a start page**. Must be a fully qualified local path using `file://` or URL using `http://`. (**If 'Custom' was chosen in step 3, navigate to the `Config.xml` file to be used**). 
 5. **Select an icon** for your shortcut (Android only). If left blank, the default Enterprise Browser shortcut icon will be used.
 6. Click **Add to List** to store settings in the list at right.
 
@@ -75,7 +77,7 @@ Shortcut data is stored in a file called `EBShortcuts.xml` in the path:
 
 `C:\EnterpriseBrowserShortcutFiles\EnterpriseBrowserShortcutFiles\EBShortcuts.xml` 
 
-In the same location are custom folders named for each shortcut created, with that shortcut's Config.xml inside. For more information, see the Mass Deployment section, below. 
+In the same location are custom folders named for each shortcut created, with that shortcut's `Config.xml` inside. For more information, see the Mass Deployment section, below. 
 
 ### Deployment (to single device)
 
@@ -91,14 +93,16 @@ In the same location are custom folders named for each shortcut created, with th
 * **Shortcuts are created _only_ if the &lt;ShortcutCreationEnabled&gt; tag value = 1 or 2**. See [Troubleshooting section](../ShortcutCreator?Troubleshooting). 
 * **Shortcuts are placed in the Home Screen on Android and in the Main Screen of WM/CE**. 
 
-### Mass Deployment (via MDM)
+-----
 
-Shortcuts can be packaged with an Enterprise Browser app (.apk or .cab) and the corresponding Config.xml file and easily deployed across an enterprise using a mobile device management (MDM) system. 
+## Mass Deployment (via MDM)
+
+Shortcuts can be packaged with an Enterprise Browser app (.apk or .cab) and the corresponding `Config.xml` file and easily deployed across an enterprise using a mobile device management (MDM) system. 
 
 **IMPORTANT**:
 
-* **Shortcut creation requires Enterprise Browser 1.3 (the latest) on the deployment PC and the device(s)**. The vast majority of installations will therefore require an upgrade. 
-* **Upgrading overwrites the Config.xml on target device(s)**. Previous runtime settings should be replicated in the new Config.xml before deployment.
+* **Shortcut creation requires Enterprise Browser 1.3 (the later) on the deployment PC and the device(s)**.
+* **Upgrading overwrites the** `Config.xml` **on target device(s)**. Previous runtime settings should be replicated in the new `Config.xml` before deployment.
 * **Shortcut creation behavior is controlled by settings in the Config.xml**. Be sure to read, understand and configure shortcut settings before deployment. 
 * **Shortcut(s) must be deployed to an individual device before they can be deployed via MDM**. The instructions below cover this scenario. 
 
@@ -120,21 +124,21 @@ Shortcuts can be packaged with an Enterprise Browser app (.apk or .cab) and the 
 
 `C:\EnterpriseBrowserShortcutFiles\EnterpriseBrowserShortcutFiles\EBShortcuts.xml` 
 
-In the same location are custom folders named for each shortcut created, with that shortcut's Config.xml inside: 
+In the same location are custom folders named for each shortcut created, with that shortcut's `Config.xml` inside: 
 
 <img alt="" style="height:250px" src="../../images/Utilities/Shortcut_Creator_07.jpg"/>
 
 &#54;. To deploy shortcuts _**and**_ the Enterprise Browser app using an MDM system, **components <u>MUST</u> be deployed by the MDM in the following order**:
 
-####MDM Deployment Order
+### MDM Deployment Order
  
 a. **Deploy the desired .apk or .cab file to the device**.
 
-b. **Unpackage the .apk or .cab file on the device**. This will generate the Enteprise Browser directory structure on the device and create a default Config.xml file.  
+b. **Unpackage the .apk or .cab file on the device**. This will generate the Enteprise Browser directory structure on the device and create a default `Config.xml` file.  
 
-c. **Deploy Config.xml modified in step 3 <u>to its original location (as below) on the target device</u>** (replacing the default Config.xml file generated in step b). 
+c. **Deploy `Config.xml` modified in step 3 <u>to its original location (as below) on the target device</u>** (replacing the default `Config.xml` file generated in step b). 
 
-**Location of Config.xml file**:
+**Location of `Config.xml` file**:
 
 *  **Android**: `<internal storage>/Android/data/com.symbol.enterprisebrowser/`
 *  **WM/CE** `<internal storage>\Program Files\EnterpriseBrowser\Config\`
@@ -159,7 +163,7 @@ Shortcut icons will be visible to the user in the device's main application area
 
 **Windows CE**: `.lnk` files are deployed in `\​Windows\Programs` and `\​Windows\Desktop` directories  and named after the shortcut.
 
-**Notes** 
+**Notes**:
 
 * **File structure must be replicated exactly** for proper shortcut operation.
 * **Shortcut files for all platforms (Android, WM, CE) are copied to the device**. 
@@ -169,6 +173,8 @@ Shortcut icons will be visible to the user in the device's main application area
 * **To change shortcut settings, use the Shortcut Utility** and redeploy. 
 * Existing **shortcuts on target device(s) will be overwritten** when redeployed. 
 
+-----
+
 ## Troubleshooting
 
 The Shortcut Utility communicates with Android devices via ADB (USB only) and with Windows Mobile/CE devices through Mobile Device Center (or ActiveSync on WinXP) over USB or Bluetooth. If you're seeing a message like the one below or having other communication-related issues, please **refer to the Connections section of the [Enterprise Browser installation guide](../setup#connections)**. 
@@ -176,7 +182,7 @@ The Shortcut Utility communicates with Android devices via ADB (USB only) and wi
 <img alt="" style="height:150px" src="../../images/Utilities/Shortcut_Creator_05.jpg"/>
 
 ### Config.xml
-If shortcuts are being deployed to the device but not showing up, **check the Config.xml to ensure that the &lt;ShortcutCreationEnabled&gt; tag has a value or 1 or 2**.  
+If shortcuts are being deployed to the device but not showing up, **check the `Config.xml` to ensure that the &lt;ShortcutCreationEnabled&gt; tag has a value or 1 or 2**.  
 
  	:::xml
 
@@ -191,7 +197,7 @@ On-device shortcut creation is determined by this setting, and behavior thereaft
 * 1= check for and create new shortcuts at every launch
 * 2= check for and create new shortcuts only at initial launch
 
-<!-- &#55;. Shortcuts will be created on the device the next time Enteprise Browser is launched following deployment. **Optionally, launch Enterprise Browser from the MDM using one of the following commands**: 
+<!-- &#55;. Shortcuts will be created on the device the next time Enterprise Browser is launched following deployment. **Optionally, launch Enterprise Browser from the MDM using one of the following commands**: 
 
 Android: 
 
@@ -201,8 +207,10 @@ Android:
 Windows Mobile/CE: 
 
 		:::term
-		( ---> info to come <--- ) 
+		( info to come ) 
 -->
+
+-----
 
 ## Platform Notes
 
@@ -223,7 +231,7 @@ The shortcut file supports the following command line parameters:
         /C:'file://\Program Files\application\Config.xml'
         /C:"file://\Program Files\My Application\config.xml"
         
-`/S:` specifies the start page of the Enterprise Browser application. Other configuration parameters will be used from the default config.xml file. If the full file name contains spaces, surround URL with single or double quotes:
+`/S:` specifies the start page of the Enterprise Browser application. Other configuration parameters will be used from the default `Config.xml` file. If the full file name contains spaces, surround URL with single or double quotes:
 
         /S:"file://\HTML\index.html"
         /S:"file://\RE App\index.html"

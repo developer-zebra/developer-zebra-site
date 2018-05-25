@@ -34,7 +34,7 @@ EB 1.8 now supports the following mobile computing devices and operating systems
 * **VC80X** Android Nougat
 
 ### Scanner Support
-EB 1.8 is now supported for use with the following scanners when connected to these Zebra devices and operating systems:
+EB 1.8 is now supported for use with the following scanners when connected to the Zebra devices and operating systems listed:
 
 * **DS3678 Ultra-Rugged Scanner** 
 	* Running Android 7.0 (Nougat) on:
@@ -45,6 +45,8 @@ EB 1.8 is now supported for use with the following scanners when connected to th
  		* TC70X
  		* TC75X
  		* VC80X
+
+See all [supported Zebra devices](../about#mobile). 
 
 <!-- The following is not new to v1.8; mistakenly added when included in a xfer doc table. 
 
@@ -99,6 +101,7 @@ See the [EB download page](../../download) for more information.
 
 * **[SAP ITSmobile Usage Guide](../sap) -** Now offers a new UserAgent section and enhanced Function Key Mapping information. 
 * **[Migration Overview](../migration) -** Lists all options for migrating to Enterprise Browser from other platforms or solutions. 
+* **[Shortcut Utility Guide](../ShortcutCreator) -** Updated to reflect separate utilities for targeting Android and Windows Mobile/CE. 
 
 -----
 

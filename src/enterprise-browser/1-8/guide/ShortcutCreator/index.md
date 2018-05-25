@@ -47,7 +47,7 @@ The Shortcut Utility is included with Zebra Enterprise Browser 1.3. If you don't
 
 ## Using Shortcut Utility
 
-* **Launch the target-specific "Shortcuts Utility"** from the Enterprise Browser folder of the Windows Start Menu, as below. 
+**Launch the target-specific "Shortcuts Utility"** from the corresponding Enterprise Browser folder of the Windows Start Menu, as below:
 
 <img alt="" style="height:300px" src="../../images/Utilities/18_eb_windows_menu.png"/>
 

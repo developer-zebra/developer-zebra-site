@@ -33,7 +33,8 @@ After processing a software order, Zebra Software Distribution Services emails a
 
 1. Follow the download instructions emailed by the Zebra Software Distribution Services.
 2. Locate and unzip the download package, which includes a `setup.exe` installer. 
-3. Launch `setup.exe` to install CartScanPCWedge on a supported PC.<br>The Welcome screen appears:
+3. Launch `setup.exe` to install CartScanPCWedge on a supported PC (thin clients NOT supported).<br>
+The Welcome screen appears:
 <img alt="" style="height:350px" src="figure_01.png"/>
 <br>
 4. **Click Next** to proceed to the "Select Installation Folder" screen. 

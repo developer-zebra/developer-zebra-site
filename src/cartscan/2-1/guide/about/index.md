@@ -11,9 +11,9 @@ CartScan was developed to simplify patient data collection by healthcare workers
 
 ### System Requirements
 
-* **PC running Microsoft Windows 7, 8 or 10** (32- or 64-bit)
+* **PC running Microsoft Windows 7, 8 or 10** (thin clients NOT supported)
 * **Built-in Bluetooth 4.0** or a Bluetooth 4.0 dongle, connected
-* **Supported Zebra device Android**
+* **Supported Zebra device running Android**
 
 ### Supported Devices
 

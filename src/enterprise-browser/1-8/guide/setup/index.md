@@ -90,15 +90,13 @@ An Enterprise Browser "Installer" screen appears similar to the image below. Sup
 ### Mac OS X Installation
 1. Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear.
 
- a. Click on the Mac OS X ".dmg" package. <br>
+ a. Click on the desired Mac OS X "`.dmg`" package(s). <br>
  b. Accept the end-user license agreement to begin the download.
 
-2. When the download completes, double-click the .dmg file to open it. A window similar to the image below appears. 
-3. Drag and drop the Enterprise Browser icon onto the Applications folder (in the direction of the arrow). 
-
-<img alt="" style="height:350px" src="../../images/getting-started/setup/setup-dmg-install.png"/>
-The Enterprise Browser files and folders will be copied into the Application folder on the host Mac, creating a directory structure similar to the one shown in the image below. 
-
+2. When the download completes, double-click the `.dmg` file to open it. Depending on the target platform, a window similar to the images below appear. 
+<img alt="" style="height:350px" src="../../images/getting-started/setup/18_eb-Android_mac_install.png"/>
+<img alt="" style="height:350px" src="../../images/getting-started/setup/18_eb-WinCE_mac_install.png"/>
+3. Drag and drop the Enterprise Browser icon onto the Applications folder (in the direction of the arrow). This copies the Enterprise Browser files and folders into the Application folder on the host Mac, creating a directory structure similar to the one shown in the image below: 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Mac_runtimes.png"/>
 <br>
 

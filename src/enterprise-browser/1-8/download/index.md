@@ -21,10 +21,10 @@ productversion: '1.8'
 * **<u>For Windows targets</u>, seven (7) objects are downloaded**:
  * `EnterpriseBrowserForWindows_1.8.0.0.msi` - **Windows host targeting Windows Mobile/CE devices**
  * `EnterpriseBrowserForWindows_v1.8.0.0.dmg` - **Mac OS X host targeting Windows Mobile/CE devices**
- * `EnterpriseBrowser_1.8.0.0_IE.Cab` - **Enterprise Browser app for Windows CE**
+ * `EnterpriseBrowser_1.8.0.0_IE.Cab` - **Enterprise Browser app for Windows Mobile/CE**
  * `EnterpriseBrowser_1.8.0.0_IE_p.Cab` - **Enterprise Browser app for Windows CE (persistent)**
- * `EnterpriseBrowser_1.8.0.0_WK.Cab` - **Enterprise Browser app for Windows Mobile**
- * `EnterpriseBrowser_1.8.0.0_WK_p.Cab` - **Enterprise Browser app for Windows Mobile (persistent)**
+ * `EnterpriseBrowser_1.8.0.0_WK.Cab` - **Enterprise Browser app for Windows Mobile/CE**
+ * `EnterpriseBrowser_1.8.0.0_WK_p.Cab` - **Enterprise Browser app for Windows CE (persistent)**
  * `EnterpriseBrowserForWindows_1_8_ReleaseNotes.html` - Release notes
 <br>
 

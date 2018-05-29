@@ -78,7 +78,7 @@ The Enterprise Browser deployment tool appears in a window similar to one of the
 <img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Windows_installer.png"/>
 <br>
 
-**To deploy to device(s), skip to the [Deployment to Device(s)](#deploymenttodevices) section, below**. 
+**Instructions continue in the [Deployment to Device(s)](#deploymenttodevices) section, below**. 
 
 -----
 

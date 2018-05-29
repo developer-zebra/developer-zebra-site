@@ -82,11 +82,11 @@ In the same location are custom folders named for each shortcut created, with th
 
 ### Deployment (to single device)
 
-1. After desired shortcuts have been created (using steps 1-8 above), **click Push to Device**. A screen similar the one below will appear. 
-2. **Select the desired platform and click Deploy Shortcuts** to deploy through ADB (Android via USB) or ActiveSync (WM/CE via USB or Bluetooth). Shortcut(s) will be pushed to the device. 
-3. **Launch Enterprise Browser** to create shortcut(s) on the device.  
-
-<img alt="" style="height:150px" src="../../images/Utilities/Shortcut_Creator_04.jpg"/>
+1. After desired shortcuts have been created (using steps 1-8 above), **click Push to Device**. A screen appears similar to one of those below: 
+<img alt="" style="height:150px" src="../../images/Utilities/18_eb_PushShortcutForAndroid.png"/>
+<img alt="" style="height:150px" src="../../images/Utilities/18_eb_PushShortcutForWindows.png"/>
+2. **Click "Deploy Shortcuts"** to deploy through ADB (Android via USB) or ActiveSync (WM/CE via USB or Bluetooth). Shortcut(s) will be pushed to the device. 
+3. **Launch Enterprise Browser** to activate the shortcut(s) on the device.  
 
 **Notes**
 
@@ -180,7 +180,8 @@ Shortcut icons will be visible to the user in the device's main application area
 
 The Shortcut Utility communicates with Android devices via ADB (USB only) and with Windows Mobile/CE devices through Mobile Device Center (or ActiveSync on WinXP) over USB or Bluetooth. If you're seeing a message like the one below or having other communication-related issues, please **refer to the Connections section of the [Enterprise Browser installation guide](../setup#connections)**. 
 
-<img alt="" style="height:150px" src="../../images/Utilities/Shortcut_Creator_05.jpg"/>
+<img alt="" style="height:150px" src="../../images/Utilities/18_EB_android_device_error.png"/>
+<img alt="" style="height:150px" src="../../images/Utilities/18_EB_WinCE_device_error.png"/>
 
 ### Config.xml
 If shortcuts are being deployed to the device but not showing up, **check the `Config.xml` to ensure that the &lt;ShortcutCreationEnabled&gt; tag has a value or 1 or 2**.  

@@ -45,52 +45,47 @@ When Enterprise Browser is uninstalled from an Android device using the Android 
 -----
 
 ### Windows Installation
-Enterprise Browser 1.7 (and higher) for Windows eliminates the need to manually remove a prior EB version before installing a new one. 
+This section describes installation of the "Enterprise Browser for Android" deployment tool on a Windows PC. The installation process is similar for "Enterprise Browser for Windows," which is used to deploy EB to devices running Windows Mobile/CE. 
 
-**To install Enterprise Browser for Windows**:
+-----
+
+**To install "Enterprise Browser for Android" on a Windows PC**:
 
 **&#49;. If upgrading, back up any data stored in the `C:\EnterpriseBrowser` directory of the host PC**. 
 
-**&#50;. THIS STEP IS NOT REQUIRED IF USING EB 1.7 OR HIGHER**: 
-To uninstall EB, select **Start Menu -> Enterprise Browser -> Uninstall Enterprise Browser** (similar to the image below) and follow the prompts. 
+&#50;. Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) and **scroll to find the download for the desired target platform (Android or Windows Mobile/CE)**. About [download package contents](../../download). 
 
-
-<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Android_install_complete.png"/>
-<br>
-
-&#51;. Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html). Then: 
-
-* Scroll to find the desired EB version. The corresponding installation packages for Windows and Mac OS X appear:
+<!-- The corresponding installation packages for Windows and Mac OS X appear:
  * Windows host targeting Android devices
  * Windows host targeting Windows Mobile/CE devices
  * Mac OS X host targeting Android devices
  * Mac OS X host targeting Windows Mobile/CE devices
 
 * For Windows hosts, click on the Windows ".msi" package(s), accept the end-user license agreement and begin the download.
+-->
 
-&#52;. When the download completes, launch the installer(s) and follow the prompts to install. After installation, a screen appears similar to the image below. 
-<br>
-**Click "Close" to quit the installer**. 
+&#51;. **When the download completes**, launch the installer(s) and follow the prompts to install. After installation, a screen appears similar to the image below. **Click "Close" to quit the installer**. 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Android_install_complete.png"/>
 <br>
-&#53;. In the Windows menu, select the desired EB installer:
-<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_windows_menu.png"/>
-<br>
 
-An Enterprise Browser "Installer" screen appears similar to the image below. Supported platform OSes are listed on the left and a description appears at right when a platform is selected.
+&#52;. In the Windows menu, **select the desired EB "installer"** to launch the EB deployment tool:
+<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_windows_menu.png"/>
+
+The Enterprise Browser deployment tool appears in a window similar to one of the images below (depending on the platform being targeted). 
+
+&#53;. Select one of the available platform runtimes to display its description. <br>
 <img alt="" style="height:150px" src="../../images/getting-started/setup/18_EB_Android_installer.png"/>
-<br>
 <img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Windows_installer.png"/>
 <br>
 
-**Windows instructions continue in the [Deployment to Device(s)](#deploymenttodevices) section, below**. 
+**To deploy to device(s), skip to the [Deployment to Device(s)](#deploymenttodevices) section, below**. 
 
 -----
 
 ### Mac OS X Installation
 1. Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) and click on the desired EB version. The corresponding installation packages for Windows and Mac OS X appear.
 
- a. Click on the desired Mac OS X "`.dmg`" package(s). <br>
+ a. Click on the desired Mac OS X `.dmg` package(s). <br>
  b. Accept the end-user license agreement to begin the download.
 
 2. When the download completes, double-click the `.dmg` file to open it. Depending on the target platform, a window similar to the images below appear. 

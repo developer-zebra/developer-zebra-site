@@ -50,6 +50,8 @@ Use this Wizard to erase data on the device using Factory Reset (all data) or En
 
 ### Setup Wizard Manual Bypass
 
+### Setup Wizard Manual Bypass
+
 When staging manually, it's possible to skip the Android Setup and Zebra Setup Wizards (including Analytics opt-out) on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. This feature is **<u>supported only on devices as indicated below</u>**. 
 
 > **IMPORTANT**: If the wizard is partially completed, data entered prior to the bypass scan is applied. 
@@ -59,22 +61,23 @@ When staging manually, it's possible to skip the Android Setup and Zebra Setup W
 The scan-to-bypass wizard feature works only on devices with OS images as indicated below.    
 
 * **8956-platform devices**:
- * **Android Nougat** with BSP49 and newer
- * **Android Marshmallow** with BSP21 (G-00-08) or newer 
+ * **Android Nougat** with Full Image `01-01-49NG-00-A` + LifeGuard Update 07
+ * **Android Marshmallow** with Full Image `M-XX-21-04.01-G-00-08` or newer 
 
 * **TC20/TC25 devices**:
- * **Android Nougat** with BSP 04.14.30 + Patch 1 or newer
+ * **Android Nougat** with Full Image (GMS or non-GMS) `04-14-30-0-NG-00-M1` or newer
 
+**Note**: The 8956 platform includes TC51, TC56, TC70x and TC75x devices. 
 
 #### Update a Device
-To update a device for compatibility with the bypass barcode, please see the relevant page below and following instructions found there. 
+To update a device for compatibility with the bypass barcode, please refer to the relevant page below and follow instructions found there. 
 
 * **[8956-platform device update](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc70-operating-system-gms.html)**
-* **[TC20/TC25 support page](https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc20.html)**
+* **[TC20/TC25 device update](https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc20.html)**
 
 -----
 
-#### Skip setup wizards and run StageNow client on device:
+#### Scan to skip setup wizards and run StageNow client on device:
 
 <img style="height:50px" src="../../images/profiles/skip_suw_and_run_sn.png"/>
 <br>

@@ -105,3 +105,17 @@ From within the branch that develop is merging into:
 * If a new version of MX or OSx is required, edit /partials/navbar-smartdocs.html
 * Build and copy new /mx folder to stage for validation 
 * Once validated and corrected, rebuild and copy to production server
+
+## Update EMDK Sample Code
+
+* In a browser, go to this git help page -> https://github.com/exampleuser/old-repository.git
+* In terminal, go to the current sample-code repo
+* Create a bare clone of the repo using as shown on the help page: 
+ * git clone --bare https://github.com/exampleuser/old-repository.git
+* Mirror-push to the new repo:
+ * cd old-repository.git
+ * git push --mirror https://github.com/exampleuser/new-repository.git
+* Remove the temporary local repository you created in step 1: 
+ * cd ..
+ * rm -rf old-repository.git
+* See emdk-api-generation doc for more details

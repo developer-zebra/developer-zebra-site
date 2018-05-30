@@ -4,10 +4,10 @@ title: Scan and Pair
 description: Shows how the Scan and Pair API is used to programmatically pair Bluetooth devices.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_8'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9'
 features:
   - Profile Manager
   - Scan and Pair

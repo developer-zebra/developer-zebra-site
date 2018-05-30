@@ -35,9 +35,17 @@
 10. When all changes are validated, copy to production-server repo (zebra.github.io).
 
 ### Create new code sample repos for a new EMDK version
+Basic Steps
+1) Create new repo
+2) Clone repo from previous version (to retain folders) and pull repo lcoally https://help.github.com/articles/duplicating-a-repository/
 
-do this: 
-https://help.github.com/articles/duplicating-a-repository/
+3) get latest samples from gerrit  found in master branch (need double check this with Charitha:
+https://gerrit.zebra.com/#/admin/projects/Secure_EMDK/EMDK_Android
+
+4) Update new repo with samples and push
+
+5) Update links in docs
+
 
 ### Create a repo for a new code sample
 

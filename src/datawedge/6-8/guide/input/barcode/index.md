@@ -493,9 +493,13 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 ### Matrix 2of5
 
 **Length1&#42; -** Used to set decode length.
+
 **Length2&#42; -** Used to set decode length.
+
 **Redundancy -** Sets the reader to read the bar code twice before accepting data.
+
 **Report Check Digit -** Transmit Matrix 2of5 data with or without the check digit.
+
 **Verify Check Digit -** Enable this feature to check the integrity of all Matrix 2of5 symbols to verify that the data complies with a specified check digit algorithm.
 
 _&#42; See **[Decode Lengths section](#decodelengths)**, below_

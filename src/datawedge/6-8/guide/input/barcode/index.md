@@ -719,7 +719,7 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 * **Image Capture Only -** Only captures and image and no barcode data will be dispatched.
 
-**Note: Zebra does not recommend changing this parameter when barcode scanning is used with DataWedge. No image data will be processed by DataWedge**.
+**Note: Zebra does not recommend changing the Image Capture Mode parameter when DataWedge is used to scan barcodes; DataWedge does not process image data**.
 
 ------
 
@@ -755,6 +755,10 @@ Reader Parameters control specific configuration options for the barcode reader 
 **Same Symbol Timeout -** Used to prevent the scanner from decoding the same symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
 **Different Symbol Timeout -** Used to prevent the scanner from decoding another symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
+
+-----
+
+**Digimarc Decoding -** Used to enable/disable support for Digimarc, which encodes and invisibly integrates traditional barcode data onto product packaging. **Supported with internal imager only**. Enabled by default. [More about Digimarc](https://www.digimarc.com/). 
 
 -----
 

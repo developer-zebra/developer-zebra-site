@@ -9,20 +9,20 @@ productversion: '6.8'
 
 Introduced in DataWedge 6.7.  
 
-Returns the name of the Profile currently in use by DataWedge.
+Returns the status of the scanner currently selected by DataWedge as the default.
 
 ### Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE", "");
+	i.putExtra("com.symbol.datawedge.api.GET_SCANNER_STATUS", "STANDARD");
 
 
 ### Parameters
 
 **ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.GET_ACTIVE_PROFILE"
+**EXTRA_DATA** [String]: "com.symbol.datawedge.api.GET_SCANNER_STATUS"
 
 **EXTRA VALUE**: Empty string
  
@@ -30,9 +30,15 @@ Returns the name of the Profile currently in use by DataWedge.
 ### Return Values
 Returns a String of the name of the active DataWedge Profile
 
-**EXTRA NAME**: "com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE" 
+**EXTRA NAME**: "com.symbol.datawedge.api.GET_SCANNER_STATUS" 
 
-**EXTRA TYPE** [String]: [ ]
+**EXTRA TYPE** [String]: [ ] **Possible values**:
+* **WAITING** - Scanner is ready to be triggered
+* **SCANNING** - Scanner is emitting a scanner beam 
+* **DISABLED** - Scanner is disabled
+* **CONNECTED** - An external (Bluetooth or serial) scanner is connected
+* **DISCONNECTED** - The external scanner is disconnected
+
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 
@@ -43,35 +49,42 @@ Error messages are logged for invalid actions and parameters.
 
 ## Example Code
 
-	//Sending the intent
+	//Sending the intent to query scanner status
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
-		i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE", "");
+		i.putExtra("com.symbol.datawedge.api.GET_SCANNER_STATUS","STANDARD");
+		i.putExtra("SEND_RESULT","true");
+		i.putExtra("com.symbol.datawedge.api.RESULT_CATEGORY","android.intent.category.DEFAULT");
 		this.sendBroadcast(i);
 
-	//Receiving the result
-		private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver(){
+	// Receiving the results 
+		private BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver(){
+    	@Override
+    	public void onReceive(Context context, Intent intent){
 
-			@Override
-			public void onReceive(Context context, Intent intent){
-
-				Bundle extras = getIntent().getExtras();
-				if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE")){
-					String activeProfile = extras.getString("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE");
-
-
-	// Register/unregister broadcast receiver and filter results
-
-		void registerReceivers() {
-		    IntentFilter filter = new IntentFilter();
-		    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
-		    filter.addCategory("android.intent.category.DEFAULT");
-		    registerReceiver(mybroadcastReceiver, filter);
-		}
-
-		void unRegisterReceivers(){
-		    unregisterReceiver(mybroadcastReceiver);
-		}		
+        if (intent != null) {
+            String command = intent.getStringExtra("COMMAND");
+            String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+            String result = intent.getStringExtra("RESULT");
+            Bundle bundle = new Bundle();
+            String resultInfo = "";
+            if (intent.hasExtra("RESULT_INFO")) {
+                bundle = intent.getBundleExtra("RESULT_INFO");
+                Set<String> keys = bundle.keySet();
+                for (String key : keys) {
+                    resultInfo += key + ": " + bundle.getString(key) + "\n";
+                }
+            }
+            String text = "Command: " + command + "\n" +
+                    "Result: " + result + "\n" +
+                    "Result Info: \n" + resultInfo + "\n" +
+                    "CID:" + commandidentifier;
+            
+            Log.d("TAG", "#DataWedgeTestApp# \nCommand: " + command + "\nResult: " + result + "\nReason:\n" + resultInfo);
+            Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+        	}
+    	};
+	};
 
 ------
 

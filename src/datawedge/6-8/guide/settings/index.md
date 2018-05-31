@@ -29,7 +29,7 @@ _The DataWedge Settings panel_
 
 * **DataWedge enabled -** Controls the DataWedge service. Uncheck this box to disable DataWedge on the device and return control of scanning hardware to the system.
 * **Enable logging -** Enables DataWedge to output logs for viewing with Logcat or in Android Studio or another compatible viewer.
-* **Ignore disabled profiles -** Prevents DataWedge from switching to a Profile that is disabled.  
+* **Ignore disabled profiles -** Prevents DataWedge from switching to a Profile that is not enabled. In such instances, the Profile switch is ignored and the current Profile remains active **Profile0 must be disabled to use this feature**.  
 * **Disabled app list -** Disables scanning functions for selected apps and/or activities anywhere on the device. [See more](#disableapps). 
 * **Import -** Invokes navigation for importing a DataWedge Config file from device storage, replacing the current DataWedge settings. [See more](#importaconfig).
 * **Export -** Exports the current DataWedge configuration to device storage. [See more](#exportaconfig).

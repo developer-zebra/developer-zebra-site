@@ -38,8 +38,12 @@ automenu:
           url: getdatawedgestatus
         - title: Get Disabled App List 
           url: getdisabledapplist
+        - title: Get Ignore Disabled Profiles 
+          url: getignoredisabledprofiles
         - title: Get Profiles List 
           url: getprofileslist
+        - title: Get Scanner Status 
+          url: getscannerstatus
         - title: Get Version Info 
           url: getversioninfo
         - title: Import Config 
@@ -60,6 +64,8 @@ automenu:
           url: setdefaultprofile
         - title: Set Disabled App List 
           url: setdisabledapplist
+        - title: Set Ignore Disabled Profiles 
+          url: setignoredisabledprofiles
         - title: Set Reporting Options 
           url: setreportingoptions   
         - title: Soft Scan Trigger 

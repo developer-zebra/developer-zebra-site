@@ -59,9 +59,12 @@ For Bluetooth scanners, if the device was not previously paired, a pairing barco
 * **Disabled -** No scanner switching occurs when an external scanner is connected or disconnected (default).
 * **On connect -** Selects the external scanner as the default scanning device immediately upon connection. 
 * **On disconnect -** Reverts to a built-in scanner based on its position in an internally managed scanner list (which varies by host device). This is usually the scanner most recently used prior to the external connection (see notes below). 
-* **On connect/disconnect -** Selects a Bluetooth scanner as the default scanning device immediately upon connection; reverts to a built-in scanner based on its position in an internally managed scanner list (which varies by host device). This is usually the scanner most recently used prior to the external connection (see notes below).
+* **On connect/disconnect -** Selects an external scanner as the default scanning device immediately upon connection. Upon disconnection, reverts to the scanner set as the default prior to the external connection.
 
-   
+<!-- 5/30/18 replaced passage below with that above, per eng (TW). 
+* **On connect/disconnect -** Selects a Bluetooth scanner as the default scanning device immediately upon connection; reverts to a built-in scanner based on its position in an internally managed scanner list (which varies by host device). This is usually the scanner most recently used prior to the external connection (see notes below).
+-->
+
 **Notes**: 
 * The system selects the default scanner based on the connection state and the scanner's position in an internally managed scanner list. If the newly connected scanner is lower in the scanner list than the one currently selected as the default scanner, the newly connected scanner becomes the default scanner.
 * On devices with only one built-in scanner or imager, "On disconnect" reverts to that built-in scanner or imager. 
@@ -859,6 +862,8 @@ _When Multi-barcode scanning mode is enabled (as above)_...
 * **Viewfinder Enabled -** Enables only the viewfinder.
 
 * **Static Reticle -** Enables the viewfinder and a red reticle (cross-hairs) in the center of the screen to aid in positioning the barcode for scanning. **This parameter is supported only when the Camera is used for scanning**.
+
+-----
 
 ## Scan Params
 Scan Parameters allow for configuration of Code ID and scanner-specific decoding feedback options for the scanner selected in the Profile being edited. 

@@ -1,13 +1,15 @@
 ---
-title: Get Active Profile 
+title: Get Scanner Status 
 layout: guide.html
 product: DataWedge
 productversion: '6.8'
 ---
 
-## GET_ACTIVE_PROFILE 
+## GET_SCANNER_STATUS
 
-Gets the name of the Profile currently in use by DataWedge.
+Introduced in DataWedge 6.7.  
+
+Returns the name of the Profile currently in use by DataWedge.
 
 ### Function Prototype
 

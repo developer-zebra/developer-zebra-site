@@ -9,6 +9,8 @@ productversion: '6.8'
 
 Used to switch the application's association to the specified Profile. **Specified Profile must not already be associated with another application**; an application cannot be associated with more than one Profile. 
 
+**CAUTION**: Switching to a disabled Profile is prevented if the [GET_IGNORE_DISABLED_PROFILES API](../getignoredisabledprofiles) returns a value of "true."    
+
 ### Profiles Recap
 DataWedge is based on Profiles and Plug-ins. A Profile contains information about how DataWedge will behave with a given application.
 

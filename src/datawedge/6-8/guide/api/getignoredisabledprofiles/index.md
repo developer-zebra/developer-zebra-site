@@ -1,36 +1,36 @@
 ---
-title: Get Active Profile 
+title: Get Ignore Disabled Profiles 
 layout: guide.html
 product: DataWedge
 productversion: '6.8'
 ---
 
-## GET_ACTIVE_PROFILE 
+## GET_IGNORE_DISABLED_PROFILES 
 
-Gets the name of the Profile currently in use by DataWedge.
+Introduced in DataWedge 6.8. 
+
+Returns the status of the "Ignore Disabled Profiles" parameter of DataWedge. If set to true, DataWedge is prevented from switching to any Profile that is not enabled, including Profile0. 
 
 ### Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE", "");
+	i.putExtra("com.symbol.datawedge.api.GET_IGNORE_DISABLED_PROFILES", "");
 
 
 ### Parameters
 
 **ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.GET_ACTIVE_PROFILE"
+**INTENT_EXTRA** [String]: "com.symbol.datawedge.api.GET_IGNORE_DISABLED_PROFILES"
 
-**EXTRA VALUE**: Empty string
- 
 
 ### Return Values
-Returns a String of the name of the active DataWedge Profile
+Returns a String indicating whether DataWedge ignores disabled Profiles
 
-**EXTRA NAME**: "com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE" 
+**EXTRA NAME**: "com.symbol.datawedge.api.GET_IGNORE_DISABLED_PROFILES" 
 
-**EXTRA TYPE** [String]: [ ]
+**POSSIBLE VALUES**: [String]: ["true" , "false" ]
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
 
@@ -41,22 +41,16 @@ Error messages are logged for invalid actions and parameters.
 
 ## Example Code
 
-	//Sending the intent
-		Intent i = new Intent();
-		i.setAction("com.symbol.datawedge.api.ACTION");
-		i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE", "");
-		this.sendBroadcast(i);
+		//Sample code for sending the intent to GET the setting
+			Intent i = new Intent();
+			i.setAction("com.symbol.datawedge.api.ACTION");
+			i.putExtra("com.symbol.datawedge.api.GET_IGNORE_DISABLED_PROFILES","");
 
-	//Receiving the result
-		private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver(){
+		// request and identify the result code
+			i.putExtra("SEND_RESULT","true");
+			i.putExtra("COMMAND_IDENTIFIER","123456789");//user specified unique id
 
-			@Override
-			public void onReceive(Context context, Intent intent){
-
-				Bundle extras = getIntent().getExtras();
-				if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE")){
-					String activeProfile = extras.getString("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE");
-
+			this.sendBroadcast(i);
 
 	// Register/unregister broadcast receiver and filter results
 
@@ -70,6 +64,46 @@ Error messages are logged for invalid actions and parameters.
 		void unRegisterReceivers(){
 		    unregisterReceiver(mybroadcastReceiver);
 		}		
+
+### Receiving the results of GET/SET
+ 
+	//TODO register for receiving the result in the usual method
+	//receiving the results
+		BroadcastReceiver resultReceiver =  new BroadcastReceiver() {
+		    @Override
+	    	public void onReceive(Context context, Intent intent) {
+	        	String command = intent.getStringExtra("COMMAND");
+	        	String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+	        	String result = intent.getStringExtra("RESULT");
+
+	        Bundle bundle;
+        	String resultInfo = "";
+        	if(intent.hasExtra("RESULT_INFO")){
+            	bundle = intent.getBundleExtra("RESULT_INFO");
+            	Set<String> keys = bundle.keySet();
+            	for (String key: keys) {
+                	Object object = bundle.get(key);
+                	if(object instanceof String){
+                    	resultInfo += key + ": "+object+ "\n";
+                	}
+                	else if(object instanceof String[]){
+                    	String[] codes = (String[])object;
+                    	for(String code : codes){
+                        	resultInfo += key + ": "+code+ "\n";
+                    	}
+                	}
+            	}
+        	}
+
+        	String text = "Command: "+command+"\n" +
+            	    "Result: " +result+"\n" +
+                	"Result Info: " +resultInfo + "\n" +
+                	"CID:"+commandIdentifier;
+
+	        Log.d(TAG,text);
+
+    	}
+	};
 
 ------
 

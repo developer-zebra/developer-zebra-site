@@ -1,34 +1,36 @@
 ---
-title: Get Active Profile 
+title: Set Ignore Disabled Profiles 
 layout: guide.html
 product: DataWedge
 productversion: '6.8'
 ---
 
-## GET_ACTIVE_PROFILE 
+## SET_IGNORE_DISABLED_PROFILES 
 
-Gets the name of the Profile currently in use by DataWedge.
+Introduced in DataWedge 6.8. 
+
+Prevents DataWedge from switching to a Profile that is disabled;  including Profile0. Applies to Profile switches initiated through the DataWedge UI and [SWITCH_TO_PROFILE API](../switchtoprofile). 
 
 ### Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE", "");
+	i.putExtra("com.symbol.datawedge.api.SET_IGNORE_DISABLED_PROFILES", "true");
 
 
 ### Parameters
 
 **ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.GET_ACTIVE_PROFILE"
+**EXTRA_DATA** [String]: "com.symbol.datawedge.api.SET_IGNORE_DISABLED_PROFILES"
 
-**EXTRA VALUE**: Empty string
+**POSSIBLE VALUES**: [String]: ["true" , "false" ]
  
 
 ### Return Values
 Returns a String of the name of the active DataWedge Profile
 
-**EXTRA NAME**: "com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE" 
+**EXTRA NAME**: "com.symbol.datawedge.api.SET_IGNORE_DISABLED_PROFILES" 
 
 **EXTRA TYPE** [String]: [ ]
 
@@ -41,35 +43,55 @@ Error messages are logged for invalid actions and parameters.
 
 ## Example Code
 
-	//Sending the intent
+	//Sample code for sending the intent to SET the setting
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
-		i.putExtra("com.symbol.datawedge.api.GET_ACTIVE_PROFILE", "");
+		i.putExtra("com.symbol.datawedge.api.SET_IGNORE_DISABLED_PROFILES","true");
+
+	// request and identify the result code
+		i.putExtra("SEND_RESULT","true");
+		i.putExtra("COMMAND_IDENTIFIER","123456789");//user specified unique id
+
 		this.sendBroadcast(i);
 
-	//Receiving the result
-		private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver(){
+	//TODO register for receiving the result in the usual method
+	//receiving the results
+		BroadcastReceiver resultReceiver =  new BroadcastReceiver() {
+		    @Override
+	    	public void onReceive(Context context, Intent intent) {
+	        	String command = intent.getStringExtra("COMMAND");
+	        	String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+	        	String result = intent.getStringExtra("RESULT");
 
-			@Override
-			public void onReceive(Context context, Intent intent){
+	        Bundle bundle;
+	        String resultInfo = "";
+	        if(intent.hasExtra("RESULT_INFO")){
+	            bundle = intent.getBundleExtra("RESULT_INFO");
+	            Set<String> keys = bundle.keySet();
+	            for (String key: keys) {
+	                Object object = bundle.get(key);
+	                if(object instanceof String){
+	                    resultInfo += key + ": "+object+ "\n";
+	                }
+	                else if(object instanceof String[]){
+	                    String[] codes = (String[])object;
+	                    for(String code : codes){
+	                        resultInfo += key + ": "+code+ "\n";
+                    	}
+                	}
+            	}
+        	}
 
-				Bundle extras = getIntent().getExtras();
-				if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE")){
-					String activeProfile = extras.getString("com.symbol.datawedge.api.RESULT_GET_ACTIVE_PROFILE");
+        	String text = "Command: "+command+"\n" +
+                "Result: " +result+"\n" +
+                "Result Info: " +resultInfo + "\n" +
+                "CID:"+commandIdentifier;
 
+       		Log.d(TAG,text);
 
-	// Register/unregister broadcast receiver and filter results
+    	}
+	};
 
-		void registerReceivers() {
-		    IntentFilter filter = new IntentFilter();
-		    filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
-		    filter.addCategory("android.intent.category.DEFAULT");
-		    registerReceiver(mybroadcastReceiver, filter);
-		}
-
-		void unRegisterReceivers(){
-		    unregisterReceiver(mybroadcastReceiver);
-		}		
 
 ------
 

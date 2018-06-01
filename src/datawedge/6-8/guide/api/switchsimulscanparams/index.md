@@ -9,7 +9,7 @@ productversion: '6.8'
 
 Introduced in DataWedge 6.8. 
 
-Used to pass one or more [SimulScan parameters](../../input/simulscan) as a bundle of intent extras, updating the settings of the active Profile. This API can be used to change SimulScan settings in response to changing conditions at any time. For example, a developer might wish to enable or change the time stamp in use at various times of the day. 
+Used to pass one or more [SimulScan parameters](../../input/simulscan) as a bundle, updating the settings of the active Profile. This API can be used to change SimulScan settings in response to changing conditions at any time. For example, a developer might wish to enable a change of the time stamp being used at various times of the day. 
 
 ### Function Prototype
 

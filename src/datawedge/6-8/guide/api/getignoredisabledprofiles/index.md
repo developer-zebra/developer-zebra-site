@@ -67,14 +67,25 @@ Error messages are logged for invalid actions and parameters.
 
 ### Receiving the results of GET/SET
  
-	//TODO register for receiving the result in the usual method
-	//receiving the results
-		BroadcastReceiver resultReceiver =  new BroadcastReceiver() {
-		    @Override
-	    	public void onReceive(Context context, Intent intent) {
-	        	String command = intent.getStringExtra("COMMAND");
-	        	String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
-	        	String result = intent.getStringExtra("RESULT");
+	// Register/unregister broadcast receiver and filter results
+
+		void registerReceivers() {
+		        IntentFilter filter = new IntentFilter();
+		        filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+		        filter.addCategory("android.intent.category.DEFAULT");
+		        registerReceiver(mybroadcastReceiver, filter);
+		}
+
+		void unRegisterReceivers(){
+		        unregisterReceiver(mybroadcastReceiver);
+		}
+			//receiving the results
+				BroadcastReceiver resultReceiver =  new BroadcastReceiver() {
+				    @Override
+			    	public void onReceive(Context context, Intent intent) {
+			        	String command = intent.getStringExtra("COMMAND");
+			        	String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+			        	String result = intent.getStringExtra("RESULT");
 
 	        Bundle bundle;
         	String resultInfo = "";

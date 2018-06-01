@@ -11,7 +11,7 @@ Introduced in DataWedge 6.8.
 
 Prevents DataWedge from switching to a Profile that is disabled; including Profile0. Applies to Profile switches initiated manually through the DataWedge settings panel and programmatically using the [SWITCH_TO_PROFILE API](../switchtoprofile). 
 
-This API can help address timing issues that sometimes arise in devices running Android, for example when using an EMM to enable and load a DataWedge Profile. If the EMM attempts to switch to a Profile that is not yet enabled, this API prevents that switch and continues to use the current Profile.
+This API can help address timing issues that sometimes arise in Android devices. For example, when using an EMM to enable and load a DataWedge Profile, the EMM might attempt to switch to a Profile that is not yet enabled. This API prevents that switch and continues to use the current Profile.
 
 ### Function Prototype
 
@@ -56,27 +56,25 @@ Error messages are logged for invalid actions and parameters.
 
 		this.sendBroadcast(i);
 
-	//TODO register for receiving the result in the usual method
-
 	// Register/unregister broadcast receiver and filter results
 
-	void registerReceivers() {
-	        IntentFilter filter = new IntentFilter();
-	        filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
-	        filter.addCategory("android.intent.category.DEFAULT");
-	        registerReceiver(mybroadcastReceiver, filter);
-	}
+		void registerReceivers() {
+		        IntentFilter filter = new IntentFilter();
+		        filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+		        filter.addCategory("android.intent.category.DEFAULT");
+		        registerReceiver(mybroadcastReceiver, filter);
+		}
 
-	void unRegisterReceivers(){
-	        unregisterReceiver(mybroadcastReceiver);
-	}
-		//receiving the results
-			BroadcastReceiver mybroadcastReceiver = new BroadcastReceiver() {
-			    @Override
-		    	public void onReceive(Context context, Intent intent) {
-		        	String command = intent.getStringExtra("COMMAND");
-		        	String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
-		        	String result = intent.getStringExtra("RESULT");
+		void unRegisterReceivers(){
+		        unregisterReceiver(mybroadcastReceiver);
+		}
+			//receiving the results
+				BroadcastReceiver mybroadcastReceiver = new BroadcastReceiver() {
+				    @Override
+			    	public void onReceive(Context context, Intent intent) {
+			        	String command = intent.getStringExtra("COMMAND");
+			        	String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+			        	String result = intent.getStringExtra("RESULT");
 
 	        Bundle bundle;
 	        String resultInfo = "";

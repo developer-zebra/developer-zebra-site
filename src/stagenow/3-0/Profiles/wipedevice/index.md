@@ -52,16 +52,19 @@ Use this Wizard to erase data on the device using Factory Reset (all data) or En
 
 When staging manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. On devices with Android N and higher, scanning the barcode bypasses the Android **_and_** Zebra Setup Wizards (including Analytics opt-out). **If the wizard is partially completed, data entered prior to the bypass scan is applied**. 
 
-Bypass features are **<u>supported only on devices as indicated below</u>**: 
+Scan-to-Bypass is **<u>supported only on devices with these minimum BSPs</u>**: 
 
-* **8956-platform devices**:
- * **Android Nougat** with Full Image `01-01-49NG-00-A` (BSP49) + LifeGuard Update 07
+* **8956-platform devices (TC51, TC56, TC70x, TC75x, MC3300 and VC80x, see below)**:
+ * **Android Nougat** with Full Image `01-01-49NG-00-A` (BSP49) + LifeGuard Update 07 or newer
  * **Android Marshmallow** with Full Image `M-XX-21-04.01-G-00-08` (BSP21) or newer 
 
 * **TC20/TC25 devices**:
- * **Android Nougat** with Full Image (GMS or non-GMS) `04-14-30-0-NG-00-M1` or newer
+ * **Android Nougat** with Full Image `04-14-30-0-NG-00-M1` or newer
 
-**Note**: BSP49 can be used on TC51, TC56, TC70x, TC75x, MC3300 and VC80x devices (see below). 
+**Notes**:  
+* Android Setup-Wizard bypass applies only to GMS devices; non-GMS devices do not employ the wizard.
+* Scan-to-Bypass functionality is present in all BSPs newer than those listed above.
+* The BSP in a device is displayed in **Settings > About phone > Build number**.
 
 #### Update a Device
 To update a device for use with the bypass barcode, visit to the relevant page below and follow instructions there. 

@@ -9,7 +9,9 @@ productversion: '6.8'
 
 Introduced in DataWedge 6.8. 
 
-Prevents DataWedge from switching to a Profile that is disabled;  including Profile0. Applies to Profile switches initiated manually through the DataWedge settings panel and programmatically using the [SWITCH_TO_PROFILE API](../switchtoprofile). 
+Prevents DataWedge from switching to a Profile that is disabled; including Profile0. Applies to Profile switches initiated manually through the DataWedge settings panel and programmatically using the [SWITCH_TO_PROFILE API](../switchtoprofile). 
+
+This API can help address timing issues that sometimes arise in devices running Android, for example when using an EMM to enable and load a DataWedge Profile. If the EMM attempts to switch to a Profile that is not yet enabled, this API prevents that switch and continues to use the current Profile.
 
 ### Function Prototype
 

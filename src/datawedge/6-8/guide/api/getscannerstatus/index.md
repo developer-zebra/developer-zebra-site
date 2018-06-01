@@ -15,7 +15,7 @@ Returns the status of the scanner currently selected by DataWedge as the default
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.GET_SCANNER_STATUS", "STANDARD");
+	i.putExtra("com.symbol.datawedge.api.GET_SCANNER_STATUS", "");
 
 
 ### Parameters

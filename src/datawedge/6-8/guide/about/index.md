@@ -39,9 +39,10 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 * **[DataWedge Settings](../settings/#datawedgesettings) allows disabled Profiles to be ignored** to help maintain full functionality at all times 
 * New **[SET_IGNORE_DISABLED_PROFILES API](../api/setignoredisabledprofiles)** configured DataWedge to 
 * New **[GET_IGNORE_DISABLED_PROFILES API](../api/getignoredisabledprofiles)**
-* The **[SET_CONFIG API](../api/setconfig)** now supports: 
+* Updated **[SET_CONFIG API](../api/setconfig)** now supports: 
  * Advanced Data Formatting
  * Digimarc decoding
+* New **[SWITCH_SIMULSCAN_PARAMS API](../api/switchsimulscanparams)** enables runtime changes to SimulScan parameters 
 * **Automatic Profile importing is enhanced** to improve reliability and reduce extra coding 
 
 #### Other changes

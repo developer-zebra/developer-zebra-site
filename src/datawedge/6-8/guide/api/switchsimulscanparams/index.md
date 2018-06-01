@@ -1,43 +1,38 @@
 ---
-title: Switch Scanner Params
+title: Switch SimulScan Params
 layout: guide.html
 product: DataWedge
 productversion: '6.8'
 ---
 
-## SWITCH_SCANNER_PARAMS
+## SWITCH_SIMULSCAN_PARAMS
 
-Introduced in DataWedge 6.5. 
+Introduced in DataWedge 6.8. 
 
-Used to pass one or more [barcode, scanner and/or reader parameters](../../input/barcode/#decoderselection) as intent extras, updating the settings of the active Profile. This API can be used to change scanner settings in response to changing conditions at any time. For example, a developer might wish to enable scanner illumination whenever a low-light condition is detected. 
+Used to pass one or more [SimulScan parameters](../../input/simulscan) as a bundle of intent extras, updating the settings of the active Profile. This API can be used to change SimulScan settings in response to changing conditions at any time. For example, a developer might wish to enable or change the time stamp in use at various times of the day. 
 
 ### Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS", "param_name", "value");
+	i.putExtra("com.symbol.datawedge.api.SWITCH_SIMULSCAN_PARAMS", [bundle]);
 
 ### Parameters
 **ACTION** [String]: "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS"
+**EXTRA_DATA** [String]: "com.symbol.datawedge.api.SWITCH_SIMULSCAN_PARAMS"
 
-**EXTRA_DATA** [bundle]: "&lt;name, value&gt;" - Accepts scanner parameters asname-value pairs
+**EXTRA_DATA** [bundle]: "&lt;name, value&gt;" - Accepts SimulScan parameters as name-value pairs
 
 ### Result Codes
 
 DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
-* **DATAWEDGE_DISABLED -** DataWedge is disabled
-* **PROFILE_DISABLED -** Profile is disabled
-* **PLUGIN_DISABLED -** Scanner plug-in is disabled
-* **SCANNER_DISABLED -** Scanner is disabled
-* **PARAMETER_INVALID -** Given scanner parameter is invalid
-* **PARAMETER_NOT_SUPPORTED -** Given scanner parameter is not supported
+* **VALUE_ALREADY_SET -** No parameters set; equal values previously exist
+* **PARAMETER_INVALID -** Given SimulScan parameter is invalid or not recognized
 * **VALUE_INVALID -** Given value for a scanner parameter is invalid
-* **VALUE_NOT_SUPPORTED -** Given value for a scanner parameter is not supported
 
-Also see the [Result Codes guide](../resultinfo) for more information.  
+See the [Result Codes guide](../resultinfo) for more information.  
 
 ### Return Values
 
@@ -52,53 +47,87 @@ Error messages are logged for invalid actions, missing parameters or other failu
 
 ## Example Code
 
-The code below passes an intent that switches a scanner parameter for the active scanner in the active profile. To verify results of the switch (or if errors are expected), include the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
+The code below shows how to pass an intent that switches SimulScan parameters for the current scanner in the active Profile. To verify results of the switch (or if errors are expected), include the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
 
-		:::javascript
-	// create the intent and action
+
+		ap<String,String> templateParamsMap = new HashMap<>();
+		String regionSeparator = null;
+		String logDirectory = null;
+		Boolean timestamp = null;
+
+		//Create param bundle
+		Bundle paramBundle = new Bundle();
+		paramBundle.putString("simulscan_input_source", deviceSelection);
+		paramBundle.putString("simulscan_template", templateSelection);
+
+		if(templateParamsMap.size()>0){
+		    Bundle templateParamsBundle = new Bundle();
+		    Set<String> paramNameSet = templateParamsMap.keySet();
+		    for(String paramName: paramNameSet){
+		        templateParamsBundle.putString(paramName, templateParamsMap.get(paramName));
+		    }
+		    paramBundle.putBundle("simulscan_template_params",templateParamsBundle);
+		}
+
+		paramBundle.putString("simulscan_region_separator", regionSeparator);
+		paramBundle.putString("simulscan_log_dir", logDirectory);
+		paramBundle.putString("simulscan_enable_timestamp", timestamp.toString());
+
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.SWITCH_SIMULSCAN_PARAMS", paramBundle);
 
-		Bundle bScannerParams = new Bundle();
-		bScannerParams.putString("illumination_mode", "off");
-		bScannerParams.putString("decode_audio_feedback_uri", "Pollux");
+		//request and identify the result code
+		i.putExtra("SEND_RESULT","true");
+		i.putExtra("COMMAND_IDENTIFIER","123456789");//user specified unique id
 
-		i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS", bScannerParams);
-
-	// generate result codes
-		i.putExtra(“RECEIVE_RESULT”,"true");
-		i.putExtra("COMMAND_IDENTIFIER", "123456789"); //returned as it is with the result
-
-	// send the intent
 		this.sendBroadcast(i);
 
-	// register the broadcast receiver (for result codes)
-		:::javascript
-		String command = intent.getStringExtra("COMMAND");
-		String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
-		String result = intent.getStringExtra("RESULT");
+### Recieve the result
 
-		Bundle bundle = new Bundle();
-		String resultInfo = "";
+	//get the results
+	BroadcastReceiver resultReceiver =  new BroadcastReceiver() {
+	    @Override
+	    public void onReceive(Context context, Intent intent) {
+	        String command = intent.getStringExtra("COMMAND");
+	        String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+	        String result = intent.getStringExtra("RESULT");
 
-		if (intent.hasExtra("RESULT_INFO")) {
-			bundle = intent.getBundleExtra("RESULT_INFO");
-			Set<String> keys = bundle.keySet();
-			    for (String key : keys) {
-			        if(key.equalsIgnoreCase("RESULT_CODE")){
-			            resultInfo += key + ": " + Arrays.toString(bundle.getStringArray(key));
-			        }else {
-			            resultInfo += key + ": " + bundle.getString(key) + "\n";
-		        }
-		    }
-		}
+        Bundle bundle;
+        String resultInfo = "";
+        if(intent.hasExtra("RESULT_INFO")){
+            bundle = intent.getBundleExtra("RESULT_INFO");
+            Set<String> keys = bundle.keySet();
+            for (String key: keys) {
+                Object object = bundle.get(key);
+                if(object instanceof String){
+                    resultInfo += key + ": "+object+ "\n";
+                }
+                else if(object instanceof String[]){
+                    String[] codes = (String[])object;
+                    for(String code : codes){
+                        resultInfo += key + ": "+code+ "\n";
+                    }
+                }
+            }
+        }
+
+        String text = "Command: "+command+"\n" +
+                "Result: " +result+"\n" +
+                "Result Info: " +resultInfo + "\n" +
+                "CID:"+commandIdentifier;
+
+        	Log.d("TAG",text);
+
+    	}
+	};
 
 ### Notes
 
 **Pre-conditions and assumptions**:
 
 * DataWedge and the respective Profile must be enabled
-* Barcode scanning should be enabled in the active Profile
+* SimulScan scanning should be enabled in the active Profile
 * If Intent contains an invalid or unsupported scanner parameter or value, result code(s) will be sent
 
 -----

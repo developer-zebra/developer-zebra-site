@@ -70,12 +70,12 @@ automenu:
           url: setreportingoptions   
         - title: Soft Scan Trigger 
           url: softscantrigger
-        - title: Switch to Profile 
-          url: switchtoprofile
         - title: Switch Scanner 
           url: switchscanner
         - title: Switch Scanner Params 
           url: switchscannerparams
         - title: Switch SimulScan Params 
           url: switchsimulscanparams
+        - title: Switch to Profile 
+          url: switchtoprofile
 ---

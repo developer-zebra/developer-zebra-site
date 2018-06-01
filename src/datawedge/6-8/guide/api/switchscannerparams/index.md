@@ -22,7 +22,7 @@ Used to pass one or more [barcode, scanner and/or reader parameters](../../input
 
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS"
 
-**EXTRA_DATA** [bundle]: "&lt;name, value&gt;" - Accepts scanner parameters asname-value pairs
+**EXTRA_DATA** [bundle]: "&lt;name, value&gt;" - Accepts scanner parameters as name-value pairs
 
 ### Result Codes
 

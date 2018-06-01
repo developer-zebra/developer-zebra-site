@@ -9,7 +9,7 @@ productversion: '6.8'
 
 Introduced in DataWedge 6.8. 
 
-Prevents DataWedge from switching to a Profile that is disabled;  including Profile0. Applies to Profile switches initiated through the DataWedge UI and [SWITCH_TO_PROFILE API](../switchtoprofile). 
+Prevents DataWedge from switching to a Profile that is disabled;  including Profile0. Applies to Profile switches initiated manually through the DataWedge settings panel and programmatically using the [SWITCH_TO_PROFILE API](../switchtoprofile). 
 
 ### Function Prototype
 
@@ -55,13 +55,26 @@ Error messages are logged for invalid actions and parameters.
 		this.sendBroadcast(i);
 
 	//TODO register for receiving the result in the usual method
-	//receiving the results
-		BroadcastReceiver resultReceiver =  new BroadcastReceiver() {
-		    @Override
-	    	public void onReceive(Context context, Intent intent) {
-	        	String command = intent.getStringExtra("COMMAND");
-	        	String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
-	        	String result = intent.getStringExtra("RESULT");
+
+	// Register/unregister broadcast receiver and filter results
+
+	void registerReceivers() {
+	        IntentFilter filter = new IntentFilter();
+	        filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+	        filter.addCategory("android.intent.category.DEFAULT");
+	        registerReceiver(mybroadcastReceiver, filter);
+	}
+
+	void unRegisterReceivers(){
+	        unregisterReceiver(mybroadcastReceiver);
+	}
+		//receiving the results
+			BroadcastReceiver mybroadcastReceiver = new BroadcastReceiver() {
+			    @Override
+		    	public void onReceive(Context context, Intent intent) {
+		        	String command = intent.getStringExtra("COMMAND");
+		        	String commandIdentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+		        	String result = intent.getStringExtra("RESULT");
 
 	        Bundle bundle;
 	        String resultInfo = "";

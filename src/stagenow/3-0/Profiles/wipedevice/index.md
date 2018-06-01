@@ -64,7 +64,7 @@ Bypass features are **<u>supported only on devices as indicated below</u>**:
 **Note**: BSP49 can be used on TC51, TC56, TC70x, TC75x, MC3300 and VC80x devices (see below). 
 
 #### Update a Device
-To update a device for compatibility with the bypass barcode, please refer to the relevant page below and follow instructions found there. 
+To update a device for use with the bypass barcode, visit to the relevant page below and follow instructions there. 
 
 * **[TC51, TC56, TC70x, TC75x OS update page](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc70-operating-system-gms.html)** - Android M or N
 * **[MC3300 OS update page](https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/mc3300.html)** - Android N 

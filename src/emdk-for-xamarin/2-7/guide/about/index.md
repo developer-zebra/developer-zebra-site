@@ -80,6 +80,8 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 * VC80x  - Nougat
 * WT6000 - Lollipop
 
+> **This version cannot target devices running KitKat**
+
 ### Scanners and imagers
 
 * RS507
@@ -101,8 +103,7 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
     * Xamarin Studio (deprecated)
         * 6.x
 
-> **This version cannot target devices running KitKat**. 
-
+> **EMDK for Xamarin 2.7 is the last version to support Visual Studio 2013 and 2015**
 -----
 
 ### Deprecations

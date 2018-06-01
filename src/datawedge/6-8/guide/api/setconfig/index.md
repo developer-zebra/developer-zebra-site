@@ -119,10 +119,15 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 	* `string_pos` [string] – String position (default=0)
 	* `string_len` [string] - String length (default=0)
 	* `ACTIONS` [bundle] - Takes value(s) from the [Actions table](#actions) below; specify Actions as `EXTRA_DATA`.
-	* `DEVICE` [bundle] - takes values		
-		* the other
+	* `DEVICES` [bundle] - Takes values:		
+		* device_id [string] - "BARCODE", "MSR", "SIMULSCAN", "SERIAL"
+		* 
+
 	* DECODER
-	* LABEL_ID
+	* LABEL_ID [bundle] - Takes values
+		* GS1
+		* HIBCC
+		* ICCBBA
 
  `alldevices` [string] - Accept data from all supported input sources or not
  

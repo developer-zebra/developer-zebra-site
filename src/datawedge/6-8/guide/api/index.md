@@ -76,4 +76,6 @@ automenu:
           url: switchscanner
         - title: Switch Scanner Params 
           url: switchscannerparams
+        - title: Switch SimulScan Params 
+          url: switchsimulscanparams
 ---

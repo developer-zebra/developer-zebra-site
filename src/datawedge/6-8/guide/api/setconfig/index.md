@@ -144,8 +144,6 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 
 ### ADF ACTIONS
 
-
-### Supported ADF Actions
 <table rules="all"
 width="100%"
 frame="border"
@@ -157,18 +155,18 @@ cellspacing="0" cellpadding="4">
 <thead>
 <tr>
 <th align="left" valign="top">Category</th>
-<th align="left" valign="top">Type, parameters</th>
+<th align="left" valign="top">Type<br>parameter(s)</th>
 <th align="left" valign="top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td rowspan="5" align="left" valign="top"><p class="table">Cursor Movement</p></td>
-<td align="left" valign="top"><p class="table">SKIP_AHEAD, action _param_1</p></td>
+<td rowspan="5" align="left" valign="top"><p class="table"><strong>Cursor Movement</strong></p></td>
+<td align="left" valign="top"><p class="table">SKIP_AHEAD<br>action _param_1</p></td>
 <td align="left" valign="top"><p class="table">Moves the cursor forward by the specified number of characters (default=1)</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">SKIP_BACK, action _param_1</p></td>
+<td align="left" valign="top"><p class="table">SKIP_BACK<br>action _param_1</p></td>
 <td align="left" valign="top"><p class="table">Moves the cursor back by the specified number of characters (default=1)</p></td>
 </tr>
 <tr>
@@ -176,15 +174,15 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Moves the cursor to the beginning of the data</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">MOVE_AHEAD_TO, action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Moves the cursor forward until the string specified in the data field is found</p></td>
+<td align="left" valign="top"><p class="table">MOVE_AHEAD_TO<br>action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Moves the cursor forward until the specified string is found</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">MOVE_PAST_A, action_param_1</p></td>
-<td align="left" valign="top"><div><div class="paragraph"><p>Moves the cursor forward past the string specified in the data field</p></div></div></td>
+<td align="left" valign="top"><p class="table">MOVE_PAST_A<br>action_param_1</p></td>
+<td align="left" valign="top"><div><div class="paragraph"><p>Moves the cursor forward past the specified string</p></div></div></td>
 </tr>
 <tr>
-<td rowspan="12" align="left" valign="top"><p class="table">Data Modification</p></td>
+<td rowspan="14" align="left" valign="top"><p class="table"><strong>Data Modification</strong></p></td>
 <td align="left" valign="top"><p class="table">CRUNCH_SPACES</p></td>
 <td align="left" valign="top"><p class="table">Reduce spaces between words to one, and remove all spaces at the beginning and end of the data</p></td>
 </tr>
@@ -209,7 +207,7 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Disables the previous <strong>TRIM_LEFT_ZEROS</strong> action</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">PAD_LEFT_ZEROS, action_param_1</p></td>
+<td align="left" valign="top"><p class="table">PAD_LEFT_ZEROS<br>action_param_1</p></td>
 <td align="left" valign="top"><p class="table">Left-pad data with the specified number of zeros (default=0)</p></td>
 </tr>
 <tr>
@@ -217,7 +215,7 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Disables the previous <strong>PAD_LEFT_ZEROS</strong> action</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">PAD_LEFT_SPACES, action_param_1</p></td>
+<td align="left" valign="top"><p class="table">PAD_LEFT_SPACES<br>action_param_1</p></td>
 <td align="left" valign="top"><p class="table">Left-pad data with the specified number of spaces (default=0)</p></td>
 </tr>
 <tr>
@@ -225,7 +223,7 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Disables the previous <strong>PAD_LEFT_SPACES</strong> action</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">REPLACE_STRING, action_param_1,  action_param_2</p></td>
+<td align="left" valign="top"><p class="table">REPLACE_STRING<br>action_param_1<br>  action_param_2</p></td>
 <td align="left" valign="top"><p class="table">Replaces a specified string (action_param_1) with a new specified string (action_param_2). Both must be specified (default=empty)</p></td>
 </tr>
 <tr>
@@ -233,7 +231,7 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Stop all <strong>REPLACE_STRING</strong> actions</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">REMOVE_CHARACTERS, action_param_1 thru action_param_3</p></td>
+<td align="left" valign="top"><p class="table">REMOVE_CHARACTERS<br>action_param_1<br>action_param_2<br>action_param_3</p></td>
 <td align="left" valign="top"><p class="table">Remove the number of characters specified in given positions when send actions are executed<br>action_param_1: (0=front (default), 1=in between, 2, 3(<br>action_param_2: start position (default=0)<br>action_param_3: number of characters (default=0)</p></td>
 </tr>
 <tr>
@@ -241,8 +239,8 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Stops removing characters from subsequent send actions</p></td>
 </tr>
 <tr>
-<td rowspan="6" align="left" valign="top"><p class="table">Data Sending</p></td>
-<td align="left" valign="top"><p class="table">SEND_NEXT, action_param_1</p></td>
+<td rowspan="6" align="left" valign="top"><p class="table"><strong>Data Sending</strong></p></td>
+<td align="left" valign="top"><p class="table">SEND_NEXT<br>action_param_1</p></td>
 <td align="left" valign="top"><p class="table">Sends the specified number of characters from the current cursor position (default=0)</p></td>
 </tr>
 <tr>
@@ -250,7 +248,7 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Sends all data that remains from the current cursor position</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">SEND_UP_TO, action_param_1</p></td>
+<td align="left" valign="top"><p class="table">SEND_UP_TO<br>action_param_1</p></td>
 <td align="left" valign="top"><p class="table">Sends all data up to the specified string</p></td>
 </tr>
 <tr>
@@ -258,96 +256,21 @@ cellspacing="0" cellpadding="4">
 <td align="left" valign="top"><p class="table">Pauses the specified number of milliseconds (default = 0; max. = 120000) before executing the next action. <strong>Zebra recommends pausing 50 ms after sending any ENTER, LINE FEED or TAB character</strong>.</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">SEND_STRING, action_param_1</p></td>
+<td align="left" valign="top"><p class="table">SEND_STRING<br>action_param_1</p></td>
 <td align="left" valign="top"><p class="table">Sends the specified string</p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">SEND_CHAR, action_param_1</p></td>
+<td align="left" valign="top"><p class="table">SEND_CHAR<br>action_param_1</p></td>
 <td align="left" valign="top"><p class="table">Sends the specified ASCII/ Unicode character. The maximum Unicode character value is U-10FFFF (1114111 in decimal)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-**Notes**: 
-* **Default Action values are 0, empty or none** unless otherwise noted.
-* **To help minimize data loss**, Zebra recommends sending a Pause Action of 50 ms after sending any ENTER, LINE FEED or TAB character.
+**Notes**:
+* **Default action_param values are 0, empty or none** unless otherwise noted.
+* **To help minimize data loss**, Zebra recommends sending a DELAY of 50 ms after sending any ENTER, LINE FEED or TAB character.
 
-
-DELAY
-action_param_1 – number of milliseconds (default - 0)
-(max – 120000 ms)
-
-MOVE_AHEAD_TO
-action_param_1 – string to search for (default - empty)
-
-MOVE_PAST_A
-action_param_1 – string to search for (default - empty)
-
-REMOVE_SPACES
-None
-
-STOP_REMOVE_SPACES
-None
-
-CRUNCH_SPACES
-None
-
-STOP_CRUNCH_SPACE
-None
-
-TRIM_LEFT_ZEROS
-None
-(Remove leading zeros)
-
-STOP_TRIM_LEFT_ZEROS
-None
-
-PAD_LEFT_ZEROS
-action_param_1 – number of zeros (default - 0)
-
-STOP_PAD_LEFT_ZEROS
-None
-
-PAD_LEFT_SPACES
-action_param_1 – number of spaces (default - 0)
-
-STOP_PAD_LEFT_SPACES
-None
-
-REPLACE_STRING
-action_param_1 – string to search for (default - empty)
-action_param_2 – string to replace with (default - empty)
-
-STOP_REPLACE_ALL
-None
-
-SEND_STRING
-action_param_1 – string to search for (default - empty)
-
-SEND_CHAR
-action_param_1 – ASCII/ Unicode character (default – 32 space)
-Comments:
-Maximum Unicode character value can be entered is U-10FFFF (= 1114111 in decimal).
-
-
-REMOVE_CHARACTERS
-action_param_1 – 0,1,2,3 (default - 0)
-action_param_2 – start position number (default - 0)
-action_param_3 – number of characters (default - 0)
-Comments: 
-action_param_1 – 0 front, 1 - in between, 2 – end, 3 – center.
-action_param_2 is applicable if action_param_1 is 1 (in between).
-
-
-STOP_REMOVE_CHARS 
-None
-
-
-**Important Notes**:
-
-* **A default rule is created** if a created Profile contains no rules.
-* **Default rule values are used** if values in the bundle are empty or invalid.
-* **To update any existing action(s) in a rule**, all action parameters in the original rule must be sent.
+-----
 
 #### APP_LIST
 An array of bundles that contains a set of `PACKAGE_NAMES` and an `ACTIVITY_LIST` to be associated with the Profile. 
@@ -358,6 +281,8 @@ Contains the following properties:
 **PACKAGE_NAME** [String]: ex: "com.symbol.emdk.barcodesample1" or a wildcard (&#42;) character 
 
 **ACTIVITY_LIST** [List]: A list of activities for the `PACKAGE_NAME`. Wildcard (&#42;) character also supported.
+
+-----
 
 ### Scanner Identifiers
 The scanner identifier (introduced in DataWedge 6.5) permits scanners to be identified by a friendly name rather than an index number. 
@@ -377,6 +302,8 @@ The scanner identifier (introduced in DataWedge 6.5) permits scanners to be iden
 * **PLUGABLE_SSI** - Serial SSI scanner RS429 (for use with WT6000)
 * **PLUGABLE_SSI_RS5000** - Serial SSI scanner RS5000 (for use with WT6000)
 * **USB_SSI_DS3608** - DS3608 pluggable USB scanner
+
+-----
 
 ### Result Codes
 

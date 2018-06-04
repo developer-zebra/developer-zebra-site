@@ -107,7 +107,7 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 
  `bdf_send_enter` [string]- true/false
 
-* **ADF -** Applies Advanced Data Formatting rules to the acquired data. Takes values:
+* **ADF -** Applies Advanced Data Formatting rules to the acquired data. This bundle contains Action, Device, Decoder and Label_ID sub-bundles, and takes values:
 
  `adf_enabled` [string] – true/false (default=false)
 
@@ -115,54 +115,162 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 
 	* `name` [string] – Name of the ADF rule to use
 	* `enabled` [string] – Rule enabled; true/false (default=true)
+	* `alldevices` [string] – Accept data from all supported input sources; true/false (default=true)	
 	* `string` [string] – String to check for (default=empty string)
 	* `string_pos` [string] – String position (default=0)
 	* `string_len` [string] - String length (default=0)
-	* `ACTIONS` [bundle] - Takes value(s) from the [Actions table](#actions) below; specify Actions as `EXTRA_DATA`.
-	* `DEVICES` [bundle] - Takes values:		
-		* device_id [string] - "BARCODE", "MSR", "SIMULSCAN", "SERIAL"
-		* 
+	* `ACTIONS` [bundle] - Accepts multiple instances. Takes value(s): 
+		* `type` [string] - Name of Action from [ADF Actions table](#adfactions)
+		* `action_param_1`, `action_param_2`... (as determined by Action; see table)
+	* `DEVICES` [bundle] - Accepts multiple instances. Takes values:
+		* `device_id` [string] - Name of the input source: "BARCODE", "MSR", "SIMULSCAN", "SERIAL"
+		* `enabled` [string] - Accept data from specified device ID: true/false (default=true)
+		* `alldecoders` [string] - Allow all barcode symbologies: true/false (default=true)
+		* `all_label_ids` [string] - Allow all UDI label IDs: true/false (default=true)
+	* `DECODERS` [bundle] - Accepts multiple instances. Takes values:
+		* `device_id` [string] - (i.e. "BARCODE")
+		* `decoder` [string] - (i.e. "Australian Postal")
+		* `enabled` [string] - true/false (default=true)
+	* `LABEL_IDS` [bundle] - Accepts multiple instances. Takes values:
+		* `device_id` [string] - (i.e. "BARCODE")
+		* `label_id` [string] - "GS1", "HIBCC", "ICCBBA"
+		* `enabled` [string] - true/false (default=true)
 
-	* DECODER
-	* LABEL_ID [bundle] - Takes values
-		* GS1
-		* HIBCC
-		* ICCBBA
+**IMPORTANT**: 
 
- `alldevices` [string] - Accept data from all supported input sources or not
- 
- `type` [string] –Name of the action (Ex: Remove characters)
- 
- `device_id` [string] – Name of the input source
- 
- `enabled` [string] – Accept data from this source or not
- 
- `alldecoders` [string] – Allow all barcode symbologies
- 
- `all_label_ids` [string] – Allow all UDI label IDs
- 
- `decoder` [string] – Name of the decoder
- 
- `label_id` [string] – Name of the label id
+* **If a Profile is created without at least one Rule**, DataWedge creates a Rule with default values. 
+* **If values in a newly created Rule are missing or invalid**, DataWedge uses default values. 
+* **To update Actions in an existing Profile** using an intent, all Actions in the Profile must be included in the intent. 
 
-DEVICES
-device_id i.e. BARCODE, MSR, SIMULSCAN 
-enabled true/false(default-true)
-alldecoders true/false(default-true)
-all_label_ids true/false(default-true)
-
-DECODERS
-device_id i.e. BARCODE
-decoder i.e. Australian Postal
-enabled true/false (default=true)
-
-LABEL IDS
-device_id i.e. BARCODE
-label_id i.e. UDI_GS1
-enabled true/false (default=true)
+### ADF ACTIONS
 
 
-### ACTIONS
+### Supported ADF Actions
+<table rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<caption class="title"></caption>
+<col width="22%" />
+<col width="22%" />
+<col width="55%" />
+<thead>
+<tr>
+<th align="left" valign="top">Category</th>
+<th align="left" valign="top">Type, parameters</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="5" align="left" valign="top"><p class="table">Cursor Movement</p></td>
+<td align="left" valign="top"><p class="table">SKIP_AHEAD, action _param_1</p></td>
+<td align="left" valign="top"><p class="table">Moves the cursor forward by the specified number of characters (default=1)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">SKIP_BACK, action _param_1</p></td>
+<td align="left" valign="top"><p class="table">Moves the cursor back by the specified number of characters (default=1)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">SKIP_TO_START</p></td>
+<td align="left" valign="top"><p class="table">Moves the cursor to the beginning of the data</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">MOVE_AHEAD_TO, action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Moves the cursor forward until the string specified in the data field is found</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">MOVE_PAST_A, action_param_1</p></td>
+<td align="left" valign="top"><div><div class="paragraph"><p>Moves the cursor forward past the string specified in the data field</p></div></div></td>
+</tr>
+<tr>
+<td rowspan="12" align="left" valign="top"><p class="table">Data Modification</p></td>
+<td align="left" valign="top"><p class="table">CRUNCH_SPACES</p></td>
+<td align="left" valign="top"><p class="table">Reduce spaces between words to one, and remove all spaces at the beginning and end of the data</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_CRUNCH_SPACE</p></td>
+<td align="left" valign="top"><p class="table">Disables the last <strong>Crunch spaces</strong> action</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">REMOVE_SPACES</p></td>
+<td align="left" valign="top"><p class="table">Remove all spaces in the data</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_REMOVE_SPACES</p></td>
+<td align="left" valign="top"><p class="table">Disables the last <strong>Remove all spaces</strong> action</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">TRIM_LEFT_ZEROS</p></td>
+<td align="left" valign="top"><p class="table">Remove all zeros at the beginning of data</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_TRIM_LEFT_ZEROS</p></td>
+<td align="left" valign="top"><p class="table">Disables the previous <strong>TRIM_LEFT_ZEROS</strong> action</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">PAD_LEFT_ZEROS, action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Left-pad data with the specified number of zeros (default=0)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_PAD_LEFT_ZEROS</p></td>
+<td align="left" valign="top"><p class="table">Disables the previous <strong>PAD_LEFT_ZEROS</strong> action</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">PAD_LEFT_SPACES, action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Left-pad data with the specified number of spaces (default=0)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_PAD_LEFT_SPACES</p></td>
+<td align="left" valign="top"><p class="table">Disables the previous <strong>PAD_LEFT_SPACES</strong> action</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">REPLACE_STRING, action_param_1,  action_param_2</p></td>
+<td align="left" valign="top"><p class="table">Replaces a specified string (action_param_1) with a new specified string (action_param_2). Both must be specified (default=empty)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_REPLACE_ALL</p></td>
+<td align="left" valign="top"><p class="table">Stop all <strong>REPLACE_STRING</strong> actions</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">REMOVE_CHARACTERS, action_param_1 thru action_param_3</p></td>
+<td align="left" valign="top"><p class="table">Remove the number of characters specified in given positions when send actions are executed<br>action_param_1: (0=front (default), 1=in between, 2, 3(<br>action_param_2: start position (default=0)<br>action_param_3: number of characters (default=0)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_REMOVE_CHARS</p></td>
+<td align="left" valign="top"><p class="table">Stops removing characters from subsequent send actions</p></td>
+</tr>
+<tr>
+<td rowspan="6" align="left" valign="top"><p class="table">Data Sending</p></td>
+<td align="left" valign="top"><p class="table">SEND_NEXT, action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Sends the specified number of characters from the current cursor position (default=0)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">SEND_REMAINING</p></td>
+<td align="left" valign="top"><p class="table">Sends all data that remains from the current cursor position</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">SEND_UP_TO, action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Sends all data up to the specified string</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">DELAY</p></td>
+<td align="left" valign="top"><p class="table">Pauses the specified number of milliseconds (default = 0; max. = 120000) before executing the next action. <strong>Zebra recommends pausing 50 ms after sending any ENTER, LINE FEED or TAB character</strong>.</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">SEND_STRING, action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Sends the specified string</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">SEND_CHAR, action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Sends the specified ASCII/ Unicode character. The maximum Unicode character value is U-10FFFF (1114111 in decimal)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+**Notes**: 
+* **Default Action values are 0, empty or none** unless otherwise noted.
+* **To help minimize data loss**, Zebra recommends sending a Pause Action of 50 ms after sending any ENTER, LINE FEED or TAB character.
 
 
 DELAY

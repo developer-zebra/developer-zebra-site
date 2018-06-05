@@ -175,7 +175,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">MOVE_AHEAD_TO<br>action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Moves the cursor forward until the specified string is found</p></td>
+<td align="left" valign="top"><p class="table">Known as "Move to" in the DataWedge UI, advances the cursor until the specified string is found</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">MOVE_PAST_A<br>action_param_1</p></td>
@@ -192,7 +192,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">REMOVE_SPACES</p></td>
-<td align="left" valign="top"><p class="table">Remove all spaces in the data</p></td>
+<td align="left" valign="top"><p class="table">Known as "Remove all spaces" in the DataWedge UI, removes all spaces in the data</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">STOP_REMOVE_SPACES</p></td>
@@ -200,7 +200,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">TRIM_LEFT_ZEROS</p></td>
-<td align="left" valign="top"><p class="table">Remove all zeros at the beginning of data</p></td>
+<td align="left" valign="top"><p class="table">Known as "Remove leading zeros" in the DataWedge UI, removes all zeros at the beginning of data</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">STOP_TRIM_LEFT_ZEROS</p></td>
@@ -208,7 +208,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">PAD_LEFT_ZEROS<br>action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Left-pad data with the specified number of zeros (default=0)</p></td>
+<td align="left" valign="top"><p class="table">Known as "Pad with zeros" in the DataWedge UI, left-pads data with the specified number of zeros (default=0)</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">STOP_PAD_LEFT_ZEROS</p></td>
@@ -216,7 +216,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">PAD_LEFT_SPACES<br>action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Left-pad data with the specified number of spaces (default=0)</p></td>
+<td align="left" valign="top"><p class="table">Known as "Pad with spaces" in the DataWedge UI, left-pads data with the specified number of spaces (default=0)</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">STOP_PAD_LEFT_SPACES</p></td>
@@ -228,7 +228,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">STOP_REPLACE_ALL</p></td>
-<td align="left" valign="top"><p class="table">Stop all <strong>REPLACE_STRING</strong> actions</p></td>
+<td align="left" valign="top"><p class="table">Known as "Stop all replace string" in the DataWedge UI, stops all <strong>REPLACE_STRING</strong> actions</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">REMOVE_CHARACTERS<br>action_param_1<br>action_param_2<br>action_param_3</p></td>
@@ -253,7 +253,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">DELAY</p></td>
-<td align="left" valign="top"><p class="table">Pauses the specified number of milliseconds (default = 0; max. = 120000) before executing the next action. <strong>Zebra recommends pausing 50 ms after sending any ENTER, LINE FEED or TAB character</strong>.</p></td>
+<td align="left" valign="top"><p class="table">Known as "Send pause" in the DataWedge UI, pauses the specified number of milliseconds (default = 0; max. = 120000) before executing the next action. <strong>Zebra recommends pausing 50 ms after sending any ENTER, LINE FEED or TAB character</strong>.</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">SEND_STRING<br>action_param_1</p></td>

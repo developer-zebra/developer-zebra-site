@@ -287,7 +287,7 @@ Contains the following properties:
 ### Scanner Identifiers
 The scanner identifier (introduced in DataWedge 6.5) permits scanners to be identified by a friendly name rather than an index number. 
 
-**SCANNER_IDENTIFIER** [String]: in each scanner info bundle for each scanner supported in the device. Both parameters are supported in DataWedge and higher; the scanner identifier value takes precedence if an index also is referenced in the code.  
+**SCANNER_IDENTIFIER** [String]: Present in each scanner info bundle for each scanner supported in the device. Index and identifier parameters are both supported in DataWedge and higher; the scanner identifier value takes precedence if an index also is referenced in the code.  
 
 **Possible values**:
 

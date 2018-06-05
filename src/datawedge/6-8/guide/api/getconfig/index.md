@@ -7,30 +7,42 @@ productversion: '6.8'
 
 ## GET_CONFIG
 
-Introduced in DataWedge 6.5. 
+Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of value pairs or a Plug-in config bundle. 
 
-Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of value pairs. 
+### Version History
+* **Introduced in DataWedge 6.5**
+* **DataWedge 6.8 -** added support for ADF settings
 
-###Function Prototype
+### Function Prototype
 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.GET_CONFIG", "<profile name>");
 
-## Parameters
+### Parameters
 
-**ACTION** [String]: "com.symbol.datawedge.api.ACTION"
+**ACTION** [string]: "com.symbol.datawedge.api.ACTION"
 
-**EXTRA_DATA** [String]: "com.symbol.datawedge.api.GET_CONFIG"
+**EXTRA_DATA** [string]: "com.symbol.datawedge.api.GET_CONFIG"
 
-**EXTRA VALUE** [Bundle]: "&lt;Profile name&gt;", "&lt;Plug-in&gt;"
+**EXTRA VALUE** [bundle]: "&lt;PROFILE_NAME&gt;", "&lt;PLUGIN_CONFIG&gt;"
+
+* `PLUGIN_CONFIG` [bundle] - 
+ * `PLUGIN_NAME` [string] - single plug-in name (i.e. "barcode") or ArrayList of plugin names:
+	* `PROCESS_PLUGIN_NAME` [list of bundles] - For example:
+	 * `PLUGIN_NAME` - "ADF", "BDF"
+	 * `OUTPUT_PLUGIN_NAME` - "KEYSTROKE"
+	* ...
+	 * `PLUGIN_NAME` - "BDF"	
+	 * `OUTPUT_PLUGIN_NAME` - "INTENT"
+
+#### Notes: 
+* The PROCESS_PLUGIN_NAME parameter must be used to query process Plug-ins (ADF and BDF); the default GET_CONFIG intent cannot retrieve information about process Plug-ins. 
+* Non-existent values will be returned as empty extras. 
 
 **SCANNER_IDENTIFIER** [String]: Present in each scanner info bundle for each scanner supported in the device. Index and identifier parameters are both supported in DataWedge 6.6 and higher; the scanner identifier value takes precedence if an index also is referenced in the code.  
 
- `scanner_selection_by_identifier` [string]- takes a value from the list of Scanner Identifiers below:
-
-**Possible values**:
-
+* `scanner_selection_by_identifier` [string]- takes a value from the list of Scanner Identifiers below:
 * **AUTO** - Automatic scanner selection
 * **INTERNAL_IMAGER** - Built-in imager scanner
 * **INTERNAL_LASER** - Built-in laser scanner
@@ -44,8 +56,8 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 * **USB_SSI_DS3608** - DS3608 pluggable USB scanner
 
 
-## Return Values
-Returns a nested bundle with the Profile name, status and a Profile config bundle containing the param list as a bundle.  
+### Return Values
+Returns a nested bundle with the Profile name, status and a Profile config bundle containing the `PARAM_LIST` bundle.  
 
 **EXTRA NAME**: "com.symbol.datawedge.api.GET_CONFIG_RESULT" 
 
@@ -55,13 +67,13 @@ Returns a nested bundle with the Profile name, status and a Profile config bundl
 
 The main Get_Result_Config bundle contains the following properties:
 
-**PROFILE_NAME** [String]: Name of the Profile being queried
+**PROFILE_NAME** [string]: Name of the Profile being queried
 
-**PROFILE_ENABLED** [String]: True/False
+**PROFILE_ENABLED** [string]: True/False
 
 **PLUGIN_CONFIG** [bundle]: Nested bundle with the following properties:
-* **PLUGIN_NAME** [String]: Name of the Plug-in being reported (i.e. Barcode)  
-* **PARAM_LIST** [Bundle]: Nested List of name-value pairs:
+* **PLUGIN_NAME** [string]: Name of the Plug-in being reported (i.e. Barcode)  
+* **PARAM_LIST** [bundle]: Nested List of name-value pairs. For example:
   * current-device-index, 0
   * Aztec, True
   * Canadian_Postal, False
@@ -77,8 +89,9 @@ Error and debug messages are logged to the Android logging system, which can be 
 
 Error messages are logged for invalid actions and parameters.
 
-## Example Code
+## Example Code	
 
+<!-- 
 	// SENDING THE INTENT
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
@@ -94,6 +107,151 @@ Error messages are logged for invalid actions and parameters.
 				Bundle extras = getIntent().getExtras();
 				if (intent.hasExtra("com.symbol.datawedge.api.GET_CONFIG")){
 					String[] profilesList = intent.getStringArrayExtra("com.symbol.datawedge.api.GET_CONFIG_RESULT")
+
+ -->
+
+### Send GET_CONFIG intent
+
+	Bundle bMain = new Bundle();
+	bMain.putString("PROFILE_NAME", "DWDemo");
+	Bundle bConfig = new Bundle();
+	ArrayList<Bundle> pluginName = new ArrayList<>();
+
+	Bundle pluginInternal = new Bundle();
+	pluginInternal.putString("PLUGIN_NAME", "ADF");//can put a list "ADF,BDF"
+	pluginInternal.putString("OUTPUT_PLUGIN_NAME","KEYSTROKE");
+	pluginName.add(pluginInternal);
+	bConfig.putParcelableArrayList("PROCESS_PLUGIN_NAME", pluginName);
+	bMain.putBundle("PLUGIN_CONFIG", bConfig);
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.GET_CONFIG", bMain);
+	this.sendBroadcast(i);
+
+### Receive the GET_CONFIG result
+
+	private BroadcastReceiver myBroadcastReceiver = new BroadcastReceiver() {
+		@Override
+		public void onReceive(Context context, Intent intent) {
+
+        Bundle extras = intent.getExtras();
+        Set<String> keys = extras.keySet();
+        for(String key: keys){
+            Log.d(TAG,"key:"+key);
+        }
+
+        if (extras.containsKey("com.symbol.datawedge.api.RESULT_GET_CONFIG")) {
+            Bundle bundle = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG");
+            if(bundle != null && !bundle.isEmpty()){
+                String profileName = bundle.getString("PROFILE_NAME");
+                String profileEnabled = bundle.getString("PROFILE_ENABLED");
+                ArrayList<Bundle> configBundleList = bundle.getParcelableArrayList("PLUGIN_CONFIG");
+                if(configBundleList!=null) {
+                    for (Bundle configBundle : configBundleList) {
+                        String pluginName = configBundle.getString("PLUGIN_NAME");
+                        Log.d(TAG, "\n Plugin Name :" + pluginName);
+
+	if (pluginName!=null && pluginName.equalsIgnoreCase("ADF")) {
+	            String pluginEnabled = configBundle.getString("adf_enabled");
+	            Log.d(TAG, " Plugin Enabled :" + pluginEnabled);
+	            if(configBundle.containsKey("PARAM_LIST")){
+	                Object object = configBundle.get("PARAM_LIST");
+	                if(object!=null && object instanceof ArrayList){
+	                    ArrayList<Bundle> paramArrayList = (ArrayList)object;
+	                    for(Bundle rule : paramArrayList){
+	                        String name = rule.getString("name");
+	                        String enabled = rule.getString("enabled");
+	                        String priority = rule.getString("priority");
+	                        String alldevices = rule.getString("alldevices");
+	                        String string = rule.getString("string");
+	                        String stringPos = rule.getString("string_pos");
+	                        String stringLen = rule.getString("string_len");
+
+                        Log.d(TAG, "Rule ->");
+                        Log.d(TAG, " name :" + name);
+                        Log.d(TAG, " enabled :" + enabled);
+                        Log.d(TAG, " priority :" + priority);
+                        Log.d(TAG, " alldevices :" + alldevices);
+                        Log.d(TAG, " string :" + string);
+                        Log.d(TAG, " stringPos :" + stringPos);
+                        Log.d(TAG, " stringLen :" + stringLen);
+                        ArrayList<Bundle> actions = rule.getParcelableArrayList("ACTIONS");
+                        if(actions!=null){
+                            Log.d(TAG,"\n  Actions->");
+                            for(Bundle action: actions){
+                                String type = action.getString("type");
+                                Object param_1 = action.get("action_param_1");
+                                Object param_2 = action.get("action_param_2");
+                                Object param_3 = action.get("action_param_3");
+
+                                Log.d(TAG,"  type:"+type);
+                                if(param_1!=null && param_1 instanceof String){
+                                    Log.d(TAG,"  param_1:"+param_1);
+                                }
+                                if(param_2!=null && param_2 instanceof String){
+                                    Log.d(TAG,"  param_2:"+param_2);
+                                }
+                                if(param_3!=null && param_3 instanceof String){
+                                    Log.d(TAG,"  param_3:"+param_3);
+                                }
+
+                            }
+                        }
+                        ArrayList<Bundle> devices = rule.getParcelableArrayList("DEVICES");
+                        if(devices!=null){
+                            Log.d(TAG,"\n  Devices->");
+                            for(Bundle device: devices){
+                                String type = device.getString("device_id");
+                                Object param_1 = device.get("enabled");
+                                Object param_2 = device.get("alldecoders");
+                                Object param_3 = device.get("all_label_ids");
+
+                                Log.d(TAG,"  Device ID:"+type);
+                                if(param_1!=null && param_1 instanceof String){
+                                    Log.d(TAG,"      Enabled:"+param_1);
+                                }
+                                if(param_2!=null && param_2 instanceof String){
+                                    Log.d(TAG,"  All decoders:"+param_2);
+                                }
+                                if(param_3!=null && param_3 instanceof String){
+                                    Log.d(TAG,"  All labelids:"+param_3);
+                                }
+
+                            }
+                        }
+                        ArrayList<Bundle> decoders = rule.getParcelableArrayList("DECODERS");
+                        if(decoders!=null){
+                            Log.d(TAG,"\n  Decoders->");
+                            for(Bundle decoder: decoders){
+                                String deviceID = decoder.getString("device_id");
+                                String decoderEnabled = decoder.getString("enabled");
+                                String decoderID = decoder.getString("decoder");
+
+                                    Log.d(TAG,"        Device ID:"+deviceID);
+                                    Log.d(TAG,"  Decoder Enabled:"+decoderEnabled);
+                                    Log.d(TAG,"       Decoder ID:"+decoderID);
+                            }
+                        }
+
+                        ArrayList<Bundle> labelIDs = rule.getParcelableArrayList("LABEL_IDS");
+                        if(labelIDs!=null){
+                            Log.d(TAG,"\n  LabelIDs->");
+                            for(Bundle labelID: labelIDs){
+                                String deviceID = labelID.getString("device_id");
+                                String lblEnabled = labelID.getString("enabled");
+                                String lblID = labelID.getString("label_id");
+
+                                    Log.d(TAG,"      Device ID:"+deviceID);
+                                    Log.d(TAG,"  Label Enabled:"+lblEnabled);
+                                    Log.d(TAG,"       Label ID:"+lblID);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 ### Get Plug-ins

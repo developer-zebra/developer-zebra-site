@@ -138,9 +138,9 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 
 **IMPORTANT**: 
 
-* **If a Profile is created without at least one Rule**, DataWedge creates a Rule with default values. 
-* **If values in a newly created Rule are missing or invalid**, DataWedge uses default values. 
-* **To update Actions in an existing Profile** using an intent, all Actions in the Profile must be included in the intent. 
+* **If a Profile is created without at least one Rule**, DataWedge creates a "Rule0" with a single action to "SEND_REMAINING" data without modification. 
+* **If values in one or more newly created Rules are missing or invalid**, DataWedge uses default values. 
+* **To update one or more Actions in an existing Profile** using an intent, all Actions in the Profile must be included in the intent. 
 
 ### ADF ACTIONS
 
@@ -196,7 +196,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">STOP_REMOVE_SPACES</p></td>
-<td align="left" valign="top"><p class="table">Disables the last <strong>Remove all spaces</strong> action</p></td>
+<td align="left" valign="top"><p class="table">Disables the last <strong>REMOVE_SPACES</strong> action</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">TRIM_LEFT_ZEROS</p></td>
@@ -601,10 +601,163 @@ Process Plug-ins manipulate the acquired data in a specified way before sending 
 		i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
 		this.sendBroadcast(i);
 
+### Set ADF processing
+
+	//MAIN BUNDLE PROPERTIES
+	Bundle bMain = new Bundle();
+	bMain.putString("PROFILE_NAME","ProfileTest");
+	bMain.putString("PROFILE_ENABLED","true");
+	bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
+
+	//PLUGIN_CONFIG BUNDLE PROPERTIES
+	Bundle bConfig = new Bundle();
+	bConfig.putString("PLUGIN_NAME","ADF");
+	bConfig.putString("RESET_CONFIG","true");
+	bConfig.putString("OUTPUT_PLUGIN_NAME","KEYSTROKE");
+	bConfig.putString("adf_enabled","true");
+
+	//PARAM_LIST BUNDLE PROPERTIES
+	//RULE BUNDLE PROPERTIES
+	Bundle bParamsRule1 = new Bundle();
+	bParamsRule1.putString("name","Rule1");
+	bParamsRule1.putString("enabled","true");
+	bParamsRule1.putString("alldevices","true");
+	bParamsRule1.putString("string","abc");
+	bParamsRule1.putString("string_pos","2");
+	bParamsRule1.putString("string_len","4");
+
+	//ACTION BUNDLE PROPERTIES
+	Bundle bParamsAction1 = new Bundle();
+	bParamsAction1.putString("type","SEND_NEXT");
+	bParamsAction1.putString("action_param_1","5");
+
+
+	//ACTION BUNDLE PROPERTIES
+	Bundle bParamsAction2 = new Bundle();
+	bParamsAction2.putString("type","SKIP_BACK");
+
+	//DEVICE BUNDLE PROPERTIES
+	Bundle bParamsDevice1 = new Bundle();
+	bParamsDevice1.putString("device_id","BARCODE");
+	bParamsDevice1.putString("enabled","true");
+	bParamsDevice1.putString("alldecoders","false");
+	bParamsDevice1.putString("all_label_ids","false");
+
+	//DEVICE BUNDLE PROPERTIES
+	Bundle bParamsDevice2 = new Bundle();
+	bParamsDevice2.putString("device_id","MSR");
+	bParamsDevice2.putString("enabled","true");
+
+	//DEVICE BUNDLE PROPERTIES
+	Bundle bParamsDevice3 = new Bundle();
+	bParamsDevice3.putString("device_id","SIMULSCAN");
+	bParamsDevice3.putString("enabled","true");
+
+	//DECODER BUNDLE PROPERTIES
+	Bundle bParamsDecoders1 = new Bundle();
+	bParamsDecoders1.putString("device_id","BARCODE");
+	bParamsDecoders1.putString("decoder","Australian Postal");
+	bParamsDecoders1.putString("enabled","true");
+
+	//DECODER BUNDLE PROPERTIES
+	Bundle bParamsDecoders2 = new Bundle();
+	bParamsDecoders2.putString("device_id","BARCODE");
+	bParamsDecoders2.putString("decoder","Bookland");
+	bParamsDecoders2.putString("enabled","false");
+
+	//DECODER BUNDLE PROPERTIES
+	Bundle bParamsDecoders3 = new Bundle();
+	bParamsDecoders3.putString("device_id","BARCODE");
+	bParamsDecoders3.putString("decoder","Codebar");
+	bParamsDecoders3.putString("enabled","true");
+
+	//LABEL ID BUNDLE PROPERTIES
+	Bundle bParamsLabelID1 = new Bundle();
+	bParamsLabelID1.putString("device_id","BARCODE");
+	bParamsLabelID1.putString("label_id","UDI_GS1");
+	bParamsLabelID1.putString("enabled","true");
+
+	//LABEL ID BUNDLE PROPERTIES
+	Bundle bParamsLabelID2 = new Bundle();
+	bParamsLabelID2.putString("device_id","BARCODE");
+	bParamsLabelID2.putString("label_id","UDI_HIBCC");
+	bParamsLabelID2.putString("enabled","true");
+
+	ArrayList<Bundle> bParamsActionList = new ArrayList<Bundle>();
+	bParamsActionList.add(bParamsAction1);
+	bParamsActionList.add(bParamsAction2);
+
+	ArrayList<Bundle> bParamsDeviceList = new ArrayList<Bundle>();
+	bParamsDeviceList.add(bParamsDevice1);
+	bParamsDeviceList.add(bParamsDevice2);
+	bParamsDeviceList.add(bParamsDevice3);
+
+	ArrayList<Bundle> bParamsDecoderList = new ArrayList<Bundle>();
+	bParamsDecoderList.add(bParamsDecoders1);
+	bParamsDecoderList.add(bParamsDecoders2);
+	bParamsDecoderList.add(bParamsDecoders3);
+
+	ArrayList<Bundle> bParamsLabelIDList = new ArrayList<Bundle>();
+	bParamsLabelIDList.add(bParamsLabelID1);
+	bParamsLabelIDList.add(bParamsLabelID2);
+
+	bParamsRule1.putParcelableArrayList("ACTIONS",bParamsActionList);
+	bParamsRule1.putParcelableArrayList("DEVICES",bParamsDeviceList);
+	bParamsRule1.putParcelableArrayList("DECODERS",bParamsDecoderList);
+	bParamsRule1.putParcelableArrayList("LABEL_IDS",bParamsLabelIDList);
+
+	Bundle bParamsRule2 = new Bundle();
+	bParamsRule2.putString("name","Rule30");
+	bParamsRule2.putString("enabled","true");
+	bParamsRule2.putString("alldevices","true");
+	bParamsRule2.putString("string","cde");
+	bParamsRule2.putString("string_pos","3");
+	bParamsRule2.putString("string_len","5");
+
+	ArrayList<Bundle> bParamsList = new ArrayList<Bundle>();
+	bParamsList.add(bParamsRule1);
+	bParamsList.add(bParamsRule2);
+
+	bConfig.putParcelableArrayList("PARAM_LIST", bParamsList);
+
+	bMain.putBundle("PLUGIN_CONFIG", bConfig);
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+	i.putExtra("SEND_RESULT", "true");
+	i.putExtra("COMMAND_IDENTIFIER", "ADF_API");
+	this.sendBroadcast(i);
+
+	// GET RESULT CODE
+	public void onReceive(Context context, Intent intent){
+
+    String command = intent.getStringExtra("COMMAND");
+    String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+    String result = intent.getStringExtra("RESULT");
+
+    Bundle bundle = new Bundle();
+    String resultInfo = "";
+    if(intent.hasExtra("RESULT_INFO")){
+        bundle = intent.getBundleExtra("RESULT_INFO");
+        Set<String> keys = bundle.keySet();
+        for (String key: keys) {
+            resultInfo += key + ": "+bundle.getString(key) + "\n";
+        }
+    }
+
+    String text = "Command: "+command+"\n" +
+            "Result: " +result+"\n" +
+            "Result Info: " +resultInfo + "\n" +
+            "CID:"+commandidentifier;
+    Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+	};
+ 
+
 ### Set/Get Result Codes
 Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. 
 
-**Note: Modify this generic code to match the API being used**.  
+**Note: This <u>generic code must be modified</u> to match the API being used**.  
 
 	// send the intent
 		Intent i = new Intent();

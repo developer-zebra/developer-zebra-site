@@ -27,7 +27,7 @@ Used to pass one or more [SimulScan parameters](../../input/simulscan) as a bund
  * `simulscan_template` [string] - 
  * `simulscan_region_separator`	[string] - 
  * `simulscan_log_dir` [string] - 
- * `simulscan_enable_timestamp` [string] -  
+ * `simulscan_enable_timestamp` [string] - true/false
  * `simulscan_template_params` [bundle] - User-defined bundle of custom parameters
 
 ### Result Codes

@@ -22,7 +22,13 @@ Used to pass one or more [SimulScan parameters](../../input/simulscan) as a bund
 
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.SWITCH_SIMULSCAN_PARAMS"
 
-**EXTRA_DATA** [bundle]: "&lt;name, value&gt;" - Accepts SimulScan parameters as name-value pairs
+**EXTRA_DATA** [bundle]: "&lt;name, value&gt;" - Accepts the following SimulScan parameters as name-value pairs:
+ * `simulscan_input_source`	[string] - 
+ * `simulscan_template` [string] - 
+ * `simulscan_region_separator`	[string] - 
+ * `simulscan_log_dir` [string] -
+ * `simulscan_enable_timestamp` [string] - 
+
 
 ### Result Codes
 
@@ -30,7 +36,7 @@ DataWedge returns the following error codes if the app includes the intent extra
 
 * **VALUE_ALREADY_SET -** No parameters set; equal values previously exist
 * **PARAMETER_INVALID -** Given SimulScan parameter is invalid or not recognized
-* **VALUE_INVALID -** Given value for a scanner parameter is invalid
+* **VALUE_INVALID -** Given value for a SimulScan parameter is invalid
 
 See the [Result Codes guide](../resultinfo) for more information.  
 
@@ -50,7 +56,7 @@ Error messages are logged for invalid actions, missing parameters or other failu
 The code below shows how to pass an intent that switches SimulScan parameters for the current scanner in the active Profile. To verify results of the switch (or if errors are expected), include the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
 
 
-		ap<String,String> templateParamsMap = new HashMap<>();
+		HashMap<String,String> templateParamsMap = new HashMap<>();
 		String regionSeparator = null;
 		String logDirectory = null;
 		Boolean timestamp = null;

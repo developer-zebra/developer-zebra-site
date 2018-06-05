@@ -155,7 +155,7 @@ cellspacing="0" cellpadding="4">
 <thead>
 <tr>
 <th align="left" valign="top">Category</th>
-<th align="left" valign="top">Type<br>parameter(s)</th>
+<th align="left" valign="top">Action Type<br>Parameter(s) (if any)</th>
 <th align="left" valign="top">Description</th>
 </tr>
 </thead>
@@ -184,7 +184,7 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td rowspan="14" align="left" valign="top"><p class="table"><strong>Data Modification</strong></p></td>
 <td align="left" valign="top"><p class="table">CRUNCH_SPACES</p></td>
-<td align="left" valign="top"><p class="table">Reduce spaces between words to one, and remove all spaces at the beginning and end of the data</p></td>
+<td align="left" valign="top"><p class="table">Reduces spaces between words to one, and removes all spaces at the beginning and end of the data</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">STOP_CRUNCH_SPACE</p></td>
@@ -200,7 +200,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">TRIM_LEFT_ZEROS</p></td>
-<td align="left" valign="top"><p class="table">Known as "Remove leading zeros" in the DataWedge UI, removes all zeros at the beginning of data</p></td>
+<td align="left" valign="top"><p class="table">Known as "Remove leading zeros" in the DataWedge UI, removes all zeros at the beginning of the data</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">STOP_TRIM_LEFT_ZEROS</p></td>
@@ -208,7 +208,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">PAD_LEFT_ZEROS<br>action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Known as "Pad with zeros" in the DataWedge UI, left-pads data with the specified number of zeros (default=0)</p></td>
+<td align="left" valign="top"><p class="table">Known as "Pad with zeros" in the DataWedge UI, left-pads the data with the specified number of zeros (default=0)</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">STOP_PAD_LEFT_ZEROS</p></td>
@@ -216,7 +216,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">PAD_LEFT_SPACES<br>action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Known as "Pad with spaces" in the DataWedge UI, left-pads data with the specified number of spaces (default=0)</p></td>
+<td align="left" valign="top"><p class="table">Known as "Pad with spaces" in the DataWedge UI, left-pads the data with the specified number of spaces (default=0)</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">STOP_PAD_LEFT_SPACES</p></td>
@@ -232,7 +232,7 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">REMOVE_CHARACTERS<br>action_param_1<br>action_param_2<br>action_param_3</p></td>
-<td align="left" valign="top"><p class="table">Remove the number of characters specified in given positions when send actions are executed<br>action_param_1: (0=front (default), 1=in between, 2, 3(<br>action_param_2: start position (default=0)<br>action_param_3: number of characters (default=0)</p></td>
+<td align="left" valign="top"><p class="table">Removes the number of characters specified in given positions when send actions are executed<br>action_param_1: (0=front (default); 1=in between; 2=end; 3=center)<br>action_param_2: start position (default=0)<br>action_param_3: number of characters (default=0)</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">STOP_REMOVE_CHARS</p></td>

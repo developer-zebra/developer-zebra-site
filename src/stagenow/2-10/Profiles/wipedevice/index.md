@@ -50,29 +50,31 @@ Use this Wizard to erase data on the device using Factory Reset (all data) or En
 
 ### Setup Wizard Manual Bypass
 
-When staging manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. On devices with Android N and higher, scanning the barcode bypasses the Android **_and_** Zebra Setup Wizards (including Analytics opt-out). **If the wizard is partially completed, data entered prior to the bypass scan is applied**. 
+When staging manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. On devices with Android N and higher, scanning the barcode bypasses the Android **_and_** Zebra Setup Wizards (including Analytics opt-out). **If the Android Setup wizard is partially completed, data entered prior to the bypass scan is applied**. 
 
-Scan-to-Bypass is **<u>supported only on devices with these minimum BSPs</u>**: 
+Scan-to-Bypass is **<u>supported only on these Zebra devices and minimum BSPs</u>**: 
 
-* **8956-platform devices (TC51, TC56, TC70x, TC75x, MC3300 and VC80x, see below)**:
- * **Android Nougat** with Full Image `01-01-49NG-00-A` (BSP49) + LifeGuard Update 07 or newer
- * **Android Marshmallow** with Full Image `M-XX-21-04.01-G-00-08` (BSP21) or newer 
-
+* **TC51, TC56, TC70x and TC75x**:
+ * **Android Marshmallow** with Full Image `01-21-04.1-MG` (BSP21) or newer 
+<br>
+* **MC3300, TC51, TC56, TC70x, TC75x and VC80x**:
+ * **Android Nougat** with Full Image `01-01-49NG-00-A` (BSP49) or newer
+<br>
 * **TC20/TC25 devices**:
  * **Android Nougat** with Full Image `04-14-30-0-NG-00-M1` or newer
 
-**Notes**:  
-* Android Setup-Wizard bypass applies only to GMS devices; non-GMS devices do not employ the wizard.
-* Scan-to-Bypass functionality is present in all BSPs newer than those listed above.
-* The BSP in a device is displayed in **Settings > About phone > Build number**.
+#### Notes 
+* **Android Setup-wizard bypass applies only to GMS devices**; non-GMS devices do not employ the wizard.
+* **Scan-to-bypass functionality is present in all BSPs newer than those listed above**.
+* Go to **Settings > About phone > Build number** to display the BSP in a device.
 
-#### Update a Device
+#### Update Device
 To update a device for use with the bypass barcode, visit to the relevant page below and follow instructions there. 
 
-* **[TC51, TC56, TC70x, TC75x OS update page](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc70-operating-system-gms.html)** - Android M or N
-* **[MC3300 OS update page](https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/mc3300.html)** - Android N 
-* **[VC80x OS update page](https://www.zebra.com/us/en/support-downloads/mobile-computers/vehicle-mounted/vc80x.html)** - Android N
-* **[TC20/TC25 OS update page](https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc20.html)** - Android N
+* **[TC51, TC56, TC70x, TC75x OS update page](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc70-operating-system-gms.html)** - Android M, N or newer
+* **[MC33 OS update page](https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/mc3300.html)** - Android N or newer
+* **[VC80x OS update page](https://www.zebra.com/us/en/support-downloads/mobile-computers/vehicle-mounted/vc80x.html)** - Android N or newer
+* **[TC20/TC25 OS update page](https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/tc20.html)** - Android N or newer
 
 -----
 

@@ -123,17 +123,17 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 		* `type` [string] - Name of Action from [ADF Actions table](#adfactions)
 		* `action_param_1`, `action_param_2`... (as determined by Action; see table)
 	* `DEVICES` [bundle] - Accepts multiple instances. Takes values:
-		* `device_id` [string] - Name of the input source: "BARCODE", "MSR", "SIMULSCAN", "SERIAL"
+		* `device_id` [string] - Name of the input source: "BARCODE", "MSR", "SIMULSCAN" or "SERIAL"
 		* `enabled` [string] - Accept data from specified device ID: true/false (default=true)
 		* `alldecoders` [string] - Allow all barcode symbologies: true/false (default=true)
 		* `all_label_ids` [string] - Allow all UDI label IDs: true/false (default=true)
 	* `DECODERS` [bundle] - Accepts multiple instances. Takes values:
-		* `device_id` [string] - (i.e. "BARCODE")
+		* `device_id` [string] - "BARCODE", "MSR", "SERIAL" or "SIMULSCAN"
 		* `decoder` [string] - (i.e. "Australian Postal")
 		* `enabled` [string] - true/false (default=true)
 	* `LABEL_IDS` [bundle] - Accepts multiple instances. Takes values:
-		* `device_id` [string] - (i.e. "BARCODE")
-		* `label_id` [string] - "GS1", "HIBCC", "ICCBBA"
+		* `device_id` [string] - "BARCODE", "MSR", "SERIAL" or "SIMULSCAN"
+		* `label_id` [string] - "UDI_GS1", "UDI_HIBCC", "UDI_ICCBBA"
 		* `enabled` [string] - true/false (default=true)
 
 **IMPORTANT**: 
@@ -317,6 +317,7 @@ DataWedge returns the following error codes if the app includes the intent extra
 * **PARAMETER_INVALID -** FAILURE 
 * **APP_ALREADY_ASSOCIATED -** FAILURE
 * **OPERATION_NOT_ALLOWED -** FAILURE
+* **RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME -** Rule name empty or undefined in `ADF_RULE` bundle
 
 Also see the [Result Codes guide](../resultinfo) for more information.  
 

@@ -47,6 +47,10 @@ Zebra partners and other authorized users can create custom templates online usi
 * Line feed 
 * Carriage return 
 
+**Log directory –** used to change the default folder path (`/storage/emulated/0/simulscan/logs`) for storing the SimulScan logs on the device. **Note**: SimulScan logging is enabled/disabled by the SimulScan template in use; logging is not controlled by DataWedge. 
+
+**Timestamp –** Enable/disable automatic insertion of a timestamp (`yyyy-MM-dd HH:mm:ss`) along with acquired data.
+
 ### SimulScan Notes 
 
 * **DataWedge concatenates all text captured through SimulScan** into a single string and performs processing on that string. 

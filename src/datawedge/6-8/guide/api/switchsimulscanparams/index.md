@@ -67,41 +67,34 @@ Error messages are logged for invalid actions, missing parameters or other failu
 
 The code below shows how to pass an intent that switches SimulScan parameters for the current scanner in the active Profile. To verify results of the switch (or if errors are expected), include the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
 
+	HashMap<String,String> templateParamsMap = new HashMap<>();
+	String regionSeparator = null;
+	String logDirectory = null;
+	Boolean timestamp = null;
 
-		HashMap<String,String> templateParamsMap = new HashMap<>();
-		String regionSeparator = null;
-		String logDirectory = null;
-		Boolean timestamp = null;
+	//Create param bundle
+	Bundle paramBundle = new Bundle();
+	paramBundle.putString("simulscan_input_source", ”Camera”);
+	paramBundle.putString("simulscan_template", ”BankCheck.xml”);
 
-		//Create param bundle
-		Bundle paramBundle = new Bundle();
-		paramBundle.putString("simulscan_input_source", deviceSelection);
-		paramBundle.putString("simulscan_template", templateSelection);
+	//add dynamic parameters bundle
+	Bundle templateParamsBundle = new Bundle();
+	templateParamsBundle.putString("dynamic_quantity",”3”);
+	paramBundle.putBundle("simulscan_template_params",templateParamsBundle);
+	paramBundle.putString("simulscan_region_separator", “TAB”);
+	paramBundle.putString("simulscan_log_dir",”/storage/emulated/0/simulscan/logs”);
+	paramBundle.putString("simulscan_enable_timestamp", “true”);
 
-		if(templateParamsMap.size()>0){
-		    Bundle templateParamsBundle = new Bundle();
-		    Set<String> paramNameSet = templateParamsMap.keySet();
-		    for(String paramName: paramNameSet){
-		        templateParamsBundle.putString(paramName, templateParamsMap.get(paramName));
-		    }
-		    paramBundle.putBundle("simulscan_template_params",templateParamsBundle);
-		}
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SWITCH_SIMULSCAN_PARAMS", paramBundle);
 
-		paramBundle.putString("simulscan_region_separator", regionSeparator);
-		paramBundle.putString("simulscan_log_dir", logDirectory);
-		paramBundle.putString("simulscan_enable_timestamp", timestamp.toString());
+	//request and identify the result code
+	i.putExtra("SEND_RESULT","true");
+	i.putExtra("COMMAND_IDENTIFIER","123456789");//user specified unique id
+	this.sendBroadcast(i);
 
-		Intent i = new Intent();
-		i.setAction("com.symbol.datawedge.api.ACTION");
-		i.putExtra("com.symbol.datawedge.api.SWITCH_SIMULSCAN_PARAMS", paramBundle);
-
-		//request and identify the result code
-		i.putExtra("SEND_RESULT","true");
-		i.putExtra("COMMAND_IDENTIFIER","123456789");//user specified unique id
-
-		this.sendBroadcast(i);
-
-### Recieve the result
+### Receive the result
 
 	//get the results
 	BroadcastReceiver resultReceiver =  new BroadcastReceiver() {

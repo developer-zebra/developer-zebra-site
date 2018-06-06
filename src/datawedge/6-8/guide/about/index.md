@@ -7,7 +7,43 @@ productversion: '6.8'
 
 ## Overview
 
-DataWedge provides barcode scanning and processing services for Zebra devices running Android. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
+DataWedge provides “zero-code” barcode scanning and processing services for Zebra devices running Android. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
+
+When programmatic control is required, DataWedge APIs provide the ability to control, modify and query the DataWedge configuration settings and operations through Android intents. This allows new or existing Android apps to be easily modified with an organization's current development resources to acquire data using Zebra devices. 
+
+**[What's new in DataWedge 6.8](#newindatawedge68)**
+
+### Main Functionality
+The version of DataWedge documented in this guide provides the following primary functions and options: 
+#### Data Capture
+* Scan and process all [major barcode symbologies](../input/barcode/#decoderselection)
+* Use existing apps to acquire barcodes, images, text, phone numbers, mag-stripe and other data
+* Set DataWedge to [acquire scanned data for one or multiple apps](../setup)
+* Acquire multiple types of data in a single scan [using SumulScan](../input/simulscan) 
+* Designate device screen areas as scan triggers usign [Data Capture Plus](../input/dcp)
+* [Create Profiles](../profiles) to implement DataWedge features for individual apps 
+* Configure DataWedge to scan with external peripherals: 
+	* [USB SSI scanners](../input/barcode/#autoswitchtodefaultonevent)
+	* [Bluetooth Zebra scanners](../input/serial)
+	* [Serial scanners](../input/serial)
+
+#### Data Processing
+* [Enable/Disable decoding](../input/barcode/#decoderselection) of individual symbologies to improve speed
+* [Set parameters](../input/barcode) for individual barcodes, scanners and readers
+* Format output according to [simple](../process/bdf/) or [custom](../process/adf/) rules
+* Use Plug-ins for data input, output and processing
+* [Create custom string handling](../process/adf/#settingcriteria) and other processing criteria
+
+#### Deployment
+* [Import and export settings](../settings) 
+* Remotely configure and [mass-deploy settings](../settings/#massdeployment) via MDM  
+* [Restore settings](../settings/#restoredefaults) to factory defaults
+* [Apply changes remotely](../settings/#autoimport) to update devices in the field 
+* [Generate reports](../settings/#reporting)
+
+**Note**: Availability and operation of DataWedge features varies by device and operating system (which determine the DataWedge version installed on the device). 
+
+-----
 
 ### Language Support
 
@@ -23,12 +59,6 @@ DataWedge has been approved to run on device operating systems localized for the
 
 For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
 
-<!-- 2/9/18- Section removed at suggestion of engineering (TUT-22170)
-#### This document applies to:
-* **DataWedge 6.7.x**, which requires:
-* **Scanner Framework 18.0.9.0** or higher, and
-* **SimulScan 1.9 or higher** (on [devices that support SimulScan](../../../../simulscan))
- -->
 To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
 
 -----
@@ -48,6 +78,8 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 #### Other changes
 
 The SimulScan Input Plug-in default template is now "Default - Barcode4.xml" 
+
+> Ready to get started? Go to the [DataWedge Setup guide](../setup).
 
 -----
 
@@ -83,28 +115,6 @@ The SimulScan Input Plug-in default template is now "Default - Barcode4.xml"
 
 -----
 
-### Main Functionality
-The version of DataWedge documented in this guide provides the following primary functions and options: 
-
-* Scan and process all [major barcode symbologies](../input/barcode/#decoderselection)
-* Acquire barcodes, images, text, phone numbers, mag-stripe and other data
-* Set DataWedge to acquire scanned data for one or more apps
-* Create Profiles to implement specific DataWedge features for individual apps 
-* Enable/Disable decoding of individual symbologies to improve speed
-* Set parameters for individual barcodes, scanners and readers
-* Format output according to simple or custom rules
-* Use plug-ins for data input, output and processing
-* Import and export settings 
-* Remotely configure and mass-deploy settings via MDM  
-* Restore settings to factory defaults
-* Apply remote settings changes immediately 
-* Handle escape characters with "string at" criteria in Advanced Data Formatting rules
-
-Availability and operation of DataWedge features varies by device and operating system (which determine the DataWedge version installed on the device). 
-
-<!-- _**This guide describes DataWedge for Android. Features and usage of Windows versions may vary slightly. Please refer to Windows documentation**_. 10/20/16- Windows reference removed per eng. --> 
-
-> Ready to get started? Go to the [DataWedge Setup guide](../setup).
 
 ### Which Version is Installed? 
 

@@ -37,8 +37,8 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 * **[Scanner auto-switching](../input/barcode/#autoswitchtodefaultonevent) behavior is now controllable** after connecting and disconnecting external scanners
 * **[DataWedge Settings](../settings/#datawedgesettings) allows disabled Profiles to be ignored** to help maintain full functionality at all times 
-* New **[SET_IGNORE_DISABLED_PROFILES API](../api/setignoredisabledprofiles)** configured DataWedge to 
-* New **[GET_IGNORE_DISABLED_PROFILES API](../api/getignoredisabledprofiles)**
+* New **[SET_IGNORE_DISABLED_PROFILES API](../api/setignoredisabledprofiles)** configures DataWedge to avoid switching to Profiles are are not enabled. 
+* New **[GET_IGNORE_DISABLED_PROFILES API](../api/getignoredisabledprofiles)** returns the status of the IGNORE_DISABLED_PROFILES flag. 
 * Updated **[SET_CONFIG API](../api/setconfig)** now supports: 
  * Advanced Data Formatting
  * Digimarc decoding

@@ -22,7 +22,7 @@ automenu:
           url: ../input/msr
         - title: Serial/USB Port
           url: ../input/serial
-        - title: SimulScan Capture
+        - title: SimulScan
           url: ../input/simulscan
     - title: Processing
       items:

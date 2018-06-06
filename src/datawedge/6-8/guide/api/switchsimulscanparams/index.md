@@ -23,12 +23,24 @@ Used to pass one or more [SimulScan parameters](../../input/simulscan) as a bund
 **EXTRA_DATA** [String]: "com.symbol.datawedge.api.SWITCH_SIMULSCAN_PARAMS"
 
 **EXTRA_DATA** [bundle]: "&lt;name, value&gt;" - Accepts the following SimulScan parameters as name-value pairs:
- * `simulscan_input_source`	[string] - 
- * `simulscan_template` [string] - 
- * `simulscan_region_separator`	[string] - 
- * `simulscan_log_dir` [string] - 
- * `simulscan_enable_timestamp` [string] - true/false
- * `simulscan_template_params` [bundle] - User-defined bundle of custom parameters
+* `simulscan_input_source`	[string] - The input device for data capture. Possible values: 
+ 	* "Default" - accepts the default scanning device selected by the system
+ 	* "Camera" - selects the main device camera
+ 	* "Imager" - selects the internal imager on the device
+* `simulscan_template` [string] - File name of the XML template to use (i.e. "BankCheck.xml"). File must reside in `/enterprise/device/settings/datawedge/templates` folder on device. 
+* `simulscan_region_separator`	[string] - The character to be inserted as a separator between data regions. Possible values: 
+	* "NONE" (default)
+	* "TAB" - Tab character
+	* "LF" - Line feed
+	* "CR" = Carriage return
+* `simulscan_log_dir` [string] - Change the default folder path (`/storage/emulated/0/simulscan/logs`) for storing the SimulScan logs on the device. **Note**: SimulScan logging is enabled/disabled by the SimulScan template in use; logging is not controlled by DataWedge.
+* `simulscan_enable_timestamp` [string] - Enable/disable automatic insertion of a timestamp `yyyy-mm-dd hh:mm:ss` along with acquired data. Possible values: 
+	* true
+	* false (default)
+* `simulscan_template_params` [bundle] - User-defined bundle of custom parameters based on the selected template. Possible values: 
+	* `dymanic_quantity` - Number of barcodes to decode in a single scan (from 1-99; default=5)
+
+Learn more [about SimulScan parameters](../../input/simulscan). 
 
 ### Result Codes
 
@@ -133,12 +145,16 @@ The code below shows how to pass an intent that switches SimulScan parameters fo
 **Pre-conditions and assumptions**:
 
 * DataWedge and the respective Profile must be enabled
-* SimulScan scanning should be enabled in the active Profile
+* SimulScan canning input should be enabled in the active Profile
 * If Intent contains an invalid or unsupported scanner parameter or value, result code(s) will be sent
 
 -----
 
 **SEE ALSO**:
+
+[SimulScan parameters](../../input/simulscan) | Guide to SimulScan Input Parameters for DataWedge
+
+[SimulScan User Guide](/simulscan) | Complete SimulScan documentation and user guide
 
 [Zebra Support Central](https://www.zebra.com/us/en/support-downloads.html) | Integrator Guides, Product Manuals, Software Downloads and Support
 

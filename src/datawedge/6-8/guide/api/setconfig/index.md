@@ -71,11 +71,10 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
 
 **PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters to be updated under the specified Plug-in. **Setting an empty string in any parameter value resets that parameter to its default setting**. 
 
-<img style="height:450px" src="nested_example_pt1.png"/>
-<img style="height:478px" src="nested_example_pt2.png"/>
+<img alt="" style="height:448px" src="nested_example_pt1.png"/>
+<img alt="" style="height:482px" src="nested_example_pt2.png"/>
 _A visual representation of nested SET_CONFIG bundles. [See example code](#examplecode)._ 
 <br>
-
 
 #### PARAM_LIST BUNDLE
 The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the table below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 

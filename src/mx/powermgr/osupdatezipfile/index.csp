@@ -6,7 +6,7 @@ order: 3
 mx: "4.1"
 apilevel: "16"
 devicetype: A,B
-info: Upload list (.upl) files are not supported on TC70/TC75 devices running Android KK or L
+info: Upload list (.upl) files are not supported on TC70/TC75 devices running Android KK
 parm:
   presentif: The Reset Action is "OS Update"
   pivotal: No
@@ -37,9 +37,7 @@ For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101
 * **Location rules and characteristics vary by device**. 
 * **The following devices <u>do not support</u> .upl files**:
  * **TC70 KitKat**
- * **TC70 Lollipop**
  * **TC75 KitKat**
- * **TC75 Lollipop**
 
 ### Android Location Rules
 

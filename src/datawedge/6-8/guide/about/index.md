@@ -17,14 +17,14 @@ When programmatic control is required, DataWedge APIs provide the ability to con
 The version of DataWedge documented in this guide provides the following primary functions and options: 
 #### Data Capture
 * Scan and process all [major barcode symbologies](../input/barcode/#decoderselection)
-* Use existing apps to acquire barcodes, images, text, phone numbers, mag-stripe and other data
+* Use existing apps to [acquire barcodes](../input/barcode), images, text, phone numbers, mag-stripe and other data
 * Set DataWedge to [acquire scanned data for one or multiple apps](../setup)
-* Acquire multiple types of data in a single scan [using SumulScan](../input/simulscan) 
+* Acquire multiple types of data in a single scan [using SimulScan](../input/simulscan) 
 * Designate device screen areas as scan triggers using [Data Capture Plus](../input/dcp)
 * [Create Profiles](../overview) to implement DataWedge features for individual apps 
-* Configure DataWedge to scan with external Zebra peripherals: 
-	* [USB SSI scanners](../input/barcode/#autoswitchtodefaultonevent)
-	* [Bluetooth scanners](../input/serial)
+* Configure DataWedge to [automatically scan with external Zebra peripherals](../input/barcode/#autoswitchtodefaultonevent): 
+	* [USB SSI scanners](../input/barcode/#usbssiscanners)
+	* [Bluetooth scanners](../input/barcode/#bluetoothscanners)
 	* [Serial scanners](../input/serial)
 
 #### Data Processing

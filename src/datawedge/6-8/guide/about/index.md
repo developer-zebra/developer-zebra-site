@@ -20,18 +20,18 @@ The version of DataWedge documented in this guide provides the following primary
 * Use existing apps to acquire barcodes, images, text, phone numbers, mag-stripe and other data
 * Set DataWedge to [acquire scanned data for one or multiple apps](../setup)
 * Acquire multiple types of data in a single scan [using SumulScan](../input/simulscan) 
-* Designate device screen areas as scan triggers usign [Data Capture Plus](../input/dcp)
-* [Create Profiles](../profiles) to implement DataWedge features for individual apps 
-* Configure DataWedge to scan with external peripherals: 
+* Designate device screen areas as scan triggers using [Data Capture Plus](../input/dcp)
+* [Create Profiles](../overview) to implement DataWedge features for individual apps 
+* Configure DataWedge to scan with external Zebra peripherals: 
 	* [USB SSI scanners](../input/barcode/#autoswitchtodefaultonevent)
-	* [Bluetooth Zebra scanners](../input/serial)
+	* [Bluetooth scanners](../input/serial)
 	* [Serial scanners](../input/serial)
 
 #### Data Processing
 * [Enable/Disable decoding](../input/barcode/#decoderselection) of individual symbologies to improve speed
 * [Set parameters](../input/barcode) for individual barcodes, scanners and readers
 * Format output according to [simple](../process/bdf/) or [custom](../process/adf/) rules
-* Use Plug-ins for data input, output and processing
+* Use [Plug-ins](../profiles) for data input, output and processing
 * [Create custom string handling](../process/adf/#settingcriteria) and other processing criteria
 
 #### Deployment

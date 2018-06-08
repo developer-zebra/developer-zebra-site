@@ -39,12 +39,22 @@ This version of Enterprise Keyboard includes the following languages:
 
 ## New in v1.8
 
-* **Symbol Key P1 can be remapped** to any key value or to invoke an alternate key layout.
-* **Suggestion bar remains visible** whenever voice input key is enabled.
+> **NOTICE**: Enterprise Keyboard is preinstalled on Zebra devices running Android 7.x Nougat and higher. For devices running Marshmallow and lower, EKB can be added as a LifeGuard patch.
+
+### Supported Devices
+EKB 1.8 adds support for (and comes preinstalled on) the following devices: 
+
+* **WT6000 N**
+
+### Added Features 
+
+* The **Symbol Key P1 can be remapped** to an ASCII or Unicode character, or an EMOJI symbol.
+* The **Text Correction suggestion bar remains visible** whenever [voice input key](../settings/preferences) is enabled, even if no corrections are suggested.
+* If voice input is disabled, correction suggestions (if enabled) appear only when typing.
 
 #### Discontinued Features
 
-* **Personalized suggestion and Next Word suggestion** features have been removed ([Text Correction](../settings/#textcorrection) and other Personal Dictionary features remain). 
+* **Personalized suggestion and Next Word suggestion** features have been removed <br>([Text Correction suggestion](../settings/#textcorrection) and other Personal Dictionary features are unaffected). 
 
 -----
 
@@ -82,11 +92,11 @@ The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function ke
 <br>
 -->
 
-<b>Design custom key layouts easily</b> with five remappable keys: 
+<b>Design custom key layouts easily</b> with six (6) remappable keys: 
 <img alt="" style="height:150px" src="keyboard_alpha.png"/>
-
+<img alt="" style="height:150px" src="EKB_symbol_layout.png"/>
 <img alt="" style="height:150px" src="keyboard_numerical.png"/>
-_Shown here with the EMOJI key (top) and other default key assignments_. 
+_Shown here with the EMOJI key (upper two layouts) and other default key assignments_. 
 <br>
 
 <b>View the keyboard indoors or out</b> thanks to a specially designed color scheme: 
@@ -118,7 +128,6 @@ EKB 1.7 is certified on the following Zebra devices running Android 7.x Nougat:
  * **TC70x**
  * **TC75x**
  * **VC80x**
- * **WT6000**
 
 For more information and device options, see the [download page](../../download).
 

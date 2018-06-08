@@ -78,23 +78,23 @@ The Preferences section controls keypress feedback, default layout and tab selec
 
 ##### Set preferences as desired: 
 
-* <b><u>Auto-capitalization</u></b> automatically capitalizes the first word of each sentence following a period. 
+<b><u>Auto-capitalization</u></b> automatically capitalizes the first word of each sentence following a period. 
 
-* <b><u>Double-space period</u></b> automatically inserts a period and space after double-tapping the spacebar. 
+<b><u>Double-space period</u></b> automatically inserts a period and space after double-tapping the spacebar. 
 
-* <b><u>Vibration on keypress</u></b> sets the device to vibrate when a key is pressed. Duration is configurable in [Advanced settings](#advanced). 
+<b><u>Vibration on keypress</u></b> sets the device to vibrate when a key is pressed. Duration is configurable in [Advanced settings](#advanced). 
 
-* <b><u>Sound on keypress</u></b> plays a sound when a key is pressed. Volume is configurable in [Advanced settings](#advanced).
+<b><u>Sound on keypress</u></b> plays a sound when a key is pressed. Volume is configurable in [Advanced settings](#advanced).
 
-* <b><u>Popup on keypress</u></b> displays a pop-up of the key being pressed. <!--A delay can be added in [Advanced settings](#advanced).-->
+<b><u>Popup on keypress</u></b> displays a pop-up of the key being pressed. <!--A delay can be added in [Advanced settings](#advanced).-->
 
-* <b><u>Voice input key</u></b> displays a key for allowing Enterprise Keyboard to accept spoken input using the mic (on GMS-enabled devices only). 
+<b><u>Voice input key</u></b> displays a key for allowing Enterprise Keyboard to accept spoken input using the mic (on GMS-enabled devices only). 
 
-* <b><u>Show scan tab</u></b> displays a tab for switching to the scanner to collect barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
+<b><u>Show scan tab</u></b> displays a tab for switching to the scanner to collect barcode data. Scanning in Enterprise Keyboard requires [the DataWedge service](#datawedge) to be enabled on the device. 
 
-* <b><u>Flick</u></b> enables the alternate (long-press) character of a key to be input by "flicking" the key. 
+<b><u>Flick</u></b> enables the alternate (long-press) character of a key to be input by "flicking" the key. 
 
-* <b><u>Numeric (Telephone)</u></b> layout appears when the numeric keypad is in focus. When disabled, the Calculator layout is used. 
+<b><u>Numeric (Telephone)</u></b> layout appears when the numeric keypad is in focus. When disabled, the Calculator layout is used. 
 
 <!-- 
 <img alt="" style="height:350px" src="ekb1.6_nav.png"/>

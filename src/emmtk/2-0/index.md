@@ -11,8 +11,8 @@ menu:
       url: /emmtk/2-0/guide
     - title: Persistence
       url: /emmtk/2-0/guide/persistence
-    - title: Code Samples
-      url: /emmtk/2-0/guide/samples
+    - title: Function Maps
+      url: /emmtk/2-0/guide/functionmap
     - title: Staging APIs
       url: /emmtk/2-0/guide/api
     - icon: fa fa-search

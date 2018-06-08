@@ -25,7 +25,27 @@ EKB 1.8 <u>comes pre-installed</u> on the following Zebra Android devices runnin
 
 ### Pre-Nougat Options
 
-For devices running Android versions prior to Nougat, download EKB 1.6 for the following: 
+**<u>EKB 1.8</u> is added as a LifeGuard patch** on devices listed below running Android 6.x Marshmallow or older.
+
+ * **MC33**
+ * **TC51**
+ * **TC51 Healthcare**
+ * **TC56**
+ * **TC56 Healthcare**
+ * **TC70x**
+ * **TC75x**
+ * **VC80x**
+ * **WT6000**
+
+**To install EKB 1.8 on a device listed above**: 
+
+1. Visit the [LifeGuard download page](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html). 
+2. Identify and download the appropriate patch for the device and OS. 
+3. Apply the patch using instructions that accompany the download.
+
+-----
+
+**<u>EKB 1.6</u> is installed as a user app** for the following pre-Nougat devices: 
 
 **Running Android 6.x Marshmallow**: 
 
@@ -65,9 +85,9 @@ For devices running Android versions prior to Nougat, download EKB 1.6 for the f
 
 ### How To Download
 
-1. **[Visit the EKB download page](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)**
-2. **Scroll down to the EKB version** corresponding to the <u>Android version on the target device</u>
-3. Download and install the package using the standard procedure
+1. **[Visit the EKB download page](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/enterprise-keyboard.html)**.
+2. **Scroll down to the EKB version** corresponding to the <u>Android version on the target device</u>.
+3. Download and install the package using the standard procedure.
 
 ### Remote Management
 Enterprise Keyboard can be managed programmatically through [EMDK for Android](../../../../emdk-for-android) development tools or remotely using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service (requires MX 6.3 or higher) or a company's own enterprise mobile management (EMM) system (if supported by that system). 

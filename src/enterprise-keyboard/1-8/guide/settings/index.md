@@ -102,15 +102,15 @@ The Preferences section controls keypress feedback, default layout and tab selec
  -->
 
 ##### On devices with MX 7.1 and higher only: 
-* <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar is visible at all times except spelling corrections (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
+<b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar is visible at all times except spelling corrections (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout. **See important layout notes below**.
 
 <!-- 
 <img alt="" style="height:350px" src="ekb1.6_prefs.png"/>
 <br>
  -->
-* <b><u>Tab configuration</u></b> allows a user or administrator to enable or disable the numeric, alphanumeric, symbol and/or scan key-layout tab(s), hiding them from view and preventing display of the corresponding layout. <!-- **EKB will not permit all four tabs to be disabled at the same time**. -->
+<b><u>Tab configuration</u></b> allows a user or administrator to enable or disable the numeric, alphanumeric, symbol and/or scan key-layout tab(s), hiding them from view and preventing display of the corresponding layout. <!-- **EKB will not permit all four tabs to be disabled at the same time**. -->
 
-* <b><u>Select prefer tab</u></b> causes the selected tab to appear whenever EKB is invoked. This option is controlled from within the Tab configuration panel (shown below). 
+<b><u>Select prefer tab</u></b> causes the selected tab to appear whenever EKB is invoked. This option is controlled from within the Tab configuration panel (shown below). 
 
 <img alt="" style="height:350px" src="ekb1.6_tab_config.png"/>
 <br>

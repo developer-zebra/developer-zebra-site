@@ -39,7 +39,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 ## New in v1.8
 
-> **NOTICE**: Enterprise Keyboard is preinstalled on Zebra devices running Android 7.x Nougat and higher. For devices running Marshmallow and lower, EKB can be added as a LifeGuard patch.
+> **NOTICE**: Enterprise Keyboard comes preinstalled on Zebra devices running Android 7.x Nougat and higher. For supported pre-Nougat devices, EKB is added as a LifeGuard patch. See [download page](../../download) for more information. 
 
 ### Supported Devices
 EKB 1.8 adds support for (and comes preinstalled on) the following devices: 
@@ -48,8 +48,8 @@ EKB 1.8 adds support for (and comes preinstalled on) the following devices:
 
 ### Added Features 
 
-* The **Symbol Key P1 can be remapped** to an ASCII or Unicode character, or an EMOJI symbol.
-* The **Text Correction suggestion bar remains visible** whenever [voice input key](../settings/preferences) is enabled, even if no corrections are suggested.
+* The **Symbol Key P1 can be remapped** to an ASCII or Unicode character or to an EMOJI symbol.
+* The **Text Correction suggestion bar remains visible** whenever [voice input key](../settings/#preferences) is enabled, even if no corrections are suggested.
 * If voice input is disabled, correction suggestions (if enabled) appear only when typing.
 
 #### Discontinued Features
@@ -94,7 +94,7 @@ The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function ke
 
 <b>Design custom key layouts easily</b> with six (6) remappable keys: 
 <img alt="" style="height:150px" src="keyboard_alpha.png"/>
-<img alt="" style="height:150px" src="EKB_symbol_layout.png"/>
+<img alt="" style="height:145px" src="EKB_symbol_layout.png"/>
 <img alt="" style="height:150px" src="keyboard_numerical.png"/>
 _Shown here with the EMOJI key (upper two layouts) and other default key assignments_. 
 <br>

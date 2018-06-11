@@ -21,5 +21,5 @@ Used to set the minimum, maximum, and preset volume levels for the decode beep v
 
 **Parm value input rules**: 
 
-* String containing comma-separated list of minimum, maximum, and preset volumes in that order. For example, "1,5,3"
-* Must be positive integers from 1 - 256
+* String containing comma-separated list of minimum, maximum, and preset volumes in that order. For example, "1,5,3" sets a minimum of 1, a maximum of 5 and a preset of 3.
+* The volume levels must be positive integers that are less than the maximum value for this stream.

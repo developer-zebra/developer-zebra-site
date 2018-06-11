@@ -7,7 +7,7 @@ mx: "4.4"
 osx: "4.4"
 devicetype: A
 parm:
-  presentif: TThe Audio UI Profile Action is "Add an Audio UI Profile"
+  presentif: The Audio UI Profile Action is "Add an Audio UI Profile"
   pivotal: No
   name: STREAM_MUSIC_RCVR_LEVEL
   type: string

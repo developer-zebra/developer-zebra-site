@@ -22,4 +22,4 @@ Specifying an empty (length of zero) value (or the absence of this parm from the
 **Parm value input rules**: 
 
 * String that contains the minimum, maximum, and preset volumes in this order and separated by commas. For example, "1,5,3"
-* The volume levels must be positive integers that are less than 256.
+* The volume levels must be positive integers that are less than the maximum value for this stream.

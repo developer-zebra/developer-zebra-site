@@ -15,7 +15,7 @@ parm:
 
 Used to set a customized label that the ZVC will display to visually identify the audio stream that is typically used for other notifications. 
 
->**Note:** If the value of this parm is empty (a length of 0), then no customized label will be specified for the audio stream. This will cause ZVC to display not label the audio stream.
+>**Note:** If the value of this parm is empty (a length of 0), no customized label is created for the Audio Stream and the default label is displayed.”
 
 **Parm value input rules**: 
 

@@ -22,5 +22,5 @@ Used to set the minimum, maximum, and preset volume levels for the audio stream 
 **Parm value input rules**: 
 
 * String that contains the minimum, maximum, and preset volumes in this order and separated by commas. For example, "1,5,3" sets a minimum of 1, a maximum of 5 and a preset of 3.
-* The volume levels must be positive integers that are less than the maximum value for this stream.
+* Positive integers from 0&ndash;7. 
 * A setting of "256,256,256" is the equivalent of "0,[max],[median]" for the stream.

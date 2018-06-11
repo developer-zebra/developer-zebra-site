@@ -17,4 +17,4 @@ Used to specify the name of an existing Audio Profile to be set as the new curre
 
 **Parm value input rules**: 
 
-* String from 1 - 255 characters
+* String from 1&endash;255 characters

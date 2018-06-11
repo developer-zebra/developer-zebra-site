@@ -19,4 +19,4 @@ Used to set a customized label that ZVC displays to visually identify the decode
 
 **Parm value input rules**: 
 
-* String from 0 - 255 characters
+* String from 0&ndash;255 characters

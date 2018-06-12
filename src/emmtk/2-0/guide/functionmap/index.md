@@ -20,7 +20,6 @@ The tables below map the functions of the Zebra MX Managament System (MXMS) to A
 
 ## CSP-to-AEDO APIs
 
-
 <table class=MsoTable15List4Accent5 border=1 cellspacing=0 cellpadding=0
  width=720 style='width:539.75pt;border-collapse:collapse;border:none;
  mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:

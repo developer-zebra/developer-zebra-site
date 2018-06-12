@@ -9,6 +9,8 @@ menu:
       url: /emmtk/2-0/guide/about
     - title: Guides
       url: /emmtk/2-0/guide
+    - title: Enroll AEDO
+      url: /emmtk/2-0/guide/enrollaedo
     - title: Persistence
       url: /emmtk/2-0/guide/persistence
     - title: Function Maps

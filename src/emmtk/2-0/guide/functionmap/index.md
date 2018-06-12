@@ -4,14 +4,15 @@ layout: guide.html
 product: EMM Toolkit
 productversion: '2.0'
 ---
-# DRAFT
+
+# `DRAFT`
 
 **_Information subject to change without notice_**. 
 
 -----
 
 ## Overview
-The tables below show how the functions currently implemented through the MX Managament System (MXMS) are handled through Android Enterprise Device Owner (AEDO) APIs or through OemConfig when no such functions are implemented by an Android API. 
+The tables below map the functions of the Zebra MX Managament System (MXMS) to Android Enterprise Device Owner (AEDO) APIs or to Zebra's OemConfig tool when no corresponding AEDO function exists. 
 
 **_Information subject to change without notice_**. 
 
@@ -4805,15 +4806,25 @@ The tables below show how the functions currently implemented through the MX Man
 
 <p class=MsoNormal> </p>
 -->
-
------
-
-## CSP-to-OemConfig (Managed) 
-
+<!-- 
+old head
 <table class=MsoTable15Grid4Accent5 border=1 cellspacing=0 cellpadding=0
  width=708 style='width:531.0pt;margin-left:-36.25pt;border-collapse:collapse;
  border:none;mso-border-alt:solid #9CC2E5 .5pt;mso-border-themecolor:accent5;
  mso-border-themetint:153;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <thead>
+
+ -->
+
+-----
+
+<h2>CSP-to-OemConfig (Managed)</h2>
+
+<table class=MsoTable15List4Accent5 border=1 cellspacing=0 cellpadding=0
+ width=720 style='width:539.75pt;border-collapse:collapse;border:none;
+ mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt;mso-border-insideh:.5pt solid windowtext;mso-border-insidev:
+ .5pt solid windowtext'>
  <thead>
   <tr style='mso-yfti-irow:-1;mso-yfti-firstrow:yes;mso-yfti-lastfirstrow:yes;
    page-break-inside:avoid'>

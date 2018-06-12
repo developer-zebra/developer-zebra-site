@@ -5,6 +5,12 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
+# `DRAFT`
+
+**_Information subject to change without notice_**. 
+
+-----
+
 ## Overview
 
 This section explains device owner stuff, and why a Nougat device _should_ be enrolled as a DO and why an Oreo _must_. 

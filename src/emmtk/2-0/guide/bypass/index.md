@@ -5,6 +5,12 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
+# `DRAFT`
+
+**_Information subject to change without notice_**. 
+
+-----
+
 ## Overview
 
 On some Android devices running Google Mobile Services (GMS), it is possible to skip the Android Setup Wizard (SUW, also known as the "Welcome Screen") following an Enterprise Reset, which removes all non-persistent data from the device. Zebra offers two mechanisms for bypassing the Android Setup Wizard. 

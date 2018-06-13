@@ -11,6 +11,45 @@ productversion: '2.0'
 
 -----
 
+Methods of managing Zebra devices:
+
+* Past: Signed agent
+* Present: MX to submit XML
+* Future: AEDO + OemConfig
+
+WATCH (George's?) GTX (and possibly embed it)
+
+
+This section explains device owner stuff, and why a Nougat device _should_ be enrolled as a DO and why an Oreo _must_. 
+
+* DO is recommended with Nougat. With Oreo, it's required. 
+* Agent Uses AEDO + Zebra OemConfig Managed Configs​
+* Android N or higher​
+* EMM must leverage Zebra EMM TK V4​
+* Supported from Android Nougat onwards​
+* Provides parity of functionality to EMM TK V2 when combined with AEDO APIs​
+* Standard-based​
+* Not available prior to Android Nougat​
+* Requires special Device Owner Enrollment​
+* It is OPTIONAL for all EMMs to use OemConfig, but NOT doing so will leave the EMM unable to provide parity of functionality once they can no longer use MX via EMM TK V1 and V2 to augment the capabilities of AEDO APIs​
+* SHOULD support use of OemConfig by the start of Android P​
+* SHOULD support use of OemConfig as early as possible, preferably by the end of Android Nougat​
+
+> Info in the QR code is identical to contents of the `Provisioning.JSON` file.  
+
+### Terms used in this guide
+
+* **AE -** Android Enterprise (formerly known as "Android for Work")
+* **AEDO -** Android Enterprise Device Owner
+* **AFW -** Android for Work
+* **DA -** Device administrator (feature to be discontinued in Android Q)
+* **DO -** Device owner (available since M, encouraged for N and O, required for P)
+* **EMM -** Enterprise Mobility Management
+* **GID -** Group ID
+* **MDM -** Mobile Device Management
+
+-----
+
 ## Overview
 
 The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow developers of EMM (sometimes known as "mobile device management" or MDM) soltions to adapt their products to manage Zebra devices. This has historically involved interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. Due to the emergence of Android Enterprise, **_some_** capabilities once accessible only through Zebra's proprietary management layer can (or will in the near future) be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. 

@@ -108,7 +108,7 @@ This section is required only for first-time set-up of the staging workstation. 
 
 <img alt="image" style="height:278px" src="JSON_code_EMM_Sample_3.PNG"/>
 
-_"Provision.JSON" file template showing syntax for server URL, user name and password._
+_The `Provision.JSON` sample shows syntax for server URL, user name and password._
 <br>
 <!-- 
 this (old) file contains vendor-specific (airwatch) info: 04_json_file.png
@@ -133,7 +133,7 @@ Then select Import.
 
 <img alt="image" style="height:205px" src="06_import_pere-do.png"/>
 
-_Importing the EMM_PERE-DO.xml persistence file._
+_The `EMM_PERE-DO.xml` file preserves settings after device reset._
 <br>
 
 7. StageNow
@@ -146,7 +146,7 @@ Edit the Wi-Fi profile for your network. Save.
 
 <img alt="image" style="height:165px" src="07_wifi.png"/>
 
-_Enabling Wi-Fi in the device Profile._
+_Enabling Wi-Fi allows downloads post-staging._
 <br>
 
 8. StageNow
@@ -203,7 +203,7 @@ Revise the Source File URI: Navigate to the /snaw/ folder that you created on yo
 
 <img alt="image" style="height:350px" src="15_filemgr.png"/>
 
-_EnrollDO.pem secures device owner enrollment._
+_`EnrollDO.pem` file secures device owner enrollment._
 <br>
 
 

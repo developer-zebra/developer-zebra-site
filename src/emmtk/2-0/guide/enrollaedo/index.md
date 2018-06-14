@@ -38,7 +38,6 @@ This section explains device owner stuff, and why a Nougat device _should_ be en
 * **DA -** Device administrator
 * **DO -** Device owner
 * **EMM -** Enterprise Mobility Management
-* **GID -** Group ID
 * **MDM -** Mobile Device Management
 
 -----

@@ -45,28 +45,25 @@ This section explains device owner stuff, and why a Nougat device _should_ be en
 * **DA -** Device administrator (feature to be discontinued in Android Q)
 * **DO -** Device owner (available since M, encouraged for N and O, required for P)
 * **EMM -** Enterprise Mobility Management
-* **GID -** Group ID
 * **MDM -** Mobile Device Management
 
 -----
 
 ## Overview
 
-The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow developers of EMM (sometimes known as "mobile device management" or MDM) soltions to adapt their products to manage Zebra devices. This has historically involved interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. Due to the emergence of Android Enterprise, **_some_** capabilities once accessible only through Zebra's proprietary management layer can (or will in the near future) be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. 
-
-Through the mechanisms , an EMM solution provider can offer customers the option of managing Zebra devices using their EMM solution alone. 
+The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow developers of EMM (sometimes known as "mobile device management" or MDM) soltions to adapt their products to manage Zebra devices. This has historically involved interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. With the emergence of Android Enterprise, **_some_** capabilities once accessible only through Zebra's proprietary management layer can (or will in the near future) be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. 
 
 **Zebra staging mechanisms follow these basic processes**:​
 
-* **Generate a barcode** or other medium that contains staging instructions​
+* **Create Staging Profiles** through the StageNow desktop client
+* **Generate barcodes** or other media that contains staging instructions​
 * **Read the generated medium on the device** using a staging client
 * **Execute the staging instructions to**:​
  * Configure the device for connection to a staging network​
  * Download, install, configure and launch an EMM Agent on the device​
  * Perform persistence and/or other desired staging tasks
 
-
-The primary vehicle for integrating an EMM solution with Zebra's staging tools is the [Staging Service API](../api). This guide contains all information necessary for Zebra-device staging capabilities to an EMM management console. 
+The primary vehicle for integrating an EMM solution with Zebra's staging tools is the [Staging Service API](../api). This guide contains all information necessary for adding Zebra-device staging capabilities to an EMM management console. 
 
 -----
 

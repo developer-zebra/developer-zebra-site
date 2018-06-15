@@ -11,6 +11,8 @@ Used to enable/disable the scanner Plug-in being used by the currently active Pr
 
 > **Functional only when Barcode Input is enabled in the active Profile**. 
 
+**<u>Important</u>**: Zebra recommends using [GET_SCANNER_STATUS](../getscannerstatus) and [GET_ACTIVE_PROFILE](../getactiveprofile) APIs to check the status of the current scanner and confirm the current Profile before using this intent to change the scanner state (enabled/disabled). **Changes to scanner status must be sent to the correct Profile to avoid unpredictable results**. 
+
 ### Function Prototype
 
 	Intent i = new Intent();

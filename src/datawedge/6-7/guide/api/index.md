@@ -40,6 +40,8 @@ automenu:
           url: getdisabledapplist
         - title: Get Profiles List 
           url: getprofileslist
+        - title: Get Scanner Status 
+          url: getscannerstatus
         - title: Get Version Info 
           url: getversioninfo
         - title: Import Config 

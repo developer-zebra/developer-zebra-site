@@ -67,11 +67,6 @@ Error messages are logged for invalid actions, missing parameters or other failu
 
 The code below shows how to pass an intent that switches SimulScan parameters for the current scanner in the active Profile. To verify results of the switch (or if errors are expected), include the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
 
-	HashMap<String,String> templateParamsMap = new HashMap<>();
-	String regionSeparator = null;
-	String logDirectory = null;
-	Boolean timestamp = null;
-
 	//Create param bundle
 	Bundle paramBundle = new Bundle();
 	paramBundle.putString("simulscan_input_source", ”Camera”);
@@ -138,7 +133,7 @@ The code below shows how to pass an intent that switches SimulScan parameters fo
 **Pre-conditions and assumptions**:
 
 * DataWedge and the respective Profile must be enabled
-* SimulScan canning input should be enabled in the active Profile
+* SimulScan input should be enabled in the active Profile
 * If Intent contains an invalid or unsupported scanner parameter or value, result code(s) will be sent
 
 -----

@@ -27,7 +27,7 @@ _SimulScan standard templates (not all shown)_
  * **Default - Barcode1.xml -** decodes a single barcode of any symbology.
  * **Default - Barcode10.xml -** decodes 10 barcodes of the same or differing symbologies.
  * **Default - Barcode2.xml -** decodes two barcodes of the same or differing symbologies.
- * **Default - Barcode4.xml -** decodes four barcodes of the same or differing symbologies. **This is the default form if none is selected**.
+ * **Default - Barcode4.xml -** decodes four barcodes of the same or differing symbologies. **This is the default template if none is selected**.
  * **Default - Barcode5.xml -** decodes five barcodes of the same or differing symbologies.
  * **Default - BookNumber.xml -** decodes 10- or 13-digit [ISBN codes](http://www.isbn.org/faqs_general_questions).
  * **Default - DocCap+Optional-Barcode.xml -** captures the form as an image and optionally decodes a barcode, if present.

@@ -28,8 +28,6 @@ On some Android devices running Google Mobile Services (GMS), it is possible to 
 
 -----
 
-## Setup Wizard Bypass
-
 ### Setup Wizard Manual Bypass
 
 When staging manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. On devices with Android N and higher, scanning the barcode bypasses the Android **_and_** Zebra Setup Wizards (including Analytics opt-out). **If the Android Setup wizard is partially completed, data entered prior to the bypass scan is applied**. 
@@ -64,10 +62,6 @@ To update a device for use with the bypass barcode, visit to the relevant page b
 
 <img style="height:50px" src="skip_suw_and_run_sn.png"/>
 <br>
-
-
-
-To update a device, visit the **[BSP download page](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc51-operating-system-for-gms-devices.html)**.
 
 -----
 

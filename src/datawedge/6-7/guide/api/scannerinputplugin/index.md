@@ -11,7 +11,7 @@ Used to enable/disable the scanner Plug-in being used by the currently active Pr
 
 > **Functional only when Barcode Input is enabled in the active Profile**. 
 
-**<u>Important</u>**: Zebra recommends using [GET_SCANNER_STATUS](../getscannerstatus) and [GET_ACTIVE_PROFILE](../getactiveprofile) APIs to check the status of the current scanner and confirm the current Profile before using this intent to change the scanner state (enabled/disabled). **Changes to scanner status must be sent to the correct Profile to avoid unpredictable results**. 
+**<u>Important</u>**: To avoid the unnecessary use of enable/disable scanner API calls, Zebra recommends that apps register to be notified of changes in scanner status (using the [SCANNER_STATUS parameter](../registerfornotification/#parameters) of the REGISTER_FOR_NOTIFICATION API). This enables apps to receive scanner status changes immediately rather than having to query and wait for the result. Status-change notifications include the active Profile name, which permits an app to use the enable/disable scanner API calls only when status changes effect a relevant Profile.
 
 ### Function Prototype
 

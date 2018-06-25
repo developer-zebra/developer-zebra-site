@@ -11,7 +11,10 @@ Introduced in DataWedge 6.4.
 
 Used to create, update or replace a DataWedge Profile and its settings. In DataWedge 6.6 and higher, this API also can be used to configure multiple Plug-ins with a single intent action. Beginning with DataWedge 6.7, the behavior of inter-character delay is enhanced. See the [Keystroke Output guide](../../output/keystroke) for more information.  
 
-This API contains [nested bundles](../overview/#nestedbundles). 
+This API implements [nested bundles](../overview/#nestedbundles), which contain multiple configuration parameters in a single data field. 
+
+<img style="height:350px" src="nested_bundles_labelled.png"/>
+<br>
 
 To create a Profile without configuring its settings parameters, see [CREATE_PROFILE](../createprofile).
 
@@ -51,24 +54,21 @@ The PLUGIN_CONFIG bundle is configured using the following properties:
 **PLUGIN_NAME** [String]: Name of the Plug-in to configure. See tables below for `PARAM_LIST` values. 
 
  * **BARCODE** input
+ * **SERIAL** input
  * **INTENT** output
  * **KEYSTROKE** output
  * **BDF** (basic data formatting) processing
 
-<!-- 
-To be implemented in the future: 
-  * ADF (advanced data formatting) processing 
-  * DCP input
-  * IP output
-  * MSR input
-  * SIMULSCAN input 
-
- -->
- **Notes**: 
+**Notes**: 
 * Plug-in names are case sensitive.
 * For DataWedge 6.5 and below, each intent involving a Plug-in requires a separate intent Action.
 
 **PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters to be updated under the specified Plug-in. **Setting an empty string in any parameter value resets that parameter to its default setting**. 
+
+<img alt="" style="height:448px" src="nested_example_pt1.png"/>
+<img alt="" style="height:482px" src="nested_example_pt2.png"/>
+_A visual representation of nested SET_CONFIG bundles. [See example code](#examplecode)._ 
+<br>
 
 #### PARAM_LIST BUNDLE
 The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the table below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 

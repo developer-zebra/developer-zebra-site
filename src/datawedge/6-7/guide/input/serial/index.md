@@ -55,9 +55,11 @@ For more information about required serial communication settings, please refer 
 
 ### Output Using Intents
 
-For some scanning applications, it might be preferable not to display decoded data but to output directly to an application activity. This is done using Android Intents. For more information and important warnings, please see the [Intent Output guide](../../output/intent).  
+Rather than displaying decoded data on the screen, it might be preferable for some scanning apps to output acquired data directly to an app activity. This is done using Android intents. See [SET_CONFIG](../../api/setconfig) and [GET_CONFIG](../../api/getconfig) APIs for parameters and sample code. 
 
-For general information about Android Intents, please refer to the [Android Developer site](https://developer.android.com/guide/components/intents-filters.html).
+**SEE ALSO**:
+* **[Intent Output guide](../../output/intent)** | Information and important warnings about intents
+* **[Android Developer site](https://developer.android.com/guide/components/intents-filters.html)** | General information about Android intents 
 
 ------
 

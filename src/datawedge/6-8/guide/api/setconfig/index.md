@@ -8,11 +8,10 @@ productversion: '6.8'
 ## SET_CONFIG
 Used to create, update or replace a DataWedge Profile and its settings, and can configure multiple Plug-ins with a single intent action. 
 
-**Note**: This API contains [nested bundles](../overview/#nestedbundles). 
+This API implements [nested bundles](../overview/#nestedbundles), which contain multiple configuration parameters in a single data field. 
 
 <img style="height:350px" src="nested_bundles_labelled.png"/>
 <br>
-
 
 To create a Profile without configuring its settings parameters, use [CREATE_PROFILE](../createprofile).
 

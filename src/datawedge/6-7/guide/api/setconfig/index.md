@@ -68,44 +68,53 @@ To be implemented in the future:
 * Plug-in names are case sensitive.
 * For DataWedge 6.5 and below, each intent involving a Plug-in requires a separate intent Action.
 
-**PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters that should be updated under the specified Plug-in. Setting an empty string in any parameter value resets that parameter to its default setting. 
+**PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters to be updated under the specified Plug-in. **Setting an empty string in any parameter value resets that parameter to its default setting**. 
 
 #### PARAM_LIST BUNDLE
 The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the table below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
 
-* **BARCODE –** takes a value from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
+* **BARCODE –** takes a value from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
+ * `scanner_selection_by_identifier` [string]- takes a value from the list of [Scanner Identifiers](#scanneridentifiers) below.
 
- `scanner_selection_by_identifier` [string]- takes a value from the list of [Scanner Identifiers](#scanneridentifiers) below
+* **SERIAL -** takes values as indicated below: 
+<br>
+ * `serial_port_id` [string] - 0&ndash;n (a valid port index)
+ * `serial_input_enabled` [string] - true/false
+ * `serial_baudrate` [string] - 300, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 230400, 460800 or 921600
+ * `serial_databits` [string] - 7 or 8
+ * `serial_parity` [string] - NONE, ODD, EVEN, MARK or SPACE
+ * `serial_stopbits` [string] - 1 or 2
+ * `serial_flow` [string] - FLOW_NONE, FLOW_RTS_CTS or FLOW_XON_XOFF
 
-* **BDF -** Applies Basic Data Formatting rules to the acquired data. 
 
- `bdf_enabled` [string]- true/false
-
- `bdf_prefix` [string]- Prefix to acquired data
-
- `bdf_suffix` [string]- Suffix to acquired data
-
- `bdf_send_data` [string]- true/false
-
- `bdf_send_hex` [string]- true/false
-
- `bdf_send_tab` [string]- true/false
-
- `bdf_send_enter` [string]- true/false
-
-* **INTENT -** Use values as indicated below: 
-
- `intent_output_enabled` [string]- true/false
-
- `intent_action` [string]
-
- `intent_category` [string] 
-
- `intent_delivery` [string]- Use "0" for Start Activity, "1" for Start Service, "2" for Broadcast
+* **INTENT -** takes values as indicated below: 
+<br>
+ * `intent_output_enabled` [string]- true/false
+ * `intent_action` [string] - exact name of the action
+ * `intent_category` [string] - exact name of the category
+ * `intent_delivery` [string]:
+ 	* 0 - Start Activity
+ 	* 1 - Start Service
+ 	* 2 - Broadcast
 
 <!-- `intent_flag_receiver_foreground` [string] &lt;true/false&gt; -->
 
-* **KEYSTROKE -** takes a value from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle
+* **KEYSTROKE -** takes a value from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
+
+* **BDF -** Applies [Basic Data Formatting](../../process/bdf) rules to the acquired data. Takes values: 
+ * `bdf_enabled` [string]- true/false
+
+ * `bdf_prefix` [string]- prepend acquired data
+
+ * `bdf_suffix` [string]- append acquired data
+
+ * `bdf_send_data` [string]- true/false
+
+ * `bdf_send_hex` [string]- true/false
+
+ * `bdf_send_tab` [string]- true/false
+
+ * `bdf_send_enter` [string]- true/false
 
 #### APP_LIST
 An array of bundles that contains a set of `PACKAGE_NAMES` and an `ACTIVITY_LIST` to be associated with the Profile. 
@@ -140,14 +149,14 @@ The scanner identifier (introduced in DataWedge 6.5) permits scanners to be iden
 
 DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
-* **PLUGIN_NOT_SUPPORTED -** FAILURE
-* **BUNDLE_EMPTY -** FAILURE 
-* **PROFILE_NAME_EMPTY -** FAILURE
-* **PROFILE_NOT_FOUND -** FAILURE
-* **PLUGIN_BUNDLE_INVALID -** FAILURE
-* **PARAMETER_INVALID -** FAILURE 
-* **APP_ALREADY_ASSOCIATED -** FAILURE
-* **OPERATION_NOT_ALLOWED -** FAILURE
+* **PLUGIN_NOT_SUPPORTED -** An attempt was made to configure a plug-in that is not supported by DataWedge intent APIs
+* **BUNDLE_EMPTY -** The bundle contains no data 
+* **PROFILE_NAME_EMPTY -** An attempt was made to configure a Profile name with no data
+* **PROFILE_NOT_FOUND -** An attempt was made to perform an operation on a Profile that does not exist
+* **PLUGIN_BUNDLE_INVALID -** A passed plug-in parameter bundle is empty or contains insufficient information
+* **PARAMETER_INVALID -** The passed parameters were empty, null or invalid 
+* **APP_ALREADY_ASSOCIATED -** An attempt was made to associate an app that was already associated with another Profile
+* **OPERATION_NOT_ALLOWED -** An attempt was made to rename or delete a protected Profile or to associate an app with Profile0
 
 Also see the [Result Codes guide](../resultinfo) for more information.  
 

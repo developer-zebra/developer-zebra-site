@@ -53,12 +53,13 @@ The main `SET_CONFIG` bundle includes the following properties:
 #### PLUGIN_CONFIG BUNDLE
 The `PLUGIN_CONFIG` bundle is configured using the following properties:
 
-**RESET_CONFIG** [String]: Optional
-  * True (Default) – Clear any existing configuration and create a new configuration with the specified parameter values  
-  * False – Update the existing values and add values not already in the configuration
+* **RESET_CONFIG** [String]: Optional. When used, takes the following values: 
+ * **True (Default) –** Clear any existing configuration and create a new configuration with the specified parameter values  
+ * **False –** Update the existing values and add values not already in the configuration
 
 **PLUGIN_NAME** [String]: Name of the Plug-in to configure:
  * **BARCODE** input
+ * **SERIAL** input
  * **INTENT** output
  * **KEYSTROKE** output
  * **BDF** (basic data formatting) processing
@@ -80,48 +81,52 @@ _A visual representation of nested SET_CONFIG bundles. [See example code](#examp
 The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the table below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
 
 * **BARCODE –** takes a value from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
+ * `scanner_selection_by_identifier` [string]- takes a value from the list of [Scanner Identifiers](#scanneridentifiers) below.
 
- `scanner_selection_by_identifier` [string]- takes a value from the list of [Scanner Identifiers](#scanneridentifiers) below.
+* **SERIAL -** takes values as indicated below: 
+<br>
+ * `serial_port_id` [string] - 0&ndash;n (a valid port index)
+ * `serial_input_enabled` [string] - true/false
+ * `serial_baudrate` [string] - 300, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 230400, 460800 or 921600
+ * `serial_databits` [string] - 7 or 8
+ * `serial_parity` [string] - NONE, ODD, EVEN, MARK or SPACE
+ * `serial_stopbits` [string] - 1 or 2
+ * `serial_flow` [string] - FLOW_NONE, FLOW_RTS_CTS or FLOW_XON_XOFF
+
 
 * **INTENT -** takes values as indicated below: 
-
- `intent_output_enabled` [string]- true/false
-
- `intent_action` [string]
-
- `intent_category` [string] 
-
- `intent_delivery` [string]:
- 	* "0" = Start Activity
- 	* "1" = Start Service
- 	* "2" = Broadcast
+<br>
+ * `intent_output_enabled` [string]- true/false
+ * `intent_action` [string] - exact name of the action
+ * `intent_category` [string] - exact name of the category
+ * `intent_delivery` [string]:
+ 	* 0 - Start Activity
+ 	* 1 - Start Service
+ 	* 2 - Broadcast
 
 <!-- `intent_flag_receiver_foreground` [string] &lt;true/false&gt; -->
 
 * **KEYSTROKE -** takes a value from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
 
-* **BDF -** Applies Basic Data Formatting rules to the acquired data. Takes values: 
+* **BDF -** Applies [Basic Data Formatting](../../process/bdf) rules to the acquired data. Takes values: 
+ * `bdf_enabled` [string]- true/false
 
- `bdf_enabled` [string]- true/false
+ * `bdf_prefix` [string]- prepend acquired data
 
- `bdf_prefix` [string]- Prefix to acquired data
+ * `bdf_suffix` [string]- append acquired data
 
- `bdf_suffix` [string]- Suffix to acquired data
+ * `bdf_send_data` [string]- true/false
 
- `bdf_send_data` [string]- true/false
+ * `bdf_send_hex` [string]- true/false
 
- `bdf_send_hex` [string]- true/false
+ * `bdf_send_tab` [string]- true/false
 
- `bdf_send_tab` [string]- true/false
+ * `bdf_send_enter` [string]- true/false
 
- `bdf_send_enter` [string]- true/false
+* **ADF -** Applies [Advanced Data Formatting](../../process/adf) rules to the acquired data. This bundle contains Action, Device, Decoder and Label_ID sub-bundles, and takes values:
+ * `adf_enabled` [string] – true/false (default=false)
 
-* **ADF -** Applies Advanced Data Formatting rules to the acquired data. This bundle contains Action, Device, Decoder and Label_ID sub-bundles, and takes values:
-
- `adf_enabled` [string] – true/false (default=false)
-
- `ADF_RULE` [bundle] - Takes values:
-
+ * `ADF_RULE` [bundle] - Takes values:
 	* `name` [string] – Name of the ADF rule to use
 	* `enabled` [string] – Rule enabled; true/false (default=true)
 	* `alldevices` [string] – Accept data from all supported input sources; true/false (default=true)	
@@ -130,19 +135,22 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 	* `string_len` [string] - String length (default=0)
 	* `ACTIONS` [bundle] - Accepts multiple instances. Takes value(s): 
 		* `type` [string] - Name of Action from [ADF Actions table](#adfactions)
-		* `action_param_1`, `action_param_2`... (as determined by Action; see table)
-	* `DEVICES` [bundle] - Accepts multiple instances. Takes values:
-		* `device_id` [string] - Name of the input source: "BARCODE", "MSR", "SIMULSCAN" or "SERIAL"
+		* `action_param_1`, `action_param_2`... (as determined by ADF Action; see table)
+
+ * `DEVICES` [bundle] - Accepts multiple instances. Takes values:
+		* `device_id` [string] - Name of the input source: BARCODE, MSR, SIMULSCAN or SERIAL
 		* `enabled` [string] - Accept data from specified device ID: true/false (default=true)
 		* `alldecoders` [string] - Allow all barcode symbologies: true/false (default=true)
 		* `all_label_ids` [string] - Allow all UDI label IDs: true/false (default=true)
-	* `DECODERS` [bundle] - Accepts multiple instances. Takes values:
-		* `device_id` [string] - "BARCODE", "MSR", "SERIAL" or "SIMULSCAN"
+
+ * `DECODERS` [bundle] - Accepts multiple instances. Takes values:
+		* `device_id` [string] - BARCODE, MSR, SERIAL or SIMULSCAN
 		* `decoder` [string] - (i.e. "Australian Postal")
 		* `enabled` [string] - true/false (default=true)
-	* `LABEL_IDS` [bundle] - Accepts multiple instances. Takes values:
-		* `device_id` [string] - "BARCODE", "MSR", "SERIAL" or "SIMULSCAN"
-		* `label_id` [string] - "UDI_GS1", "UDI_HIBCC", "UDI_ICCBBA"
+
+ * `LABEL_IDS` [bundle] - Accepts multiple instances. Takes values:
+		* `device_id` [string] - BARCODE, MSR, SERIAL or SIMULSCAN
+		* `label_id` [string] - UDI_GS1, UDI_HIBCC or UDI_ICCBBA
 		* `enabled` [string] - true/false (default=true)
 
 **IMPORTANT**: 
@@ -318,14 +326,14 @@ The scanner identifier (introduced in DataWedge 6.5) permits scanners to be iden
 
 DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
-* **PLUGIN_NOT_SUPPORTED -** FAILURE
-* **BUNDLE_EMPTY -** FAILURE 
-* **PROFILE_NAME_EMPTY -** FAILURE
-* **PROFILE_NOT_FOUND -** FAILURE
-* **PLUGIN_BUNDLE_INVALID -** FAILURE
-* **PARAMETER_INVALID -** FAILURE 
-* **APP_ALREADY_ASSOCIATED -** FAILURE
-* **OPERATION_NOT_ALLOWED -** FAILURE
+* **PLUGIN_NOT_SUPPORTED -** An attempt was made to configure a plug-in that is not supported by DataWedge intent APIs
+* **BUNDLE_EMPTY -** The bundle contains no data 
+* **PROFILE_NAME_EMPTY -** An attempt was made to configure a Profile name with no data
+* **PROFILE_NOT_FOUND -** An attempt was made to perform an operation on a Profile that does not exist
+* **PLUGIN_BUNDLE_INVALID -** A passed plug-in parameter bundle is empty or contains insufficient information
+* **PARAMETER_INVALID -** The passed parameters were empty, null or invalid 
+* **APP_ALREADY_ASSOCIATED -** An attempt was made to associate an app that was already associated with another Profile
+* **OPERATION_NOT_ALLOWED -** An attempt was made to rename or delete a protected Profile or to associate an app with Profile0
 * **RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME -** Rule name empty or undefined in `ADF_RULE` bundle
 
 Also see the [Result Codes guide](../resultinfo) for more information.  
@@ -938,6 +946,8 @@ Command and configuration intent parameters determine whether to send result cod
 <td class="c14" colspan="1" rowspan="1">
 <p class="c1"> <span class="c9"><u><strong>Param values</strong></u></span></p>
 </td>
+</tr>
+<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">auto_switch_to_default_on_connect</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">0 - Disabled</span></p><p class="c1"><span class="c0">1 - On connect</span></p><p class="c1"><span class="c0">2 - On disconnect</span></p><p class="c1"><span class="c0">3 - On connect/disconnect<p class="c1"><p class="c1"><span class="c0"><a href="../../input/barcode/#autoswitchtodefaultonevent">More info</a></span></p></td>
 </tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">digimarc_decoding</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p>
 </td>

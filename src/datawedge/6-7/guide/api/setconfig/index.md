@@ -249,6 +249,57 @@ Error messages are logged for invalid actions and parameters
 
 		this.sendBroadcast(i);
 
+### Set Serial Input Configuration
+
+	//
+	// Port 1 Configuration [Start]
+	//
+	Bundle bPort1 = new Bundle();
+	bPort1.putString("serial_port_id", "0"); //Supported Values: 0,1
+	bPort1.putString("serial_input_enabled", "true"); // Supported Values: true, false
+	bPort1.putString("serial_baudrate", "1200"); // Supported Values (some): 300, 1200, 2400, 4800, 19200, and more
+	bPort1.putString("serial_databits", "8"); //Supported Values: 8, 7
+	bPort1.putString("serial_parity", "ODD"); //Supported Values: NONE, ODD, EVEN, MARK, SPACE
+	bPort1.putString("serial_stopbits", "1"); //Supported Values: 1, 2
+	bPort1.putString("serial_flow", "FLOW_RTS_CTS"); //Supported Values: FLOW_NONE, FLOW_RTS_CTS, FLOW_DSR_DTR, FLOW_XON_XOFF
+	//
+	// Port 1 Configuration [End]
+	//
+	// Port 2 Configuration [Start]
+	//
+	Bundle bPort2 = new Bundle();
+	bPort2.putString("serial_port_id", "1");
+	bPort2.putString("serial_input_enabled", "true");
+	bPort2.putString("serial_baudrate", "300");
+	bPort2.putString("serial_databits", "7");
+	//bPort2.putString("abc", "123");
+	bPort2.putString("serial_stopbits", "2");
+	bPort2.putString("serial_flow", "FLOW_DSR_DTR");
+	bPort2.putString("serial_parity", "EVEN");
+	//
+	// Port 2 Configuration [End]
+	//
+	Bundle bConfig = new Bundle();
+	bConfig.putString("RESET_CONFIG", "false");
+	bConfig.putString("PLUGIN_NAME", "SERIAL");
+	bConfig.putParcelableArray("DEVICE_LIST", new Bundle[]{
+	        bPort1, bPort2
+	});
+
+	Bundle bMain = new Bundle();
+	bMain.putString("PROFILE_NAME", "Profile0 (default)");
+	bMain.putString("CONFIG_MODE", "UPDATE");
+	bMain.putBundle("PLUGIN_CONFIG", bConfig);
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+	i.putExtra("SEND_RESULT", "true");
+	i.putExtra("com.symbol.datawedge.api.RESULT_CATEGORY", DEFAULT_CATEGORY);
+	i.putExtra("COMMAND_IDENTIFIER", "DW_SERIAL_COMMAND");
+
+	this.sendBroadcast(i);
+
 ### Set KEYSTROKE Output 
 
 	@Override

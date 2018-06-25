@@ -2,7 +2,7 @@
 title: Get Scanner Status 
 layout: guide.html
 product: DataWedge
-productversion: '6.7'
+productversion: '6.6'
 ---
 
 ## GET_SCANNER_STATUS

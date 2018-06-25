@@ -7,7 +7,7 @@ productversion: '6.8'
 
 ## GET_SCANNER_STATUS
 
-Introduced in DataWedge 6.7.  
+Introduced in DataWedge 6.5.
 
 Returns the status of the scanner currently selected by DataWedge as the default.
 

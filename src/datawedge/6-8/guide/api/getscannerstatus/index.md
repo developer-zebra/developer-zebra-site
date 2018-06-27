@@ -49,6 +49,8 @@ Error messages are logged for invalid actions and parameters.
 
 ## Example Code
 
+### Query Scanner Status
+
     //Sending the intent to query scanner status
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
@@ -70,6 +72,7 @@ Error messages are logged for invalid actions and parameters.
         unregisterReceiver(receiver);
     }
 
+### Recieve Query Results
 
 	// Receiving the results 
 

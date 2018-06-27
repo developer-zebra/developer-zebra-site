@@ -30,7 +30,7 @@ Returns the status of the scanner currently selected by DataWedge as the default
 ### Return Values
 Returns a String of the name of the active DataWedge Profile
 
-**EXTRA NAME**: "com.symbol.datawedge.api.GET_SCANNER_STATUS" 
+**EXTRA NAME**: "com.symbol.datawedge.api.RESULT_SCANNER_STATUS" 
 
 **EXTRA TYPE** [String]: [ ] **Possible values**:
 * **WAITING** - Scanner is ready to be triggered

@@ -11,8 +11,16 @@ Introduced in DataWedge 6.8.
 
 Prevents DataWedge from switching to a Profile that is disabled; including Profile0. Applies to Profile switches initiated manually through the DataWedge settings panel and programmatically using the [SWITCH_TO_PROFILE API](../switchtoprofile). 
 
-This API can help address timing issues that sometimes arise in Android devices. For example, when using an EMM to enable and load a DataWedge Profile, the EMM might attempt to switch to a Profile that is not yet enabled. This API prevents that switch and continues to use the current Profile.
+The settings controlled by this API can help address timing issues that sometimes arise in Android devices when intents are used to switch Profiles. 
 
+<!-- 
+For example, if an application sends a "SWITCH_TO_PROFILE" intent early in an app's activity life cycle but DataWedge detects the activity change later and cause another Profile switch which could load a different Profile to what application already switched. 
+
+Enabling this setting and disabling the Profile which would load when the application comes to foreground in regular Profile switch, would help to avoid such situations. Alternative solutions to alleviate such timing issues are one of the following: 1. Check if the activity is in the foreground prior to switching Profiles, 2. Register for notifications to determine whether the appropriate Profile switch took place.
+
+
+This API prevents that switch and continues to use the current Profile.
+-->
 ### Function Prototype
 
 	Intent i = new Intent();

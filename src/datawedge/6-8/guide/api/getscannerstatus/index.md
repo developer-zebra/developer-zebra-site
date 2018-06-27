@@ -72,7 +72,7 @@ Error messages are logged for invalid actions and parameters.
         unregisterReceiver(receiver);
     }
 
-### Recieve Query Results
+### Receive Query Results
 <!-- added 6/27 per Dasun. why a class? Insert or replace? 
  -->
 	// Receiving the results 

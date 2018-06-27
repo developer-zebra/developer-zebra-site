@@ -9,7 +9,9 @@ productversion: '6.8'
 
 Introduced in DataWedge 6.8. 
 
-Used to pass one or more [SimulScan parameters](../../input/simulscan) as a bundle, updating the settings of the active Profile. This API can be used to change SimulScan settings in response to changing conditions at any time. For example, a developer might wish to enable an app to programmatically change input templates or region separators at various times of the day or in response to varying conditions. 
+Used to pass one or more [SimulScan parameters](../../input/simulscan) as a bundle, **<u>temporarily</u>** updating the settings of the active Profile. This API can be used to change SimulScan settings in response to changing conditions at any time. For example, a developer might wish to enable an app to programmatically change input templates or region separators at various times of the day or in response to varying conditions. 
+
+**Note**: Settings configured by this API are not persistent; settings revert to those of the active profile the next time the app launches.
 
 ### Function Prototype
 

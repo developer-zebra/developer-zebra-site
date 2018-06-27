@@ -30,7 +30,7 @@ Returns the status of the scanner currently selected by DataWedge as the default
 ### Return Values
 Returns a String of the name of the active DataWedge Profile
 
-**EXTRA NAME**: "com.symbol.datawedge.api.GET_SCANNER_STATUS" 
+**EXTRA NAME**: "com.symbol.datawedge.api.RESULT_SCANNER_STATUS" 
 
 **EXTRA TYPE** [String]: [ ] **Possible values**:
 * **WAITING** - Scanner is ready to be triggered
@@ -49,7 +49,7 @@ Error messages are logged for invalid actions and parameters.
 
 ## Example Code
 
-	//Sending the intent to query scanner status
+    //Sending the intent to query scanner status
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.GET_SCANNER_STATUS","");
@@ -57,7 +57,34 @@ Error messages are logged for invalid actions and parameters.
 		i.putExtra("com.symbol.datawedge.api.RESULT_CATEGORY","android.intent.category.DEFAULT");
 		this.sendBroadcast(i);
 
+    // call in onResume()
+    private void registerReceivers(){
+        IntentFilter filter = new IntentFilter();
+        filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+        filter.addCategory(Intent.CATEGORY_DEFAULT);
+        registerReceiver(receiver,filter);
+    }
+     
+    //call in onPause()
+    private void unRegisterReceivers(){
+        unregisterReceiver(receiver);
+    }
+
+
 	// Receiving the results 
+
+<!-- added 6/27 per Dasun. why a class? Insert or replace? 
+ -->
+    class ResultIntentReceiver extends BroadcastReceiver {
+    @Override
+    public void onReceive(Context context, Intent intent) {
+            if(intent.hasExtra("com.symbol.datawedge.api.RESULT_SCANNER_STATUS")) {
+                String scannerStatus = intent.getStringExtra("com.symbol.datawedge.api.RESULT_SCANNER_STATUS");
+                Log.d(TAG,"Scanner status:"+scannerStatus);
+            }
+        };
+    }
+
 		private BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver(){
     	@Override
     	public void onReceive(Context context, Intent intent){

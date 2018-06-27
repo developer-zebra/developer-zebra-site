@@ -73,11 +73,9 @@ Error messages are logged for invalid actions and parameters.
     }
 
 ### Recieve Query Results
-
-	// Receiving the results 
-
 <!-- added 6/27 per Dasun. why a class? Insert or replace? 
  -->
+	// Receiving the results 
     class ResultIntentReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {

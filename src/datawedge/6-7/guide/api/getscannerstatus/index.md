@@ -49,18 +49,48 @@ Error messages are logged for invalid actions and parameters.
 
 ## Example Code
 
-	//Sending the intent to query scanner status
-		Intent i = new Intent();
-		i.setAction("com.symbol.datawedge.api.ACTION");
-		i.putExtra("com.symbol.datawedge.api.GET_SCANNER_STATUS","");
-		i.putExtra("SEND_RESULT","true");
-		i.putExtra("com.symbol.datawedge.api.RESULT_CATEGORY","android.intent.category.DEFAULT");
-		this.sendBroadcast(i);
+### Query Scanner Status
 
-	// Receiving the results 
-		private BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver(){
-    	@Override
-    	public void onReceive(Context context, Intent intent){
+    //Sending the intent to query scanner status
+        Intent i = new Intent();
+        i.setAction("com.symbol.datawedge.api.ACTION");
+        i.putExtra("com.symbol.datawedge.api.GET_SCANNER_STATUS","");
+        i.putExtra("SEND_RESULT","true");
+        i.putExtra("com.symbol.datawedge.api.RESULT_CATEGORY","android.intent.category.DEFAULT");
+        this.sendBroadcast(i);
+
+    // call in onResume()
+    private void registerReceivers(){
+        IntentFilter filter = new IntentFilter();
+        filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+        filter.addCategory(Intent.CATEGORY_DEFAULT);
+        registerReceiver(receiver,filter);
+    }
+     
+    //call in onPause()
+    private void unRegisterReceivers(){
+        unregisterReceiver(receiver);
+    }
+
+### Recieve Query Results
+
+    // Receiving the results 
+
+<!-- added 6/27 per Dasun. why a class? Insert or replace? 
+ -->
+    class ResultIntentReceiver extends BroadcastReceiver {
+    @Override
+    public void onReceive(Context context, Intent intent) {
+            if(intent.hasExtra("com.symbol.datawedge.api.RESULT_SCANNER_STATUS")) {
+                String scannerStatus = intent.getStringExtra("com.symbol.datawedge.api.RESULT_SCANNER_STATUS");
+                Log.d(TAG,"Scanner status:"+scannerStatus);
+            }
+        };
+    }
+
+        private BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver(){
+        @Override
+        public void onReceive(Context context, Intent intent){
 
         if (intent != null) {
             String command = intent.getStringExtra("COMMAND");
@@ -82,9 +112,9 @@ Error messages are logged for invalid actions and parameters.
             
             Log.d("TAG", "#DataWedgeTestApp# \nCommand: " + command + "\nResult: " + result + "\nReason:\n" + resultInfo);
             Toast.makeText(context, text, Toast.LENGTH_LONG).show();
-        	}
-    	};
-	};
+            }
+        };
+    };
 
 ------
 

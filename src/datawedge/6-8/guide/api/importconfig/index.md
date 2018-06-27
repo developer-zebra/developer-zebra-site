@@ -46,9 +46,9 @@ Used to import a DataWedge Profile and/or Config settings files. **A Profile is 
 
 The main `IMPORT_CONFIG` bundle includes the following properties:
 
-**FOLDER_NAME** [String]: **Required** folder path and name for configuration files to import. 
+**FOLDER_PATH** [String]: **Required** folder path and name for configuration files to import. 
 
-**FILE_LIST** [ArrayList&lt;String&gt;]: **Optional** list of one or more required database (`.db`) files in the folder specified in `FOLDER_NAME` parameter. If not specified, DataWedge imports all files with a `.db` extension in the folder specified in `FOLDER_NAME` parameter. 
+**FILE_LIST** [ArrayList&lt;String&gt;]: **Optional** list of one or more required database (`.db`) files in the folder specified in `FOLDER_PATH` parameter. If not specified, DataWedge imports all files with a `.db` extension in the folder specified in `FOLDER_PATH` parameter. 
 
 **Zebra recommends using the `getExternalFilesDirs` API call** to identify accessible external storage locations in the device before sending the `IMPORT_CONFIG` intent. For example: 
 

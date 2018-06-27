@@ -59,7 +59,7 @@ The main `IMPORT_CONFIG` bundle includes the following properties:
 	/storage/sdcard2/0/Android/data/<PackageName>/files
 	/storage/emulated/0/Android/data/<PackageName>/files
 	
-	Note: "34E4-1117" is a symbolic link to an external SDcard
+**Note**: The "34E4-1117" shown above is a symbolic link to an external SDcard. 
 
 ### Result Bundle
 After an `IMPORT_CONFIG` intent is sent, DataWedge broadcasts a result intent with the  status (success or failure) of the import. Result info is returned as an ArrayList of bundles containing `RESULT_CODE` and `RESULT_CODE_INFO` sections to describe the additional information.

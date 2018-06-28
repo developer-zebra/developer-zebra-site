@@ -78,7 +78,7 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 
 * **SERIAL -** takes values as indicated below: 
 <br>
- * `serial_port_id` [string] - 0&ndash;n (a valid port index)
+ * `serial_port_id` [string] - 0&ndash;n (must be a valid port index)
  * `serial_input_enabled` [string] - true/false
  * `serial_baudrate` [string] - 300, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 230400, 460800 or 921600
  * `serial_databits` [string] - 7 or 8
@@ -667,6 +667,20 @@ Command and configuration intent parameters determine whether to send result cod
 <p class="c1"> <span class="c9"><u><strong>Param values</strong></u></span></p>
 </td>
 </tr>
+<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_port_id</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">0&ndash;n (must be a valid index)</span></p>
+</td>
+<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_input_enabled</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p>
+</td>
+<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_baudrate</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">300, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 230400, 460800 or 921600</span></p>
+</td>
+<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_databits</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">7 or 8</span></p>
+</td>
+<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_parity</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">NONE, ODD, EVEN, MARK or SPACE</span></p>
+</td>
+<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_stopbits</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">1 or 2</span></p>
+</td>
+<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_flow</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">FLOW_NONE, FLOW_RTS_CTS or FLOW_XON_XOFF</span></p>
+</td>
 <tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">scanning_mode</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">1 - Single</span></p><p class="c1"><span class="c0">2 - UDI</span></p><p class="c1"><span class="c0">3 - MultiBarcode</span></p></td>
 </tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">multi_barcode_count</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">integer from 2&ndash;10</span></p></td>

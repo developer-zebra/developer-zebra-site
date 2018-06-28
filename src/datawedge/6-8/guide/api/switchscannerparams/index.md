@@ -9,7 +9,9 @@ productversion: '6.8'
 
 Introduced in DataWedge 6.5. 
 
-Used to pass one or more [barcode, scanner and/or reader parameters](../../input/barcode/#decoderselection) as intent extras, updating the settings of the active Profile. This API can be used to change scanner settings in response to changing conditions at any time. For example, a developer might wish to enable scanner illumination whenever a low-light condition is detected. 
+Used to pass one or more [barcode, scanner and/or reader parameters](../../input/barcode/#decoderselection) as intent extras, **<u>temporarily</u>** updating the settings of the active Profile. This API can be used to change scanner settings in response to changing conditions at any time. For example, a developer might wish to enable scanner illumination whenever a low-light condition is detected. 
+
+> **Note**: Settings configured by this API are discarded with the next Profile switch.
 
 ### Function Prototype
 

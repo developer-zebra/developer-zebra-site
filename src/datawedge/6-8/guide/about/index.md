@@ -15,7 +15,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 -----
 
-**[What's new in DataWedge 6.8](#newindatawedge68)**
+**Go to ["what's new" section](#newindatawedge68)**
 
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 
@@ -85,7 +85,7 @@ The SimulScan Input Plug-in default template is now "Default - Barcode4.xml"
 
 -----
 
-## Version History
+## Recent Version History
 
 ### Added in v6.7
 

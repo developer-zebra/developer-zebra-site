@@ -59,6 +59,8 @@ Error messages are logged for invalid actions and parameters.
 		i.putExtra("com.symbol.datawedge.api.RESULT_CATEGORY","android.intent.category.DEFAULT");
 		this.sendBroadcast(i);
 
+<!-- removed due to redundancy, NOT per eng. 
+
     // call in onResume()
     private void registerReceivers(){
         IntentFilter filter = new IntentFilter();
@@ -72,19 +74,37 @@ Error messages are logged for invalid actions and parameters.
         unregisterReceiver(receiver);
     }
 
-### Receive Query Results
-<!-- added 6/27 per Dasun. why a class? Insert or replace? 
  -->
-	// Receiving the results 
-    class ResultIntentReceiver extends BroadcastReceiver {
-    @Override
-    public void onReceive(Context context, Intent intent) {
-            if(intent.hasExtra("com.symbol.datawedge.api.RESULT_SCANNER_STATUS")) {
-                String scannerStatus = intent.getStringExtra("com.symbol.datawedge.api.RESULT_SCANNER_STATUS");
-                Log.d(TAG,"Scanner status:"+scannerStatus);
-            }
-        };
+
+### Register to Receive Query Results
+
+    private void registerReceivers(){
+        IntentFilter filter = new IntentFilter();
+        filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+        filter.addCategory(Intent.CATEGORY_DEFAULT);
+        registerReceiver(receiver,filter);
     }
+
+### Receive Query Results
+
+    // Receiving the results 
+
+    ResultIntentReceiver receiver = new ResultIntentReceiver();
+
+    class ResultIntentReceiver extends BroadcastReceiver {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+                if(intent.hasExtra("com.symbol.datawedge.api.RESULT_SCANNER_STATUS")) {
+                    String scannerStatus = intent.getStringExtra("com.symbol.datawedge.api.RESULT_SCANNER_STATUS");
+                    Log.d(TAG,"Scanner status:"+scannerStatus);
+                }
+        }
+    }
+
+
+<!-- 6/29/18- replaced existing code (below) with the code above, per eng. 
+
+	// Receiving the results 
 
 		private BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver(){
     	@Override
@@ -113,6 +133,13 @@ Error messages are logged for invalid actions and parameters.
         	}
     	};
 	};
+ -->
+
+### Unregister (to Release Resources)
+
+    private void unRegisterReceivers(){
+        unregisterReceiver(receiver);
+    }
 
 ------
 

@@ -41,32 +41,26 @@ _Input enabled on Serial port 1 of a Zebra VC80x; second serial port (disabled) 
 _Tapping on a setting displays a dialog box for changing its value._
 <br>
 
-<!-- 
-DW_serial_04.png (baud rate)
-DW_serial_05.png (data bits)
-DW_serial_06.png (parity) 
-DW_serial_07.png (stop bits)
- -->
-**_Applies only to devices running Android N and higher_**.  
+**Notes**: 
 
-**Note: Serial port configuration is available only on devices running Android N and higher**. For prior versions, only the Enable/Disable options are available for serial ports.
-
-For more information about required serial communication settings, please refer to documentation that accompanied the peripheral being connected.
+* **<u>Serial port configuration is available only on devices running Android N and higher</u>**. For prior versions, only the Enable/Disable options are available for serial ports.
+* **For more information about required serial communication settings** of a specific device, please refer to documentation that accompanied the peripheral being connected. 
+* **Serial-port settings also can be configured programmatically. See the [Output Using Intents](#outputusingintents) section below**. 
 
 -----
 
 ### Output Using Intents
 
-Rather than displaying decoded data on the screen, it might be preferable for some scanning apps to output acquired data directly to an app activity. This is done using Android intents. See [SET_CONFIG](../../api/setconfig/#parameters) and [GET_CONFIG](../../api/getconfig/#parameters) APIs for parameters and sample code. 
+For some scanning applications, it might be preferable to output acquired data directly to an app or app activity rather than displaying decoded data on the screen. **This is done using Android intents**:
 
-**SEE ALSO**:
-* **[Intent Output guide](../../output/intent)** | Information and important warnings about intents
+* **[SET_CONFIG API](../../api/setconfig)** and **[sample code](../../api/setconfig/#setserialinputconfiguration)** for setting serial parameters
+* **[GET_CONFIG API](../../api/getconfig)** and **[sample code](../../api/getconfig/#getserialinputconfig)** for getting serial parameter settings
+
+-----
+
+**Relates Gudies**:
+* **[Intent Output guide](../../output/intent)** | Information and important warnings about intent usage
+* **[DataWedge APIs](../../api)** | List of all DataWedge intent APIs
+* **[DataWedge Profiles](../../profiles)** | List of dataWedge Plug-ins for input, output and data processing
 * **[Android Developer site](https://developer.android.com/guide/components/intents-filters.html)** | General information about Android intents 
-
-------
-
-**Related guides**:
-
-* [DataWedge Intent APIs](../../api) 
-* [DataWedge Profiles](../../profiles)
 

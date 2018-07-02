@@ -4,16 +4,22 @@ layout: guide.html
 product: EMM Toolkit
 productversion: '2.0'
 ---
-<!-- 
-# `DRAFT`
- -->
+
+## `DRAFT`
+
 **_Information subject to change without notice_**. 
 
 -----
 
 ## Overview
 
-This section explains device owner stuff, and why a Nougat device _should_ be enrolled as a DO and why an Oreo _must_. 
+This guide documents procedures for enrolling an EMM agent app as a "Device Owner," which grants adequate permissions to perform any and all available activities for configuring the device. 
+
+Device Owner (DO) capabilies apply to Zebra devices running Android 5.x Lollipop and higher. However, **the procedures in this guide require Android 7.x Nougat and Zebra MX 7.1 or higher**. 
+
+-----
+<!-- 
+section explains device owner stuff, and why a Nougat device _should_ be enrolled as a DO and why an Oreo _must_. 
 
 * DO is recommended with Nougat. With Oreo, it's required. 
 * Agent Uses AEDO + Zebra OemConfig Managed Configs​
@@ -29,7 +35,7 @@ This section explains device owner stuff, and why a Nougat device _should_ be en
 * MUST support use of OemConfig by the start of Android P​
 
 > Info in the QR code is identical to contents of the `Provisioning.JSON` file.  
-
+ -->
 ### Terms used in this guide
 
 * **AE -** Android Enterprise (formerly Android for Work)
@@ -77,65 +83,56 @@ This process of device staging is intended for devices that are in a factory-def
 
 **Enrollment three-part process**: 
 
-1. [Prepare the staging workstation](#1preparetheworkstation) (5 steps)
+1. [Prepare the staging workstation](#1preparetheworkstation) (5 steps, one-time only)
 2. [Create provisioning barcodes](#2createprovisioningbarcodes) (13 steps)
 3. [Enroll the device](#3enrolladevice) (4 steps)
-
-> **Note**: File and folder names are case-sensitive.
 
 -----
 
 ### 1. Prepare the Workstation
 
-This section is required only for first-time set-up of the staging workstation. <br>**If the workstation is already prepared, [skip to Part 2](#2createprovisioningbarcodes)**. 
+This section is required only for first-time set-up of the staging workstation. **If the workstation is already prepared, [skip to Part 2](#2createprovisioningbarcodes)**. 
 
+**Prepare the device-staging workstation**:
 
-**&#49;. Create a folder of any name** on the workstation to contain files listed in the [Prerequisites section](#prerequisites) above. 
-<br>The folder name used for this guide is "`/EMM/downloads/`". 
-
-**&#50;. Create a folder of any name** on the workstation to contain files for device enrollment. 
-<br>The folder name used for this guide is "`/EMM/install/`". 
-
-**&#51;. Copy the agent files** required for device management to the `/EMM/install/` folder. 
-<br>**IMPORTANT: Filenames are case-sensitive**. 
-
-**&#52;. Copy the** `Provision.apk` **file** to the `/EMM/install/` folder.
-
-**&#53;. Open the** `Provisioning.JSON` **file with a text editor**, and enter the server name, user credentials and any other necessary fields (as required by the EMM solution) in the appropriate section (see image, below).
-
-**&#54;. Save the changes and copy the updated file** to the  `/EMM/downloads/` folder. <br>**IMPORTANT: Filenames are case-sensitive**. Make sure the file is named exactly as shown above.
-
-<img alt="image" style="height:278px" src="JSON_code_EMM_Sample_3.PNG"/>
-
-_The `Provision.JSON` sample shows syntax for server URL, user name and password._
+1. **Create a folder of any name** on the workstation to contain device-enrollment files listed in the [Prerequisites section](#prerequisites) above. 
+ <br>The folder name used for this guide is "`/EMM/install/`". 
+2. **Copy the agent files** required for device management to the `/EMM/install/` folder. 
+3. **Copy the** `Provision.apk` **file** to the `/EMM/install/` folder.
+4. **Open the** `Provisioning.JSON` **file with a text editor**, and enter the server name, user credentials and any other necessary fields (as required by the EMM solution) in the appropriate section (see image, below). **TIP**: Information required for the `Provisioning.JSON` file is identical to that of the relevant QR code, if used.
+5. **Save the changes and copy the updated file** to the  `/EMM/install/` folder.
+ <img alt="image" style="height:278px" src="JSON_code_EMM_Sample_3.PNG"/>
+ _The `Provision.JSON` sample shows syntax for server URL, user name and password._
 <br>
-<!-- 
-this (old) file contains vendor-specific (airwatch) info: 04_json_file.png
- -->
-> **Note**: File and folder names are case-sensitive.
+
+> **Note: File and folder names are case-sensitive**.
 
 -----
 
 ### 2. Create Provisioning Barcodes
+This section involves importing a StageNow settings profile, modifying network and other settings for the target environment, and exporting it for deployment using the EMM system.   
 
-**&#49;. Import the first of two StageNow profiles** using the following steps: 
+**Import the** `EMM_PERE-DO` **StageNow profile**: 
 
- a.Launch StageNow and log in as an Administrator.  
- b. On StageNow UI, select: (home?)
+1. Launch StageNow and log in as Administrator. 
+2. **Click "All Profiles"** from the StageNow "Home" area:   
+ <img alt="image" style="height:205px" src="StageNow_Home.png"/><br>
+3. **Click "Import Profiles"** in the upper-right corner:
+ <img alt="image" style="height:205px" src="SN_All_Profiles.png"/><br> 
+4. **Navigate to the** `EMM_PERE-DO.zip` **file** on the staging workstation. <br>
+**Select "Import"** and follow prompts to complete the process:
+ <img alt="image" style="height:205px" src="navigate_2.png"/> <br>
+5. The imported profile appears. **Edit the necessary configuration sections of the imported profile** as required for the target environment (see list below).  
+ <img alt="image" style="height:205px" src="edit_profile_1.png"/> <br>
+<br>
+6. **Edit the sections as indicated**: 
+ a. **Wi-fi -**
+ b. **AppMgr -**
+ c. **Intent -**
+ d. **AppMgr  -**
 
-Then select: (screenshot of "Import Profiles")
 
 6. StageNow
-Navigate to the `EMM_PERE-DO.zip` file on the Workstation that was downloaded earlier from Zebra.  
-
-Then select Import.
-
-<img alt="image" style="height:205px" src="06_import_pere-do.png"/>
-
-_The `EMM_PERE-DO.xml` file preserves settings after device reset._
-<br>
-
-7. StageNow
 Edit the StageNow Profile as follows: 
 Rename Profile to: EMM_PERE-DO
 Select Stagenow Config.
@@ -159,7 +156,7 @@ Export an XML file from the StageNow Profile as follows:
 Select:
 
 Export the file to the `/EMM-downloads/` folder on the Workstation.
-Make sure the file is named exactly like this: PERE-DO.xml.
+Make sure the file is named exactly like this: PERE-DO.zip.
 
 10. Folder Check: On the Workstation, make sure the `/EMM-downloads/` folder has ALL the required files listed below.
 IMPORTANT: Filenames are case-sensitive. Make sure each file is named exactly as shown.

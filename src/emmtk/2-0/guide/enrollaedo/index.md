@@ -110,7 +110,9 @@ This section is required only for first-time set-up of the staging workstation. 
 -----
 
 ### 2. Create Provisioning Barcodes
-This section involves importing a StageNow settings profile, modifying network and other settings for the target environment, and exporting it for deployment using the EMM system.   
+This section involves importing a StageNow settings profile, modifying network and other settings for the target environment, and exporting it for deployment using the EMM system.
+
+> **Tap any image to enlarge**. 
 
 **Import the** `EMM_PERE-DO` **StageNow profile**: 
 
@@ -122,14 +124,33 @@ This section involves importing a StageNow settings profile, modifying network a
 4. **Navigate to the** `EMM_PERE-DO.zip` **file** on the staging workstation. <br>
 **Select "Import"** and follow prompts to complete the process:
  <img alt="image" style="height:205px" src="navigate_2.png"/> <br>
-5. The imported profile appears. **Edit the necessary configuration sections of the imported profile** as required for the target environment (see list below).  
+5. **Open the imported profile** to begin editing (if necessary, click the HOME icon to get to this screen): 
+ <img alt="image" style="height:205px" src="all_profiles_after_import.png"/> <br>
+6. The imported profile appears in "Review" mode. **Click "StageNow Config"** to enter config mode.<br>**Then click the left arrow three times** to see the view shown below.
+  <img alt="image" style="height:205px" src="view_profile_settings.png"/> <br>
+7. **Edit the necessary configuration sections of the imported profile** as required for the target environment (see list below).
  <img alt="image" style="height:205px" src="edit_profile_1.png"/> <br>
-<br>
-6. **Edit the sections as indicated**: 
- a. **Wi-fi -**
- b. **AppMgr -**
- c. **Intent -**
- d. **AppMgr  -**
+8. **Edit the sections as indicated**, saving settings of each:<br> 
+	a. **Wi-Fi -** Enter settings of the target network. **SAVE**.<br>
+	<img alt="image" style="height:250px" src="07_wifi.png"/><br>
+	b. **AppMgr -** Modify the name (but NOT the path) of the EMM agent app:<br>
+	`/enterprise/usr/EMM/install/<AgentAppName>.apk`<br>
+	<img alt="image" style="height:250px" src="b.appmgr.png"/><br>
+	c. **Intent -** Enter EMM vendor-specific package and class names of agent app to enroll as Device Owner:<br>
+	<img alt="image" style="height:250px" src="c.intent.png"/><br>
+	d. **AppMgr  -** Optional; use (as in Step b) only if EMM solution requires a second app.<br>  If not used, DO NOT REMOVE AT THIS TIME.<br>
+	<img alt="image" style="height:250px" src="d.appmgr.png"/><br>
+	e. **AppMgr -** DO NOT CHANGE. Installs Provision.apk app.<br>
+	<img alt="image" style="height:250px" src="e.appmgr.png"/><br>
+	f. **Intent -** DO NOT CHANGE. Enrolls the EMM with credentials provided in `Provisioning.JSON` file.<br>
+	<img alt="image" style="height:250px" src="f.intent.png"/><br>
+	g. **Intent -** Enter the Android Action, Package and Class Names for the EMM solution. This intent launches the EMM agent on the device.<br>
+	<img alt="image" style="height:250px" src="g.intent.png"/><br>
+	h. **PersistMgr -** DO NOT CHANGE. Ensures that settings a&ndash;g remain on the device after an Enterprise Reset.<br> 
+	<img alt="image" style="height:250px" src="h.persist.png"/><br>
+	i. If a second app was not added in Step d above, **delete the optional AppMgr profile**.<br>
+
+<img alt="image" style="height:205px" src="edit_profile_1.png"/>
 
 
 6. StageNow
@@ -140,7 +161,7 @@ Select Wi-Fi.  Select Edit.
 Edit the Wi-Fi profile for your network. Save.
 
 
-<img alt="image" style="height:165px" src="07_wifi.png"/>
+
 
 _Enabling Wi-Fi allows downloads post-staging._
 <br>

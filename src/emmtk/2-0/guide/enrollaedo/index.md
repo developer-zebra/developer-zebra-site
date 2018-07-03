@@ -126,13 +126,13 @@ This section involves importing a StageNow settings profile, modifying network a
  <img alt="image" style="height:205px" src="navigate_2.png"/> <br>
 5. **Open the imported profile** to begin editing (if necessary, click the HOME icon to get to this screen): 
  <img alt="image" style="height:205px" src="all_profiles_after_import.png"/> <br>
-6. The imported profile appears in "Review" mode. **Click "StageNow Config"** to enter config mode.<br>**Then click the left arrow three times** to see the view shown below.
-  <img alt="image" style="height:205px" src="view_profile_settings.png"/> <br>
-7. **Edit the necessary configuration sections of the imported profile** as required for the target environment (see list below).
+6. The imported profile appears in "Review" mode. **Click "StageNow Config"** to enter config mode...<br>
+ <img alt="image" style="height:205px" src="view_profile_settings.png"/>
+ **...then click the left arrow three times** for the view shown below.
  <img alt="image" style="height:205px" src="edit_profile_1.png"/> <br>
-8. **Edit the sections as indicated**, saving settings of each:<br> 
+7. **Edit the necessary configuration sections of the imported profile** as required for the target environment (Steps a&ndash;h, below) saving settings of each:<br> 
 	a. **Wi-Fi -** Enter settings of the target network. **SAVE**.<br>
-	<img alt="image" style="height:250px" src="07_wifi.png"/><br>
+	<img alt="image" style="height:250px" src="wi-fi_config.png"/><br>
 	b. **AppMgr -** Modify the name (but NOT the path) of the EMM agent app:<br>
 	`/enterprise/usr/EMM/install/<AgentAppName>.apk`<br>
 	<img alt="image" style="height:250px" src="b.appmgr.png"/><br>

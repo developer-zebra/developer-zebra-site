@@ -118,41 +118,48 @@ This section involves importing a StageNow settings profile, modifying network a
 
 1. Launch StageNow and log in as Administrator. 
 2. **Click "All Profiles"** from the StageNow "Home" area:   
- <img alt="image" style="height:205px" src="StageNow_Home.png"/><br>
+ <img alt="image" style="height:250px" src="StageNow_Home.png"/><br>
 3. **Click "Import Profiles"** in the upper-right corner:
- <img alt="image" style="height:205px" src="SN_All_Profiles.png"/><br> 
-4. **Navigate to the** `EMM_PERE-DO.zip` **file** on the staging workstation. <br>
+ <img alt="image" style="height:250px" src="SN_All_Profiles.png"/><br> 
+4. **Navigate to the** `EMM_PERE-DO.zip` **file** on the staging workstation (prepared in Section 1). <br>
 **Select "Import"** and follow prompts to complete the process:
- <img alt="image" style="height:205px" src="navigate_2.png"/> <br>
-5. **Open the imported profile** to begin editing (if necessary, click the HOME icon to get to this screen): 
- <img alt="image" style="height:205px" src="all_profiles_after_import.png"/> <br>
-6. The imported profile appears in "Review" mode. **Click "StageNow Config"** to enter config mode...<br>
- <img alt="image" style="height:205px" src="view_profile_settings.png"/>
- **...then click the left arrow three times** for the view shown below.
- <img alt="image" style="height:205px" src="edit_profile_1.png"/> <br>
-7. **Edit the necessary configuration sections of the imported profile** as required for the target environment (Steps a&ndash;h, below) saving settings of each:<br> 
-	a. **Wi-Fi -** Enter settings of the target network. **SAVE**.<br>
+ <img alt="image" style="height:250px" src="navigate_2.png"/> <br>
+5. **Open the imported profile** to begin editing (if necessary, click the "HOME" icon to display this screen): 
+ <img alt="image" style="height:250px" src="all_profiles_after_import.png"/> <br>
+6. The imported profile appears in "Review" mode. **Click "StageNow Config"** to enter Config mode...<br>
+ <img alt="image" style="height:250px" src="view_profile_settings.png"/>
+ **...then click the left arrow three times** for the view shown below:
+ <img alt="image" style="height:350px" src="edit_profile_2.png"/> <br>
+7. **Edit the necessary configuration sections of the imported profile** as required for the target environment (Steps a&ndash;h, below). To edit a config, tap its number and click the blue "Edit" button (arrow, above).<br>
+<u>**Hit "Save" when done editing each config**</u> or settings are lost.<br> 
+	a. **Wi-Fi -** **Enter network settings** for the target device(s):<br>
 	<img alt="image" style="height:250px" src="wi-fi_config.png"/><br>
-	b. **AppMgr -** Modify the name (but NOT the path) of the EMM agent app:<br>
+	b. **AppMgr -** **Enter the EMM agent app name <u>only</u>**. <u>Do NOT change the path</u> from that shown below:<br>
 	`/enterprise/usr/EMM/install/<AgentAppName>.apk`<br>
 	<img alt="image" style="height:250px" src="b.appmgr.png"/><br>
-	c. **Intent -** Enter EMM vendor-specific package and class names of agent app to enroll as Device Owner:<br>
+	c. **Intent -** **Enter EMM vendor-specific package and class names of agent app** to enroll as Device Owner:<br>
 	<img alt="image" style="height:250px" src="c.intent.png"/><br>
-	d. **AppMgr  -** Optional; use (as in Step b) only if EMM solution requires a second app.<br>  If not used, DO NOT REMOVE AT THIS TIME.<br>
+	d. **AppMgr  -** **Optional**; use (as in Step b) only if EMM solution requires a second app.<br>  If not used, DO NOT REMOVE AT THIS TIME.<br>
 	<img alt="image" style="height:250px" src="d.appmgr.png"/><br>
-	e. **AppMgr -** DO NOT CHANGE. Installs Provision.apk app.<br>
+	e. **AppMgr -** **DO NOT CHANGE**. This config installs the Provision.apk app.<br>
 	<img alt="image" style="height:250px" src="e.appmgr.png"/><br>
-	f. **Intent -** DO NOT CHANGE. Enrolls the EMM with credentials provided in `Provisioning.JSON` file.<br>
+	f. **Intent -** **DO NOT CHANGE**. This config enrolls the EMM with credentials provided in `Provisioning.JSON` file during the preparation in Section 1.<br>
 	<img alt="image" style="height:250px" src="f.intent.png"/><br>
-	g. **Intent -** Enter the Android Action, Package and Class Names for the EMM solution. This intent launches the EMM agent on the device.<br>
+	g. **Intent -** **Enter the Android Action, Package and Class Names for the EMM solution**. The intent in this config launches the EMM agent on the device.<br>
 	<img alt="image" style="height:250px" src="g.intent.png"/><br>
-	h. **PersistMgr -** DO NOT CHANGE. Ensures that settings a&ndash;g remain on the device after an Enterprise Reset.<br> 
+	h. **PersistMgr -** **DO NOT CHANGE**. This config ensures that settings configured in Steps a&ndash;g remain on the device if an Enterprise Reset is performed in the future.<br> 
 	<img alt="image" style="height:250px" src="h.persist.png"/><br>
 	i. If a second app was not added in Step d above, **delete the optional AppMgr profile**.<br>
 
-<img alt="image" style="height:205px" src="edit_profile_1.png"/>
 
 
+## `DRAFT`
+
+**_Information subject to change without notice_**. 
+
+### PART 2 OF THIS PROCESS TO COME 
+
+<!-- 
 6. StageNow
 Edit the StageNow Profile as follows: 
 Rename Profile to: EMM_PERE-DO
@@ -278,7 +285,7 @@ Device displays may go dark due to timeout while the enrollment finishes.  This 
 Log in to your AirWatch Console to monitor the progress of enrolled devices.
 Devices will be added the Device List as they complete enrollment.  
 
-
+ -->
 
 
 -----

@@ -124,23 +124,24 @@ This section involves importing a StageNow settings profile, modifying network a
 4. **Navigate to the** `EMM_PERE-DO.zip` **file** on the staging workstation (prepared in Section 1). <br>
 **Select "Import"** and follow prompts to complete the process:
  <img alt="image" style="height:250px" src="navigate_2.png"/> <br>
-5. **Open the imported profile** to begin editing (if necessary, click the "HOME" icon to display this screen): 
+5. **Open the imported profile** to begin editing. If necessary, click the StageNow "HOME" icon to display this screen: 
  <img alt="image" style="height:250px" src="all_profiles_after_import.png"/> <br>
 6. The imported profile appears in "Review" mode. **Click "StageNow Config"** to enter Config mode...<br>
  <img alt="image" style="height:250px" src="view_profile_settings.png"/>
  **...then click the left arrow three times** for the view shown below:
  <img alt="image" style="height:350px" src="edit_profile_2.png"/> <br>
-7. **Edit the necessary configuration sections of the imported profile** as required for the target environment (Steps a&ndash;h, below). To edit a config, tap its number and click the blue "Edit" button (arrow, above). <u>**Hit "Save" when done editing each config**</u> or settings are lost.<br> 
-	a. **Wi-Fi -** **Enter network settings** for the target device(s):<br>
+7. **Edit the necessary configuration sections of the imported profile** as required for the target environment using Steps a&ndash;h, below.<br>
+ **To edit a config**, tap its numbered button and click the blue "Edit" button on the right side of the screen (see arrow, above). <u>**Be sure to hit "Save" when done editing each config**</u> or settings are lost.<br> 
+	a. **Wi-Fi -** **Enter network settings** for the network on which the target device(s) will operate:<br>
 	<img alt="image" style="height:250px" src="wi-fi_config.png"/><br>
-	b. **AppMgr -** **Enter the EMM agent app name <u>only</u>**. <u>Do NOT change the path</u> from that shown below:<br>
+	b. **AppMgr -** **Enter the EMM agent app name <u>only</u>**. <u>Do not change the path</u> from that shown below:<br>
 	`/enterprise/usr/EMM/install/<AgentAppName>.apk`<br>
 	<img alt="image" style="height:250px" src="b.appmgr.png"/><br>
-	c. **Intent -** **Enter EMM vendor-specific package and class names of agent app** to enroll as Device Owner:<br>
+	c. **Intent -** **Enter the EMM vendor-specific package and class names of the agent app** to enroll as Device Owner:<br>
 	<img alt="image" style="height:250px" src="c.intent.png"/><br>
-	d. **AppMgr  -** **Optional**; use (as in Step b) only if EMM solution requires a second app.<br>  If not used, DO NOT REMOVE AT THIS TIME.<br>
+	d. **AppMgr  -** **Optional**; use (as in Step b) only if EMM solution requires a second app.<br> **Skip this step if no second app is required**.<br>
 	<img alt="image" style="height:250px" src="d.appmgr.png"/><br>
-	e. **AppMgr -** **DO NOT CHANGE**. This config installs the Provision.apk app.<br>
+	e. **AppMgr -** **DO NOT CHANGE**. This config installs the required `Provision.apk` app.<br>
 	<img alt="image" style="height:250px" src="e.appmgr.png"/><br>
 	f. **Intent -** **DO NOT CHANGE**. This config enrolls the EMM with credentials provided in `Provisioning.JSON` file during the preparation in Section 1.<br>
 	<img alt="image" style="height:250px" src="f.intent.png"/><br>

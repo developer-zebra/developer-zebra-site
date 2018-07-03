@@ -130,8 +130,7 @@ This section involves importing a StageNow settings profile, modifying network a
  <img alt="image" style="height:250px" src="view_profile_settings.png"/>
  **...then click the left arrow three times** for the view shown below:
  <img alt="image" style="height:350px" src="edit_profile_2.png"/> <br>
-7. **Edit the necessary configuration sections of the imported profile** as required for the target environment (Steps a&ndash;h, below). To edit a config, tap its number and click the blue "Edit" button (arrow, above).<br>
-<u>**Hit "Save" when done editing each config**</u> or settings are lost.<br> 
+7. **Edit the necessary configuration sections of the imported profile** as required for the target environment (Steps a&ndash;h, below). To edit a config, tap its number and click the blue "Edit" button (arrow, above). <u>**Hit "Save" when done editing each config**</u> or settings are lost.<br> 
 	a. **Wi-Fi -** **Enter network settings** for the target device(s):<br>
 	<img alt="image" style="height:250px" src="wi-fi_config.png"/><br>
 	b. **AppMgr -** **Enter the EMM agent app name <u>only</u>**. <u>Do NOT change the path</u> from that shown below:<br>

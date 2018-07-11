@@ -81,7 +81,7 @@ parm:
       devicetype: A
       info: Available on SDM660-platform devices only. 
       name: EnableGMSApps
-      description: Enables GMS and all GMS apps on the "Safe to Disable" list. 
+      description: Enables all GMS applications and services on your GMS device.  This action undoes the effects caused by ‘DisableGMSApps’ and returns your device to the standard configuration.  This setting will ignore any previous calls to EnableApplication or DisableApplication. 
       mx: "8.0"
       osx: "8.1"
       apilevel: "24"
@@ -89,7 +89,7 @@ parm:
       devicetype: A
       info: Available on SDM660-platform devices only. 
       name: DisableGMSApps
-      description: Disables GMS and all GMS apps on the "Safe to Disable" list. 
+      description: Disables all GMS applications and services on your device for example the Play Store, YouTube, Gmail, Google Maps, Photos, Chrome and Play Services.  In exchange for the absence of Google applications and services, a device with this setting applied will not communicate back to Google servers which can help alleviate privacy concerns for some customers. 
       mx: "8.0"
       osx: "8.1"
       apilevel: "24"

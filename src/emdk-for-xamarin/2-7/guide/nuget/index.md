@@ -26,19 +26,19 @@ Zebra will officially support NuGet packages in a future EMDK for Xamarin releas
 
 ### Installing the NuGet Package (beta)
 1. From within a project, right-click the project name and select `Manage NuGet Packages...` from the menu:
-	![img](win-manage-nuget-packages.png)  
+	![img](win-manage-nuget-packages.jpg)  
 <br>
 2. Tap on the `Browse` tab. Select the checkbox `Include prerelease`.  In the search field type `EMDK`:
-	![img](win-emdksearch.png)
+	![img](win-emdksearch.jpg)
 <br>
 3. Select `Symbol.XamarinEMDK`. Click the `Install` button to the right:
-	![img](win-install.png)
+	![img](win-install.jpg)
 <br>
 4. Click the "`I Accept`" button to accept the License Agreement:
-	![img](win-license.png)
+	![img](win-license.jpg)
 <br>
 5. From the right-hand panel, under Solution Explorer expand the `References` section. The EMDK for Xamarin APIs are now referenced and can be used in the project: 
-	![img](win-references.png)
+	![img](win-references.jpg)
 <br>
 -----
 

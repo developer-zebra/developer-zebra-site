@@ -25,35 +25,21 @@ Zebra will officially support NuGet packages in a future EMDK for Xamarin releas
 ## Visual Studio 2017 for Windows
 
 ### Installing the NuGet Package (beta)
-1. [Download the EMDK for Xamarin NuGet file](https://github.com/zebra-stage/zebra-stage.github.io/blob/master/emdk-for-xamarin/nuget/Symbol.XamarinEMDK.2.7.0.76-rc.nupkg?raw=true) and save to a local folder.  
-
-2. From within a project, right-click the project name and select `Manage NuGet Packages...` from the menu:
-	![img](win-manage-nuget.jpg)
+1. From within a project, right-click the project name and select `Manage NuGet Packages...` from the menu:
+	![img](win-manage-nuget-packages.png)  
 <br>
-3. Click the `Settings` (gear) icon in the upper-right corner:
-	![img](settings-icon.jpg)
+2. Tap on the `Browse` tab. Select the checkbox `Include prerelease`.  In the search field type `EMDK`:
+	![img](win-emdksearch.png)
 <br>
-4. Click the "`+`" button in the upper-right corner:
-	![img](plus_button.jpg)
+3. Select `Symbol.XamarinEMDK`. Click the `Install` button to the right:
+	![img](win-install.png)
 <br>
-5. Change the `Name` to "`Local`" and specify the path to the downloaded EMDK for Xamarin NuGet file. Then click the "`Update`" button: 
-	![img](add_local.jpg)
+4. Click the "`I Accept`" button to accept the License Agreement:
+	![img](win-license.png)
 <br>
-6. Click the "`OK`" button.
-7. Check the "`Include prerelease`" checkbox and in the upper-right corner, change the package source to "`Local`" as shown: 
-	![img](change_local.jpg)
+5. From the right-hand panel, under Solution Explorer expand the `References` section. The EMDK for Xamarin APIs are now referenced and can be used in the project: 
+	![img](win-references.png)
 <br>
-8. Select the `Symbol.XamarinEMDK` package (if not already selected) and click the "`Install`" button: 
-	![img](install-package.jpg)
-<br>
-9. When prompted, click "`OK`" to accept the changes and "`I Accept`" for the license: 
-	![img](accept-changes.jpg)
-<br>
-	![img](accept-license.jpg)
-<br>
-10. The EMDK for Xamarin APIs are now referenced and can be used in the project:
-	![img](reference.jpg)
-
 -----
 
 ### Removing the NuGet Package

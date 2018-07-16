@@ -25,35 +25,21 @@ Zebra will officially support NuGet packages in a future EMDK for Xamarin releas
 ## Visual Studio 2017 for Windows
 
 ### Installing the NuGet Package (beta)
-1. [Download the EMDK for Xamarin NuGet file](https://github.com/zebra-stage/zebra-stage.github.io/blob/master/emdk-for-xamarin/nuget/Symbol.XamarinEMDK.2.7.0.76-rc.nupkg?raw=true) and save to a local folder.  
-
-2. From within a project, right-click the project name and select `Manage NuGet Packages...` from the menu:
-	![img](win-manage-nuget.jpg)
+1. From within a project, right-click the project name and select `Manage NuGet Packages...` from the menu:
+	![img](win-manage-nuget-packages.jpg)  
 <br>
-3. Click the `Settings` (gear) icon in the upper-right corner:
-	![img](settings-icon.jpg)
+2. Tap on the `Browse` tab. Select the checkbox `Include prerelease`.  In the search field type "`EMDK`":
+	![img](win-emdksearch.jpg)
 <br>
-4. Click the "`+`" button in the upper-right corner:
-	![img](plus_button.jpg)
+3. Select `Symbol.XamarinEMDK`. Click the `Install` button to the right:
+	![img](win-install.jpg)
 <br>
-5. Change the `Name` to "`Local`" and specify the path to the downloaded EMDK for Xamarin NuGet file. Then click the "`Update`" button: 
-	![img](add_local.jpg)
+4. Click the "`I Accept`" button to accept the License Agreement:
+	![img](win-license.jpg)
 <br>
-6. Click the "`OK`" button.
-7. Check the "`Include prerelease`" checkbox and in the upper-right corner, change the package source to "`Local`" as shown: 
-	![img](change_local.jpg)
+5. From the right-hand panel, under Solution Explorer expand the `References` section. The EMDK for Xamarin APIs are now referenced and can be used in the project: 
+	![img](win-references.jpg)
 <br>
-8. Select the `Symbol.XamarinEMDK` package (if not already selected) and click the "`Install`" button: 
-	![img](install-package.jpg)
-<br>
-9. When prompted, click "`OK`" to accept the changes and "`I Accept`" for the license: 
-	![img](accept-changes.jpg)
-<br>
-	![img](accept-license.jpg)
-<br>
-10. The EMDK for Xamarin APIs are now referenced and can be used in the project:
-	![img](reference.jpg)
-
 -----
 
 ### Removing the NuGet Package
@@ -70,32 +56,17 @@ Right-click on the `Symbol.EMDKForXamarin` package and select "`Remove`" as belo
 Microsoft has replaced Xamarin Studio for Mac with [Visual Studio 2017 for Mac](https://docs.microsoft.com/en-us/visualstudio/mac/). Install the latest version before proceeding.
 
 ### Installing the NuGet Package (beta)
-1. [Download the EMDK for Xamarin NuGet file](https://github.com/zebra-stage/zebra-stage.github.io/blob/master/emdk-for-xamarin/nuget/Symbol.XamarinEMDK.2.7.0.76-rc.nupkg?raw=true) and save to a local folder. 
-
-2. In the project right-click "`Packages`" folder.
-3. Click "`Add Packages`" as below:
-	![img](addpackage.png)
+1. In the project right-click the **Packages** folder. Click "`Add Packages...`" from the menu:
+	![img](mac-packages.jpeg)
 <br>
-4. Select "`Configure sources`" from the drop-down, which initially displays `nuget.org` as below: 
-	![img](nugetorg.png)
+2. At the bottom of the **Add Packages** window, select the checkbox for "`Show pre-release packages`":
+	![img](mac-prerelease_package.jpeg)
 <br>
-5. Click the "`Add`" button in the lower-right corner:
-	![img](addserver.png)
+3. In the search box at the top right, enter "`emdk`". Ensure the EMDK package is highlighted. Click the "`Add Package`" button:
+	![img](mac-emdk.jpeg)
 <br>
-6. Select the folder that contains the downloaded EMDK for Xamarin NuGet file and click the "`Open`" button:
-	![img](selectfolder.png)
-<br>
-7. Click the "`Add Source`" button:
-	![img](addsource.png)
-<br>
-8. The `Local` source should now be shown. Click `OK` to save:
-	![img](addedsource.png)
-<br>
-9. **On the "Add Packages" screen**, select the "`Symbol.XamarinEMDK`" package (if not already selected), confirm that the "`Show pre-release packages`" checkbox is checked, and click the "`Add package`" button:
-	![img](showprerelease.png)
-<br>
-10. **Accept the license** when prompted:
-	![img](license.png)
+4. Click the "`Accept`" button to accept the license:
+	![img](mac-license.jpeg)
 <br>
 
 >**EMDK for Xamarin APIs are now ready for use**. 

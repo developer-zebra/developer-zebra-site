@@ -14,9 +14,10 @@ productversion: '2.0'
 Methods of managing Zebra devices:
 
 * Past: Signed agent
-* Present: MX to submit XML
-* Future: AEDO + OemConfig
+* Present: XML submissions to MXMS
+* Future: AEDO (when supported by Android-standard APIs) + OemConfig (when not)
 
+<!-- 
 WATCH (George's?) GTX (and possibly embed it)
 
 
@@ -36,6 +37,7 @@ This section explains device owner stuff, and why a Nougat device _should_ be en
 * SHOULD support use of OemConfig as early as possible, preferably by the end of Android Nougat​
 
 > Info in the QR code is identical to contents of the `Provisioning.JSON` file.  
+ -->
 
 ### Terms used in this guide
 

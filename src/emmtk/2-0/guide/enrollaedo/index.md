@@ -38,7 +38,7 @@ section explains device owner stuff, and why a Nougat device _should_ be enrolle
  -->
 ### Terms used in this guide
 
-* **AE -** Android Enterprise (formerly Android for Work)
+* **AE -** Android Enterprise (formerly "Android for Work")
 * **AEDO -** Android Enterprise Device Owner
 * **AFW -** Android for Work
 * **DA -** Device administrator

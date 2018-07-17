@@ -1,50 +1,52 @@
 ## Document a NEW PRODUCT
 (example: Enterprise Browser 1.6)
 
-### I. Create a new BRANCH off the "develop" branch of developer-zebra-site repo
+### I. Create a new BRANCH in the developer-zebra-site repo from the same folder from which you'll be copying the product. For example, if you're documenting EB 1.6, checkout the branch containing EB 1.5. 
 
-	:::term
-	$ git checkout develop
-	$ git checkout -b eb-1.6 develop ("eb-1.6" = new branch name off the "develop" branch)
+		:::term
+		$ git checkout eb-1.5
+		$ git checkout -b eb-1.6 ("eb-1.6" = new branch that contains EB 1.5)
 
 
 ### II. Create folder structure
-In product folder ("enterprise-browser"), copy folder of prior version
-Rename the copied folder to "1-6" (separate digits with a **dash**, **NOT a dot**)
-Search and replace " 'productversion: 1-5' " with " 'productversion: 1-6' " on all pages
-Search and replace "1.5" with "1.6" in appropriate places (a manual replacement process is recommended; some search results will be "false positives")
 
-	:::term
-	$ git add . (stages all changed files for commit)  
-	$ git commit -m 'EB 1.6 initial commit' (commits the changes, makes a restore point)
-	$ git push --set-upstream origin eb-1.6 (only required for the first push, after that just use "git push" to replicate changes to the online repo)
+1. In product folder ("enterprise-browser"), copy the folder of prior version.
+2. Rename the copied folder to "1-6" (separate digits with a **dash**, **NOT a dot**).
+3. Using your editor, search and replace "productversion: 1-5" with "productversion: 1-6" on all pages. 
+4. Search and replace "1.5" with "1.6" in appropriate places (a manual replacement process is recommended; some search results will be "false positives," such as those that read "for EB 1.5 and higher...").
 
+		:::term
+		$ git add . (stages all changed files for commit)  
+		$ git commit -m 'EB 1.6 initial commit' 
+		$ git push 
+
+<!-- THIS PUSH-COMMAND PARAMETER IS NO LONGER REQUIRED : 
+		--set-upstream origin eb-1.6 
+ -->
 
 ### III. Modify build script and techdocs "tile-page" 
 
-* Inside /src/build.js, replicate and modify the prior product's portion of the build script  
+1. Inside /src/build.js, replicate and modify the prior product's portion of the build script (for a new product, add a new section to the build script). 
+2. In the /src/index.md file, replicate and modify the prior product's section of the tile page. 
+3. Build pages for the new product: 
 
-* In the /src/index.md file, replicate and modify the prior product's section of the tile page 
-
-	:::term
-	$ node build (builds pages and starts local web server to view them with)
-
-Browse to http://localhost:8080/ and click the product's tile to see the pages
+		:::term
+		$ node build (builds pages and starts local web server to view them with)
+4. Browse to http://localhost:8080/ and click the product's tile to see the pages.
 
 ### IV.  Modify/Add/Create pages as necessary for the new version
 After saving major changes, commit them to the repo: 
 
-	:::term
-	$ git add . (stages all changed files for commit)  
-	$ git commit -m '[optional Jira ticket number] insert brief description of the changes'
+		:::term
+		$ git add . (stages all changed files for commit)  
+		$ git commit -m '[Jira ticket number] EB 1.6 About page new features added'
 
 
 To see changes: 
-* press CTRL-C in the build tab to quit the local web server 
+* press CTRL-C in the build tab to quit the local web server: 
 
 	:::term
 	$ node build (to run it again and publish the latest saved changes)
-
 
 * Refresh the page(s) and revise as necessary
 
@@ -55,11 +57,14 @@ This ensures that incoming links from other products (i.e. "techdocs.zebra.com/e
 
 ### V. Stage (for engineering validation)
 
-* Copy updated files to zebra-stage.github.io repo from local /build folder (select "merge" if prompted)
-* Add and commit using steps from above
-* Push new files to server, verify arrival
-* Copy the URL to the jira ticket and @mention relevant engineers to validate
-* Correct as necessary and post to stage and zebra.github.io repos (commit and push)
+1. Copy updated files to zebra-stage.github.io repo from local /build folder (select "merge" if prompted). 
+2. Add and commit using steps from above.
+3. Push new files to server, verify arrival. 
+4. Copy the URL to the jira ticket and @mention relevant engineers to request validation.
+5. Correct as necessary and post to stage for re-validation. 
+6. When all changes are completed and validated, post to zebra.github.io
+
+<!-- THIS SECTION IS NO LONGER REQUIRED. MOST PRODUCTS NOW HAVE THEIR OWN BRANCHES OR ARE CONTAINS WITHIN SMALL GROUPS (i.e. "TUT_PI" branches for EMDK, MX and StageNow and "solutions" branch for SOLA products.> 
 
 ### VI. Merge into Develop 
 
@@ -79,7 +84,7 @@ From within the branch that develop is merging into:
 	$ git merge --no-ff develop
 	$ git commit -m 'message describing the merge'
 	$ git push origin branch-name
-
+ -->
 
 ## Add an MX version to Android Studio
 

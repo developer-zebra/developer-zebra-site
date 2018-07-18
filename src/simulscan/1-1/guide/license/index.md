@@ -6,7 +6,7 @@ productversion: '1.1'
 ---
 ## Overview
 
-**SimulScan is free for many scanning scenarios, including when used with Zebra's [DataWedge](../../../../datawedge) service** and its default Templates, from a custom app to scan only barcodes and/or for certain types of optical character recognition (OCR). A per-device license is required for advanced SimulScan features such as detection and capture of checkmarks and for scanning highly complex targets. A complete breakdown is below and shown in the [Licensing Matrix](#licensingmatrix). 
+**SimulScan is free for many scanning scenarios, including when used with Zebra's [DataWedge](../../../../datawedge) service** and its default Templates, from a custom app to scan only barcodes, and/or for certain types of optical character recognition (OCR). A per-device license is required for advanced SimulScan features such as detection and capture of checkmarks and for scanning highly complex targets. A complete breakdown is below and shown in the [Licensing Matrix](#licensingmatrix). 
 
 ### When a License is Not Required 
 
@@ -15,26 +15,22 @@ productversion: '1.1'
 * SimulScan is **used to scan a fixed number of barcodes fewer than 10** ([Multi-barcode mode](../glossary/#multibarcodemode))
 * **No more than 10 barcodes** are present on any single scan target 
 * **Text is captured using OCR-A, OCR-B or MRZ** barcode symbologies
-* **SimulScan is accessed through DataWedge** using many of its default Templates (except OCR)
 * **Capturing the presence of a signature**
-* **Capturing an image** or an entire document as an image 
-
+* **Capturing an image** 
+<!-- 
+* **SimulScan is accessed through DataWedge** using many of its default Templates (except OCR)
+-->
 ### When a License is Required 
 
-**A per-device License is required when capturing**: 
+**A per-device License is required when**: 
 
-<!-- * SimulScan is used **to capture an entire Document** ([Document Capture mode](../glossary/#documentcapturemode))-->
-* **More than 10 (but no more than 20) barcodes** (or other fields) on any single scan target
-* **A changing number of barcodes from one scan to another** (Dynamic or Variable Quantity Groups) 
-* **Text using optical character recognition (OCR)**
-* **Optical marks using optical mark recognition (OMR)** to detect check marks  
-<!-- * **SimulScan is used with [Enterprise Browser](../../../../enterprise-browser)**
--->
-
-<!--
-info from PM: SimulScan_MB-PREM is required for advanced Barcoding features, and SimilScan_PREM (higher price) is required for OCR/OMR and includes the Advanced Barcoding Features as well 
- -->
-
+<!-- 
+* **Capturing an entire Document** ([Document Capture mode](../glossary/#documentcapturemode))
+* **SimulScan is used with [Enterprise Browser](../../../../enterprise-browser)** -->
+* **Capturing more than 10 barcodes** (or other fields) on any single scan
+* **The number of barcodes changes from one scan to another** (Dynamic or Variable Quantity Groups) 
+* **Capturing text using optical character recognition (OCR)** (other than OCR-A or OCR-B)
+* **Using Optical Mark Recognition (OMR)** to capture check marks  
 
 ### Licensing General Rules
 
@@ -51,6 +47,11 @@ info from PM: SimulScan_MB-PREM is required for advanced Barcoding features, and
 ## Licensing Matrix
 
 <IFRAME WIDTH=1000 HEIGHT=800 FRAMEBORDER=0 SRC="https://app.smartsheet.com/b/publish?EQBCT=fdb2e12c9d6440649e09cf2fae055b8a"></IFRAME>
+
+### License Types
+
+* **SimulScan_MB-PREM -** required for advanced barcoding features
+* **SimilScan_PREM -** required for advanced barcoding features and OCR/OMR
 
 -----
 
@@ -85,26 +86,31 @@ _Options for SimulScan licensing might vary from the image shown_.
 -----
 
 ### III. Assign License(s)
-Once the desired number of license(s) are purchased, they must be assigned to device(s) before being deployed commercially. Licenses can be deployed manually or remotely using [Zebra StageNow](../../../../stagenow) or a compatible mobile device management (MDM) system.
+Once the desired license(s) are purchased, they must be assigned to device(s) before being deployed commercially. Licenses can be deployed manually or remotely using [Zebra StageNow](../../../../stagenow) or a compatible mobile device management (MDM) system.
 
 #### Manual Deployment
-**&#49;. Enter the device model and serial number** (as shown) and other required information and **Press Submit** when done. 
+**&#49;. Enter the device model and serial number** (as shown) and other required information.<br>
+**Press Submit** when done. 
 ![img](assignlicense.png)
-_Individual licenses must be applied manually at the device. Deployment licenses can be deployed remotely_.
+_Individual licenses must be applied manually at the device. Deployment licenses can be deployed remotely en mass_.
 <br>
 
 **&#50;. Download the** `SDC_License.xml` **file** from the licensing server to a local PC:
 ![img](downloadlicense.png)
-_Licenses are tied to the device model and serial number and will fail if transferred to another device_.
+_Licenses are tied to the device model and serial number and will fail if transferred to a different device_.
 <br>
 
-**&#51;. Push the License file to the** `/simulscan` **folder on the device(s)**.
+**&#51;. Push the License file to the device**.
 
-**&#52;. In the SimulScan Demo app, select Menu -> License and tap the "Install" button**.
+**&#52;. This step varies by Android version**:
+* **Marshmallow and higher**:
+ * In the SimulScan Demo app, select Menu -> License and tap the "Install" button.<br>
+* **Lollipop and lower**:
+ * In the Settings panel, select About Phone -> Legal Information -> Symbol Licenses -> Menu -> Install license.
 
-**&#53;. Navigate to the** `/simulscan` **folder and tap the License file** pushed in Step 1.
+**&#53;. Navigate to the License file** pushed to the device in Step 1.
 
-On success, "License Successfully Installed" message appears.
+On success, a confirmation message appears.
 
 **Manual License deployment is complete**. 
 

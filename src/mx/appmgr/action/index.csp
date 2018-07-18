@@ -32,25 +32,25 @@ parm:
     - code: 3
       devicetype: A,B
       name: Upgrade
-      description: Upgrades the User app contained within an .apk file in the specified path with the same Package Name on the device. If the requested app cannot be found or upgraded, an error is returned in the Result XML document. To install an application that is not already installed on the device, use the "Install" action (option 1). Note- When an application is upgraded, the data for that application is maintained. This allows the new version of the app to access (and possibly convert) data created by the old version. Note- In devices running Android Jelly Bean, an Upgrade can replace any version of an app with any other version of the same app. However, in devices running Android KitKat or higher, an Upgrade can replace only apps with a numerically greater version number.
+      description: Upgrades the User app contained within an .apk file in the specified path with the same Package Name on the device. If the requested app cannot be found or upgraded, an error is returned in the Result XML document. To install an application that is not already installed on the device, use the "Install" action (option 1). Note- When an application is upgraded, the data for that application is maintained. Note- In devices running Android Jelly Bean, an Upgrade can replace any version of an app with any other version of the same app. In devices running Android KitKat or higher, an Upgrade can replace only apps with a numerically greater version number.
       mx: "4.1"
       osx: "1.0"
     - code: 4
       devicetype: A,B
       name: SetDefaultLauncher
-      description: Sets a System or User app with the specified Package Name as the new default launcher. The specified app must already be installed on the device and generally should be designed to be a Android Launcher according to the relevant Android specifications. If no app with the specified Package Name is installed on the device, an error is returned in the Result XML document.
+      description: Sets a System or User app with the specified Package Name as the new default launcher. The specified app must already be installed on the device and generally should be designed to be a Android Launcher according to Android specifications. If no app with the specified Package Name is installed on the device, an error is returned in the Result XML document.
       mx: "4.1"
       osx: "1.3"
     - code: 5
       devicetype: A,B
       name: EnableApplication
-      description: Enables the System app with the specified Package Name to be launched. If the Package Name does not exist on the device, an error will be returned in the Result XML document.
+      description: Enables the System app with the specified Package Name to be launched. If the Package Name does not exist on the device, an error is returned in the Result XML document.
       mx: "4.2"
       apilevel: "1"
     - code: 6
       devicetype: A,B
       name: DisableApplication
-      description: Prevents the System app with the specified Package Name from being launched. If Package Name does not exist on the device, an error will be returned in the Result XML document.
+      description: Prevents the System app with the specified Package Name from being launched. If Package Name does not exist on the device, an error is returned in the Result XML document.
       mx: "4.2"
       apilevel: "1"
     - code: 7
@@ -62,7 +62,7 @@ parm:
     - code: 8
       devicetype: A
       name: LaunchApplication
-      description: Allows a System or User app to be launched by its visible Name rather than by its package name. This refers to the app name as it appears in Launcher, App Drawer, Application Manager or app_name field of the strings.xml file (i.e. "Calculator"). To use this value, the app and its icon or widget must be visible in the Launcher screen and launchable with its main activity using that icon or widget. If the app is not present, does not have an icon or widget, cannot be launched using its main activity or contains only services and receivers, an error will be returned in the Result XML document. Not case sensitive.
+      description: Allows a System or User app to be launched by its visible Name rather than by its package name (not case-sensitive). This refers to the app name as it appears in Launcher, App Drawer, Application Manager or app_name field of the strings.xml file (i.e. "Calculator"). To use this value, the app and its icon or widget must be visible in the Launcher screen and launchable with its main activity using that icon or widget. If the app is not present, does not have an icon or widget, cannot be launched using its main activity or contains only services and receivers, an error is returned in the Result XML document.
       mx: "5.1"
       apilevel: "1"
     - code: 9

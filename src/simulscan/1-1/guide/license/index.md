@@ -98,15 +98,17 @@ _Individual licenses must be applied manually at the device. Deployment licenses
 _Licenses are tied to the device model and serial number and will fail if transferred to another device_.
 <br>
 
-**&#51;. Push the License file to the device(s)**.
+**&#51;. Push the License file to the** `/simulscan` **folder on the device(s)**.
 
-**&#52;. In the Settings panel, select About Phone -> Legal Information -> Symbol Licenses -> Menu -> Install license**.
+**&#52;. In the SimulScan Demo app, select Menu -> License and tap the "Install" button**.
 
-**&#53;. Navigate to the License file** and select it.
+**&#53;. Navigate to the** `/simulscan` **folder and tap the License file** pushed in Step 1.
+
+On success, "License Successfully Installed" message appears.
 
 **Manual License deployment is complete**. 
 
-#### Remote deployment
+#### Mass deployment
 
 1. **Generate a Deployment Key** on the licensing website. 
 2. **Launch the StageNow wizard** and select "SimulScan mass-deployment."

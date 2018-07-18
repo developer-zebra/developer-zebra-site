@@ -103,14 +103,14 @@ _Licenses are tied to the device model and serial number and will fail if transf
 **&#51;. Push the License file to the device**.
 
 **&#52;. This step varies by Android version**:
-* **Marshmallow and higher**:
+* **Marshmallow and later**:
  * In the SimulScan Demo app, select Menu -> License and tap the "Install" button.<br>
-* **Lollipop and lower**:
+* **Lollipop and earlier**:
  * In the Settings panel, select About Phone -> Legal Information -> Symbol Licenses -> Menu -> Install license.
 
-**&#53;. Navigate to the License file** pushed to the device in Step 1.
+**&#53;. Navigate to the License file** pushed to the device in Step 3.
 
-On success, a confirmation message appears.
+**&#54;. Tap on the License file**. On success, a confirmation message appears.
 
 **Manual License deployment is complete**. 
 

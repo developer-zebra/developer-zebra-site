@@ -13,7 +13,7 @@ productversion: '1.1'
 **SimulScan is free when**: 
 
 * SimulScan is **used to scan a fixed number of barcodes fewer than 10** ([Multi-barcode mode](../glossary/#multibarcodemode))
-* **No more than 10 barcodes** are present on any single scan target 
+* **No more than 10 barcodes** are captured on any single scan 
 * **Text is captured using OCR-A, OCR-B or MRZ** barcode symbologies
 * **Capturing the presence of a signature**
 * **Capturing an image** 
@@ -29,7 +29,7 @@ productversion: '1.1'
 * **SimulScan is used with [Enterprise Browser](../../../../enterprise-browser)** -->
 * **Capturing more than 10 barcodes** (or other fields) on any single scan
 * **The number of barcodes changes from one scan to another** (Dynamic or Variable Quantity Groups) 
-* **Capturing text using optical character recognition (OCR)** (other than OCR-A or OCR-B)
+* **Capturing text using optical character recognition** (other than OCR-A or OCR-B)
 * **Using Optical Mark Recognition (OMR)** to capture check marks  
 
 ### Licensing General Rules
@@ -40,7 +40,7 @@ productversion: '1.1'
 * **The Deployment License Key** is user-generated on the licensing website.
 * **Demo licenses are available** for evaluation and early integration. 
 * **A license is not required to use the [SimulScan Demo App](../demo)**.
-* **A Factory Reset clears the license** from the device; redeployment is required. 
+* **A Factory Reset clears the license** from the device; license redeployment is required. 
 
 -----
 
@@ -100,13 +100,13 @@ _Individual licenses must be applied manually at the device. Deployment licenses
 _Licenses are tied to the device model and serial number and will fail if transferred to a different device_.
 <br>
 
-**&#51;. Push the License file to the device**.
+**&#51;. Push the License file to any location on the device**.
 
 **&#52;. This step varies by Android version**:
 * **Marshmallow and later**:
- * In the SimulScan Demo app, select Menu -> License and tap the "Install" button.<br>
+ * In the SimulScan Demo app, **select Menu -> License** and tap the "Install" button.<br>
 * **Lollipop and earlier**:
- * In the Settings panel, select About Phone -> Legal Information -> Symbol Licenses -> Menu -> Install license.
+ * In the Settings panel, **select About Phone -> Legal Information -> Symbol Licenses -> Menu -> Install license**.
 
 **&#53;. Navigate to the License file** pushed to the device in Step 3.
 

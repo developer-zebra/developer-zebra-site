@@ -2,7 +2,7 @@
 csp: batterymgr
 title: Percentage Decommission Threshold
 type: parm
-order: 3
+order: 8
 mx: "4.4"
 osx: "4.4"
 apilevel: "16"

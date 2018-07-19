@@ -20,7 +20,8 @@ When considering the capabilities of AppMgr, it is important to understand the d
 * Clear the Recent Application List
 * Clear an application's cache (which stores the app's temporary files) 
 * Add/remove apps from Battery Optimization exemption list (see below)
-* Enable/Disable GMS and all GMS apps on the "Safe to Disable" list
+* Enable all GMS apps
+* Disable all GMS apps that are safe to disable
 * Enable/Disable access to application info
 
 ### Battery Optimization

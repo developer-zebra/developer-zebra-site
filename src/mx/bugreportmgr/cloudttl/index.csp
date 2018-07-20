@@ -2,19 +2,19 @@
 csp: bugreportmgr
 title: Cloud Setting Expiration 
 type: parm
-order: 24
+order: 31
 mx: "8.1"
-apilevel: "23"
 devicetype: A
 parm:
-  presentif: EmailEnable parameter is set to "True"
+  presentif: CloudEnable parameter is set to "True"
   pivotal: No
   name: CloudTTL
   type: string
 ---
 
-Used to specify the SMTP port used by the sender's email server specified in the EmailSendersID parameter. 
+Used to specify the number of days after which a change to the cloud storage setting reverts to its default setting (disabled). Provides a means of temporarily configuring settings for troubleshooting and other purposes. 
 
 **Parm value input rules**: 
 
-* String containing the port used by the sender's email server
+* String containing the number of days (minimum 1) of a setting's "Time to Live"
+* A setting of "0" never expires

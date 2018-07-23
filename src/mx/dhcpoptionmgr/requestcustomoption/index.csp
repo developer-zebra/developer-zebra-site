@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: Request Custom Option Enable/Disable
 type: parm
-order: 40
+order: 70
 mx: "8.1"
 devicetype: A
 parm:
@@ -27,5 +27,5 @@ parm:
       description: Prevents the DHCP client from requesting a custom option number.
 ---
 
-Controls whether the DHCP client can request a custom option nummber, which...
+Controls whether the DHCP client can request a custom option nummber.
 

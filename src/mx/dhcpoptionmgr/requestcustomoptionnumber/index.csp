@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: Request Custom Option Number
 type: parm
-order: 41
+order: 71
 mx: "8.1"
 devicetype: A,B
 parm:
@@ -12,8 +12,8 @@ parm:
   type: string
 ---
 
-Used to specify 
+Used to specify a Custom Option Number. 
 
 **Parm value input rules**: 
 
-* String from 1&ndash;255 characters containing an FQDN value
+* String from 1&ndash;255 characters

@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: Send Custom Option Value
 type: parm
-order: 41
+order: 74
 mx: "8.1"
 devicetype: A,B
 parm:
@@ -12,9 +12,8 @@ parm:
   type: string
 ---
 
-Used to specify 
+Used to specify thr Custom Option Value. 
 
 **Parm value input rules**: 
 
-* String from 1&ndash;91 characters containing an FQDN value
-
+* String from 1&ndash;91 characters

@@ -2,7 +2,7 @@
 csp: dhcpoptionmgr
 title: Send Custom Option Enable/Disable
 type: parm
-order: 40
+order: 72
 mx: "8.1"
 devicetype: A
 parm:
@@ -19,13 +19,13 @@ parm:
       devicetype: A
       name: Enable
       mx: "8.1"
-      description: Enables the DHCP client send an FQDN value and optional flag.
+      description: Enables the DHCP client to send the Cutsom Option Number.
     - code: 2
       devicetype: A
       name: Disable
       mx: "8.1"
-      description: Prevents the DHCP client from sending FQDN information.
+      description: Prevents the DHCP client from sending a Custom Option Number.
 ---
 
-Controls whether the DHCP client can 
+Controls whether the DHCP client can send a Custom Option Number. 
 

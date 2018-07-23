@@ -3,7 +3,7 @@ csp: licensemgr
 title: Preactivated License Method
 type: parm
 order: 9
-mx: "8.0"
+mx: "8.1"
 devicetype: A
 parm:
   pivotal: No
@@ -14,12 +14,12 @@ parm:
     - code: 1
       devicetype: A
       name: embed
-      mx: "8.0"
+      mx: "8.1"
       description: Embeds the preactivated license file into the profile XML.
     - code: 2
       devicetype: A
       name: reference
-      mx: "8.0"
+      mx: "8.1"
       description: References a preactivated license file already on the device.
 ---
 

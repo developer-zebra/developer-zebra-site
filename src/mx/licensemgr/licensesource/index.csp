@@ -24,7 +24,7 @@ parm:
     - code: 3
       devicetype: A
       name: Preactivated
-      mx: "8.0"
+      mx: "8.1"
       description: Indicates that preactivated license file is present on the device.
 ---
 

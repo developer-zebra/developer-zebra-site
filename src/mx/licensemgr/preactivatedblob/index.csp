@@ -3,7 +3,7 @@ csp: licensemgr
 title: Preactivated 'Blob'
 type: parm
 order: 13
-mx: "8.0"
+mx: "8.1"
 devicetype: A
 parm:
   pivotal: No

@@ -1,0 +1,39 @@
+---
+csp: settingsmgr
+title: Slide-out Drawer Enable/Disable  
+type: parm
+order: 5
+mx: "8.1"
+osx: "7.6"
+apilevel: "24"
+devicetype: A
+info: Applies to devices running Android 7.x Nougat and higher only.
+parm:
+  pivotal: No
+  name: SlideOutDrawer
+  type: list
+  list:
+    - code: 0
+      mx: "8.1"
+      osx: "7.6"
+      apilevel: "24"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "8.1"
+      osx: "7.6"
+      apilevel: "24"
+      description: Allows the device user to launch apps from the slide-out drawer that appears on some devices.
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "8.1"
+      osx: "7.6"
+      apilevel: "24"
+      description: Prevents the device user from launching apps from the slide-out drawer that appears on some devices.
+---
+
+Controls whether the device user can launch apps using the "app drawer" that appears when swiping right or left on devices running Android 7.x Nougat and higher. 

@@ -27,5 +27,5 @@ parm:
       description: Prevents the DHCP client from requesting a custom option number.
 ---
 
-Controls whether the DHCP client can request a custom option nummber.
+Controls whether the DHCP client can request a Custom Option Number.
 

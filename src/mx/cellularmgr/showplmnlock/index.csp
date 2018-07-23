@@ -1,0 +1,38 @@
+---
+csp: cellularmgr
+title: PLMN Lock UI Enable/Disable 
+type: parm
+order: 47
+mx: "8.1"
+devicetype: A,B
+info: WWAN-enabled devices only
+parm:
+  pivotal: No
+  name: ShowPlmnLock
+  type: list
+  list:
+    - code: 0
+      mx: "8.1"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to cellular settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Enable
+      mx: "8.1"
+      description: Displays the PLMN locking switch in the Android Network Settings panel.
+    - code: 2
+      devicetype: A,B
+      name: Disable
+      mx: "8.1"
+      description: Hides the PLMN locking switch in the Android Network Settings panel. 
+---
+
+Controls whether the PLMN locking switch appears in the Android Network Settings panel on the device.  
+
+<!--
+QUESTIONS
+- multi-SIM device support
+- Hawkeye support
+- OSX or Android API dependencies? 
+-->

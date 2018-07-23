@@ -1,0 +1,31 @@
+---
+csp: cellularmgr
+title: Manual PLMN Enable/Disable 
+type: parm
+order: 45
+mx: "8.1"
+devicetype: A,B
+info: WWAN-enabled devices only
+parm:
+  pivotal: No
+  name: ManualPlmnLock
+  type: list
+  list:
+    - code: 0
+      mx: "8.1"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to celular settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Enable
+      mx: "8.1"
+      description: Enables the device user to 
+    - code: 2
+      devicetype: A,B
+      name: Disable
+      mx: "8.1"
+      description: Prevents the user from 
+---
+
+Controls whether the device user can change the selected public land mobile network (PLMN), such as that of a carrier network. 

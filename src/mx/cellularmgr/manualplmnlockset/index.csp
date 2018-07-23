@@ -1,0 +1,20 @@
+---
+csp: cellularmgr
+title: Manual PLMN LockSet
+type: parm
+order: 46
+mx: "8.1"
+devicetype: A
+info: WWAN-enabled devices only
+parm:
+  presentif: Manual PLMN Lock is set to "Enable"
+  pivotal: No
+  name: ManualPlmnLockSet
+  type: integer
+---
+
+Used to specify the mobile country code (MCC) and mobile network code (MNC) numbers for setting the PLMN lock. Expressed as a single five- or six-digit number (MCCMNC i.e. XXXYYY or XXXYY). 
+
+**Parm value input rules**: 
+
+* String of 5 or 6 numerical characters 

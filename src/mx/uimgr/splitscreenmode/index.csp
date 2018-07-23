@@ -1,33 +1,29 @@
 ---
 csp: uimgr
-title: Bluetooth Pairing Pop-up Enable/Disable
+title: Split Screen Enable/Disable
 type: parm
 order: 6
-mx: "4.3"
-osx: "4.3"
+mx: "8.1"
 devicetype: A
 parm:
   pivotal: No
-  name: BluetoothPairingPopupUsage
+  name: SplitScreenMode
   type: list
   list:
     - code: 0
-      mx: "4.3"
-      osx: "4.3"
+      mx: "8.1"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to Bluetooth Pairing Pop-up setting; any previously selected setting is retained. 
     - code: 1
       devicetype: A
       name: Enable 
-      mx: "4.3"
-      osx: "4.3"
+      mx: "8.1"
       description: Allows the Bluetooth Pairing Pop-up to be presented during pairing operations.
     - code: 2
       devicetype: A
       name: Disable
-      mx: "4.3"
-      osx: "4.3"
+      mx: "8.1"
       description: Prevents display of the Bluetooth Pairing Pop-up during pairing operations.
 ---
 

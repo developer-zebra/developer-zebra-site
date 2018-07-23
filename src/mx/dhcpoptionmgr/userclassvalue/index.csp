@@ -16,4 +16,4 @@ Used to specify the User Class value that will be sent by the DHCP Client to the
 
 **Parm value input rules**: 
 
-* String from 1-91 characters containing a user class value
+* String from 1&ndash;91 characters containing a user class value

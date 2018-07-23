@@ -16,4 +16,4 @@ Used to specify a fully qualified domain name (FQDN) for the DHCP client to comm
 
 **Parm value input rules**: 
 
-* String from 1-91 characters containing an FQDN value
+* String from 1&ndash;91 characters containing an FQDN value

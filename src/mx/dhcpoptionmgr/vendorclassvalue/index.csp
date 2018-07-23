@@ -16,4 +16,4 @@ Used to specify the Vendor Class value that will be sent by the DHCP Client to t
 
 **Parm value input rules**: 
 
-* String from 1-91 characters containing a vendor class value
+* String from 1&ndash;91 characters containing a vendor class value

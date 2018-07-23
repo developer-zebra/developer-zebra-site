@@ -1,0 +1,20 @@
+---
+csp: dhcpoptionmgr
+title: Send Custom Option Value
+type: parm
+order: 41
+mx: "8.1"
+devicetype: A,B
+parm:
+  presentif: Send Custom Option is set to "Enable"
+  pivotal: Yes
+  name: SendCustomOptionValue
+  type: string
+---
+
+Used to specify 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;91 characters containing an FQDN value
+

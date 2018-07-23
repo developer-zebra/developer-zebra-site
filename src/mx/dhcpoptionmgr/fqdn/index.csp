@@ -19,7 +19,7 @@ parm:
       devicetype: A
       name: Enable
       mx: "6.3"
-      description: Enables the DHCP client send an FQDN value and optional flag.
+      description: Enables the DHCP client to send an FQDN value and optional flag.
     - code: 2
       devicetype: A
       name: Disable

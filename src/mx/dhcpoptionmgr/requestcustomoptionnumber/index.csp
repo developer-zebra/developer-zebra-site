@@ -1,0 +1,19 @@
+---
+csp: dhcpoptionmgr
+title: Request Custom Option Number
+type: parm
+order: 41
+mx: "8.1"
+devicetype: A,B
+parm:
+  presentif: Send Custom Option is set to "Enable" or "Disable"
+  pivotal: Yes
+  name: RequestCustomOptionNumber
+  type: string
+---
+
+Used to specify 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;255 characters containing an FQDN value

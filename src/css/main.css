@@ -646,10 +646,10 @@ ul.nostyle i {
   margin: 0;
 }
 #meet-team .social-icons > li {
-  display: inline-block;
+  display: none;
 }
 #meet-team .social-icons > li > a {
-  display: block;
+  display: none;
   width: 32px;
   height: 32px;
   line-height: 32px;
@@ -965,15 +965,16 @@ ul.nostyle i {
 ********* Footer ******
 ************************/
 #footer {
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: .5px;
+  padding-bottom: 1px;
   color: #fff;
   background: #2e2e2e;
-  font-size: 8px;
+  font-size: 10px;
   width: 100%;
 }
 #footer a {
   color: #fff;
+  opacity: 40;
 }
 #footer a:hover {
   color: #45aed6;
@@ -990,6 +991,7 @@ ul.nostyle i {
 @media only screen and (min-width: 768px) {
   #footer .social-icons {
     float: right;
+    display: none;
   }
 }
 .form-control {
@@ -1403,7 +1405,7 @@ ul.nostyle i {
 
 .not-available
 {
-    opacity:0.4;
+    opacity:40;
     filter:alpha(opacity=40); /* For IE8 and earlier */
 }
 

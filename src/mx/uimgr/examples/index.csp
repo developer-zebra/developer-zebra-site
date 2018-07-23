@@ -258,4 +258,19 @@ order: 99
         </characteristic>
     </wap-provisioningdoc>
 
+### Enable SplitScreen Mode
+
+    <wap-provisioningdoc>
+        <characteristic type="UiMgr" version="8.1" >
+            <parm name="SplitScreenMode" value="1"/>
+        </characteristic>
+    </wap-provisioningdoc>
+
+### Disable SplitScreen Mode
+
+    <wap-provisioningdoc>
+        <characteristic type="UiMgr" version="8.1" >
+            <parm name="SplitScreenMode" value="2"/>
+        </characteristic>
+    </wap-provisioningdoc>
 

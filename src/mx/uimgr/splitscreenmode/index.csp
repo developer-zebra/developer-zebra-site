@@ -14,7 +14,7 @@ parm:
       mx: "8.1"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) causes no change to Bluetooth Pairing Pop-up setting; any previously selected setting is retained. 
+      description: This value (or the absence of this parm from the XML) causes no change to the Split-screen setting; any previously selected setting is retained. 
     - code: 1
       devicetype: A
       name: Enable 
@@ -27,4 +27,5 @@ parm:
       description: Prevents display of the Bluetooth Pairing Pop-up during pairing operations.
 ---
 
-Controls whether to present the Bluetooth Pairing Pop-up during a pairing operation, useful mainly when the device user is responsible for pairing. If one or more applications are expected to control pairing operations, suppressing the Pairing Pop-up can reduce the potential for user interference with the pairing process.
+This is the On/Off switch for Split Screen functionality on the device, which allows two apps to be visible at the same time, each with its own section of the screen. When enabled, Split Screen mode is accessed on some devices by long-pressing the "Recent Apps" button. 
+

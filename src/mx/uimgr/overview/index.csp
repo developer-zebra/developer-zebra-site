@@ -24,7 +24,10 @@ Android devices contain a variety of System applications that access UI elements
   * "Recent Apps" button
   * Navigation Bar
   * Display of the virtual keyboard
-  * Screen magnification gesture 
+  * Screen magnification gesture
+  * Split-screen mode
+  * Multi-user mode
+  * Do Not Disturb mode
 * Configure localization settings to:
   * Set the Current Locale for a desired language and region
   * Set the Default Input Method to enhance entry of localized data

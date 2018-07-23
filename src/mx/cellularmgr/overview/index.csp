@@ -16,6 +16,7 @@ The CellularMgr provides the ability to control the State (active/inactive) and 
  * Data Roaming
  * Background Data
  * SIM Slot(s)
+ * Change the public land mobile network (PLMN) 
 * Turn On/Off (control State of): 
  * Data Roaming 
  * Background Data

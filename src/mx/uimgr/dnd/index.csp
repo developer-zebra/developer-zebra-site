@@ -1,6 +1,6 @@
 ---
 csp: uimgr
-title: Do Not Dusturb Enable/Disable
+title: Do Not Disturb Enable/Disable
 type: parm
 order: 6
 mx: "8.1"
@@ -14,17 +14,17 @@ parm:
       mx: "8.1"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) causes no change to Bluetooth Pairing Pop-up setting; any previously selected setting is retained. 
+      description: This value (or the absence of this parm from the XML) causes no change to the Do Not Disturb setting; any previously selected setting is retained. 
     - code: 1
       devicetype: A
       name: Enable 
       mx: "8.1"
-      description: Allows the Bluetooth Pairing Pop-up to be presented during pairing operations.
+      description: Enables "Do Not Disturb" mode on the device, blocking all notifications.
     - code: 2
       devicetype: A
       name: Disable
       mx: "8.1"
-      description: Prevents display of the Bluetooth Pairing Pop-up during pairing operations.
+      description: Disables "Do Not Disturb" mode on the device, allowing all notifications.
 ---
 
-Controls whether to present the Bluetooth Pairing Pop-up during a pairing operation, useful mainly when the device user is responsible for pairing. If one or more applications are expected to control pairing operations, suppressing the Pairing Pop-up can reduce the potential for user interference with the pairing process.
+This is the On/Off switch for "Do Not Disturb" mode on the device, which allows or prevents notifications from appearing and/or sounding on the device. 

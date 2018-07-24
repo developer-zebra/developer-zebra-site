@@ -8,7 +8,7 @@ osx-specific-list: "7.8, 7.9"
 osx-exclude: "8.0"
 apilevel: "24"
 devicetype: A
-info: Applies only to devices running Android 7.x Nougat; not supported on the SD660 platform. 
+info: Applies only to devices running Android 7.x Nougat; not supported on the SDM660 platform. 
 parm:
   pivotal: No
   name: SlideOutDrawer
@@ -20,27 +20,27 @@ parm:
       osx-exclude: "8.0"
       apilevel: "24"
       devicetype: A
-      info: Applies only to devices running Android 7.x Nougat; not supported on the SD660 platform. 
+      info: Applies only to devices running Android 7.x Nougat; not supported on the SDM660 platform. 
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting is retained.
     - code: 1
       devicetype: A
-      info: Applies only to devices running Android 7.x Nougat; not supported on the SD660 platform. 
+      info: Applies only to devices running Android 7.x Nougat; not supported on the SDM660 platform. 
       name: Enable
       mx: "8.1"
       osx-specific-list: "7.8, 7.9"
       osx-exclude: "8.0"
       apilevel: "24"
-      description: Allows the device user to access Android settings from the slide-out drawer.
+      description: Allows the device user to access Android settings from the Settings slide-out drawer.
     - code: 2
       devicetype: A
-      info: Applies only to devices running Android 7.x Nougat; not supported on the SD660 platform. 
+      info: Applies only to devices running Android 7.x Nougat; not supported on the SDM660 platform. 
       name: Disable
       mx: "8.1"
       osx-specific-list: "7.8, 7.9"
       osx-exclude: "8.0"
       apilevel: "24"
-      description: Prevents the device user from accessing Android settings using the slide-out drawer.
+      description: Prevents the device user from accessing Android settings using the Settings slide-out drawer.
 ---
 
-Controls whether the device user can access the Android Settings panel using the slide-out "app drawer" that appears when swiping right or left on devices running Android 7.x Nougat. **Not supported on SD660-platform devices**. 
+This is the On/Off switch for the Android Settings "slide-out drawer," a Nougat-only feature that presents the Settings Panel when swiping right from the left side of the screen from some apps on devices running Android 7.x. **Not supported on SDM660-platform devices**. 

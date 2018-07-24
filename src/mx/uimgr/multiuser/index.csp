@@ -4,7 +4,9 @@ title: Multi-user Enable/Disable
 type: parm
 order: 6
 mx: "8.1"
+osx: "8.5"
 devicetype: A
+info: Supported on SDM660-platform devices only. 
 parm:
   pivotal: No
   name: MultiUser
@@ -12,19 +14,25 @@ parm:
   list:
     - code: 0
       mx: "8.1"
+      osx: "8.5"
       devicetype: A
+      info: Supported on SDM660-platform devices only. 
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the Multi-user setting; any previously selected setting is retained. 
     - code: 1
       devicetype: A
       name: Enable 
       mx: "8.1"
+      osx: "8.5"
+      info: Supported on SDM660-platform devices only. 
       description: Enables multiple users on the device.
     - code: 2
       devicetype: A
       name: Disable
       mx: "8.1"
+      osx: "8.5"
+      info: Supported on SDM660-platform devices only. 
       description: Disables multi-user mode on the device. 
 ---
 
-This is the On/Off switch for Multi-user mode on the device. 
+This is the On/Off switch for Multi-user mode on the device, which enables multiple profiles to be created for use when devices are shared. Profiles can contain different sets of apps and data and/or put restrictions on certain apps or features. **This feature is supported only on SDM660-platform devices**. 

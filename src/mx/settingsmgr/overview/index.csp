@@ -20,3 +20,4 @@ The Settings Manager (SettingsMgr) controls access to specific device capabiliti
  * Display of Airplane Mode control in Settings panel, Quick Settings or Power-off menu
  * Android App Manager, which can effect installed and running applications
  * Notification messages and app notification settings 
+ * Android Settings "slide-out drawer" (Android 7.x Nougat only)

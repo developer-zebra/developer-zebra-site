@@ -4,26 +4,34 @@ title: Do Not Disturb Enable/Disable
 type: parm
 order: 6
 mx: "8.1"
+osx: "8.5"
 devicetype: A
+info: Supported on SDM660-platform devices only. 
 parm:
   pivotal: No
   name: DND
   type: list
   list:
     - code: 0
-      mx: "8.1"
-      devicetype: A
       name: Do not change
+      mx: "8.1"
+      osx: "8.5"
+      info: Supported on SDM660-platform devices only. 
+      devicetype: A
       description: This value (or the absence of this parm from the XML) causes no change to the Do Not Disturb setting; any previously selected setting is retained. 
     - code: 1
-      devicetype: A
       name: Enable 
       mx: "8.1"
+      osx: "8.5"
+      info: Supported on SDM660-platform devices only. 
+      devicetype: A
       description: Enables "Do Not Disturb" mode on the device, blocking all notifications.
     - code: 2
-      devicetype: A
       name: Disable
       mx: "8.1"
+      osx: "8.5"
+      info: Supported on SDM660-platform devices only. 
+      devicetype: A
       description: Disables "Do Not Disturb" mode on the device, allowing all notifications.
 ---
 

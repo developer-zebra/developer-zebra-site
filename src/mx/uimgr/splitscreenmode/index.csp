@@ -4,7 +4,8 @@ title: Split Screen Enable/Disable
 type: parm
 order: 6
 mx: "8.1"
-devicetype: A
+osx: "7.7"
+devicetype: A,B
 parm:
   pivotal: No
   name: SplitScreenMode
@@ -12,20 +13,22 @@ parm:
   list:
     - code: 0
       mx: "8.1"
-      devicetype: A
+      osx: "7.7"
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the Split-screen setting; any previously selected setting is retained. 
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Enable 
       mx: "8.1"
-      description: Allows the Bluetooth Pairing Pop-up to be presented during pairing operations.
+      osx: "7.7"
+      description: Allows two apps to be usable at the same time by sharing screen space.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Disable
       mx: "8.1"
-      description: Prevents display of the Bluetooth Pairing Pop-up during pairing operations.
+      osx: "7.7"
+      description: Prevents more than one app from being visible at a time.
 ---
 
-This is the On/Off switch for Split Screen functionality on the device, which allows two apps to be visible at the same time, each with its own section of the screen. When enabled, Split Screen mode is accessed on some devices by long-pressing the "Recent Apps" button. 
-
+This is the On/Off switch for Split Screen functionality on the device, which allows two apps to be usable at the same time, each with its own section of the screen. When enabled, Split Screen mode is accessed on some devices by long-pressing the "Recent Apps" button and dragging an app onto the launcher. 

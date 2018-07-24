@@ -69,7 +69,20 @@ products:
         url: /cartscan/2-1/guide/usage/#troubleshooting
     versions:
       - url: /cartscan/2-1/guide/about
-        label: '2.1'      
+        label: '2.1'  
+  - title: Device Central
+    description: A centralized way to track Bluetooth peripherals, to pair and unpair peripherals, and to view detailed peripheral information.
+    url: /devicecentral
+    image: /images/products/DeviceCentral.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /devicecentral/2-0/guide/about
+      - title: Using Device Central
+        url: /devicecentral/2-0/guide/usage
+    versions:
+      - url: /devicecentral/2-0/guide/about
+        label: '2.0'
   - title: EMM Toolkit
     description: 'Documentation and best practices to help Enterprise Mobility Management solution providers tailor their systems for Zebra devices and software.'
     url: /emmtk/2-0/guide/about
@@ -88,21 +101,23 @@ products:
         url: /emmtk/2-0/download
   - title: Enterprise Home Screen
     description: 'A simple way to control user access to apps, settings and files on Android devices without the need for custom code.'
-    url: /ehs/2-7/guide/about
+    url: /ehs/2-8/guide/about
     image: /images/products/ehs.png
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /ehs/2-7/guide/about
+        url: /ehs/2-8/guide/about
       - title: Setup
-        url: /ehs/2-7/guide/setup
+        url: /ehs/2-8/guide/setup
       - title: Advanced Settings
-        url: /ehs/2-7/guide/settings
+        url: /ehs/2-8/guide/settings
       - title: Special Features
-        url: /ehs/2-7/guide/features
+        url: /ehs/2-8/guide/features
       - title: Download
-        url: /ehs/2-7/download
+        url: /ehs/2-8/download
     versions:
+      - url: ehs/2-8/guide/about/
+        label: '2.8'
       - url: ehs/2-7/guide/about/
         label: '2.7'
       - url: ehs/2-6/guide/about/

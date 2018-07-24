@@ -35,4 +35,4 @@ parm:
       description: Disables multi-user mode on the device. 
 ---
 
-This is the On/Off switch for Multi-user mode on the device, which enables multiple profiles to be created for use when devices are shared. Profiles can contain different sets of apps and data and/or put restrictions on certain apps or features. **This feature is supported only on SDM660-platform devices**. 
+This is the On/Off switch for Multi-user mode on the device, which can provide separate user accounts, data and apps or app restrictions on a shared device. **This feature is supported only on SDM660-platform devices**. 

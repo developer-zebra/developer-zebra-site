@@ -344,7 +344,7 @@ menu:
       url: /help
     - title: FEEDBACK
       url: /contact
-    - icon: fa fa-comment
+    - icon: fa fa-comments-o
       url: https://developer.zebra.com/welcome
     - icon: fa fa-sitemap
       url: /sitemap

@@ -48,6 +48,8 @@ menu:
       url: /stagenow/3-0/troubleshooting
     - icon: fa fa-download
       url: /stagenow/3-0/download    
+    - icon: fa fa-graduation-cap
+      url: https://supportcommunity.zebra.com/s/global-search/stagenow?language=en_US
     - icon: fa fa-search
       url: /stagenow/3-0/search
 product: StageNow

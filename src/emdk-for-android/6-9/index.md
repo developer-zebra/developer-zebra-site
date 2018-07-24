@@ -33,6 +33,8 @@ menu:
       url: /emdk-for-android/6-9/guide/profile-manager-guides
     - title: APIs
       url: /emdk-for-android/6-9/api
+    - icon: fa fa-comments-o
+      url: https://developer.zebra.com/community/home/discussions/emdk
     - icon: fa fa-search
       url: /emdk-for-android/6-9/search
 ---

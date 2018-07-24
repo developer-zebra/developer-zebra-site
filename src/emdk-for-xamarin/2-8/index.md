@@ -24,6 +24,8 @@ menu:
       url: /emdk-for-xamarin/2-8/guide/profile-manager-guides
     - title: APIs
       url: /emdk-for-xamarin/2-8/api
+    - icon: fa fa-comments-o
+      url: https://developer.zebra.com/community/home/discussions/emdk    
     - icon: fa fa-search
       url: /emdk-for-xamarin/2-8/search
 ---

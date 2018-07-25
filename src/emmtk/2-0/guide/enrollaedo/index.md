@@ -110,11 +110,11 @@ This section is required only for first-time set-up of the staging workstation. 
 -----
 
 ### 2. Create Provisioning Barcodes
-This section involves importing two StageNow settings profiles, modifying network and other settings for the target environment, and exporting them for deployment using the EMM system.
+This section involves importing two StageNow settings profiles: `EMM_PERE-DO` does this and that, and `EMM_Device_Owner_Enrollment` does the other thing. These profiles are provided in generic form, and must be modified for network settings of the target environment, vendor-specific agent files and other config settings. The profiles are then exported for deployment using the EMM system.
 
-> **Click on any image to enlarge**. 
+> **Click on images to enlarge**. 
 
-**Import and edit the** `EMM_PERE-DO` **StageNow profile**: 
+#### Import and edit the `EMM_PERE-DO` StageNow profile 
 
 1. Launch StageNow and log in as Administrator. 
 2. **Click "All Profiles"** from the StageNow "Home" area:   
@@ -130,7 +130,7 @@ This section involves importing two StageNow settings profiles, modifying networ
  <img alt="image" style="height:250px" src="view_profile_settings.png"/>
  **...then click the left arrow three times** to see the view shown below:
  <img alt="image" style="height:350px" src="edit_profile_2.png"/> <br>
-7. **Edit the necessary configuration sections of the imported profile** as required for the target environment (using Steps a&ndash;i below; **Tap on any image to enlarge**). **To edit a config**, tap its numbered button and click the blue "Edit" button on the right side of the screen (see arrow, above). <u>**Be sure to hit "Save" when done editing each config**</u> or settings are lost.<br> 
+7. **Edit the necessary configuration sections of the imported profile** as required for the target environment (using Steps a&ndash;i below). **To edit a config**, tap its numbered button and click the blue "Edit" button on the right side of the screen (see arrow, above). <u>**Be sure to hit "Save" when done editing each config**</u> or settings are lost.<br> 
 	a. **Wi-Fi -** **Enter network settings** for the network on which the target device(s) will operate:<br>
 	<img alt="image" style="height:350px" src="wi-fi_config.png"/><br>
 	b. **AppMgr -** **Enter the EMM agent app name <u>only</u>**. <u>Do not change the path</u> from that shown below:<br>
@@ -153,10 +153,14 @@ This section involves importing two StageNow settings profiles, modifying networ
 	<br>
 8. **Click "Review"** and verify all settings are configured as desired. **Then click "Publish" to proceed**. 
 <img alt="image" style="height:350px" src="edit_profile_3.png"/> <br>
-9. On the Publish screen, **click the "Export for MDM" button** and save the file in the `/EMM/install` folder as `EMM_PERE-DO.xml`. 
+9. On the Publish screen, **click the "Export for MDM" button** and save the file in the `/EMM/install` folder as "`EMM_PERE-DO.xml`". 
 <br>**<u>File name must be entered EXACTLY AS INDICATED ABOVE</u>**. 
 <img alt="image" style="height:450px" src="SN_publish_settings.png"/> <br>
-**Import and edit the** `EMM_Device_Owner_Enrollment` **StageNow profile**: 
+
+#### Import and edit the `EMM_Device_Owner_Enrollment` StageNow profile 
+
+>**Click on images to enlarge**.
+
 10. **Click the "HOME" icon and select "All Profiles"**:   
  <img alt="image" style="height:250px" src="StageNow_Home.png"/><br>
 11. **Click "Import Profiles"** in the upper-right corner:
@@ -170,52 +174,13 @@ This section involves importing two StageNow settings profiles, modifying networ
  <img alt="image" style="height:250px" src="view_profile_settings.png"/>
  **...then click the left arrow three times** to see the view shown below:
  <img alt="image" style="height:350px" src="edit_profile_2.png"/> <br>
-15. **Edit the necessary configuration sections of the imported profile** as required for the target environment (using Steps a&ndash;i below; **Tap on any image to enlarge**). **To edit a config**, tap its numbered button and click the blue "Edit" button on the right side of the screen (see arrow, above). <u>**Be sure to hit "Save" when done editing each config**</u> or settings are lost.<br> 
+15. **Edit the necessary configuration sections of the imported profile** as required for the target environment (using Steps a&ndash;i below). **To edit a config**, tap its numbered button and click the blue "Edit" button on the right side of the screen (see arrow, above). <u>**Be sure to hit "Save" when done editing each config**</u> or settings are lost.<br> 
 
 ## `DRAFT`
 
 **_Information subject to change without notice_**. 
 
-### PART 2 OF THIS PROCESS TO COME 
-
 <!-- 
-6. StageNow
-Edit the StageNow Profile as follows: 
-Rename Profile to: EMM_PERE-DO
-Select Stagenow Config.
-Select Wi-Fi.  Select Edit. 
-Edit the Wi-Fi profile for your network. Save.
-
-
-
-
-_Enabling Wi-Fi allows downloads post-staging._
-<br>
-
-8. StageNow
-Complete the StageNow Profile as follows:
-Select: (review)
-
-Then select: (publish)
-
-9. StageNow
-Export an XML file from the StageNow Profile as follows:
-Select:
-
-Export the file to the `/EMM-downloads/` folder on the Workstation.
-Make sure the file is named exactly like this: PERE-DO.zip.
-
-10. Folder Check: On the Workstation, make sure the `/EMM-downloads/` folder has ALL the required files listed below.
-IMPORTANT: Filenames are case-sensitive. Make sure each file is named exactly as shown.
-
-11. StageNow
-Import the Second of two StageNow Profile as follows:
-On StageNow UI, select: (home)
-
-Then select: (profiles)
-
-Then select: (import profiles)
-
 12. StageNow
 Navigate to the EMM_Device_Owner_Enrollment.zip file on the Workstation that was downloaded earlier from Zebra.  
 Then select Import.

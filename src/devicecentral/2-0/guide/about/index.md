@@ -24,7 +24,7 @@ _Note: Unpairing a Bluetooth Scanner peripheral is currently not supported.  Alt
 
 Device Central is approved for use with the following Zebra Android devices:
 
-<table style="width:100%" border="1" padding="5px">
+<table class="facelift" style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th>Device</th>
     <th style="text-align:center">Android 5.x <br>(Lollipop)</th> 

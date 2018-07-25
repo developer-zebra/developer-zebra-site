@@ -25,14 +25,14 @@ parm:
       osx: "8.5"
       info: Supported on SDM660-platform devices only. 
       devicetype: A
-      description: Enables "Do Not Disturb" mode on the device, blocking all notifications.
+      description: Enables the device user to enter "Do Not Disturb" mode, potentially blocking app notifications and sounds.
     - code: 2
       name: Disable
       mx: "8.1"
       osx: "8.5"
       info: Supported on SDM660-platform devices only. 
       devicetype: A
-      description: Disables "Do Not Disturb" mode on the device, allowing all notifications.
+      description: Disables "Do Not Disturb" mode on the device, preventing the device user from suppressing notifications.
 ---
 
-This is the On/Off switch for "Do Not Disturb" mode on the device, which allows or prevents notifications from appearing and/or sounding on the device. 
+This is the On/Off switch for "Do Not Disturb" mode on the device. Disabling DND (option 2) prevents the device user from entering DND mode and suppressing notifications on the device.

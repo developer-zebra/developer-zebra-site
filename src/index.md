@@ -15,6 +15,8 @@ products:
         url: ../bestpractices
       - title: CartScan
         url: ../cartscan
+      - title: Device Central
+        url: ../devicecentral
       - title: Enterprise Home Screen
         url: ../ehs
       - title: Enterprise Keyboard

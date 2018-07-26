@@ -35,7 +35,7 @@ section explains device owner stuff, and why a Nougat device _should_ be enrolle
 * MUST support use of OemConfig by the start of Android P​
 
 > Info in the QR code is identical to contents of the `Provisioning.JSON` file.  
- -->
+
 ### Terms used in this guide
 
 * **AE -** Android Enterprise (formerly "Android for Work")
@@ -46,6 +46,7 @@ section explains device owner stuff, and why a Nougat device _should_ be enrolle
 * **EMM -** Enterprise Mobility Management
 * **MDM -** Mobile Device Management
 
+-->
 -----
 
 ### Supported Devices
@@ -79,7 +80,7 @@ section explains device owner stuff, and why a Nougat device _should_ be enrolle
 
 ## How to Enroll a Device Owner
 
-This process of device staging is intended for devices that are in a factory-default state, and contain no third-party files or apps other than those included with the operating system. For information about returning a device to a factory-default state, [see Zebra Power Manager](/mx/powermgr). 
+This staging process is intended for devices that are in a factory-default state, and contain no third-party files or apps other than those included with the operating system. For information about returning a device to a factory-default state, [see Zebra Power Manager](/mx/powermgr). 
 
 **Enrollment three-part process**: 
 

@@ -26,7 +26,7 @@ automenu:
           url: createprofile
         - title: Delete Profile 
           url: deleteprofile
-        - title: Enable DataWedge 
+        - title: Enable/Disable DataWedge 
           url: enabledatawedge
         - title: Enumerate Scanners 
           url: enumeratescanners

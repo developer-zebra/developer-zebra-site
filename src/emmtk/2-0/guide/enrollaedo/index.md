@@ -110,11 +110,12 @@ This section is required only for first-time set-up of the staging workstation. 
 -----
 
 ### 2. Create Provisioning Barcodes
-This section involves importing two StageNow settings profiles: `EMM_PERE-DO` and `EMM_Device_Owner_Enrollment`. These profiles are provided in generic form, and must be modified for network settings of the target environment, vendor-specific agent files and other situation-specific parameters. The profiles are then exported for deployment using the EMM system.
+
+This section involves importing the StageNow settings profile `EMM_PERE-DO`, which is provided in generic form and must be modified for network settings of the target environment, vendor-specific agent files and other situation-specific parameters. The profile is then exported and deployed to the device for use during enrollment. 
 
 > **Click on images to enlarge**. 
 
-#### Barcode Provisioning Part 1: Edit the `EMM_PERE-DO` Profile 
+#### Barcode Provisioning and the `EMM_PERE-DO` Profile 
 
 1. Launch StageNow and log in as Administrator. 
 2. **Click "All Profiles"** from the StageNow "Home" area:   
@@ -163,13 +164,15 @@ This section involves importing two StageNow settings profiles: `EMM_PERE-DO` an
 	4. `EnrollDO.pem` - enrollment certificate (names vary)
 	5. `<EMM_agent_app.apk>` file(s) 
 
-#### Proceed to Barcode Provisioning Part 2. 
-
 -----
 
-#### Barcode Provisioning Part 2: Edit the `EMM_Device_Owner_Enrollment` Profile 
+### 3. Enroll the Device 
+
+This section involves importing the StageNow settings profile `EMM_Device_Owner_Enrollment`, which is provided in generic form and must be modified for network settings of the target environment, a vendor-specific certificate file and other situation-specific parameters. The profile is used to publish the final staging barcodes. 
 
 >**Click on images to enlarge**.
+
+#### Barcode Generation and the `EMM_Device_Owner_Enrollment` Profile 
 
 1. **Click the "HOME" icon and select "All Profiles"**: 
  <img alt="image" style="height:250px" src="StageNow_Home.png"/><br>
@@ -204,7 +207,7 @@ This section involves importing two StageNow settings profiles: `EMM_PERE-DO` an
 	a. In the PDF417 row, **select the StageNow checkbox**.<br>
 	b. **Click the "Publish" button** and if desired, enter comments for the staging operator in the pop-up box. <br>
 <img alt="image" style="height:375px" src="publish_and_stage.png"/> <br>
-	c. **Click the "Stage" button**. Barcodes appear (similar to those in the image below) containing encoded commands of the `EMM_Device_Owner_Enrollment` config profile, which calls `EMM_PERE-DO` config profile (which is now on the device).<br>
+	c. **Click the "Stage" button**. Barcodes appear (similar to those in the image below) containing encoded commands of the `EMM_Device_Owner_Enrollment` config profile, which calls the `EMM_PERE-DO` config profile (copied to the device in Step 6b).<br>
 	d. Optionally, print and/or save the barcode file.<br> 
 <img alt="image" style="height:450px" src="StageNow_barcodes.png"/> <br>
 9. **IMPORTANT**: Zebra recommends that barcodes be validated before deployment.<br> 
@@ -212,11 +215,19 @@ This section involves importing two StageNow settings profiles: `EMM_PERE-DO` an
 	a. Connect the StageNow workstation to the same Wi-Fi network as that configured for the devices.<br>
 	b. Power up a fully-charged device that is <u>NOT ENROLLED</u> in the EMM. If the Android set-up wizard appears (GMS devices only), bypass it by scanning the barcode below (requires MX 7.1 or higher on the device):<br>
 	<img alt="image" style="height:79px" src="bypass_SUW.png"/>
-	If the wizard isn't bypassed and/or the StageNow client doesn't launch on the device, finish the Android set-up and launch StageNow client manually.<br>
+	If the wizard isn't bypassed and/or the StageNow client doesn't launch on the device, finish the Android set-up and launch the StageNow client manually.<br>
 	c. **Scan the staging barcodes** generated in Step 8, above.<br>
-	d. Optionally, bring up the EMM console and monitor the enrollment progress (about 6 minutes). **Note**: Device display goes dark during final enrollment steps. This is normal. <br>
+	d. Optionally, bring up the EMM console and monitor the enrollment progress (about 6 minutes).<br>
+	**Note**: Device display goes dark during final enrollment steps. This is normal. <br>
 
-#### Device Enrollment is Complete. 
+#### Device Staging for Enrollment is Complete. 
+
+-----
+
+## See Also
+
+* [About EMM Toolkit](../about)
+* [Other EMMTK Guides](../guide)
 
 -----
 
@@ -224,86 +235,3 @@ This section involves importing two StageNow settings profiles: `EMM_PERE-DO` an
 
 **_Information subject to change without notice_**. 
 
-<!-- 
-
-
-<img alt="image" style="height:531px" src="14_filemgr.png"/>
-
-_File Manager downloads files post-staging._
-<br>
-
-15. StageNow
-Edit the StageNow Profile further:
-Select the second FileMgr.  Select Edit.
-Revise the Source File URI: Navigate to the /snaw/ folder that you created on your Workstation.  Save.
-
-
-<img alt="image" style="height:350px" src="15_filemgr.png"/>
-
-_`EnrollDO.pem` file secures device owner enrollment._
-<br>
-
-
-16. StageNow
-Complete the StageNow Profile as follows:
-Select: (review)
-
-Then select: (publish)
-
-17. Generate Staging barcodes as follows:
-Select StageNow for PD417 barcode.
-Select Publish
-Select Stage.  This will produce the staging barcode
-<Optional> 
-Save the barcode PDF file.  
-Print the barcodes.
-
-
-<img alt="image" style="height:393px" src="17_generate_barcodes.png"/>
-
-_When scanned, enrollment barcodes command the device to perform all actions created above._
-<br>
-
-> **Note**: File and folder names are case-sensitive.
-
------
-
-### 3. Enroll a Device
-
-18. Before scanning the Staging barcode(s):
-Ensure the StageNow Workstation is connected to the local staging WIFI network (same as set up in the Profiles).
-Ensure StageNow is running on the Workstation.
-
-19. For each device to be staged:
-Install a charged battery and press the Power key to turn on.  
-After initial power up, device will display the Setup Wizard (SUW).
-Scan the barcode below to skip the SUW and launch the StageNow application.  
-
-<img alt="image" style="height:150px" src="19_barcode.png"/>
-
-_The Android Setup wizard runs only on GMS devices._
-<br>
-
-
-Note:
-The barcode above is supported by MX7.1 and greater. If the SUW is not bypassed after scanning, then manually navigate the SUW screens and launch StageNow from its icon.
-
-20. Scan the Staging barcodes.  Barcodes can be displayed on the Workstation display or printed out.
- 
-Note:
-The elapsed time from Scan to Enrollment is approximately 6 minutes.
-Device displays may go dark due to timeout while the enrollment finishes.  This is expected.
-
-21. (optional)
-Log in to your AirWatch Console to monitor the progress of enrolled devices.
-Devices will be added the Device List as they complete enrollment.  
-
- -->
-
-
------
-
-## See Also
-
-* [About EMM Toolkit](../about)
-* [EMMTK Guides](../guide)

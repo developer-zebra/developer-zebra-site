@@ -110,11 +110,11 @@ This section is required only for first-time set-up of the staging workstation. 
 -----
 
 ### 2. Create Provisioning Barcodes
-This section involves importing two StageNow settings profiles: `EMM_PERE-DO` does this and that, and `EMM_Device_Owner_Enrollment` does the other thing. These profiles are provided in generic form, and must be modified for network settings of the target environment, vendor-specific agent files and other config settings. The profiles are then exported for deployment using the EMM system.
+This section involves importing two StageNow settings profiles: `EMM_PERE-DO` and `EMM_Device_Owner_Enrollment`. These profiles are provided in generic form, and must be modified for network settings of the target environment, vendor-specific agent files and other situation-specific parameters. The profiles are then exported for deployment using the EMM system.
 
 > **Click on images to enlarge**. 
 
-#### Import and edit the `EMM_PERE-DO` StageNow profile 
+#### Barcode Provisioning Part 1: Edit the `EMM_PERE-DO` Profile 
 
 1. Launch StageNow and log in as Administrator. 
 2. **Click "All Profiles"** from the StageNow "Home" area:   
@@ -156,34 +156,69 @@ This section involves importing two StageNow settings profiles: `EMM_PERE-DO` do
 9. On the Publish screen, **click the "Export for MDM" button** and save the file in the `/EMM/install` folder as "`EMM_PERE-DO.xml`". 
 <br>**<u>File name must be entered EXACTLY AS INDICATED ABOVE</u>**. 
 <img alt="image" style="height:450px" src="SN_publish_settings.png"/> <br>
+10. The `/EMM/install` folder on the workstation should now contain these files: 
+	1. `EMM_PERE-DO.xml` - StageNow config created above
+	2. `Provision.apk` - Zebra-provided provisioning app
+	3. `Provisioning.JSON` - EMM vendor-provided device user credentials
+	4. `EnrollDO.pem` - enrollment certificate (names vary)
+	5. `<EMM_agent_app.apk>` file(s) 
 
-#### Import and edit the `EMM_Device_Owner_Enrollment` StageNow profile 
+#### Proceed to Barcode Provisioning Part 2. 
+
+-----
+
+#### Barcode Provisioning Part 2: Edit the `EMM_Device_Owner_Enrollment` Profile 
 
 >**Click on images to enlarge**.
 
-10. **Click the "HOME" icon and select "All Profiles"**:   
+1. **Click the "HOME" icon and select "All Profiles"**: 
  <img alt="image" style="height:250px" src="StageNow_Home.png"/><br>
-11. **Click "Import Profiles"** in the upper-right corner:
+2. **Click "Import Profiles"** in the upper-right corner:
  <img alt="image" style="height:250px" src="SN_All_Profiles.png"/><br> 
-12. **Navigate to the** `EMM_Device_Owner_Enrollment.zip` **file** on the staging workstation (prepared in Section 1). <br>
+3. **Navigate to the** `EMM_Device_Owner_Enrollment.zip` **file** on the staging workstation (prepared in Section 1). <br>
 **Select "Import"** and follow prompts to complete the process:
- <img alt="image" style="height:250px" src="navigate_2.png"/> <br>
-13. **Open the imported profile** to begin editing. If necessary, click the StageNow "HOME" icon to display this screen: 
- <img alt="image" style="height:250px" src="all_profiles_after_import.png"/> <br>
-14. The imported profile appears in "Review" mode. **Click "StageNow Config"** to enter Config mode...<br>
+ <img alt="image" style="height:250px" src="navigate_3.png"/> <br>
+4. **Open the imported profile** to begin editing. If necessary, click the StageNow "HOME" icon to display this screen: 
+ <img alt="image" style="height:250px" src="all_profiles_after_import_2.png"/> <br>
+5. The imported profile appears in "Review" mode. **Click "StageNow Config"** to enter Config mode...<br>
  <img alt="image" style="height:250px" src="view_profile_settings.png"/>
  **...then click the left arrow three times** to see the view shown below:
- <img alt="image" style="height:350px" src="edit_profile_2.png"/> <br>
-15. **Edit the necessary configuration sections of the imported profile** as required for the target environment (using Steps a&ndash;i below). **To edit a config**, tap its numbered button and click the blue "Edit" button on the right side of the screen (see arrow, above). <u>**Be sure to hit "Save" when done editing each config**</u> or settings are lost.<br> 
+ <img alt="image" style="height:350px" src="edit_profile_4.png"/> <br>
+6. **Edit the necessary configuration sections of the imported profile** as required for the target environment (using Steps a&ndash;d below). **To edit a config**, tap its numbered button and click the blue "Edit" button on the right side of the screen (see arrow, above). <u>**Be sure to hit "Save" when done editing each config**</u> or settings are lost.<br> 
+	a. **Wi-Fi -** **Enter network settings** for the network on which the target device(s) will operate:<br>
+	<img alt="image" style="height:350px" src="wi-fi_config.png"/><br>
+	b. **FileMgr -** **Enter the Archive Target Path and Folder Name** as:<br>
+	`/enterprise/usr/EMM/`. <br>
+	In Source Archive URI, **navigate to** `/EMM/install/` **folder on the <u>workstation</u>**.<br>
+	This config downloads to the device files placed on the workstation earlier.<br>   
+	<img alt="image" style="height:350px" src="filemgr.png"/><br>
+	c. **CertMgr -** **Enter the certificate file name** and path on the device as:<br> 
+	`/enterpise/usr/EMM/install/<EnrollDO.pem>`<br>
+	File name specified here <u>must match exactly</u> (including letter case) with file in the `EMM/install` folder on the workstation.<br>
+	<img alt="image" style="height:350px" src="certmgr.png"/><br>
+	d. **Batch  -** **DO NOT CHANGE**. This config executes all actions in the `EMM_PERE-DO.xml` profile.<br>
+	<img alt="image" style="height:350px" src="batchmgr.png"/><br>
+7. **Click "Review"** and verify all settings are configured as desired. **Then click "Publish" to proceed**. 
+<img alt="image" style="height:350px" src="edit_profile_3.png"/> <br>
+8. On the Publish screen:
+	a. In the PDF417 row, **select the StageNow checkbox**.
+	b. **Click the "Publish" button** and enter comments for the staging operator, if desired.
+	c. **Click the "Stage" button**.<br>
+	Barcodes appear containing encoded commands of the two config profiles.  
+	d. Print or save the barcode file, if desired. 
+<img alt="image" style="height:375px" src="publish_and_stage.png"/> <br>
+<img alt="image" style="height:450px" src="StageNow_barcodes.png"/> <br>
+*Results might appear different from that shown above*.
+9. **IMPORTANT: Zebra recommends that barcodes be validated before deployment**.<br> 
+To validate: 
+	a. 
+
 
 ## `DRAFT`
 
 **_Information subject to change without notice_**. 
 
 <!-- 
-12. StageNow
-Navigate to the EMM_Device_Owner_Enrollment.zip file on the Workstation that was downloaded earlier from Zebra.  
-Then select Import.
 
 13. StageNow
 Edit the StageNow Profile as follows: 

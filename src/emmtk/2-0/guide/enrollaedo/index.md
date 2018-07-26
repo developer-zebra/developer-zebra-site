@@ -200,37 +200,31 @@ This section involves importing two StageNow settings profiles: `EMM_PERE-DO` an
 	<img alt="image" style="height:350px" src="batchmgr.png"/><br>
 7. **Click "Review"** and verify all settings are configured as desired. **Then click "Publish" to proceed**. 
 <img alt="image" style="height:350px" src="edit_profile_3.png"/> <br>
-8. On the Publish screen:
-	a. In the PDF417 row, **select the StageNow checkbox**.
-	b. **Click the "Publish" button** and enter comments for the staging operator, if desired.
-	c. **Click the "Stage" button**.<br>
-	Barcodes appear containing encoded commands of the two config profiles.  
-	d. Print or save the barcode file, if desired. 
+8. On the Publish screen:<br>
+	a. In the PDF417 row, **select the StageNow checkbox**.<br>
+	b. **Click the "Publish" button** and if desired, enter comments for the staging operator in the pop-up box. <br>
 <img alt="image" style="height:375px" src="publish_and_stage.png"/> <br>
+	c. **Click the "Stage" button**. Barcodes appear (similar to those in the image below) containing encoded commands of the `EMM_Device_Owner_Enrollment` config profile, which calls `EMM_PERE-DO` config profile (which is now on the device).<br>
+	d. Optionally, print and/or save the barcode file.<br> 
 <img alt="image" style="height:450px" src="StageNow_barcodes.png"/> <br>
-*Results might appear different from that shown above*.
-9. **IMPORTANT: Zebra recommends that barcodes be validated before deployment**.<br> 
-To validate: 
-	a. 
+9. **IMPORTANT**: Zebra recommends that barcodes be validated before deployment.<br> 
+**To validate**: <br>
+	a. Connect the StageNow workstation to the same Wi-Fi network as that configured for the devices.<br>
+	b. Power up a fully-charged device that is <u>NOT ENROLLED</u> in the EMM. If the Android set-up wizard appears (GMS devices only), bypass it by scanning the barcode below (requires MX 7.1 or higher on the device):<br>
+	<img alt="image" style="height:79px" src="bypass_SUW.png"/>
+	If the wizard isn't bypassed and/or the StageNow client doesn't launch on the device, finish the Android set-up and launch StageNow client manually.<br>
+	c. **Scan the staging barcodes** generated in Step 8, above.<br>
+	d. Optionally, bring up the EMM console and monitor the enrollment progress (about 6 minutes). **Note**: Device display goes dark during final enrollment steps. This is normal. <br>
 
+#### Device Enrollment is Complete. 
+
+-----
 
 ## `DRAFT`
 
 **_Information subject to change without notice_**. 
 
 <!-- 
-
-13. StageNow
-Edit the StageNow Profile as follows: 
-Rename Profile to: EMM_Device_Owner_Enrollment
-Select Stagenow Config
-Select Wi-Fi.  Select Edit. 
-Edit the Wi-Fi profile for your network. Save.
-
-14. StageNow
-Edit the StageNow Profile further:
-Select the first FileMgr.  Select Edit.
-Revise the Source File URI: Navigate to the EnrollDO.pem certificate file on your Workstation.  Save.
 
 
 <img alt="image" style="height:531px" src="14_filemgr.png"/>

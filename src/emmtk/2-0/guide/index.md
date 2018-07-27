@@ -55,9 +55,9 @@ content-items:
     url: schema
   - type: section
     level: 4
-    title: Code Samples
-    text: Provides validated code that EMM solution providers can use to implement managed configurations within their agent.
-    url: samples
+    title: MDMTK Legacy Guide
+    text: This is the (obsolete) Mobile Device Management Toolkit 1.0.1 for legacy devices.
+    url: mdmtk
   - type: section
     level: 4
     title: OemInfo Developer Guide
@@ -76,4 +76,10 @@ productversion: '2.0'
     text: Explains how to use the Staging API service from an EMM console to produce StageNow barcodes and to enroll an AEDO EMM Agent using the StageNow client app.
     url: api
     
+Changed to "MDM TK Legacy guide"
+  - type: section
+    level: 4
+    title: Code Samples
+    text: Provides validated code that EMM solution providers can use to implement managed configurations within their agent.
+    url: samples
  -->

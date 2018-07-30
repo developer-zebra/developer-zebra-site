@@ -11,4 +11,5 @@ build/
 build_mdmtk/
 import/
 export/
+node_modules/
 

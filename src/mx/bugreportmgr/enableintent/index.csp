@@ -31,5 +31,4 @@ parm:
       apilevel: "24"
 ---
 
-Controls whether a bug report can be triggered by an intent. Enabled by default. 
-
+Controls whether a bug report can be triggered by an intent. **Enabled by default**. Bug reports are triggered silently (no user dialog) using the broadcast message `com.symbol.mxmf.intent.START_FOR_BUG_REPORT`.  

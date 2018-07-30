@@ -13,7 +13,7 @@ productversion: '2.0'
 
 ## Overview
 
-Zebra provides a persistence framework that allows designated apps, settings and data to remain on a device following an [Enterprise Reset](/mx/powermgr), which otherwise erases all non-factory apps and data. For providers of enterprise mobility management (EMM) solutions, this permits an EMM agent and related services and files to be preserved after all other software is erased, restoring the device to a manageable state. 
+Zebra provides a persistence framework that allows designated apps, settings and data to remain on a device following an [Enterprise Reset](/mx/powermgr), which otherwise erases all non-factory apps and data. For providers of enterprise mobility management (EMM) solutions, this permits an EMM agent and its related data and services to be preserved after all other software is erased, restoring the device to a manageable state. 
 
 **Persistence can include**: 
 
@@ -22,9 +22,14 @@ Zebra provides a persistence framework that allows designated apps, settings and
 * **EMM agent and/or service** apps and settings
 * **A company's own apps, data and settings**
 
-**Important: An Enterprise Reset returns a device to its enterprise-defined state** as generally determined by the contents of the `/enterprise` partition in the device file system. The Zebra solution makes this possible only on devices configured in advance with its persistence framework, which is typically installed during initial device enrollment. Some EMM systems have the ability to apply persistence or "fault tolerance" settings retroactively, giving administrators the ability to preserve certain device settings and/or apps immediately prior to a reset. This can return a reset device to its EMM-enrolled state without further intervention. 
+### About Enterprise Reset 
+An Enterprise Reset returns a device to its enterprise-defined state** as generally determined by the contents of the `/enterprise` partition in the device file system. The Zebra solution makes this possible only on devices configured in advance with its persistence framework, which is typically installed during initial device enrollment. 
 
-**Zebra recommends using EMM-specific persistence methods for device restoration whenever such capabilities are available**. For further information about EMM-specific persistence, please <!-- see the guidance below or  -->refer to the documentation for the specific EMM system in use. 
+**Some EMM systems have the ability to apply persistence or "fault tolerance" settings retroactively**, giving administrators the ability to preserve certain device settings and/or apps immediately prior to a reset. This can return a reset device to its EMM-enrolled state without further intervention. 
+
+> **Zebra recommends using EMM-specific persistence methods for device restoration whenever such capabilities are available**. 
+
+For further information about EMM-specific persistence, please <!-- see the guidance below or  -->refer to the documentation for the specific EMM system in use. 
 
 -----
 
@@ -34,30 +39,34 @@ For optimal device staging and persistence of settings, agent software and enrol
 
 Zebra recommends dividing the staging process into three phases: 
 
- 1. **Configure**
- 2. **Deploy**
- 3. **Persist**
+ 1. **Configure Phase**
+ 2. **Deploy Phase**
+ 3. **Persist Phase**
 
 -----
 
 ### 1. Configure Phase
 
-**The Configure Phase includes creation of XML sent to the StageNow API to produce barcodes to be executed during the initial staging​ of a device**. This phase should contain the minimum steps required configure a device so it's able to execute the steps in the Deploy Phase, the second phase of the staging process. For example, the Configure Phase might contain only Wi-Fi settings, allowing it to connect to a network and begin executing steps in the Deploy Phase. 
+**The Configure Phase includes creation of XML sent to the StageNow API to produce barcodes to be executed during the initial staging​ of a device**. This phase should contain the minimum steps required to enable a device to execute the steps in the Deploy Phase, the second phase of the staging process. For example, the Configure Phase might contain only Wi-Fi settings for connecting to a network plus a minimum of additional settings to download instructions and files for the Deploy Phase.
 
 **Notes**: 
 
-* **Configure settings are <u>absolutely required</u> for successful staging to occur** 
-* **Everything in the Configure Phase is encoded in the barcodes**
-* **The number of features configured determines barcode size** and count
-* **To reduce barcode size and count**, reduce the number of parameters being configured
+* **Configure settings are <u>absolutely required</u> for successful staging to occur**.
+* **Everything in the Configure Phase is encoded in the barcodes**.
+* **The number of features configured determines barcode size** and count.
+* **To reduce barcode size and count**, reduce the number of parameters being configured.
+
+See the [AEDO Enrollment Guide](../enrollaedo/#2createprovisioningbarcodes) for an example. 
 
 -----
 
 ### 2. Deploy Phase
 
-**The Deploy Phase generally includes XML downloaded from a server and executed during initial staging​**. Deploy typically contains staging steps related to deployment (i.e. downloading files), steps that typically <u>do not</u> need to be included in the barcodes​. 
+**The Deploy Phase generally includes XML downloaded from a server and executed during initial staging​**. Deployment configs typically contain staging steps related to deployment (i.e. downloading files). These steps are typically **<u>not</u>** included in the barcodes​. 
 
-**Note**: Steps in the Deploy Phase are typically downloaded and executed during initial staging by steps contained within the Config Phase. 
+**Notes**: 
+
+* **Steps in the Deploy Phase are typically downloaded** and executed during initial staging by steps contained within the Config Phase. 
 
 -----
 
@@ -98,8 +107,8 @@ Zebra recommends dividing the staging process into three phases:
 * **EMM Agent settings must be persistent** following an Enterprise Reset. 
 * **Agent settings must allow the device to connect to the appropriate EMM server**. 
 * **Agent settings must allow management of the device**.
-* **the EMM Agent (not the Staging process) in most cases is expected to control access to production-network configuration**, since such configurations often change over time. 
-* **The agent settings should ensure that production-network configuration is re-established** following an Enterprise Reset​. 
+* **The EMM Agent (not the Staging process) usually controls access to production-network configuration** since such configurations often change over time. 
+* **Agent settings should ensure that production-network configuration is re-established** following an Enterprise Reset​. 
 
 -----
 
@@ -126,7 +135,7 @@ Zebra recommends that EMM solution providers use a process similar to the follow
  * Storage of generated XML and/or Staging Barcodes for later use
 
 <img alt="image" style="height:350px" src="staging_flowchart_no_title.png"/>
-_Zebra's latest staging processes, which implements configuration, deployment and persistence in a single tool_
+_Zebra's latest staging processes implements configuration, deployment and persistence phases with a single tool. **Click to enlarge**_. 
 <br>
 
 <!-- 
@@ -148,7 +157,7 @@ As a general rule, steps involved in staging a device should be kept to a minimu
  * Configure Staging WLAN​
 * **File Manager**:
  * Download Deployment Section XML File from Server to Device​
-* **Batch	Manager**:
+* **Batch Manager**:
  * Execute Deployment Section XML File​
 
 ### Deploy Steps
@@ -177,7 +186,9 @@ Kiosk mode is generally defined as a single app running full-screen on a device 
 
 When a kiosk lockdown is enabled, the device user generally loses the ability to connect devices not previously known, such as Bluetooth peripherals. Zebra recommends that such peripherals be paired with devices running the kiosk app before kiosk mode is enabled. If a new Bluetooth device must be paired after kiosk mode is enabled, an administrator must exit kiosk mode, pair the Bluetooth device and re-enable kiosk mode.
 
-#### Vendor-specific practices
+-----
+
+## Vendor-specific practices
 
 **[AirWatch persistence info](http://techdocs.zebra.com/bestpractices/kiosk_persistence_airwatch.pdf)** | returning a kiosk-locked device to a manageable state
 

@@ -13,6 +13,8 @@ menu:
       url: /emmtk/2-0/guide/enrollaedo
     - title: Persistence
       url: /emmtk/2-0/guide/persistence
+    - title: MX Features
+      url: /mx
     - title: Function Maps
       url: /emmtk/2-0/guide/functionmap
     - title: Staging APIs

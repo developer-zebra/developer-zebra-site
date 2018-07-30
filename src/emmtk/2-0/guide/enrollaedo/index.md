@@ -13,9 +13,9 @@ productversion: '2.0'
 
 ## Overview
 
-This guide documents procedures for enrolling an EMM agent app as a "Device Owner," which grants adequate permissions to perform any and all available activities for configuring the device. 
+This guide documents enrollment of an EMM agent app as a "Device Owner," granting the agent the permissions necessary to confiure all parameters of a Zebra device. 
 
-Device Owner (DO) capabilies apply to Zebra devices running Android 5.x Lollipop and higher. However, **the procedures in this guide require Android 7.x Nougat and Zebra MX 7.1 or higher**. 
+Device Owner (DO) capabilies apply to Zebra devices running Android 5.x Lollipop and higher. However, **the procedures in this guide require Android 7.x Nougat (or later) and Zebra MX 7.1 (or higher)**. 
 
 -----
 <!-- 
@@ -51,12 +51,12 @@ section explains device owner stuff, and why a Nougat device _should_ be enrolle
 
 ### Supported Devices
 
-* All Zebra devices running Android Nougat or higher with MX 7.1 or higher
+* All Zebra devices running Android Nougat or later with MX 7.1 or higher
 
 ### Prerequisites
-* For the Staging Workstation:
- * A computer running Windows 7 (or Windows 10 with StageNow 3.0 or higher)
- * StageNow 2.10.1 or higher installed (for compatibility with sample profiles provided)
+* **For the Staging Workstation**:
+ * **A computer running Windows 7** (or Windows 10 with StageNow 3.0 or higher)
+ * **StageNow 2.10.1 or higher** installed (for compatibility with sample profiles provided)
 * **Access to the "main console"** of the EMM solution 
 * **Adequate EMM priviledges** to create: 
  * **A "Device Owner" enrollment** 

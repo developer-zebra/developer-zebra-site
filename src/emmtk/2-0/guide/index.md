@@ -10,6 +10,11 @@ content-items:
     url: about
   - type: section
     level: 4
+    title: EMM Toolkit Roadmap
+    text: Explains the migration period and basic processes for moving devices from legacy Android versions and Zebra management processes to Android N and beyond, including a time line for when such migrations become mandatory.
+    url: roadmap
+  - type: section
+    level: 4
     title: Android Setup Wizard Bypass
     text: Staging profiles made for devices with MX 7.1 or higher can include a command to automatically bypass the Android Setup Wizard (also known as the "Welcome Screen") following an Enterprise Reset. The wizard can be skipped (on some devices) by scanning a barcode.
     url: bypass
@@ -38,11 +43,6 @@ content-items:
     title: DA+MX-to-AEDO Migration
     text: Describes how to transition an EMM Agent from MX to AEDO to enable management of Zebra Android N devices, on which AEDO is the recommended management strategy.
     url: migrateaedo
-  - type: section
-    level: 4
-    title: EMM Toolkit Roadmap
-    text: Explains the migration period and basic processes for moving devices from legacy Android versions and Zebra management processes to Android N and beyond, including a time line for when such migrations become mandatory.
-    url: roadmap
   - type: section
     level: 4
     title: MX and AEDO Function Maps

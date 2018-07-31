@@ -376,7 +376,7 @@ The decode-related data added to an intent bundle can be retrieved using specifi
 **Type**: [String]<br>
 **Name**: "com.symbol.datawedge.label_type"<br>
 **Contents**: Barcode label type <br>
-**Example**: "EAN128"<br>
+**Example**: "LABEL-TYPE-EAN128"<br>
 
 -----
 

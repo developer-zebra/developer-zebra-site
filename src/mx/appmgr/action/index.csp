@@ -89,7 +89,7 @@ parm:
       devicetype: A
       info: Supported on SDM660-platform devices only. 
       name: DisableGMSApps
-      description: Disables all GMS applications and services on the device that are safe to disable as an aid to improving device privacy and/or security. Subsequent EnableApplication Actions are effective.
+      description: Disables all GMS applications and services on the device (that are safe to disable) and removes their icons from the Android Launcher. Subsequent EnableApplication Actions are effective. See IMPORTANT notes, above. 
       mx: "8.0"
       osx: "8.1"
       apilevel: "24"
@@ -99,4 +99,5 @@ Used to specify the Action to perform on an application or app-related setting. 
 
 **Notes**: 
 * **<u>"Protected" Apps remain on the "Recent Apps" list after the list has been cleared</u> using the "ClearRecentApps" Action**.<br>See Protected List Action parameter for more information.
+* **Persistence of the DisableGMSApps Action MUST be accompanied by a bypass of the Android Setup Wizard** to prevent unpredictable behavior. <br>See [Power Manager](/mx/powermgr/#setup-wizard-bypass) for more information. 
 * **Enable/Disable GMS Apps Action supported on SDM660-platform devices only**.

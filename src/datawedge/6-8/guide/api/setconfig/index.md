@@ -314,6 +314,7 @@ The scanner identifier (introduced in DataWedge 6.5) permits scanners to be iden
 * **SERIAL_SSI** - Pluggable Z-back scanner for ET50/ET55 
 * **BLUETOOTH_SSI** - RS507 Bluetooth scanner
 * **BLUETOOTH_RS6000** - RS6000 Bluetooth scanner
+* **BLUETOOTH_DS2278** - DS2278 Bluetooth scanner
 * **BLUETOOTH_DS3678** - DS3678 Bluetooth scanner
 * **PLUGABLE_SSI** - Serial SSI scanner RS429 (for use with WT6000)
 * **PLUGABLE_SSI_RS5000** - Serial SSI scanner RS5000 (for use with WT6000)

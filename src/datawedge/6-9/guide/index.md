@@ -6,25 +6,25 @@ menu:
   title: DataWedge 6.8
   items:
     - title: About
-      url: /datawedge/6-8/guide/about
+      url: /datawedge/6-9/guide/about
     - title: Getting Started
-      url: /datawedge/6-8/gettingstarted
+      url: /datawedge/6-9/gettingstarted
     - title: Profiles
-      url: /datawedge/6-8/guide/setup
+      url: /datawedge/6-9/guide/setup
     - title: Parameters
-      url: /datawedge/6-8/guide/decoders
+      url: /datawedge/6-9/guide/decoders
     - title: IP Output
-      url: /datawedge/6-8/guide/ipwedge
+      url: /datawedge/6-9/guide/ipwedge
     - title: Advanced Settings
-      url: /datawedge/6-8/guide/advanced
+      url: /datawedge/6-9/guide/advanced
     - title: APIs
-      url: /datawedge/6-8/guide/demo
+      url: /datawedge/6-9/guide/demo
     - title: Demo
-      url: /datawedge/6-8/guide/api
+      url: /datawedge/6-9/guide/api
     - icon: fa fa-search
-      url: /datawedge/6-8/search
+      url: /datawedge/6-9/search
     - icon: fa fa-download
-      url: /datawedge/6-8/download
+      url: /datawedge/6-9/download
 product: DataWedge
 productversion: '6.9'
 ---

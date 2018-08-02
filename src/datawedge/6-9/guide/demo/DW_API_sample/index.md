@@ -15,9 +15,9 @@ The new features in the sample application include:
 * A new [SET_REPORTING_OPTIONS](http://techdocs.zebra.com/datawedge/latest/guide/api/setreportingoptions/) API provides control of Reporting features with intents (introduced in DW v6.6).
 * The [SWITCH_SCANNER](http://techdocs.zebra.com/datawedge/latest/guide/api/switchscanner/) API now supports friendly device names with a new extra (introduced in DW v6.6).
 * A new [IMPORT_CONFIG API](http://techdocs.zebra.com/datawedge/latest/guide/api/importconfig/) allows Config and Profile settings files to be imported using an intent (introduced in DW v6.7).
-* New [SET_IGNORE_DISABLED_PROFILES](http://techdocs.zebra.com/datawedge/6-8/guide/api/setignoredisabledprofiles/) API configures DataWedge to avoid switching to Profiles are are not enabled (introduced in DW v6.8).
-* New [GET_IGNORE_DISABLED_PROFILES](http://techdocs.zebra.com/datawedge/6-8/guide/api/getignoredisabledprofiles/) API returns the status of the IGNORE_DISABLED_PROFILES flag (introduced in DW v6.8).
-* New [SWITCH_SIMULSCAN_PARAMS](http://techdocs.zebra.com/datawedge/6-8/guide/api/switchsimulscanparams/) API enables runtime changes to SimulScan parameters (introduced in DW v6.8).
+* New [SET_IGNORE_DISABLED_PROFILES](http://techdocs.zebra.com/datawedge/6-9/guide/api/setignoredisabledprofiles/) API configures DataWedge to avoid switching to Profiles are are not enabled (introduced in DW v6.8).
+* New [GET_IGNORE_DISABLED_PROFILES](http://techdocs.zebra.com/datawedge/6-9/guide/api/getignoredisabledprofiles/) API returns the status of the IGNORE_DISABLED_PROFILES flag (introduced in DW v6.8).
+* New [SWITCH_SIMULSCAN_PARAMS](http://techdocs.zebra.com/datawedge/6-9/guide/api/switchsimulscanparams/) API enables runtime changes to SimulScan parameters (introduced in DW v6.8).
 
 ## Usage
 

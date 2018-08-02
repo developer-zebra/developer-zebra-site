@@ -62,7 +62,7 @@ Zebra recommends that Profile names be unique and contain alpha-numeric characte
 <img style="height:350px" src="08_pick_asterisk.png"/>
 <br>
 
-&#57;. The app now appears in the Profile associations list as below. **Repeat Steps 6-8** until all desired apps and/or activities are associated. 
+&#57;. The app now appears in the Profile associations list as below. **Repeat Steps 6-9** until all desired apps and/or activities are associated. 
 <img style="height:350px" src="09_confirm_association.png"/>
 When finished adding associations, **Tap the BACK button** to return to the Profile screen. 
 <br>

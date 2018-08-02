@@ -2,7 +2,7 @@
 title: Set Config 
 layout: guide.html
 product: DataWedge
-productversion: '6.8'
+productversion: '6.9'
 ---
 
 ## SET_CONFIG

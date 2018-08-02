@@ -2,7 +2,7 @@
 title: Get Disabled App List
 layout: guide.html
 product: DataWedge
-productversion: '6.8'
+productversion: '6.9'
 ---
 
 ## GET_DISABLED_APP_LIST

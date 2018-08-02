@@ -2,7 +2,7 @@
 title: Soft Scan Trigger 
 layout: guide.html
 product: DataWedge
-productversion: '6.8'
+productversion: '6.9'
 ---
 
 ## SOFT_SCAN_TRIGGER 

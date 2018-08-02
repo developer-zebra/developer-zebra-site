@@ -2,7 +2,7 @@
 title: Scanner Input Plug-in 
 layout: guide.html
 product: DataWedge
-productversion: '6.8'
+productversion: '6.9'
 ---
 
 ## SCANNER_INPUT_PLUGIN

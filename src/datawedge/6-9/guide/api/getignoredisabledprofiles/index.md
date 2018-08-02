@@ -2,7 +2,7 @@
 title: Get Ignore Disabled Profiles 
 layout: guide.html
 product: DataWedge
-productversion: '6.8'
+productversion: '6.9'
 ---
 
 ## GET_IGNORE_DISABLED_PROFILES 

@@ -2,7 +2,7 @@
 title: Get DataWedge Status 
 layout: guide.html
 product: DataWedge
-productversion: '6.8'
+productversion: '6.9'
 ---
 
 ## GET_DATAWEDGE_STATUS 

@@ -64,8 +64,11 @@ DataWedge has been approved to run on device operating systems localized for the
 For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
 
 -----
+## New in DataWedge 6.9
 
-## New in DataWedge 6.8
+## Recent Version History
+
+### Added in DataWedge 6.8
 
 * **[Scanner auto-switching](../input/barcode/#autoswitchtodefaultonevent) behavior is now controllable** after connecting and disconnecting external scanners
 * **[DataWedge Settings](../settings/#datawedgesettings) allows disabled Profiles to be ignored** to help maintain full functionality at all times 
@@ -84,8 +87,6 @@ The SimulScan Input Plug-in default template is now "Default - Barcode4.xml"
 > Ready to get started? Go to the [DataWedge Setup guide](../setup).
 
 -----
-
-## Recent Version History
 
 ### Added in v6.7
 

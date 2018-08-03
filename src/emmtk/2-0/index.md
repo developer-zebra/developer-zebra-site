@@ -9,17 +9,19 @@ menu:
       url: /emmtk/2-0/guide/about
     - title: Guides
       url: /emmtk/2-0/guide
-    - title: Roadmap
-      url: /emmtk/2-0/guide/roadmap
-    - title: Enroll AEDO
+    - title: Migrate
+      url: /emmtk/2-0/guide/migrateaedo
+    - title: Enroll
       url: /emmtk/2-0/guide/enrollaedo
-    - title: Persistence
+    - title: Persist
       url: /emmtk/2-0/guide/persistence
-    - title: MX Features
+    - title: MX
       url: /mx
     - title: Function Maps
       url: /emmtk/2-0/guide/functionmap
-    - title: Staging APIs
+    - title: Glossary
+      url: /emmtk/2-0/guide/glossary
+    - title: APIs
       url: /emmtk/2-0/guide/api
     - icon: fa fa-search
       url: /emmtk/2-0/search

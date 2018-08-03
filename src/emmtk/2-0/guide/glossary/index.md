@@ -1,0 +1,115 @@
+---
+title: EMMTK Glossary
+layout: guide.html
+product: EMM Toolkit
+productversion: '2.0'
+---
+
+## `DRAFT`
+
+**_Information subject to change without notice_**. 
+
+-----
+
+### Android Enterprise (AE)
+Android Enterprise (formerly "Android for Work") is a set of APIs for configuring and managing Android devices and apps. 
+
+### AEDO
+Android Enterprise Device Owner
+
+
+### DA
+See Device Administrator
+
+### Deprecated 
+
+A product or feature that is supported but no longer being advanced, usually to be replaced by something else. Zebra discourages use of deprecated features in favor of their replacement. Deprecation of a feature that previously had Full Support might result in Partial Support for that feature while it is being phased out. 
+
+### Device Administrator (DA)
+
+Device Administrator uses a standard Android Privilege Escalation method available since Android 2.2.x (Froyo) API Level 8 and expanded in later versions. Being designated as a DA grants an app the right to use selected methods of the Android Device Administration API, exposed primarily via methods of the Android DevicePolicyManager class. However, Android Device Administration API methods that can be used by a DA provide minimal functionality, and alone do not enable the development of a viable EMM solution. 
+
+For more information, please refer to Zebra's [DA-to-DO Agent Migration Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `SHAREPOINT LINK FOR ZEBRAS ONLY`).
+
+### Device Owner (DO)
+A device designation generally used to implement device management as part of a “Corporately Owned Special Use” (COSU) device deployment because such devices are usually owned and managed by an enterprise and NOT by the device user. The Device Owner is granted broad control over many aspects of the device through the Android Device Administration APIs. A device can have only one DO at a time. 
+
+An a DA-eligible app that meets certain additional requirements can be promoted to DO through a special enrollment process that requires the Device User to opt-in and that must generally be performed early during the initialization process of the device. 
+
+### Device Policy Controller (DPC)
+An app that implements a sub-class of the Android [DeviceAdminReceiver](https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver) class, the base class for implementing a device administration component. 
+
+### Discontinued 
+
+A previously deprecated feature that is no longer available or supported.
+
+### DO
+See Device Owner
+
+### DPC
+See Device Policy Controller
+
+### EMMTK 
+See EMM Toolkit
+
+### EMM Toolkit 
+
+The EMMTK is a Zebra product designed to provide EMM vendors with everything needed to develop an EMM agent that can access all functionality needed to implement a “complete” EMM solution for managing Zebra Android devices. 
+
+Early versions of the EMMTK primarily focused on providing documentation, sample code, tools, and technologies required to leverage MX as a Privilege Escalation method to augment the functionality of an EMM Agent that was either totally unprivileged or that was using another Privilege Escalation, such as DA. 
+
+Multiple EMM vendors have successfully used the EMMTK to develop Zebra-proprietary EMM agents that provide in-device support for a “complete” EMM Solution for managing Zebra Android devices. 
+
+Modern versions of the EMMTK deemphasize the use of MX (which is being phased out) and instead focus on migrating to the Android Device Administration API available to a DO, augmented using the Zebra implementation of OemConfig, via Managed Configurations. 
+
+### MX 
+See Management Extensions
+
+### Managed Configurations
+A method for Android apps to expose configuration options and accept settings. Through a specially designed configurable application called OemConfig, Zebra has developed a method of leveraging the extension mechanism in Managed Configurations (formerly called “Application Restrictions”) to configure the settings of a device. 
+
+OemConfig is the Google-recommended approach for OEMs to publish extended functionality and for EMMs to remotely configure devices. 
+
+
+### Management Extensions (MX)
+
+The Zebra-proprietary Privilege Escalation method designed to enable an unprivileged EMM agent to access all “missing” functions needed to enable an EMM vendor to implement a “complete” EMM solution for managing Zebra Android devices. MX was developed in parallel with the Android Device Administrator, and predates the availability of the Profile Owner and Device Owner Privilege Escalation methods. 
+
+### PO
+See Profile Owner
+
+### Privilege Escalation
+
+A Privilege Escalation method is a means by which an application can be granted the functionality provided by privileged APIs to which it would otherwise be denied. 
+
+The only Privilege Escalation method originally available in Android was to grant the app direct access through signing by the device OEM using the device platform key, a time-consuming and costly process. Zebra signed EMM agents for a small group of EMM vendors, but the process did not scale well. Zebra added MX as a Privilege Escalation method, which was exposed and documented for use by EMM vendors through the Zebra EMM Toolkit (EMMTK). Android later added the Profile Owner and Device Owner Privilege Escalation methods. 
+
+### Privileged
+
+Term applied to functions available only to apps with permission. Many of the functions traditionally required to implement an EMM are considered privileged by Android and hence the APIs required to perform those functions cannot be called by an unprivileged app. Lack of access to such functions generally would result in a lack of critical functionality and a non-viable EMM solution. 
+
+### Profile Owner 
+
+Profile Owner is a standard Android Privilege Escalation method introduced in Android 5.0 (Lollipop) API level 21. It adds to the capabilities of a DA to include an expanded set of Android Device Administration APIs. An application that is eligible to become a DA, and that meets certain additional requirements, can be promoted to be a PO, through a special enrollment process that requires the Device User to opt-in to having a Work Profile and having that Work Profile, but NOT the rest of the device, managed by that PO, usually under the control by the employer. 
+
+A PO is generally used to implement a Work Profile as part of a “Bring Your Own Device” (BYOD) deployment scenario. A Work Profile contains the “Work” part of the device, which is managed by a PO selected by the Enterprise. It is segregated from the “Personal” part of the device and cannot be seen or managed by the Enterprise. 
+
+### Support, Full 
+
+A feature generally recommended to be used without significant limitations or restrictions. 
+
+### Support, Partial 
+
+A feature supported and generally recommended to be used but that might have some limitations or restrictions on when or on which devices it can be used, or in the functionality provided. 
+
+### ZMC 
+Zebra Managed Configurations 
+See Managed Configurations
+
+
+-----
+
+## See Also
+
+* [About EMM Toolkit](../about)
+* [Other EMMTK Guides](../../guide)

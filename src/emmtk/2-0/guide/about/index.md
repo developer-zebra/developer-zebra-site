@@ -5,7 +5,7 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
-# `DRAFT`
+## `DRAFT`
 
 **_Information subject to change without notice_**. 
 
@@ -41,13 +41,13 @@ This section explains device owner stuff, and why a Nougat device _should_ be en
 
 ### Terms used in this guide
 
-* **AE -** Android Enterprise (formerly known as "Android for Work")
-* **AEDO -** Android Enterprise Device Owner
-* **AFW -** Android for Work
-* **DA -** Device administrator (feature to be discontinued in Android Q)
-* **DO -** Device owner (available since M, encouraged for N and O, required for P)
-* **EMM -** Enterprise Mobility Management
-* **MDM -** Mobile Device Management
+* **[AE](../glossary/#androidenterpriseae) -** Android Enterprise (formerly known as "Android for Work")
+* **[AEDO](../glossary/#aedo) -** Android Enterprise Device Owner
+* **[AFW](../glossary/#androidforworkafw) -** Android for Work
+* **[DA](../glossary/#da) -** Device administrator (feature to be discontinued in Android Q)
+* **[DO](../glossary/#do) -** Device owner (available since M, encouraged for N and O, required for P)
+* **[EMM](../glossary/#emm) -** Enterprise Mobility Management
+* **[MDM](../glossary/#mdm) -** Mobile Device Management
 
 -----
 

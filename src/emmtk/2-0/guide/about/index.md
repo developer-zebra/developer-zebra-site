@@ -11,13 +11,29 @@ productversion: '2.0'
 
 -----
 
+## Overview
+Tier-1 EMM solution providers have historically administered Zebra devices through a signed agent, an Android app running on the device that accepts XML passed directly from the Zebra StageNow administrative tool. Other EMM vendors adapt their solutions using the legacy [MDM Toolkit](../mdmtk). Through these mechanisms, EMM vendors are able to access Zebra's proprietary MX Management System, which configures Zebra devices through standard Android APIs when possible, or through OSX, Zebra's proprietary Android extension layer. ß
+
+Over time, many of the capabilities once available only through these mechanisms have been added by the Android development community. Starting as "Android for Work," these capabilities are now available as "Android Enterprise" APIs or Android Managed Configurations, both of which are based on publicly available specifications. Zebra is adopting both as part of the natural evolution of its device management system. 
+
+To prepare for the new approach, **EMM solution providers must migrate their Android "Device Administrator" (DA) agent apps to the "Device Owner" (DO) model**. The current method augments standard Android functions with Zebra's proprietary MX Management System. The forthcoming model works through Android Enterprise Device Owner (AEDO) APIs when possible, and fills gaps in functionality with OemConfig, a solution developed by Zebra that uses Managed Configurations when no AEDO solution is available. 
+
+<img alt="image" style="height:350px" src="../migrateaedo/timeline.jpg"/>
+
+**<u>The major advantage of this method is universality</u>; it allows a single agent to work with <u>any</u> Android device in the future**, regardless of brand. In the past, EMM vendors have had to develop and maintain multiple agents to support the proprietary management mechanisms required for each brand of device they chose to target. 
+
+> **Zebra devices running Android 7.x Nougat and 8.x Oreo support DA <u>and</u> DO agents**, and include features implemented up to [MX 8.1](/mx). Support for MX will be discontinued beginning with Android 9.x; devices running "Android P" will support only [unsigned DO/DA+ZMC](#unsigneddodazmc) agents. 
+
+-----
+
+<!-- 
+
 Methods of managing Zebra devices:
 
 * Past: Signed agent
 * Present: XML submissions to MXMS
 * Future: AEDO (when supported by Android-standard APIs) + OemConfig (when not)
 
-<!-- 
 WATCH (George's?) GTX (and possibly embed it)
 
 

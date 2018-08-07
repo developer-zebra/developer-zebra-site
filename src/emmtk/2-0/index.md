@@ -7,8 +7,6 @@ menu:
   items:
     - title: About
       url: /emmtk/2-0/guide/about
-    - title: Guides
-      url: /emmtk/2-0/guide
     - title: Migrate
       url: /emmtk/2-0/guide/migrateaedo
     - title: Enroll
@@ -23,6 +21,8 @@ menu:
       url: /emmtk/2-0/guide/glossary
     - title: APIs
       url: /emmtk/2-0/guide/api
+    - title: More...
+      url: /emmtk/2-0/guide
     - icon: fa fa-search
       url: /emmtk/2-0/search
 product: EMM Toolkit

@@ -66,7 +66,7 @@ section explains device owner stuff, and why a Nougat device _should_ be enrolle
 * **All agent and/or service apps (`.apk` files)** required by the EMM solution to be present on the device being managed. <br>**Required files**:
  * `Agent.apk(s)` - **Device-resident agent file(s) with DO support** (provided by the EMM vendor)
  * `EMM_Device_Owner_Enrollment_Profile.zip` - **StageNow profile for enrolling device** (provided by Zebra)
- * `EnrollDO.pem` - **Owner enrollment certificate for EMM Agent app** (provided by EMM vendor???; file names vary)
+ * `EnrollDO.pem` - **Owner enrollment certificate for EMM agent app** (provided by EMM vendor???; file names vary)
  * `EMM_PERE-DO.zip` - **StageNow persistence profile** template (provided by Zebra)
  * `Provision.apk` - **Android app**. There's one for TC20/TC25 devices and another for all other Zebra devices (provided by Zebra???)  
  * `Provisioning.JSON` - **Credentials file, including server address and login credentials** (created during the enrollment process below)

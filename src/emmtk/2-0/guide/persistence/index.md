@@ -75,11 +75,11 @@ The Persist Phase contains XML downloaded from a server and executed during init
 
 **The Persist Phase <u>should</u>**:
 ​
-* **Install the EMM Agent** .apk and all other files on which it depends.
+* **Install the EMM agent** .apk and all other files on which it depends.
 * **Install files in a persistent location** on the device.
-* **Enroll the EMM Agent as a Device Owner** (if running in DO Mode​).
-* **Pre-configure the EMM Agent** as required to contact the appropriate EMM Server.
-* **Launch the EMM Agent​**.
+* **Enroll the EMM agent as a Device Owner** (if running in DO Mode​).
+* **Pre-configure the EMM agent** as required to contact the appropriate EMM Server.
+* **Launch the EMM agent​**.
 
 **The Persist Phase <u>should not</u>**:
 ​
@@ -96,17 +96,17 @@ The Persist Phase contains XML downloaded from a server and executed during init
 
 #### EMM Agent Notes
 
-**EMM Agents <u>should</u>**:​
+**EMM agents <u>should</u>**:​
 
 * **Store network and other critical config settings in a persistent location** on the device.
 * **Automatically re-apply critical settings** when launched by the Persist Phase following an Enterprise Reset​.
 * **Re-establish production-network configuration**.
 
 
-* **EMM Agent settings must be persistent** following an Enterprise Reset. 
+* **EMM agent settings must be persistent** following an Enterprise Reset. 
 * **Agent settings must allow the device to connect to the appropriate EMM server**. 
 * **Agent settings must allow management of the device**.
-* **The EMM Agent (not the Staging process) usually controls access to production-network configuration** since such configurations often change over time. 
+* **The EMM agent (not the Staging process) usually controls access to production-network configuration** since such configurations often change over time. 
 * **Agent settings should ensure that production-network configuration is re-established** following an Enterprise Reset​. 
 
 -----
@@ -162,8 +162,8 @@ As a general rule, steps involved in staging a device should be kept to a minimu
 ### Deploy Steps
 
 * **File Manager**:
- * Download Agent APK File from Server to Device​ to Persistent Location on Device​
- * Download Agent Configuration File from Server​ to Persistent Location on Device​
+ * Download agent APK File from Server to Device​ to Persistent Location on Device​
+ * Download agent Configuration File from Server​ to Persistent Location on Device​
  * Download Persist Section XML File from Server to Device​ to Persistent Location on Device​
 * **Batch**:
  * Execute Persist Section XML File​
@@ -171,9 +171,9 @@ As a general rule, steps involved in staging a device should be kept to a minimu
 ### Persist​ Steps
 
 * **Application Manager**:
- * Install Agent APK File​
+ * Install agent APK file​
 * **Intent**: 
- * Launch Agent APK and/or Enroll Agent APK as Device Owner​
+ * Launch agent APK and/or enroll agent APK as Device Owner​
 
 -----
 
@@ -202,7 +202,7 @@ When a kiosk lockdown is enabled, the device user generally loses the ability to
 
 on a persistence-enabled device 
 
-"As an EMM Partner I would like to know what the best practices are for persisting my DA and DO EMM Agents on Zebra devices so that I can ensure that I develop the solution properly so that devices return to a manageable state after an Enterprise Reset" 
+"As an EMM Partner I would like to know what the best practices are for persisting my DA and DO EMM agents on Zebra devices so that I can ensure that I develop the solution properly so that devices return to a manageable state after an Enterprise Reset" 
 
 that implements a secure Android launcher and/or its Kiosk Mode feature deployed using the Zebra StageNow administration tool or an enterprise mobile management (EMM) system such as those from SOTI or AirWatch. 
 
@@ -222,11 +222,11 @@ This section covers the specific procedures for using AirWatch to restore EHS an
 IMPORTANT:
 For restoration of any enterprise settings to be possible, the device must have been configured with the Zebra persistence framework in advance of the Enterprise Reset reset action. This is generally done during the initial device enrollment process. 
 
-Enterprise settings also can be preserved immediately prior to an Enterprise Reset by using the fault tolerance settings of the AirWatch console. Zebra recommends that AirWatch customers execute Enterprise Reset in this manner. The state of such devices will be returned to their enrolled state in the EMM system (restoring the AirWatch Agent and Service) without intervention only if the device was originally enrolled using a barcode or sideload methodology.
+Enterprise settings also can be preserved immediately prior to an Enterprise Reset by using the fault tolerance settings of the AirWatch console. Zebra recommends that AirWatch customers execute Enterprise Reset in this manner. The state of such devices will be returned to their enrolled state in the EMM system (restoring the AirWatch agent and Service) without intervention only if the device was originally enrolled using a barcode or sideload methodology.
 
 Devices originally enrolled manually (by typing EMM server name and user credentials) cannot be returned to their enrolled state without further intervention. 
 
-An Enterprise Reset will restore the latest Agent and Service only if the upgrade was performed through the Files/Action -> MDM Agent Upgrade method.
+An Enterprise Reset will restore the latest agent and Service only if the upgrade was performed through the Files/Action -> MDM agent Upgrade method.
 
 AIRWATCH NOTES
 Devices are available for selection in List View varies by the group filtering settings of an organization.

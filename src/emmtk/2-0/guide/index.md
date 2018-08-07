@@ -5,13 +5,8 @@ layout: list-content-items.html
 content-items:
   - type: section
     level: 4
-    title: About EMM Toolkit
-    text: A general overview of the EMM Toolkit, its intended purposes and the timeline during which EMM vendors must adapt their solutions to work with StageNow, the MX Management System and other Zebra device-staging and configuration mechanisms as they evolve along with Android. 
-    url: about
-  - type: section
-    level: 4
     title: Agent Migration
-    text: Describes how to transition an EMM Agent from MX to AEDO to enable management of Zebra Android N devices, on which AEDO is the recommended management strategy.
+    text: Describes how to transition an EMM agent from MX to AEDO to enable management of Zebra Android N devices, on which AEDO is the recommended management strategy.
     url: migrateaedo
   - type: section
     level: 4
@@ -30,9 +25,9 @@ content-items:
     url: schema
   - type: section
     level: 4
-    title: Android Setup Wizard Bypass
-    text: Describes the process for automatically bypassing the Zebra and Android Setup Wizards following an Enterprise Reset. The wizards can be skipped (on some devices) by scanning a barcode.
-    url: bypass
+    title: Setup Wizard Bypass
+    text: Describes the process supported on some devices for automatically bypassing the Zebra and Android Setup Wizards following an Enterprise Reset (links to StageNow guide page).
+    url: /stagenow/latest/Profiles/wipedevice/#setupwizardmanualbypass
   - type: section
     level: 4
     title: Persistence Best Practices
@@ -58,7 +53,7 @@ productversion: '2.0'
   - type: section
     level: 4
     title: Staging API Service
-    text: Explains how to use the Staging API service from an EMM console to produce StageNow barcodes and to enroll an AEDO EMM Agent using the StageNow client app.
+    text: Explains how to use the Staging API service from an EMM console to produce StageNow barcodes and to enroll an AEDO EMM agent using the StageNow client app.
     url: api
     
 Changed to "MDM TK Legacy guide"
@@ -68,7 +63,7 @@ Changed to "MDM TK Legacy guide"
     text: Provides validated code that EMM solution providers can use to implement managed configurations within their agent.
     url: samples
 
-8/7/18 - removed because we're not doing them (or they were comibined with others):
+8/7/18 - removed because we're not doing them (or they were not needed or combined with others):
   - type: section
     level: 4
     title: EMM Toolkit Roadmap
@@ -86,6 +81,12 @@ Changed to "MDM TK Legacy guide"
     title: OemInfo Developer Guide
     text: Explains API usage and development requirements for OemInfo, a standards-based mechanism by which applications can acquire published information about a Zebra device.
     url: oeminfodevguide
+
+  - type: section
+    level: 4
+    title: About EMM Toolkit
+    text: A general overview of the EMM Toolkit, its intended purposes and the timeline during which EMM vendors must adapt their solutions to work with StageNow, the MX Management System and other Zebra device-staging and configuration mechanisms as they evolve along with Android. 
+    url: about
 
 
  -->

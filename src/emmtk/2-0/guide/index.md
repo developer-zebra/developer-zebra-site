@@ -31,7 +31,7 @@ content-items:
   - type: section
     level: 4
     title: Android Setup Wizard Bypass
-    text: Staging profiles made for devices with MX 7.1 or higher can include a command to automatically bypass the Android Setup Wizard (also known as the "Welcome Screen") following an Enterprise Reset. The wizard can be skipped (on some devices) by scanning a barcode.
+    text: Describes the process for automatically bypassing the Zebra and Android Setup Wizards following an Enterprise Reset. The wizards can be skipped (on some devices) by scanning a barcode.
     url: bypass
   - type: section
     level: 4

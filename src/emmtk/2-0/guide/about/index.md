@@ -12,7 +12,12 @@ productversion: '2.0'
 -----
 
 ## Overview
-Tier-1 EMM solution providers have historically administered Zebra devices through a signed agent, an Android app running on the device that accepts XML passed directly from the Zebra StageNow administrative tool. Other EMM vendors adapt their solutions using the legacy [MDM Toolkit](../mdmtk). Through these mechanisms, EMM vendors are able to access Zebra's proprietary MX Management System, which configures Zebra devices through standard Android APIs when possible, or through OSX, Zebra's proprietary Android extension layer. ß
+Tier-1 EMM solution providers have historically administered Zebra devices through a signed agent, an Android app running on the device that accepts XML passed directly from the Zebra StageNow administrative tool. Other EMM vendors adapt their solutions using the legacy [MDM Toolkit](../mdmtk). Through these mechanisms, EMM vendors are able to access Zebra's proprietary MX Management System, which configures Zebra devices through standard Android APIs when possible, or through OSX, Zebra's proprietary Android extension layer.
+
+
+<img alt="image" style="height:350px" src="legacy_staging_mechanism.png"/>
+_Legacy two-tool staging process for Zebra device management. Click to enlarge_.
+<br>
 
 Over time, many of the capabilities once available only through these mechanisms have been added by the Android development community. Starting as "Android for Work," these capabilities are now available as "Android Enterprise" APIs or Android Managed Configurations, both of which are based on publicly available specifications. Zebra is adopting both as part of the natural evolution of its device management system. 
 
@@ -22,38 +27,13 @@ To prepare for the new approach, **EMM solution providers must migrate their And
 
 **<u>The major advantage of this method is universality</u>; it allows a single agent to work with <u>any</u> Android device in the future**, regardless of brand. In the past, EMM vendors have had to develop and maintain multiple agents to support the proprietary management mechanisms required for each brand of device they chose to target. 
 
-> **Zebra devices running Android 7.x Nougat and 8.x Oreo support DA <u>and</u> DO agents**, and include features implemented up to [MX 8.1](/mx). Support for MX will be discontinued beginning with Android 9.x; devices running "Android P" will support only [unsigned DO/DA+ZMC](#unsigneddodazmc) agents. 
+> **IMPORTANT NOTES**: <br>
+* **Zebra devices running Android 7.x Nougat and 8.x Oreo support DA <u>and</u> DO agents** and include features implemented up to [MX 8.1](/mx).
+> * **<u>Agents for Oreo must be unsigned</u>**; Zebra devices running Android 8.x do not support signed agents.
+> * **Support for MX ends with Android 9.x Pie**; devices running Android Pie must use [unsigned DO/DA+ZMC](#unsigneddodazmc) agents.
 
 -----
 
-<!-- 
-
-Methods of managing Zebra devices:
-
-* Past: Signed agent
-* Present: XML submissions to MXMS
-* Future: AEDO (when supported by Android-standard APIs) + OemConfig (when not)
-
-WATCH (George's?) GTX (and possibly embed it)
-
-
-This section explains device owner stuff, and why a Nougat device _should_ be enrolled as a DO and why an Oreo _must_. 
-
-* DO is recommended with Nougat. With Oreo, it's required. 
-* Agent Uses AEDO + Zebra OemConfig Managed Configs​
-* Android N or higher​
-* EMM must leverage Zebra EMM TK V4​
-* Supported from Android Nougat onwards​
-* Provides parity of functionality to EMM TK V2 when combined with AEDO APIs​
-* Standard-based​
-* Not available prior to Android Nougat​
-* Requires special Device Owner Enrollment​
-* It is OPTIONAL for all EMMs to use OemConfig, but NOT doing so will leave the EMM unable to provide parity of functionality once they can no longer use MX via EMM TK V1 and V2 to augment the capabilities of AEDO APIs​
-* SHOULD support use of OemConfig by the start of Android P​
-* SHOULD support use of OemConfig as early as possible, preferably by the end of Android Nougat​
-
-> Info in the QR code is identical to contents of the `Provisioning.JSON` file.  
- -->
 
 ### Terms used in this guide
 
@@ -64,6 +44,8 @@ This section explains device owner stuff, and why a Nougat device _should_ be en
 * **[DO](../glossary/#do) -** Device owner (available since M, encouraged for N and O, required for P)
 * **[EMM](../glossary/#emm) -** Enterprise Mobility Management
 * **[MDM](../glossary/#mdm) -** Mobile Device Management
+
+See [Glossary](../glossary) for further details. 
 
 -----
 
@@ -103,6 +85,35 @@ The primary vehicle for integrating an EMM solution with Zebra's staging tools i
  -->
 
 
+<!-- 
+
+Methods of managing Zebra devices:
+
+* Past: Signed agent
+* Present: XML submissions to MXMS
+* Future: AEDO (when supported by Android-standard APIs) + OemConfig (when not)
+
+WATCH (George's?) GTX (and possibly embed it)
+
+
+This section explains device owner stuff, and why a Nougat device _should_ be enrolled as a DO and why an Oreo _must_. 
+
+* DO is recommended with Nougat. With Oreo, it's required. 
+* Agent Uses AEDO + Zebra OemConfig Managed Configs​
+* Android N or higher​
+* EMM must leverage Zebra EMM TK V4​
+* Supported from Android Nougat onwards​
+* Provides parity of functionality to EMM TK V2 when combined with AEDO APIs​
+* Standard-based​
+* Not available prior to Android Nougat​
+* Requires special Device Owner Enrollment​
+* It is OPTIONAL for all EMMs to use OemConfig, but NOT doing so will leave the EMM unable to provide parity of functionality once they can no longer use MX via EMM TK V1 and V2 to augment the capabilities of AEDO APIs​
+* SHOULD support use of OemConfig by the start of Android P​
+* SHOULD support use of OemConfig as early as possible, preferably by the end of Android Nougat​
+
+> Info in the QR code is identical to contents of the `Provisioning.JSON` file.  
+ -->
+
 -----
 
 
@@ -123,20 +134,15 @@ To persist an agent and/or service on the device following an enterprise reset.
 
  -->
 
-### Entitlement Criteria
-
-This part explains which EMMs are given access to which EMM Toolkit features and why.  
-
-
-<img alt="image" style="height:180px" src="legacy_staging_mechanism.png"/>
-_Legacy two-tool staging process_
-<br>
 
 -----
 
 ## See Also
 
-* [Persistence](../persistence)
+* [EMM Toolkit Guides](../guide)
+* [EMM Agent Migration Guide](../migrateaedo)
+* [Persistence Best Practices](../persistence)
+
 <!-- 
 * [Staging APIs](../api)
 

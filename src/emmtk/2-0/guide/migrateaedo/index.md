@@ -15,6 +15,23 @@ productversion: '2.0'
 
 This guide is intended for EMM vendors and other Zebra partners that offer solutions designed to administer and manage Zebra Android devices in an enterprise. It describes the time line for changes to the mechanisms by which Zebra devices are managed, and provides basic descriptions of the steps required to migrate an agent from DA to DO. For more detailed information, please refer to Zebra's [DA-to-DO Agent Migration Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `TEMPORARY SHAREPOINT LINK FOR ZEBRAS ONLY`). 
 
+
+**Timeline for devices running**:
+
+* **Android KitKat, Lollipop and Marshmallow**:
+ * Support continues for all current EMM solutions
+ * EMM vendors encouraged to begin migration to Device-Owner model
+* **Android 7.x Nougat**: 
+ * Phase-out of signed agents begins
+ * Signing of new agents is discontinued
+ * Use of existing signed agents on Nougat devices not guaranteed
+ * **Use of existing signed EMM agents can continue** for management of Zebra devices running Android versions that support such agents.
+ * **All Tier-1 EMMs must begin migrating the modern approach**
+* **Android 8.x Oreo**: 
+ * End of support for signed agents
+ * All new agents must be unsigned
+ * Tier-1 EMMs should migrate signed agents to an alternate [Privilege Escalation Method](../glossary/#privilegeescalation) based on the Android version(s) the vendor intends to support.
+
 -----
 
 ## Managing Legacy Devices 
@@ -27,22 +44,14 @@ _Support for signed agents on Zebra devices ends with Android O; all EMM vendors
 
 For migrating a signed EMM agent to an unsigned one, the method described in "[Unsigned DA EMM Agent Plus MX](#unsigneddaagentmx)" would likely be preferable in most cases. Such an agent could be used to manage Zebra Android devices from Kit Kat through Oreo. Once such an agent is developed, the EMM vendor is well positioned to support most Zebra Android devices and to begin migration to the new standards-based approach required in the future. 
 
-**Notes**:
-
-* **Zebra begins phasing out support for signed agents in Android 7.x Nougat**.
-* **Support for signed agents is discontinued as of Android 8.x Oreo**.
-* **All Tier 1 EMMs must begin migrating the modern approach**; agents signed for older Android versions might not work with Nougat, and will absolutely not work with Oreo**.
-* **Use of existing signed EMM agents can continue** for management of Zebra devices running Android versions that support such agents. 
-* Tier 1 EMMs should migrate signed agents to an alternate [Privilege Escalation Method](../glossary/#privilegeescalation) based on the Android version(s) the vendor intends to support.
-
 -----
 
 ### Unsigned DA Agent + MX
 
 <img alt="image" style="height:350px" src="EMM_unsigned_DA_EMM_agent+MX.png"/>
-_Tier 2 EMM vendors taking this approach are well positioned for migration to the new approach_.
+_Tier-2 EMM vendors taking this approach are well positioned for migration to the new approach_.
 
-The diagram above illustrates the method employed by most Tier 2 EMM vendors that support complete solutions for managing Zebra Android devices. Most have already developed a DA EMM agent and augmented it using MX to provide the additional privileged functionality. Such EMM vendors are well positioned to support current and past Zebra Android devices and to begin migration to the new standards-based approach required to manage Zebra Android devices in the future. 
+The diagram above illustrates the method employed by most Tier-2 EMM vendors that support complete solutions for managing Zebra Android devices. Most have already developed a DA EMM agent and augmented it using MX to provide the additional privileged functionality. Such EMM vendors are well positioned to support current and past Zebra Android devices and to begin migration to the new standards-based approach required to manage Zebra Android devices in the future. 
 
 -----
 
@@ -51,7 +60,7 @@ The diagram above illustrates the method employed by most Tier 2 EMM vendors tha
 <img alt="image" style="height:350px" src="EMM_unsigned_non-DPC_EMM_agent+MX.png"/>
 _This approach is supported through Oreo, but could complicate migration to a DO agent_. 
 
-If a Tier 2 EMM vendor already supports a complete solution for managing Zebra Android devices based on a non-DPC EMM agent that is augmented using MX to provide the additional privileged functionality, they can continue to use that approach to support management of all Zebra Android devices through Oreo. 
+If a Tier-2 EMM vendor already supports a complete solution for managing Zebra Android devices based on a non-DPC EMM agent that is augmented using MX to provide the additional privileged functionality, they can continue to use that approach to support management of all Zebra Android devices through Oreo. 
 
 * **Support for this approach will end with Android 9.x** (Android P). Migration to the new standards-based approach is required. 
 * **Starting from a non-DPC EMM agent will likely complicate the migration process** to a DO EMM agent. But once available, that DO EMM agent could be used to manage Zebra Android devices as far back as Android Nougat, if appropriate. 
@@ -127,9 +136,9 @@ Zebra defined a special application, called OemConfig that publishes Managed Con
 
 Zebra reviewed this approach with Google and with several key EMM Vendors and this approach has now been approved and is being promoted by Google as the recommended approach for use by OEMs to publish extended functionality and for use by EMMs to utilize extended functionality published by OEMs. 
 
-### Tier 1 agents
+### Tier-1 agents
 
-All Tier 1 EMMs will need to begin migrating to a more modern approach since Zebra will began phasing out support for Signed agents in Nougat and will have discontinued all such support as of Oreo. 
+All Tier-1 EMMs will need to begin migrating to a more modern approach since Zebra will began phasing out support for Signed agents in Nougat and will have discontinued all such support as of Oreo. 
 
 Already signed EMM agents can continue to be used to manage Zebra devices running Android versions that support Signed agents. 
 
@@ -137,17 +146,17 @@ Already signed EMM agents cannot effectively used to manage Zebra devices runnin
 
 Zebra may at some point decline to sign new versions of EMM agents that were previously signed for use on older devices. 
 
-Tier 1 EMMs should migrate from a Signed agent to an alternate Privilege Escalation Method based on the versions of Android they wish to support. 
+Tier-1 EMMs should migrate from a Signed agent to an alternate Privilege Escalation Method based on the versions of Android they wish to support. 
 
 To migrate a Signed EMM agent to a single EMM agent that could be used to manage all Zebra Android devices running Kit Kat through Oreo, the method Unsigned DA EMM agent Augmented by MX, described below, would likely be preferable in most cases. 
 
 Once such an agent was available, the EMM Vendor would be well positioned to support current and past Zebra Android devices and to begin migration to the new standards-based approach that will be required to manage future Zebra Android devices. 
 
-### Tier 2 agents
+### Tier-2 agents
 
-Tier 2 EMM Vendors that already support complete solutions for managing Zebra Android devices have already developed a DA EMM agent and augmented it using MX to provide the additional privileged functionality. Such EMM Vendors will be well positioned to support current and past Zebra Android devices and to begin migration to the new standards-based approach that will be required to manage future Zebra Android devices. 
+Tier-2 EMM Vendors that already support complete solutions for managing Zebra Android devices have already developed a DA EMM agent and augmented it using MX to provide the additional privileged functionality. Such EMM Vendors will be well positioned to support current and past Zebra Android devices and to begin migration to the new standards-based approach that will be required to manage future Zebra Android devices. 
 
-if a Tier 2 EMM Vendor already supports a complete solution for managing Zebra Android devices based on a non-DPC EMM agent that is augmented using MX to provide the additional privileged functionality, they can continue to use that approach to support management of all Zebra Android devices through Oreo. 
+if a Tier-2 EMM Vendor already supports a complete solution for managing Zebra Android devices based on a non-DPC EMM agent that is augmented using MX to provide the additional privileged functionality, they can continue to use that approach to support management of all Zebra Android devices through Oreo. 
 
 Since such an approach will no longer work from Android P onwards, migration to the new standards-based approach will be required to continue to manage future Zebra Android devices. 
 

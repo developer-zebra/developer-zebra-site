@@ -6,13 +6,8 @@ content-items:
   - type: section
     level: 4
     title: About EMM Toolkit
-    text: Prodives a general overview of the purpose of the EMM Toolkit and how it works with StageNow, the MX Management System and other Zebra device staging and configuration mechanisms. 
+    text: A general overview of the EMM Toolkit, its intended purposes and the timeline during which EMM vendors must adapt their solutions to work with StageNow, the MX Management System and other Zebra device-staging and configuration mechanisms as they evolve along with Android. 
     url: about
-  - type: section
-    level: 4
-    title: EMM Toolkit Roadmap
-    text: Explains the migration period and basic processes for moving devices from legacy Android versions and Zebra management processes to Android N and beyond, including a time line for when such migrations become mandatory.
-    url: roadmap
   - type: section
     level: 4
     title: Android Setup Wizard Bypass
@@ -26,21 +21,16 @@ content-items:
   - type: section
     level: 4
     title: Staging Service API
-    text: How to use Staging API Service to produce StageNow barcodes from an EMM Console to enroll an AEDO EMM Agent using the StageNow Client
+    text: Details the Staging Service API, which can be used to produce StageNow barcodes from an EMM console to enroll an AEDO EMM agent using the StageNow device client.
     url: stagingapi
   - type: section
     level: 4
     title: How to Enroll an AEDO
-    text: Explains the workings of Android Enterprise Device Owner mode, how the features works in relation to sharing and the steps necessary for an EMM to enable use of this feature.
+    text: A step-by-step guide for using Zebra StageNow to enroll an agent as a Device Owner and configure the device to return to manageability following an Enterprise Reset.
     url: enrollaedo
   - type: section
     level: 4
-    title: DA-to-DO Migration
-    text: Describes the method for moving a device from DA (or NON-DO) to DO mode without loss of data or device reset. 
-    url: migratedo
-  - type: section
-    level: 4
-    title: DA+MX-to-AEDO Migration
+    title: Agent Migration
     text: Describes how to transition an EMM Agent from MX to AEDO to enable management of Zebra Android N devices, on which AEDO is the recommended management strategy.
     url: migrateaedo
   - type: section
@@ -82,4 +72,22 @@ Changed to "MDM TK Legacy guide"
     title: Code Samples
     text: Provides validated code that EMM solution providers can use to implement managed configurations within their agent.
     url: samples
+
+8/7/18 - removed because we're not doing them (or they were comibined with others):
+  - type: section
+    level: 4
+    title: EMM Toolkit Roadmap
+    text: Explains the migration period and basic processes for moving devices from legacy Android versions and Zebra management processes to Android N and beyond, including a time line for when such migrations become mandatory.
+    url: roadmap
+
+  - type: section
+    level: 4
+    title: DA-to-DO Migration
+    text: Describes the method for moving a device from DA (or NON-DO) to DO mode without loss of data or device reset. 
+    url: migratedo
+
+
+
  -->
+
+

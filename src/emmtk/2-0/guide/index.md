@@ -10,13 +10,33 @@ content-items:
     url: about
   - type: section
     level: 4
+    title: Agent Migration
+    text: Describes how to transition an EMM Agent from MX to AEDO to enable management of Zebra Android N devices, on which AEDO is the recommended management strategy.
+    url: migrateaedo
+  - type: section
+    level: 4
+    title: How to Enroll an AEDO
+    text: Step-by-step guide for using Zebra StageNow to enroll an agent as a Device Owner and persist the settings, ensuring the device returns to manageability following an Enterprise Reset.
+    url: enrollaedo
+  - type: section
+    level: 4
+    title: MX and AEDO Function Maps
+    text: Provides a list of MX functions and their equivalent functions through AEDO or the Zebra OemConfig tool for deploying Android Managed Configurations.
+    url: functionmap
+  - type: section
+    level: 4
+    title: OemConfig Schema
+    text: Content, usage and management of the OemConfig schema, including approaches for encoding managed configurations for delivery and recommendations for implementing a data-driven UI.
+    url: schema
+  - type: section
+    level: 4
     title: Android Setup Wizard Bypass
     text: Staging profiles made for devices with MX 7.1 or higher can include a command to automatically bypass the Android Setup Wizard (also known as the "Welcome Screen") following an Enterprise Reset. The wizard can be skipped (on some devices) by scanning a barcode.
     url: bypass
   - type: section
     level: 4
     title: Persistence Best Practices
-    text: Describes Zebra-recommended processes for preserving EMM agent and related files and restoring a device to manageability after an Enterprise Reset, which erases non-persistent software on the device. 
+    text: Zebra-recommended processes for preserving EMM agent and related files and restoring a device to manageability after an Enterprise Reset, which erases non-persistent software on the device. 
     url: persistence
   - type: section
     level: 4
@@ -25,34 +45,9 @@ content-items:
     url: stagingapi
   - type: section
     level: 4
-    title: How to Enroll an AEDO
-    text: A step-by-step guide for using Zebra StageNow to enroll an agent as a Device Owner and configure the device to return to manageability following an Enterprise Reset.
-    url: enrollaedo
-  - type: section
-    level: 4
-    title: Agent Migration
-    text: Describes how to transition an EMM Agent from MX to AEDO to enable management of Zebra Android N devices, on which AEDO is the recommended management strategy.
-    url: migrateaedo
-  - type: section
-    level: 4
-    title: MX and AEDO Function Maps
-    text: Provides a list of MX functions and their ADEO, OemConfig and/or OemInfo equivalent functions.
-    url: functionmap
-  - type: section
-    level: 4
-    title: OemConfig/OemInfo Schema
-    text: Covers the content, usage and management of OemConfig and OenInfo schema, including approaches for encoding managed configurations for delivery an EMM server to an EMM agent and recommendations for implementing a data-driven UI.
-    url: schema
-  - type: section
-    level: 4
     title: MDMTK Legacy Guide
-    text: This is the (obsolete) Mobile Device Management Toolkit 1.0.1 for legacy devices.
+    text: The (obsolete) Mobile Device Management Toolkit 1.0.1 for legacy devices.
     url: mdmtk
-  - type: section
-    level: 4
-    title: OemInfo Developer Guide
-    text: Explains API usage and development requirements for OemInfo, a standards-based mechanism by which applications can acquire published information about a Zebra device.
-    url: oeminfodevguide
 product: EMM Toolkit
 productversion: '2.0'
 ---
@@ -86,6 +81,11 @@ Changed to "MDM TK Legacy guide"
     text: Describes the method for moving a device from DA (or NON-DO) to DO mode without loss of data or device reset. 
     url: migratedo
 
+  - type: section
+    level: 4
+    title: OemInfo Developer Guide
+    text: Explains API usage and development requirements for OemInfo, a standards-based mechanism by which applications can acquire published information about a Zebra device.
+    url: oeminfodevguide
 
 
  -->

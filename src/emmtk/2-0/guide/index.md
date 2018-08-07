@@ -52,8 +52,8 @@ productversion: '2.0'
 
   - type: section
     level: 4
-    title: Staging API Service
-    text: Explains how to use the Staging API service from an EMM console to produce StageNow barcodes and to enroll an AEDO EMM agent using the StageNow client app.
+    title: Staging Service API
+    text: Explains how to use the Staging Service API from an EMM console to produce StageNow barcodes and to enroll an AEDO EMM agent using the StageNow client app.
     url: api
     
 Changed to "MDM TK Legacy guide"

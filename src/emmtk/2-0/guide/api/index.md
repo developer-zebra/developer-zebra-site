@@ -1,5 +1,5 @@
 ---
-title: Staging API Service
+title: Staging Service API
 layout: guide.html
 product: EMM Toolkit
 productversion: '2.0'
@@ -13,11 +13,11 @@ productversion: '2.0'
 
 ## Overview
 
-This document provides interface specifications for the cloud-based Staging API Service, part of the Zebra Enterprise Mobility Management Toolkit (EMMTK). These APIs are intended for use by Zebra's EMM partners to generate StageNow barcodes for enrolling devices in their EMM solutions. 
+This document provides interface specifications for the cloud-based Staging Service API, part of the Zebra Enterprise Mobility Management Toolkit (EMMTK). These APIs are intended for use by Zebra's EMM partners to generate StageNow barcodes for enrolling devices in their EMM solutions. 
 
 ### Prerequisites
 
-**The Staging API Service requires the following**: 
+**The Staging Service API requires the following**: 
 
 * **A computer running Windows 7** with StageNow 2.10.1 or higher
 *  - or - 

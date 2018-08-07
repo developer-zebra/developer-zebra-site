@@ -68,4 +68,4 @@ To update a device for use with the bypass barcode, visit to the relevant page b
 ## See Also
 
 * [About EMM Toolkit](../about)
-* [Staging Service API](../api)
+* [Staging Service APIs](../api)

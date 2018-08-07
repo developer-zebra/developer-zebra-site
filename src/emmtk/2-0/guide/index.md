@@ -35,8 +35,8 @@ content-items:
     url: persistence
   - type: section
     level: 4
-    title: Staging Service API
-    text: Details the Staging Service API, which can be used to produce StageNow barcodes from an EMM console to enroll an AEDO EMM agent using the StageNow device client.
+    title: Staging Service APIs
+    text: Details the Staging Service APIs, which can be used to produce StageNow barcodes from an EMM console to enroll an AEDO EMM agent using the StageNow device client.
     url: stagingapi
   - type: section
     level: 4
@@ -48,7 +48,7 @@ productversion: '2.0'
 ---
 
 <!--            
-4/12/18- removed temporarily at req. of Dave Degreassi 
+4/12/18- removed temporarily at req. of Dave Degreassi  (restored 8/7/18)
 
   - type: section
     level: 4

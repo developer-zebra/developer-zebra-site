@@ -25,7 +25,7 @@ The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow de
  * Download, install, configure and launch an EMM agent on the device​
  * Perform persistence and/or other desired staging tasks
 
-The primary vehicle for integrating an EMM solution with Zebra's staging tools is the [Staging Service API](../api). This guide contains all information necessary for adding Zebra-device staging capabilities to an EMM management console. 
+The primary vehicle for integrating an EMM solution with Zebra's staging tools is the [Staging Service APIs](../api). This guide contains all information necessary for adding Zebra-device staging capabilities to an EMM management console. 
 
 <!-- 
 
@@ -68,6 +68,6 @@ To prepare for the new approach, **EMM solution providers must migrate their And
 * **[EMMTK Glossary](../glossary)** | Defines terms used in the EMM Toolkit
 * **[AEDO Migration Guide](../migrateaedo)** | EMM agent migration options 
 * **[Persistence Best Practices](../persistence)** | Zebra-recommended processes for EMMs
-* **[Staging Service API](../api)** | Interfacing with StageNow from an EMM console
+* **[Staging Service APIs](../api)** | Interfacing with StageNow from an EMM console
 
 

@@ -15,19 +15,17 @@ parm:
       mx: "6.3"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to CellularMgr settings; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to CellularMgr settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Enable
       mx: "6.3"
-      description: Enables cellular data to be used on the device and its state (active/inactive) to be controlled programmatically or by the device user.
+      description: Allows the device user to change the state (active/inactive) of cellular data on the device.
     - code: 2
       devicetype: A
       name: Disable
       mx: "6.3"
-      description: Disables cellular data on the device, preventing the establishment of a data connection using the cellular network.
+      description: Prevents the device user from changing the state (active/inactive) of cellular data on the device.
 ---
 
-> **This feature to be implemented in the future**.  
-
-Controls whether the cellular connection on the device can be used to transmit data. When Enabled, the state (active/inactive) of the cellular data connection can be controlled programmatically or by the user. When Disabled, the device is prevented from establishing a data connection using the cellular network and the state cannot be changed. **This parameter controls only cellular _data_; voice and SMS messaging apps are uneffected by this setting**. 
+Controls whether the device user is permitted to change the state (active/inactive) of cellular data on the device. When Enabled, cellular data can be made active or inactive by the device user. When Disabled, the device user can view the state but cannot change it. 

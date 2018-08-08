@@ -5,6 +5,18 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
+# test h1
+## test h2
+### test h3
+#### test h4
+##### test h5
+###### test h6
+
+<h6>test actual h6</h6>
+
+
+
+
 ## `DRAFT`
 
 **_Information subject to change without notice_**. 
@@ -13,13 +25,15 @@ productversion: '2.0'
 
 ## Overview
 
-The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow developers of EMM (sometimes known as "mobile device management" or MDM) solutions to adapt their products to manage Zebra devices. This has historically involved interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. With the emergence of Android Enterprise, **_some_** capabilities once accessible only through Zebra's proprietary management layer can (or will in the near future) be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. 
+The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow developers of EMM (sometimes known as "mobile device management" or MDM) solutions to adapt their products to manage Zebra devices. This has historically involved interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. 
 
-**Zebra staging mechanisms follow these basic steps**:​
+With the emergence of Android Enterprise, some capabilities once accessible only through Zebra's proprietary management layer can be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. The remainder can be configured using OemConfig, a Google-recommended desktop tool developed by Zebra that controls device settings through the Android Managed Configurations mechanism. 
+
+**The general Zebra staging process**:​
 
 * **Create staging profiles** through the StageNow desktop client
 * **Generate barcodes** or other media that contains staging instructions​
-* **Read the generated medium on the device** using a staging client
+* **Read the staging instructions on the device** using a staging client
 * **Execute the staging instructions to**:​
  * Configure the device for connection to a staging network​
  * Download, install, configure and launch an EMM agent on the device​

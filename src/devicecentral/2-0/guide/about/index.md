@@ -7,7 +7,7 @@ productversion: '2.0'
 
 ## Overview
 
-Device Central provides a centralized way for an organization to track Bluetooth peripherals and their connection status, to pair and unpair peripherals, and to view detailed peripheral information. If supported by the peripheral, additional capabilities may exist such as paging the peripheral or updating the firmware. Device Central is a utility that is available by default on Zebra mobile computers.
+Device Central is as cloud-based device management tool for tracking Zebra mobile computers and peripherals.  It provides a centralized way for an organization to track Bluetooth peripherals and their connection status, to pair and unpair Bluetooth peripherals, and to view detailed peripheral information. If supported by the peripheral, additional capabilities may exist such as paging the peripheral or updating the firmware. The Device Central client is pre-installed on all supported Zebra devices.
 
 Device Central features:
 
@@ -15,10 +15,10 @@ Device Central features:
 * Display pairing and connection status of paired Bluetooth peripherals
 * Display peripheral details, such as device type, Bluetooth Mac address, firmware version, battery status, serial number, etc.
 * Unpair the paired Bluetooth peripheral 
-* Paging to locate a paired and connected peripheral (if supported by the peripheral)
-* Firmware update utility for supported peripherals
+* Paging to locate a paired and connected peripheral (applies to supported Bluetooth scanners)
+* Firmware update utility for supported peripherals (applies to supported Bluetooth scanners)
 
-_Note: Unpairing a Bluetooth Scanner peripheral is currently not supported.  Alternatively, `disconnectOnExit()` may be called in applications utilizing DataWedge and EMDK to unpair automatically when the Bluetooth scanner disconnects._
+_Note: Unpairing a Bluetooth Scanners peripheral is currently not supported. Zebra Bluetooth scanners act as a master device which controls the pairing and connection with mobile computers. These Bluetooth scanners have the re-connect feature which may be initiated on the scanner itself. Therefore, unpairing the Bluetooth scanner from a mobile computer will not remove the paired information completely. To address this, pressing the re-connect button on the Bluetooth scanner will re-establish the pairing and connection with mobile computers._
 
 ### Supported Devices
 
@@ -93,13 +93,39 @@ Device Central is approved for use with the following Zebra Android devices:
 <br>
 Device Central is approved for use with the following approved Bluetooth peripherals:
 
-* Zebra RS6000 Bluetooth Ring Scanner
-* Zebra RC507/RS507x Ring Scanner
-* Zebra LI3678 Handheld Scanner
-* Zebra DS3678 Handheld Scanner
-* Zebra HS3100 Bluetooth Headset
-* Zebra Bluetooth Printers (for example iMZ320)
-* Verifone Bluetooth Payment Terminals (for example e355)
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Device Category</th>
+    <th>Device Model</th>
+  </tr>
+  <tr>
+    <td rowspan="4">Bluetooth Scanner</td>
+    <td>Zebra RS6000 Bluetooth Ring Scanner</td>
+  </tr>
+  <tr>
+    <td>Zebra RS507/RS507x Ring Scanner</td>
+  </tr>
+  <tr>
+    <td>Zebra LI3678 Handheld Scanner</td>
+  </tr>
+  <tr>
+    <td>Zebra DS3678 Handheld Scanner</td>
+  </tr>
+  <tr>
+    <td>Bluetooth Headset</td>
+    <td>Zebra HS3100 Bluetooth Headset</td>
+  </tr>
+  <tr>
+    <td>Bluetooth Printer</td>
+    <td>Zebra Bluetooth Printers (for example iMZ320)</td>
+  </tr>
+  <tr>
+    <td>Bluetooth Payment Terminal</td>
+    <td>Verifone Bluetooth Payment Terminals (for example e355)</td>
+  </tr>
+</table>
+
+<br>
 
 -----
 

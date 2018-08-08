@@ -20,7 +20,7 @@ This document provides interface specifications for the cloud-based Staging Serv
 * **A computer running Windows 7** with StageNow 2.10.1 or higher
 * **An EMM server with internet connectivity** 
 
-> **Note: [StageNow 3.0](/stagenow) or higher is required** for computers running Windows 10. 
+> **Note: For computers running Windows 10**, [StageNow 3.0](/stagenow) or higher is required. 
 
 <!-- 
 * **One or more supported Zebra devices**
@@ -53,7 +53,7 @@ Note: For on-premise deployments, change "`emmtk.zebra.com`" in the URL above to
 
 **METHOD**: POST
 
-The API should be called with `HTTP` request method `POST`. The parameters to be sent as part of body is specified in `Data Params` section.
+Called with `HTTP` request method `POST`. The parameters to be sent as part of the body are specified in `Data Params` section.
 
 **URL PARAMS**: NONE
 
@@ -64,22 +64,25 @@ The API should be called with `HTTP` request method `POST`. The parameters to be
 The body of the `HTTP` request should contain the following data in JSON format:
 
 * **ConfigData**: 
-	* **settingxml**:Base64encoded XML string in accordance with the format specified by the MX framework.
-	* **mxVersion**: version of MX for which the XML settings file is targeted.
+	* **settingxml**: Base64encoded XML string in accordance with the format specified by the MX framework.
+	* **mxVersion**: Version of MX for which the XML settings file is targeted.
 * **BarcodeInfo**
-	* **type**: List of string indicating type of barcode to be generated. Possible values:
+	* **type**: String indicating type of barcode to be generated. <br>
+	Possible values:
 		* `linear`
-		* `pdf417`: If this parameter is not passed, `pdf417` is used
-	* **profileName**: String printed as meta info in the generated barcode page for reference. If this parameter is not passed, a random name is used. For example: `StageNow_profile31`
-	* **brandingId**: Optional integer parameter. Reserved for future use to identify branding information to be included in the generated barcode.
-	* **comments**: optional string with instructions included in the document and displayed to the staging user. Comments section in the barcode page if this parameter is not provided.
+		* `pdf417` (default if no value is passed) 
+	* **profileName**: String printed as meta info in the generated barcode page for reference. A random name (i.e. "StageNow_profile31") is used if no value is passed.
+	* **brandingId**: Optional integer parameter to identify branding information included in the generated barcode. **Reserved for future use**.
+	* **comments**: Optional string with instructions included in the document for display to the staging user. If no value is passed, takes comments section of the barcode page.
 
-**Success Response**: Base64 encoded PDF file in binary format with http status code 200.
+**Success Response**: Base64-encoded PDF file in binary format with `HTTP` status code 200.
 
-**Error Response**: Standard Http error codes will be used to indicate the error.Specific errors will be part of error message in JSON format. Example:
+**Error Response**: Standard `HTTP` error codes are used to indicate the error. Specific errors are part of error message in JSON format. 
 
-* Error code `400`: In case xml input is not found or if it is malformed.
-* Error code `503`: If the service cannot be fulfilled due to overloading
+**Examples**:
+
+* Error code `400`: XML input malformed or not found.
+* Error code `503`: Service cannot be fulfilled due to overloading.
 
 **Sample request body**
 
@@ -98,10 +101,10 @@ The body of the `HTTP` request should contain the following data in JSON format:
 			}
 	}
 
-> Note: Notice how the quotes in the `settingxml` are escaped
+> Note: Notice the quote marks in `settingXML` section are escaped
 
 ### Error reporting
-This interface can be used in case of a failure is seen after scanning the EMM's enrollment barcode using StageNow client on the device.  The interface provides a UI to upload the error file and get an error message. It also may provide some assistance in determining the changes required (if possible).
+This interface is used in case of failure after scanning the EMM's enrollment barcode using StageNow client on the device. The interface provides a UI to upload the error file and receive an error message, and might provide insight for determining required changes (if possible).
 
 **URL**: `https://emmtk.zebra.com/v1/errorreport`
 
@@ -109,14 +112,18 @@ This interface can be used in case of a failure is seen after scanning the EMM's
 
 **METHOD**: POST
 
-The API should be called with HTTP request method `POST`. The parameters to be sent as part of body is specified in `URL Params` section.
+The API should be called with `HTTP` request method `POST`. The parameters to be sent as part of body is specified in `URL Params` section.
 
 **URL PARAMS**:
 
-* **errorfile**: URL encoded error XML. If this parameter is not provided, the invoked EMMTKv3 UI will ask user to upload the error XML before showing the error message and suggestions. ex:
-	* `%3Cwap-provisioningdoc%3E%0D%0A%3Ccharacteristic-error+type%3D%22AppMgr%22+version%3D%225.1%22+desc%3D%22missing%22%3E%0D%0A%3Cparm-error+name%3D%22Action%22+value%3D%22Install%22+desc%3D%22apk+doesnot+exist+in+the+path%22%2F%3E%0D%0A%3Cparm+name%3D%22APK%22+value%3D%22%2Fmnt%2Fsdcard%2FAKNotepad%22%2F%3E%0D%0A%3C%2Fcharacteristic-error%3E%0D%0A%3C%2Fwap-provisioningdoc%3E%0D%0A`
-* **isLogFile**: `true|false` This is flag to indicate if the “errorfile” parameter contains error XML or it is error log file in which the error XML is embedded.
-* **settingxml**: URL encoded XML settings file for which the error was seen. **This optional parameter** helps the toolkit determine the cause of the error most accurately.
+* **errorfile**: URL encoded in error XML. If this parameter is not provided, the invoked EMMTKv3 UI asks user to upload the error XML before showing the error message and suggestions. 
+
+**Example**:
+
+	`%3Cwap-provisioningdoc%3E%0D%0A%3Ccharacteristic-error+type%3D%22AppMgr%22+version%3D%225.1%22+desc%3D%22missing%22%3E%0D%0A%3Cparm-error+name%3D%22Action%22+value%3D%22Install%22+desc%3D%22apk+doesnot+exist+in+the+path%22%2F%3E%0D%0A%3Cparm+name%3D%22APK%22+value%3D%22%2Fmnt%2Fsdcard%2FAKNotepad%22%2F%3E%0D%0A%3C%2Fcharacteristic-error%3E%0D%0A%3C%2Fwap-provisioningdoc%3E%0D%0A`
+
+* **isLogFile**: Flag (true|false) indicating whether the “errorfile” parameter contains error XML or is error log file in which the error XML is embedded.
+* **settingxml**: Optional parameter with URL encoded XML settings file for which the error was seen. Helps the toolkit determine the cause of the error most accurately.
 
 **Success Response**: An error message along with a possible details is rendered in the web page.
 
@@ -126,7 +133,7 @@ The API should be called with HTTP request method `POST`. The parameters to be s
 <div id="uiinterface"></div>
 ## UI Interface
 
-The UI  interface which can be invoked from the EMM’s Web user interface. When the UI is invoked, Zebra EMM toolkit will take control over the UI and take the user through the steps to capture the information required before generating the barcode.
+The UI interface which can be invoked from the EMM’s Web user interface. When the UI is invoked, Zebra EMM toolkit will take control over the UI and take the user through the steps to capture the information required before generating the barcode.
 
  -->
 
@@ -139,24 +146,22 @@ To use this interface, the EMM should work with the Zebra technical team to come
 
 **URL**: `https://emmtk.zebra.com/v1/enroll/{wizard_id}?mx-version=6.0`
 
-> Note: Replace the `wizard_id` with the ID provided by Zebra. For on-premise deployments, change `emmtk.zebra.com` to match the host domain name in use. 
+> Note: Replace the "`wizard_id`" above with the ID provided by Zebra. For on-premise deployments, change "`emmtk.zebra.com`" to match the host domain name in use. 
 
 **METHOD**: GET
 
-The API should be called with HTTP request method `GET`. 
+The API should be called with `HTTP` request method `GET`. 
 
 **URL PARAMS**: 
 
-* **wizard_id**: `Required` This the unique ID of the wizard shared with EMMs when WDD is developed by Zebra.
-* **mxVersion**: version of Mx for which the XML settings file is targeted.
+* **wizard_id**: **MANDATORY** parameter containing the unique ID of the wizard shared with EMMs when WDD is developed by Zebra.
+* **mxVersion**: Version of MX for which the XML settings file is targeted.
 
-**Success Response**: A Barcode page will be rendered in the page from which this UI is invoked.
+**Success Response**: Barcode page will be rendered in the page from which this UI is invoked.
 
-**Error Response**: Web page containing the error message and possible cause of the error will be shown. 
-
+**Error Response**: Web page containing the error message and possible cause of the error. 
 
 -----
-
 
 ## See Also
 

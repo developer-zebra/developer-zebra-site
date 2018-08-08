@@ -26,7 +26,7 @@ After installing the APK you will notice the API features categorized by DataWed
 Tap the **Send** button to take action on any command. After sending a command, a toast messages appears indicating the status of the command sent.  Once a barcode is scanned, the data is populated at the top along with the scan source and decoder information.  
 
 ## Downloads
-
+[DataWedge API Exerciser App](https://github.com/Zebra/android_examples/tree/DataWedge-API-Exerciser)
 -----
 
 ## Related Guides

@@ -27,7 +27,7 @@ Tap the **Send** button to take action on any command. After sending a command, 
 
 ## Downloads
 
-[DataWedge API Exerciser App](https://github.com/Zebra/android_examples/tree/DataWedge-API-Exerciser)
+[DataWedge API Exerciser App](https://github.com/Zebra/samples-datawedge)
 
 -----
 

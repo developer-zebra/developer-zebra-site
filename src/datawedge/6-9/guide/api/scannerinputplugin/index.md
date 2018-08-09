@@ -28,6 +28,8 @@ Used to enable/disable the scanner Plug-in being used by the currently active Pr
 
 **&lt;parameter**&gt;: The parameter as a string, using either of the following:
 
+* `SUSPEND_PLUGIN` - suspends the scanner when in the enable/waiting/scanning state
+* `RESUME_PLUGIN` - resumes the scanner when in the suspended state from "SUSPEND_PLUGIN"
 * `ENABLE_PLUGIN` - enables the plug-in
 * `DISABLE_PLUGIN` - disables the plug-in
 
@@ -35,13 +37,18 @@ Used to enable/disable the scanner Plug-in being used by the currently active Pr
 
 DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
-* **DATAWEDGE_DISABLED -** FAILURE
-* **PARAMETER_INVALID -** FAILURE
-* **PROFILE_DISABLED -** FAILURE
-* **SCANNER_ALREADY_DISABLED -** FAILURE
-* **SCANNER_ALREADY_ENABLED -** FAILURE
-* **SCANNER_DISABLE_FAILED -** FAILURE
-* **SCANNER_ENABLE_FAILED -** FAILURE
+* **SCANNER_ALREADY_SUSPENDED -** An intent was received to suspend the scanner which is already suspended.
+* **PLUGIN_DISABLED -** The scanner plugin is disabled so the suspend/resume action cannot be executed.
+* **SCANNER_ALREADY_RESUMED -** A resume intent is received but the scanner is not in a suspended state.
+* **SCANNER_RESUME_FAILED -** The scanner resume is unsuccessful.
+* **SCANNER_ALREADY_DISABLED -** The scanner is in a disabled state, preventing any further action.
+* **DATAWEDGE_DISABLED -** The action to disable DataWedge is unsuccessful.
+* **PARAMETER_INVALID -** An invalid parameter is received.
+* **PROFILE_DISABLED -** The action to to disable profile is unsuccessful.
+* **SCANNER_ALREADY_DISABLED -** An intent was received to disable the scanner which is already disabled.
+* **SCANNER_ALREADY_ENABLED -** An intent was received to enable the scanner which is already enabled.
+* **SCANNER_DISABLE_FAILED -** The scanner disable is unsuccessful.
+* **SCANNER_ENABLE_FAILED -** The action to enable the scanner is unsuccessful.
 
 Also see the [Result Codes guide](../resultinfo) for more information.  
 
@@ -56,6 +63,29 @@ Error messages are logged for invalid actions and parameters.
 
 
 ## Example Code
+
+Send suspend and resume intents:
+
+	private void suspendScanner() {
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.SCANNER_INPUT_PLUGIN", "SUSPEND_PLUGIN");
+		i.putExtra("SEND_RESULT", "true");
+		i.putExtra("COMMAND_IDENTIFIER", "MY_SUSPEND_SCANNER");  //Unique identifier
+		this.sendBroadcast(i);
+	}
+
+	private void resumeScanner() {
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.SCANNER_INPUT_PLUGIN", "RESUME_PLUGIN");
+		i.putExtra("SEND_RESULT", "true");
+		i.putExtra("COMMAND_IDENTIFIER", "MY_RESUME_SCANNER");  //Unique identifier
+		this.sendBroadcast(i);
+	}
+
+
+Disable Scanner Input Plugin:
 
 	// define action and data strings
 		String scannerInputPlugin = "com.symbol.datawedge.api.ACTION";
@@ -80,6 +110,54 @@ Error messages are logged for invalid actions and parameters.
 Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. 
 
 **Note: Modify this generic code to match the API being used**.  
+
+Receive the suspend/resume command result:
+
+	//call in onResume() method
+	private void registerReceivers() {
+		IntentFilter filter = new IntentFilter();
+		filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+		filter.addCategory(Intent.CATEGORY_DEFAULT);
+		registerReceiver(receiver, filter);
+	}
+
+	//call in onPause() method
+	private void unRegisterReceivers() {
+		unregisterReceiver(receiver);
+	}
+
+	BroadcastReceiver receiver = new BroadcastReceiver() {
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			//Get result of the suspend/resume API call
+			String action = intent.getAction();
+			if (action != null && action.equals("com.symbol.datawedge.api.RESULT_ACTION")) {
+				Bundle extras = intent.getExtras();
+				if (extras != null) {
+					//user specified ID
+					String cmdID = extras.getString("COMMAND_IDENTIFIER");
+					if ("MY_RESUME_SCANNER".equals(cmdID) || "MY_SUSPEND_SCANNER".equals(cmdID)) {
+						//success or failure
+						String result = extras.getString("RESULT");
+						//Original command
+						String command = extras.getString("COMMAND");
+						if ("FAILURE".equals(result)) {
+							Bundle info = extras.getBundle("RESULT_INFO");
+							String errorCode = "";
+							if (info != null) {
+								errorCode = info.getString("RESULT_CODE");
+							}
+							Log.d(TAG, " Command:" + command + ":" + cmdID + ":" + result + ",Code:" + errorCode);
+						} else {
+							Log.d(TAG, " Command:" + command + ":" + cmdID + ":" + result);
+						}
+					}
+				}
+			}
+		}
+	};
+
+Receive the Enable/Disable Plugin result:
 
 	// send the intent
 		Intent i = new Intent();

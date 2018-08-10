@@ -85,25 +85,24 @@ Send suspend and resume intents:
 	}
 
 
-Disable Scanner Input Plugin:
+Enable/Disable Scanner Input Plugin:
 
-	// define action and data strings
-		String scannerInputPlugin = "com.symbol.datawedge.api.ACTION";
-		String extraData = "com.symbol.datawedge.api.SCANNER_INPUT_PLUGIN";
+	private void enableScanner() {
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.SCANNER_INPUT_PLUGIN", "ENABLE_PLUGIN");
+		i.putExtra("SEND_RESULT", "true");
+		i.putExtra("COMMAND_IDENTIFIER", "MY_ENABLE_SCANNER");  //Unique identifier
+		this.sendBroadcast(i);
+	}
 
-		public void onResume() {
-		        
-		    // create the intent
-		        Intent i = new Intent();
-		        
-		    // set the action to perform
-		        i.setAction(scannerInputPlugin);
-		        
-		    // add additional info
-		        i.putExtra(extraData, "DISABLE_PLUGIN");
-		        
-		    // send the intent to DataWedge
-		        this.sendBroadcast(i);
+	private void disableScanner() {
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.SCANNER_INPUT_PLUGIN", "DISABLE_PLUGIN");
+		i.putExtra("SEND_RESULT", "true");
+		i.putExtra("COMMAND_IDENTIFIER", "MY_DISABLE_SCANNER");  //Unique identifier
+		this.sendBroadcast(i);
 	}
 
 ### Generate and receive result codes
@@ -144,11 +143,13 @@ Receive the suspend/resume command result:
 						if ("FAILURE".equals(result)) {
 							Bundle info = extras.getBundle("RESULT_INFO");
 							String errorCode = "";
+							
 							if (info != null) {
 								errorCode = info.getString("RESULT_CODE");
 							}
 							Log.d(TAG, " Command:" + command + ":" + cmdID + ":" + result + ",Code:" + errorCode);
-						} else {
+						} 
+						else {
 							Log.d(TAG, " Command:" + command + ":" + cmdID + ":" + result);
 						}
 					}
@@ -160,40 +161,41 @@ Receive the suspend/resume command result:
 Receive the Enable/Disable Plugin result:
 
 	// send the intent
-		Intent i = new Intent();
-		i.setAction(ACTION);
-		i.putExtra("com.symbol.datawedge.api.CREATE_PROFILE", "Profile1");
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	// Use "ENABLE_PLUGIN" or "DISABLE_PLUGIN"
+	i.putExtra("com.symbol.datawedge.api.SCANNER_INPUT_PLUGIN", "ENABLE_PLUGIN");
 
 	// request and identify the result code
-		i.putExtra("SEND_RESULT","true");
-		i.putExtra("COMMAND_IDENTIFIER","123456789");
-		this.sendBroadcast(i);
+	i.putExtra("SEND_RESULT","true");
+	i.putExtra("COMMAND_IDENTIFIER","123456789");
+	this.sendBroadcast(i);
 
 	// register to receive the result
-		public void onReceive(Context context, Intent intent){
+	public void onReceive(Context context, Intent intent){
 
-		    String command = intent.getStringExtra("COMMAND");
-		    String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
-		    String result = intent.getStringExtra("RESULT");
+		String command = intent.getStringExtra("COMMAND");
+		String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+		String result = intent.getStringExtra("RESULT");
 
-		    Bundle bundle = new Bundle();
-		    String resultInfo = "";
-		    if(intent.hasExtra("RESULT_INFO")){
-		        bundle = intent.getBundleExtra("RESULT_INFO");
-		        Set<String> keys = bundle.keySet();
-		        for (String key: keys) {
-		            resultInfo += key + ": "+bundle.getString(key) + "\n";
-		        }
+		Bundle bundle = new Bundle();
+		String resultInfo = "";
+		if(intent.hasExtra("RESULT_INFO")){
+		    bundle = intent.getBundleExtra("RESULT_INFO");
+		    Set<String> keys = bundle.keySet();
+		    for (String key: keys) {
+		        resultInfo += key + ": "+bundle.getString(key) + "\n";
 		    }
+		}
 
-		    String text = "Command: "+command+"\n" +
+		String text = "Command: "+command+"\n" +
 		                  "Result: " +result+"\n" +
 		                  "Result Info: " +resultInfo + "\n" +
 		                  "CID:"+commandidentifier;
 		    
-		    Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+		Toast.makeText(context, text, Toast.LENGTH_LONG).show();
 
-		};
+	};
 
 -----
 

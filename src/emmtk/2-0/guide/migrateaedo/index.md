@@ -74,7 +74,7 @@ To successfully manage current and future Zebra Android devices running Android 
 ### Unsigned DO/DA Agent + ZMC
 
 <img alt="image" style="height:350px" src="EMM_unsigned_DO_EMM_agent+ZMC.png"/>
-_This approach is the most universal, "future-proof" and standards-compliant_. 
+_This approach is the most universal, "future-proof" and standards-compliant. Click image to enlarge_. 
 
 **This is Zebra's most preferred approach because it**: 
 

@@ -8,10 +8,7 @@ productversion: '2.0'
 
 This section describes how to use Device Central.  
 
-Device Central works only on [specific devices](../about/#supporteddevices). 
-
-> Device Central requires Bluetooth to be enabled on the device. 
-<br>
+Device Central works only on [specific devices](../about/#supporteddevices) and requires Bluetooth to be enabled on the device. 
 
 ## Pair to a Peripheral
 
@@ -156,16 +153,18 @@ The Firmware Update screen appears.
 8. Verify if the update is successful by validating the firmware version in the Device Details screen after the peripheral reconnects.
 
 ##Configuration
-Some features may be controlled through an MDM (mobile device management) solution, such as AirWatch or SOTI, or a custom application using Zebra's [DeviceCentralMgr CSP](/mx/devicecentralmgr). These features include:
+Some features may be controlled through [StageNow](/stagenow/latest/about), an Enterprise Mobility Management (EMM) system (sometimes referred to as Mobile Device Management, or MDM), or a custom application using Zebra's [DeviceCentralMgr CSP](/mx/devicecentralmgr). These features include:
 
 * **Enable/Disable Single Pairing of the Same Device Class**: If enabled, this setting only allows one device to be paired from each device category, such as scanner, headset, printer, or payment. If a device is already previously paired and another device of that same category type is being paired, the previously paired device will be automatically unpaired to allow the new device to be paired.
-* **Enable/Disable Firmware Update Button**: If enabled, this permits the ability to hide the Firmware Update button to prevent firmware updates from taking place.
-* **Enable/Disable Silent Pairing**: If enabled, this allows the confirmation prompt to be bypassed during the pairing process.  
+* **Enable/Disable Firmware Update Button**: If enabled, this permits the ability to hide the Firmware Update button to prevent firmware updates from taking place.  
 * **Enable/Disable Bluetooth On/Off Option**: If enabled, this prevents the user from accessing the option to turn the Bluetooth radio on or off. This option is shown below from the **Scan and Pair** screen by tapping on the top right hamburger menu:
 <br>
 	![img](BT_setting.jpg)
 <br>
 
+Note:
+**Silent Pairing** may be enabled/disabled via [Bluetooth Manager CSP](/mx/bluetoothmgr), allowing the confirmation prompt to be bypassed during the pairing process.
+<br>
 -----
 
 ## See Also

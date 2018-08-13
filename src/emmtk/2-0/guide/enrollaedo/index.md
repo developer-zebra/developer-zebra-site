@@ -228,7 +228,7 @@ This section involves importing the StageNow settings profile `EMM_Device_Owner_
 ## See Also
 
 * [About EMM Toolkit](../about)
-* [Other EMMTK Guides](../guide)
+* [Other EMMTK Guides](../../guide)
 
 -----
 

@@ -165,4 +165,6 @@ The API should be called with `HTTP` request method `GET`.
 
 ## See Also
 
-* [Other Guides](../)
+* [About EMM Toolkit](../about)
+* [Other EMMTK Guides](../guide)
+

@@ -245,5 +245,6 @@ AirWatch does not support persistence on devices in Android enterprise work-mana
 
 ## See Also
 
-* [About ActiveEdge](../about)
-* [Administrative Guide](../setup)
+* [About EMM Toolkit](../about)
+* [Other EMMTK Guides](../../guide)
+

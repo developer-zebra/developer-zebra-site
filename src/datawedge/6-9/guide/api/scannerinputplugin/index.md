@@ -11,7 +11,7 @@ Used to enable/disable the scanner Plug-in being used by the currently active Pr
 
 > **Functional only when Barcode Input is enabled in the active Profile**. 
 
-**<u>Important</u>**: To avoid the unnecessary use of enable/disable scanner API calls, Zebra recommends that apps register to be notified of changes in scanner status (using the [SCANNER_STATUS parameter](../registerfornotification/#parameters) of the REGISTER_FOR_NOTIFICATION API). This enables apps to receive scanner status changes immediately rather than having to query and wait for the result. Status-change notifications include the active Profile name, which permits an app to use the enable/disable scanner API calls only when status changes effect a relevant Profile.
+**<u>Important</u>**: To avoid the unnecessary use of enable/disable scanner API calls, Zebra recommends that apps register to be notified of changes in scanner status (using [GET_SCANNER_STATUS API](../getscannerstatus) or the [SCANNER_STATUS parameter](../registerfornotification/#parameters) of REGISTER_FOR_NOTIFICATION API). This enables apps to receive scanner status change notifications immediately rather than having to query and wait for the result, so the app is aware of the current status prior to making any status change. Status-change notifications include the active Profile name, which permits an app to use the enable/disable scanner API calls only when status changes effect a relevant Profile.
 
 ### Function Prototype
 
@@ -203,9 +203,9 @@ Receive the Enable/Disable Plugin result:
 This intent enables/disables the scanner plug-in for the currently enabled Profile. For example, let's say that activity A launches and uses the Data Capture API intent to switch to ProfileA in which the scanner plug-in is enabled, then at some point it uses the Data Capture API to disable the scanner plug-in. Activity B is launched. In DataWedge, ProfileB is associated with activity B. DataWedge switches to ProfileB. When activity A comes back to the foreground, in the `onResume` method, activity A must use the Data Capture API intent to switch back to ProfileA, then use the Data Capture API intent again to disable the scanner plug-in, to return back to the state it was in.
 
 ### Notes
-The scenario above assumes that ProfileA is not associated with any applications/activities, therefore when focus switches back to activity A, DataWedge will not automatically switch to ProfileA, and therefore activity A must switch back to ProfileA in its `onResume` method.
+* The scenario above assumes that ProfileA is not associated with any applications/activities, therefore when focus switches back to activity A, DataWedge will not automatically switch to ProfileA, and therefore activity A must switch back to ProfileA in its `onResume` method. Because DataWedge will automatically switch Profiles when an activity is paused, it is recommended that this API function be called from the `onResume` method of the activity.
 
-Because DataWedge will automatically switch Profile when an activity is paused, it is recommended that this API function be called from the `onResume` method of the activity.
+* Zebra recommends using SUSPEND_PLUGIN and RESUME_PLUGIN in apps that require faster response to disable and enable barcode scanning across activities within the same app.
 
 **This API changes only the runtime status of the scanner; it does not make persistent changes to the Profile**. 
 

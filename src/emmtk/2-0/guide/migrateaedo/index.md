@@ -16,21 +16,20 @@ productversion: '2.0'
 This guide is intended for EMM vendors and other Zebra partners that offer solutions designed to administer and manage Zebra Android devices in an enterprise. It describes the time line for changes to the mechanisms by which Zebra devices are managed, and provides basic descriptions of the steps required to migrate an agent from DA to DO. For more detailed information, please refer to Zebra's [DA-to-DO Agent Migration Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `TEMPORARY SHAREPOINT LINK FOR ZEBRAS ONLY`). 
 
 
-**Timeline for devices running**:
+**Milestones for devices running**:
 
 * **Android KitKat, Lollipop and Marshmallow**:
- * Support continues for all current EMM solutions
- * EMM vendors encouraged to begin migration to Device-Owner model
+ * Support continues for existing EMM solutions targeting these versions.
+ * EMM vendors are encouraged to begin migration to Device Owner model.
 * **Android 7.x Nougat**: 
- * Phase-out of signed agents begins
- * Signing of new agents is discontinued
- * Use of existing signed agents on Nougat devices not guaranteed
- * **Use of existing signed EMM agents can continue** for management of Zebra devices running Android versions that support such agents.
- * **All Tier-1 EMMs must begin migrating the modern approach**
+ * **Phase-out of signed agents begins**; signing of new agents ends.
+ * **All tier-1 EMMs must begin migrating the modern approach**.
+ * **Use of existing signed EMM agents can continue** for management. of Zebra devices running Android versions that support such agents.
+ * Support for existing signed agents on Nougat devices not guaranteed.
 * **Android 8.x Oreo**: 
- * End of support for signed agents
- * All new agents must be unsigned
- * Tier-1 EMMs should migrate signed agents to an alternate [Privilege Escalation Method](../glossary/#privilegeescalation) based on the Android version(s) the vendor intends to support.
+ * End of support for signed agents.
+ * All agents must be unsigned.
+ * Tier-1 EMMs must migrate signed agents to an alternate [Privilege Escalation Method](../glossary/#privilegeescalation) based on the Android version(s) the vendor intends to support.
 
 -----
 

@@ -19,12 +19,12 @@ parm:
       devicetype: A
       name: Enable
       mx: "8.1"
-      description: Enables the use of battery swap mode on the device. 
+      description: Enables a pop-up to prompt the user to swap the battery. 
     - code: 2
       devicetype: A
       name: Disable
       mx: "8.1"
-      description: Disables battery swap mode on the device. 
+      description: Disables a pop-up prompting the user to swap the battery.
 ---
 
 Controls whether the device displays a pop-up when the battery reaches a certain percentage of charge; intended to prompt the user to swap batteries. **Disabled by default**. 

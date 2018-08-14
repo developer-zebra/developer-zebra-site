@@ -15,7 +15,7 @@ parm:
       mx: "6.2"
       devicetype: A,B
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change; the previously selected SIM socket will be used.
+      description: This value (or the absence of this parm from the XML) causes no change; the previously selected SIM socket is used.
     - code: 1
       devicetype: A,B
       name: SIM1
@@ -38,4 +38,4 @@ parm:
       description: Uses SIM4 to connect the device to the carrier network.
 ---
 
-Used to select which SIM card will be used to connect the device to the carrier network. **Supported on specific Zebra devices only**. 
+Used to select which SIM card is used to connect the device to the carrier network. **Supported on specific Zebra devices only**. 

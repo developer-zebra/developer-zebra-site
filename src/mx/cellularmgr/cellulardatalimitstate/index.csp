@@ -16,7 +16,7 @@ parm:
       mx: "6.3"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to CellularMgr settings; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to CellularMgr settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Enable and set default limit
@@ -34,4 +34,4 @@ parm:
       description: Prevents a limit on cellular data usage from being imposed on the device. 
 ---
 
-This is the On/Off switch for limiting cellular data (in MB per month) on the device, and the selector for applying the Android-default or a custom limitation. When Enabled using the Android default limit, the limit will be the greater of 5GB or 1.2 times the value specified in the Cellular Data Warning Value parameter, to a maximum of 1TB. If the custom limit is selected, the limit will be the value specified in the Cellular Data Limit Value parameter. **Once the limit is reached, the cellular data connection is terminated until a new month begins or the restriction is lifted**. If no value is specified with the Cellular Data Limit Value parameter, this parameter is ignored and the previously selected Cellular Data Limit State is retained. 
+This is the On/Off switch for limiting cellular data (in MB per month) on the device, and the selector for applying the Android-default or a custom limitation. When Enabled using the Android default limit, the limit is the greater of 5GB or 1.2 times the value specified in the Cellular Data Warning Value parameter, to a maximum of 1TB. If the custom limit is selected, the limit is the value specified in the Cellular Data Limit Value parameter. **Once the limit is reached, the cellular data connection is terminated until a new month begins or the restriction is lifted**. If no value is specified with the Cellular Data Limit Value parameter, this parameter is ignored and the previously selected Cellular Data Limit State is retained. 

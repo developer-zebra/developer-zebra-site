@@ -1,0 +1,77 @@
+---
+csp: dhcpoptionmgr
+title: Examples
+type: text
+order: 99
+---
+### Request custom option number
+
+	:::XML
+    <wap-provisioningdoc>
+        <characteristic type="DhcpOptionMgr">
+            <characteristic type="RequestCustomOption">
+                <parm name="RequestCustomOptionNumber" value="222"/>
+                <parm name="RequestCustomOptionState" value="1"/>
+            </characteristic>
+            <characteristic type="SendCustomOption">
+                <parm name="SendCustomOptionState" value="1"/>
+                <parm name="SendCustomOptionValue" value="TestCustom"/>
+                <parm name="SendCustomOptionNumber" value="200"/>
+            </characteristic>
+        </characteristic>
+    </wap-provisioningdoc>	
+
+### Configure various DHCP options
+
+	:::XML
+    <wap-provisioningdoc>
+        <characteristic type="DhcpOptionMgr">
+        <characteristic type="HostName">
+            <parm name="HostNameState" value="1"/>
+            <parm name="HostNameValue" value="DHCPTEST2"/>  
+        </characteristic>
+        <characteristic type="UserClass">
+            <parm name="UserClassState" value="1"/>
+            <parm name="UserClassValue" value="abcd efg"/>
+        </characteristic>
+        <characteristic type="BroadcastAddr">
+            <parm name="BroadcastAddrState" value="1"/>
+        </characteristic>
+        <characteristic type="NTPServer">
+            <parm name="NTPServerState" value="1"/>
+        </characteristic>
+        <characteristic type="TFTPServerName">
+            <parm name="TFTPServerNameState" value="1"/>
+        </characteristic>
+        <characteristic type="BootFile">
+            <parm name="BootFileState" value="1"/>
+        </characteristic>
+        <characteristic type="DomainSearch">
+            <parm name="DomainSearchState" value="1"/>
+        </characteristic>
+        <characteristic type="TFTPServerAddr">
+            <parm name="TFTPServerAddrState" value="1"/>
+        </characteristic>
+        <characteristic type="VendorClassId">
+            <parm name="VendorClassIdState" value="1"/>
+            <parm name="VendorClassIdValue" value="testid"/>
+        </characteristic>
+        <characteristic type="VendorEncapsulated">
+            <parm name="VendorEncapsulatedState" value="1"/>
+        </characteristic>
+        <characteristic type="VendorSpecific1">
+            <parm name="VendorSpecific1State" value="1"/>
+        </characteristic>
+        <characteristic type="VendorSpecific2">
+            <parm name="VendorSpecific2State" value="1"/>
+        </characteristic>
+        </characteristic>
+    </wap-provisioningdoc>
+
+### Query DhcpOptionMgr version
+
+    :::xml
+    <wap-provisioningdoc>
+        <characteristic-query type="DhcpOptionMgr"/>
+    </wap-provisioningdoc>
+

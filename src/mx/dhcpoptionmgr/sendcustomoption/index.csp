@@ -19,7 +19,7 @@ parm:
       devicetype: A
       name: Enable
       mx: "8.1"
-      description: Enables the DHCP client to send the Cutsom Option Number.
+      description: Enables the DHCP client to send the Custom Option Number.
     - code: 2
       devicetype: A
       name: Disable
@@ -27,5 +27,5 @@ parm:
       description: Prevents the DHCP client from sending a Custom Option Number.
 ---
 
-Controls whether the DHCP client can send a Custom Option Number. 
+Controls whether the DHCP client can send a Custom Option Number. This parameter is designed to allow the DHCP client to rapidly support new options.  
 

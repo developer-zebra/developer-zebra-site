@@ -17,21 +17,21 @@ parm:
       osx: "4.4"
       devicetype: A,B
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to CellularMgr settings; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to CellularMgr settings; any previously selected setting is retained.
     - code: 1
       devicetype: A,B
       name: Enable
       mx: "4.4"
       osx: "4.4"
-      description: Enables Background Data to be used on the device and its state (active/inactive) to be controlled programmatically or by the device user.
+      description: Enables background data to be used on the device and its state (active/inactive) to be controlled by the device user.
     - code: 2
       devicetype: A,B
       name: Disable
       mx: "4.4"
       osx: "4.4"
-      description: Disables Background Data from being used on the device and prevents its state (active/inactive) from being controlled programmatically or by the device user.
+      description: Disables background data from being used on the device and prevents its state (active/inactive) from being controlled by the device user.
 ---
 
-Used to control whether the device user has access to the Background Data option on the device. When Disabled, Background Data cannot be turned on or off programmatically or by the device user.
+Controls whether the device user is permitted to change the state (active/inactive) of the background data usage on the device. When Enabled, background data can be made active or inactive by the device user. When Disabled, the device user can view the state but cannot change it. 
 
-The Background Data Option determines whether applications that are not in the foreground should be permitted to maintain a data connection over the cellular network (if they are capable of doing so). For example, some email applications continue to download messages while other apps are active or when the device's screen is turned off. **The convenience of having data ready "when it's asked for" must be considered when planning for cellular bandwidth utilization and weighed against the potential for data overage and roaming costs**. 
+Background data enablement determines whether applications that are not in the foreground are permitted to maintain a data connection over the cellular network (if they are capable of doing so). For example, some email applications continue to download messages while other apps are active or when the device's screen is turned off. **When planning for cellular costs and bandwidth utilization, the convenience of having data ready "when it's asked for" must be weighed against the potential for data overage and roaming costs**. 

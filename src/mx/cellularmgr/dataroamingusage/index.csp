@@ -17,21 +17,21 @@ parm:
       osx: "4.4"
       devicetype: A,B
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to usage of the Data Roaming Option; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to usage of the Data Roaming Option; any previously selected setting is retained.
     - code: 1
       devicetype: A,B
       name: Enable
       mx: "4.4"
       osx: "4.4"
-      description: Enables Data Roaming to be used on the device and its state (active/inactive) to be controlled programmatically or by the device user.
+      description: Enables the device user to control the state of Data Roaming (active/inactive) on the device.
     - code: 2
       devicetype: A,B
       name: Disable
       mx: "4.4"
       osx: "4.4"
-      description: Disables Data Roaming on the device, preventing its state (active/inactive) from being controlled programmatically or by the device user.
+      description: Prevents the device user from changing the state (active/inactive) of Data Roaming on the device.
 ---
 
-Used to control whether the device user has access to the Data Roaming option on the device. When Disabled, Data Roaming cannot be turned on or off programmatically or by the device user. 
+Controls whether the device user is permitted to change the state (active/inactive) of Data Roaming on the device. When Enabled, Data Roaming can be made active or inactive by the device user. When Disabled, the device user can view the state but cannot change it. 
 
-The Data Roaming Option determines whether a device can communicate over cellular data networks other than the "home" network provided by the mobile operator with which the active SIM card is affiliated. **The convenience of communicating over "foreign" networks while roaming must be weighed against the roaming charges imposed by foreign carriers, which can be significant**.  
+The Data Roaming option determines whether a device can communicate over cellular data networks other than the "home" network provided by the mobile operator with which the active SIM card is affiliated. **The convenience of communicating over "foreign" networks while roaming must be weighed against the roaming charges imposed by foreign carriers**.  

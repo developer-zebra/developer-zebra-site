@@ -1,6 +1,6 @@
 ---
 csp: cellularmgr
-title: PLMN Lock UI Enable/Disable 
+title: PLMN Lock UI Show/Hide 
 type: parm
 order: 47
 mx: "8.1"

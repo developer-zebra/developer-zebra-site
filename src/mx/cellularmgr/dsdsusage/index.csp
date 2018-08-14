@@ -1,0 +1,33 @@
+---
+csp: cellularmgr
+title: Dual SIM Dual Standby Enable/Disable 
+type: parm
+order: 49
+mx: "8.1"
+devicetype: A
+info: Supported only on WWAN-enabled SD660-platform devices with dual SIM slot. Settings changes require reboot.
+parm:
+  pivotal: No
+  name: DsdsUsage
+  type: list
+  list:
+    - code: 0
+      mx: "8.1"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to cellular settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "8.1"
+      description: Sets device to Dual SIM, Dual Standby mode, enabling both SIMs to be active simultaneously.
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "8.1"
+      description: Sets device to Dual SIM, Single Standby mode, which allows only one active SIM at a time (default). 
+---
+
+Controls Dual SIM Dual Standby (DSDS) mode. When enabled, both SIMs can make or receive calls and/or be designated primary/secondary or dedicated to voice/data, etc. **This feature is disabled by default**, allowing one active SIM at a time. 
+
+**NOTE: Supported on SD660-platform devices with dual SIM slot. Reboot required to change setting**. 

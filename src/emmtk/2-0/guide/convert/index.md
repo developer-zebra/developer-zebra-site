@@ -1,5 +1,5 @@
 ---
-title: Convert DA -> DO
+title: Change Device Owner
 layout: guide.html
 product: EMM Toolkit
 productversion: '2.0'

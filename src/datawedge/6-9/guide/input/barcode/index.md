@@ -161,43 +161,47 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar Expanded</p></td>
-<td align="left" valign="top"><p class="table"><a href="#hanxin">HAN XIN</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="#gs1datamatrix">GS1 Datamatrix</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#gs1qrcode">GS1 QR Code</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="#hanxin">HAN XIN</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#interleaved2of5">Interleaved 2of5</a></p></td>
+</tr>
+<tr>
 <td align="left" valign="top"><p class="table">Japanese Postal</p></td>
 <td align="left" valign="top"><p class="table"><a href="#korean3of5">Korean 3of5</a></p></td>
+<td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">MAILMARK</p></td>
 <td align="left" valign="top"><p class="table"><a href="#matrix2of5">Matrix 2of5</a></p></td>
+<td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#micropdf">MicroPDF</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">MicroQR</p></td>
+<td align="left" valign="top"><p class="table">MacroMicroPDF<sup>*</sup></p></td>
 </tr>
 <tr>
-<td align="left" valign="top"><p class="table">MacroMicroPDF<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#msi">MSI</a></p></td>
 <td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
-</tr>
-<tr>
 <td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
+</tr>
 <td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
-</tr>
 <td align="left" valign="top"><p class="table"><a href="#trioptic39">Trioptic 39</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#usplanet">US Planet</a></p></td>
-<td align="left" valign="top"><p class="table">US Postal</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#usplanet">US Planet</a></p></td>
+<td align="left" valign="top"><p class="table">US Postal</p></td>
 <td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
+</tr>
 <td align="left" valign="top"><p class="table"><a href="#upce0">UPC-E0</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">US4state FICS</p></td>
-</tr>
 <td align="left" valign="top"><p class="table"><a href="#upce1">UPC E1</a></p></td>
+</tr>
+<tr>
 <td align="left" valign="top"><p class="table">US4state</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
@@ -482,6 +486,114 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 ------
 
+### GS1 Datamatrix
+
+The following table depicts the decode behavior between Datamatrix and GS1 Datamatrix:
+
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th rowspan="2"><center>Datamatrix</center></th>
+    <th rowspan="2"><center>GS1 Datamatrix</center></th>
+    <th colspan="2"><center>Regular Datamatrix Barcode</center></th>
+    <th colspan="2"><center>GS1 Datamatrix Barcode</center></th>
+  </tr>
+  <tr>
+    <td><b><center>Can Decode</center></b></td>
+    <td><b><center>Type</center></b></td>
+    <td><b><center>Can Decode</center></b></td>
+    <td><b><center>Type</center></b></td>
+  </tr>
+  <tr>
+    <td>Enabled</td>
+    <td>Enabled</td>
+    <td>Yes</td>
+    <td>LABEL-TYPE-DATAMATRIX</td>
+    <td>Yes</td>
+    <td>LABEL-TYPE-GS1-DATAMATRIX</td>
+  </tr>
+  <tr bgcolor="#cce6ff">
+    <td>Enabled</td>
+    <td>Disabled</td>
+    <td>Yes</td>
+    <td>LABEL-TYPE-DATAMATRIX</td>
+    <td>Yes</td>
+    <td>LABEL-TYPE-DATAMATRIX</td>
+  </tr>
+  <tr>
+    <td>Disabled</td>
+    <td>Enabled</td>
+    <td>No</td>
+    <td>[none]</td>
+    <td>Yes</td>
+    <td>LABEL-TYPE-GS1-DATAMATRIX</td>
+  </tr>
+  <tr>
+    <td>Disabled</td>
+    <td>Disabled</td>
+    <td>No</td>
+    <td>[none]</td>
+    <td>No</td>
+    <td>[none]</td>
+  </tr>
+</table>
+
+The blue shaded row indicates a successful decode for label types reported as Datamatrix although GS1 Datamatrix is disabled.
+
+------
+### GS1 QR Code
+
+The following table depicts the decode behavior between QR Code and GS1 QR Code:
+
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th rowspan="2"><center>QR Code</center></th>
+    <th rowspan="2"><center>GS1 QR Code</center></th>
+    <th colspan="2"><center>Regular QR Code Barcode</center></th>
+    <th colspan="2"><center>GS1 QR Code Barcode</center></th>
+  </tr>
+  <tr>
+    <td><b><center>Can Decode</center></b></td>
+    <td><b><center>Type</center></b></td>
+    <td><b><center>Can Decode</center></b></td>
+    <td><b><center>Type</center></b></td>
+  </tr>
+  <tr>
+    <td>Enabled</td>
+    <td>Enabled</td>
+    <td>Yes</td>
+    <td>LABEL-TYPE-QRCODE</td>
+    <td>Yes</td>
+    <td>LABEL-TYPE-GS1-QRCODE</td>
+  </tr>
+  <tr bgcolor="#cce6ff">
+    <td>Enabled</td>
+    <td>Disabled</td>
+    <td>Yes</td>
+    <td>LABEL-TYPE-QRCODE</td>
+    <td>Yes</td>
+    <td>LABEL-TYPE-QRCODE</td>
+  </tr>
+  <tr>
+    <td>Disabled</td>
+    <td>Enabled</td>
+    <td>No</td>
+    <td>[none]</td>
+    <td>Yes</td>
+    <td>LABEL-TYPE-GS1-QRCODE</td>
+  </tr>
+  <tr>
+    <td>Disabled</td>
+    <td>Disabled</td>
+    <td>No</td>
+    <td>[none]</td>
+    <td>No</td>
+    <td>[none]</td>
+  </tr>
+</table>
+
+The blue shaded row indicates a successful decode for label types reported as QR Code although GS1 QR Code is disabled.
+
+------
 ### Trioptic39
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data. 

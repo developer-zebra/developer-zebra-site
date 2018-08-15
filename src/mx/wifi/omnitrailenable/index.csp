@@ -15,7 +15,7 @@ parm:
       mx: "6.3"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to the current Wi-Fi setting; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to the current Wi-Fi setting; any previously selected setting is retained.
     - code: 1
       mx: "6.3"
       devicetype: A

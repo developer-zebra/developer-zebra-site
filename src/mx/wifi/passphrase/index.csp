@@ -11,7 +11,7 @@ parm:
   type: string
 ---
 
-Controls whether the Key will be encrypted. When the Key Type is Passphrase, then the specified Passphrase will be used to generate the Key. The required Passphrase will vary depending on the WPA Mode specified (WEP or WPA Passphrase).
+Controls whether the Key is encrypted. When the Key Type is Passphrase, then the specified Passphrase is used to generate the Key. The required Passphrase will vary depending on the WPA Mode specified (WEP or WPA Passphrase).
 
 > **Note:** Currently, the parm value encryption process is not documented and the key that is needed to encrypt is not published. Therefore, an MDM cannot currently use encrypted Keys or Passphrases since there is no way to store an encrypted, server-supplied password in XML file.
 

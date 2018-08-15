@@ -14,7 +14,7 @@ parm:
       mx: "4.2"
       devicetype: A,B
       name: Unchanged
-      description: This value (or the absence of this parm from the XML) causes no change to the band(s) currently selected on the device; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to the band(s) currently selected on the device; any previously selected setting is retained.
     - code: 1
       mx: "4.2"
       devicetype: A,B

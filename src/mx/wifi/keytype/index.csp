@@ -15,7 +15,7 @@ parm:
       mx: "4.2"
       devicetype: A,B
       name: Hex Key
-      description: The key used by the network to perform encryption will be specified.
+      description: The key used by the network to perform encryption is specified.
     - code: Passphrase
       mx: "4.2"
       devicetype: A,B

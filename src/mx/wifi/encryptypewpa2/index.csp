@@ -15,7 +15,7 @@ parm:
       mx: "4.2"
       devicetype: A,B
       name: Default
-      description: This value (or the absence of this parm from the XML) will cause no change to the encryption type that is currently selected on the device; any previously selecting setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to the encryption type that is currently selected on the device; any previously selecting setting is retained.
     - code: 1
       mx: "4.2"
       devicetype: A,B

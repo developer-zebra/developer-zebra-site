@@ -24,4 +24,4 @@ parm:
       description: Requires user credentials to be entered before allowing a connection to the Wi-Fi hotspot. 
 ---
 
-Controls whether user credentials will be required on a device before allowing it to connect to the Wi-Fi hotspot. 
+Controls whether user credentials is required on a device before allowing it to connect to the Wi-Fi hotspot. 

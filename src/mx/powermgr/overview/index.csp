@@ -6,9 +6,9 @@ devicetype: A,B
 order: 0
 ---
 
-The Power Manager (PowerMgr) allows an app to perform certain OS- and power-related actions on the device, such as resetting to a factory-fresh state, putting the device into Sleep mode, rebooting or performing an OS update. On some devices, such as the VC80x vehicle-mounted computer and similarly equipped Zebra devices, it also can control device heaters and perform actions based on vehicle-mounted computer and similarly equipped Zebra devices ignition status. PowerMgr performs only actions; it currently supports no queries other than to determine the version of the CSP that implements PowerMgr itself.
+The Power Manager (PowerMgr) allows an app to perform certain OS- and power-related actions on the device. These include rebooting or performing an OS update, resetting the device to a factory-fresh state or putting the device into Sleep mode. On some devices, such as the VC80x vehicle-mounted computer and similarly equipped Zebra devices, PowerMgr also can control device heaters and perform actions based on ignition status of vehicle-mounted computers and similarly equipped Zebra devices. PowerMgr performs only actions; it currently supports no queries other than to determine the version of the CSP that implements PowerMgr itself.
 
-**It's important to note that PowerMgr actions such as Reboot and Reset, once executed, will prevent the execution of subsequent actions submitted by the Request XML document**, including the submission of a Result XML to the application sending the original Request. Zebra therefore recommends using [Condition Manager](../conditionmgr) in conjunction with PowerMgr to ensure that appropriate conditions exist on a device before attempting to perform "risky" operations such as OS updates, the failure of which can render a device unusable, severely limited or otherwise in need of service.
+**It's important to note that PowerMgr actions such as Reboot and Reset, once executed, prevent the execution of subsequent actions submitted by the Request XML document**, including the submission of a Result XML to the application sending the original Request. Zebra therefore recommends using [Condition Manager](../conditionmgr) in conjunction with PowerMgr to ensure that appropriate conditions exist on a device before attempting to perform "risky" operations such as OS updates, the failure of which can render a device unusable, severely limited or otherwise in need of service.
 
 ### Main Functionality
 
@@ -18,7 +18,8 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
 * Bypass the setup wizard (GMS Welcome Screen)
 * Perform a Factory Reset on a device
 * Wipe a device (erase all storage) 
-* Update the OS on a device
+* Update, upgrade or downgrade the OS on a device
+* Verify an OS update
 * Perform multiple updates in a single step
 * Enable/disable Doze Mode
 * Enable/disable Wake-up Sources 
@@ -41,13 +42,13 @@ Rebooting an Android device generally causes only volatile information such as a
 
 ### Enterprise Reset
 
-Enterprise Reset is intended to return the device to an enterprise-defined default state, generally as determined by the contents of the `/enterprise` partition. On Zebra Android devices, an Enterprise Reset is the same as a Factory Reset except that the `/enterprise` partition is preserved. **This action is supported only on Zebra devices running Android 4.4 KitKat and higher**. On Zebra Android devices running Android Jelly Bean or lower, the same action could be performed using the "OS Update" action if a suitable OS Update ZIP file was used. 
+Enterprise Reset is intended to return the device to an enterprise-defined default state, generally as determined by the contents of the `/enterprise` partition. On Zebra Android devices, an Enterprise Reset is the same as a Factory Reset except that the `/enterprise` partition is preserved. **This action is supported only on Zebra devices running Android 4.4 KitKat and higher**. On Zebra Android devices running Android Jelly Bean or lower, the same action could be performed using the "OS Update" action if a suitable OS Update .zip file was used. 
 
 **Note: This Action causes the device to Reboot (into Recovery Mode), preventing any subsequent Actions from executing**, including the submission of a Result XML to the application sending the original request. 
 
 ### Factory Reset
 
-The Factory Reset is intended to return the device to its factory-fresh condition with the exception of certain conditions related to its internal storage card(s) (see below). On Zebra Android devices, a Factory Reset erases all key partitions and storage cards containing `/data`, `/cache`, and `/enterprise` partitions. **This action is supported only on Zebra devices running Android 4.4 KitKat and higher**. On Zebra Android devices running Android Jelly Bean or lower, the same action could be performed using the "OS Update" Action if a suitable OS Update ZIP file was used.
+The Factory Reset is intended to return the device to its factory-fresh condition with the exception of certain conditions related to its internal storage card(s) (see below). On Zebra Android devices, a Factory Reset erases all key partitions and storage cards containing `/data`, `/cache`, and `/enterprise` partitions. **This action is supported only on Zebra devices running Android 4.4 KitKat and higher**. On Zebra Android devices running Android Jelly Bean or lower, the same action could be performed using the "OS Update" Action if a suitable OS Update .zip file was used.
 
 **Note: This Action causes the device to Reboot (into Recovery Mode), preventing any subsequent Actions from executing**, including the submission of a Result XML to the application sending the original request. 
 
@@ -62,12 +63,16 @@ A Factory Reset **<u>will NOT erase</u> a storage card if**:
 * The card is physically removable
 
 ### Full Device Wipe
-The Full Device Wipe is intended to return the device to its condition as it would have shipped from the factory **with its current OS <u>plus any subsequent OS update(s)</u>**. On Zebra Android devices, a Full Device Wipe is the same as a Factory Reset **plus the unconditional erasure of all storage cards**. **This action is supported only on Zebra devices running Android 4.4 KitKat and higher**. On Zebra Android devices running Android Jelly Bean or lower, the same action could be performed using the "OS Update" Action if a suitable OS Update ZIP file was used.
+The Full Device Wipe is intended to return the device to its condition as it would have shipped from the factory **with its current OS <u>plus any subsequent OS update(s)</u>**. On Zebra Android devices, a Full Device Wipe is the same as a Factory Reset **plus the unconditional erasure of all storage cards**. **This action is supported only on Zebra devices running Android 4.4 KitKat and higher**. On Zebra Android devices running Android Jelly Bean or lower, the same action could be performed using the "OS Update" Action if a suitable OS Update .zip file was used.
 
 **Note: This Action causes the device to Reboot (into Recovery Mode), preventing any subsequent Actions from executing**, including the submission of a Result XML to the application sending the original request. 
 
 ### OS Update
 
-The OS Update allows the device operating system to be replaced or patched using a specified OS Update Zip File or a text file containing a list of OS updates and/or patches. Depending on the contents of the file(s), this process also can be used to perform an Enterprise Reset, Factory Reset or Full Device Wipe to facilitate the installation of the update or patch contained in the file(s). 
+The OS Update allows the device operating system to be replaced or patched using a specified OS Update Zip File or a text file containing a list of OS updates and/or patches. Depending on the contents of the file(s), this process also can be used to perform an OS Downgrade, Enterprise Reset, Factory Reset or Full Device Wipe to facilitate the installation of the update or patch contained in the file(s). OS Update (Upgrade/Downgrade on Android Nougat and below, Upgrade only on Android Oreo and above
 
-**Note: This Action causes the device to Reboot (into Recovery Mode), preventing any subsequent Actions from executing**, including the submission of a Result XML to the application sending the original request. 
+**Notes**: 
+
+* **The OS Update Action causes the device to Reboot (into Recovery Mode), <u>which prevents execution of any subsequent Actions</u>**, including the submission of a Result XML to the application sending the original request. 
+* **OS Update can be used to upgrade or downgrade Android 7.x Nougat and older**. 
+* **On devices running Android 8.x Oreo or later, <u>OS Update can only upgrade</u>. 

@@ -15,7 +15,7 @@ parm:
       mx: "4.2"
       devicetype: A,B
       name: Do nothing
-      description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no action to be performed on the device; any previously selected setting is retained.
     - code: 1
       devicetype: A,B
       name: Sleep Mode
@@ -53,7 +53,27 @@ parm:
       name: OS Update
       mx: "4.1"
       apilevel: "16"
-      description: Launches an OS Update on the device using the specified OS Update Zip file. See Overview for more information.
+      description: Launches an OS upgrade or downgrade on devices using the specified OS Update Zip file. Restrictions apply to devices running Android 8.x Oreo and later. See Overview for more information.
+    - code: 9
+      devicetype: A,B
+      name: Verify OS Update
+      mx: "8.1"
+      apilevel: "26"
+      description: Verifies the proper installation of an OS update on devices running Android 8.x Oreo and later. 
+    - code: 10
+      devicetype: A,B
+      info: Supported only on devices running Android 8.x Oreo and later.
+      name: OS Upgrade
+      mx: "8.1"
+      apilevel: "26"
+      description: Launches an OS Upgrade on devices running Android 8.x Oreo and later. See Overview for more information.
+    - code: 11
+      devicetype: A,B
+      info: Supported only on devices running Android 8.x Oreo and later.
+      name: OS Downgrade
+      mx: "8.1"
+      apilevel: "26"
+      description: Launches an OS Downgrade on devices running Android 8.x Oreo and later. See Overview for more information.
 ---
 
-Used to invoke an OS- or power-related action on the device. **Read [Overview section](#overview) carefully for important information about Reset Actions**. 
+Used to invoke an OS- or power-related action on the device. **Read [Overview section](#overview) carefully for important information and device restrictions related to the use of Reset and OS Update Actions**. 

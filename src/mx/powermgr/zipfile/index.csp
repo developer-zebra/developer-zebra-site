@@ -8,13 +8,13 @@ apilevel: "16"
 devicetype: A,B
 info: Upload list (.upl) files are not supported on TC70/TC75 devices running Android KK
 parm:
-  presentif: The Reset Action is "OS Update"
+  presentif: The Reset Action is "OS Update" or "OS Upgrade" or "OS Downgrade"
   pivotal: No
   name: ZipFile
   type: string
 ---
 
-Used to specify the path and filename of the file to be consumed when updating the device using the OS Update Reset Action. The OS Update file must either be the specific .zip file being applied, or a text file (with .upl extension) containing a list of patches (multiple .zip files) to be applied in the desired order from top to bottom. 
+Used to specify the path and filename of the file to be consumed when updating the device using a supported Action. The OS Update file must be the specific .zip file being applied, or a text file (with .upl extension) containing a list of patches (multiple .zip files) to be applied in the desired order from top to bottom as listed in the file. 
 
 For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101_G_00_02.zip` are to be applied in that order, the OS Update text file should be created as follows: 
 
@@ -27,10 +27,9 @@ For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101
 	// Note the package files are preceded by the notation "package:" 
 
 
-
 ### Update File Rules
 
-* **Zebra recommends always matching case when specifying file names** to avoid case-sensitivity errors on some devices. 
+* **Zebra recommends <u>matching case when specifying file names</u>** to avoid case-sensitivity errors on some devices. 
 * **Required file(s) must be on the device before the Reset Action** is initiated.
 * The .upl file and all referenced .zip files must be **in the same device folder**. 
 * The folder used for storing file(s) must be a supported location according to the Android Location/Device Location Rules below. 
@@ -486,4 +485,4 @@ However, support of such locations is subject to changes that are beyond Zebra's
 
 **Parm value input rules**: 
 
-* String from 1-255 characters containing full path and file name of OS Update .zip or .upl file 
+* String from 1&ndash;255 characters containing full path and file name of OS Update .zip or .upl file 

@@ -1,0 +1,32 @@
+---
+csp: powermgr
+title: Supress Reboot
+type: parm
+order: 4
+mx: "8.1"
+devicetype: A
+info: Supported only on devices running Android 8.x Oreo and later.
+parm:
+  presentif: The Reset Action is "OS Upgrade"
+  pivotal: No
+  name: SuppressReboot
+  type: list
+  list:
+    - code: 0
+      mx: "8.1"
+      devicetype: A
+      name: Do Nothing
+      description: This value (or the absence of this parm from the XML) causes no action on the device; the default value is used.
+    - code: 1
+      devicetype: A
+      name: True
+      mx: "8.1"
+      description: Prevents the device from rebooting following an OS Upgrade Action.  
+    - code: 2
+      devicetype: A
+      name: False
+      mx: "8.1"
+      description: Allows the device to reboot following an OS Upgrade Action.
+---
+
+Controls whether the device reboots following an OS Upgrade. 

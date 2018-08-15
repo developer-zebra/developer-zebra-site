@@ -1,0 +1,23 @@
+---
+csp: powermgr
+title: OS Update Verify File
+type: parm
+order: 3
+mx: "8.1"
+apilevel: "26"
+devicetype: A,B
+info: Supported only on devices running Android 8.x Oreo and later.  
+parm:
+  presentif: The Reset Action is "OS Update" or "OS Upgrade" or "OS Downgrade"
+  pivotal: No
+  name: OsupdateVerifyFile
+  type: string
+---
+
+Used to specify the path and filename of the OS update manifest (XML file) or .zip file in the device file system to be used to verify an OS update. This parameter checks required OS- and hardware-level device compatibility before allowing an OS update procedure to continue. **Supported only on devices running Android 8.x Oreo and later**. 
+
+**See [Overview section](#overview) for more information about the manifest file**.
+
+**Parm value input rules**: 
+
+* String from 1&ndash;255 characters containing a full path and file name 

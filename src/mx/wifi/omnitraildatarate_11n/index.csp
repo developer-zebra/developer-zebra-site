@@ -8,7 +8,7 @@ devicetype: A
 parm:
   pivotal: No
   presentif: The "Specify OmniTrail Options" checkbox is checked and "OmniTrail DataRate Options" is set to "11n"
-  name: datarate_11n
+  name: OmnitrailDataRates_11n
   type: list
   list:
     - code: 12

@@ -8,7 +8,7 @@ devicetype: A
 info: Supported on SDM660-platform devices only.
 parm:
   pivotal: No
-  name: 802.11ac
+  name: MACRandomization
   type: list
   list:
     - code: 2

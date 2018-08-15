@@ -8,7 +8,7 @@ devicetype: A
 parm:
   pivotal: No
   presentif: The "Specify OmniTrail Options" checkbox is checked
-  name: OmniTrailDataRateOption
+  name: OmniTrailDataRateOptions
   type: list
   list:
     - code: 0

@@ -23,13 +23,13 @@ parm:
       name: Enable
       mx: "4.4"
       osx: "4.4"
-      description: Enables background data to be used on the device and its state (active/inactive) to be controlled by the device user.
+      description: Enables the background data state (active/inactive) to be controlled by the device user.
     - code: 2
       devicetype: A,B
       name: Disable
       mx: "4.4"
       osx: "4.4"
-      description: Disables background data from being used on the device and prevents its state (active/inactive) from being controlled by the device user.
+      description: Prevents the background data state (active/inactive) from being controlled by the device user; state can still be controlled programmatically.
 ---
 
 Controls whether the device user is permitted to change the state (active/inactive) of the background data usage on the device. When Enabled, background data can be made active or inactive by the device user. When Disabled, the device user can view the state but cannot change it. 

@@ -29,7 +29,7 @@ parm:
       name: Disable
       mx: "4.4"
       osx: "4.4"
-      description: Prevents the device user from changing the state (active/inactive) of Data Roaming on the device.
+      description: Prevents the device user from changing the state (active/inactive) of Data Roaming on the device; state can still be controlled programmatically.
 ---
 
 Controls whether the device user is permitted to change the state (active/inactive) of Data Roaming on the device. When Enabled, Data Roaming can be made active or inactive by the device user. When Disabled, the device user can view the state but cannot change it. 

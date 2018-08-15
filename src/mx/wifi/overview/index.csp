@@ -50,6 +50,8 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 	* Setting the Clock from an Access Point (AP)
 	* Sub-Net Roam
 	* WANCountry
+	* MAC randomization
+	* Call admission control
 * Set Hotspot (ET50, ET55 with Lollipop only):
 	  * AP Channel, Band, SSID and Options
 	  * Security Modes, Passphrase and Passphrase Encryption

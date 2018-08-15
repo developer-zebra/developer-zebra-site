@@ -1,0 +1,31 @@
+---
+csp: wifi
+title: Call Admission Control Enable/Disable
+type: parm
+order: 7
+mx: "8.1"
+devicetype: A
+parm:
+  pivotal: No
+  name: CallAdmissionControl
+  type: list
+  list:
+    - code: 2
+      mx: "8.1"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 1
+      mx: "8.1"
+      devicetype: A
+      name: Enable
+      description: Enables Call Admission Control on the device. 
+    - code: 0
+      mx: "8.1"
+      devicetype: A
+      name: Disable
+      description: Disables Call Admission Control on the device. 
+---
+
+This is the On/Off switch for Call Admission Control, which can help prevent voice-traffic congestion.  
+

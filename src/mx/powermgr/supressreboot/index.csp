@@ -29,4 +29,4 @@ parm:
       description: Allows the device to reboot following an OS Upgrade Action.
 ---
 
-Controls whether the device reboots following an OS Upgrade. 
+Controls whether the device reboots following an OS Upgrade or Downgrade Action on a device running Android 8.x Oreo or later. 

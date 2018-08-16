@@ -13,12 +13,13 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
 ### Main Functionality
 
 * Reboot a device
+* Update, upgrade or downgrade the OS on a device
+* Supress reboot following an OS upgrade or downgrade
 * Put a device into Sleep Mode
 * Perform an Enterprise Reset on a device
 * Bypass the setup wizard (GMS Welcome Screen)
 * Perform a Factory Reset on a device
 * Wipe a device (erase all storage) 
-* Update, upgrade or downgrade the OS on a device
 * Verify an OS update
 * Perform multiple updates in a single step
 * Enable/disable Doze Mode
@@ -69,7 +70,10 @@ The Full Device Wipe is intended to return the device to its condition as it wou
 
 ### OS Update
 
-The OS Update allows the device operating system to be replaced or patched using a specified OS Update Zip File or a text file containing a list of OS updates and/or patches. Depending on the contents of the file(s), this process also can be used to perform an OS Downgrade, Enterprise Reset, Factory Reset or Full Device Wipe to facilitate the installation of the update or patch contained in the file(s). OS Update (Upgrade/Downgrade on Android Nougat and below, Upgrade only on Android Oreo and above
+The OS Update allows the device operating system to be replaced or patched using a specified OS Update Zip File or a text file containing a list of OS updates and/or patches. Depending on the contents of the file(s), this process also can be used to perform an OS Downgrade (on devices some), Enterprise Reset, Factory Reset or Full Device Wipe to facilitate the installation of the update or patch contained in the file(s). 
+
+> **Devices running Android 7.x Nougat and below** support OS Update only.
+> **Devices with Android 8.x Oreo and later** support Upgrade and Downgrade Actions and the Supress Reboot parameter. 
 
 **Notes**: 
 

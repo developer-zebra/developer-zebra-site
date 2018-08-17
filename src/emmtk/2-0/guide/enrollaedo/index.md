@@ -13,9 +13,7 @@ productversion: '2.0'
 
 ## Overview
 
-This guide documents enrollment of an EMM agent app as a "Device Owner," granting the agent the permissions necessary to confiure all parameters of a Zebra device. 
-
-Device Owner (DO) capabilies apply to Zebra devices running Android 5.x Lollipop and higher. However, **the procedures in this guide require Android 7.x Nougat (or later) and Zebra MX 7.1 (or higher)**. 
+This guide documents enrollment of an EMM agent app as a "Device Owner," granting the agent the permissions necessary to confiure all parameters of a Zebra device. Device Owner (DO) capabilies apply to Zebra devices running Android 5.x Lollipop and higher. However, **the procedures in this guide require Android 7.x Nougat (or later) and Zebra MX 7.1 (or higher)**. 
 
 -----
 <!-- 
@@ -66,9 +64,9 @@ section explains device owner stuff, and why a Nougat device _should_ be enrolle
 * **All agent and/or service apps (`.apk` files)** required by the EMM solution to be present on the device being managed. <br>**Required files**:
  * `Agent.apk(s)` - **Device-resident agent file(s) with DO support** (provided by the EMM vendor)
  * `EMM_Device_Owner_Enrollment_Profile.zip` - **StageNow profile for enrolling device** (provided by Zebra)
- * `EnrollDO.pem` - **Owner enrollment certificate for EMM agent app** (provided by EMM vendor???; file names vary)
+ * `EnrollDO.pem` - **Owner enrollment certificate for EMM agent app** (provided by EMM vendor; file names vary)
  * `EMM_PERE-DO.zip` - **StageNow persistence profile** template (provided by Zebra)
- * `Provision.apk` - **Android app**. There's one for TC20/TC25 devices and another for all other Zebra devices (provided by Zebra???)  
+ * `Provision.apk` - **Android provisioning app**. There's one for TC20/TC25 devices and another for all other Zebra devices (provided by Zebra)  
  * `Provisioning.JSON` - **Credentials file, including server address and login credentials** (created during the enrollment process below)
 
 <!-- remove AirWatch-specific items:
@@ -103,7 +101,7 @@ This section is required only for first-time set-up of the staging workstation. 
 4. **Open the** `Provisioning.JSON` **file with a text editor**, and enter the server name, user credentials and any other necessary fields (as required by the EMM solution) in the appropriate section (see image, below). **TIP**: Information required for the `Provisioning.JSON` file is identical to that of the relevant QR code, if used.
 5. **Save the changes and copy the updated file** to the  `/EMM/install/` folder.
  <img alt="image" style="height:278px" src="JSON_code_EMM_Sample_3.PNG"/>
- _The `Provision.JSON` sample shows syntax for server URL, user name and password._
+ _The `Provision.JSON` sample showing server URL, user name and password fields. Syntax might vary by EMM solution_.
 <br>
 
 > **Note: File and folder names are case-sensitive**.
@@ -114,24 +112,27 @@ This section is required only for first-time set-up of the staging workstation. 
 
 This section involves importing the StageNow settings profile `EMM_PERE-DO`, which is provided in generic form and must be modified for network settings of the target environment, vendor-specific agent files and other situation-specific parameters. The profile is then exported and deployed to the device for use during enrollment. 
 
-> **Click on images to enlarge**. 
-
 #### Barcode Provisioning and the `EMM_PERE-DO` Profile 
 
 1. Launch StageNow and log in as Administrator. 
 2. **Click "All Profiles"** from the StageNow "Home" area:   
- <img alt="image" style="height:250px" src="StageNow_Home.png"/><br>
+ <img alt="image" style="height:250px" src="StageNow_Home.png"/>_Click image to enlarge_. 
+<br>
 3. **Click "Import Profiles"** in the upper-right corner:
- <img alt="image" style="height:250px" src="SN_All_Profiles.png"/><br> 
+ <img alt="image" style="height:250px" src="SN_All_Profiles.png"/>_Click image to enlarge_. 
+<br> 
 4. **Navigate to the** `EMM_PERE-DO.zip` **file** on the staging workstation (prepared in Section 1). <br>
 **Select "Import"** and follow prompts to complete the process:
- <img alt="image" style="height:250px" src="navigate_2.png"/> <br>
+ <img alt="image" style="height:250px" src="navigate_2.png"/>_Click image to enlarge_. 
+<br>
 5. **Open the imported profile** to begin editing. If necessary, click the StageNow "HOME" icon to display this screen: 
- <img alt="image" style="height:250px" src="all_profiles_after_import.png"/> <br>
+ <img alt="image" style="height:250px" src="all_profiles_after_import.png"/>_Click image to enlarge_. 
+<br>
 6. The imported profile appears in "Review" mode. **Click "StageNow Config"** to enter Config mode...<br>
  <img alt="image" style="height:250px" src="view_profile_settings.png"/>
  **...then click the left arrow three times** to see the view shown below:
- <img alt="image" style="height:350px" src="edit_profile_2.png"/> <br>
+ <img alt="image" style="height:350px" src="edit_profile_2.png"/>_Click image to enlarge_. 
+<br>
 7. **Edit the necessary configuration sections of the imported profile** as required for the target environment (using Steps a&ndash;i below). **To edit a config**, tap its numbered button and click the blue "Edit" button on the right side of the screen (see arrow, above). <u>**Be sure to hit "Save" when done editing each config**</u> or settings are lost.<br> 
 	a. **Wi-Fi -** **Enter network settings** for the network on which the target device(s) will operate:<br>
 	<img alt="image" style="height:350px" src="wi-fi_config.png"/><br>
@@ -171,23 +172,21 @@ This section involves importing the StageNow settings profile `EMM_PERE-DO`, whi
 
 This section involves importing the StageNow settings profile `EMM_Device_Owner_Enrollment`, which is provided in generic form and must be modified for network settings of the target environment, a vendor-specific certificate file and other situation-specific parameters. The profile is used to publish the final staging barcodes. 
 
->**Click on images to enlarge**.
-
 #### Barcode Generation and the `EMM_Device_Owner_Enrollment` Profile 
 
 1. **Click the "HOME" icon and select "All Profiles"**: 
- <img alt="image" style="height:250px" src="StageNow_Home.png"/><br>
+ <img alt="image" style="height:250px" src="StageNow_Home.png"/>_**Click on image to enlarge**_.<br>
 2. **Click "Import Profiles"** in the upper-right corner:
- <img alt="image" style="height:250px" src="SN_All_Profiles.png"/><br> 
-3. **Navigate to the** `EMM_Device_Owner_Enrollment.zip` **file** on the staging workstation (prepared in Section 1). <br>
+ <img alt="image" style="height:250px" src="SN_All_Profiles.png"/>_**Click on image to enlarge**_.<br> 
+3. **Navigate to the** `EMM_Device_Owner_Enrollment.zip` **file** on the staging workstation (prepared in Section 1)._**Click on image to enlarge**_.<br>
 **Select "Import"** and follow prompts to complete the process:
- <img alt="image" style="height:250px" src="navigate_3.png"/> <br>
+ <img alt="image" style="height:250px" src="navigate_3.png"/>_**Click on image to enlarge**_.<br>
 4. **Open the imported profile** to begin editing. If necessary, click the StageNow "HOME" icon to display this screen: 
- <img alt="image" style="height:250px" src="all_profiles_after_import_2.png"/> <br>
+ <img alt="image" style="height:250px" src="all_profiles_after_import_2.png"/>_**Click on image to enlarge**_.<br>
 5. The imported profile appears in "Review" mode. **Click "StageNow Config"** to enter Config mode...<br>
  <img alt="image" style="height:250px" src="view_profile_settings.png"/>
  **...then click the left arrow three times** to see the view shown below:
- <img alt="image" style="height:350px" src="edit_profile_4.png"/> <br>
+ <img alt="image" style="height:350px" src="edit_profile_4.png"/>_**Click on image to enlarge**_.<br>
 6. **Edit the necessary configuration sections of the imported profile** as required for the target environment (using Steps a&ndash;d below). **To edit a config**, tap its numbered button and click the blue "Edit" button on the right side of the screen (see arrow, above). <u>**Be sure to hit "Save" when done editing each config**</u> or settings are lost.<br> 
 	a. **Wi-Fi -** **Enter network settings** for the network on which the target device(s) will operate:<br>
 	<img alt="image" style="height:350px" src="wi-fi_config.png"/><br>

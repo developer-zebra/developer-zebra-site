@@ -1,6 +1,6 @@
 ---
 csp: dhcpoptionmgr
-title: Send Custom Option Number
+title: Custom Option Number
 type: parm
 order: 73
 mx: "8.1"

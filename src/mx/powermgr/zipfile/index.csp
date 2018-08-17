@@ -2,7 +2,7 @@
 csp: powermgr
 title: OS Update File
 type: parm
-order: 4
+order: 3
 mx: "4.1"
 apilevel: "16"
 devicetype: A,B

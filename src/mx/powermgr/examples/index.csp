@@ -5,7 +5,7 @@ type: text
 order: 99
 ---
 
-### Reboot the Device
+### Reboot Device
 
     :::XML
 	<wap-provisioningdoc>
@@ -14,7 +14,7 @@ order: 99
 	    </characteristic>
 	</wap-provisioningdoc>
 
-### Perform an Enterprise Reset
+### Perform Enterprise Reset
 
 	:::XML
 	<wap-provisioningdoc>
@@ -23,7 +23,7 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 	
-### Perform a Factory Reset
+### Perform Factory Reset
 
     :::XML
     <wap-provisioningdoc>
@@ -32,7 +32,7 @@ order: 99
         </characteristic>
     </wap-provisioningdoc>
 	
-### Perform a Full Device Wipe
+### Perform Full Device Wipe
 
 	:::XML
 	<wap-provisioningdoc>
@@ -41,7 +41,7 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 
-### Perform an OS Update
+### Perform OS Update
 
 	:::xml
 	<wap-provisioningdoc>
@@ -53,7 +53,7 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 
-### Turn On Power to Serial Port 1
+### Power-on Serial Port 1
 	:::xml
 	<wap-provisioningdoc>
 	    <characteristic type="PowerMgr">
@@ -64,7 +64,7 @@ order: 99
 	    </characteristic>
 	</wap-provisioningdoc>
 
-### Turn Off Power to USB Port 2
+### Power-off USB Port 2
 
 	:::XML
 	<wap-provisioningdoc>
@@ -77,7 +77,7 @@ order: 99
 	</wap-provisioningdoc>
 
 
-### Turn On and Off Vehicle-mount Computer Immediately with Vehicle Power
+### Power-On/Off Vehicle-mount Computer w/Vehicle Power
 
 	:::XML
 	<wap-provisioningdoc>
@@ -92,7 +92,7 @@ order: 99
 	</wap-provisioningdoc>
 
 
-### Turn Off Vehicle-mount Computer 10 Minutes After Vehicle Turns Off; Do Not Turn On Device Automatically
+### Power-off Vehicle-mount Computer 10 Minutes After Vehicle Turns Off; Do Not Power-on Automatically
 
 	:::XML
 	<wap-provisioningdoc>
@@ -106,7 +106,7 @@ order: 99
 	    </characteristic>
 	</wap-provisioningdoc>
 
-### Enable Touch Panel Heater to Operate in the Temperature range -10°C to 5°C
+### Enable Touch-panel Heater in -10°C to 5°C Range
 
 	:::XML
 	<wap-provisioningdoc>
@@ -130,7 +130,7 @@ order: 99
 	</wap-provisioningdoc>
 
 
-### Disable the USB IO heater
+### Disable USB IO Heater
 
 	:::XML
 	<wap-provisioningdoc>
@@ -150,5 +150,56 @@ order: 99
 		</characteristic>
 	</wap-provisioningdoc>
 		
+### Manifest file (sample)
 
+	<?xml version="1.0"?>
+	<Properties>
+	    <product>
+	        <ro.product.name value="TC97,TC52,TC57,TC72,TC77,MC93,PS20J"/>
+	        <ro.product.model value="TC97,TC52,TC57,TC72,TC77,MC93,PS20J"/>
+	        <ro.product.board value="sdm660"/>
+	        <ro.product.brand value="Zebra"/>
+	        <ro.product.locale value="en-US"/>
+	        <ro.product.manufacturer value="Zebra Technologies"/>
+	        <ro.product.cpu.abilist value="arm64-v8a,armeabi-v7a,armeabi"/>
+	    </product>
+	    <build>
+	        <ro.build.id value="01-10-09.00-OG-U06-STD"/>
+	        <ro.build.display.id value="01-10-09.00-OG-U06-STD"/>
+	        <ro.build.version.incremental value="144"/>
+	        <ro.build.version.sdk value="27"/>
+	        <ro.build.version.preview_sdk value="0"/>
+	        <ro.build.version.codename value="REL"/>
+	        <ro.build.version.all_codenames value="REL"/>
+	        <ro.build.version.release value="8.1.0"/>
+	        <ro.build.version.security_patch value="2018-08-01"/>
+	        <ro.build.version.base_os value=""/>
+	        <ro.build.date value="Wed Aug 15 17:48:34 EDT 2018"/>
+	        <ro.build.date.utc value="1534369714"/>
+	        <ro.build.type value="user"/>
+	        <ro.build.user value="jenksvc"/>
+	        <ro.build.host value="z61sp-gitapp05"/>
+	        <ro.build.tags value="release-keys"/>
+	        <ro.build.flavor value="helios-user"/>
+	        <ro.build.system_root_image value="true"/>
+	        <ro.build.ab_update value="true"/>
+	        <ro.build.product value="helios"/>
+	        <ro.build.description value="01-10-09.00-OG-U06-STD"/>
+	        <ro.build.fingerprint value="Zebra/helios/helios:8.1.0/01-10-09.00-OG-U06-STD/144:user/release-keys"/>
+	        <ro.build.characteristics value="nosdcard"/>
+	        <ro.build.security.critical value="0"/>
+	        <ro.build.baseline value="01-10-09.00-OG"/>
+	    </build>
+	    <bsp>
+	        <ro.config.bsp.gms value="false,true"/>
+	        <ro.config.bsp.hwrev value="100,101"/>
+	        <ro.config.bsp.fips value="true,false"/>
+	        <ro.config.bsp.beta value="true,false"/>
+	    </bsp>
+	    <device>
+	        <ro.config.device.hwrev value="110,111"/>
+	    </device>
+	    <customized>
+	    </customized>
+	</Properties>
 

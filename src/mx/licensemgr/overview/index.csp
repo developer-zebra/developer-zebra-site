@@ -6,7 +6,15 @@ devicetype: A
 order: 0
 ---
 
-The License Manager (LicenseMgr) administers the software licenses on a device, allowing an administrator or app running on the device to control the usability of software features that require licensing. Software components can be made usable, unusable or feature-limited based on the license. If a component requires licensing, the absence of a valid license will limit or prevent its functionality. Software components that to not require licensing are not effected by this CSP. 
+The License Manager (LicenseMgr) CSP administers the software licenses on a device, allowing an administrator or app running on the device to control the usability of software features that require licensing. Software components can be made usable, unusable or feature-limited based on the license. If a component requires licensing, the absence of a valid license will limit or prevent its functionality. Software components that to not require licensing are not effected by this CSP. 
+
+### License Manager App
+Zebra Android devices include a built-in app called License Manager, which allows device users and/or administrators to perform license-related  tasks manually on the device. On some devices, this app can be disabled using the [LicenseAppUI parameter](#license-management-app-enabledisable). 
+
+![img](../../../../../images/mx/LicenseManager_app.png)
+_The License Manager icon (left), and the Android app's home screen showing multiple activated licenses._
+
+**[License Manager User Guide (PDF)](../../../../../images/mx/LicenseManager_3.1.1_user_guide.pdf)**
 
 ### License Acquisition
 

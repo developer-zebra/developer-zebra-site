@@ -1,10 +1,10 @@
 ---
-csp: 
+csp: rfidmgr
 title: Country of Operation
 type: parm
 order: 2
-mx: "6.1"
-apilevel: "23"
+mx: "8.1"
+apilevel: "26"
 devicetype: A
 parm:
  pivotal: No
@@ -327,7 +327,3 @@ parm:
       devicetype: A,B
       name: UKRAINE
 ---
-
-mx: "6.1"
-      apilevel: "23"
-      description: Disables the timestamp for first-sent codes.

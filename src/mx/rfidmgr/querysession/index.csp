@@ -1,10 +1,10 @@
 ---
-csp: 
+csp: rfidmgr
 title: Query Session
 type: parm
 order: 2
-mx: "6.1"
-apilevel: "23"
+mx: "8.1"
+apilevel: "26"
 devicetype: A
 parm:
   pivotal: No
@@ -15,14 +15,14 @@ parm:
     - code: 0
       devicetype: A
       name: Disable
-      mx: "6.1"
-      apilevel: "23"
+      mx: "8.1"
+      apilevel: "26"
       description: Disables .
     - code: 1
       devicetype: A
       name: Enable
-      mx: "6.1"
-      apilevel: "23"
+      mx: "8.1"
+      apilevel: "26"
       description: Enables .
 ---
 

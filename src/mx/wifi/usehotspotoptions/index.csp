@@ -14,12 +14,12 @@ parm:
       mx: "6.3"
       devicetype: A
       name: (unchecked)
-      description: Prevents the device from being used as a Wi-Fi hotspot.
+      description: Prevents Wi-Fi hotspot settings from being configured.
     - code: 1
       mx: "6.3"      
       devicetype: A
       name: (checked)
-      description: Allows the device to be used as a Wi-Fi hotspot.
+      description: Allows Wi-Fi hotspot settings to be configured.
 ---
 
-Determines whether the device can be used as a Wi-Fi hotspot. **Hotspot functionality is supported only on Zebra ET50 and ET56 devices running Android 5.0 Lollipop**. 
+Controls whether Wi-Fi hotspot settings can be configured on the device. **Hotspot functionality is supported only on Zebra ET50 and ET56 devices running Android 5.0 Lollipop**. 

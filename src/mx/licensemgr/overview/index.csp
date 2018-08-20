@@ -8,26 +8,6 @@ order: 0
 
 The License Manager (LicenseMgr) CSP administers the software licenses on a device, allowing an administrator or app running on the device to control the usability of software features that require licensing. Software components can be made usable, unusable or feature-limited based on the license. If a component requires licensing, the absence of a valid license will limit or prevent its functionality. Software components that to not require licensing are not effected by this CSP. 
 
-### License Manager App
-Zebra Android devices include a built-in app called License Manager, which allows device users and/or administrators to perform license-related  tasks manually on the device. On some devices, this app can be disabled using the [LicenseAppUI parameter](#license-management-app-enabledisable). 
-
-![img](../../../../../images/mx/LicenseManager_app.png)
-_The License Manager icon (left), and the Android app's home screen showing multiple activated licenses._
-
-**[License Manager User Guide (PDF)](../../../../../images/mx/LicenseManager_3.1.1_user_guide.pdf)**
-
-### License Acquisition
-
-Software licenses are acquired from a Zebra Software License Server. They are issued as Software License Files and are associated with specific software components through the use of Licensed Feature Names. A Software License File can be used only to enable use of its associated Licensed Feature Name. A component can have multiple capabilities, each controlled through separate Licensed Feature Names. Alternatively, a component can have all of its capabilities controlled through a single Licensed Feature Name.
-
-Software Licenses acquired from a Zebra Software License Server may be Individual Device Licenses, with each Software License File tied to a specific device serial number. In such cases, it is necessary to apply the right Software License File to each matching device. The Zebra Software License Server also provides Enterprise Licenses, which are issued to all devices owned by an enterprise. In such cases, the same Software License File can be applied to each device owned by that enterprise.
-
-### License Verification
-
-Software License Files are acquired from the Zebra Software License Server, stored locally or online, and referenced through the LicenseMgr. However, the server does not verify whether such files are matched to a particular Licensed Feature. If a valid Software License File is wrongly applied to Licensed Feature other than the intended feature, that feature will not be enabled and no error will result.
-
-To prevent this scenario, Zebra recommends using the Verification Method parameter (below) to verify that Licensed Feature Name(s) match those contained in the Software License File(s). This causes an error to be returned in the Result XML in the event of a mismatch.
-
 ### Main Functionality
 
 * Apply/Revoke Software License(s) from a device
@@ -40,9 +20,22 @@ To prevent this scenario, Zebra recommends using the Verification Method paramet
 * Specify the URL for an on-premise license administration server  
 * Enable/disable the Zebra License Manager app on a device
 
-<!--
-as of 11/3- NOT EXPOSED IN MX 7.1: 
-License Refresh
-License Refresh Interval
-License Mechanism
--->
+### License Manager App
+Some Zebra devices include a built-in app called License Manager, which allows device users and/or administrators to perform license-related tasks manually on the device. On some devices, this app can be disabled using the [LicenseAppUI parameter](#license-management-app-enabledisable). 
+
+![img](../../../../../images/mx/LicenseManager_app.png)
+_The License Manager icon (left), and the app's home screen showing multiple activated licenses._
+
+**[License Manager User Guide (PDF)](../../../../../images/mx/LicenseManager_3.1.1_user_guide.pdf)**
+
+### License Acquisition
+
+Software licenses are acquired from a Zebra Software License Server. They are issued as Software License Files and are associated with specific software components through the use of Licensed Feature Names. A Software License File can be used only to enable use of its associated Licensed Feature Name. A component can have multiple capabilities, each controlled through separate Licensed Feature Names. Alternatively, a component can have all of its capabilities controlled through a single Licensed Feature Name.
+
+Software Licenses acquired from a Zebra Software License Server may be Individual Device Licenses, with each Software License File tied to a specific device serial number. In such cases, it is necessary to apply the right Software License File to each matching device. The Zebra Software License Server also provides Enterprise Licenses, which are issued to all devices owned by an enterprise. In such cases, the same Software License File can be applied to each device owned by that enterprise.
+
+### License Verification
+
+Software License Files are acquired from the Zebra Software License Server, stored locally or online, and referenced through the LicenseMgr. However, the server does not verify whether such files are matched to a particular Licensed Feature. If a valid Software License File is wrongly applied to Licensed Feature other than the intended feature, that feature is enabled and no error results.
+
+To prevent this, Zebra recommends using the Verification Method parameter (below) to verify that Licensed Feature Name(s) match those contained in the Software License File(s). This causes an error to be returned in the Result XML in the event of a mismatch.

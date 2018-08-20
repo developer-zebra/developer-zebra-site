@@ -1,6 +1,6 @@
 ---
 csp: 
-title: Beep After Good Decode (Checkbox)
+title: Beep After Good Decode (checkbox)
 type: parm
 order: 1
 mx: "7.1"

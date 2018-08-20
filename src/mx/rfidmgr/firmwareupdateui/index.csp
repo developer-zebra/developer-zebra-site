@@ -1,6 +1,6 @@
 ---
 csp: rfidmgr
-title: Firmware Update UI (Checkbox)
+title: Firmware Update UI (checkbox)
 type: parm
 order: 1
 mx: "7.1"

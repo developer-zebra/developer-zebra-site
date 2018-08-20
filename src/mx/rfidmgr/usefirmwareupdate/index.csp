@@ -1,6 +1,6 @@
 ---
 csp: 
-title: Update Firmware (Checkbox)
+title: Update Firmware (checkbox)
 type: parm
 order: 1
 mx: "7.1"

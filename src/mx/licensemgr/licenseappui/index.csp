@@ -1,9 +1,9 @@
 ---
-csp: 
+csp: licensemgr
 title: License Management UI
 type: parm
 order: 90
-mx: "7.2"
+mx: "8.1"
 devicetype: A
 parm:
   pivotal: No
@@ -13,18 +13,18 @@ parm:
     - code: 0
       devicetype: A
       name: do_not_change
-      mx: "7.2"
-      description: This value (or the absence of this parm from the XML) will cause no change to device settings; any previously selected setting will be retained.
+      mx: "8.1"
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: disabled
-      mx: "7.2"
-      description: Enables the Zebra license management UI on the device.
+      mx: "8.1"
+      description: Disables the Zebra License Manager app on the device.
     - code: 2
       devicetype: A
       name: enabled
-      mx: "7.2"
-      description: Disables the Zebra license management UI on the device.
+      mx: "8.1"
+      description: Enables the Zebra License Manager app on the device.
 ---
 
 Used to enable/disable the Zebra license management user interface (UI), which is used for viewing and managing the software licenses on the device. 

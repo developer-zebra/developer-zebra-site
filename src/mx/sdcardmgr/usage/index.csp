@@ -16,7 +16,7 @@ parm:
       osx: "4.3"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to Storage Card usage on a device.
+      description: This value (or the absence of this parm from the XML) causes no change to Storage Card usage on a device; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Enable

@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Settings Control UI (checkbox)
 type: parm
-order: 1
+order: 15
 mx: "8.1"
 apilevel: "26"
 devicetype: A

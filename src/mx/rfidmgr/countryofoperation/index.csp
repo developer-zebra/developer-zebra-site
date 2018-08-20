@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Country of Operation
 type: parm
-order: 5
+order: 30
 mx: "8.1"
 apilevel: "26"
 devicetype: A

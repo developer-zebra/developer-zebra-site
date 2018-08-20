@@ -1,8 +1,8 @@
 ---
 csp: rfidmgr
-title: Beep After Good Decode (checkbox)
+title: Beep After Decode (checkbox)
 type: parm
-order: 1
+order: 22
 mx: "8.1"
 apilevel: "26"
 devicetype: A,B
@@ -15,12 +15,12 @@ parm:
       mx: "8.1"
       devicetype: A,B
       name: (checked)
-      description: Enables a beep-sound whenever an RFID tag is successfully scanned.
+      description: Enables a beep-sound whenever an RFID tag is successfully decoded.
     - code: 0
       mx: "8.1"
       devicetype: A,B
       name: (unchecked)
-      description: Suppresses a beep-sound when an RFID tag is scanned. 
+      description: Suppresses a beep-sound when an RFID tag is decoded. 
 ---
 
-Controls whether a beep-sound is played when an RFID tag is successfully scanned.
+Controls whether a beep-sound is played when an RFID tag is successfully decoded.

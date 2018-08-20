@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Temperature Notification (checkbox)
 type: parm
-order: 1
+order: 28
 mx: "8.1"
 apilevel: "26"
 devicetype: A

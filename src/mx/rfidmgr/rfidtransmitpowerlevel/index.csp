@@ -1,20 +1,19 @@
 ---
 csp: rfidmgr
-title: Firmware Filename
+title: RFID Transmit Power Level
 type: parm
-order: 2
-mx: "7.1"
-apilevel: "24"
+order: 35
+mx: "8.1"
+apilevel: "26"
 devicetype: A
 parm:
-  presentif: The "RFID Advanced Options" checkbox is Checked
   pivotal: No
-  name: FirmwareUpdate
+  name: RFIDTransmitPowerLevel
   type: string
 ---
 
-Used to specify the name of the device-resident file that contains a firmware update for the device. **Update file must be stored in device file system**. 
+Used to specify the power level for transmitting the RFID tag contents. 
 
 **Input value rules**: 
 
-* String from 1-255 characters containing a fully qualified path and file name
+* String from 1&ndash;255 characters

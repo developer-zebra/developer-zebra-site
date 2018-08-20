@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Reset Radio to Factory Default (checkbox)
 type: parm
-order: 1
+order: 38
 mx: "8.1"
 apilevel: "26"
 devicetype: A

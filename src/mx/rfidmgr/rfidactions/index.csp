@@ -1,29 +1,52 @@
 ---
 csp: rfidmgr
-title: Enable Channel Hopping
+title: RFID Actions
 type: parm
-order: 2
+order: 1
 mx: "8.1"
 apilevel: "26"
 devicetype: A
 parm:
   pivotal: No
-  presentif: The "RFID Advanced Options" checkbox is Checked
-  name: Enablechannelhopping
+  name: RfidActions
   type: list
   list:
-    - code: 0
-      devicetype: A
-      name: Disable
-      mx: "8.1"
-      apilevel: "26"
-      description: Disables the timestamp for first-sent codes.
     - code: 1
       devicetype: A
-      name: Enable
+      name: FirmwareUpdate
+      mx: "7.1"
+      apilevel: "24"
+      description: Updates the firmware on the connected RFID peripheral.
+    - code: 2
+      devicetype: A
+      name: ExportSettings
+      mx: "8.1"
+      apilevel: "26"
+      description: Saves the current device settings for export.
+    - code: 3
+      devicetype: A
+      name: Default
+      mx: "8.1"
+      apilevel: "26"
+      description: This value (or the absence of this parm from the XML) causes no change to RFID device settings; any previously selected setting is retained.
+    - code: 4
+      devicetype: A
+      name: ResetRadio
+      mx: "8.1"
+      apilevel: "26"
+      description: Resets the RFID radio; similar to cycling the power.
+    - code: 5
+      devicetype: A
+      name: ResetRadiotofactorydefault
+      mx: "8.1"
+      apilevel: "26"
+      description: Returns the RFID radio to its factory-default settings.
+    - code: 6
+      devicetype: A
+      name: FirmwareUpdateAndResetFactoryDefaults
       mx: "8.1"
       apilevel: "26"
       description: Enables the timestamp for first-sent codes.
 ---
 
-Controls whether send a timestamp. 
+Used to specify an action to perform on the connected RFID peripheral. 

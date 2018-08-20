@@ -17,4 +17,4 @@ Used to specify the name of the device-resident file that contains a firmware up
 
 **Input value rules**: 
 
-* String from 1-255 characters containing a fully qualified path and file name
+* String from 1&ndash;255 characters containing a fully qualified path and file name

@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Battery Notification (checkbox)
 type: parm
-order: 1
+order: 26
 mx: "8.1"
 apilevel: "26"
 devicetype: A

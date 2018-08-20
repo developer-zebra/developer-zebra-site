@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: RFID Manager UI (checkbox)
 type: parm
-order: 1
+order: 9
 mx: "8.1"
 apilevel: "26"
 devicetype: A

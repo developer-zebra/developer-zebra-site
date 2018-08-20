@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: RFID Advanced Options (checkbox)
 type: parm
-order: 1
+order: 20
 mx: "8.1"
 apilevel: "26"
 devicetype: A

@@ -1,10 +1,10 @@
 ---
-csp: 
+csp: rfidmgr
 title: RFID Manager UI (checkbox)
 type: parm
 order: 1
-mx: "7.1"
-apilevel: "24"
+mx: "8.1"
+apilevel: "26"
 devicetype: A
 parm:
   pivotal: No
@@ -12,12 +12,12 @@ parm:
   type: list
   list:
     - code: 1
-      mx: "4.4"
+      mx: "8.1"
       devicetype: A,B
       name: (checked)
       description: Uses firmware update.
     - code: 0
-      mx: "4.4"
+      mx: "8.1"
       devicetype: A,B
       name: (unchecked)
       description: Does not use the firmware update. 

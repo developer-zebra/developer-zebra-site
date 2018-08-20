@@ -1,5 +1,5 @@
 ---
-csp: 
+csp: rfidmgr
 title: Update Firmware (checkbox)
 type: parm
 order: 1
@@ -12,12 +12,12 @@ parm:
   type: list
   list:
     - code: 1
-      mx: "4.4"
+      mx: "7.1"
       devicetype: A,B
       name: (checked)
       description: Causes device firmware to be updated.
     - code: 0
-      mx: "4.4"
+      mx: "7.1"
       devicetype: A,B
       name: (unchecked)
       description: Skips the device firmware update. 

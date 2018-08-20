@@ -3,8 +3,8 @@ csp: rfidmgr
 title: Firmware Update UI (checkbox)
 type: parm
 order: 1
-mx: "7.1"
-apilevel: "24"
+mx: "8.1"
+apilevel: "26"
 devicetype: A
 parm:
   pivotal: No
@@ -12,17 +12,17 @@ parm:
   type: list
   list:
     - code: 1
-      mx: "7.1"
+      mx: "8.1"
       apilevel: "24"
       devicetype: A,B
       name: (checked)
-      description: Uses firmware update.
+      description: Shows the firmware-update user interface.
     - code: 0
-      mx: "7.1"
+      mx: "8.1"
       apilevel: "24"
       devicetype: A,B
       name: (unchecked)
-      description: Does not use the firmware update. 
+      description: Hides the firmware-update user interface. 
 ---
 
-Controls firmware update function to update the firmware of an RFID accessory. 
+Used to enable/disable the user interface for updating the firmware on an RFID accessory.

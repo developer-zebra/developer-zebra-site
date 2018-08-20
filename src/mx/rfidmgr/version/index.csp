@@ -1,0 +1,20 @@
+---
+csp: rfidmgr
+title: Firmware Filename
+type: parm
+order: 2
+mx: "7.1"
+apilevel: "24"
+devicetype: A
+parm:
+  presentif: The "RFID Advanced Options" checkbox is Checked
+  pivotal: No
+  name: FirmwareUpdate
+  type: string
+---
+
+Used to specify the name of the device-resident file that contains a firmware update for the device. **Update file must be stored in device file system**. 
+
+**Input value rules**: 
+
+* String from 1-255 characters containing a fully qualified path and file name

@@ -27,4 +27,4 @@ parm:
       description: Enables the Zebra License Manager app on the device.
 ---
 
-Used to enable/disable the Zebra License Manager, an Android app for viewing and managing software licenses on the device. [See Overview](#overview) app usage information. 
+Controls device-user access to Zebra License Manager, an Android app for viewing and managing software licenses on the device. [See Overview](#overview) for more information. 

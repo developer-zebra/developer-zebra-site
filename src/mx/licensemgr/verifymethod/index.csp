@@ -15,7 +15,7 @@ parm:
       devicetype: A
       name: Do not verify feature name
       mx: "4.3"
-      description: This value (or the absence of this parm from the XML) will cause no change to the verification method; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to the verification method; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Verify against a standard feature name

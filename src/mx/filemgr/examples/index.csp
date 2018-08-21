@@ -84,6 +84,22 @@ order: 99
 
 	:::xml
 	<wap-provisioningdoc>
+		<characteristic type="FileMgr" version="5.0" >
+			<parm name="FileAction" value="1"/>
+		<characteristic type="file-details">
+			<parm name="TargetAccessMethod" value="2"/>
+			<parm name="SourceAccessMethod" value="1"/>
+			<parm name="SourceURI" value="ftp-p://username:password@192.168.0.100:21/secure/TestFile.apk"/>
+			<parm name="TargetPathAndFileName" value="/sdcard/TestFile.apk"/>
+	    </characteristic>
+	  </characteristic>
+	</wap-provisioningdoc>
+
+<!--
+8/21/18- replaced code below with code above, per PM. 
+
+	:::xml
+	<wap-provisioningdoc>
 	  <characteristic version="0.6" type="FileMgr">
 	    <parm name="FileAction" value="1" />
 	    <characteristic type="file-details">
@@ -94,8 +110,25 @@ order: 99
 	    </characteristic>
 	  </characteristic>
 	</wap-provisioningdoc>
+-->
 
 ### Download From FTPS through Open SSL Server with Implicit connection
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="FileMgr" version="5.0" >
+			<parm name="FileAction" value="1"/>
+		<characteristic type="file-details">
+			<parm name="TargetAccessMethod" value="2"/>
+			<parm name="SourceAccessMethod" value="1"/>
+			<parm name="SourceURI" value="ftp-p://username:password@192.168.0.100:21/secure/TestFile.apk?ftpClient.keyStore.file=/enterprise/usr/stagenow/vsftpd.p12&amp;ftpClient.keyStore.password=password&amp;ftpClient.keyStore.type=PKCS12&amp;implicit=true&amp;protocol=SSL"/>
+			<parm name="TargetPathAndFileName" value="/sdcard/TestFile.apk"/>
+	    </characteristic>
+	  </characteristic>
+	</wap-provisioningdoc>
+
+<!--
+8/21/18- replaced code below with code above, per PM. 
 
 	:::xml
 	<wap-provisioningdoc>
@@ -109,3 +142,4 @@ order: 99
 	    </characteristic>
 	  </characteristic>
 	</wap-provisioningdoc>
+-->

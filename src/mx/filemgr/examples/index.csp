@@ -96,7 +96,7 @@ order: 99
 	</wap-provisioningdoc>
 
 <!--
-8/21/18- replaced code below with code above, per PM. 
+8/21/18- replaced code below with code above, per SN PM (DD). 
 
 	:::xml
 	<wap-provisioningdoc>
@@ -128,7 +128,7 @@ order: 99
 	</wap-provisioningdoc>
 
 <!--
-8/21/18- replaced code below with code above, per PM. 
+8/21/18- replaced code below with code above, per SN PM (DD). 
 
 	:::xml
 	<wap-provisioningdoc>

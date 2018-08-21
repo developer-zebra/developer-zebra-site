@@ -327,3 +327,6 @@ parm:
       devicetype: A,B
       name: UKRAINE
 ---
+
+Used to specify the country in which the RFID module will operate, so as to conform to regulatory requirements of that region in accordance with local laws. 
+

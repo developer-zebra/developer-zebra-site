@@ -22,7 +22,7 @@ parm:
       name: ExportSettings
       mx: "8.1"
       apilevel: "26"
-      description: Saves the current device settings for export to a file.
+      description: Saves the current RFID module settings to a file in the device file system.
     - code: 3
       devicetype: A
       name: Default
@@ -34,7 +34,7 @@ parm:
       name: ResetRadio
       mx: "8.1"
       apilevel: "26"
-      description: Resets the RFID radio; similar to cycling the power.
+      description: Resets the RFID radio.
     - code: 5
       devicetype: A
       name: ResetRadiotofactorydefault

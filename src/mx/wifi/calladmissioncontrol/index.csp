@@ -27,4 +27,4 @@ parm:
       description: Disables Call Admission Control on the device. 
 ---
 
-This is the On/Off switch for Call Admission Control, which can help prevent voice-traffic congestion and improve call quality. **Enabled by default**. When in use, the Wi-Fi stack negotiates to reserve bandwidth using Traffic Specification (TSPEC), the IEEE 802.11e standard for Quality of Service-capable networks on which Call Admission Control is mandated. 
+This is the On/Off switch for Call Admission Control, which can help prevent voice-traffic congestion and improve call quality. **Enabled by default**. When used on a network on which Call Admission Control is mandated, the Wi-Fi stack negotiates to reserve bandwidth using Traffic Specification (TSPEC), the IEEE 802.11e standard for Quality of Service-capable networks. 

@@ -1,0 +1,34 @@
+---
+csp: fotamgr
+title: Overview
+type: text
+devicetype: A
+order: 0
+---
+The Battery Manager (BatteryMgr) allows configuration of the batery-charge indocator LED, low-battery prompts and thresholds used to determine when a battery should be decommissioned.
+
+### Main Functionality
+
+* Enable/disable the battery-charge indicator LED
+* Enable/disable the battery swap user interface
+* Set the Battery Usage Decommission Threshold for Smart Batteries
+* Set the Battery Percentage Decommission Threshold Gifted Batteries
+
+Zebra Android devices support three classes of batteries: Regular, Smart and Gifted. Regular batteries provide information only about battery level. Smart Batteries add the ability to uniquely identify each battery and track its origin and usage history. To those features, Gifted batteries add the ability to provide detailed charge monitoring and health information as well as more accurate "gas gauging" data.
+
+A key feature of Smart and Gifted batteries is the ability to determine when a battery is nearing the end of its useful life and should to be taken out of service. For Smart batteries, decommissioning is based strictly on the battery's charge history. For Gifted batteries, decommissioning decisions can be based on the richer information about battery condition provided. In either case, the determination of when a battery should be decommissioned is configurable to account for the demands placed on batteries in different environments.
+
+BatteryMgr allows configuration of the thresholds used to determine when a battery should be decommissioned. Once configured, these values (along with other battery parameters) are used by battery management software to determine the value of the decommission flag stored stored in a Smart or Gifted battery and carried with it thereafter.
+
+**Supported thresholds**:
+
+* Battery Usage Decommission Threshold
+	* A battery is considered to be 'decommissioned' if the battery usage number is greater than or equal to Battery Usage Decommission Threshold.
+	* Battery Usage Decommission Threshold is applicable for Smart Batteries and those for TC50 and TC75 devices.
+	* **Note:** The battery usage number is Aggregatecharge/RatedCapacity of the battery.
+* Percent Decommission Threshold
+	* A battery is considered to be decommissioned if the Health percentage of the battery is less than or equal to Percent Decommission Threshold.
+	* Percent Decommission Threshold is applicable for Gifted Batteries.
+	* **Note:** Health percentage is the ratio of "present_capacity" to "design_capacity" at a discharge rate of "design_capacity".
+
+The threshold values configured using BatteryMgr are stored in `batteryusage_decommission_threshold` or `percent_decommission_threshold` files, which persist on the device following any subsequent reboot or Enterprise Reset. A Factory Reset erases all such user data. Attempts to set a decommission threshold on a battery other than Smart or Gifted battery will return an error in the Result XML document.

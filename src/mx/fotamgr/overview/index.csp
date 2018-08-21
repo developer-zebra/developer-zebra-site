@@ -12,3 +12,4 @@ The FOTA Manager (FotaMgr) allows administrators to manage Zebra devices remotel
 * Enable/disable the State (active/inactive) of FOTA updates on the device 
 * Enable/disable the FOTA user interface on the device
 
+-----

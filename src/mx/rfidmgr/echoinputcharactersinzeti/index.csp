@@ -1,6 +1,6 @@
 ---
 csp: rfidmgr
-title: ZETI Echo Input
+title: Echo Input in ZETI
 type: parm
 order: 50
 mx: "8.1"
@@ -26,4 +26,7 @@ parm:
       description: Enables the timestamp for first-sent codes.
 ---
 
-Controls whether send a timestamp. 
+
+
+The Zebra Easy Text Interface (ZETI), is a Zebra-proprietary command syntax for programming its RFID and other devices. 
+

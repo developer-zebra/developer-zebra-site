@@ -30,5 +30,3 @@ parm:
 ---
 
 This parameter applies the hotspot configuration on the device. When enabled, the device acts as an internet access point for nearby devices, sharing its Wi-Fi or cellular connection according to the settings configured using the hotspot parameters below. **Hotspot functionality is supported only on certain Zebra devices, including the ET50, ET55 and TC56 devices running Android 5.0 Lollipop and higher**. 
-
-> **Note**: This parameter does not control activation of the hotspot feature on the device. 

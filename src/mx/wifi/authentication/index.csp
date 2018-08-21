@@ -60,12 +60,12 @@ parm:
       mx: "5.0"
       devicetype: A,B
       name: PEAP-NONE
-      description: 
+      description: Not supported.
     - code: 15
       mx: "8.1"
       devicetype: A,B
       name: EAP-PWD
-      description: 
+      description: This indicates that the network requires authentication using the 802.1x Extensible Authentication Protocol, which uses a shared password for authentication.
 ---
 
 Used to specify the Authentication Mode used by the network. When a Security Mode of "Enterprise" is selected, an Authentication Mode must be specified to determine how authentication is performed as part of the 802.1x EAP type used by the network.

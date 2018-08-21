@@ -29,7 +29,7 @@ parm:
       mx: "8.1"
       osx: "8.5"
       devicetype: A
-      description: Disables "Do Not Disturb" mode on the device, preventing the device user from suppressing notifications.
+      description: Disables "Do Not Disturb" mode on the device, preventing the device user from suppressing app notifications.
 ---
 
-This is the On/Off switch for "Do Not Disturb" mode on the device. Disabling DND (option 2) prevents the device user from entering DND mode and suppressing notifications on the device.
+This is the On/Off switch for "Do Not Disturb" mode, which suppresses notifications on the device. Disabling DND (option 2) prevents the device user from entering DND mode. 

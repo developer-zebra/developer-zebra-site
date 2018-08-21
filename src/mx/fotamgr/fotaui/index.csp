@@ -24,7 +24,7 @@ parm:
       devicetype: A
       name: Disable
       mx: "8.1"
-      description: Prevents the device user from changing the FOTA state (active/inactive)
+      description: Prevents the device user from changing the FOTA state (active/inactive).
 ---
 
-Controls whether the device user is able to change the FOTA state (active/inactive) on the device. 
+Controls whether the device user is able to access the FOTA client user interface on the device.

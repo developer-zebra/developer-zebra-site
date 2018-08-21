@@ -19,7 +19,7 @@ parm:
       mx: "8.1"
       devicetype: A
       name: Enable
-      description: Enables Call Admission Control on the device. 
+      description: Enables Call Admission Control on the device (default). 
     - code: 0
       mx: "8.1"
       devicetype: A
@@ -27,5 +27,4 @@ parm:
       description: Disables Call Admission Control on the device. 
 ---
 
-This is the On/Off switch for Call Admission Control, which can help prevent voice-traffic congestion.  
-
+This is the On/Off switch for Call Admission Control, which can help prevent voice-traffic congestion and improve call quality. When enabled, the Wi-Fi stack negotiates to reserve bandwidth using Traffic Specification (TSPEC), the IEEE 802.11e standard for Quality of Service-capable networks on which Call Admission Control is mandated. **Enabled by default**. 

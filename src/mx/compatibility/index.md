@@ -112,6 +112,10 @@ csps:
     url: /mx/filemgr
     csp: filemgr
   - type: section
+    title: FOTA Manager
+    url: /mx/fotamgr
+    csp: fotamgr
+  - type: section
     title: GPRS Manager
     url: /mx/gprsmgr
     csp: gprsmgr

@@ -1,6 +1,6 @@
 ---
-title: Battery Manager
-description: The BatteryMgr allows configuration of the thresholds used to determine when a battery needs to be decommissioned.
+title: FOTA Manager
+description: FotaMgr allows allows administrators to manage Zebra devices remotely by sending Firmware Over The Air (FOTA) configurations.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

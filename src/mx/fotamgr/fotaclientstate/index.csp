@@ -1,0 +1,30 @@
+---
+csp: fotamgr
+title: FOTA State
+type: parm
+order: 2
+mx: "8.1"
+devicetype: A
+parm:
+  pivotal: No
+  name: FotaClientState
+  type: list
+  list:
+    - code: 0
+      mx: "8.1"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to battery settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Turn On
+      mx: "8.1"
+      description: Enables over-the-air firmware updates. 
+    - code: 2
+      devicetype: A
+      name: Turn Off
+      mx: "8.1"
+      description: Disables over-the-air firmware updates. 
+---
+
+Controls whether over-the-air firmware updates are allowed on the device. 

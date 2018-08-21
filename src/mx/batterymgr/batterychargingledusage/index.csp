@@ -15,7 +15,7 @@ parm:
       mx: "8.1"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) cause no change to battery settings; any previously selected setting is retained.
+      description: This value (or the absence of this parm from the XML) causes no change to battery settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Turn On

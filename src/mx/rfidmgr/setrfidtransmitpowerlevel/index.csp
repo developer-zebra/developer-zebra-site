@@ -1,0 +1,25 @@
+---
+csp: rfidmgr
+title: Set RFID Transmit Power Level (checkbox)
+type: parm
+order: 38
+mx: "8.1"
+apilevel: "26"
+devicetype: A
+parm:
+  pivotal: No
+  name: SetRFIDTransmitPowerLevel
+  type: list
+  list:
+    - code: 1
+      mx: "8.1"
+      devicetype: A,B
+      name: (checked)
+      description: Allows a custom RFID Transmit power-level value to be set.
+    - code: 0
+      mx: "8.1"
+      devicetype: A,B
+      name: (unchecked)
+      description: Uses the default RFID Transmit power level. 
+---
+

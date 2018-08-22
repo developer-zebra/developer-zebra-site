@@ -17,3 +17,6 @@ Used to specify the power level for transmitting the RFID tag contents.
 **Input value rules**: 
 
 * String from 1&ndash;255 characters
+
+FROM HELP TEXT:
+RF power in tenths of dBm in the range [0, 300], inclusive. For example, to specify 29.5 dBm, enter 295.

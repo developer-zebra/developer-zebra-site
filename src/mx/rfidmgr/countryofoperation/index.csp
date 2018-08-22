@@ -14,7 +14,7 @@ parm:
   list:
     - code: 0
       devicetype: A,B
-      name: NO_REGION_SET
+      name: NO_CHANGE
     - code: 1
       devicetype: A,B
       name: ALBANIA

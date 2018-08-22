@@ -27,3 +27,6 @@ parm:
 ---
 
 Controls whether send a timestamp. 
+
+FROM HELP TEXT:
+Channel index list derived from a fixed channel sequence for a given region or country. The RFID manager application can list the fixed channel sequence list (please refer to product user guide). For example, to enable channels 865.7, and 866.9 in the ETSI region, which has the channel sequence 865.7, 866.3, 866.9, 867.5, one must enter 1, 3 in this field."

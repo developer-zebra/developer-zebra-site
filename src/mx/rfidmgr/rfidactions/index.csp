@@ -1,6 +1,6 @@
 ---
 csp: rfidmgr
-title: RFID Actions
+title: RFID Action
 type: parm
 order: 1
 mx: "8.1"
@@ -8,7 +8,7 @@ apilevel: "26"
 devicetype: A
 parm:
   pivotal: No
-  name: RfidActions
+  name: RfidAction
   type: list
   list:
     - code: 1

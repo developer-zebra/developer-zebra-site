@@ -15,11 +15,11 @@ parm:
       mx: "8.1"
       devicetype: A,B
       name: (checked)
-      description: Allows a custom RFID Transmit power-level value to be set.
+      description: Allows a custom RFID transmit power-level value to be set.
     - code: 0
       mx: "8.1"
       devicetype: A,B
       name: (unchecked)
-      description: Uses the default RFID Transmit power level. 
+      description: Uses the default or pre-set RFID transmit power level. 
 ---
 

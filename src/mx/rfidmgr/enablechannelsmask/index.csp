@@ -1,6 +1,6 @@
 ---
 csp: rfidmgr
-title: Channels Mask Enable/Disable
+title: Channel Mask Enable/Disable
 type: parm
 order: 42
 mx: "8.1"
@@ -26,7 +26,7 @@ parm:
       description: Enables the timestamp for first-sent codes.
 ---
 
-Controls whether send a timestamp. 
+Controls whether to enable channel masking to ensure compliance with local regulatory requirements. 
 
 FROM HELP TEXT:
 Channel index list derived from a fixed channel sequence for a given region or country. The RFID manager application can list the fixed channel sequence list (please refer to product user guide). For example, to enable channels 865.7, and 866.9 in the ETSI region, which has the channel sequence 865.7, 866.3, 866.9, 867.5, one must enter 1, 3 in this field."

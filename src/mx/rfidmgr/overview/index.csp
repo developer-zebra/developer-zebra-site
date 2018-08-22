@@ -6,12 +6,13 @@ devicetype: A
 order: 0
 ---
 
-The RFID Manager (RfidMgr) is used to update, manage and control Zebra RFID peripherals. 
+The RFID Manager (RfidMgr) is used to update, manage and configure Zebra RFID peripherals. 
 
 ### Main Functionality
 
 * Update device firmware 
 * Set the country of operation
+* Specify RF channels to use/mask
 * Reset the radio
 * Reset to factory-default RFID settings
 * Enable/Disable: 

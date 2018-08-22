@@ -24,6 +24,12 @@ parm:
       mx: "8.1"
       apilevel: "26"
       description: Enables .
+    - code: 2
+      devicetype: A
+      name: Do not change
+      mx: "8.1"
+      apilevel: "26"
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
 ---
 
 Controls whether . 

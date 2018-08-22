@@ -14,17 +14,17 @@ parm:
       mx: "8.1"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) causes no change to battery settings; any previously selected setting is retained.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Enable
       mx: "8.1"
-      description: Enables the device user change the FOTA state (active/inactive). 
+      description: Enables the FOTA user interface on the device, giving the device user the ability to change the FOTA state (active/inactive). 
     - code: 2
       devicetype: A
       name: Disable
       mx: "8.1"
-      description: Prevents the device user from changing the FOTA state (active/inactive).
+      description: Prevents the device user from accessing the FOTA user interface on the device and potentially changing the FOTA state (active/inactive).
 ---
 
-Controls whether the device user is able to access the FOTA client user interface on the device.
+Controls device-user access the FOTA user interface and the ability to change the FOTA Client app state (active/inactive) on the device. When disabled (option 2), the device user is prevented from changing the FOTA Client state (active/inactive) on the device, and therefore its ability to accept firmware updates. 

@@ -19,12 +19,12 @@ parm:
       devicetype: A
       name: Turn On
       mx: "8.1"
-      description: Enables over-the-air firmware updates. 
+      description: Activates the FOTA Client on the device, enabling over-the-air firmware updates. 
     - code: 2
       devicetype: A
       name: Turn Off
       mx: "8.1"
-      description: Disables over-the-air firmware updates. 
+      description: Deactivates the FOTA Client on the device, disabling over-the-air firmware updates. 
 ---
 
-Controls whether over-the-air firmware updates are allowed on the device. 
+This is the On/Off switch for the FOTA Client app on the device, which manages over-the-air firmware updates. **Enabled by default**. 

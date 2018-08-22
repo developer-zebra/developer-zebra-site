@@ -5,11 +5,11 @@ type: text
 devicetype: A
 order: 0
 ---
-The FOTA Manager (FotaMgr) allows administrators to manage Zebra devices remotely by sending Firmware Over The Air (FOTA) configurations.  
+The FOTA Manager (FotaMgr) controls the Firmware Over The Air (FOTA) Client on the device, which allows administrators to update Zebra devices remotely by sending configurations to the device over the air. 
 
 ### Main Functionality
 
-* Enable/disable the State (active/inactive) of FOTA updates on the device 
+* Set the State (active/inactive) of the FOTA Client on the device 
 * Enable/disable the FOTA user interface on the device
 
 -----

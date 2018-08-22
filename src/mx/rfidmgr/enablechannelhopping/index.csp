@@ -32,4 +32,4 @@ parm:
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
 ---
 
-to ensure compliance with local regulatory requirements.
+Controls whether the device will use channel hopping (also known as frequency hopping), which can help prevent interference when multiple RFID readers are used in close proximity. **Use of this parameter might be necessary for compliance with local regulatory requirements**. 

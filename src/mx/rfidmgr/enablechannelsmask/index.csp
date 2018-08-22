@@ -26,4 +26,4 @@ parm:
       description: Enables the timestamp for first-sent codes.
 ---
 
-Controls whether to enable channel masking to ensure compliance with local regulatory requirements. 
+Controls whether to enable channel masking, which permits some RF channels to be used by the device while  others are not. **Use of this parameter might be necessary for compliance with local regulatory requirements**. 

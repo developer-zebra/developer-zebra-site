@@ -5,6 +5,7 @@ type: parm
 order: 2
 mx: "8.1"
 devicetype: A
+info: Supported only on devices running Android 6.x Marshmallow and later.
 parm:
   pivotal: No
   name: FotaClientState

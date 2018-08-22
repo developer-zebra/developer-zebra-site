@@ -5,6 +5,7 @@ type: parm
 order: 7
 mx: "8.1"
 devicetype: A
+info: Supported only on devices running Android 6.x Marshmallow and later.
 parm:
   pivotal: No
   name: FotaUi
@@ -27,4 +28,4 @@ parm:
       description: Prevents the device user from accessing the FOTA user interface on the device and potentially changing the FOTA state (active/inactive).
 ---
 
-Controls device-user access the FOTA user interface and the ability to change the FOTA Client app state (active/inactive) on the device. When disabled (option 2), the device user is prevented from changing the FOTA Client state (active/inactive) on the device, and therefore its ability to accept firmware updates. 
+Controls device-user access the FOTA user interface and the ability to change the FOTA Client app state (active/inactive) on the device. When disabled (option 2), the device user is prevented from changing the FOTA Client state (active/inactive), and therefore its ability to accept firmware updates. 

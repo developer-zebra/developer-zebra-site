@@ -8,11 +8,14 @@ order: 0
 
 The RFID Manager (RfidMgr) is used to update, manage and configure Zebra RFID peripherals. 
 
+> **Supported on Zebra MC333R and MC339R devices only**. 
+
 ### Main Functionality
 
 * Update device firmware 
 * Set the country of operation
 * Specify RF channels to use/mask
+* Specify the RF transmit power
 * Reset the radio
 * Reset to factory-default RFID settings
 * Enable/Disable: 
@@ -25,6 +28,8 @@ The RFID Manager (RfidMgr) is used to update, manage and configure Zebra RFID pe
  	* Battery status
  	* Device temperature
  	* Successful decode
+
+-----
 
 <!--
 * Set the link profile

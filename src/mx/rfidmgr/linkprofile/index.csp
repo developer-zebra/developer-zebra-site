@@ -6,6 +6,7 @@ order: 2
 mx: "6.1"
 apilevel: "23"
 devicetype: A
+info: Supported on Zebra MC333R and MC339R devices only.
 parm:
   pivotal: No
   presentif: The "RFID Advanced Options" checkbox is Checked

@@ -6,6 +6,7 @@ order: 38
 mx: "8.1"
 apilevel: "26"
 devicetype: A
+info: Supported on Zebra MC333R and MC339R devices only.
 parm:
   pivotal: No
   name: SetRFIDTransmitPowerLevel
@@ -23,4 +24,4 @@ parm:
       description: Uses the default or pre-set RFID transmit power level. 
 ---
 
-Controls whether the power level for RFID transmissions can be set for reading and writing of RFID tags. This setting can be adjusted to compensate for variations in conditions at the site, such as obstructions or distance to target. **Note: Changes to this setting can affect battery life**.
+Controls whether the power level for RFID transmissions can be set for reading and writing of RFID tags. This setting can be adjusted to compensate for variations in conditions at the site, such as obstructions or distance to target. **Note: Changes to this setting might affect battery life**.

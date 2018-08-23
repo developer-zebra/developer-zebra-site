@@ -6,6 +6,7 @@ order: 45
 mx: "8.1"
 apilevel: "26"
 devicetype: A
+info: Supported on Zebra MC333R and MC339R devices only.
 parm:
   pivotal: No
   presentif: The "RFID Advanced Options" checkbox is Checked
@@ -23,13 +24,15 @@ parm:
       name: Enable
       mx: "8.1"
       apilevel: "26"
-      description: Enables .
+      description: Enables the selection of specific tags when multiple tags are in the field of view.
     - code: 0
       devicetype: A
       name: Disable
       mx: "8.1"
       apilevel: "26"
-      description: Disables .
+      description: Disables the specific tag selection when multiple tags are in view.
 ---
 
-Controls whether . 
+Controls whether the device user . 
+
+As a device administrator I should be able to select the interested tags from all the tags in field of view. This will have options query applying to all tags or with SL asserted or with SL de-asserted. Default will be "Do not Change". To control operation to be performed on selected interested Tag population to avoid noise, increased performance.

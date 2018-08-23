@@ -6,6 +6,7 @@ order: 2
 mx: "8.1"
 apilevel: "26"
 devicetype: A
+info: Supported on Zebra MC333R and MC339R devices only.
 parm:
   pivotal: No
   name: Version

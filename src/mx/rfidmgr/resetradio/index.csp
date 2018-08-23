@@ -16,13 +16,13 @@ parm:
       mx: "8.1"
       devicetype: A,B
       name: (checked)
-      description: Uses firmware update.
+      description: Signals the device to reset the RFID radio.
     - code: 0
       mx: "8.1"
       devicetype: A,B
       name: (unchecked)
-      description: Does not use the firmware update. 
+      description: Does not signal the device to reset the RFID radio. 
 ---
 
-Used to 
+as a troubleshooting measure
 

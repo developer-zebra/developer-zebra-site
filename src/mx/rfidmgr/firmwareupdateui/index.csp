@@ -17,7 +17,7 @@ parm:
       apilevel: "24"
       devicetype: A,B
       name: (checked)
-      description: Shows the firmware-update user interface.
+      description: Displays the firmware-update user interface.
     - code: 0
       mx: "8.1"
       apilevel: "24"
@@ -26,4 +26,4 @@ parm:
       description: Hides the firmware-update user interface. 
 ---
 
-Used to enable/disable the user interface for updating the firmware on an RFID accessory.
+Used to enable/disable the user interface for updating the firmware on an RFID peripheral.

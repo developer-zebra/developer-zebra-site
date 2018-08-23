@@ -8,8 +8,8 @@ apilevel: "26"
 devicetype: A
 info: Supported on Zebra MC333R and MC339R devices only.
 parm: 
- pivotal: No
- presentif: The "RFID Config Advanced Options" checkbox is Checked
+  pivotal: No
+  presentif: The "RFID Config Advanced Options" checkbox is Checked
   name: CountryofOperation
   type: list
   list:
@@ -157,8 +157,9 @@ parm:
     - code: 47
       devicetype: A,B
       name: SRI_LANKA
+    - code: 48
       devicetype: A,B
-      name: TAIWAN"
+      name: TAIWAN
     - code: 49
       devicetype: A,B
       name: THAILAND

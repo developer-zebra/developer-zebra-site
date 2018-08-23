@@ -16,12 +16,12 @@ parm:
       mx: "8.1"
       devicetype: A,B
       name: (checked)
-      description: Uses firmware update.
+      description: Displays advanced RFID configuration options on the device.
     - code: 0
       mx: "8.1"
       devicetype: A,B
       name: (unchecked)
-      description: Does not use the firmware update. 
+      description: Hides advanced RFID configuration options on the device. 
 ---
 
-Used to 
+Used to enable/disable access to advanced RFID configuration options on the device. Hiding these settings (option 0) prevents the device user changing advanced settings. 

@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Channel Mask
 type: parm
-order: 43
+order: 38
 mx: "8.1"
 apilevel: "26"
 devicetype: A

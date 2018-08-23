@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Channel Hopping Enable/Disable
 type: parm
-order: 40
+order: 34
 mx: "8.1"
 apilevel: "26"
 devicetype: A

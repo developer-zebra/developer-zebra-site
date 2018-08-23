@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Channel Mask Enable/Disable
 type: parm
-order: 42
+order: 36
 mx: "8.1"
 apilevel: "26"
 devicetype: A

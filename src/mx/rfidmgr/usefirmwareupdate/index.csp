@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Update Firmware (checkbox)
 type: parm
-order: 1
+order: 3
 mx: "7.1"
 apilevel: "24"
 devicetype: A

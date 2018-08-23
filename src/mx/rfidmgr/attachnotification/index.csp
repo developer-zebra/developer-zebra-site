@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Attach Notification (checkbox)
 type: parm
-order: 24
+order: 22
 mx: "8.1"
 apilevel: "26"
 devicetype: A

@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Beep After Decode (checkbox)
 type: parm
-order: 22
+order: 20
 mx: "8.1"
 apilevel: "26"
 devicetype: A,B

@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: RFID Transmit Power Level
 type: parm
-order: 39
+order: 42
 mx: "8.1"
 apilevel: "26"
 devicetype: A

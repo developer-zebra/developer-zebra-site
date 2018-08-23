@@ -2,7 +2,7 @@
 csp: rfidmgr
 title: Set RFID Transmit Power Level (checkbox)
 type: parm
-order: 38
+order: 40
 mx: "8.1"
 apilevel: "26"
 devicetype: A

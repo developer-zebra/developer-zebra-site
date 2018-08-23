@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Echo Input in ZETI
 type: parm
 order: 50

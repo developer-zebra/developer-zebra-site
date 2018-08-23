@@ -26,4 +26,4 @@ parm:
       description: Hides the firmware-update user interface. 
 ---
 
-Used to enable/disable the user interface for updating the firmware on an RFID peripheral.
+Used to enable/disable the on-device user interface for updating the firmware on an RFID peripheral.

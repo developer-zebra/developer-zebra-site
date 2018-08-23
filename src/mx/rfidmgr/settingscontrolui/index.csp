@@ -24,4 +24,4 @@ parm:
       description: Does not use the firmware update. 
 ---
 
-Used to 
+Used to enable/disable the on-device user interface for changing the settings of an RFID peripheral.

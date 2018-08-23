@@ -19,22 +19,23 @@ _During the 4-5 minute firmware update, status is displayed in the Notification 
 * Reset the radio
 * Reset device to factory-default settings
 * Export device settings for troubleshooting
-* Enable/Disable: 
- * RFID manager UI
- * Settings control UI
- * Notifications for: 
- 	* Attachment
- 	* Battery status
- 	* Device temperature
- 	* Successful decode
+* Enable/disable: 
+ * Firmware update on-device user interface
+ * RFID manager on-device user interface
+ * Settings control on-device user interface
+* Enable/disable notifications for: 
+ * Attachment
+ * Battery status
+ * Device temperature
+ * Successful decode (beep)
 * Configuration of advanced options: 
  * Channel hopping
  * Channel masking
- * Set the country of operation
- * RFID transmit power level
+ * Country of operation
  * Query select
  * Query session 
  * Query target
+ * RFID transmit power level
 
 -----
 

@@ -4,8 +4,8 @@ title: FOTA State
 type: parm
 order: 2
 mx: "8.1"
+apilevel: "23"
 devicetype: A,B
-info: Supported only on devices running Android 6.x Marshmallow and later.
 parm:
   pivotal: No
   name: FotaClientState
@@ -13,6 +13,7 @@ parm:
   list:
     - code: 0
       mx: "8.1"
+      apilevel: "23"
       devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to battery settings; any previously selected setting is retained.
@@ -20,11 +21,13 @@ parm:
       devicetype: A,B
       name: Turn On
       mx: "8.1"
+      apilevel: "23"
       description: Activates the FOTA Client on the device, enabling over-the-air firmware updates (default). 
     - code: 2
       devicetype: A,B
       name: Turn Off
       mx: "8.1"
+      apilevel: "23"
       description: Deactivates the FOTA Client on the device, disabling over-the-air firmware updates. 
 ---
 

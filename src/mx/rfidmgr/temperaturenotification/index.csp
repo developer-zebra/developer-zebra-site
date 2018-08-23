@@ -9,6 +9,7 @@ devicetype: A
 info: Supported on Zebra MC333R and MC339R devices only.
 parm:
   pivotal: No
+  presentif: The "RFID Config Advanced Options" checkbox is Checked
   name: TemperatureNotification
   type: list
   list:

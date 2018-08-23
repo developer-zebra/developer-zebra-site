@@ -9,7 +9,7 @@ devicetype: A
 info: Supported on Zebra MC333R and MC339R devices only.
 parm:
   pivotal: No
-  presentif: The "RFID Advanced Options" checkbox is Checked
+  presentif: The "RFID Config Advanced Options" checkbox is Checked
   name: QueryTarget
   type: list
   list:
@@ -24,13 +24,13 @@ parm:
       name: Enable
       mx: "8.1"
       apilevel: "26"
-      description: Enables .
+      description: Enables the selection of specific tags when multiple tags are in range.
     - code: 0
       devicetype: A
       name: Disable
       mx: "8.1"
       apilevel: "26"
-      description: Disables .
+      description: Disables the specific tag selection when multiple tags are in range.
 ---
 
-Controls whether . 
+Controls whether the device user can select the desired tags when multiple tags are within scanning range. When using this parameter, queries in a scanning session support tags flagged as "Flag A," "Flag B" or both. Use of this parameter can help improve scanning performance and avoid the "noise" of decoding unwanted tags.

@@ -13,14 +13,10 @@ The RFID Manager (RfidMgr) is used to update, manage and configure Zebra RFID pe
 ### Main Functionality
 
 * Update device firmware 
-* Set the country of operation
-* Specify RF channels to use/mask
-* Specify the RF transmit power
 * Reset the radio
-* Reset to factory-default RFID settings
+* Reset device to factory-default settings
+* Export device settings for troubleshooting
 * Enable/Disable: 
- * Channel hopping
- * Configuration of advanced options
  * RFID manager UI
  * Settings control UI
  * Notifications for: 
@@ -28,6 +24,14 @@ The RFID Manager (RfidMgr) is used to update, manage and configure Zebra RFID pe
  	* Battery status
  	* Device temperature
  	* Successful decode
+* Configuration of advanced options: 
+ * Channel hopping
+ * Channel masking
+ * Set the country of operation
+ * RFID transmit power level
+ * Query select
+ * Query session 
+ * Query target
 
 -----
 

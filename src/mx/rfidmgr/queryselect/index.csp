@@ -9,7 +9,7 @@ devicetype: A
 info: Supported on Zebra MC333R and MC339R devices only.
 parm:
   pivotal: No
-  presentif: The "RFID Advanced Options" checkbox is Checked
+  presentif: The "RFID Config Advanced Options" checkbox is Checked
   name: QuerySelect
   type: list
   list:
@@ -24,15 +24,14 @@ parm:
       name: Enable
       mx: "8.1"
       apilevel: "26"
-      description: Enables the selection of specific tags when multiple tags are in the field of view.
+      description: Enables the selection of specific tags when multiple tags are in range.
     - code: 0
       devicetype: A
       name: Disable
       mx: "8.1"
       apilevel: "26"
-      description: Disables the specific tag selection when multiple tags are in view.
+      description: Disables the specific tag selection when multiple tags are in range.
 ---
 
-Controls whether the device user . 
+Controls whether the device user can select the desired tags when multiple tags are within scanning range. Queries support "all tags," or those with "SL asserted" or "SL de-asserted." Use of this parameter can help improve scanning performance and avoid the "noise" of decoding unwanted tags.  
 
-As a device administrator I should be able to select the interested tags from all the tags in field of view. This will have options query applying to all tags or with SL asserted or with SL de-asserted. Default will be "Do not Change". To control operation to be performed on selected interested Tag population to avoid noise, increased performance.

@@ -20,7 +20,7 @@ parm:
       devicetype: A,B
       name: Turn On
       mx: "8.1"
-      description: Activates the FOTA Client on the device, enabling over-the-air firmware updates. 
+      description: Activates the FOTA Client on the device, enabling over-the-air firmware updates (default). 
     - code: 2
       devicetype: A,B
       name: Turn Off

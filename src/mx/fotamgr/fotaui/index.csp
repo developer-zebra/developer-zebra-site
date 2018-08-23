@@ -28,4 +28,4 @@ parm:
       description: Prevents the device user from accessing the FOTA user interface on the device and potentially changing the FOTA state (active/inactive).
 ---
 
-Controls device-user access the FOTA user interface and the ability to change the FOTA Client app state (active/inactive) on the device. When disabled (option 2), the device user is prevented from changing the FOTA Client state (active/inactive), and therefore its ability to accept firmware updates. 
+Controls device-user access the FOTA user interface and the ability to change the FOTA Client app state (active/inactive) on the device. When disabled (option 2), the device user is prevented from changing the FOTA Client state or its ability to accept firmware updates. 

@@ -4,7 +4,7 @@ title: FOTA UI Enable/Disable
 type: parm
 order: 7
 mx: "8.1"
-devicetype: A
+devicetype: A,B
 info: Supported only on devices running Android 6.x Marshmallow and later.
 parm:
   pivotal: No
@@ -13,16 +13,16 @@ parm:
   list:
     - code: 0
       mx: "8.1"
-      devicetype: A
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Enable
       mx: "8.1"
       description: Enables the FOTA user interface on the device, giving the device user the ability to change the FOTA state (active/inactive). 
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Disable
       mx: "8.1"
       description: Prevents the device user from accessing the FOTA user interface on the device and potentially changing the FOTA state (active/inactive).

@@ -13,12 +13,12 @@ parm:
   list:
     - code: 1
       mx: "7.1"
-      devicetype: A,B
+      devicetype: A
       name: (checked)
       description: Causes device firmware to be updated.
     - code: 0
       mx: "7.1"
-      devicetype: A,B
+      devicetype: A
       name: (unchecked)
       description: Skips the device firmware update. 
 ---

@@ -47,7 +47,7 @@ parm:
       name: FirmwareUpdateAndResetFactoryDefaults
       mx: "8.1"
       apilevel: "26"
-      description: Enables the timestamp for first-sent codes.
+      description: Updates firmware and resets the RFID peripheral to its factory-default settings.
 ---
 
 Used to specify an action to perform on the connected RFID peripheral. 

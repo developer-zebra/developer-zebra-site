@@ -22,7 +22,7 @@ parm:
       mx: "8.1"
       devicetype: A
       name: (unchecked)
-      description: Uses the default or pre-set RFID transmit power level. 
+      description: Uses the default or previously set RFID transmit power level. 
 ---
 
-Controls whether the power level for RFID transmissions can be set for reading and writing of RFID tags. This setting can be adjusted to compensate for variations in conditions at the site, such as obstructions or distance to target. **Note: Changes to this setting might affect battery life**.
+Controls whether the power level for RFID transmissions can be set for reading and writing of RFID tags. This setting can be adjusted to compensate for variations in conditions at the site, such as obstructions or distance to target. When unchecked, transmission power reverts to the default or previously set level. **Note: Changes to this setting might affect battery life**.

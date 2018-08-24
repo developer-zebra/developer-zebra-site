@@ -13,24 +13,31 @@ parm:
   name: QueryTarget
   type: list
   list:
-    - code: 2
+    - code: 3
       devicetype: A
       name: Do not change
       mx: "8.1"
       apilevel: "26"
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
-    - code: 1
+    - code: 0
       devicetype: A
-      name: Enable
+      name: InventoryTargetFlagA
       mx: "8.1"
       apilevel: "26"
       description: Enables the selection of specific tags when multiple tags are in range.
-    - code: 0
+    - code: 1
       devicetype: A
-      name: Disable
+      name: InventoryTargetFlagB
+      mx: "8.1"
+      apilevel: "26"
+      description: Disables the specific tag selection when multiple tags are in range.
+    - code: 2
+      devicetype: A
+      name: ABFlip
       mx: "8.1"
       apilevel: "26"
       description: Disables the specific tag selection when multiple tags are in range.
 ---
 
-Controls whether the device user can select the desired tags when multiple tags are within scanning range. When using this parameter, queries in a scanning session support tags flagged as "Flag A," "Flag B" or both. Use of this parameter can help improve scanning performance and avoid the "noise" of decoding unwanted tags.
+Used to determine whether a Tag with an inventoried flag (A or B) is selected in a session when multiple tags are within scanning range. When using this parameter, flags can change from "A" to "B" or vice-versa. Use of this parameter can help improve scanning performance and avoid the "noise" of decoding unwanted tags.
+

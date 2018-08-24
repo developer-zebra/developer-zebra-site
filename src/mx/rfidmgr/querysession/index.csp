@@ -13,24 +13,36 @@ parm:
   name: QuerySession
   type: list
   list:
-    - code: 2
+   - code: 4
       devicetype: A
       name: Do not change
       mx: "8.1"
       apilevel: "26"
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
-    - code: 1
-      devicetype: A
-      name: Enable
-      mx: "8.1"
-      apilevel: "26"
-      description: Enables the selection of session-flagged tags when multiple tags are in range.
     - code: 0
       devicetype: A
-      name: Disable
+      name: SessionS0
       mx: "8.1"
       apilevel: "26"
-      description: Disables the session flagging for tag selection when multiple tags are in range.
+      description: Enables the selection of specific tags when multiple tags are in range.
+    - code: 1
+      devicetype: A
+      name: SessionS1
+      mx: "8.1"
+      apilevel: "26"
+      description: Disables the specific tag selection when multiple tags are in range.
+    - code: 2
+      devicetype: A
+      name: SessionS2
+      mx: "8.1"
+      apilevel: "26"
+      description: Disables the specific tag selection when multiple tags are in range.
+    - code: 3
+      devicetype: A
+      name: SessionS3
+      mx: "8.1"
+      apilevel: "26"
+      description: Disables the specific tag selection when multiple tags are in range.
 ---
 
-Controls whether the device user can select the desired tags when multiple tags are within scanning range. When using this parameter, queries in a scanning session can recognize tags flagged in one of four sessions: S0, S1, S2 or S3, each with an "A" or "B" designation. Use of this parameter can help improve scanning performance and avoid the "noise" of decoding unwanted tags.  
+Used to select the desired tags when multiple tags are within scanning range. When using this parameter, queries in a scanning session can recognize tags flagged in one of four sessions: S0, S1, S2 or S3, each with an "A" or "B" designation. Use of this parameter can help improve scanning performance and avoid the "noise" of decoding unwanted tags.  

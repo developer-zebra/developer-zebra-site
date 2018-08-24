@@ -24,13 +24,13 @@ parm:
       name: Enable
       mx: "8.1"
       apilevel: "26"
-      description: Enables the timestamp for first-sent codes.
+      description: Enables channel hopping on the device.
     - code: 0
       devicetype: A
       name: Disable
       mx: "8.1"
       apilevel: "26"
-      description: Disables the timestamp for first-sent codes.
+      description: Disables channel hopping on the device.
 ---
 
 Controls whether the device will use channel hopping (also known as frequency hopping), which can help prevent interference when multiple RFID readers are used in close proximity. **Use of this parameter might be necessary for compliance with local regulatory requirements**. 

@@ -16,318 +16,423 @@ parm:
     - code: 0
       devicetype: A
       name: NO_CHANGE
+      mx: "8.1"
     - code: 1
       devicetype: A
       name: ALBANIA
+      mx: "8.1"
     - code: 2
       devicetype: A
       name: ANDORRA
+      mx: "8.1"
     - code: 3
       devicetype: A
       name: ARGENTINA
+      mx: "8.1"
     - code: 4
       devicetype: A
       name: AUSTRALIA
+      mx: "8.1"
     - code: 5
       devicetype: A
       name: BANGLADESH
+      mx: "8.1"
     - code: 6
       devicetype: A
       name: BHUTAN
+      mx: "8.1"
     - code: 7
       devicetype: A
       name: BOLIVIA
+      mx: "8.1"
     - code: 8
       devicetype: A
       name: BOSNIA_HERZENGOVINA
+      mx: "8.1"
     - code: 9
       devicetype: A
       name: BRAZIL
+      mx: "8.1"
     - code: 10
       devicetype: A
       name: CANADA
+      mx: "8.1"
     - code: 11
       devicetype: A
       name: CAMBODIA
+      mx: "8.1"
     - code: 12
       devicetype: A
       name: CHILE
+      mx: "8.1"
     - code: 13
       devicetype: A
       name: CHINA
+      mx: "8.1"
     - code: 14
       devicetype: A
       name: COLOMBIA
+      mx: "8.1"
     - code: 15
       devicetype: A
       name: DOMINICAN_REPUBLIC
+      mx: "8.1"
     - code: 16
       devicetype: A
       name: ECUADOR
+      mx: "8.1"
     - code: 17
       devicetype: A
       name: EL_SALVADOR
+      mx: "8.1"
     - code: 18
       devicetype: A
       name: UNITED_KINGDOM
+      mx: "8.1"
     - code: 19
       devicetype: A
       name: GUATEMALA
+      mx: "8.1"
     - code: 20
       devicetype: A
       name: GUAM
+      mx: "8.1"
     - code: 21
       devicetype: A
       name: HONG_KONG
+      mx: "8.1"
     - code: 22
       devicetype: A
       name: INDIA
+      mx: "8.1"
     - code: 23
       devicetype: A
       name: INDONESIA
+      mx: "8.1"
     - code: 24
       devicetype: A
       name: JAPAN_1W_LBT
+      mx: "8.1"
     - code: 25
       devicetype: A
       name: JAPAN_250MW
+      mx: "8.1"
     - code: 26
       devicetype: A
       name: LAOS_EU
+      mx: "8.1"
     - code: 27
       devicetype: A
       name: LAOS_FCC
+      mx: "8.1"
     - code: 28
       devicetype: A
       name: MACAU
+      mx: "8.1"
     - code: 29
       devicetype: A
       name: MACEDONIA
+      mx: "8.1"
     - code: 30
       devicetype: A
       name: MALAYSIA
+      mx: "8.1"
     - code: 31
       devicetype: A
       name: MEXICO
+      mx: "8.1"
     - code: 32
       devicetype: A
       name: MONACO
+      mx: "8.1"
     - code: 33
       devicetype: A
       name: MOTENEGRO
+      mx: "8.1"
     - code: 34
       devicetype: A
       name: NEW_ZEALAND_FCC
+      mx: "8.1"
     - code: 35
       devicetype: A
       name: NEW_ZEALAND_EU
+      mx: "8.1"
     - code: 36
       devicetype: A
       name: PAKISTAN
+      mx: "8.1"
     - code: 37
       devicetype: A
       name: PANAMA
+      mx: "8.1"
     - code: 38
       devicetype: A
       name: PARAGUAY
+      mx: "8.1"
     - code: 39
       devicetype: A
       name: PERU
+      mx: "8.1"
     - code: 40
       devicetype: A
       name: PHILIPPINES
+      mx: "8.1"
     - code: 41
       devicetype: A
       name: PUERTO_RICO
+      mx: "8.1"
     - code: 42
       devicetype: A
       name: RUSSIA
+      mx: "8.1"
     - code: 43
       devicetype: A
       name: SAUDI_ARABIA
+      mx: "8.1"
     - code: 44
       devicetype: A
       name: SINGAPORE
+      mx: "8.1"
     - code: 45
       devicetype: A
       name: SOUTH_AFRICA
+      mx: "8.1"
     - code: 46
       devicetype: A
       name: SOUTH_KOREA
+      mx: "8.1"
     - code: 47
       devicetype: A
       name: SRI_LANKA
+      mx: "8.1"
     - code: 48
       devicetype: A
       name: TAIWAN
+      mx: "8.1"
     - code: 49
       devicetype: A
       name: THAILAND
+      mx: "8.1"
     - code: 50
       devicetype: A
       name: TURKEY
+      mx: "8.1"
     - code: 51
       devicetype: A
       name: UAE
+      mx: "8.1"
     - code: 52
       devicetype: A
       name: UNITED_STATES
+      mx: "8.1"
     - code: 53
       devicetype: A
       name: URUGUAY
+      mx: "8.1"
     - code: 54
       devicetype: A
       name: VENEZUELA
+      mx: "8.1"
     - code: 55
       devicetype: A
       name: VIETNAM
+      mx: "8.1"
     - code: 56
       devicetype: A
       name: VIRGINIA_ISLAND
+      mx: "8.1"
     - code: 57
       devicetype: A
       name: ETSI302.208compliantgeneric
+      mx: "8.1"
     - code: 58
       devicetype: A
       name: FCCPart-16compliantgeneric
+      mx: "8.1"
     - code: 59
       devicetype: A
       name: ISRAEL
+      mx: "8.1"
     - code: 60
       devicetype: A
       name: ALGERIA
+      mx: "8.1"
     - code: 61
       devicetype: A
       name: ARMENIA
+      mx: "8.1"
     - code: 62
       devicetype: A
       name: AUSTRIA
+      mx: "8.1"
     - code: 63
       devicetype: A
       name: AZERBAIJAN
+      mx: "8.1"
     - code: 64
       devicetype: A
       name: BAHRAIN
+      mx: "8.1"
     - code: 65
       devicetype: A
       name: BELGIUM
+      mx: "8.1"
     - code: 66
       devicetype: A
       name: BULGARIA
+      mx: "8.1"
     - code: 67
       devicetype: A
       name: COSTA_RICA
+      mx: "8.1"
     - code: 68
       devicetype: A
       name: CROATIA
+      mx: "8.1"
     - code: 69
       devicetype: A
       name: CYPRUS
+      mx: "8.1"
     - code: 70
       devicetype: A
       name: CZECH_REPUBLIC
+      mx: "8.1"
     - code: 71
       devicetype: A
       name: DENMARK
+      mx: "8.1"
     - code: 72
       devicetype: A
       name: EGYPT
+      mx: "8.1"
     - code: 73
       devicetype: A
       name: ESTONIA
+      mx: "8.1"
     - code: 74
       devicetype: A
       name: FINLAND
+      mx: "8.1"
     - code: 75
       devicetype: A
       name: FRANCE
+      mx: "8.1"
     - code: 76
       devicetype: A
       name: GEORGIA
+      mx: "8.1"
     - code: 77
       devicetype: A
       name: GERMANY
+      mx: "8.1"
     - code: 78
       devicetype: A
       name: GREECE
+      mx: "8.1"
     - code: 79
       devicetype: A
       name: HUNGARY
+      mx: "8.1"
     - code: 80
       devicetype: A
       name: ICELAND
+      mx: "8.1"
     - code: 81
       devicetype: A
       name: IRELAND
+      mx: "8.1"
     - code: 82
       devicetype: A
       name: ITALY
+      mx: "8.1"
     - code: 83
       devicetype: A
       name: JORDAN
+      mx: "8.1"
     - code: 84
       devicetype: A
       name: KAZAKHSTAN
+      mx: "8.1"
     - code: 85
       devicetype: A
       name: KUWAIT
+      mx: "8.1"
     - code: 86
       devicetype: A
       name: LATVIA
+      mx: "8.1"
     - code: 87
       devicetype: A
       name: LITHUANIA
+      mx: "8.1"
     - code: 88
       devicetype: A
       name: LUXEMBOURG
+      mx: "8.1"
     - code: 89
       devicetype: A
       name: MALTA
+      mx: "8.1"
     - code: 90
       devicetype: A
       name: NETHERLANDS
+      mx: "8.1"
     - code: 91
       devicetype: A
       name: NORWAY
+      mx: "8.1"
     - code: 92
       devicetype: A
       name: OMAN
+      mx: "8.1"
     - code: 93
       devicetype: A
       name: POLAND
+      mx: "8.1"
     - code: 94
       devicetype: A
       name: PORTUGAL
+      mx: "8.1"
     - code: 95
       devicetype: A
       name: QATAR
+      mx: "8.1"
     - code: 96
       devicetype: A
       name: ROMANIA
+      mx: "8.1"
     - code: 97
       devicetype: A
       name: SERBIA
+      mx: "8.1"
     - code: 98
       devicetype: A
       name: SLOVAKIA
+      mx: "8.1"
     - code: 99
       devicetype: A
       name: SLOVENIA
+      mx: "8.1"
     - code: 100
       devicetype: A
       name: SPAIN
+      mx: "8.1"
     - code: 101
       devicetype: A
       name: SWEDEN
+      mx: "8.1"
     - code: 102
       devicetype: A
       name: SWITZERLAND
+      mx: "8.1"
     - code: 103
       devicetype: A
       name: TUNISIA
+      mx: "8.1"
     - code: 104
       devicetype: A
       name: UKRAINE
+      mx: "8.1"
 ---
 
 Used to specify the country in which the RFID module will operate to ensure compliance with local regulatory requirements. 

@@ -19,16 +19,7 @@ _During the 4-5 minute firmware update, status is displayed in the Notification 
 * Reset the radio
 * Reset device to factory-default settings
 * Export device settings for troubleshooting
-* Enable/disable: 
- * Firmware update on-device user interface
- * RFID manager on-device user interface
- * Settings control on-device user interface
-* Enable/disable notifications for: 
- * Attachment
- * Battery status
- * Device temperature
- * Successful decode (beep)
-* Configuration of advanced options: 
+* Enable/disable configuration of advanced options: 
  * Channel hopping
  * Channel masking
  * Country of operation
@@ -42,6 +33,16 @@ _During the 4-5 minute firmware update, status is displayed in the Notification 
 <!--
 
 RFID specs -> https://www.gs1.org/sites/default/files/docs/epc/uhfc1g2_1_2_0-standard-20080511.pdf
+
+* Enable/disable: 
+ * Firmware update on-device user interface
+ * RFID manager on-device user interface
+ * Settings control on-device user interface
+* Enable/disable notifications for: 
+ * Attachment
+ * Battery status
+ * Device temperature
+ * Successful decode (beep)
 
 * Set the link profile
 * Set the Tari level from 6250 - 25000

@@ -24,19 +24,19 @@ parm:
       name: InventoryTargetFlagA
       mx: "8.1"
       apilevel: "26"
-      description: Enables the selection of specific tags when multiple tags are in range.
+      description: Enables the selection tags with the "A" flag when multiple tags are in range.
     - code: 1
       devicetype: A
       name: InventoryTargetFlagB
       mx: "8.1"
       apilevel: "26"
-      description: Disables the specific tag selection when multiple tags are in range.
+      description: Enables the selection tags with the "B" flag when multiple tags are in range.
     - code: 2
       devicetype: A
       name: ABFlip
       mx: "8.1"
       apilevel: "26"
-      description: Disables the specific tag selection when multiple tags are in range.
+      description: Swaps the "A" and "B" flags when selecting inventoried tags.
 ---
 
 Used to determine whether a Tag with an inventoried flag (A or B) is selected in a session when multiple tags are within scanning range. When using this parameter, flags can change from "A" to "B" or vice-versa. Use of this parameter can help improve scanning performance and avoid the "noise" of decoding unwanted tags.

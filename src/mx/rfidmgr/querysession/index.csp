@@ -13,7 +13,7 @@ parm:
   name: QuerySession
   type: list
   list:
-   - code: 4
+    - code: 4
       devicetype: A
       name: Do not change
       mx: "8.1"

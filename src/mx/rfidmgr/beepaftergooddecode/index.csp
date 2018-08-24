@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Beep After Decode (checkbox)
 type: parm
 order: 20

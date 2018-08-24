@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Firmware Update UI (checkbox)
 type: parm
 order: 12

@@ -1,7 +1,7 @@
 ---
 csp: rfidmgr
 title: RFID Manager
-description: The RfidMgr is a plug-in CSP for controlling optional RFID scanning accessories.
+description: RFID Manager is used to update, manage and configure supported Zebra RFID peripherals. 
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

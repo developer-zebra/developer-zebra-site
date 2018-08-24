@@ -1,5 +1,5 @@
 ---
-csp: rfidmgr
+csp: 
 title: Battery Notification (checkbox)
 type: parm
 order: 25
@@ -16,12 +16,12 @@ parm:
       mx: "8.1"
       devicetype: A
       name: (checked)
-      description: Enables battery status notifications.
+      description: Enables battery charge level notifications.
     - code: 0
       mx: "8.1"
       devicetype: A
       name: (unchecked)
-      description: Disables battery status notifications. 
+      description: Disables battery charge level notifications. 
 ---
 
-Controls whether battery status notifications are displayed to the device user.  
+Controls whether battery status notifications are displayed to the device user. Battery level is considered low at 20% of charge, and critical at 8% or lower. This parameter is not programmable. 

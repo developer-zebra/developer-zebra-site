@@ -14,12 +14,12 @@ parm:
   list:
     - code: 1
       mx: "8.1"
-      devicetype: A,B
+      devicetype: A
       name: (checked)
       description: Restores .
     - code: 0
       mx: "8.1"
-      devicetype: A,B
+      devicetype: A
       name: (unchecked)
       description: Does not . 
 ---

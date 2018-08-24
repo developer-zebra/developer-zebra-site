@@ -15,13 +15,13 @@ parm:
     - code: 1
       mx: "8.1"
       apilevel: "24"
-      devicetype: A,B
+      devicetype: A
       name: (checked)
       description: Displays the firmware-update user interface.
     - code: 0
       mx: "8.1"
       apilevel: "24"
-      devicetype: A,B
+      devicetype: A
       name: (unchecked)
       description: Hides the firmware-update user interface. 
 ---

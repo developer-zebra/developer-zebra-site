@@ -5,7 +5,7 @@ type: parm
 order: 20
 mx: "8.1"
 apilevel: "26"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   name: BeepAfterGoodDecode
@@ -13,12 +13,12 @@ parm:
   list:
     - code: 1
       mx: "8.1"
-      devicetype: A,B
+      devicetype: A
       name: (checked)
       description: Enables a beep-sound whenever an RFID tag is successfully decoded.
     - code: 0
       mx: "8.1"
-      devicetype: A,B
+      devicetype: A
       name: (unchecked)
       description: Suppresses a beep-sound when an RFID tag is decoded. 
 ---

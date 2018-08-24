@@ -24,13 +24,13 @@ parm:
       name: Enable
       mx: "8.1"
       apilevel: "26"
-      description: Enables the selection of specific tags when multiple tags are in range.
+      description: Enables the selection of session-flagged tags when multiple tags are in range.
     - code: 0
       devicetype: A
       name: Disable
       mx: "8.1"
       apilevel: "26"
-      description: Disables the specific tag selection when multiple tags are in range.
+      description: Disables the session flagging for tag selection when multiple tags are in range.
 ---
 
-Controls whether the device user can select the desired tags when multiple tags are within scanning range. When using this parameter, queries in a scanning session support tags flagged as S0, S1, S2 or S3. Use of this parameter can help improve scanning performance and avoid the "noise" of decoding unwanted tags.  
+Controls whether the device user can select the desired tags when multiple tags are within scanning range. When using this parameter, queries in a scanning session can recognize tags flagged in one of four sessions: S0, S1, S2 or S3, each with an "A" or "B" designation. Use of this parameter can help improve scanning performance and avoid the "noise" of decoding unwanted tags.  

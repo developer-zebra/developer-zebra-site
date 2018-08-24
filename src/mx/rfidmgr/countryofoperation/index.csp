@@ -14,319 +14,319 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: A,B
+      devicetype: A
       name: NO_CHANGE
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: ALBANIA
     - code: 2
-      devicetype: A,B
+      devicetype: A
       name: ANDORRA
     - code: 3
-      devicetype: A,B
+      devicetype: A
       name: ARGENTINA
     - code: 4
-      devicetype: A,B
+      devicetype: A
       name: AUSTRALIA
     - code: 5
-      devicetype: A,B
+      devicetype: A
       name: BANGLADESH
     - code: 6
-      devicetype: A,B
+      devicetype: A
       name: BHUTAN
     - code: 7
-      devicetype: A,B
+      devicetype: A
       name: BOLIVIA
     - code: 8
-      devicetype: A,B
+      devicetype: A
       name: BOSNIA_HERZENGOVINA
     - code: 9
-      devicetype: A,B
+      devicetype: A
       name: BRAZIL
     - code: 10
-      devicetype: A,B
+      devicetype: A
       name: CANADA
     - code: 11
-      devicetype: A,B
+      devicetype: A
       name: CAMBODIA
     - code: 12
-      devicetype: A,B
+      devicetype: A
       name: CHILE
     - code: 13
-      devicetype: A,B
+      devicetype: A
       name: CHINA
     - code: 14
-      devicetype: A,B
+      devicetype: A
       name: COLOMBIA
     - code: 15
-      devicetype: A,B
+      devicetype: A
       name: DOMINICAN_REPUBLIC
     - code: 16
-      devicetype: A,B
+      devicetype: A
       name: ECUADOR
     - code: 17
-      devicetype: A,B
+      devicetype: A
       name: EL_SALVADOR
     - code: 18
-      devicetype: A,B
+      devicetype: A
       name: UNITED_KINGDOM
     - code: 19
-      devicetype: A,B
+      devicetype: A
       name: GUATEMALA
     - code: 20
-      devicetype: A,B
+      devicetype: A
       name: GUAM
     - code: 21
-      devicetype: A,B
+      devicetype: A
       name: HONG_KONG
     - code: 22
-      devicetype: A,B
+      devicetype: A
       name: INDIA
     - code: 23
-      devicetype: A,B
+      devicetype: A
       name: INDONESIA
     - code: 24
-      devicetype: A,B
+      devicetype: A
       name: JAPAN_1W_LBT
     - code: 25
-      devicetype: A,B
+      devicetype: A
       name: JAPAN_250MW
     - code: 26
-      devicetype: A,B
+      devicetype: A
       name: LAOS_EU
     - code: 27
-      devicetype: A,B
+      devicetype: A
       name: LAOS_FCC
     - code: 28
-      devicetype: A,B
+      devicetype: A
       name: MACAU
     - code: 29
-      devicetype: A,B
+      devicetype: A
       name: MACEDONIA
     - code: 30
-      devicetype: A,B
+      devicetype: A
       name: MALAYSIA
     - code: 31
-      devicetype: A,B
+      devicetype: A
       name: MEXICO
     - code: 32
-      devicetype: A,B
+      devicetype: A
       name: MONACO
     - code: 33
-      devicetype: A,B
+      devicetype: A
       name: MOTENEGRO
     - code: 34
-      devicetype: A,B
+      devicetype: A
       name: NEW_ZEALAND_FCC
     - code: 35
-      devicetype: A,B
+      devicetype: A
       name: NEW_ZEALAND_EU
     - code: 36
-      devicetype: A,B
+      devicetype: A
       name: PAKISTAN
     - code: 37
-      devicetype: A,B
+      devicetype: A
       name: PANAMA
     - code: 38
-      devicetype: A,B
+      devicetype: A
       name: PARAGUAY
     - code: 39
-      devicetype: A,B
+      devicetype: A
       name: PERU
     - code: 40
-      devicetype: A,B
+      devicetype: A
       name: PHILIPPINES
     - code: 41
-      devicetype: A,B
+      devicetype: A
       name: PUERTO_RICO
     - code: 42
-      devicetype: A,B
+      devicetype: A
       name: RUSSIA
     - code: 43
-      devicetype: A,B
+      devicetype: A
       name: SAUDI_ARABIA
     - code: 44
-      devicetype: A,B
+      devicetype: A
       name: SINGAPORE
     - code: 45
-      devicetype: A,B
+      devicetype: A
       name: SOUTH_AFRICA
     - code: 46
-      devicetype: A,B
+      devicetype: A
       name: SOUTH_KOREA
     - code: 47
-      devicetype: A,B
+      devicetype: A
       name: SRI_LANKA
     - code: 48
-      devicetype: A,B
+      devicetype: A
       name: TAIWAN
     - code: 49
-      devicetype: A,B
+      devicetype: A
       name: THAILAND
     - code: 50
-      devicetype: A,B
+      devicetype: A
       name: TURKEY
     - code: 51
-      devicetype: A,B
+      devicetype: A
       name: UAE
     - code: 52
-      devicetype: A,B
+      devicetype: A
       name: UNITED_STATES
     - code: 53
-      devicetype: A,B
+      devicetype: A
       name: URUGUAY
     - code: 54
-      devicetype: A,B
+      devicetype: A
       name: VENEZUELA
     - code: 55
-      devicetype: A,B
+      devicetype: A
       name: VIETNAM
     - code: 56
-      devicetype: A,B
+      devicetype: A
       name: VIRGINIA_ISLAND
     - code: 57
-      devicetype: A,B
+      devicetype: A
       name: ETSI302.208compliantgeneric
     - code: 58
-      devicetype: A,B
+      devicetype: A
       name: FCCPart-16compliantgeneric
     - code: 59
-      devicetype: A,B
+      devicetype: A
       name: ISRAEL
     - code: 60
-      devicetype: A,B
+      devicetype: A
       name: ALGERIA
     - code: 61
-      devicetype: A,B
+      devicetype: A
       name: ARMENIA
     - code: 62
-      devicetype: A,B
+      devicetype: A
       name: AUSTRIA
     - code: 63
-      devicetype: A,B
+      devicetype: A
       name: AZERBAIJAN
     - code: 64
-      devicetype: A,B
+      devicetype: A
       name: BAHRAIN
     - code: 65
-      devicetype: A,B
+      devicetype: A
       name: BELGIUM
     - code: 66
-      devicetype: A,B
+      devicetype: A
       name: BULGARIA
     - code: 67
-      devicetype: A,B
+      devicetype: A
       name: COSTA_RICA
     - code: 68
-      devicetype: A,B
+      devicetype: A
       name: CROATIA
     - code: 69
-      devicetype: A,B
+      devicetype: A
       name: CYPRUS
     - code: 70
-      devicetype: A,B
+      devicetype: A
       name: CZECH_REPUBLIC
     - code: 71
-      devicetype: A,B
+      devicetype: A
       name: DENMARK
     - code: 72
-      devicetype: A,B
+      devicetype: A
       name: EGYPT
     - code: 73
-      devicetype: A,B
+      devicetype: A
       name: ESTONIA
     - code: 74
-      devicetype: A,B
+      devicetype: A
       name: FINLAND
     - code: 75
-      devicetype: A,B
+      devicetype: A
       name: FRANCE
     - code: 76
-      devicetype: A,B
+      devicetype: A
       name: GEORGIA
     - code: 77
-      devicetype: A,B
+      devicetype: A
       name: GERMANY
     - code: 78
-      devicetype: A,B
+      devicetype: A
       name: GREECE
     - code: 79
-      devicetype: A,B
+      devicetype: A
       name: HUNGARY
     - code: 80
-      devicetype: A,B
+      devicetype: A
       name: ICELAND
     - code: 81
-      devicetype: A,B
+      devicetype: A
       name: IRELAND
     - code: 82
-      devicetype: A,B
+      devicetype: A
       name: ITALY
     - code: 83
-      devicetype: A,B
+      devicetype: A
       name: JORDAN
     - code: 84
-      devicetype: A,B
+      devicetype: A
       name: KAZAKHSTAN
     - code: 85
-      devicetype: A,B
+      devicetype: A
       name: KUWAIT
     - code: 86
-      devicetype: A,B
+      devicetype: A
       name: LATVIA
     - code: 87
-      devicetype: A,B
+      devicetype: A
       name: LITHUANIA
     - code: 88
-      devicetype: A,B
+      devicetype: A
       name: LUXEMBOURG
     - code: 89
-      devicetype: A,B
+      devicetype: A
       name: MALTA
     - code: 90
-      devicetype: A,B
+      devicetype: A
       name: NETHERLANDS
     - code: 91
-      devicetype: A,B
+      devicetype: A
       name: NORWAY
     - code: 92
-      devicetype: A,B
+      devicetype: A
       name: OMAN
     - code: 93
-      devicetype: A,B
+      devicetype: A
       name: POLAND
     - code: 94
-      devicetype: A,B
+      devicetype: A
       name: PORTUGAL
     - code: 95
-      devicetype: A,B
+      devicetype: A
       name: QATAR
     - code: 96
-      devicetype: A,B
+      devicetype: A
       name: ROMANIA
     - code: 97
-      devicetype: A,B
+      devicetype: A
       name: SERBIA
     - code: 98
-      devicetype: A,B
+      devicetype: A
       name: SLOVAKIA
     - code: 99
-      devicetype: A,B
+      devicetype: A
       name: SLOVENIA
     - code: 100
-      devicetype: A,B
+      devicetype: A
       name: SPAIN
     - code: 101
-      devicetype: A,B
+      devicetype: A
       name: SWEDEN
     - code: 102
-      devicetype: A,B
+      devicetype: A
       name: SWITZERLAND
     - code: 103
-      devicetype: A,B
+      devicetype: A
       name: TUNISIA
     - code: 104
-      devicetype: A,B
+      devicetype: A
       name: UKRAINE
 ---
 

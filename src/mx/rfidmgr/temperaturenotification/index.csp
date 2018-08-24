@@ -15,12 +15,12 @@ parm:
   list:
     - code: 1
       mx: "8.1"
-      devicetype: A,B
+      devicetype: A
       name: (checked)
       description: Enables notifications of temperature. 
     - code: 0
       mx: "8.1"
-      devicetype: A,B
+      devicetype: A
       name: (unchecked)
       description: Disables notifications of temperature. 
 ---

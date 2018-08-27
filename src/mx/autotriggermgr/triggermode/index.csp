@@ -2,7 +2,7 @@
 csp: autotriggermgr
 title: Trigger Mode
 type: parm
-order: 6
+order: 2
 mx: "8.1"
 devicetype: A
 info: Supported on the PS20 device only.
@@ -15,7 +15,7 @@ parm:
       mx: "8.1"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) causes no change to battery settings; any previously selected setting is retained.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
     - code: 0
       devicetype: A
       name: Off
@@ -33,6 +33,4 @@ parm:
       description: Sets the scan trigger to be responsive at all times. 
 ---
 
-Controls 
-
-**This parameter is supported only on the Zebra PS20 device**.
+Controls the trigger mode of the device, and whether automatic functions are invoked. **Default=Off**. 

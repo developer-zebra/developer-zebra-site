@@ -1,6 +1,6 @@
 ---
 title: Device Central Manager
-description: The Device Central Manager controls certain settings on the device and communicates with Zebra Device Central, which provides a centralized view of connection state, battery status, firmware version and other device conditions.
+description: The Device Central Manager controls settings on the device and communicates with Zebra Device Central, which provides a centralized view of connection state, battery status, firmware version and other device conditions.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

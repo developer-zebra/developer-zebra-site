@@ -1,0 +1,30 @@
+---
+csp: devicecentralmgr
+title: Bluetooth Pairing Control
+type: parm
+order: 4
+mx: "8.1"
+devicetype: A
+parm:
+  pivotal: No
+  name: BluetoothOnOffControl
+  type: list
+  list:
+    - code: 2
+      mx: "8.1"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 0
+      devicetype: A
+      name: Near
+      mx: "8.1"
+      description: Activates the selected Trigger Mode when the scanning device is within X feet of a trigger point (default). 
+    - code: 1
+      devicetype: A
+      name: Far
+      mx: "8.1"
+      description: Activates the selected Trigger Mode when the scanning device is within XX feet of a trigger point.
+---
+
+Determines the distance at which the Trigger Mode selected in the TriggerMode parameter is activated. **Default=Near**.

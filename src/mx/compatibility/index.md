@@ -92,6 +92,10 @@ csps:
     url: /mx/devadmin
     csp: devadmin
   - type: section
+    title: Device Central Manager
+    url: /mx/devicecentralmgr
+    csp: devicecentralmgr
+  - type: section
     title: DHCP Option Manager
     url: /mx/dhcpoptionmgr
     csp: dhcpoptionmgr

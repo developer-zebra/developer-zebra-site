@@ -1,6 +1,6 @@
 ---
 title: Enterprise Keyboard Manager
-description: EnterpriseKeyboardMgr controls the settings of Zebra's soft input device for Android.
+description: Enterprise Keyboard Manager controls the settings of Zebra's soft input device for Android.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

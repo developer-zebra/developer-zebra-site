@@ -10,21 +10,22 @@ parm:
   name: BluetoothOnOffControl
   type: list
   list:
-    - code: 2
+    - code: 0
       mx: "8.1"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
-    - code: 0
-      devicetype: A
-      name: Near
-      mx: "8.1"
-      description: Activates the selected Trigger Mode when the scanning device is within X feet of a trigger point (default). 
     - code: 1
       devicetype: A
-      name: Far
+      name: Single Pairing Per Device Class
       mx: "8.1"
-      description: Activates the selected Trigger Mode when the scanning device is within XX feet of a trigger point.
+      description: Limits the device to a single Bluetooth pairing per device class. 
+    - code: 2
+      devicetype: A
+      name: Multiple Pairings Per Device Class
+      mx: "8.1"
+      description: Allows the device to pair with an unlimited number of Bluetooth devices.
 ---
 
-Determines the distance at which the Trigger Mode selected in the TriggerMode parameter is activated. **Default=Near**.
+Controls whether the device is permitted to pair more than one Bluetooth device per class. 
+

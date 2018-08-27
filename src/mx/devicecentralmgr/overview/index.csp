@@ -10,11 +10,11 @@ The Device Central Manager (DeviceCentralMgr) allows configuration
 
 
 FROM HLD:
-The Device Central Manager CSP (a.k.a DeviceCentralMgr) defines a mechanism that is easy for Mobile device management (MDM) and customer/partner applications to use to easily configure the Device Central application.
-
-Device Central is a system utility available on Zebra devices. This utility provides a centralized view of a peripherals connection state and detailed device information, such as battery status and firmware version.
+The Device Central Manager CSP (a.k.a DeviceCentralMgr) defines a mechanism that is easy for Mobile device management (MDM) and customer/partner applications to use to easily configure the Device Central application. Device Central is a system utility available on Zebra devices. This utility provides a centralized view of a peripherals connection state and detailed device information, such as battery status and firmware version.
 
 ### Main Functionality
 
 * Show/hide Firmware update button
-* 
+* Enable/disable Bluetooth pairing
+* Limit pairing per device-class  
+

@@ -8,10 +8,14 @@ order: 0
 
 The RFID Manager (RfidMgr) is used to update, manage and configure Zebra RFID peripherals. 
 
+The [radio-frequency identification (RFID) specification](https://www.gs1.org/sites/default/files/docs/epc/uhfc1g2_1_2_0-standard-20080511.pdf) defines the physical and logical requirements for a passive-backscatter, "Interrogator-talks-first" (ITF) RFID system operating in the 860&ndash;960MHz range.
+
+An interrogator (aka "reader") transmits information in the specified frequency range to a tag (aka "label") by modulating a continuous-wave RF signal, which delivers energy to activate the tag. Passive tags receive all energy required for their operation in this way. The tag responds by modulating its antenna's reflection coefficient, "backscattering" an information signal that's read by the interrogator. RFID communications are half-duplex; while one side "talks" the other side only listens.
+
+<!--
 ![img](../../../../../images/mx/RFID_firmware_update_status.png)
 _During the 4-5 minute firmware update, status is displayed in the Notification bar._
-
-> **Supported on Zebra MC333R and MC339R devices only**. 
+-->
 
 ### Main Functionality
 
@@ -28,11 +32,11 @@ _During the 4-5 minute firmware update, status is displayed in the Notification 
  * Query target
  * RFID transmit power level
 
+> **Supported on Zebra MC333R and MC339R devices only**. 
+
 -----
 
 <!--
-
-RFID specs -> https://www.gs1.org/sites/default/files/docs/epc/uhfc1g2_1_2_0-standard-20080511.pdf
 
 * Enable/disable: 
  * Firmware update on-device user interface

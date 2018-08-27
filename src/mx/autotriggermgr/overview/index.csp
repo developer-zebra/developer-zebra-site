@@ -1,0 +1,20 @@
+---
+csp: batterymgr
+title: Overview
+type: text
+devicetype: A
+order: 0
+---
+The AutoTrigger Manager (AutoTriggerMgr) allows configuration
+
+The AutoTriggerMode CSP allows configuration parameters for the Auto-Trigger mode feature available on selected mobile computing devices. Certain devices (like PS20J plus) supports the use case of automatically triggering an input source (like barcode scanning) when an object is brought closer to the device. 
+The AutoTriggerMode CSP allows device admins to configure the AutoTriggerMode for the following settings
+1. Whether to enable/disable the AutoTrigger Mode.
+2. Whether to enable the AutoTrigger Mode only based on certain special conditions – like device placed in Cart/Holster/Holster mount.
+3. If turned on, the range (near or far) at which the object should be detected for triggering the scanning.
+
+
+### Main Functionality
+
+* Enable/disable Auto-trigger mode
+* 

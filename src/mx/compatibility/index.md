@@ -40,6 +40,10 @@ csps:
     url: /mx/audiovoluimgr
     csp: audiovoluimgr
   - type: section
+    title: AutoTrigger Manager
+    url: /mx/autotriggermgr
+    csp: autotriggermgr
+  - type: section
     title: Batch Manager
     url: /mx/batchmgr
     csp: batchmgr

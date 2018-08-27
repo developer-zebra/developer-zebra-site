@@ -1,6 +1,6 @@
 ---
-title: Battery Manager
-description: The BatteryMgr allows configuration of the thresholds used to determine when a battery needs to be decommissioned.
+title: AutoTrigger Manager
+description: The AutoTrigger Manager allows configures scan-trigger options based on device proximity to a trigger point.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,7 +11,7 @@ mxversions:
     value: 4.4
   - text: MX 5.0
     value: 5
-csp: batterymgr
+csp: autotriggermgr
 ---
 
 

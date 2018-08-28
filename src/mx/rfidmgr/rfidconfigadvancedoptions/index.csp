@@ -24,4 +24,4 @@ parm:
       description: Hides advanced RFID configuration options on the device. 
 ---
 
-Used to enable/disable access to advanced RFID configuration options on the device. Hiding these settings (option 0) prevents the device user changing advanced settings. 
+Used to enable/disable access to advanced RFID configuration options on the device. Hiding these settings (option 0) prevents the device user from changing advanced settings. 

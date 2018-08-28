@@ -21,4 +21,4 @@ Mobile device 101 may modify the interval based on that determination. For examp
 
 **Parm value input rules**: 
 
-* Integer from 200&ndash;5000 (ms) containing the desired interval at which to emit a locational beacon 
+* Integer from 200&ndash;5000 containing the desired interval (in ms) at which to emit a locational beacon 

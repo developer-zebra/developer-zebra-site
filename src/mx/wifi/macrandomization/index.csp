@@ -5,7 +5,7 @@ type: parm
 order: 7
 mx: "8.1"
 devicetype: A
-info: Supported on SDM660&ndash;platform devices only.
+info: Supported on SDM660-platform devices only.
 parm:
   pivotal: No
   name: MACRandomization

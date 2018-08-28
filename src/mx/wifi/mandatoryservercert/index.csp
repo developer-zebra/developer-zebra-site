@@ -16,7 +16,7 @@ Used to specify the name of a madatory certificate alias to be used to verify th
 
 **Parm value input rules**: 
 
-* String from 0-64 characters
+* String from 0&ndash;64 characters
 
 **Notes**:
 * When Security Mode is "Enterprise," the device must authenticate to an Authentication Server using the defined Authentication type. This involves sending potentially sensitive authentication credentials to the Authentication Server. Zebra does not recommended this unless the authenticity of the Authentication Server can be verified, for example to ensure that it is not attempting to carry out a "man in the middle" attack.

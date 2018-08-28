@@ -27,4 +27,4 @@ parm:
       description: Hides the Bluetooth On/Off button in the Device Central app on the device, preventing the device user from changing the Bluetooth state (active/inactive).
 ---
 
-This is the On/Off switch for Bluetooth control in the Device Central app on the device. This determines whether the device user is permitted change the state (active/inactive) of the Bluetooth radio through the Device Central app. **This parameter does <u>NOT</u> change the state (active/inactive) of the Bluetooth radio**; it controls the device user's ability to do so through the DC app.
+This is the On/Off switch for Bluetooth control in the Device Central app on the device. This determines whether the device user is permitted change the state (active/inactive) of the Bluetooth radio through the Device Central app. **This parameter does <u>NOT</u> change the state of the Bluetooth radio nor does it prevent the device user from changing the state through the Android Settings panel.

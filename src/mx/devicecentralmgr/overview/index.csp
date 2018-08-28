@@ -6,13 +6,13 @@ devicetype: A
 order: 0
 ---
 
-The Device Central Manager (DeviceCentralMgr) allows configuration of settings on the device for&ndash;and communicates with&ndash;Zebra Device Central, an enterprise tool for viewing connection state, battery status, firmware version and other device conditions from a central console.
+The Device Central Manager (DeviceCentralMgr) allows configuration of settings on the device for Zebra Device Central, an enterprise tool for viewing connection state, battery status, firmware version and other device conditions from a central console.
 
 ### Main Functionality
 
-* Show/hide Firmware update button
-* Enable/disable Bluetooth pairing
-* Limit pairing per device-class  
+* Show/hide firmware update button
+* Show/hide Bluetooth On/Off button
+* Restrict Bluetooth pairing to a single device per device class  
 
 -----
 

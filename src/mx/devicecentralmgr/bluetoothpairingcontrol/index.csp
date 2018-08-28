@@ -27,7 +27,7 @@ parm:
       description: Allows the device to pair with more than one device in a Bluetooth device class.
 ---
 
-Controls whether the device is permitted to pair with more than one Bluetooth device per device class (i.e. one headset and one printer). The settings of this parameter do not effect existing device pairings.
+Controls whether the device is permitted to pair with more than one Bluetooth device per device class (i.e. one headset and one printer). This parameter does not effect existing device pairings.
 
 **More information**: 
 * **[Class of Device Calculator](http://www.ampedrftech.com/cod.htm)** 

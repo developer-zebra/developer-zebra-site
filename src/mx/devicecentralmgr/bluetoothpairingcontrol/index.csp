@@ -7,7 +7,7 @@ mx: "8.1"
 devicetype: A
 parm:
   pivotal: No
-  name: BluetoothOnOffControl
+  name: BluetoothPairingControl
   type: list
   list:
     - code: 0
@@ -19,13 +19,18 @@ parm:
       devicetype: A
       name: Single Pairing Per Device Class
       mx: "8.1"
-      description: Limits the device to a single Bluetooth pairing per device class. 
+      description: Limits the device to a single Bluetooth pairing for each device class. 
     - code: 2
       devicetype: A
       name: Multiple Pairings Per Device Class
       mx: "8.1"
-      description: Allows the device to pair with an unlimited number of Bluetooth devices.
+      description: Allows the device to pair with more than one device in a Bluetooth device class.
 ---
 
-Controls whether the device is permitted to pair more than one Bluetooth device per class. 
+Controls whether the device is permitted to pair with more than one Bluetooth device per device class (i.e. one headset and one printer). The settings of this parameter do not effect existing device pairings.
+
+**More information**: 
+* **[Class of Device Calculator](http://www.ampedrftech.com/cod.htm)** 
+* **[Bluetooth.com Baseband specs](https://www.bluetooth.com/specifications/assigned-numbers/baseband)**
+
 

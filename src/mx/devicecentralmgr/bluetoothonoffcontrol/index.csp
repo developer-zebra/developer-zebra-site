@@ -1,13 +1,13 @@
 ---
 csp: devicecentralmgr
-title: Bluetooth Pairing Enable/Disable
+title: Bluetooth Control Button Show/Hide
 type: parm
 order: 2
 mx: "8.1"
 devicetype: A
 parm:
   pivotal: No
-  name: BluetoothPairingControl
+  name: BluetoothOnOffControl
   type: list
   list:
     - code: 0
@@ -19,12 +19,12 @@ parm:
       devicetype: A
       name: Enable
       mx: "8.1"
-      description: Enables the device to pair with newly discovered Bluetooth devices. 
+      description: Shows the Bluetooth On/Off button in the Device Central app on the device, which allows the device user to change the Bluetooth state (active/inactive). 
     - code: 1
       devicetype: A
       name: Disable
       mx: "8.1"
-      description: Prevents the device from pairing with newly discovered Bluetooth devices.
+      description: Hides the Bluetooth On/Off button in the Device Central app on the device, preventing the device user from changing the Bluetooth state (active/inactive).
 ---
 
-Controls whether the device is permitted to pair with newly discovered Bluetooth devices that come into range. The settings of this parameter do not effect existing device pairings.
+This is the On/Off switch for Bluetooth control in the Device Central app on the device. This determines whether the device user is permitted change the state (active/inactive) of the Bluetooth radio through the Device Central app. **This parameter does <u>NOT</u> change the state (active/inactive) of the Bluetooth radio**; it controls the device user's ability to do so through the DC app.

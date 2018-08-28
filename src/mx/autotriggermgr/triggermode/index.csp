@@ -5,7 +5,7 @@ type: parm
 order: 2
 mx: "8.1"
 devicetype: A
-info: Supported on the PS20 device only.
+info: Supported on PS20 devices only.
 parm:
   pivotal: No
   name: TriggerMode
@@ -25,12 +25,12 @@ parm:
       devicetype: A
       name: Auto On
       mx: "8.1"
-      description: Enables trigger mode to be activated automatically. 
+      description: Enables automatic trigger-mode activation when device is placed in a specific location, such as a shopping cart. 
     - code: 2
       devicetype: A
       name: Always On
       mx: "8.1"
-      description: Sets the scan trigger to be responsive at all times. 
+      description: Sets the scan trigger to be responsive whenever a scan target is in range. 
 ---
 
-Controls the trigger mode of the device, and whether automatic functions are invoked. For example, this parameter can be used to automatically activate a scanning device when placed in a shopping cart or holster. **Default=Off**. 
+Controls the trigger mode of the device, and whether automatic functions are invoked. For example, this parameter can be used to automatically activate a scanning device when placed in a shopping cart, holster or other designated location. **Default=Off**. 

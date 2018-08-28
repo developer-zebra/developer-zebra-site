@@ -1,6 +1,6 @@
 ---
 csp: devicecentralmgr
-title: Firmware Update Button Enable/Disable
+title: Firmware Update Button Show/Hide
 type: parm
 order: 2
 mx: "8.1"

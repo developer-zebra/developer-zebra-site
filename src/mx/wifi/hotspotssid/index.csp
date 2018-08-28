@@ -17,4 +17,4 @@ Used to specify the Wi-Fi hotspot Service Set Identifier (SSID), the name visibl
 
 **Parm value input rules**: 
 
-* String from 1-32 characters containing the desired SSID (case sensitive)
+* String from 1&ndash;32 characters containing the desired SSID (case sensitive)

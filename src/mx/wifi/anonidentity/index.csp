@@ -19,7 +19,7 @@ When using an EAP type that has a secure tunnel over which authentication creden
 
 If no Anonymous Identity is specified, then the actual Identity is sent outside the tunnel, if required. This may still be secure since the password and/or other verifying credentials are always sent inside the tunnel (in modes that use a tunnel for secure credential delivery). Using the actual Identity outside the tunnel would therefore risk disclosure of only part of the information needed to authenticate. 
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String with a minimum of 0 characters and a maximum of 64 characters
 

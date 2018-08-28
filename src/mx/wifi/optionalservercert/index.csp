@@ -14,7 +14,7 @@ parm:
 ---
 Optional parameter that allows the name of a certificate alias to be used to verify the server.
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String from 0-64 characters
 

@@ -14,7 +14,7 @@ parm:
 ---
 Used to specify the name of a madatory certificate alias to be used to verify the server.
 
-Parm value input rules: 
+**Parm value input rules**: 
 
 * String from 0-64 characters
 

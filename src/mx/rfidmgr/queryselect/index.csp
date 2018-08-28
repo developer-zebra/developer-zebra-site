@@ -24,20 +24,20 @@ parm:
       name: Queryappliestoalltags
       mx: "8.1"
       apilevel: "26"
-      description: Enables the selection of specific tags when multiple tags are in range.
+      description: Enables the selection of all tags when multiple tags are in range.
     - code: 2
       devicetype: A
       name: QueryappliestotagswithSLde-asserted
       mx: "8.1"
       apilevel: "26"
-      description: Disables the specific tag selection when multiple tags are in range.
+      description: Enables selection of tags with SL flag asserted when multiple tags are in range.
     - code: 3
       devicetype: A
       name: QueryappliestotagswithSLasserted
       mx: "8.1"
       apilevel: "26"
-      description: Disables the specific tag selection when multiple tags are in range.
+      description: Enables selection of tags with SL flag de-asserted when multiple tags are in range.
 ---
 
-Used to select the desired tags when multiple tags are within scanning range. Queries support "all tags," or those with "SL asserted" or "SL de-asserted" flags, irrespective of session. Use of this parameter can help improve scanning performance and avoid the "noise" of decoding unwanted tags.  
+Used to select the desired tags during a query operation when multiple tags are within scanning range. Queries support "all tags," or those with "SL asserted" or "SL de-asserted" flags, irrespective of session. Use of this parameter can help improve scanning performance and avoid the "noise" of decoding unwanted tags. An SL flag is asserted when its SL flag has been set using the Select command. Flags not designated as such are considered de-asserted. 
 

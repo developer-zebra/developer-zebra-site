@@ -35,19 +35,19 @@ parm:
       name: ResetRadio
       mx: "8.1"
       apilevel: "26"
-      description: Resets the RFID radio.
+      description: Resets RFID radio without changing its settings. Useful for error recovery or other RFID module failures. 
     - code: 5
       devicetype: A
       name: ResetRadiotofactorydefault
       mx: "8.1"
       apilevel: "26"
-      description: Returns the RFID radio to its factory-default settings.
+      description: Returns RFID radio to factory-default settings. Useful for recovery from serious configuration errors that otherwise prevent proper function. 
     - code: 6
       devicetype: A
       name: FirmwareUpdateAndResetFactoryDefaults
       mx: "8.1"
       apilevel: "26"
-      description: Enables the timestamp for first-sent codes.
+      description: Updates firmware, resets RFID radio and returns it to factory-default settings. Useful when applying a major firmware update that adds numerous configuration settings; ensures that RFID module is initially configured in a known-good state. 
 ---
 
 Used to specify an action to perform on the connected RFID peripheral. 

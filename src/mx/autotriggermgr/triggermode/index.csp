@@ -20,7 +20,7 @@ parm:
       devicetype: A
       name: Off
       mx: "8.1"
-      description: Disables all automatic trigger-mode functions (default). 
+      description: Disables all automatic trigger-mode functions (default); all scanning requires manual triggering by the device user. 
     - code: 1
       devicetype: A
       name: Auto On
@@ -33,4 +33,4 @@ parm:
       description: Sets the scan trigger to be responsive whenever a scan target is in range. 
 ---
 
-Controls the trigger mode of the device, and whether automatic functions are invoked. For example, this parameter can be used to automatically activate a scanning device when placed in a shopping cart, holster or other designated location. **Default=Off**. 
+Controls the trigger mode of the device, and whether automatic functions are invoked. For example, this parameter can be used to automatically activate a scanning device when placed in a shopping cart, holster or other designated location. When trigger Mode is set to Off (option 0, **the default**), all scanning requires manual triggering by the device user. 

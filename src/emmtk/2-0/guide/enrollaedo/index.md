@@ -16,36 +16,6 @@ productversion: '2.0'
 This guide documents enrollment of an EMM agent app as a "Device Owner," granting the agent the permissions necessary to confiure all parameters of a Zebra device. Device Owner (DO) capabilies apply to Zebra devices running Android 5.x Lollipop and higher. However, **the procedures in this guide require Android 7.x Nougat (or later) and Zebra MX 7.1 (or higher)**. 
 
 -----
-<!-- 
-section explains device owner stuff, and why a Nougat device _should_ be enrolled as a DO and why an Oreo _must_. 
-
-* DO is recommended with Nougat. With Oreo, it's required. 
-* Agent Uses AEDO + Zebra OemConfig Managed Configs​
-* Android N or higher​
-* EMM must leverage Zebra EMM TK V4​
-* Supported from Android Nougat onwards​
-* Provides parity of functionality to EMM TK V2 when combined with AEDO APIs​
-* Standard-based​
-* Not available prior to Android Nougat​
-* Requires special Device Owner Enrollment​
-* It is OPTIONAL for all EMMs to use OemConfig, but NOT doing so will leave the EMM unable to provide parity of functionality once they can no longer use MX via EMM TK V1 and V2 to augment the capabilities of AEDO APIs​
-* SHOULD support use of OemConfig as early as possible, preferably by the by the end of Android Nougat​
-* MUST support use of OemConfig by the start of Android P​
-
-> Info in the QR code is identical to contents of the `Provisioning.JSON` file.  
-
-### Terms used in this guide
-
-* **AE -** Android Enterprise (formerly "Android for Work")
-* **AEDO -** Android Enterprise Device Owner
-* **AFW -** Android for Work
-* **DA -** Device administrator
-* **DO -** Device owner
-* **EMM -** Enterprise Mobility Management
-* **MDM -** Mobile Device Management
-
--->
------
 
 ### Supported Devices
 
@@ -218,7 +188,11 @@ This section involves importing the StageNow settings profile `EMM_Device_Owner_
 	If the wizard isn't bypassed and/or the StageNow client doesn't launch on the device, finish the Android set-up and launch the StageNow client manually.<br>
 	c. **Scan the staging barcodes** generated in Step 8, above.<br>
 	d. Optionally, bring up the EMM console and monitor the enrollment progress (about 6 minutes).<br>
-	**Note**: Device display goes dark during final enrollment steps. This is normal. <br>
+	**Notes**: 
+	* **Device display goes dark** during final enrollment steps. This is normal. <br>
+	* **The 'Setup Wizard Bypass' barcode is included** on every barcode sheet made with StageNow 3.0 and higher. 
+	* **IMPORTANT**: Scanning the Setup Wizard Bypass barcode confirms an understanding and agreement with the terms and conditions of the [Zebra restricted asset end user license agreement (EULA)](https://www.zebra.com/content/dam/zebra_new_ia/en-US/channel/terms-conditions/na/zebra-restricted-eula-170515.pdf). 
+
 
 #### Device Staging for Enrollment is Complete. 
 
@@ -234,4 +208,36 @@ This section involves importing the StageNow settings profile `EMM_Device_Owner_
 ## `DRAFT`
 
 **_Information subject to change without notice_**. 
+
+
+-----
+<!-- 
+section explains device owner stuff, and why a Nougat device _should_ be enrolled as a DO and why an Oreo _must_. 
+
+* DO is recommended with Nougat. With Oreo, it's required. 
+* Agent Uses AEDO + Zebra OemConfig Managed Configs​
+* Android N or higher​
+* EMM must leverage Zebra EMM TK V4​
+* Supported from Android Nougat onwards​
+* Provides parity of functionality to EMM TK V2 when combined with AEDO APIs​
+* Standard-based​
+* Not available prior to Android Nougat​
+* Requires special Device Owner Enrollment​
+* It is OPTIONAL for all EMMs to use OemConfig, but NOT doing so will leave the EMM unable to provide parity of functionality once they can no longer use MX via EMM TK V1 and V2 to augment the capabilities of AEDO APIs​
+* SHOULD support use of OemConfig as early as possible, preferably by the by the end of Android Nougat​
+* MUST support use of OemConfig by the start of Android P​
+
+> Info in the QR code is identical to contents of the `Provisioning.JSON` file.  
+
+### Terms used in this guide
+
+* **AE -** Android Enterprise (formerly "Android for Work")
+* **AEDO -** Android Enterprise Device Owner
+* **AFW -** Android for Work
+* **DA -** Device administrator
+* **DO -** Device owner
+* **EMM -** Enterprise Mobility Management
+* **MDM -** Mobile Device Management
+
+-->
 

@@ -20,11 +20,6 @@ content-items:
     url: functionmap
   - type: section
     level: 4
-    title: OemConfig Schema
-    text: Content, usage and management of the OemConfig schema, including approaches for encoding managed configurations for delivery and recommendations for implementing a data-driven UI.
-    url: schema
-  - type: section
-    level: 4
     title: Setup Wizard Bypass
     text: Describes the process supported on some devices for automatically bypassing the Zebra and Android Setup Wizards following an Enterprise Reset (links to StageNow guide page).
     url: /stagenow/latest/Profiles/wipedevice/#setupwizardmanualbypass
@@ -37,7 +32,7 @@ content-items:
     level: 4
     title: Staging Service APIs
     text: Details the Staging Service APIs, which can be used to produce StageNow barcodes from an EMM console to enroll an AEDO EMM agent using the StageNow device client.
-    url: stagingapi
+    url: api
   - type: section
     level: 4
     title: MDMTK Legacy Guide
@@ -48,6 +43,15 @@ productversion: '2.0'
 ---
 
 <!--            
+
+8/27/18- Darryn found this dummy page ->> PUT BACK IN WHEN THIS PAGE IS READY:
+  - type: section
+    level: 4
+    title: OemConfig Schema
+    text: Content, usage and management of the OemConfig schema, including approaches for encoding managed configurations for delivery and recommendations for implementing a data-driven UI.
+    url: schema
+
+
 4/12/18- removed temporarily at req. of Dave Degreassi  (restored 8/7/18)
 
   - type: section

@@ -1,13 +1,13 @@
 ---
 csp: wifi
-title: Mandatory Server Certificate Name 
+title: Mandatory Server CA Cert Name 
 type: parm
 order: 30
 mx: "4.2"
 devicetype: A,B
 parm:
   presentif: The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and the Authentication is "EAP-TLS" or "PEAP-MSCHAPV2" or "EAP-TTLS-MSCHAP" or "EAP-FAST-MSCHAPV2" or "EAP-TTLS-PAP" or "PEAP-GTC" or "EAP-FAST-MSCHAPV2" or "EAP-FAST-GTC" or "PEAP-NONE"
-  name: OptionalServerCertificate 
+  name: MandatoryServerCertificate 
   pivotal: No
   type: string
 
@@ -19,7 +19,7 @@ Parm value input rules:
 * String from 0-64 characters
 
 **Notes**:
-* When Security Mode is "Enterprise," the device will not need to authenticate to an Authentication Server using the defined Authentication type. This will involve sending potentially sensitive authentication credentials to the Authentication Server. Zebra does not recommended this unless the authenticity of the Authentication Server can be verified, for example, ensuring it is not attempting to carry out a "man in the middle" attack.
+* When Security Mode is "Enterprise," the device must authenticate to an Authentication Server using the defined Authentication type. This involves sending potentially sensitive authentication credentials to the Authentication Server. Zebra does not recommended this unless the authenticity of the Authentication Server can be verified, for example to ensure that it is not attempting to carry out a "man in the middle" attack.
 
 * The device contacts and challenges the Authentication Server to assert and prove its Identity through the use of a server certificate. The device must be able to establish the validity of that certificate and must trust the chain of authority of the issuer of that certificate. This would all occur whether or not a Server Certificate Name is specified.
 

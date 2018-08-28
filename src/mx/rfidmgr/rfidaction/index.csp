@@ -12,12 +12,6 @@ parm:
   name: RfidAction
   type: list
   list:
-    - code: 3
-      devicetype: A
-      name: Default
-      mx: "8.1"
-      apilevel: "26"
-      description: This value (or the absence of this parm from the XML) causes no change to RFID device settings; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: FirmwareUpdate
@@ -30,6 +24,12 @@ parm:
       mx: "8.1"
       apilevel: "26"
       description: Saves the current RFID module settings to a file in the device file system.
+    - code: 3
+      devicetype: A
+      name: Default
+      mx: "8.1"
+      apilevel: "26"
+      description: This value (or the absence of this parm from the XML) causes no change to RFID device settings; any previously selected setting is retained.
     - code: 4
       devicetype: A
       name: ResetRadio
@@ -47,7 +47,7 @@ parm:
       name: FirmwareUpdateAndResetFactoryDefaults
       mx: "8.1"
       apilevel: "26"
-      description: Updates firmware and resets the RFID peripheral to its factory-default settings.
+      description: Enables the timestamp for first-sent codes.
 ---
 
 Used to specify an action to perform on the connected RFID peripheral. 

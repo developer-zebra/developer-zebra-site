@@ -16,4 +16,4 @@ This is the SSID name of the network, which is the primary mechanism used to ide
 
 **Parm value input rules**: 
 
-* String with a minimum size of 1 character and a maximum size of 32 characters
+* String from 1&ndash;32 characters

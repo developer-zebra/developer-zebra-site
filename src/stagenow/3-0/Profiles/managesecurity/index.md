@@ -14,12 +14,12 @@ The Manage Device Security Wizard configures security options and policies for a
 * Whitelisting and blacklisting apps
 * Controlling screen time-out 
 * Encrypting SD Card(s)
-* Control user access to: 
+* **Control user access to**: 
  * Power-off menu
  * Android Settings panel
  * App installation from unknown sources
  * Threat management
-* Enabling/disabling: 
+* **Enable/disable**: 
  * SD Card(s)
  * Device camera(s) 
  * The GPRS subsystem
@@ -31,9 +31,9 @@ In addition, StageNow implements multiple layers of security in the barcode and 
 
 **Security included in staging media**: 
 
-* **Parm encryption -** All input text values considered sensitive (i.e. passwords) are encrypted using asymmetric key algorithm.
-* **Profile encoding -** Upon creation of a profile, parm names are encoded and therefore unreadable. 
-* **Profile encryption -** Optionally, an admin can elect to encrypt an entire staging profile using a shared (symmetric) key before creating barcode(s) or writing NFC tag(s).
+* **Parm encryption -** All input text values considered sensitive (i.e. passwords) are encrypted using an asymmetric key algorithm.
+* **Profile encoding -** Upon creation of a profile, parm names are encoded, rendering them unreadable. 
+* **Profile encryption -** Optionally, an admin can elect to encrypt an entire staging profile using a shared (symmetric) key, which must be known before the barcode(s) or NFC tag(s) can be used.
 
 -----
 

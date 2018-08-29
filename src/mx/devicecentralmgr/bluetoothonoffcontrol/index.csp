@@ -20,11 +20,11 @@ parm:
       name: Enable
       mx: "8.1"
       description: Shows the Bluetooth On/Off button in the Device Central app on the device, which allows the device user to change the Bluetooth state (active/inactive) through the app. 
-    - code: 1
+    - code: 2
       devicetype: A
       name: Disable
       mx: "8.1"
       description: Hides the Bluetooth On/Off button in the Device Central app on the device, preventing the device user from changing the Bluetooth state (active/inactive) through the app.
 ---
 
-Controls whether the Bluetooth On/Off button is shown in the Device Central app on the device, which determines whether the device user can change the state (active/inactive) of the Bluetooth radio through the app. **This parameter does <u>NOT</u> change the state of the Bluetooth radio nor prevent the device user from changing the state through the Android Settings panel**.
+Controls whether the Bluetooth On/Off button is shown in the Device Central app on the device, which allows the device user to change the state (active/inactive) of the Bluetooth radio through the app. **This parameter does <u>NOT</u> change the state of the Bluetooth radio nor prevent the device user from changing the state through the Android Settings panel**.

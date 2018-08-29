@@ -19,12 +19,12 @@ parm:
       devicetype: A
       name: Enable
       mx: "8.1"
-      description: Shows the 'Firmware Update' button on the device. 
+      description: Shows the 'Firmware Update' button in the Device Central app on the device, allowing the device user to initiate a firmware update, if desired. 
     - code: 2
       devicetype: A
-      name: Auto on
+      name: Disable
       mx: "8.1"
-      description: Hides the 'Firmware Update' button on the device. 
+      description: Hides the 'Firmware Update' button in the Device Central app on the device, preventing the device user from initiating a firmware update. 
 ---
 
-Controls whether the "Firmware Update" button is shown in the Device Central app on the device. Pressing this button initiates a firmware update process on the device. 
+Controls whether the "Firmware Update" button is shown in the Device Central app on the device. Pressing this button initiates the firmware update process on the device.  

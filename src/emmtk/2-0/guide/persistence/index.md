@@ -164,7 +164,9 @@ As a general rule, steps involved in staging a device should be kept to a minimu
 * **File Manager**:
  * Download agent APK File from Server to Device​ to Persistent Location on Device​
  * Download agent Configuration File from Server​ to Persistent Location on Device​
- * Download Persist Section XML File from Server to Persistent Location on Device​
+ <!-- removed per eng. Not required b/c persist does this automatically.
+ * Download Persist Section XML File from Server to Persistent Location on Device​ 
+ -->
 * **Batch**:
  * Execute Persist Section XML File​
 

@@ -12,7 +12,7 @@ productversion: '2.0'
 
 ## Overview
 
-The purpose of this guide is to enable EMM solution providers to enable their products to support OemConfig, a Google-recommended solution developed by Zebra that configures Zebra devices using Android Managed Configurations when no Android Enterprise API is available.
+This guide is intended to enable EMM solution providers to enable their products to support OemConfig, a Google-recommended solution developed by Zebra that configures Zebra devices using Android Managed Configurations when no Android Enterprise API is available. 
 
 **End-to-end process for using OemConfig**:
 
@@ -24,12 +24,15 @@ The purpose of this guide is to enable EMM solution providers to enable their pr
 6. Agent converts MC objects to Android in-memory bundle(s)
 7. Agent calls `DevicePolicyManager.SetApplicationRestrictions`, passes bundle(s) to `com.zebra.oemconfig` for action
 
-As an aid to development, this guide provides two fully working tools that EMM solution providers are free to use&ndash;in whole or in part&ndash;as examples of effective implementation of this process. 
+As an aid to development, this guide provides two fully working tools that EMM solution providers are free to use&ndash;in whole or in part&ndash;as examples of effective implementation of this process and/or as a means of comparison with their own solutions. These solutions are based on published standards. With the exception of the schema, which describes functions specific to Zebra devices, the sample solutions provided here contain no Zebra-proprietary logic, and could be effective on any device that confirms to the same standards. 
 
 `McTool.jar` - A Java app that presents a data-driven user interface from the contents of a schema.
 
 `BundleTools` - Program logic that converts JSON Managed Configuration objects into bundles. 
 
+`schema` - The Zebra-specific 
+
+> Zebra provides no warranty or support. 
 
 <!--
 

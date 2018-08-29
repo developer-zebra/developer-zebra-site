@@ -1,5 +1,5 @@
 ---
-title: OemConfig User Guide
+title: OemConfig Development Guide
 layout: guide.html
 product: EMM Toolkit
 productversion: '2.0'
@@ -12,9 +12,28 @@ productversion: '2.0'
 
 ## Overview
 
-This guide explains 
+The purpose of this guide is to enable EMM solution providers to enable their products to support OemConfig, a Google-recommended solution developed by Zebra that configures Zebra devices using Android Managed Configurations when no Android Enterprise API is available.
 
-The purpose of this guide is to enable EMMs to provide support for OemConfig. 
+**End-to-end process for using OemConfig**:
+
+1. EMM server acquires OemConfig schema from device, Google Play store or other location 
+2. Based on schema data, EMM Server presents UI with device functions available for configuration 
+3. Administrator interacts with UI, selects desired configuration actions
+4. Actions are saved as a Managed Configuration (Google recommends JSON object format)
+5. EMM Server packages and transports MC objects to device agent
+6. Agent converts MC objects to Android in-memory bundle(s)
+7. Agent calls `DevicePolicyManager.SetApplicationRestrictions`, passes bundle(s) to `com.zebra.oemconfig` for action
+
+As an aid to development, this guide provides two fully working tools that EMM solution providers are free to use&ndash;in whole or in part&ndash;as examples of effective implementation of this process. 
+
+`McTool.jar` - A Java app that presents a data-driven user interface from the contents of a schema.
+
+`BundleTools` - Program logic that converts JSON Managed Configuration objects into bundles. 
+
+
+<!--
+
+To prepare for the new approach, EMM solution providers must migrate their Android "Device Administrator" (DA) agent apps to the "Device Owner" (DO) model. The forthcoming model works through Android Enterprise Device Owner (AEDO) APIs when possible, and fills gaps in functionality with OemConfig, 
 
 MISSION: 
 Provide a DD UI that consumes Zebra schema, stores its MC somehow and delivers them to the device. 
@@ -59,7 +78,7 @@ the only downside is bug fixes (solved by putting it on github).
 Two-tool Solution
 Some vendors might not wish to implement ALL possible functions. Solutions from such vendors can use StageNow to create profiles for features not configurable from their oewn console, export the profiles using the "Export for MDM" option, pass the profiles to their console-> agent-> which feeds it to MX, get response and display it on the console. A pass-through solution. 
 
-As long as your code conforms to Google's definition of how to encode MCs as JSON, this code will confert that code to a bundle suitable for calling devicepolicymanager.setapplicationrestrictions and passing it to OemConfig. 
+As long as your code conforms to Google's definition of how to encode MCs as JSON, this code will convert that code to a bundle suitable for calling devicepolicymanager.setapplicationrestrictions and passing it to OemConfig. 
 
 Why NOT to use JSON
 MCs are a std feature of AE. Any app dev publishing an app to PS can say they have MCs. 
@@ -92,17 +111,28 @@ HOW TO GET THE SCHEMA FROM PLAYSTORE
 - Part of that is to get the schema for any app I can get the package for
 - In theory, you could crack open the .apk and get the schema, but nobody wants to do that
 
+
 Get McTool and schema here (to be posted on GitHub):
 https://zebra.sharepoint.com/sites/converge/emc-android-platform-architect-review-board/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fsites%2Fconverge%2Femc-android-platform-architect-review-board%2FShared%20Documents%2FAFW%20Summitt%2FEMMTK&FolderCTID=0x0120003BE153D20C1D7A46B871096BD8DCCC6C&View=%7B84DDE955-0D89-4F6B-9520-5D6F33223009%7D
 
 
-STORY FOR ALLAN
-"About the Zebra Schema"
-How it's different from others you might have seen
-What Implications does that have for constructing your data-driven UI
-Where to look in the Zebra tool to see how we did it
+----------------
 
+ NOTES FROM THE OLD STORY
+ 
 
+Document the schema content and usage
+Approaches for encoding Managed Configurations for delivery from EMM Server to EMM Agent
+Document the schema management
+Recommendations for implementing Data-Driven UI for OemConfig schema
+OEM CONFIG DOCS:
+
+primary audience is NOT EMM vendor
+primary audience is administrator using EMM solution
+schema controls data-driven UI, titles, prompts, help text, pull-down lists, etc
+schema doesn't allows detailed instructions-- online docs do
+
+-->
 -----
 
 ## About Zebra Schema

@@ -23,7 +23,7 @@ The Manage Device Security Wizard configures security options and policies for a
  * SD Card(s)
  * Device camera(s) 
  * The GPRS subsystem
- * Bluetooth radio
+ * Wireless radio(s)
  * GPS locationing
  * USB port(s)
 

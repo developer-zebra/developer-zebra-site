@@ -1,11 +1,130 @@
 ---
-title: OemConfig Developers' Guide
+title: OemConfig User Guide
 layout: guide.html
 product: EMM Toolkit
 productversion: '2.0'
 ---
 
-# Transaction and Schema Level
+## `DRAFT`
+**_Information subject to change without notice_**. 
+
+-----
+
+## Overview
+
+This guide explains 
+
+The purpose of this guide is to enable EMMs to provide support for OemConfig. 
+
+MISSION: 
+Provide a DD UI that consumes Zebra schema, stores its MC somehow and delivers them to the device. 
+
+Sample code is one enabler for EMMs to do some work. 
+
+Actual sample: BundleTools (JSON-to-bundle code)
+Another Example: one's a document (schema) and the other is a tool (McTool)
+
+
+In the past, EMM solution providers might or might not have been an device administrator, but iot was creating XML and submitting it to MX. A Zebra-proprietary world. Now, EMMs shoudl be device Owner and APIs are defined and standardized for Android by Google. 
+
+You can still use MX through O, discon. in P. This guide is not for that (see migration guide). 
+
+At this point, EMM vendors should be deciding how they will migrate to DO and MC, even if they're not plannning to support Zebra but for other vendor's devices. 
+
+Server needs to create MCs - sample is here. 
+Server has to delvier MCs to the agent., that's for you to decice. but we can make suggestions for Google's chosen JSON format.
+
+agent has to convert to JSON to a bundle, which is an Android in-memnory object and therefore cannot be sent over the air. 
+
+agent recieves MC as JSON (or whatever), converts to bundle and sends to std API devicepolicy.setapplicationrestrictions. 
+
+
+WHAT WE CAN OFFER
+
+McTool consumes our scema and presents DD UI
+- interesting because it shows how to do EVERYTHING thru a DD UI
+- If you're building your oebn DD UI, it should be able to consume our schema
+- gives you an example of how it COULD be done
+- we can provide the .jar file
+- feed it our schema (JSON or pair of XML files), it presents a DD UI
+- After you put in all your MCs and hit save, it saves them as a JSON file
+- The format we use is the one defined by Google, which provides its own device delivery pathway if you're using Google as the EMM agent (in essence) (GMS devices only)
+- EMM would go to playstore for schema for com.zebra.oemconfig and present a DDUI the same way ours does
+- Could be used internally by vendor to see how we did it. They can emulate or do something else
+- If they want to submit their MCs to OemConfig, we have code for converting their JSONs to a bundle
+
+
+the only downside is bug fixes (solved by putting it on github). 
+
+Two-tool Solution
+Some vendors might not wish to implement ALL possible functions. Solutions from such vendors can use StageNow to create profiles for features not configurable from their oewn console, export the profiles using the "Export for MDM" option, pass the profiles to their console-> agent-> which feeds it to MX, get response and display it on the console. A pass-through solution. 
+
+As long as your code conforms to Google's definition of how to encode MCs as JSON, this code will confert that code to a bundle suitable for calling devicepolicymanager.setapplicationrestrictions and passing it to OemConfig. 
+
+Why NOT to use JSON
+MCs are a std feature of AE. Any app dev publishing an app to PS can say they have MCs. 
+
+If they haven't yet selected an encoding scheme, there's no good reason NOT to choose JSON. And if they've chosen JSON, this sample can show them how to convert to bundles and submit to OC. 
+
+IF POSTING SAMPLES ON GITHUB, add disclaimer
+
+1. McTool 
+2. Bundle conversion code
+3. Tut-DO, device owner app that reads JSON, converts to bundles and submits thru Android  
+
+Share 1 and 2. 
+DO NOT SHARE 3. 
+
+McTool as an example DD UI (to compare with their own) and as a way to produce JSON files and compare them with JSONs their server is producing. Use this as a double-check for those two things. 
+
+Allan leans against giving McTool source code. "there's quite a lot of code and what are the support implications?"
+
+
+Give them mctool.jar and the released schema at the time
+
+The PlayStore will always have the latest schema (you can only have one there), but it's also the one that contains all the functions that every Zebra device can do. So there's a real possibility that if a vendor takes that one, they'll eventually end up trying to implement features that aren't supported on the target device. 
+
+An EMM also can get the schema from the device, but if they're managing 10,000 devices, they'll have 10,000 schemas. 
+
+HOW TO GET THE SCHEMA FROM PLAYSTORE
+- Register with Google as a bonafide EMM
+- Get API key, which allows them to call Google EMM APIs, one of which is to browse PlayStore and pull app packages, which an EMM can use to deliver those packages to devices
+- Part of that is to get the schema for any app I can get the package for
+- In theory, you could crack open the .apk and get the schema, but nobody wants to do that
+
+Get McTool and schema here (to be posted on GitHub):
+https://zebra.sharepoint.com/sites/converge/emc-android-platform-architect-review-board/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fsites%2Fconverge%2Femc-android-platform-architect-review-board%2FShared%20Documents%2FAFW%20Summitt%2FEMMTK&FolderCTID=0x0120003BE153D20C1D7A46B871096BD8DCCC6C&View=%7B84DDE955-0D89-4F6B-9520-5D6F33223009%7D
+
+
+STORY FOR ALLAN
+"About the Zebra Schema"
+How it's different from others you might have seen
+What Implications does that have for constructing your data-driven UI
+Where to look in the Zebra tool to see how we did it
+
+
+-----
+
+## About Zebra Schema
+
+The Zebra schema is fully compliant with the depth and complexities of the Android schema design. It contains multiple layers of nested bundles, and is far richer than other schemas.
+
+GREAT THING: 
+specific example UI that meets implications for a schema
+bundle array within another bundle
+Key diff's in schema you'll see in oemconfig and here's what they mean to you 
+**maybe a <u>screenshot</u> of McTool showing how a part of the schema is displayed**
+
+
+- Differences in Schema from others
+- Nested Bundles
+
+Oemconfig and schema is in every O device (except some of the earliest) including Hawkeye, **all** N devices have it. 
+
+-----
+
+
+## Transaction and Schema Level
 
 This section describes Managed Configurations that are used internally by an EMM to manage transactions that apply configurations defined by an Administrator to a Zebra Android device and/or to obtain information about the Schema that defines available configuration options. 
 

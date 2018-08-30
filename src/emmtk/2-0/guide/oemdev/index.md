@@ -36,7 +36,7 @@ To aid EMM developers, Zebra provides two fully working tools as examples of eff
 
 `Schema.json` - The Zebra-specific function definitions; source for data-driven configuration UI.
 
-`BundleTools.java` - Java code that converts JSON Managed Configuration objects into bundles. 
+`BundleTools.java` - Java source code that converts JSON Managed Configuration objects into bundles. 
 
 > NOTE: Zebra provides no warranty or support for these sample files. 
 

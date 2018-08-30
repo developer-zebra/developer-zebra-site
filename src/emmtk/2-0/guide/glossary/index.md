@@ -20,6 +20,9 @@ Android Enterprise (formerly "Android for Work") is a set of APIs for configurin
 ### Android for Work (AFW)
 See Android Enterprise. 
 
+### BundleTools
+Program logic developed by Zebra Technologies that converts JSON Managed Configuration objects into bundles and used to perform device-configuration actions. [Download BundleTools](). 
+
 ### DA
 See Device Administrator.
 
@@ -66,15 +69,19 @@ The infrastructure and processes used&ndash;usually by corporations and other bu
 See Management Extensions.
 
 ### Managed Configurations
-A method for Android apps to expose configuration options and accept settings. Through a specially designed configurable application called OemConfig, Zebra has developed a method of leveraging the extension mechanism in Managed Configurations (formerly “Application Restrictions”) to configure the settings of a device. 
-
-OemConfig is the Google-recommended approach for OEMs to publish extended functionality and for EMMs to remotely configure devices. 
+A method for Android apps to expose configuration options and accept settings. Through a specially designed configurable application called [OemConfig](#oemconfig), Zebra has developed a method of leveraging the extension mechanism defined in Managed Configurations (formerly “Application Restrictions”) to configure the settings of a device. 
 
 ### Management Extensions (MX)
 The Zebra-proprietary Privilege Escalation method designed to enable an unprivileged EMM agent to access all “missing” functions needed to enable an EMM vendor to implement a “complete” EMM solution for managing Zebra Android devices. MX was developed in parallel with the Android Device Administrator, and predates the availability of the Profile Owner and Device Owner Privilege Escalation methods. 
 
+### McTool
+A Java app developed by Zebra Technologies that presents a data-driven user interface from the contents of a schema. [Download McTool]().
+
 ##MDM
 Mobile Device Management. See EMM. 
+
+### OemConfig
+A Google-recommended approach developed by Zebra Technologies that configures Zebra devices using Android Managed Configurations when no Android Enterprise API is available. 
 
 ### PO
 See Profile Owner.
@@ -89,6 +96,9 @@ Term applied to functions available only to apps with permission. Many of the fu
 Profile Owner is a standard Android Privilege Escalation method introduced in Android 5.0 (Lollipop) API level 21. Building on the capabilities of a DA, PO adds an expanded set of Android Device Administration APIs. An app that is eligible to become a DA and that meets certain additional requirements can be promoted to PO through a special enrollment process. A PO is generally used to implement a Work Profile as part of a “Bring Your Own Device” (BYOD) deployment scenario. A Work Profile contains the “Work” part of the device, which is managed by a PO selected by the Enterprise. It is segregated from the “Personal” part of the device, which cannot be seen or managed by the Enterprise. 
 
 For more information, please refer to Zebra's [DA-to-DO Agent Migration Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `TEMPORARY SHAREPOINT LINK FOR ZEBRAS ONLY`).
+
+### Schema
+A document that defines functions available for interrogation and/or configuration using Managed Configuration mechanisms. Schemas and Managed Configurations conform to Google-defined specifications. [Download the Zebra Schema]().
 
 ### Support, Full 
 A feature generally recommended to be used without significant limitations or restrictions. 

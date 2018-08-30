@@ -12,31 +12,35 @@ productversion: '2.0'
 
 ## Overview
 
-This guide is intended to enable EMM solution providers to enable their products to support OemConfig, a Google-recommended solution developed by Zebra that configures Zebra devices using Android Managed Configurations when no Android Enterprise API is available. 
+This guide is intended to allow EMM solution providers to enable their products to support OemConfig, a Google-recommended approach developed by Zebra Technologies that configures Zebra devices using Android Managed Configurations. When performing administrative tasks on devices, Managed Configurations are used when no Android Enterprise API is available. Both are based on publicly available specifications developed by Google and the Android community. 
 
-**End-to-end process for using OemConfig**:
+Zebra partners wishing to follow the processes defined in this guide must [register with Google](https://developers.google.com/android/work/play/emm-api/) as an EMM solution provider. This unlocks API-level access to the Google Play store, where the schemas for all Android apps are stored. An app's schema defines functions available for interrogation and/or configuration using Managed Configurations, and key to OemConfig usage. 
 
-1. EMM server acquires OemConfig schema from device, Google Play store or other location 
-2. Based on schema data, EMM Server presents UI with device functions available for configuration 
-3. Administrator interacts with UI, selects desired configuration actions
-4. Actions are saved as a Managed Configuration (Google recommends JSON object format)
+#### OemConfig Process:
+
+1. EMM Server acquires OemConfig schema from Google Play store or [other locations]() 
+2. Using schema data, EMM Server presents UI with device functions available for configuration 
+3. Administrator interacts with UI, selecting desired configuration actions
+4. Actions are saved as a Managed Configuration object (Google recommends JSON format)
 5. EMM Server packages and transports MC objects to device agent
 6. Agent converts MC objects to Android in-memory bundle(s)
-7. Agent calls `DevicePolicyManager.SetApplicationRestrictions`, passes bundle(s) to `com.zebra.oemconfig` for action
+7. Agent calls `DevicePolicyManager.SetApplicationRestrictions` and passes bundle(s) to `com.zebra.oemconfig` for action
 
-As an aid to development, this guide provides two fully working tools that EMM solution providers are free to use&ndash;in whole or in part&ndash;as examples of effective implementation of this process and/or as a means of comparison with their own solutions. These solutions are based on published standards. With the exception of the schema, which describes functions specific to Zebra devices, the sample solutions provided here contain no Zebra-proprietary logic, and could be effective on any device that confirms to the same standards. 
+### Sample Files
+
+To aid EMM developers, Zebra provides two fully working tools as examples of effective implementations of this process to copy or compare with their own solutions. With the exception of the schema, which describes functions specific to Zebra devices, the sample solutions are based entirely on Google's public specifications, and contain no Zebra-proprietary logic. In theory, tools built from these samples would be effective on any device that conforms to the Google specifications. 
+
+#### Zebra Solutions
 
 `McTool.jar` - A Java app that presents a data-driven user interface from the contents of a schema.
 
-`BundleTools` - Program logic that converts JSON Managed Configuration objects into bundles. 
+`Schema.json` - The Zebra-specific function definitions; source for data-driven configuration UI.
 
-`schema` - The Zebra-specific 
+`BundleTools.java` - Java code that converts JSON Managed Configuration objects into bundles. 
 
-> Zebra provides no warranty or support. 
+> NOTE: Zebra provides no warranty or support for these sample files. 
 
 <!--
-
-To prepare for the new approach, EMM solution providers must migrate their Android "Device Administrator" (DA) agent apps to the "Device Owner" (DO) model. The forthcoming model works through Android Enterprise Device Owner (AEDO) APIs when possible, and fills gaps in functionality with OemConfig, 
 
 MISSION: 
 Provide a DD UI that consumes Zebra schema, stores its MC somehow and delivers them to the device. 

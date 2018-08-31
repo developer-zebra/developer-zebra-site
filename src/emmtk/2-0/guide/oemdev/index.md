@@ -160,6 +160,20 @@ Oemconfig and schema is in every O device (except some of the earliest) includin
 
 -----
 
+<!-- Global edits to this document: 
+
+will be-> is
+will not-> does not
+hence-> 
+then-> (case-by-case)
+may-> might or can
+will also be-> also is
+will-> (case-by-case)
+If the value-> 
+** is chosen, then-> -**
+This Managed Configuration allows-> Allows
+Zebra Android device-> device
+-->
 
 ## Transaction and Schema Level
 
@@ -213,25 +227,25 @@ This Managed Configuration allows an EMM to specify a Transaction ID that identi
 OemConfig uses the Transaction ID value specified in this Managed Configuration to differentiate transactions submitted over time.
 - OemConfig will only process Managed Configurations in a Bundle submitted to OemConfig if the Transaction ID is set to a different value than the value previously set.
 - The Transaction ID used can be any string value that is convenient for the EMM to use to identify the transaction.
-- It is expected that a suitably different Transaction ID value will be created by the EMM each time a new collection of Managed Configurations is created in accordance with the OemConfig Schema.
+- It is expected that a suitably different Transaction ID value is created by the EMM each time a new collection of Managed Configurations is created in accordance with the OemConfig Schema.
 - While a Transaction ID value does not need to be truly unique, it should be different from any prior value recently used.
 - When creating and storing collections of Managed Configurations for long term use, it would be best practice to create truly unique values, such as by generating a GUID.
-- If the EMM requests notification of the completion of a transaction, the Transaction ID will be attached to the Transaction Result Intent to identify the transaction.
+- If the EMM requests notification of the completion of a transaction, the Transaction ID is attached to the Transaction Result Intent to identify the transaction.
 
 
 ### Transaction Result Intent Type
 
-This Managed Configuration allows an EMM to request OemConfig to send a notification of the completion of a transaction by sending a Transaction Result Intent when it has finished processing of the transaction.
+This Managed Configuration allows an EMM to request OemConfig to send a notification of the completion of a transaction by sending a Transaction Result Intent when it has finished processing the transaction.
 
-If sending of a Transaction Result Intent is desired, then this Managed Configuration MUST be set to indicate the type of intent to be sent.
-- If the value ***startActivity*** is chosen, then an EMM Activity will be notified of the completion of the transaction by sending an intent via the Android method _Context.startActivity()_.
+If sending a Transaction Result Intent is desired, then this Managed Configuration MUST be set to indicate the type of intent to be sent.
+- If the value ***startActivity*** is chosen, then an EMM Activity is notified of the completion of the transaction by sending an intent via the Android method _Context.startActivity()_.
     - It is generally a best practice to specify values for one or more of the Managed Configurations **Transaction Result Intent Action**, **Transaction Result Intent Component**, or **Transaction Result Intent Extra Name** and **Transaction Result Intent Extra Value** to ensure that the intent is sent to the right Activity and/or to help differentiate the intent from others that might be sent to that Activity.
-- If the value ***startService*** is chosen,then an EMM Service will be notified of the completion of the transaction by sending an intent via the Android method _Context.startService()_.
+- If the value ***startService*** is chosen,then an EMM Service is notified of the completion of the transaction by sending an intent via the Android method _Context.startService()_.
     - It is generally a best practice to specify values for one or more of the Managed Configurations **Transaction Result Intent Action**, **Transaction Result Intent Component**, or **Transaction Result Intent Extra Name** and **Transaction Result Intent Extra Value** to ensure that the intent is sent to the right Service and/or to help differentiate the intent from others that might be sent to that Service.
-- If the value ***sendBroadcast*** is chosen, then an EMM will be notified of the completion of the transaction by sending an intent via the Android method _Context.sendBroadcast()_.
+- If the value ***sendBroadcast*** is chosen, then an EMM is notified of the completion of the transaction by sending an intent via the Android method _Context.sendBroadcast()_.
     - It is generally a best practice to specify values for one or more of the Managed Configurations **Transaction Result Intent Action**  or **Transaction Result Intent Extra Name** and **Transaction Result Intent Extra Value** to help differentiate the intent from others that might be sent to the same receiver.
 
-The Transaction ID value specified in the Managed Configuration **Transaction ID** will be attached to the Transaction Result Intent to identify the transaction for which the notification is being sent.
+The Transaction ID value specified in the Managed Configuration **Transaction ID** is attached to the Transaction Result Intent to identify the transaction for which the notification is being sent.
 
 
 ### Transaction Result Intent Action
@@ -244,7 +258,7 @@ Which specifying an Intent Action is not mandatory when sending a Transaction Re
 
 This Managed Configuration allows an EMM to request that OemConfig specify a Component when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration  **Transaction Result Intent Type** is also specified.
 
-While specifying a Component is not mandatory when sending a Transaction Result Intent, it is generally a good practice to do so since it can can help ensure that the intent is sent to the right receiver.
+While specifying a Component is not mandatory when sending a Transaction Result Intent, it is generally a good practice to do so since it can help ensure that the intent is sent to the right receiver.
 - Since broadcast intents are sent globally, they cannot be directed to a specific receiver.  As a result, a Component should only be specified when the value chosen for the the Managed Configuration  **Transaction Result Intent Type** is ***startActivity*** or ***startService***.
 
 
@@ -253,7 +267,7 @@ While specifying a Component is not mandatory when sending a Transaction Result 
 
 This Managed Configuration allows an EMM to request that OemConfig attach a String Extra whose, Extra Name is specified, to the Transaction Result Intent when it has finished processing of the transaction.
 
-Specifying a String Extra is optional when sending a Transaction Result Intent, although it may be useful to do so since it can can help ensure that the receiver of the intent can differentiate it from other intents that it may receive.
+Specifying a String Extra is optional when sending a Transaction Result Intent, although it may be useful to do so since it can help ensure that the receiver of the intent can differentiate it from other intents that it may receive.
 - When an Extra Name is specified using this Managed Configuration, it is mandatory that an Extra Value also be specified using the Managed Configuration ***Transaction Result Intent Extra Value***.
 
 
@@ -261,14 +275,14 @@ Specifying a String Extra is optional when sending a Transaction Result Intent, 
 
 This Managed Configuration allows an EMM to request that OemConfig attach a String Extra, whose Extra Value is specified, to the Transaction Result Intent when it has finished processing of the transaction.
 
-Specifying a String Extra is optional when sending a Transaction Result Intent, although it may be useful to do so since it can can help ensure that the receiver of the intent can differentiate it from other intents that it may receive.
+Specifying a String Extra is optional when sending a Transaction Result Intent, although it may be useful to do so since it can help ensure that the receiver of the intent can differentiate it from other intents that it may receive.
 - When an Extra Value is specified using this Managed Configuration, it is mandatory that an Extra Name also be specified using the Managed Configuration ***Transaction Result Intent Extra Name***. 
 
 ### Transaction Steps
 
 This Managed Configuration allows an EMM to enable an Administrator to defined a sequence of steps that perform configuration of various configurations and to organize those steps into a single transaction to be performed on a Zebra Android device.
 
-Any number of transaction steps can be included within a transaction and the individual transactions steps will be executed in the order they appear within this Managed Configuration. 
+Any number of transaction steps can be included within a transaction and the individual transactions steps is executed in the order they appear within this Managed Configuration. 
 
 #### Transaction Step
 
@@ -284,7 +298,7 @@ The following section **Transaction Step Level** describes the Managed Configura
 
 # Transaction Step Level
 
-This section describes Managed Configurations that allow an Administrator using an EMM to define the configuration to be performed as part of a step within a transaction, to describe the step, and to define how errors that occur during the step will be handled. 
+This section describes Managed Configurations that allow an Administrator using an EMM to define the configuration to be performed as part of a step within a transaction, to describe the step, and to define how errors that occur during the step is handled. 
 
 ## Transaction Step Explanation
 
@@ -316,23 +330,22 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 The Analytics Client is turned on (enabled) by default on all Zebra Android devices:
 
-- When a value of ***Off*** is chosen, the Analytics Client will be turned off (disabled), and hence it will not collect any machine data during the operation of the device and will not deliver any machine data regardless of whether connectivity is available.
+- When a value of ***Off*** is chosen, the Analytics Client is turned off (disabled), and does not collect machine data during the operation of the device and does NOT deliver machine data regardless of whether connectivity is available.
 
-- When a value of ***On*** is chosen, the Analytics Client will be turned on (enabled), and hence it will automatically collect machine data during the operation of the device and deliver it, when connectivity is available, to the Zebra Analytics Cloud Server.
+- When a value of ***On*** is chosen, the Analytics Client is turned on (enabled), and automatically collects machine data during the operation of the device and delivers it when (connectivity is available) to the Zebra Analytics Cloud Server.
 
-On some Zebra Android devices, the ability for an Administrator to use an EMM to turn off (disable) the Analytics Client may not be supported.
+**Note**: The ability for an Administrator to use an EMM to turn off (disable) the Analytics Client is not supported on some devices.
 
 
 ### Analytics Configuration - User Control of State
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the  the Device User will be allowed to control whether the Analytics Client on a Zebra Android device is turned on (enabled) or turned off (disabled).
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to control the state (enabled/disabled) of the Analytics Client on a Zebra Android device.
 
-The Analytics Client is turned on (enabled) by default on all Zebra Android devices:
+The Analytics Client is turned on (enabled) by default on all Zebra Android devices.
 
-- When a value of ***Off*** is chosen, the Device User will not be allowed to change whether the Analytics Client is turned off (disabled) or on (enabled), and hence whether it will collect or deliver any machine data during the operation of the device.
+- When a value of ***Off*** is chosen, the Device User prevented from changing the state (enabled/disabled) of the Analytics Client and whether it collects and/or delivers machine data during the operation of the device.
 
-- When a value of ***On*** is chosen, the Device User will be allowed to change whether the Analytics Client is turned off (disabled) or on (enabled), and hence whether it will collect or deliver any machine data during the operation of the device.
-
+- When a value of ***On*** is chosen, the Device User is allowed to change the state (enabled/disabled) of the Analytics Client and whether it collects and/or delivers machine data during the operation of the device.
 
 
 ## Audio Configuration
@@ -343,11 +356,11 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 This Managed Configuration allows an Administrator using an EMM to configure the mute and vibrate behavior of a Zebra Android device.
 
-- If the value ***Mute without Vibrate*** is chosen, the volume will be muted (made silent) and the device will NOT vibrate, permitting neither audible nor tactile alerts.
+- If the value ***Mute without Vibrate*** is chosen, the volume is muted (made silent) and the device will NOT vibrate, permitting neither audible nor tactile alerts.
 
-- If the value ***Mute with Vibrate*** is chosen, the volume will be muted (made silent) and the device will vibrate, permitting both audible and tactile alerts.
+- If the value ***Mute with Vibrate*** is chosen, the volume is muted (made silent) and the device will vibrate, permitting both audible and tactile alerts.
 
-- If the value ***Unmute without Vibrate*** is chosen, the volume will be unmuted (made audible) and the device will NOT vibrate, permitting audible but not tactile alerts. 
+- If the value ***Unmute without Vibrate*** is chosen, the volume is unmuted (made audible) and the device will NOT vibrate, permitting audible but not tactile alerts. 
 
 ### Audio Configuration - Replication Action
 
@@ -367,7 +380,7 @@ Automatic triggering allows a Device User to initiate trigger-activated function
 
 This Managed Configuration allows an Administrator using an EMM to configure whether and how automatic triggering should occur on a Zebra Android device.
 
-- If the value ***Off*** is chosen, then automatic triggering will never occur and the Device User will be required to manually initiate trigger-activated functions.
+- If the value ***Off*** is chosen, then automatic triggering will never occur and the Device User is required to manually initiate trigger-activated functions.
 
 - If the value ***Auto On*** is chosen, then automatic triggering may occur automatically if the device is placed into a suitable holster, holder, or stand allowing the Device User to initiate trigger-activated functions simply by bringing an object within proximity to the device sensor.
 
@@ -426,9 +439,9 @@ Zebra Android devices are NOT *Discoverable* via Bluetooth by default except whe
 
 The value of this Managed Configuration can change this default behavior:
 
-- When the value ***Off*** is chosen, the default behavior will be in effect and the device will not be *Discoverable* via Bluetooth except when the Bluetooth Pairing screen of the Settings UI is active.
+- When the value ***Off*** is chosen, the default behavior is in effect and the device will not be *Discoverable* via Bluetooth except when the Bluetooth Pairing screen of the Settings UI is active.
 
-- When the value ***On*** is chosen, the default behavior will be overridden and the device will be *Discoverable* via Bluetooth whenever Bluetooth is enabled (turned on).
+- When the value ***On*** is chosen, the default behavior is overridden and the device is *Discoverable* via Bluetooth whenever Bluetooth is enabled (turned on).
 
 
 
@@ -441,9 +454,9 @@ Zebra Android devices will accept new Bluetooth Pairings by default.
 
 The value of this Managed Configuration can change this default behavior:
 
-- When the value ***Off*** is chosen, the default behavior will be overridden and the device will not accept new Bluetooth Pairings.
+- When the value ***Off*** is chosen, the default behavior is overridden and the device does NOT accept new Bluetooth Pairings.
 
-- When the value ***On*** is chosen, the default behavior will be in effect and the device will accept new Bluetooth Pairings. 
+- When the value ***On*** is chosen, the default behavior is in effect and the device will accept new Bluetooth Pairings. 
 
 ### Bluetooth Configuration - Turn On/Off Silent Pairing
 
@@ -453,9 +466,9 @@ Zebra Android devices will silently perform Bluetooth Pairings by default.
 
 The value of this Managed Configuration can change this default behavior:
 
-- When the value ***Off*** is chosen, the default behavior will be overridden and the device can not silently perform Bluetooth Pairings.
+- When the value ***Off*** is chosen, the default behavior is overridden and the device can not silently perform Bluetooth Pairings.
 
-- When the value ***On*** is chosen, the default behavior will be in effect and the device can silently perform Bluetooth Pairings.
+- When the value ***On*** is chosen, the default behavior is in effect and the device can silently perform Bluetooth Pairings.
 
 Note that even when the device CAN silently perform Bluetooth Pairings, it WILL NOT do so unless the Managed Configuration **Bluetooth Configuration - Action** is used to configure specific silent pairing that should occur.
 
@@ -465,7 +478,7 @@ Note that even when the device CAN silently perform Bluetooth Pairings, it WILL 
 This Managed Configuration allows an Administrator using an EMM to perform an Action to manage a list of rules that control Bluetooth *Auto-Pairing*.
 
 Bluetooth *Auto-Pairing* allows new Bluetooth Pairings to be automatically completed without Device User interaction, if permitted by defined rules.
-Since the list of rules is empty by default on Zebra Android devices, Bluetooth *Auto-Pairing* is disabled by default, hence Device User interaction will be required to complete any new Bluetooth Pairings.
+Since the list of rules is empty by default on Zebra Android devices, Bluetooth *Auto-Pairing* is disabled by default, hence Device User interaction is required to complete any new Bluetooth Pairings.
 
 The value of this Managed Configuration specifies an Action value of ***Add*** or ***Remove***, thus allowing the list of rules to be managed.
 Depending on the Action value chosen, one of the following Managed Configurations must also be specified:
@@ -474,9 +487,9 @@ Depending on the Action value chosen, one of the following Managed Configuration
 
     - The Managed Configuration **Bluetooth Configuration - Action Add Rule Name** MUST be used to specify the name of the new rule to be added.
 
-    - At least ONE of the Managed Configurations **Bluetooth Configuration - Action Add Rule Device Class** or **Bluetooth Configuration - Action Add Rule Device Upper Address Part** MUST be used to specify the criteria that the new rule will use to determine which new Bluetooth Pairings will be allowed.
+    - At least ONE of the Managed Configurations **Bluetooth Configuration - Action Add Rule Device Class** or **Bluetooth Configuration - Action Add Rule Device Upper Address Part** MUST be used to specify the criteria that the new rule will use to determine which new Bluetooth Pairings is allowed.
 
-- When the Action value ***Remove*** is chosen, at least ONE of the the Managed Configurations **Bluetooth Configuration - Action Remove Rule Name**, **Bluetooth Configuration - Action Remove Rule Device Class**, or **Bluetooth Configuration - Action Remove Rule Device Upper Address Part** MUST be used to specify the information that will be used to determine which rule or rules, which have matching information, will be removed. 
+- When the Action value ***Remove*** is chosen, at least ONE of the the Managed Configurations **Bluetooth Configuration - Action Remove Rule Name**, **Bluetooth Configuration - Action Remove Rule Device Class**, or **Bluetooth Configuration - Action Remove Rule Device Upper Address Part** MUST be used to specify the information that is used to determine which rule or rules, which have matching information, is removed. 
 
 ### Bluetooth Configuration - Action Add Rule Name
 
@@ -498,19 +511,19 @@ When a *Device Upper Address Part* is specified for a rule, Bluetooth *Auto-Pair
 
 This Managed Configuration allows an Administrator using an EMM to specify the name of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified if and only if the Action value ***Remove*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
 
-Any existing rule that has the specified name will be removed. 
+Any existing rule that has the specified name is removed. 
 
 ### Bluetooth Configuration - Action Remove Rule Device Class
 
 This Managed Configuration allows an Administrator using an EMM to specify the *Device Class* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified if and only if the Action value ***Remove*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
 
-Any existing rule or rules that have the specified *Device Class* will be removed. 
+Any existing rule or rules that have the specified *Device Class* is removed. 
 
 ### Bluetooth Configuration - Action Remove Rule Device Upper Address Part
 
 This Managed Configuration allows an Administrator using an EMM to specify the *Device Upper Address Part* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified if and only if the Action value ***Remove*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
 
-Any existing rule or rules that have the specified *Device Upper Address Part* will be removed. 
+Any existing rule or rules that have the specified *Device Upper Address Part* is removed. 
 
 ## Bug Reporting Configuration
 
@@ -520,7 +533,7 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Standard Android or Zebra Extended Bug Reporting should be used for generation of Bug Reports from a Zebra Android device.
 
-- When the value ***Off*** is chosen, Standard Android Bug Reporting will be used, with no Zebra Extensions or Enhancements.
+- When the value ***Off*** is chosen, Standard Android Bug Reporting is used, with no Zebra Extensions or Enhancements.
 
 - When the value ***On*** is chosen, Zebra Extended Bug Reporting.  Additional Managed Configurations would then be used, if needed, to configure the desired behavior and options of Zebra Extended Bug Reporting. 
 
@@ -528,7 +541,7 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Zebra Extended Bug Reporting should allow a Bug Report to be initiated by an application by sending a broadcast intent with an action value of *com.symbol.mxmf.intent.START_FOR_BUG_REPORT*.  This is meaningful only when Zebra Extended Bug Reporting is enabled.
 
-- When the value ***Off*** is chosen, Zebra Extended Bug Reporting, if enabled, will not initiate a Bug Report when the defined intent is received.
+- When the value ***Off*** is chosen, Zebra Extended Bug Reporting, if enabled, does NOT initiate a Bug Report when the defined intent is received.
 
 - When the value ***On*** is chosen, Zebra Extended Bug Reporting, if enabled, will initiate a Bug Report when the defined intent is received. 
 
@@ -536,7 +549,7 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Zebra Extended Bug Reporting should be allowed to capture screenshots and attach them to Bug Reports.
 
-- When the value ***Off*** is chosen, Zebra Extended Bug Reporting, if enabled, will not capture Bug Reports nor attach them to Bug Reports.
+- When the value ***Off*** is chosen, Zebra Extended Bug Reporting, if enabled, does NOT capture Bug Reports nor attach them to Bug Reports.
 
 - When the value ***On*** is chosen, Zebra Extended Bug Reporting, if enabled, will capture Bug Reports and attach them to Bug Reports. 
 
@@ -572,7 +585,7 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 ### Bug Reporting Configuration - Send to Cloud Detail
 
-This Managed Configuration group allows an Administrator using an EMM to configure whether copies of generated Bug Reports will be sent to the Zebra Cloud Server.
+This Managed Configuration group allows an Administrator using an EMM to configure whether copies of generated Bug Reports is sent to the Zebra Cloud Server.
 
 
 #### Bug Reporting Configuration - Send to Cloud Detail State
@@ -593,7 +606,7 @@ This Managed Configuration allows an Administrator using an EMM to configure a t
 
 ### Bug Reporting Configuration - Store in Device Detail
 
-This Managed Configuration group allows an Administrator using an EMM to configure whether copies of generated Bug Reports will be stored in the Zebra device and, if so, where in the device they will be stored. 
+This Managed Configuration group allows an Administrator using an EMM to configure whether copies of generated Bug Reports is stored in the Zebra device and, if so, where in the device they is stored. 
 
 #### Bug Reporting Configuration - Store In Device Detail State
 
@@ -619,7 +632,7 @@ This Managed Configuration allows an Administrator using an EMM to configure a t
 
 ### Bug Reporting Configuration - Send Via Email Detail
 
-This Managed Configuration group allows an Administrator using an EMM to configure whether copies of generated Bug Reports will be automatically emailed and, if so, the details of the email that should be sent.  
+This Managed Configuration group allows an Administrator using an EMM to configure whether copies of generated Bug Reports is automatically emailed and, if so, the details of the email that should be sent.  
 
 #### Bug Reporting Configuration - Send Via Email Detail State
 
@@ -631,29 +644,29 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 #### Bug Reporting Configuration - Send Via Email Detail SMTP Host
 
-This Managed Configuration allows an Administrator using an EMM to configure the address or host name of the SMTP (email) Server via which emails will be sent to deliver generated Bug Reports, and should be specified only if the value ***On*** is chosen for Managed Configuration **Bug Reporting Configuration - Send Via Email Detail State**.
+This Managed Configuration allows an Administrator using an EMM to configure the address or host name of the SMTP (email) Server via which emails is sent to deliver generated Bug Reports, and should be specified only if the value ***On*** is chosen for Managed Configuration **Bug Reporting Configuration - Send Via Email Detail State**.
 
 Note that the Administrator must have access to an email account on the selected SMTP Server and must specify details of that account via additional Managed Configurations within the same group to enable Zebra Extended Bug Reporting to send emails via that SMTP Server.  In addition, the Administrator must have access to a valid email account to use as the destination of the emails, which is NOT required to be on the same SMTP Server, and must specify details of the email address of that account via an additional Managed Configuration within the same group, to enable Zebra Extended Bug Reporting to send the emails to that destination.
 
 
 #### Bug Reporting Configuration - Send Via Email Detail SMTP Port
 
-This Managed Configuration allows an Administrator using an EMM to configure the TCP port number of the SMTP (email) Server via which emails will be sent to deliver generated Bug Reports, and should be specified if only if the Managed Configuration **Bug Reporting Configuration - Send Via Email Detail SMTP Host** is specified. 
+This Managed Configuration allows an Administrator using an EMM to configure the TCP port number of the SMTP (email) Server via which emails is sent to deliver generated Bug Reports, and should be specified if only if the Managed Configuration **Bug Reporting Configuration - Send Via Email Detail SMTP Host** is specified. 
 
 #### Bug Reporting Configuration - Send Via Email Detail Sender ID
 
-This Managed Configuration allows an Administrator using an EMM to configure the ID of the email account that will be used as the source (from address) of emails that will be sent to deliver generated Bug Reports, and should be specified only if the value ***On*** is chosen for Managed Configuration **Bug Reporting Configuration - Send Via Email Detail State** and a valid SMTP (email) Server is specified via the Managed Configuration **Bug Reporting Configuration - Send Via Email SMTP Host**
+This Managed Configuration allows an Administrator using an EMM to configure the ID of the email account that is used as the source (from address) of emails that is sent to deliver generated Bug Reports, and should be specified only if the value ***On*** is chosen for Managed Configuration **Bug Reporting Configuration - Send Via Email Detail State** and a valid SMTP (email) Server is specified via the Managed Configuration **Bug Reporting Configuration - Send Via Email SMTP Host**
 
 Note that the Administrator must have access to a valid email account on the configured SMTP (email) Server and must specify additional information via other Managed Configurations within the same group, such as **Bug Reporting Configuration - Send Via Email Detail Sender Password** to enable Zebra Extended Bug Reporting to successfully send the emails using that account via that server. 
 
 #### Bug Reporting Configuration - Send Via Email Detail Sender Password
 
-This Managed Configuration allows an Administrator using an EMM to configure the password of the email account that will be used as the source (from address) of emails that will be sent to deliver generated Bug Reports, and should be specified only if the value ***On*** is chosen for Managed Configuration **Bug Reporting Configuration - Send Via Email Detail State**, and a valid SMTP (email) Server is specified via the Managed Configuration **Bug Reporting Configuration - Send Via Email SMTP Host**, and a valid email address is specified via the Managed Configuration **Bug Reporting Configuration - Send Via Email Sender ID**.
+This Managed Configuration allows an Administrator using an EMM to configure the password of the email account that is used as the source (from address) of emails that is sent to deliver generated Bug Reports, and should be specified only if the value ***On*** is chosen for Managed Configuration **Bug Reporting Configuration - Send Via Email Detail State**, and a valid SMTP (email) Server is specified via the Managed Configuration **Bug Reporting Configuration - Send Via Email SMTP Host**, and a valid email address is specified via the Managed Configuration **Bug Reporting Configuration - Send Via Email Sender ID**.
   
 
 #### Bug Reporting Configuration - Send Via Email Detail Send To Address
 
-This Managed Configuration allows an Administrator using an EMM to configure the email address of the email account that will be used as the destination (to address) of emails that will be sent to deliver generated Bug Reports, and should be specified only if the value ***On*** is chosen for Managed Configuration **Bug Reporting Configuration - Send Via Email Detail State**. 
+This Managed Configuration allows an Administrator using an EMM to configure the email address of the email account that is used as the destination (to address) of emails that is sent to deliver generated Bug Reports, and should be specified only if the value ***On*** is chosen for Managed Configuration **Bug Reporting Configuration - Send Via Email Detail State**. 
 
 #### Bug Reporting Configuration - Email Time to Live
 
@@ -665,35 +678,35 @@ This Managed Configuration allows an Administrator using an EMM to configure a t
 
 ### Bug Reporting Configuration - Dialog Elements
 
-This Managed Configuration array allows an Administrator using an EMM to customize the dialog that will be presented to the Device User to collect information that will be included in generated Bug Reports. 
+This Managed Configuration array allows an Administrator using an EMM to customize the dialog that is presented to the Device User to collect information that is included in generated Bug Reports. 
 
 #### Bug Reporting Configuration - Dialog Element Detail
 
-This Managed Configuration group allows an Administrator using an EMM to specify the details of a single dialog element to be included in the dialog that will be presented to the Device User to collect information that will be included in generated Bug Reports. 
+This Managed Configuration group allows an Administrator using an EMM to specify the details of a single dialog element to be included in the dialog that is presented to the Device User to collect information that is included in generated Bug Reports. 
 
 ##### Bug Reporting Configuration - Dialog Element Detail Type
 
-This Managed Configuration allows an Administrator using an EMM to specify the type of a single dialog element being included in the dialog that will be presented to the Device User to collect information that will be included in generated Bug Reports.
+This Managed Configuration allows an Administrator using an EMM to specify the type of a single dialog element being included in the dialog that is presented to the Device User to collect information that is included in generated Bug Reports.
 
 Depending on the Type value chosen, one or more additional Managed Configurations may also need to be specified:
 
-- When the Action value ***ErrorNameTextBox*** is chosen, a text box will be added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered.  The additional Managed Configuration **Bug Reporting Configuration - Dialog Element Detail Type Error Name Text Box Text** must also be specified to provide a text to be pre-populated into the text box.
+- When the Action value ***ErrorNameTextBox*** is chosen, a text box is added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered.  The additional Managed Configuration **Bug Reporting Configuration - Dialog Element Detail Type Error Name Text Box Text** must also be specified to provide a text to be pre-populated into the text box.
 
-- When the Action value ***Label*** is chosen, a text label will be added to the dialog presented to the Device User.  The additional Managed Configuration **Bug Reporting Configuration - Dialog Element Detail Type Label Text** must also be specified to provide the text to be populated into the label.
+- When the Action value ***Label*** is chosen, a text label is added to the dialog presented to the Device User.  The additional Managed Configuration **Bug Reporting Configuration - Dialog Element Detail Type Label Text** must also be specified to provide the text to be populated into the label.
 
-- When the Action value ***TextBox*** is chosen, a text box will be added to the dialog presented to the Device User in which generic text can be entered.  The additional Managed Configuration **Bug Reporting Configuration - Dialog Element Detail Type Text Box Text** must also be specified to provide the text to be pre-populated into the text box. The specified text will to provide guidance to the Device User about the expected value and will disappear when the user begins typing into the text box.
+- When the Action value ***TextBox*** is chosen, a text box is added to the dialog presented to the Device User in which generic text can be entered.  The additional Managed Configuration **Bug Reporting Configuration - Dialog Element Detail Type Text Box Text** must also be specified to provide the text to be pre-populated into the text box. The specified text will to provide guidance to the Device User about the expected value and will disappear when the user begins typing into the text box.
 
-- When the Action value ***VoiceRecordButton*** is chosen, a voice record button will be added to the dialog presented to the Device User.  Clicking this button will allow the Device User to record a verbal explanation of the bug to be attached to the generated Bug Report.  No additional Managed Configurations need to be specified.
+- When the Action value ***VoiceRecordButton*** is chosen, a voice record button is added to the dialog presented to the Device User.  Clicking this button will allow the Device User to record a verbal explanation of the bug to be attached to the generated Bug Report.  No additional Managed Configurations need to be specified.
 
 
 
 ##### Bug Reporting Configuration - Dialog Element Detail Type Error Name Text Box Text
 
-This Managed Configuration allows an Administrator using an EMM to specify the text to be pre-populated into a text box that will be added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered and should be specified if and only if the value ***Error Name Text Box*** is chosen for Managed Configuration **Bug Reporting Configuration - Dialog Element Detail Type**. 
+This Managed Configuration allows an Administrator using an EMM to specify the text to be pre-populated into a text box that is added to the dialog presented to the Device User in which the name to be assigned to the Bug Report being generated can be entered and should be specified if and only if the value ***Error Name Text Box*** is chosen for Managed Configuration **Bug Reporting Configuration - Dialog Element Detail Type**. 
 
 ##### Bug Reporting Configuration - Dialog Element Detail Type Label Text
 
-This Managed Configuration allows an Administrator using an EMM to specify the text of a label that will be added to the dialog presented to the Device User and should be specified if and only if the value ***Label*** is chosen for Managed Configuration **Bug Reporting Configuration - Dialog Element Detail Type**. 
+This Managed Configuration allows an Administrator using an EMM to specify the text of a label that is added to the dialog presented to the Device User and should be specified if and only if the value ***Label*** is chosen for Managed Configuration **Bug Reporting Configuration - Dialog Element Detail Type**. 
 
 ##### Bug Reporting Configuration - Dialog Element Detail Type Text Box Text
 
@@ -712,25 +725,25 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Rear Facing Camera, if present on a Zebra Android device, can be used to take pictures.
 
-- When the value ***Off*** is chosen, no applications or services running on the device will be allowed to take pictures using the Rear Facing Camera.
+- When the value ***Off*** is chosen, no applications or services running on the device is allowed to take pictures using the Rear Facing Camera.
 
-- When the value ***On*** is chosen, any applications or services running on the device will be allowed to take pictures using the Rear Facing Camera. 
+- When the value ***On*** is chosen, any applications or services running on the device is allowed to take pictures using the Rear Facing Camera. 
 
 ### Camera Configuration - Use Of Front Camera
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Front Facing (selfie) Camera, if present on a Zebra Android device, can be used to take pictures.
 
-- When the value ***Off*** is chosen, no applications or services running on the device will be allowed to take pictures using the Front Facing (selfie) Camera.
+- When the value ***Off*** is chosen, no applications or services running on the device is allowed to take pictures using the Front Facing (selfie) Camera.
 
-- When the value ***On*** is chosen, any applications or services running on the device will be allowed to take pictures using the Front Facing (selfie) Camera. 
+- When the value ***On*** is chosen, any applications or services running on the device is allowed to take pictures using the Front Facing (selfie) Camera. 
 
 ### Camera Configuration - Use Of Imager
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Imager (special-purpose image capture device), if present on a Zebra Android device, can be used to take pictures.
 
-- When the value ***Off*** is chosen, no applications or services running on the device will be allowed to take pictures using the Imager (special-purpose image capture device) Camera.
+- When the value ***Off*** is chosen, no applications or services running on the device is allowed to take pictures using the Imager (special-purpose image capture device) Camera.
 
-- When the value ***On*** is chosen, any applications or services running on the device will be allowed to take pictures using the Imager (special-purpose image capture device) Camera. 
+- When the value ***On*** is chosen, any applications or services running on the device is allowed to take pictures using the Imager (special-purpose image capture device) Camera. 
 
 ## Clock Configuration
 
@@ -738,7 +751,7 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 ### Clock Configuration - Time Mode
 
-This Managed Configuration allows an Administrator using an EMM to choose whether time and date configuration will be performed manually, using other Managed Configurations in this group, or automatically, by connecting to a NTP (Network Time Protocol) server. 
+This Managed Configuration allows an Administrator using an EMM to choose whether time and date configuration is performed manually, using other Managed Configurations in this group, or automatically, by connecting to a NTP (Network Time Protocol) server. 
 
 ### Clock Configuration - Manual Date
 
@@ -754,11 +767,11 @@ This Managed Configuration allows an Administrator using an EMM to configure the
 
 ### Clock Configuration - Auto NTP Sync Interval
 
-This Managed Configuration allows an Administrator using an EMM to configure the interval at which automatic date and time configuration will be performed on a Zebra Android device and should be specified if and only if the value ***Automatic*** is chosen for the Managed Configuration **Clock Configuration - Time Mode**. 
+This Managed Configuration allows an Administrator using an EMM to configure the interval at which automatic date and time configuration is performed on a Zebra Android device and should be specified if and only if the value ***Automatic*** is chosen for the Managed Configuration **Clock Configuration - Time Mode**. 
 
 ### Clock Configuration - Time Zone Mode
 
-This Managed Configuration allows an Administrator using an EMM to choose whether time zone configuration will be performed manually, using another Managed Configuration in this group, or automatically, by connecting to a NITZ (Network Identity and Time Zone) source. 
+This Managed Configuration allows an Administrator using an EMM to choose whether time zone configuration is performed manually, using another Managed Configuration in this group, or automatically, by connecting to a NITZ (Network Identity and Time Zone) source. 
 
 ### Clock Configuration - Manual Time Zone
 
@@ -766,7 +779,7 @@ This Managed Configuration allows an Administrator using an EMM to manually conf
 
 ### Clock Configuration - Time Format
 
-This Managed Configuration allows an Administrator using an EMM to choose whether the format in which time will be displayed on the device will be in ***12*** hour (AM/PM)  or ***24*** hour (military) format. 
+This Managed Configuration allows an Administrator using an EMM to choose whether the format in which time is displayed on the device is in ***12*** hour (AM/PM)  or ***24*** hour (military) format. 
 
 ## DHCP Option Configuration
 
@@ -886,11 +899,11 @@ Depending on the value chosen, one or more additional Managed Configurations MAY
 
 ### DHCP Configuration - Send FQDN Value (Option 81)
 
-This Managed Configuration allows an Administrator using an EMM to specify the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address and should be specified if and only if the value ***On*** is chosen for the Managed Configuration **DHCP Configuration - Send Vendor Class Value (Option 60)**.  The additional Managed Configuration **DHCP Configuration - Send FQDN Flag (Option 81)** MUST also be specified to provide the flags to be sent along with the *FQDN value*. 
+This Managed Configuration allows an Administrator using an EMM to specify the *Fully Qualified Domain Name (FQDN)* that is sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address and should be specified if and only if the value ***On*** is chosen for the Managed Configuration **DHCP Configuration - Send Vendor Class Value (Option 60)**.  The additional Managed Configuration **DHCP Configuration - Send FQDN Flag (Option 81)** MUST also be specified to provide the flags to be sent along with the *FQDN value*. 
 
 ### DHCP Configuration - Send FQDN Flag (Option 81)
 
-This Managed Configuration allows an Administrator using an EMM to specify the flags to be sent along with the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address and should be specified if and only if the value ***On*** is chosen for the Managed Configuration **DHCP Configuration - Send Vendor Class Value (Option 60)** and should be specified if and only if the value Managed Configuration **DHCP Configuration - Send FQDN Value (Option 81)** is specified. 
+This Managed Configuration allows an Administrator using an EMM to specify the flags to be sent along with the *Fully Qualified Domain Name (FQDN)* that is sent to the DHCP Server using *DHCP Option 81* when requesting an IP Address and should be specified if and only if the value ***On*** is chosen for the Managed Configuration **DHCP Configuration - Send Vendor Class Value (Option 60)** and should be specified if and only if the value Managed Configuration **DHCP Configuration - Send FQDN Value (Option 81)** is specified. 
 
 ### DHCP Configuration - Request Custom Option Number
 
@@ -900,9 +913,9 @@ This Managed Configuration allows an Administrator using an EMM to provide the o
 
 This Managed Configuration allows an Administrator using an EMM to configure the DHCP Client on a Zebra Android device to request that the DHCP Server acquire a custom DHCP option and return it along with the IP Address.
 
-- If the value ***Off*** is chosen, then no custom DHCP Option will be requested and no additional Managed Configuration should be specified.
+- If the value ***Off*** is chosen, then no custom DHCP Option is requested and no additional Managed Configuration should be specified.
 
-- If the value ***On*** is chosen, then a custom DHCP Option will be requested and the additional Managed Configuration **DHCP Configuration - Request Custom Option Number** MUST be specified to provide the custom option number to be requested.
+- If the value ***On*** is chosen, then a custom DHCP Option is requested and the additional Managed Configuration **DHCP Configuration - Request Custom Option Number** MUST be specified to provide the custom option number to be requested.
 
 
 
@@ -915,9 +928,9 @@ This Managed Configuration allows an Administrator using an EMM to provide a the
 
 This Managed Configuration allows an Administrator using an EMM to configure the DHCP Client on a Zebra Android device to request that the DHCP Server send a custom DHCP option when requesting an IP Address.
 
-- If the value ***Off*** is chosen, then no custom DHCP Option will be sent and no additional Managed Configurations should be specified.
+- If the value ***Off*** is chosen, then no custom DHCP Option is sent and no additional Managed Configurations should be specified.
 
-- If the value ***On*** is chosen, then a custom DHCP Option will be sent and the additional Managed Configuration **DHCP Configuration - Send Custom Option Number** MUST be specified to provide the custom option number to be sent and the additional Managed Configuration **DHCP Configuration - Send Custom Option Value** MUST be specified to provide the custom option value to be sent. 
+- If the value ***On*** is chosen, then a custom DHCP Option is sent and the additional Managed Configuration **DHCP Configuration - Send Custom Option Number** MUST be specified to provide the custom option number to be sent and the additional Managed Configuration **DHCP Configuration - Send Custom Option Value** MUST be specified to provide the custom option value to be sent. 
 
 ### DHCP Configuration - Send Custom Option Value
 
@@ -941,7 +954,7 @@ The value of this Managed Configuration specifies an Action value and depending 
 
 - When the Action value ***DisallowSubmitXml*** is chosen, a single application service is disallowed from submitting XML for processing by the Zebra MX Management System.  The additional Managed Configuration **Device Administration Configuration - Action Disallow Submit XML Package Name** must be specified to supply the Android Package Name that identifies the application or service is to be disallowed.
 
-- When the Action value ***SubmitXml*** is chosen, the additional Managed Configuration **Device Administration Configuration - Action Action Submit XML** must be specified to supply the XML string that will be submitted for processing by the .Zebra MX Management System.
+- When the Action value ***SubmitXml*** is chosen, the additional Managed Configuration **Device Administration Configuration - Action Action Submit XML** must be specified to supply the XML string that is submitted for processing by the .Zebra MX Management System.
 
 
 ### Device Administration Configuration - Action Allow Submit XML Package Name
@@ -992,9 +1005,9 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 ### Display Configuration - Timeout
 
-This Managed Configuration allows an Administrator using an EMM to configure the amount of inactivity, in seconds, after which the device will timeout and the Display Screen will be turned off.
+This Managed Configuration allows an Administrator using an EMM to configure the amount of inactivity, in seconds, after which the device will timeout and the Display Screen is turned off.
 
-A given device may not support all options that are allowed to be specified using this Managed Configuration.  In the event that the value specified is not supported on a given device, the smallest larger value that is supported will be used or, if no larger value is supported, then the largest smaller that is supported will be used.
+A given device may not support all options that are allowed to be specified using this Managed Configuration.  In the event that the value specified is not supported on a given device, the smallest larger value that is supported is used or, if no larger value is supported, then the largest smaller that is supported is used.
 
 
 ### Display Configuration - Blanking Mode
@@ -1003,13 +1016,13 @@ This Managed Configuration allows an Administrator using an EMM to configure the
 
 - When a value of ***Never Blank*** is chosen, the Display will never be automatically Blanked.
 
-- When a value of ***Blank When Triggered by Signal*** is chosen, the Display will be automatically Blanked and the following Managed Configurations must be used:
+- When a value of ***Blank When Triggered by Signal*** is chosen, the Display is automatically Blanked and the following Managed Configurations must be used:
 
-    - **Display Configuration - Blanking Signal** - to specify the signal that will be used to activate automatic Blanking
+    - **Display Configuration - Blanking Signal** - to specify the signal that is used to activate automatic Blanking
 
-    - **Display Configuration - Blanking Signal Polarity** - to specify the polarity of the signal specified by the Managed Configuration **Display Configuration - Blanking Signal** that will be used to activate automatic Blanking
+    - **Display Configuration - Blanking Signal Polarity** - to specify the polarity of the signal specified by the Managed Configuration **Display Configuration - Blanking Signal** that is used to activate automatic Blanking
 
-    - **Display Configuration - Blanking Signal Debounce Delay** - to specify the time that will be used to debounce the signal specified by the Managed Configuration **Display Configuration - Blanking Signal** before using it to activate automatic Blanking
+    - **Display Configuration - Blanking Signal Debounce Delay** - to specify the time that is used to debounce the signal specified by the Managed Configuration **Display Configuration - Blanking Signal** before using it to activate automatic Blanking
 
 
 ### Display Configuration - Stay Awake
@@ -1024,15 +1037,15 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 ### Display Configuration - Blanking Mode Signal
 
-This Managed Configuration allows an Administrator using an EMM to select the Signal that will be used to trigger automatic Dislplay Blanking and should be specified if and only if the value ***Blank When Triggered by Signal*** is chosen for the Managed Configuration **Display Configuration - Blanking Mode**. 
+This Managed Configuration allows an Administrator using an EMM to select the Signal that is used to trigger automatic Display Blanking and should be specified if and only if the value ***Blank When Triggered by Signal*** is chosen for the Managed Configuration **Display Configuration - Blanking Mode**. 
 
 ### Display Configuration - Blanking Mode Signal Polarity
 
-This Managed Configuration allows an Administrator using an EMM to select the Polarity of the Signal that will be used to trigger automatic Dislplay Blanking and should be specified if and only if the value ***Blank When Triggered by Signal*** is chosen for the Managed Configuration **Display Configuration - Blanking Mode**. 
+This Managed Configuration allows an Administrator using an EMM to select the Polarity of the Signal that is used to trigger automatic Dislplay Blanking and should be specified if and only if the value ***Blank When Triggered by Signal*** is chosen for the Managed Configuration **Display Configuration - Blanking Mode**. 
 
 ### Display Configuration - Blanking Mode Signal Debounce Delay
 
-This Managed Configuration allows an Administrator using an EMM to select the Debounce Delay that will be used for the Signal that will be used to trigger automatic Dislplay Blanking and should be specified if and only if the value ***Blank When Triggered by Signal*** is chosen for the Managed Configuration **Display Configuration - Blanking Mode**. 
+This Managed Configuration allows an Administrator using an EMM to select the Debounce Delay that is used for the Signal that is used to trigger automatic Dislplay Blanking and should be specified if and only if the value ***Blank When Triggered by Signal*** is chosen for the Managed Configuration **Display Configuration - Blanking Mode**. 
 
 ## Enterprise Keyboard Configuration
 
@@ -1042,9 +1055,9 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will have automatic capitalization turned on (enabled) or turned off (disabled) for the first letter of each sentence.
 
-- When a value of ***Off*** is chosen, automatic capitalization will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, automatic capitalization is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, automatic capitalization will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, automatic capitalization is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
@@ -1052,9 +1065,9 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will have automatic correction of misspelled words turned on (enabled) or turned off (disabled), wherein the space and punctuation keys initiate automatic correction of misspelled words.
 
-- When a value of ***Off*** is chosen, automatic correction of misspelled words will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, automatic correction of misspelled words is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, automatic correction of misspelled words will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, automatic correction of misspelled words is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
@@ -1062,9 +1075,9 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will have automatic blocking of offensive words turned on (enabled) or turned off (disabled).
 
-- When a value of ***Off*** is chosen, automatic offensive word blocking will be turned off (disabled).
+- When a value of ***Off*** is chosen, automatic offensive word blocking is turned off (disabled).
 
-- When a value of ***On*** is chosen, automatic offensive word blocking will be turned on (enabled).
+- When a value of ***On*** is chosen, automatic offensive word blocking is turned on (enabled).
 
 
 
@@ -1072,9 +1085,9 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will have automatic sentence ending turned on (enabled) or turned off (disabled) wherein a double tap on the space key causes the entry of a period followed by two spaces.
 
-- When a value of ***Off*** is chosen, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, this feature is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, this feature is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
@@ -1082,9 +1095,9 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will show alternate characters when a flick gesture is performed.
 
-- When a value of ***Off*** is chosen, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, this feature is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, this feature is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
@@ -1117,9 +1130,9 @@ This Managed Configuration allows an Administrator using an EMM to configure the
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will show the alphanumeric tab to allow selection of the alphanumeric keyboard.
 
-- When a value of ***Off*** is chosen, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, this feature is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, this feature is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
@@ -1127,9 +1140,9 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will show the numeric tab to allow selection of the numeric keyboard.
 
-- When a value of ***Off*** is chosen, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, this feature is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, this feature is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
@@ -1137,9 +1150,9 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will show the scan tab to allow control of barcode scanning.
 
-- When a value of ***Off*** is chosen, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, this feature is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, this feature is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
@@ -1147,9 +1160,9 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will show the symbol tab to allow selection of the special symbols keyboard.
 
-- When a value of ***Off*** is chosen, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, this feature is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, this feature is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
@@ -1157,9 +1170,9 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will show a key to invoke voice input (if supported).
 
-- When a value of ***Off*** is chosen, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, this feature is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, this feature is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
@@ -1180,21 +1193,21 @@ This Managed Configuration allows an Administrator using an EMM to configure the
 
 ### Enterprise Keyboard Configuration - Suggest Contact Names
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device showing contact name suggestions while typing based on past actions will be turned on (enabled) or turned off (disabled).
+This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device showing contact name suggestions while typing based on past actions is turned on (enabled) or turned off (disabled).
 
-- When a value of ***Off*** is chosen, contact name suggestions will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, contact name suggestions is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, contact name suggestions will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, contact name suggestions is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
 ### Enterprise Keyboard Configuration - Suggest Misspelling Corrections
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device showing suggestions for corrections of misspelled words while typing will be turned on (enabled) or turned off (disabled).
+This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device showing suggestions for corrections of misspelled words while typing is turned on (enabled) or turned off (disabled).
 
-- When a value of ***Off*** is chosen, correction suggestions will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, correction suggestions is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, correction suggestions will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, correction suggestions is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
@@ -1202,9 +1215,9 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will have key popup on each keypress turned on (enabled) or turned off (disabled) wherein a visible indication that thekey was pressed occurs.
 
-- When a value of ***Off*** is chosen, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, this feature is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, this feature is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
@@ -1212,50 +1225,50 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will have sound on each keypress turned on (enabled) or turned off (disabled) wherein an audible indication that the key was pressed occurs.
 
-- When a value of ***Off*** is chosen, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, this feature is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, this feature is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
 ### Enterprise Keyboard Configuration - Sound on Keypress Volume Mode
 
-This Managed Configuration allows an Administrator using an EMM to configure the volume mode that will be used by the Enterprise Keyboard on a Zebra Android device when sound occurs on each keypress.
+This Managed Configuration allows an Administrator using an EMM to configure the volume mode that is used by the Enterprise Keyboard on a Zebra Android device when sound occurs on each keypress.
 
-- When a value of ***System Default Volume*** is chosen, the System Default Volume for keypress sounds will be used.
+- When a value of ***System Default Volume*** is chosen, the System Default Volume for keypress sounds is used.
 
-- When a value of ***Specified Volume*** is chosen, a specified volume will be used and the Managed Configuration **ekbSoundOnKeypressVolume** MUST also be specified to supply that volume.
+- When a value of ***Specified Volume*** is chosen, a specified volume is used and the Managed Configuration **ekbSoundOnKeypressVolume** MUST also be specified to supply that volume.
 
 
 
 ### Enterprise Keyboard Configuration - Sound on Keypress Volume
 
-This Managed Configuration allows an Administrator using an EMM to configure the volume (from 0 to 100) that will be used by the Enterprise Keyboard on a Zebra Android device when sound occurs on each keypress, and should be specified if and only if the value ***On*** is specified for the Managed Configuration **Enterprise Keyboard Configuration - Sound on Keypress** and the value ***System Default Volume*** is specified for the Managed Configuration **Enterprise Keyboard Configuration - Sound on Keypress Volume Mode**.
+This Managed Configuration allows an Administrator using an EMM to configure the volume (from 0 to 100) that is used by the Enterprise Keyboard on a Zebra Android device when sound occurs on each keypress, and should be specified if and only if the value ***On*** is specified for the Managed Configuration **Enterprise Keyboard Configuration - Sound on Keypress** and the value ***System Default Volume*** is specified for the Managed Configuration **Enterprise Keyboard Configuration - Sound on Keypress Volume Mode**.
 
 
 ### Enterprise Keyboard Configuration - Vibrate on Keypress
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Enterprise Keyboard on a Zebra Android device will have vibration on each keypress turned on (enabled) or turned off (disabled) wherein a tactile indication that the key was pressed occurs.
 
-- When a value of ***Off*** is chosen, this feature will be turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***Off*** is chosen, this feature is turned off (disabled), and hence it will not be available for use in entering data using the Enterprise Keyboard.
 
-- When a value of ***On*** is chosen, this feature will be turned on (enabled), and hence it will be available for use in entering data using the Enterprise Keyboard.
+- When a value of ***On*** is chosen, this feature is turned on (enabled), and hence it is available for use in entering data using the Enterprise Keyboard.
 
 
 
 ### Enterprise Keyboard Configuration - Vibrate on Keypress Duration Mode
 
-This Managed Configuration allows an Administrator using an EMM to configure the duration mode that will be used by the Enterprise Keyboard on a Zebra Android device when vibrate occurs on each keypress.
+This Managed Configuration allows an Administrator using an EMM to configure the duration mode that is used by the Enterprise Keyboard on a Zebra Android device when vibrate occurs on each keypress.
 
-- When a value of ***System Default Duration*** is chosen, the System Default Duration for keypress vibrate will be used.
+- When a value of ***System Default Duration*** is chosen, the System Default Duration for keypress vibrate is used.
 
-- When a value of ***Specified Duration*** is chosen, a specified duration will be used and the Managed Configuration **ekbVibrarteOnKeypressDuration** MUST also be specified to supply that duration.
+- When a value of ***Specified Duration*** is chosen, a specified duration is used and the Managed Configuration **ekbVibrarteOnKeypressDuration** MUST also be specified to supply that duration.
 
 
 
 ### Enterprise Keyboard Configuration - Vibrate on Keypress Duration
 
-This Managed Configuration allows an Administrator using an EMM to configure the duration (from 0 to 100 milliseconds) that will be used by the Enterprise Keyboard on a Zebra Android device when a vibrate occurs on each keypress, and should be specified if and only if the value ***On*** is specified for the Managed Configuration **Enterprise Keyboard Configuration - Vibrate on Keypress** and the value ***System Default Duration*** is specified for the Managed Configuration **Enterprise Keyboard Configuration - Vibrate on Keypress Duration Mode**.
+This Managed Configuration allows an Administrator using an EMM to configure the duration (from 0 to 100 milliseconds) that is used by the Enterprise Keyboard on a Zebra Android device when a vibrate occurs on each keypress, and should be specified if and only if the value ***On*** is specified for the Managed Configuration **Enterprise Keyboard Configuration - Vibrate on Keypress** and the value ***System Default Duration*** is specified for the Managed Configuration **Enterprise Keyboard Configuration - Vibrate on Keypress Duration Mode**.
 
 
 ### Enterprise Keyboard Configuration - Remap Alpha P1
@@ -1384,7 +1397,7 @@ A given device may or may not support an Ethernet Adapter.  An attempt to config
 
 ### Ethernet Configuration - Proxy Server Port
 
-This Managed Configuration allows an Administrator using an EMM to configure the Port that will be used to reach the Proxy Server to access the Internet from the network accessed via the the Ethernet Adapter.
+This Managed Configuration allows an Administrator using an EMM to configure the Port that is used to reach the Proxy Server to access the Internet from the network accessed via the the Ethernet Adapter.
 
 While it is not mandatory, it is generally best practice to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
@@ -1400,11 +1413,11 @@ A given device may or may not support an Ethernet Adapter.  An attempt to config
 
 ### Ethernet Configuration - IP Address Type
 
-This Managed Configuration allows an Administrator using an EMM to configure how an IP Address will be assigned to the Ethernet adapter.
+This Managed Configuration allows an Administrator using an EMM to configure how an IP Address is assigned to the Ethernet adapter.
 
-- When the value ***Dynamic (DHCP)*** is chosen, an IP Address for the Ethernet adapter will be automatically acquired by the DHCP Client from the DHCP Server.
+- When the value ***Dynamic (DHCP)*** is chosen, an IP Address for the Ethernet adapter is automatically acquired by the DHCP Client from the DHCP Server.
 
-- When the value ***Static (Manual)*** is chosen, an IP Address for the Ethernet adapter will be assigned based on the values contained in the Managed Configurations **Ethernet Configuration - IP Address**, **Ethernet Configuration - Gateway Address**, **Ethernet Configuration - Network Mask**, **Ethernet Configuration - Primary DNS**, and **Ethernet Configuration - Secondary DNS**, which MUST also be specified to supply the required values.
+- When the value ***Static (Manual)*** is chosen, an IP Address for the Ethernet adapter is assigned based on the values contained in the Managed Configurations **Ethernet Configuration - IP Address**, **Ethernet Configuration - Gateway Address**, **Ethernet Configuration - Network Mask**, **Ethernet Configuration - Primary DNS**, and **Ethernet Configuration - Secondary DNS**, which MUST also be specified to supply the required values.
 
 A given device may or may not support an Ethernet Adapter.  An attempt to configure the Ethernet Adapter on a device that does not have one will result in an error.
 
@@ -1473,7 +1486,7 @@ This Managed Configuration allows an Administrator using an EMM to perform an Ac
 
 The value of this Managed Configuration specifies an Action value and depending on the Action value chosen, one or more additional Managed Configurations MAY also be required to provide additional information:
 
-- When the Action value ***Enterprise Reset*** is chosen, the additional Managed Configuration **Firmware Over The Air Configuration - Action File - Enterprise Reset SUW Bypass** MAY be specified to control whether the Setup Wizard (SUW) will be bypassed on GMS devices following the Enterprise Reset.
+- When the Action value ***Enterprise Reset*** is chosen, the additional Managed Configuration **Firmware Over The Air Configuration - Action File - Enterprise Reset SUW Bypass** MAY be specified to control whether the Setup Wizard (SUW) is bypassed on GMS devices following the Enterprise Reset.
 
 - When the Action value ***Factory Reset*** is chosen, no additional Managed Configurations should be specified to provide additional information.
 
@@ -1496,7 +1509,7 @@ Note that the Action value ***OS Downgrade*** can only be used to perform a Down
 
 ### Firmware Over The Air Configuration - Mode Manual Action Enterprise Reset SUW Bypass
 
-This Managed Configuration allows an Administrator using an EMM to specify whether the Setup Wizard (SUW) will be bypassed on GMS devices when performing an Enterprise Reset, and should be specified if and only if the Action value ***Enterprise Reset*** is chosen for the Managed Configuration **Firmware Over The Air Configuration - Action**. 
+This Managed Configuration allows an Administrator using an EMM to specify whether the Setup Wizard (SUW) is bypassed on GMS devices when performing an Enterprise Reset, and should be specified if and only if the Action value ***Enterprise Reset*** is chosen for the Managed Configuration **Firmware Over The Air Configuration - Action**. 
 
 ### Firmware Over The Air Configuration - Mode Manual Action OS Upgrade Suppress Reboot
 
@@ -1520,11 +1533,11 @@ This Managed Configuration allows an Administrator using an EMM to perform an ac
 
 The value of this Managed Configuration specifies one of the following actions:
 
-- When the Action value ***AddApn*** is chosen, a new APN will be added, or an existing APN will be overwritten with a new APN.  The additional Managed Configuration **GPRS Configuration - Action Add APN Name** MUST also be specified to provide the name of the new APN to be added or the name of the existing APN to be replaced.  In addition, some or all of the following Managed Configurations MUST also be specified to provide the APNn definition: **GPRS Configuration - Action Add APN Replace If Existing**,**GPRS Configuration - Action Add APN Make Default**,**GPRS Configuration - Action Add APN Access Point**,**GPRS Configuration - Action Add APN User Name**,**GPRS Configuration - Action Add APN Password**,**GPRS Configuration - Action Add APN Port**,**GPRS Configuration - Action Add APN Proxy**,**GPRS Configuration - Action Add APN MMS Port**,**GPRS Configuration - Action Add APN MMS Proxy**,**GPRS Configuration - Action Add APN Server**,**GPRS Configuration - Action Add APN MMSC**,**GPRS Configuration - Action Add APN Type**,**GPRS Configuration - Action Add APN MCC**,**GPRS Configuration - Action Add APN MNC**.
+- When the Action value ***AddApn*** is chosen, a new APN is added, or an existing APN is overwritten with a new APN.  The additional Managed Configuration **GPRS Configuration - Action Add APN Name** MUST also be specified to provide the name of the new APN to be added or the name of the existing APN to be replaced.  In addition, some or all of the following Managed Configurations MUST also be specified to provide the APNn definition: **GPRS Configuration - Action Add APN Replace If Existing**,**GPRS Configuration - Action Add APN Make Default**,**GPRS Configuration - Action Add APN Access Point**,**GPRS Configuration - Action Add APN User Name**,**GPRS Configuration - Action Add APN Password**,**GPRS Configuration - Action Add APN Port**,**GPRS Configuration - Action Add APN Proxy**,**GPRS Configuration - Action Add APN MMS Port**,**GPRS Configuration - Action Add APN MMS Proxy**,**GPRS Configuration - Action Add APN Server**,**GPRS Configuration - Action Add APN MMSC**,**GPRS Configuration - Action Add APN Type**,**GPRS Configuration - Action Add APN MCC**,**GPRS Configuration - Action Add APN MNC**.
 
-- When the Action value ***RemoveApn*** is chosen, an existing APN will be removed.  The additional Managed Configuration **GPRS Configuration - Action Remove APN Name** MUST also be specified to provide the name of the APN to be removed.
+- When the Action value ***RemoveApn*** is chosen, an existing APN is removed.  The additional Managed Configuration **GPRS Configuration - Action Remove APN Name** MUST also be specified to provide the name of the APN to be removed.
 
-- When the Action value ***RemoveAllApns*** is chosen, all existing APNs will be removed.  No additional Managed Configuration need to be specified. 
+- When the Action value ***RemoveAllApns*** is chosen, all existing APNs is removed.  No additional Managed Configuration need to be specified. 
 
 ### GPRS Configuration - Action Add APN Name
 
@@ -1534,24 +1547,24 @@ This Managed Configuration allows an Administrator using an EMM to provide the n
 
 This Managed Configuration allows an Administrator using an EMM to configure what happens when an APN already exists with the APN name being added when the value chosen for the the Managed Configuration **GPRS Configuration - Action** is ***AddApn***. 
 
-- If the value ***Replace Existing*** is chosen, then if an APN with the name as specified in the Managed Configuration **GPRS Configuration - Action Add APN Name** already exists, then it will be replaced by the definition of the APN being added.
+- If the value ***Replace Existing*** is chosen, then if an APN with the name as specified in the Managed Configuration **GPRS Configuration - Action Add APN Name** already exists, then it is replaced by the definition of the APN being added.
 
-- If the value ***Keep Existing*** is chosen, then if an APN with the name as specified in the Managed Configuration **GPRS Configuration - Action Add APN Name** already exists, then it will NOT be replaced.  The existing APN will be preserved and the new APN will NOT be added.
+- If the value ***Keep Existing*** is chosen, then if an APN with the name as specified in the Managed Configuration **GPRS Configuration - Action Add APN Name** already exists, then it will NOT be replaced.  The existing APN is preserved and the new APN will NOT be added.
 
 
 ### GPRS Configuration - Action Add APN Make Default
 
 This Managed Configuration allows an Administrator using an EMM to configure whether a new APN being added should become the new default APN when the value chosen for the the Managed Configuration **GPRS Configuration - Action** is ***AddApn***. 
 
-- If the value ***Yes*** is chosen, then the new APN being added will become the new default APN and will be preferred over other APNs when establishing a cellular data connection.
+- If the value ***Yes*** is chosen, then the new APN being added will become the new default APN and is preferred over other APNs when establishing a cellular data connection.
 
-- If the value ***No*** is chosen, then the new APN will not become the new default APN and whatever APN was previously the default will remain the default. 
+- If the value ***No*** is chosen, then the new APN does NOT become the new default APN and whatever APN was previously the default will remain the default. 
 
 ### GPRS Configuration - Action Add APN Access Point
 
 This Managed Configuration allows an Administrator using an EMM to specify a value that uniquely identifies an APN on the network when the value chosen for the the Managed Configuration **GPRS Configuration - Action** is ***AddApn***.
 
-APN Identifiers are allocated by cellular carriers to identify the networks that can be reached via various APNs.  When acquiring a cellular data plan from a carrier, an APN Identifier will be provided, typically along with other information that qualifies or controls access to the network it identifies. 
+APN Identifiers are allocated by cellular carriers to identify the networks that can be reached via various APNs.  When acquiring a cellular data plan from a carrier, an APN Identifier is provided, typically along with other information that qualifies or controls access to the network it identifies. 
 
 ### GPRS Configuration - Action Add APN User Name
 
@@ -1637,16 +1650,16 @@ This Managed Configuration allows an Administrator using an EMM to perform a mis
 
 The value of this Managed Configuration specifies one of the following actions:
 
-- If the Action value ***Clear Clipboard*** is chosen, any data currently in the clipboard of the Zebra Android device will be discarded,  This will cause the data to no longer be available to paste.
+- If the Action value ***Clear Clipboard*** is chosen, any data currently in the clipboard of the Zebra Android device is discarded,  This will cause the data to no longer be available to paste.
 
-- If the Action value ***Clear Recently Used Apps List*** is chosen, the list of previously used (launched) applications will be cleared.  This can be used to prevent the device user from accessing previously used applications or control their behavior or configuration from the list presented when the Recent button is pressed.
+- If the Action value ***Clear Recently Used Apps List*** is chosen, the list of previously used (launched) applications is cleared.  This can be used to prevent the device user from accessing previously used applications or control their behavior or configuration from the list presented when the Recent button is pressed.
 
-- If the Action value ***Clear Application Cache*** is chosen, the cache of a specified application will be cleared.  The most common use of this would be to delete cached information, such as login credentials or state, and thereby return the application to its default behavior.  The use of this Action value requires that the additional Managed Configuration **General UI Configuration - Action Clear Application Cache Package** be specified 
+- If the Action value ***Clear Application Cache*** is chosen, the cache of a specified application is cleared.  The most common use of this would be to delete cached information, such as login credentials or state, and thereby return the application to its default behavior.  The use of this Action value requires that the additional Managed Configuration **General UI Configuration - Action Clear Application Cache Package** be specified 
 to identify the application whose cache is to be cleared.
 
-- If the Action value ***Turn On All GMS Applications*** is chosen, all GMS applications that are considered "safe" to disable will be enabled.
+- If the Action value ***Turn On All GMS Applications*** is chosen, all GMS applications that are considered "safe" to disable is enabled.
 
-- If the Action value ***Turn Off All GMS Applications*** is chosen, all GMS applications that are considered "safe" to disable will be disabled.
+- If the Action value ***Turn Off All GMS Applications*** is chosen, all GMS applications that are considered "safe" to disable is disabled.
 
 Note: - Since it is possible to turn GMS Applications on or off individually, using the values ***Turn On All GMS Applications*** and ***Turn Off All GMS Applications*** will guarantee only that all GMS Applications are On or Off ***immediately after*** the requested Action is completed.  Subsequent Actions could result in any mixture of GMS Applications being turned On or Off.  The behavior of the system or any GMS applications under such conditions is not guaranteed.
 
@@ -1665,7 +1678,7 @@ The value of this Managed Configuration should be specified if an only if the Ac
 
 ### General UI Configuration - Allow Device User Control of Do Not Disturb Mode
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be presented with the option to control the state of Do Not Disturb Mode from the Menu presented when the power key is held down on a Zebra Android device.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is presented with the option to control the state of Do Not Disturb Mode from the Menu presented when the power key is held down on a Zebra Android device.
 
 
 
@@ -1675,7 +1688,7 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 - If the value ***Off*** is chosen, then the Device User will NOT be prompted to correct potential mistakes during data entry.
 
-- If the value ***On*** is chosen, then the Device User will be prompted to correct potential mistakes during data entry.
+- If the value ***On*** is chosen, then the Device User is prompted to correct potential mistakes during data entry.
 
 
 
@@ -1683,9 +1696,9 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the charging system be allowed to display the battery charging state using the charging LED when a Zebra Android device is in operating mode.
 
-- If the value ***Disable*** is chosen, then the charging system will be prevented from using the charging LED to display the battery charging state, which may reduce distractions in environments where many devices are charging.
+- If the value ***Disable*** is chosen, then the charging system is prevented from using the charging LED to display the battery charging state, which may reduce distractions in environments where many devices are charging.
 
-- If the value ***Enable*** is chosen, then the charging system will be allowed to use the charging LED to display the battery charging state, which may make it easier to distinguish a fully charged device from a partially charged device. 
+- If the value ***Enable*** is chosen, then the charging system is allowed to use the charging LED to display the battery charging state, which may make it easier to distinguish a fully charged device from a partially charged device. 
 
 ### General UI Configuration - Battery Swap UI Popup
 
@@ -1697,11 +1710,11 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 ### General UI Configuration - Display of Navigation Bar
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the on-screen Navigation Bar will be displayed and hence whether it will take up screen real estate and can be used to navigate the device UI.
+This Managed Configuration allows an Administrator using an EMM to configure whether the on-screen Navigation Bar is displayed and hence whether it will take up screen real estate and can be used to navigate the device UI.
 
 - If the value ***Disable*** is chosen, then the on-screen Navigation Bar will NOT be displayed and hence whether it will NOT take up any screen real estate, and hence cannot be used to navigate the device UI.
 
-- If the value ***Enable*** is chosen, then the on-screen Navigation Bar will be displayed and hence whether it will take up any screen real estate, and hence be used to navigate the device UI. 
+- If the value ***Enable*** is chosen, then the on-screen Navigation Bar is displayed and hence whether it will take up any screen real estate, and hence be used to navigate the device UI. 
 
 ### General UI Configuration - Launcher Package Name
 
@@ -1718,14 +1731,14 @@ A *Locale* is typically specified by selecting a *Language* (e.g. English) and o
 
 This Managed Configuration uses values which combine a *Language* and optionally a *Region* into a single identifier.
 
-- When only a *Language* is to be specified, the identifier will be the name of the *Language* (e.g. CHINA).
+- When only a *Language* is to be specified, the identifier is the name of the *Language* (e.g. CHINA).
 
-- When both a *Language* and a *Region* are to be specified, the identifier will be the name of the *Region* followed by the name of the *Language*, separated by an underscore (e.g. CANADA_FRENCH).
+- When both a *Language* and a *Region* are to be specified, the identifier is the name of the *Region* followed by the name of the *Language*, separated by an underscore (e.g. CANADA_FRENCH).
 
 
 ### General UI Configuration - Network Notification Popup
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Network Notification Popup will be presented to inform the Device User that their network may be monitored.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Network Notification Popup is presented to inform the Device User that their network may be monitored.
 
 - If the value ***Disable*** is chosen, then the Network Notification Popup will NOT be presented, and hence the Device User will NOT be notified that their network may be monitored, even if circumstances warrant such notification.
 
@@ -1737,17 +1750,17 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 - If the value ***Disable*** is chosen, then the Device User will NOT be allowed to Pull Down the Notification Bar, and hence will not be allowed to interact with notifications in the Notifications Panel.
 
-- If the value ***Enable*** is chosen, then the Device User will be allowed to Pull Down the Notification Bar, and hence will be allowed to interact with notifications in the Notifications Panel. 
+- If the value ***Enable*** is chosen, then the Device User is allowed to Pull Down the Notification Bar, and hence is allowed to interact with notifications in the Notifications Panel. 
 
 ### General UI Configuration - Show Airplane Mode in Power Key Menu
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be presented with the option to control the state of Airplane Mode from the Menu presented when the power key is held down on a Zebra Android device.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is presented with the option to control the state of Airplane Mode from the Menu presented when the power key is held down on a Zebra Android device.
 
 
 
 ### General UI Configuration - Show Pairing Popup
 
-This Managed Configuration allows an Administrator using an EMM to configure whether a New Pairing Popup will be presented when an unpaired peripheral device attempts to establish a new Bluetooth pairing with a Zebra Android device.
+This Managed Configuration allows an Administrator using an EMM to configure whether a New Pairing Popup is presented when an unpaired peripheral device attempts to establish a new Bluetooth pairing with a Zebra Android device.
 
 - This option has no effect on existing pairings.
 - This option does not prevent new pairings that are initiated from the device to the peripheral.
@@ -1756,24 +1769,24 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 ### General UI Configuration - Show Virtual Keyboard when Physical Keyboard is Active
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Virtual Keyboard will be shown when the Physical Keyboard is Active.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Virtual Keyboard is shown when the Physical Keyboard is Active.
 
 - If the value ***Disable*** is chosen, then the Virtual Keyboard will NOT be shown if the device has a Physical Keyboard that is Active.  This can help avoid the annoyance and confusing of using up screen real-estate to display an on-screen keyboard when the Device User is using a Physical Keyboard to enter data.
 
-- If the value ***Enable*** is chosen, then the Virtual Keyboard will be shown when data entry is in progress regardless of whether the device has an Active Physical Keyboard.
+- If the value ***Enable*** is chosen, then the Virtual Keyboard is shown when data entry is in progress regardless of whether the device has an Active Physical Keyboard.
 
 
 ### General UI Configuration - Touch Mode
 
 This Managed Configuration allows an Administrator using an EMM to configure the operational mode of the Touch Panel in selected Zebra Android devices:
 
-- If the value ***Stylus or Finger*** is chosen, the Touch Panel will be configured to optimize use with a Stylus or an ungloved Finger.
+- If the value ***Stylus or Finger*** is chosen, the Touch Panel is configured to optimize use with a Stylus or an ungloved Finger.
 
-- If the value ***Glove or Finger*** is chosen, the Touch Panel will be configured to optimize use with a Gloved finger or an ungloved Finger.
+- If the value ***Glove or Finger*** is chosen, the Touch Panel is configured to optimize use with a Gloved finger or an ungloved Finger.
 
-- If the value ***Finger Only*** is chosen, the Touch Panel will be configured to optimize an ungloved Finger.
+- If the value ***Finger Only*** is chosen, the Touch Panel is configured to optimize an ungloved Finger.
 
-- If the value ***Stylus or Glove or Finger*** is chosen, the Touch Panel will be configured to optimize use with a Stylus, a Gloved finger, or an ungloved Finger.
+- If the value ***Stylus or Glove or Finger*** is chosen, the Touch Panel is configured to optimize use with a Stylus, a Gloved finger, or an ungloved Finger.
 
 Not all Zebra Android devices support the ability to configure the Touch Panel mode and those that do may not support every mode.
 
@@ -1785,41 +1798,41 @@ Not all Zebra Android devices support the ability to configure the Touch Panel m
 
 ### General UI Configuration - Use Of Clipboard
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to utilize the clipboard on a Zebra Android device to cut, copy, and paste text between applications.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to utilize the clipboard on a Zebra Android device to cut, copy, and paste text between applications.
 
 
 
 ### General UI Configuration - Use of Home Key
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to utilize the Home Key on a Zebra Android device to leave the current context and return to the Home/Launcher screen.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to utilize the Home Key on a Zebra Android device to leave the current context and return to the Home/Launcher screen.
 
-- If the value ***Off*** is chosen, then the Home key will be ignored and will cause no action if it is pressed.
+- If the value ***Off*** is chosen, then the Home key is ignored and will cause no action if it is pressed.
 
-- If the value ***On*** is chosen, then the Home key will be honored and will cause device to go to the Home/Launcher screen when if it is pressed. 
+- If the value ***On*** is chosen, then the Home key is honored and will cause device to go to the Home/Launcher screen when if it is pressed. 
 
 ### General UI Configuration - Use of Magnification Gestures
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to Use Magnification Gestures.
 
-- If the value ***Off*** is chosen, then the Magnification Gestures will be ignored and no action will be taken if they are used by the Device User.
+- If the value ***Off*** is chosen, then the Magnification Gestures is ignored and no action is taken if they are used by the Device User.
 
-- If the value ***On*** is chosen, then the Magnification Gestures will be honored and appropriate action will be taken if they are used by the Device User. 
+- If the value ***On*** is chosen, then the Magnification Gestures is honored and appropriate action is taken if they are used by the Device User. 
 
 ### General UI Configuration - Use of Recent Apps Key
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to Use the Recent Apps Key to access recently launched applications.
 
-- If the value ***Off*** is chosen, then the Recent Apps Key will be ignored, and hence the Device User will not be allowed to access recently launched applications.
+- If the value ***Off*** is chosen, then the Recent Apps Key is ignored, and hence the Device User will not be allowed to access recently launched applications.
 
-- If the value ***On*** is chosen, then the Recent Apps Key will be honored, and hence the Device User will be allowed to access recently launched applications. 
+- If the value ***On*** is chosen, then the Recent Apps Key is honored, and hence the Device User is allowed to access recently launched applications. 
 
 ### General UI Configuration - Use of Split Screen Mode
 
 This Managed Configuration allows an Administrator using an EMM to configure whether Split Screen Mode is allowed to be used on the device.
 
-- If the value ***Off*** is chosen, then the use of Split Screen Mode will be blocked on the device.
+- If the value ***Off*** is chosen, then the use of Split Screen Mode is blocked on the device.
 
-- If the value ***On*** is chosen, then the use of Split Screen Mode will be allowed on the device. 
+- If the value ***On*** is chosen, then the use of Split Screen Mode is allowed on the device. 
 
 ### General UI Configuration - User Control of Multi User
 
@@ -1827,7 +1840,7 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 - If the value ***Off*** is chosen, then the Primary Device User will not be allowed to manage Secondary Users, even if the device supports multiple users.
 
-- If the value ***On*** is chosen, then the Primary Device User will be allowed to manage Secondary Users, if the device supports multiple users. 
+- If the value ***On*** is chosen, then the Primary Device User is allowed to manage Secondary Users, if the device supports multiple users. 
 
 ## Host Name Configuration
 
@@ -1835,7 +1848,7 @@ This Managed Configuration group allows an Administrator using an EMM to include
 
 ### Host Name Configuration - Device Name
 
-This Managed Configuration allows an Administrator using an EMM to specify the name by which the device will be known on the network. 
+This Managed Configuration allows an Administrator using an EMM to specify the name by which the device is known on the network. 
 
 ## Key Mapping Configuration
 
@@ -1865,88 +1878,88 @@ This Managed Configuration group allows an Administrator using an EMM to specify
 
 ##### Key Mapping Configuration - Action Add Mapping Behavior Table Name
 
-This Managed Configuration allows an Administrator using an EMM to specify the name of the table into which a specific behavior will be stored.  Mapping tables are associated with keyboard states and are named based on the state key on the physical keyboard of a Zebra Android device that causes that keyboard state to be activated or deactivated.
+This Managed Configuration allows an Administrator using an EMM to specify the name of the table into which a specific behavior is stored.  Mapping tables are associated with keyboard states and are named based on the state key on the physical keyboard of a Zebra Android device that causes that keyboard state to be activated or deactivated.
 
 Note that due to variations in keyboard size and layout, not all keyboard states may be supported on all Zebra Android devices or on all keyboard possible on any given Zebra Android device.  Some or all of the following may values may be supported:
 
-- If the value ***Base*** is chosen, then the Base Mapping table will be selected.  The Base Mapping table defines the behavior that will be performed for a physical key when it is pressed while no special keyboard state is active.
+- If the value ***Base*** is chosen, then the Base Mapping table is selected.  The Base Mapping table defines the behavior that is performed for a physical key when it is pressed while no special keyboard state is active.
 
-- If the value ***Blue*** is chosen, then the Blue Mapping table will be selected.  The Blue Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Blue key has been used to activate the Blue keyboard state.
+- If the value ***Blue*** is chosen, then the Blue Mapping table is selected.  The Blue Mapping table defines the behavior that is performed for a physical key when it is pressed in conditions where the Blue key has been used to activate the Blue keyboard state.
 
-- If the value ***Orange*** is chosen, then the Orange Mapping table will be selected.  The Orange Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Orange key has been used to activate the Orange keyboard state.
+- If the value ***Orange*** is chosen, then the Orange Mapping table is selected.  The Orange Mapping table defines the behavior that is performed for a physical key when it is pressed in conditions where the Orange key has been used to activate the Orange keyboard state.
 
-- If the value ***Grey*** is chosen, then the Grey Mapping table will be selected.  The Grey Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Grey key has been used to activate the Grey keyboard state.
+- If the value ***Grey*** is chosen, then the Grey Mapping table is selected.  The Grey Mapping table defines the behavior that is performed for a physical key when it is pressed in conditions where the Grey key has been used to activate the Grey keyboard state.
 
-- If the value ***Shift*** is chosen, then the Shift Mapping table will be selected.  The Shift Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Shift key has been used to activate the Shift keyboard state.
+- If the value ***Shift*** is chosen, then the Shift Mapping table is selected.  The Shift Mapping table defines the behavior that is performed for a physical key when it is pressed in conditions where the Shift key has been used to activate the Shift keyboard state.
 
-- If the value ***Control*** is chosen, then the Control Mapping table will be selected.  The Control Mapping table defines the behavior that will be performed for a physical key when it is pressed in conditions where the Control key has been used to activate the Control keyboard state.
+- If the value ***Control*** is chosen, then the Control Mapping table is selected.  The Control Mapping table defines the behavior that is performed for a physical key when it is pressed in conditions where the Control key has been used to activate the Control keyboard state.
 
 
 ##### Key Mapping Configuration - Action Add Mapping Behavior Type
 
-This Managed Configuration allows an Administrator using an EMM to specify the type of behavior that will be performed when a specified key is pressed while the keyboard state associated with the specified Mapping table is active.The following may values are supported:
+This Managed Configuration allows an Administrator using an EMM to specify the type of behavior that is performed when a specified key is pressed while the keyboard state associated with the specified Mapping table is active.The following may values are supported:
 
-- If the value ***Send Key Code*** is chosen, then the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send a specified key code.  This allows for "classic keyboard remapping" where the behavior of a key is changed to be the behavior of some other key, which may or may not be present on the physical keyboard.  The additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code** MUST also be specified to provide the key code that will be sent.
+- If the value ***Send Key Code*** is chosen, then the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active is to send a specified key code.  This allows for "classic keyboard remapping" where the behavior of a key is changed to be the behavior of some other key, which may or may not be present on the physical keyboard.  The additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code** MUST also be specified to provide the key code that is sent.
 
-- If the value ***Send Trigger*** is chosen, then the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send a trigger signal.  Trigger signals may be used to initiate various activities, such as barcode scanning, RFID reading, push to talk, etc.  The additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Trigger** MUST also be specified to select which trigger signal will be sent,
+- If the value ***Send Trigger*** is chosen, then the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active is to send a trigger signal.  Trigger signals may be used to initiate various activities, such as barcode scanning, RFID reading, push to talk, etc.  The additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Trigger** MUST also be specified to select which trigger signal is sent,
 
-- If the value ***Launch Application*** is chosen, then the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to launch an application.  The additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Launch Application Name** MUST also be specified to provide the "friendly name" of the application to be launched.  Note that this is NOT the Android Package Name.  To launch an application by its Android Package Name, the value ***Send Intent*** should be used.
+- If the value ***Launch Application*** is chosen, then the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active is to launch an application.  The additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Launch Application Name** MUST also be specified to provide the "friendly name" of the application to be launched.  Note that this is NOT the Android Package Name.  To launch an application by its Android Package Name, the value ***Send Intent*** should be used.
 
-- If the value ***Send Intent*** is chosen, then the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active will be to send and Android Intent, which might cause any number of possible results, depending on the nature of the intent configured to be sent.  Some of all of the following additional Managed Configurations MUST also be specified to define the Android Intent to be sent: **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Type**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Action**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Category**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Package Name**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Class**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Data URI**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Flags**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent MIME Type**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Extra Name**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Extra Value**.
+- If the value ***Send Intent*** is chosen, then the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active is to send and Android Intent, which might cause any number of possible results, depending on the nature of the intent configured to be sent.  Some of all of the following additional Managed Configurations MUST also be specified to define the Android Intent to be sent: **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Type**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Action**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Category**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Package Name**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Class**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Data URI**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Flags**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent MIME Type**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Extra Name**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Extra Value**.
 
-Sending an Android Intent provides a very flexible way to specify the behavior to be performed for a key by invoking an application or service.  As such, there are many options that control the nature of the intent that will be sent.  It is generally recommended to fully understand the nature of the Android Intent to be sent before attempting to configure it as a key behavior.  In many cases, the application or service to be invoked will define the nature of the intent is wishes to received and that definition can be used to drive the configuration.
+Sending an Android Intent provides a very flexible way to specify the behavior to be performed for a key by invoking an application or service.  As such, there are many options that control the nature of the intent that is sent.  It is generally recommended to fully understand the nature of the Android Intent to be sent before attempting to configure it as a key behavior.  In many cases, the application or service to be invoked will define the nature of the intent is wishes to received and that definition can be used to drive the configuration.
 
-- If the value ***Suppress*** is chosen, then NO behavior will be performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active.  This is equivalent to mapping the key in that state to "do nothing".
+- If the value ***Suppress*** is chosen, then NO behavior is performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active.  This is equivalent to mapping the key in that state to "do nothing".
 
 - If the value ***Reset To Default*** is chosen, then the the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active be reset back to its defaults.  This will effectively remove any prior mapping of that key in that state and return the key to its standard behavior in that state. 
 
 ##### Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code
 
-This Managed Configuration allows an Administrator using an EMM to specify the key code that will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type**. 
+This Managed Configuration allows an Administrator using an EMM to specify the key code that is sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type**. 
 
 ##### Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code Alt
 
-This Managed Configuration allows an Administrator using an EMM to alter how a key code will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type** and should be specified only if the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code** is specified.
+This Managed Configuration allows an Administrator using an EMM to alter how a key code is sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type** and should be specified only if the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code** is specified.
 
-- If the value ***Off*** is chosen, then when the key code is sent, it will be sent with the Alt keyboard state inactive.  This will ensure that the key code is NOT interpreted as an Alt key.
+- If the value ***Off*** is chosen, then when the key code is sent, it is sent with the Alt keyboard state inactive.  This will ensure that the key code is NOT interpreted as an Alt key.
 
-- If the value ***On*** is chosen, then when the key code is sent, it will be sent with the Alt keyboard state active.  This will ensure that the key code is interpreted as an Alt key.
+- If the value ***On*** is chosen, then when the key code is sent, it is sent with the Alt keyboard state active.  This will ensure that the key code is interpreted as an Alt key.
 
 - If this Managed Configuration is not specified, then when the key code is sent, the Alt keyboard state will not be changed.  This will cause the key to be interpreted as an Alt key or not based on the existing state. 
 
 ##### Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code Ctrl
 
-This Managed Configuration allows an Administrator using an EMM to alter how a key code will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type** and should be specified only if the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code** is specified.
+This Managed Configuration allows an Administrator using an EMM to alter how a key code is sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type** and should be specified only if the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code** is specified.
 
-- If the value ***Off*** is chosen, then when the key code is sent, it will be sent with the Ctrl keyboard state inactive.  This will ensure that the key code is NOT interpreted as an Ctrl key.
+- If the value ***Off*** is chosen, then when the key code is sent, it is sent with the Ctrl keyboard state inactive.  This will ensure that the key code is NOT interpreted as an Ctrl key.
 
-- If the value ***On*** is chosen, then when the key code is sent, it will be sent with the Ctrl keyboard state active.  This will ensure that the key code is interpreted as an Ctrl key.
+- If the value ***On*** is chosen, then when the key code is sent, it is sent with the Ctrl keyboard state active.  This will ensure that the key code is interpreted as an Ctrl key.
 
 - If this Managed Configuration is not specified, then when the key code is sent, the Ctrl keyboard state will not be changed.  This will cause the key to be interpreted as an Ctrl key or not based on the existing state. 
 
 ##### Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code Fn
 
-This Managed Configuration allows an Administrator using an EMM to alter how a key code will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type** and should be specified only if the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code** is specified.
+This Managed Configuration allows an Administrator using an EMM to alter how a key code is sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type** and should be specified only if the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code** is specified.
 
-- If the value ***Off*** is chosen, then when the key code is sent, it will be sent with the Fn keyboard state inactive.  This will ensure that the key code is NOT interpreted as an Fn key.
+- If the value ***Off*** is chosen, then when the key code is sent, it is sent with the Fn keyboard state inactive.  This will ensure that the key code is NOT interpreted as an Fn key.
 
-- If the value ***On*** is chosen, then when the key code is sent, it will be sent with the Fn keyboard state active.  This will ensure that the key code is interpreted as an Fn key.
+- If the value ***On*** is chosen, then when the key code is sent, it is sent with the Fn keyboard state active.  This will ensure that the key code is interpreted as an Fn key.
 
 - If this Managed Configuration is not specified, then when the key code is sent, the Fn keyboard state will not be changed.  This will cause the key to be interpreted as an Fn key or not based on the existing state. 
 
 ##### Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code Shift
 
-This Managed Configuration allows an Administrator using an EMM to alter how a key code will be sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type** and should be specified only if the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code** is specified.
+This Managed Configuration allows an Administrator using an EMM to alter how a key code is sent as the behavior for a specified key a specified state when the value ***Send Key Code*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type** and should be specified only if the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code** is specified.
 
-- If the value ***Off*** is chosen, then when the key code is sent, it will be sent with the Shift keyboard state inactive.  This will ensure that the key code is NOT interpreted as an Shift key.
+- If the value ***Off*** is chosen, then when the key code is sent, it is sent with the Shift keyboard state inactive.  This will ensure that the key code is NOT interpreted as an Shift key.
 
-- If the value ***On*** is chosen, then when the key code is sent, it will be sent with the Shift keyboard state active.  This will ensure that the key code is interpreted as an Shift key.
+- If the value ***On*** is chosen, then when the key code is sent, it is sent with the Shift keyboard state active.  This will ensure that the key code is interpreted as an Shift key.
 
 - If this Managed Configuration is not specified, then when the key code is sent, the Shift keyboard state will not be changed.  This will cause the key to be interpreted as an Shift key or not based on the existing state. 
 
 ##### Key Mapping Configuration - Action Add Mapping Behavior Type Send Trigger
 
-This Managed Configuration allows an Administrator using an EMM to specify the trigger signal that will be sent as the behavior for a specified key a specified state when the value ***Send Trigger*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type**.
+This Managed Configuration allows an Administrator using an EMM to specify the trigger signal that is sent as the behavior for a specified key a specified state when the value ***Send Trigger*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type**.
 
 Eight trigger signals are defined, but not all may be supported on all Zebra Android devices.  All Zebra Android devices generally support at least ***Trigger 1*** and generally default to using this trigger signal to activate the barcode scanner.  Some Zebra Android devices may support additional trigger signals and some Zebra Android devices might be reconfigured to use ***Trigger 1*** for some purpose other than barcode scanning.  To determine which trigger signals are supported on a given Zebra Android device, consult the documentation for that specific device. 
 
@@ -1954,11 +1967,11 @@ Eight trigger signals are defined, but not all may be supported on all Zebra And
 
 This Managed Configuration allows an Administrator using an EMM to specify when an intent should be sent as the behavior for a remapped key.
 
-- If the value ***On Key Down*** is chosen, then the intent will be sent immediately when the key is first detected as being pressed.
+- If the value ***On Key Down*** is chosen, then the intent is sent immediately when the key is first detected as being pressed.
 
 - If the value ***On Key Up*** is chosen, then the intent will not be sent until the key is detected as being released after being being pressed.
 
-- If the value ***,On Both Key Up and Down*** is chosen, then the intent will be sent immediately when the key is first detected as being pressed and then again when the key is detected as being released.
+- If the value ***,On Both Key Up and Down*** is chosen, then the intent is sent immediately when the key is first detected as being pressed and then again when the key is detected as being released.
 
 
 ##### Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Type
@@ -1967,9 +1980,9 @@ This Managed Configuration allows an Administrator using an EMM to specify the m
 
 Depending on the application or service to be invoked, there is likely only one method that can be used successfully to invoke a desired behavior in that application or service.  You will need to consult the documentation or developer of a given application or service to determine whether a category value is needed and, if so, which value will invoke the desired behavior.  The possible values are:
 
-- If the value ***StartActivity*** is chosen, then the Android Intent will be sent using the startActivity() method.  This method is suitable for invoking Activities, which are components that perform user interactions.  If the behavior to be invoked involves interacting with the Device User, then this method will most likely be used.
+- If the value ***StartActivity*** is chosen, then the Android Intent is sent using the startActivity() method.  This method is suitable for invoking Activities, which are components that perform user interactions.  If the behavior to be invoked involves interacting with the Device User, then this method will most likely be used.
 
-- If the value ***Broadcast*** is chosen, then the Android Intent will be sent using the sendBroadcast() method.  This method is suitable for invoking Services, which are components that implement background operations.  If the behavior to be invoked does not involves interacting with the Device User, then this method will most likely be used. 
+- If the value ***Broadcast*** is chosen, then the Android Intent is sent using the sendBroadcast() method.  This method is suitable for invoking Services, which are components that implement background operations.  If the behavior to be invoked does not involves interacting with the Device User, then this method will most likely be used. 
 
 ##### Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Action
 
@@ -2008,7 +2021,7 @@ Whether the intended recipient of the intent expects a URI to be specified as pa
 
 This Managed Configuration allows an Administrator using an EMM to specify intent flags to be set for the intent to be sent.  
 
-Intent flags control how the intent is handled by Android.  Some intent flags are specific to the type of component that will be invoked by the Intent (e.g. activity vs service).
+Intent flags control how the intent is handled by Android.  Some intent flags are specific to the type of component that is invoked by the Intent (e.g. activity vs service).
 Whether certain intent flags are needed to produce the desired result when the intended recipient of the intent is invoked is up to that recipient and/or the definition of the intent that recipient is designed to consume.
 Intent flags must be specified as a hexadecimal value with the appropriate bits set for any flag or flags desired.
 Consult the Android documentation to translate intent flag names, when needed, into their appropriate hexadecimal values.
@@ -2056,19 +2069,19 @@ The value of this Managed Configuration specifies one of the following Action va
 
 ### Power Configuration - Battery Percentage Decommission Threshold
 
-This Managed Configuration allows an Administrator using an EMM to configure the percentage of remaining battery capacity below which the battery will be deemed ready for decommissioning. 
+This Managed Configuration allows an Administrator using an EMM to configure the percentage of remaining battery capacity below which the battery is deemed ready for decommissioning. 
 
 ### Power Configuration - Battery Usage Decommission Threshold
 
-This Managed Configuration allows an Administrator using an EMM to configure the amount of battery usage (e.g. charge/discharge cycles, coulombs in/out, etc.) that can occur beefore the battery will be deemed ready for decommissioning. 
+This Managed Configuration allows an Administrator using an EMM to configure the amount of battery usage (e.g. charge/discharge cycles, coulombs in/out, etc.) that can occur beefore the battery is deemed ready for decommissioning. 
 
 ### Power Configuration - Battery Optimization Action
 
 This Managed Configuration allows an Administrator using an EMM to perform an Action to control which applications are subject to battery optimization and which are exempt.
 
-- If the value ***Add*** is chose, then one or more applications will be made subject to battery optimizations and the additional Managed Configuration **Power Configuration - Battery Optimization Action Add Package Names** MUST be specified to provide the Android Package Name(s) of the application(s) to be made subject to battery optimizations.
+- If the value ***Add*** is chose, then one or more applications is made subject to battery optimizations and the additional Managed Configuration **Power Configuration - Battery Optimization Action Add Package Names** MUST be specified to provide the Android Package Name(s) of the application(s) to be made subject to battery optimizations.
 
-- If the value ***Remove*** is chose, then one or more applications will be made subject to battery optimizations and the additional Managed Configuration **Power Configuration - Battery Optimization Action Remove Package Names** MUST be specified to provide the Android Package Name(s) of the application(s) to be exempted from battery optimizations.
+- If the value ***Remove*** is chose, then one or more applications is made subject to battery optimizations and the additional Managed Configuration **Power Configuration - Battery Optimization Action Remove Package Names** MUST be specified to provide the Android Package Name(s) of the application(s) to be exempted from battery optimizations.
 
 
 ### Power Configuration - Battery Optimization Action Add Package Names
@@ -2093,28 +2106,28 @@ The value of this Managed Configuration specifies one of the following Action va
 
 - ***Turn Output Power ON*** causes the Output Power for a specified Port to be turned on.
 
-When this Managed Configuration is specified, the additional Managed Configuration **Power Configuration - Port Select** must also be specified to identify the Port for which Output Power will be controlled.
+When this Managed Configuration is specified, the additional Managed Configuration **Power Configuration - Port Select** must also be specified to identify the Port for which Output Power is controlled.
 
 
 
 ### Power Configuration - Port Select
 
-This Managed Configuration allows an Administrator using an EMM to specify the Port for which an Action to control the Output Power on the device will be applied, and should be specified if and only if the Managed Configuration **Power Configuration - Port Action** is specified.
+This Managed Configuration allows an Administrator using an EMM to specify the Port for which an Action to control the Output Power on the device is applied, and should be specified if and only if the Managed Configuration **Power Configuration - Port Action** is specified.
 
 The value of this Managed Configuration specifies one of the following Action values
 
-- ***Serial Port 1*** selects the First device Serial Port as the Port for which the Output Power will be turned on or off.
+- ***Serial Port 1*** selects the First device Serial Port as the Port for which the Output Power is turned on or off.
 
-- ***Serial Port 2*** selects the Second device Serial Port as the Port for which the Output Power will be turned on or off.
+- ***Serial Port 2*** selects the Second device Serial Port as the Port for which the Output Power is turned on or off.
 
-- ***USB Port 2*** selects the Second device USB Port as the Port for which the Output Power will be turned on or off.
+- ***USB Port 2*** selects the Second device USB Port as the Port for which the Output Power is turned on or off.
 
 
 
 
 ### Power Configuration - Auto Power Control
 
-This Managed Configuration allows an Administrator using an EMM to to control whether device power will be automatically controlled.
+This Managed Configuration allows an Administrator using an EMM to to control whether device power is automatically controlled.
 
 The value of this Managed Configuration specifies one of the following values
 
@@ -2130,7 +2143,7 @@ The value of this Managed Configuration specifies one of the following values
 
 ### Power Configuration - Auto Power Off
 
-This Managed Configuration allows an Administrator using an EMM to configure whether/how device power will be automatically turned off as part of automatic power control, and should be specified if and only if the Managed Configuration **Power Configuration - Auto Power Control** is specified.
+This Managed Configuration allows an Administrator using an EMM to configure whether/how device power is automatically turned off as part of automatic power control, and should be specified if and only if the Managed Configuration **Power Configuration - Auto Power Control** is specified.
 
 The value of this Managed Configuration specifies one of the following values
 
@@ -2142,13 +2155,13 @@ The value of this Managed Configuration specifies one of the following values
 
 ### Power Configuration - Auto Power Off Timeout
 
-This Managed Configuration allows an Administrator using an EMM to configure the timeout that will be in effect before device power is automatically turned off as part of automatic power control, and should be specified if and only if the value ***On*** is specified for the Managed Configuration **Power Configuration - Auto Power Control** is specified and the value ***When Ignition is Turned Off*** is specified for the Managed Configuration **Power Configuration - Auto Power Off**.
+This Managed Configuration allows an Administrator using an EMM to configure the timeout that is in effect before device power is automatically turned off as part of automatic power control, and should be specified if and only if the value ***On*** is specified for the Managed Configuration **Power Configuration - Auto Power Control** is specified and the value ***When Ignition is Turned Off*** is specified for the Managed Configuration **Power Configuration - Auto Power Off**.
 
 
 
 ### Power Configuration - Auto Power On
 
-This Managed Configuration allows an Administrator using an EMM to configure whether/how device power will be automatically turned on as part of automatic power control, and should be specified if and only if the Managed Configuration **Power Configuration - Auto Power Control** is specified.
+This Managed Configuration allows an Administrator using an EMM to configure whether/how device power is automatically turned on as part of automatic power control, and should be specified if and only if the Managed Configuration **Power Configuration - Auto Power Control** is specified.
 
 The value of this Managed Configuration specifies one of the following values
 
@@ -2170,7 +2183,7 @@ The value of this Managed Configuration specifies one of the following Action va
 
 - ***Disable Heater*** causes the Heater to be turned off and stay off, regardless of the configured ON/OFF thresholds.
 
-- ***Set ON/OFF Thresholds*** configures the ON/OFF thresholds that will be used when the Heater is Enabled.  When this value is specified, then the following Managed Configurations must also be specified:
+- ***Set ON/OFF Thresholds*** configures the ON/OFF thresholds that is used when the Heater is Enabled.  When this value is specified, then the following Managed Configurations must also be specified:
 
     - **Power Configuration - Heater On Threshold** must be specified to set the threshold temperature below which the Heater will automatically be turned on.
 
@@ -2209,7 +2222,7 @@ This Managed Configuration allows an Administrator using an EMM to perform confi
 
 ### Power Configuration - Doze Mode State
 
-This Managed Configuration allows an Administrator using an EMM to perform control whether Doze Mode will be globally used on the device.
+This Managed Configuration allows an Administrator using an EMM to perform control whether Doze Mode is globally used on the device.
 
 - When the value ***Off*** is chosen, the device will never enter Doze Mode for any applications.
 
@@ -2223,16 +2236,16 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 ### RFID Configuration - Country of Operation
 
-This Managed Configuration allows an Administrator using an EMM to specify the *Country of Operation* in which the RFID module will be used.
+This Managed Configuration allows an Administrator using an EMM to specify the *Country of Operation* in which the RFID module is used.
 
-It is critical that the *Country of Operation* be set at least once, since the RFID module has no default *Country of Operation* and will not operate unless/until the *Country of Operation* is explicitly set, to ensure that country-specific regulator requirements are met.
-In most cases, the *Country of Operation* will be set once and never changed, unless the device is physically relocated to a different country. 
+It is critical that the *Country of Operation* be set at least once, since the RFID module has no default *Country of Operation* and does NOT operate unless/until the *Country of Operation* is explicitly set, to ensure that country-specific regulator requirements are met.
+In most cases, the *Country of Operation* is set once and never changed, unless the device is physically relocated to a different country. 
 
 ### RFID Configuration - Country of Operation Channel Mask
 
-This Managed Configuration allows an Administrator using an EMM to specify the *Channel Mask* that determines which of the *Channels* that are allowed, based on the currently selected *Country of Operation* will be used by the RFID module.
+This Managed Configuration allows an Administrator using an EMM to specify the *Channel Mask* that determines which of the *Channels* that are allowed, based on the currently selected *Country of Operation* is used by the RFID module.
 
-- If no *Channel Mask* is specified, then the RFID module will be free to use any or all *Channels* that are available based on the currently selected *Country of Operation*.
+- If no *Channel Mask* is specified, then the RFID module is free to use any or all *Channels* that are available based on the currently selected *Country of Operation*.
 
 - If a *Channel Mask* is specified, then the specified value must consist of one or more *Channel Numbers*, separated by commas if more than one is specified, which identify the *Channels* that can be used.  The RFID module will limit itself to just the *Channels* that are allowed for the currently selected *Country of Operation* AND that are in the set of *Channels* specified via this Managed Configuration.
 
@@ -2241,21 +2254,21 @@ Consult the product documentation for the Zebra Android device being used to obt
 
 ### RFID Configuration - Country of Operation Channel Hopping
 
-This Managed Configuration allows an Administrator using an EMM to configure whether *Channel Hopping* will be performed among the *Channels* that are used by the RFID module. 
+This Managed Configuration allows an Administrator using an EMM to configure whether *Channel Hopping* is performed among the *Channels* that are used by the RFID module. 
 
 ### RFID Configuration - Action
 
 This Managed Configuration allows an Administrator using an EMM to perform an Action to alter the behavior or configuration of the RFID module.
 
-- If the value ***Update Firmware*** is chosen, then the firmware of the RFID module will be updated and the additional Managed Configuration **RFID Configuration - Action Update Firmware File** MUST be specified to supply the path and file name of the file, which must exist in the device file system, containing the firmware update to be applied to the RFID module.
+- If the value ***Update Firmware*** is chosen, then the firmware of the RFID module is updated and the additional Managed Configuration **RFID Configuration - Action Update Firmware File** MUST be specified to supply the path and file name of the file, which must exist in the device file system, containing the firmware update to be applied to the RFID module.
 
-- If the value ***Export Settings*** is chosen, then the current configuration of the RFID module will be exported and stored in a file in the device file system.  This file could then be extracted from the device and used for troubleshooting potential configuration issues related to the RFID module.
+- If the value ***Export Settings*** is chosen, then the current configuration of the RFID module is exported and stored in a file in the device file system.  This file could then be extracted from the device and used for troubleshooting potential configuration issues related to the RFID module.
 
-- If the value ***Reset Radio*** is chosen, then the radio of the  RFID module will be reset, without changing its settings.  This could be used to recover from an error or other failure of the RFID module.
+- If the value ***Reset Radio*** is chosen, then the radio of the  RFID module is reset, without changing its settings.  This could be used to recover from an error or other failure of the RFID module.
 
-- If the value ***Reset Radio to Factory Defaults*** is chosen, then the configuration of the RFID module will be returned to its default out-of-box state and the radio will be reset. This could be used to recover from a serious configuration error that prevents the RFID module from functioning appropriately.
+- If the value ***Reset Radio to Factory Defaults*** is chosen, then the configuration of the RFID module is returned to its default out-of-box state and the radio is reset. This could be used to recover from a serious configuration error that prevents the RFID module from functioning appropriately.
 
-- If the value ***Update Firmware and Reset Radio to Factory Defaults*** is chosen, then the firmware of the RFID will be updated,l the configuration of the RFID module will be returned to its default out-of-box state, and the radio will be reset. This could necessary when applying a major new firmware update, that add lots of new configuration settings, to ensure that the RFID module is configured in a known and compatible state. 
+- If the value ***Update Firmware and Reset Radio to Factory Defaults*** is chosen, then the firmware of the RFID is updated,l the configuration of the RFID module is returned to its default out-of-box state, and the radio is reset. This could necessary when applying a major new firmware update, that add lots of new configuration settings, to ensure that the RFID module is configured in a known and compatible state. 
 
 ### RFID Configuration - Action Update Firmware File
 
@@ -2305,17 +2318,17 @@ This Managed Configuration group allows an Administrator using an EMM to manage 
 
 This Managed Configuration allows an Administrator using an EMM to perform an Action to control a *Remote Scanner* that isconnected to a Zebra Android device.
 
-- If the value ***Apply Configuration Package(RS6000 only)*** is chosen, then a configuration file will be used to apply new configuration to a *Remote Scanner*.  The additional Managed Configuration **Remote Scanner Management - Action Config Serial Number** MUST be specified to provide the *Serial Number* that identifies the *Remote Scanner* to be configured.  The additional Managed Configuration **Remote Scanner Management - Action Config File** MUST also be specified to provide the path and file name of the configuration file to be applied.
+- If the value ***Apply Configuration Package(RS6000 only)*** is chosen, then a configuration file is used to apply new configuration to a *Remote Scanner*.  The additional Managed Configuration **Remote Scanner Management - Action Config Serial Number** MUST be specified to provide the *Serial Number* that identifies the *Remote Scanner* to be configured.  The additional Managed Configuration **Remote Scanner Management - Action Config File** MUST also be specified to provide the path and file name of the configuration file to be applied.
 
-- If the value ***Update Scanner Firmware*** is chosen, then a firmware file will be used to update the firmware of a *Remote Scanner*.  The additional Managed Configuration **Remote Scanner Management - Action Update Serial Number** MUST be specified to provide the *Serial Number* that identifies the *Remote Scanner* to be updated.  The additional Managed Configuration **Remote Scanner Management - Action Update File** MUST also be specified to provide the path and file name of the firmware file to be applied.
+- If the value ***Update Scanner Firmware*** is chosen, then a firmware file is used to update the firmware of a *Remote Scanner*.  The additional Managed Configuration **Remote Scanner Management - Action Update Serial Number** MUST be specified to provide the *Serial Number* that identifies the *Remote Scanner* to be updated.  The additional Managed Configuration **Remote Scanner Management - Action Update File** MUST also be specified to provide the path and file name of the firmware file to be applied.
 
-- If the value ***Reset Scanner(RS6000 only)*** is chosen, then a *Remote Scanner* will be reset, allowing errors to be cleared and proper operation of a*Remote Scanner* to be restored.  The additional Managed Configuration **Remote Scanner Management - Action Reset Serial Number** MUST be specified to provide the *Serial Number* that identifies the *Remote Scanner* to be reset. 
+- If the value ***Reset Scanner(RS6000 only)*** is chosen, then a *Remote Scanner* is reset, allowing errors to be cleared and proper operation of a*Remote Scanner* to be restored.  The additional Managed Configuration **Remote Scanner Management - Action Reset Serial Number** MUST be specified to provide the *Serial Number* that identifies the *Remote Scanner* to be reset. 
 
-- If the value ***Page Scanner(RS6000 only)*** is chosen, then a *Remote Scanner* will be paged, allowing a misplaced *Remote Scanner* to be more easily located.  The additional Managed Configuration **Remote Scanner Management - Action Page Serial Number** MUST be specified to provide the *Serial Number* that identifies the *Remote Scanner* to be paged. 
+- If the value ***Page Scanner(RS6000 only)*** is chosen, then a *Remote Scanner* is paged, allowing a misplaced *Remote Scanner* to be more easily located.  The additional Managed Configuration **Remote Scanner Management - Action Page Serial Number** MUST be specified to provide the *Serial Number* that identifies the *Remote Scanner* to be paged. 
 
-- If the value ***Disconnect Scanner(RS6000 only)*** is chosen, then a *Remote Scanner* will be disconnected, terminating the connection between the Zebra Android device and the *Remote Scanner* and preventing its subsequent use.  The additional Managed Configuration **Remote Scanner Management - Action Disconnect Serial Number** MUST be specified to provide the *Serial Number* that identifies the *Remote Scanner* to be disconnected.
+- If the value ***Disconnect Scanner(RS6000 only)*** is chosen, then a *Remote Scanner* is disconnected, terminating the connection between the Zebra Android device and the *Remote Scanner* and preventing its subsequent use.  The additional Managed Configuration **Remote Scanner Management - Action Disconnect Serial Number** MUST be specified to provide the *Serial Number* that identifies the *Remote Scanner* to be disconnected.
 
-- If the value ***Unpair Scanner(RS6000 only)*** is chosen, then a *Remote Scanner* will be unpaired, terminating the pairing between the Zebra Android device and the *Remote Scanner* and preventing its reconnedtion without first repairing.  The additional Managed Configuration **Remote Scanner Management - Action Unpair Serial Number** MUST be specified to provide the *Serial Number* that identifies the *Remote Scanner* to be unpaired. 
+- If the value ***Unpair Scanner(RS6000 only)*** is chosen, then a *Remote Scanner* is unpaired, terminating the pairing between the Zebra Android device and the *Remote Scanner* and preventing its reconnedtion without first repairing.  The additional Managed Configuration **Remote Scanner Management - Action Unpair Serial Number** MUST be specified to provide the *Serial Number* that identifies the *Remote Scanner* to be unpaired. 
 
 ### Remote Scanner Management - Action Config Serial Number
 
@@ -2402,11 +2415,11 @@ This Managed Configuration allows an Administrator using an EMM to specify the n
 
 ### Security Configuration - Instant Screen Lock on Power Key
 
-This Managed Configuration allows an Administrator using an EMM to specify what happens when the Power Key on the device is used to turn the device off, especially whether the device will be locked, requiring it to be unlocked by entering a PIN or password, if one is specified.
+This Managed Configuration allows an Administrator using an EMM to specify what happens when the Power Key on the device is used to turn the device off, especially whether the device is locked, requiring it to be unlocked by entering a PIN or password, if one is specified.
 
-- When the value ***Off*** is chosen, then turning the device off using the Power Key will be handled the same as when the device times out and turns itself off automatically.  In such a case, if device remains off for longer than value set using the Managed Configuration **Security Configuration - Screen Lock Timeout**, then when it is turned back on, the device will be locked, requiring whatever unlock action is set using the Managed Configuration **Security Configuration - Screen Lock Type**.
+- When the value ***Off*** is chosen, then turning the device off using the Power Key is handled the same as when the device times out and turns itself off automatically.  In such a case, if device remains off for longer than value set using the Managed Configuration **Security Configuration - Screen Lock Timeout**, then when it is turned back on, the device is locked, requiring whatever unlock action is set using the Managed Configuration **Security Configuration - Screen Lock Type**.
 
-- When the value ***On*** is chosen, then turning the device off using the Power Key will be handled differently than when the device times out and turns itself off automatically, specifically the device will become locked "instantly" when turned off using the Power Key.  In such a case, no matter how long the device remains off, when it is turned back on, the device will be locked, requiring whatever unlock action is set using the Managed Configuration **Security Configuration - Screen Lock Type**.
+- When the value ***On*** is chosen, then turning the device off using the Power Key is handled differently than when the device times out and turns itself off automatically, specifically the device will become locked "instantly" when turned off using the Power Key.  In such a case, no matter how long the device remains off, when it is turned back on, the device is locked, requiring whatever unlock action is set using the Managed Configuration **Security Configuration - Screen Lock Type**.
 
 
 
@@ -2414,7 +2427,7 @@ This Managed Configuration allows an Administrator using an EMM to specify what 
 
 This Managed Configuration allows an Administrator using an EMM to specify the type of lock that is used to protect the device from use by unauthorized persons.
 
-- When a value of ***None*** is chosen, no lock will be applied and the device can be used by anyone.
+- When a value of ***None*** is chosen, no lock is applied and the device can be used by anyone.
 
 - When a value of ***Swipe*** is chosen, unlocking will require only a simple swipe and the device can be used by anyone.
 
@@ -2430,83 +2443,83 @@ This Managed Configuration allows an Administrator using an EMM to specify the t
 
 This Managed Configuration allows an Administrator using an EMM to specify what happens when a device turns off as a result of a timeout.
 
-- If the device stays off for at least the time specified in this Managed Configuration, then when the device is turned back on, a unlock will be required, if one was specified using the Managed Configuration **Security Configuration - Screen Lock Type**.
+- If the device stays off for at least the time specified in this Managed Configuration, then when the device is turned back on, a unlock is required, if one was specified using the Managed Configuration **Security Configuration - Screen Lock Type**.
 
-- If the device stays off for less than the time specified in this Managed Configuration, then when the device is turned back on, no unlock will be required, even if one was specified using the Managed Configuration **Security Configuration - Screen Lock Type**.
+- If the device stays off for less than the time specified in this Managed Configuration, then when the device is turned back on, no unlock is required, even if one was specified using the Managed Configuration **Security Configuration - Screen Lock Type**.
 
 
 ## Settings UI Configuration
 
-This Managed Configuration group allows an Administrator using an EMM to configure the behavior of the Settings Menu on a Zebra Android device, especially which features of the Settings Menu will the Device User will be allowed to access.  
+This Managed Configuration group allows an Administrator using an EMM to configure the behavior of the Settings Menu on a Zebra Android device, especially which features of the Settings Menu will the Device User is allowed to access.  
 
 ### Settings UI Configuration - Allow Device User Access Quick Settings
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to access the Android Quick Settings Panel UI.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to access the Android Quick Settings Panel UI.
 
-- If the value ***Off*** is chosen, then any attempt by the Device User to enter the Quick Settings Panel will be ignored.
+- If the value ***Off*** is chosen, then any attempt by the Device User to enter the Quick Settings Panel is ignored.
 
-- If the value ***On*** is chosen, then attempts by the Device User to enter the Quick Settings Panel will be honored and the Quick Settings Panel UI will be presented on request.
+- If the value ***On*** is chosen, then attempts by the Device User to enter the Quick Settings Panel is honored and the Quick Settings Panel UI is presented on request.
 
 
 ### Settings UI Configuration - Allow Device User Control Airplane Mode
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to change the state of Airplane Mode.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to change the state of Airplane Mode.
 
-- If the value ***Off*** is chosen, then any attempt by the Device User to change the state of Airplane Mode will be blocked.
+- If the value ***Off*** is chosen, then any attempt by the Device User to change the state of Airplane Mode is blocked.
 
-- If the value ***On*** is chosen, then attempts by the Device User to change the state of Airplane Mode will be honored. 
+- If the value ***On*** is chosen, then attempts by the Device User to change the state of Airplane Mode is honored. 
 
 ### Settings UI Configuration - Allow Device User Control App Notifications
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to configure which application notifications will be generated.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to configure which application notifications is generated.
 
-- If the value ***Off*** is chosen, then any attempt by the Device User to change the configuration of application notifications will be blocked.
+- If the value ***Off*** is chosen, then any attempt by the Device User to change the configuration of application notifications is blocked.
 
-- If the value ***On*** is chosen, then attempts by the Device User to change the configuration of application notifications will be honored.   
+- If the value ***On*** is chosen, then attempts by the Device User to change the configuration of application notifications is honored.   
 
 ### Settings UI Configuration - Allow Device User Control Apps
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to enter the AppInfo section of the Settings Menu where applications can be controlled.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to enter the AppInfo section of the Settings Menu where applications can be controlled.
  
-- If the value ***Off*** is chosen, then any attempt by the Device User to enter the AppInfo section of the Settings Menu will be ignored.
+- If the value ***Off*** is chosen, then any attempt by the Device User to enter the AppInfo section of the Settings Menu is ignored.
 
-- If the value ***On*** is chosen, then attempts by the Device User to enter the AppInfo section of the Settings will be honored. 
+- If the value ***On*** is chosen, then attempts by the Device User to enter the AppInfo section of the Settings is honored. 
 
 ### Settings UI Configuration - Allow Device User Control Background Data
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to change the usage of Background WWAN data.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to change the usage of Background WWAN data.
 
-- If the value ***Off*** is chosen, then any attempt by the Device User to change the usage of Background WWAN data will be blocked.
+- If the value ***Off*** is chosen, then any attempt by the Device User to change the usage of Background WWAN data is blocked.
 
-- If the value ***On*** is chosen, then attempts by the Device User to change the usage of Background WWAN data will be honored.  
+- If the value ***On*** is chosen, then attempts by the Device User to change the usage of Background WWAN data is honored.  
 
 ### Settings UI Configuration - Allow Device User Control Ethernet
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to change the state of the Ethernet adapter.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to change the state of the Ethernet adapter.
 
-- If the value ***Off*** is chosen, then any attempt by the Device User to change the state of Ethernet adapter will be blocked.
+- If the value ***Off*** is chosen, then any attempt by the Device User to change the state of Ethernet adapter is blocked.
 
-- If the value ***On*** is chosen, then attempts by the Device User to change the state of Ethernet adapter will be honored.  
+- If the value ***On*** is chosen, then attempts by the Device User to change the state of Ethernet adapter is honored.  
 
 ### Settings UI Configuration - Allow Device User Control Instant Lock
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to change whether or not pressing the Power key causes the device to lock instantly.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to change whether or not pressing the Power key causes the device to lock instantly.
 
-- If the value ***Off*** is chosen, then any attempt by the Device User to change whether or not pressing the Power key causes the device to lock instantly will be blocked.
+- If the value ***Off*** is chosen, then any attempt by the Device User to change whether or not pressing the Power key causes the device to lock instantly is blocked.
 
-- If the value ***On*** is chosen, then attempts by the Device User to change whether or not pressing the Power key causes the device to lock instantly will be honored.   
+- If the value ***On*** is chosen, then attempts by the Device User to change whether or not pressing the Power key causes the device to lock instantly is honored.   
 
 ### Settings UI Configuration - Allow Device User Control USB
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to change the state of USB.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to change the state of USB.
 
-- If the value ***Off*** is chosen, then any attempt by the Device User to change the state of USB will be blocked.
+- If the value ***Off*** is chosen, then any attempt by the Device User to change the state of USB is blocked.
 
-- If the value ***On*** is chosen, then attempts by the Device User to change the state of USB will be honored.   
+- If the value ***On*** is chosen, then attempts by the Device User to change the state of USB is honored.   
 
 ### Settings UI Configuration - Allow Device User Control Unknown Sources
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to change whether applications can be installed from Unknown Sources.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to change whether applications can be installed from Unknown Sources.
 
 - If the value ***Off*** is chosen, then any attempt by the Device User to change whether applications can be installed from Unknown Sources.
 
@@ -2514,77 +2527,77 @@ This Managed Configuration allows an Administrator using an EMM to configure whe
 
 ### Settings UI Configuration - Allow Device User Control WLAN
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to change the configuration of the WLAN adapter.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to change the configuration of the WLAN adapter.
 
-- If the value ***Off*** is chosen, then any attempt by the Device User to change the configuration of the WLAN adapter will be blocked.
+- If the value ***Off*** is chosen, then any attempt by the Device User to change the configuration of the WLAN adapter is blocked.
 
-- If the value ***On*** is chosen, then attempts by the Device User to change the configuration of the WLAN adapter will be honored.  
+- If the value ***On*** is chosen, then attempts by the Device User to change the configuration of the WLAN adapter is honored.  
 
 ### Settings UI Configuration - Allow Device User to Initiate an Enterprise Reset
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be allowed to perform an Enterprise Reset from the Settings Menu.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to perform an Enterprise Reset from the Settings Menu.
 
-- If the value ***Off*** is chosen, then any attempt by the Device User to perform an Enterprise Reset from the Settings Menu will be blocked.
+- If the value ***Off*** is chosen, then any attempt by the Device User to perform an Enterprise Reset from the Settings Menu is blocked.
 
-- If the value ***On*** is chosen, then attempts by the Device User to perform an Enterprise Reset from the Settings Menu will be honored.   
+- If the value ***On*** is chosen, then attempts by the Device User to perform an Enterprise Reset from the Settings Menu is honored.   
 
 ### Settings UI Configuration - Use Reduced Version
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Full or Reduced version of the Settings Menu will be used.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Full or Reduced version of the Settings Menu is used.
 
-- If the value ***Off*** is chosen, then when the Device User launches the Settings Menu, the Full version,with support for all settings, will be used.
+- If the value ***Off*** is chosen, then when the Device User launches the Settings Menu, the Full version,with support for all settings, is used.
 
-- If the value ***On*** is chosen, then when the Device User launches the Settings Menu, the Reduced version, with support for only a few settings, will be used. 
+- If the value ***On*** is chosen, then when the Device User launches the Settings Menu, the Reduced version, with support for only a few settings, is used. 
 
 ### Settings UI Configuration - Use of Notification Settings Icon
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.
 
-- If the value ***Off*** is chosen, then the Device User will be blocked from using the Settings Icon on the Notification Panel to launch the Settings UI.
+- If the value ***Off*** is chosen, then the Device User is blocked from using the Settings Icon on the Notification Panel to launch the Settings UI.
 
-- If the value ***On*** is chosen, then the Device User will be allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.  
+- If the value ***On*** is chosen, then the Device User is allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.  
 
 ### Settings UI Configuration - Use of Settings Slide Out Drawer
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to use the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI.
 
-- If the value ***Off*** is chosen, then the Device User will be blocked from using the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI.
+- If the value ***Off*** is chosen, then the Device User is blocked from using the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI.
 
-- If the value ***On*** is chosen, then the Device User will be allowed to use the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI  
+- If the value ***On*** is chosen, then the Device User is allowed to use the Slide Out Drawer in Settings UI to rapidly switch laterally to other parts of the Settings UI  
 
 ### Settings UI Configuration - Use of Tethering and Portable Hotspot
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is allowed to use the Settings Icon on the Notification Panel to launch the Settings UI.
 
-- If the value ***Off*** is chosen, then the Device User will be blocked from using the Settings UI to configure and utilize Tethering and Portable Hotspot mode.
+- If the value ***Off*** is chosen, then the Device User is blocked from using the Settings UI to configure and utilize Tethering and Portable Hotspot mode.
 
-- If the value ***On*** is chosen, then the Device User will be allowed to use the Settings UI to configure and utilize Tethering and Portable Hotspot mode.  
+- If the value ***On*** is chosen, then the Device User is allowed to use the Settings UI to configure and utilize Tethering and Portable Hotspot mode.  
 
 ## Threat Management Configuration
 
-This Managed Configuration group allows an Administrator using an EMM to configure which threats to a Zebra Android device will be monitored and which countermeasures will be taken when threats are detected. 
+This Managed Configuration group allows an Administrator using an EMM to configure which threats to a Zebra Android device is monitored and which countermeasures is taken when threats are detected. 
 
 ### Threat Management - Action
 
-This Managed Configuration allows an Administrator using an EMM to perform an Action to configure whether a given threat will be monitored.
+This Managed Configuration allows an Administrator using an EMM to perform an Action to configure whether a given threat is monitored.
 
-- When the Action value ***Detect*** is chosen, a specific threat will be configured to be monitored and, if that threat is detected, a countermeasure will be taken to mitigate that threat.  The additional Managed Configuration **Threat Management - Action Detect Threat Type** MUST be specified to identify the threat that will be monitored.  In addition, the Managed Configuration array **Threat Management - Action Detect Countermeasures** MUST be specified to select the set of countermeasures that will be performed if the specified threat is detected.
+- When the Action value ***Detect*** is chosen, a specific threat is configured to be monitored and, if that threat is detected, a countermeasure is taken to mitigate that threat.  The additional Managed Configuration **Threat Management - Action Detect Threat Type** MUST be specified to identify the threat that is monitored.  In addition, the Managed Configuration array **Threat Management - Action Detect Countermeasures** MUST be specified to select the set of countermeasures that is performed if the specified threat is detected.
 
-- When the Action value ***Ignore*** is chosen, a specific threat will be configured to not be monitored and hence will never be detected.  The additional Managed Configuration **Threat Management - Action Ignore Threat Type** MUST be specified to identify the threat that will be ignored. 
+- When the Action value ***Ignore*** is chosen, a specific threat is configured to not be monitored and hence will never be detected.  The additional Managed Configuration **Threat Management - Action Ignore Threat Type** MUST be specified to identify the threat that is ignored. 
 
 ### Threat Management - Action Detect Threat Type
 
-This Managed Configuration allows an Administrator using an EMM to specify the type of threat that will be monitored when the value ***Detect*** is chosen for the Managed Configuration**Threat Management - Action**.
+This Managed Configuration allows an Administrator using an EMM to specify the type of threat that is monitored when the value ***Detect*** is chosen for the Managed Configuration**Threat Management - Action**.
 
-- If the value ***Max Password Attempts*** is chosen, then the Threat Management System will be configured to monitor password entry attempts and the threat will be considered to be detected if the maximum number of unsuccessful password entry attempts are made without an intervening successful password entry.
+- If the value ***Max Password Attempts*** is chosen, then the Threat Management System is configured to monitor password entry attempts and the threat is considered to be detected if the maximum number of unsuccessful password entry attempts are made without an intervening successful password entry.
 
-- If the value ***MDM Client Removal*** is chosen, then the Threat Management System will be configured to monitor the device and detect if a specific Android Package Name is ever uninstalled from the device.  The additional  Managed Configuration **Threat Management - Action Detect Threat Type MDM Client Removal Package Name** MUST be specified to identify the Package Name that will be monitored.  While this is typically used to detect the removal of the MDM Client, which would render a managed device unmanaged, it could be used to detect the removal of any one Android Package if detection of the removal of an MDM Agent is not required.
+- If the value ***MDM Client Removal*** is chosen, then the Threat Management System is configured to monitor the device and detect if a specific Android Package Name is ever uninstalled from the device.  The additional  Managed Configuration **Threat Management - Action Detect Threat Type MDM Client Removal Package Name** MUST be specified to identify the Package Name that is monitored.  While this is typically used to detect the removal of the MDM Client, which would render a managed device unmanaged, it could be used to detect the removal of any one Android Package if detection of the removal of an MDM Agent is not required.
 
-- If the value ***Externally Detected*** is chosen, then the Threat Management System will be configured to listen for indication from an application on the device that can itself provide a way of detecting an signaling any threat not otherwise known to the Threat Management System.  The Threat Management System will consider the threat to have been detected whenever it is signaled by the external application.
+- If the value ***Externally Detected*** is chosen, then the Threat Management System is configured to listen for indication from an application on the device that can itself provide a way of detecting an signaling any threat not otherwise known to the Threat Management System.  The Threat Management System will consider the threat to have been detected whenever it is signaled by the external application.
 
-- If the value ***Exchange Active Sync Command*** is chosen, then the Threat Management System will be configured to handle a threat detected and signaled by a connection to an Exchange Active Sync Server via an Exchange Active Sync Client on the device.
+- If the value ***Exchange Active Sync Command*** is chosen, then the Threat Management System is configured to handle a threat detected and signaled by a connection to an Exchange Active Sync Server via an Exchange Active Sync Client on the device.
 
-- If the value ***Device is Rooted*** is chosen, then the Threat Management System will be configured to monitor the device to see if it has been rooted.  Root detection mechanism seek to identify common exploits that could grant an escalated privileges to an untrusted application that might use them to compromise the security or privacy of the device. 
+- If the value ***Device is Rooted*** is chosen, then the Threat Management System is configured to monitor the device to see if it has been rooted.  Root detection mechanism seek to identify common exploits that could grant an escalated privileges to an untrusted application that might use them to compromise the security or privacy of the device. 
 
 ### Threat Management - Action Detect Countermeasures
 
@@ -2596,54 +2609,54 @@ This Managed Configuration group allows an Administrator using an EMM to specify
 
 ##### Threat Management - Action Detect Countermeasure Type
 
-This Managed Configuration allows an Administrator using an EMM to specify the type of a single countermeasure that will be performed to mitigate a detected threat.
+This Managed Configuration allows an Administrator using an EMM to specify the type of a single countermeasure that is performed to mitigate a detected threat.
 
-- When the value ***FormatSdcard*** is chosen, then the countermeasure to format the removable SD card will be performed when the associated threat is detected.
+- When the value ***FormatSdcard*** is chosen, then the countermeasure to format the removable SD card is performed when the associated threat is detected.
 
-- When the value ***FactoryReset*** is chosen, then the countermeasure to Factory Reset the device will be performed when the associated threat is detected.
+- When the value ***FactoryReset*** is chosen, then the countermeasure to Factory Reset the device is performed when the associated threat is detected.
 
-- When the value ***WipeSecureStorageKeys*** is chosen, then the countermeasure to Wipe all encryption keys, deployed via that Managed Configuration group **Security Configuration** will be performed when the associated threat is detected.
+- When the value ***WipeSecureStorageKeys*** is chosen, then the countermeasure to Wipe all encryption keys, deployed via that Managed Configuration group **Security Configuration** is performed when the associated threat is detected.
 
-- When the value ***LockDevice*** is chosen,  then the countermeasure to lock the device, requiring it to be unlocked by the Device User, will be performed when the associated threat is detected.
+- When the value ***LockDevice*** is chosen,  then the countermeasure to lock the device, requiring it to be unlocked by the Device User, is performed when the associated threat is detected.
 
-- When the value ***UninstallApplication*** is chosen,  then the countermeasure to Uninstall an application will be performed when the associated threat is detected.  The additional Managed Configuration **Threat Management - Action Detect Countermeasure Uninstall Package Name** MUST be specified to provide the Android Package Name of the application that will be uninstalled.
+- When the value ***UninstallApplication*** is chosen,  then the countermeasure to Uninstall an application is performed when the associated threat is detected.  The additional Managed Configuration **Threat Management - Action Detect Countermeasure Uninstall Package Name** MUST be specified to provide the Android Package Name of the application that is uninstalled.
 
-- When the value ***UnsolicitedAlert*** is chosen,  then the countermeasure to send an unsolicited alert via an Android Intent will be performed when the associated threat is detected.  The additional Managed Configurations **Threat Management - Action Detect Countermeasure Unsolicited Alert Package Name**, **Threat Management - Action Detect Countermeasure Unsolicited Alert Class**, and **Threat Management - Action Detect Countermeasure Unsolicited Alert Message**  MUST be specified to provide the information needed to deliver the alert.
+- When the value ***UnsolicitedAlert*** is chosen,  then the countermeasure to send an unsolicited alert via an Android Intent is performed when the associated threat is detected.  The additional Managed Configurations **Threat Management - Action Detect Countermeasure Unsolicited Alert Package Name**, **Threat Management - Action Detect Countermeasure Unsolicited Alert Class**, and **Threat Management - Action Detect Countermeasure Unsolicited Alert Message**  MUST be specified to provide the information needed to deliver the alert.
 
 
 ##### Threat Management - Action Detect Countermeasure Uninstall Package Name
 
-This Managed Configuration allows an Administrator using an EMM to specify the Android Package Name of an application that will be uninstalled as a countermeasure to mitigate a threat when the value ***UninstallApplication*** is chosen for the Managed Configuration **Threat Management - Action Detect Countermeasure Type**. 
+This Managed Configuration allows an Administrator using an EMM to specify the Android Package Name of an application that is uninstalled as a countermeasure to mitigate a threat when the value ***UninstallApplication*** is chosen for the Managed Configuration **Threat Management - Action Detect Countermeasure Type**. 
 
 ##### Threat Management - Action Detect Countermeasure Unsolicited Alert Package Name
 
-This Managed Configuration allows an Administrator using an EMM to specify the Android Package Name of an application that will be sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is chosen for the Managed Configuration **Threat Management - Action Detect Countermeasure Type**.  
+This Managed Configuration allows an Administrator using an EMM to specify the Android Package Name of an application that is sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is chosen for the Managed Configuration **Threat Management - Action Detect Countermeasure Type**.  
 
 ##### Threat Management - Action Detect Countermeasure Unsolicited Alert Class
 
-This Managed Configuration allows an Administrator using an EMM to specify the Class Name of component within an application that will be sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is chosen for the Managed Configuration **Threat Management - Action Detect Countermeasure Type**.  
+This Managed Configuration allows an Administrator using an EMM to specify the Class Name of component within an application that is sent an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is chosen for the Managed Configuration **Threat Management - Action Detect Countermeasure Type**.  
 
 ##### Threat Management - Action Detect Countermeasure Unsolicited Alert Message
 
-This Managed Configuration allows an Administrator using an EMM to specify the string text message that will be sent to a component of an application via an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is chosen for the Managed Configuration **Threat Management - Action Detect Countermeasure Type**.  
+This Managed Configuration allows an Administrator using an EMM to specify the string text message that is sent to a component of an application via an unsolicited alert to notify it that a threat has been detected as a countermeasure to mitigate a threat when the value ***UnsolicitedAlert*** is chosen for the Managed Configuration **Threat Management - Action Detect Countermeasure Type**.  
 
 ### Threat Management - Action Detect Threat Type MDM Client Removal Package Name
 
-This Managed Configuration allows an Administrator using an EMM to specify the Android Package Name of the MDM Agent that will be monitored to detect a threat when the value ***MDM Client Removal*** is chosen for the Managed Configuration **Threat Management - Action**. 
+This Managed Configuration allows an Administrator using an EMM to specify the Android Package Name of the MDM Agent that is monitored to detect a threat when the value ***MDM Client Removal*** is chosen for the Managed Configuration **Threat Management - Action**. 
 
 ### Threat Management - Action Ignore Threat Type
 
 This Managed Configuration allows an Administrator using an EMM to specify the type of threat that will NOT be monitored, and hence cannot be detected, when the value ***Ignore*** is chosen for the Managed Configuration**Threat Management - Action**.
 
-- If the value ***Max Password Attempts*** is chosen, then the Threat Management System will be configured to NOT monitor password entry attempts and hence will never detect the threat of exceeding the maximum number of unsuccessful password entry attempts.
+- If the value ***Max Password Attempts*** is chosen, then the Threat Management System is configured to NOT monitor password entry attempts and hence will never detect the threat of exceeding the maximum number of unsuccessful password entry attempts.
 
-- If the value ***MDM Client Removal*** is chosen, then the Threat Management System will be configured to NOT monitor the device and detect if a specific Android Package Name is ever uninstalled from the device, and hence will never detect the threat of removal of the MDM Client..
+- If the value ***MDM Client Removal*** is chosen, then the Threat Management System is configured to NOT monitor the device and detect if a specific Android Package Name is ever uninstalled from the device, and hence will never detect the threat of removal of the MDM Client..
 
-- If the value ***Externally Detected*** is chosen, then the Threat Management System will be configured to NOT listen for indication from an application on the device that can signal a threat and hence no external threats will ever be detected.
+- If the value ***Externally Detected*** is chosen, then the Threat Management System is configured to NOT listen for indication from an application on the device that can signal a threat and hence no external threats will ever be detected.
 
-- If the value ***Exchange Active Sync Command*** is chosen, then the Threat Management System will be configured NOT to handle a threat detected and signaled by a connection to an Exchange Active Sync Server via an Exchange Active Sync Client on the device and hence such threats will never be detected.
+- If the value ***Exchange Active Sync Command*** is chosen, then the Threat Management System is configured NOT to handle a threat detected and signaled by a connection to an Exchange Active Sync Server via an Exchange Active Sync Client on the device and hence such threats will never be detected.
 
-- If the value ***Device is Rooted*** is chosen, then the Threat Management System will be configured to NOT monitor the device to see if it has been rooted and hence the threat of the device being rooted will never be detected. 
+- If the value ***Device is Rooted*** is chosen, then the Threat Management System is configured to NOT monitor the device to see if it has been rooted and hence the threat of the device being rooted will never be detected. 
 
 ### Threat Management - Periodic Scan
 
@@ -2665,7 +2678,7 @@ The interval is specified in seconds between polls.
 
 ### Threat Management - Periodic Scan Additional Folders
 
-This Managed Configuration allows an Administrator using an EMM to configure whether additional folders will be polled when the value ***On*** is chosen for the Managed Configuration **Threat Management - Periodic Scan**.
+This Managed Configuration allows an Administrator using an EMM to configure whether additional folders is polled when the value ***On*** is chosen for the Managed Configuration **Threat Management - Periodic Scan**.
 
 When background polling to detect device rooting is performed, the Threat Management System will always scan certain key folders that are considered common or likely locations where changes might occur that could signal that device has been rooted.  In some cases, rooting might occur through changes made to other folders.
 
@@ -2679,7 +2692,7 @@ When background polling to detect device rooting is performed, the Threat Manage
 
 ### Threat Management - Periodic Scan Additional Folders List
 
-This Managed Configuration allows an Administrator using an EMM to configure list of additional folders that will be polled when the value ***On*** is chosen for the Managed Configuration **Threat Management - Periodic Scan** and the value ***On*** is chosen for the Managed Configuration **Threat Management - Periodic Scan Additional Folders**.
+This Managed Configuration allows an Administrator using an EMM to configure list of additional folders that is polled when the value ***On*** is chosen for the Managed Configuration **Threat Management - Periodic Scan** and the value ***On*** is chosen for the Managed Configuration **Threat Management - Periodic Scan Additional Folders**.
 
 
 ### Threat Management - Send Externally Detected Threat Message
@@ -2704,7 +2717,7 @@ The *Zebra Volume Control* provides a configurable UI that allows the Device Use
 
 - When the Action value ***Set Current Profile*** is chosen, an existing *Audio UI Profile* is set to be the active *Audio UI Profile*.  The additional Managed Configuration **Volume UI Configuration - Action Set Current Profile Name** MUST also be specified to provide the name that identifies the *Audio UI Profile* to be made the new active *Audio UI Profile*.
 
-- When the Action value ***Apply Current Profile*** is chosen, the currently active *Audio UI Profile* is applied to the current device *Volume Settings*.  If the current device *Volume Settings* are outside the range of *Volume Settings* defined for the currently active *Audio UI Profile* the current device *Volume Settings* will be adjusted as needed to bring them within the range of *Volume Settings* defined for the currently active *Audio UI Profile*.
+- When the Action value ***Apply Current Profile*** is chosen, the currently active *Audio UI Profile* is applied to the current device *Volume Settings*.  If the current device *Volume Settings* are outside the range of *Volume Settings* defined for the currently active *Audio UI Profile* the current device *Volume Settings* is adjusted as needed to bring them within the range of *Volume Settings* defined for the currently active *Audio UI Profile*.
 
 - When the Action value ***Set Factory Preset*** is chosen, the *Factory Preset Audio UI Profile* is made the active *Audio UI Profile*, causing the behavior of the *Zebra Volume Control* to return to its default out-of-box state. 
 
@@ -2714,20 +2727,20 @@ This Managed Configuration allows an Administrator using an EMM to provide the n
 
 - If an *Audio UI Profile* with the specified name already exists, the new *Audio UI Profile* will replace the existing *Audio UI Profile* with that name.
 
-- If no *Audio UI Profile* with the specified name already exists, the new *Audio UI Profile* will be added with that name. 
+- If no *Audio UI Profile* with the specified name already exists, the new *Audio UI Profile* is added with that name. 
 
 ### Volume UI Configuration - Action Add Profile Streams
 
-This Managed Configuration array allows an Administrator using an EMM to define a set of *Audio Streams* that will be included as part of a new *Audio UI Profile* being added and should be specified if and only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action**. 
+This Managed Configuration array allows an Administrator using an EMM to define a set of *Audio Streams* that is included as part of a new *Audio UI Profile* being added and should be specified if and only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action**. 
 
 
 #### Volume UI Configuration - Action Add Profile Stream
 
-This Managed Configuration group allows an Administrator using an EMM to define a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and should be specified if and only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action**, as part of the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream**. 
+This Managed Configuration group allows an Administrator using an EMM to define a single *Audio Stream* that is included as part of a new *Audio UI Profile* being added and should be specified if and only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action**, as part of the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream**. 
 
 ##### Volume UI Configuration - Action Add Profile Stream Type
 
-This Managed Configuration allows an Administrator using an EMM to specify the type of a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and MUST be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.  Some or all of the additional Managed Configurations **Volume UI Configuration - Action Add Profile Stream Label**, **Volume UI Configuration - Action Add Profile Stream Icon**, **Volume UI Configuration - Action Add Profile Stream Visible**, and **Volume UI Configuration - Action Add Profile Stream Modes** should also be specified to define the characteristics of the new *Audio Stream* of the specified type that will be added.
+This Managed Configuration allows an Administrator using an EMM to specify the type of a single *Audio Stream* that is included as part of a new *Audio UI Profile* being added and MUST be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.  Some or all of the additional Managed Configurations **Volume UI Configuration - Action Add Profile Stream Label**, **Volume UI Configuration - Action Add Profile Stream Icon**, **Volume UI Configuration - Action Add Profile Stream Visible**, and **Volume UI Configuration - Action Add Profile Stream Modes** should also be specified to define the characteristics of the new *Audio Stream* of the specified type that is added.
 
 - If the value ***Music*** is chosen, then the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for playback of Music and other Media.
 
@@ -2745,27 +2758,27 @@ This Managed Configuration allows an Administrator using an EMM to specify the t
 
 ##### Volume UI Configuration - Action Add Profile Stream Label
 
-This Managed Configuration allows an Administrator using an EMM to specify the text label to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+This Managed Configuration allows an Administrator using an EMM to specify the text label to be displayed for a single *Audio Stream* that is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 The text label might be changed for an *Audio Stream* because it is used for some purpose(s) other than the one identified by the default text label.  Changing the text label to something more description of the actual purpose(s) for which the *Audio Stream* is used can make the Zebra Volume Control behavior more intuitive for the Device User.
 
-If no text label is specified for an *Audio Stream*, then the *Factory Preset* default text label will be used.
+If no text label is specified for an *Audio Stream*, then the *Factory Preset* default text label is used.
 
 
 ##### Volume UI Configuration - Action Add Profile Stream Icon
 
-This Managed Configuration allows an Administrator using an EMM to specify the icon to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+This Managed Configuration allows an Administrator using an EMM to specify the icon to be displayed for a single *Audio Stream* that is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 The icon might be changed for an *Audio Stream* because it is used for some purpose(s) other than the one identified by the default text label.  Changing the icon to something more representative of the actual purpose(s) for which the *Audio Stream* is used can make the Zebra Volume Control behavior more intuitive for the Device User.
 
 If an icon is specified, then the value specified must be the full path and file name of a PNG format icon file that must already be present in the device file system. An icon size of 48x48 pixels is recommended.
 
-If no icon is specified for an *Audio Stream*, then the *Factory Preset* default icon will be used.
+If no icon is specified for an *Audio Stream*, then the *Factory Preset* default icon is used.
 
 
 ##### Volume UI Configuration - Action Add Profile Stream Visible
 
-This Managed Configuration allows an Administrator using an EMM to specify whether a single *Audio Stream* will be visible to the Device User within the *Zebra Volume Control* when it is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+This Managed Configuration allows an Administrator using an EMM to specify whether a single *Audio Stream* is visible to the Device User within the *Zebra Volume Control* when it is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 If an *Audio Stream* is made not visible for an *Audio UI Profile*, then the *Zebra Volume Control* will not present ANY UI to the Device User to control the volume of that *Audio Stream*.  The result is basically identical to not including the *Audio Stream* in the *Audio UI Profile*.  This might be used when temporarily disabling an *Audio Stream* to avoid the need to remove and then add back in the entire definition of that *Audio Stream*. 
 
@@ -2777,7 +2790,7 @@ This Managed Configuration array allows an Administrator using an EMM to define 
 
 This Managed Configuration group allows an Administrator using an EMM to define the behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added and should be specified if and only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
-For each *Audio Mode* defined for an *Audio Stream*,  the additional Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Type** MUST be specified to identify which *Audio Mode* will be defined.  The additional Managed Configurations **Volume UI Configuration - Action Add Profile Stream Mode Minimum**, **Volume UI Configuration - Action Add Profile Stream Mode Maximum**, and **Volume UI Configuration - Action Add Profile Stream Mode Preset** MUST also be specified to define the lower, upper, and default (preset) volume levels for that *Audio Mode* within that *Audio Stream*. 
+For each *Audio Mode* defined for an *Audio Stream*,  the additional Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Type** MUST be specified to identify which *Audio Mode* is defined.  The additional Managed Configurations **Volume UI Configuration - Action Add Profile Stream Mode Minimum**, **Volume UI Configuration - Action Add Profile Stream Mode Maximum**, and **Volume UI Configuration - Action Add Profile Stream Mode Preset** MUST also be specified to define the lower, upper, and default (preset) volume levels for that *Audio Mode* within that *Audio Stream*. 
 
 ###### Volume UI Configuration - Action Add Profile Stream Mode Minimum
 
@@ -2813,13 +2826,13 @@ The value specified for of this Managed Configuration must be greater than or eq
 
 This Managed Configuration allows an Administrator using an EMM to define the type of behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added and should be specified if and only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
-If the value ***Speaker*** is chosen, then the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to the built-in device speaker.
+If the value ***Speaker*** is chosen, then the *Audio Mode* is configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to the built-in device speaker.
 
-If the value ***Receiver*** is chosen, then the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to receiver mode.
+If the value ***Receiver*** is chosen, then the *Audio Mode* is configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to receiver mode.
 
-If the value ***WiredHeadset*** is chosen, then the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to a wired audio headset.
+If the value ***WiredHeadset*** is chosen, then the *Audio Mode* is configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to a wired audio headset.
 
-If the value ***BluetoothHeadset*** is chosen, then the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to a wireless Bluetooth audio headset.
+If the value ***BluetoothHeadset*** is chosen, then the *Audio Mode* is configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to a wireless Bluetooth audio headset.
 
 
 
@@ -2829,11 +2842,11 @@ This Managed Configuration allows an Administrator using an EMM to provide the n
 
 ### Volume UI Configuration - Action Set Current Profile Name
 
-This Managed Configuration allows an Administrator using an EMM to provide the name of an existing *Audio UI Profile* to be made the current active *Audio UI Profile*and should be specified if and only if the value ***Set Current Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action**.  The additional Managed Configuration **Volume UI Configuration - Action Set Current Profile Adjust Volume** MUST be specified to control whether the current device *Volume Settings* will be adjusted to ensure that they fall within the range of *Volume Settings* defined by the *Audio UI Profile*. 
+This Managed Configuration allows an Administrator using an EMM to provide the name of an existing *Audio UI Profile* to be made the current active *Audio UI Profile*and should be specified if and only if the value ***Set Current Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action**.  The additional Managed Configuration **Volume UI Configuration - Action Set Current Profile Adjust Volume** MUST be specified to control whether the current device *Volume Settings* is adjusted to ensure that they fall within the range of *Volume Settings* defined by the *Audio UI Profile*. 
 
 ### Volume UI Configuration - Action Set Current Profile Adjust Volume
 
-This Managed Configuration allows an Administrator using an EMM to configure the current device *Volume Settings* will be adjusted to ensure that they fall within the range of *Volume Settings* defined by an *Audio UI Profile* being made the new current *Audio UI Profile* to be made the current active *Audio UI Profile*and should be specified if and only if the value ***Set Current Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** and the Managed Configuration **Volume UI Configuration - Action Set Current Profile Name** is specified. 
+This Managed Configuration allows an Administrator using an EMM to configure the current device *Volume Settings* is adjusted to ensure that they fall within the range of *Volume Settings* defined by an *Audio UI Profile* being made the new current *Audio UI Profile* to be made the current active *Audio UI Profile*and should be specified if and only if the value ***Set Current Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** and the Managed Configuration **Volume UI Configuration - Action Set Current Profile Name** is specified. 
 
 ## Wakeup Configuration
 
@@ -2843,9 +2856,9 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 This Managed Configuration allows an Administrator using an EMM to configure whether all controllable Wakeup Sources should be turned on or off.
 
-- If the value ***Off*** is chosen, then all wakeup sources that can be turned on or off will be turned off, causing the physical events corresponding to those wakeup sources to be ignored and hence NOT to cause the device to wakeup from a suspend state.
+- If the value ***Off*** is chosen, then all wakeup sources that can be turned on or off is turned off, causing the physical events corresponding to those wakeup sources to be ignored and hence NOT to cause the device to wakeup from a suspend state.
 
-- If the value ***On*** is chosen, then all wakeup sources that can be turned on or off will be turned on, causing the physical events corresponding to those wakeup sources to be honored and hence to cause the device to wakeup from a suspend state.
+- If the value ***On*** is chosen, then all wakeup sources that can be turned on or off is turned on, causing the physical events corresponding to those wakeup sources to be honored and hence to cause the device to wakeup from a suspend state.
 
 
 
@@ -2855,22 +2868,22 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 ### Whitelist Configuration - Mode
 
-This Managed Configuration allows an Administrator using an EMM to configure the Whitelisting Mode, which determines how the applications that can be installed and run on a Zebra Android device will be controlled.
+This Managed Configuration allows an Administrator using an EMM to configure the Whitelisting Mode, which determines how the applications that can be installed and run on a Zebra Android device is controlled.
 
- - If the the value ***Package Name Only*** is chosen, then when configuring which applications can be installed and run, only the Android Package Name will be used to identify the allowed applications.
+ - If the the value ***Package Name Only*** is chosen, then when configuring which applications can be installed and run, only the Android Package Name is used to identify the allowed applications.
 
- - If the the value ***Package Name and Signature*** is chosen, then when configuring which applications can be installed and run, both the Android Package Name and the Package Signature will be used to identify the allowed applications.
+ - If the the value ***Package Name and Signature*** is chosen, then when configuring which applications can be installed and run, both the Android Package Name and the Package Signature is used to identify the allowed applications.
 
-Using the value ***Package Name and Signature*** provides significantly better security than using ***Package Name Only*** since it provides much stronger protection against spoofing.  If ***Package Name Only*** is used, then any APK whose Android Package Name matches one of the allowed Package Names will be allowed to be installed and run.  Since any APK can be assigned any Package Name, the potential for a rogue application circumventing the protections of Whitelisting is relatively high.  If ***Package Name and Signature*** is used, then the Signature of an application must match an allowed Signature in addition to the Package Name matching and allowed Package Name.  Since a rogue APK cannot be signed with a given Signature without possessing the corresponding Private Key, the chances of successfully spoofing are greatly reduced, and effectively eliminated if Private Keys are properly controlled.
+Using the value ***Package Name and Signature*** provides significantly better security than using ***Package Name Only*** since it provides much stronger protection against spoofing.  If ***Package Name Only*** is used, then any APK whose Android Package Name matches one of the allowed Package Names is allowed to be installed and run.  Since any APK can be assigned any Package Name, the potential for a rogue application circumventing the protections of Whitelisting is relatively high.  If ***Package Name and Signature*** is used, then the Signature of an application must match an allowed Signature in addition to the Package Name matching and allowed Package Name.  Since a rogue APK cannot be signed with a given Signature without possessing the corresponding Private Key, the chances of successfully spoofing are greatly reduced, and effectively eliminated if Private Keys are properly controlled.
 
 
 ### Whitelist Configuration - Action
 
 This Managed Configuration group allows an Administrator using an EMM to perform an action to alter the Whitelisting configuration of a Zebra Android device.
 
-- If the value ***Allow*** is chosen, then a single application will be allowed to be installed and run.  The additional Managed Configuration **Whitelist Configuration - Action Allow Package Name** MUST be specified to supply the Android Package Name of the application that will be allowed.  In addition, if the value ***Package Name and Signature*** is chosen for the Managed Configuration **Whitelist Configuration - Mode**, then the additional Managed Configuration **Whitelist Configuration - Action Allow Signature** MUST also be specified to provide the Signature to be allowed.
+- If the value ***Allow*** is chosen, then a single application is allowed to be installed and run.  The additional Managed Configuration **Whitelist Configuration - Action Allow Package Name** MUST be specified to supply the Android Package Name of the application that is allowed.  In addition, if the value ***Package Name and Signature*** is chosen for the Managed Configuration **Whitelist Configuration - Mode**, then the additional Managed Configuration **Whitelist Configuration - Action Allow Signature** MUST also be specified to provide the Signature to be allowed.
 
-- If the value ***Disallow*** is chosen, then a single application will be prevented from being installed and run. The additional Managed Configuration **Whitelist Configuration - Action Disallow Package Name** MUST be specified to supply the Android Package Name of the application that will be disallowed.
+- If the value ***Disallow*** is chosen, then a single application is prevented from being installed and run. The additional Managed Configuration **Whitelist Configuration - Action Disallow Package Name** MUST be specified to supply the Android Package Name of the application that is disallowed.
 
 
 ### Whitelist Configuration - Action Allow Package Name
@@ -2895,11 +2908,11 @@ If the value ***Package Name and Signature*** is chosen for the Managed Configur
 
 ### Whitelist Configuration - State
 
-This Managed Configuration allows an Administrator using an EMM to configure the Whitelisting State, which determines whether the set of applications that can be installed and run on a Zebra Android device will be controlled.
+This Managed Configuration allows an Administrator using an EMM to configure the Whitelisting State, which determines whether the set of applications that can be installed and run on a Zebra Android device is controlled.
 
- - If the the value ***Off*** is chosen, then Whitelisting will not be used and no restrictions will be placed on which applications can be installed and run.
+ - If the the value ***Off*** is chosen, then Whitelisting will not be used and no restrictions is placed on which applications can be installed and run.
 
- - If the the value ***On*** is chosen, then Whitelisting will be used and additional Managed Configurations should be specified to configure how the set of applications will be controlled and which applications will be allowed to be installed and run. 
+ - If the the value ***On*** is chosen, then Whitelisting is used and additional Managed Configurations should be specified to configure how the set of applications is controlled and which applications is allowed to be installed and run. 
 
 ## Wireless General Configuration
 
@@ -2909,9 +2922,9 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 This Managed Configuration group allows an Administrator using an EMM to configure which of multiple antennas should be used for wireless communications.
 
-- If the value ***Internal*** is chosen, then the internal built-in antenna will be used.
+- If the value ***Internal*** is chosen, then the internal built-in antenna is used.
 
-- If the value ***External*** is chosen, then an externally connected antenna will be used.
+- If the value ***External*** is chosen, then an externally connected antenna is used.
 
 
 
@@ -2919,9 +2932,9 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 This Managed Configuration group allows an Administrator using an EMM to configure whether the GPS radio state should be On or Off.
 
-- If the value ***Off*** is chosen, then the GPS radio state will be turned off, preventing GPS-based location detection from being performed.
+- If the value ***Off*** is chosen, then the GPS radio state is turned off, preventing GPS-based location detection from being performed.
 
-- If the value ***On*** is chosen, then the GPS radio state will be turned on, allowing GPS-based location detection to be performed, given satellite availability.
+- If the value ***On*** is chosen, then the GPS radio state is turned on, allowing GPS-based location detection to be performed, given satellite availability.
 
 
 ## Wireless LAN Configuration
@@ -2940,11 +2953,11 @@ This Managed Configuration allows an Administrator using an EMM to configure the
 
 This Managed Configuration supports the following values:
 
-- If a value of ***2.4GHz*** is chosen, only the 2.4 Gigahertz (Ghz) *Band* (used by 802.11b and 802.11g) will be used.
+- If a value of ***2.4GHz*** is chosen, only the 2.4 Gigahertz (Ghz) *Band* (used by 802.11b and 802.11g) is used.
 
-- If a value of ***5.0GHz*** is chosen, only the 5.0 Gigahertz (Ghz) *Band* (used by 802.11a) will be used.
+- If a value of ***5.0GHz*** is chosen, only the 5.0 Gigahertz (Ghz) *Band* (used by 802.11a) is used.
 
-- If a value of ***Auto*** is chosen, the *Band* to be used will be determined automatically. 
+- If a value of ***Auto*** is chosen, the *Band* to be used is determined automatically. 
 
 ### Wireless LAN Configuration - Channels
 
@@ -2971,17 +2984,17 @@ This Managed Configuration allows an Administrator using an EMM to configure the
 
 This Managed Configuration supports the following values:
 
-- When a value of ***Auto (Use 802.11d)*** is chosen, the *Country* to be used will be determined automatically.
+- When a value of ***Auto (Use 802.11d)*** is chosen, the *Country* to be used is determined automatically.
 
-- When any other value is chosen, the specified *Country* will be used. 
+- When any other value is chosen, the specified *Country* is used. 
 
 ### Wireless LAN Configuration - Hotspot State
 
 This Managed Configuration allows an Administrator using an EMM to configure the state of the *Hotspot Mode* of the WLAN adapter on a Zebra Android device.
 
-- If the value ***Off*** is chosen, then the *Hotspot Mode* will be turned OFF, preventing the device from sharing its Internet connection as a WLAN Hotspot.  Any other existing configuration related to *Hotspot Mode* will not be affected, allowing *Hotspot Mode* to be configured and tested, then turned OFF and back ON without having to reconfigure it.
+- If the value ***Off*** is chosen, then the *Hotspot Mode* is turned OFF, preventing the device from sharing its Internet connection as a WLAN Hotspot.  Any other existing configuration related to *Hotspot Mode* will not be affected, allowing *Hotspot Mode* to be configured and tested, then turned OFF and back ON without having to reconfigure it.
 
-- If the value ***On*** is chosen, then the *Hotspot Mode* will be turned ON, allowing the device to share its Internet connection as a WLAN Hotspot, subject to appropriate configuration related to *Hotspot Mode*. 
+- If the value ***On*** is chosen, then the *Hotspot Mode* is turned ON, allowing the device to share its Internet connection as a WLAN Hotspot, subject to appropriate configuration related to *Hotspot Mode*. 
 
 ### Wireless LAN Configuration - Hotspot Options
 
@@ -2997,9 +3010,9 @@ This Managed Configuration allows an Administrator using an EMM to configure the
 
 This Managed Configuration allows an Administrator using an EMM to configure the *Frequency Band* in which *Hotspot Mode* of the WLAN adapter will operate on a Zebra Android device.
 
-- If the value ***2.4GHz*** is chosen, then the *Hotspot Mode* of the WLAN adapter will operate solely in the 2.4 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* will be capable of sharing the Internet connection of the Zebra Android device via *Hotspot Mode*.
+- If the value ***2.4GHz*** is chosen, then the *Hotspot Mode* of the WLAN adapter will operate solely in the 2.4 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* is capable of sharing the Internet connection of the Zebra Android device via *Hotspot Mode*.
 
-- If the value ***5GHz*** is chosen, then the *Hotspot Mode* of the WLAN adapter will operate solely in the 5.0 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* will be capable of sharing the Internet connection of the Zebra Android device via *Hotspot Mode*.
+- If the value ***5GHz*** is chosen, then the *Hotspot Mode* of the WLAN adapter will operate solely in the 5.0 Gigahertz (GHz) *Frequency Band* and hence only devices capable of operating in that *Frequency Band* is capable of sharing the Internet connection of the Zebra Android device via *Hotspot Mode*.
 
 
 #### Wireless LAN Configuration - Hotspot Band 2.4GHz Channel
@@ -3019,11 +3032,11 @@ This Managed Configuration allows an Administrator using an EMM to configure the
 
 - If the value ***Open*** is chosen, then the WLAN adapter will apply no security for *Hotspot Mode*, thus providing no control over which devices can connect and share the Internet connection of the Zebra Android device via *Hotspot Mode*.
 
-- If the value ***WPA2/PSK*** is chosen, then the WLAN adapter will apply Wi-Fi Protected Access Version 2 (WPA2) Pre-shared Key (PSK) security for *Hotspot Mode*, thus providing some control over which devices can connect and share the Internet connection of the Zebra Android device via *Hotspot Mode*.  The additional Managed Configuration **Wireless LAN Configuration - Hotspot Security Passphrase** MUST be specified to provide the PSK passphrase that will be used to secure the network. 
+- If the value ***WPA2/PSK*** is chosen, then the WLAN adapter will apply Wi-Fi Protected Access Version 2 (WPA2) Pre-shared Key (PSK) security for *Hotspot Mode*, thus providing some control over which devices can connect and share the Internet connection of the Zebra Android device via *Hotspot Mode*.  The additional Managed Configuration **Wireless LAN Configuration - Hotspot Security Passphrase** MUST be specified to provide the PSK passphrase that is used to secure the network. 
 
 #### Wireless LAN Configuration - Hotspot Security Passphrase
 
-This Managed Configuration allows an Administrator using an EMM to provide the PSK passphrase that will be used to secure the *Hotspot Mode* network implemented by the WLAN adapter on a Zebra Android device, and should be specified if and only if the value ***WPA2/PSK*** is specified for the Managed Configuration **Wireless LAN Configuration - Hotspot Security Mode**. 
+This Managed Configuration allows an Administrator using an EMM to provide the PSK passphrase that is used to secure the *Hotspot Mode* network implemented by the WLAN adapter on a Zebra Android device, and should be specified if and only if the value ***WPA2/PSK*** is specified for the Managed Configuration **Wireless LAN Configuration - Hotspot Security Mode**. 
 
 ### Wireless LAN Configuration - Omnitrail
 
@@ -3063,11 +3076,11 @@ This Managed Configuration allows an Administrator using an EMM to specify a val
 
 This Managed Configuration allows an Administrator using an EMM to select an omnittrail datarate standard to be used by the WLAN adapter on a Zebra Android device. The additional Managed Configuration **Wireless LAN Configuration - Omnitrail Datarate** MUST also be specified to provide the actual datarate to be used.
 
-- If the value ***abg*** is chosen, then the omnitrail datarate standard will be set for 802.11a, 802.11b, and 802,11g.
+- If the value ***abg*** is chosen, then the omnitrail datarate standard is set for 802.11a, 802.11b, and 802,11g.
 
-- If the value ***11n*** is chosen, then the omnitrail datarate standard will be set for 802.11n.
+- If the value ***11n*** is chosen, then the omnitrail datarate standard is set for 802.11n.
 
-- If the value ***11ac*** is chosen, then the omnitrail datarate standard will be set for 802.11a and 802,11c.
+- If the value ***11ac*** is chosen, then the omnitrail datarate standard is set for 802.11a and 802,11c.
 
 
 
@@ -3176,11 +3189,11 @@ This Managed Configuration allows an Administrator using an EMM to enter a value
 
 ### Wireless LAN Configuration - Network Notification
 
-This Managed Configuration allows an Administrator using an EMM to configure whether the Device User will be notified about, and allowed to connect to, new WLANs that are detected.
+This Managed Configuration allows an Administrator using an EMM to configure whether the Device User is notified about, and allowed to connect to, new WLANs that are detected.
 
 - If the value ***Off*** is chosen, then the Device User will NOT be notified about, nor allowed to connect to, new WLANs that are detected.
 
-- If the value ***On*** is chosen, then the Device User will be notified about, and allowed to connect to, new WLANs that are detected. 
+- If the value ***On*** is chosen, then the Device User is notified about, and allowed to connect to, new WLANs that are detected. 
 
 ## Wireless WAN Configuration
 
@@ -3197,23 +3210,23 @@ A given device may or may not support a WWAN Adapter.  An attempt to configure t
 
 This Managed Configuration allows an Administrator using an EMM to configure whether WWAN data can be used by applications that are in the *Background*.
 
-- When a value of ***Disallow*** is chosen, the use of WWAN data by applications that are in the *Background* will be prevented.
+- When a value of ***Disallow*** is chosen, the use of WWAN data by applications that are in the *Background* is prevented.
 
-- When a value of ***Allow*** is chosen, the use of WWAN data by applications that are in the *Background* will be allowed.
+- When a value of ***Allow*** is chosen, the use of WWAN data by applications that are in the *Background* is allowed.
 
 
 ### Wireless WAN Configuration - State
 
 This Managed Configuration allows an Administrator using an EMM to configure the *Power State* of the WWAN adapter.
 
-- If the value ***Off*** is chosen, then the power to the WWAN adapter will be turned OFF, preventing all communications via the WWAN adapter and reducing battery drain.
+- If the value ***Off*** is chosen, then the power to the WWAN adapter is turned OFF, preventing all communications via the WWAN adapter and reducing battery drain.
 
-- If the value ***On*** is chosen, then the power to the WWAN adapter will be turned ON, potentially allowing communications via the WWAN adapter and increasing battery drain.
+- If the value ***On*** is chosen, then the power to the WWAN adapter is turned ON, potentially allowing communications via the WWAN adapter and increasing battery drain.
 
 
 ### Wireless WAN Configuration - SIM Card Slot
 
-This Managed Configuration allows an Administrator using an EMM to configure SIM card slot that will be used by the WWAN adapter.
+This Managed Configuration allows an Administrator using an EMM to configure SIM card slot that is used by the WWAN adapter.
 
 A given device may or may not support a WWAN Adapter.  An attempt to configure the WWAN Adapter on a device that does not have one will result in an error. 
 A given device may have a limited number of SIM card slots.  An attempt to configure the WWAN Adapter to use an unsupported SIM card slot will result in an error.
@@ -3233,11 +3246,11 @@ A given device may support a given SIM car slot, but that SIM car slot may not c
 
 This Managed Configuration allows an Administrator using an EMM to configure whether a limit should be imposed on the amount of WWAN data used, such as to cap telecom expenses.
 
-- When a value of ***Enable and set default limit*** is chosen, a default limit will be imposed on the amount of WWAN data that can be used.
+- When a value of ***Enable and set default limit*** is chosen, a default limit is imposed on the amount of WWAN data that can be used.
 
-- When a value of ***Enable and set custom limit*** is chosen, a custom limit will be imposed on the amount of WWAN data that can be used and the additional Managed Configuration *Wireless WAN Configuration - Data Limit State Custom Limit* MUST be provided to specify the desired custom limit.
+- When a value of ***Enable and set custom limit*** is chosen, a custom limit is imposed on the amount of WWAN data that can be used and the additional Managed Configuration *Wireless WAN Configuration - Data Limit State Custom Limit* MUST be provided to specify the desired custom limit.
 
-- When a value of ***Disable*** is chosen, no limit will be imposed on the amount of WWAN data that can be used.
+- When a value of ***Disable*** is chosen, no limit is imposed on the amount of WWAN data that can be used.
 
 
 
@@ -3253,7 +3266,7 @@ The custom limit should be an integer value specifying the maximum amount of WWA
 
 ### Wireless WAN Configuration - Data Warning Threshold
 
-This Managed Configuration allows an Administrator using an EMM to configure a threshold such that if the amount of WWAN data that has been used exceeds that threshold then a warning will be generated to the Device User.
+This Managed Configuration allows an Administrator using an EMM to configure a threshold such that if the amount of WWAN data that has been used exceeds that threshold then a warning is generated to the Device User.
 
 The threshold should be an integer value specifying the threshold amount of WWAN data, in megabytes (MB).
 
@@ -3262,43 +3275,43 @@ The threshold should be an integer value specifying the threshold amount of WWAN
 
 This Managed Configuration allows an Administrator using an EMM to configure whether a Device User is allowed to use the in-device Settings Menu to change whether applications running in the background are allowed to communicate using the WWAN adapter.
 
-- If the value ***Disallow*** is chosen, then the Device User will be blocked from using the Settings Menu to change whether applications running in the background are allowed to communicate using the WWAN adapter.  This can be used to ensure that the Administrator settings related to usage of background data cannot be overridden by the Device User.
+- If the value ***Disallow*** is chosen, then the Device User is blocked from using the Settings Menu to change whether applications running in the background are allowed to communicate using the WWAN adapter.  This can be used to ensure that the Administrator settings related to usage of background data cannot be overridden by the Device User.
 
-- If the value ***Allow*** is chosen, then the Device User will be allowed to use the Settings Menu to change whether applications running in the background are allowed to communicate using the WWAN adapter.  This can be used to enable the Device User to override settings related to usage of background data that were set by the Administrator. 
+- If the value ***Allow*** is chosen, then the Device User is allowed to use the Settings Menu to change whether applications running in the background are allowed to communicate using the WWAN adapter.  This can be used to enable the Device User to override settings related to usage of background data that were set by the Administrator. 
 
 ### Wireless WAN Configuration - User Control of Data Limit
 
 This Managed Configuration allows an Administrator using an EMM to configure whether a Device User is allowed to use the in-device Settings Menu to change limits on how much data can be communicated using the WWAN adapter.
 
-- If the value ***Disallow*** is chosen, then the Device User will be blocked from using the Settings Menu to change limits on how much data can be communicated using the WWAN adapter.  This can be used to ensure that the Administrator settings related to data limits cannot be overridden by the Device User.
+- If the value ***Disallow*** is chosen, then the Device User is blocked from using the Settings Menu to change limits on how much data can be communicated using the WWAN adapter.  This can be used to ensure that the Administrator settings related to data limits cannot be overridden by the Device User.
 
-- If the value ***Allow*** is chosen, then the Device User will be allowed to use the Settings Menu to change limits on how much data can be communicated using the WWAN adapter.  This can be used to enable the Device User to override settings related to data limits that were set by the Administrator.
+- If the value ***Allow*** is chosen, then the Device User is allowed to use the Settings Menu to change limits on how much data can be communicated using the WWAN adapter.  This can be used to enable the Device User to override settings related to data limits that were set by the Administrator.
 
 
 ### Wireless WAN Configuration - User Control of Power
 
 This Managed Configuration allows an Administrator using an EMM to configure whether a Device User is allowed to use the in-device Settings Menu to change the *Power State* of the WWAN adapter.
 
-- If the value ***Disallow*** is chosen, then the Device User will be blocked from using the Settings Menu to change the *Power State* of the WWAN adapter.  This can be used to ensure that the Administrator settings related the *Power State* of the WWAN adapter cannot be overridden by the Device User.
+- If the value ***Disallow*** is chosen, then the Device User is blocked from using the Settings Menu to change the *Power State* of the WWAN adapter.  This can be used to ensure that the Administrator settings related the *Power State* of the WWAN adapter cannot be overridden by the Device User.
 
-- If the value ***Allow*** is chosen, then the Device User will be allowed to use the Settings Menu to change the *Power State* of the WWAN adapter.  This can be used to enable the Device User to override the *Power State* of the WWAN adapter that was set by the Administrator. 
+- If the value ***Allow*** is chosen, then the Device User is allowed to use the Settings Menu to change the *Power State* of the WWAN adapter.  This can be used to enable the Device User to override the *Power State* of the WWAN adapter that was set by the Administrator. 
 
 ### Wireless WAN Configuration - User Control of Sim Socket
 
-This Managed Configuration allows an Administrator using an EMM to configure whether a Device User is allowed to use the in-device Settings Menu to select which SIM slot will be used by the WWAN adapter.
+This Managed Configuration allows an Administrator using an EMM to configure whether a Device User is allowed to use the in-device Settings Menu to select which SIM slot is used by the WWAN adapter.
 
-- If the value ***Disallow*** is chosen, then the Device User will be blocked from using the Settings Menu to select which SIM slot will be used by the WWAN adapter.  This can be used to ensure that the Administrator settings related to SIM slot selection cannot be overridden by the Device User.
+- If the value ***Disallow*** is chosen, then the Device User is blocked from using the Settings Menu to select which SIM slot is used by the WWAN adapter.  This can be used to ensure that the Administrator settings related to SIM slot selection cannot be overridden by the Device User.
 
-- If the value ***Allow*** is chosen, then the Device User will be allowed to use the Settings Menu to select which SIM slot will be used by the WWAN adapter.  This can be used to enable the Device User to override theSIM slot selection that was set by the Administrator.
+- If the value ***Allow*** is chosen, then the Device User is allowed to use the Settings Menu to select which SIM slot is used by the WWAN adapter.  This can be used to enable the Device User to override theSIM slot selection that was set by the Administrator.
 
 
 ### Wireless WAN Configuration - Public Land Mobile Network Lock
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the WWAN adapter should be locked to a single Public Land Mobile Network Lock (PLMN).
 
-- If the value ***Off*** is chosen, then the WWAN adapter will NOT be locked to a single Public Land Mobile Network Lock (PLMN) and will be free to connect to any PLMN that is compatible with the SIM card being used.
+- If the value ***Off*** is chosen, then the WWAN adapter will NOT be locked to a single Public Land Mobile Network Lock (PLMN) and is free to connect to any PLMN that is compatible with the SIM card being used.
 
-- If the value ***On*** is chosen, then the WWAN adapter will be locked to a single Public Land Mobile Network Lock (PLMN) and will only be able to to connect to that PLMN.  The additional Managed Configuration **Wireless WAN Configuration - Public Land Mobile Network Lock Value** MUST be specified to provide the value that identifies the PLMN to which the WWAN adapter should be locked.
+- If the value ***On*** is chosen, then the WWAN adapter is locked to a single Public Land Mobile Network Lock (PLMN) and will only be able to to connect to that PLMN.  The additional Managed Configuration **Wireless WAN Configuration - Public Land Mobile Network Lock Value** MUST be specified to provide the value that identifies the PLMN to which the WWAN adapter should be locked.
 
 
 ### Wireless WAN Configuration - Public Land Mobile Network Lock Value
@@ -3312,17 +3325,17 @@ The value provided to identify a PLMN must specify both the Mobile Country Code 
 
 This Managed Configuration allows an Administrator using an EMM to configure whether a Device User is allowed to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN).
 
-- If the value ***Disallow*** is chosen, then the Device User will be blocked from using the Settings Menu to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN).  This can be used to ensure that the Administrator settings related to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) cannot be overridden by the Device User.
+- If the value ***Disallow*** is chosen, then the Device User is blocked from using the Settings Menu to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN).  This can be used to ensure that the Administrator settings related to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) cannot be overridden by the Device User.
 
-- If the value ***Allow*** is chosen, then the Device User will be allowed to use the Settings Menu to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN).  This can be used to enable the Device User to override any locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) that was set by the Administrator. 
+- If the value ***Allow*** is chosen, then the Device User is allowed to use the Settings Menu to control locking of the WWAN adapter to a single Public Land Mobile Network (PLMN).  This can be used to enable the Device User to override any locking of the WWAN adapter to a single Public Land Mobile Network (PLMN) that was set by the Administrator. 
 
 ### Wireless WAN Configuration - Dual SIM Dual Standby Mode
 
 This Managed Configuration allows an Administrator using an EMM to configure whether the WWAN adapter should handle multiple SIM card(s) in Dual SIM Dual Standby (DSDS) Mode.
 
-- If the value **Off** is chosen, then the WWAN adapter will be configured to handle multiple SIM card(s) in Single SIM Mode, which means that only one SIM at a time will be usable for all carrier services.  To use a different SIM, the current SIM will need to be switched and ALL carrier services will switch to the new SIM.
+- If the value **Off** is chosen, then the WWAN adapter is configured to handle multiple SIM card(s) in Single SIM Mode, which means that only one SIM at a time is usable for all carrier services.  To use a different SIM, the current SIM will need to be switched and ALL carrier services will switch to the new SIM.
 
-- If the value **On** is chosen, then the WWAN adapter will be configured to handle multiple SIM card(s) in Dual SIM Dual Standby Mode, which means that two SIM cards, if present, can be used at the same time, but only one SIM can be chosen for each carrier service.  For example, one SIM might be used for voice calls and text messages while the other SIM might be used for data.  This can be beneficial if the carriers associated with those SIMs have different performance, pricing, coverage, etc. for various carrier services. 
+- If the value **On** is chosen, then the WWAN adapter is configured to handle multiple SIM card(s) in Dual SIM Dual Standby Mode, which means that two SIM cards, if present, can be used at the same time, but only one SIM can be chosen for each carrier service.  For example, one SIM might be used for voice calls and text messages while the other SIM might be used for data.  This can be beneficial if the carriers associated with those SIMs have different performance, pricing, coverage, etc. for various carrier services. 
 
 ## Zebra Licensing Configuration
 
@@ -3332,25 +3345,25 @@ This Managed Configuration group allows an Administrator using an EMM to manage 
 
 This Managed Configuration allows an Administrator using an EMM to perform an Action to manage Zebra-issued licenses on a Zebra Android device.
 
-- If the value ***Activate License*** is chosen, then a license will be activated, making it usable on the device.  Some or all of the additional Managed Configurations **Zebra Licensing Configuration - License Action Activate License Method**, **Zebra Licensing Configuration - License Action Activate License Method From Server AID Value**, **Zebra Licensing Configuration - License Action Activate License Method From Server Standard Class**, **Zebra Licensing Configuration - License Action Activate License Method From Server Custom Class**, **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL**, **Zebra Licensing Configuration - License Action Activate License Method From Server Custom Friendly Name**, **Zebra Licensing Configuration - License Action Activate License Method From Local File Path and Name**, and **Zebra Licensing Configuration - License Action Activate License Method From Local File Source Server Class** MUST be specified to define the license to be activated and how that license should be activated.
+- If the value ***Activate License*** is chosen, then a license is activated, making it usable on the device.  Some or all of the additional Managed Configurations **Zebra Licensing Configuration - License Action Activate License Method**, **Zebra Licensing Configuration - License Action Activate License Method From Server AID Value**, **Zebra Licensing Configuration - License Action Activate License Method From Server Standard Class**, **Zebra Licensing Configuration - License Action Activate License Method From Server Custom Class**, **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL**, **Zebra Licensing Configuration - License Action Activate License Method From Server Custom Friendly Name**, **Zebra Licensing Configuration - License Action Activate License Method From Local File Path and Name**, and **Zebra Licensing Configuration - License Action Activate License Method From Local File Source Server Class** MUST be specified to define the license to be activated and how that license should be activated.
 
-- If the value ***Return  License*** is chosen, then a previously activated license will be returned, allowing it to be re-allocated for use on another Zebra Android device.  The additional Managed Configurations **Zebra Licensing Configuration - License Action Return License Server Type**, **Zebra Licensing Configuration - License Action Return License Server Type Friendly Name**, and **Zebra Licensing Configuration - License Action Return License AID Value** MUST be specified to define the license to be returned and how that license should be returned.
+- If the value ***Return  License*** is chosen, then a previously activated license is returned, allowing it to be re-allocated for use on another Zebra Android device.  The additional Managed Configurations **Zebra Licensing Configuration - License Action Return License Server Type**, **Zebra Licensing Configuration - License Action Return License Server Type Friendly Name**, and **Zebra Licensing Configuration - License Action Return License AID Value** MUST be specified to define the license to be returned and how that license should be returned.
 
-- If the value ***Return All Licenses*** is chosen, then all licenses previously activated from a given *License Server* will be returned, allowing them to be re-allocated for use on other Zebra Android devices.  The additional Managed Configurations **Zebra Licensing Configuration - License Action Return All Licenses Server Type** and **Zebra Licensing Configuration - License Action Return All Licenses Server Type Friendly Name** MUST be specified to define how the licenses were acquired and therefore to identify which licenses should be returned and how they should be returned.
+- If the value ***Return All Licenses*** is chosen, then all licenses previously activated from a given *License Server* is returned, allowing them to be re-allocated for use on other Zebra Android devices.  The additional Managed Configurations **Zebra Licensing Configuration - License Action Return All Licenses Server Type** and **Zebra Licensing Configuration - License Action Return All Licenses Server Type Friendly Name** MUST be specified to define how the licenses were acquired and therefore to identify which licenses should be returned and how they should be returned.
 
-- If the value ***Refresh License*** is chosen, then a previously activated license will be refreshed, updating anything that may have changed, such as its expiration date, capabilities, etc.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Refresh License AID Value** MUST be specified to identify the license to be refreshed.
+- If the value ***Refresh License*** is chosen, then a previously activated license is refreshed, updating anything that may have changed, such as its expiration date, capabilities, etc.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Refresh License AID Value** MUST be specified to identify the license to be refreshed.
 
-- If the value ***Delete Server*** is chosen, then a previously defined *Custom Server*, along with all licenses allocated via that *Custom Server*, will be deleted.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Delete Server Friendly Name** MUST be specified to provide the *Friendly Name* that identifies the *Custom Server* to be deleted. 
+- If the value ***Delete Server*** is chosen, then a previously defined *Custom Server*, along with all licenses allocated via that *Custom Server*, is deleted.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Delete Server Friendly Name** MUST be specified to provide the *Friendly Name* that identifies the *Custom Server* to be deleted. 
 
 ### Zebra Licensing Configuration - License Action Activate License Method
 
 This Managed Configuration allows an Administrator using an EMM to provide the method that should be used to activate a Zebra-issued license a Zebra Android device and should be specified if and only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action**.
 
-- If the value ***From Server Standard*** is chosen, then the license will be activated from a Standard Server and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Standard Class** MUST be specified to identify the class of Standard Server via which the license will be activated and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server AID Value** MUST be specified identify the license to be activated.
+- If the value ***From Server Standard*** is chosen, then the license is activated from a Standard Server and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Standard Class** MUST be specified to identify the class of Standard Server via which the license is activated and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server AID Value** MUST be specified identify the license to be activated.
 
-- If the value ***From Server Custom*** is chose, then the license will be activated from a Custom Server and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom Class** MUST be specified to identify the class of Custom Server via which the license will be activated and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server AID Value** MUST be specified identify the license to be activated.  In addition, the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL** MAY need to be specified, depending on the value chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom Class**.
+- If the value ***From Server Custom*** is chose, then the license is activated from a Custom Server and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom Class** MUST be specified to identify the class of Custom Server via which the license is activated and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server AID Value** MUST be specified identify the license to be activated.  In addition, the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL** MAY need to be specified, depending on the value chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom Class**.
 
-- If the value ***From Local File*** is chosen, then the license will be activated from a license file stored in the device file system and the additional Managed Configurations **Zebra Licensing Configuration - License Action Activate License Method From Local File Path and Name** and **Zebra Licensing Configuration - License Action Activate License Method From Local File Source Server Class** MUST be specified to identify the license file and the class of  Server from which the license file was acquired. 
+- If the value ***From Local File*** is chosen, then the license is activated from a license file stored in the device file system and the additional Managed Configurations **Zebra Licensing Configuration - License Action Activate License Method From Local File Path and Name** and **Zebra Licensing Configuration - License Action Activate License Method From Local File Source Server Class** MUST be specified to identify the license file and the class of  Server from which the license file was acquired. 
 
 ### Zebra Licensing Configuration - License Action Activate License Method From Server AID Value
 
@@ -3358,38 +3371,38 @@ This Managed Configuration allows an Administrator using an EMM to provide the A
 
 ### Zebra Licensing Configuration - License Action Activate License Method From Server Standard Class
 
-This Managed Configuration allows an Administrator using an EMM to provide the Class of Standard Server via which a Zebra-issued license will be activated on a Zebra Android device and should be specified if and only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Server Standard*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method**.
+This Managed Configuration allows an Administrator using an EMM to provide the Class of Standard Server via which a Zebra-issued license is activated on a Zebra Android device and should be specified if and only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Server Standard*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method**.
 
-- If the value ***Production Cloud Direct*** is chosen, then the license will be activated by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet.  The Production Server should be used when deploying licenses to devices for production use.
+- If the value ***Production Cloud Direct*** is chosen, then the license is activated by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet.  The Production Server should be used when deploying licenses to devices for production use.
 
-- If the value ***Test Cloud Direct*** is chosen, then the license will be activated by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet.  The Test Server should be used when tested the deployment of licenses to devices to avoid consuming actual production licenses.
+- If the value ***Test Cloud Direct*** is chosen, then the license is activated by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet.  The Test Server should be used when tested the deployment of licenses to devices to avoid consuming actual production licenses.
 
 
 ### Zebra Licensing Configuration - License Action Activate License Method From Server Custom Class
 
-This Managed Configuration allows an Administrator using an EMM to provide the Class of Custom Server via which a Zebra-issued license will be activated on a Zebra Android device and should be specified if and only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Server Custom*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method**.
+This Managed Configuration allows an Administrator using an EMM to provide the Class of Custom Server via which a Zebra-issued license is activated on a Zebra Android device and should be specified if and only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Server Custom*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method**.
 
-- If the value ***Production Cloud  Proxy*** is chosen, then the license will be activated by communicating to a Production *Zebra License Server* at a fixed known location on the Internet via a *Local Proxy Server*.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL** MUST be specified to identify the *Local Proxy Server* to be used.
+- If the value ***Production Cloud  Proxy*** is chosen, then the license is activated by communicating to a Production *Zebra License Server* at a fixed known location on the Internet via a *Local Proxy Server*.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL** MUST be specified to identify the *Local Proxy Server* to be used.
 
-- If the value ***Test Cloud  Proxy*** is chosen, then the license will be activated by communicating to a Test *Zebra License Server* at a fixed known location on the Internet via a *Local Proxy Server*.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL** MUST be specified to identify the *Local Proxy Server* to be used.
+- If the value ***Test Cloud  Proxy*** is chosen, then the license is activated by communicating to a Test *Zebra License Server* at a fixed known location on the Internet via a *Local Proxy Server*.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL** MUST be specified to identify the *Local Proxy Server* to be used.
 
-- If the value ***Local Direct*** is chosen, then the license will be activated by communicating to a *Local License Server*.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL** MUST be specified to identify the *Local License Server* to be used.
+- If the value ***Local Direct*** is chosen, then the license is activated by communicating to a *Local License Server*.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL** MUST be specified to identify the *Local License Server* to be used.
 
-- If the value ***Other*** is chosen, then the license will be activated by communicating to some other Server.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL** MUST be specified to identify the Server to be used. 
+- If the value ***Other*** is chosen, then the license is activated by communicating to some other Server.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL** MUST be specified to identify the Server to be used. 
 
 ### Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL
 
-This Managed Configuration allows an Administrator using an EMM to provide the URL of a Custom Server via which a Zebra-issued license will be activated on a Zebra Android device and should be specified if and only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Server Custom*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method**. 
+This Managed Configuration allows an Administrator using an EMM to provide the URL of a Custom Server via which a Zebra-issued license is activated on a Zebra Android device and should be specified if and only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Server Custom*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method**. 
 
 ### Zebra Licensing Configuration - License Action Activate License Method From Server Custom Friendly Name
 
-This Managed Configuration allows an Administrator using an EMM to provide a *Friendly Name* for a Custom Server via which a Zebra-issued license will be activated on a Zebra Android device and should be specified if and only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Server Custom*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method**.
+This Managed Configuration allows an Administrator using an EMM to provide a *Friendly Name* for a Custom Server via which a Zebra-issued license is activated on a Zebra Android device and should be specified if and only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Server Custom*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method**.
 
 A *Friendly Name* is kept for each Custom Server used to acquire licenses and is used when later operating on such licenses to identify the Custom Server via which a license was acquired and hence via which it must be refreshed, returned, etc.  The *Friendly Name* is also used to identify a Custom Server to be deleted. 
 
 ### Zebra Licensing Configuration - License Action Activate License Method From Local File Path and Name
 
-This Managed Configuration allows an Administrator using an EMM to provide the local path and file name of a license file in the device file system from a which a Zebra-issued license will be activated on a Zebra Android device and should be specified if and only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Local File*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method**.  The Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Local File Source Server Class** MUST also be specified to identify the class of Server from which the license file was acquired, which could impact how it is processed. 
+This Managed Configuration allows an Administrator using an EMM to provide the local path and file name of a license file in the device file system from a which a Zebra-issued license is activated on a Zebra Android device and should be specified if and only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Local File*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method**.  The Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Local File Source Server Class** MUST also be specified to identify the class of Server from which the license file was acquired, which could impact how it is processed. 
 
 ### Zebra Licensing Configuration - License Action Activate License Method From Local File Source Server Class
 
@@ -3399,11 +3412,11 @@ This Managed Configuration allows an Administrator using an EMM to provide the c
 
 This Managed Configuration allows an Administrator using an EMM to provide the Type of Standard Server via which a Zebra-issued license was activated on a Zebra Android device and therefore via which it should be returned, and should be specified if and only if the value ***Return License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action**.
 
-- If the value ***Production Cloud Direct*** is chosen, then the license will be assumed to have been activated by by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet and the license will be returned by communicating directly to the same server in the same way.
+- If the value ***Production Cloud Direct*** is chosen, then the license is assumed to have been activated by by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet and the license is returned by communicating directly to the same server in the same way.
 
-- If the value ***Test Cloud Direct*** is chosen, then the license will be assumed to have been activated by by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet and the license will be returned by communicating directly to the same server in the same way.
+- If the value ***Test Cloud Direct*** is chosen, then the license is assumed to have been activated by by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet and the license is returned by communicating directly to the same server in the same way.
 
-- If the value ***Server Friendly Name*** is chosen, then the license will be assumed to have been activated by by communicating to a *Custom Server*.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Return License Server Type Friendly Name** MUST be specified to provide the *Friendly Name* that identifies the *Custom Server* via which the license was acquired and hence via which it should be returned. 
+- If the value ***Server Friendly Name*** is chosen, then the license is assumed to have been activated by by communicating to a *Custom Server*.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Return License Server Type Friendly Name** MUST be specified to provide the *Friendly Name* that identifies the *Custom Server* via which the license was acquired and hence via which it should be returned. 
 
 ### Zebra Licensing Configuration - License Action Return License Server Type Friendly Name
 
@@ -3417,11 +3430,11 @@ This Managed Configuration allows an Administrator using an EMM to provide the A
 
 This Managed Configuration allows an Administrator using an EMM to provide the Type of Standard Server via which a set of Zebra-issued licenses was activated on a Zebra Android device and therefore via which they should be returned, and should be specified if and only if the value ***Return All License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action**.
 
-- If the value ***Production Cloud Direct*** is chosen, then the licenses will be assumed to have been activated by by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet and all such licenses will be returned by communicating directly to the same server in the same way.
+- If the value ***Production Cloud Direct*** is chosen, then the licenses is assumed to have been activated by by communicating directly to a Production *Zebra License Server* at a fixed known location on the Internet and all such licenses is returned by communicating directly to the same server in the same way.
 
-- If the value ***Test Cloud Direct*** is chosen, then the licenses will be assumed to have been activated by by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet and all such licenses will be returned by communicating directly to the same server in the same way.
+- If the value ***Test Cloud Direct*** is chosen, then the licenses is assumed to have been activated by by communicating directly to a Test *Zebra License Server* at a fixed known location on the Internet and all such licenses is returned by communicating directly to the same server in the same way.
 
-- If the value ***Server Friendly Name*** is chosen, then the licenses will be assumed to have been activated by by communicating to a *Custom Server*.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Return All Licenses Server Type Friendly Name** MUST be specified to provide the *Friendly Name* that identifies the *Custom Server* via which the licenses were acquired and hence via which all such licenses should be returned.  
+- If the value ***Server Friendly Name*** is chosen, then the licenses is assumed to have been activated by by communicating to a *Custom Server*.  The additional Managed Configuration **Zebra Licensing Configuration - License Action Return All Licenses Server Type Friendly Name** MUST be specified to provide the *Friendly Name* that identifies the *Custom Server* via which the licenses were acquired and hence via which all such licenses should be returned.  
 
 ### Zebra Licensing Configuration - License Action Return All Licenses Server Type Friendly Name
 

@@ -35,7 +35,7 @@ To scan the peripheral’s Bluetooth barcode to pair:
 3. The scan beam is illuminated. Scan the Bluetooth MAC address barcode label on the desired peripheral to pair. Ensure that Bluetooth is enabled on the peripheral and is set to discoverable mode.  Refer to the peripheral user guide for instructions.
 	![img](scan_pair_discover.jpg)
 <br>
-4. When pairing is successful, the peripheral is displayed in the list indicating that it is paired.  A green dot next to a Bluetooth scanner indicates that the device is connected and may be in use.  Other peripherals such as a Bluetooth headset, printer, and payment device will have a red dot until the respective application is using these Bluetooth peripherals.
+4. When pairing is successful, the peripheral is displayed in the list indicating that it is paired.  A green dot next to a Bluetooth scanner indicates that the device is connected and may be in use.  Other peripherals such as a Bluetooth headset or printer device will have a red dot until the respective application is using these Bluetooth peripherals.
 	![img](pair_success.jpg)
 <br>
 ####Scan to Pair (Display Barcode to Pair)
@@ -62,13 +62,13 @@ To pair a peripheral manually if unable to pair via Bluetooth:
 	![img](manual_pair_mac.jpg)
 <br>
 3. Enter in the Bluetooth Mac address for the peripheral to pair to.
-4. When pairing is successful, the peripheral is displayed in the list.  A green dot next to a Bluetooth scanner indicates that the device is connected and may be in use.  Other peripherals such as a Bluetooth headset, printer, and payment device will have a red dot until the respective application is using these Bluetooth peripherals.
+4. When pairing is successful, the peripheral is displayed in the list.  A green dot next to a Bluetooth scanner indicates that the device is connected and may be in use.  Other peripherals such as a Bluetooth headset or printer will have a red dot until the respective application is using these Bluetooth peripherals.
 	![img](mac_address.jpg)
 <br>
 
 ###Paired Device List
 
-Once pairing is complete, the peripheral is listed in the **Scan and Pair** tab. The paired peripherals are listed by device name, showing the connected state as indicated by the green (connected) or red (disconnected) dot. An **Unpair** button next to each peripheral allows the capability to unpair each device individually. The icons for each peripheral represent the type of device by category: scanner, headset, printer, and payment.  
+Once pairing is complete, the peripheral is listed in the **Scan and Pair** tab. The paired peripherals are listed by device name, showing the connected state as indicated by the green (connected) or red (disconnected) dot. An **Unpair** button next to each peripheral allows the capability to unpair each device individually. The icons for each peripheral represent the type of device by category: scanner, headset and printer.  
 	![img](paired_devices.jpg)
 <br>
 
@@ -159,7 +159,7 @@ The **My Device** tab displays information pertaining to the Android device whic
 ##Configuration
 Some features may be controlled through [StageNow](/stagenow/latest/about), an Enterprise Mobility Management (EMM) system (sometimes referred to as Mobile Device Management, or MDM), or a custom application using Zebra's [DeviceCentralMgr CSP](/mx/devicecentralmgr). These features include:
 
-* **Enable/Disable Single Pairing of the Same Device Class**: If enabled, this setting only allows one device to be paired from each device category, such as scanner, headset, printer, or payment. If a device is already previously paired and another device of that same category type is being paired, the previously paired device will be automatically unpaired to allow the new device to be paired.
+* **Enable/Disable Single Pairing of the Same Device Class**: If enabled, this setting only allows one device to be paired from each device category, such as scanner, headset and printer. If a device is already previously paired and another device of that same category type is being paired, the previously paired device will be automatically unpaired to allow the new device to be paired.
 * **Enable/Disable Firmware Update Option**: If enabled, this permits the ability to hide the Firmware Update button to prevent firmware updates from taking place.  
 * **Enable/Disable Bluetooth On/Off Option**: If enabled, this prevents the user from accessing the option to turn the Bluetooth radio on or off. This option is shown below from the **Scan and Pair** screen by tapping on the top right hamburger menu:
 <br>

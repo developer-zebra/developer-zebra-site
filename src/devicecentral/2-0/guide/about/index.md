@@ -138,10 +138,12 @@ Device Central is approved for use with the following Bluetooth peripherals:
     <td>Bluetooth Printer</td>
     <td>Zebra Bluetooth Printers (for example iMZ320)</td>
   </tr>
+  <!-- ** Payment Support removed **
   <tr>
     <td>Bluetooth Payment Terminal</td>
     <td>Verifone Bluetooth Payment Terminals (for example e355)</td>
   </tr>
+  -->
 </table>
 
 <br>

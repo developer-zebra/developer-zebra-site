@@ -497,39 +497,39 @@ The following table depicts the decode behavior between Datamatrix and GS1 Datam
     <th colspan="2"><center>Regular Datamatrix Barcode</center></th>
     <th colspan="2"><center>GS1 Datamatrix Barcode</center></th>
   </tr>
-  <tr>
-    <td><b><center>Can Decode</center></b></td>
-    <td><b><center>Type</center></b></td>
-    <td><b><center>Can Decode</center></b></td>
-    <td><b><center>Type</center></b></td>
+  <tr align="center">
+    <td><b>Can Decode</b></td>
+    <td><b>Type</b></td>
+    <td><b>Can Decode</b></td>
+    <td><b>Type</b></td>
   </tr>
-  <tr>
-    <td>Enabled</td>
-    <td>Enabled</td>
+  <tr align="center">
+    <td>●</td>
+    <td>●</td>
     <td>Yes</td>
     <td>LABEL-TYPE-DATAMATRIX</td>
     <td>Yes</td>
     <td>LABEL-TYPE-GS1-DATAMATRIX</td>
   </tr>
-  <tr bgcolor="#cce6ff">
-    <td>Enabled</td>
-    <td>Disabled</td>
+  <tr bgcolor="#cce6ff" align="center">
+    <td>●</td>
+    <td>o</td>
     <td>Yes</td>
     <td>LABEL-TYPE-DATAMATRIX</td>
     <td>Yes</td>
     <td>LABEL-TYPE-DATAMATRIX</td>
   </tr>
-  <tr>
-    <td>Disabled</td>
-    <td>Enabled</td>
+  <tr align="center">
+    <td>o</td>
+    <td>●</td>
     <td>No</td>
     <td>[none]</td>
     <td>Yes</td>
     <td>LABEL-TYPE-GS1-DATAMATRIX</td>
   </tr>
-  <tr>
-    <td>Disabled</td>
-    <td>Disabled</td>
+  <tr align="center">
+    <td>o</td>
+    <td>o</td>
     <td>No</td>
     <td>[none]</td>
     <td>No</td>
@@ -537,7 +537,9 @@ The following table depicts the decode behavior between Datamatrix and GS1 Datam
   </tr>
 </table>
 
-The blue shaded row indicates a successful decode for label types reported as Datamatrix although GS1 Datamatrix is disabled.
+Notes: 
+* "●" indicates enabled.  "o" indicates disabled.
+* The blue shaded row indicates a successful decode for label types reported as Datamatrix although GS1 Datamatrix is disabled.
 
 ------
 ### GS1 QR Code
@@ -551,39 +553,39 @@ The following table depicts the decode behavior between QR Code and GS1 QR Code:
     <th colspan="2"><center>Regular QR Code Barcode</center></th>
     <th colspan="2"><center>GS1 QR Code Barcode</center></th>
   </tr>
-  <tr>
-    <td><b><center>Can Decode</center></b></td>
-    <td><b><center>Type</center></b></td>
-    <td><b><center>Can Decode</center></b></td>
-    <td><b><center>Type</center></b></td>
+  <tr align="center">
+    <td><b>Can Decode</b></td>
+    <td><b>Type</b></td>
+    <td><b>Can Decode</b></td>
+    <td><b>Type</b></td>
   </tr>
-  <tr>
-    <td>Enabled</td>
-    <td>Enabled</td>
+  <tr align="center">
+    <td>●</td>
+    <td>●</td>
     <td>Yes</td>
     <td>LABEL-TYPE-QRCODE</td>
     <td>Yes</td>
     <td>LABEL-TYPE-GS1-QRCODE</td>
   </tr>
-  <tr bgcolor="#cce6ff">
-    <td>Enabled</td>
-    <td>Disabled</td>
+  <tr bgcolor="#cce6ff" align="center">
+    <td>●</td>
+    <td>o</td>
     <td>Yes</td>
     <td>LABEL-TYPE-QRCODE</td>
     <td>Yes</td>
     <td>LABEL-TYPE-QRCODE</td>
   </tr>
-  <tr>
-    <td>Disabled</td>
-    <td>Enabled</td>
+  <tr align="center">
+    <td>o</td>
+    <td>●</td>
     <td>No</td>
     <td>[none]</td>
     <td>Yes</td>
     <td>LABEL-TYPE-GS1-QRCODE</td>
   </tr>
-  <tr>
-    <td>Disabled</td>
-    <td>Disabled</td>
+  <tr align="center">
+    <td>o</td>
+    <td>o</td>
     <td>No</td>
     <td>[none]</td>
     <td>No</td>
@@ -591,7 +593,9 @@ The following table depicts the decode behavior between QR Code and GS1 QR Code:
   </tr>
 </table>
 
-The blue shaded row indicates a successful decode for label types reported as QR Code although GS1 QR Code is disabled.
+Notes: 
+* "●" indicates enabled.  "o" indicates disabled.
+* The blue shaded row indicates a successful decode for label types reported as QR Code although GS1 QR Code is disabled.
 
 ------
 ### Trioptic39

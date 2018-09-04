@@ -2741,19 +2741,19 @@ This Managed Configuration group allows an Administrator using an EMM to define 
 
 This Managed Configuration allows an Administrator using an EMM to specify the type of a single *Audio Stream* included as part of a new *Audio UI Profile* being added and MUST be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.  Some or all of the additional Managed Configurations **Volume UI Configuration - Action Add Profile Stream Label**, **Volume UI Configuration - Action Add Profile Stream Icon**, **Volume UI Configuration - Action Add Profile Stream Visible**, and **Volume UI Configuration - Action Add Profile Stream Modes** should also be specified to define the characteristics of the new *Audio Stream* of the specified type that is added.
 
-- If the value ***Music*** is chosen, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for playback of Music and other Media.
+- If the value ***Music*** is chosen, the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for playback of music and other media.
 
-- If the value ***Ring*** is chosen, the *Audio Stream* to be added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for ringtones.
+- If the value ***Ring*** is chosen, the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for ringtones.
 
-- If the value ***Notification*** is chosen, the *Audio Stream* to be added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for notifications.
+- If the value ***Notification*** is chosen, the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for notifications.
 
-- If the value ***System*** is chosen, the *Audio Stream* to be added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for system sounds.
+- If the value ***System*** is chosen, the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for system sounds.
 
-- If the value ***Alarm*** is chosen, the *Audio Stream* to be added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for alarms.
+- If the value ***Alarm*** is chosen, the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for alarms.
 
-- If the value ***VoiceCall*** is chosen, the *Audio Stream* to be added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for voice calls.
+- If the value ***VoiceCall*** is chosen, the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for voice calls.
 
-- If the value ***VVS*** is chosen, the *Audio Stream* to be added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for Decode Beep Vertical Volume Scale (VVS). 
+- If the value ***VVS*** is chosen, the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for Decode Beep Vertical Volume Scale (VVS). 
 
 ##### Volume UI Configuration - Action Add Profile Stream Label
 
@@ -2768,9 +2768,9 @@ If no text label is specified for an *Audio Stream*, the *Factory Preset* defaul
 
 This Managed Configuration allows an Administrator using an EMM to specify the icon to be displayed for a single *Audio Stream* that is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
-The icon might be changed for an *Audio Stream* because it is used for some purpose(s) other than the one identified by the default text label.  Changing the icon to something more representative of the actual purpose(s) for which the *Audio Stream* is used can make the Zebra Volume Control behavior more intuitive for the Device User.
+The icon might be changed for an *Audio Stream* because it is used for some purpose(s) other than the one identified by the default text label. Changing the icon to something more representative of the actual purpose(s) for which the *Audio Stream* is used can make the Zebra Volume Control behavior more intuitive for the Device User.
 
-If an icon is specified, then the value specified must be the full path and file name of a PNG format icon file that must already be present in the device file system. Zebra recommends an icon size of 48x48 pixels.
+If an icon is specified, the value specified must be the full path and file name of a PNG format icon file that must already be present in the device file system. Zebra recommends an icon size of 48x48 pixels.
 
 If no icon is specified for an *Audio Stream*, the *Factory Preset* default icon is used.
 
@@ -2799,11 +2799,11 @@ The value must be an integer greater than 0 and less than 256, with 1 being the 
 
 The additional Managed Configurations **Volume UI Configuration - Action Add Profile Stream Mode Maximum** and **Volume UI Configuration - Action Add Profile Stream Mode Preset** MUST be specified to define the complete behavior of a single *Audio Mode* within a single *Audio Stream*.
 
-The value specified for of this Managed Configuration must be less than or equal to the value specified for the Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Maximum** and less than or equal to the value specified for the Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Preset**. 
+The value specified for this Managed Configuration must be less than or equal to the value specified for the Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Maximum** and less than or equal to the value specified for the Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Preset**. 
 
 ###### Volume UI Configuration - Action Add Profile Stream Mode Maximum
 
-This Managed Configuration allows an Administrator using an EMM to define the maximum volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added and should be specified if and only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+This Managed Configuration allows an Administrator using an EMM to define the maximum volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added and should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 The value must be an integer that is greater than 0 and less than 256, with 1 being the lowest possible volume level and 255 being the highest possible volume level.
 
@@ -2813,7 +2813,7 @@ The value specified for of this Managed Configuration must be greater than or eq
 
 ###### Volume UI Configuration - Action Add Profile Stream Mode Preset
 
-This Managed Configuration allows an Administrator using an EMM to define the preset volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added and should be specified if and only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+This Managed Configuration allows an Administrator using an EMM to define the preset volume level that the UI allows the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added. This should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 The value must be an integer that is greater than 0 and less than 256, with 1 being the lowest possible volume level and 255 being the highest possible volume level.
 
@@ -2823,41 +2823,41 @@ The value specified for of this Managed Configuration must be greater than or eq
 
 ###### Volume UI Configuration - Action Add Profile Stream Mode Type
 
-This Managed Configuration allows an Administrator using an EMM to define the type of behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added and should be specified if and only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+This Managed Configuration allows an Administrator using an EMM to define the type of behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added. This should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
-If the value ***Speaker*** is chosen, then the *Audio Mode* is configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to the built-in device speaker.
+If the value ***Speaker*** is chosen, the *Audio Mode* is configured for the *Audio Stream* for conditions under which the *Audio Stream* is routed to the built-in device speaker.
 
-If the value ***Receiver*** is chosen, then the *Audio Mode* is configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to receiver mode.
+If the value ***Receiver*** is chosen, the *Audio Mode* is configured for the *Audio Stream* for conditions under which the *Audio Stream* is routed to receiver mode.
 
-If the value ***WiredHeadset*** is chosen, then the *Audio Mode* is configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to a wired audio headset.
+If the value ***WiredHeadset*** is chosen, the *Audio Mode* is configured for the *Audio Stream* for conditions under which the *Audio Stream* is routed to a wired audio headset.
 
-If the value ***BluetoothHeadset*** is chosen, then the *Audio Mode* is configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to a wireless Bluetooth audio headset.
+If the value ***BluetoothHeadset*** is chosen, the *Audio Mode* is configured for the *Audio Stream* for conditions under which the *Audio Stream* is routed to a wireless Bluetooth audio headset.
 
 
 
 ### Volume UI Configuration - Action Remove Profile Name
 
-This Managed Configuration allows an Administrator using an EMM to provide the name of an existing *Audio UI Profile* to be removed and should be specified if and only if the value ***Remove Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action**. 
+This Managed Configuration allows an Administrator using an EMM to provide the name of an existing *Audio UI Profile* to be removed and should be specified only if the value ***Remove Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action**. 
 
 ### Volume UI Configuration - Action Set Current Profile Name
 
-This Managed Configuration allows an Administrator using an EMM to provide the name of an existing *Audio UI Profile* to be made the current active *Audio UI Profile*and should be specified if and only if the value ***Set Current Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action**.  The additional Managed Configuration **Volume UI Configuration - Action Set Current Profile Adjust Volume** MUST be specified to control whether the current device *Volume Settings* is adjusted to ensure that they fall within the range of *Volume Settings* defined by the *Audio UI Profile*. 
+This Managed Configuration allows an Administrator using an EMM to provide the name of an existing *Audio UI Profile* to be made the current active *Audio UI Profile*and should be specified only if the value ***Set Current Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action**. The additional Managed Configuration **Volume UI Configuration - Action Set Current Profile Adjust Volume** MUST be specified to control whether the current device *Volume Settings* is adjusted to ensure that they fall within the range of *Volume Settings* defined by the *Audio UI Profile*. 
 
 ### Volume UI Configuration - Action Set Current Profile Adjust Volume
 
-This Managed Configuration allows an Administrator using an EMM to configure the current device *Volume Settings* is adjusted to ensure that they fall within the range of *Volume Settings* defined by an *Audio UI Profile* being made the new current *Audio UI Profile* to be made the current active *Audio UI Profile*and should be specified if and only if the value ***Set Current Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** and the Managed Configuration **Volume UI Configuration - Action Set Current Profile Name** is specified. 
+This Managed Configuration allows an Administrator using an EMM to configure the current device *Volume Settings* is adjusted to ensure that they fall within the range of *Volume Settings* defined by an *Audio UI Profile* being made the new current *Audio UI Profile* to be made the current active *Audio UI Profile*. This should be specified only if the value ***Set Current Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** and the Managed Configuration **Volume UI Configuration - Action Set Current Profile Name** is specified. 
 
 ## Wakeup Configuration
 
-This Managed Configuration group allows an Administrator using an EMM to configure Wakeups on a Zebra Android device. 
+This Managed Configuration group allows an Administrator using an EMM to configure Wake-ups on a Zebra Android device. 
 
-### Wakeup Configuration - Wakeup Sources
+### Wakeup Configuration - Wake-up Sources
 
-This Managed Configuration allows an Administrator using an EMM to configure whether all controllable Wakeup Sources should be turned on or off.
+This Managed Configuration allows an Administrator using an EMM to configure whether all controllable Wake-up Sources should be turned on or off.
 
-- If the value ***Off*** is chosen, then all wakeup sources that can be turned on or off is turned off, causing the physical events corresponding to those wakeup sources to be ignored and hence NOT to cause the device to wakeup from a suspend state.
+- If the value ***Off*** is chosen, all wake-up sources that can be turned on or off are turned off, causing the physical events corresponding to those wake-up sources to be ignored, preventing them from causing the device to wake up from a suspend state.
 
-- If the value ***On*** is chosen, then all wakeup sources that can be turned on or off is turned on, causing the physical events corresponding to those wakeup sources to be honored and hence to cause the device to wakeup from a suspend state.
+- If the value ***On*** is chosen, all wake-up sources that can be turned on or off are turned on, causing the physical events corresponding to those wakeup sources to be honored, causing the device to wake up from a suspend state.
 
 
 
@@ -2869,47 +2869,47 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 This Managed Configuration allows an Administrator using an EMM to configure the Whitelisting Mode, which determines how the applications that can be installed and run on a Zebra Android device is controlled.
 
- - If the the value ***Package Name Only*** is chosen, then when configuring which applications can be installed and run, only the Android Package Name is used to identify the allowed applications.
+ - If the the value ***Package Name Only*** is chosen, allows only the app package name to control which applications can be installed and run.
 
- - If the the value ***Package Name and Signature*** is chosen, then when configuring which applications can be installed and run, both the Android Package Name and the Package Signature is used to identify the allowed applications.
+ - If the the value ***Package Name and Signature*** is chosen, requires the app package name *and* the signature to control which applications can be installed and run. 
 
-Using the value ***Package Name and Signature*** provides significantly better security than using ***Package Name Only*** since it provides much stronger protection against spoofing.  If ***Package Name Only*** is used, then any APK whose Android Package Name matches one of the allowed Package Names is allowed to be installed and run.  Since any APK can be assigned any Package Name, the potential for a rogue application circumventing the protections of Whitelisting is relatively high.  If ***Package Name and Signature*** is used, then the Signature of an application must match an allowed Signature in addition to the Package Name matching and allowed Package Name.  Since a rogue APK cannot be signed with a given Signature without possessing the corresponding Private Key, the chances of successfully spoofing are greatly reduced, and effectively eliminated if Private Keys are properly controlled.
+Using the value ***Package Name and Signature*** provides significantly better security than using ***Package Name Only*** since it provides much stronger protection against spoofing. If ***Package Name Only*** is used, any APK with a Android Package Name matching one of the allowed Package Names is allowed to be installed and run. Since any APK can be assigned any Package Name, the potential for a rogue application circumventing the protections of Whitelisting is relatively high. If ***Package Name and Signature*** is used, then the Signature of an application must match an allowed Signature in addition to the Package Name matching and allowed Package Name. Since a rogue APK cannot be signed with a given Signature without possessing the corresponding Private Key, the chances of successfully spoofing are greatly reduced, and effectively eliminated if Private Keys are properly controlled.
 
 
 ### Whitelist Configuration - Action
 
 This Managed Configuration group allows an Administrator using an EMM to perform an action to alter the Whitelisting configuration of a Zebra Android device.
 
-- If the value ***Allow*** is chosen, then a single application is allowed to be installed and run.  The additional Managed Configuration **Whitelist Configuration - Action Allow Package Name** MUST be specified to supply the Android Package Name of the application that is allowed.  In addition, if the value ***Package Name and Signature*** is chosen for the Managed Configuration **Whitelist Configuration - Mode**, then the additional Managed Configuration **Whitelist Configuration - Action Allow Signature** MUST also be specified to provide the Signature to be allowed.
+- If the value ***Allow*** is chosen, a single application is allowed to be installed and run. The additional Managed Configuration **Whitelist Configuration - Action Allow Package Name** MUST be specified to supply the Android Package Name of the application that is allowed. In addition, if the value ***Package Name and Signature*** is chosen for the Managed Configuration **Whitelist Configuration - Mode**, the additional Managed Configuration **Whitelist Configuration - Action Allow Signature** MUST also be specified to provide the Signature to be allowed.
 
-- If the value ***Disallow*** is chosen, then a single application is prevented from being installed and run. The additional Managed Configuration **Whitelist Configuration - Action Disallow Package Name** MUST be specified to supply the Android Package Name of the application that is disallowed.
+- If the value ***Disallow*** is chosen, the specified application is prevented from being installed and run. The additional Managed Configuration **Whitelist Configuration - Action Disallow Package Name** MUST be specified to supply the Android Package Name of the application that is disallowed.
 
 
 ### Whitelist Configuration - Action Allow Package Name
 
 This Managed Configuration group allows an Administrator using an EMM to provide the Android Package Name of an application to be allowed when the value ***Allow*** is chosen for the Managed Configuration **Whitelist Configuration - Action**.  
 
-If the value ***Package Name and Signature*** is chosen for the Managed Configuration **Whitelist Configuration - Mode**, then the additional Managed Configuration **Whitelist Configuration - Action Allow Signature** MUST also be specified to provide the Signature to be allowed. 
+If the value ***Package Name and Signature*** is chosen for the Managed Configuration **Whitelist Configuration - Mode**, the additional Managed Configuration **Whitelist Configuration - Action Allow Signature** MUST also be specified to provide the Signature to be allowed. 
 
 ### Whitelist Configuration - Action Allow Signature
 
-This Managed Configuration group allows an Administrator using an EMM to provide the Package Signature of an application to be allowed when the value ***Allow*** is chosen for the Managed Configuration **Whitelist Configuration - Action** and should be specified if and only if the Managed Configuration **Whitelist Configuration - Action Allow Package Name** is specified and the value ***Package Name and Signature*** is chosen for the Managed Configuration **Whitelist Configuration - Mode**. 
+This Managed Configuration group allows an Administrator using an EMM to provide the Package Signature of an application to be allowed when the value ***Allow*** is chosen for the Managed Configuration **Whitelist Configuration - Action** and should be specified only if the Managed Configuration **Whitelist Configuration - Action Allow Package Name** is specified and the value ***Package Name and Signature*** is chosen for the Managed Configuration **Whitelist Configuration - Mode**. 
 
 ### Whitelist Configuration - Action Disallow Signature
 
-This Managed Configuration group allows an Administrator using an EMM to provide the Package Signature of an application to be disallowed when the value ***Disallow*** is chosen for the Managed Configuration **Whitelist Configuration - Action** and should be specified if and only if the Managed Configuration **Whitelist Configuration - Action Disallow Package Name** is specified and the value ***Package Name and Signature*** is chosen for the Managed Configuration **Whitelist Configuration - Mode**. 
+This Managed Configuration group allows an Administrator using an EMM to provide the Package Signature of an application to be disallowed when the value ***Disallow*** is chosen for the Managed Configuration **Whitelist Configuration - Action** and should be specified only if the Managed Configuration **Whitelist Configuration - Action Disallow Package Name** is specified and the value ***Package Name and Signature*** is chosen for the Managed Configuration **Whitelist Configuration - Mode**. 
 
 ### Whitelist Configuration - Action Disallow Package Name
 
 This Managed Configuration group allows an Administrator using an EMM to provide the Android Package Name of an application to be disallowed when the value ***Disallow*** is chosen for the Managed Configuration **Whitelist Configuration - Action**.  
 
-If the value ***Package Name and Signature*** is chosen for the Managed Configuration **Whitelist Configuration - Mode**, then the additional Managed Configuration **Whitelist Configuration - Action Disallow Signature** MUST also be specified to provide the Signature to be allowed. 
+If the value ***Package Name and Signature*** is chosen for the Managed Configuration **Whitelist Configuration - Mode**, the additional Managed Configuration **Whitelist Configuration - Action Disallow Signature** MUST also be specified to provide the Signature to be allowed. 
 
 ### Whitelist Configuration - State
 
 This Managed Configuration allows an Administrator using an EMM to configure the Whitelisting State, which determines whether the set of applications that can be installed and run on a Zebra Android device is controlled.
 
- - If the the value ***Off*** is chosen, Whitelisting is not used and no restrictions is placed on which applications can be installed and run.
+ - If the the value ***Off*** is chosen, Whitelisting is not used and no restrictions are placed on which applications can be installed and run.
 
  - If the the value ***On*** is chosen, Whitelisting is used and additional Managed Configurations can be specified to configure how the set of applications is controlled and which applications can be installed and run. 
 
@@ -2931,9 +2931,9 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 This Managed Configuration group allows an Administrator using an EMM to configure whether the GPS radio state should be On or Off.
 
-- If the value ***Off*** is chosen, the GPS radio state is turned off, preventing GPS-based location detection from being performed.
+- If the value ***Off*** is chosen, the GPS radio is turned off, preventing GPS-based location detection.
 
-- If the value ***On*** is chosen, the GPS radio state is turned on, allowing GPS-based location detection to be performed, given satellite availability.
+- If the value ***On*** is chosen, the GPS radio is turned on, allowing GPS-based location detection, given satellite availability.
 
 
 ## Wireless LAN Configuration

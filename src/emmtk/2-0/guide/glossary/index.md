@@ -21,7 +21,7 @@ Android Enterprise (formerly "Android for Work") is a set of APIs for configurin
 See Android Enterprise. 
 
 ### `BundleTools.java`
-Java source code (file) developed by Zebra Technologies that converts JSON Managed Configuration objects into bundles and used to perform device-configuration actions. [Download BundleTools](). 
+Java source code (file) developed by Zebra Technologies that converts JSON Managed Configuration objects into bundles and used to perform device-configuration actions. [Download BundleTools]()(<<`GITHUB LINK TO COME`). 
 
 ### DA
 See Device Administrator.
@@ -75,7 +75,7 @@ A method for Android apps to expose configuration options and accept settings. T
 The Zebra-proprietary Privilege Escalation method designed to enable an unprivileged EMM agent to access all “missing” functions needed to enable an EMM vendor to implement a “complete” EMM solution for managing Zebra Android devices. MX was developed in parallel with the Android Device Administrator, and predates the availability of the Profile Owner and Device Owner Privilege Escalation methods. 
 
 ### `McTool.jar`
-A Java app developed by Zebra Technologies that presents a data-driven user interface from the contents of a schema. [Download McTool]().
+A Java app developed by Zebra Technologies that presents a data-driven user interface from the contents of a schema. [Download McTool]()(<<`GITHUB LINK TO COME`).
 
 ##MDM
 Mobile Device Management. See EMM. 
@@ -101,7 +101,7 @@ For more information, please refer to Zebra's [DA-to-DO Agent Migration Guide](h
 A document that defines functions available for interrogation and/or configuration using Managed Configuration mechanisms. Schemas and Managed Configurations conform to Google-defined specifications. 
 
 ### `schema.json`
-The document that defines functions of Zebra devices available for interrogation and/or configuration using Managed Configuration mechanisms. [Download the Zebra Schema]().
+The document that defines functions of Zebra devices available for interrogation and/or configuration using Managed Configuration mechanisms. [Download the Zebra Schema]()(<<`GITHUB LINK TO COME`).
 
 ### Support, Full 
 A feature generally recommended for use, and that come with no significant limitations or restrictions. 
@@ -110,8 +110,7 @@ A feature generally recommended for use, and that come with no significant limit
 A feature supported and generally recommended for use, but that might offer limited functionality or have restrictions relating to how or on which devices it can be used. 
 
 ### ZMC 
-Zebra Managed Configurations 
-See Managed Configurations
+Zebra Managed Configurations. See Managed Configurations. 
 
 
 -----

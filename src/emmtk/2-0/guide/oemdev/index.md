@@ -801,12 +801,12 @@ Used to configure whether the Device User should be allowed to use the Device Ce
 
 This Managed Configuration group allows an Administrator using an EMM to configure Display Screen settings on a Zebra Android device.
 
-### Display Configuration - Timeout
+### Timeout
 Used to configure the amount of inactivity, in seconds, after which the device display screen is turned off.
 
 A given device might not support all options allowed to be specified using this Managed Configuration. In the event that the value specified is not supported on a given device, the smallest larger value that is supported is used. If no larger value is supported, the largest smaller supported value is used.
 
-### Display Configuration - Blanking Mode
+### Blanking Mode
 Used to configure the Dislplay Blanking Mode, which determines whether the Display automatically Blanks (displays nothing).
 
 - When a value of ***Never Blank*** is chosen, the Display is never automatically Blanked.
@@ -819,20 +819,20 @@ Used to configure the Dislplay Blanking Mode, which determines whether the Displ
 
     - **Display Configuration - Blanking Signal Debounce Delay** - to specify the time that is used to debounce the signal specified by the Managed Configuration **Display Configuration - Blanking Signal** before using it to activate automatic Blanking
 
-### Display Configuration - Stay Awake
+### Stay Awake
 Used to configure whether the Display stays awake (prevent automatic time out and turn off) when the device is connected to external power.
 
 - When a value of ***Off*** is chosen, the Display does NOT stay awake and the Display automatically turns off even when the device is connected to external power.
 
 - When a value of ***On*** is chosen, the Display stays awake and does not automatically time out and turn off when the device is connected to external power.
 
-### Display Configuration - Blanking Mode Signal
+### Blanking Mode Signal
 Used to select the Signal that is used to trigger automatic Display Blanking and should be specified only if the value ***Blank When Triggered by Signal*** is chosen for the Managed Configuration **Display Configuration - Blanking Mode**. 
 
-### Display Configuration - Blanking Mode Signal Polarity
+### Blanking Mode Signal Polarity
 Used to select the Polarity of the Signal that is used to trigger automatic Dislplay Blanking and should be specified only if the value ***Blank When Triggered by Signal*** is chosen for the Managed Configuration **Display Configuration - Blanking Mode**. 
 
-### Display Configuration - Blanking Mode Signal Debounce Delay
+### Blanking Mode Signal Debounce Delay
 Used to select the Debounce Delay that is used for the Signal that is used to trigger automatic Dislplay Blanking and should be specified only if the value ***Blank When Triggered by Signal*** is chosen for the Managed Configuration **Display Configuration - Blanking Mode**. 
 
 -----
@@ -1140,7 +1140,12 @@ Used to configure whether the Device User should be allowed to control the Mode 
 ### Mode
 Used to configure the mode used to perform Firmware Over The Air (FOTA) operations on a Zebra Android device.
 
-- When the Mode value ***Manual*** is chosen, some or all of the additional Managed Configurations **Firmware Over The Air Configuration - Mode Manual Action**, **Firmware Over The Air Configuration - Mode Manual Action Enterprise Reset SUW Bypass**, **Firmware Over The Air Configuration - Mode Manual Action OS Upgrade Suppress Reboot**, **Firmware Over The Air Configuration - Mode Manual Action OS Update/Upgrade/Downgrade File**, and **Firmware Over The Air Configuration - Mode Manual Action Verify Manifest File** might need to be specified.
+- When the Mode value ***Manual*** is chosen, some or all of the the following Managed Configurations might need to be specified: 
+* **Mode Manual Action**
+* **Mode Manual Action Enterprise Reset SUW Bypass**
+* **Mode Manual Action OS Upgrade Suppress Reboot**
+* **Mode Manual Action OS Update/Upgrade/Downgrade File**
+* **Mode Manual Action Verify Manifest File**
 
 - When the Mode value ***Automatic*** is chosen, no additional Managed Configurations must be specified. 
 

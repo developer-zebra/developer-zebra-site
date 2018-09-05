@@ -914,19 +914,22 @@ Used to configure whether the Enterprise Keyboard on a Zebra Android device show
 
 - When a value of ***On*** is chosen, this feature is turned on (enabled) and is available for entering data using the Enterprise Keyboard.
 
-### Show Symbol TabUsed to configure whether the Enterprise Keyboard on a Zebra Android device shows the symbol tab to allow selection of the special symbols keyboard.
+### Show Symbol Tab
+Used to configure whether the Enterprise Keyboard on a Zebra Android device shows the symbol tab to allow selection of the special symbols keyboard.
 
 - When a value of ***Off*** is chosen, this feature is turned off (disabled) and is not available for entering data using the Enterprise Keyboard.
 
 - When a value of ***On*** is chosen, this feature is turned on (enabled) is available for entering data using the Enterprise Keyboard.
 
-### Show Voice Input KeyUsed to configure whether the Enterprise Keyboard on a Zebra Android device shows a key to invoke voice input (if supported).
+### Show Voice Input Key
+Used to configure whether the Enterprise Keyboard on a Zebra Android device shows a key to invoke voice input (if supported).
 
 - When a value of ***Off*** is chosen, this feature is turned off (disabled) and is not available for entering data using the Enterprise Keyboard.
 
 - When a value of ***On*** is chosen, this feature is turned on (enabled) and is available for entering data using the Enterprise Keyboard.
 
-### Preferred TabUsed to configure the preferred tab selects by default by Enterprise Keyboard on a Zebra Android device when textual data is being entered.
+### Preferred Tab
+Used to configure the preferred tab selects by default by Enterprise Keyboard on a Zebra Android device when textual data is being entered.
 
 - If the value ***Numeric*** is chosen, Enterprise Keyboard selects the Numeric tab by default when textual data is being entered.
 
@@ -936,19 +939,22 @@ Used to configure whether the Enterprise Keyboard on a Zebra Android device show
 
 - If the value ***Scan*** is chosen, Enterprise Keyboard shows the Scan tab by default when textual data is being entered.
 
-### Suggest Contact NamesUsed to configure whether the Enterprise Keyboard on a Zebra Android device showing contact name suggestions while typing based on past actions is turned on (enabled) or turned off (disabled).
+### Suggest Contact Names
+Used to configure whether the Enterprise Keyboard on a Zebra Android device showing contact name suggestions while typing based on past actions is turned on (enabled) or turned off (disabled).
 
 - When a value of ***Off*** is chosen, contact name suggestions is turned off (disabled) and is not available for entering data using the Enterprise Keyboard.
 
 - When a value of ***On*** is chosen, contact name suggestions is turned on (enabled) and is available for entering data using the Enterprise Keyboard.
 
-### Suggest Misspelling CorrectionsUsed to configure whether the Enterprise Keyboard on a Zebra Android device showing suggestions for corrections of misspelled words while typing is turned on (enabled) or turned off (disabled).
+### Suggest Misspelling Corrections
+Used to configure whether the Enterprise Keyboard on a Zebra Android device showing suggestions for corrections of misspelled words while typing is turned on (enabled) or turned off (disabled).
 
 - When a value of ***Off*** is chosen, correction suggestions is turned off (disabled) and is not available for use in entering data using the Enterprise Keyboard.
 
 - When a value of ***On*** is chosen, correction suggestions is turned on (enabled) and is available for entering data using the Enterprise Keyboard.
 
-### Pop-up on KeypressUsed to configure whether the Enterprise Keyboard on a Zebra Android device has key pop-up on each keypress turned on (enabled) or turned off (disabled) wherein a visible indication that the key was pressed occurs.
+### Pop-up on Keypress
+Used to configure whether the Enterprise Keyboard on a Zebra Android device has key pop-up on each keypress turned on (enabled) or turned off (disabled) wherein a visible indication that the key was pressed occurs.
 
 - When a value of ***Off*** is chosen, this feature is turned off (disabled), preventing Enterprise Keyboard from showing key pop-ups.
 

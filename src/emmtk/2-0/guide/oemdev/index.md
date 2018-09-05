@@ -203,7 +203,7 @@ The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (e.g
 This Managed Configuration allows an EMM or other tool that is consuming the OemConfig Schema to determine the UI Revision of that Schema that is being used.
 
 The UI Revision is expressed in the form of a simple integer value (e.g. 3). 
-- The value changes when there are changes to the Schema do not affect the Managed Configurations supported by OemConfig, but only affect the UI that may be generated based on that Schema.
+- The value changes when there are changes to the Schema do not affect the Managed Configurations supported by OemConfig, but only affect the UI that might be generated based on that Schema.
 - Examples of cosmetic changes that might be indicated using this Managed Configuration include changes in the _Title_ or _Description_ of Managed Configuration or changes to the textual values displayed for a pull-down list of choices.
 - See the Managed Configuration **Schema Contract Version** for more information about changes that affect the Contract Version.
 
@@ -2368,7 +2368,7 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 This Managed Configuration allows an Administrator using an EMM to perform an Action to perform adjust various security features on a Zebra Android device.
 
-The value of this Managed Configuration specifies an Action value and depending on the Action value chosen, one or more additional Managed Configurations MAY also be required to provide additional information:
+The value of this Managed Configuration specifies an Action value and depending on the Action value chosen, one or more additional Managed Configurations MIGHT also be required to provide additional information:
 
 - When the Action value ***Add Key*** is chosen, the additional Managed Configuration **Security Configuration - Action Add Key Name** MUST be specified to provide the name of the key to be added and the additional Managed Configuration **Security Configuration - Action Add Key Value** MUST be specified to provide the value of the key to be added.
 
@@ -2764,7 +2764,7 @@ If no text label is specified for an *Audio Stream*, the *Factory Preset* defaul
 
 ##### Volume UI Configuration - Action Add Profile Stream Icon
 
-This Managed Configuration allows an Administrator using an EMM to specify the icon to be displayed for a single *Audio Stream* that is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+This Managed Configuration allows an Administrator using an EMM to specify the icon for display on a single *Audio Stream* that is included as part of a new *Audio UI Profile* and is specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 The icon might be changed for an *Audio Stream* because it is used for some purpose(s) other than the one identified by the default text label. Changing the icon to something more representative of the actual purpose(s) for which the *Audio Stream* is used can make the Zebra Volume Control behavior more intuitive for the Device User.
 
@@ -2775,7 +2775,7 @@ If no icon is specified for an *Audio Stream*, the *Factory Preset* default icon
 
 ##### Volume UI Configuration - Action Add Profile Stream Visible
 
-This Managed Configuration allows an Administrator using an EMM to specify whether a single *Audio Stream* is visible to the Device User within the *Zebra Volume Control* when it is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+This Managed Configuration allows an Administrator using an EMM to specify whether a single *Audio Stream* is visible to the Device User within the *Zebra Volume Control* when it is included as part of a new *Audio UI Profile* and is specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 If an *Audio Stream* is made invisible for an *Audio UI Profile*, the *Zebra Volume Control* is not present on ANY UI for the Device User to control the volume of that *Audio Stream*. The result is functionally equivalent to omitting the *Audio Stream* from the *Audio UI Profile*. This can be useful as a means to temporarily disable an *Audio Stream* that avoids the need to remove and restore its entire definition. 
 
@@ -3201,7 +3201,7 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 This Managed Configuration allows an Administrator using an EMM to configure the Power State of the WWAN adapter.
 
-A given device may or may not support a WWAN adapter. An attempt to configure the WWAN adapter on a device that does not have one results in an error. 
+A given device might or might not support a WWAN adapter. An attempt to configure the WWAN adapter on a device that does not have one results in an error. 
 
 ### Wireless WAN Configuration - Background Data
 
@@ -3225,9 +3225,9 @@ This Managed Configuration allows an Administrator using an EMM to configure the
 
 This Managed Configuration allows an Administrator using an EMM to configure SIM card slot that is used by the WWAN adapter.
 
-A given device may or may not support a WWAN adapter. An attempt to configure the WWAN adapter on a device that does not have one results in an error. 
-A given device may have a limited number of SIM card slots. An attempt to configure the WWAN adapter to use an unsupported SIM card slot results in an error.
-A given device may support a given SIM car slot, but that SIM car slot may not contain a SIM card. An attempt to configure the WWAN adapter to use a supported but unpopulated SIM card slot results in an error.
+A given device might or might not support a WWAN adapter. An attempt to configure the WWAN adapter on a device that does not have one results in an error. 
+A given device might have a limited number of SIM card slots. An attempt to configure the WWAN adapter to use an unsupported SIM card slot results in an error.
+A given device might support a given SIM car slot, but that SIM car slot might not contain a SIM card. An attempt to configure the WWAN adapter to use a supported but unpopulated SIM card slot results in an error.
 
 - When a value of ***Slot 1*** is chosen, the WWAN adapter attempts to use the SIM card slot designated as Slot 1.
 
@@ -3348,7 +3348,7 @@ This Managed Configuration allows an Administrator using an EMM to perform an Ac
 
 - If the value ***Return All Licenses*** is chosen, all licenses previously activated from a given *License Server* is returned, allowing them to be re-allocated for use on other Zebra Android devices. The additional Managed Configurations **Zebra Licensing Configuration - License Action Return All Licenses Server Type** and **Zebra Licensing Configuration - License Action Return All Licenses Server Type Friendly Name** MUST be specified to define how the licenses were acquired and therefore to identify which licenses should be returned and how they should be returned.
 
-- If the value ***Refresh License*** is chosen, a previously activated license is refreshed, updating anything that may have changed, such as its expiration date, capabilities, etc. The additional Managed Configuration **Zebra Licensing Configuration - License Action Refresh License AID Value** MUST be specified to identify the license to be refreshed.
+- If the value ***Refresh License*** is chosen, a previously activated license is refreshed, updating anything that might have changed, such as its expiration date, capabilities, etc. The additional Managed Configuration **Zebra Licensing Configuration - License Action Refresh License AID Value** MUST be specified to identify the license to be refreshed.
 
 - If the value ***Delete Server*** is chosen, a previously defined *Custom Server*, along with all licenses allocated through that *Custom Server*, is deleted. The additional Managed Configuration **Zebra Licensing Configuration - License Action Delete Server Friendly Name** MUST be specified to provide the *Friendly Name* that identifies the *Custom Server* to be deleted. 
 
@@ -3358,7 +3358,7 @@ This Managed Configuration allows an Administrator using an EMM to provide the m
 
 - If the value ***From Server Standard*** is chosen, the license is activated from a Standard Server and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Standard Class** MUST be specified to identify the class of Standard Server through which the license is activated and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server AID Value** MUST be specified identify the license to be activated.
 
-- If the value ***From Server Custom*** is chose, the license is activated from a Custom Server and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom Class** MUST be specified to identify the class of Custom Server through which the license is activated and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server AID Value** MUST be specified identify the license to be activated. In addition, the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL** MAY need to be specified, depending on the value chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom Class**.
+- If the value ***From Server Custom*** is chose, the license is activated from a Custom Server and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom Class** MUST be specified to identify the class of Custom Server through which the license is activated and the additional Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server AID Value** MUST be specified identify the license to be activated. In addition, the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom URL** MIGHT need to be specified, depending on the value chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Server Custom Class**.
 
 - If the value ***From Local File*** is chosen, the license is activated from a license file stored in the device file system and the additional Managed Configurations **Zebra Licensing Configuration - License Action Activate License Method From Local File Path and Name** and **Zebra Licensing Configuration - License Action Activate License Method From Local File Source Server Class** MUST be specified to identify the license file and the class of Server from which the license file was acquired. 
 

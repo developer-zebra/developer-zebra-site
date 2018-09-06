@@ -66,32 +66,32 @@ This section describes Managed Configurations that are used internally by an EMM
 
 ### Schema Package Name
 
-This Managed Configuration allows an EMM solution or other tool that is consuming the OemConfig Schema to determine the Package Name of the Package that implements that Schema.
+Allows an EMM solution or other tool that is consuming the OemConfig Schema to determine the Package Name of the Package that implements that Schema.
 
 * The Zebra Schema is published by the OemConfig package. Therefore, if the Schema is obtained from that package through the Android system, the package name of that package is already known.
 * If the Schema for OemConfig is obtained in some other way, such as by download or direct import, this Managed Configuration can be used as a confirmation mechanism and/or to determine the package to which Managed Configurations created using this Schema should be sent.
 
 ### Schema Contract Version
 
-This Managed Configuration allows an EMM solution or other tool that is consuming the OemConfig Schema to determine the Contract Version being used by that Schema. The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (i.e. 1.5). 
+Allows an EMM solution or other tool that is consuming the OemConfig Schema to determine the Contract Version being used by that Schema. The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (i.e. "1.5"). 
 
 * The value of _&lt;major&gt;_ changes when there is significant change in the Managed Configurations supported by OemConfig, such as when a change of Android version enables major new functionality.
 * The value of _&lt;minor&gt;_ changes when there is some less significant change in the Managed Configurations supported by OemConfig, such as when one or a few additional Managed Configurations are added.
-* Neither value value changes if changes to the Schema do not affect the Managed Configurations supported by OemConfig, such as when changes are purely cosmetic.
+* Neither value changes if modifications to the Schema do not affect the Managed Configurations supported by OemConfig, such as for cosmetic changes.
 * See the Managed Configuration **Schema UI Revision** for more information about cosmetic changes that do not affect the Contract Version.
 
 ### Schema UI Revision
 
-This Managed Configuration allows an EMM solution or other tool that is consuming the OemConfig Schema to determine the UI Revision of that Schema that is being used.
+Allows an EMM solution or other tool that is consuming the OemConfig Schema to determine the UI Revision of the Schema being used.
 
-The UI Revision is expressed in the form of a simple integer value (i.e. 3). 
-* The value changes when there are changes to the Schema do not affect the Managed Configurations supported by OemConfig, but only affect the UI that might be generated based on that Schema.
-* Examples of cosmetic changes that might be indicated using this Managed Configuration include changes in the _Title_ or _Description_ of Managed Configuration or changes to the textual values displayed for a pull-down list of choices.
+The UI Revision is expressed in the form of a simple integer value (i.e. "3"). 
+* The value changes when there are changes to the Schema do not affect the Managed Configurations supported by OemConfig, but affect only the UI that might be generated based on that Schema.
+* Examples of cosmetic changes that might be indicated using this Managed Configuration include changes in the _Title_ or _Description_ of Managed Configurations or changes to the textual values displayed for a pull-down list of choices.
 * See the Managed Configuration **Schema Contract Version** for more information about changes that affect the Contract Version.
 
 ### Schema Variant
 
-This Managed Configuration allows an EMM solution or other tool that is consuming the OemConfig Schema to determine the Variant of that Schema that is being used.
+Allows an EMM solution or other tool that is consuming the OemConfig Schema to determine the Variant of that Schema that is being used.
 
 The Schema Variant is expressed in the form of an identifying string and could have a variety of possible values. 
 * By definition, all Schemas that have the same values for the Managed Configurations **Schema Package Name** and **Schema Contract Version** should be considered to implement subsets of the Master Schema associated by those two values.
@@ -102,7 +102,7 @@ The Schema Variant is expressed in the form of an identifying string and could h
 
 ### Transaction ID
 
-This Managed Configuration allows an EMM to specify a Transaction ID that identifies a collection of configurations that can be performed by submitting a collection of Managed Configurations in a Bundle to OemConfig for processing on a Zebra Android device.
+Allows an EMM to specify a Transaction ID that identifies a collection of configurations that can be performed by submitting a collection of Managed Configurations in a Bundle to OemConfig for processing on a Zebra Android device.
 
 OemConfig uses the Transaction ID value specified in this Managed Configuration to differentiate transactions submitted over time.
 * OemConfig processes Managed Configurations in a Bundle submitted to OemConfig if the Transaction ID is set to a different value than the value previously set.
@@ -114,7 +114,7 @@ OemConfig uses the Transaction ID value specified in this Managed Configuration 
 
 ### Transaction Result Intent Type
 
-This Managed Configuration allows an EMM to request OemConfig to send a notification of the completion of a transaction by sending a Transaction Result Intent when it has finished processing the transaction.
+Allows an EMM to request OemConfig to send a notification of the completion of a transaction by sending a Transaction Result Intent when it has finished processing the transaction.
 
 If sending a Transaction Result Intent is desired, this Managed Configuration MUST be set to indicate the type of intent to be sent.
 * ***startActivity***- an EMM Activity is notified of the completion of the transaction by sending an intent using the Android method _Context.startActivity()_.
@@ -128,40 +128,40 @@ The Transaction ID value specified in the Managed Configuration **Transaction ID
 
 ### Transaction Result Intent Action
 
-This Managed Configuration allows an EMM to request that OemConfig specify an Intent Action when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
+Allows an EMM to request that OemConfig specify an Intent Action when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
 
 Which specifying an Intent Action is not mandatory when sending a Transaction Result Intent, it is generally a good practice to do so to help the receive of the intent differentiate it from other intents it might receive. 
 
 ### Transaction Result Intent Component
 
-This Managed Configuration allows an EMM to request that OemConfig specify a Component when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
+Allows an EMM to request that OemConfig specify a Component when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
 
 While specifying a Component is not mandatory when sending a Transaction Result Intent, it is generally a good practice to do so since it can help ensure that the intent is sent to the right receiver.
 * Since broadcast intents are sent globally, they cannot be directed to a specific receiver. As a result, a Component should only be specified when the value chosen for the Managed Configuration **Transaction Result Intent Type** is ***startActivity*** or ***startService***.
 
 ### Transaction Result Intent Extra Name
 
-This Managed Configuration allows an EMM to request that OemConfig attach a String Extra whose, Extra Name is specified, to the Transaction Result Intent when it has finished processing of the transaction.
+Allows an EMM to request that OemConfig attach a String Extra whose, Extra Name is specified, to the Transaction Result Intent when it has finished processing of the transaction.
 
 Specifying a String Extra is optional when sending a Transaction Result Intent, although it might be useful to do so since it can help ensure that the receiver of the intent can differentiate it from other intents that it might receive.
 * When an Extra Name is specified using this Managed Configuration, it is mandatory that an Extra Value also be specified using the Managed Configuration ***Transaction Result Intent Extra Value***.
 
 ### Transaction Result Intent Extra Value
 
-This Managed Configuration allows an EMM to request that OemConfig attach a String Extra, whose Extra Value is specified, to the Transaction Result Intent when it has finished processing of the transaction.
+Allows an EMM to request that OemConfig attach a String Extra, whose Extra Value is specified, to the Transaction Result Intent when it has finished processing of the transaction.
 
 Specifying a String Extra is optional when sending a Transaction Result Intent, although it might be useful to do so since it can help ensure that the receiver of the intent can differentiate it from other intents that it might receive.
 * When an Extra Value is specified using this Managed Configuration, it is mandatory that an Extra Name also be specified using the Managed Configuration ***Transaction Result Intent Extra Name***. 
 
 ### Transaction Steps
 
-This Managed Configuration allows an EMM to enable an Administrator to defined a sequence of steps that perform configuration of various configurations and to organize those steps into a single transaction to be performed on a Zebra Android device.
+Allows an EMM to enable an Administrator to defined a sequence of steps that perform configuration of various configurations and to organize those steps into a single transaction  performed on a Zebra Android device.
 
 Any number of transaction steps can be included within a transaction and the individual transactions steps is executed in the order they appear within this Managed Configuration. 
 
 #### Transaction Step
 
-This Managed Configuration allows an EMM to enable an Administrator to specify a single transaction step that defines one or more configurations to be performed on a Zebra Android device as part of a transaction.
+Allows an EMM to enable an Administrator to specify a single transaction step that defines one or more configurations  performed on a Zebra Android device as part of a transaction.
 
 Multiple configurations of different types can optionally be defined as part of a single transaction step, but an Administrator CANNOT control the order or execution of such configurations within a given step.
 
@@ -175,7 +175,7 @@ The following section **Transaction Step Level** describes the Managed Configura
 
 ## Transaction Step Level
 
-This section describes Managed Configurations that allow an Administrator using an EMM to define the configuration to be performed as part of a step within a transaction, to describe the step, and to define how errors that occur during the step is handled. 
+This section describes Managed Configurations that allow an Administrator using an EMM to define the configuration  performed as part of a step within a transaction, to describe the step, and to define how errors that occur during the step is handled. 
 
 ### Transaction Step Explanation
 Used to specify optional explanatory text that describes the purpose or intended behavior of a transaction step.
@@ -277,24 +277,23 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 Used to perform an Action to enable or disable a single built-in System Application on a Zebra Android device.
 
 All built-in System Applications are enabled by default on Zebra Android devices.
-Enabling a built-in System Application allows it to be freely launched, either by the Device User or programmatically by other Applications.
-Disabling a built-in System Application prevents it from being launched, either by the Device User or programmatically by other Applications.
+Enabling a built-in System Application allows it to be freely launched, either by the Device User or programmatically by other Applications. Disabling a built-in System Application prevents it from being launched, either by the Device User or programmatically by other Applications.
 
 Since a built-in System Application is built-in, it cannot be uninstalled from a device, even if its use is not desired.
 To prevent the use of a built-in System Application, it can be disabled and its use prevented while remaining installed.
 
 The value of this Managed Configuration specifies an Action value of ***Enable*** or ***Disable***.
-Depending on the Action value chosen, one of the following Managed Configurations must also be specified to provide the package name of the built-in System Application that is to be enabled or disabled.
+Depending on the Action value chosen, one of the following Managed Configurations also must be specified to provide the package name of the built-in System Application being enabled or disabled.
 
-* ***Enable***- the Managed Configuration **Blacklist Configuration - Action Allow System Package** must be used to specify the package name that identifies the built-in System Application to be enabled.
+* ***Enable***- the Managed Configuration **Blacklist Configuration - Action Allow System Package** must be used to specify the package name that identifies the built-in System Application being enabled.
 
-* ***Disable***- the Managed Configuration **Blacklist Configuration - Action Disallow System Package** must be used to specify the package name that identifies the built-in System Application to be disabled.
+* ***Disable***- the Managed Configuration **Blacklist Configuration - Action Disallow System Package** must be used to specify the package name that identifies the built-in System Application being disabled.
 
 ### Allow System Package Name
-Used to specify a package name to identify a built-in System Application to be ***Enabled*** and should be specified only if the Action value ***Enable*** is chosen for the Managed Configuration **Blacklist Configuration - Action**.
+Used to specify a package name to identify a built-in System Application being ***Enabled*** and should be specified only if the Action value ***Enable*** is chosen for the Managed Configuration **Blacklist Configuration - Action**.
 
 ### Disallow System Package Name
-Used to specify a package name to identify a built-in System Application to be ***Disabled*** and should be specified only if the Action value ***Disable*** is chosen for the Managed Configuration **Blacklist Configuration - Action**. 
+Used to specify a package name to identify a built-in System Application being ***Disabled*** and should be specified only if the Action value ***Disable*** is chosen for the Managed Configuration **Blacklist Configuration - Action**. 
 
 -----
 
@@ -349,37 +348,37 @@ Depending on the Action value chosen, one of the following Managed Configuration
 
 * ***Add*** is chosen:
 
-    - The Managed Configuration **Bluetooth Configuration - Action Add Rule Name** MUST be used to specify the name of the new rule to be added.
+    - The Managed Configuration **Bluetooth Configuration - Action Add Rule Name** MUST be used to specify the name of the new rule being added.
 
     - At least ONE of the Managed Configurations **Bluetooth Configuration - Action Add Rule Device Class** or **Bluetooth Configuration - Action Add Rule Device Upper Address Part** MUST be used to specify the criteria that the new rule uses to determine which new Bluetooth Pairings is allowed.
 
 * ***Remove***- at least ONE of the Managed Configurations **Bluetooth Configuration - Action Remove Rule Name**, **Bluetooth Configuration - Action Remove Rule Device Class**, or **Bluetooth Configuration - Action Remove Rule Device Upper Address Part** MUST be used to specify the information that is used to determine which rule or rules, which have matching information, is removed. 
 
 ### Action Add Rule Name
-Used to specify a name for a new rule to be added to the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Add*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**. 
+Used to specify a name for a new rule being added to the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Add*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**. 
 
 ### Action Add Rule Device Class
-Used to specify the *Device Class* for a new rule to be added to the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Add*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
+Used to specify the *Device Class* for a new rule being added to the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Add*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
 
 When a *Device Class* is specified for a rule, Bluetooth *Auto-Pairing* automatically completes new Bluetooth Pairings for Bluetooth devices that have the specified *Device Class*. 
 
 ### Action Add Rule Device Upper Address Part
-Used to specify the *Device Upper Address Part* for a new rule to be added to the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Add*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
+Used to specify the *Device Upper Address Part* for a new rule being added to the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Add*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
 
 When a *Device Upper Address Part* is specified for a rule, Bluetooth *Auto-Pairing* automatically completes new Bluetooth Pairings for Bluetooth devices that have the specified *Device Upper Address Part* in the upper part of their *Bluetooth Address*. 
 
 ### Action Remove Rule Name
-Used to specify the name of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Remove*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
+Used to specify the name of an existing rule being removed from the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Remove*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
 
 Any existing rule that has the specified name is removed. 
 
 ### Action Remove Rule Device Class
-Used to specify the *Device Class* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Remove*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
+Used to specify the *Device Class* of an existing rule being removed from the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Remove*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
 
 Any existing rule or rules that have the specified *Device Class* is removed. 
 
 ### Action Remove Rule Device Upper Address Part
-Used to specify the *Device Upper Address Part* of an existing rule to be removed from the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Remove*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
+Used to specify the *Device Upper Address Part* of an existing rule being removed from the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Remove*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
 
 Any existing rule or rules that have the specified *Device Upper Address Part* is removed. 
 
@@ -471,7 +470,7 @@ Note that either fixed or removable storage are supported, but the specified pat
 ### Storage Time to Live
 Used to configure a timeout value, the expiration of which causes the storing of Bug Reports in the device to automatically cease.
 
-* ***Never***- when Zebra Extended Bug Reporting is configured to store Bug Reports in the device, using Managed Configurations in the group **Bug Reporting Configuration - Store in Device Detail**, Bug Reports continues to be stored in the device until the configuration is explicitly changed again.
+* ***Never***- when Zebra Extended Bug Reporting is configured to store Bug Reports in the device, using Managed Configurations in the group **Bug Reporting Configuration - Store in Device Detail**, Bug Reports continues being stored in the device until the configuration is explicitly changed again.
 
 * ***Any other value***- at the time it is configured to store Bug Reports in the device, using Managed Configurations in the group **Bug Reporting Configuration - Store in Device Detail**, Zebra Extended Bug Reporting starts a timer from the specified timeout value. When the timer expires, Zebra Extended Bug Reporting ceases storing Bug Reports in the device until the configuration is explicitly changed again. 
 
@@ -489,7 +488,7 @@ Used to configure whether Zebra Extended Bug Reporting should automatically send
 ### Send Via Email Detail SMTP Host
 Used to configure the address or host name of the SMTP (email) Server through which emails is sent to deliver generated Bug Reports, and should be specified only if the value ***On*** is chosen for Managed Configuration **Bug Reporting Configuration - Send Via Email Detail State**.
 
-Note that the Administrator must have access to an email account on the selected SMTP Server and must specify details of that account through additional Managed Configurations within the same group to enable Zebra Extended Bug Reporting to send emails through that SMTP Server. In addition, the Administrator must have access to a valid email account to use as the destination of the emails, which is NOT required to be on the same SMTP Server, and must specify details of the email address of that account through an additional Managed Configuration within the same group, to enable Zebra Extended Bug Reporting to send the emails to that destination.
+Note that the Administrator must have access to an email account on the selected SMTP Server and must specify details of that account through additional Managed Configurations within the same group to enable Zebra Extended Bug Reporting to send emails through that SMTP Server. In addition, the Administrator must have access to a valid email account to use as the destination of the emails, which is NOT required on the same SMTP Server, and must specify details of the email address of that account through an additional Managed Configuration within the same group, to enable Zebra Extended Bug Reporting to send the emails to that destination.
 
 ### Send Via Email Detail SMTP Port
 Used to configure the TCP port number of the SMTP (email) Server through which emails is sent to deliver generated Bug Reports, and should be specified if only if the Managed Configuration **Bug Reporting Configuration - Send Via Email Detail SMTP Host** is specified. 
@@ -991,7 +990,7 @@ Used to remap the behavior the Enterprise Keyboard on a Zebra Android as it pert
 **Possible values**:
 
 * A single character value (i.e. the letter "A" or the symbol "@") causes that character value to be sent as the behavior for the remapped key.
-* A hexadecimal value in the format ***uXXXXXX*** (i.e. ***u000001***) causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
+* A hexadecimal value in the format ***uXXXXXX*** (i.e. "***u000001***") causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
 * The value ***EMOJI*** causes the remapped key to switch to the EMOJI keyboard.
 
 ### Remap Numeric P1
@@ -1000,7 +999,7 @@ Used to remap the behavior the Enterprise Keyboard on a Zebra Android device as 
 **Possible values**:
 
 * A single character value (i.e. the letter "A" or the symbol "@") causes that character value to be sent as the behavior for the remapped key.
-* A hexadecimal value in the format ***uXXXXXX*** (i.e. ***u000001***) causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
+* A hexadecimal value in the format ***uXXXXXX*** (i.e. "***u000001***") causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
 * The value ***EMOJI*** causes the remapped key to switch to the EMOJI keyboard.
 
 ### Remap Numeric P2
@@ -1009,7 +1008,7 @@ Used to remap the behavior the Enterprise Keyboard on a Zebra Android device as 
 **Possible values**:
 
 * A single character value (i.e. the letter "A" or the symbol "@") causes that character value to be sent as the behavior for the remapped key.
-* A hexadecimal value in the format ***uXXXXXX*** (i.e. ***u000001***) causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
+* A hexadecimal value in the format ***uXXXXXX*** (i.e. "***u000001***") causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
 * The value ***EMOJI*** causes the remapped key to switch to the EMOJI keyboard.
 
 ### Remap Numeric P3
@@ -1018,7 +1017,7 @@ Used to remap the behavior the Enterprise Keyboard on a Zebra Android device as 
 **Possible values**:
 
 * A single character value (i.e. the letter "A" or the symbol "@") causes that character value to be sent as the behavior for the remapped key.
-* A hexadecimal value in the format ***uXXXXXX*** (i.e. ***u000001***) causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
+* A hexadecimal value in the format ***uXXXXXX*** (i.e. "***u000001***") causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
 * The value ***EMOJI*** causes the remapped key to switch to the EMOJI keyboard.
 
 ### Remap Numeric P4
@@ -1027,7 +1026,7 @@ Used to remap the behavior the Enterprise Keyboard on a Zebra Android device as 
 **Possible values**:
 
 * A single character value (i.e. the letter "A" or the symbol "@") causes that character value to be sent as the behavior for the remapped key.
-* A hexadecimal value in the format ***uXXXXXX*** (i.e. ***u000001***) causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
+* A hexadecimal value in the format ***uXXXXXX*** (i.e. "***u000001***") causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
 * The value ***EMOJI*** causes the remapped key to switch to the EMOJI keyboard.
 
 ### Remap Symbol P1
@@ -1036,7 +1035,7 @@ Used to remap the behavior the Enterprise Keyboard on a Zebra Android device as 
 **Possible values**:
 
 * A single character value (i.e. the letter "A" or the symbol "@") causes that character value to be sent as the behavior for the remapped key.
-* A hexadecimal value in the format ***uXXXXXX*** (i.e. ***u000001***) causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
+* A hexadecimal value in the format ***uXXXXXX*** (i.e. "***u000001***") causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
 * The value ***EMOJI*** causes the remapped key to switch to the EMOJI keyboard.
 
 -----
@@ -1350,15 +1349,12 @@ Used to configure whether the on-screen Navigation Bar is displayed, uses screen
 Used to configure the package name of the default launcher application. This would typically be used when installing an new launcher (home screen) application as a replacement for the default Android launcher.
 
 ### Locale
-Used to configure the *Locale* to be used on a Zebra Android device.
+Used to configure the *Locale* to be used on a Zebra Android device. A *Locale* is typically specified by selecting a *Language* (i.e. English) and optionally a *Region* (i.e. the United States). This Managed Configuration uses values that combine a *Language* and optionally a *Region* into a single identifier.
 
-A *Locale* is typically specified by selecting a *Language* (i.e. English) and optionally a *Region* (i.e. the United States).
+**Notes**: 
+* When only a *Language* is specified, the identifier is the name of the *Language* (i.e. CHINA).
 
-This Managed Configuration uses values which combine a *Language* and optionally a *Region* into a single identifier.
-
-* When only a *Language* is to be specified, the identifier is the name of the *Language* (i.e. CHINA).
-
-* When both a *Language* and a *Region* are to be specified, the identifier is the name of the *Region* followed by the name of the *Language*, separated by an underscore (i.e. CANADA_FRENCH).
+* When a *Language* and a *Region* are both specified, the identifier is the name of the *Region* followed by the name of the *Language*, separated by an underscore (i.e. CANADA_FRENCH).
 
 ### Network Notification Pop-up
 Used to configure whether the Network Notification Pop-up is presented to inform the Device User that their network might be monitored.
@@ -1499,7 +1495,7 @@ Used to specify the type of behavior that is performed when a specified key is p
 
 * ***Send Key Code***- the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active is to send a specified key code. This allows for "classic keyboard remapping" where the behavior of a key is changed to be the behavior of some other key, which might or might not be present on the physical keyboard. The additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Key Code** MUST also be specified to provide the key code that is sent.
 
-* ***Send Trigger***- the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active is to send a trigger signal. Trigger signals might be used to initiate various activities, such as barcode scanning, RFID reading, push to talk, etc. The additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Trigger** MUST also be specified to select which trigger signal is sent,
+* ***Send Trigger***- the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active is to send a trigger signal. Trigger signals might be used to initiate various activities, such as barcode scanning, RFID reading, push to talk, etc. The additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Trigger** MUST also be specified to select which trigger signal is sent.
 
 * ***Launch Application***- the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active is to launch an application. The additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Launch Application Name** MUST also be specified to provide the "friendly name" of the application to be launched. Note that this is NOT the Android Package Name. To launch an application by its Android Package Name, the value ***Send Intent*** should be used.
 
@@ -1590,7 +1586,7 @@ It is not mandatory to specify the Android Package Name when sending an Android 
 
 **Notes**: 
 * When an Android Package Name is specified, the intent becomes an Explicit Intent and the intent can ONLY be sent to an application or service with that Package Name and no other. This can increase security and is often used when the intent being sent requires any sensitive data. It is generally mandatory to specify the additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Class** whenever a Package Name is specified, since an Explicit Intent is always sent to an Android Component, which is identified by a Package Name and a Class within that Package.
-* When no Android Package Name is specified, the intent becomes an Implicit Intent and the intent might be sent to any application or service that has registered its ability to handle that intent. This can increase flexibility and is often used when the intent being sent requires no sensitive data and when it might be desirable to dynamically control which application or service is ultimately invoked to handle that intent.
+* When no Android Package Name is specified, the intent becomes an Implicit Intent and the intent might be sent to any application or service that has registered its ability to handle that intent. This can increase flexibility, and is often used when the intent being sent requires no sensitive data, and when it might be desirable to dynamically control which application or service is ultimately invoked to handle that intent.
 
 ### Action Add Mapping Behavior Type Send Intent Class
 Used to specify the Class identifying a component within an application or service to invoke when the value ***Send Intent*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type** and should be specified only if the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Package Name** is specified. 
@@ -1603,7 +1599,7 @@ Whether the intended recipient of the intent expects a URI to be specified as pa
 ### Action Add Mapping Behavior Type Send Intent Flags
 Used to specify intent flags to be set for the intent to be sent. 
 
-Intent flags control how the intent is handled by Android. Some intent flags are specific to the type of component that is invoked by the Intent (i.e. activity vs service).
+Intent flags control how the intent is handled by Android. Some intent flags are specific to the type of component that is invoked by the Intent (i.e. activity vs. service).
 Whether certain intent flags are needed to produce the desired result when the intended recipient of the intent is invoked is up to that recipient and/or the definition of the intent that recipient is designed to consume.
 Intent flags must be specified as a hexadecimal value with the appropriate bits set for any flag or flags desired.
 Consult the Android documentation to translate intent flag names, when needed, into their appropriate hexadecimal values.
@@ -1815,9 +1811,9 @@ Used to configure which RFID tags should be operated upon by the RFID module dur
 
 * ***Query applies to all tags***- when the RFID module performs a *Query Operation*, it considers all RFID tags that are currently visible to the RFID module.
 
-* ***Query applies to tags with SL de-asserted***- when the RFID module performs a *Query Operation*, it considers only those RFID tags that are currently visible to the RFID module AND that have SL flag de-asserted (i.e tags for which the SL flag has NOT been set using the Select command).
+* ***Query applies to tags with SL de-asserted***- when the RFID module performs a *Query Operation*, it considers only those RFID tags that are currently visible to the RFID module AND that have SL flag de-asserted (i.e. tags for which the SL flag has NOT been set using the Select command).
 
-* ***Query applies to tags with SL asserted***- when the RFID module performs a *Query Operation*, it considers only those RFID tags that are currently visible to the RFID module AND that have SL flag asserted (i.e tags for which the SL flag HAS been set using the Select command).
+* ***Query applies to tags with SL asserted***- when the RFID module performs a *Query Operation*, it considers only those RFID tags that are currently visible to the RFID module AND that have SL flag asserted (i.e. tags for which the SL flag HAS been set using the Select command).
 
 ### Query Session
 Used to configure which *Session* should be used by the RFID module to access RFID tags during a *Query Operation*.
@@ -2164,7 +2160,7 @@ Used to configure a list of additional folders polled when the value ***On*** is
 
 ### Send Externally Detected Threat Message
 
-This Managed Configuration allows an application to signal the fact that it has detected the occurrence of an externally detected threat. This is generally relevant only if the ***Externally Detected*** threat is configured to be detected, since any signaling of an externally detected threat is otherwise ignored.
+Allows an application to signal the fact that it has detected the occurrence of an externally detected threat. This is generally relevant only if the ***Externally Detected*** threat is configured to be detected, since any signaling of an externally detected threat is otherwise ignored.
 
 Managed Configurations can be applied only by an application that is the Device Owner or by an application to which the Device Owner has explicitly delegated the ability to apply Managed Configurations. If the ***Externally Detected*** threat has been configured to be detected, any application that is allowed to apply Managed Configurations could watch for anything it considered a threat and use this Managed Configuration to signal the occurrence of that threat. On receiving the signal, Threat Management performs whatever countermeasures were configured to mitigate that threat. 
 
@@ -2779,7 +2775,7 @@ Used to provide a *Friendly Name* for a Custom Server through which a Zebra-issu
 A *Friendly Name* is kept for each Custom Server used to acquire licenses and is used when later operating on such licenses to identify the Custom Server through which a license was acquired and through which it must be refreshed, returned, etc. The *Friendly Name* also is used to identify a Custom Server to be deleted. 
 
 ### License Action Activate License Method From Local File Path and Name
-Used to provide the local path and file name of a license file in the device file system from a which a Zebra-issued license is activated on a Zebra Android device and should be specified only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Local File*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method**. The Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Local File Source Server Class** MUST also be specified to identify the class of Server from which the license file was acquired, which could impact how it is processed. 
+Used to provide the local path and file name of a license file in the device file system from which a Zebra-issued license is activated on a Zebra Android device and should be specified only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Local File*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method**. The Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Local File Source Server Class** MUST also be specified to identify the class of Server from which the license file was acquired, which could impact how it is processed. 
 
 ### License Action Activate License Method From Local File Source Server Class
 Used to provide the class of Server from which the license file to be activated was acquired and should be specified only if the value ***Activate License*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action** and the value ***From Local File*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method** and the Managed Configuration **Zebra Licensing Configuration - License Action Activate License Method From Local File Path and Name** is specified. 

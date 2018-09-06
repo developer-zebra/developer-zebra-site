@@ -22,6 +22,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 6.8 -** Support for ADF settings: 
  * **New ADF_RULE bundle** with Action, Device, Decoder and Label_ID sub-bundles
  * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
+* **DataWedge 6.9 -** Added support for Voice plugin
 
 ### Function Prototype
 
@@ -59,6 +60,7 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
 **PLUGIN_NAME** [String]: Name of the Plug-in to configure:
  * **BARCODE** input
  * **SERIAL** input
+ * **VOICE** input
  * **INTENT** output
  * **KEYSTROKE** output
  * **BDF** (basic data formatting) processing
@@ -91,6 +93,20 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
  * `serial_parity` [string] - NONE, ODD, EVEN, MARK or SPACE
  * `serial_stopbits` [string] - 1 or 2
  * `serial_flow` [string] - FLOW_NONE, FLOW_RTS_CTS or FLOW_XON_XOFF
+
+* **VOICE -** takes values as indicated below: 
+<br>
+ * `voice_input_enabled` [string] - true/false
+ * `voice_data_capture_start_phrase` [string] - start (default value)
+ * `voice_data_capture_end_phrase` [string] - [blank] (default value)
+ * `voice_end_detection_timeout` [string] - 0 - 30
+ * `voice_tab_command` [string] - true/false
+ * `voice_enter_command` [string] - true/false
+ * `voice_data_type` [string] - Any, Alpha, Numeric
+ * `voice_start_phrase_waiting_tone` [string] - true/false
+ * `voice_data_capture_waiting_tone` [string] - true/false
+ * `voice_validation_window` [string] - true/false
+ * `voice_offline_speech` [string] - true/false
 
 
 * **INTENT -** takes values as indicated below: 

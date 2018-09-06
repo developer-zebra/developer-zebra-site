@@ -24,6 +24,8 @@ automenu:
           url: ../input/serial
         - title: SimulScan
           url: ../input/simulscan
+        - title: Voice
+          url: ../input/voice
     - title: Processing
       items:
         - title: Advanced Data Formatting (ADF)

@@ -53,8 +53,8 @@ bundle array within another bundle
 Key diff's in schema you'll see in oemconfig and here's what they mean to you 
 **maybe a <u>screenshot</u> of McTool showing how a part of the schema is displayed**
 
-*  Differences in Schema from others
-*  Nested Bundles
+* Differences in Schema from others
+* Nested Bundles
 
 Oemconfig and schema is in every Oreo device (except some of the earliest) including Hawkeye, **all** N devices have it. 
 
@@ -66,15 +66,15 @@ This section describes Managed Configurations that are used internally by an EMM
 
 ### Schema Package Name
 
-This Managed Configuration allows an EMM or other tool that is consuming the OemConfig Schema to determine the Package Name of the Package that implements that Schema.
-*  Since the Schema is published by the OemConfig package, if the Schema is obtained from that package by an EMM or tool through the Android system, the package name of that package is already known.
-*  But if the Schema for OemConfig is obtained by an EMM or tool some other way, such as by directly importing a Schema file, this Managed Configuration can be used as a confirmation and/or to determine the package to which Managed Configurations created using this Schema should be sent.
+This Managed Configuration allows an EMM solution or other tool that is consuming the OemConfig Schema to determine the Package Name of the Package that implements that Schema.
+
+* The Zebra Schema is published by the OemConfig package. Therefore, if the Schema is obtained from that package through the Android system, the package name of that package is already known.
+* If the Schema for OemConfig is obtained in some other way, such as by download or direct import, this Managed Configuration can be used as a confirmation mechanism and/or to determine the package to which Managed Configurations created using this Schema should be sent.
 
 ### Schema Contract Version
 
-This Managed Configuration allows an EMM or other tool that is consuming the OemConfig Schema to determine the Contract Version of that Schema that is being used.
+This Managed Configuration allows an EMM solution or other tool that is consuming the OemConfig Schema to determine the Contract Version being used by that Schema. The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (i.e. 1.5). 
 
-The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (i.e. 1.5). 
 * The value of _&lt;major&gt;_ changes when there is significant change in the Managed Configurations supported by OemConfig, such as when a change of Android version enables major new functionality.
 * The value of _&lt;minor&gt;_ changes when there is some less significant change in the Managed Configurations supported by OemConfig, such as when one or a few additional Managed Configurations are added.
 * Neither value value changes if changes to the Schema do not affect the Managed Configurations supported by OemConfig, such as when changes are purely cosmetic.
@@ -82,21 +82,21 @@ The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (i.e
 
 ### Schema UI Revision
 
-This Managed Configuration allows an EMM or other tool that is consuming the OemConfig Schema to determine the UI Revision of that Schema that is being used.
+This Managed Configuration allows an EMM solution or other tool that is consuming the OemConfig Schema to determine the UI Revision of that Schema that is being used.
 
 The UI Revision is expressed in the form of a simple integer value (i.e. 3). 
-*  The value changes when there are changes to the Schema do not affect the Managed Configurations supported by OemConfig, but only affect the UI that might be generated based on that Schema.
-*  Examples of cosmetic changes that might be indicated using this Managed Configuration include changes in the _Title_ or _Description_ of Managed Configuration or changes to the textual values displayed for a pull-down list of choices.
-*  See the Managed Configuration **Schema Contract Version** for more information about changes that affect the Contract Version.
+* The value changes when there are changes to the Schema do not affect the Managed Configurations supported by OemConfig, but only affect the UI that might be generated based on that Schema.
+* Examples of cosmetic changes that might be indicated using this Managed Configuration include changes in the _Title_ or _Description_ of Managed Configuration or changes to the textual values displayed for a pull-down list of choices.
+* See the Managed Configuration **Schema Contract Version** for more information about changes that affect the Contract Version.
 
 ### Schema Variant
 
-This Managed Configuration allows an EMM or other tool that is consuming the OemConfig Schema to determine the Variant of that Schema that is being used.
+This Managed Configuration allows an EMM solution or other tool that is consuming the OemConfig Schema to determine the Variant of that Schema that is being used.
 
 The Schema Variant is expressed in the form of an identifying string and could have a variety of possible values. 
-*  By definition, all Schemas that have the same values for the Managed Configurations **Schema Package Name** and **Schema Contract Version** should be considered to implement subsets of the Master Schema associated by those two values.
-*  The Master Schema can be identified by a Schema Variant value of ***Master***.
-*  All other Schema Variant values indicates various subsets of that Master Schema and those values is generally chosen to identify the class of Zebra Android devices that implement that subset of Managed Configurations, for example:
+* By definition, all Schemas that have the same values for the Managed Configurations **Schema Package Name** and **Schema Contract Version** should be considered to implement subsets of the Master Schema associated by those two values.
+* The Master Schema can be identified by a Schema Variant value of ***Master***.
+* All other Schema Variant values indicates various subsets of that Master Schema and those values is generally chosen to identify the class of Zebra Android devices that implement that subset of Managed Configurations, for example:
     * The Schema Variant value ***Value Tier N*** might indicate the subset of Managed Configurations supported on Value Tier Zebra Android devices running Android Nougat.
     * The Schema Variant value ***Premium N-V1*** might indicate the subset of Managed Configurations supported on Premium Zebra Android devices running Android Nougat and that implement the V1 feature set.
 
@@ -105,12 +105,12 @@ The Schema Variant is expressed in the form of an identifying string and could h
 This Managed Configuration allows an EMM to specify a Transaction ID that identifies a collection of configurations that can be performed by submitting a collection of Managed Configurations in a Bundle to OemConfig for processing on a Zebra Android device.
 
 OemConfig uses the Transaction ID value specified in this Managed Configuration to differentiate transactions submitted over time.
-*  OemConfig processes Managed Configurations in a Bundle submitted to OemConfig if the Transaction ID is set to a different value than the value previously set.
-*  The Transaction ID used can be any string value that is convenient for the EMM to use to identify the transaction.
-*  It is expected that a suitably different Transaction ID value is created by the EMM each time a new collection of Managed Configurations is created in accordance with the OemConfig Schema.
-*  While a Transaction ID value does not need to be unique, it should be different from any prior value recently used.
-*  When creating and storing collections of Managed Configurations for long term use, it would be best practice to create truly unique values, such as by generating a GUID.
-*  If the EMM requests notification of the completion of a transaction, the Transaction ID is attached to the Transaction Result Intent to identify the transaction.
+* OemConfig processes Managed Configurations in a Bundle submitted to OemConfig if the Transaction ID is set to a different value than the value previously set.
+* The Transaction ID used can be any string value that is convenient for the EMM to use to identify the transaction.
+* It is expected that a suitably different Transaction ID value is created by the EMM each time a new collection of Managed Configurations is created in accordance with the OemConfig Schema.
+* While a Transaction ID value does not need to be unique, it should be different from any prior value recently used.
+* When creating and storing collections of Managed Configurations for long term use, it would be best practice to create truly unique values, such as by generating a GUID.
+* If the EMM requests notification of the completion of a transaction, the Transaction ID is attached to the Transaction Result Intent to identify the transaction.
 
 ### Transaction Result Intent Type
 
@@ -137,21 +137,21 @@ Which specifying an Intent Action is not mandatory when sending a Transaction Re
 This Managed Configuration allows an EMM to request that OemConfig specify a Component when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
 
 While specifying a Component is not mandatory when sending a Transaction Result Intent, it is generally a good practice to do so since it can help ensure that the intent is sent to the right receiver.
-*  Since broadcast intents are sent globally, they cannot be directed to a specific receiver. As a result, a Component should only be specified when the value chosen for the Managed Configuration **Transaction Result Intent Type** is ***startActivity*** or ***startService***.
+* Since broadcast intents are sent globally, they cannot be directed to a specific receiver. As a result, a Component should only be specified when the value chosen for the Managed Configuration **Transaction Result Intent Type** is ***startActivity*** or ***startService***.
 
 ### Transaction Result Intent Extra Name
 
 This Managed Configuration allows an EMM to request that OemConfig attach a String Extra whose, Extra Name is specified, to the Transaction Result Intent when it has finished processing of the transaction.
 
 Specifying a String Extra is optional when sending a Transaction Result Intent, although it might be useful to do so since it can help ensure that the receiver of the intent can differentiate it from other intents that it might receive.
-*  When an Extra Name is specified using this Managed Configuration, it is mandatory that an Extra Value also be specified using the Managed Configuration ***Transaction Result Intent Extra Value***.
+* When an Extra Name is specified using this Managed Configuration, it is mandatory that an Extra Value also be specified using the Managed Configuration ***Transaction Result Intent Extra Value***.
 
 ### Transaction Result Intent Extra Value
 
 This Managed Configuration allows an EMM to request that OemConfig attach a String Extra, whose Extra Value is specified, to the Transaction Result Intent when it has finished processing of the transaction.
 
 Specifying a String Extra is optional when sending a Transaction Result Intent, although it might be useful to do so since it can help ensure that the receiver of the intent can differentiate it from other intents that it might receive.
-*  When an Extra Value is specified using this Managed Configuration, it is mandatory that an Extra Name also be specified using the Managed Configuration ***Transaction Result Intent Extra Name***. 
+* When an Extra Value is specified using this Managed Configuration, it is mandatory that an Extra Name also be specified using the Managed Configuration ***Transaction Result Intent Extra Name***. 
 
 ### Transaction Steps
 
@@ -165,9 +165,9 @@ This Managed Configuration allows an EMM to enable an Administrator to specify a
 
 Multiple configurations of different types can optionally be defined as part of a single transaction step, but an Administrator CANNOT control the order or execution of such configurations within a given step.
 
-*  The system executes multiple configurations within the same step in an order designed to maximize the chance that all configurations can be successfully executed.
+* The system executes multiple configurations within the same step in an order designed to maximize the chance that all configurations can be successfully executed.
 
-*  If an Administrator needs to tightly control the order of relative execution of various configurations, they should be included into different transaction steps so their order can be controlled by ordering those steps within the transaction.
+* If an Administrator needs to tightly control the order of relative execution of various configurations, they should be included into different transaction steps so their order can be controlled by ordering those steps within the transaction.
 
 The following section **Transaction Step Level** describes the Managed Configurations that are available for an Administrator to use to define the configurations that can be perform as a part of a transaction step. 
 
@@ -191,9 +191,9 @@ By default, execution continues with the next transaction step once execution of
 
 A decision to override this default behavior can be made independently for each step within a transaction by supplying an Error Mode value:
 
-*  An Error Mode value of ***Continue*** indicates that any errors that occur during the execution of the current transaction step should NOT terminate execution of subsequent steps in the same transaction. Execution thus always continues with the next transaction step once execution of the current step is completed.
+* An Error Mode value of ***Continue*** indicates that any errors that occur during the execution of the current transaction step should NOT terminate execution of subsequent steps in the same transaction. Execution thus always continues with the next transaction step once execution of the current step is completed.
 
-*  An Error Mode value of ***Stop*** indicates that any errors that occur during the execution of the current transaction step should terminate execution of subsequent steps in the same transaction. Execution continues with the next transaction step only if execution of the current step completes with NO errors. 
+* An Error Mode value of ***Stop*** indicates that any errors that occur during the execution of the current transaction step should terminate execution of subsequent steps in the same transaction. Execution continues with the next transaction step only if execution of the current step completes with NO errors. 
 
 -----
 
@@ -1009,7 +1009,7 @@ Used to remap the behavior the Enterprise Keyboard on a Zebra Android device as 
 **Possible values**:
 
 * A single character value (i.e. the letter "A" or the symbol "@") causes that character value to be sent as the behavior for the remapped key.
-*  A hexadecimal value in the format ***uXXXXXX*** (i.e. ***u000001***) causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
+* A hexadecimal value in the format ***uXXXXXX*** (i.e. ***u000001***) causes the specified key code to be sent as the behavior for the remapped key. [Allowable values](https://developer.android.com/reference/android/view/KeyEvent).
 * The value ***EMOJI*** causes the remapped key to switch to the EMOJI keyboard.
 
 ### Remap Numeric P3
@@ -1171,7 +1171,7 @@ Used to specify the path and file name of an OS Update or Patch image file, whic
 ### Mode Manual Action Verify Manifest File
 Used to specify the path and file name of a Manifest file, which must already exist at the specified location in the device file system, to be used to verify support on a Zebra Android device and should be specified only if the Action value ***Verify Manifest*** is chosen for the Managed Configuration **Firmware Over The Air Configuration - Action**. 
 
-* ----
+-----
 
 ## GPRS Configuration
 
@@ -1184,12 +1184,25 @@ The value of this Managed Configuration specifies one of the following actions:
 
 * ***AddApn***- adds a new APN or overwrites an existing APN of the same name.<br> 
 Related Managed Configuration(s) that might be required for this Action: 
- * **GPRS Configuration - Action Add APN Name** (required) to specify the name of the new APN to be added or of the existing APN to be replaced. 
- In addition, some or all of the following Managed Configurations MUST also be specified to provide the APN definition: **GPRS Configuration - Action Add APN Replace If Existing**,**GPRS Configuration - Action Add APN Make Default**,**GPRS Configuration - Action Add APN Access Point**,**GPRS Configuration - Action Add APN User Name**,**GPRS Configuration - Action Add APN Password**,**GPRS Configuration - Action Add APN Port**,**GPRS Configuration - Action Add APN Proxy**,**GPRS Configuration - Action Add APN MMS Port**,**GPRS Configuration - Action Add APN MMS Proxy**,**GPRS Configuration - Action Add APN Server**,**GPRS Configuration - Action Add APN MMSC**,**GPRS Configuration - Action Add APN Type**,**GPRS Configuration - Action Add APN MCC**,**GPRS Configuration - Action Add APN MNC**.
+ * **Action Add APN Name** <u>required</u> to specify the name of the new APN to be added or of the existing APN to be replaced. 
+ * **Add APN Replace If Existing**
+ * **Add APN Make Default**
+ * **Add APN Access Point**
+ * **Add APN User Name**
+ * **Add APN Password**
+ * **Add APN Port**
+ * **Add APN Proxy**
+ * **Add APN MMS Port**
+ * **Add APN MMS Proxy**
+ * **Add APN Server**
+ * **Add APN MMSC**
+ * **Add APN Type**
+ * **Add APN MCC**
+ * **Add APN MNC**
 
-* ***RemoveApn***- removes an existing APN. The additional Managed Configuration **GPRS Configuration - Action Remove APN Name** MUST also be specified to provide the name of the APN to be removed.
+* ***RemoveApn***- removes the APN specified in the Managed Configuration **Action Remove APN Name**. 
 
-* ***RemoveAllApns***- all existing APNs are removed. No additional Managed Configuration must be specified. 
+* ***RemoveAllApns***- removes all existing APNs on the device. 
 
 ### Action Add APN Name
 Used to provide the name of an APN to be added when the value chosen for the Managed Configuration **GPRS Configuration - Action** is ***AddApn***. 
@@ -1343,9 +1356,9 @@ A *Locale* is typically specified by selecting a *Language* (i.e. English) and o
 
 This Managed Configuration uses values which combine a *Language* and optionally a *Region* into a single identifier.
 
-*  When only a *Language* is to be specified, the identifier is the name of the *Language* (i.e. CHINA).
+* When only a *Language* is to be specified, the identifier is the name of the *Language* (i.e. CHINA).
 
-*  When both a *Language* and a *Region* are to be specified, the identifier is the name of the *Region* followed by the name of the *Language*, separated by an underscore (i.e. CANADA_FRENCH).
+* When both a *Language* and a *Region* are to be specified, the identifier is the name of the *Region* followed by the name of the *Language*, separated by an underscore (i.e. CANADA_FRENCH).
 
 ### Network Notification Pop-up
 Used to configure whether the Network Notification Pop-up is presented to inform the Device User that their network might be monitored.
@@ -1367,9 +1380,9 @@ Used to configure whether the Device User is presented with the option to contro
 ### Show Pairing Pop-up
 Used to configure whether a New Pairing Pop-up is presented when an unpaired peripheral device attempts to establish a new Bluetooth pairing with a Zebra Android device.
 
-*  This option has no effect on existing pairings.
-*  This option does not prevent new pairings that are initiated from the device to the peripheral.
-*  This option does not prevent new pairings from being established based on configured Silent Pairing rules.
+* This option has no effect on existing pairings.
+* This option does not prevent new pairings that are initiated from the device to the peripheral.
+* This option does not prevent new pairings from being established based on configured Silent Pairing rules.
 
 ### Show Virtual Keyboard when Physical Keyboard is Active
 Used to configure whether the Virtual Keyboard is shown when the Physical Keyboard is Active.
@@ -1624,9 +1637,9 @@ Used to perform an Action to control the Power to the device.
 
 The value of this Managed Configuration specifies one of the following Action values
 
-*  ***Sleep*** causes the device to enter go to Sleep (i.e. enter Suspend Mode).
+* ***Sleep*** causes the device to enter go to Sleep (i.e. enter Suspend Mode).
 
-*  ***Reboot*** causes the device to perform an OS Reboot (i.e. simple Reset).
+* ***Reboot*** causes the device to perform an OS Reboot (i.e. simple Reset).
 
 ### Battery Percentage Decommission Threshold
 Used to configure the percentage of remaining battery capacity below which the battery is deemed ready for decommissioning. 
@@ -1656,9 +1669,9 @@ Used to perform an Action to control the Output Power various Ports on the devic
 
 The value of this Managed Configuration specifies one of the following Action values
 
-*  ***Turn Output Power OFF*** causes the Output Power for a specified Port to be turned off.
+* ***Turn Output Power OFF*** causes the Output Power for a specified Port to be turned off.
 
-*  ***Turn Output Power ON*** causes the Output Power for a specified Port to be turned on.
+* ***Turn Output Power ON*** causes the Output Power for a specified Port to be turned on.
 
 When this Managed Configuration is specified, the additional Managed Configuration **Power Configuration - Port Select** must also be specified to identify the Port for which Output Power is controlled.
 
@@ -1667,20 +1680,20 @@ Used to specify the Port for which an Action to control the Output Power on the 
 
 The value of this Managed Configuration specifies one of the following Action values
 
-*  ***Serial Port 1*** selects the First device Serial Port as the Port for which the Output Power is turned on or off.
+* ***Serial Port 1*** selects the First device Serial Port as the Port for which the Output Power is turned on or off.
 
-*  ***Serial Port 2*** selects the Second device Serial Port as the Port for which the Output Power is turned on or off.
+* ***Serial Port 2*** selects the Second device Serial Port as the Port for which the Output Power is turned on or off.
 
-*  ***USB Port 2*** selects the Second device USB Port as the Port for which the Output Power is turned on or off.
+* ***USB Port 2*** selects the Second device USB Port as the Port for which the Output Power is turned on or off.
 
 ### Auto Power Control
 Used to control whether device power is automatically controlled.
 
 The value of this Managed Configuration specifies one of the following values
 
-*  ***Off*** causes the device power to NOT be automatically controlled.
+* ***Off*** causes the device power to NOT be automatically controlled.
 
-*  ***On*** causes device power to be automatically controlled and one or more of the following Managed Configurations also should be specified:
+* ***On*** causes device power to be automatically controlled and one or more of the following Managed Configurations also should be specified:
 
     - **Power Configuration - Auto Power Off** to specify whether/how device power is automatically turned off.
 
@@ -1691,9 +1704,9 @@ Used to configure whether/how device power is automatically turned off as part o
 
 The value of this Managed Configuration specifies one of the following values
 
-*  ***Never*** causes the device power to never automatically turn off when the ignition turns off.
+* ***Never*** causes the device power to never automatically turn off when the ignition turns off.
 
-*  ***When Ignition is Turned Off*** causes the device power to automatically turn off whenever the ignition turns off.
+* ***When Ignition is Turned Off*** causes the device power to automatically turn off whenever the ignition turns off.
 
 ### Auto Power Off Timeout
 Used to configure the timeout that is in effect before device power is automatically turned off as part of automatic power control, and should be specified only if the value ***On*** is specified for the Managed Configuration **Power Configuration - Auto Power Control** is specified and the value ***When Ignition is Turned Off*** is specified for the Managed Configuration **Power Configuration - Auto Power Off**.
@@ -1703,9 +1716,9 @@ Used to configure whether/how device power is automatically turned on as part of
 
 The value of this Managed Configuration specifies one of the following values
 
-*  ***Never*** causes the device power to never automatically turn on when the ignition turns on.
+* ***Never*** causes the device power to never automatically turn on when the ignition turns on.
 
-*  ***When Ignition is Turned On*** causes the device power to automatically turn on whenever the ignition turns on.
+* ***When Ignition is Turned On*** causes the device power to automatically turn on whenever the ignition turns on.
 
 ### Heater Action
 Used to perform an Action to control device heaters.
@@ -1714,11 +1727,11 @@ When this Managed Configuration is specified, the Managed Configuration **Power 
 
 The value of this Managed Configuration specifies one of the following Action values:
 
-*  ***Enable Heater*** causes the Heater to be turned on and off as needed based on the configured ON/OFF thresholds.
+* ***Enable Heater*** causes the Heater to be turned on and off as needed based on the configured ON/OFF thresholds.
 
-*  ***Disable Heater*** causes the Heater to be turned off and stay off, regardless of the configured ON/OFF thresholds.
+* ***Disable Heater*** causes the Heater to be turned off and stay off, regardless of the configured ON/OFF thresholds.
 
-*  ***Set ON/OFF Thresholds*** configures the ON/OFF thresholds that is used when the Heater is Enabled. When this value is specified, the following Managed Configurations must also be specified:
+* ***Set ON/OFF Thresholds*** configures the ON/OFF thresholds that is used when the Heater is Enabled. When this value is specified, the following Managed Configurations must also be specified:
 
     - **Power Configuration - Heater On Threshold** must be specified to set the threshold temperature below which the Heater is automatically turned on.
 
@@ -1729,13 +1742,13 @@ Used to specify the Heater to be affected by a specified Heater Action and shoul
 
 The value of this Managed Configuration specifies one of the following Heater values:
 
-*  ***Serial I/O*** selects the Heater that warms the Serial I/O Port of the device.
+* ***Serial I/O*** selects the Heater that warms the Serial I/O Port of the device.
 
-*  ***USB I/O*** selects the Heater that warms the USB I/O Port of the device.
+* ***USB I/O*** selects the Heater that warms the USB I/O Port of the device.
 
-*  ***Battery*** selects the Heater that warms the Battery of the device.
+* ***Battery*** selects the Heater that warms the Battery of the device.
 
-*  ***Touch Panel*** selects the Heater that warms the Touch of the device.
+* ***Touch Panel*** selects the Heater that warms the Touch of the device.
 
 ### Heater Action Off Threshold
 Used to perform configure the temperature above which a specified Heater should automatically turn OFF, and should be specified only if the value below which the specified Heater should automatically turn on is specified for the Managed Configuration **Power Configuration - Heater Action**.

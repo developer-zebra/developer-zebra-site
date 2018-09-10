@@ -28,7 +28,7 @@ Zebra partners wishing to follow the processes defined in this guide must [regis
 
 ### Sample Files
 
-To aid EMM developers, Zebra provides two fully working tools as examples of effective implementations of this process to copy or compare with their own solutions. With the exception of the schema, which describes functions specific to Zebra devices, the sample solutions are based entirely on Google's public specifications, and contain no Zebra-proprietary logic. In theory, tools built from these samples would be effective on any device that conforms to the Google specifications. 
+To aid EMM developers, Zebra provides two fully working tools as examples of effective implementations of this process to copy or compare with their own solutions. With the exception of the schema, which describes functions specific to Zebra devices, the sample solutions are based entirely on Google's public specifications, and contain no Zebra-proprietary logic. In theory, tools built from these samples are effective on any device that conforms to the Google specifications. 
 
 ### Zebra Solutions
 
@@ -45,18 +45,18 @@ To aid EMM developers, Zebra provides two fully working tools as examples of eff
 
 ## About Zebra Schema
 
-The Zebra schema is fully compliant with the depth and complexities of the Android schema design. It contains multiple layers of nested bundles, and is far richer than other schemas.
+The Zebra schema is fully compliant with the Android schema design, yet is far richer than other publicly available schemas. It contains multiple layers of nested bundles, which allow it the richness and complexity necessary for configuring Zebra devices.
 
-GREAT THING: 
-specific example UI that meets implications for a schema
-bundle array within another bundle
-Key diff's in schema you'll see in oemconfig and here's what they mean to you 
-**maybe a <u>screenshot</u> of McTool showing how a part of the schema is displayed**
+<img alt="image" style="height:350px" src="Schema_Analytics_section.png"/>
+_JSON-compliant code for user-facing Analytics settings from OemConfig schema. Click to enlarge_.
+<br>
 
-* Differences in Schema from others
-* Nested Bundles
 
-Oemconfig and schema is in every Oreo device (except some of the earliest) including Hawkeye, **all** N devices have it. 
+<img alt="image" style="height:350px" src="McTool_screen_01.png"/>
+_Rendering the Analytics section in Zebra McTool sample app. Click to enlarge_.
+<br>
+
+> The OemConfig app and schema are pre-installed in all Zebra devices running Android 7.0 Nougat and in all but the earliest releases of those running Android 8.0 Oreo.
 
 -----
 
@@ -109,7 +109,7 @@ OemConfig uses the Transaction ID value specified in this Managed Configuration 
 * The Transaction ID used can be any string value that is convenient for the EMM to use to identify the transaction.
 * It is expected that a suitably different Transaction ID value is created by the EMM each time a new collection of Managed Configurations is created in accordance with the OemConfig Schema.
 * While a Transaction ID value does not need to be unique, it should be different from any prior value recently used.
-* When creating and storing collections of Managed Configurations for long term use, it would be best practice to create truly unique values, such as by generating a GUID.
+* When creating and storing collections of Managed Configurations for long term use, it is generally considered **best practice** to create truly unique values, such as by generating a GUID.
 * If the EMM requests notification of the completion of a transaction, the Transaction ID is attached to the Transaction Result Intent to identify the transaction.
 
 ### Transaction Result Intent Type
@@ -118,11 +118,11 @@ Allows an EMM to request OemConfig to send a notification of the completion of a
 
 If sending a Transaction Result Intent is desired, this Managed Configuration MUST be set to indicate the type of intent to be sent.
 * ***startActivity***- an EMM Activity is notified of the completion of the transaction by sending an intent using the Android method _Context.startActivity()_.
-    * It is generally a best practice to specify values for one or more of the Managed Configurations **Transaction Result Intent Action**, **Transaction Result Intent Component**, or **Transaction Result Intent Extra Name** and **Transaction Result Intent Extra Value** to ensure that the intent is sent to the right Activity and/or to help differentiate the intent from others that might be sent to that Activity.
+    * It is generally considered **best practice** to specify values for one or more of the Managed Configurations **Transaction Result Intent Action**, **Transaction Result Intent Component**, or **Transaction Result Intent Extra Name** and **Transaction Result Intent Extra Value** to ensure that the intent is sent to the right Activity and/or to help differentiate the intent from others that might be sent to that Activity.
 * ***startService***- an EMM Service is notified of the completion of the transaction by sending an intent using the Android method _Context.startService()_.
-    * It is generally a best practice to specify values for one or more of the Managed Configurations **Transaction Result Intent Action**, **Transaction Result Intent Component**, or **Transaction Result Intent Extra Name** and **Transaction Result Intent Extra Value** to ensure that the intent is sent to the right Service and/or to help differentiate the intent from others that might be sent to that Service.
+    * It is generally considered **best practice** to specify values for one or more of the Managed Configurations **Transaction Result Intent Action**, **Transaction Result Intent Component**, or **Transaction Result Intent Extra Name** and **Transaction Result Intent Extra Value** to ensure that the intent is sent to the right Service and/or to help differentiate the intent from others that might be sent to that Service.
 * ***sendBroadcast***- an EMM is notified of the completion of the transaction by sending an intent using the Android method _Context.sendBroadcast()_.
-    * It is generally a best practice to specify values for one or more of the Managed Configurations **Transaction Result Intent Action** or **Transaction Result Intent Extra Name** and **Transaction Result Intent Extra Value** to help differentiate the intent from others that might be sent to the same receiver.
+    * It is generally considered **best practice** to specify values for one or more of the Managed Configurations **Transaction Result Intent Action** or **Transaction Result Intent Extra Name** and **Transaction Result Intent Extra Value** to help differentiate the intent from others that might be sent to the same receiver.
 
 The Transaction ID value specified in the Managed Configuration **Transaction ID** is attached to the Transaction Result Intent to identify the transaction for which the notification is being sent.
 
@@ -130,28 +130,33 @@ The Transaction ID value specified in the Managed Configuration **Transaction ID
 
 Allows an EMM to request that OemConfig specify an Intent Action when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
 
-Which specifying an Intent Action is not mandatory when sending a Transaction Result Intent, it is generally a good practice to do so to help the receive of the intent differentiate it from other intents it might receive. 
+#####`BEST PRACTICE`:
+While specifying an Intent Action is not required when sending a Transaction Result Intent, it is generally considered good practice to do so to help the receiver of the intent differentiate it from other intents it might receive. 
 
 ### Transaction Result Intent Component
 
 Allows an EMM to request that OemConfig specify a Component when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
 
-While specifying a Component is not mandatory when sending a Transaction Result Intent, it is generally a good practice to do so since it can help ensure that the intent is sent to the right receiver.
-* Since broadcast intents are sent globally, they cannot be directed to a specific receiver. As a result, a Component should only be specified when the value chosen for the Managed Configuration **Transaction Result Intent Type** is ***startActivity*** or ***startService***.
+#####BEST PRACTICE:
+While specifying a Component is not required when sending a Transaction Result Intent, it is generally considered good practice to do so since it can help ensure that the intent is sent to the right receiver.
+
+**NOTE**: Since broadcast intents are sent globally, they cannot be directed to a specific receiver. As a result, a Component should be specified only when the value chosen for the Managed Configuration **Transaction Result Intent Type** is ***startActivity*** or ***startService***.
 
 ### Transaction Result Intent Extra Name
 
 Allows an EMM to request that OemConfig attach a String Extra whose, Extra Name is specified, to the Transaction Result Intent when it has finished processing of the transaction.
 
 Specifying a String Extra is optional when sending a Transaction Result Intent, although it might be useful to do so since it can help ensure that the receiver of the intent can differentiate it from other intents that it might receive.
-* When an Extra Name is specified using this Managed Configuration, it is mandatory that an Extra Value also be specified using the Managed Configuration ***Transaction Result Intent Extra Value***.
+
+* When an Extra Name is specified using this Managed Configuration, it is required that an Extra Value also be specified using the Managed Configuration ***Transaction Result Intent Extra Value***.
 
 ### Transaction Result Intent Extra Value
 
 Allows an EMM to request that OemConfig attach a String Extra, whose Extra Value is specified, to the Transaction Result Intent when it has finished processing of the transaction.
 
 Specifying a String Extra is optional when sending a Transaction Result Intent, although it might be useful to do so since it can help ensure that the receiver of the intent can differentiate it from other intents that it might receive.
-* When an Extra Value is specified using this Managed Configuration, it is mandatory that an Extra Name also be specified using the Managed Configuration ***Transaction Result Intent Extra Name***. 
+
+* When an Extra Value is specified using this Managed Configuration, it is required that an Extra Name also be specified using the Managed Configuration ***Transaction Result Intent Extra Name***. 
 
 ### Transaction Steps
 
@@ -794,7 +799,7 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 ### Timeout
 Used to configure the amount of inactivity, in seconds, after which the device display screen is turned off.
 
-A given device might not support all options allowed to be specified using this Managed Configuration. In the event that the value specified is not supported on a given device, the smallest larger value that is supported is used. If no larger value is supported, the largest smaller supported value is used.
+**NOTE**: A given device might not support all options allowed to be specified using this Managed Configuration. In the event that the value specified is not supported on a specific device, the smallest larger value that is supported is used. If no larger value is supported, the largest smaller supported value is used.
 
 ### Blanking Mode
 Used to configure the Display Blanking Mode, which determines whether the Display automatically Blanks (displays nothing).
@@ -1047,35 +1052,39 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 ### Power
 Used to configure the Power State of the Ethernet adapter.
 
-A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
 
 ### Use Proxy Server
 Used to configure whether a Proxy Server should be used to access the Internet from the network accessed through the Ethernet adapter.
 
-When specifying that a Proxy Server is to be used, it is generally best practice to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+#####BEST PRACTICE:
+When specifying that a Proxy Server is to be used, it is generally considered **best practice* to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
-A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
+**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
 
 ### Proxy Server
 Used to configure the Proxy Server used to access the Internet from the network accessed through the Ethernet adapter.
 
-While it is not mandatory, it is generally best practice to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+#####BEST PRACTICE:
+While it is not required, it is generally considered **best practice** to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three values are properly synchronized.
 
-A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
+**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
 
 ### Proxy Server Port
 Used to configure the Port that is used to reach the Proxy Server to access the Internet from the network accessed through the Ethernet adapter.
 
-While it is not mandatory, it is generally best practice to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+#####BEST PRACTICE:
+While it is not required, it is generally considered **best practice** to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
-A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
+**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
 
 ### Proxy Server Bypass List
 Used to configure the Proxy Server Bypass List which specifies addresses that should bypass the Proxy Server used to access the Internet from the network accessed through the Ethernet adapter.
 
-While it is not mandatory, it is generally best practice to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+#####BEST PRACTICE:
+While it is not required, it is generally considered **best practice** to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
-A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
+**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
 
 ### IP Address Type
 Used to configure how an IP Address is assigned to the Ethernet adapter.
@@ -1084,32 +1093,32 @@ Used to configure how an IP Address is assigned to the Ethernet adapter.
 
 * ***Static (Manual)***- an IP Address for the Ethernet adapter is assigned based on the values contained in the Managed Configurations **Ethernet Configuration - IP Address**, **Ethernet Configuration - Gateway Address**, **Ethernet Configuration - Network Mask**, **Ethernet Configuration - Primary DNS**, and **Ethernet Configuration - Secondary DNS**, which MUST also be specified to supply the required values.
 
-A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
 
 ### IP Address
 Used to manually configure the IP Address to be assigned to the Ethernet adapter.
 
-A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
 
 ### Gateway Address
 Used to manually configure the Gateway Address to be assigned to the Ethernet adapter.
 
-A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
 
 ### Network Mask
 Used to manually configure the Network Mask to be assigned to the Ethernet adapter.
 
-A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
 
 ### Primary DNS
 Used to manually configure the Primary DNS Server Address to be assigned to the Ethernet adapter.
 
-A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
 
 ### Secondary DNS
 Used to manually configure the Secondary DNS Server Address to be assigned to the Ethernet adapter.
 
-A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
 
 -----
 
@@ -1228,12 +1237,12 @@ APN Identifiers are allocated by cellular carriers to identify the networks that
 ### Action Add APN User Name
 Used to specify a user name that can be used to authenticate to an APN when the value chosen for the Managed Configuration **GPRS Configuration - Action** is ***AddApn***.
 
-A network accessed through a given APN Identifier might or might not require authentication. If authentication is required, a user name is generally always required and a password MIGHT also be required. 
+**NOTE**: A network accessed through a given APN Identifier might or might not require authentication. If authentication is required, a user name is generally required and a password MIGHT also be required. 
 
 ### Action Add APN Password
 Used to specify a password that can be used to authenticate to an APN when the value chosen for the Managed Configuration **GPRS Configuration - Action** is ***AddApn***.
 
-A network accessed through a given APN Identifier might or might not require authentication. If authentication is required, a user name is generally always required and a password MIGHT also be required. 
+**NOTE**: A network accessed through a given APN Identifier might or might not require authentication. If authentication is required, a user name is generally required and a password MIGHT also be required. 
 
 ### Action Add APN Port
 Used to specify the port number of an HTTP proxy to use for all traffic over the network accessed through an APN when the value chosen for the Managed Configuration **GPRS Configuration - Action** is ***AddApn***.
@@ -1300,7 +1309,7 @@ The value of this Managed Configuration specifies one of the following actions:
 
 * ***Clear Recently Used Apps List***- the list of previously used (launched) applications is cleared. This can be used to prevent the device user from accessing previously used applications or control their behavior or configuration from the list presented when the Recent button is pressed.
 
-* ***Clear Application Cache***- the cache of a specified application is cleared. The most common use of this would be to delete cached information, such as login credentials or state, and thereby return the application to its default behavior. The use of this Action value requires that the additional Managed Configuration **General UI Configuration - Action Clear Application Cache Package** be specified 
+* ***Clear Application Cache***- the cache of a specified application is cleared. The most common use of this is to delete cached information, such as login credentials or state, and thereby return the application to its default behavior. The use of this Action value requires that the additional Managed Configuration **General UI Configuration - Action Clear Application Cache Package** be specified 
 to identify the application whose cache is to be cleared.
 
 * ***Turn On All GMS Applications***- all GMS applications that are considered "safe" to disable is enabled.
@@ -1501,7 +1510,7 @@ Used to specify the type of behavior that is performed when a specified key is p
 
 * ***Send Intent***- the behavior performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active is to send and Android Intent, which might cause any number of possible results, depending on the nature of the intent configured to be sent. Some of all of the following additional Managed Configurations MUST also be specified to define the Android Intent to be sent: **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Type**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Action**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Category**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Package Name**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Class**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Data URI**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Flags**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent MIME Type**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Extra Name**, **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Extra Value**.
 
-Sending an Android Intent provides a very flexible way to specify the behavior to be performed for a key by invoking an application or service. As such, there are many options that control the nature of the intent that is sent. It is generally recommended to fully understand the nature of the Android Intent to be sent before attempting to configure it as a key behavior. In many cases, the application or service to be invoked defines the nature of the intent is wishes to received and that definition can be used to drive the configuration.
+Sending an Android Intent provides a very flexible way to specify the behavior to be performed for a key by invoking an application or service. As such, there are many options that control the nature of the intent that is sent. Zebra recommends fully understanding the nature of the Android Intent to be sent before attempting to configure it as a key behavior. In many cases, the application or service to be invoked defines the nature of the intent it wishes to receive, and that definition can be used to drive the configuration.
 
 * ***Suppress***- NO behavior is performed when the specified key is pressed while the keyboard state associated with the specified Mapping table is active. This is equivalent to mapping the key in that state to "do nothing".
 
@@ -1572,20 +1581,20 @@ Depending on the application or service to be invoked, there is likely only one 
 ### Action Add Mapping Behavior Type Send Intent Action
 Used to specify the action value of an Android Intent to be sent to invoke an application or service when the value ***Send Intent*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type**.
 
-An action value is NOT mandatory to specify for an Android Intent. But an action value is commonly used to identify the purpose of an Android Intent. This can be especially when the application or service to be invoked supports multiple functions, in which case the action value is commonly used to identify which function to perform when invoking that application or service. Consult the documentation or developer of a given application or service to determine whether an action value is needed and, if so, which value invokes the desired behavior. 
+An action value is NOT required to specify for an Android Intent. But an action value is commonly used to identify the purpose of an Android Intent. This can be especially when the application or service to be invoked supports multiple functions, in which case the action value is commonly used to identify which function to perform when invoking that application or service. Consult the documentation or developer of a given application or service to determine whether an action value is needed and, if so, which value invokes the desired behavior. 
 
 ### Action Add Mapping Behavior Type Send Intent Category
 Used to specify the category value of an Android Intent to be sent to invoke an application or service when the value ***Send Intent*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type**.
 
-A category value is NOT mandatory to specify for an Android Intent. But a category value is commonly used to help identify the purpose of an Android Intent. This can be especially when the application or service to be invoked supports many functions, in which case many action values might be used to identify those functions and it might be useful to categorize those functions. In some cases, the same action value might be supported in more than one category. Consult the documentation or developer of a given application or service to determine whether a category value is needed and, if so, which value invokes the desired behavior. 
+A category value is NOT required to specify for an Android Intent. But a category value is commonly used to help identify the purpose of an Android Intent. This can be especially when the application or service to be invoked supports many functions, in which case many action values might be used to identify those functions and it might be useful to categorize those functions. In some cases, the same action value might be supported in more than one category. Consult the documentation or developer of a given application or service to determine whether a category value is needed and, if so, which value invokes the desired behavior. 
 
 ### Action Add Mapping Behavior Type Send Intent Package Name
 Used to specify the Android Package Name of the application or service to invoke when the value ***Send Intent*** is chosen for the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type**.
 
-It is not mandatory to specify the Android Package Name when sending an Android Intent, but is is often advisable.
+It is not required to specify the Android Package Name when sending an Android Intent, but is is often advisable.
 
 **Notes**: 
-* When an Android Package Name is specified, the intent becomes an Explicit Intent and the intent can ONLY be sent to an application or service with that Package Name and no other. This can increase security and is often used when the intent being sent requires any sensitive data. It is generally mandatory to specify the additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Class** whenever a Package Name is specified, since an Explicit Intent is always sent to an Android Component, which is identified by a Package Name and a Class within that Package.
+* When an Android Package Name is specified, the intent becomes an Explicit Intent and the intent can ONLY be sent to an application or service with that Package Name and no other. This can increase security and is often used when the intent being sent requires any sensitive data. It is generally required to specify the additional Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Class** whenever a Package Name is specified, since an Explicit Intent is always sent to an Android Component, which is identified by a Package Name and a Class within that Package.
 * When no Android Package Name is specified, the intent becomes an Implicit Intent and the intent might be sent to any application or service that has registered its ability to handle that intent. This can increase flexibility, and is often used when the intent being sent requires no sensitive data, and when it might be desirable to dynamically control which application or service is ultimately invoked to handle that intent.
 
 ### Action Add Mapping Behavior Type Send Intent Class
@@ -1607,7 +1616,7 @@ Consult the Android documentation to translate intent flag names, when needed, i
 ### Action Add Mapping Behavior Type Send Intent MIME Type
 Used to specify a Multipurpose Internet Mail Extensions (MIME) type to use when processing the intent data and should be specified only if the Managed Configuration **Key Mapping Configuration - Action Add Mapping Behavior Type Send Intent Data URI** is specified.
 
-Normally the type would be inferred from the data itself. Setting a MIME type explicitly, by using this Managed Configuration disables automatic type detection and and forces handling according to the specified type. 
+Normally the type is inferred from the data itself. Setting a MIME type explicitly, by using this Managed Configuration disables automatic type detection and and forces handling according to the specified type. 
 
 ### Action Add Mapping Behavior Type Send Intent Extra Name
 Used to specify the name of a single extra named string value to be attached to the intent to be sent.
@@ -1909,7 +1918,8 @@ When this Managed Configuration is specified, the additional Managed Configurati
 
 A key value must be a string value containing exactly 64 hexadecimal characters ("0-9" and/or "A-F" characters) that encode a 256 bit binary value for an AES encryption key.
 
-The key value can be generated in any manner desired as long as it is a 256 bit binary value and is represented as 64 hexadecimal characters, although in most cases, best practice would be to randomly generate keys to maximize their effectiveness in protecting data.
+#####BEST PRACTICE:
+The key value can be generated in any manner desired as long as it is a 256 bit binary value and is represented as 64 hexadecimal characters, although in most cases, **best practice** is to randomly generate keys to maximize their effectiveness in protecting data.
 
 ### Action Remove Key Name
 Used to specify the name of a key to be removed and should be specified only if the Action value ***Remove Key*** is chosen for the Managed Configuration **Security Configuration - Action**.
@@ -2394,8 +2404,8 @@ Used to configure the frequency *Bands* on which the WLAN subsystem operates on 
 
 This Managed Configuration supports the following values:
 
-* ***2.4GHz***- only the 2.4 Gigahertz (GHz) *Band* (used by 802.11b and 802.11g) is used.
-* ***5.0GHz***- only the 5.0 (GHz) *Band* (used by 802.11a) is used.
+* ***2.4GHz***- only the 2.4GHz *Band* (used by 802.11b and 802.11g) is used.
+* ***5.0GHz***- only the 5.0GHz *Band* (used by 802.11a) is used.
 * ***Auto***- the *Band* to be used is determined automatically. 
 
 ### Channels
@@ -2443,7 +2453,7 @@ Used to configure the Service Set Identifier (SSID) that identifies the network 
 ### Hotspot Band
 Used to configure the *Frequency Band* in which *Hotspot Mode* of the WLAN adapter operates on a Zebra Android device.
 
-* ***2.4GHz***- the *Hotspot Mode* of the WLAN adapter operates solely in the 2.4 Gigahertz (GHz) *Frequency Band*, and only devices capable of operating in that *Frequency Band* are capable of sharing the Internet connection of the Zebra Android device using *Hotspot Mode*.
+* ***2.4GHz***- the *Hotspot Mode* of the WLAN adapter operates solely in the 2.4GHz *Frequency Band*, and only devices capable of operating in that *Frequency Band* are capable of sharing the Internet connection of the Zebra Android device using *Hotspot Mode*.
 
 * ***5GHz***- the *Hotspot Mode* of the WLAN adapter operates solely in the 5.0GHz *Frequency Band*, and only devices capable of operating in that *Frequency Band* are capable of sharing the Internet connection of the Zebra Android device using *Hotspot Mode*.
 
@@ -2612,7 +2622,7 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 ### Power
 Used to configure the Power State of the WWAN adapter.
 
-A given device might or might not support a WWAN adapter. An attempt to configure the WWAN adapter on a device that does not have one results in an error. 
+**NOTE**: A given device might or might not support a WWAN adapter. An attempt to configure the WWAN adapter on a device that does not have one results in an error. 
 
 ### Background Data
 Used to configure whether WWAN data can be used by applications that are in the *Background*.
@@ -2631,9 +2641,10 @@ Used to configure the *Power State* of the WWAN adapter.
 ### SIM Card Slot
 Used to configure SIM card slot that is used by the WWAN adapter.
 
-A given device might or might not support a WWAN adapter. An attempt to configure the WWAN adapter on a device that does not have one results in an error. 
-A given device might have a limited number of SIM card slots. An attempt to configure the WWAN adapter to use an unsupported SIM card slot results in an error.
-A given device might support a given SIM car slot, but that SIM car slot might not contain a SIM card. An attempt to configure the WWAN adapter to use a supported but unpopulated SIM card slot results in an error.
+**NOTES**: 
+* A given device might or might not support a WWAN adapter. An attempt to configure the WWAN adapter on a device that does not have one results in an error. 
+* A given device might have a limited number of SIM card slots. An attempt to configure the WWAN adapter to use an unsupported SIM card slot results in an error.
+* A given device might support a given SIM card slot, but that SIM card slot might not contain a SIM card. An attempt to configure the WWAN adapter to use a supported but unpopulated SIM card slot results in an error.
 
 * ***Slot 1***- the WWAN adapter attempts to use the SIM card slot designated as Slot 1.
 

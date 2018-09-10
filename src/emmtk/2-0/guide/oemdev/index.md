@@ -130,14 +130,14 @@ The Transaction ID value specified in the Managed Configuration **Transaction ID
 
 Allows an EMM to request that OemConfig specify an Intent Action when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
 
-#####`BEST PRACTICE`:
+#####`GOOD PRACTICE`
 While specifying an Intent Action is not required when sending a Transaction Result Intent, it is generally considered good practice to do so to help the receiver of the intent differentiate it from other intents it might receive. 
 
 ### Transaction Result Intent Component
 
 Allows an EMM to request that OemConfig specify a Component when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
 
-#####BEST PRACTICE:
+#####`GOOD PRACTICE` 
 While specifying a Component is not required when sending a Transaction Result Intent, it is generally considered good practice to do so since it can help ensure that the intent is sent to the right receiver.
 
 **NOTE**: Since broadcast intents are sent globally, they cannot be directed to a specific receiver. As a result, a Component should be specified only when the value chosen for the Managed Configuration **Transaction Result Intent Type** is ***startActivity*** or ***startService***.
@@ -1057,7 +1057,7 @@ Used to configure the Power State of the Ethernet adapter.
 ### Use Proxy Server
 Used to configure whether a Proxy Server should be used to access the Internet from the network accessed through the Ethernet adapter.
 
-#####BEST PRACTICE:
+#####`GOOD PRACTICE` 
 When specifying that a Proxy Server is to be used, it is generally considered **best practice* to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
 **NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
@@ -1065,7 +1065,7 @@ When specifying that a Proxy Server is to be used, it is generally considered **
 ### Proxy Server
 Used to configure the Proxy Server used to access the Internet from the network accessed through the Ethernet adapter.
 
-#####BEST PRACTICE:
+#####`GOOD PRACTICE` 
 While it is not required, it is generally considered **best practice** to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three values are properly synchronized.
 
 **NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
@@ -1073,7 +1073,7 @@ While it is not required, it is generally considered **best practice** to specif
 ### Proxy Server Port
 Used to configure the Port that is used to reach the Proxy Server to access the Internet from the network accessed through the Ethernet adapter.
 
-#####BEST PRACTICE:
+#####`GOOD PRACTICE` 
 While it is not required, it is generally considered **best practice** to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
 **NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
@@ -1081,7 +1081,7 @@ While it is not required, it is generally considered **best practice** to specif
 ### Proxy Server Bypass List
 Used to configure the Proxy Server Bypass List which specifies addresses that should bypass the Proxy Server used to access the Internet from the network accessed through the Ethernet adapter.
 
-#####BEST PRACTICE:
+#####`GOOD PRACTICE` 
 While it is not required, it is generally considered **best practice** to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
 **NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
@@ -1918,8 +1918,7 @@ When this Managed Configuration is specified, the additional Managed Configurati
 
 A key value must be a string value containing exactly 64 hexadecimal characters ("0-9" and/or "A-F" characters) that encode a 256 bit binary value for an AES encryption key.
 
-#####BEST PRACTICE:
-The key value can be generated in any manner desired as long as it is a 256 bit binary value and is represented as 64 hexadecimal characters, although in most cases, **best practice** is to randomly generate keys to maximize their effectiveness in protecting data.
+`GOOD PRACTICE`: The key value can be generated in any manner desired as long as it is a 256 bit binary value and is represented as 64 hexadecimal characters, although in most cases, **best practice** is to randomly generate keys to maximize their effectiveness in protecting data.
 
 ### Action Remove Key Name
 Used to specify the name of a key to be removed and should be specified only if the Action value ***Remove Key*** is chosen for the Managed Configuration **Security Configuration - Action**.

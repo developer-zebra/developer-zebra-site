@@ -105,6 +105,40 @@ A document that defines functions available for interrogation and/or configurati
 
 ### Schema Package Name
 
+Allows an EMM solution or other tool consuming the OemConfig Schema to determine the Package Name of the Package that implements that Schema.
+
+* The Zebra Schema is published by the OemConfig package. Therefore, if the Schema is obtained from that package through the Android system, the package name of that package is already known.
+* If the Schema for OemConfig is obtained in some other way, such as by download or direct import, this Managed Configuration can be used as a confirmation mechanism and/or to determine the package to which Managed Configurations created using this Schema should be sent.
+
+### Schema Contract Version
+
+Allows an EMM solution or other tool consuming the OemConfig Schema to determine the Contract Version being used by that Schema. The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (i.e. "1.5"). 
+
+* The value of _&lt;major&gt;_ changes when there is significant change in the Managed Configurations supported by OemConfig, such as when a change of Android version enables major new functionality.
+* The value of _&lt;minor&gt;_ changes when there is some less significant change in the Managed Configurations supported by OemConfig, such as when one or a few additional Managed Configurations are added.
+* Neither value changes if modifications to the Schema do not affect the Managed Configurations supported by OemConfig, such as for cosmetic changes.
+* See the Managed Configuration **Schema UI Revision** for more information about cosmetic changes that do not affect the Contract Version.
+
+### Schema UI Revision
+
+Allows an EMM solution or other tool consuming the OemConfig Schema to determine the UI Revision of the Schema being used.
+
+The UI Revision is expressed in the form of a simple integer value (i.e. "3"). 
+* The value changes when there are changes to the Schema do not affect the Managed Configurations supported by OemConfig, but affect only the UI that might be generated based on that Schema.
+* Examples of cosmetic changes that might be indicated using this Managed Configuration include changes in the _Title_ or _Description_ of Managed Configurations or changes to the textual values displayed for a pull-down list of choices.
+* See the Managed Configuration **Schema Contract Version** for more information about changes that affect the Contract Version.
+
+### Schema Variant
+
+Allows an EMM solution or other tool consuming the OemConfig Schema to determine the Variant of that Schema being used.
+
+The Schema Variant is expressed in the form of an identifying string and could have a variety of possible values. 
+* By definition, all Schemas that have the same values for the Managed Configurations **Schema Package Name** and **Schema Contract Version** should be considered to implement subsets of the Master Schema associated by those two values.
+* The Master Schema can be identified by a Schema Variant value of ***Master***.
+* All other Schema Variant values indicates various subsets of that Master Schema and those values is generally chosen to identify the class of Zebra Android devices that implement that subset of Managed Configurations, for example:
+    * The Schema Variant value ***Value Tier N*** might indicate the subset of Managed Configurations supported on Value Tier Zebra Android devices running Android Nougat.
+    * The Schema Variant value ***Premium N-V1*** might indicate the subset of Managed Configurations supported on Premium Zebra Android devices running Android Nougat and that implement the V1 feature set.
+
 
 ### `schema.json`
 The document that defines functions of Zebra devices available for interrogation and/or configuration using Managed Configuration mechanisms. [Download the Zebra Schema]()(<<`GITHUB LINK TO COME`).

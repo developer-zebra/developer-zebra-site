@@ -213,7 +213,6 @@ The Schema Variant is expressed in the form of an identifying string and could h
     * The Schema Variant value ***Value Tier N*** might indicate the subset of Managed Configurations supported on Value Tier Zebra Android devices running Android Nougat.
     * The Schema Variant value ***Premium N-V1*** might indicate the subset of Managed Configurations supported on Premium Zebra Android devices running Android Nougat and that implement the V1 feature set.
 
-
 -----
 
 ## See Also

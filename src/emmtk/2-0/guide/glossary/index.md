@@ -20,6 +20,9 @@ Android Enterprise (formerly "Android for Work") is a set of APIs for configurin
 ### Android for Work (AFW)
 See Android Enterprise. 
 
+### APK
+Abbreviation for Android Package, the file format used for packaging and distributing Android applications. When referring to the APK file extension, Techdocs usually presents the term as .apk or `.apk`.
+
 ### `BundleTools.java`
 Java source code (file) developed by Zebra Technologies that converts JSON Managed Configuration objects into bundles and used to perform device-configuration actions. [Download BundleTools]()(<<`GITHUB LINK TO COME`). 
 
@@ -99,6 +102,9 @@ For more information, please refer to Zebra's [DA-to-DO Agent Migration Guide](h
 
 ### Schema
 A document that defines functions available for interrogation and/or configuration using Managed Configuration mechanisms. Schemas and Managed Configurations conform to Google-defined specifications. 
+
+### Schema Package Name
+
 
 ### `schema.json`
 The document that defines functions of Zebra devices available for interrogation and/or configuration using Managed Configuration mechanisms. [Download the Zebra Schema]()(<<`GITHUB LINK TO COME`).

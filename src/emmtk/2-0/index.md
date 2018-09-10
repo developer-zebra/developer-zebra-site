@@ -7,6 +7,8 @@ menu:
   items:
     - title: About
       url: /emmtk/2-0/guide/about
+    - title: FAQ
+      url: /emmtk/2-0/guide/faq
     - title: Migrate
       url: /emmtk/2-0/guide/migrateaedo
     - title: Enroll

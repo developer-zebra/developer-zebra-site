@@ -1,5 +1,5 @@
 ---
-title: OemConfig Development Guide
+title: OemConfig Integration Guide
 layout: guide.html
 product: EMM Toolkit
 productversion: '2.0'
@@ -39,7 +39,6 @@ To aid EMM developers, Zebra provides two fully working tools as examples of eff
 `BundleTools.java` - Java source code that converts JSON Managed Configuration objects into bundles. 
 
 > NOTE: Zebra provides no warranty or support for these sample files. 
-
 
 -----
 
@@ -130,15 +129,14 @@ The Transaction ID value specified in the Managed Configuration **Transaction ID
 
 Allows an EMM to request that OemConfig specify an Intent Action when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
 
-#####`GOOD PRACTICE`
-While specifying an Intent Action is not required when sending a Transaction Result Intent, it is generally considered good practice to do so to help the receiver of the intent differentiate it from other intents it might receive. 
+While specifying an Intent Action is not required when sending a Transaction Result Intent, it is generally considered **good practice** to do so to help the receiver of the intent differentiate it from other intents it might receive. 
 
 ### Transaction Result Intent Component
 
 Allows an EMM to request that OemConfig specify a Component when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
 
-#####`GOOD PRACTICE` 
-While specifying a Component is not required when sending a Transaction Result Intent, it is generally considered good practice to do so since it can help ensure that the intent is sent to the right receiver.
+
+While specifying a Component is not required when sending a Transaction Result Intent, it is generally considered **good practice** to do so since it can help ensure that the intent is sent to the right receiver.
 
 **NOTE**: Since broadcast intents are sent globally, they cannot be directed to a specific receiver. As a result, a Component should be specified only when the value chosen for the Managed Configuration **Transaction Result Intent Type** is ***startActivity*** or ***startService***.
 
@@ -340,7 +338,7 @@ The value of this Managed Configuration can change this default behavior:
 
 * ***On***- the default behavior is in effect and the device can silently perform Bluetooth Pairings.
 
-Note that even when the device CAN silently perform Bluetooth Pairings, it DOES NOT do so unless the Managed Configuration **Bluetooth Configuration - Action** is used to configure specific silent pairing that should occur.
+Note that even when the device CAN silently perform Bluetooth Pairings, it DOES NOT do so unless the Managed Configuration **Bluetooth Configuration - Action** is used to configure the specific silent pairing that is permitted to occur.
 
 ### Action
 Used to perform an Action to manage a list of rules that control Bluetooth *Auto-Pairing*.
@@ -357,18 +355,18 @@ Depending on the Action value chosen, one of the following Managed Configuration
 
     - At least ONE of the Managed Configurations **Bluetooth Configuration - Action Add Rule Device Class** or **Bluetooth Configuration - Action Add Rule Device Upper Address Part** MUST be used to specify the criteria that the new rule uses to determine which new Bluetooth Pairings is allowed.
 
-* ***Remove***- at least ONE of the Managed Configurations **Bluetooth Configuration - Action Remove Rule Name**, **Bluetooth Configuration - Action Remove Rule Device Class**, or **Bluetooth Configuration - Action Remove Rule Device Upper Address Part** MUST be used to specify the information that is used to determine which rule or rules, which have matching information, is removed. 
+* ***Remove***- at least ONE of the Managed Configurations **Bluetooth Configuration - Action Remove Rule Name**, **Bluetooth Configuration - Action Remove Rule Device Class**, or **Bluetooth Configuration - Action Remove Rule Device Upper Address Part** MUST be used to specify the information that is used to determine which rule or rules (with matching information) are removed. 
 
 ### Action Add Rule Name
-Used to specify a name for a new rule being added to the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Add*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**. 
+Used to specify a name for a new rule to add to the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Add*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**. 
 
 ### Action Add Rule Device Class
-Used to specify the *Device Class* for a new rule being added to the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Add*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
+Used to specify the *Device Class* for a new rule to add to the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Add*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
 
 When a *Device Class* is specified for a rule, Bluetooth *Auto-Pairing* automatically completes new Bluetooth Pairings for Bluetooth devices that have the specified *Device Class*. 
 
 ### Action Add Rule Device Upper Address Part
-Used to specify the *Device Upper Address Part* for a new rule being added to the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Add*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
+Used to specify the *Device Upper Address Part* for a new rule to add to the list of rules that control the operation of Bluetooth *Auto-Pairing* and should be specified only if the Action value ***Add*** is chosen for the Managed Configuration **Bluetooth Configuration - Action**.
 
 When a *Device Upper Address Part* is specified for a rule, Bluetooth *Auto-Pairing* automatically completes new Bluetooth Pairings for Bluetooth devices that have the specified *Device Upper Address Part* in the upper part of their *Bluetooth Address*. 
 
@@ -799,7 +797,7 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 ### Timeout
 Used to configure the amount of inactivity, in seconds, after which the device display screen is turned off.
 
-**NOTE**: A given device might not support all options allowed to be specified using this Managed Configuration. In the event that the value specified is not supported on a specific device, the smallest larger value that is supported is used. If no larger value is supported, the largest smaller supported value is used.
+**NOTE**: A given device might not support all options allowed to be specified using this Managed Configuration. If a specified value is not supported on a specific device, the smallest larger supported value is used. If no larger value is supported, the largest smaller supported value is used.
 
 ### Blanking Mode
 Used to configure the Display Blanking Mode, which determines whether the Display automatically Blanks (displays nothing).
@@ -1052,39 +1050,35 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 ### Power
 Used to configure the Power State of the Ethernet adapter.
 
-**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: Attempts to configure the Ethernet adapter on a device that does not have one results in an error.
 
 ### Use Proxy Server
 Used to configure whether a Proxy Server should be used to access the Internet from the network accessed through the Ethernet adapter.
 
-#####`GOOD PRACTICE` 
-When specifying that a Proxy Server is to be used, it is generally considered **best practice* to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
+When specifying that a Proxy Server is to be used, it is generally considered **best practice** to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
-**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
+**NOTE**: Attempts to configure the Ethernet adapter on a device that does not have one results in an error. 
 
 ### Proxy Server
 Used to configure the Proxy Server used to access the Internet from the network accessed through the Ethernet adapter.
 
-#####`GOOD PRACTICE` 
-While it is not required, it is generally considered **best practice** to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three values are properly synchronized.
+While it is not required, it is generally considered **best practice** to specify all three Managed Configurations settings: **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List**, whenever Ethernet Proxy Server configuration is performed to help ensure that all three values are properly synchronized.
 
-**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
+**NOTE**: Attempts to configure the Ethernet adapter on a device that does not have one results in an error. 
 
 ### Proxy Server Port
 Used to configure the Port that is used to reach the Proxy Server to access the Internet from the network accessed through the Ethernet adapter.
 
-#####`GOOD PRACTICE` 
 While it is not required, it is generally considered **best practice** to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
-**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
+**NOTE**: Attempts to configure the Ethernet adapter on a device that does not have one results in an error. 
 
 ### Proxy Server Bypass List
 Used to configure the Proxy Server Bypass List which specifies addresses that should bypass the Proxy Server used to access the Internet from the network accessed through the Ethernet adapter.
 
-#####`GOOD PRACTICE` 
 While it is not required, it is generally considered **best practice** to specify all three Managed Configurations **Proxy Server**, **Proxy Server Port**, and **Proxy Server Bypass List** whenever Ethernet Proxy Server configuration is performed to help ensure that all three three values are properly synchronized.
 
-**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error. 
+**NOTE**: Attempts to configure the Ethernet adapter on a device that does not have one results in an error. 
 
 ### IP Address Type
 Used to configure how an IP Address is assigned to the Ethernet adapter.
@@ -1093,32 +1087,32 @@ Used to configure how an IP Address is assigned to the Ethernet adapter.
 
 * ***Static (Manual)***- an IP Address for the Ethernet adapter is assigned based on the values contained in the Managed Configurations **Ethernet Configuration - IP Address**, **Ethernet Configuration - Gateway Address**, **Ethernet Configuration - Network Mask**, **Ethernet Configuration - Primary DNS**, and **Ethernet Configuration - Secondary DNS**, which MUST also be specified to supply the required values.
 
-**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: Attempts to configure the Ethernet adapter on a device that does not have one results in an error.
 
 ### IP Address
 Used to manually configure the IP Address to be assigned to the Ethernet adapter.
 
-**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: Attempts to configure the Ethernet adapter on a device that does not have one results in an error.
 
 ### Gateway Address
 Used to manually configure the Gateway Address to be assigned to the Ethernet adapter.
 
-**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: Attempts to configure the Ethernet adapter on a device that does not have one results in an error.
 
 ### Network Mask
 Used to manually configure the Network Mask to be assigned to the Ethernet adapter.
 
-**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: Attempts to configure the Ethernet adapter on a device that does not have one results in an error.
 
 ### Primary DNS
 Used to manually configure the Primary DNS Server Address to be assigned to the Ethernet adapter.
 
-**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: Attempts to configure the Ethernet adapter on a device that does not have one results in an error.
 
 ### Secondary DNS
 Used to manually configure the Secondary DNS Server Address to be assigned to the Ethernet adapter.
 
-**NOTE**: A given device might or might not support an Ethernet adapter. An attempt to configure the Ethernet adapter on a device that does not have one results in an error.
+**NOTE**: Attempts to configure the Ethernet adapter on a device that does not have one results in an error.
 
 -----
 
@@ -1128,7 +1122,6 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 
 ### Device User Control Mode
 Used to configure whether the Device User should be allowed to control the Mode of the Firmware Over The Air (FOTA) Client through the in-device FOTA Client UI.
-
 
 ### Mode
 Used to configure the mode used to perform Firmware Over The Air (FOTA) operations on a Zebra Android device.
@@ -1218,7 +1211,7 @@ Used to provide the name of an APN to be added when the value chosen for the Man
 ### Action Add APN Replace If Existing
 Used to configure what happens when an APN already exists with the APN name being added when the value chosen for the Managed Configuration **GPRS Configuration - Action** is ***AddApn***. 
 
-* ***Replace Existing***- if an APN with the name as specified in the Managed Configuration **GPRS Configuration - Action Add APN Name** already exists, it is replaced by the definition of the APN being added.
+* ***Replace Existing***- if an APN with the name as specified in the Managed Configuration **GPRS Configuration - Action Add APN Name** already exists, it is replaced by the APN definition being added.
 
 * ***Keep Existing***- if an APN with the name as specified in the Managed Configuration **GPRS Configuration - Action Add APN Name** already exists, it IS NOT replaced. The existing APN is preserved and the new APN IS NOT added.
 
@@ -1918,7 +1911,7 @@ When this Managed Configuration is specified, the additional Managed Configurati
 
 A key value must be a string value containing exactly 64 hexadecimal characters ("0-9" and/or "A-F" characters) that encode a 256 bit binary value for an AES encryption key.
 
-`GOOD PRACTICE`: The key value can be generated in any manner desired as long as it is a 256 bit binary value and is represented as 64 hexadecimal characters, although in most cases, **best practice** is to randomly generate keys to maximize their effectiveness in protecting data.
+The key value can be generated in any manner desired as long as it is a 256-bit binary value and is represented as 64 hexadecimal characters, although in most cases, **best practice** is to randomly generate keys to maximize their effectiveness in protecting data.
 
 ### Action Remove Key Name
 Used to specify the name of a key to be removed and should be specified only if the Action value ***Remove Key*** is chosen for the Managed Configuration **Security Configuration - Action**.
@@ -2207,27 +2200,27 @@ This Managed Configuration array allows an Administrator using an EMM to define 
 
 ## Action Add Profile Stream
 
-This Managed Configuration group allows an Administrator using an EMM to define a single *Audio Stream* included as part of a new *Audio UI Profile* being added and should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action**, as part of the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream**. 
+This Managed Configuration group allows an Administrator using an EMM to define a single *Audio Stream* included as part of a new *Audio UI Profile* being added, and should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action**, as part of the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream**. 
 
 ### Action Add Profile Stream Type
-Used to specify the type of a single *Audio Stream* included as part of a new *Audio UI Profile* being added and MUST be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**. Some or all of the additional Managed Configurations **Volume UI Configuration - Action Add Profile Stream Label**, **Volume UI Configuration - Action Add Profile Stream Icon**, **Volume UI Configuration - Action Add Profile Stream Visible**, and **Volume UI Configuration - Action Add Profile Stream Modes** should also be specified to define the characteristics of the new *Audio Stream* of the specified type that is added.
+Used to specify the type of a single *Audio Stream* included as part of a new *Audio UI Profile* being added, and MUST be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**. Some or all of the additional Managed Configurations **Volume UI Configuration - Action Add Profile Stream Label**, **Volume UI Configuration - Action Add Profile Stream Icon**, **Volume UI Configuration - Action Add Profile Stream Visible**, and **Volume UI Configuration - Action Add Profile Stream Modes** should also be specified to define the characteristics of the new *Audio Stream* of the specified type that is added.
 
-* ***Music***- the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for playback of music and other media.
+* ***Music***- the *Audio Stream* to add to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for playback of music and other media.
 
-* ***Ring***- the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for ringtones.
+* ***Ring***- the *Audio Stream* to add to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for ringtones.
 
-* ***Notification***- the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for notifications.
+* ***Notification***- the *Audio Stream* to add to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for notifications.
 
-* ***System***- the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for system sounds.
+* ***System***- the *Audio Stream* to add to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for system sounds.
 
-* ***Alarm***- the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for alarms.
+* ***Alarm***- the *Audio Stream* to add to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for alarms.
 
-* ***VoiceCall***- the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for voice calls.
+* ***VoiceCall***- the *Audio Stream* to add to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for voice calls.
 
-* ***VVS***- the *Audio Stream* being added to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for Decode Beep Vertical Volume Scale (VVS). 
+* ***VVS***- the *Audio Stream* to add to the new *Audio UI Profile* defines the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for Decode Beep Vertical Volume Scale (VVS). 
 
 ### Action Add Profile Stream Label
-Used to specify the text label to be displayed for a single *Audio Stream* included as part of a new *Audio UI Profile* being added, and might be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+Used to specify the text label displayed for a single *Audio Stream* included as part of a new *Audio UI Profile*, and might be specified within each instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 The text label might be changed for an *Audio Stream* because it is used for some purpose(s) other than those identified by the default text label. Changing the text label to something more description of the actual purpose(s) for which the *Audio Stream* is used can make the Zebra Volume Control behavior more intuitive for the Device User.
 
@@ -2249,16 +2242,16 @@ If an *Audio Stream* is made invisible for an *Audio UI Profile*, the *Zebra Vol
 
 ### Action Add Profile Stream Modes
 
-This Managed Configuration array allows an Administrator using an EMM to define the behavior of the UI for a single *Audio Stream* in one or more modes as part of a new *Audio UI Profile* being added and should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** and as part of an instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**. 
+This Managed Configuration array allows an Administrator using an EMM to define the behavior of the UI for a single *Audio Stream* in one or more modes as part of a new *Audio UI Profile* being added, and should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** and as part of an instance of the group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**. 
 
 ### Action Add Profile Stream Mode
 
-This Managed Configuration group allows an Administrator using an EMM to define the behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added. This should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+This Managed Configuration group allows an Administrator using an EMM to define the behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile*. This should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 For each *Audio Mode* defined for an *Audio Stream*, the additional Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Type** MUST be specified to identify which *Audio Mode* is defined. The additional Managed Configurations **Volume UI Configuration - Action Add Profile Stream Mode Minimum**, **Volume UI Configuration - Action Add Profile Stream Mode Maximum**, and **Volume UI Configuration - Action Add Profile Stream Mode Preset** MUST also be specified to define the lower, upper, and default (preset) volume levels for that *Audio Mode* within that *Audio Stream*. 
 
 ### Action Add Profile Stream Mode Minimum
-Used to define the minimum volume level that the UI allows the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added. This should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+Used to define the minimum volume level that the UI allows the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile*. This should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 The value must be an integer greater than 0 and less than 256, with 1 being the lowest possible volume level and 255 being the highest possible volume level.
 
@@ -2267,7 +2260,7 @@ The additional Managed Configurations **Volume UI Configuration - Action Add Pro
 The value specified for this Managed Configuration must be less than or equal to the value specified for the Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Maximum** and less than or equal to the value specified for the Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Preset**. 
 
 ### Action Add Profile Stream Mode Maximum
-Used to define the maximum volume level that the UI allows the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added and should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+Used to define the maximum volume level that the UI allows the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added, and should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 The value must be an integer that is greater than 0 and less than 256, with 1 being the lowest possible volume level and 255 being the highest possible volume level.
 
@@ -2276,7 +2269,7 @@ The additional Managed Configurations **Volume UI Configuration - Action Add Pro
 The value specified for of this Managed Configuration must be greater than or equal to the value specified for the Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Minimum** and greater than or equal to the value specified for the Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Preset**. 
 
 ### Action Add Profile Stream Mode Preset
-Used to define the preset volume level that the UI allows the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added. This should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+Used to define the preset volume level that the UI allows the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile*. This should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 The value must be an integer that is greater than 0 and less than 256, with 1 being the lowest possible volume level and 255 being the highest possible volume level.
 
@@ -2285,7 +2278,7 @@ The additional Managed Configurations **Volume UI Configuration - Action Add Pro
 The value specified for of this Managed Configuration must be greater than or equal to the value specified for the Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Minimum** and less than or equal to the value specified for the Managed Configuration **Volume UI Configuration - Action Add Profile Stream Mode Maximum**. 
 
 ### Action Add Profile Stream Mode Type
-Used to define the type of behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added. This should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
+Used to define the type of behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile*. This should be specified only if the value ***Add Profile*** is chosen for the Managed Configuration **Volume UI Configuration - Action** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Stream Modes** as an instance of the Managed Configuration group **Volume UI Configuration - Action Add Profile Stream** within the Managed Configuration array **Volume UI Configuration - Action Add Profile Streams**.
 
 If the value ***Speaker***- the *Audio Mode* is configured for the *Audio Stream* for conditions under which the *Audio Stream* is routed to the built-in device speaker.
 
@@ -2621,7 +2614,7 @@ This Managed Configuration group allows an Administrator using an EMM to configu
 ### Power
 Used to configure the Power State of the WWAN adapter.
 
-**NOTE**: A given device might or might not support a WWAN adapter. An attempt to configure the WWAN adapter on a device that does not have one results in an error. 
+**NOTE**: Attempts to configure the WWAN adapter on a device that does not have one results in an error. 
 
 ### Background Data
 Used to configure whether WWAN data can be used by applications that are in the *Background*.
@@ -2641,9 +2634,9 @@ Used to configure the *Power State* of the WWAN adapter.
 Used to configure SIM card slot that is used by the WWAN adapter.
 
 **NOTES**: 
-* A given device might or might not support a WWAN adapter. An attempt to configure the WWAN adapter on a device that does not have one results in an error. 
-* A given device might have a limited number of SIM card slots. An attempt to configure the WWAN adapter to use an unsupported SIM card slot results in an error.
-* A given device might support a given SIM card slot, but that SIM card slot might not contain a SIM card. An attempt to configure the WWAN adapter to use a supported but unpopulated SIM card slot results in an error.
+* Attempts to configure the WWAN adapter on a device that does not have one results in an error. 
+* Attempts to configure the WWAN adapter to use an unsupported SIM card slot results in an error.
+* Attempts to configure the WWAN adapter to use a supported but unpopulated SIM card slot results in an error.
 
 * ***Slot 1***- the WWAN adapter attempts to use the SIM card slot designated as Slot 1.
 
@@ -2904,6 +2897,21 @@ HOW TO GET THE SCHEMA FROM PLAYSTORE
 
 Get McTool and schema here (to be posted on GitHub):
 https://zebra.sharepoint.com/sites/converge/emc-android-platform-architect-review-board/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fsites%2Fconverge%2Femc-android-platform-architect-review-board%2FShared%20Documents%2FAFW%20Summitt%2FEMMTK&FolderCTID=0x0120003BE153D20C1D7A46B871096BD8DCCC6C&View=%7B84DDE955-0D89-4F6B-9520-5D6F33223009%7D
+
+
+<i class="fa fa-trophy" aria-hidden="true"></i>`BEST PRACTICE`
+
+<i class="fa fa-trophy" aria-hidden="true"></i>`PRACTICE`
+
+<i class="fa fa-trophy" aria-hidden="true"></i> PRACTICE 
+
+<i class="fa fa-trophy" aria-hidden="true"></i>PRACTICE 
+
+see if this code for Trophy works: &#xf091;
+
+Got it from the Font Awesome cheat sheet: 
+https://fontawesome.com/v4.7.0/cheatsheet/
+
 
 
 ----------------

@@ -30,21 +30,19 @@ Zebra partners wishing to follow the processes defined in this guide must [regis
 
 To aid EMM developers, Zebra provides two fully working tools as examples of effective implementations of this process to copy or compare with their own solutions. With the exception of the schema, which describes functions specific to Zebra devices, the sample solutions are based entirely on Google's public specifications, and contain no Zebra-proprietary logic. In theory, tools built from these samples are effective on any device that conforms to the Google specifications. 
 
-### Zebra Solutions
-
 `McTool.jar` - A Java app that presents a data-driven user interface from the contents of a schema.
 
-`Schema.json` - The Zebra-specific function definitions; source for data-driven configuration UI.
+`Schema.json` - The Zebra OemConfig schema. Contains Zebra-specific function definitions and a source for building a data-driven configuration UI. 
 
 `BundleTools.java` - Java source code that converts JSON Managed Configuration objects into bundles. 
 
-> NOTE: Zebra provides no warranty or support for these sample files. 
+> NOTE: Zebra provides no warranty or support for sample files. 
 
 -----
 
 ## About Zebra Schema
 
-The Zebra schema is fully compliant with the Android schema design, yet is far richer than other publicly available schemas. It contains multiple layers of nested bundles, which allow it the richness and complexity necessary for configuring Zebra devices.
+The Zebra schema is fully compliant with the Android schema design, yet is far richer than other publicly available schemas. It contains multiple layers of nested bundles, which provide it the richness and complexity necessary for configuring Zebra devices.
 
 <img alt="image" style="height:350px" src="Schema_Analytics_section.png"/>
 _JSON-compliant OemConfig schema showing code for Analytics UI settings. Click to enlarge_.
@@ -2815,6 +2813,17 @@ Used to provide the Activation Identifier (AID) the identifies a Zebra-issued li
 
 ### License Action Delete Server Friendly Name
 Used to provide the *Friendly Name* that identifies the *Custom Server* to be deleted, and should be specified only if the value ***Delete Server*** is chosen for the Managed Configuration **Zebra Licensing Configuration - License Action**. 
+
+-----
+
+## See Also
+
+* **[FAQ](../faq)** | Frequently asked questions and answers
+* **[EMMTK Glossary](../glossary)** | Defines terms used in the EMM Toolkit
+* **[AEDO Migration Guide](../migrateaedo)** | EMM agent migration options 
+* **[Persistence Best Practices](../persistence)** | Zebra-recommended processes for EMMs
+* **[Staging Service APIs](../api)** | Interfacing with StageNow from an EMM console
+
 
 <!--
 

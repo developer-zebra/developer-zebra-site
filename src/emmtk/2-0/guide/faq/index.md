@@ -13,7 +13,9 @@ productversion: '2.0'
 
 ## Overview
 
-Zebra OemConfig is an approach to performing administrative tasks on Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only method available that's based on publicly available specifications developed by Google and the Android community. 
+Zebra OemConfig is an approach to performing administrative tasks on Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only method available that's based on publicly available specifications developed by Google and the Android community. Below are some common questions related to OemConfig, Managed Configurations and the schemas that drive them. 
+
+Also see the [Glossary of terms](../glossary).  
 
 -----
 
@@ -165,53 +167,33 @@ A: No. The Android Managed Configurations model does not inherently provide any 
 
 -----
 
-**Q: Is there a way for an EMM to control the order in which a set of Managed Configurations created according to the Zebra OemConfig Schema are processed by the Zebra OemConfig application on a given Zebra Android device**? 
+**Q: Is there a way for an EMM to control the order in which a set of Managed Configurations <!-- created according to the Zebra OemConfig Schema -->are processed by the Zebra OemConfig application on a given Zebra Android device**? 
 
-A: Yes. The Zebra OemConfig Schema organizes Managed Configurations into Transactions and sub-divides each Transaction into a series of Steps, using a Bundle Array. This allows a set of Managed Configurations created according to the Zebra OemConfig Schema to explicitly define an order in which Zebra OemConfig should apply subsets of Managed Configurations and allows full enforcement of order dependency when required. 
-
------
-
-### Schema Package Name
-
-Allows an EMM solution or other tool consuming the OemConfig Schema to determine the Package Name of the Package that implements that Schema.
-
-* The Zebra Schema is published by the OemConfig package. Therefore, if the Schema is obtained from that package through the Android system, the package name of that package is already known.
-* If the Schema for OemConfig is obtained in some other way, such as by download or direct import, this Managed Configuration can be used as a confirmation mechanism and/or to determine the package to which Managed Configurations created using this Schema should be sent.
+A: Yes. The Zebra OemConfig Schema organizes Managed Configurations into Transactions and sub-divides each Transaction into a series of Steps using a Bundle Array. This allows a set of Managed Configurations created according to the Zebra OemConfig Schema to explicitly define an order in which Zebra OemConfig should apply subsets of Managed Configurations and allows full enforcement of order dependency when required. 
 
 -----
 
-### Schema Contract Version
+**Q: What is Schema Package Name?**
 
-Allows an EMM solution or other tool consuming the OemConfig Schema to determine the Contract Version being used by that Schema. The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (i.e. "1.5"). 
-
-* The value of _&lt;major&gt;_ changes when there is significant change in the Managed Configurations supported by OemConfig, such as when a change of Android version enables major new functionality.
-* The value of _&lt;minor&gt;_ changes when there is some less significant change in the Managed Configurations supported by OemConfig, such as when one or a few additional Managed Configurations are added.
-* Neither value changes if modifications to the Schema do not affect the Managed Configurations supported by OemConfig, such as for cosmetic changes.
-* See the Managed Configuration **Schema UI Revision** for more information about cosmetic changes that do not affect the Contract Version.
+A: The Schema Package Name is a Managed Configuration that allows an EMM solution or other tool consuming the OemConfig Schema to determine the Package Name of the Package that implements that Schema. For example, the Zebra Schema is published by the OemConfig package. Therefore, if the Schema is obtained from that package through the Android system, the package name of that package is already known and this Managed Configuration would not be required. However, if the Schema is obtained in some other way, such as by download or direct import, this Managed Configuration can be used to confirm the schema name and/or to determine the package to which Managed Configurations created using this Schema should be sent.
 
 -----
 
-### Schema UI Revision
+**Q: What is Schema Contract Version?**
 
-Allows an EMM solution or other tool consuming the OemConfig Schema to determine the UI Revision of the Schema being used.
-
-The UI Revision is expressed in the form of a simple integer value (i.e. "3"). 
-* The value changes when there are changes to the Schema do not affect the Managed Configurations supported by OemConfig, but affect only the UI that might be generated based on that Schema.
-* Examples of cosmetic changes that might be indicated using this Managed Configuration include changes in the _Title_ or _Description_ of Managed Configurations or changes to the textual values displayed for a pull-down list of choices.
-* See the Managed Configuration **Schema Contract Version** for more information about changes that affect the Contract Version.
+A: The Schema Contract Version is a Managed Configuration that allows an EMM solution or other tool consuming the OemConfig Schema to determine the Contract Version being used by that Schema. The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (i.e. "1.5"). [More info](../glossary/#schemacontractversion). 
 
 -----
 
-### Schema Variant
+**Q: What is Schema UI Revision?**
 
-Allows an EMM solution or other tool consuming the OemConfig Schema to determine the Variant of that Schema being used.
+A: The Schema UI Revision is a Managed Configuration that allows an EMM solution or other tool consuming the OemConfig Schema to determine the UI Revision of the Schema being used. [More info](../glossary/#schemauirevision). 
 
-The Schema Variant is expressed in the form of an identifying string and could have a variety of possible values. 
-* By definition, all Schemas that have the same values for the Managed Configurations **Schema Package Name** and **Schema Contract Version** should be considered to implement subsets of the Master Schema associated by those two values.
-* The Master Schema can be identified by a Schema Variant value of ***Master***.
-* All other Schema Variant values indicates various subsets of that Master Schema and those values is generally chosen to identify the class of Zebra Android devices that implement that subset of Managed Configurations, for example:
-    * The Schema Variant value ***Value Tier N*** might indicate the subset of Managed Configurations supported on Value Tier Zebra Android devices running Android Nougat.
-    * The Schema Variant value ***Premium N-V1*** might indicate the subset of Managed Configurations supported on Premium Zebra Android devices running Android Nougat and that implement the V1 feature set.
+-----
+
+**Q: What is Schema Variant?**
+
+A: The Schema Variant is a Managed Configuration that allows an EMM solution or other tool consuming the OemConfig Schema to determine the Variant of that Schema being used. The Schema Variant is expressed in the form of an identifying string and could have a variety of possible values. [More info](../glossary/#schemavariant).
 
 -----
 

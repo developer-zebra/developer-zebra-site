@@ -1,0 +1,29 @@
+---
+csp: devicecentralmgr
+title: Examples
+type: text
+order: 99
+---
+### Show "Firmware update" and "Bluetooth on/off" buttons in DeviceCentral App and allow pairing of multiple Bluetooth devices in each class.
+
+    :::XML
+    <wap-provisioningdoc>
+      <characteristic version="8.1" type="DeviceCentralMgr">
+        <parm name="FwUpdateButton" value="1" />
+        <parm name="BluetoothOnOffControl" value="1" />
+        <parm name="BluetoothPairingControl" value="2" />
+      </characteristic>
+    </wap-provisioningdoc>
+
+	
+### Hide "Firmware update" and "Bluetooth on/off" buttons in DeviceCentral App and allow pairing of multiple Bluetooth devices in each class.
+
+	:::XML
+    <wap-provisioningdoc>
+      <characteristic version="8.1" type="DeviceCentralMgr">
+        <parm name="FwUpdateButton" value="2" />
+        <parm name="BluetoothOnOffControl" value="2" />
+        <parm name="BluetoothPairingControl" value="1" />
+      </characteristic>
+    </wap-provisioningdoc>
+

@@ -6,9 +6,11 @@ productversion: '6.9'
 ---
 
 ## Overview
-Voice Input enables DataWedge to accept spoken entries as if they were keystrokes or data acquired from scanning. It uses Google speech recognition. When running, Voice Input is placed in the "waiting for start phrase state" (_see Figure 8_). Voice data capture begins after speaking the predefined "start phrase", which then changes the state to "waiting for data" (_see Figure 9_).  Voice capture stops automatically after speaking the data or after speaking an optional "end phrase", if defined.
+Voice Input enables DataWedge to accept spoken entries as if they were keystrokes or data acquired from scanning. It uses Google speech recognition. Voice data capture is beneficial in situations where barcodes have not been generated or barcode scanning is not possible, for example due to damaged barcodes or environmental factors (dust, mist, etc.)
 
-Other options available to fine-tune Voice Input capture:
+When running, Voice Input is placed in the state "waiting for start phrase" (_see Figure 8_). Voice data capture begins after speaking the predefined "start phrase", which then changes the state to "waiting for data" (_see Figure 9_).  Voice capture stops automatically after speaking the data or after speaking an optional "end phrase", if defined. The data source can be identified as voice input to process the voice data according to any application requirements. Barcode scanning and voice input can exist in the same DataWedge profile so both data capture methods may be used interchangeably.
+
+Other options available for Voice Input capture:
 * Terminate voice capture by setting a timeout value rather than using an end phrase.
 * Send a TAB character when speaking the "send tab" command.
 * Send an ENTER character when speaking the "send enter" command.

@@ -74,11 +74,11 @@ The infrastructure and processes used&ndash;usually by corporations and other bu
 ### MX 
 See Management Extensions.
 
-### Managed Configurations
+### Managed Configuration
 A method for Android apps to expose configuration options and accept settings. Through a specially designed configurable application called [OemConfig](#oemconfig), Zebra has developed a method of leveraging the extension mechanism defined in Managed Configurations (formerly “Application Restrictions”) to configure the settings of a device. 
 
 ### Management Extensions (MX)
-The Zebra-proprietary Privilege Escalation method designed to enable an unprivileged EMM agent to access all “missing” functions needed to enable an EMM vendor to implement a “complete” EMM solution for managing Zebra Android devices. MX was developed in parallel with the Android Device Administrator, and predates the availability of the Profile Owner and Device Owner Privilege Escalation methods. 
+Zebra-proprietary Privilege Escalation method designed to enable an unprivileged EMM agent to access all “missing” functions needed to enable an EMM vendor to implement a “complete” EMM solution for managing Zebra Android devices. MX was developed in parallel with the Android Device Administrator, and predates the availability of the Profile Owner and Device Owner Privilege Escalation methods. 
 
 ### `McTool.jar`
 A Java app developed by Zebra Technologies that presents a data-driven user interface from the contents of a schema. [Download McTool]()(<<`GITHUB LINK TO COME`).

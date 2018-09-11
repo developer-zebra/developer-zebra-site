@@ -53,7 +53,7 @@ _JSON-compliant OemConfig schema showing code for Analytics UI settings. Click t
 _Rendering the Analytics section of the schema in Zebra McTool sample app. Click to enlarge_.
 <br>
 
-> The OemConfig app and schema are pre-installed in all Zebra devices running Android 7.0 Nougat and in all but the earliest releases of those running Android 8.0 Oreo.
+> The Zebra OemConfig app and schema come preinstalled in Zebra devices.
 
 -----
 

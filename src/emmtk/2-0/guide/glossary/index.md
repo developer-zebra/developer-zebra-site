@@ -48,7 +48,7 @@ A DA-eligible app that meets certain additional requirements can be promoted to 
 For more information, please refer to Zebra's [DA-to-DO Agent Migration Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `TEMPORARY SHAREPOINT LINK FOR ZEBRAS ONLY`).
 
 ### Device Policy Controller (DPC)
-An app that implements a sub-class of the Android [DeviceAdminReceiver](https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver) class, the base class for implementing a device administration component. 
+An app that implements a sub-class of the Android DeviceAdminReceiver class, the base class for implementing a device administration component. [More info](https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver). 
 
 ### Discontinued 
 A previously deprecated feature that is no longer available or supported.

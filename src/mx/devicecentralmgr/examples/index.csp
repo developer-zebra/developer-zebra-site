@@ -4,7 +4,7 @@ title: Examples
 type: text
 order: 99
 ---
-### Show "Firmware update" and "Bluetooth on/off" buttons in DeviceCentral App and allow pairing of multiple Bluetooth devices in each class.
+#### Show "Firmware update" and "Bluetooth on/off" buttons in DeviceCentral app, allow pairing of multiple Bluetooth devices per class.
 
     :::XML
     <wap-provisioningdoc>
@@ -16,7 +16,7 @@ order: 99
     </wap-provisioningdoc>
 
 	
-### Hide "Firmware update" and "Bluetooth on/off" buttons in DeviceCentral App and allow pairing of multiple Bluetooth devices in each class.
+#### Hide "Firmware update" and "Bluetooth on/off" buttons in DeviceCentral app, allow pairing of one Bluetooth device per class.
 
 	:::XML
     <wap-provisioningdoc>

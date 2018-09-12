@@ -86,44 +86,6 @@ _Intent Output options for the "Launcher" Profile_
 
 -----
 
-## Serial Output 
-When acquiring data with a device connected to a serial/USB port, data populates the intent bundle using the bundle extras listed below. **Note**: Some of these extras were introduced with DataWedge 6.5, as indicated. <!-- **See important note that follows**.  --> 
-
-### Parameters
-
-**Extra Name**: "com.symbol.datawedge.data_string"<br>
-**Type**: [String]<br>
-**Contents**: UTF8-encoded string data<br>
-
------
-
-**Extra Name**: "com.symbol.datawedge.source"<br>
-**Type**: [String]<br>
-**Contents**: Value is always “serial”<br>
-
------
-
-#### Extras Introduced with DataWedge 6.5
-
-**Extra Name**: com.symbol.datawedge.device_id<br>
-**Type**: [String]<br>
-**Contents**: Device identifier (usually the port name)<br>
-
------
-
-**Extra Name**: "com.symbol.datawedge.device_name"<br>
-**Type**: [String]<br>
-**Contents**: Friendly name of the port<br> 
-**Example**: "Serial port 1"<br>
-
------
-
-**Extra Name**: "com.symbol.datawedge.data_raw"<br>
-**Type**: [Byte Array]<br>
-**Contents**: Byte array containing the acquired data in unprocessed form<br>
-
------
-
 ## Single Decode Mode
 
 Single mode reads and decodes a single barcode at a time, and is the most common decoding mode. For decoding multiple barcodes simultaneously, such as with UDI-compliant objects, see [UDI/Multiple Decode Mode](#udimultipledecodemode). 

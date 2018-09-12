@@ -1,7 +1,7 @@
 
 ## EMDK for Xamarin
 
-* Get latest EMDK For Android code from Jenkins  http://10.17.216.63:8080/jenkins/job/tut_emdka_build/ and look for something similar to "tut_emdkx_build" and open the latest. 
+* Get latest EMDK For Android code from Jenkins  http://10.17.216.63:8080/jenkins/ and look for something similar to "tut_emdkx_build" and open the latest. 
 * Download sdk-addon.zip  and unzip (The SDK-Addon at the highest api level has the javadocs ex; addon-symbol_emdk-symbol-26)
 * Get latest Symbol.XamarinEMDK.dll from Praveen (should be here: http://10.17.216.63:8080/jenkins/job/tut_emdkx_build/)
 * Replace Symbol.XamarinEMDK.dll to Lib folder in mDocToMarkdown
@@ -23,7 +23,7 @@
 ## EMDK For Android
 
 ### Load APIs
-1. Log onto the [Jenkins build server](http://10.17.216.63:8080/jenkins/) (ID=kelani, pw= kelani@123) 
+1. Log onto the [Jenkins build server](http://10.17.216.63:8080/jenkins/job/TUT_Build_EMDKA/) (ID=kelani, pw= kelani@123) (or http://10.17.216.63:8080/jenkins/)
 2. In the main pane, look for something similar to "tut_emdka_build" and open the latest.
 3. Download the latest `sdk-addon.zip` file. This should have the current API level that the tool can target (i.e. Android API level 26). 
 4. Open the .zip file and navigate to /addon-symbol_emdk-symbol-XX/docs/reference (where "XX" is the highest number if multiple choices exist). 

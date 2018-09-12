@@ -5,9 +5,9 @@ layout: list-content-items.html
 content-items:
   - type: section
     level: 4
-    title: Agent Migration
+    title: Agent Porting to DO
     text: Describes how to transition an EMM agent from MX to AEDO to enable management of Zebra Android N devices, on which AEDO is the recommended management strategy.
-    url: migrateaedo
+    url: port
   - type: section
     level: 4
     title: How to Enroll an AEDO

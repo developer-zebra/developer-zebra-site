@@ -1,5 +1,5 @@
 ---
-title: Agent Migration
+title: Agent Porting to DO
 layout: guide.html
 product: EMM Toolkit
 productversion: '2.0'
@@ -13,23 +13,23 @@ productversion: '2.0'
 
 ## Overview
 
-This guide is intended for EMM vendors and other Zebra partners that offer solutions designed to administer and manage Zebra Android devices in an enterprise. It describes the time line for changes to the mechanisms by which Zebra devices are managed, and provides basic descriptions of the steps required to migrate an agent from DA to DO. For more detailed information, please refer to Zebra's [DA-to-DO Agent Migration Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `TEMPORARY SHAREPOINT LINK FOR ZEBRAS ONLY`). 
+This guide is intended for EMM vendors and other Zebra partners that offer solutions designed to administer and manage Zebra Android devices in an enterprise. It describes the time line for changes to the mechanisms by which Zebra devices are managed, and provides basic descriptions of the steps required to port an agent from DA to DO. For more detailed information, please refer to Zebra's [DA-to-DO Agent Porting Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `TEMPORARY SHAREPOINT LINK FOR ZEBRAS ONLY`). 
 
 
 **Milestones for devices running**:
 
 * **Android KitKat, Lollipop and Marshmallow**:
  * Support continues for existing EMM solutions targeting these versions.
- * EMM vendors are encouraged to begin migration to Device Owner model.
+ * EMM vendors are encouraged to begin adapting to Device Owner model.
 * **Android 7.x Nougat**: 
  * **Phase-out of signed agents begins**; signing of new agents ends.
- * **All tier-1 EMMs must begin migrating the modern approach**.
+ * **All tier-1 EMMs must begin adapting the modern approach**.
  * **Use of existing signed EMM agents can continue** for management. of Zebra devices running Android versions that support such agents.
  * Support for existing signed agents on Nougat devices not guaranteed.
 * **Android 8.x Oreo**: 
  * End of support for signed agents.
  * All agents must be unsigned.
- * Tier-1 EMMs must migrate signed agents to an alternate [Privilege Escalation Method](../glossary/#privilegeescalation) based on the Android version(s) the vendor intends to support.
+ * Tier-1 EMMs must adapt signed agents to an alternate [Privilege Escalation Method](../glossary/#privilegeescalation) based on the Android version(s) the vendor intends to support.
 
 -----
 
@@ -39,30 +39,30 @@ Successful EMM solutions for managing Zebra devices running Android Marshmallow 
 ### Signed EMM Agent
 
 <img alt="image" style="height:450px" src="EMM_signed_EMM_agent.png"/>
-_Support for signed agents on Zebra devices ends with Android O; all EMM vendors must migrate to unsigned agents. Click image to enlarge_. 
+_Support for signed agents on Zebra devices ends with Android O; all EMM vendors must adapt to unsigned agents. Click image to enlarge_. 
 
-For migrating a signed EMM agent to an unsigned one, the method described in "[Unsigned DA EMM Agent Plus MX](#unsigneddaagentmx)" would likely be preferable in most cases. Such an agent could be used to manage Zebra Android devices from Kit Kat through Oreo. Once such an agent is developed, the EMM vendor is well positioned to support most Zebra Android devices and to begin migration to the new standards-based approach required in the future. 
+For porting a signed EMM agent to an unsigned one, the method described in "[Unsigned DA EMM Agent Plus MX](#unsigneddaagentmx)" would likely be preferable in most cases. Such an agent could be used to manage Zebra Android devices from Kit Kat through Oreo. Once such an agent is developed, the EMM vendor is well positioned to support most Zebra Android devices and to begin porting to the new standards-based approach required in the future. 
 
 -----
 
 ### Unsigned DA Agent + MX
 
 <img alt="image" style="height:350px" src="EMM_unsigned_DA_EMM_agent+MX.png"/>
-_Tier-2 EMM vendors taking this approach are well positioned for migration to the new approach. Click image to enlarge_.
+_Tier-2 EMM vendors taking this approach are well positioned for porting to the new approach. Click image to enlarge_.
 
-The diagram above illustrates the method employed by most Tier-2 EMM vendors that support complete solutions for managing Zebra Android devices. Most have already developed a DA EMM agent and augmented it using MX to provide the additional privileged functionality. Such EMM vendors are well positioned to support current and past Zebra Android devices and to begin migration to the new standards-based approach required to manage Zebra Android devices in the future. 
+The diagram above illustrates the method employed by most Tier-2 EMM vendors that support complete solutions for managing Zebra Android devices. Most have already developed a DA EMM agent and augmented it using MX to provide the additional privileged functionality. Such EMM vendors are well positioned to support current and past Zebra Android devices and to begin porting to the new standards-based approach required to manage Zebra Android devices in the future. 
 
 -----
 
 ### Unsigned Non-DPC Agent + MX
 
 <img alt="image" style="height:350px" src="EMM_unsigned_non-DPC_EMM_agent+MX.png"/>
-_This approach is supported through Oreo, but could complicate migration to a DO agent. Click image to enlarge_.
+_This approach is supported through Oreo, but could complicate porting to a DO agent. Click image to enlarge_.
 
 If a Tier-2 EMM vendor already supports a complete solution for managing Zebra Android devices based on a non-DPC EMM agent that is augmented using MX to provide the additional privileged functionality, they can continue to use that approach to support management of all Zebra Android devices through Oreo. 
 
-* **Support for this approach will end with Android 9.x** (Android P). Migration to the new standards-based approach is required. 
-* **Starting from a non-DPC EMM agent will likely complicate the migration process** to a DO EMM agent. But once available, that DO EMM agent could be used to manage Zebra Android devices as far back as Android Nougat, if appropriate. 
+* **Support for this approach will end with Android 9.x** (Android P). Conversion to the new standards-based approach is required. 
+* **Starting from a non-DPC EMM agent will likely complicate the porting process** to a DO EMM agent. But once available, that DO EMM agent could be used to manage Zebra Android devices as far back as Android Nougat, if appropriate. 
 
 -----
 
@@ -87,7 +87,7 @@ _This approach is the most universal, "future-proof" and standards-compliant. Cl
 **Disadvantages**: 
 
 * **Cannot be effectively used for devices running Marshmallow and earlier**. 
-* **Migration requires the most changes to the agent** than other approaches. 
+* **Porting requires the most changes to the agent** than other approaches. 
 
 -----
 
@@ -98,7 +98,7 @@ _This approach offers advantages that make it attractive as an interim solution.
 
 **Advantages**: 
 * **Supported by all Zebra Android devices running Oreo** and earlier.
-* **Might require fewer changes for agent migration** than other approaches. 
+* **Might require fewer changes for agent porting** than other approaches. 
 
 **Disadvantage**: 
 * **Not supported on Zebra Android devices running Android 9.x (P)** or later. 
@@ -279,4 +279,4 @@ Administrative mechanisms and processes generally include:​
 ## See Also
 
 * [About EMM Toolkit](../about)
-* [Agent Migration Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `SHAREPOINT LINK FOR ZEBRAS ONLY`). 
+* [Agent Porting Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `SHAREPOINT LINK FOR ZEBRAS ONLY`). 

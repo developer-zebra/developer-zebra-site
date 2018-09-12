@@ -1,5 +1,5 @@
 ---
-title: OemConfig Integration Guide
+title: OemConfig Features
 layout: guide.html
 product: EMM Toolkit
 productversion: '2.0'
@@ -12,7 +12,9 @@ productversion: '2.0'
 
 ## Overview
 
-This guide is intended to allow EMM solution providers to enable their products to support OemConfig, a Google-recommended approach developed by Zebra Technologies that configures Zebra devices using Android Managed Configurations. When performing administrative tasks on devices, Managed Configurations are used when no Android Enterprise API is available. Both are based on publicly available specifications developed by Google and the Android community. 
+This guide describes features available for configuring Zebra Android devices using 
+
+is intended to allow EMM solution providers to enable their products to support OemConfig, a Google-recommended approach developed by Zebra Technologies that configures Zebra devices using Android Managed Configurations. When performing administrative tasks on devices, Managed Configurations are used when no Android Enterprise API is available. Both are based on publicly available specifications developed by Google and the Android community. 
 
 Zebra partners wishing to follow the processes defined in this guide must [register with Google](https://developers.google.com/android/work/play/emm-api/) as an EMM solution provider. This unlocks API-level access to the Google Play store, where the schemas for all Android apps are stored. An app's schema defines functions available for interrogation and/or configuration using Managed Configurations, and is central to OemConfig usage. 
 
@@ -54,8 +56,6 @@ _Rendering the Analytics section of the schema in Zebra McTool sample app. Click
 <br>
 
 > The Zebra OemConfig app and schema come preinstalled in Zebra devices.
-
-For further details, download the [OemConfig Integration Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/Doc.aspx?sourcedoc=%7B63ACE2CE-1BB6-4D3C-A974-15464C56F570%7D&file=OemConfig%20Schema%20Data-Driven%20UI.docx&action=default&mobileredirect=true) `<<TEMPORARY LINK FOR ZEBRAS ONLY` . 
 
 -----
 

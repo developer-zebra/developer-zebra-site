@@ -9,8 +9,8 @@ menu:
       url: /emmtk/2-0/guide/about
     - title: FAQ
       url: /emmtk/2-0/guide/faq
-    - title: Migrate
-      url: /emmtk/2-0/guide/migrateaedo
+    - title: Port
+      url: /emmtk/2-0/guide/port
     - title: Enroll
       url: /emmtk/2-0/guide/enrollaedo
     - title: Persist

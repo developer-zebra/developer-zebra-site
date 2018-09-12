@@ -53,7 +53,7 @@ Over time, many of the capabilities once available only through these mechanisms
 
 ### Prep for the Future
 
-To prepare for the new approach, **EMM solution providers must migrate their Android "Device Administrator" (DA) agent apps to the "Device Owner" (DO) model**. The forthcoming model works through Android Enterprise Device Owner (AEDO) APIs when possible, and fills gaps in functionality with OemConfig, a **Google-recommended solution developed by Zebra** that uses Managed Configurations when no Android Enterprise API is available. 
+To prepare for the new approach, **EMM solution providers must port their Android "Device Administrator" (DA) agent apps to the "Device Owner" (DO) model**. The forthcoming model works through Android Enterprise Device Owner (AEDO) APIs when possible, and fills gaps in functionality with OemConfig, a **Google-recommended solution developed by Zebra** that uses Managed Configurations when no Android Enterprise API is available. 
 
 **Managed Configurations can**:
 
@@ -63,24 +63,24 @@ To prepare for the new approach, **EMM solution providers must migrate their And
 * Be discovered by an EMM agent or server and acted upon.
 * Be used by an EMM Server through its EMM agent and a data-driven UI.
 
-**<u>The major advantage of the [AEDO+ZMC](../migrateaedo/#unsigneddodaagentzmc) method is universality</u>; it allows a single agent to work with <u>any</u> Android device in the future**, regardless of brand. In the past, EMM vendors were required to develop and maintain multiple agents to support the proprietary management mechanisms required for each brand of device they chose to target. 
+**<u>The major advantage of the [AEDO+ZMC](../port/#unsigneddodaagentzmc) method is universality</u>; it allows a single agent to work with <u>any</u> Android device in the future**, regardless of brand. In the past, EMM vendors were required to develop and maintain multiple agents to support the proprietary management mechanisms required for each brand of device they chose to target. 
 
-<img alt="image" style="height:350px" src="../migrateaedo/timeline.jpg"/>
+<img alt="image" style="height:350px" src="../port/timeline.jpg"/>
 _Click image to enlarge_. 
 <br>
 
 > **IMPORTANT NOTES**: <br>
 * **Zebra devices running Android 7.x Nougat and 8.x Oreo support DA <u>and</u> DO agents**.
-* Migration options described in the EMMTK include features implemented in [MX 8.1](/mx) ([See function map](../functionmap)).
+* Porting options described in the EMMTK include features implemented in [MX 8.1](/mx) ([See function map](../functionmap)).
 > * **<u>Agents for Oreo (and later) must be unsigned</u>**; Zebra devices running Android 8.x and later do not support signed agents.
-> * **Support for MX ends with Android 9.x Pie**; devices running Android Pie must use [unsigned DO/DA+ZMC](../migrateaedo/#unsigneddodaagentzmc) agents.
+> * **Support for MX ends with Android 9.x Pie**; devices running Android Pie must use [unsigned DO/DA+ZMC](../port/#unsigneddodaagentzmc) agents.
 
 -----
 
 ## See Also
 
 * **[EMMTK Glossary](../glossary)** | Defines terms used in the EMM Toolkit
-* **[AEDO Migration Guide](../migrateaedo)** | EMM agent migration options 
+* **[AEDO Porting Guide](../port)** | EMM agent porting options 
 * **[Persistence Best Practices](../persistence)** | Zebra-recommended processes for EMMs
 * **[Staging Service APIs](../api)** | Interfacing with StageNow from an EMM console
 

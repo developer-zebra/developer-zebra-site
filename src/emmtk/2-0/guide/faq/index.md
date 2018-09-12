@@ -200,7 +200,7 @@ A: The Schema Variant is a Managed Configuration that allows an EMM solution or 
 ## See Also
 
 * **[EMMTK Glossary](../glossary)** | Defines terms used in the EMM Toolkit
-* **[AEDO Migration Guide](../migrateaedo)** | EMM agent migration options 
+* **[AEDO Porting](../port)** | EMM agent porting options 
 * **[Persistence Best Practices](../persistence)** | Zebra-recommended processes for EMMs
 * **[Staging Service APIs](../api)** | Interfacing with StageNow from an EMM console
 

@@ -31,7 +31,7 @@ content-items:
   - type: section
     level: 4
     title: OemConfig Integration Guide (.pdf)
-    text: Detailed integration guide, with step-by-step instructions for agent porting, explanations of terminology, required porting time line and recommendations for encoding Managed Configurations for delivery. 
+    text: Detailed integration guide with step-by-step instructions for agent porting, recommendations for encoding Managed Configurations for delivery, explanations of terminology and porting deadlines. 
     url: oemdev
   - type: section
     level: 4

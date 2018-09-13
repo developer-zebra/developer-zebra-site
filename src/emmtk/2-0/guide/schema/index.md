@@ -1,5 +1,5 @@
 ---
-title: Zenra OemConfig Schema
+title: Zebra OemConfig Schema
 layout: guide.html
 product: EMM Toolkit
 productversion: '2.0'
@@ -13,9 +13,9 @@ productversion: '2.0'
 
 ## Overview
 
-This document describes features permitted in Schemas defined by the Android Managed Configuration Model that OemConfig applications such as Zebra OemConfig are permitted to use, and that non-OemConfig applications are not. This is important because an EMM can be coded to handle only Managed Configuration Schemas that conform to the more restrictive subset of Schema capabilities imposed when uploading non-OemConfig applications to the Google Play Store. In such cases, an EMM is unable to properly handle an OemConfig Schema without enhancement. This document describes the sorts of additional features that might be required, and provides some examples of how a data-driven UI might be designed to handle these features.
+This guide describes the Zebra OemConfig schema and how it can be used to create a data-driven UI as an aid to EMM solution providers adding support for Android Managed Configurations. Zebra has created ato administer Zebra devices 
 
-* **[Anatomy of the Zebra Schema (.pdf)](../schema/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OemConfig
+#### [Build a DDUI from the Zebra Schema (.pdf)](../schema/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)
 
 
 <!-- 
@@ -28,4 +28,7 @@ _caption_
 -----
 
 ## See Also
+
+* **[Porting Overview (.pdf)](pdf)** | Options for porting an EMM agent
+* **[DA-to-DO Agent Porting Guide (.pdf)](pdf)** | Detailed porting information and guidance
 

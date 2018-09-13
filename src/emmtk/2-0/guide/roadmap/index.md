@@ -31,17 +31,11 @@ As the Android OS evolved over time, many capabilities once available only throu
 _caption_
 <br>
  -->
------
-
-## new major section
 
 -----
 
-### Section sub-section
-
------
-
-## See Also
+<!-- ## See Also
 
 * [About ActiveEdge](../about)
 * [Administrative Guide](../setup)
+ -->

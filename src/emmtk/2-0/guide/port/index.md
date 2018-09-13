@@ -17,18 +17,18 @@ This guide is intended for EMM vendors and other Zebra partners that offer solut
 
 #### See Also 
 
-* **[Anatomy of the Zebra Schema (.pdf)](../schema/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf) | Breakdown of DDUI creation with Zebra OemConfig
+* **[Build a DDUI from the Zebra Schema (.pdf)](../schema/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OemConfig
 * **[DA-to-DO Agent Porting Guide (.pdf)](pdf)** | Detailed porting information and guidance
 
 -----
 
-**Milestones**:
+**Milestones for devices running**:
 
 * **Android KitKat, Lollipop and Marshmallow**:
- * Support continues for existing EMM solutions targeting these versions.
- * EMM vendors are encouraged to begin adapting to Device Owner model.
+ * Support continues for existing EMM solutions targeting these OS versions.
+ * EMM vendors are encouraged to begin porting agents to the Device Owner model.
 * **Android 7.x Nougat**: 
- * **Phase-out of signed agents begins**; signing of new agents ends.
+ * **Phase-out of signed agents begins**; Zebra ceases to sign new agents.
  * **All tier-1 EMMs must begin adapting the modern approach**.
  * **Use of existing signed EMM agents can continue** for management. of Zebra devices running Android versions that support such agents.
  * Support for existing signed agents on Nougat devices not guaranteed.

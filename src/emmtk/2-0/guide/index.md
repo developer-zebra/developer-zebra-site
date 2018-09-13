@@ -5,23 +5,38 @@ layout: list-content-items.html
 content-items:
   - type: section
     level: 4
-    title: Agent Porting to DO
-    text: Describes how to transition an EMM agent from MX to AEDO to enable management of Zebra Android N devices, on which AEDO is the recommended management strategy.
+    title: Port an Agent from DA to DO
+    text: Describes how to transition an EMM agent from MX to AEDO to enable management of Zebra Android N devices (and later), on which AEDO is the recommended management strategy.
     url: port
   - type: section
     level: 4
-    title: How to Enroll an AEDO
+    title: Enroll a DO Agent
     text: Step-by-step guide for using Zebra StageNow to enroll an agent as a Device Owner and persist the settings, ensuring the device returns to manageability following an Enterprise Reset.
     url: enrollaedo
   - type: section
     level: 4
     title: MX and AEDO Function Maps
-    text: Provides a list of MX functions and their equivalent functions through AEDO or the Zebra OemConfig tool for deploying Android Managed Configurations.
+    text: Lists MX functions and their equivalent functions through AEDO or the Zebra OemConfig tool for deploying Android Managed Configurations.
     url: functionmap
   - type: section
     level: 4
+    title: Build a DDUI 
+    text: Examines the Zebra OemConfig schema and offers guidance and sample tools to create a data-driven user interface for managing Zebra devices.
+    url: schema
+  - type: section
+    level: 4
+    title: OemConfig Integration Overview
+    text: An overview of the OemConfig schema, how it's used as the source for a data-driven UI. Includes a link to a detailed integration guide (.pdf), with recommendations for encoding Managed Configurations for delivery. 
+    url: oemdev
+  - type: section
+    level: 4
+    title: OemConfig Integration Guide (.pdf)
+    text: Detailed integration guide, with step-by-step instructions for agent porting, explanations of terminology, required porting time line and recommendations for encoding Managed Configurations for delivery. 
+    url: oemdev
+  - type: section
+    level: 4
     title: Setup Wizard Bypass
-    text: Describes the process supported on some devices for automatically bypassing the Zebra and Android Setup Wizards following an Enterprise Reset (links to StageNow guide page).
+    text: Describes the process supported on some devices for automatically bypassing the Zebra and Android Setup Wizards following an Enterprise Reset (links to a StageNow guide page).
     url: /stagenow/latest/Profiles/wipedevice/#setupwizardmanualbypass
   - type: section
     level: 4
@@ -43,13 +58,6 @@ productversion: '2.0'
 ---
 
 <!--            
-
-8/27/18- Darryn found this dummy page ->> PUT BACK IN WHEN THIS PAGE IS READY:
-  - type: section
-    level: 4
-    title: OemConfig Schema
-    text: Content, usage and management of the OemConfig schema, including approaches for encoding managed configurations for delivery and recommendations for implementing a data-driven UI.
-    url: schema
 
 
 4/12/18- removed temporarily at req. of Dave Degreassi  (restored 8/7/18)

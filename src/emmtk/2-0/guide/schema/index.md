@@ -15,7 +15,7 @@ productversion: '2.0'
 
 This guide describes the Zebra OemConfig schema and how it can be used to create a data-driven UI as an aid to EMM solution providers adding support for Android Managed Configurations. Zebra has created ato administer Zebra devices 
 
-#### [Build a DDUI from the Zebra Schema (.pdf)](../schema/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)
+#### [Build a DDUI from the Zebra Schema (.pdf)](../schema/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418_FINAL.pdf)
 
 
 <!-- 

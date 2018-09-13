@@ -13,10 +13,16 @@ productversion: '2.0'
 
 ## Overview
 
-This guide is intended for EMM vendors and other Zebra partners that offer solutions designed to administer and manage Zebra Android devices in an enterprise. It describes the time line for changes to the mechanisms by which Zebra devices are managed, and provides basic descriptions of the steps required to port an agent from DA to DO. For more detailed information, please refer to Zebra's [DA-to-DO Agent Porting Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `TEMPORARY SHAREPOINT LINK FOR ZEBRAS ONLY`). 
+This guide is intended for EMM vendors and other Zebra partners that offer solutions designed to administer and manage Zebra Android devices in an enterprise. It describes the time line for changes to the mechanisms by which Zebra devices are managed, and provides basic descriptions of the steps required to port an agent from DA to DO. 
 
+#### See Also 
 
-**Milestones for devices running**:
+* **[Anatomy of the Zebra Schema (.pdf)](../schema/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf) | Breakdown of DDUI creation with Zebra OemConfig
+* **[DA-to-DO Agent Porting Guide (.pdf)](pdf)** | Detailed porting information and guidance
+
+-----
+
+**Milestones**:
 
 * **Android KitKat, Lollipop and Marshmallow**:
  * Support continues for existing EMM solutions targeting these versions.

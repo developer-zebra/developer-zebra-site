@@ -30,6 +30,3 @@ _caption_
 
 * **[Porting Overview](../port)** | Options for porting an EMM agent
 * **[DA-to-DO Agent Porting Guide (.pdf)](../../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf)** | Detailed porting information and guidance
-
-Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf
-Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf

@@ -41,12 +41,12 @@ This guide documents enrollment of an EMM agent app as a "Device Owner," grantin
 
 ### Wait Conditions
 
-Some parts of the staging process require the device to perform activities that render it temoprarily unable to process additional staging commands. Common examples of this include connecting to a network and downloading files. Staging commands sent during these times result in failure. 
+Some parts of a staging process might require the device to perform activities that render it temoprarily unable to process additional staging commands. Common examples of this include connecting the device to a network and/or downloading files. Staging commands sent during these times are subject to failure. 
 
 To remedy this, **Zebra recommends the insertion of wait conditions using Condition Manager immediately after such activities** to ensure that a condition is met and/or the device has ample time to complete its current task before being given the next one. 
 
  <img alt="image" style="height:278px" src="StageNow_ConditionMgr.png"/>
- _ConditionMgr can pause staging until the a condition is met_.
+ _ConditionMgr pauses staging until a condition is met_.
 <br>
 
 -----
@@ -162,14 +162,16 @@ This section involves importing the StageNow settings profile `EMM_Device_Owner_
  <img alt="image" style="height:250px" src="view_profile_settings.png"/>
  **...then click the left arrow three times** to see the view shown below:
  <img alt="image" style="height:350px" src="edit_profile_4.png"/>_**Click on image to enlarge**_.<br>
-6. **Edit the necessary configuration sections of the imported profile** as required for the target environment (using Steps a&ndash;d below). **To edit a config**, tap its numbered button and click the blue "Edit" button on the right side of the screen (see arrow, above). <u>**Be sure to hit "Save" when done editing each config**</u> or settings are lost.<br> 
+6. **Edit the necessary configuration sections of the imported profile** as required for the target environment (using Steps a&ndash;d below). **To edit a config**, tap its numbered button and click the blue "Edit" button on the right side of the screen (see arrow, above). <u>**Be sure to hit "Save" when done editing each config**</u> or settings are lost.<br> <br>
 	a. **Wi-Fi -** **Enter network settings** for the network on which the target device(s) will operate:<br>
-	<img alt="image" style="height:350px" src="wi-fi_config.png"/><br>
+	<img alt="image" style="height:350px" src="wi-fi_config.png"/>
+	**IMPORTANT**: [Wait Condition](#waitconditions) might be required after Wi-Fi.<br> 
 	b. **FileMgr -** **Enter the Archive Target Path and Folder Name** as:<br>
 	`/enterprise/usr/EMM/`. <br>
 	In Source Archive URI, **navigate to** `/EMM/install/` **folder on the <u>workstation</u>**.<br>
 	This config downloads to the device files placed on the workstation earlier.<br>   
-	<img alt="image" style="height:350px" src="filemgr.png"/><br>
+	<img alt="image" style="height:350px" src="filemgr.png"/>
+	**IMPORTANT**: [Wait Condition](#waitconditions) might be required after FileMgr.<br> 
 	c. **CertMgr -** **Enter the certificate file name** and path on the device as:<br> 
 	`/enterpise/usr/EMM/install/<EnrollDO.pem>`<br>
 	File name specified here <u>must match exactly</u> (including letter case) with file in the `EMM/install` folder on the workstation.<br>

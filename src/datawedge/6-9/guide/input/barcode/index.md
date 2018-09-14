@@ -490,7 +490,7 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 The following table depicts the decode behavior between Datamatrix and GS1 Datamatrix:
 
-<table class="facelift" style="width:100%" border="1" padding="5px">
+<table style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th rowspan="2"><center>Datamatrix</center></th>
     <th rowspan="2"><center>GS1 Datamatrix</center></th>
@@ -546,7 +546,7 @@ Notes:
 
 The following table depicts the decode behavior between QR Code and GS1 QR Code:
 
-<table class="facelift" style="width:100%" border="1" padding="5px">
+<table style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th rowspan="2"><center>QR Code</center></th>
     <th rowspan="2"><center>GS1 QR Code</center></th>

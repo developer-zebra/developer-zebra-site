@@ -147,6 +147,8 @@ Zebra Managed Configurations. See Managed Configurations.
 
 ## See Also
 
-* [About EMM Toolkit](../about)
-* [Other EMMTK Guides](../../guide)
+* [About EMM Toolkit](../about) | General information
 * [FAQ](../faq) | Frequently asked questions and answers
+* [Other EMMTK Guides](../../guide) | A complete list of all guides in the EMM Toolkit
+* **[Build a DDUI from the Zebra OemConfig Schema (.pdf)](../../downloads/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OemConfig
+* **[DA-to-DO Agent Porting Guide (.pdf)](../../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf)** | Detailed porting information and guidance

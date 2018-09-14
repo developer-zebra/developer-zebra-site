@@ -165,13 +165,13 @@ This section involves importing the StageNow settings profile `EMM_Device_Owner_
 6. **Edit the necessary configuration sections of the imported profile** as required for the target environment (using Steps a&ndash;d below). **To edit a config**, tap its numbered button and click the blue "Edit" button on the right side of the screen (see arrow, above). <u>**Be sure to hit "Save" when done editing each config**</u> or settings are lost.<br> <br>
 	a. **Wi-Fi -** **Enter network settings** for the network on which the target device(s) will operate:<br>
 	<img alt="image" style="height:350px" src="wi-fi_config.png"/>
-	**IMPORTANT**: [Wait Condition](#waitconditions) might be required after Wi-Fi.<br> 
+	**IMPORTANT**: A [Wait Condition](#waitconditions) might be required after Wi-Fi.<br> 
 	b. **FileMgr -** **Enter the Archive Target Path and Folder Name** as:<br>
 	`/enterprise/usr/EMM/`. <br>
 	In Source Archive URI, **navigate to** `/EMM/install/` **folder on the <u>workstation</u>**.<br>
 	This config downloads to the device files placed on the workstation earlier.<br>   
 	<img alt="image" style="height:350px" src="filemgr.png"/>
-	**IMPORTANT**: [Wait Condition](#waitconditions) might be required after FileMgr.<br> 
+	**IMPORTANT**: A [Wait Condition](#waitconditions) might be required after FileMgr.<br> 
 	c. **CertMgr -** **Enter the certificate file name** and path on the device as:<br> 
 	`/enterpise/usr/EMM/install/<EnrollDO.pem>`<br>
 	File name specified here <u>must match exactly</u> (including letter case) with file in the `EMM/install` folder on the workstation.<br>
@@ -201,50 +201,15 @@ This section involves importing the StageNow settings profile `EMM_Device_Owner_
 	* **IMPORTANT**: Scanning the Setup Wizard Bypass barcode confirms an understanding and agreement with the terms and conditions of the [Zebra restricted asset end user license agreement (EULA)](https://www.zebra.com/content/dam/zebra_new_ia/en-US/channel/terms-conditions/na/zebra-restricted-eula-170515.pdf). 
 
 
-#### Device Staging for Enrollment is Complete. 
+#### Device staging for agent enrollment is complete. 
 
 -----
 
 ## See Also
 
-* [About EMM Toolkit](../about)
-* [Other EMMTK Guides](../../guide)
-
------
-
-## `DRAFT`
-
-**_Information subject to change without notice_**. 
-
-
------
-<!-- 
-section explains device owner stuff, and why a Nougat device _should_ be enrolled as a DO and why an Oreo _must_. 
-
-* DO is recommended with Nougat. With Oreo, it's required. 
-* Agent Uses AEDO + Zebra OemConfig Managed Configs​
-* Android N or higher​
-* EMM must leverage Zebra EMM TK V4​
-* Supported from Android Nougat onwards​
-* Provides parity of functionality to EMM TK V2 when combined with AEDO APIs​
-* Standard-based​
-* Not available prior to Android Nougat​
-* Requires special Device Owner Enrollment​
-* It is OPTIONAL for all EMMs to use OemConfig, but NOT doing so will leave the EMM unable to provide parity of functionality once they can no longer use MX via EMM TK V1 and V2 to augment the capabilities of AEDO APIs​
-* SHOULD support use of OemConfig as early as possible, preferably by the by the end of Android Nougat​
-* MUST support use of OemConfig by the start of Android P​
-
-> Info in the QR code is identical to contents of the `Provisioning.JSON` file.  
-
-### Terms used in this guide
-
-* **AE -** Android Enterprise (formerly "Android for Work")
-* **AEDO -** Android Enterprise Device Owner
-* **AFW -** Android for Work
-* **DA -** Device administrator
-* **DO -** Device owner
-* **EMM -** Enterprise Mobility Management
-* **MDM -** Mobile Device Management
-
--->
+* [About EMM Toolkit](../about) | General information
+* [FAQ](../faq) | Frequently asked questions and answers
+* [Other EMMTK Guides](../../guide) | A complete list of all guides in the EMM Toolkit
+* **[Build a DDUI from the Zebra OemConfig Schema (.pdf)](../../downloads/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OemConfig
+* **[DA-to-DO Agent Porting Guide (.pdf)](../../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf)** | Detailed porting information and guidance
 

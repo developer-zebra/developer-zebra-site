@@ -30,14 +30,19 @@ content-items:
     url: oemdev
   - type: section
     level: 4
+    title: Zebra Managed Configurations
+    text: Describes all features available for configuration on Zebra Android devices through Managed Configurations, a generic Android app extension mechanism.  
+    url: zmc
+  - type: section
+    level: 4
     title: OemConfig Integration Guide (.pdf)
     text: Detailed integration guide with step-by-step instructions for agent porting, recommendations for encoding Managed Configurations for delivery, explanations of terminology and porting deadlines. 
-    url: oemdev
+    url: ../../downloads/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf
   - type: section
     level: 4
     title: Setup Wizard Bypass
     text: Describes the process supported on some devices for automatically bypassing the Zebra and Android Setup Wizards following an Enterprise Reset (links to a StageNow guide page).
-    url: /stagenow/latest/Profiles/wipedevice/#setupwizardmanualbypass
+    url: https://techdocs.zebra.com/stagenow/latest/Profiles/wipedevice/#setupwizardmanualbypass
   - type: section
     level: 4
     title: Persistence Best Practices

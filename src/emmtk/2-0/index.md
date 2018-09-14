@@ -17,6 +17,8 @@ menu:
       url: /emmtk/2-0/guide/persistence
     - title: MX
       url: /mx
+    - title: ZMC
+      url: /emmtk/2-0/zmc
     - title: Function Maps
       url: /emmtk/2-0/guide/functionmap
     - title: Glossary
@@ -25,6 +27,8 @@ menu:
       url: /emmtk/2-0/guide/api
     - title: More...
       url: /emmtk/2-0/guide
+    - icon: fa fa-download
+      url: /emmtk/2-0/downloads
     - icon: fa fa-search
       url: /emmtk/2-0/search
 product: EMM Toolkit

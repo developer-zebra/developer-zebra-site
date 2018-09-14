@@ -9,7 +9,7 @@ productversion: '2.0'
 
 Zebra OemConfig is an approach to performing administrative tasks on Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only method available that's based on publicly available specifications developed by Google and the Android community. Below are some common questions related to OemConfig, Managed Configurations and the schemas that drive them. 
 
-Also see the [Glossary of terms](../glossary).  
+Also see the [Glossary of terms](../glossary).
 
 -----
 
@@ -107,7 +107,7 @@ A: Zebra publishes the Zebra OemConfig Schema to the Google Play Store with the 
 
 **Q: Do OemConfig Schemas have versions**? 
 
-A: Yes and no. Since the primary source of an OemConfig Schema is the [APK](../glossary/apk) for the corresponding OemConfig application that exposes that Schema, and since APKs have versions, you could say that by inference any OemConfig Schema can be considered to have the version of the APK file that publishes it. The versioning applied by an OEM to an OemConfig application may or may not provide any particularly useful information about the nature of the OemConfig Schema exposed by that application. So, it would probably be a mistake to make any assumptions about the relationships between two OemConfig Schemas obtained from different versions of OemConfig APKs from the same OEM that have the same Android Package Name. 
+A: Yes and no. Since the primary source of an OemConfig Schema is the APK for the corresponding OemConfig application that exposes that Schema, and since APKs have versions, you could say that by inference any OemConfig Schema can be considered to have the version of the APK file that publishes it. The versioning applied by an OEM to an OemConfig application may or may not provide any particularly useful information about the nature of the OemConfig Schema exposed by that application. So, it would probably be a mistake to make any assumptions about the relationships between two OemConfig Schemas obtained from different versions of OemConfig APKs from the same OEM that have the same Android Package Name. 
 
 -----
 

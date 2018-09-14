@@ -59,7 +59,7 @@ This staging process is intended for devices that are in a factory-default state
 
 1. [Prepare the staging workstation](#1preparetheworkstation) (5 steps, one-time only)
 2. [Create provisioning barcodes](#2createprovisioningbarcodes) (13 steps)
-3. [Enroll the device](#3enrolladevice) (4 steps)
+3. [Enroll the device](#3enrollthedevice) (4 steps)
 
 -----
 
@@ -198,8 +198,7 @@ This section involves importing the StageNow settings profile `EMM_Device_Owner_
 	**Notes**: 
 	* **Device display goes dark** during final enrollment steps. This is normal. <br>
 	* **The 'Setup Wizard Bypass' barcode is included** on every barcode sheet made with StageNow 3.0 and higher. 
-	* **IMPORTANT**: Scanning the Setup Wizard Bypass barcode confirms an understanding and agreement with the terms and conditions of the [Zebra restricted asset end user license agreement (EULA)](https://www.zebra.com/content/dam/zebra_new_ia/en-US/channel/terms-conditions/na/zebra-restricted-eula-170515.pdf). 
-
+	* **IMPORTANT**: Scanning the Setup Wizard Bypass barcode confirms an understanding and agreement with the terms and conditions of the [Zebra restricted asset end user license agreement (EULA)](https://www.zebra.com/content/dam/zebra_new_ia/en-us/channel/terms-conditions/na/zebra-restricted-eula-170515.pdf). 
 
 #### Device staging for agent enrollment is complete. 
 

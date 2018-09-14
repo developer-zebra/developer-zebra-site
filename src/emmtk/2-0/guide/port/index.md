@@ -5,12 +5,6 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
-## `DRAFT`
-
-**_Information subject to change without notice_**. 
-
------
-
 ## Overview
 
 This guide is intended for EMM vendors and other Zebra partners that offer solutions designed to administer and manage Zebra Android devices in an enterprise. It describes the time line for changes to the mechanisms by which Zebra devices are managed, and provides basic descriptions of the steps required to port an agent from DA to DO. 

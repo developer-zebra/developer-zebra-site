@@ -5,11 +5,6 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
-## `DRAFT`
-**_Information subject to change without notice_**. 
-
------
-
 ## Overview
 
 This guide is intended to allow EMM solution providers to enable their products to support OemConfig, a Google-recommended approach developed by Zebra Technologies that configures Zebra devices using Android Managed Configurations. When performing administrative tasks on devices, Managed Configurations are used when no Android Enterprise API is available. Both are based on publicly available specifications developed by Google and the Android community. 

@@ -5,11 +5,6 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
-## `DRAFT`
-**_Information subject to change without notice_**. 
-
------
-
 ## Overview
 
 This guide describes features available for configuring Zebra Android devices using 

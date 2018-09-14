@@ -5,12 +5,6 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
-## `DRAFT`
-
-**_Information subject to change without notice_**. 
-
------
-
 ## Overview
 
 This document provides interface specifications for the cloud-based Staging Service APIs, part of the Zebra Enterprise Mobility Management Toolkit (EMMTK). These APIs are intended for use by Zebra EMM vendors to generate StageNow barcodes for enrolling devices in an EMM solution. 

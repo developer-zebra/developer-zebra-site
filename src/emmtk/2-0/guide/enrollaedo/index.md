@@ -5,12 +5,6 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
-## `DRAFT`
-
-**_Information subject to change without notice_**. 
-
------
-
 ## Overview
 
 This guide documents enrollment of an EMM agent app as a "Device Owner," granting the agent the permissions necessary to confiure all parameters of a Zebra device. Device Owner (DO) capabilies apply to Zebra devices running Android 5.x Lollipop and higher. However, **the procedures in this guide require Android 7.x Nougat (or later) and Zebra MX 7.1 (or higher)**. 

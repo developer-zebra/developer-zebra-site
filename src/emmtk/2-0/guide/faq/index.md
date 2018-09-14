@@ -5,12 +5,6 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
-## `DRAFT`
-
-**_Information subject to change without notice_**. 
-
------
-
 ## Overview
 
 Zebra OemConfig is an approach to performing administrative tasks on Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only method available that's based on publicly available specifications developed by Google and the Android community. Below are some common questions related to OemConfig, Managed Configurations and the schemas that drive them. 

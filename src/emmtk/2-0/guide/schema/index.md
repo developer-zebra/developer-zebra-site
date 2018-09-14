@@ -5,12 +5,6 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
-## `DRAFT`
-
-**_Information subject to change without notice_**. 
-
------
-
 ## Overview
 
 This guide describes the Zebra OemConfig schema and how it can be used to create a data-driven UI as an aid to EMM solution providers adding support for Android Managed Configurations.

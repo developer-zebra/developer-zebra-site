@@ -5,12 +5,6 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
-# `DRAFT`
-
-**_Information subject to change without notice_**. 
-
------
-
 ## Overview
 The table immediately below maps the functions of the Zebra MX Managament System (MXMS) to [Android Enterprise Device Owner(AEDO)](https://developers.google.com/android/work/requirements/work-managed-device) APIs. In cases when no corresponding AEDO function exists, CSP functions are mapped using Zebra's OemConfig tool for [Android Managed Configurations](https://developer.android.com/work/managed-configurations). 
 

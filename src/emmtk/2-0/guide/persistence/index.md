@@ -5,12 +5,6 @@ product: EMM Toolkit
 productversion: '2.0'
 ---
 
-## `DRAFT`
-
-**_Information subject to change without notice_**. 
-
------
-
 ## Overview
 
 Zebra provides a persistence framework that allows designated apps, settings and data to remain on a device following an [Enterprise Reset](/mx/powermgr), which otherwise erases all non-factory apps and data. For providers of enterprise mobility management (EMM) solutions, this permits an EMM agent and its related data and services to be preserved after all other software is erased, restoring the device to a manageable state. 

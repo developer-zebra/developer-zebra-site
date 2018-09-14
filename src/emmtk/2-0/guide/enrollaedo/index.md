@@ -38,6 +38,17 @@ This guide documents enrollment of an EMM agent app as a "Device Owner," grantin
  * **Group ID(s) (GIDs)** for the group(s)
 
  -->
+
+### Wait Conditions
+
+Some parts of the staging process require the device to perform activities that render it temoprarily unable to process additional staging commands. Common examples of this include connecting to a network and downloading files. Staging commands sent during these times result in failure. 
+
+To remedy this, **Zebra recommends the insertion of wait conditions using Condition Manager immediately after such activities** to ensure that a condition is met and/or the device has ample time to complete its current task before being given the next one. 
+
+ <img alt="image" style="height:278px" src="StageNow_ConditionMgr.png"/>
+ _ConditionMgr can pause staging until the a condition is met_.
+<br>
+
 -----
 
 ## How to Enroll a Device Owner

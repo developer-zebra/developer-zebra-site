@@ -11,8 +11,9 @@ This guide is intended for EMM vendors and other Zebra partners that offer solut
 
 #### See Also 
 
-* **[Build a DDUI from the Zebra Schema (.pdf)](../schema/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418_FINAL.pdf)** | Breakdown of DDUI creation with Zebra OemConfig
-* **[DA-to-DO Agent Porting Guide (.pdf)](pdf)** | Detailed porting information and guidance
+* **[Build a DDUI from the Zebra OemConfig Schema (.pdf)](../../downloads/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OemConfig
+* **[DA-to-DO Agent Porting Guide (.pdf)](../../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf)** | Detailed porting information and guidance
+
 
 -----
 

@@ -41,12 +41,12 @@ This guide documents enrollment of an EMM agent app as a "Device Owner," grantin
 
 ### Wait Conditions
 
-Some parts of a staging process might require the device to perform activities that render it temoprarily unable to process additional staging commands. Common examples of this include connecting the device to a network and/or downloading files. Staging commands sent during these times are subject to failure. 
+Some parts of a staging process might require the device to perform activities that render it temoprarily unable to process additional staging commands. Common examples of this include connecting the device to a network and downloading files. **Staging commands sent during these times are subject to failure**. 
 
-To remedy this, **Zebra recommends the insertion of wait conditions using Condition Manager immediately after such activities** to ensure that a condition is met and/or the device has ample time to complete its current task before being given the next one. 
+To remedy this, **Zebra recommends the insertion of wait conditions using Condition Manager immediately after such activities** to ensure that a condition is met and the device has ample time to complete its current task before attempting to give it the next one. 
 
- <img alt="image" style="height:278px" src="StageNow_ConditionMgr.png"/>
- _ConditionMgr pauses staging until a condition is met_.
+<img alt="image" style="height:349px" src="StageNow_ConditionMgr.png"/>
+_ConditionMgr pauses staging until a condition is met. Click to enlarge_.
 <br>
 
 -----

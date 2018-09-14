@@ -14,7 +14,7 @@ Other options available for Voice Input capture:
 * Terminate voice capture by setting a timeout value rather than using an end phrase.
 * Send a TAB character when speaking the "send tab" command.
 * Send an ENTER character when speaking the "send enter" command.
-* Restrict the returned data to alpha, numeric, or both.
+* Specify the returned data to any (no restriction), alpha or numeric.
 * Provide an optional audio prompt when waiting for a start phrase or data capture.
 * Validate spoken data and edit acquired data if needed.
 * Support offline speech recognition.
@@ -38,7 +38,7 @@ Other options available for Voice Input capture:
 
 * **Tab command** - Sends a tab key when speaking the command "send tab". This command is supported only when the device is at the "waiting for start phrase" state. _See Figure 4._
 
-* **Enter command** - Sends an enter key when speaking the command "send enter." _See Figure 4._
+* **Enter command** - Sends an enter key when speaking the command "send enter." This command is supported only when the device is at the "waiting for start phrase" state. _See Figure 4._
 
 * **Data type** - Configures the data type to be returned, with selections of: Any, Alpha, or Numeric. The data type is required to restrict data captured according to the preferences. _See Figure 5._
 Data type selections:
@@ -100,7 +100,7 @@ Refer to DataWedge Voice Input Plugin in [Set Config API](../../api/setconfig) t
   </tr>
   <tr>
     <td>voice_data_type</td>
-    <td>Any, Alpha, Numeric</td>
+    <td>0 = Any, 1 = Alpha, 2 = Numeric</td>
   </tr>
   <tr>
     <td>voice_start_phrase_waiting_tone</td>
@@ -129,7 +129,7 @@ Refer to DataWedge Voice Input Plugin in [Set Config API](../../api/setconfig) t
 Refer to DataWedge [Set Config API](../../api/setconfig).
 
 ##Limitations
-* Voice Input is supported only in English.
+* Voice Input is validated only with English.
 * Do not use Google Assistant while DataWedge Voice Input is in use, as it can lead to undesirable behavior. 
 * Providing numbers and other special characters as part of the data capture start phrase is not supported.
 * Voice Input is not supported if Enterprise Home Screen (EHS) is in restricted mode. However, enabling all the privilege settings in EHS will reinstate Voice Input in DataWedge.  

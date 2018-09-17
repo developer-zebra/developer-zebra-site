@@ -4826,7 +4826,7 @@ If no API exists, standards-based implementation is possible through Zebra OemCo
 
 <h2>MX-to-OemConfig</h2>
 
-In cases when no corresponding AE API function exists, MX functions are mapped using Zebra's OemConfig tool for [Android Managed Configurations](https://developer.android.com/work/managed-configurations). 
+For cases when one or more MX functions have not been implemented by Android Enterprise APIs, MX functions are configured using Zebra's OemConfig tool for [Android Managed Configurations](https://developer.android.com/work/managed-configurations). 
 
 **_Information subject to change without notice_**. 
 

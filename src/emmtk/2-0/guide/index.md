@@ -45,6 +45,11 @@ content-items:
     url: ../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf
   - type: section
     level: 4
+    title: Sample Files 
+    text: Guides and files developed by Zebra engineers to aid EMM solution providers adapting their tools to new and emerging specifications for Android device administration. 
+    url: ../downloads
+  - type: section
+    level: 4
     title: Setup Wizard Bypass
     text: Describes the process supported on some devices for automatically bypassing the Zebra and Android Setup Wizards following an Enterprise Reset (links to a StageNow guide page).
     url: https://techdocs.zebra.com/stagenow/latest/Profiles/wipedevice/#setupwizardmanualbypass

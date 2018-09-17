@@ -18,7 +18,7 @@ menu:
     - title: MX
       url: /mx
     - title: ZMC
-      url: /emmtk/2-0/zmc
+      url: /emmtk/2-0/guide/zmc
     - title: Function Maps
       url: /emmtk/2-0/guide/functionmap
     - title: Glossary

@@ -21,7 +21,7 @@ Abbreviation for Android Package, the file format used for packaging and distrib
 A series of Android bundles that determines the order to apply subsets of Managed Configurations. Allows full enforcement of order dependency when required.
 
 ### `BundleTools.java`
-Java source code (file) developed by Zebra Technologies that converts JSON Managed Configuration objects into bundles that are used to perform device-configuration actions. [Download BundleTools]()(<<`GITHUB LINK TO COME`). 
+Java source code (file) developed by Zebra Technologies that converts JSON Managed Configuration objects into bundles that are used to perform device-configuration actions. [Download BundleTools](../../downloads). 
 
 ### DA
 See Device Administrator.
@@ -75,7 +75,7 @@ A method for Android apps to expose configuration options and accept settings. T
 Zebra-proprietary Privilege Escalation method designed to enable an unprivileged EMM agent to access all “missing” functions needed to enable an EMM vendor to implement a “complete” EMM solution for managing Zebra Android devices. MX was developed in parallel with the Android Device Administrator, and predates the availability of the Profile Owner and Device Owner Privilege Escalation methods. 
 
 ### `McTool.jar`
-A Java app developed by Zebra Technologies that presents a data-driven user interface from the contents of a schema. [Download McTool]()(<<`GITHUB LINK TO COME`).
+A Java app developed by Zebra Technologies that presents a data-driven user interface from the contents of a schema. [Download McTool](../../downloads).
 
 ### MDM
 Mobile Device Management. See EMM. 
@@ -132,7 +132,7 @@ Allows an EMM solution or other tool consuming the OemConfig Schema to determine
  * The Schema Variant value ***Premium N-V1*** might indicate the subset of Managed Configurations supported on Premium Zebra Android devices running Android Nougat and that implement the V1 feature set.
 
 ### `schema.json`
-The document that defines functions of Zebra devices available for interrogation and/or configuration using Managed Configuration mechanisms. [Download the Zebra Schema]()(<<`GITHUB LINK TO COME`).
+The document that defines functions of Zebra devices available for interrogation and/or configuration using Managed Configuration mechanisms. [Download the Zebra Schema](../../downloads).
 
 ### Support, Full 
 A feature generally recommended for use, and that come with no significant limitations or restrictions. 

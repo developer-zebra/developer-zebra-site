@@ -23,7 +23,9 @@ Zebra partners wishing to follow the processes defined in this guide must [regis
 
 ### Sample Files
 
-To aid EMM developers, Zebra provides two fully working tools as examples of effective implementations of this process to copy or compare with their own solutions. With the exception of the schema, which describes functions specific to Zebra devices, the sample solutions are based entirely on Google's public specifications, and contain no Zebra-proprietary logic. In theory, tools built from these samples are effective on any device that conforms to the Google specifications. 
+To aid EMM developers, Zebra provides two fully working tools as examples of effective implementations of this process to copy or compare with their own solutions. The sample solutions are based entirely on Google's public specifications, and contain no Zebra-proprietary logic. In theory, tools built from these samples are effective on any device that conforms to the Google specifications. Also available is the Zebra OemConfig schema, which describes configurable parameters specific to Zebra devices. 
+
+See the [download page](../../downloads) to access these files. 
 
 `McTool.jar` - A Java app that presents a data-driven user interface from the contents of a schema.
 

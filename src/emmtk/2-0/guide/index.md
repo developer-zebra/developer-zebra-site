@@ -5,28 +5,28 @@ layout: list-content-items.html
 content-items:
   - type: section
     level: 4
-    title: Port an Agent from DA to DO
-    text: Describes how to transition an EMM agent from MX to AEDO to enable management of Zebra Android N devices (and later), on which AEDO is the recommended management strategy. Includes link to detailed instructions. 
+    title: Agent Porting Options
+    text: Describes options available for transitioning an EMM agent from MX to AEDO, which is required for managing Zebra Android N and later devices. Includes a link to detailed porting instructions. 
     url: port
   - type: section
     level: 4
     title: Enroll a DO Agent
-    text: Step-by-step guide for using Zebra StageNow to enroll an agent as a Device Owner on a Zebra device and persist the settings there, ensuring the device returns to manageability following an Enterprise Reset.
+    text: Step-by-step guide describing use of Zebra StageNow tool to enroll an agent as a Device Owner on a Zebra device and to persist the settings to ensure the device returns to manageability following an Enterprise Reset.
     url: enrollaedo
   - type: section
     level: 4
     title: MX and AEDO Function Maps
-    text: Tables mapping MX functions to their equivalent functions in AEDO (through Android APIs) or Zebra OemConfig Managed Configurations.
+    text: Tables mapping MX functions to their equivalent functions in Android Enterprise APIs or Zebra Managed Configurations.
     url: functionmap
   - type: section
     level: 4
     title: Build a DDUI 
-    text: Examines the Zebra OemConfig schema and offers guidance and sample tools to create a data-driven user interface for managing Zebra devices.
+    text: Examines the Zebra OemConfig schema and offers guidance and sample tools for creating a data-driven user interface for managing Zebra devices.
     url: schema
   - type: section
     level: 4
     title: OemConfig Integration Overview
-    text: An overview of the OemConfig schema, how it's used as the source for a data-driven UI. Includes a link to a detailed integration guide (.pdf), with recommendations for encoding Managed Configurations for delivery. 
+    text: An overview of the OemConfig schema and how it's used as the source for a data-driven UI. Includes a link to a detailed integration guide.  
     url: oemdev
   - type: section
     level: 4
@@ -41,7 +41,7 @@ content-items:
   - type: section
     level: 4
     title: Agent Porting Guide (.pdf)
-    text: 27-page guide provides details for porting an EMM agent from Device Administrator (DA) to Device Owner (DO). Includes step-by-step instructions for agent porting, recommendations for encoding Managed Configurations for delivery, explanations of terminology and deadlines for porting. 
+    text: 27-page guide provides details for porting an EMM agent from Device Administrator (DA) to Device Owner (DO). Includes step-by-step instructions for agent porting, recommendations for encoding Managed Configurations for delivery, explanations of terminology and suggested porting milestones. 
     url: ../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf
   - type: section
     level: 4

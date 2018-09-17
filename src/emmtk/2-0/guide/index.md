@@ -6,17 +6,17 @@ content-items:
   - type: section
     level: 4
     title: Port an Agent from DA to DO
-    text: Describes how to transition an EMM agent from MX to AEDO to enable management of Zebra Android N devices (and later), on which AEDO is the recommended management strategy.
+    text: Describes how to transition an EMM agent from MX to AEDO to enable management of Zebra Android N devices (and later), on which AEDO is the recommended management strategy. Includes link to detailed instructions. 
     url: port
   - type: section
     level: 4
     title: Enroll a DO Agent
-    text: Step-by-step guide for using Zebra StageNow to enroll an agent as a Device Owner and persist the settings, ensuring the device returns to manageability following an Enterprise Reset.
+    text: Step-by-step guide for using Zebra StageNow to enroll an agent as a Device Owner on a Zebra device and persist the settings there, ensuring the device returns to manageability following an Enterprise Reset.
     url: enrollaedo
   - type: section
     level: 4
     title: MX and AEDO Function Maps
-    text: Lists MX functions and their equivalent functions through AEDO or the Zebra OemConfig tool for deploying Android Managed Configurations.
+    text: Tables mapping MX functions to their equivalent functions in AEDO (through Android APIs) or Zebra OemConfig Managed Configurations.
     url: functionmap
   - type: section
     level: 4
@@ -36,8 +36,13 @@ content-items:
   - type: section
     level: 4
     title: OemConfig Integration Guide (.pdf)
-    text: Detailed integration guide with step-by-step instructions for agent porting, recommendations for encoding Managed Configurations for delivery, explanations of terminology and porting deadlines. 
-    url: ../../downloads/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf
+    text: Nine-page guide provides details for integrating with Zebra OemConfig, including suggestions for building a DDUI from the Zebra OemConfig app schema.  
+    url: ../downloads/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf
+  - type: section
+    level: 4
+    title: Agent Porting Guide (.pdf)
+    text: 27-page guide provides details for porting an EMM agent from Device Administrator (DA) to Device Owner (DO). Includes step-by-step instructions for agent porting, recommendations for encoding Managed Configurations for delivery, explanations of terminology and deadlines for porting. 
+    url: ../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf
   - type: section
     level: 4
     title: Setup Wizard Bypass
@@ -51,7 +56,7 @@ content-items:
   - type: section
     level: 4
     title: Staging Service APIs
-    text: Details the Staging Service APIs, which can be used to produce StageNow barcodes from an EMM console to enroll an AEDO EMM agent using the StageNow device client.
+    text: Details related to the Staging Service APIs, which can be used to produce StageNow barcodes from an EMM console to enroll an AEDO EMM agent using the StageNow device client.
     url: api
   - type: section
     level: 4
@@ -61,51 +66,3 @@ content-items:
 product: EMM Toolkit
 productversion: '2.0'
 ---
-
-<!--            
-
-
-4/12/18- removed temporarily at req. of Dave Degreassi  (restored 8/7/18)
-
-  - type: section
-    level: 4
-    title: Staging Service API
-    text: Explains how to use the Staging Service API from an EMM console to produce StageNow barcodes and to enroll an AEDO EMM agent using the StageNow client app.
-    url: api
-    
-Changed to "MDM TK Legacy guide"
-  - type: section
-    level: 4
-    title: Code Samples
-    text: Provides validated code that EMM solution providers can use to implement managed configurations within their agent.
-    url: samples
-
-8/7/18 - removed because we're not doing them (or they were not needed or combined with others):
-  - type: section
-    level: 4
-    title: EMM Toolkit Roadmap
-    text: Explains the migration period and basic processes for moving devices from legacy Android versions and Zebra management processes to Android N and beyond, including a time line for when such migrations become mandatory.
-    url: roadmap
-
-  - type: section
-    level: 4
-    title: DA-to-DO Migration
-    text: Describes the method for moving a device from DA (or NON-DO) to DO mode without loss of data or device reset. 
-    url: migratedo
-
-  - type: section
-    level: 4
-    title: OemInfo Developer Guide
-    text: Explains API usage and development requirements for OemInfo, a standards-based mechanism by which applications can acquire published information about a Zebra device.
-    url: oeminfodevguide
-
-  - type: section
-    level: 4
-    title: About EMM Toolkit
-    text: A general overview of the EMM Toolkit, its intended purposes and the timeline during which EMM vendors must adapt their solutions to work with StageNow, the MX Management System and other Zebra device-staging and configuration mechanisms as they evolve along with Android. 
-    url: about
-
-
- -->
-
-

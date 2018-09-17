@@ -7,9 +7,9 @@ productversion: '2.0'
 
 ## Overview
 
-The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow developers of EMM (sometimes known as "mobile device management" or MDM) solutions to adapt their products to manage Zebra devices. This has historically involved interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. 
+The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow developers of EMM solutions to adapt their products to manage Zebra devices. This has historically involved interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. 
 
-With the emergence of Android Enterprise, some capabilities once accessible only through Zebra's proprietary management layer can be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. The remainder can be configured using OemConfig, a Google-recommended desktop tool developed by Zebra that controls device settings through the Android Managed Configurations mechanism. 
+With the emergence of Android Enterprise, some capabilities once accessible only through Zebra's proprietary management layer can now be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. Functions lacking an Android API can be configured using OemConfig, a Google-sanctioned approach developed by Zebra that controls device settings through the Android Managed Configurations mechanism. [More about OemConfig](../glossary/#oemconfig).
 
 **The general Zebra staging process**:​
 
@@ -21,16 +21,7 @@ With the emergence of Android Enterprise, some capabilities once accessible only
  * Download, install, configure and launch an EMM agent on the device​
  * Perform persistence and/or other desired staging tasks
 
-The primary vehicle for integrating an EMM solution with Zebra's staging tools is the [Staging Service APIs](../api). This guide contains all information necessary for adding Zebra-device staging capabilities to an EMM management console. 
-
-<!-- 
-
-WATCH (George's?) GTX (and possibly embed it)
-
-DO WE WANT TO GO HERE: 
-Prior solutions required two separate sets of tools: One to generate the XML-based profiles for consumption by a client on the device, and another to read them on the device and configure Zebra devices, and another could export those profiles for deployment through an EMM. Zebra is phasing out the two-tool solution in favor of informing EMM solution providers how to modify their tools to generate the XML. 
-
- -->
+The primary method of integrating an EMM solution with Zebra's staging tools is through the [Staging Service APIs](../api). This guide contains all information necessary for adding Zebra-device staging capabilities to an EMM management console. 
 
 -----
 

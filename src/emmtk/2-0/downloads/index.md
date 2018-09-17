@@ -8,14 +8,14 @@ productversion: '2.0'
 ## Guides
 
 ### Building a Data-driven UI
-This 9-page guide provides details for integrating with Zebra OemConfig includes explanations of features permitted in schemas defined by the Android Managed Configuration model and suggestions for building a DDUI from the Zebra OemConfig app schema. This document also describes some of the additional features that might be required and examples of how a data-driven UI might be designed to handle those features.
+This nine-page guide provides details for integrating with Zebra OemConfig, including explanations of features permitted in schemas defined by the Android Managed Configuration model and suggestions for building a DDUI from the Zebra OemConfig app schema. This document also describes some of the additional features that might be required and examples of how a data-driven UI might be designed to handle those features.
 
 ####[Download "Building a DDUI" (.pdf)](Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)
 
 -----
 
 ### Agent Porting Guide
-This 27-page guide provides details for porting an EMM agent from Device Administrator (DA) to Device Owner (DO). Includes step-by-step instructions for agent porting, recommendations for encoding Managed Configurations for delivery and explanations of terminology and porting deadlines. 
+This 27-page guide provides details for porting an EMM agent from Device Administrator (DA) to Device Owner (DO). Includes step-by-step instructions for agent porting, recommendations for encoding Managed Configurations for delivery, explanations of terminology and porting deadlines. 
 
 ####[Download "Agent Porting Guide" (.pdf)](Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf)
 

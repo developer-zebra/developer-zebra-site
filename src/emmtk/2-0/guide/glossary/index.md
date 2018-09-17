@@ -32,14 +32,14 @@ A product or feature that is supported but no longer being advanced, usually to 
 ### Device Administrator (DA)
 A method of Privilege Escalation on an Android device available since Android 2.2.x (Froyo) API Level 8; expanded in later versions. Being designated as a DA grants an app the right to use selected methods of the Android Device Administration API, exposed primarily via methods of the Android DevicePolicyManager class. However, Android Device Administration API methods that can be used by a DA provide minimal functionality, and alone do not enable the development of a viable EMM solution. 
 
-For more information, please refer to Zebra's [DA-to-DO Agent Porting Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `TEMPORARY SHAREPOINT LINK FOR ZEBRAS ONLY`).
+For more information, please refer to Zebra's [Agent Porting Guide](../../downloads).
 
 ### Device Owner (DO)
 A device designation generally used to implement device management as part of a “Corporately Owned Special Use” (COSU) device deployment. The DO is granted broad control over many aspects of the device through the Android Device Administration APIs. A device can have only one DO at a time. 
 
 A DA-eligible app that meets certain additional requirements can be promoted to DO through a special enrollment process that requires the Device User to opt-in and that must generally be performed early during the initialization process of the device. 
 
-For more information, please refer to Zebra's [DA-to-DO Agent Porting Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `TEMPORARY SHAREPOINT LINK FOR ZEBRAS ONLY`).
+For more information, please refer to Zebra's [Agent Porting Guide](../../downloads).
 
 ### Device Policy Controller (DPC)
 An app that implements a sub-class of the Android DeviceAdminReceiver class, the base class for implementing a device administration component. [More info](https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver). 
@@ -81,7 +81,7 @@ A Java app developed by Zebra Technologies that presents a data-driven user inte
 Mobile Device Management. See EMM. 
 
 ### OemConfig
-OemConfig is a Google-sanctioned, standards-based approach for an OEM to extend the capabilities of an Android Enterprise Device Owner Device Policy Controller running on an Android device by using a OEM-provided application that exposes Managed Configurations as means to access OEM-specific and privileged functions that are not provided via standard Android Enterprise APIs, such as the DevicePolicyManager. 
+OemConfig is a Google-sanctioned, standards-based approach for an OEM to extend the capabilities of an Android Enterprise Device Owner Device Policy Controller running on an Android device. It's implemented by an OEM-provided application that exposes Managed Configurations as means to access device-specific and privileged functions that are not accessible using standard Android Enterprise APIs, such as the DevicePolicyManager. 
 
 ### OemConfig, Zebra
 Zebra OemConfig is an implementation of the Google-sanctioned approach developed by Zebra Technologies that configures Zebra devices using Android Managed Configurations. Zebra OemConfig comes preinstalled on Zebra Android devices and is used to administer devices when no Android Enterprise API is available. 
@@ -98,7 +98,7 @@ Term applied to functions available only to apps with permission. Many of the fu
 ### Profile Owner 
 Profile Owner is a standard Android Privilege Escalation method introduced in Android 5.0 (Lollipop) API level 21. Building on the capabilities of a DA, PO adds an expanded set of Android Device Administration APIs. An app that is eligible to become a DA and that meets certain additional requirements can be promoted to PO through a special enrollment process. A PO is generally used to implement a Work Profile as part of a “Bring Your Own Device” (BYOD) deployment scenario. A Work Profile contains the “Work” part of the device, which is managed by a PO selected by the Enterprise. It is segregated from the “Personal” part of the device, which cannot be seen or managed by the Enterprise. 
 
-For more information, please refer to Zebra's [DA-to-DO Agent Porting Guide](https://zebra.sharepoint.com/:w:/r/sites/converge/emc-android-platform-architect-review-board/_layouts/15/doc2.aspx?sourcedoc=%7B08423a04-d00d-4015-a4b1-4420ce38749f%7D&action=edit&wdPid=1cdba535) (<< `TEMPORARY SHAREPOINT LINK FOR ZEBRAS ONLY`).
+For more information, please refer to Zebra's [Agent Porting Guide](../../downloads).
 
 ### Schema
 A document that defines functions available for interrogation and/or configuration using Managed Configuration mechanisms. Schemas and Managed Configurations conform to Google-defined specifications. 
@@ -151,4 +151,4 @@ Zebra Managed Configurations. See Managed Configurations.
 * [FAQ](../faq) | Frequently asked questions and answers
 * [Other EMMTK Guides](../../guide) | A complete list of all guides in the EMM Toolkit
 * **[Build a DDUI from the Zebra OemConfig Schema (.pdf)](../../downloads/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OemConfig
-* **[DA-to-DO Agent Porting Guide (.pdf)](../../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf)** | Detailed porting information and guidance
+* **[Agent Porting Guide (.pdf)](../../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf)** | Detailed porting information and guidance

@@ -42,7 +42,40 @@ The "Auto" option automatically determines the best scanning device from the lis
 
 -----
 
-### Auto Switch to Default on Event
+### Bluetooth Scanners
+DataWedge supports the following Zebra Bluetooth scanners: 
+
+* **RS507** Cordless Ring Scanner
+* **RS6000** Ring Scanner
+* **DS3678** Ultra-Rugged Scanner
+* **LI3678** Ultra-Rugged Laser Scanner
+* **DS2278** Bluetooth Scanner
+
+Bluetooth scanners are supported according to the following rules:
+
+* **To initially configure the RS507** in a Profile, the scanner must be paired and connected.
+* **After initial configuration**, a Bluetooth scanner can be enabled and disabled in the Profile, even if it is disconnected from the device. However, to configure decoders, reader parameters and other scanner settings, a Bluetooth scanner must be connected.
+* **DataWedge does not automatically reconnect** to a Bluetooth scanner if that scanner is connected while DataWedge is using a different auto-selected scanner. To re-enable a Bluetooth scanner, connect the scanner and select it in the Profile or re-choose the "Auto" selection option.
+* **Auto-selection and Battery Swap -** If Scanner selection is set to Auto and an RS507 was enabled prior to a battery swap, DataWedge continues working with that RS507 scanner upon reconnection after a battery is swapped. If the RS507 does not reconnect after the swap, DataWedge reverts to the current default scanner.
+* **Keep Enabled on Suspend -** This mode is supported on Bluetooth and pluggable scanners, and might result in faster battery drain than would otherwise be expected while in suspend mode. **Note: The Zebra computing device wakes from suspend mode when pressing the scan trigger of any supported scanner**.
+
+### USB SSI Scanners
+DataWedge supports the following Zebra USB SSI scanners: 
+
+* **DS3608** USB SSI Scanner
+* **LI3608** Ultra-Rugged USB SSI Laser Scanner
+
+**Support notes**: 
+
+* The DS3608 and LI3608 scanners are supported only on VC80 devices running Android 
+* Scanner must be configured using Symbol Native API (SNAPI) with Imager Interface
+* SNAPI drivers are included with supported devices
+* The scanner connects via USB port and cable
+
+>**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
+
+------
+## Auto Switch to Default on Event
 
 This feature configures DataWedge to select an external scanner as the default scanning device immediately upon connection and revert to a built-in scanner when the external scanner is disconnected. External scanners include those connecting by Bluetooth, serial cable or snap-on module. **Disabled by default**. Available only when “Auto" is selected in the [Scanner selection panel](#scannerselection). 
 
@@ -69,43 +102,58 @@ For Bluetooth scanners, if the device was not previously paired, a pairing barco
 * The system selects the default scanner based on the connection state and the scanner's position in an internally managed scanner list. If the newly connected scanner is lower in the scanner list than the one currently selected as the default scanner, the newly connected scanner becomes the default scanner.
 * On devices with only one built-in scanner or imager, "On disconnect" reverts to that built-in scanner or imager. 
 
-### Bluetooth Scanners
-DataWedge supports the following Zebra Bluetooth scanners: 
-
-* **RS507** Cordless Ring Scanner
-* **RS6000** Ring Scanner
-* **DS3678** Ultra-Rugged Scanner
-* **LI3678** Ultra-Rugged Laser Scanner
-* **DS2278** Bluetooth Scanner
-
-Bluetooth scanners are supported according to the following rules:
-
-* **To initially configure the RS507** in a Profile, the scanner must be paired and connected.
-* **After initial configuration**, a Bluetooth scanner can be enabled and disabled in the Profile, even if it is disconnected from the device. However, to configure decoders, reader parameters and other scanner settings, a Bluetooth scanner must be connected.
-* **DataWedge does not automatically reconnect** to a Bluetooth scanner if that scanner is connected while DataWedge is using a different auto-selected scanner. To re-enable a Bluetooth scanner, connect the scanner and select it in the Profile or re-choose the "Auto" selection option.
-* **Auto-selection and Battery Swap -** If Scanner selection is set to Auto and an RS507 was enabled prior to a battery swap, DataWedge continues working with that RS507 scanner upon reconnection after a battery is swapped. If the RS507 does not reconnect after the swap, DataWedge reverts to the current default scanner.
-* **Keep Enabled on Suspend -** This mode is supported on Bluetooth and pluggable scanners, and might result in faster battery drain than would otherwise be expected while in suspend mode. **Note: The Zebra computing device wakes from suspend mode when pressing the scan trigger of any supported scanner**.
-
-### USB SSI Scanners
-DataWedge supports the following Zebra USB SSI scanners: 
-
-* **DS3608** USB SSI Scanner
-* **LI3608** Ultra-Rugged USB SSI Laser Scanner
-
-**Support notes**: 
-
-* The DS3608 and LI3608 scanners are supported only on VC80, ET50 and ET55 devices running Android 
-* Scanner must be configured using Symbol Native API (SNAPI) with Imager Interface
-* SNAPI drivers are included with supported devices
-* The scanner connects via USB port and cable
-
->**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
-
 ------
+
+## Global Scanner Configuration 
+
+Global scanner configuration allows users to specify a generic scanner configuration applicable for all supported scanners. Rather than specifying multiple individual configurations for each separate scanner within a given DataWedge profile, the global configuration setting is provided to configure multiple scanners in a single profile.
+
+Global scanner configuration displays all scanner parameters and values for each and every scanner even if not supported by a specific scanner.
+Since this list is all-inclusive, there is a possibility a particular parameter or value may not be supported on an individual scanner. In this case, an error is logged in logcat during scanning.  
+
+When global scanner configuration is enabled, access is still available to settings specific to individual scanners, such as the option “Keep enabled on suspend” (which specifically applies to Bluetooth and other peripheral scanners), even if the default scanner is selected as an internal scanner for “Scanner Selection” (_See Figure 1_). When applying configurations, if any of the global settings are not applicable to the specific scanner, those settings cannot apply and will be disregarded.  
+
+When a global setting is configured and then an individual scanner is configured, both configuration options are saved. The configurations will be applied in the following order:
+  1. The global configuration is applied.
+  2. The specific scanner configuration is applied.
+
+If reports are generated when the global scanner configuration is set, the values supported by the connected device will be returned.
+
+### Configuration
+
+Open a profile in DataWedge. The "Barcode input" section contains the option "Configure scanner settings".
+<br>
+**Note:** The “Configure scanner settings” option is still accessible even when the selected scanner in “Scanner Selection” is disconnected. _In previous DataWedge versions prior to 6.8, all the scanner parameters (decoders, decoder params, etc.) are grayed-out and inaccessible._
+
+![img](config_scannersettings.png)
+_Figure 1. Profile settings_
+
+Tap "Configure scanner settings". A list of scanner configuration settings appears.
+
+![img](scanner_config.png)
+_Figure 2. Scanner configuration_
+
+Tap "Select scanner to set parameters".  **All Scanners** option is available to allow the scanner settings to apply to all scanners. 
+
+![img](select_scanner.png)
+_Figure 3. Global scanner configuration_
+
+Select **All Scanners**. A confirmation message appears indicating that any setting changes moving forward will be applicable to all scanners as a common global configuration. **Any existing individual scanner setting will be replaced by this global setting.** The scanner does not need to be connected to the device in order to configure the settings in the global scanner configuration.   
+
+###Using Intents
+
+Set the global scanner configuration by using **ALL_SCANNERS** value with parameter `configure_all_scanners` via [GET_CONFIG](../../../api/getconfig) and [SET_CONFIG](../../../api/setconfig) intent APIs.
+
+**Using SET_CONFIG:**
+* Setting either `configure_all_scanners` or a valid scanner identifier is required, otherwise DataWedge will return an error.
+* If `configure_all_scanners` is set to "true", the configuration will be saved for all the scanners. The **scanner_selection_by_identifier** does not need to be specified.  If there is any previous configuration for any of the scanners they will be replaced with the new configuration.
+* If `configure_all_scanners` is set to "false", the configuration will be saved for the selected scanner only. In the event the scanner selection is set to “AUTO”, the current default scanner configuration is updated. 
+
+-----
 
 ## Decoder Selection
 
-Many input methods include parameters that are configurable according to the expected scan targets and/or preferences of an organization. Enabling a narrow selection of decoders can help increase security, reduce decode errors and improve scan performance. **For example, a company that routinely receives packages encoded with Code 128 symbology might consider limiting the Code 128 decoders it implements to those of the non-EAN variety**. 
+Many input methods include parameters that are configurable according to the expected scan targets and/or preferences of an organization. Enabling a narrow selection of decoders can help increase security, reduce decode errors and improve scan performance. **For example, a company that routinely receives packages encoded with Code 128 symbology might consider limiting the Code 128 decoders it implements to those of the non-EAN variety**.   
 
 Parameters for individual Decoders are modified within a Profile. Each DataWedge Profile can be assigned a unique group of Decoders and Decoder parameters (where applicable) to use with its associated application(s). This guide covers the selection of Decoders and provides details for those with configurable parameters.
 

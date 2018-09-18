@@ -6,9 +6,9 @@ productversion: '6.9'
 ---
 
 ## Overview
-Voice Input enables DataWedge to accept spoken entries as if they were keystrokes or data acquired from scanning. It uses Google speech recognition. Voice data capture is beneficial in situations where barcodes have not been generated or barcode scanning is not possible, for example due to damaged barcodes or environmental factors (dust, mist, etc.)
+Voice Input enables DataWedge to accept spoken entries as if they were keystrokes or data acquired from scanning. It uses Google speech recognition. Voice data capture is beneficial in situations where barcodes have not been generated yet need to be entered in the device or barcode scanning is not possible, for example due to damaged barcodes or environmental factors (dust, mist, etc.).
 
-When running, Voice Input is placed in the state "waiting for start phrase" (_see Figure 8_). Voice data capture begins after speaking the predefined "start phrase", which then changes the state to "waiting for data" (_see Figure 9_).  Voice capture stops automatically after speaking the data or after speaking an optional "end phrase", if defined. The data source can be identified as voice input to process the voice data according to any application requirements. Barcode scanning and voice input can exist in the same DataWedge profile so both data capture methods may be used interchangeably.
+When running, Voice Input is placed in the state "waiting for start phrase" (_see Figure 8_). Voice data capture begins after speaking the predefined "start phrase", which then changes the state to "waiting for data" (_see Figure 9_). Voice capture stops automatically after speaking the data or after speaking an optional "end phrase", if defined. The data source can be identified as voice input to process the voice data according to any application requirements. Barcode scanning and voice input can exist in the same DataWedge profile so both data capture methods may be used interchangeably.
 
 Other options available for Voice Input capture:
 * Terminate voice capture by setting a timeout value rather than using an end phrase.
@@ -29,7 +29,7 @@ Other options available for Voice Input capture:
 
 * **Data capture start phrase** - Required phrase to start the data capture. **The default value is "start."** _See Figure 1 and 2._
 
-* **Data capture end phrase** - Optional phrase that ends the data capture. There is no default value. _See Figure 1 and 3._
+* **Data capture end phrase** - Optional phrase that ends the data capture. There is no default value. _See Figures 1 and 3._
 
 * **End detection timeout** - Sets the timeout value (in seconds) for the data capture during the “waiting for data” state. **The default value is "0."** If the value is set to "0" and the end phrase is defined, it waits infinitely for the data capture. Whereas, when the end phrase is not defined, data is returned immediately. This timeout is approximate, as it may encounter a 1 to 2 second delay. _See Figure 1._
 
@@ -100,7 +100,7 @@ Refer to DataWedge Voice Input Plugin in [Set Config API](../../api/setconfig) t
   </tr>
   <tr>
     <td>voice_data_type</td>
-    <td>0 = Any, 1 = Alpha, 2 = Numeric</td>
+    <td>0 - Any, 1 - Alpha, 2 - Numeric</td>
   </tr>
   <tr>
     <td>voice_start_phrase_waiting_tone</td>
@@ -133,7 +133,7 @@ Refer to DataWedge [Set Config API](../../api/setconfig).
 * Do not use Google Assistant while DataWedge Voice Input is in use, as it can lead to undesirable behavior. 
 * Providing numbers and other special characters as part of the data capture start phrase is not supported.
 * Voice Input is not supported if Enterprise Home Screen (EHS) is in restricted mode. However, enabling all the privilege settings in EHS will reinstate Voice Input in DataWedge.  
-* In Restricted GMS mode, Voice Input will not work since it relies on Google speech recognition.
+* In GMS Restricted mode, Voice Input will not work since it relies on Google speech recognition.
 
 ------
 

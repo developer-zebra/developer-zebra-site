@@ -11,7 +11,8 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 ### Version History
 * **Introduced in DataWedge 6.5**
-* **DataWedge 6.8 -** added support for ADF settings
+* **DataWedge 6.8 -** Added support for ADF settings
+* **DataWEdge 6.9 -** Added support for Voice Input and Global Scanner Configuration.
 
 ### Function Prototype
 
@@ -42,18 +43,30 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 
 **SCANNER_IDENTIFIER** [String]: Present in each scanner info bundle for each scanner supported in the device. Index and identifier parameters are both supported in DataWedge 6.6 and higher; the scanner identifier value takes precedence if an index also is referenced in the code.  
 
+* `scanner_last_configured` [string] - indicates scanner being configured, whether individual or global (all scanners).  Parameter values:
+	* **ALL_SCANNERS** - Refers to global scanner configuration encompassing all scanners
+	* **INTERNAL_IMAGER** - Built-in imager scanner
+	* **INTERNAL_LASER** - Built-in laser scanner
+	* **INTERNAL_CAMERA** - Built-in camera scanner
+	* **SERIAL_SSI** - Pluggable Z-back scanner for ET50/ET55 
+	* **BLUETOOTH_SSI** - RS507 Bluetooth scanner
+	* **BLUETOOTH_RS6000** - RS6000 Bluetooth scanner
+	* **BLUETOOTH_DS3678** - DS3678 Bluetooth scanner
+	* **PLUGABLE_SSI** - Serial SSI scanner RS429 (for use with WT6000)
+	* **PLUGABLE_SSI_RS5000** - Serial SSI scanner RS5000 (for use with WT6000)
+	* **USB_SSI_DS3608** - DS3608 pluggable USB scanner
 * `scanner_selection_by_identifier` [string]- takes a value from the list of Scanner Identifiers below:
-* **AUTO** - Automatic scanner selection
-* **INTERNAL_IMAGER** - Built-in imager scanner
-* **INTERNAL_LASER** - Built-in laser scanner
-* **INTERNAL_CAMERA** - Built-in camera scanner
-* **SERIAL_SSI** - Pluggable Z-back scanner for ET50/ET55 
-* **BLUETOOTH_SSI** - RS507 Bluetooth scanner
-* **BLUETOOTH_RS6000** - RS6000 Bluetooth scanner
-* **BLUETOOTH_DS3678** - DS3678 Bluetooth scanner
-* **PLUGABLE_SSI** - Serial SSI scanner RS429 (for use with WT6000)
-* **PLUGABLE_SSI_RS5000** - Serial SSI scanner RS5000 (for use with WT6000)
-* **USB_SSI_DS3608** - DS3608 pluggable USB scanner
+	* **AUTO** - Automatic scanner selection
+	* **INTERNAL_IMAGER** - Built-in imager scanner
+	* **INTERNAL_LASER** - Built-in laser scanner
+	* **INTERNAL_CAMERA** - Built-in camera scanner
+	* **SERIAL_SSI** - Pluggable Z-back scanner for ET50/ET55 
+	* **BLUETOOTH_SSI** - RS507 Bluetooth scanner
+	* **BLUETOOTH_RS6000** - RS6000 Bluetooth scanner
+	* **BLUETOOTH_DS3678** - DS3678 Bluetooth scanner
+	* **PLUGABLE_SSI** - Serial SSI scanner RS429 (for use with WT6000)
+	* **PLUGABLE_SSI_RS5000** - Serial SSI scanner RS5000 (for use with WT6000)
+	* **USB_SSI_DS3608** - DS3608 pluggable USB scanner
 
 
 ### Return Values

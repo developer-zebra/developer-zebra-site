@@ -74,8 +74,8 @@ A method for Android apps to expose configuration options and accept settings. T
 ### Management Extensions (MX)
 Zebra-proprietary Privilege Escalation method designed to enable an unprivileged EMM agent to access all “missing” functions needed to enable an EMM vendor to implement a “complete” EMM solution for managing Zebra Android devices. MX was developed in parallel with the Android Device Administrator, and predates the availability of the Profile Owner and Device Owner Privilege Escalation methods. 
 
-### `McTool.jar`
-A Java app developed by Zebra Technologies that presents a data-driven user interface from the contents of a schema. [Download McTool](../../downloads).
+### `MC Tool.jar`
+A Java app developed by Zebra Technologies that presents a data-driven user interface from the contents of a schema. [Download MC Tool](../../downloads).
 
 ### MDM
 Mobile Device Management. See EMM. 

@@ -27,7 +27,7 @@ To aid EMM developers, Zebra provides two fully working tools as examples of eff
 
 See the [download page](../../downloads) to access these files. 
 
-`McTool.jar` - A Java app that presents a data-driven user interface from the contents of a schema.
+`MC Tool.jar` - A Java app that presents a data-driven user interface from the contents of a schema.
 
 `Schema.json` - The Zebra OemConfig schema. Contains Zebra-specific function definitions and a source for building a data-driven configuration UI. 
 

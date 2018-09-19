@@ -56,8 +56,8 @@ _Click image to enlarge_.
 
 > **IMPORTANT NOTES**: <br>
 * **Zebra devices running Android 7.x Nougat and 8.x Oreo support DA <u>and</u> DO agents**.
-* Porting options described in the EMMTK include features implemented in [MX 8.1](/mx) ([See function map](../functionmap)).
-> * **<u>Agents for Oreo (and later) must be unsigned</u>**; Zebra devices running Android 8.x and later do not support signed agents.
+* **Agents for Oreo (and later) must be <u>unsigned</u>**; Zebra devices running Android 8.x and later do not support signed agents.
+> * Porting options described in the EMMTK include features implemented in [MX 8.1 and MX 8.2](/mx) ([See function map](../functionmap)).
 > * **Support for MX ends with Android 9.x Pie**; devices running Android Pie must use [unsigned DO/DA+ZMC](../port/#unsigneddodaagentzmc) agents.
 
 -----

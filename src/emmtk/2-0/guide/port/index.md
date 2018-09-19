@@ -17,9 +17,9 @@ This guide is intended for EMM vendors and other Zebra partners that offer solut
 
 -----
 
-**Milestones for devices running**:
+**Milestones, by Android version**:
 
-* **Android KitKat, Lollipop and Marshmallow**:
+* **Android 4.4 KitKat, 5.x Lollipop and 6.x Marshmallow**:
  * Support continues for existing EMM solutions targeting these OS versions.
  * EMM vendors are encouraged to begin porting agents to the Device Owner model.
 * **Android 7.x Nougat**: 
@@ -31,6 +31,8 @@ This guide is intended for EMM vendors and other Zebra partners that offer solut
  * End of support for signed agents.
  * All agents must be unsigned.
  * Tier-1 EMMs must adapt signed agents to an alternate [Privilege Escalation Method](../glossary/#privilegeescalation) based on the Android version(s) the vendor intends to support.
+* **Android 9.x Pie**: 
+ * **End of support for MX**; devices must use [unsigned DO/DA+ZMC](../port/#unsigneddodaagentzmc) agents.
 
 -----
 
@@ -74,7 +76,7 @@ To successfully manage current and future Zebra Android devices running Android 
 ### Unsigned DO/DA Agent + ZMC
 
 <img alt="image" style="height:350px" src="EMM_unsigned_DO_EMM_agent+ZMC.png"/>
-_This approach is the most universal, "future-proof" and standards-compliant. Click image to enlarge_. 
+_This approach is the most universal, "future-proof" and standards-compliant method. Click image to enlarge_. 
 
 **This is Zebra's most preferred approach because it**: 
 

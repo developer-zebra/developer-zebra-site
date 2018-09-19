@@ -61,7 +61,7 @@ To update a device for use with the bypass barcode, visit to the relevant page b
 
 ## See Also
 
-* **[FAQ](../faq)** | Frequently asked questions and answers
+* **[FAQ](../faq)** | Frequently asked questions about EMM Toolkit 
 * **[EMMTK Glossary](../glossary)** | Defines terms used in the EMM Toolkit
 * **[AEDO Porting Guide](../port)** | EMM agent porting options 
 * **[Persistence Best Practices](../persistence)** | Zebra-recommended processes for EMMs

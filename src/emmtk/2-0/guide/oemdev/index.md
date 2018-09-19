@@ -57,7 +57,7 @@ _Rendering the Analytics section of the schema in Zebra McTool sample app. Click
 ## See Also 
 
 * [About EMM Toolkit](../about) | General information
-* [FAQ](../faq) | Frequently asked questions and answers
+* [FAQ](../faq) | Frequently asked questions about EMM Toolkit 
 * [Staging Service APIs](../api) | Interface specs for cloud-based staging
 * [Other EMMTK Guides](../../guide) | A complete list of all guides in the EMM Toolkit
 * **[Porting Overview (.pdf)](pdf)** | Options for porting an EMM agent

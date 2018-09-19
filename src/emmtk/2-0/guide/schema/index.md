@@ -23,7 +23,7 @@ _caption_
 ## See Also
 
 * [About EMM Toolkit](../about) | General information
-* [FAQ](../faq) | Frequently asked questions and answers
+* [FAQ](../faq) | Frequently asked questions about EMM Toolkit 
 * [Staging Service APIs](../api) | Interface specs for cloud-based staging
 * [Other EMMTK Guides](../../guide) | A complete list of all guides in the EMM Toolkit
 * **[Porting Overview](../port)** | Options for porting an EMM agent

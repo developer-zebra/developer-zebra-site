@@ -64,7 +64,7 @@ _Click image to enlarge_.
 
 ## See Also
 
-* **[FAQ](../faq)** | Frequently asked questions and answers
+* **[FAQ](../faq)** | Frequently asked questions about EMM Toolkit 
 * **[EMMTK Glossary](../glossary)** | Defines terms used in the EMM Toolkit
 * **[AEDO Porting Guide](../port)** | EMM agent porting options 
 * **[Persistence Best Practices](../persistence)** | Zebra-recommended processes for EMMs

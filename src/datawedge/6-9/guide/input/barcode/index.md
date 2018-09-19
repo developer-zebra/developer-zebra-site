@@ -1022,16 +1022,37 @@ _When Multi-barcode scanning mode is enabled (as above)_...
 
 ------
 
-**Character Set Selection -** Allows the user to convert the barcode data if different from default encoding type. UTF-8 is the default value. Other options are ISO-8859-1 and Shift_JIS.
-
-------
-
 **Viewfinder Mode -** Permits selection of supported Viewfinder modes: 
 
 * **Viewfinder Enabled -** Enables only the viewfinder.
 
 * **Static Reticle -** Enables the viewfinder and a red reticle (cross-hairs) in the center of the screen to aid in positioning the barcode for scanning. **This parameter is supported only when the Camera is used for scanning**.
 
+-----
+
+### Character Set Configuration
+Provides options to make adjustments with the decoder character set. These options are:
+* Character Set Selection 
+* Auto Character Set Preferred Oder 
+* Auto Character Set Failure Option 
+
+![img](charset_config.png)
+
+**Character Set Selection** - Converts the barcode data to the specified encoding type if different from the default encoding type, UTF-8. Other options are: Auto Character Set Selection, ISO-8859-1, Shift_JIS and GB18030.
+
+Auto Character Set Selection - Automatically converts the decoded data based on the barcode type decoded.
+
+![img](charset_values.png)
+
+**Auto Character Set Preferred Order** - Decodes data in the specified preference order of listed character sets. This is useful in cases where data can be decoded from more than one character set. The first character set listed which can decode the data successfully is chosen to decode the data. Any other character set located lower in the list is not considered, even if the data could be successfully decoded using that character set.
+
+Both the preferred character set list and its preference order is configurable. The order is rearranged by dragging the “hamburger” icon of the character set into the desired position. To delete a character set, long press on the item and the “Delete” option appears. To add a new character set, tap the “hamburger” menu at top right corner - an option to add characters sets, such as UTF-8 and GB2312, will appear.
+
+![img](charset_set_order.png)
+
+**Auto Character Set Failure Option** - Used to decode data if the device cannot successfully decode based on the character sets listed in the "Auto Character Set Preferred Order" list. If “None” is selected, “Null” is returned as the data string.
+
+![img](charset_failure_option.png)
 -----
 
 ## Scan Params

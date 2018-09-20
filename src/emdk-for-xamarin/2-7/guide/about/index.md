@@ -96,7 +96,7 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 * **Windows**
     * Visual Studio
         * 2013
-        * 2015
+        * 2015 (up to v15.5)
         * 2017
 * **Mac OS X**
     * Visual Studio (beta)
@@ -104,6 +104,8 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
         * 6.x
 
 > **EMDK for Xamarin 2.7 is the last version to support Visual Studio 2013 and 2015**
+
+**Note for VS2015 users**: EMDK for Xamarin supports Visual Studio 2015 only up to version 15.5. Upgrading to any higher version results in failure. **Zebra recommends using Visual Studio 2017**. 
 
 -----
 

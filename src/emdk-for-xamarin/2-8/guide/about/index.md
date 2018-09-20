@@ -17,13 +17,16 @@ The following is required for using EMDK for Xamarin:
 **Windows**:
 * Windows 7, 8, 8.1, 10 (32- or 64-bit)
 * Java Development Kit (JDK) v7u45 or higher
-* Visual Studio 2017 or 2015
+* Visual Studio 2017
+* Visual Studio 2015 (up to v15.5) 
 
 **Mac OS X**:  
 * Mac OS X 10.10 or higher (64-bit)
 * Java for OS X 2014-10x or higher
 * Java Development Kit (JDK) v7u75 or higher
 * Visual Studio for Mac
+
+**Note for VS2015 users**: EMDK for Xamarin supports Visual Studio 2015 only up to version 15.5. Upgrading to any higher version results in failure. **Zebra recommends using Visual Studio 2017**. 
 
 -----
 

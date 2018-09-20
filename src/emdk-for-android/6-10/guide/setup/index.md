@@ -57,9 +57,9 @@ In order to develop Android applications with Android Studio you must first inst
 ###Android Studio
 Android studio is now Google's official IDE for Android development. Using Android Studio will give you access to the latest IDE updates.
 
-**Windows** - Follow this [**guide**](/emdk-for-android/6-9/guide/setupAndroidStudio) to setup the EMDK for Android in Android Studio.
+**Windows** - Follow this [**guide**](/emdk-for-android/6-10/guide/setupAndroidStudio) to setup the EMDK for Android in Android Studio.
 
-**Mac** - Follow this [**guide**](/emdk-for-android/6-9/guide/setupAndroidStudioMac) to manually setup the EMDK for Android in Android Studio.
+**Mac** - Follow this [**guide**](/emdk-for-android/6-10/guide/setupAndroidStudioMac) to manually setup the EMDK for Android in Android Studio.
 
 
 

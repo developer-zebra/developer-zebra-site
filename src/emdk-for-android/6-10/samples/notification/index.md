@@ -34,7 +34,7 @@ Android API 22 must be installed via the SDK Manager before attempting to load t
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/6-9/guide/emdksamples_androidstudio)
+* [Android Studio](/emdk-for-android/6-10/guide/emdksamples_androidstudio)
 
 
 

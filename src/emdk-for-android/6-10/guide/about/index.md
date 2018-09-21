@@ -9,7 +9,9 @@ productversion: '6.10'
 
 EMDK for Android is an extension for the Android Studio IDE for Mac OS and Windows that adds a comprehensive set of tools to easily create powerful line-of-business applications for Zebra Android devices. EMDK for Android includes class libraries, sample apps and source code to enable developers to easily build apps that take full advantage of the power of Zebra devices.
 
-EMDK for Android also inserts exclusive Profile Manager technology within the IDE, providing a GUI-based development tool for adding all the code required to access Zebra device settings. This enables developers to write fewer lines of code, produce fewer errors and reduce overall development time and effort.
+EMDK for Android also inserts exclusive Profile Manager technology within the IDE, providing a GUI-based development tool for adding all the code required to access Zebra device features and settings. This enables developers to write fewer lines of code, produce fewer errors and reduce overall development time and effort when targeting Zebra devices.
+
+> **Important**: Zebra no longer distributes installers for EMDK for Android. The EMDK Profile Manager plug-in for Android Studio is now distributed through the JetBrains plugins repository, and the EMDK SDK is distributed through JCenter repository. [More info](../setup).
 
 -----
 
@@ -32,14 +34,14 @@ EMDK for Android also inserts exclusive Profile Manager technology within the ID
 * TC75x  - Marshmallow, Nougat 
 * TC8000 - Lollipop
 * VC80x  - Nougat
-* **WT6000** - Lollipop, **Nougat** `NEW`
+* WT6000 - Lollipop, Nougat
 
 #### Scanners and imagers
 
 * DS3608
 * DS3678
-* **LI3608** `NEW`
-* **LI3678** `NEW`
+* LI3608
+* LI3678
 * RS507
 * RS4000
 * RS5000

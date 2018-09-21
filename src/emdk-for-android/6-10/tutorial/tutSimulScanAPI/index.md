@@ -1,5 +1,5 @@
 ---
-title: Capture critical data from documents using SimulScan API
+title: Using SimulScan APIs to Capture Data
 layout: guide.html
 product: EMDK For Android
 productversion: '6.10'
@@ -7,7 +7,7 @@ productversion: '6.10'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [SimulScan APIs](/emdk-for-android/6-10/api/simulscan) introduced in EMDK V 3.1, to capture critical data from documents. This facilitates capturing fields of interest from a document and converting them into data that an end-user application can use immediately at the point of transaction.
+This guide walks through the creation of an app using EMDK For Android that uses [SimulScan APIs](/emdk-for-android/6-10/api/simulscan) (introduced in EMDK V 3.1) to capture critical data from documents. This facilitates capturing fields of interest from a document and converting them into data that an end-user application can use immediately at the point of transaction.
 
 Different ways of capturing data from documents using [SimulScan API](/emdk-for-android/6-10/api/simulscan) are:
 

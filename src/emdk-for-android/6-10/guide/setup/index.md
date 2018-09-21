@@ -29,6 +29,19 @@ The following software must be installed prior to using EMDK for Android:
 	* The Android SDK Build-tools rev.21.1.x or higher
  -->
 
+
+repo: 
+https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.xml
+
+
+### Prepare a macOS PC
+
+
+
+### Prepare a Windows PC
+
+
+OLD OLD OLD OLD
 **Notes**:
 
 * **Install the Android SDK Platform package on the development host** appropriate for targeting the corresponding EMDK API SDK add-on. For example, Android 6.0 (API 23) must be installed for targeting EMDK APIs (API 23) as Compile SDK Version in Android Studio.

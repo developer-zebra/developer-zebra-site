@@ -99,7 +99,5 @@ Used to specify the Action to perform on an application or app-related setting. 
 
 **Notes**: 
 * **<u>"Protected" Apps remain on the "Recent Apps" list after the list has been cleared</u> using the "ClearRecentApps" Action**.<br>See Protected List Action parameter for more information.
-* **When persisting the DisableGMSApps Action across an Enterprise Reset, <u>it MUST be preceded by a bypass of the Android Setup Wizard**</u> to prevent unpredictable behavior. <br>See [Power Manager](/mx/powermgr/#setup-wizard-bypass) for more information. 
+* **When persisting the DisableGMSApps Action across an Enterprise Reset, <u>the Action MUST be preceded by a bypass of the Android Setup Wizard**</u> to prevent unpredictable behavior. <br>See [Power Manager](/mx/powermgr/#setup-wizard-bypass) for more information. 
 * **Enable/Disable GMS Apps Action supported on SDM660-platform devices only**.
-
-When persisting DisableGMSApps across an Enterprise Reset you MUST first bypass the Android Setup Wizard using the Power Manager to avoid unpredictable behaviour after the reset

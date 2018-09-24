@@ -19,8 +19,8 @@ The following software must be installed prior to using EMDK for Android:
 (EMDK for Android validated on Android Studio 2.2.x, 2.3.x, 3.0 and 3.1)
 
 **Mac OS X**:  
-* Mac OS X 10.10.x Yosemite or 10.11.x El Capitan (64-bit)
-* Java for OS X 2014-10x or higher
+* macOS 10.10.5 Yosemite later
+* Java for macOS 2014-10x or later
 * Java Development Kit (JDK) v7u75 or higher
 
 <!-- 1/30/18- removed per eng. TUT-22799
@@ -36,6 +36,8 @@ https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.
 
 ### Prepare a macOS PC
 
+1. Install (or update to) the latest version of Java SE. 
+2. 
 
 
 ### Prepare a Windows PC

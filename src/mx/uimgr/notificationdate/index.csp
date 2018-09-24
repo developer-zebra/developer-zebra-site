@@ -1,0 +1,35 @@
+---
+csp: uimgr
+title: Date Launches Clock App Enable/Disable
+type: parm
+order: 6
+mx: "8.2"
+osx: "7.7"
+devicetype: A
+parm:
+  pivotal: No
+  name: NotificationDate
+  type: list
+  list:
+    - code: 0
+      mx: "8.2"
+      osx: "7.7"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to settings; any previously selected setting is retained. 
+    - code: 1
+      devicetype: A
+      name: Enable 
+      mx: "8.2"
+      osx: "7.7"
+      description: Allows the Clock app to launch on the device by tapping the  date in the Notifications drop-down panel.
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "8.2"
+      osx: "7.7"
+      description: Prevents the Clock app from launching on the device by tapping the date in the Notifications drop-down panel.
+---
+
+This is the On/Off switch for launching the Clock app on the device by tapping the date in the Notifications drop-down panel. 
+

@@ -1,0 +1,34 @@
+---
+csp: uimgr
+title: App Info Icon Enable/Disable
+type: parm
+order: 6
+mx: "8.2"
+osx: "7.7"
+devicetype: A
+parm:
+  pivotal: No
+  name: AppInfoIconOnRecentAppHeader
+  type: list
+  list:
+    - code: 0
+      mx: "8.2"
+      osx: "7.7"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to settings; any previously selected setting is retained. 
+    - code: 1
+      devicetype: A
+      name: Enable 
+      mx: "8.2"
+      osx: "7.7"
+      description: Allows the device respond to a "long-press" on an app icon in the Recent Apps Header.
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "8.2"
+      osx: "7.7"
+      description: Prevents the device from responding to a "long-press" of an app icon in the Recent Apps Header.
+---
+
+This is the On/Off switch for device response to a "long-press" of an app icon in the Recent Apps Header. When enabled, long-pressing an app icon allows the device user access application information and potentially undesireable actions, such as stopping the app.

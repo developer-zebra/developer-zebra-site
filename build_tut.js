@@ -731,6 +731,64 @@ var sitebuild = Metalsmith(__dirname)
     .use(foldermenu({
         folder: 'emdk-for-android/6-9/'
     }))
+   //emdk for android 6.10
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-10/api/',
+        automenu: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-10/api/barcode',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-10/api/core',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-10/api/notification',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-10/api/payment',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-10/api/PersonalShopper',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-10/api/scanandpair',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-10/api/securenfc',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-10/api/serialcomm',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-10/api/simulscan',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-10/api/notification',
+        automenu: true,
+        ascontent: true
+    }))
+    .use(foldermenu({
+        folder: 'emdk-for-android/6-10/'
+    }))
     //emdk for xamarin 1.0
     .use(foldermenu({
         folder: 'emdk-for-xamarin/1-0/api/',

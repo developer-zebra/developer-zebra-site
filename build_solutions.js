@@ -222,6 +222,9 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'devicecentral/2-0/'
     }))
     .use(foldermenu({
+        folder: 'ppc/1-0/'
+    }))
+    .use(foldermenu({
         folder: 'enterprise-keyboard/1-8/'
     }))
     .use(foldermenu({

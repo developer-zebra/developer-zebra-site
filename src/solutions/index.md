@@ -177,6 +177,21 @@ products:
         url: ../contact
       - title: Search
         url: ../search
+  - title: PowerPrecision Console
+    description: A centralized web-based solution to track battery health and metrics in identifying unhealthy batteries for decommissioning.
+    url: /ppc
+    image: /images/products/ppc.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /ppc/1-0/guide/about
+      - title: Install & Setup
+        url: /ppc/1-0/guide/setup
+      - title: Using PowerPrecision Console
+        url: /ppc/1-0/guide/usage
+    versions:
+      - url: /ppc/1-0/guide/about
+        label: '1.0'
 menu:
   items:
     - title: About Techdocs

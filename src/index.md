@@ -21,6 +21,8 @@ products:
         url: ../ehs
       - title: Enterprise Keyboard
         url: ../enterprise-keyboard
+      - title: PowerPrecision Console
+        url: ../ppc
   - title: DataWedge
     description: An app for Zebra Android and Windows devices that provides barcode scanning and processing services for virtually any other app on the device.
     url: /datawedge/6-7/guide/about

@@ -1,6 +1,6 @@
 ---
 title: Device Central
-img: /images/products/ActiveEdge.png
+img: /images/products/DeviceCentral.png
 layout: list-mx.html
 menu:
   title: Device Central

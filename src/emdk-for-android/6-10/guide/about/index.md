@@ -7,7 +7,7 @@ productversion: '6.10'
 
 ## Overview
 
-EMDK for Android extends the Android Studio IDE for macOS and Windows with tools for easily creating powerful line-of-business applications for Zebra Android devices. EMDK for Android includes class libraries, sample apps and source code that enables developers to easily build apps that take full advantage of the power of Zebra devices.
+EMDK for Android extends the Android Studio IDE for Mac OS and Windows with tools for easily creating powerful line-of-business applications for Zebra Android devices. EMDK for Android includes class libraries, sample apps and source code that enables developers to easily build apps that take full advantage of the power of Zebra devices.
 
 Also included is Profile Manager, which enhances to Android IDE with a GUI-based tool for generating all the code required to access and configure Zebra device features and settings. This enables developers to target Zebra devices with fewer lines of code, fewer errors and reduced overall development time.
 
@@ -164,16 +164,16 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
 
 ### Software Support
 
-**Now supports [Android Studio v3.1](https://android-developers.googleblog.com/2018/03/android-studio-3-1.html)**
+**Now supports [Android Studio 3.1](https://android-developers.googleblog.com/2018/03/android-studio-3-1.html)**
 
-**Now supports MX v8.0** in Profile Manager adds the following Settings Types and features:
+**Now supports MX 8.0** in Profile Manager adds the following Settings Types and features:
 
 * **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
  * Clear Application Cache 
  * Enable/disable All GMS Applications on the "Safe to Disable" list
 * **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions: 
  * Select a licensing file to be embedded in the XML
- * Select a preactivated license source 
+ * Select a pre-activated license source 
  * Query product-specific license information
  * Specify product name to be queried
  * Select the method used to supply the license .bin file
@@ -248,7 +248,7 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
 	* Barcodes can be of multiple label types. If the required number of barcodes (from 1-10, as set using the `BarcodeCount` parameter) is not in view of the scanner, the scanner will not decode any data. 
 	* If the scanner's field of view contains a number of barcodes greater than the value set by `BarcodeCount`, the scanner will randomly decode any barcode(s) until the count is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner returns data for the first two barcodes it sees, and returns the data in random order.
 	* There is no guarantee that the order of returned data will be the same on any two scans; order of individual barcode data can vary with each scan.
-	* In multi-barcode scanning mode, when a picklist reader parameter is set to a value other than “Disabled," the user is expected to move the crosshair to the specified number of barcodes to be scanned. Set this value (from 2-10) using the `BarcodeCount` parameter. Data is returned only after the specified number of barcodes is read.
+	* In multi-barcode scanning mode, when a picklist reader parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to the specified number of barcodes to be scanned. Set this value (from 2-10) using the `BarcodeCount` parameter. Data is returned only after the specified number of barcodes is read.
 
 -----
 

@@ -7,25 +7,23 @@ productversion: '6.10'
 
 ## Overview
 
-EMDK for Android provides the interface for developing Enterprise applications that access Zebra value-adds such as scanners and magstripe readers on its Android devices. This document describes how to set up a macOS or Windows computer to work with the EMDK and Profile Manager tools.
+This document describes how to set up Mac OS and Windows computers to work with the EMDK for Android SDK. EMDK extends Android Studio with tools to interface with imagers, scanners, magstripe readers and other peripherals found on Zebra Android devices, and lets developers easily create powerful line-of-business applications to help maximize workflow efficiency. 
 
 ### Prerequisites
 The following software is required to use EMDK for Android:
 
 **Windows**:
 * Windows 7, 8, 8.1, 10 (32- or 64-bit)
-* Android Studio 2.2 or higher (includes OpenJDK) 
-* Optional: [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u45 or higher [(How to install)](https://www.java.com/en/download/help/windows_offline_download.xml)
+* [Android Studio](https://developer.android.com/studio/) 2.2 or higher (includes OpenJDK) 
+* [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u45 or higher (**optional**)
 
-**Mac OS X**:  
-* Mac OS X (aka macOS) 10.10.5 Yosemite later
-* Android Studio 2.2 or higher (includes OpenJDK)
+**Mac OS**:  
+* Mac OS X (aka macOS) 10.10.5 Yosemite or later
+* [Android Studio](https://developer.android.com/studio/) 2.2 or higher (includes OpenJDK)
+* [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u75 or higher (**optional**)
 
-* Optional: [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u75 or higher [(How to install)](https://java.com/en/download/help/mac_install.xml)
 
-
-> **Note**: Zebra recommends OpenJDK, which comes bundled with Android Studio 2.2 and higher (See below to activate). 
-
+> **Note**: Zebra recommends OpenJDK, which is bundled with Android Studio 2.2 and higher.
 
 <!-- 1/30/18- removed per eng. TUT-22799
 * Installed via Android SDK manager: 
@@ -40,36 +38,34 @@ https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.
 
  -->
 
-### Prepare a macOS PC
+### Prepare the development workstation
 
-1. Install (or update to) the latest version of Java SE. 
-2. 
+1. Download [Android Studio](https://developer.android.com/studio/) and install.
+2. **Activate OpenJDK**:<br>
+   a. Open an Android Studio project (if not already open).<br>
+   b. Select **File -> Project Structure**.<br>
+   c. In the left-hand pane **select "SDK Location"** (if not already selected).<br>
+   d. Confirm that "Use embedded JDK (recommended)" is checked.
+3. **Install the EMDK plug-in**:<br>
+   a. In Android Studio, select **File -> Settings.**<br>
+   b. In the left-hand pane, **select "Plugins"** settings page.<br>
+   c. **Enter "emdk" in the search box**:<br> 
+    •  If no result appears, skip to Step d.<br>
+    •  If any version prior to 6.10 appears, **click the "Uninstall" button**.<br>
+    •  Click the **"Restart Android Studio"** button.<br>
+    •  Select **File -> Settings.**<br>
+    •  In the left-hand pane, **select "Plugins"** settings page.<br>
+    •  Proceed to Step d.<br>
+   d. **Click "Browse repositories..."** button.<br>
+   e. **Click "Manage repositories..."** button.<br> 
+   f. **Click "+"** and enter URL of the repository containing the EMDK plug-in:<br> 
+   `https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.xml`<br>
+   g. **Click "Check Now"** button.<br>
+   h. **Click OK** on all confirmation boxes that appear.<br> 
 
+> **Note**: The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
-### Prepare a Windows PC
-
-
-No harm keeping that JDK 1.7 requirement as separately installed JDK can be updated as per the developers preference whereas it may not be possible with the bundled one unless they update the Android Studio. However, as an additional information, we can mention OpenJDK as well.
-
-Set the JDK version
-
-A copy of the latest OpenJDK comes bundled with Android Studio 2.2 and higher, and this is the JDK version we recommend you use for your Android projects. To use the bundled JDK, proceed as follows:
-
-1.      Open your project in Android Studio and select File > Project Structure in the menu bar.
-
-2.      In the SDK Location page and under JDK location, check the Use embedded JDK checkbox.
-
-3.      Click OK.
-
-By default, the Java language version used to compile your project is based on your project's compileSdkVersion(because different versions of Android support different versions of Java).
-
-Ref: https://developer.android.com/studio/intro/studio-config#jdk
-
- 
-
- 
-
-Screens of macOS-based browsers vary slightly. 
+**Note**: MacOS and Windows dialog boxes vary slightly. 
 
 OLD OLD OLD OLD
 **Notes**:

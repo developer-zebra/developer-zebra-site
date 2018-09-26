@@ -23,16 +23,17 @@ The following software must be installed prior to using EMDK for Android:
 * Java for macOS 2014-10x or later
 * Java Development Kit (JDK) v7u75 or higher
 
+> [Download the Java Development Kit](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+
 <!-- 1/30/18- removed per eng. TUT-22799
 * Installed via Android SDK manager: 
 	* The Android API 19 packages
 	* The Android SDK Build-tools rev.21.1.x or higher
- -->
-
 
 repo: 
 https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.xml
 
+ -->
 
 ### Prepare a macOS PC
 
@@ -42,6 +43,8 @@ https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.
 
 ### Prepare a Windows PC
 
+
+Screens of macOS-based browsers vary slightly. 
 
 OLD OLD OLD OLD
 **Notes**:

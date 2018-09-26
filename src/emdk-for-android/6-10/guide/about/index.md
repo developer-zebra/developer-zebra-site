@@ -7,11 +7,11 @@ productversion: '6.10'
 
 ## Overview
 
-EMDK for Android is an extension for the Android Studio IDE for macOS and Windows that adds a comprehensive set of tools to easily create powerful line-of-business applications for Zebra Android devices. EMDK for Android includes class libraries, sample apps and source code to enable developers to easily build apps that take full advantage of the power of Zebra devices.
+EMDK for Android extends the Android Studio IDE for macOS and Windows with tools for easily creating powerful line-of-business applications for Zebra Android devices. EMDK for Android includes class libraries, sample apps and source code that enables developers to easily build apps that take full advantage of the power of Zebra devices.
 
-EMDK for Android also inserts exclusive Profile Manager technology within the IDE, providing a GUI-based development tool that generates all the code required to access Zebra device features and settings. This enables developers who target Zebra devices to write fewer lines of code, produce fewer errors and reduce overall development time and effort.
+Also included is Profile Manager, which enhances to Android IDE with a GUI-based tool for generating all the code required to access and configure Zebra device features and settings. This enables developers to target Zebra devices with fewer lines of code, fewer errors and reduced overall development time.
 
-> **Important**: Zebra no longer distributes installers for EMDK. The EMDK SDK is now distributed through a JFrog JCenter repository and the EMDK Profile Manager plug-in is distributed through the JetBrains plugins repository. [More info](../setup).
+> **Important**: Zebra no longer distributes EMDK installers from the Zebra support web site. The EMDK SDK add-on for Android Studio is now distributed through a JFrog JCenter repository and the EMDK Profile Manager plug-in is distributed through the JetBrains plug-in repository. [More info](../setup).
 
 -----
 
@@ -57,7 +57,7 @@ EMDK for Android also inserts exclusive Profile Manager technology within the ID
 
 ## What's New in 6.10
 
-> **Important**: Zebra no longer distributes installers for EMDK. The EMDK SDK is now distributed through a JCenter repository and the EMDK Profile Manager plug-in is distributed through the JetBrains plugins repository. [More info](../setup).
+> **Important**: Zebra no longer distributes EMDK installers from the Zebra support web site. The EMDK SDK add-on for Android Studio is now distributed through a JFrog JCenter repository and the EMDK Profile Manager plug-in is distributed through the JetBrains plug-in repository. [More info](../setup).
 
 ### Device Support
 
@@ -81,44 +81,44 @@ This version adds support for the following scanners and/or imagers:
 
 **Support for MX 8.2** provides the following enhancements:
 
-* **UI Manager new features**: 
+* **Enhanced [UI Manager](../../mx/uimgr)** adds these new features: 
  * Enable/disable long-press on HOME key
  * Enable/disable date in Notification panel
  * Enable/disable long press on Recent Apps header icon to control access to app info
 
 **Support for MX 8.1** provides the following enhancements:
-* **Power Manager new features**:
+* **Enhanced [Power Manager](../../mx/powermgr)** adds these new actions:
  * Specify an on-device file to verify an OS update
  * Specify whether to suppress auto-reboot following an A/B upgrade
-* **Battery Manager new features**:
+* **Enhanced [Battery Manager](../../mx/batterymgr)** adds these new actions:
  * Enable/disable use of Battery Swap Mode UI
  * Enable/disable “battery charging” LED
-* **Bug Report Manager new feature**:
+* **Enhanced [Bug Report Manager](../../mx/bugreportmgr)** adds a new action:
  * Specify a time before expiration (in days) to store or email bug reports or send them to the cloud 
-* **Cellular Manager new features**:
+* **Enhanced [Cellular Manager](../../mx/cellularmgr)** adds these new actions:
  * Enable/disable user access to public land mobile network (PLMN) a device uses
  * Specify the MCC/MNC network PLMN LockSet
  * Show/hide PLMN lock UI
  * Determine the status of PLMN lock UI
  * Enable/disable Dual SIM Standby
  * Get the status of DSDS
-* **DHCPOption Manager new features**:
+* **Enhanced [DHCP Option Manager](../../mx/dhcp)** adds these new actions:
  * Enable/disable requests for a custom DHCP option from server
  * Request or disable a specified DHCP Option
  * Enable/disable sending of a custom DHCP Option to server
  * Send or disable a specified DHCP Option
  * Send a value with a specified custom DHCP Option
-* **License Manager new features**:
+* **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions:
  * Specify an Activation ID to return a license from the device
  * Specify server friendly name for returning one or all licenses and for deleting license source
  * Select the license source type to be used to return one or all licenses
-* **Settings Manager new features**:
+* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds these new actions:
  * Enable/disable the slide out drawer for accessing Android system settings
-* **UI Manager new features**: 
+* **Enhanced [UI Manager](../../mx/uimgr)** adds these new actions: 
  * Enable/disable Split Screen mode
  * Enable/disable Do Not Disturb mode
  * Enable/disable Multi-user mode
-* **Wi-Fi new features**:
+* **Enhanced [Wi-Fi](../../mx/wifi)** adds these new actions:
  * Enable/disable MAC address randomization
  * Enable/disable Call Admission Control
  * Enable/disable user control of Hotspot state (active/inactive)
@@ -127,28 +127,13 @@ This version adds support for the following scanners and/or imagers:
 
 ### Deprecations
 
-<!-- FROM MAHESH's TICKET (TUT-25268):
--->
-**SecureNFC APIs** (`NEW`), which allow applications to perform secure communications with NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM), remain supported but are no longer being advanced.
-
-**The ProfileConfig class**, used to access profile data, remains supported but is no longer being advanced. Zebra recommends using the name-value pair function of the Profile Manager. Profile XML data also can be modified directly. See the Clock Sample for information about how to modify Profile XML data.
-
-**The ContinuousRead class**, used to enable continuous scanning, remains supported but is no longer being advanced. Zebra recommends using the aimType, sameSymbolTimeout, differentSymbolTimeout of the camera-, imager- and laser-specific reader parameters.
-
-**The picklist field**, used for enabling picklist mode, remains supported but is no longer being advanced. Use the picklistEx field instead.
-
-**Configuring DataWedge using EMDK Profile Manager**, along with Profile Manager capabilities categorized under Data Capture, remain supported but are no longer being advanced. Zebra recommends using DataWedge intent-based APIs to configure DataWedge profiles instead.
+**SecureNFC APIs**, which allow applications to perform secure communications with NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM), remain supported but are no longer being advanced.
 
 -----
 
 ### End of Support
 
-**EMDK 6.10 no longer supports target devices running Android 5.x Lollipop** or older. Distribution of the EMDK OS-update package for Lollipop devices ended with EMDK 6.9. The EMDK for Android v6.6 was the final version distributing EMDK OS update package with the PC/MAC installations for KitKat devices. For all Lollipop or higher devices, the EMDK update for a specific device will be distributed with the latest BSP or security incremental patch.
-
-EMDK for Android support for all Jelly Bean (Android 4.1.2) and TC70 KitKat (Android 4.4.2) BSP version 112414 devices has been terminated - EMDK for Android v5.0 was the final version supporting these devices.
-
-EMDK for Android support for Payment APIs has been terminated - The EMDK for Android v5.0 is the final version that supports Payment APIs.
-
+**EMDK 6.10 no longer supports target devices running Android 5.x Lollipop** or older. Distribution of the EMDK OS-update package for Lollipop devices ended with EMDK 6.9. The EMDK 6.6 was the final version to distribute EMDK as an OS update package with the PC/macOS installations for KitKat devices. For devices running Lollipop or later, EMDK updates for a specific device are distributed with the latest BSP or incremental security patch. 
 
 -----
 
@@ -156,7 +141,7 @@ EMDK for Android support for Payment APIs has been terminated - The EMDK for And
 
 ### Added in v6.9
 
-EMDK for Android 6.9 adds support for the following Zebra devices/OSes:
+EMDK 6.9 added support for the following Zebra devices/OSes:
 
 * **LI3608** rugged USB scanner
 * **LI3678** rugged Bluetooth scanner 

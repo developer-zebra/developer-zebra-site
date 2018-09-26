@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Get Started
 description: 'Developers new to EMDK can follow the guides below to get their development environment set up and begin to understand the foundations of EMDK for Android.'
 layout: list-content-items.html
 content-items:

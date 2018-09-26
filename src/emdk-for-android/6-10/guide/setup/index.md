@@ -49,9 +49,13 @@ https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.
 3. **Install the EMDK plug-in**:<br>
    a. In Android Studio, select **File -> Settings.**<br>
    b. In the left-hand pane, **select "Plugins"** settings page.<br>
-   c. **Enter "emdk" in the search box**:<br> 
+   c. **Enter "emdk" in the search box**:<br>
     •  If no result appears, skip to Step d.<br>
-    •  If any version prior to 6.10 appears, **click the "Uninstall" button**.<br>
+   <img alt="image" style="height:350px" src="uninstall_02.png"/>
+_Click to enlarge_.<br>
+    •  If any version prior to 6.10 appears (as shown above), **click the "Uninstall" button**.<br>
+<img alt="image" style="height:350px" src="uninstall_03.png"/>
+_Click to enlarge_.<br>
     •  Click the **"Restart Android Studio"** button.<br>
     •  Select **File -> Settings.**<br>
     •  In the left-hand pane, **select "Plugins"** settings page.<br>
@@ -67,54 +71,7 @@ https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.
 
 **Note**: MacOS and Windows dialog boxes vary slightly. 
 
-OLD OLD OLD OLD
-**Notes**:
-
-* **Install the Android SDK Platform package on the development host** appropriate for targeting the corresponding EMDK API SDK add-on. For example, Android 6.0 (API 23) must be installed for targeting EMDK APIs (API 23) as Compile SDK Version in Android Studio.
-* **Android SDK 23.0.x or higher build tools must be installed** for building EMDK samples.
-* **Close any running Android Studio sessions** prior to installing.
-
-## Configuring Development Environment
-In order to develop Android applications with Android Studio you must first install the Java Development Kit.
-
-### Installing Java Development Kit (JDK) for Windows
-
-1.	Go to [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
-2.	Download and install JDK v7u45 or newer.
-
-### Installing Java Development Kit (JDK) for Mac
-
-**Installing Java for OS X 2014-10x:**
-1. Go to https://support.apple.com/kb/dl1572?locale=en_US.
-2. Download and install Java for OS X 2014 (ex: JavaForOSX2014-101.dmg).
-
-**Installing Java Development Kit (JDK) 7:**
-1. Go to http://www.oracle.com/technetwork/java/javase/downloads/index.html.
-2. Download and install JDK 7 (v7u75 – the JRE alone is not sufficient) or newer for Mac OS X x64 (ex: jdk-7u75-macosx-x64.dmg).  
-
-##Choosing a Development Environment
-###Android Studio
-Android studio is now Google's official IDE for Android development. Using Android Studio will give you access to the latest IDE updates.
-
-**Windows** - Follow this [**guide**](/emdk-for-android/6-10/guide/setupAndroidStudio) to setup the EMDK for Android in Android Studio.
-
-**Mac** - Follow this [**guide**](/emdk-for-android/6-10/guide/setupAndroidStudioMac) to manually setup the EMDK for Android in Android Studio.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### `MORE IMAGES TO FOLLOW`
 
 
 

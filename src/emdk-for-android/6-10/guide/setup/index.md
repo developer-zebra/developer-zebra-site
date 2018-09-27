@@ -62,8 +62,14 @@ _Click to enlarge_.<br>
     •  In the left-hand pane, **select "Plugins"** settings page.<br>
     •  Proceed to Step d.<br>
    d. **Click "Browse repositories..."** button.<br>
+   <img alt="image" style="height:350px" src="browse_repos_01.png"/>
+_Click to enlarge_.<br>
    e. **Click "Manage repositories..."** button.<br> 
+   <img alt="image" style="height:350px" src="browse_repos_02.png"/>
+_Click to enlarge_.<br>
    f. **Click "+"** and enter URL of the repository containing the EMDK plug-in:<br> 
+   <img alt="image" style="height:350px" src="browse_repos_03.png"/>
+_Click to enlarge_.<br>
    `https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.xml`<br>
    g. **Click "Check Now"** button.<br>
    h. **Click OK** on all confirmation boxes that appear.<br> 
@@ -83,7 +89,7 @@ _Click to enlarge_.<br>
 #### Windows 
 
 1. **Close Android Studio**, if open.
-2. From the Windows Menu -> "Symbol EMDK for Android" **select "Uninstall."**  
+2. From the Windows -> "Symbol EMDK for Android" menu **select "Uninstall."**  
 3. **Follow prompts** to complete the uninstallation.
 
 #### Mac OS
@@ -104,6 +110,8 @@ _Click to enlarge_.<br>
    * **Select "Show Package Contents"** from the menu.
    * Navigate to `Contents` -> `plugins` directory.
    * **Remove** `com.symbol.emdk.wizard.intellijIdea` **folder**, if present.
+
+-----
 
 **To unhide Mac OS folders**:
 

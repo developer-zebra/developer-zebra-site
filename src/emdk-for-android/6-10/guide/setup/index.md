@@ -12,12 +12,12 @@ productversion: '6.10'
 ### Prerequisites
 The following software is required to use EMDK for Android:
 
-**Windows**:
+#### Windows
 * Windows 7, 8, 8.1, 10 (32- or 64-bit)
 * [Android Studio](https://developer.android.com/studio/) 2.2 or higher (includes OpenJDK) 
 * [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u45 or higher (**optional**)
 
-**Mac OS**:  
+#### Mac OS  
 * Mac OS X (aka macOS) 10.10.5 Yosemite or later
 * [Android Studio](https://developer.android.com/studio/) 2.2 or higher (includes OpenJDK)
 * [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 7u75 or higher (**optional**)
@@ -39,6 +39,8 @@ https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.
  -->
 
 ### Install EMDK
+
+**Note**: Mac OS and Windows dialog boxes might vary slightly. 
 
 1. [Uninstall prior EMDK installations](#uninstallemdk) and related files, if any.  
 1. Download [Android Studio](https://developer.android.com/studio/) and install.
@@ -72,22 +74,30 @@ _Click to enlarge_.<br>
 _Click to enlarge_.<br>
    g. **Click "Check Now"** button.<br>
    h. **Click OK** on all confirmation boxes that appear.<br> 
-5. Install the EMDK SDK:<br>
+5. **Install the EMDK SDK**:<br>
    a. **Create an Android project** (File -> New -> New Project...).<br>
-   b. **Navigate to** `build.gradle` **file** in app module.<br>
-   c. **Add the line below to the dependencies section**:<br>
+   b. **Navigate to** `build.gradle` **file** in app module:<br>
+   <img alt="image" style="height:350px" src="gradle_01.png"/>
+_Click to enlarge_.<br>
+   c. **Add the line below to the dependencies section** (Gradle 3.4 or higher):<br>
+
 		:::java
-		implementation 'com.symbol:emdk:6.10.12
-   d. **If using Gradle 3.3 or lower**, also add:<br> 
+		dependencies {
+			implementation 'com.symbol:emdk:6.10.12'
+			...
+		}
+   d. **If using Gradle 3.3 or lower**, add this line **<u>instead</u>**:<br> 
+
 		:::java
-		compile 'com.symbol:emdk:6.10.12
+		dependencies {
+			compile 'com.symbol:emdk:6.10.12'
+			...
+		}
+6. **Rebuild the project** (Build -> Make Project). 
 
+##### EMDK APIs are now ready to use. 
 
-
-
-> **Note**: The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
-
-**Note**: Mac OS and Windows dialog boxes might vary slightly. 
+**Note**: The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
 <!-- 
 #### `MORE IMAGES TO FOLLOW`
@@ -137,5 +147,5 @@ _Click to enlarge_.<br>
 
 3. **Right-click on the Finder icon** (in the Dock) Hold the "Option/alt" key 
 4. **Select "Relaunch"** from the menu to make hidden files visible. 
-5. To reverse, replace "YES" with "NO" in Terminal command and repeat Step 3. 
+5. **To reverse, replace "YES" with "NO"** in Terminal command and repeat Step 3. 
 

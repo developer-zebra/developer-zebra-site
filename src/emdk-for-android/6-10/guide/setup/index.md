@@ -40,7 +40,7 @@ https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.
 
 ### Install EMDK
 
-1. [Remove previous EMDK installers](#uninstallemdk) and related files, if any.  
+1. [Uninstall prior EMDK installations](#uninstallemdk) and related files, if any.  
 1. Download [Android Studio](https://developer.android.com/studio/) and install.
 2. **Activate OpenJDK**:<br>
    a. Open an Android Studio project (if not already open).<br>
@@ -70,10 +70,11 @@ _Click to enlarge_.<br>
 
 > **Note**: The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
-**Note**: MacOS and Windows dialog boxes might vary slightly. 
+**Note**: Mac OS and Windows dialog boxes might vary slightly. 
 
+<!-- 
 #### `MORE IMAGES TO FOLLOW`
-
+ -->
 
 -----
 
@@ -82,21 +83,35 @@ _Click to enlarge_.<br>
 #### Windows 
 
 1. **Close Android Studio**, if open.
-2. From the Windows Menu, **select "Uninstall"** from the "Symbol EMDK for Android" menu.  
-3. **Follow prompts** to complete the uninstallation. 
+2. From the Windows Menu -> "Symbol EMDK for Android" **select "Uninstall."**  
+3. **Follow prompts** to complete the uninstallation.
 
 #### Mac OS
 
+**Note**: This process references folders that are hidden by default. To unhide, see section below. 
+
+**In the Mac OS Finder**:
+
 1. **Remove SDK add-ons**:
- a. Navigate to the /Users/[user]/Library/Android/sdk/add-ons directory.
-2. Remove addon-symbol_emdk-symbol-XX folders.
+   * Navigate to the `/Users/[userName]/Library/Android/sdk/add-ons` directory.<br>
+   * Remove any `addon-symbol_emdk-symbol-XX` folders.<br>
+2. **Remove Wizard Core**:
+   * Navigate to the `/Users/Shared` directory.
+   * **Remove the "Symbol EMDK for Android" folder**.
+3. **Remove Wizard plug-in**:
+   * Open the `Applications` folder.
+   * Locate and right-click the `Android Studio` app.
+   * **Select "Show Package Contents"** from the menu.
+   * Navigate to `Contents` -> `plugins` directory.
+   * Remove the `com.symbol.emdk.wizard.intellijIdea` folder, if present.
 
-**Removing Wizard Core**
-1. Navigate to /Users/Shared directory.
-2. Remove Symbol EMDK for Android folder.
+**To unhide Mac OS folders**:
 
-**Removing Wizard plug-in**
-1. Launch Finder and go to Applications (on the left side panel)
-2. Locate Android Studio.app right click and select Show Package Contents.
-2. Locate the Contents\plugins directory.
-4. Remove the com.symbol.emdk.wizard.intellijIdea folder.
+1. **Open Terminal** app (Finder -> Applications -> Utilities).
+2. Paste the following command into a Terminal window (and hit RETURN): 
+
+	:::term
+	defaults write com.apple.finder AppleShowAllFiles YES
+	
+
+3. While holding the "Option/alt" key, right-click on the Finder icon in the dock and select "Relaunch" from the menu. 

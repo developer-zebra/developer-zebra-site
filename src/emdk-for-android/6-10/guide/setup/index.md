@@ -99,19 +99,22 @@ _Click to enlarge_.<br>
    * Navigate to the `/Users/Shared` directory.
    * **Remove the "Symbol EMDK for Android" folder**.
 3. **Remove Wizard plug-in**:
-   * Open the `Applications` folder.
-   * Locate and right-click the `Android Studio` app.
+   * **Open Applications** folder.
+   * Locate and **right-click Android Studio** app.
    * **Select "Show Package Contents"** from the menu.
    * Navigate to `Contents` -> `plugins` directory.
-   * Remove the `com.symbol.emdk.wizard.intellijIdea` folder, if present.
+   * **Remove** `com.symbol.emdk.wizard.intellijIdea` **folder**, if present.
 
 **To unhide Mac OS folders**:
 
-1. **Open Terminal** app (Finder -> Applications -> Utilities).
-2. Paste the following command into a Terminal window (and hit RETURN): 
+1. **Open Terminal** app (in Finder -> Applications -> Utilities).
+2. **Paste the following into Terminal** window (and hit RETURN): 
 
-	:::term
-	defaults write com.apple.finder AppleShowAllFiles YES
-	
+		:::term
+		defaults write com.apple.finder AppleShowAllFiles YES
 
-3. While holding the "Option/alt" key, right-click on the Finder icon in the dock and select "Relaunch" from the menu. 
+
+3. **Right-click on the Finder icon** (in the Dock) Hold the "Option/alt" key 
+4. **Select "Relaunch"** from the menu to make hidden files visible. 
+5. To reverse, replace "YES" with "NO" in Terminal command and repeat Step 3. 
+

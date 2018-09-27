@@ -70,9 +70,20 @@ _Click to enlarge_.<br>
    f. **Click "+"** and enter URL of the repository containing the EMDK plug-in:<br> 
    <img alt="image" style="height:350px" src="browse_repos_03.png"/>
 _Click to enlarge_.<br>
-   `https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.xml`<br>
    g. **Click "Check Now"** button.<br>
    h. **Click OK** on all confirmation boxes that appear.<br> 
+5. Install the EMDK SDK:<br>
+   a. **Create an Android project** (File -> New -> New Project...).<br>
+   b. **Navigate to** `build.gradle` **file** in app module.<br>
+   c. **Add the line below to the dependencies section**:<br>
+		:::java
+		implementation 'com.symbol:emdk:6.10.12
+   d. **If using Gradle 3.3 or lower**, also add:<br> 
+		:::java
+		compile 'com.symbol:emdk:6.10.12
+
+
+
 
 > **Note**: The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
@@ -80,6 +91,8 @@ _Click to enlarge_.<br>
 
 <!-- 
 #### `MORE IMAGES TO FOLLOW`
+   `https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.xml`<br>
+
  -->
 
 -----

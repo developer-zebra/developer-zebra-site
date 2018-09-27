@@ -38,8 +38,9 @@ https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.
 
  -->
 
-### Prepare the development workstation
+### Install EMDK
 
+1. [Remove previous EMDK installers](#uninstallemdk) and related files, if any.  
 1. Download [Android Studio](https://developer.android.com/studio/) and install.
 2. **Activate OpenJDK**:<br>
    a. Open an Android Studio project (if not already open).<br>
@@ -74,4 +75,28 @@ _Click to enlarge_.<br>
 #### `MORE IMAGES TO FOLLOW`
 
 
+-----
 
+### Uninstall EMDK
+
+#### Windows 
+
+1. **Close Android Studio**, if open.
+2. From the Windows Menu, **select "Uninstall"** from the "Symbol EMDK for Android" menu.  
+3. **Follow prompts** to complete the uninstallation. 
+
+#### Mac OS
+
+1. **Remove SDK add-ons**:
+ a. Navigate to the /Users/[user]/Library/Android/sdk/add-ons directory.
+2. Remove addon-symbol_emdk-symbol-XX folders.
+
+**Removing Wizard Core**
+1. Navigate to /Users/Shared directory.
+2. Remove Symbol EMDK for Android folder.
+
+**Removing Wizard plug-in**
+1. Launch Finder and go to Applications (on the left side panel)
+2. Locate Android Studio.app right click and select Show Package Contents.
+2. Locate the Contents\plugins directory.
+4. Remove the com.symbol.emdk.wizard.intellijIdea folder.

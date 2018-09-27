@@ -68,7 +68,11 @@ Instructions for server installation and setup:
 	* Password: admin 
 
 ##Client Install & Setup
-Instructions to install and setup PPC on the Zebra device: 
+Instructions to install and setup PPC on the Zebra device.
+
+**Automated Install:** An EMM (Enterprise Mobility Management) or Zebra's [StageNow](/stagenow/latest/about) solution can be used for app deployment and provisioning.
+
+**Manual Install:** 
 1. Copy the .APK file from the default folder (C:\Program Files (x86)\Zebra Technologies\PowerPrecision Console\Release\Client) to the device. 
 The subfolders (M, N, O) are based on Android versions Marshmallow, Nougat, and Oreo.  Select the appropriate version based on the Android flavor installed on the device. 
 2. Launch the .APK to install.   

@@ -7,30 +7,29 @@ productversion: '1.0'
 
 ## Overview
 
-PowerPrecision Console (PPC) is an on-premise web-based solution providing the capability to continuously monitor Zebra battery health and metrics to easily identify and remove any unhealthy batteries prior to disruption in workforce productivity. It collects device battery condition and health information, uploads the data to a centralized management system for processing, and can send customized notifications to the device user to maintain an optimal inventory of healthy batteries.   
+PowerPrecision Console (PPC) is an on-premise web-based solution that provides proactive battery management for Zebra mobile computer deployed batteries tracking battery health and metrics. Easily identify and remove any unhealthy batteries prior to disruption in workforce productivity. The data is uploaded it to a centralized management system for processing, which the admin can send customized notifications to the device user to take action maintaining an optimal inventory of healthy batteries.
 
-Devices with the PPC client register with the server and report battery information based on configurations set on the server such as frequency and trigger type (low battery, battery insertion, power off event, etc.).  The state-of-health is monitored and historical data is recorded. As the battery depletes over time and the defined threshold level is reached, the administrator can take action and notify the user to prepare for battery decommissioning.  PPC is available for download from the Zebra Support and Software Download site <add link>. Deployment is currently limited to up to 10,000 devices and 20,000 batteries per installation. 
+Devices with the PPC client register with the server and report battery information based on configurations set on the server such as frequency and trigger type (low battery, battery insertion, power off event, etc.). The [state-of-health (SOH)](https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/powerprecision/fact-sheets/data-capture-dna-power-precision-fact-sheet-en-us.pdf) <sup>[1]</sup> is monitored and historical data is recorded. As the battery depletes over time and the defined threshold level is reached, the administrator can take action and notify the user to prepare for battery decommissioning. 
+
+PPC is available for download from the Zebra Support and Software Download site. Deployment is currently limited to up to 10,000 devices and 20,000 batteries per installation.
 
 PowerPrecision Console consists of two software components: 
-* Client – Runs on the device to collect battery and device information and send to the server.   
-* Server – Runs on a PC providing a centralized dashboard for administrators to monitor battery information for the deployed Zebra Mobile devices.
+* Client – Runs on the device to collect battery and device information sent to the server. 
+* Server – Runs on a server providing a centralized dashboard for administrators to monitor battery information on the deployed devices.
 
 ##Main Features
-The PowerPrecision Console main features are:
-* Centralized dashboard to easily view battery information tracking [state-of-health (SOH)](https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Software/Mobility%20Software/powerprecision/fact-sheets/data-capture-dna-power-precision-fact-sheet-en-us.pdf) <sup>*</sup>, state-of-charge (SOC), and other metrics of deployed Zebra mobile computer batteries
-  * Color-coded battery health indicator 
+PowerPrecision Console main features:
+* Centralized dashboard to easily view battery information tracking: state-of-health (SOH), state-of-charge (SOC), and other information from deployed Zebra mobile computer batteries 
+  * Color-coded battery health indicator for categories good, nearing end-of-life (EOL), EOL and 
   * Historical trend of battery health 
-  * Customizable device triggers 
-  * Filtering based on SOH, SOC, IP address, status, etc. 
-* Send customized messages to notify end-users to swap or decommission their poor health battery
-* Customizable snooze to give users a chance to complete a task before taking action to decommission the battery
+  * Filter and sort data 
+* Admin actions on batteries to segregate and decommission nearing EOL or EOL batteries
+* Customizable EOL message notifying end-users to prepare to decommission their poor health battery
+* Customizable snooze options to give end-users an opportunity to complete a task before taking action to decommission the battery
 * HTTPS support for secure connections 
-* User management for web portal access 
-* Battery tagging for organization  
+* Battery tagging for easier organization and identification
 * Report generation to export data collected 
 * Capability for device staging with the use of an EMM such as [StageNow](/stagenow/latest/about) or Zebra's [Battery Manager CSP](/mx/batterymgr).
-
-<sup>*</sup> State-of-Health: performs real-time analytics modeling of multiple electrical characteristics of the battery to determine its performance compared to that of a new battery
 
 ##System Requirements
 This section provides the server and device requirements.
@@ -101,12 +100,15 @@ This section provides the server and device requirements.
     </tr>
   </table>
   
-2. Supported Battery Types:
-        * [Zebra PowerPrecision Plus](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html)
-        * [Zebra PowerPrecision](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html)  (limited support and additional setup required)  
+2. Supported Battery Types: [Zebra PowerPrecision Plus](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html), [Zebra PowerPrecision](https://www.zebra.com/us/en/products/accessories/powerprecision-battery-solutions.html)  (limited support and additional setup required)  
 3. Zebra Data Services agent is required to be running on the mobile computer. This agent collects battery health data from the device and sends it to the PPC server. 
 <br>
+<br>
+<br>
+<sup>[1]</sup> State-of-Health: performs real-time analytics modeling of multiple electrical characteristics of the battery to determine its performance compared to that of a new battery
 
+<br>
+<br>
 -----
 
 ## See Also

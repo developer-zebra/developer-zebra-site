@@ -7,7 +7,7 @@ productversion: '6.10'
 
 ## Overview
 
-This document describes how to set up Mac OS and Windows computers to work with the EMDK for Android SDK. EMDK extends Android Studio with tools to interface with imagers, scanners, magstripe readers and other peripherals found on Zebra Android devices, and lets developers easily create powerful line-of-business applications to help maximize workflow efficiency. 
+**This document describes how to set up Mac OS and Windows computers to work with the EMDK for Android SDK**. EMDK extends Android Studio with tools to interface and configure Zebra Android devices and their peripherals, including imagers, scanners and magstripe and RFID readers. EMDK tools enable developers to easily create powerful line-of-business applications that help maximize workflow efficiency. 
 
 ### Prerequisites
 The following software is required to use EMDK for Android:
@@ -53,7 +53,7 @@ https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.
     •  If no result appears, skip to Step d.<br>
    <img alt="image" style="height:350px" src="uninstall_02.png"/>
 _Click to enlarge_.<br>
-    •  If any version prior to 6.10 appears (as shown above), **click the "Uninstall" button**.<br>
+    •  If any version prior to 6.10 appears (as shown above), **select it and click the "Uninstall" button**.<br>
 <img alt="image" style="height:350px" src="uninstall_03.png"/>
 _Click to enlarge_.<br>
     •  Click the **"Restart Android Studio"** button.<br>
@@ -69,7 +69,7 @@ _Click to enlarge_.<br>
 
 > **Note**: The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
-**Note**: MacOS and Windows dialog boxes vary slightly. 
+**Note**: MacOS and Windows dialog boxes might vary slightly. 
 
 #### `MORE IMAGES TO FOLLOW`
 

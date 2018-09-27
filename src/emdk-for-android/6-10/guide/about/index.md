@@ -22,23 +22,23 @@ Also included is Profile Manager, which enhances to Android IDE with a GUI-based
 * ET5X   - Lollipop, Marshmallow
 * MC18	 - Lollipop
 * MC32N0 - Lollipop
-* MC33   - Nougat
+* MC33   - Nougat, Oreo `NEW`
 * MC40   - Lollipop
 * **PS20** - Oreo `NEW`
 * TC20   - Nougat
 * TC25   - Nougat
-* TC51   - Marshmallow, Nougat
+* TC51   - Marshmallow, Nougat, Oreo `NEW`
 * **TC52** - Oreo `NEW`
-* TC56   - Marshmallow, Nougat
+* TC56   - Marshmallow, Nougat, Oreo `NEW`
 * **TC57** - Oreo `NEW`
 * TC70   - Lollipop
-* TC70x  - Marshmallow, Nougat
+* TC70x  - Marshmallow, Nougat, Oreo `NEW`
 * **TC72** - Oreo `NEW`
 * TC75   - Lollipop
-* TC75x  - Marshmallow, Nougat 
+* TC75x  - Marshmallow, Nougat, Oreo `NEW`
 * **TC77** - Oreo `NEW`
 * TC8000 - Lollipop
-* VC80x  - Nougat
+* VC80x  - Nougat, Oreo `NEW`
 * WT6000 - Lollipop, Nougat
 
 #### Scanners and imagers

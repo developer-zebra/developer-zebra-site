@@ -1042,9 +1042,7 @@ Provides options to make adjustments with the decoder character set. These optio
 
 ![img](charset_values.png)
 
-**Auto Character Set Preferred Order** - Decodes data in the specified preference order of listed character sets. This is useful in cases where data can be decoded from more than one character set. The first character set listed which can decode the data successfully is chosen to decode the data - any other character set located lower in the list is not considered, even if the data could be successfully decoded using that character set.
-
-If DataWedge cannot find a character set from the preferred list to decode the data successfully, the character set selected in "Auto Character Set Failure Option" is used to decode the data.
+**Auto Character Set Preferred Order** - Decodes data in the specified preference order of listed character sets. This is useful in cases where data can be decoded from more than one character set. The first character set listed which can decode the data successfully is chosen to decode the data - any other character set located lower in the list is not considered, even if the data could be successfully decoded using that character set. If DataWedge cannot find a character set from the preferred list to decode the data successfully, the character set selected in "Auto Character Set Failure Option" is used to decode the data.
 
 Both the preferred character set list and its preference order is configurable. The order is rearranged by dragging the “hamburger-like” icon of the character set into the desired position. To delete a character set, long press on the item and the “Delete” option appears. To add a new character set, tap the “hamburger” menu at top right corner - an option to add characters sets, such as UTF-8 and GB2312, will appear.
 

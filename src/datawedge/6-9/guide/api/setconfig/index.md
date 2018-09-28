@@ -102,7 +102,7 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
  * `voice_end_detection_timeout` [string] - 0 - 30
  * `voice_tab_command` [string] - true/false
  * `voice_enter_command` [string] - true/false
- * `voice_data_type` [string] - Any, Alpha, Numeric
+ * `voice_data_type` [string] - 0 - Any, 1- Alpha, 2 - Numeric
  * `voice_start_phrase_waiting_tone` [string] - true/false
  * `voice_data_capture_waiting_tone` [string] - true/false
  * `voice_validation_window` [string] - true/false

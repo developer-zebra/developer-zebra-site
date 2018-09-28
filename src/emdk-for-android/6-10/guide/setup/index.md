@@ -7,7 +7,7 @@ productversion: '6.10'
 
 ## Overview
 
-**This document describes how to set up Mac OS and Windows computers to work with the EMDK for Android SDK**. EMDK extends Android Studio with tools to interface and configure Zebra Android devices and their peripherals, including imagers, scanners and magstripe and RFID readers. EMDK tools enable developers to easily create powerful line-of-business applications that help maximize workflow efficiency. 
+**This document describes how to set up Mac OS and Windows computers to work with Zebra's EMDK for Android software development kit**. EMDK extends Android Studio with tools to interface and configure Zebra Android devices and their peripherals, including imagers, scanners and magstripe and RFID readers. EMDK tools enable developers to easily create powerful line-of-business applications that help maximize workflow efficiency. 
 
 ### Prerequisites
 The following software is required to use EMDK for Android:

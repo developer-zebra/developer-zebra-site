@@ -23,13 +23,13 @@ Instructions for server installation and setup:
 3. **Server Certificate**
 
 	After install, it is required to create an SSL certificate (.pfx) for the installed server. Once generated, copy this certificate in the following default locations: 
-	   * C:\Program Files (x86)\Zebra Technologies\PowerPrecision Console\Release\Server\WebUI 
-	   * C:\Program Files (x86)\Zebra Technologies\PowerPrecision Console\Release\Server\PowerPrecisionConsoleServer 
+	   * \Program Files (x86)\Zebra Technologies\PowerPrecision Console\Release\Server\WebUI 
+	   * \Program Files (x86)\Zebra Technologies\PowerPrecision Console\Release\Server\PowerPrecisionConsoleServer 
 	We recommend to use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.
 
 4. **Server Configuration**
 
-	From default folder “C:\Program Files (x86)\Zebra Technologies\Power Precision Console\Release\Server\WebUI”, open the .env file.  Set the following variables: 
+	From default folder “\Program Files (x86)\Zebra Technologies\Power Precision Console\Release\Server\WebUI”, open the .env file.  Set the following variables: 
 
 		SERVER=”https://localhost:8080/ppcdata" 
 		PORT=”8080” 
@@ -37,7 +37,7 @@ Instructions for server installation and setup:
 	For SERVER, “localhost” may be replaced with the appropriate server IP address or machine name. 
 	For PORT, this value may be changed to the appropriate desired value. 
 
-	In default folder “C:\Program Files (x86)\Zebra Technologies\Power Precision Console\Release\Server\PowerPrecisionConsoleServer\config”, open “application.properties.”  Set the following values:  
+	In default folder “\Program Files (x86)\Zebra Technologies\Power Precision Console\Release\Server\PowerPrecisionConsoleServer\config”, open “application.properties.”  Set the following values:  
 
 		server.dns=<DNS server> 
 		server.idDesc=<store location string> 
@@ -73,7 +73,7 @@ Instructions to install and setup PPC on the Zebra device.
 **Automated Install:** An EMM (Enterprise Mobility Management) or Zebra's [StageNow](/stagenow/latest/about) solution can be used for app deployment and provisioning.
 
 **Manual Install:** 
-1. Copy the .APK file from the default folder (C:\Program Files (x86)\Zebra Technologies\PowerPrecision Console\Release\Client) to the device. 
+1. Copy the .APK file from the default folder (\Program Files (x86)\Zebra Technologies\PowerPrecision Console\Release\Client) to the device. 
 The subfolders (M, N, O) are based on Android versions Marshmallow, Nougat, and Oreo.  Select the appropriate version based on the Android flavor installed on the device. 
 2. Launch the .APK to install.   
 3. When prompted, enable the “Apps that can draw over other apps” permission. 
@@ -86,6 +86,17 @@ The subfolders (M, N, O) are based on Android versions Marshmallow, Nougat, and 
 8. Tap the sync icon.  The device shows connectivity to the server.  
 ![img](device_connected.png)
 
+##Configuration
+The following are configuration options:
+* **PowerPrecision Battery Support** - Steps required to support PowerPrecision batteries:
+ 1.  On the PPC Server, open the .env file (by default in folder: \Program Files\Zebra Technologies\PowerPrecision Console\Release\Server\WebUI). Change the property **PP_BATTERY_SUPPORT = "false"** to **PP_BATTERY_SUPPORT = "true"**.
+ 2. Open application.properties file (by default in folder: \Program Files\Zebra Technologies\PowerPrecision Console\Release\Server\PowerPrecisionConsoleServer\config). Change the property **pp.battery.support=false** to **property pp.battery.support=true**.
+ 3. Restart the server.
+ 4. Uncheck all SOH filters in the dashboard.
+
+* **Threshold Value in PPC and Battery Manager** - Battery Manager is a built-in application with the “Percentage decommission threshold” set to 80% by default. This is the same default value for “End of Life Threshold” on PPC. To avoid multiple warning notifications being sent to the end-user with the same message when the battery reaches the percent threshold, we recommend the admin to set the “Percentage Decommission Threshold” value in Battery Manager to 5% less than the “End of Life Threshold” value set on the PPC server. This can be accomplished using an EMM such as [StageNow](/stagenow/latest/about) or Zebra's [Battery Manager CSP](/mx/batterymgr). 
+
+<br>
 -----
 
 ## See Also

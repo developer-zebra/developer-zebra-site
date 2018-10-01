@@ -11,13 +11,14 @@ productversion: '6.10'
 
 ##	Installing EMDK for Android Device Runtime using Deployment utility
 
-###Windows
+### Windows
 1.	Connect the device to PC.
 2.	Launch the Start menu program shortcut `Device Runtime Deployment`. This will open the command prompt window.
 3.	Click any key to continue.
 4.	This process will deploy the device runtime and reboot automatically to finish the OS update.
 
-###MAC
+### Mac OS
+
 >Note: Please substitute the current version of the EmdkOSUpdateApp APK when EmdkOSUpdateApp_vX.X.X.apk is referenced.
 
 1. Open finder and copy EmdkOSUpdateApp_vX.X.X.apk  into the ADB directory.

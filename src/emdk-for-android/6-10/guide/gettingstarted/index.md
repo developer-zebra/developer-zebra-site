@@ -10,11 +10,6 @@ content-items:
     url: /emdk-for-android/6-10/guide/setup
   - type: section
     level: 4
-    title: Configuring a Device
-    text: Check one or more target devices for full support of EMDK features.
-    url: /emdk-for-android/6-10/guide/setupDevice
-  - type: section
-    level: 4
     title: Build 'Hello EMDK' App
     text: A simple getting started tutorial for beginners.
     url: /emdk-for-android/6-10/tutorial/tutdatacaptureprofile
@@ -28,8 +23,15 @@ productversion: '6.10'
 ---
            
 
+<!--  10/1/18- removed; obsolete
+  
+  - type: section
+    level: 4
+    title: Configuring a Device
+    text: Check one or more target devices for full support of EMDK features.
+    url: /emdk-for-android/6-10/guide/setupDevice
 
-
+ -->
 
 
 

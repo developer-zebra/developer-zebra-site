@@ -3,9 +3,9 @@ title: EMDK For Xamarin
 insert:
   file: emdk-for-xamarin/2-8/guide/about/index.md
 layout: guide.html
-redirect_url: /emdk-for-xamarin/2-8/guide/about
+redirect_url: /emdk-for-xamarin/3-0/guide/about
 product: EMDK For Xamarin
-productversion: '2.7'
+productversion: '3.0'
 
 menu:
   title: EMDK For Xamarin 2.8
@@ -13,7 +13,7 @@ menu:
   items:
     - title: About
       url: /emdk-for-xamarin/2-8/guide/about
-    - title: Getting Started
+    - title: Get Started
       url: /emdk-for-xamarin/2-8/guide/gettingstarted
     - title: Tutorials
       url: /emdk-for-xamarin/2-8/tutorial/

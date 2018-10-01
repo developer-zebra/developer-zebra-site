@@ -76,12 +76,12 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 
 ### Development Environment 
 
-* **EMDK-X 3.0 now fully supports NuGet package management** 
+* **Now fully supports NuGet package management** 
 * **Now supports for Visual Studio for Mac OS**
 
 ### Device Support
 
-EMDK-X 3.0 adds support for the following mobile computers running Android 8.1 Oreo: 
+Adds support for the following mobile computers running Android 8.1 Oreo: 
 
 * **PS20** Personal Shopper 
 * **TC52** Touch Computer
@@ -93,9 +93,8 @@ EMDK-X 3.0 adds support for the following mobile computers running Android 8.1 O
 
 * **LI3608** Rugged USB scanner
 * **LI3678** Rugged Bluetooth scanner 
-* **WT6000** wearable computer running Android Nougat
+* **WT6000** Wearable computer running Android 7.x Nougat
 * **DS2278** Standard range barcode scanner
-
 
 ### New Features
 

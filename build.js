@@ -276,7 +276,8 @@ var sitebuild = Metalsmith(__dirname)
     }))
 
 
-        //emdk-x 2.6
+//EMDK for Xamarin 3.0
+
     .use(foldermenu({
         folder: 'emdk-for-xamarin/3-0/api/',
         automenu: true
@@ -310,10 +311,15 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'emdk-for-xamarin/3-0/'
     }))
 
+// StageNow 3.10
+
     .use(foldermenu({
         folder: 'stagenow/3-10/',
         automenu: false
     }))
+
+// MX
+
     .use(foldermenu({
         folder: 'mx/',
         automenu: false

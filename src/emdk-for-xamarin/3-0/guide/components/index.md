@@ -2,7 +2,7 @@
 title: Xamarin Components
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.8'
+productversion: '3.0'
 ---
 
 few sentences on what they are and what they provide

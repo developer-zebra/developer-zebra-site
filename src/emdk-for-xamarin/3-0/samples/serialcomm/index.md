@@ -15,7 +15,7 @@ screenshots:
   - 4.png
 layout: sample.html
 product: EMDK For Xamarin
-productversion: '2.8'
+productversion: '3.0'
 ---
 
 

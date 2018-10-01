@@ -2,7 +2,7 @@
 title: Scanner.IDataListener
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '2.8'
+productversion: '3.0'
 ---
 An interface for notifying client applications when the scan data is available.
 

@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: accessmgr
 product: EMDK For Xamarin
-productversion: '2.8'
+productversion: '3.0'
 ---
 
 

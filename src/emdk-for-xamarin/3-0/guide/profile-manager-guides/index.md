@@ -125,7 +125,7 @@ automenu:
         - title: Wireless Manager
           url: /emdk-for-xamarin/3-0/mx/wirelessmgr/
 product: EMDK For Xamarin
-productversion: '2.8'
+productversion: '3.0'
 ---
 
 

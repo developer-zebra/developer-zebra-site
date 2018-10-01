@@ -2,7 +2,7 @@
 title: Core APIs
 layout: list-content-api.html
 product: EMDK For Xamarin
-productversion: '2.8'
+productversion: '3.0'
 ---
 
 >Supported Devices:

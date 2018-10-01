@@ -2,7 +2,7 @@
 title: NuGet Installation
 layout: guide.html
 product: EMDK for Xamarin
-productversion: '2.8'
+productversion: '3.0'
 ---
 
 EMDK-X 3.0 now fully supports NuGet packages. The EMDK for Xamarin NuGet package includes the API libraries required for building an Android application with Xamarin. The package must be installed and added to any Android project before the APIs are available for use. 

@@ -19,11 +19,8 @@ Also included is Profile Manager, which enhances to Android IDE with a GUI-based
 
 #### Mobile devices
 
-* ET5X   - Lollipop, Marshmallow
-* MC18	 - Lollipop
-* MC32N0 - Lollipop
+* ET5X   - Marshmallow
 * MC33   - Nougat, Oreo `NEW`
-* MC40   - Lollipop
 * **PS20** - Oreo `NEW`
 * TC20   - Nougat
 * TC25   - Nougat
@@ -31,15 +28,12 @@ Also included is Profile Manager, which enhances to Android IDE with a GUI-based
 * **TC52** - Oreo `NEW`
 * TC56   - Marshmallow, Nougat, Oreo `NEW`
 * **TC57** - Oreo `NEW`
-* TC70   - Lollipop
 * TC70x  - Marshmallow, Nougat, Oreo `NEW`
 * **TC72** - Oreo `NEW`
-* TC75   - Lollipop
 * TC75x  - Marshmallow, Nougat, Oreo `NEW`
 * **TC77** - Oreo `NEW`
-* TC8000 - Lollipop
 * VC80x  - Nougat, Oreo `NEW`
-* WT6000 - Lollipop, Nougat
+* WT6000 - Nougat
 
 #### Scanners and imagers
 
@@ -73,7 +67,20 @@ This version adds support for the following scanners and/or imagers:
 
 * **DS2278** Standard range barcode scanner
 
-> **IMPORTANT**: EMDK 6.10 no longer targets devices running Android 5.x Lollipop or older. 
+### End of Device Support
+
+**IMPORTANT**: EMDK 6.10 no longer targets devices running Android 5.x Lollipop or older. 
+
+**NO LONGER SUPPORTED with Lollipop (and older)**:
+
+* ET5x
+* MC18
+* MC32N0
+* MC40
+* TC70
+* TC75
+* TC8000
+* WT6000
 
 -----
 

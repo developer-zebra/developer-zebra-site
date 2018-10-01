@@ -24,31 +24,37 @@ The following is required for using EMDK for Xamarin:
 * Mac OS X 10.10 or higher (64-bit)
 * Java for OS X 2014-10x or higher
 * Java Development Kit (JDK) v7u75 or higher
-* Visual Studio for Mac
+* **Visual Studio for Mac OS** `NEW`
 
 **Note for VS2015 users**: EMDK for Xamarin supports Visual Studio 2015 only up to version 15.5. Upgrading to any higher version results in failure. **Zebra recommends using Visual Studio 2017**. 
 
 -----
 
-### Devices Supported
+### Supported Devices
 
 EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. **Devices below are tested and validated**.
 
 ### Mobile devices
 
 * ET5X   - Lollipop
-* MC33   - Nougat
+* MC33   - Nougat, Oreo `NEW`
+* **PS20** - Oreo `NEW`
 * TC20   - Nougat
 * TC25   - Nougat
 * TC51   - Marshmallow, Nougat
+* **TC52** - Oreo `NEW`
 * TC56   - Marshmallow, Nougat
+* **TC57** - Oreo `NEW`
 * TC70   - Lollipop
 * TC70x  - Marshmallow, Nougat
+* **TC72** - Oreo `NEW`
 * TC75   - Lollipop
 * TC75x  - Marshmallow, Nougat 
+* **TC77** - Oreo `NEW`
 * TC8000 - Lollipop
 * VC80x  - Nougat
 * **WT6000** - Lollipop, **Nougat** `NEW`
+
 
 ### Scanners and imagers
 
@@ -63,17 +69,82 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 
 -----
 
-## New in v2.8
+## What's New in 3.1
 
-### SUPPORT NOTICE
-> EMDK for Xamarin 2.8 **no longer supports Visual Studio 2013 or Xamarin Studio** (Mac/Windows). 
+### Development Environment 
+
+* **EMDK-X now supports for Visual Studio for Mac OS**
 
 ### Device Support
-EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
 
-* **LI3608** rugged USB scanner
-* **LI3678** rugged Bluetooth scanner 
-* **WT6000 running Android Nougat** 
+EMDK-X 3.0 adds support for the following mobile computers running Android 8.1 Oreo: 
+
+* **PS20** Personal Shopper 
+* **TC52** Touch Computer
+* **TC57** Touch Computer
+* **TC72** Touch Computer
+* **TC77** Touch Computer
+
+**Also added support for**:
+
+* **LI3608** Rugged USB scanner
+* **LI3678** Rugged Bluetooth scanner 
+* **WT6000** wearable computer running Android Nougat
+
+This version adds support for the following scanners and/or imagers: 
+
+* **DS2278** Standard range barcode scanner
+
+### New Features
+
+**Support for MX 8.2** provides the following enhancements:
+
+* **Enhanced [UI Manager](../../mx/uimgr)** adds these new features: 
+ * Enable/disable long-press on HOME key
+ * Enable/disable date in Notification panel
+ * Enable/disable long press on Recent Apps header icon to control access to app info
+
+**Support for MX 8.1** provides the following enhancements:
+* **Enhanced [Power Manager](../../mx/powermgr)** adds these new actions:
+ * Specify an on-device file to verify an OS update
+ * Specify whether to suppress auto-reboot following an A/B upgrade
+* **Enhanced [Battery Manager](../../mx/batterymgr)** adds these new actions:
+ * Enable/disable use of Battery Swap Mode UI
+ * Enable/disable “battery charging” LED
+* **Enhanced [Bug Report Manager](../../mx/bugreportmgr)** adds a new action:
+ * Specify a time before expiration (in days) to store or email bug reports or send them to the cloud 
+* **Enhanced [Cellular Manager](../../mx/cellularmgr)** adds these new actions:
+ * Enable/disable user access to public land mobile network (PLMN) a device uses
+ * Specify the MCC/MNC network PLMN LockSet
+ * Show/hide PLMN lock UI
+ * Determine the status of PLMN lock UI
+ * Enable/disable Dual SIM Standby
+ * Get the status of DSDS
+* **Enhanced [DHCP Option Manager](../../mx/dhcp)** adds these new actions:
+ * Enable/disable requests for a custom DHCP option from server
+ * Request or disable a specified DHCP Option
+ * Enable/disable sending of a custom DHCP Option to server
+ * Send or disable a specified DHCP Option
+ * Send a value with a specified custom DHCP Option
+* **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions:
+ * Specify an Activation ID to return a license from the device
+ * Specify server friendly name for returning one or all licenses and for deleting license source
+ * Select the license source type to be used to return one or all licenses
+* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds these new actions:
+ * Enable/disable the slide out drawer for accessing Android system settings
+* **Enhanced [UI Manager](../../mx/uimgr)** adds these new actions: 
+ * Enable/disable Split Screen mode
+ * Enable/disable Do Not Disturb mode
+ * Enable/disable Multi-user mode
+* **Enhanced [Wi-Fi](../../mx/wifi)** adds these new actions:
+ * Enable/disable MAC address randomization
+ * Enable/disable Call Admission Control
+ * Enable/disable user control of Hotspot state (active/inactive)
+
+### Sample Code
+
+* **[Sample code](../../samples) for EMDK for Xamarin are now available only online**; sample code is no longer installed on the development host as part of the EMDK installation.
+* *** **Help files for EMDK for Xamarin are now available only online**; help is no longer installed on the development host as part of the EMDK installation.
 
 -----
 
@@ -141,6 +212,9 @@ EMDK for Xamarin 2.8 adds support for the following Zebra devices/OSes:
 ## Version History
 
 ### New in v2.7
+
+* **<u>No longer supports</u> Visual Studio 2013 for Windows 
+* **<u>No longer supports</u> Xamarin Studio for Mac and Windows**
 
 **Enhanced Barcode Manager API**:
 

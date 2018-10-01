@@ -2,7 +2,7 @@
 title: Notification.LEDParams
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 This holds the information required for the LED notifications.
 

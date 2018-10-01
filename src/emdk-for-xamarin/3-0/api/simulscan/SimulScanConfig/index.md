@@ -2,7 +2,7 @@
 title: SimulScanConfig
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 The SimulScanConfig class provides access to reader configuration settings.
 

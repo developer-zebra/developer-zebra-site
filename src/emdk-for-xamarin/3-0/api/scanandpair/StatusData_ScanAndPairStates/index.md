@@ -2,7 +2,7 @@
 title: StatusData.ScanAndPairStates
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 Defines the different states of the scan and pir/unpair.
 

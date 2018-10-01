@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters+JapanesePostalDecoder
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 The JapanesePostal class provides access to parameters that are available for the JapanesePostal decoder.
 

@@ -2,7 +2,7 @@
 title: SimulScanTemplate
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 The Template class represents the XML template passed into the SimulScanEngine. All of the recognizable tags and attributes are placed into this class.
 

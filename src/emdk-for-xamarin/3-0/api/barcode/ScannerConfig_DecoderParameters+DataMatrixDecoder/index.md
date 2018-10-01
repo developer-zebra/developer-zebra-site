@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters+DataMatrixDecoder
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 The DataMatrix class provides access to parameters that are available for the DataMatrix decoder.
 

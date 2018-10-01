@@ -2,7 +2,7 @@
 title: RegionType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 The data type contained within the region
 

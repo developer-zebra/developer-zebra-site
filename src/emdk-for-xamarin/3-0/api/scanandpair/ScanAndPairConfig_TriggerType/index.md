@@ -2,7 +2,7 @@
 title: ScanAndPairConfig.TriggerType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 Provides the list of supported trigger types.
 

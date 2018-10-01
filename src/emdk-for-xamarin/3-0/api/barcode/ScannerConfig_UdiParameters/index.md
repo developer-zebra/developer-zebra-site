@@ -2,7 +2,7 @@
 title: ScannerConfig.UdiParameters
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 The UdiParams class provides access to UDI parameters that are available to configure.
 

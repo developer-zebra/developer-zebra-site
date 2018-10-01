@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.HanXinDecoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 The HanXin class provides access to parameters that are available for the HanXin decoder.
 

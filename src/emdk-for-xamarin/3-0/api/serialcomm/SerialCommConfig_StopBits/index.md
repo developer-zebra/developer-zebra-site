@@ -2,7 +2,7 @@
 title: SerialCommConfig.StopBits
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 Specifies the number of stop bits used on the SerialComm object.
 

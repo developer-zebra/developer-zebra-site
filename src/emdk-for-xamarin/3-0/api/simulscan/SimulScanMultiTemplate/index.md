@@ -2,7 +2,7 @@
 title: SimulScanMultiTemplate
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 The SimulScanMultiTemplate class contains an entire parsed XML template file. It may consist of many individual Template.
 

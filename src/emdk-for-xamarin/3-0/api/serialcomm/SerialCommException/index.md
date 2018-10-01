@@ -2,7 +2,7 @@
 title: SerialCommException
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 The methods of serial communication object throw a SerialCommException when an error occurs.
 

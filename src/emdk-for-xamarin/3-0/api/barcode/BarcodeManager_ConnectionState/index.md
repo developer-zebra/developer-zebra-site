@@ -2,7 +2,7 @@
 title: BarcodeManager.ConnectionState
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 Connection states of a scanner device.
 

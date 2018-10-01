@@ -2,7 +2,7 @@
 title: CradleConfig
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.8' 
+productversion: '3.0' 
 ---
 The class to access cradle configuration.
 

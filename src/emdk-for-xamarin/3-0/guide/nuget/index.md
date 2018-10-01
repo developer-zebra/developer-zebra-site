@@ -5,19 +5,39 @@ product: EMDK for Xamarin
 productversion: '3.0'
 ---
 
-EMDK-X 3.0 now fully supports NuGet packages. The EMDK for Xamarin NuGet package includes the API libraries required for building an Android application with Xamarin. The package must be installed and added to any Android project before the APIs are available for use. 
+EMDK for Xamarin supports NuGet packages and the NuGet package management system. The EMDK-X NuGet package includes the API libraries required for building an Android application with Xamarin. The package must be installed and added to any Android project before the APIs are available for use. 
 
+<!-- 
 In previous versions of EMDK for Xamarin, the EMDK APIs were distributed through a Xamarin component. In late 2017, [Microsoft announced](https://blog.xamarin.com/hello-nuget-new-home-xamarin-components/) that it was phasing out support for Xamarin components and that all providers would be required to use NuGet packages.
-
+ -->
 **These instructions apply to**:
 
 * [Visual Studio 2017 for Windows](#visualstudio2017forwindows)
 * [Visual Studio 2017 for Mac](#visualstudio2017formac)
 
->**WARNING**: Do not use the "Add Xamarin Component" from the "EMDK" menu shown below; it does not function as intended.
+>**WARNING**: Do not select "Add Xamarin Component" from the "EMDK" menu shown below; it does not function as intended.
 
 ![img](xam-component-menu.jpg)
 <br>
+
+-----
+
+### Prerequisites
+The following software is required to use EMDK for Xamarin:
+
+**Windows**:
+* Windows 7, 8, 8.1, 10 (32- or 64-bit)
+* Java Development Kit (JDK) v7u45 or higher
+* Visual Studio 2017
+* Visual Studio 2015 (up to v15.5) 
+
+**Mac OS**:  
+* Mac OS X 10.10 or higher
+* Java for OS X 2014-10x or higher
+* Java Development Kit (JDK) v7u75 or higher
+* **Visual Studio 2017 for Mac OS** `NEW`
+
+**Note for VS2015 users**: EMDK for Xamarin supports Visual Studio 2015 only up to version 15.5. Upgrading to any higher version results in failure. **Zebra recommends using Visual Studio 2017**. 
 
 -----
 

@@ -32,7 +32,9 @@ The following is required for using EMDK for Xamarin:
 
 ### Supported Devices
 
-EMDK for Xamarin has been designed to work with all Zebra mobile computers running Android. **Devices below are tested and validated**.
+EMDK-X has been designed to work with all Zebra mobile computers running Android. 
+
+**Devices tested and validated**:
 
 ### Mobile devices
 
@@ -62,6 +64,7 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 * RS6000
 * RS5000
 * RS4000
+* **DS2278**
 * DS3678
 * DS3608
 * **LI3608** `NEW`
@@ -69,11 +72,12 @@ EMDK for Xamarin has been designed to work with all Zebra mobile computers runni
 
 -----
 
-## What's New in 3.1
+## What's New in 3.0
 
 ### Development Environment 
 
-* **EMDK-X now supports for Visual Studio for Mac OS**
+* **EMDK-X 3.0 now fully supports NuGet package management** 
+* **Now supports for Visual Studio for Mac OS**
 
 ### Device Support
 
@@ -90,10 +94,8 @@ EMDK-X 3.0 adds support for the following mobile computers running Android 8.1 O
 * **LI3608** Rugged USB scanner
 * **LI3678** Rugged Bluetooth scanner 
 * **WT6000** wearable computer running Android Nougat
-
-This version adds support for the following scanners and/or imagers: 
-
 * **DS2278** Standard range barcode scanner
+
 
 ### New Features
 

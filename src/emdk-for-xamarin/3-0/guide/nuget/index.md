@@ -78,7 +78,7 @@ The following software is required to use EMDK for Xamarin:
 ## Visual Studio 2017 for Mac OS
 Microsoft has replaced Xamarin Studio for Mac with [Visual Studio 2017 for Mac](https://docs.microsoft.com/en-us/visualstudio/mac/). Install the latest version before proceeding.
 
-### Installing the NuGet Package (beta)
+### Installing the NuGet Package
 1. [Download the EMDK for Xamarin NuGet file](https://github.com/zebra-stage/zebra-stage.github.io/blob/master/emdk-for-xamarin/nuget/Symbol.XamarinEMDK.2.7.0.76-rc.nupkg?raw=true) and save to a local folder. 
 2. In the project right-click "`Packages`" folder.
 3. Click "`Add Packages`" as below:

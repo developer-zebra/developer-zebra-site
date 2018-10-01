@@ -1,5 +1,5 @@
 ---
-title: Configuring A Device
+title: Configure A Device
 layout: guide.html
 product: EMDK For Android
 productversion: '6.10'

@@ -1,12 +1,12 @@
 ---
 title: Get Started
-description: 'If you are just getting started, follow the guides below to get your development environment setup properly and understand the foundations for using the EMDK for Xamarin features.'
+description: 'Developers new to EMDK can follow the guides below to get their development environment set up and begin to understand the foundations of EMDK for Xamarin.'
 layout: list-content-items.html
 content-items:
   - type: section
     level: 4
-    title: Install EMDK For Xamarin
-    text: Step-by-step setup instructions for Mac OS and Windows development hosts
+    title: Set up EMDK For Xamarin
+    text: Step-by-step setup instructions for Mac OS and Windows development hosts.
     url: /emdk-for-xamarin/2-8/guide/setup
   - type: section
     level: 4

@@ -5,13 +5,13 @@ layout: list-content-items.html
 content-items:
   - type: section
     level: 4
-    title: Installing EMDK in Android Studio
-    text: How to set up and configure a development environment to use EMDK tools.
+    title: Set up EMDK and Android Studio
+    text: How to install and configure a development environment to use EMDK tools.
     url: /emdk-for-android/6-10/guide/setup
   - type: section
     level: 4
     title: Build 'Hello EMDK' App
-    text: A simple getting started tutorial for beginners.
+    text: A simple getting-started tutorial for beginners.
     url: /emdk-for-android/6-10/tutorial/tutdatacaptureprofile
   - type: section
     level: 4
@@ -24,7 +24,7 @@ productversion: '6.10'
            
 
 <!--  10/1/18- removed; obsolete
-  
+
   - type: section
     level: 4
     title: Configuring a Device

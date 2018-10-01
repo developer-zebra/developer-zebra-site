@@ -278,36 +278,36 @@ var sitebuild = Metalsmith(__dirname)
 
         //emdk-x 2.6
     .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-7/api/',
+        folder: 'emdk-for-xamarin/3-0/api/',
         automenu: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-7/api/simulscan',
+        folder: 'emdk-for-xamarin/3-0/api/simulscan',
         automenu: true,
         ascontent: true
     })) 
     .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-7/api/notification',
+        folder: 'emdk-for-xamarin/3-0/api/notification',
         automenu: true,
         ascontent: true
     }))    
     .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-7/api/scanandpair',
+        folder: 'emdk-for-xamarin/3-0/api/scanandpair',
         automenu: true,
         ascontent: true
     }))    
     .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-7/api/barcode',
+        folder: 'emdk-for-xamarin/3-0/api/barcode',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-7/api/core',
+        folder: 'emdk-for-xamarin/3-0/api/core',
         automenu: true,
         ascontent: true
     }))
     .use(foldermenu({
-        folder: 'emdk-for-xamarin/2-7/'
+        folder: 'emdk-for-xamarin/3-0/'
     }))
 
     .use(foldermenu({

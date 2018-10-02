@@ -42,7 +42,7 @@ The following software is required to use EMDK for Xamarin:
 
 -----
 
-### Windows Installation
+### Install On Windows
 
 The following instructions apply to Visual Studio 2017. A supported version of Visual Studio must be installed to complete the steps below. If necessary, [install Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) before proceeding. 
 
@@ -81,7 +81,7 @@ The following instructions apply to Visual Studio 2017. A supported version of V
 
 -----
 
-### Mac OS Installation
+### Install On Mac OS
 
 The following instructions apply to Visual Studio 2017, which must be installed to complete the steps below. If necessary, [install Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) before proceeding. 
 

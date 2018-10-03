@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: xmlmgr
 product: StageNow
-productversion: '3.0'
+productversion: '3.1'
 ---
 
 

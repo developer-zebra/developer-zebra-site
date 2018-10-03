@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: batterymgr
 product: StageNow
-productversion: '3.0'
+productversion: '3.1'
 ---
 
 

@@ -2,7 +2,7 @@
 title: StageNow 3.0
 layout: guide.html
 product: StageNow
-productversion: '3.0'
+productversion: '3.1'
 languages:
   - lang: 'ch'
 	label: 'Chinese'

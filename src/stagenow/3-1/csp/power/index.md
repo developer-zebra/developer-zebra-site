@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: powermgr
 product: StageNow
-productversion: '3.0'
+productversion: '3.1'
 ---
 
 

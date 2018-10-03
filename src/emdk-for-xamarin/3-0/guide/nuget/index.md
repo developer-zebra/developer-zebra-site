@@ -33,7 +33,7 @@ The following software is required to use EMDK for Xamarin:
 * Visual Studio 2017 or Visual Studio 2015 (up to v15.5) 
 
 **Mac OS**:  
-* Mac OS X 10.10 or higher
+* Mac OS X 10.11 or higher
 * Java for OS X 2014-10x or higher
 * Java Development Kit (JDK) v7u75 or higher
 * **Visual Studio 2017 for Mac OS** `NEW` (Xamarin Studio is no longer supported)
@@ -84,8 +84,6 @@ The following instructions apply to Visual Studio 2017. A supported version of V
 ### Install On Mac OS
 
 The following instructions apply to Visual Studio 2017, which must be installed to complete the steps below. If necessary, [install Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) before proceeding. 
-
-Visual Studio 2017 for Windows
 
 **To install the NuGet package in Visual Studio 2017 for Mac**:
 

@@ -38,8 +38,6 @@ The following software must be installed on the staging workstation prior to usi
 * Android Oreo
 * Android Nougat
 * Android Marshmallow
-* Android Lollipop
-* Android KitKat
 * MX 8.2
 * MX 8.1
 * MX 8.0
@@ -50,8 +48,6 @@ The following software must be installed on the staging workstation prior to usi
 * MX 6.2
 * MX 6.1
 * MX 6.0
-* MX 5.2
-* MX 5.1
 
 -----
 
@@ -120,7 +116,6 @@ The following software must be installed on the staging workstation prior to usi
  * Enable/disable MAC address randomization
  * Enable/disable Call Admission Control
  * Enable/disable user control of Hotspot state (active/inactive)
-
 
 -----
 

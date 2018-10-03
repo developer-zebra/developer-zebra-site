@@ -1,5 +1,5 @@
 ---
-title: StageNow 3.0
+title: StageNow 3.1
 layout: guide.html
 product: StageNow
 productversion: '3.1'
@@ -9,16 +9,16 @@ languages:
 
 ---
 
-StageNow 3.0 User Guide, Revision A
-#### Covers StageNow 3.0.x and higher
+StageNow 3.1 User Guide, Revision A
+#### Covers StageNow 3.1.x and higher
 
 StageNow MN-003004 
 
-April 20, 2018
+Oct. 8, 2018
 
 ## Overview
 
-This guide provides the staging administrator with instructions for using StageNow 3.0 to create XML-based profiles for staging devices.
+This guide provides the staging administrator with instructions for using StageNow 3.1 to create XML-based profiles for staging devices.
 
 ### Prerequisites
 The following software must be installed on the staging workstation prior to using StageNow:

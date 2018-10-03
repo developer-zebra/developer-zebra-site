@@ -49,10 +49,10 @@ The following instructions apply to Visual Studio 2017. A supported version of V
 2. **Click "Browse"** (if necessary) and **enter "EMDK" in the search box**. The Symbol.XamarinEMDK package appears: 
 	<img alt="image" style="height:210px" src="setup_02.png"/>
 	_Click to enlarge_.<br><br>
-3. **Click the package** to show its info and Install button. <br>Then **click "Install"**:
+3. **Select the package** to show its info and Install button. <br>Then **click "Install"**:
 	<img alt="image" style="height:279px" src="setup_03.png"/>
 	_Click to enlarge_.<br><br>
-4. **Click the "OK" button** to accept the license, if necessary.
+4. **Click the "I Accept" button** to accept the license, if necessary.
 	<img alt="image" style="height:418px" src="setup_05.png"/>
 	_Click to enlarge_.<br><br>
 5. Repeat Steps 1&ndash;4 for each project that uses EMDK for Xamarin APIs. 
@@ -76,15 +76,15 @@ The following instructions apply to Visual Studio 2017, which must be installed 
 3. **Select the package** and **click the "Add Package" button**. 
 	<img alt="image" style="height:350px" src="Mac_install_03.png"/>
 	_Click to enlarge_.<br><br>
-4. **Accept the license** when prompted:
-	<img alt="image" style="height:100px" src="Mac_install_04.png"/>
+4. **Click "Accept"** to accept the license when prompted:
+	<img alt="image" style="height:200px" src="Mac_install_04.png"/>
 	_Click to enlarge_.<br>
 
 > The project is ready to use EMDK for Xamarin APIs. 
 
 -----
 
-### Remove the NuGet Package
+### Remove a NuGet Package
 
 #### Remove from Windows
 

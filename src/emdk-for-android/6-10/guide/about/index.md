@@ -67,11 +67,11 @@ This version adds support for the following scanners and/or imagers:
 
 * **DS2278** Standard range barcode scanner
 
-### End of Device Support
+### End of Support
 
 **IMPORTANT**: EMDK 6.10 no longer targets devices running Android 5.x Lollipop or older. 
 
-**NO LONGER SUPPORTED with Lollipop (and older)**:
+**DEVICES NO LONGER SUPPORTED with Lollipop (and older)**:
 
 * ET5x
 * MC18
@@ -82,19 +82,38 @@ This version adds support for the following scanners and/or imagers:
 * TC8000
 * WT6000
 
------
+>> FINISHHHHHHHH 
 
-### New Features
-
-API enhancents
-
-see LATEST relesae notes
-https://jiraemv.zebra.com/browse/TUT-25268
-
-(make it look like version history has done)
+Removed ProfileDataCaptureSample1 from EMDK Samples. Configuring DataWedge using EMDK Profile Manager has already been deprecated.
+Removed SecureNFCSample1 from EMDK Samples. The SecureNFC APIs have already been deprecated.
 
 WILL END MARSHMALLOW IN NEXT VERSION (mention?)
 
+
+-----
+
+### API enhancents
+*Applies to devices running Android 8.1.0 (Oreo) and higher only*.
+
+**Enhanced Barcode Manager API**
+* Supports new Symbologies and Label types:
+   * GS1 Datamatrix and GS1 QR Code
+   * Differentiates between Datamatrix and GS1 Datamatrix label types
+   * Differentiates between QR Code and GS1 QR Code label types 
+* Added Digimarc decoding through a reader parameter:
+   * New digimarcDecoding parameter in `ImagerSpecific` class (supported on internal imagers only)
+* Supports character set selection, including the following new parameters in `ImagerSpecific`, `CameraSpecific` and `LaserSpecific` classes:
+   * `characterSetSelection` - Sets the character set used to decode the returned barcode data. Generally set to match the encoding of the physical barcode to be scanned (AUTO, ISO_8859_1, Shift_JIS, GB18030, UTF_8).
+   * `autoCharacterSetPreferredOrder` - Sets the preferred character set order to decode the barcode data when character set selection is set to "Auto." 
+   * `autoCharacterSetFailureOption` - Used as the character set (NONE, ISO_8859_1, Shift_JIS, GB18030, UTF_8) if the system cannot find a character set from the preferred order that can correctly decode the data.
+* Support for Zebra DS2278 Bluetooth scanner:
+   * New enum under `BarcodeManager.DeviceIdentifier` for selecting the DS2278.
+   * Added "PRESS_AND_SUSTAIN" `AimType` support for RS6000 and RS507 Bluetooth scanners. 
+* Support for Zebra PS20 Personal Shopper device with `PersonalShopper` API support 
+* Supports Cradle API
+* Supports Diagnostic API
+
+### Software Support
 
 **Support for MX 8.2** provides the following enhancements:
 

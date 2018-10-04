@@ -82,7 +82,7 @@ _Click to enlarge_.<br>
     <img alt="image" style="height:350px" src="install_plugin_03.png"/>
 _Click to enlarge_.<br>
    h. **Click "Restart"** to confirm and restart Android Studio.<br> 
-   <img alt="image" style="height:150px" src="install_plugin_05.png"/>
+   <img alt="image" style="height:100px" src="install_plugin_05.png"/>
 _Click to enlarge_.<br>
 5. **Install the EMDK SDK**:<br>
    a. **Create an Android project** (File -> New -> New Project...).<br>
@@ -105,19 +105,17 @@ _Click to enlarge_.<br>
 		}
 6. **Rebuild the project** (Build -> Make Project). 
 
+
+
 on 
 tutCreateProjectAndroidStudio
 
 
 ##### EMDK APIs are now ready to use. 
 
-**Note**: The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
-
-<!-- 
-#### `MORE IMAGES TO FOLLOW`
-   `https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.xml`<br>
-
- -->
+**Notes**: 
+* A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring 'com.symbol:emdk:6.10.+' uses any SDK version from 6.10 and higher.
+* The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
 -----
 

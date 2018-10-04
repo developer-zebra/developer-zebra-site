@@ -5,7 +5,8 @@ product: PowerPrecision Console
 productversion: '1.0'
 ---
 
-This section provides information on the use of PowerPrecision Console (PPC) on the server and client.
+##Overview
+This section covers configuration settings for PowerPrecision Console (PPC) on the server and client.
 
 ##Server Configuration
 In the [Admin View](../admin), click on the **Server Settings** tab. The server address is displayed. The store location can be edited to enter in location identification. 

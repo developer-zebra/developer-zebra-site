@@ -1,5 +1,5 @@
 ---
-title: Creating Project using Android Studio
+title: Create an Android Studio Project
 layout: guide.html
 product: EMDK For Android
 productversion: '6.10'
@@ -11,7 +11,7 @@ This tutorial will aid you creating a new Android application project using Andr
 
 ## Creating The Project
 
-Open Android Studio.  If you have a previous project open, close the project by clicking **Close Project** from the **File** menu.
+Open Android Studio. If you have a previous project open, close the project by clicking **Close Project** from the **File** menu.
 
 1. Select **Start a new Android Studio project** under **Quick Start** section.
 
@@ -35,7 +35,7 @@ Open Android Studio.  If you have a previous project open, close the project by 
 	![img](../../images/CreatingProjectAndroidStudioImages/as_new_project_wizard_finish.png)
 
 
-	>Note: The `\assets` folder is not present in the project structure but Profile Manager will create this folder when needed.
+	>Note: The `\assets` folder is not present in the project structure by default; Profile Manager creates the folder when needed.
 
 
 ## Enable the EMDK for Android in your project
@@ -53,7 +53,7 @@ After completing the steps in **Creating The Project**
 
 ###  EMDK as a dependency in gradle.build
 
-See Step 4 in the [EMDK-A Setup guide](../setup) for instructions.
+See Step 4 in the [EMDK-A Setup guide](../../guide/setup) for instructions.
 
 
 <!-- 

@@ -66,19 +66,19 @@ _Click to enlarge_.<br>
    h. **Click "Restart"** to confirm and restart Android Studio.<br> 
    <img alt="image" style="height:100px" src="install_plugin_05.png"/>
 _Click to enlarge_.<br>
-5. **Install the EMDK SDK**:<br>
-   a. **Create an Android project** (File -> New -> New Project...).<br>
-   b. **Navigate to** `build.gradle` **file** in app module:<br>
+4. **Enable the EMDK SDK**:<br>
+   a. **Create or open an Android project**.<br>
+   b. **Navigate to the** `build.gradle` **file** in the app module:<br>
    <img alt="image" style="height:350px" src="gradle_01.png"/>
 _Click to enlarge_.<br>
-   c. **Add the line below to the dependencies section** (if using Gradle 3.3 or lower, see below):<br>
+   c. **Add the line below to the dependencies section** (**NOTE**: If using Gradle 3.3 or lower, see below):<br>
 
 		:::java
 		dependencies {
 			implementation 'com.symbol:emdk:6.10.12'
 			...
 		}
-   d. **If using Gradle 3.3 or lower**, add this line **<u>instead</u>**:<br> 
+   d. **For Gradle 3.3 or lower**, add this line **<u>instead</u>** of the one above:<br> 
 
 		:::java
 		dependencies {
@@ -89,8 +89,8 @@ _Click to enlarge_.<br>
 
 ##### EMDK APIs are now ready to use. 
 
-**Notes**: 
-* A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring 'com.symbol:emdk:6.10.+' uses any SDK version from 6.10 and higher.
+#### Notes 
+* A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:6.10.+` uses any SDK version from 6.10 and up.
 * The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
 -----
@@ -100,7 +100,7 @@ _Click to enlarge_.<br>
 #### Windows 
 
 1. **Close Android Studio**, if open.
-2. From the Windows -> "Symbol EMDK for Android" menu **select "Uninstall."**  
+2. From **Windows -> All Programs -> Symbol EMDK for Android, select "Uninstall."**  
 3. **Follow prompts** to complete the uninstallation.
 
 #### Mac OS
@@ -133,7 +133,7 @@ _Click to enlarge_.<br>
 		defaults write com.apple.finder AppleShowAllFiles YES
 
 
-3. **Right-click on the Finder icon** (in the Dock) Hold the "Option/alt" key 
+3. **Right-click on the Finder icon** (in the Dock) while holding the "Option/alt" key.
 4. **Select "Relaunch"** from the menu to make hidden files visible. 
-5. **To reverse, replace "YES" with "NO"** in Terminal command and repeat Step 3. 
+5. **To reverse, replace "YES" with "NO"** in the Terminal command and repeat Step 3. 
 

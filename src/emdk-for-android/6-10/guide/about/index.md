@@ -11,7 +11,7 @@ EMDK for Android extends the Android Studio IDE for Mac OS and Windows with tool
 
 Also included is Profile Manager, which enhances to Android IDE with a GUI-based tool for generating all the code required to access and configure Zebra device features and settings. This enables developers to target Zebra devices with fewer lines of code, fewer errors and reduced overall development time.
 
-> **Important**: Zebra no longer distributes EMDK installers from the Zebra support web site. The EMDK SDK for Android Studio is now distributed through a JFrog JCenter repository and the EMDK Profile Manager plug-in is distributed through the JetBrains plug-in repository. [More info](../setup).
+> **Important**: Zebra now distributes the EMDK SDK through a JCenter repository, and the EMDK Profile Manager plug-in through the JetBrains plug-in repository. To install, see the [EMDK-A Setup guide](../setup).
 
 -----
 
@@ -21,17 +21,17 @@ Also included is Profile Manager, which enhances to Android IDE with a GUI-based
 
 * ET5X   - Marshmallow
 * MC33   - Nougat, Oreo `NEW`
-* **PS20** - Oreo `NEW`
+* **PS20 - Oreo** `NEW`
 * TC20   - Nougat
 * TC25   - Nougat
 * TC51   - Marshmallow, Nougat, Oreo `NEW`
-* **TC52** - Oreo `NEW`
+* **TC52 - Oreo** `NEW`
 * TC56   - Marshmallow, Nougat, Oreo `NEW`
-* **TC57** - Oreo `NEW`
+* **TC57 - Oreo** `NEW`
 * TC70x  - Marshmallow, Nougat, Oreo `NEW`
-* **TC72** - Oreo `NEW`
+* **TC72 - Oreo** `NEW`
 * TC75x  - Marshmallow, Nougat, Oreo `NEW`
-* **TC77** - Oreo `NEW`
+* **TC77 - Oreo** `NEW`
 * VC80x  - Nougat, Oreo `NEW`
 * WT6000 - Nougat
 
@@ -49,9 +49,9 @@ Also included is Profile Manager, which enhances to Android IDE with a GUI-based
 
 -----
 
-## What's New in 6.10
+## New in v6.10
 
-> **Important**: Zebra no longer distributes EMDK installers from the Zebra support web site. The EMDK SDK for Android Studio is now distributed through a JFrog JCenter repository and the EMDK Profile Manager plug-in is distributed through the JetBrains plug-in repository. [More info](../setup).
+> **Important**: Zebra now distributes the EMDK SDK through a JCenter repository, and the EMDK Profile Manager plug-in through the JetBrains plug-in repository. To install, see the [EMDK-A Setup guide](../setup).
 
 ### Device Support
 
@@ -82,18 +82,10 @@ This version adds support for the following scanners and/or imagers:
 * TC8000
 * WT6000
 
->> FINISHHHHHHHH 
-
-Removed ProfileDataCaptureSample1 from EMDK Samples. Configuring DataWedge using EMDK Profile Manager has already been deprecated.
-Removed SecureNFCSample1 from EMDK Samples. The SecureNFC APIs have already been deprecated.
-
-WILL END MARSHMALLOW IN NEXT VERSION (mention?)
-
-
 -----
 
-### API enhancents
-*Applies to devices running Android 8.1.0 (Oreo) and higher only*.
+### API enhancements
+*Applies only to devices running Android 8.1.0 (Oreo) and higher*.
 
 **Enhanced Barcode Manager API**
 * Supports new Symbologies and Label types:
@@ -106,12 +98,14 @@ WILL END MARSHMALLOW IN NEXT VERSION (mention?)
    * `characterSetSelection` - Sets the character set used to decode the returned barcode data. Generally set to match the encoding of the physical barcode to be scanned (AUTO, ISO_8859_1, Shift_JIS, GB18030, UTF_8).
    * `autoCharacterSetPreferredOrder` - Sets the preferred character set order to decode the barcode data when character set selection is set to "Auto." 
    * `autoCharacterSetFailureOption` - Used as the character set (NONE, ISO_8859_1, Shift_JIS, GB18030, UTF_8) if the system cannot find a character set from the preferred order that can correctly decode the data.
-* Support for Zebra DS2278 Bluetooth scanner:
+* Supports Zebra DS2278 Bluetooth scanner:
    * New enum under `BarcodeManager.DeviceIdentifier` for selecting the DS2278.
-   * Added "PRESS_AND_SUSTAIN" `AimType` support for RS6000 and RS507 Bluetooth scanners. 
-* Support for Zebra PS20 Personal Shopper device with `PersonalShopper` API support 
+   * Supports `PRESS_AND_SUSTAIN` AimType for RS6000 and RS507 Bluetooth scanners. 
+* Supports `PersonalShopper` API for use with Zebra PS20 Personal Shopper device  
 * Supports Cradle API
 * Supports Diagnostic API
+
+-----
 
 ### Software Support
 
@@ -169,9 +163,13 @@ WILL END MARSHMALLOW IN NEXT VERSION (mention?)
 
 ### End of Support
 
-**EMDK 6.10 no longer supports target devices running Android 5.x Lollipop** or older; support for Lollipop devices ended with EMDK 6.9. In general, EMDK updates for specific devices are distributed with the latest BSP or LifeGuard patch. 
+**EMDK 6.10 no longer supports target devices running Android 5.x Lollipop** or older; support for Lollipop devices ended with EMDK 6.9. In general, EMDK updates for specific devices are distributed with the latest BSP or [LifeGuard patch](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html). 
 
-ADD LINK TO LG PAGE
+### Other Notes
+
+* EMDK code samples no longer include `ProfileDataCaptureSample1` and `SecureNFCSample1`.
+
+* EMDK-X 6.10 is the last version able to target devices running Android 6.x Marshmallow.
 
 -----
 
@@ -289,8 +287,6 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
 	* In multi-barcode scanning mode, when a picklist reader parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to the specified number of barcodes to be scanned. Set this value (from 2-10) using the `BarcodeCount` parameter. Data is returned only after the specified number of barcodes is read.
 
 -----
-
-## Version History
 
 ### Added in v6.8
 

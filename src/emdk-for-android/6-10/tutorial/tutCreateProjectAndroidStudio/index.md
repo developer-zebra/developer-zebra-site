@@ -52,6 +52,11 @@ After completing the steps in **Creating The Project**
 **Your project is now ready to use the EMDK for Android APIs**
 
 ###  EMDK as a dependency in gradle.build
+
+See Step 4 in the [EMDK-A Setup guide](../setup) for instructions.
+
+
+<!-- 
 Use this method to make use of the EMDK APIs in a project where the Compile SDK set above an Android API level that the EMDK currently has an Addon for.
 
 After completing the steps in **Creating The Project**
@@ -78,7 +83,7 @@ After completing the steps in **Creating The Project**
 
 **Your project is now ready to use the EMDK for Android APIs**
 
-
+ -->
 
 
 

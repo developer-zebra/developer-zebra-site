@@ -25,29 +25,11 @@ The following software is required to use EMDK for Android:
 
 > **Note**: Zebra recommends OpenJDK, which is bundled with Android Studio 2.2 and higher.
 
-<!-- 1/30/18- removed per eng. TUT-22799
-* Installed via Android SDK manager: 
-	* The Android API 19 packages
-	* The Android SDK Build-tools rev.21.1.x or higher
-
-removed 
-* Java for macOS 2014-10x or later
-
-repo: 
-https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.xml
-
- -->
-
 ### Install EMDK
 
 The following instructions apply to Android Studio, which is required to use EMDK for Andriod and must be installed to complete the steps below. If necessary, [install Android Studio](https://developer.android.com/studio/) before proceeding. 
 
 **Note**: Mac OS and Windows dialog boxes might vary slightly. 
-
-
-install_plugin_03.png
-install_plugin_04.png
-install_plugin_05.png
 
 1. [Uninstall prior EMDK installations](#uninstallemdk) and related files, if any.  
 2. **Activate OpenJDK**:<br>
@@ -104,12 +86,6 @@ _Click to enlarge_.<br>
 			...
 		}
 6. **Rebuild the project** (Build -> Make Project). 
-
-
-
-on 
-tutCreateProjectAndroidStudio
-
 
 ##### EMDK APIs are now ready to use. 
 

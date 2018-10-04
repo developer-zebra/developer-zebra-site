@@ -7,7 +7,7 @@ productversion: '6.10'
 
 ## Overview
 
-**This document describes how to set up Mac OS and Windows computers to work with Zebra's EMDK for Android software development kit**. EMDK extends Android Studio with tools to interface and configure Zebra Android devices and their peripherals, including imagers, scanners and magstripe and RFID readers. EMDK tools enable developers to easily create powerful line-of-business applications that help maximize workflow efficiency. 
+**This document describes how to set up Mac OS and Windows computers to work with Zebra's EMDK for Android software development kit**. EMDK extends Android Studio with tools to interface and configure Zebra Android devices and their peripherals, including imagers, scanners and serial ports. EMDK tools enable developers to easily create powerful line-of-business applications that help maximize workflow efficiency. 
 
 ### Prerequisites
 The following software is required to use EMDK for Android:
@@ -40,46 +40,56 @@ https://raw.githubusercontent.com/meipitakotuwa/plugin/master/6.9/updatePlugins.
 
 ### Install EMDK
 
+The following instructions apply to Android Studio, which is required to use EMDK for Andriod and must be installed to complete the steps below. If necessary, [install Android Studio](https://developer.android.com/studio/) before proceeding. 
+
 **Note**: Mac OS and Windows dialog boxes might vary slightly. 
 
+
+install_plugin_03.png
+install_plugin_04.png
+install_plugin_05.png
+
 1. [Uninstall prior EMDK installations](#uninstallemdk) and related files, if any.  
-1. Download [Android Studio](https://developer.android.com/studio/) and install.
 2. **Activate OpenJDK**:<br>
    a. Open an Android Studio project (if not already open).<br>
    b. Select **File -> Project Structure**.<br>
    c. In the left-hand pane **select "SDK Location"** (if not already selected).<br>
-   d. Confirm that "Use embedded JDK (recommended)" is checked.
+   d. Confirm that **"Use embedded JDK (recommended)" is checked**.
 3. **Install the EMDK plug-in**:<br>
    a. In Android Studio, select **File -> Settings.**<br>
-   b. In the left-hand pane, **select "Plugins"** settings page.<br>
+   b. In the left-hand pane, **select "Plugins"** to bring up Plug-in settings.<br>
    c. **Enter "emdk" in the search box**:<br>
     •  If no result appears, skip to Step d.<br>
    <img alt="image" style="height:350px" src="uninstall_02.png"/>
 _Click to enlarge_.<br>
-    •  If any version prior to 6.10 appears (as shown above), **select it and click the "Uninstall" button**.<br>
+    •  If any version prior to 7.0 appears, **select it and click the "Uninstall" button**.<br>
 <img alt="image" style="height:350px" src="uninstall_03.png"/>
 _Click to enlarge_.<br>
     •  Click the **"Restart Android Studio"** button.<br>
     •  Select **File -> Settings.**<br>
-    •  In the left-hand pane, **select "Plugins"** settings page.<br>
+    •  In the left-hand pane, **select "Plugins"** to bring up Plug-in settings.<br>
     •  Proceed to Step d.<br>
    d. **Click "Browse repositories..."** button.<br>
    <img alt="image" style="height:350px" src="browse_repos_01.png"/>
 _Click to enlarge_.<br>
-   e. **Click "Manage repositories..."** button.<br> 
-   <img alt="image" style="height:350px" src="browse_repos_02.png"/>
+   e. **Enter "emdk" in the search box**.<br>Then **click "Search in repositories"** as below:
+   <img alt="image" style="height:350px" src="install_plugin_01.png"/>
 _Click to enlarge_.<br>
-   f. **Click "+"** and enter URL of the repository containing the EMDK plug-in:<br> 
-   <img alt="image" style="height:350px" src="browse_repos_03.png"/>
+   f. **Select "EMDK for Android"** and **hit "Install"** as below:<br> 
+   <img alt="image" style="height:350px" src="install_plugin_02.png"/>
 _Click to enlarge_.<br>
-   g. **Click "Check Now"** button.<br>
-   h. **Click OK** on all confirmation boxes that appear.<br> 
+   g. Click the **"Restart Android Studio"** button:<br>
+    <img alt="image" style="height:350px" src="install_plugin_03.png"/>
+_Click to enlarge_.<br>
+   h. **Click "Restart"** to confirm and restart Android Studio.<br> 
+   <img alt="image" style="height:150px" src="install_plugin_05.png"/>
+_Click to enlarge_.<br>
 5. **Install the EMDK SDK**:<br>
    a. **Create an Android project** (File -> New -> New Project...).<br>
    b. **Navigate to** `build.gradle` **file** in app module:<br>
    <img alt="image" style="height:350px" src="gradle_01.png"/>
 _Click to enlarge_.<br>
-   c. **Add the line below to the dependencies section** (Gradle 3.4 or higher):<br>
+   c. **Add the line below to the dependencies section** (if using Gradle 3.3 or lower, see below):<br>
 
 		:::java
 		dependencies {
@@ -94,6 +104,10 @@ _Click to enlarge_.<br>
 			...
 		}
 6. **Rebuild the project** (Build -> Make Project). 
+
+on 
+tutCreateProjectAndroidStudio
+
 
 ##### EMDK APIs are now ready to use. 
 

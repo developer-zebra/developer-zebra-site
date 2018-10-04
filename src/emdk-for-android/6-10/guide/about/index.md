@@ -11,7 +11,7 @@ EMDK for Android extends the Android Studio IDE for Mac OS and Windows with tool
 
 Also included is Profile Manager, which enhances to Android IDE with a GUI-based tool for generating all the code required to access and configure Zebra device features and settings. This enables developers to target Zebra devices with fewer lines of code, fewer errors and reduced overall development time.
 
-> **Important**: Zebra no longer distributes EMDK installers from the Zebra support web site. The EMDK SDK add-on for Android Studio is now distributed through a JFrog JCenter repository and the EMDK Profile Manager plug-in is distributed through the JetBrains plug-in repository. [More info](../setup).
+> **Important**: Zebra no longer distributes EMDK installers from the Zebra support web site. The EMDK SDK for Android Studio is now distributed through a JFrog JCenter repository and the EMDK Profile Manager plug-in is distributed through the JetBrains plug-in repository. [More info](../setup).
 
 -----
 
@@ -51,7 +51,7 @@ Also included is Profile Manager, which enhances to Android IDE with a GUI-based
 
 ## What's New in 6.10
 
-> **Important**: Zebra no longer distributes EMDK installers from the Zebra support web site. The EMDK SDK add-on for Android Studio is now distributed through a JFrog JCenter repository and the EMDK Profile Manager plug-in is distributed through the JetBrains plug-in repository. [More info](../setup).
+> **Important**: Zebra no longer distributes EMDK installers from the Zebra support web site. The EMDK SDK for Android Studio is now distributed through a JFrog JCenter repository and the EMDK Profile Manager plug-in is distributed through the JetBrains plug-in repository. [More info](../setup).
 
 ### Device Support
 
@@ -85,6 +85,16 @@ This version adds support for the following scanners and/or imagers:
 -----
 
 ### New Features
+
+API enhancents
+
+see LATEST relesae notes
+https://jiraemv.zebra.com/browse/TUT-25268
+
+(make it look like version history has done)
+
+WILL END MARSHMALLOW IN NEXT VERSION (mention?)
+
 
 **Support for MX 8.2** provides the following enhancements:
 
@@ -140,7 +150,9 @@ This version adds support for the following scanners and/or imagers:
 
 ### End of Support
 
-**EMDK 6.10 no longer supports target devices running Android 5.x Lollipop** or older. Distribution of the EMDK OS-update package for Lollipop devices ended with EMDK 6.9. The EMDK 6.6 was the final version to distribute EMDK as an OS update package with the PC/macOS installations for KitKat devices. For devices running Lollipop or later, EMDK updates for a specific device are distributed with the latest BSP or incremental security patch. 
+**EMDK 6.10 no longer supports target devices running Android 5.x Lollipop** or older; support for Lollipop devices ended with EMDK 6.9. In general, EMDK updates for specific devices are distributed with the latest BSP or LifeGuard patch. 
+
+ADD LINK TO LG PAGE
 
 -----
 

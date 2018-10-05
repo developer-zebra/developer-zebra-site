@@ -49,9 +49,9 @@ The following software must be installed on the staging workstation prior to usi
 * MX 6.1
 * MX 6.0
 
-> **IMPORTANT**: 
-> This version of StageNow supports devices running Android 6.x Marshmallow and newer.
-> Access to the `/enterprise` folder is changed on devices running Android 8.x Oreo.  
+> **IMPORTANT NOTE**:<br> 
+> This version of StageNow <u>supports devices running Android 6.x Marshmallow and higher</u> only.
+
 -----
 
 ### Sections of This Guide
@@ -76,7 +76,8 @@ The following software must be installed on the staging workstation prior to usi
 
 ## New in StageNow 3.1
 
-> **IMPORTANT**: This version of StageNow supports devices running Android 6.x Marshmallow and newer.
+> **IMPORTANT NOTE**:<br> 
+> This version of StageNow <u>supports devices running Android 6.x Marshmallow and higher</u> only.
 
 **Support for MX 8.2** provides the following enhancements:
 

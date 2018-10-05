@@ -22,15 +22,15 @@ These are global settings to configure PPC Client behavior.
 * [**State of Health Thresholds**](../mgmt/#whatissoh) 
  * **Automatic EOL** – When enabled, the EOL request is automatically sent to the PPC client when the battery reaches the specified **End of Life Threshold** values.    
  * **Threshold values**<sup>[1]</sup> - Specifies the threshold values for each color-coded SOH battery state in the dashboard. By default the thresholds are:
-	  * End of Life Threshold: 80 (Zebra recommends this value to be 75 or higher)
-	  * Warning Threshold: 85 
+	  * End of Life Threshold: 75 (Zebra recommends this value to be 75 or higher)
+	  * Warning Threshold: 90 
 <br>
 These default thresholds correlate to the color-coded SOH as follows: 
  <br>
- 	**Green** – up to approximately 85% battery life capacity remaining  
- 	**Amber** – up to approximately 80% battery life capacity remaining 
+ 	**Green** – up to approximately 90% battery life capacity remaining  
+ 	**Amber** – up to approximately 75% battery life capacity remaining 
 <br>
-	**Red** – less than approximately 80% battery life capacity remaining 
+	**Red** – less than approximately 75% battery life capacity remaining 
 <br>
 
 * **Data Collection Triggers** - Determines what device information is collected and when to send the information to the server. Select the desired events to trigger data collection on the device and the amount of time elapsed in between each trigger event. When an event is triggered, it is logged in the device history. The minimal time period that can be selected is 1 hour. 
@@ -60,7 +60,7 @@ To add a user:
 5. Click OK when the confirmation message appears.
 
 <br>
-<sup>[1]</sup>**Threshold Value in PPC and Battery Manager** - Battery Manager is a built-in application with the “Percentage decommission threshold” set to 80% by default. This is the same default value for “End of Life Threshold” on PPC. To avoid multiple warning notifications being sent to the end-user with the same message when the battery reaches the percent threshold, we recommend the admin to set the “Percentage Decommission Threshold” value in Battery Manager to 5% less than the “End of Life Threshold” value set on the PPC server. This can be accomplished using an EMM such as [StageNow](/stagenow/latest/about) or Zebra's [Battery Manager CSP](/mx/batterymgr). 
+<sup>[1]</sup>**Threshold Value in PPC and Battery Manager** - Battery Manager is a built-in application with the “Percentage decommission threshold” set to 90% by default. This is the same default value for “End of Life Threshold” on PPC. To avoid multiple warning notifications being sent to the end-user with the same message when the battery reaches the percent threshold, we recommend the admin to set the “Percentage Decommission Threshold” value in Battery Manager to 5% less than the “End of Life Threshold” value set on the PPC server. This can be accomplished using an EMM such as [StageNow](/stagenow/latest/about) or Zebra's [Battery Manager CSP](/mx/batterymgr). 
 <br>
 -----
 

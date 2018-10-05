@@ -25,7 +25,7 @@ A search can be conducted based on battery or device information. After entering
 ##Organize Batteries
 Battery tags provide the capability to identify and group batteries for organizational purposes based on a common tag name.  This name can be any desired form of identification such as location, department or job function. 
 
-![img](tag.jpg)
+![img](tag.JPG)
 _Figure 2. Tag battery_
 
 **Add Tag** – add or append a tag to any pre-existing list of tags for each battery

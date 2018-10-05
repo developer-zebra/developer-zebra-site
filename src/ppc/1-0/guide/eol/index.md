@@ -13,7 +13,7 @@ Send an EOL request to the end-user to prepare for battery decommission:
 1. In the [Admin View](../admin) click on **Active** tab.
 2. Select the battery/batteries to send the EOL request.
 
-	![img](tag.jpg)
+	![img](tag.JPG)
 	_Figure 1. Battery Actions_
 
 3. The Action button appears at the top left. Tap on the Action button and select "Perform EOL".

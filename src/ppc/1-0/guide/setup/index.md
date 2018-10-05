@@ -31,8 +31,8 @@ F. At the command prompt, execute the following command:<br>
 <br>
 G. When prompted, enter the certificate password to export "ssl_certificate.pfx".<br>
 H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to the following folders:
-   * Zebra Technologies/PowerPrecision Console/Server/PowerPrecision Console Server
-   * Zebra Technologies/PowerPrecision Console/Server/WebUI
+   * Zebra Technologies\PowerPrecision Console\Server\PowerPrecision Console Server
+   * Zebra Technologies\PowerPrecision Console\Server\WebUI
 <br>
 We recommend to use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.
 

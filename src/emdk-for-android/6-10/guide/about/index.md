@@ -9,7 +9,7 @@ productversion: '6.10'
 
 EMDK for Android extends the Android Studio IDE for Mac OS and Windows with tools for easily creating powerful line-of-business applications for Zebra Android devices. EMDK for Android includes class libraries, sample apps and source code that enables developers to easily build apps that take full advantage of the power of Zebra devices.
 
-Also included is Profile Manager, which enhances to Android IDE with a GUI-based tool for generating all the code required to access and configure Zebra device features and settings. This enables developers to target Zebra devices with fewer lines of code, fewer errors and reduced overall development time.
+Also included is Profile Manager, which enhances Android IDE with a GUI-based tool for generating all the code required to access and configure Zebra device features and settings. This enables developers to target Zebra devices with fewer lines of code, fewer errors and reduced overall development time.
 
 > **Important**: Zebra now distributes the EMDK SDK through a JCenter repository, and the EMDK Profile Manager plug-in through the JetBrains plug-in repository. To install, see the [EMDK-A Setup guide](../setup).
 
@@ -88,8 +88,7 @@ This version adds support for the following scanners and/or imagers:
 *Applies only to devices running Android 8.1.0 (Oreo) and higher*.
 
 **Enhanced Barcode Manager API**
-* Supports new Symbologies and Label types:
-   * GS1 Datamatrix and GS1 QR Code
+* Supports new symbologies and label types: GS1 Datamatrix and GS1 QR Code
    * Differentiates between Datamatrix and GS1 Datamatrix label types
    * Differentiates between QR Code and GS1 QR Code label types 
 * Added Digimarc decoding through a reader parameter:
@@ -100,10 +99,12 @@ This version adds support for the following scanners and/or imagers:
    * `autoCharacterSetFailureOption` - Used as the character set (NONE, ISO_8859_1, Shift_JIS, GB18030, UTF_8) if the system cannot find a character set from the preferred order that can correctly decode the data.
 * Supports Zebra DS2278 Bluetooth scanner:
    * New enum under `BarcodeManager.DeviceIdentifier` for selecting the DS2278.
-   * Supports `PRESS_AND_SUSTAIN` AimType for RS6000 and RS507 Bluetooth scanners. 
-* Supports `PersonalShopper` API for use with Zebra PS20 Personal Shopper device  
-* Supports Cradle API
-* Supports Diagnostic API
+* Supports `PRESS_AND_SUSTAIN` AimType for RS6000 and RS507 Bluetooth scanners. 
+
+**Personal Shopper API**
+* Supports `PersonalShopper` API for use with Zebra PS20 Personal Shopper device. 
+   * Supports Cradle API
+   * Supports Diagnostic API
 
 -----
 

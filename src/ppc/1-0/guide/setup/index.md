@@ -81,7 +81,7 @@ Contact your local IT Administrator to open the ports through the firewall.
 	* User: SAdmin 
 	* Password: admin 
 
-Zebra recommends to change the password immediately for this super admin user to avoid unauthorized access. Tap on "SAdmin" user at the top right of the Admin View and select "Change password".
+   Zebra recommends to change the password immediately for this super admin user to avoid unauthorized access. Tap on "SAdmin" user at the top right of the Admin View and select "Change password".
 
 ##Client Install & Setup
 The PowerPrecision Console client must be installed and configured on the supported mobile device to register the device, upload device battery data and display end-of-life (EOL) battery alerts. The server address needs to be configured to communicate with the PPC Server. PPC Client install and setup can be accomplished either manually or remotely by using an EMM (Enterprise Mobility Management) such as Zebra's [StageNow](/stagenow/latest/about).

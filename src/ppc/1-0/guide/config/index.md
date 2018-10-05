@@ -57,7 +57,7 @@ To add a user:
 	* **Manager** - ability to perform action on batteries, but cannot create users or perform any user management
 	* **User** - ability to view data
 4. Click Save.
-5. Click OK when the confirmation mesasage appears.
+5. Click OK when the confirmation message appears.
 
 <br>
 <sup>[1]</sup>**Threshold Value in PPC and Battery Manager** - Battery Manager is a built-in application with the “Percentage decommission threshold” set to 80% by default. This is the same default value for “End of Life Threshold” on PPC. To avoid multiple warning notifications being sent to the end-user with the same message when the battery reaches the percent threshold, we recommend the admin to set the “Percentage Decommission Threshold” value in Battery Manager to 5% less than the “End of Life Threshold” value set on the PPC server. This can be accomplished using an EMM such as [StageNow](/stagenow/latest/about) or Zebra's [Battery Manager CSP](/mx/batterymgr). 

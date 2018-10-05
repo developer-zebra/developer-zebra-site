@@ -35,9 +35,9 @@ The following software must be installed on the staging workstation prior to usi
 
 **StageNow v3.1 supports all Zebra devices with the following operating systems and extensions**: 
 
-* Android Oreo
-* Android Nougat
-* Android Marshmallow
+* Android 8.x Oreo
+* Android 7.x Nougat
+* Android 6.x Marshmallow
 * MX 8.2
 * MX 8.1
 * MX 8.0
@@ -49,6 +49,9 @@ The following software must be installed on the staging workstation prior to usi
 * MX 6.1
 * MX 6.0
 
+> **IMPORTANT**: 
+> This version of StageNow supports devices running Android 6.x Marshmallow and newer.
+> Access to the `/enterprise` folder is changed on devices running Android 8.x Oreo.  
 -----
 
 ### Sections of This Guide
@@ -72,6 +75,8 @@ The following software must be installed on the staging workstation prior to usi
 -----
 
 ## New in StageNow 3.1
+
+> **IMPORTANT**: This version of StageNow supports devices running Android 6.x Marshmallow and newer.
 
 **Support for MX 8.2** provides the following enhancements:
 

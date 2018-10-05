@@ -51,7 +51,7 @@ See [Upgrading the StageNow Workstation Tool](../installing?Upgrading%20the%20St
 
 4. Select Install. When Framework installation completes, a window appears stating that the wizard is preparing to install StageNow.
 
-   ![img](../images/installation/StageNow_3.0_install.png)
+   ![img](../images/installation/StageNow_2.10_install.png)
 
 5. Select Next to continue.
 
@@ -69,7 +69,7 @@ See [Upgrading the StageNow Workstation Tool](../installing?Upgrading%20the%20St
 
 10. Select Next to accept the default folder, or select Browse first to choose another installation folder.
 
-   ![img](../images/installation/StageNow_3.0_install_2.png)
+   ![img](../images/installation/StageNow_2.10_install_2.png)
 
 11. Select Next to accept the current settings, or select Back to make a change. The wizard indicates that it is configuring the software for installation, then indicates that installation is almost complete.
 

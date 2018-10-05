@@ -25,7 +25,9 @@ The following software is required to use EMDK for Android:
 
 > **Note**: Zebra recommends OpenJDK, which is bundled with Android Studio 2.2 and higher.
 
-### Install EMDK
+-----
+
+### Install EMDK Plug-ins
 
 The following instructions apply to Android Studio, which is required to use EMDK for Andriod and must be installed to complete the steps below. If necessary, [install Android Studio](https://developer.android.com/studio/) before proceeding. 
 

@@ -103,6 +103,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
    * Supports Diagnostic API
 
 <!-- 10/5/18- above added and below removed- remnent of work done on "2.8" version, now defunct?
+ -->
 
 ### API Enhancements
 
@@ -119,7 +120,6 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
  * BLUETOOTH_IMAGER_RS6000 - Bluetooth imager RS6000
  * EXTERNAL_VIBRATOR1 - External Vibrator
 
- -->
 -----
 
 ### Software Support
@@ -171,7 +171,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 ### Sample Code
 
 * **[Sample code](../../samples) for EMDK for Xamarin are now available only online**; sample code is no longer installed on the development host as part of the EMDK installation.
-* *** **Help files for EMDK for Xamarin are now available only online**; help is no longer installed on the development host as part of the EMDK installation.
+* **Help files for EMDK for Xamarin are now available only online**; help is no longer installed on the development host as part of the EMDK installation.
 
 -----
 

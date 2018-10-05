@@ -7,7 +7,7 @@ content-items:
     level: 4
     title: Set up EMDK For Xamarin
     text: Step-by-step setup instructions for Mac OS and Windows development hosts.
-    url: /emdk-for-xamarin/3-0/guide/setup
+    url: /emdk-for-xamarin/3-0/guide/nuget
   - type: section
     level: 4
     title: Build 'Hello EMDK' App

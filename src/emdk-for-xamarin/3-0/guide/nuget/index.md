@@ -1,5 +1,5 @@
 ---
-title: NuGet Installation
+title: EMDK Setup
 layout: guide.html
 product: EMDK for Xamarin
 productversion: '3.0'
@@ -37,7 +37,9 @@ The following software is required to use EMDK for Xamarin:
 
 -----
 
-### Install On Windows
+### Install EMDK Plug-in
+
+#### Windows
 
 The following instructions apply to Visual Studio 2017. A supported version of Visual Studio must be installed to complete the steps below. If necessary, [install Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) before proceeding. 
 
@@ -47,10 +49,10 @@ The following instructions apply to Visual Studio 2017. A supported version of V
 	<img alt="image" style="height:276px" src="setup_01.png"/>
 	_Click to enlarge_.<br><br>
 2. **Click "Browse"** (if necessary) and **enter "EMDK" in the search box**. The Symbol.XamarinEMDK package appears: 
-	<img alt="image" style="height:210px" src="setup_02.png"/>
+	<img alt="image" style="height:276px" src="setup_02.png"/>
 	_Click to enlarge_.<br><br>
 3. **Select the package** to show its info and Install button. <br>Then **click "Install"**:
-	<img alt="image" style="height:279px" src="setup_03.png"/>
+	<img alt="image" style="height:276px" src="setup_03.png"/>
 	_Click to enlarge_.<br><br>
 4. **Click the "I Accept" button** to accept the license, if necessary.
 	<img alt="image" style="height:418px" src="setup_05.png"/>
@@ -61,7 +63,7 @@ The following instructions apply to Visual Studio 2017. A supported version of V
 
 -----
 
-### Install On Mac OS
+#### Mac OS
 
 The following instructions apply to Visual Studio 2017, which must be installed to complete the steps below. If necessary, [install Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) before proceeding. 
 
@@ -71,10 +73,10 @@ The following instructions apply to Visual Studio 2017, which must be installed 
 	<img alt="image" style="height:273px" src="Mac_install_01.png"/>
 	_Click to enlarge_.<br><br>
 2. **Enter "EMDK" in the search box**. The Symbol.XamarinEMDK package appears: 
-	<img alt="image" style="height:62px" src="Mac_install_02.png"/>
+	<img alt="image" style="height:273px" src="Mac_install_02.png"/>
 	_Click to enlarge_.<br><br>
 3. **Select the package** and **click the "Add Package" button**. 
-	<img alt="image" style="height:350px" src="Mac_install_03.png"/>
+	<img alt="image" style="height:273px" src="Mac_install_03.png"/>
 	_Click to enlarge_.<br><br>
 4. **Click "Accept"** to accept the license when prompted:
 	<img alt="image" style="height:200px" src="Mac_install_04.png"/>
@@ -84,9 +86,9 @@ The following instructions apply to Visual Studio 2017, which must be installed 
 
 -----
 
-### Remove a NuGet Package
+### Remove EMDK Plug-in
 
-#### Remove from Windows
+#### Windows
 
 **To remove the EMDK for Xamarin NuGet package from a Windows project**:
 
@@ -96,11 +98,11 @@ From within a project, **right-click the** `Symbol.XamarinEMDK` **package and se
 
 -----
 
-#### Remove from Mac OS
+#### Mac OS
 
 **To remove the EMDK for Xamarin NuGet package from a Mac OS project**:
 
 From within a project, **right-click the** `Symbol.XamarinEMDK` **package and select "Remove"** as below:
-<img alt="image" style="height:100px" src="mac_uninstall.png"/>
+<img alt="image" style="height:200px" src="mac_uninstall.png"/>
 	_Click to enlarge_.<br>
 <br>

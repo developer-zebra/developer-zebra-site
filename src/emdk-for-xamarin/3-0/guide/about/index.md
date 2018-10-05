@@ -78,7 +78,51 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 * **WT6000** Wearable computer running Android 7.x Nougat
 * **DS2278** Standard range barcode scanner
 
-### New Features
+-----
+
+### API enhancements
+*Applies only to devices running Android 8.1.0 (Oreo) and higher*.
+
+**Enhanced Barcode Manager API**
+* Supports new symbologies and label types: GS1 Datamatrix and GS1 QR Code
+   * Differentiates between Datamatrix and GS1 Datamatrix label types
+   * Differentiates between QR Code and GS1 QR Code label types 
+* Added Digimarc decoding through a reader parameter:
+   * New digimarcDecoding parameter in `ImagerSpecific` class (supported on internal imagers only)
+* Supports character set selection, including the following new parameters in `ImagerSpecific`, `CameraSpecific` and `LaserSpecific` classes:
+   * `characterSetSelection` - Sets the character set used to decode the returned barcode data. Generally set to match the encoding of the physical barcode to be scanned (AUTO, ISO_8859_1, Shift_JIS, GB18030, UTF_8).
+   * `autoCharacterSetPreferredOrder` - Sets the preferred character set order to decode the barcode data when character set selection is set to "Auto." 
+   * `autoCharacterSetFailureOption` - Used as the character set (NONE, ISO_8859_1, Shift_JIS, GB18030, UTF_8) if the system cannot find a character set from the preferred order that can correctly decode the data.
+* Supports Zebra DS2278 Bluetooth scanner:
+   * New enum under `BarcodeManager.DeviceIdentifier` for selecting the DS2278.
+* Supports `PRESS_AND_SUSTAIN` AimType for RS6000 and RS507 Bluetooth scanners. 
+
+**Personal Shopper API**
+* Supports `PersonalShopper` API for use with Zebra PS20 Personal Shopper device. 
+   * Supports Cradle API
+   * Supports Diagnostic API
+
+<!-- 10/5/18- above added and below removed- remnent of work done on "2.8" version, now defunct?
+
+### API Enhancements
+
+**Enhanced Barcode Manager API**:
+* Adds support for LI3608 rugged USB scanner
+ * A new enum under `BarcodeManager.DeviceIdentifier` can be used to select the LI3608
+* Adds support for LI3678 rugged Bluetooth scanner
+ * A new enum under `BarcodeManager.DeviceIdentifier` can be used to select the LI3678
+
+**Enhanced Notification Manager API**:
+* A new `getDeviceIdentifier()` method in `DeviceInfo` class identifies the notification device
+* A new enum `DeviceIdentifier` supports `getDeviceIdentifier()` with following values:
+ * DEFAULT - default
+ * BLUETOOTH_IMAGER_RS6000 - Bluetooth imager RS6000
+ * EXTERNAL_VIBRATOR1 - External Vibrator
+
+ -->
+-----
+
+### Software Support
 
 **Support for MX 8.2** provides the following enhancements:
 
@@ -131,30 +175,14 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 
 -----
 
-### API Enhancements
-
-**Enhanced Barcode Manager API**:
-* Adds support for LI3608 rugged USB scanner
- * A new enum under `BarcodeManager.DeviceIdentifier` can be used to select the LI3608
-* Adds support for LI3678 rugged Bluetooth scanner
- * A new enum under `BarcodeManager.DeviceIdentifier` can be used to select the LI3678
-
-**Enhanced Notification Manager API**:
-* A new `getDeviceIdentifier()` method in `DeviceInfo` class identifies the notification device
-* A new enum `DeviceIdentifier` supports `getDeviceIdentifier()` with following values:
- * DEFAULT - default
- * BLUETOOTH_IMAGER_RS6000 - Bluetooth imager RS6000
- * EXTERNAL_VIBRATOR1 - External Vibrator
-
------
-
 ### Software Support
 
+<!-- not true. supports 2015 up to v15.5.  
 **On Windows, now supports <u>only</u> [Visual Studio 2017](https://www.visualstudio.com/vs/win)**
+ -->
+ **On Mac OS, now supports [Visual Studio for Mac](https://www.visualstudio.com/vs/mac/)**
 
-**On Mac OS X, now supports [Visual Studio for Mac](https://www.visualstudio.com/vs/mac/)**
-
-**Now supports MX v8.0** in Profile Manager, adding the following features:
+**Also supports MX v8.0** in Profile Manager, which added the following features:
 
 * **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
  * Clear Application Cache 
@@ -172,7 +200,6 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 * **Enhanced [UI Manager](../../mx/uimgr)** adds these new actions:
  * Enable/disable the Magnification Gesture
  * Show/hide the Virtual KeyBoard while Physical Keyboard is active
-
 
 -----
 
@@ -194,7 +221,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 
 ## Version History
 
-### New in v2.7
+### Added in v2.7
 
 * **<u>No longer supports</u> Visual Studio 2013 for Windows 
 * **<u>No longer supports</u> Xamarin Studio for Mac and Windows**

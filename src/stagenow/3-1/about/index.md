@@ -10,11 +10,10 @@ languages:
 ---
 
 StageNow 3.1 User Guide, Revision A
+StageNow MN001501A12
+October, 2018
+
 #### Covers StageNow 3.1.x and higher
-
-StageNow MN-003004 
-
-Oct. 8, 2018
 
 ## Overview
 
@@ -50,7 +49,7 @@ The following software must be installed on the staging workstation prior to usi
 * MX 6.0
 
 > **IMPORTANT NOTE**:<br> 
-> This version of StageNow <u>supports devices running Android 6.x Marshmallow and higher</u> only.
+> This version of StageNow <u>supports devices running Android 6.x Marshmallow and higher</u> only. Support for Android 5.x Lollipop has been discontinued.
 
 -----
 
@@ -77,7 +76,7 @@ The following software must be installed on the staging workstation prior to usi
 ## New in v3.1
 
 > **IMPORTANT NOTE**:<br> 
-> This version of StageNow <u>supports devices running Android 6.x Marshmallow and higher</u> only.
+> This version of StageNow <u>supports devices running Android 6.x Marshmallow and higher</u> only. Support for Android 5.x Lollipop has been discontinued.
 
 ### Enhanced User experience
 
@@ -89,47 +88,50 @@ The following software must be installed on the staging workstation prior to usi
 
 **Support for MX 8.2** provides the following enhancements:
 
-* **Enhanced [UI Manager](../../mx/uimgr)** adds these new features: 
+* **Enhanced [UI Manager](../csp/uimgr)** adds these new features: 
  * Enable/disable long-press on HOME key
  * Enable/disable date in Notification panel
  * Enable/disable long press on Recent Apps header icon to control access to app info
 
 **Support for MX 8.1** provides the following enhancements:
-* **Enhanced [Power Manager](../../mx/powermgr)** adds these new actions:
+* **Enhanced [Power Manager](../csp/powermgr)** adds these new actions:
  * Specify an on-device file to verify an OS update
  * Specify whether to suppress auto-reboot following an A/B upgrade
-* **Enhanced [Battery Manager](../../mx/batterymgr)** adds these new actions:
+* **Enhanced [Battery Manager](../csp/batterymgr)** adds these new actions:
  * Enable/disable use of Battery Swap Mode UI
  * Enable/disable “battery charging” LED
-* **Enhanced [Bug Report Manager](../../mx/bugreportmgr)** adds a new action:
+* **Enhanced [Bug Report Manager](../csp/bugreportmgr)** adds a new action:
  * Specify a time before expiration (in days) to store or email bug reports or send them to the cloud 
-* **Enhanced [Cellular Manager](../../mx/cellularmgr)** adds these new actions:
+* **Enhanced [Cellular Manager](../csp/cellularmgr)** adds these new actions:
  * Enable/disable user access to public land mobile network (PLMN) a device uses
  * Specify the MCC/MNC network PLMN LockSet
  * Show/hide PLMN lock UI
  * Determine the status of PLMN lock UI
  * Enable/disable Dual SIM Standby
  * Get the status of DSDS
-* **Enhanced [DHCP Option Manager](../../mx/dhcp)** adds these new actions:
+* **Enhanced [DHCP Option Manager](../csp/dhcp)** adds these new actions:
  * Enable/disable requests for a custom DHCP option from server
  * Request or disable a specified DHCP Option
  * Enable/disable sending of a custom DHCP Option to server
  * Send or disable a specified DHCP Option
  * Send a value with a specified custom DHCP Option
-* **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions:
+* **Enhanced [License Manager](../csp/licensemgr)** adds these new actions:
  * Specify an Activation ID to return a license from the device
  * Specify server friendly name for returning one or all licenses and for deleting license source
  * Select the license source type to be used to return one or all licenses
-* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds these new actions:
+* **Enhanced [Settings Manager](../csp/settingsmgr)** adds these new actions:
  * Enable/disable the slide out drawer for accessing Android system settings
-* **Enhanced [UI Manager](../../mx/uimgr)** adds these new actions: 
+* **Enhanced [UI Manager](../csp/uimgr)** adds these new actions: 
  * Enable/disable Split Screen mode
  * Enable/disable Do Not Disturb mode
  * Enable/disable Multi-user mode
-* **Enhanced [Wi-Fi](../../mx/wifi)** adds these new actions:
+* **Enhanced [Wi-Fi](../csp/wifi)** adds these new actions:
  * Enable/disable MAC address randomization
  * Enable/disable Call Admission Control
  * Enable/disable user control of Hotspot state (active/inactive)
+* **New [AutoTrigger Manager](../csp/autotriggermgr) CSP** is used to configure automatic scan-triggering, which initiates scanning when a scan target is brought within proximity of the device sensor. Currently supports the Zebra PS20 Personal Shopper device only. 
+* **New [DeviceCentral Manager](../csp/devicecentralmgr) CSP** allows configuration of settings on the device for Zebra Device Central, an enterprise tool for viewing connection state, battery status, firmware version and other device conditions from a central console.
+* **New [Fota Manager](../csp/fotamgr) CSP** controls the Firmware Over The Air (FOTA) Client on the device, allowing administrators to perform OS updates on Zebra devices without a physical connection. The FOTA Client app comes preinstalled on supported devices and is configured to communicate with the Zebra update server.
 
 -----
 

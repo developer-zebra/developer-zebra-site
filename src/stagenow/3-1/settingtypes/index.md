@@ -36,6 +36,8 @@ automenu:
           url: /stagenow/3-1/csp/audiomgr
         - title: AudioVolUI Manager
           url: /stagenow/3-1/csp/audio
+        - title: Auto Trigger Manager
+          url: /stagenow/3-1/csp/autotriggermgr
         - title: Batch Manager
           url: /stagenow/3-1/csp/batch
         - title: Battery Manager
@@ -48,6 +50,8 @@ automenu:
           url: /stagenow/3-1/csp/condition
         - title: Display Manager
           url: /stagenow/3-1/csp/display
+        - title: FOTA Manager
+          url: /stagenow/3-1/csp/fotamgr
         - title: Power Manager
           url: /stagenow/3-1/csp/power
         - title: Touch Manager
@@ -98,6 +102,8 @@ automenu:
           url: /stagenow/3-1/csp/usb
     - title: UI Management
       items:
+        - title: DeviceCentral Manager
+          url: /stagenow/3-1/csp/devicecentralmgr
         - title: Enterprise Keyboard
           url: /stagenow/3-1/csp/enterprisekeyboard
         - title: KeyMapping Manager

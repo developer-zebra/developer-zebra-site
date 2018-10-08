@@ -106,10 +106,16 @@ From within the branch that develop is merging into:
 * Search and replace the contents of the copied index.md files for mx: "x.x"; osx: "x.x"; apilevel: "xx"; csp: name; and any other global information, as appropriate
 * Manually edit remaining file content as appropriate to document usage CSP (see gerrit repo for Mini-HLD, release notes and other techteam artifacts provided by engineering. Also see APA slides)
 * Edit /mx/index.md; /mx/&lt;newCSPname&gt;/index.md; /mx/compatibility/index.md as needed for the new CSP
-* Edit /src/build.js (if necessary)
-* If a new version of MX or OSx is required, edit /partials/navbar-smartdocs.html
-* Build and copy new /mx folder to stage for validation 
-* Once validated and corrected, rebuild and copy to production server
+* Edit /src/build.js (if necessary) to add the new version's directory to the source list
+* In StageNow docs: 
+   * Add a link in the Settings Types index for each new CSP
+   * Copy an existing folder under /csp, rename it as the new CSP and edit index.md to match
+* If the CSP is being used by EMDK (DSD contains "developer" role):
+   * Add a link in the Profile Manager index for each new CSP
+   * Copy an existing folder under the EMDK /mx folder, rename it as the new CSP and edit index.md to match
+* If a new version of MX and/or OSx is required, add it to /partials/navbar-smartdocs.html layout
+* Build and copy new /mx folder (only for MX itself) to stage for validation  
+* Once validated and/or corrected, rebuild and copy to production server
 
 ## Update EMDK Sample Code
 

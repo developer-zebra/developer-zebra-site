@@ -15,6 +15,7 @@
     <AssemblyVersion>2.5.0.48</AssemblyVersion>
     <AssemblyVersion>2.6.0.69</AssemblyVersion>
     <AssemblyVersion>2.7.0.76</AssemblyVersion>
+    <AssemblyVersion>3.0.0.41</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Object</BaseTypeName>
@@ -67,6 +68,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -102,6 +104,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
@@ -135,6 +138,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -165,6 +169,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -191,6 +196,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

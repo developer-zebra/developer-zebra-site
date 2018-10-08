@@ -15,6 +15,7 @@
     <AssemblyVersion>2.5.0.48</AssemblyVersion>
     <AssemblyVersion>2.6.0.69</AssemblyVersion>
     <AssemblyVersion>2.7.0.76</AssemblyVersion>
+    <AssemblyVersion>3.0.0.41</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Enum</BaseTypeName>
@@ -48,6 +49,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -65,6 +67,27 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="BluetoothImagerDs2278">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier BluetoothImagerDs2278 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.BarcodeManager/DeviceIdentifier BluetoothImagerDs2278" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("BLUETOOTH_IMAGER_DS2278")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="BluetoothImagerDs3678">
       <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier BluetoothImagerDs3678 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.BarcodeManager/DeviceIdentifier BluetoothImagerDs3678" />
@@ -75,6 +98,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -104,6 +128,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -119,6 +144,27 @@
         </value>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BluetoothLaserLi3678">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier BluetoothLaserLi3678 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.BarcodeManager/DeviceIdentifier BluetoothLaserLi3678" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("BLUETOOTH_LASER_LI3678")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -138,6 +184,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -172,6 +219,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -206,6 +254,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -240,6 +289,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -264,6 +314,7 @@
       <AssemblyInfo>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -291,6 +342,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -320,6 +372,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -335,6 +388,27 @@
         </value>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PluggableLaserLi3608">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.Barcode.BarcodeManager.DeviceIdentifier PluggableLaserLi3608 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.BarcodeManager/DeviceIdentifier PluggableLaserLi3608" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("PLUGGABLE_LASER_LI3608")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -354,6 +428,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -384,6 +459,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -409,6 +485,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -443,6 +520,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -483,6 +561,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

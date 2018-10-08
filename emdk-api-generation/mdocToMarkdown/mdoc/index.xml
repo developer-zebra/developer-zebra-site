@@ -1,6 +1,6 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="Symbol.XamarinEMDK" Version="2.7.0.76">
+    <Assembly Name="Symbol.XamarinEMDK" Version="3.0.0.41">
       <Attributes>
         <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk", Managed="Symbol.XamarinEMDK")</AttributeName>
@@ -39,10 +39,10 @@
           <AttributeName>System.Reflection.AssemblyDescription("EMDK for Xamarin")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyFileVersion("2.7.0.76")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("3.0.0.41")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("2.7.0.76")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("3.0.0.41")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyProduct("EMDK for Xamarin")</AttributeName>
@@ -108,8 +108,11 @@
       <Type Name="ScannerConfig+AimingPattern" Kind="Class" />
       <Type Name="ScannerConfig+AimType" Kind="Class" />
       <Type Name="ScannerConfig+AudioStreamType" Kind="Class" />
+      <Type Name="ScannerConfig+AutoCharacterSetFailureOption" Kind="Class" />
+      <Type Name="ScannerConfig+AutoCharacterSetPreference" Kind="Class" />
       <Type Name="ScannerConfig+BeamWidth" Kind="Class" />
       <Type Name="ScannerConfig+BooklandFormat" Kind="Class" />
+      <Type Name="ScannerConfig+CharacterSet" Kind="Class" />
       <Type Name="ScannerConfig+CheckDigit" Kind="Class" />
       <Type Name="ScannerConfig+CheckDigitScheme" Kind="Class" />
       <Type Name="ScannerConfig+CheckDigitType" Kind="Class" />
@@ -138,6 +141,8 @@
       <Type Name="ScannerConfig+DecoderParameters+Gs1DatabarDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Gs1DatabarExpDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Gs1DatabarLimDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Gs1DatamatrixDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+Gs1QrCodeDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+HanXinDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+I2of5Decoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+JapanesePostalDecoder" Kind="Class" />

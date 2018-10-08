@@ -11,6 +11,7 @@
     <AssemblyVersion>2.5.0.48</AssemblyVersion>
     <AssemblyVersion>2.6.0.69</AssemblyVersion>
     <AssemblyVersion>2.7.0.76</AssemblyVersion>
+    <AssemblyVersion>3.0.0.41</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Symbol.XamarinEMDK.EMDKBase</BaseTypeName>
@@ -40,6 +41,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
@@ -95,6 +97,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -125,6 +128,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -181,6 +185,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -215,6 +220,7 @@
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -247,6 +253,7 @@ If a Bluetooth address was scanned for pairing during scanAndPair calls, then th
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -277,6 +284,7 @@ If a Bluetooth address was scanned for pairing during scanAndPair calls, then th
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Symbol.XamarinEMDK.ScanAndPair.ScanAndPairManager+StatusEventArgs&gt;</ReturnType>
@@ -301,6 +309,7 @@ If a Bluetooth address was scanned for pairing during scanAndPair calls, then th
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -327,6 +336,7 @@ If a Bluetooth address was scanned for pairing during scanAndPair calls, then th
         <AssemblyVersion>2.5.0.48</AssemblyVersion>
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
+        <AssemblyVersion>3.0.0.41</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>

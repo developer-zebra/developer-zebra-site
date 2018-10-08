@@ -74,10 +74,18 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-## New in StageNow 3.1
+## New in v3.1
 
 > **IMPORTANT NOTE**:<br> 
 > This version of StageNow <u>supports devices running Android 6.x Marshmallow and higher</u> only.
+
+### Enhanced User experience
+
+**Xpert mode Enhancements**
+* Profiles can now be edited as soon as steps/settings are viewable
+* Profiles can be saved after clicking the "Continue" button the first time 
+* A new “Cancel Changes” option reverts all changes to their original values
+* An additional field was added for entering "user-friendly" step descriptions to help during profile review 
 
 **Support for MX 8.2** provides the following enhancements:
 

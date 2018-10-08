@@ -22,17 +22,17 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 ### Mobile devices
 
 * MC33   - Nougat, Oreo `NEW`
-* **PS20** - Oreo `NEW`
+* **PS20 - Oreo** `NEW`
 * TC20   - Nougat
 * TC25   - Nougat
 * TC51   - Marshmallow, Nougat
-* **TC52** - Oreo `NEW`
+* **TC52 - Oreo** `NEW`
 * TC56   - Marshmallow, Nougat
-* **TC57** - Oreo `NEW`
+* **TC57 - Oreo** `NEW`
 * TC70x  - Marshmallow, Nougat
-* **TC72** - Oreo `NEW`
+* **TC72 - Oreo** `NEW`
 * TC75x  - Marshmallow, Nougat 
-* **TC77** - Oreo `NEW`
+* **TC77 - Oreo** `NEW`
 * VC80x  - Nougat
 * **WT6000** - **Nougat** `NEW`
 
@@ -101,7 +101,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 <!-- 10/5/18- above added and below removed- remnent of work done on "2.8" version, now defunct?
  -->
 
-### API Enhancements
+### Other API Enhancements
 
 **Enhanced Barcode Manager API**:
 * Adds support for LI3608 rugged USB scanner
@@ -166,7 +166,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 
 ### Sample Code
 
-* **[Sample code](../../samples) for EMDK for Xamarin are now available only online**; sample code is no longer installed on the development host as part of the EMDK installation.
+* **[Code samples](../../samples) for EMDK for Xamarin are now available only online**; sample code is no longer installed on the development host as part of the EMDK installation.
 * **Help files for EMDK for Xamarin are now available only online**; help is no longer installed on the development host as part of the EMDK installation.
 
 ### End of Support

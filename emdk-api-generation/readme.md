@@ -36,7 +36,7 @@ Instructions for Xamarin should be followed <u>AFTER</u> EMDK for Android APIs h
 <br>
 
    	:::term
-   	node generate_markdown.js -a 2.6.0.69 -p 2.6" 
+   	node generate_markdown.js -a 2.6.0.69 -p 2.6
    	// replace 2.6.0.69 with current assemblyversion
 
 14. Markdown is output to `/mDocToMarkdown/markdown` folder

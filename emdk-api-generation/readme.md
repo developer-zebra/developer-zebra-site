@@ -3,8 +3,8 @@
 
 * Get latest EMDK For Android code from Jenkins  http://10.17.216.63:8080/jenkins/ and look for something similar to "tut_emdkx_build" and open the latest. 
 * Download sdk-addon.zip and unzip (The SDK-Addon at the highest api level has the javadocs ex; addon-symbol_emdk-symbol-26)
-* Get latest Symbol.XamarinEMDK.dll from Praveen (should be here: http://10.17.216.63:8080/jenkins/job/tut_emdkx_build/, but on Oct 8, it was here: \\10.233.84.19\Data\USER_BUILD_OUTPUT\TUT_XAMARIN_TOOL_MAC\97 )
-* Copy Symbol.XamarinEMDK.dll to Lib folder in mDocToMarkdown (replace any existing file)
+* Get latest Symbol.XamarinEMDK.dll from Praveen (should be here: http://10.17.216.63:8080/jenkins/job/tut_emdkx_build/. On Oct 8, it was here: \\10.233.84.19\Data\USER_BUILD_OUTPUT\TUT_XAMARIN_TOOL_MAC\97) Team is migrating to Artifactory.
+* Copy Symbol.XamarinEMDK.dll to "/libs" folder in mDocToMarkdown (replace any existing file)
 * Go to shell in folder mDocToMarkdown - then run command in readme (cross fingers - need mdoc - from Xamarin tools)
 * This updates mdoc folder
 * Do sanity check to see if new API are in there (you can also check assembly version inside a MDOC API)

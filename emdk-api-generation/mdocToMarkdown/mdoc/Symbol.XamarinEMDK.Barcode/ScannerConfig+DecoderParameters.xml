@@ -747,9 +747,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Gs1DatamatrixDecoder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The Gs1Datamatrix class provides access to parameters that are available for the Gs1Datamatrix decoder.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Gs1QrCode">
@@ -768,9 +768,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Gs1QrCodeDecoder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The Gs1QrCode class provides access to parameters that are available for the Gs1QrCode decoder.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="HanXin">

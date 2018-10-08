@@ -889,9 +889,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The GS1_DATAMATRIX symbology.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Gs1Qrcode">
@@ -910,9 +910,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The GS1_QRCODE symbology.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hanxin">

@@ -21,7 +21,6 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 
 ### Mobile devices
 
-* ET5X   - Lollipop
 * MC33   - Nougat, Oreo `NEW`
 * **PS20** - Oreo `NEW`
 * TC20   - Nougat
@@ -30,15 +29,12 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 * **TC52** - Oreo `NEW`
 * TC56   - Marshmallow, Nougat
 * **TC57** - Oreo `NEW`
-* TC70   - Lollipop
 * TC70x  - Marshmallow, Nougat
 * **TC72** - Oreo `NEW`
-* TC75   - Lollipop
 * TC75x  - Marshmallow, Nougat 
 * **TC77** - Oreo `NEW`
-* TC8000 - Lollipop
 * VC80x  - Nougat
-* **WT6000** - Lollipop, **Nougat** `NEW`
+* **WT6000** - **Nougat** `NEW`
 
 ### Scanners and imagers
 
@@ -46,7 +42,7 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 * RS6000
 * RS5000
 * RS4000
-* **DS2278**
+* **DS2278** `NEW`
 * DS3678
 * DS3608
 * **LI3608** `NEW`
@@ -172,6 +168,21 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 
 * **[Sample code](../../samples) for EMDK for Xamarin are now available only online**; sample code is no longer installed on the development host as part of the EMDK installation.
 * **Help files for EMDK for Xamarin are now available only online**; help is no longer installed on the development host as part of the EMDK installation.
+
+### End of Support
+
+**IMPORTANT**: EMDK-X 3.0 no longer targets devices running Android 5.x Lollipop or older. 
+
+**DEVICES NO LONGER SUPPORTED with Lollipop (and older)**:
+
+* ET5x
+* MC18
+* MC32N0
+* MC40
+* TC70
+* TC75
+* TC8000
+* WT6000
 
 -----
 

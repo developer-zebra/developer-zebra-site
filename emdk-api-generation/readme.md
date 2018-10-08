@@ -1,21 +1,4 @@
 
-## EMDK for Xamarin
-
-1. Get latest EMDK For Xamarin code from Jenkins  http://10.17.216.63:8080/jenkins/ and look for something similar to "tut_emdkx_build" and open the latest. 
-2. Get latest Symbol.XamarinEMDK.dll from Praveen (should be here: http://10.17.216.63:8080/jenkins/job/tut_emdkx_build/. On Oct 8, it was here: \\10.233.84.19\Data\USER_BUILD_OUTPUT\TUT_XAMARIN_TOOL_MAC\97) Team is migrating to Artifactory.
-3. Copy Symbol.XamarinEMDK.dll to "/libs" folder in mDocToMarkdown (replace or remame the existing file)
-4. Go to shell in folder mDocToMarkdown - then run command in the readme file in that folder (cross fingers - need mdoc - from Xamarin tools). This updates mdoc folder.
-5. Do sanity check to see if new APIs are in there (you can also check assembly version inside an mdoc API)
-6. Using the "Find in Folder" function, search /mdocs folder for "To be added" - this finds everything new/changed. 
-7. ??? Find same thing in javadocs and get description - replace Summary TBA - remove other TBA
-8. ??? When looking at javadocs - always click down into the details (do not take "first sentence" from summary)
-9. For "values" and "valuesof" - just remove TBA
-10. Do not do hidden look for "protected" <MemberSignature Language="C#" Value="protected
-11. Note: check how params descriptions are done
-12. Generate Markdown: i.e. "node generate_markdown.js -a 2.6.0.69 -p 2.6" 
-13. check for latest assembly number in xml
-14. Markdown is in "mDocToMarkdown/markdown" folder - look again for TBA
-15. Copy the markdown into techdocs EMDK-X API folder and "merge"
 
 ## EMDK For Android
 
@@ -31,11 +14,37 @@
 9. View the staging-server copy to confirm and test as in Step 6.
 10. When all changes are validated, copy to production-server repo (zebra.github.io).
 
+-----
+
+## EMDK for Xamarin
+
+Instructions for Xamarin should be followed <u>AFTER</u> EMDK for Android APIs have been updated.  
+
+1. Get latest EMDK For Xamarin code from Jenkins  http://10.17.216.63:8080/jenkins/ and look for something similar to "tut_emdkx_build" and open the latest. 
+2. Get latest Symbol.XamarinEMDK.dll from Praveen (should be here: http://10.17.216.63:8080/jenkins/job/tut_emdkx_build/. On Oct 8, it was here: \\10.233.84.19\Data\USER_BUILD_OUTPUT\TUT_XAMARIN_TOOL_MAC\97) Team is migrating to Artifactory.
+3. Copy `Symbol.XamarinEMDK.dll` file to `/libs` folder in `/mDocToMarkdown` (replace or remame the existing file).
+4. Go to Terminal and navigate to folder `/mDocToMarkdown`. Then run command in the readme file in that folder (cross fingers - need mdoc - from Xamarin tools). This updates mdoc folder with new APIs.
+5. In the latest release notes, identify a NEW API feature and use the "Find in Folder" function to confirm that it's there. Also check assembly version inside any mdoc API to confirm that is matches the EMDK-X major and minor version numbers. 
+6. Using the "Find in Folder" function, search /mdocs folder for "To be added" - this finds everything new/changed. 
+7. Find the corresponding function in the EMDK-A JavaDocs and use the description to replace Summary "to be added" remove other instances of to be added from "value" and "remarks" fields. 
+8. When looking at JavaDocs - always click down into the details (do not take "first sentence" from summary). 
+9. For members called "values" or "valuesof," just remove "to be added" from all places. 
+10. For hidden or protected members, Look for "protected" <MemberSignature Language="C#" Value="protected> remove "to be added."
+11. Note: check how params descriptions are done
+12. Generate Markdown: i.e. "node generate_markdown.js -a 2.6.0.69 -p 2.6" (where number = assembly) 
+13. Check for latest assembly number in xml. 
+14. Markdown is in "mDocToMarkdown/markdown" folder. Double-check for missed instances of "to be added"
+15. Copy the markdown into techdocs EMDK-X API folder and "merge"
+
+7- copy the main name of the function (see screenshot on PC)
+
+-----
+
 ### Create new code sample repos for a new EMDK version
+
 Basic Steps
 1) Create new repo
-2) Clone repo from previous version (to retain folders) and pull repo lcoally https://help.github.com/articles/duplicating-a-repository/
-
+2) Clone repo from previous version (to retain folders) and pull repo locally https://help.github.com/articles/duplicating-a-repository/
 3) get latest samples from gerrit  found in master branch (need double check this with Charitha:
 https://gerrit.zebra.com/#/admin/projects/Secure_EMDK/EMDK_Android
 
@@ -43,6 +52,7 @@ https://gerrit.zebra.com/#/admin/projects/Secure_EMDK/EMDK_Android
 
 5) Update links in docs
 
+-----
 
 ### Create a repo for a new code sample
 

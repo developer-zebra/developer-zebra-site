@@ -2,7 +2,7 @@
 title: ScannerConfig.OcrBVariant
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 
     

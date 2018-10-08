@@ -24,6 +24,14 @@ Describes the type of aiming to use.
 Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead.isContinuousScan. If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead.isContinuousScan and aimType, the aimType settings will take precedence.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType
+###AutoCharacterSetFailureOption
+Failure option for auto character set selection.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetFailureOption
+###AutoCharacterSetPreferredOrder
+Selection of character sets available for automatic decoding.
+
+**Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetPreference>
 ###BeamTimer
 Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in increments of 100 ms). A value of 0 sets the reader to stay on indefinitely.
 
@@ -32,6 +40,14 @@ Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in inc
 Controls the beam width of a laser scanner. Laser beam width can be shortened or widened using this parameter. Use enum ScannerConfig.BeamWidth.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+BeamWidth
+###CharacterSetSelection
+Selection of character set for decoding the barcode.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CharacterSet
+###ConnectionIdleTime
+
+
+**Type** - System.Int32
 ###ContinuousRead
 ContinuousRead class provides access to continuous scanning related parameters.
 
@@ -41,6 +57,10 @@ This setting is used to prevent the scanner from decoding another symbol within 
 Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead.differentSymbolTimeout and differentSymbolTimeout, the differentSymbolTimeout settings will take precedence.
 
 **Type** - System.Int32
+###DisconnectOnExit
+
+
+**Type** - System.Boolean
 ###Inverse1DMode
 This parameter allows the user to select decoding on inverse 1D bar codes. Use enum ScannerConfig.Inverse1DMode.
 
@@ -53,6 +73,10 @@ Sets the number of times a bar code is read to confirm an accurate decode. Use e
 This parameter sets the effort at which the decoder will attempt to decode margin-less barcodes. Behavior of the level set to this parameter will vary based on the margin-less decoder selected. Note: Higher margin-less levels will increase decoding times and the risk of decoding errors. Zebra therefore recommends enabling only the symbologies that require a higher margin-less level, and leaving all other symbologies at the default level of 1. Use enum ScannerConfig.OneDQuietZoneLevel.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+OneDQuietZoneLevel
+###PairAfterScannerReboot
+Enable/disable automatic reconnection after scanner reboot.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PairAfterScannerReboot
 ###PoorQualityDecodeEffortLevel
 This parameter permits selection of enhancement modes for decoding barcodes of poor or degraded quality. Use enum ScannerConfig.PoorQualityDecodeEffortLevel.
 

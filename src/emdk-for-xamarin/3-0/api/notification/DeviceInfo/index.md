@@ -14,6 +14,10 @@ DeviceInfo provides information of the notification device.
 Returns the notification device connection type to mobile computer.
 
 **Type** - Symbol.XamarinEMDK.Notification.ConnectionType
+###DeviceIdentifier
+Defines specific notification devices of each type.
+
+**Type** - Symbol.XamarinEMDK.Notification.NotificationManager+DeviceIdentifier
 ###DeviceType
 Returns the notification device type.
 

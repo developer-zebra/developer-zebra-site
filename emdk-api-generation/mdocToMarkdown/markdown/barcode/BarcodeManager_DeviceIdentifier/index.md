@@ -2,7 +2,7 @@
 title: BarcodeManager.DeviceIdentifier
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 Defines the specific scanner devices of each type.
 
@@ -39,12 +39,20 @@ System.String **p0**
 First available Bluetooth imager scanner
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
+###BluetoothImagerDs2278
+First available Bluetooth imager DS2278 scanner.
+
+**Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
 ###BluetoothImagerDs3678
 First available Bluetooth imager DS3678 scanner
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
 ###BluetoothImagerRs6000
 First available Bluetooth imager RS6000 scanner
+
+**Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
+###BluetoothLaserLi3678
+First available Bluetooth laser LI3678 scanner.
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
 ###Default
@@ -73,6 +81,10 @@ First available pluggable imager RS5000 scanner
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
 ###PluggableLaser1
 First available pluggable laser scanner
+
+**Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
+###PluggableLaserLi3608
+First available Bluetooth laser LI3608 scanner.
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier
 ###Undefined

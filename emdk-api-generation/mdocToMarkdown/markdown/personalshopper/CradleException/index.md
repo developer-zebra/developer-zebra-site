@@ -2,7 +2,7 @@
 title: CradleException
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 The methods of cradle API throw a CradleException when an error occurs.
 

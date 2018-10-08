@@ -2,7 +2,7 @@
 title: NotificationResults
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 Defines all the error codes that Notification API returns. 
 
@@ -36,6 +36,10 @@ System.String **p0**  -
 
 ##Properties
 
+###CommandNotSupported
+Defines all the error codes that Notification API returns.
+
+**Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 ###Description
 
         

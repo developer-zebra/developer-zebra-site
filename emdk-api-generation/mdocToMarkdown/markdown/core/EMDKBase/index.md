@@ -2,7 +2,7 @@
 title: EMDKBase
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 This is the base class for all the EMDK manager classes derived from.
 

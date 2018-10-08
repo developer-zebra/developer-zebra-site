@@ -86,6 +86,14 @@ The GS1DatabarExp class provides access to parameters that are available for the
 The GS1DatabarLim class provides access to parameters that are available for the GS1 Databar Lim decoder.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Gs1DatabarLimDecoder
+###Gs1Datamatrix
+The Gs1Datamatrix class provides access to parameters that are available for the Gs1Datamatrix decoder.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Gs1DatamatrixDecoder
+###Gs1QrCode
+The Gs1QrCode class provides access to parameters that are available for the Gs1QrCode decoder.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Gs1QrCodeDecoder
 ###HanXin
 The HanXin class provides access to parameters that are available for the HanXin decoder.
 

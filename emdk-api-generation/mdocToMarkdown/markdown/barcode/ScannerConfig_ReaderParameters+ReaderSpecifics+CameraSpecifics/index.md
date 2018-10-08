@@ -2,7 +2,7 @@
 title: ScannerConfig.ReaderParameters+ReaderSpecifics+CameraSpecifics
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 CameraSpecific class provides access to the camera scanner specific parameters.
 
@@ -19,10 +19,22 @@ Describes the type of aiming to use.
 Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead.isContinuousScan. If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead.isContinuousScan and aimType, the aimType settings will take precedence.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType
+###AutoCharacterSetFailureOption
+Failure option for auto character set selection.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetFailureOption
+###AutoCharacterSetPreferredOrder
+Selection of character sets available for automatic decoding.
+
+**Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetPreference>
 ###BeamTimer
 Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in increments of 100 ms). A value of 0 sets the reader to stay on indefinitely.
 
 **Type** - System.Int32
+###CharacterSetSelection
+Selection of character set for decoding the barcode.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CharacterSet
 ###ContinuousRead
 ContinuousRead class provides access to continuous scanning related parameters.
 

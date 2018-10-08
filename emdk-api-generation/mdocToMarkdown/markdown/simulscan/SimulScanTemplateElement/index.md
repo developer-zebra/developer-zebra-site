@@ -2,7 +2,7 @@
 title: SimulScanTemplateElement
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 The TemplateElement class represents elements nested directly under the tag in an XML template file
 

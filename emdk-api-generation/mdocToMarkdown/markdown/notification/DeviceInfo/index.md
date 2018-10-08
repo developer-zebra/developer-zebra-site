@@ -2,7 +2,7 @@
 title: DeviceInfo
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 DeviceInfo provides information of the notification device.
 
@@ -14,6 +14,10 @@ DeviceInfo provides information of the notification device.
 Returns the notification device connection type to mobile computer.
 
 **Type** - Symbol.XamarinEMDK.Notification.ConnectionType
+###DeviceIdentifier
+Defines specific notification devices of each type.
+
+**Type** - Symbol.XamarinEMDK.Notification.NotificationManager+DeviceIdentifier
 ###DeviceType
 Returns the notification device type.
 

@@ -36,6 +36,10 @@ System.String **p0**  -
 
 ##Properties
 
+###CommandNotSupported
+Defines all the error codes that Notification API returns.
+
+**Type** - Symbol.XamarinEMDK.Notification.NotificationResults
 ###Description
 
         

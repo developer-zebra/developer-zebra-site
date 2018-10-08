@@ -2,7 +2,7 @@
 title: DiagnosticException
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 The methods of diagnostic API throw a DiagnosticException when an error occurs.
 

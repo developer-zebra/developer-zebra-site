@@ -2,7 +2,7 @@
 title: ScanDataCollection.LabelType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 This class describes the barcode symbology.
 
@@ -130,6 +130,14 @@ The GS1_DATABAR symbology.
 **Type** - Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType
 ###Gs1DatabarLim
 The GS1_DATABAR_LIM symbology.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType
+###Gs1Datamatrix
+The GS1_DATAMATRIX symbology.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType
+###Gs1Qrcode
+The GS1_QRCODE symbology.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType
 ###Hanxin

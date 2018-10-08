@@ -2,7 +2,7 @@
 title: TokenizedData
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 TokenizedData class provides access to tokenized scan data.
 

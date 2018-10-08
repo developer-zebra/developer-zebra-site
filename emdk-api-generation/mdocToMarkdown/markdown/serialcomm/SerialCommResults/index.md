@@ -2,7 +2,7 @@
 title: SerialCommResults
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 Serial Communication error codes and its details.
 

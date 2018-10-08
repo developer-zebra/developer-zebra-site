@@ -2,7 +2,7 @@
 title: CradleInfo
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '2.7' 
+productversion: '3.0' 
 ---
 This class holds cradle information.
 

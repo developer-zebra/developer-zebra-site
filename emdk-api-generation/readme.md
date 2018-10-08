@@ -26,17 +26,21 @@ Instructions for Xamarin should be followed <u>AFTER</u> EMDK for Android APIs h
 4. Go to Terminal and navigate to folder `/mDocToMarkdown`. Then run command in the readme file in that folder (cross fingers - need mdoc - from Xamarin tools). This updates mdoc folder with new APIs.
 5. In the latest release notes, identify a NEW API feature and use the "Find in Folder" function to confirm that it's there. Also check assembly version inside any mdoc API to confirm that is matches the EMDK-X major and minor version numbers. 
 6. Using the "Find in Folder" function, search /mdocs folder for "To be added" - this finds everything new/changed. 
-7. Find the corresponding function in the EMDK-A JavaDocs and use the description to replace Summary "to be added" remove other instances of to be added from "value" and "remarks" fields. 
-8. When looking at JavaDocs - always click down into the details (do not take "first sentence" from summary). 
+7. In each corresponding function in the EMDK-A JavaDocs, copy its description (from EMDK-A API) to the Summary field (replacing "to be added") and remove other instances of "to be added" from "value" and "remarks" fields. **NOTE**: When looking at JavaDocs - always click down into the details (do not take "first sentence" from top-level summary; it's not always the same). 
 9. For members called "values" or "valuesof," just remove "to be added" from all places. 
-10. For hidden or protected members, Look for "protected" <MemberSignature Language="C#" Value="protected> remove "to be added."
-11. Note: check how params descriptions are done
-12. Generate Markdown: i.e. "node generate_markdown.js -a 2.6.0.69 -p 2.6" (where number = assembly) 
-13. Check for latest assembly number in xml. 
-14. Markdown is in "mDocToMarkdown/markdown" folder. Double-check for missed instances of "to be added"
-15. Copy the markdown into techdocs EMDK-X API folder and "merge"
+10. For hidden or protected members (with "protected" in <MemberSignature Language="C#" Value="protected...> just remove "to be added" from all its fields. 
+11. Double-check for missed instances of "to be added" in `/mdoc` folder; correct as needed. 
+12. Get the current assembly version number from one of the API (xml) files. 
+13. To generate markdown: 
+   * In terminal `/mDocToMarkdown` folder, run: <br>
+<br>
 
-7- copy the main name of the function (see screenshot on PC)
+   	:::term
+   	node generate_markdown.js -a 2.6.0.69 -p 2.6" 
+   	// replace 2.6.0.69 with current assemblyversion
+
+14. Markdown is output to `/mDocToMarkdown/markdown` folder
+15. Copy the markdown into techdocs EMDK-X API folder and "merge"
 
 -----
 

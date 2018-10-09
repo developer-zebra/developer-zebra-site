@@ -12,7 +12,7 @@ content-items:
     level: 4
     title: Build 'Hello EMDK' App
     text: A simple getting-started tutorial for beginners.
-    url: /emdk-for-android/6-10/tutorial/tutdatacaptureprofile
+    url: /emdk-for-android/6-10/tutorial/tutBasicScanningAPI
   - type: section
     level: 4
     title: Using Profile Manager

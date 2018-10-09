@@ -4,6 +4,9 @@ layout: guide.html
 product: EMDK For Android
 productversion: '6.10'
 ---
+
+> **NOTE**: Data Capture is deprecated in EMDK-X 6.10 and later. Please refer to the [Basic Scanning Tutorial](../tutBasicScanningAPI) instead.  
+
 ## Developing an EMDK for Android Application Part 3
 
 This guide will walk you through adding MSR support and multiple profiles to the Android application you made using [Developing an EMDK for Android Application Part 2](/emdk-for-android/6-10/tutorial/tutdatacaptureprofilePt2). This tutorial will add some more complexity by adding a second screen as well as adding a second Data Capture Profile.

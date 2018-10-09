@@ -4,6 +4,9 @@ layout: guide.html
 product: EMDK For Android
 productversion: '6.10'
 ---
+
+> **NOTE**: Data Capture is deprecated in EMDK-X 6.10 and later. Please refer to the [Basic Scanning Tutorial](../tutBasicScanningAPI) instead.  
+
 ## Developing an EMDK for Android Application Part 2
 
 This tutorial will walk you through adding [Intent Output](/emdk-for-android/6-10/mx/data-capture/intent) support to the EMDK For Android application you made using [Developing an EMDK for Android Application Part 1](/emdk-for-android/6-10/tutorial/tutdatacaptureprofile). This tutorial will assume your project is at the state of the end of that tutorial and build on top of it. You can follow the tutorial in the previous step of download the source from the previous step and start from there.

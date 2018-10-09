@@ -21,7 +21,7 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 
 ### Mobile devices
 
-* MC33   - Nougat, Oreo `NEW`
+* MC33   - Nougat, **Oreo** `NEW`
 * **PS20 - Oreo** `NEW`
 * TC20   - Nougat
 * TC25   - Nougat
@@ -234,9 +234,6 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 
 ### Added in v2.7
 
-* **<u>No longer supports</u> Visual Studio 2013 for Windows 
-* **<u>No longer supports</u> Xamarin Studio for Mac and Windows**
-
 **Enhanced Barcode Manager API**:
 
 * Supports Multi-barcode decoding
@@ -260,6 +257,9 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 * New `PRESS_AND_SUSTAIN` AimType avoids canceling a read by subsequently pressing the trigger button (TC20/TC25 devices only)
 
 **Beta support for Visual Studio on Mac OS X**
+
+* **<u>Support ends for</u> Visual Studio 2013 for Windows** 
+* **<u>Support ends for</u> Xamarin Studio for Mac and Windows**
 
 -----
 

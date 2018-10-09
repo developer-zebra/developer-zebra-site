@@ -4,6 +4,9 @@ layout: guide.html
 product: EMDK For Android
 productversion: '6.10'
 ---
+
+> **NOTE**: Data Capture is deprecated in EMDK-X 6.10 and later. Please refer to the [Basic Scanning Tutorial](../tutBasicScanningAPI) instead.  
+
 ## Developing an EMDK for Android Application Part 1
 
 This guide will walk you through creating an EMDK For Android application that will use [Data Capture Profiles](/emdk-for-android/6-10/mx/data-capture/barcode) to get barcode data into your application using the [KeyStroke output](/emdk-for-android/6-10/mx/data-capture/keystroke) feature of EMDK Profiles.

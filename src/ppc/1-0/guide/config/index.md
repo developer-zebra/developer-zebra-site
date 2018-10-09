@@ -22,8 +22,8 @@ These are global settings to configure PPC Client behavior.
 * [**State of Health Thresholds**](../mgmt/#whatissoh) 
  * **Automatic EOL** – When enabled, the EOL request is automatically sent to the PPC client when the battery reaches the specified **End of Life Threshold** values.    
  * **Threshold values**<sup>[1]</sup> - Specifies the threshold values for each color-coded SOH battery state in the dashboard. By default the thresholds are:
-	  * End of Life Threshold: 75 (Zebra recommends this value to be 75 or higher)
-	  * Warning Threshold: 90 
+	  * End of Life Threshold: 80 (minimum value: 75)
+	  * Warning Threshold: 85 (maximum value: 90)
 <br>
 These default thresholds correlate to the color-coded SOH as follows: 
  <br>

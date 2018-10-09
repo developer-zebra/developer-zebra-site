@@ -9,7 +9,7 @@ productversion: '1.0'
 Maintaining a pool of batteries with optimal performance is important for smooth operational productivity. This section discusses how to maintain optimal battery health on Zebra devices with PowerPrecision Console (PPC).
 
 ## What is SOH?
-SOH (state-of-health) is the measurement of battery health capacity, or how well it holds its charge, relative to when it was new. It uses various electrical parameters as data points and advanced intelligence from the PowerPrecision Plus batteries to calculate the value. A low SOH means that it has a quicker battery capacity deterioration rate, which can result to fewer hours of productivity use between charges. [Client Settings](../admin/#clientconfiguration) from the Admin View provide default thresholds to serve as a guideline based on historical data from our customers, but there is no "one value fits all". Based on the majority of our customers, we found that a default EOL (end-of-life) threshold of 75 and a warning threshold of 90 are typically good initial values to use as a guide. We encourage the SOH threshold values to be adjusted based on various factors in battery performance seen from customer experience in different scenarios such as different shifts, locations and environments.
+SOH (state-of-health) is the measurement of battery health capacity, or how well it holds its charge, relative to when it was new. It uses various electrical parameters as data points and advanced intelligence from the PowerPrecision Plus batteries to calculate the value. A low SOH means that it has a quicker battery capacity deterioration rate, which can result to fewer hours of productivity use between charges. [Client Settings](../admin/#clientconfiguration) from the Admin View provide default thresholds to serve as a guideline based on historical data from our customers, but there is no "one value fits all". Based on the majority of our customers, we found that a default EOL (end-of-life) threshold of 80 and a warning threshold of 85 are typically good initial values to use as a guide. We encourage the SOH threshold values to be adjusted based on various factors in battery performance seen from customer experience in different scenarios such as different shifts, locations and environments.
 
 ![img](SOH.jpg)
 _Figure 1. SOH_
@@ -40,13 +40,13 @@ PowerPrecision batteries provide limited battery information compared to PowerPr
 PowerPrecision batteries are displayed in the Admin View with the "Charge Cycles" field populated but no SOH. All SOH filters are required to be unchecked to view PowerPrecision batteries.
 
 ##Battery History
-View battery history by navigating to the **Active** tab from the [Admin View](../admin) and clicking on any battery listed. Complete battery information and history is displayed such as SOH, SOC, battery voltage, battery temperature, battery type, EOL snooze, trigger event, last updated and more. The chart displays SOH and SOC over time. It may be customized to display only SOH or SOC, or both.
+View battery history by navigating to the **Active** tab from the [Admin View](../admin) and clicking on any battery listed. Complete battery information and history (within one month) is displayed such as SOH, SOC, battery voltage, battery temperature, battery type, EOL snooze, trigger event, last updated and more. The chart displays SOH and SOC over time. It may be customized to display only SOH or SOC, or both.
 
 ![img](battery_history.jpg)
 _Figure 2. Battery History_
 
 ##Export Report
-A report of all battery data can be generated for inventory tracking and replenishment. To export a report of all data, in the [Admin View](../admin) click on the Export Data icon on the top right.  Select CSV to download all data in .csv file format.  
+A report of all battery data can be generated for inventory tracking and replenishment. To export a report of all data, in the [Admin View](../admin/#exportreport) click on the Export Data icon on the top right.  Select CSV to download all data in .csv file format.  
 
 <br>
 

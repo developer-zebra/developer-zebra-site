@@ -62,7 +62,14 @@ We recommend to use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) t
 		server.ssl.key-store:<ssl_certificate.pfx>  
 		server.ssl.key-store-password:<password>
 
-	Replace all values in the angled brackets <> to the appropriate value or string and remove the brackets. If it exists, remove the hashtag to uncomment out the password line. Enter in the appropriate SSL password following the colon.
+		# export data
+		data.export.Path=<C:\\ppcData\\>
+
+	Replace all values in the angled brackets <> to the appropriate value or string and remove the brackets. 
+	
+	The "export data" section specifies the file path for data to be exported from an automatic data backup or [manual report export](../mgmt). Only the hard drive letter is configurable, ie. D:\\ppcData\\, and write permissions are required for the specified hard drive. A monthly data backup is automatically generated on a daily basis starting one month after install. Historical data is accumulated for the month and exported in .CSV format.
+
+	In the "SSL certificates" section, if a hashtag exists in the password line, it must be removed to uncomment out the password line. Enter in the appropriate SSL password following the colon.
 
 	Note: If port 8080 is not available on the server, any other available port can be used in replacement. Some network policies might block incoming and outgoing ports - it is required to open the configured ports in the network firewall as described in the next section “Open inbound/outbound ports on the firewall” 
 
@@ -89,6 +96,7 @@ Install PPC client on the supported Zebra devices to register the device, upload
 1. Connect the device to a Wi-Fi network on the same network as the PPC Server.
 2. Copy the PPC Client .APK install file (distributed as part of PPC) to the device and install. Different versions of the .APK are available based on Android versions Marshmallow, Nougat, and Oreo. The respective .APK version is located in subfolders M, N, and O corresponding with each Android flavor.
 3. When prompted, enable the “Apps that can draw over other apps” overlay permission. 
+4. Reboot the device.
 
 ###Configuration
 Configure the server address and port either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).

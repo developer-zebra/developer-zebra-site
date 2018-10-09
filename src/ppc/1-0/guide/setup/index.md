@@ -90,13 +90,16 @@ We recommend to use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) t
    Zebra recommends to change the password immediately for the _super admin_ user to avoid unauthorized access. Tap on "SAdmin" user at the top right of the Admin View and select "Change password".
 
 ##Client Install & Setup
-Install PPC client on the supported Zebra devices to register the device, upload device battery data and display end-of-life (EOL) battery alerts. The device must be on the same network as the server. The server address needs to be configured on the PPC client to communicate with the PPC Server. PPC client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management).
+Install PPC client on the supported Zebra devices to register the device, upload device battery data and display end-of-life (EOL) battery alerts. The device must be connected to the same network as the server. The server address needs to be configured on the PPC client to communicate with the PPC Server. PPC client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management).
 
 ###Installation
-1. Connect the device to a Wi-Fi network on the same network as the PPC Server.
-2. Copy the PPC Client .APK install file (distributed as part of PPC) to the device and install. Different versions of the .APK are available based on Android versions Marshmallow, Nougat, and Oreo. The respective .APK version is located in subfolders M, N, and O corresponding with each Android flavor.
+1. Download PPCClient.zip from Zebra's support site and unzip the files and folders.
+2. Install PowerPrecisionConsole.apk. 
+   * For Android Marshmallow and Nougat devices, install the .APK located in folder PPCClient\Client\M_N.
+   * For Android Oreo devices, install the .APK located in folder PPCClient\Client\O.
 3. When prompted, enable the “Apps that can draw over other apps” overlay permission. 
-4. Reboot the device.
+4. For remote configuration using StageNow or an EMM (using XML or Managed Config), install PPCClientMgr.apk located in PPCClient\PluginCSP
+5. Reboot the device.
 
 ###Configuration
 Configure the server address and port either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
@@ -113,7 +116,7 @@ Note: the URL must not contain "https://".
 5. Tap OK to save the changes and return to the main screen.
 PPC Client registers with the server and uploads battery data.
 
-####Remote Configuration Deployment with StageNow
+####Remote Configuration Deployment
 Steps for remote configuration with StageNow and CSP Plug-in, with the option of deployment through EMM:
 1. Install PPCCspMgr.apk, distributed as part of the PPC software. Open PPCCspMgr app.
 2. Compress two files distributed as part of the PPC Console software into a single .zip file: 
@@ -132,6 +135,7 @@ Steps for EMM Staging (optional):
 3. Push the .XML file to the device.
 4. Push the settings via EMM to configure the PPC Client.
 
+<!--
 ####Remote Configuration Deployment Without StageNow
 Steps for remote configuration deployment with CSP and EMM:
 1. In "PPCConfig.xml" distributed as part of the PPC Console software, edit ServerURL parameter with the appropriate server address and set the "AllowEditing" value to either true or false to control whether the user is permitted to edit the server URL:
@@ -151,7 +155,7 @@ Steps for remote configuration deployment with CSP and EMM:
 	STATUS: Success or Failed<br>
 	ERROR_MESSAGE: Error Message
 6. PPC Client configuration is complete. It registers with the server and uploads battery data.
-
+-->
 <br>
 -----
 

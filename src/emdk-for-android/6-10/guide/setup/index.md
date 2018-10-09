@@ -45,34 +45,34 @@ The following instructions apply to Android Studio, which is required to use EMD
    c. **Enter "emdk" in the search box**:<br>
     •  If no result appears, skip to Step d.<br>
    <img alt="image" style="height:350px" src="uninstall_02.png"/>
-_Click to enlarge_.<br>
+_Click to enlarge; ESC to exit_.<br>
     •  If any version prior to 7.0 appears, **select it and click the "Uninstall" button**.<br>
 <img alt="image" style="height:350px" src="uninstall_03.png"/>
-_Click to enlarge_.<br>
+_Click to enlarge; ESC to exit_.<br>
     •  Click the **"Restart Android Studio"** button.<br>
     •  Select **File -> Settings.**<br>
     •  In the left-hand pane, **select "Plugins"** to bring up Plug-in settings.<br>
     •  Proceed to Step d.<br>
    d. **Click "Browse repositories..."** button.<br>
    <img alt="image" style="height:350px" src="browse_repos_01.png"/>
-_Click to enlarge_.<br>
+_Click to enlarge; ESC to exit_.<br>
    e. **Enter "emdk" in the search box**.<br>Then **click "Search in repositories"** as below:
    <img alt="image" style="height:350px" src="install_plugin_01.png"/>
-_Click to enlarge_.<br>
+_Click to enlarge; ESC to exit_.<br>
    f. **Select "EMDK for Android"** and **hit "Install"** as below:<br> 
    <img alt="image" style="height:350px" src="install_plugin_02.png"/>
-_Click to enlarge_.<br>
+_Click to enlarge; ESC to exit_.<br>
    g. Click the **"Restart Android Studio"** button:<br>
     <img alt="image" style="height:350px" src="install_plugin_03.png"/>
-_Click to enlarge_.<br>
+_Click to enlarge; ESC to exit_.<br>
    h. **Click "Restart"** to confirm and restart Android Studio.<br> 
    <img alt="image" style="height:100px" src="install_plugin_05.png"/>
-_Click to enlarge_.<br>
+_Click to enlarge; ESC to exit_.<br>
 4. **Enable the EMDK SDK**:<br>
    a. **Create or open an Android project**.<br>
    b. **Navigate to the** `build.gradle` **file** in the app module:<br>
    <img alt="image" style="height:350px" src="gradle_01.png"/>
-_Click to enlarge_.<br>
+_Click to enlarge; ESC to exit_.<br>
    c. **Add the line below to the dependencies section** (**NOTE**: If using Gradle 3.3 or lower, see below):<br>
 
 		:::java

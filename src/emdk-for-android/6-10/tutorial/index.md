@@ -6,7 +6,7 @@ automenu:
   items:
     - title: Profile Manager
       items:
-        - title: Basic Data Capture
+        - title: Basic Data Capture (deprecated)
           url: /emdk-for-android/6-10/tutorial/tutdatacaptureprofile
         - title: Using Intent Output
           url: /emdk-for-android/6-10/tutorial/tutdatacaptureprofilePt2

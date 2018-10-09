@@ -47,16 +47,16 @@ The following instructions apply to Visual Studio 2017. A supported version of V
  
 1. From within a project, right-click the project name and **select "Manage NuGet Packages..."** from the menu:
 	<img alt="image" style="height:276px" src="setup_01.png"/>
-	_Click to enlarge_.<br><br>
+	_Click to enlarge; ESC to exit_.<br><br>
 2. **Click "Browse"** (if necessary) and **enter "EMDK" in the search box**. The Symbol.XamarinEMDK package appears: 
 	<img alt="image" style="height:276px" src="setup_02.png"/>
-	_Click to enlarge_.<br><br>
+	_Click to enlarge; ESC to exit_.<br><br>
 3. **Select the package** to show its info and Install button. <br>Then **click "Install"**:
 	<img alt="image" style="height:276px" src="setup_03.png"/>
-	_Click to enlarge_.<br><br>
+	_Click to enlarge; ESC to exit_.<br><br>
 4. **Click the "I Accept" button** to accept the license, if necessary.
 	<img alt="image" style="height:418px" src="setup_05.png"/>
-	_Click to enlarge_.<br><br>
+	_Click to enlarge; ESC to exit_.<br><br>
 5. Repeat Steps 1&ndash;4 for each project that uses EMDK for Xamarin APIs. 
 
 > The project is ready to use EMDK for Xamarin APIs. 
@@ -71,16 +71,16 @@ The following instructions apply to Visual Studio 2017, which must be installed 
 
 1. In the project, select **Project -> "Add NuGet Packages..."**
 	<img alt="image" style="height:273px" src="Mac_install_01.png"/>
-	_Click to enlarge_.<br><br>
+	_Click to enlarge; ESC to exit_.<br><br>
 2. **Enter "EMDK" in the search box**. The Symbol.XamarinEMDK package appears: 
 	<img alt="image" style="height:273px" src="Mac_install_02.png"/>
-	_Click to enlarge_.<br><br>
+	_Click to enlarge; ESC to exit_.<br><br>
 3. **Select the package** and **click the "Add Package" button**. 
 	<img alt="image" style="height:273px" src="Mac_install_03.png"/>
-	_Click to enlarge_.<br><br>
+	_Click to enlarge; ESC to exit_.<br><br>
 4. **Click "Accept"** to accept the license when prompted:
 	<img alt="image" style="height:200px" src="Mac_install_04.png"/>
-	_Click to enlarge_.<br>
+	_Click to enlarge; ESC to exit_.<br>
 
 > The project is ready to use EMDK for Xamarin APIs. 
 
@@ -104,5 +104,5 @@ From within a project, **right-click the** `Symbol.XamarinEMDK` **package and se
 
 From within a project, **right-click the** `Symbol.XamarinEMDK` **package and select "Remove"** as below:
 <img alt="image" style="height:200px" src="mac_uninstall.png"/>
-	_Click to enlarge_.<br>
+	_Click to enlarge; ESC to exit_.<br>
 <br>

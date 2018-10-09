@@ -375,6 +375,254 @@ Error messages are logged for invalid actions and parameters
 
 > All parameters are case sensitive.
 
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Decoders</th>
+    <th>Decoder State</th>
+    <th>Decoder Parameters</th>
+    <th>Parameter Values</th>
+  </tr>
+
+  <tr>
+    <td rowspan="3">decoder_code11</td>
+	<td rowspan="3">True <br> False</td>
+    <td>decoder_code11_length1 <br>decoder_code11_length2</td>
+    <td>Integer from 0–55</td>
+  </tr>
+  <tr>
+	<td>decoder_code11_redundancy <br>decoder_code11_report_check_digit</td>
+	<td>True<br>False</td>
+  </tr>
+  <tr>
+	<td>decoder_code11_verify_check_digit</td>
+	<td>0 - No Check Digit<br>1 - 1 Check Digit<br>2 - 2 Check Digits</td>
+  </tr>
+
+  <tr>
+    <td rowspan="6">decoder_code128</td>
+	<td rowspan="6">True <br> False</td>
+    <td>decoder_code128_length1 <br>decoder_code128_length2</td>
+    <td>Integer from 0–55</td>
+  </tr>
+  <tr>
+	<td>decoder_code128_redundancy <br>decoder_code128_enable_plain<br>decoder_code128_enable_ean128<br>decoder_code128_enable_isbt128<br>decoder_code128_check_isbt_table</td>
+	<td>True<br>False</td>
+  </tr>
+  <tr>
+	<td>decoder_code128_isbt128_concat_mode</td>
+	<td>0 - Concat Mode Never<br>1 - Concat Mode Always<br>2 - Concat Mode Auto</td>
+  </tr>
+  <tr>
+	<td>decoder_code128_security_level</td>
+	<td>0 - Security Level 0<br>1 - Security Level 1<br>2 - Security Level 2<br>3 - Security Level 3</td>
+  </tr>
+  <tr>
+	<td>decoder_code128_enable_marginless_decode</td>
+	<td>True<br>False</td>
+  </tr>
+  <tr>
+	<td>decoder_code128_ignore_fnc4</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+    <td rowspan="3">decoder_code39</td>
+	<td rowspan="3">True <br> False</td>
+    <td>decoder_code39_length1<br>decoder_code39_length2</td>
+    <td>Integer from 0–55</td>
+  </tr>
+  <tr>
+	<td>decoder_code39_verify_check_digit <br>decoder_code39_report_check_digit<br>decoder_code39_full_ascii<br>decoder_code39_redundancy<br>decoder_code39_convert_to_code32<br>decoder_code39_report_code32_prefix<br>decoder_code39_enable_marginless_decode</td>
+	<td>True<br>False</td>
+  </tr>
+  <tr>
+	<td>decoder_code39_security_level</td>
+	<td>0 - Security Level 0<br>1 - Security Level 1<br>2 - Security Level 2<br>3 - Security Level 3</td>
+  </tr>
+
+  <tr>
+	<td>decoder_ean13</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_ean8</td>
+	<td>True<br>False</td>
+	<td>decoder_ean8_convert_to_ean13</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>decoder_korean_3of5</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_chinese_2of5</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td rowspan="2">decoder_d2of5</td>
+	<td rowspan="2">True<br>False</td>
+	<td>decoder_d2of5_length1<br>decoder_d2of5_length2</td>
+	<td>Integer from 0–55</td>
+  </tr>
+
+  <tr>
+    <td>decoder_d2of5_redundancy</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>decoder_trioptic39</td>
+	<td>True<br>False</td>
+	<td>decoder_trioptic39_redundancy</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td rowspan="2">decoder_code93</td>
+	<td rowspan="2">True<br>False</td>
+	<td>decoder_code93_length1<br>decoder_code93_length2</td>
+	<td>Integer from 0–55</td>
+  </tr>
+
+  <tr>
+    <td>decoder_code93_redundancy</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+    <td rowspan="4">decoder_msi</td>
+	<td rowspan="4">True <br> False</td>
+    <td>ecoder_msi_length1 <br>ecoder_msi_length1</td>
+    <td>Integer from 0–55</td>
+  </tr>
+  <tr>
+	<td>decoder_msi_redundancy <br>decoder_msi_report_check_digit</td>
+	<td>True<br>False</td>
+  </tr>
+  <tr>
+	<td>decoder_msi_check_digit</td>
+	<td>0- 1 Check Digit<br>1 - 2 Check Digits</td>
+  </tr> 
+  <tr>
+	<td>decoder_msi_check_digit_scheme</td>
+	<td>0 - Mod-11-10<br>1 - Mod-10-10</td>
+  </tr> 
+
+  <tr>
+	<td rowspan="2">decoder_codabar</td>
+	<td rowspan="2">True<br>False</td>
+	<td>decoder_codabar_length1<br>decoder_codabar_length2</td>
+	<td>Integer from 0–55</td>
+  </tr>
+  <tr>
+    <td>decoder_codabar_redundancy<br>decoder_codabar_clsi_editing<br>decoder_codabar_notis_editing</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+    <td rowspan="3">decoder_upce0</td>
+	<td rowspan="3">True <br> False</td>
+    <td>decoder_upce0_report_check_digit</td>
+    <td>True<br>False</td>
+  </tr>
+  <tr>
+	<td>decoder_upce0_preamble</td>
+	<td>0 - Preamble None<br>1 - Preamble Sys Char<br>2 - Preamble Country and Sys Char</td>
+  </tr>
+  <tr>
+	<td>decoder_upce0_convert_to_upca</td>
+	<td>True<br>False</td>
+  </tr> 
+
+  <tr>
+	<td rowspan="2">decoder_upce1</td>
+	<td rowspan="2">True<br>False</td>
+	<td>decoder_upce1_report_check_digit<br>decoder_upce1_convert_to_upca</td>
+	<td>True<br>False</td>
+  </tr>
+  <tr>
+    <td>decoder_upce1_preamble</td>
+	<td>0 - Preamble None<br>1 - Preamble Sys Char<br>2 - Preamble Country and Sys Char</td>
+  </tr>
+
+  <tr>
+	<td rowspan="2">decoder_upca</td>
+	<td rowspan="2">True<br>False</td>
+	<td>decoder_upca_report_check_digit</td>
+	<td>True<br>False</td>
+  </tr>
+  <tr>
+    <td>decoder_upca_preamble</td>
+	<td>0 - Preamble None<br>1 - Preamble Sys Char<br>2 - Preamble Country and Sys Char</td>
+  </tr>
+
+  <tr>
+	<td>decoder_us4state</td>
+	<td>True<br>False</td>
+	<td>decoder_us4state_fics</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>decoder_tlc39</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_mailmark</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_hanxin</td>
+	<td>True<br>False</td>
+	<td>decoder_hanxin_inverse</td>
+	<td>0 - Disable<br>1 - Enable<br>2 - Auto</td>
+  </tr>
+
+  <tr>
+	<td>decoder_signature</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_webcode</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td rowspan="2">decoder_matrix_2of5</td>
+	<td rowspan="2">True<br>False</td>
+	<td>decoder_matrix_2of5_length1<br>decoder_matrix_2of5_length2</td>
+	<td>Integer from 0–55</td>
+  </tr>
+  <tr>
+    <td>decoder_matrix_2of5_redundancy<br>decoder_matrix_2of5_report_check_digit<br>decoder_matrix_2of5_verify_check_digit</td>
+	<td>True<br>False</td>
+  </tr>
+
+</table>
+
+<!--
+
 <table class="c19">
 <tbody>
 <tr class="c6" bgcolor="#e0e0eb">
@@ -754,6 +1002,7 @@ Error messages are logged for invalid actions and parameters
 
 **Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
+-->
 -----
 
 ## Serial Input Parameters 

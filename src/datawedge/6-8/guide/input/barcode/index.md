@@ -93,7 +93,7 @@ DataWedge supports the following Zebra USB SSI scanners:
 
 **Support notes**: 
 
-* The DS3608 and LI3608 scanners are supported only on VC80, ET50 and ET55 devices running Android 
+* The DS3608 and LI3608 scanners are supported only on VC80 device running Android 
 * Scanner must be configured using Symbol Native API (SNAPI) with Imager Interface
 * SNAPI drivers are included with supported devices
 * The scanner connects via USB port and cable

@@ -142,12 +142,7 @@ Select **All Scanners**. A confirmation message appears indicating that any sett
 
 ###Using Intents
 
-Set the global scanner configuration by using **ALL_SCANNERS** value with parameter `configure_all_scanners` via [GET_CONFIG](../../../api/getconfig) and [SET_CONFIG](../../../api/setconfig) intent APIs.
-
-**Using SET_CONFIG:**
-* Setting either `configure_all_scanners` or a valid scanner identifier is required, otherwise DataWedge will return an error.
-* If `configure_all_scanners` is set to "true", the configuration will be saved for all the scanners. The **scanner_selection_by_identifier** does not need to be specified.  If there is any previous configuration for any of the scanners they will be replaced with the new configuration.
-* If `configure_all_scanners` is set to "false", the configuration will be saved for the selected scanner only. In the event the scanner selection is set to “AUTO”, the current default scanner configuration is updated. 
+Set the global scanner configuration by setting the value of parameter `configure_all_scanners` to "true" via [SET_CONFIG](../../../api/setconfig) intent API.
 
 -----
 

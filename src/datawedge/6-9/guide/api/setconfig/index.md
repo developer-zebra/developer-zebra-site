@@ -83,6 +83,10 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 
 * **BARCODE –** takes a value from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
  * `scanner_selection_by_identifier` [string]- takes a value from the list of [Scanner Identifiers](#scanneridentifiers) below.
+ * `configure_all_scanners` [string]- true/false
+ <br>
+ If set to “true”, the parameter `scanner_selection_by_identifier` is ignored and the configuration is saved as a Global Scanner Configuration. If there is any previous configuration for any individual scanners, they will be replaced with the new global configuration. <br>
+ If set to "false", the configuration will be saved for the individual selected scanner only. In the event the scanner selection is set to “Auto”, the current default scanner configuration is updated.
 
 * **SERIAL -** takes values as indicated below: 
 <br>

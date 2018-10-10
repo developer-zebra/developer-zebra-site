@@ -31,7 +31,10 @@ productversion: '6.10'
 ##Overview
 This sample demonstrates simultaneous scanning of multiple barcodes using new capabilities in the Barcode API [Barcode/Scanning APIs](/emdk-for-android/6-10/api) introduced with EMDK for Android 6.8. These APIs work independently of any [Data Capture profiles](/emdk-for-android/6-10/mx/data-capture/barcode).  
 
->**Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
+#### Notes
+
+* **This sample illustrates a single use-case** for implementing multi-barcode features; it is not meant to provide a comprehensive example of the many ways this feature could be used. 
+* **DataWedge cannot be configured for data capture through Profile Manager** when using EMDK-A 6.8 and higher. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
 
 The available actions in the [Barcode/Scanning API](/emdk-for-android/6-10/api) are:
   

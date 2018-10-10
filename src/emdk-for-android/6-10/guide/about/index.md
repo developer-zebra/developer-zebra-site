@@ -5,6 +5,12 @@ product: EMDK For Android
 productversion: '6.10'
 ---
 
+## `IMPORTANT`
+
+**EMDK for Android versions 6.10 and 7.0 are functionally identical and interchangeable; either desktop version can target either device version**. Zebra publishes both versions to help avoid confusion since it's possible that identical EMDK software could be on different devices with different version numbers. For example, devices built on Zebra's SDM660 platform contain EMDK-A 6.10, and 8956-based devices come with EMDK-A 7.0. 
+
+-----
+
 ## Overview
 
 EMDK for Android extends the Android Studio IDE for Mac OS and Windows with tools for easily creating powerful line-of-business applications for Zebra Android devices. EMDK for Android includes class libraries, sample apps and source code that enables developers to easily build apps that take full advantage of the power of Zebra devices.

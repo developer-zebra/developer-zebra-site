@@ -99,7 +99,6 @@ Install PPC client on the supported Zebra devices to register the device, upload
    * For Android Oreo devices, install the .APK located in folder PPCClient\Client\O.
 3. When prompted, enable the “Apps that can draw over other apps” overlay permission. 
 4. For remote configuration using StageNow or an EMM (using XML or Managed Config), install PPCClientMgr.apk located in PPCClient\PluginCSP
-5. Reboot the device.
 
 ###Configuration
 Configure the server address and port either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).

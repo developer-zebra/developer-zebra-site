@@ -973,6 +973,156 @@ Other Scanner Input Parameters:
 	<td>0 - Disabled<br>1 – Enabled/HW picklist<br>2 – Software Picklist</td>
   </tr>
 
+  <tr>
+	<td>aim_type</td>
+	<td>0 - Trigger<br>1 - Timed Hold<br>2 - Timed Release<br>3 - Press And Release<br>5 - Continuous Read<br>6 - Press and Sustain</td>
+  </tr>
+
+  <tr>
+	<td>aim_timer</td>
+	<td>Integer from 0–60000</td>
+  </tr>
+
+  <tr>
+	<td>same_barcode_timeout</td>
+	<td>Integer from 0–5000</td>
+  </tr>
+
+  <tr>
+	<td>different_barcode_timeout</td>
+	<td>Integer from 0–5000</td>
+  </tr>
+
+  <tr>
+	<td>illumination_mode</td>
+	<td>off - Off<br>torch - On</td>
+  </tr>
+
+  <tr>
+	<td>cd_mode</td>
+	<td>0 - Disabled<br>3 - Enabled</td>
+  </tr>
+
+  <tr>
+	<td>low_power_timeout</td>
+	<td>Integer from 0–1000</td>
+  </tr>
+
+  <tr>
+	<td>delay_to_low_power_mode</td>
+	<td>16 - 1 Second<br>29 - 30 Seconds<br>32 - 1 Minute<br>37 - 5 Minutes</td>
+  </tr>
+
+  <tr>
+	<td>illumination_brightness</td>
+	<td>Integer from 0–10</td>
+  </tr>
+
+  <tr>
+	<td>inverse_1d_mode</td>
+	<td>0 - Disable<br>1 - Enable<br>2 - Auto</td>
+  </tr>
+
+  <tr>
+	<td>viewfinder_size</td>
+	<td>Integer from 0–100</td>
+  </tr>
+
+  <tr>
+	<td>viewfinder_posx</td>
+	<td>Integer from 0–100</td>
+  </tr>
+
+  <tr>
+	<td>viewfinder_posy</td>
+	<td>Integer from 0–100</td>
+  </tr>
+
+  <tr>
+	<td>1d_marginless_decode_effort_level</td>
+	<td>0 - Level 0<br>1 - Level 1<br>2 - Level 2<br>3 - Level 3</td>
+  </tr>
+
+  <tr>
+	<td>poor_quality_bcdecode_effort_level</td>
+	<td>0 - Level 0<br>1 - Level 1<br>2 - Level 2<br>3 - Level 3</td>
+  </tr>
+
+  <tr>
+	<td>charset_name</td>
+	<td>ISO-8859-1 - ISO-8859-1<br>Shift_JIS - Shift_JIS<br>UTF-8 - UTF-8</td>
+  </tr>
+
+  <tr>
+	<td>viewfinder_mode</td>
+	<td>1 - Viewfinder Enabled<br>2 - Static Reticle</td>
+  </tr>
+
+  <tr>
+	<td>code_id_type</td>
+	<td>0 - Code Id Type None<br>1 - Code Id Type Aim<br>2 - Code Id Type Symbol</td>
+  </tr>
+
+  <tr>
+	<td>volume_slider_type</td>
+	<td>0 - Ringer<br>1 - Music and Media<br>2 - Alarms<br>3 - Notification</td>
+  </tr>
+
+  <tr>
+	<td>decode_audio_feedback_uri</td>
+	<td>URI – Can be a query of the available URIs from RingToneManager</td>
+  </tr>
+
+  <tr>
+	<td>decode_haptic_feedback</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>bt_disconnect_on_exit</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>connection_idle_time</td>
+	<td>Integer from 0–1800</td>
+  </tr>
+
+  <tr>
+	<td>establish_connection_time</td>
+	<td>Integer from 30–60</td>
+  </tr>
+
+  <tr>
+	<td>remote_scanner_audio_feedback_mode</td>
+	<td>Integer from 0–3</td>
+  </tr>
+
+  <tr>
+	<td>remote_scanner_led_feedback_mode</td>
+	<td>Integer from 0–3</td>
+  </tr>
+
+  <tr>
+	<td>display_bt_address_barcode</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>good_decode_led_timer</td>
+	<td>Integer from 0–1000</td>
+  </tr>
+
+  <tr>
+	<td>decoding_led_feedback</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>decoder_usplanet_report_check_digit</td>
+	<td>True<br>False</td>
+  </tr>
+
 </table>
 
 

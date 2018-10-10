@@ -2,7 +2,7 @@
 title: Data Capture Intents Tutorial
 layout: guide.html
 product: EMDK For Android
-productversion: '6.10'
+productversion: '7.0'
 ---
 
 ## Overview

@@ -6,7 +6,7 @@ mxversions:
     value: 7
 csp: batchmgr
 product: EMDK For Android
-productversion: '6.10'
+productversion: '7.0'
 ---
 
 

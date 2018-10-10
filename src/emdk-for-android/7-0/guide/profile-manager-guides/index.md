@@ -109,7 +109,7 @@ automenu:
         - title: Wireless Manager
           url: /emdk-for-android/6-10/mx/wirelessmgr/
 product: EMDK For Android
-productversion: '6.10'
+productversion: '7.0'
 ---
 
 <!-- 4/24/18: 

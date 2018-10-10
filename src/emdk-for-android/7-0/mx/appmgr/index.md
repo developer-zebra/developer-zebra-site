@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: appmgr
 product: EMDK For Android
-productversion: '6.10'
+productversion: '7.0'
 ---
 
 

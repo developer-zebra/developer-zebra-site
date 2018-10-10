@@ -19,7 +19,7 @@ content-items:
     text: Learn how to automatically generate the XML needed for configuring Zebra devices.
     url: /emdk-for-android/6-10/guide/profile-manager
 product: EMDK For Android
-productversion: '6.10'
+productversion: '7.0'
 ---
            
 

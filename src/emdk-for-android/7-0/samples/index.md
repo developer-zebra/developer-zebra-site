@@ -6,7 +6,7 @@ downloads:
   - title: All Samples
     url: 'https://github.com/Zebra/samples-emdkforandroid-6_9/archive/master.zip'
 product: EMDK For Android
-productversion: '6.10'
+productversion: '7.0'
 ---
 
 

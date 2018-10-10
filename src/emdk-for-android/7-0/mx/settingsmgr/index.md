@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: settingsmgr
 product: EMDK For Android
-productversion: '6.10'
+productversion: '7.0'
 ---
 
 

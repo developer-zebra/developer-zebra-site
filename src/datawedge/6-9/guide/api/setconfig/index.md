@@ -502,7 +502,7 @@ Error messages are logged for invalid actions and parameters
   <tr>
     <td rowspan="4">decoder_msi</td>
 	<td rowspan="4">True <br> False</td>
-    <td>ecoder_msi_length1 <br>ecoder_msi_length1</td>
+    <td>decoder_msi_length1 <br>decoder_msi_length1</td>
     <td>Integer from 0–55</td>
   </tr>
   <tr>
@@ -619,7 +619,362 @@ Error messages are logged for invalid actions and parameters
 	<td>True<br>False</td>
   </tr>
 
+  <tr>
+    <td rowspan="4">decoder_i2of5</td>
+	<td rowspan="4">True <br>False</td>
+    <td>decoder_i2of5_length1 <br>decoder_i2of5_length2</td>
+    <td>Integer from 0–55</td>
+  </tr>
+  <tr>
+	<td>decoder_i2of5_redundancy <br>decoder_i2of5_report_check_digit<br>decoder_i2of5_report_check_digit<br>decoder_i2of5_convert_to_ean13<br>i20f5_enable_marginless_decode</td>
+	<td>True<br>False</td>
+  </tr>
+  <tr>
+	<td>decoder_i2of5_check_digit</td>
+	<td>0 - No Check Digit<br>1 - USS Check Digit<br>2 - OPCC Check Digit</td>
+  </tr> 
+  <tr>
+	<td>decoder_i2of5_security_level</td>
+	<td>0 - Security Level 0<br>1 - Security Level 1<br>2 - Security Level 2<br>3 - Security Level 3</td>
+  </tr> 
+
+  <tr>
+	<td>decoder_gs1_databar</td>
+	<td>True<br>False</td>
+	<td>decoder_gs1_databar_lim<br>decoder_gs1_databar_exp</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>decoder_datamatrix</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_qrcode</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_gs1_datamatrix</td>
+	<td>N/A</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_gs1_qrcode</td>
+	<td>N/A</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_pdf417</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_pdf417</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_composite_ab</td>
+	<td>True<br>False</td>
+	<td>decoder_composite_ab_ucc_link_mode</td>
+	<td>0 - Link Flag Ignored<br>1 - Always Linked<br>2 - Auto Discriminate</td>
+  </tr>
+
+  <tr>
+	<td>decoder_composite_c</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_microqr</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_aztec</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_maxicode</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_micropdf</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_uspostnet</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_usplanet</td>
+	<td>True<br>False</td>
+	<td>decoder_usplanet_report_check_digit</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>decoder_uk_postal</td>
+	<td>True<br>False</td>
+	<td>decoder_uk_postal_report_check_digit</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>decoder_japanese_postal</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_canadian_postal</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_dutch_postal</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>decoder_gs1_lim_security_level</td>
+	<td>1 - Security Level 1<br>2 - Security Level 2<br>3 - Security Level 3<br>4 - Security Level 4</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>Upcean_security_level</td>
+	<td>0 - Level 0<br>1 - Level 1<br>2 - Level 2<br>3 - Level 3</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>upcean_supplemental2</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>upcean_supplemental5</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>upcean_supplemental_mode</td>
+	<td>0 - No Supplementals<br>1 - Supplemental Always<br>2 - Supplemental Auto<br>3 - Supplemental Smart<br>4 - Supplemental 378-379<br>5 - Supplemental 978-979<br>6 - Supplemental 414-419-434-439<br>7 - Supplemental 977</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>upcean_retry_count</td>
+	<td>Integer from 2 to 20</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>upcean_random_weight_check_digit</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>upcean_linear_decode</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>upcean_bookland</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>upcean_coupon</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>upcean_coupon_report</td>
+	<td>0 - Old Coupon Report Mode<br>1 - New Coupon Report Mode<br>2 - Both Coupon Report Modes</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>upcean_ean_zero_extend</td>
+	<td>True<br>False</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
+  <tr>
+	<td>upcean_bookland_format</td>
+	<td>0 - Format ISBN-10<br>1 - Format ISBN-13</td>
+	<td>N/A</td>
+	<td>N/A</td>
+  </tr>
+
 </table>
+
+<br>
+Other Scanner Input Parameters:
+
+<table class="facelift" style="width:70%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Parameter Name</th>
+    <th>Parameter Value</th>
+  </tr>
+
+  <tr>
+    <td>auto_switch_to_default_on_connect</td>
+	<td>0 - Disabled <br>1 - On connect<br>2 - On disconnect<br>3 - On connect/disconnect<br><a href="../../input/barcode/#autoswitchtodefaultonevent">More info</a></td>
+  </tr>
+
+  <tr>
+	<td>digimarc_decoding</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>scanning_mode</td>
+	<td>1 - Single<br>2 - UDI<br>3 - MultiBarcode</td>
+  </tr>
+ 
+   <tr>
+	<td>multi_barcode_count</td>
+	<td>Integer from 2–10</td>
+  </tr>
+
+  <tr>
+	<td></td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>scanner_selection_by_identifier</td>
+	<td>See <a href="#scanneridentifiers">Scanner Identifiers</a> table</td>
+  </tr>
+
+  <tr>
+	<td>trigger-wakeup</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>scanner_input_enabled</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>scanner_selection</td>
+	<td>auto<br>0-n (valid scanner index from <a href="../enumeratescanners">ENUMERATE_SCANNERS API</a>)</td>
+  </tr>
+
+  <tr>
+	<td>databar_to_upc_ean</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>upc_enable_marginless_decode</td>
+	<td>True<br>False</td>
+  </tr>
+
+  <tr>
+	<td>aim_mode</td>
+	<td>on - On<br>off - Off</td>
+  </tr>
+
+  <tr>
+	<td>beam_timer</td>
+	<td>Integer from 0–60000</td>
+  </tr>
+
+  <tr>
+	<td>Adaptive_Scanning</td>
+	<td>0 - Enable<br>1 - Disable</td>
+  </tr>
+
+  <tr>
+	<td>Beam_Width</td>
+	<td>0 - Narrow<br>1 - Normal<br>2 - Wide</td>
+  </tr>
+
+  <tr>
+	<td>power_mode</td>
+	<td>0 - Low Power Mode<br>1 - Optimized Power Mode<br>2 - High Power Mode<br>3 - Always On</td>
+  </tr>
+
+  <tr>
+	<td>mpd_mode</td>
+	<td>0 - Disable Mobile Phone Display Mode<br>3 - Enable Mobile Phone Display Mode</td>
+  </tr>
+
+  <tr>
+	<td>reader_mode</td>
+	<td>0 - Triggered Mode<br>7 - Presentation Mode</td>
+  </tr>
+
+  <tr>
+	<td>linear_security_level</td>
+	<td>1 - Security Short Or Codabar<br>2 - Security All Twice<br>3 - Security Long And Short<br>4 - Security All Thrice</td>
+  </tr>
+
+  <tr>
+	<td>picklist</td>
+	<td>0 - Disabled<br>1 – Enabled/HW picklist<br>2 – Software Picklist</td>
+  </tr>
+
+</table>
+
 
 <!--
 

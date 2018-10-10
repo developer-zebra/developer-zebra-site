@@ -61,7 +61,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ### Device Support
 
-EMDK 6.10 adds support for the following mobile computers running Android 8.1 Oreo: 
+EMDK 7.0 adds support for the following mobile computers running Android 8.1 Oreo: 
 
 * **PS20** Personal Shopper 
 * **TC52** Touch Computer
@@ -75,7 +75,7 @@ This version adds support for the following scanners and/or imagers:
 
 ### End of Support
 
-**IMPORTANT**: EMDK 6.10 no longer targets devices running Android 5.x Lollipop or older. 
+**IMPORTANT**: EMDK 7.0 no longer targets devices running Android 5.x Lollipop or older. 
 
 **DEVICES NO LONGER SUPPORTED with Lollipop (and older)**:
 
@@ -170,13 +170,13 @@ This version adds support for the following scanners and/or imagers:
 
 ### End of Support
 
-**EMDK 6.10 no longer supports target devices running Android 5.x Lollipop** or older; support for Lollipop devices ended with EMDK 6.9. In general, EMDK updates for specific devices are distributed with the latest BSP or [LifeGuard patch](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html). 
+**EMDK 7.0 no longer supports target devices running Android 5.x Lollipop** or older; support for Lollipop devices ended with EMDK 6.9. In general, EMDK updates for specific devices are distributed with the latest BSP or [LifeGuard patch](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html). 
 
 ### Other Notes
 
 * EMDK code samples no longer include `ProfileDataCaptureSample1` and `SecureNFCSample1`.
 
-* EMDK-X 6.10 is the last version able to target devices running Android 6.x Marshmallow.
+* EMDK-A 7.0 is the last version able to target devices running Android 6.x Marshmallow.
 
 -----
 

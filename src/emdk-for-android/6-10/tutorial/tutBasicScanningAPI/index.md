@@ -215,7 +215,7 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 
 The received data should be processed in a background thread so as not to block the UI thread. This can be done using Android's [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html). Create the AsyncTask `AsyncDataUpdate` that takes [ScanDataCollection](/emdk-for-android/6-10/api/barcode/ScanDataCollection) that has the scanned data. The `doInBackground` method parses the barcode data and label type into strings, which are passed to the UI thread in the `onPostExecute` method of AsyncTask to populate.
 
-	As mentioned earlier we would call `read` method here in this callback so that the user can scan multiple barcodes.
+As referenced earlier, it's possible to call the `read()` method in this callback so that the user can scan multiple barcodes.
 
         :::java
         // Update the scan data on UI
@@ -236,17 +236,16 @@ The received data should be processed in a background thread so as not to block 
 	
 				try {
 	
-					// Starts an asynchronous Scan. The method will not turn ON the
-					// scanner. It will, however, put the scanner in a state in
-					// which
-					// the scanner can be turned ON either by pressing a hardware
-					// trigger or can be turned ON automatically.
-					scanner.read();
-	
+					// Starts an asynchronous Scan. The method will NOT turn ON the
+					// scanner, but puts it in a state in which the scanner can be turned 
+					// on automatically or by pressing a hardware trigger
+
+					scanner.read();	
 					ScanDataCollection scanDataCollection = params[0];
-	
+
 					// The ScanDataCollection object gives scanning result and the
 					// collection of ScanData. So check the data and its status
+
 					if (scanDataCollection != null
 							&& scanDataCollection.getResult() == ScannerResults.SUCCESS) {
 	
@@ -255,6 +254,7 @@ The received data should be processed in a background thread so as not to block 
 	
 						// Iterate through scanned data and prepare the statusStr
 						for (ScanData data : scanData) {
+							
 							// Get the scanned data
 							String a = data.getData();
 							// Get the type of label being scanned

@@ -14,46 +14,45 @@ Staging is the process where a device administrator or operator configures a dev
 An administrator can stage all devices within an enterprise, devices in a particular store or site, or on-site/per user.
 
 ## StageNow Staging Solution
-StageNow is Zebra's next generation Android Staging Solution, supporting Marshmallow, Lollipop, KitKat, and Jelly Bean and built on the MX 4.3/4.4/5.X/6.X platform. It allows simple profile creation, and easy device deployment with a simple bar code scan, tag read, or audio file play.
+StageNow is Zebra's staging solution for Android devices. It allows simple profile creation and easy device deployment with a simple barcode scan, tag read or audio-file playback.
 
 The StageNow Staging Solution includes the following components:
 
-* The StageNow Workstation Tool offers a user interface that is accessed within a staging workstation (host computer). The staging administrator uses this tool to create staging profiles that configure device components, in addition to other staging actions. The Workstation Tool includes a database and server which store and save content entered in the Tool, e.g., settings and staging profiles. 
+* The StageNow Workstation Tool offers a user interface that is accessed within a staging workstation (host computer). The staging administrator uses this tool to create staging profiles that configure device components in addition to other staging actions. The Workstation Tool includes a database and server which store and save content entered in the tool such as settings and staging profiles. 
 
-    Note: The tool's built-in staging server is an FTP server to which devices download the staging content of the Deployment section, files selected for download from the remote server, and RD staging files. Because multiple applications cannot use Port #21 (usually used by FTP servers) at the same time, ensure the Workstation Tool PC does not have another FTP server running in the background, or that the other FTP server uses a different port. Also note that the staging (FTP) server runs only when the tool is running, and stops when the application closes. Therefore the tool must be running when staging the device with profiles as described above.
+    Note: The tool's built-in staging server is an FTP server to which devices download the staging content of the deployment section, files selected for download from the remote server, and RD staging files. Because multiple applications cannot use Port #21 (usually used by FTP servers) at the same time, administrators must ensure the Workstation Tool PC does not have another FTP server running in the background (or that it uses a different port). **The staging (FTP) server runs only when the tool is running**, and stops when the application closes. Therefore StageNow must be running when staging the device with profiles as described above.
 
-* The StageNow Client resides on the device and provides a user interface for the staging operator to initiate staging. The operator uses a staging method, e.g., prints and scans a bar code, plays an audio file, or reads an NFC tag, to deliver staging material to the device
+* The StageNow Client resides on the device and provides a user interface for the staging operator to initiate staging. The operator uses a staging method (i.e. prints and scans a barcode, plays an audio file, or reads an NFC tag) to deliver staging data to the device. 
 
 -----
 
 ### Devices Supported
 
-**StageNow supports all Zebra devices running Android KitKat and higher**. 
+**StageNow 3.1 supports all Zebra devices running Android 6.0 Marshmallow and higher**. 
 
 For more information, see the [StageNow About page](../about).
 
 **Note: MX features supported on a given device depends on the versions of Android, MX and OSX installed on the device**. To determine the features available on a specific device, see the [MX Feature Matrix](/mx) and follow the instructions there. 
 
 #### Older Android Versions 
-Devices running Android Marshmallow, Lollipop, and KitKat that ship with the StageNow Client installed support all StageNow features. Devices with Jelly Bean and certain KitKat versions do not include the StageNow Client, but instead come with the Rapid Deployment (RD) Client. For staging, these devices can scan StageNow-generated RD bar codes, which cause the RD Client to connect to a network and then auto-install MX 5.0 for KitKat devices, MX 4.4 or lesser for Jelly Bean devices, and the StageNow Client on the device. The StageNow Client can then be used to scan StageNow profile barcodes for configuration. See [Rapid Deployment (RD) Client](../stageclient?Rapid%20Deployment%20(RD)%20Client) for more information on this process.
+Devices running Android version 5.x Lollipop and older that ship with the StageNow Client installed support all StageNow features. Devices with Jelly Bean and certain KitKat versions come with the Rapid Deployment (RD) Client. For staging, these devices can scan StageNow-generated RD bar codes, which cause the RD Client to connect to a network and then auto-install MX 5.0 for KitKat devices, MX 4.4 or lesser for Jelly Bean devices, and the StageNow Client on the device. The StageNow Client can then be used to scan StageNow profile barcodes for configuration. See [Rapid Deployment (RD) Client](../stageclient?Rapid%20Deployment%20(RD)%20Client) for more information on this process.
 
 >Note:  
 >To install StageNow client and MX on a Jelly Bean device, create a profile using wizards from MX 4.4 or lesser versions.
 
-Once devices that did not include the StageNow Client are staged using the RD Client, they still may only support partial StageNow functionality due to limitations of the device OS. See the Feature Compatibility section of the specific [Setting Type](../CSPreference) to determine if your device supports a given feature. 
+Once devices that did not include the StageNow Client are staged using the RD Client, they still might support only partial StageNow functionality due to limitations of the device OS. See the Feature Compatibility section of the specific [Setting Type](../CSPreference) to determine if a particular device supports a given feature. 
 
 ### StageNow Users
 
 StageNow generally falls under two usage scenarios:
 
-* The staging administrator is the main user of the StageNow Workstation Tool, and is responsible for the configuration, deployment, and management of systems and client devices. The administrator creates profiles which identify the staging to perform, collects the staging content (e.g., applications), determines the staging method used to deliver the content, and uploads this material into the Workstation Tool.
-
-* The staging operator identifies the devices to stage and uses the Workstation Tool to view and select the profile(s) that the administrator published. The operator then prints the staging materials to use to stage the devices (e.g., bar codes), and uses the StageNow Client on the devices to perform the staging. The operator can then deliver the devices to the end users.
+1. The staging administrator is the main user of the StageNow Workstation Tool and is responsible for the configuration, deployment, and management of systems and client devices. The administrator creates profiles which identify the staging to perform, collects the staging content (e.g., applications), determines the staging method used to deliver the content and uploads this material into the Workstation Tool.
+2. The staging operator identifies the devices to stage and uses the Workstation Tool to view and select the profile(s) that the administrator published. The operator then prints the staging materials (e.g. barcodes) to use to stage the devices, and uses the StageNow Client on the devices to perform the staging. The operator can then deliver the devices to the end users.
 
 ### Staging Methods
 Following are the staging methods available via StageNow. See [Device Staging](../stageclient) for details:
 
-* Bar Code - The operator generates bar code(s) containing profile information and scans those bar codes with the device, either printed on paper or displayed on the workstation screen, to configure that device.
+* Barcode - The operator generates barcode(s) containing profile information and scans those barcodes with the device, either printed on paper or displayed on the workstation screen, to configure that device.
 
 * NFC Tag - The operator exports profile data and programs it into an NFC tag, then reads the tag with the device's NFC tag reader by bringing the tag within a certain proximity of the device, to deploy the profile to the device.
 
@@ -84,7 +83,7 @@ The main sections of this window include the following fields:
 
 * Connection Type - How StageNow connects to a network (MX 6.x and higher).
 
-* RD - Indicates whether the profile is RD enabled, i.e., whether RD bar codes can be printed from this profile.
+* RD - Indicates whether the profile is RD enabled, i.e., whether RD barcodes can be printed from this profile.
 
 If there are no published profiles for the Staging Operator, the Welcome screen appears.
 
@@ -103,7 +102,7 @@ The top of the screen shows the IP address currently used, useful for when you n
 
 If only one IP address is available, StageNow selects this.
 
-If the StageNow system does not have an IP address, the Current IP section of the window displays Not Available. This can restrict printing StageNow bar codes or NFC tags.
+If the StageNow system does not have an IP address, the Current IP section of the window displays Not Available. This can restrict printing StageNow barcodes or NFC tags.
 
 If more than one IP address is available and neither is selected, the Current IP section of the window displays Not Selected. Click on this section to select the IP address to use for staging.
 
@@ -112,8 +111,8 @@ If more than one IP address is available and neither is selected, the Current IP
 Select the IP, then select Set as Current. This IP address is retained in future operations, including after re-launch and system reboot. 
 
 ### Wi-Fi Hotspot
-The StageNow tool allows a desktop computer equipped with a wireless network interface card to act as a Wi-Fi hotspot for staging devices. This allows staging without requiring an external Wi-Fi network and reduces the number bar codes to one with default security, or more than one with optional double security selected by the administrator.
-It also eliminates the need for reprinting the bar codes even if there is a profile change.
+The StageNow tool allows a desktop computer equipped with a wireless network interface card to act as a Wi-Fi hotspot for staging devices. This allows staging without requiring an external Wi-Fi network and reduces the number barcodes to one with default security, or more than one with optional double security selected by the administrator.
+It also eliminates the need for reprinting the barcodes even if there is a profile change.
 
 If the Wi-Fi hotspot is off, you can turn it on via the button on the heading bar.
 
@@ -211,7 +210,7 @@ The various profile lists in the Home window include the following fields:
 
 * Connection Type - How StageNow connects to a network (MX 6.X only).
 
-* RD - Indicates whether the profile is RD enabled, i.e., whether RD bar codes can be printed from this profile.
+* RD - Indicates whether the profile is RD enabled, i.e., whether RD barcodes can be printed from this profile.
 
 * Actions - Offers the following actions to perform on the profile:
 
@@ -348,7 +347,7 @@ Encrypting staging data for use outside of the StageNow Workstation Tool protect
 
 * When exporting a profile, sensitive parameters are encrypted to protect confidential deployment information.
 
-* Staging bar codes and NFC tags contain configuration data and are encrypted by default to protect against reading by unauthorized devices. Note that encryption can add a significant amount of information and require additional bar codes. Use extreme caution when turning off encryption in order to speed deployment, as sensitive parameters may be vulnerable to unauthorized access.
+* Staging barcodes and NFC tags contain configuration data and are encrypted by default to protect against reading by unauthorized devices. Note that encryption can add a significant amount of information and require additional barcodes. Use extreme caution when turning off encryption in order to speed deployment, as sensitive parameters may be vulnerable to unauthorized access.
 
 ## Use Cases
 The staging administrator uses pre-defined Wizards within the StageNow Workstation Tool to configure settings and create profiles which define software configuration and/or installation for mobile devices within an enterprise.  These Wizards represent common use cases for deploying information to devices. 
@@ -366,7 +365,7 @@ The general staging process is as follows. See the appropriate sections of this 
 
 5. The administrator reviews the profile for accuracy.
 
-6. The administrator selects the method(s) for deployment, e.g., the type of bar code and/or an NFC tag.
+6. The administrator selects the method(s) for deployment, e.g., the type of barcode and/or an NFC tag.
 
 7. The administrator verifies the functionality of the profile by generating and testing the staging material.
 
@@ -374,9 +373,9 @@ The general staging process is as follows. See the appropriate sections of this 
 
 9. The operator uses the Workstation Tool to select the profile published by the administrator required for device deployment.
 
-10. The operator prints the staging bar code(s) or generates the NFC tag provided for the profile.
+10. The operator prints the staging barcode(s) or generates the NFC tag provided for the profile.
 
-11. The operator uses the StageNow Client on the device to scan the bar code or read the NFC tag, deploying the profile information to that device.
+11. The operator uses the StageNow Client on the device to scan the barcode or read the NFC tag, deploying the profile information to that device.
 
 ### StageNow Wizards
 StageNow offers the following Wizards for creating profiles to configure mobile devices within the enterprise:

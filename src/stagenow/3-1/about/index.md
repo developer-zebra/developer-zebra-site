@@ -9,9 +9,7 @@ languages:
 
 ---
 
-StageNow 3.1 User Guide, Revision A
-StageNow MN001501A12
-October, 2018
+StageNow 3.1 User Guide, Revision A; StageNow MN001501A12; October, 2018
 
 #### Covers StageNow 3.1.x and higher
 
@@ -211,7 +209,7 @@ The following software must be installed on the staging workstation prior to usi
  
 * See the full list of [Zebra Android devices that support StageNow 3.0](../gettingstarted/)
 
-* Zebra devices running Android Nougat, Marshmallow, Lollipop, KitKat and Jelly Bean that ship with the StageNow Client support all device configuration options offered by the StageNow tool.
+* Zebra devices running Android Nougat and Marshmallow ship with the StageNow Client and support all device configuration options offered by the StageNow tool.
 
 * The MX features supported by a given device depends on the versions of Android, OSX, and MX versions in the device BSP. Refer to the [MX feature matrix](/mx/compatibility/) to determine features supported by devices in your organization.    
  

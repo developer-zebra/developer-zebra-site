@@ -7,17 +7,15 @@ productversion: '6.10'
 
 ## Overview
 
-This guide provides a walk-through of the steps for creating an application that uses [Barcode/Scanning APIs](/emdk-for-android/6-10/api) to perform Scanning operations on a Zebra Android device without using Profile Wizard. The API uses [Barcode Manager](/emdk-for-android/6-10/api/barcode/BarcodeManager), which is the primary object for accessing barcode scanning features. 
+This guide provides a walk-through of the steps for creating an application that uses [Barcode/Scanning APIs](../../guide/api) to perform Scanning operations on a Zebra Android device without using Profile Wizard. The API uses [Barcode Manager](../../guide/barcode_scanning_guide/), which is the primary object for accessing barcode scanning features. 
 
-> Note: This demo application is intended for tutorial purposes only and should not be used in production environments. 
+> Note: **The demo app in this guide is intended for tutorial purposes only** and should not be used in production environments. 
 
 -----
 
 ### Create The Project
 
-> Note: Provide "BasicScanningTutorial" as the project name for this tutorial.
-
-Start by creating a new Android Studio [project](/emdk-for-android/6-10/tutorial/tutCreateProjectAndroidStudio).
+Start by creating a new project in Android Studio. Call it `BasicScanningTutorial` to match later references in this guide. For help, see the [Android Studio tutorial](../../tutorial/tutCreateProjectAndroidStudio). 
 
 ### Enable Android Permissions
 
@@ -26,7 +24,13 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 1. Enable permissions for `com.symbol.emdk.permission.EMDK`:  
 
         :::xml
-        <uses-permission android:name="com.symbol.emdk.permission.EMDK" /> 
+		<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		    package="com.example.basicscanningtotorial">
+		    <uses-permission android:name="com.symbol.emdk.permission.EMDK" />
+		    <application>
+				...
+		    </application>
+		</manifest>
 
 2. Enable the EMDK library in the application node:  
       
@@ -254,7 +258,7 @@ As referenced earlier, it's possible to call the `read()` method in this callbac
 	
 						// Iterate through scanned data and prepare the statusStr
 						for (ScanData data : scanData) {
-							
+
 							// Get the scanned data
 							String a = data.getData();
 							// Get the type of label being scanned
@@ -301,9 +305,9 @@ As referenced earlier, it's possible to call the `read()` method in this callbac
 		// and update the UI thread with the scanned results
 		new AsyncDataUpdate().execute(scanDataCollection);
   
-7. Whether we scan the barcode by pressing the hard scan key or keep it idle, it returns the status of the scanner at specific point of time in the overridden `onStatus` method of implemented `StatusListener` interface. Since we are also displaying the status along with barcode data, we will make use of this method and populate the status.
+7. Whether scanning the barcode by pressing the hard scan key or keeping it idle, it returns the status of the scanner at a specific point in time in the overridden `onStatus` method of the implemented `StatusListener` interface. Since the status also is being displayed along with barcode data, the app can make use of this method and populate the status.
 
-    Just like scanned data, we are also processing the scanner status on a background thread. Hence we will create another [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) named `AsyncStatusUpdate` that takes [StatusData](/emdk-for-android/6-10/api/barcode/StatusData) and processes it in `doInBackground` method to retrieve state in string format which is populated in status Text View on UI thread in `onPostExecute` method of the AsyncTask.              
+Just like scanned data, the scanner status is being processed in a background thread. Hence another [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) (named `AsyncStatusUpdate`) is created to take [StatusData](/emdk-for-android/6-10/api/barcode/StatusData) and processes it in the `doInBackground` method to retrieve the state in string format. This is populated in status Text View in the UI thread in the `onPostExecute` method of the AsyncTask. 
 
         :::java
         // AsyncTask that configures the current state of scanner on background
@@ -365,7 +369,7 @@ As referenced earlier, it's possible to call the `read()` method in this callbac
 		// AsyncTask and update the UI thread with current scanner state
 		new AsyncStatusUpdate().execute(statusData);
 
-8. Now let's override the `onDestroy` method so we can release the EMDKManager resources:  
+8. Override the `onDestroy` method to release the EMDKManager resources:  
 
         :::java
         @Override
@@ -379,7 +383,7 @@ As referenced earlier, it's possible to call the `read()` method in this callbac
 		 }
 	    } 
 
-9. When we are done with scanning, we must release the scanner hardware resources for other applications to use. So override `onStop` method and disable the scanner to release it.
+9. When the app is done scanning, scanner hardware resources must be released for other applications to use. Override `onStop` method and disable the scanner to release it:
 
         :::java
         @Override
@@ -403,7 +407,7 @@ As referenced earlier, it's possible to call the `read()` method in this callbac
 
 
 
-10. Finally, Clean up the objects created by EMDK manager in `onClosed` method, if EMDK closed abruptly.
+10. Lastly, clean up the objects created by EMDK manager in `onClosed` method in case EMDK closed abruptly:
 
         :::java
         // The EMDK closed abruptly. // Clean up the objects created by EMDK
@@ -414,7 +418,9 @@ As referenced earlier, it's possible to call the `read()` method in this callbac
 			this.emdkManager = null;
 		}
         	
-That's it!!! We are done with all the coding part that will let us scan the barcodes of configured decoder params on Symbol Android device using [Barcode/Scanning APIs](/emdk-for-android/6-10/api) introduced in EMDK V 3.0. Now let us run the application.
+#### The sample app is now ready to use. 
+
+-----
  
 ## Running the Application
 

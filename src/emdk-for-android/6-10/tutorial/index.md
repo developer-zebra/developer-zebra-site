@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-description: Walk through building an EMDK for Android application from the ground up with one of the following tutorials. Each tutorial includes step by step instructions and associate code.
+description: Walk through the process of building an application from the ground up with EMDK for Android using one or more of the following tutorials. Each tutorial includes step-by-step instructions and associated code.
 layout: list-apis.html
 automenu:
   items:

@@ -33,7 +33,7 @@ Zebra mobile and touch computers are equipped with a variety of scanning devices
 
 ###### Zebra recommends considering DataWedge before other Zebra solutions. 
 
-[DataWedge](../datawedge) provides barcode scanning and processing services for devices running Android, and is the fastest and easiest way to perform scanning out of the box or add it to an existing app. Included with every Zebra device, DataWedge enables any app on the device to acquire scanned data without the need to access the scanner APIs directly. DataWedge can be configured in minutes to automatically activate the desired scanner or reader whenever a particular app is launched, and can modify and pass acquired data to an app according to simple or complex rules. 
+[DataWedge](../datawedge) provides barcode scanning and processing services for devices running Android, and is the fastest and easiest way to perform scanning out of the box or add it to an existing app. Included with every Zebra device, DataWedge enables any app on the device to acquire scanned data without the need to access the scanner APIs directly. DataWedge can be configured to automatically activate the desired scanner or reader whenever a particular app is launched, and can modify and pass acquired data to an app according to simple or complex rules. 
 
 ##### Go to [DataWedge docs](../datawedge) 
 

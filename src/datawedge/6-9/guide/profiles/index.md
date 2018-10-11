@@ -24,7 +24,7 @@ automenu:
           url: ../input/serial
         - title: SimulScan
           url: ../input/simulscan
-        - title: Voice
+        - title: Voice (Beta)
           url: ../input/voice
     - title: Processing
       items:

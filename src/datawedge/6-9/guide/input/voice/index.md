@@ -1,5 +1,5 @@
 ---
-title: Voice Input
+title: Voice Input (Beta)
 layout: guide.html
 product: DataWedge
 productversion: '6.9'

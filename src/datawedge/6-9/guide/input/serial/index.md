@@ -45,8 +45,9 @@ _Tapping on a setting displays a dialog box for changing its value._
 
 * **<u>Serial port configuration is available only on devices running Android N and higher</u>**. For prior versions, only the Enable/Disable options are available for serial ports.
 * **For more information about required serial communication settings** of a specific device, please refer to documentation that accompanied the peripheral being connected. 
-* **Serial-port settings also can be configured programmatically. See the [Output Using Intents](#outputusingintents) section below**. 
+* **Serial-port settings also can be configured programmatically.** See [SET_CONFIG API](../../api/setconfig) section. 
 
+<!--  10/11/18 - remove per engineering
 -----
 
 ### Output Using Intents
@@ -56,6 +57,7 @@ For some scanning applications, it might be preferable to output acquired data d
 * **[SET_CONFIG API](../../api/setconfig)** and **[sample code](../../api/setconfig/#setserialinputconfiguration)** for setting serial parameters
 * **[GET_CONFIG API](../../api/getconfig)** and **[sample code](../../api/getconfig/#getserialinputconfig)** for getting serial parameter settings
 
+-->
 -----
 
 **Relates Gudies**:

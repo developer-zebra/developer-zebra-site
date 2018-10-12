@@ -12,7 +12,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 ### Version History
 * **Introduced in DataWedge 6.5**
 * **DataWedge 6.8 -** Added support for ADF settings
-* **DataWedge 6.9 -** Added support for Voice Input and Global Scanner Configuration.
+* **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration.
 
 ### Function Prototype
 

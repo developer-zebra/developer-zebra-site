@@ -15,7 +15,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 -----
 
-**Go to ["What's New" section](#newindatawedge69)**
+**Go to ["What's New" section](#newindatawedge70)**
 
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 
@@ -67,7 +67,8 @@ For more information about approved languages or to download a localized operati
 
 -----
 
-## New in DataWedge 6.9
+## New in DataWedge 7.0
+New updates are identical to DataWedge 6.9.
 * New **[Voice Input (beta)](../input/voice)** for voice-to-data capture. 
 * New **[Global Scanner Configuration](../input/barcode#globalscannerconfiguration)** enables a generic scanner configuration to apply to all supported scanners.
 * New **[Character Set Configuration](../input/barcode/#charactersetconfiguration)** provides options to make adjustments with the decoder character set for barcode input.
@@ -79,9 +80,24 @@ For more information about approved languages or to download a localized operati
 ###Other Changes
 * Improved layout for **[SET_CONFIG API](../api/setconfig/#scannerinputparameters)** scanner input parameters.
 
+-----
 ## Recent Version History
 
-### Added in DataWedge 6.8
+### Added in DataWedge 6.9
+* New **[Voice Input (beta)](../input/voice)** for voice-to-data capture. 
+* New **[Global Scanner Configuration](../input/barcode#globalscannerconfiguration)** enables a generic scanner configuration to apply to all supported scanners.
+* New **[Character Set Configuration](../input/barcode/#charactersetconfiguration)** provides options to make adjustments with the decoder character set for barcode input.
+* Updated **[Decoder Selection](../input/barcode/#decoderselection)** now supports:
+ * GS1 Datamatrix
+ * GS1 QRCode
+* Added support for [DS2278 Bluetooth Scanner](../input/barcode/#bluetoothscanners).
+
+####Other Changes
+* Improved layout for **[SET_CONFIG API](../api/setconfig/#scannerinputparameters)** scanner input parameters.
+
+-----
+
+### Added in 6.8
 
 * **[Scanner auto-switching](../input/barcode/#autoswitchtodefaultonevent) behavior is now controllable** after connecting and disconnecting external scanners
 * **[DataWedge Settings](../settings/#datawedgesettings) allows disabled Profiles to be ignored** to help maintain full functionality at all times 

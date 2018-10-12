@@ -22,7 +22,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 6.8 -** Support for ADF settings: 
  * **New ADF_RULE bundle** with Action, Device, Decoder and Label_ID sub-bundles
  * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
-* **DataWedge 6.9 -** Added support for Voice Input and Global Scanner Configuration.
+* **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration.
 
 ### Function Prototype
 

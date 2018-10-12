@@ -13,9 +13,11 @@ When programmatic control is required, [DataWedge APIs](../api) provide the abil
 
 To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
 
+> Ready to get started? Go to the [DataWedge Setup guide](../setup).
+
 -----
 
-**Go to ["what's new" section](#newindatawedge68)**
+**Go to ["What's New" section](#newindatawedge69)**
 
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 
@@ -64,7 +66,18 @@ DataWedge has been approved to run on device operating systems localized for the
 For more information about approved languages or to download a localized operating system, please [contact Zebra Technical Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).
 
 -----
+
 ## New in DataWedge 6.9
+* New **[Voice Input (beta)](../input/voice)** for voice-to-data capture. 
+* New **[Global Scanner Configuration](../input/barcode#globalscannerconfiguration)** enables a generic scanner configuration to apply to all supported scanners.
+* New **[Character Set Configuration](../input/barcode/#charactersetconfiguration)** provides options to make adjustments with the decoder character set for barcode input.
+* Updated **[Decoder Selection](../input/barcode/#decoderselection)** now supports:
+ * GS1 Datamatrix
+ * GS1 QRCode
+* Added support for [DS2278 Bluetooth Scanner](../input/barcode/#bluetoothscanners).
+
+###Other Changes
+* Improved layout for **[SET_CONFIG API](../api/setconfig/#scannerinputparameters)** scanner input parameters.
 
 ## Recent Version History
 
@@ -83,8 +96,6 @@ For more information about approved languages or to download a localized operati
 #### Other changes
 
 The SimulScan Input Plug-in default template is now "Default - Barcode4.xml" 
-
-> Ready to get started? Go to the [DataWedge Setup guide](../setup).
 
 -----
 

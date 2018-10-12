@@ -13,8 +13,6 @@ When programmatic control is required, [DataWedge APIs](../api) provide the abil
 
 To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
 
-> Ready to get started? Go to the [DataWedge Setup guide](../setup).
-
 -----
 
 **Go to ["What's New" section](#newindatawedge69)**
@@ -48,6 +46,8 @@ The version of DataWedge documented in this guide provides the following primary
 * [Generate reports](../settings/#reporting)
 
 **Note**: Availability and operation of DataWedge features varies by device and operating system (which determine the DataWedge version installed on the device). 
+
+> Ready to get started? Go to the [DataWedge Setup guide](../setup).
 
 -----
 

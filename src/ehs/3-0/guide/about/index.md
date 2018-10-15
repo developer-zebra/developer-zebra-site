@@ -103,9 +103,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">PS20</font></p>
 </td>
 
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
 <td style="width: 220px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
@@ -222,7 +219,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 Upgrade from Android Nougat to Oreo:  When a device running on Android Nougat (except TC20/TC25 N) is upgraded to Android Oreo, it�s mandatory to uninstall the existing EHS version, which is of type A and install EHS type B apk; EHS_030001_B.apk, that targets Oreo. This is due to EHS apk flavor difference that supports Android N and O devices except TC20/TC25 N.
 
-
+**Important Note for all Nougat-to-Oreo upgrades <u>except TC20/TC25</u>**: When upgrading a device from Nougat to Oreo, <u>the Nougat version of EHS must be removed</u> and the Oreo version installed. Config files are forward-compatible but the .apk files are not. 
 
 ### Device Support
 
@@ -232,9 +229,9 @@ Now supports for the following devices running Android 8.1 Oreo.
 
 ### End of Support
 
-* **Support for Android 5.x Lollipop dropped**. Use [EHS 2.8](/ehs/2-8/guide/about) if required. 
+* **Support for Android 5.x Lollipop dropped**. Use [EHS 2.8](/ehs/2-8/guide/about) if Lollipop suopport is required. 
 * **Bypass keyguard feature is dropped**. 
-* **Secure mode feature is dropped**.
+* **Secure Mode feature is dropped -** Log files no longer designate "SECURED" or "UNSECURED" in log entries. 
 
 ### New Features
 
@@ -281,9 +278,9 @@ Now supports for the following devices running Android 8.1 Oreo.
 ABOVE NOTE REPLICATED ON SETTINGS PAGE 
 -->
 
-* **To enable Secure Mode in EHS, manual file-push is no longer supported in Android N for installing a device root certificate**. To deploy cert files to the device, use Certificate Manager through [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android). Learn more [about Secure Mode](../features/#securemode). 
+* **Applies to EHS 2.8 and older only**: To enable Secure Mode in EHS, manual file-push is no longer supported in Android N for installing a device root certificate. To deploy cert files to the device, use Certificate Manager through [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android). Learn more [about Secure Mode](../features/#securemode). 
 
------
+ -----
 
 ### Android Marshmallow and Nougat Notes
 **_Applies to devices running Android Marshmallow and Nougat_**:

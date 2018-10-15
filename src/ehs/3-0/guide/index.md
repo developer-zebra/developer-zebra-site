@@ -16,7 +16,7 @@ content-items:
   - type: section
     level: 4
     title: Special Features
-    text: 'A guide to advanced features of EHS including Kiosk Mode, Secure Mode and recovery from Lockdown State'
+    text: A guide to advanced features of EHS including Kiosk Mode and device logging
     url: /ehs/3-0/guide/features
 product: Enterprise Home Screen
 productversion: '3.0'

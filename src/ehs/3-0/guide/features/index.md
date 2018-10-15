@@ -7,9 +7,13 @@ productversion: '3.0'
 
 ## Overview
 
-This guide covers advanced EHS features such as Kiosk Mode and Secure Mode. It assumes a working knowledge of Enterprise Home Screen and use of its [Advanced Settings](../settings) through direct manipulation of the `enterprisehomescreen.xml` config file. For those not familiar with these procedures, please refer to the [About](../about) and [Setup](../setup) pages and the [Advanced Settings Guide](../settings) before continuing. 
+This guide covers advanced EHS features such as Kiosk Mode and EHS Logging. It assumes a working knowledge of Enterprise Home Screen and use of its [Advanced Settings](../settings) through direct manipulation of the `enterprisehomescreen.xml` config file. For those not familiar with these procedures, please refer to the [About](../about) and [Setup](../setup) pages and the [Advanced Settings Guide](../settings) before continuing. 
 
 <b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
+
+> **Note**: Secure Mode is discontinued in EHS 3.0 and higher. 
+
+-----
 
 ## Kiosk Mode
 Kiosk Mode is designed for devices to run a single application, often with a touch-based UI. Examples include retail price checkers, auto parts look-ups, patient check-in systems and so on. Kiosk Mode also can be useful when dedicating a device to a single user and/or task, such as a retail clerk's hand-held barcode scanner. Kiosk Mode places the app in full-screen mode and prevents the BACK and HOME keys from being used to exit the app by mapping those keys to the Kiosk app's most recent activity. 
@@ -62,6 +66,7 @@ Kiosk Mode can be controlled from within an Android application using Android In
 <b>Security Note</b>: When using Kiosk Mode, be sure to disable "key remapping" and other possible methods of launching applications, which would thereby defeat Kiosk Mode safeguards. 
 
 ------
+<!-- 10/15/18- Secure More (and its "Lockdown State") are discontinued in EHS 3.0 and higher. 
 
 ## Secure Mode
 
@@ -158,7 +163,7 @@ Copy the valid EHS config and signature files to the `/enterprise/usr` directory
 Log into Admin Mode and delete the signature file from the `/enterprise/usr` directory. This will cause EHS to exit the Lockdown State and enter Secure Mode. This method will work only if EHS was already running in Secure Mode. If EHS was previously running in Normal Mode and entered Lockdown State due to an unsuccessful attempt to switch to Secure Mode, EHS returns to Normal Mode when the signature file is deleted. 
 
 <b>Note: Whether running in Normal or Secure Mode, reaching the maximum number of 10 unsuccessful admin login attempts (or the number otherwise specified in the EHS config file) will disable Admin Mode login. To exit this state, copy a valid config file (and its matching signature file if previously running in Secure Mode) to the device or delete the existing signature file remotely via MDM</b>.
-
+ -->
 ------
 
 ## EHS Log
@@ -170,6 +175,8 @@ For more information about logging, see [Logging Preferences](../settings/#loggi
 <img alt="" style="height:450px" src="2-7_logging_disabled.png"/>
 _In EHS 2.7 and higher, logging can be disabled through the UI or config file._
 <br>
+
+**IMPORTANT**: Secure Mode is discontinued in EHS 3.0 and higher. 
 
 ------
 

@@ -360,8 +360,8 @@ Stores the encrypted password for logging into Admin Mode (blank by default). <b
 
 ##### Important Password Encryption Notes: 
 * **EHS 2.8 (and higher) implements a more secure encryption method** than prior versions. 
-* **EHS 2.8 is backward-compatible** with passwords stored in config files of older EHS versions.
-* **After EHS 2.8 accesses a password from a prior version**, it stores that password in the config file using the new encryption method. 
+* **EHS 3.0 is backward-compatible** with passwords stored in config files of older EHS versions.
+* **After EHS 3.0 accesses a password from a prior version**, it stores that password in the config file using the new encryption method. 
 * **Once a config file is updated using the new encryption**, that file is no longer compatible with older EHS versions. 
 
 <img alt="" style="height:350px" src="admin_password.png"/>

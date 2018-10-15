@@ -225,6 +225,27 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'ppc/1-0/'
     }))
     .use(foldermenu({
+        folder: 'ehs/2-3/'
+    }))
+    .use(foldermenu({
+        folder: 'ehs/2-4/'
+    }))
+    .use(foldermenu({
+        folder: 'ehs/2-5/'
+    }))
+    .use(foldermenu({
+        folder: 'ehs/2-6/'
+    }))
+    .use(foldermenu({
+        folder: 'ehs/2-7/'
+    }))
+    .use(foldermenu({
+        folder: 'ehs/2-8/'
+    }))
+    .use(foldermenu({
+        folder: 'ehs/3-0/'
+    }))
+    .use(foldermenu({
         folder: 'enterprise-keyboard/1-8/'
     }))
     .use(foldermenu({

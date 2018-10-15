@@ -215,11 +215,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ## New in EHS 3.0
 
-* **Support added for Android 8.1 Oreo**
+* **Support added for devices running Android 8.1 Oreo**
+* **Foreground services can now be auto-launched** in devices running Oreo. 
 
-Upgrade from Android Nougat to Oreo:  When a device running on Android Nougat (except TC20/TC25 N) is upgraded to Android Oreo, it�s mandatory to uninstall the existing EHS version, which is of type A and install EHS type B apk; EHS_030001_B.apk, that targets Oreo. This is due to EHS apk flavor difference that supports Android N and O devices except TC20/TC25 N.
 
-**Important Note for all Nougat-to-Oreo upgrades <u>except TC20/TC25</u>**: When upgrading a device from Nougat to Oreo, <u>the Nougat version of EHS must be removed</u> and the Oreo version installed. Config files are forward-compatible but the .apk files are not. 
+**Important Note for all Nougat-to-Oreo upgrades <u>except TC20/TC25</u>**: When upgrading a device from Nougat to Oreo, <u>the Nougat version of EHS must be removed</u> and the Oreo version installed. Config files, which are forward-compatible, persist on the device during this process; settings are re-applied automatically the next time EHS starts.
 
 ### Device Support
 

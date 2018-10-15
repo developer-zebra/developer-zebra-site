@@ -22,8 +22,8 @@ These instructions apply to direct installation (from a computer to a single dev
 
 The EHS 3.0 download includes two separate .apk files: 
 
-* `EHS_0207xx_A.apk` - for all devices **_except_ TC20/TC25**
-* `EHS_0207xx_B.apk` - for TC20/TC25 devices
+* `EHS_0207xx_A.apk` - for all devices **_except_ TC20/TC25 and Oreo devices**
+* `EHS_0207xx_B.apk` - for TC20/TC25 and Oreo devices
 
 See the full list of [devices supported by EHS v3.0](../guide/about#supporteddevices). 
 

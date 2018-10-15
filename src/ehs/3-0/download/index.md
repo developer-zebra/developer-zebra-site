@@ -20,10 +20,10 @@ productversion: '3.0'
 * **Supports Android Oreo on**:
  * PS20
 * Download package includes two separate .apk files: 
- * `EHS_0208xx_A.apk` - for all [supported devices](../guide/about#supporteddevices) **_<u>except</u>_ TC20/TC25 and PS20**
- * `EHS_0208xx_B.apk` - for TC20/TC25 and PS20 devices
+ * `EHS_0208xx_A.apk` - for all [supported devices](../guide/about#supporteddevices) **_<u>except</u>_ TC20/TC25 and Oreo devices**
+ * `EHS_0208xx_B.apk` - for TC20/TC25 and Oreo devices
 
-**Important Note for all Nougat-to-Oreo upgrades <u>except TC20/TC25</u>**: When upgrading a device from Nougat to Oreo, <u>the Nougat version of EHS must be removed</u> and the Oreo version installed. Config files, which are forward compatible, persist on the device during this process; settings are re-applied automatically the next time EHS starts.
+**Important Note for all Nougat-to-Oreo upgrades <u>except TC20/TC25</u>**: When upgrading a device from Nougat to Oreo, <u>the Nougat version of EHS must be removed</u> and the Oreo version installed. Config files, which are forward-compatible, persist on the device during this process; settings are re-applied automatically the next time EHS starts.
 
 ### Download EHS 3.0
 

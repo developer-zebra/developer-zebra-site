@@ -392,9 +392,9 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 		  super.onStop();
 		  try {
 			if (scanner != null) {
-				// releases the scanner hardware resources for other application
-				// to use. You must call this as soon as you're done with the
-				// scanning.
+				// Releases the scanner hardware resources for other application
+				// to use. Must be called as soon as scanning is done. 
+				//
 				scanner.removeDataListener(this);
 				scanner.removeStatusListener(this);
 				scanner.disable();
@@ -440,11 +440,15 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 
     ![img](../../images/BasicScanningTutorialImages/status_idle.png)  
 
-    This is how [Barcode/Scanning APIs](/emdk-for-android/6-10/api) introduced in EMDK and used to perform Basic Scanning operations on Zebra devices without using Profile Wizard. 
+This is how [Barcode/Scanning APIs](/emdk-for-android/6-10/api) can be used to perform Basic Scanning operations on Zebra devices without using the Profile Wizard. 
 
-##Important Programming Tips##
+-----
 
-1. It is required to do the following changes in the application's AndroidManifest.xml:  
+##Important Programming Tips
+
+### Edit the manifest
+
+1. Be sure to make the following required changes in the application's AndroidManifest.xml:  
   
     >Note:
     >* Include the permission for EMDK:  
@@ -458,15 +462,17 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
   
-2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device.
+2. Installing the EMDK for Android application without deploying the EMDK runtime on the Zebra device fails if the shared library is missing from the device.
  
-4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
+3. Use DataWedge v1.7.12 or higher to test the `ProfileManager.processProfile()` for DataWedge profiles.
 
-## What's Next
-Now that you have learned how to perform Basic Scanning operations on your Symbol Android devices through applications without using Profile Wizard, let us try to understand the API in depth and perform some advanced scanning. So in the next tutorial, we will concentrate on [Barcode/Scanning APIs](/emdk-for-android/6-10/api) in depth and use it to perform advanced scanning operations by creating a tutorial.
-
-## Content Backup
+### Content Backup
 
 Once the barcode is enabled, the `read` method is called on the scanner and the scanning API provides starts an asynchronous scan. The method does turn on the scanner, but puts the scanner in a state in which it can be turned ON either automatically or by pressing a hardware trigger as determined by the `Scanner.TriggerType`. The data notification must registered in order to scan and get the scan data. The read request can be canceled by issuing a `cancelRead`. If a `read()` is submitted while another read is pending, the method call fails. Therefore, **Zebra recommends checking whether a read is pending by calling** `isReadPending()` before submitting a `read()`. A read() also can be submitted from within `onData` and `onStatus` events. If called within `onStatus`, it should be called only when IDLE status is received. If called within `onData`, then checking for `isReadPending()` is recommended.
 
 > Note: The `read` method allows a single barcode scan only. If multiple scans are desired, the `read` method must be called multiple times.
+
+-----
+
+## What's Next
+After completing this basic tutorial, the next logical step might be to explore the [Barcode/Scanning APIs](/emdk-for-android/6-10/api) in depth, and use them to perform advanced scanning operations.

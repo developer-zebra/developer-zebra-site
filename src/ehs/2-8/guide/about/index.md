@@ -305,6 +305,22 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 <tr >
 <td style="width: 118.35pt;"  width="158">
+<p class="MsoNormal"><font color="#333399" size="3">VC80x</font></p>
+</td>
+
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
+</td>
+</tr>
+
+<tr >
+<td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">WT6000</font></p>
 </td>
 

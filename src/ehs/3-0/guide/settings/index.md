@@ -453,10 +453,12 @@ Allows (dynamic) information that uniquely identifies the device to be displayed
 * Plain (static) text or emojis before and/or after any single device ID:
  * [bluetooth_address] - Bluetooth MAC address
  * [bluetooth_name] - Bluetooth "friendly" device name
- * [imei_number] - International Mobile Equipment Identity (WWAN devices only) 
+ * [imei_number] - International Mobile Equipment Identity (WWAN devices only; see NOTE below) 
  * [mac_address] - Wi-Fi MAC address
  * [network_host_name] - Wi-Fi host name
  * [serial_number] - Device serial number
+
+**NOTE**: If the IMEI number is specified in a non-WWAN device, the default EHS title is displayed.
 
 **<u>WARNING</u>: Square brackets must not be used inside the &lt;value&gt; tags except as specified above**. 
 

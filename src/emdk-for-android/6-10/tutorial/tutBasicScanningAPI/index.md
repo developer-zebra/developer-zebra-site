@@ -307,7 +307,7 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
   
 7. Whether scanning the barcode by pressing the hard scan key or keeping it idle, it returns the status of the scanner at a specific point in time in the overridden `onStatus` method of the implemented `StatusListener` interface. Since the status also is being displayed along with barcode data, the app can make use of this method and populate the status.
 
-Just like scanned data, the scanner status is being processed in a background thread. Hence another [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) (named `AsyncStatusUpdate`) is created to take [StatusData](/emdk-for-android/6-10/api/barcode/StatusData) and processes it in the `doInBackground` method to retrieve the state in string format. This is populated in status Text View in the UI thread in the `onPostExecute` method of the AsyncTask. 
+	Just like scanned data, the scanner status is being processed in a background thread. Hence another [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) (named `AsyncStatusUpdate`) is created to take [StatusData](/emdk-for-android/6-10/api/barcode/StatusData) and processes it in the `doInBackground` method to retrieve the state in string format. This is populated in status Text View in the UI thread in the `onPostExecute` method of the AsyncTask. 
 
         :::java
         // AsyncTask that configures the current state of scanner on background
@@ -406,7 +406,6 @@ Just like scanned data, the scanner status is being processed in a background th
 	    }
 
 
-
 10. Lastly, clean up the objects created by EMDK manager in `onClosed` method in case EMDK closed abruptly:
 
         :::java
@@ -424,26 +423,24 @@ Just like scanned data, the scanner status is being processed in a background th
  
 ## Running the Application
 
-1. Connect the device (having latest EMDK runtime) to USB port. 
-
-    > Note:   
-    > Make sure the device is in USB debug.
+1. Connect the device (with the latest EMDK runtime) to a USB port on the development host. 
+	**Note**: The device must be in USB Debug mode.
  
 2. Run the application.
 
     ![img](../../images/BasicScanningTutorialImages/home_screen.png)
 
-    You can see a [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html), which indicates that the Scanner has been enabled and you can start scanning by pressing hard scan button of the device.
+    A [Toast message](http://developer.android.com/guide/topics/ui/notifiers/toasts.html) appears indicating that the Scanner has been enabled and scans can begin by pressing hard scan button of the device.
   
-3. Now if you press the hard scan button, the status listener in the code starts working and current status of Scanner is displayed in Status [TextView](http://developer.android.com/reference/android/widget/TextView.html), which is `Scanning`.  
+3. Pressing the hard scan button causes the status listener in the code to start working; the current status of Scanner (which is "Scanning") is displayed in the Status [TextView](http://developer.android.com/reference/android/widget/TextView.html).  
 
     ![img](../../images/BasicScanningTutorialImages/status_scanning.png)
 
-4. Once you are done with scanning and release the hard scan button, data gets populated on [EditText](http://developer.android.com/reference/android/widget/EditText.html) and status is again updated in Status [TextView](http://developer.android.com/reference/android/widget/TextView.html), which is `Idle`.
+4. Once finished with scanning, release the hard scan button. Data is populated to [EditText](http://developer.android.com/reference/android/widget/EditText.html) and status "Idle" is displayed in the Status [TextView](http://developer.android.com/reference/android/widget/TextView.html).
 
     ![img](../../images/BasicScanningTutorialImages/status_idle.png)  
 
-    This is how [Barcode/Scanning APIs](/emdk-for-android/6-10/api) introduced in EMDK V 3.0 can be used to perform Basic Scanning operations on your Symbol devices without using Profile Wizard. We will see the [Barcode/Scanning APIs](/emdk-for-android/6-10/api) in depth to perform advanced scanning operations in the next tutorial. 
+    This is how [Barcode/Scanning APIs](/emdk-for-android/6-10/api) introduced in EMDK and used to perform Basic Scanning operations on Zebra devices without using Profile Wizard. 
 
 ##Important Programming Tips##
 
@@ -468,29 +465,8 @@ Just like scanned data, the scanner status is being processed in a background th
 ## What's Next
 Now that you have learned how to perform Basic Scanning operations on your Symbol Android devices through applications without using Profile Wizard, let us try to understand the API in depth and perform some advanced scanning. So in the next tutorial, we will concentrate on [Barcode/Scanning APIs](/emdk-for-android/6-10/api) in depth and use it to perform advanced scanning operations by creating a tutorial.
 
+## Content Backup
 
+Once the barcode is enabled, the `read` method is called on the scanner and the scanning API provides starts an asynchronous scan. The method does turn on the scanner, but puts the scanner in a state in which it can be turned ON either automatically or by pressing a hardware trigger as determined by the `Scanner.TriggerType`. The data notification must registered in order to scan and get the scan data. The read request can be canceled by issuing a `cancelRead`. If a `read()` is submitted while another read is pending, the method call fails. Therefore, **Zebra recommends checking whether a read is pending by calling** `isReadPending()` before submitting a `read()`. A read() also can be submitted from within `onData` and `onStatus` events. If called within `onStatus`, it should be called only when IDLE status is received. If called within `onData`, then checking for `isReadPending()` is recommended.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## CONTENT BACKUP
-
-Once the barcode is enabled, we will call `read` method on scanner. The scanning API provides `read` method that starts an asynchronous Scan. The method will not turn ON the scanner. It will, however, put the scanner in a state in which the scanner can be turned ON either by pressing a hardware trigger or can be turned ON automatically. This is determined by the `Scanner.TriggerType`. The data notification must registered in order to scan and get the Scan Data. The read request can be canceled by issuing a `cancelRead`. If a `read()` is submitted while another read is pending, the method call will fail. It is recommended to check whether a read is pending by calling `isReadPending()` before submitting a `read()`. A read() can also be submitted from within `onData` and `onStatus` events. If called within `onStatus`, it should be called only when IDLE status is received. If called within `onData`, then checking for `isReadPending()` is recommended.
-
-	> Note: The `read` method allows you to scan the barcode only once. If you want to scan the barcodes multiple times then call `read` multiple times. Hence later in this tutorial, we will also call `read` in the `onData` callback method, which is executed every time a barcode is scanned. 
+> Note: The `read` method allows a single barcode scan only. If multiple scans are desired, the `read` method must be called multiple times.

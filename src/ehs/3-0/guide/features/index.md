@@ -179,6 +179,7 @@ _In EHS 2.7 and higher, logging can be disabled through the UI or config file._
 **IMPORTANT**: Secure Mode is discontinued in EHS 3.0 and higher. 
 
 ------
+<!-- removed 10/16/18, per eng. No longer applies. 
 
 ## EHS File Interactions
 
@@ -319,7 +320,7 @@ cellspacing="0" cellpadding="4">
 </div>
 </div>
 <div class="sect1">
-
+ -->
 ------
 ## Security Notes
 This section covers important interactions between EHS and Android features that might impact device security or application behavior. 

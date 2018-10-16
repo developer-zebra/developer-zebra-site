@@ -22,12 +22,14 @@ Steps to generate the certificate:<br>
 A. Zebra recommends the certificate to be procured in .p7b format and the certificate private key to be a .key file. If the certificates are in different format, use a SSL certificate converter tool to convert to the proper format.<br>
 B. Download [OpenSSL](https://www.openssl.org/source/) tool and install on the server.<br>
 C. Create an empty directory named "generated_certs" to contain the .pfx certificate.<br>
-D. Copy the certificate files to "generated_certs" folder: primary certificate "ssl_certificate.p7b", intermediate CA certificate "IntermediateCA.cer" and private key "ppc_private_key.key".<br>
+D. Copy the following certificate files to "generated_certs" folder: primary certificate (e.g. "ssl_certificate.p7b"), private key (e.g. "ppc_private_key.key"), and intermediate CA certificate (e.g. "IntermediateCA.cer").  _The intermediate CA certificate is optional - use if required in the certificate chain._  <br>
 E. Open a command prompt. Execute the following command to generate "ssl_certificate.cer":<br>
  		`openssl pkcs7 -print_certs -in ssl_certificate.p7b -out ssl_certificate.cer`
 <br>
 F. At the command prompt, execute the following command:<br>
 		`openssl pkcs12 -export -in ssl_certificate.cer -inkey ppc_private_key.key -out ssl_certificate.pfx -certfile IntermediateCA.cer`
+	<br>
+	Where "-certfile IntermediateCA.cer" is optional.
 <br>
 G. When prompted, enter the certificate password to export "ssl_certificate.pfx".<br>
 H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to the following folders:

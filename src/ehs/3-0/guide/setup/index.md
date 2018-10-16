@@ -7,9 +7,9 @@ productversion: '3.0'
 
 ## Overview
 
-These instructions provide a basic understanding of the installation, configuration, usage and essential workings of Enterprise Home Screen, and are recommended for anyone unfamiliar with first-time EHS setup. Please note that everything detailed here also can be automated through a Mobile Device Management (MDM) system and with direct manipulation of the EHS config file, which is documented in the [Advanced Settings](../settings) section. 
+These instructions provide a basic understanding of the installation, configuration, usage and essential workings of Enterprise Home Screen, and are recommended for anyone unfamiliar with first-time EHS setup. Please note that everything detailed here also can be automated through a Enterprise Mobile Management (EMM) system and with direct manipulation of the EHS config file, which is documented in the [Advanced Settings](../settings) section. 
 
-Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts these capabilities into a single, convenient tool.
+Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party EMM system (if supported by that EMM system). EHS simply puts these capabilities into a single, convenient tool.
 
 > <b>Note</b>: Installation and setup requires that the EHS .apk file be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](../../download) and establish connectivity between the computer and device. Then resume from here. 
 
@@ -23,11 +23,11 @@ These instructions apply to direct installation (from a computer to a single dev
 The EHS 3.0 download includes two separate .apk files: 
 
 * `EHS_0207xx_A.apk` - for all devices **_except_ TC20/TC25 and Oreo devices**
-* `EHS_0207xx_B.apk` - for TC20/TC25 and Oreo devices
+* `EHS_0207xx_B.apk` - for **TC20/TC25 and Android 8.1 Oreo devices**
 
 See the full list of [devices supported by EHS v3.0](../guide/about#supporteddevices). 
 
-Read about how to [uninstall EHS](#uninstallation) later in this guide. 
+> **ABOUT OREO UPGRADES**: If a device is being upgraded to Android 8.1 Oreo from any prior Android version, **<u>the previous EHS installation must first be removed</u>**.<br> Follow instructions for [uninstalling EHS](#uninstallation) before proceeding. 
 
 **To install EHS manually**: 
 
@@ -35,7 +35,7 @@ Read about how to [uninstall EHS](#uninstallation) later in this guide.
 
 &#50;. <b>Copy the .apk file</b> from the PC to any writable device folder.
 
-&#51;. On the device, <b>launch File Browser</b> from the App Drawer:
+&#51;. On the device, <b>launch "File Browser" or "Files" app</b> (Oreo) from the App Drawer:
 
 <img alt="" style="height:500px" src="file_browser_in_drawer.png"/>
 <br>
@@ -139,11 +139,13 @@ For scenarios that require even more security, EHS offers Secure and Kiosk modes
 -----
 
 ## Automated Installation
-These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own MDM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](../../../../emdk-for-android) or [StageNow](../../../../stagenow) tools using its App Manager Setting Type service. 
+These instructions apply to remote installation of EHS, an `enterprisehomescreen.xml` config file, or both, from an organization's own EMM server to multiple managed devices. Alternatively, remote deployment and management can be accomplished through Zebra's [EMDK](../../../../emdk-for-android) or [StageNow](../../../../stagenow) tools using its App Manager Setting Type service. 
 
 > **Important**: To execute EHS in a device in which a managed profile is enabled, EHS must be installed <u>before</u> configuring the managed profile in the device.
 
-**To install EHS using an MDM, instruct the MDM to do the following, in this order**:
+> **ABOUT OREO UPGRADES**: If a device is being upgraded to Android 8.1 Oreo from any prior Android version, **<u>the previous EHS installation must first be removed</u>**.<br> Follow instructions for [uninstalling EHS](#uninstallation) before proceeding. 
+
+**To install EHS using an EMM, instruct the EMM to do the following, in this order**:
 
 &#49;. If desired, <b>create an</b> `enterprisehomescreen.xml`<b> file</b> containing the desired user apps and settings. Otherwise, EHS will be installed with its default settings and apps. See the [Advanced Settings](../settings) section for detailed instructions on the creation and editing of config files. 
 
@@ -185,7 +187,7 @@ These instructions apply to remote installation of EHS, an `enterprisehomescreen
 
 &#53;. <b>Reboot the device</b> to complete the installation. This is a <b>required step</b>. 
 
-The capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about how to configure these commands. 
+The capabilities of EMM systems vary. Please refer to the EMM documentation for specific information about how to configure these commands. 
 
 **Note: App installation, uninstallation, setting the default launcher and other operations are possible using the [App Manager](/mx/#app-manager) through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools**. 
 
@@ -221,7 +223,7 @@ To remove EHS, simply use the Android App Manager to <b>uninstall the EHS app</b
 <img alt="" style="height:350px" src="ehs_uninstall_confirm.png"/>
 <br>
 
-####OPTIONAL
+#### Remove Config File (optional)
 The steps above do not remove the `enterprisehomescreen.xml` configuration file from the `/enterprise/usr` folder, which could effect the behavior of EHS versions installed later.  
 
 **To remove an old version of the `enterprisehomescreen.xml` file**:
@@ -234,17 +236,19 @@ The steps above do not remove the `enterprisehomescreen.xml` configuration file 
     adb shell rm /enterprise/usr/enterprisehomescreen.xml
 
 
-Manual uninstallation of EHS is now complete. 
+##### Manual uninstallation of EHS is now complete. 
+
+-----
 
 ### Automated Uninstallation
-These instructions apply to remote uninstallation using an organization's own MDM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
+These instructions apply to remote uninstallation using an organization's own EMM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
 #### Important
-* **On ET50 and ET55 devices with GMS**, <u>a permanent system UI crash could occur</u> if EHS is uninstalled remotely (i.e. via MDM) while in User Mode. Before uninstalling EHS, Zebra recommends pushing to the device an EHS configuration file (`enterprisehomescreen.xml`) with the Search app enabled. See the [Advanced Settings](../settings) section for configuration file usage. 
+* **On ET50 and ET55 devices with GMS**, <u>a permanent system UI crash could occur</u> if EHS is uninstalled remotely (i.e. via EMM) while in User Mode. Before uninstalling EHS, Zebra recommends pushing to the device an EHS configuration file (`enterprisehomescreen.xml`) with the Search app enabled. See the [Advanced Settings](../settings) section for configuration file usage. 
 
 * Device settings configured by EHS such as USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some others might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
 
-**To uninstall EHS using an MDM, instruct the MDM to do the following**:
+**To uninstall EHS using an EMM, instruct the EMM to do the following**:
 
 &#49;. <b> Uninstall (remove) the EHS app</b>, referencing the package and activity names as indicated in the table below. 
 
@@ -278,20 +282,20 @@ These instructions apply to remote uninstallation using an organization's own MD
 </table>
 <br>
 
-&#50;. <b>OPTIONAL</b>: If a new `enterprisehomescreen.xml` configuration file will be deployed with the new version of EHS, **skip to Step 3**. Otherwise, instruct the MDM to remove the file `/enterprise/usr/enterprisehomescreen.xml` from the device. This will clear configuration settings from the previously installed EHS app. 
+&#50;. <b>OPTIONAL</b>: If a new `enterprisehomescreen.xml` configuration file will be deployed with the new version of EHS, **skip to Step 3**. Otherwise, instruct the EMM to remove the file `/enterprise/usr/enterprisehomescreen.xml` from the device. This will clear configuration settings from the previously installed EHS app. 
 
 >**Warning**: Do not remove the `/enterprise/usr` folder; it could effect the behavior of other apps. 
 
 &#51;. It is sometimes necessary to <b>reboot the device</b> to complete the uninstallation. 
 
-Remote uninstallation of EHS is now complete. 
+##### Remote uninstallation of EHS is now complete. 
 
-**Note: Capabilities of MDM systems vary. Please refer to the MDM documentation for specific information about command usage**. 
+**Note: Capabilities of EMM systems vary. Please refer to the EMM documentation for specific information about command usage**. 
 
 -----
 
 ## Change the Default Launcher
-Removing EHS as the default launcher on a device can be done with a simple change in the Settings panel or by uninstalling EHS. Either of these scenarios can be accomplished manually on the device, programmatically through EMDK or remotely using StageNow or an MDM (if supported). 
+Removing EHS as the default launcher on a device can be done with a simple change in the Settings panel or by uninstalling EHS. Either of these scenarios can be accomplished manually on the device, programmatically through EMDK or remotely using StageNow or an EMM (if supported). 
 
 If EHS is removed from the device and the Android Launcher is the only remaining launcher on the device, it will become the default launcher. **If more than one launcher will remain on the device after EHS is removed, a new default launcher should be selected to ensure desired operation**.  
 

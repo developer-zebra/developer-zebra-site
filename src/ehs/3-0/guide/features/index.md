@@ -9,7 +9,7 @@ productversion: '3.0'
 
 This guide covers advanced EHS features such as Kiosk Mode and EHS Logging. It assumes a working knowledge of Enterprise Home Screen and use of its [Advanced Settings](../settings) through direct manipulation of the `enterprisehomescreen.xml` config file. For those not familiar with these procedures, please refer to the [About](../about) and [Setup](../setup) pages and the [Advanced Settings Guide](../settings) before continuing. 
 
-<b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party mobile device management (MDM) system (if supported by that MDM system). EHS simply puts the capabilities into a single tool.
+<b>Note</b>: Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party Enterprise Mobile Management (EMM) system (if supported by that EMM system). EHS simply puts the capabilities into a single tool.
 
 > **Note**: Secure Mode is discontinued in EHS 3.0 and higher. 
 
@@ -20,10 +20,11 @@ Kiosk Mode is designed for devices to run a single application, often with a tou
 
 Also see the EHS [Auto-Launch](../settings#autolaunch) feature, which provides functionality similar to Kiosk Mode without changing the HOME and BACK key functions. 
 
+<!-- 10/16/18- Lollipop not supported in EHS 3.0+.
 ##### Android Platform Notes: 
 * **On devices running Android 5.x Lollipop**, Kiosk Mode should not be used with Screen Pinning, an feature in Android L and higher that provides similar functionality.
 * **On devices running Android 4.4 KitKat**, a "please wait" prompt remains displayed when starting up the device in Kiosk Mode. Press the HOME key to launch the Kiosk app and resume normal behavior. 
-
+ -->
 ##### Kiosk Mode tags:
 <b>&lt;kiosk&gt;</b> - Specifies the app that will run when Kiosk Mode is enabled
 
@@ -164,11 +165,10 @@ Log into Admin Mode and delete the signature file from the `/enterprise/usr` dir
 
 <b>Note: Whether running in Normal or Secure Mode, reaching the maximum number of 10 unsuccessful admin login attempts (or the number otherwise specified in the EHS config file) will disable Admin Mode login. To exit this state, copy a valid config file (and its matching signature file if previously running in Secure Mode) to the device or delete the existing signature file remotely via MDM</b>.
  -->
-------
 
 ## EHS Log
 
-EHS records all major activities, failures and security events in the `/enterprise/usr/enterprisehomescreen.log` file. These include failed attempts to enter Admin Mode, switches of the operating mode and all EHS errors. The log is a plain text file and can be retrieved with ADB or an MDM and viewed with any text editor.  
+EHS records all major activities, failures and security events in the `/enterprise/usr/enterprisehomescreen.log` file. These include failed attempts to enter Admin Mode, switches of the operating mode and all EHS errors. The log is a plain text file and can be retrieved with ADB or an EMM and viewed with any text editor.  
 
 For more information about logging, see [Logging Preferences](../settings/#loggingdisabled). 
 
@@ -331,7 +331,7 @@ This section covers important interactions between EHS and Android features that
 * On Android Nougat devices, **the Recent Apps button can be Enabled/Disabled**. It is disabled by default to prevent the use of multi-window mode. 
 * EHS does not add apps or activities to the Android Recent Apps list, but apps/activities launched from within EHS might. Such apps/activities could launch others that might appear on the Recent Apps list and pose a security risk.  
 * The Recent Apps list can be cleared on pre-Android L devices by rebooting the device. 
-* Android L devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system to clear the list. 
+* Android L devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party EMM system to clear the list. 
 * To manually clear Recent Apps, bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears, then swipe away each app.
 
 ### EHS and MX Multi-user

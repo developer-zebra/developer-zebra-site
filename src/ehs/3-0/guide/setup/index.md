@@ -195,9 +195,10 @@ The capabilities of EMM systems vary. Please refer to the EMM documentation for 
 
 ## Uninstallation
 
+<!-- 10/16/18- Lollipop not supported in EHS 3.0+.  
 #### Important
 **On ET50/ET55 devices running Android 5.x Lollipop with GMS**, <u>a permanent system UI crash could occur</u> if EHS is uninstalled while in User Mode. Before uninstalling EHS, Zebra recommends pushing to the device an EHS configuration file (`enterprisehomescreen.xml`) with the Search app enabled. See the [Advanced Settings](../settings) section for configuration file usage. 
-
+ -->
 ### Manual Uninstallation
 **Important**: Device settings configured by EHS such as USB Debugging, [System Settings Restricted](../settings#systemsettingsrestricted), and some others might not revert to the state they were in prior to EHS installation. Zebra recommends reconfiguring the device as required <u>prior to the removal of EHS</u>. 
 

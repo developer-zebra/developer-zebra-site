@@ -299,34 +299,24 @@ ABOVE NOTE REPLICATED ON SETTINGS PAGE
 
 -----
 
-### Android Lollipop, Marshmallow and Nougat Notes 
-**_Applies to devices running Android Lollipop 5.x and higher (including Marshmallow and Nougat)_**:
+### Android Marshmallow and Nougat Notes 
+**_Applies to devices running Android Marshmallow 6.x and higher_**:
 
-<!-- 5/2/18- feature dropped from EHS 2.8 
-* **[Status Bar Pull-down](../settings#disablestatusbarpulldown) cannot be controlled through EHS on devices running Android L, M or N** (the feature appears "grayed out" in the Admin-Mode Preferences panel on those devices). To contol the Status Bar Pull-down (also known as the "Notification Pulldown"), use the [UI Manager](/mx/uimgr) through Zebra EMDK or StageNow tools.
-
--->
-
-<!-- 5/2/18- feature dropped from EHS 2.8
-* **[Status Bar Settings Icon](../settings#disablestatusbarsettings) behavior has changed**. While disabling such access to the Settings panel is not supported through EHS on all devices, a new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (referred to there as Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system, overriding any EHS setting. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain. 
-
--->
-
-* **[Airplane Option Disabled](../settings#airplaneoptiondisabled) feature cannot be controlled through EHS on devices running Android M or N, nor on some devices running Android L**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
+* **[Airplane Option Disabled](../settings#airplaneoptiondisabled) feature cannot be controlled through EHS on devices running Android M or N**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
 
 <!-- 
 ABOVE NOTE REPLICATED ON SETTINGS PAGE 
 -->
 
-* **Devices running Android L and higher retain the "Recent Apps" list after device reboot**, posing a potential security risk. EHS 2.7 (and higher) disables the Recent Apps button on <u>Nougat devices only</u> to help address this risk. For all devices, the list can be cleared using [App Manager](/mx/appmgr) through Zebra EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
+* **Devices running Android M and higher retain the "Recent Apps" list after device reboot**, posing a potential security risk. EHS 2.7 (and higher) disables the Recent Apps button on <u>Nougat devices only</u> to help address this risk. For all devices, the list can be cleared using [App Manager](/mx/appmgr) through Zebra EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
 
-* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature in Android L and higher that works in a similar way.
+* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature implemented in Android L and higher that works in a similar way.
 
-* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after rebooting a device running Android L and higher**. This feature works normally on devices running KitKat and Jelly Bean. 
+* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after rebooting a device running Android M and higher**. This feature works normally on devices running KitKat and Jelly Bean. 
 
-* **[Screen orientation](../settings#orientation) can be changed through the Quick Settings panel on devices running Android L and higher** <u>only</u> when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
+* **[Screen orientation](../settings#orientation) can be changed through the Quick Settings panel on devices running Android M and higher** <u>only</u> when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
-* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after rebooting a device running Android L and higher**. This feature works normally on devices running KitKat and Jelly Bean. 
+* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after rebooting a device running Android M and higher**. This feature works normally on devices running KitKat and Jelly Bean. 
 
 ------
 

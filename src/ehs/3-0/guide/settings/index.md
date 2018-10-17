@@ -380,6 +380,8 @@ _The admin password <b><u>must</u></b> be entered and changed using the Admin To
 ### App Icon Size
 Permits the size of application icons to be set to Small, Medium, Large, Extra Large and Extra Extra Large . Icon size can be controlled through the `enterprisehomescreen.xml` file or through the device UI while in Admin or User Modes. 
 
+**Note: EHS 3.0 and higher supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
+
 **To change the icon size through the UI**:
 
 In Admin or User Mode, **tap the menu icon** and **select Icon settings**: 
@@ -648,7 +650,7 @@ Enables one or more apps to be automatically launched after EHS starts up. Works
 
 
     <preferences>
-        <service_auto_launch_enable>0</service_auto_launch_enable>
+        <auto_launch_enable>0</auto_launch_enable>
     </preferences>
 
 

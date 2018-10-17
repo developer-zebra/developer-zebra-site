@@ -7,21 +7,10 @@ productversion: '3.0'
 
 ### EHS 3.0 Compatibility Notes
 
-* **Supports Android Marshmallow, Nougat and Oreo on [supported devices](../guide/about#supporteddevices) only** 
-* **Supports Android Nougat on**:  
- * MC33
- * TC20 
- * TC25 
- * TC51
- * TC56
- * TC70x
- * TC75x 
- * WT6000
-* **Supports Android Oreo on**:
- * PS20
+* **Supports Android Marshmallow, Nougat and Oreo on [supported devices](../guide/about#supporteddevices) only**. 
 * Download package includes two separate .apk files: 
- * `EHS_0208xx_A.apk` - for all [supported devices](../guide/about#supporteddevices) **_<u>except</u>_ TC20/TC25 and Oreo devices**
- * `EHS_0208xx_B.apk` - **for TC20/TC25 and Oreo devices**
+ * `EHS_0208xx_A.apk` - for all [supported devices](../guide/about#supporteddevices) **_<u>except</u>_ TC20/TC25 and devices running Oreo**
+ * `EHS_0208xx_B.apk` - **for TC20/TC25 and devices running Oreo**
 
 > **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
 

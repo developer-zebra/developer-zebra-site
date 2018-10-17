@@ -93,7 +93,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 </tr>
 
@@ -141,9 +141,42 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 </tr>
+
+<tr>
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC52, TC57</font></p>
+</td>
+
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
+</td>
+</tr>
+
+<tr>
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC72, TC77</font></p>
+</td>
+
+<td style="width: 220px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
+</td>
+</tr>
+
 
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC70x</font></p>
@@ -156,7 +189,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 </tr>
 
@@ -172,7 +205,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 </tr>
 
@@ -188,7 +221,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 </tr>
 
@@ -217,14 +250,19 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **Support added for devices running Android 8.1 Oreo**
 * **Foreground services can now be auto-launched** in devices running Oreo. 
 
-
-**Important Note for all Nougat-to-Oreo upgrades <u>except TC20/TC25</u>**: When upgrading a device from Nougat to Oreo, <u>the Nougat version of EHS must be removed</u> and the Oreo version installed. Config files, which are forward-compatible, persist on the device during this process; settings are re-applied automatically the next time EHS starts.
-
+> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
+ 
 ### Device Support
 
 Now supports for the following devices running Android 8.1 Oreo. 
 
+* **MC33**
 * **PS20 Personal Shopper**
+* **TC52/TC57**
+* **TC72/TC77**
+* **TC51/TC56**
+* **TC70x/TC75x**
+* **VC80x**
 
 ### End of Support
 

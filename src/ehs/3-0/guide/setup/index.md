@@ -27,8 +27,8 @@ The EHS 3.0 download includes two separate .apk files:
 
 See the full list of [devices supported by EHS v3.0](../guide/about#supporteddevices). 
 
-> **ABOUT OREO UPGRADES**: If a device is being upgraded to Android 8.1 Oreo from any prior Android version, **<u>the previous EHS installation must first be removed</u>**.<br> Follow instructions for [uninstalling EHS](#uninstallation) before proceeding. 
-
+> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
+ 
 **To install EHS manually**: 
 
 &#49;. <b>Connect the device</b> via USB to a PC or Mac.
@@ -143,7 +143,7 @@ These instructions apply to remote installation of EHS, an `enterprisehomescreen
 
 > **Important**: To execute EHS in a device in which a managed profile is enabled, EHS must be installed <u>before</u> configuring the managed profile in the device.
 
-> **ABOUT OREO UPGRADES**: If a device is being upgraded to Android 8.1 Oreo from any prior Android version, **<u>the previous EHS installation must first be removed</u>**.<br> Follow instructions for [uninstalling EHS](#uninstallation) before proceeding. 
+> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
 
 **To install EHS using an EMM, instruct the EMM to do the following, in this order**:
 

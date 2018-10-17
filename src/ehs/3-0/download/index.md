@@ -21,9 +21,9 @@ productversion: '3.0'
  * PS20
 * Download package includes two separate .apk files: 
  * `EHS_0208xx_A.apk` - for all [supported devices](../guide/about#supporteddevices) **_<u>except</u>_ TC20/TC25 and Oreo devices**
- * `EHS_0208xx_B.apk` - for TC20/TC25 and Oreo devices
+ * `EHS_0208xx_B.apk` - **for TC20/TC25 and Oreo devices**
 
-**Important Note for all Nougat-to-Oreo upgrades <u>except TC20/TC25</u>**: When upgrading a device from Nougat to Oreo, <u>the Nougat version of EHS must be removed</u> and the Oreo version installed. Config files, which are forward-compatible, persist on the device during this process; settings are re-applied automatically the next time EHS starts.
+> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
 
 ### Download EHS 3.0
 
@@ -31,7 +31,7 @@ Visit the [Enterprise Home Screen download page](https://www.zebra.com/us/en/sup
 
 After download, proceed to the [EHS Setup page](../guide/setup). 
 
-### Legacy Angroid Support
+### Legacy Android Support
 
 * **For Lollipop support**, see the [EHS 2.8 download page](/ehs/2-8/download). 
 * **For KitKat support**, see the [EHS 2.6 download page](/ehs/2-6/download). 

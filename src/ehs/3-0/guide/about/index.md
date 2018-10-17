@@ -254,7 +254,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
  
 ### Device Support
 
-Now supports for the following devices running Android 8.1 Oreo. 
+Now supports these devices **running Android 8.1 Oreo** 
 
 * **MC33**
 * **PS20 Personal Shopper**
@@ -266,7 +266,7 @@ Now supports for the following devices running Android 8.1 Oreo.
 
 ### End of Support
 
-* **Support for Android 5.x Lollipop dropped**. Use [EHS 2.8](/ehs/2-8/guide/about) if Lollipop suopport is required. 
+* **Support for Android 5.x Lollipop dropped**. Use [EHS 2.8](/ehs/2-8/guide/about) if Lollipop support is required. 
 * **Bypass keyguard feature is dropped**. 
 * **Secure Mode feature is dropped -** Log files no longer designate "SECURED" or "UNSECURED" in log entries. 
 

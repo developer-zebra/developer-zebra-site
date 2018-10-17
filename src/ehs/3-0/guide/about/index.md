@@ -247,7 +247,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ## New in EHS 3.0
 
-* **Support added for devices running Android 8.1 Oreo**
+* **Support added for devices running Android 8.1 Oreo**.
 * **Foreground services can now be auto-launched** in devices running Oreo. 
 
 > **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
@@ -267,7 +267,7 @@ Now supports these devices **running Android 8.1 Oreo**
 ### End of Support
 
 * **Support for Android 5.x Lollipop dropped**. Use [EHS 2.8](/ehs/2-8/guide/about) if Lollipop support is required. 
-* **Bypass keyguard feature is dropped**. 
+* **Bypass keyguard feature is dropped -** Use the [DevAdmin Manager in StageNow](/stagenow/latest/csp/devadmin/#screen-lock-type) or [EMDK](/emdk-for-android/latest/mx/devadmin/) to configure this setting. 
 * **Secure Mode feature is dropped -** Log files no longer designate "SECURED" or "UNSECURED" in log entries. 
 
 ### New Features
@@ -350,11 +350,7 @@ ABOVE NOTE REPLICATED ON SETTINGS PAGE
 
 * **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature implemented in Android L and higher that works in a similar way.
 
-* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after rebooting a device running Android M and higher**. This feature works normally on devices running KitKat and Jelly Bean. 
-
 * **[Screen orientation](../settings#orientation) can be changed through the Quick Settings panel on devices running Android M and higher** <u>only</u> when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
-
-* **The [Bypass Keyguard](../settings#bypasskeyguard) feature fails to unlock the screen after rebooting a device running Android M and higher**. This feature works normally on devices running KitKat and Jelly Bean. 
 
 ------
 
@@ -445,7 +441,7 @@ EHS 2.7 adds support for the following devices running Android Nougat:
 
 ### Added in EHS 2.6
 
-* **Support for ET50/ET55** tablet computers runing Marshmallow
+* **Support for ET50/ET55** tablet computers running Marshmallow
 
 -----
 

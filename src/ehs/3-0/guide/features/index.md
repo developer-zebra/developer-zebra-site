@@ -91,7 +91,7 @@ This section covers important interactions between EHS and Android features that
 
 ### EHS and MX Multi-user
 
-* If using EHS with Zebra's MX Multi-user feature, it's important to disable the EHS Bypass Keyguard feature. Failure to do so will prevent the MX multi-user login screen from being displayed. Refer to the [Bypass Keyguard tag](../settings#bypasskeyguard) for settings instructions. 
+* If using EHS with Zebra's MX Multi-user feature, it's important to enable the device Lock Screen. Failure to do so will prevent the MX multi-user login screen from being displayed. Use the [DevAdmin Manager in StageNow](/stagenow/latest/csp/devadmin/#screen-lock-type) or [EMDK](/emdk-for-android/latest/mx/devadmin/) to configure this setting.
 * MX Multi-user has the ability to override EHS-imposed restrictions on access to System Settings. Users logged in as an MX Admin will have full access to System Settings at all times. MX non-admin users by default will have access only to Sound, Display and About screens. 
 
 ### Other Unintended Access

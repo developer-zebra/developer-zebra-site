@@ -164,7 +164,6 @@ The EHS config file is broken into five sections:
             <icon_label_background_color>#00FFFFFF</icon_label_background_color>
             <icon_label_text_color>#FFFFFFFF</icon_label_text_color>
             <orientation></orientation>
-            <bypass_keyguard>1</bypass_keyguard>
             <auto_launch_enable>0</auto_launch_enable>
             <service_auto_launch_enable>0</service_auto_launch_enable>
             <wallpaper></wallpaper>
@@ -873,27 +872,9 @@ Controls whether the device can be put into "airplane mode" from the Power menu 
 ------
 
 ### Bypass Keyguard
-Controls whether the Keyguard screen (also known as the "Lock Screen") is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag will enable the Keyguard. 
+This feature is disabled in EHS 3.0 and higher. 
 
-**Notes** 
-* **On devices running Android L**, the Bypass Keyguard feature fails to unlock the screen after rebooting the device.
-* **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent display of the multi-user login screen. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
-
-<img alt="" style="height:350px" src="keyguard.png"/>
-_The Android Keyguard (also known as the Lock Screen)_.
-<br>  
-
-<img alt="" style="height:350px" src="bypass_keyguard.png"/>
-<br> 
-
-<b>Possible values</b>:
-
-* <b>1 (default, Keyguard not displayed) </b>
-* 0 
-
-#### Example
-
-    <bypass_keyguard>1</bypass_keyguard>
+Use the [DevAdmin Manager in StageNow](/stagenow/latest/csp/devadmin/#screen-lock-type) or [EMDK](/emdk-for-android/latest/mx/devadmin/) to configure this setting. 
 
 ------
 

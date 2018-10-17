@@ -134,7 +134,7 @@ In User Mode, the following features are disabled by default:
 
 <img alt="" style="height:350px" src="prefs_3.png"/>
 
-For scenarios that require even more security, EHS offers Secure and Kiosk modes, which are documented in the [Advanced Features]() section. For a complete usage reference for the `enterprisehomescreen.xml` configuration file, please see the [Advanced Settings](../settings) section. 
+For scenarios that require even more security, EHS offers Kiosk mode, which is documented in the [Advanced Features]() section. For a complete usage reference for the `enterprisehomescreen.xml` configuration file, please see the [Advanced Settings](../settings) section. 
 
 -----
 

@@ -24,7 +24,7 @@ This section describes important interactions between EHS and the `enterprisehom
 
 #### Config File Location
 
-* The config file is initially stored in the `/enterprise/usr` directory on the device. <!-- (does not apply to [Secure Mode](../features#securemode))-->
+* The config file is initially stored in the `/enterprise/usr` directory on the device.
 * This directory is <b>invisible</b> to most apps, <b>including Windows Explorer and Android File Transfer (Mac)</b>. 
 * The directory is <b>visible to Android File Browser</b>, which can be used to manage its contents. 
 * The file is <b>accessible via Android Debug Bridge (ADB)</b> "pull" and "push" commands. 
@@ -1262,7 +1262,7 @@ Permits the option of injecting key-value pairs via XML into an app when it laun
 ------
 
 ### Icon
-Permits a custom graphic to be specified in place of the system or default icon for an application or link when displayed on the User-Mode screen. **Supports .bmp, .jpg, and .png image formats**. Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file using the full path. Default icon is used if tag is left blank or specified image file is missing or invalid. When used with apps specified using the wildcard attribute, all apps will display the same icon. <!-- **Compatible with EHS Secure Mode**.  -->
+Permits a custom graphic to be specified in place of the system or default icon for an application or link when displayed on the User-Mode screen. **Supports .bmp, .jpg, and .png image formats**. Image must be stored locally on the device and specified in the `enterprisehomescreen.xml` file using the full path. Default icon is used if tag is left blank or specified image file is missing or invalid. When used with apps specified using the wildcard attribute, all apps will display the same icon. 
 
 #### Examples
 

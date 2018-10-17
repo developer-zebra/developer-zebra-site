@@ -277,7 +277,7 @@ Now supports for the following devices running Android 8.1 Oreo.
 ABOVE NOTE REPLICATED ON SETTINGS PAGE 
 -->
 
-* **Applies to EHS 2.8 and older only**: To enable Secure Mode in EHS, manual file-push is no longer supported in Android N for installing a device root certificate. To deploy cert files to the device, use Certificate Manager through [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android). Learn more [about Secure Mode](../features/#securemode). 
+* **Applies to EHS 2.8 and older only**: To enable Secure Mode in EHS, manual file-push is no longer supported in Android N for installing a device root certificate. To deploy cert files to the device, use Certificate Manager through [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android). 
 
  -----
 

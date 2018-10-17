@@ -26,12 +26,11 @@ The first time it's installed, EHS presents the admin with this simple choice:
 
 Selecting "Always" locks EHS in as the default home app and **locks users out of the following** device features by default:
 
-* Airplane mode
 * USB debugging
 * Access to the file system
-* Keyguard (for unlocking the screen)
 * Keyguard-screen camera and search functions
-* Full access to the System Settings panel  
+* Full access to the System Settings panel
+* Recent apps button
 
 Administrators can grant or restrict access to individual features or hide the settings panel entirely. 
 

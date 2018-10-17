@@ -148,14 +148,13 @@ The EHS config file is broken into five sections:
     <?xml version="1.0" encoding="utf-8"?>
     <config>
         <kiosk>
-            <application label="Calculator" package="com.android.calculator2" activity=""/>
+            <application label="DWDemo" package="com.symbol.datawedge" activity="com.symbol.datawedge.DWDemoActivity"/>
         </kiosk>
         <applications>      
-            <application label="Calculator" package="com.android.calculator2" activity="com.android.calculator2.Calculator"/>
             <application label="DWDemo" package="com.symbol.datawedge" activity="com.symbol.datawedge.DWDemoActivity"/>     
         </applications>
         <tools>
-            <application label="Calculator" package="com.android.calculator2" activity=""/>     
+            <application label="DWDemo" package="com.symbol.datawedge" activity="com.symbol.datawedge.DWDemoActivity"/>     
         </tools>
         <passwords>
             <admin></admin>

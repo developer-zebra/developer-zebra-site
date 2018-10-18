@@ -617,7 +617,7 @@ Specifies the color of the icon label text of applications displayed in User Mod
 ### Orientation
 Allows the screen orientation to be fixed in landscape or portrait mode. Omitting or leaving this setting blank (default) allows Android system settings to control screen orientation.  
 
-**On devices running Android L and higher**: screen orientation can be changed through the Quick Settings panel only when EHS is set to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
+**On devices running Android M and higher**: screen orientation can be changed through the Quick Settings panel only when EHS is set to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 
 <img alt="" style="height:350px" src="orientation.png"/>
@@ -744,7 +744,7 @@ EHS can be made to run in full-screen mode by setting the value of this tag to 1
 ------
 
 ### Kiosk Mode Enabled
-Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS start-up and prevents use of BACK and HOME keys to exit the app. Disabled by default. See also: [Auto-Launch](#autolaunch). **On Android L devices: Kiosk Mode should not be used with Screen Pinning, a feature in Android L that provides similar functionality**.
+Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS start-up and prevents use of BACK and HOME keys to exit the app. Disabled by default. See also: [Auto-Launch](#autolaunch). <!-- 10/18/18- removed L ref. per eng. **On Android L devices: Kiosk Mode should not be used with Screen Pinning, a feature in Android L that provides similar functionality**. -->
 
 
 > Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to 0 if USB Debugging is enabled. Otherwise a factory reset is required. 
@@ -765,49 +765,8 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 
 ------
 
-<!--  5/2/18- dropped from EHS 2.8
-### Disable Status Bar Settings
-Controls whether the Settings icon is displayed in the Android Status Bar, and therefore whether the Settings panel is accessible by users. <b>Not supported on all devices</b>. A setting of 0 in this tag will enable the Status Bar Settings icon. 
-
-**On Android L devices**: A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (which UI Manager calls the Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system. **This will override any EHS setting for controlling the Status Bar Settings icon**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain.
-
-<img alt="" style="height:350px" src="disable_settings_icon.png"/>
-
-> Note: Changes to this setting will cause an automatic device reboot, a requirement for changes to take effect. 
-
-<b>Possible values</b>:
-
-* <b>1 (default)</b>
-* 0
-
-#### Example
-
-    <disable_status_bar_settings_icon>1</disable_status_bar_settings_icon>
-    
-5/2/18- dropped from EHS 2.8
-
-### Disable Status Bar Pull-down
-Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status Bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status Bar Pull-down is enabled. To disable, enter a value of 1. 
-
-**Note: The Status Bar Pull-down cannot be controlled through EHS on devices running Android L, M or N** (the feature appears "grayed out" in the Admin-Mode Preferences panel in those devices). To contol the Status Bar Pull-down (also known as the "Notification Pulldown"), use the [UI Manager](/mx/uimgr) through Zebra EMDK or StageNow tools.
-
-<img alt="" style="height:350px" src="disable_status_bar.png"/>
-
-<b>Possible values</b>:
-
-* 1
-* <b>0 (default)</b>
-
-#### Example
-
-    <disable_statusbar_pulldown>0</disable_statusbar_pulldown>
-
--->
-
-------
-
 ### Install Shortcuts
-Controls whether shortcuts can be added to local or remote apps through Android Intents. Disabled by default. 
+Controls whether shortcuts can be added to local or remote apps through Android Intents. Disabled by default. **Supported on Marshmallow and Nougat only**. On Oreo devices, see Pinned Shortcuts. 
 
 <img alt="" style="height:350px" src="install_shortcuts.png"/>
 
@@ -819,23 +778,6 @@ Controls whether shortcuts can be added to local or remote apps through Android 
 #### Example
 
     <install_shortcuts>0</install_shortcuts>
-
-
-<!-- 5/2/18- dropped from EHS 2.8
-
-### Exit Instead of Reboot
-Controls whether EHS will trigger an automatic device reboot when a setting that requires a reboot is changed. Permits Mobile Device Management (MDM) systems to maintain device control after making such changes. <b>Note: The setting in this tag is overridden if the [&lt;reboot_on_install_enabled&gt;](#rebootoninstallenabled) tag has a value of 1</b>. 
-
-<b>Possible values</b>:
-
-* 1
-* <b>0 (default)</b>
-
-#### Example
-
-    <exit_instead_of_reboot>0</exit_instead_of_reboot>
-    
--->
 
 ------
 
@@ -856,27 +798,18 @@ Controls whether the device will automatically reboot when EHS is launched for t
 ------
 
 ### Airplane Option Disabled
-Controls whether the device can be put into "airplane mode" from the Power menu or Quick Settings bar. Depending on the device, airplane mode disables Bluetooth, cellular, Wi-Fi and/or other wireless radios and features. EHS blocks airplane mode by default or if this tag is missing or left unspecified. Enter a value of 0 to permit the device to enter airplane mode. (Access to airplane mode from the Power menu is not available on some MC18, MC40 and MC92 devices running Android 4.4 KitKat. 
 
-**Note: The Airplane Option Disabled feature cannot be controlled through EHS on devices running Android M or N, nor on some devices running Android L**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
+**This feature is obsolete, and has been removed from EHS 3.0 and higher**. 
 
-<img alt="" style="height:350px" src="airplane_disable.png"/>
+Use [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
 
-<b>Possible values</b>:
-
-* <b>1 (default)</b>
-* 0 
-
-#### Example
-
-    <airplane_option_disabled>1</airplane_option_disabled>
-    
 ------
 
 ### Bypass Keyguard
-This feature is disabled in EHS 3.0 and higher. 
 
-Use the [DevAdmin Manager in StageNow](/stagenow/latest/csp/devadmin/#screen-lock-type) or [EMDK](/emdk-for-android/latest/mx/devadmin/) to configure this setting. 
+**This feature is obsolete, and has been removed from EHS 3.0 and higher**. 
+
+Use [DevAdmin](/mx/devadmin) through Zebra EMDK or StageNow tools.  
 
 ------
 
@@ -1078,7 +1011,7 @@ Controls whether full or limited settings are available when the device is in Us
 >This setting persists after EHS is removed.
 
 <img alt="" style="height:450px" src="2-7_recent_apps_button.png"/>
-_Recent apps button cannot be disabled on devices running Android L or M (shown)_.
+_Recent apps button cannot be disabled on devices running Android M (shown)_.
 <br>
 
 <b>Possible values</b>:

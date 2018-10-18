@@ -36,7 +36,7 @@ Administrators can grant or restrict access to individual features or hide the s
 
 > **Note: After selecting "Always," some devices require a 10-second pause before restarting to ensure the change remains persistent**. 
 
-Ready to get started? [Download Enterprise Home Screen 2.8](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
+Ready to get started? [Download Enterprise Home Screen 3.0](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
 
 -----
 
@@ -268,42 +268,8 @@ Now supports these devices **running Android 8.1 Oreo**
 ### End of Support
 
 * **Support for Android 5.x Lollipop dropped**. Use [EHS 2.8](/ehs/2-8/guide/about) if Lollipop support is required. 
-* **Bypass keyguard feature is dropped -** Use the [DevAdmin Manager in StageNow](/stagenow/latest/csp/devadmin/#screen-lock-type) or [EMDK](/emdk-for-android/latest/mx/devadmin/) to configure this setting. 
+* **Bypass Keyguard feature is dropped -** Use [DevAdmin](/mx/devadmin) through Zebra EMDK or StageNow tools to configure this setting. 
 * **Secure Mode feature is dropped -** Log files no longer designate "SECURED" or "UNSECURED" in log entries. 
-
-### New Features
-
-* **Simplified Chinese -** EHS has been approved to run on device operating systems localized for the Simplified Chinese language.
-
-* **Enhanced Device Identifier Options -** Information to uniquely identify a device&mdash;its serial number, MAC address, network host name, Bluetooth address, Bluetooth name or IMEI number&mdash;can be displayed as the title bar text of the EHS home screen. 
-
-* **Custom EHS icon no longer limited to home screen -** When a custom icon is used to replace the stock EHS icon, the icon can optionally be set to also display on other screens, including those for Battery Info, Wireless Info, Preferences and the Tools menu. 
-
-* **File browsing in Preferences panel -** When selecting a title-bar icon or wallpaper image through the Preferences panel, tap-navigation is now possible to locate the image file and specify its path. File location is no longer limited to `/enterprise/usr` folder.
-
-### Enhancements/Fixes
-
-* **Airplane mode enable/disable option is displayed** in the Preferences panel only on devices on which it is supported.
-
-* **Disabling access to the camera and/or search apps from the lock screen no longer disables them from the User-Mode screen** if camera and/or search usage are permitted on the device. This issue arose when rebooting from the lock screen, and has been fixed for TC20 and TC25 models as well as devices running KitKat, Lollipop, Marshmallow. See [Android Nougat Notes](#androidnougatnotes). 
-
-* **Password encryption has been enhanced** for the Admin login. See [important notes](../settings/#passwords). 
-
-* **A colored screen is displayed** while EHS is starting up. 
-
-* **Wallpaper and Title Bar Icon** features now support .bmp, .gif, .jpg, .png and .webp file formats and file location is no longer limited to `/enterprise/usr` folder.
-
-### Deprecations
-
-* Secure Mode remains supported but is no longer being advanced
-* The following features have been removed from EHS 2.8 and higher: 
- * Enable/disable status bar pull-down
- * Enable/disable status bar settings icon
- * Enable/disable "exit instead of reboot"
-
-**Notes**: 
-* The discontinued features listed above can be accessed using Zebra's [StageNow](/stagenow) administrative tools or [EMDK](/) developer tools.
-* A config file that contains settings for discontinued features generates an error in the EHS log file.
 
 -----
 

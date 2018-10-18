@@ -208,11 +208,14 @@ Specifies the app to run when the device is in [Kiosk Mode](../features), an opt
 
 ### Applications
 
-Specifies the applications and/or browser links to be displayed to users while EHS is in User Mode. An optional activity parameter permits an app activity to be invoked when the app starts up. <b>Some apps will not launch unless the app package _and_ an activity are specified</b>. 
+Specifies the applications and/or browser links to be displayed to users while EHS is in User Mode. An optional activity parameter permits an app activity to be invoked when the app starts up. <b>Some apps do not launch unless the app package _and_ an activity are specified</b>. 
 
 When specifying links, the package and activity parameters can be used to launch the URL with a specific app, such as Mozilla Mobile browser. If no activity is specified, EHS will open the link using the default browser.
 
-<b>Note</b>: Package names might vary from one Android version to another. 
+<b>Notes</b>:
+* Package names might vary from one Android version to another. 
+* **EHS 3.0 and higher supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
+
 
 ------
 
@@ -380,7 +383,7 @@ _The admin password <b><u>must</u></b> be entered and changed using the Admin To
 ### App Icon Size
 Permits the size of application icons to be set to Small, Medium, Large, Extra Large and Extra Extra Large . Icon size can be controlled through the `enterprisehomescreen.xml` file or through the device UI while in Admin or User Modes. 
 
-**Note: EHS 3.0 and higher supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
+**Note**: EHS 3.0 and higher supports VectorDrawable app icons, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
 
 **To change the icon size through the UI**:
 

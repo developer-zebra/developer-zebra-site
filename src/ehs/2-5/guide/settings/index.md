@@ -535,7 +535,7 @@ Enables one or more apps to be automatically launched after EHS starts up. Works
 
 #### Example
 
-    <service_auto_launch_enable>0</service_auto_launch_enable>
+    <auto_launch_enable>0</auto_launch_enable>
     
 
 ------

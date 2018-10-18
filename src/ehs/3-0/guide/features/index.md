@@ -71,33 +71,40 @@ The Privileged Settings feature automatically restricts certain device capabilit
 * Android Settings panel
 * Google Search app 
 
+Privileged Settings are enabled and disabled as a group.
+
 The Privileged Settings state on the device is indicated by a pop-up dialog when the user enters Admin Mode: 
-<img alt="" style="height:450px" src="Priviledged_03.png"/>
-_Admin Settings are restricted in Admin Mode, by default_.
+<img alt="" style="height:150px" src="Priviledged_03.png"/>
+_Admin Settings are restricted in Admin Mode by default_.
 <br>
 
 **To access Privileged Settings**: 
 
 1. Tap "OK" to dismiss the dialog. 
 2. **Go to Tools -> Privileged Settings for Admin**: 
-<img alt="" style="height:450px" src="Priviledged_05.png"/>
+<img alt="" style="height:150px" src="Priviledged_05.png"/>
 <br>
 3. The current state (disabled) is shown. <br> **Press "Enable" to activate all three features**: 
-<img alt="" style="height:450px" src="Priviledged_01.png"/>
+<img alt="" style="height:150px" src="Priviledged_01.png"/>
 <br>
 4. Features are enabled immediately. **Tap "OK" to dismiss** the dialog.
-<img alt="" style="height:450px" src="Priviledged_02.png"/>
+<img alt="" style="height:150px" src="Priviledged_02.png"/>
 <br>
 
+**To restore default settings to Admin Mode**: 
 
-All three Privileged Settings are enabled and disabled as a group.
+2. **Go to Tools -> Privileged Settings for Admin**: 
+<img alt="" style="height:150px" src="Priviledged_05.png"/>
+<br>
+3. The current state (enabled) is shown. <br> **Press "Restore" to disable all three features**: 
+<img alt="" style="height:150px" src="Priviledged_02.png"/>
+<br>
+4. Features are disabled immediately and a confirmation dialog appears.<br>**Tap "OK" to dismiss**.
+<img alt="" style="height:150px" src="Priviledged_03.png"/>
+<br>
 
 
 <!-- 
-
-<img alt="" style="height:450px" src="Priviledged_03.png"/>
-_All three Privileged Settings are enabled and disaled as a group_.
-<br>
 
 <img alt="" style="height:450px" src="Priviledged_04.png"/>
 _All three Privileged Settings are enabled and disabled as a group_.

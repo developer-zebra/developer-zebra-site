@@ -61,6 +61,51 @@ Kiosk Mode can be controlled from within an Android application using Android In
 
 <b>Security Note</b>: When using Kiosk Mode, be sure to disable "key remapping" and other possible methods of launching applications, which would thereby defeat Kiosk Mode safeguards. 
 
+-----
+
+## Privileged Settings
+
+The Privileged Settings feature automatically restricts certain device capabilities when the user enters Admin Mode, similar to the restrictions of User Mode. On a device with a new EHS installation, the following features are **disabled in Admin Mode by default**: 
+
+* USB Debugging (and file transfer)
+* Android Settings panel
+* Google Search app 
+
+The Privileged Settings state on the device is indicated by a pop-up dialog when the user enters Admin Mode: 
+<img alt="" style="height:450px" src="Priviledged_03.png"/>
+_Admin Settings are restricted in Admin Mode, by default_.
+<br>
+
+**To access Privileged Settings**: 
+
+1. Tap "OK" to dismiss the dialog. 
+2. **Go to Tools -> Privileged Settings for Admin**: 
+<img alt="" style="height:450px" src="Priviledged_05.png"/>
+<br>
+3. The current state (disabled) is shown. <br> **Press "Enable" to activate all three features**: 
+<img alt="" style="height:450px" src="Priviledged_01.png"/>
+<br>
+4. Features are enabled immediately. **Tap "OK" to dismiss** the dialog.
+<img alt="" style="height:450px" src="Priviledged_02.png"/>
+<br>
+
+
+All three Privileged Settings are enabled and disabled as a group.
+
+
+<!-- 
+
+<img alt="" style="height:450px" src="Priviledged_03.png"/>
+_All three Privileged Settings are enabled and disaled as a group_.
+<br>
+
+<img alt="" style="height:450px" src="Priviledged_04.png"/>
+_All three Privileged Settings are enabled and disabled as a group_.
+<br>
+
+
+
+ -->
 ------
 
 ## EHS Log
@@ -69,8 +114,8 @@ EHS records all major activities, failures and security events in the `/enterpri
 
 For more information about logging, see [Logging Preferences](../settings/#loggingdisabled). 
 
-<img alt="" style="height:450px" src="2-7_logging_disabled.png"/>
-_In EHS 2.7 and higher, logging can be disabled through the UI or config file._
+<img alt="" style="height:450px" src="logging_disabled.png"/>
+_In EHS 2.7 and higher, logging is disabled through the UI or config file._
 <br>
 
 **IMPORTANT**: Secure Mode is discontinued in EHS 3.0 and higher. 

@@ -168,7 +168,7 @@ These instructions apply to remote installation of EHS, an `enterprisehomescreen
 
 <tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_020xxx.apk</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_xxxxxx.apk</font></p>
 </td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen</font></p>
@@ -268,7 +268,7 @@ These instructions apply to remote uninstallation using an organization's own EM
 
 <tr bgcolor="#ccffcc" >
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_020xxx.apk</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_xxxxxx.apk</font></p>
 </td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen</font></p>

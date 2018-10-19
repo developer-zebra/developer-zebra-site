@@ -68,50 +68,42 @@ Kiosk Mode can be controlled from within an Android application using Android In
 On devices running Android 8.x Oreo, certain features once automatically enabled when entering Admin Mode must now be enabled manually. EHS refers to these as Privileged Settings, and they are:
 
 * USB Debugging (which enables file transfer)
-* Android Settings panel
-* Google Search app
+* The Android Settings panel
+* The Google Search app
 
-The Privileged Settings state on the device is indicated by a pop-up dialog when the user enters Admin Mode: 
+The Privileged Settings state on the device is indicated by a pop-up whenever the user enters Admin Mode: 
 <img alt="" style="height:150px" src="Priviledged_03.png"/>
-_Tap "OK" to dismiss the dialog_. 
+_Tap "OK" to dismiss_. 
 <br>
 
-Settings are enabled as a group through a UI control in Admin Mode and are disabled automatically when re-entering User Mode.
+All three Privileged Settings are enabled as a group through an Admin-mode UI control and are disabled automatically when re-entering User Mode.
 
 **To access Privileged Settings**: 
 
-2. While in Admin Mode, **go to Tools -> Privileged Settings for Admin**: 
-<img alt="" style="height:150px" src="Priviledged_05.png"/>
+1. While in Admin Mode, **go to Tools -> Privileged Settings for Admin**: 
+<img alt="" style="height:200px" src="Priviledged_05.png"/>
 <br>
-3. The current state (disabled) is shown. <br> **Press "Enable" to activate all three features**: 
-<img alt="" style="height:150px" src="Priviledged_01.png"/>
+2. The current state (disabled) is shown. <br> **Tap "Enable" to activate Privileged Settings**: 
+<img alt="" style="height:200px" src="Priviledged_01.png"/>
 <br>
-4. Features are enabled immediately. **Tap "OK" to dismiss** the dialog.
-<img alt="" style="height:150px" src="Priviledged_02.png"/>
+3. Privileged Settings are enabled immediately. **Tap "OK" to continue**.
+<img alt="" style="height:200px" src="Priviledged_04.png"/>
 <br>
 
-**To restore default settings to Admin Mode**: 
+-----
+
+**To disable Privileged Settings**: 
 
 2. **Go to Tools -> Privileged Settings for Admin**: 
-<img alt="" style="height:150px" src="Priviledged_05.png"/>
+<img alt="" style="height:200px" src="Priviledged_05.png"/>
 <br>
-3. The current state (enabled) is shown. <br> **Press "Restore" to disable all three features**: 
-<img alt="" style="height:150px" src="Priviledged_02.png"/>
+3. The current state (enabled) is shown. <br> **Tap "Restore" to disable all three features**: 
+<img alt="" style="height:200px" src="Priviledged_02.png"/>
 <br>
-4. Features are disabled immediately and a confirmation dialog appears.<br>**Tap "OK" to dismiss**.
-<img alt="" style="height:150px" src="Priviledged_03.png"/>
-<br>
-
-
-<!-- 
-
-<img alt="" style="height:450px" src="Priviledged_04.png"/>
-_All three Privileged Settings are enabled and disabled as a group_.
+4. Features are disabled immediately and a confirmation dialog appears.<br>**Tap "OK" to continue**.
+<img alt="" style="height:200px" src="Priviledged_03.png"/>
 <br>
 
-
-
- -->
 ------
 
 ## EHS Log
@@ -124,7 +116,7 @@ For more information about logging, see [Logging Preferences](../settings/#loggi
 _In EHS 2.7 and higher, logging is disabled through the UI or config file._
 <br>
 
-**IMPORTANT**: Secure Mode is discontinued in EHS 3.0 and higher. 
+**IMPORTANT**: Secure Mode is discontinued in EHS 3.0 and higher. Log files are no longer designated as "SECURED" or "UNSECURED" in log entries.  
 
 ------
 
@@ -136,8 +128,7 @@ This section covers important interactions between EHS and Android features that
 * Accessing an app from the Recent Apps list could represent a security risk; apps not cleared from the list can be activated with the BACK button, potentially exposing a non-EHS home screen.
 * On Android Nougat devices, **the Recent Apps button can be Enabled/Disabled**. It is disabled by default to prevent the use of multi-window mode. 
 * EHS does not add apps or activities to the Android Recent Apps list, but apps/activities launched from within EHS might. Such apps/activities could launch others that might appear on the Recent Apps list and pose a security risk.  
-* The Recent Apps list can be cleared on pre-Android L devices by rebooting the device. 
-* Android L devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party EMM system to clear the list. 
+* Some devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party EMM system to clear the list. 
 * To manually clear Recent Apps, bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears, then swipe away each app.
 
 ### EHS and MX Multi-user

@@ -65,23 +65,22 @@ Kiosk Mode can be controlled from within an Android application using Android In
 
 ## Privileged Settings
 
-The Privileged Settings feature automatically restricts certain device capabilities when the user enters Admin Mode, similar to the restrictions of User Mode. On a device with a new EHS installation, the following features are **disabled in Admin Mode by default**: 
+On devices running Android 8.x Oreo, certain features once automatically enabled when entering Admin Mode must now be enabled manually. EHS refers to these as Privileged Settings, and they are:
 
-* USB Debugging (and file transfer)
+* USB Debugging (which enables file transfer)
 * Android Settings panel
-* Google Search app 
-
-Privileged Settings are enabled and disabled as a group.
+* Google Search app
 
 The Privileged Settings state on the device is indicated by a pop-up dialog when the user enters Admin Mode: 
 <img alt="" style="height:150px" src="Priviledged_03.png"/>
-_Admin Settings are restricted in Admin Mode by default_.
+_Tap "OK" to dismiss the dialog_. 
 <br>
+
+Settings are enabled as a group through a UI control in Admin Mode and are disabled automatically when re-entering User Mode.
 
 **To access Privileged Settings**: 
 
-1. Tap "OK" to dismiss the dialog. 
-2. **Go to Tools -> Privileged Settings for Admin**: 
+2. While in Admin Mode, **go to Tools -> Privileged Settings for Admin**: 
 <img alt="" style="height:150px" src="Priviledged_05.png"/>
 <br>
 3. The current state (disabled) is shown. <br> **Press "Enable" to activate all three features**: 

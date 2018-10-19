@@ -166,6 +166,7 @@ The EHS config file is broken into five sections:
             <orientation></orientation>
             <auto_launch_enable>0</auto_launch_enable>
             <service_auto_launch_enable>0</service_auto_launch_enable>
+            <foreground_service_auto_launch_enable>1</service_auto_launch_enable>
             <wallpaper></wallpaper>
             <kiosk_mode_enabled>0</kiosk_mode_enabled>
             <install_shortcuts>0</install_shortcuts>
@@ -174,7 +175,8 @@ The EHS config file is broken into five sections:
             <usb_debugging_disabled>1</usb_debugging_disabled>
             <system_settings_restricted>1</system_settings_restricted>
         </preferences>
-    </config>
+        </config>
+
 
 -----
 
@@ -675,7 +677,7 @@ Enables one or more services to be automatically launched after EHS starts up. W
         <service_auto_launch_enable>1</service_auto_launch_enable>
     </preferences>
 
-------
+-----
 
 ### Wallpaper
 Allows a background image to be specified for display in User Mode. If left unspecified, the system's default image is displayed. **Supports .bmp, .gif, .jpg, .png and .webp file formats. Resolution support varies by device**. If a selected image fails to display, Zebra recommends scaling down the resolution or selecting a different image. 
@@ -1156,6 +1158,31 @@ _The EHS 2.4 showing Service auto launch enabled in the UI_.
 **Specify service action name only**:
 
     <service action="com.sample.androidserviceexample.MyService.downloadfile"/>
+
+------
+
+### Service Auto Launch Enable
+**Applies only to devices running Android 8.x Oreo**. Enables one or more foreground services to be automatically launched after EHS starts up. Works with optional &lt;foreground_service_auto_launch&gt; section. When enabled, apps specified in the &lt;foreground_service_auto_launch&gt; section are launched after a delay, if specified. The Foreground Service Auto-Launch feature can be enabled/disabled in the `enterprisehomescreen.xml` file or Admin-Mode UI (on Oreo devices); Services must be specified in the config file. See the [Optional Feature Tags section](#optionalfeaturetags) for details. Disabled by default. 
+
+<img alt="" style="height:350px" src="EHS_foreground_service_launch.png
+"/>
+
+<b>Possible values</b>:
+
+* 1
+* <b>0 (default)</b>
+
+#### Example
+
+    <preferences>   
+        <foreground_service_auto_launch_enable>1</service_auto_launch_enable>
+    </preferences>
+    //
+    // Set delay (optional):   
+    // 
+    <foreground_service_auto_launch>
+         <service delay="4000" package="com.sample.androidserviceexample"class="com.sample.androidserviceexample.MyService" action="downloadfile"/>
+    </foreground_service_auto_launch>
 
 ------
 

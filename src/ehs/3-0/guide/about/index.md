@@ -248,6 +248,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 ## New in EHS 3.0
 
 * **Support added for devices running Android 8.1 Oreo**.
+* Supports **[Pinned Shortcuts](../settings/#pinnedshortcuts)** feature of Oreo similar to traditional shortcuts.    
 * **Foreground services can now be auto-launched** in devices running Oreo. 
 * **VectorDrawable format supported** for app launcher icons. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources). 
 * **[Privileged Settings](../features/#privilegedsettings)** feature requires manual activation of certain settings when entering Admin Mode on a device. 

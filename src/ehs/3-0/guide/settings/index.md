@@ -174,6 +174,7 @@ The EHS config file is broken into five sections:
             <keyguard_search_disabled>1</keyguard_search_disabled>      
             <usb_debugging_disabled>1</usb_debugging_disabled>
             <system_settings_restricted>1</system_settings_restricted>
+            <pin_shortcuts>0</pin_shortcuts>
         </preferences>
         </config>
 
@@ -771,7 +772,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 ------
 
 ### Install Shortcuts
-Controls whether shortcuts can be added to local or remote apps through Android Intents. Disabled by default. **Supported on Marshmallow and Nougat only**. On Oreo devices, see Pinned Shortcuts. 
+**For Oreo devices, see [Pinned Shortcuts](#pinnedshortcuts)**. Controls whether shortcuts can be added to local or remote apps through Android Intents. Disabled by default. **Supported on Marshmallow and Nougat only**. 
 
 <img alt="" style="height:350px" src="install_shortcuts.png"/>
 
@@ -783,6 +784,24 @@ Controls whether shortcuts can be added to local or remote apps through Android 
 #### Example
 
     <install_shortcuts>0</install_shortcuts>
+
+------
+
+### Pinned Shortcuts
+**Supported on Oreo devices only**. Controls whether shortcuts can be added through Android Intents. Disabled by default.
+
+<img alt="" style="height:350px" src="EHS_pinned_shortcuts.png"/>
+
+<b>Possible values</b>:
+
+* 1 (allow pinned shortcuts)
+* <b>0 (default, block pinned shortcuts)</b> 
+
+#### Example
+
+    <preferences>
+        <pin_shortcuts>0</pin_shortcuts>
+    </preferences>
 
 ------
 
@@ -836,11 +855,6 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 * **Display of the camera app icon on the Admin home screen can be delayed** by as much as five seconds after unlocking the screen following a configuration change. 
 * **On some devices running Nougat (except TC20/TC25), disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
 
-<!-- 5/1/18- issue fixed, section removed per eng. 
-
-* Disabling access to the camera app from the lock screen also disables it from the User-Mode screen on some devices, even if the camera is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Camera Usage section below. 
- -->
-
 <img alt="" style="height:350px" src="camera_disable.png"/>
 
 <b>Possible values</b>:
@@ -851,49 +865,6 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 #### Example
 
     <keyguard_camera_disabled>1</keyguard_camera_disabled>
-
-<!-- 5/1/18- issue fixed, section removed per eng. 
-
-#### User-Mode Camera Usage
-
-
-On some devices, disabling access to the camera app from the lock screen also disables it from the User-Mode screen, even if camera usage is permitted on the device. This occurs if the device is rebooted from the lock screen; there are two options for preventing it. 
-
-##### Option 1: Allow access to camera app from lock screen
-If users are permitted to access the camera app from User Mode, some organizations also might permit access directly from the lock screen without having to unlock the device. For such cases, modify the `enterprisehomescreen.xml` file as below. 
-
-**To allow access to camera app from lock screen**: 
-
-    :::xml
-    // Allow camera access: 
-
-    <keyguard_camera_disabled>0</keyguard_camera_disabled>
-
-    // Display lock screen:
-    
-    <bypass_keyguard>0</bypass_keyguard>
-
------
-
-##### Option 2: Add camera app to 'enabled' list
-
-To permit access to the camera app only after the device has been unlocked, set the &lt;keyguard_camera_disabled&gt; value to "1" and add the package name of the camera app to the (optional) &lt;apps_enabled&gt; list in the `enterprisehomescreen.xml` file as below. **If no such tag exists in the file for this optional parameter, see** [Enable/Disable Apps](#enabledisableapps) **for help adding it**. 
-
-**To allow access to camera app <u>only after device is unlocked</u>**: 
-
-    :::xml
-    <keyguard_camera_disabled>1</keyguard_camera_disabled>
-    <bypass_keyguard>0</bypass_keyguard>
-    ...
-    <apps_enabled>
-    ...
-    <application package="camera.app.package.name"/> // i.e. "com.android.camera2"
-    ...
-    </apps_enabled>
-
-
-**Note: The package name of the camera app can vary by device, Android version or other factors**.
- -->
 
 ------
 
@@ -915,11 +886,6 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 * **If no search shortcut exists on the device lock screen**, use of this tag is not required.  
 * **On some devices running Nougat (except TC20/TC25), disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
 
-<!-- 5/1/18- issue fixed, section removed per eng. 
-**Note**: Disabling access to the search app from the lock screen also disables it from the User-Mode screen on some devices, even if search is explicitly allowed in User Mode. This occurs if the device is rebooted from the lock screen. There are two options for preventing this. See User-Mode Search Usage section below. 
-
- -->
-
 <img alt="" style="height:350px" src="search_disable.png"/>
 
 <b>Possible values</b>:
@@ -930,44 +896,6 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 #### Example
 
     <keyguard_search_disabled>1</keyguard_search_disabled>
-
-<!--  5/1/18- issue fixed, section removed per eng. 
-
-#### User-Mode Search Usage
-
-On some devices, disabling access to the search app from the lock screen also disables it from the User-Mode screen, even if search usage is permitted on the device. This occurs if the device is rebooted from the lock screen; there are two options for preventing it. 
-
-##### Option 1: Allow access to search app from lock screen
-If users are permitted to access the search app from User Mode, some organizations also might permit access directly from the lock screen without having to unlock the device. For such cases, modify the `enterprisehomescreen.xml` file as below. 
-
-**To allow access to search app from lock screen**: 
-
-    :::xml
-    // Allow search access: 
-
-    <keyguard_search_disabled>0</keyguard_search_disabled>
-
-    // Display lock screen:
-    
-    <bypass_keyguard>0</bypass_keyguard>
-
------
-
-##### Option 2: Add search app to 'enabled' list
-
-To permit access to the search app only after the device has been unlocked, set the &lt;keyguard_search_disabled&gt; value to "1" and add the package name of the search app to the (optional) &lt;apps_enabled&gt; list in the `enterprisehomescreen.xml` file as below. **If no such tag exists in the file for this optional parameter, see** [Enable/Disable Apps](#enabledisableapps) **for help adding it**. 
-
-**To allow access to search app <u>only after device is unlocked</u>**: 
-
-    :::xml
-    <keyguard_search_disabled>1</keyguard_search_disabled>
-    <bypass_keyguard>0</bypass_keyguard>
-    ...
-    <apps_enabled>
-        <application package="search.app.package.name"/> // i.e. "com.android.search"
-    </apps_enabled>
-    
- -->
 
 ------
 
@@ -1319,7 +1247,11 @@ Notes:
 ------
 
 ### Adding Apps/Shortcuts With Intents
-When shortcuts that link to local or remote applications are added using Android Intents, EHS will add a link tag to the config file with the attributes listed below. Disabled by default. Must be enabled using the [Install Shortcuts tag](#installshortcuts). </b>Note</b>: Package names might vary from one Android version to another. 
+
+#### Shortcuts on Marshmallow and Nougat Devices 
+**_For devices running Oreo, see the section that follows_**. 
+
+When shortcuts that link to local or remote applications are added using Android Intents, EHS adds a link tag to the config file with the attributes listed below. Disabled by default. Must be enabled using the [Install Shortcuts tag](#installshortcuts). </b>Note</b>: Package names might vary from one Android version to another. 
 
 #### Label
 Represents the shortcut name; equivalent to the `Intent.EXTRA_SHORTCUT_NAME` value. 
@@ -1334,12 +1266,13 @@ Specifies the the path of the icon file stored in the device. If the extra data 
 Specifies the package name to retrieve the icon later. If the extra data `Intent.EXTRA_SHORTCUT_ICON_RESOURCE` is available in the received broadcast intent, the icon is generated at runtime using the package name (and there is therefore no need to store the icon image in the device).
 
 #### Example 
-A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver would be represented by the following link node: 
+A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver is represented by the following link node: 
 
     <link label="Microsoft Excel" icon="/enterprise/usr/ehs_data/images/MicrosoftExcel.png" uri="citrixreceiver://launchapp?pid=1&inname=citrixcloud%3AMicrosoft+Excel+MS&fname=Microsoft+Excel&shortcutCookie=681181718&mobile=0&unikey=0#Intent;action=android.intent.action.VIEW;launchFlags=0x14000000;end" />
 
 <b>EHS Notes</b>:
 
+* **This feature is not supported on devices running Android 8.x Oreo** (see Oreo section below). 
 * When Install Shortcuts is enabled, EHS listens for the Android broadcast intent `com.android.launcher.action.INSTALL_SHORTCUT`.
 * When an intent is received, EHS creates the shortcut on the user screen using data carried within the intent. 
 * The data also is saved in the &lt;Applications&gt; section of the `enterprisehomescreen.xml` file as indicated above. 
@@ -1353,6 +1286,57 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 * The Android Launcher monitors the same broadcast intent as EHS, and therefore also receives shortcuts sent to EHS. 
 * If the Android home screen space limit is reached, Android Launcher displays an error message in EHS. 
 * To eliminate the error message, temporarily [enable the Android Launcher](../setup#changethedefaultlauncher) and delete the shortcuts. 
+
+-----
+
+#### Shortcuts on Oreo Devices 
+_For Marshmallow and Nougat Devices, see section above_.
+
+
+EHS has historically offered the ability to add shortcuts programmatically using the `INSTALL_SHORTCUT` broadcast intent. However, Android 8.x Oreo drops support for this intent, replacing it with the `requestPinShortcut` method of the `ShortcutManager` class. 
+
+To identify a pinned shortcut, EHS uses two attributes in a link tag; 
+
+The `label` is the short name for of the pinned shortcut returned by the `ShortcutInfo.getShortLabel()` method.
+
+The `pinned_activity` is the activity the shortcut links to, and is returned by the `ShortcutInfo.getPackage()` method.
+
+Refer to the sample code below to see this the context of the `enterprisehomescreen.xml` file. 
+
+
+Notes:
+
+* **When shortcuts that link to local or remote applications are added using Android Intents**, EHS adds a link tag to the config file as in the sample below:
+
+        <applications>
+            <link label="Yahoo" pinned_activity="org.mozilla.firefox" /> 
+        </applications> 
+* **The ability to write to the config file in this way is disabled by default**. Before adding shortcuts programmatically, this feature must be enabled using the [Pinned Shortcuts tag](#pinnedshortcuts).  
+* **Mass deployment is not supported** for pinned shortcuts. Each pinned shortcut must be added manually by an administrator. As with all versions of EHS, shortcuts cannot be cloned from one device to another.
+* **Duplicate shortcuts are permitted**. As with all versions of EHS, multiple shortcuts can exist on a device with precisely the same attributes. `Honey badger don't care`.
+* **The appearance of pinned shortcut icons differs from those of the Android Launcher**. Android stock launcher has a progressive web icon which shows from which app the shortcut was pinned from. It’s an enhancement done by them. But EHS displays the pure image that it gets from the standard android classes that handle pinned shortcuts.
+
+* **The only way to remove any added shortcuts** from User’s home screen is by manually deleting them from the configuration XML file. This was the same behavior with the legacy intent shortcuts as well.
+
+* **Currently this feature does not support multi users**. Only the active user who added the pinned shortcuts will have access. Others will see the icons on User screen but will not be able to launch them. This limitation will be considered under EHS MU support effort in the future. note: Even with Android stock launcher, we cannot have the same pinned shortcut for other users. only active user can see it pinned by him
+
+#### Sample Code 
+
+        <applications> 
+            <application label="" package="" activity="" />Rapid Deployment com.motorola.mspcom.motorola.msp.client.RDMenu <application label="" package="" activity="" />Calculatorcom.android.calculator2 <link label="" url="" package="" activity="ET1 Videohttp://www.youtube.com/watch?v=ERlIzLt-h6sorg.mozilla.firefoxorg.mozilla.firefox.App" />
+
+        <!--   intent shortcut for web app --> 
+            <link label="" icon="" uri="Microsoft Excel/enterprise/usr/ehs_data/images/MicrosoftExcel.pngcitrixreceiver://launchapp?pid=1&inname=citrixcloud%3AMicrosoft+Excel+MS&fname=Microsoft+Excel&shortcutCookie=681181718&mobile=0&unikey=0#Intent;action=android.i" />ntent.action.VIEW;launchFlags=0x14000000;end"/> 
+
+        <!--   intent shortcut for local app --> 
+            <link label="" icon_ref="" uri="DataWedgecom.motorolasolutions.emdk.datawedge:drawable/datawedge#Intent;action=android.intent.action.MAIN;component=com.motorolasolutions.emdk.datawedge/.dwProfiles;end"/> 
+
+        <!--  new pinned shortcut for yahoo site -->
+            <link label="Yahoo" pinned_activity="com.android.chrome"/>  <link label="Wikipedia" pinned_activity="com.android.chrome"/>  
+            <link label="" pinned_activity="com.android.chrome"/>ikman.lk  <link label="App Secondary Activity" pinned_activity="com.example.test.shortcutpinningapp"/>
+            <link label="Yahoo Web site" pinned_activity="com.example.test.shortcutpinningapp"/> 
+
+        </applications>
 
 ------
 
@@ -1441,7 +1425,7 @@ For a Kiosk app:
 
 ------
 
-See the [Special Features Guide](../features) for information about Kiosk Mode, device logging and other special EHS features and behaviors. 
+See the [Special Features Guide](../features) for information about Kiosk Mode, Privileged Settings and other special EHS features and behaviors. 
 
 
 

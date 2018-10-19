@@ -1161,11 +1161,14 @@ _The EHS 2.4 showing Service auto launch enabled in the UI_.
 
 ------
 
-### Service Auto Launch Enable
-**Applies only to devices running Android 8.x Oreo**. Enables one or more foreground services to be automatically launched after EHS starts up. Works with optional &lt;foreground_service_auto_launch&gt; section. When enabled, apps specified in the &lt;foreground_service_auto_launch&gt; section are launched after a delay, if specified. The Foreground Service Auto-Launch feature can be enabled/disabled in the `enterprisehomescreen.xml` file or Admin-Mode UI (on Oreo devices); Services must be specified in the config file. See the [Optional Feature Tags section](#optionalfeaturetags) for details. Disabled by default. 
+### Foreground Service Auto Launch
+Enables one or more foreground services to be automatically launched after EHS starts up. Works with optional &lt;foreground_service_auto_launch&gt; section. When enabled, apps specified in the &lt;foreground_service_auto_launch&gt; section are launched after a delay, if specified. The Foreground Service Auto-Launch feature can be enabled/disabled in the `enterprisehomescreen.xml` file or Admin-Mode UI (on Oreo devices); Services must be specified in the config file. **Disabled by default**. 
 
-<img alt="" style="height:350px" src="EHS_foreground_service_launch.png
-"/>
+**Note: This feature appears in the UI only on devices running Android 8.x Oreo**. 
+
+<img alt="" style="height:350px" src="EHS_foreground_service_launch.png"/>
+_Appears in UI only on Oreo devices_.
+<br>
 
 <b>Possible values</b>:
 

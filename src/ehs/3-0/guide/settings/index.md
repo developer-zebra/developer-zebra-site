@@ -1246,9 +1246,9 @@ Notes:
 
 ------
 
-### Adding Apps/Shortcuts With Intents
+## Shortcuts and Intents
 
-#### Shortcuts on Marshmallow and Nougat Devices 
+### Shortcuts on Marshmallow and Nougat Devices 
 **_For devices running Oreo, see the section that follows_**. 
 
 When shortcuts that link to local or remote applications are added using Android Intents, EHS adds a link tag to the config file with the attributes listed below. Disabled by default. Must be enabled using the [Install Shortcuts tag](#installshortcuts). </b>Note</b>: Package names might vary from one Android version to another. 
@@ -1289,7 +1289,7 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 
 -----
 
-#### Shortcuts on Oreo Devices 
+### Shortcuts on Oreo Devices 
 _For Marshmallow and Nougat Devices, see section above_.
 
 
@@ -1301,7 +1301,7 @@ The `label` is the short name for of the pinned shortcut returned by the `Shortc
 
 The `pinned_activity` is the activity the shortcut links to, and is returned by the `ShortcutInfo.getPackage()` method.
 
-Refer to the sample code below to see this the context of the `enterprisehomescreen.xml` file. 
+Refer to the examples below to see this the context of the `enterprisehomescreen.xml` file. 
 
 
 Notes:
@@ -1320,7 +1320,7 @@ Notes:
 
 * **Currently this feature does not support multi users**. Only the active user who added the pinned shortcuts will have access. Others will see the icons on User screen but will not be able to launch them. This limitation will be considered under EHS MU support effort in the future. note: Even with Android stock launcher, we cannot have the same pinned shortcut for other users. only active user can see it pinned by him
 
-#### Sample Code 
+### Examples 
 
         <applications> 
             <application label="" package="" activity="" />Rapid Deployment com.motorola.mspcom.motorola.msp.client.RDMenu <application label="" package="" activity="" />Calculatorcom.android.calculator2 <link label="" url="" package="" activity="ET1 Videohttp://www.youtube.com/watch?v=ERlIzLt-h6sorg.mozilla.firefoxorg.mozilla.firefox.App" />
@@ -1340,7 +1340,7 @@ Notes:
 
 ------
 
-### App Launch Flags 
+## App Launch Flags 
 EHS supports the option of specifying one or more Android Intent flags when an application is launched, overriding any Intent flag(s) statically defined in the Android Manifest. This can be used to allow an app to launch not with its main activity, for example, but with its most recent one, retaining acquired data that would otherwise have been lost after an inadvertent press of the HOME key immediately after a scan. 
 
 App Launch Flags can be assigned only to Kiosk apps or those designated as part of a group. The flag will apply to all apps in groups of the following types: 
@@ -1374,7 +1374,7 @@ App Launch Flags can be assigned only to Kiosk apps or those designated as part 
 
 Refer to the [Android Intents docs](https://developer.android.com/reference/android/content/Intent.html) for information about the intended behavior of these flags. 
 
-####Examples
+### Examples
 
 <!--At the individual application level (applies to a single app in the &lt;applications&gt; node): 
 

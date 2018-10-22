@@ -37,7 +37,10 @@ This version of Enterprise Keyboard includes the following languages:
 
 -----
 
-## New in v1.8
+## New in v1.9
+
+OLD OLD
+
 
 > **NOTICE**: Enterprise Keyboard comes preinstalled on Zebra devices running Android 7.x Nougat and higher. For supported pre-Nougat devices, EKB is added as a LifeGuard patch. See [download page](../../download) for more information. 
 
@@ -111,6 +114,28 @@ _Stock Android keyboard_:
 -----
 
 ## Version History
+
+### Added in v1.8
+
+
+> **NOTICE**: Enterprise Keyboard comes preinstalled on Zebra devices running Android 7.x Nougat and higher. For supported pre-Nougat devices, EKB is added as a LifeGuard patch. See [download page](../../download) for more information. 
+
+#### Supported Devices
+EKB 1.8 adds support for (and comes preinstalled on) the following devices: 
+
+* **WT6000 N**
+
+#### Added Features 
+
+* The **Symbol Key P1 can be remapped** to an ASCII or Unicode character or to an EMOJI symbol.
+* The **Text Correction suggestion bar remains visible** whenever [voice input key](../settings/#preferences) is enabled, even if no corrections are suggested.
+* If voice input is disabled, correction suggestions (if enabled) appear only when typing.
+
+#### Discontinued Features
+
+* **Personalized suggestion and Next Word suggestion** features have been removed <br>([Text Correction suggestion](../settings/#textcorrection) and other Personal Dictionary features are unaffected). 
+
+-----
 
 ### Added in v1.7
 

@@ -7,12 +7,12 @@ content-items:
     level: 4
     title: Setup Guide
     text: A step-by-step guide to installation and proper configuration of Enterprise Keyboard on a device
-    url: /enterprise-keyboard/1-8/guide/setup
+    url: /enterprise-keyboard/1-9/guide/setup
   - type: section
     level: 4
     title: Customize
     text: How to tailor Enterprise Keyboard with custom key mappings and industry-specific content and features
-    url: /enterprise-keyboard/1-8/guide/settings
+    url: /enterprise-keyboard/1-9/guide/settings
 product: Enterprise Keyboard
 productversion: '1.9'
 ---

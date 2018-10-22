@@ -8,7 +8,9 @@ productversion: '1.0'
 
 PowerPrecision Console (PPC) server runs on a Windows-based server or desktop. The PPC client runs on supported Zebra devices. This section provides instructions for install and setup on both components.
 
-> See [System Requirements](../about/#systemrequirements)
+See [System Requirements](../about/#systemrequirements).
+
+> Important: An SSL Certificate is required from a third party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non-third party CA will not work.
 
 ##Server Install & Setup
 After server installation, further network setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:

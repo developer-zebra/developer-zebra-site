@@ -790,7 +790,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 ------
 
 ### Install Shortcuts
-**For Oreo devices, see [Pinned Shortcuts](#pinnedshortcuts)**. Controls whether shortcuts can be added to local or remote apps through Android Intents. Disabled by default. **Supported on Marshmallow and Nougat only**. 
+**For Oreo devices, see [Pinned Shortcuts](#pinnedshortcuts)**. Controls whether shortcuts to local or remote apps can be added through Android Intents. Disabled by default. **Supported on Marshmallow and Nougat only**. 
 
 <img alt="" style="height:350px" src="install_shortcuts.png"/>
 
@@ -806,7 +806,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 ------
 
 ### Pinned Shortcuts
-**Supported on Oreo devices only**. Controls whether shortcuts can be added through Android Intents. Disabled by default.
+**Supported on Oreo devices only**. Controls whether shortcuts to local or remote apps can be added programmatically. Disabled by default. 
 
 <img alt="" style="height:350px" src="EHS_pinned_shortcuts.png"/>
 
@@ -1266,7 +1266,7 @@ Notes:
 
 ## Shortcuts and Intents
 
-### Shortcuts on Marshmallow and Nougat Devices 
+### On Marshmallow and Nougat 
 **_For devices running Oreo, see the section that follows_**. 
 
 When shortcuts that link to local or remote applications are added using Android Intents, EHS adds a link tag to the config file with the attributes listed below. Disabled by default. Must be enabled using the [Install Shortcuts tag](#installshortcuts). </b>Note</b>: Package names might vary from one Android version to another. 
@@ -1307,11 +1307,10 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 
 -----
 
-### Shortcuts on Oreo Devices 
+### On Oreo 
 _For Marshmallow and Nougat Devices, see section above_.
 
-
-EHS has historically offered the ability to add shortcuts programmatically using the `INSTALL_SHORTCUT` broadcast intent. However, Android 8.x Oreo drops support for this intent, replacing it with the `requestPinShortcut` method of the `ShortcutManager` class. 
+EHS has historically offered the ability to add shortcuts programmatically using the `INSTALL_SHORTCUT` broadcast intent. Android 8.x Oreo replaces this intent with the `requestPinShortcut()` method of the `ShortcutManager` class. This section explains how to use this method to add shortcuts programmatically on an Oreo device. 
 
 To identify a pinned shortcut, EHS uses two attributes in a link tag; 
 
@@ -1319,43 +1318,46 @@ The `label` is the short name for of the pinned shortcut returned by the `Shortc
 
 The `pinned_activity` is the activity the shortcut links to, and is returned by the `ShortcutInfo.getPackage()` method.
 
+<!-- 10/22/18- removed, per eng. 
 Refer to the examples below to see this the context of the `enterprisehomescreen.xml` file. 
 
-
+ -->
 Notes:
 
-* **When shortcuts that link to local or remote applications are added using Android Intents**, EHS adds a link tag to the config file as in the sample below:
+* **When shortcuts that link to local apps or websites are added using the method described above**, EHS adds a link tag to the config file as in the sample below:
 
         <applications>
             <link label="Yahoo" pinned_activity="org.mozilla.firefox" /> 
         </applications> 
-* **The ability to write to the config file in this way is disabled by default**. Before adding shortcuts programmatically, this feature must be enabled using the [Pinned Shortcuts tag](#pinnedshortcuts).  
+* **The ability to pin shortcuts to an EHS User-mode screen and write pinned shortcut information to the config file in this way is disabled by default**. Before adding shortcuts programmatically, this feature must be enabled using the [Pinned Shortcuts tag](#pinnedshortcuts).  
 * **Mass deployment is not supported** for pinned shortcuts. Each pinned shortcut must be added manually by an administrator. As with all versions of EHS, shortcuts cannot be cloned from one device to another.
-* **Duplicate shortcuts are permitted**. As with all versions of EHS, multiple shortcuts can exist on a device with precisely the same attributes. `Honey badger don't care`.
-* **The appearance of pinned shortcut icons differs from those of the Android Launcher**. Android stock launcher has a progressive web icon which shows from which app the shortcut was pinned from. It’s an enhancement done by them. But EHS displays the pure image that it gets from the standard android classes that handle pinned shortcuts.
+* **Duplicate shortcuts are permitted**. As with all versions of EHS, multiple shortcuts can exist on a device with precisely the same attributes.
+* **To remove added shortcuts**, manually delete them from the configuration XML file, as with shortcut handling of prior EHS versions.
+* **On multi-user devices, only the user adding the pinned shortcuts has access**. Other users see the User-screen shortcut icons but are unable to launch them. This shortcut behavior is consistent with all EHS versions. 
 
-* **The only way to remove any added shortcuts** from User’s home screen is by manually deleting them from the configuration XML file. This was the same behavior with the legacy intent shortcuts as well.
+<!-- 10/22/18- removed, per eng. 
 
-* **Currently this feature does not support multi users**. Only the active user who added the pinned shortcuts will have access. Others will see the icons on User screen but will not be able to launch them. This limitation will be considered under EHS MU support effort in the future. note: Even with Android stock launcher, we cannot have the same pinned shortcut for other users. only active user can see it pinned by him
+* **The appearance of pinned shortcut icons differs from those of the Android Launcher**. The stock Android launcher uses a progressive web icon that shows from which app the shortcut was pinned. EHS displays the image obtained from the standard Android classes that handle pinned shortcuts.
 
 ### Examples 
 
         <applications> 
             <application label="" package="" activity="" />Rapid Deployment com.motorola.mspcom.motorola.msp.client.RDMenu <application label="" package="" activity="" />Calculatorcom.android.calculator2 <link label="" url="" package="" activity="ET1 Videohttp://www.youtube.com/watch?v=ERlIzLt-h6sorg.mozilla.firefoxorg.mozilla.firefox.App" />
 
-        <!--   intent shortcut for web app --> 
+        //   intent shortcut for web app  
             <link label="" icon="" uri="Microsoft Excel/enterprise/usr/ehs_data/images/MicrosoftExcel.pngcitrixreceiver://launchapp?pid=1&inname=citrixcloud%3AMicrosoft+Excel+MS&fname=Microsoft+Excel&shortcutCookie=681181718&mobile=0&unikey=0#Intent;action=android.i" />ntent.action.VIEW;launchFlags=0x14000000;end"/> 
 
-        <!--   intent shortcut for local app --> 
+        //   intent shortcut for local app  
             <link label="" icon_ref="" uri="DataWedgecom.motorolasolutions.emdk.datawedge:drawable/datawedge#Intent;action=android.intent.action.MAIN;component=com.motorolasolutions.emdk.datawedge/.dwProfiles;end"/> 
 
-        <!--  new pinned shortcut for yahoo site -->
+        //  new pinned shortcut for yahoo site 
             <link label="Yahoo" pinned_activity="com.android.chrome"/>  <link label="Wikipedia" pinned_activity="com.android.chrome"/>  
             <link label="" pinned_activity="com.android.chrome"/>ikman.lk  <link label="App Secondary Activity" pinned_activity="com.example.test.shortcutpinningapp"/>
             <link label="Yahoo Web site" pinned_activity="com.example.test.shortcutpinningapp"/> 
 
         </applications>
 
+-->
 ------
 
 ## App Launch Flags 

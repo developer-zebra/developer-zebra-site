@@ -67,11 +67,11 @@ Kiosk Mode can be controlled from within an Android application using Android In
 
 In EHS 3.0 (and higher), certain features once automatically enabled when entering Admin Mode must now be enabled manually. EHS refers to these as Privileged Settings:
 
-* USB Debugging
+* USB debugging
 * The Android Settings panel app
 * The Google Search app
 
-Activation of USB Debugging enables the Android Debug Bridge (adb) and its ability to transfer files to and from a device. The Privileged Settings state on the device is indicated by a pop-up whenever the user enters Admin Mode: 
+Most notably, activation of USB Debugging enables the Android Debug Bridge (adb) and its ability to transfer files to and from a device. The Privileged Settings state on the device is indicated by a pop-up whenever the user enters Admin Mode: 
 <img alt="" style="height:150px" src="Priviledged_03.png"/>
 _Tap "OK" to dismiss_. 
 <br>

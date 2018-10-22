@@ -39,25 +39,10 @@ This version of Enterprise Keyboard includes the following languages:
 
 ## New in v1.9
 
-OLD OLD
+### Behavior Corrections
 
-
-> **NOTICE**: Enterprise Keyboard comes preinstalled on Zebra devices running Android 7.x Nougat and higher. For supported pre-Nougat devices, EKB is added as a LifeGuard patch. See [download page](../../download) for more information. 
-
-### Supported Devices
-EKB 1.8 adds support for (and comes preinstalled on) the following devices: 
-
-* **WT6000 N**
-
-### Added Features 
-
-* The **Symbol Key P1 can be remapped** to an ASCII or Unicode character or to an EMOJI symbol.
-* The **Text Correction suggestion bar remains visible** whenever [voice input key](../settings/#preferences) is enabled, even if no corrections are suggested.
-* If voice input is disabled, correction suggestions (if enabled) appear only when typing.
-
-#### Discontinued Features
-
-* **Personalized suggestion and Next Word suggestion** features have been removed <br>([Text Correction suggestion](../settings/#textcorrection) and other Personal Dictionary features are unaffected). 
+* Auto-capitalization now works properly if navigating away from the alpha keyboard prior to typing.
+* Keyboard pop-ups no longer disappear when swiping from alpha to symbol layouts and back. 
 
 -----
 
@@ -117,8 +102,7 @@ _Stock Android keyboard_:
 
 ### Added in v1.8
 
-
-> **NOTICE**: Enterprise Keyboard comes preinstalled on Zebra devices running Android 7.x Nougat and higher. For supported pre-Nougat devices, EKB is added as a LifeGuard patch. See [download page](../../download) for more information. 
+**NOTICE**: Enterprise Keyboard comes preinstalled on Zebra devices running Android 7.x Nougat and higher. For supported pre-Nougat devices, EKB is added as a LifeGuard patch. See [download page](../../download) for more information. 
 
 #### Supported Devices
 EKB 1.8 adds support for (and comes preinstalled on) the following devices: 
@@ -239,6 +223,6 @@ See the [EKB 1.3 download page](../../../1-3/download) for a complete list of su
 
 ## How to Get It
 
-Enterprise Keyboard 1.7 comes pre-installed on [supported Zebra devices](#supporteddevices). 
+Enterprise Keyboard comes pre-installed on supported Zebra devices. 
 
-For more information, please see the [EKB download page](../../download) or [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 
+For more information, see the [download page](../../download) or [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

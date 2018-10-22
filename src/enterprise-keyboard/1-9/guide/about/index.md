@@ -41,7 +41,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### Behavior Corrections
 
-* Auto-capitalization now works properly if navigating away from the alpha keyboard prior to typing.
+* Auto-capitalization now works properly after navigating away from the alpha keyboard prior to typing.
 * Keyboard pop-ups no longer disappear when swiping from alpha to symbol layouts and back. 
 
 -----
@@ -125,7 +125,7 @@ EKB 1.8 adds support for (and comes preinstalled on) the following devices:
 
 **Enterprise Keyboard 1.7 comes pre-installed on Zebra devices running Android 7.x Nougat and higher**. 
 
-### Supported Devices
+#### Supported Devices
 
 EKB 1.7 is certified on the following Zebra devices running Android 7.x Nougat:
 

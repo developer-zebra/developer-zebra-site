@@ -30,5 +30,5 @@ productversion: '2.0'
 
 * **Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html)** and select the desired download(s). 
 
-* **Proceed to the [Enterprise Browser Setup page](/enterprise-browser/1-8/guide/setup)** for installation instructions. 
+* **Proceed to the [Enterprise Browser Setup page](/enterprise-browser/2-0/guide/setup)** for installation instructions. 
 

@@ -14,7 +14,7 @@ content-items:
     text: How to tailor Enterprise Keyboard with custom key mappings and industry-specific content and features
     url: /enterprise-keyboard/1-8/guide/settings
 product: Enterprise Keyboard
-productversion: '1.8'
+productversion: '1.9'
 ---
 
 

@@ -219,7 +219,12 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'mx/',
         automenu: false
     }))
-    
+   
+        .use(foldermenu({
+        folder: 'new/'
+    }))
+ 
+
 // Enterprise Keyboard build section
 
         .use(foldermenu({

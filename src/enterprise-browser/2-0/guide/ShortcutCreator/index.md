@@ -82,7 +82,7 @@ In the same location are custom folders named for each shortcut created, with th
 
 ### Deployment (to single device)
 
-1. After desired shortcuts have been created (using steps 1-8 above), **click Push to Device**. A screen appears similar to one of those below: 
+1. After desired shortcuts have been created (using steps 1&ndash;8 above), **click Push to Device**. A screen appears similar to one of those below: 
 <img alt="" style="height:150px" src="../../images/Utilities/18_eb_PushShortcutForAndroid.png"/>
 <img alt="" style="height:150px" src="../../images/Utilities/18_eb_PushShortcutForWindows.png"/>
 2. **Click "Deploy Shortcuts"** to deploy through ADB (Android via USB) or ActiveSync (WM/CE via USB or Bluetooth). Shortcut(s) will be pushed to the device. 
@@ -121,7 +121,7 @@ Shortcuts can be packaged with an Enterprise Browser app (.apk or .cab) and the 
 
 &#52;. **Push the `Config.xml` file to its original location on the device**, replacing the original.  
 
-&#53;. If not done earlier, **create the desired shortcut(s) (using steps 1-8 above)**. Shortcut data is stored on the PC in a file called `EBShortcuts.xml` in the following path: 
+&#53;. If not done earlier, **create the desired shortcut(s) (using steps 1&ndash;8 above)**. Shortcut data is stored on the PC in a file called `EBShortcuts.xml` in the following path: 
 
 `C:\EnterpriseBrowserShortcutFiles\EnterpriseBrowserShortcutFiles\EBShortcuts.xml` 
 

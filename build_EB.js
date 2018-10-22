@@ -197,21 +197,24 @@ var sitebuild = Metalsmith(__dirname)
 	  pattern: '**/*.md'
     })) 
         .use(foldermenu({
-        folder: 'enterprise-browser/1-8/' 
-    })) 
-        .use(foldermenu({
-        folder: 'enterprise-browser/1-7/'
-	}))	
-        .use(foldermenu({
-        folder: 'enterprise-browser/1-6/'
+        folder: 'enterprise-browser/1-4/'
     }))
         .use(foldermenu({
         folder: 'enterprise-browser/1-5/'
     }))
-        .use(foldermenu({
-        folder: 'enterprise-browser/1-4/'
+       .use(foldermenu({
+        folder: 'enterprise-browser/1-6/'
     }))
-    .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
+        .use(foldermenu({
+        folder: 'enterprise-browser/1-7/'
+    })) 
+        .use(foldermenu({
+        folder: 'enterprise-browser/1-8/' 
+    })) 
+        .use(foldermenu({
+        folder: 'enterprise-browser/2-0/'
+    }))
+     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({
       maxLength: 250,
       suffix: '...'

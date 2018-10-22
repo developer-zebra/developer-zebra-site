@@ -806,7 +806,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 ------
 
 ### Pinned Shortcuts
-**Supported on Oreo devices only**. Controls whether shortcuts to local or remote apps can be added programmatically. Disabled by default. 
+**Supported on Oreo devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. Disabled by default. 
 
 <img alt="" style="height:350px" src="EHS_pinned_shortcuts.png"/>
 

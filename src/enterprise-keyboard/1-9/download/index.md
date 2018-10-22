@@ -7,7 +7,7 @@ productversion: '1.9'
 
 ### Supported Devices
 
-EKB 1.8 <u>comes pre-installed</u> on the following Zebra Android devices running Android 7.x Nougat: 
+EKB 1.9 <u>comes pre-installed</u> on the following Zebra Android devices running Android 7.x Nougat: 
 
  * **MC33**
  * **TC51**
@@ -27,14 +27,12 @@ EKB 1.8 <u>comes pre-installed</u> on the following Zebra Android devices runnin
 
 **<u>EKB 1.8</u> is added as a LifeGuard patch** on devices listed below running Android 6.x Marshmallow or older.
 
- * **MC33**
  * **TC51**
  * **TC51 Healthcare**
  * **TC56**
  * **TC56 Healthcare**
  * **TC70x**
  * **TC75x**
- * **VC80x**
  * **WT6000**
 
 **To install EKB 1.8 on a device listed above**: 

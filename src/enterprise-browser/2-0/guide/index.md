@@ -81,6 +81,6 @@ automenu:
         - title: TLS/SSL Compliance
           url: compliance
 product: Enterprise Browser
-productversion: '1.8'
+productversion: '2.0'
 ---
 

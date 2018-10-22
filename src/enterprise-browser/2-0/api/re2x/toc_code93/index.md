@@ -24,7 +24,7 @@ automenu:
           url: ../Code93MinLength
         - title: Code93redundancy
           url: ../Code93Redundancy
-productversion: '1.8'
+productversion: '2.0'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

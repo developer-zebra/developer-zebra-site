@@ -20,7 +20,7 @@ automenu:
           url: ../trioptic39
         - title: Trioptic39redundancy
           url: ../trioptic39Redundancy
-productversion: '1.8'
+productversion: '2.0'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

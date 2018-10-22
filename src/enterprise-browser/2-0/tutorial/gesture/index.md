@@ -1,6 +1,6 @@
 ---
 title: Gesture API Tutorial
-productversion: '1.8'
+productversion: '2.0'
 product: Enterprise Browser
 layout: guide.html
 ---

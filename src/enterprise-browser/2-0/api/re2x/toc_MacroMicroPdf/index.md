@@ -26,7 +26,7 @@ automenu:
           url: ../macroMicroPdfExclusive
         - title: MacroMicroPdfReportAppendedInfo
           url: ../macroMicroPdfReportAppendInfo
-productversion: '1.8'
+productversion: '2.0'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

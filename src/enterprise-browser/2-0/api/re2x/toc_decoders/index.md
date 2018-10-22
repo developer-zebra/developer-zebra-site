@@ -88,7 +88,7 @@ automenu:
           url: ../toc_Upce1
         - title: Webcode
           url: ../toc_Webcode
-productversion: '1.8'
+productversion: '2.0'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

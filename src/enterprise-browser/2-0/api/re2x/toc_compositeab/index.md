@@ -22,7 +22,7 @@ automenu:
           url: ../compositeAbUccLinkMode
         - title: CompositeAbUseUpcPreambleCheckDigitRules
           url: ../compositeAbUseUpcPreambleCheckDigitRules
-productversion: '1.8'
+productversion: '2.0'
 product: Enterprise Browser
 subhead: RhoElements 2.x API
 ---

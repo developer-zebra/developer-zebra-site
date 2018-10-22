@@ -1,6 +1,6 @@
 ---
 title: RhoElements 2.x Migration Guide
-productversion: '1.8'
+productversion: '2.0'
 product: Enterprise Browser
 layout: guide.html
 ---

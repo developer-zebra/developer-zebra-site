@@ -1,6 +1,6 @@
 ---
 title: Upce1convertToUpca Decoder Setting
-productversion: '1.8'
+productversion: '2.0'
 product: Enterprise Browser
 layout: guide.html
 subhead: RhoElements 2.x API

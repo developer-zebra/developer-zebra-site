@@ -6,14 +6,14 @@ productversion: '1.0'
 ---
 ## Overview
 
-PowerPrecision Console (PPC) server runs on a Windows-based server or desktop. The PPC client runs on supported Zebra devices. This section provides instructions for install and setup on both components.
+PowerPrecision Console (PPC) server runs on a Windows-based server or desktop. The PPC client runs on supported Zebra devices. This section provides instructions for install and setup for both components.
 
 See [System Requirements](../about/#systemrequirements).
 
-> Important: An SSL Certificate is required from a third party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non-third party CA will not work.
+> Important: An SSL Certificate is required from a third party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non-third party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
 
 ##Server Install & Setup
-After server installation, further network setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 1. **Server Installation.** Double-click on the .EXE and follow the steps to complete installation.
 
@@ -38,7 +38,6 @@ H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
    * Zebra Technologies\PowerPrecision Console\Server\PowerPrecision Console Server
    * Zebra Technologies\PowerPrecision Console\Server\WebUI
 <br>
-We recommend to use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.
 
 4. **Server Setup.** From default folder “\Power Precision Console\Release\Server\WebUI”, open the .env file.  Set the following variables: 
 
@@ -84,7 +83,7 @@ We recommend to use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) t
 <br>
 6. **Run the PPC Server Software.** Start the server services by launching the desktop shortcut icon "START_PPC_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/ppcui**
 
-	Where "name.company.com" is replaced with the appropriate domain name.
+	Where "name.company.com" is replaced with the appropriate information.
 
 	Default login credentials (case-sensitive) for _super admin_ user are: 
 
@@ -92,11 +91,20 @@ We recommend to use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) t
 	* Password: admin 
 
    Zebra recommends to change the password immediately for the _super admin_ user to avoid unauthorized access. Tap on "SAdmin" user at the top right of the Admin View and select "Change password".
+7. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
+A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
+B. Enter the Web UI URL, for example `https://name.company.com:8443/ppcui`<br>
+C. Click the Scan button. A successful result returns green checks for each step. _See Figure 1 below._ <br>
+D. Enter the backend URL for your server, for example `https://name.company.com:8080/ppcdata` <br>
+E. Click the Scan button. A successful result returns green checks for each step:
+![img](SSLTools.JPG)
+_Figure 1. SSLTools.com results_
 
 ##Client Install & Setup
 Install PPC client on the supported Zebra devices to register the device, upload device battery data and display end-of-life (EOL) battery alerts. The device must be connected to the same network as the server. The server address needs to be configured on the PPC client to communicate with the PPC Server. PPC client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management).
 
 ###Installation
+Steps for client installation:
 1. Download PPCClient.zip from Zebra's support site and unzip the files and folders.
 2. Install PowerPrecisionConsole.apk. 
    * For Android Marshmallow and Nougat devices, install the .APK located in folder PPCClient\Client\M_N.

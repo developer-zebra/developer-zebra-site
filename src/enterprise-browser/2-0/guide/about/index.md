@@ -1,5 +1,5 @@
 ---
-title: About Enterprise Browser 1.8
+title: About Enterprise Browser
 productversion: '2.0'
 product: Enterprise Browser
 layout: guide.html
@@ -17,7 +17,10 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 -----
 
-## New in v1.8
+## New in v2.0
+
+
+OLD OLD
 
 ### Device Support 
 EB 1.8 now supports the following mobile computing devices and operating systems: 
@@ -32,6 +35,9 @@ EB 1.8 now supports the following mobile computing devices and operating systems
 * **TC70X** Android Nougat
 * **TC75X** Android Nougat
 * **VC80X** Android Nougat
+
+
+OLD OLD
 
 ### Scanner Support
 EB 1.8 is now supported for use with the following scanners when connected to the Zebra devices and operating systems listed:
@@ -48,46 +54,9 @@ EB 1.8 is now supported for use with the following scanners when connected to th
 
 See all [supported Zebra devices](../about#mobile). 
 
-<!-- The following is not new to v1.8; mistakenly added when included in a xfer doc table. 
-
-* **RS507 Cordless Ring Scanner**
-	* Android 4.4 (KitKat)
-		* TC70
-	* Android 5.0 (Lollipop)
-		* TC75
-		* TC8000
-	* Android 6.0 (Marshmallow)
-		* TC51
-		* TC51-HC
-		* TC56
-		* TC70X
-	* Android 7.0 (**Nougat BSP 01.01.49 or higher**)
-		* MC33X
-		* TC51
-		* TC51-HC
-		* TC56
-		* TC70X
-		* TC75X
-		* VC80X
-* **RS6000 Bluetooth Ring Scanner**
-	* Android 5.0 (Lollipop)
-		* TC75
-		* TC8000
-	* Android 6.0 (Marshmallow)
-		* TC51
-		* TC56
-		* TC70X
-	* Android 7.0 (**Nougat BSP 01.01.49 or higher**)
-		* MC33X
-		* TC51
-		* TC51-HC
-		* TC56
-		* TC70X
-		* TC75X
-		* VC80X 
--->
-
 -----
+
+OLD OLD
 
 ### Updated Installation SKUs
 
@@ -97,6 +66,8 @@ See the [EB download page](../../download) for more information.
 
 -----
 
+OLD OLD
+
 ### Updated Guides
 
 * **[SAP ITSmobile Usage Guide](../sap) -** Now offers a new UserAgent section and enhanced Function Key Mapping information. 
@@ -105,6 +76,8 @@ See the [EB download page](../../download) for more information.
 
 -----
 
+OLD OLD
+
 ### New Config.xml tags
 
 * **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** Optionally disables hardware acceleration at WebView level within an Enterprise Browser app. 
@@ -112,6 +85,8 @@ See the [EB download page](../../download) for more information.
 * **[&lt;DisableAllIME&gt;](../configreference#disableallime) -** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **Applies to Android devices running Lollipop and higher.** 
 * **[&lt;HideSystemBar&gt;](../configreference#hidesystembar) -** Controls whether the System bar (also known as the Navigation bar, which contains HOME, BACK and RECENT buttons) is displayed within the Enterprise Browser app. **Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1/OSX 6.2 and higher**. 
 * **Enterprise Browser version info is now captured in the** `Config.xml` **file**. On startup, EB apps compare and log information about possible mismatches between the `Config.xml` in use and the version of EB installed on the device. [More info](../configreference#eb_versiontag). 
+
+OLD OLD
 
 ### Enhanced Config.xml tags
 
@@ -123,6 +98,8 @@ See the [EB download page](../../download) for more information.
 * **[&lt;DomStorageEnabled&gt;](../configreference#domstorageenabled) -** New "enabled" default setting helps preserve Enterprise Browser app data.
 
 -----
+
+OLD OLD
 
 ### API Enhancements
 
@@ -166,6 +143,8 @@ The following new methods, properties and/or callbacks were added to Android API
 
 -----
 
+OLD OLD
+
 ### ButtonBar Enhancements
 The following enhancements to existing custom on-screen buttons and keyboard features for Android have been added:
 
@@ -192,6 +171,141 @@ The following enhancements to existing custom on-screen buttons and keyboard fea
 -----
 
 ## Version History
+
+### Added in v1.8
+
+#### Device Support 
+EB 1.8 now supports the following mobile computing devices and operating systems: 
+
+* **CC5000-10** Android Lollipop
+* **MC33X** Android Nougat
+* **MC55X** Windows Embedded Handheld 6.5
+* **MC55X Healthcare** Windows Embedded Handheld 6.5
+* **TC51** Android Nougat
+* **TC51 Healthcare** Android Nougat
+* **TC56** Android Nougat
+* **TC70X** Android Nougat
+* **TC75X** Android Nougat
+* **VC80X** Android Nougat
+
+#### Scanner Support
+EB 1.8 is now supported for use with the following scanners when connected to the Zebra devices and operating systems listed:
+
+* **DS3678 Ultra-Rugged Scanner** 
+	* Running Android 7.0 (Nougat) on:
+ 		* MC33X
+ 		* TC51
+ 		* TC51-HC
+ 		* TC56
+ 		* TC70X
+ 		* TC75X
+ 		* VC80X
+
+See all [supported Zebra devices](../about#mobile). 
+
+-----
+
+#### Updated Installation SKUs
+
+**Enterprise Browser 1.8 (and higher) no longer downloads as a single SKU** for targeting devices running Android and/or Windows Mobile/CE. Separate downloads are now required for each target platform and each host platform. 
+
+See the [EB download page](../../download) for more information. 
+
+-----
+
+#### Updated Guides
+
+* **[SAP ITSmobile Usage Guide](../sap) -** Now offers a new UserAgent section and enhanced Function Key Mapping information. 
+* **[Migration Overview](../migration) -** Lists all options for migrating to Enterprise Browser from other platforms or solutions. 
+* **[Shortcut Utility Guide](../ShortcutCreator) -** Updated to reflect separate utilities for targeting Android and Windows Mobile/CE. 
+
+-----
+
+#### New Config.xml tags
+
+* **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** Optionally disables hardware acceleration at WebView level within an Enterprise Browser app. 
+* **[&lt;ClientCertificate&gt;](../configreference#clientcertificate) -** Optionally allows the alias name of a client certificate to be specified. **Applies only to devices running Android Lollipop and higher**. 
+* **[&lt;DisableAllIME&gt;](../configreference#disableallime) -** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **Applies to Android devices running Lollipop and higher.** 
+* **[&lt;HideSystemBar&gt;](../configreference#hidesystembar) -** Controls whether the System bar (also known as the Navigation bar, which contains HOME, BACK and RECENT buttons) is displayed within the Enterprise Browser app. **Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1/OSX 6.2 and higher**. 
+* **Enterprise Browser version info is now captured in the** `Config.xml` **file**. On startup, EB apps compare and log information about possible mismatches between the `Config.xml` in use and the version of EB installed on the device. [More info](../configreference#eb_versiontag). 
+
+#### Enhanced Config.xml tags
+
+* **[&lt;setHomeKeyDisable&gt;](../configreference#sethomekeydisable) -** Now supported on all Android devices with MX 4.3/OSX 1.0 and higher; no longer limited to Lollipop.
+* **[&lt;setStatusBarDisable&gt;](../configreference#setstatusbardisable) -** Now supported on all Android devices with MX 5.1/OSX 5.1 and higher; no longer limited to Lollipop.
+* **[&lt;setBackKeyDisable&gt;](../configreference#setbackkeydisable) -** Now supported on all Android devices; no longer limited to Lollipop.
+* **[&lt;setVolumeButtonDisable&gt;](../configreference#setvolumebuttondisable) -** Now supported on all Android devices; no longer limited to Lollipop.
+* **[&lt;setRecentAppDisable&gt;](../configreference#setrecentappdisable) -** Now supported on all Android devices; no longer limited to Lollipop.
+* **[&lt;DomStorageEnabled&gt;](../configreference#domstorageenabled) -** New "enabled" default setting helps preserve Enterprise Browser app data.
+
+-----
+
+#### API Enhancements
+
+The following new methods, properties and/or callbacks were added to Android APIs:
+
+* **[System API](../../api/system)** - Added `deviceHostName` property.
+* **[SignalIndicators API](../../api/signalindicators)** - Added `deviceHostName` callback parameter to `wlanStatus` method. 
+* **[Signal API](../../api/re2x/signal)** - Added `deviceHostName` parameter added to `signalEvent` method. 
+* **[Barcode API](../../api/barcode)** - Added Multi-barcode UDI support, including the following new callback parameters and properties added to the `enable` method (Applicable on Android with EMDK version 6.6 and higher):
+	* **Callbacks**:
+ 		* isUDIData
+ 		* label
+ 		* UDITokenizedData
+	* **Properties**:
+		* scanMode
+		* enableGS1
+		* enableHIBCC
+		* enableICCBBA
+		* adaptiveScanning
+		* aimingPattern
+		* connectionIdleTime
+		* codeIdType
+		* disconnectOnExit
+		* gs1LimitedSecurityLevel
+		* hanXin
+		* hanXinInverse
+		* mailMark
+		* pairAfterScannerReboot
+		* upcEanCouponReport
+
+**[ButtonBar API family](../../api/re2x/ButtonBar)** - Now contains 40 new ButtonBar APIs.
+
+**[EzNFC API](../../api/EzNFC)**
+* The following new callback parameters have been added to the `enableRead` method:
+ * Callback Parameter - TagManufacturerName
+ * Callback Parameter - TagTechnologies
+ * Callback Parameter - ATQA
+ * Callback Parameter - SAK
+ * Callback Parameter - ATS
+* The default value of the `proximitySensorType` property has been changed from 22 to 65538 for Android Lollipop and higher
+
+-----
+
+#### ButtonBar Enhancements
+The following enhancements to existing custom on-screen buttons and keyboard features for Android have been added:
+
+* Custom On-screen Buttons/Keyboard Usage Guide
+* ButtonBar XML Guide - New ButtonBar and Button-Specific parameters have been introduced.
+* ButtonBar parameters
+ * barTextColor
+ * barTextStyle
+ * barGapBtwnButtons
+* Button-specific parameters
+ * buttonSecondaryText
+ * buttonActionClick
+ * buttonActionLongClick
+ * buttonActionDown
+ * buttonActionUp
+ * buttonClickable
+ * buttonPreview
+ * buttonHapticfeedback
+ * buttonHapticfeedbackduration
+ * delay
+
+**[ButtonBar API family](../../api/re2x/ButtonBar)** - Now contains 40 new ButtonBar APIs.
+
+-----
 
 ### Added in v1.7
 

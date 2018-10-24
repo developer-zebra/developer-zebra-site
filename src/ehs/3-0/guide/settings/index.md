@@ -1310,11 +1310,13 @@ _For Marshmallow and Nougat Devices, see section above_.
 
 EHS has historically offered the ability to add shortcuts programmatically using the `INSTALL_SHORTCUT` broadcast intent. Android 8.x Oreo replaces this intent with the `requestPinShortcut()` method of the `ShortcutManager` class. When shortcuts that link to local apps or remote websites are added in this way, EHS adds a link tag to the config XML file with the attributes listed below and displays the shortcut on the User screen. 
 
-To identify a pinned shortcut, EHS uses two attributes in a link tag; 
+To identify a pinned shortcut, EHS uses two attributes in a link tag: 
 
-The `label` is the short name for of the pinned shortcut returned by the `ShortcutInfo.getShortLabel()` method.
+#### label
+The short name for of the pinned shortcut, returned by the `ShortcutInfo.getShortLabel()` method.
 
-The `pinned_activity` is the activity the shortcut links to, and is returned by the `ShortcutInfo.getPackage()` method.
+#### pinned_activity
+The activity the shortcut links to, returned by the `ShortcutInfo.getPackage()` method.
 
 <!-- 10/22/18- removed, per eng. 
 Refer to the examples below to see this the context of the `enterprisehomescreen.xml` file. 

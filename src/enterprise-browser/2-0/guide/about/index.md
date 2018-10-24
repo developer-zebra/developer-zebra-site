@@ -19,6 +19,10 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v2.0
 
+Improvements to DOM injection, including page-based actions and simplified usage.  
+Enhanced licensing process
+
+
 ### Device Support 
 
 EB 2.0 adds support for the following mobile computing devices: 

@@ -8,6 +8,8 @@ layout: guide.html
 
 Apps made with Enterprise Browser 1.3 and higher are able to perform DOM Injection, the ability insert CSS, JavaScript and/or meta tags into the DOM without modifying the underlying application. This permits features, capabilities and even the look of one or more server-based Enterprise Browser app pages to be modified at runtime using DOM elements stored in a text file on the device. 
 
+**EB 2.0 and higher can take advantage of a simplified interface and [page-based actions](#pagebasedactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. 
+
 DOM injection is enabled by default in EB 1.3 and higher apps, and is **activated by  the &lt;CustomDOMElements&gt; tag in the &lt;Application&gt; section** of the app's `Config.xml` file. This tag will contain a fully qualified path to the device-resident "tags" file that must be created. It contains the DOM element(s) to be injected and the names of the pages to receive injections whenever they're displayed. **Injected CSS and JavaScript can be local, server-based or in combination**. Meta tags must be specified and fully contained within the tags file.    
 
 * **DOM injection device support**: 
@@ -20,7 +22,7 @@ DOM injection is enabled by default in EB 1.3 and higher apps, and is **activate
 No special licensing is required. 
 
 ## What is "the DOM"?
-In the context of modern web programming, **the "DOM" refers to HTML5 as it will appear when running**. While the code of an HTML5 app might define certain variables, those variables contain no values until the app is executed. Therefore, it's accurate to think of the DOM as an HTML5 app that's in use.
+In the context of modern web programming, **the "DOM" refers to HTML5 as it appears when running**. While the code of an HTML5 app might define certain variables, those variables contain no values until the app is executed. Therefore, it's accurate to think of the DOM as an HTML5 app that's in use, and of DOM injection as changes made to a running app that take effect immediately. 
 
 ## How to use DOM Injection
 
@@ -174,4 +176,69 @@ Sample JavaScript to delay loading:
 		      alert(Rho.Application.appName); //use rho api here
 		    });
 		})();
+
+-----
+
+## Page-based Actions
+
+Apps made with EB 2.0 and higher can use of page-based actions, which execute JavaScript code or predefined commands whenever certain conditions are found on a page. For example, if a user encounters a "page not found" message, the app can be instructed to navigate to a login page. 
+
+Page actions and the conditions that trigger them are defined in the `PageAction.xml` file, which is created and stored on the device in advance. An example of that file is shown below. 
+
+-----
+
+### Commands
+
+**The following predefined commands are supported**: 
+
+**redirectTo-[url] -** Navigates to the specified URL. Example: `redirectTo-http://MyCompany.com/mobile/MyApp/startup` 
+
+**Home -** Navigates to the "Home" page defined in the [StartPage](../configreference/#startpage) tag of the app's `configreference.xml` file. 
+
+**Back -** Navigates to the previous page in the EB app's history.
+
+**DoubleBack -** 
+Navigates two pages back in the EB app's history.
+
+**Quit -** 
+Exits the EB app, executing any exit commands or actions defined in the `configreference.xml` file.
+
+**runscript-[codeBlockName] -** Executes the specified JavaScript code block as defined in the `CustomScript.xml` file. For example `runscript-clearcookiescript` executes a user-defined JavaScript code block in the “cleaarcookiescript” section of the `CustomScript.xml` file. More [about the CustomScript file](../customize/script). 
+
+-----
+
+### Example
+
+		:::xml
+	<pageActionGroup>
+	   <pageAction1>
+	        <pageIdentification value="400 Session timed out" />
+	        <Action value="redirectTo-http://MyCompany.com/mobile/MyApp/startup" />
+	    </pageAction1>
+
+	    <pageAction2> 
+	        <pageIdentification value="Component" />
+	        <Action value="Home" />   
+	    </pageAction2>
+
+	    <pageAction3> 
+	         <pageIdentification value="Blocked" />
+	        <Action value="Back" />
+	    </pageAction3>
+
+	 	  <pageAction3> 
+	 		 <pageIdentification value="Delivery&nbsp;Number" />
+	        <Action value="Quit" />    
+	   </pageAction3>
+	</pageActionGroup>
+
+
+
+
+
+
+
+
+
+
 

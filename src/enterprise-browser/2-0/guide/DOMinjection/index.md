@@ -193,7 +193,7 @@ Page actions and the conditions that trigger them are defined in the `PageAction
 
 **redirectTo-[url] -** Navigates to the specified URL. Example: `redirectTo-http://MyCompany.com/mobile/MyApp/startup` 
 
-**Home -** Navigates to the "Home" page defined in the [StartPage](../configreference/#startpage) tag of the app's `configreference.xml` file. 
+**Home -** Navigates to the "Home" page defined in the [StartPage](../configreference/#startpage) tag of the app's `Config.xml` file. 
 
 **Back -** Navigates to the previous page in the EB app's history.
 
@@ -201,7 +201,7 @@ Page actions and the conditions that trigger them are defined in the `PageAction
 Navigates two pages back in the EB app's history.
 
 **Quit -** 
-Exits the EB app, executing any exit commands or actions defined in the `configreference.xml` file.
+Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
 
 **runscript-[codeBlockName] -** Executes the specified JavaScript code block as defined in the `CustomScript.xml` file. For example `runscript-clearcookiescript` executes a user-defined JavaScript code block in the “cleaarcookiescript” section of the `CustomScript.xml` file. More [about the CustomScript file](../customize/script). 
 

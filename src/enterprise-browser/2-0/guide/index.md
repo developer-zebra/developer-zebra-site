@@ -45,7 +45,7 @@ automenu:
         - title: Printing
           url: printingGuide
         - title: SAP ITSmobile
-          url: sap
+          url: sapchoices
         - title: Viewport
           url: viewport
     - title: Debugging

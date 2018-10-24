@@ -19,10 +19,6 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v2.0
 
-Improvements to DOM injection, including page-based actions and simplified usage.  
-Enhanced licensing process
-
-
 ### Device Support 
 
 EB 2.0 adds support for the following mobile computing devices: 
@@ -39,27 +35,12 @@ OLD OLD
 * **TC75X** Android Nougat
 * **VC80X** Android Nougat
 
-FROM RELEASE NOTES: 
-
-<li><a href="#CC5000">CC5000-10 Android Lollipop</a></li>	
-		<li><a href="#MC33X">MC33X Android Nougat</a></li>
-		<li><a href="#TC51">TC51 Android Nougat</a></li>
-		<li><a href="#TC51">TC51 Health Care Android Nougat</a></li>
-		<li><a href="#TC56">TC56 Android Nougat</a></li>		
-		<li><a href="#TC70X">TC70X Android Nougat</a></li>
-		<li><a href="#TC75X">TC75X Android Nougat</a></li>
-		<li><a href="#VC80X">VC80X Android Nougat</a></li>
-
 OLD OLD
 
 ### Scanner Support
 EB 1.8 is now supported for use with the following scanners when connected to the Zebra devices and operating systems listed:
 
 * **DS3678 Ultra-Rugged Scanner** 
-
-FROM RELEASE NOTES: 
-
-<li><a href="#DS3678">DS3678</a><i> - Now also supported on Android Nougat devices.</i></li>
 
 OLD OLD
 
@@ -94,6 +75,12 @@ OLD OLD
 * **[Migration Overview](../migration) -** Lists all options for migrating to Enterprise Browser from other platforms or solutions. 
 * **[Shortcut Utility Guide](../ShortcutCreator) -** Updated to reflect separate utilities for targeting Android and Windows Mobile/CE. 
 
+* **The [DOM Injection Guide](../DOMinjection) now includes a section on Page-based Actions**, which can execute specific JavaScript code or predefined commands whenever certain conditions are found on a page.
+
+Enhanced licensing process
+
+* **The [Keycode Mapping Guide](../keycapture) has been updated** to indicate a lack of support for remapping of HOME and RECENT APPs keys.
+
 -----
 
 OLD OLD
@@ -121,7 +108,20 @@ OLD OLD
 
 OLD OLD
 
+### New APIs
+
+* **[Voice API](../../api/voice)** - Added `deviceHostName` property.
+* **[Bluetooth API](../../api/bluetooth)** - Added `deviceHostName` property.
+* **[RFID API](../../api/rfid)** - Added `deviceHostName` property.
+
+
+-----
+
 ### API Enhancements
+
+* **[Barcode API](../../api/barcode)** - (handles multi-barcode (last one did too; see below)), character set properties, triggerType 
+
+
 
 The following new methods, properties and/or callbacks were added to Android APIs:
 

@@ -160,23 +160,21 @@ The EHS config file is broken into five sections:
             <admin></admin>
         </passwords>        
         <preferences>
-            <title>Enterprise Home Screen</title>
-            <icon_label_background_color>#00FFFFFF</icon_label_background_color>
-            <icon_label_text_color>#FFFFFFFF</icon_label_text_color>
-            <orientation></orientation>
-            <auto_launch_enable>0</auto_launch_enable>
-            <service_auto_launch_enable>0</service_auto_launch_enable>
-            <foreground_service_auto_launch_enable>1</service_auto_launch_enable>
-            <wallpaper></wallpaper>
-            <kiosk_mode_enabled>0</kiosk_mode_enabled>
-            <install_shortcuts>0</install_shortcuts>
-            <keyguard_camera_disabled>1</keyguard_camera_disabled>
-            <keyguard_search_disabled>1</keyguard_search_disabled>      
-            <usb_debugging_disabled>1</usb_debugging_disabled>
-            <system_settings_restricted>1</system_settings_restricted>
-            <pin_shortcuts>0</pin_shortcuts>
+                <title>Enterprise Home Screen</title>
+                <icon_label_background_color>#00FFFFFF</icon_label_background_color>
+                <icon_label_text_color>#FFFFFFFF</icon_label_text_color>
+                <orientation></orientation>
+                <auto_launch_enable>0</auto_launch_enable>
+                <service_auto_launch_enable>0</service_auto_launch_enable>
+                <wallpaper></wallpaper>
+                <kiosk_mode_enabled>0</kiosk_mode_enabled>
+                <install_shortcuts>0</install_shortcuts>
+                <keyguard_camera_disabled>1</keyguard_camera_disabled>
+                <keyguard_search_disabled>1</keyguard_search_disabled>      
+                <usb_debugging_disabled>1</usb_debugging_disabled>
+                <system_settings_restricted>1</system_settings_restricted>
         </preferences>
-        </config>
+    </config>
 
 
 -----
@@ -790,7 +788,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 ------
 
 ### Install Shortcuts
-**Applies to Marshmallow and Nougat devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. For shortcuts on Oreo devices, see [Pinned Shortcuts](#pinnedshortcuts), below.  
+**Applies to Marshmallow and Nougat devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. For shortcuts devices, see [Pinned Shortcuts](#pinnedshortcuts), below.  
 
 <img alt="" style="height:350px" src="install_shortcuts.png"/>
 
@@ -1310,7 +1308,7 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 ### On Oreo 
 _For Marshmallow and Nougat Devices, see section above_.
 
-EHS has historically offered the ability to add shortcuts programmatically using the `INSTALL_SHORTCUT` broadcast intent. Android 8.x Oreo replaces this intent with the `requestPinShortcut()` method of the `ShortcutManager` class. This section explains how to use this method to add shortcuts programmatically on an Oreo device. 
+EHS has historically offered the ability to add shortcuts programmatically using the `INSTALL_SHORTCUT` broadcast intent. Android 8.x Oreo replaces this intent with the `requestPinShortcut()` method of the `ShortcutManager` class. When shortcuts that link to local apps or remote websites are added in this way, EHS adds a link tag to the config XML file with the attributes listed below and displays the shortcut on the User screen. 
 
 To identify a pinned shortcut, EHS uses two attributes in a link tag; 
 

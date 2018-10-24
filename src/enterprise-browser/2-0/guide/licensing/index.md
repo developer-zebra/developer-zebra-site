@@ -4,8 +4,11 @@ productversion: '2.0'
 product: Enterprise Browser
 layout: guide.html
 ---
-##Overview 
-Enterprise Browser is free to download and use for evaluation purposes. Commercial deployment to devices requires an End-User License issued by Zebra Technologies for each device. Licenses are available for individual devices and for entire deployments of 50 devices or more. Both license types permit an unlimited number of Enterprise Browser applications to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use, and applying the license to individual devices and as part of a mass-deployment.
+
+## Overview 
+Enterprise Browser is free to download and use for evaluation purposes. Commercial deployment to devices requires an End-User License issued by Zebra Technologies for each device. Licenses are available for individual devices and for site deployments of 50 devices or more. Both license types permit an unlimited number of Enterprise Browser-based apps to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license to individual devices and as part of a mass-deployment.
+
+> **Note**: The EB 2.0 licensing process has changed from that of prior versions. 
 
 -----
 

@@ -30,7 +30,7 @@ Apps made with Enterprise Browser 1.7 (and higher) come with Web Page Capture, a
 -----
 
 ## WebPageSource folder
-After a capture, this folder will contain an additional folder named after the displayed file in the (last index name of the) source URL plus a date and time stamp (_YYMMDD_HHMMSS). 
+After a capture, this folder contains an additional folder named after the displayed file in the (last index name of the) source URL plus a date and time stamp (`_YYMMDD_HHMMSS`). 
 
 For example: 
 

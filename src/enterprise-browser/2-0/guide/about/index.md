@@ -13,18 +13,17 @@ Enterprise Browser is a powerful, industrial browser that provides everything ne
 
 The base [EB installation](../setup) includes all necessary components to allow a Windows development host to easily build device apps and set [runtime settings](../configreference) for local or mass-deployment using [Zebra StageNow](../../../../stagenow) or a mobile device management (MDM) system. **If migrating from another platform**, Enterprise Browser also can run apps built for PocketBrowser, RhoElements and the RhoMobile Shared Runtime, making it an ideal path for moving apps to a newer UI, device or platform. For more information about API crossover, see the [API Compatibility matrix](../compatibility). 
 
-**Note: Zebra recommends avoiding the use of the JavaScript Alert function on any Enterprise Browser page**. Use of the syntax `window.alert("some alert message")` or `alert("some other message")` can result in unpredictable behavior when present in Enterprise Browser apps.  
+**Note: Zebra recommends avoiding the use of the JavaScript Alert function on any Enterprise Browser page**. Use of the syntax `window.alert("some alert message")` or `alert("some other message")` can result in unpredictable behavior when such code is used in Enterprise Browser apps.  
 
 -----
 
 ## New in v2.0
 
+### Device Support 
+
+EB 2.0 adds support for the following mobile computing devices: 
 
 OLD OLD
-
-### Device Support 
-EB 1.8 now supports the following mobile computing devices and operating systems: 
-
 * **CC5000-10** Android Lollipop
 * **MC33X** Android Nougat
 * **MC55X** Windows Embedded Handheld 6.5
@@ -36,6 +35,16 @@ EB 1.8 now supports the following mobile computing devices and operating systems
 * **TC75X** Android Nougat
 * **VC80X** Android Nougat
 
+FROM RELEASE NOTES: 
+
+<li><a href="#CC5000">CC5000-10 Android Lollipop</a></li>	
+		<li><a href="#MC33X">MC33X Android Nougat</a></li>
+		<li><a href="#TC51">TC51 Android Nougat</a></li>
+		<li><a href="#TC51">TC51 Health Care Android Nougat</a></li>
+		<li><a href="#TC56">TC56 Android Nougat</a></li>		
+		<li><a href="#TC70X">TC70X Android Nougat</a></li>
+		<li><a href="#TC75X">TC75X Android Nougat</a></li>
+		<li><a href="#VC80X">VC80X Android Nougat</a></li>
 
 OLD OLD
 
@@ -43,6 +52,13 @@ OLD OLD
 EB 1.8 is now supported for use with the following scanners when connected to the Zebra devices and operating systems listed:
 
 * **DS3678 Ultra-Rugged Scanner** 
+
+FROM RELEASE NOTES: 
+
+<li><a href="#DS3678">DS3678</a><i> - Now also supported on Android Nougat devices.</i></li>
+
+OLD OLD
+
 	* Running Android 7.0 (Nougat) on:
  		* MC33X
  		* TC51

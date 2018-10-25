@@ -1222,7 +1222,7 @@ Defines the amount of time (in milliseconds) the application should wait to esta
 
 ## Screen orientation
 ### AutoRotate
-Controls automatic rotation of screen orientation between portrait and landscape modes. When disabled, the orientation of the display will not change when the device is rotated. 
+Controls automatic rotation of screen orientation between portrait and landscape modes. When disabled, the orientation of the display will not change when the device is rotated. **Note**: This tag is overridden by the LockOrientation tag setting (below).
 
 **Possible Values**:
 
@@ -1234,6 +1234,20 @@ Controls automatic rotation of screen orientation between portrait and landscape
 	:::xml
 	<AutoRotate value="0"/>
 
+-----
+
+### LockOrientation
+Forces a particular screen orientation (portrait or landscape) when an EB app launches. **This tag is not included in the default `Config.xml` file; it must be added manually**. **Note**: This tag is overrides the AutoRotate tag setting (above).
+
+**Possible Values**:
+
+* LANDSCAPE - Launches app with horizontal orientation
+* PORTRAIT - Launches app with vertical orientation
+
+#### Example
+
+	:::xml
+	<LockOrientationvalue = "[value]"/>
 
 -----
 

@@ -6,9 +6,9 @@ automenu:
   items:
     - title: SAP ITSmobile Guides
       items:
-        - title: SAP ITSmobile for Android
+        - title: ITSmobile for Android
           url: ../sapandroid
-        - title: SAP ITSmobile for Windows Mobile/CE 
+        - title: ITSmobile for Windows Mobile/CE 
           url: ../sapwin
 product: Enterprise Browser
 productversion: '2.0'

@@ -28,10 +28,10 @@ automenu:
           url: apioverview
         - title: Button Parameter Guide
           url: customize/button
-        - title: Custom On-screen Buttons/Keys
-          url: customize
         - title: Custom JavaScript Guide
           url: customize/script
+        - title: Custom On-screen Buttons/Keys
+          url: customize
         - title: Page-based Actions Guide
           url: pageactions
     - title: Application Usage
@@ -39,7 +39,7 @@ automenu:
         - title: DataWedge
           url: datawedge
         - title: DOM Injection
-          url: DOMinjection
+          url: dom
         - title: Feature Demo app
           url: featuredemo
         - title: Keycode Mapping

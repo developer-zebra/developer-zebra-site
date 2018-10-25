@@ -75,7 +75,7 @@ OLD OLD
 * **[Migration Overview](../migration) -** Lists all options for migrating to Enterprise Browser from other platforms or solutions. 
 * **[Shortcut Utility Guide](../ShortcutCreator) -** Updated to reflect separate utilities for targeting Android and Windows Mobile/CE. 
 
-* **The [DOM Injection Guide](../DOMinjection) now includes a section on Page-based Actions**, which can execute specific JavaScript code or predefined commands whenever certain conditions are found on a page.
+* **The [DOM Injection Guide](../dom) now includes a section on Page-based Actions**, which can execute specific JavaScript code or predefined commands whenever certain conditions are found on a page.
 
 Enhanced licensing process
 

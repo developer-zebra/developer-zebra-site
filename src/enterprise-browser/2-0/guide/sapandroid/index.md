@@ -22,7 +22,7 @@ This guide provides instructions for modifying an EB app to work with ITSmobile,
 * [Enterprise Browser APIs](../apioverview)
 * [Function Key Mapping Guide](/keycapture/#mappingproprietaryfunctionkeycodes)
 * [Migration Guides](../migration)
-* [DOM Injection guide](../DOMinjection)
+* [DOM Injection guide](../dom)
 * [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)
 
 -----

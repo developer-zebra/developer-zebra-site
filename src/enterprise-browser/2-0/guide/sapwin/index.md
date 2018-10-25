@@ -92,9 +92,8 @@ Most JavaScript-based key handling for SAP ITSmobile applications is handled by 
           :::xml
           <DefaultMetaTags>
             <MetaTag VALUE="KeyCapture~KeyValue:All;Dispatch:True;KeyEvent:url('javascript:fireKeyEvent(%json);');" /> 
-          </DefaultMetaTags>
-
-2. Add the following JavaScript method as described in the [DOM Injection guide](../DOMinjection). The same `fireKeyEvent` method has been configured in the `Config.xml` under the `DefaultMetaTags` attribute.
+          </DefaultMetaTags> 
+2. Add the following JavaScript method as described in the [DOM Injection guide](../dom). The same `fireKeyEvent` method has been configured in the `Config.xml` under the `DefaultMetaTags` attribute.
 
           :::javascript
           //Add the fireKeyEvent in the HTML page for handling in WM device with IE Engine

@@ -561,15 +561,15 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 
 
 ### JSLibraries
-**Applies only to devices running Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into [the DOM](../DOMinjection/#whatisthedom) of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called, but in most cases will not conflict with such references. **See Notes**. 
+**Applies only to devices running Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into [the DOM](../dom/#whatisthedom) of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called, but in most cases will not conflict with such references. **See Notes**. 
 
 **Important Notes**: 
 
-* **If the existing HTML page(s) invoke EB APIs using HTML meta tags and/or onload attributes**, JSLibraries parameter should be used only if invocation was through [DOM injection](../DOMinjection). 
+* **If the existing HTML page(s) invoke EB APIs using HTML meta tags and/or onload attributes**, JSLibraries parameter should be used only if invocation was through [DOM injection](../dom). 
 * Directly invoking APIs through meta tags or onload attributes (without DOM injection) can result in timing issues. 
 * The standard method of accessing Enterprise Browser API libraries (`ebapi-modules.js` and `elements.js`) is to include a reference to the appropriate library on every HTML page from which an EB API is called. 
 * The standard API access method should be used whenever possible and is detailed on each of the [API pages](../../api). 
-* For scenarios in which it is difficult or impossible to modify the HTML source to include EB API references, Zebra recommends invoking APIs using [DOM Injection](../dominjection) for best results. 
+* For scenarios in which it is difficult or impossible to modify the HTML source to include EB API references, Zebra recommends invoking APIs using [DOM Injection](../dom) for best results. 
 
 **Possible Values**:
 
@@ -2173,7 +2173,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 
 ## DOM injection
 ### CustomDOMElements 
-**Applies to Android and Windows Mobile/CE Webkit engines**. Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, please refer to the [DOM Injection guide](../DOMinjection).  
+**Applies to Android and Windows Mobile/CE Webkit engines**. Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, please refer to the [DOM Injection guide](../dom).  
 
 **Possible Values**:
 

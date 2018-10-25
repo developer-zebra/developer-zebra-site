@@ -1,5 +1,5 @@
 ---
-title: SAP ITSmobile Usage Guide
+title: SAP ITSmobile for Android 
 productversion: '2.0'
 product: Enterprise Browser
 layout: guide.html
@@ -51,11 +51,8 @@ Predefined ButtonBar Layouts (SAP Keyboard)
 As mentioned earlier, missing hardware keys is a big pain point for migrating customers. Enterprise Browser SAP package includes a special keyboard for SAP application users. Along with regular keyboard layouts, it also includes a function key layout. 
 
 A function key layout allows SAP users to press function keys from the Software Input Panel (SIP) on demand. This avoids the necessity to modify the SAP application to include HTML buttons for function keydown events.
-The interesting part is the package comes with Keyboard Layout designer tool that customer can customize the keyboard based on their application needs.
 
-To know more about keyboard designer tool please visit {eddy to add link to designer tool}
-
-Also note that Enterprise Browser keyboard button can be configured to issue a keystroke, or to run a script on dom. To know more about keyboard button properties, please visit {eddy to add link to button properties usage guide}
+Also note that Enterprise Browser keyboard button can be configured to issue a keystroke, or to run a script on dom. To know more about keyboard button properties, please visit {eddy to add link to button parameter guide} 
 
 Note: By default sapkeyboard shows numeric layout whenever a focus is set on to an input field. Preferred layout can be configured by user by editing sapkeyboard.js file present in the apk bundle, once installed. Please refere showKeyboard and hideKeyboard javascript function in sapkeyboard.js file.
 
@@ -130,7 +127,7 @@ Whether user wants to set page resizable and to reserve a minimum safe height fo
 
 Apart from regular Dom Injection technique that was provided with earlier version of Enterprise Browser for page customization at client side, Enterprise Browser for SAP also provides some more additional features for SAP page fittings
 
-Autofitting a page using viewport
+#### Autofitting a page using viewport
 
 SAP ITS UI elements are designed using pixels hence on a high resolution device, the page elements looks smaller. It has been observed that most of the standard SAP pages where shrunk when loaded on a standard/Enterprise Browser and was rendered on a corner of the browser. 
 
@@ -158,7 +155,7 @@ When enabled, the page will not have any elements beyond the horizontal visible 
 
 Note: This attribute is only applicable for SAP application. Using this feature may effect some of the CSS styling hence this feature is not enabled by default on the package. 
 
-### Page UI Elements (customization)
+#### Page UI Elements (customization)
 
 Enterprise Browser 2.0 provides few additional configuration parameters that lets user to control the size of UI elements on SAP pages. 
 
@@ -181,11 +178,14 @@ If user wants to increase or reduce read-only text field, user can control it by
     </SapCustomization>
 
 Note: Such changes will have impact on all pages
-Modify page at client side by running script
 
-Enterprise Browser 2.0 support running a client-side script designed by user to customize the page. Refer SAP Page Action  {eddy to add link to SAP page action n}
+### Modify Page at Client Side
 
-### Page Actions
+Modify Page at Client Side by running script
+
+Enterprise Browser 2.0 support running a client-side script designed by user to customize the page. Refer SAP Page Action
+
+#### Page Actions
 
 An enterprise user may require to run some scripts or associate some Enterprise Browser actions such as (HOME, quit) when a SAP page loaded contains a text that is matching with user provided input.
 
@@ -252,6 +252,10 @@ Note: if user doesn’t want to use any keyboard, then recommended way is to use
     </KeyboardConfiguration>
 
 Using above config.xml attributes ensures no keyboard popup on input field focus. It will popup if user presses a F10 key. (key value can be reconfigured as per user need)
+
+"EB for SAP"
+
+> deploy SAP apk to all devices, and swap `Config.xml` with that in android_folder 
 
 Note: On regular package default sip will be always enabled and it config.xml will have a value as below
 <DisableAllIME value ="0"/>

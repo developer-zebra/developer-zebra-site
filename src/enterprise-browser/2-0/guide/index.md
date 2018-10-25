@@ -26,12 +26,14 @@ automenu:
       items:
         - title: API Usage Guide
           url: apioverview
-        - title: Custom On-screen Buttons/Keys
-          url: customize
         - title: Button Parameter Guide
           url: customize/button
+        - title: Custom On-screen Buttons/Keys
+          url: customize
         - title: Custom JavaScript Guide
           url: customize/script
+        - title: Page-based Actions Guide
+          url: pageactions
     - title: Application Usage
       items:
         - title: DataWedge
@@ -45,7 +47,7 @@ automenu:
         - title: Printing
           url: printingGuide
         - title: SAP ITSmobile
-          url: sapchoices
+          url: sap
         - title: Viewport
           url: viewport
     - title: Debugging

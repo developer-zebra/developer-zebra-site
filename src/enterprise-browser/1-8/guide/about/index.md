@@ -191,6 +191,12 @@ The following enhancements to existing custom on-screen buttons and keyboard fea
 
 -----
 
+## What's Coming in EB 2.0
+
+Zebra's Jocelyn Visco details [what's coming in Enterprise Browser 2.0](https://developer.zebra.com/community/home/blog/2018/10/24/what-is-coming-for-zebra-s-enterprise-browser-eb-20), including new support for Bluetooth, RFID and voice inputs, enhancements to DOM injection, SAP ITSmobile and the ButtonBar tool, and much more.  
+
+-----
+
 ## Version History
 
 ### Added in v1.7

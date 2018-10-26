@@ -12,11 +12,23 @@ OLD OLD OLD
 ## Overview
 This guide provides instructions for modifying an EB app to work with ITSmobile, the SAP middleware system built around its Internet Transaction Server (ITS). ITSmobile provides browser-based access to SAP's ERP, SRM and other enterprise apps made with the company's proprietary dynpro language. Enterprise Browser apps can be built or adapted to work with ITSmobile, and hence to access SAP back-end enterprise apps. Doing so requires familiarity with editing the `Config.xml` and HTML file(s) of EB apps. 
 
-**This [UserAgent section](#useragent) of this guide also includes troubleshooting issues that sometimes arise when migrating ITSmobile apps from one device or platform to another**.  
-
+<!-- 
+**The [UserAgent section](#useragent) of this guide also includes troubleshooting issues that sometimes arise when migrating ITSmobile apps from one device or platform to another**.
+ -->
 -----
 
-**Related Guides**: 
+Enterprise Browser 2.0 release includes a separate package (`EnterpriseBrowser_SAP_signed_v2.0.1.0.apk`) for allowing user to run their SAP application smoothly on Zebra Android devices. This package contains the basic Ready-to-Use configuration files for SAP ITS mobile application. Once installed user can also convert this package to Regular Enterprise Browser package by visiting the section (converting SAP package to Regular {eddy to add link to designer tool})
+.
+Purpose for providing SAP Package
+
+A major concern for SAP users when migrated to Android platform was related to page fitting and missing hardware function keys.
+
+This had resulted in rewriting server application to fit different device screen sizes also involved introducing new HTML buttons in the pages to overcome the missing function key keydown events.
+The new Enterprise Browser package for SAP users is designed to overcome most of the concerns faced by customers when they migrate from wm/ce platforms to Android platforms.
+Let us go little deeper into what Enterprise Browser team provides as part of special SAP package.
+SAP package features
+
+#### See Also
 
 * [Config.xml Reference](../configreference)
 * [Enterprise Browser APIs](../apioverview)
@@ -26,19 +38,6 @@ This guide provides instructions for modifying an EB app to work with ITSmobile,
 * [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)
 
 -----
-
-## Overview
-
-Enterprise Browser 2.0 release includes a separate package (`EnterpriseBrowser_SAP_signed_v2.0.1.0.apk`) for allowing user to run their SAP application smoothly on Zebra Android devices. This package contains the basic Ready-to-Use configuration files for SAP ITS mobile application. Once installed user can also convert this package to Regular Enterprise Browser package by visiting the section (converting SAP package to Regular {eddy to add link to designer tool})
-.
-Purpose for providing SAP Package
-
-A major concern for SAP users when migrated to android platform was related to page fitting and missing hardware function keys.
-
-This had resulted in rewriting server application to fit different device screen sizes also involved introducing new HTML buttons in the pages to overcome the missing function key keydown events.
-The new Enterprise Browser package for SAP users is designed to overcome most of the concerns faced by customers when they migrate from wm/ce platforms to android platforms.
-Let us go little deeper into what Enterprise Browser team provides as part of special SAP package.
-SAP package features
 
 ### BGSOUND support
 
@@ -56,13 +55,16 @@ Also note that Enterprise Browser keyboard button can be configured to issue a k
 
 Note: By default sapkeyboard shows numeric layout whenever a focus is set on to an input field. Preferred layout can be configured by user by editing sapkeyboard.js file present in the apk bundle, once installed. Please refere showKeyboard and hideKeyboard javascript function in sapkeyboard.js file.
 
-Sapkeyboard.js file present inside android_sap folder reads the  SAP Keyboard config params from the config.xml and register for a onfocus event and a keydown event to control the keyboard popup behavior.
+Sapkeyboard.js file present inside android_sap folder reads the SAP Keyboard config params from the config.xml and register for a onfocus event and a keydown event to control the keyboard popup behavior.
 
-One should ensure that below APIs are called after showing a keyboard or after hiding a keyboard.
-metaReceiver.resizeWebviewOnButtonbarShown();//must call to do webview redraw on keyboard popup
+One should ensure that APIs below are called after showing a keyboard or after hiding a keyboard.
+
+    metaReceiver.resizeWebviewOnButtonbarShown(); 
+    //must call to do webview redraw on keyboard popup
  
  
-`metaReceiver.restoreWebviewOnButtonbarHidden();` //must call to do webview redraw on keyboard hide
+    metaReceiver.restoreWebviewOnButtonbarHidden(); 
+    //must call to do webview redraw on keyboard hide
 
 
 ### Configuration Parameters
@@ -115,7 +117,7 @@ Whether page should be resizable on keyboard popup to avoid visibility concerns;
       <ResizeOnButtonbar value="1"/>        
     </SIP>
 
-Whether user wants to set page resizable and to reserve a minimum safe height for the keyboard can cover the screen. If yes set probable value for ButtonBarMaxHeight as below
+Whether user wants to set page resizable and to reserve a minimum safe height for the keyboard can cover the screen. If yes set probable value for `ButtonBarMaxHeight` as below:
 
     <SIP>
       <ResizeOnButtonbar value="1"/>
@@ -159,25 +161,27 @@ Note: This attribute is only applicable for SAP application. Using this feature 
 
 Enterprise Browser 2.0 provides few additional configuration parameters that lets user to control the size of UI elements on SAP pages. 
 
-If user want to increase height of buttons in SAP pages, he can control it using below config parameter
+If user want to increase height of buttons in SAP pages, he can control it using the config parameter below: 
 
     <SapCustomization> 
         <SapButtonHeight value="30px"/>
     </SapCustomization>
 
-If user wants to increase or reduce the font size for SAP page buttons, he can control it using   below config parameter
+If user wants to increase or reduce the font size for SAP page buttons, he can control it using the config parameter below:
 
     <SapCustomization>    
       <SapButtonFontSize value="10px"/>      
     </SapCustomization>
 
-If user wants to increase or reduce read-only text field, user can control it by modifying below config parameter.
+If user wants to increase or reduce read-only text field, user can control it by modifying config parameter below:
 
     <SapCustomization>     
       <MobileEditDisabledWidth value="20px"/> 
     </SapCustomization>
 
-Note: Such changes will have impact on all pages
+**Note**: Such changes impact on all pages.
+
+-----
 
 ### Modify Page at Client Side
 
@@ -196,7 +200,7 @@ Entry in config.xml; this entry already exist in Enterprise Browser SAP package 
       <pageactionxmlfile  value="file://%INSTALLDIR%/android_sap/PageAction.xml"/>
     </FileLocations>
 
-Entry in PageAction.xml; this entry already exist inside Enterprise Browser sap package
+Entry in PageAction.xml; this entry already exist inside Enterprise Browser SAP package
 
     <pageActionGroup>
         <pageAction1>
@@ -206,7 +210,8 @@ Entry in PageAction.xml; this entry already exist inside Enterprise Browser sap 
     </pageActionGroup>
 
 Similarly one can add an entry inside PageAction.xml to run a script at device side to alter the DOM or to execute some Enterprise Browser APIs as below. 
-A sample for zooming a particular page (which contains a text ‘Change Password’ ) to 200%  is given as below
+
+A sample for zooming a particular page (which contains a text ‘Change Password’ ) to 200% is given as below:
 
     <pageAction2> 
         <pageIdentification value=”Change Password" />
@@ -214,7 +219,8 @@ A sample for zooming a particular page (which contains a text ‘Change Password
     </pageAction2>
 
 When user prefer to run a script, script should be added inside customscript.xml file. Enterprise Browser for SAP contains a CustomScript.xml placed under android_sap folder inside installed directory on the device.
-Below is the entry inside CustomScript.xml
+
+Below is the entry inside `CustomScript.xml`: 
 
     <CustomScripts>          
               <zoomscript>
@@ -226,13 +232,13 @@ To know more about PageAction based on page contents, please visit {eddy to add 
 
 Disabling AOSP Keyboard
 
-Enterprise Browser supports disabling default SIP provided by Android platforms. User can disable it by setting below Config.xml attribute
+Enterprise Browser supports disabling default SIP provided by Android platforms. Disable it by setting the `Config.xml` file attribute as below: 
 
     <IME>
       <DisableAllIME value ="1"/>
     </IME>
 
-Enterprise Browser SAP package disables the AOSP keyboard by default. Disabling AOSP keyboard will result in stopping data wedge working via keystrokes. To overcome this issue Enterprise Browser recommends to enable Enterprise Keyboard  as well on the device. Having Enterprise Keyboard enabled on the device allows DataWedge to continue working via keystrokes.
+The Enterprise Browser SAP package disables the AOSP keyboard by default. Disabling the AOSP keyboard keeps DataWedge from working via keystrokes. To overcome this issue, Enterprise Browser recommends to enable Enterprise Keyboard as well on the device. Having Enterprise Keyboard enabled on the device allows DataWedge to continue working via keystrokes.
 
 Note: if user doesn’t want to use any keyboard, then recommended way is to use below config.xml entries
 
@@ -338,7 +344,7 @@ To disable EB namespace on your, user can simply disable below config.xml entry
           <JSLibraries value="0"/>
       </InjectEBLibraries>
 
-Note: EB team recommends to enable the EB namespace in your DOM. Some of the sap package functionality such as SAP keyboard may not function properly if this config tag is disabled.
+Note: EB team recommends to enable the EB namespace in your DOM. Some of the SAP package functionality such as SAP keyboard may not function properly if this config tag is disabled.
 
 Note: On regular package EB namespace will not be enabled by default. On regular package, default config.xml will have a value as below
 
@@ -351,7 +357,7 @@ Sap package by default hides the system bar (navigation bar) when launched. This
 
 Sap package allows user to quit application when F8 is pressed. User can press F10 key to popup the SAP keyboard on a default package to press F8 button if hardware key is not present on the device.
 
-User can enable the system bar on sap package by setting the below config.xml entry
+User can enable the system bar on SAP package by setting the below config.xml entry
 
     <HideSystemBar value ="0"/>
 
@@ -370,9 +376,9 @@ By default TTS and ASR are disabled on SAP package. User can enable and inject s
 
 ### Converting SAP Package
 
-If customer would like to perform a mixed deployment where he needs to use sap package on some devices and regular packages on some devices, then we recommend to deploy sap package on all devices and just replace the Config.xml in the installed directory. 
+If customer would like to perform a mixed deployment where he needs to use SAP package on some devices and regular packages on some devices, then we recommend to deploy SAP package on all devices and just replace the Config.xml in the installed directory. 
 
-Note: Default Config.xml inside installed directory of a sap package is intended for SAP ITS mobile application. However the package contains two folders named android_regular and android_sap respectively and each contain a associated Config.xml.
+Note: Default Config.xml inside installed directory of a SAP package is intended for SAP ITS mobile application. However the package contains two folders named android_regular and android_SAP respectively and each contain a associated Config.xml.
 
 To convert SAP package to regular, copy Config.xml from android_regular folder to installed directory. Similarly, to revert back, copy Config.xml from android_sap folder to installed directory.
 
@@ -383,7 +389,7 @@ These scripts are dominjected on each pageload event of webview. Let us see what
 
 All dominjected files are mentioned inside mysaptags.txt file present inside android_sap folder. If user needs to inject custom script files then user may need to modify the mysaptags.txt file.
 
-Default mysaptags.txt has the below javascript files those are intended to run sap package smoothly. User can modify the script based on their need. Thus, Enterprise Browser SAP package becomes more handy for the users.
+Default mysaptags.txt has the below javascript files those are intended to run SAP package smoothly. User can modify the script based on their need. Thus, Enterprise Browser SAP package becomes more handy for the users.
 
     <script type='text/javascript' src='file://%INSTALLDIR%/android_sap/sapkeyboard.js' pages='*' /> 
     <script type='text/javascript' src='file://%INSTALLDIR%/android_sap/sapbgsound.js' pages='*' /> 
@@ -404,7 +410,7 @@ Once local attributes are initialized, it then makes a call to `performPostIniti
 
 For devices with physical keyboard MC92, MC33, MC67, MC32, TC20K, we have added a check in the `performPostInitializationSapTask` function to prevent the calls to `initSapKeyBoard`.
 
-Calling `initSapKeyBoard` will initialize the sap button bar keyboard layouts. 
+Calling `initSapKeyBoard` will initialize the SAP button bar keyboard layouts. 
 
 Button Bar layouts are not required for if physical keyboard is present.
 
@@ -422,7 +428,7 @@ User can modify the logic based on their need.
 
 `Sapbgsound.js`
 
-This javascript file search for bgsound tag and it replaces with the audio tag to play the SAP notification sounds. Bgsound tag which is IE specific tag is not supported by android webview by default. This javascript file help in playing the sound. User can further modify this script to play any custom local sound files without modifying server application using Enterprise Browser utility APIs.
+This javascript file search for bgsound tag and it replaces with the audio tag to play the SAP notification sounds. Bgsound tag which is IE specific tag is not supported by Android webview by default. This javascript file help in playing the sound. User can further modify this script to play any custom local sound files without modifying server application using Enterprise Browser utility APIs.
 
 `Sapcustomview.js`
 

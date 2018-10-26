@@ -7,7 +7,7 @@ layout: guide.html
 ## Overview
 This guide provides instructions for modifying an EB app to work with ITSmobile, the SAP middleware system built around its Internet Transaction Server (ITS). ITSmobile provides browser-based access to SAP's ERP, SRM and other enterprise apps made with the company's proprietary dynpro language. Enterprise Browser apps can be built or adapted to work with ITSmobile, and hence to access SAP back-end enterprise apps. Doing so requires familiarity with editing the `Config.xml` and HTML file(s) of EB apps. 
 
-**This [UserAgent section](#useragent) of this guide also includes troubleshooting issues that sometimes arise when migrating ITSmobile apps from one device or platform to another**.  
+**The [UserAgent section](#useragent) of this guide also includes troubleshooting issues that sometimes arise when migrating ITSmobile apps from one device or platform to another**.  
 
 -----
 

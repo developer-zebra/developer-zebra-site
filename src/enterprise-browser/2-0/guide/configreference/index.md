@@ -1222,7 +1222,7 @@ Defines the amount of time (in milliseconds) the application should wait to esta
 
 ## Screen orientation
 ### AutoRotate
-Controls automatic rotation of screen orientation between portrait and landscape modes. When disabled, the orientation of the display will not change when the device is rotated. **Note**: This tag is overridden by the LockOrientation tag setting (below).
+Controls automatic rotation of screen orientation between portrait and landscape modes. When disabled, the orientation of the display does not change when the device is rotated. **Note: This tag is overridden by the LockOrientation tag setting (below)**.
 
 **Possible Values**:
 

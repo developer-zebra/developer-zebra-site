@@ -105,7 +105,7 @@ Install PPC client on the supported Zebra devices to register the device, upload
 
 ###Installation
 Steps for client installation:
-1. Download PPCClient.zip from Zebra's support site and unzip the files and folders.
+1. Download PPCClient.zip from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
 2. Install PowerPrecisionConsole.apk. 
    * For Android Marshmallow and Nougat devices, install the .APK located in folder PPCClient\Client\M_N.
    * For Android Oreo devices, install the .APK located in folder PPCClient\Client\O.
@@ -122,29 +122,65 @@ Steps for manual configuration:
 3. Tap the hamburger menu at the top right, then tap Settings. 
 4. Tap Server URL. Enter in the server URL, for example: **name.company.com:8080/ppcdata** 
 <br>
-Where "name.company.com:8080" is replaced with the appropriate domain name and port number.
+Where "name.company.com:8080" is replaced with the appropriate domain name and port number. <br>
 Note: the URL must not contain "https://".
 5. Tap OK to save the changes and return to the main screen.
 PPC Client registers with the server and uploads battery data.
 
 ####Remote Configuration Deployment
-Steps for remote configuration with StageNow and CSP Plug-in, with the option of deployment through EMM:
-1. Install PPCCspMgr.apk, distributed as part of the PPC software. Open PPCCspMgr app.
-2. Compress two files distributed as part of the PPC Console software into a single .zip file: 
+Steps for remote configuration with StageNow and CSP Plug-in, with the option of deployment through Enterprise Mobile Management (EMM):
+<!-- 1. Install PPCCspMgr.apk, distributed as part of the PPC software. Open PPCCspMgr app.-->
+1. Download PPC Client software from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files.
+2. Compress two files distributed as part of the PPC Client software into a single .zip file: 
 	* com.zebra.ppcclientmgr.dsd 
 	* PPCClientMgr.apk (PPC Client CSP Manager Plug-in)
 
-3. Upload the .zip file to the "CSP Library" section under "Plugin CSP" in StageNow.
-4. Create a new setting from the “All Settings” Page. Refer to instructions in [StageNow documentation](/stagenow/latest/settingconfig/). 
-5. Re-use the saved setting and click Continue. The Publish Page displays a generated barcode. For EMM Staging, continue to the EMM Staging steps below.
-6. Open the StageNow client on the device.
-7. Scan the barcode with the StageNow client to configure the PPC Client.
+3. Open StageNow. 
+4. Import the CSP Plugin Library. <br>
+A. In the StageNow home screen, click “CSP Library” from the left menu. <br>
+B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file.<br> 
+C. Once successfully uploaded, the CSP Library is listed in the Plugin tab.<br>
+![img](SN_CSPLib.JPG)
+_Figure 2. Import plugin into CSP Library_
+5. Create a new setting.<br>
+A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” button at the top right. <br>
+![img](SN_Settings.JPG)
+_Figure 3. Import into CSP Library_ <br>
+B. For the “Setting Type”, select “com.zebra.ppclientmgr." Enter a name for the setting. Enter the server URL e.g. `ppc.zebra.com:8080/ppcdata`. Select the desired option to determine whether or not to allow the end user to edit the setting. Select the MX version for the device.  <br>
+![img](SN_CreateSettings.JPG)
+_Figure 4. Create New Setting_ <br>
+C. Tap Save. The new setting is listed in the Settings screen.
+6. Create profile.<br>
+A. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
+B. Make sure the proper MX version is selected.<br>
+C. Select “XpertMode." Click Create.<br>
+D. Enter the profile name. Click Start.<br>
+E. In the Settings list, click the add (+) sign next to “com.zebra.ppcclientmgr”. This adds to the Config tab on the right side. Click on Add button.<br>
+![img](SN_Profile_AddSetting.JPG)
+_Figure 5. Add CSP to profile_ <br>
+F. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in step 5. 
+![img](SN_Profile_SNConfig.JPG)
+_Figure 6. Re-use saved setting_ <br>
+G. Click Continue. <br>
+H. In the Review section, review the settings and make modifications if needed. Click “Complete Profile." <br>
+I. In the Publish section, select the desired barcode type. 
+![img](SN_Publish.JPG)
+_Figure 7. Generate StageNow barcode_ <br>
+J. Click Test. A window opens with the generated StageNow barcode in .pdf format.<br>
+7. For EMM Staging, continue to section "Steps for EMM Staging" below.
+8. Open the StageNow client on the device.
+9. Scan the barcode with the StageNow client to configure the PPC Client. <br>
 
-Steps for EMM Staging (optional):
-1. Follow the steps above for "Remote Configuration Deployment with StageNow and CSP Plugin" until step 5.
-2. Select the "Export option for EMM" to export the .XML file.
-3. Push the .XML file to the device.
-4. Push the settings via EMM to configure the PPC Client.
+For more information refer to [StageNow download](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) and [StageNow documentation](http://techdocs.zebra.com/stagenow). 
+<br>
+<br>
+
+**Steps for EMM Staging (optional):**
+1. Follow the steps above for "Remote Configuration Deployment with StageNow and CSP Plugin" up to step 6.
+2. Select the "Export option for EMM" to export the .xml file.  Save the .xml file.
+![img](SN_ExportMDM.JPG)
+_Figure 8. Export for EMM_
+3. Push the .xml settings via EMM to the device for PPC Client configuration.
 
 <!--
 ####Remote Configuration Deployment Without StageNow

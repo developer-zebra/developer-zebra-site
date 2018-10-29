@@ -252,12 +252,13 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **Foreground services can now be auto-launched** in devices running Oreo. 
 * **VectorDrawable format supported** for app launcher icons. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources). 
 * **[Privileged Settings](../features/#privilegedsettings)** feature requires manual activation of certain settings when entering Admin Mode on a device. 
+* The default `Config.xml` file now places the DataWedge Demo app in the User screen, replacing the Calculator app found in prior versions.
 
 > **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
  
 ### Device Support
 
-Now supports these devices **running Android 8.1 Oreo** 
+EHS 3.0 now supports these devices **running Android 8.1 Oreo** 
 
 * **MC33**
 * **PS20 Personal Shopper**

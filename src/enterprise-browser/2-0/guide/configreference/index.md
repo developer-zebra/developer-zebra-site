@@ -1205,6 +1205,20 @@ Interaction between FunctionKeysCapturable and EnableFunctionKey_X is shown in t
 -----
 
 ## Navigation
+
+### DeleteCacheOnLaunch 
+**Applies only to Android devices running KitKat and higher**. Controls whether to erase contents of browser cache when launching the app. Disabled by default.
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled
+
+#### Example
+
+	:::xml
+			<DeleteCacheOnLaunch value="0"/>
+
 ### NavTimeout
 Defines the amount of time (in milliseconds) the application should wait to establish communication with the relevant server (as opposed to waiting for a page to fully load) before displaying the ‘bad link’ message. If the destination is unreachable, the bad link message might be displayed before the timeout is reached. The navigation timeout will not be invoked when navigating to an application’s start page. The recommended best practice is to store the first page locally to avoid connectivity issues at startup. The app can then redirect to an online page if desired.
 
@@ -1310,7 +1324,7 @@ Used to persist data when using Read/WriteUserSetting.
 ## ApplicationCache
 
 ### ApplicationCacheEnabled
-**Applies to only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. Disabled by default. **Note: This is unrelated to the web cache feature**.  
+**Applies to only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. Disabled by default. **Note: Unrelated to the web cache feature**.  
 
 <!-- removed, per eng. This is not a user-accessible dir. 
 Application cache data is stored on the device in:<br> 
@@ -1329,7 +1343,7 @@ Application cache data is stored on the device in:<br>
 
 
 ### ApplicationCacheOnExit
-**Applies only to Android devices running KitKat and higher**. Erases the HTML5 Application Cache app upon exiting the app. **Note: This is unrelated to the web cache feature**. Disabled by default. 
+**Applies only to Android devices running KitKat and higher**. Erases the HTML5 Application Cache app upon exiting the app. **Note: Unrelated to the web cache feature**. Disabled by default. 
 
 **Possible Values**:
 
@@ -1500,6 +1514,25 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 -----
 
 ## Application 
+
+### ClearApplicationCacheOnLaunch
+
+**Applies only to Android devices running KitKat and higher**. Erases the HTML5 Application Cache app on launching the app. **Note: Unrelated to the web cache feature**. Disabled by default.
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled
+
+#### Example
+	:::xml
+	    <Application>
+	        ...
+	      <ApplicationCache>
+			<ClearApplicationCacheOnLaunch value="0"/>	
+	      </ApplicationCache>   
+	        ...
+	    </Application>
 
 ### MixedContentMode
 **Applies only to Android devices running <u>Lollipop and higher</u>**. Controls loading of content from insecure sites based on the security level of the originating app. For example, if the app is loaded from a site secured with https://, `MIXED_CONTENT_NEVER_ALLOW` mode will block subsequent content requests that do not originate from similarly secured sites.
@@ -2368,6 +2401,33 @@ The default UserAgent values for PocketBrowser 2.1 and higher was changed to wor
 * True (non-variable) values can be used in combination with substitution variables.
 * If true values are used, take extra care to ensure that values are correct.
 * Some servers implement the UserAgent string based on the string provided by a visiting client, thereby helping to ensure server-side compatibility with as many client-side UserAgents as possible. 
+
+### ViewPort
+
+**Applies to devices running Android only**. Controls whether to apply meta tags that adjust the viewable areas of the app when initially launched. 
+
+**Supported meta tags**:
+
+**UseWideViewPort -** Value of "1" applies subsequent meta tags.
+**ViewPortWidth -** Sets the width of the page to match the screen width of the device.
+**ViewPortInitialScale -** Sets the initial zoom level when the page is first loaded.
+
+**Possible values**: 
+
+UseWideViewPort - 1 (enabled), 0 (disabled, no meta tags are applied)
+ViewPortWidth - [HTML5 ViewPort meta-tag settings](https://www.w3schools.com/css/css_rwd_viewport.asp)
+ViewPortInitialScale - [HTML5 ViewPort meta-tag settings](https://www.w3schools.com/css/css_rwd_viewport.asp)
+
+#### Example
+
+	:::xml
+	  <ViewPort>
+		<UseWideViewPort value="1"/>
+		<ViewPortWidth value="device-width"/>
+		<ViewPortInitialScale value="1.0"/>
+	  </ViewPort>
+
+**Note**: The values shown in the example above set the application page to match the device-screen width and the initial zoom level at 1x.
 
 ### ViewportEnabled
 **Applies to Windows Mobile/CE only**. Controls viewport meta tag processing (enabled by default). Must be greater than zero. 

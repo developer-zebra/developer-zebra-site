@@ -1215,6 +1215,21 @@ Interaction between FunctionKeysCapturable and EnableFunctionKey_X is shown in t
 
 ## Navigation
 
+<!-- Oct 15, 2018- not being exposed at this time, per eng.
+
+### ClearHistoryOnLaunch
+Controls whether Enterprise Browser history is deleted when the app is launched. Disabled by default. 
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled
+
+#### Example
+	:::xml
+	<ClearHistoryOnLaunch value="1" />
+-->
+
 ### DeleteCookiesOnLaunch 
 **Applies only to Android devices running KitKat and higher**. Controls whether to erase cookies stored by Enterprise Browser when an EB app is launched. Disabled by default.
 
@@ -1226,19 +1241,7 @@ Interaction between FunctionKeysCapturable and EnableFunctionKey_X is shown in t
 #### Example
 
 	:::xml
-	<Configuration>      
-	  <Applications>
-	    <Application>
-	        ...
-		<Navigation>
-	                ...
 			<DeleteCookiesOnLaunch value="0"/>
-	                ...
-		</Navigation>   
-	        ...
-	    </Application>
-	  </Applications>
-	</Configuration>
 
 ### DeleteCacheOnLaunch 
 **Applies only to Android devices running KitKat and higher**. Controls whether to erase contents of browser cache when launching the app. Disabled by default.
@@ -1372,7 +1375,7 @@ Used to persist data when using Read/WriteUserSetting.
 
 
 ### ClearApplicationCacheOnLaunch
-**Applies only to Android devices running KitKat and higher**. Controls whether to erase the HTML5 application cache app on launching the app. **Note: Unrelated to the web cache feature**. Disabled by default. Formerly known as ApplicationCacheOnExit, which is retained for backward compatibility. 
+**Applies only to Android devices running KitKat and higher**. Controls whether to erase the HTML5 application cache on launching the app. **Note: Unrelated to the web cache feature**. Disabled by default. Formerly known as ApplicationCacheOnExit, which is retained for backward compatibility. 
 
 **Possible Values**:
 
@@ -2329,7 +2332,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 	<Cookies value="1"/>
 
 ### DeleteCookiesOnExit
-**Applies only to Android devices running KitKat and higher**. Automatically erases cookies stored by Enterprise Browser when an EB app is exited gracefully. **Disabled by default**. 
+**Applies only to Android devices running KitKat and higher**. Controls whether to erase cookies stored by Enterprise Browser when an EB app is exited gracefully. **Disabled by default**. 
 
 **Possible Values**:
 

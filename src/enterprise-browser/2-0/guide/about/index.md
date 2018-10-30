@@ -83,16 +83,21 @@ Enhanced licensing process
 
 -----
 
-OLD OLD
-
 ### New Config.xml tags
 
-* **[&lt;DisableHardwareAcceleration&gt;](../configreference#disablehardwareacceleration) -** Optionally disables hardware acceleration at WebView level within an Enterprise Browser app. 
-* **[&lt;ClientCertificate&gt;](../configreference#clientcertificate) -** Optionally allows the alias name of a client certificate to be specified. **Applies only to devices running Android Lollipop and higher**. 
-* **[&lt;DisableAllIME&gt;](../configreference#disableallime) -** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **Applies to Android devices running Lollipop and higher.** 
-* **[&lt;HideSystemBar&gt;](../configreference#hidesystembar) -** Controls whether the System bar (also known as the Navigation bar, which contains HOME, BACK and RECENT buttons) is displayed within the Enterprise Browser app. **Applies only to the Zebra MC18 devices running Android Lollipop and higher or other devices with MX 7.1/OSX 6.2 and higher**. 
-* **Enterprise Browser version info is now captured in the** `Config.xml` **file**. On startup, EB apps compare and log information about possible mismatches between the `Config.xml` in use and the version of EB installed on the device. [More info](../configreference#eb_versiontag). 
+**For devices running Android**: 
 
+* **[&lt;ViewPort&gt;](../configreference#viewport) -** Controls whether to apply meta tags that adjust the viewable areas of the app for a device. 
+* **[&lt;DeleteCacheOnLaunch&gt;](../configreference#deletecacheonlaunch) -** Controls whether to erase contents of browser cache when exiting the app. 
+* **[&lt;ClearApplicationCacheOnLaunch&gt;](../configreference#clearapplicationcacheonlaunch) -** Controls whether to erase the HTML5 application cache on launching the app. 
+* **[&lt;DeleteCookiesOnLaunch&gt;](../configreference#deletecookiesonlaunch) -** Controls whether to erase cookies stored by Enterprise Browser when an EB app is exited gracefully. 
+* **[&lt;DisplayZoomControls&gt;](../configreference#displayzoomcontrols) -** Controls whether to display on-screen zoom controls when using the built-in zoom mechanisms. 
+
+<!-- 10/15/18- not being exposed at this time, per eng.
+
+* **[&lt;ClearHistoryOnLaunch&gt;](../configreference#clearhistoryonlaunch) -** Controls whether to display on-screen zoom controls when using the built-in zoom mechanisms. 
+
+ -->
 OLD OLD
 
 ### Enhanced Config.xml tags

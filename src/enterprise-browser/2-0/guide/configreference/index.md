@@ -1215,6 +1215,31 @@ Interaction between FunctionKeysCapturable and EnableFunctionKey_X is shown in t
 
 ## Navigation
 
+### DeleteCookiesOnLaunch 
+**Applies only to Android devices running KitKat and higher**. Controls whether to erase cookies stored by Enterprise Browser when an EB app is launched. Disabled by default.
+
+**Possible Values**:
+
+* **0 - Disabled (default)**
+* 1 - Enabled
+
+#### Example
+
+	:::xml
+	<Configuration>      
+	  <Applications>
+	    <Application>
+	        ...
+		<Navigation>
+	                ...
+			<DeleteCookiesOnLaunch value="0"/>
+	                ...
+		</Navigation>   
+	        ...
+	    </Application>
+	  </Applications>
+	</Configuration>
+
 ### DeleteCacheOnLaunch 
 **Applies only to Android devices running KitKat and higher**. Controls whether to erase contents of browser cache when launching the app. Disabled by default.
 
@@ -1270,7 +1295,7 @@ Forces a particular screen orientation (portrait or landscape) when an EB app la
 #### Example
 
 	:::xml
-	<LockOrientationvalue = "[value]"/>
+	<LockOrientationvalue = "LANDSCAPE"/>
 
 -----
 
@@ -1335,29 +1360,42 @@ Used to persist data when using Read/WriteUserSetting.
 ### ApplicationCacheEnabled
 **Applies to only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. Disabled by default. **Note: Unrelated to the web cache feature**.  
 
-<!-- removed, per eng. This is not a user-accessible dir. 
-Application cache data is stored on the device in:<br> 
-`/data/data/com.symbol.enterprisebrowser/app_webview/Application Cache/Cache`<br>
--->
-
 **Possible Values**:
 
-* **0 - Do not cache (default)**
-* 1 - Cache HTML5 apps
+* 0 - Do not cache 
+* **1 - Cache HTML5 apps (default)**
 
 #### Example
 
 	:::xml
-	<ApplicationCacheEnabled value="0"/>
+	<ApplicationCacheEnabled value="1"/>
 
 
-### ApplicationCacheOnExit
-**Applies only to Android devices running KitKat and higher**. Erases the HTML5 Application Cache app upon exiting the app. **Note: Unrelated to the web cache feature**. Disabled by default. 
+### ClearApplicationCacheOnLaunch
+**Applies only to Android devices running KitKat and higher**. Controls whether to erase the HTML5 application cache app on launching the app. **Note: Unrelated to the web cache feature**. Disabled by default. Formerly known as ApplicationCacheOnExit, which is retained for backward compatibility. 
 
 **Possible Values**:
 
 * **0 - Do not clear the cache on exit (default)** 
-* 1 - Clear the HTML5 app cache on exit
+* 1 - Clear the cache on exit
+
+#### Example
+
+	:::xml
+			<ClearApplicationCacheOnLaunch value="0"/>	
+
+
+### ApplicationCacheOnExit (deprecated)
+
+##### THIS TAG IS DEPRECATED
+Use ClearApplicationCacheOnLaunch (above) instead.
+
+**Applies only to Android devices running KitKat and higher**. Controls whether to erase the HTML5 application cache upon exiting the app. **Note: Unrelated to the web cache feature**. Disabled by default. 
+
+**Possible Values**:
+
+* **0 - Do not clear the cache on exit (default)** 
+* 1 - Clear the cache on exit
 
 #### Example
 	:::xml
@@ -1865,12 +1903,12 @@ The following Web SQL methods are supported:
 
 **Possible Values**:
 
-* **0 - Disabled (default)**
-* 1 - Enabled
+* 0 - Disabled 
+* **1 - Enabled (default)**
 
 #### Example
 	:::xml
-	<DatabaseEnabledvalue="0"/>
+	<DatabaseEnabledvalue="1"/>
 
 ### GeoLocationEnabled
 **For Android, applies only to GMS devices running KitKat and higher**. Controls HTML5 Geolocation functionality. When enabled on a device that supports geolocation and the device is in range of a GPS network, the geolocation data is returned to the defined JavaScript callback. When disabled, the defined JavaScript error callback is called, notifying the app that the permission to use geolocation is denied. **Note the upper-case "L" in the Android version of the tag**. 

@@ -116,13 +116,17 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 -----
 
 	:::xml
-	// Enterprise Browser 1.8 configuration file for Android
+	// Enterprise Browser 2.0 configuration file for Android
 	// IMPORTANT: File differs for Windows Mobile/CE
 	// DO NOT REMOVE THE EB_VERSION TAG (below) or modify its contents. 
 	// This auto-generated tag is for diagnostics and logging purposes. 
 
+	<?xml version = "1.0"?>
+<!--
+EnterpriseBrowser_v0.30.10.18 Configuration file
+-->
 	<Configuration>
-	   <EB_VERSION value="1.8.0.0"/>
+	   <EB_VERSION value="0.30.10.18"/>
 	   
 	  <DebugButtons>
 	    <DebugButtonsEnabled value="0" />
@@ -192,8 +196,9 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	      
 	  <Screen>
 	    <FullScreen value="1"/>
-		<PageZoom value="1.0" />
-		<EnableZoom value="1"/>
+	    <PageZoom value="1.0" />
+	    <EnableZoom value="1"/>
+	    <DisplayZoomControls value="0"/>
 	  </Screen>
 	  
 	  <WebServer>  
@@ -202,6 +207,11 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	    <WebFolder VALUE=""/>  
 	    <Public VALUE="0"/>
 	  </WebServer>
+		
+	  <TTS>
+	    <TTSEnabled value="1"/>
+	    <WelcomeText value="Enterprise Browser is now voice enabled"/>
+	  </TTS>
 	  
 	  <InjectEBLibraries>
 		<JSLibraries value="0"/>
@@ -225,36 +235,11 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	  </VoidConnection>
 	   
 	  <DeviceKeys>
-	    <FunctionKeysCapturable	  value="0"/>
-	    <EnableFunctionKey_F1     value="1"/>
-	    <EnableFunctionKey_F2     value="1"/>
-	    <EnableFunctionKey_F3     value="1"/>
-	    <EnableFunctionKey_F4     value="1"/>
-	    <EnableFunctionKey_F5     value="1"/>
-	    <EnableFunctionKey_F6     value="1"/>
-	    <EnableFunctionKey_F7     value="1"/>
-	    <EnableFunctionKey_F8     value="1"/>
-	    <EnableFunctionKey_F9     value="1"/>
-	    <EnableFunctionKey_F10    value="1"/>
-	    <EnableFunctionKey_F11    value="1"/>
-	    <EnableFunctionKey_F12    value="1"/>
-	    <EnableApplicationKey_A1  value="1"/>
-	    <EnableApplicationKey_A2  value="1"/>
-	    <EnableApplicationKey_A3  value="1"/>
-	    <EnableApplicationKey_A4  value="1"/>
-	    <EnableApplicationKey_A5  value="1"/>
-	    <EnableApplicationKey_A6  value="1"/>
-	    <EnableApplicationKey_A7  value="1"/>
-	    <EnableApplicationKey_A8  value="1"/>
 	  </DeviceKeys>
 	  
 	  <Navigation>
 	    <NavTimeout value="45000"/>
 	  </Navigation>
-
-	  <ScreenOrientation>
-	    <AutoRotate value="1" />
-	  </ScreenOrientation>
 	 
 	  <TabInstance>
 	    <NewTabPhysicalMemLimit value="90"/>
@@ -262,7 +247,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	  </TabInstance>
 	  
 	  <Engine>
-	    <EngineInUse value="IE"/>
+	    <EngineInUse value="AndroidStock"/>
 	  </Engine>
 	  
 	  <Applications>
@@ -295,8 +280,9 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	      </Scanner>
 		  
 		  <ApplicationCache>
-		    <ApplicationCacheEnabled value="0"/>
-	        <ApplicationCacheOnExit value="0"/>		
+		    <ApplicationCacheEnabled value="1"/>
+			<ClearApplicationCacheOnLaunch value="0"/>	
+	        <ClearApplicationCacheOnExit value="0"/>		
 	      </ApplicationCache>
 	      
 		  <Authentication>
@@ -308,7 +294,7 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	      
 	      <HTMLStyles>
 	        <JavascriptEnabled value="1"/>
-			<DatabaseEnabled value="0"/>
+			<DatabaseEnabled value="1"/>
 			<DomStorageEnabled value="1"/>
 			<GeoLocationEnabled	value="0"/>
 	        <FontFamily value="Droid Sans Fallback"/>
@@ -346,15 +332,23 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	        <UserAgent value="" />
 			<NetworkCookieDatabase value="file://%INSTALLDIR%/cookies.db"/>
 			<VerifyPeerCertificate value="1"/>
+	    	<Cookies value="1"/>		
+			<DeleteCookiesOnLaunch value="0"/>
 			<DeleteCookiesOnExit value="0"/>
-	    	<Cookies value="1"/>
 			<SaveFormData value="0"/>
 		    <SetCacheMode value="LOAD_DEFAULT"/>
+			<DeleteCacheOnLaunch value="0"/>
 			<DeleteCacheOnExit value="0"/>
 			<BlockNetworkImage value="0"/>
 		    <BlockNetworkLoads value="0"/>
 		    <MixedContentMode value=""/>
 		  </Navigation>   
+		  
+		  <ViewPort>
+			<UseWideViewPort value="0"/>
+			<ViewPortWidth value=""/>
+			<ViewPortInitialScale value=""/>
+		  </ViewPort>
 	    
 		  <DeviceKeys>
 	        <EnableCtrlKey_A    value="1"/>
@@ -366,12 +360,12 @@ In Enterprise Browser 1.8 and higher, the automatically generated [&lt;EB_VERSIO
 	  
 	      <DefaultMetaTags>
 	      </DefaultMetaTags>
-
 	      <CustomDOMElements value=""/>
 	    
 	    </Application>
-	  </Applications>
+	</Applications>
 	</Configuration>
+
 
 
 -----

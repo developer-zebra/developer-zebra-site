@@ -26,7 +26,7 @@ The location of the configuration file on the device varies by target and platfo
 * If multiple `Config.xml` files are required for a single device, they can be configured and selected at runtime using the /C: configuration parameter or by using Shortcuts. See the [Shortcut Creator Guide](../ShortcutCreator) for details.
 
 ### Persistent Installations
-If a `Config.xml` must be retained after a cold boot, a persistent installation can be selected (applies to Windows devices only). In such systems: 
+If a `Config.xml` must be retained after a cold boot, a persistent installation can be selected (applies only to Windows devices). In such systems: 
 
 * The `Config.xml` file is permanently stored in: `\Application\EnterpriseBrowser\Config\Config.xml` 
 * On cold boot the `Config.xml` is copied to: `\Program Files\EnterpriseBrowser\Config\Config.xml` 
@@ -988,7 +988,7 @@ Sets the Enterprise Browser app to display in full screen mode, hiding the OS fr
 	<FullScreen value="0"/>
 
 ### ShowLicenseConfirmation
-**Applies to Windows Mobile/CE**. Controls the display of the “Licensed to…” dialog at launch (on licensed devices only). Has no effect on unlicensed devices. 
+**Applies only to Windows Mobile/CE**. Controls the display of the “Licensed to…” dialog at launch (on licensed devices only). Has no effect on unlicensed devices. 
 
 **Possible Values**:
 
@@ -1000,7 +1000,7 @@ Sets the Enterprise Browser app to display in full screen mode, hiding the OS fr
 	<ShowLicenseConfirmation value="1"/>
 
 ### EnableZoom
-**Applies to Android only**. Sets whether the WebView should use its built-in zoom mechanisms. Enabled by default. 
+**Applies only to Android**. Sets whether the WebView should use its built-in zoom mechanisms. Enabled by default. 
 
 **Possible Values**:
 
@@ -1687,7 +1687,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 	<isWindowsKey value="1"/>
 
 ### usedwforscanning
-**Applies to Android only**. Controls whether to 'use DataWedge (DW) for scanning' or to go through [Enterprise Browser APIs](../../api/barcode). Additional settings adjustments might be required to use this tag. See the [DataWedge Usage Guide](../datawedge) for important details about DataWedge configuration and potential conflicts with Enterprise Browser. 
+**Applies only to Android**. Controls whether to 'use DataWedge (DW) for scanning' or to go through [Enterprise Browser APIs](../../api/barcode). Additional settings adjustments might be required to use this tag. See the [DataWedge Usage Guide](../datawedge) for important details about DataWedge configuration and potential conflicts with Enterprise Browser. 
 
 **Possible Values**:
 
@@ -1699,7 +1699,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 	<useDWforScanning value="0"/>
 
 ### DisableHardwareAcceleration
-**Applies to Android KitKat and higher only**. Controls whether hardware acceleration at WebView level within an Enterprise Browser app is disabled. **By default, acceleration is enabled** (tag value=0). 
+**Applies only to Android KitKat and higher**. Controls whether hardware acceleration at WebView level within an Enterprise Browser app is disabled. **By default, acceleration is enabled** (tag value=0). 
 
 **Possible Values**:
 
@@ -1910,7 +1910,7 @@ The following Web SQL methods are supported:
 
 
 ###ClearTypeEnabled
-**Applies to Windows Mobile only**. Controls whether ClearType is used. 
+**Applies only to Windows Mobile**. Controls whether ClearType is used. 
 
 **Possible Values**:
 
@@ -1922,7 +1922,7 @@ The following Web SQL methods are supported:
 	<ClearTypeEnabled value="0"/>
 
 ###FitToScreenEnabled
-**Applies to Windows Mobile with IE rendering engine only**. Automatically expands the application window to fit the screen.
+**Applies only to Windows Mobile with IE rendering engine**. Automatically expands the application window to fit the screen.
 
 **Possible Values**:
 
@@ -1956,7 +1956,7 @@ Specifies the location of TrueType fonts on the device. For Zebra Technologies W
 	<FontDirectory value="\\Windows"/>
 
 ### AutoPlayMediaElements
-**Applies to Android KitKat and higher only**. Controls whether media elements will automatically play with no requirement for a user gesture (i.e. pressing PLAY). Enabled by default. A setting of "0" will disable AutoPlay and require a user action to play media. 
+**Applies only to Android KitKat and higher**. Controls whether media elements will automatically play with no requirement for a user gesture (i.e. pressing PLAY). Enabled by default. A setting of "0" will disable AutoPlay and require a user action to play media. 
 
 **Possible Values**:
 
@@ -1992,7 +1992,7 @@ Controls whether JavaScript is enabled on the device. JavaScript is enabled by d
 	<TextSelectionEnabled value="0"/>
 
 ### UseNativeFonts
-**Applies to Windows Mobile and Windows CE only**. Controls which fonts will be used. When set to ‘0’ (default) the FreeType library will be used as on apps built with RMS 2.x. When set to ‘1’ the native font engine on the device is used. A setting of ‘1’ overrides the ‘FontFamily’ setting. On localized devices from 4.1 and higher, the native font engine will be used by default. The FreeType library cannot render localized characters such as Asian and some accented European characters. The log file displays the font engine in use on launch. Some early BSPs of CE7 do not support the native font render. This config element is not currently available on the MC92, VC70 or WT41N0 devices.
+**Applies only to Windows Mobile/CE**. Controls which fonts will be used. When set to ‘0’ (default) the FreeType library will be used as on apps built with RMS 2.x. When set to ‘1’ the native font engine on the device is used. A setting of ‘1’ overrides the ‘FontFamily’ setting. On localized devices from 4.1 and higher, the native font engine will be used by default. The FreeType library cannot render localized characters such as Asian and some accented European characters. The log file displays the font engine in use on launch. Some early BSPs of CE7 do not support the native font render. This config element is not currently available on the MC92, VC70 or WT41N0 devices.
 
 **Possible Values**:
 
@@ -2007,7 +2007,7 @@ Controls whether JavaScript is enabled on the device. JavaScript is enabled by d
 
 ## Soft Input Panel (SIP)
 ### ResizeOnSIP
-**Applies to Android and Windows Mobile only**. Controls window resizing when the soft input panel (SIP, or on-screen keyboard) is displayed. When enabled, the browser window will resize to accommodate the SIP, when displayed. If the SIP has been moved to the top half of the screen, the browser window will reduce in size from the top. Requires SIP module pre-load. Not compatible with Windows CE or the IE rendering engine. Not compatible with Finger Scrolling. The SIP always appears at the bottom of the screen. See also [WebViewLayout](#webviewlayout).
+**Applies only to Android and Windows Mobile**. Controls window resizing when the soft input panel (SIP, or on-screen keyboard) is displayed. When enabled, the browser window will resize to accommodate the SIP, when displayed. If the SIP has been moved to the top half of the screen, the browser window will reduce in size from the top. Requires SIP module pre-load. Not compatible with Windows CE or the IE rendering engine. Not compatible with Finger Scrolling. The SIP always appears at the bottom of the screen. See also [WebViewLayout](#webviewlayout).
 
 **Note: On Windows Mobile devices**, screen rotation from portrait to landscape mode can sometimes cause the SIP to be hidden from view, and/or on Windows Mobile/CE to behave abnormally. To avoid this issue, Zebra recommends that the [AutoRotate](../configreference/#autorotate) parameter for screen orientation be disabled.  
 
@@ -2021,7 +2021,7 @@ Controls whether JavaScript is enabled on the device. JavaScript is enabled by d
 	<ResizeOnSIP value="1"/>
 
 ### EnableSIP
-**Applies to Enterprise Browser 1.2 for Android only**. Controls display of soft input panel (SIP, or on-screen keyboard). On EB 1.3 and higher for Android, use the [SIP API](../../api/Sip). On Windows Mobile/CE, use the top and left position parameters of the SIP module to position it off the screen and make it inaccessible to the user.
+**Applies only to Enterprise Browser 1.2 for Android**. Controls display of soft input panel (SIP, or on-screen keyboard). On EB 1.3 and higher for Android, use the [SIP API](../../api/Sip). On Windows Mobile/CE, use the top and left position parameters of the SIP module to position it off the screen and make it inaccessible to the user.
 
 **Note: On devices running Windows CE 6**, screen distortion might be displayed when scrolling while the SIP module is enabled. 
 
@@ -2129,7 +2129,7 @@ Controls the frequency of the device beeper sound when a scanned barcode is not 
 	<InvalidDecodeFrequency value="0xFFFF"/>
 
 ### ScanDecodeWav
-Specifies a '.wav'/'.ogg' file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Case sensitive. '.ogg' file is supported on Android platform only. The ScanDecodeWav config tag does not rely on DecodeDuration, DecodeFrequency and DecodeVolume config tags. **Applies only to Windows Mobile/CE and Android KitKat and above**. Also see [remarks](#remarks) section below.
+**Applies only to Windows Mobile/CE and Android KitKat and higher**. Specifies a '.wav'/'.ogg' file to be played when a scanned barcode is successfully decoded. File must be resident on the device. Overrides all scanner beeper settings. Case sensitive. '.ogg' file is supported on Android platform only. The ScanDecodeWav config tag does not rely on DecodeDuration, DecodeFrequency and DecodeVolume config tags. Also see [remarks](#remarks) section below.
 
 **Possible Values**:
 
@@ -2413,7 +2413,7 @@ The default UserAgent values for PocketBrowser 2.1 and higher was changed to wor
 
 ### ViewPort
 
-**Applies to devices running Android only**. Controls whether to apply meta tags that adjust the viewable areas of the app when initially launched. More about the [viewport spec](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag). 
+**Applies only to devices running Android**. Controls whether to apply meta tags that adjust the viewable areas of the app when initially launched. More about the [viewport spec](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag). 
 
 **Supported meta tags**:
 
@@ -2506,7 +2506,7 @@ Controls whether server certificates will be verified against the internal certi
 	<VerifyPeerCertificate value="1"/>
 
 ### ClientCertPath
-**Applies to Enterprise Browser 1.5 and higher on Windows Mobile/CE with Webkit engine only**. Specifies the path to certificate (`.pem`) file(s) requested by a server for client authentication when connecting via `https://`. Certificate files should contain no more than one certificate each. Expired certificates are ignored. See the [Certificates guide](../certificates/) for help creating certificates. 
+**Applies only to Enterprise Browser 1.5 and higher on Windows Mobile/CE with Webkit engine**. Specifies the path to certificate (`.pem`) file(s) requested by a server for client authentication when connecting via `https://`. Certificate files should contain no more than one certificate each. Expired certificates are ignored. See the [Certificates guide](../certificates/) for help creating certificates. 
 
 **Possible Values**:
 
@@ -2567,7 +2567,7 @@ The browser cache size, in whole MBs.
 	<DeleteCacheOnExit value="0"/>
 
 ### DiskCache
-**Applies to Windows Mobile/CE with Webkit engine only**. Specifies the maximum amount of device storage (in MB) to be used for the web-page cache, which can improve page-access times on subsequent visits to a site. The disk cache persists after EB quits. **Enabled by default in Enterprise Browser 1.5 and higher. To disable, remove or comment this tag**. 
+**Applies only to Windows Mobile/CE with Webkit engine**. Specifies the maximum amount of device storage (in MB) to be used for the web-page cache, which can improve page-access times on subsequent visits to a site. The disk cache persists after EB quits. **Enabled by default in Enterprise Browser 1.5 and higher. To disable, remove or comment this tag**. 
 
 **Note**: Cached pages expire. See the DiskCacheExpTimeFactor parameter for more information.
 
@@ -2580,7 +2580,7 @@ The browser cache size, in whole MBs.
 	<DiskCache  VALUE="5MB"/>
 
 ### DiskCachePath
-**Applies to Windows Mobile/CE with Webkit engine only**. Allows the storage location for cached browser pages and resources to be changed from the default setting. **Use this parameter only to change the cache directory from its default of** `\Program Files\EnterpriseBrowser\`. Disabled by default. If a directory in the specified path does not exist, it will be created. 
+**Applies only to Windows Mobile/CE with Webkit engine**. Allows the storage location for cached browser pages and resources to be changed from the default setting. **Use this parameter only to change the cache directory from its default of** `\Program Files\EnterpriseBrowser\`. Disabled by default. If a directory in the specified path does not exist, it will be created. 
 
 **Possible Values**:
 
@@ -2592,7 +2592,7 @@ The browser cache size, in whole MBs.
 	<DiskCachePath  VALUE="file://%INSTALLDIR%\EnterpriseBrowser\" />
 
 ### DiskCacheExpTimeFactor
-**Applies to Windows Mobile/CE with Webkit engine only**. Specifies the acceptable span of time past which a cached resource is no longer considered "fresh" by Enterprise Browser. Applies only if the RFC-standard method is indeterminate (**see Note**). This value is expressed as a percentage (from 0-100) calculated using the difference between the "Last-Modified" value of the cached resource and the date and time the resource is accessed by Enterprise Browser. <!--For example, if the freshness lifespan of a resource was specified as 30 days, a DiskCacheExpTimeFactor value of 10 percent would cause EB to reload the resource if accessed after 33 days.-->Larger numbers keep cached resources fresh longer; smaller numbers cause them to be reloaded more often. A value of "0" causes all resources to reload with every access, effectively disabling the disk cache. Default value is 10 (percent). 
+**Applies only to Windows Mobile/CE with Webkit engine**. Specifies the acceptable span of time past which a cached resource is no longer considered "fresh" by Enterprise Browser. Applies only if the RFC-standard method is indeterminate (**see Note**). This value is expressed as a percentage (from 0-100) calculated using the difference between the "Last-Modified" value of the cached resource and the date and time the resource is accessed by Enterprise Browser. <!--For example, if the freshness lifespan of a resource was specified as 30 days, a DiskCacheExpTimeFactor value of 10 percent would cause EB to reload the resource if accessed after 33 days.-->Larger numbers keep cached resources fresh longer; smaller numbers cause them to be reloaded more often. A value of "0" causes all resources to reload with every access, effectively disabling the disk cache. Default value is 10 (percent). 
 
 **Note**: To determine the freshness of a resource, Enterprise Browser first reads the "max-age" response directive or "Expires" field in the server response header. If one of those parameters indicates that a cached resource has expired, EB requests a refresh by sending an "If-Modified-Since" request to the server and reloads the resource based on the response. If neither attribute is configured, EB looks for a "Last-Modified" header for calculating the freshness lifetime using the heuristic time factor described above. For more information, please refer to the [IETF's definition of Freshness](https://tools.ietf.org/html/rfc7234#section-4.2). 
 
@@ -2723,7 +2723,7 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](.
 -----
 
 ## KeepAlive
-**Applies to Windows Mobile/CE with Webkit engine only**. Controls whether HTTP connections will be maintained between requests. When enabled (default), maintains a connection between the web server and client. When disabled, connection is closed when the request is complete. 
+**Applies only to Windows Mobile/CE with Webkit engine**. Controls whether HTTP connections will be maintained between requests. When enabled (default), maintains a connection between the web server and client. When disabled, connection is closed when the request is complete. 
 **Possible Values**:
 
 * 0 - Disabled
@@ -2746,10 +2746,10 @@ Due to its asynchronous battery notification, the Enterprise Tablet does not sup
 > **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
 
 ### <a name="_datawedge"></a>DataWedge-Enterprise Browser Conflicts
-**This issue applies to Android only**. Under certain conditions involving Enterprise Browser, scanning with the DataWedge application on Zebra Android devices is disabled. For complete details, see the [DataWedge Usage Guide](../datawedge).  
+**This issue applies only to Android**. Under certain conditions involving Enterprise Browser, scanning with the DataWedge application on Zebra Android devices is disabled. For complete details, see the [DataWedge Usage Guide](../datawedge).  
 
 ### <a name="_fnbehavior"></a>FunctionKeysCapturable-EnableFunctionKey Interaction
-**Applies to only Windows Mobile/CE devices**. 
+**Applies only to Windows Mobile/CE devices**. 
 
 On Windows Mobile/CE, full control is given to the developer over how the application handles function keys, but such settings persist only until the next warm boot. Also, the default behavior of function keys will vary from one device to another. On the MC75a, for example, the red and green phone keys also represent F3 and F4 keys, and on many devices the volume keys also can be mapped as function keys. 
 
@@ -2797,7 +2797,7 @@ The table below shows the behavior of Enterprise Browser when function keys are 
 		</td>
 	</tr>
 </table>
-_This table applies to Windows Mobile and Windows CE devices only_. 
+_This table applies only to Windows Mobile and Windows CE devices_. 
 
 ### <a name="intent"></a>IntentReceiver
 The `IntentReciever` tag includes parameters to enable/disable the Intent function and to define the Action and Category of the Intent itself. The syntax for these parameters is as follows: 

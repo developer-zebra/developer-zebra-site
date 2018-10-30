@@ -960,6 +960,21 @@ Specifies the maximum allowable size of the log file, after which no more logs w
 -----
 
 ## Screen
+
+### DisplayZoomControls
+**Applies only to devices running Android**. Controls whether to display on-screen zoom controls when using the built-in zoom mechanisms. Disabled by default.
+
+**Possible Values**:
+
+* **0 - Disabled**
+* 1 - Enabled
+
+#### Example
+	:::xml
+	<Screen>   
+		<DisplayZoomControls value="0"/> 
+	</Screen>
+
 ### FullScreen
 Sets the Enterprise Browser app to display in full screen mode, hiding the OS from the user unless specifically minimized using the Application API. For Windows Mobile devices that include a custom Zebra user interface, access is provided to the status bar at the top of the screen. Enabled by default. 
 
@@ -1511,7 +1526,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 
 ### ClearApplicationCacheOnLaunch
 
-**Applies only to Android devices running KitKat and higher**. Erases the HTML5 Application Cache app on launching the app. **Note: Unrelated to the web cache feature**. Disabled by default.
+**Applies only to Android devices running KitKat and higher**. Erases the HTML5 application cache when the app is launched. **Note: Unrelated to the web cache feature**. Disabled by default.
 
 **Possible Values**:
 
@@ -2398,19 +2413,29 @@ The default UserAgent values for PocketBrowser 2.1 and higher was changed to wor
 
 ### ViewPort
 
-**Applies to devices running Android only**. Controls whether to apply meta tags that adjust the viewable areas of the app when initially launched. 
+**Applies to devices running Android only**. Controls whether to apply meta tags that adjust the viewable areas of the app when initially launched. More about the [viewport spec](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag). 
 
 **Supported meta tags**:
 
-**UseWideViewPort -** Value of "1" applies subsequent meta tags.
-**ViewPortWidth -** Sets the width of the page to match the screen width of the device.
-**ViewPortInitialScale -** Sets the initial zoom level when the page is first loaded.
+* **UseWideViewPort -** Value of "1" applies subsequent meta tags (default=0). 
+* **ViewPortWidth -** Sets the width of the page.
+* **ViewPortInitialScale -** Sets the initial zoom level of the page.
 
 **Possible values**: 
 
-UseWideViewPort - 1 (enabled), 0 (disabled, no meta tags are applied)
-ViewPortWidth - [HTML5 ViewPort meta-tag settings](https://www.w3schools.com/css/css_rwd_viewport.asp)
-ViewPortInitialScale - [HTML5 ViewPort meta-tag settings](https://www.w3schools.com/css/css_rwd_viewport.asp)
+* **UseWideViewPort**
+   * 1 (enabled), meta tags (below) are applied
+   * **0 (disabled), meta tags are NOT applied (default)**
+* **ViewPortWidth** [more info](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag#Viewport_width_and_screen_width)
+   * Accepts [HTML5-spec viewport settings](https://www.w3.org/TR/css-device-adapt-1/)
+   * Number of CSS pixels (i.e. 600) at 100% scale
+   * **device-width -** sets page width to match that of device
+* **ViewPortInitialScale** [more info](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag#Viewport_width_and_screen_width)
+   * Accepts [HTML5-spec viewport settings](https://www.w3.org/TR/css-device-adapt-1/)
+   * Number corresponding to fixed initial magnification value (i.e. "1.5" = 1.5x zoom)
+   * **maximum-scale -** caps the magnification value ("=1.0"=no zoom-in) 
+   * **minimum-scale -** sets a base magnification value ("=1.0"=no zoom-out)
+   * **user-scalable -** Controls whether user is allowed to zoom (=yes, =no)
 
 #### Example
 
@@ -2421,7 +2446,7 @@ ViewPortInitialScale - [HTML5 ViewPort meta-tag settings](https://www.w3schools.
 		<ViewPortInitialScale value="1.0"/>
 	  </ViewPort>
 
-**Note**: The values shown in the example above set the application page to match the device-screen width and the initial zoom level at 1x.
+**Note: Zebra recommends using the values shown in the example above** on Android devices, which set the application page to match the width of the device screen and the initial zoom level at 1x.
 
 ### ViewportEnabled
 **Applies to Windows Mobile/CE only**. Controls viewport meta tag processing (enabled by default). Must be greater than zero. 

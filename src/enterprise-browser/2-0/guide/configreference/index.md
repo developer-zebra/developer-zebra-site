@@ -555,7 +555,7 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 
 
 ### JSLibraries
-**Applies only to devices running Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into [the DOM](../dom/#whatisthedom) of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called, but in most cases will not conflict with such references. **See Notes**. 
+**Applies only to Android KitKat and higher**. Causes the Enterprise Browser JavaScript API libraries (`ebapi-modules.js` and `elements.js`) to be injected into [the DOM](../dom/#whatisthedom) of every HTML page. Disabled by default. Enabling this feature (value=1) removes the requirement to manually include a reference to the API libraries on every page from which an API is called, but in most cases will not conflict with such references. **See Notes**. 
 
 **Important Notes**: 
 
@@ -578,7 +578,7 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 	</InjectEBLibraries>
 
 ### WebViewLayout
-**Applies only to devices running Android KitKat and higher**. Allows one or more of the WebView layout parameters to be specified (in pixels) when an Enterprise Browser app is launched. *Note**: This tag is not included in the default `Config.xml` file. If one or more of these layout parameters are required on startup, tags must be added as shown in the example below.
+**Applies only to Android KitKat and higher**. Allows one or more of the WebView layout parameters to be specified (in pixels) when an Enterprise Browser app is launched. *Note**: This tag is not included in the default `Config.xml` file. If one or more of these layout parameters are required on startup, tags must be added as shown in the example below.
 
 **Supported parameters**: 
 
@@ -945,7 +945,7 @@ Specifies the maximum allowable size of the log file, after which no more logs w
 	<RegEXFile value="file://%INSTALLDIR%\Config\RegEx.xml"/>
 
 ### PluginFile
-**Applies to Windows Mobile/CE only. Not applicable to the Enterprise Tablet**. Specifies location of the plug-in file (a .DLL on the device), which facilitates mapping between modules and plug-ins on the device. **Changing this file or its location is not recommended, and might prevent an app from launching**. 
+**Applies only to Windows Mobile/CE. Not applicable to the Enterprise Tablet**. Specifies location of the plug-in file (a .DLL on the device), which facilitates mapping between modules and plug-ins on the device. **Changing this file or its location is not recommended, and might prevent an app from launching**. 
 
 **Possible Values**:
 
@@ -962,7 +962,7 @@ Specifies the maximum allowable size of the log file, after which no more logs w
 ## Screen
 
 ### DisplayZoomControls
-**Applies only to devices running Android**. Controls whether to display on-screen zoom controls when using the built-in zoom mechanisms. Disabled by default.
+**Applies only to Android**. Controls whether to display on-screen zoom controls when using the built-in zoom mechanisms. Disabled by default.
 
 **Possible Values**:
 
@@ -1292,7 +1292,7 @@ Used to persist data when using Read/WriteUserSetting.
 
 ## WebDB
 ### WebStorageDBPath
-**Applies to Windows Mobile/CE only**. <!-- 7/7/17 removed "...using the Zebra Webkit only" per eng.--> Sets the path to an existing directory for storage of web storage databases.  Case sensitive. 
+**Applies only to Windows Mobile/CE**. <!-- 7/7/17 removed "...using the Zebra Webkit only" per eng.--> Sets the path to an existing directory for storage of web storage databases.  Case sensitive. 
 
 **Possible Values**:
 
@@ -1364,7 +1364,7 @@ Application cache data is stored on the device in:<br>
 	<ApplicationCacheOnExit value="0"/>		
 
 ### ApplicationCacheQuota
-**Applies to Windows Mobile/CE using the Zebra Webkit only**. Application Cache data maximum quota per application. 
+**Applies only to Windows Mobile/CE using the Zebra Webkit**. Application Cache data maximum quota per application. 
 
 **Possible Values**:
 
@@ -1430,7 +1430,7 @@ Defines plug-ins to be pre-loaded rather than loading as needed by a program fun
 	<PreloadLegacyActiveX value="1"/>
 
 ### PreloadLegacyGeneric
-**Applies to Windows Mobile/CE with the Zebra Webkit only**. Determines whether to preload the NPAPI plugin to mimic the Generic ActiveX object in Webkit. On the Enterprise Tablet this plug-in is automatically loaded when the JSObjects plug-in is preloaded.
+**Applies only to Windows Mobile/CE with the Zebra Webkit**. Determines whether to preload the NPAPI plugin to mimic the Generic ActiveX object in Webkit. On the Enterprise Tablet this plug-in is automatically loaded when the JSObjects plug-in is preloaded.
 
 **Possible Values**:
 
@@ -1663,7 +1663,7 @@ Determines whether to pre-load the NPAPI plug-in to provide native JavaScript ob
 	<HTTPS_Proxy value="https://my.proxy.com:8181"/>
 
 ### No_Proxy
-**Applies to Windows Mobile/CE only**. <!-- **Applies to the Zebra Webkit engine only**. 7/7/17- changed to WM/CE only, per eng.--> Used to specify sites to be accessed directly rather than through a proxy. Accepts a comma-separated list of host names, domain names (beginning with a dot), IP addresses, or CIDR-format IP network addresses. Examples: myhost, .mydomain.com, 192.168.1.1 and 192.168.0.0/24. 
+**Applies only to Windows Mobile/CE**. <!-- **Applies to the Zebra Webkit engine only**. 7/7/17- changed to WM/CE only, per eng.--> Used to specify sites to be accessed directly rather than through a proxy. Accepts a comma-separated list of host names, domain names (beginning with a dot), IP addresses, or CIDR-format IP network addresses. Examples: myhost, .mydomain.com, 192.168.1.1 and 192.168.0.0/24. 
 
 **Possible Values**:
 
@@ -2324,7 +2324,7 @@ The browser will automatically append the query string value "badlink" containin
 	<BadLinkURI value="file://%INSTALLDIR%/badlink.html"/>
 
 ### EnableSSL3
-**Applies to WM/CE with Zebra Webkit only**. Controls whether Secure Sockets Layer v3.0 will be used. The Zebra Webkit is shipped with SSL3 disabled by default to protect against the POODLE attack vulnerability.
+**Applies only to WM/CE with Zebra Webkit**. Controls whether Secure Sockets Layer v3.0 will be used. The Zebra Webkit is shipped with SSL3 disabled by default to protect against the POODLE attack vulnerability.
 
 **Possible Values**:
 
@@ -2449,7 +2449,7 @@ The default UserAgent values for PocketBrowser 2.1 and higher was changed to wor
 **Note: Zebra recommends using the values shown in the example above** on Android devices, which set the application page to match the width of the device screen and the initial zoom level at 1x.
 
 ### ViewportEnabled
-**Applies to Windows Mobile/CE only**. Controls viewport meta tag processing (enabled by default). Must be greater than zero. 
+**Applies only to Windows Mobile/CE**. Controls viewport meta tag processing (enabled by default). Must be greater than zero. 
 
 **Possible Values**:
 
@@ -2461,7 +2461,7 @@ The default UserAgent values for PocketBrowser 2.1 and higher was changed to wor
 	<ViewportEnabled value="1"/>
 
 ### ViewportWidth
-**Applies to Windows Mobile/CE only**. Sets the default viewport width for pages that do not have a viewport meta tag. If not specified, uses 1:1 scaling. 
+**Applies only to Windows Mobile/CE**. Sets the default viewport width for pages that do not have a viewport meta tag. If not specified, uses 1:1 scaling. 
 
 **Possible Values**:
 
@@ -2472,7 +2472,7 @@ The default UserAgent values for PocketBrowser 2.1 and higher was changed to wor
 	<ViewportWidth value="1"/>
 
 ### CaFile
-**Applies to Windows Mobile/CE only**. Specifies the location of a device-resident file containing CA certificates in PEM format for authentication of a server. Please [refer to openSSL](https://www.openssl.org/docs/man1.0.2/ssl/SSL_CTX_load_verify_locations.html) for more information. 
+**Applies only to Windows Mobile/CE**. Specifies the location of a device-resident file containing CA certificates in PEM format for authentication of a server. Please [refer to openSSL](https://www.openssl.org/docs/man1.0.2/ssl/SSL_CTX_load_verify_locations.html) for more information. 
 
 > Note: Enterprise Browser supports only a single PEM certificate file. If multiple certificates must be passed to the Webkit browser on WM/CE, the contents of multiple `.pem` certificates can be combined into a single file using a text editor. The combined file can then be specified in the CaFile parameter. 
 
@@ -2643,7 +2643,7 @@ Permits a default meta tag to be specified so that a tag required by the applica
 
 ## Engine
 ### EngineInUse
-**Applies to Windows Mobile/CE only**. Permits the selection of a rendering engine (IE or Webkit) when deploying a Webkit installation of Enterprise Browser to Windows CE6 or Windows Mobile 6.5 and above. If deploying an IE-only installation, Webkit will not be available as an option.
+**Applies only to Windows Mobile/CE**. Permits the selection of a rendering engine (IE or Webkit) when deploying a Webkit installation of Enterprise Browser to Windows CE6 or Windows Mobile 6.5 and above. If deploying an IE-only installation, Webkit will not be available as an option.
 
 **Possible Values**:
 

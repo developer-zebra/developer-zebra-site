@@ -7,39 +7,30 @@ layout: guide.html
 
 ## `TO BE REVISED` 
 
-OLD OLD OLD
-
 ## Overview
-This guide provides instructions for modifying an EB app to work with ITSmobile, the SAP middleware system built around its Internet Transaction Server (ITS). ITSmobile provides browser-based access to SAP's ERP, SRM and other enterprise apps made with the company's proprietary dynpro language. Enterprise Browser apps can be built or adapted to work with ITSmobile, and hence to access SAP back-end enterprise apps. Doing so requires familiarity with editing the `Config.xml` and HTML file(s) of EB apps. 
+This guide provides instructions for modifying an EB app to work with ITSmobile, the SAP middleware system built around its Internet Transaction Server (ITS). ITSmobile provides browser-based access to SAP's ERP, SRM and other enterprise apps made with the company's proprietary dynpro language. Enterprise Browser apps can be built or adapted to work with ITSmobile, and thereby to access SAP back-end enterprise apps. Doing so requires familiarity with editing the `Config.xml` and the HTML file(s) of EB apps. 
 
-<!-- 
-**The [UserAgent section](#useragent) of this guide also includes troubleshooting issues that sometimes arise when migrating ITSmobile apps from one device or platform to another**.
- -->
+#### EB 2.0 for SAP
+
+Enterprise Browser 2.0 (and higher) includes a package (`EnterpriseBrowser_SAP_signed_v2.0.1.0.apk`) with 
+ready-to-use configuration files for easily running SAP ITS mobile app(s) on Zebra Android devices. The package also can be converted to the standard EB edition by following procedures in the [conversion section](#converttostancaedeb) below. 
+
+>> SECTION NAME AND LINK HERE
+
 -----
 
-Enterprise Browser 2.0 release includes a separate package (`EnterpriseBrowser_SAP_signed_v2.0.1.0.apk`) for allowing user to run their SAP application smoothly on Zebra Android devices. This package contains the basic Ready-to-Use configuration files for SAP ITS mobile application. Once installed user can also convert this package to Regular Enterprise Browser package by visiting the section (converting SAP package to Regular {eddy to add link to designer tool})
-.
 Purpose for providing SAP Package
 
 A major concern for SAP users when migrated to Android platform was related to page fitting and missing hardware function keys.
 
 This had resulted in rewriting server application to fit different device screen sizes also involved introducing new HTML buttons in the pages to overcome the missing function key keydown events.
+
 The new Enterprise Browser package for SAP users is designed to overcome most of the concerns faced by customers when they migrate from wm/ce platforms to Android platforms.
 Let us go little deeper into what Enterprise Browser team provides as part of special SAP package.
-SAP package features
 
-#### See Also
+### SAP package features
 
-* [Config.xml Reference](../configreference)
-* [Enterprise Browser APIs](../apioverview)
-* [Function Key Mapping Guide](/keycapture/#mappingproprietaryfunctionkeycodes)
-* [Migration Guides](../migration)
-* [DOM Injection guide](../dom)
-* [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)
-
------
-
-### BGSOUND support
+#### BGSOUND support
 
 SAP ITS mobile application plays a sound (if configured) on IE browser whenever a transaction is failed or succeeded. Enterprise Browser SAP package is intelligent to play this sound file whenever a SAP ITS mobile application is configured to play a sound file.
 
@@ -455,4 +446,13 @@ Hence on KK devices, user may see both regular sip and sapkeyboard popping up on
 User can install Enterprise Keyboard from
 http://techdocs.zebra.com/enterprise-keyboard/1-8/download/
 
+-----
 
+#### See Also
+
+* [Config.xml Reference](../configreference)
+* [Enterprise Browser APIs](../apioverview)
+* [Function Key Mapping Guide](/keycapture/#mappingproprietaryfunctionkeycodes)
+* [Migration Guides](../migration)
+* [DOM Injection guide](../dom)
+* [SAP ITSmobile wiki page](https://wiki.scn.sap.com/wiki/display/HOME/ITSmobile)

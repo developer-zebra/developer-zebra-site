@@ -8,16 +8,16 @@ layout: guide.html
 ## `TO BE REVISED` 
 
 ## Overview
-This guide provides instructions for modifying an EB app to work with ITSmobile, the SAP middleware system built around its Internet Transaction Server (ITS). ITSmobile provides browser-based access to SAP's ERP, SRM and other enterprise apps made with the company's proprietary dynpro language. Enterprise Browser apps can be built or adapted to work with ITSmobile, and thereby to access SAP back-end enterprise apps. Doing so requires familiarity with editing the `Config.xml` and the HTML file(s) of EB apps. 
+This guide provides instructions for modifying an EB app for Android to work with ITSmobile, the SAP middleware system built around its Internet Transaction Server (ITS). ITSmobile provides browser-based access to SAP's ERP, SRM and other enterprise apps made with the company's proprietary dynpro language. Enterprise Browser apps can be built or adapted to work with ITSmobile, and thereby to access SAP back-end enterprise apps. Doing so requires familiarity with editing the `Config.xml` and the HTML file(s) of EB apps. 
 
 #### EB 2.0 for SAP
 
 Enterprise Browser 2.0 (and higher) includes a package (`EnterpriseBrowser_SAP_signed_v2.0.1.0.apk`) with 
 ready-to-use configuration files for easily running SAP ITS mobile app(s) on Zebra Android devices. The package can be converted to the standard EB edition. See the [conversion section](#converttostancaedeb) below for details. 
 
-When migrating SAP apps from devices running Windows Mobile/CE to Android, issues relate mostly to page fitting and the absence of hardware function keys. To address these issues, organizations typically maintained separate server applications for different device-screen sizes and developed HTML-based buttons to replace the hardware keys missing from Android apps and devices. 
+When migrating SAP apps from Windows Mobile/CE to Android, problems relate mostly to page fitting and the absence of hardware function keys. In the past, organizations often addressed these issues by maintaining separate applications for different device-screen sizes and developing HTML-based buttons to replace the missing hardware keys. 
 
-Enterprise Browser 2.0 addresses both of these issues. 
+Enterprise Browser 2.0 helps address both of these issues. 
 
 ### SAP package features
 

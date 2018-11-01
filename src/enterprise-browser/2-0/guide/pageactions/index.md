@@ -6,29 +6,25 @@ layout: guide.html
 ---
 ## Overview
 
-Apps made with EB 2.0 and higher can use of page-based actions, which execute JavaScript code or predefined commands whenever certain conditions are found on a page. For example, if a user encounters a "page not found" message, the app can be instructed to navigate to a login page. 
+Apps made with EB 2.0 and higher can perform page-based actions, which execute JavaScript code or predefined commands whenever certain conditions are found on a page. For example, if a user encounters a "page not found" message, the app can be instructed to navigate to a login page. 
 
-Page actions and the conditions that trigger them are defined in the `PageAction.xml` file, which is created and stored on the device in advance. An example of that file is shown below. 
+Page-based actions and the conditions that trigger them are defined in the `PageAction.xml` file, which is created and stored on the device in advance. An [example](#example) of that file is shown below. 
 
 -----
 
-### Commands
+### Supported Commands
 
-**The following predefined commands are supported**: 
+##### Case-sensitive:
+* **redirectTo-[url] -** Navigates to the specified URL. <br>
+Example: `redirectTo-http://MyCompany.com/mobile/MyApp/startup` 
+* **runscript-[codeBlockName] -** Executes the specified JavaScript code block as defined in the `CustomScript.xml` file. <br>
+Example: `runscript-clearcookiescript` executes a user-defined JavaScript code block in the “cleaarcookiescript” section of the `CustomScript.xml` file. [About the CustomScript file](../customize/script). 
 
-**redirectTo-[url] -** Navigates to the specified URL. Example: `redirectTo-http://MyCompany.com/mobile/MyApp/startup` 
-
-**Home -** Navigates to the "Home" page defined in the [StartPage](../configreference/#startpage) tag of the app's `Config.xml` file. 
-
-**Back -** Navigates to the previous page in the EB app's history.
-
-**DoubleBack -** 
-Navigates two pages back in the EB app's history.
-
-**Quit -** 
-Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
-
-**runscript-[codeBlockName] -** Executes the specified JavaScript code block as defined in the `CustomScript.xml` file. For example `runscript-clearcookiescript` executes a user-defined JavaScript code block in the “cleaarcookiescript” section of the `CustomScript.xml` file. More [about the CustomScript file](../customize/script). 
+##### Not case-sensitive:
+* **home -** Navigates to the "Home" page defined in the [StartPage](../configreference/#startpage) tag of the app's `Config.xml` file. 
+* **back -** Navigates to the previous page in the EB app's history.
+* **doubleBack -** Navigates two pages back in the EB app's history.
+* **quit -** Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
 
 -----
 

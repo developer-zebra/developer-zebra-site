@@ -47,10 +47,10 @@ Example: `runscript-clearcookiescript` executes a user-defined JavaScript code b
 	        <Action value="Back" />
 	    </pageAction3>
 
-	 	  <pageAction3> 
+	 	  <pageAction4> 
 	 		 <pageIdentification value="Delivery&nbsp;Number" />
 	        <Action value="Quit" />    
-	   </pageAction3>
+	   </pageAction4>
 	</pageActionGroup>
 
 -----

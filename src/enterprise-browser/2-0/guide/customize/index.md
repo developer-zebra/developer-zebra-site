@@ -4,7 +4,7 @@ productversion: '2.0'
 product: Enterprise Browser
 layout: guide.html
 ---
-##Overview
+## Overview
 
 Enterprise Browser 1.7 (and higher) for Android includes [ButtonBar APIs](../../api/re2x/ButtonBar), which can deliver custom features and functions through on-screen buttons or keys. Functions can include simple actions such as launching an app or activity, sending an intent or virtually any action that can be executed using JavaScript. 
 

@@ -13,31 +13,30 @@ This guide provides instructions for modifying an EB app for Android to work wit
 #### EB 2.0 for SAP
 
 Enterprise Browser 2.0 (and higher) includes a package (`EnterpriseBrowser_SAP_signed_v2.0.1.0.apk`) with 
-ready-to-use configuration files for easily running SAP ITS mobile app(s) on Zebra Android devices. The package can be converted to the standard EB edition. See the [conversion section](#converttostancaedeb) below for details. 
+ready-to-use configuration files for easily running SAP ITS mobile app(s) on Zebra Android devices. The package can be converted to the standard EB edition using steps in the [conversion section](#converttostancaedeb) below. 
 
-When migrating SAP apps from Windows Mobile/CE to Android, problems relate mostly to page fitting and the absence of hardware function keys. In the past, organizations often addressed these issues by maintaining separate applications for different device-screen sizes and developing HTML-based buttons to replace the missing hardware keys. 
+When migrating SAP apps from Windows Mobile/CE to Android, the most common problems relate to page-fitting and the absence of hardware function keys. To address these issues, organizations often maintain separate applications for different device-screen sized and build HTML-based buttons to replace the missing hardware keys. 
 
-Enterprise Browser 2.0 helps address both of these issues. 
+Enterprise Browser 2.0 helps address these and other migration issues. 
 
-### SAP package features
+-----
 
-#### BGSOUND support
+## SAP Package Features
 
-SAP ITS mobile application plays a sound (if configured) on IE browser whenever a transaction is failed or succeeded. Enterprise Browser SAP package is intelligent to play this sound file whenever a SAP ITS mobile application is configured to play a sound file.
+### Sound support
 
-Note: In addition to this, user can also use dominjection feature to play custom sound on the device for playing different sound file if SAP sound file is not preferred.
+SAP ITSmobile applications can be configured to play a sound to indicate the success or failure of a transaction, and the EB SAP package can be configured also to play these sounds. If different sounds are desired, [DOM injection](../dominjectionandroid) can be used to play sounds stored on the device.
 
-Predefined ButtonBar Layouts (SAP Keyboard)
+### SAP Keyboards
 
-As mentioned earlier, missing hardware keys is a big pain point for migrating customers. Enterprise Browser SAP package includes a special keyboard for SAP application users. Along with regular keyboard layouts, it also includes a function key layout. 
+EB 2.0 includes SAP-specific keyboard layouts that leverage EB's custom [ButtonBar features](../customize). This helps to compensate for hardware keys missing from Android devices. 
 
-A function key layout allows SAP users to press function keys from the Software Input Panel (SIP) on demand. This avoids the necessity to modify the SAP application to include HTML buttons for function keydown events.
+**The SAPkeyboard by default displays a numeric layout** whenever the focus of an app is on an input field. The default layout is easily changed by editing the `showKeyboard`/`hideKeyboard` JavaScript function in the `sapkeyboard.js`.
 
-Also note that Enterprise Browser keyboard button can be configured to issue a keystroke, or to run a script on dom. To know more about keyboard button properties, please visit {eddy to add link to button parameter guide} 
+**A function key layout** allows SAP users to press function keys from the Software Input Panel (SIP) on demand, eliminating the need to modify the SAP application to include HTML buttons to emulate function keys. Each key on an EB keyboard can easily be configured to issue a keystroke or to run a script. For more information, see the [ButtonBar Parameter guide](../customize/button). 
 
-Note: By default sapkeyboard shows numeric layout whenever a focus is set on to an input field. Preferred layout can be configured by user by editing sapkeyboard.js file present in the apk bundle, once installed. Please refere showKeyboard and hideKeyboard javascript function in sapkeyboard.js file.
 
-Sapkeyboard.js file present inside android_sap folder reads the SAP Keyboard config params from the config.xml and register for a onfocus event and a keydown event to control the keyboard popup behavior.
+The `/android_sap/Sapkeyboard.js` file reads the SAP Keyboard config params from the config.xml and register for a onfocus event and a keydown event to control the keyboard popup behavior.
 
 One should ensure that APIs below are called after showing a keyboard or after hiding a keyboard.
 
@@ -65,25 +64,28 @@ Do user wants to show keyboard always on every pages. If yes set
 
 Do user wants to show keyboard on demand when input field is focused. If yes set
 
+    :::xml
     <KeyboardConfiguration>
-    <KeyboardVisibility value="onDemand"/>
-            <ondemand>
+        <KeyboardVisibility value="onDemand"/>
+          <ondemand>
             <onFocus value="1"/>
-                  </ondemand>  
+          </ondemand>  
     </KeyboardConfiguration> 
 
 Do user wants to toggle keyboard on demand when F10 key is pressed
 
+    :::xml
     <KeyboardConfiguration>
         <KeyboardVisibility value="onDemand"/>
           <ondemand>
-                <onHardwarekeypress value="1"/>
-                 <HardwarekeyValue value="140"/>
+            <onHardwarekeypress value="1"/>
+            <HardwarekeyValue value="140"/>
           </ondemand>   
     </KeyboardConfiguration>
 
 Do user wants to show keyboard when F10 key pressed or when input field is focused
 
+    :::xml
     <KeyboardConfiguration>
     <KeyboardVisibility value="onDemand"/>
           <ondemand>
@@ -95,12 +97,14 @@ Do user wants to show keyboard when F10 key pressed or when input field is focus
 
 Whether page should be resizable on keyboard popup to avoid visibility concerns; if yes user can set
 
+    :::xml
     <SIP>
       <ResizeOnButtonbar value="1"/>        
     </SIP>
 
 Whether user wants to set page resizable and to reserve a minimum safe height for the keyboard can cover the screen. If yes set probable value for `ButtonBarMaxHeight` as below:
 
+    :::xml
     <SIP>
       <ResizeOnButtonbar value="1"/>
       <ButtonBarMaxHeight value="480"/> 
@@ -117,6 +121,7 @@ SAP ITS UI elements are designed using pixels hence on a high resolution device,
 
 Enterprise Browser 2.0 has now introduced following configuration to control the viewport of the page.
 
+    :::xml
     <ViewPort>
       <UseWideViewPort value="1"/>
       <ViewPortWidth value="device-width"/>
@@ -135,6 +140,7 @@ To avoid this problem. Enterprise Browser SAP package has introduced a new confi
 
 When enabled, the page will not have any elements beyond the horizontal visible region. This enables the feature to force fit the content to the screen width. 
 
+    :::xml
     <SapForceFitToScreen value="1"/>
 
 Note: This attribute is only applicable for SAP application. Using this feature may effect some of the CSS styling hence this feature is not enabled by default on the package. 
@@ -145,18 +151,21 @@ Enterprise Browser 2.0 provides few additional configuration parameters that let
 
 If user want to increase height of buttons in SAP pages, he can control it using the config parameter below: 
 
+    :::xml
     <SapCustomization> 
         <SapButtonHeight value="30px"/>
     </SapCustomization>
 
 If user wants to increase or reduce the font size for SAP page buttons, he can control it using the config parameter below:
 
+    :::xml
     <SapCustomization>    
       <SapButtonFontSize value="10px"/>      
     </SapCustomization>
 
 If user wants to increase or reduce read-only text field, user can control it by modifying config parameter below:
 
+    :::xml
     <SapCustomization>     
       <MobileEditDisabledWidth value="20px"/> 
     </SapCustomization>
@@ -178,12 +187,14 @@ An enterprise user may require to run some scripts or associate some Enterprise 
 For example, SAP user wants to redirect to HOME page when an error 400 is occurred. User can mention this information under a pageaction.xml and can associate it with Enterprise Browser Config.xml as below
 Entry in config.xml; this entry already exist in Enterprise Browser SAP package Config.xml
 
+    :::xml
     <FileLocations>
       <pageactionxmlfile  value="file://%INSTALLDIR%/android_sap/PageAction.xml"/>
     </FileLocations>
 
 Entry in PageAction.xml; this entry already exist inside Enterprise Browser SAP package
 
+    :::xml
     <pageActionGroup>
         <pageAction1>
             <pageIdentification value="400 Session timed out" />
@@ -195,6 +206,7 @@ Similarly one can add an entry inside PageAction.xml to run a script at device s
 
 A sample for zooming a particular page (which contains a text ‘Change Password’ ) to 200% is given as below:
 
+    :::xml
     <pageAction2> 
         <pageIdentification value=”Change Password" />
         <Action value="runscript-zoomScript" />
@@ -204,6 +216,7 @@ When user prefer to run a script, script should be added inside customscript.xml
 
 Below is the entry inside `CustomScript.xml`: 
 
+    :::xml
     <CustomScripts>          
               <zoomscript>
                EB.WebView.zoomPage= 2.0;
@@ -216,6 +229,7 @@ Disabling AOSP Keyboard
 
 Enterprise Browser supports disabling default SIP provided by Android platforms. Disable it by setting the `Config.xml` file attribute as below: 
 
+    :::xml
     <IME>
       <DisableAllIME value ="1"/>
     </IME>
@@ -224,6 +238,7 @@ The Enterprise Browser SAP package disables the AOSP keyboard by default. Disabl
 
 Note: if user doesn’t want to use any keyboard, then recommended way is to use below config.xml entries
 
+    :::xml
     <IME>
       <DisableAllIME value ="1"/>
     </IME>
@@ -231,6 +246,7 @@ Note: if user doesn’t want to use any keyboard, then recommended way is to use
       <ResizeOnButtonbar value="1"/>        
     </SIP>
 
+    :::xml
     <KeyboardConfiguration>
     <KeyboardVisibility value="onDemand"/>
       <ondemand>
@@ -254,11 +270,13 @@ There is a detailed documentation available at {eddy to add link} for configurin
 
 To accept DataWedge scanned data on Enterprise Browser, user needs to enable below tag in Config.xml
 
+    :::xml
     <usedwforscanning  value="1"/>
 
 Above parameter is enabled by default on SAP package. 
 Note: On regular package datawedge will not be enabled by default on config.xml and it will have a value as below
 
+    :::xml
     <usedwforscanning  value="0"/>
 
 ### Ending SAP Session 
@@ -267,10 +285,12 @@ It had been a common ask from Enterprise Browser customers that to terminate a s
 
 Below Config.xml attribute is set by default in an SAP package to terminate an SAP-session whenever Enterprise Browser is closed and relaunched. Each launch will take user to a login screen.
 
+    :::xml
     <DeleteCookiesOnLaunch value="1"/>
 
 Note: On regular package cookies will not be by default. Default Config.xml on regular package will have a value as below
 
+    :::xml
     <DeleteCookiesOnLaunch value="0"/>
 
 
@@ -280,6 +300,7 @@ Enterprise Browser 2.0 supports a new config parameter to lock the Enterprise Br
 
 By default Enterprise Browser SAP package sets this parameter to Auto as shown below
 
+    :::xml
     <ScreenOrientation>
       <LockOrientation value= "Auto"/>
     </ScreenOrientation>
@@ -294,6 +315,7 @@ Enterprise Browser 2.0 allows users to associate an action such as HOME, QUIT et
 For example, on a MC33 device F8 is pressed to quit the application. 
 Enterprise Browser SAP package includes a keycodemapping.xml under android_sap folder by default which has an entry to quit Enterprise Browser when F8 is pressed
 
+    :::xml
     <KeyActions> 
         // press F8 to quit Application
         <KEYACTION  keyvalue="138" action="quit" />
@@ -307,6 +329,7 @@ Enterprise Browser SAP package includes a keycodemapping.xml under android_sap f
 When user prefer to run a script, script should be added inside customscript.xml file. Enterprise Browser for SAP contains a CustomScript.xml placed under android_sap folder inside installed directory on the device.
 Below is the entry inside CustomScript.xml
 
+    :::xml
     <CustomScripts>          
       <zoomscript>
           EB.WebView.zoomPage= 2.0;
@@ -322,6 +345,7 @@ Enterprise Browser provides feature-rich javascript APIs for enterprise needs. T
 These feature rich APIs are by default available on your DOM when Enterprise Browser for SAP package is installed.
 To disable EB namespace on your, user can simply disable below config.xml entry 
 
+    :::xml
       <InjectEBLibraries>
           <JSLibraries value="0"/>
       </InjectEBLibraries>
@@ -330,6 +354,7 @@ Note: EB team recommends to enable the EB namespace in your DOM. Some of the SAP
 
 Note: On regular package EB namespace will not be enabled by default. On regular package, default config.xml will have a value as below
 
+    :::xml
       <InjectEBLibraries>
          <JSLibraries value="0"/>
       </InjectEBLibraries>
@@ -341,6 +366,7 @@ Sap package allows user to quit application when F8 is pressed. User can press F
 
 User can enable the system bar on SAP package by setting the below config.xml entry
 
+    :::xml
     <HideSystemBar value ="0"/>
 
 Note: On regular package system bar will be enabled by default. On regular package, default config.xml will have a value as below
@@ -373,6 +399,7 @@ All dominjected files are mentioned inside mysaptags.txt file present inside and
 
 Default mysaptags.txt has the below javascript files those are intended to run SAP package smoothly. User can modify the script based on their need. Thus, Enterprise Browser SAP package becomes more handy for the users.
 
+    :::xml
     <script type='text/javascript' src='file://%INSTALLDIR%/android_sap/sapkeyboard.js' pages='*' /> 
     <script type='text/javascript' src='file://%INSTALLDIR%/android_sap/sapbgsound.js' pages='*' /> 
     <script type='text/javascript' src='file://%INSTALLDIR%/android_sap/sapcustomview.js' pages='*' />

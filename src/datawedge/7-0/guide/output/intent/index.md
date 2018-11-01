@@ -77,7 +77,7 @@ _Intent Output options for the "Launcher" Profile_
 
 **Intent category -** specifies the category of intent to be handled 
 
-**Intent delivery -** used to select one of three delivery methods for intent-based data:
+**Intent delivery -** used to select one of four delivery methods for intent-based data:
 * **Send via startActivity** 
 * **Send via startService** 
 * **Send via startForegroundService**
@@ -88,6 +88,7 @@ _Intent Output options for the "Launcher" Profile_
 **When Intent delivery is set to "Send via startForegroundService"**, startForegroundService() Android API is called to deliver data. This option applies to Android Oreo (v8.0) and above.
 
 **When Intent delivery is set to "Send via startService"**, startService() Android API is called to deliver data for devices prior to Android Oreo (v8.0). For Android Oreo and above devices, the option "Use startForegroundService on failure" is available within this setting to call startForegroundService() if the startService() call fails. With this single option, it provides support for devices both prior and later than Android Oreo. 
+
 -----
 
 ## Single Decode Mode

@@ -13,20 +13,11 @@ This guide provides instructions for modifying an EB app to work with ITSmobile,
 #### EB 2.0 for SAP
 
 Enterprise Browser 2.0 (and higher) includes a package (`EnterpriseBrowser_SAP_signed_v2.0.1.0.apk`) with 
-ready-to-use configuration files for easily running SAP ITS mobile app(s) on Zebra Android devices. The package also can be converted to the standard EB edition by following procedures in the [conversion section](#converttostancaedeb) below. 
+ready-to-use configuration files for easily running SAP ITS mobile app(s) on Zebra Android devices. The package can be converted to the standard EB edition. See the [conversion section](#converttostancaedeb) below for details. 
 
->> SECTION NAME AND LINK HERE
+When migrating SAP apps from devices running Windows Mobile/CE to Android, issues relate mostly to page fitting and the absence of hardware function keys. To address these issues, organizations typically maintained separate server applications for different device-screen sizes and developed HTML-based buttons to replace the hardware keys missing from Android apps and devices. 
 
------
-
-Purpose for providing SAP Package
-
-A major concern for SAP users when migrated to Android platform was related to page fitting and missing hardware function keys.
-
-This had resulted in rewriting server application to fit different device screen sizes also involved introducing new HTML buttons in the pages to overcome the missing function key keydown events.
-
-The new Enterprise Browser package for SAP users is designed to overcome most of the concerns faced by customers when they migrate from wm/ce platforms to Android platforms.
-Let us go little deeper into what Enterprise Browser team provides as part of special SAP package.
+Enterprise Browser 2.0 addresses both of these issues. 
 
 ### SAP package features
 

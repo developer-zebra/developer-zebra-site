@@ -90,7 +90,7 @@ Attributes of DOM Injection tags:
 * Assumes an ".html" file extension; specify extension if different
 * For local files, works from directory relative to the installation root; include qualified path if different 
 * For server-based CSS or JavaScript files, works relative to the app's start page; include qualified URL if different
-* Accepts wildcard (*) character to inject all files in relative or specified directory
+* Accepts wildcard (&#42;) character to inject all files in relative or specified directory
 * Accepts URLs for server-based CSS and JavaScript files only
 * Meta tag data must be contained completely within the tags file  
 * If using server-based JavaScript, see JavaScript Injection section (below) for dependency cautions 
@@ -187,23 +187,19 @@ Page actions and the conditions that trigger them are defined in the `PageAction
 
 -----
 
-### Commands
+### Supported Commands
 
-**The following predefined commands are supported**: 
+##### Case-sensitive:
+* **redirectTo-[url] -** Navigates to the specified URL. <br>
+Example: `redirectTo-http://MyCompany.com/mobile/MyApp/startup` 
+* **runscript-[codeBlockName] -** Executes the specified JavaScript code block as defined in the `CustomScript.xml` file. <br>
+Example: `runscript-clearcookiescript` executes a user-defined JavaScript code block in the “cleaarcookiescript” section of the `CustomScript.xml` file. [About the CustomScript file](../customize/script). 
 
-**redirectTo-[url] -** Navigates to the specified URL. Example: `redirectTo-http://MyCompany.com/mobile/MyApp/startup` 
-
-**Home -** Navigates to the "Home" page defined in the [StartPage](../configreference/#startpage) tag of the app's `Config.xml` file. 
-
-**Back -** Navigates to the previous page in the EB app's history.
-
-**DoubleBack -** 
-Navigates two pages back in the EB app's history.
-
-**Quit -** 
-Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
-
-**runscript-[codeBlockName] -** Executes the specified JavaScript code block as defined in the `CustomScript.xml` file. For example `runscript-clearcookiescript` executes a user-defined JavaScript code block in the “cleaarcookiescript” section of the `CustomScript.xml` file. More [about the CustomScript file](../customize/script). 
+##### Not case-sensitive:
+* **home -** Navigates to the "Home" page defined in the [StartPage](../configreference/#startpage) tag of the app's `Config.xml` file. 
+* **back -** Navigates to the previous page in the EB app's history.
+* **doubleBack -** Navigates two pages back in the EB app's history.
+* **quit -** Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
 
 -----
 

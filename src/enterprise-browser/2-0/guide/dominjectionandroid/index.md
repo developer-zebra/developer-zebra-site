@@ -1,5 +1,5 @@
 ---
-title: DOM Injection
+title: DOM Injection for Android
 productversion: '2.0'
 product: Enterprise Browser
 layout: guide.html
@@ -8,16 +8,16 @@ layout: guide.html
 
 Apps made with Enterprise Browser 1.3 and higher are able to perform DOM Injection, the ability insert CSS, JavaScript and/or meta tags into the DOM without modifying the underlying application. This permits features, capabilities and even the look of one or more server-based Enterprise Browser app pages to be modified at runtime using DOM elements stored in a text file on the device. 
 
-**EB 2.0 and higher can take advantage of a simplified interface and [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. 
+**EB 2.0 (and higher) supports EB [substitution variables](../configreference/#substitutionvariables) (Android only) and [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. 
 
-DOM injection is enabled by default in EB 1.3 and higher apps, and is **activated by  the &lt;CustomDOMElements&gt; tag in the &lt;Application&gt; section** of the app's `Config.xml` file. This tag will contain a fully qualified path to the device-resident "tags" file that must be created. It contains the DOM element(s) to be injected and the names of the pages to receive injections whenever they're displayed. **Injected CSS and JavaScript can be local, server-based or in combination**. Meta tags must be specified and fully contained within the tags file.    
+DOM injection is enabled by default in EB 1.3 and higher apps, and is **activated by the &lt;CustomDOMElements&gt; tag in the &lt;Application&gt; section** of the app's `Config.xml` file. This tag will contain a fully qualified path to the device-resident "tags" file that must be created. It contains the DOM element(s) to be injected and the names of the pages to receive injections whenever they're displayed. **Injected CSS and JavaScript can be local, server-based or in combination**. Meta tags must be specified and fully contained within the tags file.    
 
 * **DOM injection device support**: 
 	* **Android with stock webkit**
 	* **Windows Mobile/CE with Zebra Webkit**
 	* **Windows CE with IE engine**
 
-**_DOM injection is NOT currently supported on Windows Mobile devices using the IE engine_**. 
+**_DOM injection is NOT supported on Windows Mobile devices using the IE engine_**. 
 
 No special licensing is required. 
 
@@ -41,10 +41,11 @@ To use DOM injection, **ALL of the following must be true**:
 
 ### Step 1- Prepare the "tags" file
 
-* **Create a text file to contain the desired DOM-injection elements** using the tagging syntax below. This will become the list of elements that will be injected into the DOM, and will specify the pages to receive the injections. 
+* **Create a text file to contain the desired DOM-injection elements** using the tagging syntax below. This becomes the list of elements to be injected into the DOM, and specifies the pages to receive the injections. 
 
 In the sample `mytags.txt` file referenced below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in the JavaScript comments, and in further detail below. 
 
+> **Zebra recommends substitution variables over absolute paths whenever possible**.
 
 	:::xml
 	<!--Sample tags file -->
@@ -85,10 +86,12 @@ In the sample `mytags.txt` file referenced below, notice a syntax similar to tha
 
 Attributes of DOM Injection tags: 
 
-**Note that the "pages" attribute specifies the file name of the page into which the element defined in the tag will be injected**. The following rules apply: 
+**Note that the "pages" attribute specifies the file name of the page into which the element defined in the tag will be injected**. 
 
-* Assumes an ".html" file extension; specify extension if different
-* For local files, works from directory relative to the installation root; include qualified path if different 
+**The following rules apply**: 
+
+* The ".html" file extension is assumed; specify the extension if different
+* For local files, works from directory relative to the installation root; include qualified path or substitution variable if different. **Zebra recommends using substitution variables whenever possible**.  
 * For server-based CSS or JavaScript files, works relative to the app's start page; include qualified URL if different
 * Accepts wildcard (&#42;) character to inject all files in relative or specified directory
 * Accepts URLs for server-based CSS and JavaScript files only
@@ -116,7 +119,7 @@ For information about how to configure the `Config.xml` file, see the [Config.xm
 > **The value inside the &lt;CustomDOMElements&gt; tag is empty by default. DOM injection cannot function unless a path to the tags file on the device is specified**. 
 
 ## JavaScript Injection
-JavaScript can be injected either through file protocol or by using an absolute or server path relative to the Enterprise Browser app's start page. Different rules apply to injection of local and server-based JavaScript, and might affect the app if dependencies exist between the JavaScript modules in use. 
+JavaScript can be injected either through file protocol or by using an absolute path, [substitution variable](../configreference/#substitutionvariables), or server path relative to the Enterprise Browser app's start page. Different rules apply to injection of local and server-based JavaScript, and might affect the app if dependencies exist between the JavaScript modules in use. 
 
 ####Inject Local JavaScript
 When using the file protocol, the JavaScript file(s) must be resident on the target device, and have path(s) specified in the `src` attribute of the script tag using the `file://` designation. For example, the following lines will inject four JavaScript files into all pages of the app-relative directory:

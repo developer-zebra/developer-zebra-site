@@ -11,7 +11,7 @@ Keycodes are constants that uniquely identify the ASCII values of device keypres
 
 ### Support Notes
 
-* **The HOME and RECENT APPS keys** cannot be remapped; they do not return a keyValue when captured using the EB KeyCapture API. 
+* **The HOME and RECENT APPS keys** cannot be remapped to any other action.  
 * **The WorkAbout Pro 4 and Omnii XT15** are among a small group of Zebra devices running Windows Mobile that return proprietary keycode values inconsistent with those of other devices and incompatible with Windows. To address this issue, apps made with Enterprise Browser 1.5 or higher can remap those proprietary keycodes to Microsoft standard codes. See the [Mapping Proprietary Function Keycodes](#mappingproprietaryfunctionkeycodes) section below. 
 
 #### Android Keycode Handling 

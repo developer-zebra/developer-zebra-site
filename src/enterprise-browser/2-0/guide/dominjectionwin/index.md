@@ -1,5 +1,5 @@
 ---
-title: DOM Injection
+title: DOM Injection for Windows Mobiie/CE
 productversion: '2.0'
 product: Enterprise Browser
 layout: guide.html
@@ -8,16 +8,16 @@ layout: guide.html
 
 Apps made with Enterprise Browser 1.3 and higher are able to perform DOM Injection, the ability insert CSS, JavaScript and/or meta tags into the DOM without modifying the underlying application. This permits features, capabilities and even the look of one or more server-based Enterprise Browser app pages to be modified at runtime using DOM elements stored in a text file on the device. 
 
-**EB 2.0 and higher can take perform [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. 
+**EB 2.0 and higher can perform [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. 
 
-DOM injection is enabled by default in EB 1.3 and higher apps, and is **activated by  the &lt;CustomDOMElements&gt; tag in the &lt;Application&gt; section** of the app's `Config.xml` file. This tag will contain a fully qualified path to the device-resident "tags" file that must be created. It contains the DOM element(s) to be injected and the names of the pages to receive injections whenever they're displayed. **Injected CSS and JavaScript can be local, server-based or in combination**. Meta tags must be specified and fully contained within the tags file.    
+DOM injection is enabled by default in EB 1.3 and higher apps, and is **activated by the &lt;CustomDOMElements&gt; tag in the &lt;Application&gt; section** of the app's `Config.xml` file. This tag will contain a fully qualified path to the device-resident "tags" file that must be created. It contains the DOM element(s) to be injected and the names of the pages to receive injections whenever they're displayed. **Injected CSS and JavaScript can be local, server-based or in combination**. Meta tags must be specified and fully contained within the tags file.    
 
 * **DOM injection device support**: 
 	* **Android with stock webkit**
 	* **Windows Mobile/CE with Zebra Webkit**
 	* **Windows CE with IE engine**
 
-**_DOM injection is NOT currently supported on Windows Mobile devices using the IE engine_**. 
+**_DOM injection is NOT supported on Windows Mobile devices using the IE engine_**. 
 
 No special licensing is required. 
 

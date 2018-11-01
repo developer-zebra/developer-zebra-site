@@ -67,19 +67,13 @@ See the [EB download page](../../download) for more information.
 
 -----
 
-OLD OLD
+### New/Updated Usage Guides
 
-### Updated Guides
+* **[SAP ITSmobile Usage](../sap)** has been broken into separate guides for Android and Windows Mobile/CE. **The Android edition has been updated to include new features for migration from Windows Mobile/CE**. 
+* **A new [Page-based Action Guide](../pageactions)** describes a new EB feature can execute specific JavaScript code or predefined commands whenever certain conditions are found on a page.
+* **An updated [Licensing Guide](../licensing)** describes an all-new licensing process based on the Flexera licensing server. 
 
-* **[SAP ITSmobile Usage Guide](../sap) -** Now offers a new UserAgent section and enhanced Function Key Mapping information. 
-* **[Migration Overview](../migration) -** Lists all options for migrating to Enterprise Browser from other platforms or solutions. 
-* **[Shortcut Utility Guide](../ShortcutCreator) -** Updated to reflect separate utilities for targeting Android and Windows Mobile/CE. 
-
-* **The [DOM Injection Guide](../dom) now includes a section on Page-based Actions**, which can execute specific JavaScript code or predefined commands whenever certain conditions are found on a page.
-
-Enhanced licensing process
-
-* **The [Keycode Mapping Guide](../keycapture) has been updated** to indicate a lack of support for remapping of HOME and RECENT APPs keys.
+* **The [DOM Injection Guide](../dominjection) has been updated** to reflect suport for Enterprise Browser substitution variables.
 
 -----
 

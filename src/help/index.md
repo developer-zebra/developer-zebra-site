@@ -4,7 +4,7 @@ title: I Need Tools For...
 layout: guide.html
 menu:
   items:
-    - title: About Techdocs
+    - title: About TechDocs
       url: /about
     - title: I Need Tools For...
       url: /help
@@ -72,7 +72,7 @@ Organizations with access to Java and/or C# developers can use [EMDK for Android
 
 -----
 
-### DataWedge vs EMDK
+### DataWedge vs EMDK Comparison
 
 It is common for developers to be faced with the decision to choose between DataWedge or EMDK to integrate barcode scanning within their app. This comparison chart describes the differences and similarities between both, with DataWedge being the simpler route:
 <table class="facelift" style="width:100%" border="1" padding="5px">
@@ -105,9 +105,9 @@ It is common for developers to be faced with the decision to choose between Data
   </tr>
 
   <tr>
-    <td><b>Scan trigger customization</b></td>
-    <td><a href="http://techdocs.zebra.com/datawedge/latest/guide/input/dcp/">Data Capture Plus</a> profile enables areas of the device screen to be designated as scan triggers (ie. floating button, full-screen mode, button-only mode)</td>
-    <td>Not available in EMDK. Alternatively, functionality can be achieved with <a href="http://techdocs.zebra.com/mx/compatibility">MX KeyMapping Manager</a>. </td>
+    <td><b>Soft Scan Trigger (scan via screen tap)</b></td>
+    <td>Using Profiles: <a href="http://techdocs.zebra.com/datawedge/latest/guide/input/dcp/">Data Capture Plus</a> profile enables areas of the device screen to be designated as scan triggers (ie. floating button, full-screen mode, button-only mode) <br>Using Intents: Use <a href="http://techdocs.zebra.com/datawedge/latest/guide/api/softscantrigger/">Soft Scan Trigger API</a></td>
+    <td>Requires app coding </td>
   </tr>
 
   <tr>

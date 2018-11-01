@@ -17,6 +17,8 @@ menu:
       url: /datawedge/7-0/guide/api
     - title: Demo Apps
       url: /datawedge/7-0/guide/demo
+    - title: Samples
+      url: /datawedge/7-0/guide/samples
     - icon: fa fa-comments-o
       url: https://developer.zebra.com/community/home/discussions/datawedge
     - icon: fa fa-graduation-cap

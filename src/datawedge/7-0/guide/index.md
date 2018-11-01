@@ -21,6 +21,8 @@ menu:
       url: /datawedge/7-0/guide/demo
     - title: Demo
       url: /datawedge/7-0/guide/api
+    - title: Samples
+      url: /datawedge/7-0/guide/samples
     - icon: fa fa-search
       url: /datawedge/7-0/search
     - icon: fa fa-download

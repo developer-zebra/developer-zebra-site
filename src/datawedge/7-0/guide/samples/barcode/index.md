@@ -9,7 +9,7 @@ sources:
   - title: Github Repo
     url: 'https://github.com/Zebra/samples-datawedge'
 devices:
-  - All supported Zebra Android Marshmallow (v6.0) or higher devices
+  - All supported Zebra Android Marshmallow (v6.0) or above devices
 image: DataCapture1-0.png
 screenshots:
   - datacapture1-0.png
@@ -82,14 +82,19 @@ Available actions in this sample:
 ##Using This Sample
 1. Launch the sample app.
   ![img](datacapture1-0-mini.png)  
+<br>
 2. View the DataWedge version installed on the device. 
   ![img](datacapture1-1-mini.png)  
+<br>
 3. Tap Create. “DWDataCapture1” profile is created if it does not exist and associates it with this application. 
   ![img](datacapture1-2-mini.png)  
+<br>
 4. Select/deselect decoders. All other decoders not specified are set to defaults. Tap Set to save.
   ![img](datacapture1-4-mini.png)   
+<br>
 5. Press the hard trigger button or toggle the soft scan trigger button to scan. 
   ![img](datacapture1-5-mini.png)  
+<br>
 6. View the displayed information: 
    * Scanner status
    * Scan decoder
@@ -97,9 +102,17 @@ Available actions in this sample:
 ![img](datacapture1-6-mini.png)  
  
   
+-----
+
+**Related guides**:
+
+* [DataWedge APIs](../../api) 
 
 
+Related Guides: 
 
+* [DataWedge Setup Guide](../setup)
+* [DataWedge Demo app](../demo)
 
 
 

@@ -81,20 +81,20 @@ Available actions in this sample:
 
 ##Using This Sample
 1. Launch the sample app.
-  ![img](datacapture1-0-mini.png)  
-<br>
+  ![img](datacapture1-0-mini.png) 
+  
 2. View the DataWedge version installed on the device. 
   ![img](datacapture1-1-mini.png)  
-<br>
+
 3. Tap Create. “DWDataCapture1” profile is created if it does not exist and associates it with this application. 
   ![img](datacapture1-2-mini.png)  
-<br>
+
 4. Select/deselect decoders. All other decoders not specified are set to defaults. Tap Set to save.
   ![img](datacapture1-4-mini.png)   
-<br>
+
 5. Press the hard trigger button or toggle the soft scan trigger button to scan. 
   ![img](datacapture1-5-mini.png)  
-<br>
+
 6. View the displayed information: 
    * Scanner status
    * Scan decoder
@@ -108,11 +108,6 @@ Available actions in this sample:
 
 * [DataWedge APIs](../../api) 
 
-
-Related Guides: 
-
-* [DataWedge Setup Guide](../setup)
-* [DataWedge Demo app](../demo)
 
 
 

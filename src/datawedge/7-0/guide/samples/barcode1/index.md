@@ -10,7 +10,7 @@ sources:
     url: 'https://github.com/Zebra/samples-datawedge'
 devices:
   - All supported Zebra Android Marshmallow (v6.0) or above devices
-image: DataCapture1-0.png
+image: datacapture1-0.png
 screenshots:
   - datacapture1-0.png
   - datacapture1-1.png
@@ -80,7 +80,7 @@ Available actions in this sample:
 * DataWedge (built-in all Zebra devices) is running on the device.
 
 ##Using This Sample
-1. Launch the sample app.
+1. [Download](https://github.com/Zebra/samples-datawedge), build, and launch the sample app.
   ![img](datacapture1-0-mini.png) 
   
 2. View the DataWedge version installed on the device. 
@@ -106,7 +106,7 @@ Available actions in this sample:
 
 **Related guides**:
 
-* [DataWedge APIs](../../api) 
+* [DataWedge Intent APIs](../../api) 
 
 
 

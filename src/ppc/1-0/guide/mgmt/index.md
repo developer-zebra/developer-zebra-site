@@ -22,7 +22,7 @@ In the [Admin View](../admin), use the **Add Battery** tab to manually add a bat
 Note: Batteries cannot be manually removed once added. 
 
 ##Power Precision Batteries
-PowerPrecision batteries provide limited battery information compared to PowerPrecision+ batteries, particularly with the lack of SOH. They are not displayed by default in the Admin View. Steps required to display PowerPrecision batteries:
+PowerPrecision batteries provide limited battery information compared to PowerPrecision+ batteries, particularly with the lack of SOH. Instead, Charge Cycles serve as a form of battery health metric for PowerPrecision batteries. They are not displayed by default in the Admin View. Steps required to display PowerPrecision batteries:
  1.  On the PPC Server, open the .env file (by default in folder: \PowerPrecision Console\Release\Server\WebUI). Change the property 
  <br>
 **PP_BATTERY_SUPPORT = "false"**
@@ -37,7 +37,9 @@ PowerPrecision batteries provide limited battery information compared to PowerPr
  <br>
 **property pp.battery.support=true**
  3. Restart the server.
-PowerPrecision batteries are displayed in the Admin View with the "Charge Cycles" field populated but no SOH. All SOH filters are required to be unchecked to view PowerPrecision batteries.
+ 4. PowerPrecision batteries are displayed in the Admin View with the "Charge Cycles" field populated. All SOH filters are required to be unchecked to view PowerPrecision batteries. <br>
+
+Note: PowerPrecision+ batteries do not report Charge Cycle information.
 
 ##Battery History
 View battery history by navigating to the **Active** tab from the [Admin View](../admin) and clicking on any battery listed. Complete battery information and history (within one month) is displayed such as SOH, SOC, battery voltage, battery temperature, battery type, EOL snooze, trigger event, last updated and more. The chart displays SOH and SOC over time. It may be customized to display only SOH or SOC, or both.

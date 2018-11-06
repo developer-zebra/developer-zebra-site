@@ -42,8 +42,8 @@ products:
         url: /datawedge/7-0/guide/input/msr
       - title: APIs
         url: /datawedge/7-0/guide/api
-      - title: Demo App
-        url: /datawedge/7-0/guide/demo
+      - title: Demo App & Samples
+        url: /datawedge/7-0/guide/samples
     versions:
       - url: datawedge/7-0/guide/about
         label: '7.0'

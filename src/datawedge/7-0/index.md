@@ -15,8 +15,6 @@ menu:
       url: /datawedge/7-0/guide/settings
     - title: APIs
       url: /datawedge/7-0/guide/api
-    - title: Demo Apps
-      url: /datawedge/7-0/guide/demo
     - title: Demo App & Samples
       url: /datawedge/7-0/guide/samples
     - icon: fa fa-comments-o

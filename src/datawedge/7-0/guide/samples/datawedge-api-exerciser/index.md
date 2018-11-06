@@ -53,18 +53,19 @@ The DataWedge API Sample App demonstrates the functionality for all major DataWe
 * [Create Profile](../../api/createprofile/)
 * [Set Config](../../api/setconfig/)
 * [Restore Configuration](../../api/restoreconfig/)
-* 6.3 variants of the APIs first defined for 6.0 e.g. SoftScanTrigger etc.
+* Version 6.3 variants of the APIs first defined for 6.x e.g. SoftScanTrigger, ScannerInputPlugin, etc.
 
 ###APIs (6.4):
-* Set Config (using the 'auto' scanner)
-* Get Datawedge status
+* [Set Config](../../api/setconfig/) (using the 'auto' scanner)
+* [Get Datawedge status](../..//api/getdatawedgestatus/)
 
 ###APIs (6.5):
-* Result codes are given for supported APIs (mostly the Set... APIs)
-* Get Config
-* Get / Set Disabled App List
-* Switch Scanner
-* Switch Scanner Params
+* [Result codes](../../api/resultinfo/) are given for supported APIs (mostly the Set... APIs)
+* [Get Config](../..//api/getconfig/)
+* [Get Disabled App List](../../api/getdisabledapplist/)
+* [Set Disabled App List](../../api/setdisabledapplist/)
+* [Switch Scanner](../../api/switchscanner/)
+* [Switch Scanner Params](../../api/switchscannerparams/)
 
 ###APIs (6.6):
 * [Set Reporting Options](../../api/setreportingoptions/)
@@ -79,7 +80,7 @@ The DataWedge API Sample App demonstrates the functionality for all major DataWe
 * [Switch Simulscan Params](../../api/switchsimulscanparams/) 
 
 ##Requirements
-* This sample was created based on DataWedge version 6.8 (version that existed at the time of creation). Check [DataWedge API](../,,/about) documentation for any future version changes that may affect functionality.
+* This sample was created to support DataWedge APIs up to version 6.8 (version that existed at the time of creation). Check [DataWedge API](../../about) documentation for any future version changes that may affect functionality.
 * DataWedge (built-in all Zebra devices) is running on the device.
 
 ##Setup

@@ -70,9 +70,11 @@ Configure DataWedge to output scans via intent:
 Using the app:
 1. [Download](https://github.com/Zebra/samples-datawedge), build, and launch the sample app.
   ![img](basicintent1-1-mini.png) 
+   _Figure 2: App screen_
 
 2. Scan a barcode. The data fields are populated:
   ![img](basicintent1-2-mini.png)
+   _Figure 3: App screen with captured data_
  
   
 -----

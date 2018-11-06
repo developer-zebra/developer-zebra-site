@@ -1,7 +1,7 @@
 ---
 publish: true
 title: DataWedge API Exerciser
-description: Shows how to exercise the DataWedge Intent APIs.
+description: Shows how to exercise the various DataWedge Intent APIs.
 downloads:
   - title: Sample Projects
     url: 'https://github.com/Zebra/samples-datawedge/archive/master.zip'

@@ -1,6 +1,6 @@
 ---
 publish: true
-title: BasicIntent1
+title: Basic Intent
 description: Shows how to receive scanned barcode data through an Android intent. 
 downloads:
   - title: Sample Projects

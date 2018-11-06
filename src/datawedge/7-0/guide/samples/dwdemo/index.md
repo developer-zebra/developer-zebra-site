@@ -1,7 +1,7 @@
 ---
 publish: true
 title: DWDemo
-description: Built-in demonstration app that shows how data is acquired by an application using the DataWedge intent output. 
+description: Built-in demonstration app that shows how data is acquired by using the DataWedge intent output. 
 devices:
   - All supported Zebra Android devices
 image: dwdemo_main.png

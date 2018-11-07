@@ -12,8 +12,12 @@
         </div>
         <p><a class="btn btn-primary btn-lg" href="{{ url }}">See Details</a></p>
         <ul class="social-icons">
+            {{#if nodownload}}
+
+            {{else}}
             <li><a href="{{{download}}}"><i class="fa fa-download"></i> </a></li>
             <li><a href="{{{source}}}"><i class="fa fa-github"></i> </a></li>
+            {{/if}}
             <li class="pull-right">{{product}} {{productversion}}</li>
         </ul>
 
@@ -27,6 +31,9 @@
                     <article class="media clearfix">
                         <div class="entry-thumbnail pull-left">
                             <img class="img-responsive" src="{{ url }}/{{ image }}" alt="">
+                            {{#if nodownload}}
+                         
+                            {{else}}
                             <span class="post-format post-format-gallery">
                                 {{#if downloads}}
 
@@ -35,6 +42,7 @@
                                     <a href="{{{download}}}"><i class="fa fa-3x fa-download"></i> </a>
                                 {{/if}}
                             </span>
+                            {{/if}}
                         </div>
                         <div class="media-body">
                             <header class="entry-header">
@@ -50,13 +58,18 @@
                             <footer class="entry-meta">
                                 
                                 <span class="entry-author">
+                                    {{#if nodownload}}
+                                           
+                                    {{else}}
                                     {{#if sources}}
                                         <a data-html="true" data-container="body" data-popover-content="#source{{@index}}" data-placement="bottom" data-toggle="popover"><i class="fa fa-github ">
                                     {{else}}
                                         <a href="{{{source}}}"><i class="fa fa-github ">
                                     {{/if}}
-                                        
-                                    </i> Source</span></a>
+                                    
+                                    </i> Source</a>
+                                    {{/if}}
+                                </span>
                             </footer>
                         </div>
                     <div class="hidden" id="download{{@index}}">

@@ -4,10 +4,10 @@ title: WiFi Configuration
 description: Demonstrates how to manage WiFi networks.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0'
 features:
   - Profile Manager
   - WiFi Manager

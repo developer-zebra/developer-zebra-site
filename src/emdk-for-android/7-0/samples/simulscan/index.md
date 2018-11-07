@@ -4,19 +4,24 @@ title: Document Capture
 description: Shows how the Simulscan APIs are used to capture multiple types of data from paper forms.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0'
 features:
   - Profile Manager
   - Simulscan
   - Java APIs
 devices:
-  - TC51 M/N, 
-  - TC56 M/N, 
-  - TC75 L, 
-  - TC75x M/N
+  - MC33 N,
+  - TC51 M/N,
+  - TC52 O, 
+  - TC56 M/N,
+  - TC57 O,
+  - TC70x M/N,
+  - TC72 O, 
+  - TC75x M/N, 
+  - TC77 O
 image: 1.png
 screenshots:
   - 1.png

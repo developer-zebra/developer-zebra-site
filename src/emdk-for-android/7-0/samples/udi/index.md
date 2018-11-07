@@ -4,14 +4,22 @@ title: UDI Label Scanning
 description: Shows how the Barcode API's UDI label scanning features are used.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0'
 image: 1.png
 devices:
-  - TC51 M/N, 
-  - TC56 M/N
+  - MC33 N/O,
+  - PS20 O,
+  - TC51 M/N/O,
+  - TC52 O, 
+  - TC56 M/N/O,
+  - TC57 O,
+  - TC70x M/N/O,
+  - TC72 O, 
+  - TC75x M/N/O, 
+  - TC77 O
 screenshots:
   - 1.png
   - 2.png

@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Data Capture
-description: Shows how to scan barcodes, configure DataWedge, register for scanner status notifications, and use the software scan trigger via DataWedge Intent APIs.
+description: Shows how to receive scanned barcode data, configure DataWedge, register for scanner status notifications, and use the software scan trigger via DataWedge Intent APIs.
 downloads:
   - title: Sample Projects
     url: 'https://github.com/Zebra/samples-datawedge/archive/master.zip'
@@ -26,7 +26,7 @@ date: 2018-11-08
 ---
 
 ##Overview 
-This sample app demonstrates DataWedge barcode scanning, configuration, scanner status notification and soft scan trigger using [DataWedge Intent APIs](../../api). 
+This sample app demonstrates how to receive scanned barcode data through an Android intent, configure DataWedge, register for scanner status notifications, and use the software scan trigger via [DataWedge Intent APIs](../../api). 
 
 Available actions in this sample: 
 * Display the DataWedge version

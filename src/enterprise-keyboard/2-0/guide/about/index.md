@@ -39,8 +39,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 ## New in v2.0
 
-### Device Support
-
+### Supported Devices
 
 <u>EKB 2.0 comes pre-installed</u> on the following Zebra devices running Android 8.x Oreo: 
 
@@ -121,7 +120,7 @@ _Stock Android keyboard_:
 * Auto-capitalization now works properly after navigating away from the alpha keyboard prior to typing.
 * Keyboard pop-ups no longer disappear when swiping from alpha to symbol layouts and back. 
 
-
+-----
 
 ### Added in v1.8
 

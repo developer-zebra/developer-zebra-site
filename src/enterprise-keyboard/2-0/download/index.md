@@ -7,7 +7,23 @@ productversion: '2.0'
 
 ### Supported Devices
 
-<u>EKB 1.9 comes pre-installed</u> on the following Zebra devices running Android 7.x Nougat: 
+<u>EKB 2.0 comes pre-installed</u> on the following Zebra devices running Android 8.x Oreo: 
+
+* **MC33**
+* **PS20**
+* **TC51**
+* **TC51 Healthcare**
+* **TC52**
+* **TC56**
+* **TC56 Healthcare**
+* **TC57**
+* **TC70x**
+* **TC72**
+* **TC75x**
+* **TC77**
+* **VC80x**
+
+<u>EKB 2.0 comes pre-installed</u> on the following Zebra devices running Android 7.x Nougat: 
 
  * **MC33**
  * **TC51**
@@ -25,7 +41,7 @@ productversion: '2.0'
 
 ### Pre-Nougat Options
 
-**<u>EKB 1.9 is added as a LifeGuard patch</u>** on Zebra devices listed below running Android 6.x Marshmallow or older.
+**<u>EKB 2.0 is added as a LifeGuard patch</u>** on Zebra devices listed below running Android 6.x Marshmallow or older.
 
  * **TC51**
  * **TC51 Healthcare**
@@ -35,7 +51,7 @@ productversion: '2.0'
  * **TC75x**
  * **WT6000**
 
-**To install EKB 1.9 on a device listed above**: 
+**To install EKB 2.0 on a device listed above**: 
 
 1. Visit the [LifeGuard download page](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html). 
 2. Identify and download the appropriate patch for the device and its OS. 

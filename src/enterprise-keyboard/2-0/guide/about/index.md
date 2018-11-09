@@ -57,6 +57,11 @@ This version of Enterprise Keyboard includes the following languages:
 * **TC77**
 * **VC80x**
 
+### Added Features
+
+* **Escape key support -** allows the ESC key to be remapped to an ASCII or Unicode character or to an EMOJI symbol or to function normally. More [about key remapping](../settings/#remappingkeys).
+* **Multi-user Mode -** supports deployment of Primary and Non-Primary Users. The latter cannot change EKB settings through the Settings panel or by using the Zebra StageNow staging tool. More [about Multi-user Mode](../settings/#remappingkeys).
+
 -----
 
 ## Unique EKB features  

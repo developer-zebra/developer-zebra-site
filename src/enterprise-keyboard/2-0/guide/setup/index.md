@@ -28,7 +28,7 @@ Enterprise Keyboard 1.1 (and higher) can be activated and configured:
 
 ## Multi-user Mode
 
-EKB 2.0 (and higher) supports deployment of Primary and Non-Primary Users to devices. Primary users can make changes to EKB settings through the Settings panel or have settings changes by using the Zebra StageNow staging tool or a company's own Enterprise Mobile Management system (if it supports such capabilities). Non-primary Users cannot change EKB settings on the device or through a staging tool. 
+EKB 2.0 (and higher) supports deployment of Primary and Non-Primary Users to devices. Primary users can make changes to EKB settings through the Settings panel or have settings changes by using the Zebra StageNow staging tool or a company's own Enterprise Mobile Management system (if supported by that system). Non-primary Users cannot change EKB settings on the device or through a staging tool. 
 
 -----
 

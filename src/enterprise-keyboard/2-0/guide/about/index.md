@@ -37,12 +37,26 @@ This version of Enterprise Keyboard includes the following languages:
 
 -----
 
-## New in v1.9
+## New in v2.0
 
-### Behavior Corrections
+### Device Support
 
-* Auto-capitalization now works properly after navigating away from the alpha keyboard prior to typing.
-* Keyboard pop-ups no longer disappear when swiping from alpha to symbol layouts and back. 
+
+<u>EKB 2.0 comes pre-installed</u> on the following Zebra devices running Android 8.x Oreo: 
+
+* **MC33**
+* **PS20**
+* **TC51**
+* **TC51 Healthcare**
+* **TC52**
+* **TC56**
+* **TC56 Healthcare**
+* **TC57**
+* **TC70x**
+* **TC72**
+* **TC75x**
+* **TC77**
+* **VC80x**
 
 -----
 
@@ -99,6 +113,15 @@ _Stock Android keyboard_:
 -----
 
 ## Version History
+
+### Changes in v1.9
+
+##### Behavior Corrections:
+
+* Auto-capitalization now works properly after navigating away from the alpha keyboard prior to typing.
+* Keyboard pop-ups no longer disappear when swiping from alpha to symbol layouts and back. 
+
+
 
 ### Added in v1.8
 

@@ -35,10 +35,10 @@ productversion: '1.9'
  * **TC75x**
  * **WT6000**
 
-**To install EKB 1.8 on a device listed above**: 
+**To install EKB 1.9 on a device listed above**: 
 
 1. Visit the [LifeGuard download page](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html). 
-2. Identify and download the appropriate patch for the device and OS. 
+2. Identify and download the appropriate patch for the device and its OS. 
 3. Apply the patch using instructions that accompany the download.
 
 -----

@@ -41,7 +41,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### Supported Devices
 
-<u>EKB 2.0 comes pre-installed</u> on the following Zebra devices running Android 8.x Oreo: 
+<u>EKB 2.0 comes pre-installed</u> on the following Zebra **devices running Android 8.x Oreo**: 
 
 * **MC33**
 * **PS20**
@@ -59,8 +59,8 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### Added Features
 
-* **Escape key support -** allows the ESC key to be remapped to an ASCII or Unicode character or to an EMOJI symbol or to function normally. More [about key remapping](../settings/#remappingkeys).
-* **Multi-user Mode -** supports deployment of Primary and Non-Primary Users. The latter cannot change EKB settings through the Settings panel or by using the Zebra StageNow staging tool. More [about Multi-user Mode](../settings/#remappingkeys).
+* **Escape key support -** allows the ESC key to be remapped to an ASCII or Unicode character or to an EMOJI symbol or to function normally. [About key remapping](../settings/#remappingkeys).
+* **Multi-user Mode -** supports deployment of Primary and Non-Primary Users. The latter cannot change EKB settings through the Settings panel or by using the Zebra StageNow staging tool. [About Multi-user Mode](../setup/#multiusermode).
 
 -----
 

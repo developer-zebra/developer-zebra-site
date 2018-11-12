@@ -23,9 +23,13 @@ Voice Input options:
 
 ##How it Works
 
+Voice Input relies on DataWedge profiles for configuration. Ensure that the application to receive the voice captured data is associated to the profile. The Voice Input section in the profile provides the options that control the voice data capture. See _Main Features_ section below.
+
 When running, Voice Input is placed in the state "waiting for start phrase" (_see Figure 8_). Voice data capture begins after speaking the predefined "start phrase", which then changes the state to "waiting for data" (_see Figure 9_). Voice capture stops automatically after speaking the data or after speaking an optional "end phrase", if defined. The data source can be identified as voice input to process the voice data according to any application requirements. Barcode scanning and voice input can exist in the same DataWedge profile so both data capture methods may be used interchangeably.
 
 ##Main Features
+
+Voice Input features are accessible from the DataWege profile.
 
 ![img](Figures1-3.png) 
 <br>
@@ -70,7 +74,7 @@ Data type selections:
 
 ###Voice Input Parameters
 
-Refer to DataWedge Voice Input Plugin in [Set Config API](../../api/setconfig) to configure the following Voice Input parameters:
+DataWedge Voice Input can be controlled programmatically with DataWedge APIs. Refer to DataWedge Voice Input Plugin in [Set Config API](../../api/setconfig) to configure the following Voice Input parameters:
 
 <table class="facelift" style="width:60%" border="1" padding="5px">
   <tr bgcolor="#dce8ef" align="center">
@@ -90,10 +94,12 @@ Refer to DataWedge Voice Input Plugin in [Set Config API](../../api/setconfig) t
     <td>voice_data_capture_end_phrase</td>
     <td>[blank] (default value)</td>
   </tr>
+  <!--
   <tr>
     <td>voice_end_detection_timeout</td>
     <td>0-30</td>
   </tr>
+  -->
   <tr>
     <td>voice_tab_command</td>
     <td>true, false</td>
@@ -134,10 +140,12 @@ Refer to DataWedge [Set Config API](../../api/setconfig).
 
 ##Limitations
 * Voice Input is validated only with English.
+* Offline speech recognition provides lower accuracy levels.
+* Providing numbers and special characters as part of the data capture start phrase is not supported.
+* In GMS Restricted mode, Voice Input will not work since it relies on Google speech recognition.
 * Do not use Google Assistant while DataWedge Voice Input is in use, as it can lead to undesirable behavior. 
 * Providing numbers and other special characters as part of the data capture start phrase is not supported.
 * Voice Input is not supported if Enterprise Home Screen (EHS) is in restricted mode. However, enabling all the privilege settings in EHS will reinstate Voice Input in DataWedge.  
-* In GMS Restricted mode, Voice Input will not work since it relies on Google speech recognition.
 
 ------
 

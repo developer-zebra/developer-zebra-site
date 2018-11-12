@@ -103,7 +103,6 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
  * `voice_input_enabled` [string] - true/false
  * `voice_data_capture_start_phrase` [string] - start (default value)
  * `voice_data_capture_end_phrase` [string] - [blank] (default value)
- * `voice_end_detection_timeout` [string] - 0 - 30
  * `voice_tab_command` [string] - true/false
  * `voice_enter_command` [string] - true/false
  * `voice_data_type` [string] - 0 - Any, 1- Alpha, 2 - Numeric

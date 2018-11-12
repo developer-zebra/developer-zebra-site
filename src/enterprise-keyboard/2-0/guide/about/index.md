@@ -57,6 +57,8 @@ This version of Enterprise Keyboard includes the following languages:
 * **TC77**
 * **VC80x**
 
+See all [supported Zebra devices](../../download). 
+
 ### Added Features
 
 * **Escape key support -** allows the ESC key to be remapped to an ASCII or Unicode character or to an EMOJI symbol or to function normally. [About key remapping](../settings/#remappingkeys).

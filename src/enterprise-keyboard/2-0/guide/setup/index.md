@@ -28,7 +28,21 @@ Enterprise Keyboard 1.1 (and higher) can be activated and configured:
 
 ## Multi-user Mode
 
-EKB 2.0 (and higher) supports deployment of Primary and Non-Primary Users to devices. Primary users can make changes to EKB settings through the Settings panel or have settings changes by using the Zebra StageNow staging tool or a company's own Enterprise Mobile Management system (if supported by that system). Non-primary Users cannot change EKB settings on the device or through a staging tool. 
+**On devices built with Zebra's SDM660 platform** (which currently includes the PS20, TC52, TC57, TC72 and TC77), EKB 2.0 (and higher) supports deployment of Primary and Secondary Users. Primary Users are permitted to make changes to EKB settings on a device through the Settings panel or remotely through Zebra StageNow or a company's own Enterprise Mobile Management system (if supported by that system). Secondary Users are prevented from changing EKB settings by any means. 
+
+**To create a Secondary User**:
+
+1. Sign into the device as a Primary User. 
+2. **Open the Settings panel** on the device. 
+3. Tap **Users & accounts -> Users -> Add user -> Add a new user**. 
+4. Follow prompts to complete the process. 
+
+**To switch users**
+
+1. **Open the Settings panel** on the device. 
+2. Tap **Users & accounts -> Users**. A list of device User names appears. 
+3. **Tap on the desired User name** to switch to that User. 
+
 
 -----
 

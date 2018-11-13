@@ -62,7 +62,7 @@ See all [supported Zebra devices](../../download).
 ### Added Features
 
 * **Escape key support -** allows the ESC key to be remapped to an ASCII or Unicode character or to an EMOJI symbol or to function normally. [About key remapping](../settings/#remappingkeys).
-* **Multi-user Mode -** supports deployment of Primary and Non-Primary Users. The latter cannot change EKB settings through the Settings panel or by using the Zebra StageNow staging tool. [About Multi-user Mode](../setup/#multiusermode).
+* **[Multi-user Mode](../setup/#multiusermode) -** supports deployment of Primary and Secondary Users, the latter of which are blocked from making EKB settings changes on the device. **Supported only on SDM660-platform devices running Android 8.x Oreo**.
 
 -----
 

@@ -14,8 +14,6 @@ See the [EKB 1.6 download page](../../download) for a list of supported devices.
 
  -->
 
------
-
 Enterprise Keyboard 1.1 (and higher) can be activated and configured: 
 
 * Manually at the device
@@ -28,19 +26,21 @@ Enterprise Keyboard 1.1 (and higher) can be activated and configured:
 
 ## Multi-user Mode
 
-**On devices built with Zebra's SDM660 platform (including the PS20, TC52, TC57, TC72 and TC77) running Android 8.x Oreo**, EKB 2.0 (and higher) supports Primary and Secondary Users. Primary Users are permitted make changes to EKB settings and to create Secondary Users, which cannot change EKB settings or create additional users. 
+Enterprise Keyboard 2.0 (and higher) supports Primary and Secondary Users **on devices built with Zebra's SDM660 platform (including PS20, TC52, TC57, TC72 and TC77) running Android 8.x Oreo**. Primary Users are permitted to create Secondary Users and to make changes to EKB settings. Secondary Users cannot change EKB settings or create additional users. 
 
-**To create a Secondary User**:
+**To create a Secondary User**:<br>
+_Applies only to devices running Android 8.x Oreo_
 
-1. Sign into the device as a Primary User. 
+1. Sign into a device (running Oreo) as a Primary User. 
 2. **Open the Settings panel** on the device. 
 3. Tap **Users & accounts -> Users -> Add user -> Add a new user**. 
 4. Follow prompts to complete the process. 
-
-<img alt="" style="height:150px" src="secondray_user_mode.png"/>
-_Secondary User's EKB Settings panel_. 
 <br>
 
+The EKB Settings panel appears to both user types, but settings are greyed out for Secondary Users, as shown below: 
+
+<img alt="" style="height:300px" src="secondray_user_mode.png"/> 
+<br>
 
 **To switch users**
 
@@ -48,7 +48,7 @@ _Secondary User's EKB Settings panel_.
 2. Tap **Users & accounts -> Users**. A list of device User names appears. 
 3. **Tap on the desired User name** to switch to that User. 
 
-
+> **Supported only on SDM660-platform devices running Android 8.x Oreo**. 
 
 -----
 

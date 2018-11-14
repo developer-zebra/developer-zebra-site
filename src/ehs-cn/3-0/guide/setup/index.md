@@ -7,5 +7,5 @@ redirect_url: /ehs-cn/2-8/guide/setup/
 
 ---
 
-## Redirecting to 2.8 EHS Chinese
+## 切换到EHS 2.8，最新的中文版...
 

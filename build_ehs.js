@@ -903,6 +903,12 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'ehs/3-0/'
     }))
     .use(foldermenu({
+        folder: 'ehs-cn/2-8/'
+    }))
+    .use(foldermenu({
+        folder: 'ehs-cn/3-0/'
+    }))
+    .use(foldermenu({
         folder: 'datawedge/5-0/'
     }))
     .use(foldermenu({

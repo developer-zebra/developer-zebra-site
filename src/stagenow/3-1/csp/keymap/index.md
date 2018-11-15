@@ -1,5 +1,5 @@
 ---
-title: Keymapping Manager
+title: KeyMapping Manager
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

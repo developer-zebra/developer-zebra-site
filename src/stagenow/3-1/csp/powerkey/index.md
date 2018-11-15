@@ -1,5 +1,5 @@
 ---
-title: Powerkey Manager
+title: PowerKey Manager
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

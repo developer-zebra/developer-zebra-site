@@ -4,10 +4,10 @@ title: App Manager
 description: Shows how to use EMDK for Android Profile APIs to manage App Manager profiles.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0'
 features:
   - Profile Manager
   - App Manager

@@ -4,20 +4,15 @@ title: Rebooting The Device
 description: Shows how to set the power state to "Suspend" (sleep mode) or to "Reset" (reboot) the device.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0'
 features:
   - Profile Manager
   - Power Manager
 devices:
-  - MC18 KK, 
-  - MC40 KK, 
-  - MC92 KK, 
-  - TC55 KK, 
-  - TC70 KK, 
-  - TC75 KK
+  - All supported devices
 image: 1.png
 screenshots:
   - 1.png

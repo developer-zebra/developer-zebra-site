@@ -4,16 +4,16 @@ title: Personal Shopper
 description: Shows how the Personal Shopper APIs are used to programmatically interact with the MC18 cradle.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0'
 features:
   - Profile Manager
   - Simulscan
   - Java APIs
 devices:
-  - MC18
+  - PS20 O
 image: 1.png
 screenshots:
   - 1.png

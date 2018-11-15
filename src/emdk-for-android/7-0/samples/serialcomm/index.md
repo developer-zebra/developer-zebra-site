@@ -4,14 +4,17 @@ title: Serial Communication
 description: Demonstrates the EMDK Serial Communication API to enable support for DEX (data exchange) in an application. DEX is a format for collecting audit and event data from vending machines.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0'
 features: null
 devices:
-  - TC70 KK RevB, 
-  - TC75 KK
+  - TC70 M/N/O,
+  - TC72 O, 
+  - TC75 M/N/O,
+  - TC77 O,
+  - VC80x N/O
 image: 1.png
 screenshots:
   - 2.png

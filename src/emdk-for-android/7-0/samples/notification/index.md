@@ -4,18 +4,22 @@ title: Notification
 description: Shows how to use the Notification APIs.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-6_9'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0'
 features:
   - Java APIs
 devices:
-  - TC51 M/N, 
-  - TC56 M/N, 
-  - TC70x M/N, 
-  - TC75x M/N, 
-  - WT6000 L (w/RS6000 scanner)
+  - TC51 M/N/O,
+  - TC52 O, 
+  - TC56 M/N/O, 
+  - TC57 O,
+  - TC70x M/N/O,
+  - TC72 O, 
+  - TC75x M/N/O,
+  - TC77 O, 
+  - WT6000 N (w/RS6000 scanner, External vibrator)
 image: 1.png
 screenshots:
   - 1.png

@@ -1,8 +1,10 @@
 ---
 title: DeviceCentral Manager
 layout: redirect.html
-redirect_url: /stagenow-cn/3-0/csp/devicecentralmgr/
+redirect_url: /stagenow/3-1/csp/devicecentralmgr/
 ---
 
-## 切换到StageNow 3.0，最新的中文版...
+## StageNow 3.0中没有此功能。回到StageNow 3.1英文版...
+
+
 

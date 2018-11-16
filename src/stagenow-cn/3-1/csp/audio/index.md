@@ -1,29 +1,8 @@
 ---
 title: Audio Volume UI Manager
-layout: csp-detail.html
-mxversions:
-  - text: MX 4.2
-    value: 4.2
-  - text: MX 4.3
-    value: 4.3
-  - text: MX 4.4
-    value: 4.4
-  - text: MX 5.0
-    value: 5
-csp: audiovoluimgr
-product: StageNow
-productversion: '3.1'
+layout: redirect.html
+redirect_url: /stagenow-cn/3-0/csp/audio/
 ---
 
-
-
-
-
-
-
-
-
-
-
-
+## 切换到StageNow 3.0，最新的中文版...
 

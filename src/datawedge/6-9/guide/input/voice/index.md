@@ -21,11 +21,21 @@ Voice Input options:
 
 >This feature is supported only on Zebra GMS devices.
 
+Watch the DevTalk presentation on DataWedge Voice Input:
+<div><iframe width="430" height="308" src="https://www.youtube.com/embed/Hp_Z24WSrUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+
+
 ##How it Works
 
 Voice Input relies on DataWedge profiles for configuration. Ensure that the application to receive the voice captured data is associated to the profile. The Voice Input section in the profile provides the options that control the voice data capture. See _Main Features_ section below.
 
 When running, Voice Input is placed in the state "waiting for start phrase" (_see Figure 8_). Voice data capture begins after speaking the predefined "start phrase", which then changes the state to "waiting for data" (_see Figure 9_). Voice capture stops automatically after speaking the data or after speaking an optional "end phrase", if defined. The data source can be identified as voice input to process the voice data according to any application requirements. Barcode scanning and voice input can exist in the same DataWedge profile so both data capture methods may be used interchangeably.
+
+Watch a demo on the basics of Voice Input with DWDemo app:<br> 
+<iframe width="300" height="613" src="https://www.useloom.com/embed/92684a9ded8e44eca2a08cd4472d1fa3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+Watch a demo showcasing the **Send Enter** command for multiple field entries: <br>
+<div><iframe width="300" height="632" src="https://www.useloom.com/embed/e351721223ec4b3b96e0a383cd392fdf" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
 ##Main Features
 
@@ -35,7 +45,7 @@ Voice Input features are accessible from the DataWege profile.
 <br>
 * **Enabled** - Enables voice input. _See Figure 1._
 
-* **Data capture start phrase** - Required phrase to start the data capture. **The default value is "start."** _See Figure 1 and 2._
+* **Data capture start phrase** - Required phrase to start the data capture. **The default value is "start."** Numbers and special characters are not supported as part of the start phrase.  _See Figure 1 and 2._
 
 * **Data capture end phrase** - Optional phrase that ends the data capture. There is no default value. _See Figures 1 and 3._
 
@@ -141,8 +151,7 @@ Refer to DataWedge [Set Config API](../../api/setconfig).
 ##Limitations
 * Voice Input is validated only with English.
 * Offline speech recognition provides lower accuracy levels.
-* Providing numbers and special characters as part of the data capture start phrase is not supported.
-* In GMS Restricted mode, Voice Input will not work since it relies on Google speech recognition.
+* In GMS Restricted mode with the use of [App Manager's DisableGMSApps action](/mx/appmgr/#action), Voice Input will not work since it relies on Google speech recognition. 
 * Do not use Google Assistant while DataWedge Voice Input is in use, as it can lead to undesirable behavior. 
 * Providing numbers and other special characters as part of the data capture start phrase is not supported.
 * Voice Input is not supported if Enterprise Home Screen (EHS) is in restricted mode. However, enabling all the privilege settings in EHS will reinstate Voice Input in DataWedge.  

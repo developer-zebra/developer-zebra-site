@@ -15,7 +15,7 @@ parm:
       mx: "6.2"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to the Touch Mode; any previously selected setting will be retained. 
+      description: This value (or the absence of this parm from the XML) causes no change to the Touch Mode; any previously selected setting is retained. 
     - code: 1
       devicetype: A
       name: Stylus and Finger 
@@ -40,4 +40,4 @@ parm:
 
 Used to apply Touch-Mode settings to any supported device in accordance with the touch-screen sensitivity required for an expected usage scenario.
 
-**IMPORTANT**: Use this parameter only when no device-specific parameter exists for a target device <u>_**and**_ it is known that touch-screen sensitivity settings are supported on that device</u>. Applying this parameter to a device that does not support touch-screen sensitivity settings returns an error in the Result XML. 
+**IMPORTANT**: Use this parameter only when no device-specific parameter exists for a target device <u>_**AND ONLY**_ when it is known that touch-screen sensitivity settings are supported on that device</u>. Applying this parameter to a device that does not support touch-screen sensitivity settings results in unpredictable behavior, causes an error or produces no output in the Result XML to indicate failure. 

@@ -6,6 +6,7 @@ order: 10
 mx: "6.2"
 osx: "6.2"
 devicetype: A
+info: Compatible with TC51, TC56, TC70x and TC75x devices only.
 parm:
   pivotal: no
   name: Protector
@@ -16,13 +17,13 @@ parm:
       name: (unchecked)
       mx: "6.2"
       osx: "6.2"
-      description: Screen protector not present; sensitivity will not be adjusted to compensate.
+      description: Screen protector not present; sensitivity is not adjusted to compensate.
     - code: true
       devicetype: A
       name: (checked)
       mx: "6.2"
       osx: "6.2"
-      description: Screen protector is present; sensitivity will be adjusted (on devices that support it) to compensate. 
+      description: Screen protector is present; sensitivity is adjusted (on devices that support it) to compensate. 
 ---
 
-Controls whether screen sensitivity will be adjusted to compensate for the presence of a screen protector. **Compatible with TC51, TC56, TC70x and TC75x devices only**. 
+Controls whether screen sensitivity is adjusted to compensate for the presence of a screen protector. **Compatible with TC51, TC56, TC70x and TC75x devices only**. 

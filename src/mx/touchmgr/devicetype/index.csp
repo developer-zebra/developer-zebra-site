@@ -14,7 +14,7 @@ parm:
       mx: "6.2"
       devicetype: A
       name: Any
-      description: This value (or the absence of this parm from the XML) will apply Touch Mode settings for any and all devices. 
+      description: This value (or the absence of this parm from the XML) applies Touch Mode settings for any and all devices. 
     - code: 1
       devicetype: A
       name: 8960
@@ -32,7 +32,7 @@ parm:
       description: Applies settings for ET50 and ET55 devices.
 ---
 
-Used to specify the set of Zebra devices for which to apply settings for touch-screen sensitivity.
+Used to specify the set of Zebra devices on which to apply settings for touch-screen sensitivity.
 
 <!--
     - code: 2

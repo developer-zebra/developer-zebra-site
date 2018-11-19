@@ -5,6 +5,7 @@ type: parm
 order: 3
 mx: "4.2"
 devicetype: A
+info: This parameter is not supported on the TC8000 running Android 5.x Lollipop. 
 parm:
   presentif: Device Type is set to "8956" or "8960" 
   pivotal: No

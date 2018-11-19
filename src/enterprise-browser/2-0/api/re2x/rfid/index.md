@@ -51,6 +51,7 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 <!-- Table Break -->
 
 ## Methods
+
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
 <table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" />

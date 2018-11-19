@@ -196,4 +196,4 @@ _The Zebra Support Central site showing search results for the search term "inte
 Related Guides: 
 
 * [DataWedge Setup Guide](../setup)
-* [DataWedge Demo app](../demo)
+* [DataWedge Demo app](../samples/dwdemo)

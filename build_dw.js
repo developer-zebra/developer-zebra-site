@@ -247,6 +247,9 @@ var sitebuild = Metalsmith(__dirname)
   .use(foldermenu({
         folder: 'datawedge/7-0/'
     }))
+  .use(foldermenu({
+        folder: 'datawedge/7-1/'
+    }))
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({
       maxLength: 250,

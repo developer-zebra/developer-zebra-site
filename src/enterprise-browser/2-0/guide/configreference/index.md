@@ -537,9 +537,7 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 	  </CustomKioskMode>
 
 ### DisableAllIME
-**Applies to only devices running <u>Android Lollipop and higher</u>.** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. 
-
-**IMPORTANT: Enabling this parameter might cause DataWedge to stop outputting acquired data as keystrokes**. To avoid this conflict, enable [Zebra Enterprise Keyboard](/enterprise-keyboard) on the device before enabling this parameter. 
+**Applies to only devices running <u>Android Lollipop and higher</u>.** Controls whether to use the input method editors (IMEs) in the Enterprise Browser app. **IMPORTANT: Enabling this parameter might cause DataWedge to stop outputting acquired data as keystrokes**. To avoid this conflict, enable [Zebra Enterprise Keyboard](/enterprise-keyboard) on the device before enabling this parameter. 
 
 **Possible values**:
 

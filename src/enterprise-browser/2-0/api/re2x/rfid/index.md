@@ -50,7 +50,7 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 
 <!-- Table Break -->
 
-## Methods
+<h2> Methods</h2>
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
@@ -188,9 +188,9 @@ Items listed in this section indicate methods or, in some cases, indicate parame
 </table>
 
 ## Parameters
-Items listed in this section indicate parameters, or attributes which can be set.
+Items listed in this section indicate parameters or attributes that can be set.
 
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" />
+<table class="facelift"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" />
 	<tr>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Possible Values</th>
@@ -200,19 +200,19 @@ Items listed in this section indicate parameters, or attributes which can be set
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>antennaSelected:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">0-N</td>
-		<td class="clsSyntaxCells clsOddRow">Index of the antenna being selected for the subsequent data or configuration operations. A '0' indicates all antennas to be selected.</td>
+		<td class="clsSyntaxCells clsOddRow">Index of the antenna being selected for the subsequent data or configuration operations. A '0' indicates all antennae to be selected.</td>
 		<td class="clsSyntaxCells clsOddRow">0(ALL)</td>
 	</tr>
 		<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>beepOnRead:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsEvenRow">Specifies if the device should beep whenever application receives a tag.</td>
+		<td class="clsSyntaxCells clsEvenRow">Specifies whether the device should beep whenever application receives a tag.</td>
 		<td class="clsSyntaxCells clsEvenRow">true</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>enableTagAccessStatus:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">Enable/Disable the access status field in the tag reports.  Contains valid values for Read/Write/Lock/Kill operations</td>
+		<td class="clsSyntaxCells clsOddRow">Enable/Disable the access status field in the tag reports. Contains valid values for Read/Write/Lock/Kill operations</td>
 		<td class="clsSyntaxCells clsOddRow">false</td>
 	</tr>
 	<tr>
@@ -285,6 +285,12 @@ Items listed in this section indicate parameters, or attributes which can be set
 		<td class="clsSyntaxCells clsOddRow"><b>newTagID:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">hex password</td>
 		<td class="clsSyntaxCells clsOddRow">sets a new tag ID to be assigned to the currently selected tag in the setTagID method</td>
+		<td class="clsSyntaxCells clsOddRow">N/A</td>
+	</tr>
+	<tr>
+		<td class="clsSyntaxCells clsOddRow"><b>tagoffset:[Value]</b></td>
+		<td class="clsSyntaxCells clsOddRow">[POSSIBLE VALUES]</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the word offset into the selected memory bank to use for the next access of the currently selected tag</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
@@ -370,6 +376,24 @@ Items listed in this section indicate parameters, or attributes which can be set
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
 		<td class="clsSyntaxCells clsOddRow">Specifies to report only unique tags</td>
 		<td class="clsSyntaxCells clsOddRow">true</td>
+	</tr>
+	<tr>
+		<td class="clsSyntaxCells clsOddRow"><b>readerID:[Value]</b></td>
+		<td class="clsSyntaxCells clsOddRow">Based on reader ID returned by enumRFIDevent callback</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the ID of the reader to be called before rfid.connect. If value is not set, default value is used.</td>
+		<td class="clsSyntaxCells clsOddRow">RFID1</td>
+	</tr>
+	<tr>
+		<td class="clsSyntaxCells clsOddRow"><b>DPOState:[Value]</b></td>
+		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
+		<td class="clsSyntaxCells clsOddRow">Used to enable/disable device power optimization. Valid only on RFD8500 Bluetooth reader.</td>
+		<td class="clsSyntaxCells clsOddRow">NEED DEFAULT</td>
+	</tr>
+	<tr>
+		<td class="clsSyntaxCells clsEvenRow"><b>transport:[Value]</b></td>
+		<td class="clsSyntaxCells clsEvenRow">Bluetooth, serial</td>
+		<td class="clsSyntaxCells clsEvenRow">Sets the mode of transport to be called before rfid.enumerate. Uses default value if no value is set.</td>
+		<td class="clsSyntaxCells clsEvenRow">serial</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>RFMode:[Value]</b></td>
@@ -514,6 +538,12 @@ Items listed in this section indicate parameters, or attributes which can be set
 		<td class="clsSyntaxCells clsOddRow">hex data</td>
 		<td class="clsSyntaxCells clsOddRow">sets the data to write in the tagWrite method</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
+	</tr>
+	<tr>
+		<td class="clsSyntaxCells clsOddRow"><b>useSoftTrigger:[Value]</b></td>
+		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
+		<td class="clsSyntaxCells clsOddRow">For Android, specifies the user to use start/stoptrigger</td>
+		<td class="clsSyntaxCells clsOddRow">false</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>transmitPower:[Value]</b></td>
@@ -742,7 +772,10 @@ Returns any error conditions where required
 2000 - One of the relevant parameters is invalid or missing.<br/>
 2001 - Plug-in Busy.<br/>
 2002 - Failed to create a plug-in thread.<br/>
-2003 - Plug-in Cannot process properties or methods unless connected.<br/>
+2003 - Plug-in cannot process properties or methods unless connected.<br/>
+2004 - InvalidUsageException.<br/>
+2005 - OperationFailureException.<br/>
+1000 - Any status event like handheld trigger event, reader disconnection event.<br/>
 		</td>
 	</tr>
 	<tr>
@@ -818,6 +851,12 @@ Returns results of the last Access operation
 </table>
 
 ## Remarks
+
+1. On devices running Android, `rfid.connect` can be called only after the `enumRFIDevent` callback is received by calling `rfid.enumerate`. 
+2. An Enterprise Browser application can connect to only one reader at one time. If a different reader is desired, the app must disconnect from the currently connected reader before connecting to a new one.
+3. An RFID reader can connect to only one application at one time. If a different RFID reader app is desired, the device user must either quit the previous application, or instruct the app to disconnect from the reader.
+
+
 ### Installation
 The RFID plug-in package for RhoElements 2.2 SP1 is not is not part of the default installation, but is available as a separate download from the Zebra Technologies Support site. 
 

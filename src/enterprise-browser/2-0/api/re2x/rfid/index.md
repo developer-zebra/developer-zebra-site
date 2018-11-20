@@ -13,7 +13,7 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 
 ## Syntax
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">rfid (Module) &lt;META&gt; Syntax</th>
 	</tr>
@@ -26,27 +26,27 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 
 <!-- Table Break -->
 
-	<tr><th class="tableHeading">Rfid JavaScript Object Syntax:</th></tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">By default the JavaScript Object <b>'rfid'</b> will exist on the current page and can be used to interact directly with the rfid.
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow">To Invoke rfid methods via JavaScript use the following syntax: rfid.method();<P/>e.g. <b>rfid</b>.enumerate();
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">To Set rfid parameters via JavaScript use the following syntax: rfid.parameter = 'value'; remembering to enclose your value in quotes where appropriate.<P/>e.g. <b>rfid</b>.antennaSelected = 'value';
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsEvenRow">To Set rfid return events via JavaScript use the following syntax: rfid.event = JavaScript Function;<P />e.g. <b>rfid</b>.enumRFIDEvent = 'doFunction(%json)';<P /><!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
-		</td>
-	</tr>
-	<tr>
-		<td class="clsSyntaxCells clsOddRow">To set multiple EMML parameters / events on a single line use the following syntax: rfid.setEMML("[Your EMML Tags]");<P />e.g. <b>rfid</b>.setEMML("antennaSelected:<i>value</i>;enumRFIDEvent:url('JavaScript:doFunction(%json)');enumerate");
-		</td>
-	</tr>
+<tr><th class="tableHeading">Rfid JavaScript Object Syntax:</th></tr>
+<tr>
+	<td class="clsSyntaxCells clsOddRow">By default the JavaScript Object <b>'rfid'</b> will exist on the current page and can be used to interact directly with the rfid.
+	</td>
+</tr>
+<tr>
+	<td class="clsSyntaxCells clsEvenRow">To Invoke rfid methods via JavaScript use the following syntax: rfid.method();<P/>e.g. <b>rfid</b>.enumerate();
+	</td>
+</tr>
+<tr>
+	<td class="clsSyntaxCells clsOddRow">To Set rfid parameters via JavaScript use the following syntax: rfid.parameter = 'value'; remembering to enclose your value in quotes where appropriate.<P/>e.g. <b>rfid</b>.antennaSelected = 'value';
+	</td>
+</tr>
+<tr>
+	<td class="clsSyntaxCells clsEvenRow">To Set rfid return events via JavaScript use the following syntax: rfid.event = JavaScript Function;<P />e.g. <b>rfid</b>.enumRFIDEvent = 'doFunction(%json)';<P /><!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
+	</td>
+</tr>
+<tr>
+	<td class="clsSyntaxCells clsOddRow">To set multiple EMML parameters / events on a single line use the following syntax: rfid.setEMML("[Your EMML Tags]");<P />e.g. <b>rfid</b>.setEMML("antennaSelected:<i>value</i>;enumRFIDEvent:url('JavaScript:doFunction(%json)');enumerate");
+	</td>
+</tr>
 
 <!-- Table Break -->
 
@@ -54,7 +54,7 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" />
 	<tr><th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th>
 		<th class="tableHeading">Default Value</th>
@@ -190,8 +190,8 @@ Items listed in this section indicate methods or, in some cases, indicate parame
 ## Parameters
 Items listed in this section indicate parameters or attributes that can be set.
 
-<table class="facelift"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" />
-	<tr>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" />
+	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Possible Values</th>
 		<th class="tableHeading">Description</th>
@@ -200,7 +200,7 @@ Items listed in this section indicate parameters or attributes that can be set.
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>antennaSelected:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">0-N</td>
-		<td class="clsSyntaxCells clsOddRow">Index of the antenna being selected for the subsequent data or configuration operations. A '0' indicates all antennae to be selected.</td>
+		<td class="clsSyntaxCells clsOddRow">Index of the antenna being selected for the subsequent data or configuration operations. A value of '0' (default) selects all antennae.</td>
 		<td class="clsSyntaxCells clsOddRow">0(ALL)</td>
 	</tr>
 		<tr>
@@ -564,7 +564,7 @@ Values are returned to the caller in RhoElements via Events.  Most modules conta
 
 ### enumRFIDEvent
 Enumerates the RFID readers present on the device (normally only one) along with their respective capabilities
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -639,7 +639,7 @@ Enumerates the RFID readers present on the device (normally only one) along with
 
 ### rfParamsEvent
 Returns RF Parameter values - Transmit Power and RF Mode of a selected antenna
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -659,7 +659,7 @@ Returns RF Parameter values - Transmit Power and RF Mode of a selected antenna
 
 ### rfModeInfoEvent
 Returns the RF Characteristics for a particular RF Mode
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -724,7 +724,7 @@ Returns the RF Characteristics for a particular RF Mode
 
 ### tagEvent
 Returns received RFID tag data from N tags, where N = reportTrigger. Typically methods like performInventory, tagLocate, readTag/writeTag/lockTag/killTag (performed on one or more tags) generate tagEvents with necessary data.
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -739,7 +739,7 @@ Returns received RFID tag data from N tags, where N = reportTrigger. Typically m
 
 ### radioPowerStateEvent
 Returns 1 if the radio is ON and 0 if the radio is off
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -754,7 +754,7 @@ Returns 1 if the radio is ON and 0 if the radio is off
 
 ### statusEvent
 Returns any error conditions where required
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -763,32 +763,31 @@ Returns any error conditions where required
 	<tr>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>method</b></td>
-		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">Name of method where exactly error was generated</td>
+		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">Name of method from which error was generated.</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;">2</td>
 		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>errorCode</b></td>
-		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;">standard RFID API error code or a plug-in specific error code. Plug-in Error code Description.<br/>
-2000 - One of the relevant parameters is invalid or missing.<br/>
-2001 - Plug-in Busy.<br/>
-2002 - Failed to create a plug-in thread.<br/>
-2003 - Plug-in cannot process properties or methods unless connected.<br/>
-2004 - InvalidUsageException.<br/>
-2005 - OperationFailureException.<br/>
-1000 - Any status event like handheld trigger event, reader disconnection event.<br/>
-		</td>
-	</tr>
-	<tr>
+		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;">Standard RFID API error code or plug-in specific error code. Plug-in error code description:<br/>
+2000 - One of the relevant parameters is invalid or missing<br/>
+2001 - Plug-in Busy<br/>
+2002 - Failed to create a plug-in thread<br/>
+2003 - Plug-in cannot process properties or methods unless connected<br/>
+2004 - InvalidUsageException<br/>
+2005 - OperationFailureException<br/>
+1000 - Any status event like handheld trigger event, reader disconnection event<br/></td>
+</tr>
+<tr>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">3</td>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>vendorMessage</b></td>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">Additional Error Info if any</td>
-	</tr>
+</tr>
 </table>
 
 ### singulationEvent
 Returns singulation values.
 
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -822,7 +821,7 @@ Returns singulation values.
 
 ### operationCompleteEvent
 Indicates the currently running operation (Inventory/Access/Locationing) is complete and there are no more tags to report.
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -832,7 +831,7 @@ Indicates the currently running operation (Inventory/Access/Locationing) is comp
 
 ### lastAccessResultEvent
 Returns results of the last Access operation
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -852,17 +851,16 @@ Returns results of the last Access operation
 
 ## Remarks
 
-1. On devices running Android, `rfid.connect` can be called only after the `enumRFIDevent` callback is received by calling `rfid.enumerate`. 
+1. On devices running Android, rfid.connect can be called only after the enumRFIDevent callback is received by calling rfid.enumerate. 
 2. An Enterprise Browser application can connect to only one reader at one time. If a different reader is desired, the app must disconnect from the currently connected reader before connecting to a new one.
 3. An RFID reader can connect to only one application at one time. If a different RFID reader app is desired, the device user must either quit the previous application, or instruct the app to disconnect from the reader.
-
 
 ### Installation
 The RFID plug-in package for RhoElements 2.2 SP1 is not is not part of the default installation, but is available as a separate download from the Zebra Technologies Support site. 
 
 **RFID plug-in resources**: 
 
-* **[RFID Plug-in for RhoElements 2.2 SP1](https://www.zebra.com/us/en/support-downloads/software/developer-tools/rfid-plugin-for-rho-elements.html) -** download from Zebra Support Site (includes release notes, installation instructions and a sample app)
+* **[The RFID Plug-in for RhoElements 2.2 SP1](https://www.zebra.com/us/en/support-downloads/software/developer-tools/rfid-plugin-for-rho-elements.html)** download, available from the from Zebra support site, includes release notes, installation instructions and a sample app. 
 
 <!--
 * **[Release Notes and Installation Instructions](http://goo.gl/VtCDnO) -** for viewing or download (Word doc) 
@@ -878,13 +876,13 @@ Once the plug-in is installed, modify the &lt;PreloadLegacyActiveX&gt; parameter
 
 
 ### General
-By default the plug-in, when loaded, is already connected to RFID Module. In order to disconnect, one may use disconnect() method call on the rfid object. After a successful disconnection, the connect() method may be used to make a new connection to the RFID Module. For a plug-in method to be successfully invoked, all of its associated non-default properties must be successfully set prior to making the call.
+When loaded, the plug-in by default is already connected to RFID module. To disconnect, use the disconnect() method call on the RFID object. After successfully disconnecting, the connect() method can be used to make a new connection to the RFID module. For a plug-in method to be successfully invoked, all of its associated non-default properties must be set prior to making the call.
 
 ### Waiting for operationCompleteEvent
-When RhoElements finishes execution of a plug-in method call, the corresponding RFID operation may not have been completed, rather it may have just been started. Specifically, for performInventory, tagLocate, tag access operations (readTag/writeTag/lockTag/killTag) using access-filter or performed on all tags, the corresponding method call just initiates the corresponding RFID operation. These operations generate Tag-reports, and once all the reports are completely sent to the application, the plug-in sends a operationCompleteEvent. The disconnect() method also gives an operationCompleteEvent back to the application. It is important that the application register for operationCompleteEvent and further method calls will have to be made only after the reception of this event.
+When RhoElements finishes execution of a plug-in method call, the corresponding RFID operation might not have been completed or might have just been started. Specifically, for performInventory, tagLocate, tag access operations (readTag/writeTag/lockTag/killTag) using an access-filter or performed on all tags, the corresponding method call just initiates the corresponding RFID operation. These operations generate Tag reports, and once all the reports are sent to the application, the plug-in sends a operationCompleteEvent. The disconnect() method also gives an operationCompleteEvent back to the application. It is important that the application register for operationCompleteEvent, and further method calls must be made only after the reception of this event.
 
 ### Handling the TagEvent
-TagEvent should be assigned to a Callback that handles the tag-reports arising out of Inventory/Locationing/Read/Write/Lock/Kill operations. Every tagEvent callback should usually result in JSON TagData Array object of length equalling to the reportTrigger property set. However, in the contingency that the RFID operation has ended and the plug-in hasn't accumulated reportTrigger number of tagData objects, then the pending tags are all sent to the tagEvent callback.
+TagEvent should be assigned to a Callback that handles the tag-reports arising out of Inventory/Locationing/Read/Write/Lock/Kill operations. Every tagEvent callback should usually result in JSON TagData Array object of length equal to the reportTrigger property set. However, in the contingency that the RFID operation has ended and the plug-in hasn't accumulated reportTrigger number of tagData objects, then the pending tags are all sent to the tagEvent callback.
 
 ### Access Operation Status Codes
 For an access operation performed by using an access filter or an access operation performed on all tags, the status code only indicates that the operation has been successfully started. Setting enableTagAccessStatus to true generates Tag reports with the tagID and status of the access operation on the corresponding tagID. However, for a single tag access operation, the statusEvent indicates the result of the access operation for the given tagID.
@@ -893,7 +891,7 @@ For an access operation performed by using an access filter or an access operati
 When RhoElements finishes execution of a plug-in method call, the corresponding RFID operation may not have been completed, rather it may have just been started. Specifically, for performInventory, tagLocate, tag access operations (readTag/writeTag/lockTag/killTag) using access-filter or performed on all tags, the corresponding method call just initiates the corresponding RFID operation. These operations generate Tag-reports, and once all the reports are completely sent to the application, the plug-in sends a operationCompleteEvent.
 
 ### Plug-in Busy
-The Plug-in can perform only one RFID protocol operation (Inventory/Read/Write/Locate/Kill) at a time. Trying to invoke a new operation when an existing one is still running, will generate a "Plugin Busy" error. Irrespective whether stop method is called or not, the plug-in is ready to initiate a new operation only after it sends the operationCompleteEvent. Trying to start a new operation before the event is received will return a "Plugin Busy error".
+The Plug-in can perform only one RFID protocol operation (Inventory/Read/Write/Locate/Kill) at a time. Trying to invoke a new operation when an existing one is still running, will generate a "Plug-in Busy" error. Irrespective whether stop method is called or not, the plug-in is ready to initiate a new operation only after it sends the operationCompleteEvent. Trying to start a new operation before the event is received will return a "Plugin Busy error".
 
 ### Deleting Pre-filters
 Once a pre-filter is added with a particular ID, the same ID should be used to reference it when deleting it.
@@ -908,7 +906,7 @@ One can perform an access operation on all tags in the field of view by setting 
 Access-filter can take up to tag-patterns. By default, match pattern used is Pattern-A alone and settings for tagPattern B are not considered unless specified by the appropriate matchPattern.
 
 ## Requirements
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">RhoElements Version</th>
 		<td class="clsSyntaxCell clsEvenRow">2.2 SP1 - Additional Download Required or above</td>

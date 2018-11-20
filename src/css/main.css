@@ -1437,3 +1437,17 @@ display:none
 #main-menu .dropdown{
   display:none;
 }
+
+.facelift td,
+.facelift th {
+
+padding: 5px
+
+}
+
+.facelift tr:nth-child(even) {
+
+background-color: 
+#f2f2f2;
+
+}

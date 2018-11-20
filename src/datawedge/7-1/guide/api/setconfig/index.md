@@ -22,7 +22,8 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 6.8 -** Support for ADF settings: 
  * **New ADF_RULE bundle** with Action, Device, Decoder and Label_ID sub-bundles
  * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
-* **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration.
+* **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
+* **DataWedge 7.1 -** New Data Capture Plus configuration
 
 ### Function Prototype
 
@@ -49,6 +50,7 @@ The main `SET_CONFIG` bundle includes the following properties:
 * **PROFILE_ENABLED** [String]: Optional; Controls whether to enable (true) or disable (false) a Profile (default=true). If not specified, no change is made to the Profile state.
 * **PLUGIN_CONFIG** [Bundle[ ]]: A bundle array (nested within the main bundle) that contains settings of each Plug-in
 * **APP_LIST** [Array]: List of applications and/or activities to associate with the Profile
+* **Data Capture Plus (DCP) configuration** - [String]: Parameters to control DCP configuration
 
 #### PLUGIN_CONFIG BUNDLE
 The `PLUGIN_CONFIG` bundle is configured using the following properties:
@@ -170,6 +172,50 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 		* `device_id` [string] - BARCODE, MSR, SERIAL or SIMULSCAN
 		* `label_id` [string] - UDI_GS1, UDI_HIBCC or UDI_ICCBBA
 		* `enabled` [string] - true/false (default=true)
+
+#### Data Capture Plus (DCP) Parameters
+
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th style="width:20%">Parameter</th>
+    <th style="width:25%">Parameter Value</th>
+		<th style="width:55%">Description</th>
+  </tr>
+	<tr>
+		<td>dcp_input_enabled</td>
+		<td>True<br>False</td>
+		<td>Enable/Disable DCP input</td>
+	</tr>
+	<tr>
+		<td>dcp_dock_button_on</td>
+		<td>LEFT - Left only <br>RIGHT - Right only<br>BOTH - Left or Right</td>
+		<td>Position location for dock button: left side, right side, either right or left side (both)</td>
+	</tr>
+	<tr>
+		<td>dcp_start_in</td>
+		<td>FULLSCREEN<br>BUTTON <br>BUTTON_ONLY </td>
+		<td>Sets the mode that DCP will startup with: full screen, button (floating button that can be re-positioned by dragging and dropping), and button only (cannot be re-positioned)</td>
+	</tr>
+	<tr>
+		<td>dcp_highest_pos</td>
+		<td>0-100</td>
+		<td>Sets a ceiling for button position expressed as a percentage of total screen height. For example, on a screen measuring four inches vertically, a setting of 75 (%) would prevent the upper edge of the DCP button from being positioned less than one inch from the top of the screen.</td>
+	</tr>
+	<tr>
+		<td>dcp_lowest_pos</td>
+		<td>0-100</td>
+		<td>Sets a floor for button position expressed as a percentage of total screen height. For example, on a screen measuring four inches vertically, a setting of 25 (%) would prevent the lower edge of the DCP button from being positioned less than one inch from the bottom of the screen.</td>
+	</tr>
+	<tr>
+		<td>dcp_drag_detect_time</td>
+		<td>0-1000</td>
+		<td>Wait time (in ms) that DCP should wait after a screen tap before triggering a scanner action. This can help prevent accidental triggers when dragging the DCP button to a new location.</td>
+	</tr>
+</table>
+<br>
+
+See [DCP Input](../../input/dcp).
+<br>
 
 **IMPORTANT**: 
 
@@ -2266,6 +2312,37 @@ Command and configuration intent parameters determine whether to send result cod
 	bParams.putString("scanner_input_enabled", "true");
 	bParams.putString("configure_all_scanners", "true"); // configure for all scanners
 	bConfig.putBundle("PARAM_LIST", bParams);
+
+###Set Data Capture Plus (DCP) Configuration
+
+	//SetConfig [Start] 
+	Bundle bMain = new Bundle(); 
+ 
+	Bundle bConfigDCP = new Bundle(); 
+	Bundle bParamsDCP = new Bundle(); 
+	bParamsDCP.putString("dcp_input_enabled", "true"); 
+	bParamsDCP.putString("dcp_dock_button_on", "LEFT"); //Supported values: BOTH - Left or Right, LEFT - Left only, RIGHT - Right only 
+	bParamsDCP.putString("dcp_start_in", "FULLSCREEN"); //Supported Values: FULLSCREEN, BUTTON, BUTTON_ONLY 
+	bParamsDCP.putString("dcp_highest_pos", "30"); //Supported Values:  0 - 100, Highest pos can not be greater than lowest pos 
+	bParamsDCP.putString("dcp_lowest_pos", "40"); //Supported Values: 0 - 100, Highest pos can not be greater than lowest pos 
+	bParamsDCP.putString("dcp_drag_detect_time", "501"); //Supported Values: 0 - 1000 
+	bConfigDCP.putString("RESET_CONFIG", "false"); 
+	bConfigDCP.putBundle("PARAM_LIST", bParamsDCP); 
+ 
+	bMain.putBundle("DCP", bConfigDCP); 
+ 
+	bMain.putString("PROFILE_NAME", "Profile007"); 
+	bMain.putString("PROFILE_ENABLED", "true"); 
+	bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST"); 
+ 
+	Intent iSetConfig = new Intent(); 
+	iSetConfig.setAction("com.symbol.datawedge.api.ACTION"); 
+	iSetConfig.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain); 
+	iSetConfig.putExtra("SEND_RESULT", "LAST_RESULT"); 
+	iSetConfig.putExtra("COMMAND_IDENTIFIER", "INTENT_API"); 
+	//SetConfig [End] 
+ 
+	this.sendBroadcast(iSetConfig); 
 
 -----
 

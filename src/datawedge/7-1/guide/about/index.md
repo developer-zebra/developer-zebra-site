@@ -23,6 +23,7 @@ The version of DataWedge documented in this guide provides the following primary
 * Scan and process all [major barcode symbologies](../input/barcode/#decoderselection)
 * Use existing apps to [acquire barcodes](../input/barcode), images, text, phone numbers, mag-stripe and other data
 * Set DataWedge to [acquire scanned data for one or multiple apps](../setup)
+* Use voice capture to acquire data with [Voice Input](../input/voice)
 * Acquire multiple types of data in a single scan [using SimulScan](../input/simulscan) 
 * Designate device screen areas as scan triggers using [Data Capture Plus](../input/dcp)
 * [Create Profiles](../overview) to implement DataWedge features for individual apps 

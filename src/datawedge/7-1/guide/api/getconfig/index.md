@@ -12,7 +12,8 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 ### Version History
 * **Introduced in DataWedge 6.5**
 * **DataWedge 6.8 -** Added support for ADF settings
-* **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration.
+* **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
+* **DataWedge 7.1 -** Added support for Data Capture Plus (DCP) configuration
 
 ### Function Prototype
 
@@ -582,7 +583,87 @@ Error messages are logged for invalid actions and parameters.
 	    }
 	};
 
+### Get Data Capture Plus (DCP) Configuration
 
+	public void getConfig() { 
+ 
+    	Bundle bMain = new Bundle(); 
+    	bMain.putString("PROFILE_NAME", "Profile007"); 
+    	bMain.putString("DCP", ""); 
+    	Intent i = new Intent(); 
+    	i.setAction("com.symbol.datawedge.api.ACTION"); 
+    	i.putExtra("com.symbol.datawedge.api.GET_CONFIG", bMain); 
+    	this.sendBroadcast(i); 
+	} 
+ 
+	private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() { 
+    	@Override 
+    	public void onReceive(Context context, Intent intent) { 
+        	String action = intent.getAction(); 
+ 
+        	String strFinalResult = ""; 
+        	String command = intent.getStringExtra("COMMAND"); 
+        	String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER"); 
+        	String result = intent.getStringExtra("RESULT"); 
+        	Bundle bundle = new Bundle(); 
+        	String resultInfo = ""; 
+ 
+        	if (action.equals("com.symbol.datawedge.api.RESULT_ACTION")) { 
+ 
+            	if (intent.hasExtra("RESULT_INFO")) { 
+                	bundle = intent.getBundleExtra("RESULT_INFO"); 
+                	Set<String> keys = bundle.keySet(); 
+                	for (String key : keys) { 
+                    	String val = bundle.getString(key); 
+                    	if (val == null) { 
+ 
+                        	if (bundle.getStringArray(key) != null) { 
+                            	val = ""; 
+                            	for (String s : bundle.getStringArray(key)) { 
+                                	val += "" + s + "\n"; 
+	                            } 
+    	                    } 
+        	            } 
+ 
+            	        resultInfo += key + ": " + val + "\n"; 
+               	} 
+ 
+            	} else if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG")) { 
+ 
+                	Bundle resultGetConfig = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG"); 
+                	Set<String> keys = resultGetConfig.keySet(); 
+                	String profileName = resultGetConfig.getString("PROFILE_NAME"); 
+                	for (String key : keys) { 
+                    	if (key.equalsIgnoreCase("DCP")) { 
+                        	strFinalResult += "\n"; 
+                        	Bundle dcpSettings = resultGetConfig.getBundle("DCP"); 
+                        	if (dcpSettings == null) { 
+                            	strFinalResult += "\nDCP Settings are not found for " + profileName; 
+                        	} else { 
+								
+                            	strFinalResult += "\nDCP Settings"; 
+ 
+	                            for (String dcpKey : dcpSettings.keySet()) { 
+    	                            strFinalResult += "\n\t\t" + dcpKey + ": " + dcpSettings.getString(dcpKey); 
+        	                    } 
+            	            } 
+ 
+                	        strFinalResult += "\n"; 
+                    	} 
+                	} 
+ 
+                	Log.d("TAG", "#IntentApp#\n\nGet config info received\n" + strFinalResult); 
+            	} 
+ 
+            	if (command != null) { 
+                	if (command.equalsIgnoreCase("com.symbol.datawedge.api.SET_CONFIG")) { 
+                    	Log.d("TAG", "#IntentApp# \n\nSetConfig status received: " + result + "\nResultInfo: " + resultInfo); 
+                	} 
+            	} 
+ 
+        	} 
+	    } 
+	}; 
 
 -----
 

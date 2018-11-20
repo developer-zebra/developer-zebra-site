@@ -75,6 +75,15 @@ The wait time (in ms) that DCP should wait after a screen tap before triggering 
 
 ------
 
+## Configuration
+
+Programmatic configuration using DataWedge APIs:
+
+* See [Set Config](../../api/setconfig/#parameters)
+* See [Get Config](../../api/getconfig/)
+
+------
+
 **Related guides**:
 
 * [Profiles/Plug-ins](../../profiles)

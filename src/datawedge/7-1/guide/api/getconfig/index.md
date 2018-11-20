@@ -665,6 +665,274 @@ Error messages are logged for invalid actions and parameters.
 	    } 
 	}; 
 
+### Get Full Profile Configuration in a Single Broadcast
+
+	// Get full profile configuration in a single intent and process the result
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+
+		IntentFilter filter = new IntentFilter();
+		filter.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+		filter.addCategory("android.intent.category.DEFAULT");
+		registerReceiver(broadcastReceiver, filter);
+		getConfig();
+	}
+
+	public void getConfig() {
+
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.GET_CONFIG",  "Profile007");
+		this.sendBroadcast(i);
+	}
+
+	private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			String action = intent.getAction();
+
+			String strFinalResult = "";
+
+			if (action.equals("com.symbol.datawedge.api.RESULT_ACTION")) {
+
+				if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG")) {
+
+					Bundle resultGetConfig = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG");
+					Set<String> keys = resultGetConfig.keySet();
+					String profileName = resultGetConfig.getString("PROFILE_NAME");
+
+
+					for (String key : keys) {
+
+						if (key.equalsIgnoreCase("PLUGIN_CONFIG")) {
+							ArrayList<Bundle> bundleArrayList = resultGetConfig.getParcelableArrayList("PLUGIN_CONFIG");
+							for (Bundle configBundle : bundleArrayList) {
+
+								String pluginName = configBundle.getString("PLUGIN_NAME");
+								if (pluginName != null && pluginName.equalsIgnoreCase("ADF")) {
+
+									strFinalResult += "\nPlugin " + configBundle.getString("OUTPUT_PLUGIN_NAME") + " ADF Settings\n";
+
+									String pluginEnabled = configBundle.getString("adf_enabled");
+									strFinalResult += "\n Plugin Enabled :" + pluginEnabled;
+									if (configBundle.containsKey("PARAM_LIST")) {
+										Object object = configBundle.get("PARAM_LIST");
+										if (object != null && object instanceof ArrayList) {
+											ArrayList<Bundle> paramArrayList = (ArrayList) object;
+											for (Bundle rule : paramArrayList) {
+												String name = rule.getString("name");
+												String enabled = rule.getString("enabled");
+												String priority = rule.getString("priority");
+												String alldevices = rule.getString("alldevices");
+												String string = rule.getString("string");
+												String stringPos = rule.getString("string_pos");
+												String stringLen = rule.getString("string_len");
+
+												strFinalResult += "\nRule ->";
+												strFinalResult += "\n name :" + name;
+												strFinalResult += "\n enabled :" + enabled;
+												strFinalResult += "\n priority :" + priority;
+												strFinalResult += "\n alldevices :" + alldevices;
+												strFinalResult += "\n string :" + string;
+												strFinalResult += "\n stringPos :" + stringPos;
+												strFinalResult += "\n stringLen :" + stringLen;
+												ArrayList<Bundle> actions = rule.getParcelableArrayList("ACTIONS");
+												if (actions != null) {
+													Log.d("TAG", "\n  Actions->");
+													for (Bundle bAction : actions) {
+														String type = bAction.getString("type");
+														Object param_1 = bAction.get("action_param_1");
+														Object param_2 = bAction.get("action_param_2");
+														Object param_3 = bAction.get("action_param_3");
+
+														strFinalResult += "\n  type:" + type;
+														if (param_1 != null && param_1 instanceof String) {
+															strFinalResult += "\n  param_1:" + param_1;
+														}
+														if (param_2 != null && param_2 instanceof String) {
+															strFinalResult += "\n  param_2:" + param_2;
+														}
+														if (param_3 != null && param_3 instanceof String) {
+															strFinalResult += "\n  param_3:" + param_3;
+														}
+
+													}
+												}
+												ArrayList<Bundle> devices = rule.getParcelableArrayList("DEVICES");
+												if (devices != null) {
+													Log.d("TAG", "\n  Devices->");
+													for (Bundle device : devices) {
+														String type = device.getString("device_id");
+														Object param_1 = device.get("enabled");
+														Object param_2 = device.get("alldecoders");
+														Object param_3 = device.get("all_label_ids");
+
+														strFinalResult += "\n  Device ID:" + type;
+														if (param_1 != null && param_1 instanceof String) {
+															strFinalResult += "\n      Enabled:" + param_1;
+														}
+														if (param_2 != null && param_2 instanceof String) {
+															strFinalResult += "\n  All decoders:" + param_2;
+														}
+														if (param_3 != null && param_3 instanceof String) {
+															strFinalResult += "\n  All labelids:" + param_3;
+														}
+
+													}
+												}
+												ArrayList<Bundle> decoders = rule.getParcelableArrayList("DECODERS");
+												if (decoders != null) {
+													strFinalResult += "\n  Decoders->";
+													for (Bundle decoder : decoders) {
+														String deviceID = decoder.getString("device_id");
+														String decoderEnabled = decoder.getString("enabled");
+														String decoderID = decoder.getString("decoder");
+
+														strFinalResult += "\n        Device ID:" + deviceID;
+														strFinalResult += "\n  Decoder Enabled:" + decoderEnabled;
+														strFinalResult += "\n       Decoder ID:" + decoderID;
+													}
+												}
+
+												ArrayList<Bundle> labelIDs = rule.getParcelableArrayList("LABEL_IDS");
+												if (labelIDs != null) {
+													strFinalResult += "\n  LabelIDs->";
+													for (Bundle labelID : labelIDs) {
+														String deviceID = labelID.getString("device_id");
+														String lblEnabled = labelID.getString("enabled");
+														String lblID = labelID.getString("label_id");
+
+														strFinalResult += "\n      Device ID:" + deviceID;
+														strFinalResult += "\n  Label Enabled:" + lblEnabled;
+														strFinalResult += "\n       Label ID:" + lblID;
+													}
+												}
+											}
+										}
+									}
+								} else if (pluginName != null && pluginName.equalsIgnoreCase("TOKEN")) {
+									strFinalResult += "\nPlugin " + configBundle.getString("OUTPUT_PLUGIN_NAME") + " TOKEN Settings\n";
+									Set<String> keys2 = configBundle.keySet();
+									for (String key2 : keys2) {
+										if (!key2.equalsIgnoreCase("PARAM_LIST")) {
+										} else {
+											Bundle params = configBundle.getBundle("PARAM_LIST");
+											Set<String> keys3 = params.keySet();
+											for (String key3 : keys3) {
+
+												if (key3.equalsIgnoreCase("token_order")) {
+													strFinalResult += "\n" + key3 + ": token_order\n";
+
+													ArrayList<Bundle> tokenOrderList = params.getParcelableArrayList("token_order");
+													int order = 0;
+													for (Bundle b : tokenOrderList) {
+														strFinalResult += "\t" + order + ". " + b.getString("name") + ": " + b.getString("enabled") + "\n";
+														order++;
+													}
+												} else {
+													strFinalResult += "\n" + key3 + ": " + params.get(key3);
+												}
+											}
+										}
+									}
+									strFinalResult += "\n";
+								} else if (pluginName != null && pluginName.equalsIgnoreCase("BDF")) {
+									strFinalResult += "\n\nPlugin " + configBundle.getString("OUTPUT_PLUGIN_NAME") + " BDF Settings\n";
+									Set<String> keys2 = configBundle.keySet();
+									for (String key2 : keys2) {
+										if (!key2.equalsIgnoreCase("PARAM_LIST")) {
+										} else {
+											Bundle params = configBundle.getBundle("PARAM_LIST");
+											Set<String> keys3 = params.keySet();
+											for (String key3 : keys3) {
+
+												strFinalResult += "\n" + key3 + ": " + params.get(key3);
+											}
+										}
+									}
+									strFinalResult += "\n";
+								} else {
+									Set<String> keys2 = configBundle.keySet();
+									if (keys2.size() > 0) {
+
+										if (configBundle.getString("PLUGIN_NAME") != null)
+											strFinalResult += "\nPlugin " + configBundle.getString("PLUGIN_NAME") + " Settings\n";
+
+										for (String key2 : keys2) {
+											if (key2.equalsIgnoreCase("PARAM_LIST")) {
+
+												Bundle params = configBundle.getBundle("PARAM_LIST");
+												Set<String> keys3 = params.keySet();
+												for (String key3 : keys3) {
+
+
+													if (key3.equalsIgnoreCase("simulscan_template_params")) {
+														Bundle simulscan_template_params = params.getBundle("simulscan_template_params");
+														if (simulscan_template_params != null) {
+															strFinalResult += "\n\tDynamic template params";
+															for (String template_param : simulscan_template_params.keySet()) {
+																strFinalResult += "\n\t\t" + template_param + ": " + simulscan_template_params.get(template_param);
+															}
+														}
+													} else {
+														strFinalResult += "\n\t" + key3 + ": " + params.get(key3);
+													}
+
+												}
+											}
+										}
+									}
+									strFinalResult += "\n";
+								}
+							}
+						} else if (key.equalsIgnoreCase("APP_LIST")) {
+							strFinalResult += "\n";
+							ArrayList<Bundle> appList = resultGetConfig.getParcelableArrayList("APP_LIST");
+							if (appList == null) {
+								strFinalResult += "\nProfile information is not found for " + profileName;
+							} else if (appList.size() == 0) {
+								Log.d("TAG", "Profile " + profileName + " has no associated information");
+								strFinalResult += "\n" + "Profile " + profileName + " has no associated information";
+							} else {
+								strFinalResult += "\nAPP LIST\n\n";
+								for (Bundle b1 : appList) {
+									strFinalResult += "\n" + b1.getString("PACKAGE_NAME") + ": " + b1.getStringArrayList("ACTIVITY_LIST");
+								}
+							}
+							strFinalResult += "\n";
+						} else if (key.equalsIgnoreCase("DCP")) {
+							strFinalResult += "\n";
+							Bundle dcpSettings = resultGetConfig.getBundle("DCP");
+							if (dcpSettings == null) {
+								strFinalResult += "\nDCP Settings are not found for " + profileName;
+							} else {
+
+								strFinalResult += "\nDCP Settings";
+
+								for (String dcpKey : dcpSettings.keySet()) {
+									strFinalResult += "\n\t\t" + dcpKey + ": " + dcpSettings.getString(dcpKey);
+								}
+							}
+
+							strFinalResult += "\n";
+						}
+						if (key.equalsIgnoreCase("RESULT_CODE")) {
+							strFinalResult += "\nRESULT_CODE: " + resultGetConfig.getString("RESULT_CODE");
+							;
+						}
+					}
+
+					Log.d("TAG", "#IntentApp#\n\nGet config info received\n" + strFinalResult);
+
+				}
+			}
+		}
+	};
+
+
 -----
 
 **SEE ALSO**:

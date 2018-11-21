@@ -583,6 +583,106 @@ Error messages are logged for invalid actions and parameters.
 	    }
 	};
 
+### Get SIMULSCAN input configuration
+	public void getConfig()
+	{
+		Bundle bMain = new Bundle();
+		bMain.putString("PROFILE_NAME", "Profile007");
+		Bundle bConfig = new Bundle();
+		ArrayList<String> pluginName = new ArrayList<>();
+		pluginName.add("SIMULSCAN");
+
+		bConfig.putStringArrayList("PLUGIN_NAME", pluginName);
+		bMain.putBundle("PLUGIN_CONFIG", bConfig);
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.GET_CONFIG", bMain);
+		this.sendBroadcast(i);
+	}
+
+	private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			String action = intent.getAction();
+
+			String strFinalResult = "";
+			String command = intent.getStringExtra("COMMAND");
+			String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+			String result = intent.getStringExtra("RESULT");
+			Bundle bundle = new Bundle();
+			String resultInfo = "";
+
+			if (action.equals("com.symbol.datawedge.api.RESULT_ACTION")) {
+
+				if (intent.hasExtra("RESULT_INFO")) {
+					bundle = intent.getBundleExtra("RESULT_INFO");
+					Set<String> keys = bundle.keySet();
+					for (String key : keys) {
+						String val = bundle.getString(key);
+						if(val == null) {
+
+							if(bundle.getStringArray(key) != null) {
+								val="";
+								for (String s : bundle.getStringArray(key)) {
+									val += "" + s + "\n";
+								}
+							}
+						}
+
+						resultInfo += key + ": " + val + "\n";
+					}
+
+				} else if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG")) {
+
+					Bundle resultGetConfig = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG");
+					Set<String> keys = resultGetConfig.keySet();
+					String profileName = resultGetConfig.getString("PROFILE_NAME");
+					for (String key : keys) {
+						if (key.equalsIgnoreCase("PLUGIN_CONFIG")) {
+							ArrayList<Bundle> bundleArrayList = resultGetConfig.getParcelableArrayList("PLUGIN_CONFIG");
+							for (Bundle configBundle : bundleArrayList) {
+
+									strFinalResult += "\nPlugin " + configBundle.getString("PLUGIN_NAME") + " Settings\n";
+									for (String configBundleKey : configBundle.keySet()) {
+										if (configBundleKey.equalsIgnoreCase("PARAM_LIST")) {
+
+											Bundle params = configBundle.getBundle("PARAM_LIST");
+
+											for (String paramKey :  params.keySet()) {
+
+												if(paramKey.equalsIgnoreCase("simulscan_template_params")) {
+													Bundle simulscan_template_params = params.getBundle("simulscan_template_params");
+													if (simulscan_template_params != null) {
+														strFinalResult += "\n\tDynamic template params";
+														for (String template_param : simulscan_template_params.keySet()) {
+															strFinalResult += "\n\t\t" + template_param + ": " + simulscan_template_params.get(template_param);
+														}
+													}
+												}
+												else
+												{
+													strFinalResult += "\n\t" + paramKey + ": " + params.get(paramKey);
+												}
+
+											}
+										}
+									}
+									strFinalResult += "\n";
+							}
+						}
+					}
+					Log.d("TAG","#IntentApp#\n\nGet config info received\n" + strFinalResult);
+				}
+
+				if (command != null) {
+					if (command.equalsIgnoreCase("com.symbol.datawedge.api.SET_CONFIG")) {
+						Log.d("TAG","#IntentApp# \n\nSetConfig status received: " + result + "\nResultInfo: " + resultInfo);
+					}
+				}
+			}
+		}
+	};
+
 ### Get DCP input configuration
 
 	// Get Data Capture Plus Input configuration

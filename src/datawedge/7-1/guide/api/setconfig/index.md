@@ -23,7 +23,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
  * **New ADF_RULE bundle** with Action, Device, Decoder and Label_ID sub-bundles
  * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
-* **DataWedge 7.1 -** New configuration for: Data Capture Plus, IP (Internet Protocol), MSR
+* **DataWedge 7.1 -** New configuration for: Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader)
 
 ### Function Prototype
 
@@ -1555,7 +1555,49 @@ Other Scanner Input Parameters:
 
 -----
 
+## Simulscan Input Parameters 
+
+> All parameters are case sensitive.
+
+<table class="facelift" style="width:50%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Parameter</th>
+    <th>Parameter Value</th>
+  </tr>
+	<tr>
+		<td>simulscan_input_enabled</td>
+		<td>True<br>False</td>
+	</tr>
+	<tr>
+		<td>simulscan_input_source</td>
+		<td>Camera<br>Imager<br>Default</td>
+	</tr>
+	<tr>
+		<td>simulscan_template</td>
+		<td>Examples of available templates:<br>Default - BankCheck.xml<br>Default - Barcode 1.xml<br>Default - Barcode 10.xml<br>Default - Barcode 2.xml<br>Default - Barcode 4.xml<br>Default - Barcode 5.xml<br>Default - BookNumber.xml<br>Default - DocCap + Optional Barcode.xml<br>Default - DocCap + Required Barcode.xml<br>Default - TravelDoc.xml<br>Default - Unstructured Multi-Line.xml<br>Default - Unstructured Single Line.xml</td>
+	</tr>
+	<tr>
+		<td>simulscan_template_params</td>
+		<td>[param name] [param value] <br>e.g. dynamic quantity &nbsp;&nbsp;&nbsp;&nbsp;9</td>
+	</tr>
+  <tr>
+		<td>simulscan_region_separator</td>
+		<td>TAB<br>CR<br>LF<br>NONE</td>
+	</tr>
+	<tr>
+		<td>simulscan_log_dir</td>
+		<td>[Valid path]</td>
+	</tr>
+	<tr>
+		<td>simulscan_enable_timestamp</td>
+		<td>True<br>False</td>
+	</tr>
+</table>
+-----
+
 ## Data Capture Plus (DCP) Input Parameters
+
+> All parameters are case sensitive.
 
 <table class="facelift" style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
@@ -1667,6 +1709,8 @@ See [DCP Input](../../input/dcp).
 -----
 
 ## IP (Internet Protocol) Output Parameters 
+
+> All parameters are case sensitive.
 
 <table class="facelift" style="width:70%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
@@ -1825,6 +1869,325 @@ See [DCP Input](../../input/dcp).
 
 	this.sendBroadcast(i);
 
+### Set Simulscan Input Configuration
+
+	// SetConfig [Start]
+	Bundle bMain = new Bundle();
+
+	Bundle bConfigSimulScan = new Bundle();
+	Bundle bParamsSimulScan = new Bundle();
+	bParamsSimulScan.putString("simulscan_input_enabled", "true");
+	bParamsSimulScan.putString("simulscan_input_source", "Imager"); //Supported values: Camera, Imager, Default
+	bParamsSimulScan.putString("simulscan_region_separator", "TAB"); //Supported Values:None, TAB, CR, LF, NONE
+	bParamsSimulScan.putString("simulscan_log_dir", "/storage/zebra/intent/");
+	bParamsSimulScan.putString("simulscan_enable_timestamp", "true");
+	bParamsSimulScan.putString("simulscan_template", "UserDefinedQuantity.xml"); 
+	// Ex:  UserDefinedQuantity.xml, Default - BankCheck.xml, Default - Barcode 1.xml, Default - Barcode 10.xml, Default - Barcode 2.xml, Default - Barcode 4.xml, Default - Barcode 5.xml, Default - BookNumber.xml, Default - DocCap + Optional Barcode.xml, Default - DocCap + Required Barcode.xml, Default - TravelDoc.xml, Default - Unstructured Multi-Line.xml, Default - Unstructured Single Line.xml
+
+	//Setting dynamic template params
+	Bundle templateParamsBundle = new Bundle();
+	templateParamsBundle.putString("dynamic_quantity", "100");
+	bParamsSimulScan.putBundle("simulscan_template_params",templateParamsBundle); 
+	// This param will work only for the templates that have dynamic params. For others, this will throw PARAMETER_NOT_SUPPORTED
+
+	bConfigSimulScan.putString("PLUGIN_NAME", "SIMULSCAN");
+	bConfigSimulScan.putString("RESET_CONFIG", "true");
+	bConfigSimulScan.putBundle("PARAM_LIST", bParamsSimulScan);
+
+	ArrayList<Bundle> bundlePluginConfig = new ArrayList<>();
+	bundlePluginConfig.add(bConfigSimulScan);
+	bMain.putParcelableArrayList("PLUGIN_CONFIG", bundlePluginConfig);
+
+	bMain.putString("PROFILE_NAME", "Profile007");
+	bMain.putString("PROFILE_ENABLED", "true");
+	bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");
+
+	Intent iSetConfig = new Intent();
+	iSetConfig.setAction("com.symbol.datawedge.api.ACTION");
+	iSetConfig.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+	iSetConfig.putExtra("SEND_RESULT", "LAST_RESULT");
+	iSetConfig.putExtra("COMMAND_IDENTIFIER", "INTENT_API");
+	// SetConfig [End]
+
+	this.sendBroadcast(iSetConfig);
+
+###Set DCP Input Configuration
+
+	//SetConfig [Start] 
+	Bundle bMain = new Bundle(); 
+ 
+	Bundle bConfigDCP = new Bundle(); 
+	Bundle bParamsDCP = new Bundle(); 
+	bParamsDCP.putString("dcp_input_enabled", "true"); 
+	bParamsDCP.putString("dcp_dock_button_on", "LEFT"); //Supported values: BOTH - Left or Right, LEFT - Left only, RIGHT - Right only 
+	bParamsDCP.putString("dcp_start_in", "FULLSCREEN"); //Supported Values: FULLSCREEN, BUTTON, BUTTON_ONLY 
+	bParamsDCP.putString("dcp_highest_pos", "30"); //Supported Values:  0 - 100, Highest pos can not be greater than lowest pos 
+	bParamsDCP.putString("dcp_lowest_pos", "40"); //Supported Values: 0 - 100, Highest pos can not be greater than lowest pos 
+	bParamsDCP.putString("dcp_drag_detect_time", "501"); //Supported Values: 0 - 1000 
+	bConfigDCP.putString("RESET_CONFIG", "false"); 
+	bConfigDCP.putBundle("PARAM_LIST", bParamsDCP); 
+ 
+	bMain.putBundle("DCP", bConfigDCP); 
+ 
+	bMain.putString("PROFILE_NAME", "Profile007"); 
+	bMain.putString("PROFILE_ENABLED", "true"); 
+	bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST"); 
+ 
+	Intent iSetConfig = new Intent(); 
+	iSetConfig.setAction("com.symbol.datawedge.api.ACTION"); 
+	iSetConfig.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain); 
+	iSetConfig.putExtra("SEND_RESULT", "LAST_RESULT"); 
+	iSetConfig.putExtra("COMMAND_IDENTIFIER", "INTENT_API"); 
+	//SetConfig [End] 
+ 
+	this.sendBroadcast(iSetConfig); 
+
+###MSR Input Configuration
+
+	// SetConfig [Start]
+	Bundle bMain = new Bundle();
+
+	Bundle bConfigMSR = new Bundle();
+	Bundle bParamsMSR = new Bundle();
+
+	bParamsMSR.putString("msr_input_enabled", "true");
+
+	bConfigMSR.putString("PLUGIN_NAME", "MSR");
+	bConfigMSR.putString("RESET_CONFIG", "true");
+	bConfigMSR.putBundle("PARAM_LIST", bParamsMSR);
+
+	bMain.putBundle("PLUGIN_CONFIG", bConfigMSR);
+
+	bMain.putString("PROFILE_NAME", "Profile007");
+	bMain.putString("PROFILE_ENABLED", "true");
+	bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");
+
+	Intent iSetConfig = new Intent();
+	iSetConfig.setAction("com.symbol.datawedge.api.ACTION");
+	iSetConfig.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+	iSetConfig.putExtra("SEND_RESULT", "LAST_RESULT");
+	iSetConfig.putExtra("COMMAND_IDENTIFIER", "INTENT_API");
+	// SetConfig [End]
+
+	this.sendBroadcast(iSetConfig);
+
+###Set Voice Input Configuration
+
+    Bundle bMain = new Bundle();
+    bMain.putString("PROFILE_NAME", "DWDemo");
+    bMain.putString("PROFILE_ENABLED", "true");
+    bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");
+
+    Bundle bConfig = new Bundle();
+    bConfig.putString("PLUGIN_NAME","VOICE");
+    bConfig.putString("RESET_CONFIG","false");
+
+    Bundle bParams = new Bundle();
+    bParams.putString("voice_input_enabled","true"); // Supported Values: true, false
+    bParams.putString("voice_data_capture_start_phrase","hi");
+    bParams.putString("voice_data_capture_end_phrase","end");
+    bParams.putString("voice_end_detection_timeout","3");
+    bParams.putString("voice_tab_command","true"); // Supported Values: true, false
+    bParams.putString("voice_enter_command","true"); // Supported Values: true, false
+    bParams.putString("voice_data_type","1");
+    bParams.putString("voice_start_phrase_waiting_tone","true"); // Supported Values: true, false
+    bParams.putString("voice_data_capture_waiting_tone","false"); // Supported Values: true, false
+    bParams.putString("voice_validation_window","true"); // Supported Values: true, false
+    bParams.putString("voice_offline_speech","true"); // Supported Values: true, false
+
+    bConfig.putBundle("PARAM_LIST", bParams);
+
+    bMain.putBundle("PLUGIN_CONFIG", bConfig); //true, false
+
+    Intent i = new Intent();
+    i.setAction("com.symbol.datawedge.api.ACTION");
+    i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+    i.putExtra("SEND_RESULT", "true");
+    i.putExtra("COMMAND_IDENTIFIER", "SET_CONFIG");
+    this.sendBroadcast(i);
+
+### Set BDF processing
+Process Plug-ins manipulate the acquired data in a specified way before sending it to the associated app via the Output Plug-in. [About BDF](../../process/bdf). [About ADF](../../process/adf). 
+
+	// Main bundle properties
+		Bundle bMain = new Bundle();
+		bMain.putString("PROFILE_NAME","Profile12");
+		bMain.putString("PROFILE_ENABLED","true");
+		bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
+
+	// plugin_config bundle properties
+		Bundle bConfig = new Bundle();
+		bConfig.putString("PLUGIN_NAME","BDF");
+		bConfig.putString("RESET_CONFIG","true");
+		bConfig.putString("OUTPUT_PLUGIN_NAME","KEYSTROKE");
+
+	// param_list bundle properties
+		Bundle bParams = new Bundle();
+		bParams.putString("bdf_enabled","true");
+		bParams.putString("bdf_prefix","AAA");
+		bParams.putString("bdf_send_enter","true");
+
+		bConfig.putBundle("PARAM_LIST", bParams);
+
+		bMain.putBundle("PLUGIN_CONFIG", bConfig);
+
+		Intent i = new Intent();
+		i.setAction("com.symbol.datawedge.api.ACTION");
+		i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+		this.sendBroadcast(i);
+
+### Set ADF processing
+
+	//MAIN BUNDLE PROPERTIES
+	Bundle bMain = new Bundle();
+	bMain.putString("PROFILE_NAME","ProfileTest");
+	bMain.putString("PROFILE_ENABLED","true");
+	bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
+
+	//PLUGIN_CONFIG BUNDLE PROPERTIES
+	Bundle bConfig = new Bundle();
+	bConfig.putString("PLUGIN_NAME","ADF");
+	bConfig.putString("RESET_CONFIG","true");
+	bConfig.putString("OUTPUT_PLUGIN_NAME","KEYSTROKE");
+	bConfig.putString("adf_enabled","true");
+
+	//PARAM_LIST BUNDLE PROPERTIES
+	//RULE BUNDLE PROPERTIES
+	Bundle bParamsRule1 = new Bundle();
+	bParamsRule1.putString("name","Rule1");
+	bParamsRule1.putString("enabled","true");
+	bParamsRule1.putString("alldevices","true");
+	bParamsRule1.putString("string","abc");
+	bParamsRule1.putString("string_pos","2");
+	bParamsRule1.putString("string_len","4");
+
+	//ACTION BUNDLE PROPERTIES
+	Bundle bParamsAction1 = new Bundle();
+	bParamsAction1.putString("type","SEND_NEXT");
+	bParamsAction1.putString("action_param_1","5");
+
+
+	//ACTION BUNDLE PROPERTIES
+	Bundle bParamsAction2 = new Bundle();
+	bParamsAction2.putString("type","SKIP_BACK");
+
+	//DEVICE BUNDLE PROPERTIES
+	Bundle bParamsDevice1 = new Bundle();
+	bParamsDevice1.putString("device_id","BARCODE");
+	bParamsDevice1.putString("enabled","true");
+	bParamsDevice1.putString("alldecoders","false");
+	bParamsDevice1.putString("all_label_ids","false");
+
+	//DEVICE BUNDLE PROPERTIES
+	Bundle bParamsDevice2 = new Bundle();
+	bParamsDevice2.putString("device_id","MSR");
+	bParamsDevice2.putString("enabled","true");
+
+	//DEVICE BUNDLE PROPERTIES
+	Bundle bParamsDevice3 = new Bundle();
+	bParamsDevice3.putString("device_id","SIMULSCAN");
+	bParamsDevice3.putString("enabled","true");
+
+	//DECODER BUNDLE PROPERTIES
+	Bundle bParamsDecoders1 = new Bundle();
+	bParamsDecoders1.putString("device_id","BARCODE");
+	bParamsDecoders1.putString("decoder","Australian Postal");
+	bParamsDecoders1.putString("enabled","true");
+
+	//DECODER BUNDLE PROPERTIES
+	Bundle bParamsDecoders2 = new Bundle();
+	bParamsDecoders2.putString("device_id","BARCODE");
+	bParamsDecoders2.putString("decoder","Bookland");
+	bParamsDecoders2.putString("enabled","false");
+
+	//DECODER BUNDLE PROPERTIES
+	Bundle bParamsDecoders3 = new Bundle();
+	bParamsDecoders3.putString("device_id","BARCODE");
+	bParamsDecoders3.putString("decoder","Codebar");
+	bParamsDecoders3.putString("enabled","true");
+
+	//LABEL ID BUNDLE PROPERTIES
+	Bundle bParamsLabelID1 = new Bundle();
+	bParamsLabelID1.putString("device_id","BARCODE");
+	bParamsLabelID1.putString("label_id","UDI_GS1");
+	bParamsLabelID1.putString("enabled","true");
+
+	//LABEL ID BUNDLE PROPERTIES
+	Bundle bParamsLabelID2 = new Bundle();
+	bParamsLabelID2.putString("device_id","BARCODE");
+	bParamsLabelID2.putString("label_id","UDI_HIBCC");
+	bParamsLabelID2.putString("enabled","true");
+
+	ArrayList<Bundle> bParamsActionList = new ArrayList<Bundle>();
+	bParamsActionList.add(bParamsAction1);
+	bParamsActionList.add(bParamsAction2);
+
+	ArrayList<Bundle> bParamsDeviceList = new ArrayList<Bundle>();
+	bParamsDeviceList.add(bParamsDevice1);
+	bParamsDeviceList.add(bParamsDevice2);
+	bParamsDeviceList.add(bParamsDevice3);
+
+	ArrayList<Bundle> bParamsDecoderList = new ArrayList<Bundle>();
+	bParamsDecoderList.add(bParamsDecoders1);
+	bParamsDecoderList.add(bParamsDecoders2);
+	bParamsDecoderList.add(bParamsDecoders3);
+
+	ArrayList<Bundle> bParamsLabelIDList = new ArrayList<Bundle>();
+	bParamsLabelIDList.add(bParamsLabelID1);
+	bParamsLabelIDList.add(bParamsLabelID2);
+
+	bParamsRule1.putParcelableArrayList("ACTIONS",bParamsActionList);
+	bParamsRule1.putParcelableArrayList("DEVICES",bParamsDeviceList);
+	bParamsRule1.putParcelableArrayList("DECODERS",bParamsDecoderList);
+	bParamsRule1.putParcelableArrayList("LABEL_IDS",bParamsLabelIDList);
+
+	Bundle bParamsRule2 = new Bundle();
+	bParamsRule2.putString("name","Rule30");
+	bParamsRule2.putString("enabled","true");
+	bParamsRule2.putString("alldevices","true");
+	bParamsRule2.putString("string","cde");
+	bParamsRule2.putString("string_pos","3");
+	bParamsRule2.putString("string_len","5");
+
+	ArrayList<Bundle> bParamsList = new ArrayList<Bundle>();
+	bParamsList.add(bParamsRule1);
+	bParamsList.add(bParamsRule2);
+
+	bConfig.putParcelableArrayList("PARAM_LIST", bParamsList);
+
+	bMain.putBundle("PLUGIN_CONFIG", bConfig);
+
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+	i.putExtra("SEND_RESULT", "true");
+	i.putExtra("COMMAND_IDENTIFIER", "ADF_API");
+	this.sendBroadcast(i);
+
+	// GET RESULT CODE
+	public void onReceive(Context context, Intent intent){
+
+    String command = intent.getStringExtra("COMMAND");
+    String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
+    String result = intent.getStringExtra("RESULT");
+
+    Bundle bundle = new Bundle();
+    String resultInfo = "";
+    if(intent.hasExtra("RESULT_INFO")){
+        bundle = intent.getBundleExtra("RESULT_INFO");
+        Set<String> keys = bundle.keySet();
+        for (String key: keys) {
+            resultInfo += key + ": "+bundle.getString(key) + "\n";
+        }
+    }
+
+    String text = "Command: "+command+"\n" +
+            "Result: " +result+"\n" +
+            "Result Info: " +resultInfo + "\n" +
+            "CID:"+commandidentifier;
+    Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+	};
+ 
 ### Set KEYSTROKE Output 
 
 	@Override
@@ -2020,189 +2383,6 @@ See [DCP Input](../../input/dcp).
 	    unregisterReceiver(datawedgeKeystrokeNIntentStatusBR);
 	}
 
-### Set BDF processing
-Process Plug-ins manipulate the acquired data in a specified way before sending it to the associated app via the Output Plug-in. [About BDF](../../process/bdf). [About ADF](../../process/adf). 
-
-	// Main bundle properties
-		Bundle bMain = new Bundle();
-		bMain.putString("PROFILE_NAME","Profile12");
-		bMain.putString("PROFILE_ENABLED","true");
-		bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
-
-	// plugin_config bundle properties
-		Bundle bConfig = new Bundle();
-		bConfig.putString("PLUGIN_NAME","BDF");
-		bConfig.putString("RESET_CONFIG","true");
-		bConfig.putString("OUTPUT_PLUGIN_NAME","KEYSTROKE");
-
-	// param_list bundle properties
-		Bundle bParams = new Bundle();
-		bParams.putString("bdf_enabled","true");
-		bParams.putString("bdf_prefix","AAA");
-		bParams.putString("bdf_send_enter","true");
-
-		bConfig.putBundle("PARAM_LIST", bParams);
-
-		bMain.putBundle("PLUGIN_CONFIG", bConfig);
-
-		Intent i = new Intent();
-		i.setAction("com.symbol.datawedge.api.ACTION");
-		i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
-		this.sendBroadcast(i);
-
-### Set ADF processing
-
-	//MAIN BUNDLE PROPERTIES
-	Bundle bMain = new Bundle();
-	bMain.putString("PROFILE_NAME","ProfileTest");
-	bMain.putString("PROFILE_ENABLED","true");
-	bMain.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST");
-
-	//PLUGIN_CONFIG BUNDLE PROPERTIES
-	Bundle bConfig = new Bundle();
-	bConfig.putString("PLUGIN_NAME","ADF");
-	bConfig.putString("RESET_CONFIG","true");
-	bConfig.putString("OUTPUT_PLUGIN_NAME","KEYSTROKE");
-	bConfig.putString("adf_enabled","true");
-
-	//PARAM_LIST BUNDLE PROPERTIES
-	//RULE BUNDLE PROPERTIES
-	Bundle bParamsRule1 = new Bundle();
-	bParamsRule1.putString("name","Rule1");
-	bParamsRule1.putString("enabled","true");
-	bParamsRule1.putString("alldevices","true");
-	bParamsRule1.putString("string","abc");
-	bParamsRule1.putString("string_pos","2");
-	bParamsRule1.putString("string_len","4");
-
-	//ACTION BUNDLE PROPERTIES
-	Bundle bParamsAction1 = new Bundle();
-	bParamsAction1.putString("type","SEND_NEXT");
-	bParamsAction1.putString("action_param_1","5");
-
-
-	//ACTION BUNDLE PROPERTIES
-	Bundle bParamsAction2 = new Bundle();
-	bParamsAction2.putString("type","SKIP_BACK");
-
-	//DEVICE BUNDLE PROPERTIES
-	Bundle bParamsDevice1 = new Bundle();
-	bParamsDevice1.putString("device_id","BARCODE");
-	bParamsDevice1.putString("enabled","true");
-	bParamsDevice1.putString("alldecoders","false");
-	bParamsDevice1.putString("all_label_ids","false");
-
-	//DEVICE BUNDLE PROPERTIES
-	Bundle bParamsDevice2 = new Bundle();
-	bParamsDevice2.putString("device_id","MSR");
-	bParamsDevice2.putString("enabled","true");
-
-	//DEVICE BUNDLE PROPERTIES
-	Bundle bParamsDevice3 = new Bundle();
-	bParamsDevice3.putString("device_id","SIMULSCAN");
-	bParamsDevice3.putString("enabled","true");
-
-	//DECODER BUNDLE PROPERTIES
-	Bundle bParamsDecoders1 = new Bundle();
-	bParamsDecoders1.putString("device_id","BARCODE");
-	bParamsDecoders1.putString("decoder","Australian Postal");
-	bParamsDecoders1.putString("enabled","true");
-
-	//DECODER BUNDLE PROPERTIES
-	Bundle bParamsDecoders2 = new Bundle();
-	bParamsDecoders2.putString("device_id","BARCODE");
-	bParamsDecoders2.putString("decoder","Bookland");
-	bParamsDecoders2.putString("enabled","false");
-
-	//DECODER BUNDLE PROPERTIES
-	Bundle bParamsDecoders3 = new Bundle();
-	bParamsDecoders3.putString("device_id","BARCODE");
-	bParamsDecoders3.putString("decoder","Codebar");
-	bParamsDecoders3.putString("enabled","true");
-
-	//LABEL ID BUNDLE PROPERTIES
-	Bundle bParamsLabelID1 = new Bundle();
-	bParamsLabelID1.putString("device_id","BARCODE");
-	bParamsLabelID1.putString("label_id","UDI_GS1");
-	bParamsLabelID1.putString("enabled","true");
-
-	//LABEL ID BUNDLE PROPERTIES
-	Bundle bParamsLabelID2 = new Bundle();
-	bParamsLabelID2.putString("device_id","BARCODE");
-	bParamsLabelID2.putString("label_id","UDI_HIBCC");
-	bParamsLabelID2.putString("enabled","true");
-
-	ArrayList<Bundle> bParamsActionList = new ArrayList<Bundle>();
-	bParamsActionList.add(bParamsAction1);
-	bParamsActionList.add(bParamsAction2);
-
-	ArrayList<Bundle> bParamsDeviceList = new ArrayList<Bundle>();
-	bParamsDeviceList.add(bParamsDevice1);
-	bParamsDeviceList.add(bParamsDevice2);
-	bParamsDeviceList.add(bParamsDevice3);
-
-	ArrayList<Bundle> bParamsDecoderList = new ArrayList<Bundle>();
-	bParamsDecoderList.add(bParamsDecoders1);
-	bParamsDecoderList.add(bParamsDecoders2);
-	bParamsDecoderList.add(bParamsDecoders3);
-
-	ArrayList<Bundle> bParamsLabelIDList = new ArrayList<Bundle>();
-	bParamsLabelIDList.add(bParamsLabelID1);
-	bParamsLabelIDList.add(bParamsLabelID2);
-
-	bParamsRule1.putParcelableArrayList("ACTIONS",bParamsActionList);
-	bParamsRule1.putParcelableArrayList("DEVICES",bParamsDeviceList);
-	bParamsRule1.putParcelableArrayList("DECODERS",bParamsDecoderList);
-	bParamsRule1.putParcelableArrayList("LABEL_IDS",bParamsLabelIDList);
-
-	Bundle bParamsRule2 = new Bundle();
-	bParamsRule2.putString("name","Rule30");
-	bParamsRule2.putString("enabled","true");
-	bParamsRule2.putString("alldevices","true");
-	bParamsRule2.putString("string","cde");
-	bParamsRule2.putString("string_pos","3");
-	bParamsRule2.putString("string_len","5");
-
-	ArrayList<Bundle> bParamsList = new ArrayList<Bundle>();
-	bParamsList.add(bParamsRule1);
-	bParamsList.add(bParamsRule2);
-
-	bConfig.putParcelableArrayList("PARAM_LIST", bParamsList);
-
-	bMain.putBundle("PLUGIN_CONFIG", bConfig);
-
-	Intent i = new Intent();
-	i.setAction("com.symbol.datawedge.api.ACTION");
-	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
-	i.putExtra("SEND_RESULT", "true");
-	i.putExtra("COMMAND_IDENTIFIER", "ADF_API");
-	this.sendBroadcast(i);
-
-	// GET RESULT CODE
-	public void onReceive(Context context, Intent intent){
-
-    String command = intent.getStringExtra("COMMAND");
-    String commandidentifier = intent.getStringExtra("COMMAND_IDENTIFIER");
-    String result = intent.getStringExtra("RESULT");
-
-    Bundle bundle = new Bundle();
-    String resultInfo = "";
-    if(intent.hasExtra("RESULT_INFO")){
-        bundle = intent.getBundleExtra("RESULT_INFO");
-        Set<String> keys = bundle.keySet();
-        for (String key: keys) {
-            resultInfo += key + ": "+bundle.getString(key) + "\n";
-        }
-    }
-
-    String text = "Command: "+command+"\n" +
-            "Result: " +result+"\n" +
-            "Result Info: " +resultInfo + "\n" +
-            "CID:"+commandidentifier;
-    Toast.makeText(context, text, Toast.LENGTH_LONG).show();
-	};
- 
-
 ### Set/Get Result Codes
 Command and configuration intent parameters determine whether to send result codes (disabled by default). When using `SEND_RESULT`, the `COMMAND_IDENTIFIER` is used to match the result code with the originating intent. Sample usage of these parameters is shown below. 
 
@@ -2357,41 +2537,6 @@ Command and configuration intent parameters determine whether to send result cod
 	    }//end onReceive
 	};
 
-###Set Voice Input Configuration
-
-    Bundle bMain = new Bundle();
-    bMain.putString("PROFILE_NAME", "DWDemo");
-    bMain.putString("PROFILE_ENABLED", "true");
-    bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");
-
-    Bundle bConfig = new Bundle();
-    bConfig.putString("PLUGIN_NAME","VOICE");
-    bConfig.putString("RESET_CONFIG","false");
-
-    Bundle bParams = new Bundle();
-    bParams.putString("voice_input_enabled","true"); // Supported Values: true, false
-    bParams.putString("voice_data_capture_start_phrase","hi");
-    bParams.putString("voice_data_capture_end_phrase","end");
-    bParams.putString("voice_end_detection_timeout","3");
-    bParams.putString("voice_tab_command","true"); // Supported Values: true, false
-    bParams.putString("voice_enter_command","true"); // Supported Values: true, false
-    bParams.putString("voice_data_type","1");
-    bParams.putString("voice_start_phrase_waiting_tone","true"); // Supported Values: true, false
-    bParams.putString("voice_data_capture_waiting_tone","false"); // Supported Values: true, false
-    bParams.putString("voice_validation_window","true"); // Supported Values: true, false
-    bParams.putString("voice_offline_speech","true"); // Supported Values: true, false
-
-    bConfig.putBundle("PARAM_LIST", bParams);
-
-    bMain.putBundle("PLUGIN_CONFIG", bConfig); //true, false
-
-    Intent i = new Intent();
-    i.setAction("com.symbol.datawedge.api.ACTION");
-    i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
-    i.putExtra("SEND_RESULT", "true");
-    i.putExtra("COMMAND_IDENTIFIER", "SET_CONFIG");
-    this.sendBroadcast(i);
-
 ###Set Global Scanner Configuration
 
 	Bundle bConfig = new Bundle();
@@ -2401,66 +2546,6 @@ Command and configuration intent parameters determine whether to send result cod
 	bParams.putString("scanner_input_enabled", "true");
 	bParams.putString("configure_all_scanners", "true"); // configure for all scanners
 	bConfig.putBundle("PARAM_LIST", bParams);
-
-###Set DCP Input Configuration
-
-	//SetConfig [Start] 
-	Bundle bMain = new Bundle(); 
- 
-	Bundle bConfigDCP = new Bundle(); 
-	Bundle bParamsDCP = new Bundle(); 
-	bParamsDCP.putString("dcp_input_enabled", "true"); 
-	bParamsDCP.putString("dcp_dock_button_on", "LEFT"); //Supported values: BOTH - Left or Right, LEFT - Left only, RIGHT - Right only 
-	bParamsDCP.putString("dcp_start_in", "FULLSCREEN"); //Supported Values: FULLSCREEN, BUTTON, BUTTON_ONLY 
-	bParamsDCP.putString("dcp_highest_pos", "30"); //Supported Values:  0 - 100, Highest pos can not be greater than lowest pos 
-	bParamsDCP.putString("dcp_lowest_pos", "40"); //Supported Values: 0 - 100, Highest pos can not be greater than lowest pos 
-	bParamsDCP.putString("dcp_drag_detect_time", "501"); //Supported Values: 0 - 1000 
-	bConfigDCP.putString("RESET_CONFIG", "false"); 
-	bConfigDCP.putBundle("PARAM_LIST", bParamsDCP); 
- 
-	bMain.putBundle("DCP", bConfigDCP); 
- 
-	bMain.putString("PROFILE_NAME", "Profile007"); 
-	bMain.putString("PROFILE_ENABLED", "true"); 
-	bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST"); 
- 
-	Intent iSetConfig = new Intent(); 
-	iSetConfig.setAction("com.symbol.datawedge.api.ACTION"); 
-	iSetConfig.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain); 
-	iSetConfig.putExtra("SEND_RESULT", "LAST_RESULT"); 
-	iSetConfig.putExtra("COMMAND_IDENTIFIER", "INTENT_API"); 
-	//SetConfig [End] 
- 
-	this.sendBroadcast(iSetConfig); 
-
-###MSR Input Configuration
-
-	// SetConfig [Start]
-	Bundle bMain = new Bundle();
-
-	Bundle bConfigMSR = new Bundle();
-	Bundle bParamsMSR = new Bundle();
-
-	bParamsMSR.putString("msr_input_enabled", "true");
-
-	bConfigMSR.putString("PLUGIN_NAME", "MSR");
-	bConfigMSR.putString("RESET_CONFIG", "true");
-	bConfigMSR.putBundle("PARAM_LIST", bParamsMSR);
-
-	bMain.putBundle("PLUGIN_CONFIG", bConfigMSR);
-
-	bMain.putString("PROFILE_NAME", "Profile007");
-	bMain.putString("PROFILE_ENABLED", "true");
-	bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");
-
-	Intent iSetConfig = new Intent();
-	iSetConfig.setAction("com.symbol.datawedge.api.ACTION");
-	iSetConfig.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
-	iSetConfig.putExtra("SEND_RESULT", "LAST_RESULT");
-	iSetConfig.putExtra("COMMAND_IDENTIFIER", "INTENT_API");
-	// SetConfig [End]
-
-	this.sendBroadcast(iSetConfig);
 
 -----
 

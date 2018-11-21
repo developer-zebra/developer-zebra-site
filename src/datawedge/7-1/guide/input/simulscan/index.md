@@ -113,6 +113,13 @@ Returns the data of the region in the form of byte array. Binary data comes only
 For more information about Android Intents, please refer to the [Android Developer site](https://developer.android.com/guide/components/intents-filters.html).
 
 ------
+## Configuration
+
+Programmatically configure Simulscan and retrieve the configuration:
+* [Set Config](../../api/setconfig/)
+* [Get Config](../../api/getconfig/)
+
+------
 
 **Related guides**:
 

@@ -23,7 +23,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
  * **New ADF_RULE bundle** with Action, Device, Decoder and Label_ID sub-bundles
  * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
-* **DataWedge 7.1 -** New configuration for: Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader)
+* **DataWedge 7.1 -** New configuration for: full configuration, Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan
 
 ### Function Prototype
 
@@ -1863,7 +1863,8 @@ See [DCP Input](../../input/dcp).
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
-	i.putExtra("SEND_RESULT", "true");
+	i.putExtra("SEND_RESULT","LAST_RESULT");
+	// i.putExtra("SEND_RESULT", "true");  // For versions below DataWedge 7.1
 	i.putExtra("com.symbol.datawedge.api.RESULT_CATEGORY", DEFAULT_CATEGORY);
 	i.putExtra("COMMAND_IDENTIFIER", "DW_SERIAL_COMMAND");
 
@@ -2002,7 +2003,8 @@ See [DCP Input](../../input/dcp).
     Intent i = new Intent();
     i.setAction("com.symbol.datawedge.api.ACTION");
     i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
-    i.putExtra("SEND_RESULT", "true");
+		i.putExtra("SEND_RESULT","LAST_RESULT");
+		// i.putExtra("SEND_RESULT", "true");  // For versions below DataWedge 7.1
     i.putExtra("COMMAND_IDENTIFIER", "SET_CONFIG");
     this.sendBroadcast(i);
 
@@ -2160,7 +2162,8 @@ Process Plug-ins manipulate the acquired data in a specified way before sending 
 	Intent i = new Intent();
 	i.setAction("com.symbol.datawedge.api.ACTION");
 	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
-	i.putExtra("SEND_RESULT", "true");
+	i.putExtra("SEND_RESULT","LAST_RESULT");
+	// i.putExtra("SEND_RESULT", "true");  // For versions below DataWedge 7.1
 	i.putExtra("COMMAND_IDENTIFIER", "ADF_API");
 	this.sendBroadcast(i);
 
@@ -2258,7 +2261,8 @@ Process Plug-ins manipulate the acquired data in a specified way before sending 
 	    Intent i = new Intent();
 	    i.setAction("com.symbol.datawedge.api.ACTION");
 	    i.putExtra("com.symbol.datawedge.api.SET_CONFIG", configBundle);
-	    i.putExtra("SEND_RESULT", "true");
+			i.putExtra("SEND_RESULT","LAST_RESULT");
+			// i.putExtra("SEND_RESULT", "true");  // For versions below DataWedge 7.1
 	    i.putExtra("COMMAND_IDENTIFIER", "KEYSTROKE_API");
 	    this.sendBroadcast(i);
 	}
@@ -2372,8 +2376,9 @@ Process Plug-ins manipulate the acquired data in a specified way before sending 
 	    Intent i = new Intent();
 	    i.setAction("com.symbol.datawedge.api.ACTION");
 	    i.putExtra("com.symbol.datawedge.api.SET_CONFIG",bMain);
-	    i.putExtra("SEND_RESULT", "true");
-	    i.putExtra("COMMAND_IDENTIFIER", "INTENT_API");
+			i.putExtra("SEND_RESULT","LAST_RESULT");
+			// i.putExtra("SEND_RESULT", "true");  // For versions below DataWedge 7.1
+			i.putExtra("COMMAND_IDENTIFIER", "INTENT_API");
 	    this.sendBroadcast(i);
 	}
 
@@ -2394,7 +2399,8 @@ Command and configuration intent parameters determine whether to send result cod
 		i.putExtra("com.symbol.datawedge.api.CREATE_PROFILE", "Profile1");
 
 	// request and identify the result code
-		i.putExtra("SEND_RESULT","true");
+		i.putExtra("SEND_RESULT","LAST_RESULT");
+ 		// i.putExtra("SEND_RESULT", "true");  // For versions below DataWedge 7.1
 		i.putExtra("COMMAND_IDENTIFIER","123456789");
 		this.sendBroadcast(i);
 
@@ -2497,7 +2503,8 @@ Command and configuration intent parameters determine whether to send result cod
 	    Intent i = new Intent();
 	    i.setAction("com.symbol.datawedge.api.ACTION");
 	    i.putExtra("com.symbol.datawedge.api.SET_CONFIG", configBundle);
-	    i.putExtra("SEND_RESULT", "true");
+			i.putExtra("SEND_RESULT","LAST_RESULT");
+			// i.putExtra("SEND_RESULT", "true");  // For versions below DataWedge 7.1
 	    i.putExtra("COMMAND_IDENTIFIER", "KEYSTROKE_API");
 	    this.sendBroadcast(i);
 		}

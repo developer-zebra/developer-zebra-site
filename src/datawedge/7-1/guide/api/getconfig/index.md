@@ -13,7 +13,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 * **Introduced in DataWedge 6.5**
 * **DataWedge 6.8 -** Added support for ADF settings
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
-* **DataWedge 7.1 -** Added support for configurations: Data Capture Plus (DCP), Magnetic Stripe Reader (MSR), Internet Protocol (IP), full profile 
+* **DataWedge 7.1 -** Added support for configurations: full profile, Data Capture Plus (DCP), Magnetic Stripe Reader (MSR), Internet Protocol (IP), Simulscan 
 
 ### Function Prototype
 
@@ -359,7 +359,8 @@ Error messages are logged for invalid actions and parameters.
 		Intent i = new Intent();
 		i.setAction("com.symbol.datawedge.api.ACTION");
 		i.putExtra("com.symbol.datawedge.api.GET_SCANNER_STATUS","STANDARD");
-		i.putExtra("SEND_RESULT","true");
+		i.putExtra("SEND_RESULT","LAST_RESULT");
+		// i.putExtra("SEND_RESULT", "true");  // For versions below DataWedge 7.1
 		i.putExtra("com.symbol.datawedge.api.RESULT_CATEGORY","android.intent.category.DEFAULT");
 		this.sendBroadcast(i);
 
@@ -541,7 +542,8 @@ Error messages are logged for invalid actions and parameters.
 
 	    Intent i = new Intent();
 	    i.setAction("com.symbol.datawedge.api.ACTION");
-	    i.putExtra("SEND_RESULT", "true");
+		i.putExtra("SEND_RESULT","LAST_RESULT");
+		// i.putExtra("SEND_RESULT", "true");  // For versions below DataWedge 7.1
 	    i.putExtra("com.symbol.datawedge.api.GET_CONFIG", bMain);
 	    this.sendBroadcast(i);
 	}

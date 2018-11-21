@@ -23,7 +23,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
  * **New ADF_RULE bundle** with Action, Device, Decoder and Label_ID sub-bundles
  * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
-* **DataWedge 7.1 -** New Data Capture Plus configuration
+* **DataWedge 7.1 -** New configuration for: Data Capture Plus, IP (Internet Protocol)
 
 ### Function Prototype
 
@@ -62,11 +62,16 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
 **PLUGIN_NAME** [String]: Name of the Plug-in to configure:
  * **BARCODE** input
  * **SERIAL** input
+ * **DCP** (Data Capture Plus) input
+ * **MSR** (Magnetic Stripe Reader) input
+ * **SIMULSCAN** input
  * **VOICE** input
  * **INTENT** output
  * **KEYSTROKE** output
+ * **IP** (Internet Protocol) output
  * **BDF** (basic data formatting) processing
  * **ADF** (advanced data formatting) processing
+ * **TOKENS** (data formatting and ordering for UDI/Multi-barcode data) processing
 
 **Notes**: 
 * Plug-in names are case sensitive.
@@ -1641,6 +1646,37 @@ Other Scanner Input Parameters:
  * If available, the `keystroke_delay_multibyte_chars_only` value is saved; it is otherwise considered false.
 
 -----
+
+## IP (Internet Protocol) Output Parameters 
+
+<table class="facelift" style="width:70%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+		<th>Parameter Name</th>
+		<th>Parameter Value</th>
+	</tr>
+	<tr>
+		<td>ip_output_enabled</td>
+		<td>True<br>False</td>
+	</tr>
+	<tr>
+		<td>ip_output_ip_wedge_enabled</td>
+		<td>True<br>False</td>
+	</tr>
+	<tr>
+		<td>ip_output_protocol</td>
+		<td>TCP<br>UDP</td>
+	</tr>
+	<tr>
+		<td>ip_output_address</td>
+		<td>[Valid IP Address format]</td>
+	</tr>
+	<tr>
+		<td>ip_output_port</td>
+		<td>1 – 65535</td>
+	</tr>
+</table>
+
+-----
 ## Example Code
 
 ### Nested bundles
@@ -1850,6 +1886,40 @@ Other Scanner Input Parameters:
 	    super.onDestroy();
 	    unregisterReceiver(datawedgeKeystrokeNIntentStatusBR);
 	}
+
+### Set IP Output
+	// SetConfig [Start]
+	Bundle bMain = new Bundle();
+
+	Bundle bConfigIPOutput = new Bundle();
+	Bundle bParamsIPOutput = new Bundle();
+	bParamsIPOutput.putString("ip_output_enabled", "true");
+	bParamsIPOutput.putString("ip_output_ip_wedge_enabled", "false");
+	bParamsIPOutput.putString("ip_output_protocol", "UDP"); //Supported Values: TCP: UDP
+	bParamsIPOutput.putString("ip_output_address", "192.168.0.1"); //Supported Values : IP Address format
+	bParamsIPOutput.putString("ip_output_port", "55555"); //Supported Values : 1 - 65535
+
+	bConfigIPOutput.putString("PLUGIN_NAME", "IP");
+	bConfigIPOutput.putString("RESET_CONFIG", "true");
+	bConfigIPOutput.putBundle("PARAM_LIST", bParamsIPOutput);
+
+	ArrayList<Bundle> bundlePluginConfig = new ArrayList<>();
+	bundlePluginConfig.add(bConfigIPOutput);
+	bMain.putParcelableArrayList("PLUGIN_CONFIG", bundlePluginConfig);
+
+
+	bMain.putString("PROFILE_NAME", "Profile007");
+	bMain.putString("PROFILE_ENABLED", "true");
+	bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");
+
+	Intent iSetConfig = new Intent();
+	iSetConfig.setAction("com.symbol.datawedge.api.ACTION");
+	iSetConfig.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+	iSetConfig.putExtra("SEND_RESULT", "LAST_RESULT");
+	iSetConfig.putExtra("COMMAND_IDENTIFIER", "INTENT_API");
+	// SetConfig [End]
+
+	this.sendBroadcast(iSetConfig);
 
 ### Set INTENT Output
 

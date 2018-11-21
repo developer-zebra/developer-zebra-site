@@ -142,6 +142,14 @@ The PC is now ready to receive data from DataWedge IP Output (with IP address an
 
 -----
 
+## Configuration
+
+Programmatically configure IP Output and retrieve the configuration:
+* See [SetConfig API](../../api/setconfig)
+* See [GetConfig API](../../api/getconfig)
+
+-----
+
 **Other DataWedge Output Options**:
 
 * **[Intent](../intent) -** programmatic data hand-off

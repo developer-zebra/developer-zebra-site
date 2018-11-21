@@ -232,6 +232,14 @@ The table below lists the data fields contained in the tag.
 
 -----
 
+## Configuration
+
+Programmatically configure MSR and retrieve the configuration:
+* [Set Config](../../api/setconfig/)
+* [Get Config](../../api/getconfig/)
+
+-----
+
 **Related guides**:
 
 * [DataWedge Profiles](../../profiles) - guides for all DataWedge input, processing and output options 

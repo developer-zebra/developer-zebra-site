@@ -23,7 +23,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
  * **New ADF_RULE bundle** with Action, Device, Decoder and Label_ID sub-bundles
  * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
-* **DataWedge 7.1 -** New configuration for: Data Capture Plus, IP (Internet Protocol)
+* **DataWedge 7.1 -** New configuration for: Data Capture Plus, IP (Internet Protocol), MSR
 
 ### Function Prototype
 
@@ -177,50 +177,6 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 		* `device_id` [string] - BARCODE, MSR, SERIAL or SIMULSCAN
 		* `label_id` [string] - UDI_GS1, UDI_HIBCC or UDI_ICCBBA
 		* `enabled` [string] - true/false (default=true)
-
-#### Data Capture Plus (DCP) Parameters
-
-<table class="facelift" style="width:100%" border="1" padding="5px">
-  <tr bgcolor="#dce8ef">
-    <th style="width:20%">Parameter</th>
-    <th style="width:25%">Parameter Value</th>
-		<th style="width:55%">Description</th>
-  </tr>
-	<tr>
-		<td>dcp_input_enabled</td>
-		<td>True<br>False</td>
-		<td>Enable/Disable DCP input</td>
-	</tr>
-	<tr>
-		<td>dcp_dock_button_on</td>
-		<td>LEFT - Left only <br>RIGHT - Right only<br>BOTH - Left or Right</td>
-		<td>Position location for dock button: left side, right side, either right or left side (both)</td>
-	</tr>
-	<tr>
-		<td>dcp_start_in</td>
-		<td>FULLSCREEN<br>BUTTON <br>BUTTON_ONLY </td>
-		<td>Sets the mode that DCP will startup with: full screen, button (floating button that can be re-positioned by dragging and dropping), and button only (cannot be re-positioned)</td>
-	</tr>
-	<tr>
-		<td>dcp_highest_pos</td>
-		<td>0-100</td>
-		<td>Sets a ceiling for button position expressed as a percentage of total screen height. For example, on a screen measuring four inches vertically, a setting of 75 (%) would prevent the upper edge of the DCP button from being positioned less than one inch from the top of the screen.</td>
-	</tr>
-	<tr>
-		<td>dcp_lowest_pos</td>
-		<td>0-100</td>
-		<td>Sets a floor for button position expressed as a percentage of total screen height. For example, on a screen measuring four inches vertically, a setting of 25 (%) would prevent the lower edge of the DCP button from being positioned less than one inch from the bottom of the screen.</td>
-	</tr>
-	<tr>
-		<td>dcp_drag_detect_time</td>
-		<td>0-1000</td>
-		<td>Wait time (in ms) that DCP should wait after a screen tap before triggering a scanner action. This can help prevent accidental triggers when dragging the DCP button to a new location.</td>
-	</tr>
-</table>
-<br>
-
-See [DCP Input](../../input/dcp).
-<br>
 
 **IMPORTANT**: 
 
@@ -1599,6 +1555,69 @@ Other Scanner Input Parameters:
 
 -----
 
+## Data Capture Plus (DCP) Input Parameters
+
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th style="width:20%">Parameter</th>
+    <th style="width:25%">Parameter Value</th>
+		<th style="width:55%">Description</th>
+  </tr>
+	<tr>
+		<td>dcp_input_enabled</td>
+		<td>True<br>False</td>
+		<td>Enable/Disable DCP input</td>
+	</tr>
+	<tr>
+		<td>dcp_dock_button_on</td>
+		<td>LEFT - Left only <br>RIGHT - Right only<br>BOTH - Left or Right</td>
+		<td>Position location for dock button: left side, right side, either right or left side (both)</td>
+	</tr>
+	<tr>
+		<td>dcp_start_in</td>
+		<td>FULLSCREEN<br>BUTTON <br>BUTTON_ONLY </td>
+		<td>Sets the mode that DCP will startup with: full screen, button (floating button that can be re-positioned by dragging and dropping), and button only (cannot be re-positioned)</td>
+	</tr>
+	<tr>
+		<td>dcp_highest_pos</td>
+		<td>0-100</td>
+		<td>Sets a ceiling for button position expressed as a percentage of total screen height. For example, on a screen measuring four inches vertically, a setting of 75 (%) would prevent the upper edge of the DCP button from being positioned less than one inch from the top of the screen.</td>
+	</tr>
+	<tr>
+		<td>dcp_lowest_pos</td>
+		<td>0-100</td>
+		<td>Sets a floor for button position expressed as a percentage of total screen height. For example, on a screen measuring four inches vertically, a setting of 25 (%) would prevent the lower edge of the DCP button from being positioned less than one inch from the bottom of the screen.</td>
+	</tr>
+	<tr>
+		<td>dcp_drag_detect_time</td>
+		<td>0-1000</td>
+		<td>Wait time (in ms) that DCP should wait after a screen tap before triggering a scanner action. This can help prevent accidental triggers when dragging the DCP button to a new location.</td>
+	</tr>
+</table>
+<br>
+
+See [DCP Input](../../input/dcp).
+<br>
+
+-----
+
+## MSR (Magnetic Stripe) Input Parameters 
+
+> All parameters are case sensitive.
+
+<table class="facelift" style="width:50%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+		<th>Parameter</th>
+		<th>Parameter Value</th>
+	</tr>
+	<tr>
+		<td>msr_input_enabled</td>
+		<td>True<br>False</td>
+	</tr>
+</table>
+
+-----
+
 ## Keystroke Output Parameters 
 
 > All parameters are case sensitive.
@@ -2383,7 +2402,7 @@ Command and configuration intent parameters determine whether to send result cod
 	bParams.putString("configure_all_scanners", "true"); // configure for all scanners
 	bConfig.putBundle("PARAM_LIST", bParams);
 
-###Set Data Capture Plus (DCP) Configuration
+###Set DCP Input Configuration
 
 	//SetConfig [Start] 
 	Bundle bMain = new Bundle(); 
@@ -2413,6 +2432,35 @@ Command and configuration intent parameters determine whether to send result cod
 	//SetConfig [End] 
  
 	this.sendBroadcast(iSetConfig); 
+
+###MSR Input Configuration
+
+	// SetConfig [Start]
+	Bundle bMain = new Bundle();
+
+	Bundle bConfigMSR = new Bundle();
+	Bundle bParamsMSR = new Bundle();
+
+	bParamsMSR.putString("msr_input_enabled", "true");
+
+	bConfigMSR.putString("PLUGIN_NAME", "MSR");
+	bConfigMSR.putString("RESET_CONFIG", "true");
+	bConfigMSR.putBundle("PARAM_LIST", bParamsMSR);
+
+	bMain.putBundle("PLUGIN_CONFIG", bConfigMSR);
+
+	bMain.putString("PROFILE_NAME", "Profile007");
+	bMain.putString("PROFILE_ENABLED", "true");
+	bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");
+
+	Intent iSetConfig = new Intent();
+	iSetConfig.setAction("com.symbol.datawedge.api.ACTION");
+	iSetConfig.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+	iSetConfig.putExtra("SEND_RESULT", "LAST_RESULT");
+	iSetConfig.putExtra("COMMAND_IDENTIFIER", "INTENT_API");
+	// SetConfig [End]
+
+	this.sendBroadcast(iSetConfig);
 
 -----
 

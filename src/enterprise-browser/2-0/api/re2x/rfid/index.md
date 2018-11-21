@@ -209,7 +209,7 @@ Items listed in this section indicate parameters or attributes that can be set.
 		<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>beepOnRead:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsEvenRow">Specifies whether the device should beep whenever application receives a tag.</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify whether the device should beep whenever application receives a tag.</td>
 		<td class="clsSyntaxCells clsEvenRow">true</td>
 	</tr>
 	<tr>
@@ -263,7 +263,7 @@ Items listed in this section indicate parameters or attributes that can be set.
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>invMemBank:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">None, Reserved, EPC, TID, User</td>
-		<td class="clsSyntaxCells clsOddRow">Specifies if any memory bank is to be read during an inventory</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify if any memory bank is to be read during an inventory</td>
 		<td class="clsSyntaxCells clsOddRow">None</td>
 	</tr>
 	<tr>
@@ -335,31 +335,31 @@ Items listed in this section indicate parameters or attributes that can be set.
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>preFilterBitCount:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Number of applicable bits in the filterHexPattern</td>
-		<td class="clsSyntaxCells clsEvenRow">Specifies the number of bits within the preFilterHexPattern to match in a subsequent call to addFilter()</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify the number of bits within the preFilterHexPattern to match in a subsequent call to addFilter()</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>preFilterBitOffset:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">Offset from the start of the memory bank in bits</td>
-		<td class="clsSyntaxCells clsOddRow">Specifies the offset into the memory bank (position) applicable to a subsequent call to addFilter()</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the offset into the memory bank (position) applicable to a subsequent call to addFilter()</td>
 		<td class="clsSyntaxCells clsOddRow">32</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>preFilterHexPattern:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Hex Pattern</td>
-		<td class="clsSyntaxCells clsEvenRow">Specifies a hex pattern to apply in a subsequent call to addFilter()</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify a hex pattern to apply in a subsequent call to addFilter()</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>preFilterID:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">unsigned integer</td>
-		<td class="clsSyntaxCells clsOddRow">Specifies the ID of the filter to apply in a subsequent call to addFilter()`or deleteFilter()</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the ID of the filter to apply in a subsequent call to addFilter()`or deleteFilter()</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>preFilterMemBank:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Reserved, EPC, TID, User</td>
-		<td class="clsSyntaxCells clsEvenRow">Specifies the memory bank to apply in a subsequent call to addFilter()</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify the memory bank to apply in a subsequent call to addFilter()</td>
 		<td class="clsSyntaxCells clsEvenRow">EPC</td>
 	</tr>
 	<tr>
@@ -377,7 +377,7 @@ Items listed in this section indicate parameters or attributes that can be set.
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>reportUniqueTags:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">Specifies to report only unique tags</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify to report only unique tags</td>
 		<td class="clsSyntaxCells clsOddRow">true</td>
 	</tr>
 	<tr>
@@ -431,7 +431,7 @@ Items listed in this section indicate parameters or attributes that can be set.
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>startTriggerType:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">immediate, triggerPress, triggerRelease, periodicStart</td>
-		<td class="clsSyntaxCells clsOddRow">Specifies the start triggers allowed for performInventory and tagLocate methods</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the start triggers allowed for performInventory and tagLocate methods</td>
 		<td class="clsSyntaxCells clsOddRow">immediate</td>
 	</tr>
 	<tr>
@@ -443,91 +443,91 @@ Items listed in this section indicate parameters or attributes that can be set.
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>stopObservationCount:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">unsigned integer</td>
-		<td class="clsSyntaxCells clsOddRow">Stops the inventory or locateTag after n tags are found</td>
+		<td class="clsSyntaxCells clsOddRow">Stops the inventory or locateTag after "n" tags are found</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>stopTriggerType:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">triggerPress, triggerRelease, duration, tagObservation</td>
-		<td class="clsSyntaxCells clsEvenRow">Specifies the stop-triggers allowed for performInventory and tagLocate methods</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify the stop-triggers allowed for performInventory and tagLocate methods</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagByteOffset:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">unsigned integer</td>
-		<td class="clsSyntaxCells clsOddRow">sets the offset into the selected memory Bank to use for the next access of the currently selected tag</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the offset into the selected memory bank to use for the next access of the currently selected tag</td>
 		<td class="clsSyntaxCells clsOddRow">0</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagID:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Tag ID in hex</td>
-		<td class="clsSyntaxCells clsEvenRow">Select an RFID Tag ID to perform further operations on</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify an RFID Tag ID on which to perform further operations</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagKillPassword:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">hex kill password</td>
-		<td class="clsSyntaxCells clsOddRow">sets the password to use when calling the killTag method</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify a password to use when calling the killTag method</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagMemBank:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Reserved, EPC, TID, User</td>
-		<td class="clsSyntaxCells clsEvenRow">sets the memory bank to access within the currently selected tag.</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to set the memory bank from which to access the currently selected tag</td>
 		<td class="clsSyntaxCells clsEvenRow">EPC</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagPassword:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">hex password</td>
-		<td class="clsSyntaxCells clsOddRow">Sets the access password to use when accessing the currently selected tag.</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the access password to use when accessing the currently selected tag</td>
 		<td class="clsSyntaxCells clsOddRow">00000000</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagPatternAByteOffset:[Value]</b></td>
-		<td class="clsSyntaxCells clsEvenRow">Offset from the start of the memory bank in bytes</td>
-		<td class="clsSyntaxCells clsEvenRow">Specifies the offset into the memory bank (position)</td>
+		<td class="clsSyntaxCells clsEvenRow">Offset (in bytes) from the start of the memory bank</td>
+		<td class="clsSyntaxCells clsEvenRow">used to specify the offset into the memory bank (position)</td>
 		<td class="clsSyntaxCells clsEvenRow">4</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagPatternAHexMask:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">Hex Mask</td>
-		<td class="clsSyntaxCells clsOddRow">Specifies the mask for above pattern</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the mask for above pattern</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagPatternAHexPattern:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Hex Pattern</td>
-		<td class="clsSyntaxCells clsEvenRow">Specifies a hex pattern to be used for comparing memory bank data</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify a hex pattern to be used for comparing memory bank data</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagPatternAMemBank:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">Reserved, EPC, TID, User</td>
-		<td class="clsSyntaxCells clsOddRow">Specifies the memory bank for the tag pattern A</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the memory bank for the tag pattern A</td>
 		<td class="clsSyntaxCells clsOddRow">EPC</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagPatternBByteOffset:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Offset from the start of the memory bank in bytes</td>
-		<td class="clsSyntaxCells clsEvenRow">Specifies the offset into the memory bank (position)</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify the offset into the memory bank (position)</td>
 		<td class="clsSyntaxCells clsEvenRow">4</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagPatternBHexMask:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">Hex Mask</td>
-		<td class="clsSyntaxCells clsOddRow">Specifies the mask for above pattern</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the mask for above pattern</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagPatternBHexPattern:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Hex Pattern</td>
-		<td class="clsSyntaxCells clsEvenRow">Specifies a hex pattern to be used for comparing memory bank data</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify a hex pattern to be used for comparing memory bank data</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagPatternBMemBank:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">Reserved, EPC, TID, User</td>
-		<td class="clsSyntaxCells clsOddRow">Specifies the memory bank for the tag pattern B</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the memory bank for the tag pattern B</td>
 		<td class="clsSyntaxCells clsOddRow">EPC</td>
 	</tr>
 	<tr>
@@ -551,13 +551,13 @@ Items listed in this section indicate parameters or attributes that can be set.
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>transmitPower:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">power in dbm derived from min, max and step values provided in the enumRFIDevent</td>
-		<td class="clsSyntaxCells clsEvenRow">Specifies the transmit power to be used in a subsequent call to setTransmitPower</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify the transmit power to be used in a subsequent call to setTransmitPower</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>useAccessFilter:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">Specifies whether to use the access filter in tag access operations</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify whether to use the access filter in tag access operations</td>
 		<td class="clsSyntaxCells clsOddRow">false</td>
 	</tr>
 </table>

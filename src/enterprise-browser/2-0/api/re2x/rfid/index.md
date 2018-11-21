@@ -23,9 +23,11 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="rfid" content="tagEvent:url('[jsFunction | url]')"&gt;</p></td>
 	</tr>
+</table>
 
 <!-- Table Break -->
 
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 <tr><th class="tableHeading">Rfid JavaScript Object Syntax:</th></tr>
 <tr>
 	<td class="clsSyntaxCells clsOddRow">By default the JavaScript Object <b>'rfid'</b> will exist on the current page and can be used to interact directly with the rfid.
@@ -47,12 +49,13 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 	<td class="clsSyntaxCells clsOddRow">To set multiple EMML parameters / events on a single line use the following syntax: rfid.setEMML("[Your EMML Tags]");<P />e.g. <b>rfid</b>.setEMML("antennaSelected:<i>value</i>;enumRFIDEvent:url('JavaScript:doFunction(%json)');enumerate");
 	</td>
 </tr>
+</table>
 
 <!-- Table Break -->
 
 <h2> Methods</h2>
 
-Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
+Items listed in this section indicate methods or parameters available to be retrieved.
 
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" />
 	<tr><th class="tableHeading">Name</th>
@@ -386,13 +389,13 @@ Items listed in this section indicate parameters or attributes that can be set.
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>DPOState:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">Used to enable/disable device power optimization. Valid only on RFD8500 Bluetooth reader.</td>
+		<td class="clsSyntaxCells clsOddRow">Used to enable/disable device power optimization. <strong>Supported only on RFD8500 Bluetooth reader</strong>.</td>
 		<td class="clsSyntaxCells clsOddRow">NEED DEFAULT</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>transport:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Bluetooth, serial</td>
-		<td class="clsSyntaxCells clsEvenRow">Sets the mode of transport to be called before rfid.enumerate. Uses default value if no value is set.</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to select the physical or wireless medium over which acquired data will travel. Takes default value if not set before calling the rfid.enumerate method.</td>
 		<td class="clsSyntaxCells clsEvenRow">serial</td>
 	</tr>
 	<tr>
@@ -542,7 +545,7 @@ Items listed in this section indicate parameters or attributes that can be set.
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>useSoftTrigger:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">For Android, specifies the user to use start/stoptrigger</td>
+		<td class="clsSyntaxCells clsOddRow">On devices running Android, enables programmatic start/stop of a scan, the equivalent of a hardware trigger or button</td>
 		<td class="clsSyntaxCells clsOddRow">false</td>
 	</tr>
 	<tr>

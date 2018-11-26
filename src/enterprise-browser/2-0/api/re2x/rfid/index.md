@@ -51,16 +51,16 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 
 ## Methods
 
-Items listed in this section indicate methods or parameters available to be retrieved.
+Items listed in this section indicate methods or parameters available for retrieval.
 
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" />
-	<tr><th class="tableHeading">Name</th>
+	<tr bgcolor="#dce8ef"><th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th>
 		<th class="tableHeading">Default Value</th>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>enumerate</b></td>
-		<td class="clsSyntaxCells clsOddRow">Returns the number of RFID readers present on the device, which always is '1' for serial devices, and could be greater for Bluetooth depending on the number of paired devices. 
+		<td class="clsSyntaxCells clsOddRow">Returns the number of RFID readers present on the device. Always is '1' for serial devices; could be greater for Bluetooth depending on the number of paired devices. 
 		</td>
 		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
@@ -161,22 +161,22 @@ Items listed in this section indicate methods or parameters available to be retr
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>getRFParams</b></td>
-		<td class="clsSyntaxCells clsOddRow">Gets the current RF Mode, Transmit power parameter for the currently selected antenna. The result is returned in rfParamsEvent. The property antennaSelected cannot take default value (0) because the RF Params are returned only for one antennaID.</td>
+		<td class="clsSyntaxCells clsOddRow">Gets the current RF Mode and Transmit Power parameters for the currently selected antenna. Result is returned in rfParamsEvent. Property antennaSelected cannot take default value (0) because RF parameters are returned only for one antennaID. <strong> Android returns only the Transmit Power parameter</strong>.</td>
 		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagLock</b></td>
-		<td class="clsSyntaxCells clsEvenRow">Locks a tag (or tags) according to the lockPrivilege and lockField, requires tagPassword. The tagID property is ignored if useAccessFilter property is set to true. If useAccessFilter is set to true, then tagPatternA, tagPatternB and matchPattern will be used to filter out tags to perform the operation. If the tagID is empty and useAccessFilter is false, the lock operation will be attempted on all the tags in field of view</td>
+		<td class="clsSyntaxCells clsEvenRow">Locks a tag (or tags) according to the lockPrivilege and lockField, requires tagPassword. The tagID property is ignored if useAccessFilter property is set to true. If useAccessFilter is set to true, then tagPatternA, tagPatternB and matchPattern will be used to filter out tags to perform the operation. If the tagID is empty and useAccessFilter is false, the lock operation will be attempted on all the tags in field of view.</td>
 		<td class="clsSyntaxCells clsEvenRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>getRFModeInfo</b></td>
-		<td class="clsSyntaxCells clsOddRow">Gets the RF mode information for the given RFMode index. The result is returned in a rfModeInfoEvent</td>
+		<td class="clsSyntaxCells clsOddRow">Gets the RF mode information for the given RFMode index. The result is returned in a rfModeInfoEvent.</td>
 		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>setRFParams</b></td>
-		<td class="clsSyntaxCells clsEvenRow">Sets the RF mode and / or transmit power of a selected antenna</td>
+		<td class="clsSyntaxCells clsEvenRow">Sets the RF mode and / or transmit power of a selected antenna. <strong>Android sets only the Transmit Power parameter</strong>.</td>
 		<td class="clsSyntaxCells clsEvenRow" />
 	</tr>
 	<tr>
@@ -212,61 +212,61 @@ Items in this section indicate parameters or attributes that can be configured. 
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>enableTagAccessStatus:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">Enable/Disable the access status field in the tag reports. Contains valid values for Read/Write/Lock/Kill operations</td>
+		<td class="clsSyntaxCells clsOddRow">Used to enable and disable the access status field in the tag reports. Contains valid values for Read, Write, Lock and Kill operations.</td>
 		<td class="clsSyntaxCells clsOddRow">false</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>enableTagAntennaID:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsEvenRow">Enable/Disable the antenna ID field in the tag reports</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to enable and disable the antenna ID field in the tag reports.</td>
 		<td class="clsSyntaxCells clsEvenRow">false</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>enableTagCRC:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">Enable/Disable the CRC field in the tag reports</td>
+		<td class="clsSyntaxCells clsOddRow">Used to enable and disable the CRC field in the tag reports.</td>
 		<td class="clsSyntaxCells clsOddRow">false</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>enableTagXPC:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsEvenRow">Enable/Disable the XPC field in the tag reports</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to enable and disable the XPC field in the tag reports.</td>
 		<td class="clsSyntaxCells clsEvenRow">false</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>enableTagPC:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">Enable/Disable the PC field in the tag reports</td>
+		<td class="clsSyntaxCells clsOddRow">Used to enable and disable the PC field in the tag reports.</td>
 		<td class="clsSyntaxCells clsOddRow">false</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>enableTagRSSI:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsEvenRow">Enable/Disable the RSSI data field in tag reports</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to enable and disable the RSSI data field in tag reports.</td>
 		<td class="clsSyntaxCells clsEvenRow">false</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>enableTagSeenCount:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">Enable/Disable the SeenCount field in tag reports</td>
+		<td class="clsSyntaxCells clsOddRow">Used to enable and disable the SeenCount field in tag reports.</td>
 		<td class="clsSyntaxCells clsOddRow">false</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>enableTagUTCTimeStamp:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsEvenRow">Enable/Disable the UTCTimeStamp data field in tag reports</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to enable and disable the UTCTimeStamp data field in tag reports.</td>
 		<td class="clsSyntaxCells clsEvenRow">false</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>invMemBank:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">None, Reserved, EPC, TID, User</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify if any memory bank is to be read during an inventory</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify whether any memory bank is to be read during an inventory.</td>
 		<td class="clsSyntaxCells clsOddRow">None</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>lockField:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">killPassword, accessPassword, EPC, TID, User</td>
-		<td class="clsSyntaxCells clsEvenRow">sets the data field to be used for tagLock operation</td>
+		<td class="clsSyntaxCells clsEvenRow">Sets the data field to be used for tagLock operation.</td>
 		<td class="clsSyntaxCells clsEvenRow">None</td>
 	</tr>
 	<tr>
@@ -278,139 +278,139 @@ Items in this section indicate parameters or attributes that can be configured. 
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>matchPattern:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">A_AND_B, NOTA_AND_B, NOTA_AND_NOTB, A_AND_NOTB, A</td>
-		<td class="clsSyntaxCells clsEvenRow">Match criteria to be used for filtering using tag-patterns A and B.</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to match criteria used for filtering with tag-patterns A and B.</td>
 		<td class="clsSyntaxCells clsEvenRow">A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>newTagID:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">hex password</td>
-		<td class="clsSyntaxCells clsOddRow">sets a new tag ID to be assigned to the currently selected tag in the setTagID method</td>
+		<td class="clsSyntaxCells clsOddRow">Sets a new tag ID to be assigned to the currently selected tag in the setTagID method.</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagoffset:[Value]</b></td>
-		<td class="clsSyntaxCells clsOddRow">[POSSIBLE VALUES]</td>
-		<td class="clsSyntaxCells clsOddRow">Sets the word offset into the selected memory bank to use for the next access of the currently selected tag</td>
+		<td class="clsSyntaxCells clsOddRow">integer</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the word offset into the selected memory bank to use for the next access of the currently selected tag.</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>newAccessPassword:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">hex password</td>
-		<td class="clsSyntaxCells clsEvenRow">sets a new tag access password to be assigned to the currently selected tag in the setTagAccessPassword method</td>
+		<td class="clsSyntaxCells clsEvenRow">Sets a new tag access password to be assigned to the currently selected tag in the setTagAccessPassword method</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>newKillPassword:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">hex password</td>
-		<td class="clsSyntaxCells clsOddRow">sets a new tag kill password to be assigned to the currently selected tag in the setTagKillPassword method</td>
+		<td class="clsSyntaxCells clsOddRow">Sets a new tag kill password to be assigned to the currently selected tag in the setTagKillPassword method.</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>performStateAwareSingulation:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsEvenRow">If set to true, the tags will henceforth be singulated based on the configured inventory states/SL flags rather than the reader defaults. Besides, the subsequently added pre-filters should indicate the desired inventory state/SL flags of the matching / non-matching tags. If this property is set to false, the tags are singulated based on the Reader defaults.</td>
+		<td class="clsSyntaxCells clsEvenRow">If set to true, are singulated based on the configured inventory states/SL flags (rather than reader defaults). The subsequently added pre-filters should indicate the desired inventory state/SL flags of the matching / non-matching tags. If this property is set to false, tags are singulated based on reader defaults.</td>
 		<td class="clsSyntaxCells clsEvenRow">false</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>preFilterStateAwareAction:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">INV_A_NOT_INV_B, ASRT_SL_NOT_DSRT_SL, INV_A,ASRT_SL, NOT_INV_B, NOT_DSRT_SL, INV_A2BB2A_NOT_INV_A, NEG_SL_NOT_ASRT_SL, INV_B_NOT_INV_A, DSRT_SL_NOT_ASRT_SL, INV_B, DSRT_SL, NOT_INV_A, NOT_ASRT_SL, NOT_INV_A2BB2A, NOT_NEG_SL</td>
-		<td class="clsSyntaxCells clsOddRow">Sets the State-aware Action(s) for the current pre-filter's matching and / or non-matching tags.  This property is considered only when performStateAwareSingulation is true. All actions indicating asserting/de-asserting SL flags are valid only when preFilterTarget is SL. All actions indicating changes to the inventoried states(i.e A/B) are valid only when preFilterTarget is INV_S0/INV_S1/INV_S2/INV_S3</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the State-aware Action(s) for the current pre-filter's matching and/or non-matching tags. This property is considered only when performStateAwareSingulation is true. All actions indicating asserting/de-asserting SL flags are valid only when preFilterTarget is SL. All actions indicating changes to the inventoried states(i.e A/B) are valid only when preFilterTarget is INV_S0/INV_S1/INV_S2/INV_S3.</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>preFilterTarget:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">SL, INV_S0, INV_S1, INV_S2, INV_S3</td>
-		<td class="clsSyntaxCells clsEvenRow">Indicates which flag(i.e SL/INV_S0/INV_S1/INV_S2/INV_S3) shall be affected when the current state-Aware pre-filter is applied. This property will be considered only when performStateAwareSingulation is true.</td>
+		<td class="clsSyntaxCells clsEvenRow">Indicates which flag (i.e SL/INV_S0/INV_S1/INV_S2/INV_S3) is affected when the current state-aware pre-filter is applied. This property is considered only when performStateAwareSingulation is true.</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>preFilterStateUnawareAction:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">SELECT_NOT_UNSELECT, SELECT, NOT_UNSELECT, UNSELECT, UNSELECT_NOT_SELECT, NOT_SELECT</td>
-		<td class="clsSyntaxCells clsOddRow">Sets the State-unaware Action for the current pre-filter's matching and / or non-matching tags.  This property is considered only when performStateAwareSingulation is false. This determines whether to select and / or unselect matching tags / non-matching tags when the current pre-filter is applied.</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the state-unaware Action for the current pre-filter's matching and/or non-matching tags. This property is considered only when performStateAwareSingulation is false. This determines whether to select and/or deselect matching tags/non-matching tags when the current pre-filter is applied.</td>
 		<td class="clsSyntaxCells clsOddRow">SELECT_NOT_UNSELECT</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>preFilterBitCount:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Number of applicable bits in the filterHexPattern</td>
-		<td class="clsSyntaxCells clsEvenRow">Used to specify the number of bits within the preFilterHexPattern to match in a subsequent call to addFilter()</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify the number of bits within the preFilterHexPattern to match in a subsequent call to addFilter().</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>preFilterBitOffset:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">Offset from the start of the memory bank in bits</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify the offset into the memory bank (position) applicable to a subsequent call to addFilter()</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the offset into the memory bank (position) applicable to a subsequent call to addFilter().</td>
 		<td class="clsSyntaxCells clsOddRow">32</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>preFilterHexPattern:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Hex Pattern</td>
-		<td class="clsSyntaxCells clsEvenRow">Used to specify a hex pattern to apply in a subsequent call to addFilter()</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify a hex pattern to apply in a subsequent call to addFilter().</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>preFilterID:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">unsigned integer</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify the ID of the filter to apply in a subsequent call to addFilter()`or deleteFilter()</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the ID of the filter to apply in a subsequent call to addFilter() or deleteFilter().</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>preFilterMemBank:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Reserved, EPC, TID, User</td>
-		<td class="clsSyntaxCells clsEvenRow">Used to specify the memory bank to apply in a subsequent call to addFilter()</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify the memory bank to apply in a subsequent call to addFilter().</td>
 		<td class="clsSyntaxCells clsEvenRow">EPC</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>startPeriod:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">milliseconds</td>
-		<td class="clsSyntaxCells clsOddRow">Sets the repeat period for a subsequent inventory</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the repeat period for a subsequent inventory.</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>reportTrigger:[Value]</b></td>
-		<td class="clsSyntaxCells clsEvenRow">0-N</td>
-		<td class="clsSyntaxCells clsEvenRow">This property controls the reporting of tags from the plug-in. Setting this property to N indicate to the plug-in that it should report tags on seeing N tags. 0 indicates to report tags only at the end of inventory.</td>
+		<td class="clsSyntaxCells clsEvenRow">0-N (integer)</td>
+		<td class="clsSyntaxCells clsEvenRow">Controls the reporting of tags from the plug-in. Setting this property to 'N' causes the plug-in to report tags after seeing 'N' (number of) tags. A setting of '0' causes tags to be reported only at the end of inventory.</td>
 		<td class="clsSyntaxCells clsEvenRow">1</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>reportUniqueTags:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify to report only unique tags</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify to report only unique tags.</td>
 		<td class="clsSyntaxCells clsOddRow">true</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>readerID:[Value]</b></td>
-		<td class="clsSyntaxCells clsOddRow">Based on reader ID returned by enumRFIDevent callback</td>
+		<td class="clsSyntaxCells clsOddRow">Based on reader ID returned by enumRFIDevent callback.</td>
 		<td class="clsSyntaxCells clsOddRow">Sets the ID of the reader to be called before rfid.connect. If value is not set, default value is used.</td>
-		<td class="clsSyntaxCells clsOddRow">RFID1</td>
+		<td class="clsSyntaxCells clsOddRow">'RFID1'</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>DPOState:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
 		<td class="clsSyntaxCells clsOddRow">Used to enable/disable device power optimization. <strong>Supported only on RFD8500 Bluetooth reader</strong>.</td>
-		<td class="clsSyntaxCells clsOddRow">NEED DEFAULT</td>
+		<td class="clsSyntaxCells clsOddRow"></td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>transport:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Bluetooth, serial</td>
-		<td class="clsSyntaxCells clsEvenRow">Used to select the physical or wireless medium over which acquired data will travel. Takes default value if not set before calling the rfid.enumerate method.</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to select (by calling the rfid.enumerate method) the physical or wireless medium over which acquired data will travel. If not set, takes default value.</td>
 		<td class="clsSyntaxCells clsEvenRow">serial</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>RFMode:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">One of the supported RF Modes listed in the capabilities (see enumRFIDEvent)</td>
-		<td class="clsSyntaxCells clsEvenRow">Sets the RFMode of the currently selected antenna(e)</td>
+		<td class="clsSyntaxCells clsEvenRow">Sets the RFMode of the currently selected antenna(e).</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>singulationSession:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">0-3</td>
-		<td class="clsSyntaxCells clsOddRow">Sets the singulation session parameter</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the singulation session parameter.</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>singulationTagPopulation:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">unsigned short integer</td>
-		<td class="clsSyntaxCells clsEvenRow">Sets the singulation tag population parameter</td>
+		<td class="clsSyntaxCells clsEvenRow">Sets the singulation tag population parameter.</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
@@ -428,31 +428,31 @@ Items in this section indicate parameters or attributes that can be configured. 
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>startTriggerType:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">immediate, triggerPress, triggerRelease, periodicStart</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify the start triggers allowed for performInventory and tagLocate methods</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the start triggers allowed for performInventory and tagLocate methods.</td>
 		<td class="clsSyntaxCells clsOddRow">immediate</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>stopDuration:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">milliseconds</td>
-		<td class="clsSyntaxCells clsEvenRow">Sets the duration of a inventory or locateTag</td>
+		<td class="clsSyntaxCells clsEvenRow">Sets the duration of a inventory or locateTag.</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>stopObservationCount:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">unsigned integer</td>
-		<td class="clsSyntaxCells clsOddRow">Stops the inventory or locateTag after "n" tags are found</td>
+		<td class="clsSyntaxCells clsOddRow">Stops the inventory or locateTag after "n" tags are found.</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>stopTriggerType:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">triggerPress, triggerRelease, duration, tagObservation</td>
-		<td class="clsSyntaxCells clsEvenRow">Used to specify the stop-triggers allowed for performInventory and tagLocate methods</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify the stop-triggers allowed for performInventory and tagLocate methods.</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagByteOffset:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">unsigned integer</td>
-		<td class="clsSyntaxCells clsOddRow">Sets the offset into the selected memory bank to use for the next access of the currently selected tag</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the offset into the selected memory bank to use for the next access of the currently selected tag.</td>
 		<td class="clsSyntaxCells clsOddRow">0</td>
 	</tr>
 	<tr>
@@ -464,97 +464,97 @@ Items in this section indicate parameters or attributes that can be configured. 
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagKillPassword:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">hex kill password</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify a password to use when calling the killTag method</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify a password to use when calling the killTag method.</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagMemBank:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Reserved, EPC, TID, User</td>
-		<td class="clsSyntaxCells clsEvenRow">Used to set the memory bank from which to access the currently selected tag</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to set the memory bank from which to access the currently selected tag.</td>
 		<td class="clsSyntaxCells clsEvenRow">EPC</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagPassword:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">hex password</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify the access password to use when accessing the currently selected tag</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the access password to use when accessing the currently selected tag.</td>
 		<td class="clsSyntaxCells clsOddRow">00000000</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagPatternAByteOffset:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Offset (in bytes) from the start of the memory bank</td>
-		<td class="clsSyntaxCells clsEvenRow">used to specify the offset into the memory bank (position)</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify the offset into the memory bank (position).</td>
 		<td class="clsSyntaxCells clsEvenRow">4</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagPatternAHexMask:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">Hex Mask</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify the mask for above pattern</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the mask for above pattern<./td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagPatternAHexPattern:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Hex Pattern</td>
-		<td class="clsSyntaxCells clsEvenRow">Used to specify a hex pattern to be used for comparing memory bank data</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify a hex pattern to be used for comparing memory bank data.</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagPatternAMemBank:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">Reserved, EPC, TID, User</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify the memory bank for the tag pattern A</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the memory bank for the tag pattern A.</td>
 		<td class="clsSyntaxCells clsOddRow">EPC</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagPatternBByteOffset:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Offset from the start of the memory bank in bytes</td>
-		<td class="clsSyntaxCells clsEvenRow">Used to specify the offset into the memory bank (position)</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify the offset into the memory bank (position).</td>
 		<td class="clsSyntaxCells clsEvenRow">4</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagPatternBHexMask:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">Hex Mask</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify the mask for above pattern</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the mask for above pattern.</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagPatternBHexPattern:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Hex Pattern</td>
-		<td class="clsSyntaxCells clsEvenRow">Used to specify a hex pattern to be used for comparing memory bank data</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify a hex pattern to be used for comparing memory bank data.</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagPatternBMemBank:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">Reserved, EPC, TID, User</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify the memory bank for the tag pattern B</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify the memory bank for the tag pattern B.</td>
 		<td class="clsSyntaxCells clsOddRow">EPC</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagReadSize:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">0 (all) - N bytes</td>
-		<td class="clsSyntaxCells clsEvenRow">sets the number of bytes to read in the tagRead method.</td>
+		<td class="clsSyntaxCells clsEvenRow">Sets the number of bytes to read in the tagRead method.</td>
 		<td class="clsSyntaxCells clsEvenRow">0 (all)</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagWriteData:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">hex data</td>
-		<td class="clsSyntaxCells clsOddRow">sets the data to write in the tagWrite method</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the data to write in the tagWrite method.</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>useSoftTrigger:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">On devices running Android, enables programmatic start/stop of a scan, the equivalent of a hardware trigger or button</td>
+		<td class="clsSyntaxCells clsOddRow">On devices running Android, enables programmatic start/stop of a scan, the equivalent of a hardware trigger or button.</td>
 		<td class="clsSyntaxCells clsOddRow">false</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>transmitPower:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">power in dbm derived from min, max and step values provided in the enumRFIDevent</td>
-		<td class="clsSyntaxCells clsEvenRow">Used to specify the transmit power to be used in a subsequent call to setTransmitPower</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to specify the transmit power to be used in a subsequent call to setTransmitPower.</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>useAccessFilter:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify whether to use the access filter in tag access operations</td>
+		<td class="clsSyntaxCells clsOddRow">Used to specify whether to use the access filter in tag access operations.</td>
 		<td class="clsSyntaxCells clsOddRow">false</td>
 	</tr>
 </table>
@@ -565,7 +565,7 @@ Values are returned to the caller in RhoElements via Events.  Most modules conta
 ### enumRFIDEvent
 Enumerates the RFID readers present on the device (normally limited to one) along with their respective capabilities. **On Android devices, return values are labeled "ID, Name and Address**." 
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
-	<tr>
+	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Description ("Address" on Android)</th>
@@ -640,7 +640,7 @@ Enumerates the RFID readers present on the device (normally limited to one) alon
 ### rfParamsEvent
 Returns RF Parameter values - Transmit Power and RF Mode of a selected antenna
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
-	<tr>
+	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th>
@@ -660,7 +660,7 @@ Returns RF Parameter values - Transmit Power and RF Mode of a selected antenna
 ### rfModeInfoEvent
 Returns the RF Characteristics for a particular RF Mode
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
-	<tr>
+	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th>
@@ -725,7 +725,7 @@ Returns the RF Characteristics for a particular RF Mode
 ### tagEvent
 Returns received RFID tag data from N tags, where N = reportTrigger. Typically methods like performInventory, tagLocate, readTag/writeTag/lockTag/killTag (performed on one or more tags) generate tagEvents with necessary data.
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
-	<tr>
+	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th>
@@ -740,7 +740,7 @@ Returns received RFID tag data from N tags, where N = reportTrigger. Typically m
 ### radioPowerStateEvent
 Returns 1 if the radio is ON and 0 if the radio is off
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
-	<tr>
+	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th>
@@ -755,7 +755,7 @@ Returns 1 if the radio is ON and 0 if the radio is off
 ### statusEvent
 Returns any error conditions where required
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
-	<tr>
+	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th>
@@ -788,7 +788,7 @@ Returns any error conditions where required
 Returns singulation values.
 
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
-	<tr>
+	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th></tr>
@@ -822,7 +822,7 @@ Returns singulation values.
 ### operationCompleteEvent
 Indicates the currently running operation (Inventory/Access/Locationing) is complete and there are no more tags to report.
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
-	<tr>
+	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th>
@@ -832,7 +832,7 @@ Indicates the currently running operation (Inventory/Access/Locationing) is comp
 ### lastAccessResultEvent
 Returns results of the last Access operation
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
-	<tr>
+	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th>

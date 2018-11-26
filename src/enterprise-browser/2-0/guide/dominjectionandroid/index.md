@@ -6,20 +6,24 @@ layout: guide.html
 ---
 ## Overview
 
-Apps made with Enterprise Browser 1.3 and higher are able to perform DOM Injection, the ability insert CSS, JavaScript and/or meta tags into the DOM without modifying the underlying application. This permits features, capabilities and even the look of one or more server-based Enterprise Browser app pages to be modified at runtime using DOM elements stored in a text file on the device. 
+Apps made with Enterprise Browser 1.3 and higher are able to perform DOM injection, the ability insert CSS, JavaScript and/or meta tags into the DOM without modifying the underlying application. This permits features, capabilities and even the look of one or more server-based Enterprise Browser app pages to be modified at runtime using DOM elements referenced from in a text file stored on the device. 
 
-**EB 2.0 (and higher) supports EB [substitution variables](../configreference/#substitutionvariables) (Android only) and [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. 
+DOM injection is enabled by default in EB 1.3 and higher apps, and is **activated by the &lt;CustomDOMElements&gt; tag in the &lt;Application&gt; section** of the app's `Config.xml` file. This tag must contain a fully qualified path to the device-resident "tags" file, which is required for DOM injection. This file defines the DOM element(s) to be injected and the names of the pages to receive injections whenever they're displayed. **Injected CSS and JavaScript can be local, server-based or in combination**. Meta tags must be specified and fully contained within the tags file. No special licensing is required. 
 
-DOM injection is enabled by default in EB 1.3 and higher apps, and is **activated by the &lt;CustomDOMElements&gt; tag in the &lt;Application&gt; section** of the app's `Config.xml` file. This tag will contain a fully qualified path to the device-resident "tags" file that must be created. It contains the DOM element(s) to be injected and the names of the pages to receive injections whenever they're displayed. **Injected CSS and JavaScript can be local, server-based or in combination**. Meta tags must be specified and fully contained within the tags file.    
-
-* **DOM injection device support**: 
+* **DOM injection is supported by**: 
 	* **Android with stock webkit**
 	* **Windows Mobile/CE with Zebra Webkit**
 	* **Windows CE with IE engine**
 
 **_DOM injection is NOT supported on Windows Mobile devices using the IE engine_**. 
 
-No special licensing is required. 
+### Substitution
+
+Android apps made with **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** such as those for the device's "primary directory" (%PRIMARYDIR%) and an app's "install directory" (%INSTALLDIR%) in place of fully qualified path names. This can help make coding easier and less error prone while simplifying enterprise deployment across varied devices. 
+
+**EB 2.0 and higher also supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 
+
+-----
 
 ## What is "the DOM"?
 In the context of modern web programming, **the "DOM" refers to HTML5 as it appears when running**. While the code of an HTML5 app might define certain variables, those variables contain no values until the app is executed. Therefore, it's accurate to think of the DOM as an HTML5 app that's in use, and of DOM injection as changes made to a running app that take effect immediately. 
@@ -45,7 +49,7 @@ To use DOM injection, **ALL of the following must be true**:
 
 In the sample `mytags.txt` file referenced below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in the JavaScript comments, and in further detail below. 
 
-> **Zebra recommends substitution variables over absolute paths whenever possible**.
+> **Zebra recommends using substitution variables over absolute paths whenever possible**.
 
 	:::xml
 	<!--Sample tags file -->

@@ -126,12 +126,12 @@ Items listed in this section indicate methods or parameters available for retrie
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagRead</b></td>
-		<td class="clsSyntaxCells clsEvenRow">Reads from a tag or a set of tags (defined by Access filter) using the pre-configured read Parameters. The tag data is returned via a tagEvent. The read data is available in tagData.memoryBankData field of the JSON object passed to tagEvent handler. The tagID property is ignored if useAccessFilter property is set to true. If useAccessFilter is set to true, tagPatternA, tagPatternB and matchPattern are used to filter out tags to perform the operation. If the tagID is empty and useAccessFilter is false, the read operation is performed on all tags in field of view.</td>
+		<td class="clsSyntaxCells clsEvenRow">Reads from a tag or a set of tags (defined by Access filter) using the pre-configured read Parameters. The tag data is returned via a tagEvent. The read data is available in tagData.memoryBankData field of the JSON object passed to tagEvent handler. The tagID property is ignored if useAccessFilter property is set to true. If useAccessFilter is set to true, tagPatternA, tagPatternB and matchPattern are used to filter out tags to perform the operation. If the tagID is empty and useAccessFilter is false, the read operation is performed on all tags in field of view. <strong>The useAccessFilter property is not supported on Android</strong>.</td>
 		<td class="clsSyntaxCells clsEvenRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagWrite</b></td>
-		<td class="clsSyntaxCells clsOddRow">Writes data to a tag or a set of tags (defined by Access filter) using the pre-configured Write parameters. The tagID property is ignored if useAccessFilter property is set to true, and tagPatternA, tagPatternB and matchPattern are used to filter out tags to perform the operation. If the tagID is empty and useAccessFilter is false, the write operation is attempted on all the tags in field of view.</td>
+		<td class="clsSyntaxCells clsOddRow">Writes data to a tag or a set of tags (defined by Access filter) using the pre-configured Write parameters. The tagID property is ignored if useAccessFilter property is set to true, and tagPatternA, tagPatternB and matchPattern are used to filter out tags to perform the operation. If the tagID is empty and useAccessFilter is false, the write operation is attempted on all the tags in field of view. <strong>The useAccessFilter property is not supported on Android</strong>.</td>
 		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
 	<tr>
@@ -291,7 +291,7 @@ Items in this section indicate parameters or attributes that can be configured. 
 		<td class="clsSyntaxCells clsOddRow"><b>tagoffset:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">integer</td>
 		<td class="clsSyntaxCells clsOddRow">Sets the word offset into the selected memory bank to use for the next access of the currently selected tag.</td>
-		<td class="clsSyntaxCells clsOddRow">N/A</td>
+		<td class="clsSyntaxCells clsOddRow">0</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>newAccessPassword:[Value]</b></td>
@@ -380,19 +380,19 @@ Items in this section indicate parameters or attributes that can be configured. 
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>readerID:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">Based on reader ID returned by enumRFIDevent callback.</td>
-		<td class="clsSyntaxCells clsOddRow">Sets the ID of the reader to be called before rfid.connect. If value is not set, default value is used.</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the ID of the reader to be called before rfid.connect. If value is not set, default value is used. <strong>Supported on Android devices only</strong>.</td>
 		<td class="clsSyntaxCells clsOddRow">'RFID1'</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>DPOState:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">Used to enable/disable device power optimization. <strong>Supported only on RFD8500 Bluetooth reader</strong>.</td>
+		<td class="clsSyntaxCells clsOddRow">Used to enable/disable device power optimization. <strong>Supported only on Android devices with RFD8500 Bluetooth reader</strong>.</td>
 		<td class="clsSyntaxCells clsOddRow"></td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>transport:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Bluetooth, serial</td>
-		<td class="clsSyntaxCells clsEvenRow">Used to select (by calling the rfid.enumerate method) the physical or wireless medium over which acquired data will travel. If not set, takes default value.</td>
+		<td class="clsSyntaxCells clsEvenRow">Used to select (by calling the rfid.enumerate method) the physical or wireless medium over which acquired data will travel. If not set, takes default value. <strong>Supported only on Android devices</strong>.</td>
 		<td class="clsSyntaxCells clsEvenRow">serial</td>
 	</tr>
 	<tr>
@@ -445,7 +445,7 @@ Items in this section indicate parameters or attributes that can be configured. 
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>stopTriggerType:[Value]</b></td>
-		<td class="clsSyntaxCells clsEvenRow">triggerPress, triggerRelease, duration, tagObservation</td>
+		<td class="clsSyntaxCells clsEvenRow">triggerPress, triggerRelease, duration, tagObservation. <strong>Android devices also support the "immediate" stop trigger</strong>.</td>
 		<td class="clsSyntaxCells clsEvenRow">Used to specify the stop-triggers allowed for performInventory and tagLocate methods.</td>
 		<td class="clsSyntaxCells clsEvenRow">N/A</td>
 	</tr>
@@ -530,19 +530,19 @@ Items in this section indicate parameters or attributes that can be configured. 
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagReadSize:[Value]</b></td>
 		<td class="clsSyntaxCells clsEvenRow">0 (all) - N bytes</td>
-		<td class="clsSyntaxCells clsEvenRow">Sets the number of bytes to read in the tagRead method.</td>
+		<td class="clsSyntaxCells clsEvenRow">Sets the number of bytes to read in the tagRead method. <strong> On Android, sets the number of words to read in the tagRead method</strong>.</td>
 		<td class="clsSyntaxCells clsEvenRow">0 (all)</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagWriteData:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">hex data</td>
-		<td class="clsSyntaxCells clsOddRow">Sets the data to write in the tagWrite method.</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the data to write in the tagWrite method. <strong>On Android, the length of data should be multiple words (2 bytes)</strong>.</td>
 		<td class="clsSyntaxCells clsOddRow">N/A</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>useSoftTrigger:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">On devices running Android, enables programmatic start/stop of a scan, the equivalent of a hardware trigger or button.</td>
+		<td class="clsSyntaxCells clsOddRow">Enables programmatic start/stop of a scan, the equivalent of a hardware trigger or button. <strong>Supported only on devices running Android</strong>.</td>
 		<td class="clsSyntaxCells clsOddRow">false</td>
 	</tr>
 	<tr>
@@ -563,7 +563,8 @@ Items in this section indicate parameters or attributes that can be configured. 
 Values are returned to the caller in RhoElements via Events.  Most modules contain events and those returned from this module are given below along with the event parameters.  Events can cause a navigation to a new URL or a JavaScript function on the page to be invoked.  Each event will in most cases have a number of parameters associated with it which will either be strings or JavaScript arrays.  Event parameters can be accessed either directly or via JSON objects.
 
 ### enumRFIDEvent
-Enumerates the RFID readers present on the device (normally limited to one) along with their respective capabilities. **On Android devices, return values are labeled "ID, Name and Address**." 
+Enumerates the RFID readers present on the device (normally limited to one) along with their respective capabilities. **On Android devices, return values are labeled "ID, Name and Address." Android returns only ReaderID, ReaderName and ReaderAddress properties**. 
+
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>
@@ -638,7 +639,9 @@ Enumerates the RFID readers present on the device (normally limited to one) alon
 </table>
 
 ### rfParamsEvent
-Returns RF Parameter values - Transmit Power and RF Mode of a selected antenna
+
+Returns RF Parameter values Transmit Power and RF Mode of a selected antenna. **Android returns only the Transmit Power property**. 
+
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>
@@ -773,9 +776,9 @@ Returns any error conditions where required
 2001 - Plug-in Busy<br/>
 2002 - Failed to create a plug-in thread<br/>
 2003 - Plug-in cannot process properties or methods unless connected<br/>
-2004 - InvalidUsageException<br/>
-2005 - OperationFailureException<br/>
-1000 - Any status event like handheld trigger event, reader disconnection event<br/></td>
+2004 - InvalidUsageException (<strong>Android only</strong>)<br/>
+2005 - OperationFailureException (<strong>Android only</strong>)<br/>
+1000 - Any status event (i.e.) handheld trigger event, reader disconnection event, etc.) (<strong>Android only</strong>)<br/></td>
 </tr>
 <tr>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">3</td>
@@ -821,6 +824,9 @@ Returns singulation values.
 
 ### operationCompleteEvent
 Indicates the currently running operation (Inventory/Access/Locationing) is complete and there are no more tags to report.
+
+<!-- 11/26/18- table contains no data; removed. -EC
+
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>
@@ -828,9 +834,12 @@ Indicates the currently running operation (Inventory/Access/Locationing) is comp
 		<th class="tableHeading">Description</th>
 	</tr>
 </table>
+-->
 
 ### lastAccessResultEvent
-Returns results of the last Access operation
+
+Returns results of the last Access operation.
+
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr bgcolor="#dce8ef">
 		<th class="tableHeading">ID</th>

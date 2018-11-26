@@ -374,14 +374,14 @@ Items in this section indicate parameters or attributes that can be configured. 
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>reportUniqueTags:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">true, false, 1, 0</td>
-		<td class="clsSyntaxCells clsOddRow">Used to specify to report only unique tags.</td>
+		<td class="clsSyntaxCells clsOddRow">Used to report only unique tags.</td>
 		<td class="clsSyntaxCells clsOddRow">true</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>readerID:[Value]</b></td>
 		<td class="clsSyntaxCells clsOddRow">Based on reader ID returned by enumRFIDevent callback.</td>
 		<td class="clsSyntaxCells clsOddRow">Sets the ID of the reader to be called before rfid.connect. If value is not set, default value is used. <strong>Supported on Android devices only</strong>.</td>
-		<td class="clsSyntaxCells clsOddRow">'RFID1'</td>
+		<td class="clsSyntaxCells clsOddRow">RFID1</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>DPOState:[Value]</b></td>
@@ -736,7 +736,7 @@ Returns received RFID tag data from N tags, where N = reportTrigger. Typically m
 	<tr>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>TagData (tagID, PC, tagSeenCount, memoryBankData, XPC, CRC, antennaID, RSSI, accessStatus, relativeDistance, firstSeenTimeStamp)</b></td>
-		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">Tag data array with various parameter of read tag TagData[1..N]</td>
+		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">Tag data array with various parameter of read tag TagData[1..N].</td>
 	</tr>
 </table>
 
@@ -798,12 +798,12 @@ Returns singulation values.
 	<tr>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>singulationSession</b></td>
-		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">Indicates the session in which the antenna singulates</td>
+		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">Indicates the session in which the antenna singulates.</td>
 	</tr>
 		<tr>
 		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;">2</td>
 		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>singulationTagPopulation</b></td>
-		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;">Indicates the tag-population that the reader considers is in an antenna's field of view</td>
+		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;">Indicates the tag-population that the reader considers is in an antenna's field of view.</td>
 	</tr>
 		<tr>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">3</td>
@@ -813,12 +813,12 @@ Returns singulation values.
 		<tr>
 		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;">4</td>
 		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>singulationSLFlag</b></td>
-		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;">Indicates which SL bit(asserted or deasserted) will be matched during singulation</td>
+		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;">Indicates which SL bit(asserted or deasserted) will be matched during singulation.</td>
 	</tr>
 		<tr>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">5</td>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>singulationInventoryState</b></td>
-		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">Indicates which inventory state [A or B] will be matched during the singulation</td>
+		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">Indicates which inventory state [A or B] will be matched during the singulation.</td>
 	</tr>
 </table>
 
@@ -931,8 +931,12 @@ Access-filter can take up to tag-patterns. By default, match pattern used is Pat
 	</tr>
 </table>
 
-## HTML/JavaScript Examples
-This example starts an inventory using HTTP Meta Tags and tags are sent to a JavaScript function "TagHandler".
+## Examples
+
+The HTML/JavaScript code samples below demonstrate how to implement some of this API's basic features.  
+
+### Start Inventory
+This example starts an inventory using HTTP meta tags sent to a JavaScript "TagHandler" function. 
 
 	:::html
 	<META HTTP-Equiv="rfid" content="statusEvent:url('javascript:statusHandler(%json)')">
@@ -944,9 +948,11 @@ This example starts an inventory using HTTP Meta Tags and tags are sent to a Jav
 		   objGeneric.Log("TagID read:"+tagReportJSON.TagData[0].tagID,3);
 		}
 	</script>
+<br>
 
+### Continuous Inventory
 
-This example runs inventory as long as trigger button is pressed. By default, the plug-in reports unique tags to tagEvent callback in JSON format and beeps for every unique tag encountered. By default, only one tagID is reported per the JSON tagReport. Besides, this JSON contains only the field tagID.
+This example runs inventory as long as trigger button is pressed. By default, the plug-in reports unique tags to tje tagEvent callback in JSON format and beeps for every unique tag encountered. By default, only one tagID is reported per the JSON tagReport. This JSON contains only the tagID field.
 
 	:::html
 	<script>
@@ -974,8 +980,10 @@ This example runs inventory as long as trigger button is pressed. By default, th
 		  objGeneric.Log("Status:"+statusJSON.method+'  '+statusJSON.errorCode,1);
 		}
 	</script>
+<br>
 
-This example performs inventory with start and stop triggers configured. Here all the tag-reads are reported to tagEvent callback with 5 reports per callback. Besides, the tagSeenCount and the UTCTtimestamp at which tag was first seen is also reported. Note:It will still beep for only unique tags read.
+### Inventory Start/Stop
+This example performs inventory with start and stop triggers configured. Here all the tag-reads are reported to tagEvent callback with five reports per callback. The tagSeenCount and the UTCTtimestamp at which tag was first seen also are reported. **Note**: This code beeps only when reading unique tags.
 
 	:::html
 	<script>
@@ -1007,8 +1015,11 @@ This example performs inventory with start and stop triggers configured. Here al
 		   objGeneric.Log("Status:"+statusJSON.method+'  '+statusJSON.errorCode,1);
 		}
 	</script>
+<br>
 
-This example performs inventory and reads the Reserved memory Bank of all tags inventoried. The tags are selected to match a particular pre-filter pattern (EPC starts with "9742") The tagEvent handler extracts both tagID and memoryBankData fields. Inventory is stopped after 10 tag-reads are observed
+### Read Reserved Memory
+
+This example performs inventory and reads the reserved memory bank of all tags inventoried. The tags are selected to match a particular pre-filter pattern (EPC starts with "9742"). The tagEvent handler extracts both tagID and memoryBankData fields. Inventory is stopped after 10 tag-reads are observed. 
 
 	:::html
 	<script>
@@ -1038,8 +1049,11 @@ This example performs inventory and reads the Reserved memory Bank of all tags i
 		   objGeneric.Log("Status:"+statusJSON.method+'  '+statusJSON.errorCode,1);
 		}
 	</script>
+<br>
 
-This example gets the capabilities of the local RFID Module and configures the antenna's RF and Singulation parameters. The application should register JavaScript callbacks for the enumRFIDEvent and rfParamsEvent events.
+### Get/Set Parameters
+
+This example gets the capabilities of the local RFID module and configures the antenna's RF and Singulation parameters. The application should register JavaScript callbacks for the enumRFIDEvent and rfParamsEvent events.
 
 	:::html
 	<script>
@@ -1101,6 +1115,9 @@ This example gets the capabilities of the local RFID Module and configures the a
 		  objGeneric.Log("Status:"+statusJSON.method+'  '+statusJSON.errorCode,1);
 		}
 	</script>
+<br>
+
+### Tag Locationing
 
 This example performs TagLocationing operation and reports the real-time relative distance information of the tag being located.
 
@@ -1131,6 +1148,8 @@ This example performs TagLocationing operation and reports the real-time relativ
 		}
 	</script>
 
+### Read tagID
+
 This example performs Read operation on a particular tagID.
 
 	:::html
@@ -1155,8 +1174,11 @@ This example performs Read operation on a particular tagID.
 		   objGeneric.Log("Status:"+statusJSON.method+'  '+statusJSON.errorCode,1);
 		}
 	</script>
+<br>
 
-This example performs Read operation on all tags that match a particular tagPattern(access-filter). Reads User memory bank of all tags whose EPC start with "9742".
+### Read tagPattern
+
+This example performs Read operation on all tags that match a particular tagPattern (access-filter). Reads User memory bank of all tags whose EPC start with "9742".
 
 	:::html
 	<script>
@@ -1193,6 +1215,9 @@ This example performs Read operation on all tags that match a particular tagPatt
 		  objGeneric.Log("Status:"+statusJSON.method+'  '+statusJSON.errorCode,1);
 		}
 	</script>
+<br>
+
+### State-aware Pre-filters
 
 This example shows the usage of State aware pre-filters and operationCompleteEvent. This function tries to search for a tag whose EPC starts with "56780000"
 
@@ -1248,6 +1273,9 @@ This example shows the usage of State aware pre-filters and operationCompleteEve
 		  objGeneric.Log("Status:"+statusJSON.method+'  '+statusJSON.errorCode,1);
 		}
 	</script>
+<br>
+
+### Use getLastAccessResult
 
 This example shows the usage of getLastAccessResult method. At the completion of a multiple tag Write operation, the latter method is called to find out how many tags the operation succeeded and failed.
 

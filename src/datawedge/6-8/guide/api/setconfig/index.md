@@ -997,7 +997,7 @@ Command and configuration intent parameters determine whether to send result cod
 <p class="c1"> <span class="c9"><u><strong>Param values</strong></u></span></p>
 </td>
 </tr>
-<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">auto_switch_to_default_on_connect</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">0 - Disabled</span></p><p class="c1"><span class="c0">1 - On connect</span></p><p class="c1"><span class="c0">2 - On disconnect</span></p><p class="c1"><span class="c0">3 - On connect/disconnect<p class="c1"><p class="c1"><span class="c0"><a href="../../input/barcode/#autoswitchtodefaultonevent">More info</a></span></p></td>
+<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">auto_switch_to_default_on_event</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">0 - Disabled</span></p><p class="c1"><span class="c0">1 - On connect</span></p><p class="c1"><span class="c0">2 - On disconnect</span></p><p class="c1"><span class="c0">3 - On connect/disconnect<p class="c1"><p class="c1"><span class="c0"><a href="../../input/barcode/#autoswitchtodefaultonevent">More info</a></span></p></td>
 </tr>
 <tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">digimarc_decoding</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p>
 </td>

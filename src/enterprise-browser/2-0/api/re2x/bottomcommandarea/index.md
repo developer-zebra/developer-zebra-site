@@ -11,7 +11,7 @@ The BottomCommandArea Module is used to set the parameters of the Bottom Command
 
 ## Syntax
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">bottomCommandArea (Module) &lt;META&gt; Syntax</th>
 	</tr>
@@ -21,7 +21,7 @@ The BottomCommandArea Module is used to set the parameters of the Bottom Command
 	</tr>
 </table>
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">BottomCommandArea JavaScript Object Syntax:</th>
 	</tr>
@@ -50,7 +50,7 @@ The BottomCommandArea Module is used to set the parameters of the Bottom Command
 ## Parameters
 Items listed in this section indicate parameters, or attributes which can be set.
 
-<table class="re-table"><col width="20%"/><col width="20%"/><col width="38%"/><col width="22%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%"/><col width="20%"/><col width="38%"/><col width="22%"/>
 	<tr>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Possible Values</th>
@@ -95,7 +95,7 @@ When the screen orientation changes, either using the ScreenOrientation tag or b
 
 ## Requirements
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">RhoElements Version</th>
 		<td class="clsSyntaxCell clsEvenRow">1.0.0 or above</td>

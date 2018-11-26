@@ -11,7 +11,7 @@ The AudioCapture Module captures audio files from the default microphone device.
 
 ## Syntax
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">audioCapture (Module) &lt;META&gt; Syntax</th>
 	</tr>
@@ -23,7 +23,7 @@ The AudioCapture Module captures audio files from the default microphone device.
 	</tr>
 </table>
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">AudioCapture JavaScript Object Syntax:</th>
 	</tr>
@@ -71,7 +71,7 @@ The AudioCapture Module captures audio files from the default microphone device.
 ## Methods
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%"/><col width="68%"/><col width="22%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%"/><col width="68%"/><col width="22%"/>
 	<tr>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th>
@@ -97,7 +97,7 @@ Items listed in this section indicate methods or, in some cases, indicate parame
 ## Parameters
 Items listed in this section indicate parameters, or attributes which can be set.
 
-<table class="re-table"><col width="20%"/><col width="20%"/><col width="38%"/><col width="22%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%"/><col width="20%"/><col width="38%"/><col width="22%"/>
 	<tr>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Possible Values</th>
@@ -151,7 +151,7 @@ Values are returned to the caller in RhoElements via Events.  Most modules conta
 ### audioSaveEvent
 The Audio Save Event is called when the captured audio has been successfully transfered to the specified destination. When a capture is started with the HTTP protocol, the destination server message is returned. When it is called with the FTP protocol, either 'OK: File Sent', 'OK: File Received' or 'ERROR' is returned. This tag should be used in conjunction with the Start method.
 
-<table class="re-table"><col width="3%"/><col width="20%"/><col width="77%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%"/><col width="20%"/><col width="77%"/>
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -185,7 +185,7 @@ The protocol, port number, username (optional) and password (optional) are all d
 
 ## Requirements
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">RhoElements Version</th>
 		<td class="clsSyntaxCell clsEvenRow">2.2 or above</td>

@@ -13,9 +13,9 @@ The Eink Module Module to control display aspects specific to E Ink displays
 
 ##Syntax
 
-<table class="re-table"><tr><th class="tableHeading">eink (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">eink (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Eink" content="[method / parameter]"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Eink JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">Eink JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'eink'</b> will exist on the current page and can be used to interact directly with the eink.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Invoke eink methods via JavaScript use the following syntax: eink.method();
@@ -35,16 +35,16 @@ e.g. <b>eink</b>.setEMML("screenUpdateBpp:<i>value</i>forceFullScreenUpdate");
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>forceFullScreenUpdate</b></td><td class="clsSyntaxCells clsOddRow">Does a full screen update. The full update mode is relatively slow and has visible large black block during update, but will generate little ghost image.</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>pauseFullScreenUpdate</b></td><td class="clsSyntaxCells clsEvenRow">Stops Full Screen updates from occurring. The longer full screen updates are disabled, the more ghosting will appear on the eink display.</td><td class="clsSyntaxCells clsEvenRow">N/A</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>resumeFullScreenUpdate</b></td><td class="clsSyntaxCells clsOddRow">Resumes full screen updates. Full screen updates will occur automatically after a certain number of minor updates. This will remove ghost images from the eink display.</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>forceFullScreenUpdate</b></td><td class="clsSyntaxCells clsOddRow">Does a full screen update. The full update mode is relatively slow and has visible large black block during update, but will generate little ghost image.</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>pauseFullScreenUpdate</b></td><td class="clsSyntaxCells clsEvenRow">Stops Full Screen updates from occurring. The longer full screen updates are disabled, the more ghosting will appear on the eink display.</td><td class="clsSyntaxCells clsEvenRow">N/A</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>resumeFullScreenUpdate</b></td><td class="clsSyntaxCells clsOddRow">Resumes full screen updates. Full screen updates will occur automatically after a certain number of minor updates. This will remove ghost images from the eink display.</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr></table>
 
 
 ##Parameters
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>screenUpdateBpp:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>screenUpdateBpp:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">1, 2, 4</td><td class="clsSyntaxCells clsOddRow">Sets the bits per pixel (the color depth) for the area defined by regionLeft, regionTop, regionHeight, and regionWidth. One bit per pixel updates are faster than 4 bits per pixel. This can be used to improve the user interface for sections that are quick response critical. To disable special color depth updates, set this value to the default value.</td><td class="clsSyntaxCells clsOddRow">4</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
 
 
 
@@ -52,7 +52,7 @@ Items listed in this section indicate parameters, or attributes which can be set
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">2.2 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">2.2 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">Devices with E ink display panel</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">E ink display panel</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Not Persistent - Changes to this module will not persist when navigating to a new page.</td></tr></table>
 
 

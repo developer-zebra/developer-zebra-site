@@ -674,7 +674,7 @@ From RhoElements 2.1 onwards the default value was changed to work out of the bo
 
 ##Substitution Variables
 The following substitution variables are available in the configuration file
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 <tr>
 <th >Substitution Variable</th>
 <th >Expanded Value</th>

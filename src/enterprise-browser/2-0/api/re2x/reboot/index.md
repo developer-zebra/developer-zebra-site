@@ -10,7 +10,7 @@ subhead: RhoElements 2.x API
 The Reboot Module immediately reboots to device when invoked.
 
 ## Syntax
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">reboot (Module) &lt;META&gt; Syntax</th>
 	</tr>
@@ -19,7 +19,7 @@ The Reboot Module immediately reboots to device when invoked.
 	</tr>
 </table>
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">Reboot JavaScript Object Syntax:</th>
 	</tr>
@@ -37,7 +37,7 @@ The Reboot Module immediately reboots to device when invoked.
 ## Parameters
 Items listed in this section indicate parameters, or attributes which can be set.
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<col width="20%"/>
 	<col width="20%"/>
 	<col width="38%"/>
@@ -56,7 +56,7 @@ Items listed in this section indicate parameters, or attributes which can be set
 	</tr>
 </table>
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<col width="78%"/>
 	<col width="8%"/>
 	<col width="1%"/>
@@ -74,7 +74,7 @@ The Reboot tag can be used to apply new settings after downloading files (eg. .R
 **Not all Windows Mobile/CE devices support Cold or ColdCAD features. If a cold boot is attempted on such devices, a warm boot will be performed instead**. On WM 5.0 and higher, there is no software difference between a warm and a cold boot as the device uses persistent storage; both the file and registry will remain the same after boot.
 
 ## Requirements
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">RhoElements Version</th>
 		<td class="clsSyntaxCell clsEvenRow">1.0.0 or above</td>

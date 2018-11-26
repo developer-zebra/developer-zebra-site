@@ -12,9 +12,9 @@ The Upce0preamble Decoder Setting is to set the upce0-preamble property which co
 
 ##Syntax
 
-<table class="re-table"><tr><th class="tableHeading">upce0preamble (Decoder Setting) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">upce0preamble (Decoder Setting) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="scanner" content="upce0preamble:[parameter]"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">upce0preamble JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">upce0preamble JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'scanner'</b> will exist on the current page and can be used to interact directly with the upce0preamble.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Set upce0preamble parameters via JavaScript use the following syntax: scanner.Parameter = Value;
@@ -25,9 +25,9 @@ To Set upce0preamble parameters via JavaScript use the following syntax: scanner
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>upce0preamble:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>upce0preamble:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">none / systemChar / countryAndSystemChars</td><td class="clsSyntaxCells clsOddRow">if none Applies no preamble to the bar code.if systemChar Applies system character preamble to the bar code.if countryAndSystemChars Applies both system and country code preamble to the bar code.</td><td class="clsSyntaxCells clsOddRow">Device specific</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
 
 
 
@@ -35,7 +35,7 @@ Items listed in this section indicate parameters, or attributes which can be set
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">Scanner or Imager module and device that supports upce0.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Transient - Decoder settings are only guaranteed to persist until the Scanner is disabled</td></tr></table>
 
 

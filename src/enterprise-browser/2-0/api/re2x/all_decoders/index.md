@@ -11,7 +11,7 @@ The AllDecoders Module is used to set the barcode scanner to read all barcode ty
 
 ## Syntax
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">allDecoders (Decoder) &lt;META&gt; Syntax</th>
 	</tr>
@@ -20,7 +20,7 @@ The AllDecoders Module is used to set the barcode scanner to read all barcode ty
 	</tr>
 </table>
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">allDecoders JavaScript Object Syntax:</th>
 	</tr>
@@ -41,7 +41,7 @@ The AllDecoders Module is used to set the barcode scanner to read all barcode ty
 ## Parameters
 Items listed in this section indicate parameters, or attributes which can be set.
 
-<table class="re-table"><col width="20%"/><col width="20%"/><col width="38%"/><col width="22%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%"/><col width="20%"/><col width="38%"/><col width="22%"/>
 	<tr>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Possible Values</th>
@@ -62,7 +62,7 @@ Some decoders will not be enabled as some symbologies use the same systems to en
 
 ## Requirements
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">RhoElements Version</th>
 		<td class="clsSyntaxCell clsEvenRow">1.0.0 or above</td>

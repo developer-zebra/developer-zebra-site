@@ -11,7 +11,7 @@ The APD Preexisting JavaScript Object contains read only properties and methods 
 
 ## Syntax
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">APD (Preexisting JavaScript Object) &lt;META&gt; Syntax</th>
 	</tr>
@@ -22,7 +22,7 @@ The APD Preexisting JavaScript Object contains read only properties and methods 
 
 ## Methods
 
-<table class="re-table"><col width="40%"/><col width="40%"/><col width="20%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="40%"/><col width="40%"/><col width="20%"/>
 	<tr>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Parameters</th>
@@ -97,7 +97,7 @@ Additional steps are required to pair your MC2100 via Bluetooth for printing. Pl
 
 ## Requirements
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">RhoElements Version</th>
 		<td class="clsSyntaxCell clsEvenRow">1.0.0 or above</td>

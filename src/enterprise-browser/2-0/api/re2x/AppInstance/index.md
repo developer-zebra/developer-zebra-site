@@ -13,9 +13,9 @@ The Module META Tag is an action tag used to manage the applications running on 
 
 ##Syntax
 
-<table class="re-table"><tr><th class="tableHeading">Module (META Tag) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">Module (META Tag) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="AppInstance" content="NewInstance:123"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="AppInstance-NewInstance" contents="123"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Module JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">Module JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'Module'</b> will exist on the current page and can be used to interact directly with the Module.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Invoke Module methods via JavaScript use the following syntax: module.method();
@@ -41,20 +41,20 @@ e.g. <b>Module</b>.setEMML("iD:<i>value</i>;enumApplications:url('JavaScript:doF
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>newInstance</b></td><td class="clsSyntaxCells clsOddRow">Creates a new running application.  Before creating a new application instance you must first set (at a minimum) a unique identifier for it, via AppInstance-ID.</td><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>newInstance</b></td><td class="clsSyntaxCells clsOddRow">Creates a new running application.  Before creating a new application instance you must first set (at a minimum) a unique identifier for it, via AppInstance-ID.</td><td class="clsSyntaxCells clsOddRow">
 N/A
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>closeCurrent</b></td><td class="clsSyntaxCells clsEvenRow">Closes the current application.  The application being shown after this application is closed will depend on a number of factors including if there are other applications running and the last visible application.</td><td class="clsSyntaxCells clsEvenRow">
 N/A
 </td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enumerate</b></td><td class="clsSyntaxCells clsOddRow">Cause an EnumApplications event to be fired detailing the applications running on the device, see the EnumApplications return values for more information.</td><td class="clsSyntaxCells clsOddRow">
 N/A
 </td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
 
 ##Parameters
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>iD:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>iD:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Positive integer.</td><td class="clsSyntaxCells clsOddRow">
                     ID which will be assigned to the next newly created application via AppInstance-NewInstance
                 </td><td class="clsSyntaxCells clsOddRow">No Default parameter defined, failing to specify an ID will cause AppInstance-NewInstance to have no effect.</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>location:[Value]
@@ -71,7 +71,7 @@ Items listed in this section indicate parameters, or attributes which can be set
                 HOME, which switches to the application launcher; LOCK, which locks the device and UNLOCK which unlocks the device if called from the Lock application.</td><td class="clsSyntaxCells clsOddRow">
                     Switches to the application with the specified ID or pre-defined application.  No action will be taken if there is no application with the specified ID.
                 </td><td class="clsSyntaxCells clsOddRow">No Default parameter defined, failing to specify an Application will have no effect.</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
 
 ##Events
 
@@ -81,7 +81,7 @@ Values are returned to the caller in RhoElements via Events.  Most modules conta
 <br />
 ###enumApplications
 
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>applicationArray</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">2 dimensional array of data relating to each application running on the device.  See the Remarks section for the format of this array.</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>applicationArray</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">2 dimensional array of data relating to each application running on the device.  See the Remarks section for the format of this array.</td></tr></table>
 
 
 
@@ -98,7 +98,7 @@ The ApplicationArray attribute returned from EnumApplications will enumerate eac
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">N/A or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">N/A or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">Windows CE, Windows Mobile, Windows Mobile SE</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">This tag is page specific and is actioned immediately.</td></tr></table>
 
 

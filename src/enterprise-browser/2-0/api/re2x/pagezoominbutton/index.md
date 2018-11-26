@@ -13,9 +13,9 @@ The ZoomInPageButton Module is used to set the parameters of the ZoomInPageButto
 
 ##Syntax
 
-<table class="re-table"><tr><th class="tableHeading">zoomInPageButton (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">zoomInPageButton (Module) &lt;META&gt; Syntax
 </th></tr></table>
-<table class="re-table"><tr><th class="tableHeading">ZoomInPageButton JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">ZoomInPageButton JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'zoomInPageButton'</b> will exist on the current page and can be used to interact directly with the zoomInPageButton.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Set zoomInPageButton parameters via JavaScript use the following syntax: zoominpagebutton.parameter = 'value'; remembering to enclose your value in quotes where appropriate.  
@@ -31,7 +31,7 @@ e.g. <b>zoomInPageButton</b>.setEMML("left:<i>value</i>");
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>left:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>left:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Any valid pixel value</td><td class="clsSyntaxCells clsOddRow">Sets the left horizontal position of the ZoomInPage button in pixels.</td><td class="clsSyntaxCells clsOddRow">10</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>top:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">Any valid pixel value</td><td class="clsSyntaxCells clsEvenRow">Sets the top vertical position of the ZoomInPage button in pixels.</td><td class="clsSyntaxCells clsEvenRow">10</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>height:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Any valid pixel range</td><td class="clsSyntaxCells clsOddRow">Sets the height of the PageZoomIn button in pixels.</td><td class="clsSyntaxCells clsOddRow">100</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>width:[Value]
@@ -48,7 +48,7 @@ Items listed in this section indicate parameters, or attributes which can be set
                       not valid or not given, the default image shall be displayed.
                     </td><td class="clsSyntaxCells clsEvenRow">Default image</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>visibility:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">visible, hidden</td><td class="clsSyntaxCells clsOddRow">Sets the visibility of the ZoomInPage button.</td><td class="clsSyntaxCells clsOddRow">By default the ZoomInPage button is hidden.</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
 
 
 
@@ -64,7 +64,7 @@ When the screen orientation changes, either using the ScreenOrientation tag or b
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Persistent - Changes to this module will persist when navigating to a new page.</td></tr></table>
 
 

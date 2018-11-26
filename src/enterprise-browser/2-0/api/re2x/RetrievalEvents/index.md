@@ -41,7 +41,7 @@ The equivalent statement in a Ruby would look something like below. In this stat
 	
 ##Event Parameters
 Most events have parameters associated with them and these are detailed alongside the event in this help documentation.  E.g. the VersionEvent has the following parameters:
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 <col width="3%">
 <col width="20%">
 <col width="77%">
@@ -123,7 +123,7 @@ To access the event parameters in a Ruby callback function, you reference the @p
 JSON (JavaScript Object notation) is a way of expressing objects within JavaScript, at its simplest level it can be considered a collection of name / value pairs and value lists.  For a more formal description of JSON objects see <a href="http://www.json.org">http://www.json.org</a>
 
 RhoElements events can receive a JSON object as a parameter.  The data structures contained in that object can be one of three types, each one of which is exhibited by the VersionEvent:
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 <tr><th class="syntaxHeadings">JavaScript Data Structure</th><th class="syntaxHeadings">JSON Equivalent</th><th class="syntaxHeadings">Example in VersionEvent</th></tr>
 <tr><td class="syntaxCells">Simple Values</td><td class="syntaxCells">In JSON these are specified as Name:Value</td><td class="syntaxCells">productVersion</td></tr>
 <tr><td class="syntaxCells evenRow">Array Values</td><td class="syntaxCells evenRow">In JSON these are specified as Name:[Value, Value, Value, Value]</td><td class="syntaxCells evenRow">potFixes</td></tr>

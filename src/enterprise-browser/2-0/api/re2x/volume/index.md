@@ -11,7 +11,7 @@ The Volume Module controls the audio output volume of wave files being played on
 
 ##Syntax
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 <tr>
 <th class="tableHeading">volume (Module) &lt;META&gt; Syntax</th>
 </tr>
@@ -21,7 +21,7 @@ The Volume Module controls the audio output volume of wave files being played on
 </tr>
 </table>
 
-<table class="re-table"><tr><th class="tableHeading">Volume JavaScript Object Syntax:</th></tr>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">Volume JavaScript Object Syntax:</th></tr>
 <tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'volume'</b> will exist on the current page and can be used to interact directly with the volume.
 </td>
@@ -43,7 +43,7 @@ e.g. <b>volume</b>.setEMML("setVolume:<i>value</i>");
 
 Items listed in this section indicate parameters, or attributes which can be set.
 
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr>
 <tr>
 <td class="clsSyntaxCells clsOddRow"><b>setVolume:[Value]
 </b></td>
@@ -53,7 +53,7 @@ Items listed in this section indicate parameters, or attributes which can be set
 </tr>
 </table>
 
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" />
 </table>
 
 ##Multi Instance
@@ -61,7 +61,7 @@ When multiple RhoElememts applications are running the following considerations 
 
 ##Requirements
 
-<table class="re-table"><tr>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr>
 <th class="tableHeading">RhoElements Version</th>
 <td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td>

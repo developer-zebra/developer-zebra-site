@@ -13,9 +13,9 @@ To control notification objects, it is first necessary to query the device to di
 
 ##Syntax
 
-<table class="re-table"><tr><th class="tableHeading">notification (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">notification (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Notification" content="[method / parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="Notification" content="EnumNotificationsEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Notification JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">Notification JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'notification'</b> will exist on the current page and can be used to interact directly with the notification.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Invoke notification methods via JavaScript use the following syntax: notification.method();
@@ -41,14 +41,14 @@ e.g. <b>notification</b>.setEMML("setLEDOnDuration:<i>value</i>;enumNotification
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enumerate</b></td><td class="clsSyntaxCells clsOddRow">Immediately triggers an EnumNotificationsEvent containing the notification objects available on the current device</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enumerate</b></td><td class="clsSyntaxCells clsOddRow">Immediately triggers an EnumNotificationsEvent containing the notification objects available on the current device</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr></table>
 
 
 ##Parameters
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>setLEDOnDuration:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>setLEDOnDuration:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Milliseconds</td><td class="clsSyntaxCells clsOddRow">Subsequent calls to cycle LED notifications will cause them to remain on for the specified number of milliseconds per cycle.  This parameter has no effect if the LED State is set to 'On' or 'Off'</td><td class="clsSyntaxCells clsOddRow">1000</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>setLEDOffDuration:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">Milliseconds</td><td class="clsSyntaxCells clsEvenRow">Subsequent calls to cycle LED notifications will cause them to remain off for the specified number of milliseconds per cycle.  This parameter has no effect if the LED State is set to 'On' or 'Off'</td><td class="clsSyntaxCells clsEvenRow">1000</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>setLEDNumberOfCycles:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Positive Number</td><td class="clsSyntaxCells clsOddRow">Subsequent calls to cycle LED notifications will cause them to switch between on and off the specified number of times.</td><td class="clsSyntaxCells clsOddRow">1</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>setBeeperFrequency:[Value]
@@ -59,7 +59,7 @@ Items listed in this section indicate parameters, or attributes which can be set
 </b></td><td class="clsSyntaxCells clsEvenRow">The index of the notification, obtained via the EnumNotificationsEvent</td><td class="clsSyntaxCells clsEvenRow">Turns the specified notification object on.  This will either light an LED, sound the beeper or vibrate the device depending on the type of the notification. Please note that some platforms may not allow you to continuously vibrate the pager to conserve battery. </td><td class="clsSyntaxCells clsEvenRow">Device Specific</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>stateOff:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">The index of the notification, obtained via the EnumNotificationsEvent</td><td class="clsSyntaxCells clsOddRow">Turns the specified notification object off.  This will either extinguish an LED, silence the beeper or stop the device from vibrating</td><td class="clsSyntaxCells clsOddRow">Device Specific</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>stateCycle:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">The index of the notification, obtained via the EnumNotificationsEvent</td><td class="clsSyntaxCells clsEvenRow">Cycles the specified notification object.  LEDs will alternate between on and off for the specified number of cycles.  The beeper and pager will be invoked once for the specified number of milliseconds.</td><td class="clsSyntaxCells clsEvenRow">Device Specific</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
 
 ##Events
 
@@ -69,7 +69,7 @@ Values are returned to the caller in RhoElements via Events.  Most modules conta
 <br />
 ###enumNotificationsEvent
 The EnumNotificationsEvent is triggered in response to calling the 'Enumerate' method and is used to obtain the notifications available on the device and their associated identifiers. There is a single return value for this event which is a two dimensional array, with one dimension listing the available notifications and the other dimension listing the attributes for each notification object
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>notificationsArray (notificationIndex, notificationType, notificationName)</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">2 Dimensional array of notifications, see remarks</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>notificationsArray (notificationIndex, notificationType, notificationName)</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">2 Dimensional array of notifications, see remarks</td></tr></table>
 
 
 
@@ -120,7 +120,7 @@ There is a single return value for this event which is a two dimensional array w
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Partially Persistent - Changes to this module will persist when navigating to a new page with the exception of the EnumNotificationsEvent which is page specific.</td></tr></table>
 
 

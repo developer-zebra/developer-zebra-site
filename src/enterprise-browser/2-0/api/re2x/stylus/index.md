@@ -10,9 +10,9 @@ subhead: RhoElements 2.x API
 The Stylus Module is used to enable and disable the touch screen.
 
 ##Syntax
-<table class="re-table"><tr><th class="tableHeading">stylus (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">stylus (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-EQUIV="Stylus" content="[method]"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Stylus JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">Stylus JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'stylus'</b> will exist on the current page and can be used to interact directly with the stylus.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Invoke stylus methods via JavaScript use the following syntax: stylus.method();
@@ -28,7 +28,7 @@ e.g. <b>stylus</b>.setEMML("enable");
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enable</b></td><td class="clsSyntaxCells clsOddRow">Enables the touch screen</td><td class="clsSyntaxCells clsOddRow">Device Dependant</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>disable</b></td><td class="clsSyntaxCells clsEvenRow">Disables the touch screen</td><td class="clsSyntaxCells clsEvenRow">Device Dependant</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enable</b></td><td class="clsSyntaxCells clsOddRow">Enables the touch screen</td><td class="clsSyntaxCells clsOddRow">Device Dependant</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>disable</b></td><td class="clsSyntaxCells clsEvenRow">Disables the touch screen</td><td class="clsSyntaxCells clsEvenRow">Device Dependant</td></tr></table>
 
 
 
@@ -48,7 +48,7 @@ Due to platform limitations this API is not available on the following Symbol Te
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">Touch Screen.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Persistent - Changes to this module will persist when navigating to a new page.</td></tr></table>
 
 

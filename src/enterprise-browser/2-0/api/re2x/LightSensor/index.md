@@ -13,9 +13,9 @@ The Lightsensor Module is used to retrieve the intensity of the ambient light fa
 
 ##Syntax
 
-<table class="re-table"><tr><th class="tableHeading">lightsensor (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">lightsensor (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="LightSensor" content="[parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="LightSensor" content="LightSensorEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Lightsensor JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">Lightsensor JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'lightsensor'</b> will exist on the current page and can be used to interact directly with the lightsensor.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Invoke lightsensor methods via JavaScript use the following syntax: lightsensor.method();
@@ -41,17 +41,17 @@ e.g. <b>lightsensor</b>.setEMML("status:<i>value</i>;LightSensorEvent:url('JavaS
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>getSensorData</b></td><td class="clsSyntaxCells clsOddRow">This immediately returns the Ambient Light sensor via the LightSensorEvent</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>getSensorData</b></td><td class="clsSyntaxCells clsOddRow">This immediately returns the Ambient Light sensor via the LightSensorEvent</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr></table>
 
 
 ##Parameters
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>status:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>status:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Enabled, disabled</td><td class="clsSyntaxCells clsOddRow">Enables / disables the Light Sensor value retrieval</td><td class="clsSyntaxCells clsOddRow">disabled</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>minimumInterval:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">Value in milli seconds</td><td class="clsSyntaxCells clsEvenRow">The minimum amount of time gap between two sensor update events, specified in milliseconds. The interval cannot be set to less than 200 milliseconds, if a value of less than 200 milli seconds is specified, the interval will be defaulted to 200 milli seconds.</td><td class="clsSyntaxCells clsEvenRow">1000 milliseconds</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
 
 ##Events
 
@@ -61,7 +61,7 @@ Values are returned to the caller in RhoElements via Events.  Most modules conta
 <br />
 ###LightSensorEvent
 The LightSensorEvent gives the LightSensor value. Once registered for you will receive a LightSensorEvent when it gets changed.
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>LightSensorValue</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">LightSensor value in SI lux units</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>LightSensorValue</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">LightSensor value in SI lux units</td></tr></table>
 
 
 
@@ -82,7 +82,7 @@ As this plugin returns the raw sensor values reported by the operating system th
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">2.1 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">2.1 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices. On Windows this is only supported in MPA3.0 devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Non Persistent - Changes to this module will not persist when navigating to a new page.</td></tr></table>
 
 

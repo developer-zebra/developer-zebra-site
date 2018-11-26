@@ -123,7 +123,7 @@ Certain keys are not trappable in RhoElements, those which are intercepted by th
 ##Overview 
 		
 Accelerator keys are specific to Windows CE and the Internet Explorer engine and define the behaviour of the keys which perform some special browser behaviour:
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 
 <tr><th>Key</th><th>           Code</th><th>    Usual Behaviour</th><th>               Special behaviour in Internet Explorer</th></tr>
 <tr><td>Left Arrow </td><td>   0x25 </td><td>   Cursor left  </td><td>                 Scroll window left </td></tr>
@@ -144,7 +144,7 @@ In order for any accelerator key to be actioned the key must reach the browser, 
 The Accelerate 'norm' parameter is reserved for 'normal' RhoElements behaviour, that which will suit the majority of RhoElements applications. This is the default behaviour.
 
 The following table outlines the behaviour of RhoElements under Accelerate NORM, provided the keys are not swallowed by KeyCapture:
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 
 <tr><th>Key</th><th>            Cursor inside text box</th><th>	   Cursor outside text box</th></tr>
 
@@ -160,7 +160,7 @@ The following table outlines the behaviour of RhoElements under Accelerate NORM,
 ##Accelerate None 
 	
 The Accelerate 'none' parameter will disable all Accelerator key behaviour. Accelerator keys can still be caught using the KeyCapture meta tag but the keys themselves will have no effect on the application.
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 <tr><th>	Key</th><th>            Cursor inside text box</th><th>	   Cursor outside text box</th></tr>
 <tr><td>Left Arrow</td><td>     No Action</td><td>	               No Action</td></tr>
 <tr><td class="clsEvenRow">Right Arrow</td><td class="clsEvenRow">    No Action</td><td class="clsEvenRow">	               No Action</td></tr>
@@ -178,7 +178,7 @@ The Accelerate 'none' parameter will disable all Accelerator key behaviour. Acce
 The Accelerate 'all' parameter indicates to RhoElements that the user wishes all accelerator keys to be handled as they would be in Internet Explorer.
 
 The following table outlines the behaviour of RhoElements under Accelerate ALL, provided the keys are not swallowed by the KeyCapture tag:
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 <tr>
 <tr><th>Key</th>            <th>Cursor inside text box</th>	                    <th>Cursor outside text box</th></tr>
 <tr><td>Left Arrow</td><td>     Cursor left </td><td>                                 Scroll window left</td></tr>
@@ -194,7 +194,7 @@ The following table outlines the behaviour of RhoElements under Accelerate ALL, 
 ##Windows Mobile 
 	
 As already stated Accelerator keys are only applicable to Windows CE, Windows Mobile devices will behave as follows:
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 <tr>
 <th>Key</th>            <th>Cursor inside text box</th>	                    <th>Cursor outside text box</th>
 </tr>

@@ -8,7 +8,7 @@ subhead: RhoElements 2.x API
 ##Overview
 The Application class is used for accessing or setting app-level configuration settings.
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 <tr>
 <th class="tableHeading">application (Module) &lt;META&gt; Syntax</th>
 </tr>
@@ -17,7 +17,7 @@ The Application class is used for accessing or setting app-level configuration s
 </tr>
 </table>
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 <tr>
 <th class="tableHeading">Application JavaScript Object Syntax:</th>
 </tr>
@@ -56,7 +56,7 @@ e.g. <b>application</b>.setEMML("applicationEvent:url('JavaScript:doFunction(%js
 ## Methods
 Items listed in this section indicate methods and/or parameters that will be retrieved.
 
-<table class="re-table"><col width="10%"/><col width="68%"/><col width="22%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%"/><col width="68%"/><col width="22%"/>
 <tr>
 <th class="tableHeading">Name</th>
 <th class="tableHeading">Description</th>
@@ -90,7 +90,7 @@ Values are returned to the caller in RhoElements via Events. Most modules contai
 ### applicationEvent
 The ApplicationEvent is triggered when a RhoElements application is minimized or restored.
 
-<table class="re-table"><col width="3%"/><col width="20%"/><col width="77%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%"/><col width="20%"/><col width="77%"/>
 <tr>
 <th class="tableHeading">ID</th>
 <th class="tableHeading">Name</th>
@@ -106,7 +106,7 @@ The ApplicationEvent is triggered when a RhoElements application is minimized or
 ### versionEvent
 The version of RhoElements installed on the device.
 
-<table class="re-table"><col width="3%"/><col width="20%"/><col width="77%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%"/><col width="20%"/><col width="77%"/>
 <tr>
 <th class="tableHeading">ID</th>
 <th class="tableHeading">Name</th>
@@ -154,7 +154,7 @@ The ComponentVersions parameter in the VersionEvent is defined as a 2D array:
 
 ## Requirements
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 <tr>
 <th class="tableHeading">RhoElements Version</th>
 <td class="clsSyntaxCell clsEvenRow">1.0.0 or above</td>

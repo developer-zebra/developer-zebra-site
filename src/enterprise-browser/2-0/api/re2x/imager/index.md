@@ -9,9 +9,9 @@ subhead: RhoElements 2.x API
 The Imager API allows a device to capture images using a 2D imager or camera on the device that appears as an imager. **This API is not supported on Micro Kiosk devices**.
 
 
-<table class="re-table"><tr><th class="tableHeading">imager (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">imager (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="imager" content="[parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="imager" content="ImagerEvent:url('jsFunction or url')"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="imager" content="ImagerEnumEvent:url('jsFunction or url')"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Imager JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">Imager JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'imager'</b> will exist on the current page and can be used to interact directly with the imager.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Invoke imager methods via JavaScript use the following syntax: imager.method();
@@ -37,7 +37,7 @@ e.g. <b>imager</b>.setEMML("enabled:<i>value</i>;imagerEvent:url('JavaScript:doF
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enable</b></td><td class="clsSyntaxCells clsOddRow">enables the imager device and shows the viewer window</td><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enable</b></td><td class="clsSyntaxCells clsOddRow">enables the imager device and shows the viewer window</td><td class="clsSyntaxCells clsOddRow">
 N/A
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>disable</b></td><td class="clsSyntaxCells clsEvenRow">disables the imager device and hides the viewer window</td><td class="clsSyntaxCells clsEvenRow">
 N/A
@@ -52,7 +52,7 @@ N/A
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enabled:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>enabled:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">enables referenced Imager. Imager IDs can be obtained via ImagerEnumEvent</td><td class="clsSyntaxCells clsOddRow">enables the referenced imager device and shows the viewer window</td><td class="clsSyntaxCells clsOddRow">
 N/A
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>desiredWidth:[Value]
@@ -76,7 +76,7 @@ N/A
 </b></td><td class="clsSyntaxCells clsOddRow">http,ftp or file path </td><td class="clsSyntaxCells clsOddRow">the path of the destination</td><td class="clsSyntaxCells clsOddRow">
 N/A
 </td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
 
 ##Events
 
@@ -86,15 +86,15 @@ Values are returned to the caller in RhoElements via Events.  Most modules conta
 <br />
 ###imagerEvent
 
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>transferResult</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">In response to an upload to an HTTP site, the reply from the web server will be returned.  There will be no response to an upload to an FTP site</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>transferResult</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">In response to an upload to an HTTP site, the reply from the web server will be returned.  There will be no response to an upload to an FTP site</td></tr></table>
 <br />
 ###imagerCaptureEvent
 Specifying an ImagerCaptureEvent will cause the captured image to be returned as a Data URI object when the capture() method is invoked. A Data URI is a base 64 encoding of the image and can be used to easily embed the image on the page, store the image in a database or transfer the image to a server.
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>imageData</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">A DataURI representation of the captured Image.</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>imageData</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">A DataURI representation of the captured Image.</td></tr></table>
 <br />
 ###imagerEnumEvent
 
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>imagerArray (deviceName, friendlyName)</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">Two dimensional array of imagers present on the device</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>imagerArray (deviceName, friendlyName)</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">Two dimensional array of imagers present on the device</td></tr></table>
 
 
 
@@ -161,7 +161,7 @@ The Imager API is not supported from Enterprise Browser apps on the following Ze
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices except Kiosk units.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">The device must have an Imager device or Color Camera.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Partially Persistent - Changes to this module will persist when navigating to a new page with the exception of the view finder: this will be hidden on page navigation.</td></tr></table>
 
 

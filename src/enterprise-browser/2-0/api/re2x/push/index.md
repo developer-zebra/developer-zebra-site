@@ -10,9 +10,9 @@ subhead: RhoElements 2.x API
 The Push Module is used to receive data over an HTTP connection.
 
 ##Syntax
-<table class="re-table"><tr><th class="tableHeading">push (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">push (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Push" content="[Parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="Push" content="[Parameter:Attribute]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="Push" contents="detected:url('[jsFunction | url]')"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Push JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">Push JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'push'</b> will exist on the current page and can be used to interact directly with the push.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Invoke push methods via JavaScript use the following syntax: push.method();
@@ -37,7 +37,7 @@ e.g. <b>push</b>.setEMML("port:<i>value</i>;detected:url('JavaScript:doFunction(
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>start</b></td><td class="clsSyntaxCells clsOddRow">Starts the server. Must be after the &lt;port&gt; tag.</td><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>start</b></td><td class="clsSyntaxCells clsOddRow">Starts the server. Must be after the &lt;port&gt; tag.</td><td class="clsSyntaxCells clsOddRow">
 N/A
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>stop</b></td><td class="clsSyntaxCells clsEvenRow">Stops the server.</td><td class="clsSyntaxCells clsEvenRow">
 N/A
@@ -48,13 +48,13 @@ N/A
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>port:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>port:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">0 - 65535 in Windows and 1025 - 65535 in Android</td><td class="clsSyntaxCells clsOddRow">Port number to listen on.</td><td class="clsSyntaxCells clsOddRow">8081</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>passKey:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">Any string</td><td class="clsSyntaxCells clsEvenRow">If specified then the client must include passkey=value in the passed parameters. Case sensitive.</td><td class="clsSyntaxCells clsEvenRow">Empty (no passkey required)</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>response:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Filename</td><td class="clsSyntaxCells clsOddRow">Name of the HTML file to return to the client after a successful request.</td><td class="clsSyntaxCells clsOddRow">Empty (a short default HTML response is sent)</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>path:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">Virtual path</td><td class="clsSyntaxCells clsEvenRow">The client must include this in the HTTP request (after the address and before the parameters).  The forward slash '/' should be used as the directory delimiter.</td><td class="clsSyntaxCells clsEvenRow">Empty (any path is accepted)</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>unattended:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">enabled or disabled</td><td class="clsSyntaxCells clsOddRow">Enables or disables unattended mode - see Remarks for details.</td><td class="clsSyntaxCells clsOddRow">disabled</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
 
 ##Events
 
@@ -64,7 +64,7 @@ Values are returned to the caller in RhoElements via Events.  Most modules conta
 <br />
 ###detected
 
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>Whatever is defined as 'name' in each name=value pair in the HTTP request.</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">One value is returned for each name=value pair in the HTTP request, you access this in JSON using the names you provided in the request.  An example is provided in the examples section below.</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>Whatever is defined as 'name' in each name=value pair in the HTTP request.</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">One value is returned for each name=value pair in the HTTP request, you access this in JSON using the names you provided in the request.  An example is provided in the examples section below.</td></tr></table>
 
 
 
@@ -97,7 +97,7 @@ In version 2.2 of RhoElements for WM / CE the default push port was changed from
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Persistent - Changes to this module will persist when navigating to a new page.</td></tr></table>
 
 

@@ -13,7 +13,7 @@ The History:Back Navigation instructs RhoElements to navigate to the previously 
 
 ##Syntax
 
-<table class="re-table"><tr><th class="tableHeading">History:Back (Navigation) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">History:Back (Navigation) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;a href="history:back"&gt;</p></td></tr></table>
 
 
@@ -34,7 +34,7 @@ The browser component on Windows Mobile has no history stack other than that pro
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Immediate - This method is actioned immediately.</td></tr></table>
 
 

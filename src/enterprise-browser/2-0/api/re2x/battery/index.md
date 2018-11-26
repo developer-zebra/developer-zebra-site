@@ -10,7 +10,7 @@ subhead: RhoElements 2.x API
 **The Battery Module is used to set the attributes of the battery indicator and retrieve the status of the battery. For more information about positioning these indicators, please refer to the [indicator layout overview page](../IndicatorPositions).**
 
 ## Syntax
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">battery (Module) &lt;META&gt; Syntax</th>
 	</tr>
@@ -22,7 +22,7 @@ subhead: RhoElements 2.x API
 	</tr>
 </table>
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">Battery JavaScript Object Syntax:</th>
 	</tr>
@@ -66,7 +66,7 @@ subhead: RhoElements 2.x API
 ## Methods
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" />
 	<tr>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th>
@@ -88,7 +88,7 @@ Items listed in this section indicate methods or, in some cases, indicate parame
 ## Parameters
 Items listed in this section indicate parameters, or attributes which can be set.
 
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" />
 	<tr>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Possible Values</th>
@@ -151,7 +151,7 @@ Values are returned to the caller in RhoElements via Events. Most modules contai
 ### batteryEvent
 The BatteryEvent gives an indication of the remaining battery level. Once registered for you will receive a BatteryEvent at regular intervals, as specified by the BatteryRefresh configuration setting.
 
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" />
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -199,7 +199,7 @@ The BatteryEvent gives an indication of the remaining battery level. Once regist
 ### smartBatteryEvent
 Returns various parameters relating to battery charge and battery hardware. Not all return values may be supported by all batteries. Not supported on the Enterprise Tablet.
 
-<table class="re-table"><col width="3%"/><col width="20%"/><col width="77%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%"/><col width="20%"/><col width="77%"/>
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -251,7 +251,7 @@ For users migrating their PocketBrowser apps to RhoElements please note that due
 
 ## Requirements
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">RhoElements Version</th>
 		<td class="clsSyntaxCell clsOddRow">1.0.0 or above</td>

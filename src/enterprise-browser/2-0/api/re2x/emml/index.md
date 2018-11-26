@@ -11,9 +11,9 @@ The EmmlProfile Module is used to manage EMML profile pages.
 
 ##Syntax
 
-<table class="re-table"><tr><th class="tableHeading">emmlProfile (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">emmlProfile (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="EMMLProfile" content="parameter:value"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">EmmlProfile JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">EmmlProfile JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'emmlProfile'</b> will exist on the current page and can be used to interact directly with the emmlProfile.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Set emmlProfile parameters via JavaScript use the following syntax: emmlprofile.parameter = 'value'; remembering to enclose your value in quotes where appropriate.  
@@ -28,12 +28,12 @@ e.g. <b>emmlProfile</b>.setEMML("name:<i>value</i>");
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>name:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>name:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">[optional name] (see remarks below)</td><td class="clsSyntaxCells clsOddRow">Imports the EMML profile page stored at the local specified by "importProfile". Nb. This parameter should come before the related import profile method.</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>importProfile:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">url('URI')</td><td class="clsSyntaxCells clsEvenRow">http or file location of the .emmp file containing the EMML profiles to be imported.</td><td class="clsSyntaxCells clsEvenRow">N/A</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>clear:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">[optional name] (see remarks below)</td><td class="clsSyntaxCells clsOddRow">Clears the currently loaded EMML profiles.</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>apply:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">[profile class name]</td><td class="clsSyntaxCells clsEvenRow">Applies the EMML profile with the class name specified. </td><td class="clsSyntaxCells clsEvenRow">N/A</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
 
 
 
@@ -53,7 +53,7 @@ Importing profiles from a file:// location will cause the profile to be moved fr
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow" /></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Partially Transient - any changes made by changing parameters will be lost when navigating to a new page with the exception of when a named EMML profile set is imported.</td></tr></table>
 
 

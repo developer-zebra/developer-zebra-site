@@ -11,9 +11,9 @@ The SIP Module is used to control attributes of the soft input panel (SIP), also
 
 ##Syntax
 
-<table class="re-table"><tr><th class="tableHeading">sip (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">sip (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="SIP" content="[method / parameter]"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">Sip JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">Sip JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'sip'</b> will exist on the current page and can be used to interact directly with the sip.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Invoke sip methods via JavaScript use the following syntax: sip.method();
@@ -33,17 +33,17 @@ e.g. <b>sip</b>.setEMML("left:<i>value</i>manual");
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>manual</b></td><td class="clsSyntaxCells clsOddRow">The SIP will show or hide only when the SIP button is pressed.</td><td class="clsSyntaxCells clsOddRow">manual</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>automatic</b></td><td class="clsSyntaxCells clsEvenRow">Shows and hides the SIP when editable fields have focus.</td><td class="clsSyntaxCells clsEvenRow">manual</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>manual</b></td><td class="clsSyntaxCells clsOddRow">The SIP will show or hide only when the SIP button is pressed.</td><td class="clsSyntaxCells clsOddRow">manual</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>automatic</b></td><td class="clsSyntaxCells clsEvenRow">Shows and hides the SIP when editable fields have focus.</td><td class="clsSyntaxCells clsEvenRow">manual</td></tr></table>
 
 
 ##Parameters
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>left:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>left:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Horizontal position, in pixels</td><td class="clsSyntaxCells clsOddRow">Sets the horizontal position of the SIP in pixels. Not compatible with Finger Scrolling on Windows devices.</td><td class="clsSyntaxCells clsOddRow">Center of the screen</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>top:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">Vertical position, in pixels</td><td class="clsSyntaxCells clsEvenRow">Sets the vertical position of the SIP in pixels. Not compatible with Finger Scrolling on Windows devices</td><td class="clsSyntaxCells clsEvenRow">Bottom of the screen</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
 
 
 ##Multi Instance
@@ -73,7 +73,7 @@ Applying `automatic` SIP control in an app will prevent the app from later invok
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">Windows Only. No support for Android</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Persistent - Changes to this module will persist when navigating to a new page. Moving the SIP may also persist after RhoElements has been shut down, dependent on Operating System.</td></tr></table>
 
 

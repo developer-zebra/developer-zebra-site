@@ -12,7 +12,7 @@ The Generic Preexisting JavaScript Object contains read only properties and meth
 
 ##Syntax
 
-<table class="re-table"><tr><th class="tableHeading">Generic (Preexisting JavaScript Object) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">Generic (Preexisting JavaScript Object) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>generic.Log('Message to be logged', 1);</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>var myOEM = generic.OEMInfo;</p></td></tr></table>
 
 
@@ -20,7 +20,7 @@ The Generic Preexisting JavaScript Object contains read only properties and meth
 
 ##Methods
 
-<table class="re-table"><col width="40%" /><col width="40%" /><col width="20%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Parameters</th><th class="tableHeading">Returns</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>InvokeMETAFunction<br /></b>Invokes the specified meta function immediately.</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>Name: </b>Module Name, 
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="40%" /><col width="40%" /><col width="20%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Parameters</th><th class="tableHeading">Returns</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>InvokeMETAFunction<br /></b>Invokes the specified meta function immediately.</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>Name: </b>Module Name, 
 <b>Values: </b>String<br /><b>Description: </b>Module on which to perform the method or apply the property.  This would be placed in the 'HTTP-Equiv' part of the Meta tag if it was being parsed on a page.<P /><b>Name: </b>Content, 
 <b>Values: </b>Method or Property<br /><b>Description: </b>The method or Property to be applied to the module.<P /></td><td style="text-align:left;" valign="top" class="clsSyntaxCells clsOddRow">N/A</td></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>Log<br /></b>Invokes a user defined type log entry using the standard RhoElements logger component.  With this invocation RhoElements will log to either a text file or HTTP as defined in the configuration settings.</td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>Name: </b>Log Entry, 
 <b>Values: </b>String<br /><b>Description: </b>The string to log.<P /><b>Name: </b>Severity, 
@@ -54,7 +54,7 @@ The Generic Preexisting JavaScript Object contains read only properties and meth
 
 ##Properties
 
-<table class="re-table"><col width="20%" /><col width="80%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>OEMInfo</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">The OEM Information string for the terminal</td></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>UUID</b></td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">The Unique Unit IDentifier for the terminal</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="80%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>OEMInfo</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">The OEM Information string for the terminal</td></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>UUID</b></td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;">The Unique Unit IDentifier for the terminal</td></tr></table>
 
 
 
@@ -102,7 +102,7 @@ The Generic Preexisting JavaScript Object provides backwards compatibility with 
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Immediate - These methods are actioned immediately.</td></tr></table>
 
 

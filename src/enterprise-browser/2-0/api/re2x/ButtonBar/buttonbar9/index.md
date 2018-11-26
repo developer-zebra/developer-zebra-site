@@ -12,9 +12,9 @@ The ButtonBar9 Module is used to show/hide a particular ButtonBar. **To control 
 
 ## Syntax
 
-<table class="re-table"><tr><th class="tableHeading">buttonBar9 (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">buttonBar9 (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="ButtonBar9" content="[parameter]"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">ButtonBar9 JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">ButtonBar9 JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'buttonBar9'</b> will exist on the current page and can be used to interact directly with the buttonBar9.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Invoke ButtonBar9 methods via JavaScript use the following syntax: ButtonBar9.method();
@@ -26,13 +26,13 @@ To Invoke ButtonBar9 methods via JavaScript use the following syntax: ButtonBar9
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>show</b></td><td class="clsSyntaxCells clsOddRow">Show this ButtonBar.</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>hide</b></td><td class="clsSyntaxCells clsOddRow">Hide this ButtonBar.</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>show</b></td><td class="clsSyntaxCells clsOddRow">Show this ButtonBar.</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>hide</b></td><td class="clsSyntaxCells clsOddRow">Hide this ButtonBar.</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr></table>
 
 
 ## Parameters
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>visibility:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>visibility:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">'visible' or 'hidden'</td><td class="clsSyntaxCells clsOddRow">Sets the visibility of the button Bar.</td><td class="clsSyntaxCells clsOddRow">Hidden.</td></tr></table>	
 
 
@@ -45,7 +45,7 @@ When the screen orientation changes, either using the ScreenOrientation tag or b
 
 ## Requirements
 
-<table class="re-table"><tr><th class="tableHeading">EnterpriseBrowser Version</th><td class="clsSyntaxCell clsEvenRow">1.7.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">EnterpriseBrowser Version</th><td class="clsSyntaxCell clsEvenRow">1.7.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All Android devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Persistent - Changes to this module will persist when navigating to a new page.</td></tr></table>
 
 

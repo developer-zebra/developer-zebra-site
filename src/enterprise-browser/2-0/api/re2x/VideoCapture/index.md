@@ -12,9 +12,9 @@ The VideoCapture Module captures video from the seleted camera saves it as a fil
 ##Syntax
 
 
-<table class="re-table"><tr><th class="tableHeading">videoCapture (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">videoCapture (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="VideoCapture" content="[method / parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="VideoCapture" content="VideoSaveEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">VideoCapture JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">VideoCapture JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'videoCapture'</b> will exist on the current page and can be used to interact directly with the videoCapture.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Invoke videoCapture methods via JavaScript use the following syntax: videocapture.method();
@@ -39,7 +39,7 @@ Items listed in this section indicate methods and/or parameters that will be ret
 
 > NOTE: The Android operating System presents a preview window with controls to Start, Stop and Cancel recording. A file transfer will occur as specified even if the Stop is not sent by this API.
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<col width="10%"/>
 	<col width="68%"/>
 	<col width="22%"/>
@@ -75,7 +75,7 @@ Items listed in this section indicate methods and/or parameters that will be ret
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>duration:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>duration:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Milliseconds</td><td class="clsSyntaxCells clsOddRow">Specifies the number of milliseconds of video to capture.  It is the maximum number of milliseconds of video to capture when the 'start' method is called if not interrupted with the 'stop' method. The duration cannot be set to less than 1000 milliseconds, if a value of less than 1000 milli seconds is specified, the interval will be defaulted to 5000 milli seconds.</td><td class="clsSyntaxCells clsOddRow">5000</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>destination:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">Fully qualified URL or file name.  Supports HTTP, FTP and File protocols.</td><td class="clsSyntaxCells clsEvenRow">Sets the destination path and name for the captured video file.  See Remarks</td><td class="clsSyntaxCells clsEvenRow">
 N/A
@@ -83,7 +83,7 @@ N/A
 </b></td><td class="clsSyntaxCells clsOddRow">String</td><td class="clsSyntaxCells clsOddRow">The username for the HTTP or FTP server if required</td><td class="clsSyntaxCells clsOddRow">No username</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>password:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">String</td><td class="clsSyntaxCells clsEvenRow">The password for the HTTP or FTP server if required</td><td class="clsSyntaxCells clsEvenRow">No password</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>name:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">String compliant with Windows Naming restrictions</td><td class="clsSyntaxCells clsOddRow">When the video capture completes a video file is saved in the root directory of the device (package directory in case of Android).  This parameter is used to specify the filename when storing the file locally. </td><td class="clsSyntaxCells clsOddRow">VideoCapture</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
 
 ##Events
 
@@ -93,7 +93,7 @@ Values are returned to the caller in RhoElements via Events.  Most modules conta
 <br />
 ###videoSaveEvent
 The Video Save Event is called when the captured video has been successfully transfered to the specified destination. When a capture is started with the HTTP protocol, the destination server message is returned. When it is called with the FTP protocol, either 'OK: File Sent', 'OK: File Received' or 'ERROR' is returned. This tag should be used in conjunction with the Start method.
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>transferResult</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">Success or failure of transfer, see note above.</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>transferResult</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">Success or failure of transfer, see note above.</td></tr></table>
 
 
 
@@ -133,7 +133,7 @@ The VideoCapture API is not supported by Enterprise Browser apps on the followin
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">2.2 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">2.2 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">Camera</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Not Persistent - Changes to this module will not persist when navigating to a new page.</td></tr></table>
 
 

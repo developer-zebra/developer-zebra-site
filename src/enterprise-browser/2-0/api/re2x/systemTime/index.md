@@ -10,9 +10,9 @@ subhead: RhoElements 2.x API
 The SystemTime Module is used to set the device clock and timezone, or to set the device to obtain clock and timezone settings from a network server.
 
 ##Syntax
-<table class="re-table"><tr><th class="tableHeading">systemTime (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">systemTime (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="SystemTime" content="[parameter]"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">SystemTime JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">SystemTime JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'systemTime'</b> will exist on the current page and can be used to interact directly with the systemTime.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Set systemTime parameters via JavaScript use the following syntax: systemtime.parameter = 'value'; remembering to enclose your value in quotes where appropriate.  
@@ -27,11 +27,11 @@ e.g. <b>systemTime</b>.setEMML("setLocal:<i>value</i>");
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>setLocal:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>setLocal:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Local Time String i.e. "2011-12-25T09-57-00+01-00" or "2011-12-25T09-57-00"</td><td class="clsSyntaxCells clsOddRow">Local Time String in the format &lt;YYYY&gt;-&lt;MM&gt;-&lt;DD&gt;T&lt;HH&gt;-&lt;MM&gt;-&lt;SS&gt;&lt;+/-&gt;&lt;HH offset from UTC&gt;-&lt;MM offset from UTC&gt;. The offset from UTC is optional</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>setUtc:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">UTC Time String i.e. "2011-12-25T09-57-00+01-00" or "2011-12-25T09-57-00"</td><td class="clsSyntaxCells clsEvenRow">UTC Time String in the format &lt;YYYY&gt;-&lt;MM&gt;-&lt;DD&gt;T&lt;HH&gt;-&lt;MM&gt;-&lt;SS&gt;&lt;+/-&gt;&lt;HH offset from UTC&gt;-&lt;MM offset from UTC&gt;. The offset from UTC is optional</td><td class="clsSyntaxCells clsEvenRow">N/A</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>SntpServerIP:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Valid IP Address</td><td class="clsSyntaxCells clsOddRow">The IP address of the SNTP time server</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>
 
 
 
@@ -55,7 +55,7 @@ The Time Zone location string (Windows CE) is not supported. The timezone offset
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">2.1 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">2.1 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices except: Enterprise Tablet.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Persistent - Changes to this module will persist when navigating to a new page.</td></tr></table>
 
 

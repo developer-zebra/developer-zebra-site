@@ -11,7 +11,7 @@ The CardReader Module is used to either navigate to a URL or call a JavaScript f
 
 ## Syntax
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">cardReader (Module) &lt;META&gt; Syntax</th>
 	</tr>
@@ -20,7 +20,7 @@ The CardReader Module is used to either navigate to a URL or call a JavaScript f
 	</tr>
 </table>
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">CardReader JavaScript Object Syntax:</th>
 	</tr>
@@ -64,7 +64,7 @@ The CardReader Module is used to either navigate to a URL or call a JavaScript f
 ## Methods
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%"/><col width="68%"/><col width="22%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%"/><col width="68%"/><col width="22%"/>
 	<tr>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Description</th>
@@ -85,7 +85,7 @@ Items listed in this section indicate methods or, in some cases, indicate parame
 ## Parameters
 Items listed in this section indicate parameters, or attributes which can be set.
 
-<table class="re-table"><col width="20%"/><col width="20%"/><col width="38%"/><col width="22%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%"/><col width="20%"/><col width="38%"/><col width="22%"/>
 	<tr>
 		<th class="tableHeading">Name</th>
 		<th class="tableHeading">Possible Values</th>
@@ -140,7 +140,7 @@ Values are returned to the caller in RhoElements via Events.  Most modules conta
 ### readEvent
 readEvent:URL('URI') URI is either a URL or a JavaScript function. If a URL, the browser navigates to the URL when the attached card reader decodes some data. If a JavaScript function, the function is treated as a callback which is invoked when the card reader decodes data. Issuing this tag, automatically opens the card reader, if it has not been opened already.
 
-<table class="re-table"><col width="3%"/><col width="20%"/><col width="77%"/>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%"/><col width="20%"/><col width="77%"/>
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
@@ -303,7 +303,7 @@ Because encrypted card data can contain characters not accepted in a URL the Rea
 
 ## Requirements
 
-<table class="re-table">
+<table class="facelift" style="width:100%" border="1" padding="5px"> 
 	<tr>
 		<th class="tableHeading">RhoElements Version</th>
 		<td class="clsSyntaxCell clsEvenRow">1.0.0 or above</td>

@@ -12,7 +12,7 @@ The ODAX Preexisting JavaScript Object module reads from `.CSV` or `.XML` files 
 **This API should be used only to provide backward compatibility with legacy applications. For new apps, Zebra recommends implementing such capabilities using Application Cache and Web SQL modules**. 
 
 ##Syntax
-<table class="re-table"><tr><th class="tableHeading">ODAX (Preexisting JavaScript Object) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">ODAX (Preexisting JavaScript Object) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>odax.Select('SELECT * FROM \'\\application\\test.xml\';', ',', false);</p></td></tr></table>
 
 
@@ -20,7 +20,7 @@ The ODAX Preexisting JavaScript Object module reads from `.CSV` or `.XML` files 
 
 ##Methods
 
-<table class="re-table"><col width="40%" /><col width="40%" /><col width="20%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Parameters</th><th class="tableHeading">Returns</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>Clear<br /></b>Clears the result set.</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow" /><td style="text-align:left;" valign="top" class="clsSyntaxCells clsOddRow" /></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>Copy<br /></b>Copies the specified source filename to the destination filename.</td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>Name: </b>Source, 
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="40%" /><col width="40%" /><col width="20%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Parameters</th><th class="tableHeading">Returns</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>Clear<br /></b>Clears the result set.</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow" /><td style="text-align:left;" valign="top" class="clsSyntaxCells clsOddRow" /></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>Copy<br /></b>Copies the specified source filename to the destination filename.</td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>Name: </b>Source, 
 <b>Values: </b>String<br /><b>Description: </b>Full path of the source file name that is to be copied.<P /><b>Name: </b>Destination, 
 <b>Values: </b>String<br /><b>Description: </b>Full path of the destination file name.<P /></td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;" valign="top">0 if no error is received.  If an error occurs the value from Windows API call GetLastError() is returned, if appropriate.</td></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>Delete<br /></b>Deletes the specified file.</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>Name: </b>FileName, 
 <b>Values: </b>String<br /><b>Description: </b>Full path of the file name that is to be deleted.<P /></td><td style="text-align:left;" valign="top" class="clsSyntaxCells clsOddRow">0 if no error is received.  If an error occurs the value from Windows API call GetLastError() is returned, if appropriate.</td></tr><tr><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>FileExists<br /></b>Checks to see whether the specified file exists.</td><td class="clsSyntaxCells clsEvenRow" style="text-align:left;"><b>Name: </b>FileName, 
@@ -73,7 +73,7 @@ The ODAX Preexisting JavaScript Object provides backwards compatibility with cod
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices except: Enterprise Tablet</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">None.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Immediate - These methods are actioned immediately.</td></tr></table>
 
 

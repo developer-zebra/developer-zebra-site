@@ -10,9 +10,9 @@ subhead: RhoElements 2.x API
 The SignatureCapture Module presents a rectangular box that captures a signature, hand-written notes or other data entered using the device stylus.
 
 ##Syntax
-<table class="re-table"><tr><th class="tableHeading">signatureCapture (Module) &lt;META&gt; Syntax
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">signatureCapture (Module) &lt;META&gt; Syntax
 </th></tr><tr><td class="clsSyntaxCells clsOddRow"><p>&lt;META HTTP-Equiv="SignatureCapture" content="[method / parameter]"&gt;</p></td></tr><tr><td class="clsSyntaxCells clsEvenRow"><p>&lt;META HTTP-Equiv="SignatureCapture" content="SignatureSaveEvent:url('[jsFunction | url]')"&gt;</p></td></tr></table>
-<table class="re-table"><tr><th class="tableHeading">SignatureCapture JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">SignatureCapture JavaScript Object Syntax:</th></tr><tr><td class="clsSyntaxCells clsOddRow">
 By default the JavaScript Object <b>'signatureCapture'</b> will exist on the current page and can be used to interact directly with the signatureCapture.
 </td></tr><tr><td class="clsSyntaxCells clsEvenRow">
 To Invoke signatureCapture methods via JavaScript use the following syntax: signaturecapture.method();
@@ -37,7 +37,7 @@ e.g. <b>signatureCapture</b>.setEMML("visibility:<i>value</i>;signatureSaveEvent
 
 Items listed in this section indicate methods or, in some cases, indicate parameters which will be retrieved.
 
-<table class="re-table"><col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>clear</b></td><td class="clsSyntaxCells clsOddRow">Clears the capture area.</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>capture</b></td><td class="clsSyntaxCells clsEvenRow">Saves the signature as a bitmap on the device and attempts to send that bitmap to the location specified in the 'Destination' parameter.  If a signatureCaptureEvent is specified the signature will also be returned as a Data URI object.</td><td class="clsSyntaxCells clsEvenRow">
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="10%" /><col width="68%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>clear</b></td><td class="clsSyntaxCells clsOddRow">Clears the capture area.</td><td class="clsSyntaxCells clsOddRow">N/A</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>capture</b></td><td class="clsSyntaxCells clsEvenRow">Saves the signature as a bitmap on the device and attempts to send that bitmap to the location specified in the 'Destination' parameter.  If a signatureCaptureEvent is specified the signature will also be returned as a Data URI object.</td><td class="clsSyntaxCells clsEvenRow">
 N/A
 </td></tr></table>
 
@@ -46,7 +46,7 @@ N/A
 
 
 Items listed in this section indicate parameters, or attributes which can be set.
-<table class="re-table"><col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>visibility:[Value]
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" /><tr><th class="tableHeading">Name</th><th class="tableHeading">Possible Values</th><th class="tableHeading">Description</th><th class="tableHeading">Default Value</th></tr><tr><td class="clsSyntaxCells clsOddRow"><b>visibility:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">'Visible' or 'Hidden'</td><td class="clsSyntaxCells clsOddRow">Shows or hides the rectangular capture area</td><td class="clsSyntaxCells clsOddRow">By default the capture area is hidden</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>border:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">'Visible' or 'Hidden'</td><td class="clsSyntaxCells clsEvenRow">Shows or hides a border for the rectangular capture area</td><td class="clsSyntaxCells clsEvenRow">Visible</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>width:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">Positive number</td><td class="clsSyntaxCells clsOddRow">Sets the width of the rectangular capture area in pixels</td><td class="clsSyntaxCells clsOddRow">200</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>height:[Value]
@@ -62,7 +62,7 @@ N/A
 </b></td><td class="clsSyntaxCells clsOddRow">String</td><td class="clsSyntaxCells clsOddRow">The username for the HTTP or FTP server if required</td><td class="clsSyntaxCells clsOddRow">No username</td></tr><tr><td class="clsSyntaxCells clsEvenRow"><b>password:[Value]
 </b></td><td class="clsSyntaxCells clsEvenRow">String</td><td class="clsSyntaxCells clsEvenRow">The password for the HTTP or FTP server if required</td><td class="clsSyntaxCells clsEvenRow">No password</td></tr><tr><td class="clsSyntaxCells clsOddRow"><b>name:[Value]
 </b></td><td class="clsSyntaxCells clsOddRow">String compliant with Windows Naming restrictions</td><td class="clsSyntaxCells clsOddRow">When the 'Capture' method is invoked the contents of the signature capture area are saved in a bitmap in the root directory of the device.  This parameter is used to specify the filename when storing the bitmap locally.</td><td class="clsSyntaxCells clsOddRow">Signature</td></tr></table>
-<table class="re-table"><col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="78%" /><col width="8%" /><col width="1%" /><col width="5%" /><col width="1%" /><col width="5%" /><col width="2%" /></table>	
 
 ##Events
 
@@ -72,15 +72,15 @@ Values are returned to the caller in RhoElements via Events.  Most modules conta
 <br />
 ###signatureSaveEvent
 The Signature Save Event is called when the captured signature has been successfully transfered to the specified destination. When 'Capture' is called with the HTTP protocol, the destination server message is returned. When 'Capture' is called with the FTP protocol, either 'OK: File Sent', 'OK: File Received' or 'ERROR' is returned. This tag should be used in conjunction with the Capture method.
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>transferResult</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">Success or failure of transfer, see note above.</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>transferResult</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">Success or failure of transfer, see note above.</td></tr></table>
 <br />
 ###signatureCaptureEvent
 Specifying a SignatureCaptureEvent will cause the signature to be returned as a Data URI object when the capture() method is invoked. A Data URI is a base 64 encoding of the signature and can be used to easily embed the signature on the page, store the image in a database or transfer the image to a server.
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>imageData</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">A DataURI representation of the captured Signature.</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>imageData</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">A DataURI representation of the captured Signature.</td></tr></table>
 <br />
 ###vectorEvent
 Signature data is formatted into a series of vectors and returned to the application via this callback function. The received data may not represent the entire signature as the vectors will be sent in batches if the signature is large. A single vector (array entry) contains an X, Y coordinate and the beginning / end of the signature is defined by (0xFFFF, 0xFFFF). This event is independent of the SignatureSaveEvent or capture method, when specified the event will be called whenever a 'pen up' occurs in the signature box.
-<table class="re-table"><col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>vectorArray</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">JavaScript array of vectors which represent the signature.</td></tr></table>
+<table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" /><tr><th class="tableHeading">ID</th><th class="tableHeading">Name</th><th class="tableHeading">Description</th></tr><tr><td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td><td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>vectorArray</b></td><td style="text-align:left;" class="clsSyntaxCells clsOddRow">JavaScript array of vectors which represent the signature.</td></tr></table>
 
 
 
@@ -117,7 +117,7 @@ All devices support ".bmp" as the default file format for the saved signature. E
 
 ##Requirements
 
-<table class="re-table"><tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
+<table class="facelift" style="width:100%" border="1" padding="5px"> <tr><th class="tableHeading">RhoElements Version</th><td class="clsSyntaxCell clsEvenRow">1.0.0 or above
 </td></tr><tr><th class="tableHeading">Supported Devices</th><td class="clsSyntaxCell clsOddRow">All supported devices.</td></tr><tr><th class="tableHeading">Minimum Requirements</th><td class="clsSyntaxCell clsOddRow">Touch Screen.</td></tr><tr><th class="tableHeading">Persistence</th><td class="clsSyntaxCell clsEvenRow">Partially Persistent - Changes to this module will persist when navigating to a new page with the exception of  The signature box and Save / Vector events. These will be cleared during page navigation.</td></tr></table>
 
 

@@ -25,24 +25,22 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 	</tr>
 </table>
 
-<!-- Table Break -->
-
 <table class="facelift" style="width:100%" border="1" padding="5px"> 
 <tr><th class="tableHeading">Rfid JavaScript Object Syntax:</th></tr>
 <tr>
-	<td class="clsSyntaxCells clsOddRow">By default the JavaScript Object <b>'rfid'</b> will exist on the current page and can be used to interact directly with the rfid.
+	<td class="clsSyntaxCells clsOddRow">By default the JavaScript object <b>'rfid'</b> will exist on the current page and can be used to interact directly with the RFID.
 	</td>
 </tr>
 <tr>
-	<td class="clsSyntaxCells clsEvenRow">To Invoke rfid methods via JavaScript use the following syntax: rfid.method();<P/>e.g. <b>rfid</b>.enumerate();
+	<td class="clsSyntaxCells clsEvenRow">To invoke RFID methods via JavaScript use the following syntax: rfid.method();<P/>e.g. <b>rfid</b>.enumerate();
 	</td>
 </tr>
 <tr>
-	<td class="clsSyntaxCells clsOddRow">To Set rfid parameters via JavaScript use the following syntax: rfid.parameter = 'value'; remembering to enclose your value in quotes where appropriate.<P/>e.g. <b>rfid</b>.antennaSelected = 'value';
+	<td class="clsSyntaxCells clsOddRow">To Set RFID parameters via JavaScript use the following syntax: rfid.parameter = 'value'; remembering to enclose your value in quotes where appropriate.<P/>e.g. <b>rfid</b>.antennaSelected = 'value';
 	</td>
 </tr>
 <tr>
-	<td class="clsSyntaxCells clsEvenRow">To Set rfid return events via JavaScript use the following syntax: rfid.event = JavaScript Function;<P />e.g. <b>rfid</b>.enumRFIDEvent = 'doFunction(%json)';<P /><!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
+	<td class="clsSyntaxCells clsEvenRow">To set RFID return events via JavaScript, use the following syntax: rfid.event = JavaScript Function;<P />e.g. <b>rfid</b>.enumRFIDEvent = 'doFunction(%json)';<P /><!-- For more details on the event syntax and parameters see the <a href="/rhoelements/RetrievalEvents">Retrieval Events</a> page.-->
 	</td>
 </tr>
 <tr>
@@ -51,9 +49,7 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 </tr>
 </table>
 
-<!-- Table Break -->
-
-<h2> Methods</h2>
+## Methods
 
 Items listed in this section indicate methods or parameters available to be retrieved.
 
@@ -64,38 +60,38 @@ Items listed in this section indicate methods or parameters available to be retr
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>enumerate</b></td>
-		<td class="clsSyntaxCells clsOddRow">Returns a list of RFID readers present on the device, and their respective capabilities via enumRFIDEvent.  For the supported devices, this method will return the number of RFID readers in the device as 1.
+		<td class="clsSyntaxCells clsOddRow">Returns the number of RFID readers present on the device, which always is '1' for serial devices, and could be greater for Bluetooth depending on the number of paired devices. 
 		</td>
 		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>connect</b></td>
-		<td class="clsSyntaxCells clsEvenRow">Creates connection to the default RFID reader. By default, the plug-in attempts to connect to the RFID Reader whenever the plug-in is loaded.</td>
+		<td class="clsSyntaxCells clsEvenRow">Creates a connection to the default RFID reader; attempts to connect whenever the plug-in is loaded. <strong>On Android, works only after using the enumerate callback()</strong>.</td>
 		<td class="clsSyntaxCells clsEvenRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>disconnect</b></td>
-		<td class="clsSyntaxCells clsOddRow">Disconnects the current RFID connection and flushes all properties of the "rfid" module,except for the events.</td>
+		<td class="clsSyntaxCells clsOddRow">Disconnects the current RFID connection and flushes all properties of the "RFID" module except events.</td>
 		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>stop</b></td>
-		<td class="clsSyntaxCells clsEvenRow">Soft trigger to stop a runnning inventory or locateTag operation.  All the pending tag reports are discarded.</td>
+		<td class="clsSyntaxCells clsEvenRow">Stops a softTrigger from running inventory or locateTag operation; all pending tag reports are discarded.</td>
 		<td class="clsSyntaxCells clsEvenRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>performInventory</b></td>
-		<td class="clsSyntaxCells clsOddRow">Performs an inventory operation on the RFID reader which is started and stopped according to the trigger settings done by the application. By default, performInventory starts an inventory operation immediately and there is no default stop trigger.  So, an explicit "stop" call must be made operation. Tags will be reported as part of the TagData Array in the tagEvent's JSON object.  When the property "invMemBank" is set(to either Reserved/EPC/TID/User) prior to calling performInventory, the corresponding memory-bank's data shall also be read for the tags being inventoried.  For the inventoried tags, additional fields may be reported as part of tagEvent JSON by setting to true properties such as "enableTagCRC", "enableTagPC", "enableTagSeenCount", "enableTagRSSI", "enableTagAntennaID",etc. As long as inventory operation is running, the plug-in cannot process those Meta-tags that could initiate a RFID operation like performInventory, locateTag, readTag and other Access operations. The plug-in returns an error string describing that it is busy and it can perform other RFID operations only when the inventory is stopped.</td>
+		<td class="clsSyntaxCells clsOddRow">Performs an inventory operation on the RFID reader, which is started and stopped according to the trigger settings implemented by the app. By default, starts an inventory operation immediately. There is no default stop trigger; an explicit "stop" call must be made. Tags are reported as part of the TagData Array in the tagEvent's JSON object. When the property "invMemBank" is set (to either Reserved, EPC, TID or User) prior to calling performInventory, the corresponding memory-bank's data also is read for the tags being inventoried. For inventoried tags, additional fields can be reported as part of tagEvent JSON by setting to true properties such as enableTagCRC, enableTagPC, enableTagSeenCount, enableTagRSSI, enableTagAntennaID, etc. As long as inventory operation is running, the plug-in cannot process those meta tags that could initiate an RFID operation such as performInventory, locateTag, readTag and other Access operations. The plug-in returns an error string indicating that it is busy and can perform other RFID operations only when the inventory is stopped.</td>
 		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>locateTag</b></td>
-		<td class="clsSyntaxCells clsEvenRow">Configures the locateTag operation which will look for a specific Tag ID on a specific antennaID, and will keep reporting tagEvents if the tag is found along with relative distance (In a scale of 0-100, 100 being the closest) to help locate the requested tag. Also if the beepOnRead is enabled (Default state), the beep frequency varies proportionate to the relative distance (Geiger counter).  The tagLocationing algorithms can use only one antenna to locate a tagID.  Thus, antennaSelected cannot take the take default value 0, but one of the antenna IDs supported by the device. As with performInventory, the start and stop trigger settings can autonomously invoke and stop the locateTag operation.  Please note that while the properties "reportUniqueTags","reportTrigger" are not relevant here, the tag field settings "enableTagAntennaID", "enableTagRssi", etc are still applicable</td>
+		<td class="clsSyntaxCells clsEvenRow">Configures the locateTag operation, which looks for a specific Tag ID on a specific antennaID and keeps reporting tagEvents if the tag is found along with relative distance (on a scale of 0&nsash;100, 100 being the closest) to help locate the requested tag. If beepOnRead is enabled (default), the beep frequency varies in proportion to the relative distance (Geiger counter). The tagLocationing algorithms can use only one antenna to locate a tagID. Thus, antennaSelected cannot take the default value '0' but takes one of the antenna IDs supported by the device. As with performInventory, the start and stop trigger settings can autonomously invoke and stop the locateTag operation. Please note that while the properties reportUniqueTags and reportTrigger are not relevant here, the tag field settings enableTagAntennaID, enableTagRssi, etc. are applicable.</td>
 		<td class="clsSyntaxCells clsEvenRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>killTag</b></td>
-		<td class="clsSyntaxCells clsOddRow">Kills the currently selected tag referenced by tagID, or kills tags that match the filter criteria. Requires tagKillPassword. tagID property is ignored if useAccessFilter property is set to true.  If useAccessFilter is set to true, then tagPatternA, tagPatternB and matchPattern will be used to filter out tags to perform the operation. If tagID is empty and useAccessFilter is false (i.e the default value),the kill operation will be attempted on all the tags in the field of view.</td>
+		<td class="clsSyntaxCells clsOddRow">Kills the currently selected tag referenced by tagID, or kills tags that match the filter criteria. Requires tagKillPassword. tagID property is ignored if useAccessFilter property is set to true. If useAccessFilter is set to true, then tagPatternA, tagPatternB and matchPattern is used to filter out tags to perform the operation. If tagID is empty and useAccessFilter is false (default value), the kill operation is attempted on all tags in the field of view.</td>
 		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
 	<tr>
@@ -105,7 +101,7 @@ Items listed in this section indicate methods or parameters available to be retr
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>addPreFilter</b></td>
-		<td class="clsSyntaxCells clsOddRow">Adds a pre-configured filter to the currently selected antenna.  It is used to sort out the subset of tags to participate in the next RFID operations. Multiple preFilters may be added, limited by the RFID reader.  Each of them should be referenced by a unique value (which should be assigned to preFilterID property) before calling addPreFilter method.</td>
+		<td class="clsSyntaxCells clsOddRow">Adds a pre-configured filter to the currently selected antenna. Used to sort out the subset of tags to participate in the next RFID operations. Multiple preFilters can be added, limited by the RFID reader. Each should be referenced by a unique value (which should be assigned to preFilterID property) before calling addPreFilter method.</td>
 		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
 	<tr>
@@ -130,12 +126,12 @@ Items listed in this section indicate methods or parameters available to be retr
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagRead</b></td>
-		<td class="clsSyntaxCells clsEvenRow">Reads from a tag or  a set of tags (defined by Access filter) using the pre-configured read Parameters. The tag data is returned via a tagEvent. The read data is available in tagData.memoryBankData field of the JSON object passed to tagEvent handler. The tagID property is ignored if useAccessFilter property is set to true. If useAccessFilter is set to true, then tagPatternA, tagPatternB and matchPattern will be used to filter out tags to perform the operation. If the tagID is empty and useAccessFilter is false, the read operation will be performed on all the tags in field of view.</td>
+		<td class="clsSyntaxCells clsEvenRow">Reads from a tag or a set of tags (defined by Access filter) using the pre-configured read Parameters. The tag data is returned via a tagEvent. The read data is available in tagData.memoryBankData field of the JSON object passed to tagEvent handler. The tagID property is ignored if useAccessFilter property is set to true. If useAccessFilter is set to true, tagPatternA, tagPatternB and matchPattern are used to filter out tags to perform the operation. If the tagID is empty and useAccessFilter is false, the read operation is performed on all tags in field of view.</td>
 		<td class="clsSyntaxCells clsEvenRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagWrite</b></td>
-		<td class="clsSyntaxCells clsOddRow">Writes data to a tag or a set of tags (defined by Access filter) using the pre-configured Write parameters. The tagID property is ignored if useAccessFilter property is set to true. If useAccessFilter is set to true, then tagPatternA, tagPatternB and matchPattern will be used to filter out tags to perform the operation. If the tagID is empty and useAccessFilter is false, the write operation will be attempted on all the tags in field of view</td>
+		<td class="clsSyntaxCells clsOddRow">Writes data to a tag or a set of tags (defined by Access filter) using the pre-configured Write parameters. The tagID property is ignored if useAccessFilter property is set to true, and tagPatternA, tagPatternB and matchPattern are used to filter out tags to perform the operation. If the tagID is empty and useAccessFilter is false, the write operation is attempted on all the tags in field of view.</td>
 		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
 	<tr>
@@ -155,17 +151,17 @@ Items listed in this section indicate methods or parameters available to be retr
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>setSingulation</b></td>
-		<td class="clsSyntaxCells clsOddRow">sets the pre-configured singulation parameters on all the antenna(e).  At least one of Session or TagPopulation parameters must be properly set before calling this method. When state-aware singulation is desired, performStateAwareSingulation is to be set to true and the configured values for SL flag and Inventory state will be matched during singulation of tags.</td>
+		<td class="clsSyntaxCells clsOddRow">Sets the pre-configured singulation parameters on all the antenna(e). Before calling this method, either Session or TagPopulation parameters must be properly set. When state-aware singulation is desired, performStateAwareSingulation is to be set to true and the configured values for SL flag and Inventory state are matched during singulation of tags.</td>
 		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>getSingulation</b></td>
-		<td class="clsSyntaxCells clsEvenRow">Requests the current singulation parameters (session and tag population) for the antenna(e). The result is returned in a singulationEvent. Note that all antennae share the same singulation settings.</td>
+		<td class="clsSyntaxCells clsEvenRow">Requests the current singulation parameters (session and tag population) for the antenna(e). The result is returned in a singulationEvent. <strong>All antennae share the same singulation settings</strong>.</td>
 		<td class="clsSyntaxCells clsEvenRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>getRFParams</b></td>
-		<td class="clsSyntaxCells clsOddRow">gets the current RF Mode, Transmit power parameter for the currently selected antenna. The result is return in rfParamsEvent. The property antennaSelected cannot take default value(0) because the RF Params are returned only for one antennaID.</td>
+		<td class="clsSyntaxCells clsOddRow">Gets the current RF Mode, Transmit power parameter for the currently selected antenna. The result is returned in rfParamsEvent. The property antennaSelected cannot take default value (0) because the RF Params are returned only for one antennaID.</td>
 		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
 	<tr>
@@ -191,7 +187,8 @@ Items listed in this section indicate methods or parameters available to be retr
 </table>
 
 ## Parameters
-Items listed in this section indicate parameters or attributes that can be set.
+
+Items in this section indicate parameters or attributes that can be configured. Values apply to all platforms (Android and Windows Mobile/CE) unless otherwise noted. 
 
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="20%" /><col width="20%" /><col width="38%" /><col width="22%" />
 	<tr bgcolor="#dce8ef">
@@ -566,17 +563,17 @@ Items listed in this section indicate parameters or attributes that can be set.
 Values are returned to the caller in RhoElements via Events.  Most modules contain events and those returned from this module are given below along with the event parameters.  Events can cause a navigation to a new URL or a JavaScript function on the page to be invoked.  Each event will in most cases have a number of parameters associated with it which will either be strings or JavaScript arrays.  Event parameters can be accessed either directly or via JSON objects.
 
 ### enumRFIDEvent
-Enumerates the RFID readers present on the device (normally only one) along with their respective capabilities
+Enumerates the RFID readers present on the device (normally limited to one) along with their respective capabilities. **On Android devices, return values are labeled "ID, Name and Address**." 
 <table class="facelift" style="width:100%" border="1" padding="5px"> <col width="3%" /><col width="20%" /><col width="77%" />
 	<tr>
 		<th class="tableHeading">ID</th>
 		<th class="tableHeading">Name</th>
-		<th class="tableHeading">Description</th>
+		<th class="tableHeading">Description ("Address" on Android)</th>
 	</tr>
 	<tr>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">1</td>
 		<td style="text-align:left;" class="clsSyntaxCells clsOddRow"><b>numberOfDevices</b></td>
-		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">returns total number of device enumerated, returns always 1</td>
+		<td style="text-align:left;" class="clsSyntaxCells clsOddRow">returns total number of device enumerated (always 1)</td>
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow" style="text-align:left;">2</td>

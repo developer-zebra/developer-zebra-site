@@ -80,6 +80,10 @@ _This setting is not available if "Send tokens" is disabled_.
 <img style="height:350px" src="../token_order.png"/>
 _Drag tokens to adjust output order_.
 <br>
+<br>
+Programmatically configure UDI Data Output and retrieve the configuration:
+* [SetConfig API](../../api/setconfig)
+* [GetConfig API](../../api/getconfig)
 
 -----
 

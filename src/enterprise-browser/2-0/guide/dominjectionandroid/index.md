@@ -43,13 +43,20 @@ To use DOM injection, **ALL of the following must be true**:
 **_DOM injection is NOT currently supported on Windows Mobile devices using the IE engine_**. 
 
 
+#### Supports Injection of:
+
+* JavaScript or CSS files stored locally on the device
+* JavaScript or CSS files stored on a server 
+* Meta tags described in the `tags` file
+* Local files specified using absolute paths or [EB substitution variable](../configreference/#substitutionvariables) (i.e. `%INSTALLDIR%`)
+
 ### Step 1- Prepare the "tags" file
 
-* **Create a text file to contain the desired DOM-injection elements** using the tagging syntax below. This becomes the list of elements to be injected into the DOM, and specifies the pages to receive the injections. 
+1. **Create a text file** to contain the desired DOM-injection elements using the tagging syntax below. This becomes the list of elements to be injected into the DOM and specifies the pages to receive the injections. 
 
-In the sample `mytags.txt` file referenced below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in the JavaScript comments, and in further detail below. 
+In the sample `mytags.txt` file referenced below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in the JavaScript comments and in further detail below. 
 
-> **Zebra recommends using substitution variables over absolute paths whenever possible**.
+> **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
 
 	:::xml
 	<!--Sample tags file -->

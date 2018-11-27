@@ -10,12 +10,10 @@ Apps made with Enterprise Browser 1.3 and higher are able to perform DOM injecti
 
 DOM injection is enabled by default in EB 1.3 and higher apps, and is **activated by the &lt;CustomDOMElements&gt; tag in the &lt;Application&gt; section** of the app's `Config.xml` file. This tag must contain a fully qualified path to the device-resident "tags" file, which is required for DOM injection. This file defines the DOM element(s) to be injected and the names of the pages to receive injections whenever they're displayed. **Injected CSS and JavaScript can be local, server-based or in combination**. Meta tags must be specified and fully contained within the tags file. No special licensing is required. 
 
-* **DOM injection is supported by**: 
-	* **Android with stock webkit**
-	* **Windows Mobile/CE with Zebra Webkit**
-	* **Windows CE with IE engine**
+### What is "the DOM"?
+In the context of modern web programming, **the "DOM" refers to HTML5 as it appears when running**. While the code of an HTML5 app might define certain variables, those variables contain no values until the app is executed. Therefore, it's accurate to think of the DOM as an HTML5 app that's in use, and of DOM injection as changes made to a running app that take effect immediately. 
 
-**_DOM injection is NOT supported on Windows Mobile devices using the IE engine_**. 
+The DOM injection tags file (i.e. `mytags.txt`) follows a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained below.
 
 ### Substitution
 
@@ -23,12 +21,30 @@ Android apps made with **EB 2.0 (and higher) can use [substitution variables](..
 
 **EB 2.0 and higher also supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 
 
+#### DOM injection is supported by: 
+
+* **Android with stock webkit**
+* **Windows Mobile/CE with Zebra Webkit**
+* **Windows CE with IE engine**
+
+**_DOM injection is NOT supported on Windows Mobile devices using the IE engine_**. 
+
+#### Supports injection of:
+
+* JavaScript or CSS files stored locally on the device
+* JavaScript or CSS files stored on a server 
+* Meta tags described in a `tags` file (stored on the device)
+* Local files specified using absolute paths or [EB substitution variables](../configreference/#substitutionvariables) (i.e. `%INSTALLDIR%`)
+* Elements (JavaScript, CSS and/or meta tags) on all navigated pages or only those specified
+* Elements on specified pages
+* Elements on pages that contain some unique string
+* Elements on pages based on a URL
+
+> **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
+
 -----
 
-## What is "the DOM"?
-In the context of modern web programming, **the "DOM" refers to HTML5 as it appears when running**. While the code of an HTML5 app might define certain variables, those variables contain no values until the app is executed. Therefore, it's accurate to think of the DOM as an HTML5 app that's in use, and of DOM injection as changes made to a running app that take effect immediately. 
-
-## How to use DOM Injection
+## How to Use DOM Injection
 
 To use DOM injection, **ALL of the following must be true**:
 
@@ -42,58 +58,45 @@ To use DOM injection, **ALL of the following must be true**:
 
 **_DOM injection is NOT currently supported on Windows Mobile devices using the IE engine_**. 
 
-
-#### Supports Injection of:
-
-* JavaScript or CSS files stored locally on the device
-* JavaScript or CSS files stored on a server 
-* Meta tags described in the `tags` file
-* Local files specified using absolute paths or [EB substitution variable](../configreference/#substitutionvariables) (i.e. `%INSTALLDIR%`)
-
 ### Step 1- Prepare the "tags" file
 
-1. **Create a text file** to contain the desired DOM-injection elements using the tagging syntax below. This becomes the list of elements to be injected into the DOM and specifies the pages to receive the injections. 
+**Create a text file** to contain the desired DOM-injection elements using the tagging syntax below. This becomes the list of elements to be injected into the DOM and specifies the pages to receive the injections. 
 
-In the sample `mytags.txt` file referenced below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in the JavaScript comments and in further detail below. 
+In the samples below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in further detail below. 
 
 > **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
 
-	:::xml
-	<!--Sample tags file -->
-	<!--FILENAME: 'mytags.txt' -->
-	<!--DESC: 'tags' file for DOM Injection -->
+#### Inject a JavaScript file on all pages using absolute path:
 
-	<!--JavaScript section-->
+	<script type='text/javascript' src='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/mytest.js' pages='*'/>
+<br>
 
-	<!--inject mytest.js into pages p1 and p2 only-->
-	<script type='text/javascript' src='./mytest.js' pages='p1;p2'/>
+#### Inject a CSS file on all pages using absolute path:
 
-	<!--inject mytest.js into all pages-->
-	<script type='text/javascript' src='./mytest.js' pages='*'/>
+	<link rel='stylesheet' type='text/css' href='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/mystyle.css'  pages='*' />
+<br>
 
-	<!--inject a server-based JavaScript (into all pages)-->
+#### Inject a JavaScript file from "installed" directory using substitution variable:
+
+	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='*' />
+<br>
+
+#### Inject a CSS file from the root directory using substitution variable:
+	<link rel='stylesheet' type='text/css' href='file://%PRIMARYDIR%/mystyle.css'  pages='*' />
+<br>
+
+#### Inject a JavaScript file from a server into all pages:
 	<script type='text/javascript' src='http://192.168.10.1:8081/test.js' pages='*'/>
+<br>
 
-	<!--inject a local JavaScript file (into p1 into p2)-->
-	<script type='text/javascript' src='file://\programfiles\enterprisebrowser\rho\apps\app\test.js' pages='p1;p2'/>
-	
-	<!--MetaTags section-->
+#### Inject a meta tag to refresh all pages every 30 seconds:
 
-	<!--refresh pages p1 and p2 every 30 seconds-->
-	<meta http-equiv="refresh" content="30" pages='p1;p2'/> 
+	<meta http-equiv="refresh" content="30" pages='*' />
+<br>
 
-	<!--refresh all pages every 30 seconds-->
-	<meta http-equiv="refresh" content="30" pages='*'/>
-	
-	<!--enable the scanner on all pages-->
-	<meta HTTP-Equiv="scanner" Content="Enable" pages='*'/>	
-	
-	<!--StyleSheets section-->
-
-	<link rel="stylesheet" type="text/css" href="mystyle.css" pages='p1;p2'/>
-	<link rel="stylesheet" type="text/css" href="mystyle.css" pages='*'/>
-	<!--link rel="stylesheet" type="text/css" href="mystyle.css" pages='*'-->	
-	<link rel="stylesheet" type="text/css" href="file://\programfiles\enterprisebrowser\rho\apps\app\mystyle.css" pages='p1;p2'>
+#### Enable the scanner on all pages
+	<meta HTTP-Equiv="scanner" Content="Enable" pages='*'/> 
+<br>
 
 Attributes of DOM Injection tags: 
 
@@ -101,15 +104,19 @@ Attributes of DOM Injection tags:
 
 **The following rules apply**: 
 
-* The ".html" file extension is assumed; specify the extension if different
+* The ".html" file extension is assumed; specify the extension only if different.
 * For local files, works from directory relative to the installation root; include qualified path or substitution variable if different. **Zebra recommends using substitution variables whenever possible**.  
-* For server-based CSS or JavaScript files, works relative to the app's start page; include qualified URL if different
+* For server-based CSS or JavaScript files, works relative to the app's start page; include qualified URL if different.
 * Accepts wildcard (&#42;) character to inject all files in relative or specified directory
-* Accepts URLs for server-based CSS and JavaScript files only
-* Meta tag data must be contained completely within the tags file  
-* If using server-based JavaScript, see JavaScript Injection section (below) for dependency cautions 
+* Accepts URLs for server-based CSS and JavaScript files only.
+* Meta tag data must be contained completely within the tags file.
+* If using server-based JavaScript, see JavaScript Injection section (below) for dependency cautions.
+* All tags in the `tags` file must contain the injection-specific **pages attribute**.
+* Tags also can contain the optional **pagecontent attribute** to trigger injection.
 
-* When tags are completed, **store the tags file on the device** and take note of the path 
+##### When tags are completed, **store the tags file on the device** and take note of the path. 
+
+-----
 
 ### Step 2- Specify path to tags file in Config.xml
 
@@ -191,63 +198,46 @@ Sample JavaScript to delay loading:
 		    });
 		})();
 
------
-<!-- moved to its own guide ../pageactions 
+## Sample Tags File
 
-## Page-based Actions
+In the sample `mytags.txt` file referenced below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in the JavaScript comments and in further detail below. 
 
-Apps made with EB 2.0 and higher can use of page-based actions, which execute JavaScript code or predefined commands whenever certain conditions are found on a page. For example, if a user encounters a "page not found" message, the app can be instructed to navigate to a login page. 
+	:::xml
+	<!--Sample tags file -->
+	<!--FILENAME: 'mytags.txt' -->
+	<!--DESC: 'tags' file for DOM Injection -->
 
-Page actions and the conditions that trigger them are defined in the `PageAction.xml` file, which is created and stored on the device in advance. An example of that file is shown below. 
+	<!--JavaScript section-->
 
------
-### Supported Commands
+	<!--inject mytest.js into pages p1 and p2 only-->
+	<script type='text/javascript' src='./mytest.js' pages='p1;p2'/>
 
-##### Case-sensitive:
-* **redirectTo-[url] -** Navigates to the specified URL. <br>
-Example: `redirectTo-http://MyCompany.com/mobile/MyApp/startup` 
-* **runscript-[codeBlockName] -** Executes the specified JavaScript code block as defined in the `CustomScript.xml` file. <br>
-Example: `runscript-clearcookiescript` executes a user-defined JavaScript code block in the “cleaarcookiescript” section of the `CustomScript.xml` file. [About the CustomScript file](../customize/script). 
+	<!--inject mytest.js into all pages-->
+	<script type='text/javascript' src='./mytest.js' pages='*'/>
 
-##### Not case-sensitive:
-* **home -** Navigates to the "Home" page defined in the [StartPage](../configreference/#startpage) tag of the app's `Config.xml` file. 
-* **back -** Navigates to the previous page in the EB app's history.
-* **doubleBack -** Navigates two pages back in the EB app's history.
-* **quit -** Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
+	<!--inject a server-based JavaScript (into all pages)-->
+	<script type='text/javascript' src='http://192.168.10.1:8081/test.js' pages='*'/>
 
------
+	<!--inject a local JavaScript file (into p1 into p2)-->
+	<script type='text/javascript' src='file://\programfiles\enterprisebrowser\rho\apps\app\test.js' pages='p1;p2'/>
+	
+	<!--MetaTags section-->
 
-### Example
+	<!--refresh pages p1 and p2 every 30 seconds-->
+	<meta http-equiv="refresh" content="30" pages='p1;p2'/> 
 
-		:::xml
-	<pageActionGroup>
-	   <pageAction1>
-	        <pageIdentification value="400 Session timed out" />
-	        <Action value="redirectTo-http://MyCompany.com/mobile/MyApp/startup" />
-	    </pageAction1>
+	<!--refresh all pages every 30 seconds-->
+	<meta http-equiv="refresh" content="30" pages='*'/>
+	
+	<!--enable the scanner on all pages-->
+	<meta HTTP-Equiv="scanner" Content="Enable" pages='*'/>	
+	
+	<!--StyleSheets section-->
 
-	    <pageAction2> 
-	        <pageIdentification value="Component" />
-	        <Action value="Home" />   
-	    </pageAction2>
-
-	    <pageAction3> 
-	         <pageIdentification value="Blocked" />
-	        <Action value="Back" />
-	    </pageAction3>
-
-	 	  <pageAction3> 
-	 		 <pageIdentification value="Delivery&nbsp;Number" />
-	        <Action value="Quit" />    
-	   </pageAction3>
-	</pageActionGroup>
-
-
-
- -->
-
-
-
+	<link rel="stylesheet" type="text/css" href="mystyle.css" pages='p1;p2'/>
+	<link rel="stylesheet" type="text/css" href="mystyle.css" pages='*'/>
+	<!--link rel="stylesheet" type="text/css" href="mystyle.css" pages='*'-->	
+	<link rel="stylesheet" type="text/css" href="file://\programfiles\enterprisebrowser\rho\apps\app\mystyle.css" pages='p1;p2'>
 
 
 

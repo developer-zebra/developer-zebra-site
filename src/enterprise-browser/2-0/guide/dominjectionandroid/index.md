@@ -70,19 +70,25 @@ FIXXXXX
 This attribute decides where the given tags to be injected. If wildcard character (&#42;) is used, the given file or meta tag will be injected on all navigated pages
 
 <-below shows an example of injecting a javascript file from installed directory using substitution variable on all navigated pages->
-<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='*' />
+
+	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='*' />
+
 User can also mention specific relative url on which it can be injected (applicable only for server pages). In this case, files or meta tags will be injected only on those specific urls. Relative path here refers to the path component of a URL to the specific page (path to the page after domain name).
 
 <-below shows an example of injecting a javascript file from installed directory using substitution variable on a specific page->
 If the complete url to the page is
 http://192.168.10.1:9999/mypages/page2.html 
 then the tag inside the ‘tags’ file would be as follows
-<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='/mypages/page2.html' />
+
+	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='/mypages/page2.html' />
+
 User can also mention multiple relative urls if needed. In such cases files or meta tags will be injected only to those pages. In such cases user should ensure that the pages should be separated by semi column (;)
 
 
 <-below shows an example of injecting a javascript file from installed directory using substitution variable on multiple pages->
-<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='/mypages/page2.html; /mypages/page5.html ' />
+
+	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='/mypages/page2.html; /mypages/page5.html ' />
+
 
 ### Pagecontent
 
@@ -91,15 +97,17 @@ If user not willing to inject files or meta tags on specific pages and if he cou
 Setting this attribute value will make Enterprise Browser to search for a specific string on the navigated pages before injecting the required files or meta tags. If Enterprise Browser finds the user given ‘pagecontent’ sting value on any navigated pages, it then inject the files or meta tags.
 
 <-below example inject enroll.js file to the page which has a string ‘Enter your Group ID’ ->
-<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pagecontent='Enter your Group ID' pages='*' />
+
+	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pagecontent='Enter your Group ID' pages='*' />
+
 User responsibility includes finding a unique string on the pages to fill the ‘pagecontent’ attribute value
 <-below example inject mystyle.css file to the page which has a string ‘'Enter your User Name ->
 
-<link rel='stylesheet' type='text/css' href='file://%INSTALLDIR%/mystyle.css'  pagecontent='Enter your User Name' pages='*' />
+	<link rel='stylesheet' type='text/css' href='file://%INSTALLDIR%/mystyle.css'  pagecontent='Enter your User Name' pages='*' />
 
 User can also give a HTML element as given below
 
-<script type='text/javascript' src='file://%INSTALLDIR%/previous.js' pagecontent='<input class="clr-button branded-highlight-bg branded-highlight-item" data-ats-id="Previous-button" name="Previous" onclick="" style="margin-right:5px;" type="button" value="Previous">' pages='*' />
+	<script type='text/javascript' src='file://%INSTALLDIR%/previous.js' pagecontent='<input class="clr-button branded-highlight-bg branded-highlight-item" data-ats-id="Previous-button" name="Previous" onclick="" style="margin-right:5px;" type="button" value="Previous">' pages='*' />
 
 Note: when giving big values ensure space and quotes are not creating any syntax error. In above example page content takes attribute value with single quote and user should ensure its value should not have single quote repeated. Enterprise Browser team recommends to use smaller unique values to avoid syntax error. No multiline values are supported.
 

@@ -47,16 +47,15 @@ One should ensure that APIs below are called after showing a keyboard or after h
     metaReceiver.restoreWebviewOnButtonbarHidden(); 
     //must call to do webview redraw on keyboard hide
 
+-----
 
-### Configuration Parameters
+## Configuration Parameters
 
-Enterprise Browser for SAP features can be configured to behave differently based on the newly introduced configuration parameters
-
+Enterprise Browser 2.0 (and higher) introduces configuration parameters that provide more control over he behavior of SAP apps.
 
 ### SAP Keyboard Parameters
 
-It is Enterprise Browser users responsibility to configure some of the Config.xml parameters to decide on
-When to show the keyboard . 
+Keyboard visibility and custom key layouts can be controlled through parameters in the `Config.xml` file. 
 
 Do user wants to show keyboard always on every pages. If yes set
 
@@ -107,9 +106,12 @@ Whether user wants to set page resizable and to reserve a minimum safe height fo
     :::xml
     <SIP>
       <ResizeOnButtonbar value="1"/>
-      <ButtonBarMaxHeight value="480"/> 
+      <ButtonBarMaxHeight value="default"/> 
     </SIP>
 
+Whether user wants to set page resizable and to reserve a minimum safe height for the keyboard can cover the screen. If yes set probable value for ButtonBarMaxHeight as below
+
+if user prefer to use default sapkeyboard layout, then it is recommended to use ButtonBarMaxHeight as default. If user prefer to use custom layout, then it is users responsibility to feed a value in pixels 
 
 ### Page Fitting
 

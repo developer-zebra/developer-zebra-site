@@ -104,15 +104,15 @@ Attributes of DOM Injection tags:
 
 **The following rules apply**: 
 
-* The ".html" file extension is assumed; specify the extension only if different.
-* For local files, works from directory relative to the installation root; include qualified path or substitution variable if different. **Zebra recommends using substitution variables whenever possible**.  
-* For server-based CSS or JavaScript files, works relative to the app's start page; include qualified URL if different.
-* Accepts wildcard (&#42;) character to inject all files in relative or specified directory
-* Accepts URLs for server-based CSS and JavaScript files only.
-* Meta tag data must be contained completely within the tags file.
-* If using server-based JavaScript, see JavaScript Injection section (below) for dependency cautions.
-* All tags in the `tags` file must contain the injection-specific **pages attribute**.
-* Tags also can contain the optional **pagecontent attribute** to trigger injection.
+* <u>**All tags in the "`tags`" file *must* contain the injection-specific "pages" attribute**</u>.
+* The `.html` file extension is assumed; specify the extension only if different.
+* For local files, actions work from the directory relative to the installation root; include qualified path or substitution variable (**recommended**) only if different. 
+* For server-based CSS or JavaScript files, actions work relative to the app's start page; include qualified URL if different.
+* Wildcard (&#42;) characters are accepted to inject all files in a relative or specified directory.
+* **URLs are supported for server-based CSS and JavaScript files only**.
+* All meta tag data must be contained completely within the `tags` file.
+* If using server-based JavaScript, see JavaScript injection section (below) for dependency cautions.
+* An optional **pagecontent attribute** can be used to add a page-specific string for triggering injection.
 
 ##### When tags are completed, **store the tags file on the device** and take note of the path. 
 

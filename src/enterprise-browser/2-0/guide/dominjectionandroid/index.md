@@ -62,47 +62,46 @@ To use DOM injection, **ALL of the following must be true**:
 
 ### 'Pages' tag
 
-This attribute decides where the given tags to be injected. If wildcard character (&#42;) is used, the given file or meta tag will be injected on all navigated pages
+The `pages` tag is used to specify the page(s) into which DOM elements are injected. This tag supports specification of an app's individual HTML pages ("startPage, scanPage" etc.), server-based application pages (specified as individual or relative URLs) and the wildcard character (&#42;), which injects the specified elements into all navigated pages of the app. 
 
-<-below shows an example of injecting a javascript file from installed directory using substitution variable on all navigated pages->
+**Note** The `.html` file extension is assumed. Other file extensions must be specified.
 
+#### Examples
+
+##### Inject a JavaScript file from installed directory (substitution variable) into all navigated pages: 
+	:::javascript
 	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='*' />
+<br>
 
-User can also mention specific relative url on which it can be injected (applicable only for server pages). In this case, files or meta tags will be injected only on those specific urls. Relative path here refers to the path component of a URL to the specific page (path to the page after domain name).
+##### Inject a JavaScript file into a relative server page:
+	:::javascript
+	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='/mypages/page2.html; /mypages/page5.html' />
+_DOM injection actions take place relative the complete URL to the app's startPage, which is "http://myserver.com/mypages/startPage.html"_. 
+<br>
 
-<-below shows an example of injecting a javascript file from installed directory using substitution variable on a specific page->
-If the complete url to the page is
-http://192.168.10.1:9999/mypages/page2.html 
-then the tag inside the ‘tags’ file would be as follows
-
-	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='/mypages/page2.html' />
-
-User can also mention multiple relative urls if needed. In such cases files or meta tags will be injected only to those pages. In such cases user should ensure that the pages should be separated by semi column (;)
-
-
-<-below shows an example of injecting a javascript file from installed directory using substitution variable on multiple pages->
-
-	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='/mypages/page2.html; /mypages/page5.html ' />
+-----
 
 ### 'Pagecontent' tag
+***Supported in Enterprise Browser 2.0 (and higher) only***. 
 
-Supported in Enterprise Browser 2.0 (and higher), this tag is used for injecting DOM files on navigated pages only when a specific string is present.
+The `pagecontent` tag is used for injecting DOM files on navigated pages only when a specific string is present on the page. This attribute allows the developer to set specific conditions under which certain actions are executed, for example to run a log-in script. 
 
-If user not willing to inject files or meta tags on specific pages and if he couldn’t find unique URI path to those pages, then Enterprise Browser team recommends the user to take advantage of this attribute.
-Setting this attribute value will make Enterprise Browser to search for a specific string on the navigated pages before injecting the required files or meta tags. If Enterprise Browser finds the user given ‘pagecontent’ sting value on any navigated pages, it then inject the files or meta tags.
+##### Inject `enroll.js` file if page contains the string ‘Enter Login ID’:
 
-<-below example inject enroll.js file to the page which has a string ‘Enter your Group ID’ ->
+	:::javascript
+	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pagecontent='Enter Login ID' pages='*' />
+<br>
 
-	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pagecontent='Enter your Group ID' pages='*' />
+##### Inject `mystyle.css` file if page contains the string Enter User Name:
 
-User responsibility includes finding a unique string on the pages to fill the ‘pagecontent’ attribute value
-<-below example inject mystyle.css file to the page which has a string ‘'Enter your User Name ->
-
-	<link rel='stylesheet' type='text/css' href='file://%INSTALLDIR%/mystyle.css'  pagecontent='Enter your User Name' pages='*' />
+	:::javascript
+	<link rel='stylesheet' type='text/css' href='file://%INSTALLDIR%/mystyle.css'  pagecontent='Enter User Name' pages='*' />
+<br>
 
 User can also give a HTML element as given below
 
 	<script type='text/javascript' src='file://%INSTALLDIR%/previous.js' pagecontent='<input class="clr-button branded-highlight-bg branded-highlight-item" data-ats-id="Previous-button" name="Previous" onclick="" style="margin-right:5px;" type="button" value="Previous">' pages='*' />
+<br>
 
 Note: when giving big values ensure space and quotes are not creating any syntax error. In above example page content takes attribute value with single quote and user should ensure its value should not have single quote repeated. Enterprise Browser team recommends to use smaller unique values to avoid syntax error. No multiline values are supported.
 
@@ -144,7 +143,7 @@ In the samples below, notice a syntax similar to that of ordinary HTML tags for 
 
 Attributes of DOM Injection tags: 
 
-**Note that the "pages" attribute specifies the file name of the page into which the element defined in the tag will be injected**. 
+**Note that the "pages" attribute specifies the file name of the page into which the element defined in the tag is injected**. 
 
 **The following rules apply**: 
 

@@ -64,7 +64,7 @@ To use DOM injection, **ALL of the following must be true**:
 
 The `pages` tag is used to specify the page(s) into which DOM elements are injected. This tag supports specification of an app's individual HTML pages ("startPage, scanPage" etc.), server-based application pages (specified as individual or relative URLs) and the wildcard character (&#42;), which injects the specified elements into all navigated pages of the app. 
 
-**Note** The `.html` file extension is assumed. All other file extensions must be specified.
+**Note: The** `.html` **file extension is assumed. All other file extensions must be specified**.
 
 #### Examples
 In the examples below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in further detail below. 
@@ -79,7 +79,7 @@ In the examples below, notice a syntax similar to that of ordinary HTML tags for
 ##### Inject a JavaScript file into one server page using relative reference:
 	:::javascript
 	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='/mypages/page2.html; /mypages/page5.html' />
-_On server-based apps, DOM injection references are relative to the startPage URL, for example "http://myserver.com/mypages/startPage.html"_ 
+_On server-based apps, DOM injection references are relative to the startPage URL. <br>For example, "http://myserver.com/mypages/startPage.html"_ could be the full URL for the example above. 
 
 <br>
 
@@ -110,15 +110,14 @@ _On server-based apps, DOM injection references are relative to the startPage UR
 	<meta HTTP-Equiv="scanner" Content="Enable" pages='*'/> 
 <br>
 
-
 -----
 
 ### 'Pagecontent' tag
 ***Supported in Enterprise Browser 2.0 (and higher) only***. 
 
-The `pagecontent` tag is used for injecting DOM files on navigated pages only when a specific string or HTML elements is present on the page. This allows the developer to set specific conditions under which certain actions are executed, for example to run a log-in script. 
+The `pagecontent` tag is used for injecting DOM files on navigated pages only when a specific string or HTML element is present on the page. This allows the developer to set specific conditions under which an action is executed, for example to run a log-in script. 
 
-**Note** The `.html` file extension is assumed. All other file extensions must be specified.
+**Note: The** `.html` **file extension is assumed. All other file extensions must be specified**.
 
 #### Examples
 
@@ -134,7 +133,7 @@ The `pagecontent` tag is used for injecting DOM files on navigated pages only wh
 	<link rel='stylesheet' type='text/css' href='file://%INSTALLDIR%/mystyle.css'  pagecontent='Enter User Name' pages='*' />
 <br>
 
-#### Inject `previous.js` when a specific HTML element is present: 
+##### Inject `previous.js` when a specific HTML element is present: 
 	::::html
 	<script type='text/javascript' src='file://%INSTALLDIR%/previous.js' pagecontent='<input class="clr-button branded-highlight-bg branded-highlight-item" data-ats-id="Previous-button" name="Previous" onclick="" style="margin-right:5px;" type="button" value="Previous">' pages='*' />
 <br>
@@ -149,19 +148,19 @@ Attributes of DOM Injection tags:
 
 **The following rules apply**: 
 
-* <u>**All tags in the "`tags`" file *must* contain the injection-specific "pages" attribute**</u>.
+* <u>**All tags in the** `tags` **file *must* contain the injection-specific "pages" attribute**</u>.
 * The `.html` file extension is assumed; specify the extension only if different.
-* For local files, actions work from the directory relative to the installation root; include qualified path or substitution variable (**recommended**) only if different. 
-* For server-based CSS or JavaScript files, actions work relative to the app's start page; include qualified URL if different.
-* Wildcard (&#42;) characters are accepted to inject all files in a relative or specified directory.
+* **For local files**, actions work from the directory relative to the installation root; include qualified path or substitution variable (**recommended**) only if different. 
+* **For server-based CSS or JavaScript files**, actions work relative to the app's start page; include full URL if different.
+* **Wildcard (&#42;) characters are accepted** to inject all files in a relative or specified directory.
 * **URLs are supported for server-based CSS and JavaScript files only**.
 * All meta tag data must be contained completely within the `tags` file.
-* If using server-based JavaScript, see JavaScript injection section (below) for dependency cautions.
-* An optional **pagecontent attribute** can be used to add a page-specific string for triggering injection.
-* Attribute values must not be left blank to avoid unpredictable results.
+* **If using server-based JavaScript**, see JavaScript injection section (below) for dependency cautions.
+* **An optional pagecontent attribute can be used** to add a page-specific string for triggering injection (EB 2.0 and higher only).
+* Attribute values must not be left blank.
 * All tags must have beginning (&lt;) and ending (/&gt;) angle brackets.
-* Do not combine multiple DOM tags on the same line inside the `tags` file.
-* Local pages support only the `pages='*’` syntax. To inject tags to a specific local page, use `pages='*'` in combination with the `‘pagecontent’` attribute.
+* Each tag in the `tags` file must be on a separate line.
+* Local pages support only the `pages='*’` syntax. To inject tags into a specific local page, use `pages='*'` in combination with the `pagecontent` attribute.
 
 ##### When all tags are completed, store the tags file on the device and take note of the file name and path.
 
@@ -171,7 +170,7 @@ Attributes of DOM Injection tags:
 
 The `tags` file created in Step 1 must reside on the device. 
 
- * **Specify the path to the tags file** by adding a line like the one below in the `<Application>` section in the app's `Config.xml` file:  
+ * **Specify the path to the tags file** by adding a line (similar to the one below) in the `<Application>` section in the app's `Config.xml` file:  
 
 		:::xml
 		<Application>
@@ -183,7 +182,7 @@ The `tags` file created in Step 1 must reside on the device.
 
 For information about how to configure the `Config.xml` file, see the [Config.xml Reference Guide](../configreference). **Note**: The &lt;CustomDOMElements&gt; tag cannot be configured using the [On-device Config Editor utility](../OndeviceConfig).  
 
-> **The value inside the &lt;CustomDOMElements&gt; tag is empty by default. DOM injection cannot function unless a path to the tags file on the device is specified**. 
+> **The value inside the &lt;CustomDOMElements&gt; tag is empty by default. DOM injection cannot function unless a path to the `tags` file on the device is specified**. 
 
 -----
 
@@ -222,7 +221,7 @@ In another example, the tags file below is used to inject the `rhoapi-modules.js
  
     	<script type="text/javascript" src="./test.js" pages="/dominjection/index.html" />
 
-If an attribute contained in the rhoapi-modules file--for example the Rho namespace--is required by `test.js`, an error might occur if `test.js` is injected first. To guard against this, it might be useful for `test.js` to include some logic like the JavaScript below so that it waits until its dependent JavaScript (`rhoapi-modules.js`) is loaded.
+If an attribute contained in the rhoapi-modules file--for example the Rho namespace--is required by `test.js`, an error might occur if `test.js` is injected first. To guard against this, it might be useful for `test.js` to include some logic (like the JavaScript below) so that it waits until its dependent JavaScript (`rhoapi-modules.js`) is loaded.
 
 Sample JavaScript to delay loading: 
 

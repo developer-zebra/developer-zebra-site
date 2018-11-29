@@ -64,11 +64,14 @@ To use DOM injection, **ALL of the following must be true**:
 
 The `pages` tag is used to specify the page(s) into which DOM elements are injected. This tag supports specification of an app's individual HTML pages ("startPage, scanPage" etc.), server-based application pages (specified as individual or relative URLs) and the wildcard character (&#42;), which injects the specified elements into all navigated pages of the app. 
 
-**Note** The `.html` file extension is assumed. Other file extensions must be specified.
+**Note** The `.html` file extension is assumed. All other file extensions must be specified.
 
 #### Examples
+In the examples below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in further detail below. 
 
-##### Inject a JavaScript file from installed directory (substitution variable) into all navigated pages: 
+> **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
+
+##### Inject a JavaScript file from "installed" directory (substitution variable) into all navigated pages: 
 	:::javascript
 	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='*' />
 <br>
@@ -79,12 +82,44 @@ The `pages` tag is used to specify the page(s) into which DOM elements are injec
 _DOM injection actions take place relative the complete URL to the app's startPage, which is "http://myserver.com/mypages/startPage.html"_. 
 <br>
 
+##### Inject a JavaScript file on all pages using absolute path:
+
+	<script type='text/javascript' src='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/mytest.js' pages='*'/>
+<br>
+
+##### Inject a CSS file on all pages using absolute path:
+
+	<link rel='stylesheet' type='text/css' href='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/mystyle.css'  pages='*' />
+<br>
+
+##### Inject a CSS file from the root directory using substitution variable:
+	<link rel='stylesheet' type='text/css' href='file://%PRIMARYDIR%/mystyle.css'  pages='*' />
+<br>
+
+##### Inject a JavaScript file from a server into all pages:
+	<script type='text/javascript' src='http://myserver.com/test.js' pages='*'/>
+<br>
+
+##### Inject a meta tag to refresh all pages every 30 seconds:
+
+	<meta http-equiv="refresh" content="30" pages='*' />
+<br>
+
+##### Enable the scanner on all pages
+	<meta HTTP-Equiv="scanner" Content="Enable" pages='*'/> 
+<br>
+
+
 -----
 
 ### 'Pagecontent' tag
 ***Supported in Enterprise Browser 2.0 (and higher) only***. 
 
-The `pagecontent` tag is used for injecting DOM files on navigated pages only when a specific string is present on the page. This attribute allows the developer to set specific conditions under which certain actions are executed, for example to run a log-in script. 
+The `pagecontent` tag is used for injecting DOM files on navigated pages only when a specific string or HTML elements is present on the page. This allows the developer to set specific conditions under which certain actions are executed, for example to run a log-in script. 
+
+**Note** The `.html` file extension is assumed. All other file extensions must be specified.
+
+#### Examples
 
 ##### Inject `enroll.js` file if page contains the string ‘Enter Login ID’:
 
@@ -98,48 +133,14 @@ The `pagecontent` tag is used for injecting DOM files on navigated pages only wh
 	<link rel='stylesheet' type='text/css' href='file://%INSTALLDIR%/mystyle.css'  pagecontent='Enter User Name' pages='*' />
 <br>
 
-User can also give a HTML element as given below
-
+#### Inject `previous.js` when a specific HTML element is present: 
+	::::html
 	<script type='text/javascript' src='file://%INSTALLDIR%/previous.js' pagecontent='<input class="clr-button branded-highlight-bg branded-highlight-item" data-ats-id="Previous-button" name="Previous" onclick="" style="margin-right:5px;" type="button" value="Previous">' pages='*' />
 <br>
 
-Note: when giving big values ensure space and quotes are not creating any syntax error. In above example page content takes attribute value with single quote and user should ensure its value should not have single quote repeated. Enterprise Browser team recommends to use smaller unique values to avoid syntax error. No multiline values are supported.
-
-In the samples below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in further detail below. 
-
-> **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
-
-#### Inject a JavaScript file on all pages using absolute path:
-
-	<script type='text/javascript' src='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/mytest.js' pages='*'/>
-<br>
-
-#### Inject a CSS file on all pages using absolute path:
-
-	<link rel='stylesheet' type='text/css' href='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/mystyle.css'  pages='*' />
-<br>
-
-#### Inject a JavaScript file from "installed" directory using substitution variable:
-
-	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='*' />
-<br>
-
-#### Inject a CSS file from the root directory using substitution variable:
-	<link rel='stylesheet' type='text/css' href='file://%PRIMARYDIR%/mystyle.css'  pages='*' />
-<br>
-
-#### Inject a JavaScript file from a server into all pages:
-	<script type='text/javascript' src='http://192.168.10.1:8081/test.js' pages='*'/>
-<br>
-
-#### Inject a meta tag to refresh all pages every 30 seconds:
-
-	<meta http-equiv="refresh" content="30" pages='*' />
-<br>
-
-#### Enable the scanner on all pages
-	<meta HTTP-Equiv="scanner" Content="Enable" pages='*'/> 
-<br>
+**Notes**: 
+* When specifying lengthy HTML elements, check syntax carefully to avoid errors. 
+* Multi-line values are not supported.
 
 Attributes of DOM Injection tags: 
 

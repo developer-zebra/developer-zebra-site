@@ -17,15 +17,15 @@ The DOM injection tags file (i.e. `mytags.txt`) follows a syntax similar to that
 
 ### Substitution
 
-Android apps made with **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** such as those for the device's "primary directory" (%PRIMARYDIR%) and an app's "install directory" (%INSTALLDIR%) in place of fully qualified path names. This can help make coding easier and less error prone while simplifying enterprise deployment across varied devices. 
+Android apps made with **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** such as those for the device's "primary directory" (%PRIMARYDIR%) and an app's "install directory" (%INSTALLDIR%) in place of fully qualified (absolute) path names. This can help make coding easier and less error prone while simplifying enterprise deployment across varied devices. **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
 
 **EB 2.0 and higher also supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 
 
 #### DOM injection is supported by: 
 
-* **Android with stock webkit**
-* **Windows Mobile/CE with Zebra Webkit**
-* **Windows CE with IE engine**
+* **Android apps that use the stock webkit**
+* **Windows Mobile/CE apps using the Zebra Webkit**
+* **Windows CE apps using the IE engine**
 
 **_DOM injection is NOT supported on Windows Mobile devices using the IE engine_**. 
 
@@ -33,39 +33,34 @@ Android apps made with **EB 2.0 (and higher) can use [substitution variables](..
 
 * JavaScript or CSS files stored locally on the device
 * JavaScript or CSS files stored on a server 
-* Meta tags described in a `tags` file (stored on the device)
+* Meta tags described in the `tags` file (stored on the device)
 * Local files specified using absolute paths or [EB substitution variables](../configreference/#substitutionvariables) (i.e. `%INSTALLDIR%`)
-* Elements (JavaScript, CSS and/or meta tags) on all navigated pages or only those specified
+* Elements (JavaScript, CSS and/or meta tags) on all navigated pages
 * Elements on specified pages
-* Elements on pages that contain some unique string
+* Elements on pages that contain a specified string
 * Elements on pages based on a URL
 
 > **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
 
------
-
-## How to Use DOM Injection
+### Requirements
 
 To use DOM injection, **ALL of the following must be true**:
 
-* The app was made with Enterprise Browser 1.3 (or higher)
+* The app being injected was made with Enterprise Browser 1.3 (or higher)
 * A `tags` file containing elements to be injected has been created and pushed to the target device
-* The path to the `tags` file is specified in the app's `Config.xml` file (see Step 2, below)
+* The path to the `tags` file is specified in the app's `Config.xml` file (see [Step 2](#step2updateconfigxml))
 * The target device is running one of the following: 
 	* Android with stock webkit 
 	* Windows Mobile/CE device with Zebra Webkit
 	* Windows CE with IE engine
 
-**_DOM injection is NOT currently supported on Windows Mobile devices using the IE engine_**. 
+-----
 
 ## Step 1- Prepare the "tags" file
 
-**Create a text file** to contain the desired DOM-injection elements using the tagging syntax below. This becomes the list of elements to be injected into the DOM and specifies the pages to receive the injections. 
+**Create a text file** to contain the desired DOM-injection elements, which are defined using the tagging syntax below. This becomes the list of elements (i.e. JavaScript, CSS and/or meta tags) to be injected into the DOM and specifies the pages to receive the injections. 
 
-
-FIXXXXX
-
-### Pages
+### 'Pages' tag
 
 This attribute decides where the given tags to be injected. If wildcard character (&#42;) is used, the given file or meta tag will be injected on all navigated pages
 
@@ -89,10 +84,10 @@ User can also mention multiple relative urls if needed. In such cases files or m
 
 	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='/mypages/page2.html; /mypages/page5.html ' />
 
+### 'Pagecontent' tag
 
-### Pagecontent
+Supported in Enterprise Browser 2.0 (and higher), this tag is used for injecting DOM files on navigated pages only when a specific string is present.
 
-This attribute is newly introduced in Enterprise Browser 2.0 version. It is used for injecting dom files on navigated pages where a specific string is present.
 If user not willing to inject files or meta tags on specific pages and if he couldn’t find unique URI path to those pages, then Enterprise Browser team recommends the user to take advantage of this attribute.
 Setting this attribute value will make Enterprise Browser to search for a specific string on the navigated pages before injecting the required files or meta tags. If Enterprise Browser finds the user given ‘pagecontent’ sting value on any navigated pages, it then inject the files or meta tags.
 
@@ -110,8 +105,6 @@ User can also give a HTML element as given below
 	<script type='text/javascript' src='file://%INSTALLDIR%/previous.js' pagecontent='<input class="clr-button branded-highlight-bg branded-highlight-item" data-ats-id="Previous-button" name="Previous" onclick="" style="margin-right:5px;" type="button" value="Previous">' pages='*' />
 
 Note: when giving big values ensure space and quotes are not creating any syntax error. In above example page content takes attribute value with single quote and user should ensure its value should not have single quote repeated. Enterprise Browser team recommends to use smaller unique values to avoid syntax error. No multiline values are supported.
-
-
 
 In the samples below, notice a syntax similar to that of ordinary HTML tags for including scripts, style sheets and meta data. Parts of the tags as they apply to DOM injection are explained in further detail below. 
 
@@ -164,14 +157,18 @@ Attributes of DOM Injection tags:
 * All meta tag data must be contained completely within the `tags` file.
 * If using server-based JavaScript, see JavaScript injection section (below) for dependency cautions.
 * An optional **pagecontent attribute** can be used to add a page-specific string for triggering injection.
+* Attribute values must not be left blank to avoid unpredictable results.
+* All tags must have beginning (&lt;) and ending (/&gt;) angle brackets.
+* Do not combine multiple DOM tags on the same line inside the `tags` file.
+* Local pages support only the `pages='*’` syntax. To inject tags to a specific local page, use `pages='*'` in combination with the `‘pagecontent’` attribute.
 
-##### When tags are completed, **store the tags file on the device** and take note of the path. 
+##### When all tags are completed, store the tags file on the device and take note of the file name and path.
 
 -----
 
-### Step 2- Specify path to tags file in Config.xml
+### Step 2- Update Config.xml
 
-The tags file created in Step 1 must reside on the device. 
+The `tags` file created in Step 1 must reside on the device. 
 
  * **Specify the path to the tags file** by adding a line like the one below in the `<Application>` section in the app's `Config.xml` file:  
 
@@ -187,27 +184,25 @@ For information about how to configure the `Config.xml` file, see the [Config.xm
 
 > **The value inside the &lt;CustomDOMElements&gt; tag is empty by default. DOM injection cannot function unless a path to the tags file on the device is specified**. 
 
+-----
+
 ## JavaScript Injection
-JavaScript can be injected either through file protocol or by using an absolute path, [substitution variable](../configreference/#substitutionvariables), or server path relative to the Enterprise Browser app's start page. Different rules apply to injection of local and server-based JavaScript, and might affect the app if dependencies exist between the JavaScript modules in use. 
+JavaScript can be injected either through file protocol or by using an absolute path, [substitution variable](../configreference/#substitutionvariables), or server path relative to the EB app's start page. **Different rules apply to injection of local and server-based JavaScript, and might affect the app if dependencies exist between the JavaScript modules in use**. 
 
-####Inject Local JavaScript
-When using the file protocol, the JavaScript file(s) must be resident on the target device, and have path(s) specified in the `src` attribute of the script tag using the `file://` designation. For example, the following lines will inject four JavaScript files into all pages of the app-relative directory:
+#### Inject Local JavaScript
+When using the file protocol, the JavaScript file(s) must be resident on the target device and have path(s) specified in the `src` attribute of the script tag using the `file://` designation. For example, the following lines inject four JavaScript files into all pages of the app-relative directory:
 
-	:::xml
-	<script type='text/javascript' src='file://\Program Files\EnterpriseBrowser\rho\apps\app\elements.js' pages='*' /> 
+	:::xml 
+	<script type='text/javascript' src='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/mytest.js' pages='*'/>
 
-	<script type='text/javascript' src='file://\Program Files\EnterpriseBrowser\rho\apps\app\jquery.js' pages='*' /> 
-
-	<script type='text/javascript' src='file://\Program Files\EnterpriseBrowser\rho\apps\app\jquery-1.11.3.js' pages='*' />
-
-	<script type='text/javascript' src='file://\Program Files\EnterpriseBrowser\rho\apps\app\test.js' pages='*' />  
+	<script type="text/javascript" src=" http://192.168.19.2:9090/scripts/test.js" pages="/dominjection/index.html" />
 
 **Notes**
 * Local JavaScript files are injected consecutively in the order in which they are listed in the tags file.
-* Each JavaScript file will be loaded completely before the next file is loaded. 
+* Each JavaScript file is loaded completely before the next file begins to load. 
 * DOM injections occur every time a page is loaded, **so changes to JavaScript files injected in this way can be put into effect simply by refreshing the relevant page**.
 
-####Inject Server-based JavaScript
+#### Inject Server-based JavaScript
 * Here, the same four JavaScript files are injected from a server: 
 
 		:::xml
@@ -216,15 +211,15 @@ When using the file protocol, the JavaScript file(s) must be resident on the tar
 		<script type='text/javascript' src='http:\\192.168.1.1:8081\jquery-1.11.3.js' pages='*' />
 		<script type='text/javascript' src='http:\\192.168.1.1:8081\test.js' pages='*' />  
 
-With server-based injection, Enterprise Browser will be commanding the engine to inject JavaScript to the DOM asynchronously, which might cause `jquery.js` to be loaded before `element.js`, for example. Therefore, **if JavaScript files are interdependent, additional steps might be required to avoid failure due to a dependency issue**. 
+With server-based injection, Enterprise Browser commands the engine to inject JavaScript to the DOM asynchronously, which (for example) might cause `jquery.js` to be loaded before `element.js`. Therefore, **if JavaScript files are interdependent, additional steps might be required to avoid failure due to a dependency issue** (see below). 
 
 In another example, the tags file below is used to inject the `rhoapi-modules.js` and `test.js` files into the page `/dominjection/index.html`. 
 
 
 		:::xml
-		<script type="text/javascript" src="./rhoapi-modules.js" pages="/dominjection/index.html" />
-
-		<script type="text/javascript" src="./test.js" pages="/dominjection/index.html" />
+		<script type="text/javascript" src="http://192.168.19.2:9090/scripts/rhoapi-modules.js" pages="/dominjection/index.html" />
+ 
+    	<script type="text/javascript" src="./test.js" pages="/dominjection/index.html" />
 
 If an attribute contained in the rhoapi-modules file--for example the Rho namespace--is required by `test.js`, an error might occur if `test.js` is injected first. To guard against this, it might be useful for `test.js` to include some logic like the JavaScript below so that it waits until its dependent JavaScript (`rhoapi-modules.js`) is loaded.
 
@@ -233,21 +228,21 @@ Sample JavaScript to delay loading:
 
 		:::javascript
 		(function() {
-		   
-		    // Poll for jQuery to come into existence
-		    var checkReady = function(callback) {
-		        if (window.Rho) {
-		            callback(Rho);
-		        }
-		        else {
-		            window.setTimeout(function() { checkReady(callback); }, 100); //check here
-		        }
-		    };
-		    // Start polling...
-		    checkReady(function(Rho) {
-		      alert(Rho.Application.appName); //use rho api here
-		    });
-		})();
+ 
+        // Poll for jQuery to come into existence
+        var checkReady = function(callback) {
+            if (window.EB) {
+                callback(EB);
+            }
+            else {
+                window.setTimeout(function() { checkReady(callback); }, 100); //check here
+            }
+        };
+        // Start polling...
+        checkReady(function(EB) {
+          alert(EB.Application.appName); //use EB api here
+        });
+    })();
 
 ## Sample Tags File
 

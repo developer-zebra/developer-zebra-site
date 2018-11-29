@@ -71,28 +71,29 @@ In the examples below, notice a syntax similar to that of ordinary HTML tags for
 
 > **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
 
-##### Inject a JavaScript file from "installed" directory (substitution variable) into all navigated pages: 
+##### Inject a JavaScript file into all pages from "installed" directory (substitution variable): 
 	:::javascript
 	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='*' />
 <br>
 
-##### Inject a JavaScript file into a relative server page:
+##### Inject a JavaScript file into one server page using relative reference:
 	:::javascript
 	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='/mypages/page2.html; /mypages/page5.html' />
-_DOM injection actions take place relative the complete URL to the app's startPage, which is "http://myserver.com/mypages/startPage.html"_. 
+_On server-based apps, DOM injection references are relative to the startPage URL, for example "http://myserver.com/mypages/startPage.html"_ 
+
 <br>
 
-##### Inject a JavaScript file on all pages using absolute path:
+##### Inject a JavaScript file into all pages using absolute path:
 
 	<script type='text/javascript' src='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/mytest.js' pages='*'/>
 <br>
 
-##### Inject a CSS file on all pages using absolute path:
+##### Inject a CSS file into all pages using absolute path:
 
 	<link rel='stylesheet' type='text/css' href='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/mystyle.css'  pages='*' />
 <br>
 
-##### Inject a CSS file from the root directory using substitution variable:
+##### Inject a CSS file into all pages from the root directory (substitution variable):
 	<link rel='stylesheet' type='text/css' href='file://%PRIMARYDIR%/mystyle.css'  pages='*' />
 <br>
 

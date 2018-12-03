@@ -1273,12 +1273,18 @@ Defines the amount of time (in milliseconds) the application should wait to esta
 
 ## Screen orientation
 ### AutoRotate
-Controls automatic rotation of screen orientation between portrait and landscape modes. When disabled, the orientation of the display does not change when the device is rotated. **Note: This tag is overridden by the LockOrientation tag setting (below)**.
+Controls automatic rotation of the screen (between portrait and landscape modes) whenever the device's physical orientation changes. When disabled, the orientation of the display does not change when device is rotated. 
+
+**Notes**: 
+* Overridden by the LockOrientation tag setting (below)
+* Overrides rotation setting in the Android System settings 
+* If this tag is missing or unspecified, app uses Settings panel setting
+* Tag not included in default `Config.xml` file; must be added manually
 
 **Possible Values**:
 
-* 0 - Disabled
-* 1 - Enabled
+* 0 - Disabled (screen does NOT rotate when device orientation changes)
+* 1 - Enabled (screen rotates when device orientation changes)
 
 #### Example
 
@@ -1288,7 +1294,7 @@ Controls automatic rotation of screen orientation between portrait and landscape
 -----
 
 ### LockOrientation
-Forces a particular screen orientation (portrait or landscape) when an EB app launches. **This tag is not included in the default `Config.xml` file; it must be added manually**. **Note**: This tag is overrides the AutoRotate tag setting (above).
+Forces a particular screen orientation (portrait or landscape) when an EB app launches. **This tag is not included in the default `Config.xml` file; it must be added manually**. **Note**: This tag overrides the AutoRotate tag setting (above).
 
 **Possible Values**:
 

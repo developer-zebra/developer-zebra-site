@@ -10,10 +10,10 @@ This guide provides instructions for modifying an EB app for Android to work wit
 
 #### EB 2.0 for SAP
 
-Enterprise Browser 2.0 (and higher) includes a package (`EnterpriseBrowser_SAP_signed_v2.0.1.0.apk`) with 
-ready-to-use configuration files for easily running SAP ITS mobile app(s) on Zebra Android devices. The package can be converted to the standard EB edition using steps in the [conversion section](#converttostancaedeb) below. 
+Enterprise Browser 2.0 (and higher) includes an installation bundle (`EnterpriseBrowser_SAP_signed_v2.0.1.0.apk`) with 
+a `Config.xml` file designed for organizations that are running SAP ITS mobile app(s) on Zebra Android devices. The standard `Config.xml` file also is included in the package, and can be activated using steps in the [config-switching section](#convertingsappackage) below. 
 
-When migrating SAP apps from Windows Mobile/CE to Android, the most common problems relate to page-fitting and the absence of hardware function keys. To address these issues, organizations often maintain separate applications for different device-screen sized and build HTML-based buttons to replace the missing hardware keys. 
+When migrating SAP apps from Windows Mobile/CE to Android, the most common problems relate to page-fitting and the absence of hardware function keys. To address these issues, organizations often maintain separate applications for different device-screen sizes and build HTML-based buttons to replace the missing hardware keys. 
 
 Enterprise Browser 2.0 helps address these and other migration issues. 
 
@@ -101,7 +101,7 @@ Whether page should be resizable on keyboard popup to avoid visibility concerns;
       <ResizeOnButtonbar value="1"/>        
     </SIP>
 
-Whether user wants to set page resizable and to reserve a minimum safe height for the keyboard can cover the screen. If yes set probable value for `ButtonBarMaxHeight` as below:
+Whether user wants to set page re-sizable and to reserve a minimum safe height for the keyboard can cover the screen. If yes set probable value for `ButtonBarMaxHeight` as below:
 
     :::xml
     <SIP>

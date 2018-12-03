@@ -121,13 +121,13 @@ The `pagecontent` tag is used for injecting DOM files on navigated pages only wh
 
 #### Examples
 
-##### Inject `enroll.js` file if page contains the string ‘Enter Login ID’:
+##### Inject `enroll.js` file if the string "Enter Login ID" is found on any page:
 
 	:::javascript
 	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pagecontent='Enter Login ID' pages='*' />
 <br>
 
-##### Inject `mystyle.css` file if page contains the string Enter User Name:
+##### Inject `mystyle.css` file if the string "Enter User Name" is found on any page:
 
 	:::javascript
 	<link rel='stylesheet' type='text/css' href='file://%INSTALLDIR%/mystyle.css'  pagecontent='Enter User Name' pages='*' />

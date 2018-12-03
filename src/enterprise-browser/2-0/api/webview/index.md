@@ -9,7 +9,7 @@ layout: guide.html
 ## Overview
 This is the core container used for rendering application code. Certain behaviors of the WebView can be controlled by using this API class.
 
-> Note: On CE devices that use the IE Engine, clicking a hyperlink while holding the shift hardware key on the device does not work properly.
+> Note: On CE devices that use the IE Engine, clicking a hyperlink while holding the (hardware) shift key on the device yields unpredictable results.
 
 ## Enabling the API
 There are two methods of enabling the WebView API:
@@ -255,6 +255,40 @@ Synchronous Return:
 
 ##Properties
 
+### useWideViewPort
+#### Type
+<span class='text-info'>BOOLEAN</span> 
+#### Description
+Used to control whether the WebView supports the viewport HTML meta tag or a wide viewport. When false, layout width is always set to the width of the WebView control in device-independent (CSS) pixels. When true and the page contains the viewport meta tag, the value of the width specified in the tag is used. If the page does not contain the tag or does not specify a width, wide viewport id used.
+
+##### Notes
+* Overrides any value set using the [UseWideViewPort config tag](../configreference/#viewport).
+* Supported on devices running Android KitKat and higher only. 
+
+#### Access
+* Class: This property can only be accessed via the API class object.
+ * EB.WebView.useWideViewPort
+ 
+* Platforms
+ * Android
+
+### loadWithOverviewMode
+#### Type
+<span class='text-info'>BOOLEAN</span> 
+#### Description
+Used to control whether the WebView loads pages in overview mode, which zooms out to allow for the width of content to fit on screen. Generally used when the content width is greater than the width of the WebView control. 
+
+#####Notes
+* Takes affect only if [UseWideViewPort config tag](../configreference/#viewport) or useWideViewPort property is set to true.
+* Overrides any value set using the [LoadWithOverviewMode config tag](../configreference/#loadwithoverviewmode).
+* Supported on devices running Android 5.x Lollipop and higher. 
+
+#### Access
+* Class: This property is accessed only through the API class object.
+ * EB.WebView.loadWithOverviewMode
+
+#### Platforms
+* Android
 
 
 ###activeTab
@@ -268,8 +302,6 @@ Return an active tab index. For change active tab use Use EB.NativeTabbar.curren
 
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.activeTab</code>
-
-
 
 ####Platforms
 

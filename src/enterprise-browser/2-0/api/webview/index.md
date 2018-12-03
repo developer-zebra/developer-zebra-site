@@ -259,18 +259,14 @@ Synchronous Return:
 #### Type
 <span class='text-info'>BOOLEAN</span> 
 #### Description
-Used to control whether the WebView supports the viewport HTML meta tag or a wide viewport. When false, layout width is always set to the width of the WebView control in device-independent (CSS) pixels. When true and the page contains the viewport meta tag, the value of the width specified in the tag is used. If the page does not contain the tag or does not specify a width, wide viewport id used.
-
-##### Notes
-* Overrides any value set using the [UseWideViewPort config tag](../configreference/#viewport).
-* Supported on devices running Android KitKat and higher only. 
+Used to control whether the WebView supports the viewport HTML meta tag or a wide viewport. When false, layout width is always set to the width of the WebView control in device-independent (CSS) pixels. When true and the page contains the viewport meta tag, the value of the width specified in the tag is used. If the page does not contain the tag or does not specify a width, wide viewport id used. **Overrides any value set using the [UseWideViewPort config tag](../configreference/#viewport)**.
 
 #### Access
 * Class: This property can only be accessed via the API class object.
  * EB.WebView.useWideViewPort
  
 * Platforms
- * Android
+ * Android KitKat and higher
 
 ### loadWithOverviewMode
 #### Type
@@ -278,17 +274,16 @@ Used to control whether the WebView supports the viewport HTML meta tag or a wid
 #### Description
 Used to control whether the WebView loads pages in overview mode, which zooms out to allow for the width of content to fit on screen. Generally used when the content width is greater than the width of the WebView control. 
 
-#####Notes
-* Takes affect only if [UseWideViewPort config tag](../configreference/#viewport) or useWideViewPort property is set to true.
-* Overrides any value set using the [LoadWithOverviewMode config tag](../configreference/#loadwithoverviewmode).
-* Supported on devices running Android 5.x Lollipop and higher. 
-
 #### Access
 * Class: This property is accessed only through the API class object.
  * EB.WebView.loadWithOverviewMode
 
 #### Platforms
-* Android
+* Android 5.x Lollipop and higher
+
+#####Notes
+* Takes affect only if [UseWideViewPort config tag](../configreference/#viewport) or useWideViewPort property is set to true.
+* Overrides any value set using the [LoadWithOverviewMode config tag](../configreference/#loadwithoverviewmode).
 
 
 ###activeTab

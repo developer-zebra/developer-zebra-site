@@ -5,7 +5,7 @@ type: parm
 order: 3
 mx: "4.2"
 devicetype: A
-info: This parameter is not supported on the TC8000 running Android 5.x Lollipop. 
+info: This feature is not supported on the TC8000. Changes to Touch Mode on the TC8000 are supported only manually through the Settings panel on the device. 
 parm:
   presentif: Device Type is set to "8956" or "8960" 
   pivotal: No

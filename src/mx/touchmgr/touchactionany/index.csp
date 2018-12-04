@@ -5,6 +5,7 @@ type: parm
 order: 2
 mx: "6.2"
 devicetype: A
+info: This feature is not supported on the TC8000. Changes to Touch Mode on the TC8000 are supported only manually through the Settings panel on the device.
 parm:
   presentif: Device Type is set to "Any"
   pivotal: No

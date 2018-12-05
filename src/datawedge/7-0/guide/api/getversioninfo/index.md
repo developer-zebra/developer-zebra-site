@@ -9,7 +9,11 @@ productversion: '7.0'
 
 Introduced in DataWedge 6.4.
 
-Gets the version numbers of DataWedge, SimulScan, the Scanner Framework/Decoder Library currently installed on the device. 
+Gets the version numbers of DataWedge, SimulScan, and the Scanner Framework/Decoder Library currently installed on the device. 
+
+To retrieve the DataWedge version, the following needs to be performed **before** calling GET_VERSION_INFO:
+* Register the Broadcastreceiver
+* Call `filter.addCategory(Intent.CATEGORY_DEFAULT);`
 
 ### Function Prototype
 
@@ -48,31 +52,64 @@ Error messages are logged for invalid actions and parameters.
 
 ## Example Code
 
-		:::java
-		//Retrieving version information
-	    @Override
-	    public void onReceive(Context context, Intent intent) {
-	        String action = intent.getAction();
-	        if(action.equals("com.symbol.datawedge.api.RESULT_ACTION")){
-	            Bundle b = intent.getExtras();
+	:::java
+	@Override
+    protected void onResume() {
+        super.onResume();
 
-		if(intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_VERSION_INFO")){
-	                String SimulScanVersion  = "Not supported";
-	                String[] ScannerFirmware = {""};
-	                Bundle res = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_VERSION_INFO");
-	                String DWVersion = res.getString("DATAWEDGE");
-	                String BarcodeVersion = res.getString("BARCODE_SCANNING");
-	                String DecoderVersion = res.getString("DECODER_LIBRARY");
-	                if(res.containsKey("SCANNER_FIRMWARE")){
-	                    ScannerFirmware = res.getStringArray("SCANNER_FIRMWARE");
-	                }
-	                if(res.containsKey("SIMULSCAN")) {
-	                    SimulScanVersion = res.getString("SIMULSCAN");
-	                }
+        IntentFilter ifl = new IntentFilter();
+        ifl.addAction("com.symbol.datawedge.api.RESULT_ACTION");
+        ifl.addCategory(Intent.CATEGORY_DEFAULT); //Category should be set to default
+        registerReceiver(broadcastReceiver, ifl);
+    }
 
-	            }
-	        }
-	    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        
+        unregisterReceiver(broadcastReceiver);
+    }
+
+	BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+        
+		//Retrieving version information - receiver implementation
+        
+		@Override
+        public void onReceive(Context context, Intent intent){
+
+            String text = null;
+
+            if(intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_VERSION_INFO")){
+                
+				String SimulScanVersion  = "Not supported";
+                String[] ScannerFirmware = {""};
+                Bundle res = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_VERSION_INFO");
+                String DWVersion = res.getString("DATAWEDGE");
+                String BarcodeVersion = res.getString("BARCODE_SCANNING");
+                String DecoderVersion = res.getString("DECODER_LIBRARY");
+                
+				if(res.containsKey("SCANNER_FIRMWARE")){
+                    ScannerFirmware = res.getStringArray("SCANNER_FIRMWARE");
+                }
+                
+				if(res.containsKey("SIMULSCAN")) {
+                    SimulScanVersion = res.getString("SIMULSCAN");
+                }
+
+                text = "DataWedge:"+DWVersion+"\nDecoderLib:"+DecoderVersion+"\nFirmware:";
+                
+				if(ScannerFirmware!=null){
+                    for(String s: ScannerFirmware){
+                        text+= "\n"+s;
+                    }
+                }
+                text += "\nBarcodescan:" + BarcodeVersion + "\nSimulscan:" + SimulScanVersion;
+            }
+
+            Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+            Log.d(TAG,text);
+        }
+    };
 
 
 -----

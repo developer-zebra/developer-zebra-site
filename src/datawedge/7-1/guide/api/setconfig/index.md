@@ -23,7 +23,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
  * **New ADF_RULE bundle** with Action, Device, Decoder and Label_ID sub-bundles
  * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
-* **DataWedge 7.1 -** New configuration for: full configuration, Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan
+* **DataWedge 7.1 -** New configuration for: full configuration, Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
 
 ### Function Prototype
 

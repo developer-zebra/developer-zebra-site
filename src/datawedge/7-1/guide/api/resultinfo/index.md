@@ -35,8 +35,8 @@ Result codes are accessed using the `RESULT_INFO` intent mechanism, which return
 
 **SEND_RESULT** [String]: Accepts the following values in DataWedge 7.1 or higher. (DataWedge versions lower than 7.1 accept only TRUE and FALSE).
 * **NONE**: No result returned to the application. (This is equivalent to FALSE for DataWedge versions lower than 7.1).
-* **LAST_RESULT**: Sends the result info for the last plugin sent. If the user sends multiple plugins, the result info is returned for the last plugin sent. (This is equivalent to TRUE for versions lower than DataWedge 7.1).
-Ex: Send BARCODE, SIMULSCAN and SERIAL plugins in order. The result info received by the application returns results from the SERIAL plugin only.
+* **LAST_RESULT**: Sends the result info for the last executed module. If the user sends multiple plugins, the result info is returned for the last plugin sent. (This is equivalent to TRUE for versions lower than DataWedge 7.1).
+E.g.: Send BARCODE, SIMULSCAN and SERIAL plugins in order. The result info received by the application returns results from the SERIAL plugin only.
 * **COMPLETE_RESULT**: Returns a list of result info for each and every plugin if multiple plugins are sent.
 
 **RESULT_INFO** [Bundle]: Can contain any of the fields below depending on the API in use: 
@@ -403,16 +403,12 @@ Command and configuration intent parameters determine whether to send result cod
 
 ### Comments
 
-The result intent mechanism does not perform parameter-level validation for scanner input parameters and intent output parameters. For example, it would be impossible for any app to validate every possible parameter for a scanner that is no longer connected. However, if a parameter value in a configuration is not valid when that Profile is loaded, DataWedge uses the default value for that parameter.
+* The result intent mechanism does not perform parameter-level validation for scanner input parameters and intent output parameters. For example, it would be not be possible for any app to validate every possible parameter for a scanner that is no longer connected. However, if a parameter value in a configuration is not valid when that Profile is loaded, DataWedge uses the default value for that parameter.
 
-Additionally, DataWedge executes the SET_CONFIG command in the following order if multiple modules are received.
+* DataWedge executes the SET_CONFIG command in the following order if multiple modules are received.
 1.	Plugins
-2.	App list
+2.	APP_LIST
 3.	DCP (Data Capture Plus)
-
-If the module list contains APP_LIST or DCP, these will be executed last. 
-If SEND_RESULT is set as “LAST_RESULT”, the result received would be from either APP_LIST or DCP.
- 
 
 -----
 

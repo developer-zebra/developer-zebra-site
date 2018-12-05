@@ -86,6 +86,8 @@ For more information about approved languages or to download a localized operati
 ## New in DataWedge 7.1
 * New **[Multi-User Support](#multiusersupport)** for multiple Android user profiles.
 * New **[SEND_RESULT](../api/resultinfo)** result code for multiple plugins.
+* New SET_CONFIG/GET_CONFIG parameters for:
+ * **[Data Capture Plus (DCP)](../api/setconfig/#datacaptureplusdcpinputparameters)**
 
 -----
 ## Recent Version History

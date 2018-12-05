@@ -79,8 +79,8 @@ The wait time (in ms) that DCP should wait after a screen tap before triggering 
 
 Programmatically configure DCP and retrieve the configuration:
 
-* [Set Config](../../api/setconfig/#parameters)
-* [Get Config](../../api/getconfig/)
+* [Set Config](../../api/setconfig/#datacaptureplusdcpinputparameters)
+* [Get Config](../../api/getconfig/#getdcpinputconfiguration)
 
 ------
 

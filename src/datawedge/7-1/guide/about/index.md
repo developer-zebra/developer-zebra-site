@@ -15,7 +15,7 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 
 -----
 
-**Go to ["What's New" section](#newindatawedge70)**
+**Go to ["What's New" section](#newindatawedge71)**
 
 ### Main Functionality
 The version of DataWedge documented in this guide provides the following primary functions and options: 
@@ -52,6 +52,21 @@ The version of DataWedge documented in this guide provides the following primary
 
 -----
 
+### Multi-User Support
+
+DataWedge supports the use of multiple Android user accounts on a single device, enabling separate user profiles to maintain data privacy. The supported Zebra devices are:
+* Android Oreo: TC52/TC57
+
+Features and functionality:
+* **DataWedge is enabled only for the active user** - Each user has a separate DataWedge process running.
+* **Any DataWedge profile change takes into effect globally across all users** - A DataWedge configuration or profile change by a user (through DataWedge UI or profile import) applies to all users regardless of which user is logged in when the change is made. For example, if User A makes a change to a profile, User B sees the change in the same profile. The configuration file is stored in a location (by default /enterprise/device/settings/datawedge/config/datawedge.db) where the DataWedge process across all users utilize the same configuration file.
+* **Camera scanning works only with the primary (admin) user** - Camera scanning does not work with secondary (non-primary) users. 
+* **Bluetooth scanner disconnects when switching between primary user and other users** - If the primary user is active and a Bluetooth scanner is connected to the device, when switching to a different user with an active profile that enables the Bluetooth scanner, the Bluetooth scanner disconnects and does not automatically re-connect to the device. The non-primary user needs to press the reset button on the Zebra Bluetooth scanner to reconnect, even if it shows that the Bluetooth scanner is connected to the device. 
+* **No external SD card access** - If multiple Android user accounts exist, users cannot access the external SD card. This prevents the ability to export or import the Datawedge configuration database files from the SD card. 
+* **Limited folder access** - Each user profile has its own folder structure that is not accessible from a different user. Therefore, a user cannot access the exported DataWedge configuration database of another user, preventing the ability to import/export configurations across users.
+
+-----
+
 ### Language Support
 
 DataWedge has been approved to run on device operating systems localized for the following languages:
@@ -68,7 +83,13 @@ For more information about approved languages or to download a localized operati
 
 -----
 
-## New in DataWedge 7.0
+## New in DataWedge 7.1
+* New **[Multi-User Support](#multiusersupport)** for multiple Android user profiles
+
+-----
+## Recent Version History
+
+### Added in DataWedge 7.0
 New updates are identical to DataWedge 6.9.
 * New **[Voice Input (beta)](../input/voice)** for voice-to-data capture. 
 * New **[Global Scanner Configuration](../input/barcode#globalscannerconfiguration)** enables a generic scanner configuration to apply to all supported scanners.
@@ -78,11 +99,8 @@ New updates are identical to DataWedge 6.9.
  * GS1 QRCode
 * Added support for [DS2278 Bluetooth Scanner](../input/barcode/#bluetoothscanners).
 
-###Other Changes
+####Other Changes
 * Improved layout for **[SET_CONFIG API](../api/setconfig/#scannerinputparameters)** scanner input parameters.
-
------
-## Recent Version History
 
 ### Added in DataWedge 6.9
 * New **[Voice Input (beta)](../input/voice)** for voice-to-data capture. 

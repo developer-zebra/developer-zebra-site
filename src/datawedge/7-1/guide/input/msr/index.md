@@ -235,8 +235,8 @@ The table below lists the data fields contained in the tag.
 ## Configuration
 
 Programmatically configure MSR and retrieve the configuration:
-* [Set Config](../../api/setconfig/)
-* [Get Config](../../api/getconfig/)
+* [Set Config](../../api/setconfig/#setmsrinputconfiguration)
+* [Get Config](../../api/getconfig/#getmsrinputconfiguration)
 
 -----
 

@@ -971,7 +971,9 @@ Error messages are logged for invalid actions and parameters.
 	};
 
 
-### Get full profile configuration
+### Get configuration for multiple modules (full profile) in a single intent
+
+Support started with DataWedge 7.1.  Previous DataWedge versions required multiple intent calls to retrieve information from multiple modules (plugins, APP_LIST, and Data Capture Plus).
 
 	// Get full profile configuration in a single broadcast intent and process the result
 

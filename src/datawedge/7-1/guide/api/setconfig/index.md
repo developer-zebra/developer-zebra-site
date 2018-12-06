@@ -23,7 +23,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
  * **New ADF_RULE bundle** with Action, Device, Decoder and Label_ID sub-bundles
  * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
-* **DataWedge 7.1 -** New configuration for: full configuration, Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
+* **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
 
 ### Function Prototype
 
@@ -2688,12 +2688,11 @@ Command and configuration intent parameters determine whether to send result cod
 	    }//end onReceive
 	};
 
-### Set configuration for multiple modules in a single broadcast intent
+### Set configuration for multiple modules (full profile) in a single intent
 
-	// Set configuration for multiple modules of a profile in a single intent
-	// and process the result info.
+Support started with DataWedge 7.1.  Previous DataWedge versions required multiple intent calls to set configuration for multiple modules (plugins, APP_LIST, and Data Capture Plus).
 
-		@Override
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.activity_main);

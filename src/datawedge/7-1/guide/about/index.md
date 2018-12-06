@@ -88,6 +88,11 @@ For more information about approved languages or to download a localized operati
 * New **[SEND_RESULT](../api/resultinfo)** result code for multiple plugins.
 * New SET_CONFIG/GET_CONFIG parameters for:
  * **[Data Capture Plus (DCP)](../api/setconfig/#datacaptureplusdcpinputparameters)**
+ * **[Simulscan](../api/setconfig/#simulscaninputparameters)**
+ * **[Magnetic Stripe Reader (MSR)](../api/setconfig/#setmsrinputconfiguration)**
+ * **[IP Output](../api/setconfig/#setipoutput)**
+ * **[Multiple modules (full profile)](../api/setconfig/#setconfigurationformultiplemodules(fullprofile)inasingleintent)** using a single intent
+ * **[New Tokens for UDI data output](../api/setconfig/#tokenparameters)**
 
 -----
 ## Recent Version History

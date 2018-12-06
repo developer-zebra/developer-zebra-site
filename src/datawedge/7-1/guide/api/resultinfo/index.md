@@ -130,7 +130,7 @@ Command and configuration intent parameters determine whether to send result cod
 
 	};
 
-### Generate and receive result codes for multiple modules
+### Generate and receive result codes for multiple modules (plugins, APP_LIST, and Data Capture Plus)
 
 	public void setConfig() {
 

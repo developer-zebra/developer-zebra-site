@@ -116,8 +116,8 @@ For more information about Android Intents, please refer to the [Android Develop
 ## Configuration
 
 Programmatically configure Simulscan and retrieve the configuration:
-* [Set Config](../../api/setconfig/)
-* [Get Config](../../api/getconfig/)
+* [Set Config](../../api/setconfig/#simulscaninputparameters)
+* [Get Config](../../api/getconfig/#getsimulscaninputconfiguration)
 
 ------
 

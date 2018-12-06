@@ -46,43 +46,62 @@ To use DOM injection, **ALL of the following must be true**:
 
 ## Step 1 - Prepare 'Tags' File
 
-The "tags" file is the list of elements (i.e. JavaScript, CSS and/or meta tags) to be injected into the DOM and the pages to receive the injections. Formatting syntax is similar to that of ordinary HTML tags for including scripts, style sheets and meta data. The specific tagging syntax for DOM injection is explained in the [tag file syntax section](#tagfilesyntax) below. The file can be saved using any name (i.e. `mytags.txt`).  
+The "tags" file is the list of elements (i.e. JavaScript, CSS and/or meta tags) to be injected into the DOM and the pages to receive the injections. Formatting syntax is similar to that of ordinary HTML tags for including scripts, style sheets and meta data. The specific tagging syntax for DOM injection is explained in the [Tagging Guidelines section](#taggingguidelines) below. The file can be saved using any name (i.e. `mytags.txt`).  
 
 **To create a tags file**: 
 
 1. **Create a text file** to contain the desired DOM-injection elements. 
 2. **Copy code lines from the samples** below or in the [Example section](#examples), paste them into the new document and modify their contents to match the app's requirement. 
 3. **Push the file to the device**; make note of the path and file name. 
-4. **Modify the **`Config.xml` **file** the app to reflect the name and path of the `tag` file. 
+4. **Proceed to Step 2**: update the `Config.xml` file. 
+
+**The following rules apply**: 
+
+* <u>**All tags in the** `tags` **file *must* contain the injection-specific "pages" attribute**</u>.
+* **Use of the wildcard (&#42;) character** causes injection into all navigated pages.
+* **If using server-based JavaScript**, see JavaScript injection section (below) for dependency cautions.
+* **An optional 'pagecontent' attribute can be used** to add a page-specific string for triggering injection (EB 2.0 and higher only).
+* Attribute values must not be left blank.
+* All tags must have beginning (&lt;) and ending (/&gt;) angle brackets.
+* Each tag in the `tags` file must be on a separate line.
+* Local pages support only the `pages='*’` syntax. To inject tags into a specific local page, use `pages='*'` in combination with the `pagecontent` attribute.
+
+<!-- 12/5/18- removed per eng. 
+* The `.html` file extension is assumed; specify the extension only if different.
+* **For local files**, actions work from the directory relative to the installation root; include qualified path or substitution variable (**recommended**) only if different. 
+* **For server-based CSS or JavaScript files**, actions work relative to the app's start page; include full URL if different.
+* **URLs are supported for server-based CSS and JavaScript files only**.
+* All meta tag data must be contained completely within the `tags` file.
+-->
 
 -----
 
 ## Step 2- Update Config.xml
 
-The `tags` file created in Step 1 must reside on the device. 
+**Before proceeding, the** `tags` **file created in Step 1 must reside on the device and its path and file name must be known**. 
 
- * **Specify the path to the tags file** by adding a line (similar to the one below) in the `<Application>` section in the app's `Config.xml` file:  
+By default, the &lt;CustomDOMElements&gt; tag in the app's `Config.xml` file contains no value. DOM injection cannot function unless a path to the `tags` file on the device is specified.
+
+* **Specify the path to the tags file** by adding a line (similar to the one below) in the `<Application>` section in the app's `Config.xml` file:  
 
 		:::xml
 		<Application>
 		...
-			<CustomDOMElements value="file://%INSTALLDIR%\rho\apps\app\mytags.txt"/>
+			<CustomDOMElements value="file://%INSTALLDIR%/mytags.txt"/>
 		...
 		</Application>
 
-For information about how to configure the `Config.xml` file, see the [Config.xml Reference Guide](../configreference). **Note**: The &lt;CustomDOMElements&gt; tag cannot be configured using the [On-device Config Editor utility](../OndeviceConfig).  
+For information about how to configure the `Config.xml` file, see the [Config.xml Reference Guide](../configreference). 
 
-> **The value inside the &lt;CustomDOMElements&gt; tag is empty by default. DOM injection cannot function unless a path to the `tags` file on the device is specified**. 
+> **Note**: The &lt;CustomDOMElements&gt; tag cannot be configured using the [On-device Config Editor utility](../OndeviceConfig).  
 
 -----
 
-## Tag File Syntax
+## Tagging Guidelines
 
 ### 'Pages' tag
 
 The `pages` tag is used to specify the page(s) into which DOM elements are injected. This tag supports specification of an app's individual HTML pages ("startPage.html, scanPage.html" etc.), server-based application pages (specified as individual or relative URLs) and the wildcard character (&#42;), which injects the specified elements into all navigated pages of the app. 
-
-### Sample Syntax
 
 ##### Inject a JavaScript file into all pages from "installed" directory (substitution variable): 
 	:::javascript
@@ -111,27 +130,6 @@ Attributes of DOM Injection tags:
 
 **Note that the "pages" attribute specifies the file name of the page into which the element defined in the tag is injected**. 
 
-**The following rules apply**: 
-
-* <u>**All tags in the** `tags` **file *must* contain the injection-specific "pages" attribute**</u>.
-* **Use of the wildcard (&#42;) character** causes injection into all nagivated pages.
-* **If using server-based JavaScript**, see JavaScript injection section (below) for dependency cautions.
-* **An optional pagecontent attribute can be used** to add a page-specific string for triggering injection (EB 2.0 and higher only).
-* Attribute values must not be left blank.
-* All tags must have beginning (&lt;) and ending (/&gt;) angle brackets.
-* Each tag in the `tags` file must be on a separate line.
-* Local pages support only the `pages='*’` syntax. To inject tags into a specific local page, use `pages='*'` in combination with the `pagecontent` attribute.
-
-<!-- 12/5/18- removed per eng. 
-* The `.html` file extension is assumed; specify the extension only if different.
-* **For local files**, actions work from the directory relative to the installation root; include qualified path or substitution variable (**recommended**) only if different. 
-* **For server-based CSS or JavaScript files**, actions work relative to the app's start page; include full URL if different.
-* **URLs are supported for server-based CSS and JavaScript files only**.
-* All meta tag data must be contained completely within the `tags` file.
--->
-
-### Sample Syntax
-
 ##### Inject `enroll.js` file from the "install" directory if the string "Change Password" is found on any page:
 
 	:::javascript
@@ -158,7 +156,6 @@ Once identified, copy the "outerXML" of the element and paste it into the 'pagec
 ##### When all tags are completed, store the tags file on the device and take note of the file name and path. 
 
 This tag must contain a fully qualified path to the device-resident "tags" file, which is required for DOM injection. The `tags` file defines the DOM element(s) to be injected and the names or identifying contents of the page(s) to receive injections whenever they're displayed. 
-
 
 See [more code examples](#examples). 
 

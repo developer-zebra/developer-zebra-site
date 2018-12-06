@@ -91,7 +91,7 @@ For more information about approved languages or to download a localized operati
  * **[Simulscan](../api/setconfig/#simulscaninputparameters)**
  * **[Magnetic Stripe Reader (MSR)](../api/setconfig/#setmsrinputconfiguration)**
  * **[IP Output](../api/setconfig/#setipoutput)**
- * **[Multiple modules (full profile)](../api/setconfig/#setconfigurationformultiplemodules(fullprofile)inasingleintent)** using a single intent
+ * **[Multiple modules (full profile)](../api/setconfig/#setconfigurationformultiplemodulesfullprofileinasingleintent)** using a single intent
  * **[New Tokens for UDI data output](../api/setconfig/#tokenparameters)**
 
 -----

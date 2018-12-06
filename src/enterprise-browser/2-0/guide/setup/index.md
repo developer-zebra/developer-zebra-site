@@ -49,6 +49,14 @@ This section describes installation of the "Enterprise Browser for Android" depl
 
 -----
 
+Android_regular.png
+windows.png
+screen_4_windows.JPG
+screen_3_windows.JPG
+screen_2_windows.JPG
+screen_1_windows.JPG
+sap_package.png
+
 **To install "Enterprise Browser for Android" on a Windows PC**:
 
 **&#49;. If upgrading, back up any data stored in the `C:\EnterpriseBrowser` directory of the host PC**. 

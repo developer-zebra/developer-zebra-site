@@ -41,6 +41,25 @@ To include individual APIs, include the `ebapi.js` in the HTML, and then the add
 
 ##Methods
 
+### captureWebPageScreen()
+Used to capture the current application page and save it to a directory on the device.
+
+####Parameters
+* Void
+
+####Returns
+* Void
+
+####Platforms
+* Android
+
+####Method Access:
+
+* Class Method: This method can only be accessed via the API class object. 
+	* <code>EB.WebView.captureWebPageScreen()</code>
+
+-----
+
 ### clearApplicationCache()
 Used for clearing HTML5 Application Cache data in Enterprise Browser application. Note: Use WebView clearCache API for clearing cache data.
 
@@ -60,6 +79,8 @@ Synchronous Return:
 
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.WebView.clearApplicationCache()</code>
+
+-----
 
 ### clearCache()
 Forces WebView to clear cache data in Enterprise Browser application. Note: This doesnot clear HTML5 Application Cache data.
@@ -81,6 +102,8 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.WebView.clearCache()</code>
 
+-----
+
 ### clearCookies()
 Forces WebView to clear cookies saved in Enterprise Browser application.
 
@@ -101,6 +124,8 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.WebView.clearCookies()</code>
 
+-----
+
 ### clearHistory()
 Forces WebView to clear history in Enterprise Browser application.
 
@@ -120,6 +145,8 @@ Synchronous Return:
 
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.WebView.clearHistory()</code>
+
+-----
 
 ### navigate(<span class="text-info">STRING</span> url, <span class="text-info">INTEGER</span> tabIndex)
 Force WebView to navigate to a URL. White page flickering during transition may happen if a controller action method doesn't return any rendered value, but instead performs a WebView.navigate(someUrl) call. <!--It is important to avoid using WebView.navigate in Ruby action methods because WebView.navigate is intended to be used in callback methods asynchronously.-->
@@ -143,6 +170,7 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.WebView.navigate(<span class="text-info">STRING</span> url, <span class="text-info">INTEGER</span> tabIndex)</code> 
 
+-----
 
 ### navigateBack(<span class="text-info">INTEGER</span> tabIndex)
 Force WebView to navigate to the previous page using Browser back.
@@ -166,6 +194,7 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.WebView.navigateBack(<span class="text-info">INTEGER</span> tabIndex)</code> 
 
+-----
 
 ### refresh(<span class="text-info">INTEGER</span> tabIndex)
 Force WebView to refresh the current page.
@@ -189,6 +218,7 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.WebView.refresh(<span class="text-info">INTEGER</span> tabIndex)</code> 
 
+-----
 
 ### resizeWebviewLayout(<span class="text-info">INTEGER</span> left, <span class="text-info">INTEGER</span> top, <span class="text-info">INTEGER</span> width, <span class="text-info">INTEGER</span> height)
 Resize the WebView layout parameters with the specified left, top, width and height values in Enterprise Browser application.
@@ -210,6 +240,7 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.WebView.resizeWebviewLayout(<span class="text-info">INTEGER</span> left, <span class="text-info">INTEGER</span> top, <span class="text-info">INTEGER</span> width, <span class="text-info">INTEGER</span> height)</code>
 
+-----
 
 ### resetWebviewLayout()
 Reset the WebView layout to default in Enterprise Browser application.
@@ -231,6 +262,7 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.WebView.resetWebviewLayout()</code>
 
+-----
 
 ### save(<span class="text-info">STRING</span> format, <span class="text-info">STRING</span> path, <span class="text-info">INTEGER</span> tabIndex)
 Save current page to file system.
@@ -252,6 +284,7 @@ Synchronous Return:
 * Class Method: This method can only be accessed via the API class object. 
 	* <code>EB.WebView.save(<span class="text-info">STRING</span> format, <span class="text-info">STRING</span> path, <span class="text-info">INTEGER</span> tabIndex)</code> 
 
+-----
 
 ##Properties
 
@@ -268,11 +301,13 @@ Used to control whether the WebView supports the viewport HTML meta tag or a wid
 * Platforms
  * Android KitKat and higher
 
+-----
+
 ### loadWithOverviewMode
 #### Type
 <span class='text-info'>BOOLEAN</span> 
 #### Description
-Used to control whether the WebView loads pages in overview mode, which zooms out to allow for the width of content to fit on screen. Generally used when the content width is greater than the width of the WebView control. 
+Used to control whether the WebView loads pages in "zoomed out" (Overview) mode, which allows the width of content to fit on screen. This mode is generally used when content width is greater than the width of the WebView control. 
 
 #### Access
 * Class: This property is accessed only through the API class object.
@@ -281,10 +316,13 @@ Used to control whether the WebView loads pages in overview mode, which zooms ou
 #### Platforms
 * Android 5.x Lollipop and higher
 
-#####Notes
+##### Notes
 * Takes affect only if [UseWideViewPort config tag](../configreference/#viewport) or useWideViewPort property is set to true.
+<!-- 12/4/18- Per eng., not exposed in Config.xml at this time
 * Overrides any value set using the [LoadWithOverviewMode config tag](../configreference/#loadwithoverviewmode).
 
+ -->
+-----
 
 ###activeTab
 
@@ -304,6 +342,8 @@ Return an active tab index. For change active tab use Use EB.NativeTabbar.curren
 * Windows Mobile
 * Windows CE
 
+-----
+
 ###blockNetworkImage
 
 ####Type
@@ -319,6 +359,8 @@ Controls whether the WebView loads image resources from the network. Note that d
 ####Platforms
 
 * Android
+
+-----
 
 ###blockNetworkLoads
 
@@ -336,6 +378,8 @@ Controls whether the WebView loads resources from the network. Use blockNetworkI
 
 * Android
 
+-----
+
 ###cacheSize
 
 ####Type
@@ -350,6 +394,8 @@ The browser cache size, in whole MBs. Defined in the Navigation\\Cache parameter
 ####Platforms
 
 * Windows Mobile (WebKit)
+
+-----
 
 ###contentHeight
 
@@ -368,6 +414,8 @@ Gets the height of the HTML content.
 
 * Android
 
+-----
+
 ###enableZoom
 
 ####Type
@@ -385,6 +433,8 @@ Enable WebView zoom. Use 'EnableZoom' parameter in the `config.xml` file to conf
 
 * Android
 
+-----
+
 ###fontFamily
 
 ####Type
@@ -400,6 +450,8 @@ Specifies the default font to use when rendering text in web pages. The specifie
 ####Platforms
 
 * Windows Mobile (WebKit)
+
+-----
 
 ###framework
 
@@ -433,13 +485,13 @@ Use full screen mode.
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.fullScreen</code>
 
-
-
 ####Platforms
 
 * Android
 * Windows Mobile
 * Windows CE
+
+-----
 
 ###navigationTimeout
 
@@ -461,6 +513,8 @@ Number of milliseconds (max. = 45000) before the browser times out and navigates
 ####Platforms
 
 * Windows Mobile (WebKit)
+
+-----
 
 ###scrollTechnique
 
@@ -499,12 +553,12 @@ Sets the font size to be displayed on the page, set to 0 for the smallest font a
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.textZoomLevel</code>
 
-
-
 ####Platforms
 
 * Android
 * Windows Mobile (WebKit)
+
+-----
 
 ###userAgent
 
@@ -526,10 +580,11 @@ From RhoElements 2.1 onward, the default value was changed to work out of the bo
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.userAgent</code>
 
-
 ####Platforms
 
 * Windows Mobile (WebKit)
+
+-----
 
 ###viewportEnabled
 
@@ -547,11 +602,11 @@ Get whether viewport meta tag processing is enabled or disabled in the Navigatio
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.viewportEnabled</code>
 
-
-
 ####Platforms
 
 * Windows Mobile (WebKit)
+
+-----
 
 ###viewportWidth
 
@@ -562,15 +617,14 @@ Default viewport width to use for pages that do not have a viewport meta tag (us
 
 ####Access
 
-
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.viewportWidth</code>
-
-
 
 ####Platforms
 
 * Windows Mobile (WebKit)
+
+-----
 
 ###zoomPage
 
@@ -583,8 +637,6 @@ Sets the zoom factor of the page. Factor 1.0 is no zoom, values less than 1.0 ar
 
 * Class: This property can only be accessed via the API class object.
 	* <code>EB.WebView.zoomPage</code>
-
-
 
 ####Platforms
 

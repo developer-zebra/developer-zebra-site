@@ -55,6 +55,12 @@ OLD OLD
 
 See all [supported Zebra devices](../about#mobile). 
 
+### New Features
+
+* Android apps made with **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** such as those for the device's "primary directory" (%PRIMARYDIR%) and an app's "install directory" (%INSTALLDIR%) in place of fully qualified (absolute) path names. This can help make coding easier and less error prone while simplifying enterprise deployment across varied devices. **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
+
+* **EB 2.0 and higher also supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 
+
 -----
 
 OLD OLD
@@ -84,7 +90,7 @@ See the [EB download page](../../download) for more information.
 * **[&lt;ViewPort&gt;](../configreference#viewport) -** Controls whether to apply meta tags that adjust the viewable areas of the app for a device. 
 * **[&lt;DeleteCacheOnLaunch&gt;](../configreference#deletecacheonlaunch) -** Controls whether to erase contents of browser cache when exiting the app. 
 * **[&lt;ClearApplicationCacheOnLaunch&gt;](../configreference#clearapplicationcacheonlaunch) -** Controls whether to erase the HTML5 application cache on launching the app. 
-* **[&lt;DeleteCookiesOnLaunch&gt;](../configreference#deletecookiesonlaunch) -** Controls whether to erase cookies stored by Enterprise Browser when an EB app is exited gracefully. 
+* **[&lt;DeleteCookiesOnLaunch&gt;](../configreference#deletecookiesonlaunch) -** Controls whether to erase cookies stored by Enterprise Browser when an EB app is launched. 
 * **[&lt;DisplayZoomControls&gt;](../configreference#displayzoomcontrols) -** Controls whether to display on-screen zoom controls when using the built-in zoom mechanisms. 
 
 <!-- 10/15/18- not being exposed at this time, per eng.

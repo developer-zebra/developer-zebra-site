@@ -150,8 +150,8 @@ The PC is now ready to receive data from DataWedge IP Output (with IP address an
 ## Configuration
 
 Programmatically configure IP Output and retrieve the configuration:
-* [SetConfig API](../../api/setconfig)
-* [GetConfig API](../../api/getconfig)
+* [SetConfig API](../../api/setconfig/#setipoutput)
+* [GetConfig API](../../api/getconfig/#getipoutput)
 
 -----
 

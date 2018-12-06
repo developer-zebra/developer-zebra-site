@@ -2276,7 +2276,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 
 ## DOM injection
 ### CustomDOMElements 
-**Applies to Android and Windows Mobile/CE Webkit engines**. Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, please refer to the [DOM Injection guide](../dom).  
+**Applies to Android and Windows Mobile/CE Webkit engines**. Specifies the path of a device-resident file containing data for injected DOM elements. This feature permits the injection of one or more DOM elements (i.e. JavaScript, CSS or meta tags) into a running application without modifying the underlying application. Injected JavaScript can be local or server-based. For more information, see the [DOM Injection guides](../dom).  
 
 **Possible Values**:
 
@@ -2284,7 +2284,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 
 ####Example
 	:::xml 
-	<CustomDOMElements value="file://%INSTALLDIR%\rho\apps\app\mytags.txt"/>
+	<CustomDOMElements value="file://%INSTALLDIR%/mytags.txt"/>
 
 -----
 

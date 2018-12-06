@@ -145,7 +145,7 @@ If injection is desired on a page that displays no visible text, it's possible t
 <img alt="" style="height:350px" src="sap2.png"/>
 <br>
 
-Once identified, copy the "outerXML" of the element and paste it into the 'pagecontent tag to allow the EB app identify the desired element for injection: 
+Once identified, copy the "outerXML" of the element and paste it into the 'pagecontent' tag to allow the EB app identify the desired element for injection: 
 
 	<script type='text/javascript' src='file://%INSTALLDIR%/previous.js' pagecontent='<input type="hidden" name="sap-system-login-oninputprocessing" value="onProceed">' pages='*' />
 

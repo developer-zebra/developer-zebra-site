@@ -1743,6 +1743,8 @@ See [DCP Input](../../input/dcp).
 
 ## TOKEN Parameters 
 
+Applicable for UDI or multibarcodes.
+
 > All parameters are case sensitive.
 
 <table class="facelift" style="width:80%" border="1" padding="5px">
@@ -1766,7 +1768,7 @@ See [DCP Input](../../input/dcp).
 		<td>token_order</td>
 		<td>name: manufacturing_date_original<br>enabled: True/False<br><br>
 		name: expiration_date_original<br>enabled: True/False<br><br>
-		name: di<br>enabled: True/False<br><br>
+		name: di<br>enabled: True/False<br><i>(Note: "di" stands for device identifier.)</i><br><br>
 		name: lot_number<br>enabled: True/False<br><br>
 		name: serial_number<br>enabled: True/False<br><br>
 		name: mpho_lot_number<br>enabled: True/False<br><br>
@@ -1775,7 +1777,6 @@ See [DCP Input](../../input/dcp).
 		name: product_or_catalog_number<br>enabled: True/False<br><br>
 		name: unit_of_measure_id<br>enabled: True/False<br><br>
 		name: quantity<br>enabled: True/False<br><br>
-		name: mpho_lot_number<br>enabled: True/False<br><br>
 		<i>&#42; DataWedge determines the priority order according to the order of items listed in the ArrayList, with Element 0 having the highest priority.</i>
 		</td>
 	</tr>

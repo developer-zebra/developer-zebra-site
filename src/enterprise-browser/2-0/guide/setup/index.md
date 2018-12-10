@@ -122,8 +122,6 @@ Once a connection has been established, install the Enterprise Browser runtime o
 3. **Click "Deploy" and follow prompts**. A window will appear similar to the image below. 
 4. **Restart the device to complete the installation**.
 
-> **Note: For persistent installations on Windows CE (the lowermost two options on the "Installer" screen above), a cold boot/cleanPS (clean persistent storage) is required to complete the installation**.
-
 <!-- 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/WM_setup_01.jpg"/>
 <br>
@@ -131,18 +129,20 @@ Once a connection has been established, install the Enterprise Browser runtime o
 
 #### Notes
 
-* Prior to installation, some Windows devices might prompt for the installation location on the device. **Enterprise Browser overrides any selection made here; it will always be installed in `\Program Files\EnterpriseBrowser\`**.
+* **For persistent installations on Windows CE** (the lowermost two options on the "Installer" screen above), a cold boot/cleanPS (clean persistent storage) is required to complete the installation.
+* Prior to installation, some Windows devices might prompt for the installation location on the device. **Enterprise Browser overrides any selection made here and installs in** `\Program Files\EnterpriseBrowser\`.
 * When deploying Enterprise Browser cab file(s) for Windows Mobile/CE, the License Manager cab file is pushed first, followed by Enterprise Browser cab. A screen similar to the image below is displayed: 
 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/screen_1_windows.JPG"/>
 <img alt="" style="height:350px" src="../../images/getting-started/setup/screen_2_windows.JPG"/>
 <br>
-
 Follow any prompts that appear to complete the installation.  
 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/screen_3_windows.JPG"/>
 <img alt="" style="height:350px" src="../../images/getting-started/setup/screen_4_windows.JPG"/>
 <br>
+
+-----
 
 ### From a Mac to Android
 The preferred deployment method of Enterprise Browser runtimes from a Mac OS host system to Android target devices is with the Android File Transfer utility. **If Android File Transfer is already installed, skip to Step 5**.  

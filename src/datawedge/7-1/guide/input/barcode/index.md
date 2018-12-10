@@ -863,9 +863,16 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 * **Press and Release -** The scan beam starts when the trigger is pressed and released. The decode session will remain active until the Beam Timer expires or a barcode is decoded.
 
+* **Presentation -** <i>**For future use only**.</i> Automatically activates the scanner and starts scanning immediately when a barcode is presented in its field of view, without any trigger press. 
+
 * **Continuous Read -** A press and hold of the scan trigger will continuously scan barcodes. **Not supported with the Zebra RS507 Bluetooth Ring Scanner**.
 
 * **Press and Sustain -** Starts the scan beam when the trigger is pressed and continues the decode session until the Beam Timer is expired, barcode is decoded or read is canceled. **Scan beam is not stopped when the trigger is released**. This avoids unexpected cancellations of a read by subsequently pressing the trigger button of the device; subsequent trigger presses while the beam is ON have no effect. **Applies to internal imager on TC20/TC25 and RS6000/RS507 Bluetooth scanners connected to TC57/TC77 and PS20 devices**. 
+
+**Presentation mode parameters -** &#42;<i>**For future use only**</i>&#42;
+* **Scene Detection Qualifier** 
+ * **None**
+ * **Proximity Sensor Input**
 
 **Beam Timer -** Sets the maximum amount of time (in ms) that the reader remains on. Supports a range from 0 - 60,000 ms in increments of 100 ms. A value of 0 sets the reader to stay on indefinitely.
 

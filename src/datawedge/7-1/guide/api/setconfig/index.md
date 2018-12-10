@@ -981,7 +981,12 @@ Other Scanner Input Parameters:
 
   <tr>
 	<td>aim_type</td>
-	<td>0 - Trigger<br>1 - Timed Hold<br>2 - Timed Release<br>3 - Press And Release<br>5 - Continuous Read<br>6 - Press and Sustain</td>
+	<td>0 - Trigger<br>1 - Timed Hold<br>2 - Timed Release<br>3 - Press And Release<br>4 - Presentation   &#42;<b><i>For future use only</i></b>&#42;<br>5 - Continuous Read<br>6 - Press and Sustain</td>
+  </tr>
+
+  <tr>
+	<td>scene_detect_qualifier <br>&#42;<b><i>For future use only</i></b>&#42;</td>
+	<td>0 - None<br>1 - Proximity Sensor Input</td>
   </tr>
 
   <tr>
@@ -2975,6 +2980,37 @@ Support started with DataWedge 7.1.  Previous DataWedge versions required multip
 	bParams.putString("scanner_input_enabled", "true");
 	bParams.putString("configure_all_scanners", "true"); // configure for all scanners
 	bConfig.putBundle("PARAM_LIST", bParams);
+
+###Set presentation mode - <i>For future use only</i>
+
+	// MAIN BUNDLE PROPERTIES
+	Bundle bMain = new Bundle();
+	bMain.putString("PROFILE_NAME", "Profile1");
+	bMain.putString("PROFILE_ENABLED", "true");
+	bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST");
+
+	// PLUGIN_CONFIG BUNDLE PROPERTIES
+	Bundle bConfig = new Bundle();
+	bConfig.putString("PLUGIN_NAME", "BARCODE");
+	bConfig.putString("RESET_CONFIG", "true");
+
+	// PARAM_LIST BUNDLE PROPERTIES
+	Bundle bParams = new Bundle();
+
+	bParams.putString("scanner_selection_by_identifier", "INTERNAL_IMAGER");
+	bParams.putString("scanner_input_enabled" , "true");
+	bParams.putString("aim_type", "4"); // presentation mode
+	bParams.putString("scene_detect_qualifier ", "0"); // 0- None and 1- Proximity Sensor Input
+
+	…
+
+	bConfig.putBundle("PARAM_LIST", bParams);
+
+	bMain.putBundle("PLUGIN_CONFIG", bConfig);
+	Intent i = new Intent();
+	i.setAction("com.symbol.datawedge.api.ACTION");
+	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
+	this.sendBroadcast(i); 
 
 -----
 

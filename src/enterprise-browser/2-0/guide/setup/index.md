@@ -169,6 +169,8 @@ The preferred deployment method of Enterprise Browser runtimes from a Mac OS hos
 
 Refer to the [On-device Configuration guide](../OndeviceConfig) for help configuring Enterprise Browser following installation.  
 
+-----
+
 ### From a Mac to Windows Mobile/CE
 The preferred deployment method of Enterprise Browser runtimes from a Mac OS host system to Windows Mobile/CE devices is using Bluetooth. 
 
@@ -259,6 +261,8 @@ If everything is setup correctly, a display like the following will be seen:
 <br>
 
 The system is now ready to deploy Enterprise Browser apps and shortcuts to an Android device.
+
+-----
 
 ### Windows Mobile/CE devices
 Upon connecting a Windows Mobile/CE device to a Windows 7 (or higher) PC, the Mobile Device Center application and all necessary drivers are supposed to install automatically and recognize the device. If that doesn't happen immediately, try one or more of the following:   
@@ -449,7 +453,7 @@ The page you want should look something like this:
 
 ![img](../../images/getting-started/setup/WM_setup_01.jpg)
 
-<!-- ![img](../../images/getting-started/setup/setup-deploying-winmo.png)-->
+![img](../../images/getting-started/setup/setup-deploying-winmo.png)-->
 
 
 

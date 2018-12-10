@@ -49,14 +49,6 @@ This section describes installation of the "Enterprise Browser for Android" depl
 
 -----
 
-Android_regular.png
-windows.png
-screen_4_windows.JPG
-screen_3_windows.JPG
-screen_2_windows.JPG
-screen_1_windows.JPG
-sap_package.png
-
 **To install "Enterprise Browser for Android" on a Windows PC**:
 
 **&#49;. If upgrading, back up any data stored in the `C:\EnterpriseBrowser` directory of the host PC**. 
@@ -82,8 +74,11 @@ sap_package.png
 The Enterprise Browser deployment tool appears in a window similar to one of the images below (depending on the platform being targeted). 
 
 &#53;. Select one of the available platform runtimes to display its description. <br>
-<img alt="" style="height:150px" src="../../images/getting-started/setup/18_EB_Android_installer.png"/>
-<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Windows_installer.png"/>
+<img alt="" style="height:150px" src="../../images/getting-started/setup/Android_regular.png"/>
+<br>
+<img alt="" style="height:150px" src="../../images/getting-started/setup/sap_package.png"/>
+<br>
+<img alt="" style="height:350px" src="../../images/getting-started/setup/windows.png"/>
 <br>
 
 **Instructions continue in the [Deployment to Device(s)](#deploymenttodevices) section, below**. 
@@ -96,7 +91,7 @@ The Enterprise Browser deployment tool appears in a window similar to one of the
  a. Click on the desired Mac OS X `.dmg` package(s). <br>
  b. Accept the end-user license agreement to begin the download.
 
-2. When the download completes, double-click the `.dmg` file to open it. Depending on the target platform, a window similar to the images below appear. 
+2. When the download completes, double-click the `.dmg` file to open it. Depending on the target platform, a window appears similar to the images below: 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/18_eb-Android_mac_install.png"/>
 <img alt="" style="height:350px" src="../../images/getting-started/setup/18_eb-WinCE_mac_install.png"/>
 3. Drag and drop the Enterprise Browser icon onto the Applications folder (in the direction of the arrow). This copies the Enterprise Browser files and folders into the Application folder on the host Mac, creating a directory structure similar to the one shown in the image below: 
@@ -108,6 +103,7 @@ The Enterprise Browser deployment tool appears in a window similar to one of the
 -----
 
 ## Deployment to Device(s)
+
 ###From a Windows host
 On Windows host systems, communication from the host to target device(s) is handled by the [Android Debug Bridge](http://developer.android.com/tools/help/adb.html) (ADB) for Android devices and by Mobile Device Center (or ActiveSync on WinXP) for Windows Mobile/CE. It also might be necessary to **install an OEM USB driver to make a USB-attached Android device visible to Windows**. If the device isn't visible to Windows, refer to the [Connections section](../setup#connections), below. 
 
@@ -116,9 +112,9 @@ On Windows host systems, communication from the host to target device(s) is hand
 
 Once a connection has been established, install the Enterprise Browser runtime onto a device:
 
-<img alt="" style="height:150px" src="../../images/getting-started/setup/18_EB_Android_installer.png"/>
+<img alt="" style="height:150px" src="../../images/getting-started/setup/sap_package.png"/>
 <br>
-<img alt="" style="height:350px" src="../../images/getting-started/setup/18_EB_Windows_installer.png"/>
+<img alt="" style="height:350px" src="../../images/getting-started/setup/windows.png"/>
 <br>
 
 1. Select **Start -> Enterprise Browser -> Enterprise Browser Installer** to bring up the EB Installer. A window will appear similar to the image above.  
@@ -128,12 +124,27 @@ Once a connection has been established, install the Enterprise Browser runtime o
 
 > **Note: For persistent installations on Windows CE (the lowermost two options on the "Installer" screen above), a cold boot/cleanPS (clean persistent storage) is required to complete the installation**.
 
+<!-- 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/WM_setup_01.jpg"/>
 <br>
+ -->
 
-> **Note**: Prior to installation, some Windows devices might prompt for the installation location on the device. **Enterprise Browser overrides any selection made here; it will always be installed in `\Program Files\EnterpriseBrowser\`**.
+#### Notes
 
-###From a Mac to Android
+* Prior to installation, some Windows devices might prompt for the installation location on the device. **Enterprise Browser overrides any selection made here; it will always be installed in `\Program Files\EnterpriseBrowser\`**.
+* When deploying Enterprise Browser cab file(s) for Windows Mobile/CE, the License Manager cab file is pushed first, followed by Enterprise Browser cab. A screen similar to the image below is displayed: 
+
+<img alt="" style="height:350px" src="../../images/getting-started/setup/screen_1_windows.JPG"/>
+<img alt="" style="height:350px" src="../../images/getting-started/setup/screen_2_windows.JPG"/>
+<br>
+
+Follow any prompts that appear to complete the installation.  
+
+<img alt="" style="height:350px" src="../../images/getting-started/setup/screen_3_windows.JPG"/>
+<img alt="" style="height:350px" src="../../images/getting-started/setup/screen_4_windows.JPG"/>
+<br>
+
+### From a Mac to Android
 The preferred deployment method of Enterprise Browser runtimes from a Mac OS host system to Android target devices is with the Android File Transfer utility. **If Android File Transfer is already installed, skip to Step 5**.  
 
 &#49;. Visit the [Android File Transfer page](https://www.android.com/filetransfer/).
@@ -158,7 +169,7 @@ The preferred deployment method of Enterprise Browser runtimes from a Mac OS hos
 
 Refer to the [On-device Configuration guide](../OndeviceConfig) for help configuring Enterprise Browser following installation.  
 
-###From a Mac to Windows Mobile/CE
+### From a Mac to Windows Mobile/CE
 The preferred deployment method of Enterprise Browser runtimes from a Mac OS host system to Windows Mobile/CE devices is using Bluetooth. 
 
 &#49;. Set the Windows Mobile/CE device as discoverable in the MotoBTUI app. 

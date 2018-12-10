@@ -294,7 +294,7 @@ Synchronous Return:
 <span class='text-info'>BOOLEAN</span> 
 
 #### Description
-Used to control whether the WebView supports the viewport HTML meta tag or a wide viewport. When false, layout width is always set to the width of the WebView control in device-independent (CSS) pixels. When true and the page contains the viewport meta tag, the value of the width specified in the tag is used. If the page does not contain the tag or does not specify a width, wide viewport id used. **Overrides any value set using the [UseWideViewPort config tag](../configreference/#viewport)**.
+Used to control whether the WebView supports the viewport HTML meta tag or a wide viewport. When false, layout width is always set to the width of the WebView control in device-independent (CSS) pixels. When true and the page contains the viewport meta tag, the value of the width specified in the tag is used. If the page does not contain the tag or does not specify a width, wide viewport id used. **Overrides any value set using the UseWideViewPort parameter of the [UseWideViewport config tag](../../configreference/#viewport)**.
 
 #### Access
 * Class: This property can only be accessed via the API class object.
@@ -322,7 +322,7 @@ Used to control whether the WebView loads pages in "zoomed out" (Overview) mode,
 * Android 5.x Lollipop and higher
 
 ##### Notes
-* Takes affect only if [UseWideViewPort config tag](../configreference/#viewport) or useWideViewPort property is set to true.
+* Takes affect only if `UseWideViewPort` parameter of the [ViewPort config tag](../../configreference/#viewport) or useWideViewPort API property is set to true.
 
 <!-- 12/4/18- Per eng., not exposed in Config.xml at this time
 * Overrides any value set using the [LoadWithOverviewMode config tag](../configreference/#loadwithoverviewmode).

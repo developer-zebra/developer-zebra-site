@@ -7,7 +7,7 @@ layout: guide.html
 
 ## Overview
 
-Apps made with Enterprise Browser 1.3 and higher support DOM injection, which inserts CSS, JavaScript and/or meta tags into a running app without modifying the underlying app. This permits features, capabilities and even the look and feel of part or all of any app to be modified or customized at runtime **<u>without changing the original source code</u>**. 
+Apps running on Enterprise Browser 1.3 and higher support DOM injection, which inserts CSS, JavaScript and/or meta tags into a running app without modifying the underlying app. This permits features, capabilities and even the look and feel of part or all of any app to be modified or customized at runtime **<u>without changing the original source code</u>**. 
 
 This can be useful, for example, to inject EB JavaScript libraries or other business logic into an SAP ITSmobile or other app for which there's no way to edit the source. DOM injection occurs after the page is completely loaded, ensuring that page modifications are applied only after [the DOM](../../../1-8/guide/dominjection/#whatisthedom) is ready for them.
 
@@ -17,15 +17,10 @@ Enabled by default, DOM injection is **activated by the [&lt;CustomDOMElements&g
 
 To use DOM injection, **ALL of the following must be true**:
 
-* The app being injected was made with Enterprise Browser 1.3 (or higher).
+* The app being injected is running on Enterprise Browser 1.3 (or higher).
 * A `tags` file containing elements to be injected has been created and pushed to the target device.
 * The path to the `tags` file is specified in the app's `Config.xml` file (see [Step 2](#step2updateconfigxml)).
-* The target device is running one of the following: 
-	* Android with stock webkit 
-	* Windows Mobile/CE device with Zebra Webkit
-	* Windows CE with IE engine
-
-**_DOM injection is NOT supported on Windows Mobile devices using the IE engine_**. 
+* The target device is running Android with the stock webkit. 
 
 ### Supports injection of:
 
@@ -34,11 +29,11 @@ To use DOM injection, **ALL of the following must be true**:
 * Meta tags described in the `tags` file (stored on the device)
 * Local files specified using absolute paths or [EB substitution variables](../configreference/#substitutionvariables) (i.e. `%INSTALLDIR%`)
 
-### Supported conditions:
+### Supported injection conditions:
 
-* All navigated pages (using wildcard character)
-* Only on specified pages (by file name or URL)
-* All pages that contain a specified string or HTML element (using `pagecontent` attribute)
+* Injects into all navigated pages (using wildcard character)
+* Injects into all pages that contain a unique string or HTML element (using `pagecontent` attribute)
+* Injects only into specified pages (by URL; server-based pages only)
 
 > **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
 
@@ -51,7 +46,7 @@ The "tags" file is the list of elements (i.e. JavaScript, CSS and/or meta tags) 
 **To create a tags file**: 
 
 1. **Create a text file** to contain the desired DOM-injection elements. 
-2. **Copy code lines from the samples** below or in the [Example section](#examples), paste them into the new document and modify their contents to match the app's requirement. 
+2. **Copy code lines from the samples** below or in the [Example section](#examples), paste them into the new document and modify their contents to match the app's requirement(s). 
 3. **Push the file to the device**; make note of the path and file name. 
 4. **Proceed to Step 2**: update the `Config.xml` file. 
 
@@ -111,7 +106,7 @@ The `pages` tag is used to specify the page(s) into which DOM elements are injec
 ##### Inject a CSS file into all pages using absolute path:
 	<link rel='stylesheet' type='text/css' href='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/mystyle.css'  pages='*' />
 
-##### Inject a JavaScript file into one server page using relative reference:
+##### Inject a JavaScript file into one server page using relative reference (server-based pages only): 
 	:::javascript
 	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pages='/mypages/page2.html; /mypages/page5.html' />
 _On server-based apps, DOM injection references are relative to the startPage URL. <br>For example, "http://myserver.com/mypages/startPage.html"_ could be the full URL for the example above. 
@@ -133,7 +128,7 @@ Attributes of DOM Injection tags:
 ##### Inject `enroll.js` file from the "install" directory if the string "Change Password" is found on any page:
 
 	:::javascript
-	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pagecontent='Enter Login ID' pages='*' />
+	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pagecontent='Change Password' pages='*' />
 <br>
 
 <img alt="" style="height:219px" src="sap1.png"/>
@@ -150,7 +145,7 @@ Once identified, copy the "outerXML" of the element and paste it into the 'pagec
 	<script type='text/javascript' src='file://%INSTALLDIR%/previous.js' pagecontent='<input type="hidden" name="sap-system-login-oninputprocessing" value="onProceed">' pages='*' />
 
 **Notes**: 
-* When specifying lengthy HTML elements, check syntax carefully to avoid errors. 
+* When specifying lengthy HTML elements, avoid syntax errors by carefully checking usage of spaces and single- and double-quotation marks (as in sample above). 
 * Multi-line values are not supported.
 
 ##### When all tags are completed, store the tags file on the device and take note of the file name and path. 
@@ -165,12 +160,12 @@ See [more code examples](#examples).
 JavaScript can be injected either through file protocol or by using an absolute path, [substitution variable](../configreference/#substitutionvariables), or server path relative to the EB app's start page. **Different rules apply to injection of local and server-based JavaScript, and might affect the app if dependencies exist between the JavaScript modules in use**. 
 
 #### Inject Local JavaScript
-When using the file protocol, the JavaScript file(s) must be resident on the target device and have path(s) specified in the `src` attribute of the script tag using the `file://` designation. For example, the following lines inject four JavaScript files into all pages of the app-relative directory:
+When using the file protocol, the JavaScript file(s) must be resident on the target device and have path(s) specified in the `src` attribute of the script tag using the `file://` designation. For example, the following lines inject JavaScript files into all pages of the app-relative directory:
 
 	:::xml 
-	<script type='text/javascript' src='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/mytest.js' pages='*'/>
-
 	<script type='text/javascript' src='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/jquery.js' pages='*'/>
+
+	<script type='text/javascript' src='file:///storage/emulated/0/Android/data/com.symbol.enterprisebrowser/mytest.js' pages='*'/>
 	
 **Notes**
 * Local JavaScript files are injected consecutively in the order they appear in the tags file.
@@ -178,7 +173,7 @@ When using the file protocol, the JavaScript file(s) must be resident on the tar
 * DOM injections occur every time a page is loaded, **so changes to JavaScript files injected in this way can be put into effect simply by refreshing the relevant page**.
 
 #### Inject Server-based JavaScript
-Here, four JavaScript files are injected from a server to all pages: 
+Here, four JavaScript files are injected from a server into all pages: 
 
 		:::xml
 		<script type='text/javascript' src='http:\\myserver.com\elements.js' pages='*' /> 
@@ -251,7 +246,7 @@ Sample JavaScript to delay loading:
 
 ##### Inject the JavaScript file `enroll.js` onto any page that contains a "Change Password" string:
 
-	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pagecontent=' Change Password’pages='*' />
+	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pagecontent=' Change Password’ pages='*' />
 <br>
 
 ##### Inject the JavaScript file `previous.js` on any page that contains a specific HTML element: 
@@ -268,40 +263,16 @@ Sample JavaScript to delay loading:
 -----
 
 ##### Sample tags file
-The following is an example of a complete tags file. Each tag is preceded by a description of that tag.  
+The following is an example of a complete tags file:  
 
-	<!--Sample tags file -->
-	<!--FILENAME: 'mytags.txt' -->
-	<!--DESC: 'tags' file for DOM Injection -->
-
-	<!--JavaScript section-->
-
-	<!--inject mytest.js into pages p1 and p2 only-->
-	<script type='text/javascript' src='./mytest.js' pages='p1;p2'/>
-
-	<!--inject mytest.js into all pages-->
-	<script type='text/javascript' src='./mytest.js' pages='*'/>
-
-	<!--inject a server-based JavaScript (into all pages)-->
-	<script type='text/javascript' src='http://192.168.10.1:8081/test.js' pages='*'/>
-
-	<!--inject a local JavaScript file (into p1 into p2)-->
-	<script type='text/javascript' src='file://\programfiles\enterprisebrowser\rho\apps\app\test.js' pages='p1;p2'/>
-
-	<!--MetaTags section-->
-
-	<!--refresh pages p1 and p2 every 30 seconds-->
-	<meta http-equiv="refresh" content="30" pages='p1;p2'/> 
-
-	<!--refresh all pages every 30 seconds-->
-	<meta http-equiv="refresh" content="30" pages='*'/>
-
-	<!--enable the scanner on all pages-->
-	<meta HTTP-Equiv="scanner" Content="Enable" pages='*'/> 
-
-	<!--StyleSheets section-->
-
-	<link rel="stylesheet" type="text/css" href="mystyle.css" pages='p1;p2'/>
-	<link rel="stylesheet" type="text/css" href="mystyle.css" pages='*'/>
-	<!--link rel="stylesheet" type="text/css" href="mystyle.css" pages='*'-->   
-	<link rel="stylesheet" type="text/css" href="file://\programfiles\enterprisebrowser\rho\apps\app\mystyle.css" pages='p1;p2'>
+	// Sample tags file for DOM injection
+	// FILENAME: 'mytags.txt'
+	//
+	<script type='text/javascript' src='file://%INSTALLDIR%/all.js' pages='*' /> 
+	<script type='text/javascript' src='file://%INSTALLDIR%/enroll.js' pagecontent='Enter your ID' pages='*' /> 
+	<script type='text/javascript' src='file://%INSTALLDIR%/login.js' pagecontent='Enter your User Name' pages='*' /> 
+	<script type='text/javascript' src='file://%INSTALLDIR%/download.js' pagecontent='Select your Choice' pages='*' /> 
+	<script type='text/javascript' src='file://%INSTALLDIR%/next.js' pagecontent='Next' pages='*' /> 
+	<script type='text/javascript' src='file://%INSTALLDIR%/previous.js' pagecontent='<input type="hidden" name="sap-system-login-oninputprocessing" value="onProceed">' pages='*' /> 
+	<meta http-equiv="refresh" content="30" pagecontent='Enter your User Name and Password' pages='*' /> 
+	<link rel='stylesheet' type='text/css' href='file://%INSTALLDIR%/mystyle.css'  pagecontent='Enter your User Name and Password' pages='*' />

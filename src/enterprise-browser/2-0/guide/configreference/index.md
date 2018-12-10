@@ -1272,13 +1272,15 @@ Defines the amount of time (in milliseconds) the application should wait to esta
 -----
 
 ## Screen orientation
+
 ### AutoRotate
-Controls automatic rotation of the screen (between portrait and landscape modes) whenever the device's physical orientation changes. When disabled, the orientation of the display does not change when device is rotated. 
+Controls automatic rotation of the screen (between portrait and landscape modes) whenever the device's physical orientation changes. When disabled, the orientation of the display does not change when device is rotated. **This tag is not included in the default** `Config.xml` **file; it must be added manually**. **Note**: This tag is overridden by the LockOrientation tag setting (below). 
+
 
 **Notes**: 
-* Overridden by the LockOrientation tag setting (below)
-* Overrides rotation setting in the Android System settings 
-* If this tag is missing or unspecified, app uses Settings panel setting
+* Overrides rotation setting in the Android System settings panel 
+* If this tag is missing from `Config.xml` file, app uses Android System panel setting
+* If tag value is unspecified, app behaces as if auto-rotation is "off"
 * Tag not included in default `Config.xml` file; must be added manually
 
 **Possible Values**:
@@ -1294,12 +1296,15 @@ Controls automatic rotation of the screen (between portrait and landscape modes)
 -----
 
 ### LockOrientation
-Forces a particular screen orientation (portrait or landscape) when an EB app launches. **This tag is not included in the default `Config.xml` file; it must be added manually**. **Note**: This tag overrides the AutoRotate tag setting (above).
+Forces a particular screen orientation (portrait or landscape) when an EB app launches. **This tag is not included in the default** `Config.xml` **file; it must be added manually**. **Note**: This tag overrides the AutoRotate tag setting (above).
 
 **Possible Values**:
 
 * LANDSCAPE - Launches app with horizontal orientation
 * PORTRAIT - Launches app with vertical orientation
+* AUTO - Locks app in "natural" orientation of device (see below)
+
+**Note**: Portrait mode is the "natural" orientation of all Zebra devices ***except*** the CC5000, ET55, VC80 and WT6000, for which it is landscape. 
 
 #### Example
 

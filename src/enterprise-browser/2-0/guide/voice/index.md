@@ -1,12 +1,12 @@
 ---
-title: Voice Inout/Output Guide
+title: Voice Input/Output Guide
 productversion: '2.0'
 product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview
 
-EnterpriseBrowser is going to support voice capabilities from EB 2.0 onwards.
+Enterprise Browser 2.0 (and higher) supports the ability to process incoming voice commands and convert them to text.
 
 EB is enabling voice by following the w3c voice APIs standard.
        Link: https://w3c.github.io/speech-api/speechapi.html                                        
@@ -40,8 +40,18 @@ Steps to use this feature:
      5. Now write down your Action value in CustomScript.xml as below mentioned.
      6. Push these files in EB installed directory i.e. (/Android/data/com.symbol.enterprisebrowser/) and you are done.
 
+<img alt="" style="height:350px" src="code.png"/>
+<br>
 
-n case you can’t find any string unique in the page, you can inspect the page source to identify the same
+
+<img alt="" style="height:350px" src="warehouse_picker.png"/>
+<br>
+
+
+<img alt="" style="height:350px" src="voice-directed_picking_solution.png"/>
+<br>
+
+in case you can’t find any string unique in the page, you can inspect the page source to identify the same
 
 Steps to Identify the unique string is:
      1. In config.xml please enable the debug mode by modifying <DebugModeEnable value="1"/>

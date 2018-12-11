@@ -6,61 +6,35 @@ layout: guide.html
 ---
 ## Overview
 
-Enterprise Browser 2.0 (and higher) supports the ability to process incoming voice commands and convert them to text.
+Enterprise Browser 2.0 (and higher) supports the ability to process incoming voice commands,  convert the voice input to text and employ the text in an app. Voice input is enabled in an EB app using JavaScript, which can be added to the app directly or added through [DOM injection](../dominjectionandroid). **A Zebra GMS device running Android is required**. 
 
-EB is enabling voice by following the w3c voice APIs standard.
-       Link: https://w3c.github.io/speech-api/speechapi.html                                        
+#### Interfaces in use: 
 
-EB 2.0 W3C speech APIs is being supported only using Google voice engine(GMS).
-Google Speech  for Android  API specification can be found below
+* [W3C Web Speech API](https://w3c.github.io/speech-api/speechapi.html) 
+* [Automatic Speech Recognition (ASR) APIs](https://developer.android.com/reference/android/speech/SpeechRecognizer)
+* [Text-to-speech (TTS) APIs](https://developer.android.com/reference/android/speech/tts/TextToSpeech)
+* [Speech package summary](https://developer.android.com/reference/android/speech/package-summary)
 
-      TTS APIs: https://developer.android.com/reference/android/speech/tts/TextToSpeech
-      ASR APIs: https://developer.android.com/reference/android/speech/SpeechRecognizer
-      Speech link: https://developer.android.com/reference/android/speech/package-summary
+### Requirements
 
-Web standard speech APIs taken-care/ published by open source community - Speech API Community Group under the W3C Community Final Specification Agreement (FSA). 
+To enable voice in an app, **BOTH of the following must be true**:
 
-      W3C APIs Public Link: https://w3c.github.io/speech-api/speechapi.html
-               Community Link: https://www.w3.org/community/speech-api/
-Introduced in 2012, are JavaScript APIs which allows web developers to provide speech input and text-to-speech output features in a web browser.
+* The app is running on Enterprise Browser 2.0 (or higher)
+* The app is deployed on a Zebra GMS device running Android
 
-Widely used specification adopted by majority of web browsers.
+-----
 
-Using a standard API set will future proof the customer investment as they will be able to switch to any platform/browser.
+### Enable With DOM Injection
 
-Enabling with DOM Injection
-
-Simplified Dom injection (pageAction feature) is the way, introduced now in EB, which injects the Javascript code for a particular page depending on an unique string found in that page. So, if you want to use javascript page wise, this is going to help you a lot.
+The easiest way to add voice to an existing EB app is through DOM injection and its `pageAction` feature. This feature allows JavaScript code to be injected into one or more specific pages as determined by a unique string found on the page. For example, if the app contain one or more pages that display text prompting the user to "Speak a Command," voice input can be activated on every page that contains that particular string of text. 
 
 Steps to use this feature:
-     1. Create two dependent files PageAction.xml and CustomScript.xml with below stub content.
-     2. Find an unique string/text/label in the page which will not resemble to other string in other page.
-     3. Now put this text as the value of `<pageIdentification value=“unique string” />` in PageAction.xml 
-     4. Also put your custom action value in <Action value=“myScript1”/> .
-     5. Now write down your Action value in CustomScript.xml as below mentioned.
-     6. Push these files in EB installed directory i.e. (/Android/data/com.symbol.enterprisebrowser/) and you are done.
 
-<img alt="" style="height:350px" src="code.png"/>
-<br>
-
-
-<img alt="" style="height:350px" src="warehouse_picker.png"/>
-<br>
-
-
-<img alt="" style="height:350px" src="voice-directed_picking_solution.png"/>
-<br>
-
-in case you can’t find any string unique in the page, you can inspect the page source to identify the same
-
-Steps to Identify the unique string is:
-     1. In config.xml please enable the debug mode by modifying <DebugModeEnable value="1"/>
-     2. Make sure the device is connected in debugging mode.
-     3. Open chrome and navigate to chrome://inspect
-     4. Now you can see the complete web page source of that html and can identify the unique string in the page.
+1. Create two dependent files PageAction.xml and CustomScript.xml with below stub content.
+2. Find a string (i.e. text, HTML element or label) that is **unique to that page**. 
+3. Paste this string as the value of `<pageIdentification value=“unique string” />` in `PageAction.xml` file. 
 
 #### PageAction.xml
-
 	:::xml
 	<pageActionGroup>
 	<pageAction1> 
@@ -69,9 +43,10 @@ Steps to Identify the unique string is:
 	 </pageAction2>
 	</pageActionGroup>
 
+4. Add name of the file containing the JavaScript to be executed as the custom action value in `<Action value=“myScript1”/>`.
+5. Paste the Action value into the `CustomScript.xml` as shown below.
 
 #### CustomScript.xml
-
 	:::xml
 		<CustomScripts>
 			<voiceScript>
@@ -94,6 +69,27 @@ Steps to Identify the unique string is:
 		            }
 		    </ voiceScript >
 		</CustomScripts>
+6. Push the two files to the EB installation directory: 
+  `/Android/data/com.symbol.enterprisebrowser`
+7. Add the path to the 
+
+<img alt="" style="height:350px" src="code.png"/>
+<br>
+
+<img alt="" style="height:350px" src="warehouse_picker.png"/>
+<br>
+
+<img alt="" style="height:350px" src="voice-directed_picking_solution.png"/>
+<br>
+
+in case you can’t find any string unique in the page, you can inspect the page source to identify the same
+
+Steps to Identify the unique string is:
+1. In config.xml please enable the debug mode by modifying <DebugModeEnable value="1"/>
+2. Make sure the device is connected in debugging mode.
+3. Open chrome and navigate to chrome://inspect
+4. Now you can see the complete web page source of that html and can identify the unique string in the page.
+
 
 #### Config.xml
 

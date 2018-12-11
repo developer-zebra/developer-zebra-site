@@ -34,6 +34,8 @@ automenu:
           url: customize
         - title: Page-based Actions Guide
           url: pageactions
+        - title: Voice Input/Output Guide
+          url: voice
     - title: Application Usage
       items:
         - title: DataWedge

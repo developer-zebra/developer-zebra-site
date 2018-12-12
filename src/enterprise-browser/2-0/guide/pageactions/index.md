@@ -26,6 +26,11 @@ Example: `runscript-clearcookiescript` executes a user-defined JavaScript code b
 * **doubleBack -** Navigates two pages back in the EB app's history.
 * **quit -** Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
 
+### File Location
+The location of the `PageAction.xml` file on the device must be specified in the app's `Config.xml` file using a qualified path (or a substitution variable) and file name. If no path is specified, the default path of `file://%INSTALLDIR%/PageAction.xml` is used. 
+
+See the [Config.xml reference](../configreference/#pageactionxmlfile) for more information. 
+
 -----
 
 ### Example

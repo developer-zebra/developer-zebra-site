@@ -412,7 +412,7 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 	</Configuration>
 
 ### buttonxmlfile
-**Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings for the custom on-screen buttons on the device. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will read the `button.xml` file (if present) from the specified folder when the app launches. For more information, see the [Customize EB Functions](../customize) guide.
+**Applies only to Android devices running KitKat and higher**. Specifies the location of `button.xml`, an optional file containing configuration settings for the custom on-screen buttons on the device. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser reads the `button.xml` file (if present) from the specified folder when the app launches. For more information, see the [Customize EB Functions](../customize) guide.
 
 **Possible Values**:
 
@@ -434,7 +434,7 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 
 
 ### customxmlfile
-**Applies only to Android devices running KitKat and higher**. Specifies the location of `CustomScript.xml`, an optional file containing custom JavaScript snippets to be called by custom on-screen buttons or other app functions. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser will read the `CustomScript.xml` file (if present) from the specified folder when the app launches. For more information, see the [Customize EB Functions](../customize) guide. 
+**Applies only to Android devices running KitKat and higher**. Specifies the location of `CustomScript.xml`, an optional file containing custom JavaScript snippets to be called by custom on-screen buttons or other app functions. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser reads the `CustomScript.xml` file (if present) from the specified folder when the app launches. For more information, see the [Customize EB Functions](../customize) guide. 
 
 **Possible Values**:
 
@@ -454,7 +454,50 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 		...
 	</Configuration>
 
+### keycodemappingxmlfile
+**Applies only to Android devices**. Specifies the location of `keycodemapping.xml`, an optional file containing configuration settings for the custom key mappings on the device. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser reads the `keycodemapping.xml` file (if present) from the specified folder when the app launches. For more information, see the [Keycode Mapping Usage Guide](../keycapture).
 
+**Possible Values**:
+
+* Fully qualified path and file name
+* Substitution variable representing the fully qualified path 
+* Supports any valid internal or external storage device
+* **Default path: "file://%INSTALLDIR%/keycodemapping.xml" (Enterprise Browser installation folder)**
+
+**Note**: If this tag is not present in the `Config.xml` or its value is unspecified, Enterprise Browser uses the `keycodemapping.xml` file (if present) in the EB install directory.
+
+#### Example
+
+	:::xml
+	<Configuration>
+		...
+		<FileLocations>
+		      <buttonxmlfile value="file://%INSTALLDIR%/keycodemapping.xml"/>
+		</FileLocations>
+		...
+	</Configuration>
+
+
+### pageactionxmlfile
+**Applies only to Android devices**. Specifies the location of `PageAction.xml`, an optional file containing configuration settings for page-based actions. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser reads the `PageAction.xml` file (if present) from the specified folder when the app launches. For more information, see the [Page-based Actions Usage Guide](../pageactions).
+
+**Possible Values**:
+
+* Fully qualified path and file name
+* Substitution variable representing the fully qualified path 
+* Supports any valid internal or external storage device
+* **Default path: "file://%INSTALLDIR%/PageAction.xml" (Enterprise Browser installation folder)**
+
+#### Example
+
+	:::xml
+	<Configuration>
+		...
+		<FileLocations>
+		      <pageactionxmlfile value="file://%INSTALLDIR%/PageAction.xml"/>
+		</FileLocations>
+		...
+	</Configuration>
 
 ### WebPageCapture
 **Applies to Android devices only**. Controls the ability of an Enterprise Browser app to capture for diagnostics purposes the source location and rendered screen of the WebView window currently in the foreground. When enabled (value=1), screens are captured. For complete instructions, see the [Capture a Screen](../capture) user guide.  
@@ -2567,8 +2610,8 @@ Controls whether server certificates will be verified against the internal certi
 
 **Possible Values**:
 
-* 0 Disable client certificate verification
-* 1 Enable client certificate verification
+* 0 - Disable client certificate verification
+* 1 - Enable client certificate verification
 
 #### Example
 	:::xml
@@ -2694,11 +2737,12 @@ Specifies which control-key combinations (copy, paste, etc.) should be enabled. 
 
 ## Default MetaTags
 ### MetaTag
-Permits a default meta tag to be specified so that a tag required by the application need not be present on every HTML page. Set a default tag by specifying the tag’s module, followed by the tilde character (~) and the properties of the module to set, as specified in EMML 1.1. If the meta tag is present in both the configuration and a loaded page, the page will take priority. Only persistent tags can be set logically in the configuration. Tag persistence is covered in the "additional information" section in the help file. Meta tag properties and their possible values are explained in the corresponding API.
+Permits a default meta tag to be specified so that a tag required by the application need not be present on every HTML page. Set a default tag by specifying the tag’s module, followed by the tilde character (~) and the properties of the module to set, as specified in EMML 1.1. If the meta tag is present in both the configuration and a loaded page, the page takes priority. Only persistent tags can be set logically in the configuration. Tag persistence is covered in the "additional information" section in the help file. Meta tag properties and their possible values are explained in the corresponding API.
 
 **Possible Values**:
 
 * [Module]~[property to set]
+
 
 #### Example
 	:::xml

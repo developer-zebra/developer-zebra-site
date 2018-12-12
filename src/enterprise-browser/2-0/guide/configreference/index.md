@@ -2551,8 +2551,8 @@ Controls whether server certificates will be verified against the internal certi
 
 **Possible Values**:
 
-* 0 - Disable Peer certificate verification
-* 1 - Enable Peer certificate verification
+* 0 - Disable peer certificate verification
+* 1 - Enable peer certificate verification
 
 #### Example
 	:::xml
@@ -2560,12 +2560,12 @@ Controls whether server certificates will be verified against the internal certi
 
 
 ### VerifyClientCertificate
-**Applies only to Android devices**. Configures app to ignore ClientCertificate requests from a server. Enterprise Browser by default looks for a client certificate in the certificate store whenever a server requests that EB present a client certificate. Setting this value to "0" causes the EB app to ignore such requests. **NOTE**: Setting this flag to false (value of "0") might result in an SSL protocol error. 
+**Applies to Android devices only**. Configures app to ignore ClientCertificate requests from a server. Enterprise Browser by default looks for a client certificate in the certificate store whenever a server requests that EB present a client certificate. Setting this value to "0" causes the EB app to ignore such requests. **NOTE: Setting this tag to "0" might result in an SSL protocol error**. 
 
 **Possible Values**:
 
-* 0 
-* 1
+* 0 Disable client certificate verification
+* 1 Enable client certificate verification
 
 #### Example
 	:::xml

@@ -15,9 +15,11 @@ Installing Enterprise Browser on a desktop or laptop system provides all the sof
 
 * Copy EnterpriseBrowser `.apk` files to Android devices
 * Copy EnterpriseBrowser `.cab` files to [StageNow](/stagenow/2-3/gettingstarted/) or a mobile device management (MDM) system for mass deployment
-* Create shortcuts to Android apps using the EB native widget (pushed to the device as part of EB installation)
 * Access the Enterprise Browser [Feature Demo](../featuredemo/) app
 * Easily link to EB online help
+<!-- 12/12/18- Android 8.x Oreo changed shortcut implementation, rendering EB incompatible. Removed per engineering. 
+* Create shortcuts to Android apps using the EB native widget (pushed to the device as part of EB installation)
+ -->
 
 <!-- * Copy EnterpriseBrowser .cab files to Windows Mobile/CE devices -->
 
@@ -260,7 +262,7 @@ If everything is setup correctly, a display like the following will be seen:
 <img alt="" style="height:150px" src="../../images/getting-started/setup/adb_devices_command.png"/>
 <br>
 
-The system is now ready to deploy Enterprise Browser apps and shortcuts to an Android device.
+The system is now ready to deploy Enterprise Browser apps <!-- and shortcuts  -->to an Android device.
 
 -----
 

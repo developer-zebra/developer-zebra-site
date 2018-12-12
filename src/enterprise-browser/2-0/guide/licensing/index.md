@@ -123,12 +123,12 @@ After a license is applied, a file can be created for Android or downloaded for 
 * **On Windows CE devices with a persistent installation, place a SECOND COPY of the file in**: `\Application\EnterpriseBrowser\Config\`
 
 &#51;. Launch Enterprise Browser and confirm that the license has been applied (the name of the licensed company will appear on EB splash screen). <br>
-&#52;. Repeat Steps 1 and 2 for all [EB app shortcuts](../ShortcutCreator/) that will run on the device(s). 
+&#52;. Repeat Steps 1 and 2 for all [EB apps](../ShortcutCreator/) to run on the device(s). 
 <br>
 
 **Deployment Option Notes**: 
 
-* When using Option 3, all `Config.xml` files for all app shortcuts on a device must contain the licensing information. 
+* When using Option 3, all `Config.xml` files for all apps on a device must contain the licensing information. 
 * A device becomes licensed only after Enterprise Browser is launched for the first time with a `Config.xml` file that contains valid licensing information. 
 * License deployment options may be used in any combination across the devices of a deployment, but only one option should be used on any single device. 
 
@@ -151,7 +151,6 @@ Any of the Deployment License files described above can be mass-deployed using [
 -----
 
 **Related Guides**:
-* **[Enterprise Browser App Shortcuts](../ShortcutCreator/)-** The key to multi-app deployments 
 * **[Enterprise Browser Setup Guide](../setup/) -** Help with initial setup, connecting to devices and pushing files
 * **[Zebra licensing system documentation page](https://softwarelicensing.zebra.com/documentation/index.html) -** Additional licensing info and sample screens
 

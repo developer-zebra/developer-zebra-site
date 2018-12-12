@@ -29,6 +29,11 @@ The following facts apply generally to Android keycode mapping for Enterprise Br
 * [Additional restrictions](../../api/keycapture/#remarks) apply to keycapture and keycode mapping. 
 * The `keycodemapping.xml` file must not be empty nor contain data not formatted according to the guidelines described in this guide. 
 
+### File Location
+The location of the `keycodemapping.xml` file on the device can be specified in the &lt;keycodemappingxmlfile&gt; tag of the app's `Config.xml` file using a fully qualified path (or substitution variable) and file name. This allows separate folders to be created for storing key mappings for different apps. If no path is specified, the default path of `file://%INSTALLDIR%/keycodemapping.xml` is used. 
+
+See the [Config.xml reference](../configreference/#keycodemappingxmlfile) for more information. 
+
 -----
 
 ## Mapping Android Keycodes 

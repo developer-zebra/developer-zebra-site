@@ -455,7 +455,7 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 	</Configuration>
 
 ### keycodemappingxmlfile
-**Applies only to Android devices**. Specifies the location of `keycodemapping.xml`, an optional file containing configuration settings for the custom key mappings on the device. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser reads the `keycodemapping.xml` file (if present) from the specified folder when the app launches. For more information, see the [Keycode Mapping Usage Guide](../keycapture).
+**Applies only to Android devices**. Specifies the location of `keycodemapping.xml`, an optional file containing configuration settings for the custom key mappings on the device. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser reads the `keycodemapping.xml` file from the specified folder when the app launches. For more information, see the [Keycode Mapping Usage Guide](../keycapture).
 
 **Possible Values**:
 

@@ -27,7 +27,7 @@ Example: `runscript-clearcookiescript` executes a user-defined JavaScript code b
 * **quit -** Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
 
 ### File Location
-The location of the `PageAction.xml` file on the device must be specified in the app's `Config.xml` file using a qualified path (or a substitution variable) and file name. If no path is specified, the default path of `file://%INSTALLDIR%/PageAction.xml` is used. 
+The location of the `PageAction.xml` file on the device can be specified in the &lt;keycodemappingxmlfile&gt; tag of the app's `Config.xml` file using a fully qualified path (or substitution variable) and file name. This allows separate folders to be created for storing the actions of different apps. If no path is specified, the default path of `file://%INSTALLDIR%/PageAction.xml` is used. 
 
 See the [Config.xml reference](../configreference/#pageactionxmlfile) for more information. 
 

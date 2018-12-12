@@ -332,6 +332,7 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 	        <UserAgent value="" />
 			<NetworkCookieDatabase value="file://%INSTALLDIR%/cookies.db"/>
 			<VerifyPeerCertificate value="1"/>
+			<VerifyClientCertificate value="0"/>
 	    	<Cookies value="1"/>		
 			<DeleteCookiesOnLaunch value="0"/>
 			<DeleteCookiesOnExit value="0"/>
@@ -2556,6 +2557,20 @@ Controls whether server certificates will be verified against the internal certi
 #### Example
 	:::xml
 	<VerifyPeerCertificate value="1"/>
+
+
+### VerifyClientCertificate
+**Applies only to Android devices**. Configures app to ignore ClientCertificate requests from a server. Enterprise Browser by default looks for a client certificate in the certificate store whenever a server requests that EB present a client certificate. Setting this value to "0" causes the EB app to ignore such requests. **NOTE**: Setting this flag to false (value of "0") might result in an SSL protocol error. 
+
+**Possible Values**:
+
+* 0 
+* 1
+
+#### Example
+	:::xml
+	<VerifyClientCertificate value="0"/>
+
 
 ### ClientCertPath
 **Applies only to Enterprise Browser 1.5 and higher on Windows Mobile/CE with Webkit engine**. Specifies the path to certificate (`.pem`) file(s) requested by a server for client authentication when connecting via `https://`. Certificate files should contain no more than one certificate each. Expired certificates are ignored. See the [Certificates guide](../certificates/) for help creating certificates. 

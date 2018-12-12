@@ -294,7 +294,7 @@ Synchronous Return:
 <span class='text-info'>BOOLEAN</span> 
 
 #### Description
-Used to control whether the WebView supports the viewport HTML meta tag or a wide viewport. When false, layout width is always set to the width of the WebView control in device-independent (CSS) pixels. When true and the page contains the viewport meta tag, the value of the width specified in the tag is used. If the page does not contain the tag or does not specify a width, wide viewport id used. **Overrides any value set using the UseWideViewPort parameter of the [UseWideViewport config tag](../../configreference/#viewport)**.
+Used to control whether the WebView supports the viewport HTML meta tag or a wide viewport. When false, layout width is always set to the width of the WebView control in device-independent (CSS) pixels. When true and the page contains the viewport meta tag, the value of the width specified in the tag is used. If the page does not contain the tag or does not specify a width, wide viewport id used. **Overrides any value set using the UseWideViewPort parameter of the [UseWideViewport config tag](../../guide/configreference/#viewport)**.
 
 #### Access
 * Class: This property can only be accessed via the API class object.
@@ -322,7 +322,7 @@ Used to control whether the WebView loads pages in "zoomed out" (Overview) mode,
 * Android 5.x Lollipop and higher
 
 ##### Notes
-* Takes affect only if `UseWideViewPort` parameter of the [ViewPort config tag](../../configreference/#viewport) or useWideViewPort API property is set to true.
+* Takes affect only if `UseWideViewPort` parameter of the [ViewPort config tag](../../guide/configreference/#viewport) or useWideViewPort API property is set to true.
 
 <!-- 12/4/18- Per eng., not exposed in Config.xml at this time
 * Overrides any value set using the [LoadWithOverviewMode config tag](../configreference/#loadwithoverviewmode).
@@ -612,27 +612,6 @@ Get whether viewport meta tag processing is enabled or disabled in the Navigatio
 ####Platforms
 
 * Windows Mobile (WebKit)
-
------
-
-### VerifyClientCertificate
-
-####Type
-<span class='text-info'>BOOLEAN</span>
-
-####Description
-Configures WebView to ignore ClientCertificate requests from a server. Enterprise Browser by default looks for a client certificate in the certificate store whenever a server requests that EB present a client certificate. Setting this value to "0" causes the EB app to ignore such requests. 
-
-####Access
-
-* Class: This property can only be accessed via the API class object.
-	* <code>EB.WebView.VerifyClientCertificate</code>
-
-####Platforms
-
-* Android
-
-**NOTE**: Setting this flag to false (value of "0") might result in an SSL protocol error. 
 
 -----
 

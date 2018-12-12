@@ -198,7 +198,7 @@ Sample JavaScript to delay loading:
 		:::javascript
 		(function() {
  
-        // Poll for jQuery to come into existence
+        // Poll for EB namespace to come into existence
         var checkReady = function(callback) {
             if (window.EB) {
                 callback(EB);

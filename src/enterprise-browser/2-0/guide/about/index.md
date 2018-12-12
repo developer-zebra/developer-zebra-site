@@ -19,6 +19,8 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v2.0
 
+> **NOTICE**: Beginning with Android 8.x Oreo, <u>application shortcut implementation has changed and is no longer supported by Enteprise Browser</u>. Therefore, the Shortcut Creator Usage Guide and all EB docs relating to shortcuts have been removed. 
+
 ### Device Support 
 
 EB 2.0 adds support for the following mobile computing devices: 

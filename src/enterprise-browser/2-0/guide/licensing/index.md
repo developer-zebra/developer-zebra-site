@@ -123,12 +123,14 @@ After a license is applied, a file can be created for Android or downloaded for 
 * **On Windows CE devices with a persistent installation, place a SECOND COPY of the file in**: `\Application\EnterpriseBrowser\Config\`
 
 &#51;. Launch Enterprise Browser and confirm that the license has been applied (the name of the licensed company will appear on EB splash screen). <br>
-&#52;. Repeat Steps 1 and 2 for all [EB apps](../ShortcutCreator/) to run on the device(s). 
+&#52;. Repeat Steps 1 and 2 for all [EB app shortcuts](../ShortcutCreator/) to run on the device(s). 
 <br>
+
+**NOTE: Shortcuts are not supported on devices running Android 8.x Oreo or higher**.  
 
 **Deployment Option Notes**: 
 
-* When using Option 3, all `Config.xml` files for all apps on a device must contain the licensing information. 
+* When using Option 3, all `Config.xml` files for all apps shortcuts on a device must contain the licensing information. 
 * A device becomes licensed only after Enterprise Browser is launched for the first time with a `Config.xml` file that contains valid licensing information. 
 * License deployment options may be used in any combination across the devices of a deployment, but only one option should be used on any single device. 
 

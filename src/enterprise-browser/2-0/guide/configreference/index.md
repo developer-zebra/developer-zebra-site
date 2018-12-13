@@ -23,10 +23,9 @@ The location of the configuration file on the device varies by target and platfo
 	* **Android**: `/Android/data/com.symbol.enterprisebrowser`
 	* **Windows**: `\Program Files\EnterpriseBrowser\Config`
 
-<!-- 12/12/18- Android 8.x Oreo changed shortcut implementation, rendering EB incompatible. Removed per engineering. 
+**Shortcuts are not supported on devices running Android 8.x Oreo or higher**.  
 
 * If multiple `Config.xml` files are required for a single device, they can be configured and selected at runtime using the /C: configuration parameter or by using Shortcuts. See the [Shortcut Creator Guide](../ShortcutCreator) for details.
--->
 
 ### Persistent Installations
 If a `Config.xml` must be retained after a cold boot, a persistent installation can be selected (applies only to Windows devices). In such systems: 
@@ -2820,10 +2819,11 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](.
 
 -----
 
-<!-- 12/12/18- Android 8.x Oreo changed shortcut implementation, rendering EB incompatible. Removed per engineering. 
-
 ## Shortcut Creation
 ###ShortcutCreationEnabled
+
+**Shortcuts are not supported on devices running Android 8.x Oreo or higher**.  
+
 **Applicable only when using the Enterprise Browser Shortcut Creator utility;** otherwise ignored. Controls automatic creation of app shortcuts on Android and Windows Mobile/CE target devices when Enterprise Browser is launched. When option 1 is selected, checks for and creates new shortcuts at every launch. Setting persists following EB uninstall/re-install. Setting is lost after cold reboot. Disabled by default.  For more information, please refer to the [Shortcut Creator guide](../ShortcutCreator). 
 
 **Possible Values**:
@@ -2837,7 +2837,6 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](.
 	<ShortcutCreationEnabled value="1"/>
 
 -----
--->
 
 ## KeepAlive
 **Applies only to Windows Mobile/CE with Webkit engine**. Controls whether HTTP connections will be maintained between requests. When enabled (default), maintains a connection between the web server and client. When disabled, connection is closed when the request is complete. 

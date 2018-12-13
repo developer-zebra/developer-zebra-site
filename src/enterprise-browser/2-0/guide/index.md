@@ -20,6 +20,8 @@ automenu:
           url: configreference
         - title: On-device Configuration
           url: OndeviceConfig
+        - title: Shortcut Creator Utility
+          url: ShortcutCreator
     - title: App Customization
       items:
         - title: API Usage Guide

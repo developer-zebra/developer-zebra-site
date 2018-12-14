@@ -113,7 +113,7 @@ The following software must be installed on the staging workstation prior to usi
  * Enable/disable sending of a custom DHCP Option to server
  * Send or disable a specified DHCP Option
  * Send a value with a specified custom DHCP Option
-* **Enhanced [License Manager](../csp/licensemgr)** adds these new actions:
+* **Enhanced [License Manager](../csp/license)** adds these new actions:
  * Specify an Activation ID to return a license from the device
  * Specify server friendly name for returning one or all licenses and for deleting license source
  * Select the license source type to be used to return one or all licenses

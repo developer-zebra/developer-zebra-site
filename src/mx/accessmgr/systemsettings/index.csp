@@ -5,7 +5,7 @@ type: parm
 order: 3
 mx: "4.1"
 osx: "3.5"
-devicetype: A
+devicetype: A,B
 parm:
   presentif: The Operation Mode is "Single User With Whitelist"
   pivotal: No
@@ -13,17 +13,17 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Full Access
       mx: "4.1"
       osx: "3.5"
-      description: This value will cause the device user to be allowed to access the full capabilities of the in-device System Settings Menu.
+      description: Allows full access to the Android Settings panel.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Reduced Access
       mx: "4.1"
       osx: "3.5"
-      description: This value will cause the device user to be allowed to access only a reduced set of the capabilities of the in-device System Settings Menu (Display, Volume, About)
+      description: Limits Settings panel access to Display, Volume and About features. 
 ---
 
-Select the level of system settings access to be allowed on the device's System Settings menu.
+Controls the level of access a device user is granted to the Android Settings panel.

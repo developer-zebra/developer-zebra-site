@@ -7,7 +7,7 @@ mx: "5.0"
 osx-specific-list: "3.6,4.5"
 osx-exclude: "4.0"
 osx-exclude-end: "4.4"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   name: ScreenShotUsage
@@ -18,11 +18,11 @@ parm:
       osx-specific-list: "3.6,4.5"
       osx-exclude: "4.0"
       osx-exclude-end: "4.4"
-      devicetype: A
+      devicetype: A,B
       name: Do Nothing
-      description: This value (or the absence of this parm from the XML) will cause no change to the current behavior; any previously selected setting will be retained.
+      description: This value (or the absence of this parm from the XML) causes no change to the current behavior; any previously selected setting is retained.
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Enable
       mx: "5.0"
       osx-specific-list: "3.6,4.5"
@@ -30,7 +30,7 @@ parm:
       osx-exclude-end: "4.4"
       description: Enables the ability to use the Android screen capture feature.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Disable
       mx: "5.0"
       osx-specific-list: "3.6,4.5"
@@ -41,4 +41,4 @@ parm:
 
 Controls whether a device can use Android's built-in screen capture capability, which captures the contents of the screen and saves it to a file on the device. 
 
->**Note:** The method for capturing the screen generally involves a combination of simultaneous key presses, and varies from one device to another. 
+>**Note:** The method of capturing the screen generally involves a combination of simultaneous key presses that varies from one device to another. 

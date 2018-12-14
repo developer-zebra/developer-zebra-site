@@ -15,27 +15,27 @@ parm:
     - code: 0
       devicetype: A
       name: Delete NO Packages
-      description: This value does not delete anything and hence does not affect the "white" list at all.
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; all packages remain on the device. 
       mx: "4.1"
       osx: "1.0"
     - code: 1
       devicetype: A
       name: Delete specified Packages(s)
-      description: This value will cause one or more selected Package Names to be deleted from the "white list," thus blocking user, or "installable," applications with those Package Names from being installed by the device user or launched.
+      description: Causes the selected Package Name(s) to be deleted from the "white list," blocking user or "installable" applications with those Package Names from being installed by the device user or launched.
       mx: "4.1"
       osx: "1.0"
     - code: 2
       devicetype: A
       name: Delete ALL Packages
-      description: This value will cause all Package Names to be deleted from the "white list," thus blocking all user, or "installable,"  applications from being installed by the device user or launched.
+      description: Causes all Package Names to be deleted from the "white list," blocking all user or "installable"  applications from being installed by the device user or launched.
       mx: "4.1"
       osx: "1.0"
     - code: 3
       devicetype: A
       name: Delete specified Signature(s)
-      description: This value is meaningful only with Signature verification is turned on, in which case it deletes one or more Signatures from the "white list," thus blocking user, or "installable," applications with those Signatures from being installed by the device user or launched.
+      description: When Signature verification is turned on, deletes one or more Signatures from the "white list," thus blocking user or "installable" applications with those Signatures from being installed by the device user or launched.
       mx: "4.1"
       osx: "1.0"
 ---
 
-Select whether or not to delete Packages from the Whitelist
+Used to delete Packages from the Whitelist.

@@ -5,7 +5,8 @@ type: parm
 order: 10
 mx: "6.0"
 osx: "6.0"
-devicetype: A
+devicetype: A,B
+info: Available on TC20/TC25 devices running Android 8.x Oreo and higher. 
 parm:
   pivotal: No
   name: ScreenLockType
@@ -14,35 +15,35 @@ parm:
     - code: 0
       mx: "6.0"
       osx: "6.0"
-      devicetype: A
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the Screen Lock Type; any previously selected setting will be retained.
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Swipe
       mx: "6.0"
       osx: "6.0"
       description: Causes the Swipe screen-lock to be displayed whenever the lock screen is invoked.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Pattern
       mx: "6.0"
       osx: "6.0"
       description: Causes the Pattern screen-lock to be displayed whenever the lock screen is invoked.
     - code: 3
-      devicetype: A
+      devicetype: A,B
       name: Pin
       mx: "6.0"
       osx: "6.0"
       description: Causes the numerical "Pin" screen-lock to be displayed whenever the lock screen is invoked.
     - code: 4
-      devicetype: A
+      devicetype: A,B
       name: Password
       mx: "6.0"
       osx: "6.0"
       description: Causes the Password screen-lock to be displayed whenever the lock screen is invoked.
     - code: 5
-      devicetype: A
+      devicetype: A,B
       name: None
       mx: "6.0"
       osx: "6.0"

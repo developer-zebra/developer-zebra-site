@@ -66,7 +66,7 @@ parm:
       mx: "5.1"
       apilevel: "1"
     - code: 9
-      devicetype: A
+      devicetype: A,B
       name: BatteryOptimization
       description: Allows one or more apps to be added to or removed from the "Doze Mode exemption" list, which determines whether the device is allowed to enter a power saving mode while the app is running. 
       mx: "7.0"

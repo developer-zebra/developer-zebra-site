@@ -6,6 +6,10 @@ mxversions:
     value: 7.0
 csps:
   - type: section
+    title: Access Manager
+    url: /mx/accessmgr
+    csp: accessmgr
+  - type: section
     title: Analytics Manager
     url: /mx/analyticsmgr
     csp: analyticsmgr
@@ -41,6 +45,10 @@ csps:
     title: DhcpOptionMgr
     url: /mx/dhcpoptionmgr
     csp: dhcpoptionmgr
+  - type: section
+    title: Display Manager
+    url: /mx/displaymgr
+    csp: displaymgr
   - type: section
     title: File Manager
     url: /mx/filemgr

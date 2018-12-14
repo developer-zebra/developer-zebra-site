@@ -6,7 +6,7 @@ order: 10
 mx: "6.0"
 osx: "6.0"
 devicetype: A,B
-info: Available on TC20/TC25 devices running Android 8.x Oreo and higher. 
+info: On TC20/TC25 devices, available only when running Android 8.x Oreo and higher. 
 parm:
   pivotal: No
   name: ScreenLockType

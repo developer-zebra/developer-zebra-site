@@ -19,41 +19,35 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v2.0
 
-> **NOTICE**: Beginning with Android 8.x Oreo, <u>application shortcut implementation has changed and is no longer supported by Enteprise Browser</u>. Therefore, the Shortcut Creator Usage Guide and all EB docs relating to shortcuts have been removed. 
+> **NOTICE**: Android 8.x Oreo has changed the way application shortcuts are implemented. Therefore, <u>**app shortcuts are no longer supported on devices running Android Oreo and higher**</u>. However, the Shortcut Creator Usage Guide and all EB features relating to shortcuts remain documented here. 
 
 ### Device Support 
 
-EB 2.0 adds support for the following mobile computing devices: 
+EB 2.0 now supports the following mobile computing devices and operating systems: 
 
-OLD OLD
-* **CC5000-10** Android Lollipop
-* **MC33X** Android Nougat
-* **MC55X** Windows Embedded Handheld 6.5
-* **MC55X Healthcare** Windows Embedded Handheld 6.5
-* **TC51** Android Nougat
-* **TC51 Healthcare** Android Nougat
-* **TC56** Android Nougat
-* **TC70X** Android Nougat
-* **TC75X** Android Nougat
-* **VC80X** Android Nougat
-
-OLD OLD
+* **MC33X** Android Oreo
+* **PS20J** Android Oreo
+* **TC20** Android Nougat, Oreo
+* **TC25** Android Nougat, Oreo
+* **TC51** Android Oreo 
+* **TC51 Healthcare** Android Oreo 
+* **TC52** Android Oreo
+* **TC56** Android Oreo 
+* **TC57** Android Oreo
+* **TC57 Healthcare** Android Oreo
+* **TC70X** Android Oreo 
+* **TC75X** Android Oreo 
+* **TC72** Android Oreo
+* **TC77** Android Oreo
+* **VC80X** Android Oreo 
+* **WT6000** Android Nougat
 
 ### Scanner Support
-EB 1.8 is now supported for use with the following scanners when connected to the Zebra devices and operating systems listed:
+EB 2.0 is now supported for use with the following scanners when connected to Zebra devices and operating systems listed:
 
-* **DS3678 Ultra-Rugged Scanner** 
-
-OLD OLD
-
-	* Running Android 7.0 (Nougat) on:
- 		* MC33X
- 		* TC51
- 		* TC51-HC
- 		* TC56
- 		* TC70X
- 		* TC75X
- 		* VC80X
+**Handheld Scanner Support**
+* **DS2278** support added for use with Android Nougat devices
+* **LI3678** support added for use with Android Nougat devices
 
 See all [supported Zebra devices](../about#mobile). 
 
@@ -598,7 +592,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="mc33Pic" src="../../images/mc33x.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC33X</b></td>
   <td class="clsSyntaxCells clsOddRow">MC3300</td>
-  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>Android 8.0 (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -607,8 +601,8 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
- 
- </tr><tr>
+ </tr>
+ <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc45Pic" src="../../images/mc45.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC45</b></td>
   <td class="clsSyntaxCells clsOddRow">MC45</td>
@@ -713,11 +707,25 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 (Omnii CE-12.2.44149 BSP or higher)<br>Windows Embedded Handheld 6.5 (Omnii CE-12.2.44149 BSP or higher)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="ps20J.jpg" src="../../images/ps20J.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>PS20</b></td>
+  <td class="clsSyntaxCells clsOddRow">PS20J</td>
+  <td class="clsSyntaxCells clsOddRow">Android 8.0 (Oreo)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+<tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc2x" src="../../images/tc2x.png" height="25"></img></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC2X</b></td>
+  <td class="clsSyntaxCells clsOddRow">TC20, TC25</td>
+  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>Android 8.x (Oreo)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
 <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc51IronmanPic" src="../../images/tc51Ironman.jpg" height="25"></img></td>
-  <td class="clsSyntaxCells clsOddRow"><b>TC5x</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC51, TC51HC, TC56</td>
-  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC5X</b></td>
+  <td class="clsSyntaxCells clsOddRow">TC51, TC51HC, TC52, TC56, TC57, TC57HC</td>
+  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>Android 7.0 (Nougat)<br>Android 8.x (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -738,7 +746,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="tc70xPic" src="../../images/tc75Falcon.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC70x</b></td>
   <td class="clsSyntaxCells clsOddRow">TC70x</td>
-  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshamallow)<br>Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshamallow)<br>Android 7.0 (Nougat)<br>Android 8.x (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -753,9 +761,17 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="tc75FalconPic" src="../../images/tc75Falcon.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC75x</b></td>
   <td class="clsSyntaxCells clsOddRow">TC75x</td>
-  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>Android 7.0 (Nougat)<br>Android 8.x (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc77" src="../../images/TC77.png" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC77</b></td>
+  <td class="clsSyntaxCells clsOddRow">TC77</td>
+  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>Android 8.x (Oreo)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+ <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc8000Pic" src="../../images/tc8000.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC8000</nobr></td>
@@ -813,7 +829,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="vc80xPic" src="../../images/vc80x.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>VC80X</b></td>
   <td class="clsSyntaxCells clsOddRow">VC80C</td>
-  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>Android 8.x (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Stock Android Webkit</td>
  </tr>
 </tbody>
@@ -888,7 +904,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><img id="wt6000Pic" src="../../images/wt6000.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>WT6000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>WT6000</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>Android 7.x (Nougat)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  </tbody>
@@ -941,7 +957,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 
 * Works with RhoElements 2.x and PocketBrowser 2.x/3.x APIs on all supported devices running KitKat or higher **except the TC70-GA1**. 
 
-<h3>Ultra-Rugged Scanners</h3>
+<h3>Handheld Scanners</h3>
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody>
  <tr>
@@ -956,8 +972,22 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>DS3678</b></td>
   <td class="clsSyntaxCells clsOddRow">Ultra-Rugged Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">TC51, TC51-HC, TC56, TC70X Android 6.0 (Marshmallow)<br>
-MC33X, TC51, TC51-HC, TC56, TC70X, TC75X, VC80X Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">TC51, TC51-HC, TC56 and TC70X devices running Android 6.0 (Marshmallow)<br>
+MC33X, TC51, TC51-HC, TC56, TC70X, TC75X and VC80X devices running Android 7.0 (Nougat) and 8.0 (Oreo)</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="li3678" src="../../images/LI3678.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>LI3678</b></td>
+  <td class="clsSyntaxCells clsOddRow">Ultra-Rugged Scanner</td>
+  <td class="clsSyntaxCells clsOddRow">Accessory</td>
+  <td class="clsSyntaxCells clsOddRow">MC33X, TC51, TC51-HC, TC56, TC70X, TC75X and VC80X devices running Android 7.0 (Nougat)</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="ds2278" src="../../images/ds2278.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>DS2278</b></td>
+  <td class="clsSyntaxCells clsOddRow">Handheld Scanner</td>
+  <td class="clsSyntaxCells clsOddRow">Accessory</td>
+  <td class="clsSyntaxCells clsOddRow">MC33X, TC51, TC51-HC, TC56, TC70X, TC75X and VC80X devices running Android 7.0 (Nougat)</td>
  </tr>
 </tbody>
 </table>

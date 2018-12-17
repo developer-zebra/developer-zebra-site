@@ -472,8 +472,8 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br>Android 5.0 (Lollipop)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
- 
- </tr><tr>
+ </tr>
+ <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="mc45Pic" src="../../images/mc45.jpeg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC45</b></td>
   <td class="clsSyntaxCells clsOddRow">MC45</td>

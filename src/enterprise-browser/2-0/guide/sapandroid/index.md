@@ -29,19 +29,19 @@ SAP ITSmobile applications can be configured to play a sound to indicate the suc
 
 EB 2.0 includes SAP-specific keyboard layouts that leverage EB's custom [ButtonBar features](../customize). This helps to compensate for hardware keys missing from Android devices. 
 
-**The SAPkeyboard by default displays a numeric layout** whenever the focus of an app is on an input field. The default layout is easily changed by editing the `showKeyboard`/`hideKeyboard` JavaScript function in the `sapkeyboard.js`.
+**The SAP keyboard by default displays a numeric layout** whenever the focus of an app is on an input field. The default layout is easily changed by editing the `showKeyboard`/`hideKeyboard` JavaScript function in the `sapkeyboard.js` API.
 
 **A function key layout** allows SAP users to press function keys from the Software Input Panel (SIP) on demand, eliminating the need to modify the SAP application to include HTML buttons to emulate function keys. Each key on an EB keyboard can easily be configured to issue a keystroke or to run a script. For more information, see the [ButtonBar Parameter guide](../customize/button). 
 
 ## `TO BE REVISED` 
 
 
-The `/android_sap/Sapkeyboard.js` file reads the SAP Keyboard config params from the config.xml and register for a onfocus event and a keydown event to control the keyboard popup behavior.
+The `/android_sap/Sapkeyboard.js` file reads the SAP keyboard config paramaters from the `Config.xml` file and registers for onfocus and keydown events to control keyboard pop-up behavior.
 
-One should ensure that APIs below are called after showing a keyboard or after hiding a keyboard.
+**Note: It's important to ensure that the APIs below are called *<u>after</u>* showing or hiding a keyboard**.
 
     metaReceiver.resizeWebviewOnButtonbarShown(); 
-    //must call to do webview redraw on keyboard popup
+    //must call to do WebView redraw on keyboard pop-up
  
  
     metaReceiver.restoreWebviewOnButtonbarHidden(); 
@@ -94,7 +94,7 @@ Do user wants to show keyboard when F10 key pressed or when input field is focus
                      </ondemand>    
     </KeyboardConfiguration>
 
-Whether page should be resizable on keyboard popup to avoid visibility concerns; if yes user can set
+Whether page should be resizable on keyboard pop-up to avoid visibility concerns; if yes user can set
 
     :::xml
     <SIP>
@@ -257,7 +257,7 @@ Note: if user doesn’t want to use any keyboard, then recommended way is to use
       </ondemand>   
     </KeyboardConfiguration>
 
-Using above config.xml attributes ensures no keyboard popup on input field focus. It will popup if user presses a F10 key. (key value can be reconfigured as per user need)
+Using above config.xml attributes ensures no keyboard pop-up on input field focus. It pops up when the F10 key is pressed (reconfigurable as needed). 
 
 "EB for SAP"
 
@@ -364,7 +364,7 @@ Note: On regular package EB namespace will not be enabled by default. On regular
 Hiding SystemBar
 Sap package by default hides the system bar (navigation bar) when launched. This will help user to get more screen space to render the page. Also it will block end-user to minimize or going back from enterprise browser. This feature will give better result when used with Enterprise Home Screen.
 
-Sap package allows user to quit application when F8 is pressed. User can press F10 key to popup the SAP keyboard on a default package to press F8 button if hardware key is not present on the device.
+Sap package allows user to quit application when F8 is pressed. User can press F10 key to pop up the SAP keyboard on a default package to press F8 button if hardware key is not present on the device.
 
 User can enable the system bar on SAP package by setting the below config.xml entry
 

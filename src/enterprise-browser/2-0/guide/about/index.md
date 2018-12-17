@@ -19,7 +19,7 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v2.0
 
-> **NOTICE**: Android 8.x Oreo has changed the way application shortcuts are implemented. Therefore, <u>**app shortcuts are no longer supported on devices running Android Oreo and higher**</u>. However, the Shortcut Creator Usage Guide and all EB features relating to shortcuts remain documented here. 
+> **NOTICE**: Android 8.x Oreo has changed the way application shortcuts are implemented. Therefore, <u>**app shortcuts are no longer supported on devices running Android Oreo and higher**</u>. Documentation relating to Android app shortcuts has NOT been removed. 
 
 ### Device Support 
 
@@ -53,7 +53,7 @@ See all [supported Zebra devices](../about#mobile).
 
 ### New Features
 
-* Android apps made with **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** such as those for the device's "primary directory" (%PRIMARYDIR%) and an app's "install directory" (%INSTALLDIR%) in place of fully qualified (absolute) path names. This can help make coding easier and less error prone while simplifying enterprise deployment across varied devices. **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
+* Android apps running on **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** such as those for the device's "primary directory" (%PRIMARYDIR%) and an app's "install directory" (%INSTALLDIR%) in place of fully qualified (absolute) path names. This can help make coding easier and less error prone while simplifying enterprise deployment across varied devices. **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
 
 * **EB 2.0 and higher also supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 
 
@@ -976,14 +976,14 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 MC33X, TC51, TC51-HC, TC56, TC70X, TC75X and VC80X devices running Android 7.0 (Nougat) and 8.0 (Oreo)</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="li3678" src="../../images/LI3678.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="li3678" src="../../images/li3678_2.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>LI3678</b></td>
   <td class="clsSyntaxCells clsOddRow">Ultra-Rugged Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
   <td class="clsSyntaxCells clsOddRow">MC33X, TC51, TC51-HC, TC56, TC70X, TC75X and VC80X devices running Android 7.0 (Nougat)</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="ds2278" src="../../images/ds2278.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="ds2278" src="../../images/ds2278_2.png" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>DS2278</b></td>
   <td class="clsSyntaxCells clsOddRow">Handheld Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>

@@ -2517,7 +2517,7 @@ The default UserAgent values for PocketBrowser 2.1 and higher was changed to wor
 
 * **UseWideViewPort -** Value of "1" applies subsequent meta tags (default=0). 
 * **ViewPortWidth -** Sets the width of the page.
-* **ViewPortInitialScale -** Sets the initial zoom level of the page.
+* **ViewPortInitialScale -** Sets the zoom level of the page when the app starts.
 
 **Possible values**: 
 

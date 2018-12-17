@@ -33,36 +33,28 @@ EB 2.0 includes SAP-specific keyboard layouts that leverage EB's custom [ButtonB
 
 **A function key layout** allows SAP users to press function keys from the Software Input Panel (SIP) on demand, eliminating the need to modify the SAP application to include HTML buttons to emulate function keys. Each key on an EB keyboard can easily be configured to issue a keystroke or to run a script. For more information, see the [ButtonBar Parameter guide](../customize/button). 
 
-## `TO BE REVISED` 
+Logic in the `/android_sap/Sapkeyboard.js` file reads the SAP keyboard config paramaters from the `Config.xml` file and registers for `onfocus` and `keydown` events to control keyboard pop-up behavior. **It's important to ensure that the functions below are called *<u>after</u>* showing or hiding a keyboard**.
 
-
-The `/android_sap/Sapkeyboard.js` file reads the SAP keyboard config paramaters from the `Config.xml` file and registers for onfocus and keydown events to control keyboard pop-up behavior.
-
-**Note: It's important to ensure that the APIs below are called *<u>after</u>* showing or hiding a keyboard**.
-
+    //call to redraw the WebView when keyboard pops up:
     metaReceiver.resizeWebviewOnButtonbarShown(); 
-    //must call to do WebView redraw on keyboard pop-up
  
- 
-    metaReceiver.restoreWebviewOnButtonbarHidden(); 
-    //must call to do webview redraw on keyboard hide
+    //call to redraw WebView when keyboard is hidden:
+     metaReceiver.restoreWebviewOnButtonbarHidden(); 
 
 -----
 
 ## Configuration Parameters
 
-Enterprise Browser 2.0 (and higher) introduces configuration parameters that provide more control over he behavior of SAP apps.
+Enterprise Browser 2.0 (and higher) introduces configuration parameters that provide more control over the behavior of SAP apps.
 
 ### SAP Keyboard Parameters
 
-Keyboard visibility and custom key layouts can be controlled through parameters in the `Config.xml` file. 
+Keyboard visibility and custom key layouts can be controlled through parameters in the `Config.xml` file. See the [Config.xml reference](../configreference) for details. 
 
-Do user wants to show keyboard always on every pages. If yes set
-
+#### To show the SAP keyboard on every page:
     <KeyboardVisibility value="alwaysOn"/>
 
-Do user wants to show keyboard on demand when input field is focused. If yes set
-
+#### To show keyboard on demand when an input field is in focus:
     :::xml
     <KeyboardConfiguration>
         <KeyboardVisibility value="onDemand"/>
@@ -70,9 +62,9 @@ Do user wants to show keyboard on demand when input field is focused. If yes set
             <onFocus value="1"/>
           </ondemand>  
     </KeyboardConfiguration> 
+<br>
 
-Do user wants to toggle keyboard on demand when F10 key is pressed
-
+#### Display the keyboard whenever the F10 key is pressed:
     :::xml
     <KeyboardConfiguration>
         <KeyboardVisibility value="onDemand"/>
@@ -81,9 +73,9 @@ Do user wants to toggle keyboard on demand when F10 key is pressed
             <HardwarekeyValue value="140"/>
           </ondemand>   
     </KeyboardConfiguration>
+<br>
 
-Do user wants to show keyboard when F10 key pressed or when input field is focused
-
+#### Display the keyboard with F10 key <i><u>OR</i></u> when input field is focused:
     :::xml
     <KeyboardConfiguration>
     <KeyboardVisibility value="onDemand"/>
@@ -93,50 +85,71 @@ Do user wants to show keyboard when F10 key pressed or when input field is focus
                         <onFocus value="1"/>
                      </ondemand>    
     </KeyboardConfiguration>
+<br>
 
-Whether page should be resizable on keyboard pop-up to avoid visibility concerns; if yes user can set
-
+#### Make the page re-sizable on keyboard pop-up to avoid visibility concerns:
     :::xml
     <SIP>
       <ResizeOnButtonbar value="1"/>        
     </SIP>
+<br>
 
-Whether user wants to set page re-sizable and to reserve a minimum safe height for the keyboard can cover the screen. If yes set probable value for `ButtonBarMaxHeight` as below:
-
+#### Set the page as re-sizable while reserving a minimum safe height for the keyboard:
     :::xml
     <SIP>
       <ResizeOnButtonbar value="1"/>
       <ButtonBarMaxHeight value="default"/> 
     </SIP>
+<br>
 
-Whether user wants to set page resizable and to reserve a minimum safe height for the keyboard can cover the screen. If yes set probable value for ButtonBarMaxHeight as below
+**Note**: If the default SAP keyboard layout is preferred, Zebra recommends using the default value for the `ButtonBarMaxHeight` parameter (as above). If a custom layout is to be used, the value should be specified in pixels.  
 
-if user prefer to use default sapkeyboard layout, then it is recommended to use ButtonBarMaxHeight as default. If user prefer to use custom layout, then it is users responsibility to feed a value in pixels 
+-----
+
+## `TO BE REVISED` 
+
 
 ### Page Fitting
 
-Apart from regular Dom Injection technique that was provided with earlier version of Enterprise Browser for page customization at client side, Enterprise Browser for SAP also provides some more additional features for SAP page fittings
+Like all pixel-based UI elements, SAP ITSmobile UI elements look smaller on high-resolution displays than on low-res ones. A page designed to fill the screen of a 640x480 display will occupy only a portion of a modern high-res display. To compensate, apps running on Enterprise Browser 2.0 and higher can use the viewport parameter, which reads device-specific display settings into the app at runtime. 
 
-#### Autofitting a page using viewport
-
-SAP ITS UI elements are designed using pixels hence on a high resolution device, the page elements looks smaller. It has been observed that most of the standard SAP pages where shrunk when loaded on a standard/Enterprise Browser and was rendered on a corner of the browser. 
-
-Enterprise Browser 2.0 has now introduced following configuration to control the viewport of the page.
-
+####Example
     :::xml
     <ViewPort>
       <UseWideViewPort value="1"/>
       <ViewPortWidth value="device-width"/>
       <ViewPortInitialScale value="1.0"/>
     </ViewPort>
+<br>
 
-The ViewPortWidth =device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
-The ViewPortInitialScale =1.0 part sets the initial zoom level when the page is first loaded by the browser.
+**Supported meta tags**:
 
-Note: Such changes will have impact on all pages
+* **UseWideViewPort -** Value of "1" applies subsequent meta tags (default=0). 
+* **ViewPortWidth -** Sets the width of the page.
+* **ViewPortInitialScale -** Sets the zoom level of the page when the app starts.
 
-Forcing Page Elements to Fit To the Screen Width
-Sap has some pages those are wider and goes beyond the viewport (visible area) area of the device. Having few input elements beyond horizontal visible region may result in user submitting form without filling data. Also it is not easy for the user to make out from a page that it has got some elements beyond the screen and it needs horizontal scrolling that is annoying to user.
+**Possible values**: 
+
+* **UseWideViewPort**
+   * 1 (enabled), meta tags (below) are applied
+   * **0 (disabled), meta tags are NOT applied (default)**
+* **ViewPortWidth** [more info](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag#Viewport_width_and_screen_width)
+   * Accepts [HTML5-spec viewport settings](https://www.w3.org/TR/css-device-adapt-1/)
+   * Number of CSS pixels (i.e. 600) at 100% scale
+   * **device-width -** sets page width to match that of device
+* **ViewPortInitialScale** [more info](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag#Viewport_width_and_screen_width)
+   * Accepts [HTML5-spec viewport settings](https://www.w3.org/TR/css-device-adapt-1/)
+   * Number corresponding to fixed initial magnification value (i.e. "1.5" = 1.5x zoom)
+   * **maximum-scale -** caps the magnification value ("=1.0"=no zoom-in) 
+   * **minimum-scale -** sets a base magnification value ("=1.0"=no zoom-out)
+   * **user-scalable -** Controls whether user is allowed to zoom (=yes, =no)
+
+**Note: Settings impact all pages**.
+
+#### Forcing-fitting to Screen Width
+It's possible that some SAP ITSmobile app pages are wider than the viewport (visible area) area of the device. 
+
+Having few input elements beyond horizontal visible region may result in user submitting form without filling data. Also it is not easy for the user to make out from a page that it has got some elements beyond the screen and it needs horizontal scrolling that is annoying to user.
 
 To avoid this problem. Enterprise Browser SAP package has introduced a new configuration attribute named SapForceFitToScreen that rearrange the horizontally aligned HTML elements vertically. 
 
@@ -146,6 +159,18 @@ When enabled, the page will not have any elements beyond the horizontal visible 
     <SapForceFitToScreen value="1"/>
 
 Note: This attribute is only applicable for SAP application. Using this feature may effect some of the CSS styling hence this feature is not enabled by default on the package. 
+
+
+For complete details, see the [ViewPort section](../configreference/#viewport) of the `Config.xml` reference. 
+
+
+[DOM injection](../dominjectionandroid) to automatically adjust the way an SAP app's page fits on the device screen. 
+
+
+#### Auto-fit with ViewPort
+
+Enterprise Browser 2.0 has now introduced following configuration to control the viewport of the page.
+
 
 #### Page UI Elements (customization)
 

@@ -247,36 +247,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ## New in EHS 3.1
 
-
-
-### Added in EHS 3.0
-
-
-* **Support added for devices running Android 8.1 Oreo**.
-* Supports **[Pinned Shortcuts](../settings/#pinnedshortcuts)** feature of Oreo similar to traditional shortcuts.    
-* **Foreground services can now be auto-launched** in devices running Oreo. 
-* **VectorDrawable format supported** for app launcher icons. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources). 
-* **[Privileged Settings](../features/#privilegedsettings)** feature requires manual activation of certain settings when entering Admin Mode on a device. 
-* The default `Config.xml` file now places the DataWedge Demo app in the User screen, replacing the Calculator app found in prior versions.
-
-* **Bypass Keyguard feature is dropped -** Use [DevAdmin](/mx/devadmin) through Zebra EMDK or StageNow tools to configure this setting. 
-* **Secure Mode feature is dropped -** Log files are no longer designated as "SECURED" or "UNSECURED" in log entries. 
-
-### Device Support
-
-EHS 3.0 now supports these devices **running Android 8.1 Oreo** 
-
-* **MC33**
-* **PS20 Personal Shopper**
-* **TC52**
-* **TC57**
-* **TC72**
-* **TC77**
-* **TC51**
-* **TC56**
-* **TC70x**
-* **TC75x**
-* **VC80x**
+* **Now supports Android 8.1 (Oreo) and Android 7.1.2 (Nougat)**.
+* **New [Lockout Recovery mode](../LINK LINK)** allows an admin to quickly return a device to service that is locked after exceeding the maximum number of unsuccessful admin login attempts.
+* **[Supports Multi-user mode](../LINK LINK)**, which allows admins to create "Piramry" users, and "Secondary" users and Guests, any or all of which can share a single EHS global configuration. **Applies to devices running Android 8.1.0 anbd higher only**.
+* **New GMS Restricted mode** prevents GMS apps from being enabled even if visible to users. 
 
 -----
 

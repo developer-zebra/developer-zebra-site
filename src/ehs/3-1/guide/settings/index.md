@@ -788,7 +788,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 ------
 
 ### Install Shortcuts
-**Applies to Marshmallow and Nougat devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. For shortcuts devices, see [Pinned Shortcuts](#pinnedshortcuts), below.  
+**Applies to Nougat devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. For shortcuts devices, see [Pinned Shortcuts](#pinnedshortcuts), below.  
 
 <img alt="" style="height:350px" src="install_shortcuts.png"/>
 
@@ -1264,7 +1264,7 @@ Notes:
 
 ## Shortcuts and Intents
 
-### On Marshmallow and Nougat 
+### On Nougat 
 **_For devices running Oreo, see the section that follows_**. 
 
 When shortcuts that link to local or remote applications are added using Android Intents, EHS adds a link tag to the config file with the attributes listed below. Disabled by default. Must be enabled using the [Install Shortcuts tag](#installshortcuts). </b>Note</b>: Package names might vary from one Android version to another. 
@@ -1306,7 +1306,7 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 -----
 
 ### On Oreo 
-_For Marshmallow and Nougat Devices, see section above_.
+_For Nougat Devices, see section above_.
 
 EHS has historically offered the ability to add shortcuts programmatically using the `INSTALL_SHORTCUT` broadcast intent. Android 8.x Oreo replaces this intent with the `requestPinShortcut()` method of the `ShortcutManager` class. When shortcuts that link to local apps or remote websites are added in this way, EHS adds a link tag to the config XML file with the attributes listed below and displays the shortcut on the User screen. 
 

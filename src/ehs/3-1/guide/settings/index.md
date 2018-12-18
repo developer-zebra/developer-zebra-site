@@ -1215,12 +1215,12 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 ------
 
 ### Admin Max Attempts
-The number of failed attempts to log into Admin Mode before EHS disables Admin Mode login. EHS keeps a count of the failed consecutive login attempts with an attribute in the password admin node as in the Example Failed Login Counter below. The counter is reset if a successful login occurs before the maximum is reached. Once disabled, can be reset only by pushing a new `enterprisehomescreen.xml` file to the device. If this tag is not present or contains no value, the default of 10 is used. Failed login attempts are added to the [EHS log](../features#ehslog).  
+The number of failed attempts to log into Admin Mode before EHS disables Admin Mode login. EHS keeps a count of the failed consecutive login attempts with an attribute in the password admin node as in the Example Failed Login Counter below. The counter is reset if a successful login occurs before the maximum is reached. Once disabled, can be reset by pushing a new `enterprisehomescreen.xml` file to the device or with [Lockout Recovery](#lockoutrecovery) (if enabled). If this tag is not present or contains no value, the default of 10 is used. Failed login attempts are added to the [EHS log](../features#ehslog).  
 
 <img alt="" style="height:350px" src="max_logins.png"/>
 
 
-#### Example 
+#### Examples
 
     <preferences>
         ...
@@ -1233,15 +1233,15 @@ The number of failed attempts to log into Admin Mode before EHS disables Admin M
 ####Example Failed Login Counter:
 
     <passwords>
-        <admin attempts="10"></admin>
+        <admin attempts="7"></admin>
     </passwords>
 
-The counter clears after a successful login or when a new `enterprisehomescreen.xml` file is pushed to the device.
+The counter resets to 1 after a successful login or when a new `enterprisehomescreen.xml` file is pushed to the device.
 
 ------
 
 ### Admin Inactivity Timeout
-Controls the time (in seconds) that a device remains in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section to specify the timeout period. The default period is 60 seconds, which is used if this tag is missing or left unspecified. Minimum period is 15 seconds (lower values are ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. **Note**: Use of the Android Search app has no effect on the timeout counter.
+Controls the time (in seconds) that a device remains in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section of the config file to specify the timeout period. The default period is 60 seconds, which is used if this tag is missing or left unspecified. Minimum period is 15 seconds (lower values are ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. **Note**: Use of the Android Search app has no effect on the timeout counter.
 
 <img alt="" style="height:350px" src="admin_timeout.png"/>
 
@@ -1252,7 +1252,7 @@ Controls the time (in seconds) that a device remains in Admin Mode without activ
 Notes: 
 * 15 is the minimum value; lower values are ignored
 * <b>60 seconds is the default if tag is left blank or is not present</b>
-* 0 or negative value will disable the timeout function
+* 0 or negative value disables the timeout function
 
 #### Example
 
@@ -1263,7 +1263,7 @@ Notes:
 ------
 
 ### Lockout Recovery
-Allows a device to be unlocked with the correct password after the device has been locked due to too many failed [admin login attempts](#adminmaxattempts). **Disabled by default**. See important [Lockout Notes](#recoverytimeout). 
+Allows a device to be unlocked with the correct password after the device has been locked due to too many failed [admin login attempts](#adminmaxattempts). **Disabled by default**. Add this tag to the &lt;Preferences&gt; section of the config file to enable lockout recovery without the need to push a new `enterprisehomescreen.xml` file to the device. See important [Lockout Notes](#recoverytimeout). 
 
 <img alt="" style="height:350px" src="title_bar_1.png"/>
 
@@ -1293,7 +1293,7 @@ Allows a device to be unlocked with the correct password after the device has be
 -----
 
 ### Recovery Timeout
-Specifies the period of time (in minutes) that an admin must wait following a device lockout before attempting Lockout Recovery. **Default=60 (1 hour)**. 
+Specifies the period of time (in minutes) that an admin must wait following a device lockout before attempting Lockout Recovery. **Default=60 (1 hour)**. Add this tag to the &lt;Preferences&gt; section of the config file to specify a timeout interval other than the default.
 
 <b>Possible values</b>:
 
@@ -1308,12 +1308,14 @@ Specifies the period of time (in minutes) that an admin must wait following a de
     </preferences>
 
 ##### Lockout Notes
-* When Lockout Recovery is enabled and the maximum failed login attempts is exceeded, EHS displays the waiting time required before the next login attempt is allowed. 
+* When Lockout Recovery is enabled and the device is locked due to too many failed login attempts, EHS displays the waiting time required before the next login attempt is allowed. 
 * Invalid timeout values (i.e. negative, less than 15, etc.) are replaced with 60 (minutes).
-* Restarting the device resets the counter to 0. 
-* When Timeout expires, a single login attempt is offered. 
-* Lockout Recovery login failure restarts the timeout clock; success resets the [admin failed attempts](#adminfailedattempts) counter to 1. 
-* All lockout and recovery activities are logged in `/enterprise/usr` directory. 
+* Restarting the device resets the timeout counter to 0; countdown begins when admin login is tapped.
+* Pushing a new config when a lockout timer is running resets the timeout to the value in the new config file.
+* When the timeout expires, a single login attempt is offered; failure restarts the timeout clock.
+* Successful Lockout Recovery resets the [failed admin login attempts](#adminmaxattempts) counter to 1. 
+* Except for device restart, the countdown timer continues regardless of user activity. 
+* All lockout and recovery activities are added to the [EHS log](../features#ehslog). 
 
 -----
 

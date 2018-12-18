@@ -37,7 +37,16 @@ This sample demonstrates simultaneous scanning of multiple barcodes using new ca
 * **DataWedge cannot be configured for data capture through Profile Manager** when using EMDK-A 6.8 and higher. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
 
 The available actions in the [Barcode/Scanning API](/emdk-for-android/6-10/api) are:
+
+* Set Scanner Device  
+* Set TriggerType
+* Set Decoder Params
+* Set Reader Params
+* Set Scan Params
+* Scan barcodes based on selected features   
+
   
+<!-- 12/18/18- these links are no longer valid:
 * Set [Scanner Device](/emdk-for-android/6-10/api/barcode/BarcodeManager-DeviceIdentifier/)  
 * Set [TriggerType](/emdk-for-android/6-10/api/barcode/Scanner)
 * Set [Decoder Params](/emdk-for-android/6-10/api/barcode/ScannerConfig-DecoderParams)
@@ -45,8 +54,9 @@ The available actions in the [Barcode/Scanning API](/emdk-for-android/6-10/api) 
 * Set [Scan Params](/emdk-for-android/6-10/api/barcode/ScannerConfig-ScanParams)
 * Scan barcodes based on selected features   
 
-This sample application permits barcode scanning based on selected scanner, trigger type and few [Decoder Params](/emdk-for-android/6-10/api/barcode/ScannerConfig-DecoderParams).
+ -->
 
+ This sample application permits barcode scanning based on selected scanner, trigger type and few [Decoder Params](/emdk-for-android/6-10/api/barcode/ScannerConfig-DecoderParams).
 
 
 ##Requirements

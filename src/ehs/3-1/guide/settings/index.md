@@ -1078,30 +1078,30 @@ _The EHS 2.4 showing Service auto launch enabled in the UI_.
 
 #### Examples
 
-##### Specify all parameters 
-
+##### Specify all parameters:
     <service_auto_launch>
         <service delay="4000" package="com.sample.androidserviceexample" 
         class="com.sample.androidserviceexample.MyService" action="downloadfile"/>
     </service_auto_launch>
+<br>
 
-##### Specify package, class and action names
-
+##### Specify package, class and action names:
     <service package="com.sample.androidserviceexample"
     class="com.sample.androidserviceexample.MyService" 
     action="com.sample.androidserviceexample.MyService.downloadfile"/>
+<br>
 
-##### Specify package and class names
-
+##### Specify package and class names:
     <service package="com.sample.androidserviceexample" class="com.sample.androidserviceexample.MyService"/>
+<br>
 
-##### Specify package name only (when only one service exists in the package)
-
+##### Specify package name only (when only one service exists in the package):
     <service package="com.sample.androidserviceexample" />
+<br>
 
-##### Specify service action name only
-
+##### Specify service action name only:
     <service action="com.sample.androidserviceexample.MyService.downloadfile"/>
+<br>
 
 ------
 

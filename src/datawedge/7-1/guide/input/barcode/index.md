@@ -869,10 +869,12 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 * **Press and Sustain -** Starts the scan beam when the trigger is pressed and continues the decode session until the Beam Timer is expired, barcode is decoded or read is canceled. **Scan beam is not stopped when the trigger is released**. This avoids unexpected cancellations of a read by subsequently pressing the trigger button of the device; subsequent trigger presses while the beam is ON have no effect. **Applies to internal imager on TC20/TC25 and RS6000/RS507 Bluetooth scanners connected to TC57/TC77 and PS20 devices**. 
 
+<!-- **COMMENT OUT TEMPORARILY UNTIL READY IN FUTURE RELEASE**
 **Presentation mode parameters -** &#42;<i>**For future use only**</i>&#42;
 * **Scene Detection Qualifier** 
  * **None**
  * **Proximity Sensor Input**
+ -->
 
 **Beam Timer -** Sets the maximum amount of time (in ms) that the reader remains on. Supports a range from 0 - 60,000 ms in increments of 100 ms. A value of 0 sets the reader to stay on indefinitely.
 

@@ -17,7 +17,7 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 * US English
 * Simplified Chinese
 
-**[What's New in EHS 3.0](#newinehs30)**
+**[What's New in EHS 3.1](#newinehs31)**
 
 ------
 
@@ -245,7 +245,12 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 -----
 
-## New in EHS 3.0
+## New in EHS 3.1
+
+
+
+### Added in EHS 3.0
+
 
 * **Support added for devices running Android 8.1 Oreo**.
 * Supports **[Pinned Shortcuts](../settings/#pinnedshortcuts)** feature of Oreo similar to traditional shortcuts.    
@@ -254,8 +259,9 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **[Privileged Settings](../features/#privilegedsettings)** feature requires manual activation of certain settings when entering Admin Mode on a device. 
 * The default `Config.xml` file now places the DataWedge Demo app in the User screen, replacing the Calculator app found in prior versions.
 
-> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
- 
+* **Bypass Keyguard feature is dropped -** Use [DevAdmin](/mx/devadmin) through Zebra EMDK or StageNow tools to configure this setting. 
+* **Secure Mode feature is dropped -** Log files are no longer designated as "SECURED" or "UNSECURED" in log entries. 
+
 ### Device Support
 
 EHS 3.0 now supports these devices **running Android 8.1 Oreo** 
@@ -276,45 +282,31 @@ EHS 3.0 now supports these devices **running Android 8.1 Oreo**
 
 ### End of Support
 
-* **Support for Android 5.x Lollipop is dropped**. Use [EHS 2.8](/ehs/2-8/guide/about) if Lollipop support is required. 
-* **Bypass Keyguard feature is dropped -** Use [DevAdmin](/mx/devadmin) through Zebra EMDK or StageNow tools to configure this setting. 
-* **Secure Mode feature is dropped -** Log files are no longer designated as "SECURED" or "UNSECURED" in log entries. 
+* **Support for Android 6.x Marshmallow is dropped**. Use [EHS 3.0](/ehs/3-0/guide/about) if Marshmallow support is required. 
 
+-----
+
+### Android Oreo Notes
+***Applies to devices running Android 8.x Oreo and higher***.
+
+* **If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo** from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device.**Note**: Prior configuration settings, if any, are re-applied automatically.
+ 
 -----
 
 ### Android Nougat Notes
 **_Applies to devices running Android Nougat 7.x and higher_**:
 
 * **Disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. This occurs on some devices running Android N if the device is rebooted from the lock screen. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
-
-<!-- 
-ABOVE NOTE REPLICATED ON SETTINGS PAGE 
--->
-
 * **Applies to EHS 2.8 and older only**: To enable Secure Mode in EHS, manual file-push is no longer supported in Android N for installing a device root certificate. To deploy cert files to the device, use Certificate Manager through [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android). 
-
- -----
-
-### Android Marshmallow and Nougat Notes
-**_Applies to devices running Android Marshmallow and Nougat_**:
-
-* **When referencing a file stored on a removable SD Card in a device running Android M or N**, references to that card must include its symbolic link rather than its direct path. For example, while the file path on pre-M devices might be visible as `/storage/sdcard1/image.png`, the same path on M and N devices might appear in the file browser something like `/storage/0097-B7BA/image.png`. The symbolic link (which in this case is "0097-B7BA") is **<u>unique to the device</u>**. Therefore, **Zebra recommends avoiding the use of removable storage in mass-deployment scenarios**. 
-
-**_Applies to devices running Android Marshmallow 6.x and higher_**:
-
+* **When referencing a file stored on a removable SD Card in a device running Android N**, references to that card must include its symbolic link rather than its direct path. For example, while the file path on pre-M devices might be visible as `/storage/sdcard1/image.png`, the same path on M and N devices might appear in the file browser something like `/storage/0097-B7BA/image.png`. The symbolic link (which in this case is "0097-B7BA") is **<u>unique to the device</u>**. Therefore, **Zebra recommends avoiding the use of removable storage in mass-deployment scenarios**. 
 * **[Airplane Option Disabled](../settings#airplaneoptiondisabled) feature cannot be controlled through EHS on devices running Android M or N**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
-
-<!-- 
-ABOVE NOTE REPLICATED ON SETTINGS PAGE 
--->
-
 * **Some devices retain the "Recent Apps" list after device reboot**, posing a potential security risk. EHS 2.7 (and higher) disables the Recent Apps button on <u>Nougat devices only</u> to help address this risk. For all devices, the list can be cleared using [App Manager](/mx/appmgr) through Zebra EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Advanced Features section. 
-
 * **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature implemented in Android L and higher that works in a similar way.
-
 * **[Screen orientation](../settings#orientation) can be changed through the Quick Settings panel on devices** <u>only</u> when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 ------
+
+<!-- 12/18/18- Marshmallow support ended with 3.0
 
 ### Android Marshmallow Notes
 **_Applies to devices running Android 6.x Marshmallow only_**:
@@ -325,7 +317,8 @@ ABOVE NOTE REPLICATED ON SETTINGS PAGE
 
 * **If Wi-Fi is disabled** on a Marshmallow device, the MAC address will be shown as "Unknown" in the "Wireless info" screen in EHS.
 
------
+----- 
+-->
 
 ### ET50/ET55 Device Notes
 
@@ -340,6 +333,41 @@ See the [Advanced Settings](../settings) section for a complete `enterprisehomes
 -----
 
 ## Version History
+
+### Added in EHS 3.0
+
+* **Support added for devices running Android 8.1 Oreo**.
+* Supports **[Pinned Shortcuts](../settings/#pinnedshortcuts)** feature of Oreo similar to traditional shortcuts.    
+* **Foreground services can now be auto-launched** in devices running Oreo. 
+* **VectorDrawable format supported** for app launcher icons. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources). 
+* **[Privileged Settings](../features/#privilegedsettings)** feature requires manual activation of certain settings when entering Admin Mode on a device. 
+* The default `Config.xml` file now places the DataWedge Demo app in the User screen, replacing the Calculator app found in prior versions.
+
+> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
+ 
+#### Device Support
+
+EHS 3.0 now supports these devices **running Android 8.1 Oreo** 
+
+* **MC33**
+* **PS20 Personal Shopper**
+* **TC52**
+* **TC57**
+* **TC72**
+* **TC77**
+* **TC51**
+* **TC56**
+* **TC70x**
+* **TC75x**
+* **VC80x**
+
+#### End of Support
+
+* **Support for Android 5.x Lollipop is dropped**. Use [EHS 2.0](/ehs/2-8/guide/about) if Marshmallow support is required. 
+* **Bypass Keyguard feature is dropped -** Use [DevAdmin](/mx/devadmin) through Zebra EMDK or StageNow tools to configure this setting. 
+* **Secure Mode feature is dropped -** Log files are no longer designated as "SECURED" or "UNSECURED" in log entries. 
+
+-----
 
 ### Added in 2.8
 

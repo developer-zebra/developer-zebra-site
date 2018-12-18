@@ -1014,72 +1014,6 @@ Permits a maximum size (in MB) to be specified for the EHS log file. When the ma
 
 ------
 
-### Lockout Recovery
-Allows an admin to quickly return a device to service that is locked after exceeding the maximum number of unsuccessful admin login attempts.
-
-
-<img alt="" style="height:350px" src="title_bar_1.png"/>
-
-<b>Possible values</b>:
-
-* 1
-* **0 (default)**
-
-#### Example
-
-    :::xml
-    <preferences>
-        <admin_lock_out>
-            <recovery_enabled>1</recovery_enabled > 
-        </admin_lock_out>
-    </preferences>
-
-
-
-  to enable recovery:
-
-to disable recovery:
-<preferences>
- <admin_lock_out>
- <recovery_enabled>0</recovery_enabled > 
- </admin_lock_out>
-</preferences>
-
-
------
-
-### Recovery Timeout
-Specifies the period of time (in minutes) that an admin must wait after device lockout before attempting Lockout Recovery.
-
-
-#### Example
-    :::xml
-    <preferences>
-        <admin_lock_out>
-            <recovery_timeout>60</recovery_timeout>
-        </admin_lock_out>
-    </preferences>
-
-if recovery is enabled, once the max number of attempt count is exceeded, EHS will prompt admin login once the waiting time is elapsed. Default is 60 minutes (1 hour). Any value higher than 15 minutes (greater than or equal to 15) can be set as the admin recovery timeout. Any invalid values will be reset to the default 60 minutes. 
-This is the new XML node added to config file, under preferences tag. The measurement is in minutes. 
-
-restarting the device resets the counter to 0. 
-
-Once recovery timeout is elapsed EHS will provide only one more attempt to try out. this is not configurable. value is set to one always.
-Within recovery timeout, when admin tries to log-in again, EHS shows a message saying you have to wait x number of minutes to try again (there will be no count down timer as in consumer android devices). it was decided to show the remaining time only when admin tries to log-in again.
-when recovery timeout is elapsed and when admin tries to log-in again:
-if that log-in again fails, attempt count will be the same value given in max count (default 10)
-if that succeeds; the attempt count will be reset to one.
-while admin is waiting till timeout getting elapsed, if the device is rebooted, the count down will start from the beginning. this will be documented.
-count down timer continues counting down irrespective of what user does in EHS.
-the following will be written to EHS log file that exists in /enterprise/usr folder. 
-message when max admin login count exceeded (i.e. in default; when admin has tried 10 times)
-message when admin login succeeds or fails at the single attempt (after the recovery time-out)
-
-
-
-------
-
 ## Optional Feature Tags
 This section covers optional features and tags not included in the `enterprisehomescreen.xml` file by default. These tags are added by EHS for enabled options or can be added as needed by an administrator.
 
@@ -1144,28 +1078,28 @@ _The EHS 2.4 showing Service auto launch enabled in the UI_.
 
 #### Examples
 
-**Specify all parameters**: 
+##### Specify all parameters 
 
     <service_auto_launch>
         <service delay="4000" package="com.sample.androidserviceexample" 
         class="com.sample.androidserviceexample.MyService" action="downloadfile"/>
     </service_auto_launch>
 
-**Specify package, class and action names**: 
+##### Specify package, class and action names
 
     <service package="com.sample.androidserviceexample"
     class="com.sample.androidserviceexample.MyService" 
     action="com.sample.androidserviceexample.MyService.downloadfile"/>
 
-**Specify package and class names**:
+##### Specify package and class names
 
     <service package="com.sample.androidserviceexample" class="com.sample.androidserviceexample.MyService"/>
 
-**Specify package name only (when only one service exists in the package)**:
+##### Specify package name only (when only one service exists in the package)
 
     <service package="com.sample.androidserviceexample" />
 
-**Specify service action name only**:
+##### Specify service action name only
 
     <service action="com.sample.androidserviceexample.MyService.downloadfile"/>
 
@@ -1307,7 +1241,7 @@ The counter clears after a successful login or when a new `enterprisehomescreen.
 ------
 
 ### Admin Inactivity Timeout
-Controls the time (in seconds) that a device will remain in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section to specify the timeout period. The default period is 60 seconds, which is used if this tag is missing or left unspecified. Minimum period is 15 seconds (lower values are ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. **Note**: Use of the Android Search app has no effect on the timeout counter.
+Controls the time (in seconds) that a device remains in Admin Mode without activity. Add this tag to the &lt;Preferences&gt; section to specify the timeout period. The default period is 60 seconds, which is used if this tag is missing or left unspecified. Minimum period is 15 seconds (lower values are ignored); zero or negative value disables timeout. The timeout counter runs only when EHS is in foreground, and resets when EHS returns to the foreground. **Note**: Use of the Android Search app has no effect on the timeout counter.
 
 <img alt="" style="height:350px" src="admin_timeout.png"/>
 
@@ -1327,6 +1261,61 @@ Notes:
     </preferences>
 
 ------
+
+### Lockout Recovery
+Allows a device to be unlocked with the correct password after the device has been locked due to too many failed [admin login attempts](#adminmaxattempts). **Disabled by default**. See important [Lockout Notes](#recoverytimeout). 
+
+<img alt="" style="height:350px" src="title_bar_1.png"/>
+
+<b>Possible values</b>:
+
+* 1
+* **0 (disabled by default)**
+
+#### Examples
+
+##### Enable Lockout Recovery:
+    :::xml
+    <preferences>
+        <admin_lock_out>
+            <recovery_enabled>1</recovery_enabled > 
+        </admin_lock_out>
+    </preferences>
+
+##### Disable Lockout Recovery:
+    :::xml
+    <preferences>
+        <admin_lock_out>
+            <recovery_enabled>0</recovery_enabled > 
+        </admin_lock_out>
+    </preferences>
+
+-----
+
+### Recovery Timeout
+Specifies the period of time (in minutes) that an admin must wait following a device lockout before attempting Lockout Recovery. **Default=60 (1 hour)**. 
+
+<b>Possible values</b>:
+
+* Integer greater than 15
+
+#### Example
+    :::xml
+    <preferences>
+        <admin_lock_out>
+            <recovery_timeout>60</recovery_timeout>
+        </admin_lock_out>
+    </preferences>
+
+##### Lockout Notes
+* When Lockout Recovery is enabled and the maximum failed login attempts is exceeded, EHS displays the waiting time required before the next login attempt is allowed. 
+* Invalid timeout values (i.e. negative, less than 15, etc.) are replaced with 60 (minutes).
+* Restarting the device resets the counter to 0. 
+* When Timeout expires, a single login attempt is offered. 
+* Lockout Recovery login failure restarts the timeout clock; success resets the [admin failed attempts](#adminfailedattempts) counter to 1. 
+* All lockout and recovery activities are logged in `/enterprise/usr` directory. 
+
+-----
 
 ## Shortcuts and Intents
 

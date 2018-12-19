@@ -247,10 +247,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 ## New in EHS 3.1
 
-* **Now supports Android 8.1 (Oreo) and Android 7.1.2 (Nougat)**.
+* **Now supports <u>ONLY</u> Android 8.x (Oreo) and Android 7.x (Nougat)**.
 * **New [Lockout Recovery mode](../settings/#lockoutrecovery)** allows an admin to quickly return a device to service that is locked after exceeding the maximum number of unsuccessful admin login attempts.
 * **New [Recovery Timeout](../settings/#recoverytimeout)** is a configurable period of time (in minutes) that an admin must wait before Lockout Recovery is possible. 
-* **[Supports Multi-user mode](../LINK LINK)**, which allows admins to create "Piramry" users, and "Secondary" users and Guests, any or all of which can share a single EHS global configuration. **Applies to devices running Android 8.1.0 anbd higher only**.
+* **[Supports Multi-user mode](../features/multiusermode)**, which allows admins to create "Piramry" users, and "Secondary" users and Guests, any or all of which can share a single EHS global configuration. **Applies to devices running Android 8.1.0 anbd higher only**.
 * **New GMS Restricted mode** prevents GMS apps from being enabled even if visible to users. 
 
 -----
@@ -264,8 +264,8 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 ### Android Oreo Notes
 ***Applies to devices running Android 8.x Oreo and higher***.
 
-* **If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo** from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device.**Note**: Prior configuration settings, if any, are re-applied automatically.
- 
+* **If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo** from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Prior configuration settings, if any, are re-applied automatically**.
+
 -----
 
 ### Android Nougat Notes

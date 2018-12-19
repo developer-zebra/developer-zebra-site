@@ -17,13 +17,13 @@ This guide covers advanced EHS features such as Kiosk Mode and EHS Logging. It a
 
 ## Multi-user Mode
 
-On devices running Android 8.x Oreo and higher, EHS 3.1 and higher supports Multi-user Mode, which allows for Primary, Secondary and Guest users on a device, each with different sets of apps, capabilities and access privileges. In EHS, Multi-user Mode operates under the rules listed below. 
+EHS 3.1 and higher supports the Multi-user Mode implemented on devices running Android 8.x Oreo and higher. The feature works through the concept of User Profiles, which allow for Primary, Secondary and Guest users, each with different sets of apps, capabilities and access privileges. In EHS, Multi-user Mode operates under the rules listed below. 
 
 #### Multi-user Rules
 
-* Mass deployment of settings as a Primary user apply to all users. 
-Global Settings – Any changes to the primary user will automatically reflect to secondary/guest users.
-Secondary/Guest users' configurations MUST be inherited from the primary user. Secondary/Guest users are not allowed to reconfigure (either via XML file push or Admin mode preferences manually). Only primary user has the Admin mode, secondary users or guest do not have Admin mode. Config XML file pushed in secondary users or guests will not be consumed by EHS.
+* Settings files for the Primary user deployed to one or more devices apply to all users of that device. 
+* Settings changes made by the Primary user automatically apply to secondary/guest users.
+* Secondary/Guest users' configurations MUST be inherited from the primary user. Secondary/Guest users are not allowed to reconfigure (either via XML file push or Admin mode preferences manually). Only primary user has the Admin mode, secondary users or guest do not have Admin mode. Config XML file pushed in secondary users or guests will not be consumed by EHS.
 FROM TUT-27633:
 
 this is a about Android behavior of "Guest" user in multi user environment in Oreo. we have to make a note of that under EHS Multi user section.
@@ -108,7 +108,7 @@ reason: Mx dependent EHS features work while in primary user only. none of the M
 
 On GMS devices running Android 8.x Oreo and higher, Zebra implements a feature called [GMS Restricted Mode](/mx/appmgr/#mainfunctionality), an optional state that disables all GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device (that are safe to disable) and removes their icons from the Android Launcher. **Although these apps and services also are disabled on devices running EHS, <u>their icons remain visible in the EHS Preferences -> Disable Applications</u>** panel. 
 
-Attempts to enable any of the effected apps&ndash;either through the UI or by pushing a config file&ndash;result in failure and are added to the [EHS log](../features#ehslog). Users attempting to enable GMS apps through the UI also see a failure message.
+Attempts to enable any of the effected apps&ndash;either through the UI or by pushing a config file&ndash;result in failure and are added to the [EHS log](../features#ehslog). Users attempting to enable GMS apps through the UI also see a failure message on the screen.
 
 -----
 

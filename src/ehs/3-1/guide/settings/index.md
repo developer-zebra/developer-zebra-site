@@ -1293,7 +1293,7 @@ Allows a device to be unlocked with the correct password after the device has be
     </preferences>
 
 ##### Lockout Notes
-* When Lockout Recovery is enabled and the device is locked due to too many failed login attempts, EHS displays the time remaining (not a counter) before the next login attempt is allowed. 
+* When Lockout Recovery is enabled and the device is locked due to too many failed login attempts, EHS displays the time remaining (not a counter) before the next login can be attempted. 
 * Invalid timeout values (i.e. negative, less than 15, etc.) are ignored and default value (60 min.) is used.
 * Restarting the device resets the timeout counter to 0; countdown begins next time admin login feature is accessed.
 * When a lockout timer is running, pushing a new config file resets the timeout to the value in the new config file. If the new value is invalid, timer resets to 60.

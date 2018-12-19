@@ -19,7 +19,7 @@ This guide covers advanced EHS features such as Kiosk Mode and EHS Logging. It a
 
 On devices running Android 8.x Oreo and higher, EHS 3.1 and higher supports Multi-user Mode, which allows for Primary, Secondary and Guest users on a device, each with different sets of apps, capabilities and access privileges. In EHS, Multi-user Mode operates under the rules listed below. 
 
-#### Multi-user Mode Rules
+#### Multi-user Rules
 
 * Mass deployment of settings as a Primary user apply to all users. 
 Global Settings – Any changes to the primary user will automatically reflect to secondary/guest users.
@@ -106,18 +106,9 @@ reason: Mx dependent EHS features work while in primary user only. none of the M
 
 ## GMS Restricted Mode
 
-On GMS devices running Android 8.x Oreo and higher, Zebra implements a feature called GMS Restricted, an optional state that disables all GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device (that are safe to disable) and removes their icons from the Android Launcher. **Although these apps and services also are disabled on devices running EHS, <u>their icons remain visible in the EHS Preferences -> Disable Applications</u>** panel. 
+On GMS devices running Android 8.x Oreo and higher, Zebra implements a feature called [GMS Restricted Mode](/mx/appmgr/#mainfunctionality), an optional state that disables all GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device (that are safe to disable) and removes their icons from the Android Launcher. **Although these apps and services also are disabled on devices running EHS, <u>their icons remain visible in the EHS Preferences -> Disable Applications</u>** panel. 
 
-Attempts to enable any of the effected apps&ndash;either through the UI or by pushing a config file&ndash;result in failure and are added to the [EHS log](../features#ehslog). Attempts through the UI also result in a failure pop-up message.
-
->> EHS gives up a pop up saying about the app enable failure asking to refer to EHS log file enterprisehomescreen.log (/enterprise/usr) for more info. Log msg will mention that the changes in app state is not allowed in the GMS restricted mode.
-
-2. When the device is in GMS restricted mode, if a config file having GMS-apps under <apps_enabled> tag is pushed;
-
->> EHS writes the error description in EHS log file enterprisehomescreen.log (/enterprise/usr).
-
-Log msg will mention that the changes in app state is not allowed in the GMS restricted mode.
-
+Attempts to enable any of the effected apps&ndash;either through the UI or by pushing a config file&ndash;result in failure and are added to the [EHS log](../features#ehslog). Users attempting to enable GMS apps through the UI also see a failure message.
 
 -----
 

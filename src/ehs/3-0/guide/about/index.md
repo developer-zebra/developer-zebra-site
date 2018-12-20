@@ -254,10 +254,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **[Privileged Settings](../features/#privilegedsettings)** feature requires manual activation of certain settings when entering Admin Mode on a device. 
 * The default `Config.xml` file now places the DataWedge Demo app in the User screen, replacing the Calculator app found in prior versions.
 
-> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
-
-**NOTE: SSID and BSSID information do not appear in the "Wireless Info" or "[Battery and Wi-Fi Quick View](../setup/#batteryandwifiquickview)" screens** on Oreo devices if Location services (Settings -> Security & Location -> Location) are turned off. 
-
 ### Device Support
 
 EHS 3.0 now supports these devices **running Android 8.1 Oreo** 
@@ -281,6 +277,14 @@ EHS 3.0 now supports these devices **running Android 8.1 Oreo**
 * **Support for Android 5.x Lollipop is dropped**. Use [EHS 2.8](/ehs/2-8/guide/about) if Lollipop support is required. 
 * **Bypass Keyguard feature is dropped -** Use [DevAdmin](/mx/devadmin) through Zebra EMDK or StageNow tools to configure this setting. 
 * **Secure Mode feature is dropped -** Log files are no longer designated as "SECURED" or "UNSECURED" in log entries. 
+
+-----
+
+### Android Oreo Notes
+***Applies to devices running Android 8.x Oreo and higher***.
+
+* **SSID and BSSID information do not appear in the "Wireless Info" or "[Battery and Wi-Fi Quick View](../setup/#batteryandwifiquickview)" screens** on Oreo devices if Location services (Settings -> Security & Location -> Location) are turned off. 
+* **If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo** from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Prior configuration settings, if any, are re-applied automatically**.
 
 -----
 

@@ -12,6 +12,7 @@ These instructions provide a basic understanding of the installation, configurat
 Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party EMM system (if supported by that EMM system). EHS simply puts these capabilities into a single, convenient tool.
 
 > <b>Note</b>: Installation and setup requires that the EHS .apk file be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](../../download) and establish connectivity between the computer and device. Then resume from here. 
+>**<u>The SD card slot is disabled</u> when a device is in Multi-user Mode**. See Special Features section for more information. 
 
 -----
 
@@ -27,11 +28,15 @@ The EHS 3.x download includes two separate .apk files:
 
 See the full list of [devices supported by EHS v3.1](../guide/about#supporteddevices). 
 
-> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.x is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
+> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.x is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. **Note**: Prior configuration settings, if any, are re-applied automatically.
 
 > **EHS 3.1 DOES NOT support Android 6.x Marshmallow**. 
 
+-----
+
 **To install EHS manually**: 
+
+**IMPORTANT:<br> On Oreo devices, Primary user must be active on device when EHS is installed and first launched**. 
 
 &#49;. <b>Connect the device</b> via USB to a PC or Mac.
 
@@ -134,7 +139,7 @@ In User Mode, the following features are disabled by default:
 
 <img alt="" style="height:350px" src="prefs_3.png"/>
 
-For scenarios that require even more security, EHS offers Kiosk mode, which is documented in the [Advanced Features]() section. For a complete usage reference for the `enterprisehomescreen.xml` configuration file, please see the [Advanced Settings](../settings) section. 
+For scenarios that require even more security, EHS offers Kiosk mode, which is documented in the [Special Features](../features/#kioskmode) section. For a complete usage reference for the `enterprisehomescreen.xml` configuration file, please see the [Advanced Settings](../settings) section. 
 
 -----
 
@@ -143,9 +148,13 @@ These instructions apply to remote installation of EHS, an `enterprisehomescreen
 
 > **Important**: To execute EHS in a device in which a managed profile is enabled, EHS must be installed <u>before</u> configuring the managed profile in the device.
 
-> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.x is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
+> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.x is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. **Prior configuration settings, if any, are re-applied automatically**.
+
+-----
 
 **To install EHS using an EMM, instruct the EMM to do the following, in this order**:
+
+**IMPORTANT:<br> On Oreo devices, Primary user must be active on device when EHS is installed and first launched**. 
 
 &#49;. If desired, <b>create an</b> `enterprisehomescreen.xml`<b> file</b> containing the desired user apps and settings. Otherwise, EHS will be installed with its default settings and apps. See the [Advanced Settings](../settings) section for detailed instructions on the creation and editing of config files. 
 
@@ -318,6 +327,9 @@ If EHS is removed from the device and the Android Launcher is the only remaining
 
 ## Battery and Wi-Fi Quick View
 In addition to the separate panels for viewing Battery and Wi-Fi status provided in the menus of Admin- and User-Mode Launcher screens, EHS provides Quick View, an alternate way of accessing real-time status of these critical devices from a single screen.
+
+**Note**: On devices running Oreo, SSID and BSSID information do not appear in the "Wireless Info" or "Battery and Wi-Fi Quick View" screens if Location services (Settings -> Security & Location -> Location) are turned off. 
+
 
 **To view Battery and Wi-Fi status**: 
 

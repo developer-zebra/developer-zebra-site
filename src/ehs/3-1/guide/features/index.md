@@ -17,102 +17,38 @@ This guide covers advanced EHS features such as Kiosk Mode and EHS Logging. It a
 
 ## Multi-user Mode
 
-EHS 3.1 and higher supports Multi-user Mode on devices running Android 8.x Oreo and higher. The feature works through the concept of User Profiles, which allow for Primary, Secondary and Guest users, each with different sets of apps, capabilities and access privileges. In EHS, Multi-user Mode operates under the rules listed below. 
+EHS 3.1 and higher supports Multi-user Mode on devices running Android 8.x Oreo and higher. The feature works through the concept of User Profiles, which allow for Primary, Secondary and Guest users, each with different sets of apps, capabilities and access privileges. In EHS, Multi-user Mode behaves as indicated below. 
 
 ### User Types
-* **Primary user -** is the first user added to a device and is always running, even when other users are in the foreground. Only the Primary user can add Secondary users and access other device features and settings. It can be removed only by a factory reset. 
-* **Secondary user -** is any user that is not the Primary user. Secondary users can remove their own account or have it removed by the Primary with no impact on other users. Secondary users can run in the background and continue to have network connectivity.
-* **Guest user -** is a temporary secondary user that can quickly deleted (along with any data it created) when no longer needed. There can be only one Guest user at a time.
+* **Primary user -** the first user added to a device and **can be removed only by a factory reset**. The Primary user is always running, even when a Secondary user is in the foreground. This user has privileges available to no others, including the ability to add Secondary users and access all device features and settings.  
+* **Secondary user -** any user that is not the Primary user. Secondary users can run in the background and continue to have network connectivity. **Secondary users can remove their own account or have it removed by the Primary with no impact on other users**. 
+* **Guest user -** a temporary Secondary user that can be quickly deleted (along with any data it created) when no longer needed. **There can be only one Guest user on a device at a time**. Also see [Guest-user Behavior](#guestuserbehavior), below. 
 
-### User Rules
+### Multi-user Behavior
 
-* Settings files for the Primary user deployed to one or more devices apply to all users of that device. 
-* Settings changes made by the Primary user automatically apply to secondary/guest users.
-* Configurations of Secondary and Guest users are inherited from the primary user. 
-* Secondary and Guest users are prohibited from reconfiguring their settings by any means. 
-* Admin Mode is available only to the Primary user. 
-* EHS config files pushed to a device are not consumed while a Secondary or Guest user is logged in; settings take effect when a Primary user logs in.
-* **IMPORTANT** When switching from a Primary user in Admin mode to a Secondary or Guest user, the Admin Mode Timeout clock stops running. In theory, this could allow a Secondary or Guest user to switch back to the Primary user and access the features of Admin Mode on the device. 
+* **<u>The SD card slot is disabled</u>** when a device is in Multi-user Mode.
+* **The Primary user must be in the foreground on device when EHS is installed and first launched**. 
+* Settings files for the Primary user deployed to a device apply to all users of that device. 
+* Settings changes made by the Primary user automatically apply to Secondary users.
+* Secondary users are prohibited from reconfiguring device settings by any means. 
+* Only Primary user can [change app icon size](../settings/#appiconsize). 
+* EHS config files pushed to a device are not consumed by a Secondary user; settings take effect when the Primary user comes to the foreground.
+* Shortcuts pinned to the Primary user's home screen DO NOT appear in those of Secondary users or vice-versa. 
+* Only the Primary user has access to EHS Admin Mode. 
+* **IMPORTANT**: When switching from a Primary user in Admin Mode to a Secondary user, the Admin-mode timeout counter stops. In theory, this could allow a Secondary user to switch back to the Primary user and access the features of Admin Mode on the device. 
+* Camera- and Search-app icons (when enabled) do not always appear on the keyguard screen when switching between users until after a suspend/resume.  
 
 ### Guest-user Behavior
 
 When switching to a Guest user on a device, Android displays a prompt asking to select either "Start over" or "Continue." 
 
-* **Start over -** quits all applications and deletes data created by the previous Guest user. 
-* **Continue -** keeps apps running and DOES NOT delete data created during the previous guest session.
-
->**There can be only one Guest user on a device at a time**. 
+* **Start over -** removes all app icons from the desktop and deletes data created by the previous Guest user. 
+* **Continue -** keeps app icons and DOES NOT delete data created during the previous guest session.
 
 **Zebra recommends selecting "Continue" when working with EHS**. Selecting "Start over" removes all apps (including EHS) from the Guest account.
 
- FROM TUT-27634:
-we need to mention this under EHS multi user section.
+**Note: There can be only one Guest user on a device at a time**. 
 
-Admin inactivity does not auto logout Admin (Primary user's) if we switch from Primary user to any other Users and stay in secondary user until timeout is passed and then come back to primary user. basically Admin is not logged out in primary user even after inactivity timeout has expired from any other Secondary user. 
-
-In MU, EHS feature "Admin inactivity time out" works per-user only.
-
- 
-
-Steps:
-
-Create some Secondary users in the device.
-Login to Admin mode in Primary user and set the admin inactivity timeout as 15 seconds.
-switch to Secondary user and leave device idle until 15 seconds passes
-switch back to Primary user   
->>> Result: still the Primary user is in Admin mode (because 15 sec timeout has not taken place)
- FROM TUT-28619: 
-
-this piece of info should go under multi-user support from EHS.
-
-this is a usage note under Pinned shortcut feature (that was added in EHS 3.0) w,r,t multi-user support.
-
-When a shortcut is pinned in primary user, it will get added only to primary user's home screen. it does not get added to secondary users' or guest's user screen. so the behavior of pinned shortcuts is per-user only.
-
-This EHS behavior is identical to Android stock launcher behavior. There also the pinned shortcut is visible to the added user only. 
-
- 
-
-Test case: 
-
-create primary user, a secondary user and guest.
-Login to primary user >> open chrome >> open any link and add link to home screen EHS >> shortcut is added to primary user
-switch to secondary user >>  cannot see the added shortcut there on SU's home screen.
-From TUT-28247:
-this is an outcome of TUT-27407
-
-we need to add a usage note under MU section regarding enable/disable keyguard camera/search app feature;
-
-in EHS config, when camera/search in keyguard is enabled and also the device has multiple users created (primary user, secondary users, guest);
-
-then when the user is moving from primary to secondary through lock screen (swipe type lock screen), at the first landing to lock screen, they might not see the camera/search icon as expected. but if they do suspend/resume then the camera/search icons will appear on the lock screen as expected.
-
- 
-
-From TUT-27852:
-
-when Multi user is enabled, SDcard getting disabled for all the users including Primary user. 
-
-We need to update EHS techdocs regarding this. basically EHS customers will not be able to access SDcard when Multi User enabled.
-
-affected features:
-
-1. Admin cannot export Configuration from EHS when Multi user is enabled. external sd card will not be listed under export config folder list.
-
-2. Users cannot use walpaper/title bar icon present in external storage when multi user is enabled 
-
- 
-
-From TUT-27635:
-
-need to add a note for the below.
-
-it's mandatory to install and first launch EHS while in Primary user.
-
-In manual and mass deployment, EHS should always be installed in Primary user first and launched in Primary user.
-
-reason: Mx dependent EHS features work while in primary user only. none of the Mx dependent features will work for secondary users. so there will be mis-behaviors if you install EHS and run EHS for secondary users first. if we do it first in primary user, the settings will be applied in primary user and be persistent thereafter.
- 
 -----
 
 ## GMS Restricted Mode
@@ -129,7 +65,7 @@ Kiosk Mode is designed for devices to run a single application, often with a tou
 Also see the EHS [Auto-Launch](../settings#autolaunch) feature, which provides functionality similar to Kiosk Mode without changing the HOME and BACK key functions. 
 
 ##### Kiosk Mode tags:
-<b>&lt;kiosk&gt;</b> - Specifies the app that will run when Kiosk Mode is enabled
+<b>&lt;kiosk&gt;</b> - Specifies the app that runs when Kiosk Mode is enabled
 
 <b>&lt;kiosk_mode_enabled&gt;</b> - Toggles the feature on and off
 <br>

@@ -51,6 +51,8 @@ The EHS config file is fully XML-compliant, and must remain so to be readable by
 
 The Android Debug Bridge (ADB) is by far the most efficient way to work through the "pull-edit-push-test" cycle for configuring and testing changes to EHS settings through the `enterprisehomescreen.xml` file. The process requires a Mac or Windows PC that's connected via USB to a device with EHS installed. For help with software setup, please refer to [Setup Guide](../setup). 
 
+>**NOTE: <u>The SD card slot is disabled</u> when a device is in Multi-user Mode**. See Special Features section for more information. 
+
 From a computer connected to a target device that has EHS installed: 
 
 &#49;. <b>Use ADB to pull the config file</b> from its default location to the local PC: 
@@ -384,7 +386,11 @@ _The admin password <b><u>must</u></b> be entered and changed using the Admin To
 ### App Icon Size
 Permits the size of application icons to be set to Small, Medium, Large, Extra Large and Extra Extra Large . Icon size can be controlled through the `enterprisehomescreen.xml` file or through the device UI while in Admin or User Modes. 
 
-**Note**: EHS 3.0 and higher supports VectorDrawable app icons, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
+**Notes**: 
+* **EHS 3.0 and higher supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
+* When [Multi-user Mode](../features/multiusermode) is enabled, **only the Primary user can the app icon size**. 
+
+
 
 **To change the icon size through the UI**:
 

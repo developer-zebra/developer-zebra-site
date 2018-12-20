@@ -53,10 +53,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 <td style="width: 220px;">
 <p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
-    Android 6.0 (Marshmallow) </font></b></p>
-</td>
-<td style="width: 220px;">
-<p class="MsoNormal" style="text-align: center;" align="center"><b><font color="#333399" size="3">
     Android 7.1 (Nougat)</font></b></p>
 </td>
 
@@ -70,9 +66,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">ET50/ET55</font></p>
 </td>
 
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
-</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
@@ -86,8 +79,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">MC33</font></p>
 </td>
 
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
@@ -102,9 +93,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">PS20</font></p>
 </td>
 
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
@@ -118,9 +106,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC20, TC25</font></p>
 </td>
 
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
@@ -134,9 +119,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC51, TC56</font></p>
 </td>
 
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
-</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
@@ -150,9 +132,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC52, TC57</font></p>
 </td>
 
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
@@ -166,9 +145,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC72, TC77</font></p>
 </td>
 
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
@@ -182,9 +158,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC70x</font></p>
 </td>
 
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
-</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
@@ -198,9 +171,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">TC75x</font></p>
 </td>
 
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
-</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
@@ -214,9 +184,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">VC80x</font></p>
 </td>
 
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
@@ -230,9 +197,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal"><font color="#333399" size="3">WT6000</font></p>
 </td>
 
-<td style="width: 220px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
@@ -250,10 +214,9 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **Now supports <u>ONLY</u> Android 8.x (Oreo) and Android 7.x (Nougat)**.
 * **New [Lockout Recovery mode](../settings/#lockoutrecovery)** allows an admin to quickly return a device to service that is locked after exceeding the maximum number of unsuccessful admin login attempts.
 * **New [Recovery Timeout](../settings/#recoverytimeout)** is a configurable period of time (in minutes) that an admin must wait before Lockout Recovery is possible. 
-* **[Supports Multi-user mode](../features/#multiusermode)**, which allows admins to create "Piramry" users, and "Secondary" users and Guests, any or all of which can share a single EHS global configuration. **Applies to devices running Android 8.1.0 anbd higher only**.
+* **Now supports Android [Multi-user mode](../features/#multiusermode)**, which allows administrators to create Primary, Secondary and Guest device users, any or all of which can share a single EHS global configuration. **Applies to devices running Android 8.1.0 and higher only**.
 * **New GMS Restricted mode** prevents GMS apps from being enabled even if visible to users. 
-
-* **[GMS Restricted Mode](../features/#gmsrestrictedmode) -** is an optional state on Zebra devices that disables all GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device (that are safe to disable). See this section for information about related EHS behaviors. 
+* Compatible with **[GMS Restricted Mode](../features/#gmsrestrictedmode) -** is an optional state on Zebra devices that disables all GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device (that are safe to disable). See this section for information about related EHS behaviors. 
 
 -----
 
@@ -340,7 +303,7 @@ EHS 3.0 now supports these devices **running Android 8.1 Oreo**
 
 #### End of Support
 
-* **Support for Android 5.x Lollipop is dropped**. Use [EHS 2.0](/ehs/2-8/guide/about) if Marshmallow support is required. 
+* **Support for Android 5.x Lollipop is dropped**. Use [EHS 2.8](/ehs/2-8/guide/about) if Lollipop support is required. 
 * **Bypass Keyguard feature is dropped -** Use [DevAdmin](/mx/devadmin) through Zebra EMDK or StageNow tools to configure this setting. 
 * **Secure Mode feature is dropped -** Log files are no longer designated as "SECURED" or "UNSECURED" in log entries. 
 

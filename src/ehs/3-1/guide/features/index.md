@@ -17,22 +17,33 @@ This guide covers advanced EHS features such as Kiosk Mode and EHS Logging. It a
 
 ## Multi-user Mode
 
-EHS 3.1 and higher supports the Multi-user Mode implemented on devices running Android 8.x Oreo and higher. The feature works through the concept of User Profiles, which allow for Primary, Secondary and Guest users, each with different sets of apps, capabilities and access privileges. In EHS, Multi-user Mode operates under the rules listed below. 
+EHS 3.1 and higher supports Multi-user Mode on devices running Android 8.x Oreo and higher. The feature works through the concept of User Profiles, which allow for Primary, Secondary and Guest users, each with different sets of apps, capabilities and access privileges. In EHS, Multi-user Mode operates under the rules listed below. 
 
-#### Multi-user Rules
+### User Types
+* **Primary user -** is the first user added to a device and is always running, even when other users are in the foreground. Only the Primary user can add Secondary users and access other device features and settings. It can be removed only by a factory reset. 
+* **Secondary user -** is any user that is not the Primary user. Secondary users can remove their own account or have it removed by the Primary with no impact on other users. Secondary users can run in the background and continue to have network connectivity.
+* **Guest user -** is a temporary secondary user that can quickly deleted (along with any data it created) when no longer needed. There can be only one Guest user at a time.
+
+### User Rules
 
 * Settings files for the Primary user deployed to one or more devices apply to all users of that device. 
 * Settings changes made by the Primary user automatically apply to secondary/guest users.
-* Secondary/Guest users' configurations MUST be inherited from the primary user. Secondary/Guest users are not allowed to reconfigure (either via XML file push or Admin mode preferences manually). Only primary user has the Admin mode, secondary users or guest do not have Admin mode. Config XML file pushed in secondary users or guests will not be consumed by EHS.
-FROM TUT-27633:
+* Configurations of Secondary and Guest users are inherited from the primary user. 
+* Secondary and Guest users are prohibited from reconfiguring their settings by any means. 
+* Admin Mode is available only to the Primary user. 
+* EHS config files pushed to a device are not consumed while a Secondary or Guest user is logged in; settings take effect when a Primary user logs in.
+* **IMPORTANT** When switching from a Primary user in Admin mode to a Secondary or Guest user, the Admin Mode Timeout clock stops running. In theory, this could allow a Secondary or Guest user to switch back to the Primary user and access the features of Admin Mode on the device. 
 
-this is a about Android behavior of "Guest" user in multi user environment in Oreo. we have to make a note of that under EHS Multi user section.
+### Guest-user Behavior
 
-when you have added a Guest in your device and when you switched to that Guest, a prompt comes up asking to select either "Start over" or "Continue" (this is given by the OS). so to continue working with EHS, you should always select "Continue" there.
+When switching to a Guest user on a device, Android displays a prompt asking to select either "Start over" or "Continue." 
 
-"Start over" - To let a new guest use your device, or to delete data from the previous guest, choose Start over. 
-"Continue" - To keep using data from the previous guest session, choose Continue.
-note: if you do "start over" it will be a new Guest and hence the EHS app no longer exists under Guest. this is the Android behavior for any android app running in the device, not only for EHS.
+* **Start over -** quits all applications and deletes data created by the previous Guest user. 
+* **Continue -** keeps apps running and DOES NOT delete data created during the previous guest session.
+
+>**There can be only one Guest user on a device at a time**. 
+
+**Zebra recommends selecting "Continue" when working with EHS**. Selecting "Start over" removes all apps (including EHS) from the Guest account.
 
  FROM TUT-27634:
 we need to mention this under EHS multi user section.

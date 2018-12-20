@@ -275,7 +275,7 @@ EHS 3.0 now supports these devices **running Android 8.1 Oreo**
 ### End of Support
 
 * **Support for Android 5.x Lollipop is dropped**. Use [EHS 2.8](/ehs/2-8/guide/about) if Lollipop support is required. 
-* **Bypass Keyguard feature is dropped -** Use [DevAdmin](/mx/devadmin) through Zebra EMDK or StageNow tools to configure this setting. 
+* **Bypass Keyguard feature is dropped -** Use [DevAdmin](/mx/devadmin) through Zebra EMDK or StageNow tools to configure this setting.  **NOTE: <u>Bypassing the keyguard in this way requires the Settings app (com.android.settings) to be enabled; EHS disables it on the device by default</u>**.
 * **Secure Mode feature is dropped -** Log files are no longer designated as "SECURED" or "UNSECURED" in log entries. 
 
 -----

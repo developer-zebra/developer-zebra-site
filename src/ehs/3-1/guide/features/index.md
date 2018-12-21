@@ -26,17 +26,27 @@ EHS 3.1 and higher supports Multi-user Mode on devices running Android 8.x Oreo 
 
 ### Multi-user Behavior
 
-* **<u>The SD card slot is disabled</u>** when a device is in Multi-user Mode.
+* **<u>The SD card slot is disabled</u>** when a device is in Multi-user Mode. Nothing can be saved to or read from an external SD card. 
 * **The Primary user must be in the foreground on device when EHS is installed and first launched**. 
 * Settings files for the Primary user deployed to a device apply to all users of that device. 
 * Settings changes made by the Primary user automatically apply to Secondary users.
-* Secondary users are prohibited from reconfiguring device settings by any means. 
+* Secondary users are prohibited from reconfiguring device settings by any means (i.e. config-file push, EHS UI). 
 * Only Primary user can [change app icon size](../settings/#appiconsize). 
 * EHS config files pushed to a device are not consumed by a Secondary user; settings take effect when the Primary user comes to the foreground.
 * Shortcuts pinned to the Primary user's home screen DO NOT appear in those of Secondary users or vice-versa. 
 * Only the Primary user has access to EHS Admin Mode. 
 * **IMPORTANT**: When switching from a Primary user in Admin Mode to a Secondary user, the Admin-mode timeout counter stops. In theory, this could allow a Secondary user to switch back to the Primary user and access the features of Admin Mode on the device. 
-* Camera- and Search-app icons (when enabled) do not always appear on the keyguard screen when switching between users until after a suspend/resume.  
+* Camera- and Search-app icons (when enabled) do not always appear on the keyguard screen when switching between users until after a suspend/resume.
+
+
+<!-- MX-invoked commands - Primary user only:
+
+USB debugging - enable/disable
+restricted system setings enable/disable
+recent apps button -enable/disable
+Disable/enable applications
+
+ -->
 
 ### Guest-user Behavior
 
@@ -53,9 +63,9 @@ When switching to a Guest user on a device, Android displays a prompt asking to 
 
 ## GMS Restricted Mode
 
-On GMS devices running Android 8.x Oreo and higher, Zebra implements a feature called [GMS Restricted Mode](/mx/appmgr/#mainfunctionality), an optional state that disables all GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device (that are safe to disable) and removes their icons from the Android Launcher. **Although these apps and services also are disabled on devices running EHS, <u>their icons remain visible in the EHS Preferences -> Disable Applications</u>** panel. 
+On GMS devices running Android 8.x Oreo and higher, Zebra implements a feature called [GMS Restricted Mode](/mx/appmgr/#mainfunctionality), an optional state that disables all GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device (that are safe to disable) and removes their icons from the Android Launcher. **Although these apps and services also are disabled on devices running EHS, <u>their names remain visible in the EHS Preferences -> Disable Applications</u>** panel. 
 
-Attempts to enable any of the effected apps&ndash;either through the UI or by pushing a config file&ndash;result in failure and are added to the [EHS log](../features#ehslog). Users attempting to enable GMS apps through the UI also see a failure message on the screen.
+Attempts to enable any of the effected apps&ndash;either through the EHS Preferences UI or by pushing a config file&ndash;result in failure and are added to the [EHS log](../features#ehslog). Users attempting to enable GMS apps through the Privileged Settings UI also see a failure message on the screen.
 
 -----
 
@@ -153,6 +163,11 @@ All three Privileged Settings are enabled as a group through an Admin-mode UI co
 ## EHS Log
 
 EHS records all major activities, failures and security events in the `/enterprise/usr/enterprisehomescreen.log` file. These include failed attempts to enter Admin Mode, switches of the operating mode and all EHS errors. The log is a plain text file and can be retrieved with ADB or an EMM and viewed with any text editor.  
+
+**In Multi-user Mode**, user events are tagged as follows: 
+
+* **Primary user** - `User_0`
+* **Secondary user(s)** - `User_10`, `User_11`, etc.
 
 For more information about logging, see [Logging Preferences](../settings/#loggingdisabled). 
 

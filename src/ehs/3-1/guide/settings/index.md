@@ -51,7 +51,7 @@ The EHS config file is fully XML-compliant, and must remain so to be readable by
 
 The Android Debug Bridge (ADB) is by far the most efficient way to work through the "pull-edit-push-test" cycle for configuring and testing changes to EHS settings through the `enterprisehomescreen.xml` file. The process requires a Mac or Windows PC that's connected via USB to a device with EHS installed. For help with software setup, please refer to [Setup Guide](../setup). 
 
->**NOTE: <u>The SD card slot is disabled</u> when a device is in Multi-user Mode**. See Special Features section for more information. 
+>**NOTE: <u>The SD card slot is disabled</u> when a device is in Multi-user Mode**. See [Special Features section](../features/#multiusermode) for more information. 
 
 From a computer connected to a target device that has EHS installed: 
 
@@ -91,7 +91,11 @@ From a computer connected to a target device that has EHS installed:
 ##### Exporting the Config File
 For device troubleshooting and certain other scenarios, it is sometimes useful to make the config file (`enterprisehomescreen.xml`) visible or to look inside the file and check its settings. The file can be made visible from Admin Mode by exporting it to a visible area of the file system. Alternatively, the config file can be viewed, copied, moved and shared via email or other means using the Android File Browser. 
 
-<b>Note</b>: A config file exported to a visible area of the device file system might remain invisible to the PC until the device is rebooted. 
+##### Notes
+* A config file exported to a visible area of the device file system might remain invisible to the PC until after the device is rebooted. 
+* **The SD card slot is disabled when a device is in [Multi-user Mode](../features/#multiusermode)**; removable storage devices do not appear when selecting an export destination folder.
+
+**To export a config file**: 
 
 &#49;. In Admin Mode on the device, <b>select Export Configuration File</b> from the Tools menu:
 <img alt="" style="height:350px" src="admin_menu.png"/>
@@ -99,6 +103,7 @@ For device troubleshooting and certain other scenarios, it is sometimes useful t
 
 &#50;. <b>Tap OK</b> to confirm the action:
 <img alt="" style="height:350px" src="export_confirm.png"/>
+_Removable storage devices do not appear if Multi-user Mode is enabled_.
 <br>
 
 &#51;. <b>Note the location</b> in the confirmation message:
@@ -388,9 +393,7 @@ Permits the size of application icons to be set to Small, Medium, Large, Extra L
 
 **Notes**: 
 * **EHS 3.0 and higher supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
-* When [Multi-user Mode](../features/multiusermode) is enabled, **only the Primary user can the app icon size**. 
-
-
+* When [Multi-user Mode](../features/multiusermode) is enabled, **only the Primary user can change the app icon size**. 
 
 **To change the icon size through the UI**:
 
@@ -528,6 +531,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 * **Default EHS logo is used if tag is missing or left blank**, or if the specified image file is missing or invalid (such instances are [logged](../features/#ehslog)).
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
 * **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**. [More info](../about/#androidnougatnotes).
+* **The SD card slot is disabled when a device is in [Multi-user Mode](../features/#multiusermode)**; files on removable storage are not accessible in this mode.
 
 #### Example
 

@@ -1275,7 +1275,7 @@ Notes:
 ------
 
 ### Lockout Recovery
-Allows a device to be unlocked with the correct password after the device has been locked due to too many failed [admin login attempts](#adminmaxattempts). **Disabled by default**. Add this tag (with a value of "1") to the &lt;Preferences&gt; section of the config file to enable lockout recovery without the need to push a new `enterprisehomescreen.xml` file to the device. **See important Lockout Notes below**. 
+Allows a device to be unlocked with the correct password after the device has been locked due to too many failed [admin login attempts](#adminmaxattempts). **Disabled by default**. Add this tag (as shown in the example below with a value of "1") to the &lt;Preferences&gt; section of the `enterprisehomescreen.xml` config file to enable lockout recovery without the need to push a new config file to the device. **See important Lockout Notes below**. 
 
 <img alt="" style="height:350px" src="ehs31_lockout_pref.jpg"/>
 

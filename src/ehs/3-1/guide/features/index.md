@@ -45,8 +45,9 @@ USB debugging - enable/disable
 restricted system setings enable/disable
 recent apps button -enable/disable
 Disable/enable applications
+Bypass keyguard (see TUT-28656)
 
- -->
+-->
 
 ### Guest-user Behavior
 

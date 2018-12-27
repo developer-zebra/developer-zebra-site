@@ -1094,6 +1094,8 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 
 **Decoding LED Notification -** When enabled, causes the Red LED to flash when the scan trigger is pressed.
 
+**Decode Screen Notification -** When enabled, a translucent green screen overlay appears for 1 second upon every successful decode.
+
 >**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
 ------

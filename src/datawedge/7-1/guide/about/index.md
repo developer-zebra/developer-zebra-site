@@ -84,7 +84,8 @@ For more information about approved languages or to download a localized operati
 -----
 
 ## New in DataWedge 7.1
-* New End Detection Timeout option for **[Voice Input](../input/voice)**.
+* New **[Decode Screen Notification](../input/barcode/#scanparams)** for decode feedback in Scan Params.
+* New **[End Detection Timeout](../input/voice/#configuration)** option for Voice Input.
 * New **[Multi-User Support](#multiusersupport)** for multiple Android user profiles.
 * New **[SEND_RESULT](../api/resultinfo)** result code for multiple plugins.
 * New SET_CONFIG/GET_CONFIG parameters for:

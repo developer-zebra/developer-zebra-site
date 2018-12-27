@@ -106,7 +106,7 @@ DataWedge Voice Input can be controlled programmatically with DataWedge APIs. Re
   </tr>
   <tr>
     <td>voice_end_detection_timeout</td>
-    <td>0-30</td>
+    <td>0-30 (in seconds)</td>
   </tr>
   <tr>
     <td>voice_tab_command</td>

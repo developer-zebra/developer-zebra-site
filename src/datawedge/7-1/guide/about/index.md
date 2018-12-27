@@ -55,7 +55,7 @@ The version of DataWedge documented in this guide provides the following primary
 ### Multi-User Support
 
 DataWedge supports the use of multiple Android user accounts on a single device, enabling separate user profiles to maintain data privacy. The supported Zebra devices are:
-* Android Oreo: TC52/TC57
+* Android Oreo: TC52/TC57, TC72/TC77
 
 Features and functionality:
 * **If DataWedge is enabled, its functionality applies only for the active user** - Each user has a separate DataWedge process running. DataWedge usage and functionality only applies for the active user.
@@ -84,6 +84,7 @@ For more information about approved languages or to download a localized operati
 -----
 
 ## New in DataWedge 7.1
+* New End Detection Timeout option for **[Voice Input](../input/voice)**.
 * New **[Multi-User Support](#multiusersupport)** for multiple Android user profiles.
 * New **[SEND_RESULT](../api/resultinfo)** result code for multiple plugins.
 * New SET_CONFIG/GET_CONFIG parameters for:
@@ -99,7 +100,7 @@ For more information about approved languages or to download a localized operati
 
 ### Added in DataWedge 7.0
 New updates are identical to DataWedge 6.9.
-* New **[Voice Input (beta)](../input/voice)** for voice-to-data capture. 
+* New **[Voice Input](../input/voice)** for voice-to-data capture. 
 * New **[Global Scanner Configuration](../input/barcode#globalscannerconfiguration)** enables a generic scanner configuration to apply to all supported scanners.
 * New **[Character Set Configuration](../input/barcode/#charactersetconfiguration)** provides options to make adjustments with the decoder character set for barcode input.
 * Updated **[Decoder Selection](../input/barcode/#decoderselection)** now supports:
@@ -111,7 +112,7 @@ New updates are identical to DataWedge 6.9.
 * Improved layout for **[SET_CONFIG API](../api/setconfig/#scannerinputparameters)** scanner input parameters.
 
 ### Added in DataWedge 6.9
-* New **[Voice Input (beta)](../input/voice)** for voice-to-data capture. 
+* New **[Voice Input](../input/voice)** for voice-to-data capture. 
 * New **[Global Scanner Configuration](../input/barcode#globalscannerconfiguration)** enables a generic scanner configuration to apply to all supported scanners.
 * New **[Character Set Configuration](../input/barcode/#charactersetconfiguration)** provides options to make adjustments with the decoder character set for barcode input.
 * Updated **[Decoder Selection](../input/barcode/#decoderselection)** now supports:

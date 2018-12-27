@@ -46,7 +46,7 @@ The following instructions apply to Android Studio, which is required to use EMD
     •  If no result appears, skip to Step d.<br>
    <img alt="image" style="height:350px" src="uninstall_02.png"/>
 _Click to enlarge; ESC to exit_.<br>
-    •  If any version prior to 7.0 appears, **select it and click the "Uninstall" button**.<br>
+    •  If any version prior to 7.1 appears, **select it and click the "Uninstall" button**.<br>
 <img alt="image" style="height:350px" src="uninstall_03.png"/>
 _Click to enlarge; ESC to exit_.<br>
     •  Click the **"Restart Android Studio"** button.<br>
@@ -77,14 +77,14 @@ _Click to enlarge; ESC to exit_.<br>
 
 		:::java
 		dependencies {
-			implementation 'com.symbol:emdk:7.0.0'
+			implementation 'com.symbol:emdk:7.1.0'
 			...
 		}
    d. **For Gradle 3.3 or lower**, add this line **<u>instead</u>** of the one above:<br> 
 
 		:::java
 		dependencies {
-			compile 'com.symbol:emdk:7.0.0'
+			compile 'com.symbol:emdk:7.1.0'
 			...
 		}
 6. **Rebuild the project** (Build -> Make Project). 
@@ -92,7 +92,7 @@ _Click to enlarge; ESC to exit_.<br>
 ##### EMDK APIs are now ready to use. 
 
 #### Notes 
-* A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.0+` uses any SDK version from 7.0 and up.
+* A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.1+` uses any SDK version from 7.1 and up.
 * The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
 -----

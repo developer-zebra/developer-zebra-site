@@ -51,7 +51,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ## New in v7.1
 
-Now supports Android Multi-user mode. [More info](../multiuser). 
+Now supports Android Multi-user mode. See the [Multi-user Programming guide](../multiuser) for more information. 
 
 -----
 

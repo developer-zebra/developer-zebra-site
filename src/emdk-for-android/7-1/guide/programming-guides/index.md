@@ -20,8 +20,8 @@ content-items:
     url: /emdk-for-android/7-1/guide/programming_practices
   - type: section
     level: 4
-    title: Multi-user Programming Practices
-    text: Includes code samples for properly programming an app that runs on a device with multiple users.
+    title: Multi-user Programming
+    text: Includes code samples for properly programming an app to run on a device with multiple users.
     url: /emdk-for-android/7-1/guide/multiuser
   - type: section
     level: 4

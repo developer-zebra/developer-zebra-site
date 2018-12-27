@@ -37,7 +37,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 #### Scanners and imagers
 
-* **DS2278**
+* DS2278
 * DS3608
 * DS3678
 * LI3608
@@ -51,10 +51,9 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ## New in v7.1
 
-Now supports Android Multi-user mode. 
+Now supports Android Multi-user mode. [More info](../multiuser). 
 
 -----
-
 
 ## Version History
 

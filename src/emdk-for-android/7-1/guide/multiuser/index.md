@@ -1,5 +1,5 @@
 ---
-title: "Barcode Scanning API Programmer's Guide"
+title: Multi-user Programming
 layout: guide.html
 product: EMDK For Android
 productversion: '7.1'
@@ -7,7 +7,226 @@ productversion: '7.1'
 
 ## Overview
 
-The EMDK Barcode API provides applications with the ability to read numerous barcode label formats using a variety of built-in and pluggable cameras, imagers, lasers and scanners. For the full list, see [scanners supported by EMDK for Android](../about/#supporteddevices).
+EMDK for Android 7.1 (and higher) supports Android multi-user mode, which allows for Primary and Secondary users, each with its own sets of apps, capabilities and access privileges. 
+
+When running an EMDK app on a device with multile users, EMDK is enabled only for the active user. Apps should therefore be designed to release internal device resources and EMDKManager whenever they are not in the foreground. This is done by listening to the `ACTION_USER_BACKGROUND` intent. When an app returnes to the foreground, required resources and the EMDKManager reacquired by listening to the `ACTION_USER_FOREGROUND` intent.
+
+The EMDK service releases external component resources automatically when an app goes to the background; resources for scanners, serial devices and other resources become invalid when switching to a different user. 
+
+-----
+
+### Example
+The code below demonstrates how an app should release and reacquire EMDK resources when switching users on the device.
+
+
+    :::xml
+    public class MainActivity extends Activity implements EMDKListener, DataListener, StatusListener, ScannerConnectionListener {
+
+        private EMDKManager emdkManager = null;
+        private BarcodeManager barcodeManager = null;
+        private Scanner scanner = null;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+
+            try {
+                IntentFilter filter = new IntentFilter();
+                filter.addAction(Intent.ACTION_USER_BACKGROUND);
+                filter.addAction(Intent.ACTION_USER_FOREGROUND);
+                registerReceiver(broadcastReceiver, filter);
+
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+
+            EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);
+            if (results.statusCode != EMDKResults.STATUS_CODE.SUCCESS) {
+                return;
+            }
+        }
+
+        BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                boolean appSentToBackground = intent.getAction().equals(Intent.ACTION_USER_BACKGROUND);
+                boolean appCameToForeground = intent.getAction().equals(Intent.ACTION_USER_FOREGROUND);
+
+                // TODO MultiUser
+                if (appSentToBackground) {
+
+                    log("App going to background");
+
+                    try {
+                        // Release all resources
+                        if (emdkManager != null) {
+                            emdkManager.release();
+                            emdkManager = null;
+                        }
+
+                    } catch (Throwable e) {
+                        e.printStackTrace();
+                    }
+
+                }
+
+                if (appCameToForeground) {
+
+                    log("App coming to foreground");
+
+                    // Setting objects to null if background task are interrupted.
+                    if(scanner != null)
+                        scanner = null;
+
+                    if(barcodeManager != null)
+                        barcodeManager = null;
+
+                    if(emdkManager != null)
+                        emdkManager = null;
+
+                    EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), MainActivity.this); 
+                    
+                    // Use a final variable if MainActivity.this (above) fails.
+                    // If result == SUCCESS, onOpened is called 
+                    // and scanner object is reacquired
+                    if (results.statusCode != EMDKResults.STATUS_CODE.SUCCESS) {
+                        return;
+                    }
+                }
+            }
+        };
+
+
+        @Override
+        protected void onDestroy() {
+            super.onDestroy();
+
+            try {
+                // Release all resources
+                if (emdkManager != null) {
+                    emdkManager.release();
+                    emdkManager = null;
+
+                }
+            }
+            catch (Throwable throwable)
+            {
+                throwable.printStackTrace();
+            }
+        }
+
+        @Override
+        public void onOpened(EMDKManager emdkManager) {
+
+            this.emdkManager = emdkManager;
+            log("Initializing EMDK.. Please wait..");
+
+            // Acquire barcode manager resources
+            barcodeManager = (BarcodeManager) emdkManager.getInstance(FEATURE_TYPE.BARCODE);
+            if(barcodeManager == null)
+            {
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                barcodeManager = (BarcodeManager) emdkManager.getInstance(FEATURE_TYPE.BARCODE);
+            }
+
+            // Add connection listener
+            if (barcodeManager != null) {
+                barcodeManager.addConnectionListener(this);
+                initScanner();
+            }
+
+
+        }
+
+        @Override
+        public void onClosed() {
+
+            try {
+                if (emdkManager != null) {
+                    // Release all the resources
+                    emdkManager.release();
+                    emdkManager = null;
+                }
+            } catch (Throwable e) {
+                e.printStackTrace();
+            }
+        }
+
+        private void initScanner() {
+
+            if (scanner == null) {
+
+                scanner = barcodeManager.getDevice(BarcodeManager.DeviceIdentifier.DEFAULT);
+
+                if (scanner != null) {
+
+                    scanner.addDataListener(this);
+                    scanner.addStatusListener(this);
+
+                    try {
+                        scanner.enable();
+                    } catch (ScannerException e) {
+
+                    }
+                }
+            }
+        }
+
+
+        @Override
+        public void onData(ScanDataCollection scanDataCollection) {
+            if ((scanDataCollection != null) && (scanDataCollection.getResult() == ScannerResults.SUCCESS)) {
+                ArrayList<ScanDataCollection.ScanData> scanData = scanDataCollection.getScanData();
+                for(ScanDataCollection.ScanData data : scanData) {
+
+                    log("onData: " + data.getData());
+
+                }
+            }
+        }
+
+        @Override
+        public void onStatus(StatusData statusData) {
+
+            StatusData.ScannerStates state = statusData.getState();
+            String statusString = statusData.getFriendlyName()+" is " + state.toString().toLowerCase();
+
+            log("Status: "+statusString);
+
+            switch(state) {
+                case IDLE:
+                    try {
+                        scanner.read();
+                    } catch (ScannerException e) {
+                        e.printStackTrace();
+                        log("Error: " + e.getMessage());
+                    }
+                    break;
+            }
+        }
+
+        @Override
+        public void onConnectionChange(ScannerInfo scannerInfo, ConnectionState connectionState) {
+
+
+        }
+
+        private void log(String message)
+        {
+            Log.d("TAG","#EMDKMultiuser# " + message);
+        }
+    }
+
+
+<!-- 
+
+OLD OLD
 
 ### Barcode API Notes
 
@@ -203,3 +422,4 @@ The diagrams below illustrate the states that a barcode scanner will transition 
 ### Software Trigger
 
 ![img](software-trigger.png)
+ -->

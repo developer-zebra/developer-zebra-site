@@ -20,24 +20,24 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 #### Mobile devices
 
 * ET5X   - Marshmallow
-* MC33   - Nougat, Oreo `NEW`
-* **PS20 - Oreo** `NEW`
+* MC33   - Nougat, Oreo
+* PS20 - Oreo
 * TC20   - Nougat
 * TC25   - Nougat
-* TC51   - Marshmallow, Nougat, Oreo `NEW`
-* **TC52 - Oreo** `NEW`
-* TC56   - Marshmallow, Nougat, Oreo `NEW`
-* **TC57 - Oreo** `NEW`
-* TC70x  - Marshmallow, Nougat, Oreo `NEW`
-* **TC72 - Oreo** `NEW`
-* TC75x  - Marshmallow, Nougat, Oreo `NEW`
-* **TC77 - Oreo** `NEW`
-* VC80x  - Nougat, Oreo `NEW`
+* TC51   - Marshmallow, Nougat, Oreo
+* TC52 - Oreo
+* TC56   - Marshmallow, Nougat, Oreo
+* TC57 - Oreo
+* TC70x  - Marshmallow, Nougat, Oreo
+* TC72 - Oreo
+* TC75x  - Marshmallow, Nougat, Oreo
+* TC77 - Oreo
+* VC80x  - Nougat, Oreo
 * WT6000 - Nougat
 
 #### Scanners and imagers
 
-* **DS2278** `NEW`
+* **DS2278**
 * DS3608
 * DS3678
 * LI3608
@@ -51,6 +51,9 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ## New in v7.1
 
+Now supports Android Multi-user mode. 
+
+-----
 
 
 ## Version History

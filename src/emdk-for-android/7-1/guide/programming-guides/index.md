@@ -20,6 +20,11 @@ content-items:
     url: /emdk-for-android/7-1/guide/programming_practices
   - type: section
     level: 4
+    title: Multi-user Programming Practices
+    text: Includes code samples for properly programming an app that runs on a device with multiple users.
+    url: /emdk-for-android/7-1/guide/multiuser
+  - type: section
+    level: 4
     title: Notification API Programmer's Guide
     text: This guide provides an overview on design points to be considered during the development of an application that notifies users using Notification API in the business application workflow.
     url: /emdk-for-android/7-1/guide/notification-api

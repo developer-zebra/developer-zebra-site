@@ -2,7 +2,7 @@
 title: About EMDK For Android
 layout: guide.html
 product: EMDK For Android
-productversion: '7.0'
+productversion: '7.1'
 ---
 
 ## `IMPORTANT`

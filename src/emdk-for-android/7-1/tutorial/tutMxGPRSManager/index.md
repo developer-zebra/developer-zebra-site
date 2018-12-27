@@ -2,7 +2,7 @@
 title: Configure Access Points using Mx GPRS Manager
 layout: guide.html
 product: EMDK For Android
-productversion: '7.0'
+productversion: '7.1'
 ---
 
 ## Overview

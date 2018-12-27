@@ -6,7 +6,7 @@ mxversions:
     value: 7
 csp: ethernetmgr
 product: EMDK For Android
-productversion: '7.0'
+productversion: '7.1'
 ---
 
 

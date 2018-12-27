@@ -2,7 +2,7 @@
 title: Apply Mx Profile Silently in a Non-Blocking way
 layout: guide.html
 product: EMDK For Android
-productversion: '7.0'
+productversion: '7.1'
 ---
 
 ## Overview

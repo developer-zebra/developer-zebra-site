@@ -1,5 +1,5 @@
 ---
-title: Advanced Scanning Tutorial using Barcode API
+title: Advanced with using Barcode API
 layout: guide.html
 product: EMDK For Android
 productversion: '7.1'
@@ -7,31 +7,32 @@ productversion: '7.1'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [Barcode/Scanning APIs](/emdk-for-android/7-1/api) introduced in EMDK V 3.0, to perform some of the additional options along with Scanning operations on your Symbol Android devices without using Profile Wizard. The API uses [Barcode Manager](/emdk-for-android/7-1/api/barcode/BarcodeManager), which is the primary object to access barcode scanning feature. 
+This guide walks through creation of an app using the [Barcode/Scanning APIs](/emdk-for-android/7-1/api) introduced in EMDK-A 3.0 to perform additional options along with scanning operations on Zebra Android devices without using Profile Wizard. The API uses [Barcode Manager](/emdk-for-android/7-1/api/barcode/BarcodeManager), which is the primary object to access barcode scanning feature. 
 
-In this tutorial, we will explore the [Barcode/Scanning API](/emdk-for-android/7-1/api/barcode) by using some of its features for developing an advanced application that will scan barcodes. The application focuses on scanning the barcodes using soft scan trigger, which would be a button that we are going to use in the application itself and not the hard scan trigger on the device.
+This tutorial focuses on scanning barcodes using the soft scan trigger implemented as a button in the app, not the hard scan trigger on the device.
 
-> Note: You don't need the Profile Wizard while using the Barcode/Scanning APIs as everything could be configured programmatically through code.
+> Note: The Profile Wizard is not required to use the Barcode/Scanning APIs; everything is configured programmatically.
 
-We will be configuring following features:
+-----
 
-* **Device Types:**
-Using this feature, we will get the scanning devices supported by a specific Symbol device (Ex. Serial SSI Scanner, Camera Scanner etc.)
+The following features are configured:
 
-* **[Decoder Params](/emdk-for-android/7-1/api/barcode/ScannerConfig-DecoderParams):**
-This feature will be used to configure various types of decoders through our applications for scanning specific type of decoder scanner. (Ex. Code 11, Code 39, UPCA etc.)
+* **Device Types -** gets the scanning devices supported by a specific Zebra device (i.e. Serial SSI Scanner, Camera Scanner etc.)
 
-* **[Reader Params](/emdk-for-android/7-1/api/barcode/ScannerConfig-ReaderParams):**
-Reader params are used to configure reader specific options of a particular scanning device. In this tutorial, we will configure Illumination Mode for "Camera Scanner".
+* **[Decoder Params](/emdk-for-android/7-1/api/barcode/ScannerConfig-DecoderParams) -** used to configure various types of decoders through apps for scanning specific types of scanners (i.e. Code 11, Code 39, UPCA etc.).
 
-> Note: "Illumination Mode" is available only for Camera Scanner device.
+* **[Reader Params](/emdk-for-android/7-1/api/barcode/ScannerConfig-ReaderParams) -** used to configure reader-specific options of a particular scanning device. This tutorial configures Illumination Mode for the Camera Scanner.
 
-* **[Scan Params](/emdk-for-android/7-1/api/barcode/ScannerConfig-ScanParams):**
-ScanParams class provides access to scanning parameters that are available for all decoders.
-In this tutorial we will configure following Scanning Params:
-  1. Vibration: This Scan Param is used to configure Vibration of the scanner device when scanning barcodes.
-  2. Scan Tone: This Scan Param is used to set Scan tone while scanning barcodes. We can apply various media, notification or alarm tones to the device while scanning barcodes. We can also keep a silent tone by not passing any parameter to this attribute. In this tutorial, we will provide a list of Scan Tones for the user to select including silent mode where we won't pass any parameter to Scan Tone attribute.      
-        
+> Note: "Illumination Mode" is available only for the camera scanner device.
+
+* **[Scan Params](/emdk-for-android/7-1/api/barcode/ScannerConfig-ScanParams) -**
+class that provides access to scanning parameters available for all decoders.
+
+This tutorial configures the following scanning params:
+1. **Vibration** is used to configure Vibration of the scanner device when scanning barcodes.
+2. **Scan Tone** is used to set scan tone while scanning barcodes. We can apply various media, notification or alarm tones to the device while scanning barcodes. We can also keep a silent tone by not passing any parameter to this attribute. In this tutorial, we will provide a list of Scan Tones for the user to select including silent mode where we won't pass any parameter to Scan Tone attribute.      
+
+-----    
 
 ## Creating The Project
 
@@ -1108,7 +1109,7 @@ It will display a success toast when the changes are applied each time you chang
 
 ##Important Programming Tips##
 
-1. It is required to do the following changes in the application's `AndroidManifest.xml`:  
+1. The following changes in the application's `AndroidManifest.xml` are required:  
   
     >Note:
     >* Include the permission for EMDK:  
@@ -1124,22 +1125,15 @@ It will display a success toast when the changes are applied each time you chang
   
 2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device.
  
-4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
+3. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
+4. Optionally, the example below shows how to convert raw data (byte array) into hex format:
 
+		:::java
+		byte[] rawData = data.getRawData();
+		StringBuilder builder = new StringBuilder();
+		for(byte b : rawData)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		{ builder.append(String.format("%02x", b)); }
+		return builder.toString();
 

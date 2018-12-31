@@ -11,7 +11,7 @@ Keycodes are constants that uniquely identify the ASCII values of device keypres
 
 ### Support Notes
 
-* **These keys CANNOT be remapped to any other action:
+* **These keys CANNOT be remapped to any other action**:
  * HOME key 
  * RECENT APPS key
  * Brightness key(s)
@@ -116,24 +116,59 @@ For example:
 
 -----
 
-### Mapping Hardware Keys
-The hardware keys of Zebra devices can be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. 
+## Mapping Hardware Keys
+The hardware keys of Zebra devices can be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. This feature can be useful for many scenarios. 
 
-#### Pre-defined Commands
-* **back** - Navigates to the previous page in the EB app's history.
-* **forward** - Navigates forward in the EB app's history.
-* **key-** - Sends the [Android KeyEvent](https://developer.android.com/reference/android/view/KeyEvent) corresponding to the constant that follows (-) to the field in focus in the underlying app. For example, "key-11" sends a KeyEvent value of "11" (KEYCODE_4). 
-* **quit** - Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
-* **refresh** - Reloads the current page. 
-* **runscript-** - Executes the specified JavaScript code block as defined in the `CustomScript.xml` file. For example: "runscript-clearcookiescript" executes the user-defined JavaScript code block in the “cleaarcookiescript” section of the `CustomScript.xml` file. Learn more [about the CustomScript file](../customize/script). 
-* **uc-** - Sends a [Unicode character](http://www.unicode.org/charts/) corresponding to the code that follows (-) to the field in focus in the underlying app. This is useful for injecting foreign-language or scientific characters or other special symbols. For example, "uc-03C0" sends the Greek character Pi. 
+##### Possible Usage Scenarios:
+* Zoom in and out of app page(s)
+* Show/hide custom buttons or keyboard layouts
+* Show/hide the address bar
+* Quit the EB app and return to the OS
+* Quit the app and return to a login page
+* Reboot the device
+* Enter special character(s) not available on the selected keyboard
+* Enter foreign-language characters not available on the selected keyboard
+* Activate DataWedge and/or the scanner beam
+* Clear cookies and/or the application cache
+* Enable voice input
 
-> ***All commands are case-sensitive.***
+-----
+
+### Pre-defined Commands
+* **"back"** - Navigates to the previous page in the EB app's history.
+* **"forward"** - Navigates forward in the EB app's history.
+* **"key-"** - Sends the [Android KeyEvent](https://developer.android.com/reference/android/view/KeyEvent) corresponding to the constant that follows (-) to the field in focus in the underlying app. For example, "key-11" sends a KeyEvent value of "11" (KEYCODE_4). 
+* **"quit"** - Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
+* **"refresh"** - Reloads the current page. 
+* **"runscript-"** - Executes the specified JavaScript code block as defined in the `CustomScript.xml` file. For example: "runscript-clearcookiescript" executes the user-defined JavaScript code block in the “cleaarcookiescript” section of the `CustomScript.xml` file. Learn more [about the CustomScript file](../customize/script). 
+* **"uc-"** - Sends a [Unicode character](http://www.unicode.org/charts/) corresponding to the code that follows (-) to the field in focus in the underlying app. This is useful for injecting foreign-language or scientific characters or other special symbols. For example, "uc-03C0" sends the Greek character Pi. 
+
+> ***Note: All commands are case-sensitive.***
+
+-----
+
+### Remapping Hardware Keys
+
+Hardware keys are remapped in the KeyActions section of the `KeyCodeMapping
+.xml` file (EB 2.0 and higher only). Use the instructions in the [Mapping Android Keycodes section](#mappingandroidkeycodes) above to modify the file and push it to the device. 
+
+#### Example 
+
+	:::xml
+	<KeyActions> 
+		<KEYACTION  keyvalue="133" action="runscript-clearcookiescript"/>
+		<KEYACTION  keyvalue="132" action="quit" />
+		<KEYACTION  keyvalue="9" action="key-11" />
+		<KEYACTION  keyvalue="135" action="uc-03C0"/>
+		<KEYACTION  keyvalue="136" action="back"/>
+		<KEYACTION  keyvalue="137" action="forward"/>
+		<KEYACTION  keyvalue="139" action="refresh" />
+	</KeyActions> 
 
 -----
 
 ## Handling Incorrect Keycodes
-Once it is determined that correct keypresses are generating incorrect keycodes, the incorrect keycode value must be determined before the correct one can be substituted. This process uses JavaScript to expose the keycodes that appear when pressing one or more keys. 
+If it is determined that correct keypresses are generating incorrect keycodes, the incorrect keycode value must be determined before the correct one can be substituted. This process uses JavaScript to expose the keycodes that appear when pressing one or more keys. 
 
 The first step is to confirm that Windows keycodes are not being forced as a result of the &lt;isWindowsKey&gt; tag:
 
@@ -163,14 +198,6 @@ For example, if Step 2 determined that the keycode value being generated is 0x05
 where "KEYCODE_X" = the name of the keycode. [Standard Android key names](http://developer.android.com/reference/android/view/KeyEvent.html) are recommended.
 
 &#52;. Relaunch Enterprise Browser and **repeat Step 2 to confirm** that correct code(s) are generated.  
-
------
-
-## More Information
-
-* **[KeyCapture API](../../api/keycapture) -** how to include the API and use its methods
-* **[Keys that cannot be captured](../../api/keycapture/#remarks) -** including the SHIFT and ALT keys 
-* **[Android KeyEvents documentation](http://developer.android.com/reference/android/view/KeyEvent.html) -** the official list of Android key names
 
 -----
 
@@ -308,3 +335,12 @@ To map multiple function key to Microsoft keycode values, simply repeat the `SET
 <tr style="border-top-width: 1px; border-top-color: #cccccc; background-color: #f8f8f8;"><td align="center" style="border-top-color: #cccccc;border-top-width: 1px;border: 1px solid #dddddd;padding: 6px 13px;">F24</td><td align="center" style="border-top-color: #cccccc;border-top-width: 1px;border: 1px solid #dddddd;padding: 6px 13px;">0xE018</td><td align="center" style="border-top-color: #cccccc;border-top-width: 1px;border: 1px solid #dddddd;padding: 6px 13px;">0x87</td>
 </tr>
 </tbody></table>
+
+-----
+
+## See Also
+
+* **[KeyCapture API](../../api/keycapture) -** how to include the API and use its methods
+* **[Keys that cannot be captured](../../api/keycapture/#remarks) -** including the SHIFT and ALT keys 
+* **[Android KeyEvents documentation](http://developer.android.com/reference/android/view/KeyEvent.html) -** the official list of Android key names
+

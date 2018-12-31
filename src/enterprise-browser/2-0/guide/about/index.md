@@ -53,6 +53,8 @@ See all [supported Zebra devices](../about#mobile).
 
 ### New Features
 
+* **Now supports [Hardware Key Remapping](../keycapture/mappinghardwarekeys) -** 
+
 * Android apps running on **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** such as those for the device's "primary directory" (%PRIMARYDIR%) and an app's "install directory" (%INSTALLDIR%) in place of fully qualified (absolute) path names. This can help make coding easier and less error prone while simplifying enterprise deployment across varied devices. **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
 
 * **EB 2.0 and higher also supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 

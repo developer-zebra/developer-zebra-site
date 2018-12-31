@@ -7,17 +7,17 @@ productversion: '7.1'
 
 ## Overview
 
-EMDK for Android 7.1 (and higher) supports Android multi-user mode, which allows for Primary and Secondary users, each with its own sets of apps, capabilities and access privileges. When running an EMDK app on a device with multile users, EMDK is enabled only for the active user. Apps should therefore be designed to release internal device resources and the EMDKManager whenever they are not in the foreground and to reacquire them when returning. This is done by listening with intents: 
+EMDK for Android 7.1 (and higher) supports Android multi-user mode, which allows a device to have Primary and Secondary users, each with its own sets of apps, capabilities and access privileges. When running an EMDK app on a device with multiple users, EMDK is enabled only for the active user. **Apps must be designed to release internal device resources and the EMDKManager whenever the app goes to the background** and to reacquire them when returning to the foreground. This is done by listening with intents: 
 
-* `ACTION_USER_BACKGROUND` - surrender resources when heard
+* `ACTION_USER_BACKGROUND` - release internal resources when heard
 * `ACTION_USER_FOREGROUND` - reacquire resources when heard
 
-The EMDK service releases external component resources automatically when an app goes to the background. Therefore scanners, serial devices and other resources become invalid when switching to a different user and must be reacquired before use. 
+The EMDK service automatically releases ***external*** component resources (i.e. scanner, serial and SimulScan objects) when an app goes to the background to make them available to the foreground app. **Scanning resources must be programmatically reacquired when the EMDK app returns to the foreground**.
 
 -----
 
 ### Example
-The code below demonstrates how an app should release and reacquire EMDK resources when switching users on the device.
+The code below demonstrates how an app should release and reacquire EMDK resources when switching users on a device.
 
 
     :::xml
@@ -98,7 +98,6 @@ The code below demonstrates how an app should release and reacquire EMDK resourc
                 }
             }
         };
-
 
         @Override
         protected void onDestroy() {

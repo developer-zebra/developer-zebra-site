@@ -19,7 +19,7 @@ The base [EB installation](../setup) includes all necessary components to allow 
 
 ## New in v2.0
 
-> **NOTICE**: Android 8.x Oreo has changed the way application shortcuts are implemented. Therefore, <u>**app shortcuts are no longer supported on devices running Android Oreo and higher**</u>. Documentation relating to Android app shortcuts has NOT been removed. 
+> **NOTICE**: Android 8.x Oreo has changed the way application shortcuts are implemented. Therefore, <u>**app shortcuts are no longer supported on devices running Android Oreo and higher**</u>. Documentation relating to shortcuts remains visible for devices running earlier versions of Android. 
 
 ### Device Support 
 

@@ -11,7 +11,11 @@ Keycodes are constants that uniquely identify the ASCII values of device keypres
 
 ### Support Notes
 
-* **The HOME and RECENT APPS keys** cannot be remapped to any other action.  
+* **These keys CANNOT be remapped to any other action:
+ * HOME key 
+ * RECENT APPS key
+ * Brightness key(s)
+ * Backlight on/off key 
 * **The WorkAbout Pro 4 and Omnii XT15** are among a small group of Zebra devices running Windows Mobile that return proprietary keycode values inconsistent with those of other devices and incompatible with Windows. To address this issue, apps made with Enterprise Browser 1.5 or higher can remap those proprietary keycodes to Microsoft standard codes. See the [Mapping Proprietary Function Keycodes](#mappingproprietaryfunctionkeycodes) section below. 
 
 #### Android Keycode Handling 
@@ -109,6 +113,22 @@ For example:
 &#55;. Copy the modified `keycodemapping.xml` file to its original location on the device, replacing the template. 
 
 &#56;. Relaunch the Enterprise Browser app and check that its keycodes are mapped as specified.  
+
+-----
+
+### Mapping Hardware Keys
+The hardware keys of Zebra devices can be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. 
+
+#### Pre-defined Commands
+* **back** - Navigates to the previous page in the EB app's history.
+* **forward** - Navigates forward in the EB app's history.
+* **key-** - Sends the [Android KeyEvent](https://developer.android.com/reference/android/view/KeyEvent) corresponding to the constant that follows (-) to the field in focus in the underlying app. For example, "key-11" sends a KeyEvent value of "11" (KEYCODE_4). 
+* **quit** - Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
+* **refresh** - Reloads the current page. 
+* **runscript-** - Executes the specified JavaScript code block as defined in the `CustomScript.xml` file. For example: "runscript-clearcookiescript" executes the user-defined JavaScript code block in the “cleaarcookiescript” section of the `CustomScript.xml` file. Learn more [about the CustomScript file](../customize/script). 
+* **uc-** - Sends a [Unicode character](http://www.unicode.org/charts/) corresponding to the code that follows (-) to the field in focus in the underlying app. This is useful for injecting foreign-language or scientific characters or other special symbols. For example, "uc-03C0" sends the Greek character Pi. 
+
+> ***All commands are case-sensitive.***
 
 -----
 

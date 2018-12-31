@@ -433,7 +433,6 @@ For manually created `button.xml` file:
 		</FileLocations>
 		...
 	</Configuration>
-<br>
 
 For encrypted file created using the [ButtonBar](../buttonbar) tool: 
 

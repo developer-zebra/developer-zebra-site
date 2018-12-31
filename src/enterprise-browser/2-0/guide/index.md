@@ -26,6 +26,8 @@ automenu:
       items:
         - title: API Usage Guide
           url: apioverview
+        - title: ButtonBar Tool Guide
+          url: buttonbar
         - title: Button Parameter Guide
           url: customize/button
         - title: Custom JavaScript Guide

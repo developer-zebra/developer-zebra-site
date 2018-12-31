@@ -9,6 +9,8 @@ layout: guide.html
 
 Keycodes are constants that uniquely identify the ASCII values of device keypresses (hard or soft). Android apps made with Enterprise Browser 1.4 and higher permit Android keycode values to be assigned from a file when an Enterprise Browser app starts up. **Note**: The keycodes for keys with multiple values accessed with the shift or other modifier key (such as upper and lower case) might not be capturable. See the [KeyCapture API remarks](../../api/keycapture/#remarks) for more information. 
 
+**Note: EB 2.0 (and higher) also supports page-based actions**, which can execute JavaScript code and/or predefined commands based on the contents of a page. See the [Page-based Actions guide](../pageactions) for more information. 
+
 ### Support Notes
 
 * **These keys CANNOT be remapped to any other action**:
@@ -19,7 +21,7 @@ Keycodes are constants that uniquely identify the ASCII values of device keypres
 * **The WorkAbout Pro 4 and Omnii XT15** are among a small group of Zebra devices running Windows Mobile that return proprietary keycode values inconsistent with those of other devices and incompatible with Windows. To address this issue, apps made with Enterprise Browser 1.5 or higher can remap those proprietary keycodes to Microsoft standard codes. See the [Mapping Proprietary Function Keycodes](#mappingproprietaryfunctionkeycodes) section below. 
 
 #### Android Keycode Handling 
-On Android devices, the keycode values of certain keys are sometimes not returned as expected or desired. To ensure control and accuracy of key presses, the desired keycode value(s) can be assigned through the current [KeyCapture 4.x API](../../api/keycapture) as well as legacy 2.x versions. The steps in thie guide apply to all API versions. 
+On Android devices, the keycode values of certain keys are sometimes not returned as expected or desired. To ensure control and accuracy of key presses, the desired keycode value(s) can be assigned through the current [KeyCapture 4.x API](../../api/keycapture) as well as legacy 2.x versions. The steps in this guide apply to all API versions. 
 
 The following facts apply generally to Android keycode mapping for Enterprise Browser: 
 
@@ -34,7 +36,9 @@ The following facts apply generally to Android keycode mapping for Enterprise Br
 * The `keycodemapping.xml` file must not be empty nor contain data not formatted according to the guidelines described in this guide. 
 
 ### File Location
-The location of the `keycodemapping.xml` file on the device can be specified in the &lt;keycodemappingxmlfile&gt; tag of the app's `Config.xml` file using a fully qualified path (or substitution variable) and file name. This allows separate folders to be created for storing key mappings for different apps. If no path is specified, the default path of `file://%INSTALLDIR%/keycodemapping.xml` is used. 
+The location of the `keycodemapping.xml` file on the device can be specified in the &lt;keycodemappingxmlfile&gt; tag of the app's `Config.xml` file using a fully qualified path (or substitution variable) and file name. This allows separate folders to be created for storing key mappings for different apps. If no path is specified, EB's default installation folder is used as the path: 
+
+* `file://%INSTALLDIR%/keycodemapping.xml`
 
 See the [Config.xml reference](../configreference/#keycodemappingxmlfile) for more information. 
 
@@ -117,9 +121,7 @@ For example:
 -----
 
 ## Mapping Hardware Keys
-The hardware keys of Zebra devices can be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. This feature can be useful for many scenarios. 
-
-##### Possible Usage Scenarios:
+The hardware keys of Zebra devices can be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. This feature can be useful for many scenarios: 
 * Zoom in and out of app page(s)
 * Show/hide custom buttons or keyboard layouts
 * Show/hide the address bar
@@ -134,16 +136,21 @@ The hardware keys of Zebra devices can be remapped to perform predefined actions
 
 -----
 
-### Pre-defined Commands
-* **"back"** - Navigates to the previous page in the EB app's history.
-* **"forward"** - Navigates forward in the EB app's history.
-* **"key-"** - Sends the [Android KeyEvent](https://developer.android.com/reference/android/view/KeyEvent) corresponding to the constant that follows (-) to the field in focus in the underlying app. For example, "key-11" sends a KeyEvent value of "11" (KEYCODE_4). 
-* **"quit"** - Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
-* **"refresh"** - Reloads the current page. 
-* **"runscript-"** - Executes the specified JavaScript code block as defined in the `CustomScript.xml` file. For example: "runscript-clearcookiescript" executes the user-defined JavaScript code block in the “cleaarcookiescript” section of the `CustomScript.xml` file. Learn more [about the CustomScript file](../customize/script). 
-* **"uc-"** - Sends a [Unicode character](http://www.unicode.org/charts/) corresponding to the code that follows (-) to the field in focus in the underlying app. This is useful for injecting foreign-language or scientific characters or other special symbols. For example, "uc-03C0" sends the Greek character Pi. 
+### Predefined Commands
+The remapping feature for hardware keys supports only the predefined actions and mapping commands shown below.  
 
-> ***Note: All commands are case-sensitive.***
+#### Action Commands
+* **back** - Navigates to the previous page in the EB app's history.
+* **forward** - Navigates forward one page in the EB app's history.
+* **quit** - Exits the EB app, executing any exit commands or actions defined in the `Config.xml` file.
+* **refresh** - Reloads the current page. 
+
+#### Mapping Commands
+* **key-[KeyEvent]** - Sends the Android KeyEvent corresponding to the constant that follows (-) to the field in focus in the underlying app. For example, "key-11" sends a KeyEvent value of "11" (KEYCODE_4). See the full list of [Android KeyEvents](https://developer.android.com/reference/android/view/KeyEvent), constants and keycode values. 
+* **runscript-[ScriptIdentifier]** - Executes the specified JavaScript code block as defined in the `CustomScript.xml` file. For example: "runscript-clearcookiescript" executes the user-defined JavaScript code block in the “cleaarcookiescript” section of the `CustomScript.xml` file. Learn more [about the CustomScript file](../customize/script). 
+* **uc-[UnicodeValue]** - Sends the unicode character corresponding to the code that follows (-) to the field in focus in the underlying app. This is useful for injecting foreign-language or scientific characters or other special symbols. For example, "uc-03C0" sends the Greek character Pi. See all [Unicode characters](http://www.unicode.org/charts/). 
+
+***All commands are case-sensitive.***
 
 -----
 
@@ -155,15 +162,21 @@ Hardware keys are remapped in the KeyActions section of the `KeyCodeMapping
 #### Example 
 
 	:::xml
-	<KeyActions> 
-		<KEYACTION  keyvalue="133" action="runscript-clearcookiescript"/>
-		<KEYACTION  keyvalue="132" action="quit" />
-		<KEYACTION  keyvalue="9" action="key-11" />
-		<KEYACTION  keyvalue="135" action="uc-03C0"/>
-		<KEYACTION  keyvalue="136" action="back"/>
-		<KEYACTION  keyvalue="137" action="forward"/>
-		<KEYACTION  keyvalue="139" action="refresh" />
-	</KeyActions> 
+	<KeyCodeConfiguration>
+		<KeyCodes>
+		  ...
+		</KeyCodes>
+		
+		<KeyActions> 
+			<KEYACTION  keyvalue="133" action="runscript-clearcookiescript"/>
+			<KEYACTION  keyvalue="132" action="quit" />
+			<KEYACTION  keyvalue="9" action="key-11" />
+			<KEYACTION  keyvalue="135" action="uc-03C0"/>
+			<KEYACTION  keyvalue="136" action="back"/>
+			<KEYACTION  keyvalue="137" action="forward"/>
+			<KEYACTION  keyvalue="139" action="refresh" />
+		</KeyActions> 
+	</KeyCodeConfiguration>
 
 -----
 

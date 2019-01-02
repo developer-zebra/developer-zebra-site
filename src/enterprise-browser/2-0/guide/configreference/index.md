@@ -2387,7 +2387,7 @@ Controls the vertical position of the Hourglass icon, which is displayed by defa
 #### Example
 
 	:::xml
-	<SaveFormDatavalue="0"/>
+	<SaveFormData value="0"/>
 
 
 ### Cookies

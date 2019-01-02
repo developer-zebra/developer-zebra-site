@@ -135,8 +135,7 @@ Once a connection has been established, install the Enterprise Browser runtime o
 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/screen_1_windows.JPG"/>
 <img alt="" style="height:350px" src="../../images/getting-started/setup/screen_2_windows.JPG"/>
-<br>
-Follow any prompts that appear to complete the installation.  
+**Before clicking "OK" on the PC screen above**, <u>follow any prompts that appear on the device</u><br> to complete the Licence Manager installation or failure could result. 
 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/screen_3_windows.JPG"/>
 <img alt="" style="height:350px" src="../../images/getting-started/setup/screen_4_windows.JPG"/>

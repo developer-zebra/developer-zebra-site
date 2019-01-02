@@ -135,7 +135,7 @@ Once a connection has been established, install the Enterprise Browser runtime o
 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/screen_1_windows.JPG"/>
 <img alt="" style="height:350px" src="../../images/getting-started/setup/screen_2_windows.JPG"/>
-**Before clicking "OK" on the PC screen above**, <u>follow any prompts that appear on the device</u><br> to complete the Licence Manager installation or failure could result. 
+**Before clicking "OK" on the PC screen above**, <u>follow any prompts that appear on the device</u><br> to complete the Licence Manager installation. 
 
 <img alt="" style="height:350px" src="../../images/getting-started/setup/screen_3_windows.JPG"/>
 <img alt="" style="height:350px" src="../../images/getting-started/setup/screen_4_windows.JPG"/>
@@ -167,6 +167,8 @@ The preferred deployment method of Enterprise Browser runtimes from a Mac OS hos
 &#55;.  Restart the device to complete the installation. 
 
 Refer to the [On-device Configuration guide](../OndeviceConfig) for help configuring Enterprise Browser following installation.  
+
+#### Installation of EB runtime for Windows Mobile/CE is now complete. 
 
 -----
 

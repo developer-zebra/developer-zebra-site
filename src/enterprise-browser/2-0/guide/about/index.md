@@ -138,7 +138,7 @@ The following new methods, properties and/or callbacks were added to Android API
 * **[System API](../../api/system)** - Added `deviceHostName` property.
 * **[SignalIndicators API](../../api/signalindicators)** - Added `deviceHostName` callback parameter to `wlanStatus` method. 
 * **[Signal API](../../api/re2x/signal)** - Added `deviceHostName` parameter added to `signalEvent` method. 
-* **[Barcode API](../../api/barcode)** - Added Multi-barcode UDI support, including the following new callback parameters and properties added to the `enable` method (Applicable on Android with EMDK version 6.6 and higher):
+* **[Barcode API](../../api/barcode)** - Added Multi-barcode UDI support, including the following new callback parameters and properties added to the `enable` method (applicable on Android with EMDK version 6.6 and higher):
 	* **Callbacks**:
  		* isUDIData
  		* label

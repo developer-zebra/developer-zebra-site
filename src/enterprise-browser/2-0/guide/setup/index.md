@@ -184,9 +184,9 @@ The preferred deployment method of Enterprise Browser runtimes from a Mac OS hos
 <img alt="" style="height:250px" src="../../images/getting-started/setup/PocketPCsend.png"/>
 <br>
 
-&#52;. A file dialog will appear. Navigate to and select the Enterprise Browser runtime to be deployed to the WM/CE device and click Send.   
+&#52;. A file dialog appears. Navigate to and select the Enterprise Browser runtime to be deployed to the WM/CE device and click Send.   
 
-While the file is in transit, a dialog will appear on the Mac similar to the image below: 
+While the file is in transit, a dialog appears on the Mac similar to the image below: 
 
 <img alt="" style="height:150px" src="../../images/getting-started/setup/BluetoothDeploy.png"/>
 <br>

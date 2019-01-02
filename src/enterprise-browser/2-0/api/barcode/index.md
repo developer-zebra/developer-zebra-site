@@ -149,11 +149,24 @@ Synchronous Return:
 
 
 ### enable(<span class="text-info">HASH</span> propertyMap)
-Enabling the scanner puts it in a state that responds to the trigger (on devices with a hardware trigger) or will accept a command to initiate a soft scan (start method). Scanned barcodes will be available to the application through the callback provided to this method. Only one scanner can be enabled on the device at any one time. To switch between the imager and camera scanners (for example), then first disable the currently enabled scanner. If a callback to this method is not specified, the scanned data will be returned as keystrokes. **Note**: It is necessary to enable the scanner on Windows Mobile/CE devices prior to retrieving the state of properties.
+Enabling the scanner puts it in a state that responds to the trigger (on devices with a hardware trigger) or accepts a command to initiate a soft scan (start method). Scanned barcodes are available to the application through the callback provided to this method. Only one scanner can be enabled on the device at any one time. To switch between the imager and camera scanners (for example), first disable the currently enabled scanner. If a callback to this method is not specified, the scanned data is returned as keystrokes. **Note**: It is necessary to enable the scanner on Windows Mobile/CE devices prior to retrieving the state of properties.
 
-On Android platform, to enable the UDI scanning mode in Enterprise Browser, the user must set the scanMode to UDI. The UDI scanning mode will be enabled either using barcode enable method with barcode properties or calling barcode properties separately with/after enable method. The UDI scanning is only available with Imager based scanners. Supported only on Android platform with EMDK version 6.6 and above.
+To enable the UDI scanning mode on Android devices, the user must set the `scanMode` to UDI. The UDI scanning mode is enabled either using the barcode `enable` method with barcode properties or calling barcode properties separately with (or after) the `enable` method call. **UDI scanning is available only with imager-based scanners and 0is supported only on Android devices with EMDK version 6.6 and higher**.
 
-The Scanned Data of UDI labels will be available to the application through callback of this method and it can be differentiated from Barcode data using isUDIData parameter of callback. There are parameters available for scanned UDI data through callback of this method. If callback is not specified to this method then the user will receive the UDI tokenized data collectively as keystrokes.
+The Scanned Data of UDI labels is available to the application through callback of this method and it can be differentiated from Barcode data using `isUDIData` parameter of callback. There are parameters available for scanned UDI data through callback of this method. If callback is not specified to this method, the user receives the UDI tokenized data collectively as keystrokes.
+
+> **IMPORTANT**: When setting multiple barcode properties using the `enable` API call, barcode manager might not process those properities in the same order as they were entered. 
+
+If order is important, Zebra recommends using `EB.Barcode.setProperties` to set the properties in preferred order (see example code, below). This method can be called before `enable`. If barcode properties are constant across the app (and not changed by individual pages), **the Zebra-recommended best practice is to set barcode properties only once in the app**.
+
+#### Example
+Disable all decoder types and enable just a few: 
+
+	:::xml
+	EB.Barcode.setProperty("allDecoders", "false");
+	EB.Barcode.setProperty("code128", "true") ;
+	EB.Barcode.setProperty("code39", "true");
+	EB.Barcode.enable({EB.Barcode.enable({}, scanReceivedCallBack); 
 
 ####Parameters
 <ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the scanner, for example to enable specific symbologies or check digits. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-barcode?Properties'>property section</a> for applicable properties. failure to provide properties to this function will use the scanner's default properties, or those previously set on the Scanner instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>

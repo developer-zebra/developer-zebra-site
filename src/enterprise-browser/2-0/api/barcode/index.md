@@ -155,9 +155,9 @@ To enable the UDI scanning mode on Android devices, the user must set the `scanM
 
 The Scanned Data of UDI labels is available to the application through callback of this method and it can be differentiated from Barcode data using `isUDIData` parameter of callback. There are parameters available for scanned UDI data through callback of this method. If callback is not specified to this method, the user receives the UDI tokenized data collectively as keystrokes.
 
-> **IMPORTANT**: When setting multiple barcode properties using the `enable()` API call, barcode manager might not process those properities in the same order as entered. See below. 
+> **IMPORTANT**: When setting multiple barcode properties using the `enable()` method call, barcode manager might not process those properities in the same order as entered. See below. 
 
-**If order is important**, Zebra recommends using `EB.Barcode.setProperties` to set properties in the preferred order (see example). This method can be called before using the `enable()` method. If barcode properties are constant across the app (and not changed by individual pages), **the Zebra-recommended best practice is for an app to set barcode properties only once**.
+**If order is important**, Zebra recommends using `EB.Barcode.setProperties` to set properties in the preferred order (see example below) if barcode properties are constant across the app (and not changed by individual pages). If necessary, the `enable()` method can be used later to configure properties. **Zebra recommends setting barcode properties only once for an app**.
 
 #### Example
 Disable all decoder types and enable just a few: 

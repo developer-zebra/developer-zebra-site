@@ -11,6 +11,7 @@ productversion: '7.0'
 Voice Input enables DataWedge to convert spoken entries into keystrokes as if they were typed or acquired from a scan. Voice Input uses the Google speech recognition engine included on GMS devices. Voice-to-data capture can be useful in cases when a barcode is wet, damaged, covered with stray markings or otherwise cannot be scanned. 
 
 Voice Input options:
+* Begin voice capture with a defined start phrase
 * Terminate voice capture with a phrase or timeout value
 * Send a TAB character when speaking the "send tab" command
 * Send an ENTER character when speaking the "send enter" command
@@ -47,8 +48,6 @@ Voice Input features are accessible from the DataWege profile.
 * **Data capture start phrase** - Required phrase to start the data capture. **The default value is "start."** Numbers and special characters are not supported as part of the start phrase. _See Figure 1 and 2._
 
 * **Data capture end phrase** - Optional phrase that ends the data capture. There is no default value. _See Figures 1 and 3._
-
-* **End detection timeout** - Sets the timeout value (in seconds) for the data capture during the “waiting for data” state. **The default value is "0."** If the value is set to "0" and the end phrase is defined, it waits infinitely for the data capture. Whereas, when the end phrase is not defined, data is returned immediately. This timeout is approximate, as it may encounter a 1 to 2 second delay. _See Figure 1._
 
 ![img](Figures4-6.png) 
 <br>

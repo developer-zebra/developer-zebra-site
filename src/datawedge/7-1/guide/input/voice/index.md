@@ -5,8 +5,6 @@ product: DataWedge
 productversion: '7.1'
 ---
 
-> A beta version of Voice Input is provided for early access to this new DataWedge feature. Zebra welcomes feedback at the Developer Portal's [DataWedge Forum](https://developer.zebra.com/community/home/discussions/datawedge).
-
 ## Overview
 Voice Input enables DataWedge to convert spoken entries into keystrokes as if they were typed or acquired from a scan. Voice Input uses the Google speech recognition engine included on GMS devices. Voice-to-data capture can be useful in cases when a barcode is wet, damaged, covered with stray markings or otherwise cannot be scanned. 
 

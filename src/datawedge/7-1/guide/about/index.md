@@ -85,6 +85,7 @@ For more information about approved languages or to download a localized operati
 
 ## New in DataWedge 7.1
 * New **[Decode Screen Notification](../input/barcode/#scanparams)** for decode feedback in Scan Params.
+* **[Voice Input](../input/voice)** for voice-to-data capture officially released (non-beta). 
 * New **[End Detection Timeout](../input/voice/#configuration)** option for Voice Input.
 * New **[Multi-User Support](#multiusersupport)** for multiple Android user profiles.
 * New **[SEND_RESULT](../api/resultinfo)** result code for multiple plugins.
@@ -101,7 +102,7 @@ For more information about approved languages or to download a localized operati
 
 ### Added in DataWedge 7.0
 New updates are identical to DataWedge 6.9.
-* New **[Voice Input](../input/voice)** for voice-to-data capture. 
+* New **[Voice Input (beta)](../input/voice)** for voice-to-data capture. 
 * New **[Global Scanner Configuration](../input/barcode#globalscannerconfiguration)** enables a generic scanner configuration to apply to all supported scanners.
 * New **[Character Set Configuration](../input/barcode/#charactersetconfiguration)** provides options to make adjustments with the decoder character set for barcode input.
 * Updated **[Decoder Selection](../input/barcode/#decoderselection)** now supports:
@@ -113,7 +114,7 @@ New updates are identical to DataWedge 6.9.
 * Improved layout for **[SET_CONFIG API](../api/setconfig/#scannerinputparameters)** scanner input parameters.
 
 ### Added in DataWedge 6.9
-* New **[Voice Input](../input/voice)** for voice-to-data capture. 
+* New **[Voice Input (beta)](../input/voice)** for voice-to-data capture. 
 * New **[Global Scanner Configuration](../input/barcode#globalscannerconfiguration)** enables a generic scanner configuration to apply to all supported scanners.
 * New **[Character Set Configuration](../input/barcode/#charactersetconfiguration)** provides options to make adjustments with the decoder character set for barcode input.
 * Updated **[Decoder Selection](../input/barcode/#decoderselection)** now supports:

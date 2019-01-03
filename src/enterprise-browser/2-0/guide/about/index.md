@@ -59,6 +59,25 @@ See all [supported Zebra devices](../about#mobile).
 
 * **EB 2.0 and higher also supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 
 
+### API Enhancements
+
+The following new methods, properties and/or callbacks were added to Android APIs:
+
+* **[Barcode API](../../api/barcode)** - Enhanced multi-barcode support, 
+
+OLD OLD OLD >> including the following new callback parameters and properties added to the `enable` method (applicable on Android with EMDK version 6.6 and higher):
+	* **Callbacks**:
+ 		* isUDIData
+ 		* label
+ 		* UDITokenizedData
+	* **Properties**:
+
+### New/Updated Guides
+
+* A new **[Backward Compatibility Guide](../sap)** explains the minor adjustments required to avoid rendering and other issues when moving older apps EB 2.0. 
+
+
+
 -----
 
 ## Version History

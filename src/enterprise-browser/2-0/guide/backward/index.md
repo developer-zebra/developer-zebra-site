@@ -13,6 +13,16 @@ See the [Config.xml reference](../configreference) for more information about th
 
 -----
 
+### Barcode API
+
+When setting multiple barcode properties using the `enable()` method call, barcode manager might not process those properties in the same order as entered. 
+
+**If order is important**, Zebra recommends using `EB.Barcode.setProperties` to set properties in the preferred order (see example below) if barcode properties are constant across the app (and not changed by individual pages). If necessary, the `enable()` method can be used later to configure properties. **Zebra recommends setting barcode properties only once for an app**.
+
+See the [enable() method](../../api/barcode/#enablespanclasstextinfohashspanpropertymap) of the Barcode API for details. 
+
+-----
+
 ### ViewPort Tag
 
 For EB apps that use the HTML5 ViewPort tag, developers should set the &lt;UseWideViewPort&gt; tag in the app's `Config.xml` as shown below to avoid rendering issues.
@@ -20,18 +30,18 @@ For EB apps that use the HTML5 ViewPort tag, developers should set the &lt;UseWi
 	:::xml 
 	<UseWideViewPort value="1"/>
 
-See the [Config.xml reference](../configreference/#viewport) for complete usage details. 
+See the [ViewPort section](../configreference/#viewport) of the `Config.xml` reference for complete usage details. 
 
 -----
 
 ### Verify Client Certificate
 
-Due to licensing changes in EB 2.0 and higher, apps migrated to EB 2.0 sometimnes display a  PIN request when launched or when displaying certain app pages. Set the &lt;VerifyClientCertificate&gt; tag in the app's `Config.xml` as shown below to suppress this message. 
+Due to licensing changes in EB 2.0 and higher, apps migrated to EB 2.0 sometimes display a  PIN request when launched or when displaying certain app pages. To suppress this message, set the &lt;VerifyClientCertificate&gt; tag in the app's `Config.xml` as shown below. 
 
 	:::xml
 	<VerifyClientCertificate value="0"/>
 
- **NOTE: Setting this tag to "0" might result in SSL protocol errors**. See the [Config.xml reference](../configreference/#verifyclientcertificate) for details. 
+**NOTE: Setting this tag to "0" might result in SSL protocol errors**. See the [Verify Client Certificate section](../configreference/#verifyclientcertificate) of the `Config.xml` reference for details. 
 
 -----
 

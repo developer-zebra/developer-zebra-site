@@ -18,7 +18,7 @@ Voice Input options:
 * Validate spoken data, edit acquired data as needed
 * Works offline
 
->This feature is supported only on Zebra Android Oreo GMS devices.
+>This feature is supported only on Zebra Android Nougat and Oreo GMS devices.
 
 Watch the DevTalk presentation on DataWedge Voice Input:
 <div><iframe width="430" height="308" src="https://www.youtube.com/embed/Hp_Z24WSrUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>

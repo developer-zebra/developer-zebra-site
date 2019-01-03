@@ -2619,7 +2619,7 @@ Controls whether server certificates will be verified against the internal certi
 
 
 ### VerifyClientCertificate
-**Applies to Android devices only**. Configures app to ignore ClientCertificate requests from a server. Enterprise Browser by default looks for a client certificate in the certificate store whenever a server requests that EB present a client certificate. Setting this value to "0" causes the EB app to ignore such requests. **NOTE: Setting this tag to "0" might result in an SSL protocol error**. 
+**Applies to Android devices only**. Configures app to ignore ClientCertificate requests from a server. Enterprise Browser by default looks for a client certificate in the certificate store whenever a server requests that EB present a client certificate. Setting this value to "0" causes the EB app to ignore such requests. **NOTE: Setting this tag to "0" might result in SSL protocol errors**. 
 
 **Possible Values**:
 

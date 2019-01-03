@@ -7,7 +7,15 @@ layout: guide.html
 
 ##Overview 
 
-Enterprise Browser offers several options for migrating apps from different operating systems, competitive solutions and legacy systems so they can run on modern hardware EB versions. Below is a summary of EB migration options with links to the relevant documentation for each. 
+Enterprise Browser offers several options for migrating apps from different operating systems, competitive solutions and legacy systems so they can run on modern hardware and EB versions. Below is a summary of EB migration options with links to the relevant documentation for each. 
+
+-----
+
+### From Pre-2.0 Versions
+
+Enterprise Browser 2.0 (and higher) for Android supports the HTML5 ViewPort metatag and changes the way licensing is implemented. Apps running on older versions of EB might render improperly or display unexpected client certificate requests when launched with EB 2.0.  
+
+The [Backward Compatibility Guide](../backward) explains the minor changes that might be required to solve these issues. 
 
 -----
 

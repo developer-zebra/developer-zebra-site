@@ -74,9 +74,8 @@ OLD OLD OLD >> including the following new callback parameters and properties ad
 
 ### New/Updated Guides
 
-* A new **[Backward Compatibility Guide](../sap)** explains the minor adjustments required to avoid rendering and other issues when moving older apps EB 2.0. 
-
-
+* **A new [Backward Compatibility Guide](../sap)** explains the minor adjustments required to avoid rendering and other issues when moving older apps EB 2.0. 
+* **A new [DataWedge Intents User Guide](../dwintents)** covers programmatic control of DataWedge from within an EB app.   
 
 -----
 

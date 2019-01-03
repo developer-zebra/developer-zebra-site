@@ -4,7 +4,7 @@ productversion: '2.0'
 product: Enterprise Browser
 layout: guide.html
 ---
-##Overview 
+## Overview 
 
 The DataWedge app (included on every Zebra device) makes it possible to acquire barcode data from within an Enterprise Browser application without using the Enterprise Browser APIs. This guide explains how to configure an EB app to scan and process barcode data using DataWedge, which then enters the captured data as keystrokes into any EB input field. 
 

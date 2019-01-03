@@ -1432,7 +1432,7 @@ Used to persist data when using Read/WriteUserSetting.
 ## ApplicationCache
 
 ### ApplicationCacheEnabled
-**Applies to only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. Disabled by default. **Note: Unrelated to the web cache feature**.  
+**Applies to only to Android devices running KitKat and higher**. Allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load. Enabled by default. **Note: Unrelated to the web cache feature**.  
 
 **Possible Values**:
 
@@ -1446,7 +1446,7 @@ Used to persist data when using Read/WriteUserSetting.
 
 
 ### ClearApplicationCacheOnLaunch
-**Applies only to Android devices running KitKat and higher**. Controls whether to erase the HTML5 application cache on launching the app. **Note: Unrelated to the web cache feature**. Disabled by default. Formerly known as ApplicationCacheOnExit, which is retained for backward compatibility. 
+**Applies only to Android devices running KitKat and higher**. Controls whether to erase the HTML5 application cache on launching the app. **Note: Unrelated to the web cache feature**. Disabled by default. 
 
 **Possible Values**:
 
@@ -1458,11 +1458,23 @@ Used to persist data when using Read/WriteUserSetting.
 	:::xml
 			<ClearApplicationCacheOnLaunch value="0"/>	
 
+### ClearApplicationCacheOnExit
+**Applies only to Android devices running KitKat and higher**. Erases the HTML5 Application Cache app upon exiting the app. **Note**: Unrelated to the web cache feature. Disabled by default. Formerly known as ApplicationCacheOnExit, which is retained for backward compatibility.
+
+**Possible Values**:
+
+**0 - Do not clear the cache on exit (default)**
+1 - Clear the HTML5 app cache on exit
+
+#### Example
+
+	:::xml
+	<ClearApplicationCacheOnExit value="0"/>
 
 ### ApplicationCacheOnExit (deprecated)
 
 ##### THIS TAG IS DEPRECATED
-Use ClearApplicationCacheOnLaunch (above) instead.
+Use ClearApplicationCacheOnExit (above) instead.
 
 **Applies only to Android devices running KitKat and higher**. Controls whether to erase the HTML5 application cache upon exiting the app. **Note: Unrelated to the web cache feature**. Disabled by default. 
 

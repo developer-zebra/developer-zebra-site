@@ -68,6 +68,8 @@ automenu:
       items:
         - title: Migration Overview
           url: migration
+        - title: From EB 1.8 and Older 
+          url: backward
         - title: From PocketBrowser
           url: pb2
         - title: From RhoElements 2.x

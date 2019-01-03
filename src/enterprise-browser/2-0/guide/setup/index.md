@@ -317,11 +317,11 @@ Open **Applications -> Enterprise Browser for [target platform]-> Runtimes**. Th
 
 -----
 
-#### The remaining steps apply to both platforms
+#### The remaining steps apply to Android and Windows Mobile/CE platforms
 
 &#49;. After locating the desired runtime using the procedures above, **drag-copy the runtime** to the root directory of the device. 
 
-**&#50;. For versions prior to Enterprise Browser 1.5, skip to Step 5**. On Enterprise Browser 1.5 and higher **for Android**, a pre-configured `Config.xml` file (and optionally a `keycodemapping.xml` file) can be copied to the device at `/<internal_mem_root_dir>/EnterpriseBrowser/` at this time (create the directory, if necessary). 
+**&#50;. For versions prior to Enterprise Browser 1.5, skip to Step 4**. On Enterprise Browser 1.5 and higher **for Android**, a pre-configured `Config.xml` file (and optionally a `keycodemapping.xml` file) can be copied to the device at `/<internal_mem_root_dir>/EnterpriseBrowser/` at this time (create the directory, if necessary). 
 
 **&#51;. From the device, use a file explorer to locate and execute the runtime**. When Enterprise Browser 1.5 (and higher) for Android is launched for the first time after installation, it performs the following actions on the device:
 

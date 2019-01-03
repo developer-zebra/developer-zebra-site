@@ -24,27 +24,24 @@ Enterprise Browser 2.0 (and higher) supports the ability to process incoming voi
 
 ### Enable With DOM Injection
 
-The easiest way to add voice to an existing EB app is through DOM injection and its `pageAction` feature. This feature allows JavaScript code to be injected into one or more specific pages as determined by a unique string found on the page. For example, if the app contain one or more pages that display text prompting the user to "Speak a Command," voice input can be activated on every page that contains that particular string of text. 
+The easiest way to add voice to an existing EB app is through DOM injection and its `pageAction` feature. This feature allows JavaScript code to be injected into one or more specific pages as determined by a unique string found on the page. For example, if the app contains one or more pages that display text prompting the user to "Speak a Command," voice input can be activated on every page that contains that particular string of text. 
 
-Steps to use this feature:
+**To enable voice input using DOM injection**:
 
-1. Create two dependent files PageAction.xml and CustomScript.xml with below stub content.
-2. Find a string (i.e. text, HTML element or label) that is **unique to that page**. 
-3. Paste this string as the value of `<pageIdentification value=“unique string” />` in `PageAction.xml` file. 
+&#49;. Create two files using the stub content shown: 
 
-#### PageAction.xml
+File 1: `PageAction.xml` 
+
 	:::xml
 	<pageActionGroup>
 	<pageAction1> 
-	        <pageIdentification value=“Picking Details" />
+	        <pageIdentification value=“Speak the password..." />
 	        <Action value="runscript-voiceScript" />
-	 </pageAction2>
+	 </pageAction1>
 	</pageActionGroup>
 
-4. Add name of the file containing the JavaScript to be executed as the custom action value in `<Action value=“myScript1”/>`.
-5. Paste the Action value into the `CustomScript.xml` as shown below.
+File 2: `CustomScript.xml`
 
-#### CustomScript.xml
 	:::xml
 		<CustomScripts>
 			<voiceScript>
@@ -65,12 +62,37 @@ Steps to use this feature:
 		              document.activeElement.value = event.results[0][0].transcript;
 		               recognition.start();
 		            }
-		    </ voiceScript >
+		    </voiceScript>
 		</CustomScripts>
-6. Push the two files to the EB installation directory: 
-  `/Android/data/com.symbol.enterprisebrowser`
-7. Add the path to the 
 
+&#50;. Open the page on which to enable voice input, identify a string (i.e. text, HTML element or label) that's **unique to that page** and copy it to the clipboard. 
+
+&#51;. In the `PageAction.xml` file, paste the unique string as the value in the line `<pageIdentification value=“unique string” />` (replacing the "unique string" but keeping the quotes). 
+
+&#52;. Also in the `PageAction.xml` file, insert the action value name corresponding to the JavaScript to be executed as the custom action value (i.e. `<Action value=“voiceScript”/>`). 
+
+&#53;. Be sure that the action value specified in the `PageAction.xml` file matches that specified in the `CustomScript.xml` file, as shown above.
+
+&#54;. Push the two files to the EB installation directory on the device: 
+
+`/Android/data/com.symbol.enterprisebrowser`
+
+&#55;. Specify the path to the `CustomScript.xml` file in the [&lt;CustomDOMElements&gt; tag](../configreference/#customdomelements) in the app's `Config.xml` file. 
+
+&#55;. Confirm that the app's `Config.xml` file contains the tags and values below: 
+
+	:::xml
+	<TTS>
+	  <TTSEnabled value="1"/>
+	</TTS>
+	
+	<ASR>
+	  <ASREnabled value="1"/>
+	</ASR>
+
+#### The app is now voice-enabled. 
+
+<!-- 
 <img alt="" style="height:350px" src="code.png"/>
 <br>
 
@@ -88,15 +110,5 @@ Steps to Identify the unique string is:
 3. Open chrome and navigate to chrome://inspect
 4. Now you can see the complete web page source of that html and can identify the unique string in the page.
 
-
-#### Config.xml
-
-	:::xml
-	<TTS>
-	  <TTSEnabled value="1"/>
-	</TTS>
-	<ASR>
-	  <ASREnabled value="1"/>
-	</ASR>
-
+ -->
 

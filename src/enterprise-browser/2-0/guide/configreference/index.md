@@ -1446,7 +1446,7 @@ Used to persist data when using Read/WriteUserSetting.
 
 
 ### ClearApplicationCacheOnLaunch
-**Applies only to Android devices running KitKat and higher**. Controls whether to erase the HTML5 application cache on launching the app. **Note: Unrelated to the web cache feature**. Disabled by default. 
+**Applies only to Android devices running KitKat and higher**. Controls whether to erase the HTML5 application cache on launching the app. Disabled by default. **Note: Unrelated to the web cache feature**. 
 
 **Possible Values**:
 
@@ -1463,8 +1463,8 @@ Used to persist data when using Read/WriteUserSetting.
 
 **Possible Values**:
 
-**0 - Do not clear the cache on exit (default)**
-1 - Clear the HTML5 app cache on exit
+* **0 - Do not clear the cache on exit (default)**
+* 1 - Clear the HTML5 app cache on exit
 
 #### Example
 

@@ -15,17 +15,15 @@ See the [Config.xml reference](../configreference) for more information about th
 
 ### Barcode API
 
-When setting multiple barcode properties using the `enable()` method call, barcode manager might not process those properties in the same order as entered. 
+When setting multiple barcode properties using the `enable()` method call, barcode manager might not process those properties in the same order as entered. **If order is important** and barcode properties are constant across the app (not changed by individual pages), **Zebra recommends using** `EB.Barcode.setProperties` **to set properties in the preferred order**. If necessary, the `enable()` method can be used later to configure properties for an individual page.
 
-**If order is important**, Zebra recommends using `EB.Barcode.setProperties` to set properties in the preferred order (see example below) if barcode properties are constant across the app (and not changed by individual pages). If necessary, the `enable()` method can be used later to configure properties. **Zebra recommends setting barcode properties only once for an app**.
-
-See the [enable() method](../../api/barcode/#enablespanclasstextinfohashspanpropertymap) of the Barcode API for details. 
+See the [enable() method](../../api/barcode/#enablespanclasstextinfohashspanpropertymap) of the Barcode API for details and sample code. 
 
 -----
 
 ### ViewPort Tag
 
-For EB apps that use the HTML5 ViewPort tag, developers should set the &lt;UseWideViewPort&gt; tag in the app's `Config.xml` as shown below to avoid rendering issues.
+For EB apps that use the [HTML5 Viewport](https://www.w3schools.com/css/css_rwd_viewport.asp) tag, developers should set the &lt;UseWideViewPort&gt; tag in the app's `Config.xml` as shown below to avoid rendering issues.
 
 	:::xml 
 	<UseWideViewPort value="1"/>

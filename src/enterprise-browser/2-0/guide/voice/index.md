@@ -6,7 +6,12 @@ layout: guide.html
 ---
 ## Overview
 
-Enterprise Browser 2.0 (and higher) supports the ability to process incoming voice commands,  convert the voice input to text and employ the text in an app. Voice input is enabled in an EB app using JavaScript, which can be added to the app directly or added through [DOM injection](../dominjectionandroid). **A Zebra GMS device running Android is required**. 
+Enterprise Browser 2.0 (and higher) supports the ability to process incoming voice commands,  convert the voice input to text and employ the text in an app. Voice input is enabled in an EB app using JavaScript, which can be added to the app directly or by using [Page-based Actions](../pageactions), which also was introduced with EB 2.0. 
+
+### Requirements
+
+* A Zebra GMS device running Android
+* An app running on EB 2.0 (or higher)
 
 #### Interfaces in use: 
 
@@ -15,32 +20,28 @@ Enterprise Browser 2.0 (and higher) supports the ability to process incoming voi
 * [Text-to-speech (TTS) APIs](https://developer.android.com/reference/android/speech/tts/TextToSpeech)
 * [Speech package summary](https://developer.android.com/reference/android/speech/package-summary)
 
-### Requirements
-
-* An app on Enterprise Browser 2.0 (or higher)
-* A Zebra GMS device running Android
-
 -----
 
-### Enable With DOM Injection
+### Enable Voice With Page Actions
 
-The easiest way to add voice to an existing EB app is through DOM injection and its `pageAction` feature. This feature allows JavaScript code to be injected into one or more specific pages as determined by a unique string found on the page. For example, if the app contains one or more pages that display text prompting the user to "Speak a Command," voice input can be activated on every page that contains that particular string of text. 
+The easiest way to add voice to an existing EB app is by "injecting" the necessary JavaScript into the running app using Page-based Actions. This allows JavaScript code to be executed by one or more specific pages as determined by a unique string found on the page. For example, if an app contains one or more pages that display text prompting the user to "Speak a Command..." voice input can be activated on every page that contains that particular string of text. 
 
-**To enable voice input using DOM injection**:
+**To enable voice input using Page Actions**:
 
-&#49;. Create two files using the stub content shown: 
+&#49;. Create two files using the content shown below: 
 
-File 1: `PageAction.xml` 
+#### File 1: `PageAction.xml` 
 
 	:::xml
 	<pageActionGroup>
 	<pageAction1> 
-	        <pageIdentification value=“Speak the password..." />
+	        <pageIdentification value=“Speak a Command..." />
 	        <Action value="runscript-voiceScript" />
 	 </pageAction1>
 	</pageActionGroup>
+<br>
 
-File 2: `CustomScript.xml`
+#### File 2: `CustomScript.xml`
 
 	:::xml
 		<CustomScripts>
@@ -64,10 +65,11 @@ File 2: `CustomScript.xml`
 		            }
 		    </voiceScript>
 		</CustomScripts>
+<br>
 
 &#50;. Open the page on which to enable voice input, identify a string (i.e. text, HTML element or label) that's **unique to that page** and copy it to the clipboard. 
 
-&#51;. In the `PageAction.xml` file, paste the unique string as the value in the line `<pageIdentification value=“unique string” />` (replacing the "unique string" but keeping the quotes). 
+&#51;. In the `PageAction.xml` file, paste the unique string as the value in the line `<pageIdentification value=“unique string” />` (replacing "unique string" but keeping the quotes). 
 
 &#52;. Also in the `PageAction.xml` file, insert the action value name corresponding to the JavaScript to be executed as the custom action value (i.e. `<Action value=“voiceScript”/>`). 
 
@@ -77,20 +79,20 @@ File 2: `CustomScript.xml`
 
 `/Android/data/com.symbol.enterprisebrowser`
 
-&#55;. Specify the path to the `CustomScript.xml` file in the [&lt;CustomDOMElements&gt; tag](../configreference/#customdomelements) in the app's `Config.xml` file. 
-
+<!-- required only for DOM injection: &#55;. Specify the path to the `CustomScript.xml` file in the [&lt;CustomDOMElements&gt; tag](../configreference/#customdomelements) in the app's `Config.xml` file. 
+ -->
 &#55;. Confirm that the app's `Config.xml` file contains the tags and values below: 
 
 	:::xml
 	<TTS>
 	  <TTSEnabled value="1"/>
 	</TTS>
-	
+
 	<ASR>
 	  <ASREnabled value="1"/>
 	</ASR>
 
-#### The app is now voice-enabled. 
+#### The app's page(s) is/are now voice-enabled. 
 
 <!-- 
 <img alt="" style="height:350px" src="code.png"/>

@@ -6,7 +6,7 @@ layout: guide.html
 ---
 ## Overview
 
-Apps made with EB 2.0 and higher can perform page-based actions, which execute JavaScript code or predefined commands whenever certain conditions are found on a page. For example, if a user encounters a "page not found" message, the app can be instructed to navigate to a login page. 
+Apps running on EB 2.0 (and higher) can perform page-based actions, which execute JavaScript code or predefined commands whenever certain conditions are found on a page. For example, if a user encounters a "page not found" message, the app can be instructed to navigate to a login page. 
 
 Page-based actions and the conditions that trigger them are defined in the `PageAction.xml` file, which is created and stored on the device in advance. An [example](#example) of that file is shown below. 
 

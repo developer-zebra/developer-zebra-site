@@ -51,7 +51,7 @@ This section describes installation of the "Enterprise Browser for Android" depl
 
 **To install "Enterprise Browser for Android" on a Windows PC**:
 
-**&#49;. If upgrading, back up any data stored in the `C:\EnterpriseBrowser` directory of the host PC**. 
+**&#49;. If upgrading, back up any data stored in the `C:\EnterpriseBrowser` directory of the host PC** and save a copy of the Enterprise Browser `Config.xml` settings file (if desired) from the `/Android/data/com.symbol.enterprisebrowser` folder on the device.
 
 &#50;. Visit the [Enterprise Browser download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/enterprise-browser.html) and **scroll to find the download for the desired target platform (Android or Windows Mobile/CE)**. About [download package contents](../../download). 
 

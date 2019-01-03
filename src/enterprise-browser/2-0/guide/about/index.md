@@ -72,10 +72,12 @@ OLD OLD OLD >> including the following new callback parameters and properties ad
  		* UDITokenizedData
 	* **Properties**:
 
-### New/Updated Guides
+### New/Updated Features/Guides
 
 * **A new [Backward Compatibility Guide](../sap)** explains the minor adjustments required to avoid rendering and other issues when moving older apps EB 2.0. 
 * **A new [DataWedge Intents User Guide](../dwintents)** covers programmatic control of DataWedge from within an EB app.   
+* **[Page-based Actions Guide](../pageactions)** defines a new set of actions that can execute JavaScript code or predefined commands whenever certain conditions are found on a page. 
+* A new **[Voice Input/Output Guide](../voice)** describes how to use Page-based actions to enable voice input in an app. 
 
 -----
 

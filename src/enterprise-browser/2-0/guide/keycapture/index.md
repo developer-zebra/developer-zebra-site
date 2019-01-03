@@ -356,7 +356,7 @@ To map multiple function key to Microsoft keycode values, simply repeat the `SET
 
 -----
 
-## See Also
+## Also See
 
 * **[KeyCapture API](../../api/keycapture) -** how to include the API and use its methods
 * **[Keys that cannot be captured](../../api/keycapture/#remarks) -** including the SHIFT and ALT keys 

@@ -6,7 +6,7 @@ layout: guide.html
 ---
 ## Overview
 
-Enterprise Browser 2.0 (and higher) supports the ability to process incoming voice commands,  convert the voice input to text and employ the text in an app. Voice input is enabled in an EB app using JavaScript, which can be added to the app directly or by using [Page-based Actions](../pageactions), which also was introduced with EB 2.0. 
+Enterprise Browser 2.0 (and higher) supports the ability to process incoming voice commands,  convert the voice input to text and employ the text in an app. Voice input is enabled in an EB app using JavaScript, which can be added to the app directly or by using [Page-based Actions](../pageactions) also introduced with EB 2.0. 
 
 ### Requirements
 
@@ -24,7 +24,7 @@ Enterprise Browser 2.0 (and higher) supports the ability to process incoming voi
 
 ### Enable Voice With Page Actions
 
-The easiest way to add voice to an existing EB app is by "injecting" the necessary JavaScript into the running app using Page-based Actions. This allows JavaScript code to be executed by one or more specific pages as determined by a unique string found on the page. For example, if an app contains one or more pages that display text prompting the user to "Speak a Command..." voice input can be activated on every page that contains that particular string of text. 
+The easiest way to add voice to an existing EB app is by "injecting" the necessary JavaScript into one or more pages in the running app using Page-based Actions. This allows JavaScript code to be executed by the required pages as determined by a unique string found on the page. For example, if an app contains pages that display text prompting the user to "Speak a Command..." EB can activate voice input on every page that contains that string. 
 
 **To enable voice input using Page Actions**:
 
@@ -67,13 +67,13 @@ The easiest way to add voice to an existing EB app is by "injecting" the necessa
 		</CustomScripts>
 <br>
 
-&#50;. Open the page on which to enable voice input, identify a string (i.e. text, HTML element or label) that's **unique to that page** and copy it to the clipboard. 
+&#50;. Open a page on which to enable voice input, identify a string (i.e. text, HTML element or label) that's **unique to pages requiring voice input** and copy it to the clipboard. 
 
 &#51;. In the `PageAction.xml` file, paste the unique string as the value in the line `<pageIdentification value=“unique string” />` (replacing "unique string" but keeping the quotes). 
 
 &#52;. Also in the `PageAction.xml` file, insert the action value name corresponding to the JavaScript to be executed as the custom action value (i.e. `<Action value=“voiceScript”/>`). 
 
-&#53;. Be sure that the action value specified in the `PageAction.xml` file matches that specified in the `CustomScript.xml` file, as shown above.
+&#53;. Be sure that the action value specified in the `PageAction.xml` file matches the label specified in the `CustomScript.xml` file, as shown above (i.e. "voiceScript").
 
 &#54;. Push the two files to the EB installation directory on the device: 
 
@@ -84,15 +84,29 @@ The easiest way to add voice to an existing EB app is by "injecting" the necessa
 &#55;. Confirm that the app's `Config.xml` file contains the tags and values below: 
 
 	:::xml
-	<TTS>
-	  <TTSEnabled value="1"/>
-	</TTS>
+	<Configuration>
+		...
+		<TTS>
+	  		<TTSEnabled value="1"/>
+		</TTS>
+		
+		...
+		
+		<ASR>
+	  		<ASREnabled value="1"/>
+		</ASR>
+		...
+	</Configuration>
 
-	<ASR>
-	  <ASREnabled value="1"/>
-	</ASR>
+#### The app is now voice-enabled. 
 
-#### The app's page(s) is/are now voice-enabled. 
+-----
+
+## Also See
+
+* **[Page-based Action Guide](../pageactions)**
+* **[DOM Injection Guides](../dom)**
+
 
 <!-- 
 <img alt="" style="height:350px" src="code.png"/>

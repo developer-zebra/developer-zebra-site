@@ -12,6 +12,8 @@ Enterprise Browser is free to download and use for evaluation purposes. Commerci
 
 -----
 
+<!-- 
+
 <img alt="" style="height:350px" src="eb20_unlicensed.png"/>
 _Unlicensed version_
 <br>
@@ -24,25 +26,34 @@ _Trial license version_
 <img alt="" style="height:350px" src="eb20_perpetual_license.png"/>
 _Perpetually licensed version_
 <br>
+ -->
 
+### Requirements
+* Zebra device with License Manager app (pre-installed on supported devices)
+* Internet connection (for online license activation)
+* For cloud-based licensing, any **ONE** of the following: 
+ * Back Office Server, proxy server or a custom relay server
+* Or, a Windows or Linux server for on-premise licensing 
 
-
-Requirements for License Manager Application
-License Manager and LicenseMgrService applications pre-installed on the device
-Network Connection for online activation of the licenses
-Back-Office Server, Proxy Server, Custom Relay Server or Local/On Premise Server Infrastructure setup
-Starting the application
-To start the License Manager application, follow the steps given below:
-
-TRY THESE STEPS FIRST: 
+-----
 
 ## Manual Licensing
+This section describes the process for activating a license on a single device. To remotely activate multiple licenses for an entire organization, please refer to the [mass-deployment section](#massdeployment). 
+
+**To activate a device license**:  
+
+1. Locate and launch the License Manager app:
+<img alt="" style="height:350px" src="eb20_licensemgrapp.png"/>
+<br>
+2. Click the floating action button on the splash screen:
+<img alt="" style="height:350px" src="license_manager_splash.png"/>
+<br>
+3. The Activation screen appears (as below). **Tap to select the License Source** from the drop-down list. <br>
+Then tap ACTIVATE.
+<img alt="" style="height:350px" src="5.png"/>
+<br>
 
 
-1. Start the License Manager application.
-screenshot of icon, etc.
-2. Click the floating action button on the Opening/Home screen. This will open the Activation screen as shown in Figure 5.
-3. This page has the following input fields, where the information needs to be added for activating a license:
 Note: Choose the type of the license source under Select License Source option prior to typing any data in the license field above.
 
   a. Select License Source: A valid License Source has to be chosen against which the license has to be activated.

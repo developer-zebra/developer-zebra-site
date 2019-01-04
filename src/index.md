@@ -17,6 +17,8 @@ products:
         url: ../cartscan
       - title: Device Central
         url: ../devicecentral
+      - title: Device Tracker
+        url: ../devicetracker
       - title: Enterprise Home Screen
         url: ../ehs
       - title: Enterprise Keyboard

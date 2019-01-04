@@ -83,6 +83,27 @@ products:
     versions:
       - url: /devicecentral/2-0/guide/about
         label: '2.0'
+  - title: Device Tracker
+    description: A centralized solution to track, find, and prevent misplaced devices within a facility.
+    url: /devicetracker
+    image: /images/products/devicetracker.png
+    btn-text: Latest Docs
+    sections:
+      - title: About
+        url: /devicetracker/1-0/guide/about
+      - title: Install & Setup
+        url: /devicetracker/1-0/guide/setup
+      - title: Admin View
+        url: /devicetracker/1-0/guide/admin
+      - title: Battery Management
+        url: /devicetracker/1-0/guide/mgmt
+      - title: EOL Management
+        url: /devicetracker/1-0/guide/eol
+      - title: Configuration
+        url: /devicetracker/1-0/guide/config
+    versions:
+      - url: /devicetracker/1-0/guide/about
+        label: '1.0'
   - title: EMM Toolkit
     description: 'Documentation and best practices to help Enterprise Mobility Management solution providers tailor their systems for Zebra devices and software.'
     url: /emmtk/2-0/guide/about

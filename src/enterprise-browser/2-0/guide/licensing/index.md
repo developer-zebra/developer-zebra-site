@@ -53,6 +53,8 @@ Then tap ACTIVATE.
 <img alt="" style="height:350px" src="5.png"/>
 <br>
 
+## `TO BE REVISED`
+
 
 Note: Choose the type of the license source under Select License Source option prior to typing any data in the license field above.
 

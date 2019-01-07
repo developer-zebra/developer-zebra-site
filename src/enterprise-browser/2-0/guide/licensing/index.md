@@ -95,6 +95,8 @@ License Manager provides two licensing options for organizations that employ dev
 * Local Server
 * Pre-activated Licenses
 
+-----
+
 ### Local Server
 The Local License Server option enables organizations to employ an on-premise server to distribute licenses to devices without accessing the internet. This option requires software installed on a company's own IP-based Linux or Windows server in advance of license distribution to devices. 
 
@@ -116,6 +118,8 @@ Successful license activation is indicated by a screen similar to the image belo
 <br>
 
 #### The device is now licensed to use Enterprise Browser 2.0. 
+
+-----
 
 ### Pre-activated Licenses
 The pre-activated license option allows organizations to log into the Zebra Software Licensing Portal and download a binary license file **created for a device with a specific ID**. This file is pushed to the device and installed, and **fails if installed on any other device**. 
@@ -144,6 +148,8 @@ Successful license activation is indicated by a screen similar to the image belo
 #### The device is now licensed to use Enterprise Browser 2.0. 
 
 -----
+
+## `TO BE MODIFIED`
 
 If the user wants to enable an entitlement via a pre-activated license, this option should be chosen under Select
 

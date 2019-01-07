@@ -90,7 +90,6 @@ The web portal provides a dashboard for administrators to monitor the status of 
 
 * [Install & Setup](../setup)
 * [Admin View](../admin)
-* [Battery Management](../mgmt)
-* [EOL Management](../eol)
+* [Device Management](../mgmt)
 * [Configuration](../config)
 

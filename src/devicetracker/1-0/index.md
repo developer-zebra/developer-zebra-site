@@ -11,10 +11,8 @@ menu:
       url: /devicetracker/1-0/guide/setup
     - title: Admin View
       url: /devicetracker/1-0/guide/admin
-    - title: Battery Management
+    - title: Device Management
       url: /devicetracker/1-0/guide/mgmt
-    - title: EOL Management
-      url: /devicetracker/1-0/guide/eol
     - title: Configuration
       url: /devicetracker/1-0/guide/config
     - icon: fa fa-search

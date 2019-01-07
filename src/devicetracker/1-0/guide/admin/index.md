@@ -6,58 +6,102 @@ productversion: '1.0'
 ---
 
 ## Overview
-This section discusses the use of Admin View in PowerPrecision Console (PPC), providing a centralized view for the administrator to monitor battery inventory.
+This section discusses the operations available for an administrator, providing a centralized view for device tracking when locating misplaced devices. As part of Zebra’s DNA Visibility Console, there are multiple apps available.  At the login screen, select “Device Tracker”, then sign in.
 
-## Using the Console
+## Using the Web Console
 
-PowerPrecision Console server is a centralized dashboard displaying an inventory of deployed Zebra device batteries with color-coded health indicators based on state-of-health (SOH). It tracks SOH, state-of-charge (SOC), tags, battery part number, battery serial number, battery manufacture date, device model, device serial number, device IP address, last known status, and last update (elapsed time since the last update was received).
+Device Tracker provides a centralized dashboard displaying an inventory of deployed Zebra devices in service. The Device Tracker client regularly reports to the server, which displays the device status on the dashboard based on the information received. The top dashboard is lined with tiles that provide the total number of devices for the respective category and filter the devices based on that category with a click on the tile. The columns on the dashboard can be sorted by clicking on the double triangle to the right of the column name. Subsequent clicks sorts the column in ascending order (triangle points upward) or descending order (triangle points downward). A tabbed menu is displayed at the top of the dashboard above the tiles providing access to different views: Active, Out of Service, and Settings. 
 
-![img](dashboard_markup.png)
-_Figure 1. Admin View_
+![img](DTRK_dashboard.jpg)
+_Figure 1. Admin Dashboard_
 
-The PPC Client sends regular battery updates to the PPC Server, which automatically categorizes the batteries into “good” (green), “nearing end-of-life” (amber) and “end-of-life” (red) SOH categories based on the thresholds defined. The SOH status bar at the top right shows a quick snapshot of battery SOH for all deployed batteries with the total count of the battery in each SOH category (green, amber, red). The black icon with the hazard sign to the right of the SOH categories designate the number of batteries that have been decommissioned. The remaining two icons designate the number of devices that have the Zebra Data Services disabled and the number of devices that do not support SOH (PowerPrecision batteries). SOH filtering is available to quickly view individual or multiple SOH categories of deployed batteries to identify the batteries that are nearing EOL or need to be decommissioned. 
+Device Tracker tiles: 
 
-The columns on the dashboard can be sorted by tapping the double triangle to the right of the column name. A tabbed menu is displayed at the top of the dashboard providing access to other views: Active, Decommissioned, Add Battery, Server Settings, and Client Settings. Further customize the dashboard by selecting the categories to filter in the view.
+* **Total Tracked** - Displays total number of devices being tracked.  
 
-##Search
-A search can be conducted based on battery or device information. After entering in the text to search in the search field, tap on the magnifying glass to the right of the text field and select the search category: part number, battery serial number, manufacturing date, device model, device serial number, IP address, status. A search can be conducted in the **Active** tab or **Decommissioned** tab.
+* Tracking status tiles:
+ * **To Be Found** – Filters devices that need to be found and action has not been taken yet.
+ * **Being Found** – Filters devices which action has been taken to find the misplaced device.
+ * **Found** – Filters devices which a search was conducted and the device was tracked and found.
+ * **Cannot Find** – Filters devices which a search was conducted but the device could not be found.
 
-##Organize Batteries
-Battery tags provide the capability to identify and group batteries for organizational purposes based on a common tag name.  This name can be any desired form of identification such as location, department or job function. 
+* Connection state tiles:
+ * **Connected** – Filters devices connected to the network.
+ * **Not Connected** – Filters devices that have surpassed the Disconnect Threshold Time in the Settings tab, designating the device as disconnected from the network and therefore cannot be found. 
 
-![img](tag.JPG)
-_Figure 2. Tag battery_
+* Battery status tiles:
+ * **Low Battery** – Filters devices that have surpassed the Low Power Alert Threshold value defined in the Settings tab and are therefore in low battery state.
+     * **On Charge** – Filters devices that are powered and in the charge state. 
 
-**Add Tag** – add or append a tag to any pre-existing list of tags for each battery
-1. Select the battery/batteries to tag. Click on the checkbox next to the battery/batteries or click on the checkbox in the table header to select all listed batteries on the page. The "create or select a tag" text field and Save tag button appears.
-2. Enter tag name in the text field. Press Enter key.
-3. Click Save button with tag icon. 
-4. Click Add. 
-5. Click OK in the confirmation message. 
-The selected batteries are now tagged with the designated text, displayed in the Tags column on the dashboard.
+A search can be conducted based on device information from the table columns: Status, Connection State, AP Name, Battery State, Device Name, Device Model, Device Serial #, and Tags. In the Active tab, click the magnifying glass to produce a drop down menu and select the data to search. Depending on the data being searched, a prompt may appear to select data to refine the search. If required, enter in the text to search when prompted.
 
-**Override Tag** - remove any pre-existing tag(s) and replace with the new tag 
-1. Select the battery/batteries to tag. Click on the checkbox next to the battery/batteries or click on the checkbox in the table header to select all listed batteries on the page. The "create or select a tag" text field and Save tag button appears.
-2. Enter tag name in the text field. Press Enter key.
-3. Click Save button with tag icon. 
-4. Click Override. 
-5. Click OK in the confirmation message. 
-The selected batteries are now tagged only with the designated text, displayed in the Tags column on the dashboard. 
+Note: If nothing is displayed in the battery status column, it indicates that the device battery is not being charged and there is sufficient device battery charge.
+
+##Device Action
+Action can be taken on any selected device(s) in the Active tab.  Once the device is selected from the dashboard, the Action menu is accessible with the following options:
+* **Set device: To be found** – Marks the device to be found.  This initiates the tracking process. The Device Tracker client displays the marked device in the “Devices to be found” screen. A user can tap on the device listed then tap “Go” to begin searching for the marked device. 
+* **Set device to: Out of service** – Removes the device from the device pool and places it into the **Out of Service** tab. This can be used when a device is undergoing repair or is deprecated and no longer in use so must be removed from the device pool.
+* **Set device to: Active** - This option is available if a device is found
+* **Manage Tags** – Refer to [Organize Devices](./#organizedevices) section below.  
+* **Clear Selections** – Unselects any selected devices in the dashboard.
+
+##Organize Devices
+Device tags provide the capability to identify and group devices for organizational purposes based on a common tag name. This name can be any desired form of identification such as location, department or job function. Device tagging is performed in the Active tab.
+
+**Add Tag** – add or append a tag to any pre-existing list of tags for each device
+1. Select the device to tag. Tick the checkbox for the device row.
+2. In the Action menu at the top left of the table, select “Manage Tags”.
+3. Enter a tag name in the text field. Press Enter key.
+4. Click Save next to the entry field.
+5. Click Add in the pop-up message.
+6. Click OK in the confirmation message. The selected device is now tagged with the designated text and the tag name is displayed in the Tags column on the dashboard.
+The selected device is now tagged with the designated text and the tag name is displayed in the Tags column on the dashboard.
+
+**Override Tag** - remove any pre-existing tag(s) and replace with the new tag
+1. Select the device to tag. Tick the checkbox for the device row.
+2. In the Action menu at the top left of the table, select “Manage Tags”.
+3. Enter a tag name in the text field. Press Enter key.
+4. Click Save next to the entry field.
+5. Click Override in the pop-up message.
+6. Click OK in the confirmation message. 
+The selected device is now tagged only with the designated text and the tag name is displayed in the Tags column on the dashboard.
 
 **Delete Tag** - delete the specified tag 
-1. Select the battery/batteries to tag. Click on the checkbox next to the battery/batteries or click on the checkbox in the table header to select all listed batteries on the page. The "create or select a tag" text field and Save tag button appears.
-2. Enter name of tag to delete in the text field. Press Enter key.
-3. Click Save button with tag icon. 
-4. Click Delete. 
-5. Click OK in the confirmation message. 
-The specified tag is removed from the battery/batteries on the dashboard.
+1.	Select the device to tag. Tick the checkbox for the device row.
+2.	In the Action menu at the top left of the table, select “Manage Tags”.
+3.	Enter a tag name in the text field. Press Enter key.
+4.	Click Save next to the entry field.
+5.	Click Delete in the pop-up message.
+6.	Click OK in the confirmation message. 
+The tag is removed from the selected device and the tag name is no longer displayed in the Tags column on the dashboard.
 
-**Search Tag** - search for batteries with the specified tag name
-1. Click on the tag search field to the top left of the dashboard.  Make sure that no batteries are selected on the page.
-2. Enter name to search in the text field. Press Enter key.
-The search results are displayed.
+**Search Tag** - search for devices with the specified tag name
+1.	Click on the magnifying glass at the top left above the table. Select Tags.
+2.	Enter the tag to search in the field and click the Search button. While typing, existing tag names may appear – the desired tag can be selected.
 
-Note: When the checkbox in the table header is ticked, it selects all batteries listed in the page. At the bottom left of the dashboard, select the "rows per page" drop-down and choose the value to increase the number of batteries displayed in the dashboard.
+##Export Data
+An device report can be generated for inventory and tracking. In the **Active** tab, tap on the Export Data icon at the top right of the table and click on CSV to export the device information in .csv file format.
+
+##Manage Users
+Create additional users to access the server. After logging in as the administrator, click on the admin name at the top right of the Admin View and select **Manage Users**.
+
+To add a user:
+
+1. Click on the **Action** button.
+2. Select **Add User**.
+3. Enter in the required fields. Select the Access Type based on role:
+     * Admin - administrative privileges with ability to create user accounts, perform actions, and view data
+     * Manager - ability to perform actions, but cannot create users nor perform any user management
+     * User - ability to view data
+4. Click Save.
+5. Click OK when the confirmation message appears.
+
+<br>
+<br>
+
+Note: 
+* When the checkbox in the table header is ticked on the dashboard, it selects all batteries listed in the page. 
+* At the bottom left of the dashboard, select the "rows per page" drop-down and choose the value to increase the number of batteries displayed in the dashboard.
 
 <br>
 
@@ -65,8 +109,7 @@ Note: When the checkbox in the table header is ticked, it selects all batteries 
 
 ## See Also
 
-* [About PowerPrecision Console](../about)
-* [PowerPrecision Console Install & Setup](../setup)
-* [Battery Management](../mgmt)
-* [EOL Management](../eol)
+* [About Device Tracker](../about)
+* [Install & Setup](../setup)
+* [Device Management](../mgmt)
 * [Configuration](../config)

@@ -9,18 +9,17 @@ productversion: '1.0'
 Device Tracker server runs on a Windows-based server or desktop. The Device Tracker client runs on supported [Zebra devices](../about/#supporteddevices). This section provides system requirements and instructions for install and setup for the solution.
 
 Solution components:
-* On-premise Device Tracker server (application server, database)
-* Web portal (user management, application and device settings, administrative functions)
-* Device Tracker client (on device)
-* Mobile device
-* Other: SSL certificate (procured by a signed Certificate Authority) configured on server for secure HTTPS communication, enabled outgoing and incoming ports on server
+* On-premise Device Tracker server (application server with database)
+* Web portal (dashboard, user management, settings, administrative functions)
+* Device Tracker client on mobile device
+* Other: 
+ * SSL certificate (procured by a signed Certificate Authority) configured on server for secure HTTPS communication
+ * Open incoming and outgoing ports on server for communication through the firewall
 
 > Important: An SSL Certificate is required from a third party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non-third party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
 
-Device Central supports a maximum of 10,000 devices per installation.
-
 ##System Requirements
-This section provides the server and device requirements.
+This section provides the server and device requirements. Device Central supports a maximum of 10,000 devices per installation.
 
 ###Server Requirements
 1. Windows Operating Systems supported:
@@ -277,8 +276,7 @@ Steps for remote configuration deployment with CSP and EMM:
 
 ## See Also
 
-* [About PowerPrecision Console](../about)
+* [About Device Tracker](../about)
 * [Admin View](../admin)
-* [Battery Management](../mgmt)
-* [EOL Management](../eol)
+* [Device Management](../mgmt)
 * [Configuration](../config)

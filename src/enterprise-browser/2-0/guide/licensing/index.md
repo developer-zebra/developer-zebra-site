@@ -74,7 +74,6 @@ The user can specify the unique URL and the name of the proxy server and add it 
  2. **Tap License Source to select license type and server connectivity option** (or tap "+" to add a new source). 
  3. **Tap SUBMIT** button.<br> 
  If prompted to set device clock, **Tap "Continue"**. The "Activation" screen reappears. 
-
 <img alt="" style="height:350px" src="5.png"/>
 <br>
 4. **Enter or scan the license key for the device**. <br>
@@ -90,25 +89,64 @@ Successful license activation is indicated by a screen similar to the image belo
 
 -----
 
-## Local Server
+## Offline Licensing
+License Manager provides two licensing options for organizations that employ devices in areas that lack access with the public cloud: 
 
-If infrastructure connectivity prevents access to the public cloud, the Local License Server option enables organizations to employ an on-premise server to distribute licenses to devices without accessing the internet. 
+* Local Server
+* Pre-activated Licenses
 
-**To Enable a Local Server**: 
+### Local Server
+The Local License Server option enables organizations to employ an on-premise server to distribute licenses to devices without accessing the internet. This option requires software installed on a company's own IP-based Linux or Windows server in advance of license distribution to devices. 
 
-1. 
 
+**To License from a Local Server**: 
+
+1. **Tap Local Server** from the License Source drop-down.<br> 
+A screen appears as below.
 <img alt="" style="height:350px" src="local_server.png"/>
 <br>
+2. **Enter the server URL, provide a name and tap SUBMIT**.   
+3. **Enter or scan the license key for the device**. <br>
+Then **Tap Activate**. 
+<img alt="" style="height:350px" src="6a.png"/>
+<br>
 
-the on-premise server setup such as the unique URL and the name used to identify the server as shown in the
-figure below. This adds a new License Source that is saved for future license operations.
+Successful license activation is indicated by a screen similar to the image below: 
+<img alt="" style="height:350px" src="7.png"/>
+<br>
+
+#### The device is now licensed to use Enterprise Browser 2.0. 
+
+### Pre-activated Licenses
+The pre-activated license option allows organizations to log into the Zebra Software Licensing Portal and download a binary license file **created for a device with a specific ID**. This file is pushed to the device and installed, and **fails if installed on any other device**. 
+
+**To Apply a Pre-activated License**:
+
+<u>After the binary license file has been pushed to the device</u>: 
+
+1. **Tap "Preactivated"** from the License Source drop-down.<br> 
+A screen appears as below, left.
+<img alt="" style="height:350px" src="10.png"/>
+<br>
+2. **Select "Production Cloud"** from the Preactivated Source drop-down.<br>
+Then **tap SUBMIT**.
+<img alt="" style="height:350px" src="11.png"/>
+<br>
+3. The "Activate License" screen appears. **Tap the navigation (...) button**. 
+<img alt="" style="height:350px" src="11a.png"/>
+<br>
+4. 
+<img alt="" style="height:350px" src="12,13,14.png"/>
+<br>
+5. stuff
 
 
+If the user wants to enable an entitlement via a pre-activated license, this option should be chosen under Select
 
-## Pre-activated Licenses
-
-To license a device without connecting to a server, Zebra offers 
+License Source drop-down list with the Production Cloud as the Preactivated Source.
+The user cannot add any license source under this option.
+This option also caters to an enterprise wide license that serves as a pre-activated license for a set of devices
+offered to select software SKUs.
 
 To activate a pre-activated license (offline activation) for any of the Zebra Software Products, follow the steps given below:
 
@@ -124,10 +162,6 @@ Select pre-activated Source: The pre-activated source is either the Production C
 
 FIGURES 10, 11
 
-
-<img alt="" style="height:350px" src="10.11.png"/>
-_Unlicensed version_
-<br>
 
 
 Select the License Binary File: The user can click on the (…) browse button denoted by three dots beside the license input field. On clicking the button for the first time on the device, the user will be prompted with a runtime permission dialog asking for Storage permission only on devices running Android 6.0 (Marshmallow) and higher only as shown in Figure 12. In order to select a license binary file from the device, the user has to grant the storage permission for the License Manager application. This permission dialog will not be shown on subsequent selections if the permission is granted. On granting the storage permissions, the user will be prompted with a file picker to select a valid license binary file as shown in Figure 13.  On selecting a valid license binary file, the path of the binary file will be shown in the Select the License Binary file input field as shown in Figure 14. Note that this field will be populated automatically based on the path of the license binary file chosen and the user cannot edit the value of this field.

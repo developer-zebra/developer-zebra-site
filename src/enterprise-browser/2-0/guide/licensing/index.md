@@ -124,22 +124,26 @@ The pre-activated license option allows organizations to log into the Zebra Soft
 
 <u>After the binary license file has been pushed to the device</u>: 
 
-1. **Tap "Preactivated"** from the License Source drop-down.<br> 
-A screen appears as below, left.
+1. **Tap "Preactivated"** from the License Source drop-down. A screen appears as below.<br>
+**Select "Production Cloud"** from the Preactivated Source drop-down. <br>
+Then **tap SUBMIT**.
 <img alt="" style="height:350px" src="10.png"/>
 <br>
-2. **Select "Production Cloud"** from the Preactivated Source drop-down.<br>
-Then **tap SUBMIT**.
+2. The "Activate License" screen appears. **Tap the navigation (...) button**. <br>
 <img alt="" style="height:350px" src="11.png"/>
 <br>
-3. The "Activate License" screen appears. **Tap the navigation (...) button**. 
-<img alt="" style="height:350px" src="11a.png"/>
-<br>
-4. 
+3. **Tap "ALLOW"** to grant License Manager permission to access files (if prompted).<br>
+**Navigate to the binary file** pushed earlier to the device.<br>
+Then **tap ACTIVATE**.
 <img alt="" style="height:350px" src="12,13,14.png"/>
 <br>
-5. stuff
+Successful license activation is indicated by a screen similar to the image below: 
+<img alt="" style="height:350px" src="7.png"/>
+<br>
 
+#### The device is now licensed to use Enterprise Browser 2.0. 
+
+-----
 
 If the user wants to enable an entitlement via a pre-activated license, this option should be chosen under Select
 

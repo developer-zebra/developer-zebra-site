@@ -41,36 +41,40 @@ This section describes the process for activating a license on a single device. 
 
 #### License Source Types
 * **Cloud-based server** (internet connection required)
- * Production Cloud Direct
- * Test Cloud Direct
- * Production Cloud Through Proxy
- * Test Cloud Through Proxy
 * **Local (on-premise) Server**
- * Linux
- * Windows
-* **Preactivated**  
+* **Pre-activated**  
 
-Cloud-based licensing sources include "Production Cloud Direct" and "Test Cloud Direct" servers are the default types. Select accordingly if the organization is using a proxy. Select "Local Server" (on-premise server) based license sources using the steps mentioned here. When a new license source is added under proxy server, custom server and local server options, the name of the server will be available as an option in the Select License Source drop down list.
+#### Connectivity Options
+* **Production Cloud Direct -** For directly activating the licenses from the web-based default Zebra Licensing Server. This maps to a built-in URL so the user is not required to configure anything.
+* **Test Cloud Direct - For Zebra internal use only**.
+* **Production Cloud Through Proxy -** For connecting to the web-based Zebra Licensing Server via proxy server.
+The user can specify the unique URL and the name of the proxy server and add it as a separate license source.
+* **Test Cloud Through Proxy - For Zebra internal use only**.
+* **Custom Cloud -** If a custom or relay server is used to manage licensing, a unique URL and server name can be added as a separate license source to appear in future source lists. **Reserved for future use**. 
 
-b. Enter or Scan License: A valid activation (rights) id of the license has to be entered in this field either by manually entering the id or by scanning the license.
+-----
 
+##### IMPORTANT
+* Before beginning, confirm that the date is set correctly on the device to ensure proper behavior.
 
+##### Additional Notes
+* License sources added using this process are available for selection in the "Select License Source" drop down list.
+* License barcodes are not provided by Zebra; they must be created by the licensee.
 
 **To activate a device license**:  
-
-**IMPORTANT**: Before beginning, confirm that the date is set correctly on the device to ensure proper licensing behavior.
 
 1. Locate and **launch the License Manager** app:
 <img alt="" style="height:350px" src="eb20_licensemgrapp.png"/>
 <br>
-2. The License Manager splash screen appears. **Tap the floating action button**:
+2. The License Manager active licenses screen appears. **Tap the floating action button**:
 <img alt="" style="height:350px" src="license_manager_splash.png"/>
 <br>
 3. When the Activation screen appears: 
  1. **Leave license key field blank** (for now). 
- 2. **Tap License Source to select license type and server connectivity**. 
+ 2. **Tap License Source to select license type and server connectivity option** (or tap "+" to add a new source). 
  3. **Tap SUBMIT** button.<br> 
- If prompted to set device clock, **Tap "Continue"**. The Activation screen reappears. 
+ If prompted to set device clock, **Tap "Continue"**. The "Activation" screen reappears. 
+
 <img alt="" style="height:350px" src="5.png"/>
 <br>
 4. **Enter or scan the license key for the device**. <br>
@@ -78,47 +82,35 @@ Then **Tap Activate**.
 <img alt="" style="height:350px" src="6.png"/>
 <br>
 
-A screen similar to the image below appears to indicate successful license activation. 
+Successful license activation is indicated by a screen similar to the image below: 
 <img alt="" style="height:350px" src="7.png"/>
 <br>
 
-#### The device is now licensed. 
+#### The device is now licensed to use Enterprise Browser 2.0. 
 
 -----
 
-## `TO BE REVISED`
+## Local Server
+
+If infrastructure connectivity prevents access to the public cloud, the Local License Server option enables organizations to employ an on-premise server to distribute licenses to devices without accessing the internet. 
+
+**To Enable a Local Server**: 
+
+1. 
+
+<img alt="" style="height:350px" src="local_server.png"/>
+<br>
+
+the on-premise server setup such as the unique URL and the name used to identify the server as shown in the
+figure below. This adds a new License Source that is saved for future license operations.
 
 
-  a. Select License Source: A valid License Source has to be chosen against which the license has to be activated.
 
-The user can choose from the below license source types from the Select  License Source drop down list for activating a license online.
+## Pre-activated Licenses
 
+To license a device without connecting to a server, Zebra offers 
 
-
-4. After selecting a valid License Source, click on the Submit button.
-
-5. On clicking the Submit button, a dialog box is shown to the user which informs about the impact of not setting the system time correctly as shown in Figure 7. This dialog box is displayed both in online and pre-activated license activation scenarios. The user can tick the Don’t ask again checkbox to hide the dialog box on the future license activation.
-
-6. The Application validates the information and connects to the selected License Source as shown in Figure 8 and displays whether the license activation was successful or not.
-
-7. If the license activation is successful, License activation successful toast message is shown and the activated license information is displayed in the form of a card in the Home screen as                      shown in Figure 9. Details about the license information in the Home Screen can be found here.
-
-8. All the license rights displayed in the Home Screen are available for acquisition on the device.
-
-IMAGE: Twin "activate license" screens plus getting license, and showing licended device. 
-
-
------
-
-5,6,7.png
-6-9+flow.png
-8,9.png
-8.9.png
-
-
-## Preactivated Licenses
-
-To activate a preactivated license (offline activation) for any of the Zebra Software Products, follow the steps given below:
+To activate a pre-activated license (offline activation) for any of the Zebra Software Products, follow the steps given below:
 
 Start the License Manager application.
 Click the floating action button on the Opening/Home screen. This will open the Activation screen as shown in Figure 5.
@@ -127,8 +119,8 @@ This page has the following input fields, where the information needs to be adde
 
 Note: Always choose the type of the license source under Select License Source option prior to inputting any data in the license field above. 
 
-Select License Source: If the user wants to activate a license offline, then the Preactivated option has to be chosen under Select License Source drop down list and a preactivated source has to be chosen under Select Preactivated Source dropdown list as shown in Figure 10.
-Select Preactivated Source: The preactivated source is either the Production Cloud or Tet Cloud which depends on whether the license binary file was downloaded from Production Cloud Portal or Test Cloud Portal.
+Select License Source: If the user wants to activate a license offline, then the Pre-activated option has to be chosen under Select License Source drop down list and a pre-activated source has to be chosen under Select "Pre-activated Source" dropdown list as shown in Figure 10.
+Select pre-activated Source: The pre-activated source is either the Production Cloud or Tet Cloud which depends on whether the license binary file was downloaded from Production Cloud Portal or Test Cloud Portal.
 
 FIGURES 10, 11
 
@@ -147,7 +139,7 @@ _Unlicensed version_
 <br>
 
 After selecting a valid License Source, click on the Submit button.
-On clicking the Submit button, a dialog box is shown to the user which informs about the impact of not setting the system time correctly. This dialog box is displayed both in online and preactivated license activation scenarios. The user can tick the Don’t ask again checkbox to hide the dialog box on the future license activations.
+On clicking the Submit button, a dialog box is shown to the user which informs about the impact of not setting the system time correctly. This dialog box is displayed both in online and pre-activated license activation scenarios. The user can tick the Don’t ask again checkbox to hide the dialog box on the future license activations.
 The Application processes the license binary file and displays whether the license activation was successful or not.
 If the license activation is successful, the activated license information is displayed in the form of a card in the Home screen as shown in Figure 9. Details about the license information in the Home Screen can be found here.
 All the license rights displayed in the Home Screen are available for acquisition on the device.
@@ -161,7 +153,7 @@ Select License Source: This field lists all the license sources available on the
 
 2)      Local Server
 
-3)      Preactivated
+3)      Pre-activated
 
 FIGURE 15
 
@@ -187,7 +179,7 @@ ii)                   Local Server: This license source option corresponds to th
 
  
 
-iii)                 Preactivated: If the user wants to activate a preactivated license, this option has to be chosen under Select License Source drop down list and a valid preactivated source has to be chosen under Select Preactivated Source dropdown menu as shown in Figure 23. The preactivated source is either the Production Cloud or Test Cloud which depends on whether the license binary file was downloaded from Production Cloud Portal or Test Cloud Portal. The user cannot add any license source under this option.
+iii)                 Pre-activated: If the user wants to activate a pre-activated license, this option has to be chosen under Select License Source drop down list and a valid pre-activated source has to be chosen under Select Pre-activated Source dropdown menu as shown in Figure 23. The pre-activated source is either the Production Cloud or Test Cloud which depends on whether the license binary file was downloaded from Production Cloud Portal or Test Cloud Portal. The user cannot add any license source under this option.
 
 The user has the provision to add new license sources of the proxy servers (Production Cloud Through Proxy or Test Cloud Through Proxy), Custom Cloud server (Relay server) and Local (On-Premise Server) server based license sources using the steps mentioned here. Note that all the license sources added by the user are read only. The name of all the license sources added by the user will be displayed in this field below the above three options.
 
@@ -483,7 +475,7 @@ Perpetual License
 Licensing Methods
 Cloud Activation : user can activate a license via internet
 LLS Activation : user can host a local license server in their premises to activate a license
-PreActivated License: User can activate a license using preactivated binary license file.
+PreActivated License: User can activate a license using pre-activated binary license file.
 To know more about licensing methods please visit below link
 {eddy to add link}
 Cloud Activation supports proxy servers, to know more about various proxy type configuration supported by Licensing Tools (LicenseManager), please visit below link
@@ -495,7 +487,7 @@ Please click the below link to contact Zebra Software Licensing team for license
 {eddy to add link for perpetual}
 
 Transferring License
-Enterprise Browser does not support transferring a preactivated license. It supports transferring a license from one device to another if and only if license is activated via cloud or LLS. In this case user can return an activated license back to the pool (not applicable for preactivated license) and released license can be activated on a new device.
+Enterprise Browser does not support transferring a pre-activated license. It supports transferring a license from one device to another if and only if license is activated via cloud or LLS. In this case user can return an activated license back to the pool (not applicable for pre-activated license) and released license can be activated on a new device.
 To know more about returning a license back to cloud/LLS license pool is explained more here
 {eddy to add link for Return license feature}
 

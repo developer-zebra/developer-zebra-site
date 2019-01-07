@@ -5,10 +5,11 @@ product: Enterprise Browser
 layout: guide.html
 ---
 
-> **Note: The Enterprise Browser 2.0 licensing process is all new**. 
-
 ## Overview 
 Enterprise Browser is free to download and use for evaluation purposes. Commercial deployment to devices requires an End-User License issued by Zebra Technologies for each device. Licenses are available for individual devices and for site deployments of 50 devices or more. Both license types permit an unlimited number of Enterprise Browser-based apps to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license to individual devices and as part of a mass-deployment.
+
+
+> **Note: The licensing process for Enterprise Browser 2.0 (and higher) is all new**. Apps running on EB versions prior to v2.0 must be updated using new licensing procedures. 
 
 -----
 
@@ -31,48 +32,68 @@ _Perpetually licensed version_
 ### Requirements
 * Zebra device with License Manager app (pre-installed on supported devices)
 * Internet connection (for online license activation)
-* For cloud-based licensing, any **ONE** of the following: 
- * Back Office Server, proxy server or a custom relay server
-* Or, a Windows or Linux server for on-premise licensing 
+* Linux or Windows server (for on-premise licensing) 
 
 -----
 
 ## Manual Licensing
-This section describes the process for activating a license on a single device. To remotely activate multiple licenses for an entire organization, please refer to the [mass-deployment section](#massdeployment). 
+This section describes the process for activating a license on a single device. To remotely activate multiple licenses for an entire organization, see [mass-deployment](#massdeployment). 
+
+#### License Source Types
+* **Cloud-based server** (internet connection required)
+ * Production Cloud Direct
+ * Test Cloud Direct
+ * Production Cloud Through Proxy
+ * Test Cloud Through Proxy
+* **Local (on-premise) Server**
+ * Linux
+ * Windows
+* **Preactivated**  
+
+Cloud-based licensing sources include "Production Cloud Direct" and "Test Cloud Direct" servers are the default types. Select accordingly if the organization is using a proxy. Select "Local Server" (on-premise server) based license sources using the steps mentioned here. When a new license source is added under proxy server, custom server and local server options, the name of the server will be available as an option in the Select License Source drop down list.
+
+b. Enter or Scan License: A valid activation (rights) id of the license has to be entered in this field either by manually entering the id or by scanning the license.
+
+
 
 **To activate a device license**:  
 
-1. Locate and launch the License Manager app:
+**IMPORTANT**: Before beginning, confirm that the date is set correctly on the device to ensure proper licensing behavior.
+
+1. Locate and **launch the License Manager** app:
 <img alt="" style="height:350px" src="eb20_licensemgrapp.png"/>
 <br>
-2. Click the floating action button on the splash screen:
+2. The License Manager splash screen appears. **Tap the floating action button**:
 <img alt="" style="height:350px" src="license_manager_splash.png"/>
 <br>
-3. The Activation screen appears (as below). **Tap to select the License Source** from the drop-down list. <br>
-Then tap ACTIVATE.
+3. When the Activation screen appears: 
+ 1. **Leave license key field blank** (for now). 
+ 2. **Tap License Source to select license type and server connectivity**. 
+ 3. **Tap SUBMIT** button.<br> 
+ If prompted to set device clock, **Tap "Continue"**. The Activation screen reappears. 
 <img alt="" style="height:350px" src="5.png"/>
 <br>
+4. **Enter or scan the license key for the device**. <br>
+Then **Tap Activate**. 
+<img alt="" style="height:350px" src="6.png"/>
+<br>
+
+A screen similar to the image below appears to indicate successful license activation. 
+<img alt="" style="height:350px" src="7.png"/>
+<br>
+
+#### The device is now licensed. 
+
+-----
 
 ## `TO BE REVISED`
 
-
-Note: Choose the type of the license source under Select License Source option prior to typing any data in the license field above.
 
   a. Select License Source: A valid License Source has to be chosen against which the license has to be activated.
 
 The user can choose from the below license source types from the Select  License Source drop down list for activating a license online.
 
-License Source Types:
 
-i) Cloud
-
-ii) Local Server
-
-The user has the provision to choose:
-
-The existing default cloud license sources (Production Cloud Direct/Test Cloud Direct servers which are the default Back-Office Servers) with Cloud as the License Source type using the steps mentioned here
-Add new Proxy servers (Production Cloud Through Proxy/Test Cloud Through Proxy servers), Custom Cloud server (Relay server) and LocalServer (On-Premise Server) based license sources using the steps mentioned here. When a new license source is added under proxy server, custom server and local server options, the name of the server will be available as an option in the Select License Source drop down list.
-  b. Enter or Scan License: A valid activation (rights) id of the license has to be entered in this field either by manually entering the id or by scanning the license.
 
 4. After selecting a valid License Source, click on the Submit button.
 

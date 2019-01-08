@@ -53,10 +53,8 @@ See all [supported Zebra devices](../about#mobile).
 
 ### New Features
 
-* **Now supports [Hardware Key Remapping](../keycapture/mappinghardwarekeys) -** 
-
+* **Now supports [Hardware Key Remapping](../keycapture/remappinghardwarekeys) -** to allow hardware keys of certain Zebra devices to be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. 
 * Android apps running on **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** such as those for the device's "primary directory" (%PRIMARYDIR%) and an app's "install directory" (%INSTALLDIR%) in place of fully qualified (absolute) path names. This can help make coding easier and less error prone while simplifying enterprise deployment across varied devices. **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
-
 * **EB 2.0 and higher also supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 
 
 ### API Enhancements
@@ -74,7 +72,8 @@ OLD OLD OLD >> including the following new callback parameters and properties ad
 
 ### New/Updated Features/Guides
 
-* **A new [Backward Compatibility Guide](../sap)** explains the minor adjustments required to avoid rendering and other issues when moving older apps EB 2.0. 
+* **An all-new [Licensing Guide](../licensing)** describes the new processes for licensing EB apps on a device and across an organization. 
+* **A new [Backward Compatibility Guide](../backward)** explains the minor adjustments required to avoid rendering issues and other problems when moving older apps to EB 2.0. 
 * **A new [DataWedge Intents User Guide](../dwintents)** covers programmatic control of DataWedge from within an EB app.   
 * **[Page-based Actions Guide](../pageactions)** defines a new set of actions that can execute JavaScript code or predefined commands whenever certain conditions are found on a page. 
 * A new **[Voice Input/Output Guide](../voice)** describes how to use Page-based actions to enable voice input in an app. 

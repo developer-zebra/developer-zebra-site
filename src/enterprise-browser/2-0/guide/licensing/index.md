@@ -8,6 +8,8 @@ layout: guide.html
 ## Overview 
 Enterprise Browser is free to download and use for evaluation purposes. Commercial deployment to devices requires an End-User License issued by Zebra Technologies for each device. Licenses are available for individual devices and for site deployments of 50 devices or more. Both license types permit an unlimited number of Enterprise Browser-based apps to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license to individual devices and as part of a mass-deployment.
 
+Android LicMgr 3.1.1 or higher (pre-installed on device)
+Windows Mobile/CE LicMgr 1.0 (included in MSI)
 
 > **Note: The licensing process for Enterprise Browser 2.0 (and higher) is all new**. Apps running on EB versions prior to v2.0 must be updated using new licensing procedures. 
 
@@ -37,41 +39,39 @@ _Perpetually licensed version_
 -----
 
 ## Manual Licensing
-This section describes the process for activating a license on a single device. To remotely activate multiple licenses for an entire organization, see [mass-deployment](#massdeployment). 
+This section describes the process for activating a license on a single device. To remotely activate multiple licenses for an entire organization, see the [Mass Deployment section](#massdeployment) of this guide. 
 
 #### License Source Types
 * **Cloud-based server** (internet connection required)
-* **Local (on-premise) Server**
-* **Pre-activated**  
+* **Local server** (on customer premises)
+* **Pre-activated** (binary file pushed to device) 
 
 #### Connectivity Options
-* **Production Cloud Direct -** For directly activating the licenses from the web-based default Zebra Licensing Server. This maps to a built-in URL so the user is not required to configure anything.
+* **Production Cloud Direct -** License Manager maps automatically to web-based Zebra Licensing Server to activate licenses; no server configuration required.
+* **Production Cloud Through Proxy -** License Manager maps automatically to web-based Zebra Licensing Server through customer's on-premise proxy server. Requires configuration of proxy server settings. 
+* **Custom Cloud -** **Reserved for future use**. <!-- If a custom or relay server is used to manage licensing, a unique URL and server name can be added as a separate license source to appear in future source lists.   -->
 * **Test Cloud Direct - For Zebra internal use only**.
-* **Production Cloud Through Proxy -** For connecting to the web-based Zebra Licensing Server via proxy server.
-The user can specify the unique URL and the name of the proxy server and add it as a separate license source.
 * **Test Cloud Through Proxy - For Zebra internal use only**.
-* **Custom Cloud -** If a custom or relay server is used to manage licensing, a unique URL and server name can be added as a separate license source to appear in future source lists. **Reserved for future use**. 
 
 -----
 
 ##### IMPORTANT
-* Before beginning, confirm that the date is set correctly on the device to ensure proper behavior.
-
-##### Additional Notes
-* License sources added using this process are available for selection in the "Select License Source" drop down list.
-* License barcodes are not provided by Zebra; they must be created by the licensee.
-
+* **To ensure proper behavior, confirm that the date is set correctly on the device before beginning**. 
+* **License-key barcodes are not provided by Zebra**; they must be created by the licensee.
+<!-- * License sources added using this process are subsequently available for selection in the "Select License Source" drop down list.
+ -->
 **To activate a device license**:  
 
 1. Locate and **launch the License Manager** app:
 <img alt="" style="height:350px" src="eb20_licensemgrapp.png"/>
 <br>
-2. The License Manager active licenses screen appears. **Tap the floating action button**:
+2. On launch, License Manager displays active licenses (if any).<br> 
+**Tap the floating action button**:
 <img alt="" style="height:350px" src="license_manager_splash.png"/>
 <br>
 3. When the Activation screen appears: 
  1. **Leave license key field blank** (for now). 
- 2. **Tap License Source to select license type and server connectivity option** (or tap "+" to add a new source). 
+ 2. **Tap "Select License Source"**and select desired options. 
  3. **Tap SUBMIT** button.<br> 
  If prompted to set device clock, **Tap "Continue"**. The "Activation" screen reappears. 
 <img alt="" style="height:350px" src="5.png"/>
@@ -90,16 +90,17 @@ Successful license activation is indicated by a screen similar to the image belo
 -----
 
 ## Offline Licensing
-License Manager provides two licensing options for organizations that employ devices in areas that lack access with the public cloud: 
+License Manager provides two licensing options for organizations that employ devices in areas that lack access to the public cloud: 
 
 * Local Server
-* Pre-activated Licenses
+* Pre-activated Licenses (future availability)
 
 -----
 
 ### Local Server
 The Local License Server option enables organizations to employ an on-premise server to distribute licenses to devices without accessing the internet. This option requires software installed on a company's own IP-based Linux or Windows server in advance of license distribution to devices. 
 
+For more information, including hardware requirements and setup instructions, refer to the [Local License Server Administration Guide (.pdf link to come)](LINK_TO_PDF_TO_COME). 
 
 **To License from a Local Server**: 
 
@@ -120,7 +121,7 @@ Successful license activation is indicated by a screen similar to the image belo
 #### The device is now licensed to use Enterprise Browser 2.0. 
 
 -----
-
+<!-- 
 ### Pre-activated Licenses
 The pre-activated license option allows organizations to log into the Zebra Software Licensing Portal and download a binary license file **created for a device with a specific ID**. This file is pushed to the device and installed, and **fails if installed on any other device**. 
 
@@ -146,9 +147,9 @@ Successful license activation is indicated by a screen similar to the image belo
 <br>
 
 #### The device is now licensed to use Enterprise Browser 2.0. 
-
+ -->
 -----
-
+<!-- 
 ## `TO BE MODIFIED`
 
 If the user wants to enable an entitlement via a pre-activated license, this option should be chosen under Select
@@ -539,7 +540,7 @@ Enterprise Browser License Screen
 Unlicensed Screen
 If user has not activated any licenses, user may see an unlicensed screen
 If user had activated a trial license and if it has expired, user may see an unlicensed screen.
-
+ -->
 
 -----
 

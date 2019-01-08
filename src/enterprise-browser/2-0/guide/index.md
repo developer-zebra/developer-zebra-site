@@ -40,8 +40,10 @@ automenu:
           url: voice
     - title: Application Usage
       items:
-        - title: DataWedge
+        - title: Using DataWedge on EB 1.8
           url: datawedge
+        - title: Using DataWedge Intents (EB 2.0 and up)
+          url: dwintents
         - title: DOM Injection
           url: dom
         - title: Feature Demo app
@@ -68,7 +70,7 @@ automenu:
       items:
         - title: Migration Overview
           url: migration
-        - title: From EB 1.8 and Older 
+        - title: From EB 1.8 and Older (backward compat.)
           url: backward
         - title: From PocketBrowser
           url: pb2

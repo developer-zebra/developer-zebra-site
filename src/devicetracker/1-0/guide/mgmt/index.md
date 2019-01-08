@@ -29,8 +29,9 @@ The associate assigned to search the device opens the Device Tracker client on t
 3. [Client] Walk towards the AP zone. Tap **Go** button to begin the device search. <br>
 [Admin] On the admin dashboard, the device changes state from "To be Found" to "Being Found". 
 4. [Client] The BLE proximity meter appears in the device client showing the approximate distance (in meters) between the device conducting the search and the missing device.  The animation and color changes as the user moves closer (green) or further away (red) from the device being searched. 
+<!-- **placeholder for image**
 ![img](SOH.jpg)
-_Figure 1. SOH_
+_Figure 1. SOH_ -->
 5. [Client] Tap “Play Sound” to hear an audio sound on the misplaced device to further isolate the device location.  
 6. [Client] Once found, tap **Device found** at the bottom of the screen. Some devices may require the user to scroll down the screen for the button to be visible.  
 [Admin] On the dashboard, the device status changes from “Being found” to “Device has been found”. 
@@ -42,7 +43,7 @@ Once the device is found, the admin can then take action to set the device back 
 2. In the Action menu, select “Set device to: Active”. 
 The device is moved out of the "Found" state into the "Active" state. 
 
-**Cannot find device:**
+**Cannot find device:** <br><br>
 If the device cannot be located, in step 6 above tap on "Cannot find" and proceed to step 7 to tap "Yes" to the confirmation message. On the admin dashboard, the device status is changed from "Being found" to "Cannot find". 
 
 <sup>[1]</sup> Note: Depending on when the device being searched for had last reported to the server, it may take at most the specified Reporting Frequency time (from Settings in the web portal) to elapse before the target device is listed in “Device to be found” table in the client app. Subsequently, once a device is in the “To be found” state, the reporting frequency is automatically changed to 30 seconds until the device has been found. For example, if Device A is flagged “To be found” and the following conditions exist: Reporting Frequency is set to 5 minutes and Device A reported to the server a few seconds ago (as seen in the Updated column on the dashboard), then 5 minutes need to elapse (the next time the device is reporting into the server) before the data is synchronized with the server to notify Device B that Device A is to be found, thereby listing Device A in the “Device to be found” table on the client app.

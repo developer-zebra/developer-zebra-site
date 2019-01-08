@@ -169,11 +169,16 @@ E. Click the Scan button. A successful result returns green checks for each step
 _Figure 1. SSLTools.com results_
 
 ##Client Install & Setup
-Install PPC client on the supported Zebra devices to register the device, upload device battery data and display end-of-life (EOL) battery alerts. The device must be connected to the same network as the server. The server address needs to be configured on the PPC client to communicate with the PPC Server. PPC client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management).
+Install Device Tracker client on the supported Zebra device to register the device and upload data to the server. Client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management). Requirements for Device Tracker client:
+* The device is connected to the same network as the server. 
+* The server address is configured in the Device Tracker client to communicate with the server. 
+* Zebra Data Service agent is running on the device. This agent collects data from the device and sends it to the Device Tracker server.
+* Bluetooth radio is enabled on the device. BLE (Bluetooth Low Energy) beacons are used to locate devices.
+
 
 ###Installation
 Steps for client installation:
-1. Download PPCClient.zip from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
+1. Download Device Tracker client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
 2. Install PowerPrecisionConsole.apk. 
    * For Android Marshmallow and Nougat devices, install the .APK located in folder PPCClient\Client\M_N.
    * For Android Oreo devices, install the .APK located in folder PPCClient\Client\O.

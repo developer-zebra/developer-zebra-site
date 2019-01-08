@@ -6,11 +6,12 @@ layout: guide.html
 ---
 
 ## Overview 
-**Beginning with EB 2.0, licensing of Enterprise Browser has changed**. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid. <u>**Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>.  
+**Beginning with EB 2.0, licensing of Enterprise Browser has changed**. <u>**Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid.
 
 As always, Enterprise Browser is free to download and use for evaluation purposes. Commercial deployment to devices requires an End-User License issued by Zebra Technologies for each device. Licenses are available for individual devices and for site deployments of 50 devices or more. Both license types permit an unlimited number of Enterprise Browser-based apps to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license to individual devices and as part of a mass-deployment.
 
 ### Requirements
+* One or more licenses purchased from the [Zebra Licensing Portal](https://www.zebra.com/us/en/support-downloads/software-licensing.html)
 * Zebra device with License Manager app on device:
  * Android requires License Manager 3.1.1 or higher (pre-installed on supported devices)
  * Windows Mobile/CE requires License Manager 1.0 or higher (included with installation package)

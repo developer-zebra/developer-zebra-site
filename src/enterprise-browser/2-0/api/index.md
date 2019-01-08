@@ -24,6 +24,8 @@ automenu:
           url: barcode
         - title: Battery
           url: battery
+        - title: Bluetooth
+          url: bluetooth
         - title: Camera
           url: camera
         - title: CardReader

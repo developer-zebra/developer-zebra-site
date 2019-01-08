@@ -53,171 +53,104 @@ See all [supported Zebra devices](../about#mobile).
 
 ### New Features
 
-* **Now supports [Hardware Key Remapping](../keycapture/remappinghardwarekeys) -** to allow hardware keys of certain Zebra devices to be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. 
-* Android apps running on **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** such as those for the device's "primary directory" (%PRIMARYDIR%) and an app's "install directory" (%INSTALLDIR%) in place of fully qualified (absolute) path names. This can help make coding easier and less error prone while simplifying enterprise deployment across varied devices. **Zebra recommends using substitution variables rather than absolute paths whenever possible**.
-* **EB 2.0 and higher also supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 
+* **Now supports [Hardware Key Remapping](../keycapture/#mappinghardwarekeys) -** to allow hardware keys of certain Zebra devices to be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. 
+* Android apps running on **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** to simplify file-path coding.
+* **EB 2.0 and higher now supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 
+* **An enhanced SAP support bundle** includes ready-to-use config files for SAP ITSmobile apps, simplifying device set-up for SAP customers. SAP config files can be modified for specific use cases. **SAP-specific features**:
+ * UI auto-customization via ViewPort
+ * SAP button height adjustment
+ * Ready-to-use function key layouts
+ * Transparent keyboards for WT6000
+ * Button keyboard show/hide feature mapped to hardware key
+ * Ready to use with DataWedge scanning 
+ * Ready-to-use indicator buttons
+ * Hardware keys remapped to quit, back, zoom in, zoom out actions
+ * Orientation can be locked in portrait or landscape modes
+ * Option to hide the system/nav bar (HOME, BACK and RECENT buttons)
 
-SAP Support Bundle 
-Now includes ready-to-use config files for SAP ITSmobile, simplifying device set-up for SAP customers
-SAP config files can be modified for specific use cases
-
-SAP-specific features and inclusions:
-UI auto-customization via ViewPort
-SAP button height adjustment
-Ready-to-use function key layouts
-Transparent keyboards for WT6000
-Button keyboard show/hide feature mapped to hardware key
-Ready-to-use with DataWedge scanning 
-Ready-to-use indicator buttons
-Hardware keys remapped to quit, back, zoom-in, zoom-out actions
-Orientation can be locked in portrait or landscape modes
-Option to hide the system/nav bar (HOME, BACK and RECENT buttons)
-
-
-### API Enhancements
+### New/Enhanced APIs
 
 The following new methods, properties and/or callbacks were added to Android APIs:
 
-**The [Barcode API](../../api/barcode)** includes enhancements to: 
-* **Aimtype** new properties:
+**The [Barcode API](../../api/barcode)** includes these enhancements: 
+* **New AimType properties**:
  * barcodeCount
  * characterSetSelection
  * autoCharacterSetFailureOption
  * triggerType
  * aimType: AIMTYPE_PRESS_AND_SUSTAIN
  * scanMode: MULTI_BARCODE
-* **New methods**:
+* **New AimType methods**:
  * setautoCharacterSetPreference()
  * getautoCharacterSetPreference() 
 
+**The [RFID API](../../api/re2x/rfid)** adds many new methods and properties and now supports the following RFID readers:
+* RFD8500
+* RFD2000
+* MC33 long- and mid-range RFID reader
+
+**A new [Bluetooth API](../../api/bluetooth)** allows Enterprise Browser apps to connect with disconnect from Bluetooth printers and scanners and to read from and write to them as applicable.
+
+**Enhancements to the [WebView API](../../api/webview)** include: 
+* **New Method**:
+ * captureWebPageScreen() 
+* **New Properties**:
+ * useWideViewPort 
+ * loadWithOverviewMode 
+* **Other configuration parameters**:
+ * &lt;ClearApplicationCacheOnLaunch &gt;
+ * &lt;ClearApplicationCacheOnExit &gt;
+ * &lt;DeleteCookiesOnLaunch &gt;
+ * &lt;VerifyClientCertificate&gt;
+ * &lt;DisplayZoomControls&gt;
+
 ### New/Updated Features/Guides
 
-* **New [Licensing Guide](../licensing)** describes the all-new processes for licensing EB apps on a device and across an organization. 
+* **An updated [Licensing Guide](../licensing)** describes the all-new processes for licensing EB apps on a device and across an organization. 
 * **New [Backward Compatibility Guide](../backward)** explains the minor adjustments required to avoid rendering issues and other problems when moving older apps to EB 2.0. 
 * **New [DataWedge Intents User Guide](../dwintents)** covers programmatic control of DataWedge from within an EB app.   
 * **New [Page-based Actions Guide](../pageactions)** defines a new set of actions that can execute JavaScript code or predefined commands whenever certain conditions are found on a page. 
 * A new **[Voice Input/Output Guide](../voice)** describes how to use Page-based actions to enable voice input in an app. 
-* **Enhanced [Key Remapping Guide](../keycapture/remappinghardwarekeys)** describes how to map hardware keys on the MX33xx, MC92N0 and VC80x devices running Android. 
+* **Enhanced [Key Remapping Guide](../keycapture/#mappinghardwarekeys)** describes how to map hardware keys on the MX33xx, MC92N0 and VC80x devices running Android. 
+* **Enhanced SAP support** includes SAP applications running Warehouse Management or Extended Warehouse Management apps as well as apps built with SAP’s UI5 SDKs and Fiori UX tools.
+* **Enhanced ButtonBar Features** include:  
+ * **Unicode support**, with special keys and characters from other languages in Basic Multilingual Plane.
+ * **New config parameters**: 
+ 	* &lt;ResizeOnButtonbar&gt;
+ 	* &lt;ButtonBarMaxHeight&gt;
+ * **New Button XML tags**: 
+ 	* &lt;buttonTextColor&gt;
+ 	* &lt;buttonTextStyle&gt;
+ 	* &lt;buttonFontSize&gt;
+ 	* &lt;buttonColor&gt;
+ 	* &lt;buttonColorPressed&gt;
+ 	* &lt;buttonTransparency&gt;
+ * **New Properties**:
+ 	* Show or Hide the layout using layout name
+ 	* buttonBarLayout enable/disable
 
-New Bluetooth API
-A new Bluetooth API allows Enterprise Browser apps to connect, disconnect, read from and write to Bluetooth devices such as printers and scanners. For more information, see the Bluetooth API page.
-
-RFID API Enhancements
-The RFID API adds many new methods and properties, and now supports the following RFID readers:
-RFD8500
-RFD2000
-MC33 long- and mid-range RFID
-For more information, see the RFID API page. 
-
-SAP WM/EWM Support 
-Now supports SAP applications running Warehouse Management or Extended warehouse management.
-
-SAP UI5/Fiori Support 
-Now supports apps built with SAP’s UI5 SDKs and Fiori UX tools.
-
-Barcode Enhancements 
-The Barcode API has been enhanced with the following interfaces: 
-Multi-barcode
-With support for the Multi-barcode feature, multiple barcodes can now be scanned in a single trigger press.
-Aimtype 
-New Properties:
-barcodeCount
-characterSetSelection
-autoCharacterSetFailureOption
-triggerType
-aimType
-AIMTYPE_PRESS_AND_SUSTAIN
-scanMode
-MULTI_BARCODE
-New Methods:
-setautoCharacterSetPreference()
-getautoCharacterSetPreference() 
-For details, see the Barcode API page. Applies to devices with EMDK 6.8 and higher only.
-
-
-
-ButtonBar Feature Enhancements 
-Unicode
-Now supports special keys and characters from other languages in Basic Multilingual Plane.
-New config parameters: 
-<ResizeOnButtonbar>
-<ButtonBarMaxHeight>
-
-New Button XML tags: 
-		:::xml
-		<buttonTextColor>
-		<buttonTextStyle>
-		<buttonFontSize>
-		<buttonColor>
-		<buttonColorPressed>
-		<buttonTransparency>
-
-New Properties:
-Show or Hide the layout using the layout name
-buttonBarLayout
-enabled
-disabled
-
-
+<!-- 
 Buttonbar Designer Utility:
 A new desktop tool (now in BETA) provides graphical UI for creating and modifying buttonbar layouts in the device.
 For more information, see the ButtonBar Usage Guide.
+-->
 
+* **Now supports [ViewPort](../configreference/#viewport) configuration parameters** for better screen fitting, including:
+ * &lt;UseWideViewPort&gt;
+ * &lt;ViewPortWidth&gt;
+ * &lt;ViewPortInitialScale&gt;
 
+* A new [&lt;LockOrientation&gt; configuration tag](../configreference/#lockorientation) automatically fits UI elements of EB apps. 
 
+* **Enhancements for [SAP apps](../sapandroid)** include new configuration tags for automatically adjusting UI elements in SAP ITSmobile apps for better auto-fitting:
+ * &lt;SapButtonHeight&gt;
+ * &lt;SapButtonFontSize &gt;
+ * &lt;MobileEditDisabledWidth&gt;
+ * &lt;SapForceFitToScreen&gt;
 
-
-
-WebView Feature Enhancements
-New Method:
-captureWebPageScreen() 
-
-New Properties:
-useWideViewPort 
-loadWithOverviewMode 
-
-Viewport Support
-New configuration parameters for better screen fitting:
-<UseWideViewPort>
-<ViewPortWidth>
-<ViewPortInitialScale>
-
- Other Webview configuration parameters:
- :::xml
-	<ClearApplicationCacheOnLaunch >
-	<ClearApplicationCacheOnExit >
-	<DeleteCookiesOnLaunch >
-	<VerifyClientCertificate>
-	<DisplayZoomControls>
-
-For details, see the WebView API page. 
-
-SAP UI Autofit
-New configuration tags automatically adjust UI elements in SAP ITSmobile apps without changing the SAP backend.
-
-	:::xml
-	<SapButtonHeight>
-	<SapButtonFontSize >
-	<MobileEditDisabledWidth>
-	<SapForceFitToScreen>
-
-For more information , see the SAP ITSmobile for Android Usage Guide.
-
-DOM Injection Enhancements 
-DOM injection feature has been further enhanced/simplified.
-Page Content Action
-A new pagecontent attribute allows DOM injection to occur only on HTML page(s) that contain unique text.
-Substitution Variable Support
-DOM injection now supports EB substitution variables, which simplifies the specification of file paths.
-
-For more information, see the SAP ITSmobile for Android Usage Guide.
-
-Other Configuration parametrs
-New configuration tags have been introduced to autofit the UI elements in EB apps. 
-< LockOrientationvalue >
-
-For more information, see the Config.xml reference page. 
-
+* **[DOM injection](../dom)** has been simplified and made more powerful with:
+ * Page-based Actions, which allow page contents to determine DOM injection.
+ * Support for EB substitution variables to simplify file-path coding.
 
 -----
 
@@ -429,7 +362,7 @@ For details, see the [Config.xml Reference](../configreference/#substitutionvari
 
 #### Web Security Features
 * **[&lt;ApplicationCacheEnabled&gt;](../configreference#applicationcacheenabled) -** allows an HTML5 app to be stored locally for off-line operation, improved speed and reduced server load.
-* **[&lt;ApplicationCacheOnExit&gt;](../configreference#applicationcacheonexit) -** controls whether to erase a cached HTML5 app upon exiting it. 
+* **[&lt;ApplicationCacheOnExit&gt;](../configreference#applicationcacheonexitdeprecated) -** controls whether to erase a cached HTML5 app upon exiting it. 
 * **[&lt;SetCacheMode&gt;](../configreference#setcachemode) -** controls rules for loading pages from cache vs. loading from the server.
 * **[&lt;DeleteCacheOnExit&gt;](../configreference#deletecacheonexit) -** controls whether to erase contents of the browser cache when exiting an app.
 * **[&lt;DomStorageEnabled&gt;](../configreference#domstorageenabled) -** controls whether application data is stored locally using HTML5 Web Storage.

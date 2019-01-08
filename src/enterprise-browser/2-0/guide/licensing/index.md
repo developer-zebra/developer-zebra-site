@@ -6,35 +6,16 @@ layout: guide.html
 ---
 
 ## Overview 
-Enterprise Browser is free to download and use for evaluation purposes. Commercial deployment to devices requires an End-User License issued by Zebra Technologies for each device. Licenses are available for individual devices and for site deployments of 50 devices or more. Both license types permit an unlimited number of Enterprise Browser-based apps to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license to individual devices and as part of a mass-deployment.
+**Beginning with EB 2.0, licensing of Enterprise Browser has changed**. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid. <u>**Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>.  
 
-Android LicMgr 3.1.1 or higher (pre-installed on device)
-Windows Mobile/CE LicMgr 1.0 (included in MSI)
-
-> **Note: The licensing process for Enterprise Browser 2.0 (and higher) is all new**. Apps running on EB versions prior to v2.0 must be updated using new licensing procedures. 
-
------
-
-<!-- 
-
-<img alt="" style="height:350px" src="eb20_unlicensed.png"/>
-_Unlicensed version_
-<br>
-
-
-<img alt="" style="height:350px" src="eb20_trial_license.png"/>
-_Trial license version_
-<br>
-
-<img alt="" style="height:350px" src="eb20_perpetual_license.png"/>
-_Perpetually licensed version_
-<br>
- -->
+As always, Enterprise Browser is free to download and use for evaluation purposes. Commercial deployment to devices requires an End-User License issued by Zebra Technologies for each device. Licenses are available for individual devices and for site deployments of 50 devices or more. Both license types permit an unlimited number of Enterprise Browser-based apps to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license to individual devices and as part of a mass-deployment.
 
 ### Requirements
-* Zebra device with License Manager app (pre-installed on supported devices)
-* Internet connection (for online license activation)
-* Linux or Windows server (for on-premise licensing) 
+* Zebra device with License Manager app on device:
+ * Android requires License Manager 3.1.1 or higher (pre-installed on supported devices)
+ * Windows Mobile/CE requires License Manager 1.0 or higher (included with installation package)
+* Internet connection (for online activation)
+* Linux or Windows server (for off-line activation) 
 
 -----
 
@@ -53,9 +34,7 @@ This section describes the process for activating a license on a single device. 
 * **Test Cloud Direct - For Zebra internal use only**.
 * **Test Cloud Through Proxy - For Zebra internal use only**.
 
------
-
-##### IMPORTANT
+#### IMPORTANT
 * **To ensure proper behavior, confirm that the date is set correctly on the device before beginning**. 
 * **License-key barcodes are not provided by Zebra**; they must be created by the licensee.
 <!-- * License sources added using this process are subsequently available for selection in the "Select License Source" drop down list.
@@ -89,13 +68,11 @@ Successful license activation is indicated by a screen similar to the image belo
 
 -----
 
-## Offline Licensing
+## Off-line Licensing
 License Manager provides two licensing options for organizations that employ devices in areas that lack access to the public cloud: 
 
 * Local Server
 * Pre-activated Licenses (future availability)
-
------
 
 ### Local Server
 The Local License Server option enables organizations to employ an on-premise server to distribute licenses to devices without accessing the internet. This option requires software installed on a company's own IP-based Linux or Windows server in advance of license distribution to devices. 
@@ -120,7 +97,6 @@ Successful license activation is indicated by a screen similar to the image belo
 
 #### The device is now licensed to use Enterprise Browser 2.0. 
 
------
 <!-- 
 ### Pre-activated Licenses
 The pre-activated license option allows organizations to log into the Zebra Software Licensing Portal and download a binary license file **created for a device with a specific ID**. This file is pushed to the device and installed, and **fails if installed on any other device**. 
@@ -148,7 +124,7 @@ Successful license activation is indicated by a screen similar to the image belo
 
 #### The device is now licensed to use Enterprise Browser 2.0. 
  -->
------
+
 <!-- 
 ## `TO BE MODIFIED`
 

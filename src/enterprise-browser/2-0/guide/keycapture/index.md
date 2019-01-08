@@ -136,8 +136,8 @@ The hardware keys of certain Zebra devices (see below) can be remapped to perfor
 
 ##### Hardware key remapping support:
 * MC33xx
-* VC80x
 * MC92N0 
+* VC80x
 
 -----
 

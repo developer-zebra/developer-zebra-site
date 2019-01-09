@@ -20,7 +20,16 @@ As always, Enterprise Browser is free to download and use for evaluation purpose
 
 -----
 
-## Manual Licensing
+## Acquiring a License
+
+Look for the product line ‘Mobile Application Utilities’ under your Downloads section.
+
+This should contain the EB Android & Windows download packages based on the user’s entitlement.
+
+-----
+
+
+## Manual Device Licensing
 This section describes the process for activating a license on a single device. To remotely activate multiple licenses for an entire organization, see the [Mass Deployment section](#massdeployment) of this guide. 
 
 #### License Source Types

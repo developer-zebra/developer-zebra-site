@@ -28,7 +28,6 @@ This should contain the EB Android & Windows download packages based on the user
 
 -----
 
-
 ## Manual Device Licensing
 This section describes the process for activating a license on a single device. To remotely activate multiple licenses for an entire organization, see the [Mass Deployment section](#massdeployment) of this guide. 
 

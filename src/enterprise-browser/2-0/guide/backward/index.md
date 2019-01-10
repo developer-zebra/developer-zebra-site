@@ -15,7 +15,7 @@ See the [Config.xml reference](../configreference) for more information about th
 
 ### Barcode API
 
-When setting multiple barcode properties using the `enable()` method call, barcode manager might not process those properties in the same order as entered. **If order is important** and barcode properties are constant across the app (not changed by individual pages), **Zebra recommends using** `EB.Barcode.setProperties` **to set properties in the preferred order**. If necessary, the `enable()` method can be used later to configure properties for an individual page.
+When setting multiple barcode properties using the `enable()` method, barcode manager might not process those properties in the same order as entered. **If order is important** and barcode properties are constant across the app (not changed by individual pages), **Zebra recommends using** `EB.Barcode.setProperties` **to set properties in the preferred order**. If necessary, the `enable()` method can be used later to configure properties for an individual page.
 
 See the [enable() method](../../api/barcode/#enablespanclasstextinfohashspanpropertymap) of the Barcode API for details and sample code. 
 

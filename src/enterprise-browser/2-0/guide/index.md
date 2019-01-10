@@ -70,7 +70,7 @@ automenu:
       items:
         - title: Migration Overview
           url: migration
-        - title: From EB 1.8 and Older (backward compat.)
+        - title: From EB 1.8 (and older)
           url: backward
         - title: From PocketBrowser
           url: pb2

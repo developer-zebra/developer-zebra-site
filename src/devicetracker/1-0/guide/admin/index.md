@@ -10,7 +10,7 @@ This section discusses the operations available for an administrator, providing 
 
 ## Using the Web Console
 
-Device Tracker provides a centralized dashboard displaying an inventory of deployed Zebra devices in service. The Device Tracker client regularly reports to the server, which displays the device status on the dashboard based on the information received. The top dashboard is lined with tiles that provide the total number of devices for the respective category and filter the devices based on that category with a click on the tile. The columns on the dashboard can be sorted by clicking on the double triangle to the right of the column name. Subsequent clicks sorts the column in ascending order (triangle points upward) or descending order (triangle points downward). A tabbed menu is displayed at the top of the dashboard above the tiles providing access to different views: Active, Out of Service, and Settings. 
+Device Tracker provides a centralized dashboard displaying an inventory of deployed Zebra devices in service, along with information on the current or last-known area of presence from connected Access Point information. The top dashboard is lined with tiles that provide the total number of devices for each respective category and filter the devices based on that category with a click on the tile. The columns on the dashboard can be sorted by clicking on the double triangle to the right of the column name. Subsequent clicks sort the column in ascending order (triangle points upward) or descending order (triangle points downward). A tabbed menu is displayed at the top of the dashboard above the tiles providing access to different views: Active, Out of Service, and Settings. 
 
 ![img](DTRK_dashboard.jpg)
 _Figure 1. Admin Dashboard_
@@ -30,7 +30,7 @@ Device Tracker tiles:
  * **Not Connected** – Filters devices that have surpassed the Disconnect Threshold Time in the Settings tab, designating the device as disconnected from the network and therefore cannot be found. 
 
 * Battery status tiles:
- * **Low Battery** – Filters devices that have surpassed the Low Power Alert Threshold value defined in the Settings tab and are therefore in low battery state.
+ * **Low Battery** – Filters devices that have surpassed the [Low Power Alert Threshold](../config) value defined in the Settings tab and are therefore in low battery state. Low Battery devices require attention to be charged before the battery becomes depleted, preventing loss of device tracking.
      * **On Charge** – Filters devices that are powered and in the charge state. 
 
 A search can be conducted based on device information from the table columns: Status, Connection State, AP Name, Battery State, Device Name, Device Model, Device Serial #, and Tags. In the Active tab, click the magnifying glass to produce a drop down menu and select the data to search. Depending on the data being searched, a prompt may appear to select data to refine the search. If required, enter in the text to search when prompted.

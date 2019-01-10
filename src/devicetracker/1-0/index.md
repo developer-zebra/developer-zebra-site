@@ -1,6 +1,6 @@
 ---
 title: Device Tracker
-img: /images/products/ppc.png
+img: /images/products/devicetracker.png
 layout: list-mx.html
 menu:
   title: Device Tracker

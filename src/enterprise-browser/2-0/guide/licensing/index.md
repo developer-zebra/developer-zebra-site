@@ -123,19 +123,21 @@ Successful license activation is indicated by a screen similar to the image belo
 
 -----
 
-## License Mass Deployment 
+## Mass Deployment 
 
-Mass-deployment of device licenses for Enterprise Browser requires use of an Enterprise Mobility Management (EMM) system or Zebra StageNow tools and the [License Manager Setting Type](/stagenow/latest/csp/license).
+Mass-deployment of device licenses for Enterprise Browser requires use of an Enterprise Mobility Management (EMM) system and/or Zebra StageNow tools and its [License Manager Setting Type](/stagenow/latest/csp/license).
 
-The procedures described below include only those for deploying and activating licenses for EB 2.0 (or later). They **DO NOT** include purchase of license activation IDs nor configuration of the network and device clock settings, which are required to download the app and properly apply the license.  
+**IMPORTANT**: The procedures described below include only those for deploying and activating licenses for EB 2.0 (or later). They **DO NOT** include the purchase process for license activation IDs nor configuration of the network and device clock settings, which are required to download the app and properly apply the license(s).
 
 ### Prerequisites
 
 * Profiles for correctly configuring device clock and network settings
-* Software License with Activation ID
+* Software License(s) with Activation ID(s)
 * All necessary EB 2.0 application (binary) files
 
-**Zebra recommends testing any new Profile on a working device before general deployment**.
+> **Zebra recommends testing any new Profile on a working device before general deployment**.
+
+-----
 
 **To create the licensing portion of a StageNow profile**:
 
@@ -148,9 +150,9 @@ The "Select a Wizard" dialog box appears.
 <img alt="" style="height:450px" src="stagenow_licenseMgr.png"/>
 _Click to enlarge_.
 <br>
-6. Set the parameters as required to activate the license: 
- a. **For cloud-based licensing**: Activate AID -> Use Zebra Licensing cloud option -> Zebra Production Cloud -> Enter the AID and quantity. Select Continue. This is the recommended option since the device is synced with the cloud for visibility from the licensing portal.
- b. **For the local licensing (on-premise) option**: Activate AID -> Use a local license server option -> Enter the URL, friendly name, AID and quantity. Select Continue. Select this option for networks that are fire-walled or lack internet access. See the [the licensing page on Zebra.com](https://www.zebra.com/us/en/support-downloads/software-licensing.html) for more information. 
+6. Set the parameters as required to activate the license:<br>
+ a. **For cloud-based licensing**: Activate AID -> Use Zebra Licensing cloud option -> Zebra Production Cloud -> Enter the AID and quantity. Select Continue. This is the recommended option since the device is synced with the cloud for visibility from the licensing portal.<br>
+ b. **For local (on-premise) licensing**: Activate AID -> Use a local license server option -> Enter the URL, friendly name, AID and quantity. Select Continue. Select this option for networks that are fire-walled or lack internet access. See the [the licensing page on Zebra.com](https://www.zebra.com/us/en/support-downloads/software-licensing.html) for more information. 
 7. Complete profile creation and scan the staging barcode.
 8. To confirm that the Profile successfully licensed the device: 
  a. Launch the License Manager application on the device. The activated license should be visible.
@@ -193,8 +195,6 @@ Q5: I don't want to use StageNow but my preferred EMM of choice. What options do
 
 A5: The LicenseMgr CSP is published via the EMMToolkit as well as Zebra's OEMConfig interface. Please use either to access the various license management configurations.
  -->
-
-`INFO TO COME`
 <!-- 
 MASS DEPLOYMENT:
 https://developer.zebra.com/docs/DOC-4641

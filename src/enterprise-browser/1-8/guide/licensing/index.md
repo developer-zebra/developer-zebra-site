@@ -148,7 +148,7 @@ Any of the Deployment License files described above can be mass-deployed using [
 -----
 
 **Related Guides**:
-* **[Enterprise Browser App Shortcuts](../ShortcutCreator/)-** The key to multi-app deployments 
+* **[Enterprise Browser App Shortcuts](../ShortcutCreator/) -** The key to multi-app deployments 
 * **[Enterprise Browser Setup Guide](../setup/) -** Help with initial setup, connecting to devices and pushing files
 * **[Zebra licensing system documentation page](https://softwarelicensing.zebra.com/documentation/index.html) -** Additional licensing info and sample screens
 

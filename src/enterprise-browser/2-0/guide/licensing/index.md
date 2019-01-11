@@ -6,7 +6,7 @@ layout: guide.html
 ---
 
 ## Overview 
-**Beginning with EB 2.0, licensing of Enterprise Browser has changed**. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid. <u>**Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>.
+**Beginning with EB 2.0, the process for applying device licenses for Enterprise Browser has changed**. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid. <u>**Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>.
 
 Commercial deployment to devices requires an End-User License issued by Zebra Technologies for each device. Licenses are available for trial [upto 90 days] and perpetual functionality. Both license types permit an unlimited number of Enterprise Browser-based apps to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license to individual devices and as part of a mass-deployment. A given license key can be activated on any number of devices up to the total quantity of licenses purchased as explained below. 
 
@@ -20,7 +20,34 @@ Commercial deployment to devices requires an End-User License issued by Zebra Te
 
 -----
 
-## Manual Device Licensing
+
+## I. Contact a Reseller 
+The first step in obtaining a license is to engage with Zebra or a Zebra reseller. 
+
+**&#49;. [Visit Zebra's Enterprise Browser Product Page](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/enterprise-browser.html)** and select one of the methods for contacting Zebra directly or engaging with a reseller or partner. 
+
+**&#50;. Alternatively, select one of the following Zebra resources**: 
+
+* **[Find a Zebra Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner.html) -** form for submitting an inquiry via the web
+* **[How to Select a Channel Partner](https://www.zebra.com/us/en/partners/find-a-zebra-partner/selecting-the-right-channel-partner.html) -** explains the types of partners that engage with Zebra and some of their technologies and specialties
+* **[Partner Interaction Center](https://www.zebra.com/us/en/partners/partner-interaction-center.html) -** info for contacting Zebra's existing global partner network
+* **[Zebra Corporate Numbers and Links](https://www.zebra.com/us/en/about-zebra/contact-zebra.html) -** broken down by global region
+* **[Global Marketing Contact Center](https://www.zebra.com/us/en/about-zebra/contact-zebra/marketing-contact-center.html) -** broken down by global region and country
+
+-----
+
+## II. Access Licensing System
+After a licensing agreement is purchased from Zebra or a Zebra reseller, an email will be sent to the licensing company's representative containing user credentials for accessing the [Zebra Enterprise Software Licensing system](https://zebra-licensing.flexnetoperations.com/flexnet/operationsportal/logon.do). 
+
+* **Log into the [Zebra Licensing system](https://zebra-licensing.flexnetoperations.com/flexnet/operationsportal/logon.do) to:** 
+	* Place an order for licenses
+	* See the status of existing orders
+	* Assign licenses to devices or deployments
+	* View current license inventory and assignments
+
+-----
+
+## III. Manually Assign License
 This section describes the process for activating a license on a single device. To remotely activate multiple licenses for an entire organization, see the [Mass Deployment section](#licensemassdeployment) of this guide. 
 
 #### License Source Types
@@ -29,6 +56,7 @@ This section describes the process for activating a license on a single device. 
 <!-- available only under special circumstances
 * **Pre-activated** (binary file pushed to device) 
  -->
+
 #### Connectivity Options
 * **Production Cloud Direct -** License Manager maps automatically to web-based Zebra Licensing Server to activate licenses; no server configuration required.
 * **Production Cloud Through Proxy -** License Manager maps automatically to web-based Zebra Licensing Server through customer's on-premise proxy server. Requires configuration of proxy server settings. 
@@ -37,7 +65,7 @@ This section describes the process for activating a license on a single device. 
 * **Test Cloud Through Proxy - For Zebra internal use only**.
 
 #### IMPORTANT
-* **To ensure proper behavior, confirm that the date is set correctly on the device before beginning**. 
+* **To ensure proper behavior, confirm that the clock is set correctly on the device before beginning**. 
 * **License-key barcodes are not provided by Zebra**; they must be created by the licensee.
 <!-- * License sources added using this process are subsequently available for selection in the "Select License Source" drop down list.
  -->
@@ -73,7 +101,7 @@ Successful license activation is indicated by a screen similar to the image belo
 ## Off-line Licensing
 License Manager provides a Local License Server option, enabling organizations to employ an on-premise server to distribute licenses to devices without access to the internet. This option requires software installed on a company's own IP-based Linux or Windows server in advance of license distribution to devices. 
 
-For more information, including hardware requirements and setup instructions, refer to the [Local License Server Administration Guide (.pdf link to come)](LINK_TO_PDF_TO_COME). 
+For more information, including hardware requirements and setup instructions, refer to the [Local License Server Administration Guide](local-licenses-server-ag-en.pdf). 
 
 **To License from a Local Server**: 
 
@@ -96,6 +124,75 @@ Successful license activation is indicated by a screen similar to the image belo
 -----
 
 ## License Mass Deployment 
+
+Mass-deployment of device licenses for Enterprise Browser requires use of an Enterprise Mobility Management (EMM) system or Zebra StageNow tools and the [License Manager Setting Type](/stagenow/latest/csp/license).
+
+The procedures described below include only those for deploying and activating licenses for EB 2.0 (or later). They **DO NOT** include purchase of license activation IDs nor configuration of the network and device clock settings, which are required to download the app and properly apply the license.  
+
+### Prerequisites
+
+* Profiles for correctly configuring device clock and network settings
+* Software License with Activation ID
+* All necessary EB 2.0 application (binary) files
+
+**Zebra recommends testing any new Profile on a working device before general deployment**.
+
+**To create the licensing portion of a StageNow profile**:
+
+1. Launch StageNow and select “Create new Profile" from the left-hand pane. <br>
+The "Select a Wizard" dialog box appears.
+2. Select the MX version to match the device, click "Xpert Mode" and then click the "Create" button.
+3. Enter a Profile name and click the "Start" button.
+4. Scroll down and single-click LicenseMgr and click the "Update" button. 
+5. Under "License action type:" select “Perform Zebra license action.” Additional options appear: 
+<img alt="" style="height:450px" src="stagenow_licenseMgr.png"/>
+_Click to enlarge_.
+<br>
+6. Set the parameters as required to activate the license: 
+ a. **For cloud-based licensing**: Activate AID -> Use Zebra Licensing cloud option -> Zebra Production Cloud -> Enter the AID and quantity. Select Continue. This is the recommended option since the device is synced with the cloud for visibility from the licensing portal.
+ b. **For the local licensing (on-premise) option**: Activate AID -> Use a local license server option -> Enter the URL, friendly name, AID and quantity. Select Continue. Select this option for networks that are fire-walled or lack internet access. See the [the licensing page on Zebra.com](https://www.zebra.com/us/en/support-downloads/software-licensing.html) for more information. 
+7. Complete profile creation and scan the staging barcode.
+8. To confirm that the Profile successfully licensed the device: 
+ a. Launch the License Manager application on the device. The activated license should be visible.
+ b. Alternatively, launch EB 2.0 on the device. The splash screen indicates licensing status. 
+ c. Following either confirmation method, the quantity of available licenses visible on the licensing portal should decrease by the number of licenses deployed. A list of device IDs should also be visible there.
+
+<!-- 
+
+ TURN THESE INFO STRAIGHT NOTES: 
+ FAQ:
+
+Q1. How does the license portal react to devices that need to be factory reset/reimage?  From time to time we may need to factory reset or perform Operating System upgrades which formats the device and removes all software (including Enterprise Browser).  I want to make sure that I will not use an additional device license upon keeping my devices updated/secured with the latest operating systems provided by Zebra.
+A1. Once you factory reset a device, please use the same StageNow Profile barcode that was initially used. Since the Device Id is already registered with the cloud or LLS, the device will simply get its earlier license back.
+
+Please note, that the device will need to ping the same URL as earlier to get its previous license back. For ex, if you used the cloud option, you will need to use it again after a Factory reset and not the LLS option.
+
+ 
+
+Q2. How does the license portal react to new device license purchases? Currently I have a total QTY of say 20.  I need to purchase more licenses this week.  Would the total QTY just increase?  The reason I ask is I’ll be pushing the license using StageNow via MDM. The MDM lets me push the license to an entire group of devices so all of my devices will receive the same license.  Defining in the system that 19 devices get license A and the rest get license B would be extremely difficult/near impossible.
+A2. When the order for additional licenses is being placed, please provide the AID from your initial order while placing the new one. That will ensure the additional PO qty is added to your initial entitlement and you can use the same MDM policy on the additional devices as well
+
+ 
+
+Q3: Where can I find more information about the LicenseMgr CSP that works with StageNow or my EMM ? 
+A3 : You can find more info about the various parameters on Techdocs here.
+
+ 
+
+ 
+
+Q4: I only want to try out my trial EB 2.0 license and not mass deploy it. Do I still need to use StageNow or an EMM ?
+
+A4: For a one-off activation or license management operations, there is a built-in LicenseManager application on an EMC Android device that can be used. You can use this application to key in the Activation Id and choose the default Cloud option for the quickest way to get up and running.
+
+A detailed guide for this application can be found on on Zebra.com's Licensing Page.
+
+ 
+
+Q5: I don't want to use StageNow but my preferred EMM of choice. What options do I have?
+
+A5: The LicenseMgr CSP is published via the EMMToolkit as well as Zebra's OEMConfig interface. Please use either to access the various license management configurations.
+ -->
 
 `INFO TO COME`
 <!-- 

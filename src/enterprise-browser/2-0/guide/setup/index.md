@@ -294,6 +294,8 @@ Enterprise Browser runtimes can be individually pushed to devices from Windows o
 
 Enterprise Browser also can be mass-deployed using Zebra [StageNow](../../../../stagenow) or a compatible MDM system. [See the Mass Deployment section](#massdeployment). 
 
+**NEW LICENSING PROCESS: Beginning with EB 2.0, licensing of Enterprise Browser has changed. Manual licensing requires use of the License Manager app on the device. <u>Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid. See the [Licensing Guide](../licensing) for details. 
+
 -----
 
 **To manually push an EB app to a device**:
@@ -321,7 +323,7 @@ Open **Applications -> Enterprise Browser for [target platform]-> Runtimes**. Th
 
 &#49;. After locating the desired runtime using the procedures above, **drag-copy the runtime** to the root directory of the device. 
 
-**&#50;. For versions prior to Enterprise Browser 1.5, skip to Step 4**. On Enterprise Browser 1.5 and higher **for Android**, a pre-configured `Config.xml` file (and optionally a `keycodemapping.xml` file) can be copied to the device at `/<internal_mem_root_dir>/EnterpriseBrowser/` at this time (create the directory, if necessary). 
+**&#50;. For versions prior to Enterprise Browser 1.5, skip to Step 4**. On Enterprise Browser 1.5 and higher **for Android**, a pre-configured `Config.xml` file (and optionally a `keycodemapping.xml` file) can be copied to the device at `/<internal_mem_root_dir>/EnterpriseBrowser/` at this time (create the directory, if necessary. 
 
 **&#51;. From the device, use a file explorer to locate and execute the runtime**. When Enterprise Browser 1.5 (and higher) for Android is launched for the first time after installation, it performs the following actions on the device:
 
@@ -348,6 +350,12 @@ Therefore, new versions of those settings files should be placed in the `/<inter
 ## Mass Deployment
 The Enterprise Browser runtimes and configuration and licensing files can be deployed to one or more devices using Zebra [StageNow](/stagenow/2-3/gettingstarted/) or an MDM system by using the instructions below. 
 
+**NEW LICENSING PROCESS: Beginning with EB 2.0, licensing of Enterprise Browser has changed. Mass deployment requires use of an MDM or Zebra StageNow tools and the [License Manager Setting Type](/stagenow/latest/csp/license). <u>Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid. See the [Licensing Guide](../licensing) for details. 
+
+-----
+
+**To mass-deploy Enterprise Browser**: 
+
 **&#49;. Locate the Enterprise Browser runtime files** on the installation host: 
 
 #### Windows systems
@@ -368,7 +376,7 @@ Open **Applications -> Enterprise Browser -> Runtimes**. The Runtimes folder on 
 
 **For versions prior to Enterprise Browser 1.5, skip to Step 4**. 
 
-**On Enterprise Browser 1.5 and higher for Android**, a pre-configured `Config.xml` file (and optionally a `keycodemapping.xml` file) can be copied into the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory on the device. at this time (create the directory, if necessary). 
+**On Enterprise Browser 1.5 and higher for Android**, a pre-configured `Config.xml` file (and optionally a `keycodemapping.xml` file) can be copied into the `/<internal_mem_root_dir>/EnterpriseBrowser/` directory on the device at this time (create the directory, if necessary). 
 
 **&#51;. If deploying configuration files (as described above)**: 
  * Copy config file(s) the MDM system for deployment to the device

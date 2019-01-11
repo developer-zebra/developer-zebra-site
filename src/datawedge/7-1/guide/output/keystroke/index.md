@@ -101,6 +101,30 @@ This setting applies when the Scanning mode in [Barcode Reader Params](../../inp
 **&#50;. Tap "Barcode separator" to specify the desired insertion character** (CR, LF or TAB).<br>Data from each barcode is otherwise concatenated and delivered as a single string of keystrokes.
 <img style="height:350px" src="../dw_6.7_data_separating.png"/>
 
+**To configure a custom separator character as the MultiBarcode separator:**
+
+Select a supported default character (CR, LF, or TAB) as a MultiBarcode separator together with the ADF plugin configuration to replace this selected character with a user specified character:
+
+1. Tap "Data formatting and ordering" to specify a separator character** to be inserted between the data from each barcode. 
+<img style="height:350px" src="../dw_6.7_data_formatting_and_ordering.png"/>
+<br>
+2. Tap "Barcode separator" to specify the desired insertion character** (CR, LF or TAB).<br>Data from each barcode is otherwise concatenated and delivered as a single string of keystrokes.
+<img style="height:350px" src="../dw_6.7_data_separating.png"/>
+3. Select "Tab" as the Barcode separator.
+4. Tap back to return to the main profile screen. Select **Advanced data formatting** 
+5. Under "Keystroke output" click Enable (tap on the checkbox).
+6. Tap Rule0.
+7. Tap Actions.
+8. From the hamburger menu at the top right, select “New action”
+9. Scroll down and select “Replace string”.
+10. Tap “Replace String”. 
+11. Tap "Find String". Enter the hexadecimal notation for tab: \x09. Tap OK.
+12. Tap "Replace String". Enter desired string to use as replacement, for example "+".  Tap OK.
+13. Tap back to return to the rule.
+14. Tap and hold the horizontal bars next to "Replace string" and drag it above "Send Remaining". 
+15.	Perform a scan.
+
+Each barcode in the multibarcode decode is now followed by a plus (+) character.
 
 <!-- 
 Send data - Set to transfer the captured data to the foreground application. Disabling this option prevents the actual data from being transmitted. However, the prefix and suffix strings, if present, are still transmitted even when this option is disabled (default - enabled).

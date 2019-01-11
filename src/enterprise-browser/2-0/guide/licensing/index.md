@@ -151,8 +151,8 @@ The "Select a Wizard" dialog box appears.
 _Click to enlarge_.
 <br>
 6. Set the parameters as required to activate the license:<br>
- a. **For cloud-based licensing**: Activate AID -> Use Zebra Licensing cloud option -> Zebra Production Cloud -> Enter the AID and quantity. Select Continue. This is the recommended option since the device is synced with the cloud for visibility from the licensing portal.<br>
- b. **For local (on-premise) licensing**: Activate AID -> Use a local license server option -> Enter the URL, friendly name, AID and quantity. Select Continue. Select this option for networks that are fire-walled or lack internet access. See the [the licensing page on Zebra.com](https://www.zebra.com/us/en/support-downloads/software-licensing.html) for more information. 
+ **a. For cloud-based licensing**: Activate AID -> Use Zebra Licensing cloud option -> Zebra Production Cloud -> Enter the AID and quantity. Select Continue. This is the recommended option since the device is synced with the cloud for visibility from the licensing portal.<br>
+ **b. For local (on-premise) licensing**: Activate AID -> Use a local license server option -> Enter the URL, friendly name, AID and quantity. Select Continue. Select this option for networks that are fire-walled or lack internet access. See the [the licensing page on Zebra.com](https://www.zebra.com/us/en/support-downloads/software-licensing.html) for more information. 
 7. Complete profile creation and scan the staging barcode.
 8. To confirm that the Profile successfully licensed the device: 
  a. Launch the License Manager application on the device. The activated license should be visible.

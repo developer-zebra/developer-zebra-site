@@ -6,11 +6,13 @@ productversion: '1.0'
 ---
 
 ## Overview
-This section discusses the operations available for an administrator, providing a centralized view for device tracking when locating misplaced devices. As part of Zebra’s DNA Visibility Console, there are multiple apps available.  At the login screen, select “Device Tracker”, then sign in.
+This section discusses the operations available for an administrator, providing a centralized view for device tracking when locating misplaced devices. 
+
+As part of Zebra’s DNA Visibility Console, there are multiple apps available.  At the login screen, select “Device Tracker”, then sign in. To navigate to other apps, click on the app menu icon at the top to the right of the "Device Tracker" title and select the desired app.
 
 ## Using the Web Console
 
-Device Tracker provides a centralized dashboard displaying an inventory of deployed Zebra devices in service, along with information on the current or last-known area of presence from connected Access Point information. The top dashboard is lined with tiles that provide the total number of devices for each respective category and filter the devices based on that category with a click on the tile. The columns on the dashboard can be sorted by clicking on the double triangle to the right of the column name. Subsequent clicks sort the column in ascending order (triangle points upward) or descending order (triangle points downward). A tabbed menu is displayed at the top of the dashboard above the tiles providing access to different views: Active, Out of Service, and Settings. 
+Device Tracker provides a centralized dashboard displaying an inventory of deployed Zebra devices, along with information on the current or last-known area of presence from connected Access Point (AP) information. The top dashboard is lined with tiles that provide the total number of devices for each respective category and filter the devices based on that category with a click on the tile. The columns on the dashboard can be sorted by clicking on the double triangle to the right of the column name. Subsequent clicks sort the column in ascending order (triangle points upward) or descending order (triangle points downward). A tabbed menu is displayed at the top of the dashboard above the tiles providing access to different views: Active, Out of Service, and Settings. 
 
 ![img](DTRK_dashboard.jpg)
 _Figure 1. Admin Dashboard_
@@ -35,7 +37,10 @@ Device Tracker tiles:
 
 A search can be conducted based on device information from the table columns: Status, Connection State, AP Name, Battery State, Device Name, Device Model, Device Serial #, and Tags. In the Active tab, click the magnifying glass to produce a drop down menu and select the data to search. Depending on the data being searched, a prompt may appear to select data to refine the search. If required, enter in the text to search when prompted.
 
-Note: If nothing is displayed in the battery status column, it indicates that the device battery is not being charged and there is sufficient device battery charge.
+Notes: 
+* If no icon is displayed in the battery status column, it indicates that the device battery is not being charged and there is sufficient device battery charge.
+* When the checkbox in the table header is ticked on the dashboard, it selects all batteries listed in the page. 
+* At the bottom left of the dashboard, select the "rows per page" drop-down and choose the value to increase the number of batteries displayed in the dashboard.
 
 ##Device Action
 Action can be taken on any selected device(s) in the Active tab.  Once the device is selected from the dashboard, the Action menu is accessible with the following options:
@@ -97,12 +102,6 @@ To add a user:
 5. Click OK when the confirmation message appears.
 
 <br>
-<br>
-
-Note: 
-* When the checkbox in the table header is ticked on the dashboard, it selects all batteries listed in the page. 
-* At the bottom left of the dashboard, select the "rows per page" drop-down and choose the value to increase the number of batteries displayed in the dashboard.
-
 <br>
 
 -----

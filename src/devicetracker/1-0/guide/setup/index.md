@@ -83,11 +83,44 @@ See supported [Zebra devices](../about/#supporteddevices).
 ##Server Install & Setup
 After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
-1. **Server Installation.** Double-click on the .EXE and follow the steps to complete installation.
+###Server Installation
+1. Double-click on the .EXE to launch the installer.
+2. At the initial window, click Next.
+![img](DTRK_Install_1.JPG)
+_Figure 1. Installation - initial screen_
+3. Accept the license agreement. Click Next.
+![img](DTRK_Install_2.JPG)
+_Figure 2. Installation - EULA_
+4. Browse to the destination folder. Click Next.
+![img](DTRK_Install_3.JPG)
+_Figure 3. Installation - destination location_
+5. Enter in the server configuration:
+   * Domain
+   * Server certificate file
+   * Server certificate password
+   * UI port eg. 8443
+   * Backend server port eg. 8080
+Click Next.
+![img](DTRK_Install_4.JPG)
+_Figure 4. Installation - server configuration_
+6. Enter in server authentication and credentials.
+   * Super admin and database password
+   * Server auth key
+   * Server auth password
+Click Next.
+![img](DTRK_Install_5.JPG)
+_Figure 5. Installation - server authentication and credentials_
+7. Review settings. Click Next.
+![img](DTRK_Install_6.JPG)
+_Figure 6. Installation - review settings_
+8. Installation complete. Click Finish.
+![img](DTRK_Install_7.JPG)
+_Figure 7. Installation - complete_
 
-2. **DNS (Domain Name Server) Setup.** The PPC server runs in a domain, for example _name.company.com_.  To run PPC, an entry in the DNS server is required to add the server IP address.  The DNS server and PPC server are required to be on the same network.  Contact your local IT Administrator to configure the domain to IP address mapping. 
+###Server Setup
+1. **DNS (Domain Name Server) Setup.** The PPC server runs in a domain, for example _name.company.com_. To run PPC, an entry in the DNS server is required to add the server IP address. The DNS server and PPC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
 
-3. **Server SSL Certificate.** An SSL certificate is required for secured connections. 
+2. **Server SSL Certificate.** An SSL certificate is required for secured connections. 
 Steps to generate the certificate:<br>
 A. Zebra recommends the certificate to be procured in .p7b format and the certificate private key to be a .key file. If the certificates are in different format, use a SSL certificate converter tool to convert to the proper format.<br>
 B. Download [OpenSSL](https://www.openssl.org/source/) tool and install on the server.<br>
@@ -107,7 +140,7 @@ H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
    * Zebra Technologies\PowerPrecision Console\Server\WebUI
 <br>
 
-4. **Server Setup.** From default folder “\Power Precision Console\Release\Server\WebUI”, open the .env file.  Set the following variables: 
+3. **Server Setup.** From default folder “\Power Precision Console\Release\Server\WebUI”, open the .env file. Set the following variables: 
 
 		SERVER=”https://name.company.com:8080/ppcdata" 
 		PORT=”8080”
@@ -123,7 +156,7 @@ H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
 	For SSL_CERT_PASSWORD, replace the string with the SSL certificate password.<br>
 	For PORT_HTTPS, this is optional and required only if port 8443 is not used by default for HTTPS. Specify the alternative port used for HTTPS.
 
-	In default folder “\Power Precision Console\Server\PowerPrecisionConsoleServer\config”, open “application.properties.”  Set the following properties:  
+	In default folder “\Power Precision Console\Server\PowerPrecisionConsoleServer\config”, open “application.properties.” Set the following properties:  
 
 		server.dns=<name.company.com> 
 		server.idDesc=<store location> 
@@ -144,12 +177,12 @@ H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
 
 	Note: If port 8080 is not available on the server, any other available port can be used in replacement. Some network policies might block incoming and outgoing ports - it is required to open the configured ports in the network firewall as described in the next section “Open inbound/outbound ports on the firewall” 
 
-5. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices, specified in the .env file. The method to open the ports depends on the firewall software used by the network administrator. By default the ports are:   
+4. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices, specified in the .env file. The method to open the ports depends on the firewall software used by the network administrator. By default the ports are:   
 
 	* Inbound ports: TCP ports 8080 and 8443
 	* Outbound port: TCP port 8080
 <br>
-6. **Run the PPC Server Software.** Start the server services by launching the desktop shortcut icon "START_PPC_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/ppcui**
+5. **Run the PPC Server Software.** Start the server services by launching the desktop shortcut icon "START_PPC_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/ppcui**
 
 	Where "name.company.com" is replaced with the appropriate information.
 
@@ -159,14 +192,14 @@ H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
 	* Password: admin 
 
    Zebra recommends to change the password immediately for the _super admin_ user to avoid unauthorized access. Tap on "SAdmin" user at the top right of the Admin View and select "Change password".
-7. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
+6. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
 A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
 B. Enter the Web UI URL, for example `https://name.company.com:8443/ppcui`<br>
 C. Click the Scan button. A successful result returns green checks for each step. _See Figure 1 below._ <br>
 D. Enter the backend URL for your server, for example `https://name.company.com:8080/ppcdata` <br>
 E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
-_Figure 1. SSLTools.com results_
+_Figure 8. SSLTools.com results_
 
 ##Client Install & Setup
 Install Device Tracker client on the supported Zebra device to register the device and upload data to the server. Client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management). Requirements for Device Tracker client:
@@ -176,16 +209,17 @@ Install Device Tracker client on the supported Zebra device to register the devi
 * Bluetooth radio is enabled on the device. BLE (Bluetooth Low Energy) beacons are used to locate devices.
 
 
-###Installation
+###Client Installation
 Steps for client installation:
 1. Download Device Tracker client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
-2. Install PowerPrecisionConsole.apk. 
+2. Install DTRKClient.apk. 
    * For Android Marshmallow and Nougat devices, install the .APK located in folder PPCClient\Client\M_N.
    * For Android Oreo devices, install the .APK located in folder PPCClient\Client\O.
 3. When prompted, enable the “Apps that can draw over other apps” overlay permission. 
-4. For remote configuration using StageNow or an EMM (using XML or Managed Config), install PPCClientMgr.apk located in PPCClient\PluginCSP
+4. Reboot the device
+5. For remote configuration using StageNow or an EMM (using XML or Managed Config), install PPCClientMgr.apk located in PPCClient\PluginCSP
 
-###Configuration
+###Client Configuration
 Configure the server address and port either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
 
 ####Manual Configuration

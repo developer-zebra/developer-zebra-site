@@ -22,7 +22,7 @@ In the [Admin View](../admin) dashboard, click on the **Settings** tab to displa
 
 * **Chirping**:
  * **Volume Level** - Specifies the loudness level of the chirping sound to be heard from the device being located.
-     * **Duration** - Amount of time in seconds for the chirping to sound on the device being located.
+    * **Duration** - Amount of time in seconds for the chirping to sound on the device being located.
 
 
 ###Device & Access Point Management

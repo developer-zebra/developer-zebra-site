@@ -133,7 +133,7 @@ Mass-deployment of Enterprise Browser device licenses requires use of an Enterpr
 ### Prerequisites
 
 * Profiles for correctly configuring device clock and network settings
-* Software License(s) with Activation ID(s)
+* Software License key(s) (aka Activation IDs)
 * All necessary EB 2.0 application (binary) files
 
 > **Zebra recommends testing any new Profile on a working device before general deployment**.
@@ -149,14 +149,14 @@ The "Select a Wizard" dialog box appears.
 4. **Single-click LicenseMgr** (scroll down if necessary); then **click "Update"** button. 
 5. **Under "License action type:" select “Perform Zebra license action.”** Additional options appear: 
 <img alt="" style="height:450px" src="stagenow_licenseMgr.png"/>
-_Click to enlarge_.
+_Click image to enlarge_.
 <br>
 6. **Set the parameters as required** to activate the license:<br>
  **a. For cloud-based licensing**: <br>
  	**Zebra recommends this option for the best device visibility from the licensing portal**:<br>
 	* **Zebra license action**: Activate AID -> select "Use one of the Zebra Licensing cloud options"<br>
 	* **Cloud Source**: "Use the Zebra licensing Production Cloud" <br>
-	* Enter the AID and quantity. **Select Continue**.<br>
+	* Enter the AID and quantity. **Select "Continue"**.<br>
 
  **b. For local (on-premise) licensing**:<br>
  	**Best for fire-walled networks or those lacking internet access**:  
@@ -169,6 +169,27 @@ _Click to enlarge_.
  b. Alternatively, launch EB 2.0 on the device. The splash screen indicates licensing status. <br>
  c. The quantity of available licenses visible on the licensing portal should decrease by the number of licenses deployed. A list of device IDs also is visible there.<br>
 
+Also see [related guides](#relatedguides). 
+
+-----
+
+## License Transfer
+Enterprise Browser supports the transfer of licenses from one device to another if the device licenses were originally activated using a cloud-based or local licensing server. This is accomplished by returning the activated license(s) to the pool (using License Action "Return") and activating them on new device(s).
+
+See the [License Manager section](/stagenow/latest/csp/license) of Zebra's StageNow tool for details.
+
+-----
+
+## Notes
+The following notes are derived from frequently asked questions about device licensing and apply to most licensing scenarios. 
+
+* **Licenses erased by a [Factory Reset](/mx/powermgr/#enterprisereset) can be reissued <u>to the same device(s) using the same StageNow Profile</u>** and the same License Source (i.e. cloud-based or local server). 
+* **When ordering additional unit entitlements for an existing site license, include the Activation ID** with the order to ensure that the same EMM policy can be used for the additional devices.
+* **The fastest way to deploy a trial license on a device** is by using the License Manager app and the [manual license assignment](#manuallyassignlicense) procedures.
+* **Device licenses can be activated using**: 
+ * StageNow and the [License Mgr CSP](/stagenow/latest/csp/license)
+ * OEMConfig tool, part of the [EMM Toolkit](/emmtk)
+ 
 -----
 
 ## Related Guides
@@ -178,29 +199,18 @@ _Click to enlarge_.
 * **[Zebra.com Licensing Page](https://www.zebra.com/us/en/support-downloads/software-licensing.html)** | Additional documentation and relevant links
 * **[Enterprise Browser Setup Guide](../setup/)** | Help with initial setup, connecting to devices and pushing files
 
+-----
+
+
 <!-- 
-
- TURN THESE INFO STRAIGHT NOTES: 
- FAQ:
-
-Q1. How does the license portal react to devices that need to be factory reset/reimage?  From time to time we may need to factory reset or perform Operating System upgrades which formats the device and removes all software (including Enterprise Browser).  I want to make sure that I will not use an additional device license upon keeping my devices updated/secured with the latest operating systems provided by Zebra.
-A1. Once you factory reset a device, please use the same StageNow Profile barcode that was initially used. Since the Device Id is already registered with the cloud or LLS, the device will simply get its earlier license back.
-
-Please note, that the device will need to ping the same URL as earlier to get its previous license back. For ex, if you used the cloud option, you will need to use it again after a Factory reset and not the LLS option.
-
- 
-
-Q2. How does the license portal react to new device license purchases? Currently I have a total QTY of say 20.  I need to purchase more licenses this week.  Would the total QTY just increase?  The reason I ask is I’ll be pushing the license using StageNow via MDM. The MDM lets me push the license to an entire group of devices so all of my devices will receive the same license.  Defining in the system that 19 devices get license A and the rest get license B would be extremely difficult/near impossible.
-A2. When the order for additional licenses is being placed, please provide the AID from your initial order while placing the new one. That will ensure the additional PO qty is added to your initial entitlement and you can use the same MDM policy on the additional devices as well
-
- 
 
 Q3: Where can I find more information about the LicenseMgr CSP that works with StageNow or my EMM ? 
 A3 : You can find more info about the various parameters on Techdocs here.
 
- 
+Q5: I don't want to use StageNow but my preferred EMM of choice. What options do I have?
 
- 
+A5: The LicenseMgr CSP is published via the EMMToolkit as well as Zebra's OEMConfig interface. Please use either to access the various license management configurations.
+
 
 Q4: I only want to try out my trial EB 2.0 license and not mass deploy it. Do I still need to use StageNow or an EMM ?
 
@@ -208,11 +218,11 @@ A4: For a one-off activation or license management operations, there is a built-
 
 A detailed guide for this application can be found on on Zebra.com's Licensing Page.
 
- 
 
-Q5: I don't want to use StageNow but my preferred EMM of choice. What options do I have?
+Q2. How does the license portal react to new device license purchases? Currently I have a total QTY of say 20.  I need to purchase more licenses this week.  Would the total QTY just increase?  The reason I ask is I’ll be pushing the license using StageNow via MDM. The MDM lets me push the license to an entire group of devices so all of my devices will receive the same license.  Defining in the system that 19 devices get license A and the rest get license B would be extremely difficult/near impossible.
+A2. When the order for additional licenses is being placed, please provide the AID from your initial order while placing the new one. That will ensure the additional PO qty is added to your initial entitlement and you can use the same MDM policy on the additional devices as well
 
-A5: The LicenseMgr CSP is published via the EMMToolkit as well as Zebra's OEMConfig interface. Please use either to access the various license management configurations.
+
  -->
 <!-- 
 MASS DEPLOYMENT:

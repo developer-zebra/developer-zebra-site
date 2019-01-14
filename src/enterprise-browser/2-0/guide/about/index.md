@@ -53,7 +53,7 @@ See all [supported Zebra devices](../about#mobile).
 
 ### New Features
 
-* **Now supports [Hardware Key Remapping](../keycapture/#mappinghardwarekeys) -** to allow hardware keys of certain Zebra devices to be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. 
+* **Now supports [Hardware Key Remapping](../keycapture/#mappinghardwarekeys) -** to allow hardware keys of Zebra devices to be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. 
 * Android apps running on **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** to simplify file-path coding.
 * **EB 2.0 and higher now supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 
 * **An enhanced SAP support bundle** includes ready-to-use config files for SAP ITSmobile apps, simplifying device set-up for SAP customers. SAP config files can be modified for specific use cases. **SAP-specific features**:
@@ -111,7 +111,7 @@ The following new methods, properties and/or callbacks were added to Android API
 * **New [DataWedge Intents User Guide](../dwintents)** covers programmatic control of DataWedge from within an EB app.   
 * **New [Page-based Actions Guide](../pageactions)** defines a new set of actions that can execute JavaScript code or predefined commands whenever certain conditions are found on a page. 
 * A new **[Voice Input/Output Guide](../voice)** describes how to use Page-based actions to enable voice input in an app. 
-* **Enhanced [Key Remapping Guide](../keycapture/#mappinghardwarekeys)** describes how to map hardware keys on the MX33xx, MC92N0 and VC80x devices running Android. 
+* **Enhanced [Key Remapping Guide](../keycapture/#mappinghardwarekeys)** describes how to map hardware keys on Zebra devices running Android. 
 * **Enhanced SAP support** includes SAP applications running Warehouse Management or Extended Warehouse Management apps as well as apps built with SAP’s UI5 SDKs and Fiori UX tools.
 * **Enhanced ButtonBar Features** include:  
  * **Unicode support**, with special keys and characters from other languages in Basic Multilingual Plane.

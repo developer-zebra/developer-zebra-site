@@ -13,6 +13,14 @@ See the [Config.xml reference](../configreference) for more information about th
 
 -----
 
+### Licensing
+
+**Beginning with Enterprise Browser 2.0, the process for applying device licenses has changed. <u>Upgrading to EB 2.0 requires that all licenses be converted to the new model**</u>. Licensed apps running on EB 1.8 (and older) are unaffected; existing licenses remain valid. 
+
+See the [Licensing Guide](../licensing) for details. 
+
+-----
+
 ### Barcode API
 
 When setting multiple barcode properties using the `enable()` method, barcode manager might not process those properties in the same order as entered. **If order is important** and barcode properties are constant across the app (not changed by individual pages), **Zebra recommends using** `EB.Barcode.setProperties` **to set properties in the preferred order**. If necessary, the `enable()` method can be used later to configure properties for an individual page.
@@ -34,7 +42,7 @@ See the [ViewPort section](../configreference/#viewport) of the `Config.xml` ref
 
 ### Verify Client Certificate
 
-Due to licensing changes in EB 2.0 and higher, apps migrated to EB 2.0 sometimes display a  PIN request when launched or when displaying certain app pages. To suppress this message, set the &lt;VerifyClientCertificate&gt; tag in the app's `Config.xml` as shown below. 
+Support for Transport Layer Security (TLS) in EB 2.0 (and higher) might cause apps migrated to EB 2.0 to display a PIN request when launched or when navigating to app pages hosted on a server. To force EB to ignore such requests, set the &lt;VerifyClientCertificate&gt; tag in the app's `Config.xml` to "0" as shown below. 
 
 	:::xml
 	<VerifyClientCertificate value="0"/>

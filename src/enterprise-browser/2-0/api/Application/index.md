@@ -143,7 +143,11 @@ Synchronous Return:
 
 
 ### quit()
-Quit the application. Quitting the application while license screen is shown will be slightly delayed.
+Quit the application. 
+
+####Notes:
+* Quitting the application while license screen is displayed causes a delay.
+* Switching to or from "GMS Restricted" mode while an EB app is running results in unpredictable behavior. 
 
 ####Parameters
 <ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>

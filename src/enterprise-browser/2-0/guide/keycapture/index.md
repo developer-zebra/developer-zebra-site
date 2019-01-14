@@ -121,7 +121,7 @@ For example:
 -----
 
 ## Mapping Hardware Keys
-The hardware keys of certain Zebra devices (see below) can be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. This feature can be useful for many scenarios: 
+The hardware keys of <!-- certain -->Zebra devices <!-- (see below) -->can be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. This feature can be useful for many scenarios: 
 * Zoom in and out of app page(s)
 * Show/hide custom buttons or keyboard layouts
 * Show/hide the address bar
@@ -134,12 +134,13 @@ The hardware keys of certain Zebra devices (see below) can be remapped to perfor
 * Clear cookies and/or the application cache
 * Enable voice input
 
+<!-- removed per eng TUT-25446 
 ##### Hardware key remapping support:
 * MC33xx
 * MC92N0 
 * VC80x
 
------
+ -->-----
 
 ### Predefined Commands
 The remapping feature for hardware keys supports only the predefined actions and mapping commands shown below.  

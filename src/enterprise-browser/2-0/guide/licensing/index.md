@@ -185,11 +185,11 @@ The following notes are derived from frequently asked questions about device lic
 
 * **Licenses erased by a [Factory Reset](/mx/powermgr/#enterprisereset) can be reissued <u>to the same device(s) using the same StageNow Profile</u>** and the same License Source (i.e. cloud-based or local server). 
 * **When ordering additional unit entitlements for an existing site license, include the Activation ID** with the order to ensure that the same EMM policy can be used for the additional devices.
-* **The fastest way to deploy a trial license on a device** is by using the License Manager app and the [manual license assignment](#manuallyassignlicense) procedures.
+* **The fastest way to deploy a trial license on a device** is by using the License Manager app and the [manual license assignment](#iiimanuallyassignlicense) procedures above.
 * **Device licenses can be activated using**: 
  * StageNow and the [License Mgr CSP](/stagenow/latest/csp/license)
  * OEMConfig tool, part of the [EMM Toolkit](/emmtk)
- 
+
 -----
 
 ## Related Guides

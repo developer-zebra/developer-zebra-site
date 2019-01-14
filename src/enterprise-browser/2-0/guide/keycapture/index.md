@@ -140,7 +140,8 @@ The hardware keys of <!-- certain -->Zebra devices <!-- (see below) -->can be re
 * MC92N0 
 * VC80x
 
- -->-----
+ -->
+-----
 
 ### Predefined Commands
 The remapping feature for hardware keys supports only the predefined actions and mapping commands shown below.  

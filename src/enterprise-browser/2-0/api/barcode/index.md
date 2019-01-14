@@ -151,7 +151,7 @@ Synchronous Return:
 ### enable(<span class="text-info">HASH</span> propertyMap)
 Enabling the scanner puts it in a state that responds to the trigger (on devices with a hardware trigger) or accepts a command to initiate a soft scan (start method). Scanned barcodes are available to the application through the callback provided to this method. Only one scanner can be enabled on the device at any one time. To switch between the imager and camera scanners (for example), first disable the currently enabled scanner. If a callback to this method is not specified, the scanned data is returned as keystrokes. **Note**: On Windows Mobile/CE devices, the scanner must be enabled prior to retrieving the state of properties.
 
-To enable the UDI scanning mode on Android devices, the user must set the `scanMode` to UDI. The UDI scanning mode is enabled either using the barcode `enable()` method with barcode properties or calling barcode properties separately with (or after) the `enable()` method call. **UDI scanning is available only with imager-based scanners and 0is supported only on Android devices with EMDK version 6.6 and higher**.
+To enable the UDI scanning mode on Android devices, the user must set the `scanMode` to UDI. The UDI scanning mode is enabled either using the barcode `enable()` method with barcode properties or calling barcode properties separately with (or after) the `enable()` method call. **UDI scanning is available only with imager-based scanners and is supported only on Android devices with EMDK version 6.6 and higher**.
 
 The Scanned Data of UDI labels is available to the application through callback of this method and it can be differentiated from Barcode data using `isUDIData` parameter of callback. There are parameters available for scanned UDI data through callback of this method. If callback is not specified to this method, the user receives the UDI tokenized data collectively as keystrokes.
 
@@ -3675,7 +3675,7 @@ Controls the symbology for PDF 417 barcodes. If an application is not expected t
 ####Type
 <span class='text-info'>STRING</span> 
 ####Description
-Allows the imager or camera to decode only the barcode that is directly under the cross-hair (+)/center of the reticle part of the pattern. This feature is useful in applications where multiple barcodes may appear in the field of view during a decode session and only one of them is targeted for decode. Supported on Android devices with EMDK version 6.3 and above.
+Allows the imager or camera to decode only the barcode that is directly under the cross-hair (+)/center of the reticle part of the pattern. This feature is useful for apps that might encounter multiple barcodes in the field of view at the same time during a decode session and only one is targeted for decode. Supported on Android devices with EMDK version 6.3 and above.
 ####Values
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):

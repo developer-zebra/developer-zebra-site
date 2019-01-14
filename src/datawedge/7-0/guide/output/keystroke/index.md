@@ -89,14 +89,50 @@ This setting applies when the Scanning mode in [Barcode Reader Params](../../inp
 
 **Note: Supported with internal imager on TC20/TC25 devices only**. 
 
-**To configure MultiBarcode output**: 
+####To configure MultiBarcode output:
 
-**&#49;. Tap "Data formatting and ordering" to specify a separator character** to be inserted between the data from each barcode. 
+1. Tap "Data formatting and ordering" to specify a separator character to be inserted between the data from each barcode. 
 <img style="height:350px" src="../dw_6.7_data_formatting_and_ordering.png"/>
 <br>
-**&#50;. Tap "Barcode separator" to specify the desired insertion character** (CR, LF or TAB).<br>Data from each barcode is otherwise concatenated and delivered as a single string of keystrokes.
+2. Tap "Barcode separator" to specify the desired insertion character (CR, LF or TAB).<br>Data from each barcode is otherwise concatenated and delivered as a single string of keystrokes.
 <img style="height:350px" src="../dw_6.7_data_separating.png"/>
 
+####To configure a custom separator character as the MultiBarcode separator:
+
+Select a supported default character (CR, LF, or TAB) as a MultiBarcode separator together with the Advanced Data Formatting plugin configuration to replace this selected character with a user specified character. The following steps replaces "TAB" with "+" as the custom separator character:
+
+1. Tap "Data formatting and ordering" to specify a separator character to be inserted between the data from each barcode. 
+<img style="height:350px" src="../dw_6.7_data_formatting_and_ordering.png"/>
+<br>
+2. Tap "Barcode separator" to specify the desired insertion character (CR, LF or TAB). In this case, select TAB.<br>Data from each barcode is otherwise concatenated and delivered as a single string of keystrokes.
+<img style="height:350px" src="../dw_6.7_data_separating.png"/>
+3. Tap back to return to the main profile screen. Select **Advanced data formatting** 
+<img style="height:370px" src="./dw_keystroke_tap_advanced_data_formatting.png"/>
+4. Under "Keystroke output" click Enable (tap on the checkbox). Tap Rule0.
+<img style="height:370px" src="./dw_keystroke_advanced_data_formatting.png"/>
+5. Tap Actions to configure.
+<img style="height:370px" src="./dw_keystroke_rule0_actions.png"/>
+6. From the hamburger menu at the top right, select “New action”.
+<img style="height:370px" src="./dw_keystroke_rule0_actions_new_action.png"/>
+7. Scroll down and tap “Replace string”.
+<img style="height:370px" src="./dw_keystroke_replace_string.png"/>
+8. Tap “Replace String”. 
+<img style="height:370px" src="./dw_keystroke_rule0_actions_2.png"/>
+9. Tap "Find String". 
+<img style="height:370px" src="./dw_keystroke_find_string.png"/>
+10. Enter the hexadecimal notation for tab: \x09. Tap OK.
+<img style="height:370px" src="./dw_keystroke_enter_string_tab.png"/>
+11. Tap "Replace String". 
+<img style="height:370px" src="./dw_keystroke_replace_string_2.png"/>
+12. Enter desired string to use as replacement, for example "+".  Tap OK.
+<img style="height:370px" src="./dw_keystroke_replace_plus.png"/>
+13. Tap back to return to the rule.
+<img style="height:370px" src="./dw_keystroke_rule0_actions_2.png"/>
+14. Tap and hold the horizontal bars next to "Replace string" and drag it above "Send Remaining". 
+<img style="height:370px" src="./dw_keystroke_rule0_actions_3.png"/>
+15. Tap back.
+
+When performing a scan, each barcode in the MultiBarcode decode is now followed by a plus "+" character.
 
 <!-- 
 Send data - Set to transfer the captured data to the foreground application. Disabling this option prevents the actual data from being transmitted. However, the prefix and suffix strings, if present, are still transmitted even when this option is disabled (default - enabled).

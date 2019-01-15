@@ -29,7 +29,7 @@ In the [Admin View](../admin) dashboard, click on the **Settings** tab to displa
 * **Data Imports** - Import Access Point (AP) and device friendly names to aid in locating devices. It is particularly important for the AP friendly name to be easily understood for users to determine the location within the facility, for example by department name: clothing, produce, household, etc. Steps for data import for both access points and devices:
     1.	Download the supplied template by clicking on “Download Sample” next to the appropriate category.
     2.	Open the .csv file. Fill in the necessary information and save changes.  
-    **Important**: Zebra recommends using a text editor to edit the .csv file. Some applications, such as Microsoft Excel, may automatically modify the data format unexpectedly.
+    **Important**: Some applications, such as Microsoft Excel, may automatically modify the data format unexpectedly. Ensure the fields are formatted appropriately, such as the serial number in "number" format (with no decimal places). Otherwise Zebra recommends using a text editor to edit the .csv file. 
     3.	Tap on “Upload CSV File” next to the appropriate category. Browse and select the updated file. 
     4.	Check the status in Data Upload History. If successful, the data is uploaded. 
 

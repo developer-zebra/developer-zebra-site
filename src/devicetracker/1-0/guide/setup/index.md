@@ -19,7 +19,7 @@ Solution components:
 > Important: An SSL Certificate is required from a third party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non-third party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
 
 ##System Requirements
-This section provides the server and device requirements. Device Central supports a maximum of 10,000 devices per installation.
+This section provides the server and device requirements. Device Tracker supports a maximum of 10,000 devices per installation.
 
 ###Server Requirements
 1. Windows Operating Systems supported:
@@ -36,12 +36,12 @@ This section provides the server and device requirements. Device Central support
    * Java runtime
    * Node.js version 6.11
    * PostgreSQL 9.6.3-3 or higher
-   * PowerPrecision Console software (server and client) 
+   * Device Tracker software (server and client) 
 
 4. Network Access Requirements:
    * If required, open incoming and outgoing ports for communication between server and mobile devices through the server firewall. The default ports used are: 
-        * Data Port 8080 for PPC client to register and upload battery data 
-        * Web Portal Port 8443 for accessing PPC web portal  
+        * Data Port 8080 for Device Tracker client to register and upload battery data 
+        * Web Portal Port 8443 for accessing Device Tracker web portal  
    * If required, perform DNS setup to add server IP address to the DNS server. 
 
 5. Hardware Requirements: 
@@ -118,7 +118,7 @@ _Figure 6. Installation - review settings_
 _Figure 7. Installation - complete_
 
 ###Server Setup
-1. **DNS (Domain Name Server) Setup.** The PPC server runs in a domain, for example _name.company.com_. To run PPC, an entry in the DNS server is required to add the server IP address. The DNS server and PPC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
+1. **DNS (Domain Name Server) Setup.** Device Tracker server runs in a domain, for example _name.company.com_. To run Device Tracker, an entry in the DNS server is required to add the server IP address. The DNS server and Device Tracker server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
 
 2. **Server SSL Certificate.** An SSL certificate is required for secured connections. 
 Steps to generate the certificate:<br>
@@ -135,54 +135,17 @@ F. At the command prompt, execute the following command:<br>
 	Where "-certfile IntermediateCA.cer" is optional.
 <br>
 G. When prompted, enter the certificate password to export "ssl_certificate.pfx".<br>
-H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to the following folders:
-   * Zebra Technologies\PowerPrecision Console\Server\PowerPrecision Console Server
-   * Zebra Technologies\PowerPrecision Console\Server\WebUI
+H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to a designated folder.
 <br>
 
-3. **Server Setup.** From default folder “\Power Precision Console\Release\Server\WebUI”, open the .env file. Set the following variables: 
-
-		SERVER=”https://name.company.com:8080/ppcdata" 
-		PORT=”8080”
-		SSL_CERT = <ssl_certificate.pfx>
-		SSL_CERT_PASSWORD = <*****>
-		PORT_HTPS=<port_number> 
-
-	Replace all values in the angled brackets <> to the appropriate value or string and remove the brackets. 
-
-	For SERVER, replace “name.company.com” and the port number 8080 with the appropriate server name and port number (if changed). <br>
-	For PORT, change this to the appropriate desired value if necessary. This value must match the "server.port" value specified in "application.properties" file, discussed in the next step.<br>
-	For SSL_CERT, replace the string with the name of the SSL certificate.<br>
-	For SSL_CERT_PASSWORD, replace the string with the SSL certificate password.<br>
-	For PORT_HTTPS, this is optional and required only if port 8443 is not used by default for HTTPS. Specify the alternative port used for HTTPS.
-
-	In default folder “\Power Precision Console\Server\PowerPrecisionConsoleServer\config”, open “application.properties.” Set the following properties:  
-
-		server.dns=<name.company.com> 
-		server.idDesc=<store location> 
-		server.port=<8080> 
-
-		# SSL certificates 
-		server.ssl.key-store:<ssl_certificate.pfx>  
-		server.ssl.key-store-password:<password>
-
-		# export data
-		data.export.Path=<C:\\ppcData\\>
-
-	Replace all values in the angled brackets <> to the appropriate value or string and remove the brackets. 
-	
-	The "export data" section specifies the file path for data to be exported from an automatic data backup or [manual report export](../mgmt). Only the hard drive letter is configurable, ie. D:\\ppcData\\, and write permissions are required for the specified hard drive. A monthly data backup is automatically generated on a daily basis starting one month after install. Historical data is accumulated for the month and exported in .CSV format.
-
-	In the "SSL certificates" section, if a hashtag exists in the password line, it must be removed to uncomment out the password line. Enter in the appropriate SSL password following the colon.
-
-	Note: If port 8080 is not available on the server, any other available port can be used in replacement. Some network policies might block incoming and outgoing ports - it is required to open the configured ports in the network firewall as described in the next section “Open inbound/outbound ports on the firewall” 
-
-4. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices, specified in the .env file. The method to open the ports depends on the firewall software used by the network administrator. By default the ports are:   
+3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The method to open the ports depends on the firewall software used by the network administrator. By default the ports are:   
 
 	* Inbound ports: TCP ports 8080 and 8443
 	* Outbound port: TCP port 8080
+
+Note: Any available ports can be used in replacement of the default ports. 
 <br>
-5. **Run the PPC Server Software.** Start the server services by launching the desktop shortcut icon "START_PPC_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/ppcui**
+4. **Run the Device Tracker Server Software.** Start the server services by launching the desktop shortcut icon "START_DTRK_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/zdvc**
 
 	Where "name.company.com" is replaced with the appropriate information.
 
@@ -192,11 +155,11 @@ H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
 	* Password: admin 
 
    Zebra recommends to change the password immediately for the _super admin_ user to avoid unauthorized access. Tap on "SAdmin" user at the top right of the Admin View and select "Change password".
-6. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
+5. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
 A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
-B. Enter the Web UI URL, for example `https://name.company.com:8443/ppcui`<br>
-C. Click the Scan button. A successful result returns green checks for each step. _See Figure 1 below._ <br>
-D. Enter the backend URL for your server, for example `https://name.company.com:8080/ppcdata` <br>
+B. Enter the Web UI URL, for example `https://name.company.com:8443/zdvc`<br>
+C. Click the Scan button. A successful result returns green checks for each step. _See Figure 8 below._ <br>
+D. Enter the backend URL for your server, for example `https://name.company.com:8080/zdvc` <br>
 E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
 _Figure 8. SSLTools.com results_
@@ -213,26 +176,27 @@ Install Device Tracker client on the supported Zebra device to register the devi
 Steps for client installation:
 1. Download Device Tracker client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
 2. Install DTRKClient.apk. 
-   * For Android Marshmallow and Nougat devices, install the .APK located in folder PPCClient\Client\M_N.
-   * For Android Oreo devices, install the .APK located in folder PPCClient\Client\O.
 3. When prompted, enable the “Apps that can draw over other apps” overlay permission. 
 4. Reboot the device
-5. For remote configuration using StageNow or an EMM (using XML or Managed Config), install PPCClientMgr.apk located in PPCClient\PluginCSP
 
 ###Client Configuration
 Configure the server address and port either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
 
 ####Manual Configuration
 Steps for manual configuration:
-1. Open PowerPrecision Console Client.
-2. If prompted, enable the “Apps that can draw over other apps” overlay permission. 
-3. Tap the hamburger menu at the top right, then tap Settings. 
-4. Tap Server URL. Enter in the server URL, for example: **name.company.com:8080/ppcdata** 
+1. Open Device Tracker client.
+2. Tap "Yes" to "Ignore battery optimizations". This is required for the client to remain connected to the server while running in the background.
+3. Tap "Allow" to "Allow Device Tracker to access this device's location". This is required to allow BLE (Bluetooth Low Energy) locationing.
+4. Tap the hamburger menu at the top right, then tap "Settings".  
+5. Enter in the following information:
+ * **Server URL** - URL for the server with port number and Device Tracker path specified, for example: **name.company.com:8080/zdvc/dtrk**
+ Where "name.company.com:8080" is replaced with the appropriate domain and port number.
+ Note: The URL must not contain "https://" nor "http://".
+ * **Server Auth UserName** - UserName designated during server install
+ * **Server Auth Password** - Password designated during server install
 <br>
-Where "name.company.com:8080" is replaced with the appropriate domain name and port number. <br>
-Note: the URL must not contain "https://".
-5. Tap OK to save the changes and return to the main screen.
-PPC Client registers with the server and uploads battery data.
+6. Tap the device back button to save the changes and return to the main screen.
+Device Tracker client registers with the server and loads "Devices to be found".
 
 ####Remote Configuration Deployment
 Steps for remote configuration with StageNow and CSP Plug-in, with the option of deployment through Enterprise Mobile Management (EMM):

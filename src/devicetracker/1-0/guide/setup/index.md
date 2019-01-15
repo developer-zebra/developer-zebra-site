@@ -6,7 +6,7 @@ productversion: '1.0'
 ---
 ## Overview
 
-Device Tracker server runs on a Windows-based server or desktop. The Device Tracker client runs on supported [Zebra devices](../about/#supporteddevices). This section provides system requirements and instructions for install and setup for the solution.
+Device Tracker server runs on a Windows-based server or desktop. Device Tracker client runs on supported [Zebra devices](../about/#supporteddevices). This section provides system requirements and instructions for install and setup for the solution.
 
 Solution components:
 * On-premise Device Tracker server (application server with database)
@@ -40,7 +40,7 @@ This section provides the server and device requirements. Device Tracker support
 
 4. Network Access Requirements:
    * If required, open incoming and outgoing ports for communication between server and mobile devices through the server firewall. The default ports used are: 
-        * Data Port 8080 for Device Tracker client to register and upload battery data 
+        * Data Port 8080 for Device Tracker client to register and transmit device data 
         * Web Portal Port 8443 for accessing Device Tracker web portal  
    * If required, perform DNS setup to add server IP address to the DNS server. 
 
@@ -78,10 +78,16 @@ This section provides the server and device requirements. Device Tracker support
    </table>
 
 ###Device Requirements
+Requirements for Device Tracker client:
+* The device is connected to the same network as the server. 
+* Zebra Data Service agent is running on the device. This agent collects data from the device and transmits it to the Device Tracker server.
+* Bluetooth radio is enabled on the device. BLE (Bluetooth Low Energy) beacons are used to help locate devices.
+* The server address is configured in the Device Tracker client to communicate with the server. 
+
 See supported [Zebra devices](../about/#supporteddevices).
 
 ##Server Install & Setup
-After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+Install Device Tracker server on the supported system that meets the specified requirements. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ###Server Installation
 1. Double-click on the .EXE to launch the installer.
@@ -94,20 +100,18 @@ _Figure 2. Installation - EULA_
 4. Browse to the destination folder. Click Next.
 ![img](DTRK_Install_3.JPG)
 _Figure 3. Installation - destination location_
-5. Enter in the server configuration:
-   * Domain
-   * Server certificate file
-   * Server certificate password
-   * UI port eg. 8443
-   * Backend server port eg. 8080
-Click Next.
+5. Enter in the server configurations then click Next:
+   * Domain - domain name for server, e.g. name.company.com
+   * Server certificate file - location of server certificate (.pfx file)
+   * Server certificate password - designate certificate password
+   * UI port - by default, 8443
+   * Backend server port - by default, 8080
 ![img](DTRK_Install_4.JPG)
 _Figure 4. Installation - server configuration_
-6. Enter in server authentication and credentials.
+6. Enter in server authentication and credentials then click Next:
    * Super admin and database password
    * Server auth key
    * Server auth password
-Click Next.
 ![img](DTRK_Install_5.JPG)
 _Figure 5. Installation - server authentication and credentials_
 7. Review settings. Click Next.
@@ -138,16 +142,14 @@ G. When prompted, enter the certificate password to export "ssl_certificate.pfx"
 H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to a designated folder.
 <br>
 
-3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The method to open the ports depends on the firewall software used by the network administrator. By default the ports are:   
+3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The method to open the ports depends on the firewall software used by the network administrator. The ports are specified during the server install. By default the ports are:   
 
 	* Inbound ports: TCP ports 8080 and 8443
 	* Outbound port: TCP port 8080
-
-Note: Any available ports can be used in replacement of the default ports. 
 <br>
-4. **Run the Device Tracker Server Software.** Start the server services by launching the desktop shortcut icon "START_DTRK_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/zdvc**
+4. **Run the Device Tracker Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/zdvc**
 
-	Where "name.company.com" is replaced with the appropriate information.
+	Where "name.company.com:8443" is replaced with the appropriate domain and port number.
 
 	Default login credentials (case-sensitive) for _super admin_ user are: 
 
@@ -165,22 +167,16 @@ E. Click the Scan button. A successful result returns green checks for each step
 _Figure 8. SSLTools.com results_
 
 ##Client Install & Setup
-Install Device Tracker client on the supported Zebra device to register the device and upload data to the server. Client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management). Requirements for Device Tracker client:
-* The device is connected to the same network as the server. 
-* The server address is configured in the Device Tracker client to communicate with the server. 
-* Zebra Data Service agent is running on the device. This agent collects data from the device and sends it to the Device Tracker server.
-* Bluetooth radio is enabled on the device. BLE (Bluetooth Low Energy) beacons are used to locate devices.
-
+Install Device Tracker client on the supported Zebra device to register the device and transmit data to the server. Client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management). 
 
 ###Client Installation
-Steps for client installation:
+Steps for client installation on the device:
 1. Download Device Tracker client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
 2. Install DTRKClient.apk. 
-3. When prompted, enable the “Apps that can draw over other apps” overlay permission. 
-4. Reboot the device
+3. Reboot the device
 
 ###Client Configuration
-Configure the server address and port either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
+Configure the server address, server authorized user name, and server authorized password either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
 
 ####Manual Configuration
 Steps for manual configuration:
@@ -189,58 +185,54 @@ Steps for manual configuration:
 3. Tap "Allow" to "Allow Device Tracker to access this device's location". This is required to allow BLE (Bluetooth Low Energy) locationing.
 4. Tap the hamburger menu at the top right, then tap "Settings".  
 5. Enter in the following information:
- * **Server URL** - URL for the server with port number and Device Tracker path specified, for example: **name.company.com:8080/zdvc/dtrk**
+   * **Server URL** - URL for the server with port number and Device Tracker path specified, for example: **name.company.com:8080/zdvc/dtrk**
  Where "name.company.com:8080" is replaced with the appropriate domain and port number.
  Note: The URL must not contain "https://" nor "http://".
- * **Server Auth UserName** - UserName designated during server install
- * **Server Auth Password** - Password designated during server install
+   * **Server Auth UserName** - UserName designated during server install
+   * **Server Auth Password** - Password designated during server install
 <br>
 6. Tap the device back button to save the changes and return to the main screen.
 Device Tracker client registers with the server and loads "Devices to be found".
 
 ####Remote Configuration Deployment
 Steps for remote configuration with StageNow and CSP Plug-in, with the option of deployment through Enterprise Mobile Management (EMM):
-<!-- 1. Install PPCCspMgr.apk, distributed as part of the PPC software. Open PPCCspMgr app.-->
-1. Download PPC Client software from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files.
-2. Compress two files distributed as part of the PPC Client software into a single .zip file: 
-	* com.zebra.ppcclientmgr.dsd 
-	* PPCClientMgr.apk (PPC Client CSP Manager Plug-in)
 
-3. Open StageNow. 
-4. Import the CSP Plugin Library. <br>
+1. Download Device Tracker client software DTRKClient.zip from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). The .zip file includes the following: 
+	* com.zebra.devicetracker.dsd 
+	* DTRKClient.apk
+2. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC. 
+3. Import the CSP Plugin Library: <br>
 A. In the StageNow home screen, click “CSP Library” from the left menu. <br>
-B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file.<br> 
+B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file. Click "OK" in the confirmation message. <br> 
 C. Once successfully uploaded, the CSP Library is listed in the Plugin tab.<br>
 ![img](SN_CSPLib.JPG)
 _Figure 2. Import plugin into CSP Library_
-5. Create a new setting.<br>
+4. Create a new setting:<br>
 A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” button at the top right. <br>
 ![img](SN_Settings.JPG)
 _Figure 3. Import into CSP Library_ <br>
-B. For the “Setting Type”, select “com.zebra.ppclientmgr." Enter a name for the setting. Enter the server URL e.g. `ppc.zebra.com:8080/ppcdata`. Select the desired option to determine whether or not to allow the end user to edit the setting. Select the MX version for the device.  <br>
+B. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `name.company.com:8080/zdvc/dtrk`, where "name.company.com:8080" is replaced with the appropriate domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Select the MX version for the device.  <br>
 ![img](SN_CreateSettings.JPG)
 _Figure 4. Create New Setting_ <br>
 C. Tap Save. The new setting is listed in the Settings screen.
-6. Create profile.<br>
+5. Create profile:<br>
 A. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
-B. Make sure the proper MX version is selected.<br>
-C. Select “XpertMode." Click Create.<br>
-D. Enter the profile name. Click Start.<br>
-E. In the Settings list, click the add (+) sign next to “com.zebra.ppcclientmgr”. This adds to the Config tab on the right side. Click on Add button.<br>
+B. In "Select a Wizard" screen, make sure the proper MX version is selected at the top drop-down selector. Select “XpertMode" from the table. Click Create.<br>
+C. Enter the profile name. Click Start.<br>
+D. In the Settings tab, click the add (+) sign next to “com.zebra.devicetracker”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_Profile_AddSetting.JPG)
 _Figure 5. Add CSP to profile_ <br>
-F. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in step 5. 
+E. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in step 5. Validate all settings and click Continue.
 ![img](SN_Profile_SNConfig.JPG)
 _Figure 6. Re-use saved setting_ <br>
-G. Click Continue. <br>
-H. In the Review section, review the settings and make modifications if needed. Click “Complete Profile." <br>
-I. In the Publish section, select the desired barcode type. 
+F. Click “Complete Profile." <br>
+G. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
 _Figure 7. Generate StageNow barcode_ <br>
-J. Click Test. A window opens with the generated StageNow barcode in .pdf format.<br>
-7. For EMM Staging, continue to section "Steps for EMM Staging" below.
-8. Open the StageNow client on the device.
-9. Scan the barcode with the StageNow client to configure the PPC Client. <br>
+H. A window opens with the generated StageNow barcode in .pdf format.<br>
+6. For EMM Staging, continue to section "Steps for EMM Staging" below.
+7. After the Device Tracker client is installed, open the StageNow client.
+8. In StageNow, scan the barcode generated to configure the Device Tracker client with the settings specified. <br>
 
 For more information refer to [StageNow download](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) and [StageNow documentation](http://techdocs.zebra.com/stagenow). 
 <br>
@@ -251,7 +243,7 @@ For more information refer to [StageNow download](https://www.zebra.com/us/en/su
 2. Select the "Export option for EMM" to export the .xml file.  Save the .xml file.
 ![img](SN_ExportMDM.JPG)
 _Figure 8. Export for EMM_
-3. Push the .xml settings via EMM to the device for PPC Client configuration.
+3. Push the .xml settings via EMM to the device for Device Tracker client configuration.
 
 <!--
 ####Remote Configuration Deployment Without StageNow

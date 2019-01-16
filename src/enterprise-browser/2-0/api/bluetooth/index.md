@@ -51,7 +51,7 @@ Used to connect with a Bluetooth device.
 
 #### Parameters
 
-* **MacAddress: <span class='text-info'>string</span><br>
+* **MacAddress**: <span class='text-info'>string</span><br>
 MAC address of the Bluetooth device to connect with, expressed as a string of characters 
 * **secureConnection**: <span class='text-info'>boolean</span> (true/false)<br>
 Determines whether to apply Bluetooth Security to the connection.  
@@ -80,7 +80,7 @@ Used to write data to a connected Bluetooth device such as a printer.
 Data to be written to the connected Bluetooth device 
 * **CallBackHandler**: <span class='text-info'>callback</span><br>
  * **Return parameters**: <span class='text-info'>HASH</span><br>
- 	**Status**: string (“success” or “failure”)
+ 	**Status**: string (“success” or “failure”)<br>
 	**Message**: Returns a relevant message
 
 #### Example
@@ -100,10 +100,10 @@ Used to read data from the connected Bluetooth device.
 
 #### Parameters
 
-* **Status**: <span class='text-info'>string</span><br> (“success” or “failure”)
+* **Status**: <span class='text-info'>string</span> (“success” or “failure”)
 * **CallBackHandler**: <span class='text-info'>callback</span><br>
  * **Return parameters**: <span class='text-info'>HASH</span><br>
- 	**Status**: string (“success” or “failure”)
+ 	**Status**: String (“success” or “failure”)<br>
 	**Message**: String <br>
 	**Data**: returns data (on success), empty string (on failure)
 

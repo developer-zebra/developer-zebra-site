@@ -75,7 +75,8 @@ For more information about approved languages or to download a localized operati
 * Updated **[Decoder Selection](../input/barcode/#decoderselection)** now supports:
  * GS1 Datamatrix
  * GS1 QRCode
-* Added support for [DS2278 Bluetooth Scanner](../input/barcode/#bluetoothscanners).
+* Added support for **[DS2278 Bluetooth Scanner](../input/barcode/#bluetoothscanners)**.
+* Added support for **[MultiBarcode Data Output](../output/keystroke)** across all Zebra devices.
 
 ###Other Changes
 * Improved layout for **[SET_CONFIG API](../api/setconfig/#scannerinputparameters)** scanner input parameters.

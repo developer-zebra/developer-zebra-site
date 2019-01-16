@@ -6,7 +6,13 @@ layout: guide.html
 ---
 
 ## Overview
-The Bluetooth API allows Enterprise Browser apps to connect with and disconnect from Bluetooth devices, and to read from and write connected devices such as printers and scanners.
+The Bluetooth API allows Enterprise Browser apps to connect with and disconnect from Bluetooth devices, and to read from and write to (as applicable) connected devices such as printers and scanners.
+
+**Introduced with EB 2.0**. 
+
+**Supported on devices running Android 4.4 KitKat and newer**. 
+
+-----
 
 ## Enabling the API
 
@@ -34,176 +40,102 @@ To include individual APIs, first include a reference to the `ebapi.js` file in 
     <script type="text/javascript" charset="utf-8" src="ebapi.js"></script>
     <script type="text/javascript" charset="utf-8" src="eb.bluetooth.js"></script>
 
-> In the lines above, notice that `ebapi.js` is included first, followed by `eb.bluetooth.js`, which is the Enterprise Keyboard API for Enterprise Browser. **Similar coding is required on any HTML page that calls an individual API**.
+> In the lines above, notice that `ebapi.js` is included first, followed by `eb.bluetooth.js`, which is the EB Bluetooth API. **Similar coding is required on any HTML page that calls this or any other individual API**.
 
-##Methods
+-----
 
-##`MORE INFO TO COME`
-
-<!-- 
-
-Below stuff need to be documented under EB 2.0 TechDocs Location
-
-1) EB.Bluetooth.connect(String MacAddress, boolean secureConnection , CallBackHandler callback)
-2) EB. Bluetooth.readData(CallBackHandler callback)
-3) EB. Bluetooth.writeData(String data, CallBackHandler callback)
-4) EB.Bluetooth.disconnect (CallBackHandler callback)
-
-
-### clearLayout()
-Clears the layout set by calling the setLayout API.
-				The Keyboard layout must be reset to its default by calling clearLayout API when the particular keyboard is no longer required.
-				The user can call this API while going out of focus of a particular input box in webview.
-				
-
-####Parameters
-<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
-
-####Returns
-Synchronous Return:
-
-* Void
-
-####Method Access:
-
-* Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.bluetooth.clearLayout()</code> 
-
+## Methods
 
 ### connect()
+Used to connect with a Bluetooth device. 
 
-					Connects to Enterprise Keyboard and binds with EKB service. All other APIs to configure the Enterprise Keyboard should be called after EKB service is connected.
-						EB.Ekb.connect(connectioncallback);
-				
+#### Parameters
 
-####Parameters
-<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+* **MacAddress: <span class='text-info'>string</span><br>
+MAC address of the Bluetooth device to connect with, expressed as a string of characters 
+* **secureConnection**: <span class='text-info'>boolean</span> (true/false)<br>
+Determines whether to apply Bluetooth Security to the connection.  
+* **CallBackHandler**: <span class='text-info'>callback</span><br>
+ * **Return parameters**: <span class='text-info'>HASH</span><br>
+ 	**Status**: string (“success” or “failure”)<br>
+	**Message**: Returns a relevant message
 
-####Callback
-Async Callback Returning Parameters: <span class='text-info'>HASH</span></p><ul><ul><li>status : <span class='text-info'>STRING</span><p>'connected' or 'disconnected'. </p></li></ul></ul>
+#### Example
 
-####Returns
-Synchronous Return:
+	:::javascript
+	function BTConnect(){
+		EB.Bluetooth.connect("00:22:58:2B:B1:BD",true,connectCallback);
+	}
+	function connectCallback(dat) {
+		document.getElementById("myDiv").innerHTML += dat.status;
+		document.getElementById("otherDiv").innerHTML += dat. message;
+	}
 
-* Void
+### writeData()
+Used to write data to a connected Bluetooth device such as a printer. 
 
-####Platforms
+#### Parameters
 
-* Android
+* **Data**: <span class='text-info'>string</span><br>
+Data to be written to the connected Bluetooth device 
+* **CallBackHandler**: <span class='text-info'>callback</span><br>
+ * **Return parameters**: <span class='text-info'>HASH</span><br>
+ 	**Status**: string (“success” or “failure”)
+	**Message**: Returns a relevant message
 
-####Method Access:
+#### Example
 
-* Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.Ekb.connect()</code> 
+	:::javascript
+	function BTWrite() {
+		EB.Bluetooth.writeData("^XA^A2N,30,30,B:CYRI_UB.FNT^FO100,100^FD
+		Hello Print ^FS^XZ" ,writeCallback);
+	}
+	function writeCallback(dat) {
+		document.getElementById("myDiv").innerHTML += dat.status;
+		document.getElementById("otherDiv").innerHTML += dat. message;
+	}
 
+### readData()
+Used to read data from the connected Bluetooth device. 
 
-### disable()
-Disables the Enterprise Keyboard. If the user tries to put focus in input box, or tries to launch the Enterprise Keyboard programtically via the API, 
-				Enterprise Keyboard will not appear. EKB must be re-enabled through an EB.Ekb.enable() API call. 
-				Enterprise Keyboard will be enabled by default. It is the application developer's responsibilty to enable the API after disabling it. Otherwise Enterprise Keyboard will remain disabled after page navigation until re-enabled using the Enable API call.
-		    
+#### Parameters
 
-####Parameters
-<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+* **Status**: <span class='text-info'>string</span><br> (“success” or “failure”)
+* **CallBackHandler**: <span class='text-info'>callback</span><br>
+ * **Return parameters**: <span class='text-info'>HASH</span><br>
+ 	**Status**: string (“success” or “failure”)
+	**Message**: String <br>
+	**Data**: returns data (on success), empty string (on failure)
 
-####Returns
-Synchronous Return:
-
-* Void
-
-####Method Access:
-
-* Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.Ekb.disable()</code> 
-
+#### Example
+	:::javascript
+	function BTRead() {
+		EB.Bluetooth.readData(readCallback);
+	}
+	function readCallback(dat) {
+		document.getElementById("myDiv").innerHTML = "
+		dat.status+"<br/> Data:"+dat.data +"<br/> message:"+dat.message ;
+	}
 
 ### disconnect()
-Disconnects Enterprise Keyboard and unbinds the EKB service.
+Used to disconnect the Bluetooth device most recently connected using the `connect()` method. 
 
-####Parameters
-<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
+**Note**: If a Bluetooth device is disconnected without calling the `disconnect()` method, a disconnection notification is sent through the `connect()` method callback.
 
-####Returns
-Synchronous Return:
+#### Parameters
 
-* Void
+* **CallBackHandler**: <span class='text-info'>callback</span><br>
+ * **Return parameters**: <span class='text-info'>HASH</span><br>
+ 	**Status**: string (“success” or “failure”)<br>
+ 	**Message**: Returns a relevant message
 
-####Method Access:
+#### Example
 
-* Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.Ekb.disconnect()</code> 
-
-
-### enable()
-Enables EKB from a disabled state. User will be able to access Enterprise Keyboard either programmatically or by putting focus inside an input box.
-
-####Parameters
-<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
-
-####Returns
-Synchronous Return:
-
-* Void
-
-####Method Access:
-
-* Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.Ekb.enable()</code> 
-
-
-### getDefault()
-This method will return an object that represents the default instance of the API Class. For example Camera.getDefault will return a Camera object that represents the default camera.
-
-####Parameters
-<ul><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
-
-####Callback
-Async Callback Returning Parameters: <span class='text-info'>SELF_INSTANCE</span></p><ul></ul>
-
-####Returns
-Synchronous Return:
-
-* SELF_INSTANCE : Default object of Module.
-
-####Method Access:
-
-* Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.Ekb.getDefault()</code> 
-
-
-### setDefault(<span class="text-info">SELF_INSTANCE: EB.Ekb</span> defaultInstance)
-This method allows you to set the attributes of the default object instance by passing in an object of the same class.
-
-####Parameters
-<ul><li>defaultInstance : <span class='text-info'>SELF_INSTANCE: EB.Ekb</span><p>An instance object that is of the same class. </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
-
-####Returns
-Synchronous Return:
-
-* Void
-
-####Method Access:
-
-* Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.Ekb.setDefault(<span class="text-info">SELF_INSTANCE: EB.Ekb</span> defaultInstance)</code> 
-
-
-### setLayout(<span class="text-info">INTEGER</span> inputType, <span class="text-info">String</span> privateImeOption)
-Sets the particular layout for Enterprise Keyboard. The user can configure the Keyboard layout by setting the input type and privateImeOption values. 
-
-####Parameters
-<ul><li>inputType : <span class='text-info'>INTEGER</span><p>The input type to be set for Enterprise Keyboard for getting the input type as Text when set to 1, Number when set to 2, Phone when set to 3 and DateTime when set to 4. See the link below for all other available input types.
-						https://developer.android.com/reference/android/text/InputType.html
-						 </p></li><li>privateImeOption : <span class='text-info'>String</span><p>The only value currently suppported is "scan," which will bring the  Enterprise Keyboard to the foreground with a scan trigger view.
-						 </p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
-
-####Returns
-Synchronous Return:
-
-* Void
-
-####Method Access:
-
-* Class Method: This method can only be accessed via the API class object. 
-	* <code>EB.Ekb.setLayout(<span class="text-info">INTEGER</span> inputType, <span class="text-info">String</span> privateImeOption)</code> 
- -->
+	:::javascript
+	function BTDisconnect() {
+		EB.Bluetooth.disconnect(disConnectCallback);
+	}
+	function disConnectCallback(dat) {
+		document.getElementById("myDiv").innerHTML += dat.status;
+		document.getElementById("otherDiv").innerHTML += dat. message;
+	}

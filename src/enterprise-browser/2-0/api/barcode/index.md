@@ -160,13 +160,11 @@ The Scanned Data of UDI labels is available to the application through callback 
 **If order is important**, Zebra recommends using `EB.Barcode.setProperties` to set properties in the preferred order (see example below) if barcode properties are constant across the app (and not changed by individual pages). If necessary, the `enable()` method can be used later to configure properties. **Zebra recommends setting barcode properties only once for an app**.
 
 #### Example
-Disable all decoder types and enable just a few: 
+Disable all decoder types and enable two: 
 
 	:::xml
-	EB.Barcode.setProperty("allDecoders", "false");
-	EB.Barcode.setProperty("code128", "true") ;
-	EB.Barcode.setProperty("code39", "true");
-	EB.Barcode.enable({EB.Barcode.enable({}, scanReceivedCallBack); 
+	EB.Barcode.setProperties({allDecoders:false,code128:true,code39:true});   
+	EB.Barcode.enable({},scanReceivedCallBack);
 
 ####Parameters
 <ul><li>propertyMap : <span class='text-info'>HASH</span> <span class='label label-info'>Optional</span><p>Provide a set of properties to configure the scanner, for example to enable specific symbologies or check digits. Valid `properties` for this parameter are the properties available to this API module. Check the <a href='#api-barcode?Properties'>property section</a> for applicable properties. failure to provide properties to this function will use the scanner's default properties, or those previously set on the Scanner instance.</p></li><li>callback : <span class='text-info'>CallBackHandler</span></li></ul>
@@ -673,6 +671,8 @@ Describes the type of aiming to use. Supported on Android with EMDK version 6.3 
 * Constant: EB.Barcode.AIMTYPE_PRESENTATION - String: "presentation" Provided to support Kiosk devices. The scanner illuminates when movement is detected in the range of the scanner window. To use this mode, the scanner must be initiated with a softscan using the `EB.Barcode.start()` method and again after each decode. The device must be equipped with a sensor to detect movement. MK31XX devices come with presentation mode pre-enabled in the scanner driver; the aimType cannot be modified for these devices. **Not supported on Android devices**.
 * Constant: EB.Barcode.AIMTYPE_PRESS_AND_RELEASE - String: "pressAndRelease" Scan continues after the trigger is released until scanTimeout occurs.
 * Constant: EB.Barcode.AIMTYPE_CONTINUOUS_READ - String: "continuousRead" Once the trigger is pulled, barcodes continue to be scanned as long as the trigger is held, enabling rapid scanning. To be used in conjunction with sameSymbolTimeout and differentSymbolTimeout. This value is ignored if viewfinderMode is set to 'dynamicReticle'
+* Constant: EB.Barcode.AIMTYPE_PRESS_AND_SUSTAIN - String: Starts the scan beam when the trigger is pressed and continues the decode session until the Beam Timer is expired, barcode is decoded or read is canceled. **Scan beam is not stopped when the trigger is released**. This avoids unexpected cancellations of a read by subsequently pressing the trigger button of the device; subsequent trigger presses while the beam is ON have no effect. <!-- This note is from DataWedge: Applies to internal imager on TC20/TC25 and RS6000/RS507 Bluetooth scanners connected to TC57/TC77 and PS20 devices. Not confirmed true for EB.-->
+
 
 ####Access
 
@@ -892,12 +892,9 @@ Controls bidirectional redundancy.
 Controls the symbology for Canadian Postal barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
 ####Access
 
-
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.canPostal</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.canPostal</code> 
-
-
 
 ####Platforms
 
@@ -906,20 +903,77 @@ Controls the symbology for Canadian Postal barcodes. If an application is not ex
 * Windows CE
 * Zebra devices only (Some scan engines do not support all symbologies/symbology properties)
 
+###characterSet
+Supported on EB 2.0 and newer. Used to select a character set for camera, imager or laser scanner types. **Requires EMDK 6.10 or newer on the device**.
+
+`characterSetSelection`
+
+Description: It sets the character set to be used to decode the barcode data. If not set, default character set UTF-8 is used. This property allows users to set one parameter at a time. 
+
+#### Type
+<span class='text-info'>string</span>
+
+####Values
+* **AUTO**: Selects the character set automatically from the first correctly decodable character set  used from the preferred order. 
+* **UTF_8**: Selects the UTF-8 character set.
+* **ISO_8859_1**: Selects the ISO-8859-1 character set.
+* **Shift_JIS**: Selects the Shift_JIS character set.
+* **GB18030**: Selects the GB18030 character set.
+
+##### Example
+
+	:::javascript
+	EB.Barcode.characterSetSelection = EB.Barcode.ISO_8859_1; 
+
+### autoCharacterSetFailureOption
+Used as the character set if the system is unable to find a character set from the preferred order that can correctly decode the data. Output string might not fully accurate. Takes affect only if the character set selection is set to "Auto" and allows users to set one parameter at a time. Supported on Android with EMDK version 6.10 and newer. 
+
+#### Type
+<span class='text-info'>Boolean</span> 
+
+#### Values 
+* **NONE: Select NONE as a Character Set Failure Option which means it doesn’t send any string data. 
+* **UTF_8**: Selects UTF-8 as the Character Set Failure Option.
+* **ISO_8859_1**: Selects ISO-8859-1 as the Character Set Failure Option
+* **Shift_JIS**: Selects Shift_JIS as the Character Set Failure Option.
+* **GB18030**: Selects GB18030 as the Character Set Failure Option.
+
+##### Example
+	:::javascript
+	EB.Barcode.characterSetSelection = EB.Barcode.ISO_8859_1; 
+
+#### Methods
+`setautoCharacterSetPreference()` - sets the preferred character set order to decode the barcode data when character set selection is set to "Auto." Returns an array of Character Sets provided for decoding. If nothing is set, returns default array of ["GB2312","UTF8"]. Supported on Android with EMDK version 6.10 and above. Preference order cannot be empty. 
+
+#### Parameters
+<span class='text-info'>Array</span> 
+Provides an array of Character Sets whose barcode should be decoded. Default array is ["GB2312","UTF8"].
+
+##### Example
+	:::javascript
+	EB.Barcode.setautoCharacterSetPreference = ["GB2312","UTF8"]
+	getautoCharacterSetPreference()
+
+#### Type
+<span class='text-info'>Array</span> 
+
+##### Example
+	:::javascript
+	var characterSetList = EB.Barcode.getautoCharacterSetPreference();
+
 ###chinese2of5
 
 ####Type
 <span class='text-info'>BOOLEAN</span> 
 ####Description
 Controls the symbology for Chinese 2of5 barcodes. If an application is not expected to scan this symbology, disable to improve scanning performance.
+
 ####Access
 
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.chinese2of5</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.chinese2of5</code> 
-
-
 
 ####Platforms
 
@@ -4507,9 +4561,9 @@ Describes the available scanning modes such as Single Barcode and UDI. This prop
 #### Callback Parameters 
 After scanning multi-barcode data using `EB.Barcode.enable({}, callback)` method, barcode data is returned as an array of tokenized hash data. The tokenized data is differentiated from other barcode data using `isMULTIBARCODEData` callback parameter. The following callback parameters are defined to retrieve MULTIBARCODE decoded data in the callback method:
 
-`isMULTIBARCODEData` - determines whether the scanned data is `MULTI_BARCODE` decoded data.
+`isMULTIBARCODEData` - determines whether the data is from a `MULTI_BARCODE` scan.
 
-`MULTIBARCODETokenizedData` - contains an array of tokenized data received after processing the MULTIBARCODE data (applies only to `MULTI_BARCODE` decoding). 
+`MULTIBARCODETokenizedData` - an array of tokenized data received after processing the MULTIBARCODE data (applies only to `MULTI_BARCODE` decoding). 
 
 `data` - returns the scanned data.
 
@@ -4702,6 +4756,21 @@ Only applies to an enabled laser or imaging scanner. Disconnecting the trigger w
 
 * Windows Mobile
 * Zebra devices only (scanners on Symbol-branded devices)
+
+### triggerType
+Sets the device trigger to a supported trigger type.
+
+#### Type
+<span class='text-info'>String</span>
+
+#### Values 
+* **HARD**: Sets trigger type to "Hard," which requires the device user to manually press the hardware trigger on the device after the EB.Barcode.enable() call is issued. 
+* **SOFT_ALWAYS**: Sets the trigger type to "Soft," for all pending scans and future reads.
+* **SOFT_ONCE**: Sets the trigger type to "Soft," only for the pending read or for the next issued read.
+
+##### Example
+	:::javascript
+	EB.Barcode.triggerType = EB.Barcode.HARD;
 
 ###trioptic39
 

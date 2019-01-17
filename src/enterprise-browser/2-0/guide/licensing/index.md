@@ -134,7 +134,10 @@ Current licenses on the device (if any) are shown along with a series of buttons
 		// for XML file in a specific License Manager folder on device:  
 		start "\Program Files\LicenseManager\LicenseManager.exe" activate \Program Files\LicenseManager\license.xml 
 <br>
+
 6. Following the operation, a `Result.xml` file is placed in the same location as the source XML file. 
+
+
 <!-- 
 #### Activation Using Shortcuts
 An EMM system admin deploy use a Windows Mobile/CE shortcut (`.lnk`) file to launch License Manager and activate a license on a device. This can help simplify mass deployment of licenses across an enterprise. 
@@ -157,11 +160,6 @@ activate license.xml
 Push the test.lnk file to WINDOWS/Start Menu
 Reboot the device to see the licensemanager shortcut
 Launch the shortcut to execute the command line argument and see the result.xml at root directory.
-
-
-LicenseManager generates a LM_Log.txt under installed directory of the device on WM/CE devices
-While reporting the issue, user needs to provide this log to Zebra licensing team
-Similarly on android, adb logs and RXLogs needs to be shared when any issue is reported
 
  -->
 -----
@@ -244,6 +242,14 @@ Also see [related guides](#relatedguides).
 Enterprise Browser supports the transfer of licenses from one device to another if the device licenses were originally activated using a cloud-based or local licensing server. This is accomplished by returning the activated license(s) to the pool (using License Action "Return") and activating them on new device(s).
 
 See the [License Manager section](/stagenow/latest/csp/license) of Zebra's StageNow tool for details.
+
+-----
+
+## Logging
+
+**On Android devices**, License Manager activities are captured in adb and RXLogger log files. 
+
+**On Windows Mobile/CE devices**, License Manager activities are written to `LM_Log.txt` in the app's install directory. 
 
 -----
 

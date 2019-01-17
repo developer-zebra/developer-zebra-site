@@ -71,6 +71,8 @@ Determines whether to apply Bluetooth Security to the connection.
 		document.getElementById("otherDiv").innerHTML += dat. message;
 	}
 
+-----
+
 ### writeData()
 Used to write data to a connected Bluetooth device such as a printer. 
 
@@ -95,6 +97,8 @@ Data to be written to the connected Bluetooth device
 		document.getElementById("otherDiv").innerHTML += dat. message;
 	}
 
+-----
+
 ### readData()
 Used to read data from the connected Bluetooth device. 
 
@@ -116,6 +120,8 @@ Used to read data from the connected Bluetooth device.
 		document.getElementById("myDiv").innerHTML = "
 		dat.status+"<br/> Data:"+dat.data +"<br/> message:"+dat.message ;
 	}
+
+-----
 
 ### disconnect()
 Used to disconnect the Bluetooth device most recently connected using the `connect()` method. 

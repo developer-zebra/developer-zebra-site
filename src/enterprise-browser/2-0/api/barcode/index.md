@@ -6,16 +6,17 @@ layout: guide.html
 ---
 
 ## Overview
-The Barcode Module controls functionality of the device scanner. Check the platform indicators in each property or method section. If developing for a device with only a camera, the number of symbologies available will be limited to the most common, such as EAN13 and UPCA, and scanning will be available only through the device camera. If the app is running on more well-equipped hardware, finer control over a more fully featured Scanner is available, often with a choice of scanner hardware to use on the device. 
+The Barcode Module controls functionality of the device scanner. The Barcode API of Enterprise Browser 2.0 allows an app to simultaneously scan a specified number of barcodes in view of the scanner. This number is specified using the `BarcodeCount` parameter, which is new in EB 2.0. **This and other new features and properties are supported only on Android devices with EMDK version 6.8 and newer installed**.
 
-If the use case involves capturing a single barcode type (for example, a pricing kiosk app) Zebra recommends using the `Barcode.take(callback)` method. If the app will decode multiple barcode types common in enterprise scenarios (for example a warehouse inventory and receiving app), Zebra recommends using the `Barcode.enable(callback)` method. 
+If the use case involves capturing a single barcode type (for example, a pricing kiosk app) Zebra recommends using the `Barcode.take(callback)` method. If the app is to decode multiple barcode types common in enterprise scenarios (for example a warehouse inventory and receiving app), Zebra recommends using the `Barcode.enable(callback)` method. 
 
-**Notes**: 
+Check the platform indicators in each property or method section. If developing for a device with only a camera; scanning is possible only through that camera and the number of available symbologies is limited to the most common ones, such as EAN13 and UPCA. 
+
+#### Other Notes 
 * **Only foreground apps have access to scanning hardware**. When an app is sent to the background, its state is saved and scanner control is automatically relinquished. When a scanner app returns to the foreground, its previous state is reapplied. 
-
-* **On the VC70**, the scanner will work only if connected in SSI Mode.
-
-* **The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneously in any Enterprise Browser application**; only one or the other should be used. 
+* **On the VC70**, the scanner works only if connected in SSI mode.
+* **The RE 2.x Scanner API and the EB 1.x Barcode API should not be used simultaneously in any Enterprise Browser application**; please select one or the other.
+* **EMDK 6.8 is required** to take full advantage of multi-barcode capabilities in this API. 
 
 ## Enabling the API
 There are two methods of enabling the Barcode API:
@@ -43,7 +44,6 @@ To include individual APIs, first include a reference to the `ebapi.js` module i
 > In the lines above, notice that `ebapi.js` is included first, followed by `eb.barcode.js`, which is the Barcode API for Enterprise Browser. **This coding is required on each HTML page whenever an individual API will be called from that page**.
 
 ##Methods
-
 
 ### addConnectionListener()
 If using an RS507/RS6000/RS4000 barcode scanner, it is possible to add a connection listener to receive connected or disconnected callbacks through this method.
@@ -1854,14 +1854,12 @@ Specifies the time, in seconds, that an external scanner is allowed to remain id
 <span class='text-info'>INTEGER</span> 
 ####Description
 Specifies the time, in seconds, that an external scanner will be allowed to remain idle before the connection is terminated to conserve power.
-####Access
 
+####Access
 
 * Instance: This property can be accessed via an instance object of this class: <code>myObject.connectionIdleTimeout</code>
 * Default Instance: This property can be accessed via the default instance object of this class. 
 	* <code>EB.Barcode.connectionIdleTimeout</code> 
-
-
 
 ####Platforms
 
@@ -4496,8 +4494,30 @@ Describes the available scanning modes such as Single Barcode and UDI. This prop
 
 <strong>Possible Values</strong> (<span class='text-info'>STRING</span>):
  
-* Constant: EB.Barcode.SCANMODE_SINGLE_BARCODE - String: "single_barcode" Decode only a single barcode at a time.
-* Constant: EB.Barcode.SCANMODE_UDI - String: "udi" Decode UDI standard barcodes. This will decode AI fields of the barcodes as well. Note that the UDI scanning is only available with Imager based scanners.
+* Constant: EB.Barcode.SCANMODE_SINGLE_BARCODE - String: "single_barcode" decodes a single barcode at a time.
+* Constant: EB.Barcode.SCANMODE_UDI - String: "udi" decode UDI-standard barcodes and AI fields. **Available only with imager-based scanners**.
+* Constant: EB.Barcode.SCANMODE_MULTI_BARCODE - String: "multi_barcode" decodes multiple standard barcodes simultaneously. Use `barcodeCount` property to set maximum number of barcodes to be scanned at once. **Requires EMDK 6.8 (or newer) on the device**. 
+* Variable: EB.Barcode.barcodeCount - Sets the number of barcodes (integer from 2&ndash;8 to scan at one time. 
+
+##### Example
+	:::javascript
+	EB.Barcode.scanMode =  EB.Barcode.SCANMODE_MULTI_BARCODE;
+	EB.Barcode.barcodeCount =  5;
+
+#### Callback Parameters 
+After scanning multi-barcode data using `EB.Barcode.enable({}, callback)` method, barcode data is returned as an array of tokenized hash data. The tokenized data is differentiated from other barcode data using `isMULTIBARCODEData` callback parameter. The following callback parameters are defined to retrieve MULTIBARCODE decoded data in the callback method:
+
+`isMULTIBARCODEData` - determines whether the scanned data is `MULTI_BARCODE` decoded data.
+
+`MULTIBARCODETokenizedData` - contains an array of tokenized data received after processing the MULTIBARCODE data (applies only to `MULTI_BARCODE` decoding). 
+
+`data` - returns the scanned data.
+
+`source` - returns the source device and human-readable decoder type of the decoded barcode or symbol.
+
+`time` - returns the time of the scan.
+
+`rawData` - returns the raw scanned data.
 
 ####Access
 

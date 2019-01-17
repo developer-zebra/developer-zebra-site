@@ -48,7 +48,7 @@ After a licensing agreement is purchased from Zebra or a Zebra reseller, an emai
 -----
 
 ## III. Manually Assign License
-This section describes the process for activating a license on a single device. To remotely activate multiple licenses for an entire organization, see the [Mass Deployment section](#massdeployment) of this guide. 
+This section describes the process for activating a license on a single device running Android. To manually activate a license on a device running Windows Moblie/CE, see the [Windows Mobile/CE section](#windowsmobilecedevices). To remotely activate multiple licenses for an entire organization, see the [Mass Deployment section](#massdeployment) of this guide. 
 
 #### License Source Types
 * **Cloud-based server** (internet connection required)
@@ -95,7 +95,82 @@ Successful license activation is indicated by a screen similar to the image belo
 <img alt="" style="height:350px" src="7.png"/>
 <br>
 
-#### The device is now licensed to use Enterprise Browser 2.0. 
+#### The Android device is now licensed to use Enterprise Browser 2.0. 
+
+-----
+
+### Windows Mobile/CE Devices
+Zebra provides License Manager apps for both Android and Windows Mobile/CE. Infrastructure differences in the respective operating systems causes the license activation process for Windows Mobile/CE devices to vary significantly from that of Android. **License Manager 1.0 (or higher) is required for licensing Windows Mobile/CE devices**, and is included with the Microsoft Installer (MSI) file (when installing from Windows) and as a `.CAB` file when installing from macOS. 
+
+**Zebra recommends using StageNow to generate XML files** required for this process. [Download StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) for free. 
+
+-----
+
+**To activate a license on a device running Windows Mobile/CE**: 
+
+1. **Push the XML file** required for activation to the device. 
+2. Locate and launch License Manager on the device. <br>
+Current licenses on the device (if any) are shown along with a series of buttons: 
+<img alt="" style="height:350px" src="wmce_license01.png"/>
+<br>
+**Details -** displays information about selected license.<br>
+**Refresh -** contacts the licensing server to renew a device license following the purchase of a license renewal.<br>
+**Return -** relinquishes the selected license.<br> 
+**Add License -** begins the license activation process.<br>
+**Settings -** displays the License Manager Settings panel.<br>
+3. **Tap "Add License"** button. "About License Manager" screen appears.<br>
+**Tap "License Source"** button.   
+<img alt="" style="height:350px" src="wmce_license02.png"/>
+<br>
+4. **Select "Production Cloud Direct"** from the server list. 
+<img alt="" style="height:350px" src="wmce_license03.png"/>
+<br>
+**Details -** displays information about the selected licensing server.<br>
+**Delete -** removes a user-defined licensing server.<br> 
+
+
+Support using MX-xml generated using DSD tool
+
+User need to push the MX xml first followed by launching License Manager with command line arguments. The Result.xml will be placed on the same location where user has placed the MX xml
+activate myxml.xml
+refresh myxml.xml
+return myxml.xml
+reset myxml.xml
+delete myxml.xml
+Example:
+the following command should do the license activation from FNO/LLS/proxy when xml file named license.xml is placed in root directory on the device
+
+use both:
+start "\Program Files\LicenseManager\LicenseManager.exe" activate license.xml (if in ROOT)
+start "\Program Files\LicenseManager\LicenseManager.exe" activate \Program Files\LicenseManager\license.xml 
+
+Where start is the command used in SOTI Mobi control (TESTED) to send a script to device
+SOTI MDM has been used to validate the License deployment & Activation scenario.
+
+A result file that gives the license operation status will be generated as Result.xml under root directory on the device.
+
+
+MDM admin can also use lnk file for interacting with License Manager
+Admin can create a lnk file with licensemanager command line arguments and can push to WINDOWS/Start Menu and can reboot the device to get a shortcut to license Manager.
+Launching (invoking) the short cut can execute license manager with the given command line arguments.
+
+An example is given below.
+Create an activation xml and name it to license.xml. Push license.xml to root directory on the device.
+
+
+Now create a test.lnk file with below content
+71#"\Program Files\LicenseManager\LicenseManager.exe" activate license.xml
+Above content says to create a shortcut of LicenseManger.exe and to pass below command line arguments
+activate license.xml
+Push the test.lnk file to WINDOWS/Start Menu
+Reboot the device to see the licensemanager shortcut
+Launch the shortcut to execute the command line argument and see the result.xml at root directory.
+
+
+LicenseManager generates a LM_Log.txt under installed directory of the device on WM/CE devices
+While reporting the issue, user needs to provide this log to Zebra licensing team
+Similarly on android, adb logs and RXLogs needs to be shared when any issue is reported
+
 
 -----
 

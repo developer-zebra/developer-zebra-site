@@ -14,6 +14,8 @@ The facility administrator monitors devices from the [admin dashboard](../admin)
 1. Animated BLE proximity indicator – Uses the associate's device as a proximity indicator to locate the misplaced device. The indicator shows the distance (in real-time) of the associate's device in relation to the target device being found. As the associate physically approaches near the target device, the distance (in feet) is displayed on the screen. A color-coded visual indicator with animation contracts and expands as the associate moves closer or further away from the target.
 2. Chirping sound – Trigger a chirping sound to play on the target device. This is particularly helpful if the device is hidden. The volume level and sound duration can be adjusted in the server [Settings](../config).
 
+The BLE proximity indicator provides a rough estimation of the distance based on the signal strength of the Bluetooth signal received from the misplaced device. Within proximity of about 1 meter, distance estimation ranges between 0.5 to 2 meters. Further distances will encounter more variation - at 20 meters or more the estimate may vary between 10 to 40 meters. Multiple factors contribute to the variation, including noise on the signal measurement along with signal reflections and interference.
+
 > WiFi and Bluetooth must be enabled on both devices.
 
 ###Procedure to find a device

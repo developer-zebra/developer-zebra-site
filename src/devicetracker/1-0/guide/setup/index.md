@@ -97,18 +97,18 @@ _Figure 1. Installation - initial screen_
 3. Accept the license agreement. Click Next.
 ![img](DTRK_Install_2.JPG)
 _Figure 2. Installation - EULA_
-4. Browse to the destination folder. Click Next.
+4. Accept the default folder or browse to the destination folder. Click Next.
 ![img](DTRK_Install_3.JPG)
 _Figure 3. Installation - destination location_
-5. Enter in the server configurations then click Next:
-   * Domain - domain name for server, e.g. name.company.com
-   * Server certificate file - location of server certificate (.pfx file)
-   * Server certificate password - designate certificate password
-   * UI port - by default, 8443
-   * Backend server port - by default, 8080
+5. Enter in the server configurations, then click Next:
+   * **Domain** - domain name for server, e.g. "name.company.com"
+   * **Server Certificate Path** - location of server certificate (.pfx file)
+   * **Server Certificate Password** - password for server certificate
+   * **UI port** - by default, 8443
+   * **Backend Server Port** - by default, 8080
 ![img](DTRK_Install_4.JPG)
 _Figure 4. Installation - server configuration_
-6. Enter in server authentication and credentials then click Next:
+6. Enter in server authentication and credentials, then click Next:
    * Super admin and database password
    * Server auth key
    * Server auth password
@@ -170,32 +170,32 @@ _Figure 8. SSLTools.com results_
 Install Device Tracker client on the supported Zebra device to register the device and transmit data to the server. Client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management). 
 
 ###Client Installation
-Steps for client installation on the device:
+Steps for client installation on the device, which may be performed either manually or with an EMM (Enterprise Mobile Management):
 1. Download Device Tracker client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
 2. Install DTRKClient.apk. 
 3. Reboot the device
 
 ###Client Configuration
-Configure the server address, server authorized user name, and server authorized password either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
+Configure the client settings either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
 
 ####Manual Configuration
-Steps for manual configuration:
+Steps for manual client configuration after installation:
 1. Open Device Tracker client.
 2. Tap "Yes" to "Ignore battery optimizations". This is required for the client to remain connected to the server while running in the background.
 3. Tap "Allow" to "Allow Device Tracker to access this device's location". This is required to allow BLE (Bluetooth Low Energy) locationing.
 4. Tap the hamburger menu at the top right, then tap "Settings".  
 5. Enter in the following information:
-   * **Server URL** - URL for the server with port number and Device Tracker path specified, for example: **name.company.com:8080/zdvc/dtrk**
- Where "name.company.com:8080" is replaced with the appropriate domain and port number.
- Note: The URL must not contain "https://" nor "http://".
+   * **Server URL** - URL for the server with port number and Device Tracker path specified, for example: **name.company.com:8080/zdvc/dtrk**, where "name.company.com:8080" is replaced with the appropriate domain and port number. The URL must not contain "https://" nor "http://".
    * **Server Auth UserName** - UserName designated during server install
    * **Server Auth Password** - Password designated during server install
 <br>
 6. Tap the device back button to save the changes and return to the main screen.
 Device Tracker client registers with the server and loads "Devices to be found".
 
-####Remote Configuration Deployment
-Steps for remote configuration with StageNow and CSP Plug-in, with the option of deployment through Enterprise Mobile Management (EMM):
+####Remote Configuration
+After installation, follow the procedures below to remotely configure the client.
+
+**Steps for remote client configuration with StageNow and CSP Plug-in:**
 
 1. Download Device Tracker client software DTRKClient.zip from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). The .zip file includes the following: 
 	* com.zebra.devicetracker.dsd 
@@ -206,66 +206,72 @@ A. In the StageNow home screen, click “CSP Library” from the left menu. <br>
 B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file. Click "OK" in the confirmation message. <br> 
 C. Once successfully uploaded, the CSP Library is listed in the Plugin tab.<br>
 ![img](SN_CSPLib.JPG)
-_Figure 2. Import plugin into CSP Library_
+_Figure 9. Import plugin into CSP Library_
 4. Create a new setting:<br>
-A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” button at the top right. <br>
+A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” at the top right. <br>
 ![img](SN_Settings.JPG)
-_Figure 3. Import into CSP Library_ <br>
-B. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `name.company.com:8080/zdvc/dtrk`, where "name.company.com:8080" is replaced with the appropriate domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Select the MX version for the device.  <br>
+_Figure 10. Import into CSP Library_ <br>
+B. Select the MX version for the device. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `name.company.com:8080/zdvc/dtrk`, where "name.company.com:8080" is replaced with the appropriate domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth UserName" and "Server Auth Password", both designated during server install.  <br>
 ![img](SN_CreateSettings.JPG)
-_Figure 4. Create New Setting_ <br>
+_Figure 11. Create New Setting_ <br>
 C. Tap Save. The new setting is listed in the Settings screen.
+![img](SN_NewSetting.JPG)
+_Figure 12. New Setting created_ <br>
 5. Create profile:<br>
 A. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
-B. In "Select a Wizard" screen, make sure the proper MX version is selected at the top drop-down selector. Select “XpertMode" from the table. Click Create.<br>
+B. Ensure the proper MX version is selected at the top drop-down selector. Select “XpertMode" from the table. Click Create.<br>
+![img](SN_CreateNewProfile.JPG)
+_Figure 13. Profile wizard_ <br>
 C. Enter the profile name. Click Start.<br>
-D. In the Settings tab, click the add (+) sign next to “com.zebra.devicetracker”. This adds to the Config tab on the right side. Click Add.<br>
+D. Click the plus (+) sign next to “com.zebra.devicetracker”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_Profile_AddSetting.JPG)
-_Figure 5. Add CSP to profile_ <br>
-E. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in step 5. Validate all settings and click Continue.
-![img](SN_Profile_SNConfig.JPG)
-_Figure 6. Re-use saved setting_ <br>
+_Figure 14. Add Setting_ <br>
+E. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in previous steps. Validate all settings and click Continue.
+![img](SN_ReUseSavedSetting.JPG)
+_Figure 15. Re-use saved setting_ <br>
 F. Click “Complete Profile." <br>
 G. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 7. Generate StageNow barcode_ <br>
-H. A window opens with the generated StageNow barcode in .pdf format.<br>
+_Figure 16. Generate StageNow barcode_ <br>
+H. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 6. For EMM Staging, continue to section "Steps for EMM Staging" below.
-7. After the Device Tracker client is installed, open the StageNow client.
-8. In StageNow, scan the barcode generated to configure the Device Tracker client with the settings specified. <br>
+7. Open the StageNow client on the device.
+8. Scan the barcode generated to configure the Device Tracker client with the settings specified. <br>
 
-For more information refer to [StageNow download](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) and [StageNow documentation](http://techdocs.zebra.com/stagenow). 
+**Steps to create StageNow profile to automatically bypass the device Battery Optimization pop-up message:**
+1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC. 
+2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
+3. Ensure the proper MX version is selected at the top drop-down selector. Select “XpertMode" from the table. Click Create.<br>
+![img](SN_CreateNewProfile.JPG)
+_Figure 17. Profile wizard_ <br>
+4. Enter the profile name. Click Start.<br>
+5. Click the plus (+) sign next to “AppMgr”. This adds to the Config tab on the right side. Click Add.<br>
+![img](SN_AddAppMgr.JPG)
+_Figure 18. Add Setting_ <br>
+6. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in step 5. Validate all settings and click Continue.
+![img](SN_BattOpt.JPG)
+_Figure 19. Re-use saved setting_ <br>
+7. Click “Complete Profile." <br>
+8. In the Publish section, select the desired barcode type. Click Test. 
+![img](SN_Publish.JPG)
+_Figure 20. Generate StageNow barcode_ <br>
+9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
+10. For EMM Staging, continue to section "Steps for EMM Staging" below.
+11. Open the StageNow client on the device.
+12. Scan the barcode generated to automatically bypass the Battery Optimization message.
+
+For more information on StageNow, refer to its [documentation](http://techdocs.zebra.com/stagenow) and [download](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html). 
 <br>
 <br>
-
 **Steps for EMM Staging (optional):**
-1. Follow the steps above for "Remote Configuration Deployment with StageNow and CSP Plugin" up to step 6.
-2. Select the "Export option for EMM" to export the .xml file.  Save the .xml file.
+1. Pre-requisite steps:
+   * Follow procedure for "Device Tracker remote configuration with StageNow and CSP Plug-in" up to step 6
+   * Follow procedure for "Create StageNow profile to automatically bypass the device Battery Optimization pop-up message" up to step 11.
+2. Select "Export option for EMM" from the top to export the .xml file.  Save the .xml file.
 ![img](SN_ExportMDM.JPG)
-_Figure 8. Export for EMM_
-3. Push the .xml settings via EMM to the device for Device Tracker client configuration.
+_Figure 21. Export for EMM_
+3. Push the .xml settings via EMM to the device for the desired client configuration.
 
-<!--
-####Remote Configuration Deployment Without StageNow
-Steps for remote configuration deployment with CSP and EMM:
-1. In "PPCConfig.xml" distributed as part of the PPC Console software, edit ServerURL parameter with the appropriate server address and set the "AllowEditing" value to either true or false to control whether the user is permitted to edit the server URL:
-	<parm name="ServerURL" value="name.company.com:8080/ppcdata  />
-	<parm name="AllowEditing" value="false">
-2. Save changes.
-3. Push "PPCConfig.xml" to folder /sdcard.
-4. In the EMM, send the intent to the PPC Client to configure settings based on the following information: <br>
-	**Intent Type:** StartService <br> 
-	**Package Name:** com.zebra.ppcclient<br>
-	**Class Name:** ConfigService<br>
-	**Extras:** SET_CONFIG_FILE: /sdcard/PPCConfig.xml file
-5. Configure the EMM to receive the configuration response by registering for the intent:<br>
-	**Intent Type:** Broadcast <br>
-	**Action Name:** com.zebra.ppcclient.RESPONSE<br>
-	**Extras:** <br>
-	STATUS: Success or Failed<br>
-	ERROR_MESSAGE: Error Message
-6. PPC Client configuration is complete. It registers with the server and uploads battery data.
--->
 <br>
 -----
 

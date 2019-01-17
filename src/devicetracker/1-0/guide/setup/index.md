@@ -6,15 +6,15 @@ productversion: '1.0'
 ---
 ## Overview
 
-Device Tracker server runs on a Windows-based server or desktop. Device Tracker client runs on supported [Zebra devices](../about/#supporteddevices). This section provides system requirements and instructions for install and setup for the solution.
+Device Tracker server runs on a supported Windows-based server or desktop. Device Tracker client runs on supported [Zebra devices](../about/#supporteddevices). This section provides system requirements and instructions for install and setup for the solution.
 
 Solution components:
-* On-premise Device Tracker server (application server with database)
-* Web portal (dashboard, user management, settings, administrative functions)
-* Device Tracker client on mobile device
+* **On-premise Device Tracker server** - application server with database
+* **Web portal** - dashboard accessible from a supported browser for monitoring devices
+* **Device Tracker client** (on mobile device) - reports presence status and device information to server
 * Other: 
- * SSL certificate (procured by a signed Certificate Authority) configured on server for secure HTTPS communication
- * Open incoming and outgoing ports on server for communication through the firewall
+ * **SSL certificate** (procured by a signed Certificate Authority) - configured on server for secure HTTPS communication
+ * **Open specified incoming and outgoing ports** - for server communication through the firewall, by default ports 8443 and 8080
 
 > Important: An SSL Certificate is required from a third party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non-third party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
 

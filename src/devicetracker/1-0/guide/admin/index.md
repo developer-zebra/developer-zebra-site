@@ -8,7 +8,7 @@ productversion: '1.0'
 ## Overview
 This section discusses the operations available for an administrator, providing a centralized view for device tracking when locating misplaced devices. 
 
-As part of Zebra’s DNA Visibility Console, there are multiple apps available.  At the login screen, select “Device Tracker”, then sign in. To navigate to other apps, click on the app menu icon at the top to the right of the "Device Tracker" title and select the desired app.
+As part of Zebra’s DNA Visibility Console, the server consists of multiple solution offerings. At the login screen, select “Device Tracker”, then sign in. To navigate to other solutions, click on the app menu icon at the top to the right of the "Device Tracker" title and select the desired app solution.
 
 ## Using the Web Console
 

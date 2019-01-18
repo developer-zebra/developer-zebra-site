@@ -1,5 +1,5 @@
 ---
-csp: licensemgr
+csp: 
 title: Return License Method
 type: parm
 order: 75
@@ -29,3 +29,5 @@ parm:
 ---
 
 Used to select the method by which to return a Zebra license.  
+
+<!-- 1/18/19 removed from techdocs per eng. -->

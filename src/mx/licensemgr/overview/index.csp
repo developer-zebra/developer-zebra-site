@@ -10,6 +10,29 @@ The License Manager (LicenseMgr) CSP administers the software licenses on a devi
 
 ### Main Functionality
 
+##### Zebra Licensing
+
+* Perform licensing actions using Zebra or (legacy) Symbol methods
+* Activate / Return / Return All / Refresh Software License(s) 
+* Specify an Activation ID
+* Specify license source:
+ * Cloud
+ * Cloud proxy
+ * Local license server
+ * Preactivated license
+* Remove license source
+* Specify URL and friendly name for on-premise license server
+* Specify URL and friendly name for cloud server via proxy
+
+##### Symbol Licensing
+
+* Apply software license(s) on a device
+* Revoke software license(s) from a device
+* Perform licensing actions on standard and custom features
+* Select whether to embed or reference a license
+* Verify licenses on a device
+
+<!-- 1/18/19- Original content (below) replaced with above, per eng.
 * Apply/Revoke Software License(s) from a device
 * Perform licensing actions using Zebra or (legacy) Symbol methods
 * Perform licensing actions on standard and custom features
@@ -19,6 +42,7 @@ The License Manager (LicenseMgr) CSP administers the software licenses on a devi
 * Specify device-local and web-based license files
 * Specify the URL for an on-premise license administration server  
 * Enable/disable the Zebra License Manager app on a device
+-->
 
 ### License Manager App
 Some Zebra devices include a built-in app called License Manager, which allows device users and/or administrators to perform license-related tasks manually on the device. On some devices, this app can be disabled using the [LicenseAppUI parameter](#license-management-app-enabledisable). 

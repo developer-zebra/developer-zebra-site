@@ -75,71 +75,140 @@ The query below applies only to Software Licenses for the SimulScan Software Com
 			</characteristic>
 		</wap-provisioningdoc>
 
-### Perform Activation ID Action
+### Activate a license from a local server
 
 	:::xml
 	<wap-provisioningdoc>
-		<characteristic type="LicenseMgr" version="5.1" >
+		<characteristic type="LicenseMgr" version="7.3" >
 			<parm name="LicenseChoice" value="zebra"/>
-			<characteristic type="LicenseZebra">
-				<parm name="LicenseActionZebra" value="activate"/>
-				<characteristic type="NewLicenseZebra">
-					<characteristic type="LicenseSourceURL">
-						<parm name="LicenseSource" value="fno_cloud_uat"/>
-					</characteristic>
-					<parm name="ActivationID" value="9f55-3413-9430-45de-b8ff-0fa2-b75d-203b"/>
-					<parm name="ActivationQuantity" value="1"/>
-				</characteristic>
-			</characteristic>
+		<characteristic type="LicenseZebra">
+			<parm name="LicenseActionZebra" value="activate"/>
+		<characteristic type="NewLicenseZebra">
+		<characteristic type="LicenseSourceURL">
+			<parm name="LicenseSource" value="LLS"/>
+			<parm name="URL" value="http://10.61.206.102:7070/request"/>
+			<parm name="ServerFriendlyName" value="Local Server Name"/>
+		</characteristic>
+			<parm name="ActivationID" value="0e62-2e66-53ec-4619-86bb-5246-ce58-24d5"/>
+			<parm name="ActivationQuantity" value="1"/>
+		</characteristic>
+		</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
 
-### Return an Activation ID
+### Return a license to a local server
 
 	:::xml
 	<wap-provisioningdoc>
-		<characteristic type="LicenseMgr" version="5.1" >
+		<characteristic type="LicenseMgr" version="7.3" >
 			<parm name="LicenseChoice" value="zebra"/>
-			<characteristic type="LicenseZebra">
-				<parm name="LicenseActionZebra" value="return"/>
-				<characteristic type="ExistingLicenseZebra">
-					<parm name="ActivationIDReturn" value="9f55-3413-9430-45de-b8ff-0fa2-b75d-203b"/>
-					<parm name="ActivationQuantityReturn" value="0"/>
-			</characteristic>
-			</characteristic>
+		<characteristic type="LicenseZebra">
+			<parm name="LicenseActionZebra" value="return"/>
+		<characteristic type="ExistingLicenseZebra">
+			<parm name="ReturnLicenseSource" value="3"/>
+			<parm name="ReturnAIDLicenseSourceName" value="Local Server Name"/>
+			<parm name="ActivationIDReturn" value="0e62-2e66-53ec-4619-86bb-5246-ce58-24d5"/>
+			<parm name="ActivationQuantityReturn" value="1"/>
+		</characteristic>
+		</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
 
-
-### Return All Activation IDs
+### Return all licenses to a local server
 
 	:::xml
 	<wap-provisioningdoc>
-		<characteristic type="LicenseMgr" version="5.1" >
+		<characteristic type="LicenseMgr" version="7.3" >
 			<parm name="LicenseChoice" value="zebra"/>
-			<characteristic type="LicenseZebra">
-				<parm name="LicenseActionZebra" value="reset"/>
-			</characteristic>
+		<characteristic type="LicenseZebra">
+			<parm name="LicenseActionZebra" value="reset"/>
+		<characteristic type="ExistingLicenseZebra">
+			<parm name="ReturnAllLicenseSource" value="3"/>
+			<parm name="ReturnAllAIDLicenseSourceName" value="Local Server Name"/>
+		</characteristic>
+		</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
 
-
-### Select Zebra License Server as License Source 
+### Activate a license from a cloud-based server
 
 	:::xml
 	<wap-provisioningdoc>
-		<characteristic type="LicenseMgr" version="5.1" >
+		<characteristic type="LicenseMgr" version="7.3" >
 			<parm name="LicenseChoice" value="zebra"/>
-			<characteristic type="LicenseZebra">
-				<parm name="LicenseActionZebra" value="activate"/>
-				<characteristic type="NewLicenseZebra">
-				<characteristic type="LicenseSourceURL">
-					<parm name="LicenseSource" value="fno_cloud_production"/>
-				</characteristic>
-					<parm name="ActivationID" value="9f55-3413-9430-45de-b8ff-0fa2-b75d-203b"/>
-					<parm name="ActivationQuantity" value="1"/>
-				</characteristic>
-			</characteristic>
+		<characteristic type="LicenseZebra">
+			<parm name="LicenseActionZebra" value="activate"/>
+		<characteristic type="NewLicenseZebra">
+		<characteristic type="LicenseSourceURL">
+			<parm name="LicenseSource" value="Zebra Cloud"/>
+			<parm name="LicenseCloudURL" value="2"/>
+		</characteristic>
+			<parm name="ActivationID" value="0e62-2e66-53ec-4619-86bb-5246-ce58-24d5"/>
+			<parm name="ActivationQuantity" value="1"/>
+		</characteristic>
+		</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
 
+### Return a license to a cloud-based server
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="LicenseMgr" version="7.3" >
+			<parm name="LicenseChoice" value="zebra"/>
+		<characteristic type="LicenseZebra">
+			<parm name="LicenseActionZebra" value="return"/>
+		<characteristic type="ExistingLicenseZebra">
+			<parm name="ReturnLicenseSource" value="1"/>
+			<parm name="ActivationIDReturn" value="0e62-2e66-53ec-4619-86bb-5246-ce58-24d5"/>
+			<parm name="ActivationQuantityReturn" value="1"/>
+		</characteristic>
+		</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Return all licenses to a cloud-based server
+
+	:::xml
+	<wap-provisioningdoc>
+	<characteristic type="LicenseMgr" version="7.3" >
+		<parm name="LicenseChoice" value="zebra"/>
+	<characteristic type="LicenseZebra">
+		<parm name="LicenseActionZebra" value="reset"/>
+	<characteristic type="ExistingLicenseZebra">
+		<parm name="ReturnAllLicenseSource" value="1"/>
+	</characteristic>
+	</characteristic>
+	</characteristic>
+	</wap-provisioningdoc>
+
+
+### Delete a local server from cloud source list
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="LicenseMgr" version="7.3" >
+			<parm name="LicenseChoice" value="zebra"/>
+		<characteristic type="LicenseZebra">
+			<parm name="LicenseActionZebra" value="deleteLicenseSource"/>
+		<characteristic type="ExistingLicenseZebra">
+			<parm name="DeleteLicenseSourceName" value="local server name"/>
+		</characteristic>
+		</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Refresh a license
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="LicenseMgr" version="8.1" >
+			<parm name="LicenseChoice" value="zebra"/>
+		<characteristic type="LicenseZebra">
+			<parm name="LicenseActionZebra" value="refreshAID"/>
+		<characteristic type="ExistingLicenseZebra">
+			<parm name="ActivationIDRefresh" value="c3fe-2bd5-e8c0-4058-a93a-dc82-bab6-0939"/>
+		</characteristic>
+		</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>

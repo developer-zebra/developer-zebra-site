@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Refresh Activation ID
 type: parm
-order: 11
+order: 40
 mx: "7.2"
 devicetype: A
 parm:

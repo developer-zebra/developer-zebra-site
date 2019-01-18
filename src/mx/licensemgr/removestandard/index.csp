@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Remove Standard Feature
 type: parm
-order: 40
+order: 70
 mx: "4.3"
 devicetype: A
 parm:

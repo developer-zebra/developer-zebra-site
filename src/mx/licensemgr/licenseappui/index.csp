@@ -2,7 +2,7 @@
 csp: licensemgr
 title: License Management App Enable/Disable
 type: parm
-order: 8
+order: 80
 mx: "8.1"
 devicetype: A
 parm:

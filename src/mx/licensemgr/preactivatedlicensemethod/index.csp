@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Preactivated License Method
 type: parm
-order: 9
+order: 25
 mx: "8.1"
 devicetype: A
 parm:

@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Feature To Acquire
 type: parm
-order: 91
+order: 42
 mx: "7.1"
 devicetype: A
 parm:

@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Return License Source
 type: parm
-order: 50
+order: 32
 mx: "8.1"
 devicetype: A
 parm:

@@ -2,7 +2,7 @@
 csp: licensemgr
 title: License Source
 type: parm
-order: 9
+order: 7
 mx: "7.1"
 devicetype: A
 parm:

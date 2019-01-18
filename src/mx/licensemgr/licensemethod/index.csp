@@ -2,7 +2,7 @@
 csp: licensemgr
 title: License Method
 type: parm
-order: 25
+order: 60
 mx: "4.3"
 devicetype: A
 parm:

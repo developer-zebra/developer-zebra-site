@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Acquire Feature Count
 type: parm
-order: 93
+order: 47
 mx: "7.2"
 devicetype: A
 parm:

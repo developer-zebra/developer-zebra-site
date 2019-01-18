@@ -54,11 +54,17 @@ Used to connect with a Bluetooth device.
 * **MacAddress**: <span class='text-info'>string</span><br>
 MAC address of the Bluetooth device to connect with, expressed as a string of characters 
 * **secureConnection**: <span class='text-info'>boolean</span> (true/false)<br>
-Determines whether to apply Bluetooth Security to the connection.  
+Determines whether to apply Bluetooth Security to the connection (per device system setting)  
 * **CallBackHandler**: <span class='text-info'>callback</span><br>
  * **Return parameters**: <span class='text-info'>HASH</span><br>
  	**Status**: string (“success” or “failure”)<br>
-	**Message**: Returns a relevant message
+	**Message**: Returns a relevant message:<br>
+	* Already connected to BT Device
+	* Bluetooth is not available on the running device
+	* Bluetooth is Off, Please turn on the Bluetooth
+	* Successfully Connected
+	* Something went wrong, Connection Failed
+
 
 #### Example
 
@@ -83,7 +89,10 @@ Data to be written to the connected Bluetooth device
 * **CallBackHandler**: <span class='text-info'>callback</span><br>
  * **Return parameters**: <span class='text-info'>HASH</span><br>
  	**Status**: string (“success” or “failure”)<br>
-	**Message**: Returns a relevant message
+	**Message**: Returns a relevant message:<br>
+	* Write data successfully
+	* Something went wrong, failed to write
+	* Failed to write, not connected to any device
 
 #### Example
 
@@ -109,7 +118,12 @@ Used to read data from the connected Bluetooth device.
  * **Return parameters**: <span class='text-info'>HASH</span><br>
  	**Status**: String (“success” or “failure”)<br>
 	**Message**: String <br>
-	**Data**: returns data (on success), empty string (on failure)
+	**Data**: returns data (on success), empty string (on failure)<br>
+	* Read data successfully
+	* No data to read
+	* Something went wrong, failed to read
+	* Failed to read, not connected to any device
+
 
 #### Example
 	:::javascript
@@ -133,7 +147,11 @@ Used to disconnect the Bluetooth device most recently connected using the `conne
 * **CallBackHandler**: <span class='text-info'>callback</span><br>
  * **Return parameters**: <span class='text-info'>HASH</span><br>
  	**Status**: string (“success” or “failure”)<br>
- 	**Message**: Returns a relevant message
+ 	**Message**: Returns a relevant message:<br>
+	* Successfully Disconnected
+	* Failed to disconnect
+	* Not connected to any BT device
+
 
 #### Example
 

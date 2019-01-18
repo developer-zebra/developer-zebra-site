@@ -137,6 +137,26 @@ Current licenses on the device (if any) are shown along with a series of buttons
 
 6. Following the operation, a `Result.xml` file is placed in the same location as the source XML file. 
 
+#### Example
+The following XML file selects the cloud-based Zebra Licensing Server as the license source.  
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="LicenseMgr" version="8.1" >
+			<parm name="LicenseChoice" value="zebra"/>
+		<characteristic type="LicenseZebra">
+			<parm name="LicenseActionZebra" value="activate"/>
+		<characteristic type="NewLicenseZebra">
+		<characteristic type="LicenseSourceURL">
+			<parm name="LicenseSource" value="Zebra Cloud"/>
+			<parm name="LicenseCloudURL" value="2"/>
+		</characteristic>
+			<parm name="ActivationID" value="0e62-2e66-53ec-4619-86bb-5246-ce58-24d5"/>
+			<parm name="ActivationQuantity" value="1"/>
+		</characteristic>
+		</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
 
 <!-- 
 #### Activation Using Shortcuts

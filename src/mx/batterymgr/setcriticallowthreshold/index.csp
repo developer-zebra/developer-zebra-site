@@ -5,13 +5,14 @@ type: parm
 order: 9
 mx: "8.3"
 devicetype: A
+info: Supported on devices with PowerPrecision and PowerPrecision+ batteries. 
 parm:
   pivotal: No
   name: SetCriticalLowThreshold
   type: string
 ---
 
-Used to set the Critical Low Threshold below which the battery level is considered critically low. This allows control over how long a device runs before being forced to shut down due to a low battery condition. **Supported on devices with PowerPrecision and PowerPrecision+ batteries**. 
+Used to set the Critical Low Threshold below which the battery level is considered critically low. This allows control over how long a device runs before being forced to shut down due to a low battery condition. 
 
 **Parm value input rules**: 
 

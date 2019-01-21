@@ -485,11 +485,10 @@ For encrypted file created using the [ButtonBar](../buttonbar) tool:
 	<Configuration>
 		...
 		<FileLocations>
-		      <buttonxmlfile value="file://%INSTALLDIR%/keycodemapping.xml"/>
+		      <keycodemappingxmlfile value="file://%INSTALLDIR%/android_sap/keycodemapping.xml"/>
 		</FileLocations>
 		...
 	</Configuration>
-
 
 ### pageactionxmlfile
 **Applies only to Android devices**. Specifies the location of `PageAction.xml`, an optional file containing configuration settings for page-based actions. **Note**: This tag is not included in the default `Config.xml` file. If added as shown below, Enterprise Browser reads the `PageAction.xml` file (if present) from the specified folder when the app launches. For more information, see the [Page-based Actions Usage Guide](../pageactions).

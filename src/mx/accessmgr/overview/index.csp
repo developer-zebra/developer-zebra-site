@@ -28,3 +28,5 @@ AccessMgr also provides the option to control whether the device user can access
 * Control which applications are allowed to submit XML
 * Select whether the device user can access Full or Reduced Settings
 * Set Application Verification Mode to Verify All App Signatures
+* Allow, disallow and verify service binding
+* Allow, disallow and verify calls to a service

@@ -8,7 +8,7 @@ devicetype: A
 parm:
   presentif: The Operation Mode is "Single User With Whitelist"
   pivotal: Yes
-  name: DeletePackagesAction
+  name: ServiceAccessAction
   type: list
   list:
     - code: 0
@@ -19,33 +19,33 @@ parm:
     - code: 1
       devicetype: A
       name: AllowBinding
-      description: Allow Binding to Service.
+      description: Allows apps to bind to the specified service.
       mx: "8.3"
     - code: 2
       devicetype: A
       name: DisallowBinding
-      description: Disallow Binding to Service.
+      description: Prevents apps from binding to the specified service.
       mx: "8.3"
     - code: 3
       devicetype: A
       name: VerifyBinding
-      description: Verify if Binding to Service is Allowed.
+      description: Confirms that an app is permitted to bind to a service.
       mx: "8.3"
     - code: 4
       devicetype: A
       name: AllowCaller
-      description: Allow Caller to Call Service.
+      description: Allows apps to call the specified service.
       mx: "8.3"
     - code: 5
       devicetype: A
       name: DisallowCaller
-      description: Disallow Caller from Calling Service.
+      description: Prevents apps from calling the specified service.
       mx: "8.3"
     - code: 6
       devicetype: A
       name: VerifyCaller
-      description: Verify Caller is allowed to Call Service.
+      description: Confirms that an app is permitted to call the specified service.
       mx: "8.3"
 ---
 
-Used to do stuff.
+Used to control application access to services running on the device. 

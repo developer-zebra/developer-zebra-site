@@ -2,7 +2,7 @@
 csp: batterymgr
 title: Set Critical Low Threshold
 type: parm
-order: 8
+order: 9
 mx: "8.3"
 devicetype: A
 parm:

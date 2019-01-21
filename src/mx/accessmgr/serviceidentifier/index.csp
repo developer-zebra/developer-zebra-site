@@ -1,19 +1,19 @@
 ---
 csp: accessmgr
-title: Delete Package Name(s)
+title: Service Identifier
 type: parm
 order: 6
 devicetype: A
 parm:
-  presentif: The Operation Mode is "Single User With Whitelist" *AND* Delete Packages is "Delete specified Packages(s)"
+  presentif: The Service Access Action is NOT "Do nothing."
   pivotal: Yes
-  name: DeletePackageNames
+  name: ServiceIdentifier
   type: string
-mx: "4.1"
-osx: "1.0"
+mx: "8.3"
 ---
 
-Used to specify Package Names to be deleted from the "white" list.
+Used to 
+
 
 **Parm value input rules**: 
 

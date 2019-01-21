@@ -1,0 +1,51 @@
+---
+csp: accessmgr
+title: Service Access Action 
+type: parm
+order: 5
+mx: "8.3"
+devicetype: A
+parm:
+  presentif: The Operation Mode is "Single User With Whitelist"
+  pivotal: Yes
+  name: DeletePackagesAction
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: Do nothing. 
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained. 
+      mx: "8.3"
+    - code: 1
+      devicetype: A
+      name: AllowBinding
+      description: Allow Binding to Service.
+      mx: "8.3"
+    - code: 2
+      devicetype: A
+      name: DisallowBinding
+      description: Disallow Binding to Service.
+      mx: "8.3"
+    - code: 3
+      devicetype: A
+      name: VerifyBinding
+      description: Verify if Binding to Service is Allowed.
+      mx: "8.3"
+    - code: 4
+      devicetype: A
+      name: AllowCaller
+      description: Allow Caller to Call Service.
+      mx: "8.3"
+    - code: 5
+      devicetype: A
+      name: DisallowCaller
+      description: Disallow Caller from Calling Service.
+      mx: "8.3"
+    - code: 6
+      devicetype: A
+      name: VerifyCaller
+      description: Verify Caller is allowed to Call Service.
+      mx: "8.3"
+---
+
+Used to do stuff.

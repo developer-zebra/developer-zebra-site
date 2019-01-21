@@ -1,0 +1,20 @@
+---
+csp: batterymgr
+title: Set Critical Low Threshold
+type: parm
+order: 8
+mx: "8.3"
+devicetype: A
+parm:
+  pivotal: No
+  name: SetCriticalLowThreshold
+  type: string
+---
+
+Used to set the Critical Low Threshold below which the battery level is considered critically low. This allows control over how long a device runs before being forced to shut down due to a low battery condition. **Supported on devices with PowerPrecision and PowerPrecision+ batteries**. 
+
+**Parm value input rules**: 
+
+* Integer from 0&ndash;25
+* A setting of 0 (or the absence of this parm from the XML) causes no change or indicates "not applicable"
+

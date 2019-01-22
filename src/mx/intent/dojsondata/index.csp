@@ -1,0 +1,31 @@
+---
+csp: intent
+title: Action
+type: parm
+order: 22
+mx: "8.3"
+devicetype: A,B
+parm:
+  pivotal: Yes
+  name: DOJsonData
+  type: list
+  list:
+    - code: 1
+      mx: "8.3"
+      devicetype: A,B
+      name: Do Nothing
+      description: This value (or the absence of this parm from the XML) causes no change; any previously selected setting is retained.
+    - code: 2
+      mx: "8.3"
+      devicetype: A,B
+      name: Json File
+      description: Sends an Intent using startService to initiate operation of a background Service within an application.
+    - code: 3
+      mx: "8.3"
+      devicetype: A,B
+      name: Json String
+      description: Sends an Intent using broadcastIntent to invoke registered broadcast receivers (listeners) within one or more applications.
+---
+
+Used to specify how JSON data is provided **if a JSON file is used to configure device owner (DO) enrollment**. 
+

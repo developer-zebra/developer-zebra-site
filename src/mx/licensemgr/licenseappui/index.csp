@@ -1,5 +1,5 @@
 ---
-csp: licensemgr
+csp: 
 title: License Management App Enable/Disable
 type: parm
 order: 80
@@ -28,3 +28,5 @@ parm:
 ---
 
 Controls device-user access to Zebra License Manager, a built-in app for viewing and managing software licenses on the device. **Enabled by default**. [See Overview](#overview) for more information. 
+
+<!-- 1/22/19- removed from view on Techdocs, per eng. -->

@@ -20,6 +20,7 @@ The GprsMgr administers Access Point Name (APN) settings for the General Packet 
 	* MMS Port, Proxy and Center
 	* Mobile Network Code
 	* Custom Port, Proxy, Server and Type
+	* Authentication type (PAP, CHAP, both or none)
 
 ###About WWAN Communications
 Devices equipped with Wireless Wide Area Network (WWAN) or cellular data capabilities can support one or more of the following WWAN technology types:

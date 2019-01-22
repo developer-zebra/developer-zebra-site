@@ -45,7 +45,7 @@ The License Manager (LicenseMgr) CSP administers the software licenses on a devi
 -->
 
 ### License Manager App
-Some Zebra devices include a built-in app called License Manager, which allows device users and/or administrators to perform license-related tasks manually on the device. On some devices, this app can be disabled using the [LicenseAppUI parameter](#license-management-app-enabledisable). 
+Some Zebra devices include a built-in app called License Manager, which allows device users and/or administrators to perform license-related tasks manually on the device. <!-- 1/22/19- removed per eng; parm not visivble to users On some devices, this app can be disabled using the [LicenseAppUI parameter](#license-management-app-enabledisable). -->
 
 ![img](../../../../../images/mx/LicenseManager_app.png)
 _The License Manager icon (left), and the app's home screen showing multiple activated licenses._

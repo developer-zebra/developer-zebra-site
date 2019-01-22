@@ -1,0 +1,42 @@
+---
+csp: keymapmgr
+title:  Diamond Key State
+type: parm
+order: 11
+mx: "8.3"
+devicetype: A
+parm:
+  presentif: The Action value is "Remap a key" and Key Identifier is not blank
+  pivotal: No
+  type: list
+  name: BaseKeyCodeCtrlState,BlueKeyCodeCtrlState,OrangeKeyCodeCtrlState,GreyKeyCodeCtrlState,ShiftKeyCodeCtrlState,ControlKeyCodeCtrlState
+  list:
+    - code: 0
+      mx: "8.3"
+      devicetype: A
+      name: Use existing state
+      description: This value (or the absence of this parm from the XML) causes the Diamond Key State Modifier to be left unchanged.
+    - code: 1
+      devicetype: A
+      name: Force On
+      mx: "8.3"
+      description: Activates the Diamond Key State Modifier; the Key Code sent is interpreted as Diamond.
+    - code: 2
+      devicetype: A
+      name: Force Off
+      mx: "8.3"
+      description: Clears the Diamond Key State Modifier; the Key Code sent is interpreted as non-Diamond.
+---
+
+Controls the Diamond Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.
+
+**Note**: If an attempt is made to set a Key State Modifier that is not supported on a given device, no error is returned in the Result XML because the action has no noticeable effect. When the Key Code is sent, the specified Key State Modifier is sent to the Current Key State but it makes no change to the Key Mapping Table.
+
+**Parm names**:
+
+* For Base Key State Table: **BaseKeyCodeDiamondState**
+* For Blue Key State Table: **BlueKeyCodeDiamondState**
+* For Orange Key State Table: **OrangeKeyCodeDiamondState**
+* For Grey Key State Table: **GreyKeyCodeDiamondState**
+* For Shift Key State Table: **ShiftKeyCodeDiamondState**
+* For Control Key State Table: **ControlKeyCodeDiamondState**

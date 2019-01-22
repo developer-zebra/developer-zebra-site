@@ -25,7 +25,7 @@ parm:
       devicetype: A
       name: Force Off
       mx: "4.4"
-      description: This value will clear the Shift Key State Modifier, thus forcing the Key Code sent to be interpreted as non-Control.
+      description: This value will clear the Control Key State Modifier, thus forcing the Key Code sent to be interpreted as non-Control.
 ---
 
 Controls the Control Key State Modifier when the Key Code is sent as the Key Behavior for the specified Key in the specified Key State Mapping Table.

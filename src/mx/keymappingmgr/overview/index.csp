@@ -11,28 +11,34 @@ The KeyMappingMgr allows an app to modify the behavior of one or more physical (
 ####Requirements
 
 * KeyMappingMgr is **supported only on the following devices**:
-	* **MC18**
-	* **MC33**
-	* **MC40**
-	* **MC67**
-	* **MC92**
-	* **TC51**
-	* **TC56**
-	* **TC70x**
-	* **TC75x**
-	* **TC8000**
-	* **VC80x**
-	* **WT6000**
+	* MC18
+	* MC33
+	* MC40
+	* MC67
+	* MC92
+	* **TC20**
+	* **TC25**
+	* TC51
+	* **TC52**
+	* TC56
+	* **TC57**
+	* TC70x
+	* **TC72**
+	* TC75x
+	* **TC77**
+	* TC8000
+	* VC80x
+	* WT6000
 * **Device must be running Android 4.4 KitKat or later**
 * **Device must contain MX 4.4 or higher**
-
->> Add 660 (except Frozone) and Hawkeye
+* **BOLD TYPE** indicates support recently added
 
 For key-mapping options on Android devices not listed above, please see the [Enterprise Keyboard User Guide](../../enterprise-keyboard/1-0/guide/about). 
 
 * KeyMappingMgr is **NOT supported on the following devices**:
 	* Any device not listed above, including:
 	* MC36	
+	* PS20
 	* TC55
 	* TC70
 	* TC75

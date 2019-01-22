@@ -26,6 +26,8 @@ The KeyMappingMgr allows an app to modify the behavior of one or more physical (
 * **Device must be running Android 4.4 KitKat or later**
 * **Device must contain MX 4.4 or higher**
 
+>> Add 660 (except Frozone) and Hawkeye
+
 For key-mapping options on Android devices not listed above, please see the [Enterprise Keyboard User Guide](../../enterprise-keyboard/1-0/guide/about). 
 
 * KeyMappingMgr is **NOT supported on the following devices**:

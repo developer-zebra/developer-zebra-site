@@ -351,6 +351,14 @@ parm:
       devicetype: A
       code: 28
       mx: "4.4"
+    - name: Lamp
+      devicetype: A
+      code: 10024
+      mx: "8.3"
+    - name: Do nothing
+      devicetype: A
+      code: 10026
+      mx: "8.3"
     - name: Blue
       devicetype: A
       code: 10027
@@ -363,6 +371,10 @@ parm:
       devicetype: A
       code: 10029
       mx: "4.4"
+    - name: Diamond
+      devicetype: A
+      code: 10039
+      mx: "8.3"
     - name: Alt
       devicetype: A
       code: 10030
@@ -379,6 +391,34 @@ parm:
       devicetype: A
       code: 10034
       mx: "7.1"
+    - name: Touch Calibrate
+      devicetype: A
+      code: 10035
+      mx: "8.3"
+    - name: Scan
+      devicetype: A
+      code: 10036
+      mx: "8.3"
+    - name: Search Key
+      devicetype: A
+      code: 10037
+      mx: "8.3"
+    - name: None
+      devicetype: A
+      code: 10038
+      mx: "8.3"
+    - name: KeyLight
+      devicetype: A
+      code: 10025
+      mx: "8.3"
+    - name: Keylight Up
+      devicetype: A
+      code: 10040
+      mx: "8.3"
+    - name: Keylight Down
+      devicetype: A
+      code: 10041
+      mx: "8.3"
     - name: Left Shift
       devicetype: A
       code: 59

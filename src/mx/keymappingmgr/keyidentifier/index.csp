@@ -71,6 +71,11 @@ parm:
       devicetype: A
       name: Period
       description: The period or "dot" key
+    - code: COMMA
+      mx: "8.3"
+      devicetype: A
+      name: Comma
+      description: The comma key
     - code: STAR
       mx: "4.4"
       devicetype: A
@@ -126,6 +131,11 @@ parm:
       devicetype: A
       name: Orange
       description: The key that is colored completely orange (sometimes known as the "Alpha" key)
+    - code: DIAMOND
+      mx: "8.3"
+      devicetype: A
+      name: Diamond
+      description: The key marked with a "diamond" symbol
     - code: GREEN
       mx: "4.4"
       devicetype: A
@@ -266,6 +276,16 @@ parm:
       devicetype: A
       name: P4 Button
       description: The button marked "P4"
+    - code: P5
+      mx: "8.3"
+      devicetype: A
+      name: P5 Button
+      description: The button marked "P5"
+    - code: P6
+      mx: "8.3"
+      devicetype: A
+      name: P6 Button
+      description: The button marked "P6"
     - code: REAR_BUTTON
       mx: "6.1"
       devicetype: A
@@ -326,11 +346,16 @@ parm:
       devicetype: A
       name: Brightness Down
       description: The "brightness down" key of the Zebra VC80x
-    - code: KEYBOARD
-      mx: "7.1"
+    - code: KEYLIGHTUP
+      mx: "8.3"
       devicetype: A
-      name: Keyboard
-      description: The keyboard key of the Zebra VC80x
+      name: Keyboard Backlight Brightness Up
+      description: The key that increases screen brightness
+    - code: KEYLIGHTDOWN
+      mx: "8.3"
+      devicetype: A
+      name: Keyboard Backlight Brightness Down
+      description: The key that reduces screen brightness
 ---
 
 Used to identify the Key for which an Override-Key Mapping will be added or modified. To add or modify an Override Mapping for a Key, specify the **Option** (Key Identifier) listed in the table below that matches the friendly **Name** and **Description** of the Key to be mapped.

@@ -1,8 +1,8 @@
 ---
 csp: intent
-title: Action
+title: JSON Data Selector
 type: parm
-order: 22
+order: 21
 mx: "8.3"
 devicetype: A,B
 parm:
@@ -19,13 +19,13 @@ parm:
       mx: "8.3"
       devicetype: A,B
       name: Json File
-      description: Sends an Intent using startService to initiate operation of a background Service within an application.
+      description: Specifies that a JSON file is used for JSON-based Device Owner configuration.
     - code: 3
       mx: "8.3"
       devicetype: A,B
       name: Json String
-      description: Sends an Intent using broadcastIntent to invoke registered broadcast receivers (listeners) within one or more applications.
+      description: Specifies that a string is used for JSON-based Device Owner configuration.
 ---
 
-Used to specify how JSON data is provided **if a JSON file is used to configure device owner (DO) enrollment**. 
+Used to specify how JSON data is provided **if a JSON file is used to configure Device Owner (DO) enrollment**. 
 

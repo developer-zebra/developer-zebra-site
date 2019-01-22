@@ -4,10 +4,10 @@ title: Device Owner JSON File
 type: parm
 mx: "8.0"
 apilevel: "23"
-order: 21
+order: 22
 devicetype: A,B
 parm:
-  presentif: The Action is "Enroll Device Owner"
+  presentif: The Action is "Enroll Device Owner" and DO JsonData is "JsonFile"
   pivotal: No
   name: DOJsonFileData
   type: string
@@ -17,4 +17,4 @@ Used to specify the JSON file, which must reside on the device and be executed t
 
 **Parm value input rules**: 
 
-* String containing the name of the JSON file on the device
+* String of at least one character containing the name of the JSON file on the device

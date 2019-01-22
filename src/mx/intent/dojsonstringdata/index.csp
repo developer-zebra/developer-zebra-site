@@ -7,13 +7,13 @@ mx: "4.1"
 apilevel: "1"
 devicetype: A,B
 parm:
-  presentif: The Action code is "Enroll Device Owner" AND DO JsonData is "JsonString"
+  presentif: The Action code is "Enroll Device Owner" and DO JsonData is "JsonString"
   pivotal: No
   name: ActionName
   type: string
 ---
 
-Used to specify a JSON string to configure device owner enrollment. 
+Used to specify a JSON string to configure Device Owner enrollment. 
 
 **Parm value input rules**: 
 

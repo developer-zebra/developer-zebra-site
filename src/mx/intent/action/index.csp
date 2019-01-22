@@ -28,7 +28,7 @@ parm:
       apilevel: "1"
       devicetype: A,B
       name: Broadcast
-      description: Sends an Intent using broadcastIntent to invoke registered broadcast receivers (listeners) within one or more applications.
+      description: Sends an Intent using 'broadcastIntent' to invoke registered broadcast receivers (listeners) within one or more applications.
     - code: 4
       mx: "6.5"
       apilevel: "24"

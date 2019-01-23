@@ -173,7 +173,7 @@ Install Device Tracker client on the supported Zebra device to register the devi
 Steps for client installation on the device, which may be performed either manually or with an EMM (Enterprise Mobile Management):
 1. Download Device Tracker client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
 2. Install DTRKClient.apk. 
-3. Reboot the device
+3. If updating an existing client, reboot the device.
 
 ###Client Configuration
 Configure the client settings either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
@@ -194,7 +194,7 @@ Device Tracker client registers with the server and loads "Devices to be found".
 
 ####Remote Configuration
 After client installation, follow these steps to remotely configure the client:
-1. Disable battery optimization
+1. Disable Battery Optimization
 2. Reboot device (refer to [Power Manager](http://techdocs.zebra.com/stagenow/latest/csp/power/) in StageNow documentation)
 3. Configure Device Tracker settings with CSP
 4. Start Device Tracker Service

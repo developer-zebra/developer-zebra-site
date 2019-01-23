@@ -853,7 +853,7 @@ parm:
       mx: "4.4"
 ---
 
-Used to specify which Key Code will be sent as the Key Behavior for the specified Key in any Key State Mapping Table. All parameters use the same values shown in the Base Key State Mapping Table.
+Used to specify which Key Code is sent as the Key Behavior for the specified Key in any Key State Mapping Table. All parameters use the same values shown in the Base Key State Mapping Table.
 
 >**Note:** All the parameters shown here allow control of the Key State(s) under which the Key Code will be sent. Parameters for controlling those settings are covered in the Advanced Sections. Attempts to specify a Key Behavior for a Key Mapping Table that is not supported on a given device will return an error in the Result XML. For the Key Mapping Tables supported on a specific device, query the KeyMappingMgr (see Queries, below) or refer to the device documentation. 
 
@@ -865,3 +865,4 @@ Used to specify which Key Code will be sent as the Key Behavior for the specifie
 * For Grey Key State Table: **GreyKeyCode**
 * For Shift Key State Table: **ShiftKeyCode**
 * For Control Key State Table: **ControlKeyCode**
+* For Diamond Key State Table: **DiamondKeyCode**

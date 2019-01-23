@@ -9,7 +9,7 @@ parm:
   presentif: The Action value is "Remap a key" and Key Identifier is not blank
   pivotal: No
   type: list
-  name: BaseKeyCodeCtrlState,BlueKeyCodeCtrlState,OrangeKeyCodeCtrlState,GreyKeyCodeCtrlState,ShiftKeyCodeCtrlState,ControlKeyCodeCtrlState
+  name: BaseKeyCodeDiamondState,BlueKeyCodeDiamondState,OrangeKeyCodeDiamondState,GreyKeyCodeDiamondState,ShiftKeyCodeDiamondState,ControlKeyCodeDiamondState
   list:
     - code: 0
       mx: "8.3"

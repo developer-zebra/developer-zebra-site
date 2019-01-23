@@ -20,7 +20,7 @@ parm:
       devicetype: A
       name: False
       mx: "4.4"
-      description: This value (or the absence of this parm from the XML) indicates no section.
+      description: This value (or the absence of this parm from the XML) indicates no use of the Advanced section.
 ---
 
 Controls whether to use the Advanced section for a Key Mapping Table. All Advanced parms use the values shown in the table below.

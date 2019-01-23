@@ -95,7 +95,15 @@ If errors occur during deployment, the following pop-up appears. Select Yes to v
 
 
 ### Audio Staging
-To deploy the selected profile to the device via an audio file:
+
+**NOTE: Audio staging is NOT supported on Zebra's "SD660-platform" devices, which currently includes**:
+* PS20
+* TC52
+* TC57
+* TC72
+* TC77
+
+**To deploy the selected profile to the device via an audio file**:
 
 1. On the client devices to stage, set the Audio Staging option to On.
 
@@ -205,6 +213,13 @@ Use this screen to determine whether your device has full or partial StageNow fe
 * No Functionality - no OSx Version.
 
 ### Audio Staging Help
+**NOTE: Audio staging is NOT supported on Zebra's "SD660-platform" devices, which currently includes**:
+* PS20
+* TC52
+* TC57
+* TC72
+* TC77
+
 Select Audio Staging Help for tips for successful audio staging.
 Select Dismiss on any screen to dismiss the help.
 

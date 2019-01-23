@@ -222,7 +222,15 @@ To stage a barcode profile:
 -----
 
 ### Staging an Audio Profile
-To stage an audio profile:
+
+**NOTE: Audio staging is NOT supported on Zebra's "SD660-platform" devices, which currently includes**:
+* PS20
+* TC52
+* TC57
+* TC72
+* TC77
+
+**To stage an audio profile**:
 
 1. Select the Audio tab. If this is the first time using this feature, a tour provides help screens that specify technical and environmental requirements for audio staging. 
 

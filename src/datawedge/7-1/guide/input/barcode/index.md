@@ -1074,27 +1074,34 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 
 * **Code ID Type Symbol -** Inserts a Zebra-defined single-character prefix.
 
-------
+**Decode Haptic Feedback -** Enable the mobile computer to vibrate to indicate a successful decode.
 
-**Volume Type -** Permits selection of the volume setting to be used when playing the Decode Audio Feedback. Available options: 
+**Decode Audio Feedback -** Select an audio tone to play to indicate a successful decode.
 
-* **Ringer and Notifications -** Uses Ringer and Notifications volume setting for audio feedback.
+**Decode Screen Notification -** When enabled, a translucent green screen overlay appears for 1 second upon every successful decode.
+
+**Decode Screen Notification Timer -** Defines the length of time (in milliseconds) to display the screen notification upon successful decode. Timer configuration range is 500 ms to 1500 ms. Default time is 1000 ms.
+
+**Decode Screen Translucency Level -** Sets the translucency of the decode notification green screen. Translucency level range is 20 to 50, in increments of 5. The higher the value, the more the translucency (visibility).
+
+**Decoding LED Notification -** When enabled, causes the Red LED to flash when the scan trigger is pressed.
+
+**Decode Feedback LED Timer -** Defines the length of time (in ms) to flash the Green LED to indicate a successful decode.
+
+**Beep Volume Channel -** Permits selection of the volume setting to be used when playing the Decode Audio Feedback. Available options: 
+
+* **Ringer -** Uses Ringer volume setting for audio feedback.
 
 * **Music and Media -** Uses Music and Media volume setting for audio feedback.
 
 * **Alarms -** Uses the Alarms volume setting for audio feedback.
 
-* **Decode Audio Feedback -** Select an audio tone to play to indicate a successful decode.
+* **Notification -** Uses Notification volume setting for audio feedback.
+
+<!-- * **Decode Audio Feedback -** Select an audio tone to play to indicate a successful decode. -->
 
 **Note**: Not all ringtones are supported as decode tones; some ringtones might be truncated when used as a decode tone. Zebra recommends testing all selected tones before deployment.
 
-**Decode Haptic Feedback -** Enable the mobile computer to vibrate to indicate a successful decode.
-
-**Decode Feedback LED Timer -** Defines the length of time (in ms) to flash the Green LED to indicate a successful decode.
-
-**Decoding LED Notification -** When enabled, causes the Red LED to flash when the scan trigger is pressed.
-
-**Decode Screen Notification -** When enabled, a translucent green screen overlay appears for 1 second upon every successful decode.
 
 >**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 

@@ -1,5 +1,5 @@
 ---
-title: StageNow 3.1
+title: StageNow 3.2
 layout: guide.html
 product: StageNow
 productversion: '3.2'
@@ -9,13 +9,13 @@ languages:
 
 ---
 
-StageNow 3.1 User Guide, Revision A; StageNow MN001501A12; October, 2018
+StageNow 3.2 User Guide, Revision A; StageNow MN-003212; December, 2018
 
-#### Covers StageNow 3.1.x and higher
+#### Covers StageNow 3.2
 
 ## Overview
 
-This guide provides the staging administrator with instructions for using StageNow 3.1 to create XML-based profiles for staging devices.
+This guide provides the staging administrator with instructions for using StageNow 3.2 to create XML-based profiles for staging devices.
 
 ### Prerequisites
 The following software must be installed on the staging workstation prior to using StageNow:
@@ -28,13 +28,13 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-### Device Support
+## Device Support 
 
-**StageNow v3.1 supports all Zebra devices with the following operating systems and extensions**: 
+**StageNow v3.2 supports all Zebra devices with the following operating systems and extensions**: 
 
 * Android 8.x Oreo
 * Android 7.x Nougat
-* Android 6.x Marshmallow
+* MX 8.3
 * MX 8.2
 * MX 8.1
 * MX 8.0
@@ -47,7 +47,89 @@ The following software must be installed on the staging workstation prior to usi
 * MX 6.0
 
 > **IMPORTANT NOTE**:<br> 
-> <u>**StageNow 3.1 supports devices running Android 6.x Marshmallow and newer only**</u>.<br>Support for Android 5.x Lollipop (and older) is discontinued in StageNow 3.1.
+> <u>**StageNow 3.2 supports devices running Android 6.x Nougat and newer only**</u>.<br>Support for Android 6.x Marshmallow (and older) is discontinued in StageNow 3.2.
+
+## New Features
+
+**Support for MX 8.2** provides the following enhancements:
+
+* **Enhanced [UI Manager](../csp/uimgr)** adds these new features: 
+ * Enable/disabl
+
+**Support for MX 8.3** provides the following enhancements:
+
+* **Enhanced GMS Manager** to Manage Google Mobile Services Configurations
+All – Full Set of GMS features – set to all will allow the device to have all GMS configurations enabled
+Restricted – Fixed Minimal Set of GMS Features
+Note: 
+1. GMS Manager feature set is even called GMS Mode-2
+2. AppMgr CSP will not allow to enable any disabled GMS app when device in GMS restricted mode
+3. Wireless CSP will not allow to enable/disable location mode settings
+
+WorryFreeWiFi Manager that defines a mechanism that is easy for Mobile device management (MDM) and customer/partner applications to use to easily configure
+
+The current CSP allows configuration of settings with following features:
+
+Activate/Deactivate WorryFreeWiFi - to enable WorryFreeWiFi Stack in the device so that we can execute Wi-Fi / WorryFreeWiFi Analytics features in the device which provides detailed information of Wi-Fi / Connectivity related issues / information / analysis.
+
+WorryFreeWiFi Global Configuration – Configure WorryFreeWiFi Password and End User Control parameters on the device. password which will be used by WorryFreeWiFi to secure End Customer data e.g. Unencrypted Packet Capture and same password used as Authentication to configure WorryFreeWiFi Advanced features. Enable / disable End user control access control of WorryFreeWiFi App UX features for end user access. If user control is disabled remote admin then user can’t start Roam/Voice Analysis from WorryFreeWiFi App.
+
+WorryFreeWiFi Analysis Configuration – Configures Analysis parameters AnalysisType, Action, EnableServerAnalytics, ActivityMode, AnalysisSSID, SessionName, GeneratePingData, UseDefaultGateway, RemoteServerAddress, LoggerReportLevel, SDcardStorage.
+
+WorryFreeWiFi Packet Capture Configuration – Configures Packet capture parameters EnablePacketCapture, PacketFileName, MaxFileSize, MaxStorageSize
+
+3.      Added NFC Manager CSP to provide ability to optimize the operations performed on NFC Card
+
+·         Enable/disable NFC.
+
+·         In Reader Mode:
+
+·         Enable/disable supported cards.
+
+·         Skip NDEF: Skipping NDEF check disables the use of NFC Forum tag types 1-4.
+
+·         Card detection mode
+
+·         CPU Speed: Enabling this option Boosts the CPU Performance.
+
+·         Baud rate for 14443-4 Cards.
+
+·         Enable P2P Mode
+
+·         Enable CE Mode
+
+·         Enable NFC on Lock Screen.
+
+·         Reset to default: Reset all setting to their default values
+
+4.      Enhanced UI Manager CSP to provide ability to
+
+·         Enable/Disable On-Screen Power Button Usage (For PS20 Device)
+
+5.      Enhanced Access Manager CSP to provide ability to emulate device user interactions, this feature allows key events and touch events to be "injected" into the system by an otherwise unprivileged (not platform key signed) application
+
+Access CSP exposes following methods to control which packages are allowed access to key and touch injection with: Service Access Action
+
+·         Allow Binding to Service
+
+·         Disallow Binding to Service
+
+·         Verify if Binding to service is allowed
+
+·         Allow Caller to Call service
+
+·         Disallow Caller from Calling service
+
+·         Verify Caller is allowed to Call Service
+
+2.      Enhanced File Manager CSP to provide ability to Download and expand Archive files by
+
+·         Selecting a compressed file from the local machine
+
+·         Entering the location of a compressed file on an external server
+2.  Configurations Available for Booking
+
+The StageNow Staging Solution offers Out-of-the-Box support on all Zebra Android devices with Zebra Value Add.  This means you can simply scan your relevant barcodes and sit back and watch Staging take place!
 
 -----
 
@@ -71,10 +153,12 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-## New in v3.1
+## Version History
+
+### Added in v3.1
 
 > **IMPORTANT NOTE**:<br> 
-> <u>**StageNow 3.1 supports devices running Android 6.x Marshmallow and newer only**</u>.<br>Support for Android 5.x Lollipop (and older) is discontinued in StageNow 3.1.
+> <u>**StageNow 3.2 supports devices running Android 6.x Marshmallow and newer only**</u>.<br>Support for Android 5.x Lollipop (and older) is discontinued in StageNow 3.2.
 
 ### Enhanced User experience
 
@@ -130,10 +214,6 @@ The following software must be installed on the staging workstation prior to usi
 * **New [AutoTrigger Manager](../csp/autotriggermgr) CSP** is used to configure automatic scan-triggering, which initiates scanning when a scan target is brought within proximity of the device sensor. Currently supports the Zebra PS20 Personal Shopper device only. 
 * **New [DeviceCentral Manager](../csp/devicecentralmgr) CSP** allows configuration of settings on the device for Zebra Device Central, an enterprise tool for viewing connection state, battery status, firmware version and other device conditions from a central console.
 * **New [Fota Manager](../csp/fotamgr) CSP** controls the Firmware Over The Air (FOTA) Client on the device, allowing administrators to perform OS updates on Zebra devices without a physical connection. The FOTA Client app comes preinstalled on supported devices and is configured to communicate with the Zebra update server.
-
------
-
-## Version History
 
 ### Added in v3.0
 

@@ -221,26 +221,31 @@ parm:
       devicetype: A
       name: Back
       description: The "BACK" key, button or capacitive button on the device
+      info: Restart required on TC70x running Android M, N or O.
     - code: HOME
       mx: "4.4"
       devicetype: A
       name: Home
       description: The "HOME" key, button or capacitive button on the device
+      info: Restart required on TC70x running Android M, N or O.
     - code: MENU
       mx: "4.4"
       devicetype: A
       name: Menu
       description: The "MENU" key, button or capacitive button on the device
+      info: Restart required on TC70x running Android M, N or O.
     - code: RECENT
       mx: "4.4"
       devicetype: A
       name: Recent
       description: The "Recent Apps" key, button or capacitive button on the device
+      info: Restart required on TC70x running Android M, N or O.
     - code: SEARCH
       mx: "4.4"
       devicetype: A
       name: Search
       description: The "Search" key, button or capacitive button on the device
+      info: Restart required on TC70x running Android M, N or O.
     - code: KEYLIGHT 
       mx: "4.4"
       devicetype: A

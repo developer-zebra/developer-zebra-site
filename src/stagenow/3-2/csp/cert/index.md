@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: certmgr
 product: StageNow
-productversion: '3.1'
+productversion: '3.2'
 ---
 
 

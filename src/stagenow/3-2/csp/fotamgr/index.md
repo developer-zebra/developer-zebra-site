@@ -12,6 +12,6 @@ mxversions:
     value: 5
 csp: fotamgr
 product: StageNow
-productversion: '3.1'
+productversion: '3.2'
 ---
 

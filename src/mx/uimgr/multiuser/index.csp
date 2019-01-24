@@ -35,4 +35,9 @@ parm:
       description: Disables multi-user mode on the device. 
 ---
 
-This is the On/Off switch for Multi-user mode on the device, which can provide separate user accounts, data and apps or app restrictions on a shared device. **This feature is supported only on SDM660-platform devices**. 
+This is the On/Off switch for Multi-user mode on the device, which can provide separate user accounts, data and apps or app restrictions on a shared device. **This feature is supported only on SDM660-platform devices**, which currently includes:
+* PS20
+* TC52
+* TC57
+* TC72
+* TC77

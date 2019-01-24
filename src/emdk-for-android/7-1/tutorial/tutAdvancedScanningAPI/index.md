@@ -1132,8 +1132,8 @@ It will display a success toast when the changes are applied each time you chang
 		:::java
 		byte[] rawData = data.getRawData();
 		StringBuilder builder = new StringBuilder();
-		for(byte b : rawData)
-
-		{ builder.append(String.format("%02x", b)); }
+		for(byte b : rawData) { 
+			builder.append(String.format("%02x", b)); 
+		}
 		return builder.toString();
 

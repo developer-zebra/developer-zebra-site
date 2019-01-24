@@ -1,0 +1,35 @@
+---
+csp: uimgr
+title: LKI Enable/Disable
+type: parm
+order: 39
+mx: "8.3"
+devicetype: A
+info: Supported on SDM660-platform devices only. 
+parm:
+  pivotal: No
+  name: EnableLKI
+  type: list
+  list:
+    - code: 0
+      mx: "8.3"
+      devicetype: A
+      info: Supported on SDM660-platform devices only. 
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained. 
+    - code: 1
+      devicetype: A
+      name: Enable 
+      mx: "8.3"
+      info: Supported on SDM660-platform devices only. 
+      description: Enables the Large Key Indicator (LKI) pop-up on the device.
+    - code: 2
+      devicetype: A
+      name: Disable
+      mx: "8.3"
+      info: Supported on SDM660-platform devices only. 
+      description: Disables the Large Key Indicator (LKI) pop-up on the device. 
+---
+
+ This is the On/Off switch for the Large Key Indicator (LKI) pop-up, which is used to show active modifier keys. On most devices, the indicator is displayed in the Status Bar at the top of the screen. This parameter is accessible by the user only when SetLKI is set to "Turn On." 
+

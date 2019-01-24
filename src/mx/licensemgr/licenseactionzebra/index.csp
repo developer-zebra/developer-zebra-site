@@ -45,7 +45,7 @@ parm:
       devicetype: A
       name: deleteLicenseSource
       mx: "8.1"
-      description: Removes the license source from the device.  
+      description: Removes the specified license source from the device.  
 ---
 
-Used to specify the action to perform on an Activation ID (AID) on the device. **For Zebra-branded devices only**. For Symbol-branded devices, use the License Action parameter. To use Option 6, specify the 39-character Activitation ID using the Activation ID Refresh parameter. **Note: Options 4 and 5 are used programmatically on the device and are not intended for human interaction**. 
+Used to specify the action to perform on an Activation ID (AID) on the device. **For Zebra-branded devices only**. For Symbol-branded devices, use the License Action parameter. To use Option 6, specify the 39-character Activation ID using the Activation ID Refresh parameter. **Note: Options 4 and 5 are used programmatically on the device and are not intended for human interaction**. 

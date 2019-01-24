@@ -23,11 +23,14 @@ Android devices contain a variety of System applications that access UI elements
   * "The network may be monitored..." message
   * "Recent Apps" button
   * Navigation Bar
+  * The Status Bar
   * Display of the virtual keyboard
   * Screen magnification gesture
   * Split-screen mode
   * Multi-user mode
   * Do Not Disturb mode
+  * The Large Key Indicator (LKI) pop-up
+  * The On-screen Power Button
 * Configure localization settings to:
   * Set the Current Locale for a desired language and region
   * Set the Default Input Method to enhance entry of localized data

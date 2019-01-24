@@ -1,0 +1,30 @@
+---
+csp: uimgr
+title: LKI Usage Enable/Disable
+type: parm
+order: 37
+mx: "8.3"
+devicetype: A,B
+parm:
+  pivotal: No
+  name: SetLKI
+  type: list
+  list:
+    - code: 0
+      mx: "8.3"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Turn On 
+      mx: "8.3"
+      description: Allows user to change the LKI state.
+    - code: 2
+      devicetype: A,B
+      name: Turn Off
+      mx: "8.3"
+      description: Prevents the device user from changing the LKI state.
+---
+
+Controls whether the device user can enable/disable the Large Key Indicator (LKI) pop-up, which is used to show active modifier keys. 

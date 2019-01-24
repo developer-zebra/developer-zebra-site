@@ -6,7 +6,6 @@ order: 5
 mx: "8.3"
 devicetype: A
 parm:
-  presentif: The Operation Mode is "Single User With Whitelist"
   pivotal: Yes
   name: ServiceAccessAction
   type: list
@@ -34,18 +33,18 @@ parm:
     - code: 4
       devicetype: A
       name: AllowCaller
-      description: Allows apps to call the specified service.
+      description: Allows the specified app(s) to call a specified service.
       mx: "8.3"
     - code: 5
       devicetype: A
       name: DisallowCaller
-      description: Prevents apps from calling the specified service.
+      description: Prevents the specified app(s) apps from calling a specified service.
       mx: "8.3"
     - code: 6
       devicetype: A
       name: VerifyCaller
-      description: Confirms that an app is permitted to call the specified service.
+      description: Confirms that the specified app(s) is permitted to call a specified service.
       mx: "8.3"
 ---
 
-Used to control application access to services running on the device. 
+Used to control which "installable" (non-System) applications can call controllable services running on the device. This allows an administrator to manage access to the services present in a device and the ability of apps to bind to and leverage callable services. This can be used, for example, to prevent access to services relating to sensitive functionality, or to prevent use of such services when they are not explicitly required for a particular usage scenario or app.

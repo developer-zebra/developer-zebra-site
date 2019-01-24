@@ -49,9 +49,6 @@ The following software must be installed on the staging workstation prior to usi
 
 ## New Features
 
-* **Enhanced [UI Manager](../csp/uimgr)** adds these new features: 
- * Enable/disabl
-
 **Support for MX 8.3** provides the following enhancements:
 
 * **Enhanced [GMS Manager](../csp/gmsmgr)** to Manage Google Mobile Services Configurations

@@ -54,7 +54,7 @@ The following software must be installed on the staging workstation prior to usi
 
 **Support for MX 8.3** provides the following enhancements:
 
-* **Enhanced GMS Manager** to Manage Google Mobile Services Configurations
+* **Enhanced [GMS Manager](../csp/gmsmgr)** to Manage Google Mobile Services Configurations
 All – Full Set of GMS features – set to all will allow the device to have all GMS configurations enabled
 Restricted – Fixed Minimal Set of GMS Features
 Note: 
@@ -62,7 +62,7 @@ Note:
 2. AppMgr CSP will not allow to enable any disabled GMS app when device in GMS restricted mode
 3. Wireless CSP will not allow to enable/disable location mode settings
 
-WorryFreeWiFi Manager that defines a mechanism that is easy for Mobile device management (MDM) and customer/partner applications to use to easily configure
+* **[WorryFreeWiFi](../csp/wfwifi)** defines a mechanism that is easy for Mobile device management (MDM) and customer/partner applications to use to easily configure
 
 The current CSP allows configuration of settings with following features:
 
@@ -74,58 +74,37 @@ WorryFreeWiFi Analysis Configuration – Configures Analysis parameters Analysis
 
 WorryFreeWiFi Packet Capture Configuration – Configures Packet capture parameters EnablePacketCapture, PacketFileName, MaxFileSize, MaxStorageSize
 
-3.      Added NFC Manager CSP to provide ability to optimize the operations performed on NFC Card
+* **New [NFC Manager](../csp/wfwifi)** CSP to provide ability to optimize the operations performed on NFC Card
+ * Enable/disable NFC
+ * In Reader Mode:
+	 * Enable/disable supported cards.
+	 * Skip NDEF: Skipping NDEF check disables the use of NFC Forum tag types 1-4.
+	 * Card detection mode
+	 * CPU Speed: Enabling this option Boosts the CPU Performance.
+	 * Baud rate for 14443-4 Cards.
+	 * Enable P2P Mode
+	 * Enable CE Mode
+	 * Enable NFC on Lock Screen.
+	 * Reset to default: Reset all setting to their default values
 
-·         Enable/disable NFC.
+* **Enhanced [UI Manager](../csp/wfwifi)** provides ability to
+ * Enable/Disable On-Screen Power Button Usage (For PS20 Device)
 
-·         In Reader Mode:
+* **[Enhanced Access Manager](../csp/wfwifi)** provides ability to emulate device user interactions, this feature allows key events and touch events to be "injected" into the system by an otherwise unprivileged (not platform key signed) application
 
-·         Enable/disable supported cards.
+* **[Enhanced Access Manager](../csp/wfwifi)**  exposes following methods to control which packages are allowed access to key and touch injection with: Service Access Action
 
-·         Skip NDEF: Skipping NDEF check disables the use of NFC Forum tag types 1-4.
+ * Allow Binding to Service
+ * Disallow Binding to Service
+ * Verify if Binding to service is allowed
+ * Allow Caller to Call service
+ * Disallow Caller from Calling service
+ * Verify Caller is allowed to Call Service
 
-·         Card detection mode
+* **[Enhanced File Manager](../csp/wfwifi)** CSP to provide ability to Download and expand Archive files by
 
-·         CPU Speed: Enabling this option Boosts the CPU Performance.
-
-·         Baud rate for 14443-4 Cards.
-
-·         Enable P2P Mode
-
-·         Enable CE Mode
-
-·         Enable NFC on Lock Screen.
-
-·         Reset to default: Reset all setting to their default values
-
-4.      Enhanced UI Manager CSP to provide ability to
-
-·         Enable/Disable On-Screen Power Button Usage (For PS20 Device)
-
-5.      Enhanced Access Manager CSP to provide ability to emulate device user interactions, this feature allows key events and touch events to be "injected" into the system by an otherwise unprivileged (not platform key signed) application
-
-Access CSP exposes following methods to control which packages are allowed access to key and touch injection with: Service Access Action
-
-·         Allow Binding to Service
-
-·         Disallow Binding to Service
-
-·         Verify if Binding to service is allowed
-
-·         Allow Caller to Call service
-
-·         Disallow Caller from Calling service
-
-·         Verify Caller is allowed to Call Service
-
-2.      Enhanced File Manager CSP to provide ability to Download and expand Archive files by
-
-·         Selecting a compressed file from the local machine
-
-·         Entering the location of a compressed file on an external server
-2.  Configurations Available for Booking
-
-The StageNow Staging Solution offers Out-of-the-Box support on all Zebra Android devices with Zebra Value Add.  This means you can simply scan your relevant barcodes and sit back and watch Staging take place!
+ * Selecting a compressed file from the local machine
+ * Entering the location of a compressed file on an external server
 
 -----
 

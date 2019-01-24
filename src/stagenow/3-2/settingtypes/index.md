@@ -52,6 +52,8 @@ automenu:
           url: /stagenow/3-2/csp/display
         - title: FOTA Manager
           url: /stagenow/3-2/csp/fotamgr
+        - title: GMS Manager
+          url: /stagenow/3-2/csp/gmsmgr
         - title: Power Manager
           url: /stagenow/3-2/csp/power
         - title: Touch Manager

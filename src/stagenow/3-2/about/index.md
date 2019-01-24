@@ -41,17 +41,13 @@ The following software must be installed on the staging workstation prior to usi
 * MX 7.2
 * MX 7.1
 * MX 7.0
-* MX 6.3
-* MX 6.2
-* MX 6.1
-* MX 6.0
 
 > **IMPORTANT NOTE**:<br> 
-> <u>**StageNow 3.2 supports devices running Android 6.x Nougat and newer only**</u>.<br>Support for Android 6.x Marshmallow (and older) is discontinued in StageNow 3.2.
+> <u>**StageNow 3.2 supports only devices running Android 6.x Nougat and newer**</u>.<br>Support for Android 6.x Marshmallow (and older) is discontinued in StageNow 3.2.
+
+-----
 
 ## New Features
-
-**Support for MX 8.2** provides the following enhancements:
 
 * **Enhanced [UI Manager](../csp/uimgr)** adds these new features: 
  * Enable/disabl

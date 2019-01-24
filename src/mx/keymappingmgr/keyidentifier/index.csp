@@ -311,8 +311,8 @@ parm:
       devicetype: A
       name: Touch NAV_PAD
       description: The touch-sensitive navigation pad on a device
-      info: Known as the "Touch Button" on the TC8000 device.
-   - code: M1
+      info: Known as the "Touch Button" on the TC8000.
+    - code: M1
       mx: "7.1"
       devicetype: A
       name: Macro 1

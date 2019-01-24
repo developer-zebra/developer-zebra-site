@@ -30,6 +30,7 @@ Android devices contain a variety of System applications that access UI elements
   * Multi-user mode
   * Do Not Disturb mode
   * The Large Key Indicator (LKI) pop-up
+  * User access to the LKI feature
   * The On-screen Power Button
 * Configure localization settings to:
   * Set the Current Locale for a desired language and region

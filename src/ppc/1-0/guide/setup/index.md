@@ -12,8 +12,74 @@ See [System Requirements](../about/#systemrequirements).
 
 > Important: An SSL Certificate is required from a third party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non-third party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
 
+##System Requirements
+This section provides the server and device requirements.
+
+###Server Requirements
+1. Windows Operating Systems supported:
+   * Windows® 2012 server, 64-bit processor
+   * Windows® 2016, 64-bit processor
+
+2. Browsers supported (connect over https):  
+   * Chrome Browser version 63 or higher
+   * Internet Explorer 11
+   * Microsoft Edge for Windows 10
+   * Safari for Mac version 9 or higher
+
+3. Software Required (included in server installation):
+   * Java runtime
+   * Node.js version 6.11
+   * PostgreSQL 9.6.3-3 or higher
+   * PowerPrecision Console software (server and client) 
+
+4. Network Access Requirements:
+   * If required, open incoming and outgoing ports for communication between server and mobile devices through the server firewall. The default ports used are: 
+        * Data Port 8080 for PPC client to register and upload battery data 
+        * Web Portal Port 8443 for accessing PPC web portal  
+   * If required, perform DNS setup to add server IP address to the DNS server. 
+
+5. Hardware Requirements: 
+   * Minimum CPU cores: 8  
+   * Minimum memory (RAM): 4 GB  
+   * Minimum available hard drive space: 300 GB 
+
+  Recommended hardware requirements based on number of devices and batteries:
+   <table class="facelift" align="center" style="width:70%" border="1" padding="5px">
+   <tr bgcolor="#dce8ef">
+      <th>Number of Devices</th>
+      <th>Number of Batteries</th>
+      <th style="text-align:center">RAM</th>
+      <th style="text-align:center">CPU Cores</th>
+      <th style="text-align:center">Hard Drive Space</th>
+    </tr>
+    <tr>
+      <td>Up to 1,000 devices</td>
+      <td style="text-align:center">Up to 2,000 batteries</td>
+      <td style="text-align:center">4 GB</td>
+      <td style="text-align:center">8 cores</td>
+      <td style="text-align:center">300 GB</td>
+    </tr>
+    <tr>
+      <td>1,000 to 5,000 devices</td>
+      <td style="text-align:center">2,000 to 10,000 batteries</td>
+      <td style="text-align:center">8 GB</td>
+      <td style="text-align:center">8 cores</td>
+      <td style="text-align:center">600 GB</td>
+    </tr>
+    <tr>
+      <td>Up to 10,000 devices</td>
+      <td style="text-align:center">Up to 20,000 batteries</td>
+      <td style="text-align:center">16 GB</td>
+      <td style="text-align:center">16 cores</td>
+      <td style="text-align:center">750 GB</td>
+    </tr>
+   </table>
+
+###Device Requirements
+See [Device Requirements](../about/#devicerequirements).
+
 ##Server Install & Setup
-After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+Download PPC Server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 1. **Server Installation.** Double-click on the .EXE and follow the steps to complete installation.
 
@@ -105,7 +171,7 @@ Install PPC client on the supported Zebra devices to register the device, upload
 
 ###Installation
 Steps for client installation:
-1. Download PPCClient.zip from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
+1. Download PPC Client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
 2. Install PowerPrecisionConsole.apk. 
    * For Android Marshmallow and Nougat devices, install the .APK located in folder PPCClient\Client\M_N.
    * For Android Oreo devices, install the .APK located in folder PPCClient\Client\O.

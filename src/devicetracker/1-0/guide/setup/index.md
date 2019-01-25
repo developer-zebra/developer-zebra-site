@@ -30,12 +30,12 @@ This section provides the server and device requirements. Device Tracker support
    * Google Chrome Browser version 66 and higher
    * Microsoft Internet Explorer version 11 and higher
    * Microsoft Edge for Windows 10
-   * Safari for Mac version 9 and higher
+   * Safari for Mac version 11 and higher
 
 3. Software Required (included in server installation):
    * Java runtime
    * Node.js version 6.11
-   * PostgreSQL 9.6.3-3 or higher
+   * PostgreSQL 9.6.3-3 and higher
    * Device Tracker software (server and client) 
 
 4. Network Access Requirements:
@@ -87,7 +87,7 @@ Requirements for Device Tracker client:
 See supported [Zebra devices](../about/#supporteddevices).
 
 ##Server Install & Setup
-Install Device Tracker server on the supported system that meets the specified requirements. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+Install Device Tracker server on the supported system that meets the specified requirements. Download Device Tracker server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ###Server Installation
 1. Double-click on the .EXE to launch the installer.
@@ -104,8 +104,8 @@ _Figure 3. Installation - destination location_
    * **Domain** - domain name for server, e.g. "name.company.com"
    * **Server Certificate Path** - location of server certificate (.pfx file)
    * **Server Certificate Password** - password for server certificate
-   * **UI port** - by default, 8443
-   * **Backend Server Port** - by default, 8080
+   * **UI port** - designated UI port, can default to 8443
+   * **Backend Server Port** - designated server port, can default to 8080
 ![img](DTRK_Install_4.JPG)
 _Figure 4. Installation - server configuration_
 6. Enter in server authentication and credentials, then click Next:
@@ -142,10 +142,10 @@ G. When prompted, enter the certificate password to export "ssl_certificate.pfx"
 H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to a designated folder.
 <br>
 
-3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The method to open the ports depends on the firewall software used by the network administrator. The ports are specified during the server install. By default the ports are:   
+3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. These are the UI and backend server ports specified during the server install. The method to open the ports depends on the firewall software used by the network administrator. The ports are specified during the server install. By default the ports are:   
 
-	* Inbound ports: TCP ports 8080 and 8443
-	* Outbound port: TCP port 8080
+	* Inbound ports: TCP ports 8080 and 8443 (by default)
+	* Outbound port: TCP port 8080 (by default)
 <br>
 4. **Run the Device Tracker Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/zdvc**
 
@@ -266,7 +266,7 @@ H. A window opens with the generated StageNow barcode in .pdf format. When ready
 7. Open the StageNow client on the device.
 8. Scan the barcode generated to configure the Device Tracker client with the settings specified. <br>
 
-**Steps to create StageNow profile to start the Device Tracker service remotely:**
+**Steps to create StageNow profile to start Device Tracker service remotely:**
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC. 
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. Select “XpertMode" from the table. Click Create.<br>
@@ -274,14 +274,14 @@ H. A window opens with the generated StageNow barcode in .pdf format. When ready
 _Figure 21. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “Intent”. This adds to the Config tab on the right side. Click Add.<br>
-![img](SN_AddIntentSetting.JPG)
+![img](SN_AddIntentSetting.jpg)
 _Figure 22. Add Setting_ <br>
 6. Enter the following information:
    * Action: select "StartService"
    * Android Action Name: enter "com.zebra.devicetracker.csp.DTCspService"
    * Package Name: enter "com.zebra.devicetracker"
 Click Continue.
-![img](SN_IntentConfig.JPG)
+![img](SN_IntentConfig.jpg)
 _Figure 23. Configure Setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test. 

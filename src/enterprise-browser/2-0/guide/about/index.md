@@ -679,7 +679,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  </tr>
 <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="tc2x" src="../../images/tc2x.png" height="25"></img></td>
-  <td class="clsSyntaxCells clsOddRow"><b>TC2X</b></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC20</b></td>
   <td class="clsSyntaxCells clsOddRow">TC20, TC20K, TC20 with RFD2000 RFID Sled</td>
   <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>(requires BSP 04-14-30 with LG patch 6)<br><br>Android 8.x (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>

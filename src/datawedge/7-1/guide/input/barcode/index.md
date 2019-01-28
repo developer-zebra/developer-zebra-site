@@ -849,9 +849,21 @@ Reader Parameters control specific configuration options for the barcode reader 
 <img style="height:350px" src="reader_params.png"/>
 <br>
 
-**Illumination mode -**  Turns illumination on and off.
+**1D Quiet Zone Level -** Sets the effort at which the decoder will attempt to decode "marginless" barcodes. Behavior of these levels will vary based on the marginless decoder selected. See the [Reduced Quiet Zone](#reducedquietzone) table for behaviors: 
+
+* **Level 0 -** The decoder will perform margin decoding as usual.
+
+* **Level 1 -** The decoder will perform more aggressively.
+
+* **Level 2 -** The decoder requires only one side end of barcode.
+
+* **Level 3 -** The decoder can decode anything.
+
+_**Note**: Higher marginless levels will increase decoding times and the risk of decoding errors. Zebra recommends enabling only the symbologies that require a higher marginless level and leaving all other symbologies at the default level of 1._
 
 **Aim Mode -** Turns aim pattern on and off.
+
+**Aim Timer -** Sets the duration (in ms) for timed aim modes. Supports a range from 0 - 60,000 ms in increments of 100 ms.
 
 **Aim Type -** Permits selection of reader behavior when the trigger is pressed: 
 
@@ -876,9 +888,15 @@ Reader Parameters control specific configuration options for the barcode reader 
  * **Proximity Sensor Input**
  -->
 
-**Beam Timer -** Sets the maximum amount of time (in ms) that the reader remains on. Supports a range from 0 - 60,000 ms in increments of 100 ms. A value of 0 sets the reader to stay on indefinitely.
+**Illumination mode -**  Turns illumination on and off.
 
-**Aim Timer -** Sets the duration (in ms) for timed aim modes. Supports a range from 0 - 60,000 ms in increments of 100 ms.
+**Inverse 1D Mode -** Permits option selection for inverse 1D barcode decoding: 
+
+* **Disabled -** Disables decoding of inverse 1D symbologies.
+
+* **Enabled -** Enables decoding of inverse 1D symbologies only.
+
+* **Auto -** Automatically detects and decodes positive and inverse 1D symbologies.
 
 **Image Capture Mode -** Sets the barcode scanner to image capture mode: 
 
@@ -888,9 +906,9 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 * **Image Capture Only -** Only captures and image and no barcode data will be dispatched.
 
-**Note: Zebra does not recommend changing the Image Capture Mode parameter when DataWedge is used to scan barcodes; DataWedge does not process image data**.
+_**Note:** Zebra does not recommend changing the Image Capture Mode parameter when DataWedge is used to scan barcodes; DataWedge does not process image data._
 
-------
+**LCD Mode -** Used to Enable/Disable LCD Mode, which enhances the ability of the imager to read barcodes from LCD displays such as cellphones (applies to Scan Module only). **Use of LCD mode might lead to performance degradation and a blinking reticle prior to decoding**.
 
 **Linear Security Level -** Sets the number of times a barcode is read to confirm an accurate decode:
 
@@ -904,38 +922,55 @@ Reader Parameters control specific configuration options for the barcode reader 
 
 * **Security All Thrice -** Three times read redundancy for all barcodes.
 
-------
+**HW Engine Low Power Timeout -** Time (in ms) of inactivity before scanner enters low-power mode.
 
 **Picklist -** Permits selection of Picklist mode, which instructs the imager to decode only the barcode directly under the cross-hair/reticle in the viewfinder. This feature is most useful for applications in which multiple barcodes may appear in the field of view during a decode session but only one is desired for decoding.
 
 * **Disable -** Disables Picklist mode; any barcode within the field of view can be decoded.
 
 * **Hardware Picklist -** Picklist mode is enabled by sending a command to hardware.
-
+8y6
 * **Software Picklist -** Picklist feature is handled in the software; no commands are sent to hardware.
 
-**Picklist Notes** 
+_**Notes**:_
 
-* Performance might vary on some devices if Hardware or Software Picklist modes are set.
-* If using Multi-barcode mode, see important behavior notes below. 
+* _Performance might vary on some devices if Hardware or Software Picklist modes are set._
+* _If using Multi-barcode mode, see important behavior notes below._ 
 
-------
+**Poor Quality Decode Effort -** Permits selection of enhancement modes for decoding barcodes of poor or degraded quality. Available options:
 
-**Same Symbol Timeout -** Used to prevent the scanner from decoding the same symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
+* **Effort Level 0 -** Decoding performance on regular 1D and 2D barcodes is not affected.
+
+* **Effort Level 1 -** The scanner performance on regular 2D barcodes is impacted while decoding performance on Tesco Thailand barcode and Suppository barcode is improved.
+
+* **Effort Level 2 -** same as Level 1.
+
+* **Effort Level 3 -** same as Level 1.
+
+_**Note:** Same performance from Effort Level 1 to Effort Level 3._
+
+**Beam Timer -** Sets the maximum amount of time (in ms) that the reader remains on. Supports a range from 0 - 60,000 ms in increments of 100 ms. A value of 0 sets the reader to stay on indefinitely.
 
 **Different Symbol Timeout -** Used to prevent the scanner from decoding another symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
------
+**Same Symbol Timeout -** Used to prevent the scanner from decoding the same symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
+<!--
 **Digimarc Decoding -** Used to enable/disable support for Digimarc, which encodes and invisibly integrates traditional barcode data onto product packaging. **Supported with internal imager only**. Enabled by default. [More about Digimarc](https://www.digimarc.com/). 
 
------
+
+**Viewfinder Mode -** Permits selection of supported Viewfinder modes: 
+
+* **Viewfinder Enabled -** Enables only the viewfinder.
+
+* **Static Reticle -** Enables the viewfinder and a red reticle (cross-hairs) in the center of the screen to aid in positioning the barcode for scanning. **This parameter is supported only when the Camera is used for scanning**.
+-->
 
 **Scanning Modes -** Used to select between Single (normal), UDI and Multi-barcode modes. UDI mode acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). Multi-barcode mode acquires from 2-10 barcodes with each scan as specified in the Multi-barcode params panel. **Default=5**.
 
 > See important notes below.
 
------
+------
 
 ### UDI Decoding
 The Universal Device Identifier (UDI) parameter acquires multiple barcodes simultaneously. 
@@ -980,60 +1015,6 @@ _When Multi-barcode scanning mode is enabled (as above)_...
 
 -----
 
-**LCD Mode -** Used to Enable/Disable LCD Mode, which enhances the ability of the imager to read barcodes from LCD displays such as cellphones (applies to Scan Module only). **Use of LCD mode might lead to performance degradation and a blinking reticle prior to decoding**.
-
-------
-
-**HW Engine Low Power Timeout -** Time (in ms) of inactivity before scanner enters low-power mode.
-
-**Inverse 1D Mode -** Permits option selection for inverse 1D barcode decoding: 
-
-* **Disabled -** Disables decoding of inverse 1D symbologies.
-
-* **Enabled -** Enables decoding of inverse 1D symbologies only.
-
-* **Auto -** Automatically detects and decodes positive and inverse 1D symbologies.
-
-------
-
-**1D Quiet Zone Level -** Sets the effort at which the decoder will attempt to decode "marginless" barcodes: 
-
-* **Level 0 -** The decoder will perform margin decoding as usual.
-
-* **Level 1 -** The decoder will perform more aggressively.
-
-* **Level 2 -** The decoder requires only one side end of barcode.
-
-* **Level 3 -** The decoder can decode anything.
-
-**Behavior of these levels will vary based on the marginless decoder selected. See the [Reduced Quiet Zone](#reducedquietzone) table for behaviors**. 
-
->**Note**: Higher marginless levels will increase decoding times and the risk of decoding errors. Zebra recommends enabling only the symbologies that require a higher marginless level and leaving all other symbologies at the default level of 1. 
-
-------
-
-**Poor Quality Decode Effort -** Permits selection of enhancement modes for decoding barcodes of poor or degraded quality. Available options:
-
-* **Effort Level 0 -** Decoding performance on regular 1D and 2D barcodes is not affected.
-
-* **Effort Level 1 -** The scanner performance on regular 2-D barcodes is impacted while decoding performance on Tesco Thailand barcode and Suppository barcode is improved.
-
-* **Effort Level 2 -** same as Level 1.
-
-* **Effort Level 3 -** same as Level 1.
-
-**Note:** Same performance from Effort Level 1 to Effort Level 3.
-
-------
-
-**Viewfinder Mode -** Permits selection of supported Viewfinder modes: 
-
-* **Viewfinder Enabled -** Enables only the viewfinder.
-
-* **Static Reticle -** Enables the viewfinder and a red reticle (cross-hairs) in the center of the screen to aid in positioning the barcode for scanning. **This parameter is supported only when the Camera is used for scanning**.
-
------
-
 ### Character Set Configuration
 Provides options to make adjustments with the decoder character set. These options are:
 * Character Set Selection 
@@ -1056,6 +1037,7 @@ Both the preferred character set list and its preference order is configurable. 
 **Auto Character Set Failure Option** - Used to decode data if the device cannot successfully decode based on the character sets listed in the "Auto Character Set Preferred Order" list. If “None” is selected, “Null” is returned as the data string.
 
 ![img](charset_failure_option.png)
+
 -----
 
 ## Scan Params

@@ -10,16 +10,18 @@ Device Tracker server runs on a supported Windows-based server or desktop. Devic
 
 Solution components:
 * **On-premise Device Tracker server** - application server with database
-* **Web portal** - dashboard accessible from a supported browser for monitoring devices
-* **Device Tracker client** (on mobile device) - reports presence status and device information to server
-* Other: 
- * **SSL certificate** (procured by a signed Certificate Authority) - configured on server for secure HTTPS communication
- * **Open specified incoming and outgoing ports** - for server communication through the firewall, by default ports 8443 and 8080
+* **Web portal** - centralized dashboard accessible from a supported browser for monitoring device information including tracking status, connection state, AP friendly name, device friendly name, charging status, remaining battery percentage, and more.
+* **Device Tracker client** - reports device presence status and information (such as remaining battery and charging status) to server
+
+Before installing, ensure to prepare additional steps for system setup:
+ * **Install SSL certificate** (procured by a signed Certificate Authority) - configured on server for secure HTTPS communication
+ * **Open specific incoming and outgoing ports** - for server communication through the firewall, by default ports 8443 and 8080
+ * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 
 
 > Important: An SSL Certificate is required from a third party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non-third party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
 
 ##System Requirements
-This section provides the server and device requirements. Device Tracker supports a maximum of 10,000 devices per installation.
+This section provides the server and device requirements. Device Tracker supports a maximum of 500 devices per installation.
 
 ###Server Requirements
 1. Windows Operating Systems supported:
@@ -79,10 +81,10 @@ This section provides the server and device requirements. Device Tracker support
 
 ###Device Requirements
 Requirements for Device Tracker client:
-* The device is connected to the same network as the server. 
+* The device is connected via WiFi on the same network as the server. 
 * Zebra Data Service agent is running on the device. This agent collects data from the device and transmits it to the Device Tracker server.
 * Bluetooth radio is enabled on the device. BLE (Bluetooth Low Energy) beacons are used to help locate devices.
-* The server address is configured in the Device Tracker client to communicate with the server. 
+* The server URL, user name, and password is configured in the Device Tracker client to communicate with the server. 
 
 See supported [Zebra devices](../about/#supporteddevices).
 
@@ -114,7 +116,7 @@ _Figure 4. Installation - server configuration_
    * Server auth password
 ![img](DTRK_Install_5.JPG)
 _Figure 5. Installation - server authentication and credentials_
-7. Review settings. Click Next.
+7. Review settings. Click Next. Third party applications (such as Postgres and Node.js) will be installed if it does not pre-exist in the system.
 ![img](DTRK_Install_6.JPG)
 _Figure 6. Installation - review settings_
 8. Installation complete. Click Finish.
@@ -151,12 +153,8 @@ H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
 
 	Where "name.company.com:8443" is replaced with the appropriate domain and port number.
 
-	Default login credentials (case-sensitive) for _super admin_ user are: 
+As part of Zebra's DNA Visibility Console, the server consists of multiple solution offerings. Select "Device Tracker" then login.
 
-	* User: SAdmin 
-	* Password: admin 
-
-   Zebra recommends to change the password immediately for the _super admin_ user to avoid unauthorized access. Tap on "SAdmin" user at the top right of the Admin View and select "Change password".
 5. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
 A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
 B. Enter the Web UI URL, for example `https://name.company.com:8443/zdvc`<br>
@@ -204,7 +202,7 @@ Detailed procedures follow for Device Tracker configuration.
 **Steps to create StageNow profile to automatically bypass the device Battery Optimization pop-up message:**
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC. 
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
-3. Ensure the proper MX version is selected at the top drop-down selector. Select “XpertMode" from the table. Click Create.<br>
+3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
 _Figure 9. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
@@ -269,7 +267,7 @@ H. A window opens with the generated StageNow barcode in .pdf format. When ready
 **Steps to create StageNow profile to start Device Tracker service remotely:**
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC. 
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
-3. Ensure the proper MX version is selected at the top drop-down selector. Select “XpertMode" from the table. Click Create.<br>
+3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
 _Figure 21. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
@@ -290,7 +288,7 @@ _Figure 24. Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
-12. Scan the barcode generated to automatically bypass the Battery Optimization message.
+12. Scan the barcode generated to start the Device Tracker service in the background.
 
 
 For more information on StageNow, refer to its [documentation](http://techdocs.zebra.com/stagenow) and [download](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html). 

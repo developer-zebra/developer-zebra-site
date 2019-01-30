@@ -12,7 +12,9 @@ As part of Zebra’s DNA Visibility Console, the server consists of multiple sol
 
 ## Using the Web Console
 
-Device Tracker provides a centralized dashboard displaying an inventory of deployed Zebra devices, along with information on the current or last-known area of presence from connected Access Point (AP) information. The top dashboard is lined with tiles that provide the total number of devices for each respective category and filter the devices based on that category with a click on the tile. The columns on the dashboard can be sorted by clicking on the double triangle to the right of the column name. Subsequent clicks sort the column in ascending order (triangle points upward) or descending order (triangle points downward). A tabbed menu is displayed at the top of the dashboard above the tiles providing access to different views: Active, Out of Service, and Settings. 
+Device Tracker provides a centralized dashboard displaying an inventory of deployed Zebra devices, along with information on tracking status, connection state, connected AP friendly name, device friendly name, charging status, remaining battery percentage, and more.
+
+The top dashboard is lined with tiles that provide the total number of devices for each respective category and filter the devices based on that category with a click on the tile. The columns on the dashboard can be sorted by clicking on the double triangle to the right of the column name. Subsequent clicks sort the column in ascending order (triangle points upward) or descending order (triangle points downward). A tabbed menu is displayed at the top of the dashboard above the tiles providing access to different views: Active, Out of Service, and Settings. 
 
 ![img](DTRK_dashboard.jpg)
 _Figure 1. Admin Dashboard_

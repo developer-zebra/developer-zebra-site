@@ -15,7 +15,7 @@ Solution components:
 
 Before installing, ensure to prepare additional steps for system setup:
  * **Install SSL certificate** (procured by a signed Certificate Authority) - configured on server for secure HTTPS communication
- * **Open specific incoming and outgoing ports** - for server communication through the firewall, by default ports 8443 and 8080
+ * **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
  * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 
 
 > Important: An SSL Certificate is required from a third party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non-third party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
@@ -40,44 +40,17 @@ This section provides the server and device requirements. Device Tracker support
    * PostgreSQL 9.6.3-3 and higher
    * Device Tracker software (server and client) 
 
-4. Network Access Requirements:
-   * If required, open incoming and outgoing ports for communication between server and mobile devices through the server firewall. The default ports used are: 
-        * Data Port 8080 for Device Tracker client to register and transmit device data 
-        * Web Portal Port 8443 for accessing Device Tracker web portal  
-   * If required, perform DNS setup to add server IP address to the DNS server. 
+4. Network Access Requirements (see **Server Setup** below):
+   * If required, **open incoming and outgoing ports** for communication between server and mobile devices through the server firewall. Sample ports are: 
+        * Backend Server Port: Port 8080 for Device Tracker client to register to the server and transmit device data 
+        * UI Port: Web Portal Port 8443 for accessing Device Tracker web portal  
+   * If required, perform **DNS setup** to add server IP address to the DNS server. 
 
-5. Hardware Requirements: 
-   * Minimum CPU cores: 8  
-   * Minimum memory (RAM): 4 GB  
-   * Minimum available hard drive space: 300 GB 
+5. Hardware Requirements:
+   * Minimum CPU cores: 8
+     * Minimum memory (RAM): 8 GB
+         * Minimum available hard drive space: 300 GB
 
-  Recommended hardware requirements based on number of devices:
-   <table class="facelift" align="center" style="width:70%" border="1" padding="5px">
-   <tr bgcolor="#dce8ef">
-      <th>Number of Devices</th>
-      <th style="text-align:center">RAM</th>
-      <th style="text-align:center">CPU Cores</th>
-      <th style="text-align:center">Hard Drive Space</th>
-    </tr>
-    <tr>
-      <td>Up to 1,000 devices</td>
-      <td style="text-align:center">4 GB</td>
-      <td style="text-align:center">8 cores</td>
-      <td style="text-align:center">300 GB</td>
-    </tr>
-    <tr>
-      <td>1,000 to 5,000 devices</td>
-      <td style="text-align:center">8 GB</td>
-      <td style="text-align:center">8 cores</td>
-      <td style="text-align:center">600 GB</td>
-    </tr>
-    <tr>
-      <td>Up to 10,000 devices</td>
-      <td style="text-align:center">16 GB</td>
-      <td style="text-align:center">16 cores</td>
-      <td style="text-align:center">750 GB</td>
-    </tr>
-   </table>
 
 ###Device Requirements
 Requirements for Device Tracker client:
@@ -86,7 +59,138 @@ Requirements for Device Tracker client:
 * Bluetooth radio is enabled on the device. BLE (Bluetooth Low Energy) beacons are used to help locate devices.
 * The server URL, user name, and password is configured in the Device Tracker client to communicate with the server. 
 
-See supported [Zebra devices](../about/#supporteddevices).
+Supported Devices (including GSM and non-GMS versions):
+<table class="facelift" align="center" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Device</th>
+    <th style="text-align:center">Android 4.4.x <br>(KitKat)</th>
+    <th style="text-align:center">Android 5.x <br>(Lollipop))</th>
+    <th style="text-align:center">Android 6.x <br>(Marshmallow)</th>
+    <th style="text-align:center">Android 7.x <br>(Nougat)</th>
+    <th style="text-align:center">Android 8.x <br>(Oreo)</th>
+  </tr>
+  <tr>
+    <td>ET50/ET55</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>MC18</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+  <tr>
+    <td>MC3300 </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>MC40</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PS20</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>TC20/TC25</td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center"></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>TC51/TC56 </td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>TC52/TC57</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>TC55</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC70/TC75</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC70X/TC75X</td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>TC72/TC77</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>TC8000</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>    
+    <td>VC80x</td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center"></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>    
+    <td>WT6000</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+  </tr>
+</table>
+
 
 ##Server Install & Setup
 Install Device Tracker server on the supported system that meets the specified requirements. Download Device Tracker server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
@@ -144,10 +248,10 @@ G. When prompted, enter the certificate password to export "ssl_certificate.pfx"
 H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to a designated folder.
 <br>
 
-3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. These are the UI and backend server ports specified during the server install. The method to open the ports depends on the firewall software used by the network administrator. The ports are specified during the server install. By default the ports are:   
+3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. These are the UI and backend server ports specified during the server install. The method to open the ports depends on the firewall software used by the network administrator. The ports are specified during the server install. Sample ports:   
 
-	* Inbound ports: TCP ports 8080 and 8443 (by default)
-	* Outbound port: TCP port 8080 (by default)
+	* Inbound ports: TCP ports 8080 and 8443
+	* Outbound port: TCP port 8080
 <br>
 4. **Run the Device Tracker Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/zdvc**
 

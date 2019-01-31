@@ -6,15 +6,22 @@ devicetype: A
 order: 0
 ---
 
-The Bluetooth Manager (nfcmgr) controls whether a device can pair with other Bluetooth devices such as headsets, printers and computers that come into range, and whether the device can be "discoverable," which would enable other Bluetooth devices to initiate pairing requests with it. 
+The NFC Manager (NfcMgr) controls near field communications options on the device, including power supplied to the NFC radio and the state and behavior of features to improve performance and/or to avoid interoperability issues. NFC is a short-range wireless specification that enables two devices that are touching or within very close proximity to communicate using magnetic field induction.  
 
-Bluetooth is a short-range wireless technology operating in the 2.4 GHz ISM band that was originally intended as a replacement for serial communications cables. It has since been adopted as a standard for hands-free headsets, stereo audio, networking to PCs and connections for barcode scanners, medical equipment and other devices formerly using RS-232. 
 
 ### Main Functionality
 
 * Enable/Disable 
- * Bluetooth Pairing 
- * Bluetooth Discoverability
- * Silent Pairing (no user confirmation)
-* Create Silent Pairing Rules  
+ * NFC communications
+ * TriState mode 
+ * TriNDEF mode
+ * TriP2P mode
+ * Polling mode
+ * CPU boost mode
+ * Card Emulation mode
+ * NFC usage when the Android "lock screen" is displayed
+* Select type A, B, F, or V tags for use
+* Select baud rate for type A tags
+* Select baud rate for type B tags
+* Reset device to default NFC settings
 

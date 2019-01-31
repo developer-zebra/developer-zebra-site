@@ -3,7 +3,7 @@ csp: nfcmgr
 title: Silent Pairing UAP
 type: parm
 order: 18
-mx: "7.0"
+mx: "8.3"
 apilevel: "24"
 devicetype: A
 parm:

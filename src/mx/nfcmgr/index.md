@@ -1,6 +1,6 @@
 ---
-title: Bluetooth Manager
-description: The nfcmgr controls whether to allow new devices to pair.
+title: NFC Manager
+description: The NfcMgr controls near field communications options on the device.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -13,7 +13,4 @@ mxversions:
     value: 5
 csp: nfcmgr
 ---
-
-
-
 

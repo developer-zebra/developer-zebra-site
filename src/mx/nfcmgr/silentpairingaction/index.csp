@@ -3,7 +3,7 @@ csp: nfcmgr
 title: Silent Pairing Action
 type: parm
 order: 10
-mx: "7.0"
+mx: "8.3"
 apilevel: "24"
 devicetype: A
 parm:
@@ -13,7 +13,7 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "7.0"
+      mx: "8.3"
       apilevel: "24"
       devicetype: A
       name: Do not change
@@ -21,19 +21,19 @@ parm:
     - code: 1
       devicetype: A
       name: Add Silent Pairing Rule
-      mx: "7.0"
+      mx: "8.3"
       apilevel: "24"
       description: Adds a Silent Pairing Rule to the list.
     - code: 2
       devicetype: A
       name: Remove Silent Pairing Rule
-      mx: "7.0"
+      mx: "8.3"
       apilevel: "24"
       description: Removes the specified Silent Pairing Rule.
     - code: 3
       devicetype: A
       name: Remove all Silent Pairing Rules
-      mx: "7.0"
+      mx: "8.3"
       apilevel: "24"
       description: Clears the list of devices previously specified rules for Silent Pairing, including the default rules.
 ---

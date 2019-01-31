@@ -3,7 +3,7 @@ csp: nfcmgr
 title: Silent Pairing Class of Device
 type: parm
 order: 15
-mx: "7.0"
+mx: "8.3"
 apilevel: "24"
 devicetype: A
 parm:

@@ -969,12 +969,12 @@ ul.nostyle i {
   padding-bottom: 1px;
   color: #fff;
   background: #2e2e2e;
-  font-size: 10px;
+  font-size: 8px;
   width: 100%;
 }
 #footer a {
   color: #fff;
-  opacity: 40;
+  opacity: 30;
 }
 #footer a:hover {
   color: #45aed6;

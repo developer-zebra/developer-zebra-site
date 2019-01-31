@@ -148,6 +148,10 @@ csps:
     url: /mx/persistmgr
     csp: persistmgr
   - type: section
+    title: NFC Manager
+    url: /mx/nfcmgr
+    csp: nfcmgr
+  - type: section
     title: Personal Dictionary
     url: /mx/personaldictionarymgr
     csp: personaldictionarymgr

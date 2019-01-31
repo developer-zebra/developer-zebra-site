@@ -156,6 +156,10 @@ csps:
     url: /mx/licensemgr
     csp: licensemgr
   - type: section
+    title: NFC Manager
+    url: /mx/nfcmgr
+    csp: nfcmgr
+  - type: section
     title: Persist Manager
     url: /mx/persistmgr
     csp: persistmgr

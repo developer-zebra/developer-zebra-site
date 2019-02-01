@@ -20,32 +20,41 @@ The proximity depicted in the BLE indicator is based on the strength of the Blue
 > WiFi and Bluetooth must be enabled on both devices.
 
 ###Procedure to find a device
+The procedure to locate a device follows (based on user role):
+1. **Mark the target device "To be found".** <br>
+<font color="orange">[Admin]</font> From the [dashboard](../admin) in the web portal, the administrator selects the device to find within the table and sets it to the “To be found” state: <br>
+       A. Tick the checkbox for the device row. <br>
+       B. Click on the Action menu and select “Set device: ‘To be found’”.  <br>
+       C. Click “OK” on the confirmation message. The device status changes from "Active" to "To be found". <br>
+The next time the target device reports to the server, it identifies it is marked "To be found". The length of time this takes is based on both the [Reporting Frequency](../config/#applicationconfiguration) and the elapsed time since the last report was received (seen in the **Updated** column on the [admin dashboard](../admin)) <sup>[1]</sup>. 
+2. **An associate is tasked to find the device.** <br>
+<font color="orange">[Admin]</font> The administrator assigns an associate to find the device, using the client app on their device as a locationing tool.
+3. **Prepare device search based on connected AP.** <br>
+<font color="blue">[Associate]</font> Open Device Tracker client on the associate's device. In the list of "Devices to be found", tap on the target device to find. The **Device Details** screen appears providing information on the device including “Last Connected AP”, which identifies the last known AP zone where the device is located. Walk to the AP zone and tap **Go** to begin the device search. <br>
+<font color="orange">[Admin]</font> On the admin dashboard, the device automatically changes state from "To be Found" to "Being Found". 
+4. **Perform device search with BLE and audio.** <br>
+<font color="blue">[Associate]</font> Once in the AP zone, walk towards a direction and stop every so often<!-- 10 to 15 meters -->, pausing for about 30 seconds. The 3 circles with colored rings in the BLE indicator show the proximity between the device conducting the search and the target device:
+   * Red - outer ring indicating the user is "far" away from the target device
+   * Orange - middle ring indicating the user is "near" the target device
+   * Green - inner ring indicating the user is "close" in proximity to the target device <br><br>
 
-From the [dashboard](../admin) in the web portal, the administrator selects the device to find within the table and sets it to the “To be found” state as follows:
-1. Tick the checkbox for the device row.
-2. Click on the Action menu and select “Set device: ‘To be found’”. 
-3. Click “OK” on the confirmation message. The device status changes from "Active" to "To be found".
+ "Out of Bluetooth range" message appears if the user walks beyond the distance which the Bluetooth signal can be received from the target device. As the associate physically approaches near the target device, the color-coded visual indicator can change in color from red to orange to green. As the associate moves further away from the target device, the visual indicator can change in color from green to orange to red. Repeat this step and change direction when necessary to move closer to the device. 
+ 
+ At any time during the search, tap **Play Sound** to play audio on the target device, further isolating the device location. Walk towards the sound to locate the device. This is particularly helpful when in the orange (near) and green (close) zones. 
 
-The next time the target device reports to the server, it identifies it is marked "To be found". The length of time this takes is based on both the [Reporting Frequency](../config/#applicationconfiguration) and the elapsed time since the last report was received (seen in the **Updated** column on the [admin dashboard](../admin)) <sup>[1]</sup>. The administrator assigns an associate to find the device using the Device Tracker client with the following procedure: 
+ To return back to the main screen, tap the device back button.
 
-1. **Begin the device search in the area of the Access Point based on the AP friendly name.** <br>
-<font color="blue">[Associate]</font> Open Device Tracker client. In the list of "Devices to be found", tap on the target device to find. The **Device Details** screen appears providing information on the device including “Last Connected AP” which identifies the AP zone where the device is located. Walk to the AP zone and tap **Go** to begin the device search. <br>
-<font color="orange">[Admin]</font> On the admin dashboard, the device changes state from "To be Found" to "Being Found". 
-2. **Perform device search.** <br>
-<font color="blue">[Associate]</font> Once in the AP zone, walk towards a direction and stop every so often<!-- 10 to 15 meters -->, pausing for about 30 seconds. The BLE indicator shows the proximity between the device conducting the search and the target device. As the associate physically approaches near the target device, the color-coded visual indicator contracts and the circles change in color from red to orange to green. As the associate moves further away from the target device, the visual indicator expands and the color changes from green to orange then red. Repeat this step and change direction when necessary to move closer to the device.
+   ![img](finding_device.jpg)
+  _Figure 1. Device Tracker client screens while locating a device_ <br>
 
-  _For optimal results, Zebra recommends to hold the device used for searching in the same position throughout the search activity. The device screen should be placed facing the user with no obstruction in the rear of the device. Changing device orientation during the search may negatively interfere with proximity perception. Moving at a slow pace during the search and standing still <!--at every 10 to 15 meters-->every so often stabilizes the signals received, improving proximity measurements._
+5. **Device found.** <br>
+<font color="blue">[Associate]</font> Once the device is found, tap **Device found** at the bottom of the screen. Some devices may require the user to scroll down the screen for the button to be visible. Tap “Yes” to the confirmation message to designate the device as found. <br>
+<font color="orange">[Admin]</font> On the dashboard, the device status changes from “Being found” to “Device has been found”. The admin can take action to set the device back to the “Active” state, placing it back into the active device pool: <br>
+       A. Select the device in the dashboard.<br>
+       B. In the Action menu, select "Set device to: Active". <br>
+       C. The device is moved out of the "Found" state into the "Active" state.
 
-  ![img](finding_device.jpg)
-  _Figure 1. Device Tracker client screens while locating a device_
-3. **Detection by sound.** <br>
-<font color="blue">[Associate]</font> Tap “Play Sound” to play an audio sound on the misplaced device, further isolating the device location. Walk towards the sound to locate the device. This is particularly helpful when in the orange (near) and green (immediate) zones. 
-4. **Device located.** <br>
-<font color="blue">[Associate]</font> Once found, tap **Device found** at the bottom of the screen. Some devices may require the user to scroll down the screen for the button to be visible. Tap “Yes” to the confirmation message to designate the device as found. <br>
-<font color="orange">[Admin]</font> On the dashboard, the device status changes from “Being found” to “Device has been found”. The admin can take action to set the device back to the “Active” state, placing it back into the main device pool:
-   A. Select the device in the dashboard.
-   B. In the Action menu, select "Set device to: Active".
-   C. The device is moved out of the "Found" state into the "Active" state.
+ > For optimal results, Zebra recommends to hold the device used for searching in the same position throughout the search activity. The device screen should be placed facing the user with no obstruction in the rear of the device. Changing device orientation during the search may negatively interfere with proximity perception. Moving at a slow pace during the search and standing still <!--at every 10 to 15 meters-->every so often stabilizes the signals received, improving proximity measurements.
 
 
 <sup>[1]</sup> **Important Note**: Depending on when the device being searched last reported to the server, it may take at most the specified [Reporting Frequency](../config/#applicationconfiguration) time to elapse before the associate device can start finding the target device. Once the target device reports to the server and receives the flag that it is in the "To be found" state, it automatically changes the reporting frequency to 30 seconds for more frequent updates to the server until the device has been found. _For example, if Device A is marked “To be found” from the admin and the following conditions exist:_ 
@@ -56,7 +65,7 @@ _In this scenario, approximately 5 minutes need to elapse (the next time the tar
 
 ###Cannot find device
 
-If the device cannot be located, in step 6 above tap on "Cannot find" and proceed to step 7 to tap "Yes" to the confirmation message. On the admin dashboard, the device status is changed from "Being found" to "Cannot find". 
+If the device cannot be located, in step 4 above tap on "Cannot find" and proceed to tap "Yes" to the confirmation message. On the admin dashboard, the device status is changed from "Being found" to "Cannot find". 
 
 ##Track Device Presence
 The admin dashboard on the web portal monitors device tracking by providing information on: misplaced devices, devices that are being searched for, devices that have been found, and devices that cannot be found. For each device, the “Connected AP” friendly name provides a general location of where the device resides based on the AP the device is connected to. The connected AP is displayed both on the admin dashboard and Device Tracker client. 

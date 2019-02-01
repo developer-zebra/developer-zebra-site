@@ -19,7 +19,7 @@ Device Tracker main features:
  * Device tagging for easier organization, identification, and tracking
  * Admin action to mark device "To be found", which adds the device to the search list on the associate's client app
 *	Find and retrieve misplaced devices with client app:
-  * Visually with BLE based animated proximity indicator 
+  * Visually with BLE based animated and color-coded proximity indicator 
   * Audibly with chirping sound 
 *	Secure communications between the Device Tracker Client application and server
 *	Friendly name assignment for APs and devices for ease of identification and tracking

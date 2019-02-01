@@ -19,18 +19,17 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 #### Mobile devices
 
-* ET5X   - Marshmallow
 * MC33   - Nougat, Oreo
 * PS20 - Oreo
 * TC20   - Nougat
 * TC25   - Nougat
-* TC51   - Marshmallow, Nougat, Oreo
+* TC51   - Nougat, Oreo
 * TC52 - Oreo
-* TC56   - Marshmallow, Nougat, Oreo
+* TC56   - Nougat, Oreo
 * TC57 - Oreo
-* TC70x  - Marshmallow, Nougat, Oreo
+* TC70x  - Nougat, Oreo
 * TC72 - Oreo
-* TC75x  - Marshmallow, Nougat, Oreo
+* TC75x  - Nougat, Oreo
 * TC77 - Oreo
 * VC80x  - Nougat, Oreo
 * WT6000 - Nougat

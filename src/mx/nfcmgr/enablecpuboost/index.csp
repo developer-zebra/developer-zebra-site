@@ -1,13 +1,13 @@
 ---
 csp: nfcmgr
-title: Card Emulation Mode Enable/Disable
+title: CPU Boost Enable/Disable
 type: parm
-order: 10
+order: 13
 mx: "8.3"
 devicetype: A
 parm:
   pivotal: No
-  name: enableCE
+  name: enableCPUBoost
   type: list
   list:
     - code: 86
@@ -19,13 +19,12 @@ parm:
       devicetype: A
       name: Enable
       mx: "8.3"
-      description: Enables Card Emulation mode on the device.
+      description: Boosts CPU speed during NFC transactions.
     - code: 0
       devicetype: A
       name: Disable
       mx: "8.3"
-      description: Disables Card Emulation on the device.
+      description: Does not boost CPU speed during NFC transactions.
 ---
 
-This is the On/Off switch for Card Emulation mode. When enabled, the device behaves like a contactless smart card; it does not generate its own RF field but relies on the NFC reader to do so. 
-
+Controls whether CPU speed us boosted during NFC transactions. 

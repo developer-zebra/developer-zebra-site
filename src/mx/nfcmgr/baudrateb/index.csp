@@ -2,7 +2,7 @@
 csp: nfcmgr
 title: Baud Rate B
 type: parm
-order: 2
+order: 16
 mx: "8.3"
 devicetype: A
 parm:

@@ -1,0 +1,31 @@
+---
+csp: nfcmgr
+title: Card Emulation Mode Enable/Disable
+type: parm
+order: 2
+mx: "8.3"
+devicetype: A
+parm:
+  pivotal: No
+  name: enableCE
+  type: list
+  list:
+    - code: 86
+      mx: "8.3"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "8.3"
+      description: Enables Card Emulation mode on the device.
+    - code: 0
+      devicetype: A
+      name: Disable
+      mx: "8.3"
+      description: Disables Card Emulation on the device.
+---
+
+This is the On/Off switch for Card Emulation mode. When enabled, the device behaves like a contactless smart card; it does not generate its own RF field but relies on the NFC reader to do so. 
+

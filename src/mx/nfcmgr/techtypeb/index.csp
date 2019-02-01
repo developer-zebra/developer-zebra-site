@@ -1,0 +1,19 @@
+---
+csp: nfcmgr
+title: Use Type B Tags
+type: parm
+order: 18
+mx: "8.3"
+devicetype: A
+parm:
+  presentif: Enable NFC is NOT "Disable"
+  pivotal: No
+  name: techTypeB
+  type: string
+---
+
+Controls whether the device reads NFC "Type B" tags. 
+
+**Input value rules**: 
+
+* An integer greater than 0 

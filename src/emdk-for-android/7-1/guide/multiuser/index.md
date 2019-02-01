@@ -7,7 +7,7 @@ productversion: '7.1'
 
 ## Overview
 
-EMDK for Android 7.1 (and higher) supports Android multi-user mode, which allows a device to have Primary and Secondary users, each with its own sets of apps, capabilities and access privileges. When running an EMDK app on a device with multiple users, EMDK is enabled only for the active user. **Apps must be designed to release internal device resources and the EMDKManager whenever the app goes to the background** and to reacquire them when returning to the foreground. This is done by listening with intents: 
+EMDK for Android 7.1 (and higher) supports Android multi-user mode, which allows a device to have Primary and Secondary users, each with its own sets of apps, capabilities and access privileges. When running an EMDK app on a device with multiple users, EMDK is enabled only for the active user. **Apps must be designed to release internal device resources and the EMDKManager whenever the app goes to the background (which triggers a "user switch")** and to reacquire the resources when the app returns to the foreground. This is done by listening with intents: 
 
 * `ACTION_USER_BACKGROUND` - release internal resources when heard
 * `ACTION_USER_FOREGROUND` - reacquire resources when heard

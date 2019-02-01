@@ -1,0 +1,30 @@
+---
+csp: nfcmgr
+title: NFC Data Exchange Format Usage 
+type: parm
+order: 2
+mx: "8.3"
+devicetype: A
+parm:
+  pivotal: No
+  name: skipNdef
+  type: list
+  list:
+    - code: 86
+      mx: "8.3"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: use
+      mx: "8.3"
+      description: Enables the device to exchange data using NDEF.
+    - code: 0
+      devicetype: A
+      name: don't use
+      mx: "8.3"
+      description: Prevents the device from using NDEF to exchange data. 
+---
+
+Controls whether to use NFC Data Exchange Format (NDEF) when exchanging information between two NFC devices. NDEF is a binary format that can exchange application-defined payloads between devices or store payloads in an NFC tag. 

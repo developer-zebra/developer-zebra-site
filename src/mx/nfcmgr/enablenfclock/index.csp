@@ -1,0 +1,30 @@
+---
+csp: nfcmgr
+title: NFC on Lock Screen Enable/Disable
+type: parm
+order: 2
+mx: "8.3"
+devicetype: A
+parm:
+  pivotal: No
+  name: enableNfcLock
+  type: list
+  list:
+    - code: 86
+      mx: "8.3"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: Enable
+      mx: "8.3"
+      description: Allows NFC to be used from the Android lock screen.  
+    - code: 0
+      devicetype: A
+      name: Disable
+      mx: "8.3"
+      description: Prevents NFC from being used from the Android lock screen.  
+---
+
+Controls use of NFC when the device is displaying the Android lock screen. 

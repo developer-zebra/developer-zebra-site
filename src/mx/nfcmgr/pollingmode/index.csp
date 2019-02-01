@@ -1,0 +1,36 @@
+---
+csp: nfcmgr
+title: Polling Mode 
+type: parm
+order: 2
+mx: "8.3"
+devicetype: A
+parm:
+  pivotal: No
+  name: pollingMode
+  type: list
+  list:
+    - code: 86
+      mx: "8.3"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 2
+      devicetype: A
+      name: Hybrid
+      mx: "8.3"
+      description: Hybrid.
+    - code: 1
+      devicetype: A
+      name: Standard
+      mx: "8.3"
+      description: Standard. 
+    - code: 0
+      devicetype: A
+      name: Low Power
+      mx: "8.3"
+      description: Low power. 
+---
+
+Used to select the Polling mode, which allows an NFC device to detect nearby NFC tags or devices in peer-to-peer mode saeeking to communicate. 
+

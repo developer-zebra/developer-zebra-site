@@ -1,0 +1,40 @@
+---
+csp: nfcmgr
+title: Baud Rate A
+type: parm
+order: 2
+mx: "8.3"
+devicetype: A
+parm:
+  pivotal: No
+  name: baudRateA
+  type: list
+  list:
+    - code: 86
+      mx: "8.3"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: 106 kbps
+      mx: "8.3"
+      description: Sets a 106 kbps communication rate for Type A tags.
+    - code: 16
+      devicetype: A
+      name: 212 kbps
+      mx: "8.3"
+      description: Sets a 212 kbps communication rate for Type A tags. 
+    - code: 32
+      devicetype: A
+      name: 424 kbps
+      mx: "8.3"
+      description: Sets a 424 kbps communication rate for Type A tags. 
+    - code: 2
+      devicetype: A
+      name: No restriction
+      mx: "8.3"
+      description: Allows NFC communication for Type A tags at any speed. 
+---
+
+Controls the NFC communication speed for Type A tags. 

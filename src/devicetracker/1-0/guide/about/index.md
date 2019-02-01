@@ -7,19 +7,18 @@ productversion: '1.0'
 
 ## Overview
 
-Device Tracker is a centralized solution that tracks and finds misplaced devices within a facility. As part of Zebra’s Mobility DNA Visibility Console, it leverages existing WiFi network infrastructure to locate devices, preventing device inventory shrinkage. When locating a device, Device Tracker identifies the general area where the device is located based on the Access Point (AP) the device is connected to within the facility. The Device Tracker client uses BLE (Bluetooth Low Energy) beacons transmitted from the misplaced device for proximity sensing based on its relative position to the device conducting the search. Audio can be played on the misplaced device to aid in locating it if not easily visible. Device Tracker centralized management system continuously monitors device presence, connection state, and battery charge to ensure visibility of devices prior to reaching a disconnected or loss of battery state.
+Device Tracker is a centralized solution that tracks and finds misplaced devices within a facility. As part of Zebra’s Mobility DNA Visibility Console, it leverages existing WiFi network infrastructure to locate devices, preventing device inventory shrinkage. When locating a device, Device Tracker identifies the general area where the device is located based on the Access Point (AP) the device is connected to within the facility. The Device Tracker client uses BLE (Bluetooth Low Energy) beacons transmitted from the misplaced device for proximity sensing based on its relative position to the device conducting the search. Audio can be played on the misplaced device to aid in locating it if not easily visible. Device Tracker centralized management system continuously monitors device presence, tracking status, connection state, and battery charge to ensure visibility of devices prior to reaching a disconnected or loss of battery state.
 
 ##Main Features
 Device Tracker main features:
 *	Presence information for all supported WiFi connected devices based on AP location zone
 *	Misplaced device prevention by monitoring low power and disconnection state
-*	Centralized dashboard to easily view device information: WiFi connectivity (connection status, connected AP), searching status (To Be Found, Being Found, Found, Cannot Find), battery information (percent battery remaining, charging status), active (connected), and other information from deployed Zebra mobile computers. 
+*	Centralized dashboard to easily view device information: WiFi connectivity (connection status, connected AP), tracking status (To Be Found, Being Found, Found, Cannot Find), battery information (percent battery remaining, charging status), and other information from deployed Zebra mobile computers. 
  * Filter and sort data
- * Search AP name, device name, device model
+ * Search by status, AP name, device name, device model, device serial number, battery state, and tags
  * Device tagging for easier organization, identification, and tracking
- * Admin action to mark device to be found (initiate search for misplaced device), which sends a notification to the client to take action
-*	Client lists misplaced devices to locate. Find misplaced device with color-coded BLE proximity animation and audio 
-*	Find and retrieve misplaced devices:
+ * Admin action to mark device "To be found", which adds the device to the search list on the associate's client app
+*	Find and retrieve misplaced devices with client app:
   * Visually with BLE based animated proximity indicator 
   * Audibly with chirping sound 
 *	Secure communications between the Device Tracker Client application and server
@@ -33,7 +32,7 @@ Device Tracker consists of the following components:
 *	Server – Collects and processes device data. 
 *	Web portal - Centralized dashboard for monitoring device presence, tracking, and battery status.
 
-The Device Tracker client software registers the device with the server and reports device information based on the defined reporting frequency from the server settings. The Admin uploads a list of friendly names of Access Points within the facility, which identifies the general area or zone where the device is located when connected to the AP. The Admin marks the device to be found and the associate tasked to search for the missing device uses their own device as a proximity indicator to locate the misplaced device. On the associate’s device, the Device Tracker client provides a list of devices to be found. The associate selects the target device to find from the list and uses the AP friendly name displayed to identify the general area where the device is last seen. To further pinpoint the device location, an animated BLE-based (Bluetooth Low Energy) proximity indicator displays a graphic showing how close the user is to the misplaced device. The indicator displays in red when "far" away from the device, orange when "near" the device, and green when "close" in proximity to the device. A sound can be played on the target device to locate it, paricularly if hidden from view.
+The Device Tracker client software registers the device with the server and reports device information based on the defined reporting frequency from the server settings. The Admin uploads a list of friendly names of Access Points within the facility, which identifies the general area or zone where the device is located when connected to the AP. The Admin marks the device "To be found" and the associate tasked to search for the missing device uses their own device as a proximity indicator to locate the misplaced device. On the associate’s device, the Device Tracker client provides a list of devices to be found. The associate selects the target device to find from the list and uses the AP friendly name (if configured) to identify the general area where the device is last seen. To further pinpoint the device location, an animated BLE-based (Bluetooth Low Energy) proximity indicator displays a graphic showing how close the user is to the misplaced device. The indicator displays in red when "far" away from the device, orange when "near" the device, and green when "close" in proximity to the device. "Out of Bluetooth range" message appears if the user walks beyond the distance which the Bluetooth signal can be received from the target device. Audio can be played on the target device to locate it, particularly if hidden from view.
 
 The web portal provides a dashboard for administrators to monitor the status of all tracked devices, identifying any misplaced devices. The last known status is provided from devices so action can be taken to prevent lost or misplaced devices.
 

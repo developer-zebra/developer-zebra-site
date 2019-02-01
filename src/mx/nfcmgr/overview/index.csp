@@ -24,3 +24,4 @@ The NFC Manager (NfcMgr) controls near field communications options on the devic
 * Select baud rate for type B tags
 * Reset device to default NFC settings
 
+-----

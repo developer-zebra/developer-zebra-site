@@ -147,6 +147,19 @@ This section covers important interactions between EHS and Android features that
 * Taking a screenshot (by pressing the "volume-down" and "Power" buttons simultaneously) while in User Mode might expose users to the Gallery app or to apps used for sharing images such as Gmail and MMS. To prevent this, disable such unwanted apps in the Disable/Enable Applications section of [Optional Feature Tags section](../settings#optionalfeaturetags).
 * If the Programmable Keys feature on the Android System Settings panel is used to program a key to launch an application, that key mapping will be available in User Mode. 
 
+### Bluetooth User Access
+
+EHS by default disables the Settings app (`com.android.settings`) when the device is in User Mode. This prevents the "BT Pairing Utility" (accessible in User Mode) from enabling Bluetooth and pairing with devices. For organizations that wish to allow this capability, EHS offers a means of enabling Bluetooth control while restricting access to most other Settings panel features.
+
+**To enable Bluetooth in User More**: 
+
+1. Enable the Settings app using the [Enable/Disable Apps](../settings/#enabledisableapps) feature. 
+2. Enable the [Restrict System Settings](../settings/#systemsettingsrestricted) feature, which allows Bluetooth to be turned on and off while in User Mode. 
+
+**The BT Pairing Utility now works as expected**. 
+
+**Note**: The System Settings Restricted feature allows the device user to access Display and Sound settings and the "About device" screen. 
+
 ------
 
 ## Install OpenSSL

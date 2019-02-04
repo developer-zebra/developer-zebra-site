@@ -213,7 +213,7 @@ EHS by default disables the Settings app (`com.android.settings`) when the devic
 
 **To enable Bluetooth in User More**: 
 
-1. Enable the Settings app using the [Enable/Disable Apps](../#enabledisableapps) feature. 
+1. Enable the Settings app using the [Enable/Disable Apps](../settings/#enabledisableapps) feature. 
 2. Enable the [Restrict System Settings](../settings/#systemsettingsrestricted) feature, which allows Bluetooth to be turned on and off while in User Mode. 
 
 **The BT Pairing Utility now works as expected**. 

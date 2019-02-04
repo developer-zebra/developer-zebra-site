@@ -71,7 +71,7 @@ WorryFreeWiFi Analysis Configuration – Configures Analysis parameters Analysis
 
 WorryFreeWiFi Packet Capture Configuration – Configures Packet capture parameters EnablePacketCapture, PacketFileName, MaxFileSize, MaxStorageSize
 
-* **New [NFC Manager](../csp/wfwifi)** CSP to provide ability to optimize the operations performed on NFC Card
+* **New [NFC Manager](../csp/nfc)** CSP to provide ability to optimize the operations performed on NFC Card
  * Enable/disable NFC
  * In Reader Mode:
 	 * Enable/disable supported cards.

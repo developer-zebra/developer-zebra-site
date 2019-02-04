@@ -473,7 +473,7 @@ Allows (dynamic) information that uniquely identifies the device to be displayed
 
 **NOTES**: 
 * **If the IMEI number is specified** in a non-WWAN device, the default EHS title is displayed.
-* **To display the Bluetooth MAC address** as the title, Bluetooth must be enabled on the device.
+* **To display the Bluetooth MAC address** as the title, Bluetooth must be enabled on the device ([how to enable Bluetooth](../features/#bluetoothuseraccess)). 
 
 **<u>WARNING</u>: Square brackets must not be used inside the &lt;value&gt; tags except as specified above**. 
 

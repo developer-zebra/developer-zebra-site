@@ -761,13 +761,12 @@ Controls whether the device can be put into "airplane mode" from the Power menu 
 ------
 
 ### Bypass Keyguard
-Controls whether the Keyguard screen (also known as the "Lock Screen") is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag will enable the Keyguard. 
+Controls whether the Keyguard screen (also known as the "Lock Screen") is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag enables the Keyguard. 
 
-**Notes** 
-
-* **On devices running Android L**, the Bypass Keyguard feature fails to unlock the screen after rebooting the device.
-
-* **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent dusplay of the multi-user login screen. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
+####Notes
+* **On devices running Android L and later**, the Bypass Keyguard feature fails to unlock the screen after rebooting the device.
+* **On devices running Android N and later**, the Bypass Keyguard feature also can be disabled through the "Screen Lock Type" parameter of the [DevAdmin CSP](/mx/devadmin). 
+* **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent display of the multi-user login screen. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
 <img alt="" style="height:350px" src="keyguard.png"/>
 _The Android Keyguard (also known as the Lock Screen)_.

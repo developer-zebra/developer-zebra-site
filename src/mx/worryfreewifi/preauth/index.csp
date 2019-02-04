@@ -1,0 +1,18 @@
+---
+csp: wifi
+title: PreAuth
+type: parm
+order: 56
+mx: "4.2"
+devicetype: A
+parm:
+  presentif: The "Use Advanced Options" box is checked.
+  pivotal: False
+  name: PreAuth
+  type: string
+---
+Used to enable/disable 802.1x Pre-Authentication. _**Not supported on TC70 QC GA1/GA2 or TC75 GA devices running Android KitKat**_. 
+
+**Important: Wi-Fi Advanced Options should be used only at the direction of Zebra Support or other qualified personnel. Altering this setting can result in undesirable behavior**.
+
+

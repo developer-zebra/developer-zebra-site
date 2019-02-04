@@ -1,0 +1,28 @@
+---
+csp: wifi
+title: Fusion Advanced Logging (checkbox)
+type: parm
+order: 11
+mx: "4.4"
+devicetype: A,B
+parm:
+  presentif: The "Use Diagnostic Options" box is checked
+  pivotal: No
+  name: FusionAdvancedLogging
+  type: list
+  list:
+    - code: 1
+      mx: "4.4"
+      devicetype: A,B
+      name: (checked)
+      description: Enables logging on the device. 
+    - code: 0
+      mx: "4.4"
+      devicetype: A,B
+      name: (unchecked)
+      description: Disables logging on the device. 
+---
+
+Controls whether Fusion Advanced Logging is used on the device. Available only when Advanced Wi-Fi Options are enabled. 
+
+**This option is generally used only at the direction of Zebra support staff**.

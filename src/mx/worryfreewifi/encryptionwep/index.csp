@@ -1,0 +1,26 @@
+---
+csp: wifi
+title: WEP Encryption Type 
+type: parm
+order: 35
+mx: "4.2"
+devicetype: A,B
+parm:
+  pivotal: No
+  presentif: The Network Action is "Add a New Network" and the Security Mode is "Personal" or "Enterprise" and the WPA Mode is WEP
+  name: EncryptionWEP
+  type: list
+  list:
+    - code: 1
+      mx: "4.2"
+      devicetype: A,B
+      name: WEP-40
+      description: Selects use of the Wireless Equivalency Privacy (WEP) standard with a key size of 40 bits.
+    - code: 2
+      mx: "4.2"
+      devicetype: A,B
+      name: WEP-104
+      description: Selects use of the Wireless Equivalency Privacy (WEP) standard with a key size of 104 bits.
+---
+
+Used to specify the Wired Equialent Privacy (WEP) encryption type to enforce on the network for Wi-Fi log-ins.

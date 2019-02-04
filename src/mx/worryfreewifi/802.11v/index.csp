@@ -1,0 +1,30 @@
+---
+csp: wifi
+title: 802.11v
+type: parm
+order: 7
+mx: "7.1"
+devicetype: A
+parm:
+  pivotal: No
+  name: 802.11n
+  type: list
+  list:
+    - code: 2
+      mx: "7.1"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 1
+      mx: "7.1"
+      devicetype: A
+      name: Enable
+      description: Enables 802.11v wireless protocol on the device. 
+    - code: 0
+      mx: "7.1"
+      devicetype: A
+      name: Disable
+      description: Disables 802.11v wireless protocol on the device. 
+---
+
+This is the On/Off switch for 802.11v wireless protocol on the device, which permits connected devices to obtain network load and other information from nearby access points to help make roaming decisions. 

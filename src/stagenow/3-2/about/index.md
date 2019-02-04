@@ -51,57 +51,18 @@ The following software must be installed on the staging workstation prior to usi
 
 **Support for MX 8.3** provides the following enhancements:
 
-* **Enhanced [GMS Manager](../csp/gmsmgr)** to Manage Google Mobile Services Configurations
-All – Full Set of GMS features – set to all will allow the device to have all GMS configurations enabled
-Restricted – Fixed Minimal Set of GMS Features
-Note: 
-1. GMS Manager feature set is even called GMS Mode-2
-2. AppMgr CSP will not allow to enable any disabled GMS app when device in GMS restricted mode
-3. Wireless CSP will not allow to enable/disable location mode settings
-
-* **[WorryFreeWiFi](../csp/wfwifi)** defines a mechanism that is easy for Mobile device management (MDM) and customer/partner applications to use to easily configure
-
-The current CSP allows configuration of settings with following features:
-
-Activate/Deactivate WorryFreeWiFi - to enable WorryFreeWiFi Stack in the device so that we can execute Wi-Fi / WorryFreeWiFi Analytics features in the device which provides detailed information of Wi-Fi / Connectivity related issues / information / analysis.
-
-WorryFreeWiFi Global Configuration – Configure WorryFreeWiFi Password and End User Control parameters on the device. password which will be used by WorryFreeWiFi to secure End Customer data e.g. Unencrypted Packet Capture and same password used as Authentication to configure WorryFreeWiFi Advanced features. Enable / disable End user control access control of WorryFreeWiFi App UX features for end user access. If user control is disabled remote admin then user can’t start Roam/Voice Analysis from WorryFreeWiFi App.
-
-WorryFreeWiFi Analysis Configuration – Configures Analysis parameters AnalysisType, Action, EnableServerAnalytics, ActivityMode, AnalysisSSID, SessionName, GeneratePingData, UseDefaultGateway, RemoteServerAddress, LoggerReportLevel, SDcardStorage.
-
-WorryFreeWiFi Packet Capture Configuration – Configures Packet capture parameters EnablePacketCapture, PacketFileName, MaxFileSize, MaxStorageSize
-
-* **New [NFC Manager](../csp/nfc)** CSP to provide ability to optimize the operations performed on NFC Card
- * Enable/disable NFC
- * In Reader Mode:
-	 * Enable/disable supported cards.
-	 * Skip NDEF: Skipping NDEF check disables the use of NFC Forum tag types 1-4.
-	 * Card detection mode
-	 * CPU Speed: Enabling this option Boosts the CPU Performance.
-	 * Baud rate for 14443-4 Cards.
-	 * Enable P2P Mode
-	 * Enable CE Mode
-	 * Enable NFC on Lock Screen.
-	 * Reset to default: Reset all setting to their default values
-
-* **Enhanced [UI Manager](../csp/wfwifi)** provides ability to
- * Enable/Disable On-Screen Power Button Usage (For PS20 Device)
-
-* **[Enhanced Access Manager](../csp/wfwifi)** provides ability to emulate device user interactions, this feature allows key events and touch events to be "injected" into the system by an otherwise unprivileged (not platform key signed) application
-
-* **[Enhanced Access Manager](../csp/wfwifi)**  exposes following methods to control which packages are allowed access to key and touch injection with: Service Access Action
-
- * Allow Binding to Service
- * Disallow Binding to Service
- * Verify if Binding to service is allowed
- * Allow Caller to Call service
- * Disallow Caller from Calling service
- * Verify Caller is allowed to Call Service
-
-* **[Enhanced File Manager](../csp/wfwifi)** CSP to provide ability to Download and expand Archive files by
-
- * Selecting a compressed file from the local machine
- * Entering the location of a compressed file on an external server
+* **Enhancements to [GMS Manager](../csp/gmsmgr)** provide two Google Mobile Services configuration modes:  
+ * **Full mode** allows all GMS features and apps to be enabled as desired
+ * **Restricted mode** allows operation of a fixed set of GMS apps, blocking all others
+* **A new [WorryFreeWiFi](../csp/worryfreewifi)** manager simplifies mobile device management with traffic analysis and reporting for customer/partner applications.
+* **A new [NFC Manager](../csp/nfc)** controls the behavior and options for NFC communications on the device. 
+* **Enhanced [UI Manager](../csp/ui)** provides ability enable and disable usage of the on-screen power button on the PS20 device.
+* **Enhanced [Access Manager](../csp/access)** can emulate device user interactions, allowing key events and touch events to be "injected" into the system by an otherwise unprivileged application. Other enhancements include service actions that can: 
+ * Allow or prevent bindings to a service
+ * Confirm that service binding is allowed
+ * Allow or prevent service callers
+ * Confirm that service calling is allowed
+* **Enhanced [File Manager](../csp/file)** can download and expand archive files by from a local PC or a server.
 
 -----
 

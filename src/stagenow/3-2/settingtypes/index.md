@@ -54,6 +54,8 @@ automenu:
           url: /stagenow/3-2/csp/fotamgr
         - title: GMS Manager
           url: /stagenow/3-2/csp/gmsmgr
+        - title: NFC Manager
+          url: /stagenow/3-2/csp/nfcmgr
         - title: Power Manager
           url: /stagenow/3-2/csp/power
         - title: Touch Manager
@@ -84,6 +86,8 @@ automenu:
           url: /stagenow/3-2/csp/wifi
         - title: Wireless Manager
           url: /stagenow/3-2/csp/wireless
+        - title: Worry Free Wi-Fi
+          url: /stagenow/3-2/csp/worryfreewifi
     - title: Security
       items:
         - title: Access Manager

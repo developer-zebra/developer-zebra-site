@@ -1,0 +1,33 @@
+---
+csp: wifi
+title: 802.11n
+type: parm
+order: 7
+mx: "7.0"
+devicetype: A
+parm:
+  pivotal: No
+  name: 802.11n
+  type: list
+  list:
+    - code: 2
+      mx: "7.0"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 1
+      mx: "7.0"
+      devicetype: A
+      name: Enable
+      description: Enables 802.11n wireless protocol on the device. 
+    - code: 0
+      mx: "7.0"
+      devicetype: A
+      name: Disable
+      description: Disables 802.11n and 802.11ac wireless protocols on the device. 
+---
+
+This is the On/Off switch for 802.11n wireless protocol on the device, which operates on the 2.4GHz and 5GHz bands and provides faster transfer rates than 802.11ag. 
+
+> **Note**: Disabling 802.11n also disables the 802.11ac protocol on the device. 
+

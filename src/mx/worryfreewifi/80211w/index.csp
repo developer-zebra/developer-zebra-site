@@ -1,0 +1,37 @@
+---
+csp: wifi
+title: Management Frame Protection Mode (802.11w)
+type: parm
+order: 63
+mx: "4.3"
+devicetype: A
+parm:
+  presentif: The "Use Advanced Options" box is checked.
+  pivotal: False
+  name: 802.11w
+  type: list
+  list:
+    - code: 0
+      mx: "4.3"
+      devicetype: A
+      name: No MFP
+    - code: 1
+      mx: "4.3"
+      devicetype: A
+      name: Capable
+    - code: 2
+      mx: "4.3"
+      devicetype: A
+      name: Mandatory
+    - code: 3
+      mx: "4.3"
+      devicetype: A
+      name: Do not change
+    - code: 99
+      mx: "6.2"
+      devicetype: A
+      name: Unsupported
+---
+Used to specify the Management Frame Protection Mode from the values in the table below. _**Not supported on TC70 QC GA1/GA2, TC75 GA, or TC55 GA devices running Android KitKat, or MPA3 RevB-based devices running Android Jelly Bean**_.
+
+**Important: Wi-Fi Advanced Options should be used only at the direction of Zebra Support or other qualified personnel. Altering this setting can result in undesirable behavior**. 

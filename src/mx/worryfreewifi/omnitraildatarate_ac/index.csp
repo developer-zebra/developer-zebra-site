@@ -1,0 +1,116 @@
+---
+csp: wifi
+title: OmniTrail "11ac" Data Rates 
+type: parm
+order: 93
+mx: "6.3"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: The "Specify OmniTrail Options" checkbox is checked and "OmniTrail DataRate Options" is set to "11ac"
+  name: OmnitrailDataRates_11ac
+  type: list
+  list:
+    - code: 28
+      mx: "6.3"
+      devicetype: A
+      name: MCS0_1
+      description: Sets the data rate to 29.3 Mbps 
+    - code: 29
+      mx: "6.3"
+      devicetype: A
+      name: MCS1_1
+      description: Sets the data rate to 58.5 Mbps 
+    - code: 30
+      mx: "6.3"
+      devicetype: A
+      name: MCS2_1
+      description: Sets the data rate to 87.8 Mbps 
+    - code: 31
+      mx: "6.3"
+      devicetype: A
+      name: MCS3_1
+      description: Sets the data rate to 117 Mbps
+    - code: 32
+      mx: "6.3"
+      devicetype: A
+      name: MCS4_1
+      description: Sets the data rate to 175.5 Mbps
+    - code: 33
+      mx: "6.3"
+      devicetype: A
+      name: MCS5_1
+      description: Sets the data rate to 234 Mbps
+    - code: 34
+      mx: "6.3"
+      devicetype: A
+      name: MCS6_1
+      description: Sets the data rate to 263.3 Mbps
+    - code: 35
+      mx: "6.3"
+      devicetype: A
+      name: MCS7_1
+      description: Sets the data rate to 292.5 Mbps
+    - code: 36
+      mx: "6.3"
+      devicetype: A
+      name: MCS8_1
+      description: Sets the data rate to 351 Mbps
+    - code: 37
+      mx: "6.3"
+      devicetype: A
+      name: MCS9_1
+      description: Sets the data rate to 390 Mbps
+    - code: 38
+      mx: "6.3"
+      devicetype: A
+      name: MCS0_2
+      description: Sets the data rate to 58.5 Mbps
+    - code: 39
+      mx: "6.3"
+      devicetype: A
+      name: MCS1_2
+      description: Sets the data rate to 117 Mbps
+    - code: 40
+      mx: "6.3"
+      devicetype: A
+      name: MCS2_2
+      description: Sets the data rate to 175.5 Mbps
+    - code: 41
+      mx: "6.3"
+      devicetype: A
+      name: MCS3_2
+      description: Sets the data rate to 234 Mbps
+    - code: 42
+      mx: "6.3"
+      devicetype: A
+      name: MCS4_2
+      description: Sets the data rate to 351 Mbps
+    - code: 43
+      mx: "6.3"
+      devicetype: A
+      name: MCS5_2
+      description: Sets the data rate to 468 Mbps
+    - code: 44
+      mx: "6.3"
+      devicetype: A
+      name: MCS6_2
+      description: Sets the data rate to 526.5 Mbps
+    - code: 45
+      mx: "6.3"
+      devicetype: A
+      name: MCS7_2
+      description: Sets the data rate to 585 Mbps
+    - code: 46
+      mx: "6.3"
+      devicetype: A
+      name: MCS8_2
+      description: Sets the data rate to 702 Mbps
+    - code: 47
+      mx: "6.3"
+      devicetype: A
+      name: MCS9_2
+      description: Sets the data rate to 780 Mbps
+---
+
+Sets the data rate used when OmniTrail device location services operate in 802.11ac mode. 

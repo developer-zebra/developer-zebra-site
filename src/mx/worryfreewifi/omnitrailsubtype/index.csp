@@ -1,0 +1,103 @@
+---
+csp: wifi
+title: OmniTrail Subtype 
+type: parm
+order: 97
+mx: "6.3"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: The "Specify OmniTrail Options" checkbox is checked
+  name: OmniTrailSubtype
+  type: list
+  list:
+    - code: 16
+      mx: "6.3"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the current Wi-Fi setting; any previously selected setting is retained.
+    - code: 0
+      mx: "6.3"
+      devicetype: A
+      name: 0
+      description: Sets the OmniTrail Subtype to 0. 
+    - code: 1
+      mx: "6.3"
+      devicetype: A
+      name: 1
+      description: Sets the OmniTrail Subtype to 1. 
+    - code: 2
+      mx: "6.3"
+      devicetype: A
+      name: 1
+      description: Sets the OmniTrail Subtype to 2. 
+    - code: 3
+      mx: "6.3"
+      devicetype: A
+      name: 3
+      description: Sets the OmniTrail Subtype to 3. 
+    - code: 4
+      mx: "6.3"
+      devicetype: A
+      name: 4
+      description: Sets the OmniTrail Subtype to 4. 
+    - code: 5
+      mx: "6.3"
+      devicetype: A
+      name: 5
+      description: Sets the OmniTrail Subtype to 5. 
+    - code: 6
+      mx: "6.3"
+      devicetype: A
+      name: 6
+      description: Sets the OmniTrail Subtype to 6. 
+    - code: 7
+      mx: "6.3"
+      devicetype: A
+      name: 7
+      description: Sets the OmniTrail Subtype to 7. 
+    - code: 8
+      mx: "6.3"
+      devicetype: A
+      name: 8
+      description: Sets the OmniTrail Subtype to 8. 
+    - code: 9
+      mx: "6.3"
+      devicetype: A
+      name: 9
+      description: Sets the OmniTrail Subtype to 9. 
+    - code: 10
+      mx: "6.3"
+      devicetype: A
+      name: 10
+      description: Sets the OmniTrail Subtype to 10. 
+    - code: 11
+      mx: "6.3"
+      devicetype: A
+      name: 11
+      description: Sets the OmniTrail Subtype to 11. 
+    - code: 12
+      mx: "6.3"
+      devicetype: A
+      name: 12
+      description: Sets the OmniTrail Subtype to 12. 
+    - code: 13
+      mx: "6.3"
+      devicetype: A
+      name: 13
+      description: Sets the OmniTrail Subtype to 13. 
+    - code: 14
+      mx: "6.3"
+      devicetype: A
+      name: 14
+      description: Sets the OmniTrail Subtype to 14. 
+    - code: 15
+      mx: "6.3"
+      devicetype: A
+      name: 15
+      description: Sets the OmniTrail Subtype to 15. 
+---
+
+Used to select the OmniTrail Subtype, which can help differentiate between regular and special OmniTrail beacons on the Cisco or Extreme Networks access point selected in OmniTrailType parameter. 
+
+ 

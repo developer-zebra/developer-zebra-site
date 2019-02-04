@@ -1,0 +1,20 @@
+---
+csp: wifi
+title: Target OS
+type: parm
+order: 1
+mx: "4.2"
+devicetype: A,B
+parm:
+  pivotal: Yes
+  name: TargetOS
+  type: list
+  list:
+    - code: 2
+      mx: "4.2"
+      devicetype: A,B
+      name: Android
+      description: Specifies Android as the operating system of the target device. 
+---
+
+Used to specify the operating system of the target device.

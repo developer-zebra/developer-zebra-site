@@ -63,64 +63,30 @@ Supported Devices (including GSM and non-GMS versions):
 <table class="facelift" align="center" style="width:80%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th>Device</th>
-    <th style="text-align:center">Android 4.4.x <br>(KitKat)</th>
-    <th style="text-align:center">Android 5.x <br>(Lollipop))</th>
     <th style="text-align:center">Android 6.x <br>(Marshmallow)</th>
     <th style="text-align:center">Android 7.x <br>(Nougat)</th>
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
   </tr>
   <tr>
-    <td>ET50/ET55</td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>MC18</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td></td>
-    <td></td>
-   </tr>
-  <tr>
     <td>MC3300 </td>
     <td></td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
-    <td>MC40</td>
+    <td>MC93 </td>
+    <td></td>
+    <td></td>
     <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>PS20</td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-  </tr>
-  <tr>
-    <td>TC20/TC25</td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center"></td>
-    <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>TC51/TC56 </td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
@@ -129,30 +95,10 @@ Supported Devices (including GSM and non-GMS versions):
     <td>TC52/TC57</td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
-  </tr>
-  <tr>
-    <td>TC55</td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>TC70/TC75</td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>TC70X/TC75X</td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
@@ -161,33 +107,13 @@ Supported Devices (including GSM and non-GMS versions):
     <td>TC72/TC77</td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>TC8000</td>
     <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>    
-    <td>VC80x</td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center"></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-  </tr>
-  <tr>    
-    <td>WT6000</td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td></td>
   </tr>
 </table>
 

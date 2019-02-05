@@ -1,0 +1,32 @@
+---
+csp: wifi
+title: CHD Config Enable/Disable
+type: parm
+order: 7
+mx: "8.3"
+devicetype: A
+parm:
+  pivotal: No
+  name: CHD_Config
+  type: list
+  list:
+    - code: 2
+      mx: "8.3"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 1
+      mx: "8.3"
+      devicetype: A
+      name: Enable
+      description: Enables configuration of CHD. 
+    - code: 0
+      mx: "8.3"
+      devicetype: A
+      name: Disable
+      description: Disables configuration of CHD. 
+---
+
+This is the On/Off switch for Coverage Hole Detection, which reports gaps in signal coverage to the Zebra wireless LAN infrastructure. 
+
+**Important: Attempts to use this parameter on a device that doesn't support it results in a value of "99" in the relevant section of the Result XML file**.

@@ -1,0 +1,32 @@
+---
+csp: wifi
+title: 802.11k Config Enable/Disable
+type: parm
+order: 7
+mx: "8.3"
+devicetype: A
+parm:
+  pivotal: No
+  name: 802.11K_Config
+  type: list
+  list:
+    - code: 2
+      mx: "8.3"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 1
+      mx: "8.3"
+      devicetype: A
+      name: Enable
+      description: Enables verbose logging, which logs Wi-Fi events in greater detail. 
+    - code: 0
+      mx: "8.3"
+      devicetype: A
+      name: Disable
+      description: Disables verbose logging; Wi-Fi events are logged with standard detail. 
+---
+
+This is the On/Off switch for Wi-Fi Verbose logging, which records Wi-Fi events using detailed information than the standard logging mode. Verbose logging is sometimes helpful for troubleshooting. **Caution**: Can cause performance delays. 
+
+**Important: Attempts to use this parameter on a device that doesn't support it results in a value of "99" in the relevant section of the Result XML file**.

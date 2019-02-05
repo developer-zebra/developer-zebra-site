@@ -1,0 +1,32 @@
+---
+csp: wifi
+title: Auto-time Config Enable/Disable
+type: parm
+order: 7
+mx: "8.3"
+devicetype: A
+parm:
+  pivotal: No
+  name: AutoTimeConfiguration
+  type: list
+  list:
+    - code: 2
+      mx: "8.3"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 1
+      mx: "8.3"
+      devicetype: A
+      name: Enable
+      description: Enables configuration the AutoTimeConfig feature. 
+    - code: 0
+      mx: "8.3"
+      devicetype: A
+      name: Disable
+      description: Disables configuration the AutoTimeConfig feature. 
+---
+
+This is the On/Off switch for configuring the AutoTimeConfig feature, a Zebra-specific feature that updates the device timestamp based on Zebra IE in the 802.11 beacon. 
+
+**Important: Attempts to use this parameter on a device that doesn't support it results in a value of "99" in the relevant section of the Result XML file**.

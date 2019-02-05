@@ -1,5 +1,5 @@
 ---
-csp: wifi
+csp: worryfreewifi
 title: Passphrase 
 type: parm
 order: 38
@@ -7,7 +7,6 @@ mx: "4.2"
 devicetype: A,B
 parm:
   pivotal: No
-  name: PassphraseWEPClear, PassphraseWEPEncrypted, PassphraseWPAClear, PassphraseWPAEncrypted
   type: string
 ---
 

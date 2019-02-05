@@ -1,5 +1,5 @@
 ---
-csp: wifi
+csp: worryfreewifi
 title: Set Primary DNS
 type: parm
 order: 45

@@ -1,13 +1,13 @@
 ---
 csp: wifi
-title: Verbose Logging Enable/Disable
+title: FT Over DS Config Enable/Disable
 type: parm
 order: 7
 mx: "8.3"
 devicetype: A
 parm:
   pivotal: No
-  name: WifiVerbose
+  name: FTOverTheDS_Config
   type: list
   list:
     - code: 2
@@ -19,13 +19,14 @@ parm:
       mx: "8.3"
       devicetype: A
       name: Enable
-      description: Enables verbose logging, which logs Wi-Fi events in greater detail. 
+      description: Enables configuration of FT over the DS. 
     - code: 0
       mx: "8.3"
       devicetype: A
       name: Disable
-      description: Disables verbose logging; Wi-Fi events are logged with standard detail. 
+      description: Disables configuration of FT over the DS. 
 ---
 
-This is the On/Off switch for Wi-Fi Verbose logging, which records more detail than the standard logging mode. Verbose logging is sometimes helpful for troubleshooting, but can cause performance delays. 
+This is the On/Off switch for configuring Fast Transition over the Distribution System (FTOverTheDS). 
 
+**Important: Attempts to use this parameter on a device that doesn't support it results in a value of "99" in the relevant section of the Result XML file**.

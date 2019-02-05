@@ -18,7 +18,7 @@ Before installing, ensure to prepare additional steps for system setup:
  * **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
  * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 
 
-> Important: An SSL Certificate is required from a third party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non-third party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
+> Important: An SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
 
 ##System Requirements
 This section provides the server and device requirements. Device Tracker supports a maximum of 500 devices per installation.
@@ -55,8 +55,8 @@ This section provides the server and device requirements. Device Tracker support
 ###Device Requirements
 Requirements for Device Tracker client:
 * The device is connected via WiFi on the same network as the server. 
-* Zebra Data Service agent is running on the device. This agent collects data from the device and transmits it to the Device Tracker server.
-* Bluetooth radio is enabled on the device. BLE (Bluetooth Low Energy) beacons are used to help locate devices.
+* Zebra Data Service agent is running on the device. This agent collects data from the device.
+* Bluetooth radio is enabled on the device while tracking is in progress. BLE (Bluetooth Low Energy) beacons are used to help locate devices.
 * The server URL, user name, and password is configured in the Device Tracker client to communicate with the server. 
 
 Supported Devices (including GSM and non-GMS versions):

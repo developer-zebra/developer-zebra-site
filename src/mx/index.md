@@ -228,10 +228,11 @@ csps:
     url: /mx/wirelessmgr
     csp: wirelessmgr
   - type: section
+    title: Worry Free Wi-Fi
+    url: /mx/worryfreewifi
+    csp: worryfreewifi
+  - type: section
     title: XML Manager
     url: /mx/xmlmgr
     csp: xmlmgr
 ---              
-
-
-

@@ -8,6 +8,10 @@ order: 0
 
 The NFC Manager (NfcMgr) controls near field communications options on the device, including power supplied to the NFC radio and the state and behavior of features to improve performance and/or to avoid interoperability issues. NFC is a short-range wireless specification that enables two devices that are touching or within very close proximity to communicate using magnetic field induction.  
 
+#### Card technology support: 
+* ISO 14443 Types A and B
+* ISO 15693
+* FeliCa
 
 ### Main Functionality
 
@@ -20,8 +24,8 @@ The NFC Manager (NfcMgr) controls near field communications options on the devic
  * Card Emulation mode
  * NFC usage when the Android "lock screen" is displayed
 * Select type A, B, F, or V tags for use
-* Select baud rate for type A tags
-* Select baud rate for type B tags
+* Select communication speed for Types A and B cards (TC55)
+* Select communication speed for ISO 14443-4 cards (TC75)
 * Reset device to default NFC settings
 
 -----

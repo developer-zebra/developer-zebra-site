@@ -37,4 +37,4 @@ parm:
       description: Allows NFC communication for Type A tags at any speed. 
 ---
 
-Controls the NFC communication speed for Type A tags. 
+Controls the NFC communication speed for Type A tags. **Greater speeds improve transaction times but are more prone to errors**. 

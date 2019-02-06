@@ -6,6 +6,7 @@
 **NOTE**: When selecting the source CSP to copy, pick one with a small number of parms with at least one list parm and one string parm. BluetoothMgr is a good choice.  
 3. Edit one of the parms to match data of the new CSP and REPLICATE THAT ONE for the remaining parms. This will minimize editing later. 
 **REMEMBER, ALWAYS USE ALL LOWER CASE** for folder names.
+4. Edit the file at the root of the csp directory, which controls the title on the CSP detail page and provides a description elsewhere.  
 
 ### For EMDK-A, EMDK-X and StageNow
 

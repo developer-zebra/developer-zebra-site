@@ -1,6 +1,6 @@
 ---
-title: Device Central Manager
-description: The Device Central Manager controls settings on the device and communicates with Zebra Device Central, which provides a centralized view of connection state, battery status, firmware version and other device conditions.
+title: GMS Manager
+description: GMS Manager controls which Google Mobile Services (GMS) are available on a Zebra device, giving device administrators improved control over data privacy.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -11,7 +11,7 @@ mxversions:
     value: 4.4
   - text: MX 5.0
     value: 5
-csp: devicecentralmgr
+csp: gmsmgr
 ---
 
 

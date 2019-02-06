@@ -3,7 +3,7 @@ csp: wifi
 title: 2g Channel Bonding Config Enable/Disable
 type: parm
 order: 7
-mx: "8.3"
+mx: "8.2"
 devicetype: A
 parm:
   pivotal: No
@@ -11,17 +11,17 @@ parm:
   type: list
   list:
     - code: 2
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
     - code: 1
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Enable
       description: Enables configuration of 2g Channel Bonding. 
     - code: 0
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Disable
       description: Disables configuration of 2g Channel Bonding. 

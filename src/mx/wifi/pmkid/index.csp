@@ -2,7 +2,7 @@
 csp: wifi
 title: PMKID
 type: parm
-order: 56
+order: 77
 mx: "4.2"
 devicetype: A,B
 parm:

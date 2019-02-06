@@ -2,7 +2,7 @@
 csp: wifi
 title: FIPS
 type: parm
-order: 61
+order: 64
 mx: "4.2"
 devicetype: A
 parm:

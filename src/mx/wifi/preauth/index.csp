@@ -2,7 +2,7 @@
 csp: wifi
 title: PreAuth
 type: parm
-order: 56
+order: 79
 mx: "4.2"
 devicetype: A
 parm:

@@ -2,7 +2,7 @@
 csp: wifi
 title: CKM
 type: parm
-order: 53
+order: 59
 mx: "4.2"
 devicetype: A
 parm:

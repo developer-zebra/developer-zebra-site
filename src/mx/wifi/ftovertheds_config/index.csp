@@ -2,7 +2,7 @@
 csp: wifi
 title: FT Over DS Config Enable/Disable
 type: parm
-order: 7
+order: 69
 mx: "8.2"
 devicetype: A
 parm:

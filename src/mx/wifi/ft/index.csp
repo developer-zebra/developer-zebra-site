@@ -2,7 +2,7 @@
 csp: wifi
 title: Aggregated Fast Transition
 type: parm
-order: 53
+order: 66
 mx: "4.2"
 devicetype: A,B
 parm:

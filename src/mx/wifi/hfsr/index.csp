@@ -2,7 +2,7 @@
 csp: wifi
 title: HFSR
 type: parm
-order: 52
+order: 73
 mx: "4.2"
 devicetype: A
 parm:

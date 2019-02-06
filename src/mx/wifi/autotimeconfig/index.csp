@@ -2,7 +2,7 @@
 csp: wifi
 title: Auto Time Config
 type: parm
-order: 51
+order: 56
 mx: "4.2"
 devicetype: A
 parm:

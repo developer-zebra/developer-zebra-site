@@ -99,13 +99,19 @@ Used to specify the Action to perform on an application or app-related setting. 
 
 **Notes**: 
 * **<u>"Protected" Apps remain on the "Recent Apps" list after the list has been cleared</u> using the "ClearRecentApps" Action**.<br>See Protected List Action parameter for more information.
-* **When persisting the DisableGMSApps Action across an Enterprise Reset, <u>the Action MUST be preceded by a bypass of the Android Setup Wizard**</u> to prevent unpredictable behavior. <br>See [Power Manager](/mx/powermgr/#setup-wizard-bypass) for more information. 
+* **When persisting the DisableGMSApps Action across an Enterprise Reset, <u>the Action MUST be preceded by a bypass of the Android Setup Wizard**</u> to prevent unpredictable behavior. See [Power Manager](/mx/powermgr/#setup-wizard-bypass) for more information. 
 * **EnableGMSApps and DisableGMSApps Actions are supported only on SDM660-platform devices, which includes (but is not limited to)**:
  * PS20
  * TC52
  * TC57
  * TC72
  * TC77
+* **If upgrading a device to enable "GMS Restricted" mode (MX 8.3 and later)**, the upgrade must be performed as follows: 
+ * Execute the App Manager Action "EnableGMSApps"
+ * Perform the device upgrade
+ * Perform GMS Manager Action "Restricted" (persisting the XML, if desired)<br>
+**`NOTE:` It is not possible to transition a device to a new OS ***and*** to implement GMS Restricted mode with the same XML profile**.
+
 
 <!--
 <br>

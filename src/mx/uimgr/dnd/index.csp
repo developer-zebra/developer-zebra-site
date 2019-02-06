@@ -33,3 +33,10 @@ parm:
 ---
 
 This is the On/Off switch for "Do Not Disturb" mode, which suppresses notifications on the device. Disabling DND (option 2) prevents the device user from entering DND mode. 
+
+**This feature is supported only on SDM660-platform devices, which includes (but is not limited to)**:
+* PS20
+* TC52
+* TC57
+* TC72
+* TC77

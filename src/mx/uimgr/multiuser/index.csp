@@ -16,7 +16,6 @@ parm:
       mx: "8.1"
       osx: "8.5"
       devicetype: A
-      info: Supported on SDM660-platform devices only. 
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the Multi-user setting; any previously selected setting is retained. 
     - code: 1
@@ -24,18 +23,18 @@ parm:
       name: Enable 
       mx: "8.1"
       osx: "8.5"
-      info: Supported on SDM660-platform devices only. 
       description: Enables multiple users on the device.
     - code: 2
       devicetype: A
       name: Disable
       mx: "8.1"
       osx: "8.5"
-      info: Supported on SDM660-platform devices only. 
       description: Disables multi-user mode on the device. 
 ---
 
-This is the On/Off switch for Multi-user mode on the device, which can provide separate user accounts, data and apps or app restrictions on a shared device. **This feature is supported only on SDM660-platform devices**, which currently includes:
+This is the On/Off switch for Multi-user mode on the device, which can provide separate user accounts, data and apps or app restrictions on a shared device. 
+
+**This feature is supported only on SDM660-platform devices, which includes (but is not limited to)**:
 * PS20
 * TC52
 * TC57

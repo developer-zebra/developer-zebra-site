@@ -27,4 +27,4 @@ parm:
       description: Does not boost CPU speed during NFC transactions.
 ---
 
-Controls whether CPU speed us boosted during NFC transactions. 
+Controls whether CPU speed us boosted during NFC transactions, which can sometimes improve performance. 

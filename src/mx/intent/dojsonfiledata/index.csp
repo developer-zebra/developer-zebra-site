@@ -13,8 +13,9 @@ parm:
   type: string
 ---
 
-Used to specify the JSON file, which must reside on the device and be executed to set the Device Owner.
+Used to specify the JSON file necessary to configure Device Owner (DO) enrollment.
 
 **Parm value input rules**: 
 
-* String of at least one character containing the name of the JSON file on the device
+* String of at least one character containing the name of the JSON file
+* File must reside on the device

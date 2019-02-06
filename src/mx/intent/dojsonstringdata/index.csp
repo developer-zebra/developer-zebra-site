@@ -1,19 +1,20 @@
 ---
 csp: intent
-title: Action Name
+title: Device Owner JSON String
 type: parm
 order: 23
-mx: "4.1"
+mx: "8.3"
+osx: "6.5"
 apilevel: "1"
 devicetype: A,B
 parm:
   presentif: The Action code is "Enroll Device Owner" and DO JsonData is "JsonString"
   pivotal: No
-  name: ActionName
+  name: DOJsonStringData
   type: string
 ---
 
-Used to specify a JSON string to configure Device Owner enrollment. 
+Used to specify JSON data as a string necessary to configure Device Owner enrollment. 
 
 **Parm value input rules**: 
 

@@ -4,7 +4,9 @@ title: LKI Usage Enable/Disable
 type: parm
 order: 37
 mx: "8.3"
+osx: "8.1"
 devicetype: A,B
+info: Supported on MC93 devices only. 
 parm:
   pivotal: No
   name: SetLKI
@@ -12,18 +14,24 @@ parm:
   list:
     - code: 0
       mx: "8.3"
-      devicetype: A,B
+      osx: "8.1"
+      devicetype: A
+      info: Supported on MC93 devices only. 
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting is retained.
     - code: 1
-      devicetype: A,B
+      devicetype: A
+      info: Supported on MC93 devices only. 
       name: Turn On 
       mx: "8.3"
+      osx: "8.1"
       description: Allows user to change the LKI state.
     - code: 2
-      devicetype: A,B
+      devicetype: A
+      info: Supported on MC93 devices only. 
       name: Turn Off
       mx: "8.3"
+      osx: "8.1"
       description: Prevents the device user from changing the LKI state.
 ---
 

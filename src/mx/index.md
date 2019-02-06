@@ -140,6 +140,10 @@ csps:
     url: /mx/gprsmgr
     csp: gprsmgr
   - type: section
+    title: GMS Manager
+    url: /mx/gmsmgr
+    csp: gmsmgr
+  - type: section
     title: Hosts Manager
     url: /mx/hostsmgr
     csp: hostsmgr

@@ -1,3 +1,28 @@
+## Document a New CSP
+
+### For MX docs
+1. Add a menu choice to /mx and /mx/compatibilty feature matrixes
+2. Copy an existing CSP and rename it to the new CSP name. **ALWAYS USE ALL LOWER CASE** for folder names. 
+**NOTE**: When selecting the source CSP to copy, pick one with a small number of parms with at least one list parm and one string parm. BluetoothMgr is a good choice.  
+3. Edit one of the parms to match data of the new CSP and REPLICATE THAT ONE for the remaining parms. This will minimize editing later. 
+**REMEMBER, ALWAYS USE ALL LOWER CASE** for folder names.
+
+### For EMDK-A, EMDK-X and StageNow
+
+####EMDK
+1. Add a menu choice to /profile-manager-guides
+2. Copy the folder of an existing CSP in EMDK's /mx folder (**not MX's MX folder**)
+3. Edit the contents of the copied CSP stub file to match the new CSP
+4. When built, a productized version of the MX CSP page will be injected into the folder. 
+
+#### StageNow
+1. Add a menu choice to /settingtypes
+2. Copy the folder of an existing CSP in /csp folder
+3. Edit the contents of the copied CSP stub file to match the new CSP
+4. When built, a productized version of the MX CSP page will be injected into the folder. 
+
+Rob is a genius. 
+
 ## Document a NEW PRODUCT
 (example: Enterprise Browser 1.6)
 

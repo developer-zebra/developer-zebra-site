@@ -1,0 +1,30 @@
+---
+csp: gmsmgr
+title: GMS Feature Set
+type: parm
+order: 2
+mx: "8.3"
+devicetype: A
+parm:
+  pivotal: No
+  name: GMSFeatureSet
+  type: list
+  list:
+    - code: 0
+      mx: "8.3"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
+    - code: 1
+      devicetype: A
+      name: All
+      mx: "8.3"
+      description: Enables all GMS features on the device.  
+    - code: 2
+      devicetype: A
+      name: Restricted
+      mx: "8.3"
+      description: Enables a fixed, minimal set of GMS features on the device.
+---
+
+Controls the GMS applications and services allowed to run on the device. 

@@ -1,0 +1,18 @@
+---
+csp: gmsmgr
+title: Overview
+type: text
+devicetype: A
+order: 0
+---
+
+GMS Manager (GmsMgr)
+
+
+
+### Main Functionality
+
+* Allow all GMS features on the device
+* Enable a fixed, minimal set of GMS features on the device
+
+-----

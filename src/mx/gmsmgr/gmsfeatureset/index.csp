@@ -29,8 +29,7 @@ parm:
 
 Controls the GMS applications and services allowed to run on the device. 
 
-`NOTE:` If upgrading a device to enable "GMS Restricted" mode (MX 8.3 and later)**, the upgrade must be performed as follows: 
- * Execute the App Manager Action "EnableGMSApps"
- * Perform the device upgrade
- * Perform GMS Manager Action "Restricted" (persisting the XML, if desired)<br>
-**`NOTE:` It is not possible to transition a device to a new OS ***and*** to implement GMS Restricted mode with the same XML profile**.
+`IMPORTANT`
+**Before upgrading a device to MX 8.3 (or later) to enable "GMS Restricted" mode**, GMS apps must be re-enabled by performing the App Manager Action "EnableGMSApps" if previously disabled with the "DisableGMSApps" Action.  
+
+**It is not possible to transition a device to a new OS *and* to implement GMS Restricted mode with the same XML profile**.

@@ -4,6 +4,8 @@ title: JSON Data Selector
 type: parm
 order: 21
 mx: "8.3"
+osx: "6.5"
+apilevel: "23"
 devicetype: A,B
 parm:
   pivotal: Yes
@@ -12,16 +14,22 @@ parm:
   list:
     - code: 1
       mx: "8.3"
+      osx: "6.5"
+      apilevel: "23"
       devicetype: A,B
       name: Do Nothing
       description: This value (or the absence of this parm from the XML) causes no change; any previously selected setting is retained.
     - code: 2
       mx: "8.3"
+      osx: "6.5"
+      apilevel: "23"
       devicetype: A,B
       name: Json File
       description: Specifies that a JSON file is used for JSON-based Device Owner configuration.
     - code: 3
       mx: "8.3"
+      osx: "6.5"
+      apilevel: "23"
       devicetype: A,B
       name: Json String
       description: Specifies that a string is used for JSON-based Device Owner configuration.

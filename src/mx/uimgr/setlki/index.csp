@@ -16,23 +16,20 @@ parm:
       mx: "8.3"
       osx: "8.1"
       devicetype: A
-      info: Supported on MC93 devices only. 
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting is retained.
     - code: 1
       devicetype: A
-      info: Supported on MC93 devices only. 
       name: Turn On 
       mx: "8.3"
       osx: "8.1"
-      description: Allows user to change the LKI state.
+      description: Allows device user to change the LKI state.
     - code: 2
       devicetype: A
-      info: Supported on MC93 devices only. 
       name: Turn Off
       mx: "8.3"
       osx: "8.1"
       description: Prevents the device user from changing the LKI state.
 ---
 
-Controls whether the device user can enable/disable the Large Key Indicator (LKI) pop-up, which is used to show active modifier keys. 
+Controls whether the device user can enable/disable the Large Key Indicator (LKI) pop-up, which is used to show active modifier keys. **LKI features are supported on MC93 devices only**.

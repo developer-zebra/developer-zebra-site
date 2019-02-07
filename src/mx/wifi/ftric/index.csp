@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: FTRIC
+title: FTRIC (checkbox)
 type: parm
 order: 70
 mx: "4.2"

@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Aggregated Fast Transition
+title: Fast Transition (checkbox)
 type: parm
 order: 66
 mx: "4.2"

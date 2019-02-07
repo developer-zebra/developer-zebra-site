@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Advanced Logging
+title: Advanced Logging (checkbox)
 type: parm
 order: 52
 mx: "4.2"

@@ -1,10 +1,10 @@
 ---
 csp: wifi
-title: FT Config Enable/Disable
+title: Fast Transmission Enable/Disable
 type: parm
 order: 67
 mx: "8.2"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   name: FT_Config
@@ -12,17 +12,17 @@ parm:
   list:
     - code: 2
       mx: "8.2"
-      devicetype: A
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
     - code: 1
       mx: "8.2"
-      devicetype: A
+      devicetype: A,B
       name: Enable
       description: Enables FT on the device. 
     - code: 0
       mx: "8.2"
-      devicetype: A
+      devicetype: A,B
       name: Disable
       description: Disables FT on the device. 
 ---

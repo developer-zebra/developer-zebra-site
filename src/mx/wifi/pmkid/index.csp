@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: PMKID
+title: PMKID (checkbox)
 type: parm
 order: 77
 mx: "4.2"

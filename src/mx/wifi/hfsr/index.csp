@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: HFSR
+title: HFSR (checkbox)
 type: parm
 order: 73
 mx: "4.2"

@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Subnet Roam
+title: Subnet Roam (checkbox)
 type: parm
 order: 82
 mx: "4.4"

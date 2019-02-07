@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Coverage Hole Detection
+title: Coverage Hole Detection (checkbox)
 type: parm
 order: 61
 mx: "4.3"

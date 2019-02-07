@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: ScanAssist Config Enable/Disable
+title: ScanAssist Enable/Disable
 type: parm
 order: 81
 mx: "8.2"
@@ -27,6 +27,6 @@ parm:
       description: Disables ScanAssist on the device. 
 ---
 
-This is the On/Off switch for ScanAssist on the device. 
+This is the On/Off switch for ScanAssist, which improves roaming on Zebra devices by allowing the device to monitor neighboring access points for roam-related information from the Zebra wireless LAN infrastructure without the need to perform additional scans. 
 
 **Important: Attempts to use this parameter on a device that doesn't support it results in a value of "99" in the relevant section of the Result XML file**.

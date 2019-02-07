@@ -1,10 +1,11 @@
 ---
 csp: wifi
-title: WAN Country Config Enable/Disable
+title: WAN Country Enable/Disable
 type: parm
 order: 85
 mx: "8.2"
 devicetype: A
+info: Supported on WAN-enabled devices only. Not supported on TC70 QC GA1/GA2 running Android KitKat, or MPA3 RevB- or RevC-based devices running Android Jelly Bean. 
 parm:
   pivotal: No
   name: WANCountry_Config
@@ -27,7 +28,7 @@ parm:
       description: Disables the WAN country on the device. 
 ---
 
-This is the On/Off switch for the WAN country on the device.
+This is the On/Off switch for the WAN country on the device, which obtains country information from the WAN Interface (GSM/CDMA base station) and applies regulatory rules based on the Country Code received.  _**Not supported on TC70 QC GA1/GA2 running Android KitKat, or MPA3 RevB- or RevC-based devices running Android Jelly Bean**_. 
 
 **Important: Attempts to use this parameter on a device that doesn't support it results in a value of "99" in the relevant section of the Result XML file**.
 

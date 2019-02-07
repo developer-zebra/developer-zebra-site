@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: FIPS
+title: FIPS (checkbox)
 type: parm
 order: 64
 mx: "4.2"

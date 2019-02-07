@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: PreAuth
+title: PreAuth (checkbox)
 type: parm
 order: 79
 mx: "4.2"

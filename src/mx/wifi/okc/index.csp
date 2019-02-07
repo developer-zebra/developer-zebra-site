@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: OKC
+title: OKC (checkbox)
 type: parm
 order: 75
 mx: "4.2"

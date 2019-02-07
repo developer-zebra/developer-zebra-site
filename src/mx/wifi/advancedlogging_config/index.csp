@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Advanced Logging Config Enable/Disable
+title: Advanced Logging Enable/Disable
 type: parm
 order: 53
 mx: "8.2"
@@ -19,12 +19,12 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Enable
-      description: Enables logging for advanced features. 
+      description: Enables logging of Wi-Fi events. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable
-      description: Disables logging for advanced features. 
+      description: Disables logging of Wi-Fi events. 
 ---
 
 This is the On/Off switch for logging WLAN module events, which is sometimes helpful for troubleshooting. Logs from all Wi-Fi modules are stored in the `/fusionlogs` folder on the device. **Caution**: Logging might cause performance delays. 

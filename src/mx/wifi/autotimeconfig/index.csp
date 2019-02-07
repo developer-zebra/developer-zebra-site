@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: Auto Time Config
+title: Auto Time (checkbox)
 type: parm
 order: 56
 mx: "4.2"

@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: 802.11k Config Enable/Disable
+title: 802.11k Enable/Disable
 type: parm
 order: 51
 mx: "8.2"
@@ -19,14 +19,14 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Enable
-      description: Enables verbose logging, which logs Wi-Fi events in greater detail. 
+      description: Enables Radio Resource Measurement (802.11k), which helps a device discover an access point with with optimal traffic distribution. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable
-      description: Disables verbose logging; Wi-Fi events are logged with standard detail. 
+      description: Disables Radio Resource Management (802.11k); . 
 ---
 
-This is the On/Off switch for Wi-Fi Verbose logging, which records Wi-Fi events using more detailed information than standard logging mode. Verbose logging is sometimes helpful for troubleshooting. **Caution**: Can cause performance delays. 
+This is the On/Off switch for Radio Resource Management, a feature of the 802.11k specification that analyzes access point traffic and estimates the optimal connection for maximizing wireless communication throughput. When disabled (code=0), the device generally connects to the AP with the strongest signal.  
 
 **Important: Attempts to use this parameter on a device that doesn't support it results in a value of "99" in the relevant section of the Result XML file**.

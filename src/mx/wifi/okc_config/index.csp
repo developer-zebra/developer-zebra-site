@@ -1,10 +1,10 @@
 ---
 csp: wifi
-title: OKC Config Enable/Disable
+title: OKC Enable/Disable
 type: parm
 order: 76
 mx: "8.2"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   name: OKC_Config
@@ -12,17 +12,17 @@ parm:
   list:
     - code: 2
       mx: "8.2"
-      devicetype: A
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
     - code: 1
       mx: "8.2"
-      devicetype: A
+      devicetype: A,B
       name: Enable
       description: Enables OKC the device. 
     - code: 0
       mx: "8.2"
-      devicetype: A
+      devicetype: A,B
       name: Disable
       description: Disables OKC the device. 
 ---

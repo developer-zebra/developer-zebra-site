@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: FT Over The DS
+title: FT Over The DS (checkbox)
 type: parm
 order: 68
 mx: "4.3"

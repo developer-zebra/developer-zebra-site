@@ -106,11 +106,12 @@ Used to specify the Action to perform on an application or app-related setting. 
  * TC57
  * TC72
  * TC77
-* **If upgrading a device to enable "GMS Restricted" mode (MX 8.3 and later)**, the upgrade must be performed as follows: 
- * Execute the App Manager Action "EnableGMSApps"
- * Perform the device upgrade
- * Perform GMS Manager Action "Restricted" (persisting the XML, if desired)<br>
-**`NOTE:` It is not possible to transition a device to a new OS ***and*** to implement GMS Restricted mode with the same XML profile**.
+* **`IMPORTANT:` If upgrading a device to gain access to "GMS Restricted" mode (implemented in MX 8.3 and later)**, the upgrade and related actions must be performed in the following order: 
+ * If apps were previously disabled using the "DisableGMSApps" App Manager Action, execute the "EnableGMSApps" App Manager Action. 
+ * Perform the device upgrade with a package containing MX 8.3 or later.
+ * Perform "Restricted" GMS Manager Action.
+ * If desired, use Persist Manager to safeguard the XML on the device.<br>
+**`NOTE:` It is not possible to transition a device to a new OS _and_ to implement GMS Restricted mode with the same XML profile**.
 
 
 <!--

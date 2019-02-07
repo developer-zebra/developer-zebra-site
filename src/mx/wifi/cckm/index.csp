@@ -11,7 +11,6 @@ parm:
   name: CCKM
   type: string
 ---
-Used to enable/disable the CCX roam algorithm (CCKM).
+Used to enable/disable Cisco Centralized Key Management (CCKM), a form of fast roaming and a subset of the Cisco Compatible Extensions (CCX) spec.
 
 **Important: Wi-Fi Advanced Options should be used only at the direction of Zebra Support or other qualified personnel. Altering this setting can result in undesirable behavior**.
-

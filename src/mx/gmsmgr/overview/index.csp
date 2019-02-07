@@ -8,8 +8,6 @@ order: 0
 
 GMS Manager (GmsMgr) controls which Google Mobile Services (GMS) are available on a Zebra device, giving device administrators improved control over data privacy and the flow of device information to third parties. 
 
-> **Zebra recommends testing devices thoroughly before deployment when using this feature**. 
-
 A device in "GMS "Restricted" mode disables many primary GMS applications and services, including (but not limited to): 
 
 * Chrome 
@@ -25,18 +23,20 @@ This also renders inoperable secondary applications and services that rely on th
 * Location services
 * SafetyNet
 
+> **Zebra recommends testing devices thoroughly before deployment when using this feature**. 
+
 #### Important Notes
 * Based on GMS dependencies, apps and services other than those listed above also might fail when a device is in GMS Restricted mode. 
 * Apps that use FCM to deliver notifications are unable to do so using this framework when running on a GMS-restricted device. Such apps might fail or behave unpredictably. 
 * When location services are disabled, the device is set to “Device Only” location mode.
 * The ability to add or manage users on a device is prevented by GMS Restricted; any existing Google accounts are disabled. 
-* **GMS Manager Actions are supported only on SDM660-platform devices, which includes (but is not limited to)**:
+* **<u>GMS Manager is supported only on SDM660-platform devices</u>, which includes (but is not limited to)**:
  * PS20
  * TC52
  * TC57
  * TC72
  * TC77
-* Attempts to use GMS Manager on an unsupported device returns "Not Supported" in the relevant Result XML file**.
+* Attempts to use GMS Manager on an unsupported device returns "Not Supported" in the relevant Result XML file.
 
 ### Main Functionality
 

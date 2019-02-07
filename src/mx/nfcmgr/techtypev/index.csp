@@ -1,8 +1,8 @@
 ---
 csp: nfcmgr
-title: Use Type A Tags
+title: Use Type V Tags
 type: parm
-order: 33
+order: 23
 mx: "8.3"
 devicetype: A
 parm:

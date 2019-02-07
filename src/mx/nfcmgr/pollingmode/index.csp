@@ -2,7 +2,7 @@
 csp: nfcmgr
 title: Polling Mode 
 type: parm
-order: 12
+order: 10
 mx: "8.3"
 devicetype: A
 parm:

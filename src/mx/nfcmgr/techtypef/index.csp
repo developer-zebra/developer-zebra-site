@@ -2,7 +2,7 @@
 csp: nfcmgr
 title: Use Type F Tags
 type: parm
-order: 32
+order: 22
 mx: "8.3"
 devicetype: A
 parm:

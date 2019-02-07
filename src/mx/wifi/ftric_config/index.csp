@@ -29,4 +29,4 @@ parm:
 
 This is the On/Off switch for Fast Transition Resource Request (802.11r).
 
-**Important: Attempts to use this parameter on a device that doesn't support it results in a value of "99" in the relevant section of the Result XML file**.
+**Important: Attempts to use this parameter on a device that doesn't support it returns a value of "99" in the relevant section of the Result XML file**.

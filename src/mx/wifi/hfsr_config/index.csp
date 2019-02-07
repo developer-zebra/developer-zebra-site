@@ -5,6 +5,7 @@ type: parm
 order: 74
 mx: "8.2"
 devicetype: A
+info: Not supported on TC70 QC GA1/GA2, TC75 GA and TC55 GA devices running Android KitKat.
 parm:
   pivotal: No
   name: HFSR_Config

@@ -5,6 +5,7 @@ type: parm
 order: 67
 mx: "8.2"
 devicetype: A,B
+info: Not supported on TC70 QC GA1 devices running Android KitKat. 
 parm:
   pivotal: No
   name: FT_Config

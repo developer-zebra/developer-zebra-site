@@ -5,6 +5,7 @@ type: parm
 order: 66
 mx: "4.2"
 devicetype: A,B
+info: Not supported on TC70 QC GA1 devices running Android KitKat. 
 parm:
   presentif: The "Use Advanced Options" box is checked.
   pivotal: False
@@ -12,7 +13,5 @@ parm:
   type: string
 ---
 Controls the Fast Transition roam algorithm (802.11r), which improves on IEEE 802.11r Over-the-DS fast roaming. When used in conjunction with Zebra wireless LAN infrastructure, the device will achieve more reliable and consistent fast roaming. **Enabled by default**. 
-
-_**Not supported on TC70 QC GA1 devices running Android KitKat**_. 
 
 **Important: Wi-Fi Advanced Options should be used only at the direction of Zebra Support or other qualified personnel. Altering this setting can result in undesirable behavior**.

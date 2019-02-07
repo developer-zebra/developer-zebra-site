@@ -36,7 +36,7 @@ This also renders inoperable secondary applications and services that rely on th
  * TC57
  * TC72
  * TC77
-* Attempts to apply this feature on an unsupported device will 
+* Attempts to use GMS Manager on an unsupported device returns "Not Supported" in the relevant Result XML file**.
 
 ### Main Functionality
 

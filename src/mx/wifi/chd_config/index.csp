@@ -19,14 +19,14 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Enable
-      description: Enables configuration of CHD. 
+      description: Enables CHD on the device. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable
-      description: Disables configuration of CHD. 
+      description: Disables CHD on the device. 
 ---
 
-This is the On/Off switch for configuring Coverage Hole Detection, which reports gaps in signal coverage to the Zebra wireless LAN infrastructure. 
+This is the On/Off switch for Coverage Hole Detection, which reports gaps in signal coverage to the Zebra wireless LAN infrastructure. 
 
 **Important: Attempts to use this parameter on a device that doesn't support it results in a value of "99" in the relevant section of the Result XML file**.

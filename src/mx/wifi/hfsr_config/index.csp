@@ -19,15 +19,15 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Enable
-      description: Enables configuration of HFSR on the device. 
+      description: Enables HFSR on the device. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable
-      description: Disables configuration of HFSR on the device. 
+      description: Disables HFSR on the device. 
 ---
 
-This is the On/Off switch for configuring Hyper Fast Secure Roam (HFSR), Zebra's fast roam algorithm. 
+This is the On/Off switch for Hyper Fast Secure Roam (HFSR), Zebra's fast roam algorithm. 
 
 **Important: Attempts to use this parameter on a device that doesn't support it results in a value of "99" in the relevant section of the Result XML file**.
 

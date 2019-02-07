@@ -19,12 +19,12 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Enable
-      description: Enables configuration of PMKID. 
+      description: Enables PMKID on the device. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable
-      description: Disables configuration of PMKID. 
+      description: Disables PMKID on the device. 
 ---
 
 This is the On/Off switch for Pairwise Master Key ID (PMKID) caching. 

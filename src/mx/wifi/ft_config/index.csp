@@ -19,12 +19,12 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Enable
-      description: Enables configuration of FT on the device. 
+      description: Enables FT on the device. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable
-      description: Disables configuration of FT on the device. 
+      description: Disables FT on the device. 
 ---
 
 This is the On/Off switch for the Fast Transition roam algorithm (802.11r), which improves on IEEE 802.11r Over-the-DS fast roaming. 

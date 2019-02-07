@@ -19,14 +19,14 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Enable
-      description: Enables configuration of ScanAssist on the device. 
+      description: Enables ScanAssist on the device. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable
-      description: Disables configuration of ScanAssist on the device. 
+      description: Disables ScanAssist on the device. 
 ---
 
-This is the On/Off switch for configuring ScanAssist on the device. 
+This is the On/Off switch for ScanAssist on the device. 
 
 **Important: Attempts to use this parameter on a device that doesn't support it results in a value of "99" in the relevant section of the Result XML file**.

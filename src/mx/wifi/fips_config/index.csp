@@ -19,12 +19,12 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Enable
-      description: Enables configuration of FIPS on the device. 
+      description: Enables FIPS on the device. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable
-      description: Disables configuration of FIPS on the device. 
+      description: Disables FIPS on the device. 
 ---
 
 This is the On/Off switch for FIPS data in motion supported in WLAN. 

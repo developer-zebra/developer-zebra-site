@@ -19,12 +19,12 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Enable
-      description: Enables configuration of logging for advanced features. 
+      description: Enables logging for advanced features. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable
-      description: Disables configuration of logging for advanced features. 
+      description: Disables logging for advanced features. 
 ---
 
 This is the On/Off switch for logging WLAN module events, which is sometimes helpful for troubleshooting. Logs from all Wi-Fi modules are stored in the `/fusionlogs` folder on the device. **Caution**: Logging might cause performance delays. 

@@ -19,14 +19,14 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Enable
-      description: Enables configuration of FTRIC on the device. 
+      description: Enables FTRIC on the device. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable
-      description: Disables configuration of FTRIC on the device. 
+      description: Disables FTRIC on the device. 
 ---
 
-This is the On/Off switch for configuring Fast Transition Resource Request (802.11r).
+This is the On/Off switch for Fast Transition Resource Request (802.11r).
 
 **Important: Attempts to use this parameter on a device that doesn't support it results in a value of "99" in the relevant section of the Result XML file**.

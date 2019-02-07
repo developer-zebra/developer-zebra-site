@@ -17,4 +17,4 @@ Used to provide a password for accessing the hotspot and to store it in encrypte
 
 **Parm value input rules**: 
 
-* String from 1&ndash;32 characters containing the hotspot password
+* String from 8&ndash;32 characters containing the hotspot password

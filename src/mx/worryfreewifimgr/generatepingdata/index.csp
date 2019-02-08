@@ -28,3 +28,11 @@ parm:
 ---
 
 Controls whether ping data is generated on the device. 
+
+Start Ping Type to specify the Ping Type for the Analysis Session. 
+
+This Managed Configuration allows an Administrator using an EMM to configure the Ping Type for an Analysis Session started for the Worry Free WiFi feature and should be specified only if the value Start is specified for the Managed Configuration Worry Free WiFi Configuration - Action. 
+
+If the value No Data is chosen, then Pings sent during the Analysis Session that is started will include no data. 
+
+If the value Data Ping is chosen, then Pings sent during the Analysis Session that is started will include data. 

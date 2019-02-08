@@ -1,0 +1,21 @@
+---
+csp: worryfreewifimgr
+title: Password
+type: parm
+order: 38
+mx: "8.3"
+devicetype: A,B
+parm:
+  pivotal: No
+  type: string
+---
+
+Used to specify the Password for access by the device user to the in-device UI for configuring Worry Free Wi-Fi features on the device. 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;32 characters containing a valid password 
+
+This Managed Configuration allows an Administrator using an EMM to configure the network that will be used for an Analysis Session started for the Worry Free WiFi feature and should be specified only if the value Start is specified for the Managed Configuration Worry Free WiFi Configuration - Action. 
+
+Note that if this Managed Configuration is used to start an Analysis Session for a network other than the currently configured network, the currently disconnected network will be disconnected so the the specified network can be connected for use by the Analysis Session. 

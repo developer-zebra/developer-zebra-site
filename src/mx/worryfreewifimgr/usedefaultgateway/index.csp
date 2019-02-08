@@ -1,13 +1,13 @@
 ---
 csp: worryfreewifimgr
-title: Analysis Type 
+title: Default Gateway 
 type: parm
 order: 80
 mx: "8.3"
 devicetype: A
 parm:
   pivotal: No
-  name: AnalysisType
+  name: UseDefaultGateway
   type: list
   list:
     - code: 2
@@ -18,13 +18,19 @@ parm:
     - code: 1
       mx: "8.3"
       devicetype: A
-      name: Voice
+      name: User Provided Remote Server Address
       description: Enables voice analysis on the device. 
     - code: 0
       mx: "8.3"
       devicetype: A
-      name: Roam
+      name: Use Default Gateway IP
       description: Enables roam analysis on the device. 
 ---
 
 Used to select the type of data to analyze on the device. 
+
+This Managed Configuration allows an Administrator using an EMM to configure the Type of Remote Gateway for an Analysis Session started for the Worry Free WiFi feature and should be specified only if the value Start is specified for the Managed Configuration Worry Free WiFi Configuration - Action. 
+
+If the value Default is chosen, then the Default Remote Gateway will be used. 
+
+If the value Custom is chosen, then a custom Remote Gateway will be used and the additional Managed Configuration Worry Free WiFi Configuration - Action Start Remote Gateway Type Custom Server Address MUST also be specified to supply the desired custom Gateway Server Address. 

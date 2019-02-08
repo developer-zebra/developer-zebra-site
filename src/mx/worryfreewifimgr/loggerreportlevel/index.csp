@@ -33,3 +33,13 @@ parm:
 ---
 
 Used to select the level og logging generated on the device. 
+
+Start Logger Report Level to specify the Logger Report Level for the Analysis Session. 
+
+This Managed Configuration allows an Administrator using an EMM to configure the Logger Report Level for an Analysis Session started for the Worry Free WiFi feature and should be specified only if the value Start is specified for the Managed Configuration Worry Free WiFi Configuration - Action. 
+
+If the value Info is chosen, then all available data will be logged, including data that is informational as well as data related to warnings or errors that are detected. 
+
+If the value Warning is chosen, then only data that is related to warnings or errors that are detected will be logged. 
+
+If the value Error is chosen, then only data that is related to errors that are detected will be logged. 

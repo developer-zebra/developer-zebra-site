@@ -30,3 +30,9 @@ parm:
 Controls whether packets are captured on the device. 
 
 **Caution**: Can cause slow performance. (MAKE CONSISTENT WITH WIFI NOTES) 
+
+This Managed Configuration allows an Administrator using an EMM to configure whether Packet Capture will be performed by the Worry Free WiFi feature in a Zebra Android device. 
+
+If the value Off is chosen, the Packet Capture will NOT be performed. This can significantly decrease the load on the device and decrease battery drain, but will provide less data that can be used for troubleshooting. 
+
+If the value On is chosen, the Packet Capture will NOT be performed. This can significantly increase the load on the device and increase battery drain, but will provide additional data that can be used for troubleshooting. 

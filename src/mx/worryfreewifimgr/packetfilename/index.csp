@@ -1,0 +1,18 @@
+---
+csp: worryfreewifimgr
+title: Packet File Name
+type: parm
+order: 38
+mx: "8.3"
+devicetype: A,B
+parm:
+  pivotal: No
+  type: string
+---
+
+Used to specify the Password for access by the device user to the in-device UI for configuring Worry Free Wi-Fi features on the device. 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;32 characters containing a valid password 
+

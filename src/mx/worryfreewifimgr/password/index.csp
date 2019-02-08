@@ -10,7 +10,7 @@ parm:
   type: string
 ---
 
-Used to specify a password for the device. 
+Used to specify the Password for access by the device user to the in-device UI for configuring Worry Free Wi-Fi features on the device. 
 
 **Parm value input rules**: 
 

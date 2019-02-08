@@ -19,12 +19,12 @@ parm:
       mx: "8.3"
       devicetype: A
       name: Voice
-      description: Enables voice analysis on the device. 
+      description: Analyzes voice communications on the device. 
     - code: 0
       mx: "8.3"
       devicetype: A
       name: Roam
-      description: Enables roam analysis on the device. 
+      description: Analyzes Wi-Fi roaming operations on the device. 
 ---
 
-Used to select the type of data to analyze on the device. 
+Used to select the type of data to analyze for troubleshooting and to optimization of Wi-Fi operations on the device. 

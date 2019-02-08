@@ -19,22 +19,46 @@ parm:
       mx: "8.3"
       devicetype: A
       name: Export
-      description:  
+      description: Exports the current Worry Free Wi-Fi configuration to a file in the device file system.
     - code: 2
       mx: "8.3"
       devicetype: A
       name: Clear
-      description:  
+      description: Discards any data accumulated from the current Worry Free Wi-Fi analysis session. 
     - code: 1
       mx: "8.3"
       devicetype: A
       name: Stop
-      description:  
+      description: Terminates the current Worry Free Wi-Fi analysis session. 
     - code: 0
       mx: "8.3"
       devicetype: A
       name: Start
-      description:  
+      description: Starts a new Worry Free Wi-Fi analysis session, terminating any session previously in progress. 
 ---
 
-Used to select the Action to perform on the device. 
+Used to select the Action to perform on the device. **NOTE**: Actions might rely on the configuration of one or more additional parameters, including: 
+* **Server Analytics**
+* **Activity Mode**
+* **Analysis SSID**
+* **Session Name**
+* **Logger Report Level
+* **Ping Type**
+* **Remote Gateway Type Custom Server Address**
+* **Start SD Card Storage**
+
+<!--
+
+Start Analysis SSID to specify the network for the Analysis Session. 
+
+Start Session Name to specify the name for the Analysis Session. 
+
+
+
+Start Remote Gateway Type to specify the Remote Gateway Type for the Analysis Session. 
+
+Start Remote Gateway Type Custom Server Address to specify the Custom Server Address for the Analysis Session. 
+
+Action Start SD Card Storage to specify how SD Card Storage will be used for the Analysis Session. 
+
+-->

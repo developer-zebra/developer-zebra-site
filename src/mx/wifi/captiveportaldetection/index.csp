@@ -5,6 +5,7 @@ type: parm
 order: 101
 mx: "6.3"
 devicetype: A
+info: This parameter is not compatible with the MC18.
 parm:
   pivotal: No
   name: CaptivePortalDetection
@@ -27,4 +28,4 @@ parm:
       description: Disables the detection of a captive portal. 
 ---
 
-This is the On/Off switch for the detection of a Captive Portal, which requires user interaction to activate an open Wi-Fi connection. Captive portals are often used on public-access networks such as those at airports, hotels and coffee shops. 
+This is the On/Off switch for the detection of a Captive Portal, which requires user interaction to activate an open Wi-Fi connection. Captive portals are often used on public-access networks such as those at airports, hotels and coffee shops. **Disabling captive portal detection (code 0) effectively blocks a device from connecting to such networks**.  

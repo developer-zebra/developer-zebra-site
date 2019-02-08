@@ -1,30 +1,35 @@
 ---
 csp: worryfreewifimgr
-title: Analysis Type 
+title: SD Card Storage 
 type: parm
 order: 80
 mx: "8.3"
 devicetype: A
 parm:
   pivotal: No
-  name: AnalysisType
+  name: SDcardStorage
   type: list
   list:
-    - code: 2
+    - code: 3
       mx: "8.3"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 2
+      mx: "8.3"
+      devicetype: A
+      name: Delete old Sessions
+      description:  
     - code: 1
       mx: "8.3"
       devicetype: A
-      name: Voice
-      description: Enables voice analysis on the device. 
+      name: Delete old Ping and Packet Data
+      description:  
     - code: 0
       mx: "8.3"
       devicetype: A
-      name: Roam
-      description: Enables roam analysis on the device. 
+      name: Only Live Data
+      description:  
 ---
 
 Used to select the type of data to analyze on the device. 

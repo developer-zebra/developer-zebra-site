@@ -1,30 +1,35 @@
 ---
 csp: worryfreewifimgr
-title: Analysis Type 
+title: Logger Report Level 
 type: parm
 order: 80
 mx: "8.3"
 devicetype: A
 parm:
   pivotal: No
-  name: AnalysisType
+  name: LoggerReportLevel
   type: list
   list:
-    - code: 2
+    - code: 3
       mx: "8.3"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 2
+      mx: "8.3"
+      devicetype: A
+      name: Error
+      description: Logs error-level events only. 
     - code: 1
       mx: "8.3"
       devicetype: A
-      name: Voice
-      description: Enables voice analysis on the device. 
+      name: Warning
+      description: Logs warning-level events only. 
     - code: 0
       mx: "8.3"
       devicetype: A
-      name: Roam
-      description: Enables roam analysis on the device. 
+      name: Info
+      description: Logs all events. 
 ---
 
-Used to select the type of data to analyze on the device. 
+Used to select the level og logging generated on the device. 

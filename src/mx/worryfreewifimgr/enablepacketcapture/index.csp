@@ -1,13 +1,13 @@
 ---
 csp: worryfreewifimgr
-title: Analysis Type 
+title: Packet Capture Enable/Disable 
 type: parm
 order: 80
 mx: "8.3"
 devicetype: A
 parm:
   pivotal: No
-  name: AnalysisType
+  name: EnablePacketCapture
   type: list
   list:
     - code: 2
@@ -18,13 +18,15 @@ parm:
     - code: 1
       mx: "8.3"
       devicetype: A
-      name: Voice
-      description: Enables voice analysis on the device. 
+      name: Enable
+      description: Enables packet capture on the device. 
     - code: 0
       mx: "8.3"
       devicetype: A
-      name: Roam
-      description: Enables roam analysis on the device. 
+      name: Disable
+      description: Disables packet capture on the device. 
 ---
 
-Used to select the type of data to analyze on the device. 
+Controls whether packets are captured on the device. 
+
+**Caution**: Can cause slow performance. (MAKE CONSISTENT WITH WIFI NOTES) 

@@ -6,8 +6,7 @@ devicetype: A,B
 order: 0
 ---
 
-The Worry Free Wi-Fi Manager (worryfreewifimgrMgr) CSP allows configuration of settings with following features:
-
+Worry Free Wi-Fi Manager (WorryFreeWifiMgr) CSP allows configuration of settings with following features:
 
 
 Activate/Deactivate worryfreewifimgr - to enable worryfreewifimgr Stack in the device so that we can execute Wi-Fi / worryfreewifimgr Analytics features in the device which provides detailed information of Wi-Fi / Connectivity related issues / information / analysis.

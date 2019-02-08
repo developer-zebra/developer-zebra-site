@@ -1,13 +1,13 @@
 ---
 csp: worryfreewifimgr
-title: Analysis Type 
+title: End-user Control 
 type: parm
 order: 80
 mx: "8.3"
 devicetype: A
 parm:
   pivotal: No
-  name: AnalysisType
+  name: EndUserControl
   type: list
   list:
     - code: 2
@@ -18,13 +18,14 @@ parm:
     - code: 1
       mx: "8.3"
       devicetype: A
-      name: Voice
-      description: Enables voice analysis on the device. 
+      name: Enable
+      description: Enables the device user to control the analytics tool on the device. 
     - code: 0
       mx: "8.3"
       devicetype: A
-      name: Roam
-      description: Enables roam analysis on the device. 
+      name: Disable
+      description: Prevents the device user from controlling the analytics tool on the device. 
 ---
 
-Used to select the type of data to analyze on the device. 
+Controls whether the device user has access to the analytics tool's UI on the device. 
+

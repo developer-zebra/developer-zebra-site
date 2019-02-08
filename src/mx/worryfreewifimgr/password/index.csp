@@ -1,0 +1,18 @@
+---
+csp: worryfreewifimgr
+title: Password
+type: parm
+order: 38
+mx: "8.3"
+devicetype: A,B
+parm:
+  pivotal: No
+  type: string
+---
+
+Used to specify a password for the device. 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;32 characters containing a valid password 
+

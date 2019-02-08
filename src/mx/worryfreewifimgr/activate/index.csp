@@ -1,13 +1,13 @@
 ---
 csp: worryfreewifimgr
-title: Analysis Type 
+title: Activate
 type: parm
 order: 80
 mx: "8.3"
 devicetype: A
 parm:
   pivotal: No
-  name: AnalysisType
+  name: Activate
   type: list
   list:
     - code: 2
@@ -18,13 +18,13 @@ parm:
     - code: 1
       mx: "8.3"
       devicetype: A
-      name: Voice
-      description: Enables voice analysis on the device. 
+      name: Turn on
+      description:  
     - code: 0
       mx: "8.3"
       devicetype: A
-      name: Roam
-      description: Enables roam analysis on the device. 
+      name: Turn off
+      description:  
 ---
 
-Used to select the type of data to analyze on the device. 
+This is the On/Off switch for stuff.  

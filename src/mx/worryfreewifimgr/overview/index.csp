@@ -17,12 +17,13 @@ Worry Free Wi-Fi Manager (WorryFreeWifiMgr) controls Zebra Wi-Fi analysis and di
  * User access to on-device client UI
  * Call admission control
 * **Selection of**:
- * Analysis of voice or roaming data 
+ * Voice or roaming data analysis 
  * Background or foreground analysis
  * SSID of network to analyze
  * URL of a remote server and gateway
  * Logging of only errors, warnings and errors, or all events
  * Storage preferences, file name
+ * Global settings
 * Set password for access to client UI, settings and data
 
 -----

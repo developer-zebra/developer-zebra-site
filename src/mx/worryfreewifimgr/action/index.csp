@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Action 
 type: parm
-order: 1
+order: 4
 mx: "8.3"
 devicetype: A
 parm:
@@ -37,12 +37,15 @@ parm:
       description: Starts a new Worry Free Wi-Fi analysis session, terminating any session previously in progress. 
 ---
 
-Used to select the Action to perform on the device. **NOTE**: Actions might rely on the configuration of one or more additional parameters, including: 
+Used to select the Action to perform on the device. 
+
+####NOTE
+Actions might require configuration of one or more of these parameters:
 * **Server Analytics**
 * **Activity Mode**
 * **Analysis SSID**
 * **Session Name**
-* **Logger Report Level
+* **Logger Report Level**
 * **Ping Type**
 * **Remote Gateway Type Custom Server Address**
 * **Start SD Card Storage**

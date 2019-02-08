@@ -1,19 +1,14 @@
 ---
 csp: worryfreewifimgr
-title: Password
+title: Global Config (checkbox)
 type: parm
-order: 38
+order: 45
 mx: "8.3"
 devicetype: A,B
 parm:
   pivotal: No
-  name: Password
-  type: string
+  name: UseGlobalConfig
+  type: boolean
 ---
 
-Used to specify the Password for access by the device user to the in-device UI for configuring Worry Free Wi-Fi features on the device. 
-
-**Parm value input rules**: 
-
-* String from 1&ndash;32 characters containing a valid password 
-
+Check this box to apply settings to all configurations on the device. 

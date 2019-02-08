@@ -27,12 +27,4 @@ parm:
       description: Enables server analytics on the device. 
 ---
 
-Controls whether server analytics 
-
-Start Server Analytics to specify whether Server Analytics should be performed for the Analysis Session. 
-
-This Managed Configuration allows an Administrator using an EMM to configure whether or not Server Analytics should be performed during an Analysis Session started for the Worry Free WiFi feature and should be specified only if the value Start is specified for the Managed Configuration Worry Free WiFi Configuration - Action. 
-
-If the value Turn Off is chosen, then Server Analytics will NOT be performed during the Analysis Session that is started. 
-
-If the value Turn On is chosen, then Server Analytics will be performed during the Analysis Session that is started. 
+Controls whether server analytics are performed for the analysis session on the device. 

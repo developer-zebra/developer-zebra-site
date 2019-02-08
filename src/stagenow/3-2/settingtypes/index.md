@@ -87,7 +87,7 @@ automenu:
         - title: Wireless Manager
           url: /stagenow/3-2/csp/wireless
         - title: Worry Free Wi-Fi
-          url: /stagenow/3-2/csp/worryfreewifi
+          url: /stagenow/3-2/csp/worryfreewifimgr
     - title: Security
       items:
         - title: Access Manager

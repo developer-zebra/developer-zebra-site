@@ -46,19 +46,3 @@ Used to select the Action to perform on the device. **NOTE**: Actions might rely
 * **Ping Type**
 * **Remote Gateway Type Custom Server Address**
 * **Start SD Card Storage**
-
-<!--
-
-Start Analysis SSID to specify the network for the Analysis Session. 
-
-Start Session Name to specify the name for the Analysis Session. 
-
-
-
-Start Remote Gateway Type to specify the Remote Gateway Type for the Analysis Session. 
-
-Start Remote Gateway Type Custom Server Address to specify the Custom Server Address for the Analysis Session. 
-
-Action Start SD Card Storage to specify how SD Card Storage will be used for the Analysis Session. 
-
--->

@@ -11,16 +11,8 @@ parm:
   type: string
 ---
 
-Used to specify the URL 
-
-IP address of the 
-
-
-
-Password for access by the device user to the in-device UI for configuring Worry Free Wi-Fi features on the device. 
+Used to specify the URL of a custom remote gateway if other than that stored in the PI settings of the device. 
 
 **Parm value input rules**: 
 
-* String from 1&ndash;32 characters containing a valid password 
-
-This Managed Configuration allows an Administrator using an EMM to configure the Custom Remote Gateway Server Address for an Analysis Session started for the Worry Free WiFi feature and should be specified only if the value Start is specified for the Managed Configuration Worry Free WiFi Configuration - Action and if the value Custom is specified for the Managed Configuration Worry Free WiFi Configuration - Action Start Remote Gateway Type. 
+* String from 1&ndash;32 characters containing a valid IP address or URL

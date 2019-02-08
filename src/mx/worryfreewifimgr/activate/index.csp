@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Activate
 type: parm
-order: 80
+order: 2
 mx: "8.3"
 devicetype: A
 parm:
@@ -19,12 +19,12 @@ parm:
       mx: "8.3"
       devicetype: A
       name: Turn on
-      description:  
+      description: Activates data analysis functions.   
     - code: 0
       mx: "8.3"
       devicetype: A
       name: Turn off
-      description:  
+      description: Deactivates data analysis functions. 
 ---
 
-This is the On/Off switch for stuff.  
+This is the On/Off switch for data analysis functions on the device.  

@@ -6,30 +6,23 @@ devicetype: A,B
 order: 0
 ---
 
-Worry Free Wi-Fi Manager (WorryFreeWifiMgr) CSP allows configuration of settings with following features:
-
-
-Activate/Deactivate worryfreewifimgr - to enable worryfreewifimgr Stack in the device so that we can execute Wi-Fi / worryfreewifimgr Analytics features in the device which provides detailed information of Wi-Fi / Connectivity related issues / information / analysis.
-
-worryfreewifimgr Global Configuration – Configure worryfreewifimgr Password and End User Control parameters on the device. password which will be used by worryfreewifimgr to secure End Customer data e.g. Unencrypted Packet Capture and same password used as Authentication to configure worryfreewifimgr Advanced features. 
-
-Enable / disable End user control access control of worryfreewifimgr App UX features for end user access. If user control is disabled remote admin then user can’t start Roam/Voice Analysis from worryfreewifimgr App.
-
-worryfreewifimgr Analysis Configuration – Configures Analysis parameters AnalysisType, Action, EnableServerAnalytics, ActivityMode, AnalysisSSID, SessionName, GeneratePingData, UseDefaultGateway, RemoteServerAddress, LoggerReportLevel, SDcardStorage.
-
-worryfreewifimgr Packet Capture Configuration – Configures Packet capture parameters EnablePacketCapture, PacketFileName, MaxFileSize, MaxStorageSize
-
-
-OLD OLD OLD
+Worry Free Wi-Fi Manager (WorryFreeWifiMgr) controls Zebra Wi-Fi analysis and diagnostics tools for Zebra devices. 
 
 ### Main Functionality
 
 * **Enable/Disable**:
- * Worry Free Wi-Fi
- * On-device client UI
+ * Wi-Fi operations analysis
+ * Packet capture
+ * Ping data 
+ * User access to on-device client UI
  * Call admission control
- * Packet capture and analysis
-* Set password for access to client settings and data
-* Encrypts passwords stored on the device 
+* **Selection of**:
+ * Analysis of voice or roaming data 
+ * Background or foreground analysis
+ * SSID of network to analyze
+ * URL of a remote server and gateway
+ * Logging of only errors, warnings and errors, or all events
+ * Storage preferences, file name
+* Set password for access to client UI, settings and data
 
-
+-----

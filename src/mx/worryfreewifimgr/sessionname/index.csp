@@ -1,16 +1,21 @@
 ---
 csp: worryfreewifimgr
-title: Password
+title: Session Name
 type: parm
 order: 38
 mx: "8.3"
 devicetype: A,B
 parm:
   pivotal: No
+  name: SessionName
   type: string
 ---
 
-Used to specify the Password for access by the device user to the in-device UI for configuring Worry Free Wi-Fi features on the device. 
+Used to specify the session name for a session 
+
+
+
+ for access by the device user to the in-device UI for configuring Worry Free Wi-Fi features on the device. 
 
 **Parm value input rules**: 
 

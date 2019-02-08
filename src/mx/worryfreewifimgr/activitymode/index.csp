@@ -19,20 +19,12 @@ parm:
       mx: "8.3"
       devicetype: A
       name: Background Activity
-      description:  
+      description: Performs analysis as a foregound task, visible to the device user. 
     - code: 0
       mx: "8.3"
       devicetype: A
       name: Foreground Activity
-      description: 
+      description: Performs analysis as a background task, invisible to device user. 
 ---
 
-Controls whether analysis activities appear in the foreground (and are visible to the device user) or in the background. 
-
-Start Activity Mode to specify the Activity Mode for the Analysis Session. 
-
-This Managed Configuration allows an Administrator using an EMM to configure the Activity Mode for an Analysis Session started for the Worry Free WiFi feature and should be specified only if the value Start is specified for the Managed Configuration Worry Free WiFi Configuration - Action. 
-
-If the value Foreground is chosen, then Analysis will be performed as a foreground task during the Analysis Session that is started. 
-
-If the value Background is chosen, then Analysis will be performed as a background task during the Analysis Session that is started. 
+Controls whether analysis activities are performed in the foreground and visible to the device user, or in the background.  

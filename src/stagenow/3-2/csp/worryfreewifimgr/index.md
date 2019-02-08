@@ -10,7 +10,7 @@ mxversions:
     value: 4.4
   - text: MX 5.0
     value: 5
-csp: worryfreewifi
+csp: worryfreewifimgr
 product: StageNow
 productversion: '3.2'
 ---

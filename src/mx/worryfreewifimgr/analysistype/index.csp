@@ -1,0 +1,31 @@
+---
+csp: worryfreewifimgr
+title: Analysis Type 
+type: parm
+order: 80
+mx: "8.3"
+devicetype: A
+info: Not supported on TC70 QC GA1/GA2 or TC75 GA devices running Android KitKat. 
+parm:
+  pivotal: No
+  name: PreAuth_Config
+  type: list
+  list:
+    - code: 2
+      mx: "8.3"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 1
+      mx: "8.3"
+      devicetype: A
+      name: Enable
+      description: Enables pre-authentication on the device. 
+    - code: 0
+      mx: "8.3"
+      devicetype: A
+      name: Disable
+      description: Disables pre-authentication on the device. 
+---
+
+Used to select the 

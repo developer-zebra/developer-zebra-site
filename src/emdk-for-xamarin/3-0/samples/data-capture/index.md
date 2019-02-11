@@ -35,10 +35,11 @@ One of the features of the EMDK is the ability to create Barcode scanning profil
 
 1. Choose a sample and click the **See Details** button.
 2. Now click the **Download** button 
-3. Extract the downloaded project zip file.
-4. Navigate to the root of the unzipped project folder and double-click the **.sln** file. The project will load in the default IDE for that file type.
+3. `IMPORTANT:` **Extract the downloaded project zip file <u>to C:\</u>** (or to the **root** of an alternate drive).
+4. Navigate to the root of the unzipped project folder and double-click the **.sln** file. The project loads in the default IDE for that file type.
 
-Alternatively, you can Launch your prefered IDE ( Visual Studio or Xamarin Studio ) and load the project via the File > Open menu.  
+Alternatively, launch a preferred IDE and load the project via the File > Open menu.  
+
 
 ## Running the Sample
 Now that we have the project loaded, lets run the application and see how it works

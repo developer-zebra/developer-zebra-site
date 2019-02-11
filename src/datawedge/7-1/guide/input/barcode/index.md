@@ -1062,10 +1062,6 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 
 **Decode Screen Notification -** When enabled, a translucent green screen overlay appears for 1 second upon every successful decode.
 
-**Decode Screen Notification Timer -** Defines the length of time (in milliseconds) to display the screen notification upon successful decode. Timer configuration range is 500 ms to 1500 ms. Default time is 1000 ms.
-
-**Decode Screen Translucency Level -** Sets the translucency of the decode notification green screen. Translucency level range is 20 to 50, in increments of 5. The higher the value, the more the translucency (visibility).
-
 **Decoding LED Notification -** When enabled, causes the Red LED to flash when the scan trigger is pressed.
 
 **Decode Feedback LED Timer -** Defines the length of time (in ms) to flash the Green LED to indicate a successful decode.

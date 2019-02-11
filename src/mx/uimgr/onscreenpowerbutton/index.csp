@@ -4,6 +4,8 @@ title: On-screen Power Button Enable/Disable
 type: parm
 order: 41
 mx: "8.3"
+osx: "8.1"
+apilevel: "27"
 devicetype: A
 info: Supported on SDM660-platform devices only. 
 parm:
@@ -13,6 +15,8 @@ parm:
   list:
     - code: 0
       mx: "8.3"
+      osx: "8.1"
+      apilevel: "27"
       devicetype: A
       info: Supported on SDM660-platform devices only. 
       name: Do not change
@@ -21,12 +25,16 @@ parm:
       devicetype: A
       name: Enable 
       mx: "8.3"
+      osx: "8.1"
+      apilevel: "27"
       info: Supported on SDM660-platform devices only. 
       description: Enables the on-screen power button to turn off the device.
     - code: 2
       devicetype: A
       name: Disable
       mx: "8.3"
+      osx: "8.1"
+      apilevel: "27"
       info: Supported on SDM660-platform devices only. 
       description: Prevents the on-screen power button from turning off the device. 
 ---

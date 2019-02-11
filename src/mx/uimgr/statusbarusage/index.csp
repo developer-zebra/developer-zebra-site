@@ -4,6 +4,8 @@ title: Status Bar Enable/Disable
 type: parm
 order: 40
 mx: "8.3"
+osx: "8.1"
+apilevel: "27"
 devicetype: A
 info: Supported on SDM660-platform devices only. 
 parm:
@@ -13,6 +15,8 @@ parm:
   list:
     - code: 0
       mx: "8.3"
+      osx: "8.1"
+      apilevel: "27"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained. 
@@ -20,11 +24,15 @@ parm:
       devicetype: A
       name: Enable 
       mx: "8.3"
+      osx: "8.1"
+      apilevel: "27"
       description: Enables the Android Status bar on the device.
     - code: 2
       devicetype: A
       name: Disable
       mx: "8.3"
+      osx: "8.1"
+      apilevel: "27"
       description: Disables the Android Status bar on the device. 
 ---
 

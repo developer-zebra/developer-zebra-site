@@ -4,7 +4,9 @@ layout: guide.html
 product: StageNow
 productversion: '3.0'
 ---
-Use this Wizard to connect to a Wi-Fi, GPRS, or Ethernet network. 
+Use this Wizard to connect a device to a Wi-Fi, GPRS, or Ethernet network. 
+
+> `IMPORTANT:` If File Manager settings are contained within a Network profile, the StageNow client MUST be connected to the same network as the StageNow server to allow for the generation of a deployment barcode.
 
 ##Connecting to a Wi-Fi Network
 Wi-Fi network connection supports multiple network types including certificate-based networks. You can also enable, disable, add, or remove networks. 

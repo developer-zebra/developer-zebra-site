@@ -55,7 +55,7 @@ When staging manually, it's possible to skip the Android Setup Wizard on devices
 Scan-to-Bypass is **<u>supported only on these Zebra devices and minimum BSPs</u>**: 
 
 * **TC51, TC56, TC70x and TC75x**:
- * **Android Marshmallow** with Full Image `01-21-04.1-MG` (BSP21) or newer 
+ * **Android Marshmallow** with Full Image `01-21-04.1-MG` (BSP21) with LG patch 8 or newer 
 <br>
 * **MC3300, TC51, TC56, TC70x, TC75x and VC80x**:
  * **Android Nougat** with Full Image `01-01-49NG-00-A` (BSP49) or newer

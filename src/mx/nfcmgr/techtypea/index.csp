@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Controls whether the device reads NFC "Type A" tags. 
+Controls whether the device reads NFC "Type A" tags, which are based on ISO/IEC 14443A specifications. 
 
 **Input value rules**: 
 

@@ -9,9 +9,10 @@ order: 0
 The NFC Manager (NfcMgr) controls near field communications options on the device, including power supplied to the NFC radio and the state and behavior of features to improve performance and/or to avoid interoperability issues. NFC is a short-range wireless specification that enables two devices that are touching or within very close proximity to communicate using magnetic field induction.  
 
 #### Card technology support: 
-* ISO 14443 Types A and B
+* ISO 14443 Types A and B (ISO/IEC 14443A, 14443B)
 * ISO 15693
-* FeliCa
+* FeliCA (JIS X6319-4)
+* Type V (all that comply with ISO/IEC 15693)
 
 ### Main Functionality
 

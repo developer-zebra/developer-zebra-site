@@ -19,7 +19,7 @@ parm:
       devicetype: A
       name: Hybrid
       mx: "8.3"
-      description: Enables Hybrid polling, which reduces detection speed and power consumption.
+      description: Enables Hybrid polling, which attempts to balance detection speed and power consumption.
     - code: 1
       devicetype: A
       name: Standard
@@ -32,5 +32,4 @@ parm:
       description: Enables Low Power polling, which is slowest and consumes the least device power. 
 ---
 
-Used to select the Polling mode, which is invoked when the device is attempting to detect a nearby NFC tag or device seeking to communicate in peer-to-peer mode. Use this parameter to find the best balance between detection speed and power consumption. 
-
+Used to select the Polling mode, which is invoked when the device is attempting to detect a nearby NFC tag or a device seeking to communicate in peer-to-peer mode. Use this parameter to find the best balance between detection speed and power consumption. 

@@ -56,13 +56,14 @@ order: 99
 	    <parm name="FileAction" value="1" />
 	    <characteristic type="file-details">
 	      <parm name="TargetAccessMethod" value="2" />
-	      <parm name="TargetPathAndFileName" value="/storage/sdcard0/MSC_FileMgr_FTPS_TC01_1.apk"/>
+	      <parm name="TargetPathAndFileName" value="/storage/sdcard0/sample.apk"/>
 	      <parm name="SourceAccessMethod" value="1" />
 	      <parm name="SourceURI" value="ftps://username:password@192.168.0.100:21/secure/10m_testfile.bin" />
 	    </characteristic>
 	  </characteristic>
 	</wap-provisioningdoc>
 
+<!--2/11/19- above, changed "MSC_FileMgr_FTPS_TC02_1.apk" to "sample.apk"-->
 
 ### Download From FTPS With Implicit connection
 
@@ -72,12 +73,14 @@ order: 99
 	    <parm name="FileAction" value="1" />
 	    <characteristic type="file-details">
 	      <parm name="TargetAccessMethod" value="2" />
-	      <parm name="TargetPathAndFileName" value="/storage/sdcard0/MSC_FileMgr_FTPS_TC01_1.apk"/>
+	      <parm name="TargetPathAndFileName" value="/storage/sdcard0/sample.apk"/>
 	      <parm name="SourceAccessMethod" value="1" />
 	      <parm name="SourceURI" value="ftps://username:password@192.168.0.100:21/secure/10m_testfile.bin?implicit=true" />
 	    </characteristic>
 	  </characteristic>
 	</wap-provisioningdoc>
+
+<!--2/11/19- above, changed "MSC_FileMgr_FTPS_TC02_1.apk" to "sample.apk"-->
 
 
 ### Download From FTPS Through Open SSL server with Explicit Connection

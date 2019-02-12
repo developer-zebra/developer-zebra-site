@@ -11,4 +11,4 @@ parm:
   type: boolean
 ---
 
-Check this box to analyze captured data. 
+Check this box to enable configuration of additional analysis features on the device. 

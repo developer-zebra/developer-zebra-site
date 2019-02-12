@@ -4,7 +4,7 @@ title: Global Config (checkbox)
 type: parm
 order: 45
 mx: "8.2"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   name: UseGlobalConfig

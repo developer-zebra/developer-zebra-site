@@ -4,7 +4,7 @@ title: Password
 type: parm
 order: 20
 mx: "8.2"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   presentif: Use Global Settings checkbox is "checked" 

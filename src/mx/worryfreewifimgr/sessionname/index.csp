@@ -4,7 +4,7 @@ title: Session Name
 type: parm
 order: 15
 mx: "8.2"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   presentif: Activate is set to "Turn On" and Use Analysis box is "checked" 

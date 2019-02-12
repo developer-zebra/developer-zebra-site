@@ -4,7 +4,7 @@ title: Remote Server Address
 type: parm
 order: 30
 mx: "8.2"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   presentif: Activate is set to "Turn On" and Use Analysis box is "checked" and Use Default Gateway is set to "User Provided Remote Server Address"

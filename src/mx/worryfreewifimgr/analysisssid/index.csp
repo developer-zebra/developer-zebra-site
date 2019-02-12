@@ -4,7 +4,7 @@ title: Analysis SSID
 type: parm
 order: 28
 mx: "8.2"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   presentif: Activate is set to "Turn On" and Use Analysis box is "checked" 

@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Overview
 type: text
-devicetype: A,B
+devicetype: A
 order: 0
 ---
 

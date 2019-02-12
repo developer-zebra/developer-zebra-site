@@ -16,4 +16,4 @@ Used to specify the session name for an exported analysis session.
 
 **Parm value input rules**: 
 
-* String from 1&ndash;32 characters containing a valid password 
+* String from 1&ndash;32 characters 

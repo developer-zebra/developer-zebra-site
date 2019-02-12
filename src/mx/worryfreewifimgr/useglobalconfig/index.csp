@@ -22,4 +22,4 @@ parm:
       description: Allows configuration of global settings on the device.
 ---
 
-Controls access to configuration of global settings on the device, which are password and end-user control of  configuration of data analysis settings.
+Controls end-user access to configuration of the password and data analysis settings.

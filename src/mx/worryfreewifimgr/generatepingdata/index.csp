@@ -28,5 +28,5 @@ parm:
       description: Disables ping data generation on the device. 
 ---
 
-Controls whether ping data is generated for the analysis session on the device. If "No data" (code 0) is choses, pings sent during the analysis session contain no data. 
+Controls whether ping data is generated for the analysis session on the device. If "No data" (code 0) is selected, pings sent during the analysis session contain no data. 
 

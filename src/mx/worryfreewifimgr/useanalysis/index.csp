@@ -14,12 +14,12 @@ parm:
       mx: "8.2"
       devicetype: A
       name: (unchecked)
-      description: Prevents configuration of additional analysis settings on the device.
+      description: Prevents configuration of individual analysis settings on the device.
     - code: 1
       devicetype: A
       name: (checked)
       mx: "8.2"
-      description: Allows configuration of additional analysis settings on the device.
+      description: Allows configuration of individual analysis settings on the device.
 ---
 
-Controls access to configuration of additional analysis settings on the device. 
+Controls access to configuration of individual analysis settings on the device. 

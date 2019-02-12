@@ -14,12 +14,12 @@ parm:
       mx: "8.2"
       devicetype: A
       name: (unchecked)
-      description: Prevents configuration of global settings on the device.
+      description: Prevents packet capture on the device.
     - code: 1
       devicetype: A
       name: (checked)
       mx: "8.2"
-      description: Allows configuration of global settings on the device.
+      description: Allows packet capture on the device.
 ---
 
 Controls whether packets are captured on the device during an analysis session. If captured, packets are stored on the device in a file as specified in the PacketFileName parameter. 

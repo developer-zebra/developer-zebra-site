@@ -19,12 +19,12 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Turn on
-      description: Activates data analysis functions.   
+      description: Activates data analysis functions on the device.   
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Turn off
-      description: Deactivates data analysis functions. 
+      description: Deactivates data analysis functions on the device. 
 ---
 
 This is the On/Off switch for Worry Free Wi-Fi and its data analysis functions on the device. 

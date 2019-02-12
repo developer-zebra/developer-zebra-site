@@ -1,0 +1,19 @@
+---
+csp: worryfreewifimgr
+title: Max. Capture File Size
+type: parm
+order: 30
+mx: "8.2"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Enable Packet Capture is set to "Enable"
+  name: MaxFileSize
+  type: integer
+---
+
+Used to specify the maximum file size (in MB) of the packet capture file. 
+
+**Parm value input rules**: 
+
+* Integer from 1&ndash;80 

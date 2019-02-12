@@ -45,5 +45,6 @@ Used to select the Action to perform on the device. **Note**: Actions might requ
 * **Session Name**
 * **Logger Report Level**
 * **Ping Type**
-* **Remote Gateway Type Custom Server Address**
-* **Start SD Card Storage**
+* **Remote Gateway 
+* **Custom Server Address**
+* **SD Card Storage**

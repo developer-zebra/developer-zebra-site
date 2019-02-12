@@ -1,0 +1,19 @@
+---
+csp: worryfreewifimgr
+title: Max. Capture Storage 
+type: parm
+order: 30
+mx: "8.2"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Enable Packet Capture is set to "Enable"
+  name: MaxStorageSize
+  type: integer
+---
+
+Used to specify the maximum amount of device storage (in MB) used for storing packet capture files. 
+
+**Parm value input rules**: 
+
+* Integer from 1&ndash;1024 

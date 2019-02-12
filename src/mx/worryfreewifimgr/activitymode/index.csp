@@ -20,7 +20,7 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Background Activity
-      description: Performs analysis as a foregound task, visible to the device user. 
+      description: Performs analysis as a foreground task, visible to the device user. 
     - code: 0
       mx: "8.2"
       devicetype: A
@@ -28,4 +28,4 @@ parm:
       description: Performs analysis as a background task, invisible to device user. 
 ---
 
-Controls whether analysis activities are performed in the foreground and visible to the device user, or in the background.  
+Controls whether analysis activities are performed in the background or the foreground, where they are visible to the device user.  

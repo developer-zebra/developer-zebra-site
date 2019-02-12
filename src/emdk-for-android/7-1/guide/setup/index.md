@@ -40,7 +40,7 @@ The following instructions apply to Android Studio, which is required to use EMD
    c. In the left-hand pane **select "SDK Location"** (if not already selected).<br>
    d. Confirm that **"Use embedded JDK (recommended)" is checked**.
 3. **Install the EMDK Profile Manager plug-in**:<br>
-   a. In Android Studio, select **File -> Settings.**<br>
+   a. In **Android Studio -> Preferences.**<br>
    b. In the left-hand pane, **select "Plugins"** to bring up Plug-in settings.<br>
    c. **Enter "emdk" in the search box**:<br>
     •  If no result appears, skip to Step d.<br>

@@ -446,7 +446,7 @@ Error messages are logged for invalid actions and parameters
 	<td>decoder_code39_security_level</td>
 	<td>0 - Security Level 0<br>1 - Security Level 1<br>2 - Security Level 2<br>3 - Security Level 3</td>
   </tr>
-<!-- new here start CW -->
+
 <tr>
 	<td rowspan="2">decoder_dotcode</td>
 	<td rowspan="2">True<br>False</td>
@@ -458,7 +458,7 @@ Error messages are logged for invalid actions and parameters
     <td>decoder_dotcode_mirror</td>
 	<td>Disabled (0)<br>Enabled (1)<br>Auto (2)</td>
   </tr>
-<!-- new here end CW -->
+
   <tr>
 	<td>decoder_ean13</td>
 	<td>True<br>False</td>

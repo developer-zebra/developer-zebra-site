@@ -126,6 +126,17 @@ Single mode reads and decodes a single barcode at a time, and is the most common
 **Type**: [List &lt;byte [ ]&gt;]<br>
 **Contents**: Acquired raw (unmodified) data as an array list of byte arrays<br>
 **Example**: List_Item_1(array_1(byte11,byte12,byte13)),List_Item_2(array_2(byte21,byte22,byte23)) ...<br>
+**Sample code**: 
+
+	ArrayList<byte[]> rawData =  
+	     (ArrayList <byte[]>) initiatingIntent.getSerializableExtra("com.symbol.datawedge.decode_data"); 
+		 
+	if (rawData != null) 
+	{ 
+		byte[] rawBytes = rawData.get(0); 
+		for (int i = 0; i < rawBytes.length; i++) 
+			Log.d(LOG_TAG, i + ": " + rawBytes[i]); 
+	}
 
 -----
 

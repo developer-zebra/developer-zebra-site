@@ -2,13 +2,24 @@
 csp: worryfreewifimgr
 title: Perform Analysis (checkbox)
 type: parm
-order: 47
+order: 3
 mx: "8.3"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   name: UseAnalysis
-  type: boolean
+  type: list
+  list:
+    - code: 0
+      mx: "8.2"
+      devicetype: A
+      name: (unchecked)
+      description: Prevents configuration of additional analysis features on the device.
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "8.2"
+      description: Allows configuration of additional analysis features on the device.
 ---
 
-Check this box to enable configuration of additional analysis features on the device. 
+Controls access to configuration of additional analysis features on the device. 

@@ -24,6 +24,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
  * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
+* **DataWedge 7.2 -** Added new DotCode decoder support.
 
 ### Function Prototype
 
@@ -445,7 +446,19 @@ Error messages are logged for invalid actions and parameters
 	<td>decoder_code39_security_level</td>
 	<td>0 - Security Level 0<br>1 - Security Level 1<br>2 - Security Level 2<br>3 - Security Level 3</td>
   </tr>
+<!-- new here start CW -->
+<tr>
+	<td rowspan="2">decoder_dotcode</td>
+	<td rowspan="2">True<br>False</td>
+	<td>decoder_dotcode_inverse</td>
+	<td>Disabled (0)<br>Enabled (1)<br>Auto (2)</td>
+  </tr>
 
+  <tr>
+    <td>decoder_dotcode_mirror</td>
+	<td>Disabled (0)<br>Enabled (1)<br>Auto (2)</td>
+  </tr>
+<!-- new here end CW -->
   <tr>
 	<td>decoder_ean13</td>
 	<td>True<br>False</td>

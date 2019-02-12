@@ -194,57 +194,59 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table">Datamatrix<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#discrete2of5">Discrete 2of5</a></p></td>
-<td align="left" valign="top"><p class="table">Dutch Postal</p></td>
+<td align="left" valign="top"><p class="table"><a href="#dotcode">DotCode</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">Dutch Postal</p></td>
 <td align="left" valign="top"><p class="table"><a href="#ean8">EAN-8</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">GS1 DataBar</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">GS1 DataBar</p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar Expanded</p></td>
-<td align="left" valign="top"><p class="table"><a href="#gs1datamatrix">GS1 Datamatrix</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#gs1datamatrix">GS1 Datamatrix</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#gs1qrcode">GS1 QR Code</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#hanxin">HAN XIN</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#interleaved2of5">Interleaved 2of5</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#interleaved2of5">Interleaved 2of5</a></p></td>
 <td align="left" valign="top"><p class="table">Japanese Postal</p></td>
 <td align="left" valign="top"><p class="table"><a href="#korean3of5">Korean 3of5</a></p></td>
-<td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">MAILMARK</p></td>
 <td align="left" valign="top"><p class="table"><a href="#matrix2of5">Matrix 2of5</a></p></td>
-<td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#micropdf">MicroPDF</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">MicroQR</p></td>
-<td align="left" valign="top"><p class="table">MacroMicroPDF<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">MacroMicroPDF<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#msi">MSI</a></p></td>
 <td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
 </tr>
+<td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#trioptic39">Trioptic 39</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#trioptic39">Trioptic 39</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#usplanet">US Planet</a></p></td>
 <td align="left" valign="top"><p class="table">US Postal</p></td>
-<td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
-</tr>
-<td align="left" valign="top"><p class="table"><a href="#upce0">UPC-E0</a><sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">US4state FICS</p></td>
-<td align="left" valign="top"><p class="table"><a href="#upce1">UPC E1</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#upce0">UPC-E0</a><sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table">US4state FICS</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><a href="#upce1">UPC E1</a></p></td>
 <td align="left" valign="top"><p class="table">US4state</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
@@ -430,7 +432,19 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
 ------
+### DotCode
 
+**Inverse -** To specify the reflectance for decoding DotCode barcodes, set the option:
+ * **Disabled (0) -** To decode DotCode barcodes with normal reflectance only.
+ * **Enabled (1) -** To decode DotCode barcodes with inverse reflectance only.
+ * **Auto (2) -** To decode both normal and inverse reflectance DotCode barcodes (default).
+
+**Mirror -** To specify whether mirrored DotCode barcodes are decoded, set an option:
+ * **Disabled (0) -** To decode non-mirrored DotCode barcodes only.
+ * **Enabled (1) -** To decode mirrored DotCode barcodes only.
+ * **Auto (2) -** To decode both mirrored and non-mirrored DotCode barcodes (default).
+
+------
 ### Interleaved 2of5
 
 **Length1&#42; -** To decode an Interleaved 2of5 symbol with a specific length range, set this value to the lower limit. For example, to decode Interleaved 2of5 symbols containing between 4 and 12 characters, this value would be set to 4.
@@ -967,6 +981,8 @@ _**Note:** Same performance from Effort Level 1 to Effort Level 3._
 -->
 
 **Scanning Modes -** Used to select between Single (normal), UDI and Multi-barcode modes. UDI mode acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). Multi-barcode mode acquires from 2-10 barcodes with each scan as specified in the Multi-barcode params panel. **Default=5**.
+
+**Zoom -** Required for decoding DotCode - set Camera Zoom value to 2x. If Camera Zoom is set to any value other than 2x, it can negatively impact the decoding of specific DotCode barcodes. Parameter values: 1 - 8. **Default=1**.
 
 > See important notes below.
 

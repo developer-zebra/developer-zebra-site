@@ -28,7 +28,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 * ET5X   - Marshmallow
 * MC33   - Nougat, Oreo `NEW`
 * **PS20 - Oreo** `NEW`
-* TC20   - Nougat
+* TC20   - Nougat, **Oreo** (added Feb., 2019; no device refresh req'd)
 * TC25   - Nougat
 * TC51   - Marshmallow, Nougat, Oreo `NEW`
 * **TC52 - Oreo** `NEW`
@@ -57,7 +57,10 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ## New in v7.0
 
-> **Important**: Zebra now distributes the EMDK SDK through a JCenter repository, and the EMDK Profile Manager plug-in through the JetBrains plug-in repository. To install, see the [EMDK-A Setup guide](../setup).
+* **Important**: Zebra now distributes the EMDK SDK through a JCenter repository, and the EMDK Profile Manager plug-in through the JetBrains plug-in repository. To install, see the [EMDK-A Setup guide](../setup).
+
+####`UPDATE, FEB. 12 2019:` 
+**EMDK for Android 7.0 (and later) has been certified to support [Android Studio 3.3](https://developer.android.com/studio/)**, which was released to the stable channel on Feb. 5. 
 
 ### Device Support
 

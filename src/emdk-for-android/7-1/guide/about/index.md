@@ -19,19 +19,19 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 #### Mobile devices
 
-* MC33   - Nougat, Oreo
+* MC33 - Nougat, Oreo
 * PS20 - Oreo
-* TC20   - Nougat
-* TC25   - Nougat
-* TC51   - Nougat, Oreo
+* TC20 - Nougat, **Oreo** (added Feb., 2019; no device refresh req'd)
+* TC25 - Nougat
+* TC51 - Nougat, Oreo
 * TC52 - Oreo
-* TC56   - Nougat, Oreo
+* TC56 - Nougat, Oreo
 * TC57 - Oreo
-* TC70x  - Nougat, Oreo
+* TC70x - Nougat, Oreo
 * TC72 - Oreo
-* TC75x  - Nougat, Oreo
+* TC75x - Nougat, Oreo
 * TC77 - Oreo
-* VC80x  - Nougat, Oreo
+* VC80x - Nougat, Oreo
 * WT6000 - Nougat
 
 #### Scanners and imagers
@@ -50,7 +50,11 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ## New in v7.1
 
-Now supports Android Multi-user mode. See the [Multi-user Programming guide](../multiuser) for more information. 
+* Now supports Android Multi-user mode. See the [Multi-user Programming guide](../multiuser) for more information. 
+
+####`UPDATE, FEB. 12 2019:` 
+* **EMDK for Android 7.0 (and later) has been certified to support [Android Studio 3.3](https://developer.android.com/studio/)**, which was released to the stable channel on Feb. 5. 
+
 
 -----
 

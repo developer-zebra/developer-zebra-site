@@ -4,11 +4,22 @@ title: Packet Capture (checkbox)
 type: parm
 order: 46
 mx: "8.2"
-devicetype: A,B
+devicetype: A
 parm:
   pivotal: No
   name: UsePacketCapture
-  type: boolean
+  type: list
+  list:
+    - code: 0
+      mx: "8.2"
+      devicetype: A
+      name: (unchecked)
+      description: Prevents configuration of global settings on the device.
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "8.2"
+      description: Allows configuration of global settings on the device.
 ---
 
-Check this box to enable packet capture on the device. 
+Controls whether packets are captured on the device during an analysis session. If captured, packets are stored on the device in a file as specified in the PacketFileName parameter. 

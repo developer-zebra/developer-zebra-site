@@ -3,7 +3,7 @@ csp: worryfreewifimgr
 title: Session Name
 type: parm
 order: 15
-mx: "8.3"
+mx: "8.2"
 devicetype: A,B
 parm:
   pivotal: No

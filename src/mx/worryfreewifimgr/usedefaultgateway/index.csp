@@ -3,7 +3,7 @@ csp: worryfreewifimgr
 title: Default Gateway 
 type: parm
 order: 32
-mx: "8.3"
+mx: "8.2"
 devicetype: A
 parm:
   pivotal: No
@@ -12,20 +12,20 @@ parm:
   type: list
   list:
     - code: 2
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
     - code: 1
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: User Provided Remote Server Address
-      description: Enables a custom remote server to be used to collect data. 
+      description: Enables a custom remote server to be used to collect the analysis data. 
     - code: 0
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Use Default Gateway IP
       description: Uses the default gateway set by the device system. 
 ---
 
-Used to select the gateway through which communications will pass on the device. If selecting "User Provided Remote Server Address" (code 1), specify the address using the Gateway Server Address parameter. 
+Used to select the gateway through which communications will pass on the device. If selecting "User Provided Remote Server Address" (code 1), specify the address using the Remote Server Address parameter. 

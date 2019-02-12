@@ -3,7 +3,7 @@ csp: worryfreewifimgr
 title: Logger Report Level 
 type: parm
 order: 40
-mx: "8.3"
+mx: "8.2"
 devicetype: A
 parm:
   pivotal: No
@@ -12,22 +12,22 @@ parm:
   type: list
   list:
     - code: 3
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
     - code: 2
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Error
       description: Logs event information relating only to detected errors. 
     - code: 1
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Warning
       description: Logs event information relating to warnings and detected errors. 
     - code: 0
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Info
       description: Logs all event information. 

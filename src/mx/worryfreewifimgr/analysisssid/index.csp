@@ -3,7 +3,7 @@ csp: worryfreewifimgr
 title: Analysis SSID
 type: parm
 order: 28
-mx: "8.3"
+mx: "8.2"
 devicetype: A,B
 parm:
   pivotal: No

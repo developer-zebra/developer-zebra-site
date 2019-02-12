@@ -3,7 +3,7 @@ csp: worryfreewifimgr
 title: Action 
 type: parm
 order: 4
-mx: "8.3"
+mx: "8.2"
 devicetype: A
 parm:
   pivotal: No
@@ -12,27 +12,27 @@ parm:
   type: list
   list:
     - code: 4
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
     - code: 3
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Export
       description: Exports the current Worry Free Wi-Fi configuration to a file in the device file system.
     - code: 2
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Clear
       description: Discards any data accumulated from the current Worry Free Wi-Fi analysis session. 
     - code: 1
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Stop
       description: Terminates the current Worry Free Wi-Fi analysis session. 
     - code: 0
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Start
       description: Starts a new Worry Free Wi-Fi analysis session, terminating any session previously in progress. 

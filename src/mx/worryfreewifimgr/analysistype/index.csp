@@ -3,7 +3,7 @@ csp: worryfreewifimgr
 title: Analysis Type 
 type: parm
 order: 8
-mx: "8.3"
+mx: "8.2"
 devicetype: A
 parm:
   pivotal: No
@@ -11,17 +11,17 @@ parm:
   type: list
   list:
     - code: 2
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
     - code: 1
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Voice
       description: Analyzes voice communications on the device. 
     - code: 0
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Roam
       description: Analyzes Wi-Fi roaming operations on the device. 

@@ -3,7 +3,7 @@ csp: worryfreewifimgr
 title: Activity Mode 
 type: parm
 order: 10
-mx: "8.3"
+mx: "8.2"
 devicetype: A
 parm:
   pivotal: No
@@ -12,17 +12,17 @@ parm:
   type: list
   list:
     - code: 2
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
     - code: 1
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Background Activity
       description: Performs analysis as a foregound task, visible to the device user. 
     - code: 0
-      mx: "8.3"
+      mx: "8.2"
       devicetype: A
       name: Foreground Activity
       description: Performs analysis as a background task, invisible to device user. 

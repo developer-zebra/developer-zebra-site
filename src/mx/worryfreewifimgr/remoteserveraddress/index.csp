@@ -3,7 +3,7 @@ csp: worryfreewifimgr
 title: Remote Server Address
 type: parm
 order: 30
-mx: "8.3"
+mx: "8.2"
 devicetype: A,B
 parm:
   pivotal: No
@@ -12,8 +12,8 @@ parm:
   type: string
 ---
 
-Used to specify the URL of a custom remote gateway if other than that stored in the PI settings of the device. 
+Used to specify the address of a user-provided remote gateway other than that stored in the IP settings of the device. 
 
 **Parm value input rules**: 
 
-* String from 1&ndash;32 characters containing a valid IP address or URL
+* String from 1&ndash;32 characters containing a valid IP address

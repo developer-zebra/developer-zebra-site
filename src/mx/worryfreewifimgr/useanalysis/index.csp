@@ -1,6 +1,6 @@
 ---
 csp: worryfreewifimgr
-title: Perform Analysis (checkbox)
+title: Configure Analysis Settings (checkbox)
 type: parm
 order: 3
 mx: "8.3"
@@ -14,12 +14,12 @@ parm:
       mx: "8.2"
       devicetype: A
       name: (unchecked)
-      description: Prevents configuration of additional analysis features on the device.
+      description: Prevents configuration of additional analysis settings on the device.
     - code: 1
       devicetype: A
       name: (checked)
       mx: "8.2"
-      description: Allows configuration of additional analysis features on the device.
+      description: Allows configuration of additional analysis settings on the device.
 ---
 
-Controls access to configuration of additional analysis features on the device. 
+Controls access to configuration of additional analysis settings on the device. 

@@ -7,6 +7,7 @@ mx: "8.3"
 devicetype: A
 parm:
   pivotal: No
+  presentif: Activate is set to "Turn On" and Use Analysis box is "checked" 
   name: UseDefaultGateway
   type: list
   list:
@@ -19,18 +20,12 @@ parm:
       mx: "8.3"
       devicetype: A
       name: User Provided Remote Server Address
-      description: Enables voice analysis on the device. 
+      description: Enables a custom remote server to be used to collect data. 
     - code: 0
       mx: "8.3"
       devicetype: A
       name: Use Default Gateway IP
-      description: Enables roam analysis on the device. 
+      description: Uses the default gateway set by the device system. 
 ---
 
-Used to select the gateway through which communications will pass on the device. If selecting "User Provided Remote Server Address" (code 1), specify the address using the 
-
-This Managed Configuration allows an Administrator using an EMM to configure the Type of Remote Gateway for an Analysis Session started for the Worry Free WiFi feature and should be specified only if the value Start is specified for the Managed Configuration Worry Free WiFi Configuration - Action. 
-
-If the value Default is chosen, then the Default Remote Gateway will be used. 
-
-If the value Custom is chosen, then a custom Remote Gateway will be used and the additional Managed Configuration Worry Free WiFi Configuration - Action Start Remote Gateway Type Custom Server Address MUST also be specified to supply the desired custom Gateway Server Address. 
+Used to select the gateway through which communications will pass on the device. If selecting "User Provided Remote Server Address" (code 1), specify the address using the Gateway Server Address parameter. 

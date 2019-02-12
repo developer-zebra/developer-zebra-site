@@ -7,6 +7,7 @@ mx: "8.3"
 devicetype: A
 parm:
   pivotal: No
+  presentif: Activate is set to "Turn On" and Use Analysis box is "checked" 
   name: Action
   type: list
   list:
@@ -37,10 +38,7 @@ parm:
       description: Starts a new Worry Free Wi-Fi analysis session, terminating any session previously in progress. 
 ---
 
-Used to select the Action to perform on the device. 
-
-####NOTE
-Actions might require configuration of one or more of these parameters:
+Used to select the Action to perform on the device. **Note**: Actions might require configuration of one or more of the following parameters:
 * **Server Analytics**
 * **Activity Mode**
 * **Analysis SSID**

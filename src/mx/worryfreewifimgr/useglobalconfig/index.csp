@@ -8,7 +8,18 @@ devicetype: A,B
 parm:
   pivotal: No
   name: UseGlobalConfig
-  type: boolean
+  type: list
+  list:
+    - code: 0
+      mx: "8.2"
+      devicetype: A
+      name: (unchecked)
+      description: Prevents configuration of global settings on the device.
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "8.2"
+      description: Allows configuration of global settings on the device.
 ---
 
-Check this box to apply settings to all configurations on the device. 
+Controls access to configuration of global settings on the device, which are password and end-user control of  configuration of data analysis settings.

@@ -5,7 +5,9 @@ type: parm
 order: 5
 mx: "4.3"
 osx: "4.3"
+end-osx: "8.0"
 devicetype: A
+info: The Power-key menu is not configurable on Nougat devices using this parameter.  
 parm:
   pivotal: No
   name: AirplaneMode
@@ -14,6 +16,7 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "4.3"
+      end-osx: "8.0"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the device; any previously selected setting is retained.
@@ -22,13 +25,15 @@ parm:
       name: Enable
       mx: "4.3"
       osx: "4.3"
-      description: Allows the device user to determine whether "Airplane Mode" is accessible from the Android Settings panel and Quick Settings menu.
+      end-osx: "8.0"
+      description: Allows the device user to determine whether "Airplane Mode" is accessible from the Android Settings and Quick Settings panels and the Power-key menu (on some devices).
     - code: 2
       devicetype: A
       name: Disable
       mx: "4.3"
       osx: "4.3"
-      description: Prevents the device user from controlling whether "Airplane Mode" is accessible from the Android Settings panel and Quick Settings Key menu.
+      end-osx: "8.0"
+      description: Prevents the device user from controlling whether "Airplane Mode" is accessible from the Android Settings and Quick Settings panels and the Power-key menu (on some devices).
 ---
 
-Controls whether the device user can determine whether "Airplane Mode" is accessible from the Android Settings panel and Quick Settings menu. Also see the for controlling Airplane mode from the Power-off Key menu.
+Controls whether the device user can access "Airplane Mode" from the Android Settings and Quick Settings panels, and from the Power-key menu on devices running Android 5.x Marshmalow and older. **Also see the Settings Manager** for controlling Airplane mode from the Power-key menu. **Airplane Mode is discontinued on devices running Android 8.0 Oreo and later**. 

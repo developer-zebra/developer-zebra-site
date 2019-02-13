@@ -16,5 +16,5 @@ Used to specify one or more apps (by Package Name) to be removed from the Doze M
 
 **Input value rules**: 
 
-* String containing one or more Package Names 
+* String containing one or more Package Names. For example: `com.mycompany.mypackage`.
 * Separate multiple names with commas

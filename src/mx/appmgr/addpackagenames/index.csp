@@ -12,11 +12,13 @@ parm:
   type: string
 ---
 
-Used to specify one or more apps (by Package Name) to be added to the Doze Mode "exemption whitelist." While running, apps on this list prevent the device from entering power saving modes. To specify multiple Package Names, separate with commas. Package Name(s) must be specified exactly, and can be acquired from the application developer, by extracting the Package Name from the .apk file or by identifying it in the device. Doze Mode is controlled using the [Power Manager CSP](/mx/powermgr). 
+> **DO NOT USE THIS PARAMETER if the desired behavior is to <u>ALLOW</u> Doze Mode**. On devices running Nougat, all apps by default allow the device to enter Doze Mode to maximize battery life. 
 
-> **Important: If a name is specified incorrectly in a list, all names following that name are ignored**. 
+Used to specify one or more apps (by Package Name) to be added to the Doze Mode "exemption whitelist." While running, **apps on this list <u>prevent</u> the device from entering power saving modes**. To specify multiple Package Names, separate with commas. Package Name(s) must be specified exactly, and can be acquired from the application developer, by extracting the Package Name from the .apk file or by identifying it in the device. Doze Mode is controlled using the [Power Manager CSP](/mx/powermgr). 
 
 **Input value rules**: 
 
 * String containing one or more Package Names. For example: `com.mycompany.mypackage`.
 * Separate multiple names with commas
+> `**Important:` If a name is specified incorrectly in a list, all names following that name are ignored**. 
+

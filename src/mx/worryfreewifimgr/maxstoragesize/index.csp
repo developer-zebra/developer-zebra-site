@@ -1,6 +1,6 @@
 ---
 csp: worryfreewifimgr
-title: Max. Capture Storage 
+title: Maximum Storage for Capture 
 type: parm
 order: 30
 mx: "8.2"
@@ -12,7 +12,7 @@ parm:
   type: integer
 ---
 
-Used to specify the maximum amount of device storage (in MB) used for storing packet capture files. 
+Used to specify the maximum device storage (in MB) to use for packet capture files. When the maximum is reached, previously saved capture files are deleted, beginning with the oldest.
 
 **Parm value input rules**: 
 

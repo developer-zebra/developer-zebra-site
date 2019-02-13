@@ -326,7 +326,7 @@ In the EHS version localized for Simplified Chinese, the default `enterprisehome
 <b>Possible values (URLs)</b>
 
 * Label: string
-* Package: URL (http://, https:// or file://*.html)
+* Package: URL (http://, https:// or file://&#42;.html)
 
 ####Sample XML (for web link)
 
@@ -337,6 +337,8 @@ In the EHS version localized for Simplified Chinese, the default `enterprisehome
     </applications>
 
 In the example above, the package and activity attributes are used to launch the URL in the Mozilla Mobile browser. If the specified app (as defined in the package and activity parameters) is not present on the device, the URL will not be displayed. If no activity is specified, EHS will launch the link using the default browser. 
+
+**`OREO NOTE:`** EHS can **<u>NOT</u>** launch links that reference local files though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and newer). 
 
 #### Link Removal
 To remove a web link from the User Mode screen: 

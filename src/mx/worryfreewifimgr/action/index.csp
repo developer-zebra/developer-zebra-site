@@ -20,7 +20,7 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Export
-      description: Exports the current Worry Free Wi-Fi configuration to a file in the device file system.
+      description: Exports data collected during the current Worry Free Wi-Fi analysis session to a file in the device file system.
     - code: 2
       mx: "8.2"
       devicetype: A
@@ -45,6 +45,6 @@ Used to select the Action to perform on the device. **Note**: Actions might requ
 * **Session Name**
 * **Logger Report Level**
 * **Ping Type**
-* **Remote Gateway 
+* **Remote Gateway**
 * **Custom Server Address**
 * **SD Card Storage**

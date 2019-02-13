@@ -1,6 +1,6 @@
 ---
 csp: worryfreewifimgr
-title: Packet Capture (checkbox)
+title: Configure Capture Options (checkbox)
 type: parm
 order: 46
 mx: "8.2"
@@ -14,12 +14,12 @@ parm:
       mx: "8.2"
       devicetype: A
       name: (unchecked)
-      description: Prevents packet capture on the device.
+      description: Prevents configuration of packet capture options.
     - code: 1
       devicetype: A
       name: (checked)
       mx: "8.2"
-      description: Allows packet capture on the device.
+      description: Allows configuration of packet capture options.
 ---
 
-Controls whether packets are captured on the device during an analysis session. If captured, packets are stored on the device in a file as specified in the PacketFileName parameter. 
+Controls whether packet capture options can be configured on the device. 

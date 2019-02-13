@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Packet File Name
 type: parm
-order: 25
+order: 52
 mx: "8.2"
 devicetype: A
 parm:

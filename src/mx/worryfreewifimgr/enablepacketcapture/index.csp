@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Packet Capture Enable/Disable 
 type: parm
-order: 22
+order: 50
 mx: "8.2"
 devicetype: A
 parm:
@@ -27,4 +27,4 @@ parm:
       description: Disables packet capture on the device. 
 ---
 
-Controls whether packets are captured on the device, which can be exported and used for troubleshooting. **Caution**: Packet capture can cause slow performance and excess battery drain. 
+Controls whether packets are captured on the device, which can be exported and used for troubleshooting. If captured, packets are stored on the device in a file as specified in the PacketFileName parameter. **Caution**: Packet capture can cause slow performance and excess battery drain. 

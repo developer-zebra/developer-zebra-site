@@ -1,6 +1,6 @@
 ---
 title: Worry Free Wi-Fi Manager
-description: "Worry Free Wi-Fi is an on-device analysis tool for troubleshooting and optomizing Wi-Fi operations on the device."
+description: "Worry Free Wi-Fi is an on-device analysis tool for troubleshooting and/or optomizing Wi-Fi operations on the device."
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

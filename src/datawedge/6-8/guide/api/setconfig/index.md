@@ -1349,6 +1349,10 @@ Command and configuration intent parameters determine whether to send result cod
 </tr>
 <tr class="c17"><td class="c4" colspan="1" rowspan="1"><p class="c8"><span class="c0">decoder_usplanet_report_check_digit</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c8"><span class="c0">false</span></p><p class="c8"><span class="c0">true</span></p><p class="c1 c7"><span class="c0"></span></p></td>
 </tr>
+
+<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">keep_pairing_info_after_reboot</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Enable/disable automatic re-connection to the connected Bluetooth scanner after device reboot. Applies only to connected Bluetooth scanners:</span></p><p class="c8"><span class="c0">0 - Disable</span></p><p class="c1"><span class="c0">1 - Enable</span></p></td>
+</tr>
+
 </tbody>
 </table>
 

@@ -982,9 +982,11 @@ _**Note:** Same performance from Effort Level 1 to Effort Level 3._
 
 **Scanning Modes -** Used to select between Single (normal), UDI and Multi-barcode modes. UDI mode acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). Multi-barcode mode acquires from 2-10 barcodes with each scan as specified in the Multi-barcode params panel. **Default=5**.
 
-**Zoom -** Required for decoding DotCode - set Camera Zoom value to 2x. If Camera Zoom is set to any value other than 2x, it can negatively impact the decoding of specific DotCode barcodes. Parameter values: 1 - 8. **Default=1**.
+**Zoom -** Required for decoding DotCode. User needs to set Camera Zoom value to 2x. If Camera Zoom is set to any value other than 2x, it can negatively impact the decoding of specific DotCode barcodes. Parameter values: 1 - 8. **Default=1**.
 
-> See important notes below.
+**Keep Pairing Info After Reboot -** Enable/disable automatic re-connection to the connected Bluetooth scanner after device reboot. Applies only to connected Bluetooth scanners.
+
+> See **Important** notes below.
 
 ------
 

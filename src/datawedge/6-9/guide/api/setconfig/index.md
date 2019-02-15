@@ -1122,6 +1122,11 @@ Other Scanner Input Parameters:
 	<td>True<br>False</td>
   </tr>
 
+  <tr>
+	<td>keep_pairing_info_after_reboot</td>
+	<td>Enable/disable automatic re-connection to the connected Bluetooth scanner after device reboot. Applies only to connected Bluetooth scanners: <br><br>0 - Disable<br>1 - Enable</td>
+  </tr>
+
 </table>
 
 

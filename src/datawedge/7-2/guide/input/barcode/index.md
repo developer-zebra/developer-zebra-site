@@ -969,7 +969,6 @@ _**Note:** Same performance from Effort Level 1 to Effort Level 3._
 
 **Same Symbol Timeout -** Used to prevent the scanner from decoding the same symbol within a specified time interval (applicable only when Aim Type is set to Continuous Read). A value of 0 indicates that no interval is required between two successive reads.
 
-<!--
 **Digimarc Decoding -** Used to enable/disable support for Digimarc, which encodes and invisibly integrates traditional barcode data onto product packaging. **Supported with internal imager only**. Enabled by default. [More about Digimarc](https://www.digimarc.com/). 
 
 
@@ -978,7 +977,6 @@ _**Note:** Same performance from Effort Level 1 to Effort Level 3._
 * **Viewfinder Enabled -** Enables only the viewfinder.
 
 * **Static Reticle -** Enables the viewfinder and a red reticle (cross-hairs) in the center of the screen to aid in positioning the barcode for scanning. **This parameter is supported only when the Camera is used for scanning**.
--->
 
 **Scanning Modes -** Used to select between Single (normal), UDI and Multi-barcode modes. UDI mode acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). Multi-barcode mode acquires from 2-10 barcodes with each scan as specified in the Multi-barcode params panel. **Default=5**.
 

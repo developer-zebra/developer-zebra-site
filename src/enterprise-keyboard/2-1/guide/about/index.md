@@ -37,32 +37,16 @@ This version of Enterprise Keyboard includes the following languages:
 
 -----
 
-## New in v2.0
+## New in v2.1
 
 ### Supported Devices
 
-<u>EKB 2.0 comes pre-installed</u> on the following Zebra **devices running Android 8.x Oreo**: 
+<u>EKB 2.1 comes pre-installed</u> on the following Zebra **devices running Android 8.x Oreo**: 
 
-* **MC33**
-* **PS20**
-* **TC51**
-* **TC51 Healthcare**
-* **TC52**
-* **TC56**
-* **TC56 Healthcare**
-* **TC57**
-* **TC70x**
-* **TC72**
-* **TC75x**
-* **TC77**
-* **VC80x**
-
-See all [supported Zebra devices](../../download). 
-
-### Added Features
-
-* **Escape key support -** allows the ESC key to be remapped to an ASCII or Unicode character or to an EMOJI symbol or to function normally. [About key remapping](../settings/#remappingkeys).
-* **[Multi-user Mode](../setup/#multiusermode) -** supports deployment of Primary and Secondary Users, the latter of which are blocked from making EKB settings changes on the device. **Supported only on SDM660-platform devices running Android 8.x Oreo**.
+* **CC605**
+* **CC610**
+* **MC93**
+* **TC8200**
 
 -----
 
@@ -119,6 +103,33 @@ _Stock Android keyboard_:
 -----
 
 ## Version History
+
+### Added in v2.0
+
+#### Supported Devices
+
+<u>EKB 2.0 comes pre-installed</u> on the following Zebra **devices running Android 8.x Oreo**: 
+
+* **MC33**
+* **PS20**
+* **TC51**
+* **TC51 Healthcare**
+* **TC52**
+* **TC56**
+* **TC56 Healthcare**
+* **TC57**
+* **TC70x**
+* **TC72**
+* **TC75x**
+* **TC77**
+* **VC80x**
+
+See all [supported Zebra devices](../../download). 
+
+#### Added Features
+
+* **Escape key support -** allows the ESC key to be remapped to an ASCII or Unicode character or to an EMOJI symbol or to function normally. [About key remapping](../settings/#remappingkeys).
+* **[Multi-user Mode](../setup/#multiusermode) -** supports deployment of Primary and Secondary Users, the latter of which are blocked from making EKB settings changes on the device. **Supported only on SDM660-platform devices running Android 8.x Oreo**.
 
 ### Changes in v1.9
 

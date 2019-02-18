@@ -205,6 +205,7 @@ Steps for client installation on the device, which may be performed either manua
 
 ###Client Configuration
 Configure the client settings either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
+> WiFi sleep policy "Keep Wi-Fi on during sleep" must be set to "Always" on Android Marshmallow devices for Device Tracker to work in Doze mode. By default it is set to "Never".
 
 ####Manual Configuration
 Steps for manual client configuration after installation:

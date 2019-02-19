@@ -14,7 +14,7 @@ osx: "3.4"
 
 ---
 
-Used to specify Signatures be add to the "white" list. 
+Used to specify Signatures be add to the "whitelist." 
 
 **Parm value input rules**: 
 

@@ -195,7 +195,7 @@ E. Click the Scan button. A successful result returns green checks for each step
 _Figure 8. SSLTools.com results_
 
 ##Client Install & Setup
-Install Device Tracker client on the supported Zebra device to register the device and transmit data to the server. Client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management). 
+Install Device Tracker client on the supported Zebra device to register the device and transmit data to the server. Client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management) system. 
 
 ###Client Installation
 Steps for client installation on the device, which may be performed either manually or with an EMM (Enterprise Mobile Management):
@@ -228,7 +228,7 @@ After client installation, follow these steps to remotely configure the client:
 3. Configure Device Tracker settings with CSP
 4. Start Device Tracker Service
 
-When using StageNow or any Enterprise Mobility Management (EMM) system for remote configuration, use of the following special characters is not supported (for example, when setting the password): <br>
+When using StageNow or any EMM system for remote configuration, use of the following special characters is not supported (for example, when setting the password): <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt; (less than) <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &gt; (greater than) <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#38; (ampersand) <br>

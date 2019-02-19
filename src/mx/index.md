@@ -10,7 +10,7 @@ menu:
       url: /mx/compatibility
     - title: Choosing an MX Version
       url: /mx/choosing-a-version
-    - title: Show Device MX Version
+    - title: Show Device MX/OSX Version
       url: /mx/mx-version-on-device
     - icon: fa fa-search
       url: /mx/search

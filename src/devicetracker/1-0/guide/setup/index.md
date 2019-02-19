@@ -121,7 +121,54 @@ Supported Devices (including GSM and non-GMS versions):
 ##Server Install & Setup
 Install Device Tracker server on the supported system that meets the specified requirements. Download Device Tracker server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
+###Server Prerequisites
+The following are the prerequisites required for the server: <br>
+1. **DNS (Domain Name Server) Setup.** Device Tracker server runs in a domain, for example _name.company.com_. To run Device Tracker, an entry in the DNS server is required to add the server IP address. The DNS server and Device Tracker server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
+
+2. **Certificate Generation and CSR (Certificate Signing Request) Signing from CA** <br>
+A. Download [OpenSSL](https://www.openssl.org/source/) for Windows. Follow the instructions stated to download the file based on your Windows configuration.<br>
+B. Install the downloaded OpenSSL EXE/MSI.<br>
+C. Add a new "openSSL" environment variable to the Windows system and set the value to the location where openSSL is installed (e.g. "C:\Program Files\OpenSSL-Win64\bin\").<br>
+D. Create a folder named "CSR_Request".  Open the command prompt to this folder path.<br>
+E. Run the following command to generate a private key and CSR file: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL req -newkey rsa:2048 -nodes -keyout zdvc_private_key.key -out zdvc_cert_sign_req.csr`<br>
+Where "zdvc_cert_sign_req.csr" and "zdvc_private_key.key" can be replaced with custom file names.<br>
+F. Enter in the required fields when prompted:
+   * **Country Name** - Enter the two-letter code without punctuation for country, for example: US or CA.
+   * **State or Province** - Enter the full state or province name without abbreviation, for example: California.
+   * **Locality or City** - Enter the city or town name without abbreviation, for example: Berkeley or Saint Louis.
+   * **Company** - Enter the company. If the company or department contains a special characteres such as "&" or "@" the symbol must be spelled out or omitted in order to enroll successfully. 
+   * **Organizational Unit** - Enter the name of the department or organization unit making the request. This is optional, to skip, press Enter on the keyboard.
+   * **Common Name** - Enter the Host and Domain Name, following the same format as these examplese: "www.zebra.com" or "zebra.com".
+Note: Symantec certificates can only be used on web servers using the Common Name specified during enrollment. For example,
+a certificate for the domain "zebra.com" will receive a warning if accessing a site named "www.zebra.com" or "secure.zebra.com" since "www.zebra.com" and "secure.zebra.com" are different from "zebra.com."
+G. Enter the challenge password when prompted. _This is the password needed when generating the certificate in .pfx format._
+H. A .csr file is created in the "CSR_Request" folder. Submit this file to the CA to have it signed.
+I. Obtain the certificate bundle from the CA in .pkcs format and certificate in .p7b format (which includes the public key).
+
+3. **Generate .PFX Server Certificate.** An SSL certificate is required for secured connections. Zebra recommends the certificate to be procured in .p7b format and the certificate private key to be a .key file. If the certificates are in different format, use a SSL certificate converter tool to convert to the proper format. <br>
+A. Create an empty directory named "generated_certs" to contain the .pfx certificate.<br>
+B. Copy the following certificate files to "generated_certs" folder: primary certificate (e.g. "ssl_certificate.p7b"), private key (e.g. "ppc_private_key.key"), and intermediate CA certificate (e.g. "IntermediateCA.cer").  _The intermediate CA certificate is optional - use if required in the certificate chain._  <br>
+C. Open a command prompt. Execute the following command to generate "ssl_certificate.cer":<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs7 -print_certs -in ssl_certificate.p7b -out ssl_certificate.cer`
+<br>
+D. At the command prompt, execute the following command:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs12 -export -in ssl_certificate.cer -inkey ppc_private_key.key -out ssl_certificate.pfx -certfile IntermediateCA.cer`
+	<br>
+	Where "-certfile IntermediateCA.cer" is optional.
+<br>
+E. When prompted, enter the certificate password to export "ssl_certificate.pfx". This is the challenge password specified in step 2.G. above.<br>
+F. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to a designated folder.
+<br>
+
+4. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. These are the UI and backend server ports specified during the server install. The method to open the ports depends on the firewall software used by the network administrator. The ports are specified during the server install. Sample ports:   
+
+	* Inbound ports: TCP ports 8080 and 8443
+	* Outbound port: TCP port 8080
+<br>
+
 ###Server Installation
+Server Installation steps: <br>
 1. Double-click on the .EXE to launch the installer.
 2. At the initial window, click Next.
 ![img](DTRK_Install_1.JPG)
@@ -154,38 +201,13 @@ _Figure 6. Installation - review settings_
 _Figure 7. Installation - complete_
 
 ###Server Setup
-1. **DNS (Domain Name Server) Setup.** Device Tracker server runs in a domain, for example _name.company.com_. To run Device Tracker, an entry in the DNS server is required to add the server IP address. The DNS server and Device Tracker server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
-
-2. **Server SSL Certificate.** An SSL certificate is required for secured connections. 
-Steps to generate the certificate:<br>
-A. Zebra recommends the certificate to be procured in .p7b format and the certificate private key to be a .key file. If the certificates are in different format, use a SSL certificate converter tool to convert to the proper format.<br>
-B. Download [OpenSSL](https://www.openssl.org/source/) tool and install on the server.<br>
-C. Create an empty directory named "generated_certs" to contain the .pfx certificate.<br>
-D. Copy the following certificate files to "generated_certs" folder: primary certificate (e.g. "ssl_certificate.p7b"), private key (e.g. "ppc_private_key.key"), and intermediate CA certificate (e.g. "IntermediateCA.cer").  _The intermediate CA certificate is optional - use if required in the certificate chain._  <br>
-E. Open a command prompt. Execute the following command to generate "ssl_certificate.cer":<br>
- 		`openssl pkcs7 -print_certs -in ssl_certificate.p7b -out ssl_certificate.cer`
-<br>
-F. At the command prompt, execute the following command:<br>
-		`openssl pkcs12 -export -in ssl_certificate.cer -inkey ppc_private_key.key -out ssl_certificate.pfx -certfile IntermediateCA.cer`
-	<br>
-	Where "-certfile IntermediateCA.cer" is optional.
-<br>
-G. When prompted, enter the certificate password to export "ssl_certificate.pfx".<br>
-H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to a designated folder.
-<br>
-
-3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. These are the UI and backend server ports specified during the server install. The method to open the ports depends on the firewall software used by the network administrator. The ports are specified during the server install. Sample ports:   
-
-	* Inbound ports: TCP ports 8080 and 8443
-	* Outbound port: TCP port 8080
-<br>
-4. **Run the Device Tracker Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/zdvc**
+Steps for server setup after installation: <br>
+1. **Run the Device Tracker Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/zdvc**
 
 	Where "name.company.com:8443" is replaced with the appropriate domain and port number.
 
 As part of Zebra's DNA Visibility Console, the server consists of multiple solution offerings. Select "Device Tracker" then login.
-
-5. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
+2. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
 A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
 B. Enter the Web UI URL, for example `https://name.company.com:8443/zdvc`<br>
 C. Click the Scan button. A successful result returns green checks for each step. _See Figure 8 below._ <br>

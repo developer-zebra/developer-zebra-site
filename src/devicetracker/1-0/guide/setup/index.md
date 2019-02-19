@@ -228,7 +228,7 @@ After client installation, follow these steps to remotely configure the client:
 3. Configure Device Tracker settings with CSP
 4. Start Device Tracker Service
 
-When using StageNow for remote configuration, use of the following special characters is not supported (for example, when setting the password): <br>
+When using StageNow or any Enterprise Mobility Management (EMM) system for remote configuration, use of the following special characters is not supported (for example, when setting the password): <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt; (less than) <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &gt; (greater than) <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#38; (ampersand) <br>

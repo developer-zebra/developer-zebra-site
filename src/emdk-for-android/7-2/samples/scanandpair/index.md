@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Scan and Pair
-description: Shows how the Scan and Pair API is used to programmatically pair Bluetooth devices.
+description: Shows how the Scan and Pair API is used to pair Bluetooth devices programmatically.
 downloads:
   - title: Sample Projects
     url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'

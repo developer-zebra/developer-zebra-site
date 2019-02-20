@@ -78,7 +78,7 @@ automenu:
           url: /emdk-for-android/7-2/tutorial/tutAdvancedScanningAPI
         - title: Using Bluetooth Scanners
           url: /emdk-for-android/7-2/tutorial/tutBluetoothScannerAPI
-        - title: Pair Remote Device by Scanning its Bluetooth Name/Address
+        - title: Bluetooth Scan and Pair
           url: /emdk-for-android/7-2/tutorial/tutScanAndPairAPI
         - title: Capture critical data from documents using SimulScan API
           url: /emdk-for-android/7-2/tutorial/tutSimulScanAPI

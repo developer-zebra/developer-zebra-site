@@ -1,5 +1,5 @@
 ---
-title: Pairing Bluetooth devices with ScanAndPair APIs
+title: Bluetooth Scan and Pair APIs
 layout: guide.html
 product: EMDK For Android
 productversion: '7.2'
@@ -7,18 +7,17 @@ productversion: '7.2'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use [ScanAndPair APIs](/emdk-for-android/7-2/api/scanandpair) introduced in EMDK V 3.1, to perform pairing of any remote Scanning device by Scanning its Bluetooth Name or Bluetooth Address. The API uses [Scan and Pair Manager](/emdk-for-android/7-2/api/scanandpair/ScanAndPairManager), which is the primary object that allows pairing with remote scanning devices.
+This guide will walks through the creation of an EMDK For Android application using ScanAndPair APIs introduced in EMDK 3.1, to perform pairing of any remote scanning device by scanning its Bluetooth name or address. The API uses [Scan and Pair Manager](/emdk-for-android/7-2/api/scanandpair/ScanAndPairManager), the primary object that allows pairing with remote scanning devices. 
 
-In this tutorial, we will explore the [ScanAndPair APIs](/emdk-for-android/7-2/api/scanandpair) by using it for developing a basic application that will scan Bluetooth Name/Address of a Remote Scanning device (Ex. [MC40](https://www.zebra.com/content/dam/msi-new/assets/web/Business/Products/Mobile%20Computers/Handheld%20Computers/MC40/_Documents/Static_Files/MC40_Specifications.pdf)) and pair itself with this device through bluetooth name or address scanned by discovering it.
+This tutorial uses the [ScanAndPair APIs](/emdk-for-android/7-2/api/scanandpair) to develop a basic application that scans Bluetooth Name/Address of a remote scanning device and pairs with this device through a Bluetooth name or address scanned by discovering it.
 
-> Note: The [ScanAndPair API](/emdk-for-android/7-2/api/scanandpair) does not use Profile Wizard to scan and pair remote device and everything needs to be configured programmatically through code.   
-        
+
+> **NOTES**:<br>The ScanAndPair API does not use Profile Wizard to scan and pair a remote device; all device interaction and configuration must be done programmatically.<br><br> 
+Names are case-sensitive.
 
 ## Creating The Project
 
-> Note: Provide "ScanAndPairTutorial" as the project name for this tutorial.
-
-Start by creating a new Android Studio [project](/emdk-for-android/7-2/tutorial/tutCreateProjectAndroidStudio).
+Start by creating a new Android Studio [project](/emdk-for-android/7-2/tutorial/tutCreateProjectAndroidStudio) and **Enter "ScanAndPairTutorial" as the project name**.
 
 
 ## Enabling Android Permissions
@@ -50,9 +49,9 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-2/tutorial/
 		import com.symbol.emdk.scanandpair.ScanAndPairManager;
 		import com.symbol.emdk.scanandpair.StatusData;  
 
-    Then you must make the activity to implement [EMDKListener](/emdk-for-android/7-2/api/core/EMDKManager-EMDKListener). 
+    Then you must make the activity to implement `EMDKListener`. 
 
-    After that you also need to implement [ScanAndPairManager.StatusListener](/emdk-for-android/7-2/api/scanandpair/ScanAndPairManager-StatusListener), which is an interface for informing client applications to notify Scan and Pair or Scan and Unpair events. Override its `onStatus` function. The `onStatus` is a callback method that would be called when a scan and pair or unpair status event occurs. 
+    After that you also need to implement `ScanAndPairManager.StatusListener`, which is an interface for informing client applications to notify Scan and Pair or Scan and Unpair events. Override its `onStatus` function. The `onStatus` is a callback method that would be called when a scan and pair or unpair status event occurs. 
 
     
         :::java
@@ -380,7 +379,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-2/tutorial/
 
 	![img](../../images/ScanAndPairTutorialImages/always_scan_check_box_listener.jpg)
 
-7. You can still see one error. So lets add `registerForButtonEvents` method to get rid of this error. `registerForButtonEvents` method contains onClick listener method calls of both "Pair" and "Unpair" buttons.
+7. You can still see one error. So lets add `registerForButtonEvents` method to get rid of this error. `registerForButtonEvents` method contains `onClicklistener` method calls of both "Pair" and "Unpair" buttons.
 
 		:::java
 		// Method that calls onClick listener methods for Pair and Unpair buttons.
@@ -395,7 +394,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-2/tutorial/
 
 8. This is the most important part of this tutorial as these two methods would allow you to pair and unpair this client application with Remote Scanning device (Ex. MC40). Lets add these two methods starting with `addScanAndPairButtonEvents`.
 
-	First get the `scanAndPairButton` reference, set the onClickListener and override `onClick` method.
+	First get the `scanAndPairButton` reference, set the `onClickListener` and override `onClick` method.
 
 	![img](../../images/ScanAndPairTutorialImages/on_click_listener_scan_pair.jpg)
 
@@ -705,7 +704,9 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-2/tutorial/
 	![img](../../images/ScanAndPairTutorialImages/on_destroy_method.jpg)
   
       	
-That's it!!! We are done with all the coding part that will let us scan the Bluetooth Name/Address of Remote Scanning device and pair our client application with that Remote device using  [ScanAndPair APIs](/emdk-for-android/7-2/api/scanandpair) introduced in EMDK V 3.1. Now let us run the application.
+That's it!!! We are done with all the coding part that will let us scan the Bluetooth Name/Address of Remote Scanning device and pair our client application with that Remote device using  ScanAndPair APIs. Next is to the application.
+
+-----
  
 ## Running the Application
 
@@ -760,10 +761,7 @@ That's it!!! We are done with all the coding part that will let us scan the Blue
 
 11. You can see that MC40 has been successfully paired under "PAIRED DEVICES" section of your device.
 
-	
-
-	
-
+-----
  
 
 ##Important Programming Tips##
@@ -787,20 +785,3 @@ That's it!!! We are done with all the coding part that will let us scan the Blue
 
 ## What's Next
 Now that you have learned how to scan the Bluetooth Name/Address of Remote Scanning device and pair our client application with that Remote device using  [ScanAndPair APIs](/emdk-for-android/7-2/api/scanandpair), in the next tutorial we would concentrate on [SimulScan APIs](/emdk-for-android/7-2/api/simulscan) and develop an application to demonstrate its use. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

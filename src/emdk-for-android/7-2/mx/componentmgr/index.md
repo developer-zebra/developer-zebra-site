@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: componentmgr
 product: EMDK For Android
-productversion: '7.1'
+productversion: '7.2'
 ---
 
 

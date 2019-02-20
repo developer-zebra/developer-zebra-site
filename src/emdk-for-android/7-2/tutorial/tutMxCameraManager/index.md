@@ -2,7 +2,7 @@
 title: Administer Use of Camera using Camera Manager
 layout: guide.html
 product: EMDK For Android
-productversion: '7.1'
+productversion: '7.2'
 ---
 
 ## Overview

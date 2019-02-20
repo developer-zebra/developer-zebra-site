@@ -20,7 +20,7 @@ screenshots:
   - 3.png
 layout: sample.html
 product: EMDK For Android
-productversion: '7.1'
+productversion: '7.2'
 ---
 
 ##Overview##

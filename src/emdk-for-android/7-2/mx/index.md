@@ -188,7 +188,7 @@ contentlist:
         description: 'The WirelessMgr allows you to turn various wireless radios On or Off, like Bluetooth, GPRS, NFC, etc.'
         icon: /mx/icons/wirelessmgr.png
 product: EMDK For Android
-productversion: '7.1'
+productversion: '7.2'
 ---
 
 

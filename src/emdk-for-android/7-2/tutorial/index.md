@@ -83,7 +83,7 @@ automenu:
         - title: Capture critical data from documents using SimulScan API
           url: /emdk-for-android/7-1/tutorial/tutSimulScanAPI
 product: EMDK For Android
-productversion: '7.1'
+productversion: '7.2'
 ---
 
 

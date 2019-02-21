@@ -73,26 +73,28 @@ _Click to enlarge; ESC to exit_.<br>
    b. **Navigate to the** `build.gradle` **file** in the app module:<br>
    <img alt="image" style="height:350px" src="gradle_01.png"/>
 _Click to enlarge; ESC to exit_.<br>
-   c. **Add the line below to the dependencies section** (**NOTE**: If using Gradle 3.3 or lower, see below):<br>
+   c. **If using a Gradle version <u>older than 3.3</u>, skip to step d**.<br> 
+   For Gradle 3.3 and newer, add the following line to the dependencies section:<br>
 
-		:::java
-		dependencies {
-			implementation 'com.symbol:emdk:7.1.0'
-			...
-		}
-   d. **For Gradle 3.3 or lower**, add this line **<u>instead</u>** of the one above:<br> 
+        :::java
+            dependencies {
+            implementation 'com.symbol:emdk:7.1.0'
+                ...
+            }
 
-		:::java
-		dependencies {
-			compile 'com.symbol:emdk:7.1.0'
-			...
-		}
+    d. **For Gradle 3.3 or lower**, add the following line **<u>instead</u>** of the line above:<br> 
+
+        :::java
+            dependencies {
+            compile 'com.symbol:emdk:7.1.0'
+                ...
+            }
 6. **Rebuild the project** (Build -> Make Project). 
 
 ##### EMDK APIs are now ready to use. 
 
 #### Notes 
-* A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.1+` uses any SDK version from 7.1 and up.
+* A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.1+` uses SDK versions 7.1 and newer.
 * The Java version used to compile a project is based on the `compileSdkVersion` selected for the project. Different versions of Android support different versions of Java. If necessary, the default Java version can be overridden. [Learn more](https://developer.android.com/studio/intro/studio-config#jdk). 
 
 -----

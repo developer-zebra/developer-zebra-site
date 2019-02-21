@@ -109,12 +109,14 @@ Supported Devices (including GSM and non-GMS versions):
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
+  <!--
   <tr>
-    <td>TC8000</td>
+    <td>TC8000 Next Generation - wait for release</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
+  -->
 </table>
 
 
@@ -125,7 +127,7 @@ Install Device Tracker server on the supported system that meets the specified r
 The following are the prerequisites required for the server: <br>
 1. **DNS (Domain Name Server) Setup.** Device Tracker server runs in a domain, for example _name.company.com_. To run Device Tracker, an entry in the DNS server is required to add the server IP address. The DNS server and Device Tracker server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
 
-2. **Certificate Generation and CSR (Certificate Signing Request) Signing from CA** <br>
+2. **Intermediate Root Certificate Generation and CSR (Certificate Signing Request) Signing from CA.** Procedure to generate a CSR to send to a CA for signing, configuring a custom intermediate root certificate for SSL: <br>
 A. Download [OpenSSL](https://www.openssl.org/source/) for Windows. Follow the instructions stated to download the file based on your Windows configuration.<br>
 B. Install the downloaded OpenSSL EXE/MSI.<br>
 C. Add a new "openSSL" environment variable to the Windows system and set the value to the location where openSSL is installed (e.g. "C:\Program Files\OpenSSL-Win64\bin\").<br>
@@ -146,7 +148,7 @@ F. Enter in the required fields when prompted:
  H. A .csr file is created in the "CSR_Request" folder. Submit this file to the CA to have it signed. <br>
  I. Obtain the certificate bundle from the CA in .pkcs format and certificate in .p7b format (which includes the public key).
 
-3. **Generate .PFX Server Certificate.** An SSL certificate is required for secured connections. Zebra recommends the certificate to be procured in .p7b format and the certificate private key to be a .key file. If the certificates are in different format, use a SSL certificate converter tool to convert to the proper format. <br>
+3. **Generate SSL Certificate.** An SSL certificate is required for secured connections based on the intermediate root certificate from step 2. Zebra recommends the certificate to be procured in .p7b format and the certificate private key to be a .key file. If the certificates are in different format, use a SSL certificate converter tool to convert to the proper format. <br>
 A. Create an empty directory named "generated_certs" to contain the .pfx certificate.<br>
 B. Copy the following certificate files to "generated_certs" folder: primary certificate (e.g. "ssl_certificate.p7b"), private key (e.g. "ppc_private_key.key"), and intermediate CA certificate (e.g. "IntermediateCA.cer").  _The intermediate CA certificate is optional - use if required in the certificate chain._  <br>
 C. Open a command prompt. Execute the following command to generate "ssl_certificate.cer":<br>
@@ -163,7 +165,7 @@ F. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
 
 4. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. These are the UI and backend server ports specified during the server install. The method to open the ports depends on the firewall software used by the network administrator. The ports are specified during the server install. Sample ports:   
 
-	* Inbound ports: TCP ports 8080 and 8443
+	* Inbound ports: TCP ports 8080 (UI port) and 8443 (Backend Server port)
 	* Outbound port: TCP port 8080
 <br>
 

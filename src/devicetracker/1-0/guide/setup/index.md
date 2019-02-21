@@ -86,7 +86,7 @@ Supported Devices (including GSM and non-GMS versions):
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
-    <td>TC51/TC56 </td>
+    <td>TC51/TC51-HC/TC56 </td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
@@ -132,19 +132,19 @@ C. Add a new "openSSL" environment variable to the Windows system and set the va
 D. Create a folder named "CSR_Request".  Open the command prompt to this folder path.<br>
 E. Run the following command to generate a private key and CSR file: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL req -newkey rsa:2048 -nodes -keyout zdvc_private_key.key -out zdvc_cert_sign_req.csr`<br>
-Where "zdvc_cert_sign_req.csr" and "zdvc_private_key.key" can be replaced with custom file names.<br>
+ Where "zdvc_cert_sign_req.csr" and "zdvc_private_key.key" can be replaced with custom file names.<br>
 F. Enter in the required fields when prompted:
+
    * **Country Name** - Enter the two-letter code without punctuation for country, for example: US or CA.
    * **State or Province** - Enter the full state or province name without abbreviation, for example: California.
    * **Locality or City** - Enter the city or town name without abbreviation, for example: Berkeley or Saint Louis.
    * **Company** - Enter the company. If the company or department contains a special characteres such as "&" or "@" the symbol must be spelled out or omitted in order to enroll successfully. 
    * **Organizational Unit** - Enter the name of the department or organization unit making the request. This is optional, to skip, press Enter on the keyboard.
-   * **Common Name** - Enter the Host and Domain Name, following the same format as these examplese: "www.zebra.com" or "zebra.com".
-Note: Symantec certificates can only be used on web servers using the Common Name specified during enrollment. For example,
-a certificate for the domain "zebra.com" will receive a warning if accessing a site named "www.zebra.com" or "secure.zebra.com" since "www.zebra.com" and "secure.zebra.com" are different from "zebra.com."
-G. Enter the challenge password when prompted. _This is the password needed when generating the certificate in .pfx format._
-H. A .csr file is created in the "CSR_Request" folder. Submit this file to the CA to have it signed.
-I. Obtain the certificate bundle from the CA in .pkcs format and certificate in .p7b format (which includes the public key).
+   * **Common Name** - Enter the Host and Domain Name, following the same format as these examplese: "www.zebra.com" or "zebra.com". **Note:** Symantec certificates can only be used on web servers using the Common Name specified during enrollment. For example, a certificate for the domain "zebra.com" will receive a warning if accessing a site named "www.zebra.com" or "secure.zebra.com" since "www.zebra.com" and "secure.zebra.com" are different from "zebra.com." <br>
+
+ G. Enter the challenge password when prompted. _This is the password needed when generating the certificate in .pfx format._<br>
+ H. A .csr file is created in the "CSR_Request" folder. Submit this file to the CA to have it signed. <br>
+ I. Obtain the certificate bundle from the CA in .pkcs format and certificate in .p7b format (which includes the public key).
 
 3. **Generate .PFX Server Certificate.** An SSL certificate is required for secured connections. Zebra recommends the certificate to be procured in .p7b format and the certificate private key to be a .key file. If the certificates are in different format, use a SSL certificate converter tool to convert to the proper format. <br>
 A. Create an empty directory named "generated_certs" to contain the .pfx certificate.<br>
@@ -205,7 +205,7 @@ Steps for server setup after installation: <br>
 1. **Run the Device Tracker Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". 
 2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://name.company.com:8443/zdvc`, where "name.company.com:8443" is replaced with the appropriate domain and port number.
 3. **Select app to launch.** As part of Zebra's DNA Visibility Console, the server consists of multiple solution offerings. Select "Device Tracker" then enter the login credentials to login.
-4. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
+. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
 A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
 B. Enter the Web UI URL, for example `https://name.company.com:8443/zdvc`<br>
 C. Click the Scan button. A successful result returns green checks for each step. _See Figure 8 below._ <br>

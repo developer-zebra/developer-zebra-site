@@ -11,7 +11,14 @@ Monitoring device presence and prevention of misplaced devices is important for 
 ## Locating Devices
 The facility administrator monitors devices from the [admin dashboard](../admin) and can mark a device "To be found" if it is misplaced or at risk, e.g. needs to be charged due to low battery. The administrator assigns an associate to search the target device by using their device to locate the general area the target device resides based on the Access Point (AP) where it last connected. Then a sound can be played by tapping the Play Sound button on the associate's device to locate the target device by audio sound, determining its location. The volume level and sound duration can be adjusted in the server [Settings](../config).
 
+**Important**:
+* WiFi must be enabled on both devices.
+* When Play Sound is tapped repeatedly during network congestion, the congestion may cause a delay in the playback. Once the congestion disappears, the audio plays back multiple times based on the number of taps.
+* During network congestion, client requests over WiFi frequency band 2.4 GHz may not reach the server. For example, requests to Play Sound may not reach the intended device. In this situation, Zebra recommends to move to a 5 GHz frequency band or move to another network without congestion.
+
 <!--
+> WiFi and Bluetooth must be enabled on both devices.
+
 The facility administrator monitors devices from the [admin dashboard](../admin) and can mark a device "To be found" if it is misplaced or at risk, e.g. needs to be charged due to low battery. The administrator assigns an associate to search the target device by using their device to locate the general area the target device resides based on the Access Point (AP) where it last connected. Then BLE (Bluetooth Low Energy) based proximity indicator and a sound can be played by tapping the Play Sound button on the associate's device to locate the target device by audio sound, determining its location. The volume level and sound duration can be adjusted in the server [Settings](../config).
 
 1. **Animated BLE proximity indicator** – Shows the proximity range of the target device in relation to the searching device. The animation and color changes reflect the proximity as the user moves closer or further away from the device being searched.
@@ -21,7 +28,7 @@ The proximity depicted in the BLE indicator is based on the strength of the Blue
 
 <!--Within proximity of about 1 meter, distance estimation ranges between 0.5 to 2 meters. Further distances will encounter more variation - at 20 meters or more the estimate may vary between 10 to 40 meters. --> 
 
-> WiFi <!--and Bluetooth-->must be enabled on both devices.
+
 
 ###Procedure to find a device
 The procedure to locate a device follows (based on user role):

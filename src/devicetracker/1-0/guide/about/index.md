@@ -11,7 +11,7 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
 
 ##Main Features
 Device Tracker main features:
-*	Presence information for all supported WiFi connected devices based on AP location zone
+*	General location information for all supported WiFi devices based on connected AP
 *	Misplaced device prevention by monitoring low power and disconnection state
 *	Centralized dashboard to easily view device information: WiFi connectivity (connection status, connected AP), tracking status (To Be Found, Being Found, Found, Cannot Find), battery information (percent battery remaining, charging status), and other information from deployed Zebra mobile computers. 
  * Filter and sort data

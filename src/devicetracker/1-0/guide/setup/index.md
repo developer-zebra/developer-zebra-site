@@ -47,9 +47,9 @@ This section provides the server and device requirements. Device Tracker support
    * If required, perform **DNS setup** to add server IP address to the DNS server. 
 
 5. Hardware Requirements:
-   * Minimum CPU cores: 8
-     * Minimum memory (RAM): 8 GB
-         * Minimum available hard drive space: 300 GB
+   * Minimum CPU cores: 16
+     * Minimum memory (RAM): 64 GB
+         * Minimum available hard drive space: 500 GB
 
 
 ###Device Requirements
@@ -202,12 +202,10 @@ _Figure 7. Installation - complete_
 
 ###Server Setup
 Steps for server setup after installation: <br>
-1. **Run the Device Tracker Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/zdvc**
-
-	Where "name.company.com:8443" is replaced with the appropriate domain and port number.
-
-As part of Zebra's DNA Visibility Console, the server consists of multiple solution offerings. Select "Device Tracker" then login.
-2. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
+1. **Run the Device Tracker Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". 
+2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://name.company.com:8443/zdvc`, where "name.company.com:8443" is replaced with the appropriate domain and port number.
+3. **Select app to launch.** As part of Zebra's DNA Visibility Console, the server consists of multiple solution offerings. Select "Device Tracker" then enter the login credentials to login.
+4. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
 A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
 B. Enter the Web UI URL, for example `https://name.company.com:8443/zdvc`<br>
 C. Click the Scan button. A successful result returns green checks for each step. _See Figure 8 below._ <br>

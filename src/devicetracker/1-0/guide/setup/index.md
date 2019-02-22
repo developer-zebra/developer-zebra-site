@@ -25,8 +25,8 @@ This section provides the server and device requirements. Device Tracker support
 
 ###Server Requirements
 1. Windows Operating System supported:
-   <!--* Windows® 2012 server, 64-bit processor -->
-   * Windows® 2016, 64-bit processor
+   * Windows® Server 2012, 64-bit processor
+   * Windows® Server 2016, 64-bit processor
 
 2. Browsers supported (connect over https):  
    * Google Chrome Browser version 66 and higher
@@ -121,7 +121,7 @@ Supported Devices (including GMS and non-GMS versions):
 
 
 ##Server Install & Setup
-Install ZDVC server on the supported system that meets the specified requirements. Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). After server installation, further network setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+Install ZDVC server on the supported system that meets the specified requirements. Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html). After server installation, further network setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ###Server Prerequisites
 The following are the prerequisites required for the server: <br>
@@ -232,7 +232,7 @@ Install Device Tracker client on the supported Zebra device to register the devi
 
 ###Client Installation
 Steps for client installation on the device, which may be performed either manually or with an EMM (Enterprise Mobile Management):
-1. Download Device Tracker client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
+1. Download Device Tracker client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html). Extract the files and folders.
 2. Install DTRKClient.apk. 
 3. If updating an existing client, reboot the device.
 

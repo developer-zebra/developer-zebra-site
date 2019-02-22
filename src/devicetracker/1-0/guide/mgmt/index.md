@@ -37,7 +37,7 @@ The procedure to locate a device follows (based on user role):
        A. Tick the checkbox for the device row. <br>
        B. Click on the Action menu and select “Set device: ‘To be found’”.  <br>
        C. Click “OK” on the confirmation message. The device status changes from "Active" to "To be found". <br>
-The next time the target device reports to the server, it identifies it is marked "To be found". The length of time this takes is based on both the [Reporting Frequency](../config/#applicationconfiguration). <!--and the elapsed time since the last report was received (seen in the **Updated** column on the [admin dashboard](../admin)) <sup>[1]</sup>. -->
+The next time the target device reports to the server, it identifies it is marked "To be found". The length of time this takes is based on the [Reporting Frequency](../config/#applicationconfiguration). <!--and the elapsed time since the last report was received (seen in the **Updated** column on the [admin dashboard](../admin)) <sup>[1]</sup>. -->
 2. **An associate is tasked to find the device.** <br>
 <font color="orange">[Admin]</font> The administrator assigns an associate to find the device, using the client app on their device as a locationing tool.
 3. **Start device search based on connected AP.** <br>

@@ -82,7 +82,7 @@ _Click to enlarge; ESC to exit_.<br>
     			...
     		}
 
-    d. **For Gradle 3.3 or lower**, add the following line **<u>instead</u>** of the line above:<br> 
+    d. **For Gradle versions <u>older than 3.3</u>**, add the following line **<u>instead</u>** of the line above:<br> 
 
 		:::java
     	dependencies {

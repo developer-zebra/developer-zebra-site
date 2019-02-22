@@ -6,7 +6,7 @@ order: 7
 mx: "8.1"
 osx: "8.5"
 devicetype: A
-info: Supported on SDM660-platform devices only. 
+info: Supported on SDM660-platform devices only. Zebra devices support a maximum of 4 users. 
 parm:
   pivotal: No
   name: MultiUser
@@ -32,7 +32,7 @@ parm:
       description: Disables multi-user mode on the device. 
 ---
 
-This is the On/Off switch for Multi-user mode on the device, which can provide separate user accounts, data and apps or app restrictions on a shared device. 
+This is the On/Off switch for Multi-user mode on the device, which can provide separate user accounts, data and apps or app restrictions on a shared device. **Zebra devices support a maximum of 4 users**.
 
 **This feature is supported only on SDM660-platform devices, which includes (but is not limited to)**:
 * PS20

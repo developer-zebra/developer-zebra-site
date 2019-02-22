@@ -13,7 +13,7 @@ The facility administrator monitors devices from the [admin dashboard](../admin)
 
 **Important**:
 * WiFi must be enabled on both devices.
-* When Play Sound is tapped repeatedly during network congestion, the congestion may cause a delay in the playback. Once the congestion disappears, the audio plays back multiple times based on the number of taps.
+* When **Play Sound** is tapped repeatedly on the client during network congestion, the congestion may cause a delay in the playback. Once the congestion disappears, the audio plays back multiple times based on the number of taps.
 * During network congestion, client requests over WiFi frequency band 2.4 GHz may not reach the server. For example, requests to Play Sound may not reach the intended device. In this situation, Zebra recommends to move to a 5 GHz frequency band or move to another network without congestion.
 
 <!--
@@ -37,14 +37,14 @@ The procedure to locate a device follows (based on user role):
        A. Tick the checkbox for the device row. <br>
        B. Click on the Action menu and select “Set device: ‘To be found’”.  <br>
        C. Click “OK” on the confirmation message. The device status changes from "Active" to "To be found". <br>
-The next time the target device reports to the server, it identifies it is marked "To be found". The length of time this takes is based on both the [Reporting Frequency](../config/#applicationconfiguration) and the elapsed time since the last report was received (seen in the **Updated** column on the [admin dashboard](../admin)) <sup>[1]</sup>. 
+The next time the target device reports to the server, it identifies it is marked "To be found". The length of time this takes is based on both the [Reporting Frequency](../config/#applicationconfiguration). <!--and the elapsed time since the last report was received (seen in the **Updated** column on the [admin dashboard](../admin)) <sup>[1]</sup>. -->
 2. **An associate is tasked to find the device.** <br>
 <font color="orange">[Admin]</font> The administrator assigns an associate to find the device, using the client app on their device as a locationing tool.
 3. **Start device search based on connected AP.** <br>
 <font color="blue">[Associate]</font> Open Device Tracker client on the associate's device. In the list of "Devices to be found", tap on the target device to find. The **Device Details** screen appears providing information on the device including “Last Connected AP”, which identifies the last known AP zone where the device is located. Walk to the AP zone and tap **Go** to begin the device search. <br>
 <font color="orange">[Admin]</font> On the admin dashboard, the device automatically changes state from "To be Found" to "Being Found". 
 4. **Play sound to search for device** <br>
-<font color="blue">[Associate]</font> Once in the AP zone, tap **Play Sound** on the associate's device to play audio on the target device. Walk towards the chirping sound heard to locate the target device. To return back to the main screen, tap the device back button.
+<font color="blue">[Associate]</font> Once in the AP zone, tap **Play Sound** on the associate's device to play audio on the target device. Walk towards the chirping sound heard to locate the target device. To return back to the main screen, tap the device back button. **Important:** The time specified in the [Reporting Frequency](../config/#applicationconfiguration) needs to elapse before the sound can be played. For example, if the Reporting Frequency is set to 5 minutes, the associate must wait for 5 minutes before tapping **Play Sound**.
 
 5. **Device found.** <br>
 <font color="blue">[Associate]</font> Once the device is found, tap **Device found** at the bottom of the screen. Some devices may require the user to scroll down the screen for the button to be visible. Tap “Yes” to the confirmation message to designate the device as found. <br>
@@ -68,13 +68,13 @@ Perform device search with BLE and audio.
   _Figure 1. Device Tracker client screens while locating a device_ <br>
 
  > For optimal results, Zebra recommends to hold the device used for searching in the same position throughout the search activity. The device screen should be placed facing the user with no obstruction in the rear of the device. Changing device orientation during the search may negatively interfere with proximity perception. Moving at a slow pace during the search and standing still (at every 10 to 15 meters) every so often stabilizes the signals received, improving proximity measurements.
--->
 
-<sup>[1]</sup> **Important Note**: Depending on when the device being searched last reported to the server, the specified [Reporting Frequency](../config/#applicationconfiguration) time needs to elapse before the sound can be played from the target device. Once the target device reports to the server and receives the flag that it is in the "To be found" state, it automatically changes the reporting frequency to 30 seconds for more frequent updates to the server until the device has been found. _For example, if Device A is marked “To be found” from the admin and the following conditions exist:_ 
-* _Reporting Frequency is set to 5 minutes_
+ <sup>[1]</sup> **Important Note**: Depending on when the device being searched last reported to the server, the specified [Reporting Frequency](../config/#applicationconfiguration) time needs to elapse before the sound can be played from the target device. Once the target device reports to the server and receives the flag that it is in the "To be found" state, it automatically changes the reporting frequency to 3 seconds for more frequent updates to the server until the device has been found. _For example, if the admin marks Device A “To be found” and the following conditions exist:_ 
+* _Reporting Frequency is set to 5 minutes in the Settings tab_
 * _Device A reported to the server a few seconds ago (as seen in the **Updated** column on the admin dashboard)_<br>
 
 _In this scenario, approximately 5 minutes need to elapse (the next time the target device reports to the server) before the Device A identifies that it is marked as "To be found" and the associate can take action to find Device A. In this same scenario, if Device A reported to the server 4 minutes ago as seen from the dashboard, then 1 minute must elapse (time left to reach the 5 minute Reporting Frequency interval) before Device A identifies that it is marked "To be found" and the associate can take action to find Device A._
+-->
 
 ###Cannot find device
 

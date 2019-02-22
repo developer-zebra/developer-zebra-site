@@ -43,12 +43,13 @@ Notes:
 * If no icon is displayed in the battery status column, it indicates that the device battery is not being charged and there is sufficient device battery charge.
 * When the checkbox in the table header is ticked on the dashboard, it selects all devices listed in the page. 
 * At the bottom left of the dashboard, select the "rows per page" drop-down and choose the value to increase the number of devices displayed in the dashboard.
+* If a device is in the "Never Connected" state, no action can be taken upon it since it has not registered with the server.
 
 ##Device Action
 Action can be taken on any selected device(s) in the Active tab.  Once the device is selected from the dashboard, the Action menu is accessible with the following options:
 * **Set device: To be found** – Marks the target device to be found.  This initiates the tracking process. The next time the target device reports to the server, it identifies it is marked "To be found" - the length of time this takes is based on both the defined [Reporting Frequency](../config/#applicationconfiguration) and the elapsed time since the last report was received (seen in the Updated column on the admin dashboard). 
 Once the Device Tracker client detects this status change, it displays the marked device in the “Devices to be found” screen. A user can tap on the device listed then tap “Go” to begin searching for the marked device. 
-* **Set device to: Out of service** – Removes the device from the active device pool and places it into the **Out of Service** tab. This can be used when a device is undergoing repair or is deprecated and no longer in use so must be removed from the device pool.
+* **Set device to: Out of service** – Removes the device from the active device pool and places it into the **Out of Service** tab. This can be used when a device is undergoing repair or is deprecated and no longer in use so must be removed from the device pool. Note: This does not apply to devices that never connected to the server.
 * **Set device to: Active** - Changes the device back to the Active state. This option is available if a device is Found, Cannot be Found, or Out of Service.
 * **Manage Tags** – Refer to [Organize Devices](./#organizedevices) section below.  
 * **Clear Selections** – Unselects any selected devices in the dashboard.

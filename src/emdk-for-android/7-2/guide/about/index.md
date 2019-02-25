@@ -48,7 +48,66 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 -----
 
-## New in v7.1
+## News in v7.2
+
+### Supported Devices
+No new device support added in this version. 
+
+### New Features
+<!-- 
+EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  Refer to the v7.2 TechDocs web page for more information.
+ -->
+
+
+**Now supports MX 8.3**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
+
+* **New [NFC Manager](../../mx/nfcmgr)** CSP adds these new capabilities:  
+ * Enable/Disable: 
+  * NFC radio and its ability to communicate
+  * NFC Data Exchange Format
+  * Peer-to-Peer mode
+  * CPU boost mode
+  * Card Emulation mode
+  * NFC usage when the Android "lock screen" is displayed
+ * Select type A, B, F, or V tags for use
+ * Select communication speed for Types A and B cards (TC55)
+ * Select communication speed for ISO 14443-4 cards (TC75)
+ * Select the Polling mode to balance performance with battery usage
+ * Reset device to default NFC settings
+* **Enhanced [Access Manager](../../mx/accessmgr)** adds these new features:
+ * Select the Action to perform for Access to Protected Services
+ * Specify a Service Identifier for a Service
+ * Specify Package Name of a Service Caller
+ * Specify a File name for the Signature of a Caller
+* **Enhanced [Cellular Manager](../../mx/cellularmgr)** adds this new feature:
+ * Specify an APN authentication type
+* **Enhanced [KeyMapping Manager](../../mx/keymappingmgr)** added this new feature:
+ * Select a key behavior for' Diamond' mode
+* **Enhanced [Wi-Fi](../../wifi) CSP** adds this new feature:
+ * Enable/Disable Wi-Fi verbose logging
+
+### API Enhancements
+
+**Enhanced Barcode Manager API** adds the following features on devices running Android Oreo 8.1 and newer: 
+* Adds support for new Symbology and Label type DotCode:
+ * **enum DotCodeInverse under ScannerConfig** describes Enable/Disable/Auto options for decoding DotCode barcodes with inverse reflectance.
+ * **enum DotCodeMirror under ScannerConfig** describes Enable/Disable/Auto options for decoding mirrored DotCode barcodes.
+ * **inverse parameter under `ScannerConfig.DecoderParams.DotCode`** allows selection of one option from DotCodeInverse enum.
+ * **mirror parameter under `ScannerConfig.DecoderParams.DotCode`** allows selection of an option from DotCodeMirror enum.
+* **A new zoom reader parameter in `ScannerConfig.ReaderParams.ReaderSpecific.CameraSpecific`** sets the zoom level for the camera. 
+ * Supported value ranges from 1&ndash;8 in increments of 1.
+* **Support for Decode Screen Notification** displays a screen overlay as a notification on a successful decode. Supports the following parameters in `ScannerConfig.ScanParams`:
+ * `decodeScreenNotification` enables/disables decode screen notification
+* **Support for Presentation mode** activates continuous scene detection; scanning begins upon motion detection without a trigger press. Supports the following parameters:
+ * enum `SceneDetectionQualifier` under `ScannerConfig` acts as a qualifier for starting scene detection when Presentation is selected as Aim Type.
+ * Reader parameter `sceneDetectionQualifier` in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` activates the Presentation mode of scanning based on a Scene Detection Qualifier.
+ * enum `AimType` in `ScannerConfig` Presentation option enables this mode.
+
+-----
+
+## Version History
+
+### Added in v7.1
 
 * Now supports Android Multi-user mode. See the [Multi-user Programming guide](../multiuser) for more information. 
 
@@ -58,13 +117,11 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 -----
 
-## Version History
-
 ### Added in 6.10, 7.0
 
 > **Important**: Zebra now distributes the EMDK SDK through a JCenter repository, and the EMDK Profile Manager plug-in through the JetBrains plug-in repository. To install, see the [EMDK-A Setup guide](../setup).
 
-### Device Support
+#### Device Support
 
 EMDK 7.0 adds support for the following mobile computers running Android 8.1 Oreo: 
 
@@ -78,7 +135,7 @@ This version adds support for the following scanners and/or imagers:
 
 * **DS2278** Standard range barcode scanner
 
-### End of Support
+#### End of Support
 
 **IMPORTANT**: EMDK 7.0 no longer targets devices running Android 5.x Lollipop or older. 
 
@@ -95,7 +152,7 @@ This version adds support for the following scanners and/or imagers:
 
 -----
 
-### API enhancements
+#### API enhancements
 *Applies only to devices running Android 8.1.0 (Oreo) and higher*.
 
 **Enhanced Barcode Manager API**
@@ -119,7 +176,7 @@ This version adds support for the following scanners and/or imagers:
 
 -----
 
-### Software Support
+#### Software Support
 
 **Support for MX 8.2** provides the following enhancements:
 
@@ -167,25 +224,23 @@ This version adds support for the following scanners and/or imagers:
 
 -----
 
-### Deprecations
+#### Deprecations
 
 **SecureNFC APIs**, which allow applications to perform secure communications with NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM), remain supported but are no longer being advanced.
 
 -----
 
-### End of Support
+#### End of Support
 
 **EMDK 7.0 no longer supports target devices running Android 5.x Lollipop** or older; support for Lollipop devices ended with EMDK 6.9. In general, EMDK updates for specific devices are distributed with the latest BSP or [LifeGuard patch](https://www.zebra.com/us/en/support-downloads/lifeguard-security.html). 
 
-### Other Notes
+#### Other Notes
 
 * EMDK code samples no longer include `ProfileDataCaptureSample1` and `SecureNFCSample1`.
 
 * EMDK-A 7.0 is the last version able to target devices running Android 6.x Marshmallow.
 
 -----
-
-## Version History
 
 ### Added in v6.9
 
@@ -195,7 +250,7 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
 * **LI3678** rugged Bluetooth scanner 
 * **WT6000 running Android Nougat** 
 
-### API Enhancements
+#### API Enhancements
 
 **Enhanced Barcode Manager API**:
 * Adds support for LI3608 rugged USB scanner
@@ -210,7 +265,7 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
  * BLUETOOTH_IMAGER_RS6000 - Bluetooth imager RS6000
  * EXTERNAL_VIBRATOR1 - External Vibrator
 
-### Software Support
+#### Software Support
 
 **Now supports [Android Studio 3.1](https://android-developers.googleblog.com/2018/03/android-studio-3-1.html)**
 
@@ -233,7 +288,7 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
  * Enable/disable the Magnification Gesture
  * Show/hide the Virtual KeyBoard while Physical Keyboard is active
 
-### Deprecations
+#### Deprecations
 
 * **SecureNFC APIs** allow applications to perform secure communications with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM). These APIs remain supported but are no longer being advanced.
 * **The ProfileConfig class**, used to access profile data, remains supported but is no longer being advanced. Zebra recommends using the name-value pair function of the Profile Manager. Profile XML data also can be modified directly. See the [Clock Sample](../../samples/clock) for information about how to modify Profile XML data.
@@ -242,9 +297,9 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
 
 -----
 
-## Usage Notes
+#### Usage Notes
 
-### General Interest
+#### General Interest
 
 1. Initial settings for a project can be found at **[Creating a Project using Android Studio](../../tutorial/tutCreateProjectAndroidStudio/)**.
 1. Integrator is a utility included with EMDK that can be used to install EMDK for Android components to installations of Android Studio development environment on the host PC.
@@ -271,7 +326,7 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
 
 -----
 
-### API-related Usage
+#### API-related Usage
 
 1. A profile name argument (the first argument of `processProfile` API) is mandatory.
 1. If the profile name is given in the `extraData` (third argument of processProfile API) and if it does not match the profile name (first argument of `processProfile` API), the profile will NOT be modified.
@@ -344,7 +399,7 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
  * Controls whether audio on a device plays only through a connected handset or through the handset and the built-in device speaker (supported on the Zebra VC80x only).
  -->
 
-### Deprecations
+#### Deprecations
 
 * **Support for configuring DataWedge using EMDK Profile Manager is deprecated**. Profile Manager capabilities categorized under Data Capture are still supported but will no longer be advanced. Zebra recommends using [DataWedge intent-based APIs](/datawedge) to configure DataWedge profiles going forward.
 
@@ -356,7 +411,7 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
 
 -----
 
-## Components
+## EMDK-A Components
 
 ### Profile Manager
 The EMDK's exclusive [Profile Manager](../profile-manager) Technology is an additional advantage for developers giving you a GUI based development tool built on our open framework. This allows you to write fewer lines of code resulting in reduced development time, effort and errors. This innovative feature not only gives you easy access to critical functions such as bar code scanning and transaction processing via a magnetic stripe reader (MSR) but also functionality not available in Google's Android SDK.

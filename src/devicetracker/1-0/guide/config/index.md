@@ -31,8 +31,11 @@ In the [Admin View](../admin) dashboard, click on the **Settings** tab to displa
     2.	Open the .csv file. Fill in the necessary information and save changes.  
     3.	Tap on “Upload CSV File” next to the appropriate category. Browse and select the updated file. 
     4.	Check the status in Data Upload History. If successful, the data is uploaded. 
-
-    **Important**: Some applications, such as Microsoft Excel, may automatically modify the data format unexpectedly. Ensure the fields are formatted appropriately, such as the serial number in "number" format (with no decimal places). Otherwise Zebra recommends using a text editor to edit the .csv file. 
+<br>
+<br>
+  **Important**: 
+     * Some applications, such as Microsoft Excel, may automatically modify the data format unexpectedly. Ensure the fields are formatted appropriately, such as the serial number in "number" format (with no decimal places). Otherwise Zebra recommends using a text editor to edit the .csv file. 
+     * When uploading a .csv file using Microsoft Internet Explorer, a "Wrong File Format" error message may appear indicating that only .csv files are accepted. Continue with selecting the file to successfully upload the Device or AP information.
 
 * **Data Upload History** - Displays the status of the last 10 records of the Access Point and device upload history. The data is created in the database if it does not previously exist. If the data previously exists, it is updated in the database. For the device .csv, the device model and serial number combined provide the device uniqueness.
 

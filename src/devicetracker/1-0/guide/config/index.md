@@ -18,7 +18,7 @@ In the [Admin View](../admin) dashboard, click on the **Settings** tab to displa
  * **Low Power Alert Threshold %** - Defines the battery % threshold value. Devices below this threshold value are categorized in Low Battery state as seen in the dashboard. Minimum value: 10, maximum value: 95.
  * **Disconnect Threshold Time** - Defines the amount of time (hours and minutes) to elapse for a device to be considered in the disconnected state due to lack of response from the device within this time frame. Minimum value: 7 min, maximum value: 12 hours.
 
-* **Reporting Frequency** - Defines the frequency in minutes for the Device Tracker client to report to the server. When a device is marked to “To Be Found”, the Reporting Frequency time needs to elapse (eg. minimum of 5 minutes) before starting the device search with the Device Tracker client. This value should be set lower than the **Disconnect Threshold Time**dtrk. Minimum value: 5, maximum value: 60.
+* **Reporting Frequency** - Defines the frequency in minutes for the Device Tracker client to report to the server. When a device is marked to “To Be Found”, the Reporting Frequency time needs to elapse (eg. minimum of 5 minutes) before starting the device search with the Device Tracker client. This value should be set lower than the **Disconnect Threshold Time**. Minimum value: 5, maximum value: 60.
 
 * **Chirping**:
  * **Volume Level** - Specifies the loudness level of the chirping sound to be heard from the device being located. Minimum value: 10, maximum value: 100.

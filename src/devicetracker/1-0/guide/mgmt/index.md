@@ -15,7 +15,7 @@ The facility administrator monitors devices from the [admin dashboard](../admin)
 * WiFi must be enabled on both devices.
 * When **Play Sound** is tapped repeatedly on the client during network congestion, the congestion may cause a delay in the playback. Once the congestion disappears, the audio plays back multiple times based on the number of taps.
 * During network congestion, client requests over WiFi frequency band 2.4 GHz may not reach the server. For example, requests to Play Sound may not reach the intended device. In this situation, Zebra recommends to move to a 5 GHz frequency band or move to another network without congestion.
-* During network congestion, the user may need to wait for 10 seconds before being able to exit the Play Sound screen.
+* During network congestion, the user may need to wait for 10 seconds before being able to exit the Play Sound screen by tapping the device back button.
 
 <!--
 > WiFi and Bluetooth must be enabled on both devices.

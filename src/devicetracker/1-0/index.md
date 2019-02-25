@@ -11,7 +11,7 @@ menu:
       url: /devicetracker/1-0/guide/setup
     - title: Admin View
       url: /devicetracker/1-0/guide/admin
-    - title: Device Management
+    - title: Device Tracking
       url: /devicetracker/1-0/guide/mgmt
     - title: Configuration
       url: /devicetracker/1-0/guide/config

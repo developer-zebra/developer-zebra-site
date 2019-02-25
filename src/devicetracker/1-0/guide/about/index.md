@@ -47,6 +47,6 @@ See supported [Zebra devices](../setup/#devicerequirements).
 
 * [Install & Setup](../setup)
 * [Admin View](../admin)
-* [Device Management](../mgmt)
+* [Device Tracking](../mgmt)
 * [Configuration](../config)
 

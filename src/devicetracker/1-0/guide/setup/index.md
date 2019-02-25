@@ -381,5 +381,5 @@ _Figure 25. Export for EMM_
 
 * [About Device Tracker](../about)
 * [Admin View](../admin)
-* [Device Management](../mgmt)
+* [Device Tracking](../mgmt)
 * [Configuration](../config)

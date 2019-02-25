@@ -1,5 +1,5 @@
 ---
-title: Device Management
+title: Device Tracking
 layout: guide.html
 product: Device Tracker
 productversion: '1.0'
@@ -15,6 +15,7 @@ The facility administrator monitors devices from the [admin dashboard](../admin)
 * WiFi must be enabled on both devices.
 * When **Play Sound** is tapped repeatedly on the client during network congestion, the congestion may cause a delay in the playback. Once the congestion disappears, the audio plays back multiple times based on the number of taps.
 * During network congestion, client requests over WiFi frequency band 2.4 GHz may not reach the server. For example, requests to Play Sound may not reach the intended device. In this situation, Zebra recommends to move to a 5 GHz frequency band or move to another network without congestion.
+* During network congestion, the user may need to wait for 10 seconds before being able to exit the Play Sound screen.
 
 <!--
 > WiFi and Bluetooth must be enabled on both devices.
@@ -44,7 +45,8 @@ The next time the target device reports to the server, it identifies it is marke
 <font color="blue">[Associate]</font> Open Device Tracker client on the associate's device. In the list of "Devices to be found", tap on the target device to find. The **Device Details** screen appears providing information on the device including “Last Connected AP”, which identifies the last known AP zone where the device is located. Walk to the AP zone and tap **Go** to begin the device search. <br>
 <font color="orange">[Admin]</font> On the admin dashboard, the device automatically changes state from "To be Found" to "Being Found". 
 4. **Play sound to search for device** <br>
-<font color="blue">[Associate]</font> Once in the AP zone, tap **Play Sound** on the associate's device to play audio on the target device. Walk towards the chirping sound heard to locate the target device. To return back to the main screen, tap the device back button. **Important:** The time specified in the [Reporting Frequency](../config/#applicationconfiguration) needs to elapse before the sound can be played. For example, if the Reporting Frequency is set to 5 minutes, the associate must wait for 5 minutes before tapping **Play Sound**.
+<font color="blue">[Associate]</font> Once in the AP zone, tap **Play Sound** on the associate's device to play audio on the target device. Walk towards the chirping sound heard to locate the target device. To return back to the main screen, tap the device back button. <br>
+**Important:** The time specified in the [Reporting Frequency](../config/#applicationconfiguration) needs to elapse before the sound can be played. For example, if the Reporting Frequency is set to 5 minutes, the associate must wait for 5 minutes before tapping **Play Sound**.
 
 5. **Device found.** <br>
 <font color="blue">[Associate]</font> Once the device is found, tap **Device found** at the bottom of the screen. Some devices may require the user to scroll down the screen for the button to be visible. Tap “Yes” to the confirmation message to designate the device as found. <br>
@@ -80,18 +82,21 @@ _In this scenario, approximately 5 minutes need to elapse (the next time the tar
 
 If the device cannot be located, in step 4 above tap on "Cannot find" and proceed to tap "Yes" to the confirmation message. On the admin dashboard, the device status is changed from "Being found" to "Cannot find". 
 
+<!--
 ##Track Device Presence
 The admin dashboard on the web portal monitors device tracking by providing information on: misplaced devices, devices that are being searched for, devices that have been found, and devices that cannot be found. For each device, the “Connected AP” friendly name provides a general location of where the device resides based on the AP the device is connected to. The connected AP is displayed both on the admin dashboard and Device Tracker client. 
-
+-->
 ##Prevent Misplaced Devices
-Prevent devices from being misplaced by monitoring the low battery state so action can be taken by the administrator to charge the device prior to battery loss. Configure the “Low Power Alert Threshold %” in the Settings screen from the web portal to set the threshold value. When a device battery drops below this defined threshold, the device is listed in the Low Battery section in the admin dashboard. The admin can then initiate the device to be located by [marking the device "To be found"](./#locatingdevices).
+Prevent devices from being misplaced by monitoring the low battery state so action can be taken by the administrator to charge the device prior to battery loss. Configure the “Low Power Alert Threshold %” in the [Settings screen](../config) from the web portal to set the threshold value. When a device battery drops below this defined threshold, the device is listed in the Low Battery section in the admin dashboard. The admin can then initiate the device to be located by [marking the device "To be found"](./#locatingdevices).
+
+<!--
 
 ##Device Tagging
 Tag devices for easier organization and tracking. Refer to [Organize Devices](../admin/#organizedevices) in the Admin View.
 
 ##Friendly Names
 Use of friendly names for devices allows for easier device identification. The same holds true for access point friendly names to quickly identify the device location based on the access point it is connected to. See [Device & Access Point Management](../config/#device&accesspointmanagement) in the Configuration section.
-
+-->
 <br>
 
 -----

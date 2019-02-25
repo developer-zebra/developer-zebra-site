@@ -9,7 +9,7 @@ productversion: '1.0'
 Monitoring device presence and prevention of misplaced devices is important for smooth operational productivity. This section covers the procedures to organize, track, locate, and prevent misplaced devices.
 
 ## Locating Devices
-The facility administrator monitors devices from the [admin dashboard](../admin) and can mark a device "To be found" if it is misplaced or at risk, e.g. needs to be charged due to low battery. The administrator assigns an associate to search the target device by using their device to locate the general area the target device resides based on the Access Point (AP) where it last connected. Then a sound can be played by tapping the Play Sound button on the associate's device to locate the target device by audio sound, determining its location. The volume level and sound duration can be adjusted in the server [Settings](../config).
+The facility administrator monitors devices from the [admin dashboard](../admin) and can mark a device "To be found" if it is misplaced or at risk, e.g. needs to be charged due to low battery. The administrator assigns an associate to search the target device by using their Zebra device to locate the general area the target device resides based on the Access Point (AP) where it last connected. Then a sound can be played by tapping the Play Sound button on the associate's device to locate the target device by audio sound, determining its location. The volume level and sound duration can be adjusted in the server [Settings](../config).
 
 **Important**:
 * WiFi must be enabled on both devices.

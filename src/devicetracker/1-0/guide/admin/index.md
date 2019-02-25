@@ -44,6 +44,7 @@ Notes:
 * When the checkbox in the table header is ticked on the dashboard, it selects all devices listed in the page. 
 * At the bottom left of the dashboard, select the "rows per page" drop-down and choose the value to increase the number of devices displayed in the dashboard.
 * If a device is in the "Never Connected" state, no action can be taken upon it since it has not registered with the server.
+* If searching for devices based on "Connection State" then filtering by "Connected - Known AP", the .csv file includes both "Connected - Known AP" and "Connected - Unknown AP" data when exporting the results. The data can be further filtered within the .csv file.
 
 ##Device Action
 Action can be taken on any selected device(s) in the Active tab.  Once the device is selected from the dashboard, the Action menu is accessible with the following options:

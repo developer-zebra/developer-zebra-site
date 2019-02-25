@@ -14,7 +14,7 @@ contentlist:
       - title: App Gallery Manager
         url: appgallerymgr
         icon: /mx/icons/mx.png
-        description: The AppMgr allows you manage the set of user applications that are installed on the device.
+        description: The AppGalleryMgr allows configuration of AppGallery client settings on the device.
       - title: Browser Manager
         url: browsermgr
         description: The Browser Manager allows you to configure browser settings like the default home page.
@@ -178,6 +178,10 @@ contentlist:
       - title: Hosts Manager
         url: hostsmgr
         description: 'The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks.'
+        icon: /mx/icons/wifi.png
+      - title: NFC Manager
+        url: hostsmgr
+        description: 'The MfcMgr allows for control and configuration of the NFC radio and its settings.'
         icon: /mx/icons/wifi.png
       - title: WiFi Manager
         url: wifi

@@ -38,7 +38,7 @@ The procedure to locate a device follows (based on user role):
        A. Tick the checkbox for the device row. <br>
        B. Click on the Action menu and select “Set device: ‘To be found’”.  <br>
        C. Click “OK” on the confirmation message. The device status changes from "Active" to "To be found". <br>
-The next time the target device reports to the server, it identifies it is marked "To be found". The length of time this takes is based on the [Reporting Frequency](../config/#applicationconfiguration). <!--and the elapsed time since the last report was received (seen in the **Updated** column on the [admin dashboard](../admin)) <sup>[1]</sup>. -->
+The next time the target device reports to the server, it identifies it is marked "To be found" with a notification message. The length of time this takes is based on the [Reporting Frequency](../config/#applicationconfiguration). <!--and the elapsed time since the last report was received (seen in the **Updated** column on the [admin dashboard](../admin)) <sup>[1]</sup>. -->
 2. **An associate is tasked to find the device.** <br>
 <font color="orange">[Admin]</font> The administrator assigns an associate to find the device, using the client app on their device as a locationing tool.
 3. **Start device search based on connected AP.** <br>
@@ -46,7 +46,9 @@ The next time the target device reports to the server, it identifies it is marke
 <font color="orange">[Admin]</font> On the admin dashboard, the device automatically changes state from "To be Found" to "Being Found". 
 4. **Play sound to search for device** <br>
 <font color="blue">[Associate]</font> Once in the AP zone, tap **Play Sound** on the associate's device to play audio on the target device. Walk towards the chirping sound heard to locate the target device. To return back to the main screen, tap the device back button. <br>
-**Important:** The time specified in the [Reporting Frequency](../config/#applicationconfiguration) needs to elapse before the sound can be played. For example, if the Reporting Frequency is set to 5 minutes, the associate must wait for 5 minutes before tapping **Play Sound**.
+**Important:** The time specified in the [Reporting Frequency](../config/#applicationconfiguration) needs to elapse before the sound can be played. For example, if the Reporting Frequency is set to 5 minutes, the associate must wait for 5 minutes before tapping **Play Sound**. Once the target device reports to the server and receives the flag that it is in the "To be found" state, it automatically changes the reporting frequency to 3 seconds for more frequent updates to the server until the device has been found. 
+    ![img](find_device.png)
+    _Figure 1. Device Tracker client_ 
 
 5. **Device found.** <br>
 <font color="blue">[Associate]</font> Once the device is found, tap **Device found** at the bottom of the screen. Some devices may require the user to scroll down the screen for the button to be visible. Tap “Yes” to the confirmation message to designate the device as found. <br>

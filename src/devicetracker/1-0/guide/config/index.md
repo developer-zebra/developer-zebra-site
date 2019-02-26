@@ -21,7 +21,7 @@ In the [Admin View](../admin) dashboard, click on the **Settings** tab to displa
 * **Reporting Frequency** - Defines the frequency in minutes for the Device Tracker client to report to the server. When a device is marked to “To Be Found”, the Reporting Frequency time needs to elapse (eg. minimum of 5 minutes) before starting the device search with the Device Tracker client. This value should be set lower than the **Disconnect Threshold Time**. Minimum value: 5, maximum value: 60.
 
 * **Chirping**:
- * **Volume Level** - Specifies the loudness level of the chirping sound to be heard from the device being located. Minimum value: 10, maximum value: 100.
+ * **Volume Level** - Specifies the loudness level of the chirping sound to be heard from the device being located. Minimum value: 15, maximum value: 100.
      * **Duration** - Amount of time in seconds for the chirping to sound on the device being located. Minimum value: 1, maximum value: 30.
 
 

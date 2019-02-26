@@ -63,12 +63,12 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
 
 * **New [NFC Manager](../../mx/nfcmgr)** CSP adds these new capabilities:  
  * Enable/Disable: 
-  * NFC radio and its ability to communicate
-  * NFC Data Exchange Format
-  * Peer-to-Peer mode
-  * CPU boost mode
-  * Card Emulation mode
-  * NFC usage when the Android "lock screen" is displayed
+   * NFC radio and its ability to communicate
+   * NFC Data Exchange Format
+   * Peer-to-Peer mode
+   * CPU boost mode
+   * Card Emulation mode
+   * NFC usage when the Android "lock screen" is displayed
  * Select type A, B, F, or V tags for use
  * Select communication speed for Types A and B cards (TC55)
  * Select communication speed for ISO 14443-4 cards (TC75)
@@ -82,8 +82,8 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
 * **Enhanced [Cellular Manager](../../mx/cellularmgr)** adds this new feature:
  * Specify an APN authentication type
 * **Enhanced [KeyMapping Manager](../../mx/keymappingmgr)** added this new feature:
- * Select a key behavior for' Diamond' mode
-* **Enhanced [Wi-Fi](../../wifi) CSP** adds this new feature:
+ * Select a key behavior for 'Diamond' mode
+* **Enhanced [Wi-Fi](../../mx/wifi) CSP** adds this new feature:
  * Enable/Disable Wi-Fi verbose logging
 
 ### API Enhancements

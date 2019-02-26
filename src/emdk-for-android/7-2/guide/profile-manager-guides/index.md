@@ -105,7 +105,7 @@ automenu:
         - title: Hosts Manager
           url: /emdk-for-android/7-2/mx/hostsmgr/
         - title: NFC Manager
-          url: /emdk-for-android/7-2/mx/ncfmgr/
+          url: /emdk-for-android/7-2/mx/nfcmgr/
         - title: WiFi Manager
           url: /emdk-for-android/7-2/mx/wifi/
         - title: Wireless Manager

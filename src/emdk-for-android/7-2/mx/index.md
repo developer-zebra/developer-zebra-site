@@ -180,8 +180,8 @@ contentlist:
         description: 'The HostsMgr allows the device to be assigned a Host Name by which the device can be identified by admins, applications and other devices on local and DNS-enabled IP networks.'
         icon: /mx/icons/wifi.png
       - title: NFC Manager
-        url: hostsmgr
-        description: 'The MfcMgr allows for control and configuration of the NFC radio and its settings.'
+        url: nfcmgr
+        description: 'The NfcMgr allows for control and configuration of the NFC radio and its settings.'
         icon: /mx/icons/wifi.png
       - title: WiFi Manager
         url: wifi

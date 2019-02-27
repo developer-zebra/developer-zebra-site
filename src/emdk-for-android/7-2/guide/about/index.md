@@ -62,7 +62,7 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
 **Now supports MX 8.3**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
 
 * **New [NFC Manager](../../mx/nfcmgr)** CSP adds these new capabilities:  
- * Enable/Disable: 
+ * **Enable/Disable**: 
    * NFC radio and its ability to communicate
    * NFC Data Exchange Format
    * Peer-to-Peer mode

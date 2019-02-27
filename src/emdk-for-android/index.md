@@ -1,12 +1,12 @@
 ---
 title: EMDK For Android
 layout: redirect.html
-redirect_url: /emdk-for-android/7-0/guide/about
+redirect_url: /emdk-for-android/7-2/guide/about
 product: EMDK For Android
-productversion: '7.0'
+productversion: '7.2'
 ---
 
-### Loading the latest documentation...
+### Loading the latest EMDK for Android documentation...
 
 
 

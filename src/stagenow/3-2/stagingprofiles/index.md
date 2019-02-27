@@ -378,26 +378,33 @@ To export all staging profiles:
 
 To import a profile:
 
-1. Select All Profiles.
+1. **Click "All Profiles"** in the Home screen's left-hand pane:
 
     ![img](../images/AllProfiles.jpg)
 
-2. Select the Import Profile(s) button.
+2. **Click "Import Profile(s)"** button. A navigation dialog appears: 
 
     ![img](../images/importprofile1.jpg)
 
-3. Select a file using the browse button, and select Import. A window indicates that the profile was imported successfully 
+3. **Navigate to the file to be imported** and **click "Import"** button. A dialog appears to indicate that the profile was imported successfully. <br>
+**Click OK**. 
 
-4. Select OK. The profile appears in the profiles list.
-
-Profiles that were locked during export appear with a lock icon.
+4. The imported profile appears in the profiles list. Profiles locked during export appear with a lock icon after import:
 
 ![img](../images/Profile_withLock.jpg)
+
+> `IMPORTANT:` After importing a staging Profile, its settings counters are reset to zero (see image below).  
+
+![img](used_in_profiles.png)
+_Click image to enlarge; ESC to exit_.
+
+
+<!-- 2/26/19- removed lines below; obsolete. 
 
 Profiles created in StageNow 2.0 are imported as MX 4.3 profiles.
 
 Note: RD settings are not exported and so cannot be imported.
-
+-->
 -----
 
 ## Deleting a Staging Profile

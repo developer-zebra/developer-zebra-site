@@ -83,7 +83,14 @@ For more information about approved languages or to download a localized operati
 
 -----
 
-## New in DataWedge 7.1
+## New in DataWedge 7.2
+* New **[Decode Screen Notification](../input/barcode/#scanparams)** parameters added for deocde screen time and translucency level.
+* Supported added for new **[DotCode decoder](../input/barcode/#decoderselection)**.
+
+-----
+## Recent Version History
+
+### Added in DataWedge 7.1
 * New **[Decode Screen Notification](../input/barcode/#scanparams)** for decode feedback in Scan Params.
 * **[Voice Input](../input/voice)** for voice-to-data capture officially released (non-beta). 
 * New **[End Detection Timeout](../input/voice/#configuration)** option for Voice Input.
@@ -96,9 +103,6 @@ For more information about approved languages or to download a localized operati
  * **[IP Output](../api/setconfig/#setipoutput)**
  * **[Multiple modules (full profile)](../api/setconfig/#setconfigurationformultiplemodulesfullprofileinasingleintent)** using a single intent
  * **[New Tokens for UDI data output](../api/setconfig/#tokenparameters)**
-
------
-## Recent Version History
 
 ### Added in DataWedge 7.0
 New updates are identical to DataWedge 6.9.

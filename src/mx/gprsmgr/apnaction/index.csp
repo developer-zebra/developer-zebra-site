@@ -32,4 +32,4 @@ parm:
       description: Causes all existing APNs to be removed.
 ---
 
-Contains the list of actions that can be performed on an APN.
+Contains the list of actions that can be performed on an Access Point Name (APN).

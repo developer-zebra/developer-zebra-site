@@ -48,16 +48,115 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 -----
 
-## New in v7.2
+## New in 7.3
 
 ### Supported Devices
 No new device support added in this version. 
 
 ### New Features
+ 
+**Now supports MX 9.0**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
+* **Enhanced [Battery Manager](../../mx/batterymgr)** now allows an admin to:
+ * Specify a critically low battery threshold
+* **Enhanced [UI Manager](../../mx/uimgr)** now allows an admin to:
+ * Control user access to the Large Key Indicator (MC93 device only)
+ * Turn the Large Key Indicator on or off
+
+**Also now supports MX 8.4**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
+* **Enhanced [GPRS Manager](../../mx/gprsmgr)**  now allows an admin to:
+ * Specify the Mobile Virtual Network Operator (MVNO) type for an Access Point Name (APN)
+ * Specify APN MVNO Match Data
+* **Enhanced [UI Manager](../../mx/uimgr)**  now allows an admin to:
+ * Control user access to the On-Screen Power Button
+ * Control user access to the Status Bar
+* **Enhanced [Wi-Fi](../../mx/uimgr) CSP** can now enable/disable:
+  * Aggregated MAC Protocol Data Unit (AMPDU)
+  * Gratuitous ARP address resolution protocol
+  * 2g Channel Bonding (40MHz-wide channel in 2.4GHz band)
+  * Configuration of Extended WLAN settings
+
+**Now supports Secure Access Module (SAM) APIs** for conducting secure NFC transactions on Oreo-based TC77 and TC72 devices with SAM hardware. 
+
+**SAM APIs can be used to**:
+* Enumerate available SAMs in the device
+* Connect to a SAM
+* Close a connection with a SAM
+* Send APDU commands
+* Retrieve the active SAM slot
+* Check current SAM status (regardless of SAM connection status)
+* Check the SAM type (supports MIFARE, CALYPSO and FELICA)
+
+Note: SAM APIs support only transceiver commands with the SAM. For NFC tag reading and tag-related transactions, Zebra recommends using the standard [Android NFC APIs](https://developer.android.com/guide/topics/connectivity/nfc).
+
+### API Enhancements
+
+Enhanced Barcode Manager API with following features. Currently these features are supported only on Oreo (Android 8.1.0) devices:
+
+Added support for new Symbology and Label type GridMatrix:
+
+Added new enum GridMatrixInverse under ScannerConfig - Describes Enable/Disable/Auto options for decoding GridMatrix barcodes with inverse reflectance.
+
+Added new enum GridMatrixMirror under ScannerConfig - Describes Enable/Disable/Auto options for decoding mirrored GridMatrix barcodes.
+
+Added new parameter inverse under ScannerConfig.DecoderParams.GridMatrix - This allows to select one option from GridMatrixInverse enum.
+
+Added new parameter mirror under ScannerConfig.DecoderParams.GridMatrix- This allows to select on option from GridMatrixMirror enum.
+
+Added new decoder parameters under ScannerConfig.DecoderParams.Signature:
+
+width - Use to set width of the image. The aspect ratio of Width to Height must match the aspect ratio of the signature capture barcode to avoid distortion in captured image.
+
+height - Use to set height of the image. The aspect ratio of Width to Height must match the aspect ratio of the signature capture barcode to avoid distortion in captured image.
+
+format - Use to set format of the image.
+
+jpegQuality - Use to set jpeg quality of the image. A value between 5 and 100 with a step of 5. 100 is the highest quality image and 5 means optimize for image size.
+
+bpp - Use to set bits per pixel for a black and white image. This parameter is not applicable to JPEG format.
+
+Added new decoder parameter under ScannerConfig.DecoderParams.I2of5:
+
+ 
+febraban - This allows to enable or disable inserting special check characters in the transmitted data stream of Interleaved 2 of 5 barcodes which are of length 14 and meet specific Febraban criteria.
+
+ 
+
+Added new scanner parameters under ScannerConfig.ScanParams:
+
+decodeScreenNotificationTime - Sets the length of time (in milliseconds) to display the screen overlay upon successful decode.
+
+decodeScreenTranslucencyLevel - Sets the percentage of translucency of decode screen notification overlay. This value can be from 20 to 50 with a step of 5.
+
+Added new parameter under ScannerConfig.MultiBarcodeParams:
+
+instantReporting - Enables/Disables instantaneous reporting of unique barcodes. Enabling this parameter will ignore the value of multiBarcodeParams.barcodeCount param and will report the scanned data to the user instantaneously, without waiting to end the scanning session.
+
+Added support for new Bluetooth Scanner DS8178:
+
+Added new enum under BarcodeManager.DeviceIdentifier for selecting the DS8178 Bluetooth Scanner.
+
+Added Digimarc decoding support for Rear Camera. Earlier, this feature was supported on internal imagers only
+
+Terminated EMDK for Android support for legacy SecureNFC APIs. Zebra recommends to use new Secure Access Module (SAM) APIs for secure NFC transactions instead.
+
+
+
+### Deprecations
+
+Support ends for devices running Android 6.x Marshmallow. EMDK for Android v7.0 was the final version supporting Marshmallow (Android 6.0.1) devices. Starting from EMDK for Android v7.1, only the Nougat (Android 7.1.2) or higher devices are supported.
+
+EMDK for Android support for legacy SecureNFC APIs has been terminated - EMDK for Android v7.2 was the final version supporting legacy SecureNFC APIs. Starting from EMDK for Android v7.3, Zebra recommends to use new Secure Access Module (SAM) APIs for secure NFC transactions instead.
+
+-----
+
+## Version History
+
+### Added in 7.2
+
+#### New Features
 <!-- 
 EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  Refer to the v7.2 TechDocs web page for more information.
  -->
-
 
 **Now supports MX 8.3**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
 
@@ -86,7 +185,7 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
 * **Enhanced [Wi-Fi](../../mx/wifi) CSP** adds this new feature:
  * Enable/Disable Wi-Fi verbose logging
 
-### API Enhancements
+#### API Enhancements
 
 **Enhanced Barcode Manager API** adds the following features on devices running Android Oreo 8.1 and newer: 
 * Adds support for new Symbology and Label type DotCode:
@@ -105,9 +204,7 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
 
 -----
 
-## Version History
-
-### Added in v7.1
+### Added in 7.1
 
 * Now supports Android Multi-user mode. See the [Multi-user Programming guide](../multiuser) for more information. 
 
@@ -242,7 +339,7 @@ This version adds support for the following scanners and/or imagers:
 
 -----
 
-### Added in v6.9
+### Added in 6.9
 
 EMDK 6.9 added support for the following Zebra devices/OSes:
 
@@ -355,7 +452,7 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
 
 -----
 
-### Added in v6.8
+### Added in 6.8
 
 * Supports compiling applications to Android API level 26 with new "EMDK APIs, Android 26, rev xx (API 26)" add-on
 

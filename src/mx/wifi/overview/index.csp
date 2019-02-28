@@ -34,6 +34,7 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 	* Call admission control
 	* Cisco Centralized Key Management (CCKM)
 	* Coverage Hole Detection
+	* Configure Extended WLAN settings
 	* Fast Transition (FT)
 	* Fast Transition Resource Request (FTRIC)
 	* FIPS Compliance

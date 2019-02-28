@@ -48,7 +48,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 -----
 
-## News in v7.2
+## New in v7.2
 
 ### Supported Devices
 No new device support added in this version. 
@@ -62,13 +62,13 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
 **Now supports MX 8.3**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
 
 * **New [NFC Manager](../../mx/nfcmgr)** CSP adds these new capabilities:  
- * **Enable/Disable**: 
-   * NFC radio and its ability to communicate
-   * NFC Data Exchange Format
-   * Peer-to-Peer mode
-   * CPU boost mode
-   * Card Emulation mode
-   * NFC usage when the Android "lock screen" is displayed
+   * **Enable/Disable**: 
+    * NFC radio and its ability to communicate
+    * NFC Data Exchange Format
+    * Peer-to-Peer mode
+    * CPU boost mode
+    * Card Emulation mode
+    * NFC usage when the Android "lock screen" is displayed
  * Select type A, B, F, or V tags for use
  * Select communication speed for Types A and B cards (TC55)
  * Select communication speed for ISO 14443-4 cards (TC75)

@@ -60,7 +60,7 @@ No new device support added in this version.
  * Specify a critically low battery threshold
 * **Enhanced [UI Manager](../../mx/uimgr)** now allows an admin to:
  * Control user access to the Large Key Indicator (MC93 device only)
- * Turn the Large Key Indicator on or off
+ * Turn the Large Key Indicator on or off (MC93 device only)
 
 **Also now supports MX 8.4**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
 * **Enhanced [GPRS Manager](../../mx/gprsmgr)**  now allows an admin to:
@@ -84,68 +84,38 @@ No new device support added in this version.
 * Send APDU commands
 * Retrieve the active SAM slot
 * Check current SAM status (regardless of SAM connection status)
-* Check the SAM type (supports MIFARE, CALYPSO and FELICA)
+* Check the SAM type (supports Calypso, FeliCA and MIFARE)
 
 Note: SAM APIs support only transceiver commands with the SAM. For NFC tag reading and tag-related transactions, Zebra recommends using the standard [Android NFC APIs](https://developer.android.com/guide/topics/connectivity/nfc).
 
 ### API Enhancements
 
-Enhanced Barcode Manager API with following features. Currently these features are supported only on Oreo (Android 8.1.0) devices:
-
-Added support for new Symbology and Label type GridMatrix:
-
-Added new enum GridMatrixInverse under ScannerConfig - Describes Enable/Disable/Auto options for decoding GridMatrix barcodes with inverse reflectance.
-
-Added new enum GridMatrixMirror under ScannerConfig - Describes Enable/Disable/Auto options for decoding mirrored GridMatrix barcodes.
-
-Added new parameter inverse under ScannerConfig.DecoderParams.GridMatrix - This allows to select one option from GridMatrixInverse enum.
-
-Added new parameter mirror under ScannerConfig.DecoderParams.GridMatrix- This allows to select on option from GridMatrixMirror enum.
-
-Added new decoder parameters under ScannerConfig.DecoderParams.Signature:
-
-width - Use to set width of the image. The aspect ratio of Width to Height must match the aspect ratio of the signature capture barcode to avoid distortion in captured image.
-
-height - Use to set height of the image. The aspect ratio of Width to Height must match the aspect ratio of the signature capture barcode to avoid distortion in captured image.
-
-format - Use to set format of the image.
-
-jpegQuality - Use to set jpeg quality of the image. A value between 5 and 100 with a step of 5. 100 is the highest quality image and 5 means optimize for image size.
-
-bpp - Use to set bits per pixel for a black and white image. This parameter is not applicable to JPEG format.
-
-Added new decoder parameter under ScannerConfig.DecoderParams.I2of5:
-
- 
-febraban - This allows to enable or disable inserting special check characters in the transmitted data stream of Interleaved 2 of 5 barcodes which are of length 14 and meet specific Febraban criteria.
-
- 
-
-Added new scanner parameters under ScannerConfig.ScanParams:
-
-decodeScreenNotificationTime - Sets the length of time (in milliseconds) to display the screen overlay upon successful decode.
-
-decodeScreenTranslucencyLevel - Sets the percentage of translucency of decode screen notification overlay. This value can be from 20 to 50 with a step of 5.
-
-Added new parameter under ScannerConfig.MultiBarcodeParams:
-
-instantReporting - Enables/Disables instantaneous reporting of unique barcodes. Enabling this parameter will ignore the value of multiBarcodeParams.barcodeCount param and will report the scanned data to the user instantaneously, without waiting to end the scanning session.
-
-Added support for new Bluetooth Scanner DS8178:
-
-Added new enum under BarcodeManager.DeviceIdentifier for selecting the DS8178 Bluetooth Scanner.
-
-Added Digimarc decoding support for Rear Camera. Earlier, this feature was supported on internal imagers only
-
-Terminated EMDK for Android support for legacy SecureNFC APIs. Zebra recommends to use new Secure Access Module (SAM) APIs for secure NFC transactions instead.
-
-
+**Enhanced Barcode Manager API** adds the following features on devices running Android 8.1 Oreo:
+* Support for GridMatrix Symbology and Label type:
+ * ScannerConfig enum `GridMatrixInverse` describes Enable/Disable/Auto options for decoding GridMatrix barcodes with inverse reflectance.
+ * ScannerConfig enum `GridMatrixMirror` describes Enable/Disable/Auto options for decoding mirrored GridMatrix barcodes.
+ * `ScannerConfig.DecoderParams.GridMatrix` parameter inverse allows selection of an option from GridMatrixInverse enum.
+ * `ScannerConfig.DecoderParams.GridMatrix` parameter mirror allows selection of an option from GridMatrixMirror enum.
+* Added the following `ScannerConfig.DecoderParams.Signature` decoder parameters:
+ * **width** sets the width of an image.
+ * **height** sets the height of an image. 
+ * **format** sets the image format.
+ * **jpegQuality** sets image quality to `.jpeg`.
+ * **bpp** sets the bits-per-pixel for a monochromatic image.
+* Added `ScannerConfig.DecoderParams.I2of5` decoder parameter:
+ * **febraban** can enable or disable insertion of special "check" characters in the transmitted data stream of Interleaved 2 of 5 barcodes that are of length 14 and meet specific Febraban criteria.
+* Added `ScannerConfig.ScanParams` scanner parameters:
+ * `decodeScreenNotificationTime` sets the length of time (in milliseconds) to display the screen overlay upon successful decode.
+ * `decodeScreenTranslucencyLevel` sets the percentage of translucency of the decode screen notification overlay.
+* Added a `ScannerConfig.MultiBarcodeParams` parameter:
+ * `instantReporting` can enable or disable instantaneous reporting of unique barcodes. Enabling this parameter ignores the value of `multiBarcodeParams.barcodeCount` param and reports the scanned data to the user instantaneously, without waiting until the end of the scanning session.
+* Added support for Bluetooth scanner DS8178:
+ * New `BarcodeManager.DeviceIdentifier` enum for selecting the DS8178 Bluetooth Scanner.
+ * **Digimarc decoding support for rear camera** (formerly supported only on internal imagers).
 
 ### Deprecations
 
-Support ends for devices running Android 6.x Marshmallow. EMDK for Android v7.0 was the final version supporting Marshmallow (Android 6.0.1) devices. Starting from EMDK for Android v7.1, only the Nougat (Android 7.1.2) or higher devices are supported.
-
-EMDK for Android support for legacy SecureNFC APIs has been terminated - EMDK for Android v7.2 was the final version supporting legacy SecureNFC APIs. Starting from EMDK for Android v7.3, Zebra recommends to use new Secure Access Module (SAM) APIs for secure NFC transactions instead.
+**Support ends for SecureNFC APIs**. EMDK-A 7.2 was the final version to support these legacy APIs. For secure NFC transactions with EMDK for Android 7.3, Zebra recommends using Secure Access Module (SAM) APIs.
 
 -----
 

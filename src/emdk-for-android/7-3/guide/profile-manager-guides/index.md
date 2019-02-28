@@ -7,109 +7,109 @@ automenu:
     - title: Getting Started
       items:
         - title: Using Profile Manager
-          url: /emdk-for-android/7-2/guide/profile-manager/
+          url: /emdk-for-android/7-3/guide/profile-manager/
         - title: MX Overview
-          url: /emdk-for-android/7-2/mx/overview
+          url: /emdk-for-android/7-3/mx/overview
         - title: Choosing a Version
-          url: /emdk-for-android/7-2/mx/choosing-a-version
+          url: /emdk-for-android/7-3/mx/choosing-a-version
         - title: Feature Compatibility
-          url: /emdk-for-android/7-2/mx/compatibility
+          url: /emdk-for-android/7-3/mx/compatibility
         - title: Getting Device MX Version
-          url: /emdk-for-android/7-2/mx/version-on-device
+          url: /emdk-for-android/7-3/mx/version-on-device
     - title: Application Management
       items:
         - title: App Manager
-          url: /emdk-for-android/7-2/mx/appmgr
+          url: /emdk-for-android/7-3/mx/appmgr
         - title: App Gallery Manager
-          url: /emdk-for-android/7-2/mx/appgallerymgr
+          url: /emdk-for-android/7-3/mx/appgallerymgr
         - title: Browser Manager
-          url: /emdk-for-android/7-2/mx/browsermgr
+          url: /emdk-for-android/7-3/mx/browsermgr
         - title: Enterprise Keyboard Manager
-          url: /emdk-for-android/7-2/mx/enterprisekeyboardmgr/
+          url: /emdk-for-android/7-3/mx/enterprisekeyboardmgr/
         - title: License Manager 
-          url: /emdk-for-android/7-2/mx/licensemgr/
+          url: /emdk-for-android/7-3/mx/licensemgr/
     - title: Device Configuration
       items:
         - title: Analytics Manager
-          url: /emdk-for-android/7-2/mx/analytics/
+          url: /emdk-for-android/7-3/mx/analytics/
         - title: Audio Volume UI Manager
-          url: /emdk-for-android/7-2/mx/audiomgr/
+          url: /emdk-for-android/7-3/mx/audiomgr/
         - title: Batch Manager
-          url: /emdk-for-android/7-2/mx/batchmgr/
+          url: /emdk-for-android/7-3/mx/batchmgr/
         - title: Battery Manager
-          url: /emdk-for-android/7-2/mx/batterymgr/
+          url: /emdk-for-android/7-3/mx/batterymgr/
         - title: Bug Report Manager
-          url: /emdk-for-android/7-2/mx/bugreportmgr/
+          url: /emdk-for-android/7-3/mx/bugreportmgr/
         - title: Clock
-          url: /emdk-for-android/7-2/mx/clock/
+          url: /emdk-for-android/7-3/mx/clock/
         - title: Component Manager
-          url: /emdk-for-android/7-2/mx/componentmgr/
+          url: /emdk-for-android/7-3/mx/componentmgr/
         - title: Condition Manager
-          url: /emdk-for-android/7-2/mx/conditionmgr/
+          url: /emdk-for-android/7-3/mx/conditionmgr/
         - title: Display Manager
-          url: /emdk-for-android/7-2/mx/displaymgr/
+          url: /emdk-for-android/7-3/mx/displaymgr/
         - title: Ethernet Manager
-          url: /emdk-for-android/7-2/mx/ethernetmgr/
+          url: /emdk-for-android/7-3/mx/ethernetmgr/
         - title: Personal Dictionary Manager
-          url: /emdk-for-android/7-2/mx/personaldictionarymgr/
+          url: /emdk-for-android/7-3/mx/personaldictionarymgr/
         - title: Power Manager
-          url: /emdk-for-android/7-2/mx/powermgr/
+          url: /emdk-for-android/7-3/mx/powermgr/
         - title: Touch Manager
-          url: /emdk-for-android/7-2/mx/touchmgr/
+          url: /emdk-for-android/7-3/mx/touchmgr/
         - title: Remote Scanner Manager
-          url: /emdk-for-android/7-2/mx/remotescannermgr/
+          url: /emdk-for-android/7-3/mx/remotescannermgr/
     - title: Core Framework
       items:
         - title: Persistence Manager
-          url: /emdk-for-android/7-2/mx/persistence
+          url: /emdk-for-android/7-3/mx/persistence
         - title: XML Manager
-          url: /emdk-for-android/7-2/mx/xml
+          url: /emdk-for-android/7-3/mx/xml
     - title: Security
       items:
         - title: Access Manager
-          url: /emdk-for-android/7-2/mx/accessmgr
+          url: /emdk-for-android/7-3/mx/accessmgr
         - title: Camera Manager
-          url: /emdk-for-android/7-2/mx/cameramgr
+          url: /emdk-for-android/7-3/mx/cameramgr
         - title: Cert Manager
-          url: /emdk-for-android/7-2/mx/certmgr
+          url: /emdk-for-android/7-3/mx/certmgr
         - title: DevAdmin
-          url: /emdk-for-android/7-2/mx/devadmin
+          url: /emdk-for-android/7-3/mx/devadmin
         - title: Encrypt Manager
-          url: /emdk-for-android/7-2/mx/encryptmgr
+          url: /emdk-for-android/7-3/mx/encryptmgr
         - title: SD Card Manager
-          url: /emdk-for-android/7-2/mx/sdcardmgr
+          url: /emdk-for-android/7-3/mx/sdcardmgr
         - title: Threat Manager
-          url: /emdk-for-android/7-2/mx/threatmgr
+          url: /emdk-for-android/7-3/mx/threatmgr
         - title: USB Manager
-          url: /emdk-for-android/7-2/mx/usbmgr
+          url: /emdk-for-android/7-3/mx/usbmgr
     - title: UI Settings
       items:
         - title: KeyMap Manager
-          url: /emdk-for-android/7-2/mx/keymappingmgr
+          url: /emdk-for-android/7-3/mx/keymappingmgr
         - title: PowerKey Manager
-          url: /emdk-for-android/7-2/mx/powerkeymgr
+          url: /emdk-for-android/7-3/mx/powerkeymgr
         - title: Settings Manager
-          url: /emdk-for-android/7-2/mx/settingsmgr
+          url: /emdk-for-android/7-3/mx/settingsmgr
         - title: UI Manager
-          url: /emdk-for-android/7-2/mx/uimgr
+          url: /emdk-for-android/7-3/mx/uimgr
     - title: Network
       items:
         - title: Bluetooth Manager
-          url: /emdk-for-android/7-2/mx/bluetoothmgr/
+          url: /emdk-for-android/7-3/mx/bluetoothmgr/
         - title: Cellular Manager
-          url: /emdk-for-android/7-2/mx/cellularmgr/
+          url: /emdk-for-android/7-3/mx/cellularmgr/
         - title: DHCP Options Manager
-          url: /emdk-for-android/7-2/mx/dhcp
+          url: /emdk-for-android/7-3/mx/dhcp
         - title: GPRS Manager
-          url: /emdk-for-android/7-2/mx/gprsmgr/
+          url: /emdk-for-android/7-3/mx/gprsmgr/
         - title: Hosts Manager
-          url: /emdk-for-android/7-2/mx/hostsmgr/
+          url: /emdk-for-android/7-3/mx/hostsmgr/
         - title: NFC Manager
-          url: /emdk-for-android/7-2/mx/nfcmgr/
+          url: /emdk-for-android/7-3/mx/nfcmgr/
         - title: WiFi Manager
-          url: /emdk-for-android/7-2/mx/wifi/
+          url: /emdk-for-android/7-3/mx/wifi/
         - title: Wireless Manager
-          url: /emdk-for-android/7-2/mx/wirelessmgr/
+          url: /emdk-for-android/7-3/mx/wirelessmgr/
 product: EMDK For Android
 productversion: '7.3'
 ---
@@ -124,19 +124,19 @@ All guides below were updated with a note to that effect.
     - title: Data Capture
       items:
         - title: Activity Selection
-          url: /emdk-for-android/7-2/mx/data-capture/activity
+          url: /emdk-for-android/7-3/mx/data-capture/activity
         - title: Barcode Input
-          url: /emdk-for-android/7-2/mx/data-capture/barcode
+          url: /emdk-for-android/7-3/mx/data-capture/barcode
         - title: Data Capture Plus
-          url: /emdk-for-android/7-2/mx/data-capture/data-capture-plus
+          url: /emdk-for-android/7-3/mx/data-capture/data-capture-plus
         - title: Int Output
-          url: /emdk-for-android/7-2/mx/data-capture/intent
+          url: /emdk-for-android/7-3/mx/data-capture/intent
         - title: IP Output
-          url: /emdk-for-android/7-2/mx/data-capture/IP
+          url: /emdk-for-android/7-3/mx/data-capture/IP
         - title: Keystroke Output
-          url: /emdk-for-android/7-2/mx/data-capture/keystroke
+          url: /emdk-for-android/7-3/mx/data-capture/keystroke
         - title: MSR Input
-          url: /emdk-for-android/7-2/mx/data-capture/msr
+          url: /emdk-for-android/7-3/mx/data-capture/msr
 
 
  -->

@@ -3,7 +3,7 @@ csp: batterymgr
 title: Set Critical Low Threshold
 type: parm
 order: 9
-mx: "8.3"
+mx: "9.0"
 devicetype: A
 info: Supported on devices with PowerPrecision and PowerPrecision+ batteries. 
 parm:

@@ -3,7 +3,7 @@ csp: uimgr
 title: LKI Enable/Disable
 type: parm
 order: 39
-mx: "8.3"
+mx: "9.0"
 osx: "8.1"
 devicetype: A
 info: Supported on MC93 devices only. 
@@ -13,7 +13,7 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "8.3"
+      mx: "9.0"
       osx: "8.1"
       devicetype: A
       info: Supported on MC93 devices only. 
@@ -22,14 +22,14 @@ parm:
     - code: 1
       devicetype: A
       name: Enable 
-      mx: "8.3"
+      mx: "9.0"
       osx: "8.1"
       info: Supported on MC93 devices only. 
       description: Enables the Large Key Indicator (LKI) pop-up on the device.
     - code: 2
       devicetype: A
       name: Disable
-      mx: "8.3"
+      mx: "9.0"
       osx: "8.1"
       info: Supported on MC93 devices only. 
       description: Disables the Large Key Indicator (LKI) pop-up on the device. 

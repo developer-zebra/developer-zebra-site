@@ -3,7 +3,7 @@ csp: wifi
 title: AMPDU Enable/Disable
 type: parm
 order: 56
-mx: "8.2"
+mx: "8.4"
 devicetype: A
 parm:
   pivotal: No
@@ -11,17 +11,17 @@ parm:
   type: list
   list:
     - code: 2
-      mx: "8.2"
+      mx: "8.4"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
     - code: 1
-      mx: "8.2"
+      mx: "8.4"
       devicetype: A
       name: Enable
       description: Enables use of AMPDU on the device. 
     - code: 0
-      mx: "8.2"
+      mx: "8.4"
       devicetype: A
       name: Disable
       description: Disables use of AMPDU on the device. 

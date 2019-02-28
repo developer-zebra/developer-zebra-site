@@ -3,7 +3,7 @@ csp: uimgr
 title: Status Bar Enable/Disable
 type: parm
 order: 40
-mx: "8.3"
+mx: "8.4"
 osx: "8.1"
 apilevel: "27"
 devicetype: A
@@ -14,7 +14,7 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "8.3"
+      mx: "8.4"
       osx: "8.1"
       apilevel: "27"
       devicetype: A
@@ -23,14 +23,14 @@ parm:
     - code: 1
       devicetype: A
       name: Enable 
-      mx: "8.3"
+      mx: "8.4"
       osx: "8.1"
       apilevel: "27"
       description: Enables the Android Status bar on the device.
     - code: 2
       devicetype: A
       name: Disable
-      mx: "8.3"
+      mx: "8.4"
       osx: "8.1"
       apilevel: "27"
       description: Disables the Android Status bar on the device. 

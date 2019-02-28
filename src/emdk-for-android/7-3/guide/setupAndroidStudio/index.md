@@ -2,7 +2,7 @@
 title: Set up EMDK For Android
 layout: guide.html
 product: EMDK For Android
-productversion: '7.2'
+productversion: '7.3'
 ---
 
 ##Installing EMDK for Android 

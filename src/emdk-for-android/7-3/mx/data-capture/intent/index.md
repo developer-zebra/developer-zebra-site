@@ -2,7 +2,7 @@
 title: Intent Profile Feature Reference
 layout: guide.html
 product: EMDK For Android
-productversion: '7.2'
+productversion: '7.3'
 ---
 
 ## Overview

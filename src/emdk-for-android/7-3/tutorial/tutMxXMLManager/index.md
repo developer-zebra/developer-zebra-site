@@ -2,7 +2,7 @@
 title: Manage MX Processing Behavior
 layout: guide.html
 product: EMDK For Android
-productversion: '7.2'
+productversion: '7.3'
 ---
 
 ## Overview

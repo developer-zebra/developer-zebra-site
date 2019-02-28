@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: analyticsmgr
 product: EMDK For Android
-productversion: '7.2'
+productversion: '7.3'
 ---
 
 

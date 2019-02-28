@@ -2,7 +2,7 @@
 title: EMDK For Android Setup on Mac (Android Studio)
 layout: guide.html
 product: EMDK For Android
-productversion: '7.2'
+productversion: '7.3'
 ---
 
 

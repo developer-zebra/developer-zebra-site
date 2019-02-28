@@ -2,7 +2,7 @@
 title: Disable Airplane Mode Menu Option using Power Key Manager
 layout: guide.html
 product: EMDK For Android
-productversion: '7.2'
+productversion: '7.3'
 ---
 
 ## Overview

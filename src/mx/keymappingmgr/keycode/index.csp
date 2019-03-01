@@ -839,13 +839,13 @@ parm:
       devicetype: A
       code: 215
       mx: "4.4"
-    - name: Yen
-      devicetype: A
-      code: 216
-      mx: "4.4"
     - name: Ro
       devicetype: A
       code: 217
+      mx: "4.4"
+    - name: Yen
+      devicetype: A
+      code: 216
       mx: "4.4"
     - name: Kana
       devicetype: A

@@ -1,0 +1,51 @@
+---
+csp: gprsmgr
+title: MVNO Type
+type: parm
+order: 6
+mx: "8.4"
+apilevel: "23"
+devicetype: A,B
+info: WWAN-enabled devices only
+parm:
+  pivotal: Yes
+  name: CustomMvnoType
+  type: list
+  list:
+    - code: 0
+      devicetype: A,B
+      name: Do not change
+      mx: "8.4"
+      apilevel: "23"
+      description: This value (or the absence of this parm from the XML) causes no change; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: None
+      mx: "8.4"
+      apilevel: "23"
+      description: Selects no authentication.
+    - code: 2
+      devicetype: A,B
+      name: PAP
+      mx: "8.4"
+      apilevel: "23"
+      description: Selects Password Authentication Protocol (PAP) as the authentication method.
+    - code: 3
+      devicetype: A,B
+      name: CHAP
+      mx: "8.4"
+      apilevel: "23"
+      description: Selects Challenge Authentication Protocol (CHAP) as the authentication method.
+    - code: 4
+      devicetype: A,B
+      name: PAP OR CHAP
+      mx: "8.4"
+      apilevel: "23"
+      description: Sets the APN to accept PAP or CHAP as the authentication method.
+---
+
+Used to specify the mobile virtual network operator (MVNO), a wireless network service provider 
+
+authentication method for the selected APN. Allows an APN to be created with a pre-specified authentication protocol. 
+
+is a wireless communications services provider that does not own the wireless network infrastructure over which it provides services to its customers.

@@ -19,4 +19,4 @@ Used to specify a Password that to authenticate on the APN being added. The valu
 
 Parm value input rules: 
 
-* String from 0 - 255 characters
+* String from 0&ndash;255 characters

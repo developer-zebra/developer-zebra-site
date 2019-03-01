@@ -19,4 +19,4 @@ Used to specify a User Name to authenticate on the APN being added. The value is
 
 Parm value input rules: 
 
-* String from 0 - 255 characters
+* String from 0&ndash;255 characters

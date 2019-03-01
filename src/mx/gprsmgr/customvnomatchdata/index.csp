@@ -1,0 +1,22 @@
+---
+csp: gprsmgr
+title: Custom MVNO Match Data
+type: parm
+order: 10
+mx: "8.4"
+apilevel: "19"
+devicetype: A
+parm:
+  presentif: The Custom MVNO Type is NOT "Do not change"
+  pivotal: No
+  name: CustomMvnoMatchData
+  type: string
+---
+
+Used to specify the Mobile Virtual Network Operator 
+
+**Zebra recommends testing carrier-specified MVNO settings on a working device and SIM card before deployment**. 
+
+Parm value input rules: 
+
+* String from 0&ndash;255 characters

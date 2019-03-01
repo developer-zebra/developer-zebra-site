@@ -95,7 +95,6 @@ parm:
       apilevel: "24"
     - code: 13
       devicetype: A
-      info: Supported on SDM660-platform devices only. 
       name: ClearApplicationUserData
       description: Erases all data created by the app specified in the Package parameter.
       mx: "9.1"

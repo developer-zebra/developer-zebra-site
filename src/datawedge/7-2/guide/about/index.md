@@ -85,13 +85,13 @@ For more information about approved languages or to download a localized operati
 
 ## New in DataWedge 7.2
 * New **[Decode Screen Notification](../input/barcode/#scanparams)** parameters added for deocde screen time and translucency level.
-* Supported added for new **[DotCode decoder](../input/barcode/#decoderselection)**.
+* Added new **[DotCode decoder](../input/barcode/#decoderselection)** support.
 
 -----
 ## Recent Version History
 
 ### Added in DataWedge 7.1
-* New **[Decode Screen Notification](../input/barcode/#scanparams)** for decode feedback in Scan Params.
+* New **[Decode Screen Notification](../input/barcode/#scanparams)** support added for decode feedback in Scan Params.
 * **[Voice Input](../input/voice)** for voice-to-data capture officially released (non-beta). 
 * New **[End Detection Timeout](../input/voice/#configuration)** option for Voice Input.
 * New **[Multi-User Support](#multiusersupport)** for multiple Android user profiles.

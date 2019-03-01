@@ -93,6 +93,14 @@ parm:
       mx: "8.0"
       osx: "8.1"
       apilevel: "24"
+    - code: 13
+      devicetype: A
+      info: Supported on SDM660-platform devices only. 
+      name: ClearApplicationUserData
+      description: Erases all data created by a device user.
+      mx: "9.1"
+      osx: "8.1"
+      apilevel: "24"
 ---
 
 Used to specify the Action to perform on an application or app-related setting. Actions can apply only to System apps, only to User apps, or to both (as noted in the table below). 

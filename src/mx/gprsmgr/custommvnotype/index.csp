@@ -2,7 +2,7 @@
 csp: gprsmgr
 title: MVNO Type
 type: parm
-order: 6
+order: 19
 mx: "8.4"
 apilevel: "23"
 devicetype: A

@@ -1,0 +1,34 @@
+---
+csp: gmsmgr
+title: GMS Profile
+type: parm
+order: 4
+mx: "9.0"
+devicetype: A
+info: Supported on SDM660-platform devices only. 
+parm:
+  pivotal: No
+  presentif: GMS Feature Set is "GMS Profile"
+  name: GMSProfile
+  type: list
+  list:
+    - code: 1
+      mx: "9.0"
+      devicetype: A
+      name: Chrome
+      description: Enables the Google Chrome browser on the device.
+    - code: 2
+      devicetype: A
+      name: Maps
+      mx: "9.0"
+      description: Enables Google Maps on the device.  
+    - code: 3
+      devicetype: A
+      name: FMS
+      mx: "9.0"
+      description: Enables the Firebase Cloud Messaging service on the device.
+---
+
+Controls the subset of GMS applications and services allowed to run on the device. 
+
+**`IMPORTANT:` If GMS apps were previously disabled using the "DisableGMSApps" App Manager Action, they must be re-enabled using the "EnableGMSApps" App Manager Action <u>prior to upgrading the device in an effort to enable GMS Manager</u>**. Failure to do so can result in unpredictable behavior. **NOTE:** It is NOT possible to transition a device to a new OS _<u>and</u>_ to implement GMS Restricted mode with a single XML profile.

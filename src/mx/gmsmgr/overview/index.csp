@@ -42,5 +42,6 @@ This also renders inoperable secondary applications and services that rely on th
 
 * Allow all GMS apps and services to run on the device
 * Enable a fixed, minimal set of GMS apps and services to run on the device
+* Enable only Google Chrome, Maps or the Firebase Cloud Messaging Service to run on the device 
 
 -----

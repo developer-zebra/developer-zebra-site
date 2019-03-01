@@ -51,6 +51,66 @@ parm:
       devicetype: A
       code: 16
       mx: "4.4"
+    - name: Plus
+      devicetype: A
+      code: 81
+      mx: "4.4"
+    - name: Minus
+      devicetype: A
+      code: 69
+      mx: "4.4"
+    - name: Equals
+      devicetype: A
+      code: 70
+      mx: "4.4"
+    - name: Left Bracket
+      devicetype: A
+      code: 71
+      mx: "4.4"
+    - name: Right Bracket
+      devicetype: A
+      code: 72
+      mx: "4.4"
+    - name: Grave
+      devicetype: A
+      code: 68
+      mx: "4.4"
+    - name: Slash
+      devicetype: A
+      code: 76
+      mx: "4.4"
+    - name: Backslash
+      devicetype: A
+      code: 73
+      mx: "4.4"
+    - name: Semicolon
+      devicetype: A
+      code: 74
+      mx: "4.4"
+    - name: Apostrophe
+      devicetype: A
+      code: 75
+      mx: "4.4"
+    - name: Comma
+      devicetype: A
+      code: 55
+      mx: "4.4"
+    - name: Period
+      devicetype: A
+      code: 56
+      mx: "4.4"
+    - name: Star
+      devicetype: A
+      code: 17
+      mx: "4.4"
+    - name: Pound
+      devicetype: A
+      code: 18
+      mx: "4.4"
+    - name: At
+      devicetype: A
+      code: 77
+      mx: "4.4"
     - name: A
       devicetype: A
       code: 29
@@ -241,7 +301,7 @@ parm:
       mx: "4.4"
     - name: NUMPAD 4
       devicetype: A
-      code: 148""
+      code: 148
       mx: "4.4"
     - name: NUMPAD 5
       devicetype: A
@@ -474,66 +534,6 @@ parm:
     - name: Function
       devicetype: A
       code: 119
-      mx: "4.4"
-    - name: Plus
-      devicetype: A
-      code: 81
-      mx: "4.4"
-    - name: Minus
-      devicetype: A
-      code: 69
-      mx: "4.4"
-    - name: Equals
-      devicetype: A
-      code: 70
-      mx: "4.4"
-    - name: Left Bracket
-      devicetype: A
-      code: 71
-      mx: "4.4"
-    - name: Right Bracket
-      devicetype: A
-      code: 72
-      mx: "4.4"
-    - name: Grave
-      devicetype: A
-      code: 68
-      mx: "4.4"
-    - name: Slash
-      devicetype: A
-      code: 76
-      mx: "4.4"
-    - name: Backslash
-      devicetype: A
-      code: 73
-      mx: "4.4"
-    - name: Semicolon
-      devicetype: A
-      code: 74
-      mx: "4.4"
-    - name: Apostrophe
-      devicetype: A
-      code: 75
-      mx: "4.4"
-    - name: Comma
-      devicetype: A
-      code: 55
-      mx: "4.4"
-    - name: Period
-      devicetype: A
-      code: 56
-      mx: "4.4"
-    - name: Star
-      devicetype: A
-      code: 17
-      mx: "4.4"
-    - name: Pound
-      devicetype: A
-      code: 18
-      mx: "4.4"
-    - name: At
-      devicetype: A
-      code: 77
       mx: "4.4"
     - name: Back
       devicetype: A

@@ -26,6 +26,26 @@ parm:
       devicetype: A
       name: Alpha Keys
       description: Specify a letter of the alphabet to select the corresponding key. For example, specify the letter "A" to select the "A" key.
+    - code: DOT
+      mx: "4.4"
+      devicetype: A
+      name: Period
+      description: The period or "dot" key
+    - code: COMMA
+      mx: "8.3"
+      devicetype: A
+      name: Comma
+      description: The comma key
+    - code: STAR
+      mx: "4.4"
+      devicetype: A
+      name: Star
+      description: The "Star" key (this is not the "asterisk" key)
+    - code: POUND
+      mx: "4.4"
+      devicetype: A
+      name: Pound
+      description: The Pound ("#") or number-sign key
     - code: F1-F12
       mx: "4.4"
       devicetype: A
@@ -66,26 +86,6 @@ parm:
       devicetype: A
       name: Backspace
       description: The Backspace or "BKSP" key
-    - code: DOT
-      mx: "4.4"
-      devicetype: A
-      name: Period
-      description: The period or "dot" key
-    - code: COMMA
-      mx: "8.3"
-      devicetype: A
-      name: Comma
-      description: The comma key
-    - code: STAR
-      mx: "4.4"
-      devicetype: A
-      name: Star
-      description: The "Star" key (this is not the "asterisk" key)
-    - code: POUND
-      mx: "4.4"
-      devicetype: A
-      name: Pound
-      description: The Pound ("#") or number-sign key
     - code: SPACE
       mx: "4.4"
       devicetype: A

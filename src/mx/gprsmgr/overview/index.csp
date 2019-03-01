@@ -7,7 +7,7 @@ info: WWAN-enabled devices only
 order: 0
 ---
 
-The GprsMgr administers Access Point Name (APN) settings for the General Packet Radio Service (GPRS) network used by the device. In general terms, an APN acts as a bridge between a device's carrier network and the internet or other packet data networks, and stores preferences for security, multimedia messaging (MMS) and other services to which the device might require access. 
+The GPRS Manager (GprsMgr) administers Access Point Name (APN) settings for the General Packet Radio Service (GPRS) network used by the device. In general terms, an APN acts as a bridge between a device's carrier network and the internet or other packet data networks, and stores preferences for security, multimedia messaging (MMS) and other services to which the device might require access. 
 
 ### Main Functionality
 
@@ -15,12 +15,18 @@ The GprsMgr administers Access Point Name (APN) settings for the General Packet 
 * Set default APN
 * Remove or replace old APNs
 * Remove all APNs
+* Select a Mobile Virtual Network Operator (MVNO) type:
+ * SPN
+ * INMI
+ * GID
+ * ICCID
 * Define Custom APN parameters, including: 
-	* Mobile Country Code 
-	* MMS Port, Proxy and Center
-	* Mobile Network Code
-	* Custom Port, Proxy, Server and Type
-	* Authentication type (PAP, CHAP, both or none)
+ * Mobile Country Code 
+ * MMS Port, Proxy and Center
+ * Mobile Network Code
+ * Custom Port, Proxy, Server and Type
+ * Authentication type (PAP, CHAP, both or none)
+ * MVNO match data
 
 ###About WWAN Communications
 Devices equipped with Wireless Wide Area Network (WWAN) or cellular data capabilities can support one or more of the following WWAN technology types:

@@ -28,7 +28,7 @@ The StageNow Staging Solution includes the following components:
 
 ### Devices Supported
 
-**StageNow 3.2 supports all Zebra devices running Android 6.0 Marshmallow and higher**. 
+**StageNow 3.3 supports all Zebra devices running Android 7.x Nougat and later**. 
 
 For more information, see the [StageNow About page](../about).
 

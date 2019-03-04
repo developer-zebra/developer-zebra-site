@@ -108,21 +108,21 @@ The following software must be installed on the staging workstation prior to usi
 
 **Support for MX 8.2** provides the following enhancements:
 
-* **Enhanced [UI Manager](../csp/uimgr)** adds these new features: 
+* **Enhanced [UI Manager](../csp/ui)** adds these new features: 
  * Enable/disable long-press on HOME key
  * Enable/disable date in Notification panel
  * Enable/disable long press on Recent Apps header icon to control access to app info
 
 **Support for MX 8.1** provides the following enhancements:
-* **Enhanced [Power Manager](../csp/powermgr)** adds these new actions:
+* **Enhanced [Power Manager](../csp/power)** adds these new actions:
  * Specify an on-device file to verify an OS update
  * Specify whether to suppress auto-reboot following an A/B upgrade
-* **Enhanced [Battery Manager](../csp/batterymgr)** adds these new actions:
+* **Enhanced [Battery Manager](../csp/battery)** adds these new actions:
  * Enable/disable use of Battery Swap Mode UI
  * Enable/disable “battery charging” LED
 * **Enhanced [Bug Report Manager](../csp/bugreportmgr)** adds a new action:
  * Specify a time before expiration (in days) to store or email bug reports or send them to the cloud 
-* **Enhanced [Cellular Manager](../csp/cellularmgr)** adds these new actions:
+* **Enhanced [Cellular Manager](../csp/cellular)** adds these new actions:
  * Enable/disable user access to public land mobile network (PLMN) a device uses
  * Specify the MCC/MNC network PLMN LockSet
  * Show/hide PLMN lock UI
@@ -141,7 +141,7 @@ The following software must be installed on the staging workstation prior to usi
  * Select the license source type to be used to return one or all licenses
 * **Enhanced [Settings Manager](../csp/settingsmgr)** adds these new actions:
  * Enable/disable the slide out drawer for accessing Android system settings
-* **Enhanced [UI Manager](../csp/uimgr)** adds these new actions: 
+* **Enhanced [UI Manager](../csp/ui)** adds these new actions: 
  * Enable/disable Split Screen mode
  * Enable/disable Do Not Disturb mode
  * Enable/disable Multi-user mode

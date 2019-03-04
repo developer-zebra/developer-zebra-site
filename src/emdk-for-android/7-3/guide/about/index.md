@@ -56,20 +56,20 @@ No new device support added in this version.
 ### New Features
  
 **Now supports MX 9.0**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
-* **Enhanced [Battery Manager](../../mx/battery)** now allows an admin to:
+* **Enhanced [Battery Manager](../../mx/batterymgr)** now allows an admin to:
  * Specify a critically low battery threshold
-* **Enhanced [UI Manager](../../mx/ui)** now allows an admin to:
+* **Enhanced [UI Manager](../../mx/uimgr)** now allows an admin to:
  * Control user access to the Large Key Indicator (MC93 device only)
  * Turn the Large Key Indicator on or off (MC93 device only)
 
 **Also now supports MX 8.4**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
-* **Enhanced [GPRS Manager](../../mx/gprs)**  now allows an admin to:
+* **Enhanced [GPRS Manager](../../mx/gprsmgr)**  now allows an admin to:
  * Specify the Mobile Virtual Network Operator (MVNO) type for an Access Point Name (APN)
  * Specify APN MVNO Match Data
-* **Enhanced [UI Manager](../../mx/ui)**  now allows an admin to:
+* **Enhanced [UI Manager](../../mx/uimgr)**  now allows an admin to:
  * Control user access to the On-Screen Power Button
  * Control user access to the Status Bar
-* **Enhanced [Wi-Fi](../../mx/wifi) CSP** can now enable/disable:
+* **Enhanced [Wi-Fi](../../mx/uimgr) CSP** can now enable/disable:
   * Aggregated MAC Protocol Data Unit (AMPDU)
   * Gratuitous ARP address resolution protocol
   * 2g Channel Bonding (40MHz-wide channel in 2.4GHz band)
@@ -143,14 +143,14 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
  * Select communication speed for ISO 14443-4 cards (TC75)
  * Select the Polling mode to balance performance with battery usage
  * Reset device to default NFC settings
-* **Enhanced [Access Manager](../../mx/access)** adds these new features:
+* **Enhanced [Access Manager](../../mx/accessmgr)** adds these new features:
  * Select the Action to perform for Access to Protected Services
  * Specify a Service Identifier for a Service
  * Specify Package Name of a Service Caller
  * Specify a File name for the Signature of a Caller
 * **Enhanced [Cellular Manager](../../mx/cellularmgr)** adds this new feature:
  * Specify an APN authentication type
-* **Enhanced [KeyMapping Manager](../../mx/keymap)** added this new feature:
+* **Enhanced [KeyMapping Manager](../../mx/keymappingmgr)** added this new feature:
  * Select a key behavior for 'Diamond' mode
 * **Enhanced [Wi-Fi](../../mx/wifi) CSP** adds this new feature:
  * Enable/Disable Wi-Fi verbose logging
@@ -247,44 +247,44 @@ This version adds support for the following scanners and/or imagers:
 
 **Support for MX 8.2** provides the following enhancements:
 
-* **Enhanced [UI Manager](../csp/ui)** adds these new features: 
+* **Enhanced [UI Manager](../../mx/uimgr)** adds these new features: 
  * Enable/disable long-press on HOME key
  * Enable/disable date in Notification panel
  * Enable/disable long press on Recent Apps header icon to control access to app info
 
 **Support for MX 8.1** provides the following enhancements:
-* **Enhanced [Power Manager](../csp/power)** adds these new actions:
+* **Enhanced [Power Manager](../../mx/powermgr)** adds these new actions:
  * Specify an on-device file to verify an OS update
  * Specify whether to suppress auto-reboot following an A/B upgrade
-* **Enhanced [Battery Manager](../csp/battery)** adds these new actions:
+* **Enhanced [Battery Manager](../../mx/batterymgr)** adds these new actions:
  * Enable/disable use of Battery Swap Mode UI
  * Enable/disable “battery charging” LED
-* **Enhanced [Bug Report Manager](../csp/bugreportmgr)** adds a new action:
+* **Enhanced [Bug Report Manager](../../mx/bugreportmgr)** adds a new action:
  * Specify a time before expiration (in days) to store or email bug reports or send them to the cloud 
-* **Enhanced [Cellular Manager](../csp/cellular)** adds these new actions:
+* **Enhanced [Cellular Manager](../../mx/cellularmgr)** adds these new actions:
  * Enable/disable user access to public land mobile network (PLMN) a device uses
  * Specify the MCC/MNC network PLMN LockSet
  * Show/hide PLMN lock UI
  * Determine the status of PLMN lock UI
  * Enable/disable Dual SIM Standby
  * Get the status of DSDS
-* **Enhanced [DHCP Option Manager](../csp/dhcp)** adds these new actions:
+* **Enhanced [DHCP Option Manager](../../mx/dhcp)** adds these new actions:
  * Enable/disable requests for a custom DHCP option from server
  * Request or disable a specified DHCP Option
  * Enable/disable sending of a custom DHCP Option to server
  * Send or disable a specified DHCP Option
  * Send a value with a specified custom DHCP Option
-* **Enhanced [License Manager](../csp/license)** adds these new actions:
+* **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions:
  * Specify an Activation ID to return a license from the device
  * Specify server friendly name for returning one or all licenses and for deleting license source
  * Select the license source type to be used to return one or all licenses
-* **Enhanced [Settings Manager](../csp/settings)** adds these new actions:
+* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds these new actions:
  * Enable/disable the slide out drawer for accessing Android system settings
-* **Enhanced [UI Manager](../csp/ui)** adds these new actions: 
+* **Enhanced [UI Manager](../../mx/uimgr)** adds these new actions: 
  * Enable/disable Split Screen mode
  * Enable/disable Do Not Disturb mode
  * Enable/disable Multi-user mode
-* **Enhanced [Wi-Fi](../csp/wifi)** adds these new actions:
+* **Enhanced [Wi-Fi](../../mx/wifi)** adds these new actions:
  * Enable/disable MAC address randomization
  * Enable/disable Call Admission Control
  * Enable/disable user control of Hotspot state (active/inactive)
@@ -338,20 +338,20 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
 
 **Now supports MX 8.0** in Profile Manager adds the following Settings Types and features:
 
-* **Enhanced [App Manager](../csp/appmgr)** adds these new actions:  
+* **Enhanced [App Manager](../../mx/appmgr)** adds these new actions:  
  * Clear Application Cache 
  * Enable/disable All GMS Applications on the "Safe to Disable" list
-* **Enhanced [License Manager](../csp/licensemgr)** adds these new actions: 
+* **Enhanced [License Manager](../../mx/licensemgr)** adds these new actions: 
  * Select a licensing file to be embedded in the XML
  * Select a pre-activated license source 
  * Query product-specific license information
  * Specify product name to be queried
  * Select the method used to supply the license .bin file
-* **Enhanced [Power Manager](../csp/powermgr)** adds a new action:
+* **Enhanced [Power Manager](../../mx/powermgr)** adds a new action:
  * Enable/disable PTT and scan buttons to wake the device from suspend mode 
-* **Enhanced [Settings Manager](../csp/settingsmgr)** adds a new action: 
+* **Enhanced [Settings Manager](../../mx/settingsmgr)** adds a new action: 
  * Enable/disable tethering and portable hotspot features
-* **Enhanced [UI Manager](../csp/uimgr)** adds these new actions:
+* **Enhanced [UI Manager](../../mx/uimgr)** adds these new actions:
  * Enable/disable the Magnification Gesture
  * Show/hide the Virtual KeyBoard while Physical Keyboard is active
 
@@ -452,13 +452,13 @@ EMDK 6.9 added support for the following Zebra devices/OSes:
 
 **Support for MX 7.2** adds the following Setting Types and features:
 
-* **Enhanced [Display Manager](../csp/display) CSP**:
+* **Enhanced [Display Manager](../../mx/displaymgr) CSP**:
  * On VC80 devices, adds the ability to force the display to “Stay Awake” and remain on.
-* **Enhanced [Power Manager](../csp/power) CSP**:
+* **Enhanced [Power Manager](../../mx/powermgr) CSP**:
     * Turn ON/OFF “Doze Mode” energy saving features on the device. When enabled, only specially designated apps can prevent the device from entering a low-power state to preserve battery life. 
-* **Enhanced [Remote Scanner Manager](../csp/rsm) CSP**:
+* **Enhanced [Remote Scanner Manager](../../mx/remotescannermgr) CSP**:
  * Supports RS-507 and DS-3608 scanners
-* **Enhanced [Settings Manager](../csp/settingsmgr) CSP**:
+* **Enhanced [Settings Manager](../../mx/settingsmgr) CSP**:
  * Enable/Disable application notification control on devices running Android Nougat
 
 <!-- 2/6/18- removed per eng. 
@@ -488,7 +488,7 @@ The EMDK's exclusive [Profile Manager](../profile-manager) Technology is an addi
 In order for your application to use the EMDK For Android, you will need to install the EMDK Device Runtime on each device. This runtime is included with the EMDK For Android installation. Check the [Setup Guide](../setupDevice) for instructions. In the future the EMDK Services will be included with the default operating system for the device.
  -->
 ### Samples & Programmer's Guide
-There are sample projects that are included as part of the EMDK For Android installation. You can import the project into your IDE and run on your device. Look at the [Sample Guide](../../samples/) for more details on using these samples. You can also reference the [Programmers Guide](../../tutorial/) for a complete walk-through of building your first EMDK For Android application.
+There are sample projects that are included as part of the EMDK For Android installation. You can import the project into your IDE and run on your device. Look at the [Sample Guide](../..//samples/) for more details on using these samples. You can also reference the [Programmers Guide](../../tutorial/) for a complete walk-through of building your first EMDK For Android application.
 
 ### Java APIs
 The EMDK for Android offers access to the device's Barcode capabilities through traditional native Java Barcode APIs.

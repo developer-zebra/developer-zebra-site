@@ -1,8 +1,8 @@
 ---
-title: StageNow 3.2
+title: StageNow 3.3
 layout: list-mx.html
 menu:
-  title: StageNow 3.2
+  title: StageNow 3.3
   img: /images/products/stagenow.png
   languages:
     - lang: cn,

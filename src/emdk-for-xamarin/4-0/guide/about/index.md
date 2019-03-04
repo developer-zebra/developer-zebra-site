@@ -50,7 +50,7 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 
 -----
 
-## What's New in v4.0
+## New in v4.0
  
 **Now supports MX 9.0**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
 * **Enhanced [Battery Manager](../../mx/batterymgr)** now allows an admin to:

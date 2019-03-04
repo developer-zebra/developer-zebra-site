@@ -118,14 +118,19 @@ Note: SAM APIs support only transceiver commands with the SAM. For NFC tag readi
 **Support ends for SecureNFC APIs**. EMDK-A 7.2 was the final version to support these legacy APIs. For secure NFC transactions with EMDK for Android 7.3, Zebra recommends using Secure Access Module (SAM) APIs.
  -->
 
-## What's New in 3.0
+-----
 
-### Development Environment 
+## Version History
+
+
+### Added in 3.0
+
+#### Development Environment 
 
 * **Now fully supports NuGet package management** 
 * **Now supports for Visual Studio for Mac OS**
 
-### Device Support
+#### Device Support
 
 Adds support for the following mobile computers running Android 8.1 Oreo: 
 
@@ -144,7 +149,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 
 -----
 
-### API enhancements
+#### API enhancements
 *Applies only to devices running Android 8.1.0 (Oreo) and higher*.
 
 **Enhanced Barcode Manager API**
@@ -169,7 +174,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 <!-- 10/5/18- above added and below removed- remnent of work done on "2.8" version, now defunct?
  -->
 
-### Other API Enhancements
+#### Other API Enhancements
 
 **Enhanced Barcode Manager API**:
 * Adds support for LI3608 rugged USB scanner
@@ -186,7 +191,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 
 -----
 
-### Software Support
+#### Software Support
 
 **Support for MX 8.2** provides the following enhancements:
 
@@ -232,12 +237,12 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
  * Enable/disable Call Admission Control
  * Enable/disable user control of Hotspot state (active/inactive)
 
-### Sample Code
+#### Sample Code
 
 * **[Code samples](../../samples) for EMDK for Xamarin are now available only online**; sample code is no longer installed on the development host as part of the EMDK installation.
 * **Help files for EMDK for Xamarin are now available only online**; help is no longer installed on the development host as part of the EMDK installation.
 
-### End of Support
+#### End of Support
 
 **IMPORTANT**: EMDK-X 3.0 no longer targets devices running Android 5.x Lollipop or older. 
 
@@ -254,7 +259,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 
 -----
 
-### Software Support
+#### Software Support
 
 <!-- not true. supports 2015 up to v15.5.  
 **On Windows, now supports <u>only</u> [Visual Studio 2017](https://www.visualstudio.com/vs/win)**
@@ -282,7 +287,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 
 -----
 
-### Deprecations
+#### Deprecations
 
 * **SecureNFC APIs** allow applications to perform secure communications with the NFC tags such as MifareDesfire, MifarePlus SL3 using the Secure Access Module (SAM). These APIs remain supported but are no longer being advanced.
 
@@ -298,9 +303,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 
 -----
 
-## Version History
-
-### Added in v2.7
+### Added in 2.7
 
 **Enhanced Barcode Manager API**:
 
@@ -348,7 +351,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 
 -----
 
-### Deprecations
+#### Deprecations
 
 * **Support for configuring DataWedge using EMDK Profile Manager is deprecated**. Profile Manager capabilities categorized under Data Capture are still supported but will no longer be advanced. Zebra recommends using [DataWedge intent-based APIs](/datawedge) to configure DataWedge profiles going forward.
 
@@ -358,7 +361,7 @@ Adds support for the following mobile computers running Android 8.1 Oreo:
 
 -----
 
-### Compatibility Notes
+#### Compatibility Notes
 
 * When upgrading to a new version of EMDK for Xamarin, **previous versions must be uninstalled**. Failure to remove previous versions will result in an incomplete installation of the new extension. 
 * Support for KitKat (Android 4.4.3 or higher) devices has been dropped. 

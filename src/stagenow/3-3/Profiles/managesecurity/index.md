@@ -2,7 +2,7 @@
 title: Manage Device Security
 layout: guide.html
 product: StageNow
-productversion: '3.2'
+productversion: '3.3'
 ---
 
 ## Overview

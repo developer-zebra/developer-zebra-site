@@ -2,7 +2,7 @@
 title: Perform OS Update
 layout: guide.html
 product: StageNow
-productversion: '3.2'
+productversion: '3.3'
 ---
 
 ## Overview

@@ -50,20 +50,20 @@ The following software must be installed on the staging workstation prior to usi
 ## New Features
  
 **Now supports MX 9.0**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
-* **Enhanced [Battery Manager](../csp/batterymgr)** now allows an admin to:
+* **Enhanced [Battery Manager](../csp/battery)** now allows an admin to:
  * Specify a critically low battery threshold
-* **Enhanced [UI Manager](../csp/uimgr)** now allows an admin to:
+* **Enhanced [UI Manager](../csp/ui)** now allows an admin to:
  * Control user access to the Large Key Indicator (MC93 device only)
  * Turn the Large Key Indicator on or off (MC93 device only)
 
 **Also now supports MX 8.4**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
-* **Enhanced [GPRS Manager](../csp/gprsmgr)**  now allows an admin to:
+* **Enhanced [GPRS Manager](../csp/gprs)**  now allows an admin to:
  * Specify the Mobile Virtual Network Operator (MVNO) type for an Access Point Name (APN)
  * Specify APN MVNO Match Data
-* **Enhanced [UI Manager](../csp/uimgr)**  now allows an admin to:
+* **Enhanced [UI Manager](../csp/ui)**  now allows an admin to:
  * Control user access to the On-Screen Power Button
  * Control user access to the Status Bar
-* **Enhanced [Wi-Fi](../csp/uimgr) CSP** can now enable/disable:
+* **Enhanced [Wi-Fi](../csp/wifi) CSP** can now enable/disable:
   * Aggregated MAC Protocol Data Unit (AMPDU)
   * Gratuitous ARP address resolution protocol
   * 2g Channel Bonding (40MHz-wide channel in 2.4GHz band)

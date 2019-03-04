@@ -48,7 +48,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 -----
 
-## New in 7.3
+## New in v7.3
 
 ### Supported Devices
 No new device support added in this version. 

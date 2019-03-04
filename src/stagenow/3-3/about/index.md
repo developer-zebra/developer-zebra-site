@@ -1,5 +1,5 @@
 ---
-title: StageNow 3.2
+title: StageNow 3.3
 layout: guide.html
 product: StageNow
 productversion: '3.3'
@@ -9,9 +9,9 @@ languages:
 
 ---
 
-StageNow 3.2 User Guide, Revision A; StageNow MN-003212; December, 2018
+StageNow 3.3 User Guide, Revision A; StageNow MN-003212; December, 2018
 
-#### Covers StageNow 3.2
+#### Covers StageNow 3.3
 
 ## Overview
 
@@ -43,26 +43,31 @@ The following software must be installed on the staging workstation prior to usi
 * MX 7.0
 
 > **IMPORTANT NOTE**:<br> 
-> <u>**StageNow 3.2 supports only devices running Android 7.x Nougat and newer**</u>.<br>Support for Android 6.x Marshmallow (and older) is discontinued in StageNow 3.2.
+> <u>**StageNow 3.3 supports devices running Android 8.x Oreo and Android 7.x Nougat**</u>.
 
 -----
 
 ## New Features
+ 
+**Now supports MX 9.0**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
+* **Enhanced [Battery Manager](../csp/batterymgr)** now allows an admin to:
+ * Specify a critically low battery threshold
+* **Enhanced [UI Manager](../csp/uimgr)** now allows an admin to:
+ * Control user access to the Large Key Indicator (MC93 device only)
+ * Turn the Large Key Indicator on or off (MC93 device only)
 
-**Support for MX 8.3** provides the following enhancements:
-
-* **Enhancements to [GMS Manager](../csp/gmsmgr)** provide two Google Mobile Services configuration modes:  
- * **Full mode** allows all GMS features and apps to be enabled as desired
- * **Restricted mode** allows operation of a fixed set of GMS apps, blocking all others
-* **A new [WorryFreeWiFi](../csp/worryfreewifi)** manager simplifies mobile device management with traffic analysis and reporting for customer/partner applications.
-* **A new [NFC Manager](../csp/nfc)** controls the behavior and options for NFC communications on the device. 
-* **Enhanced [UI Manager](../csp/ui)** provides ability enable and disable usage of the on-screen power button on the PS20 device.
-* **Enhanced [Access Manager](../csp/access)** can emulate device user interactions, allowing key events and touch events to be "injected" into the system by an otherwise unprivileged application. Other enhancements include service actions that can: 
- * Allow or prevent bindings to a service
- * Confirm that service binding is allowed
- * Allow or prevent service callers
- * Confirm that service calling is allowed
-* **Enhanced [File Manager](../csp/file)** can download and expand archive files by from a local PC or a server.
+**Also now supports MX 8.4**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
+* **Enhanced [GPRS Manager](../csp/gprsmgr)**  now allows an admin to:
+ * Specify the Mobile Virtual Network Operator (MVNO) type for an Access Point Name (APN)
+ * Specify APN MVNO Match Data
+* **Enhanced [UI Manager](../csp/uimgr)**  now allows an admin to:
+ * Control user access to the On-Screen Power Button
+ * Control user access to the Status Bar
+* **Enhanced [Wi-Fi](../csp/uimgr) CSP** can now enable/disable:
+  * Aggregated MAC Protocol Data Unit (AMPDU)
+  * Gratuitous ARP address resolution protocol
+  * 2g Channel Bonding (40MHz-wide channel in 2.4GHz band)
+  * Configuration of Extended WLAN settings
 
 -----
 

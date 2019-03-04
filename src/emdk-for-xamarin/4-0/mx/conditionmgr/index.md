@@ -6,7 +6,7 @@ mxversions:
     value: 7
 csp: conditionmgr
 product: EMDK for Xamarin
-productversion: '3.0'
+productversion: '4.0'
 ---
 
 

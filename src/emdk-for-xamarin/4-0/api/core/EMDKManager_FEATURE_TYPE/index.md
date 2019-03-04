@@ -2,7 +2,7 @@
 title: EMDKManager.FEATURE_TYPE
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '3.0' 
+productversion: '4.0' 
 ---
 This lists all the features exposed by the EMDK.
 

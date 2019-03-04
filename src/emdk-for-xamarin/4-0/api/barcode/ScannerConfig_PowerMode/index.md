@@ -2,7 +2,7 @@
 title: ScannerConfig.PowerMode
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '3.0' 
+productversion: '4.0' 
 ---
 Set laser scanner power mode
 

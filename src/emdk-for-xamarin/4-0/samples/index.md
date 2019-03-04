@@ -3,7 +3,7 @@ publish: false
 title: Samples
 layout: list-samples.html
 product: EMDK For Xamarin
-productversion: '3.0'
+productversion: '4.0'
 ---
 
 

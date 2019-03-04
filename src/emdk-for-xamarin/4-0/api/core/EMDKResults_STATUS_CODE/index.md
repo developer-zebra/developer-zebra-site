@@ -2,7 +2,7 @@
 title: EMDKResults.STATUS_CODE
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '3.0' 
+productversion: '4.0' 
 ---
 Defines all the status codes the library returns.
 

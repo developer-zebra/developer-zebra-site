@@ -2,7 +2,7 @@
 title: Diagnostic
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '3.0' 
+productversion: '4.0' 
 ---
 This class provides access to fetch the diagnostics information.
 

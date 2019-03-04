@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters+CanadianPostalDecoder
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '3.0' 
+productversion: '4.0' 
 ---
 The CanadianPostal class provides access to parameters that are available for the CanadianPostal decoder.
 

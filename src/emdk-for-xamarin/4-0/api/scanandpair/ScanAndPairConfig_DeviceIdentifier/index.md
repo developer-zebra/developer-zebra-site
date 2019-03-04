@@ -2,7 +2,7 @@
 title: ScanAndPairConfig.DeviceIdentifier
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '3.0' 
+productversion: '4.0' 
 ---
 Provides the list of DeviceIdentifier types.
 

@@ -30,7 +30,7 @@ screenshots:
   - 6.png
 layout: sample.html
 product: EMDK For Xamarin
-productversion: '3.0'
+productversion: '4.0'
 ---
 
 https://github.com/Zebra/samples-emdkforxamarin-3_0/tree/master/BarcodeSample1

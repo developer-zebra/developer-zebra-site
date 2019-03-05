@@ -49,6 +49,12 @@ The following software must be installed on the staging workstation prior to usi
 
 ## New Features
  
+1. StageNow generated NFC Staging profile .bin files can be used for USB staging, refer the USB staging functionality in StageNow TechDocs
+2. MX 9.0 Profiles make use of latest/new set of certificates to encrypt the Barcode, NFC and Audio data
+
+
+
+
 **Now supports MX 9.0**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
 * **Enhanced [Battery Manager](../csp/battery)** now allows an admin to:
  * Specify a critically low battery threshold

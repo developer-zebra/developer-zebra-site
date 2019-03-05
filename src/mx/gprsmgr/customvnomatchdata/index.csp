@@ -4,7 +4,7 @@ title: Custom MVNO Match Data
 type: parm
 order: 10
 mx: "8.4"
-devicetype: A
+devicetype: A,B
 parm:
   presentif: The Custom MVNO Type is NOT "Do not change"
   pivotal: No

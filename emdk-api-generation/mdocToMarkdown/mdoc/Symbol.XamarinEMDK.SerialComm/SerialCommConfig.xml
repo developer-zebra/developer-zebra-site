@@ -9,6 +9,7 @@
     <AssemblyVersion>2.6.0.69</AssemblyVersion>
     <AssemblyVersion>2.7.0.76</AssemblyVersion>
     <AssemblyVersion>3.0.0.41</AssemblyVersion>
+    <AssemblyVersion>4.0.0.2</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Object</BaseTypeName>
@@ -36,6 +37,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
@@ -63,6 +65,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -91,6 +94,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -108,6 +112,27 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="FlowControlMode">
+      <MemberSignature Language="C#" Value="public Symbol.XamarinEMDK.SerialComm.SerialCommConfig.FlowControlModes FlowControlMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.SerialComm.SerialCommConfig/FlowControlModes FlowControlMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("flowControlMode")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+FlowControlModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pre-defined constants to specify flow control.</summary>
+        <value></value>
+        <remarks></remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Parity">
       <MemberSignature Language="C#" Value="public Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits Parity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.SerialComm.SerialCommConfig/ParityBits Parity" />
@@ -119,6 +144,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -147,6 +173,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -175,6 +202,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -199,6 +227,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>

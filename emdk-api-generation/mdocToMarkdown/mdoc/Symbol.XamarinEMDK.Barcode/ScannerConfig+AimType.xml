@@ -9,6 +9,7 @@
     <AssemblyVersion>2.6.0.69</AssemblyVersion>
     <AssemblyVersion>2.7.0.76</AssemblyVersion>
     <AssemblyVersion>3.0.0.41</AssemblyVersion>
+    <AssemblyVersion>4.0.0.2</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Enum</BaseTypeName>
@@ -20,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Describes the type of aiming to use. This will take affect only when the continuous read is set to false.</summary>
+    <summary>Describes the type of aiming to use. Takes affect only when continuous read is set to false.</summary>
     <remarks>
     </remarks>
   </Docs>
@@ -36,6 +37,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -53,6 +55,27 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="Presentation">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimType Presentation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/AimType Presentation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("PRESENTATION")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Describes the type of aiming to use. Takes affect only when continuous read is set to false.</summary>
+        <value></value>
+        <remarks></remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PressAndRelease">
       <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AimType PressAndRelease { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/AimType PressAndRelease" />
@@ -64,6 +87,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -88,6 +112,7 @@
       <AssemblyInfo>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -116,6 +141,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -140,6 +166,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -164,6 +191,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -192,6 +220,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -220,6 +249,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -248,6 +278,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -279,6 +310,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

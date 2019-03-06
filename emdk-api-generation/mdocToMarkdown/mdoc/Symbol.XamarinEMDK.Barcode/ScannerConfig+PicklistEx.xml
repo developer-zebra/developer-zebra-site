@@ -9,6 +9,7 @@
     <AssemblyVersion>2.6.0.69</AssemblyVersion>
     <AssemblyVersion>2.7.0.76</AssemblyVersion>
     <AssemblyVersion>3.0.0.41</AssemblyVersion>
+    <AssemblyVersion>4.0.0.2</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Enum</BaseTypeName>
@@ -36,6 +37,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -64,6 +66,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -81,6 +84,27 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="Outdoor">
+      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PicklistEx Outdoor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/PicklistEx Outdoor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("OUTDOOR")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+PicklistEx</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Allows the imager or camera to decode only the barcode at the center of the reticle (cross-hair) pattern. This is useful when multiple barcodes might appear in the field of view during a decode session and only one is desired for decode. Note: Selecting the picklist might affect decoding performance.</summary>
+        <value></value>
+        <remarks></remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Software">
       <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PicklistEx Software { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/PicklistEx Software" />
@@ -92,6 +116,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -120,6 +145,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -144,6 +170,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -168,6 +195,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -202,6 +230,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -15,6 +15,7 @@
     <AssemblyVersion>2.6.0.69</AssemblyVersion>
     <AssemblyVersion>2.7.0.76</AssemblyVersion>
     <AssemblyVersion>3.0.0.41</AssemblyVersion>
+    <AssemblyVersion>4.0.0.2</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Object</BaseTypeName>
@@ -48,6 +49,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
@@ -78,6 +80,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -106,6 +109,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -134,6 +138,7 @@
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -158,6 +163,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -169,8 +175,10 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       </ReturnValue>
       <Docs>
         <summary>Failure option for auto character set selection.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoCharacterSetPreferredOrder">
@@ -179,6 +187,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -190,8 +199,10 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       </ReturnValue>
       <Docs>
         <summary>Selection of character sets available for automatic decoding.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeamTimer">
@@ -211,6 +222,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -234,6 +246,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -245,8 +258,10 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       </ReturnValue>
       <Docs>
         <summary>Selection of character set for decoding the barcode.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectionIdleTime">
@@ -266,6 +281,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -300,6 +316,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -328,6 +345,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -352,6 +370,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -362,9 +381,12 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
-        <value></value>
-        <remarks></remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisconnectOnExit">
@@ -384,6 +406,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -418,6 +441,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -449,6 +473,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -483,6 +508,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -517,6 +543,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -551,6 +578,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -579,6 +607,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -607,6 +636,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -642,6 +672,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -670,6 +701,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -698,6 +730,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -726,6 +759,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -753,6 +787,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -768,6 +803,27 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         </value>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SceneDetectionQualifier">
+      <MemberSignature Language="C#" Value="public Symbol.XamarinEMDK.Barcode.ScannerConfig.SceneDetectionQualifier SceneDetectionQualifier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/SceneDetectionQualifier SceneDetectionQualifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.Register("sceneDetectionQualifier")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+SceneDetectionQualifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Qualifier for starting scene detection when presentation Aim Type is selected.</summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -787,6 +843,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -817,6 +874,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <AssemblyVersion>2.6.0.69</AssemblyVersion>
         <AssemblyVersion>2.7.0.76</AssemblyVersion>
         <AssemblyVersion>3.0.0.41</AssemblyVersion>
+        <AssemblyVersion>4.0.0.2</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>

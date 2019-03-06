@@ -94,8 +94,8 @@ Note: SAM APIs support only transceiver commands with the SAM. For NFC tag readi
  * `ScannerConfig.DecoderParams.GridMatrix` parameter inverse allows selection of an option from GridMatrixInverse enum.
  * `ScannerConfig.DecoderParams.GridMatrix` parameter mirror allows selection of an option from GridMatrixMirror enum.
 * Added the following `ScannerConfig.DecoderParams.Signature` decoder parameters:
- * **width** sets the width of an image.
- * **height** sets the height of an image. 
+ * **width** sets the width of the image.
+ * **height** sets the height of the image. 
  * **format** sets the image format.
  * **jpegQuality** sets image quality to `.jpeg`.
  * **bpp** sets the bits-per-pixel for a monochromatic image.

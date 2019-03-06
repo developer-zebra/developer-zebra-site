@@ -92,7 +92,7 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
 * Adds support for new Symbology and Label type DotCode:
  * **enum DotCodeInverse under ScannerConfig** describes Enable/Disable/Auto options for decoding DotCode barcodes with inverse reflectance.
  * **enum DotCodeMirror under ScannerConfig** describes Enable/Disable/Auto options for decoding mirrored DotCode barcodes.
- * **inverse parameter under `ScannerConfig.DecoderParams.DotCode`** allows selection of one option from DotCodeInverse enum.
+ * **inverse parameter under `ScannerConfig.DecoderParams.DotCode`** allows selection of an option from DotCodeInverse enum.
  * **mirror parameter under `ScannerConfig.DecoderParams.DotCode`** allows selection of an option from DotCodeMirror enum.
 * **A new zoom reader parameter in `ScannerConfig.ReaderParams.ReaderSpecific.CameraSpecific`** sets the zoom level for the camera. 
  * Supported value ranges from 1&ndash;8 in increments of 1.

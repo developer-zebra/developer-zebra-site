@@ -1,7 +1,16 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="Symbol.XamarinEMDK" Version="3.0.0.41">
+    <Assembly Name="Symbol.XamarinEMDK" Version="4.0.0.2">
       <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.simulscan", Managed="Symbol.XamarinEMDK.SimulScan")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.serialcomm", Managed="Symbol.XamarinEMDK.SerialComm")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.scanandpair", Managed="Symbol.XamarinEMDK.ScanAndPair")</AttributeName>
+        </Attribute>
         <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk", Managed="Symbol.XamarinEMDK")</AttributeName>
         </Attribute>
@@ -13,15 +22,6 @@
         </Attribute>
         <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.personalshopper", Managed="Symbol.XamarinEMDK.PersonalShopper")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.scanandpair", Managed="Symbol.XamarinEMDK.ScanAndPair")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.serialcomm", Managed="Symbol.XamarinEMDK.SerialComm")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.simulscan", Managed="Symbol.XamarinEMDK.SimulScan")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>Java.Interop.DoNotPackage("com.symbol.emdk.jar")</AttributeName>
@@ -39,10 +39,10 @@
           <AttributeName>System.Reflection.AssemblyDescription("EMDK for Xamarin")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyFileVersion("3.0.0.41")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.0.2")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("3.0.0.41")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.0.2")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyProduct("EMDK for Xamarin")</AttributeName>
@@ -135,9 +135,11 @@
       <Type Name="ScannerConfig+DecoderParameters+CompositeCDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+D2of5Decoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+DataMatrixDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+DotCodeDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+DutchPostalDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Ean13Decoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Ean8Decoder" Kind="Class" />
+      <Type Name="ScannerConfig+DecoderParameters+GridMatrixDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Gs1DatabarDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Gs1DatabarExpDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+Gs1DatabarLimDecoder" Kind="Class" />
@@ -169,6 +171,10 @@
       <Type Name="ScannerConfig+DecoderParameters+Us4StateFicsDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+UsPlanetDecoder" Kind="Class" />
       <Type Name="ScannerConfig+DecoderParameters+UsPostNetDecoder" Kind="Class" />
+      <Type Name="ScannerConfig+DotCodeInverse" Kind="Class" />
+      <Type Name="ScannerConfig+DotCodeMirror" Kind="Class" />
+      <Type Name="ScannerConfig+GridMatrixInverse" Kind="Class" />
+      <Type Name="ScannerConfig+GridMatrixMirror" Kind="Class" />
       <Type Name="ScannerConfig+GS1LimitedSecurityLevel" Kind="Class" />
       <Type Name="ScannerConfig+HanXinInverse" Kind="Class" />
       <Type Name="ScannerConfig+IlluminationMode" Kind="Class" />
@@ -178,6 +184,7 @@
       <Type Name="ScannerConfig+Isbt128ConcatMode" Kind="Class" />
       <Type Name="ScannerConfig+LcdMode" Kind="Class" />
       <Type Name="ScannerConfig+LinearSecurityLevel" Kind="Class" />
+      <Type Name="ScannerConfig+MultiBarcodeParameters" Kind="Class" />
       <Type Name="ScannerConfig+MultiBarcodeParams" Kind="Class" />
       <Type Name="ScannerConfig+OcrAVariant" Kind="Class" />
       <Type Name="ScannerConfig+OcrBVariant" Kind="Class" />
@@ -198,7 +205,10 @@
       <Type Name="ScannerConfig+ReaderParameters+ReaderSpecifics+LaserSpecifics" Kind="Class" />
       <Type Name="ScannerConfig+ScanMode" Kind="Class" />
       <Type Name="ScannerConfig+ScanParameters" Kind="Class" />
+      <Type Name="ScannerConfig+SceneDetectionQualifier" Kind="Class" />
       <Type Name="ScannerConfig+SecurityLevel" Kind="Class" />
+      <Type Name="ScannerConfig+SignatureImageBitsPerPixel" Kind="Class" />
+      <Type Name="ScannerConfig+SignatureImageFormat" Kind="Class" />
       <Type Name="ScannerConfig+SkipOnUnSupported" Kind="Class" />
       <Type Name="ScannerConfig+SupplementalMode" Kind="Class" />
       <Type Name="ScannerConfig+UccLinkMode" Kind="Class" />
@@ -268,6 +278,7 @@
       <Type Name="SerialCommConfig+BaudRates" Kind="Class" />
       <Type Name="SerialCommConfig+DataBits" Kind="Class" />
       <Type Name="SerialCommConfig+FlowControlMode" Kind="Class" />
+      <Type Name="SerialCommConfig+FlowControlModes" Kind="Class" />
       <Type Name="SerialCommConfig+ParityBits" Kind="Class" />
       <Type Name="SerialCommConfig+StopBits" Kind="Class" />
       <Type Name="SerialCommException" Kind="Class" />

@@ -1,6 +1,6 @@
 ---
-title: FOTA Manager
-description: FotaMgr allows allows administrators to manage Zebra devices remotely by sending Firmware Over The Air (FOTA) configurations.
+title: Lifeguard Over the Air Manager
+description: Formerly FORA Manager, allows allows administrators to manage Zebra devices remotely by sending Zebra Lifeguard firmware updates over the air.
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

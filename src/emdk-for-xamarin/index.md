@@ -5,7 +5,7 @@ insert:
 layout: guide.html
 redirect_url: /emdk-for-xamarin/4-0/guide/about
 product: EMDK For Xamarin
-productversion: '3.0'
+productversion: '4.0'
 
 menu:
   title: EMDK For Xamarin 4.0

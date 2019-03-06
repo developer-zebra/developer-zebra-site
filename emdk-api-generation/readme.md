@@ -38,10 +38,10 @@
 
    	:::term
    	node generate_markdown.js -a 2.6.0.69 -p 2.6
-   	// replace "2.6.0.69" with current assemblyversion
+   	// replace "2.6.0.69" with current assemblyversion and "2.6" with the major.minor version
 
 14. Markdown is output to `/mDocToMarkdown/markdown` folder
-15. Copy the markdown into techdocs EMDK-X API folder and "merge"
+15. Copy the folders under /markdown into /src/emdk-for-xamarin/x-x/api and "merge"
 
 -----
 

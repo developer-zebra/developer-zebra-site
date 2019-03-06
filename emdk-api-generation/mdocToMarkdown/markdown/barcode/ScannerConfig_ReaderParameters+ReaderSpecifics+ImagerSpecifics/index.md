@@ -2,7 +2,7 @@
 title: ScannerConfig.ReaderParameters+ReaderSpecifics+ImagerSpecifics
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '3.0' 
+productversion: '4.0' 
 ---
 ImagerSpecific provides access to the imager specific parameters.
 
@@ -54,6 +54,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
 **Type** - System.Int32
 ###DigimarcDecoding
 
+        
 
 **Type** - System.Boolean
 ###DisconnectOnExit
@@ -109,3 +110,7 @@ This setting is used to prevent the scanner driver from decoding the same symbol
 Sets the scan mode. This allows to select one type from the ScanMode enum.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+ScanMode
+###SceneDetectionQualifier
+Qualifier for starting scene detection when presentation Aim Type is selected.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SceneDetectionQualifier

@@ -39,6 +39,10 @@ Symbol.XamarinEMDK.Barcode.Scanner **p0**  - Scanner Object
 The DecoderParams class contains decoder parameters that are used by multiple decoder symbologies. The property provides access to such decoder parameters as Enabled and isSupported, among others. NOTE: When calling enable() after disable(), all the latest configuration parameter values (Config.DecoderParams, Config.ScannerParams, Config.ReaderParams) will be set automatically.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters
+###MultiBarcodeParams
+Provides access to multi-barcode parameters available to configure.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+MultiBarcodeParameters
 ###ReaderParams
 The ReaderParams class holds the parameters for a scanner. Reader parameters are global to all reads on all open handles on the same scanner. NOTE: When calling enable() after disable(), all the latest configuration parameter values (Config.DecoderParams, Config.ScannerParams, Config.ReaderParams) will be set automatically.
 

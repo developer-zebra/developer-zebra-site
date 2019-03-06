@@ -2,7 +2,7 @@
 title: SimulScanTemplateRegion
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '3.0' 
+productversion: '4.0' 
 ---
 The SimulScanTemplateRegion class represents a particular region in a Template.
 

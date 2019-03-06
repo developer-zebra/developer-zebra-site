@@ -43,6 +43,10 @@ ContinuousRead class provides access to continuous scanning related parameters.
 This setting is used to prevent the scanner from decoding another symbol within this time interval. This is applicable only for the aim type ScannerConfig.AimType.CONTINUOUS_READ. The user may want to prevent decoding too quickly and set an interval that the user can aim before decoding the next barcode. A value of 0 means no interval is required between two successive reads. Boundary values are 0 to 5000 in milliseconds in 500 increments such as 0, 500, 1000... etc
 
 **Type** - System.Int32
+###DigimarcDecoding
+
+
+**Type** - System.Boolean
 ###IlluminationMode
 Turns camera illumination on and off. This option is only available when camera is selected in the Barcode input Scanner selection option. Use class ScannerConfig.IlluminationMode.
 
@@ -72,6 +76,10 @@ This setting is used to prevent the scanner driver from decoding the same symbol
 
 
 **Type** - System.Int32
+###ScanMode
+Allows selection of one type at a time from available scanning modes.
+
+**Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+ScanMode
 ###ViewfinderMode
 Configures the Viewfinder modes supported for camera scanning. Use class ScannerConfig.ViewFinderMode.
 
@@ -85,6 +93,10 @@ Sets the Y Axis position of the top left corner of the view finder. The valid ra
 
 **Type** - System.Int32
 ###ViewfinderSize
-Sets the size of the view finder window in camera scanner. Default is 100, meaning it will show in full screen. As an example, if it is set to 50 View finder of half the full width and half the full height is used to show the preview. The valid range is 0 to 100.
+Sets the size (from 0 to 100%) of the viewfinder window in camera scanner. Default is 100 (full screen).
+
+**Type** - System.Int32
+###Zoom
+
 
 **Type** - System.Int32

@@ -2,7 +2,7 @@
 title: SimulScanGroup
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '3.0' 
+productversion: '4.0' 
 ---
 The SimulScanGroup class represents a processed SimulScanTemplateGroup.
 

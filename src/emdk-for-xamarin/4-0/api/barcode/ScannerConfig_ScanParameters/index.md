@@ -42,3 +42,15 @@ Controls the LED feedback mode.
 Decode LED ON duration upon successful decode in milliseconds. This value can be from 0ms to 1000ms with a step of 25ms
 
 **Type** - System.Int32
+###DecodeScreenNotification
+
+
+**Type** - System.Boolean
+###DecodeScreenNotificationTime
+
+
+**Type** - System.Int32
+###DecodeScreenTranslucencyLevel
+
+
+**Type** - System.Int32

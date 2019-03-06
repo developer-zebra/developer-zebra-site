@@ -46,6 +46,7 @@ Selection of character set for decoding the barcode.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CharacterSet
 ###ConnectionIdleTime
 
+        
 
 **Type** - System.Int32
 ###ContinuousRead
@@ -59,6 +60,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
 **Type** - System.Int32
 ###DisconnectOnExit
 
+        
 
 **Type** - System.Boolean
 ###Inverse1DMode

@@ -2,7 +2,7 @@
 title: ScannerConfig.ViewFinderMode
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '3.0' 
+productversion: '4.0' 
 ---
 Configures the Viewfinder modes supported for camera scanning.
 

@@ -135,7 +135,7 @@
       <Docs>
         <param name="this_"></param>
         <summary>Values for decoder parameter mirror.</summary>
-        <returns>/returns>
+        <returns></returns>
         <remarks></remarks>
       </Docs>
     </Member>

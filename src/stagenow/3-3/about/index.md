@@ -30,7 +30,7 @@ The following software must be installed on the staging workstation prior to usi
 
 ## Device Support 
 
-**StageNow v3.2 supports all Zebra devices with the following operating systems and extensions**: 
+**StageNow v3.3 supports all Zebra devices with the following operating systems and extensions**: 
 
 * Android 8.x Oreo
 * Android 7.x Nougat
@@ -49,11 +49,9 @@ The following software must be installed on the staging workstation prior to usi
 
 ## New Features
  
-1. StageNow generated NFC Staging profile .bin files can be used for USB staging, refer the USB staging functionality in StageNow TechDocs
-2. MX 9.0 Profiles make use of latest/new set of certificates to encrypt the Barcode, NFC and Audio data
+**StageNow-generated NFC staging profiles** (`.bin` files) can now be used for USB staging.
 
-
-
+**MX 9.0 profiles now make use of the latest encryption certificates** for barcode, NFC and audio data.
 
 **Now supports MX 9.0**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
 * **Enhanced [Battery Manager](../csp/battery)** now allows an admin to:

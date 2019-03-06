@@ -16,32 +16,38 @@ parm:
       devicetype: A,B
       name: Do not change
       mx: "8.4"
+      apilevel: "23"
       description: This value (or the absence of this parm from the XML) causes no change; any previously selected setting is retained.
     - code: 1
       devicetype: A,B
       name: None
       mx: "8.4"
+      apilevel: "23"
       description: Selects no APN MVNO type.
     - code: 2
       devicetype: A,B
       name: spn
       mx: "8.4"
+      apilevel: "23"
       description: Enables the Service Provider Name to be specified. 
     - code: 3
       devicetype: A,B
       name: imsi
       mx: "8.4"
+      apilevel: "23"
       description: Enables the IMSI to be specified.
     - code: 4
       devicetype: A,B
       name: gid
       mx: "8.4"
+      apilevel: "23"
       description: Enables the Group Identifier to be specified.
     - code: 5
       devicetype: A,B
       name: iccid
       mx: "8.4"
+      apilevel: "23"
       description: Enables the Integrated Circuit Card Identifier to be specified. 
 ---
 
-Used to specify the mobile virtual network operator (MVNO), a wireless network service provider that does not own the infrastructure on which its services operate. 
+Used to specify the type of mobile virtual network operator (MVNO) to be used by an APN. An MVNO is a wireless network service provider that does not own the infrastructure on which its services are provided. 

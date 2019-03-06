@@ -4,7 +4,9 @@ title: Custom MVNO Match Data
 type: parm
 order: 10
 mx: "8.4"
+apilevel: "23"
 devicetype: A,B
+info: WWAN-enabled devices only
 parm:
   presentif: The Custom MVNO Type is NOT "Do not change"
   pivotal: No
@@ -12,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to specify provider-specific data based on the selected Mobile Virtual Network Operator.
+Used to specify provider-specific data based on the selected mobile virtual network operator.
 
 **Zebra recommends testing carrier-specified MVNO settings on a working device and SIM card before deployment into a production environment**. 
 

@@ -75,8 +75,8 @@
       </ReturnValue>
       <Docs>
         <summary>Values for decoder parameter mirror.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">

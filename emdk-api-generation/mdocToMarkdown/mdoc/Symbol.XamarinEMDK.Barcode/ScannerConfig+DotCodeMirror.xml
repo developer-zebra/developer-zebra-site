@@ -133,7 +133,7 @@
         <Parameter Name="this_" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="this_">To be added.</param>
+        <param name="this_"></param>
         <summary>Values for decoder parameter mirror.</summary>
         <returns></returns>
         <remarks></remarks>

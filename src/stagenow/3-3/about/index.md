@@ -42,25 +42,25 @@ The following software must be installed on the staging workstation prior to usi
 * MX 7.1
 * MX 7.0
 
-> **IMPORTANT NOTE**:<br> 
-> <u>**StageNow 3.3 supports devices running Android 8.x Oreo and Android 7.x Nougat**</u>.
+> `IMPORTANT`:<br> 
+> <u>**StageNow 3.3 supports devices running Android 8.x Oreo and Android 7.x Nougat only**</u>.
 
 -----
 
 ## New Features
  
-**StageNow-generated NFC staging profiles** (`.bin` files) can now be used for USB staging.
+• **StageNow-generated NFC staging profiles** (`.bin` files) can now be used for USB staging.
 
-**MX 9.0 profiles now make use of the latest encryption certificates** for barcode, NFC and audio data.
+• **MX 9.0 profiles now make use of the latest encryption certificates** for barcode, NFC and audio data.
 
-**Now supports MX 9.0**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
+• **Now supports MX 9.0**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
 * **Enhanced [Battery Manager](../csp/battery)** now allows an admin to:
  * Specify a critically low battery threshold
 * **Enhanced [UI Manager](../csp/ui)** now allows an admin to:
  * Control user access to the Large Key Indicator (MC93 device only)
  * Turn the Large Key Indicator on or off (MC93 device only)
 
-**Also now supports MX 8.4**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
+• **Also now supports MX 8.4**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
 * **Enhanced [GPRS Manager](../csp/gprs)**  now allows an admin to:
  * Specify the Mobile Virtual Network Operator (MVNO) type for an Access Point Name (APN)
  * Specify APN MVNO Match Data

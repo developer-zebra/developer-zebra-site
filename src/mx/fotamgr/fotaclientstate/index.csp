@@ -22,13 +22,13 @@ parm:
       name: Turn On
       mx: "8.1"
       apilevel: "23"
-      description: Activates the LifeGuard OTA Client on the device, enabling over-the-air firmware updates (default). 
+      description: Activates the LifeGuard OTA client app on the device, enabling over-the-air firmware updates (default). 
     - code: 2
       devicetype: A,B
       name: Turn Off
       mx: "8.1"
       apilevel: "23"
-      description: Deactivates the LifeGuard OTA Client on the device, disabling over-the-air firmware updates. 
+      description: Deactivates the LifeGuard OTA client app on the device, disabling over-the-air firmware updates. 
 ---
 
-This is the On/Off switch for the LifeGuard OTA Client (formerly FOTA) Client app on the device, which manages over-the-air firmware updates. **Enabled by default**. 
+This is the On/Off switch for the LifeGuard OTA (formerly FOTA) client app on the device, which manages over-the-air firmware updates. **Enabled by default**. 

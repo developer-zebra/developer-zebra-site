@@ -121,11 +121,11 @@ Supported Devices (including GMS and non-GMS versions):
 
 
 ##Server Install & Setup
-Install ZDVC server on the supported system that meets the specified requirements. Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html). After server installation, further network setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html).<!--[Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html)--> Install ZDVC server on the supported system that meets the specified requirements. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ###Server Prerequisites
 The following are the prerequisites required for the server: <br>
-1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _name.company.com_. To run ZDVC, an entry in the DNS server is required to add the server IP address. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
+1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _name.company.com_. An entry with the hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
 
 2. **SSL Certificate.** ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate Procurement](./#servercertificateprocurement) for details.
 

@@ -44,7 +44,7 @@ The EOL request can be cancelled with the following steps:
 4. The Action button appears at the top left. Tap on the Action button and select "Cancel EOL Request".
 5. The battery status in the Admin View displays "In service - active".
 
-###Decommission Battery
+##Decommission Battery
 Decommission the battery to swap batteries and remove the poor health battery from service. To manually decommission the battery:
 
 1. In the [Admin View](../admin) click on **Active** tab.
@@ -67,7 +67,7 @@ Decommission the battery to swap batteries and remove the poor health battery fr
 9. After swapping the battery, press the power button to turn the device back on. 
 10. Manually take the decommissioned battery out of service and remove it from inventory.
 
-###Undo Decommission
+##Undo Decommission
 If a battery is decommissioned prematurely or mistakenly, it can be placed back into commission.
 1. In the **Decommission** tab in the [Admin View](../admin), select a battery to undo decommission.  
 2. Click the Action button.  

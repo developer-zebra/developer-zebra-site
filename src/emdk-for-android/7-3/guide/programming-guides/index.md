@@ -40,8 +40,13 @@ content-items:
     url: /emdk-for-android/7-3/guide/xmlresponseguide
   - type: section
     level: 4
+    title: SAM API Programmer's Guide
+    text: Understand how to use the Secure Access Module APIs to perform secure NFC transactions.
+    url: /emdk-for-android/7-3/guide/samapiusage
+  - type: section
+    level: 4
     title: Secure NFC API Programmer's Guide
-    text: This guide contains examples and best practices when using the Secure NFC API's including MifareDesfire, MiFareSam, SamKey, etc.
+    text: This guide contains examples and best practices when using the Secure NFC APIs including MifareDesfire, MiFareSam, SamKey, etc.
     url: /emdk-for-android/7-3/guide/securenfc
   - type: section
     level: 4
@@ -50,8 +55,13 @@ content-items:
     url: /emdk-for-android/7-3/guide/serialcomm
   - type: section
     level: 4
+    title: Signature Capture Programmer's Guide
+    text: Understand how to use the Barcode APIs to capture a written signature as an image.
+    url: /emdk-for-android/7-3/guide/signaturecapture
+  - type: section
+    level: 4
     title: SimulScan API Programmer's Guide
-    text: Understand how to use the SimulScan API's to perform full document capture in your application. SimulScan involves capturing fields of interest in a given document and converting it into data that an end-user application can use immediately at the point of transaction.
+    text: Understand how to use the SimulScan APIs to perform full document capture in your application. SimulScan involves capturing fields of interest in a given document and converting it into data that an end-user application can use immediately at the point of transaction.
     url: /emdk-for-android/7-3/guide/simulscan_guide
   - type: section
     level: 4
@@ -62,19 +72,3 @@ product: EMDK For Android
 productversion: '7.3'
 ---
            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

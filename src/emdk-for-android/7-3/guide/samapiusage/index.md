@@ -24,7 +24,7 @@ The EMDK for Android Secure Access Module (SAM) API provides developers with a c
         :::xml 
         <uses-library android:name="com.symbol.emdk"/>
 
-&#51;. Determine whether NFC is supported by the device:
+&#51;. Determine whether NFC is supported by the device by running the following code:
 
         :::Java
         if (NfcAdapter.getDefaultAdapter(this) == null) { 
@@ -34,12 +34,12 @@ The EMDK for Android Secure Access Module (SAM) API provides developers with a c
         }
 If NFC is supported, continue to the next step.
 
-&#52;. Get the SAMManager:
+&#52;. Get the SAM Manager:
 
         :::Java
         samManager = (SAMManager) emdkManager.getInstance(EMDKManager.FEATURE_TYPE.SAM);
 
-Note: To get SAMManager, an EMDKManager object must be acquired before getting the SAMManager object and must release the SAMManager class before quitting.
+Note: An EMDK Manager object must be acquired before getting the SAM Manager object, and must release the SAM Manager class before quitting.
 
 &#53;. Call the `enumerateSAMs()` method to enumerate the available SAMs in the device: 
  
@@ -53,7 +53,7 @@ Note: To get SAMManager, an EMDKManager object must be acquired before getting t
         if(samList != null && samList.size()>0) {
             SAM sam = samList.get(0);
         }
-This call returns a list of SAM objects present in the device. An empty list indicates that no SAMs present. 
+The `enumerateSAMs()` call returns a list of SAM objects present in the device. An empty list indicates that no SAMs are present. 
 
 -----
 
@@ -68,7 +68,7 @@ To use a SAM, a connection must be made with the SAM. Zebra recommends disconnec
         
         SAMType samType = sam.getSamType();
 
-&#50;. Use the `Connect()` method to connect to a SAM:
+&#50;. Use the `connect()` method to connect to a SAM:
 
         :::Java
         if (!sam.isConnected()) {
@@ -80,7 +80,7 @@ To use a SAM, a connection must be made with the SAM. Zebra recommends disconnec
             }
         }
 ####Notes
-* If another SAM is already connected, `Connect()` throws and exception.
+* If another SAM is already connected, `connect()` throws and exception.
 * The `isConnected()` method returns the current SAM connection status.
 * Exceptions will be thrown if: 
  * The called SAM is already connected with the current application
@@ -112,7 +112,7 @@ The basic unit of communication between an NFC reader and a tag is the Applicati
 -----
 
 ### Disconnect SAM
-Use the `Disconnect()` method to close the SAM connection. The SAM must be closed after all communications are done. Failure to do so might prevent other apps from using SAM APIs.
+Use the `disconnect()` method to close the SAM connection. The SAM must be closed after all communications are done. Failure to do so might prevent other apps from using SAM APIs.
 
 **To disconnect SAM**: 
 
@@ -273,10 +273,10 @@ The sample code below shows how to use [Android NFC APIs](https://developer.andr
         private SAMType findCompatibleSAM(Tag aTag) {
      
                 /**
-               Please refer to documentation below to identify card tag type
-               and return the matching SAMType
+               Refer to link below for documentation describing how to identify 
+               card tag type and how to return the matching SAMType
                https://developer.android.com/guide/topics/connectivity/nfc/nfc 
-            */
+                */
         }
     }
 

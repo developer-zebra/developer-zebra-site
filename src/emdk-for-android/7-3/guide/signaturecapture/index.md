@@ -12,7 +12,7 @@ Overview
 The EMDK Barcode API exposes the Signature Capture feature that provides applications with the ability to capture an area with a predefined specially formatted area as an image. This functionality is modeled as another decoder types exposed out of Barcode API. User can retrieve the Signature Capture image via processing the data returned to the application from a Scan event via the OnData callback on a successful scan. This Programmer’s Guide will focus on the Signature Capture feature of the EMDK Barcode APIs, for API details not pertaining to Signature Capture, refer to the Barcode Scanning API Programmer's Guide.
 
 
-<img alt="image" style="height:350px" src="sig_cap_barcode.png"/>
+<img alt="image" style="height:200px" src="sig_cap_barcode.png"/>
 
 *A typical signature capture barcode*. 
 
@@ -24,6 +24,8 @@ Before an application can capture Signature, corresponding decoder (i.e. signatu
     ScannerConfig config = scanner.getConfig();
     config.decoderParams.signature.enabled = true; //enables signature decoder
     scanner.setConfig(config);
+
+-----
 
 ### Configuring Signature Capture Parameters
 
@@ -43,6 +45,7 @@ By default, the following values are configured for signature decoder parameters
      
     scanner.setConfig(config);
  
+-----
 
 ### Handling ScanData
 
@@ -63,7 +66,8 @@ When data is returned to the application from a Scan event via the OnData callba
             }
         }
  
- 
+-----
+
 ### Raw Signature Data
 
 The code snippet below demonstrates how to access the raw signature data from a ScanDataCollection.
@@ -78,27 +82,32 @@ byte[] sigDataArr //holds the total signature data byte array
     }
 
 
+-----
+
 ### Parse Raw Signature Data
 
 Byte array obtained from ScanData.getRawData() contains the captured signature image details. This byte array needs to be parsed according to the following guide lines to retrieve information like signature image format, type, size and image data.
 
-Retrieving image format
+-----
+
+### Get Image Format
 
 First byte of the signature data byte array holds the image format. 
 
     :::Java
     int imageFormat = sigDataArr[0]; //supported image formats: 1 - JPEG, 3 - BMP, 4 - TIFF
 
-### Retrieve Signature Type
+-----
+
+### Get Signature Type
 
 Second byte of the signature data byte array holds the signature type. The following describes how to interpret and differentiate signature types. 
 
-<img alt="image" style="height:350px" src="sig_cap_box.png"/>
+<img alt="image" style="height:200px" src="sig_cap_box.png"/>
 
-Following table lists the accepted start/stop patterns. The bar and space widths are expressed as multiples of X. It must be the same pattern on either side of a signature capture box. The signature type value is reported with the captured signature image.
+Following table lists the accepted start/stop patterns. The bar and space widths are expressed as multiples of X. Values must be the same pattern on either side of a signature capture box. The signature type value is reported with the captured signature image.
  
-
-<img alt="image" style="height:350px" src="bar-space_patterns.png"/>
+<img alt="image" style="height:200px" src="bar-space_patterns.png"/>
  
  
     :::Java
@@ -106,17 +115,18 @@ Following table lists the accepted start/stop patterns. The bar and space widths
 
 
 
-Retrieving image data size
+### Get Image Data Size
 
 From byte 3 to 6 of signature data byte array holds the image data size.
-byte[] sigDataArr //holds the total signature data byte array
 
-byte[] sizeDataArr = Arrays.copyOfRange(sigDataArr, 2, 6); //holds the image data size byte array
+    :::Java
+    byte[] sigDataArr //holds the total signature data byte array
 
+    byte[] sizeDataArr = Arrays.copyOfRange(sigDataArr, 2, 6); //holds the image data size byte array
 
-
+-----
  
-### Convert byte array to integer
+### Convert Byte Array to Integer
  
 The following code can be used to convert byte array to integer.
  
@@ -131,26 +141,28 @@ The following code can be used to convert byte array to integer.
      
     int imageDataSize = byteArrayToInt(sizeDataArr);
  
+-----
 
-### Retrieve Image Data
+### Get Image Data
  
 From byte 7 to N of signature data byte array holds the image data. 
 
-byte[] sigDataArr //holds the total signature data byte array
+    :::Java 
+    byte[] sigDataArr //holds the total signature data byte array
 
-byte[] imgDataArr = Arrays.copyOfRange(sigDataArr, 6, sigDataArr.length);
+    byte[] imgDataArr = Arrays.copyOfRange(sigDataArr, 6, sigDataArr.length);
 
+-----
 
-
-Show as bitmap image
+### Show Image as Bitmap
  
 The following code can be used to show signature image data as a bitmap image.
  
-byte[] imgDataArr //holds the image data byte array
- 
-ImageView imageView = (ImageView)findViewById(R.id.imageView);
-imageView.setImageResource(android.R.color.transparent);
-Bitmap bmp = BitmapFactory.decodeByteArray(imgDataArr, 0, imgDataArr.length);
-imageView.setImageBitmap(bmp);
-
+    :::Java
+    byte[] imgDataArr //holds the image data byte array
+     
+    ImageView imageView = (ImageView)findViewById(R.id.imageView);
+    imageView.setImageResource(android.R.color.transparent);
+    Bitmap bmp = BitmapFactory.decodeByteArray(imgDataArr, 0, imgDataArr.length);
+    imageView.setImageBitmap(bmp);
 

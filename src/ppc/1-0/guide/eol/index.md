@@ -5,11 +5,17 @@ product: PowerPrecision Console
 productversion: '1.0'
 ---
 
-###Overview
-The Admin can monitor battery status in the Admin View to check for any batteries that are nearing end-of-life (EOL) or at EOL based on the state-of-health (SOH). Select one or more batteries in poor health and send customizable messages to the device end-user, instructing them to prepare to swap their current battery with a new one. If the user is in the middle of a task, the message will appear in the foreground blocking the user from continued operation. The EOL messages can be sent either immediately, at a scheduled time or appear on the device with a snooze option. The snooze option informs the end-user that the poor health battery needs to be swapped out soon and allows the user to complete their task prior to taking action. Once the user accepts the EOL message, the battery can be decommissioned. A notification is sent to the end-user requesting for the battery to be swapped out. The device is inaccessible at that time, preventing any further use until the decommissioned battery is removed and replaced with a healthy battery. 
+##Overview
+The Admin monitors battery status in the Admin View to check for any batteries that are nearing end-of-life (EOL) or at EOL based on the state-of-health (SOH). In either case, action must be taken to remove the battery from the device pool to avoid production loss. After identifying these batteries from the web portal, perform the following:
+1. **Perform EOL** - Alert the device end-user of the poor-health battery with instructions to prepare to swap the current battery with a new one. The alert messages can be customized. If the user is in the middle of a task, the message appears in the foreground and blocks the user from continued operation. The EOL messages can be sent either immediately, at a scheduled time or appear on the device with a snooze option. The snooze option informs the end-user that the poor-health battery needs to be swapped out soon and allows the user to complete a task prior to taking action. Once the user accepts the EOL message, the battery can be decommissioned. 
+2. **Decommission Battery** - A notification is sent to the end-user requesting for the battery to be swapped out. The device is inaccessible at that time, preventing any further use until the decommissioned battery is removed and replaced with a healthy battery. 
+
+Procedures for each step are detailed in the sections below.
+<!-- // original text
+The Admin monitors battery status in the Admin View to check for any batteries that are nearing end-of-life (EOL) or at EOL based on the state-of-health (SOH). Select one or more batteries in poor health and send customizable messages to the device end-user, instructing them to prepare to swap their current battery with a new one. If the user is in the middle of a task, the message will appear in the foreground blocking the user from continued operation. The EOL messages can be sent either immediately, at a scheduled time or appear on the device with a snooze option. The snooze option informs the end-user that the poor health battery needs to be swapped out soon and allows the user to complete their task prior to taking action. Once the user accepts the EOL message, the battery can be decommissioned. A notification is sent to the end-user requesting for the battery to be swapped out. The device is inaccessible at that time, preventing any further use until the decommissioned battery is removed and replaced with a healthy battery. -->
 
 ##Perform EOL
-Send an EOL request to the end-user to prepare for battery decommission:
+Send an EOL request alerting the end-user to prepare for battery decommission. This provides the opportunity for the user to complete any current task prior to loss of battery life and enables the Admin to track the status of the EOL request. After completing this process, proceed to the section **Decommission Battery** below:
 1. In the [Admin View](../admin) click on **Active** tab.
 2. Select the battery/batteries to send the EOL request.
 
@@ -34,7 +40,7 @@ Send an EOL request to the end-user to prepare for battery decommission:
 9. The user has the option to snooze (if configured by the admin) or initiate the battery swap. If “Battery Swap” is tapped, the decommission process is initiated. _See Manually Decommission section_. If the user taps “Snooze”, then the snooze duration can be selected: 1 hour, 4 hours, 8 hours, 24 hours. The same message reappears after the elapsed snooze time until the maximum snooze count is reached, at which time the Snooze option is no longer available.
 10. Accept the EOL request by tapping "Battery Swap" to start the decommission process.
 11. The Admin View displays "EOL Request Accepted" in the Status column of the battery. The battery is removed from the **Active** tab and moved to the **Decommissioned** tab on the Admin View.
-The battery can now be decommissioned. _Continue to step 8 in Decommission Battery section below._ 
+The battery can now be decommissioned. _Continue to step 8 in **Decommission Battery** section below._ 
 
 ##Cancel EOL
 The EOL request can be cancelled with the following steps:
@@ -45,7 +51,11 @@ The EOL request can be cancelled with the following steps:
 5. The battery status in the Admin View displays "In service - active".
 
 ##Decommission Battery
-Decommission the battery to swap batteries and remove the poor health battery from service. To manually decommission the battery:
+Decommission the battery to prevent further device use, allowing for the battery swap and removal of the poor-health battery from service. This can be performed by one of the following methods:
+* Prior to battery decommission, alert the end-user of the need to decommission the battery by following the steps in section **Perform EOL** above. This provides an opportunity for any current task to be completed by the user. Then skip to step 8 below to proceed with battery decommission and battery swap. 
+* Manually decommission the battery by skipping the **Perform EOL** process and immediately performing the battery decommission with the steps below.
+
+Steps to decommission the battery:
 
 1. In the [Admin View](../admin) click on **Active** tab.
 2. Select the battery/batteries to decommission.

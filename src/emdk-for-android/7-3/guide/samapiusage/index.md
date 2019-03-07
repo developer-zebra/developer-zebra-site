@@ -13,18 +13,18 @@ The EMDK for Android Secure Access Module (SAM) API provides developers with a c
 
 ### Update Android Manifest
 
-1. Add the following permissions in the Android Manifest:
+&#49;. Add the following permissions in the Android Manifest:
 
         :::xml
         <uses-permission android:name="com.symbol.emdk.permission.EMDK"/>
         <uses-permission android:name="android.permission.NFC" />
 
-2. In the manifest's &lt;application&gt; node, add the following line to enable use of EMDK libraries on the device:
+&#50;. In the manifest's &lt;application&gt; node, add the following line to enable use of EMDK libraries on the device:
 
         :::xml 
         <uses-library android:name="com.symbol.emdk"/>
 
-3. Determine whether NFC is supported by the device:
+&#51;. Determine whether NFC is supported by the device:
 
         :::Java
         if (NfcAdapter.getDefaultAdapter(this) == null) { 
@@ -34,14 +34,14 @@ The EMDK for Android Secure Access Module (SAM) API provides developers with a c
         }
 If NFC is supported, continue to the next step.
 
-4. Get the SAMManager:
+&#52;. Get the SAMManager:
 
         :::Java
         samManager = (SAMManager) emdkManager.getInstance(EMDKManager.FEATURE_TYPE.SAM);
 
 Note: To get SAMManager, an EMDKManager object must be acquired before getting the SAMManager object and must release the SAMManager class before quitting.
 
-5. Call the `enumerateSAMs()` method to enumerate the available SAMs in the device: 
+&#53;. Call the `enumerateSAMs()` method to enumerate the available SAMs in the device: 
  
         :::Java
         List<SAM> samList = null;
@@ -61,14 +61,14 @@ This call returns a list of SAM objects present in the device. An empty list ind
 
 To use a SAM, a connection must be made with the SAM. Zebra recommends disconnecting the SAM when communications are concluded.
 
-1. Get SAM type: 
+&#49;. Get SAM type: 
 
         :::Java
         getSAMType() //returns the SAM type (i.e. MIFARE, CALYPSO, FELICA)
         
         SAMType samType = sam.getSamType();
 
-2. Use the `Connect()` method to connect to a SAM:
+&#50;. Use the `Connect()` method to connect to a SAM:
 
         :::Java
         if (!sam.isConnected()) {
@@ -133,7 +133,7 @@ The `getSamIndex()` method returns the slot index of the SAM starting from 1.
 
 ### Detect NFC Tag
  
-The sample code below shows how to use [Android NFC APIs](https://developer.android.com/guide/topics/connectivity/nfc/nfc) to detect an NFC tag and establishish a connection with an appropriate SAM using the EMDK SAM API's `connect()` method. 
+The sample code below shows how to use [Android NFC APIs](https://developer.android.com/guide/topics/connectivity/nfc/nfc) to detect an NFC tag and establish a connection with an appropriate SAM using the EMDK SAM API's `connect()` method. 
 
 #### Sample Code 
 

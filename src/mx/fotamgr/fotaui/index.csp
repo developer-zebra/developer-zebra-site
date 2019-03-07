@@ -1,6 +1,6 @@
 ---
 csp: fotamgr
-title: FOTA UI Enable/Disable
+title: LifeGuard OTA Client Usage Enable/Disable
 type: parm
 order: 7
 mx: "8.1"
@@ -8,7 +8,7 @@ apilevel: "23"
 devicetype: A,B
 parm:
   pivotal: No
-  name: FotaUi
+  name: LifeGuardOTAClientState
   type: list
   list:
     - code: 0
@@ -22,13 +22,13 @@ parm:
       name: Enable
       mx: "8.1"
       apilevel: "23"
-      description: Enables the FOTA user interface on the device, giving the device user the ability to change the FOTA state (active/inactive). 
+      description: Enables the LifeGuard OTA user interface on the device, giving the device user the ability to change the state (active/inactive). 
     - code: 2
       devicetype: A,B
       name: Disable
       mx: "8.1"
       apilevel: "23"
-      description: Prevents the device user from accessing the FOTA user interface on the device and potentially changing the FOTA state (active/inactive).
+      description: Prevents the device user from accessing the LifeGuard OTA user interface on the device and potentially changing the state (active/inactive).
 ---
 
-Controls device-user access the FOTA user interface and the ability to change the FOTA Client app state (active/inactive) on the device. When disabled (option 2), the device user is prevented from changing the FOTA Client state or its ability to accept firmware updates. 
+Controls device-user access to the LifeGuard OTA (formerly FOTA) Client user interface and the ability to change the LifeGuard OTA Client app state (active/inactive) on the device. When disabled (option 2), the device user is prevented from changing the FOTA Client state or its ability to accept firmware updates. 

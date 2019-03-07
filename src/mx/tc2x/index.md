@@ -54,10 +54,6 @@ csps:
     url: /mx/filemgr
     csp: filemgr
   - type: section
-    title: FOTA Manager
-    url: /mx/fotamgr
-    csp: fotamgr
-  - type: section
     title: GPRS Manager
     url: /mx/gprsmgr
     csp: gprsmgr
@@ -65,6 +61,10 @@ csps:
     title: Intent
     url: /mx/intent
     csp: intent
+  - type: section
+    title: Lifeguard Over the Air Manager
+    url: /mx/fotamgr
+    csp: fotamgr
   - type: section
     title: Persist Manager
     url: /mx/persistmgr

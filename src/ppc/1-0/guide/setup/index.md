@@ -6,11 +6,11 @@ productversion: '1.0'
 ---
 ## Overview
 
-As part of Zebra DNA Visibility Console (ZDVC) server starting with PowerPrecision Console (PPC) v2.0, PPC runs on a supported Windows-based server. PPC client runs on supported [Zebra devices](../about#devicerequirements). This section provides system requirements and instructions for install and setup for the solution.
+As part of Zebra DNA Visibility Console (ZDVC) starting with PowerPrecision Console (PPC) v2.0, PPC runs on a supported Windows-based server. PPC client runs on supported [Zebra devices](../about#devicerequirements). This section provides system requirements and instructions for install and setup for the solution.
 
 Solution components:
-* **ZDVC server** - ZDVC server includes Device Tracker and PowerPrecision Console. PPC monitors battery health, state of charge, battery status, and other information from deployed devices.
-* **Web portal** - ZDVC centralized dashboard for monitoring device presence, device tracking, battery status, and trigger actions based on battery depletion.
+* **ZDVC server** - PPC monitors battery health, state of charge, battery status, and other information from deployed devices. 
+* **Web portal** - centralized dashboard for monitoring device presence, device tracking, battery status, and trigger actions based on battery depletion.
 * **PPC client** - reports battery and device information to server
 
 Before installing, ensure to prepare additional steps for system setup:
@@ -87,6 +87,8 @@ This section provides the server and device requirements. PPC supports a maximum
 See [Device Requirements](../about/#devicerequirements).
 
 ##Server Install & Setup
+For existing PPC installations, uninstall PPC and ensure all PPC folders are removed. Then proceed to a new install.
+
 For new installations, download ZDVC Server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Install ZDVC server on the supported system that meets the specified requirements. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ###Server Prerequisites

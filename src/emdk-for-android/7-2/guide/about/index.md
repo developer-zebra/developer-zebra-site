@@ -102,6 +102,9 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
  * enum `SceneDetectionQualifier` under `ScannerConfig` acts as a qualifier for starting scene detection when Presentation is selected as Aim Type.
  * Reader parameter `sceneDetectionQualifier` in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` activates the Presentation mode of scanning based on a Scene Detection Qualifier.
  * enum `AimType` in `ScannerConfig` Presentation option enables this mode.
+* Added `ScannerConfig.ScanParams` scanner parameters:
+ * `decodeScreenNotificationTime` sets the length of time (in milliseconds) to display the screen overlay upon successful decode.
+ * `decodeScreenTranslucencyLevel` sets the percentage of translucency (from 20&ndash;50; increments of 5) of the decode screen notification overlay.
 
 -----
 

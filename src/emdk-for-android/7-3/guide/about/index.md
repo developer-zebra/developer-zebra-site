@@ -104,9 +104,6 @@ Note: SAM APIs support only transceiver commands with the SAM. For NFC tag readi
  * **bpp** sets the bits-per-pixel for a monochromatic image.
 * Added `ScannerConfig.DecoderParams.I2of5` decoder parameter:
  * **febraban** can enable or disable insertion of special "check" characters in the transmitted data stream of Interleaved 2 of 5 barcodes that are of length 14 and meet specific Febraban criteria.
-* Added `ScannerConfig.ScanParams` scanner parameters:
- * `decodeScreenNotificationTime` sets the length of time (in milliseconds) to display the screen overlay upon successful decode.
- * `decodeScreenTranslucencyLevel` sets the percentage of translucency of the decode screen notification overlay.
 * Added a `ScannerConfig.MultiBarcodeParams` parameter:
  * `instantReporting` can enable or disable instantaneous reporting of unique barcodes. Enabling this parameter ignores the value of `multiBarcodeParams.barcodeCount` param and reports the scanned data to the user instantaneously, without waiting until the end of the scanning session.
 * Added support for Bluetooth scanner DS8178:

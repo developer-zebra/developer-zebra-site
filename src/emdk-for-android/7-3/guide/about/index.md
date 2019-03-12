@@ -104,6 +104,10 @@ Note: SAM APIs support only transceiver commands with the SAM. For NFC tag readi
  * **bpp** sets the bits-per-pixel for a monochromatic image.
 * Added `ScannerConfig.DecoderParams.I2of5` decoder parameter:
  * **febraban** can enable or disable insertion of special "check" characters in the transmitted data stream of Interleaved 2 of 5 barcodes that are of length 14 and meet specific Febraban criteria.
+* **Support for Presentation mode** activates continuous scene detection; scanning begins upon motion detection without a trigger press. Supports the following parameters:
+ * enum `SceneDetectionQualifier` under `ScannerConfig` acts as a qualifier for starting scene detection when Presentation is selected as Aim Type.
+ * Reader parameter `sceneDetectionQualifier` in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` activates the Presentation mode of scanning based on a Scene Detection Qualifier.
+ * enum `AimType` in `ScannerConfig` Presentation option enables this mode.
 * Added a `ScannerConfig.MultiBarcodeParams` parameter:
  * `instantReporting` can enable or disable instantaneous reporting of unique barcodes. Enabling this parameter ignores the value of `multiBarcodeParams.barcodeCount` param and reports the scanned data to the user instantaneously, without waiting until the end of the scanning session.
 * Added support for Bluetooth scanner DS8178:
@@ -164,10 +168,6 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
  * Supported value ranges from 1&ndash;8 in increments of 1.
 * **Support for Decode Screen Notification** displays a screen overlay as a notification on a successful decode. Supports the following parameters in `ScannerConfig.ScanParams`:
  * `decodeScreenNotification` enables/disables decode screen notification
-* **Support for Presentation mode** activates continuous scene detection; scanning begins upon motion detection without a trigger press. Supports the following parameters:
- * enum `SceneDetectionQualifier` under `ScannerConfig` acts as a qualifier for starting scene detection when Presentation is selected as Aim Type.
- * Reader parameter `sceneDetectionQualifier` in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` activates the Presentation mode of scanning based on a Scene Detection Qualifier.
- * enum `AimType` in `ScannerConfig` Presentation option enables this mode.
 * Added `ScannerConfig.ScanParams` scanner parameters:
  * `decodeScreenNotificationTime` sets the length of time (in milliseconds) to display the screen overlay upon successful decode.
  * `decodeScreenTranslucencyLevel` sets the percentage of translucency (from 20&ndash;50; in increments of 5) of the decode screen notification overlay.

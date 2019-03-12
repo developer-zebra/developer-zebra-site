@@ -77,25 +77,30 @@ The code snippet below demonstrates how to access the raw signature data from a 
            
         }
     }
+<br>
 
+#### Parse Raw Signature Data
 
------
-
-### Parse Raw Signature Data
-
-Byte array obtained from the `ScanData.getRawData()` method contains the captured signature image details as a byte array. Information such as signature image format, type, size and image data can be parsed according to the guidelines below:
+Data obtained from the `ScanData.getRawData()` method contains the captured signature image details as a byte array. Information such as signature image format, type, size and image data can be parsed as below.
 
 #### Get Image Format
 
-First byte of the signature data byte array holds the image format: 
+The first byte of the byte array holds the image format. 
+
+1. `.jpg`
+2. (null)
+3. `.bmp`
+4. `.tiff`
+
+##### Get the image format: 
 
     :::Java
-    int imageFormat = sigDataArr[0]; //supported image formats: 1 - JPEG, 3 - BMP, 4 - TIFF
-
+    int imageFormat = sigDataArr[0];
+<br>
 
 #### Get Signature Type
 
-The signature type is held in the second byte of the signature data byte array. The image below illustrates how to interpret and differentiate signature types: 
+The signature type is held in the second byte of the byte array. The image below illustrates how to differentiate signature types: 
 
 <img alt="image" style="height:200px" src="sig_cap_box.png"/>
 
@@ -105,16 +110,18 @@ The table below lists the accepted start/stop patterns. The bar and space widths
  
     :::Java
     int signatureType = sigDataArr[1]; //supported signature types: 2, 5, 7, 8, 9
+<br>
 
 #### Get Image Data Size
 
-Bytes 3 through 6 of the signature data byte array hold the image data size. Retrieve the data using the code below: 
+Bytes 3 through 6 of the byte array hold the image data size. Retrieve the data using the code below: 
 
     :::Java
     byte[] sigDataArr //holds the total signature data byte array
 
     byte[] sizeDataArr = Arrays.copyOfRange(sigDataArr, 2, 6); //holds the image data size byte array
- 
+<br>
+
 #### Convert Byte Array to Integer
  
 Convert the byte array to an integer using the following code:
@@ -129,15 +136,17 @@ Convert the byte array to an integer using the following code:
     }
      
     int imageDataSize = byteArrayToInt(sizeDataArr);
- 
+<br>
+
 #### Get Image Data
  
-The image data is held in bytes 7 through N of the signature data byte array. Use the code below to retrieve the data: 
+The image data is held in bytes 7 through N of the byte array. Use the code below to retrieve the data: 
 
     :::Java 
     byte[] sigDataArr //holds the total signature data byte array
 
     byte[] imgDataArr = Arrays.copyOfRange(sigDataArr, 6, sigDataArr.length);
+<br>
 
 -----
 
@@ -155,6 +164,6 @@ To display the image as a bitmap, use the following code:
 
 -----
 
-## Related Guides 
+## Also See 
 
-* **[Barcode Scanning API Programmer's Guide](../barcode_scanning_guide)**
+**[Barcode Scanning API Programmer's Guide](../barcode_scanning_guide)**

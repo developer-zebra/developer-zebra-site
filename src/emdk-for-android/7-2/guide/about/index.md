@@ -104,7 +104,7 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
  * enum `AimType` in `ScannerConfig` Presentation option enables this mode.
 * Added `ScannerConfig.ScanParams` scanner parameters:
  * `decodeScreenNotificationTime` sets the length of time (in milliseconds) to display the screen overlay upon successful decode.
- * `decodeScreenTranslucencyLevel` sets the percentage of translucency (from 20&ndash;50; increments of 5) of the decode screen notification overlay.
+ * `decodeScreenTranslucencyLevel` sets the percentage of translucency (from 20&ndash;50; in increments of 5) of the decode screen notification overlay.
 
 -----
 

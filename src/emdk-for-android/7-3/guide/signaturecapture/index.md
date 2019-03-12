@@ -153,3 +153,8 @@ To display the image as a bitmap, use the following code:
     Bitmap bmp = BitmapFactory.decodeByteArray(imgDataArr, 0, imgDataArr.length);
     imageView.setImageBitmap(bmp);
 
+-----
+
+## Related Guides 
+
+* **[Barcode Scanning API Programmer's Guide](../barcode_scanning_guide)**

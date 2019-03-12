@@ -34,14 +34,20 @@ The EMDK for Android Secure Access Module (SAM) API provides developers with a c
         }
 If NFC is supported, continue to the next step.
 
-&#52;. Get the SAM Manager:
+-----
+
+### Get the SAM Manager
+
+An EMDK Manager object must be acquired before getting the SAM Manager object, and must release the SAM Manager class before quitting. Use the code below to get the SAM Manager: 
 
         :::Java
         samManager = (SAMManager) emdkManager.getInstance(EMDKManager.FEATURE_TYPE.SAM);
 
-Note: An EMDK Manager object must be acquired before getting the SAM Manager object, and must release the SAM Manager class before quitting.
+-----
 
-&#53;. Call the `enumerateSAMs()` method to enumerate the available SAMs in the device: 
+### Enumerate SAM Objects
+
+The `enumerateSAMs()` call returns a list of SAM objects present in the device. An empty list indicates that no SAMs are present. Call the `enumerateSAMs()` method to enumerate the available SAMs in the device: 
  
         :::Java
         List<SAM> samList = null;
@@ -53,7 +59,6 @@ Note: An EMDK Manager object must be acquired before getting the SAM Manager obj
         if(samList != null && samList.size()>0) {
             SAM sam = samList.get(0);
         }
-The `enumerateSAMs()` call returns a list of SAM objects present in the device. An empty list indicates that no SAMs are present. 
 
 -----
 
@@ -126,6 +131,7 @@ Use the `disconnect()` method to close the SAM connection. The SAM must be close
 The `getSamIndex()` method returns the slot index of the SAM starting from 1.
 
 **To get the SAM slot index**:  
+
     :::Java
     int index = sam.getSamIndex();
 
@@ -139,12 +145,7 @@ The sample code below shows how to use [Android NFC APIs](https://developer.andr
 
     public class MainActivity extends AppCompatActivity implements EMDKManager.EMDKListener {
         
-        .
-        .
-        .
-        .
-        .
-        .
+        ...
 
         boolean tagOperationInProgress = false;
         private PendingIntent nfcIntent = null;
@@ -155,11 +156,7 @@ The sample code below shows how to use [Android NFC APIs](https://developer.andr
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
 
-            .
-            .
-            .
-            .
-            .
+        ...
 
             nfcIntent = PendingIntent.getActivity(this, 0,
                     new Intent(this, this.getClass())
@@ -170,8 +167,7 @@ The sample code below shows how to use [Android NFC APIs](https://developer.andr
         protected void onResume() {
             super.onResume();
             
-            .
-            .
+            ...
          
             if(tagOperationInProgress)
                 tagOperationInProgress = false;
@@ -184,9 +180,8 @@ The sample code below shows how to use [Android NFC APIs](https://developer.andr
         @Override
         protected void onPause() {
             super.onPause();
-            .
-            .
-            .
+        
+            ...
 
             if(nfcAdapter!=null){
                 nfcAdapter.disableForegroundDispatch(this);

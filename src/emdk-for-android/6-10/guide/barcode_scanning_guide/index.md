@@ -9,6 +9,8 @@ productversion: '6.10'
 
 The EMDK Barcode API provides applications with the ability to read numerous barcode label formats using a variety of built-in and pluggable cameras, imagers, lasers and scanners. For the full list, see [scanners supported by EMDK for Android](../about/#supporteddevices).
 
+##### Also see [Barcode Sample 1](../../samples/barcode) for a complete barcode scanning implementation.
+
 ### Barcode API Notes
 
 The `BarcodeManager` is the primary object to enumerate the supported scanner devices and access scanners for reading barcodes.

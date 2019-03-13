@@ -13,7 +13,7 @@ This guide explains how to instantiate and use the Profile Manager, how to gener
 
 ### Get Profile Manager Instance
 
-The EMDKManager provides two ways to get a ProfileManager instance.
+The EMDKManager provides two methods for getting a ProfileManager instance:
 
 1. `EMDKManager.getInstance`
 
@@ -22,9 +22,9 @@ The EMDKManager provides two ways to get a ProfileManager instance.
 
 ### EMDKManager.getInstance
 
-The EMDKManager.getInstance is synchronous method which immediately returns profile mananger instance independent of the underlying components such as MX Framework ready to use or not.
+The `EMDKManager.getInstance` is a synchronous method that immediately returns a Profile Manager instance regardless of whether the underlying components (i.e. MX Framework) is ready to use.
 
-Components related to the Profile Manager require a few seconds to initialize after a device booted. If the application tries to use the `EMDKManager.getInstance` to set the profile immediately after boot-up, a  permission error results because a Profile Manager component (i.e. the MX Framework) is not ready.
+Components related to the Profile Manager require a few seconds to initialize after a device is booted. If the application tries to use the `EMDKManager.getInstance` to set the profile immediately after boot-up, a permission error results because a Profile Manager component is not ready.
 
 		:::java
 		public class MainActivity extends Activity implements EMDKListener
@@ -340,6 +340,7 @@ The `processProfile` and `processProfileAsync` methods return an [EMDKResults](
 			}
 		}
 
+-----
 
 ##Profile Response
 

@@ -73,23 +73,15 @@ _Click to enlarge; ESC to exit_.<br>
    b. **Navigate to the** `build.gradle` **file** in the app module:<br>
    <img alt="image" style="height:350px" src="gradle_01.png"/>
 _Click to enlarge; ESC to exit_.<br>
-   c. **If using a Gradle version <u>older than 3.3</u>, skip to step d**.<br> 
-   For Gradle 3.3 and newer, add the following line to the dependencies section:<br>
+   c. **Add the following line to the dependencies section**:<br>
+
 
         :::java
             dependencies {
-            implementation 'com.symbol:emdk:7.1.0'
+            compileOnly 'com.symbol:emdk:x.x.x'
                 ...
             }
-
-    d. **For Gradle versions <u>older than 3.3</u>**, add the following line **<u>instead</u>** of the line above:<br> 
-
-        :::java
-            dependencies {
-            compile 'com.symbol:emdk:7.1.0'
-                ...
-            }
-6. **Rebuild the project** (Build -> Make Project). 
+5. **Rebuild the project** (Build -> Make Project). 
 
 ##### EMDK APIs are now ready to use. 
 

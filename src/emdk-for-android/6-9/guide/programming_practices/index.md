@@ -204,7 +204,7 @@ Use this method to make use of the EMDK in a project with a Compile SDK set abov
 
 
 1. In the project folder viewer, open the **build.gradle** file for the **app** module.
-2. Add the following to the dependencies section. Be sure to update the `dir:` path to the path where com.symbol.emdk.jar exists on your development system.
+2. Add the lines below to the dependencies section. Be sure to update the `dir:` path to indicate the location of the `com.symbol.emdk.jar` file on the development host system.
 
     **Windows**
 
@@ -220,17 +220,7 @@ Use this method to make use of the EMDK in a project with a Compile SDK set abov
         compileOnly fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
 
         }
-
-<!-- removed 3/13/19 per eng. 
-		:::
-		dependencies {
-		provided fileTree(include: ['com.symbol.emdk.jar'], dir: 'C:\\Users\\<YOUR USER NAME>\\AppData\\Local\\Android\\sdk\\add-ons\\addon-symbol_emdk-symbol-19\\libs')
-		compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
-
- -->    
-
- **Mac**
-
+    **Mac OS X**
 
         dependencies {
 
@@ -244,14 +234,7 @@ Use this method to make use of the EMDK in a project with a Compile SDK set abov
         compileOnly fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
 
         }
-
-<!-- removed 3/13/19 per eng & SPR 36599
-		:::
-		dependencies {
-		provided fileTree(include: ['com.symbol.emdk.jar'], dir: '/Users/<YOUR USERNAME>/Library/Android/sdk/add-ons/addon-symbol_emdk-symbol-19/libs')
-		compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
- -->
-3. Now rebuild your project by selecting **Make Project** from the **Build** menu.
+3. Rebuild the project by selecting **Make Project** from the **Build** menu.
 
 
 

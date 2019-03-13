@@ -159,13 +159,12 @@ EMDK for Android v7.2 was not publicly released on the Zebra Support Web site.  
 #### API Enhancements
 
 **Enhanced Barcode Manager API** adds the following features on devices running Android Oreo 8.1 and newer: 
-* Adds support for new Symbology and Label type DotCode:
+* Adds support for new DotCode Symbology and Label type:
  * **enum DotCodeInverse under ScannerConfig** describes Enable/Disable/Auto options for decoding DotCode barcodes with inverse reflectance.
  * **enum DotCodeMirror under ScannerConfig** describes Enable/Disable/Auto options for decoding mirrored DotCode barcodes.
  * **inverse parameter under `ScannerConfig.DecoderParams.DotCode`** allows selection of one option from DotCodeInverse enum.
  * **mirror parameter under `ScannerConfig.DecoderParams.DotCode`** allows selection of an option from DotCodeMirror enum.
-* **A new zoom reader parameter in `ScannerConfig.ReaderParams.ReaderSpecific.CameraSpecific`** sets the zoom level for the camera. 
- * Supported value ranges from 1&ndash;8 in increments of 1.
+ * **A new zoom reader parameter in `ScannerConfig.ReaderParams.ReaderSpecific.CameraSpecific`** sets the zoom level (from 1&ndash;8 in increments of 1) for the camera.
 * **Support for Decode Screen Notification** displays a screen overlay as a notification on a successful decode. Supports the following parameters in `ScannerConfig.ScanParams`:
  * `decodeScreenNotification` enables/disables decode screen notification
 * Added `ScannerConfig.ScanParams` scanner parameters:

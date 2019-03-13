@@ -50,11 +50,21 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ## New in v7.1
 
-* Now supports Android Multi-user mode. See the [Multi-user Programming guide](../multiuser) for more information. 
+* Support for Zebra TC20 device running Android 8.1 Oreo (added Feb., 2019)
+* Supports Android Multi-user mode. See the [Multi-user Programming guide](../multiuser) for more information. 
 
-####`UPDATE, FEB. 12 2019:` 
+####`UPDATED FEB. 12 2019:` 
 * **EMDK for Android 7.0 (and later) has been certified to support [Android Studio 3.3](https://developer.android.com/studio/)**, which was released to the stable channel on Feb. 5. 
 * **The EMDK-A 7.1 plug-in will be released soon**. The EMDK-A 7.0 plug-in is fully compatible for use in the meantime.
+
+####`UPDATED MAR. 13 2019:` 
+
+**Enhanced Barcode Manager API** includes the following features for devices running Android 8.1 Oreo:
+* **Support for Decode Screen Notification** enables a screen overlay to be displayed after successful decodes.
+* **New scanner parameter** in `ScannerConfig.ScanParams`:
+ * `decodeScreenNotification` enables/disables decode screen notifications
+* **New Presentation mode** enables motion-based scanning without trigger press:
+ * **Updated** `ScannerConfig` enum AimType enables this mode
 
 -----
 

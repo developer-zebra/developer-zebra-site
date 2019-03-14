@@ -89,6 +89,8 @@ For more information about approved languages or to download a localized operati
 * New **[End Detection Timeout](../input/voice/#configuration)** option for Voice Input.
 * New **[Multi-User Support](#multiusersupport)** for multiple Android user profiles.
 * New **[SEND_RESULT](../api/resultinfo)** result code for multiple plugins.
+* New **Hardware Trigger** feature to toggle the hardware trigger for [barcode input](../input/barcode#hardwaretrigger) and [Simulscan input](../input/simulscan). 
+* New **[Simulscan Trigger Mode](../api/switchsimulscanparams)** to programmatically toggle hardware trigger in simulscan input 
 * New SET_CONFIG/GET_CONFIG parameters for:
  * **[Data Capture Plus (DCP)](../api/setconfig/#datacaptureplusdcpinputparameters)**
  * **[Simulscan](../api/setconfig/#simulscaninputparameters)**
@@ -96,6 +98,8 @@ For more information about approved languages or to download a localized operati
  * **[IP Output](../api/setconfig/#setipoutput)**
  * **[Multiple modules (full profile)](../api/setconfig/#setconfigurationformultiplemodulesfullprofileinasingleintent)** using a single intent
  * **[New Tokens for UDI data output](../api/setconfig/#tokenparameters)**
+ * **[Barcode Trigger Mode](../api/setconfig)** to toggle the hardware trigger mode for barcode inputs
+ 
 
 -----
 ## Recent Version History

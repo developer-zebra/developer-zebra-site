@@ -18,6 +18,10 @@ _SimulScan Input options_
 _SimulScan standard templates (not all shown)_
 <br>
 
+**Hardware Trigger -** enables/disables the use of the device hardware trigger for Simulscan input. The hardware trigger is enabled by default. If disabled, the view finder does not appear when pressing the hardware trigger. However, it can still be activated by using the [Soft Scan Trigger](../../api/softscantrigger) DataWedge API intent. This feature allows application programmers to enforce the use of app-specific features when scanning barcodes and documents within their app.
+
+<img style="height:350px" src="hardware_trigger_simulscan.png"/>
+<br>
 
 **Device Selection -** permits selection between the device camera and the default scanning device set by the system (recommended).
 

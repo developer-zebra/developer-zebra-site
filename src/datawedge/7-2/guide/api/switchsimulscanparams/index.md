@@ -29,6 +29,9 @@ Used to pass one or more [SimulScan parameters](../../input/simulscan) as a bund
  	* "Default" - accepts the default scanning device selected by the system
  	* "Camera" - selects the main device camera
  	* "Imager" - selects the internal imager on the device
+* `simulscan_trigger_mode` [string] - Enable/disable the hardware trigger for Simulscan. Possible values:
+	* "0" - disables the hardware trigger
+	* "1" - enables the hardware trigger (default)
 * `simulscan_template` [string] - File name of the XML template to use (i.e. "BankCheck.xml"). File must reside in `/enterprise/device/settings/datawedge/templates` folder on device. 
 * `simulscan_region_separator`	[string] - The character to be inserted as a separator between data regions. Possible values: 
 	* "NONE" (default)

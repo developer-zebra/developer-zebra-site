@@ -64,6 +64,8 @@ Returns a bundle with status of the requested DataWedge `NOTIFICATION_TYPE`
 
 **DISCONNECTED** – A Bluetooth scanner has disconnected from the device. Sending an intent to enable or disable the scanner in this state will enable/disable the current default scanner. 
 
+**IDLE** - Scanner is in one of the following states: enabled but not yet in the waiting state, in the suspended state by the intent API call or disabled due to the hardware trigger.
+
 **DISABLED** – Scanner is disabled. This will be broadcast by the scanner plug-in when the active Profile becomes disabled or the scanner is disabled with an intent.
 
 **Note**: The `PROFILE_NAME` (of the currently active profile) is returned with `SCANNER_STATUS` to allow the developer to filter scanner events for the required Profile only. 

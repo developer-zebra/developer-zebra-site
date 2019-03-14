@@ -13,7 +13,7 @@ Solution components:
 * **Web portal** - ZDVC centralized dashboard for monitoring device presence, device tracking, and battery status.
 * **Device Tracker client** - reports device presence status and information (such as remaining battery and charging status) to server
 
-Before installing, ensure to prepare additional steps for system setup:
+Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
  * **Install SSL certificate** (procured by a signed Certificate Authority) - configured on server for secure HTTPS communication
  * **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
  * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 
@@ -179,7 +179,7 @@ _Figure 7. Installation - complete_
 Steps for ZDVC server setup after installation: <br>
 1. **Run ZDVC Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". 
 2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://name.company.com:8443/zdvc`, where "name.company.com:8443" is replaced with the appropriate domain and port number.
-3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "Device Tracker" then enter the login credentials to login.
+3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "Device Tracker" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.
 4. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
 A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
 B. Enter the Web UI URL, for example `https://name.company.com:8443/zdvc`<br>

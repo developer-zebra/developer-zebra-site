@@ -13,7 +13,7 @@ Solution components:
 * **Web portal** - centralized dashboard for monitoring device presence, device tracking, battery status, and trigger actions based on battery depletion.
 * **PPC client** - reports battery and device information to server
 
-Before installing, ensure to prepare additional steps for system setup:
+Before installing, ensure to prepare additional steps for system setup - consult your local IT department for assistance:
  * **Install SSL certificate** (procured by a signed Certificate Authority) - configured on server for secure HTTPS communication
  * **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
  * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 

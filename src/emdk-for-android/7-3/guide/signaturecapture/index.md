@@ -15,7 +15,9 @@ The EMDK Barcode API enables an app to capture a signature by designating a pred
 
 For help creating a signature-capture barcode like the one above, please refer to the [Signature Capture Code Guide (pdf)](Signature_Capture_code.pdf). 
 
-#### Enabling Signature Capture
+-----
+
+## Enable Signature Capture
 
 Before an application can capture a signature, the corresponding decoder (i.e. signature) must be enabled. Get an instance of a scanner object (see [Barcode Scanning API Programmer's Guide](../barcode_scanning_guide) for details). Once initialized, modify the scanner configuration as below:
 

@@ -118,8 +118,8 @@ On Symbol devices, extra battery information can be retrieved using the standard
 		<td>base_cumulative_charge</td>
 		<td>Int</td>
 		<td>Units=mAh</td>
+		<td></td>
 		<td>X</td>
-		<td> </td>
 		<td> </td>	
 	</tr>
 	<tr>
@@ -138,7 +138,7 @@ On Symbol devices, extra battery information can be retrieved using the standard
 		<td>total_cumulative_charge</td>
 		<td>Int</td>
 		<td>Units=mAh</td>
-		<td> </td>
+		<td>X</td>
 		<td>X</td>
 		<td> </td>	
 	</tr>

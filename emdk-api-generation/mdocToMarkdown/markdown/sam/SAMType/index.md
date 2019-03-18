@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '4.0' 
 ---
-To be added.
+
 
 **Type** - Java.Lang.Enum
 
@@ -13,11 +13,11 @@ To be added.
 
 **public static Symbol.XamarinEMDK.Sam.SAMType ValueOf (string p0);**
 
-To be added.
+Supported SAM type.
 
 **Parameters:**
 
-System.String **p0**  - To be added.
+System.String **p0**  - 
 
 **Returns** - Symbol.XamarinEMDK.Sam.SAMType
 
@@ -25,7 +25,7 @@ System.String **p0**  - To be added.
 
 **public static Symbol.XamarinEMDK.Sam.SAMType[] Values ();**
 
-To be added.
+Supported SAM type.
 
 **Parameters:**
 
@@ -34,22 +34,22 @@ To be added.
 ##Properties
 
 ###Calypso
-To be added.
+Supported SAM type.
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMType
 ###Felica
-To be added.
+Supported SAM type.
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMType
 ###Mifare
-To be added.
+Supported SAM type.
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMType
 ###Unknown
-To be added.
+Supported SAM type.
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMType
 ###Val
-To be added.
+
 
 **Type** - System.Int32

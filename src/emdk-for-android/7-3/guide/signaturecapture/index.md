@@ -42,7 +42,7 @@ By default, the following values are configured for signature decoder parameters
 
     config.decoderParams.signature.bpp = ScannerConfig.SignatureImageBitsPerPixel.BPP_8; //not applicable if the signature format parameter is set to JPEG. Supported values: BPP_1 (2 levels), BPP_4 (64 levels), BPP_8 (256 levels)
 
-    config.decoderParams.signature.jpegQuality = 65; //accepts values from 5&ndash;100 (highest quality) in increments of 5. A value of 5 means optimize for image size.
+    config.decoderParams.signature.jpegQuality = 65; //accepts values from 5 (smallest size) to 100 (highest quality) in increments of 5.
      
     scanner.setConfig(config);
  
@@ -92,7 +92,7 @@ Data obtained from the `ScanData.getRawData()` method contains the captured sign
 The first byte of the byte array holds the image format. 
 
 1. `.jpg`
-2. (null)
+2. (reserved)
 3. `.bmp`
 4. `.tiff`
 
@@ -130,7 +130,7 @@ Bytes 3 through 6 of the byte array hold the image data size. Retrieve the data 
 
 #### Convert Byte Array to Integer
  
-Convert the byte array to an integer using the following code:
+Convert the byte array data from hex to integer using the following code:
  
     :::Java
     public static int byteArrayToInt(byte[] byteArr)

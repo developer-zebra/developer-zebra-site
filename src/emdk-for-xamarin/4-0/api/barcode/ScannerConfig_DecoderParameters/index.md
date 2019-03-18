@@ -64,6 +64,7 @@ The DataMatrix class provides access to parameters that are available for the Da
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+DataMatrixDecoder
 ###DotCode
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+DotCodeDecoder
 ###DutchPostal
@@ -80,6 +81,7 @@ The EAN8 class provides access to parameters that are available for the EAN8 dec
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+Ean8Decoder
 ###GridMatrix
 
+        
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+GridMatrixDecoder
 ###Gs1Databar

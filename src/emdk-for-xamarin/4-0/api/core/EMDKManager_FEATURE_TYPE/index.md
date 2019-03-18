@@ -51,6 +51,10 @@ EMDK feature type for Personal Self Shopper Device
 EMDK feature type profile
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
+###Sam
+To be added.
+
+**Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###Scanandpair
 EMDK feature type for ScanAndPair
 

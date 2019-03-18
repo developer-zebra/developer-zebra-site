@@ -5,6 +5,7 @@ product: EMDK For Xamarin
 productversion: '4.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -18,6 +19,7 @@ Selection of format for signature image.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SignatureImageFormat
 

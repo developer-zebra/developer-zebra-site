@@ -16,6 +16,7 @@ Transmit Interleaved 2 of 5 data with or without the check digit.
 **Type** - System.Boolean
 ###Febraban
 
+        
 
 **Type** - System.Boolean
 ###Length1

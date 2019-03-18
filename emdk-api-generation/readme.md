@@ -26,7 +26,7 @@
 4. Go to Terminal and navigate to folder `/mDocToMarkdown`. Then run command in the readme file in that folder (cross fingers - need mdoc - from Xamarin tools). Keep the Terminal window open for Step 13. 
 5. Using the latest release notes as a reference, identify each **NEW API feature** and use the "Find in Folder" function (in your text editor) to confirm that it's there. 
 6. Check AssemblyFileVersion inside any mdoc API to confirm that it matches the EMDK-X major and minor version numbers. 
-7. Using the "Find in Folder" function, search /mdocs folder for "To be added" - this finds everything new/changed. 
+7. Using the "Find in Folder" function, search /mdoc folder for "To be added" - this finds everything new/changed. 
 8. In each corresponding function in the EMDK-A JavaDocs, copy its description (from EMDK-A API) to the Summary field (replacing "to be added") and remove other instances of "to be added" from nearby "value" and "remarks" fields. **NOTE**: When looking at JavaDocs - always click down into the details (do not take "first sentence" from top-level summary; it's not always the same). 
 9. For members called "values" or "valuesof," just remove "to be added" from all places. 
 10. For hidden or protected members (with "protected" in <MemberSignature Language="C#" Value="protected...> just remove "to be added" from all its fields. 

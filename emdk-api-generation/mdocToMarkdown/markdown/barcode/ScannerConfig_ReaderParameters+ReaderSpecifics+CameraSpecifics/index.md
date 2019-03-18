@@ -45,6 +45,7 @@ This setting is used to prevent the scanner from decoding another symbol within 
 **Type** - System.Int32
 ###DigimarcDecoding
 
+        
 
 **Type** - System.Boolean
 ###IlluminationMode
@@ -98,5 +99,6 @@ Sets the size (from 0 to 100%) of the viewfinder window in camera scanner. Defau
 **Type** - System.Int32
 ###Zoom
 
+        
 
 **Type** - System.Int32

@@ -20,13 +20,16 @@ Selection of format for signature image.
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SignatureImageFormat
 ###Height
 
+        
 
 **Type** - System.Int32
 ###JpegQuality
 
+        
 
 **Type** - System.Int32
 ###Width
 
+        
 
 **Type** - System.Int32

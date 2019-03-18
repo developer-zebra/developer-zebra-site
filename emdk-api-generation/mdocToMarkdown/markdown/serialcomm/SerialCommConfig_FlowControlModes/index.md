@@ -5,6 +5,7 @@ product: EMDK For Xamarin
 productversion: '4.0' 
 ---
 
+    
 
 **Type** - Java.Lang.Enum
 
@@ -18,6 +19,7 @@ Pre-defined constants to specify flow control.
 **Parameters:**
 
 System.String **this_**  - 
+        
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+FlowControlModes
 

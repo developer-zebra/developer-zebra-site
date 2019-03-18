@@ -1,16 +1,7 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="Symbol.XamarinEMDK" Version="4.0.0.2">
+    <Assembly Name="Symbol.XamarinEMDK" Version="4.0.0.3">
       <Attributes>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.simulscan", Managed="Symbol.XamarinEMDK.SimulScan")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.serialcomm", Managed="Symbol.XamarinEMDK.SerialComm")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.scanandpair", Managed="Symbol.XamarinEMDK.ScanAndPair")</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk", Managed="Symbol.XamarinEMDK")</AttributeName>
         </Attribute>
@@ -22,6 +13,18 @@
         </Attribute>
         <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.personalshopper", Managed="Symbol.XamarinEMDK.PersonalShopper")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.sam", Managed="Symbol.XamarinEMDK.Sam")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.scanandpair", Managed="Symbol.XamarinEMDK.ScanAndPair")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.serialcomm", Managed="Symbol.XamarinEMDK.SerialComm")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.simulscan", Managed="Symbol.XamarinEMDK.SimulScan")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>Java.Interop.DoNotPackage("com.symbol.emdk.jar")</AttributeName>
@@ -39,10 +42,10 @@
           <AttributeName>System.Reflection.AssemblyDescription("EMDK for Xamarin")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.0.2")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.0.3")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.0.2")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.0.3")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyProduct("EMDK for Xamarin")</AttributeName>
@@ -257,6 +260,13 @@
       <Type Name="DiagnosticParamId" Kind="Class" />
       <Type Name="DiagnosticResults" Kind="Class" />
       <Type Name="PersonalShopperMgr" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Symbol.XamarinEMDK.Sam">
+      <Type Name="SAM" Kind="Class" />
+      <Type Name="SAMException" Kind="Class" />
+      <Type Name="SAMManager" Kind="Class" />
+      <Type Name="SAMResults" Kind="Class" />
+      <Type Name="SAMType" Kind="Class" />
     </Namespace>
     <Namespace Name="Symbol.XamarinEMDK.ScanAndPair">
       <Type Name="ScanAndPairConfig" Kind="Class" />

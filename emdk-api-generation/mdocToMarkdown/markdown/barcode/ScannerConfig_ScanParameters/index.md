@@ -44,13 +44,16 @@ Decode LED ON duration upon successful decode in milliseconds. This value can be
 **Type** - System.Int32
 ###DecodeScreenNotification
 
+        
 
 **Type** - System.Boolean
 ###DecodeScreenNotificationTime
 
+        
 
 **Type** - System.Int32
 ###DecodeScreenTranslucencyLevel
 
+        
 
 **Type** - System.Int32

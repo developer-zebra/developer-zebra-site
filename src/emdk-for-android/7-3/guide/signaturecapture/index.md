@@ -95,7 +95,7 @@ The first byte of the byte array holds the image format.
 2. (reserved)
 3. `.bmp`
 4. `.tiff`
-
+ 
 ##### Get the image format: 
 
     :::Java

@@ -186,7 +186,9 @@ The Review section of the Wizard allows you to verify your selections.
 ## Publish
 The Publish section of the Wizard permits selection of a staging method, testing of the method for profile functionality, and making the profile available to the staging operator. This window lists the available profile delivery types, and displays dates and times when the profile was Last Tested, Published and Staged.
 
-### Staging a Barcode Profile
+-----
+
+### Barcode Profile Staging
 To stage a barcode profile:
 
 1. Select the Barcode tab: 
@@ -221,7 +223,7 @@ To stage a barcode profile:
 
 -----
 
-### Staging an Audio Profile
+### Audio Profile Staging
 
 **NOTE: Audio staging is NOT supported on Zebra's "SD660-platform" devices, which currently includes**:
 * PS20
@@ -257,7 +259,9 @@ To stage a barcode profile:
 
 To unpublish a profile to remove operator access, select Unpublish.
 
-### Staging an NFC Profile
+-----
+
+### NFC Profile Staging
 To stage an NFC profile:
 
 1. Select the NFC tab. 
@@ -272,7 +276,7 @@ To stage an NFC profile:
 
 5. Enter staging instructions for the operator.
 
-    ![img](../images/ConnectNetwork_Publish_Instructions.jpg)
+    <img alt="image" style="height:400px" src="../images/ConnectNetwork_Publish_Instructions.jpg"/>
 
 6. Select Publish Now.
 
@@ -282,6 +286,30 @@ To stage an NFC profile:
 
 
 To unpublish a profile to remove operator access, select Unpublish.
+
+-----
+
+### USB and SD Card Profile Staging
+
+StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Staging process to be used for staging a device from a USB drive or SD card.  
+
+**To automatically stage a device from a USB drive or SD card**:
+
+1. Generate `.bin` file(s) using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
+2. Create a folder called `/Stagenow` on a USB drive or SD card.
+3. Copy the `.bin` file(s) to the new folder's root level. 
+3. On a new or enterprise-reset device to be staged, attach (or insert) the storage device and boot. 
+4. When the `.bin` file is found, set-up wizard is skipped and staging begins. 
+
+**Note: Staging profiles stored on an SD card take precedence over USB**.
+
+**To automatically stage a device from a USB drive or SD card**:
+
+1. Generate `.bin` file(s) using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
+2. Copy the `.bin` file(s) to any location on the device. 
+3. Launch the StageNow client and tap the "Browse" button:
+<img alt="image" style="height:300px" src="sn_33_ui.png"/>
+4. Navigate to and tap the `.bin` file copied in Step 2 to begin staging. 
 
 -----
 

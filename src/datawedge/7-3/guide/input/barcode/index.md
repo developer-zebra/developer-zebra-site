@@ -761,7 +761,7 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 Decoder Signature is a special pattern that encloses an area in a document (such as a signature) and allows that specific area to be captured as an image. The pattern is placed on either side of the area to capture and extends the full height of that area, for example:
 
-<img style="height:350px" src="SigCap-sample.jpg"/>
+<img src="DecoderSignature-sample.jpg"/>
 <br>
 For help creating a Signature Capture barcode like the one above, refer to the [Decoder Signature Guide (pdf)](Decoder_Signature.pdf)
 
@@ -771,7 +771,7 @@ For help creating a Signature Capture barcode like the one above, refer to the [
 
 **Height -** Specify the desired output image height in number of pixels. The aspect ratio of Width to Height must match the aspect ratio of the signature capture barcode to avoid distortion in the captured image.
 
-**JPEG Quality -** An integer value between 5 and 100 with increments of 5, with 100 representing the highest quality image and 5 representing the most optimized image.
+**JPEG Quality -** An integer value between 5 and 100 with increments of 5, with 100 representing the highest quality image and 5 representing the most optimized for image size.
 
 **Bits per pixel -** Specify the color depth of the output image. This is not applicable to JPEG image formats. Possible values: 
 * 0 - 1 BPP (2 levels)

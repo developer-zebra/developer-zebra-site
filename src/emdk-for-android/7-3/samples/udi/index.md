@@ -35,7 +35,9 @@ productversion: '7.3'
 ##Overview
 This sample application shows how the Barcode API's UDI Label scanning features can be used to scan Barcodes in a UDI Label. This API supports scanning of labels from three issuing agencies ( GS1, ICCBBA, and HIBCC).
 
-**NOTE: This sample illustrates a single use-case** for implementing UDI label scanning features; it is not a comprehensive example of the many ways this feature could be used. 
+#### NOTES
+* **This sample illustrates a single use-case** for implementing UDI label scanning features; it is not a comprehensive example of the many ways this feature could be used. 
+* **For a complete example of barcode scanning implementation**, see [Barcode Sample 1](../barcode).
 
 ##Prerequisites
 Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.

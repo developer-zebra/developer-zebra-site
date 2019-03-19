@@ -84,7 +84,7 @@ For more information about approved languages or to download a localized operati
 -----
 
 ## New in DataWedge 7.3
-* New **[Signature Capture decoder](../input/barcode/#decoderselection)** feature added to capture a special formatted area (e.g. signature) as an image. 
+* New **[Decoder Signature](../input/barcode/#decoderselection)** feature added to capture a special formatted area (e.g. signature) as an image. 
 
 -----
 ## Recent Version History

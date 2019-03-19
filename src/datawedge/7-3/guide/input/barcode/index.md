@@ -202,64 +202,65 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Datamatrix<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#decodersignature">Decoder Signature</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#discrete2of5">Discrete 2of5</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#dotcode">DotCode</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#dotcode">DotCode</a></p></td>
 <td align="left" valign="top"><p class="table">Dutch Postal</p></td>
 <td align="left" valign="top"><p class="table"><a href="#ean8">EAN-8</a><sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar</p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
-<td align="left" valign="top"><p class="table">GS1 DataBar Expanded</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">GS1 DataBar Expanded</p></td>
 <td align="left" valign="top"><p class="table"><a href="#gs1datamatrix">GS1 Datamatrix</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#gs1qrcode">GS1 QR Code</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#hanxin">HAN XIN</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#hanxin">HAN XIN</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#interleaved2of5">Interleaved 2of5</a></p></td>
 <td align="left" valign="top"><p class="table">Japanese Postal</p></td>
-<td align="left" valign="top"><p class="table"><a href="#korean3of5">Korean 3of5</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#korean3of5">Korean 3of5</a></p></td>
 <td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">MAILMARK</p></td>
-<td align="left" valign="top"><p class="table"><a href="#matrix2of5">Matrix 2of5</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#matrix2of5">Matrix 2of5</a></p></td>
 <td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#micropdf">MicroPDF</a><sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">MicroQR</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">MicroQR</p></td>
 <td align="left" valign="top"><p class="table">MacroMicroPDF<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#msi">MSI</a></p></td>
-<td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
 </tr>
+<td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#trioptic39">Trioptic 39</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#usplanet">US Planet</a></p></td>
-<td align="left" valign="top"><p class="table">US Postal</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">US Postal</p></td>
 <td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#upce0">UPC-E0</a><sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">US4state FICS</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">US4state FICS</p></td>
 <td align="left" valign="top"><p class="table"><a href="#upce1">UPC E1</a></p></td>
 <td align="left" valign="top"><p class="table">US4state</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"></p></td>
 </tr>
 </tbody>
 </table>
@@ -756,13 +757,13 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 ------
 
-### Signature Capture
+### Decoder Signature
 
-Signature Capture code is a special pattern that encloses an area on a document (such as a signature) and allows that specific area to be captured as an image. The pattern is placed on either side of the area to capture and extends the full height of that area, for example:
+Decoder Signature is a special pattern that encloses an area in a document (such as a signature) and allows that specific area to be captured as an image. The pattern is placed on either side of the area to capture and extends the full height of that area, for example:
 
 <img style="height:350px" src="SigCap-sample.jpg"/>
 <br>
-For help creating a Signature Capture barcode like the one above, refer to the [Signature Capture Code Guide (pdf)](Signature_Capture_code.pdf)
+For help creating a Signature Capture barcode like the one above, refer to the [Decoder Signature Guide (pdf)](Decoder_Signature.pdf)
 
 **Format -** Specify the desired output image format: JPEG, BMP, TIFF.
 
@@ -770,12 +771,18 @@ For help creating a Signature Capture barcode like the one above, refer to the [
 
 **Height -** Specify the desired output image height in number of pixels. The aspect ratio of Width to Height must match the aspect ratio of the signature capture barcode to avoid distortion in the captured image.
 
-**JPEG Quality -** A value between 5 and 100 with increments of 5, with 100 representing the highest quality image and 5 representing the most optimized image.
+**JPEG Quality -** An integer value between 5 and 100 with increments of 5, with 100 representing the highest quality image and 5 representing the most optimized image.
 
-**Bits per pixel -** Specify the color depth of the output image. Possible values: 
-  0 - 1 BPP (2 levels)
-  1 - 4 BPP (64 levels)
-  2 - 8 BPP (256 levels)
+**Bits per pixel -** Specify the color depth of the output image. This is not applicable to JPEG image formats. Possible values: 
+* 0 - 1 BPP (2 levels)
+* 1 - 4 BPP (16 levels)
+* 2 - 8 BPP (256 levels)
+
+Note: **Handling large image data -** Since the data size of a single image (which can be 1280 x 800 bytes = 1000 kb) can exceed the size limit of a single intent, DataWedge supports image data delivery via Android FileProvider API. For Decoder Signature type decodes, all image data are delivered using this approach.
+
+* It is expected that the user application copy the image files from the given URI (Uniform Resource Identifier) as soon as possible since DataWedge only keeps a maximum of 2 sets of decoded images before deleting them to create new images in the internal memory.
+
+* Refer to the Signature Decoder sample application for a code sample of handling image data from an Android client app.
 
 ------
 

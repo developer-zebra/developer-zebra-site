@@ -25,7 +25,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
 * **DataWedge 7.2 -** Added new DotCode decoder support.
-* **DataWedge 7.3 -** Added new Signature Capture decoder support.
+* **DataWedge 7.3 -** Added new Decoder Signature support.
 
 ### Function Prototype
 
@@ -630,7 +630,7 @@ Error messages are logged for invalid actions and parameters
 	</tr>
 	<tr>
 	 <td>decoder_signature_bpp</td>
-	 <td>0 - 1 BPP<br>1 - 4 BPP<br>2 - 8 BPP (default)<br>Note: Not applicable to JPEG format.</td>
+	 <td>0 - 1 BPP (2 levels)<br>1 - 4 BPP (16 levels)<br>2 - 8 BPP (256 levels) (default)<br>Note: Not applicable to JPEG format.</td>
 	</tr>
 	<tr>
 	<td>decoder_signature_jpegquality</td>

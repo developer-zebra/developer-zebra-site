@@ -293,31 +293,32 @@ To unpublish a profile to remove operator access, select Unpublish.
 
 StageNow 3.3 (and later) allows the `.bin` file(s) generated during the NFC Staging process to be used for staging a device from a USB drive or SD card.  
 
-**To automatically stage a device from a USB drive or SD card**:
+**To <u>automatically</u> stage a device from a USB drive or SD card**:
 
-1. Generate `.bin` file(s) using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
-2. Create a folder called `/Stagenow` on a USB drive or SD card.
-3. Copy the `.bin` file(s) to the new folder's root level. 
-3. On a new or enterprise-reset device to be staged, attach (or insert) the storage device and boot. 
-4. When the `.bin` file is found, set-up wizard is skipped and staging begins. 
+1. **Generate** `.bin` **file(s)** using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
+2. **Create a folder called** `/Stagenow` on a USB drive or SD card.
+3. **Copy the** `.bin` **file(s)** to the new folder's root level. 
+3. **Attach (or insert) the storage device and boot** the (new or enterprise-reset) device to be staged. 
 
-**Note: Staging profiles stored on an SD card take precedence over USB**.
+##### When the `.bin` file is found, the set-up wizard is skipped and staging begins. 
 
-**To automatically stage a device from a USB drive or SD card**:
+>**Note**: Staging profiles stored on an SD card take precedence over USB.
 
-1. Generate `.bin` file(s) using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
-2. Copy the `.bin` file(s) to any location on the device. 
-3. Launch the StageNow client and tap the "Browse" button:
+**To <u>manually</u> stage a device from a file on the device**:
+
+1. **Generate** `.bin` **file(s)** using the [NFC Profile Staging](#nfcprofilestaging) procedures above. 
+2. **Copy the** `.bin` **file(s)** to any location on the device. 
+3. **Launch the StageNow client** and tap the "Browse" button:
 <img alt="image" style="height:300px" src="sn_33_ui.png"/>
-4. Navigate to and tap the `.bin` file copied in Step 2 to begin staging. 
+4. **Navigate to and tap the** `.bin` **file** copied in Step 2 to begin staging. 
 
 -----
 
 ## Copying a Staging Profile
 
-To copy a profile in order to create a new, similar profile:
+**To create a new Profile by copying an existing one**:
 
-1. Select the Copy icon next to the profile. ![img](../images/icon_copy.jpg)
+1. Select the Copy icon (shown below) next to the profile. ![img](../images/icon_copy.jpg)
 
 2. Enter a new name for the profile, and select Save. 
 

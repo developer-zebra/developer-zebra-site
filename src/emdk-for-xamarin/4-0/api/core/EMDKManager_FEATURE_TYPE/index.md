@@ -52,7 +52,7 @@ EMDK feature type profile
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###Sam
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###Scanandpair

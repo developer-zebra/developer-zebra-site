@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '4.0' 
 ---
-To be added.
+
 
 **Type** - Java.Lang.Object
 
@@ -13,7 +13,7 @@ To be added.
 
 **public virtual void Connect ();**
 
-To be added.
+
 
 **Parameters:**
 
@@ -23,7 +23,7 @@ To be added.
 
 **public virtual void Disconnect ();**
 
-To be added.
+
 
 **Parameters:**
 
@@ -33,29 +33,29 @@ To be added.
 
 **public virtual byte[] Transceive (byte[] p0, short p1, bool p2);**
 
-To be added.
+
 
 **Parameters:**
 
-System.Byte[] **p0**  - To be added.
+System.Byte[] **p0**  - 
 
-System.Int16 **p1**  - To be added.
+System.Int16 **p1**  - 
 
-System.Boolean **p2**  - To be added.
+System.Boolean **p2**  - 
 
 **Returns** - System.Byte[]
 
 ##Properties
 
 ###IsConnected
-To be added.
+
 
 **Type** - System.Boolean
 ###SamIndex
-To be added.
+
 
 **Type** - System.Int32
 ###SamType
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMType

@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '4.0' 
 ---
-To be added.
+
 
 **Type** - Java.Lang.Enum
 
@@ -13,11 +13,11 @@ To be added.
 
 **public static string GetErrorDescription (Symbol.XamarinEMDK.Sam.SAMResults p0);**
 
-To be added.
+
 
 **Parameters:**
 
-Symbol.XamarinEMDK.Sam.SAMResults **p0**  - To be added.
+Symbol.XamarinEMDK.Sam.SAMResults **p0**  - 
 
 **Returns** - System.String
 
@@ -25,11 +25,11 @@ Symbol.XamarinEMDK.Sam.SAMResults **p0**  - To be added.
 
 **public static Symbol.XamarinEMDK.Sam.SAMResults ValueOf (string p0);**
 
-To be added.
+
 
 **Parameters:**
 
-System.String **p0**  - To be added.
+System.String **p0**  - 
 
 **Returns** - Symbol.XamarinEMDK.Sam.SAMResults
 
@@ -37,7 +37,7 @@ System.String **p0**  - To be added.
 
 **public static Symbol.XamarinEMDK.Sam.SAMResults[] Values ();**
 
-To be added.
+
 
 **Parameters:**
 
@@ -46,50 +46,50 @@ To be added.
 ##Properties
 
 ###AlreadyInUseByADifferentUser
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMResults
 ###AnotherSamAlreadyInUse
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMResults
 ###FailedToConnect
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMResults
 ###Failure
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMResults
 ###InvalidApduCommand
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMResults
 ###SamAlreadyConnected
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMResults
 ###SamNotConnected
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMResults
 ###SamNotInitialized
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMResults
 ###Success
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMResults
 ###TransceiveFailure
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMResults
 ###Undefined
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMResults
 ###Val
-To be added.
+
 
 **Type** - System.Int32

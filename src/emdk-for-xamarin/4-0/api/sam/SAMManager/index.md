@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '4.0' 
 ---
-To be added.
+
 
 **Type** - Symbol.XamarinEMDK.EMDKBase
 
@@ -13,7 +13,7 @@ To be added.
 
 **public virtual System.Collections.Generic.IList<Symbol.XamarinEMDK.Sam.SAM> EnumerateSAMs ();**
 
-To be added.
+
 
 **Parameters:**
 
@@ -22,6 +22,6 @@ To be added.
 ##Properties
 
 ###ActiveSlot
-To be added.
+
 
 **Type** - System.Int32

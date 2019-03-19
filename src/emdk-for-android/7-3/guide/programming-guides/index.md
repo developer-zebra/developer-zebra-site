@@ -45,11 +45,6 @@ content-items:
     url: /emdk-for-android/7-3/guide/samapiusage
   - type: section
     level: 4
-    title: Secure NFC API Programmer's Guide
-    text: This guide contains examples and best practices when using the Secure NFC APIs including MifareDesfire, MiFareSam, SamKey, etc.
-    url: /emdk-for-android/7-3/guide/securenfc
-  - type: section
-    level: 4
     title: SerialComm Programmer's Guide
     text: How to communicate with devices connected to the serial and/or USB ports.
     url: /emdk-for-android/7-3/guide/serialcomm
@@ -71,4 +66,11 @@ content-items:
 product: EMDK For Android
 productversion: '7.3'
 ---
-           
+<!-- 3/19/19- removed per eng. Zebra recommends using Android NFC APIs and SAM APIs (if so equipped). 
+  - type: section
+    level: 4
+    title: Secure NFC API Programmer's Guide
+    text: This guide contains examples and best practices when using the Secure NFC APIs including MifareDesfire, MiFareSam, SamKey, etc.
+    url: /emdk-for-android/7-3/guide/securenfc
+
+-->

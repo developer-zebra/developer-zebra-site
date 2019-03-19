@@ -24,7 +24,8 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
  * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
-* **DataWedge 7.3 -** Added new DotCode decoder support.
+* **DataWedge 7.2 -** Added new DotCode decoder support.
+* **DataWedge 7.3 -** Added new Signature Capture decoder support.
 
 ### Function Prototype
 
@@ -530,7 +531,7 @@ Error messages are logged for invalid actions and parameters
   </tr>
   <tr>
 	<td>decoder_msi_check_digit</td>
-	<td>0- 1 Check Digit<br>1 - 2 Check Digits</td>
+	<td>0 - 1 Check Digit<br>1 - 2 Check Digits</td>
   </tr> 
   <tr>
 	<td>decoder_msi_check_digit_scheme</td>
@@ -614,11 +615,27 @@ Error messages are logged for invalid actions and parameters
   </tr>
 
   <tr>
-	<td>decoder_signature</td>
-	<td>True<br>False</td>
-	<td>N/A</td>
-	<td>N/A</td>
+	 <td rowspan="5">decoder_signature</td>
+	 <td rowspan="5">True<br>False</td>
+	 <td>decoder_signature_format</td>
+	 <td>1 - JPG<br>3 - BMP<br>4 - TIFF</td>
   </tr>
+	<tr>
+	 <td>decoder_signature_width</td>
+	 <td>Integer from 16-1280<br>Default: 400</td>
+	</tr>
+	<tr>
+	 <td>decoder_signature_height</td>
+	 <td>Integer from 16-800<br>Default: 400</td>
+	</tr>
+	<tr>
+	 <td>decoder_signature_bpp</td>
+	 <td>0 - 1 BPP<br>1 - 4 BPP<br>2 - 8 BPP (default)<br>Note: Not applicable to JPEG format.</td>
+	</tr>
+	<tr>
+	<td>decoder_signature_jpegquality</td>
+	<td>Integer from 5-100 in increments of 5<br>Default: 65</td>
+	</tr>
 
   <tr>
 	<td>decoder_webcode</td>

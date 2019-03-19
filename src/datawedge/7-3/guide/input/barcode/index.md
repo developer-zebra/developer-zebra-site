@@ -714,12 +714,6 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 ------
 
-### Webcode
-
-**Webcode Subtype -** Enables decoding of the GT Webcode subtype. A check in the checkbox enables this option.
-
-------
-
 ### Composite AB
 
 **UCC Link Mode:**
@@ -750,24 +744,6 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 ------
 
-### USPostnet
-
-**Report Check Digit -** Transmit USPostnet data with or without the check digit. A check in the checkbox sends USPostnet data with a check digit.
-
-------
-
-### USPlanet
-
-**Report Check Digit -** Transmit USPlanet data with or without the check digit. A check in the checkbox sends USPlanet data with a check digit.
-
-------
-
-### UK Postal
-
-**Report Check Digit -** Transmit UK Postal data with or without the check digit. A check in the checkbox sends UK Postal data with a check digit.
-
-------
-
 ### Korean 3of5
 
 **Length1&#42; -** To decode a Korean 3 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Korean 3 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
@@ -777,6 +753,53 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
+
+------
+
+### Signature Capture
+
+Signature Capture code is a special pattern that encloses an area on a document (such as a signature) and allows that specific area to be captured as an image. The pattern is placed on either side of the area to capture and extends the full height of that area, for example:
+
+<img style="height:350px" src="SigCap-sample.jpg"/>
+<br>
+For help creating a Signature Capture barcode like the one above, refer to the [Signature Capture Code Guide (pdf)](Signature_Capture_code.pdf)
+
+**Format -** Specify the desired output image format: JPEG, BMP, TIFF.
+
+**Width -** Specify the desired output image width in number of pixels. The aspect ratio of Width to Height must match the aspect ratio of the signature capture barcode to avoid distortion in the captured image.
+
+**Height -** Specify the desired output image height in number of pixels. The aspect ratio of Width to Height must match the aspect ratio of the signature capture barcode to avoid distortion in the captured image.
+
+**JPEG Quality -** A value between 5 and 100 with increments of 5, with 100 representing the highest quality image and 5 representing the most optimized image.
+
+**Bits per pixel -** Specify the color depth of the output image. Possible values: 
+  0 - 1 BPP (2 levels)
+  1 - 4 BPP (64 levels)
+  2 - 8 BPP (256 levels)
+
+------
+
+### UK Postal
+
+**Report Check Digit -** Transmit UK Postal data with or without the check digit. A check in the checkbox sends UK Postal data with a check digit.
+
+------
+
+### USPlanet
+
+**Report Check Digit -** Transmit USPlanet data with or without the check digit. A check in the checkbox sends USPlanet data with a check digit.
+
+------
+
+### USPostnet
+
+**Report Check Digit -** Transmit USPostnet data with or without the check digit. A check in the checkbox sends USPostnet data with a check digit.
+
+------
+
+### Webcode
+
+**Webcode Subtype -** Enables decoding of the GT Webcode subtype. A check in the checkbox enables this option.
 
 ------
 

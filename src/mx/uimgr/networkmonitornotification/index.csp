@@ -5,7 +5,8 @@ type: parm
 order: 7
 mx: "6.1"
 osx: "6.0"
-devicetype: A
+devicetype: A,B
+info: On TC20/TC25 devices, available only when running Android 8.x Oreo and higher. 
 parm:
   pivotal: No
   name: NetworkMonitorNotification
@@ -14,17 +15,17 @@ parm:
     - code: 0
       mx: "6.1"
       osx: "6.0"
-      devicetype: A
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting will be retained.
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Turn On 
       mx: "6.1"
       osx: "6.0"
       description: Allows "Network may be monitored..." notifications to be displayed.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Turn Off
       mx: "6.1"
       osx: "6.0"

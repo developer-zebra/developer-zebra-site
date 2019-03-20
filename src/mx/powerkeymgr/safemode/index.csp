@@ -5,7 +5,8 @@ type: parm
 order: 4
 mx: "4.3"
 osx: "4.3"
-devicetype: A
+devicetype: A,B
+info: On TC20/TC25 devices, available only when running Android 8.x Oreo and higher. 
 parm:
   pivotal: Yes
   name: SafeMode
@@ -14,17 +15,17 @@ parm:
     - code: 0
       mx: "4.3"
       osx: "4.3"
-      devicetype: A
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) will cause no change to the Power Off Menu; any previously selected setting will be retained.
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Show Menu Option
       mx: "4.3"
       osx: "4.3"
       description: Enables Safe Mode to be controlled from the Power Off Menu (if the device supports this option).
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Do not show Menu Option
       mx: "4.3"
       osx: "4.3"

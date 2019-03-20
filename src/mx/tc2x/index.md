@@ -74,6 +74,10 @@ csps:
     url: /mx/powermgr
     csp: powermgr
   - type: section
+    title: Power Key Manager
+    url: /mx/powerkeymgr
+    csp: powerkeymgr
+  - type: section
     title: Status Manager
     url: /mx/statusmgr
     csp: statusmgr

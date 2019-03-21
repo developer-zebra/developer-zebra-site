@@ -62,6 +62,10 @@ csps:
     url: /mx/intent
     csp: intent
   - type: section
+    title: License Manager
+    url: /mx/licensemgr
+    csp: licensemgr
+  - type: section
     title: Lifeguard Over the Air Manager
     url: /mx/fotamgr
     csp: fotamgr

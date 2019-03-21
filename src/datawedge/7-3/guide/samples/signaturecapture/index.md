@@ -9,7 +9,7 @@ sources:
   - title: Github Repo
     url: 'https://github.com/Zebra/samples-datawedge'
 devices:
-  - All supported Zebra Android Marshmallow (v6.0) or above devices
+  - All supported Zebra Android Nougat (v7.0) or above devices
 image: datacapture1-0.png
 screenshots:
   - signaturecapture1.png
@@ -25,16 +25,16 @@ date: 2018-11-06
 Decoder Signature is a special pattern that encloses an area in a document (such as a signature) and allows that specific area to be captured as an image. The pattern is placed on either side of the area to capture and extends the full height of that area, for example:
 
 <img src="DecoderSignature-sample.jpg"/>
+<br>
+>_This application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs._
 
-This sample app demonstrates how to use Decoder Signature to capture data using [DataWedge Intent APIs](../../api) and save the captured data as an image. Permission is required for reading and writing to device storage, which is prompted upon application launch.
+This sample app demonstrates how to use Decoder Signature to capture data using [DataWedge Intent APIs](../../api) and save the captured data as an image. Images in .TIFF format are not supported with this app. Permission is required for writing to device storage, which is prompted upon application launch.
 
 Available actions in this sample: 
 * Create a DatatWedge profile if it does not exist, configure it with specific parameters, and associate it with this app.
 * Adjust the height and width of the image output.
 * Scan and display the captured data. 
 * Save the captured data as an image file.
-
->_This application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs._
 
 ##APIs Used
 
@@ -45,36 +45,31 @@ Available actions in this sample:
   </tr>
 
   <tr>
-    <td><a href="http://techdocs.zebra.com/datawedge/latest/guide/api/createprofile/">Create Profile</a></td>
-    <td>Check for existing profile, create if it does not exist</td>
-  </tr>
-
-  <tr>
     <td><a href="http://techdocs.zebra.com/datawedge/latest/guide/api/setconfig/">Set Config</a></td>
-    <td>Set profile settings</td>
+    <td>Create profile if it does not exist and set profile settings</td>
   </tr>
 
 </table>
 
 ##Requirements
 * This sample was created based on DataWedge version 7.3 (version that existed at the time of creation). Check [DataWedge API](http://techdocs.zebra.com/datawedge/latest/guide/about/) documentation for any future version changes that may affect functionality.
-* Android API 23 (Marshmallow) or higher.
+* Android API 24 (Nougat) or higher.
 * DataWedge (built-in all Zebra devices) is running on the device.
 
 ##Using This Sample
 1. [Download](https://github.com/Zebra/samples-datawedge), build, and launch the sample app.
 <img style="height:350px" src="signaturecapture1.png"/>
-  
-2. Tap **Set Config**. A messge appears indicating the profile is created and the parameters are updated. The profile, “SigCap”, performs the following:
+2. Tap **Allow** in the popup message to grant permission for the app to access files on the device.
+3. Tap **Set Config**. A messge appears indicating the profile is created and the parameters are updated. The profile, “SignatureCapture”, performs the following:
    * Enable "Barcode input" plugin and enable "Decoder Signature" decoder.
    * Set the Height and Width paramters for "Decoder Signature" to the default values.
    * Associate the profile to the sample app.
    * Configure the intent output to deliver captured data to the sample app.
  <img style="height:350px" src="signaturecapture2.png"/> 
 
-3. Ensure the correct **Height** and **Width** is entered for the output image. If any changes are made, tap **Set Config** to update the new values in the profile.
+4. Ensure the correct **Height** and **Width** is entered for the output image. If any changes are made, tap **Set Config** to update the new values in the profile.
 
-4. Press the trigger button to scan. The capture data is displayed.
+5. Press the trigger button to scan. The captured data and file path of the saved image is displayed.
 <img style="height:350px" src="signaturecapture3.png"/>
 
   

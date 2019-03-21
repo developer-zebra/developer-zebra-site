@@ -4,7 +4,7 @@ title: License Method
 type: parm
 order: 60
 mx: "4.3"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: Yes
   presentif: The License Action is "Symbol" and License Choice is "Symbol"  
@@ -12,12 +12,12 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: embed
       mx: "4.3"
       description: Embed the license blob from the license file into the XML.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: reference
       mx: "4.3"
       description: Reference a license file already on the device.

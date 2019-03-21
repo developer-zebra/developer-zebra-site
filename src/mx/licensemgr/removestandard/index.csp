@@ -4,7 +4,7 @@ title: Remove Standard Feature
 type: parm
 order: 70
 mx: "4.3"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The Select Method is "Standard" and the License Choice "Symbol"
@@ -12,7 +12,7 @@ parm:
   type: list
   list:
     - code: SIMULDC1_0_0
-      devicetype: A
+      devicetype: A,B
       name: SimulScan OCR/OMR
       description: Causes the Software License for the SimulScan Software Component to be removed from the device.
 ---

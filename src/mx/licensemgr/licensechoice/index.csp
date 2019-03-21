@@ -4,24 +4,24 @@ title: License Choice
 type: parm
 order: 3
 mx: "7.1"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   name: LicenseChoice
   type: list
   list:
     - code: 0
-      devicetype: A
+      devicetype: A,B
       name: do_nothing
       mx: "7.1"
       description: This value (or the ansence of this parm from the XML) causes no change to device settings; any previous setting is retained.
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: symbol
       mx: "7.1"
       description: Performs a (legacy) Symbol License Action.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: zebra
       mx: "7.1"
       description: Performs a Zebra License Action.

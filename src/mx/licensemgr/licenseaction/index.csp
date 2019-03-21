@@ -4,7 +4,7 @@ title: License Action
 type: parm
 order: 50
 mx: "4.3"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: Yes
   presentif: License Choice is set to "Symbol"
@@ -12,12 +12,12 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: apply
       mx: "4.3"
       description: Applies a Software License on a Symbol device.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: remove
       mx: "4.3"
       description: Revokes a Software License from a Symbol device.

@@ -4,7 +4,7 @@ title: Zebra License Action
 type: parm
 order: 5
 mx: "7.1"
-devicetype: A
+devicetype: A,B
 parm:
   presentif: The License Source is "Zebra Cloud" and License Action Zebra is "Activate AID" and License Choice is "Perform Zebra license action" and License Choice is "Use a local license server option"  
   pivotal: No
@@ -12,37 +12,37 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: activate
       mx: "7.1"
       description: Activates an AID on a Zebra device.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: return
       mx: "7.1"
       description: RESERVED FOR FUTURE USE. Deactivates an AID on a Zebra device, returning it to general use. 
     - code: 3
-      devicetype: A
+      devicetype: A,B
       name: reset
       mx: "7.1"
       description: RESERVED FOR FUTURE USE. Deactivates all AIDs on a Zebra device and returns them to general use.
     - code: 4
-      devicetype: A
+      devicetype: A,B
       name: acquirefeature
       mx: "7.1"
       description: Used programmatically on the device; no human interaction.
     - code: 5
-      devicetype: A
+      devicetype: A,B
       name: returnallfeatures
       mx: "7.1"
       description: RESERVED FOR FUTURE USE. Used programmatically on the device; no human interaction.
     - code: 6
-      devicetype: A
+      devicetype: A,B
       name: refreshAID
       mx: "7.2"
       description: Causes the device to contact the licensing server to renew a device license following a license renewal purchase.  
     - code: 7
-      devicetype: A
+      devicetype: A,B
       name: deleteLicenseSource
       mx: "8.1"
       description: Removes the specified license source from the device.  

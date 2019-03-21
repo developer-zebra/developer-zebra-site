@@ -4,7 +4,7 @@ title: License File and Path
 type: parm
 order: 65
 mx: "4.3"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The License Action is "Apply" and License Method is "Reference" and License Choice is "Symbol"

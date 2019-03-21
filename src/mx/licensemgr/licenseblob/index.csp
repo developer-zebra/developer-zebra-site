@@ -4,7 +4,7 @@ title: License File 'Blob'
 type: parm
 order: 62
 mx: "4.3"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The License Action is "Apply" and License Method is "Embed" and License Choice is "Symbol"  

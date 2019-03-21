@@ -4,7 +4,7 @@ title: Verification Method
 type: parm
 order: 52
 mx: "4.3"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: Yes
   presentif: The License Action is "Symbol" and License Choice is "Symbol"
@@ -12,17 +12,17 @@ parm:
   type: list
   list:
     - code: 0
-      devicetype: A
+      devicetype: A,B
       name: Do not verify feature name
       mx: "4.3"
       description: This value (or the absence of this parm from the XML) causes no change to the verification method; any previously selected setting is retained.
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Verify against a standard feature name
       mx: "4.3"
       description: Verifies that the Licensed Feature Name contained within the specified Software License File matches a specified Standard Licensed Feature Name.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Verify against a custom feature name
       mx: "4.3"
       description: Verifies that the Licensed Feature Name contained within the specified Software License File matches a specified Custom Licensed Feature Name.

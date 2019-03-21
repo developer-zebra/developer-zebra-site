@@ -4,7 +4,7 @@ title: Refresh Activation ID
 type: parm
 order: 40
 mx: "7.2"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   presentif: License Action Zebra is "Refresh AID" and License Choice is "Zebra"

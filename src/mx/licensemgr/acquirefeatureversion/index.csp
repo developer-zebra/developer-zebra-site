@@ -4,7 +4,7 @@ title: Acquire Feature Version
 type: parm
 order: 45
 mx: "7.1"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   presentif: License Action Zebra is "Acquire Feature" and License Choice is "Perform Zebra license action"

@@ -4,7 +4,7 @@ title: Activation Quantity
 type: parm
 order: 20
 mx: "7.1"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The License Action Zebra is "Activate" and License Choice is "Zebra" and License Source is "Zebra Cloud or LLS"

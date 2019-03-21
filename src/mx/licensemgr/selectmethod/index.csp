@@ -4,7 +4,7 @@ title: Select Remove Method
 type: parm
 order: 68
 mx: "4.3"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: Yes
   presentif: The License Action is "Remove" and License Choice is "Symbol"
@@ -12,12 +12,12 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: A
+      devicetype: A,B
       mx: "4.3"
       name: standard
       description: Indicates that a Standard Licensed Feature Name will identify the Software License to be removed from the device.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       mx: "4.3"
       name: custom
       description: Indicates that a Custom Licensed Feature Name will identify the Software License to be removed from the device.

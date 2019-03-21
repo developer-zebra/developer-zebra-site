@@ -4,7 +4,7 @@ title: Remove Custom Feature
 type: parm
 order: 72
 mx: "4.3"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The Select Method is "Custom" and the License Choice "Symbol"

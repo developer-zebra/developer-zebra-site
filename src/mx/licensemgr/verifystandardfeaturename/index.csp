@@ -4,7 +4,7 @@ title: Standard Feature Name
 type: parm
 order: 55
 mx: "4.3"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The License Action is "Symbol" and License Choice is "Symbol"  
@@ -12,7 +12,7 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: SIMULDC1_0_0
       mx: "4.3"
       description: Verifies that the SimulScan OCR/OMR Licensed Feature Name contained in the Software License File matches the Standard Licensed Feature Name of the SimulScan software component.

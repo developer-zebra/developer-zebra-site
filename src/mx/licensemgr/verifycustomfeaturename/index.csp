@@ -4,7 +4,7 @@ title: Custom Feature Name
 type: parm
 order: 58
 mx: "4.3"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The Verify Method is "Verify against a custom feature name" and License Choice is "Symbol"

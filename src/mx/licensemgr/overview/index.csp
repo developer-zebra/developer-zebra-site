@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Overview
 type: text
-devicetype: A
+devicetype: A,B
 order: 0
 ---
 

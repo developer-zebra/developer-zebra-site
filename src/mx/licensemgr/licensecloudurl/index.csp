@@ -4,7 +4,7 @@ title: License Cloud URL
 type: parm
 order: 9
 mx: "8.0"
-devicetype: A
+devicetype: A,B
 parm:
   pivotal: No
   presentif: The License Source is "Zebra Cloud" and License Action Zebra is "Activate " and License Choice is "Zebra"
@@ -12,27 +12,27 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: A
+      devicetype: A,B
       name: Zebra UAT Cloud
       mx: "8.0"
       description: Selects cloud-based Zebra licensing test server.
     - code: 2
-      devicetype: A
+      devicetype: A,B
       name: Zebra Production Cloud
       mx: "8.0"
       description: Selects the cloud-based Zebra licensing production server.
     - code: 3
-      devicetype: A
+      devicetype: A,B
       name: Zebra Production Cloud Via Proxy
       mx: "8.1"
       description: Used when the Zebra production cloud-based licensing server is accessed through a proxy or relay server.
     - code: 4
-      devicetype: A
+      devicetype: A,B
       name: Zebra Test Cloud Via Proxy
       mx: "8.1"
       description: Used when the Zebra test cloud-based licensing server is accessed through a proxy or relay server.
     - code: 5
-      devicetype: A
+      devicetype: A,B
       name: Zebra Custom Cloud
       mx: "8.1"
       description: Allows a custom URL for an on-premise license server or relay server to be specified.

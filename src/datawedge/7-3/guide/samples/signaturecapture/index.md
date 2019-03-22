@@ -10,7 +10,7 @@ sources:
     url: 'https://github.com/Zebra/samples-datawedge'
 devices:
   - All supported Zebra Android Nougat (v7.0) or above devices
-image: datacapture1-0.png
+image: signaturecapture1.png
 screenshots:
   - signaturecapture1.png
   - signaturecapture2.png

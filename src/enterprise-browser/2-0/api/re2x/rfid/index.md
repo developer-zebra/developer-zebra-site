@@ -9,7 +9,17 @@ subhead: RhoElements 2.x API
 ## Overview
 The RFID Module provides access to functionality of the device's RFID reader, if so equipped. 
 
-**Limited device support**. This module is supported only on Zebra MC3190-Z and MC9190-Z RFID reader devices, and is not included with the standard installation. Use of the RFID module might therefore require a separate download and installation. [See Remarks section](#remarks) for more information.
+#### Device Support 
+
+This module is supported only on the following Zebra devices: 
+
+* **Zebra MC3190-Z** RFID reader
+* **MC9190-Z** RFID reader 
+* **MC33**
+* **TC20 with RFD2000** RFID reader
+* **Any Zebra Android device** connected to the Zebra RFD8500 Bluetooth RFID sled
+
+**Note**: The RFID module is not included with the standard EB installation, and might require a separate download and installation. [See Remarks section](#remarks) for more information.
 
 ## Syntax
 
@@ -885,10 +895,10 @@ Once the plug-in is installed, modify the &lt;PreloadLegacyActiveX&gt; parameter
 
 
 ### General
-When loaded, the plug-in by default is already connected to RFID module. To disconnect, use the disconnect() method call on the RFID object. After successfully disconnecting, the connect() method can be used to make a new connection to the RFID module. For a plug-in method to be successfully invoked, all of its associated non-default properties must be set prior to making the call.
+When loaded, the plug-in by default is already connected to RFID module. To disconnect, use the `disconnect()` method call on the RFID object. After successfully disconnecting, the `connect()` method can be used to make a new connection to the RFID module. For a plug-in method to be successfully invoked, all of its associated non-default properties must be set prior to making the call.
 
 ### Waiting for operationCompleteEvent
-When RhoElements finishes execution of a plug-in method call, the corresponding RFID operation might not have been completed or might have just been started. Specifically, for performInventory, tagLocate, tag access operations (readTag/writeTag/lockTag/killTag) using an access-filter or performed on all tags, the corresponding method call just initiates the corresponding RFID operation. These operations generate Tag reports, and once all the reports are sent to the application, the plug-in sends a operationCompleteEvent. The disconnect() method also gives an operationCompleteEvent back to the application. It is important that the application register for operationCompleteEvent, and further method calls must be made only after the reception of this event.
+When RhoElements finishes execution of a plug-in method call, the corresponding RFID operation might not have been completed or might have just been started. Specifically, for performInventory, tagLocate, tag access operations (readTag/writeTag/lockTag/killTag) using an access-filter or performed on all tags, the corresponding method call just initiates the corresponding RFID operation. These operations generate Tag reports, and once all the reports are sent to the application, the plug-in sends a operationCompleteEvent. The `disconnect()` method also gives an operationCompleteEvent back to the application. It is important that the application register for operationCompleteEvent, and further method calls must be made only after the reception of this event.
 
 ### Handling the TagEvent
 TagEvent should be assigned to a Callback that handles the tag-reports arising out of Inventory/Locationing/Read/Write/Lock/Kill operations. Every tagEvent callback should usually result in JSON TagData Array object of length equal to the reportTrigger property set. However, in the contingency that the RFID operation has ended and the plug-in hasn't accumulated reportTrigger number of tagData objects, then the pending tags are all sent to the tagEvent callback.

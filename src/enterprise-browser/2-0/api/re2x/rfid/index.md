@@ -13,10 +13,9 @@ The RFID Module provides access to functionality of the device's RFID reader, if
 
 This module is supported only on the following Zebra devices: 
 
-* **Zebra MC3190-Z** RFID reader
-* **MC9190-Z** RFID reader 
-* **MC33**
-* **TC20 with RFD2000** RFID reader
+* **MC3190-Z and MC9190-Z** RFID readers
+* **MC33xx** RFID reader
+* **TC20 with RFD2000** RFID sled
 * **Any Zebra Android device** connected to the Zebra RFD8500 Bluetooth RFID sled
 
 **Note**: The RFID module is not included with the standard EB installation, and might require a separate download and installation. [See Remarks section](#remarks) for more information.

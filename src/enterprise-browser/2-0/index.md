@@ -21,6 +21,8 @@ menu:
       url: /enterprise-browser/2-0/guide/samples
     - title: Guides
       url: /enterprise-browser/2-0/guide
+    - title: Licensing
+      url: /enterprise-browser/2-0/guide/licensing
     - title: Migration
       url: /enterprise-browser/2-0/guide/migration
     - title: Config.xml

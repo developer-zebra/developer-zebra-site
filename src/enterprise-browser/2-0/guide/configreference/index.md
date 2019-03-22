@@ -1359,11 +1359,13 @@ Forces a particular screen orientation (portrait or landscape) when an EB app la
 
 **Possible Values**:
 
-* LANDSCAPE - Launches app with horizontal orientation
-* PORTRAIT - Launches app with vertical orientation
-* AUTO - Locks app in "natural" orientation of device (see below)
+* **LANDSCAPE** - Launches app with horizontal orientation
+* **PORTRAIT** - Launches app with vertical orientation
+* **AUTO** - Locks app in "natural" orientation of device (see Notes, below)
 
-**Note**: Portrait mode is the "natural" orientation of all Zebra devices ***except*** the CC5000, ET55, VC80 and WT6000, for which it is landscape. 
+##### Notes: 
+* **Portrait mode is the "natural" orientation of all Zebra devices** *except* the CC5000, ET55, VC80 and WT6000, for which it is landscape. 
+* **AUTO setting not supported on CC600 or CC6000** devices running Android 8.x Oreo.
 
 #### Example
 
@@ -2779,12 +2781,17 @@ Specifies which control-key combinations (copy, paste, etc.) should be enabled. 
 
 ## Default MetaTags
 ### MetaTag
-Permits a default meta tag to be specified so that a tag required by the application need not be present on every HTML page. Set a default tag by specifying the tag’s module, followed by the tilde character (~) and the properties of the module to set, as specified in EMML 1.1. If the meta tag is present in both the configuration and a loaded page, the page takes priority. Only persistent tags can be set logically in the configuration. Tag persistence is covered in the "additional information" section in the help file. Meta tag properties and their possible values are explained in the corresponding API.
+Permits a default meta tag to be specified so that a tag required by the application need not be present on every HTML page. Set a default tag by specifying the tag’s module followed by the tilde character ( ~ ) and the properties of the module to set as described in the EMML 1.1 specification. If the meta tag is present in both the configuration and a loaded page, the page takes priority. Only persistent tags can be set logically in the configuration. Tag persistence is covered in the "additional information" section in the help file. Meta tag properties and their possible values are explained in the corresponding API.
+
+##### `IMPORTANT:` On TC83, MC93, CC600, CC6000 or PS20 devices:
+Maintain backward compatibility of scanner metatags by adding the following line to the `Config.xml` file on those devices: 
+
+	:::xml
+	<MetaTag value="Scanner~enumerate;enabled:SCN2"/>
 
 **Possible Values**:
 
-* [Module]~[property to set]
-
+* [Module] ~ [property to set]
 
 #### Example
 	:::xml

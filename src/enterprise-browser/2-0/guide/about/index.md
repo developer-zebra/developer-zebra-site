@@ -42,6 +42,15 @@ EB 2.0 now supports the following mobile computing devices and operating systems
 * **VC80X** Android Oreo 
 * **WT6000** Android Nougat
 
+#### `MARCH 2019 UPDATE:`
+
+Enterprise Browser 2.0.1 (and later) adds support for the following devices:  
+
+* **MC93**
+* **TC83**
+* **CC600**
+* **CC6000**
+
 ### Scanner Support
 EB 2.0 is now supported for use with the following scanners when connected to Zebra devices and operating systems listed:
 

@@ -281,7 +281,7 @@ The following notes are derived from frequently asked questions about device lic
 * **The fastest way to deploy a trial license on a device** is by using the License Manager app and the [manual license assignment](#iiimanuallyassignlicense) procedures above.
 * **Device licenses can be activated using**: 
  * StageNow and the [License Mgr CSP](/stagenow/latest/csp/license)
- * OEMConfig tool, part of the [EMM Toolkit](/emmtk)
+ * OEMConfig tool, part of Zebra's EMM Toolkit (available to authorized partners only)
 
 -----
 

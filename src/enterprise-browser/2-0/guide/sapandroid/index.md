@@ -102,7 +102,18 @@ Keyboard visibility and custom key layouts can be controlled through parameters 
     </SIP>
 <br>
 
-**Note**: If the default SAP keyboard layout is preferred, Zebra recommends using the "default" value for the `ButtonBarMaxHeight` parameter (as above). If a custom layout is to be used, the value should be specified (in pixels) to match the layout height.
+##### Notes: 
+* **If the default SAP keyboard layout is preferred**, Zebra recommends using the "default" value for the `ButtonBarMaxHeight` parameter (as above). If a custom layout is to be used, the value should be specified (in pixels) to match the layout height.
+* **To disable the SAP custom keyboard on the MC93** device running Android 8.O Oreo, update the `sapconfigreader.js` file on the device as follows: 
+
+        :::JavaScript
+        // Replace line 66 in the "sapconfigreader.js" file with the JavaScript code below:
+        //
+        if(-1 != deviceModel.indexOf("mc92") || -1 != deviceModel.indexOf("mc33") || -1 != deviceModel.indexOf("mc67") || -1 != deviceModel.indexOf("tc20k") || -1 != deviceMo
+
+Location of the `sapconfigreader.js` on the device:
+
+* `\[InternalStorage]\Android\data\com.symbol.enterprisebrowser\android_sap`
 
 -----
 

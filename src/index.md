@@ -135,6 +135,8 @@ products:
         url: /enterprise-browser/2-0/tutorial/
       - title: Usage Guides
         url: /enterprise-browser/2-0/guide
+      - title: Licensing Guide
+        url: /enterprise-browser/2-0/guide/licensing
       - title: Config.xml
         url: /enterprise-browser/2-0/guide/configreference
       - title: APIs

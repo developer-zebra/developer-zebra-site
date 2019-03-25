@@ -15,7 +15,7 @@ Enterprise Browser 2.0 (and higher) supports the ability to process incoming voi
 
 #### Interfaces in use: 
 
-* [W3C Web Speech API](https://w3c.github.io/speech-api/speechapi.html) 
+* [W3C Web Speech API](https://w3c.github.io/speech-api/) 
 * [Automatic Speech Recognition (ASR) APIs](https://developer.android.com/reference/android/speech/SpeechRecognizer)
 * [Text-to-speech (TTS) APIs](https://developer.android.com/reference/android/speech/tts/TextToSpeech)
 * [Speech package summary](https://developer.android.com/reference/android/speech/package-summary)

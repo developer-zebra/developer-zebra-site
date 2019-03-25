@@ -11,15 +11,14 @@ layout: guide.html
 Commercial deployment to devices requires an End-User License (**also known as an "Activation ID"** or AID) issued by Zebra Technologies for each device. Licenses are available for 90-day trial and perpetual functionality. Both license types permit an unlimited number of Enterprise Browser-based apps to run on the device(s). This guide explains the process of obtaining an Enterprise Browser license for commercial use and applying the license to individual devices and as part of a mass-deployment. A given license key can be activated on any number of devices up to the total quantity of licenses purchased as explained below. 
 
 ### Requirements
-* One or more license keys (aka Activation IDs) purchased for EB 2.0 software
-* Zebra device with License Manager app on device:
+* **One or more license keys** (aka Activation IDs) purchased for EB 2.0 software
+* **Zebra device(s) with License Manager app** on device:
  * **Android**: License Manager 3.1.1 or higher (pre-installed on supported devices)
  * **Windows Mobile/CE**: License Manager 1.0 or higher (included with EB installer)
-* Internet connection (for online activation)
-* Linux or Windows server (for off-line activation) 
+* **Internet connection** (for online activation) **OR**
+* **Linux or Windows server** (for off-line activation) 
 
 -----
-
 
 ## I. Contact a Reseller 
 The first step in obtaining a license is to engage with Zebra or a Zebra reseller. 
@@ -100,20 +99,19 @@ Successful license activation is indicated by a screen similar to the image belo
 -----
 
 ### Windows Mobile/CE Devices
-Zebra provides License Manager apps for both Android and Windows Mobile/CE. Infrastructure differences in the respective operating systems causes the license activation process for Windows Mobile/CE devices to vary significantly from that of Android. **License Manager 1.0 (or higher) is required for licensing Windows Mobile/CE devices**, and is included with the Microsoft Installer (MSI) file (when installing from Windows) and as a `.CAB` file when installing from macOS. 
+Zebra provides License Manager apps for its devices running Android and Windows Mobile/CE. **License Manager 1.0 (or higher) is required for licensing Windows Mobile/CE devices**, and is included with the Microsoft Installer (MSI) file (when installing from Windows) and as a `.CAB` file when installing from macOS. 
 
-**Zebra recommends using StageNow to generate XML files** required for this process. [Download StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) for free. 
-
------
+> `IMPORTANT:` **Zebra recommends using StageNow to generate XML files** required for this process. [Download StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html); it's free. 
 
 **To activate a license on a device running Windows Mobile/CE**: 
 
-1. **Push the XML file** required for activation to the device. 
+1. **Push the XML file** required for license activation to the device. 
 2. Locate and launch License Manager on the device. <br>
 Current licenses on the device (if any) are shown along with a series of buttons: 
 <img alt="" style="height:250px" src="wmce_license01.png"/>
 **Details -** displays information about selected license.<br>
 **Refresh -** contacts the licensing server to renew a device license following the purchase of a license renewal.<br>
+**Button functions**:<br>
 **Return -** relinquishes the selected license.<br> 
 **Add License -** begins the license activation process.<br>
 **Settings -** displays the License Manager Settings panel.<br>

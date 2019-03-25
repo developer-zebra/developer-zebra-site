@@ -2161,7 +2161,9 @@ Controls whether JavaScript is enabled on the device. JavaScript is enabled by d
 
 ### ResizeOnButtonbar
 
-**Applies to Android only**. Used to set a page as "resizable" so it can adapt to a keyboard pop-up. **Disabled by default**. When set to "1" &lt;ButtonBarMaxHeight&gt; parameter determines the new page size. **The tags described here are not present in the default `Config.xml` file  and must be added manually** within the "SIP" node.
+**Applies to Android only**. Used to set a page as "resizable" for adapting to a keyboard pop-up. **Disabled by default**. A setting of "1" activates the &lt;ButtonBarMaxHeight&gt; parameter, which should be set to match the height (in pixels) of the expected keyboard. For example, if a value of 480 is specified, the webview height will be totalScreenHeight minus 480, which is space reserved for the keyboard. **For SAP users, Zebra recommends the "default" value**, which matches the SAP buttonbar layout.  
+
+**The tags described here are not present in the default `Config.xml` file  and must be added manually** within the "SIP" node.
 
 **Possible Values**:
 

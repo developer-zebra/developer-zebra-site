@@ -156,8 +156,8 @@ Items listed in this section indicate methods or parameters with values availabl
 	<tr>
 		<td class="clsSyntaxCells clsOddRow"><b>tagWrite</b></td>
 		<td class="clsSyntaxCells clsOddRow">Writes data to a tag or a set of tags (defined by Access filter) using the pre-configured Write parameters. The tagID property is ignored if useAccessFilter property is set to true, and tagPatternA, tagPatternB and matchPattern are used to filter out tags to perform the operation. If the tagID is empty and useAccessFilter is false, the write operation is attempted on all the tags in field of view. <strong>The useAccessFilter property is not supported on Android</strong>.</td>
-		<td class="clsSyntaxCells clsOddRow" />
 		<td class="tableHeading">Android/Windows Mobile/CE</td>
+		<td class="clsSyntaxCells clsOddRow" />
 	</tr>
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>setTagID</b></td>
@@ -198,7 +198,7 @@ Items listed in this section indicate methods or parameters with values availabl
 	<tr>
 		<td class="clsSyntaxCells clsEvenRow"><b>tagLock</b></td>
 		<td class="clsSyntaxCells clsEvenRow">Locks a tag (or tags) according to the lockPrivilege and lockField, requires tagPassword. The tagID property is ignored if useAccessFilter property is set to true. If useAccessFilter is set to true, then tagPatternA, tagPatternB and matchPattern will be used to filter out tags to perform the operation. If the tagID is empty and useAccessFilter is false, the lock operation will be attempted on all the tags in field of view.</td>
-		<td class="tableHeading">Supported Platform(s)</td>
+		<td class="tableHeading">Windows Mobile/CE</td>
 		<td class="clsSyntaxCells clsEvenRow" />
 	</tr>
 	<tr>

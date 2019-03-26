@@ -46,9 +46,9 @@ EB 2.0 now supports the following mobile computing devices and operating systems
 
 Enterprise Browser 2.0.1 (and later) adds support for the following devices:  
 
-* **MC93**
-* **TC83**
-* **CC600**
+* **MC9300**
+* **TC8300**
+* **CC600** 
 * **CC6000**
 
 ### Scanner Support
@@ -64,7 +64,7 @@ See all [supported Zebra devices](../about#mobile).
 
 * **Now supports [Hardware Key Remapping](../keycapture/#mappinghardwarekeys) -** to allow hardware keys of Zebra devices to be remapped to perform predefined actions or execute JavaScript code blocks residing on the device or on a server. 
 * Android apps running on **EB 2.0 (and higher) can use [substitution variables](../configreference/#substitutionvariables)** to simplify file-path coding.
-* **EB 2.0 and higher now supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 
+* **Now supports [page-based actions](../pageactions)**, which can execute JavaScript code and/or predefined commands based on the contents of a page. In some instances, this feature can be used as a substitute for DOM injection with similar effect. 
 * **An enhanced SAP support bundle** includes ready-to-use config files for SAP ITSmobile apps, simplifying device set-up for SAP customers. SAP config files can be modified for specific use cases. **SAP-specific features**:
  * UI auto-customization via ViewPort
  * SAP button height adjustment
@@ -76,6 +76,23 @@ See all [supported Zebra devices](../about#mobile).
  * Hardware keys remapped to quit, back, zoom in, zoom out actions
  * Orientation can be locked in portrait or landscape modes
  * Option to hide the system/nav bar (HOME, BACK and RECENT buttons)
+* Now supports **Voice Input and Output** controllable using the following new `Config.xml` file tags: 
+ * **[&lt;TTSEnabled&gt;](../configreference#ttsenabled) -** 
+ * **[&lt;TTSVolume&gt;](../configreference#ttsvolume) -** 
+ * **[&lt;TTSPitch&gt;](../configreference#ttspitch) -** 
+ * **[&lt;TTSRate&gt;](../configreference#ttsrate) -** 
+ * **[&lt;TTSLanguage&gt;](../configreference#ttslanguage) -** 
+ * **[&lt;TTSEnginePreference&gt;](../configreference#ttsenginepreference) -** 
+ * **[&lt;TTSEngine&gt;](../configreference#ttsengine) -** 
+ * **[&lt;asrenabled&gt;](../configreference#asrenabled) -** 
+ * **[&lt;asrpreferoffline&gt;](../configreference#asrpreferoffline) -** 
+ * **[&lt;audionotificationenabled&gt;](../configreference#audionotificationenabled) -** 
+ * **[&lt;asrpartialmodeenabled&gt;](../configreference#asrpartialmodeenabled) -** 
+ * **[&lt;asrlanguage&gt;](../configreference#asrlanguage) -** 
+ * **[&lt;asrenabled&gt;](../configreference#asrenabled) -** 
+ * **[&lt;ASRPACKAGENAME&gt;](../configreference#ASRPACKAGENAME) -** 
+ * **[&lt;ASRCLASSNAME&gt;](../configreference#ASRCLASSNAME) -** 
+
 
 ### New/Enhanced APIs
 
@@ -96,7 +113,7 @@ The following new methods, properties and/or callbacks were added to Android API
 **The [RFID API](../../api/re2x/rfid)** adds many new methods and properties and now supports the following RFID readers:
 * RFD8500
 * RFD2000
-* MC33 long- and mid-range RFID reader
+* MC3300 long- and mid-range RFID reader
 
 **A new [Bluetooth API](../../api/bluetooth)** allows Enterprise Browser apps to connect with disconnect from Bluetooth printers and scanners and to read from and write to them as applicable.
 

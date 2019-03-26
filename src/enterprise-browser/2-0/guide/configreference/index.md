@@ -394,6 +394,198 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 	...
 	</Configuration>
 
+
+### TTSEnabled
+**Applies only to devices running Android**. 
+
+This attribute allows to enable text to voice capabilities in EB. Value “1” turns on the TTS and the objects is available for further operations.
+    Access:
+
+    :::xml
+	 <TTS>
+	    < TTSEnabled value = "1"/>
+	</TTS>
+
+
+### TTSVolume
+**Applies only to devices running Android**. 
+
+This attribute allows us to use the particular volume level via config.xml 
+
+    :::xml
+	 <TTS>
+	    < TTSVolume value="1.0"/>
+	</TTS>
+
+### TTSPitch
+**Applies only to devices running Android**. 
+
+This attribute allows us to use the particular pitch level via config.xml 
+
+    :::xml
+	 <TTS>
+	    < TTSPitch value="1.0"/>
+	</TTS>
+
+### TTSRate
+**Applies only to devices running Android**. 
+
+This attribute allows us to use the particular rate via config.xml 
+
+    :::xml
+	 <TTS>
+	    < TTSRate value="1.0"/>
+	</TTS>
+
+### TTSLanguage
+**Applies only to devices running Android**. 
+
+This attribute allows us to use the particular language via config.xml 
+
+    :::xml
+	 <TTS>
+	    < TTSLanguage value="en_us"/>
+	</TTS>
+
+ 
+
+### TTSEnginePreference
+**Applies only to devices running Android**. 
+
+This attribute tells about about the engine going to be used for TTS, Like GMS, NUANCE or any third party engine. This third-party engine implementation must be there in EB.
+
+    :::xml
+	 <TTS>
+	    < TTSEnginePreference value="THIRD_PARTY"/>
+	</TTS>
+
+ 
+
+NOTE:  - GMS is the engine preference set by default. So, in case of GMS engine to be used, above tag needs not be mentioned in config.xml.
+
+ 
+
+### TTSEngine
+**Applies only to devices running Android**. 
+
+This attribute allows to use the different package name, which implement the GMS interface and plugin their custom engine with them. By default, it uses the google TTS engine as “com.google.android.tts”.
+
+    :::xml
+	 <TTS>
+	    < TTSEngine value=" com.example.custom.tts"/>
+	</TTS>
+
+ NOTE:  -  GMS is the engine set by default. So in case of GMS engine to be used, above tag need not be mentioned in config.xml. 
+
+
+### asrenabled
+**Applies only to devices running Android**. 
+
+ASR(Voice input) Configuration            
+
+
+This attribute allows to enable voice to text capabilities in EB. Value “1” turns on the ASR and the objects is available for further operations
+
+NOTE:  default value is 1. To make use of above tag, make sure that you have installed the latest language package in the device (for google engine). 
+
+    :::xml
+	<ASR>
+	     <asrenabled value="1"/>
+	</ASR>
+
+ 
+
+### asrpreferoffline
+**Applies only to devices running Android**. 
+
+NOTE:  default value is 0. 
+
+This attribute allows to recognize voice in offline mode(no internet connectivity required).
+
+	:::XML
+	<ASR>
+		<asrpreferoffline value="1"/>
+	</ASR>
+
+ 
+### audionotificationenabled
+**Applies only to devices running Android**. 
+
+
+
+audionotificationenabled
+This attribute turns on the beep sound, when voice input starts and provides an      indication that speech engine is ready to take voice input from user
+
+	:::XML 
+	<ASR>
+	      < audionotificationenabled value="1"/>
+	</ASR>
+
+ 
+
+NOTE:  default value is 1.  
+
+
+### asrpartialmodeenabled
+**Applies only to devices running Android**. 
+
+
+asrpartialmodeenabled
+This attribute allows to enable partial result on. Which gives the partial result on user speech.
+
+	:::XML 
+	 <ASR>
+	      < asrpartialmodeenabled value="1"/>
+	</ASR>
+
+ 
+
+NOTE:  default value is 1.
+
+ 
+
+### asrlanguage
+**Applies only to devices running Android**. 
+
+
+
+asrlanguage
+This attribute allows to set input language of the user.
+
+	:::XML 
+	 <ASR>
+	      <asrlanguage value="en-US"/>
+	</ASR>
+
+ 
+
+NOTE:  default value is 1. Values can be from the set of standard locale (currently google engine supported locale can be set here)
+
+### asrenabled
+**Applies only to devices running Android**. 
+
+These attributes allow us to use the speech engine implementation via config.xml in Enterprise Browser. User must provide the complete package name and implementation class name of the engine to be used.
+
+GMS voice engine will be the default if nothing is provided.
+
+Below is the example, how we can use the package name of a particular voice engine to be used. 
+
+	:::XML 
+	 <ASR>
+	    <asrpackagename   value="PACKAGE_NAME"/>
+	     <asrclassname   value="CLASS_NAME"/>
+	</ASR>
+
+
+### ASRPACKAGENAME
+**Applies only to devices running Android**. 
+
+
+### ASRCLASSNAME
+**Applies only to devices running Android**. 
+
+
+
 ### ClientCertificate
 **Applies only to Android devices running Lollipop and higher**. Allows the alias name of a client certification to be specified. **This tag is not present in the default `Config.xml` file and must be added manually**. Use of this tag enables Enterprise Browser to silently select and validate a client certificate. 
 
@@ -2912,19 +3104,35 @@ Controls whether a new Tab will be created using the [NativeTabbar.create API](.
 -----
 
 ## Remarks
-### <a name="_scandecodewav"></a>ScanDecodeWav on Android Platform
+### ScanDecodeWav on Android Platform
+
+	<a name="_scandecodewav"></a>
+
 If ScanDecodeWav configuration paramater contains '.wav'/'.ogg' filename same as system filename, then the system '.wav'/'.ogg' file will be selected for playing when a scanned barcode is successfully decoded.
 
-### <a name="_batteryRefresh"></a>Battery Polling on Enterprise Tablet
+### Battery Polling on Enterprise Tablet
+
+	<a name="_batteryRefresh"></a>
+
 Due to its asynchronous battery notification, the Enterprise Tablet does not support BatteryRefresh. This has the effect of launching a bateryEvent only when the battery level changes. This functionality has been implemented in place of polling as a means of maximizing battery power.
 
-### <a name="_caseSensitivity"></a>Case Sensitivity
-> **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, letter case for URL, file and path references in the `Config.xml` file should be identical to those of the sources.
+### Case Sensitivity
 
-### <a name="_datawedge"></a>DataWedge-Enterprise Browser Conflicts
+	<a name="_caseSensitivity"></a>
+
+> **Note**: The file systems of some operating systems are case-sensitive. For cross-platform compatibility, Zebra recommends keeping letter case for URL and file and path references in the `Config.xml`  identical to those of the sources.
+
+### DataWedge-Enterprise Browser Conflicts
+
+	<a name="_datawedge"></a>
+
 **This issue applies only to Android**. Under certain conditions involving Enterprise Browser, scanning with the DataWedge application on Zebra Android devices is disabled. For complete details, see the [DataWedge Usage Guide](../datawedge).  
 
-### <a name="_fnbehavior"></a>FunctionKeysCapturable-EnableFunctionKey Interaction
+### FunctionKeysCapturable-EnableFunctionKey Interaction**
+
+	<a name="_fnbehavior"></a>
+
+
 **Applies only to Windows Mobile/CE devices**. 
 
 On Windows Mobile/CE, full control is given to the developer over how the application handles function keys, but such settings persist only until the next warm boot. Also, the default behavior of function keys will vary from one device to another. On the MC75a, for example, the red and green phone keys also represent F3 and F4 keys, and on many devices the volume keys also can be mapped as function keys. 
@@ -2934,44 +3142,44 @@ Not all function keys will revert to default operating system behavior, however,
 The table below shows the behavior of Enterprise Browser when function keys are pressed given certain configuration settings:
 
 <table border=1 width="100%" class="re-table">
-	<tr>
-		<th></th>
-		<th>Function Keys Capturable = TRUE</th>
-		<th>Function Keys Capturable = FALSE</th>
-	</tr>
+<tr>
+<th></th>
+<th>Function Keys Capturable = TRUE</th>
+<th>Function Keys Capturable = FALSE</th>
+</tr>
 
-	<tr>
-		<th>Enable Function Key = TRUE</th>
-		<td valign="top">
-			<ul>
-				<li>All Function Keys <b>can</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
-				<li>Function Key will <b>not</b> have its default Operating system behavior
-			</ul>
-		</td>
-		<td valign="top">
-			<ul>
-				<li>Function Keys with default OS behavior <b>can not</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
-				<li>Function Keys without default OS behavior <b>can</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
-				<li>Function Key <b>will</b> have its default Operating system behavior (if any)
-			</ul>
-		</td>
-	</tr>
+<tr>
+<th>Enable Function Key = TRUE</th>
+<td valign="top">
+<ul>
+<li>All Function Keys <b>can</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
+<li>Function Key will <b>not</b> have its default Operating system behavior
+</ul>
+</td>
+<td valign="top">
+<ul>
+<li>Function Keys with default OS behavior <b>can not</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
+<li>Function Keys without default OS behavior <b>can</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
+<li>Function Key <b>will</b> have its default Operating system behavior (if any)
+</ul>
+</td>
+</tr>
 
-	<tr>
-		<th>Enable Function Key = FALSE</th>
-		<td valign="top">
-			<ul>
-				<li>All Function Keys <b>can</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
-				<li>Function Key will <b>not</b> have its default Operating system behavior
-			</ul>
-		</td>
-		<td valign="top">
-			<ul>
-				<li>All Function Keys <b>can not</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
-				<li>Function Key will <b>not</b> have its default Operating system behavior (if any)</li>
-			</ul>
-		</td>
-	</tr>
+<tr>
+<th>Enable Function Key = FALSE</th>
+<td valign="top">
+<ul>
+<li>All Function Keys <b>can</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
+<li>Function Key will <b>not</b> have its default Operating system behavior
+</ul>
+</td>
+<td valign="top">
+<ul>
+<li>All Function Keys <b>can not</b> be captured by the <a href="../../api/keycapture">Key Capture Module</a>
+<li>Function Key will <b>not</b> have its default Operating system behavior (if any)</li>
+</ul>
+</td>
+</tr>
 </table>
 _This table applies only to Windows Mobile and Windows CE devices_. 
 
@@ -2994,8 +3202,13 @@ From the target side, here's what the relevant JavaScript code for sending an in
 
 Learn more about Intent at the [Android Developer Forum](http://developer.android.com/reference/android/content/Intent.html). 
 
-### <a name="_openAndPrint"></a>Open and Print Key Commands
+### Open and Print Key Commands
+		<a name="_openAndPrint"></a>
+
+
 For apps that enable the Open (Ctrl+O) or Print (Ctrl+P) key combinations, such functions are inoperable on Windows CE7 devices.
+
+
 
 
 

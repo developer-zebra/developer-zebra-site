@@ -666,7 +666,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="mc93Pic" src="../../images/mc9300.jpeg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><img id="mc93Pic" src="../../images/mc9300.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>MC9300</b></td>
   <td class="clsSyntaxCells clsOddRow">MC9300</td>
   <td class="clsSyntaxCells clsOddRow">Android 8.1 (Oreo)</td>
@@ -862,14 +862,14 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="cc600" src="../../images/cc600.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>CC600</b></td>
-  <td class="clsSyntaxCells clsOddRow">Customer Concierge</td>
+  <td class="clsSyntaxCells clsOddRow">Customer Concierge (5-inch display)</td>
   <td class="clsSyntaxCells clsOddRow">Android 8.1 Oreo</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
   <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="cc6000" src="../../images/cc6000.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>CC6000</b></td>
-  <td class="clsSyntaxCells clsOddRow">Customer Concierge</td>
+  <td class="clsSyntaxCells clsOddRow">Customer Concierge (10-inch display)</td>
   <td class="clsSyntaxCells clsOddRow">Android 8.1 Oreo</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>

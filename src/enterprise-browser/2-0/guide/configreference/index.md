@@ -396,198 +396,195 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 
 
 ### TTSEnabled
-**Applies only to devices running Android**. 
+**Applies only to devices running Android**. Controls whether text-to-speech capabilities are enabled in the app. A value of “1” enables TTS and activates the TTS parameters that follow below. **Note: TTS parameter tags are NOT included in the default** `Config.xml` **file and must be added manually if TTS features are desired**. 
 
-This attribute allows to enable text to voice capabilities in EB. Value “1” turns on the TTS and the objects is available for further operations.
-    Access:
+**Possible values**:
 
-    :::xml
-	 <TTS>
-	    < TTSEnabled value = "1"/>
-	</TTS>
+* **0 - Disabled (default)**
+* 1 - Enabled
 
+		:::xml
+		<TTS>
+			< TTSEnabled value = "1"/>
+		</TTS>
 
 ### TTSVolume
-**Applies only to devices running Android**. 
+**Applies only to devices running Android**. Used to set the volume level for text-to-speech output.  
 
-This attribute allows us to use the particular volume level via config.xml 
+**Possible values**:
 
-    :::xml
-	 <TTS>
-	    < TTSVolume value="1.0"/>
-	</TTS>
+* **0 - Disabled (default)**
+* 1 - Enabled
+
+		:::xml
+		<TTS>
+			< TTSVolume value="1.0"/>
+		</TTS>
 
 ### TTSPitch
-**Applies only to devices running Android**. 
+**Applies only to devices running Android**. Used to set the pitch for text-to-speech output. 
 
-This attribute allows us to use the particular pitch level via config.xml 
+**Possible values**:
 
-    :::xml
-	 <TTS>
-	    < TTSPitch value="1.0"/>
-	</TTS>
+* **0 - Disabled (default)**
+* 1 - Enabled
+
+		:::xml
+		<TTS>
+			< TTSPitch value="1.0"/>
+		</TTS>
 
 ### TTSRate
-**Applies only to devices running Android**. 
+**Applies only to devices running Android**. Used to set the speed for text-to-speech output. 
 
-This attribute allows us to use the particular rate via config.xml 
+**Possible values**:
 
-    :::xml
-	 <TTS>
-	    < TTSRate value="1.0"/>
-	</TTS>
+* **0 - Disabled (default)**
+* 1 - Enabled
+
+
+		:::xml
+		<TTS>
+			< TTSRate value="1.0"/>
+		</TTS>
 
 ### TTSLanguage
-**Applies only to devices running Android**. 
+**Applies only to devices running Android**. Used to set the language for text-to-speech input and output. 
 
-This attribute allows us to use the particular language via config.xml 
+**Possible values**:
 
-    :::xml
-	 <TTS>
-	    < TTSLanguage value="en_us"/>
-	</TTS>
+* Name of language pack to be used on the device
 
- 
+
+		:::xml
+		<TTS>
+			< TTSLanguage value="en_us"/>
+		</TTS>
+
 
 ### TTSEnginePreference
-**Applies only to devices running Android**. 
+**Applies only to devices running Android**. Allows a third-party speech recognition engine to be selected if an engine other than the Google TTS engine is desired. Third-party engine must be installed separately and present in device prior to use of this parameter. **If this tag is missing from left unspecified, Google TTS engine is used**. 
 
-This attribute tells about about the engine going to be used for TTS, Like GMS, NUANCE or any third party engine. This third-party engine implementation must be there in EB.
+**Possible values**:
 
-    :::xml
-	 <TTS>
-	    < TTSEnginePreference value="THIRD_PARTY"/>
-	</TTS>
+* Friendly name of a third-party TTS engine to be used on the device
 
- 
 
-NOTE:  - GMS is the engine preference set by default. So, in case of GMS engine to be used, above tag needs not be mentioned in config.xml.
-
+		:::xml
+		<TTS>
+			< TTSEnginePreference value="THIRD_PARTY"/>
+		</TTS>
  
 
 ### TTSEngine
-**Applies only to devices running Android**. 
+**Applies only to devices running Android**. Used to specifiy the package name when a TTS engine other than Google TTS (`com.google.android.tts`) is used. 
 
-This attribute allows to use the different package name, which implement the GMS interface and plugin their custom engine with them. By default, it uses the google TTS engine as “com.google.android.tts”.
+**Possible values**:
 
-    :::xml
-	 <TTS>
-	    < TTSEngine value=" com.example.custom.tts"/>
-	</TTS>
+* Package name of a third-party TTS engine installed on the device
 
- NOTE:  -  GMS is the engine set by default. So in case of GMS engine to be used, above tag need not be mentioned in config.xml. 
 
+		:::xml
+		<TTS>
+			< TTSEngine value=" com.example.custom.tts"/>
+		</TTS>
+
+>> RESUME HERE
 
 ### asrenabled
-**Applies only to devices running Android**. 
+**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether Android Speech Recognition features are enabled in the app. **Enabled by default**. A value of “1” enables ASR and activates the ASR parameters that follow below. 
 
-ASR(Voice input) Configuration            
+#### Notes
+* **Zebra recommends installing the latest language package in the device (for the Google speech recognition engine)**. 
+* **ASR parameter tags are NOT included in the default** `Config.xml` **file** and must be added manually if ASR features are desired. 
+
+**Possible values**:
+
+* 0 - Disabled
+* **1 - Enabled (default)**
 
 
-This attribute allows to enable voice to text capabilities in EB. Value “1” turns on the ASR and the objects is available for further operations
+		:::xml
+		<ASR>
+			< asrenabled value="1"/>
+		</ASR>
 
-NOTE:  default value is 1. To make use of above tag, make sure that you have installed the latest language package in the device (for google engine). 
+### asrpackagename, asrclassname
+**Applies only to devices running Android**. UUsed to specify the package name and class name of a third-party ASR engine is one other than Google ASR (default) used. **Package name and implementation class name must <u>both</u> be specified**. 
 
-    :::xml
-	<ASR>
-	     <asrenabled value="1"/>
-	</ASR>
+**If this tag is missing from left unspecified, Google TTS engine is used**. 
 
- 
+**Possible values**:
+
+* Package name of a third-party TTS engine installed on the device
+
+		:::XML 
+		<ASR>
+			<asrpackagename   value="PACKAGE_NAME"/>
+			<asrclassname   value="CLASS_NAME"/>
+		</ASR>
+
 
 ### asrpreferoffline
-**Applies only to devices running Android**. 
+**Applies only to devices running Android**. Controls whether voice recognition service can be provided without an internet connection. **Enabled by default**. Language package must be installed 
 
-NOTE:  default value is 0. 
+**Possible values**:
 
-This attribute allows to recognize voice in offline mode(no internet connectivity required).
+* 0 - Disabled
+* 1 - **Enabled (default)**
 
-	:::XML
-	<ASR>
-		<asrpreferoffline value="1"/>
-	</ASR>
+
+		:::XML
+		<ASR>
+			<asrpreferoffline value="1"/>
+		</ASR>
 
  
 ### audionotificationenabled
-**Applies only to devices running Android**. 
+**Applies only to devices running Android**. Controls whether a beep sound is played to indicate the device is ready to accept voice input.  **Enabled by default**. 
 
+**Possible values**:
 
+* 0 - Disabled 
+* **1 - Enabled (default)**
 
-audionotificationenabled
-This attribute turns on the beep sound, when voice input starts and provides an      indication that speech engine is ready to take voice input from user
-
-	:::XML 
-	<ASR>
-	      < audionotificationenabled value="1"/>
-	</ASR>
-
- 
-
-NOTE:  default value is 1.  
-
+		:::XML 
+		<ASR>
+			< audionotificationenabled value="1"/>
+		</ASR> 
 
 ### asrpartialmodeenabled
-**Applies only to devices running Android**. 
+**Applies only to devices running Android**. Controls whether the speech engine accepts a partial result of user speech if an entire phrase is not fully recognized. 
 
+**Possible values**:
 
-asrpartialmodeenabled
-This attribute allows to enable partial result on. Which gives the partial result on user speech.
+* 0 - Disabled 
+* **1 - Enabled (default)**
 
-	:::XML 
-	 <ASR>
-	      < asrpartialmodeenabled value="1"/>
-	</ASR>
+		:::XML 
+		<ASR>
+			< asrpartialmodeenabled value="1"/>
+		</ASR>
 
- 
-
-NOTE:  default value is 1.
-
- 
 
 ### asrlanguage
-**Applies only to devices running Android**. 
+**Applies only to devices running Android**. Controls the selected language for voice input. 
 
+NOTE: Values can be from the set of standard locale (currently google engine supported locale can be set here)
 
+**Possible values**:
+* 0 - Disabled 
+* **1 - Enabled (default)**
 
-asrlanguage
-This attribute allows to set input language of the user.
+		:::XML 
+		<ASR>
+			< asrlanguage value="en-US"/>
+		</ASR>
 
-	:::XML 
-	 <ASR>
-	      <asrlanguage value="en-US"/>
-	</ASR>
-
- 
-
-NOTE:  default value is 1. Values can be from the set of standard locale (currently google engine supported locale can be set here)
-
-### asrenabled
-**Applies only to devices running Android**. 
-
-These attributes allow us to use the speech engine implementation via config.xml in Enterprise Browser. User must provide the complete package name and implementation class name of the engine to be used.
-
-GMS voice engine will be the default if nothing is provided.
-
-Below is the example, how we can use the package name of a particular voice engine to be used. 
-
-	:::XML 
-	 <ASR>
-	    <asrpackagename   value="PACKAGE_NAME"/>
-	     <asrclassname   value="CLASS_NAME"/>
-	</ASR>
-
-
-### ASRPACKAGENAME
-**Applies only to devices running Android**. 
-
-
-### ASRCLASSNAME
-**Applies only to devices running Android**. 
-
-
+-----
 
 ### ClientCertificate
-**Applies only to Android devices running Lollipop and higher**. Allows the alias name of a client certification to be specified. **This tag is not present in the default `Config.xml` file and must be added manually**. Use of this tag enables Enterprise Browser to silently select and validate a client certificate. 
+**Applies only to Android devices running Lollipop and higher**. Allows the alias name of a client certification to be specified. **This tag is not present in the default** `Config.xml` **file and must be added manually**. Use of this tag enables Enterprise Browser to silently select and validate a client certificate. 
 
 **Note**: Once this attribute is set, the user is initially prompted to select the client certificate, and is not promoted again unless Enterprise Browser is reinstalled. Supports one client certificate validation only. Applies only to https server applications configured for validating a client certificate.
 

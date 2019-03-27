@@ -77,21 +77,20 @@ See all [supported Zebra devices](../about#mobile).
  * Orientation can be locked in portrait or landscape modes
  * Option to hide the system/nav bar (HOME, BACK and RECENT buttons)
 * Now supports **Voice Input and Output** controllable using the following new `Config.xml` file tags: 
- * **[&lt;TTSEnabled&gt;](../configreference#ttsenabled) -** 
- * **[&lt;TTSVolume&gt;](../configreference#ttsvolume) -** 
- * **[&lt;TTSPitch&gt;](../configreference#ttspitch) -** 
- * **[&lt;TTSRate&gt;](../configreference#ttsrate) -** 
- * **[&lt;TTSLanguage&gt;](../configreference#ttslanguage) -** 
- * **[&lt;TTSEnginePreference&gt;](../configreference#ttsenginepreference) -** 
- * **[&lt;TTSEngine&gt;](../configreference#ttsengine) -** 
- * **[&lt;asrenabled&gt;](../configreference#asrenabled) -** 
- * **[&lt;asrpreferoffline&gt;](../configreference#asrpreferoffline) -** 
- * **[&lt;audionotificationenabled&gt;](../configreference#audionotificationenabled) -** 
- * **[&lt;asrpartialmodeenabled&gt;](../configreference#asrpartialmodeenabled) -** 
- * **[&lt;asrlanguage&gt;](../configreference#asrlanguage) -** 
- * **[&lt;asrenabled&gt;](../configreference#asrenabled) -** 
- * **[&lt;ASRPACKAGENAME&gt;](../configreference#ASRPACKAGENAME) -** 
- * **[&lt;ASRCLASSNAME&gt;](../configreference#ASRCLASSNAME) -** 
+ * **[&lt;TTSEnabled&gt;](../configreference#ttsenabled) -** Controls whether text-to-speech capabilities are enabled in the app. 
+ * **[&lt;TTSVolume&gt;](../configreference#ttsvolume) -** Used to set the volume level for text-to-speech output.
+ * **[&lt;TTSPitch&gt;](../configreference#ttspitch) -** Used to set the pitch for text-to-speech output. 
+ * **[&lt;TTSRate&gt;](../configreference#ttsrate) -** Used to set the speed for synthesized speech output.
+ * **[&lt;TTSLanguage&gt;](../configreference#ttslanguage) -** Used to set the language for text-to-speech input and synthesized output. 
+ * **[&lt;TTSEnginePreference&gt;](../configreference#ttsenginepreference) -** Allows a third-party speech recognition engine to be selected if an engine other than the Google TTS engine is desired. 
+ * **[&lt;TTSEngine&gt;](../configreference#ttsengine) -** Used to specify the package name when a TTS engine other than Google TTS (`com.google.android.tts`) is used.
+ * **[&lt;asrenabled&gt;](../configreference#asrenabled) -** Controls whether Android Speech Recognition (ASR) features are enabled in an app. 
+ * **[&lt;asrpackagename&gt;](../configreference#asrpackagename) -** Used to specify the package name of a third-party ASR engine is one other than Google ASR (default) used. 
+ * **[&lt;asrclassname&gt;](../configreference#asrclassname) -** Used to specify the class name of a third-party ASR engine is one other than Google ASR (default) used. 
+ * **[&lt;asrpreferoffline&gt;](../configreference#asrpreferoffline) -** Controls whether voice recognition service can be provided without an internet connection. 
+ * **[&lt;audionotificationenabled&gt;](../configreference#audionotificationenabled) -** Controls whether a beep sound is played to indicate the device is ready to accept voice input. 
+ * **[&lt;asrpartialmodeenabled&gt;](../configreference#asrpartialmodeenabled) -** Controls whether the speech engine displays recognized words in real time or all at once when speaking ends. 
+ * **[&lt;asrlanguage&gt;](../configreference#asrlanguage) -** Used to set the language for speech recognition input.
 
 
 ### New/Enhanced APIs

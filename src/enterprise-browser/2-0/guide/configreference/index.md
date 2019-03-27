@@ -396,7 +396,12 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 
 
 ### TTSEnabled
-**Applies only to devices running Android**. Controls whether text-to-speech capabilities are enabled in the app. A value of “1” enables TTS and activates the TTS parameters that follow below. **Note: TTS parameter tags are NOT included in the default** `Config.xml` **file and must be added manually if TTS features are desired**. 
+**Applies only to devices running Android**. Controls whether text-to-speech capabilities are enabled in the app. A value of “1” enables TTS and activates the TTS parameters that follow below. 
+
+**Notes**: 
+* **TTS parameter tags are NOT included in the default** `Config.xml` **file** and must be added manually if TTS features are desired.
+* Value ranges vary by speech engine. Ranges shown below apply to the Google TTS engine. 
+* For complete details, see [Google TTS documentation](https://developer.android.com/reference/android/speech/tts/TextToSpeech).  
 
 **Possible values**:
 
@@ -409,12 +414,11 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 		</TTS>
 
 ### TTSVolume
-**Applies only to devices running Android**. Used to set the volume level for text-to-speech output.  
+**Applies only to devices running Android**. Used to set the volume level for text-to-speech output in a scalar range between 0.0 (off) and 1.0 (full). 
 
 **Possible values**:
 
-* **0 - Disabled (default)**
-* 1 - Enabled
+* Float from 0.0&ndash;1.0 
 
 		:::xml
 		<TTS>
@@ -422,12 +426,11 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 		</TTS>
 
 ### TTSPitch
-**Applies only to devices running Android**. Used to set the pitch for text-to-speech output. 
+**Applies only to devices running Android**. Used to set the pitch for text-to-speech output in a scalar range with a starting (default) value of 1.0 (normal pitch). Greater values increase the pitch of the synthesized voice, lesser values decrease it. 
 
 **Possible values**:
 
-* **0 - Disabled (default)**
-* 1 - Enabled
+* Float values relative to 1.0 (normal pitch) 
 
 		:::xml
 		<TTS>
@@ -435,12 +438,11 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 		</TTS>
 
 ### TTSRate
-**Applies only to devices running Android**. Used to set the speed for text-to-speech output. 
+**Applies only to devices running Android**. Used to set the speed for synthesized speech output in a scalar range with a starting (default) value of 1.0 (normal speech rate). A value of 2.0 doubles speed, a value of 0.5 cuts the speed in half. 
 
 **Possible values**:
 
-* **0 - Disabled (default)**
-* 1 - Enabled
+* Float values relative to 1.0 (normal rate) 
 
 
 		:::xml
@@ -449,16 +451,16 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 		</TTS>
 
 ### TTSLanguage
-**Applies only to devices running Android**. Used to set the language for text-to-speech input and output. 
+**Applies only to devices running Android**. Used to set the language for text-to-speech input and synthesized output. If no language is specified, the TTS engine attempts to match the language to the Locale currently selected in the device. More [about Locale](http://techdocs.zebra.com/mx/uimgr/#set-current-locale). 
 
 **Possible values**:
 
-* Name of language pack to be used on the device
+* Name of voice language from the list of [locales](http://techdocs.zebra.com/mx/uimgr/#set-current-locale)
 
 
 		:::xml
 		<TTS>
-			< TTSLanguage value="en_us"/>
+			< TTSLanguage value="en_US"/>
 		</TTS>
 
 
@@ -477,7 +479,7 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
  
 
 ### TTSEngine
-**Applies only to devices running Android**. Used to specifiy the package name when a TTS engine other than Google TTS (`com.google.android.tts`) is used. 
+**Applies only to devices running Android**. Used to specify the package name when a TTS engine other than Google TTS (`com.google.android.tts`) is used. 
 
 **Possible values**:
 
@@ -489,10 +491,8 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 			< TTSEngine value=" com.example.custom.tts"/>
 		</TTS>
 
->> RESUME HERE
-
 ### asrenabled
-**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether Android Speech Recognition features are enabled in the app. **Enabled by default**. A value of “1” enables ASR and activates the ASR parameters that follow below. 
+**Applies only to devices running Android with Google Mobile Services (GMS)**. Controls whether Android Speech Recognition (ASR) features are enabled in the app. **Enabled by default**. A value of “1” enables ASR and activates the ASR parameters that follow below. 
 
 #### Notes
 * **Zebra recommends installing the latest language package in the device (for the Google speech recognition engine)**. 
@@ -510,7 +510,7 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 		</ASR>
 
 ### asrpackagename, asrclassname
-**Applies only to devices running Android**. UUsed to specify the package name and class name of a third-party ASR engine is one other than Google ASR (default) used. **Package name and implementation class name must <u>both</u> be specified**. 
+**Applies only to devices running Android**. Used to specify the package name and class name of a third-party ASR engine is one other than Google ASR (default) used. **Package name and implementation class name must <u>both</u> be specified**. 
 
 **If this tag is missing from left unspecified, Google TTS engine is used**. 
 
@@ -541,7 +541,7 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 
  
 ### audionotificationenabled
-**Applies only to devices running Android**. Controls whether a beep sound is played to indicate the device is ready to accept voice input.  **Enabled by default**. 
+**Applies only to devices running Android**. Controls whether a beep sound is played to indicate the device is ready to accept voice input. **Enabled by default**. 
 
 **Possible values**:
 
@@ -554,8 +554,13 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 		</ASR> 
 
 ### asrpartialmodeenabled
-**Applies only to devices running Android**. Controls whether the speech engine accepts a partial result of user speech if an entire phrase is not fully recognized. 
+**Applies only to devices running Android**. Controls whether the speech engine displays recognized words in real time or all at once when speaking ends. **Enabled by default**. 
 
+<!-- 
+from eng: 
+**asrpartialmode - when partialmode is enabled asr will keep on showing array of Confidence strings(all related words what user is saying to recognize) while speech recognition is going on once user gives a break in speech it will display the final result                                                                                                   if partialmode is disable asr will not show any array of Confidence strings it will directly show the final result
+
+ -->
 **Possible values**:
 
 * 0 - Disabled 
@@ -568,13 +573,12 @@ EnterpriseBrowser_v0.30.10.18 Configuration file
 
 
 ### asrlanguage
-**Applies only to devices running Android**. Controls the selected language for voice input. 
-
-NOTE: Values can be from the set of standard locale (currently google engine supported locale can be set here)
+**Applies only to devices running Android**. Used to set the language for speech recognition input. If no language is specified, the ASR engine attempts to match the language to the Locale currently selected in the device. More [about Locale](http://techdocs.zebra.com/mx/uimgr/#set-current-locale). 
 
 **Possible values**:
-* 0 - Disabled 
-* **1 - Enabled (default)**
+
+* Name of voice language from the list of [locales](http://techdocs.zebra.com/mx/uimgr/#set-current-locale)
+
 
 		:::XML 
 		<ASR>

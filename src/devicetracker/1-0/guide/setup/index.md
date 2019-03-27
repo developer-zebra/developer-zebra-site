@@ -138,11 +138,11 @@ The following are the prerequisites required for the server: <br>
 <br>
 
 ###Server Certificate
-Generate the CSR (Certificate Signing Request) to submit to the CA for a signed valid certificate to be issued. Use this issued certificate to generate the SSL certificate. This procedure is separated into two sections:
-* Procure server certificate (in .p7b format)
-* Generate SSL certificate (in .pfx format)
+An SSL certificate is needed for secure connections. Generate the CSR (Certificate Signing Request) with private key and submit it to the trusted CA. The CA issues the SSL Certificate signed with the public key (in .p7b format). Use this issued certificate to generate the SSL certificate with the private key. The final, complete SSL certificate contains the server certificate, any intermediate certificates, the public key and private key. The procedure to accomplish this is separated into two sections below:
+* **Procure server certificate** (.p7b format) with public key 
+* **Generate complete SSL certificate** (.pfx format) with both public and private keys 
 
-If the server certificate already exists, skip to the second section _Generate SSL Certificate_. If the SSL certificate already exists, skip to section _Server Installation_. <br><br>
+If the server certificate with public key already exists, skip to the second section _Generate complete SSL Certificate_. If the complete SSL certificate already exists, skip to section _Server Installation_. <br><br>
 **Procure server certificate:** Create a private key and generate the CSR. Submit the CSR to the CA for signing. The server certificate issued should be in .p7b format.
 1. Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source/) for Windows. Follow the instructions stated to download the file based on your Windows configuration.<br>
 2. Add a new "openSSL" environment variable to the Windows system and set the value to the location where openSSL is installed (e.g. "C:\Program Files\OpenSSL-Win64\bin\").<br>
@@ -182,14 +182,15 @@ F. Enter in the required fields when prompted:
  G. Enter the challenge password when prompted. _This is the password needed when generating the certificate in .pfx format._<br>
  H. A .csr file is created in the "CSR_Request" folder. Submit this file to the CA to have it signed. <br>
  I. Obtain the certificate bundle from the CA in .pkcs format and certificate in .p7b format (which includes the public key). -->
-**Generate SSL Certificate:** An SSL certificate is needed for secured connections. Zebra requires the certificate to be procured in .p7b format and the certificate private key to be a .key file. If the certificate is in a different format, use an SSL certificate converter tool to convert to the proper format.  <br>
+**Generate complete SSL Certificate:** Zebra requires the certificate be procured in .p7b format and combined with the private key (.key file) to generate the SSL certificate in .pfx file format. If the certificate is in a different format, use an SSL certificate converter tool to convert to the proper format.  <br>
 1. Create an ssl_certificate.cer file with the command:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs7 -print_certs -in ssl_certificate.p7b -out ssl_certificate.cer`<br>
 where "ssl_certificate.p7b" is the certificate issued by the CA.
 2. Create SSL certificate "ssl_certificate.pfx" with command (using the private key password created from step 4 in the previous section): 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs12 -export -in ssl_certificate.cer -inkey dtrkdemo.key -out ssl_certificate.pfx`<br>
 where "dtrkdemo.key" is the private key generated from step 4 in the previous section and "ssl_certificate.cer" is the file generated from the previous step 1.
-3. Use SSL certificate "ssl_certificate.pfx" and the private key password for Device Tracker server installation and setup in the sections that follow.
+3. Import the SSL certificate on the server. Double-click the certificate on the local computer and follow the Certificate Import wizard.
+4. Use SSL certificate "ssl_certificate.pfx" and the private key password for Device Tracker server installation and setup in the sections that follow.
 <!--
 A. Create an empty directory named "generated_certs" to contain the .pfx certificate.<br>
 B. Copy the following certificate files to "generated_certs" folder: primary certificate (e.g. "ssl_certificate.p7b"), private key (e.g. "zdvc_private_key.key"), and intermediate CA certificate (e.g. "IntermediateCA.cer").  _The intermediate CA certificate is optional - use if required in the certificate chain._  <br>

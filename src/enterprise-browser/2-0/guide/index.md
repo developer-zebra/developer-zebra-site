@@ -40,9 +40,9 @@ automenu:
           url: voice
     - title: Application Usage
       items:
-        - title: Using DataWedge on EB 1.8
+        - title: Using DataWedge with EB
           url: datawedge
-        - title: Using DataWedge Intents (EB 2.0 and up)
+        - title: Using DataWedge Intents
           url: dwintents
         - title: DOM Injection
           url: dom

@@ -6,18 +6,59 @@ layout: guide.html
 ---
 ## Overview 
 
-The DataWedge app (included on every Zebra device) makes it possible to acquire barcode data from within an Enterprise Browser application without using the Enterprise Browser APIs. This guide explains how to configure an EB app to scan and process barcode data using DataWedge, which then enters the captured data as keystrokes into any EB input field. 
+The DataWedge app (included on every Zebra device) makes it possible to acquire barcode data from within an Enterprise Browser app without using the EB APIs. This guide explains how to configure an EB app to scan and process barcode data using DataWedge, which then enters the captured data as keystrokes into any EB input field. 
 
 The steps for enabling DataWedge for use with EB (and for disabling it so that apps can use the scanning APIs) vary slightly depending which DataWedge version is installed on the device. **It's important to note that <u>control of barcode scanning hardware is exclusive</u>. When DataWedge is active, Enterprise Browser scanning APIs will be inoperable**. Likewise, an Enterprise Browser app that uses those APIs will prevent other apps (including DataWedge) from accessing the scanner(s). This guide explains how to take control of a device's scanner hardware and to subsequently release it to other apps. From the sections below, select the instructions matching the DataWedge version installed on the target device. 
 <br>
 
 ##### This <u>Android-only guide</u> contains instructions for configuring Enterprise Browser to use:
 
-*  [DataWedge 6.0.1 and higher](#dw601andhigher)
-*  [DataWedge 2.2.9 to 5.1.13](#dw229to5113)
-*  [DataWedge 2.2.8 and lower](#dw228andlower)
+* [DataWedge 6.5 and higher](#dw65andhigher)
+* [DataWedge 6.0.1 and higher](#dw601andhigher)
+* [DataWedge 2.2.9 to 5.1.13](#dw229to5113)
+* [DataWedge 2.2.8 and lower](#dw228andlower)
 
 [Which DataWedge version is installed?](../../../../datawedge/6-2/guide/about/#whichversionisinstalled)
+
+-----
+
+### DW 6.5 and higher
+
+EB 2.0 works directly with DataWedge 6.5 and later versions. All that's required is to set two tags in the EB app's `Config.xml` file to [enable DataWedge](../configreference/#usedwforscanning) and the [EB receiver](../configreference/#intentreciever) for intent payloads. 
+
+**To enable DataWedge 6.5 (or higher) in an EB 2.0 app**: 
+
+1. **Set a value of "1" in the &lt;usedwforscanning&gt; tag**, as shown:  
+
+		:::xml
+		<Applications>
+			<Application>
+			...
+				<usedwforscanning  value=”1” />
+			...
+2. In DataWedge, select Profiles -> Profile0 (default).
+3. **Confirm that "Profile 0" is enabled**.
+4. **Confirm that Barcode Input is enabled**.
+5. **Scroll down to the Intent Output** section and set the following:<br>
+ * Confirm that Intent Output is Enabled.<br>
+ * **Tap Intent action** and enter `com.symbol.dw.action` and Tap OK. 
+ * **Tap Intent delivery** and select (or confirm) “Broadcast Intent” and Tap OK. 
+6. Confirm that settings appear as in the image below: 
+<img alt="" style="height:350px" src="eb20_and_dw65.png"/>
+_DataWedge Profile0 settings for use with EB apps_.
+
+#### The EB app is now ready to use DataWedge for scanning. 
+
+**To disable DataWedge and enable EB APIs in an app**: 
+
+**Set a value of "0" in the &lt;usedwforscanning&gt; tag**, as shown:  
+
+		:::xml
+	  <Applications>
+	    <Application>
+	    ...
+		<usedwforscanning  value=”0” />
+		...
 
 -----
 

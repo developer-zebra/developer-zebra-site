@@ -18,17 +18,26 @@ The steps for enabling DataWedge for use with EB (and for disabling it so that a
 * [DataWedge 2.2.9 to 5.1.13](#dw229to5113)
 * [DataWedge 2.2.8 and lower](#dw228andlower)
 
-[Which DataWedge version is installed?](../../../../datawedge/6-2/guide/about/#whichversionisinstalled)
+[Which DataWedge version is installed?](../../../../datawedge/latest/guide/about/#whichversionisinstalled)
 
 -----
 
 ### DW 6.5 and higher
 
-EB 2.0 works directly with DataWedge 6.5 and later versions. All that's required is to set two tags in the EB app's `Config.xml` file to [enable DataWedge](../configreference/#usedwforscanning) and enable the [EB intent receiver](../configreference/#intentreciever). 
+EB 2.0 works directly with DataWedge 6.5 and later versions provided the EB app's `Config.xml` file is configured correctly. Follow the steps below to confirm or configure the correct settings. For help editing the `Config.xml` file, see the **[Config Editor Utility guide](../ConfigEditor/)**. 
+
+#### Prerequisites
+* **DataWedge 6.5** or later in the device ([more info](../../../../datawedge/latest/guide/about/#whichversionisinstalled))
+* **Enteprise Browser 2.0** or later in the device 
+* **EB API module** `ebapi-modules.js ` on the device ([more info](../apioverview)) 
 
 **To enable DataWedge 6.5 (or higher) in an EB 2.0 app**: 
 
-1. **Set a value of "1" in the &lt;usedwforscanning&gt; tag**, as shown:  
+1. **Confirm (or configure) the following** `Config.xml` **file settings**:<br>  
+ * **Set a value of "1" in the &lt;usedwforscanning&gt; tag**. <br>
+ * **Set a value of "1" in the &lt;EnableReceiver&gt; tag**. <br>
+ * **Set a value of** "`com.symbol.dw.action`" **in the &lt;IntentAction&gt; tag**. <br>
+ * **Set a value of** "`file://%INSTALLDIR%/DataWedgeIntent.html`" **in the &lt;StartPage&gt; tag**.<br>
 
 		:::xml
 		<Applications>
@@ -38,23 +47,34 @@ EB 2.0 works directly with DataWedge 6.5 and later versions. All that's required
 			...
 				<IntentReceiver>
 					...
-        			<EnableReceiver  value="0"/>
+        			<EnableReceiver  value="1"/>
+        			<IntentAction  value="com.symbol.dw.action"/>
         			...
-        	
-2. In DataWedge, select Profiles -> Profile0 (default).
+        		<General>
+        			<Name value="Menu"/>
+        			<StartPage value="file://%INSTALLDIR%/DataWedgeIntent.html" name="Menu"/> 
+        	...
+
+2. In DataWedge, **select Profiles -> Profile0 (default)**.
 3. **Confirm that "Profile 0" is enabled**.
 4. **Confirm that Barcode Input is enabled**.
 5. **Scroll down to the Intent Output** section and set the following:<br>
- * Confirm that Intent Output is Enabled.<br>
- * **Tap Intent action** and enter `com.symbol.dw.action` and Tap OK. 
- * **Tap Intent delivery** and select (or confirm) “Broadcast Intent” and Tap OK. 
-6. Confirm that settings appear as in the image below: 
+ * **Confirm that Intent Output is Enabled**.<br>
+ * **Tap Intent action** and enter `com.symbol.dw.action` and **Tap OK**.<br> 
+ * **Tap Intent delivery** and select (or confirm) “Broadcast Intent” and **Tap OK**.<br>
+Settings should appear as in the image below: 
 <img alt="" style="height:350px" src="eb20_and_dw65.png"/>
-_DataWedge Profile0 settings for use with EB apps_.
+_Profile0 settings for using DataWedge from EB apps_.
 
-#### The EB app is now ready to use DataWedge for scanning. 
+##### The EB app is now ready to use DataWedge for scanning. 
 
-**To disable DataWedge and enable EB APIs in an app**: 
+To configure DataWedge from within an EB app, see the [EB DataWedge Intents guide](../dwintents).  
+
+-----
+
+#### Re-enable EB APIs
+
+**To disable DataWedge and enable EB APIs for scanning**: 
 
 **Set a value of "0" in the &lt;usedwforscanning&gt; tag**, as shown:  
 

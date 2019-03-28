@@ -15,6 +15,8 @@ This guide explains how to configure an EB app to scan and process barcode data 
 
 ### Requirements
 
+## `UNDER CONSTRUCTION`
+
 * Enterprise Browser 2.0 (or higher)
 --->>> ?? * DataWedge 6.5 (or higher)
 

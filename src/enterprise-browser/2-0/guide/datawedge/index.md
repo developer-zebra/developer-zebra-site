@@ -24,7 +24,7 @@ The steps for enabling DataWedge for use with EB (and for disabling it so that a
 
 ### DW 6.5 and higher
 
-EB 2.0 works directly with DataWedge 6.5 and later versions. All that's required is to set two tags in the EB app's `Config.xml` file to [enable DataWedge](../configreference/#usedwforscanning) and the [EB receiver](../configreference/#intentreciever) for intent payloads. 
+EB 2.0 works directly with DataWedge 6.5 and later versions. All that's required is to set two tags in the EB app's `Config.xml` file to [enable DataWedge](../configreference/#usedwforscanning) and enable the [EB intent receiver](../configreference/#intentreciever). 
 
 **To enable DataWedge 6.5 (or higher) in an EB 2.0 app**: 
 
@@ -36,6 +36,11 @@ EB 2.0 works directly with DataWedge 6.5 and later versions. All that's required
 			...
 				<usedwforscanning  value=”1” />
 			...
+				<IntentReceiver>
+					...
+        			<EnableReceiver  value="0"/>
+        			...
+        	
 2. In DataWedge, select Profiles -> Profile0 (default).
 3. **Confirm that "Profile 0" is enabled**.
 4. **Confirm that Barcode Input is enabled**.

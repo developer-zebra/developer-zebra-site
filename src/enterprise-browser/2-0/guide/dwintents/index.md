@@ -1,12 +1,14 @@
 ---
-title: Using DataWedge Intents
+title: Controlling DataWedge from EB
 productversion: '2.0'
 product: Enterprise Browser
 layout: guide.html
 ---
 ## Overview 
 
-Apps running on Enterprise Browser 2.0 (and higher) can control DataWedge&ndash;Zebra's built-in scanning engine&ndash;using Android intents. This makes it possible to acquire barcode data from within an EB app without using EB's scanning APIs. This guide explains how to configure an EB app to scan and process barcode data using DataWedge intents and enter the captured data as keystrokes into any EB input field. 
+Apps running on Enterprise Browser 2.0 (and higher) can control DataWedge&ndash;Zebra's built-in scanning engine&ndash;using DataWedge intents. This makes it possible to adjust DataWedge for changing data acquisition requirements without the need to exit the EB app. 
+
+This guide explains how to configure an EB app to scan and process barcode data using DataWedge intents and enter the captured data as keystrokes into any EB input field. 
 
 **It's important to note that <u>control of barcode scanning hardware is exclusive</u>. When DataWedge is active, Enterprise Browser scanning APIs will be inoperable**. Likewise, an Enterprise Browser app that uses those APIs will prevent other apps (including DataWedge) from accessing the scanner(s). This guide explains how to take control of a device's scanner hardware and to subsequently release it to other apps.  
 <br>
@@ -14,13 +16,73 @@ Apps running on Enterprise Browser 2.0 (and higher) can control DataWedge&ndash;
 ### Requirements
 
 * Enterprise Browser 2.0 (or higher)
-* DataWedge 6.5 (or higher)
+--->>> ?? * DataWedge 6.5 (or higher)
 
 [Which DataWedge version is installed?](../../../../datawedge/6-2/guide/about/#whichversionisinstalled)
 
+### DW 6.5 and higher
+
+The User wants to retrieve both barcode data and simulscan data which is scanned through DataWedge inside Enterprise Browser as JavaScript callback. 
+Solution:
+To achieve the user requirement, follow the below Documentation.
+The User must have two DataWedge profiles, in the first profile, the barcode scanning input mode should be configured, and in the second profile, the Simulscan input mode should be configured. The intent output mode sets as Broadcast in both the profiles. (In the attached sample, using “simulscan” profile name which has configuration to scan simulscan data & “barcode” profile name which has configuration to scan Barcode data). For more information follow the below documentation.
+
+Configuration at Enterprise Browser (v 2.0) end:
+
+Install Enterprise Browser v2.0 apk file in zebra android device supported by Enterprise Browser application.
+Launch Enterprise Browser for extracting Enterprise Browser Config.xml which is used for setting the runtime configuration parameters of Enterprise Browser application.
+
+After application launch, extract Config.xml from "/[mass_storage_location]/Android/data/com.symbol.enterprisebrowser" present on the device. Here, [mass_storage_location] refers to "/sdcard" or "/Internal shared storage" etc., depending on the Zebra Android device used.
+
+Open Config.xml and apply the below settings:
+Set "usedwforscanning" config parameter value to 1 in Config.xml. This is used for enabling DataWedge inside Enterprise Browser application. For more details, refer to Enterprise Browser - DataWedge documentation.
+
+
+Enable the IntentReceiver tags in Config.xml as shown below. For more details, refer to Enterprise Browser - Intent Receiver documentation.
+
+Set "EnableReceiver" config tag to 1 in Config.xml.
+
+Set "IntentAction" value to "com.symbol.dw.action" in Config.xml to retrieve Barcode scanned data using DataWedge as JavaScript callback in Enterprise Browser.
+
+Set "IntentAction" value to "com.symbol.dwss.action" in Config.xml to retrieve simulscan captured data using DataWedge as JavaScript callback in Enterprise Browser.
+
+Set the "IntentAction" value to "com.symbol.datawedge.api.RESULT_ACTION” in Config.xml to receive DataWedge configuration value as JavaScript callback in Enterprise Browser.
+
+Set the “IntentCategory” value to “android.intent.category.DEFAULT” in Config.xml to receive DataWedge configuration value as JavaScript callback in Enterprise Browser. 
+ 
+		<IntentReceiver>
+       		<EnableReceiver   value="1"/>
+        		<IntentAction  value="com.symbol.dw.action"/>
+			<IntentAction  value="com.symbol.dwss.action"/>
+			<IntentAction  value="com.symbol.datawedge.api.RESULT_ACTION"/>
+       		<IntentCategory  value="android.intent.category.DEFAULT"/>
+      	</IntentReceiver>
+
+Create a web page which has a logic to send DataWedge Intent-specific APIs using Enterprise Browser Intent API.  Shown in below example how the user can switch the DataWedge profile (Here, “barcode” is DataWedge profile Name).
+
+		var params = {
+			intentType: EB.Intent.BROADCAST,
+			action: 'com.symbol.datawedge.api.ACTION',
+			appName: 'com.symbol.datawedge',
+			data: {"com.symbol.datawedge.api.SWITCH_TO_PROFILE":"barcode"}
+		EB.Intent.send(params);
+
+Set “startPage” tag in config.xml to a webpage as shown below. For more details, refer to Enterprise Browser- startPage config parameter.
+
+	<General>
+              <Name value="Menu"/>
+              <StartPage value="file://%INSTALLDIR%/DataWedgeIntent.html" name="Menu"/>
+      </General>
+	
+Save and copy the updated config.xml file to the Enterprise Browser installed directory in the device after all the above-mentioned settings are applied.
+
+Copy the html file to the respective directory given in “StartPage” config tag as shown in above example.
+
+Copy the ebapi-modules.js to the location where the “.html” file resides. It is used for accessing the Enterprise Browser JavaScript API's.
+
 -----
 
-### DW 6.0.1 and higher
+### DW 6.0.1 - 6.4
 **Important**: Some versions of DataWedge 6.x automatically disable Enterprise Browser after every device reboot by adding it to the "Disabled apps list." If `com.symbol.enterprisebrowser` reappears in the Disabled apps list after reboot, it must be manually removed before EB can use DataWedge for scanning. The only alternative is to upgrade DataWedge, which for Android requires a new BSP (OS image). Such updates should be attempted only with the guidance of [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).  
 
 #### Use DataWedge for Scanning

@@ -236,12 +236,11 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
 
 **Notes**:
 
-* Setting the color for individual buttons is not supported.
-* If no color is specified, the default color is blue.
+* Blue is the default if no color is specified.
 * If an image is specified as a button background, barColor setting is ignored.
-* If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the [buttonImage](#buttonimage) parameter.
-* The following standard color names are also accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
-    
+* If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color sometimes renders improperly. In such cases, Zebra recommends using the [buttonImage](#buttonimage) parameter.
+* The following standard color names are accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
+
 #### Example
 
     :::xml
@@ -259,11 +258,11 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
 
 **Notes**:
 
-* Setting the color for individual buttons is not supported.
-* If no color is specified, the default color is yellow.
+* Yellow is the default if no color is specified.
 * If an image is specified as a button background, barColor setting is ignored.
-* If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the [buttonImagePressed](#buttonimagepressed) parameter.
-* The following standard color names are also accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
+* If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color sometimes renders improperly. In such cases, Zebra recommends using the [buttonImagePressed](#buttonimagepressed) parameter.
+* The following standard color names are accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
+
 
 #### Example
 
@@ -276,6 +275,72 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
    
 -----
 
+### buttonTransparency
+
+Used to specify ButtonBar transparency as a percentage from 0-100 (0=opaque; 100=fully transparent).
+
+#### Example
+
+    :::xml 
+    <Button1>
+      ...
+      <buttonTransparency value="14"/>
+      ...
+    </Button1>
+
+-----
+
+### buttonTextColor
+
+Used to specify the text color for a particular Button using hex format #RRGGBB or #AARRGGBB or standard color names in string format.
+
+**Notes**:
+* White is the default if no color is specified.
+* The following standard color names are accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
+
+#### Example
+
+    :::xml 
+    <Button1>
+      ...
+      <buttonTextColor value="#AF7AC5"/>
+      <buttonTextColor value="white"/>
+     
+      ...
+    </Button1>
+
+-----
+
+### buttonTextStyle
+
+Used to specify the style of the text for a particular button. Allowed values are: `bold`, `bolditalic`, `italic`, `normal`.
+
+#### Example
+
+    :::xml 
+    <Button1>
+      ...
+      <buttonTextStyle value="bold"/>
+      ...
+    </Button1>
+
+-----
+
+### buttonFontSize
+
+Specifies the font size of the text for a particular button interpreted as "scaled pixel" units. This size is adjusted based on the current density and user font size preference. If left unspecified, text size is chosen based on the device default.
+
+#### Example
+
+    :::xml 
+    <ButtonBar1>
+      ...
+      <buttonFontSize value="15"/>
+      ...
+    </ButtonBar1>
+
+-----
+
 ### barTextColor
 
 Used to specify the text color of the entire ButtonBar using [HTML hexadecimal color values](https://www.w3schools.com/colors/colors_hexadecimal.asp) when any button in the bar is pressed. Uses hex format #RRGGBB or #AARRGGBB. 
@@ -283,8 +348,9 @@ Used to specify the text color of the entire ButtonBar using [HTML hexadecimal c
 **Notes**:
 
 * Setting the text color for individual buttons is not supported.
-* If no color is specified, the default color is white.
-* The following standard color names are also accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
+* If no color is specified
+* the default color is white.
+* The following standard color names are accepted: *red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal*.
 
 #### Example
 
@@ -299,7 +365,7 @@ Used to specify the text color of the entire ButtonBar using [HTML hexadecimal c
 
 ### barTextStyle
 
-Used to specify the style of the text of all buttons of that particular ButtonBar. All buttons in that particular ButtonBar will have the same style. Allowed values are: `bold`, `bolditalic`, `italic` and `normal`. 
+Used to specify the style of the text of all buttons of that particular ButtonBar. All buttons in that particular ButtonBar will have the same style. Permitted values: `bold`, `bolditalic`, `italic`, `normal`. 
 
 #### Example
 
@@ -493,7 +559,7 @@ Button-specific parameters are used to specify attributes that apply to an indiv
 -----
 
 
-## Using Relative Co-ordinates For Button-Specific Positioning
+## Relative Coordinates For Button-Specific Positioning
 
 For positioning related tags(buttonLeft, buttonTop, buttonHeight, buttonWidth) you can give the value as either the absolute measure in pixel or you can use the constants like `deviceheight` and `devicewidth` and perform some basic mathematical operations on them. The `deviceheight` and `devicewidth` will be automatically substituted internally with that respective device screenheight and screenwidth. By using these constants we can generate single generic button.xml for all similar devices. Only one mathematical operation should be used for this.
 
@@ -507,6 +573,72 @@ For positioning related tags(buttonLeft, buttonTop, buttonHeight, buttonWidth) y
 
 -----
 
+### buttonColor
+
+Used to specify the color of the button using HTML hexadecimal color values. Uses hex format #RRGGBB or #AARRGGBB OR standard color names in string format.
+
+**Notes**:
+* If no color is specified, the default color is blue.
+* If an image is specified as a button background, barColor setting is ignored.
+* If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button color can sometimes render improperly. In such cases, Zebra recommends using the buttonImage parameter.
+* The following standard color names are accepted: 
+    * red
+    * blue
+    * green
+    * black
+    * white
+    * gray
+    * cyan
+    * magenta
+    * yellow
+    * lightgray
+    * darkgray
+    * grey
+    * lightgrey
+    * darkgrey
+    * aqua
+    * fuchsia
+    * lime
+    * maroon
+    * navy
+    * olive
+    * purple
+    * silver
+    * teal
+
+#### Example
+ 
+    :::xml
+    <Button1>
+      ...
+      <buttonColor value="#AF7AC5"/>
+      ...
+    </Button1>
+
+-----
+
+### buttonColorPressed
+Used to specify the color of a button when that button is pressed. Accepts hex format #RRGGBB or #AARRGGBB or standard color names in string format.
+
+**Notes**:
+
+* If no color is specified, the default color is yellow.
+* If an image is specified as a button background, buttonColorPressed setting is ignored.
+* If the WebView is resized and the ButtonBar is not rendered on top of the WebView layout, button Color on button press can sometimes render improperly. In such cases, Zebra recommends using the buttonImagePressed parameter.
+The following standard color names are accepted: red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal.
+
+#### Example
+ 
+    :::xml
+    <Button1>
+      ...
+      <buttonColorPressed value="#3498DB"/>
+      <buttonColorPressed value="yellow"/>
+      ...
+    </Button1>
+
+
+-----
 
 ### buttonLeft
 

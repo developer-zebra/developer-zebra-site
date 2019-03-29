@@ -14,7 +14,7 @@ The steps for enabling DataWedge for use with EB (and for disabling it so that a
 ##### This <u>Android-only guide</u> contains instructions for configuring Enterprise Browser to use:
 
 * [DataWedge 6.5 and higher](#dw65andhigher)
-* [DataWedge 6.0.1 and higher](#dw601andhigher)
+* [DataWedge 6.0.1 and higher](#dw601to64)
 * [DataWedge 2.2.9 to 5.1.13](#dw229to5113)
 * [DataWedge 2.2.8 and lower](#dw228andlower)
 
@@ -68,7 +68,7 @@ _Profile0 settings for using DataWedge from EB apps_.
 
 ##### The EB app is now ready to use DataWedge for scanning. 
 
-To configure DataWedge from within an EB app, see the [EB DataWedge Intents guide](../dwintents).  
+> To change DataWedge settings from within an EB app, see the [EB DataWedge Intents guide](../dwintents).  
 
 -----
 
@@ -87,7 +87,7 @@ To configure DataWedge from within an EB app, see the [EB DataWedge Intents guid
 
 -----
 
-### DW 6.0.1 and higher
+### DW 6.0.1 to 6.4
 **Important**: Some versions of DataWedge 6.x automatically disable Enterprise Browser after every device reboot by adding it to the "Disabled apps list." If `com.symbol.enterprisebrowser` reappears in the Disabled apps list after reboot, it must be manually removed before EB can use DataWedge for scanning. The only alternative is to upgrade DataWedge, which for Android requires a new BSP (OS image). Such updates should be attempted only with the guidance of [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).  
 
 #### Use DataWedge for Scanning

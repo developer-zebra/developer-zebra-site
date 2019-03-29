@@ -138,7 +138,7 @@ The following new methods, properties and/or callbacks were added to Android API
 * A new **[Voice Input/Output Guide](../voice)** describes how to use Page-based actions to enable voice input in an app. 
 * **Enhanced [Key Remapping Guide](../keycapture/#mappinghardwarekeys)** describes how to map hardware keys on Zebra devices running Android. 
 * **Enhanced SAP support** includes SAP applications running Warehouse Management or Extended Warehouse Management apps as well as apps built with SAP’s UI5 SDKs and Fiori UX tools.
-* **Enhanced ButtonBar Features** include:  
+* **Enhanced [ButtonBar Guide](../buttonbar)** documents these new features:  
  * **Unicode support**, with special keys and characters from other languages in Basic Multilingual Plane.
  * **New config parameters**: 
  	* &lt;ResizeOnButtonbar&gt;
@@ -147,7 +147,7 @@ The following new methods, properties and/or callbacks were added to Android API
  	* &lt;buttonTextColor&gt;
  	* &lt;buttonTextStyle&gt;
  	* &lt;buttonFontSize&gt;
- 	* &lt;buttonColor&gt;
+ 	* &lt;buttonColor&gt; - Sets the color for individual buttons.
  	* &lt;buttonColorPressed&gt;
  	* &lt;buttonTransparency&gt;
  * **New Properties**:

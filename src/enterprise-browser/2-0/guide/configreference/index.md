@@ -607,7 +607,7 @@ from eng:
 ### buttonxmlfile
 **Applies only to Android devices running KitKat and higher**. Specifies the location of an encrypted button information file created with the [ButtonBar Tool](../buttonbar) (EB 2.0 and higher only) or the `button.xml` file created manually (EB 1.7 and higher). Either of these files contain configuration settings for the custom on-screen buttons on the device; the encrypted file can be read only by EB. 
 
-**Note: This tag is NOT included in the default** `Config.xml` **file and must be added manually** if custom button or key layouts are used in an app. When launched, Enterprise Browser reads the custom button file (if present) from the specified folder and employs the specified layouts. For more information, see the [Customize EB Functions](../customize) and [ButtonBar Tool](../buttonbar) guides.
+**Note: This tag is NOT included in the default** `Config.xml` **file and must be added manually** if custom button or key layouts are used in an app. When launched, Enterprise Browser reads the custom button file (if present) from the specified folder and employs the specified layouts. For more information, see the [Customize EB Functions guide](../customize) and [ButtonBar Tool guide](../buttonbar).
 
 **Possible Values**:
 

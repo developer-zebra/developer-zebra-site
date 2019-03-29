@@ -18,6 +18,8 @@ automenu:
           url: ../../../guide/configreference/#customxmlfile
     - title: ButtonBar APIs
       items:
+        - title: ButtonBarLayout
+          url: buttonbarlayout
         - title: ButtonBar1
           url: buttonbar1
         - title: ButtonBar2

@@ -1,8 +1,8 @@
 ---
-title: RxLogger Settings
+title: Device Diagnostic Tool Settings
 layout: guide.html
-product: RxLogger
-productversion: '5.4'
+product: Device Diagnostic Tool
+productversion: '1.1'
 ---
 
 ## Overview

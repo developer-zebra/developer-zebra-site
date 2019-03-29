@@ -1,8 +1,8 @@
 ---
-title: RxLogger APIs
+title: Device Diagnostic Tool APIs
 layout: guide.html
-product: RxLogger
-productversion: '5.4'
+product: Device Diagnostic Tool
+productversion: '1.1'
 ---
 
 ## Overview

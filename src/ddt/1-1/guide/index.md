@@ -7,14 +7,14 @@ content-items:
     level: 4
     title: Setup Guide
     text: A step-by-step guide to installation and basic usage of RxLogger on Android and Windows devices
-    url: /rxlogger/5-4/guide/setup
+    url: /ddt/1-1/guide/setup
   - type: section
     level: 4
     title: Customize
     text: How to configure RxLogger to suit the needs of any business application 
-    url: /rxlogger/5-4/guide/settings
-product: RxLogger
-productversion: '5.4'
+    url: /ddt/1-1/guide/settings
+product: Device Diagnostic Tool
+productversion: '1.1'
 ---
 
 

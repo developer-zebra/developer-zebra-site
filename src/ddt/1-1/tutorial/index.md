@@ -23,8 +23,8 @@ content-items:
     title: Item 4
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod'
     url: null
-product: RxLogger
-productversion: '5.4'
+product: Device Diagnostic Tool
+productversion: '1.1'
 ---
 
 

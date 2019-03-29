@@ -1,8 +1,8 @@
 ---
-title: RxLogger
+title: Device Diagnostic Tool
 img: cartscan_logo.png
 layout: redirect.html
-redirect_url: /rxlogger/5-4/guide/about
+redirect_url: /ddt/1-1/guide/about
 ---
 
 ### Loading the latest RxLogger documentation...

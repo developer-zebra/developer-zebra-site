@@ -8,13 +8,17 @@ subhead: RhoElements 2.x API
 
 ## Overview
 
-The ButtonBarLayout module is a Collection of ButtonBars arranged in a single view. You can create a Layout through tool
+A ButtonBar Layout is a collection of ButtonBars arranged in a single view. Layouts can be created using the ButtonBar Tool, a desktop utility for Windows. This API module is used to show/hide specified layouts created through the tool.
 
+`IMPORTANT:` 
+* This API works only with layouts created with the [ButtonBar Tool](../../../../guide/buttonbar).
+* To control the size, position, actions and other button attributes, see the [ButtonBar Usage guide](../../../../guide/customize).
 
-ButtonBar Utility tool), which is  a desktop side tool. In the tool after you create a project, if you go to the menu you will be able to add new Layouts, specifying names for individual layouts. The Layout name given here should be used while enabling or disabling the Layout using this new Plugin. In the below doc wherever ‘LayoutName’ is mentioned it means the name given for the Layout while creating in tool.
-The ButtonBarLayout Module is used to show/hide a particular Layout(using its name) created through tool. This API is helpful only if the layouts are created through ButtonBar Utility tool.
+<!-- 
+In the tool after you create a project, if you go to the menu you will be able to add new layouts, specifying names for individual layouts. The layout name given here should be used while enabling or disabling the Layout using this new plug-in. In the below doc wherever ‘LayoutName’ is mentioned it means the name given for the Layout while creating in tool.
+-->
 
-**To control the size, position, actions and other button attributes, see the [ButtonBar Usage guide](../../../../guide/customize)**.
+-----
 
 ## Syntax
 

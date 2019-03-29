@@ -129,6 +129,11 @@ The following new methods, properties and/or callbacks were added to Android API
  * &lt;VerifyClientCertificate&gt;
  * &lt;DisplayZoomControls&gt;
 
+A **new [ButtonBarLayout API](../../api/re2x/buttonbarlayout) includes: 
+ * 
+
+
+
 ### New/Updated Features/Guides
 
 * **An updated [Licensing Guide](../licensing)** describes the all-new processes for licensing EB apps on a device and across an organization. 

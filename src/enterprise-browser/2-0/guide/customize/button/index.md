@@ -277,7 +277,7 @@ Used to specify the color of the entire ButtonBar using [HTML hexadecimal color 
 
 ### buttonTransparency
 
-Used to specify ButtonBar transparency as a percentage from 0-100 (0=opaque; 100=fully transparent).
+Used to specify ButtonBar transparency as a percentage from 0 (opaque) to 100 (fully transparent).
 
 #### Example
 

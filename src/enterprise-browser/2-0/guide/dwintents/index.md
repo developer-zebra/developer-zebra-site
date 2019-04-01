@@ -8,30 +8,25 @@ layout: guide.html
 
 Apps running on Enterprise Browser 2.0 (and higher) can control DataWedge&ndash;Zebra's built-in scanning engine&ndash;using DataWedge intents. This makes it possible to adjust DataWedge settings from an EB app to adapt to changing data acquisition requirements without exiting the app. 
 
-As a real-world example, this guide explains how to configure an EB app to scan and process barcode data, enter the captured data as keystrokes into any EB input field, and reconfigure DataWedge to switch the input type to SimulScan&nsdash; all using DataWedge intents from within the EB app. 
-
-**Note: It's important to understand that <u>control of barcode scanning hardware is exclusive</u>. When DataWedge is active, Enterprise Browser <u>scanning APIs</u> are inoperable**. Likewise, an Enterprise Browser app that uses those APIs will prevent other apps (including DataWedge) from accessing the scanner(s). This guide explains how to take control of a device's scanner hardware and to subsequently release it to other apps when scanning is complete.  
+This guide illustrates the feature using a real-world example. It explains how to configure an EB app to scan and process barcode data, enter the captured data as keystrokes into any EB input field, and reconfigure DataWedge to switch the input type&nsdash; all using DataWedge intents from within the EB app. 
 
 <!-- 
-## `UNDER CONSTRUCTION`
- -->
+**Note: It's important to understand that <u>control of barcode scanning hardware is exclusive</u>. When DataWedge is active, Enterprise Browser <u>scanning APIs</u> are inoperable**. Likewise, an Enterprise Browser app that uses those APIs will prevent other apps (including DataWedge) from accessing the scanner(s). This guide explains how to take control of a device's scanner hardware and to subsequently release it to other apps when scanning is complete.  
+
+-->
 
 ### Requirements
 
-* Enterprise Browser 2.0 (or higher) installed
 * Zebra device that supports EB and SimulScan
-* DataWedge 6.5 (or higher) on the device [Which version is installed?](../../../../datawedge/latest/guide/about/#whichversionisinstalled)
-* EB API module `ebapi-modules.js ` on the device ([more info](../apioverview)) 
-* Knowledge of `Config.xml` file editing 
-
-For help editing the `Config.xml` file, see the **[Config Editor Utility guide](../ConfigEditor/)**. 
+* Enterprise Browser 2.0 (or higher) installed on the device and on a Windows PC
+* DataWedge 6.5 (or higher) on the device. [Which version is installed?](../../../../datawedge/latest/guide/about/#whichversionisinstalled)
+* EB API module `ebapi-modules.js ` on the device. ([More about EB APIs](../apioverview)). 
+* Knowledge of `Config.xml` file editing. ([About config-file editing](../ConfigEditor)).
 
 -----
 
 ### Two-Profile Solution
-This solution involves creation of two DataWedge Profiles on the device: one configured for **Barcode input** and the other for **SimulScan input**. Both Profiles set the **Intent output as Broadcast**. 
-
-Configuration of Enterprise Browser (v 2.0):
+Implementing this solution includes configuration of EB for using DataWedge and the creation of two DataWedge Profiles on the device: one configured for **Barcode input** and the other for **SimulScan input**. Both Profiles set the **Intent output as Broadcast**. 
 
 FROM OTHER: 
 EB 2.0 works directly with DataWedge 6.5 and later versions provided the `<usedwforscanning>` tag in the EB app's `Config.xml` file is configured correctly (see below). 
@@ -75,6 +70,9 @@ Settings should appear as in the image below:
 <img alt="" style="height:350px" src="eb20_and_dw65.png"/>
 _Profile0 settings for using DataWedge from EB apps_.
 
+-----
+
+## `UNDER CONSTRUCTION`
 
 RAW RAW
 Install Enterprise Browser v2.0 apk file in zebra android device supported by Enterprise Browser application.

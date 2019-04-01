@@ -33,7 +33,7 @@ EB 2.0 works directly with DataWedge 6.5 and later versions provided the `<usedw
 
 **To enable DataWedge 6.5 (or higher) in an EB 2.0 (or higher) app**: 
 
-&#49;. Confirm (or configure) that a value of "1" is in the `<usedwforscanning>` tag in the app's `Config.xml` file as below:
+&#49;. Confirm (or configure) a value of "1" in the `<usedwforscanning>` tag in the app's `Config.xml` file as below:
 
 		:::xml
 		<Applications>

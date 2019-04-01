@@ -72,8 +72,9 @@ _Profile0 settings for using DataWedge from EB apps_.
 
 -----
 
-## `UNDER CONSTRUCTION`
+## `MORE TO COME`
 
+<!-- 
 RAW RAW
 Install Enterprise Browser v2.0 apk file in zebra android device supported by Enterprise Browser application.
 Launch Enterprise Browser for extracting Enterprise Browser Config.xml which is used for setting the runtime configuration parameters of Enterprise Browser application.
@@ -125,9 +126,11 @@ Save and copy the updated config.xml file to the Enterprise Browser installed di
 Copy the html file to the respective directory given in “StartPage” config tag as shown in above example.
 
 Copy the ebapi-modules.js to the location where the “.html” file resides. It is used for accessing the Enterprise Browser JavaScript API's.
-
+ -->
 -----
 
+
+<!--  WE'LL PROBABLY TAKE ALL THIS OUT: 
 ### DW 6.0.1 - 6.4
 **Important**: Some versions of DataWedge 6.x automatically disable Enterprise Browser after every device reboot by adding it to the "Disabled apps list." If `com.symbol.enterprisebrowser` reappears in the Disabled apps list after reboot, it must be manually removed before EB can use DataWedge for scanning. The only alternative is to upgrade DataWedge, which for Android requires a new BSP (OS image). Such updates should be attempted only with the guidance of [Zebra Support](https://www.zebra.com/us/en/about-zebra/contact-zebra/contact-tech-support.html).  
 
@@ -179,7 +182,7 @@ DataWedge is now disabled and unavailable to any app on the device.
 12. In the EB app's `config.xml` file, set a value of "0" in the [&lt;usedwforscanning&gt;](../configreference/#usedwforscanning) tag.
 
 DataWedge will now be disabled whenever an Enterprise Browser app is running. 
-
+ -->
 -----
 
 Related guides: 

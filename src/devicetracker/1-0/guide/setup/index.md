@@ -288,11 +288,13 @@ Device Tracker client registers with the server and loads "Devices to be found".
 <!--3. Tap "Allow" to "Allow Device Tracker to access this device's location". This is required to allow BLE (Bluetooth Low Energy) locationing. -->
 
 ####Remote Configuration
-After client installation, follow these steps to remotely configure the client:
+After client installation, follow these steps to create StageNow profiles to remotely configure the client:
 1. Disable Battery Optimization
-2. Configure Device Tracker settings with CSP
-3. Start Device Tracker Service
+2. Start Device Tracker Service
+3. Configure Device Tracker settings with CSP
 <!-- 2. Reboot device (refer to [Power Manager](http://techdocs.zebra.com/stagenow/latest/csp/power/) in StageNow documentation) -->
+
+Detailed procedures for each follow in the sections below.
 
 When using StageNow or any EMM system for remote configuration, use of the following special characters is not supported (for example, when setting the password): <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt; (less than) <br>
@@ -301,7 +303,9 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#39; (single quote) <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#34; (double quote) <br>
 
-Detailed procedures follow for Device Tracker configuration.
+> Use of a StageNow profile which combines installation and configuration into a single profile is not supported. Two separate profiles need to be created:
+1. Install Device Tracker application and start the service.
+2. Configurre Device Tracker settings.
 
 **Steps to create StageNow profile to automatically bypass the device Battery Optimization pop-up message:**
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC. 
@@ -324,6 +328,32 @@ _Figure 12. Generate StageNow barcode_ <br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
 12. Scan the barcode generated to automatically bypass the Battery Optimization message.
+
+**Steps to create StageNow profile to start Device Tracker service remotely:**
+1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC. 
+2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
+3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
+![img](SN_CreateNewProfile.JPG)
+_Figure 21. Profile wizard_ <br>
+4. Enter the profile name. Click Start.<br>
+5. Scroll down and click the plus (+) sign next to “Intent”. This adds to the Config tab on the right side. Click Add.<br>
+![img](SN_AddIntentSetting.jpg)
+_Figure 22. Add Setting_ <br>
+6. Enter the following information:
+   * Action: select "StartService"
+   * Android Action Name: enter "com.zebra.devicetracker.csp.DTCspService"
+   * Package Name: enter "com.zebra.devicetracker"
+Click Continue.
+![img](SN_IntentConfig.jpg)
+_Figure 23. Configure Setting_ <br>
+7. Click “Complete Profile." <br>
+8. In the Publish section, select the desired barcode type. Click Test. 
+![img](SN_Publish.JPG)
+_Figure 24. Generate StageNow barcode_ <br>
+9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
+10. For EMM Staging, continue to section "Steps for EMM Staging" below.
+11. Open the StageNow client on the device.
+12. Scan the barcode generated to start the Device Tracker service in the background.
 
 **Steps for remote client configuration with StageNow and CSP Plug-in:**
 
@@ -367,32 +397,6 @@ H. A window opens with the generated StageNow barcode in .pdf format. When ready
 6. For EMM Staging, continue to section "Steps for EMM Staging" below.
 7. Open the StageNow client on the device.
 8. Scan the barcode generated to configure the Device Tracker client with the settings specified. <br>
-
-**Steps to create StageNow profile to start Device Tracker service remotely:**
-1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC. 
-2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
-3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
-![img](SN_CreateNewProfile.JPG)
-_Figure 21. Profile wizard_ <br>
-4. Enter the profile name. Click Start.<br>
-5. Scroll down and click the plus (+) sign next to “Intent”. This adds to the Config tab on the right side. Click Add.<br>
-![img](SN_AddIntentSetting.jpg)
-_Figure 22. Add Setting_ <br>
-6. Enter the following information:
-   * Action: select "StartService"
-   * Android Action Name: enter "com.zebra.devicetracker.csp.DTCspService"
-   * Package Name: enter "com.zebra.devicetracker"
-Click Continue.
-![img](SN_IntentConfig.jpg)
-_Figure 23. Configure Setting_ <br>
-7. Click “Complete Profile." <br>
-8. In the Publish section, select the desired barcode type. Click Test. 
-![img](SN_Publish.JPG)
-_Figure 24. Generate StageNow barcode_ <br>
-9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
-10. For EMM Staging, continue to section "Steps for EMM Staging" below.
-11. Open the StageNow client on the device.
-12. Scan the barcode generated to start the Device Tracker service in the background.
 
 
 For more information on StageNow, refer to its [documentation](http://techdocs.zebra.com/stagenow) and [download](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html). 

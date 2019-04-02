@@ -92,12 +92,18 @@ _Profile0 settings for using DataWedge from EB apps_.
 &#53;. Copy the modified `Config.xml` and `.HTML` files to the EB install directory on the device: 
 * `/Android/data/com.symbol.enterprisebrowser`
 
-&#54;. If not already present, also copy the `ebapi-modules.js` EB API module to the same location as the `.HTML` 
-
-[Download the sample file (.zip)](EB_SwitchDWProfile.zip)
+&#54;. If not already present, also copy the `ebapi-modules.js` EB API module to the same location as the `.HTML` file. 
 
 <img alt="" style="height:350px" src="eb-dw_sample.png"/>
 _Sample `.HTML` page easily switches between DataWedge Profiles_.
+
+#### Sample files
+`dw_profilebarcode.db` - Barcode Profile for import to DataWedge (do not edit manually) 
+`dw_profilesimulscan.db` - SimulScan Profile for import to DataWedge (do not edit manually)
+`Config.xml` - Sample EB configuration file can be edited or copied as needed  
+`DataWedgeIntent.html` - Sample EB start page
+
+[Download the sample files (.zip)](EB_SwitchDWProfile.zip)
 
 ##### The EB app can now send DataWedge intents. 
 

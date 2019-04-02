@@ -25,7 +25,7 @@ Raw data is received as a byte stream using the `com.symbol.datawedge.decode_dat
 ## Keystroke Output Setup
 
 To enable Keystroke output for a Profile, place a check in the checkbox:
-<img style="height:350px" src="../keystroke-output_6.7.png"/>
+<img style="height:350px" src="../keystroke-output_7.3.jpg"/>
 _Keystroke Output options_
 <br>
 
@@ -35,6 +35,14 @@ _Keystroke Output options_
 * **Tab -** inject action key in place of a ASCII Tab (0x09) character
 * **Line feed -** inject action key in place of ASCII LF (0x0A) character
 * **Carriage return -** inject action key in place of ASCII CR (0x0D) character
+
+**Key event options -** sends keystrokes as key events, sends certain key events as string, and controls key event delays. Options:
+
+* **Key event delay -** set the delay (in ms) prior to the key event being sent
+* **Send Characters as Events -** set to send ASCII code 32 to 126 as key events
+* **Send Enter as string -** set to send ENTER key stroke output as a string. By default, this is disabled and ENTER is sent as a key event.
+* **Send Tab as string -** set to send TAB key stroke output as a string. By default, this is disabled and TAB is sent as a key event.
+* **Send Control Characters as Events -** set to send ASCII code 1 to 31 as key events. By default, this is disabled and the data is sent as a string.
 
 **Inter-character delay –** used to set a delay (in ms) following the delivery of each character to the application. This parameter is intended to help avoid issues that arise when data is dispatched too quickly for an application to accept. **Default=0**. If experiencing errors in keystroke delivery, increase this value in increments of 100 (to a max. of 1000) until errors cease. **Note: This parameter can negatively effect application performance**. 
 

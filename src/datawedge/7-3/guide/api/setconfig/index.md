@@ -25,7 +25,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
 * **DataWedge 7.2 -** Added new DotCode decoder support.
-* **DataWedge 7.3 -** Added new Decoder Signature support.
+* **DataWedge 7.3 -** Added new Decoder Signature support and new keystroke output parameters.
 
 ### Function Prototype
 
@@ -399,7 +399,7 @@ Error messages are logged for invalid actions and parameters
   </tr>
   <tr>
 	<td>decoder_code11_redundancy <br>decoder_code11_report_check_digit</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
   <tr>
 	<td>decoder_code11_verify_check_digit</td>
@@ -426,11 +426,11 @@ Error messages are logged for invalid actions and parameters
   </tr>
   <tr>
 	<td>decoder_code128_enable_marginless_decode</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
   <tr>
 	<td>decoder_code128_ignore_fnc4</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
@@ -441,7 +441,7 @@ Error messages are logged for invalid actions and parameters
   </tr>
   <tr>
 	<td>decoder_code39_verify_check_digit <br>decoder_code39_report_check_digit<br>decoder_code39_full_ascii<br>decoder_code39_redundancy<br>decoder_code39_convert_to_code32<br>decoder_code39_report_code32_prefix<br>decoder_code39_enable_marginless_decode</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
   <tr>
 	<td>decoder_code39_security_level</td>
@@ -462,72 +462,72 @@ Error messages are logged for invalid actions and parameters
 
   <tr>
 	<td>decoder_ean13</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_ean8</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>decoder_ean8_convert_to_ean13</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
 	<td>decoder_korean_3of5</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_chinese_2of5</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td rowspan="2">decoder_d2of5</td>
-	<td rowspan="2">True<br>False</td>
+	<td rowspan="2">true<br>false</td>
 	<td>decoder_d2of5_length1<br>decoder_d2of5_length2</td>
 	<td>Integer from 0–55</td>
   </tr>
 
   <tr>
     <td>decoder_d2of5_redundancy</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
 	<td>decoder_trioptic39</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>decoder_trioptic39_redundancy</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
 	<td rowspan="2">decoder_code93</td>
-	<td rowspan="2">True<br>False</td>
+	<td rowspan="2">true<br>false</td>
 	<td>decoder_code93_length1<br>decoder_code93_length2</td>
 	<td>Integer from 0–55</td>
   </tr>
 
   <tr>
     <td>decoder_code93_redundancy</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
     <td rowspan="4">decoder_msi</td>
-	<td rowspan="4">True <br> False</td>
+	<td rowspan="4">true <br>false</td>
     <td>decoder_msi_length1 <br>decoder_msi_length1</td>
     <td>Integer from 0–55</td>
   </tr>
   <tr>
 	<td>decoder_msi_redundancy <br>decoder_msi_report_check_digit</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
   <tr>
 	<td>decoder_msi_check_digit</td>
@@ -540,20 +540,20 @@ Error messages are logged for invalid actions and parameters
 
   <tr>
 	<td rowspan="2">decoder_codabar</td>
-	<td rowspan="2">True<br>False</td>
+	<td rowspan="2">true<br>false</td>
 	<td>decoder_codabar_length1<br>decoder_codabar_length2</td>
 	<td>Integer from 0–55</td>
   </tr>
   <tr>
     <td>decoder_codabar_redundancy<br>decoder_codabar_clsi_editing<br>decoder_codabar_notis_editing</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
     <td rowspan="3">decoder_upce0</td>
-	<td rowspan="3">True <br> False</td>
+	<td rowspan="3">true <br> false</td>
     <td>decoder_upce0_report_check_digit</td>
-    <td>True<br>False</td>
+    <td>true<br>false</td>
   </tr>
   <tr>
 	<td>decoder_upce0_preamble</td>
@@ -561,14 +561,14 @@ Error messages are logged for invalid actions and parameters
   </tr>
   <tr>
 	<td>decoder_upce0_convert_to_upca</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr> 
 
   <tr>
 	<td rowspan="2">decoder_upce1</td>
-	<td rowspan="2">True<br>False</td>
+	<td rowspan="2">true<br>false</td>
 	<td>decoder_upce1_report_check_digit<br>decoder_upce1_convert_to_upca</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
   <tr>
     <td>decoder_upce1_preamble</td>
@@ -577,9 +577,9 @@ Error messages are logged for invalid actions and parameters
 
   <tr>
 	<td rowspan="2">decoder_upca</td>
-	<td rowspan="2">True<br>False</td>
+	<td rowspan="2">true<br>false</td>
 	<td>decoder_upca_report_check_digit</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
   <tr>
     <td>decoder_upca_preamble</td>
@@ -588,35 +588,35 @@ Error messages are logged for invalid actions and parameters
 
   <tr>
 	<td>decoder_us4state</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>decoder_us4state_fics</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
 	<td>decoder_tlc39</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_mailmark</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_hanxin</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>decoder_hanxin_inverse</td>
 	<td>0 - Disable<br>1 - Enable<br>2 - Auto</td>
   </tr>
 
   <tr>
 	 <td rowspan="5">decoder_signature</td>
-	 <td rowspan="5">True<br>False</td>
+	 <td rowspan="5">true<br>false</td>
 	 <td>decoder_signature_format</td>
 	 <td>1 - JPG<br>3 - BMP<br>4 - TIFF</td>
   </tr>
@@ -639,20 +639,20 @@ Error messages are logged for invalid actions and parameters
 
   <tr>
 	<td>decoder_webcode</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td rowspan="2">decoder_matrix_2of5</td>
-	<td rowspan="2">True<br>False</td>
+	<td rowspan="2">true<br>false</td>
 	<td>decoder_matrix_2of5_length1<br>decoder_matrix_2of5_length2</td>
 	<td>Integer from 0–55</td>
   </tr>
   <tr>
     <td>decoder_matrix_2of5_redundancy<br>decoder_matrix_2of5_report_check_digit<br>decoder_matrix_2of5_verify_check_digit</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
@@ -663,7 +663,7 @@ Error messages are logged for invalid actions and parameters
   </tr>
   <tr>
 	<td>decoder_i2of5_redundancy <br>decoder_i2of5_report_check_digit<br>decoder_i2of5_report_check_digit<br>decoder_i2of5_convert_to_ean13<br>i20f5_enable_marginless_decode</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
   <tr>
 	<td>decoder_i2of5_check_digit</td>
@@ -676,21 +676,21 @@ Error messages are logged for invalid actions and parameters
 
   <tr>
 	<td>decoder_gs1_databar</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>decoder_gs1_databar_lim<br>decoder_gs1_databar_exp</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
 	<td>decoder_datamatrix</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_qrcode</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
@@ -711,98 +711,98 @@ Error messages are logged for invalid actions and parameters
 
   <tr>
 	<td>decoder_pdf417</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_pdf417</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_composite_ab</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>decoder_composite_ab_ucc_link_mode</td>
 	<td>0 - Link Flag Ignored<br>1 - Always Linked<br>2 - Auto Discriminate</td>
   </tr>
 
   <tr>
 	<td>decoder_composite_c</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_microqr</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_aztec</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_maxicode</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_micropdf</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_uspostnet</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_usplanet</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>decoder_usplanet_report_check_digit</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
 	<td>decoder_uk_postal</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>decoder_uk_postal_report_check_digit</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
 	<td>decoder_japanese_postal</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_canadian_postal</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_dutch_postal</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
@@ -823,14 +823,14 @@ Error messages are logged for invalid actions and parameters
 
   <tr>
 	<td>upcean_supplemental2</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>upcean_supplemental5</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
@@ -851,28 +851,28 @@ Error messages are logged for invalid actions and parameters
 
   <tr>
 	<td>upcean_random_weight_check_digit</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>upcean_linear_decode</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>upcean_bookland</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>upcean_coupon</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
@@ -886,7 +886,7 @@ Error messages are logged for invalid actions and parameters
 
   <tr>
 	<td>upcean_ean_zero_extend</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
@@ -921,7 +921,7 @@ Other Scanner Input Parameters:
 
   <tr>
 	<td>digimarc_decoding</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
@@ -936,7 +936,7 @@ Other Scanner Input Parameters:
 
   <tr>
 	<td></td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
@@ -946,12 +946,12 @@ Other Scanner Input Parameters:
 
   <tr>
 	<td>trigger-wakeup</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
 	<td>scanner_input_enabled</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
@@ -961,12 +961,12 @@ Other Scanner Input Parameters:
 
   <tr>
 	<td>databar_to_upc_ean</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
 	<td>upc_enable_marginless_decode</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
@@ -1151,7 +1151,7 @@ Other Scanner Input Parameters:
 
   <tr>
 	<td>display_bt_address_barcode</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
@@ -1161,17 +1161,17 @@ Other Scanner Input Parameters:
 
   <tr>
 	<td>decoding_led_feedback</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
 	<td>decoder_usplanet_report_check_digit</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
 	<td>decode_screen_notification</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
@@ -1210,7 +1210,7 @@ Other Scanner Input Parameters:
 	</tr>
 	<tr>
 		<td>serial_input_enabled</td>
-		<td>True<br>False</td>
+		<td>true<br>false</td>
 	</tr>
 	<tr>
 		<td>serial_baudrate</td>
@@ -1321,7 +1321,7 @@ Other Scanner Input Parameters:
   </tr>
 	<tr>
 		<td>dcp_input_enabled</td>
-		<td>True<br>False</td>
+		<td>true<br>false</td>
 		<td>Enable/Disable DCP input</td>
 	</tr>
 	<tr>
@@ -1385,7 +1385,7 @@ See [DCP Input](../../input/dcp).
 	</tr>
 	<tr>
 		<td>keystroke_output_enabled</td>
-		<td>True<br>False</td>
+		<td>true<br>false</td>
 	</tr>
 	<tr>
 		<td>keystroke_action_character</td>
@@ -1405,7 +1405,19 @@ See [DCP Input](../../input/dcp).
 	</tr>
 	<tr>
 		<td>keystroke_delay_multibyte_chars_only</td>
-		<td>True<br>False</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>keystroke_send_chars_as_events</td>
+		<td>true<br>false (default)</td>
+	</tr>
+	<tr>
+		<td>keystroke_send_control_chars_as_events</td>
+		<td>true<br>false (default)</td>
+	</tr>
+	<tr>
+		<td>keystroke_send_tab_as_string</td>
+		<td>true<br>false (default)</td>
 	</tr>
 </table>
 

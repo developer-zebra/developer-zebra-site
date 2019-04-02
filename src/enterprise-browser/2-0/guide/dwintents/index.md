@@ -25,10 +25,10 @@ This guide illustrates the feature using a real-world example. It explains how t
 
 -----
 
-### About Using DataWedge
-DataWedge settings are stored in Profiles, each of which contains parameters for acquiring data (input), processing the acquired data, and sending it to an app (output). This example solution walks through the process of configuring EB to use DataWedge and to receive the data it acquires, to create two DataWedge Profiles on the device and to switch from one to the other as needed. One Profile is configured for **Barcode input**, the other for **SimulScan input**, and both set the **Intent output as Broadcast**. 
+### Using DataWedge
+DataWedge settings are stored in Profiles, each of which contains parameters for acquiring data (input), processing the acquired data, and sending it to an app (output). This example solution walks through the process of configuring EB to use DataWedge and to receive the data it acquires, to create two DataWedge Profiles on the device and to switch from one to the other from an EB app. One Profile is configured for **Barcode input**, the other for **SimulScan input**, and both are set to **output as an Intent Broadcast**. 
 
-### Enable DataWedge in EB App
+#### Enable DataWedge in EB App
 
 &#49;. **Confirm (or configure) the following** `Config.xml` **file settings**:<br>  
 * **Set a value of "1" in** `<usedwforscanning>` tag.
@@ -36,7 +36,7 @@ DataWedge settings are stored in Profiles, each of which contains parameters for
 * **Set a value of** "`com.symbol.dw.action`" **in the** `<IntentAction>` tag.
 * **Set a value of** "`file://%INSTALLDIR%/DataWedgeIntent.html`" in `<StartPage>` tag.
 
-The settings described above shown in context of a `Config.xml` file:
+The settings described above are shown in context of a `Config.xml` file below:
 
 		:::xml
 		<Applications>
@@ -54,13 +54,13 @@ The settings described above shown in context of a `Config.xml` file:
         			<StartPage value="file://%INSTALLDIR%/DataWedgeIntent.html" name="Menu"/> 
         	...
 
-&#50;. **In DataWedge** on the device and **select Profiles -> Profile0 (default)** and:
-* **Confirm that "Profile 0" is enabled**
-* **Confirm that Barcode Input is enabled**
+&#50;. **In DataWedge** on the device, **select Profiles -> Profile0 (default)** and:
+* **Confirm that "Profile 0" is enabled**.
+* **Confirm that Barcode Input is enabled**.
 
 &#53;. **Scroll down to the Intent Output** section and set the following:<br>
-* **Confirm that Intent Output is Enabled**
-* **Tap Intent action** and enter `com.symbol.dw.action` and **Tap OK**
+* **Confirm that Intent Output is Enabled**.
+* **Tap Intent action** and enter `com.symbol.dw.action` and **Tap OK**.
 * **Tap Intent delivery** and select (or confirm) “Broadcast Intent” and **Tap OK**.
 
 Settings should appear as in the image below: 
@@ -72,15 +72,6 @@ _Profile0 settings for using DataWedge from EB apps_.
 ## `MORE TO COME`
 
 <!-- 
-RAW RAW
-Install Enterprise Browser v2.0 apk file in zebra android device supported by Enterprise Browser application.
-Launch Enterprise Browser for extracting Enterprise Browser Config.xml which is used for setting the runtime configuration parameters of Enterprise Browser application.
-
-After application launch, extract Config.xml from "/[mass_storage_location]/Android/data/com.symbol.enterprisebrowser" present on the device. Here, [mass_storage_location] refers to "/sdcard" or "/Internal shared storage" etc., depending on the Zebra Android device used.
-
-Open Config.xml and apply the below settings:
-Set "usedwforscanning" config parameter value to 1 in Config.xml. This is used for enabling DataWedge inside Enterprise Browser application. For more details, refer to Enterprise Browser - DataWedge documentation.
-
 
 Enable the IntentReceiver tags in Config.xml as shown below. For more details, refer to Enterprise Browser - Intent Receiver documentation.
 

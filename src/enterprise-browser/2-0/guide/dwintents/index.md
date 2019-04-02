@@ -25,19 +25,18 @@ This guide illustrates the feature using a real-world example. It explains how t
 
 -----
 
-### Two-Profile Solution
-Implementing this solution includes configuration of EB for using DataWedge and the creation of two DataWedge Profiles on the device: one configured for **Barcode input** and the other for **SimulScan input**. Both Profiles set the **Intent output as Broadcast**. 
+### About Using DataWedge
+DataWedge settings are stored in Profiles, each of which contains parameters for acquiring data (input), processing the acquired data, and sending it to an app (output). This example solution walks through the process of configuring EB to use DataWedge and to receive the data it acquires, to create two DataWedge Profiles on the device and to switch from one to the other as needed. One Profile is configured for **Barcode input**, the other for **SimulScan input**, and both set the **Intent output as Broadcast**. 
 
-FROM OTHER: 
-EB 2.0 works directly with DataWedge 6.5 and later versions provided the `<usedwforscanning>` tag in the EB app's `Config.xml` file is configured correctly (see below). 
-
-**To enable DataWedge 6.5 (or higher) in an EB 2.0 (or higher) app**: 
+### Enable DataWedge in EB App
 
 &#49;. **Confirm (or configure) the following** `Config.xml` **file settings**:<br>  
 * **Set a value of "1" in** `<usedwforscanning>` tag.
 * **Set a value of "1" in** `<EnableReceiver>` tag.
 * **Set a value of** "`com.symbol.dw.action`" **in the** `<IntentAction>` tag.
 * **Set a value of** "`file://%INSTALLDIR%/DataWedgeIntent.html`" in `<StartPage>` tag.
+
+The settings described above shown in context of a `Config.xml` file:
 
 		:::xml
 		<Applications>
@@ -55,15 +54,13 @@ EB 2.0 works directly with DataWedge 6.5 and later versions provided the `<usedw
         			<StartPage value="file://%INSTALLDIR%/DataWedgeIntent.html" name="Menu"/> 
         	...
 
-&#50;. In DataWedge, **select Profiles -> Profile0 (default)**.
-
-&#51;. **Confirm that "Profile 0" is enabled**.
-
-&#52;. **Confirm that Barcode Input is enabled**.
+&#50;. **In DataWedge** on the device and **select Profiles -> Profile0 (default)** and:
+* **Confirm that "Profile 0" is enabled**
+* **Confirm that Barcode Input is enabled**
 
 &#53;. **Scroll down to the Intent Output** section and set the following:<br>
-* **Confirm that Intent Output is Enabled**.
-* **Tap Intent action** and enter `com.symbol.dw.action` and **Tap OK**.
+* **Confirm that Intent Output is Enabled**
+* **Tap Intent action** and enter `com.symbol.dw.action` and **Tap OK**
 * **Tap Intent delivery** and select (or confirm) “Broadcast Intent” and **Tap OK**.
 
 Settings should appear as in the image below: 

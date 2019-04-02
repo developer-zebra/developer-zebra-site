@@ -28,15 +28,18 @@ This guide illustrates the feature using a real-world example. It explains how t
 ### Using DataWedge
 DataWedge settings are stored in Profiles, each of which contains parameters for acquiring data (input), processing the acquired data, and sending it to an app (output). This example solution walks through the process of configuring EB to use DataWedge and to receive the data it acquires, to create two DataWedge Profiles on the device and to switch from one to the other from an EB app. One Profile is configured for **Barcode input**, the other for **SimulScan input**, and both are set to **output as an Intent Broadcast**. 
 
-#### Enable DataWedge in EB App
+#### I. Enable DataWedge in EB
 
 &#49;. **Confirm (or configure) the following** `Config.xml` **file settings**:<br>  
 * **Set a value of "1" in** `<usedwforscanning>` tag.
 * **Set a value of "1" in** `<EnableReceiver>` tag.
-* **Set a value of** "`com.symbol.dw.action`" **in the** `<IntentAction>` tag.
+* **Set a value of** "`com.symbol.dw.action`" **in a** `<IntentAction>` tag.
+* **Set a value of** "`com.symbol.dwss.action`" **in another** `<IntentAction>` tag.
+* **Set a value of** "`com.symbol.datawedge.api.RESULT_ACTION`" **in another** `<IntentAction>` tag.
+* **Set a value of** "`android.intent.category.DEFAULT`" **in the** `<IntentCategory>` tag.
 * **Set a value of** "`file://%INSTALLDIR%/DataWedgeIntent.html`" in `<StartPage>` tag.
 
-The settings described above are shown in context of a `Config.xml` file below:
+The settings described above are shown in context of a `Config.xml` file below. Settings in the IntentReceiver section allow EB app to retrieve scanned data through a JavaScript callback.
 
 		:::xml
 		<Applications>
@@ -48,17 +51,23 @@ The settings described above are shown in context of a `Config.xml` file below:
 					...
         			<EnableReceiver  value="1"/>
         			<IntentAction  value="com.symbol.dw.action"/>
+        			<IntentAction  value="com.symbol.dwss.action"/>
+					<IntentAction  value="com.symbol.datawedge.api.RESULT_ACTION"/>
+       				<IntentCategory  value="android.intent.category.DEFAULT"/>
         			...
         		<General>
         			<Name value="Menu"/>
         			<StartPage value="file://%INSTALLDIR%/DataWedgeIntent.html" name="Menu"/> 
         	...
+ 
+
+#### II. Configure DataWedge
 
 &#50;. **In DataWedge** on the device, **select Profiles -> Profile0 (default)** and:
 * **Confirm that "Profile 0" is enabled**.
 * **Confirm that Barcode Input is enabled**.
 
-&#53;. **Scroll down to the Intent Output** section and set the following:<br>
+&#51;. **Scroll down to the Intent Output** section and set the following:<br>
 * **Confirm that Intent Output is Enabled**.
 * **Tap Intent action** and enter `com.symbol.dw.action` and **Tap OK**.
 * **Tap Intent delivery** and select (or confirm) “Broadcast Intent” and **Tap OK**.
@@ -67,33 +76,9 @@ Settings should appear as in the image below:
 <img alt="" style="height:350px" src="eb20_and_dw65.png"/>
 _Profile0 settings for using DataWedge from EB apps_.
 
------
+#### III. Deploy JavaScript
 
-## `MORE TO COME`
-
-<!-- 
-
-Enable the IntentReceiver tags in Config.xml as shown below. For more details, refer to Enterprise Browser - Intent Receiver documentation.
-
-Set "EnableReceiver" config tag to 1 in Config.xml.
-
-Set "IntentAction" value to "com.symbol.dw.action" in Config.xml to retrieve Barcode scanned data using DataWedge as JavaScript callback in Enterprise Browser.
-
-Set "IntentAction" value to "com.symbol.dwss.action" in Config.xml to retrieve simulscan captured data using DataWedge as JavaScript callback in Enterprise Browser.
-
-Set the "IntentAction" value to "com.symbol.datawedge.api.RESULT_ACTION” in Config.xml to receive DataWedge configuration value as JavaScript callback in Enterprise Browser.
-
-Set the “IntentCategory” value to “android.intent.category.DEFAULT” in Config.xml to receive DataWedge configuration value as JavaScript callback in Enterprise Browser. 
- 
-		<IntentReceiver>
-       		<EnableReceiver   value="1"/>
-        		<IntentAction  value="com.symbol.dw.action"/>
-			<IntentAction  value="com.symbol.dwss.action"/>
-			<IntentAction  value="com.symbol.datawedge.api.RESULT_ACTION"/>
-       		<IntentCategory  value="android.intent.category.DEFAULT"/>
-      	</IntentReceiver>
-
-Create a web page which has a logic to send DataWedge Intent-specific APIs using Enterprise Browser Intent API.  Shown in below example how the user can switch the DataWedge profile (Here, “barcode” is DataWedge profile Name).
+&#52;. Create or modify a web page to include JavaScript logic like the example below, which sends a [DataWedge intent](/techdocs.zebra.com/datawedge/latest/guide/api/) using the [EB Intent API](../../api/intent) to switch to the DataWedge “barcode” Profile:
 
 		var params = {
 			intentType: EB.Intent.BROADCAST,
@@ -102,20 +87,19 @@ Create a web page which has a logic to send DataWedge Intent-specific APIs using
 			data: {"com.symbol.datawedge.api.SWITCH_TO_PROFILE":"barcode"}
 		EB.Intent.send(params);
 
-Set “startPage” tag in config.xml to a webpage as shown below. For more details, refer to Enterprise Browser- startPage config parameter.
+`IMPORTANT:` The name of the file containing the JavaScript must match the file the specified in the `<StartPage>` tag referenced in Step 1. 
 
-	<General>
-              <Name value="Menu"/>
-              <StartPage value="file://%INSTALLDIR%/DataWedgeIntent.html" name="Menu"/>
-      </General>
-	
-Save and copy the updated config.xml file to the Enterprise Browser installed directory in the device after all the above-mentioned settings are applied.
+&#53;. Copy the modified `Config.xml` and `.HTML` files to the EB install directory on the device: 
+* `/Android/data/com.symbol.enterprisebrowser`
 
-Copy the html file to the respective directory given in “StartPage” config tag as shown in above example.
+&#54;. If not already present, also copy the `ebapi-modules.js` EB API module to the same location as the `.HTML` 
 
-Copy the ebapi-modules.js to the location where the “.html” file resides. It is used for accessing the Enterprise Browser JavaScript API's.
- -->
------
+[Download the sample file (.zip)](EB_SwitchDWProfile.zip)
+
+<img alt="" style="height:350px" src="eb-dw_sample.png"/>
+_Sample `.HTML` page easily switches between DataWedge Profiles_.
+
+##### The EB app can now send DataWedge intents. 
 
 
 <!--  WE'LL PROBABLY TAKE ALL THIS OUT: 

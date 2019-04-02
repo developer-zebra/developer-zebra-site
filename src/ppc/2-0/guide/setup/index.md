@@ -275,7 +275,7 @@ Tap **Server Auth Password**. Enter in the password specified during server inst
 **For PPC v1.0:** <br>
  Tap **Server URL**. Enter in the server URL, for example: `name.company.com:8080/zdvc/ppc`
 <br>
-Where "name.company.com:8080" is replaced with the appropriate domain name and port number. <br> _The URL must **not** contain "https://"._ <br><br>
+Where "name.company.com:8080" is replaced with the appropriate domain name and port number. _The URL must **not** contain "https://"._ <br><br>
 5. Tap **OK** to save the changes and return to the main screen.
 PPC Client registers with the server and uploads battery data.
 

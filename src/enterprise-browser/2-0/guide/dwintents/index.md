@@ -104,6 +104,7 @@ _Sample `.HTML` page easily switches between DataWedge Profiles_.
 `DataWedgeIntent.html` - Sample EB start page
 
 [Download the sample files (.zip)](EB_SwitchDWProfile.zip)
+[Importing a DataWedge Profile](/datawedge/latest/guide/settings/#importaprofile)
 
 ##### The EB app can now send DataWedge intents. 
 

@@ -33,10 +33,11 @@ Installing Enterprise Browser and building EB apps requires the following:
 _**Note: Microsoft Mobile Device Center** replaced ActiveSync starting with Windows Vista. It is usually included with the operating system, but sometimes must be downloaded separately. Installation of Enterprise Browser from Windows XP systems requires ActiveSync_.
 
 #### Removal From Devices
-When Enterprise Browser is uninstalled from an Android device using the Android Application Manager, EB and its related components will under most circumstances be removed properly. Known exceptions are listed below. 
+When Enterprise Browser is uninstalled from an Android device using the Android Application Manager, EB and its related components under most circumstances are removed properly. Known exceptions are listed below: 
 
 **Incomplete removal scenarios**:
 
+* **PS20J -** Enterprise Browser is pre-installed and **can only be upgraded/downgraded**; it cannot be removed. 
 * **TC55 Jelly Bean -** If Enterprise Browser is installed onto the device's internal memory, files will not be removed by the Uninstall function of App Manager. Installation onto an external SD Card works normally. 
 * **MC32 Jelly Bean -** If Enterprise Browser is installed onto the device's internal memory, files will not be removed by the Uninstall function of App Manager. Installation onto an external SD Card works normally. 
 

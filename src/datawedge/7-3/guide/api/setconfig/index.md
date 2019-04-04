@@ -25,7 +25,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
 * **DataWedge 7.2 -** Added new DotCode decoder support.
-* **DataWedge 7.3 -** Added new Decoder Signature support and new keystroke output parameters.
+* **DataWedge 7.3 -** Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
 
 ### Function Prototype
 
@@ -696,15 +696,27 @@ Error messages are logged for invalid actions and parameters
   </tr>
 
   <tr>
+	<td rowspan="2">decoder_grid_matrix</td>
+	<td rowspan="2">true<br>false (default)</td>
+	<td>decoder_grid_matrix_inverse</td>
+	<td>Disabled (0) - default<br>Enabled (1)<br>Auto (2)</td>
+  </tr>
+
+  <tr>
+	<td>decoder_grid_matrix_mirror</td>
+	<td>Disabled (0) - default<br>Enabled (1)<br>Auto (2)</td>
+	</tr>
+
+  <tr>
 	<td>decoder_gs1_datamatrix</td>
-	<td>N/A</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>
 
   <tr>
 	<td>decoder_gs1_qrcode</td>
-	<td>N/A</td>
+	<td>true<br>false</td>
 	<td>N/A</td>
 	<td>N/A</td>
   </tr>

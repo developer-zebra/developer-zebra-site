@@ -84,6 +84,8 @@ For more information about approved languages or to download a localized operati
 -----
 
 ## New in DataWedge 7.3
+* Added support for new **[Grid Matrix decoder](../input/barcode).**
+ * Set **[Grid Matrix decoder parameters](../api/setconfig/#scannerinputparameters)** with SetConfig API.
 * New **[Decoder Signature](../input/barcode/#decoderselection)** feature added to capture a special formatted area (e.g. signature) as an image. 
 * New **[Key Event Options](../output/keystroke)** added for Keystroke output.
  * **[Keystroke output parameters](../api/setconfig/#keystrokeoutputparameters)** can be toggled by using SetConfig API.

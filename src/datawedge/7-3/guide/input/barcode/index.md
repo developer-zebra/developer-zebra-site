@@ -212,54 +212,55 @@ cellspacing="0" cellpadding="4">
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">EAN-13<sup>*</sup></p></td>
+<td align="left" valign="top"><p class="table"><a href="#gridmatrix">Grid Matrix</a></p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar</p></td>
-<td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">GS1 DataBar Limited</p></td>
 <td align="left" valign="top"><p class="table">GS1 DataBar Expanded</p></td>
 <td align="left" valign="top"><p class="table"><a href="#gs1datamatrix">GS1 Datamatrix</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#gs1qrcode">GS1 QR Code</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#gs1qrcode">GS1 QR Code</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#hanxin">HAN XIN</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#interleaved2of5">Interleaved 2of5</a></p></td>
-<td align="left" valign="top"><p class="table">Japanese Postal</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">Japanese Postal</p></td>
 <td align="left" valign="top"><p class="table"><a href="#korean3of5">Korean 3of5</a></p></td>
 <td align="left" valign="top"><p class="table">MacroPDF<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">MAILMARK</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">MAILMARK</p></td>
 <td align="left" valign="top"><p class="table"><a href="#matrix2of5">Matrix 2of5</a></p></td>
 <td align="left" valign="top"><p class="table">Maxicode<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#micropdf">MicroPDF</a><sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#micropdf">MicroPDF</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">MicroQR</p></td>
 <td align="left" valign="top"><p class="table">MacroMicroPDF<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#msi">MSI</a></p></td>
 </tr>
+<td align="left" valign="top"><p class="table"><a href="#msi">MSI</a></p></td>
 <td align="left" valign="top"><p class="table">PDF417<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">QR Code<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">TLC 39<sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table"><a href="#uspostnet">USPostnet</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#trioptic39">Trioptic 39</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#usplanet">US Planet</a></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#usplanet">US Planet</a></p></td>
 <td align="left" valign="top"><p class="table">US Postal</p></td>
 <td align="left" valign="top"><p class="table">UPC-A<sup>*</sup></p></td>
-<td align="left" valign="top"><p class="table"><a href="#upce0">UPC-E0</a><sup>*</sup></p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table"><a href="#upce0">UPC-E0</a><sup>*</sup></p></td>
 <td align="left" valign="top"><p class="table">US4state FICS</p></td>
 <td align="left" valign="top"><p class="table"><a href="#upce1">UPC E1</a></p></td>
-<td align="left" valign="top"><p class="table">US4state</p></td>
 </tr>
 <tr>
+<td align="left" valign="top"><p class="table">US4state</p></td>
 <td align="left" valign="top"><p class="table"></p></td>
 </tr>
 </tbody>
@@ -553,6 +554,20 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 ------
 
+### Grid Matrix
+
+**Inverse -** To specify the reflectance for decoding Grid Matrix barcodes, set the option:
+* **Disabled (0) -** To decode Grid Matrix barcodes with normal reflectance only (default).
+* **Enabled (1) -** To decode Grid Matrix barcodes with inverse reflectance only.
+* **Auto (2) -** To decode both normal and inverse reflectance Grid Matrix barcodes.
+
+**Mirror -** To specify whether mirrored Grid Matrix barcodes are decoded, set an option:
+* **Disabled (0) -** To decode non-mirrored Grid Matrix barcodes only (default). 
+* **Enabled (1) -** To decode mirrored Grid Matrix barcodes only.
+* **Auto (2) -** To decode both mirrored and non-mirrored Grid Matrix barcodes.
+
+------
+
 ### GS1 Datamatrix
 
 The following table depicts the decode behavior between Datamatrix and GS1 Datamatrix:
@@ -571,32 +586,32 @@ The following table depicts the decode behavior between Datamatrix and GS1 Datam
     <td><b>Type</b></td>
   </tr>
   <tr align="center">
-    <td>●</td>
-    <td>●</td>
+    <td>Enabled</td>
+    <td>Enabled</td>
     <td>Yes</td>
     <td>LABEL-TYPE-DATAMATRIX</td>
     <td>Yes</td>
     <td>LABEL-TYPE-GS1-DATAMATRIX</td>
   </tr>
   <tr bgcolor="#cce6ff" align="center">
-    <td>●</td>
-    <td>o</td>
+    <td>Enabled</td>
+    <td>Disabled</td>
     <td>Yes</td>
     <td>LABEL-TYPE-DATAMATRIX</td>
     <td>Yes</td>
     <td>LABEL-TYPE-DATAMATRIX</td>
   </tr>
   <tr align="center">
-    <td>o</td>
-    <td>●</td>
+    <td>Disabled</td>
+    <td>Enabled</td>
     <td>No</td>
     <td>[none]</td>
     <td>Yes</td>
     <td>LABEL-TYPE-GS1-DATAMATRIX</td>
   </tr>
   <tr align="center">
-    <td>o</td>
-    <td>o</td>
+    <td>Disabled</td>
+    <td>Disabled</td>
     <td>No</td>
     <td>[none]</td>
     <td>No</td>
@@ -605,8 +620,8 @@ The following table depicts the decode behavior between Datamatrix and GS1 Datam
 </table>
 
 Notes: 
-* "●" indicates enabled.  "o" indicates disabled.
 * The blue shaded row indicates a successful decode for label types reported as Datamatrix although GS1 Datamatrix is disabled.
+<!-- * "●" indicates enabled.  "o" indicates disabled. -->
 
 ------
 ### GS1 QR Code
@@ -627,32 +642,32 @@ The following table depicts the decode behavior between QR Code and GS1 QR Code:
     <td><b>Type</b></td>
   </tr>
   <tr align="center">
-    <td>●</td>
-    <td>●</td>
+    <td>Enabled</td>
+    <td>Enabled</td>
     <td>Yes</td>
     <td>LABEL-TYPE-QRCODE</td>
     <td>Yes</td>
     <td>LABEL-TYPE-GS1-QRCODE</td>
   </tr>
   <tr bgcolor="#cce6ff" align="center">
-    <td>●</td>
-    <td>o</td>
+    <td>Enabled</td>
+    <td>Disabled</td>
     <td>Yes</td>
     <td>LABEL-TYPE-QRCODE</td>
     <td>Yes</td>
     <td>LABEL-TYPE-QRCODE</td>
   </tr>
   <tr align="center">
-    <td>o</td>
-    <td>●</td>
+    <td>Disabled</td>
+    <td>Enabled</td>
     <td>No</td>
     <td>[none]</td>
     <td>Yes</td>
     <td>LABEL-TYPE-GS1-QRCODE</td>
   </tr>
   <tr align="center">
-    <td>o</td>
-    <td>o</td>
+    <td>Disabled</td>
+    <td>Disabled</td>
     <td>No</td>
     <td>[none]</td>
     <td>No</td>
@@ -661,7 +676,6 @@ The following table depicts the decode behavior between QR Code and GS1 QR Code:
 </table>
 
 Notes: 
-* "●" indicates enabled.  "o" indicates disabled.
 * The blue shaded row indicates a successful decode for label types reported as QR Code although GS1 QR Code is disabled.
 
 ------

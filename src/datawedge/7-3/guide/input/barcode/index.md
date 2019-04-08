@@ -773,7 +773,7 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 ### Decoder Signature
 
-Decoder Signature is a special pattern that encloses an area in a document (such as a signature) and allows that specific area to be captured as an image. The pattern is placed on either side of the area to capture and extends the full height of that area, for example:
+Decoder Signature is a special barcode format that allows to capture an area of a document (such as a signature) as an image. It is marked by two identical bar patterns placed on either side of the capture area. The bar pattern extends the full height of that area, for example:
 
 <img src="DecoderSignature-sample.jpg"/>
 <br>
@@ -796,7 +796,7 @@ Note: **Handling large image data -** Since the data size of a single image (whi
 
 * It is expected that the user application copy the image files from the given URI (Uniform Resource Identifier) as soon as possible since DataWedge only keeps a maximum of 2 sets of decoded images before deleting them to create new images in the internal memory.
 
-* Refer to the Signature Decoder sample application for a code sample of handling image data from an Android client app.
+* Refer to the [Signature Capture](../../samples/signaturecapture) sample application for a code sample on handling image data from an Android client app.
 
 ------
 

@@ -22,13 +22,13 @@ date: 2018-11-06
 ---
 
 ##Overview 
-Decoder Signature is a special pattern that encloses an area in a document (such as a signature) and allows that specific area to be captured as an image. The pattern is placed on either side of the area to capture and extends the full height of that area, for example:
+Decoder Signature is a special barcode format that allows to capture an area of a document (such as a signature) as an image. It is marked by two identical bar patterns placed on either side of the capture area. The bar pattern extends the full height of that area, for example
 
 <img src="DecoderSignature-sample.jpg"/>
 <br>
 >_This application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs._
 
-This sample app demonstrates how to use Decoder Signature to capture data using [DataWedge Intent APIs](../../api) and save the captured data as an image. Images in .TIFF format are not supported with this app. Permission is required for writing to device storage, which is prompted upon application launch.
+Decoder Signature was introduced to DataWedge in version 7.3. This sample app demonstrates how to use Decoder Signature to capture data using [DataWedge Intent APIs](../../api) and save the captured data as an image. The app captures images in .JPG and .BMP format. Permission is required for writing to device storage, which is prompted upon application launch.
 
 Available actions in this sample: 
 * Create a DatatWedge profile if it does not exist, configure it with specific parameters, and associate it with this app.
@@ -52,15 +52,14 @@ Available actions in this sample:
 </table>
 
 ##Requirements
-* This sample was created based on DataWedge version 7.3 (version that existed at the time of creation). Check [DataWedge API](http://techdocs.zebra.com/datawedge/latest/guide/about/) documentation for any future version changes that may affect functionality.
+* DataWedge version 7.3 or higher. 
 * Android API 24 (Nougat) or higher.
-* DataWedge (built-in all Zebra devices) is running on the device.
 
 ##Using This Sample
 1. [Download](https://github.com/Zebra/samples-datawedge), build, and launch the sample app.
 <img style="height:350px" src="signaturecapture1.png"/>
 2. Tap **Allow** in the popup message to grant permission for the app to access files on the device.
-3. Tap **Set Config**. A messge appears indicating the profile is created and the parameters are updated. The profile, “SignatureCapture”, performs the following:
+3. Tap **Set Config**. A messge appears indicating the profile is created and the parameters are updated. The “SignatureCapture” profile performs the following:
    * Enable "Barcode input" plugin and enable "Decoder Signature" decoder.
    * Set the Height and Width paramters for "Decoder Signature" to the default values.
    * Associate the profile to the sample app.

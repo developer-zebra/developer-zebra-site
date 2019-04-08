@@ -192,43 +192,38 @@ The following must be declared in the application MAKE file to use the EMDK SDK 
     LOCAL_JAVA_LIBRARIES := com.symbol.emdk
     LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libemdk:com.symbol.emdk/com.symbol.emdk.jar
 
-
-
-
-
-
-
 ##  EMDK as a dependency in build.gradle
 Use this method to make use of the EMDK in a project with a Compile SDK set above API 19.
 
-
-
 1. In the project folder viewer, open the **build.gradle** file for the **app** module.
-2. Add the following to the dependencies section. Be sure to update the `dir:` path to the path where com.symbol.emdk.jar exists on your development system.
+2. Add the lines below to the dependencies section. Be sure to update the `dir:` path to indicate the location of the `com.symbol.emdk.jar` file on the development host system.
 
     **Windows**
 
-		:::
-		dependencies {
-		provided fileTree(include: ['com.symbol.emdk.jar'], dir: 'C:\\Users\\<YOUR USER NAME>\\AppData\\Local\\Android\\sdk\\add-ons\\addon-symbol_emdk-symbol-19\\libs')
-		compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
+        dependencies {
 
-    **Mac**
+        provided fileTree(include: ['com.symbol.emdk.jar'], dir: 'C:
+        Users
+        <YOUR USER NAME>\\AppData\\Local\\Android\\sdk
+        add-ons
+        addon-symbol_emdk-symbol-19
+        libs')
 
-		:::
-		dependencies {
-		provided fileTree(include: ['com.symbol.emdk.jar'], dir: '/Users/<YOUR USERNAME>/Library/Android/sdk/add-ons/addon-symbol_emdk-symbol-19/libs')
-		compile fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
+        compileOnly fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
 
+        }
+    **Mac OS X**
 
-3. Now rebuild your project by selecting **Make Project** from the **Build** menu.
+        dependencies {
 
+        provided fileTree(include: ['com.symbol.emdk.jar'], dir: 'C:
+        Users
+        <YOUR USER NAME>\\AppData\\Local\\Android\\sdk
+        add-ons
+        addon-symbol_emdk-symbol-19
+        libs')
 
+        compileOnly fileTree(exclude: ['com.symbol.emdk.jar'], dir: 'libs')
 
-
-
-
-
-
-
-
+        }
+3. Rebuild the project by selecting **Make Project** from the **Build** menu.

@@ -8,7 +8,7 @@ order: 0
 
 The TouchMgr adjusts touch-screen sensitivity for different usage scenarios on devices that support sensitivity settings. Touch panel settings can compensate for input with a finger or stylus, when working with gloves or when a screen protector is present. 
 
-* **TouchMgr is supported only on the following devices**:
+* **TouchMgr is supported on the following devices**:
 	* **ET50**
 	* **ET51**
 	* **ET55**

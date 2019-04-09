@@ -7,7 +7,7 @@ mx: "6.2"
 osx: "6.2"
 devicetype: A
 parm:
-  presentif: Device Type is set to any target platform or group and the target action is NOT "Do not change"
+  presentif: Device Type is set to any target platform or group and the target Action is NOT "Do not change"
   pivotal: no
   name: Protector
   type: list

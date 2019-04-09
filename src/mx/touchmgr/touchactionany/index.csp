@@ -39,6 +39,6 @@ parm:
       description: Adjusts touch-screen sensitivity for input with a stylus, or bare or gloved finger.
 ---
 
-Used to apply Touch-Mode settings to any supported device in accordance with the touch-screen sensitivity required for an expected usage scenario. 
+Used to apply Touch-Mode settings on any supported device in accordance with the touch-screen sensitivity required for an expected usage scenario. 
 
 **IMPORTANT**: Use this parameter only when no device-specific parameter exists for a target device <u>_**AND ONLY**_ when it is known that touch-screen sensitivity settings are supported on that device</u>. Applying this parameter to a device that does not support touch-screen sensitivity settings results in unpredictable behavior, causes an error or produces no output in the Result XML to indicate failure. 

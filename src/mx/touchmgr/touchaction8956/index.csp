@@ -1,8 +1,8 @@
 ---
 csp: touchmgr
-title: Touch Actions for 8956 Series
+title: Touch Actions - 8956 Series
 type: parm
-order: 7
+order: 20
 mx: "9.1"
 devicetype: A
 parm:

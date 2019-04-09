@@ -1,8 +1,8 @@
 ---
 csp: touchmgr
-title: Touch Actions for TC8000 Series
+title: Touch Actions - TC8000 Series
 type: parm
-order: 17
+order: 16
 mx: "9.1"
 devicetype: A
 parm:

@@ -1,8 +1,8 @@
 ---
 csp: touchmgr
-title: Touch Actions for SDM660 Series
+title: Touch Actions - SDM660 Series
 type: parm
-order: 11
+order: 14
 mx: "9.1"
 devicetype: A
 info: This feature is not supported on the TC8000. Changes to Touch Mode on the TC8000 are supported only manually through the Settings panel on the device. 

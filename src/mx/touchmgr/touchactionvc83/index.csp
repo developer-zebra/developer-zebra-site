@@ -1,8 +1,8 @@
 ---
 csp: touchmgr
-title: Touch Actions for VC Series
+title: Touch Actions - VC Series
 type: parm
-order: 14
+order: 18
 mx: "9.1"
 devicetype: A
 parm:

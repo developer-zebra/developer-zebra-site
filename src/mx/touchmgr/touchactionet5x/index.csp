@@ -1,8 +1,8 @@
 ---
 csp: touchmgr
-title: Touch Actions for ET50, ET55
+title: Touch Actions - ET50, ET55
 type: parm
-order: 4
+order: 9
 mx: "6.3"
 devicetype: A
 parm:

@@ -19,7 +19,12 @@ parm:
       devicetype: A
       name: 8960
       mx: "6.2"
-      description: Applies settings for TC55, TC70, or TC75 devices.
+      description: Applies settings for MC33, MC3300x devices.
+    - code: 2
+      devicetype: A
+      name: 8000
+      mx: "9.1"
+      description: Applies settings for TC8000 or TC8300 devices.
     - code: 3
       devicetype: A
       name: 8956
@@ -30,14 +35,21 @@ parm:
       name: ET5x
       mx: "6.3"
       description: Applies settings for ET50 and ET55 devices.
+    - code: 5
+      devicetype: A
+      name: SDM660
+      mx: "9.1"
+      description: Applies settings for ET51, ET56, L10, MC93, TC52, TC57, TC72 or TC77 devices.
+    - code: 6
+      devicetype: A
+      name: VC83
+      mx: "9.1"
+      description: Applies settings for VC83 devices.
+    - code: 7
+      devicetype: A
+      name: EC30
+      mx: "9.1"
+      description: Applies settings for EC30 devices.
 ---
 
 Used to specify the set of Zebra devices on which to apply settings for touch-screen sensitivity.
-
-<!--
-    - code: 2
-      devicetype: A
-      name: 8000
-      mx: "6.2"
-      description: Applies settings for the TC8000 device only.
--->

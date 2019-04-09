@@ -15,7 +15,7 @@ parm:
       mx: "6.3"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to the Touch Mode on a TC8000; any previously selected setting will be retained. 
+      description: This value (or the absence of this parm from the XML) will cause no change to the Touch Mode on a TC8000; any previously selected setting is retained. 
     - code: 7
       devicetype: A
       name: Finger Only 
@@ -33,4 +33,4 @@ parm:
       description: Adjusts touch-screen sensitivity for input with a stylus, or bare or gloved finger.
 ---
 
-Used to specify the Touch Mode for a specific set of devices in accordance with the touch-screen sensitivity required for an expected usage scenario. This parameter is designed for use with the Zebra ET50 and ET55 devices. 
+Used to specify the Touch Mode for a specific set of devices in accordance with the touch-screen sensitivity required for an expected usage scenario. **This parameter is designed for use with Zebra ET50 and ET55 devices**. 

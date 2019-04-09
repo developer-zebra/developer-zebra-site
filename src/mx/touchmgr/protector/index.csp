@@ -2,12 +2,12 @@
 csp: touchmgr
 title: Screen Protector (checkbox)
 type: parm
-order: 10
+order: 30
 mx: "6.2"
 osx: "6.2"
 devicetype: A
-info: Compatible with TC51, TC56, TC70x and TC75x devices only.
 parm:
+  presentif: Device Type is set to any target platform or group and the target action is NOT "Do not change"
   pivotal: no
   name: Protector
   type: list
@@ -26,4 +26,4 @@ parm:
       description: Screen protector is present; sensitivity is adjusted (on devices that support it) to compensate. 
 ---
 
-Controls whether screen sensitivity is adjusted to compensate for the presence of a screen protector. **Compatible with TC51, TC56, TC70x and TC75x devices only**. 
+Controls whether screen sensitivity is adjusted to compensate for the presence of a screen protector. 

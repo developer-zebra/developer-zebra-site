@@ -28,13 +28,13 @@ Decoder Signature is a special barcode format that allows to capture an area of 
 <br>
 >_This application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs._
 
-Decoder Signature was introduced to DataWedge in version 7.3. This sample app demonstrates how to use Decoder Signature to capture data using [DataWedge Intent APIs](../../api) and save the captured data as an image. The app captures images in .JPG and .BMP format. Permission is required for writing to device storage, which is prompted upon application launch.
+Decoder Signature was introduced to DataWedge in version 7.3. This sample app demonstrates how to use Decoder Signature to capture data using [DataWedge Intent APIs](../../api) and save the captured data as an image. Permission is required for writing to device storage, which is prompted upon application launch. The app captures images in .JPG (default) and .BMP format. 
 
 Available actions in this sample: 
 * Create a DatatWedge profile if it does not exist, configure it with specific parameters, and associate it with this app.
 * Adjust the height and width of the image output.
-* Scan and display the captured data. 
-* Save the captured data as an image file.
+* Scan and display the captured data as an image. 
+* Save the image file to the device.
 
 ##APIs Used
 

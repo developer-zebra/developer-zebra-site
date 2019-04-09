@@ -42,7 +42,7 @@ _Keystroke Output options_
 * **Send Characters as Events -** set to send ASCII code 32 to 126 as key events
 * **Send Enter as string -** set to send ENTER key stroke output as a string. By default, this is disabled and ENTER is sent as a key event.
 * **Send Tab as string -** set to send TAB key stroke output as a string. By default, this is disabled and TAB is sent as a key event.
-* **Send Control Characters as Events -** set to send ASCII code 1 to 31 as key events. By default, this is disabled and the data is sent as a string.
+* **Send Control Characters as Events -** set to send ASCII code 1 to 31 as key events. By default, this is disabled and the data is sent as a string. Refer to [ASCII Control Character Table](./#asciicontrolcharactertable) for a mapping of ASCII Control Characters to Android KeyEvents.
 
 **Inter-character delay –** used to set a delay (in ms) following the delivery of each character to the application. This parameter is intended to help avoid issues that arise when data is dispatched too quickly for an application to accept. **Default=0**. If experiencing errors in keystroke delivery, increase this value in increments of 100 (to a max. of 1000) until errors cease. **Note: This parameter can negatively effect application performance**. 
 
@@ -163,9 +163,9 @@ The Java command below returns the hex data stored in the keystroke or intent ou
 
 ------
 
-### ASCII Control Character Map
+### ASCII Control Character Table
 
-Mapping of ASCII Control Characters (Range: 1-31) to Android KeyEvents:
+Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
 
 <table class="facelift" style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
@@ -325,7 +325,7 @@ Mapping of ASCII Control Characters (Range: 1-31) to Android KeyEvents:
 	 <td>19</td>
 	 <td>Device control 3</td>
 	 <td>Primarily intended for turning off or stopping an ancillary device.</td>
-	 <td>KeyEvent { action=<b>ACTION_DOWN,<b> keyCode=KEYCODE_S, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,<b> keyCode=KEYCODE_S, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
+	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_S, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_S, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
   <tr>

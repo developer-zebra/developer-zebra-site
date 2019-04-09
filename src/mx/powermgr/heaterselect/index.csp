@@ -30,6 +30,16 @@ parm:
       name: Touch Panel
       mx: "7.1"
       description: Selects the touch-panel heater.  
+    - code: 5
+      devicetype: A
+      name: Keyboard
+      mx: "9.1"
+      description: Selects the keyboard heater.  
+    - code: 6
+      devicetype: A
+      name: Scanner Window
+      mx: "9.1"
+      description: Selects the scanner-window heater.  
 ---
 
 Used to specify the device heater upon which to perform an action using the Heater Action parameter. Device heaters are used to compensate for external temperatures and humidity levels, to help maintain proper device operation, prevent screen and/or internal frost or condensation, and to keep the device battery at optimal temperature. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**. 

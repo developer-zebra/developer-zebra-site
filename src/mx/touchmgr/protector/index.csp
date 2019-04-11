@@ -7,7 +7,7 @@ mx: "6.2"
 osx: "6.2"
 devicetype: A
 parm:
-  presentif: The selected Device Type supports a Screen Protector AND the Touch Action is NOT "Do not change"
+  presentif: The selected Device Type supports a Screen Protector AND the Touch Action supports Protector mode
   pivotal: no
   name: Protector
   type: list

@@ -274,3 +274,20 @@ order: 99
         </characteristic>
     </wap-provisioningdoc>
 
+### Hide passwords
+
+    <wap-provisioningdoc>
+        <characteristic version="9.1" type="UiMgr">
+            <parm name="ShowPasswords" value="2" />
+        </characteristic>
+    </wap-provisioningdoc>
+
+### Show passwords
+
+    <wap-provisioningdoc>
+        <characteristic version="9.1" type="UiMgr">
+            <parm name="ShowPasswords" value="1" />
+        </characteristic>
+    </wap-provisioningdoc>
+
+

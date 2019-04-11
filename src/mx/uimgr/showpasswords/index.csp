@@ -1,0 +1,35 @@
+---
+csp: uimgr
+title: Password Characters Show/Hide
+type: parm
+order: 30
+mx: "9.1"
+apilevel: "26"
+devicetype: A,B
+parm:
+  pivotal: No
+  name: ShowPasswords
+  type: list
+  list:
+    - code: 0
+      mx: "9.1"
+      apilevel: "26"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change on the device; any previously selected setting is retained.
+    - code: 1
+      devicetype: A,B
+      name: Turn On 
+      mx: "9.1"
+      apilevel: "26"
+      description: Allows each password character to be displayed briefly as it is typed.
+    - code: 2
+      devicetype: A,B
+      name: Turn Off
+      mx: "9.1"
+      apilevel: "26"
+      description: Prevents passwords from being displayed.
+---
+
+Controls whether each password character is displayed briefly on the screen as it is entered; otherwise masked at all times. This parameter controls the "Security & Location" function of the Settings panel. 
+

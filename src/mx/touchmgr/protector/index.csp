@@ -26,4 +26,4 @@ parm:
       description: Screen protector is present; sensitivity is adjusted (on devices that support it) to compensate. 
 ---
 
-Controls whether screen sensitivity is adjusted to compensate for the presence of a screen protector. **Checkbox is displayed <u>only if Screen Protector is supported</u> on the selected Device Type**. 
+Controls whether screen sensitivity is adjusted to compensate for the presence of a screen protector. **Checkbox is displayed <u>only if Screen Protector is supported</u> on the selected Device Type and by the selected Touch Action**. 

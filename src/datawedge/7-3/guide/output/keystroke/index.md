@@ -169,8 +169,8 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
 
 <table class="facelift" style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
-    <th>Keys</th>
-    <th>Dec</th>
+    <th>Control Keys</th>
+    <th>Decimal</th>
     <th>Control Character Name</th>
     <th>Description</th>
 	<th>Key Events</th>
@@ -245,7 +245,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
 	 <td>9</td>
 	 <td>Horizontal tabulation</td>
 	 <td>Advances the active position to the next pre-determined character position on the same line</td>
-	 <td>Managed by Send Tab as String/Event</td>
+	 <td>Managed by Send Tab as String/Event due to Android defined constant for Tab key</td>
   </tr>
 
   <tr>
@@ -253,7 +253,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
 	 <td>10</td>
 	 <td>Line feed</td>
 	 <td>Advances the active position to the same character position of the next line</td>
-	 <td>Managed by Send Tab as String/Event</td>
+	 <td>Managed by Send Enter as String/Event due to Android defined constant for Enter key</td>
   </tr>
 
   <tr>
@@ -276,15 +276,15 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
   	 <td>Ctrl-M</td>
 	 <td>13</td>
 	 <td>Carriage return</td>
-	 <td>Moves the active position to the first character position on the same line.</td>
-	 <td>Managed by Send Tab as String/Event</td>
+	 <td>Moves the active position to the first character position on the same line</td>
+	 <td>Managed by Send Enter as String/Event due to Android defined constant for Enter key</td>
   </tr>
 
   <tr>
   	 <td>Ctrl-N</td>
 	 <td>14</td>
 	 <td>Shift out</td>
-	 <td>Used in conjunction with SHIFT IN and ESCAPE to extend the graphic character set of the code.</td>
+	 <td>Used in conjunction with SHIFT IN and ESCAPE to extend the graphic character set of the code</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_N, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_N, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
@@ -292,7 +292,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
   	 <td>Ctrl-O</td>
 	 <td>15</td>
 	 <td>Shift in</td>
-	 <td>Used in conjunction with SHIFT OUT and ESCAPE to extend the graphic character set of the code.</td>
+	 <td>Used in conjunction with SHIFT OUT and ESCAPE to extend the graphic character set of the code</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_O, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_O, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
@@ -308,7 +308,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
   	 <td>Ctrl-Q</td>
 	 <td>17</td>
 	 <td>Device control 1</td>
-	 <td>Primarily intended for turning on or starting an ancillary device.</td>
+	 <td>Primarily intended for turning on or starting an ancillary device</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_Q, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_Q, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
@@ -316,7 +316,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
   	 <td>Ctrl-R</td>
 	 <td>18</td>
 	 <td>Device control 2</td>
-	 <td>Primarily intended for turning on or starting an ancillary device.</td>
+	 <td>Primarily intended for turning on or starting an ancillary device</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_R, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_R, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
@@ -324,7 +324,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
   	 <td>Ctrl-S</td>
 	 <td>19</td>
 	 <td>Device control 3</td>
-	 <td>Primarily intended for turning off or stopping an ancillary device.</td>
+	 <td>Primarily intended for turning off or stopping an ancillary device</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_S, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_S, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
@@ -332,7 +332,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
   	 <td>Ctrl-T</td>
 	 <td>20</td>
 	 <td>Device control 4</td>
-	 <td>Primarily intended for turning off, stopping or interrupting an ancillary device.</td>
+	 <td>Primarily intended for turning off, stopping or interrupting an ancillary device</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_T, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_T, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
@@ -340,7 +340,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
   	 <td>Ctrl-U</td>
 	 <td>21</td>
 	 <td>Negative acknowledge</td>
-	 <td>Transmitted by a receiver as a negative response to the sender.</td>
+	 <td>Transmitted by a receiver as a negative response to the sender</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_U, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_U, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
@@ -348,7 +348,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
   	 <td>Ctrl-V</td>
 	 <td>22</td>
 	 <td>Synchronous idle</td>
-	 <td>Used by a synchronous transmission system in the absence of any other character (idle condition) to provide a signal from which synchronism may be achieved or retained between data terminal equipment.</td>
+	 <td>Used by a synchronous transmission system in the absence of any other character (idle condition) to provide a signal from which synchronism may be achieved or retained between data terminal equipment</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_V, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_V, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
@@ -356,7 +356,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
   	 <td>Ctrl-W</td>
 	 <td>23</td>
 	 <td>End of trnsmission block</td>
-	 <td>Indicates the end of a transmission block of data where data is divided into such blocks for transmission purposes.</td>
+	 <td>Indicates the end of a transmission block of data where data is divided into such blocks for transmission purposes</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_W, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_W, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
@@ -364,7 +364,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
   	 <td>Ctrl-X</td>
 	 <td>24</td>
 	 <td>Cancel</td>
-	 <td>Indicates that the data preceding it is in error and thus is to be ignored.</td>
+	 <td>Indicates that the data preceding it is in error and thus is to be ignored</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_X, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_X, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
@@ -372,7 +372,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
      <td>Ctrl-Y</td>
 	 <td>25</td>
 	 <td>End of medium</td>
-	 <td>Identifies the physical end of a medium.</td>
+	 <td>Identifies the physical end of a medium</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_Y, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_Y, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
@@ -388,7 +388,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
      <td>Ctrl-[</td>
 	 <td>27</td>
 	 <td>Escape</td>
-	 <td>Use to provide additional control functions.</td>
+	 <td>Use to provide additional control functions</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_LEFT_BRACKET, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_LEFT_BRACKET, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 
@@ -396,7 +396,7 @@ Table mapping of ASCII Control Characters (range: 1-31) to Android KeyEvents:
      <td>Ctrl-\</td>
 	 <td>28</td>
 	 <td>File separator</td>
-	 <td>Use to separate and qualify data logically.</td>
+	 <td>Use to separate and qualify data logically</td>
 	 <td>KeyEvent { action=<b>ACTION_DOWN,</b> keyCode=KEYCODE_BACKSLASH, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }<br><br>KeyEvent { action=<b>ACTION_UP,</b> keyCode=KEYCODE_BACKSLASH, scanCode=0, metaState=META_CTRL_LEFT_ON, flags=<>, repeatCount=0, eventTime=<>, downTime=<>, deviceId=<>, source=0x0 }</td>
   </tr>
 

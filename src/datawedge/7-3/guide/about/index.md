@@ -91,6 +91,7 @@ For more information about approved languages or to download a localized operati
 * New **[Key Event Options](../output/keystroke)** added for Keystroke output.
  * **[Keystroke output parameters](../api/setconfig/#keystrokeoutputparameters)** can be toggled by using SetConfig API.
 * **[Rear camera support](../input/barcode)** added for Digimarc decoding.
+* **[DS8178 Bluetooth Scanner](../input/barcode)** now supported.
 
 -----
 ## Recent Version History

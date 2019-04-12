@@ -1,7 +1,7 @@
 ---
-title: Device Diagnostic Tool Settings
+title: Diagnostic Tool Settings
 layout: guide.html
-product: Device Diagnostic Tool
+product: Diagnostic Tool
 productversion: '1.1'
 ---
 

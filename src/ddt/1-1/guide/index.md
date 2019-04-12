@@ -13,7 +13,7 @@ content-items:
     title: Customize
     text: How to configure RxLogger to suit the needs of any business application 
     url: /ddt/1-1/guide/settings
-product: Device Diagnostic Tool
+product: Diagnostic Tool
 productversion: '1.1'
 ---
 

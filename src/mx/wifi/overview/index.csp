@@ -31,6 +31,7 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 	* Advanced Logging
 	* AggregatedFT
 	* Auto RF Band selection
+	* Automatic Wi-Fi wake-up
 	* Call admission control
 	* Cisco Centralized Key Management (CCKM)
 	* Coverage Hole Detection
@@ -71,5 +72,6 @@ Wi-Fi Manager (Wi-Fi) administers the wireless LAN settings and network profiles
 * Remove all existing Wi-Fi networks
 * Encrypt Passwords in transit
 * Encrypt Passwords stored on the device 
+* Enforce/eliminate password requirement on PEAP GTC networks
 
-
+-----

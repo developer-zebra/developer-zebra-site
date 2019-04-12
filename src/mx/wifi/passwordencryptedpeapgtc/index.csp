@@ -1,0 +1,19 @@
+---
+csp: wifi
+title: PEAP-GTC Clear Password 
+type: parm
+order: 8
+mx: "9.1"
+devicetype: A
+parm:
+  presentif: The selected Authentication Code is "PEAP GTC" and Protect Password box is "Unchecked"
+  pivotal: No
+  name: PasswordEncryptedPEAPGTC
+  type: string
+---
+
+Used to specify an unencrypted password for PEAP GTC Authentication or left blank if no password is required. This parameter supports Static and Dynamic PEAP-GTC Profiles. Static profiles require a pre-defined password specified when configuring the network. Dynamic profiles do not require a pre-defined password to be specified when configured; the password field can be left blank, thereby allowing the user to log in with no password when prompted. 
+
+**Parm value input rules**: 
+
+* String from 0&ndash;64 characters containing a set of valid characters

@@ -1,6 +1,6 @@
 ---
 csp: wifi
-title: PEAP-GTC Clear Password 
+title: PEAP-GTC Password Clear
 type: parm
 order: 8
 mx: "9.1"

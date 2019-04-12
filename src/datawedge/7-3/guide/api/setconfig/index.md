@@ -1028,11 +1028,11 @@ Other Scanner Input Parameters:
 
   <tr>
 	<td>aim_type</td>
-	<td>0 - Trigger<br>1 - Timed Hold<br>2 - Timed Release<br>3 - Press And Release<br>4 - Presentation   &#42;<b><i>For future use only</i></b>&#42;<br>5 - Continuous Read<br>6 - Press and Sustain</td>
+	<td>0 - Trigger<br>1 - Timed Hold<br>2 - Timed Release<br>3 - Press And Release<br>4 - Presentation<br>5 - Continuous Read<br>6 - Press and Sustain</td>
   </tr>
 
   <tr>
-	<td>scene_detect_qualifier <br>&#42;<b><i>For future use only</i></b>&#42;</td>
+	<td>scene_detect_qualifier</td>
 	<td>0 - None<br>1 - Proximity Sensor Input</td>
   </tr>
 
@@ -2747,7 +2747,7 @@ Support started with DataWedge 7.1.  Previous DataWedge versions required multip
 	bParams.putString("configure_all_scanners", "true"); // configure for all scanners
 	bConfig.putBundle("PARAM_LIST", bParams);
 
-###Set presentation mode - <i>For future use only</i>
+###Set presentation mode 
 
 	// MAIN BUNDLE PROPERTIES
 	Bundle bMain = new Bundle();

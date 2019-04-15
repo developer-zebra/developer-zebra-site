@@ -16,6 +16,9 @@ Worry Free Wi-Fi Manager (WorryFreeWifiMgr) controls Zebra Wi-Fi analysis and di
  * Ping data 
  * User access to on-device client UI and password change
  * Call admission control
+ * Server analytics coverage
+ * Session name coverage
+ * Auto-reachability testing 
 * **Selection of**:
  * Voice or roaming data analysis 
  * Background or foreground analysis
@@ -24,6 +27,10 @@ Worry Free Wi-Fi Manager (WorryFreeWifiMgr) controls Zebra Wi-Fi analysis and di
  * Logging of only errors, warnings and errors, or all events
  * Maximum size of capture file and device storage
  * Packet capture file name
-* Set password for access to client UI, settings and data
+ * Analysis type
+ * Packet capture type
+ * Scan interval
+ * Coverage SSID
+* Specify old and new passwords for access to client UI, settings and data
 
 -----

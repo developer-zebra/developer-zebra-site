@@ -1,0 +1,31 @@
+---
+csp: worryfreewifimgr
+title: SD Card Storage Coverage Enable/Disable 
+type: parm
+order: 62
+mx: "9.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Coverage Action is "Start" and Scan Feature Type is NOT "Do not change" 
+  name: SDcardStorageCoverage
+  type: list
+  list:
+    - code: 2
+      mx: "9.1"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 1
+      mx: "9.1"
+      devicetype: A
+      name: Enable Server Analytics
+      description: Enables SD card storage coverage tests on the device. 
+    - code: 0
+      mx: "9.1"
+      devicetype: A
+      name: Disable Server Analytics
+      description: Disables SD card stotage analytics coverage tests on the device. 
+---
+
+Controls whether SD card storage coverage analytics tests are performed for the analysis session on the device. 

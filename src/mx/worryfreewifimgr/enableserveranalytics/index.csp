@@ -24,7 +24,7 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Disable Server Analytics
-      description: Enables server analytics on the device. 
+      description: Disables server analytics on the device. 
 ---
 
 Controls whether server analytics are performed for the analysis session on the device. 

@@ -1,0 +1,31 @@
+---
+csp: worryfreewifimgr
+title: Scan Feature Type
+type: parm
+order: 2
+mx: "9.1
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Use Coverage View checkbox is "checked" 
+  name: ScanFeatureType
+  type: list
+  list:
+    - code: 2
+      mx: "9.1"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 1
+      mx: "9.1"
+      devicetype: A
+      name: Scan
+      description:    
+    - code: 0
+      mx: "9.1"
+      devicetype: A
+      name: Coverage View
+      description:  
+---
+
+used to select the scan feature type to run on target device. 

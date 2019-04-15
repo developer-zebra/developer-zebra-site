@@ -1,0 +1,20 @@
+---
+csp: worryfreewifimgr
+title: Old Password
+type: parm
+order: 38
+mx: "9.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Use Global Settings checkbox is "checked" 
+  name: Password
+  type: string
+---
+
+Used to specify the old password for changing password used by the device user for accessing Worry Free Wi-Fi configuration settings. 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;32 characters containing valid password characters 
+

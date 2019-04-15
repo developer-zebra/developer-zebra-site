@@ -1,0 +1,19 @@
+---
+csp: worryfreewifimgr
+title: Session Name Coverage
+type: parm
+order: 28
+mx: "9.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Coverage Action is "Start" and Scan Feature Type is NOT "Do not change" 
+  name: SessionNameCoverage
+  type: string
+---
+
+Used to specify a session name for a particular Coverage View. 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;32 characters containing a valid password 

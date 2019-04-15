@@ -1,0 +1,36 @@
+---
+csp: worryfreewifimgr
+title: Coverage View (checkbox)
+type: parm
+order: 3
+mx: "9.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Activate setting is NOT "Turn off" 
+  name: UseCoverageView
+  type: list
+  list:
+    - code: 0
+      mx: "9.1"
+      devicetype: A
+      name: (unchecked)
+      description: Disables Coverage View on the target device. 
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "9.1"
+      description: Enables Coverage View on the target device. 
+---
+
+Controls whether to configure Coverage View, which provides access to settings for capture Actions, Coverage Actions, Scan Feature Types, reachability and other coverage-related parameters that follow below. 
+
+
+
+As a Device Administrator, I would like to be able to configure Worry Free WiFi as to the Type Scanning to perform to support “Coverage View” on the target device.
+
+This is important because scanning can be a costly activity to perform in the device and I do not want to do it when it is not needed and don't want to perform more scanning than required to achieve the desired results.
+
+As a Device Administrator, I would like to be able to configure Worry Free WiFi as to the Interval at which Scanning will be performed on the target device.
+
+As a Device Administrator, I would like to be able to configure Worry Free WiFi as to the Coverage Action to perform to support Coverage View (Start,Stop,Clear,Export).

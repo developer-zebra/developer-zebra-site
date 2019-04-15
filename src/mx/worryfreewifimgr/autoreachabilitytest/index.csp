@@ -1,0 +1,31 @@
+---
+csp: worryfreewifimgr
+title: Auto Reachability Test
+type: parm
+order: 2
+mx: "9.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Coverage Action is "Start" and Scan Feature Type is NOT "Do not change" 
+  name: AutoReachabilityTest
+  type: list
+  list:
+    - code: 2
+      mx: "9.1"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 1
+      mx: "9.1"
+      devicetype: A
+      name: Turn on
+      description: Activates the auto-reachability test on the device.   
+    - code: 0
+      mx: "9.1"
+      devicetype: A
+      name: Turn off
+      description: Deactivates the auto-reachability test on the device. 
+---
+
+This is the On/Off switch for auto-reachability test functions on the device, which can identify potential issues realating to roaming and other connection events. 

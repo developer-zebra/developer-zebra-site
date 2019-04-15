@@ -1,0 +1,19 @@
+---
+csp: worryfreewifimgr
+title: Scan Interval
+type: parm
+order: 28
+mx: "9.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Coverage Action is "Start" and Scan Feature Type is NOT "Do not change" 
+  name: ScanInterval
+  type: string
+---
+
+Used to specify the time (in seconds) between scans on the device. This parameter is intended to help strike a balance between device resource utilization (scanning too frequently) and failure to detect important events (scanning too seldom). 
+
+**Parm value input rules**: 
+
+* Integer from 5&ndash;15 seconds

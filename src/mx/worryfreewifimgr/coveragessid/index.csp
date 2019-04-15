@@ -1,0 +1,19 @@
+---
+csp: worryfreewifimgr
+title: Coverage SSID
+type: parm
+order: 28
+mx: "9.1"
+devicetype: A
+parm:
+  pivotal: No
+  presentif: Activate is set to "Turn On" and Use Analysis box is "checked" 
+  name: AnalysisSSID
+  type: string
+---
+
+Used to specify the Coverage service set identifier (SSID) of the network to analyze in the analysis session. **Note: If the specified SSID is different than the one currently in use, the device disconnects from its current network and connects to the specified network**. 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;32 characters containing a valid password 

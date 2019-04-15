@@ -1,44 +1,44 @@
 ---
 csp: worryfreewifimgr
-title: Action 
+title: Coverage Action 
 type: parm
 order: 4
-mx: "8.2"
+mx: "9.1"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Use Analysis box is "checked" 
-  name: Action
+  presentif: Scan Feature Type is NOT "Do not change" 
+  name: CoverageAction
   type: list
   list:
     - code: 4
-      mx: "8.2"
+      mx: "9.1"
       devicetype: A
       name: Do nothing
       description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
     - code: 3
-      mx: "8.2"
+      mx: "9.1"
       devicetype: A
       name: Export
       description: Exports data collected during the current Worry Free Wi-Fi analysis session to a file in the device file system.
     - code: 2
-      mx: "8.2"
+      mx: "9.1"
       devicetype: A
       name: Clear
       description: Discards any data accumulated from the current Worry Free Wi-Fi analysis session. 
     - code: 1
-      mx: "8.2"
+      mx: "9.1"
       devicetype: A
       name: Stop
       description: Terminates the current Worry Free Wi-Fi analysis session. 
     - code: 0
-      mx: "8.2"
+      mx: "9.1"
       devicetype: A
       name: Start
       description: Starts a new Worry Free Wi-Fi analysis session, terminating any session previously in progress. 
 ---
 
-Used to select the Action to perform on the device. **Note**: Actions might require configuration of one or more of the following parameters:
+Used to select the Coverage Action to perform on the device. **Note**: Actions might require configuration of one or more of the following parameters:
 * **Server Analytics**
 * **Activity Mode**
 * **Analysis SSID**

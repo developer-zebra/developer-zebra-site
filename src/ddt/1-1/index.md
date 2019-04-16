@@ -1,6 +1,6 @@
 ---
 title: Diagnostic Tool
-img: cartscan_logo.png
+img: ddt_logo.jpg
 layout: list-mx.html
 menu:
   title: Diagnostic Tool

@@ -317,6 +317,24 @@ products:
         label: '2.3'
       - url: stagenow/2-2/about
         label: '2.2'
+  - title: Diagnostic Tool
+    description: A GUI-based tool to diagnose and determine the health of the Zebra Android device.
+    url: /ddt/1-1/guide/about
+    btn-text: Latest Guides
+    image: /ddt/ddt_logo.jpg
+    sections:
+      - title: About
+        url: /ddt/1-1/guide/about
+      - title: Settings
+        url: /ddt/1-1/guide/settings
+      - title: Modules
+        url: /ddt/1-1/guide/modules
+      - title: APIs
+        url: /ddt/1-1/api
+    versions:
+      - url: /ddt/1-1/guide/about
+        label: '1.1'
+
   - title: I Need Tools For...
     description: Not sure where to go? Click on "I Need Tools For..." to learn which Zebra tool might best suit the requirements, skills and experience of your organization.
     url: /help

@@ -13,8 +13,9 @@ RxLogger functions controlled using intents.
 
 Begins data collection for all enabled modules; the equivalent of tapping the Start button. 
 
-	:::java
-	com.symbol.rxlogger.intent.action.ENABLE
+		:::java
+		com.symbol.rxlogger.intent.action.ENABLE
+
 
 ### Disable RxLogger
 
@@ -26,10 +27,6 @@ Stops data collection for all modules; the equivalent of tapping the Stop button
 ### BackupNow
 
 Triggers a backup for files log currently in the RxLogger folder. Files are compressed and named `backup-HHMMSS.zip`. 
-
-
-	:::java
-	com.symbol.rxlogger.intent.action.BACKUP_NOW
 
 -----
 

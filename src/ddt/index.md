@@ -1,6 +1,6 @@
 ---
 title: Diagnostic Tool
-img: cartscan_logo.png
+img: ddt_logo.jpg
 layout: redirect.html
 redirect_url: /ddt/1-1/guide/about
 ---

@@ -38,7 +38,9 @@ parm:
       description: Starts a new Worry Free Wi-Fi analysis session, terminating any session previously in progress. 
 ---
 
-Used to select the Action to perform on the device. **Note**: Actions might require configuration of one or more of the following parameters:
+Used to select the Action to perform on the device. 
+
+**Actions might require configuration of one or more of the following parameters**:
 * **Server Analytics**
 * **Activity Mode**
 * **Analysis SSID**

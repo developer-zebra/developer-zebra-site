@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Analysis SSID
 type: parm
-order: 28
+order: 10
 mx: "8.2"
 devicetype: A
 parm:

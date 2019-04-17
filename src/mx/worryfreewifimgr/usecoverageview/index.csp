@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Coverage View (checkbox)
 type: parm
-order: 3
+order: 44
 mx: "9.1"
 devicetype: A
 parm:

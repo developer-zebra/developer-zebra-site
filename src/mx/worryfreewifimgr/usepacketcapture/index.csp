@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Configure Capture Options (checkbox)
 type: parm
-order: 46
+order: 18
 mx: "8.2"
 devicetype: A
 parm:

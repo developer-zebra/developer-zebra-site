@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: End-user Control 
 type: parm
-order: 65
+order: 58
 mx: "8.2"
 devicetype: A
 parm:

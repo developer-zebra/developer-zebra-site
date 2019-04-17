@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Coverage Action 
 type: parm
-order: 4
+order: 64
 mx: "9.1"
 devicetype: A
 parm:

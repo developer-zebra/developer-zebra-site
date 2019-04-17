@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Configure Analysis Settings (checkbox)
 type: parm
-order: 3
+order: 8
 mx: "8.2"
 devicetype: A
 parm:

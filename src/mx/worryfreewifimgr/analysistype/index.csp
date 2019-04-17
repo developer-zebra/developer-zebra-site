@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Analysis Type 
 type: parm
-order: 8
+order: 10
 mx: "8.2"
 devicetype: A
 parm:

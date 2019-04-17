@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Ping Data Enable/Disable 
 type: parm
-order: 40
+order: 32
 mx: "8.2"
 devicetype: A
 parm:

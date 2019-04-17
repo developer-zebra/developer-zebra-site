@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Coverage SSID
 type: parm
-order: 28
+order: 56
 mx: "9.1"
 devicetype: A
 parm:

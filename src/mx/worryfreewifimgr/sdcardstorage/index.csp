@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: SD Card Storage 
 type: parm
-order: 60
+order: 36
 mx: "8.2"
 devicetype: A
 parm:

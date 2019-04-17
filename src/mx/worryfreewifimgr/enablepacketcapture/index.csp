@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Packet Capture Enable/Disable 
 type: parm
-order: 50
+order: 14
 mx: "8.2"
 devicetype: A
 parm:

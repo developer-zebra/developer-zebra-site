@@ -6,9 +6,9 @@ productversion: '2.0'
 ---
 ## Overview
 
-This section describes how to use Device Central.  
+This section describes how to use Device Central. Device Central works only on [specific devices](../about/#supporteddevices) and requires Bluetooth to be enabled on the device. 
 
-Device Central works only on [specific devices](../about/#supporteddevices) and requires Bluetooth to be enabled on the device. 
+_Note: **Switching between different Android User Accounts** - When using multiple Android accounts on a single device and switching users, the Bluetooth radio can take a few seconds to turn on. When launching Device Central during this time, an error can occur indicating that Bluetooth must be turned on and the user is prompted to restart Device Central. Instead, the user must wait for the Blueooth radio to turn on (indicated by the Bluetooth icon in the Android status bar) before lauching Device Central._
 
 ## Pair/Unpair a Peripheral
 

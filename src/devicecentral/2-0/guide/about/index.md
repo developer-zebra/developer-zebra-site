@@ -31,8 +31,23 @@ Device Central is approved for use with the following Zebra Android devices:
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
   </tr>
   <tr>
+    <td>ET51/ET56</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
     <td>MC33</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>MC9300</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>PS20</td>
+    <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
@@ -41,7 +56,7 @@ Device Central is approved for use with the following Zebra Android devices:
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
-    <td>TC52/TC57</td>
+    <td>TC52/TC52-HC/TC57</td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
@@ -53,6 +68,16 @@ Device Central is approved for use with the following Zebra Android devices:
   <tr>
     <td>TC72/TC77</td>
     <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>TC8300</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>VC80</td>
+    <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>

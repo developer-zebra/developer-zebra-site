@@ -24,90 +24,43 @@ _Note: Unpairing a Bluetooth Scanners peripheral is currently not supported. Zeb
 
 Device Central is approved for use with the following Zebra Android devices:
 
-<!--  ** Only TC56 N devices supported first **
 <table class="facelift" style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th>Device</th>
-    <th style="text-align:center">Android 5.x <br>(Lollipop)</th> 
-    <th style="text-align:center">Android 6.x <br>(Marshmallow)</th>
     <th style="text-align:center">Android 7.x <br>(Nougat)</th>
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
   </tr>
   <tr>
     <td>MC33</td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
-    <td>TC51/TC56</td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
+    <td>TC51/TC51-HC/TC56</td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>TC52/TC57</td>
     <td></td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>TC70x/TC75x</td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>TC72/TC77</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-  </tr>
-  <tr>
-    <td>TC97</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-  </tr>
-  <tr>
-    <td>VC80x</td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>WT6000</td>
     <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
     <td></td>
   </tr>
 </table>
--->
-<table class="facelift" style="width:100%" border="1" padding="5px">
-  <tr bgcolor="#dce8ef">
-    <th>Device</th>
-    <th style="text-align:center">Android 6.x <br>(Marshmallow)</th>
-    <th style="text-align:center">Android 7.x <br>(Nougat)</th>
-    <th style="text-align:center">Android 8.x <br>(Oreo)</th>
-  </tr>
-  
-  <tr>
-    <td>TC56</td>
-    <td style="text-align:center"></td>
-    <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center"></td>
-  </tr>
-</table>
-
-Additional devices will be supported in the future.
 
 <br>
 Device Central is approved for use with the following Bluetooth peripherals:

@@ -77,12 +77,12 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /devicecentral/2-0/guide/about
+        url: /devicecentral/2-1/guide/about
       - title: Using Device Central
-        url: /devicecentral/2-0/guide/usage
+        url: /devicecentral/2-1/guide/usage
     versions:
-      - url: /devicecentral/2-0/guide/about
-        label: '2.0'
+      - url: /devicecentral/2-1/guide/about
+        label: '2.1'
   - title: Device Tracker
     description: A centralized solution to track, find, and prevent misplaced devices within a facility.
     url: /devicetracker

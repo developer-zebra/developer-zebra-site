@@ -196,7 +196,7 @@ The following must be declared in the application MAKE file to use the EMDK SDK 
 Use this method to make use of the EMDK in a project with a Compile SDK set above API 19.
 
 1. In the project folder viewer, open the **build.gradle** file for the **app** module.
-2. Add the lines below to the dependencies section. Be sure to update the `dir:` path to indicate the location of the `com.symbol.emdk.jar` file on the development host system.
+2. Add the lines below to the dependencies section.
 
     **Windows**
 
@@ -211,4 +211,6 @@ Use this method to make use of the EMDK in a project with a Compile SDK set abov
         ...
         }
 3. Rebuild the project by selecting **Make Project** from the **Build** menu.
+
+**Note**: A plus sign ("+") can be substituted for a major or minor version number in the dependencies section. For example, declaring `com.symbol:emdk:7.1+` uses SDK versions 7.1 and newer.
 

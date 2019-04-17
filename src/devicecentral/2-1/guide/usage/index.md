@@ -6,9 +6,9 @@ productversion: '2.1'
 ---
 ## Overview
 
-This section describes how to use Device Central.  
+This section describes how to use Device Central. Device Central works only on [specific devices](../about/#supporteddevices) and requires Bluetooth to be enabled on the device. 
 
-Device Central works only on [specific devices](../about/#supporteddevices) and requires Bluetooth to be enabled on the device. 
+_Note: **Switching between different Android User Accounts** - When using multiple Android accounts on a single device and switching users, the Bluetooth radio can take a few seconds to turn on. When launching Device Central during this time, an error can occur indicating that Bluetooth must be turned on and the user is prompted to restart Device Central. Instead, the user must wait for the Blueooth radio to turn on (indicated by the Bluetooth icon in the Android status bar) before lauching Device Central._
 
 ## Pair/Unpair a Peripheral
 
@@ -27,7 +27,7 @@ The subsequent sections cover each method to pair the mobile computer to a perip
 #### Scan and Pair
 
 Two methods to scan the peripheral’s Bluetooth barcode to pair:
-1. **Hardware scan trigger** - Press the hardware scan trigger when the main screen is displayed. This feature was introduced in Device Central v2.1.
+1. **Hardware trigger** - Press the hardware scan trigger when the main screen is displayed. This feature was introduced in Device Central v2.1.
 2. **Soft trigger** - Press the "Scan barcode to pair" button from the main screen.
 
 Details for each method are provided below:

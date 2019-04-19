@@ -5,6 +5,7 @@ type: parm
 order: 20
 mx: "7.1"
 devicetype: A
+info: **Applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**. 
 parm:
   pivotal: Yes
   name: HeaterAction

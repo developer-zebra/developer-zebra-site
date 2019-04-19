@@ -17,4 +17,5 @@ Used to specify the temperature (in degrees Celsius) at which the device heater 
 
 **Parm value input rules**: 
 
-* Integer value from -30 to 50
+* Integer value from -30 to 50 on VC80x
+* Integer value from -30 to 25 on VC8300

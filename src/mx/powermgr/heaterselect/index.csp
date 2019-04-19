@@ -34,13 +34,13 @@ parm:
       devicetype: A
       name: Keyboard
       mx: "9.1"
-      info: Supported only on the VC8300. 
+      info: Supported on VC8300 devices only. 
       description: Selects the keyboard heater on the VC8300 vehicle computer.  
     - code: 6
       devicetype: A
       name: Scanner Window
       mx: "9.1"
-      info: Supported only on the MC93.
+      info: Supported only on MC93 devices only.
       description: Selects the scanner-window heater on the MC93 device.  
 ---
 

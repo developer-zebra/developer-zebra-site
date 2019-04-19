@@ -23,7 +23,9 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
 * Verify an OS update
 * Perform multiple updates in a single step
 * Enable/disable Doze Mode
-* Enable/disable Wake-up Sources 
+* Enable/disable Wake-up Sources
+* Enable/disable keyboard heater on VC8300 devices. 
+* Enable/disable scanner-window heater on MC93 devices. 
 * **On the VC80x vehicle-mounted computer and similarly equipped Zebra devices**: 
  * Turn power to specific serial and USB ports on and off
  * Control heaters for touch panel and battery, and on serial and USB ports

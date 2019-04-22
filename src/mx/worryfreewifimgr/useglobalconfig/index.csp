@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Global Config (checkbox)
 type: parm
-order: 46
+order: 70
 mx: "8.2"
 devicetype: A
 parm:

@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Server Analytics Coverage Enable/Disable 
 type: parm
-order: 52
+order: 56
 mx: "9.1"
 devicetype: A
 parm:

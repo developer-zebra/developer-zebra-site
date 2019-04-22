@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Old Password
 type: parm
-order: 60
+order: 66
 mx: "9.1"
 devicetype: A
 parm:

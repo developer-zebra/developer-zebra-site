@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Scan Feature Type
 type: parm
-order: 20
+order: 46
 mx: "9.1
 devicetype: A
 parm:

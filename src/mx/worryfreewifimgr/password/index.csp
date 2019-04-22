@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Password
 type: parm
-order: 62
+order: 68
 mx: "8.2"
 devicetype: A
 parm:

@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Coverage Session Name 
 type: parm
-order: 48
+order: 60
 mx: "9.1"
 devicetype: A
 parm:

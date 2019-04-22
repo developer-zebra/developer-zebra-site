@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: SD Card Storage Coverage Pref 
 type: parm
-order: 54
+order: 62
 mx: "9.1"
 devicetype: A
 parm:

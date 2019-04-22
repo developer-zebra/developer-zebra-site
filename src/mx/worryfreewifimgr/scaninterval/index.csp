@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Scan Interval
 type: parm
-order: 24
+order: 52
 mx: "9.1"
 devicetype: A
 parm:

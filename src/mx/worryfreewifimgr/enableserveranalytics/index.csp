@@ -19,12 +19,12 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Enable Server Analytics
-      description: Enables server analytics on the device. 
+      description: Enables streaming of Coverage View analysis data to a remote server. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable Server Analytics
-      description: Disables server analytics on the device. 
+      description: Disables streaming of Coverage View analysis data to a remote server. 
 ---
 
-Controls whether server analytics are performed for the analysis session on the device. 
+Controls whether the Coverage View analysis data for the session is streamed to a remote server for viewing, storage, consolidation and further analysis. 

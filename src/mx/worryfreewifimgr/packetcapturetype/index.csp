@@ -20,13 +20,26 @@ parm:
       mx: "9.1"
       devicetype: A
       name: All
-      description:    
+      description: Captures all packet types. 
     - code: 0
       mx: "9.1"
       devicetype: A
       name: Management
-      description:  
+      description: Captures only management packets. 
 ---
 
-Used to select the type of packets to capture on the target device.  
+Used to select the type of packets to capture on the target device. When Management type is selected (code 1), only the following packets are captured: 
+* Association request
+* Association response
+* Re-association request
+* Re-association response
+* Probe request
+* Probe response
+* Beacon
+* ATIM
+* Disassociation
+* Authentication
+* De-authentication 
+* Action
+
 

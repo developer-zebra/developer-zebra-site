@@ -32,7 +32,7 @@ menu:
     - title: Profile Manager
       url: /emdk-for-android/7-3/guide/profile-manager-guides
     - title: APIs
-      url: /emdk-for-android/7-3/api
+      url: /emdk-for-android/7-3/apimenu
     - icon: fa fa-comments-o
       url: https://developer.zebra.com/community/home/discussions/emdk
     - icon: fa fa-search

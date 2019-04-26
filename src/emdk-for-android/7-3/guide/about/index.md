@@ -52,6 +52,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ####`UPDATED APR. 26, 2019:` 
 * **EMDK for Android 7.3 (and later) has been certified to support [Android Studio 3.4](https://developer.android.com/studio/)**, which was released to the stable channel on Apr. 17.
+* **[Android Intent APIs](../intents) are now public**. 
 
 ### Supported Devices
 No new device support added in this version. 

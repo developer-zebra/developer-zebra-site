@@ -1,5 +1,5 @@
 ---
-title: EMDK Intent APIs
+title: EMDK APIs
 description: EMDK apps can access device hardware through Android intents or native APIs.
 layout: list-apis.html
 product: 'EMDK for Android'

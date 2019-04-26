@@ -8,7 +8,7 @@ devicetype: A
 parm:
   pivotal: No
   presentif: Activate is set to "Turn On" and Use Analysis box is "checked" 
-  name: AnalysisSSID
+  name: CoverageSSID
   type: string
 ---
 

@@ -8,7 +8,7 @@ devicetype: A
 parm:
   pivotal: No
   presentif: Use Global Settings checkbox is "checked" 
-  name: Password
+  name: OldPassword
   type: string
 ---
 

@@ -20,12 +20,12 @@ parm:
       mx: "9.1"
       devicetype: A
       name: Scan
-      description:    
+      description: 
     - code: 0
       mx: "9.1"
       devicetype: A
       name: Coverage View
-      description:  
+      description: 
 ---
 
-used to select the scan feature type to run on target device. 
+Used to select the scan feature type to run on target device. 

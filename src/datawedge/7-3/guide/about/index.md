@@ -92,6 +92,7 @@ For more information about approved languages or to download a localized operati
  * **[Keystroke output parameters](../api/setconfig/#keystrokeoutputparameters)** can be toggled by using SetConfig API.
 * **[Rear camera support](../input/barcode)** added for Digimarc decoding.
 * **[DS8178 Bluetooth Scanner](../input/barcode)** now supported.
+* New **[Febraban decoder parameter](../input/barcode)** supported for I2of5.
 
 -----
 ## Recent Version History

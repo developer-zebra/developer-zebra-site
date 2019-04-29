@@ -379,6 +379,8 @@ Error messages are logged for invalid actions and parameters
 
 ## Scanner Input Parameters 
 
+Refer to [Barcode Input](../../input/barcode) for more information on decoders, decoder paramsters, and scan parameters.
+
 **Important**: Support for decode parameters can vary depending on the selected scanning device. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
 > All parameters are case sensitive.
@@ -656,8 +658,8 @@ Error messages are logged for invalid actions and parameters
   </tr>
 
   <tr>
-    <td rowspan="4">decoder_i2of5</td>
-	<td rowspan="4">True <br>False</td>
+    <td rowspan="5">decoder_i2of5</td>
+	  <td rowspan="5">True <br>False</td>
     <td>decoder_i2of5_length1 <br>decoder_i2of5_length2</td>
     <td>Integer from 0–55</td>
   </tr>
@@ -673,6 +675,10 @@ Error messages are logged for invalid actions and parameters
 	<td>decoder_i2of5_security_level</td>
 	<td>0 - Security Level 0<br>1 - Security Level 1<br>2 - Security Level 2<br>3 - Security Level 3</td>
   </tr> 
+	<tr>
+	<td>decoder_i2of5_enable_febraban</td>
+	<td>true<br>false (default)</td>
+	</tr>
 
   <tr>
 	<td>decoder_gs1_databar</td>

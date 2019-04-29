@@ -467,6 +467,10 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
+**Febraban -** To specify whether special check characters are inserted into the transmitted data stream of Interleaved 2of5 barcodes that meet the following requirements:
+1. Contain 14 characters in length.
+2. Meet specific Febraban criteria.
+
 ------
 
 ### Check Digit

@@ -6,7 +6,7 @@ content-items:
   - type: section
     level: 4
     title: Android Memory Considerations For Developers
-    text: Android devices have a fixed amount of RAM for use by the OS and its apps. Understanding the amount and management of memory used by an app is important to assuring efficient and reliable operation. Learn from Zebra developers how to best allocate and manage this limited resource. 
+    text: Android devices have a fixed amount of RAM for use by apps and the OS. Understanding memory allocation and management is important to assuring efficient and reliable operation of an app. Learn from Zebra developers how to best allocate and manage this limited resource. 
     url: https://developer.zebra.com/community/home/blog/2018/08/21/android-memory-considerations-for-developers
   - type: section
     level: 4

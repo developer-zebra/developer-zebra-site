@@ -28,4 +28,4 @@ parm:
       description: Disables server analytics coverage tests on the device. 
 ---
 
-Controls whether server analytics for Coverage View tests are performed for the analysis session on the device. 
+Controls whether server analytics for Coverage View tests are performed for the analysis session on the device. **See Coverage View for more information**. 

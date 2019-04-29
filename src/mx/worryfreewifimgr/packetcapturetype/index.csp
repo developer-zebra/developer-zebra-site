@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Packet Capture Type
 type: parm
-order: 16
+order: 19
 mx: "9.1"
 devicetype: A
 parm:

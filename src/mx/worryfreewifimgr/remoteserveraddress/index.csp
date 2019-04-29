@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Remote Server Address
 type: parm
-order: 30
+order: 10
 mx: "8.2"
 devicetype: A
 parm:

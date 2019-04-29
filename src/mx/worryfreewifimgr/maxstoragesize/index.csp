@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Maximum Storage for Capture 
 type: parm
-order: 40
+order: 18
 mx: "8.2"
 devicetype: A
 parm:

@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Configure Analysis Settings (checkbox)
 type: parm
-order: 8
+order: 2
 mx: "8.2"
 devicetype: A
 parm:
@@ -22,4 +22,4 @@ parm:
       description: Allows configuration of individual analysis settings on the device.
 ---
 
-Controls access to configuration of Analysis Type (voice or roaming) and Actions (start, stop, export and clear) on the device. 
+Controls access to configuration of Analysis Type (voice, roaming or connection) and Actions (start, stop, export and clear) on the device. 

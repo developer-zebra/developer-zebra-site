@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Logger Report Level 
 type: parm
-order: 34
+order: 11
 mx: "8.2"
 devicetype: A
 parm:

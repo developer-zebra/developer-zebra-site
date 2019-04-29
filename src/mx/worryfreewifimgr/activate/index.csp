@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Activate
 type: parm
-order: 2
+order: 1
 mx: "8.2"
 devicetype: A
 parm:

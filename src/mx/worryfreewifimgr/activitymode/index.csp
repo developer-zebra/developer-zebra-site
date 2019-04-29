@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Activity Mode 
 type: parm
-order: 6
+order: 5
 mx: "8.2"
 devicetype: A
 parm:

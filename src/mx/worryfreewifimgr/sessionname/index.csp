@@ -2,7 +2,7 @@
 csp: worryfreewifimgr
 title: Session Name
 type: parm
-order: 42
+order: 7
 mx: "8.2"
 devicetype: A
 parm:

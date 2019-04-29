@@ -20,12 +20,12 @@ parm:
       mx: "9.1"
       devicetype: A
       name: Scan
-      description: 
+      description: Scans for all network profiles (SSIDs) on the device. 
     - code: 0
       mx: "9.1"
       devicetype: A
       name: Coverage View
-      description: 
+      description: Scans only the connected network profile (SSID) on the device. 
 ---
 
-Used to select the scan feature type to run on target device. 
+Used to select whether to scan all network profiles stored on the device or to scan only the currently connected network. 

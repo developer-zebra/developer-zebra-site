@@ -5,6 +5,8 @@ product: EMDK For Android
 productversion: '7.3'
 ---
 
+Also see [Android Memory Considerations For Developers](https://developer.zebra.com/community/home/blog/2018/08/21/android-memory-considerations-for-developers), a best-practices article written by a top Zebra software engineer that explains now to best allocate and manage memory resources on a device.
+
 ##EMDK concurrency guidelines
 
 1.	The EMDKManager instance will always provide only one object (singleton object) of each feature like BarcodeManager, ProfileManager etc. Any attempt to request a new object of the same feature will return the object that is already initiated.

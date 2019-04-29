@@ -5,6 +5,11 @@ layout: list-content-items.html
 content-items:
   - type: section
     level: 4
+    title: Android Memory Considerations For Developers
+    text: Android devices have a fixed amount of RAM for use by the OS and its apps. Understanding the amount and management of memory used by an app is important to assuring efficient and reliable operation. Learn from Zebra developers how to best allocate and manage this limited resource. 
+    url: https://developer.zebra.com/community/home/blog/2018/08/21/android-memory-considerations-for-developers
+  - type: section
+    level: 4
     title: Barcode API Programmer's Guide
     text: The EMDK Barcode API provides applications with an ability to read the variety barcode labels using different scanner devices such as built-in imager/laser, built-in camera, Bluetooth ring scanners such as RS507 and RS600 and Pluggable ring scanner such as RS4000.
     url: /emdk-for-android/7-3/guide/barcode_scanning_guide

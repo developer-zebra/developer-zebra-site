@@ -7,47 +7,45 @@ productversion: '7.3'
 
 ## Overview
 
-EMDK for Android 7.3 (and later) contains interfaces for controlling hardware that conforms to the Infrared Data Association (IrDA) specification, an optical line-of-sight technology that's often used for data transfer between small portable devices such as remote controls, mobile computers, printers and some medical devices.  
+EMDK for Android 7.3 (and later) contains interfaces for controlling hardware that conforms to the Infrared Data Association (IrDA) specification, an infrared line-of-sight technology that's often used for data transfer between small portable devices such as remote controls, mobile computers, printers and some medical devices.  IrDA also refers to the protocols used for wireless data transfer using IrDA hardware. 
 
-IrDA also refers to a set of protocols used for its wireless data transfer. The Zebra IrDA implementation supports the following protocols:
+Zebra's IrDA implementation supports the following protocols:
 * TinyTP
 * IrLMP
 * IrLAP/ LSAP
 * IrSIR
 
-Zebra IrDA APIs operate through Android intents – specific commands that can be used by Android applications to control IrDA hardware on IrDA-equipped Zebra devices. This guide provides developers with a comprehensive set of tools to easily communicate between IrDA devices via wireless infrared communication with IrDA Intent APIs on Zebra mobile devices.  
+Zebra IrDA APIs operate through Android intents – specific commands that can be used by Android applications to control IrDA hardware on IrDA-equipped Zebra devices. This guide explains how to communicate wirelessly between IrDA devices using IrDA Intent APIs on Zebra mobile devices. 
 
 ### Requirements
 
-Use of IrDA APIs requires experience with Java programming, Android application development and familiarity with Android intents. 
-
-**Target device(s) must contain**: 
+Use of IrDA APIs requires experience with Java and Android app development, and familiarity with Android intents. For successful IrDA communication, **target device(s) must contain**: 
 
 * IrDA peripheral hardware
 * DataWedge version 7.3.11 or later on the device
-* IrDA transceivers in clear line-of-sight during data transmission
+* IrDA transceivers in clear line of sight during data transmission
 
 -----
 
-IrDA Intent APIs
+## IrDA Intent APIs
 
-IrDA Intent APIs can be used in applications that require control of IrDA communication.
+IrDA intent APIs can be used in applications that require control of IrDA communication.
 Supported intent actions and commands:
 
-`com.symbol.irda.api.ACTION_UPDATE`
-* Set server name
-* Set connection idle time
+* `com.symbol.irda.api.ACTION_DO`:
+ * Send data
 
-`com.symbol.irda.api.ACTION_DO`
-Send Data
+* `com.symbol.irda.api.ACTION_GET`:
+ * Get server name
+ * Get driver version
+ * Get connection idle time
 
-`com.symbol.irda.api.ACTION_GET`
-* Get server name
-* Get driver version
-* Get connection idle time
+* `com.symbol.irda.api.ACTION_REGISTER`:
+ * Register/Unregister callbacks
 
-`com.symbol.irda.api.ACTION_REGISTER`
-* Register/Unregister callbacks
+* `com.symbol.irda.api.ACTION_UPDATE`:
+ * Set server name
+ * Set connection idle time
 
 Usage information for each command follows in the sections below.
 
@@ -55,7 +53,7 @@ Usage information for each command follows in the sections below.
 
 ## Send Data 
 
-To send data over IrDA, data must be converted to byte arrays. Large data is broken into small chunks of bytes prior to delivery to the receiving device. The first `SEND_DATA` command typically requires extra time to complete; `SEND_DATA` commands sent within 30 seconds of the first often complete more quickly. The 30-second time frame is adjustable; see [Set Connection Idle Time](#setconnectionidletime) section for details.
+To send data over IrDA, data must be converted to byte arrays. Large data is broken into small chunks of bytes prior to delivery to the receiving device. The first `SEND_DATA` command typically requires extra time to complete; `SEND_DATA` commands sent within 30 seconds of the first complete more quickly. The 30-second time frame is adjustable; see [Set Connection Idle Time](#setconnectionidletime) section for details.
 
 ### Sample Code
 
@@ -91,9 +89,12 @@ To send data over IrDA, data must be converted to byte arrays. Large data is bro
 		//Create pending intent
 		PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext().getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-		//Send pending intent as CALLBACK_RESPONSE IrDA API responds to the pending intent mentioned here
+		//Send pending intent as CALLBACK_RESPONSE
+		//IrDA API responds to the pending intent specified here
 		intent.putExtra("CALLBACK_RESPONSE", piResponse); 
-		sendBroadcast(intent); //Send the broadcast
+		
+		//Send the broadcast
+		sendBroadcast(intent); 
 
 To determine command success, see [Get Feedback for Commands](#getfeedbackforcommands). 
 
@@ -101,19 +102,20 @@ To determine command success, see [Get Feedback for Commands](#getfeedbackforcom
 
 ## Set Server Name
 
-For IrDA communication, the Zebra device serves as the “client” and the device it communicates to is the “server”. To identify the device it communicates to, set the server name of the device . If a server name is not specified, a default server name “IrDA:TinyTP” is used.
+For IrDA communication, the Zebra device serves as the “client” and the device it communicates with is the “server." To identify the device it communicates with, set the server name of the device. If a server name is not specified, the default “**IrDA:TinyTP**” is used.
 
 ### Sample Code
 
 Set the server name:
 
 		:::Java
-		Intent intent = new Intent(); //Create new intent 
+		//Create new intent 
+		Intent intent = new Intent(); 
 
 		//Specify the IrDA action
 		intent.setAction("com.symbol.irda.api.ACTION_UPDATE");
 
-		//Set to run at foreground priority, with a shorter timeout interval 
+		//Set to run at foreground priority with a shorter timeout interval 
 		intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND); 
 
 		//Server name to be used
@@ -122,7 +124,7 @@ Set the server name:
 		//Mention the broadcast receiver to receive the response
 		Intent responseIntent = new Intent(getApplicationContext(), MyBroadcastReceiver.class); 
 		
-		//Set to run at foreground priority, with a shorter timeout interval
+		//Set to run at foreground priority with a shorter timeout interval
 		responseIntent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
 
 		//Any extras are useful to identify feedback 
@@ -131,13 +133,14 @@ Set the server name:
 		//Create pending intent
 		PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext().getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-		//Send pending intent as CALLBACK_RESPONSE. IrDA API responds to the pending intent mentioned here
+		//Send pending intent as CALLBACK_RESPONSE
+		//IrDA API responds to the pending intent specified here
 		intent.putExtra("CALLBACK_RESPONSE", piResponse); 
 		
 		//Send the broadcast
 		sendBroadcast(intent); 
 
-The new server name is kept in device memory until device restart, after which the server name is reset to its default server name. To determine command success, see [Get Feedback for Commands](#getfeedbackforcommands).
+The new server name is kept in device memory until device restart, after which the server name is reset to the “**IrDA:TinyTP**” default server name. To determine command success, see [Get Feedback for Commands](#getfeedbackforcommands).
 
 -----
 
@@ -170,7 +173,8 @@ The application must be registered for callbacks to receive messages or response
 		responseIntent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND); 
 		PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-		//Send pending intent as CALLBACK_RESPONSE. IrDA API responds to the pending intent mentioned here
+		//Send pending intent as CALLBACK_RESPONSE
+		//IrDA API responds to the pending intent specified here
 		intent.putExtra("CALLBACK_RESPONSE", piResponse); 
 
 		//Intent called whenever data is received from the server
@@ -183,7 +187,8 @@ The application must be registered for callbacks to receive messages or response
 		dataCallBackIntent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND); 
 		PendingIntent piDataCallback = PendingIntent.getBroadcast(getApplicationContext(), requestCode2, dataCallBackIntent, flags2);
 
-		//Send pending intent as DATA_CALLBACK. IrDA API responds to the pending intent mentioned here when a data is received from the server
+		//Send pending intent as DATA_CALLBACK
+		//IrDA API responds to the pending intent specified here when a data is received from the server
 		intent.putExtra("DATA_CALLBACK", piDataCallback); 
 		
 		//Send the broadcast
@@ -247,12 +252,13 @@ For each callback that is registered, a corresponding call is needed to unregist
 		//Create pending intent
 		PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-		//Send pending intent as CALLBACK_RESPONSE. IrDA API responds to the pending intent mentioned here
-		
+		//Send pending intent as CALLBACK_RESPONSE
+		//IrDA API responds to the pending intent specified here
+		intent.putExtra("CALLBACK_RESPONSE", piResponse);
+
 		//Send DATA_CALLBACK as null to stop receiving callbacks from the server
-		intent.putExtra("CALLBACK_RESPONSE", piResponse); 
 		intent.putExtra("DATA_CALLBACK", (String)null); 
-		
+
 		//Send the broadcast
 		sendBroadcast(intent); 
 
@@ -290,7 +296,7 @@ The IrDA port is opened when the first `SEND_DATA` command is received. The port
 		PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext().getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 		
 		//Send pending intent as CALLBACK_RESPONSE
-		//IrDA API responds to the pending intent mentioned here
+		//IrDA API responds to the pending intent specified here
 		intent.putExtra("CALLBACK_RESPONSE", piResponse); 
 		
 		//Send the broadcast
@@ -340,7 +346,8 @@ The Get command retrieves the following properties:
 		//Create pending intent
 		PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext().getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-		//Send pending intent as CALLBACK_RESPONSE. IrDA API responds to the pending intent mentioned here.
+		//Send pending intent as CALLBACK_RESPONSE
+		//IrDA API responds to the pending intent specified here.
 		intent.putExtra("CALLBACK_RESPONSE", piResponse);
 
 		//Send the broadcast 

@@ -54,4 +54,4 @@ Used to specify the action to perform on an Activation ID (AID) on the device. *
 * **Preactivated Licenses are <u>valid only on the day they are generated</u>**. 
 * If multiple Preactivated Licenses are generated, they must be applied in the same order as generated.
 * Preactivated Licenses must be applied BEFORE all other License Actions. 
-* If combining the application of Activation IDs and Preactivated licenses in the same configuration Profile, Preactivated Licenses MUST be applied first.  
+* If combining the application of Activation IDs and Preactivated Licenses in the same configuration Profile, Preactivated Licenses MUST be applied first.  

@@ -69,6 +69,6 @@ To prevent this, Zebra recommends using the Verification Method parameter (below
 * **Preactivated Licenses are <u>valid only on the day they are generated</u>**. 
 * If multiple Preactivated Licenses are generated, they must be applied in the same order as generated.
 * Preactivated Licenses must be applied BEFORE all other License Actions. 
-* If combining the application of Activation IDs and Preactivated licenses in the same configuration Profile, Preactivated Licenses MUST be applied first.  
+* If combining the application of Activation IDs and Preactivated Licenses in the same configuration Profile, Preactivated Licenses MUST be applied first.  
 
 -----

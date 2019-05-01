@@ -5,6 +5,7 @@ type: parm
 order: 1
 mx: "8.3"
 devicetype: A
+info: Supported only on MC93, TC52, TC57, TC72, TC77 and TC8380 devices.
 parm:
   pivotal: No
   name: EnabledNFC

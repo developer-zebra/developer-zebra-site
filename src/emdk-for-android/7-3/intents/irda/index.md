@@ -149,7 +149,7 @@ The new server name is kept in device memory until device restart, after which t
 The application must be registered for callbacks to receive messages or responses from the server. Once the callback is processed, the application can act accordingly depending on the response received.
 
 
-## Sample Code 
+### Sample Code 
 
 #### Register and receive callbacks from the server:
 

@@ -52,7 +52,7 @@ StageNow generally falls under two usage scenarios:
 ### Staging Methods
 Following are the staging methods available via StageNow. See [Device Staging](../stageclient) for details:
 
-* Barcode - The operator generates barcode(s) containing profile information and scans those barcodes with the device, either printed on paper or displayed on the workstation screen, to configure that device.
+* Barcode - The operator generates barcode(s) containing profile information onto paper or the workstation screen and scans those barcodes with the device scanner or imager (or camera if no scanner or imager is present) to configure that device.
 
 * NFC Tag - The operator exports profile data and programs it into an NFC tag, then reads the tag with the device's NFC tag reader by bringing the tag within a certain proximity of the device, to deploy the profile to the device.
 

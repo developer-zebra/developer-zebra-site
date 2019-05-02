@@ -452,6 +452,13 @@ In this article, we covered:
 * Defining intent filters
 * Configuring DataWedge to send intents to our application
 
+-----
+
+## Also See
+
+* [IrDA intent APIs](../datacapture)
+* [Battery intent APIs](../battery)
+* [Native APIs](../../api)
 
 <!-- 4/24/18- dead link removed. No corresponding folder or sample found. -EC
 ## Sample Code

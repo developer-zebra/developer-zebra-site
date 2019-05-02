@@ -7,7 +7,7 @@ productversion: '7.3'
 
 ## Overview
 
-EMDK for Android 7.3 (and later) contains interfaces for controlling hardware that conforms to the Infrared Data Association (IrDA) specification, an infrared line-of-sight technology that's often used for data transfer between small portable devices such as remote controls, mobile computers, printers and some medical devices.  IrDA also refers to the protocols used for wireless data transfer using IrDA hardware. 
+EMDK for Android 7.3 (and later) contains interfaces for controlling hardware that conforms to the Infrared Data Association (IrDA) specification, an infrared line-of-sight technology that's used for data transfer between small portable devices such as mobile computers, printers, handheld remote controls and some medical devices. IrDA also refers to the protocols used for wireless data transfer using IrDA-equipped devices. 
 
 Zebra's IrDA implementation supports the following protocols:
 * TinyTP
@@ -21,7 +21,7 @@ Zebra IrDA APIs operate through Android intents – specific commands that can b
 
 Use of IrDA APIs requires experience with Java and Android app development, and familiarity with Android intents. For successful IrDA communication, **target device(s) must contain**: 
 
-* IrDA peripheral hardware
+* One or more IrDA-equipped Zebra devices
 * DataWedge version 7.3.11 or later on the device
 * IrDA transceivers in clear line of sight during data transmission
 
@@ -29,25 +29,33 @@ Use of IrDA APIs requires experience with Java and Android app development, and 
 
 ## IrDA Intent APIs
 
-IrDA intent APIs can be used in applications that require control of IrDA communication.
-Supported intent actions and commands:
+IrDA intent APIs can be used in applications that require control of IrDA communication. Supported intent actions and commands are listed below. 
+
+**IrDA Intents and Actions**:
 
 * `com.symbol.irda.api.ACTION_DO`:
  * Send data
+<br>
+<br>
 
 * `com.symbol.irda.api.ACTION_GET`:
  * Get server name
  * Get driver version
  * Get connection idle time
+<br>
+<br>
 
 * `com.symbol.irda.api.ACTION_REGISTER`:
  * Register/Unregister callbacks
+<br>
+<br>
 
 * `com.symbol.irda.api.ACTION_UPDATE`:
  * Set server name
  * Set connection idle time
+<br>
 
-Usage information for each command follows in the sections below.
+##### Usage information for each command follows in the sections below.
 
 -----
 
@@ -310,7 +318,7 @@ To determine command success, see [Get Feedback for Commands](#getfeedbackforcom
 
 The Get command retrieves the following properties:
 
-`CONNECTION_IDLE_TIME` Returns the time (in seconds) the connection remains open before automatically closing 
+`CONNECTION_IDLE_TIME` - Returns the time (in seconds) the connection remains open before automatically closing 
 `SERVER_NAME` - Returns the current server name 
 `DRIVER_VERSION` - Driver version 
 
@@ -388,7 +396,7 @@ The Get command response is delivered to the broadcast receiver in the pending i
 
 ## Get Feedback for Commands
 
-The `ACTION_DO` and `ACTION_UPDATE` methods send a response back to the client application with feedback about whether the specified command succeeded. This response is delivered to the broadcast receiver passed to the pending intent. `ACTION_DO` and `ACTION_UPDATE` send a `RESULT_CODE` and a `RESULT_MESSAGE` back to the application containing feedback on the command executed. 
+The `ACTION_DO` and `ACTION_UPDATE` methods send a `RESULT_CODE` and a `RESULT_MESSAGE` back to the client app with feedback about whether the specified command succeeded. This response is delivered to the broadcast receiver and passed to the pending intent.
 
 ### Sample Code 
 
@@ -419,4 +427,10 @@ The `ACTION_DO` and `ACTION_UPDATE` methods send a response back to the client a
 	    }
 	}
 
+-----
 
+## Also See
+
+* [Data capture intent APIs](../datacapture)
+* [Battery intent APIs](../battery)
+* [Native APIs](../../api)

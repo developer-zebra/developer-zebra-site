@@ -40,6 +40,13 @@ In the below code we are getting the Symbol specific battery information provide
 		}  
 	} 
 
+-----
+
+## Also See
+
+* [Data capture intent APIs](../datacapture)
+* [IrDA intent APIs](../battery)
+* [Native APIs](../../api)
 
 <!-- 4/24/18- dead link removed. No corresponding folder or sample found. -EC
 ## Downloading the Sample

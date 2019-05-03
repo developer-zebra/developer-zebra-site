@@ -318,14 +318,14 @@ products:
       - url: stagenow/2-2/about
         label: '2.2'
   - title: Diagnostic Tool
-    description: A GUI-based tool to diagnose and determine the health of Zebra Android devices.
+    description: Instantly test and diagnose device system operability to determine system health.
     url: /ddt/1-1/guide/about
     btn-text: Latest Guides
     image: /ddt/ddt_logo.png
     sections:
       - title: About
         url: /ddt/1-1/guide/about
-      - title: Using
+      - title: Usage
         url: /ddt/1-1/guide/usage
       - title: Configuration
         url: /ddt/1-1/guide/configuration

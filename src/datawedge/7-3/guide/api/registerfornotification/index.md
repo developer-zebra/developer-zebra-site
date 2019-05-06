@@ -51,22 +51,15 @@ Returns a bundle with status of the requested DataWedge `NOTIFICATION_TYPE`
  * "PROFILE_NAME": "&lt;name of Profile now in use&gt;"
 
 * `SCANNER_STATUS`: 
- * `NOTIFICATION_TYPE`: "SCANNER_STATUS" 
- * SCANNER_STATUS: WAITING, SCANNING, CONNECTED, DISCONNECTED or DISABLED
+ * **WAITING** – Scanner is enabled and ready to scan using a physical trigger or SOFT_SCAN_TRIGGER intent. 
+ * **SCANNING** - Scanner has emitted the scan beam and scanning is in progress. This event does not prevent the application from disabling other controls as necessary. 
+ * **CONNECTED** – A Bluetooth scanner has connected with the device and can now be enabled (or disabled) by the application. Scanner selection should be set to Auto in the currently active profile. 
+ 
+ * **DISCONNECTED** – A Bluetooth scanner has disconnected from the device. Sending an intent to enable or disable the scanner in this state will enable/disable the current default scanner. 
+ * **IDLE** - Scanner is in one of the following states: enabled but not yet in the waiting state, in the suspended state by an intent (e.g. [SUSPEND_PLUGIN](../scannerinputplugin)) or disabled due to the hardware trigger. 
+ * **DISABLED** – Scanner is disabled. This is broadcasted by the scanner plug-in when the active profile becomes disabled manually or the scanner is disabled with an intent (e.g. [DISABLE_PLUGIN](../scannerinputplugin)). 
 
 > **Scanner status notifications are sent <u>only if the scanner in the active Profile is enabled</u>**. 
-
-**WAITING** – Scanner is enabled and ready to scan using a physical trigger or SOFT_SCAN_TRIGGER intent. 
-
-**SCANNING** - Scanner has emitted the scan beam and scanning is in progress. This event does not prevent the application from disabling other controls as necessary.
-
-**CONNECTED** – A Bluetooth scanner has connected with the device and can now be enabled (or disabled) by the application. Scanner selection should be set to Auto in the currently active profile. 
-
-**DISCONNECTED** – A Bluetooth scanner has disconnected from the device. Sending an intent to enable or disable the scanner in this state will enable/disable the current default scanner. 
-
-**IDLE** - Scanner is in one of the following states: enabled but not yet in the waiting state, in the suspended state by the intent API call or disabled due to the hardware trigger.
-
-**DISABLED** – Scanner is disabled. This will be broadcast by the scanner plug-in when the active Profile becomes disabled or the scanner is disabled with an intent.
 
 **Note**: The `PROFILE_NAME` (of the currently active profile) is returned with `SCANNER_STATUS` to allow the developer to filter scanner events for the required Profile only. 
 

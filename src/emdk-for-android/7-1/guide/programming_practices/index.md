@@ -193,7 +193,8 @@ The following must be declared in the application MAKE file to use the EMDK SDK 
     LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libemdk:com.symbol.emdk/com.symbol.emdk.jar
 
 ##  EMDK as a dependency in build.gradle
-Use this method to make use of the EMDK in a project with a Compile SDK set above API 19.
+
+**To use EMDK in a project**:
 
 1. In the project folder viewer, open the **build.gradle** file for the **app** module.
 2. Add the lines below to the dependencies section.

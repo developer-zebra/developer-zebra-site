@@ -11,8 +11,6 @@ Used to enable/disable the scanner Plug-in being used by the currently active Pr
 
 > **Functional only when Barcode Input is enabled in the active Profile**. 
 
-**<u>Important</u>**: To avoid the unnecessary use of enable/disable scanner API calls, Zebra recommends that apps register to be notified of changes in scanner status using [GET_SCANNER_STATUS API](../getscannerstatus) or the [SCANNER_STATUS parameter](../registerfornotification/#parameters) of REGISTER_FOR_NOTIFICATION API. This enables apps to receive scanner status change notifications immediately rather than having to query and wait for the result, so the app is aware of the current status prior to making any status change. Status change notifications include the active Profile name, which permits an app to use the enable/disable scanner API calls only when status changes affect a relevant profile.  
-
 ### Function Prototype
 
 	Intent i = new Intent();
@@ -28,12 +26,14 @@ Used to enable/disable the scanner Plug-in being used by the currently active Pr
 
 **&lt;parameter**&gt;: The parameter as a string, using either of the following:
 
-* `SUSPEND_PLUGIN` - suspends the scanner when in the enable/waiting/scanning state. [SCANNER_STATUS](../registerfornotification/#parameters) is broadcasted to the user app as in the IDLE state.
-* `RESUME_PLUGIN` - resumes the scanner when in the suspended state from "SUSPEND_PLUGIN"
-* `ENABLE_PLUGIN` - enables the plug-in
-* `DISABLE_PLUGIN` - disables the plug-in. [SCANNER_STATUS](../registerfornotification/#parameters) is broadcasted to the user app as in the DISABLED state.
+* `SUSPEND_PLUGIN` - suspends the scanner when in the enabled/waiting/scanning state. [SCANNER_STATUS](../registerfornotification/#parameters) broadcasts the IDLE state.
+* `RESUME_PLUGIN` - resumes the scanner when in the suspended state from SUSPEND_PLUGIN. [SCANNER_STATUS](../registerfornotification/#parameters) broadcasts the WAITING and SCANNING states, rotating between each depending on whether scanning is taking place.
+* `ENABLE_PLUGIN` - enables the plug-in. [SCANNER_STATUS](../registerfornotification/#parameters) broadcasts the WAITING and SCANNING states, rotating between each depending on whether scanning is taking place.
+* `DISABLE_PLUGIN` - disables the plug-in. [SCANNER_STATUS](../registerfornotification/#parameters) broadcasts the DISABLED state.
 
-**Using SUSPEND_PLUGIN/RESUME_PLUGIN:** When the scanner is in a usable state (for example from a profile configuration or from activation via RESUME_PLUGIN or ENABLE_PLUGIN intent API), [SCANNER_STATUS](../registerfornotification/#parameters) broadcasts the states SCANNING and WAITING. For the app to suspend (temporarily deactivate the scanner), act only when in the SCANNING and WAITING states - when these states are broadcasted, call SUSPEND_PLUGIN intent API to remain in the suspended state and keep the scanner unusable. The IDLE state is broadcasted once suspended. In this state, call RESUME_PLUGIN intent API to re-activate the scanner.
+**<u>Important</u>**: To avoid the unnecessary use of enable/disable scanner API calls, Zebra recommends that apps register to be notified of changes in scanner status using [GET_SCANNER_STATUS API](../getscannerstatus) or [SCANNER_STATUS](../registerfornotification/#parameters) from REGISTER_FOR_NOTIFICATION API. This enables apps to receive scanner status change notifications immediately rather than having to query and wait for the result - therefore the app is aware of the current status prior to making any status change. Status change notifications include the active Profile name, which permits an app to use the enable/disable scanner API calls only when status changes affect a relevant profile.  
+
+**Using SUSPEND_PLUGIN/RESUME_PLUGIN:** This is useful when an app requires the scanner to be suspended or temporarily de-activated. When the scanner is activated (for example from a profile configuration or from RESUME_PLUGIN or ENABLE_PLUGIN intent API), [SCANNER_STATUS](../registerfornotification/#parameters) broadcasts the WAITING and SCANNING states, rotating between each depending on whether scanning is taking place. For the app to suspend scanning, act only when in the SCANNING and WAITING states - when these states are broadcasted, call SUSPEND_PLUGIN intent API to remain in the suspended state and keep the scanner unusable. Once scanning is suspended, SCANNER_STATUS broadcasts the IDLE state. Use RESUME_PLUGIN to re-activate the scanner.
 
 ### Result Codes
 

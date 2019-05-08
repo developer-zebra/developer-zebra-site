@@ -224,7 +224,7 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table"><a href="#gs1qrcode">GS1 QR Code</a></p></td>
 <td align="left" valign="top"><p class="table"><a href="#hanxin">HAN XIN</a></p></td>
-<td align="left" valign="top"><p class="table"><a href="#interleaved2of5">Interleaved 2of5</a></p></td>
+<td align="left" valign="top"><p class="table"><a href="#interleaved2of5">Interleaved 2 of 5</a></p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Japanese Postal</p></td>
@@ -457,19 +457,17 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
  * **Auto (2) -** To decode both mirrored and non-mirrored DotCode barcodes (default).
 
 ------
-### Interleaved 2of5
+### Interleaved 2 of 5
 
-**Length1&#42; -** To decode an Interleaved 2of5 symbol with a specific length range, set this value to the lower limit. For example, to decode Interleaved 2of5 symbols containing between 4 and 12 characters, this value would be set to 4.
+**Length1&#42; -** To decode an Interleaved 2 of 5 symbol with a specific length range, set this value to the lower limit. For example, to decode Interleaved 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 4.
 
-**Length2&#42; -** To decode an Interleaved 2of5 symbol with a specific length range, set this value to the upper limit. For example, to decode Interleaved 2of5 symbols containing between 4 and 12 characters, this value would be set to 12.
+**Length2&#42; -** To decode an Interleaved 2 of 5 symbol with a specific length range, set this value to the upper limit. For example, to decode Interleaved 2 of 5 symbols containing between 4 and 12 characters, this value would be set to 12.
 
 _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **Redundancy -** Sets the reader to read the barcode twice before accepting data.
 
-**Febraban -** To specify whether special check characters are inserted into the transmitted data stream of Interleaved 2of5 barcodes that meet the following requirements:
-1. Contain 14 characters in length.
-2. Meet specific Febraban criteria.
+**Febraban -** Enable or disable insertion of special check characters into the transmitted data stream of Interleaved 2 of 5 barcodes that are of length 14 characters and meet specific Febraban criteria.
 
 ------
 
@@ -477,13 +475,13 @@ _&#42; See **[Decode Lengths section](#decodelengths)**, below_
 
 **No Check Digit -** A check digit is not used.
 
-**USS Check Digit -** Select to check the integrity of all Interleaved 2of5 symbols to verify the data complies with the Uniform Symbology Specification (USS) check digit algorithm.
+**USS Check Digit -** Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with the Uniform Symbology Specification (USS) check digit algorithm.
 
-**OPCC Check Digit -** Select to check the integrity of all Interleaved 2of5 symbols to verify the data complies with the Optical Product Code Council (OPCC) check digit algorithm.
+**OPCC Check Digit -** Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with the Optical Product Code Council (OPCC) check digit algorithm.
 
-**Report Check Digit -** Transmit Interleaved 2of5 data with or without the check digit. A check in the checkbox sends Interleaved 2of5 data with check digit.
+**Report Check Digit -** Transmit Interleaved 2 of 5 data with or without the check digit. A check in the checkbox sends Interleaved 2 of 5 data with check digit.
 
-**Convert ITF-14 To EAN13 -** Convert 14-character Interleaved 2of5 barcodes to EAN-13, and transmit as EAN-13. The Interleaved 2of5 barcode must be enabled and must have a leading zero and a valid EAN-13 check digit. 
+**Convert ITF-14 To EAN13 -** Convert 14-character Interleaved 2 of 5 barcodes to EAN-13, and transmit as EAN-13. The Interleaved 2 of 5 barcode must be enabled and must have a leading zero and a valid EAN-13 check digit. 
 
 ------
 

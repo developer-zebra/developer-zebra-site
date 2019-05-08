@@ -19,10 +19,13 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 #### Mobile devices
 
+* **CC600 - Oreo**
+* **CC6000 - Oreo** 
 * MC33 - Nougat, Oreo
+* **MC9300 - Oreo**
 * PS20 - Oreo
-* TC20 - Nougat, **Oreo** (added Feb., 2019; no device refresh req'd)
-* TC25 - Nougat
+* TC20 - Nougat, **Oreo**
+* TC25 - Nougat, **Oreo**
 * TC51 - Nougat, Oreo
 * TC52 - Oreo
 * TC56 - Nougat, Oreo
@@ -31,8 +34,11 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 * TC72 - Oreo
 * TC75x - Nougat, Oreo
 * TC77 - Oreo
+* **TC8300 - Oreo**
 * VC80x - Nougat, Oreo
 * WT6000 - Nougat
+
+**Bold text** indicates support added after initial release; device refresh might be required. 
 
 #### Scanners and imagers
 
@@ -107,7 +113,7 @@ Note: SAM APIs support only transceiver commands with the SAM. For NFC tag readi
  * **jpegQuality** sets image quality to `.jpeg`.
  * **bpp** sets the bits-per-pixel for a monochromatic image.
 * Added `ScannerConfig.DecoderParams.I2of5` decoder parameter:
- * **febraban** can enable or disable insertion of special "check" characters in the transmitted data stream of Interleaved 2 of 5 barcodes that are of length 14 and meet specific Febraban criteria.
+ * **Febraban** can enable or disable insertion of special "check" characters in the transmitted data stream of Interleaved 2 of 5 barcodes that are of length 14 and meet specific Febraban criteria.
 * **Support for Presentation mode** activates continuous scene detection; scanning begins upon motion detection without a trigger press. Supports the following parameters:
  * enum `SceneDetectionQualifier` under `ScannerConfig` acts as a qualifier for starting scene detection when Presentation is selected as Aim Type.
  * Reader parameter `sceneDetectionQualifier` in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` activates the Presentation mode of scanning based on a Scene Detection Qualifier.

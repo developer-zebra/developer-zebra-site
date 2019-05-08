@@ -199,13 +199,7 @@ The following must be declared in the application MAKE file to use the EMDK SDK 
 1. In the project folder viewer, open the **build.gradle** file for the **app** module.
 2. Add the lines below to the dependencies section. 
 
-    **Windows**
-
-        dependencies {
-            compileOnly 'com.symbol:emdk:x.x.x'
-        ...
-        }
-    **Mac OS X**
+    **Windows or Mac OS X**
 
         dependencies {
             compileOnly 'com.symbol:emdk:x.x.x'

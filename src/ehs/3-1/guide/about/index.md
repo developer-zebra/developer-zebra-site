@@ -124,7 +124,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 </tr>
 

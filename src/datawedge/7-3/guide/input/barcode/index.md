@@ -945,7 +945,7 @@ _**Note**: Higher marginless levels will increase decoding times and the risk of
 
 * **Press and Release -** The scan beam starts when the trigger is pressed and released. The decode session will remain active until the Beam Timer expires or a barcode is decoded.
 
-* **Presentation -** <i>**For future use only**.</i> Automatically activates the scanner and starts scanning immediately when a barcode is presented in its field of view, without any trigger press. 
+* **Presentation -** Automatically activates the scanner and starts scanning immediately when a barcode is presented in its field of view, without any trigger press. 
 
 * **Continuous Read -** A press and hold of the scan trigger will continuously scan barcodes. **Not supported with the Zebra RS507 Bluetooth Ring Scanner**.
 

@@ -2,7 +2,7 @@
 title: Manage USB Configurations
 layout: guide.html
 product: EMDK For Android
-productversion: '7.3'
+productversion: '7.4'
 ---
 
 ## Overview

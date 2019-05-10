@@ -2,7 +2,7 @@
 title: Power Management using Power Manager API
 layout: guide.html
 product: EMDK For Android
-productversion: '7.3'
+productversion: '7.4'
 ---
 
 ## Overview

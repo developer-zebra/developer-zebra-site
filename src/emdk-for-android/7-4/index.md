@@ -1,9 +1,9 @@
 ---
 title: EMDK For Android
 insert:
-  file: emdk-for-android/7-3/guide/about/index.md
+  file: emdk-for-android/7-4/guide/about/index.md
 layout: guide.html
-redirect_url: /emdk-for-android/7-3/guide/about
+redirect_url: /emdk-for-android/7-4/guide/about
 product: EMDK For Android
 productversion: '7.4'
 menu:
@@ -20,22 +20,22 @@ menu:
       label: '4.0'
   items:
     - title: About
-      url: /emdk-for-android/7-3/guide/about
+      url: /emdk-for-android/7-4/guide/about
     - title: Get Started
-      url: /emdk-for-android/7-3/guide/gettingstarted
+      url: /emdk-for-android/7-4/guide/gettingstarted
     - title: Tutorials
-      url: /emdk-for-android/7-3/tutorial/
+      url: /emdk-for-android/7-4/tutorial/
     - title: Samples
-      url: /emdk-for-android/7-3/samples
+      url: /emdk-for-android/7-4/samples
     - title: Guides
-      url: /emdk-for-android/7-3/guide/programming-guides
+      url: /emdk-for-android/7-4/guide/programming-guides
     - title: Profile Manager
-      url: /emdk-for-android/7-3/guide/profile-manager-guides
+      url: /emdk-for-android/7-4/guide/profile-manager-guides
     - title: APIs
-      url: /emdk-for-android/7-3/apimenu
+      url: /emdk-for-android/7-4/apimenu
     - icon: fa fa-comments-o
       url: https://developer.zebra.com/community/home/discussions/emdk
     - icon: fa fa-search
-      url: /emdk-for-android/7-3/search
+      url: /emdk-for-android/7-4/search
 ---
 

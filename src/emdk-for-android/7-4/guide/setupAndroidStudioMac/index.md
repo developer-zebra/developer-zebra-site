@@ -49,7 +49,7 @@ The extracted folder will contain the following files:
 * EMDK Wizard plug-in for Android Studio
 * EMDK device runtime
 
->NOTE: Instructions for installing EmdkOSUpdate on Mac can be found in the [Device Setup](/emdk-for-android/7-3/guide/setupDevice) guide.
+>NOTE: Instructions for installing EmdkOSUpdate on Mac can be found in the [Device Setup](/emdk-for-android/7-4/guide/setupDevice) guide.
 
 ###EMDK SDK add-on Integration
 

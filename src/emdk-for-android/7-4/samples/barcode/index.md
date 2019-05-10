@@ -28,20 +28,20 @@ productversion: '7.4'
 ---
 
 ##Overview
-The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](/emdk-for-android/7-3/api) introduced in EMDK V3.0. These APIs work independently of any [Data Capture profiles](/emdk-for-android/7-3/mx/data-capture/barcode).  
+The EMDK for Android is used when you wish to handle all barcode scanning entirely in Java using [Barcode/Scanning APIs](/emdk-for-android/7-4/api) introduced in EMDK V3.0. These APIs work independently of any [Data Capture profiles](/emdk-for-android/7-4/mx/data-capture/barcode).  
 
 >**Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
 
-The available actions in the [Barcode/Scanning API](/emdk-for-android/7-3/api) are:
+The available actions in the [Barcode/Scanning API](/emdk-for-android/7-4/api) are:
   
-* Set [Scanner Device](/emdk-for-android/7-3/api/barcode/BarcodeManager-DeviceIdentifier/)  
-* Set [TriggerType](/emdk-for-android/7-3/api/barcode/Scanner)
-* Set [Decoder Params](/emdk-for-android/7-3/api/barcode/ScannerConfig-DecoderParams)
-* Set [Reader Params](/emdk-for-android/7-3/api/barcode/ScannerConfig-ReaderParams)
-* Set [Scan Params](/emdk-for-android/7-3/api/barcode/ScannerConfig-ScanParams)
+* Set [Scanner Device](/emdk-for-android/7-4/api/barcode/BarcodeManager-DeviceIdentifier/)  
+* Set [TriggerType](/emdk-for-android/7-4/api/barcode/Scanner)
+* Set [Decoder Params](/emdk-for-android/7-4/api/barcode/ScannerConfig-DecoderParams)
+* Set [Reader Params](/emdk-for-android/7-4/api/barcode/ScannerConfig-ReaderParams)
+* Set [Scan Params](/emdk-for-android/7-4/api/barcode/ScannerConfig-ScanParams)
 * Scan barcodes based on selected features   
 
-This sample application permits barcode scanning based on selected scanner, trigger type and few [Decoder Params](/emdk-for-android/7-3/api/barcode/ScannerConfig-DecoderParams).
+This sample application permits barcode scanning based on selected scanner, trigger type and few [Decoder Params](/emdk-for-android/7-4/api/barcode/ScannerConfig-DecoderParams).
 
 
 
@@ -51,7 +51,7 @@ Android API 22 (or higher) must be installed via the SDK Manager before attempti
 ##Loading the Sample Application
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
-* [Android Studio](/emdk-for-android/7-3/guide/emdksamples_androidstudio)
+* [Android Studio](/emdk-for-android/7-4/guide/emdksamples_androidstudio)
 
 
 ##Using This Sample

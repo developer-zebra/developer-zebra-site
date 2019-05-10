@@ -79,7 +79,7 @@ No new device support added in this version.
 * **Enhanced [UI Manager](../../mx/uimgr)**  now allows an admin to:
  * Control user access to the On-Screen Power Button
  * Control user access to the Status Bar
-* **Enhanced [Wi-Fi](../../mx/uimgr) CSP** can now enable/disable:
+* **Enhanced [Wi-Fi](../../mx/wifi) CSP** can now enable/disable:
   * Aggregated MAC Protocol Data Unit (AMPDU)
   * Gratuitous ARP address resolution protocol
   * 2g Channel Bonding (40MHz-wide channel in 2.4GHz band)

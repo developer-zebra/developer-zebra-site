@@ -11,7 +11,7 @@ EMDK for Android extends the Android Studio IDE for Mac OS and Windows with tool
 
 Also included is Profile Manager, which enhances Android IDE with a GUI-based tool for generating all the code required to access and configure Zebra device features and settings. This enables developers to target Zebra devices with fewer lines of code, fewer errors and reduced overall development time.
 
-> **Important**: Zebra now distributes the EMDK SDK through a JCenter repository, and the EMDK Profile Manager plug-in through the JetBrains plug-in repository. To install, see the [EMDK-A Setup guide](../setup).
+> **Important**: Zebra distributes the EMDK SDK through a JCenter repository, and the EMDK Profile Manager plug-in through the JetBrains plug-in repository. To install, see the [EMDK-A Setup guide](../setup).
 
 -----
 
@@ -60,7 +60,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ## Version History
 
-### Added in v7.3
+### Added in 7.3
 
 * **EMDK for Android 7.3 (and later) has been certified to support [Android Studio 3.4](https://developer.android.com/studio/)**, which was released to the stable channel on Apr. 17.
 * **[Android Intent APIs](../../intents) are now available**. 
@@ -84,7 +84,7 @@ No new device support added in this version.
 * **Enhanced [UI Manager](../../mx/uimgr)**  now allows an admin to:
  * Control user access to the On-Screen Power Button
  * Control user access to the Status Bar
-* **Enhanced [Wi-Fi](../../mx/uimgr) CSP** can now enable/disable:
+* **Enhanced [Wi-Fi](../../mx/wifi) CSP** can now enable/disable:
   * Aggregated MAC Protocol Data Unit (AMPDU)
   * Gratuitous ARP address resolution protocol
   * 2g Channel Bonding (40MHz-wide channel in 2.4GHz band)

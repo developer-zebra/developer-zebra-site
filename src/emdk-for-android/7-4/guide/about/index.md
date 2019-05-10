@@ -54,16 +54,21 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 -----
 
-## New in v7.3
+## New in v7.4 
 
-####`UPDATED APR. 26, 2019:` 
+
+
+## Version History
+
+### Added in v7.3
+
 * **EMDK for Android 7.3 (and later) has been certified to support [Android Studio 3.4](https://developer.android.com/studio/)**, which was released to the stable channel on Apr. 17.
 * **[Android Intent APIs](../../intents) are now available**. 
 
-### Supported Devices
+#### Supported Devices
 No new device support added in this version. 
 
-### New Features
+#### New Features
  
 **Now supports MX 9.0**, which adds the following features and enhancements on devices running Android Oreo 8.1 and newer:
 * **Enhanced [Battery Manager](../../mx/batterymgr)** now allows an admin to:
@@ -98,7 +103,7 @@ No new device support added in this version.
 
 Note: SAM APIs support only transceiver commands with the SAM. For NFC tag reading and tag-related transactions, Zebra recommends using the standard [Android NFC APIs](https://developer.android.com/guide/topics/connectivity/nfc).
 
-### API Enhancements
+#### API Enhancements
 
 **Enhanced Barcode Manager API** adds the following features on devices running Android 8.1 Oreo:
 * Support for GridMatrix Symbology and Label type:
@@ -124,13 +129,11 @@ Note: SAM APIs support only transceiver commands with the SAM. For NFC tag readi
  * New `BarcodeManager.DeviceIdentifier` enum for selecting the DS8178 Bluetooth Scanner.
  * **Digimarc decoding support for rear camera** (formerly supported only on internal imagers).
 
-### Deprecations
+#### Deprecations
 
 **Support ends for SecureNFC APIs**. EMDK-A 7.2 was the final version to support these legacy APIs. For secure NFC transactions with EMDK for Android 7.3, Zebra recommends using Secure Access Module (SAM) APIs.
 
 -----
-
-## Version History
 
 ### Added in 7.2
 

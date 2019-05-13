@@ -2,7 +2,7 @@
 title: Settings
 layout: guide.html
 product: StageNow
-productversion: '3.3'
+productversion: '3.4'
 ---
 
 ## Introduction

@@ -13,7 +13,7 @@ This section provides instructions for installing, uninstalling and upgrading St
 ### Prerequisites
 The following are required to run the StageNow desktop tool:
 
-* A workstation with Microsoft Windows 7 (64 bit) or later
+* A workstation with Microsoft Windows 7 or Windows 10 Pro
 * 2 GB RAM minimum
 * 6 GB minimum available storage (if .NET Framework not already installed)
 * StageNow installer. (See the [StageNow download page](../download)) 

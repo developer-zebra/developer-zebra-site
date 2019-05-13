@@ -6,12 +6,13 @@ productversion: '3.4'
 ---
 
 ## Introduction
-This section provides information on how the staging operator can use the StageNow Workstation Tool and Client to select and read a StageNow bar code or NFC tag, or generate an audio profile, to configure the target devices and deploy the profile material to the devices. 
+This section describes how to use the StageNow desktop and client apps to select and process a StageNow barcode, audio file or NFC tag for configuring one or more target devices and to deploy the profile to the device(s) for later consumption. If the device does not have the StageNow client installed, the [Rapid Deployment Client](#rapiddeploymentclient) can be used instead.
 
-If the device does not include the StageNow Client, use [Rapid Deployment Client](../stageclient?Rapid%20Deployment%20Client) for configuration.
+-----
 
-## Selecting a Profile for Staging
-To select a profile with which to stage the device:
+## I. Select a Staging Profile
+
+**To select a profile with which to stage the device**:
 
 1. On the host computer, select the StageNow icon from the Start menu to open the Workstation Tool. The Staging Operator home screen appears. See [Home Screen](../gettingstarted?Home%20Screen) for field descriptions.
 
@@ -19,12 +20,14 @@ To select a profile with which to stage the device:
 
 2. Select a profile with which to stage the device(s).
 
-## Selecting Staging Material
+-----
 
-### Selecting Barcode or NFC Staging Material
-This method of staging writes the configuration information from the selected profile into bar codes or NFC tags that the client devices read in order to initiate staging. 
+## II. Select Staging Medium
 
-1. Select the Barcode or NFC tab.
+### Barcode, Audio or NFC Staging 
+This method of staging writes the configuration information from the selected profile into barcodes or NFC tags that the client devices read to initiate staging. 
+
+1. Select the "Barcode" or "NFC" tab (see below for "Audio"):
 
    ![img](../images/operator2.jpg)
 
@@ -59,7 +62,7 @@ Navigate to the folder in which to place the audio file and select Save.
 ## Device Staging
 On the device, select the StageNow icon to launch the StageNow Client.
 
-Note: The StageNow Client requires the DataWedge profile to read bar code data, however restoring DataWedge discards the current StageNow configuration. If StageNow can not scan bar codes after restoring DataWedge, exit and re-launch the StageNow Client on the device.
+Note: The StageNow Client requires the DataWedge profile to read barcode data, however restoring DataWedge discards the current StageNow configuration. If StageNow can not scan barcodes after restoring DataWedge, exit and re-launch the StageNow Client on the device.
 
 
 ![img](../images/Client_SNicon.jpg)
@@ -75,15 +78,15 @@ The application lists the available staging methods.
 >MC40 devices do not support NFC, and display the following text for NFC Staging section: Unavailable, No NFC Reader Detected.
 
 
-### Bar Code Staging
-To deploy the selected profile to the device via staging bar codes:
+### barcode Staging
+To deploy the selected profile to the device via staging barcodes:
 
-1. The Barcode Staging option is always on. Scan the bar code(s) printed from the StageNow Workstation Tool.
+1. The Barcode Staging option is always on. Scan the barcode(s) printed from the StageNow Workstation Tool.
 
    ![img](../images/Client_StageBarcode2.jpg)
 
 
-2. The screen indicates the bar codes scanned via a check mark, and the bar codes left to scan. Continue scanning all staging bar codes.
+2. The screen indicates the barcodes scanned via a check mark, and the barcodes left to scan. Continue scanning all staging barcodes.
 
 Upon successful deployment, the device displays the following screen.
 
@@ -158,7 +161,7 @@ Upon a device reboot, MX Framework requires up to 2 minutes to initialize in ord
 
 #### Acquiring IP
 
-The following pop-up appears when the device is acquiring an IP address. This is typically seen during scan-and-dock, when the operator scans a bar code and places the device in an Ethernet cradle. Staging pauses until the device acquires the IP address while it performs network operations, such as downloading a file from the StageNow staging server.
+The following pop-up appears when the device is acquiring an IP address. This is typically seen during scan-and-dock, when the operator scans a barcode and places the device in an Ethernet cradle. Staging pauses until the device acquires the IP address while it performs network operations, such as downloading a file from the StageNow staging server.
 
 ![img](../images/acquiring_ip_popup.png)
 
@@ -231,13 +234,13 @@ Select Dismiss on any screen to dismiss the help.
 
 
 ## Rapid Deployment Client
-Jelly Bean devices and certain KitKat devices include Rapid Deployment (RD) Client rather than StageNow Client. For staging, these devices scan StageNow-generated bar codes using the RD Client. This connects the client to a network, installs MX and StageNow on the device, and launches StageNow to stage/configure the device using the settings specified in the StageNow Workstation Tool. Due to the older OS, these devices only support partial StageNow functionality.
+Jelly Bean devices and certain KitKat devices include Rapid Deployment (RD) Client rather than StageNow Client. For staging, these devices scan StageNow-generated barcodes using the RD Client. This connects the client to a network, installs MX and StageNow on the device, and launches StageNow to stage/configure the device using the settings specified in the StageNow Workstation Tool. Due to the older OS, these devices only support partial StageNow functionality.
 
 Specifically, to stage a device that includes RD Client:
 
-1. The administrator uses the StageNow Workstation Tool to generate RD or StageNow profile bar code(s).
+1. The administrator uses the StageNow Workstation Tool to generate RD or StageNow profile barcode(s).
 
-2. The operator uses the device to scan the bar code(s). This downloads and installs other device components, including MX Framework and the StageNow Client.
+2. The operator uses the device to scan the barcode(s). This downloads and installs other device components, including MX Framework and the StageNow Client.
 
 3. The device reboots, and then StageNow Client automatically launches and completes the staging process in order to apply the profile settings. 
 

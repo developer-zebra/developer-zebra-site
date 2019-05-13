@@ -5,33 +5,22 @@ product: StageNow
 productversion: '3.4'
 ---
 
-## Introduction
-This section provides instructions for installing, uninstalling, and upgrading the StageNow Staging Solution, including system requirements. 
+## Overview
+This section provides instructions for installing, uninstalling and upgrading StageNow for Windows.
 
 -----
 
-## StageNow Workstation Requirements
-Following are the minimum requirements for the host computer to run the StageNow Workstation Tool:
+### Prerequisites
+The following are required to run the StageNow desktop tool:
 
-* Operating system: Microsoft Windows 7 (64 bit)
-
-* Operating memory: 2 GB minimum
-
-* Hard drive storage: 6 GB minimum (if .Net Framework is not already installed)
-
-* Screen resolution: 1366 x 768 (16:9 ratio) recommended
-
-* .Net Framework 4.5
-
-* .Net 4.5.1 is included in the StageNow installation wizard if required, and also available at http://www.microsoft.com
-
-* StageNow Workstation Tool installer, available at http://www.zebra.com/support
-
-* A PDF reader for supporting staging material, Adobe Acrobat Reader recommended.
-
-* Java Runtime (JRE) to use Audio staging
-
-* Wireless network interface card to use the Wi-Fi Hotspot feature
+* A workstation with Microsoft Windows 7 (64 bit) or later
+* 2 GB RAM minimum
+* 6 GB minimum available storage (if .NET Framework not already installed)
+* StageNow installer. (See the [StageNow download page](../download)) 
+* Microsoft .NET Framework 4.5 (included with the StageNow installer)
+* A PDF reader (for displaying and printing staging barcodes)
+* The Java Runtime Environment (for audio staging)
+* Wi-Fi access (for Wi-Fi Hotspot feature)
 
 -----
 
@@ -47,7 +36,7 @@ See [Upgrading the StageNow Workstation Tool](../installing?Upgrading%20the%20St
 
 2. Double-click the setup package file.
 
-3. If you do not already have .Net Framework 4.5, the installation process prompts you to install it.
+3. If you do not already have .NET Framework 4.5, the installation process prompts you to install it.
 
 4. Select Install. When Framework installation completes, a window appears stating that the wizard is preparing to install StageNow.
 

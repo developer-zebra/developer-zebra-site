@@ -32,7 +32,7 @@ menu:
       url: /stagenow/3-4/about
     - title: Get Started
       url: /stagenow/3-4/gettingstarted
-    - title: Installation
+    - title: Install
       url: /stagenow/3-4/installing
     - title: Profiles
       url: /stagenow/3-4/stagingprofiles
@@ -44,7 +44,7 @@ menu:
       url: /stagenow/3-4/settingtypes
     - title: Staging
       url: /stagenow/3-4/stageclient
-    - title: Troubleshooting
+    - title: Troubleshoot
       url: /stagenow/3-4/troubleshooting
     - icon: fa fa-download
       url: /stagenow/3-4/download    

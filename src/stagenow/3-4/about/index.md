@@ -1,5 +1,5 @@
 ---
-title: StageNow 3.3
+title: StageNow 3.4
 layout: guide.html
 product: StageNow
 productversion: '3.4'
@@ -9,9 +9,9 @@ languages:
 
 ---
 
-StageNow 3.3 User Guide, Revision A; StageNow MN-003212; December, 2018
+StageNow 3.4 User Guide, Revision A; StageNow MN-003212; December, 2018
 
-#### Covers StageNow 3.3
+#### Covers StageNow 3.4
 
 ## Overview
 
@@ -30,7 +30,7 @@ The following software must be installed on the staging workstation prior to usi
 
 ## Device Support 
 
-**StageNow v3.3 supports all Zebra devices with the following operating systems and extensions**: 
+**StageNow v3.4 supports all Zebra devices with the following operating systems and extensions**: 
 
 * Android 8.x Oreo
 * Android 7.x Nougat
@@ -43,7 +43,7 @@ The following software must be installed on the staging workstation prior to usi
 * MX 7.0
 
 > `IMPORTANT`:<br> 
-> <u>**StageNow 3.3 supports devices running Android 8.x Oreo and Android 7.x Nougat only**</u>.
+> <u>**StageNow 3.4 supports devices running Android 8.x Oreo and Android 7.x Nougat only**</u>.
 
 -----
 

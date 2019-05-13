@@ -22,6 +22,9 @@ _Note: Unpairing a Bluetooth Scanners peripheral is currently not supported. Zeb
 
 ## New in Device Central 2.1
 * **Hardware scan trigger support** added in the main app screen for [Scan and Pair](../usage/#scanandpair), utilizing DataWedge profile. 
+* **New supported devices:** 
+  * Mobile Devices: CC600
+  * Bluetooth Scanners: DS2278, DS8178
 
 ## Supported Devices
 
@@ -32,6 +35,11 @@ Device Central is approved for use with the following Zebra Android devices:
     <th>Device</th>
     <th style="text-align:center">Android 7.x <br>(Nougat)</th>
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
+  </tr>
+  <tr>
+    <td>CC600</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>ET51/ET56</td>
@@ -96,24 +104,31 @@ Device Central is approved for use with the following Bluetooth peripherals:
 <table class="facelift" style="width:100%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th>Device Category</th>
-    <th>Device Model</th>
+    <th>Zebra Device Model</th>
   </tr>
   <tr>
-    <td rowspan="4">Bluetooth Scanner</td>
-    <td>Zebra RS6000 Bluetooth Ring Scanner</td>
+    <td rowspan="6">Bluetooth Scanner</td>
+    <td>DS2278 Handheld Scanner</td>
+  </tr>
+   <tr>
+    <td>DS3678 Handheld Scanner</td>
+  </tr>
+ 
+  <tr>
+    <td>DS8178 Handheld Imager</td>
   </tr>
   <tr>
-    <td>Zebra RS507/RS507x Ring Scanner</td>
+    <td>LI3678 Handheld Scanner</td>
   </tr>
   <tr>
-    <td>Zebra LI3678 Handheld Scanner</td>
+    <td>RS507/RS507x Ring Scanner</td>
   </tr>
   <tr>
-    <td>Zebra DS3678 Handheld Scanner</td>
+    <td>RS6000 Bluetooth Ring Scanner</td>
   </tr>
   <tr>
     <td>Bluetooth Headset</td>
-    <td>Zebra HS3100 Bluetooth Headset</td>
+    <td>HS3100 Bluetooth Headset</td>
   </tr>
   <tr>
     <td>Bluetooth Printer</td>

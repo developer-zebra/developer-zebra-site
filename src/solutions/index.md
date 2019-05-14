@@ -83,6 +83,8 @@ products:
     versions:
       - url: /devicecentral/2-1/guide/about
         label: '2.1'
+      - url: /devicecentral/2-0/guide/about
+        label: '2.0'
   - title: Device Tracker
     description: A centralized solution to track, find, and prevent misplaced devices within a facility.
     url: /devicetracker
@@ -90,16 +92,18 @@ products:
     btn-text: Latest Docs
     sections:
       - title: About
-        url: /devicetracker/1-0/guide/about
+        url: /devicetracker/2-1/guide/about
       - title: Install & Setup
-        url: /devicetracker/1-0/guide/setup
+        url: /devicetracker/2-1/guide/setup
       - title: Admin View
-        url: /devicetracker/1-0/guide/admin
+        url: /devicetracker/2-1/guide/admin
       - title: Device Management
-        url: /devicetracker/1-0/guide/mgmt
+        url: /devicetracker/2-1/guide/mgmt
       - title: Configuration
-        url: /devicetracker/1-0/guide/config
+        url: /devicetracker/2-1/guide/config
     versions:
+      - url: /devicetracker/2-1/guide/about
+        label: '2.1'
       - url: /devicetracker/1-0/guide/about
         label: '1.0'
   - title: EMM Toolkit

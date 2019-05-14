@@ -8,6 +8,8 @@ productversion: '2.1'
 
 This section describes how to use Device Central. Device Central works only on [specific devices](../about/#supporteddevices) and requires Bluetooth to be enabled on the device. 
 
+**New in Device Central 2.1:** Use of hardware scan trigger to scan and pair. 
+
 ## Pair/Unpair a Peripheral
 
 This section describes how to pair to a peripheral, view the paired devices list, and unpair a peripheral.
@@ -24,16 +26,16 @@ The subsequent sections cover each method to pair the mobile computer to a perip
 
 #### Scan and Pair
 
-Two methods to scan the peripheral’s Bluetooth barcode to pair:
-1. **Hardware trigger** - Press the hardware scan trigger when the main screen is displayed. This feature was introduced in Device Central v2.1.
-2. **Soft trigger** - Press the "Scan barcode to pair" button from the main screen.
+Upon launching Device Central, a DataWedge profile named "DeviceCentral" is created for scanning support. This profile is not intended to be modified - the profile settings are reset to the defaults upon each application launch. The 2 methods to scan the peripheral’s Bluetooth barcode to pair are:
+1. **Hardware trigger** - Press the hardware scan trigger when the main screen is displayed. 
+2. **Soft trigger** - Press the "Scan barcode to pair" button from the main screen. See **Using Soft Trigger** section below.
 
-Details for each method are provided below:
+If any of the following conditions occur in the middle of operation, the hardware and software trigger will not be responsive in Device Central:
+* DataWedge is disabled 
+* "DeviceCentral" profile is disabled 
+* "DeviceCentral" profile is deleted 
 
-**Hardware trigger:**
-Upon launching Device Central, a DataWedge profile named "DeviceCentral" is created. This profile is not intended to be modified - the profile settings are reset to the defaults upon each application launch. If DataWedge is disabled or if the profile is deleted in the middle of operation, the hardware trigger will not be responsive in Device Central.
-
-**Soft trigger:**
+**Using Soft Trigger:**
 
 1. Launch **Device Central** from the Apps menu.
 2. In the **Scan and Pair** tab, tap **Scan barcode to pair** button.
@@ -166,7 +168,9 @@ The **My Device** tab displays information pertaining to the Android device whic
 ##Configuration
 Some features may be controlled through [StageNow](/stagenow/latest/about), an Enterprise Mobility Management (EMM) system (sometimes referred to as Mobile Device Management, or MDM), or a custom application using Zebra's [DeviceCentralMgr CSP](/mx/devicecentralmgr). These features include:
 
-* **Enable/Disable Single Pairing of the Same Device Class**: If enabled, this setting only allows one device to be paired from each device category, such as scanner, headset and printer. If a device is already previously paired and another device of that same category type is being paired, the previously paired device will be automatically unpaired to allow the new device to be paired.
+* **Enable/Disable Single Pairing of the Same Device Class**: If enabled, this setting only allows one device to be paired from each device category, such as scanner, headset and printer. <br>
+_For Bluetooth headsets, mobile payment modules and printers:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will be automatically unpaired to allow the new device to be paired. <br>
+_For Bluetooth scanners:_ If a device is already previously paired and another device of that same category type is being paired, the previously paired device will not be unpaired automatcially and the new device will not be paired until the previous device is disconnected or unpaired.  
 * **Enable/Disable Firmware Update Option**: If enabled, this permits the ability to hide the Firmware Update button to prevent firmware updates from taking place.  
 * **Enable/Disable Bluetooth On/Off Option**: If enabled, this prevents the user from accessing the option to turn the Bluetooth radio on or off. This option is shown below from the **Scan and Pair** screen by tapping on the top right hamburger menu:
 <br>

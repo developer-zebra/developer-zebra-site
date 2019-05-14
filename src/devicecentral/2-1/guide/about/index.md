@@ -23,8 +23,9 @@ _Note: Unpairing a Bluetooth Scanners peripheral is currently not supported. Zeb
 ## New in Device Central 2.1
 * **Hardware scan trigger support** added in the main app screen for [Scan and Pair](../usage/#scanandpair), utilizing DataWedge profile. 
 * **New supported devices:** 
-  * Mobile Devices: CC600
+  * Android Devices: CC600, L10A, VC83
   * Bluetooth Scanners: DS2278, DS8178
+  * Bluetooth Mobile Payment Modules: Verifone
 
 ## Supported Devices
 
@@ -43,6 +44,11 @@ Device Central is approved for use with the following Zebra Android devices:
   </tr>
   <tr>
     <td>ET51/ET56</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>L10A</td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
@@ -91,6 +97,11 @@ Device Central is approved for use with the following Zebra Android devices:
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
+    <tr>
+    <td>VC83</td>
+    <td style="text-align:center"></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
   <tr>
     <td>WT6000</td>
     <td style="text-align:center">&#x25cf;</td>
@@ -134,12 +145,10 @@ Device Central is approved for use with the following Bluetooth peripherals:
     <td>Bluetooth Printer</td>
     <td>Zebra Bluetooth Printers (for example QLN320, ZQ110)</td>
   </tr>
-  <!-- ** Payment Support removed **
   <tr>
-    <td>Bluetooth Payment Terminal</td>
+    <td>Bluetooth Mobile Payment Modules</td>
     <td>Verifone Bluetooth Payment Terminals (for example e355)</td>
   </tr>
-  -->
 </table>
 
 <br>

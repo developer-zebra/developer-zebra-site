@@ -13,17 +13,15 @@ In the [Admin View](../admin) dashboard, click on the **Settings** tab to displa
 
 ###Application Configuration
 * **Server URL** - Server URL address used by the device to communicate with the server. This is entered into the Device Tracker client Settings screen.
-
-* **Change of State Thresholds**:
- * **Low Power Alert Threshold %** - Defines the battery % threshold value. Devices below this threshold value are categorized in Low Battery state as seen in the dashboard. Minimum value: 10, maximum value: 95.
- * **Disconnect Threshold Time** - Defines the amount of time (hours and minutes) to elapse for a device to be considered in the disconnected state due to lack of response from the device within this time frame. Minimum value: 7 min, maximum value: 12 hours.
-
-* **Reporting Frequency** - Defines the frequency in minutes for the Device Tracker client to report to the server. When a device is marked to “To Be Found”, the Reporting Frequency time needs to elapse (eg. minimum of 5 minutes) before starting the device search with the Device Tracker client. This value should be set lower than the **Disconnect Threshold Time**. Minimum value: 5, maximum value: 60.
+* **Low Power Alert Threshold %** - Defines the battery % threshold value. Devices below this threshold value are categorized in Low Battery state as seen in the dashboard. Minimum value: 10, maximum value: 95.
+* **Reporting Frequency** - Defines the frequency in minutes for the Device Tracker client to report to the server. When a device is marked to “To Be Found”, the Reporting Frequency time needs to elapse (eg. minimum of 5 minutes) before starting the device search with the Device Tracker client. If the device does not respond within the defined time frame, it is considered to be in the disconnected state. <!-- This value should be set lower than the **Disconnect Threshold Time**. -->Minimum value: 5, maximum value: 60.
 
 * **Chirping**:
  * **Volume Level** - Specifies the loudness level of the chirping sound to be heard from the device being located. Minimum value: 15, maximum value: 100.
      * **Duration** - Amount of time in seconds for the chirping to sound on the device being located. Minimum value: 1, maximum value: 30.
 
+<!--
+ * **Disconnect Threshold Time** - Defines the amount of time (hours and minutes) to elapse for a device to be considered in the disconnected state due to lack of response from the device within this time frame. Minimum value: 7 min, maximum value: 12 hours. -->
 
 ###Device & Access Point Management
 * **Data Imports** - Import pre-defined Access Point (AP) and device friendly names to aid in locating and identifying devices. It is particularly important for the AP friendly name to be easily understood for users to determine the location within the facility, for example by department name: clothing, produce, household, etc. Steps for data import for both access points and devices:

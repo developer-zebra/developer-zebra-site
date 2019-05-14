@@ -12,7 +12,7 @@ menu:
   items:
     - title: Home
       url: /emdk-for-xamarin/2-7/guide/about
-    - title: Getting Started
+    - title: Get Started
       url: /emdk-for-xamarin/2-7/guide/gettingstarted
     - title: Tutorials
       url: /emdk-for-xamarin/2-7/tutorial/
@@ -24,6 +24,8 @@ menu:
       url: /emdk-for-xamarin/2-7/guide/profile-manager-guides
     - title: APIs
       url: /emdk-for-xamarin/2-7/api
+    - icon: fa fa-download
+      url: /emdk-for-xamarin/2-7/download    
     - icon: fa fa-search
       url: /emdk-for-xamarin/2-7/search
 ---

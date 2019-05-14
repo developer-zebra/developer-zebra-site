@@ -2,6 +2,7 @@
 title: EMDK for Xamarin Downloads
 layout: guide.html
 product: EMDK For Xamarin
+productversion: '2.7'
 ---
 
 ### EMDK Downloads

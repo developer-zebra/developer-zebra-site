@@ -23,7 +23,7 @@ _Note: Unpairing a Bluetooth Scanners peripheral is currently not supported. Zeb
 ## New in Device Central 2.1
 * **Hardware scan trigger support** added in the main app screen for [Scan and Pair](../usage/#scanandpair), utilizing DataWedge profile. 
 * **New supported devices:** 
-  * Android Devices: CC600, L10A, VC83
+  * Android Devices: CC600, EC30, L10A, VC83
   * Bluetooth Scanners: DS2278, DS8178
   * Bluetooth Mobile Payment Modules: Verifone
 
@@ -39,6 +39,11 @@ Device Central is approved for use with the following Zebra Android devices:
   </tr>
   <tr>
     <td>CC600</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>EC30</td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>

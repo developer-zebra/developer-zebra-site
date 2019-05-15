@@ -12,6 +12,39 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
 ## New in Device Tracker 2.1
 * **Disconnect Threshold Time** removed from [Application Configuration](../config/#applicationconfiguration) screen. 
 
+## Version History
+
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th style="text-align:center">Solution<br>Release<br>Version</th>
+    <th style="text-align:center">Server/<br>Client</th>
+    <th style="text-align:center">Version</th>
+    <th style="text-align:center">New Features/Updates</th>
+  </tr>
+  <tr>
+    <td style="text-align:center" rowspan="2">2.1</td>
+    <td style="text-align:center">Server</td>
+    <td style="text-align:center">2.1</td>
+    <td style="text-align:left"><b>Disconnect Threshold Time</b> removed from Application Configuration screen.</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">Client</td>
+    <td style="text-align:center">2.1</td>
+    <td style="text-align:left">Updates for notification messages.</td>
+  </tr>
+  <tr>
+    <td style="text-align:center" rowspan="2">1.0</td>
+    <td style="text-align:center">Server</td>
+    <td style="text-align:center">2.0</td>
+    <td style="text-align:left">Initial release</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">Client</td>
+    <td style="text-align:center">1.0</td>
+    <td style="text-align:left">Initial release</td>
+  </tr>
+  </table>
+
 ##Main Features
 Device Tracker main features:
 *	General location information for all supported WiFi devices based on connected AP

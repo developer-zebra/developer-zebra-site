@@ -57,13 +57,13 @@ The properties tested in each subsystem are discussed in the following subsectio
 Accessible by tapping **Battery** in the Subsystems screen. The following information is retrieved at the time of test execution:  
 
 * Battery Level - percent of remaining battery life 
-* Battery Voltage – voltage of battery 
+* Battery Voltage 
 * Status – battery state of charge: full, charging or discharging 
 * Power Source – USB Power, AC Power or Battery Power 
 * Temperature - battery temperature 
 * Health Percentage – battery health percentage if battery type is PowerPrecision+, otherwise battery charge cycle is displayed 
-* Backup Battery Voltage – voltage of backup battery 
-* Manufacture Date - manufacture date of the battery 
+* Backup Battery Voltage 
+* Manufacture Date - manufacture date of battery 
      
 
 These tests can be used to determine if the battery is over or under temperature, whether there is too much drain on the battery by the device, or whether it is time to replace the battery so corrective action can be made prior to battery failure. 
@@ -75,7 +75,7 @@ Accessible by tapping **GPS** in the Subsystems screen. The following informatio
 * Longitude  
 * Altitude  
 * Bearing – compass direction from current position  
-* Speed  
+* Speed - distance travelled over a given interval of time
 * Signal Quality  
 * Accuracy - provides estimated horizontal accuracy of position, radially (in meters) 
      
@@ -84,7 +84,7 @@ Unlike the other tests which take a snapshot of the system, this test periodical
 
 ###System
 Accessible by tapping **System** in the Subsystems screen. The following information is retrieved at the time of test execution: 
-* CPU Load 
+* CPU Load (%)
 * Free Physical Memory (in MB) 
 * Free Storage (in MB) 
 * Process Count - number of processes currently running 
@@ -112,15 +112,15 @@ Accessible by tapping **WWAN** in the Subsystems screen. The following informati
 * WAN Type 
 * Signal Strength 
 * Phone Number 
-* Device ID     
+* Device ID - MEID (Mobile Equipment Identifier)    
      
 
-This information can be used to determine whether the device WWAN is configured correctly. The test fails if the power to the cell radio is off, the ICCID couldn’t be read, phone number couldn’t be read, registration status could not be found, carrier could not be found, or the signal strength is below 30%.  
+This information can be used to determine whether the device WWAN is configured correctly. The test fails if  any of the following conditions are met: the power to the WAN radio is off, the ICCID (Integrated Circuit Card Identifier) cannot be read from the SIM card, the phone number cannot be read, the registration status cannot be found, the carrier cannot be found, or the signal strength is below 30%.  
 
 
 ###Bluetooth 
 Accessible by tapping **Bluetooth** in the Subsystems screen. The following information is retrieved at the time of test execution: 
-* Enabled – Bluetooth radio is on or off.  If it is on, whether it is discoverable or not.  
+* Enabled – Bluetooth radio is on or off.  
 * Status – paired or not paired 
 * Connectable/Discoverable 
 * Address – Bluetooth address 
@@ -130,10 +130,10 @@ Accessible by tapping **Bluetooth** in the Subsystems screen. The following info
 This test can be used to determine the status of the Bluetooth radio on the device.
 
 <br>
+<br>
+<br>
 
------
-
-Related Guides:
+## See Also
 
 * [About Diagnostic Tool](../about)
 * [Test Criteria](../criteria)

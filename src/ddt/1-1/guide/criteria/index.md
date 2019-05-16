@@ -170,10 +170,10 @@ Diagnostic Tool tests the properties based on the subsystems listed in the follo
 </table>
 
 <br>
+<br>
+<br>
 
------
-
-Related Guides:
+## See Also
 
 * [About Diagnostic Tool](../about)
 * [Usage Guide](../usage)

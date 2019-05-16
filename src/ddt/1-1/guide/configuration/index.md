@@ -25,10 +25,10 @@ A snapshot report of the last test executed is located on the device in file pat
 
 
 <br>
+<br>
+<br>
 
------
-
-Related Guides:
+## See Also
 
 * [About Diagnostic Tool](../about)
 * [Usage Guide](../usage)

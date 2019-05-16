@@ -167,7 +167,7 @@ The SimulScan Input Plug-in default template is now "Default - Barcode4.xml"
 
 * **This version supports devices running Android Lollipop and higher only**. 
 
-* **Supports [multi-barcode input](../input/barcode/#readerparams)** for simultaneous acquisition of more than one barcode at a time (**TC20/TC25 devices only**).  
+* **Supports [multi-barcode input](../input/barcode/#readerparams)** for simultaneous acquisition of more than one barcode at a time.  
 
 * **Enhanced [inter-character delay](../output/keystroke/#keystrokeoutputsetup) function** allows a delay to be specified for all characters or for multi-byte characters only.  
 

@@ -73,7 +73,7 @@ Accessible by tapping **GPS** in the Subsystems screen. The following informatio
 * GPS Provider – status of GPS: enabled, disabled, or not supported
 * Latitude  
 * Longitude  
-* Altitude  
+* Altitude - height above sea level 
 * Bearing – compass direction from current position  
 * Speed - distance travelled over a given interval of time
 * Signal Quality  
@@ -123,7 +123,7 @@ Accessible by tapping **Bluetooth** in the Subsystems screen. The following info
 * Enabled – Bluetooth radio is on or off.  
 * Status – paired or not paired 
 * Connectable/Discoverable 
-* Address – Bluetooth address 
+* Address – Bluetooth MAC address 
 * Name – if defined, displays user defined name. Otherwise displays default device name.   
      
 

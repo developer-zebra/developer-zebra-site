@@ -6,7 +6,9 @@ productversion: '3.4'
 ---
 
 ## Introduction
-This section describes how to use the StageNow desktop and client apps to select and process a StageNow barcode, audio file or NFC tag for configuring one or more target devices and to deploy the profile to the device(s) for later consumption. If the device does not have the StageNow client installed, the [Rapid Deployment Client](#rapiddeploymentclient) can be used instead.
+This section describes how to use the StageNow desktop and client apps to select and process a StageNow barcode, audio file or NFC tag. This process configures target device(s) as desired for an organization and/or persists a settings Profile on the device(s) for later consumption (following an Enterprise Reset, for example). This guide is applicable **<u>after</u> one or more [Profiles](../Profiles) have been created**. 
+
+**NOTE**: Some older target devices come with the Rapid Deployment Client instead of StageNow. This client can be used to upgrade to StageNow, but older OS versions might provide reduced capabilities. For more information, see the [Rapid Deployment Client section](#rapiddeploymentclient) later in this guide. 
 
 -----
 
@@ -58,11 +60,13 @@ If desired, select the Download icon to download the audio file to the host comp
 
 Navigate to the folder in which to place the audio file and select Save.
 
+-----
 
-## Device Staging
-On the device, select the StageNow icon to launch the StageNow Client.
+## Stage Device(s)
 
-Note: The StageNow Client requires the DataWedge profile to read barcode data, however restoring DataWedge discards the current StageNow configuration. If StageNow can not scan barcodes after restoring DataWedge, exit and re-launch the StageNow Client on the device.
+On the target device, select the StageNow icon to launch the StageNow Client.
+
+**Note**: The StageNow Client requires the DataWedge profile to read barcode data, however restoring DataWedge discards the current StageNow configuration. If StageNow can not scan barcodes after restoring DataWedge, exit and re-launch the StageNow Client on the device.
 
 
 ![img](../images/Client_SNicon.jpg)
@@ -78,7 +82,7 @@ The application lists the available staging methods.
 >MC40 devices do not support NFC, and display the following text for NFC Staging section: Unavailable, No NFC Reader Detected.
 
 
-### barcode Staging
+### Barcode Staging
 To deploy the selected profile to the device via staging barcodes:
 
 1. The Barcode Staging option is always on. Scan the barcode(s) printed from the StageNow Workstation Tool.
@@ -232,21 +236,22 @@ Select Dismiss on any screen to dismiss the help.
 
 ![img](../images/AudioHelp3.jpg)
 
+-----
 
 ## Rapid Deployment Client
-Jelly Bean devices and certain KitKat devices include Rapid Deployment (RD) Client rather than StageNow Client. For staging, these devices scan StageNow-generated barcodes using the RD Client. This connects the client to a network, installs MX and StageNow on the device, and launches StageNow to stage/configure the device using the settings specified in the StageNow Workstation Tool. Due to the older OS, these devices only support partial StageNow functionality.
+
+Devices running Jelly Bean and some running older versions of KitKat include the Rapid Deployment (RD) Client instead of StageNow. Such devices can scan a StageNow-generated barcode with the RD Client. This initiates a network connection for installing MX and the StageNow Client on the device and launches StageNow and the specified settings Profile. However, older OS versions might reduce available device functions and/or StageNow features.
 
 Specifically, to stage a device that includes RD Client:
 
 1. The administrator uses the StageNow Workstation Tool to generate RD or StageNow profile barcode(s).
 
-2. The operator uses the device to scan the barcode(s). This downloads and installs other device components, including MX Framework and the StageNow Client.
+2. The operator uses the device to scan the barcode(s). This downloads and installs other device components, including the MX Framework and the StageNow Client.
 
-3. The device reboots, and then StageNow Client automatically launches and completes the staging process in order to apply the profile settings. 
+3. The device reboots, and the StageNow Client automatically launches and applies Profile settings to complete the staging process. 
 
 >Note:  
->This staging process done via the RD Client does not apply to rebranded devices.
-
+>This SD Client staging process does not apply to re-branded devices.
 
 ![img](../images/Client_RDclient.png)
 

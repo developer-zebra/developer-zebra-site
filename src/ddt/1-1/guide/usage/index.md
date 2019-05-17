@@ -109,7 +109,7 @@ This information can be used to determine whether the WLAN is configured correct
 ###WWAN 
 Accessible by tapping **WWAN** in the Subsystems screen. The following information is retrieved at the time of test execution: 
 * SIM State – presence of the SIM card and whether it is locked or unlocked 
-* WAN Type 
+* WAN Type - type of carrier technology in use (e.g. GPRS, CDMA, EDGE, etc.)
 * Signal Strength 
 * Phone Number 
 * Device ID - MEID (Mobile Equipment Identifier)    
@@ -122,9 +122,12 @@ This information can be used to determine whether the device WWAN is configured 
 Accessible by tapping **Bluetooth** in the Subsystems screen. The following information is retrieved at the time of test execution: 
 * Enabled – Bluetooth radio is on or off.  
 * Status – paired or not paired 
-* Connectable/Discoverable 
 * Address – Bluetooth MAC address 
 * Name – if defined, displays user defined name. Otherwise displays default device name.   
+* Connectable/Discoverable - 3 modes: 
+     * None: Both discoverable and connectable modes are disabled on the Bluetooth adapter.
+     * Connectable: Discoverable mode is disabled, connectable mode is enabled on the Bluetooth adapter.
+     * Connectable and discoverable: Both discoverable and connectable modes are enabled on the Bluetooth adapter.
      
 
 This test can be used to determine the status of the Bluetooth radio on the device.

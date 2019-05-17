@@ -38,7 +38,7 @@ Device Central is approved for use with the following Zebra Android devices:
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
   </tr>
   <tr>
-    <td>CC600</td>
+    <td>CC600/CC6000</td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>

@@ -68,7 +68,7 @@ To pair a peripheral manually if unable to pair via Bluetooth:
 
 1. Launch **Device Central** from the Apps menu.
 2. In the **Scan and Pair** tab, tap the **MAC address** field.
-	![img](manual_pair_mac.jpg)
+	![img](mac_address.jpg)
 <br>
 3. Enter in the Bluetooth Mac address for the peripheral to pair to.
 4. When pairing is successful, the peripheral is displayed in the list.  A green dot next to a Bluetooth scanner indicates that the device is connected and may be in use.  Other peripherals such as a Bluetooth headset or printer will have a red dot until the respective application is using these Bluetooth peripherals.

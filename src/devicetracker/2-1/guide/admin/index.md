@@ -31,10 +31,10 @@ Device Tracker tiles:
 
 * Connection state tiles:
  * **Connected** – Filters devices connected to the network.
- * **Not Connected** – Filters devices that have surpassed the Disconnect Threshold Time defined in the Settings tab, designating the device as disconnected from the network and therefore cannot be found. 
+ * **Not Connected** – Filters devices that have not reported to the server within the [Reporting Frequency](../config) time specified in the **Settings** tab, designating those devices as disconnected from the network and therefore cannot be found. 
 
 * Battery status tiles:
- * **Low Battery** – Filters devices that have surpassed the [Low Power Alert Threshold](../config) value defined in the Settings tab and are therefore in low battery state. Low Battery devices require attention to be charged before the battery becomes depleted, preventing loss of device tracking.
+ * **Low Battery** – Filters devices that have surpassed the [Low Power Alert Threshold](../config) value defined in the **Settings** tab and are therefore in low battery state. Low Battery devices require attention to be charged before the battery becomes depleted, preventing loss of device tracking.
      * **On Charge** – Filters devices that are powered and in the charge state. 
 
 A search can be conducted based on device information from the table columns: Status, Connection State, AP Name, Battery State, Device Name, Device Model, Device Serial #, and Tags. In the Active tab, click the magnifying glass to produce a dropdown menu and select the data to search. Depending on the data being searched, additional options may be available for selection to refine the search. If required, enter in the text to search when prompted. When done with the search, select "Clear Search" from the dropdown menu.

@@ -76,7 +76,6 @@ Accessible by tapping **GPS** in the Subsystems screen. The following informatio
 * Altitude - height above sea level 
 * Bearing – compass direction from current position  
 * Speed - distance travelled over a given interval of time
-* Signal Quality  
 * Accuracy - provides estimated horizontal accuracy of position, radially (in meters) 
      
 

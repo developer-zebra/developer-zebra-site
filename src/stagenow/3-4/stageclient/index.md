@@ -109,16 +109,15 @@ If errors occur during deployment, the following pop-up appears. Select Yes to v
 
 **To deploy the selected profile to the device via an audio file**:
 
-1. On the client devices to stage, set the Audio Staging option to On.
+1. On the client devices being staged, set the Audio Staging option to On.
 
     <img alt="image" style="height:350px" src="../images/Client_Staging_Menu.jpg"/>
 
 2. Place the devices near the speaker of the host computer that will play the audio .wav file. 
 
-   >Note:  
-   >For best results, use a desktop speaker in a quiet environment, and ensure there are no obstructions between the speaker and the devices.
+**Note: For best results** use an external speaker in a quiet environment and ensure that there are no obstructions between the speaker and the devices.
 
-3. Play the audio .wav file to initiate staging on the devices.
+3. Play the audio `.wav` file to initiate staging on the devices.
 
     <img alt="image" style="height:350px" src="../images/Client_Audio.jpg"/>
 

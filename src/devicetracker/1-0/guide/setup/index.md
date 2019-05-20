@@ -129,7 +129,7 @@ Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us
 The following are the prerequisites required for the server: <br>
 1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _name.company.com_. An entry with the hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
 
-2. **SSL Certificate.** ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate Procurement](./#servercertificateprocurement) for details.
+2. **SSL Certificate.** ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) for details.
 
 3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator. 
 
@@ -147,7 +147,7 @@ If the server certificate with public key already exists, skip to the second sec
 1. Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source/) for Windows. Follow the instructions stated to download the file based on your Windows configuration.<br>
 2. Add a new "openSSL" environment variable to the Windows system and set the value to the location where openSSL is installed (e.g. "C:\Program Files\OpenSSL-Win64\bin\").<br>
 3. Create a folder named "ServerCert".  Open the command prompt to this folder path.<br>
-4. Create a private key. It prompts to enter the passphrase - _make note of this passphrase_, which is used in Device Tracker. Run the command:  
+4. Create a private key. It prompts to enter the passphrase - _make note of this passphrase_, which is used in Device Tracker. Run the command:  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL genrsa -des3 -out dtrkdemo.key 2048`<br>
 where "dtrkdemo.key" can be replaced with a custom file name.
 5. Create a CSR based on the new private key. Run the command:<br>

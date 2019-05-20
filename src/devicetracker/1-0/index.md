@@ -6,17 +6,17 @@ menu:
   title: Device Tracker
   items:
     - title: About
-      url: /devicetracker/2-1/guide/about
+      url: /devicetracker/1-0/guide/about
     - title: Install & Setup
-      url: /devicetracker/2-1/guide/setup
+      url: /devicetracker/1-0/guide/setup
     - title: Admin View
-      url: /devicetracker/2-1/guide/admin
+      url: /devicetracker/1-0/guide/admin
     - title: Device Tracking
-      url: /devicetracker/2-1/guide/mgmt
+      url: /devicetracker/1-0/guide/mgmt
     - title: Configuration
-      url: /devicetracker/2-1/guide/config
+      url: /devicetracker/1-0/guide/config
     - icon: fa fa-search
-      url: /devicetracker/2-1/search
+      url: /devicetracker/1-0/search
 product: Device Tracker
-productversion: '2.1'
+productversion: '1.0'
 ---

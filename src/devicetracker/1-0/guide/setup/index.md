@@ -129,7 +129,7 @@ Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us
 The following are the prerequisites required for the server: <br>
 1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _name.company.com_. An entry with the hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
 
-2. **SSL Certificate.** ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) for details.
+2. **SSL Certificate.** ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) section for details.
 
 3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator. 
 
@@ -186,7 +186,7 @@ F. Enter in the required fields when prompted:
 1. Create an ssl_certificate.cer file with the command:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs7 -print_certs -in ssl_certificate.p7b -out ssl_certificate.cer`<br>
 where "ssl_certificate.p7b" is the certificate issued by the CA.
-2. Create SSL certificate "ssl_certificate.pfx" with command (using the private key password created from step 4 in the previous section): 
+2. Create SSL certificate "ssl_certificate.pfx" with command (using the private key password created from step 4 in the previous section): <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs12 -export -in ssl_certificate.cer -inkey dtrkdemo.key -out ssl_certificate.pfx`<br>
 where "dtrkdemo.key" is the private key generated from step 4 in the previous section and "ssl_certificate.cer" is the file generated from the previous step 1.
 3. Import the SSL certificate on the server. Double-click the certificate on the local computer and follow the Certificate Import wizard.

@@ -22,8 +22,6 @@ This section describes how to use the StageNow desktop and client apps to select
 
 2. Select a profile with which to stage the device(s).
 
-
-
 -----
 
 ## II. Select Staging Medium
@@ -65,11 +63,11 @@ Navigate to the folder in which to place the audio file and select Save.
 
 -----
 
-## Stage Device(s)
+## III. Stage the Device(s)
 
-On the target device, select the StageNow icon to launch the StageNow Client.
+On the target device, tap on the StageNow icon to launch the StageNow Client.
 
-**Note**: The StageNow Client requires the DataWedge profile to read barcode data, however restoring DataWedge discards the current StageNow configuration. If StageNow can not scan barcodes after restoring DataWedge, exit and re-launch the StageNow Client on the device.
+**Note**: The StageNow Client requires the DataWedge profile to read barcode data. However restoring DataWedge discards the current StageNow configuration. If StageNow cannot scan barcodes after restoring DataWedge, exit and re-launch the StageNow Client on the device.
 
 <img alt="image" style="height:350px" src="../images/Client_SNicon.jpg"/>
 
@@ -77,26 +75,26 @@ The application lists the available staging methods.
 
 <img alt="image" style="height:350px" src="../images/Client_Staging_Menu.jpg"/>
 
->Note:  
->MC40 devices do not support NFC, and display the following text for NFC Staging section: Unavailable, No NFC Reader Detected.
+>**Note: MC40 devices do not support NFC**.
 
+-----
 
 ### Barcode Staging
-To deploy the selected profile to the device via staging barcodes:
+To deploy the selected profile to the device through staging barcodes:
 
 1. The Barcode Staging option is always on. Scan the barcode(s) printed from the StageNow Workstation Tool.
 
     <img alt="image" style="height:350px" src="../images/Client_StageBarcode2.jpg"/>
 
-2. The screen indicates the barcodes scanned via a check mark, and the barcodes left to scan. Continue scanning all staging barcodes.
+2. The screen indicates the barcodes scanned via a check mark, and the barcodes left to scan. Continue scanning all staging barcodes. Upon successful deployment, the device displays the following screen:
 
-Upon successful deployment, the device displays the following screen.
+  <img alt="image" style="height:350px" src="../images/Client_StageBarcode_Success.jpg"/>
 
-    <img alt="image" style="height:350px" src="../images/Client_StageBarcode_Success.jpg"/>
-
-If errors occur during deployment, the following pop-up appears. Select Yes to view Logs for troubleshooting.
+If errors occur during deployment, the pop-up shown below is displayed. Select Yes to view Logs for troubleshooting. 
 
 <img alt="image" style="height:350px" src="../images/stagingfailed.png"/>
+
+-----
 
 ### Audio Staging
 
@@ -121,7 +119,7 @@ If errors occur during deployment, the following pop-up appears. Select Yes to v
 
     <img alt="image" style="height:350px" src="../images/Client_Audio.jpg"/>
 
-The client attempts up to 5 times to stage. If staging does not occur after the fifth attempt, there is an error in audio transmission and the following error popup appears. Select Cancel to cancel staging, Try Again to continue the staging attempts, or Help for audio staging tips.
+The client attempts up to 5 times to stage. If staging does not occur after the fifth attempt, there is an error in audio transmission and the following error pop-up appears. Select Cancel to cancel staging, Try Again to continue the staging attempts, or Help for audio staging tips.
 
   <img alt="image" style="height:350px" src="../images/Client_Audio_Failure.jpg"/>
 
@@ -131,9 +129,45 @@ If errors occur during deployment, the following pop-up appears. Select Yes to v
 
   <img alt="image" style="height:350px" src="../images/Client_Audio_Error.jpg"/>
 
-### NFC Staging
-NFC staging requires that the client device is equipped with an NFC reader.
+-----
 
+### NFC Staging
+
+For NFC staging, the StageNow Workstation tool is used to create a `.bin` file that contains the staging instructions. That file is then written to an NFC tag using the StageNow Writer app for Android. Once created, the NFC tag can then be read by the StageNow Client app running on an Android device equipped with an NFC reader. to perform the device-staging instructions.
+
+requires a client device equipped with an NFC reader. Creating NFC tags for staging requires the following:
+
+* StageNow desktop app
+* StageNow Client Android app
+* StageNow NFC Writer Android app
+
+#### **NFC tag support**
+* ISO 15693 standard:
+ * TITag-it Plus (2048)
+ * NXP I-Code SLI-X
+* ISO 14443 standard:
+ * Mifare Classic 4K
+* ISO/IEC 18092:
+ * Felica RCS965
+
+
+NEW STEPS:
+1. Copy the `.bin` file to the root of the internal SD card on an NFC-equipped device.
+2. Download the StageNow NFC Writer app (v1.3.5 or later) from PlayStore.
+3. Open the StageNow NFC Writer app and navigate to the required `.bin` file copied in Step 1.
+4. After tapping on the `.bin` file, the prompt “Approach Tag” appears in the NFC Writer.
+5. **Touch the NFC Tag to the device** and look for the "Writing NFC Data" prompt. Some tag formats also allow a progress indicator (percent completed) to appear. 
+6. If the tag is written successfully, the "Tag written successfully" prompt appears. 
+
+7. If the size of bin file if larger than tag size you see “Failed to write to Tag” Screen.
+8. Open the StageNow Client on device and make sure that the  NFC Staging switch option is turned on in StageNow Client.
+
+
+9. When the tag is fully programmed, place it in range of device running StageNow Client or tap the Tag to the device , you see following screens :
+
+10. After reading the contents from the tag , the StageNow Client completes the deployment.
+
+OLD OLD OLD
 To deploy the selected profile to the device via NFC tag:
 
 1. On the client devices to stage, set the NFC Staging option to On.

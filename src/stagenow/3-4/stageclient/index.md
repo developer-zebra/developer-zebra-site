@@ -135,7 +135,7 @@ If errors occur during deployment, the following pop-up appears. Select Yes to v
 
 To set up for NFC staging, the StageNow Workstation tool is used to create a `.bin` file that contains the staging instructions. The file is written to an NFC tag using the StageNow Writer app for Android. Once created, the NFC tag can then be read by the StageNow Client app running on an Android device equipped with an NFC reader. 
 
-**Note**: The `.bin` file also can be used to stage from a USB drive or SD card for devices that are not NFC-equipped. [Learn more](../stagingprofiles/#usbandsdcardprofilestaging). 
+**Note**: The `.bin` file used for NFC staging also can be used to stage from a USB drive or SD card on devices that are not NFC-equipped. [Learn more](../stagingprofiles/#usbandsdcardprofilestaging). 
 
 #### Requirements
 * **To perform NFC staging**: 
@@ -153,9 +153,9 @@ The current version of StageNow supports the following NFC tag specifications:
  * TI Tag-it TI2048
  * NXP ICode SLIX
 * ISO 14443:
- * Mifare Classic 4K
+ * MIFARE Classic 4K
 * ISO/IEC 18092:
- * Felica RCS965
+ * FeliCa RC-S965
 
 
 <!-- 
@@ -167,30 +167,30 @@ NFC staging Image2.png
 NFC staging Image9.PNG
  -->
 
-**To create an NFC tag**: 
+####To create an NFC tag: 
 
-1. Copy the `.bin` file to the root of the internal SD card on an NFC-equipped device.<br>
-  The NFC `.bin` file is called "clockset" in the sample screen below: 
+1. **Copy the** `.bin` **file to the root of the internal SD card** on an NFC-equipped device:<br>
     <img alt="image" style="height:350px" src="../images/NFC staging Image3.png"/>
-2. In the StageNow NFC Writer app on the device, navigate to and tap the `.bin` file copied in Step 1.<br>
+  _The sample `.bin` file is called "clockset" in the example above_.<br>  
+2. In the StageNow NFC Writer app on the device, **navigate to and tap the** `.bin` **file** copied in Step 1.<br>
   A screen similar to the image below appears (the "clockset" sample file is shown):
-    <img alt="image" style="height:350px" src="../images/NFC staging Image4.png"/>
-3. When the app displays a prompt to “Approach Tag,” move the device so it's touching the tag to be written.<br>
-  Writing begins automatically and sometimes displays a percentage of completion (depending on tag format):
-    <img alt="image" style="height:350px" src="../images/NFC staging Image5.png"/>
-5. When writing is complete, the "Tag written successfully" prompt appears: 
-    <img alt="image" style="height:350px" src="../images/NFC staging Image6.png"/>
-6. If the size of bin file exceeds available tag storage, a failure message is displayed:
+    <img alt="image" style="height:350px" src="../images/NFC staging Image4.png"/><br>
+3. When the app displays the “Approach Tag” prompt, **touch the device to the target tag**.<br>
+  Writing begins automatically, sometimes displaying a percentage of completion (depending on tag format):
+    <img alt="image" style="height:350px" src="../images/NFC staging Image5.png"/><br>
+5. **Writing is complete when "Tag written successfully" appears**: 
+    <img alt="image" style="height:350px" src="../images/NFC staging Image6.png"/><br>
+6. If the size of `.bin` file exceeds available tag storage or another error occurs, a failure message is displayed:
     <img alt="image" style="height:350px" src="../images/NFC staging Image7.png"/>
 
-#### NFC Tag creation is complete. 
+For more information about creating `.bin` files, see the [Staging Profiles guide](../stagingprofiles/#nfcprofilestaging). 
 
-For more information about creating `.bin` files, see [Staging Profiles](../stagingprofiles/#nfcprofilestaging). 
+-----
 
+#### To stage a device using an NFC tag:
 
-
-7. Open the StageNow Client on device and make sure that the  NFC Staging switch option is turned on in StageNow Client.
-
+1. On the device to be staged, open the StageNow Client and confirm that NFC Staging is enabled:
+  <img alt="image" style="height:350px" src="../images/NFC staging Image8.png"/>
 
 8. When the tag is fully programmed, place it in range of device running StageNow Client or tap the Tag to the device , you see following screens :
 

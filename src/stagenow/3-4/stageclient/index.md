@@ -185,7 +185,7 @@ NFC staging Image9.PNG
 
 #### NFC Tag creation is complete. 
 
-For more information about creating `.bin` files, see [Staging Profiles](../stagingprofiles). 
+For more information about creating `.bin` files, see [Staging Profiles](../stagingprofiles/#nfcprofilestaging). 
 
 
 

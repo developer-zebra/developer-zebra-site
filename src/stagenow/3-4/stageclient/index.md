@@ -90,15 +90,15 @@ To deploy the selected profile to the device through staging barcodes:
 
   <img alt="image" style="height:350px" src="../images/Client_StageBarcode_Success.jpg"/>
 
-If errors occur during deployment, the pop-up shown below is displayed. Select Yes to view Logs for troubleshooting. 
+3. If errors occur during deployment, the pop-up shown below is displayed. Select "Yes" to view logs for troubleshooting. 
 
-<img alt="image" style="height:350px" src="../images/stagingfailed.png"/>
+  <img alt="image" style="height:350px" src="../images/stagingfailed.png"/>
 
 -----
 
 ### Audio Staging
 
-**NOTE: Audio staging is NOT supported on Zebra's "SD660-platform" devices, which currently includes**:
+**NOTE: Audio staging is NOT supported on Zebra's SDM660-platform devices, which currently includes**:
 * PS20
 * TC52
 * TC57
@@ -133,39 +133,68 @@ If errors occur during deployment, the following pop-up appears. Select Yes to v
 
 ### NFC Staging
 
-For NFC staging, the StageNow Workstation tool is used to create a `.bin` file that contains the staging instructions. That file is then written to an NFC tag using the StageNow Writer app for Android. Once created, the NFC tag can then be read by the StageNow Client app running on an Android device equipped with an NFC reader. to perform the device-staging instructions.
+To set up for NFC staging, the StageNow Workstation tool is used to create a `.bin` file that contains the staging instructions. The file is written to an NFC tag using the StageNow Writer app for Android. Once created, the NFC tag can then be read by the StageNow Client app running on an Android device equipped with an NFC reader. 
 
-requires a client device equipped with an NFC reader. Creating NFC tags for staging requires the following:
+**Note**: The `.bin` file also can be used to stage from a USB drive or SD card for devices that are not NFC-equipped. [Learn more](../stagingprofiles/#usbandsdcardprofilestaging). 
 
-* StageNow desktop app
-* StageNow Client Android app
-* StageNow NFC Writer Android app
+#### Requirements
+* **To perform NFC staging**: 
+ * Zebra device equipped with NFC reader
+ * NFC tag containing staging instructions (`.bin` file)
+* **To create NFC tags**:
+ * [StageNow Workstation](../download) (Windows app)
+ * StageNow Client (Android app; pre-installed on Zebra devices)
+ * [StageNow NFC Writer](https://play.google.com/store/apps/details?id=com.zebra.ses.nfcwriter&hl=en_US) 1.3.5 or later (Android app)
 
 #### **NFC tag support**
-* ISO 15693 standard:
- * TITag-it Plus (2048)
- * NXP I-Code SLI-X
-* ISO 14443 standard:
+The current version of StageNow supports the following NFC tag specifications: 
+* ISO 15693:
+ * TI Tag-it HF-1 Plus
+ * TI Tag-it TI2048
+ * NXP ICode SLIX
+* ISO 14443:
  * Mifare Classic 4K
 * ISO/IEC 18092:
  * Felica RCS965
 
 
-NEW STEPS:
-1. Copy the `.bin` file to the root of the internal SD card on an NFC-equipped device.
-2. Download the StageNow NFC Writer app (v1.3.5 or later) from PlayStore.
-3. Open the StageNow NFC Writer app and navigate to the required `.bin` file copied in Step 1.
-4. After tapping on the `.bin` file, the prompt “Approach Tag” appears in the NFC Writer.
-5. **Touch the NFC Tag to the device** and look for the "Writing NFC Data" prompt. Some tag formats also allow a progress indicator (percent completed) to appear. 
-6. If the tag is written successfully, the "Tag written successfully" prompt appears. 
+<!-- 
+NFC staging Image8.png
+NFC staging Image10.png
+NFC staging Image11.png
+NFC staging Image1.png
+NFC staging Image2.png
+NFC staging Image9.PNG
+ -->
 
-7. If the size of bin file if larger than tag size you see “Failed to write to Tag” Screen.
-8. Open the StageNow Client on device and make sure that the  NFC Staging switch option is turned on in StageNow Client.
+**To create an NFC tag**: 
+
+1. Copy the `.bin` file to the root of the internal SD card on an NFC-equipped device.<br>
+  The NFC `.bin` file is called "clockset" in the sample screen below: 
+    <img alt="image" style="height:350px" src="../images/NFC staging Image3.png"/>
+2. In the StageNow NFC Writer app on the device, navigate to and tap the `.bin` file copied in Step 1.<br>
+  A screen similar to the image below appears (the "clockset" sample file is shown):
+    <img alt="image" style="height:350px" src="../images/NFC staging Image4.png"/>
+3. When the app displays a prompt to “Approach Tag,” move the device so it's touching the tag to be written.<br>
+  Writing begins automatically and sometimes displays a percentage of completion (depending on tag format):
+    <img alt="image" style="height:350px" src="../images/NFC staging Image5.png"/>
+5. When writing is complete, the "Tag written successfully" prompt appears: 
+    <img alt="image" style="height:350px" src="../images/NFC staging Image6.png"/>
+6. If the size of bin file exceeds available tag storage, a failure message is displayed:
+    <img alt="image" style="height:350px" src="../images/NFC staging Image7.png"/>
+
+#### NFC Tag creation is complete. 
+
+For more information about creating `.bin` files, see [Staging Profiles](../stagingprofiles). 
 
 
-9. When the tag is fully programmed, place it in range of device running StageNow Client or tap the Tag to the device , you see following screens :
 
-10. After reading the contents from the tag , the StageNow Client completes the deployment.
+7. Open the StageNow Client on device and make sure that the  NFC Staging switch option is turned on in StageNow Client.
+
+
+8. When the tag is fully programmed, place it in range of device running StageNow Client or tap the Tag to the device , you see following screens :
+
+9. After reading the contents from the tag , the StageNow Client completes the deployment.
 
 OLD OLD OLD
 To deploy the selected profile to the device via NFC tag:

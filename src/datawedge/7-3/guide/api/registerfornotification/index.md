@@ -9,7 +9,12 @@ productversion: '7.3'
 
 Introduced in DataWedge 6.4. 
 
-Used to register/unregister an app to receive a notification when the status of a DataWedge parameter changes by means of an intent. **This function does not monitor changes made using the device UI**. 
+Enables apps to register or unregister to receive notifications for status changes related to configuration, scanner, and profile switching. These status changes result from DataWedge API calls such as [IMPORT_CONFIG](../importconfig), [SWITCH_TO_PROFILE](../switchtoprofile), and [SCANNER_INPUT_PLUGIN](../scannerinputplugin).
+
+
+<!--
+
+Used to register/unregister an app to receive a notification when the status of a DataWedge parameter changes by means of an intent. **This function does not monitor changes made using the device UI**. -->
 
 ### Function Prototype
 

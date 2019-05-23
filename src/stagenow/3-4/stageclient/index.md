@@ -157,17 +157,7 @@ The current version of StageNow supports the following NFC tag specifications:
 * ISO/IEC 18092:
  * FeliCa RC-S965
 
-
-<!-- 
-NFC staging Image8.png
-NFC staging Image10.png
-NFC staging Image11.png
-NFC staging Image1.png
-NFC staging Image2.png
-NFC staging Image9.PNG
- -->
-
-####To create an NFC tag: 
+#### To create an NFC tag: 
 
 1. **Copy the** `.bin` **file to the root of the internal SD card** on an NFC-equipped device:<br>
     <img alt="image" style="height:350px" src="../images/NFC staging Image3.png"/>
@@ -180,8 +170,8 @@ NFC staging Image9.PNG
     <img alt="image" style="height:350px" src="../images/NFC staging Image5.png"/><br>
 5. **Writing is complete when "Tag written successfully" appears**: 
     <img alt="image" style="height:350px" src="../images/NFC staging Image6.png"/><br>
-6. If the size of `.bin` file exceeds available tag storage or another error occurs, a failure message is displayed:
-    <img alt="image" style="height:350px" src="../images/NFC staging Image7.png"/>
+
+#### NFC tag writing is complete.  
 
 For more information about creating `.bin` files, see the [Staging Profiles guide](../stagingprofiles/#nfcprofilestaging). 
 
@@ -195,45 +185,46 @@ For more information about creating `.bin` files, see the [Staging Profiles guid
 2. Touch the device to the fully programmed NFC tag. After a moment, the following screens appear: 
   <img alt="image" style="height:350px" src="../images/NFC staging 9, 10, 11.png"/>
 
-3. Follow additional prompts to complete staging deployment. 
+3. Follow prompts to complete staging deployment. 
+
+#### NFC Staging is complete. 
 
 -----
 
-OLD OLD OLD
-To deploy the selected profile to the device via NFC tag:
+#### NFC Errors
 
-1. On the client devices to stage, set the NFC Staging option to On.
+* If the size of `.bin` file exceeds available tag storage or another error occurs, a failure message is displayed:
+    <img alt="image" style="height:350px" src="../images/NFC staging Image7.png"/>
 
-  <img alt="image" style="height:350px" src="../images/Client_NFCdisabled.jpg"/>
 
-2. Read the NFC tag containing the exported profile data. Refer to the NFC documentation for the appropriate method. The client device returns to the previous application while it processes the tag.
-
-Upon successful deployment, the device displays the success screen.
-
-If errors occur during deployment, the following pop-up appears. Select Yes to view Logs for troubleshooting.
+* If an error occurs during deployment, a pop-up like the image below appears. Select "Yes" to view the activity log for troubleshooting.
 
   <img alt="image" style="height:350px" src="../images/Client_NFC_Error.jpg"/>
+
+-----
 
 ### Staging Wait Conditions
 The following pop-up screens can appear during staging, indicating the device is performing an operation and that staging will complete when it is done.
 
 #### Initializing
 
-Upon a device reboot, MX Framework requires up to 2 minutes to initialize in order to prepare for staging. If staging is initiated during this time, the StageNow Client indicates this via the following pop-up.
+Following a device reboot, Zebra components such as the MX Framework can require as much as two minutes to initialize and prepare for staging. If staging is initiated during this time, the StageNow Client indicates displays a pop-up similar to the image below: 
 
   <img alt="image" style="height:350px" src="../images/initializing_popup.png"/>
 
 #### Acquiring IP
 
-The following pop-up appears when the device is acquiring an IP address. This is typically seen during scan-and-dock, when the operator scans a barcode and places the device in an Ethernet cradle. Staging pauses until the device acquires the IP address while it performs network operations, such as downloading a file from the StageNow staging server.
+A delay can sometimes occur if staging requires an IP address, such as during "scan-and-dock," when the operator scans a barcode and places the device in an Ethernet cradle. Staging pauses until the device acquires the IP address and performs network operations such as downloading a file from the StageNow staging server. under such scenarios, a pop-up appears similar to the image below:
 
   <img alt="image" style="height:350px" src="../images/acquiring_ip_popup.png"/>
 
 #### Downloading
 
-The following pop-up indicates that the client is processing a staging profile that contains a setting to download some content from the staging server (particularly an OS update package).
+The pop-up shown below indicates that the client is processing a staging profile that contains a command to download content from a staging server. This often indicates an OS update package.
 
   <img alt="image" style="height:350px" src="../images/file_download.png"/>
+
+-----
 
 ## StageNow Client Menu
 In the StageNow application, select the three vertical dots at the top right of the window to open the StageNow menu.
@@ -241,18 +232,15 @@ In the StageNow application, select the three vertical dots at the top right of 
   <img alt="image" style="height:350px" src="../images/Client_Menu.jpg"/>
 
 ### Last Staging Error
-If staging fails, a screen appears indicating this.
-
-To review the log to determine the cause of the error, select Yes from the staging failure screen, or from the StageNow Client menu, select Last Staging Error.
+If staging fails, a screen similar to the image below appears. To troubleshoot, review the log to determine the cause of the error by selecting "Yes" from the staging failure screen. To view the log later, select "Last Staging Error" from the StageNow Client menu. 
 
   <img alt="image" style="height:350px" src="../images/Client_StageBarcode_LogSettings_View.jpg"/>
 
-Locate the error(s) in the log. Refer to the characteristic-error or parm-error in the log contents.
+**HINT**: To identify the error(s) in the log, refer to the characteristic-error or parm-error in the log contents.
 
->Note:  
->The Last Staging Error screen displays content only if there are errors in the staging operation. If the staging operation is successful, this screen is empty.
+>**Note**: The Last Staging Error screen displays content only if there are errors in the staging operation. If the staging operation is successful, this screen is empty.
 
-#### Log Path
+### Log Path
 
 To configure the log file path, select the menu icon and select Log Path. 
 

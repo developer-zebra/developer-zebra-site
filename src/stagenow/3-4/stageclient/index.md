@@ -192,9 +192,12 @@ For more information about creating `.bin` files, see the [Staging Profiles guid
 1. On the device to be staged, open the StageNow Client and confirm that NFC Staging is enabled:
   <img alt="image" style="height:350px" src="../images/NFC staging Image8.png"/>
 
-8. When the tag is fully programmed, place it in range of device running StageNow Client or tap the Tag to the device , you see following screens :
+2. Touch the device to the fully programmed NFC tag. After a moment, the following screens appear: 
+  <img alt="image" style="height:350px" src="../images/NFC staging 9, 10, 11.png"/>
 
-9. After reading the contents from the tag , the StageNow Client completes the deployment.
+3. Follow additional prompts to complete staging deployment. 
+
+-----
 
 OLD OLD OLD
 To deploy the selected profile to the device via NFC tag:

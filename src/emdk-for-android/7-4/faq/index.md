@@ -13,7 +13,7 @@ Zebra's Enterprise Mobility Development Kit for Android extends the Android Stud
 
 ### Q: Why did the scanner stop working when switching apps?
 
-##### A: Control of scanning hardware is exclusive. When a scanning app takes control of scanning on the device, no other app can access any scanner on the device until control is programmatically released when the app quits or goes to the background. [Learn how](../barcode_scanning_guide/#5releasescanner). 
+##### A: Control of scanning hardware is exclusive. When a scanning app takes control of scanning on the device, no other app can access any scanner on the device until control is programmatically released when the app quits or goes to the background. [Learn how](../guide/barcode_scanning_guide/#5releasescanner). 
 
 -----
 
@@ -38,7 +38,7 @@ Zebra's Enterprise Mobility Development Kit for Android extends the Android Stud
 ### Q: What is an OemConfig Schema? 
 
 A: An OemConfig Schema is the Managed Configuration Schema that defines the Managed Configurations exposed by an OemConfig application running on a device manufactured by the corresponding OEM. 
-
+ 
 -----
 
 ## See Also

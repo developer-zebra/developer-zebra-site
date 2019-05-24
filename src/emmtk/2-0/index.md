@@ -7,7 +7,7 @@ menu:
   items:
     - title: About
       url: /emmtk/2-0/guide/about
-    - title: FAQ
+    - title: FAQs
       url: /emmtk/2-0/guide/faq
     - title: Port
       url: /emmtk/2-0/guide/port

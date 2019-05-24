@@ -5,27 +5,27 @@ product: EMDK for Android
 productversion: '7.4'
 ---
 
-## Overview
+## About the FAQ 
 
 Zebra's Enterprise Mobility Development Kit for Android extends the Android Studio IDE for Mac OS and Windows with tools for easily creating apps for Zebra Android devices. This page presents some of the most commonly asked questions by Zebra customers and partners according to Zebra customer support along with links to the relevant documentation. 
 
 -----
 
-**Q: What is OemConfig?**
+### Q: Why did my scanner stop working?
 
-A: OemConfig is a Google-sanctioned, standards-based approach for an OEM to extend the capabilities of an Android Enterprise (AE) Device Owner (DO) Device Policy Controller (DPC) running on an Android device by using a OEM-provided application that exposes Managed Configurations as means to access OEM-specific and privileged functions that are not provided via standard Android Enterprise APIs, such as the DevicePolicyManager. 
-
------
-
-**Q: What is Zebra OemConfig?**
-
-A: Zebra OemConfig is Zebra’s OEM-specific application that conforms to the OemConfig model and provides access to Zebra-specific and privileged functions via Managed Configurations that are exposed by the Zebra OemConfig application, which is built-into Zebra Android devices. 
+##### A: Because you need to surrender the resource when finished using it. 
 
 -----
 
-**Q: What are Managed Configurations?** 
+### Q: What is Zebra OemConfig?
 
-A: Managed Configurations are a standard feature of Android Enterprise whereby any application that is installed on an Android device can choose to expose a set of name/value pairs that can be used to configure selected aspects of that application. 
+##### A: Zebra OemConfig is Zebra’s OEM-specific application that conforms to the OemConfig model and provides access to Zebra-specific and privileged functions via Managed Configurations that are exposed by the Zebra OemConfig application, which is built-into Zebra Android devices. 
+
+-----
+
+#### Q: What are Managed Configurations?
+
+##### A: Managed Configurations are a standard feature of Android Enterprise whereby any application that is installed on an Android device can choose to expose a set of name/value pairs that can be used to configure selected aspects of that application. 
 
 -----
 

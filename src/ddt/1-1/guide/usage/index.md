@@ -69,7 +69,7 @@ Accessible by tapping **Battery** in the Subsystems screen. The following inform
 These tests can be used to determine if the battery is over or under temperature, whether there is too much drain on the battery by the device, or whether it is time to replace the battery so corrective action can be made prior to battery failure. 
 
 ###GPS
-Accessible by tapping **GPS** in the Subsystems screen. The following information is retrieved at the time of test execution if GPS is supported on the device: 
+Accessible by tapping **GPS** in the Subsystems screen. If GPS is supported on the device, the following information is retrieved at the time of test execution: 
 * GPS Provider – status of GPS: enabled, disabled, or not supported
 * Latitude  
 * Longitude  

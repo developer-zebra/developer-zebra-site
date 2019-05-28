@@ -4,10 +4,10 @@ title: GPRS Settings
 description: Shows how to add/replace a named APN and remove an existing named APN.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3'
 features:
   - Profile Manager
   - GPRS Manager

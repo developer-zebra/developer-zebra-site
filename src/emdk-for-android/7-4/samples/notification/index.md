@@ -4,10 +4,10 @@ title: Notification
 description: Shows how to use the Notification APIs.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3'
 features:
   - Java APIs
 devices:

@@ -4,10 +4,10 @@ title: Rebooting The Device
 description: Shows how to set the power state to "Suspend" (sleep mode) or to "Reset" (reboot) the device.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3'
 features:
   - Profile Manager
   - Power Manager

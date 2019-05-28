@@ -39,6 +39,6 @@ Zebra's Enterprise Mobility Development Kit for Android extends the Android Stud
 
 * **[Barcode Scanning Guide](../guide/barcode_scanning_guide/#5releasescanner)** | Recommendations for EMDK Barcode API usage
 * **[General Programming Practices](../guide/programming_practices/)** | Recommendations for building scanning apps 
-
+* **[EMDK vs. DataWedge](http://techdocs.zebra.com/help/#datawedgevsemdkcomparison)** | Which tool is best? A side-by-side comparison
 
 

@@ -4,10 +4,10 @@ title: Barcode APIs
 description: Shows how to scan barcodes based on selected scanner device, trigger type and a few decoder parameters.
 downloads:
   - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0/archive/master.zip'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3/archive/master.zip'
 sources:
   - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-7_0'
+    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3'
 features:
   - Profile Manager
   - Barcode

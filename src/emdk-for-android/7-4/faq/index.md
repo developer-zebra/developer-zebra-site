@@ -31,13 +31,13 @@ Zebra's Enterprise Mobility Development Kit for Android extends the Android Stud
 
 ### Q: Zebra APIs appear to offer limited fault tolerance. How can my app adapt to this?
 
-##### A: Perform an API retry or gracefully exit the app. 
+##### A: Retry the API command or gracefully exit the app. 
 
 -----
 
 ### Q: Why do my apps display Application Not Responding (ANR) message so often? 
 
-##### A: ANR errors often occur when too many threads are spawned on the main activity. Try spawning new threads instead of starting them all in the main activity. 
+##### A: ANR errors often occur when too many threads are spawned on the main activity. Try spawning new threads in a separate process instead of the main activity. 
  
 -----
 

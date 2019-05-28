@@ -20,22 +20,22 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Export
-      description: Exports data collected during the current Worry Free Wi-Fi analysis session to a file in the device file system.
+      description: Exports data collected during the current WorryFree Wi-Fi analysis session to a file in the device file system.
     - code: 2
       mx: "8.2"
       devicetype: A
       name: Clear
-      description: Discards any data accumulated from the current Worry Free Wi-Fi analysis session. 
+      description: Discards any data accumulated from the current WorryFree Wi-Fi analysis session. 
     - code: 1
       mx: "8.2"
       devicetype: A
       name: Stop
-      description: Terminates the current Worry Free Wi-Fi analysis session. 
+      description: Terminates the current WorryFree Wi-Fi analysis session. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Start
-      description: Starts a new Worry Free Wi-Fi analysis session, terminating any session previously in progress. 
+      description: Starts a new WorryFree Wi-Fi analysis session, terminating any session previously in progress. 
 ---
 
 Used to select the Action to perform on the device. 

@@ -19,29 +19,26 @@ A: Control of scanning hardware is exclusive. When a scanning app takes control 
 
 ### Q: Why don't my KitKat and Lollipop apps work with Nougat or Oreo?
 
-A: Due to the many advancements in newer Android versions, some older apps require modification to run properly on newer flavors. Among the common causes of incompatibility of older apps relate to changes in background processing implemented mainly to optimize battery life. Some links to developer.android.com that might be helpful: 
+A: Due to the many advancements in newer Android versions, some older apps require modification to run properly on newer flavors. Among the common causes of incompatibility of older apps relate to changes in background processing implemented mainly to optimize battery life. `MORE INFO NEEDED FROM ENGINEERING`
+
+
+**Helpful** `developer.android.com` **links**: 
 
 * [Android 7 Nougat behavior changes](https://developer.android.com/about/versions/nougat/android-7.0-changes)
 * [Migrating to Android 8 Oreo](https://developer.android.com/about/versions/oreo/android-8.0-migration)
 * [Migrating to Android 9 Pie](https://developer.android.com/about/versions/pie/android-9.0-migration). 
 
-`MORE INFO NEEDED FROM ENGINEERING`
-
 -----
 
 ### Q: Zebra APIs appear to offer limited fault tolerance. How can my app adapt to this?
 
-A: Retry the API command or gracefully exit the app. 
-
-`MORE INFO NEEDED FROM ENGINEERING`
+A: Retry the API command or gracefully exit the app.  `MORE INFO NEEDED FROM ENGINEERING`
 
 -----
 
 ### Q: Why do my apps display Application Not Responding (ANR) message so often? 
 
-A: ANR errors often occur when too many threads are spawned on the main activity. Try spawning new threads in a separate process instead of the main activity. 
-
-`MORE INFO NEEDED FROM ENGINEERING`
+A: ANR errors often occur when too many threads are spawned on the main activity. Try spawning new threads in a separate process instead of the main activity. `MORE INFO NEEDED FROM ENGINEERING`
  
 -----
 

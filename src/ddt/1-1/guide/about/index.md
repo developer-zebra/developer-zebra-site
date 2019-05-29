@@ -14,7 +14,10 @@ Diagnostic Tool instantly tests and diagnoses the operability of the main device
 * **System** - Provides information regarding CPU, memory, storage, and number of processes running.
 * **WLAN** – Provides information regarding: WLAN state (enable/disabled), connection status, ESSID, BSSID, MAC Address, signal strength, and IP address.
 * **WAN** – Provides information regarding: SIM state, WAN type, signal strength, phone number, and device ID.
-* **Bluetooth** – Provides information regarding: Bluetooth state (on/off), status (paired/unpaired), connectable/discoverable, Bluetooth address, and name.
+* **Bluetooth** – Provides information regarding: Bluetooth state (on/off), status (paired/unpaired), connectable/discoverable, Bluetooth address, and name. <br><br>
+
+When using multiple Android user accounts on a single device, Diagnostic Tool use and functionality only applies to the active primary user.
+
 
 ## Supported Devices
 Diagnostic Tool is pre-installed on all supported Zebra devices. 

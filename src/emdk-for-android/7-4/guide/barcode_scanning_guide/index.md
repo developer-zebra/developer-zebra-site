@@ -20,12 +20,13 @@ The `BarcodeManager` is the primary object to enumerate the supported scanner de
 * **For scanning, apps should use either the EMDK barcode APIs or DataWedge** <u>but NOT both at the same time</u>. When an EMDK app uses the barcode APIs, DataWedge is disabled until the app releases scanning resources. [Here's how](#5releasescanner).   
 * **The** `EMDKManager` > `BarcodeManager` **takes precedence** over DataCapture. 
 * **Control of scanning hardware is exclusive**. When a scanning app takes control of a scanner, it must release it when quitting or going to the background before other apps can access any scanner on the device. **<u>Failure of a scanning app to release scanner resources prevents all other apps from scanning</u>**.
-* **Similarly, if** `BarcodeManager` **is used in an app, it must be explicitly released** before any other application (including DataWedge) can access scanners.
+* Similarly, if `BarcodeManager` is used in an app, it must be explicitly released before any other application (including DataWedge) can access scanning resources on the device.
+* **When a scanner is disconnected and reconnected**, calling any method on the barcode object results in an `INVALID_OBJECT` error. As a remedy, register the application for connection notifications so it can be notified of subsequent connections. Then programmatically re-initialize the scanner as needed.
+* **If a Bluetooth Scanner is not paired**, enabling that scanner automatically launches the pairing utility, prompting the user to scan a barcode (displayed on the mobile device) to pair the scanner with the mobile device.
+
 <!-- 5/29/19- removed  per engineering. 
 * **Disabling the scanner immediately cancels any pending read in progress** and closes the session, giving other applications access to scanners. 
  -->
-* **When a scanner is disconnected and reconnected**, calling any method on the barcode object results in an `INVALID_OBJECT` error. As a remedy, register the application for connection notifications so it can be notified of subsequent connections. Then programmatically re-initialize the scanner as needed.
-* **If a Bluetooth Scanner is not paired**, enabling that scanner automatically launches the pairing utility, prompting the user to scan a barcode (displayed on the mobile device) to pair the scanner with the mobile device.
 
 -----
 

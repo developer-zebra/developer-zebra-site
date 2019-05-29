@@ -19,7 +19,11 @@ A: Control of scanning hardware is exclusive. When a scanning app takes control 
 
 ### Q: Why don't my KitKat and Lollipop apps work with Nougat or Oreo?
 
-A: Due to the many advancements in newer Android versions, some older apps require modification to run properly on newer flavors. Among the common causes of incompatibility of older apps relate to changes in background processing implemented mainly to optimize battery life. Learn more about [app migration at developer.android.com](https://developer.android.com/about/versions/pie/android-9.0-migration). 
+A: Due to the many advancements in newer Android versions, some older apps require modification to run properly on newer flavors. Among the common causes of incompatibility of older apps relate to changes in background processing implemented mainly to optimize battery life. Some links to developer.android.com that might be helpful: 
+
+* [Android 7 Nougat behavior changes](https://developer.android.com/about/versions/nougat/android-7.0-changes)
+* [Migrating to Android 8 Oreo](https://developer.android.com/about/versions/oreo/android-8.0-migration)
+* [Migrating to Android 9 Pie](https://developer.android.com/about/versions/pie/android-9.0-migration). 
 
 `MORE INFO NEEDED FROM ENGINEERING`
 

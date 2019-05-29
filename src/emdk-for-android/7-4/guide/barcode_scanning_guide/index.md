@@ -19,7 +19,7 @@ The `BarcodeManager` is the primary object to enumerate the supported scanner de
 
 * **For scanning, apps should use either the EMDK barcode APIs or DataWedge** <u>but NOT both at the same time</u>. When an EMDK app uses the barcode APIs, DataWedge is disabled until the app releases scanning resources. [Here's how](#5releasescanner).   
 * **The** `EMDKManager` > `BarcodeManager` **takes precedence** over DataCapture. 
-* **Control of scanning hardware is exclusive**. When a scanning app takes control of a scanner, it must release it when quitting or going to the background before other apps can access any scanner on the device. **<u>Failure of a scanning app to release scanner resources prevents all other apps from scanning</u>**. 
+* **Control of scanning hardware is exclusive**. When a scanning app takes control of a scanner, it must release it when quitting or going to the background before other apps can access any scanner on the device. **<u>Failure of a scanning app to release scanner resources prevents all other apps from scanning</u>**.
 * **Similarly, if** `BarcodeManager` **is used in an app, it must be explicitly released** before any other application (including DataWedge) can access scanners.
 <!-- 5/29/19- removed  per engineering. 
 * **Disabling the scanner immediately cancels any pending read in progress** and closes the session, giving other applications access to scanners. 

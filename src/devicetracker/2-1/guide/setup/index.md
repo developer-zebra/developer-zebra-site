@@ -123,7 +123,7 @@ Supported Devices (including GMS and non-GMS versions):
 
 
 ##Server Install & Setup
-Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html).<!--[Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html)--> Install ZDVC server on the supported system that meets the specified requirements. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html).<!--[Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html)--> Install ZDVC server on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ###Server Prerequisites
 The following are the prerequisites required for the server: <br>

@@ -24,7 +24,7 @@ In the [Admin View](../admin) dashboard, click on the **Settings** tab to displa
  * **Disconnect Threshold Time** - Defines the amount of time (hours and minutes) to elapse for a device to be considered in the disconnected state due to lack of response from the device within this time frame. Minimum value: 7 min, maximum value: 12 hours. -->
 
 ###Device & Access Point Management
-* **Data Imports** - Import pre-defined Access Point (AP) and device friendly names to aid in locating and identifying devices. It is particularly important for the AP friendly name to be easily understood for users to determine the location within the facility, for example by department name: clothing, produce, household, etc. Steps for data import for both access points and devices:
+* **Data Imports** - Import pre-defined Access Point (AP) and device friendly names to aid in locating and identifying devices using .CSV files. It is particularly important for the AP friendly name to be easily understood for users to determine the location within the facility, for example by department name: clothing, produce, household, etc. Importing data either modifies or adds entries to the existing database. Steps for data import for both access points and devices:
     1.	Download the supplied template by clicking on “Download Sample” next to the appropriate category.
     2.	Open the .csv file. Fill in the necessary information and save changes.  
     3.	Tap on “Upload CSV File” next to the appropriate category. Browse and select the updated file. 

@@ -30,7 +30,7 @@ When developing an app, Android developers can specify in the app manifest a tar
 * [Migrating to Android 8 Oreo](https://developer.android.com/about/versions/oreo/android-8.0-migration)
 * [Migrating to Android 9 Pie](https://developer.android.com/about/versions/pie/android-9.0-migration)
 * [Article by a Zebra engineer on Android Nougat](https://developer.zebra.com/community/home/blog/2018/08/03/what-s-new-for-android-n-and-the-impact-on-zebra-developers)
-[Article by a Zebra engineer in Android Oreo](https://developer.zebra.com/community/home/blog/2018/09/28/what-s-new-for-android-o-and-the-impact-on-zebra-developers)
+* [Article by a Zebra engineer in Android Oreo](https://developer.zebra.com/community/home/blog/2018/09/28/what-s-new-for-android-o-and-the-impact-on-zebra-developers)
 
 -----
 
@@ -47,7 +47,6 @@ A: ANR errors occur when the main UI thread of an app is blocked for a long peri
 **Helpful links**: 
 
 * [ANR basics](https://developer.android.com/topic/performance/vitals/anr)
-
 * [Keeping your app responsive](https://developer.android.com/training/articles/perf-anr) 
  
 -----

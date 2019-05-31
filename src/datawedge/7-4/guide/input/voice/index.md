@@ -23,11 +23,14 @@ Voice Input options:
 Watch the DevTalk presentation on DataWedge Voice Input:
 <div><iframe width="430" height="308" src="https://www.youtube.com/embed/Hp_Z24WSrUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
 
+## Version History
+* **DataWedge 7.4** - Introduced voice trigger activation by PTT (push-to-talk) button press with new start option voice input parameter for DataWedge Intent API.
+
 ##How it Works
 
 Voice Input relies on DataWedge profiles for configuration. Ensure that the application to receive the voice captured data is associated to the profile. The Voice Input section in the profile provides the options that control the voice data capture. See _Main Features_ section below.
 
-When running, Voice Input is placed in the state "waiting for start phrase" (_see Figure 8_). Voice data capture begins after speaking the predefined "start phrase", which then changes the state to "waiting for data" (_see Figure 9_). Voice capture stops automatically after speaking the data or after speaking an optional "end phrase", if defined. The data source can be identified as voice input to process the voice data according to any application requirements. Barcode scanning and voice input can exist in the same DataWedge profile so both data capture methods may be used interchangeably.
+Voice data capture is activated either by a pre-defined start phrase or by pressing the PTT button. When running, Voice Input is placed in the state "waiting for start phrase" (_see Figure 8_). Voice data capture begins after speaking the predefined "start phrase", which then changes the state to "waiting for data" (_see Figure 9_). Voice capture stops when the timeout value elapses after speaking the data or after speaking an optional "end phrase", if defined. The data source can be identified as voice input to process the voice data according to any application requirements. Barcode scanning and voice input can exist in the same DataWedge profile so both data capture methods may be used interchangeably.
 
 Watch a demo on the basics of Voice Input with DWDemo app:<br> 
 <iframe width="300" height="613" src="https://www.useloom.com/embed/92684a9ded8e44eca2a08cd4472d1fa3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -39,24 +42,27 @@ Watch a demo showcasing the **Send Enter** command for multiple field entries: <
 
 Voice Input features are accessible from the DataWege profile.
 
-![img](Figures1-3.png) 
+![img](voice-input-settings.jpg) 
 <br>
-* **Enabled** - Enables voice input. _See Figure 1._
+* **Enabled** - Enables voice input. 
 
-* **Data capture start phrase** - Required phrase to start the data capture. **The default value is "start."** Numbers and special characters are not supported as part of the start phrase. _See Figure 1 and 2._
+* **Data capture start option** - Select trigger for voice capture.
+<ul style="margin-left: 16px;">
+  <li>Start phrase - Selects for a phrase to be spoken to trigger voice capture. Start phrase is defined in "Data capture start phrase" option</li>
+  <li>PTT button -  Selects for PTT button to trigger voice capture.</li>
+</ul>
 
-* **Data capture end phrase** - Optional phrase that ends the data capture. There is no default value. _See Figures 1 and 3._
+* **Data capture start phrase** - Required phrase to start the data capture. **The default value is "start."** Numbers and special characters are not supported as part of the start phrase. 
 
-* **End detection timeout** - Sets the timeout value (in seconds) for the data capture during the “waiting for data” state. **The default value is "0."** If the value is set to "0" and the end phrase is defined, it waits infinitely for the data capture. Whereas, when the end phrase is not defined, data is returned immediately. This timeout is approximate, as it may encounter a 1 to 2 second delay. _See Figure 1._
+* **Data capture end phrase** - Optional phrase that ends the data capture. There is no default value. 
 
-![img](Figures4-6.png) 
-<br>
+* **End detection timeout** - Sets the timeout value (in seconds) for the data capture during the “waiting for data” state. **The default value is "0."** If the value is set to "0" and the end phrase is defined, it waits infinitely for the data capture. Whereas, when the end phrase is not defined, data is returned immediately. This timeout is approximate, as it may encounter a 1 to 2 second delay.
 
-* **Tab command** - Sends a tab key when speaking the command "send tab". This command is supported only when the device is at the "waiting for start phrase" state. _See Figure 4._
+* **Tab command** - Sends a tab key when speaking the command "send tab". This command is supported only when the device is at the "waiting for start phrase" state. 
 
-* **Enter command** - Sends an enter key when speaking the command "send enter." This command is supported only when the device is at the "waiting for start phrase" state. _See Figure 4._
+* **Enter command** - Sends an enter key when speaking the command "send enter." This command is supported only when the device is at the "waiting for start phrase" state. 
 
-* **Data type** - Configures the data type to be returned, with selections of: Any, Alpha, or Numeric. The data type is required to restrict data captured according to the preferences. _See Figure 5._
+* **Data type** - Configures the data type to be returned, with selections of: Any, Alpha, or Numeric. The data type is required to restrict data captured according to the preferences. 
 Data type selections:
 <ul style="margin-left: 16px;">
   <li>Any - All scanned data is returned. For example, if the barcode ABC123 is scanned, it will return ABC123 as is. </li>
@@ -64,17 +70,16 @@ Data type selections:
   <li>Numeric - Only digits are returned. For example, if the barcode ABC123 is scanned, it will return 123 only. </li>
 </ul>
 
-* **Start phrase waiting tone** - Controls the start phrase waiting tone. It enables/disables the audio feedback for “waiting for start”, notifying that the device is waiting to start the speech engine in case the toast message notification is missed and there is a change in “waiting for data” state. _See Figure 6._
+* **Start phrase waiting tone** - Controls the start phrase waiting tone. It enables/disables the audio feedback for “waiting for start”, notifying that the device is waiting to start the speech engine in case the toast message notification is missed and there is a change in “waiting for data” state. 
 
-* **Data capture waiting tone** - Controls the data capture waiting tone. It enables/disables audio feedback for “waiting for data”, notifying that the device is waiting to capture data in case the toast message notification is missed. _See Figure 6._
+* **Data capture waiting tone** - Controls the data capture waiting tone. It enables/disables audio feedback for “waiting for data”, notifying that the device is waiting to capture data in case the toast message notification is missed. 
 
-* **Offline speech recognition** - Enables offline speech recognition when there is no access to the internet. This uses an offline recognition speech engine to detect the data spoken. _See Figure 6._
+* **Offline speech recognition** - Enables offline speech recognition when there is no access to the internet. This uses an offline recognition speech engine to detect the data spoken.
 
-![img](Figures7-9.png) 
+* **Validation window** - Validates the result after speaking, displaying the spoken data and provides for editing the data on the same screen, if needed. This is useful in offline mode, since the results received in this mode might not be accurate.
+
+![img](dwdemo-voice.jpg) 
 <br>
-
-* **Validation window** - Validates the result after speaking, displaying the spoken data and provides for editing the data on the same screen, if needed. This is useful in offline mode, since the results received in this mode might not be accurate. _See Figure 7._
-
 
 > See Limitations below.
 
@@ -137,6 +142,10 @@ DataWedge Voice Input can be controlled programmatically with DataWedge APIs. Re
   <tr>
     <td>voice_offline_speech</td>
     <td>true, false</td>
+  </tr>
+  <tr>
+    <td>voice_data_capture_start_option</td>
+    <td>START_PHRASE (default) <br>PTT_BUTTON</td>
   </tr>
 </table>
 

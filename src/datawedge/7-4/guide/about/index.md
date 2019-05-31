@@ -83,7 +83,13 @@ For more information about approved languages or to download a localized operati
 
 -----
 
-## New in DataWedge 7.3
+## New in DataWedge 7.4
+* Support hardware trigger for voice input in place of start/end phrase.
+
+-----
+## Recent Version History
+
+### Added in DataWedge 7.3
 * Added support for new **[Grid Matrix decoder](../input/barcode).**
  * Set **[Grid Matrix decoder parameters](../api/setconfig/#scannerinputparameters)** with SetConfig API.
 * New **[Decoder Signature](../input/barcode/#decoderselection)** feature added to capture a special formatted area (e.g. signature) as an image. 
@@ -93,9 +99,6 @@ For more information about approved languages or to download a localized operati
 * **[Rear camera support](../input/barcode)** added for Digimarc decoding.
 * **[DS8178 Bluetooth Scanner](../input/barcode)** now supported.
 * New **[Febraban decoder parameter](../input/barcode)** supported for I2of5.
-
------
-## Recent Version History
 
 ### Added in DataWedge 7.2
 * New **[Decode Screen Notification](../input/barcode/#scanparams)** parameters added for deocde screen time and translucency level.

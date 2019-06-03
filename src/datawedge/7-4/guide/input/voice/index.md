@@ -24,7 +24,7 @@ Watch the DevTalk presentation on DataWedge Voice Input:
 <div><iframe width="430" height="308" src="https://www.youtube.com/embed/Hp_Z24WSrUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
 
 ## Version History
-* **DataWedge 7.4** - Introduced voice trigger activation by PTT (push-to-talk) button press with new start option voice input parameter for DataWedge Intent API.
+* **DataWedge 7.4** - Introduced voice capture activation by PTT (push-to-talk) button with new **Start option voice input** parameter for DataWedge Intent API.
 
 ##How it Works
 

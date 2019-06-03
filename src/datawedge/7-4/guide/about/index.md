@@ -84,7 +84,8 @@ For more information about approved languages or to download a localized operati
 -----
 
 ## New in DataWedge 7.4
-* Support hardware trigger for voice input in place of start/end phrase.
+* Introduced **voice capture activation by PTT** (push-to-talk) button with new [Data capture start option](../input/barcode) option.
+* DataWedge 7.4 and later versions only support Android Oreo (v8.0) and later.
 
 -----
 ## Recent Version History

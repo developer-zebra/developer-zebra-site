@@ -43,20 +43,20 @@ Watch a demo showcasing the **Send Enter** command for multiple field entries: <
 Voice Input features are accessible from the DataWege profile.
 
 ![img](voice-input-settings.jpg) 
-<br>
+
 * **Enabled** - Enables voice input. 
 
 * **Data capture start option** - Select trigger for voice capture.
 <ul style="margin-left: 16px;">
-  <li>Start phrase - Selects for a phrase to be spoken to trigger voice capture. Start phrase is defined in "Data capture start phrase" option</li>
-  <li>PTT button -  Selects for PTT button to trigger voice capture.</li>
+  <li><b>Start phrase</b> - Sets a start phrase to trigger voice capture. Start phrase is specified in option <b>Data capture start phrase</b>.</li>
+  <li><b>PTT button</b> -  Sets PTT button to trigger voice capture. <i>Only supported on EC30, MC93, TC52/TC57, TC72/TC77, and TC8300 devices. For other devices, the PTT button may be mapped to an available button on the device.</i> </li>
 </ul>
 
-* **Data capture start phrase** - Required phrase to start the data capture. **The default value is "start."** Numbers and special characters are not supported as part of the start phrase. 
+* **Data capture start phrase** - Specified phrase to start the data capture if **Start phrase** is selected as the **Data capture start option**. Numbers and special characters are not supported as part of the start phrase. _The default value is "start."_
 
 * **Data capture end phrase** - Optional phrase that ends the data capture. There is no default value. 
 
-* **End detection timeout** - Sets the timeout value (in seconds) for the data capture during the “waiting for data” state. **The default value is "0."** If the value is set to "0" and the end phrase is defined, it waits infinitely for the data capture. Whereas, when the end phrase is not defined, data is returned immediately. This timeout is approximate, as it may encounter a 1 to 2 second delay.
+* **End detection timeout** - Sets the timeout value (in seconds) for the data capture during the “waiting for data” state. If the value is set to "0" and the end phrase is defined, it waits infinitely for the data capture. Whereas, when the end phrase is not defined, data is returned immediately. This timeout is approximate, as it may encounter a 1 to 2 second delay. _The default value is "0."_ 
 
 * **Tab command** - Sends a tab key when speaking the command "send tab". This command is supported only when the device is at the "waiting for start phrase" state. 
 
@@ -65,9 +65,9 @@ Voice Input features are accessible from the DataWege profile.
 * **Data type** - Configures the data type to be returned, with selections of: Any, Alpha, or Numeric. The data type is required to restrict data captured according to the preferences. 
 Data type selections:
 <ul style="margin-left: 16px;">
-  <li>Any - All scanned data is returned. For example, if the barcode ABC123 is scanned, it will return ABC123 as is. </li>
-  <li>Alpha - Only alpha characters are returned. For example, if the barcode ABC123 is scanned, it will return ABC only. </li>
-  <li>Numeric - Only digits are returned. For example, if the barcode ABC123 is scanned, it will return 123 only. </li>
+  <li><b>Any</b> - All scanned data is returned. For example, if the barcode ABC123 is scanned, it will return ABC123 as is. </li>
+  <li><b>Alpha</b> - Only alpha characters are returned. For example, if the barcode ABC123 is scanned, it will return ABC only. </li>
+  <li><b>Numeric</b> - Only digits are returned. For example, if the barcode ABC123 is scanned, it will return 123 only. </li>
 </ul>
 
 * **Start phrase waiting tone** - Controls the start phrase waiting tone. It enables/disables the audio feedback for “waiting for start”, notifying that the device is waiting to start the speech engine in case the toast message notification is missed and there is a change in “waiting for data” state. 

@@ -9,7 +9,7 @@ productversion: '7.4'
 Voice Input enables DataWedge to convert spoken entries into keystrokes as if they were typed or acquired from a scan. Voice Input uses the Google speech recognition engine included on GMS devices. Voice-to-data capture can be useful in cases when a barcode is wet, damaged, covered with stray markings or otherwise cannot be scanned. 
 
 Voice Input options:
-* Begin voice capture with a defined start phrase
+* Begin voice capture with a defined start phrase or PTT button
 * Terminate voice capture with a phrase or timeout value
 * Send a TAB character when speaking the "send tab" command
 * Send an ENTER character when speaking the "send enter" command
@@ -46,7 +46,7 @@ Voice Input features are accessible from the DataWege profile.
 
 * **Enabled** - Enables voice input. 
 
-* **Data capture start option** - Select trigger for voice capture.
+* **Data capture start option** - Select trigger option for voice capture.
 <ul style="margin-left: 16px;">
   <li><b>Start phrase</b> - Sets a start phrase to trigger voice capture. Start phrase is specified in option <b>Data capture start phrase</b>.</li>
   <li><b>PTT button</b> -  Sets PTT button to trigger voice capture. <i>Only supported on EC30, MC93, TC52/TC57, TC72/TC77, and TC8300 devices. For other devices, the PTT button may be mapped to an available button on the device.</i> </li>

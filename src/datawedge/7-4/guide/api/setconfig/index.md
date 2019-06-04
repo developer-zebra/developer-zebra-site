@@ -26,6 +26,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
 * **DataWedge 7.2 -** Added new DotCode decoder support.
 * **DataWedge 7.3 -** Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
+* **DataWedge 7.4 -** New RFID Input feature to read RFID tags.
 
 ### Function Prototype
 
@@ -66,6 +67,7 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
  * **SERIAL** input
  * **DCP** (Data Capture Plus) input
  * **MSR** (Magnetic Stripe Reader) input
+ * **RFID** (Radio-frequency Identification) input
  * **SIMULSCAN** input
  * **VOICE** input
  * **BDF** (basic data formatting) processing
@@ -96,6 +98,30 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
  <br>
  If set to “true”, the parameter `scanner_selection_by_identifier` is ignored and the configuration is saved as a Global Scanner Configuration. If there is any previous configuration for any individual scanners, they will be replaced with the new global configuration. <br>
  If set to "false", the configuration will be saved for the individual selected scanner only. In the event the scanner selection is set to “Auto”, the current default scanner configuration is updated.
+
+* **RFID -** takes values as indicated below: <br>
+ * `rfid_input_enabled` [string] - true/false
+ * `rfid_beeper_enable` [string] - true/false
+ * `rfid_led_enable` [string] - true/false
+ * `rfid_antenna_transmit_power` [string] - 5 to 30
+ * `rfid_memory_bank` [string] - 0 to 4:
+	 * `0` [string] - None (default)
+	 * `1` [string] - User
+	 * `2` [string] - Reserved
+	 * `3` [string] - TID (tag identification)
+	 * `4` [string] - EPC (electronic product code)
+ * `rfid_session` [string] - 0 to 3:
+   * `0` [string] - Session 0
+	 * `1` [string] - Session 1 (default)
+	 * `2` [string] - Session 2
+	 * `3` [string] - Session 3
+* `rfid_trigger_mode` [string] - 0 or 1:
+	 * `0` [string] - Immediate (default) - based on trigger press
+	 * `1` [string] - Continuous
+* `rfid_filter_duplicate_tags` [string] - true/false
+* `rfid_hardware_trigger_enabled` [string] - true/false
+* `rfid_tag_read_duration` [string] - 10 to 60000 (in ms)
+
 
 * **SERIAL -** takes values as indicated below: 
 <br>
@@ -1651,6 +1677,60 @@ See **UDI Data Output** in [IP Output](../../output/ip#udidataoutput) or [Keystr
 		i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
 
 		this.sendBroadcast(i);
+
+### Set RFID input configuration
+
+	private void getIntentConfigRFID() { 
+	        Bundle bMain = new Bundle(); 
+	        bMain.putString("PROFILE_NAME", "SampleConfigApi"); 
+	        Bundle bConfig = new Bundle(); 
+	        ArrayList<String> pluginName = new ArrayList<>(); 
+	        pluginName.add("RFID"); 
+	 
+	        bConfig.putStringArrayList("PLUGIN_NAME", pluginName); 
+	        bMain.putBundle("PLUGIN_CONFIG", bConfig); 
+	 
+	        Intent i = new Intent(); 
+	        i.setAction("com.symbol.datawedge.api.ACTION"); 
+	        i.putExtra("com.symbol.datawedge.api.GET_CONFIG", bMain); 
+	        this.sendBroadcast(i); 
+	    } 
+	 
+	BroadcastReceiver to handle incoming data 
+	 
+	    private BroadcastReceiver reciveResulyBroadcast = new BroadcastReceiver(){ 
+	 
+	        @Override 
+	        public void onReceive(Context context, Intent intent) { 
+	            if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG")) { 
+	                Bundle result = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG"); 
+	                Set<String> keys = result.keySet(); 
+	                for (String key : keys) { ; 
+	                    if (!key.equalsIgnoreCase("PLUGIN_CONFIG")) { 
+	                        Log.d("DWScannerConfig", "DWGetConfig::level-1: " + key + " : " + result.getString(key)); 
+	                    } else { 
+	                        ArrayList<Bundle> bundleArrayList = result.getParcelableArrayList("PLUGIN_CONFIG"); 
+	                        for (Bundle configBundle : bundleArrayList) { 
+	                            Set<String> keys2 = configBundle.keySet(); 
+	                            for (String key2 : keys2) { 
+	                                if (!key2.equalsIgnoreCase("PARAM_LIST")) { 
+	                                } else { 
+	                                    Bundle params = configBundle.getBundle("PARAM_LIST"); 
+	                                    Set<String> keys3 = params.keySet(); 
+	 
+	                                    String configs =intentData.getText()+"\n\n\n" +configBundle.getString("PLUGIN_NAME")+"\n"; 
+	                                    for (String key3 : keys3) { 
+	                                        configs+= key3+"="+params.getString(key3)+"\n"; 
+	                                    } 
+	 
+	                                    intentData.setText(configs); 
+	                                } 
+	                            } 
+	                        } 
+	                    } 
+	                } 
+	            } 
+	        } 
 
 ### Set serial input configuration
 

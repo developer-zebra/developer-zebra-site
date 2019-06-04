@@ -70,6 +70,8 @@ automenu:
           url: setreportingoptions   
         - title: Soft Scan Trigger 
           url: softscantrigger
+        - title: Soft RFID Trigger 
+          url: softrfidtrigger
         - title: Switch Scanner 
           url: switchscanner
         - title: Switch Scanner Params 

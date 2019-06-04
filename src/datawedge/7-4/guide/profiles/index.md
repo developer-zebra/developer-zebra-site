@@ -20,6 +20,8 @@ automenu:
           url: ../input/dcp
         - title: Mag-stripe Reader (MSR) 
           url: ../input/msr
+        - title: Radio-frequency Identification (RFID) 
+          url: ../input/rfid
         - title: Serial/USB Port
           url: ../input/serial
         - title: SimulScan

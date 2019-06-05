@@ -26,7 +26,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
 * **DataWedge 7.2 -** Added new DotCode decoder support.
 * **DataWedge 7.3 -** Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
-* **DataWedge 7.4 -** New RFID Input feature to read RFID tags.
+* **DataWedge 7.4 -** New RFID Input feature.
 
 ### Function Prototype
 
@@ -99,32 +99,36 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
  If set to “true”, the parameter `scanner_selection_by_identifier` is ignored and the configuration is saved as a Global Scanner Configuration. If there is any previous configuration for any individual scanners, they will be replaced with the new global configuration. <br>
  If set to "false", the configuration will be saved for the individual selected scanner only. In the event the scanner selection is set to “Auto”, the current default scanner configuration is updated.
 
-* **RFID -** takes values as indicated below: <br>
+* **RFID -** takes values as indicated below:
  * `rfid_input_enabled` [string] - true/false
  * `rfid_beeper_enable` [string] - true/false
  * `rfid_led_enable` [string] - true/false
  * `rfid_antenna_transmit_power` [string] - 5 to 30
- * `rfid_memory_bank` [string] - 0 to 4:
-	 * `0` [string] - None (default)
-	 * `1` [string] - User
-	 * `2` [string] - Reserved
-	 * `3` [string] - TID (tag identification)
-	 * `4` [string] - EPC (electronic product code)
- * `rfid_session` [string] - 0 to 3:
-   * `0` [string] - Session 0
-	 * `1` [string] - Session 1 (default)
-	 * `2` [string] - Session 2
-	 * `3` [string] - Session 3
-* `rfid_trigger_mode` [string] - 0 or 1:
-	 * `0` [string] - Immediate (default) - based on trigger press
-	 * `1` [string] - Continuous
-* `rfid_filter_duplicate_tags` [string] - true/false
-* `rfid_hardware_trigger_enabled` [string] - true/false
-* `rfid_tag_read_duration` [string] - 10 to 60000 (in ms)
-
+ * `rfid_memory_bank` [string]:
+   <ul>
+	 	<li>0 - None (default)</li>
+	  <li>1 - User</li>
+	  <li>2 - Reserved</li>
+	  <li>3 - TID (tag identification)</li>
+	  <li>4 - EPC (electronic product code)</li>
+	 </ul>
+ * `rfid_session` [string]:
+  <ul>
+	 	<li>0 - Session 0</li>
+	  <li>1 - Session 1 (default)</li>
+	  <li>2 - Session 2</li>
+	  <li>3 - Session 3</li>
+	</ul>
+ * `rfid_filter_duplicate_tags` [string] - true/false
+ * `rfid_hardware_trigger_enabled` [string] - true/false
+ * `rfid_tag_read_duration` [string] - 10 to 60000 (in ms)
+ * `rfid_trigger_mode` [string]:
+   <ul>
+	 	<li>0 - Immediate (default)</li>
+	  <li>1 - Continuous</li>
+	 </ul>
 
 * **SERIAL -** takes values as indicated below: 
-<br>
  * `serial_port_id` [string] - 0&ndash;n (must be a valid port index)
  * `serial_input_enabled` [string] - true/false
  * `serial_baudrate` [string] - 300, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 230400, 460800 or 921600
@@ -134,7 +138,6 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
  * `serial_flow` [string] - FLOW_NONE, FLOW_RTS_CTS or FLOW_XON_XOFF
 
 * **VOICE -** takes values as indicated below: 
-<br>
  * `voice_input_enabled` [string] - true/false
  * `voice_data_capture_start_phrase` [string] - start (default value)
  * `voice_data_capture_end_phrase` [string] - [blank] (default value)
@@ -148,7 +151,6 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 
 
 * **INTENT -** takes values as indicated below: 
-<br>
  * `intent_output_enabled` [string]- true/false
  * `intent_action` [string] - exact name of the action
  * `intent_category` [string] - exact name of the category
@@ -1680,57 +1682,62 @@ See **UDI Data Output** in [IP Output](../../output/ip#udidataoutput) or [Keystr
 
 ### Set RFID input configuration
 
-	private void getIntentConfigRFID() { 
-	        Bundle bMain = new Bundle(); 
-	        bMain.putString("PROFILE_NAME", "SampleConfigApi"); 
-	        Bundle bConfig = new Bundle(); 
-	        ArrayList<String> pluginName = new ArrayList<>(); 
-	        pluginName.add("RFID"); 
+	private void createProfile() { 
 	 
-	        bConfig.putStringArrayList("PLUGIN_NAME", pluginName); 
-	        bMain.putBundle("PLUGIN_CONFIG", bConfig); 
+	        // Create bundle for profile configuration 
+	        Bundle setConfigBundle = new Bundle(); 
+	        setConfigBundle.putString("PROFILE_NAME","SampleConfigApi"); 
+	        setConfigBundle.putString("PROFILE_ENABLED", "true"); 
+	        setConfigBundle.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST"); 
+	        setConfigBundle.putString("RESET_CONFIG", "false"); 
 	 
-	        Intent i = new Intent(); 
-	        i.setAction("com.symbol.datawedge.api.ACTION"); 
-	        i.putExtra("com.symbol.datawedge.api.GET_CONFIG", bMain); 
-	        this.sendBroadcast(i); 
-	    } 
+	        // Associate profile with this app 
+	        Bundle appConfig = new Bundle(); 
+	        appConfig.putString("PACKAGE_NAME", getPackageName()); 
+	        appConfig.putStringArray("ACTIVITY_LIST", new String[]{"*"}); 
+	        setConfigBundle.putParcelableArray("APP_LIST", new Bundle[]{appConfig}); 
+	        setConfigBundle.remove("PLUGIN_CONFIG"); 
 	 
-	BroadcastReceiver to handle incoming data 
+	        // Set RFID configuration 
+	        Bundle rfidConfigParamList  = new Bundle(); 
+	        rfidConfigParamList.putString("rfid_input_enabled", "true"); 
+	        rfidConfigParamList.putString("rfid_beeper_enable", "true"); 
+	        rfidConfigParamList.putString("rfid_led_enable", "true"); 
+	        rfidConfigParamList.putString("rfid_antenna_transmit_power", "30"); 
+	        rfidConfigParamList.putString("rfid_memory_bank", "2"); 
+	        rfidConfigParamList.putString("rfid_session", "1"); 
+	        rfidConfigParamList.putString("rfid_trigger_mode", "1"); 
+	        rfidConfigParamList.putString("rfid_filter_duplicate_tags", "true"); 
+	        rfidConfigParamList.putString("rfid_hardware_trigger_enabled", "true"); 
+	        rfidConfigParamList.putString("rfid_tag_read_duration", "250"); 
+	        Bundle rfidConfigBundle = new Bundle(); 
+	        rfidConfigBundle.putString("PLUGIN_NAME", "RFID"); 
+	        rfidConfigBundle.putString("RESET_CONFIG", "true"); 
+	        rfidConfigBundle.putBundle("PARAM_LIST", rfidConfigParamList); 
 	 
-	    private BroadcastReceiver reciveResulyBroadcast = new BroadcastReceiver(){ 
+	        // Configure intent output for captured data to be sent to this app 
+	        Bundle intentConfig = new Bundle(); 
+	        intentConfig.putString("PLUGIN_NAME", "INTENT"); 
+	        intentConfig.putString("RESET_CONFIG", "true"); 
+	        Bundle intentProps = new Bundle(); 
+	        intentProps.putString("intent_output_enabled", "true"); 
+	        intentProps.putString("intent_action", "com.zebra.rfid.rwdemo.RWDEMO"); 
+	        intentProps.putString("intent_category", "android.intent.category.DEFAULT"); 
+	        intentProps.putString("intent_delivery", "0"); 
+	        intentConfig.putBundle("PARAM_LIST", intentProps); 
 	 
-	        @Override 
-	        public void onReceive(Context context, Intent intent) { 
-	            if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG")) { 
-	                Bundle result = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG"); 
-	                Set<String> keys = result.keySet(); 
-	                for (String key : keys) { ; 
-	                    if (!key.equalsIgnoreCase("PLUGIN_CONFIG")) { 
-	                        Log.d("DWScannerConfig", "DWGetConfig::level-1: " + key + " : " + result.getString(key)); 
-	                    } else { 
-	                        ArrayList<Bundle> bundleArrayList = result.getParcelableArrayList("PLUGIN_CONFIG"); 
-	                        for (Bundle configBundle : bundleArrayList) { 
-	                            Set<String> keys2 = configBundle.keySet(); 
-	                            for (String key2 : keys2) { 
-	                                if (!key2.equalsIgnoreCase("PARAM_LIST")) { 
-	                                } else { 
-	                                    Bundle params = configBundle.getBundle("PARAM_LIST"); 
-	                                    Set<String> keys3 = params.keySet(); 
+	        // Add configurations into a collection 
+	        ArrayList<Parcelable> configBundles = new ArrayList<>(); 
+	        configBundles.add(rfidConfigBundle); 
+	        configBundles.add(intentConfig); 
+	        setConfigBundle.putParcelableArrayList("PLUGIN_CONFIG", configBundles); 
 	 
-	                                    String configs =intentData.getText()+"\n\n\n" +configBundle.getString("PLUGIN_NAME")+"\n"; 
-	                                    for (String key3 : keys3) { 
-	                                        configs+= key3+"="+params.getString(key3)+"\n"; 
-	                                    } 
-	 
-	                                    intentData.setText(configs); 
-	                                } 
-	                            } 
-	                        } 
-	                    } 
-	                } 
-	            } 
-	        } 
+	        // Broadcast the intent 
+	        Intent intent  = new Intent(); 
+	        intent.setAction("com.symbol.datawedge.api.ACTION"); 
+	        intent.putExtra("com.symbol.datawedge.api.SET_CONFIG", setConfigBundle); 
+	        sendBroadcast(intent);
+	} 
 
 ### Set serial input configuration
 

@@ -11,6 +11,8 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
 
 ## New in Device Tracker 2.1
 * **Disconnect Threshold Time** removed from [Application Configuration](../config/#applicationconfiguration) screen. 
+* New option to upgrade server.
+* Updates to client notification messages. 
 
 ## Version History
 
@@ -25,12 +27,12 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
     <td style="text-align:center" rowspan="2">2.1</td>
     <td style="text-align:center">Server</td>
     <td style="text-align:center">2.1</td>
-    <td style="text-align:left"><b>Disconnect Threshold Time</b> removed from Application Configuration screen.</td>
+    <td style="text-align:left"><b>Disconnect Threshold Time</b> removed from Application Configuration screen. <br>New option to upgrade server.</td>
   </tr>
   <tr>
     <td style="text-align:center">Client</td>
     <td style="text-align:center">2.1</td>
-    <td style="text-align:left">Updates for notification messages.</td>
+    <td style="text-align:left">Updates to notification messages.</td>
   </tr>
   <tr>
     <td style="text-align:center" rowspan="2">1.0</td>

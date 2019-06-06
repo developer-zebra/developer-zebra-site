@@ -68,24 +68,58 @@ Supported Devices (including GMS and non-GMS versions):
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
   </tr>
   <tr>
-    <td>MC3300 </td>
+    <td>EC30</td>
+    <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
-    <td style="text-align:center">&#x25cf;</td>
   </tr>
-<!--  // Will be in next release
   <tr>
-    <td>MC93 </td>
+    <td>ET50/ET55</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ET51/ET56</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
-  -->
+  <tr>
+    <td>L10AW</td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>MC3300 </td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>MC93</td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
   <tr>
     <td>PS20</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>TC20</td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>TC25</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>TC51/TC51-HC/TC56 </td>
@@ -111,19 +145,23 @@ Supported Devices (including GMS and non-GMS versions):
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
-  <!--
   <tr>
-    <td>TC8000 Next Generation - wait for release</td>
+    <td>TC8300</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
-  -->
+  <tr>
+    <td>WT6000</td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+  </tr>
 </table>
 
 
 ##Server Install & Setup
-Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html).<!--[Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html)--> Install ZDVC server on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html). Install ZDVC server via a new install or an upgrade from an existing install on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ###Server Prerequisites
 The following are the prerequisites required for the server: <br>
@@ -207,7 +245,7 @@ F. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
 <br>
 -->
 ###Server Installation
-ZDVC Server Installation steps: <br>
+ZDVC Server Installation steps for a new installation: <br>
 1. Double-click on the .EXE to launch the installer.
 2. At the initial window, click Next.
 ![img](DTRK_Install_1.JPG)
@@ -246,6 +284,21 @@ _Figure 6. Installation - review settings_
 ![img](DTRK_Install_7.JPG)
 _Figure 7. Installation - complete_
 
+###Server Upgrade
+ZDVC Server can be upgraded from a previous existing ZDVC installation:
+1. Double-click on the .EXE to launch the installer.
+2. At the initial window, click Next.
+<img style="height:430px" src="zdvc-upgrade-1.jpg"/>
+_Figure 8. Server upgrade_
+3. Once installation completes, click Finish.
+<img style="height:150px" src="zdvc-upgrade-2.jpg"/>
+_Figure 9. Server upgrade - complete_
+
+**Note:** Server upgrade is not applicable to PowerPrecision Server installations.
+
+###Server Downgrade
+To downgrade the server, uninstall the previous version and install the older server version.
+
 ###Server Setup
 Steps for ZDVC server setup after installation: <br>
 1. **Run ZDVC Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". 
@@ -258,47 +311,47 @@ C. Click the Scan button. A successful result returns green checks for each step
 D. Enter the backend URL for your server, for example `https://name.company.com:8080/zdvc` <br>
 E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
-_Figure 8. SSLTools.com results_
+_Figure 10. SSLTools.com results_
 
 ###Post-Server Setup
 To meet certain customer requirement needs, for example for Device Tracker to run without a logged in user or Device Tracker to run on server startup, this can be accomplished by having Device Tracker run as a scheduled task using the following procedure.  Two scheduled tasks are needed, one for the backend and one for the WebUI:<br>
 1. Open **Task Scheduler** in **Administrative Tools.** 
 <img style="height:350px" src="TS_1.png"/>
-_Figure 9. Task Scheduler main screen_
+_Figure 11. Task Scheduler main screen_
 2. Click **Create Basic Task** in the Actions menu to the right. Enter a name for the task, such as “Zebra DevTracker Backend. 
 <img style="height:350px" src="TS_2.png"/>
-_Figure 10. Create Backend Task_
+_Figure 12. Create Backend Task_
 3. Click **Next.** Select the desired time to trigger the task, for example “When the computer starts” to run on startup.
 <img style="height:350px" src="TS_3.png"/>
-_Figure 11. Task Trigger_
+_Figure 13. Task Trigger_
 4. Click **Next.** Select **Start a program**.
 <img style="height:350px" src="TS_4.png"/>
-_Figure 12. Task Action_
+_Figure 14. Task Action_
 5. Click **Next.** Browse to the backend RunBackendServer.bat file (file path by default `C:\Program Files (x86)\Zebra Technologies\ZDVC\BackendServer\RunBackendServer.bat`). Enter the folder path for the **Start in** field - even though it indicates it is optional, it is required for this to work.
 <img style="height:350px" src="TS_5.png"/>
-_Figure 13. Task Program_
+_Figure 15. Task Program_
 6. Click **Next.**
 <img style="height:350px" src="TS_6.png"/>
-_Figure 14. Complete Task creation_
+_Figure 16. Complete Task creation_
 7. Click **Finish.** After authentication, the new task is listed in the Active Tasks list.
 <img style="height:200px" src="TS_7.png"/>
-_Figure 15. Task list_
+_Figure 17. Task list_
 8. Repeat above steps for the WebUI batch file RunWebUI.bat (file path by default: `C:\Program Files (x86)\Zebra Technologies\ZDVC\WebUI\RunWebUI.bat`).  Screens specific to WebUI:
 <img style="height:350px" src="TS_8.png"/>
-_Figure 16. Create WebUI Task_
+_Figure 18. Create WebUI Task_
 <img style="height:350px" src="TS_9.png"/>
-_Figure 17. Task WebUI Program_
+_Figure 19. Task WebUI Program_
 <img style="height:350px" src="TS_10.png"/>
-_Figure 18. Complete WebUI Task_
+_Figure 20. Complete WebUI Task_
 9. Both tasks created are listed in the Active Tasks list.
 <img style="height:200px" src="TS_11.png"/>
-_Figure 19. Select Task Trigger_
+_Figure 21. Select Task Trigger_
 10.	Double-click on one of the schedule tasks created. The specific task is displayed.
 <img style="height:350px" src="TS_1.png"/>
-_Figure 20. Task Details_
+_Figure 22. Task Details_
 11.	Tap **Properties** in the right panel. In the **Security options** section select “Run whether user is logged on or not”.
 <img style="height:500px" src="TS_12.png"/>
-_Figure 21. Task Properties_
+_Figure 23. Task Properties_
 12.	Click **OK.**
 13.	Repeat steps 10–12 for the other scheduled task.
 14.	Click **Run** in the right menu (same screen as in step 11). 
@@ -357,18 +410,18 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 22. Profile wizard_ <br>
+_Figure 24. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “AppMgr”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_AddAppMgr.JPG)
-_Figure 23. Add Setting_ <br>
+_Figure 25. Add Setting_ <br>
 6. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in step 5. Validate all settings and click Continue.
 ![img](SN_BattOpt.JPG)
-_Figure 24. Re-use saved setting_ <br>
+_Figure 26. Re-use saved setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 25. Generate StageNow barcode_ <br>
+_Figure 27. Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -379,22 +432,22 @@ _Figure 25. Generate StageNow barcode_ <br>
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 26. Profile wizard_ <br>
+_Figure 28. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “Intent”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_AddIntentSetting.jpg)
-_Figure 27. Add Setting_ <br>
+_Figure 29. Add Setting_ <br>
 6. Enter the following information:
    * Action: select "StartService"
    * Android Action Name: enter "com.zebra.devicetracker.csp.DTCspService"
    * Package Name: enter "com.zebra.devicetracker"
 Click Continue.
 ![img](SN_IntentConfig.jpg)
-_Figure 28. Configure Setting_ <br>
+_Figure 30. Configure Setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 29. Generate StageNow barcode_ <br>
+_Figure 31. Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -411,33 +464,33 @@ A. In the StageNow home screen, click “CSP Library” from the left menu. <br>
 B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file. Click "OK" in the confirmation message. <br> 
 C. Once successfully uploaded, the CSP Library is listed in the Plugin tab.<br>
 ![img](SN_CSPLib.JPG)
-_Figure 30. Import plugin into CSP Library_
+_Figure 32. Import plugin into CSP Library_
 4. Create a new setting:<br>
 A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” at the top right. <br>
 ![img](SN_Settings.JPG)
-_Figure 31. Import into CSP Library_ <br>
+_Figure 33. Import into CSP Library_ <br>
 B. Select the MX version for the device. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `name.company.com:8080/zdvc/dtrk`, where "name.company.com:8080" is replaced with the appropriate domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install.  <br>
 ![img](SN_CreateSettings.JPG)
-_Figure 32. Create New Setting_ <br>
+_Figure 34. Create New Setting_ <br>
 C. Tap Save. The new setting is listed in the Settings screen.
 ![img](SN_NewSetting.JPG)
-_Figure 33. New Setting created_ <br>
+_Figure 35. New Setting created_ <br>
 5. Create profile:<br>
 A. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 B. Ensure the proper MX version is selected at the top drop-down selector. Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 34. Profile wizard_ <br>
+_Figure 36. Profile wizard_ <br>
 C. Enter the profile name. Click Start.<br>
 D. Click the plus (+) sign next to “com.zebra.devicetracker”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_Profile_AddSetting.JPG)
-_Figure 35. Add Setting_ <br>
+_Figure 37. Add Setting_ <br>
 E. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in previous steps. Validate all settings and click Continue.
 ![img](SN_ReUseSavedSetting.JPG)
-_Figure 36. Re-use saved setting_ <br>
+_Figure 38. Re-use saved setting_ <br>
 F. Click “Complete Profile." <br>
 G. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 37. Generate StageNow barcode_ <br>
+_Figure 39. Generate StageNow barcode_ <br>
 H. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 6. For EMM Staging, continue to section "Steps for EMM Staging" below.
 7. Open the StageNow client on the device.
@@ -453,7 +506,7 @@ For more information on StageNow, refer to its [documentation](http://techdocs.z
    * Follow procedure for "Create StageNow profile to automatically bypass the device Battery Optimization pop-up message" up to step 11.
 2. Select "Export option for EMM" from the top to export the .xml file.  Save the .xml file.
 ![img](SN_ExportMDM.JPG)
-_Figure 38. Export for EMM_
+_Figure 40. Export for EMM_
 3. Push the .xml settings via EMM to the device for the desired client configuration.
 
 <br>

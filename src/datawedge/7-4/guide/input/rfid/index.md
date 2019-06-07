@@ -9,6 +9,13 @@ productversion: '7.4'
 
 **Radio-frequency identification (RFID) Input** is used to acquire data from an RFID tag with the integrated RFID reader built-in some Zebra mobile computers, such as the MC3330R with Android Oreo. The type of RFID tags that can be read is dependent on what is supported by the RFID reader on the device. RFID is another input source to DataWedge - data delivery is similar to other input sources such as Barcode and MSR (Magnetic-stripe Reader). The data acquired is processed and formatted according to the [Basic Data Formatting (BDF)](../../process/bdf) and [Advanced Data Formatting (ADF)](../../process/adf) options located in the **Keystroke output** section of the profile. 
 
+> **Important:** When using RFID Input for the first time, **Regulatory** must be set to the proper region/country using RFID Manager pre-installed on the supported device in order for DataWedge to read RFID tags. 
+
+**Instructions to set Regulatory in RFID Manager:**
+1. Open RFID Manager.
+2. Select **Regulatory**.
+3. Select the appropriate region or country.
+
 ## RFID Input
 **RFID Input** from the DataWedge profile provides options to toggle RFID input, specify the trigger mode and configure RFID reader settings.
 

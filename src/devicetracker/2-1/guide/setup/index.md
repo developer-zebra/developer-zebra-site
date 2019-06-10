@@ -287,11 +287,12 @@ _Figure 7. Installation - complete_
 ###Server Upgrade
 ZDVC Server can be upgraded from a previous existing ZDVC installation:
 1. Double-click on the .EXE to launch the installer.
-2. At the initial window, click Next.
-<img style="height:430px" src="zdvc-upgrade-1.jpg"/>
+2. Click Yes when prompted to upgrade.
+<img style="height:150px" src="zdvc-upgrade-1.jpg"/>
 _Figure 8. Server upgrade_
-3. Once installation completes, click Finish.
-<img style="height:150px" src="zdvc-upgrade-2.jpg"/>
+3. At the initial window, click Next to proceed with the upgrade.
+4. Once installation completes, click Finish.
+<img style="height:430px" src="zdvc-upgrade-2.jpg"/>
 _Figure 9. Server upgrade - complete_
 
 **Note:** Server upgrade is not applicable to PowerPrecision Server installations.

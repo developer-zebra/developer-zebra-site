@@ -10,7 +10,7 @@ productversion: '2.1'
 Device Tracker is a centralized solution that tracks and finds misplaced devices within a facility. As part of Zebra DNA Visibility Console, it leverages existing WiFi network infrastructure to locate devices, preventing device inventory shrinkage. When locating a device, Device Tracker identifies the general area where the device is located based on the Access Point (AP) the device is connected to within the facility. <!-- The Device Tracker client uses BLE (Bluetooth Low Energy) beacons transmitted from the misplaced device for proximity sensing based on its relative position to the device conducting the search. --> Audio can be played on the misplaced device to determine its location. Device Tracker centralized management system continuously monitors device presence, tracking status, connection state, and battery charge to ensure visibility of devices prior to reaching a disconnected or loss of battery state.
 
 ## New in Device Tracker 2.1
-* **Disconnect Threshold Time** removed from [Application Configuration](../config/#applicationconfiguration) screen. 
+* **Disconnect Threshold Time** is removed from the Application Configuration screen and replaced with [Reporting Frequency](../config/#applicationconfiguration). 
 * New option to upgrade server.
 * Updates to client notification messages. 
 
@@ -27,7 +27,7 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
     <td style="text-align:center" rowspan="2">2.1</td>
     <td style="text-align:center">Server</td>
     <td style="text-align:center">2.1</td>
-    <td style="text-align:left"><b>Disconnect Threshold Time</b> removed from Application Configuration screen. <br>New option to upgrade server.</td>
+    <td style="text-align:left"><b>Disconnect Threshold Time</b> removed from Application Configuration screen and replaced with <b>Reporting Frequency</b>. <br>New option to upgrade server.</td>
   </tr>
   <tr>
     <td style="text-align:center">Client</td>

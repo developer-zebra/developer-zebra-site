@@ -295,7 +295,7 @@ _Figure 8. Server upgrade_
 <img style="height:430px" src="zdvc-upgrade-2.jpg"/>
 _Figure 9. Server upgrade - complete_
 
-**Note:** Server upgrade is not applicable to PowerPrecision Server installations.
+**Note:** Server upgrade is not applicable to PowerPrecision Console Server 1.0 installations.
 
 ###Server Downgrade
 To downgrade the server, uninstall the previous version and install the older server version.

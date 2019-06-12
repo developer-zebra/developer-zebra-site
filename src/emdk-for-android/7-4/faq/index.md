@@ -36,7 +36,33 @@ When developing an app, Android developers can specify in the app manifest a tar
 
 ### Q: Zebra APIs appear to offer limited fault tolerance. How can my app adapt to this?
 
-A: Retry the API command or gracefully exit the app.  `MORE INFO NEEDED FROM ENGINEERING`
+A: Retry the API command or gracefully exit the app. The exception handling code snippet below also might be helpful:
+`MORE INFO NEEDED FROM ENGINEERING`
+
+
+		catch (ScannerException ex)
+            {
+                Log.d("EMDK Exception", ex.StackTrace);
+
+                // Check if the failure is recovarable within the application
+                if (ex.Result == ScannerResults.Failure ||
+                    ex.Result == ScannerResults.ScannerNotEnabled ||
+                    ex.Result == ScannerResults.ScannerNotConnected ||
+                    ex.Result == ScannerResults.InvalidObject ||
+                    ex.Result == ScannerResults.NoDataListener)
+                {
+                    // Decide what actions can be taken as per the business logic
+                }
+
+                // Check if the failure is not recoverable within the application
+                if (ex.Result == ScannerResults.ScannerInUse ||
+                    ex.Result == ScannerResults.FeatureNotSupported ||
+                    ex.Result == ScannerResults.ScannerNotSupported ||
+                    ex.Result == ScannerResults.ScannerInitFailure )
+                {
+                    // Decide what actions can be taken as per the business logic
+                }
+            }
 
 -----
 

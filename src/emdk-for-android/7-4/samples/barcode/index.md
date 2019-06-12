@@ -55,18 +55,20 @@ The following guide will walk you through setting up the EMDK samples in your ID
 
 
 ##Using This Sample
-1. When the application starts it should look like the following.
+1. When the application starts it should look like the following:
   
-  ![img](barcode_1.png)
+  ![img](Barcode.jpg)
   
-2. Set scanner to "Serial SSI Scanner", which is the default one". 
+2. Set scanner to "2D Barcode Imager," which is the default. 
 
-  ![img](../../images/samples/barcode_2.png)
+  ![img](Barcode_scanner_list)
 
-3. Set Trigger Type to "HARD".
+3. Click the Scan button on the screen or press the hard scan key of device and scan a barcode. The scanned barcode data appears in the "Data" field of app.
 
-  ![img](barcode_3.png)
+  ![img](Barcode_data.jpg)
 
+<!-- above steps per engineering TUT-32177. The steps below removed as no longer relevant (to be validated).
+ 
   > Note: Trigger Type "HARD" lets you scan the barcode using device's hard scan key whereas "SOFT" allows you to scan without using devic's hard scan key.
 
 4. Keep all checkboxes checked for decoder params and this is how it should look after setting all fields.
@@ -82,7 +84,7 @@ The following guide will walk you through setting up the EMDK samples in your ID
   ![img](barcode_6.png)  
   
 
-
+ -->
 
 
 

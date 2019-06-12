@@ -19,27 +19,27 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 #### Mobile devices
 
-* **CC600 - Oreo**
-* **CC6000 - Oreo** 
-* MC33 - Nougat, Oreo
-* **MC9300 - Oreo**
+* CC600 - Oreo
+* CC6000 - Oreo 
+* MC33 - Oreo
+* MC9300 - Oreo
 * PS20 - Oreo
-* TC20 - Nougat, **Oreo**
-* TC25 - Nougat, **Oreo**
-* TC51 - Nougat, Oreo
+* TC20 - Oreo
+* TC25 - Oreo
+* TC51 - Oreo
 * TC52 - Oreo
-* TC56 - Nougat, Oreo
+* TC56 - Oreo
 * TC57 - Oreo
-* TC70x - Nougat, Oreo
+* TC70x - Oreo
 * TC72 - Oreo
-* TC75x - Nougat, Oreo
+* TC75x - Oreo
 * TC77 - Oreo
-* **TC8300 - Oreo**
-* VC80x - Nougat, Oreo
-* WT6000 - Nougat
+* TC8300 - Oreo
+* VC80x - Oreo
+`* WT6000 - (OS support info to come)`
 
-**Bold text** indicates support added after initial release; device refresh might be required. 
-
+<!-- **Bold text** indicates support added after initial release; device refresh might be required. 
+ -->
 #### Scanners and imagers
 
 * DS2278
@@ -56,7 +56,11 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ## New in v7.4 
 
+> **Support for Android 7.x Nougat has been dropped**. 
 
+
+
+-----
 
 ## Version History
 

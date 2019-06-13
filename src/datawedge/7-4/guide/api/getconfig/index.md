@@ -14,6 +14,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 * **DataWedge 6.8 -** Added support for ADF settings
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** Added support for configurations: full profile, Data Capture Plus (DCP), Magnetic Stripe Reader (MSR), Internet Protocol (IP), Simulscan 
+* **DataWedge 7.4 -** Added support for new RFID Input feature and new Enterprise Keyboard Configuration feature.
 
 ### Function Prototype
 
@@ -1024,6 +1025,75 @@ Error messages are logged for invalid actions and parameters.
 		}
 	};
 
+### Get Enterprise Keyboard Configuration
+	public void getConfig(View view) { 
+	
+		Bundle bMain = new Bundle(); 
+		bMain.putString("PROFILE_NAME", "ZebraEKB"); 
+		bMain.putString("EKB", ""); 
+		Intent i = new Intent(); 
+		i.setAction("com.symbol.datawedge.api.ACTION"); 
+		i.putExtra("com.symbol.datawedge.api.GET_CONFIG", bMain); 
+		this.sendBroadcast(i); 
+	} 
+
+	
+
+	private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() { 
+		@Override 
+		public void onReceive(Context context, Intent intent) { 
+			String action = intent.getAction(); 
+			String strFinalResult = ""; 
+			if (action.equals("com.symbol.datawedge.api.RESULT_ACTION")) { 
+	
+				if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG")) { //Reading GET_CONFIG result 
+	
+					Bundle resultGetConfig = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG"); 
+					Set<String> keys = resultGetConfig.keySet(); 
+					String profileName = resultGetConfig.getString("PROFILE_NAME"); 
+					strFinalResult = "Profile name: " + profileName; 
+	
+					for (String key : keys) { 
+	
+						if (key.equalsIgnoreCase("EKB")) { 
+							strFinalResult += "\n"; 
+							Bundle ekbSettings = resultGetConfig.getBundle("EKB"); 
+							if (ekbSettings == null) { 
+								strFinalResult += "\nEKB Settings are not found for " + profileName; 
+							} else { 
+	
+								strFinalResult += "\nEKB Settings"; 
+	
+								for (String ekbKey : ekbSettings.keySet()) { 
+									if (ekbKey.equals("ekb_layout")) { 
+										strFinalResult += "\n\t\t" + ekbKey + ": "; 
+										Bundle ekbLayoutSettings = ekbSettings.getBundle("ekb_layout"); 
+										if(ekbLayoutSettings != null){ 
+											for (String ekbLayoutKey : ekbLayoutSettings.keySet()) { 
+												strFinalResult += "\n\t\t\t" + ekbLayoutKey + ": " + ekbLayoutSettings.getString(ekbLayoutKey); 
+											} 
+										} 
+										else { 
+											strFinalResult+= "no layout defined, default will be used"; 
+										} 
+									} else { 
+										strFinalResult += "\n\t\t" + ekbKey + ": " + ekbSettings.getString(ekbKey); 
+									} 
+								} 
+							} 
+	
+							strFinalResult += "\n"; 
+						} 
+						if (key.equalsIgnoreCase("RESULT_CODE")) { 
+							strFinalResult += "\nRESULT_CODE: " + resultGetConfig.getString("RESULT_CODE"); 
+						} 
+					} 
+	
+					Log.d("TAG", "#IntentApp#\n\nGet config info received\n" + strFinalResult); 
+				} 
+			} 
+		} 
+	}; 
 
 ### Get configuration for multiple modules (full profile) in a single intent
 

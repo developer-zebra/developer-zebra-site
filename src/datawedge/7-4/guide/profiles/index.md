@@ -16,8 +16,6 @@ automenu:
       items:
         - title: Barcode
           url: ../input/barcode
-        - title: Data Capture Plus (DCP)
-          url: ../input/dcp
         - title: Mag-stripe Reader (MSR) 
           url: ../input/msr
         - title: Radio-frequency Identification (RFID) 
@@ -42,4 +40,11 @@ automenu:
           url: ../output/ip
         - title: Keystroke
           url: ../output/keystroke
+
+    - title: Utilities
+      items:
+        - title: Data Capture Plus (DCP)
+          url: ../input/dcp
+        - title: Enterprise Keyboard Configuration
+          url: ../utilities/ekb
 ---

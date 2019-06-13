@@ -23,10 +23,10 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
  * **New ADF_RULE bundle** with Action, Device, Decoder and Label_ID sub-bundles
  * **New result code**: RESULT_ACTION_RESULT_CODE_EMPTY_RULE_NAME
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
-* **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
+* **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), and Simulscan. New SEND_RESULT result code for multiple plugins. 
 * **DataWedge 7.2 -** Added new DotCode decoder support.
 * **DataWedge 7.3 -** Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
-* **DataWedge 7.4 -** New RFID Input feature.
+* **DataWedge 7.4 -** Added new RFID Input feature and new Enterprise Keyboard Configuration feature.
 
 ### Function Prototype
 
@@ -76,6 +76,7 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
  * **INTENT** output
  * **KEYSTROKE** output
  * **IP** (Internet Protocol) output
+ * **EKB** utilities
 
 **Notes**: 
 * Plug-in names are case sensitive.
@@ -207,6 +208,21 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 		* `device_id` [string] - BARCODE, MSR, SERIAL or SIMULSCAN
 		* `label_id` [string] - UDI_GS1, UDI_HIBCC or UDI_ICCBBA
 		* `enabled` [string] - true/false (default=true)
+
+
+<ul>
+ <li><b>EKB -</b> Set Enterprise Keyboard Configuration for a DataWedge Profile. Options: </li>
+ <ul>
+   <li><span style="background-color: #F9F2F4"><font face="Courier New" color="#C22F52">ekb_enabled</font></span> [string] – true/false (default=false)</li>
+   <li><span style="background-color: #F9F2F4"><font face="Courier New" color="#C22F52">ekb_layout</font></span> [bundle] - Specifies the keyboard layout to be used. Required values: </li>
+	 <ul>
+	    <li>layout_group [string] - specify group name that matches the group as displayed in DataWedge UI.</li>
+			<li>layout_name [string] - specify layout name that matches the name as displayed in DataWedge UI. Specify <b>null</b> to set to default. </li>
+	 </ul>
+ </ul>
+</ul>
+
+
 
 **IMPORTANT**: 
 
@@ -2909,6 +2925,37 @@ Support started with DataWedge 7.1.  Previous DataWedge versions required multip
 	i.setAction("com.symbol.datawedge.api.ACTION"); 
 	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain); 
 	this.sendBroadcast(i); 
+
+###Set Enterprise Keyboard Configuration
+	//SetConfig [Start] 
+	Bundle bMain = new Bundle(); 
+	Bundle bConfigEKB = new Bundle();
+
+	Bundle bParamsEKB = new Bundle(); 
+	bParamsEKB.putString("ekb_enabled", "true"); //Supported values: true/false 
+	Bundle layoutParams = new Bundle(); 
+	layoutParams.putString("layout_group", "EKBCustomLayouts"); 
+	layoutParams.putString("layout_name", "qwerty"); 
+	bParamsEKB.putBundle("ekb_layout", layoutParams); 
+	//bParamsEKB.putBundle("ekb_layout", null); // To set to default 
+	
+	bConfigEKB.putString("RESET_CONFIG", "false"); 
+	bConfigEKB.putBundle("PARAM_LIST", bParamsEKB); 
+	
+	bMain.putBundle("EKB", bConfigEKB); 
+	
+	bMain.putString("PROFILE_NAME", "ZebraEKB"); 
+	bMain.putString("PROFILE_ENABLED", "true"); 
+	bMain.putString("CONFIG_MODE", "CREATE_IF_NOT_EXIST"); 
+	
+	Intent iSetConfig = new Intent(); 
+	iSetConfig.setAction("com.symbol.datawedge.api.ACTION"); 
+	iSetConfig.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain); 
+	iSetConfig.putExtra("SEND_RESULT", "LAST_RESULT"); 
+	iSetConfig.putExtra("COMMAND_IDENTIFIER", "INTENT_API"); 
+	//SetConfig [End] 
+	
+	this.sendBroadcast(iSetConfig); 
 
 -----
 

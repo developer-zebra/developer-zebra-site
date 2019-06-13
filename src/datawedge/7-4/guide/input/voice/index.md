@@ -160,6 +160,8 @@ Refer to DataWedge [Set Config API](../../api/setconfig).
 * Do not use Google Assistant while DataWedge Voice Input is in use, as it can lead to undesirable behavior. 
 * Providing numbers and other special characters as part of the data capture start phrase is not supported.
 * Voice Input is not supported if Enterprise Home Screen (EHS) is in restricted mode. However, enabling all the privilege settings in EHS will reinstate Voice Input in DataWedge.  
+* If the PTT (push-to-talk) button is released during voice capture, there can be a 1 to 2 second delay to display the captured data due to the speech engine continually listening at that moment.
+* When PTT Express is enabled and running, Voice Input should not be used simultaneously, otherwise it can lead to unexpected behavior.
 
 ------
 

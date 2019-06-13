@@ -84,9 +84,10 @@ For more information about approved languages or to download a localized operati
 -----
 
 ## New in DataWedge 7.4
+* **DataWedge 7.4 and later versions only support Android Oreo (v8.0) and later.**
 * Introduced **voice capture activation by PTT** (push-to-talk) button with new [Data capture start option](../input/barcode).
-* DataWedge 7.4 and later versions only support Android Oreo (v8.0) and later.
 * New [RFID Input plugin](../input/rfid) feature added to read RFID tags.
+* New [Enterprise Keyboard Configuration](../utilities/ekb) feature.
 
 -----
 ## Recent Version History

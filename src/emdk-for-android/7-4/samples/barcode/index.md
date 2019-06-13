@@ -16,12 +16,9 @@ devices:
   - All supported devices
 image: 1.png
 screenshots:
-  - 1.png
-  - 2.png
-  - 3.png
-  - 4.png
-  - 5.png
-  - 6.png
+  - Barcode.jpg
+  - Barcode_scanner_list.jpg
+  - Barcode_data.jpg
 layout: sample.html
 product: EMDK For Android
 productversion: '7.4'
@@ -57,15 +54,17 @@ The following guide will walk you through setting up the EMDK samples in your ID
 ##Using This Sample
 1. When the application starts it should look like the following:
   
-  ![img](Barcode.jpg)
+    <img alt="image" style="height:400px" src="Barcode.jpg"/>
   
 2. Set scanner to "2D Barcode Imager," which is the default. 
 
-  ![img](Barcode_scanner_list.jpg)
+
+    <img alt="image" style="height:400px" src="Barcode_scanner_list.jpg"/>
 
 3. Click the Scan button on the screen or press the hard scan key of device and scan a barcode. The scanned barcode data appears in the "Data" field of app.
 
-  ![img](Barcode_data.jpg)
+
+    <img alt="image" style="height:400px" src="Barcode_data.jpg"/>
 
 <!-- above steps per engineering TUT-32177. The steps below removed as no longer relevant (to be validated).
 

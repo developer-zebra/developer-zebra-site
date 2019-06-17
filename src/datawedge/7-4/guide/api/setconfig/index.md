@@ -46,21 +46,22 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 The main `SET_CONFIG` bundle includes the following properties:
 
 * **PROFILE_NAME** [String]: The name of the Profile on which to perform action(s)
-* **CONFIG_MODE** [String]: (Default=OVERWRITE)
+* **CONFIG_MODE** [String]: (Default=OVERWRITE) Applies to the Profile. Can be used in place of CREATE_PROFILE. Options:
  * **CREATE_IF_NOT_EXIST**: Creates the Profile if string in PROFILE_NAME is not present on device 
  * **OVERWRITE**: If Profile exists, resets all options to default, then configures specified settings
  * **UPDATE**: Updates only specified settings
 * **PROFILE_ENABLED** [String]: Optional; Controls whether to enable (true) or disable (false) a Profile (default=true). If not specified, no change is made to the Profile state.
 * **PLUGIN_CONFIG** [Bundle[ ]]: A bundle array (nested within the main bundle) that contains settings of each Plug-in
 * **APP_LIST** [Array]: List of applications and/or activities to associate with the Profile
-* **Data Capture Plus (DCP) configuration** - [String]: Parameters to control DCP configuration
+<!-- // Commented out 6/17/19
+* **Data Capture Plus (DCP) configuration** - [String]: Parameters to control DCP configuration  -->
 
 #### PLUGIN_CONFIG BUNDLE
 The `PLUGIN_CONFIG` bundle is configured using the following properties:
 
-* **RESET_CONFIG** [String]: Optional. When used, takes the following values: 
+* **RESET_CONFIG** [String]: Optional - applies to an existing Profile. Values: 
  * **True (Default) –** Clear any existing configuration and create a new configuration with the specified parameter values  
- * **False –** Update the existing values and add values not already in the configuration
+ * **False –** Merge existing configuration with changes from the new configuration - update the existing values and add values not already in the configuration
 
 **PLUGIN_NAME** [String]: Name of the Plug-in to configure:
  * **BARCODE** input
@@ -72,7 +73,7 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
  * **VOICE** input
  * **BDF** (basic data formatting) processing
  * **ADF** (advanced data formatting) processing
- * **TOKENS** (data formatting and ordering for UDI/Multi-barcode data) processing
+ * **TOKENS** (data formatting and ordering for Keystroke and IP output with UDI/Multi-barcode data) processing
  * **INTENT** output
  * **KEYSTROKE** output
  * **IP** (Internet Protocol) output
@@ -410,6 +411,7 @@ DataWedge returns the following error codes if the app includes the intent extra
 
 Also see the [Result Codes guide](../resultinfo) for more information.  
 
+<!-- // Commented out 6/17/19
 ### Return Values
 
 Error and debug messages are logged to the Android logging system, which can be viewed and filtered by the logcat command. Use logcat from an ADB shell to view the log messages:
@@ -418,7 +420,7 @@ Error and debug messages are logged to the Android logging system, which can be 
 	$ adb logcat -s DWAPI
 
 Error messages are logged for invalid actions and parameters
-
+-->
 -----
 
 ## Scanner Input Parameters 

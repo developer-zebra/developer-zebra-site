@@ -25,7 +25,7 @@ A: DataWedge is a good choice for many situations that require a quick and easy 
 
 -----
 
-### Q: Why don't my KitKat and Lollipop apps work with Nougat or Oreo?
+### Q: Why don't my KitKat and/or Lollipop apps work with Nougat and/or Oreo?
 
 A: Due to the many advancements in newer Android versions, some older apps require modification to run properly on newer flavors. Among the common causes of incompatibility of older apps relate to changes in background processing implemented mainly to optimize battery life. 
 
@@ -78,8 +78,8 @@ A: ANR errors occur when the main UI thread of an app is blocked for a long peri
 
 **Helpful links**: 
 
-* [What's New for Android 'N' and the Impact on Zebra Developers](https://developer.zebra.com/community/home/blog/2018/08/03/what-s-new-for-android-n-and-the-impact-on-zebra-developers) | Zebra Engineer Darryn Campbell
-* [What's New for Android 'O' and the Impact on Zebra Developers](https://developer.zebra.com/community/home/blog/2018/09/28/what-s-new-for-android-o-and-the-impact-on-zebra-developers) | Zebra Engineer Darryn Campbell
+* [What's New for Android 'N' and the Impact on Zebra Developers](https://developer.zebra.com/community/home/blog/2018/08/03/what-s-new-for-android-n-and-the-impact-on-zebra-developers) | By Darryn Campbell, Zebra engineer 
+* [What's New for Android 'O' and the Impact on Zebra Developers](https://developer.zebra.com/community/home/blog/2018/09/28/what-s-new-for-android-o-and-the-impact-on-zebra-developers) | By Darryn Campbell, Zebra engineer 
 * [ANR basics](https://developer.android.com/topic/performance/vitals/anr) | Android Developer Site
 * [Keeping your app responsive](https://developer.android.com/training/articles/perf-anr) | Android Developer Site
  

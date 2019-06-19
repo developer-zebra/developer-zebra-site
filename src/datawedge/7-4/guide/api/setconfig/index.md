@@ -66,7 +66,6 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
 **PLUGIN_NAME** [String]: Name of the Plug-in to configure:
  * **BARCODE** input
  * **SERIAL** input
- * **DCP** (Data Capture Plus) input
  * **MSR** (Magnetic Stripe Reader) input
  * **RFID** (Radio-frequency Identification) input
  * **SIMULSCAN** input
@@ -77,6 +76,7 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
  * **INTENT** output
  * **KEYSTROKE** output
  * **IP** (Internet Protocol) output
+ * **DCP** (Data Capture Plus) utilities
  * **EKB** utilities
 
 **Notes**: 

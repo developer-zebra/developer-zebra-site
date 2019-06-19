@@ -958,6 +958,16 @@ _**Note**: Higher marginless levels will increase decoding times and the risk of
  * **Proximity Sensor Input**
  -->
 
+**DPM Illumination Control -** Controls illumination for DPM barcodes: 
+* **Direct Illumination -** Scanner uses only direct (white) illumination. Recommended for use with dot peen barcodes - tilt the part 30 degrees for optimal decoding.
+* **Indirect Illumination -** Scanner uses only red illumination. Recommended for use with laser etched barcodes on cylinders or curved, rough, grainy, highly reflective, or visibly machined surfaces.
+* **Cycle Illumination -** Scanner cycles alternately between direct and indirect illumination. The scanner starts with the illumination used during the last successful decode.
+
+**DPM Mode -** Mode to optimize DPM barcode decoding performance based on barcode size (Default value is Mode 2): 
+* **Disabled -** No special processing.
+* **DPM Mode 1 -** Optimizes decoding performance for smaller DPM barcodes, typically found on electronics and medical instruments, especially on smooth surfaces. These barcodes tend to be laser etched or direct printed.
+* **DPM Mode 2 -** Optimizes decoding performance for larger DPM barcodes, typically found on industrial parts, especially on rough, grainy or visibly machined surface. These barcodes tend to be dot peen or laser etched.
+
 **Illumination mode -**  Turns illumination on and off.
 
 **Inverse 1D Mode -** Permits option selection for inverse 1D barcode decoding: 

@@ -1,5 +1,5 @@
 ---
-title: IrDA Intents API
+title: Locking Cradle API
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -7,29 +7,100 @@ productversion: '7.4'
 
 ## Overview
 
-EMDK for Android 7.3 (and later) contains interfaces for controlling hardware that conforms to the Infrared Data Association (IrDA) specification, an infrared line-of-sight technology that's used for data transfer between small portable devices such as mobile computers, printers, handheld remote controls and some medical devices. IrDA also refers to the protocols used for wireless data transfer using IrDA-equipped devices. 
+EMDK for Android 7.4 (and later) contains interfaces for controlling the locking charger cradle for securing and dispensing Zebra EC30 ultra-compact mobile computing devices. Current interfaces provide programmatic access to the following main cradle functions: 
 
-Zebra's IrDA implementation supports the following protocols:
-* TinyTP
-* IrLMP
-* IrLAP/LSAP
-* IrSIR
+* Lock and unlock all device bays
+* Blink LEDs
+* 
 
-Zebra IrDA APIs operate through Android intents – specific commands that can be used by Android applications to control IrDA hardware on IrDA-equipped Zebra devices. This guide explains how to communicate wirelessly between IrDA devices using IrDA Intent APIs on Zebra mobile devices. 
+
+
+enabling and disabling the cradle
+
+Following design and implementation is an Intent based Cradle API is exposed to Zebra customers and application developers for them to program the applications to communicate with Zebra smart cradle.  
+Applications are expected to create and pass the required data structures to the Intent interface.
+Client application is not responsible for enabling / disabling the smart cradle – this is handled automatically by the underlying framework when the application tries to send a message.  E.g. the framework could call cradleEnable() when it is told to do action on cradle then call cradleDisable() after action is done.
+
 
 ### Requirements
 
-Use of IrDA APIs requires experience with Java and Android app development, and familiarity with Android intents. For successful IrDA communication, **target device(s) must contain**: 
+Use of cradle intent APIs requires experience with Java and Android app development, and familiarity with Android intents. 
 
-* One or more IrDA-equipped Zebra devices
-* DataWedge version 7.3.11 or later on the device
-* IrDA transceivers in clear line of sight during data transmission
+**Supported cradle(s)**: 
+
+* EC30 Locking Cradle 
 
 -----
 
-## IrDA Intent APIs
+## Cradle Intent APIs
 
-IrDA intent APIs can be used in applications that require control of IrDA communication. Supported intent actions and commands are listed below. 
+Cradle intent APIs can be used in applications that require control of the EC30 locking cradle. Supported intent actions and commands are listed below. 
+
+**Cradle Action(s)**:
+
+* `com.symbol.cradle.api.ACTION_DO`
+	* Unlock cradle
+	* Flash LED
+
+Do Action
+The following commands are used to do work.
+
+Command - Associated Intent Extra - Values Type - Bundle Parameters
+
+Cradle Unlock - UNLOCK  - Bundle - LED & Timeout
+LED Blink 	  - BLINK 	- Bundle - Color, Solid & Timeout
+
+-----
+
+Bundle Parameters
+
+Command - Bundle Parameter - Values Type - Description
+
+Cradle Unlock - LED - Boolean - True - Unlock cradle with LED
+							  - False - Unlock cradle without LED
+							  - Default : False
+
+TIMEOUT
+int
+5 to 20 seconds
+Default : 0 | Step Value : 1s
+
+LED Blink
+ 
+
+
+COLOR
+int
+1 – Green, 16 – Red, 17 – Blue
+Default : 0
+SOLID
+Boolean
+True – Solid LED
+False – Blink LED
+Default : False
+TIMEOUT
+int
+0 to 120 seconds
+Default : 0 | Step Value : 1s
+Do Command Return Values
+Property
+Associated Intent Extra
+Values Type
+Description
+Callback
+CALLBACK_RESPONSE
+Pending Intent
+Will specify if the UNLOCK or BLINK command executed successfully or not. (SUCCESS/FAILURE)
+Callback value
+ Intent extra
+Description
+RESULT_CODE
+String: “SUCCESS”, “FAILURE”.
+Whether the Intent call succeeded or failed.  If this field is “FAILURE” then the RESULT_MESSAGE will contain details of what failed.  This is not the success / fail of the client, it is whether or not the command was successfully sent, for example, failing to cradleEnable () the hardware would lead to a FAIL.
+RESULT_MESSAGE
+String.  User readable representation of the return message,
+e.g. ‘INVALID_PARAMETERS, ‘DEVICE_NOT_READY’ or some other message.
+
 
 **IrDA Intents and Actions**:
 

@@ -1,5 +1,5 @@
 ---
-title: Locking Cradle API
+title: Locking-cradle API
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -10,7 +10,9 @@ productversion: '7.4'
 EMDK for Android 7.4 (and later) contains interfaces for controlling the locking charger cradle for securing and dispensing Zebra EC30 ultra-compact mobile computing devices. Current interfaces provide programmatic access to the following main cradle functions: 
 
 * Lock and unlock all device bays
-* Blink LEDs
+* LED flash or solid illumination
+* LED color
+* Timeout
 * 
 
 

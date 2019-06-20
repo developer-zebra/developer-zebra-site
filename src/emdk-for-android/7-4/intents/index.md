@@ -14,6 +14,6 @@ automenu:
           url: datacapture
         - title: IrDA 
           url: irda
-        - title: Locking Cradle API 
+        - title: Locking-cradle API 
           url: cradle
 ---

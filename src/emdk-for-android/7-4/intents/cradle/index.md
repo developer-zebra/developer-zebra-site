@@ -85,77 +85,83 @@ The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the follow
 
 #### Unlock Cradle:
 
-	Intent intent = new Intent();
-	intent.setAction("com.symbol.cradle.api.ACTION_DO");
-	Bundle unlockBundle = new Bundle();
-	unlockBundle.putInt("TIMEOUT", 5);
-	unlockBundle.putBoolean("LED", false);
-	intent.putExtra("UNLOCK", unlockBundle);
+	private void CradleUnlock() {
+	        Intent intent = new Intent();
+	        intent.setAction("com.symbol.cradle.api.ACTION_DO");
+	        Bundle unlockBundle = new Bundle();
+	        unlockBundle.putInt("TIMEOUT", 5);
+	        unlockBundle.putBoolean("LED", false);
+	        intent.putExtra("UNLOCK", unlockBundle);
+	        Intent responseIntent = new Intent(getApplicationContext(), MyBroadcastReceiver.class);
+	        responseIntent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+	        responseIntent.putExtra("COMMAND", "CRADLE_UNLOCK");
+	        PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+	        intent.putExtra("CALLBACK_RESPONSE", piResponse);
+	        sendBroadcast(intent);
+	    }
 
-	Intent responseIntent = new Intent(getApplicationContext(), MyBroadcastReceiver.class);
-	responseIntent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
-	responseIntent.putExtra("COMMAND", "CRADLE_UNLOCK");
+#### Unlock Cradle with LED:
 
-	PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-	intent.putExtra("CALLBACK_RESPONSE", piResponse);
-	sendBroadcast(intent);
-	CradleUnlockWithLED
-	Intent intent = new Intent();
-	intent.setAction("com.symbol.cradle.api.ACTION_DO");
-	Bundle unlockBundle = new Bundle();
-	unlockBundle.putInt("TIMEOUT", 5);
-	unlockBundle.putBoolean("LED", true);
-	intent.putExtra("UNLOCK", unlockBundle);
+    private void CradleUnlockWithLED() {
+        Intent intent = new Intent();
+        intent.setAction("com.symbol.cradle.api.ACTION_DO");
+        Bundle unlockBundle = new Bundle();
+        unlockBundle.putInt("TIMEOUT", 5);
+        unlockBundle.putBoolean("LED", true);
+        intent.putExtra("UNLOCK", unlockBundle);
+        Intent responseIntent = new Intent(getApplicationContext(),  MyBroadcastReceiver.class);
+        responseIntent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+        responseIntent.putExtra("COMMAND", "CRADLE_UNLOCK_WITH_LED");
+        PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        intent.putExtra("CALLBACK_RESPONSE", piResponse);
+        sendBroadcast(intent);
+    }
 
-	Intent responseIntent = new Intent(getApplicationContext(), MyBroadcastReceiver.class);
-	responseIntent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
-	responseIntent.putExtra("COMMAND", "CRADLE_UNLOCK_WITH_LED");
+#### Blink Cradle LED:
 
-	PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-	intent.putExtra("CALLBACK_RESPONSE", piResponse);
-	sendBroadcast(intent);
+    private void CradleLEDBlink() {
+        Intent intent = new Intent();
+        intent.setAction("com.symbol.cradle.api.ACTION_DO");
+        Bundle blinkBundle = new Bundle();
+        blinkBundle.putInt("TIMEOUT", 5);
+        blinkBundle.putInt("COLOR", color); //1-Green,16-Red,17-Blue
+        blinkBundle.putBoolean("SOLID", isSolid); // true OR false
+        intent.putExtra("BLINK", blinkBundle);
+        Intent responseIntent = new Intent(getApplicationContext(), MyBroadcastReceiver.class);
+        responseIntent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+        responseIntent.putExtra("COMMAND", "CRADLE_BLINK_LED");
+        PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        intent.putExtra("CALLBACK_RESPONSE", piResponse);
+        sendBroadcast(intent);
+    }
 
-#### Blink Cradle LED
+#### Broadcast Receiver:
 
-	Intent intent = new Intent();
-	intent.setAction("com.symbol.cradle.api.ACTION_DO");
-	Bundle blinkBundle = new Bundle();
-	blinkBundle.putInt("TIMEOUT", 5);
-	blinkBundle.putInt("COLOR", color); //1-Green,16-Red,17-Blue
-	blinkBundle.putBoolean("SOLID", isSolid) ; // true OR false
-	intent.putExtra("BLINK", blinkBundle);
-
-	Intent responseIntent = new Intent(getApplicationContext(), MyBroadcastReceiver.class);
-	responseIntent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
-	responseIntent.putExtra("COMMAND", "CRADLE_BLINK_LED");
-
-	PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), REQUEST_CODE, responseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-	intent.putExtra("CALLBACK_RESPONSE", piResponse);
-	sendBroadcast(intent);
-
-#### Broadcast Receiver
-
-	@Override
-	public void onReceive(Context context, Intent intent) {
-
-	String status = "";
-	String command = intent.getStringExtra("COMMAND");
-	String resultCode = intent.getStringExtra("RESULT_CODE");
-	String resultMessage = intent.getStringExtra("RESULT_MESSAGE");
-
-	if (command != null) {
-	status += "\n* " + command;
-	}
-	if (resultCode != null) {
-	status += "\n* ResultCode= " + resultCode;
-	}
-	if (resultMessage != null) {
-	status += "\n* Message= " + resultMessage + " \n";
-	}
-	Log.d(MyBroadcastReceiver.class.getSimpleName(),status);
-	}
-
-
+    /*The broadcast receiver below will receive the responseIntent defined in the above functions once any of the above API calls have been processed
+    register this broadcast receiver by putting the below in the <application> section of the manifest.
+            <receiver
+            android:name=".MainActivity$MyBroadcastReceiver">
+        </receiver>
+    */
+    public static class MyBroadcastReceiver extends BroadcastReceiver {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String status = "";
+            String command = intent.getStringExtra("COMMAND");
+            String resultCode = intent.getStringExtra("RESULT_CODE");
+            String resultMessage = intent.getStringExtra("RESULT_MESSAGE");
+            if (command != null) {
+                status += "\n* " + command;
+            }
+            if (resultCode != null) {
+                status += "\n* ResultCode= " + resultCode;
+            }
+            if (resultMessage != null) {
+                status += "\n* Message= " + resultMessage + " \n";
+            }
+            Log.d(MyBroadcastReceiver.class.getSimpleName(), status);
+        }
+    }
 -----
 
 ## Also See

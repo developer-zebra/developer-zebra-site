@@ -9,17 +9,10 @@ productversion: '7.4'
 
 EMDK for Android 7.4 (and later) contains interfaces for controlling the Locking SmartCradle, which is used for charging and securing Zebra EC30 ultra-compact mobile computing devices. Current interfaces provide programmatic access to the following SmartCradle functions: 
 
-* Lock and unlock a device from its charging bay
-* Illuminate a bay's LED to shine solid or to "blink"
-* Set a bay's LED color to red, green or blue
-* Set a Timeout (in sec.) for expiration of an Action
-
-
-
-Following design and implementation is an Intent based Cradle API is exposed to Zebra customers and application developers for them to program the applications to communicate with Zebra smart cradle.  
-Applications are expected to create and pass the required data structures to the Intent interface.
-Client application is not responsible for enabling / disabling the smart cradle – this is handled automatically by the underlying framework when the application tries to send a message.  E.g. the framework could call cradleEnable() when it is told to do action on cradle then call cradleDisable() after action is done.
-
+* **Unlock** a device from its charging bay
+* **Illuminate a bay LED** to shine solid or to "blink"
+* **Set LED color** to red, green or blue
+* **Set Timeout** (in sec.) for expiration of an Action
 
 ### Requirements
 
@@ -27,7 +20,7 @@ Use of SmartCradle intent APIs requires experience with Java and with Android ap
 
 **Supported cradle(s)**: 
 
-* EC30 Locking Cradle 
+* EC30 Locking SmartCradle 
 
 -----
 
@@ -81,9 +74,10 @@ The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the follow
 
 -----
 
-### Sample Code
+## Sample Code
+Below is code provided by engineering and modified by Dan Silva 
 
-#### Unlock Cradle:
+### Unlock Cradle:
 
 	private void CradleUnlock() {
 	        Intent intent = new Intent();
@@ -100,7 +94,7 @@ The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the follow
 	        sendBroadcast(intent);
 	    }
 
-#### Unlock Cradle with LED:
+### Unlock Cradle with LED:
 
     private void CradleUnlockWithLED() {
         Intent intent = new Intent();
@@ -117,7 +111,7 @@ The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the follow
         sendBroadcast(intent);
     }
 
-#### Blink Cradle LED:
+### Blink Cradle LED:
 
     private void CradleLEDBlink() {
         Intent intent = new Intent();
@@ -135,14 +129,15 @@ The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the follow
         sendBroadcast(intent);
     }
 
-#### Broadcast Receiver:
+### Broadcast Receiver:
 
-    /*The broadcast receiver below will receive the responseIntent defined in the above functions once any of the above API calls have been processed
-    register this broadcast receiver by putting the below in the <application> section of the manifest.
+    /*The broadcast receiver below will receive the responseIntent defined in the above functions once any of the above API calls have been processed register this broadcast receiver by putting the below in the <application> section of the manifest.
+
             <receiver
             android:name=".MainActivity$MyBroadcastReceiver">
-        </receiver>
+    		</receiver>
     */
+    
     public static class MyBroadcastReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -162,6 +157,7 @@ The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the follow
             Log.d(MyBroadcastReceiver.class.getSimpleName(), status);
         }
     }
+
 -----
 
 ## Also See

@@ -1,5 +1,5 @@
 ---
-title: Locking-cradle API
+title: Locking SmartCradle API
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -7,17 +7,14 @@ productversion: '7.4'
 
 ## Overview
 
-EMDK for Android 7.4 (and later) contains interfaces for controlling the locking charger cradle for securing and dispensing Zebra EC30 ultra-compact mobile computing devices. Current interfaces provide programmatic access to the following main cradle functions: 
+EMDK for Android 7.4 (and later) contains interfaces for controlling the Locking SmartCradle, which is used for charging and securing Zebra EC30 ultra-compact mobile computing devices. Current interfaces provide programmatic access to the following SmartCradle functions: 
 
-* Lock and unlock all device bays
-* LED flash or solid illumination
-* LED color
-* Timeout
-* 
-
+* Lock and unlock a device from its charging bay
+* Illuminate a bay's LED to shine solid or to "blink"
+* Set a bay's LED color to red, green or blue
+* Set a Timeout (in sec.) for expiration of an Action
 
 
-enabling and disabling the cradle
 
 Following design and implementation is an Intent based Cradle API is exposed to Zebra customers and application developers for them to program the applications to communicate with Zebra smart cradle.  
 Applications are expected to create and pass the required data structures to the Intent interface.
@@ -26,7 +23,7 @@ Client application is not responsible for enabling / disabling the smart cradle 
 
 ### Requirements
 
-Use of cradle intent APIs requires experience with Java and Android app development, and familiarity with Android intents. 
+Use of SmartCradle intent APIs requires experience with Java and with Android app development and intent usage. 
 
 **Supported cradle(s)**: 
 
@@ -34,23 +31,34 @@ Use of cradle intent APIs requires experience with Java and Android app developm
 
 -----
 
-## Cradle Intent APIs
+## SmartCradle Intent Action
 
-Cradle intent APIs can be used in applications that require control of the EC30 locking cradle. Supported intent actions and commands are listed below. 
+The API currently implements a single intent, `com.symbol.cradle.api.ACTION_DO`. Individual cradle Actions are executed as specified in an intent extra. Supported Actions are listed below. 
 
-**Cradle Action(s)**:
+###Cradle Actions
 
-* `com.symbol.cradle.api.ACTION_DO`
-	* Unlock cradle
-	* Flash LED
+The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the following Actions:
 
-Do Action
-The following commands are used to do work.
+#### Unlock cradle bay 
+* **Type**: Bundle
+* **Extra**: "UNLOCK"
+**Parameters**: LED, Timeout
+* **LED**: Boolean
+ * **True**: Unlock cradle with LED
+ * **False**: Unlock cradle without LED (default)<br>
+* **Timeout**: Integer
+ * **Possible values**:
+ 	* 5&ndash;20 (seconds in increments of 1)
+ 	* default = 0
 
-Command - Associated Intent Extra - Values Type - Bundle Parameters
-
-Cradle Unlock - UNLOCK  - Bundle - LED & Timeout
-LED Blink 	  - BLINK 	- Bundle - Color, Solid & Timeout
+#### LED Blink
+* **Type**: Bundle
+* **Extra**: "BLINK" 
+**Parameters**: Color, Solid, Timeout
+* **Color**: Integer
+ * 1- Green
+ * 16 - Red
+ * 17 - Blue
 
 -----
 

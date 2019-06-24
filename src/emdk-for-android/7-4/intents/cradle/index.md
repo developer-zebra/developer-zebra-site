@@ -26,15 +26,15 @@ Use of SmartCradle intent APIs requires experience with Java and with Android ap
 
 ## SmartCradle Intent Action
 
-The API currently implements a single intent, `com.symbol.cradle.api.ACTION_DO`. Individual cradle Actions are executed as specified in an intent extra. Supported Actions are listed below. 
+The API currently implements a single intent, `com.symbol.cradle.api.ACTION_DO`. Individual cradle Actions are executed as intent extras. Supported Actions are listed below. 
 
 ### Cradle Actions
 
 The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the following Actions:
 
 #### Unlock cradle bay 
-* **Type**: Bundle
-* **Extra**: "UNLOCK"<br>
+* **Extra**: "UNLOCK"
+* **Type**: Bundle<br>
 **Parameters**: LED, Timeout
 * **LED**: Boolean
  * **True**: Unlock cradle with LED
@@ -46,8 +46,8 @@ The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the follow
  	* default: 0
 
 #### LED Blink
-* **Type**: Bundle
-* **Extra**: "BLINK" <br>
+* **Extra**: "BLINK"
+* **Type**: Bundle<br>
 **Parameters**: Color, Solid, Timeout
 * **Color**: Integer (default = 0)
  * 1- Green
@@ -66,8 +66,8 @@ The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the follow
 
 #### Callback
 
-* **Type**: Pending intent
-* **Extra**: "CALLBACK_RESPONSE"<br>
+* **Extra**: "CALLBACK_RESPONSE"
+* **Type**: Pending intent<br>
 * **Function**: Indicates "SUCCESS" or FAILURE" of UNBLOCK, BLINK commands 
 * **"RESULT_CODES"**: "SUCCESS" or FAILURE" of intent being sent, NOT of the client's ability to execute the command.  
  * **"RESULT_MESSAGE"**: e.g. ‘INVALID_PARAMETERS', ‘DEVICE_NOT_READY’, etc.

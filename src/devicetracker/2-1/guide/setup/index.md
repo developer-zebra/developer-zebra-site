@@ -98,7 +98,7 @@ Supported Devices (including GMS and non-GMS versions):
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
-    <td>MC93</td>
+    <td>MC9300</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>

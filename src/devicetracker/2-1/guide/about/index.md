@@ -10,9 +10,16 @@ productversion: '2.1'
 Device Tracker is a centralized solution that tracks and finds misplaced devices within a facility. As part of Zebra DNA Visibility Console, it leverages existing WiFi network infrastructure to locate devices, preventing device inventory shrinkage. When locating a device, Device Tracker identifies the general area where the device is located based on the Access Point (AP) the device is connected to within the facility. <!-- The Device Tracker client uses BLE (Bluetooth Low Energy) beacons transmitted from the misplaced device for proximity sensing based on its relative position to the device conducting the search. --> Audio can be played on the misplaced device to determine its location. Device Tracker centralized management system continuously monitors device presence, tracking status, connection state, and battery charge to ensure visibility of devices prior to reaching a disconnected or loss of battery state.
 
 ## New in Device Tracker 2.1
+* New Devices Supported:
+  * Android 6.x (Marshmallow): ET50/ET55
+  * Android 7.x (Nougat): WT6000, TC25
+  * Android 8.x (Oreo): ET51/ET56, TC20, MC9300, TC8300, EC30, L10AW 
 * **Disconnect Threshold Time** is removed from the Application Configuration screen and replaced with [Reporting Frequency](../config/#applicationconfiguration). 
-* New option to upgrade server.
-* Updates to client notification messages. 
+* New feature to upgrade server to newer version.
+* Known issues fixed: 
+  * During network congestion, when pressing the back button in the proximity screen it takes about 10 seconds to show a status message. 
+  * When a user clicks on the play sound button before 5 minutes (reporting interval) has elapsed after marking a misplaced device as "To Be Found" in ZDVC console, the proper message is not displayed on the finding device. 
+
 
 ## Version History
 
@@ -27,12 +34,12 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
     <td style="text-align:center" rowspan="2">2.1</td>
     <td style="text-align:center">Server</td>
     <td style="text-align:center">2.1</td>
-    <td style="text-align:left"><b>Disconnect Threshold Time</b> removed from Application Configuration screen and replaced with <b>Reporting Frequency</b>. <br>New option to upgrade server.</td>
+    <td style="text-align:left">• <b>Disconnect Threshold Time</b> removed from Application Configuration screen and replaced with <b>Reporting Frequency</b>. <br>• New feature to upgrade server to newer version. </td>
   </tr>
   <tr>
     <td style="text-align:center">Client</td>
     <td style="text-align:center">2.1</td>
-    <td style="text-align:left">Updates to notification messages.</td>
+    <td style="text-align:left">• New devices supported: ET50/ET55, WT6000, TC25, ET51/ET56, TC20, MC9300, TC8300, EC30, L10AW <br>• Known issues fixed:<br>   1. During network congestion, when pressing the back button in the proximity screen it takes about 10 seconds to show a status message.<br>   2. When a user clicks on the play sound button before 5 minutes (reporting interval) has elapsed after marking a misplaced device as "To Be Found" in ZDVC console, the proper message is not displayed on the finding device. </td>
   </tr>
   <tr>
     <td style="text-align:center" rowspan="2">1.0</td>

@@ -40,23 +40,22 @@ The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the follow
 	* **True**: Unlock cradle with LED<br>
 	* **False**: Unlock cradle without LED (default)<br>
 **Timeout**: Integer<br>
-* **Possible values**:
- * 5&ndash;20 (seconds)
- * Step value: 1
- * default: 0
+	* 5&ndash;20 (seconds)
+	* Step value: 1
+	* default: 0
 
 #### LED Blink
 * **Extra**: "BLINK"
 * **Type**: Bundle<br>
 * **Parameters**: Color, Solid, Timeout<br>
-**Color**: Integer (default = 0)
- * 1- Green
- * 16 - Red
- * 17 - Blue<br>
-**Solid**: Boolean
- * **True**: Solid LED
- * **False**: Blink LED (default)<br>
-**Timeout**: Integer
+**Color**: Integer (default = 0)<br>
+	* 1- Green
+	* 16 - Red
+	* 17 - Blue<br>
+**Solid**: Boolean<br>
+	* **True**: Solid LED<br>
+	* **False**: Blink LED (default)<br>
+**Timeout**: Integer<br>
  	* 0&ndash;120 (seconds)
  	* Step value: 1
  	* default: 0
@@ -69,7 +68,7 @@ The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the follow
 * **Type**: Pending intent<br>
 * **Function**: Indicates "SUCCESS" or FAILURE" of UNBLOCK, BLINK commands 
 * **"RESULT_CODES"**: "SUCCESS" or FAILURE" of intent being sent, NOT of the client's ability to execute the command.  
- * **"RESULT_MESSAGE"**: e.g. ‘INVALID_PARAMETERS', ‘DEVICE_NOT_READY’, etc.
+ * **"RESULT_MESSAGE"**: "INVALID_PARAMETERS", "DEVICE_NOT_READY", etc.
 
 -----
 

@@ -35,7 +35,7 @@ The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the follow
 #### Unlock cradle bay 
 * **Extra**: "UNLOCK"
 * **Type**: Bundle
-* **Parameters**: LED, Timeout
+* **Parameters**: LED, Timeout<br>
 **LED**: Boolean<br>
 	* **True**: Unlock cradle with LED<br>
 	* **False**: Unlock cradle without LED (default)<br>
@@ -48,16 +48,15 @@ The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the follow
 #### LED Blink
 * **Extra**: "BLINK"
 * **Type**: Bundle<br>
-**Parameters**: Color, Solid, Timeout
-* **Color**: Integer (default = 0)
+* **Parameters**: Color, Solid, Timeout<br>
+**Color**: Integer (default = 0)
  * 1- Green
  * 16 - Red
- * 17 - Blue
-* **Solid**: Boolean
+ * 17 - Blue<br>
+**Solid**: Boolean
  * **True**: Solid LED
- * **False**: Blink LED (default)
-* **Timeout**: Integer
- * **Possible values**:
+ * **False**: Blink LED (default)<br>
+**Timeout**: Integer
  	* 0&ndash;120 (seconds)
  	* Step value: 1
  	* default: 0

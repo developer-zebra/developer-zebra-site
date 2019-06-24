@@ -28,7 +28,7 @@ parm:
       description: Adjusts touch-screen sensitivity for input with a bare or gloved finger.
     - code: 12
       devicetype: A
-      name: Glove and Finger
+      name: Finger
       mx: "9.1"
       description: Adjusts touch-screen sensitivity for input with a bare finger only.
 ---

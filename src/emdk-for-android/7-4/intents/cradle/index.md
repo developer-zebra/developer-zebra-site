@@ -30,50 +30,50 @@ The API currently implements a single intent, `com.symbol.cradle.api.ACTION_DO`.
 
 ### Cradle Actions
 
-The `com.symbol.cradle.api.ACTION_DO` intent is capable of performing the following Actions:
+`com.symbol.cradle.api.ACTION_DO`:
 
 #### Unlock cradle bay 
-* **Extra**: "UNLOCK"
-* **Type**: Bundle
-* **Parameters**: LED, Timeout<br>
-**LED**: Boolean<br>
-	* **True**: Unlock cradle with LED<br>
-	* **False**: Unlock cradle without LED (default)<br>
-**Timeout**: Integer<br>
-	* 5&ndash;20 (seconds)
-	* Step value: 1
-	* default: 0
+**Extra**: "UNLOCK"
+**Type**: Bundle
+**Parameters**: LED, Timeout
+* **LED**: Boolean<br>
+ * **True**: Unlock cradle with LED<br>
+ * **False: Unlock cradle without LED (default)**<br>
+* **Timeout**: Integer<br>
+ * **Range**: 5&ndash;20 (seconds)<br>
+ * **Step value**: 1<br>
+ * **Default**: 0<br>
 
-#### LED Blink
-* **Extra**: "BLINK"
-* **Type**: Bundle<br>
-* **Parameters**: Color, Solid, Timeout<br>
-**Color**: Integer (default = 0)<br>
-	* 1- Green
-	* 16 - Red
-	* 17 - Blue<br>
-**Solid**: Boolean<br>
-	* **True**: Solid LED<br>
-	* **False**: Blink LED (default)<br>
-**Timeout**: Integer<br>
- 	* 0&ndash;120 (seconds)
- 	* Step value: 1
- 	* default: 0
+#### LED Blink<br>
+**Extra**: "BLINK"<br>
+**Type**: Bundle<br>
+**Parameters**: Color, Solid, Timeout<br>
+* **Color**: Integer<br>
+ * **0 -Off (default)**<br> 
+ * **1 -** Green<br>
+ * **16 -** Red<br>
+ * **17 -** Blue<br>
+* **Solid**: Boolean<br>
+ * **True**: Solid LED<br>
+ * **False: Blink LED (default)**<br>
+* **Timeout**: Integer<br>
+ * **Range**: 0&ndash;120 (seconds)<br>
+ * **Step value**: 1<br>
+ * **Default: 0**<br>
 
 ### Return Values
 
 #### Callback
 
-* **Extra**: "CALLBACK_RESPONSE"
-* **Type**: Pending intent<br>
-* **Function**: Indicates "SUCCESS" or FAILURE" of UNBLOCK, BLINK commands 
-* **"RESULT_CODES"**: "SUCCESS" or FAILURE" of intent being sent, NOT of the client's ability to execute the command.  
- * **"RESULT_MESSAGE"**: "INVALID_PARAMETERS", "DEVICE_NOT_READY", etc.
+**Extra**: "CALLBACK_RESPONSE"
+**Type**: Pending intent
+**Function**: Indicates status of UNBLOCK, BLINK intent command being sent (NOT of the client ability to execute)  
+**"RESULT_CODES"**: "SUCCESS" or FAILURE"   
+**"RESULT_MESSAGE"**: "INVALID_PARAMETERS", "DEVICE_NOT_READY", etc.
 
 -----
 
 ## Sample Code
-Below is code provided by engineering and modified by Dan Silva 
 
 ### Unlock Cradle:
 

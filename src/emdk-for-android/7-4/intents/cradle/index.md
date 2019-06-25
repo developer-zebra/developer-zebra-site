@@ -33,9 +33,9 @@ The API currently implements a single intent, `com.symbol.cradle.api.ACTION_DO`.
 `com.symbol.cradle.api.ACTION_DO`:
 
 #### Unlock cradle bay 
-**Extra**: "UNLOCK"
-**Type**: Bundle
-**Parameters**: LED, Timeout
+**Extra**: "UNLOCK"<br>
+**Type**: Bundle<br>
+**Parameters**: LED, Timeout<br>
 * **LED**: Boolean<br>
  * **True**: Unlock cradle with LED<br>
  * **False: Unlock cradle without LED (default)**<br>
@@ -65,11 +65,11 @@ The API currently implements a single intent, `com.symbol.cradle.api.ACTION_DO`.
 
 #### Callback
 
-**Extra**: "CALLBACK_RESPONSE"
-**Type**: Pending intent
-**Function**: Indicates status of UNBLOCK, BLINK intent command being sent (NOT of the client ability to execute)  
-**"RESULT_CODES"**: "SUCCESS" or FAILURE"   
-**"RESULT_MESSAGE"**: "INVALID_PARAMETERS", "DEVICE_NOT_READY", etc.
+**Extra**: "CALLBACK_RESPONSE"<br>
+**Type**: Pending intent<br>
+**Function**: Indicates status of UNBLOCK, BLINK intent command being sent (NOT of the client ability to execute)<br>
+**"RESULT_CODES"**: "SUCCESS" or FAILURE"<br>
+**"RESULT_MESSAGE"**: "INVALID_PARAMETERS", "DEVICE_NOT_READY", etc.<br>
 
 -----
 
@@ -129,7 +129,7 @@ The API currently implements a single intent, `com.symbol.cradle.api.ACTION_DO`.
 
 ### Broadcast Receiver:
 
-    /*The broadcast receiver below will receive the responseIntent defined in the above functions once any of the above API calls have been processed register this broadcast receiver by putting the below in the <application> section of the manifest.
+    /*The broadcast receiver below receives the responseIntent defined in the above functions. Once any of the above API calls have been processed, register this broadcast receiver by adding the code below in the <application> section of the manifest:
 
             <receiver
             android:name=".MainActivity$MyBroadcastReceiver">

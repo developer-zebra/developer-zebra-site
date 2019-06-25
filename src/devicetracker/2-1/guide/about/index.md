@@ -14,8 +14,8 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
   * Android 6.x (Marshmallow): ET50/ET55
   * Android 7.x (Nougat): WT6000, TC25
   * Android 8.x (Oreo): ET51/ET56, TC20, MC9300, TC8300, EC30, L10AW 
-* **Disconnect Threshold Time** is removed from the Application Configuration screen and replaced with [Reporting Frequency](../config/#applicationconfiguration). 
-* New feature to upgrade server to newer version.
+* **Disconnect Threshold Time** is removed from the Application Configuration screen and integrated with [Reporting Frequency](../config/#applicationconfiguration). 
+* Ability to upgrade server from previous version to current version without the need to reinstall.
 * Known issues fixed: 
   * During network congestion, when pressing the back button in the proximity screen it takes about 10 seconds to show a status message. 
   * When a user clicks on the play sound button before 5 minutes (reporting interval) has elapsed after marking a misplaced device as "To Be Found" in ZDVC console, the proper message is not displayed on the finding device. 
@@ -34,7 +34,7 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
     <td style="text-align:center" rowspan="2">2.1</td>
     <td style="text-align:center">Server</td>
     <td style="text-align:center">2.1</td>
-    <td style="text-align:left">• <b>Disconnect Threshold Time</b> removed from Application Configuration screen and replaced with <b>Reporting Frequency</b>. <br>• New feature to upgrade server to newer version. </td>
+    <td style="text-align:left">• <b>Disconnect Threshold Time</b> removed from Application Configuration screen and integrated with <b>Reporting Frequency</b>. <br>• Ability to upgrade server from previous version to current version without the need to reinstall. </td>
   </tr>
   <tr>
     <td style="text-align:center">Client</td>

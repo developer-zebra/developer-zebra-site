@@ -9,7 +9,7 @@ productversion: '2.0'
 
 For continued support of Zebra Android device administration, EMM solution providers must adapt their server and agent apps to the standards-based approaches being implemented in Android Enterprise APIs and Managed Configurations. 
 
-The tables on this page map the functions of the Zebra MX Management System (MXMS) to Android Enterprise API functions (immediately below), and to Managed Configurations, which are used when no AE API is implemented. Managed Configuration parameters are configured through the Zebra OemConfig app on the device. Both approaches use public specifications developed by Google and the Android community. 
+The tables on this page map the functions of the Zebra MX Management System (MXMS) to Android Enterprise API functions (immediately below), and to Managed Configurations, which are used when no AE API is implemented. Managed Configuration parameters are configured through the Zebra OEMConfig app on the device. Both approaches use public specifications developed by Google and the Android community. 
 
 **_Information subject to change without notice_**. 
 
@@ -19,7 +19,7 @@ The tables on this page map the functions of the Zebra MX Management System (MXM
 
 The table below maps the functions of the Zebra MX Managament System (MXMS) to [Android Enterprise](https://developers.google.com/android/work/requirements/work-managed-device) API functions. Use this table to determine whether MX functions currently supported by an EMM solution are implemented in the Android Enterprise APIs and therefore map directly. 
 
-If no API exists, standards-based implementation is possible through Zebra OemConfig. Its mappings appear on the [MX-to-OemConfig](#mxtooemconfig) table that follows. 
+If no API exists, standards-based implementation is possible through Zebra OEMConfig. Its mappings appear on the [MX-to-OEMConfig](#mxtooemconfig) table that follows. 
 
 
 <table class=MsoTable15List4Accent5 border=1 cellspacing=0 cellpadding=0
@@ -4824,9 +4824,9 @@ If no API exists, standards-based implementation is possible through Zebra OemCo
 
 
 
-<h2>MX-to-OemConfig</h2>
+<h2>MX-to-OEMConfig</h2>
 
-For cases when one or more MX functions have not been implemented by Android Enterprise APIs, MX functions are configured using Zebra's OemConfig tool for [Android Managed Configurations](https://developer.android.com/work/managed-configurations). 
+For cases when one or more MX functions have not been implemented by Android Enterprise APIs, MX functions are configured using Zebra's OEMConfig tool for [Android Managed Configurations](https://developer.android.com/work/managed-configurations). 
 
 **_Information subject to change without notice_**. 
 
@@ -4858,13 +4858,13 @@ For cases when one or more MX functions have not been implemented by Android Ent
    border-left:none;border-bottom:solid #5B9BD5 1.0pt;border-right:none;
    background:#5B9BD5;padding:0in 5.4pt 0in 5.4pt'>
    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
-   line-height:normal'><b><span style='font-size:7.0pt;color:white'>OemConfig
+   line-height:normal'><b><span style='font-size:7.0pt;color:white'>OEMConfig
    Step</span></b></p>
    </td>
    <td width=228 valign=top style='width:171.0pt;border:solid #5B9BD5 1.0pt;
    border-left:none;background:#5B9BD5;padding:0in 5.4pt 0in 5.4pt'>
    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
-   line-height:normal'><b><span style='font-size:7.0pt;color:white'>OemConfig
+   line-height:normal'><b><span style='font-size:7.0pt;color:white'>OEMConfig
    Managed Confirguration(s)</span></b></p>
    </td>
   </tr>
@@ -20230,7 +20230,7 @@ For cases when one or more MX functions have not been implemented by Android Ent
 * [FAQ](../faq) | Frequently asked questions about EMM Toolkit 
 * [Staging Service APIs](../api) | Interface specs for cloud-based staging
 * [Other EMMTK Guides](../../guide) | A complete list of all guides in the EMM Toolkit
-* **[Build a DDUI from the Zebra OemConfig Schema (.pdf)](../../downloads/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OemConfig
+* **[Build a DDUI from the Zebra OEMConfig Schema (.pdf)](../../downloads/Zebra_EMMTK_Building_DDUI_from_OEMConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OEMConfig
 * **[DA-to-DO Agent Porting Guide (.pdf)](../../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf)** | Detailed porting information and guidance
 
 

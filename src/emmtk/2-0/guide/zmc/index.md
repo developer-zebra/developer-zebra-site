@@ -9,9 +9,9 @@ productversion: '2.0'
 
 This guide describes features available for configuring Zebra Android devices using Managed Configurations, a generic Android app extension mechanism. Formerly known as “Application Restrictions,” this mechanism was originally conceived as a means of exposing restrictions on Android device applications that could be imposed from outside, such as by an EMM. For example, the Chrome web browser exposed the ability show or hide the address bar and to store passwords.
 
-The Android community over time recognized that applications might expose more than just restrictions, and the name was changed to Managed Configurations. Zebra recognized that through use of a specially dezigned app, the Managed Configuration mechanism could be used to manage the device itself. This application, called Zebra OemConfig, has been reviewed and approved by Google and several key EMM Vendors, and is now the Google-recommended approach for use by OEMs to publish extended functionality, and for use by EMMs to leverage that extended functionality.
+The Android community over time recognized that applications might expose more than just restrictions, and the name was changed to Managed Configurations. Zebra recognized that through use of a specially dezigned app, the Managed Configuration mechanism could be used to manage the device itself. This application, called Zebra OEMConfig, has been reviewed and approved by Google and several key EMM Vendors, and is now the Google-recommended approach for use by OEMs to publish extended functionality, and for use by EMMs to leverage that extended functionality.
 
-See the [OemConfig Integration Guide](../oemdev) for more information.  
+See the [OEMConfig Integration Guide](../oemdev) for more information.  
 
 -----
 
@@ -21,32 +21,32 @@ This section describes Managed Configurations that are used internally by an EMM
 
 ### Schema Package Name
 
-Allows an EMM solution or other tool consuming the OemConfig Schema to determine the Package Name of the Package that implements that Schema.
+Allows an EMM solution or other tool consuming the OEMConfig Schema to determine the Package Name of the Package that implements that Schema.
 
-* The Zebra Schema is published by the OemConfig package. Therefore, if the Schema is obtained from that package through the Android system, the package name of that package is already known.
-* If the Schema for OemConfig is obtained in some other way, such as by download or direct import, this Managed Configuration can be used as a confirmation mechanism and/or to determine the package to which Managed Configurations created using this Schema should be sent.
+* The Zebra Schema is published by the OEMConfig package. Therefore, if the Schema is obtained from that package through the Android system, the package name of that package is already known.
+* If the Schema for OEMConfig is obtained in some other way, such as by download or direct import, this Managed Configuration can be used as a confirmation mechanism and/or to determine the package to which Managed Configurations created using this Schema should be sent.
 
 ### Schema Contract Version
 
-Allows an EMM solution or other tool consuming the OemConfig Schema to determine the Contract Version being used by that Schema. The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (i.e. "1.5"). 
+Allows an EMM solution or other tool consuming the OEMConfig Schema to determine the Contract Version being used by that Schema. The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (i.e. "1.5"). 
 
-* The value of _&lt;major&gt;_ changes when there is significant change in the Managed Configurations supported by OemConfig, such as when a change of Android version enables major new functionality.
-* The value of _&lt;minor&gt;_ changes when there is some less significant change in the Managed Configurations supported by OemConfig, such as when one or a few additional Managed Configurations are added.
-* Neither value changes if modifications to the Schema do not affect the Managed Configurations supported by OemConfig, such as for cosmetic changes.
+* The value of _&lt;major&gt;_ changes when there is significant change in the Managed Configurations supported by OEMConfig, such as when a change of Android version enables major new functionality.
+* The value of _&lt;minor&gt;_ changes when there is some less significant change in the Managed Configurations supported by OEMConfig, such as when one or a few additional Managed Configurations are added.
+* Neither value changes if modifications to the Schema do not affect the Managed Configurations supported by OEMConfig, such as for cosmetic changes.
 * See the Managed Configuration **Schema UI Revision** for more information about cosmetic changes that do not affect the Contract Version.
 
 ### Schema UI Revision
 
-Allows an EMM solution or other tool consuming the OemConfig Schema to determine the UI Revision of the Schema being used.
+Allows an EMM solution or other tool consuming the OEMConfig Schema to determine the UI Revision of the Schema being used.
 
 The UI Revision is expressed in the form of a simple integer value (i.e. "3"). 
-* The value changes when there are changes to the Schema do not affect the Managed Configurations supported by OemConfig, but affect only the UI that might be generated based on that Schema.
+* The value changes when there are changes to the Schema do not affect the Managed Configurations supported by OEMConfig, but affect only the UI that might be generated based on that Schema.
 * Examples of cosmetic changes that might be indicated using this Managed Configuration include changes in the _Title_ or _Description_ of Managed Configurations or changes to the textual values displayed for a pull-down list of choices.
 * See the Managed Configuration **Schema Contract Version** for more information about changes that affect the Contract Version.
 
 ### Schema Variant
 
-Allows an EMM solution or other tool consuming the OemConfig Schema to determine the Variant of that Schema being used.
+Allows an EMM solution or other tool consuming the OEMConfig Schema to determine the Variant of that Schema being used.
 
 The Schema Variant is expressed in the form of an identifying string and could have a variety of possible values. 
 * By definition, all Schemas that have the same values for the Managed Configurations **Schema Package Name** and **Schema Contract Version** should be considered to implement subsets of the Master Schema associated by those two values.
@@ -57,19 +57,19 @@ The Schema Variant is expressed in the form of an identifying string and could h
 
 ### Transaction ID
 
-Allows an EMM to specify a Transaction ID that identifies a collection of configurations that can be performed by submitting a collection of Managed Configurations in a Bundle to OemConfig for processing on a Zebra Android device.
+Allows an EMM to specify a Transaction ID that identifies a collection of configurations that can be performed by submitting a collection of Managed Configurations in a Bundle to OEMConfig for processing on a Zebra Android device.
 
-OemConfig uses the Transaction ID value specified in this Managed Configuration to differentiate transactions submitted over time.
-* OemConfig processes Managed Configurations in a Bundle submitted to OemConfig if the Transaction ID is set to a different value than the value previously set.
+OEMConfig uses the Transaction ID value specified in this Managed Configuration to differentiate transactions submitted over time.
+* OEMConfig processes Managed Configurations in a Bundle submitted to OEMConfig if the Transaction ID is set to a different value than the value previously set.
 * The Transaction ID used can be any string value convenient for the EMM to use to identify the transaction.
-* It is expected that a suitably different Transaction ID value is created by the EMM each time a new collection of Managed Configurations is created in accordance with the OemConfig Schema.
+* It is expected that a suitably different Transaction ID value is created by the EMM each time a new collection of Managed Configurations is created in accordance with the OEMConfig Schema.
 * While a Transaction ID value does not need to be unique, it should be different from any prior value recently used.
 * When creating and storing collections of Managed Configurations for long term use, it is generally considered **best practice** to create truly unique values, such as by generating a GUID.
 * If the EMM requests notification of the completion of a transaction, the Transaction ID is attached to the Transaction Result Intent to identify the transaction.
 
 ### Transaction Result Intent Type
 
-Allows an EMM to request OemConfig to send a notification of the completion of a transaction by sending a Transaction Result Intent when it has finished processing the transaction.
+Allows an EMM to request OEMConfig to send a notification of the completion of a transaction by sending a Transaction Result Intent when it has finished processing the transaction.
 
 If sending a Transaction Result Intent is desired, this Managed Configuration MUST be set to indicate the type of intent to be sent.
 * ***startActivity***- an EMM Activity is notified of the completion of the transaction by sending an intent using the Android method _Context.startActivity()_.
@@ -83,13 +83,13 @@ The Transaction ID value specified in the Managed Configuration **Transaction ID
 
 ### Transaction Result Intent Action
 
-Allows an EMM to request that OemConfig specify an Intent Action when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
+Allows an EMM to request that OEMConfig specify an Intent Action when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
 
 While specifying an Intent Action is not required when sending a Transaction Result Intent, it is generally considered **good practice** to do so to help the receiver of the intent differentiate it from other intents it might receive. 
 
 ### Transaction Result Intent Component
 
-Allows an EMM to request that OemConfig specify a Component when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
+Allows an EMM to request that OEMConfig specify a Component when sending a Transaction Result Intent when it has finished processing of the transaction and should generally be specified only if the Managed Configuration **Transaction Result Intent Type** is also specified.
 
 
 While specifying a Component is not required when sending a Transaction Result Intent, it is generally considered **good practice** to do so since it can help ensure that the intent is sent to the right receiver.
@@ -98,7 +98,7 @@ While specifying a Component is not required when sending a Transaction Result I
 
 ### Transaction Result Intent Extra Name
 
-Allows an EMM to request that OemConfig attach a String Extra whose, Extra Name is specified, to the Transaction Result Intent when it has finished processing of the transaction.
+Allows an EMM to request that OEMConfig attach a String Extra whose, Extra Name is specified, to the Transaction Result Intent when it has finished processing of the transaction.
 
 Specifying a String Extra is optional when sending a Transaction Result Intent, although it might be useful to do so since it can help ensure that the receiver of the intent can differentiate it from other intents that it might receive.
 
@@ -106,7 +106,7 @@ Specifying a String Extra is optional when sending a Transaction Result Intent, 
 
 ### Transaction Result Intent Extra Value
 
-Allows an EMM to request that OemConfig attach a String Extra, whose Extra Value is specified, to the Transaction Result Intent when it has finished processing of the transaction.
+Allows an EMM to request that OEMConfig attach a String Extra, whose Extra Value is specified, to the Transaction Result Intent when it has finished processing of the transaction.
 
 Specifying a String Extra is optional when sending a Transaction Result Intent, although it might be useful to do so since it can help ensure that the receiver of the intent can differentiate it from other intents that it might receive.
 
@@ -2782,6 +2782,6 @@ Used to provide the *Friendly Name* that identifies the *Custom Server* to be de
 * **[AEDO Porting Guide](../port)** | EMM agent porting options 
 * **[Persistence Best Practices](../persistence)** | Zebra-recommended processes for EMMs
 * **[Staging Service APIs](../api)** | Interfacing with StageNow from an EMM console
-* **[Build a DDUI from the Zebra OemConfig Schema (.pdf)](../../downloads/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OemConfig
+* **[Build a DDUI from the Zebra OEMConfig Schema (.pdf)](../../downloads/Zebra_EMMTK_Building_DDUI_from_OEMConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OEMConfig
 * **[DA-to-DO Agent Porting Guide (.pdf)](../../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf)** | Detailed porting information and guidance
 

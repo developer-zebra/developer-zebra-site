@@ -21,12 +21,12 @@ content-items:
   - type: section
     level: 4
     title: Build a DDUI 
-    text: Examines the Zebra OemConfig schema and offers guidance and sample tools for creating a data-driven user interface for managing Zebra devices.
+    text: Examines the Zebra OEMConfig schema and offers guidance and sample tools for creating a data-driven user interface for managing Zebra devices.
     url: schema
   - type: section
     level: 4
-    title: OemConfig Integration Overview
-    text: An overview of the OemConfig schema and how it's used as the source for a data-driven UI. Includes a link to a detailed integration guide.  
+    title: OEMConfig Integration Overview
+    text: An overview of the OEMConfig schema and how it's used as the source for a data-driven UI. Includes a link to a detailed integration guide.  
     url: oemdev
   - type: section
     level: 4
@@ -35,9 +35,9 @@ content-items:
     url: zmc
   - type: section
     level: 4
-    title: OemConfig Integration Guide (.pdf)
-    text: Nine-page guide provides details for integrating with Zebra OemConfig, including suggestions for building a DDUI from the Zebra OemConfig app schema.  
-    url: ../downloads/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf
+    title: OEMConfig Integration Guide (.pdf)
+    text: Nine-page guide provides details for integrating with Zebra OEMConfig, including suggestions for building a DDUI from the Zebra OEMConfig app schema.  
+    url: ../downloads/Zebra_EMMTK_Building_DDUI_from_OEMConfig_Schema_091418.pdf
   - type: section
     level: 4
     title: Agent Porting Guide (.pdf)

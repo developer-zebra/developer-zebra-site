@@ -69,7 +69,7 @@ The infrastructure and processes used&ndash;usually by corporations and other bu
 See Management Extensions.
 
 ### Managed Configuration
-A method for Android apps to expose configuration options and accept settings. Through a specially designed configurable application called [OemConfig](#oemconfig), Zebra has developed a method of leveraging the extension mechanism defined in Managed Configurations (formerly “Application Restrictions”) to configure the settings of a device. 
+A method for Android apps to expose configuration options and accept settings. Through a specially designed configurable application called [OEMConfig](#oemconfig), Zebra has developed a method of leveraging the extension mechanism defined in Managed Configurations (formerly “Application Restrictions”) to configure the settings of a device. 
 
 ### Management Extensions (MX)
 Zebra-proprietary Privilege Escalation method designed to enable an unprivileged EMM agent to access all “missing” functions needed to enable an EMM vendor to implement a “complete” EMM solution for managing Zebra Android devices. MX was developed in parallel with the Android Device Administrator, and predates the availability of the Profile Owner and Device Owner Privilege Escalation methods. 
@@ -80,11 +80,11 @@ A Java app developed by Zebra Technologies that presents a data-driven user inte
 ### MDM
 Mobile Device Management. See EMM. 
 
-### OemConfig
-OemConfig is a Google-sanctioned, standards-based approach for an OEM to extend the capabilities of an Android Enterprise Device Owner Device Policy Controller running on an Android device. It's implemented by an OEM-provided application that exposes Managed Configurations as means to access device-specific and privileged functions that are not accessible using standard Android Enterprise APIs, such as the DevicePolicyManager. 
+### OEMConfig
+OEMConfig is a Google-sanctioned, standards-based approach for an OEM to extend the capabilities of an Android Enterprise Device Owner Device Policy Controller running on an Android device. It's implemented by an OEM-provided application that exposes Managed Configurations as means to access device-specific and privileged functions that are not accessible using standard Android Enterprise APIs, such as the DevicePolicyManager. 
 
-### OemConfig, Zebra
-Zebra OemConfig is an implementation of the Google-sanctioned approach developed by Zebra Technologies that configures Zebra devices using Android Managed Configurations. Zebra OemConfig comes preinstalled on Zebra Android devices and is used to administer devices when no Android Enterprise API is available. 
+### OEMConfig, Zebra
+Zebra OEMConfig is an implementation of the Google-sanctioned approach developed by Zebra Technologies that configures Zebra devices using Android Managed Configurations. Zebra OEMConfig comes preinstalled on Zebra Android devices and is used to administer devices when no Android Enterprise API is available. 
 
 ### PO
 See Profile Owner.
@@ -104,26 +104,26 @@ For more information, please refer to Zebra's [Agent Porting Guide](../../downlo
 A document that defines functions available for interrogation and/or configuration using Managed Configuration mechanisms. Schemas and Managed Configurations conform to Google-defined specifications. 
 
 ### Schema Package Name
-A Managed Configuration that allows an EMM solution or other tool consuming the OemConfig Schema to determine the Package Name of the Package that implements that Schema. For example, the Zebra Schema is published by the OemConfig package. Therefore, if the Schema is obtained from that package through the Android system, the package name of that package is already known and this Managed Configuration is not required. However, if the Schema is obtained in some other way, such as by download or direct import, this Managed Configuration can be used as a confirmation mechanism and/or to determine the package to which Managed Configurations created using this Schema should be sent.
+A Managed Configuration that allows an EMM solution or other tool consuming the OEMConfig Schema to determine the Package Name of the Package that implements that Schema. For example, the Zebra Schema is published by the OEMConfig package. Therefore, if the Schema is obtained from that package through the Android system, the package name of that package is already known and this Managed Configuration is not required. However, if the Schema is obtained in some other way, such as by download or direct import, this Managed Configuration can be used as a confirmation mechanism and/or to determine the package to which Managed Configurations created using this Schema should be sent.
 
 ### Schema Contract Version
-A Managed Configuration that allows an EMM solution or other tool consuming the OemConfig Schema to determine the Contract Version being used by that Schema. The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (i.e. "1.5"). 
+A Managed Configuration that allows an EMM solution or other tool consuming the OEMConfig Schema to determine the Contract Version being used by that Schema. The Contract Version is expressed in the form _&lt;major&gt;.&lt;minor&gt;_ (i.e. "1.5"). 
 
-* The value of _&lt;major&gt;_ changes when there is significant change in the Managed Configurations supported by OemConfig, such as when a change of Android version enables major new functionality.
-* The value of _&lt;minor&gt;_ changes when there is some less significant change in the Managed Configurations supported by OemConfig, such as when one or a few additional Managed Configurations are added.
-* Neither value changes if modifications to the Schema do not affect the Managed Configurations supported by OemConfig, such as for cosmetic changes.
+* The value of _&lt;major&gt;_ changes when there is significant change in the Managed Configurations supported by OEMConfig, such as when a change of Android version enables major new functionality.
+* The value of _&lt;minor&gt;_ changes when there is some less significant change in the Managed Configurations supported by OEMConfig, such as when one or a few additional Managed Configurations are added.
+* Neither value changes if modifications to the Schema do not affect the Managed Configurations supported by OEMConfig, such as for cosmetic changes.
 * See the Managed Configuration **Schema UI Revision** for more information about cosmetic changes that do not affect the Contract Version.
 
 ### Schema UI Revision
-Allows an EMM solution or other tool consuming the OemConfig Schema to determine the UI Revision of the Schema being used. The UI Revision is expressed in the form of a simple integer value (i.e. "3"). 
+Allows an EMM solution or other tool consuming the OEMConfig Schema to determine the UI Revision of the Schema being used. The UI Revision is expressed in the form of a simple integer value (i.e. "3"). 
 
-* The value changes when there are changes to the Schema do not affect the Managed Configurations supported by OemConfig, but affect only the UI that might be generated based on that Schema.
+* The value changes when there are changes to the Schema do not affect the Managed Configurations supported by OEMConfig, but affect only the UI that might be generated based on that Schema.
 * Examples of cosmetic changes that might be indicated using this Managed Configuration include changes in the _Title_ or _Description_ of Managed Configurations or changes to the textual values displayed for a pull-down list of choices.
 * See **Schema Contract Version** for more information about changes that affect the Contract Version.
 
 ### Schema Variant
 
-Allows an EMM solution or other tool consuming the OemConfig Schema to determine the Variant of that Schema being used. The Schema Variant is expressed in the form of an identifying string and could have a variety of possible values. 
+Allows an EMM solution or other tool consuming the OEMConfig Schema to determine the Variant of that Schema being used. The Schema Variant is expressed in the form of an identifying string and could have a variety of possible values. 
 
 * By definition, all Schemas that have the same values for the Managed Configurations **Schema Package Name** and **Schema Contract Version** should be considered to implement subsets of the Master Schema associated by those two values.
 * The Master Schema can be identified by a Schema Variant value of ***Master***.
@@ -150,5 +150,5 @@ Zebra Managed Configurations. See Managed Configurations.
 * [About EMM Toolkit](../about) | General information
 * [FAQ](../faq) | Frequently asked questions about EMM Toolkit 
 * [Other EMMTK Guides](../../guide) | A complete list of all guides in the EMM Toolkit
-* **[Build a DDUI from the Zebra OemConfig Schema (.pdf)](../../downloads/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OemConfig
+* **[Build a DDUI from the Zebra OEMConfig Schema (.pdf)](../../downloads/Zebra_EMMTK_Building_DDUI_from_OEMConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OEMConfig
 * **[Agent Porting Guide (.pdf)](../../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf)** | Detailed porting information and guidance

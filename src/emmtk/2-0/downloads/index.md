@@ -8,9 +8,9 @@ productversion: '2.0'
 ## Guides
 
 ### Building a Data-driven UI
-This nine-page guide provides details for integrating with Zebra OemConfig, including explanations of features permitted in schemas defined by the Android Managed Configuration model and suggestions for building a DDUI from the Zebra OemConfig app schema. This document also describes some of the additional features that might be required and examples of how a data-driven UI might be designed to handle those features.
+This nine-page guide provides details for integrating with Zebra OEMConfig, including explanations of features permitted in schemas defined by the Android Managed Configuration model and suggestions for building a DDUI from the Zebra OEMConfig app schema. This document also describes some of the additional features that might be required and examples of how a data-driven UI might be designed to handle those features.
 
-####[Download "Building a DDUI" (.pdf)](Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)
+####[Download "Building a DDUI" (.pdf)](Zebra_EMMTK_Building_DDUI_from_OEMConfig_Schema_091418.pdf)
 
 -----
 
@@ -39,8 +39,8 @@ This 27-page guide provides details for porting an EMM agent from Device Adminis
 
 -----
 
-### Zebra OemConfig Schema
-`ZebraSchema.json` is the Zebra OemConfig app schema in Google-mandated JSON format. It contains Zebra-specific function definitions and is a source for building a data-driven configuration UI using MC Tool. 
+### Zebra OEMConfig Schema
+`ZebraSchema.json` is the Zebra OEMConfig app schema in Google-mandated JSON format. It contains Zebra-specific function definitions and is a source for building a data-driven configuration UI using MC Tool. 
 
 ####[Download "Schema.json"](ZebraSchema.json)
 

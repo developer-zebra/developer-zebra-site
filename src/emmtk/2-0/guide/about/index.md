@@ -9,7 +9,7 @@ productversion: '2.0'
 
 The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow developers of EMM solutions to adapt their products to manage Zebra devices. This has historically involved interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. 
 
-With the emergence of Android Enterprise, some capabilities once accessible only through Zebra's proprietary management layer can now be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. Functions lacking an Android API can be configured using OemConfig, a Google-sanctioned approach developed by Zebra that controls device settings through the Android Managed Configurations mechanism. [More about OemConfig](../glossary/#oemconfig).
+With the emergence of Android Enterprise, some capabilities once accessible only through Zebra's proprietary management layer can now be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. Functions lacking an Android API can be configured using OEMConfig, a Google-sanctioned approach developed by Zebra that controls device settings through the Android Managed Configurations mechanism. [More about OEMConfig](../glossary/#oemconfig).
 
 **The general Zebra staging process**:​
 
@@ -38,7 +38,7 @@ Over time, many of the capabilities once available only through these mechanisms
 
 ### Prep for the Future
 
-To prepare for the new approach, **EMM solution providers must port their Android "Device Administrator" (DA) agent apps to the "Device Owner" (DO) model**. The forthcoming model works through Android Enterprise Device Owner (AEDO) APIs when possible, and fills gaps in functionality with OemConfig, a **Google-recommended solution developed by Zebra** that uses Managed Configurations when no Android Enterprise API is available. 
+To prepare for the new approach, **EMM solution providers must port their Android "Device Administrator" (DA) agent apps to the "Device Owner" (DO) model**. The forthcoming model works through Android Enterprise Device Owner (AEDO) APIs when possible, and fills gaps in functionality with OEMConfig, a **Google-recommended solution developed by Zebra** that uses Managed Configurations when no Android Enterprise API is available. 
 
 **Managed Configurations can**:
 
@@ -70,6 +70,6 @@ _Click image to enlarge_.
 * **[Persistence Best Practices](../persistence)** | Zebra-recommended processes for EMMs
 * **[Other EMMTK Guides](../../guide)** | A complete list of all guides in the EMM Toolkit
 * **[Staging Service APIs](../api)** | Interfacing with StageNow from an EMM console
-* **[Build a DDUI from the Zebra OemConfig Schema (.pdf)](../../downloads/Zebra_EMMTK_Building_DDUI_from_OemConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OemConfig
+* **[Build a DDUI from the Zebra OEMConfig Schema (.pdf)](../../downloads/Zebra_EMMTK_Building_DDUI_from_OEMConfig_Schema_091418.pdf)** | Breakdown of DDUI creation with Zebra OEMConfig
 * **[DA-to-DO Agent Porting Guide (.pdf)](../../downloads/Zebra_EMMTK_DA-to-DO_Porting_Guide_091418.pdf)** | Detailed porting information and guidance
 

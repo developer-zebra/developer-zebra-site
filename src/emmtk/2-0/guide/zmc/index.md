@@ -9,7 +9,7 @@ productversion: '2.0'
 
 This guide describes features available for configuring Zebra Android devices using Managed Configurations, a generic Android app extension mechanism. Formerly known as “Application Restrictions,” this mechanism was originally conceived as a means of exposing restrictions on Android device applications that could be imposed from outside, such as by an EMM. For example, the Chrome web browser exposed the ability show or hide the address bar and to store passwords.
 
-The Android community over time recognized that applications might expose more than just restrictions, and the name was changed to Managed Configurations. Zebra recognized that through use of a specially dezigned app, the Managed Configuration mechanism could be used to manage the device itself. This application, called Zebra OEMConfig, has been reviewed and approved by Google and several key EMM Vendors, and is now the Google-recommended approach for use by OEMs to publish extended functionality, and for use by EMMs to leverage that extended functionality.
+The Android community over time recognized that applications might expose more than just restrictions, and the name was changed to Managed Configurations. Zebra recognized that through use of a specially designed app, the Managed Configuration mechanism could be used to manage the device itself. This application, called Zebra OEMConfig, has been reviewed and approved by Google and several key EMM Vendors, and is now the Google-recommended approach for use by OEMs to publish extended functionality, and for use by EMMs to leverage that extended functionality.
 
 See the [OEMConfig Integration Guide](../oemdev) for more information.  
 

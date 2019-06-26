@@ -13,13 +13,13 @@ This page presents some of the most commonly asked questions submitted to Zebra 
 
 ### Q: Why did the scanner stop working when switching apps?
 
-A: **For proper operation of scanning apps on a device, control of scanning hardware must be programmatically released when the app quits or goes to the background**. When a scanning app takes control of any device scanner, other apps on the device are blocked from all device scanning resources. **Learn more in the [Barcode Scanning Guide](../guide/barcode_scanning_guide/#5releasescanner), including how to prevent this in an app**. 
+A: **For proper operation of scanning apps on a device, control of scanning hardware must be programmatically released when the app quits or goes to the background**. When a scanning app takes control of any device scanner, other apps on the device are blocked from all device scanning resources. **Learn how to prevent these failures in the [Barcode Scanning Guide](../guide/barcode_scanning_guide/#5releasescanner)**. 
 
 -----
 
 ### Q: Should I use DataWedge or EMDK for my app? 
 
-A: DataWedge is a good choice for many situations that require a quick and easy way to add scanning capabilities to an existing app. DataWedge comes preinstalled on all Zebra devices, accepts input from scanners, imagers, cameras, mag-stripe readers, RFID and other peripherals, can infinitely manipulate the acquired data and outputs it as keystrokes, intent payload or over an IP connection. All functions of DataWedge can be controlled programmatically through Android intents. **Zebra recommends evaluating the use of DataWedge on an existing app before building or modifying an app for scanning with EMDK**. For more information, see the feature comparison chart linked below. 
+A: **DataWedge provides a quick and easy way to add scanning capabilities to an existing app, and Zebra recommends evaluating the use of DataWedge before building or modifying an app for scanning with EMDK**. DataWedge comes preinstalled on all Zebra devices, accepts input from scanners, imagers, cameras, mag-stripe readers, RFID and other peripherals, can infinitely manipulate the acquired data and outputs it as keystrokes, intent payload or over an IP connection. All functions of DataWedge can be controlled programmatically through Android intents. For more information, see the feature comparison chart linked below. 
 
 **Helpful links**: 
 

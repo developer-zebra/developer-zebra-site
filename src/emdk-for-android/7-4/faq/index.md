@@ -19,11 +19,7 @@ A: **For proper operation of scanning apps on a device, control of scanning hard
 
 ### Q: Should I use DataWedge or EMDK for my app? 
 
-A: **DataWedge provides a quick and easy way to add scanning capabilities to an existing app, and Zebra recommends evaluating the use of DataWedge before building or modifying an app for scanning with EMDK**. DataWedge comes preinstalled on all Zebra devices, accepts input from scanners, imagers, cameras, mag-stripe readers, RFID and other peripherals, can infinitely manipulate the acquired data and outputs it as keystrokes, intent payload or over an IP connection. All functions of DataWedge can be controlled programmatically through Android intents. For more information, see the feature comparison chart linked below. 
-
-**Helpful links**: 
-
-* [DataWedge vs. EMDK feature comparison](https://techdocs.zebra.com/help/#datawedgevsemdkcomparison)
+A: **DataWedge provides a quick and easy way to add scanning capabilities to an existing app, and Zebra recommends evaluating the use of DataWedge before building or modifying an app for scanning with EMDK**. DataWedge comes preinstalled on all Zebra devices, accepts input from scanners, imagers, cameras, mag-stripe readers, RFID and other peripherals, can infinitely manipulate the acquired data and outputs it as keystrokes, intent payload or over an IP connection. All functions of DataWedge can be controlled programmatically through Android intents. For more information, **see the [DataWedge vs. EMDK feature comparison chart](https://techdocs.zebra.com/help/#datawedgevsemdkcomparison)**.
 
 -----
 
@@ -39,8 +35,8 @@ When developing an app, Android developers should specify in the app manifest a 
 * [Android 7 Nougat behavior changes](https://developer.android.com/about/versions/nougat/android-7.0-changes)
 * [Migrating to Android 8 Oreo](https://developer.android.com/about/versions/oreo/android-8.0-migration)
 * [Migrating to Android 9 Pie](https://developer.android.com/about/versions/pie/android-9.0-migration)
-* [Article by a Zebra engineer on Android Nougat](https://developer.zebra.com/community/home/blog/2018/08/03/what-s-new-for-android-n-and-the-impact-on-zebra-developers)
-* [Article by a Zebra engineer in Android Oreo](https://developer.zebra.com/community/home/blog/2018/09/28/what-s-new-for-android-o-and-the-impact-on-zebra-developers)
+* **[Android Nougat migration article by Zebra engineering](https://developer.zebra.com/community/home/blog/2018/08/03/what-s-new-for-android-n-and-the-impact-on-zebra-developers)**
+* **[Android Oreo migration article by Zebra engineering](https://developer.zebra.com/community/home/blog/2018/09/28/what-s-new-for-android-o-and-the-impact-on-zebra-developers)**
 
 -----
 

@@ -31,12 +31,12 @@ When developing an app, Android developers should specify in the app manifest a 
 
 **Helpful links**: 
 
-* [The Android '&lt;uses-sdk&gt;' parameter](https://developer.android.com/guide/topics/manifest/uses-sdk-element)
-* [Android 7 Nougat behavior changes](https://developer.android.com/about/versions/nougat/android-7.0-changes)
-* [Migrating to Android 8 Oreo](https://developer.android.com/about/versions/oreo/android-8.0-migration)
+* [The Android '&lt;uses-sdk&gt;' parameter](https://developer.android.com/guide/topics/manifest/uses-sdk-element) | Android development community
+* [Android 7 Nougat behavior changes](https://developer.android.com/about/versions/nougat/android-7.0-changes) | Android development community
+* [Migrating to Android 8 Oreo](https://developer.android.com/about/versions/oreo/android-8.0-migration) | Android development community
 * [Migrating to Android 9 Pie](https://developer.android.com/about/versions/pie/android-9.0-migration)
-* **[Android Nougat migration article by Zebra engineering](https://developer.zebra.com/community/home/blog/2018/08/03/what-s-new-for-android-n-and-the-impact-on-zebra-developers)**
-* **[Android Oreo migration article by Zebra engineering](https://developer.zebra.com/community/home/blog/2018/09/28/what-s-new-for-android-o-and-the-impact-on-zebra-developers)**
+* **[Android Nougat migration article](https://developer.zebra.com/community/home/blog/2018/08/03/what-s-new-for-android-n-and-the-impact-on-zebra-developers)** | Zebra engineering 
+* **[Android Oreo migration article by Zebra engineering](https://developer.zebra.com/community/home/blog/2018/09/28/what-s-new-for-android-o-and-the-impact-on-zebra-developers)** | Zebra engineering
 
 -----
 

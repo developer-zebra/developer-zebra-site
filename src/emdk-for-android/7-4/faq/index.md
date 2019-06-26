@@ -19,7 +19,7 @@ A: **For proper operation of scanning apps on a device, control of scanning hard
 
 ### Q: Should I use DataWedge or EMDK for my app? 
 
-A: **DataWedge provides a quick and easy way to add scanning capabilities to an existing app, and Zebra recommends evaluating the use of DataWedge before building or modifying an app for scanning with EMDK**. DataWedge comes preinstalled on all Zebra devices, accepts input from scanners, imagers, cameras, mag-stripe readers, RFID and other peripherals, can infinitely manipulate the acquired data and outputs it as keystrokes, intent payload or over an IP connection. All functions of DataWedge can be controlled programmatically through Android intents. For more information, **see the [DataWedge vs. EMDK feature comparison chart](https://techdocs.zebra.com/help/#datawedgevsemdkcomparison)**.
+A: **DataWedge provides a quick and easy way to add scanning capabilities to an existing app, and Zebra recommends evaluating the use of DataWedge before building or modifying an app for scanning with EMDK**. DataWedge comes preinstalled on all Zebra devices, accepts input from scanners, imagers, cameras, mag-stripe readers, RFID and other peripherals, can infinitely manipulate the acquired data and outputs it as keystrokes, intent payload or over an IP connection. All functions of DataWedge can be controlled programmatically through Android intents. **See the [DataWedge vs. EMDK feature comparison chart](https://techdocs.zebra.com/help/#datawedgevsemdkcomparison)** for more information.
 
 -----
 

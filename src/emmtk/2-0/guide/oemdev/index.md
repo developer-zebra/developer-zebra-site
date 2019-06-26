@@ -50,7 +50,7 @@ _JSON-compliant OEMConfig schema showing code for Analytics UI settings. Click t
 _Rendering the Analytics section of the schema in Zebra McTool sample app. Click to enlarge_.
 <br>
 
-> The Zebra OEMConfig app and schema come preinstalled in Zebra devices.
+> The Zebra OEMConfig app and schema are available at the Google Play Store.
 
 -----
 

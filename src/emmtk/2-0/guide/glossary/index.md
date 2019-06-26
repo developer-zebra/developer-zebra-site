@@ -84,7 +84,7 @@ Mobile Device Management. See EMM.
 OEMConfig is a Google-sanctioned, standards-based approach for an OEM to extend the capabilities of an Android Enterprise Device Owner Device Policy Controller running on an Android device. It's implemented by an OEM-provided application that exposes Managed Configurations as means to access device-specific and privileged functions that are not accessible using standard Android Enterprise APIs, such as the DevicePolicyManager. 
 
 ### OEMConfig, Zebra
-Zebra OEMConfig is an implementation of the Google-sanctioned approach developed by Zebra Technologies that configures Zebra devices using Android Managed Configurations. Zebra OEMConfig comes preinstalled on Zebra Android devices and is used to administer devices when no Android Enterprise API is available. 
+Zebra OEMConfig is an implementation of the Google-sanctioned approach developed by Zebra Technologies that configures Zebra devices using Android Managed Configurations. Zebra OEMConfig is available at the Google Play Store and is used to administer devices when no Android Enterprise API is available. 
 
 ### PO
 See Profile Owner.

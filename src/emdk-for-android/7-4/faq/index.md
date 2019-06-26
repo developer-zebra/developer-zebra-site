@@ -7,29 +7,31 @@ productversion: '7.4'
 
 ## About the FAQ 
 
-Zebra's Enterprise Mobility Development Kit for Android extends the Android Studio IDE for Mac OS and Windows with tools for easily creating apps for Zebra Android devices. This page presents some of the most commonly asked questions by Zebra customers and partners of Zebra customer support along with brief answers and links to relevant documentation. 
+This page presents some of the most commonly asked questions submitted to Zebra customer support by Zebra customers and partners along with brief answers and links to relevant documentation. 
 
 -----
 
 ### Q: Why did the scanner stop working when switching apps?
 
-A: Control of scanning hardware is exclusive. When a scanning app takes control of scanning on the device, no other app can access any scanner on the device until control is programmatically released when the app quits or goes to the background. Learn more in the [Barcode Scanning Guide](../guide/barcode_scanning_guide/#5releasescanner). 
+A: **For proper operation of scanning apps on a device, control of scanning hardware must be programmatically released when the app quits or goes to the background**. When a scanning app takes control of any device scanner, other apps on the device are blocked from all device scanning resources. **Learn more in the [Barcode Scanning Guide](../guide/barcode_scanning_guide/#5releasescanner), including how to prevent this in an app**. 
 
 -----
 
 ### Q: Should I use DataWedge or EMDK for my app? 
 
-A: DataWedge is a good choice for many situations that require a quick and easy way to add scanning capabilities to an existing app. DataWedge is available on all Zebra devices, accepts input from scanners, imagers, cameras, mag-stripe readers, RFID and other peripherals, can infinitely manipulate the acquired data and outputs it as keystrokes, intent payload or over an IP connection. All functions of DataWedge can be controlled programmatically through Android intents. 
+A: DataWedge is a good choice for many situations that require a quick and easy way to add scanning capabilities to an existing app. DataWedge comes preinstalled on all Zebra devices, accepts input from scanners, imagers, cameras, mag-stripe readers, RFID and other peripherals, can infinitely manipulate the acquired data and outputs it as keystrokes, intent payload or over an IP connection. All functions of DataWedge can be controlled programmatically through Android intents. **Zebra recommends evaluating the use of DataWedge on an existing app before building or modifying an app for scanning with EMDK**. For more information, see the feature comparison chart linked below. 
 
-* [DataWedge vs. EMDK](https://techdocs.zebra.com/help/#datawedgevsemdkcomparison) | Feature Comparison Chart
+**Helpful links**: 
+
+* [DataWedge vs. EMDK feature comparison](https://techdocs.zebra.com/help/#datawedgevsemdkcomparison)
 
 -----
 
 ### Q: Why don't my KitKat and/or Lollipop apps work with Nougat and/or Oreo?
 
-A: Due to the many advancements in newer Android versions, some older apps require modification to run properly on newer flavors. Among the common causes of incompatibility of older apps relate to changes in background processing implemented mainly to optimize battery life. 
+A: Due to the many advancements in newer Android versions, some older apps require modification to run properly on newer flavors. **Among the common causes of incompatibility of older apps relate to changes in background processing implemented mainly to optimize battery life**. 
 
-When developing an app, Android developers can specify in the app manifest a target, minimum and maximum Android API level. This maps the app to specific Android OS versions for the app to run on. For example, if API level 23 is specified as the target level, it indicates that the app is intended to run on Android 6.0 (Marshmallow) and can filter the app from incompatible versions.
+When developing an app, Android developers should specify in the app manifest a target API along with minimum and maximum Android API levels. This maps the app to specific Android OS versions to run on. For example, if API level 23 is specified as the target level, it indicates that the app is intended to run on Android 6.0 (Marshmallow) and can prevent attempts to run the app on incompatible versions.
 
 **Helpful links**: 
 
@@ -72,9 +74,9 @@ A: Retry the API command or gracefully exit the app. The exception handling code
 
 -----
 
-### Q: Why do my apps display Application Not Responding (ANR) message so often? 
+### Q: Why do my apps display Application Not Responding (ANR) messages so often? 
 
-A: ANR errors occur when the main UI thread of an app is blocked for a long period of time; the exact timeout period varies by Android version. To avoid ANRs during drawn-out sections of an app, a good coding practice is to code long-term tasks into background or worker threads instead of using the app's main thread. 
+A: ANR errors occur when the main UI thread of an app is blocked for a long period of time; the exact timeout period varies by Android version. To avoid ANRs during drawn-out sections of an app, **a good coding practice is to code long-term tasks into background or worker threads instead of using the app's main thread**. 
 
 **Helpful links**: 
 

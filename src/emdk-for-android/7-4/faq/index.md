@@ -31,12 +31,12 @@ When developing an app, Android developers should specify in the app manifest a 
 
 **Helpful links**: 
 
+* **[What's New for Android 'N' and the Impact on Zebra Developers](https://developer.zebra.com/community/home/blog/2018/08/03/what-s-new-for-android-n-and-the-impact-on-zebra-developers)** | Zebra engineering 
+* **[What's New for Android 'O' and the Impact on Zebra Developers](https://developer.zebra.com/community/home/blog/2018/09/28/what-s-new-for-android-o-and-the-impact-on-zebra-developers)** | Zebra engineering
 * [The Android '&lt;uses-sdk&gt;' parameter](https://developer.android.com/guide/topics/manifest/uses-sdk-element) | Android development community
 * [Android 7 Nougat behavior changes](https://developer.android.com/about/versions/nougat/android-7.0-changes) | Android development community
 * [Migrating to Android 8 Oreo](https://developer.android.com/about/versions/oreo/android-8.0-migration) | Android development community
-* [Migrating to Android 9 Pie](https://developer.android.com/about/versions/pie/android-9.0-migration)
-* **[Android Nougat migration article](https://developer.zebra.com/community/home/blog/2018/08/03/what-s-new-for-android-n-and-the-impact-on-zebra-developers)** | Zebra engineering 
-* **[Android Oreo migration article by Zebra engineering](https://developer.zebra.com/community/home/blog/2018/09/28/what-s-new-for-android-o-and-the-impact-on-zebra-developers)** | Zebra engineering
+* [Migrating to Android 9 Pie](https://developer.android.com/about/versions/pie/android-9.0-migration) | Android development community
 
 -----
 
@@ -76,10 +76,10 @@ A: ANR errors occur when the main UI thread of an app is blocked for a long peri
 
 **Helpful links**: 
 
-* [What's New for Android 'N' and the Impact on Zebra Developers](https://developer.zebra.com/community/home/blog/2018/08/03/what-s-new-for-android-n-and-the-impact-on-zebra-developers) | By Darryn Campbell, Zebra engineer 
-* [What's New for Android 'O' and the Impact on Zebra Developers](https://developer.zebra.com/community/home/blog/2018/09/28/what-s-new-for-android-o-and-the-impact-on-zebra-developers) | By Darryn Campbell, Zebra engineer 
-* [ANR basics](https://developer.android.com/topic/performance/vitals/anr) | Android Developer Site
-* [Keeping your app responsive](https://developer.android.com/training/articles/perf-anr) | Android Developer Site
+* [What's New for Android 'N' and the Impact on Zebra Developers](https://developer.zebra.com/community/home/blog/2018/08/03/what-s-new-for-android-n-and-the-impact-on-zebra-developers) | Zebra engineering 
+* [What's New for Android 'O' and the Impact on Zebra Developers](https://developer.zebra.com/community/home/blog/2018/09/28/what-s-new-for-android-o-and-the-impact-on-zebra-developers) | Zebra engineering 
+* [ANR basics](https://developer.android.com/topic/performance/vitals/anr) | Android development community
+* [Keeping your app responsive](https://developer.android.com/training/articles/perf-anr) | Android development community
  
 -----
 

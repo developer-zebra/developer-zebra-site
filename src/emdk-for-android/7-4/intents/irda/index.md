@@ -1,5 +1,5 @@
 ---
-title: IrDA Intents API
+title: IrDA Intents APIs
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'

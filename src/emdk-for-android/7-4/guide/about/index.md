@@ -63,15 +63,16 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 **EMDK-A 7.4 and higher can no longer target devices running Android 7.x Nougat or older, including the WT6000**. To target the WT6000 (which currently supports up to Nougat), please use an earlier version of EMDK.   
 
 #### FAQ Page
-EMDK-A 7.3 and 7.4 now present a page of [frequently asked questions](../../faq) that come into Zebra support departments. Answers are provided in the form of links to relevant guides, sample code or both. Access the page through the "FAQs" button in the EMDK-A tile [on the TechDocs main page](../../../) or the "FAQs" tab at the top of any EMDK-A guide page. 
+EMDK-A 7.3 and 7.4 now present a page of [frequently asked questions](../../faq) submitted to Zebra customer- and partner-support departments. Answers are provided as a mixture of simple guidance, links to relevant guides and/or sample code. Access the page through the "FAQs" tab at the top of any EMDK-A guide page or the "FAQs" button in the EMDK-A tile on the [TechDocs main page](../../../../). 
 
 #### SmartCradle API
-**EMDK-A 7.4 introduces the [Locking SmartCradle API](../../intents/cradle)** for the EC30, a set of intent-based interfaces for controlling the charging station of Zebra's latest small form-factor mobile computing device. 
+**EMDK-A 7.4 introduces [Locking SmartCradle APIs](../../intents/cradle)** for the EC30, intent-based interfaces for controlling the secure charging station of Zebra's latest small form-factor mobile computing device. 
+
+#### IrDA API
+**EMDK-A 7.3 (and later) now contains [IrDA APIs](../../intents/irda)**, intent-based interfaces for controlling hardware that conforms to the Infrared Data Association (IrDA) specification** commonly found in mobile computers, printers, handheld remote controls and some medical devices. 
 
 #### NFC Sample App
-An [NFC SAM sample app](../../sam) has been added to demonstrate usage of the NFC Secure Access Module, which allows secure communication with NFC tags from NFC-capable Zebra devices. 
-
-
+**An [NFC SAM sample app](../../samples/sam)** demonstrates usage of the NFC Secure Access Module, which allows secure communication with NFC tags from NFC-equipped Zebra devices. 
 
 -----
 

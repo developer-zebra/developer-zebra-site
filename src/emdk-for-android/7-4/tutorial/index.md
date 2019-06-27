@@ -46,7 +46,7 @@ automenu:
           url: /emdk-for-android/7-4/tutorial/tutMxWiFiManager
         - title: Access Manager
           url: /emdk-for-android/7-4/tutorial/tutMxAccessManager
-        - title: Apply Mx Profile Silently in a Non-Blocking way
+        - title: Apply MX Profile Silently in a Non-Blocking way
           url: /emdk-for-android/7-4/tutorial/tutApplyProfileSilently
         - title: Wireless Manager
           url: /emdk-for-android/7-4/tutorial/tutMxWirelessManager

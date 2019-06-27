@@ -6,7 +6,7 @@ productversion: '7.4'
 ---
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will configure the device's date and time using the [Mx Clock](../../mx/clock) feature through Profile Manager of the EMDK for Android.
+This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will configure the device's date and time using the [MX Clock](../../mx/clock) feature through Profile Manager of the EMDK for Android.
 
 This feature expects following attributes from user to set Clock on the symbol Android device:
 
@@ -412,7 +412,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 2. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to configure date and time using Mx feature, let us try some configuring some of the other Mx feature through profile creation. So in the next tutorial, we will concentrate on the "App Manager" feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure date and time using MX feature, let us try some configuring some of the other MX feature through profile creation. So in the next tutorial, we will concentrate on the "App Manager" feature and try to explore this feature by creating a tutorial.
 
 
 

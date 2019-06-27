@@ -1,5 +1,5 @@
 ---
-title: Configure Wi-Fi settings and Network Profiles using Mx Wi-Fi
+title: Configure Wi-Fi settings and Network Profiles using MX Wi-Fi
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -7,7 +7,7 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Wi-Fi Manager](../../mx/wifi) API, which allows you to manage your device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks. 
+This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Wi-Fi Manager](../../mx/wifi) API, which allows you to manage your device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks. 
 
 > Note: In order to apply these settings, Wi-Fi must be enabled. If you do not specify Wi-Fi Enable in the profile you will get an error when attempting to apply other settings if the device's Wi-Fi is not already enabled.
 
@@ -522,7 +522,7 @@ That's it!!! We are done with all the coding and configuration part that will al
 
 
 ## What's Next
-Now that you have learned how to configure your device's Wi-Fi settings as well as network profiles on your Symbol Android devices through applications using Mx Wi-Fi feature, let us try to understand and implement some of the other Mx features. So in the next tutorial, we will concentrate on the "Certificate Manager" feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure your device's Wi-Fi settings as well as network profiles on your Symbol Android devices through applications using MX Wi-Fi feature, let us try to understand and implement some of the other MX features. So in the next tutorial, we will concentrate on the "Certificate Manager" feature and try to explore this feature by creating a tutorial.
 
 
 

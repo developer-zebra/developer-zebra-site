@@ -7,7 +7,7 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on installing certificates on your Symbol device using [Certificate Manager](../../mx/certmgr).
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on installing certificates on your Symbol device using [Certificate Manager](../../mx/certmgr).
 
 You can use these installed digital certificates to identify your device for a variety of purposes, including VPN or Wi-Fi network access as well as authentication to servers by apps such as Email or Chrome. Let us create a tutorial using [Certificate Manager](../../mx/certmgr) and install a sample CA certificate that would be useful when using WiFiConfig to configure a profile that uses EAP-TLS while adding a Wi-Fi network.
 
@@ -480,7 +480,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 2. Use DataWedge v1.7.12 or higher version to test the `ProfileManager.processProfile()` method for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to configure various types of certificates using Certificate Manager on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in V 3.0. So in the next tutorial, we will concentrate on the "XML Manager" Mx feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure various types of certificates using Certificate Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "XML Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

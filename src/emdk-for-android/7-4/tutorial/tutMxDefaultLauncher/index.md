@@ -7,7 +7,7 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on one of the functions of App Manager API, which allows user to set any launcher application as a default launcher application using App Manager API.
+This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on one of the functions of App Manager API, which allows user to set any launcher application as a default launcher application using App Manager API.
 
 The tutorial would enable user to set an application as default launcher using:
 
@@ -603,7 +603,7 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 2. Use DataWedge v1.7.12 or higher version to test the `ProfileManager.processProfile()` method for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to configure applications in the device using Mx App Manager feature, let us try some configuring some of the other Mx feature through profile creation. So in the next tutorial, we will concentrate on the "Power Manager" feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure applications in the device using MX App Manager feature, let us try some configuring some of the other MX feature through profile creation. So in the next tutorial, we will concentrate on the "Power Manager" feature and try to explore this feature by creating a tutorial.
 
 
 

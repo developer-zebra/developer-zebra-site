@@ -7,11 +7,11 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Power Key Manager parameters such as Airplane Mode, Touch Panel, Safe Mode and Auto Screen Lock using [Power Key Manager](../../mx/powerkeymgr) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring Power Key Manager parameters such as Airplane Mode, Touch Panel, Safe Mode and Auto Screen Lock using [Power Key Manager](../../mx/powerkeymgr) feature of Mx.
 
 The PowerKey Manager feature allows your application to control which options appear on the power menu on the device. Out of different available power key parameters, we would control Airplane Mode in this tutorial.  
 
-So now we will create a tutorial to disable the "Airplane Mode" option from the Power Key Menu using Mx [Power Key Manager](../../mx/powerkeymgr) feature on your Symbol Android device. 
+So now we will create a tutorial to disable the "Airplane Mode" option from the Power Key Menu using MX [Power Key Manager](../../mx/powerkeymgr) feature on your Symbol Android device. 
         
 
 ## Creating The Project
@@ -414,7 +414,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 	> Note: In case of any errors, you will see a Failure status with respective error message in that dialog.
   
-3. We will now see the status of "Airplane Mode" in the settings. So go to device's Settings -> More... and you would see that "Airplane Mode" has been disabled by Mx Admin through Profile Manager Wizard using Power Key Manager.  
+3. We will now see the status of "Airplane Mode" in the settings. So go to device's Settings -> More... and you would see that "Airplane Mode" has been disabled by MX Admin through Profile Manager Wizard using Power Key Manager.  
 
     ![img](../../images/MxPowerKeyManagerTutorialImages/airplane_mode_disabled.png)
 
@@ -440,7 +440,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to disable Airplane Mode Power Key Option using Power Key Manager on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "SD Card Manager" feature of Mx and try to explore this feature by creating a tutorial.
+Now that you have learned how to disable Airplane Mode Power Key Option using Power Key Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "SD Card Manager" feature of MX and try to explore this feature by creating a tutorial.
 
 
 

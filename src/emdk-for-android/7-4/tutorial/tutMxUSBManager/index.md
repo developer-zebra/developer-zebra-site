@@ -7,9 +7,9 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing USB configurations on your Symbol Android device using [USB Manager](../../mx/usbmgr) feature of Mx.
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing USB configurations on your Symbol Android device using [USB Manager](../../mx/usbmgr) feature of Mx.
  
-So now we will create a tutorial and configure (Enable/Disable) the [ADB](http://developer.android.com/tools/help/adb.html) mode of the Symbol Android device using Mx [USB Manager](../../mx/usbmgr) feature. ADB mode allows you to communicate with an emulator instance or connected Android-powered device in order to run your Android applications on them.   
+So now we will create a tutorial and configure (Enable/Disable) the [ADB](http://developer.android.com/tools/help/adb.html) mode of the Symbol Android device using MX [USB Manager](../../mx/usbmgr) feature. ADB mode allows you to communicate with an emulator instance or connected Android-powered device in order to run your Android applications on them.   
         
 
 ## Creating The Project
@@ -529,7 +529,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to Manage USB configurations using USB Manager on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in V 3.0. So in the next tutorial, we will concentrate on the "XML Manager" Mx feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to Manage USB configurations using USB Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "XML Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

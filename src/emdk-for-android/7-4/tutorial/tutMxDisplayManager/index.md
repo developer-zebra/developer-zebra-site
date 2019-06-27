@@ -7,9 +7,9 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on setting the screen off timeout interval of your Symbol Android device. The timeout interval indicates that your device's screen would be turned off after a certain time interval of inactivity that you specify using [Display Manager](../../mx/displaymgr) feature of Mx. This option is popularly known as "Sleep Interval" and is present in the Settings -> Display of your Symbol device. 
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on setting the screen off timeout interval of your Symbol Android device. The timeout interval indicates that your device's screen would be turned off after a certain time interval of inactivity that you specify using [Display Manager](../../mx/displaymgr) feature of Mx. This option is popularly known as "Sleep Interval" and is present in the Settings -> Display of your Symbol device. 
 
-So now we will create a tutorial and set a specific Timeout Interval (Ex. 30 Seconds) using Mx [Display Manager](../../mx/displaymgr) feature on your Symbol Android device. It means the screen of your Symbol device would be turned off automatically after 30 seconds of inactivity once this feature is applied through Profile Wizard.
+So now we will create a tutorial and set a specific Timeout Interval (Ex. 30 Seconds) using MX [Display Manager](../../mx/displaymgr) feature on your Symbol Android device. It means the screen of your Symbol device would be turned off automatically after 30 seconds of inactivity once this feature is applied through Profile Wizard.
         
 
 ## Creating The Project
@@ -424,7 +424,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to configure Screen Off Timeout Interval of Symbol devices using Display Manager through applications, let us try to understand and implement some of the other new Mx features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Power Key Manager" Mx feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure Screen Off Timeout Interval of Symbol devices using Display Manager through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Power Key Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

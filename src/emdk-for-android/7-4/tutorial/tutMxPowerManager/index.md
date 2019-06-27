@@ -7,7 +7,7 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Power Manager](../../mx/powermgr) API, which allows user to perform Power Management operations on Symbol Android devices. Theses operations include setting the device in sleep mode, rebooting the device and updating device Operating System as follows:
+This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Power Manager](../../mx/powermgr) API, which allows user to perform Power Management operations on Symbol Android devices. Theses operations include setting the device in sleep mode, rebooting the device and updating device Operating System as follows:
 
 **1. Sleep Mode:**
 
@@ -23,7 +23,7 @@ This Power Manager feature allows you to update the operating system of your Sym
 
    > Note: Copy the update package to external SD Card in order to make update OS work. If you copy update package to the internal SD card of the device, the OS Update feature won't work.  
 
-* **Enterprise Reset:** Resets the device data except Mx Enterprise Packages.
+* **Enterprise Reset:** Resets the device data except MX Enterprise Packages.
 * **Factory Reset:** Resets the device data.
 * **Full Device Wipe:** Performs a full device wipe. Supported on Symbol devices with KitKat version. 
 * **OS Upgrade:** Upgrades/Downgrades device's Operating System.
@@ -751,7 +751,7 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 
 
 ## What's Next
-Now that you have learned how to configure and perform Power Management operations on your Symbol Android devices through applications using Mx Power Manager feature, let us try to understand and implement some of the other Mx features. So in the next tutorial, we will concentrate on the "Persist Manager" feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure and perform Power Management operations on your Symbol Android devices through applications using MX Power Manager feature, let us try to understand and implement some of the other MX features. So in the next tutorial, we will concentrate on the "Persist Manager" feature and try to explore this feature by creating a tutorial.
 
 
 

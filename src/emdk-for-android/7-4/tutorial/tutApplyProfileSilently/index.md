@@ -7,12 +7,12 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. In this tutorial we would discuss on how to apply Mx configurations to the device silently without displaying any User Interface in a non blocking way.
+This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. In this tutorial we would discuss on how to apply MX configurations to the device silently without displaying any User Interface in a non blocking way.
 
 
 **Problem:**
 
-The Mx features are used to perform device configurations through EMDK profiles as well as programmatically. When we are configuring any Mx feature through EMDK Profile wizard we may not require User Interface. Moreover, the operation of applying EMDK profile configuration to device takes place on the UI main thread. Depending on the Mx feature and complexity, it takes few seconds to apply configurations to the Symbol device. So the application's UI thread is blocked for these few seconds and user cannot interact with application's UI within that time period. Even if the user tries to interact with application's UI, the application does not respond showing "Application Not Responding" (ANR) message asking user to wait.
+The MX features are used to perform device configurations through EMDK profiles as well as programmatically. When we are configuring any MX feature through EMDK Profile wizard we may not require User Interface. Moreover, the operation of applying EMDK profile configuration to device takes place on the UI main thread. Depending on the MX feature and complexity, it takes few seconds to apply configurations to the Symbol device. So the application's UI thread is blocked for these few seconds and user cannot interact with application's UI within that time period. Even if the user tries to interact with application's UI, the application does not respond showing "Application Not Responding" (ANR) message asking user to wait.
 
 **Reason:**
 
@@ -21,7 +21,7 @@ Applying EMDK configurations is a heavy process to be performed on the main thre
 **Solution:**
 In Android, it is recommended to run only UI components on the main thread. Any other operation should always be run on a different background thread without blocking the UI main thread and completing the operation smoothly without any interruptions such as ANR. 
 
-You can run the Mx configuration on background thread in a Non-Blocking way using any one of the following methods: 
+You can run the MX configuration on background thread in a Non-Blocking way using any one of the following methods: 
 
 **1. Using Android Handler:**
 
@@ -38,15 +38,15 @@ You can run the Mx configuration on background thread in a Non-Blocking way usin
 * AsyncTasks should ideally be used for short operations (a few seconds at the most.) If you need to keep threads running for long periods of time, it is highly recommended you use the various APIs provided by the `java.util.concurrent` pacakge such as [Executor](http://developer.android.com/reference/java/util/concurrent/Executor.html), [ThreadPoolExecutor](http://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html) and [FutureTask](http://developer.android.com/reference/java/util/concurrent/FutureTask.html).
 
 
-Since configuration of any Mx feature requires only a few seconds, we can go with any of the two solutions. In this tutorial, we will configure Mx Profile using both Handler and AsyncTask by creating dedicated Activity for each.   
+Since configuration of any MX feature requires only a few seconds, we can go with any of the two solutions. In this tutorial, we will configure MX Profile using both Handler and AsyncTask by creating dedicated Activity for each.   
 
-So far we know how to configure Profile in a Non-Blocking way. Sometimes we don't need User Interface while configuring an Mx profile. Hence, We used the word "Silently" to indicate that there won't be any User Interface in this tutorial. Although, we need UI thread to trigger Mx configuration on the background thread. So we will launch the application and quickly close it after triggering Mx configuration on the background thread.
+So far we know how to configure Profile in a Non-Blocking way. Sometimes we don't need User Interface while configuring an MX profile. Hence, We used the word "Silently" to indicate that there won't be any User Interface in this tutorial. Although, we need UI thread to trigger MX configuration on the background thread. So we will launch the application and quickly close it after triggering MX configuration on the background thread.
 
 Even if you have User Interface in your application, you can interact with it as UI will not be blocked, because the profile will be applied on a background thread.
 
 > Note: We are closing the application immediately because we are not notifying user with any UI as well as the configuration is an independent process that we are just triggering from our application and does not require UI. 
 
-So let us create a tutorial and Configure the Mx App Manager Profile to install an application silently in a Non-Blocking way.      
+So let us create a tutorial and Configure the MX App Manager Profile to install an application silently in a Non-Blocking way.      
    
 ###Prerequisites
 
@@ -203,7 +203,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
         :::java
         final Message msg = mHandler.obtainMessage();
 
-		// Create Runnable instance to Apply Mx Profile on background thread
+		// Create Runnable instance to Apply MX Profile on background thread
 		Thread background = new Thread(new Runnable() {
 
 			@Override
@@ -219,7 +219,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 		// Start the background Thread
 		background.start(); 
 
-    Ignore the errors for the time being. You can see, the background thread calls `applyProfile` method that applies the Mx App Manager profile configuration to the device on background thread we created. The parameter `msg.obj` contains result of the background thread operation that we need to pass on UI thread. Hence we will create a Handler in next step and pass the result parameter in Handler in a Message using `msg.obj`.
+    Ignore the errors for the time being. You can see, the background thread calls `applyProfile` method that applies the MX App Manager profile configuration to the device on background thread we created. The parameter `msg.obj` contains result of the background thread operation that we need to pass on UI thread. Hence we will create a Handler in next step and pass the result parameter in Handler in a Message using `msg.obj`.
 
     Since we don't want any UI for this application, we will call the `finish()` method after sending message to Handler. This will immediately close the application as soon as `applyProfile` method is triggered on the background thread through Runnable.
 
@@ -312,7 +312,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 		 profileManager = null;
 	    }
 
-7. So far we have done with the coding that will use Runnable and Handler to apply App Manager's install configuration on background thread. It will also close the application immediately using `finish()` method once background thread starts its execution to apply configurations silently. But the app will still be visible to the user for that small period of time (few milliseconds) before it is closed. We want to avoid UI as it may not require for many Mx configurations. So We will make the UI invisible (basically transparent) for those few milliseconds by applying [Android Styles](http://developer.android.com/guide/topics/ui/themes.html) to the `HandlerActivity`. 
+7. So far we have done with the coding that will use Runnable and Handler to apply App Manager's install configuration on background thread. It will also close the application immediately using `finish()` method once background thread starts its execution to apply configurations silently. But the app will still be visible to the user for that small period of time (few milliseconds) before it is closed. We want to avoid UI as it may not require for many MX configurations. So We will make the UI invisible (basically transparent) for those few milliseconds by applying [Android Styles](http://developer.android.com/guide/topics/ui/themes.html) to the `HandlerActivity`. 
 
     Before applying, we need to create a custom style that will make the UI transparent. So go to res -> values -> styles.xml of "ApplyProfileSilentlyTutorial" tutorial and write following Android style in `<resources>` tag that will make background transparent.
 
@@ -460,7 +460,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 
     ![img](../../images/ApplyProfileSilentlyTutorialImages/on_closed_destroyed_async.jpg)
 
-8. But the app will still be visible to the user for small period of time (few milliseconds) before it is closed similar to the case of Handler. We want to avoid UI as it may not require for many Mx configurations. So We will make the UI invisible (basically transparent) for those few milliseconds by applying [Android Styles](http://developer.android.com/guide/topics/ui/themes.html) to the `AsyncTaskActivity`.
+8. But the app will still be visible to the user for small period of time (few milliseconds) before it is closed similar to the case of Handler. We want to avoid UI as it may not require for many MX configurations. So We will make the UI invisible (basically transparent) for those few milliseconds by applying [Android Styles](http://developer.android.com/guide/topics/ui/themes.html) to the `AsyncTaskActivity`.
 
     We have already created a transparent style earlier in this tutorial while applying profile using Handler. We will now  simply include that style in "AsyncTaskActivity" to make it transparent. So go to `AndroidManifest.xml` and add the following code in the `<activity>` tag for "AsyncTaskActivity".
 

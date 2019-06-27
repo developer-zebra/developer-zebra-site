@@ -7,7 +7,7 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on controlling access to the device's applications using [Access Manager](../../mx/accessmgr) feature of Mx. The [Access Manager](../../mx/accessmgr) feature allows you to configure a set of applications that will be allowed to run and install on the device. When a profile with this feature is enabled, the device will only allow user installed applications on the Whitelist to be executed and/or installed (some applications that are part of the default operating system will still be available). To disable the Whitelist, you would select "Single User Without Whitelist". Overall, the Access Manager supports following features.
+This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on controlling access to the device's applications using [Access Manager](../../mx/accessmgr) feature of Mx. The [Access Manager](../../mx/accessmgr) feature allows you to configure a set of applications that will be allowed to run and install on the device. When a profile with this feature is enabled, the device will only allow user installed applications on the Whitelist to be executed and/or installed (some applications that are part of the default operating system will still be available). To disable the Whitelist, you would select "Single User Without Whitelist". Overall, the Access Manager supports following features.
 
    > Note: "Enable Whitelist" refers to "Single User Mode with Whitelist". "Disable Whitelist" refers to "Single User Mode without Whitelist" options in the wizard.
 
@@ -56,7 +56,7 @@ Create a new project with Android Studio, click [here](/emdk-for-android/7-4/tut
 
     ![img](../../images/MxAccessManagerTutorialImages/access_manager_feature.jpg)
 
-    As mentioned earlier you can see the drop down showing two options in the operation Mode. First one is Single user without whitelist and second is single user with whitelist. We would demonstrate both of these feature programatically using Access Manager API later in this tutorial. But for now, lets us configure one of these two operation modes from the wizard. This is to show you that we can modify any Mx feature both programmatically as well as using wizrad. Hence select Operation mode as "Single User Without Whitelist". 
+    As mentioned earlier you can see the drop down showing two options in the operation Mode. First one is Single user without whitelist and second is single user with whitelist. We would demonstrate both of these feature programatically using Access Manager API later in this tutorial. But for now, lets us configure one of these two operation modes from the wizard. This is to show you that we can modify any MX feature both programmatically as well as using wizrad. Hence select Operation mode as "Single User Without Whitelist". 
 
 	Provide some name to refer this feature programmatically in order to modify it (Ex. MyAccessMgr).You can also keep the "Name" field empty.    
 
@@ -397,7 +397,7 @@ Create a new project with Android Studio, click [here](/emdk-for-android/7-4/tut
 
 	You can see that all the errors are gone.    
     
-8. If you run the application at this moment, whatever the settings you made in the wizard would be applied to the device. But we are not done yet. We also have to implement a way to modify Access Manager settings programmatically using Mx API as it could be annoying to change the wizard settings repetitively and then run the application each time to see the changes. So let us implement that using following steps.
+8. If you run the application at this moment, whatever the settings you made in the wizard would be applied to the device. But we are not done yet. We also have to implement a way to modify Access Manager settings programmatically using MX API as it could be annoying to change the wizard settings repetitively and then run the application each time to see the changes. So let us implement that using following steps.
 
 9. Declare some global variables for User Interfaces such as Drop-down (Spinner), Button, Edit Text, Radio Group and Relative Layout. Now declare some global variables for drop-down (Spinner) adapter that holds lists for various drop downs such as system settings, add package, remove package. We will also declare some global integers that would contain position of an item clicked by the user in each of the three drop-downs (Spinners).
 
@@ -978,7 +978,7 @@ That's it!!! We are done with all the coding and configuration part that will al
 
     You can see that the application with package name "com.allinstalledapps" has been removed from the whitelist as there are only two application whereas we had added three application previously in the whitelist.
 
-8. In this way, you can configure and test various features of Mx Access Manager on your Symbol device.      
+8. In this way, you can configure and test various features of MX Access Manager on your Symbol device.      
 
 ##Important Programming Tips##
 
@@ -1002,7 +1002,7 @@ That's it!!! We are done with all the coding and configuration part that will al
 
 ## What's Next
 
-Now that you have learned how to configure access to different applications on your device through your application using Mx Access Manager, let us try to understand and implement some of the other Mx features. So in the next tutorial, we will concentrate on the "Certificate Manager" Mx feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure access to different applications on your device through your application using MX Access Manager, let us try to understand and implement some of the other MX features. So in the next tutorial, we will concentrate on the "Certificate Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

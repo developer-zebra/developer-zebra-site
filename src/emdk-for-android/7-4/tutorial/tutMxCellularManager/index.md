@@ -35,7 +35,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 
 	> Note: If you turn "State of Background Data" ON, some of the apps and services won't work unless you're connected to Wi-Fi.
 
-    So as discussed, we will turn ON the state of Data Roaming using Cellular Manager feature of Mx through Profile Manager wizard. So click on "Set the state of Data Roaming" drop-down in the wizard and select the option "Turn on".    
+    So as discussed, we will turn ON the state of Data Roaming using Cellular Manager feature of MX through Profile Manager wizard. So click on "Set the state of Data Roaming" drop-down in the wizard and select the option "Turn on".    
 
     ![img](../../images/MxCellularManagerTutorialImages/cellular_manager_details.jpg)
 
@@ -423,7 +423,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 2. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to set Roaming State using Cellular Manager on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Display Manager" feature of Mx and try to explore this feature by creating a tutorial.
+Now that you have learned how to set Roaming State using Cellular Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Display Manager" feature of MX and try to explore this feature by creating a tutorial.
 
 
 

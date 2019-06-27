@@ -7,9 +7,9 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring browser of your Symbol Android device using [Browser Manager](../../mx/browsermgr) feature of Mx. Using Browser Manager, we will set a Default Home Page to the browser whenever the browser is opened. We would also configure the "Save Form Data" feature by turning it ON/OFF using [Browser Manager](../../mx/browsermgr) through Profile Wizard.
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring browser of your Symbol Android device using [Browser Manager](../../mx/browsermgr) feature of Mx. Using Browser Manager, we will set a Default Home Page to the browser whenever the browser is opened. We would also configure the "Save Form Data" feature by turning it ON/OFF using [Browser Manager](../../mx/browsermgr) through Profile Wizard.
 
-So now we will create a tutorial using Mx [Browser Manager](../../mx/browsermgr) feature, to set "youtube.com" as the default home page of the browser and also turn OFF "Save Form Data", which would not remember any typed data in the forms, on your Symbol Android device.
+So now we will create a tutorial using MX [Browser Manager](../../mx/browsermgr) feature, to set "youtube.com" as the default home page of the browser and also turn OFF "Save Form Data", which would not remember any typed data in the forms, on your Symbol Android device.
 
 
 ## Creating The Project

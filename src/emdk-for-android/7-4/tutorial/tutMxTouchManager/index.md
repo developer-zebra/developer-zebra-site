@@ -1,5 +1,5 @@
 ---
-title: Specify Touch Mode using Mx Touch Manager
+title: Specify Touch Mode using MX Touch Manager
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -7,9 +7,9 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring touch mode of your Symbol Android device using [Touch Manager](../../mx/touchmgr) feature of Mx. 
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on configuring touch mode of your Symbol Android device using [Touch Manager](../../mx/touchmgr) feature of Mx. 
 
-So now we will create a tutorial and configure the touch of your Symbol Android device by specifying touch mode using Mx [Touch Manager](../../mx/touchmgr) feature. 
+So now we will create a tutorial and configure the touch of your Symbol Android device by specifying touch mode using MX [Touch Manager](../../mx/touchmgr) feature. 
         
 
 
@@ -422,7 +422,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 
 ## What's Next
-Now that you have learned how to configure Touch Mode using Touch Manager on your Symbol Android devices through applications, let us try to understand and implement some of the other new Mx features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Settings Manager" Mx feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure Touch Mode using Touch Manager on your Symbol Android devices through applications, let us try to understand and implement some of the other new MX features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Settings Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

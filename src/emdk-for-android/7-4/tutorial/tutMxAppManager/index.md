@@ -7,7 +7,7 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will help configuring and managing device applications using the [AppManager](../../mx/appmgr) feature of EMDK Profiles. 
+This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will help configuring and managing device applications using the [AppManager](../../mx/appmgr) feature of EMDK Profiles. 
 
 Using this feature, a user can perform various App Management operations such as:
  
@@ -406,7 +406,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 2. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to configure applications in the device using Mx App Manager feature, let us try some configuring some of the other Mx feature through profile creation. So in the next tutorial, we will concentrate on the "Power Manager" feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure applications in the device using MX App Manager feature, let us try some configuring some of the other MX feature through profile creation. So in the next tutorial, we will concentrate on the "Power Manager" feature and try to explore this feature by creating a tutorial.
 
 
 

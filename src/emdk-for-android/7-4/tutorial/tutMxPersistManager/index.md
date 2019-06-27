@@ -7,11 +7,11 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Persist Manager](../../mx/persistance) API, which allows user to persist configuration XML's. These XML's contain various Mx device configuration settings that user may want to persist even after performing Factory Reset or Enterprise Reset on the device. The persisted settings are applied by default when we Factory or Enterprise Reset the device so that user does not have to apply them manually again and again. This is the main purpose of Mx Persist Manager feature. Overall, the Persist Manager API supports following features:   
+This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on [Persist Manager](../../mx/persistance) API, which allows user to persist configuration XML's. These XML's contain various MX device configuration settings that user may want to persist even after performing Factory Reset or Enterprise Reset on the device. The persisted settings are applied by default when we Factory or Enterprise Reset the device so that user does not have to apply them manually again and again. This is the main purpose of MX Persist Manager feature. Overall, the Persist Manager API supports following features:   
 
 **1. Adding XML to be Persisted:**
 
-Using this feature, user can create a new XML to be persisted that has specific configuration settings. (Ex. Mx Clock details)
+Using this feature, user can create a new XML to be persisted that has specific configuration settings. (Ex. MX Clock details)
 
    > Note: The profile feature "Data Capture Manager" will not be persisted.
 
@@ -33,7 +33,7 @@ Using this feature, user can find a specific persisted XML based on Persist Mana
 
 **5. Apply Persisted XML settings after Enterprise Reset:**
 
-This feature re-sends the persisted XML's to the Mx Framework after an Enterprise Reset. This helps in re-applying configuration settings back to the device for which user had Persisted these XML's.
+This feature re-sends the persisted XML's to the MX Framework after an Enterprise Reset. This helps in re-applying configuration settings back to the device for which user had Persisted these XML's.
 
    > Note: 
    > In order for associated files to survive an "Enterprise Reset" they must be placed in the Enterprise Folder on the device. A "Factory Reset" will not persist any profiles features.  
@@ -42,7 +42,7 @@ This feature re-sends the persisted XML's to the Mx Framework after an Enterpris
 So now we will create a tutorial to demonstrate how the configuration XML's are persisted and retrieved using Persist Manager API. Moreover we would perform an enterprise reset on the device and see how the configuration settings are re-applied to the device by designing our tutorial in following steps:
 
 * We would store a Clock and App Manager's install configuration settings and create Persist Manager to store XML for each setting.
-* It means we would change the Clock timing using Mx Clock and install any application using App Manager install feature, which will be stored by Persist Manager. 
+* It means we would change the Clock timing using MX Clock and install any application using App Manager install feature, which will be stored by Persist Manager. 
 * We would then deliberately change the Clock timings and uninstall the application that we had installed.
 * We will then perform an Enterprise Reset on Symbol Android device (Ex. TC55 in this Tutorial)
 * Finally we will ensure how the persisted Clock and App Manager settings are re-applied automatically. It means you would see the Clock is reset to the time you had set and the application installed back to the device from the path provided.     
@@ -66,7 +66,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 
 	> Note: You can provide any Profile Name but make sure to access it with the similar name in the Android code.  
    
-3. Now, you can see all these MX features on the left hand side of the Profile Editor window. We will persist two XML's for two Mx features in this tutorial. The first feature is Clock. So select the "Clock" feature from the list and click "Right Arrow".
+3. Now, you can see all these MX features on the left hand side of the Profile Editor window. We will persist two XML's for two MX features in this tutorial. The first feature is Clock. So select the "Clock" feature from the list and click "Right Arrow".
 
     ![img](../../images/MxPersistManagerTutorialImages/clock_feature.jpg)
 
@@ -483,7 +483,7 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 
     ![img](../../images/MxPersistManagerTutorialImages/app_installed.png)
   
-3. These configurations were implemented and applied by the respective Mx feature (Clock and App Manager) but the settings are persisted in the XML file by the Persist Manager. If you open the File browser of TC 55 and go to "/enterprise/usr/persist/mxframework/persistmgr", you will find the two XML's persisted that were created using Persist Manager for Clock and App Manager features of Mx. 
+3. These configurations were implemented and applied by the respective MX feature (Clock and App Manager) but the settings are persisted in the XML file by the Persist Manager. If you open the File browser of TC 55 and go to "/enterprise/usr/persist/mxframework/persistmgr", you will find the two XML's persisted that were created using Persist Manager for Clock and App Manager features of Mx. 
 
     ![img](../../images/MxPersistManagerTutorialImages/persist_path.png)
 
@@ -496,7 +496,7 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
  
     The TC55 shuts down and then reboots. Now select the Enterprise Reset Package (Zip File) stored in the SD Card by navigating to the path. It will complete the Enterprise Reset by erasing data and reboot the device with the default configurations.
 
-6. Once the Enterprise Reset is completed, Persist Manager resends the persisted XML's to the Mx Framework, which is captured by the device. These settings are then re-applied to the device. This is how the Persist Manager works in order to Persist and apply the Mx device configuration features.
+6. Once the Enterprise Reset is completed, Persist Manager resends the persisted XML's to the MX Framework, which is captured by the device. These settings are then re-applied to the device. This is how the Persist Manager works in order to Persist and apply the MX device configuration features.
 
     ![img](../../images/MxPersistManagerTutorialImages/after_reset.png)
 
@@ -519,7 +519,7 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
 2. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to configure and persist device configuration XML's using Persist Manager on your Symbol devices through applications, let us try to understand and implement some of the other Mx features. So in the next tutorial, we will concentrate on the "GPRS Manager" Mx feature and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure and persist device configuration XML's using Persist Manager on your Symbol devices through applications, let us try to understand and implement some of the other MX features. So in the next tutorial, we will concentrate on the "GPRS Manager" MX feature and try to explore this feature by creating a tutorial.
 
 
 

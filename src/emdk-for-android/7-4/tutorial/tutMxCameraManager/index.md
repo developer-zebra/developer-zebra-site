@@ -7,9 +7,9 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use some new Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing use of all cameras on your Symbol devices using [Camera Manager](../../mx/cameramgr) feature of Mx. Basically, it will let you control whether or not to allow use of Front-Camera, Rear-Camera or both.  
+This guide will walk you through creating an EMDK For Android application that will use some new MX features introduced in EMDK for Android API to perform device configurations. MX represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will focus on managing use of all cameras on your Symbol devices using [Camera Manager](../../mx/cameramgr) feature of Mx. Basically, it will let you control whether or not to allow use of Front-Camera, Rear-Camera or both.  
 
-We will now create a tutorial to disable the use of all cameras and then enable them back on your Symbol Android device using Mx [Camera Manager](../../mx/cameramgr) feature. 
+We will now create a tutorial to disable the use of all cameras and then enable them back on your Symbol Android device using MX [Camera Manager](../../mx/cameramgr) feature. 
         
 
 ## Creating The Project
@@ -443,7 +443,7 @@ That's it!!! We are done with all the coding and configuration part that will le
 2. Use DataWedge v1.7.12 or higher version to test the `ProfileManager.processProfile()` method for DataWedge profiles.
 
 ## What's Next
-Now that you have learned how to configure the use of Cameras using Camera Manager on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Power Key Manager" feature of Mx and try to explore this feature by creating a tutorial.
+Now that you have learned how to configure the use of Cameras using Camera Manager on your Symbol devices through applications, let us try to understand and implement some of the other new MX features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Power Key Manager" feature of MX and try to explore this feature by creating a tutorial.
 
 
 

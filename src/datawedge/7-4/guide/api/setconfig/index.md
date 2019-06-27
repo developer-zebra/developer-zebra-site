@@ -6,13 +6,20 @@ productversion: '7.4'
 ---
 
 ## SET_CONFIG
+Used to create, update or replace a [DataWedge Profile](../../profiles) and its settings, and can configure multiple options with a single intent action. SET_CONFIG implements nested bundles, where a `PARAM_LIST` _(parameter list)_ bundle can be nested within its corresponding `PLUGIN_CONFIG` _(option)_ bundle, which can then be nested within the _main_ `SET_CONFIG` bundle. Multiple `PLUGIN_CONFIG` bundles can be nested within the `SET_CONFIG` bundle.   
+
+<img style="height:250px" src="nested_bundles_labelled.png"/>
+<i><b>Figure 1.</b> Visual representation of nested bundles.</i>
+<br> 
+
+<!-- // Original description
 Used to create, update or replace a DataWedge Profile and its settings, and can configure multiple Plug-ins with a single intent action. 
 
 This API implements [nested bundles](../overview/#nestedbundles), which contain multiple configuration parameters in a single data field. 
 
 <img style="height:350px" src="nested_bundles_labelled.png"/>
 <br>
-
+-->
 To create a Profile without configuring its settings parameters, use [CREATE_PROFILE](../createprofile).
 
 ### Version History
@@ -86,10 +93,12 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
 
 **PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters to be updated under the specified Plug-in. **Setting an empty string in any parameter value resets that parameter to its default setting**. 
 
-<img alt="" style="height:448px" src="nested_example_pt1.png"/>
-<img alt="" style="height:482px" src="nested_example_pt2.png"/>
-_A visual representation of nested SET_CONFIG bundles. [See example code](#examplecode)._ 
+<img style="height:750px" src="setconfig_nested.jpg"/>
+<br> 
+<i><b>Figure 2.</b> Visual representation of nested `SET_CONFIG` bundle. Bundles are designated in blue with corresponding properties listed. `PLUGIN_NAME` lists the name of the plug-ins (options) available to configure. Dotted arrows from each plug-in point to the corresponding `PARAM_LIST`, properties that can be configured for that particular plug-in. [See example code](#examplecode).</i>
 <br>
+<br>
+
 
 #### PARAM_LIST BUNDLE
 The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the table below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 

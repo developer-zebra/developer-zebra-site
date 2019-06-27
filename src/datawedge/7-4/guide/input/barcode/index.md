@@ -1057,7 +1057,7 @@ _**Note:** Same performance from Effort Level 1 to Effort Level 3._
 ### UDI Decoding
 The Universal Device Identifier (UDI) parameter acquires multiple barcodes simultaneously. 
 
-**This feature is supported using the imager on the following devices only**:
+**This feature is supported using the imager on the following devices up to Android P (version 9.x) only**:
 
 * **TC51**
 * **TC56**

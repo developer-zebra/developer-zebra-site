@@ -88,7 +88,8 @@ For more information about approved languages or to download a localized operati
 * Introduced **voice capture activation by PTT** (push-to-talk) button with new [Data capture start option](../input/barcode).
 * New **[RFID Input plugin](../input/rfid)** feature added to read RFID tags.
 * New **[Enterprise Keyboard Configuration](../utilities/ekb)** feature.
-* Added support for new **[DPM parameters](../input/barcode)**. DPM parameters also added to **[SetConfig](../api/setconfig) API.
+* Added support for new **[DPM parameters](../input/barcode)**. DPM parameters also added to [SetConfig](../api/setconfig) API.
+* **UDI** is supported on [select Zebra devices](../input/barcode/#udidecoding) up to Android P (version 9.x) only.
 
 -----
 ## Recent Version History

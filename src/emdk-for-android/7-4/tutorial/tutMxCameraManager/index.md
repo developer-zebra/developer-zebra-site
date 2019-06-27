@@ -1,5 +1,5 @@
 ---
-title: Administer Use of Camera using Camera Manager
+title: Using Camera Manager
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -382,24 +382,23 @@ That's it!!! We are done with all the coding and configuration part that will le
  
 ## Running the Application
 
-1. Connect the device (having the latest EMDK runtime) to USB port. 
+1. Connect the device to a USB port. 
 
-    > Note:   
-    > Make sure the device is in USB debug.
+    > Note: Make sure the device has USB debugging enabled.
 
-    Before running the application, We will make sure that Camera is enabled and accessible initially.
+    Before running the application, we will make sure that Camera is enabled and accessible initially.
 
-    Click on Camera application of your Symbol device and you will see that camera is enabled by default.
+    Launch the camera app on the device to verify that camera is enabled by default.
 
     ![img](../../images/MxCameraManagerTutorialImages/camera_enabled.png) 
 
-2. Run the application.
+2. Run your application.
 
     ![img](../../images/MxCameraManagerTutorialImages/home_screen.png)
 
     You can see an [Alert Dialog](http://developer.android.com/reference/android/app/AlertDialog.html) with a success message.
 
-	> Note: In case of any errors, you will see a Failure status with respective error message in that dialog.
+	> Note: In case of errors, you will see a Failure status with respective error message in that dialog.
   
 3. We will see the status of Camera in Symbol device. So click on the Camera application and you would see that the Camera is disabled as we have disabled the Camera permission through Profile Wizard using Camera Manager feature of Mx.
 
@@ -441,9 +440,7 @@ That's it!!! We are done with all the coding and configuration part that will le
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
   
-2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device.
- 
-4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
+2. Use DataWedge v1.7.12 or higher version to test the `ProfileManager.processProfile()` method for DataWedge profiles.
 
 ## What's Next
 Now that you have learned how to configure the use of Cameras using Camera Manager on your Symbol devices through applications, let us try to understand and implement some of the other new Mx features introduced in EMDK for Android V 3.1. So in the next tutorial, we will concentrate on the "Power Key Manager" feature of Mx and try to explore this feature by creating a tutorial.

@@ -374,7 +374,7 @@ That's it!!! We are done with all the coding and incorrect configuration. Now le
 
 ## Running the Application
 
-1. Connect the device (having the latest EMDK runtime) to USB port. 
+1. Connect the device to a USB port (device must have USB debugging enabled). 
 
     > Note:   
     > Make sure the device is in USB debug.
@@ -451,9 +451,6 @@ That's it!!! We are done with all the coding and incorrect configuration. Now le
     
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
-  
-2. Installing the EMDK for Android application without deploying the EMDK runtime on a Symbol device will fail because of missing shared library on the device. 
-
 
 
 

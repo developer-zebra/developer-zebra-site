@@ -1,5 +1,5 @@
 ---
-title: Apply Mx Profile Silently in a Non-Blocking way
+title: Apply MX Profile Silently, Non-Blocking
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -480,7 +480,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
                    
 ## Running the Application
 
-1. Connect the Symbol device (having the latest EMDK runtime) to USB port. 
+1. Connect the device to a USB port. 
 
     > Note:   
     > Make sure the device is in USB debug.
@@ -550,10 +550,8 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
     
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
-  
-2. Installing the EMDK for Android application without deploying the EMDK runtime on device will fail because of missing shared library on the device.
- 
-4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
+   
+2. Use DataWedge v1.7.12 or higher version to test the `ProfileManager.processProfile()` method for DataWedge profiles.
 
 
 

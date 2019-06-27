@@ -730,11 +730,8 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
  
 ## Running the Application
 
-1. Connect the device (having latest EMDK runtime) to USB port. 
+1. Connect the device to a USB port (device must have USB debugging enabled). 
 
-    > Note:   
-    > Make sure the device is in USB debug.
- 
 2. Run the application.
 
     ![img](../../images/SimulScanTutorialImages/home_screen.png)

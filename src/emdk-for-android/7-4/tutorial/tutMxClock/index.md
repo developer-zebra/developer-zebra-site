@@ -1,5 +1,5 @@
 ---
-title: Setting The Clock With ProfileManager
+title: Set The Clock With ProfileManager
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -380,9 +380,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 ## Running the Application
 
 1. That's it, We are done with the configurations and coding. Now let's run the application.
-2. Connect the device (having the latest EMDK runtime) to USB port.
-    >Note:   
-    >Make sure the device is in USB debug.
+2. Connect the device to a USB port (device must have USB debugging enabled).
 3. Note the date and time of the device before running the application.
 
 	![img](../../images/MxClockTutorialImages/date_time_before_running.png)
@@ -403,19 +401,15 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 
 1. It is required to do the following changes in the application's AndroidManifest.xml:  
   
-    >Note:
-    >* Include the permission for EMDK:  
-    
+		// Include the permission for EMDK:  
         :::xml
         <uses-permission android:name="com.symbol.emdk.permission.EMDK"/>
     
-    >Note: * Use the EMDK library:  
-    
+		// Use the EMDK library:  
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
   
-2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device. 
-4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
+2. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
 Now that you have learned how to configure date and time using Mx feature, let us try some configuring some of the other Mx feature through profile creation. So in the next tutorial, we will concentrate on the "App Manager" feature and try to explore this feature by creating a tutorial.

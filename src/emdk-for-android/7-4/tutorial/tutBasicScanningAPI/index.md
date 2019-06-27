@@ -1,5 +1,5 @@
 ---
-title: Basic Scanning Tutorial using Barcode API
+title: Basic Scanning with Barcode API
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -423,7 +423,7 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
  
 ## Running the Application
 
-1. Connect the device (with the latest EMDK runtime) to a USB port on the development host. 
+1. Connect the device to a USB port on the development host. 
 	**Note**: The device must be in USB Debug mode.
  
 2. Run the application.
@@ -461,10 +461,8 @@ This is how [Barcode/Scanning APIs](/emdk-for-android/6-10/api) can be used to p
     
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
-  
-2. Installing the EMDK for Android application without deploying the EMDK runtime on the Zebra device fails if the shared library is missing from the device.
- 
-3. Use DataWedge v1.7.12 or higher to test the `ProfileManager.processProfile()` for DataWedge profiles.
+   
+2. Use DataWedge v1.7.12 or higher to test the `ProfileManager.processProfile()` for DataWedge profiles.
 
 ### Content Backup
 

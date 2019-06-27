@@ -357,7 +357,7 @@ Newt we will add the code to listen for our Broadcast Intent and display the Bar
 ###Running the Application###
 Lastly we will run and test our application. 
 
-1. Connect the device (having the latest EMDK runtime) to USB port.
+1. Connect the device to a USB port.
 
     >Note:   
     >Make sure the device is in USB debug.

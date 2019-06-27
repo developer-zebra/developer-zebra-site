@@ -203,7 +203,7 @@ The tutorial uses EMDK V 2.1 that has organized existing features as well as got
 
 	![img](../../images/setup/image119.jpg)
  
-12. Connect the device (having the latest EMDK runtime) to USB port.
+12. Connect the device to a USB port.
     
     >Note:   
     >Make sure the device is in USB debug.

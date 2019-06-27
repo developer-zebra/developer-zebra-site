@@ -1,5 +1,5 @@
 ---
-title: Application Management with AppManger Profile Feature
+title: App Management Using AppManger
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -7,7 +7,7 @@ productversion: '7.4'
 
 ## Overview
 
-This guide will walk you through creating an EMDK For Android application that will use Mx features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will help configuring and managing device applications using the [AppManager](../../mx/appmgr) feature of EMDK Profiles. 
+This guide will walk you through creating an EMDK For Android application that will use MX features introduced in EMDK for Android API to perform device configurations. Mx represents a suite of Enterprise Features on top of standard, commercially available Android Open Source Project. So this tutorial will help configuring and managing device applications using the [AppManager](../../mx/appmgr) feature of EMDK Profiles. 
 
 Using this feature, a user can perform various App Management operations such as:
  
@@ -21,8 +21,6 @@ Using this feature, a user can perform various App Management operations such as
 * **Enable and Disable App Info:** - The application info dialog shows detailed information about the application as well as allow you to perform actions like: Force Stop, Enable/Disable, Clear Data, Clear Cache. Specify the application's package name that you would like to enable or disable this feature for. 
 
     > Note: Please refer the compatibility matrix to check availability these features across various symbol devices [here](../../mx/appmgr).   
-
-
 
 ## Creating The Project
 
@@ -374,10 +372,9 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 
 1. That's it, We are done with the configurations and coding. Now let's run the application.
 
-2. Connect the device (having the latest EMDK runtime) to USB port. The Herald application is not present on the device before running this application.
+2. Connect the device to a USB port. The Herald application is not present on the device before running this application.
 
-    >Note:   
-    >Make sure the device is in USB debug.
+    >Note: Make sure the device has USB debugging enabled.
 3. Run the application. The app displays a Toast with a success message.
   
 	![img](../../images/MxAppManagerTutorialImages/app_run.png)
@@ -406,8 +403,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
   
-2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device. 
-4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
+2. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
 Now that you have learned how to configure applications in the device using Mx App Manager feature, let us try some configuring some of the other Mx feature through profile creation. So in the next tutorial, we will concentrate on the "Power Manager" feature and try to explore this feature by creating a tutorial.

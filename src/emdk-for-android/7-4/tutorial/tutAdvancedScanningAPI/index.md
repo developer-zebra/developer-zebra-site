@@ -1068,11 +1068,8 @@ That's it!!! We are done with all the coding part that will let us perform some 
  
 ## Running the Application
 
-1. Connect the device (having latest EMDK runtime) to USB port. 
+1. Connect the device to a USB port. 
 
-    > Note:   
-    > Make sure the device is in USB debug.
- 
 2. Run the application.
 
     ![img](../../images/AdvancedScanningTutorialImages/home_screen.png)
@@ -1122,12 +1119,10 @@ It will display a success toast when the changes are applied each time you chang
     
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
-  
-2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device.
- 
-3. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
+   
+2. Use DataWedge v1.7.12 or higher to test the `ProfileManager.processProfile()` method for DataWedge profiles.
 
-4. Optionally, the example below shows how to convert raw data (byte array) into hex format:
+3. Optionally, the example below shows how to convert raw data (byte array) into hex format:
 
 		:::java
 		byte[] rawData = data.getRawData();

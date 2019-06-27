@@ -163,10 +163,10 @@ The EMDKListener.onClosed gets called to notify the application that the EMDKMan
 
 ##Checking EMDK Version on Device
 
-Zebra Technologies Mobile Devices running the KitKat Android OS will have the EMDK device runtime built-in, but devices running Jelly Bean Android OS will not have the EMDK device runtime built-in.  The EMDK version on the device can be checked either by manually or programmatically.
+Zebra mobile devices running Android KitKat have the EMDK device runtime built in; devices running Android Jelly Bean and Android versions newer than KitKat do not. The EMDK version on the device can be checked manually or programmatically. 
 
 ###Manual Steps
-Goto Settings > Apps > All > EMDK Service. Click on EMDK Service icon to see the version.
+Go to Settings > Apps > All > EMDK Service. Click on the EMDK Service icon to see the version.
 
 ###Programmatic Steps
 

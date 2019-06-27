@@ -460,7 +460,7 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
  
 ## Running the Application
 
-1. Connect the device (having the latest EMDK runtime) to USB port. 
+1. Connect the device to a USB port (device must have USB debugging enabled). 
 
     > Note:   
     > Make sure the device is in USB debug.
@@ -516,9 +516,7 @@ That's it!!! We are done with all the coding and configuration part. Now let us 
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
   
-2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol Android device will fail because of missing shared library on the device.
- 
-4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
+2. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
 
 ## What's Next
 Now that you have learned how to configure and persist device configuration XML's using Persist Manager on your Symbol devices through applications, let us try to understand and implement some of the other Mx features. So in the next tutorial, we will concentrate on the "GPRS Manager" Mx feature and try to explore this feature by creating a tutorial.

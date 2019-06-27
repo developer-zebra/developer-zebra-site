@@ -1,5 +1,5 @@
 ---
-title: Pairing with Bluetooth Scanning device using Bluetooth Scanner API
+title: Using Bluetooth Scanner API
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -374,11 +374,8 @@ That's it!!! We are done with all the coding part that will let us perform pairi
  
 ## Running the Application
 
-1. Connect the device (having latest EMDK runtime) to USB port. 
+1. Connect the device to a USB port. 
 
-    > Note:   
-    > Make sure the device is in USB debug.
- 
 2. Run the application.
 
 	> Note: Initially the bluetooth of the device is turned OFF.
@@ -413,7 +410,7 @@ That's it!!! We are done with all the coding part that will let us perform pairi
 
 ##Important Programming Tips##
 
-1. It is required to do the following changes in the application's AndroidManifest.xml:  
+1. Changes the application's `AndroidManifest.xml` file as follows:  
   
     >Note:
     >* Include the permission for EMDK:  
@@ -426,9 +423,6 @@ That's it!!! We are done with all the coding part that will let us perform pairi
     
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
-  
-2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device.
-
 
 ## What's Next
 Now that you have learned how to perform pairing with Bluetooth Scanning device using Bluetooth Pairing Utility of [Bluetooth Scanner API](/emdk-for-android/7-4/api/barcode), in the next tutorial we would concentrate on [ScanAndPair APIs](/emdk-for-android/7-4/api/scanandpair) and develop an application to demonstrate its use. 

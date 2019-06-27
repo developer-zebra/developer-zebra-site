@@ -1,5 +1,5 @@
 ---
-title: Controlling Application Access using Access Manager
+title: Controlling App Access using Access Manager
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -781,9 +781,8 @@ Create a new project with Android Studio, click [here](/emdk-for-android/7-4/tut
 			default:
 				break;
 			}
-
 		 }
-	    };
+	};
 
     The `onClickListener` for set Button looks like:
 
@@ -899,11 +898,11 @@ Create a new project with Android Studio, click [here](/emdk-for-android/7-4/tut
 		  }
 	    }
 
-    The `modifyAccessManagerProfileXML` method looks like:
+The `modifyAccessManagerProfileXML` method looks like:
 
-    ![img](../../images/MxAccessManagerTutorialImages/modify_profile_method.jpg)
+![img](../../images/MxAccessManagerTutorialImages/modify_profile_method.jpg)
 
-    You can see all the errors are gone now. The sample XML for "without Whitelist" feature, which is passed to `processProfile` method looks like:
+You can see all the errors are gone now. The sample XML for "without Whitelist" feature, which is passed to `processProfile` method looks like:
 
         :::java
         modifyData[0] = "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
@@ -913,14 +912,14 @@ Create a new project with Android Studio, click [here](/emdk-for-android/7-4/tut
 		+ "<parm name=\"OperationMode\" value=\"1\"/>"
 		+ "</characteristic>" + "</characteristic>";         
 
+
 That's it!!! We are done with all the coding and configuration part that will allow us to implement Access Manager both programmatically as well as using wizard. Now let us run and test the application.
  
 ## Running the Application
 
-1. Connect the device (having the latest EMDK runtime) to USB port. 
+1. Connect the device to a USB port. 
 
-    > Note:   
-    > Make sure the device is in USB debug. 
+    > Note: Make sure the device has USB debugging enabled. 
 
 2. Run the application.
 
@@ -996,12 +995,13 @@ That's it!!! We are done with all the coding and configuration part that will al
     
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
-  
-2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device.
- 
-4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
+   
+2. Use DataWedge v1.7.12 or higher version to test the `ProfileManager.processProfile()` method for DataWedge profiles.
+
+-----
 
 ## What's Next
+
 Now that you have learned how to configure access to different applications on your device through your application using Mx Access Manager, let us try to understand and implement some of the other Mx features. So in the next tutorial, we will concentrate on the "Certificate Manager" Mx feature and try to explore this feature by creating a tutorial.
 
 

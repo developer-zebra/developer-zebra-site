@@ -838,7 +838,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 	So now we are done with the coding part. Lets test our application.
 
 ## Running the Application
-1. Connect the device (having the latest EMDK runtime) to USB port.
+1. Connect the device to a USB port.
 
 	>Note:   
 	>Make sure the device is in USB debug.
@@ -886,8 +886,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
     	<uses-library android:name="com.symbol.emdk"/>
   
 2. When using the "Barcode" feature in EMDK Wizard, the specified value for "Scanner" is not supported on the device, it will be considered as "Auto" during runtime (Ex: BT_LASER1, BT_IMAGER1 and BT_CAMERA1).
-3. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device. 
-4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
+3. Use DataWedge v1.7.12 or higher version to test the `ProfileManager.processProfile()` method for DataWedge profiles.
 
 
 

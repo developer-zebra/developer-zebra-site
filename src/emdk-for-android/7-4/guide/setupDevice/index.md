@@ -1,5 +1,5 @@
 ---
-title: Configure A Device
+title: Configure a Device
 layout: guide.html
 product: EMDK For Android
 productversion: '7.4'
@@ -9,19 +9,19 @@ productversion: '7.4'
 	<u>**The instructions below pertain only to devices running Android KitKat**</u>. 
 	On devices running Lollipop (and higher), the EMDK runtime is built into the operating system, and is changed by downloading and applying an updated BSP compatible <u>only</u> with those devices.	See the [EMDK download page](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html) for more information. 
 
-##	Installing EMDK for Android Device Runtime using Deployment utility
+##	Installing Device Runtime
 
 ### Windows
-1.	Connect the device to PC.
-2.	Launch the Start menu program shortcut `Device Runtime Deployment`. This will open the command prompt window.
+1.	Connect the device to a PC.
+2.	Launch the Start menu program shortcut `Device Runtime Deployment`. This opens a command prompt window.
 3.	Click any key to continue.
-4.	This process will deploy the device runtime and reboot automatically to finish the OS update.
+4.	This process deploys the device runtime and reboots automatically to finish the OS update.
 
 ### Mac OS
 
->Note: Please substitute the current version of the EmdkOSUpdateApp APK when EmdkOSUpdateApp_vX.X.X.apk is referenced.
+>Note: Please substitute the current version of the `EmdkOSUpdateApp` .apk file when `EmdkOSUpdateApp_vX.X.X.apk` is referenced.
 
-1. Open finder and copy EmdkOSUpdateApp_vX.X.X.apk  into the ADB directory.
+1. Open finder and copy `EmdkOSUpdateApp_vX.X.X.apk`  into the ADB directory.
 
 	`/Users/<user>/Library/Android/sdk/platform-tools/`
 
@@ -44,10 +44,9 @@ productversion: '7.4'
 	`./adb shell am start -n com.symbol.emdkosupdater/.MainActivity`
 
 
-The device will be reboot after the device update completes.
+The device reboots after the device update completes.
 
-
-
+-----
 
 ## Installing the EMDK device runtime when the AppLock Manager is On:
 

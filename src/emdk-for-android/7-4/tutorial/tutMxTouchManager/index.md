@@ -379,7 +379,7 @@ That's it!!! We are done with all the coding and configuration part that will le
  
 ## Running the Application
 
-1. Connect the device (having the latest EMDK runtime) to USB port. 
+1. Connect the device to a USB port (device must have USB debugging enabled). 
 
     > Note:   
     > Make sure the device is in USB debug.
@@ -408,23 +408,18 @@ That's it!!! We are done with all the coding and configuration part that will le
 
 ##Important Programming Tips##
 
-1. It is required to do the following changes in the application's AndroidManifest.xml:  
+1. Perform the following changes in the application's `AndroidManifest.xml` file:  
   
-    >Note:
-    >* Include the permission for EMDK:  
-    
+		//Include the permission for EMDK:  
         :::xml
         <uses-permission android:name="com.symbol.emdk.permission.EMDK"/>
     
-	>Note:
-    >* Use the EMDK library:  
-    
+		//Use the EMDK library:  
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
-  
-2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device.
- 
-4. Use the DataWedge v1.7.12 or higher version to test the ProfileManager.processProfile() for DataWedge profiles.
+   
+2. Use DataWedge v1.7.12 or higher version to test the `ProfileManager.processProfile()` method for DataWedge profiles.
+
 
 ## What's Next
 Now that you have learned how to configure Touch Mode using Touch Manager on your Symbol Android devices through applications, let us try to understand and implement some of the other new Mx features introduced in V 3.0. So in the next tutorial, we will concentrate on the "Settings Manager" Mx feature and try to explore this feature by creating a tutorial.

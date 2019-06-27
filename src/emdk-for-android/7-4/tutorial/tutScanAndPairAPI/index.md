@@ -710,11 +710,8 @@ That's it!!! We are done with all the coding part that will let us scan the Blue
  
 ## Running the Application
 
-1. Connect the device (having latest EMDK runtime) to USB port. 
+1. Connect the device to a USB port (device must have USB debugging enabled). 
 
-    > Note:   
-    > Make sure the device is in USB debug.
- 
 2. Run the application.
 
     ![img](../../images/ScanAndPairTutorialImages/home_screen.png)

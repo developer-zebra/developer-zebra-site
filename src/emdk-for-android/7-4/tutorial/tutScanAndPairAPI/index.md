@@ -761,24 +761,17 @@ That's it!!! We are done with all the coding part that will let us scan the Blue
 -----
  
 
-##Important Programming Tips##
+##Important Programming Tips
 
-1. It is required to do the following changes in the application's AndroidManifest.xml:  
+1. Perform the following changes in the application's `AndroidManifest.xml` file:  
   
-    >Note:
-    >* Include the permission for EMDK:  
-    
+		//Include the permission for EMDK:  
         :::xml
         <uses-permission android:name="com.symbol.emdk.permission.EMDK"/>
     
-	>Note:
-    >* Use the EMDK library:  
-    
+		//Use the EMDK library:  
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
-  
-2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device.
-
 
 ## What's Next
 Now that you have learned how to scan the Bluetooth Name/Address of Remote Scanning device and pair our client application with that Remote device using  ScanAndPair APIs, in the next tutorial we would concentrate on SimulScan APIs and develop an application to demonstrate its use. 

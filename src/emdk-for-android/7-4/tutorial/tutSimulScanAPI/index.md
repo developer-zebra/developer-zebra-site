@@ -767,39 +767,18 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 	This illustrates how to access critical fields from a document using [SimulScan APIs](/emdk-for-android/7-4/api/simulscan) by creating its template from the [Template Builder](https://simulscan.zebra.com).
 
 
-##Important Programming Tips##
+##Important Programming Tips
 
-1. It is required to do the following changes in the application's AndroidManifest.xml:  
+1. Perform the following changes in the application's `AndroidManifest.xml` file:  
   
-    >Note:
-    >* Include the permission for EMDK:  
-    
+		//Include the permission for EMDK:      
         :::xml
         <uses-permission android:name="com.symbol.emdk.permission.EMDK"/>
 		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     
-	>Note:
-    >* Use the EMDK library:  
-    
+		//Use the EMDK library:      
         :::xml
         <uses-library android:name="com.symbol.emdk"/>
   
-2. Installing the EMDK for Android application without deploying the EMDK runtime on the Symbol device will fail because of missing shared library on the device.
-
-3. Place the template in the SD Card before accessing it from the application.
+2. Place the template in the SD Card before accessing it from the application.
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

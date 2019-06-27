@@ -32,7 +32,7 @@ Start by creating a new Android Studio [project](/emdk-for-android/7-4/tutorial/
 
     ![img](../../images/MxCertManagerTutorialImages/certificate_keystore.jpg)
 
-4. Now, We have to add the feature to install our sample CA certificate on Symbol device. But, we need to make sure that before installing or uninstalling certificates, a keystore must exist. It means, we need to initialize Android Keystore on our Symbol device. When you initialize the Android keystore you create a new keystore replacing any previously existing one. You can choose to perform this action as a separate EMDK profile or include the Certificate Manager feature multiple times in one profile. We will use Certificate Manager feature multiple times with the same profile in this tutorial. This Certificate Manager feature will be used to initialize Android Keystore.
+4. Now we have to add the feature to install our sample CA certificate on Symbol device. But, we need to make sure that before installing or uninstalling certificates, a keystore must exist. It means, we need to initialize Android Keystore on our Symbol device. When you initialize the Android keystore you create a new keystore replacing any previously existing one. You can choose to perform this action as a separate EMDK profile or include the Certificate Manager feature multiple times in one profile. We will use Certificate Manager feature multiple times with the same profile in this tutorial. This Certificate Manager feature will be used to initialize Android Keystore.
 
 	Provide some name in the "Name" field (Ex. "MyKeystore"). The "Name" field is used to identify each feature, which is required when editing features programmatically. You can also keep the "Name" field empty.
 

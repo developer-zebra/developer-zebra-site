@@ -36,8 +36,11 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 * TC77 - Oreo
 * TC8300 - Oreo
 * VC80x - Oreo
-`* WT6000 - (OS support info to come)`
 
+<!-- 6/27/19- per eng, there will be no Nougat support for WT6000; device no longer supported by EMDK. 
+
+* WT6000 - (OS support info to come)
+ -->
 <!-- **Bold text** indicates support added after initial release; device refresh might be required. 
  -->
 #### Scanners and imagers
@@ -56,7 +59,14 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 
 ## New in v7.4 
 
-> **Support for Android 7.x Nougat has been dropped**. 
+#### Nougat Support Ends
+**EMDK-A 7.4 and higher can no longer target devices running Android 7.x Nougat or older, including the WT6000**. To target the WT6000 (which currently supports up to Nougat), please use an earlier version of EMDK.   
+
+#### FAQ Page
+EMDK-A 7.3 and 7.4 now present a page of [frequently asked questions](../../faq) that come into Zebra support departments. Answers are provided in the form of links to relevant guides, sample code or both. Access the page through the "FAQs" button in the EMDK-A tile [on the TechDocs main page](https://techdocs.zebra.com) or the "FAQs" tab at the top of any EMDK-A guide page. 
+
+#### SmartCradle API
+**EMDK-A 7.4 introduces the [Locking SmartCradle API](../../intents/cradle)** for the EC30, a set of intent-based interfaces for controlling the charging station of Zebra's latest small form-factor mobile computing device. 
 
 
 

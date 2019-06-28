@@ -13,7 +13,7 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
 * New Devices Supported:
   * Android 6.x (Marshmallow): ET50/ET55
   * Android 7.x (Nougat): WT6000, TC25
-  * Android 8.x (Oreo): ET51/ET56, TC20, MC9300, TC8300, EC30, L10AW 
+  * Android 8.x (Oreo): ET51/ET56, TC20, MC9300, TC8300, EC30, L10 Android 
 * **Disconnect Threshold Time** is removed from the Application Configuration screen and integrated with [Reporting Frequency](../config/#applicationconfiguration). 
 * Ability to upgrade server from previous version to current version without the need to reinstall.
 * Known issues fixed: 
@@ -39,7 +39,7 @@ Device Tracker is a centralized solution that tracks and finds misplaced devices
   <tr>
     <td style="text-align:center">Client</td>
     <td style="text-align:center">2.1</td>
-    <td style="text-align:left">• New devices supported: ET50/ET55, WT6000, TC25, ET51/ET56, TC20, MC9300, TC8300, EC30, L10AW <br>• Known issues fixed:<br>   1. During network congestion, when pressing the back button in the proximity screen it takes about 10 seconds to show a status message.<br>   2. When a user clicks on the play sound button before 5 minutes (reporting interval) has elapsed after marking a misplaced device as "To Be Found" in ZDVC console, the proper message is not displayed on the finding device. </td>
+    <td style="text-align:left">• New devices supported: ET50/ET55, WT6000, TC25, ET51/ET56, TC20, MC9300, TC8300, EC30, L10 Android <br>• Known issues fixed:<br>   1. During network congestion, when pressing the back button in the proximity screen it takes about 10 seconds to show a status message.<br>   2. When a user clicks on the play sound button before 5 minutes (reporting interval) has elapsed after marking a misplaced device as "To Be Found" in ZDVC console, the proper message is not displayed on the finding device. </td>
   </tr>
   <tr>
     <td style="text-align:center" rowspan="2">1.0</td>

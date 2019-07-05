@@ -89,7 +89,7 @@ For more information about approved languages or to download a localized operati
 * New **[RFID Input plugin](../input/rfid)** feature added to read RFID tags.
 * New **[Enterprise Keyboard Configuration](../utilities/ekb)** feature.
 * Added support for new **[DPM parameters](../input/barcode)**. DPM parameters also added to [SetConfig](../api/setconfig) API.
-* **UDI** is supported on [select Zebra devices](../input/barcode/#udidecoding) up to Android P (version 9.x) only.
+* **UDI** is supported on [selected Zebra devices](../input/barcode/#udidecoding) up to Android P (version 9.x) only.
 
 -----
 ## Recent Version History

@@ -33,8 +33,12 @@ Plug-ins extend DataWedge functionality to support device hardware, peripherals,
 
 **Input Plug-ins specify**:
 * Barcode scanners (laser, imager, camera, bluetooth scanner)
+* Data Capture Plus (DCP)
 * Magnetic Stripe Readers (MSR)
+* Radio-frequency Identification (RFID)
+* Serial port(s)
 * SimulScan hardware
+* Voice
 
 **Process Plug-ins specify**: 
 * Basic data formatting (append with keystrokes, prefix, suffix, etc.)

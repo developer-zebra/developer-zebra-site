@@ -32,8 +32,9 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), and Simulscan. New SEND_RESULT result code for multiple plugins. 
 * **DataWedge 7.2 -** Added new DotCode decoder support.
-* **DataWedge 7.3 -** Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
-* **DataWedge 7.4 -** Added new RFID Input feature and new Enterprise Keyboard Configuration feature.
+* **DataWedge 7.3 -** 
+	* Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
+	* Added new RFID Input feature and new Enterprise Keyboard Configuration feature.
 
 ### Function Prototype
 
@@ -123,7 +124,7 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 	  <li>3 - TID (tag identification)</li>
 	  <li>4 - EPC (electronic product code)</li>
 	 </ul>
- * `rfid_session` [string]:
+ * `rfid_session` [string] - configures the session to read. This is one of the singulation controls in RFID:
   <ul>
 	 	<li>0 - Session 0</li>
 	  <li>1 - Session 1 (default)</li>

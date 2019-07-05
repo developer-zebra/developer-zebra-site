@@ -2,12 +2,12 @@
 title: RFID Input
 layout: guide.html
 product: DataWedge
-productversion: '7.4'
+productversion: '7.3'
 ---
 
 ## Overview
 
-**Radio-frequency identification (RFID) Input** acquires data from RFID tags using RFID radio-integrated Zebra mobile computers. Currently this feature is available on MC3300R only. The type of RFID tags that can be read is dependent on what is supported by the RFID reader on the device. RFID is another input source to DataWedge - data delivery is similar to other input sources such as Barcode and MSR (Magnetic-stripe Reader). The data acquired is processed and formatted according to the [Basic Data Formatting (BDF)](../../process/bdf) and [Advanced Data Formatting (ADF)](../../process/adf) options located in the **Keystroke output** section of the profile. 
+**Radio-frequency identification (RFID) Input** acquires data from RFID tags using RFID radio integrated Zebra mobile computers. Currently this feature is available in MC3300R only. The type of RFID tags that can be read is dependent on what is supported by the RFID reader on the device. RFID is another input source to DataWedge - data delivery is similar to other input sources such as Barcode and MSR (Magnetic-stripe Reader). The data acquired is processed and formatted according to the [Basic Data Formatting (BDF)](../../process/bdf) and [Advanced Data Formatting (ADF)](../../process/adf) options located in the **Keystroke output** section of the profile. 
 
 > **Important:** For instructions on initial setup, refer to "Setting Up the MC300R" section of the [MC3300R Integrator Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/mobile-computers/mc33/mc3300R-ig-en.pdf).
 

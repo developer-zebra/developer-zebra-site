@@ -14,6 +14,7 @@ Gets the `PARAM_LIST` settings in the specified Profile, returned as a set of va
 * **DataWedge 6.8 -** Added support for ADF settings
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** Added support for configurations: full profile, Data Capture Plus (DCP), Magnetic Stripe Reader (MSR), Internet Protocol (IP), Simulscan 
+* **DataWedge 7.3 -** Added support for new RFID Input feature and new Enterprise Keyboard Configuration feature.
 
 ### Function Prototype
 
@@ -617,6 +618,60 @@ Error messages are logged for invalid actions and parameters.
 		}
 	};
 
+### GET RFID input configuration
+
+	private void getIntentConfigRFID() { 
+	        Bundle bMain = new Bundle(); 
+	        bMain.putString("PROFILE_NAME", "SampleConfigApi"); 
+	        Bundle bConfig = new Bundle(); 
+	        ArrayList<String> pluginName = new ArrayList<>(); 
+	        pluginName.add("RFID"); 
+	 
+	        bConfig.putStringArrayList("PLUGIN_NAME", pluginName); 
+	        bMain.putBundle("PLUGIN_CONFIG", bConfig); 
+	 
+	        Intent i = new Intent(); 
+	        i.setAction("com.symbol.datawedge.api.ACTION"); 
+	        i.putExtra("com.symbol.datawedge.api.GET_CONFIG", bMain); 
+	        this.sendBroadcast(i); 
+	    } 
+	 
+	// BroadcastReceiver to handle incoming data 
+	 
+	    private BroadcastReceiver reciveResulyBroadcast = new BroadcastReceiver(){ 
+	 
+	        @Override 
+	        public void onReceive(Context context, Intent intent) { 
+	            if (intent.hasExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG")) { 
+	                Bundle result = intent.getBundleExtra("com.symbol.datawedge.api.RESULT_GET_CONFIG"); 
+	                Set<String> keys = result.keySet(); 
+	                for (String key : keys) { ; 
+	                    if (!key.equalsIgnoreCase("PLUGIN_CONFIG")) { 
+	                        Log.d("DWScannerConfig", "DWGetConfig::level-1: " + key + " : " + result.getString(key)); 
+	                    } else { 
+	                        ArrayList<Bundle> bundleArrayList = result.getParcelableArrayList("PLUGIN_CONFIG"); 
+	                        for (Bundle configBundle : bundleArrayList) { 
+	                            Set<String> keys2 = configBundle.keySet(); 
+	                            for (String key2 : keys2) { 
+	                                if (!key2.equalsIgnoreCase("PARAM_LIST")) { 
+	                                } else { 
+	                                    Bundle params = configBundle.getBundle("PARAM_LIST"); 
+	                                    Set<String> keys3 = params.keySet(); 
+	 
+	                                    String configs =intentData.getText()+"\n\n\n" +configBundle.getString("PLUGIN_NAME")+"\n"; 
+	                                    for (String key3 : keys3) { 
+	                                        configs+= key3+"="+params.getString(key3)+"\n"; 
+	                                    } 
+	 
+	                                    intentData.setText(configs); 
+	                                } 
+	                            } 
+	                        } 
+	                    } 
+	                } 
+	            } 
+	        } 
+		}
 
 ### Get SERIAL input configuration
 

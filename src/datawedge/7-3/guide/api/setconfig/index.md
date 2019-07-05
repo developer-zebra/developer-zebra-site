@@ -32,7 +32,9 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
 * **DataWedge 7.2 -** Added new DotCode decoder support.
-* **DataWedge 7.3 -** Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
+* **DataWedge 7.3 -** 
+	* Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
+	* Added new RFID Input feature and new Enterprise Keyboard Configuration feature.
 
 ### Function Prototype
 
@@ -73,6 +75,7 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
  * **SERIAL** input
  * **DCP** (Data Capture Plus) input
  * **MSR** (Magnetic Stripe Reader) input
+ * **RFID** (Radio-frequency Identification) input
  * **SIMULSCAN** input
  * **VOICE** input
  * **BDF** (basic data formatting) processing
@@ -109,6 +112,35 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
  <br>
  If set to “true”, the parameter `scanner_selection_by_identifier` is ignored and the configuration is saved as a Global Scanner Configuration. If there is any previous configuration for any individual scanners, they will be replaced with the new global configuration. <br>
  If set to "false", the configuration will be saved for the individual selected scanner only. In the event the scanner selection is set to “Auto”, the current default scanner configuration is updated.
+
+* **RFID -** takes values as indicated below:
+ * `rfid_input_enabled` [string] - true/false
+ * `rfid_beeper_enable` [string] - true/false
+ * `rfid_led_enable` [string] - true/false
+ * `rfid_antenna_transmit_power` [string] - 5 to 30
+ * `rfid_memory_bank` [string]:
+   <ul>
+	 	<li>0 - None (default)</li>
+	  <li>1 - User</li>
+	  <li>2 - Reserved</li>
+	  <li>3 - TID (tag identification)</li>
+	  <li>4 - EPC (electronic product code)</li>
+	 </ul>
+ * `rfid_session` [string] - configures the session to read. This is one of the singulation controls in RFID:
+  <ul>
+	 	<li>0 - Session 0</li>
+	  <li>1 - Session 1 (default)</li>
+	  <li>2 - Session 2</li>
+	  <li>3 - Session 3</li>
+	</ul>
+ * `rfid_filter_duplicate_tags` [string] - true/false
+ * `rfid_hardware_trigger_enabled` [string] - true/false
+ * `rfid_tag_read_duration` [string] - 10 to 60000 (in ms)
+ * `rfid_trigger_mode` [string]:
+   <ul>
+	 	<li>0 - Immediate (default)</li>
+	  <li>1 - Continuous</li>
+	 </ul>
 
 * **SERIAL -** takes values as indicated below: 
 <br>
@@ -1664,6 +1696,65 @@ See **UDI Data Output** in [IP Output](../../output/ip#udidataoutput) or [Keystr
 		i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain);
 
 		this.sendBroadcast(i);
+
+### Set RFID input configuration
+
+	private void createProfile() { 
+	 
+	        // Create bundle for profile configuration 
+	        Bundle setConfigBundle = new Bundle(); 
+	        setConfigBundle.putString("PROFILE_NAME","SampleConfigApi"); 
+	        setConfigBundle.putString("PROFILE_ENABLED", "true"); 
+	        setConfigBundle.putString("CONFIG_MODE","CREATE_IF_NOT_EXIST"); 
+	        setConfigBundle.putString("RESET_CONFIG", "false"); 
+	 
+	        // Associate profile with this app 
+	        Bundle appConfig = new Bundle(); 
+	        appConfig.putString("PACKAGE_NAME", getPackageName()); 
+	        appConfig.putStringArray("ACTIVITY_LIST", new String[]{"*"}); 
+	        setConfigBundle.putParcelableArray("APP_LIST", new Bundle[]{appConfig}); 
+	        setConfigBundle.remove("PLUGIN_CONFIG"); 
+	 
+	        // Set RFID configuration 
+	        Bundle rfidConfigParamList  = new Bundle(); 
+	        rfidConfigParamList.putString("rfid_input_enabled", "true"); 
+	        rfidConfigParamList.putString("rfid_beeper_enable", "true"); 
+	        rfidConfigParamList.putString("rfid_led_enable", "true"); 
+	        rfidConfigParamList.putString("rfid_antenna_transmit_power", "30"); 
+	        rfidConfigParamList.putString("rfid_memory_bank", "2"); 
+	        rfidConfigParamList.putString("rfid_session", "1"); 
+	        rfidConfigParamList.putString("rfid_trigger_mode", "1"); 
+	        rfidConfigParamList.putString("rfid_filter_duplicate_tags", "true"); 
+	        rfidConfigParamList.putString("rfid_hardware_trigger_enabled", "true"); 
+	        rfidConfigParamList.putString("rfid_tag_read_duration", "250"); 
+	        Bundle rfidConfigBundle = new Bundle(); 
+	        rfidConfigBundle.putString("PLUGIN_NAME", "RFID"); 
+	        rfidConfigBundle.putString("RESET_CONFIG", "true"); 
+	        rfidConfigBundle.putBundle("PARAM_LIST", rfidConfigParamList); 
+	 
+	        // Configure intent output for captured data to be sent to this app 
+	        Bundle intentConfig = new Bundle(); 
+	        intentConfig.putString("PLUGIN_NAME", "INTENT"); 
+	        intentConfig.putString("RESET_CONFIG", "true"); 
+	        Bundle intentProps = new Bundle(); 
+	        intentProps.putString("intent_output_enabled", "true"); 
+	        intentProps.putString("intent_action", "com.zebra.rfid.rwdemo.RWDEMO"); 
+	        intentProps.putString("intent_category", "android.intent.category.DEFAULT"); 
+	        intentProps.putString("intent_delivery", "0"); 
+	        intentConfig.putBundle("PARAM_LIST", intentProps); 
+	 
+	        // Add configurations into a collection 
+	        ArrayList<Parcelable> configBundles = new ArrayList<>(); 
+	        configBundles.add(rfidConfigBundle); 
+	        configBundles.add(intentConfig); 
+	        setConfigBundle.putParcelableArrayList("PLUGIN_CONFIG", configBundles); 
+	 
+	        // Broadcast the intent 
+	        Intent intent  = new Intent(); 
+	        intent.setAction("com.symbol.datawedge.api.ACTION"); 
+	        intent.putExtra("com.symbol.datawedge.api.SET_CONFIG", setConfigBundle); 
+	        sendBroadcast(intent);
+	} 
 
 ### Set serial input configuration
 

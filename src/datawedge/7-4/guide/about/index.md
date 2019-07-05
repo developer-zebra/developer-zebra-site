@@ -86,7 +86,6 @@ For more information about approved languages or to download a localized operati
 ## New in DataWedge 7.4
 * **DataWedge 7.4 and later versions only support Android Oreo (v8.0) and later.**
 * Introduced **voice capture activation by PTT** (push-to-talk) button with new [Data capture start option](../input/barcode).
-* New **[RFID Input plugin](../input/rfid)** feature added to read RFID tags.
 * New **[Enterprise Keyboard Configuration](../utilities/ekb)** feature.
 * Added support for new **[DPM parameters](../input/barcode)**. DPM parameters also added to [SetConfig](../api/setconfig) API.
 * **UDI** is supported on [selected Zebra devices](../input/barcode/#udidecoding) up to Android P (version 9.x) only.
@@ -104,6 +103,7 @@ For more information about approved languages or to download a localized operati
 * **[Rear camera support](../input/barcode)** added for Digimarc decoding.
 * **[DS8178 Bluetooth Scanner](../input/barcode)** now supported.
 * New **[Febraban decoder parameter](../input/barcode)** supported for I2of5.
+* **New in DataWedge 7.3.22:** New **[RFID Input plugin](../input/rfid)** feature added to read RFID tags.
 
 ### Added in DataWedge 7.2
 * New **[Decode Screen Notification](../input/barcode/#scanparams)** parameters added for deocde screen time and translucency level.

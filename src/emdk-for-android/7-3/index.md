@@ -31,6 +31,8 @@ menu:
       url: /emdk-for-android/7-3/guide/programming-guides
     - title: Profile Manager
       url: /emdk-for-android/7-3/guide/profile-manager-guides
+    - title: FAQs
+      url: /emdk-for-android/7-3/faq
     - title: APIs
       url: /emdk-for-android/7-3/apimenu
     - icon: fa fa-comments-o

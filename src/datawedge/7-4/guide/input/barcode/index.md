@@ -1015,7 +1015,7 @@ _**Note:** Zebra does not recommend changing the Image Capture Mode parameter wh
 _**Notes**:_
 
 * _Performance might vary on some devices if Hardware or Software Picklist modes are set._
-* _If using Multi-barcode mode, see important behavior notes below._ 
+* _If using MultiBarcode mode, see important behavior notes below._ 
 
 **Poor Quality Decode Effort -** Permits selection of enhancement modes for decoding barcodes of poor or degraded quality. Available options:
 
@@ -1044,7 +1044,7 @@ _**Note:** Same performance from Effort Level 1 to Effort Level 3._
 
 * **Static Reticle -** Enables the viewfinder and a red reticle (cross-hairs) in the center of the screen to aid in positioning the barcode for scanning. **This parameter is supported only when the Camera is used for scanning**.
 
-**Scanning Modes -** Used to select between Single (normal), UDI and Multi-barcode modes. UDI mode acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). Multi-barcode mode acquires from 2-10 barcodes with each scan as specified in the Multi-barcode params panel. **Default=5**.
+**Scanning Modes -** Used to select between Single (normal), UDI and Basic MultiBarcode modes. [UDI mode]()./#udidecoding) acquires multiple simultaneous inputs as specified in the selected Universal Device Identifier UDI parameter(s). [Basic MultiBarcode mode] acquires 2-10 barcodes with each scan as specified in the Basic MultiBarcode params panel. **Default=5**.
 
 **Zoom -** Required for decoding DotCode barcodes. User needs to set Camera Zoom value to 2 on the following devices: MC33, TC51/TC56, TC70x/TC75x, VC80x, TC52/TC57, TC72/TC77, PS20. If Camera Zoom is set to any value other than 2 on these devices, it can negatively impact the decoding of specific DotCode barcodes. Parameter values: 1 - 8. **Default=1**.
 
@@ -1079,17 +1079,28 @@ _When UDI scanning mode is enabled (as above)_...
 
 -----
 
-### Multi-barcode Decoding
+### MultiBarcode Decoding
+MultiBarcode acquires multiple barcodes in a single scan session and delivers the data once the specified number of barcodes per scan is reached. It is enabled through **Scanning Modes** within **Reader Params**, per above.
 
+<img style="height:350px" src="multibarcode.png"/>
+_Access to Basic MultiBarcode params_
+<br><br>
+<img style="height:350px" src="multibarcode_params.png"/>
+_Basic MultiBarcode params_
+
+Basic MultiBarcode params:
+* **Number of barcodes per scan-** Specify the number of barcodes to be decoded with each scan session before sending the scanned data. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 10._
+* **Instant Reporting -** If enabled, returns each barcode as it is decoded immediately without waiting for the specified number of barcodes to be scanned. If disabled (default), the decoded data is returned as a single entity after the amount of barcodes scanned reaches the specified **Number of barcodes per scan**.
+<!-->
 <img style="height:350px" src="dw_6.7_multibarcode.png"/>
 _When Multi-barcode scanning mode is enabled (as above)_... 
 <img style="height:350px" src="dw_6.7_multibarcode_param_embed.png"/>
-..._specify the number of barcodes to be decoded with each scan_.  
+..._specify the number of barcodes to be decoded with each scan_.  -->
 
-**Multi-barcode Notes**
+**MultiBarcode Notes**
 
 * **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke/#multibarcodedataoutput). 
-* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes (from 2-10) specified in the Multi-barcode params panel. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
+* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes (from 2-10) specified in the Basic MultiBarcode params panel. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
 * **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
 * **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a Multi-barcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
 * **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
@@ -1173,7 +1184,7 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 **Other DataWedge Input Options**:
 
 * **[Mag-stripe Reader](../msr) -** credit/debit and identity cards
-* **[SimulScan](../simulscan) -** document capture and multi-barcode scanning 
+* **[SimulScan](../simulscan) -** document capture and multibarcode scanning 
 
 **Related guides**:
 

@@ -93,6 +93,7 @@ For more information about approved languages or to download a localized operati
 * **[Rear camera support](../input/barcode)** added for Digimarc decoding.
 * **[DS8178 Bluetooth Scanner](../input/barcode)** now supported.
 * New **[Febraban decoder parameter](../input/barcode)** supported for I2of5.
+* New **[Instant Reporting parameter](../input/barcode)** for MultiBarcode scanning mode.
 
 -----
 ## Recent Version History

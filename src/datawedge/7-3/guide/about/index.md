@@ -23,6 +23,7 @@ The version of DataWedge documented in this guide provides the following primary
 * Scan and process all [major barcode symbologies](../input/barcode/#decoderselection)
 * Use existing apps to [acquire barcodes](../input/barcode), images, text, phone numbers, mag-stripe and other data
 * Set DataWedge to [acquire scanned data for one or multiple apps](../setup)
+* Read RFID (radio-frequency identification) tags with [RFID Input](../input/rfid)
 * Use voice capture to acquire data with [Voice Input](../input/voice)
 * Acquire multiple types of data in a single scan [using SimulScan](../input/simulscan) 
 * Designate device screen areas as scan triggers using [Data Capture Plus](../input/dcp)
@@ -94,6 +95,7 @@ For more information about approved languages or to download a localized operati
 * **[DS8178 Bluetooth Scanner](../input/barcode)** now supported.
 * New **[Febraban decoder parameter](../input/barcode)** supported for I2of5.
 * New **[Instant Reporting parameter](../input/barcode)** for MultiBarcode scanning mode.
+* **New in DataWedge 7.3.22:** New **[RFID Input plugin](../input/rfid)** feature to read RFID tags.
 
 -----
 ## Recent Version History

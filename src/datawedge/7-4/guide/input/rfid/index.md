@@ -7,9 +7,9 @@ productversion: '7.4'
 
 ## Overview
 
-**Radio-frequency identification (RFID) Input** acquires data from RFID tags using RFID radio-integrated Zebra mobile computers. Currently this feature is available on MC3300R only. The type of RFID tags that can be read is dependent on what is supported by the RFID reader on the device. RFID is another input source to DataWedge - data delivery is similar to other input sources such as Barcode and MSR (Magnetic-stripe Reader). The data acquired is processed and formatted according to the [Basic Data Formatting (BDF)](../../process/bdf) and [Advanced Data Formatting (ADF)](../../process/adf) options located in the **Keystroke output** section of the profile. 
+**Radio-frequency identification (RFID) Input** acquires data from RFID tags using integrated RFID Zebra mobile computers. _Currently this feature is supported on MC3300R only._ RFID is another input source to DataWedge - data delivery is similar to other input sources such as Barcode and MSR (Magnetic-stripe Reader). The data acquired is processed and formatted according to the [Basic Data Formatting (BDF)](../../process/bdf) and [Advanced Data Formatting (ADF)](../../process/adf) options located in the **Keystroke output** section of the profile. 
 
-> **Important:** For instructions on initial setup, refer to "Setting Up the MC300R" section of the [MC3300R Integrator Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/mobile-computers/mc33/mc3300R-ig-en.pdf).
+> **Important:** For instructions on initial setup, refer to "Setting Up the MC3300R" section from [MC3300R Integrator Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/mobile-computers/mc33/mc3300R-ig-en.pdf).
 
 ## RFID Input
 **RFID Input** from the DataWedge profile provides options to toggle RFID input, specify the trigger mode and configure RFID reader settings.
@@ -30,26 +30,27 @@ productversion: '7.4'
   * **EPC -** stores the EPC code with a minimum of 96 bits of memory.  
   * **User -** (optional) extended memory to store more information. This can have various sizes, usually 512 bits and up to 8K of memory.  Can be used for additional data that is not suitable or does not fit into the EPC memory, such as temperature or expiration date. 
   * **TID (tag identification) -** stores the unique tag identifier from the manufacturer, which typically cannot be changed. 
-
-**Trigger mode –** select the mode to activate the RFID reader. Supported values: 
+* **Session -** configure session to read. This is one of the singulation controls in RFID. Supported values:
+  * Session 0
+  * Session 1 (default)
+  * Session 2
+  * Session 3
+* **Trigger mode –** select the mode to activate the RFID reader. Supported values: 
   * **Immediate (default) –** tag reading takes place based on when the trigger is pressed.
   * **Continuous-** continually reads tags after pressing the trigger once. Press the trigger again to terminate tag reading. 
-
-**Feedback –** configure audio or visual feedback from an RFID tag read. Options: 
+* **Feedback –** configure audio or visual feedback from an RFID tag read. Options: 
   * **Beeper -** audio feedback
   * **LED -** visual feedback
 
 ##Key mapping
-MC3300R device consists of multiple triggers, all utilized for Barcode and SimulScan features by default. In order to use a hardware trigger for an RFID action, it needs to be mapped to RFID. Steps to follow:
+MC3300R consists of multiple triggers, all utilized for Barcode and SimulScan features by default. In order to use the hardware trigger for an RFID action, it needs to be mapped to RFID. Steps to follow:
 
-**Manual Instructions**
+**Manual Instructions:**
 1. Open Android Settings. 
 2. Tap Key Programmer.
 3. Tap SYMBOL_RFID. 
 
-**CSP (Configuration Service Provider) Instructions:**
-<br>
-With CSP, use StageNow to update key mapping during device staging. Refer to [KeyMapping Manager](/stagenow/latest/csp/keymap) for more information.
+**CSP (Configuration Service Provider) Instructions:** With CSP, use StageNow for key mapping to be updated during device staging. Refer to [KeyMapping Manager](/stagenow/latest/csp/keymap) for more information.
 
 ## Data
 Important notes regarding RFID data reading:

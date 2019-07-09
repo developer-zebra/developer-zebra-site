@@ -38,7 +38,7 @@ Available actions in this sample:
   * scan data 
   * decoder type 
 
->**Note**: This application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs.
+>**Note**: This application is intended for demonstration purposes only. It is provided as-is without guarantee or warranty and may be modified to suit individual needs. The appearance of sample app screens can vary by sample app version, Android version, and screen size.
 
 ##APIs Used
 

@@ -7,44 +7,51 @@ productversion: '7.4'
 
 ## Overview
 
-EMDK for Android 7.4 (and later) contains interfaces for controlling the Locking SmartCradle, which is used for charging and securing Zebra EC30 ultra-compact mobile computing devices. Current interfaces provide programmatic access to the following SmartCradle functions: 
+EMDK for Android 7.4 (and later) contains interfaces for controlling the EC30 Locking SmartCradle (model CRD-EC30-10SLC1-01), a 10-slot cradle used for securing, charging and dispensing Zebra EC30 ultra-compact enterprise companion devices. Interfaces provide programmatic access to the following SmartCradle functions: 
 
-* **Unlock** a device from its charging bay
-* **Illuminate a bay LED** to shine solid or to "blink"
+* **Unlock** a device from its charging slot
+* **Illuminate a slot LED** to shine solid or to "blink"
 * **Set LED color** to red, green or blue
 * **Set Timeout** (in sec.) for expiration of an Action
 
+**API not supported on Zebra charge-only cradles**. 
+
 ### Requirements
 
-Use of SmartCradle intent APIs requires experience with Java and with Android app development and intent usage. 
+Use of SmartCradle intent APIs requires experience with Java and with Android app development and usage of Android intents. 
 
-**Supported cradle(s)**: 
+**Cradle(s) Supported**: 
+* EC30 10-slot Locking SmartCradle (model CRD-EC30-10SLC1-01)
 
-* EC30 Locking SmartCradle 
+**Cradle(s) <u>NOT</u> Supported**: 
+* EC30 2-slot Charge ShareCradle (model CRD-EC30-2SCHG1-01)
+* EC30 10-slot Charge ShareCradle (model CRD-EC30-10SC1-01)
 
 -----
 
 ## SmartCradle Intent Action
 
-The API currently implements a single intent, `com.symbol.cradle.api.ACTION_DO`. Individual cradle Actions are executed as intent extras. Supported Actions are listed below. 
+The API currently implements a single intent with individual cradle Actions executed as intent extras. Supported Actions are listed below. 
+
+### Cradle Intent
+
+`com.symbol.cradle.api.ACTION_DO`
 
 ### Cradle Actions
 
-`com.symbol.cradle.api.ACTION_DO`:
-
-#### Unlock cradle bay 
+#### Unlock Cradle Slot 
 **Extra**: "UNLOCK"<br>
 **Type**: Bundle<br>
 **Parameters**: LED, Timeout<br>
 * **LED**: Boolean<br>
- * **True**: Unlock cradle with LED<br>
- * **False: Unlock cradle without LED (default)**<br>
+ * **True**: Unlock cradle slot and flash its LED<br>
+ * **False: Unlock cradle without flashing LED (default)**<br>
 * **Timeout**: Integer<br>
  * **Range**: 5&ndash;20 (seconds)<br>
  * **Step value**: 1<br>
- * **Default**: 0<br>
+ * **Default: 0**<br>
 
-#### LED Blink<br>
+#### Blink (flash) LED
 **Extra**: "BLINK"<br>
 **Type**: Bundle<br>
 **Parameters**: Color, Solid, Timeout<br>
@@ -68,7 +75,7 @@ The API currently implements a single intent, `com.symbol.cradle.api.ACTION_DO`.
 **Extra**: "CALLBACK_RESPONSE"<br>
 **Type**: Pending intent<br>
 **Function**: Indicates status of UNBLOCK, BLINK intent command being sent (NOT of the client ability to execute)<br>
-**"RESULT_CODES"**: "SUCCESS" or FAILURE"<br>
+**"RESULT_CODE"**: "SUCCESS" or FAILURE"<br>
 **"RESULT_MESSAGE"**: "INVALID_PARAMETERS", "DEVICE_NOT_READY", etc.<br>
 
 -----

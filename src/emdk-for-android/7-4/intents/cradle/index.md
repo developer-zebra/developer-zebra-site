@@ -16,18 +16,18 @@ EMDK for Android 7.4 (and later) contains interfaces for controlling the EC30 Lo
 * **Set Timeout** (in sec.) for expiration of an Action
 
 #### Notes
-* Device slots lock automatically when a device is inserted   
-* The SmartCradle operates with or without a user kiosk
+* **Device slots lock automatically** when a device is inserted   
+* **Operates with or without a kiosk**
 * **API NOT supported on ShareCradles** (see below)
 
 ### Requirements
 
 Use of SmartCradle intent APIs requires experience with Java and with Android app development and usage of Android intents. 
 
-**Cradle(s) Supported**: 
+**Supported Cradle(s)**: 
 * EC30 10-slot Locking SmartCradle (model CRD-EC30-10SLC1-01)
 
-**Cradle(s) <u>NOT</u> Supported**: 
+**<u>NOT</u> Supported**: 
 * EC30 2-slot Charge ShareCradle (model CRD-EC30-2SCHG1-01)
 * EC30 10-slot Charge ShareCradle (model CRD-EC30-10SC1-01)
 
@@ -42,6 +42,7 @@ The API currently implements a single intent with individual cradle Actions exec
 `com.symbol.cradle.api.ACTION_DO`
 
 ### Cradle Actions
+Actions are implemented as intent extras. 
 
 #### Unlock Cradle Slot 
 **Extra**: "UNLOCK"<br>

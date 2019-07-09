@@ -7,14 +7,18 @@ productversion: '7.4'
 
 ## Overview
 
-EMDK for Android 7.4 (and later) contains interfaces for controlling the EC30 Locking SmartCradle (model CRD-EC30-10SLC1-01), a 10-slot cradle used for securing, charging and dispensing Zebra EC30 ultra-compact enterprise companion devices. Interfaces provide programmatic access to the following SmartCradle functions: 
+EMDK for Android 7.4 (and later) contains interfaces for controlling the EC30 Locking SmartCradle (model CRD-EC30-10SLC1-01), a 10-slot cradle used for securing, charging and dispensing Zebra EC30 ultra-compact enterprise companion devices. Interfaces provide programmatic access to the SmartCradle functions listed below. 
 
+#### Supported Actions
 * **Unlock** a device from its charging slot
 * **Illuminate a slot LED** to shine solid or to "blink"
 * **Set LED color** to red, green or blue
 * **Set Timeout** (in sec.) for expiration of an Action
 
-**API not supported on Zebra charge-only cradles**. 
+#### Notes
+* Device slots lock automatically when a device is inserted   
+* The SmartCradle operates with or without a user kiosk
+* **API NOT supported on ShareCradles** (see below)
 
 ### Requirements
 
@@ -68,13 +72,15 @@ The API currently implements a single intent with individual cradle Actions exec
  * **Step value**: 1<br>
  * **Default: 0**<br>
 
+**Note: The cradle LED blink rate is NOT programmable**.
+
 ### Return Values
 
 #### Callback
 
 **Extra**: "CALLBACK_RESPONSE"<br>
 **Type**: Pending intent<br>
-**Function**: Indicates status of UNBLOCK, BLINK intent command being sent (NOT of the client ability to execute)<br>
+**Function**: Indicates status of UNLOCK, BLINK intent command being sent (NOT of the client ability to execute)<br>
 **"RESULT_CODE"**: "SUCCESS" or FAILURE"<br>
 **"RESULT_MESSAGE"**: "INVALID_PARAMETERS", "DEVICE_NOT_READY", etc.<br>
 

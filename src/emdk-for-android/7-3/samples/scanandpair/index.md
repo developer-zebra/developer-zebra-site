@@ -27,6 +27,8 @@ productversion: '7.3'
 ##Overview
 This sample app shows how the Scan and Pair API is used to programmatically pair two bluetooth devices.
 
+>**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
+
 ##Prerequisites
 
 This sample requires two Android Bluetooth devices, one of which that supports EMDK. Also required is a barcode that contains the Bluetooth MAC address of the Bluetooth device (not running the EMDK app) to pair with.

@@ -39,8 +39,6 @@ This sample demonstrates the EMDK Serial Communication API to enable support for
 
 For more information about setting up the EMDK please see the [EMDK Setup Guide](/emdk-for-android/7-3/guide/setup).
 
-
-
 ##Requirements
 Android API 22 (or higher) must be installed via the SDK Manager before attempting to load this sample.
 
@@ -49,6 +47,8 @@ The following guide will walk you through setting up the EMDK samples in your ID
 
 * [Android Studio](/emdk-for-android/7-3/guide/emdksamples_androidstudio)
 )
+
+>**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
 
 ##Using This Sample
 1. With the Snap on DEX cable attached, the application should look like the following when it starts.  

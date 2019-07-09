@@ -1,11 +1,11 @@
 ---
-title: Using the EMDK Samples with Android Studio
+title: Sample App Set-up Guide
 layout: sample.html
 product: EMDK For Android
 productversion: '7.4'
 ---
 
-##Loading the Sample Application
+##Loading a Sample App
 
 1. Choose a sample and click the **See Details** button.
     ![img](select_a_sample.png)

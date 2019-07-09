@@ -29,10 +29,10 @@ This sample app shows how the Scan and Pair API is used to programmatically pair
 
 ##Requirements
 * Android Studio on a Mac or Windows PC with Android API 22 (or higher) installed
-* Two (2) Zebra Android devices, at least one of which is on the [supported devices list](../guide/about/#supporteddevices) 
-* A barcode that contains the Bluetooth MAC address of the second Zebra device (not running the EMDK app, to pair with)
+* Two (2) Zebra Android devices, at least one of which is among the [supported devices](../../guide/about/#supporteddevices)
+* A barcode that contains the Bluetooth MAC address of the second Zebra device (to pair with)
 
-##Using This Sample
+##Using Sample App
 
 >**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
 

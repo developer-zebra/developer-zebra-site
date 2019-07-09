@@ -49,6 +49,8 @@ The following guide will walk you through setting up the EMDK samples in your ID
 * [Android Studio](/emdk-for-android/7-4/guide/emdksamples_androidstudio)
 )
 
+>**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
+
 ##Using This Sample
 1. With the Snap on DEX cable attached, the application should look like the following when it starts.  
   ![img](3.png)  

@@ -36,8 +36,6 @@ The available actions are:
 
 This sample application will allow you to Add/Replace named APN and remove existing named APN.
 
-
-
 ##Requirements
 Android API 22 (or higher) must be installed via the SDK Manager before attempting to load this sample.
 
@@ -46,6 +44,7 @@ The following guide will walk you through setting up the EMDK samples in your ID
 
 * [Android Studio](/emdk-for-android/7-4/guide/emdksamples_androidstudio)
 
+>**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
 
 ##Using This Sample
 1. When the application starts it should look like the following.

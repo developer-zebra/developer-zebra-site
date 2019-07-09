@@ -44,6 +44,7 @@ The following guide will walk you through setting up the EMDK samples in your ID
 
 * [Android Studio](../../guide/emdksamples_androidstudio)
 
+>**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
 
 ##Using This Sample
 

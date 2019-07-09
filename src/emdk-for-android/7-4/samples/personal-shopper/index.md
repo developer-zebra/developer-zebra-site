@@ -31,8 +31,6 @@ productversion: '7.4'
 ##Overview
 This sample application will show how the Personal Shopper APIs can be used to interact with the MC18 Cradle programmatically.
 
-
-
 ##Requirements
 Android API 22 (or higher) must be installed via the SDK Manager before attempting to load this sample.
 
@@ -40,6 +38,8 @@ Android API 22 (or higher) must be installed via the SDK Manager before attempti
 The following guide will walk you through setting up the EMDK samples in your IDE.
 
 * [Android Studio](/emdk-for-android/7-4/guide/emdksamples_androidstudio)
+
+>**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
 
 ##Using This Sample
 

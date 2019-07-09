@@ -947,7 +947,7 @@ _**Note**: Higher marginless levels will increase decoding times and the risk of
 
 * **Presentation -** Automatically activates the scanner and starts scanning immediately when a barcode is presented in its field of view, without any trigger press. 
 
-* **Continuous Read -** A press and hold of the scan trigger will continuously scan barcodes. **Not supported with the Zebra RS507 Bluetooth Ring Scanner**.
+* **Continuous Read -** A press and hold of the scan trigger continuously scans barcodes. The same barcode can be scanned multiple times.  **Not supported with the Zebra RS507 Bluetooth Ring Scanner**.
 
 * **Press and Sustain -** Starts the scan beam when the trigger is pressed and continues the decode session until the Beam Timer is expired, barcode is decoded or read is canceled. **Scan beam is not stopped when the trigger is released**. This avoids unexpected cancellations of a read by subsequently pressing the trigger button of the device; subsequent trigger presses while the beam is ON have no effect. **Applies to internal imager on TC20/TC25 and RS6000/RS507 Bluetooth scanners connected to TC57/TC77 and PS20 devices**. 
 
@@ -1070,16 +1070,25 @@ _When UDI scanning mode is enabled (as above)_...
 -----
 
 ### MultiBarcode Decoding
-MultiBarcode acquires multiple barcodes in a single scan session and delivers the data once the specified number of barcodes per scan is reached. It is enabled through **Scanning Modes** within **Reader Params**, per above.
-<img style="height:350px" src="multibarcode.png"/>
-_Access to Basic MultiBarcode params_
-<br><br>
-<img style="height:350px" src="multibarcode_params.png"/>
-_Basic MultiBarcode params_
+MultiBarcode acquires multiple, unique barcodes in a single scan session and can deliver the data either immediately or after the specified number of barcodes per scan is reached. **Basic MultiBarcode** is enabled through **Scanning Modes** within **Reader Params**, per above.
+<table>
+ <tr>
+  <td>
+  <img style="height:350px" src="multibarcode.png"/>
+  </td>    
+  <td> &nbsp; &nbsp; &nbsp;
+  </td>
+  <td>
+  <img style="height:350px" src="multibarcode_params.png"/>
+  </td>
+ </tr>
+
+</table>
+<i>Access to Basic MultiBarcode params</i>
 
 Basic MultiBarcode params:
-* **Number of barcodes per scan-** Specify the number of barcodes to be decoded with each scan session before sending the scanned data. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 10._
-* **Instant Reporting -** If enabled, returns each barcode as it is decoded immediately without waiting for the specified number of barcodes to be scanned. If disabled (default), the decoded data is returned as a single entity after the amount of barcodes scanned reaches the specified **Number of barcodes per scan**.
+* **Number of barcodes per scan-** Specifies the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 10._
+* **Instant Reporting -** If enabled, returns each unique barcode immediately as it is decoded without waiting for the specified number of barcodes to be scanned. If disabled _(default)_, the decoded data is returned as a single entity after the amount of barcodes scanned reaches the specified **Number of barcodes per scan**.
 
 **MultiBarcode Notes**
 
@@ -1088,6 +1097,7 @@ Basic MultiBarcode params:
 * **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
 * **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a MultiBarcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
 * **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
+* **If both Continuous Read and Instant Reporting parameters are enabled, Instant Reporting** takes precedence over **Continuous Read,** which is ignored. Zebra recommends not to enable both parameters simultaneously. 
 
 -----
 

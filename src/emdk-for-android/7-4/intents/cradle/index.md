@@ -7,28 +7,28 @@ productversion: '7.4'
 
 ## Overview
 
-EMDK for Android 7.4 (and later) contains interfaces for controlling the EC30 Locking SmartCradle (model CRD-EC30-10SLC1-01), a 10-slot cradle used for securing, charging and individually dispensing Zebra EC30 ultra-compact enterprise companion devices. Interfaces provide programmatic, one-way communication from apps on EC30 devices to the SmartCradle for activating functions listed below. 
+EMDK for Android 7.4 (and later) contains interfaces for controlling the EC30 Locking SmartCradle (model CRD-EC30-10SLC1-01), a 10-slot cradle used for securing, charging and individually dispensing Zebra EC30 ultra-compact enterprise companion devices. Interfaces provide programmatic, one-way communication from apps on EC30 devices to the SmartCradle for activating the cradle functions listed below. 
 
-#### Supported Actions
+#### Supported Cradle Functions
 * **Unlock** a device from its individual charging slot
-* **Illuminate a slot LED** to shine solid or to "blink"
+* **Illuminate a slot's LED** to shine solid or to "blink"
 * **Set LED color** to red, green or blue
-* **Set Timeout** (in sec.) for expiration of an Action
+* **Set a Timeout** (in sec.) for expiration of an Action (i.e. Unlock)
 
 #### Notes
-* **Device slots lock automatically** when a device is inserted   
-* **Communications are one-way**; from device to cradle
+* **Device slots lock automatically** when a device is inserted
+* **Communications are one-way**; from device to cradle only
 * **Apps operate with or without a user kiosk**
-* **API NOT supported on ShareCradles** (see below)
+* **APIs NOT supported on ShareCradles** (see below)
 
 ### Requirements
 
-Use of SmartCradle intent APIs requires experience with Java and with Android app development and usage of Android intents. 
+Use of SmartCradle intent APIs requires experience with Java, with Android app development and with usage of Android intents. A supported cradle also is required. 
 
 **Supported Cradle(s)**: 
 * EC30 10-slot Locking SmartCradle (model CRD-EC30-10SLC1-01)
 
-**<u>NOT</u> Supported**: 
+**Cradles <u>NOT</u> Supported**: 
 * EC30 2-slot Charge ShareCradle (model CRD-EC30-2SCHG1-01)
 * EC30 10-slot Charge ShareCradle (model CRD-EC30-10SC1-01)
 
@@ -43,16 +43,16 @@ The API currently implements a single intent with individual cradle Actions exec
 `com.symbol.cradle.api.ACTION_DO`
 
 ### Cradle Actions
-Actions are implemented as intent extras. 
+Actions are implemented as intent extras. See [sample code](#samplecode) for syntax. 
 
 #### Unlock Cradle Slot 
 **Extra**: "UNLOCK"<br>
 **Type**: Bundle<br>
 **Parameters**: LED, Timeout<br>
-* **LED**: Boolean<br>
- * **True**: Unlock cradle slot and flash its LED<br>
- * **False: Unlock cradle without flashing LED (default)**<br>
-* **Timeout**: Integer<br>
+* **"LED"**: Boolean<br>
+ * **"true"**: Unlock cradle slot and flash its LED<br>
+ * **"false": Unlock cradle without flashing LED (default)**<br>
+* **"TIMEOUT"**: Integer<br>
  * **Range**: 5&ndash;20 (seconds)<br>
  * **Step value**: 1<br>
  * **Default: 0**<br>
@@ -61,15 +61,15 @@ Actions are implemented as intent extras.
 **Extra**: "BLINK"<br>
 **Type**: Bundle<br>
 **Parameters**: Color, Solid, Timeout<br>
-* **Color**: Integer<br>
+* **"COLOR"**: Integer<br>
  * **0 -Off (default)**<br> 
  * **1 -** Green<br>
  * **16 -** Red<br>
  * **17 -** Blue<br>
-* **Solid**: Boolean<br>
- * **True**: Solid LED<br>
- * **False: Blink LED (default)**<br>
-* **Timeout**: Integer<br>
+* **"SOLID"**: Boolean<br>
+ * **"true"**: Solid LED<br>
+ * **"false": Blink LED (default)**<br>
+* **"TIMEOUT"**: Integer<br>
  * **Range**: 0&ndash;120 (seconds)<br>
  * **Step value**: 1<br>
  * **Default: 0**<br>

@@ -1,4 +1,12 @@
-﻿# Transaction Steps Level
+﻿---
+title: OEMConfig Administrator's Guide
+layout: guide.html
+product: OEMConfig
+productversion: '1.0'
+---
+
+
+# Transaction Steps Level
 
 
 **Description:** 

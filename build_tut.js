@@ -224,6 +224,11 @@ var sitebuild = Metalsmith(__dirname)
 
 	}))
 
+    //OemConfig 1.0
+    .use(foldermenu({
+        folder: 'oemconfig/1-0',
+        automenu: true
+    }))
     //emdk for android 4.0
     .use(foldermenu({
         folder: 'emdk-for-android/4-0/api/',

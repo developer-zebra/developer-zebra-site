@@ -20,6 +20,11 @@ content-items:
     url: /emdk-for-android/7-4/guide/reference/refbatteryintent
   - type: section
     level: 4
+    title: EC30 Programmer's Guide
+    text: Application guidelines for the Zebra EC30 ultra-compact enterprise companion.
+    url: /emdk-for-android/7-4/guide/ec30_programming
+  - type: section
+    level: 4
     title: General Programming Practices
     text: This guide contains various EMDK for Android programming tips.
     url: /emdk-for-android/7-4/guide/programming_practices

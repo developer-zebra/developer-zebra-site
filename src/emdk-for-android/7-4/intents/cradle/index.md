@@ -7,17 +7,18 @@ productversion: '7.4'
 
 ## Overview
 
-EMDK for Android 7.4 (and later) contains interfaces for controlling the EC30 Locking SmartCradle (model CRD-EC30-10SLC1-01), a 10-slot cradle used for securing, charging and dispensing Zebra EC30 ultra-compact enterprise companion devices. Interfaces provide programmatic access to the SmartCradle functions listed below. 
+EMDK for Android 7.4 (and later) contains interfaces for controlling the EC30 Locking SmartCradle (model CRD-EC30-10SLC1-01), a 10-slot cradle used for securing, charging and individually dispensing Zebra EC30 ultra-compact enterprise companion devices. Interfaces provide programmatic, one-way communication from apps on EC30 devices to the SmartCradle for activating functions listed below. 
 
 #### Supported Actions
-* **Unlock** a device from its charging slot
+* **Unlock** a device from its individual charging slot
 * **Illuminate a slot LED** to shine solid or to "blink"
 * **Set LED color** to red, green or blue
 * **Set Timeout** (in sec.) for expiration of an Action
 
 #### Notes
 * **Device slots lock automatically** when a device is inserted   
-* **Operates with or without a kiosk**
+* **Communications are one-way**; from device to cradle
+* **Apps operate with or without a user kiosk**
 * **API NOT supported on ShareCradles** (see below)
 
 ### Requirements
@@ -81,9 +82,17 @@ Actions are implemented as intent extras.
 
 **Extra**: "CALLBACK_RESPONSE"<br>
 **Type**: Pending intent<br>
-**Function**: Indicates status of UNLOCK, BLINK intent command being sent (NOT of the client ability to execute)<br>
-**"RESULT_CODE"**: "SUCCESS" or FAILURE"<br>
-**"RESULT_MESSAGE"**: "INVALID_PARAMETERS", "DEVICE_NOT_READY", etc.<br>
+**Function**: Indicates status of "UNLOCK" and "BLINK" intents (NOT of the client ability to execute)<br>
+**Result codes and messages**:<br>
+* **"RESULT_CODE"** <br>
+ * "SUCCESS"<br>
+ * "FAILURE"<br>
+* **"RESULT_MESSAGE"**<br>
+ * "INVALID_PARAMETERS"<br>
+ * "DEVICE_NOT_READY"<br>
+ * "GENERAL_FAILURE"<br>
+ * "SENDING_COMMAND_FAILED"<br>
+ * "DEVICE_BUSY"<br>
 
 -----
 
@@ -174,6 +183,7 @@ Actions are implemented as intent extras.
 
 ## Also See
 
+* [EC30 Programmer's Guide](../../ec30_programming)
 * [Data capture intent APIs](../datacapture)
 * [Battery intent APIs](../battery)
 * [Native APIs](../../api)

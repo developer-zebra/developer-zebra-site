@@ -45,6 +45,5 @@ automenu:
       items:
         - title: Data Capture Plus (DCP)
           url: ../input/dcp
-        - title: Enterprise Keyboard Configuration
-          url: ../utilities/ekb
+
 ---

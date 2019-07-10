@@ -32,9 +32,9 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), and Simulscan. New SEND_RESULT result code for multiple plugins. 
 * **DataWedge 7.2 -** Added new DotCode decoder support.
-* **DataWedge 7.3 -** 
-	* Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
-	* Added new RFID Input feature and new Enterprise Keyboard Configuration feature.
+* **DataWedge 7.3 -** Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
+* **DataWedge 7.3.22 -** Added new RFID Input feature 
+<!--* **DataWedge 7.5 -** Added new Enterprise Keyboard Configuration feature. -->
 
 ### Function Prototype
 
@@ -220,7 +220,7 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 		* `label_id` [string] - UDI_GS1, UDI_HIBCC or UDI_ICCBBA
 		* `enabled` [string] - true/false (default=true)
 
-
+<!--  // moved to DW 7.5
 <ul>
  <li><b>EKB -</b> Set Enterprise Keyboard Configuration for a DataWedge Profile. Options: </li>
  <ul>
@@ -232,7 +232,7 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 	 </ul>
  </ul>
 </ul>
-
+-->
 
 
 **IMPORTANT**: 
@@ -2948,6 +2948,7 @@ Support started with DataWedge 7.1.  Previous DataWedge versions required multip
 	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain); 
 	this.sendBroadcast(i); 
 
+<!-- // moved to DW 7.5
 ###Set Enterprise Keyboard Configuration
 	//SetConfig [Start] 
 	Bundle bMain = new Bundle(); 
@@ -2978,7 +2979,7 @@ Support started with DataWedge 7.1.  Previous DataWedge versions required multip
 	//SetConfig [End] 
 	
 	this.sendBroadcast(iSetConfig); 
-
+-->
 -----
 
 **SEE ALSO**:

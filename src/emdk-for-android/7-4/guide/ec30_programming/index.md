@@ -7,6 +7,12 @@ productversion: '7.4'
 
 ##Overview
 
+<img alt="image" style="height:400px" src="ec30_inhand.png"/>
+
+The Zebra EC30 Enterprise Companion is an ultra-compact, fully functional mobile computing device that small enough to fit in the palm of a hand or be worn like a smart badge. 
+
+Old but well-cited research (hoober piece)
+
 
 3.0 Inch Diagonal
 Screen Size 480 x 854 (FWVGA)
@@ -19,6 +25,7 @@ Spilt screen functionality disabled due to small screen size.
 Height adjusted SIP for optimized screen real estate for both portrait and landscape
 6 mm recommended touch zone (4.7 mm minimum)
 
+-----
 
 ## UX/UI Considerations
 
@@ -73,7 +80,7 @@ Override onClick(), onTouch() and onEditorAction() APIs.
 Set all the three listeners for all the text fields on the UI and set hint for them.
 Code Sample Can be provided for this.
 
-### Intuitive Drop-downs
+### Drop-down Menus
 
 (slide 10)
 
@@ -85,7 +92,7 @@ Use getSelectedItem API to get the selected item text.
 
 also, left and right nav combo, spinner...?
 
-### EC30-embedded Tools
+### Embedded Tools
 
 (image on slide 11)
 
@@ -127,6 +134,8 @@ Test your app for Doze mode
 Major source battery drain is the display hence set bit aggressive screen timeouts such as 10-15 seconds
 Use Scan Trigger or PTT wake up keys to quickly wakeup the device.
 Set brightness of the screen appropriately to avoid unnecessary battery drain.
+
+-----
 
 ## Also See
 

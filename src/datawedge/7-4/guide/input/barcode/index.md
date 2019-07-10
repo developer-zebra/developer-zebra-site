@@ -1109,7 +1109,7 @@ Basic MultiBarcode params:
 * **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
 * **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a Multi-barcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
 * **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
-* **If both Continuous Read and Instant Reporting parameters are enabled, Instant Reporting** takes precedence over **Continuous Read,** which is ignored. Zebra recommends not to enable both parameters simultaneously.
+* **If both Continuous Read and Instant Reporting parameters are enabled, Instant Reporting** takes precedence over **Continuous Read,** which is ignored. 
 
 -----
 

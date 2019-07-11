@@ -86,7 +86,7 @@ Supported Devices (including GMS and non-GMS versions):
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
-    <td>L10AW</td>
+    <td>L10 Android</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>

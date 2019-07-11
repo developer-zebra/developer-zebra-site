@@ -412,7 +412,7 @@ Modify the application's `Manifest.xml` file to use the EMDK library and to set 
 		    }
 		}
 
-18. Override the onDestroy() method to release all the EMDKManager resources:
+18. Override the `onDestroy()` method to release all the `EMDKManager` resources:
 
 		:::java
 		@Override

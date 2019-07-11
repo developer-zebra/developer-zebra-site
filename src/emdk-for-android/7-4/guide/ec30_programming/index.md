@@ -7,11 +7,21 @@ productversion: '7.4'
 
 ##Overview
 
+The Zebra EC30 Enterprise Companion is an ultra-compact, fully functional mobile computing device that's small enough to fit in the palm of a hand, worn on the wrist or strung around the neck like a smart badge. Industrial applications include retail, health care, warehousing, field service and maintenance, hospitality and many others. 
+
+
+#### Compatibility
+Applications written for Zebra's TC-series mobile computing devices will run on the EC30, but its 3-inch display is about half the size of most others, and will likely need adjustments to ensure a pleasant user experience. 
+
 <img alt="image" style="height:400px" src="ec30_inhand.png"/>
+<img alt="image" style="height:400px" src="ec30_onwrist.png"/>
 
-The Zebra EC30 Enterprise Companion is an ultra-compact, fully functional mobile computing device that small enough to fit in the palm of a hand or be worn like a smart badge. 
+### Specifications
 
-Old but well-cited research (hoober piece)
+**Display**: 3.0 inches (diagonal) 
+**Resolution**: 480 x 854 (FWVGA)
+**Screen density**: 320 DPI (XHDPI)
+
 
 
 3.0 Inch Diagonal
@@ -24,6 +34,9 @@ Physical Navigation buttons provides additional Screen Real Estate.
 Spilt screen functionality disabled due to small screen size.
 Height adjusted SIP for optimized screen real estate for both portrait and landscape
 6 mm recommended touch zone (4.7 mm minimum)
+
+Old but well-cited research (hoober piece)
+
 
 -----
 

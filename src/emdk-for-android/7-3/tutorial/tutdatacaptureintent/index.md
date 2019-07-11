@@ -5,6 +5,15 @@ product: EMDK For Android
 productversion: '7.3'
 ---
 
+<div class="alert alert-danger alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <h4>Important information about data capture interfaces:</h4> <p>Zebra <u>strongly recommends using DataWedge</u> for all applications that require barcode scanning and data capture. If using EMDK native Barcode APIs, migration to DataWedge interfaces is strongly advised.</p> <p> Here are the facts:
+    </p><ul>
+        <li><b>DataWedge APIs have the same capabilities</b> currently available in EMDK.</li>
+        <li>DataWedge intent-based APIs are <b>easier and faster to implement</b> than EMDK APIs.</li>
+        <li><b>New features are always added to DataWedge first</b> before being <i>considered</i> for addition to EMDK; there is no guarantee that the same features will be exposed in EMDK APIs.</li>
+    </ul>
+    <br>
+    <a href="/datawedge" class="btn btn-danger">Learn About DataWedge</a>  <p></p> </div>
+
 ## Overview
 DataWedge on Android has the ability to output captured data via Intents. This article describes how to use the DataWedge Intent output plug-in and the Data Capture API to receive captured data in your native Android application.
 

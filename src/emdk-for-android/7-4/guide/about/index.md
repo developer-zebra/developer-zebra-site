@@ -5,11 +5,11 @@ product: EMDK For Android
 productversion: '7.4'
 ---
 
-<div class="alert alert-danger alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <h4>Important information about Data Capture interfaces:</h4> <p>Zebra <u>strongly recommends using DataWedge</u> for all applications that require barcode scanning and data capture. If using EMDK native Barcode APIs, migration to DataWedge interfaces is strongly advised.</p> <p> 
+<div class="alert alert-danger alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <h4>Important information about data capture interfaces:</h4> <p>Zebra <u>strongly recommends using DataWedge</u> for all applications that require barcode scanning and data capture. If using EMDK native Barcode APIs, migration to DataWedge interfaces is strongly advised.</p> <p> Here are the facts:
     </p><ul>
-        <li>DataWedge APIs have the <b>same capabilities</b> currently available in EMDK.</li>
-        <li>DataWedge Intent based APIs are <b>easier and faster to implement</b>.</li>
-        <li><b>New features are always added to DataWedge first</b> and are then considered for addition to EMDK; there is no guarantee that the same features will be exposed in EMDK APIs.</li>
+        <li><b>DataWedge APIs have the same capabilities</b> currently available in EMDK.</li>
+        <li>DataWedge intent-based APIs are <b>easier and faster to implement</b> than EMDK APIs.</li>
+        <li><b>New features are always added to DataWedge first</b> before being <i>considered</i> for addition to EMDK; there is no guarantee that the same features will be exposed in EMDK APIs.</li>
     </ul>
     <br>
     <a href="/datawedge" class="btn btn-danger">Learn About DataWedge</a>  <p></p> </div>

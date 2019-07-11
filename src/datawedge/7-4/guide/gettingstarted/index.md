@@ -27,7 +27,7 @@ For example, "App A" might require a TAB to be sent after each dataset is passed
  * **[Barcode](../input/barcode) –** specify the device scanning hardware, decoders, decoder parameters, reader parameters, and scan parameters applied on the captured data prior to sending the data for processing. The supported hardware can include the integrated built-in devices (such as 1D scanner, 2D scanner, and camera), or externally connected devices (such as barcode scanner, Bluetooth scanner, and USB SSI Scanner). 
  * **[MSR (magnetic stripe reader)](../input/msr) -** acquire data from an MSR card, such as a credit or debit card, on supported hardware. 
  * **[RFID (radio-frequency identification)](../input/rfid/) -** acquire data from an RFID tag with the integrated RFID reader built-in some Zebra mobile computers. 
- * **[Serial/USB port](../input/serial) -** acquire data from a peripheral device connected via serial or USB port. 
+ * **[Serial port](../input/serial) -** acquire data from a peripheral device connected via serial port. 
  * **[Voice](../input/voice/ )-** acquire data via speech recognition. Configurations include: define a start/end phrase, send a tab/enter command, limit data to alpha or numeric characters, spoken data validation, and working offline. 
 
 * **Processing plugins -** specify how to format the captured data prior to passing it to the output plugin:

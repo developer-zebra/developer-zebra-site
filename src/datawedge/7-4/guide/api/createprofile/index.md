@@ -7,7 +7,7 @@ productversion: '7.4'
 
 ## CREATE_PROFILE
 
-Used to create a new DataWedge Profile on the device. If a Profile of the same name already exists on the device, the intent will fail. To create a Profile and configure its settings parameters, see [SET_CONFIG](../setconfig). 
+Used to create a new DataWedge Profile on the device. If a Profile of the same name already exists on the device, the intent will fail. To create a Profile and configure its settings parameters, see [SET_CONFIG](../setconfig). Zebra recommends that Profile names be unique, contain alpha-numeric characters, and be short in length to avoid possible import/export profile issues.
 
 ### Function Prototype
 

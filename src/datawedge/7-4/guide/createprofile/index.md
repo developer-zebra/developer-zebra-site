@@ -8,7 +8,7 @@ productversion: '7.4'
 ## Overview
 DataWedge can be associated with any app on the device and called upon to acquire barcode, mag-stripe or other data, to process the data in a specified way, and to pass it to one or more apps. Therefore, each Profile must specify these three things: 
 
-1. **Input device** determines whether to acquire data from [barcodes](../input/barcode), a [magnetic stripe](../input/msr) or using [SimulScan](../input/simulscan).
+1. **Input device** determines whether to acquire data from [barcodes](../input/barcode), a [magnetic stripe](../input/msr), [RFID (radio-frequency identification) tags](../input/rfid), a [serial port](../input/serial), [voice](../input/voice) or [SimulScan](../input/simulscan).
 
 2. **Process options** manipulate the acquired data using [Basic](../process/bdf) or [Advanced](../process/adf) data formatting processes. 
 
@@ -37,7 +37,7 @@ On a new installation, the DataWedge Profiles screen appear similar to that of t
 
 &#51;.  **Enter a name** for the new Profile and **tap OK**. The Profiles list appears, similar to the image in Step 4, below.  
 <img style="height:350px" src="03_name_profile.png"/>
-Zebra recommends that Profile names be unique and contain alpha-numeric characters only.
+Zebra recommends that Profile names be unique, contain alpha-numeric characters, and be short in length to avoid possible import/export profile issues.
 <br>
 
 #### Associate the Profile with App(s) and/or Activities: 
@@ -85,7 +85,7 @@ When finished adding associations, **Tap the BACK button** to return to the Prof
 
 &#49;&#51;. From the Profile screen, **select the desired Output method** (scrolling down as necessary). For example, the image below shows that Keystroke Output is enabled: 
 <img style="height:350px" src="13_select_output.png"/>
-**Note**: Output sections contain selectors for configuring "Basic data formatting" and "Advanced data formatting." **These contain the data Processing options**.  
+**Note**: Output sections contain selectors for configuring "Basic data formatting" and "Advanced data formatting." **These are the data processing options**.  
 <br>
 
 &#49;&#52;. **Select the Basic data formatting** for options on inserting special keystrokes or adding text before (prefix) and/or after (suffix) the collected data:  

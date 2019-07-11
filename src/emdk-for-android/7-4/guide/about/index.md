@@ -5,6 +5,16 @@ product: EMDK For Android
 productversion: '7.4'
 ---
 
+<div class="alert alert-danger alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <h4>Important information about Data Capture interfaces:</h4> <p>Zebra <u>strongly recommends using DataWedge</u> for all applications that require barcode scanning and data capture. If using EMDK native Barcode APIs, migration to DataWedge interfaces is strongly advised.</p> <p> 
+    </p><ul>
+        <li>DataWedge APIs have the <b>same capabilities</b> currently available in EMDK.</li>
+        <li>DataWedge Intent based APIs are <b>easier and faster to implement</b>.</li>
+        <li><b>New features are always added to DataWedge first</b> and are then considered for addition to EMDK; there is no guarantee that the same features will be exposed in EMDK APIs.</li>
+    </ul>
+    <br>
+    <a href="/datawedge" class="btn btn-danger">Learn About DataWedge</a>  <p></p> </div>
+
+
 ## Overview
 
 EMDK for Android extends the Android Studio IDE for Mac OS and Windows with tools for easily creating powerful line-of-business applications for Zebra Android devices. EMDK for Android includes class libraries, sample apps and source code that enables developers to easily build apps that take full advantage of the power of Zebra devices.

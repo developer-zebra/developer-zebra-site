@@ -183,7 +183,7 @@ Actions are implemented as intent extras. See [sample code](#samplecode) for syn
 
 ## Also See
 
-* [EC30 Programmer's Guide](../../ec30_programming)
+* [EC30 Programmer's Guide](../../guide/ec30_programming)
 * [Data capture intent APIs](../datacapture)
 * [Battery intent APIs](../battery)
 * [Native APIs](../../api)

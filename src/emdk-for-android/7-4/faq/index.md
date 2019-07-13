@@ -25,6 +25,8 @@ A: **DataWedge provides a quick and easy way to add scanning capabilities to an 
 
 ### Q: Why don't my KitKat and/or Lollipop apps work with Nougat and/or Oreo?
 
+**NOTE**: EMDK for Android 7.4 (and higher) no longer targets devices running Nougat.
+
 A: Due to the many advancements in newer Android versions, some older apps require modification to run properly on newer flavors. **Among the common causes of incompatibility of older apps relate to changes in background processing implemented mainly to optimize battery life**. 
 
 When developing an app, Android developers should specify in the app manifest a target API along with minimum and maximum Android API levels. This maps the app to specific Android OS versions to run on. For example, if API level 23 is specified as the target level, it indicates that the app is intended to run on Android 6.0 (Marshmallow) and can prevent attempts to run the app on incompatible versions.

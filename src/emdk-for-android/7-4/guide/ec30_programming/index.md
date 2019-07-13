@@ -13,12 +13,19 @@ The Zebra EC30 Enterprise Companion is an ultra-compact, fully functional mobile
 Applications written for Zebra's TC-series mobile computing devices will run on the EC30, but its 3-inch display is about half the size of most others, and will likely need adjustments to ensure a pleasant user experience. 
 
 <img alt="image" style="height:250px" src="ec30_multi.png"/>
+<img alt="image" style="height:250px" src="ec30_multi2.png"/>
+
 
 ### Specifications
 
 * **Display**: 3.0 inches (diagonal) 
 * **Resolution**: 480 x 854 (FWVGA)
-* **Screen density**: 320 DPI (XHDPI)
+* **Screen density**: 320 DPI (xhdpi)
+
+### TC-Series Deviations
+
+* **Split screen functionality disabled** due to small screen size
+* **Height-adjusted soft input panel** (SIP)
 
 
 3.0 Inch Diagonal

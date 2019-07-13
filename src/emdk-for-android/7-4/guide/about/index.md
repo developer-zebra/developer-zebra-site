@@ -81,6 +81,9 @@ EMDK-A 7.3 and 7.4 now present a page of [frequently asked questions](../../faq)
 #### IrDA API
 **EMDK-A 7.3 (and later) now contains [IrDA APIs](../../intents/irda)**, intent-based interfaces for controlling hardware that conforms to the Infrared Data Association (IrDA) specification** commonly found in mobile computers, printers, handheld remote controls and some medical devices. 
 
+#### EC30 Programmer's Guide
+The EC30 Enterprise Companion is Zebra's ultra-compact, fully functional mobile computing device capable of executing TC-series apps out-of-the box. But its small screen might require app changes to ensure a pleasant user experience. The [EC30 Programmer's Guide](../ec30_programming) describes how. 
+
 #### NFC Sample App
 **An [NFC SAM sample app](../../samples/sam)** demonstrates usage of the NFC Secure Access Module, which allows secure communication with NFC tags from NFC-equipped Zebra devices. 
 

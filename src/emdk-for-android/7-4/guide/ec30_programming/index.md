@@ -13,7 +13,7 @@ The Zebra EC30 Enterprise Companion is an ultra-compact, fully functional mobile
 Applications written for Zebra's TC-series mobile computing devices will run on the EC30, but its 3-inch display is about half the size of most others, and will likely need adjustments to ensure a pleasant user experience. 
 
 <img alt="image" style="height:250px" src="ec30_multi.png"/>
-<img alt="image" style="height:300px" src="ec30_multi2.png"/>
+<img alt="image" style="height:200px" src="ec30_multi2.png"/>
 
 
 ### Specifications

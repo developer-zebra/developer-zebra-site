@@ -73,7 +73,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 **EMDK-A 7.4 and higher no longer targets devices running Android 7.x Nougat or older, including the WT6000 wearable computer**. To target the WT6000 (which currently supports up to Nougat), please use [EMDK-A 7.3](../../7-3/guide/about) or earlier.   
 
 #### FAQ Page
-EMDK-A 7.3 and 7.4 now present a page of [frequently asked questions](../../faq) submitted to Zebra customer- and partner-support departments. Answers are provided as a mixture of simple guidance, links to relevant guides and/or sample code. Access the page through the "FAQs" tab at the top of any EMDK-A guide page or the "FAQs" button in the EMDK-A tile on the [TechDocs main page](../../../../). 
+EMDK-A 7.3 and 7.4 now present a page of [frequently asked questions](../../faq) submitted to Zebra customer- and partner-support departments. Answers are provided as a mixture of simple guidance, links to relevant guides and/or sample code. Access the page through the "FAQs" tab at the top of any EMDK-A guide page or from the "FAQs" button in the EMDK-A tile on the [TechDocs main page](../../../../). 
 
 #### SmartCradle API
 **EMDK-A 7.4 introduces [Locking SmartCradle APIs](../../intents/cradle)** for the EC30, intent-based interfaces for controlling the secure charging station of Zebra's latest small form-factor mobile computing device. 

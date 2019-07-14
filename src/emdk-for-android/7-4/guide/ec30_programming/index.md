@@ -25,28 +25,29 @@ The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing
 * **Max. resolution**: 480 x 854 pixels (FWVGA)
 * **Screen density**: 320 dpi (xhdpi)
 * **Battery**: 1200 mAh Li-Ion PowerPrecision+ 
-* **Battery life**: Up to 10 hrs. continuous operation
+* **Battery life**: Up to 10 hours continuous operation
 * **Modalities**: Pocket, neck lanyard, vest clip, arm- or belt-mounted
 * **Sensors**: 3-axis accelerometer, gyroscope, e-compass
 * **Radios**: Bluetooth 5.0, Wi-Fi 802.11 a, b, n, ac
 * **Scanner**: SE2100 1D/2D barcode scanner
 * **Audio**: 3.5-inch audio jack, built-in speaker
-* **Physical buttons**: PTT, volume up/down, scan
+* **Mechanical buttons**: PTT, volume up/down, scan
 * **Capacitive buttons**: BACK, RECENT, HOME  
 * **Programmable buttons**: Scan, PTT, BACK, RECENT
+* **Charging options**: USB-C port, cradles
 
-
-### Included Software
-* **Operating System**: Android 8.1 (Oreo)
-* **Mobile DNA**: MX 9.2, PTT Express
-
+### Software
+* **Operating System**: Android 8.1 (Oreo), upgradeable to Pie and Q
+* **[Mobility DNA](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html)**: including MX 9.2 and PTT Express
+* **Google Mobile Services** except China non-GMS SKU (EC300K-2SA2ACN)
+* **Supports [Intent-based APIs](../../intents/cradle)** for Locking SmartCradle
 
 ### TC-Series Deviations
 
 * **Split screen functionality disabled** due to smaller screen size
-* **Physical navigation buttons** to maximize screen real estate
+* **Capacitive navigation buttons are off-screen** to maximize screen space for apps
 * **Height-adjusted soft input panel** (SIP) in portrait and landscape modes
-* **4.7mm minimum touch zone** 6mm recommended
+* **4.7 mm minimum touch zone** 6 mm recommended
 
 
 3.0 Inch Diagonal

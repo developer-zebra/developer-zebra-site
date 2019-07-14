@@ -19,7 +19,7 @@ The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing
 
 ### EC30 Specifications
 
-* **Outer dimensions**: (tbd) by about 1/2-inch thick
+* **Outer dimensions**: `INFO NEEDED` about 1/2-inch thick
 * **Weight**: Less than 4 oz. 
 * **Display size**: 3.0 inches (diagonal) 
 * **Max. resolution**: 480 x 854 pixels (FWVGA)
@@ -28,17 +28,18 @@ The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing
 * **Battery life**: Up to 10 hours continuous operation
 * **Modalities**: Pocket, neck lanyard, vest clip, arm- or belt-mounted
 * **Sensors**: 3-axis accelerometer, gyroscope, e-compass
-* **Radios**: Bluetooth 5.0, Wi-Fi 802.11 a, b, n, ac
+* **Radios**: Bluetooth 5.0, Wi-Fi 802.11 `a,b,n,ac? INFO NEEDED` 
 * **Scanner**: SE2100 1D/2D barcode scanner
 * **Audio**: 3.5-inch audio jack, built-in speaker
-* **Mechanical buttons**: PTT, volume up/down, scan
-* **Capacitive buttons**: BACK, RECENT, HOME  
+* **Mechanical buttons**: PTT, volume up/down, scan `INFO NEEDED?` 
+* **Capacitive buttons**: BACK, RECENT, HOME 
 * **Programmable buttons**: Scan, PTT, BACK, RECENT
 * **Charging options**: USB-C port, cradles
 
 ### Software
-* **Operating System**: Android 8.1 (Oreo), upgradeable to Pie and Q
-* **[Mobility DNA](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html)**: including MX 9.2 and PTT Express
+
+* **Operating System**: Android 8.1 (Oreo), upgradeable
+* **[Mobility DNA](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html)** including MX 9.2 and PTT Express
 * **Google Mobile Services** except China non-GMS SKU (EC300K-2SA2ACN)
 * **Supports [Intent-based APIs](../../intents/cradle)** for Locking SmartCradle
 
@@ -47,9 +48,13 @@ The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing
 * **Split screen functionality disabled** due to smaller screen size
 * **Capacitive navigation buttons are off-screen** to maximize screen space for apps
 * **Height-adjusted soft input panel** (SIP) in portrait and landscape modes
-* **4.7 mm minimum touch zone** 6 mm recommended
+* **4.7 mm minimum touch zone** (6 mm recommended)
 
+-----
 
+## UX/UI Considerations
+
+<!-- 
 3.0 Inch Diagonal
 Screen Size 480 x 854 (FWVGA)
 320 DPI (xhdpi) – Typical Mobile Phones use this DPI with higher screen resolution than this.
@@ -60,15 +65,12 @@ Physical Navigation buttons provides additional Screen Real Estate.
 Spilt screen functionality disabled due to small screen size.
 Height adjusted SIP for optimized screen real estate for both portrait and landscape
 6 mm recommended touch zone (4.7 mm minimum)
-
+-->
 Old but well-cited research (hoober piece)
-
-
------
-
-## UX/UI Considerations
-
 (see uxmatters.com and/or Steven Hoober for stats and stuff)
+https://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php
+
+
 
 ### Making New Apps
 
@@ -93,17 +95,30 @@ Use dip/dp values for element sizes and should not use px.
 
 
 ### Porting Existing Apps 
-See if App is Usable
-By and large, Android apps would just run on an EC30 if they are already running on a TC series terminal. However, your app may encounter some usability issues without some screen optimizations, such as buttons are too small and hard to touch, texts are too small and illegible, information got truncated and eclipsed, etc. Resolving the above issues is a great start to make sure an app is running smoothly on an EC30.
+Apps created for Zebra's TC-series devices can be expected to execute perfectly well on the EC30. However, UIs designed for the 5+ inch TC-series displays often present usability issues when displayed on the EC30's 3-inch screen. These can include truncated screens or controls, buttons too small to touch and/or text too small to read.Zebra recommends starting with the steps below when migrating apps to the EC30. 
+
+#### Start Here `INFO NEEDED` 
+1. Install the app to be migrated on an EC30 device and launch it. 
+2. Operate the app through all use cases and paths, listing any UI issues. 
+3. Modify the app's UI to address UI issues.   
+4. Deploy the modified app.
+
+
+##### 
+Also note that apps designed for TC-series devices might contain functionality not supported on the EC30, such as WWAN communication. To avoid app malfunctions, such features should be removed from the EC30-migrated version 
+
 Feature and/or Content Prioritization
 App designed for TC series may contain more features that may not be the core use case for EC30. Therefore, consider re-prioritize the top features and/or content of your app for EC30.
-Rethink Information Density
-It is nice to see everything at once in some case, but for EC30, it is key to see the most important information at a particular moment and to focus on a single snippet of information. Therefore, supplementary information should be “tucked away” but still be accessible. 
 
-reak Up an Existing Task Flow
+##### Information Density, Task Flow
+While a UX might be improved by displaying all info, app functions and user inputs on a single screen, the EC30's small screen make that unlikely. It's therefore advisable to implement the most important functions and information for each user task on sequential screens and "tuck away" supplementary information in a menu, "info" button or other access control. 
+
+<!-- ##### Break Up Existing Task Flow
 With a device that has a bigger size screen, users may be able to finish their task within a single screen that can capture all the needed users’ inputs. For EC30, such single screen may be needed to break down as a series of screens to ensure usability and capture all necessary inputs to complete the same task. 
-Think Beyond One App
-Part of your application user experience on EC30 may live outside of your application. It is necessary to take a holistic view on how your application interacts with other EC30 either hardware or software components. For example, you may deploy scan-to-login method to eliminate the need for users to use the touch keyboard to enter a complex password. You may want to provision EC30 to auto-launch your application to simplify the start-of-a-workday process. You may want to turn on certain Android built-in accessibility features by default to enhance usability.
+ -->
+
+##### Think Beyond One App
+Part of an EC30 app's UX might live outside of the app itself. It is necessary to take a holistic view on how your application interacts with other EC30 either hardware or software components. For example, you may deploy scan-to-login method to eliminate the need for users to use the touch keyboard to enter a complex password. You may want to provision EC30 to auto-launch your application to simplify the start-of-a-workday process. You may want to turn on certain Android built-in accessibility features by default to enhance usability.
 Alternative Layouts
 Better to use alternative layouts if the app being ported from a higher resolution device to EC30. consider changing Image resources as higher resolution resource may not fit properly
 

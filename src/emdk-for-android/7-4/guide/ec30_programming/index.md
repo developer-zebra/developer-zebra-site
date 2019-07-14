@@ -9,19 +9,37 @@ productversion: '7.4'
 
 The Zebra EC30 Enterprise Companion is an ultra-compact, fully functional mobile computing device that's small enough to fit in the palm of a hand, worn on the wrist or strung around the neck like a smart badge. Industrial applications include retail, health care, warehousing, field service and maintenance, hospitality and many others. 
 
-#### Compatibility
-Applications written for Zebra's TC-series mobile computing devices will run on the EC30, but its 3-inch display is about half the size of most others, and will likely need adjustments to ensure a pleasant user experience. 
-
 <img alt="image" style="height:250px" src="ec30_multi.png"/>
-<img alt="image" style="height:200px" src="ec30_multi2.png"/>
+<img alt="image" style="height:250px" src="ec30_multi2.png"/>
 
+Key functions include basic barcode scanning, assisted selling and WLAN communication. Employees equipped with the EC30 can query product information, manage inventory, communicate with fellow staff members via PTT or VoIP, receive and execute tasks and much more.
 
-### Specifications
+#### App Compatibility
+The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing devices; applications written for Zebra's TC-series should run on the EC30. However, the EC30's 3-inch display is about half the size of most others, so apps often require adjustments to ensure a pleasant user experience. 
 
-* **Outer dimensions**: 
+### EC30 Specifications
+
+* **Outer dimensions**: (tbd) by about 1/2-inch thick
+* **Weight**: Less than 4 oz. 
 * **Display size**: 3.0 inches (diagonal) 
 * **Max. resolution**: 480 x 854 pixels (FWVGA)
 * **Screen density**: 320 dpi (xhdpi)
+* **Battery**: 1200 mAh Li-Ion PowerPrecision+ 
+* **Battery life**: Up to 10 hrs. continuous operation
+* **Modalities**: Pocket, neck lanyard, vest clip, arm- or belt-mounted
+* **Sensors**: 3-axis accelerometer, gyroscope, e-compass
+* **Radios**: Bluetooth 5.0, Wi-Fi 802.11 a, b, n, ac
+* **Scanner**: SE2100 1D/2D barcode scanner
+* **Audio**: 3.5-inch audio jack, built-in speaker
+* **Physical buttons**: PTT, volume up/down, scan
+* **Capacitive buttons**: BACK, RECENT, HOME  
+* **Programmable buttons**: Scan, PTT, BACK, RECENT
+
+
+### Included Software
+* **Operating System**: Android 8.1 (Oreo)
+* **Mobile DNA**: MX 9.2, PTT Express
+
 
 ### TC-Series Deviations
 

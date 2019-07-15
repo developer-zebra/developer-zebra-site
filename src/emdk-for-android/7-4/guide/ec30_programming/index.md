@@ -11,6 +11,7 @@ The Zebra EC30 Enterprise Companion is an ultra-compact, fully functional mobile
 
 <img alt="image" style="height:250px" src="ec30_multi.png"/>
 <img alt="image" style="height:250px" src="ec30_multi2.png"/>
+_Click images to enlarge_
 
 **Key applications of the EC30** include basic barcode scanning, assisted selling and WLAN-based voice and data communications. Employees equipped with the EC30 can query product information, manage inventory, communicate with fellow staff members via PTT or other VoIP apps, receive and track tasks and much more.
 
@@ -32,6 +33,7 @@ The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing
 * **Outer dimensions**: `INFO NEEDED` L x W  about 1/2-inch thick
 * **Weight**: Less than 4 oz. 
 * **Display size**: 3.0 inches (diagonal) 
+* Screen dimensions**: 1.5 inches (37 mm) x 2.6 inches (67 mm)
 * **Max. resolution**: 480 x 854 pixels (FWVGA)
 * **Screen density**: 320 dpi (xhdpi)
 * **Battery**: 1200 mAh Li-Ion PowerPrecision+ 
@@ -58,59 +60,63 @@ The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing
 
 ## UX/UI Considerations
 
-<!-- 
-3.0 Inch Diagonal
-Screen Size 480 x 854 (FWVGA)
-320 DPI (xhdpi) – Typical Mobile Phones use this DPI with higher screen resolution than this.
-Most Common for 480 x 854 resolution is 240 DPI
-320 DPI has the best end user experience for EC30
-Physical Navigation buttons provides additional Screen Real Estate.   
+According to [research published in 2017](https://www.uxmatters.com/mt/archives/2017/03/design-for-fingers-touch-and-people-part-1.php) by [UX Matters](https://www.uxmatters.com/about-us/#mission-anchor), a large majority of people use only a thumb for input, and fewer than half hold the phone with one hand. It's also important to note that device-holding position can vary for an individual depending on needs of the app, size, shape and orientation of the device and the type and context of the input required. 
 
-Spilt screen functionality disabled due to small screen size.
-Height adjusted SIP for optimized screen real estate for both portrait and landscape
-6 mm recommended touch zone (4.7 mm minimum)
--->
-Old but well-cited research (hoober piece)
-(see uxmatters.com and/or Steven Hoober for stats and stuff)
-https://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php
+<img alt="image" style="height:250px" src="how_devices_are_held.png"/>
+_**Image source**: UXmatters.com_
 
+#### Hand-holding Modes
+* **75% use one thumb** to tap the screen.
+* **Fewer than 50% use one hand** to hold the device.
+* **36% use two hands** to hold device for greater reach and stability.
+* **10% cradle device in one hand** and tap a finger of the other hand.
+* **Holding position varies** based on device size and orientation, app context, input requirements and other factors.
+* **Holding position can change multiple times** during any app interaction.     
 
+#### Tap Accuracy
+Research shows that people prefer to tap and view content on the center of the screen. Tap accuracy varies widely depending on screen location, something to keep in mind when positioning an app's touch zones. 
+
+<img alt="image" style="height:250px" src="accuracy_grid.png"/>
+_**Image source**: UXmatters.com_
 
 ### Making New Apps
 
-Leverage
-Use Google Material Design as a foundation, follow the Material Design interaction paradigms.
-Artboard
-In Sketch, use 240 W x 427 H. (EC30 screen resolution is FWVGA 480x854 px.) 
-Margins & Spacing
-Most measurements should align to an 8dp grid. Smaller components, such as iconography and typography, can align to a 4dp grid. In certain cases, it is encouraged to increase padding to 10dp, even 16dp to achieve a less crowded feeling. 
-Typography
-Size 14 (Body 2) is appropriate for body copy. The smallest font size is Size 12 (Caption) 
-Touch Zone
-80dp (at least on one dimension) is ideal, especially if the touch zone is close to the screen edges. 60dp is recommended for general purpose. 48dp would be the minimum size limit. For example, a bottom action bar would contain only 3 icons across the EC30 screen bottom if following the ideal size (80dp) recommendation. 
+**Zebra recommends using Google Material Design** `LINK NEEDED` as a foundation for starting new apps. The guidelines listed below also might be helpful as a starting point when building UI screens from scratch. 
 
-Keeping Things Comfortable
-Produce some paper prototypes to stimulate EC30 screen (AA physical dimension is 37 x 67mm) to check the UI design. Be mindful about cramping more information and functions. Less is better for EC30.
-Layouts
-Better to follow ConstraintLayout (more robust than relative layout) and scrollable views
-Density independent pixels (dp)
-Use dip/dp values for element sizes and should not use px.
+> **What's a 'dp?'** <br>
+Modern UI tools use the term "density-dependent pixel" (dp) when referring to pixel-based screen spacing relative to a 160 dpi screen. This allows for the wide variety of screen densities available today. For example, 1dp (pronounced "one dip") is equal to one pixel on a 160 dpi screen and two pixels on a 320 dpi screen. 
 
+#### User Interactions 
+When planning the app's Artboard, the following specs and guidelines might be helpful. 
 
+**Native resolution** of the EC30 is 480 x 854 pixels (WxH). 
+
+**In Sketch `DEFINITION OR LINK NEEDED`**, Zebra recommends using a resolution of 240 x 427 pixels. 
+
+**For margins and spacing**, most measurements should align to an 8dp grid. For iconography, typography and other small components, use a 4dp grid. To avoid an "overcrowded" UI, set padding at 10&ndash;16dp. 
+
+**Font size** for body copy should be 14pt, (Body 2 **`please define`**) and 12pt for captions. **No text should be smaller than 12pt**.  
+
+**Touch Zones** such as buttons should in most cases be set to 60dp (in at least one dimension) for most screen regions, and 80dp in areas close to screen edges. However, this recommendation is flexible since using the 80dp spec for a button bar across the bottom of the EC30 screen could contain only three buttons. **Touch zones should be no less than 48dp**. 
+
+**Produce paper prototypes** to simulate an EC30 screen and visualize the app's UI design. The EC30 screen measures about 1.5 inches (37 mm) x 2.6 inches (67 mm).  to check the UI design. Be mindful about cramping more information and functions. Less is better for EC30.
+
+**For Layouts** it's usually better to implement a ConstraintLayout, which perform better and are more user friendly than relative layouts and scrollable view ports. 
+
+-----
 
 ### Porting Existing Apps 
 Apps created for Zebra's TC-series devices can be expected to execute perfectly well on the EC30. However, UIs designed for the 5+ inch TC-series displays often present usability issues when displayed on the EC30's 3-inch screen. These can include truncated screens or controls, buttons too small to touch and/or text too small to read.Zebra recommends starting with the steps below when migrating apps to the EC30. 
 
-#### Start Here `INFO NEEDED` 
+#### Start Here `INFO or CONFIRMATION NEEDED` 
 1. Install the app to be migrated on an EC30 device and launch it. 
 2. Operate the app through all use cases and paths.
 3. Identify and list UI issues. 
 4. Modify the app's UI to address the issues.   
 5. Repeat Steps 1&ndash;4 until all UI issues are resolved.
 
-
-##### 
-Also note that apps designed for TC-series devices might contain functionality not supported on the EC30, such as WWAN communication. To avoid app malfunctions, such features should be removed from the EC30-migrated version 
+##### Compatibility
+Keep in mind that apps designed for TC-series devices might contain functionality not supported on the EC30, such as WWAN communication. To avoid app malfunctions, such features should be removed from the EC30-migrated version 
 
 Feature and/or Content Prioritization
 App designed for TC series may contain more features that may not be the core use case for EC30. Therefore, consider re-prioritize the top features and/or content of your app for EC30.

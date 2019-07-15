@@ -12,14 +12,24 @@ The Zebra EC30 Enterprise Companion is an ultra-compact, fully functional mobile
 <img alt="image" style="height:250px" src="ec30_multi.png"/>
 <img alt="image" style="height:250px" src="ec30_multi2.png"/>
 
-Key functions include basic barcode scanning, assisted selling and WLAN communication. Employees equipped with the EC30 can query product information, manage inventory, communicate with fellow staff members via PTT or VoIP, receive and execute tasks and much more.
+**Key applications of the EC30** include basic barcode scanning, assisted selling and WLAN-based voice and data communications. Employees equipped with the EC30 can query product information, manage inventory, communicate with fellow staff members via PTT or other VoIP apps, receive and track tasks and much more.
 
 #### App Compatibility
 The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing devices; applications written for Zebra's TC-series should run on the EC30. However, the EC30's 3-inch display is about half the size of most others, so apps often require adjustments to ensure a pleasant user experience. 
 
-### EC30 Specifications
+#### Deviations from TC-Series Devices
 
-* **Outer dimensions**: `INFO NEEDED` about 1/2-inch thick
+* **Split screen functionality disabled** due to smaller screen size
+* **Capacitive navigation buttons are off-screen** to maximize screen space for apps
+* **Height-adjusted soft input panel** (SIP) in portrait and landscape modes
+* **4.7 mm minimum touch zone** (6 mm recommended)
+
+-----
+
+## EC30 Specifications
+
+### Hardware
+* **Outer dimensions**: `INFO NEEDED` L x W  about 1/2-inch thick
 * **Weight**: Less than 4 oz. 
 * **Display size**: 3.0 inches (diagonal) 
 * **Max. resolution**: 480 x 854 pixels (FWVGA)
@@ -31,24 +41,18 @@ The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing
 * **Radios**: Bluetooth 5.0, Wi-Fi 802.11 `a,b,n,ac? INFO NEEDED` 
 * **Scanner**: SE2100 1D/2D barcode scanner
 * **Audio**: 3.5-inch audio jack, built-in speaker
-* **Mechanical buttons**: PTT, volume up/down, scan `INFO NEEDED?` 
+* **Mechanical buttons**: Power, PTT, volume up/down, scan `INFO NEEDED?` 
 * **Capacitive buttons**: BACK, RECENT, HOME 
 * **Programmable buttons**: Scan, PTT, BACK, RECENT
-* **Charging options**: USB-C port, cradles
+* **Charging**: USB-C port, cradle (optional)
 
 ### Software
 
 * **Operating System**: Android 8.1 (Oreo), upgradeable
 * **[Mobility DNA](https://www.zebra.com/us/en/products/software/mobile-computers/mobility-dna.html)** including MX 9.2 and PTT Express
-* **Google Mobile Services** except China non-GMS SKU (EC300K-2SA2ACN)
-* **Supports [Intent-based APIs](../../intents/cradle)** for Locking SmartCradle
-
-### TC-Series Deviations
-
-* **Split screen functionality disabled** due to smaller screen size
-* **Capacitive navigation buttons are off-screen** to maximize screen space for apps
-* **Height-adjusted soft input panel** (SIP) in portrait and landscape modes
-* **4.7 mm minimum touch zone** (6 mm recommended)
+* **Google Mobile Services** (except China non-GMS model EC300K-2SA2ACN)
+* **Supports [intent-based APIs](../../intents/cradle)** for Locking SmartCradle
+* **`INFO NEEDED?`**
 
 -----
 
@@ -99,9 +103,10 @@ Apps created for Zebra's TC-series devices can be expected to execute perfectly 
 
 #### Start Here `INFO NEEDED` 
 1. Install the app to be migrated on an EC30 device and launch it. 
-2. Operate the app through all use cases and paths, listing any UI issues. 
-3. Modify the app's UI to address UI issues.   
-4. Deploy the modified app.
+2. Operate the app through all use cases and paths.
+3. Identify and list UI issues. 
+4. Modify the app's UI to address the issues.   
+5. Repeat Steps 1&ndash;4 until all UI issues are resolved.
 
 
 ##### 

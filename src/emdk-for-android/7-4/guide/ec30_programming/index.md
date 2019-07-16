@@ -145,6 +145,7 @@ Since it's likely that the EC30-targeted app is being ported from a device with 
 If text entry is required by an EC30 app, it's often better to force the device to landscape mode and present the landscape-oriented SIP. 
 
 <img alt="image" style="height:250px" src="force_landscape.png"/>
+_Click image to enlarge_
 
 To force landscape-mode text entry, ensure the activity class implements the following listeners for touch and editor actions: 
 
@@ -164,6 +165,7 @@ Set all the three listeners for all the text fields in the UI and set a hint for
 To avoid manual text input through the SIP, implement drop-down "spinner" menus or "left-right navigators" whenever possible. Use the `setItemList` API to provide the list of items and the `getSelectedItem` API to get the text for the selected item text. `MORE INFO NEEDED?`
 
 <img alt="image" style="height:250px" src="spinner_LR_nav.png"/>
+_Click image to enlarge_
 
 #### Drop-down Spinner
     <com.zebra.dropdown.DropDown 
@@ -194,6 +196,7 @@ To avoid manual text input through the SIP, implement drop-down "spinner" menus 
 The EC30 implements embedded tools to simplify changes to display size and font scaling. Accessed through the "Power-off" menu, the tools are designed to aid developers and users to easily improve the UX for their individual use. 
 
 <img alt="image" style="height:250px" src="embedded_apps.png"/>
+_Click image to enlarge_
 
 For organizations that wish to prevent user access to these settings, the tools are enabled only when developer options are also enabled on the device. 
 

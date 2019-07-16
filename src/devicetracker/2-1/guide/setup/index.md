@@ -42,8 +42,8 @@ This section provides the server and device requirements. Device Tracker support
 
 4. Network Access Requirements (see **Server Setup** below):
    * If required, **open incoming and outgoing ports** for communication between server and mobile devices through the server firewall. Sample ports are: 
-        * Backend Server Port: Port 8080 for Device Tracker client to register to the server and transmit device data 
-        * UI Port: Web Portal Port 8443 for accessing Device Tracker web portal  
+        * Backend Server: Data Port 8080 for Device Tracker client to register to the server and transmit device data 
+        * Web Portal: UI Port 8443 for accessing Device Tracker web portal  
    * If required, perform **DNS setup** to add server IP address to the DNS server. 
 
 5. Hardware Requirements:
@@ -171,8 +171,8 @@ The following are the prerequisites required for the server: <br>
 
 3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator. 
 
-	* UI Port: inbound and outbound (e.g. port 8080)  
-	* Backend Server Port: inbound (e.g. port 8443)
+	* Backend Server (data) Port: inbound (e.g. port 8080)  
+	* Web Portal (UI) Port: inbound and outbound (e.g. port 8443)
 <br>
 
 ###Server Certificate

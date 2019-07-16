@@ -42,8 +42,8 @@ This section provides the server and device requirements. PPC supports a maximum
 
 4. Network Access Requirements:
    * If required, open incoming and outgoing ports for communication between server and mobile devices through the server firewall. The default ports used are: 
-        * Data Port 8080 for PPC client to register and upload battery data 
-        * Web Portal Port 8443 for accessing PPC web portal  
+        * Backend Server: Data Port 8080 for PPC client to register and upload battery data 
+        * Web Portal: UI Port 8443 for accessing PPC web portal  
    * If required, perform DNS setup to add server IP address to the DNS server. 
 
 5. Hardware Requirements: 
@@ -99,8 +99,8 @@ The following are the prerequisites required for the server: <br>
 
 3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator. 
 
-	* UI Port: inbound and outbound (e.g. port 8080)  
-	* Backend Server Port: inbound (e.g. port 8443)
+	* Backend Server (data) Port: inbound (e.g. port 8080)  
+	* Web Portal (UI) Port: inbound and outbound (e.g. port 8443)
 <br>
 
 ###Server Certificate 

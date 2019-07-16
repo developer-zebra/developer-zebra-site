@@ -12,7 +12,7 @@ productversion: '7.3'
 > **Important:** For instructions on initial setup, refer to "Setting Up the MC3300R" section from [MC3300R Integrator Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/mobile-computers/mc33/mc3300R-ig-en.pdf).
 
 ### Version History
-* **DataWedge 6.3.22 -** Feature introduced
+* **DataWedge 7.3.22 -** Feature introduced
 
 ## RFID Input
 **RFID Input** from the DataWedge profile provides options to toggle RFID input, specify the trigger mode and configure RFID reader settings.

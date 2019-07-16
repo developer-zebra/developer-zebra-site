@@ -152,27 +152,18 @@ To force landscape-mode text entry, ensure the activity class implements the fol
 * `View.OnTouchListener`
 * `TextView.OnEditorActionListenerhighlighted`
 
-Set all the three listeners for all the text fields in the UI and set a hint for them. Also, be sure to override `onClick()`, `onTouch()` and `onEditorAction()` methods. `MORE INFO NEEDED...?`  
+Set all the three listeners for all the text fields in the UI and set a hint for them. Also, be sure to override `onClick()`, `onTouch()` and `onEditorAction()` methods. 
 
-"Code Sample Can be provided for this." `SAMPLE CODE NEEDED`
+`^^^^ MORE INFO NEEDED FOR ABOVE...? ^^^^`  
 
-### Drop-down Menus
+"Code Sample Can be provided for this." 
+`-->> SAMPLE CODE NEEDED <-- `
 
-To avoid manual text input through the SIP, implement drop-down menus whenever possible. Use the `setItemList` API to provide the list of items and the `getSelectedItem` API to get the selected item text. 
+### Input Alternatives
+
+To avoid manual text input through the SIP, implement drop-down "spinner" menus or "left-right navigators" whenever possible. Use the `setItemList` API to provide the list of items and the `getSelectedItem` API to get the text for the selected item text. `MORE INFO NEEDED?`
 
 <img alt="image" style="height:250px" src="spinner_LR_nav.png"/>
-
-#### Left-Right Navigation
-    <com.zebra.selectionview.CustomSelectionView 
-        android:id="@+id/csv1" 
-        android:layout_width="300dp" 
-        android:layout_height="40dp" 
-        android:layout_marginTop="30dp" 
-        android:layout_marginLeft="10dp" 
-        app:csv_gravity="CENTER" 
-        app:layout_constraintLeft_toLeftOf="parent" 
-        app:layout_constraintTop_toBottomOf="@+id/cdp1"
-    /> 
 
 #### Drop-down Spinner
     <com.zebra.dropdown.DropDown 
@@ -184,6 +175,18 @@ To avoid manual text input through the SIP, implement drop-down menus whenever p
         app:dd_gravity="CENTER" 
         app:layout_constraintLeft_toLeftOf="parent" 
         app:layout_constraintTop_toTopOf="parent"
+    /> 
+
+#### Left-Right Navigator
+    <com.zebra.selectionview.CustomSelectionView 
+        android:id="@+id/csv1" 
+        android:layout_width="300dp" 
+        android:layout_height="40dp" 
+        android:layout_marginTop="30dp" 
+        android:layout_marginLeft="10dp" 
+        app:csv_gravity="CENTER" 
+        app:layout_constraintLeft_toLeftOf="parent" 
+        app:layout_constraintTop_toBottomOf="@+id/cdp1"
     /> 
 
 ### Embedded Tools

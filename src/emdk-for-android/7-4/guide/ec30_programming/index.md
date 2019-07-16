@@ -104,12 +104,13 @@ When planning the app's Artboard, the following specs and guidelines might be he
 ## Porting Existing Apps 
 Apps created for Zebra's TC-series devices can be expected to execute perfectly well on the EC30. However, UIs designed for the 5+ inch TC-series displays often present usability issues when displayed on the EC30's 3-inch screen. These can include truncated screens or controls, buttons too small to touch and/or text too small to read.Zebra recommends starting with the steps below when migrating apps to the EC30. 
 
-### Start Here `INFO or CONFIRMATION NEEDED` 
-1. Install the app to be migrated on an EC30 device and launch it. 
-2. Operate the app through all use cases and paths.
-3. Identify and list UI issues. 
-4. Modify the app's UI to address the issues.   
-5. Repeat Steps 1&ndash;4 until all UI issues are resolved.
+### Quick Steps
+`INFO or CONFIRMATION NEEDED` 
+1. **Install and launch the app to be migrated** on an EC30 device. 
+2. **Operate the app through all use cases** and paths.
+3. **Identify and list UI issues**. 
+4. **Modify the app's UI** to address the issues.   
+5. **Repeat Steps 1&ndash;4** until all UI issues are resolved.
 
 ### Compatibility
 Keep in mind that apps designed for TC-series devices might contain functionality&ndash;WWAN communications, for example&ndash;not supported on the EC30. To avoid app malfunctions, such features should be removed from the EC30-migrated version. 
@@ -128,8 +129,8 @@ Part of an EC30 app's UX might live outside of the app itself. Try to take a hol
 
 #### Ways to simplify the UX: 
 
-* **Implement scan-to-login** to eliminate user names and passwords
-* **Set app to auto-launch** to quicken start-of-a-workday process 
+* **Implement scan-to-login** to avoid keying user names and passwords
+* **Set app to auto-launch** to quicken start-of-workday processes 
 * **Consider enabling Android accessibility features**:
  * **Voice Access** allows control with spoken commands
  * **TalkBack** combines touch with spoken input 
@@ -141,43 +142,63 @@ Part of an EC30 app's UX might live outside of the app itself. Try to take a hol
 Since it's likely that the EC30-targeted app is being ported from a device with higher resolution than the EC30's 480 x 854 pixels, it's probably better to create all new UI layouts than to squeeze existing ones onto a smaller screen. 
 
 #### Force Landscape
-(image from slide 9)
+If text entry is required by an EC30 app, it's often better to force the device to landscape mode and present the landscape-oriented SIP. 
 
-Force landscape text entry to provide better keyboard interaction to the user
-Make sure activity class implements following listeners for touch and editor actions
-View.OnClickListener
-View.OnTouchListener
-TextView.OnEditorActionListenerhighlighted
-Override onClick(), onTouch() and onEditorAction() APIs. 
-Set all the three listeners for all the text fields on the UI and set hint for them.
-Code Sample Can be provided for this.
+<img alt="image" style="height:250px" src="force_landscape.png"/>
+
+To force landscape-mode text entry, ensure the activity class implements the following listeners for touch and editor actions: 
+
+* `View.OnClickListener`
+* `View.OnTouchListener`
+* `TextView.OnEditorActionListenerhighlighted`
+
+Set all the three listeners for all the text fields in the UI and set a hint for them. Also, be sure to override `onClick()`, `onTouch()` and `onEditorAction()` methods. `MORE INFO NEEDED...?`  
+
+"Code Sample Can be provided for this." `SAMPLE CODE NEEDED`
 
 ### Drop-down Menus
 
-(slide 10)
+To avoid manual text input through the SIP, implement drop-down menus whenever possible. Use the `setItemList` API to provide the list of items and the `getSelectedItem` API to get the selected item text. 
 
-Import custom drop downs to your project and use them in your layout.
-Use setItemList API to Provide the list of items
-Use getSelectedItem API to get the selected item text.
+<img alt="image" style="height:250px" src="spinner_LR_nav.png"/>
 
-(code samples are image files)
+#### Left-Right Navigation
+    <com.zebra.selectionview.CustomSelectionView 
+        android:id="@+id/csv1" 
+        android:layout_width="300dp" 
+        android:layout_height="40dp" 
+        android:layout_marginTop="30dp" 
+        android:layout_marginLeft="10dp" 
+        app:csv_gravity="CENTER" 
+        app:layout_constraintLeft_toLeftOf="parent" 
+        app:layout_constraintTop_toBottomOf="@+id/cdp1"
+    /> 
 
-also, left and right nav combo, spinner...?
+#### Drop-down Spinner
+    <com.zebra.dropdown.DropDown 
+        android:id="@+id/cdp1" 
+        android:layout_width="300dp" 
+        android:layout_height="40dp" 
+        android:layout_marginTop="30dp" 
+        android:layout_marginLeft="10dp" 
+        app:dd_gravity="CENTER" 
+        app:layout_constraintLeft_toLeftOf="parent" 
+        app:layout_constraintTop_toTopOf="parent"
+    /> 
 
 ### Embedded Tools
 
-(image on slide 11)
+The EC30 implements embedded tools&ndash;accessed through the "Power-off" Menu&ndash;as an aid to development and to allow a user to easily improve the UX for their individual use. The tools simplify changes to display size and font scaling. 
 
-To aid in development we have provided a App, launched by invoking the power menu, to change screen DPI value and font scaling
+<img alt="image" style="height:250px" src="embedded_apps.png"/>
 
-Plan is to enable this feature when developer options are selected at releasing. This will prevent regular usage.
+For organizations that wish to prevent user access to these settings, the tools are enabled only when developer options are also enabled on the device. 
 
-### Small-screen Restrictions
+### Remove Small-screen Restriction
 
-EC30 falls to small screen device category.
-This prevents some application running on this device as some feature rich applications sets the “smallScreens” attribute to false. 
-Make sure this property is set to true in the manifest file of your application.
+`PLEASE CHECK AND CONFIRM THE FOLLOWING:` 
 
+Since the EC30 clearly falls to the category of small-screen devices, a migrated app will fail to launch if its “smallScreens” attribute is to "false" in its Android manifest file. To prevent this issue in the migrated app, check that the property is set to "true" in the manifest:
 
     <supports-screens 
                       android:resizeable=["true"| "false"]
@@ -191,21 +212,23 @@ Make sure this property is set to true in the manifest file of your application.
                       android:largestWidthLimitDp="integer“
     /> 
 
+-----
 
 ## Power Management
 
-EC30 has a 1200 mAh battery.
-Proper Power Management is critical to preserving the battery life for a full shift
-Applications should be fully optimized for Doze Mode and App Standby.
-Pay attention to Doze Restrictions (https://developer.android.com/training/monitoring-device-state/doze-standby)
-Make sure Apps are efficiently managing activities during doze maintenance window
-Do not disable Doze mode through MX
-Avoid whitelisting an app for battery optimization.
-Test your app for Doze mode 
+Zebra recommends the following power-management best practices to maximize operation of EC30 devices while on battery power during a work shift. Keep in mind that the largest consumer of battery power is the display panel and its backlight.  
 
-Major source battery drain is the display hence set bit aggressive screen timeouts such as 10-15 seconds
-Use Scan Trigger or PTT wake up keys to quickly wakeup the device.
-Set brightness of the screen appropriately to avoid unnecessary battery drain.
+#####To Prolong Battery Life:
+
+* Set screen brightness to minimum level for use
+* Set a short screen timeout interval (10-15 seconds)
+* Set the device to wake after pressing scan trigger or PTT button
+* Optimize all EC30 apps for Doze mode and App Standby
+* Observe [Doze Restrictions](https://developer.android.com/training/monitoring-device-state/doze-standby)
+* Ensure apps are managing activities during the Doze maintenance window
+* Do not disable Doze mode through MX
+* Do not "whitelist" an app for battery optimization (prevents Doze mode)
+* Test app to ensure proper operation when entering/exiting Doze mode 
 
 -----
 

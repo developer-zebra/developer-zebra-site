@@ -117,7 +117,7 @@ Keep in mind that apps designed for TC-series devices might contain functionalit
 
 TC-series apps also might implement use cases or journeys that don't apply to the EC30. It's therefore a good idea to carefully consider the EC30-specific use cases and prioritize the top features and/or content of the EC30 version of the app.
 
-### Information Density, Task Flow
+### Info Density, Task Flow
 While a UX might be improved by displaying all info, app functions and user inputs on a single screen, the EC30's small screen make that unlikely. It's therefore advisable to implement the most important functions and information for each user task on sequential screens and "tuck away" supplementary information in a menu, "info" button or other access control. 
 
 <!-- ##### Break Up Existing Task Flow
@@ -125,13 +125,13 @@ With a device that has a bigger size screen, users may be able to finish their t
  -->
 
 ### Small-screen Tips
-Part of an EC30 app's UX might live outside of the app itself. Try to take a holistic view regarding how the app interacts with other EC30 devices or software components. For example, an EC30 app could eliminate the need to use the soft input panel to log into a system by employing a scan-to-login method. 
+Part of an app's UX might live outside of the app itself. Try to take a holistic view regarding how the EC30 app interacts with other devices or software components. For example, by implementing scan-to-login, an EC30 app could eliminate the need to use the soft input panel for logging in. 
 
-#####To simplify the UX: 
+#####UX Simplification Tips:
 
-* **Implement scan-to-login** to avoid keying user names and passwords
-* **Set app to auto-launch** to quicken start-of-workday processes 
-* **Consider enabling Android accessibility features**:
+* **Implement scan-to-login** to avoid typing user names and passwords
+* **Set app to auto-launch** to quicken the start-of-workday process 
+* **Consider enabling [Android accessibility](https://support.google.com/accessibility/android/answer/6006564?hl=en) features**:
  * **Voice Access** allows control with spoken commands
  * **TalkBack** combines touch with spoken input 
  * **Select to Speak** allows user to select when spoken output occurs
@@ -240,13 +240,12 @@ The EC30's 1200 mAh Li-Ion PowerPrecision+ battery is rated to provide a full 10
 
 ## Also See
 
-https://material.io/
-https://developer.android.com/guide/practices/screens_support
-https://developer.android.com/training/multiscreen/screensizes
-https://developer.android.com/training/multiscreen/screendensities
-
-https://developer.zebra.com/community/home/blog/2018/10/26/keeping-your-application-running-when-the-device-wants-to-sleep
-https://developer.android.com/topic/performance/power/
+[Google Material Design](https://material.io/) | Google app design tool
+[Screen support](https://developer.android.com/guide/practices/screens_support)
+[Handling screen sizes](https://developer.android.com/training/multiscreen/screensizes) | Google development community 
+[handling screen densities](https://developer.android.com/training/multiscreen/screendensities) | Google development community
+[Keeping an app running when it wants to sleep](https://developer.zebra.com/community/home/blog/2018/10/26/keeping-your-application-running-when-the-device-wants-to-sleep
+https://developer.android.com/topic/performance/power/) | Zebra engineering
 
 
 

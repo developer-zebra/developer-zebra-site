@@ -11,6 +11,9 @@ productversion: '7.3'
 
 > **Important:** For instructions on initial setup, refer to "Setting Up the MC3300R" section from [MC3300R Integrator Guide](https://www.zebra.com/content/dam/zebra_new_ia/en-us/manuals/mobile-computers/mc33/mc3300R-ig-en.pdf).
 
+### Version History
+* **DataWedge 6.3.22 -** Feature introduced
+
 ## RFID Input
 **RFID Input** from the DataWedge profile provides options to toggle RFID input, specify the trigger mode and configure RFID reader settings.
 
@@ -24,11 +27,11 @@ productversion: '7.3'
 * **Filter duplicate tags –** enable/disable feature to display data read only once instead of duplicating the same data from multiple readings. 
 * **Tag read duration –** amount of time (in ms) for events to propagate to the application. If the trigger is released before the timeout elapses, data is returned to the application upon trigger release. Data returned to the application is limited to the capacity of the Android bundle payload – any data read beyond that capacity is discarded.
 * **Antenna transmit power –** amount of signal power to be transmitted by the RFID reader. The higher the value, the further it is able to read the RFID tag. The range is 5 to 30 dBm. 
-* **Session -** configure session to read. This is one of the singulation controls in RFID. Supported values:
-  * Session 0
-  * Session 1 (default)
-  * Session 2
-  * Session 3
+* **Session -** configure the read session based on EPC Gen 2 standard to optimize RFID read performance. The session defines the duration of time and conditions which an inventoried tag remains in either state A or B. State A is the state in which a tag has not been inventoried. State B is the state in which the tag has been inventoried. During the inventory process, presuming the default state is A, the reader switches the tag's state to B once the read is performed. Since tags in the B state have already been accounted for, the focus can be on tags in the A state. Supported values:
+  * **Session 0 -** the tag persists in the B state as long as it is powered in the RF field. When there is no reader power, tags in the B state revert back to the A state. This can be useful to read a small number of tags quickly and repeatedly. It is not good for reading numerous tags at once since if a tag loses power momentarily, it will reset.
+  * **Session 1 (default) -** the tag persists in the B state for a limited time even after being removed from the RF field. The time period varies depending on the manufacturer, ranging from 500 ms to 5 seconds. When the time period elapses, regardless of whether the tag is powered, it reverts back to the A state.
+  * **Session 2 -** the tag persists in the B state for at least 2 seconds after being removed from the RF field. This can be useful to read large quantities of tags while minimizing duplicate reads.
+  * **Session 3 -** same as session 2
 * **Memory bank –** configure the memory bank to read. The integrated circuit (IC) on some tags have different bit allocations between the memory banks to allow for more user memory or a longer EPC (electronic product code) number. Refer to the tag specifications to determine the memory bank type needed. Supported values: 
   * **None (default) -** no memory bank to read. 
   * **Reserved -** stores the access and kill password of the tag, 32 bits each. The kill password permanently disables the tag. The access password is set to lock and unlock the write capabilities of the tag. Therefore this is writeable if a password is specified. Can typically be used if an application contains sensitive data. 

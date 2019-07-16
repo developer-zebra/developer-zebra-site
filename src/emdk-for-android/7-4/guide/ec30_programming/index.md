@@ -127,7 +127,7 @@ With a device that has a bigger size screen, users may be able to finish their t
 ### Small-screen Tips
 Part of an EC30 app's UX might live outside of the app itself. Try to take a holistic view regarding how the app interacts with other EC30 devices or software components. For example, an EC30 app could eliminate the need to use the soft input panel to log into a system by employing a scan-to-login method. 
 
-#### Ways to simplify the UX: 
+#####To simplify the UX: 
 
 * **Implement scan-to-login** to avoid keying user names and passwords
 * **Set app to auto-launch** to quicken start-of-workday processes 
@@ -191,7 +191,7 @@ To avoid manual text input through the SIP, implement drop-down "spinner" menus 
 
 ### Embedded Tools
 
-The EC30 implements embedded tools&ndash;accessed through the "Power-off" Menu&ndash;as an aid to development and to allow a user to easily improve the UX for their individual use. The tools simplify changes to display size and font scaling. 
+The EC30 implements embedded tools to simplify changes to display size and font scaling. Accessed through the "Power-off" menu, the tools are designed to aid developers and users to easily improve the UX for their individual use. 
 
 <img alt="image" style="height:250px" src="embedded_apps.png"/>
 
@@ -201,7 +201,7 @@ For organizations that wish to prevent user access to these settings, the tools 
 
 `PLEASE CHECK AND CONFIRM THE FOLLOWING:` 
 
-Since the EC30 clearly falls to the category of small-screen devices, a migrated app will fail to launch if its “smallScreens” attribute is to "false" in its Android manifest file. To prevent this issue in the migrated app, check that the property is set to "true" in the manifest:
+The EC30 falls to the category of small-screen devices, and a migrated app will fail to launch if the “smallScreens” attribute in its Android manifest file is to "false." To prevent this issue in the migrated app, the smallScreens attribute must be "true" in the app's manifest:
 
     <supports-screens 
                       android:resizeable=["true"| "false"]
@@ -219,7 +219,7 @@ Since the EC30 clearly falls to the category of small-screen devices, a migrated
 
 ## Power Management
 
-Zebra recommends the following power-management best practices to maximize operation of EC30 devices while on battery power during a work shift. Keep in mind that the largest consumer of battery power is the display panel and its backlight.  
+The EC30's 1200 mAh Li-Ion PowerPrecision+ battery is rated to provide a full 10 hours of continuous operation. However, battery performance varies greatly depending on device settings, especially those of the display panel and backlight. **To maximize operation of EC30 devices while on battery power, Zebra recommends the following power-management best practices**.
 
 #####To Prolong Battery Life:
 

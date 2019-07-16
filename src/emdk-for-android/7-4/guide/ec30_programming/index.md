@@ -33,7 +33,7 @@ The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing
 * **Outer dimensions**: `INFO NEEDED` L x W  about 1/2-inch thick
 * **Weight**: Less than 4 oz. 
 * **Display size**: 3.0 inches (diagonal) 
-* Screen dimensions**: 1.5 inches (37 mm) x 2.6 inches (67 mm)
+* **Screen dimensions**: 1.5 inches (37 mm) x 2.6 inches (67 mm)
 * **Max. resolution**: 480 x 854 pixels (FWVGA)
 * **Screen density**: 320 dpi (xhdpi)
 * **Battery**: 1200 mAh Li-Ion PowerPrecision+ 
@@ -65,7 +65,7 @@ According to [research published in 2017](https://www.uxmatters.com/mt/archives/
 <img alt="image" style="height:250px" src="how_devices_are_held.png"/>
 _**Image source**: UXmatters.com_
 
-#### Hand-holding Modes
+### Hand-holding Modes
 * **75% use one thumb** to tap the screen.
 * **Fewer than 50% use one hand** to hold the device.
 * **36% use two hands** to hold device for greater reach and stability.
@@ -73,71 +73,78 @@ _**Image source**: UXmatters.com_
 * **Holding position varies** based on device size and orientation, app context, input requirements and other factors.
 * **Holding position can change multiple times** during any app interaction.     
 
-#### Tap Accuracy
-Research shows that people prefer to tap and view content on the center of the screen. Tap accuracy varies widely depending on screen location, something to keep in mind when positioning an app's touch zones. 
+### Tap Accuracy
+Research shows that people prefer to tap on and view content in the center of the screen. Tap accuracy varies widely depending on screen location, something to keep in mind when positioning an app's touch zones. 
 
 <img alt="image" style="height:250px" src="accuracy_grid.png"/>
 _**Image source**: UXmatters.com_
 
-### Making New Apps
+-----
+
+## Making New Apps
 
 **Zebra recommends using Google Material Design** `LINK NEEDED` as a foundation for starting new apps. The guidelines listed below also might be helpful as a starting point when building UI screens from scratch. 
 
 > **What's a 'dp?'** <br>
 Modern UI tools use the term "density-dependent pixel" (dp) when referring to pixel-based screen spacing relative to a 160 dpi screen. This allows for the wide variety of screen densities available today. For example, 1dp (pronounced "one dip") is equal to one pixel on a 160 dpi screen and two pixels on a 320 dpi screen. 
 
-#### User Interactions 
+### User Interactions 
 When planning the app's Artboard, the following specs and guidelines might be helpful. 
 
-**Native resolution** of the EC30 is 480 x 854 pixels (WxH). 
-
-**In Sketch `DEFINITION OR LINK NEEDED`**, Zebra recommends using a resolution of 240 x 427 pixels. 
-
-**For margins and spacing**, most measurements should align to an 8dp grid. For iconography, typography and other small components, use a 4dp grid. To avoid an "overcrowded" UI, set padding at 10&ndash;16dp. 
-
-**Font size** for body copy should be 14pt, (Body 2 **`please define`**) and 12pt for captions. **No text should be smaller than 12pt**.  
-
-**Touch Zones** such as buttons should in most cases be set to 60dp (in at least one dimension) for most screen regions, and 80dp in areas close to screen edges. However, this recommendation is flexible since using the 80dp spec for a button bar across the bottom of the EC30 screen could contain only three buttons. **Touch zones should be no less than 48dp**. 
-
-**Produce paper prototypes** to simulate an EC30 screen and visualize the app's UI design. The EC30 screen measures about 1.5 inches (37 mm) x 2.6 inches (67 mm).  to check the UI design. Be mindful about cramping more information and functions. Less is better for EC30.
-
-**For Layouts** it's usually better to implement a ConstraintLayout, which perform better and are more user friendly than relative layouts and scrollable view ports. 
+* **Native resolution** of the EC30 is 480 x 854 pixels (WxH). 
+* **In Sketch `DEFINITION OR LINK NEEDED`**, Zebra recommends using a resolution of 240 x 427 pixels. 
+* **For margins and spacing**, most measurements should align to an 8dp grid. For iconography, typography and other small components, use a 4dp grid. To avoid an "overcrowded" UI, set padding at 10&ndash;16dp. 
+* **Font size** for body copy should be 14pt, (Body 2 **`please define`**) and 12pt for captions. **No text should be smaller than 12pt**.  
+* **Touch Zones** such as buttons should in most cases be set to 60dp (in at least one dimension) for most screen regions, and 80dp in areas close to screen edges. However, this recommendation is flexible since using the 80dp spec for a button bar across the bottom of the EC30 screen could contain only three buttons. **Touch zones should be no less than 48dp**. 
+* **Produce paper prototypes** to simulate an EC30 screen and visualize the app's UI design. The EC30 screen measures about 1.5 inches (37 mm) x 2.6 inches (67 mm).  to check the UI design. Be mindful about cramping more information and functions. Less is better for EC30.
+* **For Layouts** it's usually better to implement a ConstraintLayout, which perform better and are more user friendly than relative layouts and scrollable view ports. 
 
 -----
 
-### Porting Existing Apps 
+## Porting Existing Apps 
 Apps created for Zebra's TC-series devices can be expected to execute perfectly well on the EC30. However, UIs designed for the 5+ inch TC-series displays often present usability issues when displayed on the EC30's 3-inch screen. These can include truncated screens or controls, buttons too small to touch and/or text too small to read.Zebra recommends starting with the steps below when migrating apps to the EC30. 
 
-#### Start Here `INFO or CONFIRMATION NEEDED` 
+### Start Here `INFO or CONFIRMATION NEEDED` 
 1. Install the app to be migrated on an EC30 device and launch it. 
 2. Operate the app through all use cases and paths.
 3. Identify and list UI issues. 
 4. Modify the app's UI to address the issues.   
 5. Repeat Steps 1&ndash;4 until all UI issues are resolved.
 
-##### Compatibility
-Keep in mind that apps designed for TC-series devices might contain functionality not supported on the EC30, such as WWAN communication. To avoid app malfunctions, such features should be removed from the EC30-migrated version 
+### Compatibility
+Keep in mind that apps designed for TC-series devices might contain functionality&ndash;WWAN communications, for example&ndash;not supported on the EC30. To avoid app malfunctions, such features should be removed from the EC30-migrated version. 
 
-Feature and/or Content Prioritization
-App designed for TC series may contain more features that may not be the core use case for EC30. Therefore, consider re-prioritize the top features and/or content of your app for EC30.
+TC-series apps also might implement use cases or journeys that don't apply to the EC30. It's therefore a good idea to carefully consider the EC30-specific use cases and prioritize the top features and/or content of the EC30 version of the app.
 
-##### Information Density, Task Flow
+### Information Density, Task Flow
 While a UX might be improved by displaying all info, app functions and user inputs on a single screen, the EC30's small screen make that unlikely. It's therefore advisable to implement the most important functions and information for each user task on sequential screens and "tuck away" supplementary information in a menu, "info" button or other access control. 
 
 <!-- ##### Break Up Existing Task Flow
 With a device that has a bigger size screen, users may be able to finish their task within a single screen that can capture all the needed users’ inputs. For EC30, such single screen may be needed to break down as a series of screens to ensure usability and capture all necessary inputs to complete the same task. 
  -->
 
-##### Think Beyond One App
-Part of an EC30 app's UX might live outside of the app itself. It is necessary to take a holistic view on how your application interacts with other EC30 either hardware or software components. For example, you may deploy scan-to-login method to eliminate the need for users to use the touch keyboard to enter a complex password. You may want to provision EC30 to auto-launch your application to simplify the start-of-a-workday process. You may want to turn on certain Android built-in accessibility features by default to enhance usability.
-Alternative Layouts
-Better to use alternative layouts if the app being ported from a higher resolution device to EC30. consider changing Image resources as higher resolution resource may not fit properly
+### Small-screen Tips
+Part of an EC30 app's UX might live outside of the app itself. Try to take a holistic view regarding how the app interacts with other EC30 devices or software components. For example, an EC30 app could eliminate the need to use the soft input panel to log into a system by employing a scan-to-login method. 
 
-### Forcing Landscape
+#### Ways to simplify the UX: 
+
+* **Implement scan-to-login** to eliminate user names and passwords
+* **Set app to auto-launch** to quicken start-of-a-workday process 
+* **Consider enabling Android accessibility features**:
+ * **Voice Access** allows control with spoken commands
+ * **TalkBack** combines touch with spoken input 
+ * **Select to Speak** allows user to select when spoken output occurs
+ * **Magnification** can temporarily zoom areas of the screen
+
+
+### Alternative Layouts
+Since it's likely that the EC30-targeted app is being ported from a device with higher resolution than the EC30's 480 x 854 pixels, it's probably better to create all new UI layouts than to squeeze existing ones onto a smaller screen. 
+
+#### Force Landscape
 (image from slide 9)
 
 Force landscape text entry to provide better keyboard interaction to the user
-Make sure activity class implements following listners for touch and editor actions
+Make sure activity class implements following listeners for touch and editor actions
 View.OnClickListener
 View.OnTouchListener
 TextView.OnEditorActionListenerhighlighted

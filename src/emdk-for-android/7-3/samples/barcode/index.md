@@ -57,11 +57,11 @@ Before beginning, download, build and install the sample app. For help, please s
 ##Using This Sample
 1. When the application starts it should look similar to the image below:
   
-  <img alt="image" style="height:400px" src="barcode_1.png"/><br>
+  <img alt="image" style="height:400px" src="Barcode.jpg"/><br>
   
 2. Select a scanner to use. If the desired scanner is external to the mobile device (Bluetooth or wired), be sure it's connected and in "SSI" mode before making a selection. 
 
-  <img alt="image" style="height:400px" src="../../images/samples/barcode_2.png"/><br>
+  <img alt="image" style="height:400px" src="Barcode_scanner_list.jpg"/><br>
 
 3. Check all Decoder checkboxes (or confirm that they're already checked) so the screen appears similar to the image below: 
     
@@ -73,5 +73,5 @@ Before beginning, download, build and install the sample app. For help, please s
  
 5. Point the device at a barcode and press the scan trigger. The app displays the scanned barcode data similar to the image below: 
    
-  <img alt="image" style="height:400px" src="barcode_6.png"/><br>
+  <img alt="image" style="height:400px" src="Barcode_data.jpg"/><br>
   

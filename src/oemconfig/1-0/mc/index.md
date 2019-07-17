@@ -1,5 +1,5 @@
 ﻿---
-title: OEMConfig Managed Configurations
+title: Zebra Managed Configurations
 layout: guide.html
 product: OEMConfig
 productversion: '1.0'
@@ -9,7 +9,7 @@ productversion: '1.0'
 
 
 
-This section describes Managed Configurations that can be used to define an ordered list of Steps, where each Step defines one or more Actions or configurations to be performed on a device as part of an overall *Transaction*.
+This section describes Managed Configurations that can be used to define an ordered list of Steps, where each Step defines one or more Actions or configurations to be performed on a devices as part of an overall *Transaction*.
 
 
 

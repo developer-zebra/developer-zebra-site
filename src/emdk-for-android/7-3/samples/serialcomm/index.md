@@ -29,7 +29,7 @@ productversion: '7.3'
 ##Overview
 This sample demonstrates the EMDK Serial Communication API to enable support for DEX in your application. DEX (data exchange) is a format for collecting audit and event data from vending machines.
 
->Note: In order to use Serial **Read** functionality, you must first apply a patch provided in [SPR-28877](https://spr.motorolasolutions.com/ViewSPR.aspx?sprID=28877). To obtain this patch, contact Zebra Support.
+>Note: Use of **Serial Read** functionality requires BSP 19.03 and LifeGuard 14 or later. To obtain this OS update patch, please visit the [Zebra support portal](https://www.zebra.com/us/en/support-downloads/software/operating-system/tc70-operating-system.html). 
 
 ##Prerequisites
 

@@ -60,10 +60,11 @@ The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing
 
 ## UX/UI Considerations
 
-According to [research published in 2017](https://www.uxmatters.com/mt/archives/2017/03/design-for-fingers-touch-and-people-part-1.php) by [UX Matters](https://www.uxmatters.com/about-us/#mission-anchor), a large majority of people use only a thumb for input, and fewer than half hold the phone with one hand. It's also important to note that device-holding position can vary for an individual depending on needs of the app, size, shape and orientation of the device and the type and context of the input required. 
+According to [research published in 2017](https://www.uxmatters.com/mt/archives/2017/03/design-for-fingers-touch-and-people-part-1.php) by [UX Matters](https://www.uxmatters.com/about-us/#mission-anchor), a large majority of people use only a thumb for input, and fewer than half hold the phone with one hand. Research also showed that device-holding position can vary for an individual depending on needs of the app, size, shape and orientation of the device and the type and context of the input required. 
 
 <img alt="image" style="height:250px" src="how_devices_are_held.png"/>
 _**Image source**: UXmatters.com_
+<br>
 
 ### Hand-holding Modes
 * **75% use one thumb** to tap the screen.
@@ -74,7 +75,7 @@ _**Image source**: UXmatters.com_
 * **Holding position can change multiple times** during any app interaction.     
 
 ### Tap Accuracy
-Research shows that people prefer to tap on and view content in the center of the screen. Tap accuracy varies widely depending on screen location, something to keep in mind when positioning an app's touch zones. 
+UX Matters found that people prefer to tap on and view content in the center of the screen. Tap accuracy varies widely depending on screen location, something to keep in mind when positioning an app's touch zones. 
 
 <img alt="image" style="height:250px" src="accuracy_grid.png"/>
 _**Image source**: UXmatters.com_
@@ -229,7 +230,7 @@ The EC30's 1200 mAh Li-Ion PowerPrecision+ battery is rated to provide a full 10
 * Set screen brightness to minimum level for use
 * Set a short screen timeout interval (10-15 seconds)
 * Set the device to wake after pressing scan trigger or PTT button
-* Optimize all EC30 apps for Doze mode and App Standby
+* Optimize all EC30 apps for Doze and App Standby
 * Observe [Doze Restrictions](https://developer.android.com/training/monitoring-device-state/doze-standby)
 * Ensure apps are managing activities during the Doze maintenance window
 * Do not disable Doze mode through MX

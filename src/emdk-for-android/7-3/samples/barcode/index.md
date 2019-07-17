@@ -16,12 +16,9 @@ devices:
   - All supported devices
 image: 1.png
 screenshots:
-  - 1.png
-  - 2.png
-  - 3.png
-  - 4.png
-  - 5.png
-  - 6.png
+  - Barcode.jpg
+  - Barcode_scanner_list.jpg
+  - Barcode_data.jpg
 layout: sample.html
 product: EMDK For Android
 productversion: '7.3'
@@ -32,7 +29,7 @@ EMDK for Android can be used handle all barcode scanning entirely in Java using 
 
 >**Note**: As of EMDK 6.8, DataWedge can no longer be configured for data capture through Profile Manager. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
 
-The available actions in the [Barcode/Scanning API](/emdk-for-android/7-3/api) are:
+<!-- The available actions in the [Barcode/Scanning API](/emdk-for-android/7-3/api) are:
   
 * Set [Scanner Device](/emdk-for-android/7-3/api/barcode/BarcodeManager-DeviceIdentifier/)  
 * Set [TriggerType](/emdk-for-android/7-3/api/barcode/Scanner)
@@ -41,7 +38,9 @@ The available actions in the [Barcode/Scanning API](/emdk-for-android/7-3/api) a
 * Set [Scan Params](/emdk-for-android/7-3/api/barcode/ScannerConfig-ScanParams)
 * Scan barcodes based on selected features   
 
-This sample application permits barcode scanning based on the selected scanner and [Decoder Params](/emdk-for-android/7-3/api/barcode/ScannerConfig-DecoderParams).
+
+ This sample application permits barcode scanning based on the selected scanner and [Decoder Params](/emdk-for-android/7-3/api/barcode/ScannerConfig-DecoderParams).
+ -->
 
 ##Requirements
 * Android Studio on a Mac or Windows PC with Android API 22 (or higher) installed
@@ -54,7 +53,6 @@ This sample application permits barcode scanning based on the selected scanner a
 
 Before beginning, download, build and install the sample app. For help, please see the [Sample App Set-up Guide](/emdk-for-android/7-4/guide/emdksamples_androidstudio). 
 
-##Using This Sample
 1. When the application starts it should look similar to the image below:
   
   <img alt="image" style="height:400px" src="Barcode.jpg"/><br>
@@ -63,15 +61,19 @@ Before beginning, download, build and install the sample app. For help, please s
 
   <img alt="image" style="height:400px" src="Barcode_scanner_list.jpg"/><br>
 
-3. Check all Decoder checkboxes (or confirm that they're already checked) so the screen appears similar to the image below: 
+3. Point the device at a barcode and press the scan trigger. The app displays the scanned barcode data similar to the image below: 
+   
+  <img alt="image" style="height:400px" src="Barcode_data.jpg"/><br>
+
+> **NOTE: Sample apps are for demonstration purposes only and should not be used in production environments**.
+
+
+<!-- 3. Check all Decoder checkboxes (or confirm that they're already checked) so the screen appears similar to the image below: 
     
   <img alt="image" style="height:400px" src="barcode_4.png"/><br>
 
 4. Click the "Start" button. The Status section updates to indicate readiness similar to the image below:
 
   <img alt="image" style="height:400px" src="../../images/samples/barcode_5.png"/><br>
- 
-5. Point the device at a barcode and press the scan trigger. The app displays the scanned barcode data similar to the image below: 
-   
-  <img alt="image" style="height:400px" src="Barcode_data.jpg"/><br>
-  
+ --> 
+

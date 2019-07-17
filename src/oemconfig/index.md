@@ -9,6 +9,17 @@ productversion: '1.0'
 menu:
   title: OEMConfig 1.0
   img: /oemconfig/images/logo.png
+  versions:
+    - versionto: 1-0
+      versionfrom: 1-0
+      default: /oemconfig/1-0/about
+      label: '1.0'
+    - versionto: 1-0
+      versionfrom: 1-0
+      default: /oenconfig/1-0/about
+      label: '1.0'
+  title: OEMConfig 1.0
+  img: /oemconfig/images/logo.png
   items:
     - title: About
       url: /oemconfig/1-0/about

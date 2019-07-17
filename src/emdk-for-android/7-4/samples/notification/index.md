@@ -20,9 +20,9 @@ devices:
   - TC75x M/N/O,
   - TC77 O, 
   - WT6000 N (w/RS6000 scanner, External vibrator)
-image: 1.png
+image: 1.jpg
 screenshots:
-  - 1.png
+  - 1.jpg
   - 2.png
 layout: sample.html
 product: EMDK For Android

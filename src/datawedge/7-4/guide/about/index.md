@@ -89,6 +89,7 @@ For more information about approved languages or to download a localized operati
 * Introduced **voice capture activation by PTT** (push-to-talk) button with new [Data capture start option](../input/barcode).
 * Added support for new **[DPM parameters](../input/barcode)**. DPM parameters also added to [SetConfig](../api/setconfig) API.
 * **UDI** is supported on [selected Zebra devices](../input/barcode/#udidecoding) up to Android P (version 9.x) only.
+* **Enterprise Keyboard** option visible in the DataWedge profile screen is an upcoming feature for future use. 
 <!--* New **[Enterprise Keyboard Configuration](../utilities/ekb)** feature. // moved to DW 7.5 -->
 -----
 ## Recent Version History

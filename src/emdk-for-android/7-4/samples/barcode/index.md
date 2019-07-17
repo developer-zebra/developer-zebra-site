@@ -62,7 +62,7 @@ Before beginning, download, build and install the sample app. For help, please s
 
 3. Point the device at a barcode and press the scan trigger. The app displays the scanned barcode data similar to the image below: 
    
-  <img alt="image" style="height:400px" src="Barcode_data.jpgz"/><br>
+  <img alt="image" style="height:400px" src="Barcode_data.jpg"/><br>
 
 > **NOTE: Sample apps are for demonstration purposes only and should not be used in production environments**.
 

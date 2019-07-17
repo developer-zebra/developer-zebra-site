@@ -227,7 +227,8 @@ var sitebuild = Metalsmith(__dirname)
     //OemConfig 1.0
     .use(foldermenu({
         folder: 'oemconfig/1-0/',
-        automenu: true
+        automenu: true,
+        ascontent: true
     }))
     //emdk for android 4.0
     .use(foldermenu({

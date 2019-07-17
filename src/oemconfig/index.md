@@ -1,7 +1,7 @@
 ---
 title: OEMConfig
 insert:
-  file: oemconfig/1-0/guide/about/index.md
+  file: oemconfig/1-0/about/index.md
 layout: guide.html
 redirect_url: /oemconfig/1-0/guide/about
 product: OEMConfig

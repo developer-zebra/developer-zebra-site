@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Multi-barcode Scanning
-description: Shows how to scan multiple barcodes simultaneously based on selected scanner device, trigger type and a few decoder parameters.
+description: Shows how to scan multiple barcodes simultaneously.
 downloads:
   - title: Sample Projects
     url: 'https://github.com/Zebra/samples-emdkforandroid-7_3/archive/master.zip'
@@ -40,15 +40,6 @@ This sample demonstrates simultaneous scanning of multiple Unique Device Identif
 * **This sample illustrates a single use-case** for implementing multi-barcode features; it is not a comprehensive example of the many ways this feature could be used. 
 * **DataWedge cannot be configured for data capture through Profile Manager** when using EMDK-A 6.8 and higher. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
 
-The available actions in the [Barcode/Scanning API](/emdk-for-android/7-3/api) are:
-
-* Set Scanner Device  
-* Set TriggerType
-* Set Decoder Params
-* Set Reader Params
-* Set Scan Params
-* Scan barcodes based on selected features   
-  
 ##Requirements
 * Android Studio on a Mac or Windows PC with Android API 22 (or higher) installed.<br>See [EMDK Setup Guide](/emdk-for-android/7-4/guide/setup) for help. 
 * A supported Zebra Android device (see list above)
@@ -58,12 +49,12 @@ The available actions in the [Barcode/Scanning API](/emdk-for-android/7-3/api) a
 
 >**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
 
-**Before beginning, download, build and install the sample app**.<br> For help, please see the [Sample App Set-up Guide](/emdk-for-android/7-4/guide/emdksamples_androidstudio). 
+**Before beginning, download, build and install the sample app**.<br> See the [Sample App Set-up Guide](../../guide/emdksamples_androidstudio) for help. 
 
 1. **Launch the sample app**. It should appear similar to the image below:
   <img alt="image" style="height:400px" src="MultiBarcode.png"/>
   
-2. **Select the desired scanner, point the device at a UDI scan target with multiple barcodes and press the scan trigger**. The status area should appear similar to the image below:  
+2. **Select the desired scanner, point the device at a UDI scan target with multiple barcodes and press the scan trigger**.<br>The status area should appear similar to the image below:  
 
   <img alt="image" style="height:400px" src="MultiBarcode_scan.png"/>
 

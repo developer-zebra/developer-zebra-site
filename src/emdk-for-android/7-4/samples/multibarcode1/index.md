@@ -54,7 +54,7 @@ This sample demonstrates simultaneous scanning of multiple Unique Device Identif
 1. **Launch the sample app**. It should appear similar to the image below:
   <img alt="image" style="height:400px" src="MultiBarcode.png"/>
   
-2. **Select the desired scanner, point the device at a UDI scan target with multiple barcodes and press the scan trigger**.<br>The status area should appear similar to the image below:  
+2. **Select the desired scanner, point the device at a UDI scan target with multiple barcodes and tap the Scan button**.<br>The status area should appear similar to the image below:  
 
   <img alt="image" style="height:400px" src="MultiBarcode_scan.png"/>
 

@@ -7,11 +7,13 @@ productversion: '1.0'
 menu:
   items:
     - title: About
-      url: /about
+      url: /oemconfig/1-0/about
+    - title: FAQs
+      url: /oemconfig/1-0/faq
     - title: Managed Configurations
-      url: /mc
+      url: /oemconfig/1-0/mc
     - icon: fa fa-search
-      url: /search
+      url: /oemconfig/1-0/search
 ---
 
 

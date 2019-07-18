@@ -6,24 +6,20 @@ productversion: '1.0'
 menu:
   items:
     - title: About
-      url: /about
+      url: /oemconfig/1-0/about
+    - title: FAQs
+      url: /oemconfig/1-0/faq
     - title: Managed Configurations
-      url: /mc
+      url: /oemconfig/1-0/mc
     - icon: fa fa-search
-      url: /search
+      url: /oemconfig/1-0/search
 ---
 
-# Transaction Steps Level
-
-
+## Transaction Steps Level
 
 This section describes Managed Configurations that can be used to define an ordered list of Steps, where each Step defines one or more Actions or configurations to be performed on a devices as part of an overall *Transaction*.
 
-
-
 ### Transaction Steps
-
-
 
 Use this Array to define a sequence of *Transaction Steps*, where each *Transaction Step* will perform one or more Actions and/or configure one or more aspects of a device.
 
@@ -68,7 +64,7 @@ This section describes Managed Configurations that can be used to define the con
 
 
 
-## Explanation
+### Explanation
 
 
 
@@ -87,7 +83,7 @@ Since a *Transaction* may include many *Transaction Steps* and each *Transaction
 - Type = string 
 
 
-## Error Mode
+### Error Mode
 
 
 
@@ -110,6 +106,7 @@ By default, execution will continue with the next *Transaction Step* once execut
 
 - Choices = ***Stop*** , ***Continue*** 
 
+-----
 
 ## Analytics Configuration
 
@@ -180,6 +177,7 @@ The Analytics Client is turned on (enabled) by default on all devices: - If the 
 
 - Supported from: MX 7.2.
 
+-----
 
 ## Audio Configuration
 
@@ -288,6 +286,7 @@ Select the audio replication behavior of of a device.
 
 - Supported from: MX 7.2.
 
+-----
 
 ## Auto Trigger Configuration
 
@@ -373,6 +372,7 @@ Select the range at which automatic triggering will detect the presence of an ob
 
 - Supported from: MX 8.1.
 
+-----
 
 ## Blacklist Configuration
 

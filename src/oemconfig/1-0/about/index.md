@@ -6,16 +6,20 @@ productversion: '1.0'
 menu:
   items:
     - title: About
-      url: /about
+      url: /oemconfig/1-0/about
+    - title: FAQs
+      url: /oemconfig/1-0/faq
     - title: Managed Configurations
-      url: /mc
+      url: /oemconfig/1-0/mc
     - icon: fa fa-search
-      url: /search
+      url: /oemconfig/1-0/search
 ---
 
 ## Overview
 
 `UNDER CONSTRUCTION`
+
+
 
 <!-- 
 The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow developers of EMM solutions to adapt their products to manage Zebra devices. This has historically involved interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. 

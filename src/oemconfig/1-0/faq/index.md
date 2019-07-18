@@ -3,24 +3,15 @@ title: Frequently Asked Questions
 layout: guide.html
 product: OEMConfig
 productversion: '1.0'
-menu:
-  items:
-    - title: About
-      url: /oemconfig/1-0/about
-    - title: FAQs
-      url: /oemconfig/1-0/faq
-    - title: Managed Configurations
-      url: /oemconfig/1-0/mc
-    - icon: fa fa-search
-      url: /oemconfig/1-0/search
 ---
 
 ## Overview
 
 Zebra OEMConfig is an approach to performing administrative tasks on Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only method available that's based on publicly available specifications developed by Google and the Android community. Below are some common questions related to OEMConfig, Managed Configurations and the schemas that drive them. 
 
+<!-- 
 Also see the [Glossary of terms](../glossary).
-
+ -->
 -----
 
 **Q: What is OEMConfig?**

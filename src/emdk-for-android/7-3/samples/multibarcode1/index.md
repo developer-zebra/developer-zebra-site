@@ -34,7 +34,7 @@ productversion: '7.3'
 ---
 
 ##Overview
-This sample demonstrates simultaneous scanning of multiple Unique Device Identification (UDI) barcodes using capabilities in the Barcode/Scanning APIs introduced with EMDK for Android 6.8. These APIs work independently of any [Data Capture profiles](/emdk-for-android/7-3/mx/data-capture/barcode).  
+This sample demonstrates simultaneous scanning of multiple barcodes using capabilities in the Barcode/Scanning APIs introduced with EMDK for Android 6.8. These APIs work independently of any [Data Capture profiles](../../mx/data-capture/barcode).  
 
 #### Notes
 
@@ -42,9 +42,9 @@ This sample demonstrates simultaneous scanning of multiple Unique Device Identif
 * **DataWedge cannot be configured for data capture through Profile Manager** when using EMDK-A 6.8 and higher. Zebra recommends using the [DataWedge APIs](/datawedge/latest/guide/api/) instead.
   
 ##Requirements
-* Android Studio on a Mac or Windows PC with Android API 22 (or higher) installed.<br>See [EMDK Setup Guide](/emdk-for-android/7-4/guide/setup) for help. 
+* Android Studio on a Mac or Windows PC with Android API 22 (or higher) installed.<br>See [EMDK Setup Guide](../../guide/setup) for help. 
 * A supported Zebra Android device (see list above)
-* A scan target with two or more UDI barcodes
+* A scan target with two or more barcodes
 
 ##Using Sample App
 
@@ -55,7 +55,7 @@ This sample demonstrates simultaneous scanning of multiple Unique Device Identif
 1. **Launch the sample app**. It should appear similar to the image below:
   <img alt="image" style="height:400px" src="MultiBarcode.png"/>
   
-2. **Select the desired scanner, point the device at a UDI scan target with multiple barcodes and tap the Scan button**.<br>The status area should appear similar to the image below:  
+2. **Select the desired scanner, point the device at a scan target that contains multiple barcodes and tap the Scan button**.<br>The status area should appear similar to the image below:  
 
   <img alt="image" style="height:400px" src="MultiBarcode_scan.png"/>
 

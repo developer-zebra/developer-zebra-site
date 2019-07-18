@@ -31,33 +31,31 @@ product: EMDK For Android
 productversion: '7.4'
 ---
 
-
 ##Overview
-This sample application shows how the Barcode API's UDI Label scanning features can be used to scan Barcodes in a UDI Label. This API supports scanning of labels from three issuing agencies ( GS1, ICCBBA, and HIBCC).
+This sample app demonstrates how to scan barcodes that use any of the three Unique Device Identification (UDI) standards: GS1, ICCBBA, and HIBCC.
 
 #### NOTES
 * **This sample illustrates a single use-case** for implementing UDI label scanning features; it is not a comprehensive example of the many ways this feature could be used. 
-* **For a complete example of barcode scanning implementation**, see [Barcode Sample 1](../barcode).
+* **For a complete barcode scanning implementation example**, see [Barcode Sample 1](../barcode).
 
-<!-- 6/27/19- removed, per eng. Runtime NA. 
-##Prerequisites
-Although this sample may work with previous versions of the EMDK, it is advised to [update the EMDK runtime](../../guide/setupDevice/) on your device before loading this sample.
- -->
-##Loading the Sample Application
-The following guide will walk you through setting up the EMDK samples in your IDE.
+##Requirements
+* Android Studio on a Mac or Windows PC with Android API 22 (or higher) installed.<br>See [EMDK Setup Guide](../../guide/setup) for help. 
+* A supported Zebra Android device (see list above)
+* A scan target containing a UDI barcode
 
-* [Android Studio](/emdk-for-android/7-4/guide/emdksamples_androidstudio)
+##Using Sample App
 
 >**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
 
-##Using This Sample
+**Before beginning, download, build and install the sample app**.<br> See the [Sample App Set-up Guide](../../guide/emdksamples_androidstudio) for help. 
 
-**1.**  With Trigger type set to **Hard**, Press the **Scan** button to enable the scanner.
+1. **Set the Trigger type set to "Hard" and tap the Scan button** to enable the scanner. The status are displays "Waiting" similar to the image below:
 
-* Status Label will display **Waiting**
-  ![img](2.png)
+  <img alt="image" style="height:400px" src="2.png"/><br>
 
-**2.**  Now point the scanner of your device at a UDI Label and press the Hardware Scan Trigger.
+2.  **Point the device at a UDI label and press the hardware scan trigger**. The UDI label type and its UDI data are displayed:
 
-* Upon a successful scan, the type of UDI label and a table of UDI Data will be displayed.
-  ![img](3.png)
+  <img alt="image" style="height:400px" src="3.png"/>
+
+> **NOTE: Sample apps are for demonstration purposes only and should not be used in production environments**.
+

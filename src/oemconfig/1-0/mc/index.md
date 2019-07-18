@@ -3,6 +3,14 @@ title: Zebra Managed Configurations
 layout: guide.html
 product: OEMConfig
 productversion: '1.0'
+menu:
+  items:
+    - title: About
+      url: /about
+    - title: Managed Configurations
+      url: /mc
+    - icon: fa fa-search
+      url: /search
 ---
 
 # Transaction Steps Level

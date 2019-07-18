@@ -26,19 +26,15 @@ devices:
   - TC77 O
 image: 1.png
 screenshots:
-  - 1.png
-  - 2.png
-  - 3.png
-  - 4.png
-  - 5.png
-  - 6.png
+  - MultiBarcode.png
+  - MultiBarcode_scan.png
 layout: sample.html
 product: EMDK For Android
 productversion: '7.3'
 ---
 
 ##Overview
-This sample demonstrates simultaneous scanning of multiple barcodes using new capabilities in the Barcode API [Barcode/Scanning APIs](/emdk-for-android/7-3/api) introduced with EMDK for Android 6.8. These APIs work independently of any [Data Capture profiles](/emdk-for-android/7-3/mx/data-capture/barcode).  
+This sample demonstrates simultaneous scanning of multiple Unique Device Identification (UDI) barcodes using capabilities in the Barcode/Scanning APIs introduced with EMDK for Android 6.8. These APIs work independently of any [Data Capture profiles](/emdk-for-android/7-3/mx/data-capture/barcode).  
 
 #### Notes
 
@@ -54,73 +50,24 @@ The available actions in the [Barcode/Scanning API](/emdk-for-android/7-3/api) a
 * Set Scan Params
 * Scan barcodes based on selected features   
   
-<!-- 12/18/18- these links are no longer valid:
-* Set [Scanner Device](/emdk-for-android/6-10/api/barcode/BarcodeManager-DeviceIdentifier/)  
-* Set [TriggerType](/emdk-for-android/6-10/api/barcode/Scanner)
-* Set [Decoder Params](/emdk-for-android/6-10/api/barcode/ScannerConfig-DecoderParams)
-* Set [Reader Params](/emdk-for-android/6-10/api/barcode/ScannerConfig-ReaderParams)
-* Set [Scan Params](/emdk-for-android/6-10/api/barcode/ScannerConfig-ScanParams)
-* Scan barcodes based on selected features   
-
- -->
-
-
 ##Requirements
-Android API 22 (or higher) must be installed via the SDK Manager before attempting to load this sample.
+* Android Studio on a Mac or Windows PC with Android API 22 (or higher) installed.<br>See [EMDK Setup Guide](/emdk-for-android/7-4/guide/setup) for help. 
+* A supported Zebra Android device (see list above)
+* A scan target with two or more UDI barcodes
 
-##Loading the Sample Application
-The following guide will walk you through setting up the EMDK samples in your IDE.
-
-* [Android Studio](/emdk-for-android/7-3/guide/emdksamples_androidstudio)
+##Using Sample App
 
 >**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
 
-##Using This Sample
-1. When the application starts it should look like the following.
+**Before beginning, download, build and install the sample app**.<br> For help, please see the [Sample App Set-up Guide](/emdk-for-android/7-4/guide/emdksamples_androidstudio). 
+
+1. **Launch the sample app**. It should appear similar to the image below:
+  <img alt="image" style="height:400px" src="MultiBarcode.png"/>
   
-  ![img](barcode_1.png)
-  
-2. Set scanner to "Serial SSI Scanner", which is the default one". 
+2. **Select the desired scanner, point the device at a UDI scan target with multiple barcodes and press the scan trigger**. The status area should appear similar to the image below:  
 
-  ![img](../../images/samples/barcode_2.png)
+  <img alt="image" style="height:400px" src="MultiBarcode_scan.png"/>
 
-3. Set Trigger Type to "HARD".
-
-  ![img](barcode_3.png)
-
-  > Note: Trigger Type "HARD" lets you scan the barcode using device's hard scan key whereas "SOFT" allows you to scan without using devic's hard scan key.
-
-4. Keep all checkboxes checked for decoder params and this is how it should look after setting all fields.
-    
-  ![img](barcode_4.png)    
-
-5. Click "Start" button and the status will be updated.
-
-  ![img](../../images/samples/barcode_5.png) 
+> **NOTE: Sample apps are for demonstration purposes only and should not be used in production environments**.
  
-6. Since we selected Trigger Type as "HARD", press the hard scan key of Symbol device and scan a particular barcode. It will get the scanned barcode data in "Data" field of UI.
-   
-  ![img](barcode_6.png)  
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

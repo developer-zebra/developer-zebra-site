@@ -230,21 +230,6 @@ var sitebuild = Metalsmith(__dirname)
         automenu: true,
         ascontent: true
     }))
-    .use(foldermenu({
-        folder: 'oemconfig/1-0/about/',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'oemconfig/1-0/mc/',
-        automenu: true,
-        ascontent: true
-    }))
-    .use(foldermenu({
-        folder: 'oemconfig/1-0/search/',
-        automenu: true,
-        ascontent: true
-    }))
     //emdk for android 4.0
     .use(foldermenu({
         folder: 'emdk-for-android/4-0/api/',

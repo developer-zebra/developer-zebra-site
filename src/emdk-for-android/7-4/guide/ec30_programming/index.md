@@ -241,12 +241,10 @@ The EC30's 1200 mAh Li-Ion PowerPrecision+ battery is rated to provide a full 10
 
 ## Also See
 
-[Google Material Design](https://material.io/) | Google app design tool
-[Screen support](https://developer.android.com/guide/practices/screens_support)
-[Handling screen sizes](https://developer.android.com/training/multiscreen/screensizes) | Google development community 
-[handling screen densities](https://developer.android.com/training/multiscreen/screendensities) | Google development community
-[Keeping an app running when it wants to sleep](https://developer.zebra.com/community/home/blog/2018/10/26/keeping-your-application-running-when-the-device-wants-to-sleep
-https://developer.android.com/topic/performance/power/) | Zebra engineering
-
-
+* [Google Material Design](https://material.io/) | Google app design tool
+* [Screen compatibility overview](https://developer.android.com/guide/practices/screens_support)
+* [Support different screen sizes](https://developer.android.com/training/multiscreen/screensizes) | Google development community 
+* [Support different pixel densities](https://developer.android.com/training/multiscreen/screendensities) | Google development community
+* [Optimize for battery life](https://developer.android.com/topic/performance/power/) | Google development community
+* [Keeping an app running when it wants to sleep](https://developer.zebra.com/community/home/blog/2018/10/26/keeping-your-application-running-when-the-device-wants-to-sleep) | Zebra engineering
 

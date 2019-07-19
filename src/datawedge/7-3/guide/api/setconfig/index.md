@@ -32,9 +32,8 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 6.9/7.0 -** Added support for Voice Input and Global Scanner Configuration
 * **DataWedge 7.1 -** New configuration for: full profile (all plugins, APP_LIST, and Data Capture Plus), Data Capture Plus, IP (Internet Protocol), MSR (Magnetic Stripe Reader), Simulscan. New SEND_RESULT result code for multiple plugins. 
 * **DataWedge 7.2 -** Added new DotCode decoder support.
-* **DataWedge 7.3 -** 
-	* Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
-	* Added new RFID Input feature and new Enterprise Keyboard Configuration feature.
+* **DataWedge 7.3 -** Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
+* **DataWedge 7.3.22 -** Added new RFID Input feature.
 
 ### Function Prototype
 

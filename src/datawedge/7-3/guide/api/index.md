@@ -68,6 +68,8 @@ automenu:
           url: setignoredisabledprofiles
         - title: Set Reporting Options 
           url: setreportingoptions   
+        - title: Soft RFID Trigger 
+          url: softrfidtrigger
         - title: Soft Scan Trigger 
           url: softscantrigger
         - title: Switch Scanner 

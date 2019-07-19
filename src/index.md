@@ -32,6 +32,8 @@ products:
     sections:
       - title: About
         url: /datawedge/7-4/guide/about
+      - title: Getting Started
+        url: /datawedge/7-4/guide/gettingstarted
       - title: Setup
         url: /datawedge/7-4/guide/setup
       - title: Profiles

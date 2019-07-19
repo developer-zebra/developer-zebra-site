@@ -7,10 +7,19 @@ productversion: '7.4'
 
 ## Overview
 
-DataWedge provides “zero-code” barcode scanning and processing services for Zebra devices running Android. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
+DataWedge provides the capability for any application on the device to acquire data from various input sources (such as barcode scanner, MSR, RFID, voice, and serial port) and manipulate the data as needed based on simple options or complex rules. Available out-of-the-box with every Zebra Android device, DataWedge can easily be configured to automatically provide data capture services within any particular app; to use a particular scanner, reader or other peripheral device; and to properly format and transmit data to the right app.
+
+There are two approaches to capture data:
+* **DataWedge “zero-code” approach** eliminates the need for any programming or app modification by capturing and processing data with the use of [DataWedge profiles](../profiles) configured from the user interface.
+* **[DataWedge APIs](../api)** provide the ability to programmatically control, modify and query the DataWedge configuration settings and operations through Android intents. This allows new or existing Android apps to be easily modified to acquire data using Zebra devices without concern of the underlying hardware. 
+
+Follow the [Getting Started](../gettingstarted) guide, which discusses both approaches and includes a programmer's guide on common use cases and best practices.
+
+<!--
+DataWedge provides “zero-code” barcode scanning and processing services for Zebra devices running Android with the use of profiles. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
 
 When programmatic control is required, [DataWedge APIs](../api) provide the ability to control, modify and query the DataWedge configuration settings and operations through Android intents. This allows new or existing Android apps to be easily modified with an organization's current development resources to acquire data using Zebra devices. 
-
+-->
 To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
 
 -----
@@ -18,13 +27,14 @@ To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scen
 **Go to ["What's New" section](#newindatawedge71)**
 
 ### Main Functionality
-The version of DataWedge documented in this guide provides the following primary functions and options: 
+DataWedge provides the following primary functions and options (feature availability may vary by version - refer to [Version History](./#recentversionhistory)): 
 #### Data Capture
 * Scan and process all [major barcode symbologies](../input/barcode/#decoderselection)
 * Use existing apps to [acquire barcodes](../input/barcode), images, text, phone numbers, mag-stripe and other data
 * Set DataWedge to [acquire scanned data for one or multiple apps](../setup)
 * Read RFID (radio-frequency identification) tags with [RFID Input](../input/rfid)
 * Use voice capture to acquire data with [Voice Input](../input/voice)
+* Use a [magnetic stripe reader (MSR)](../input/msr) to capture data
 * Acquire multiple types of data in a single scan [using SimulScan](../input/simulscan) 
 * Designate device screen areas as scan triggers using [Data Capture Plus](../input/dcp)
 * [Create Profiles](../overview) to implement DataWedge features for individual apps 

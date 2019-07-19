@@ -18,7 +18,7 @@ _Click images to enlarge_
 #### App Compatibility
 The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing devices; applications written for Zebra's TC-series should run on the EC30. However, the EC30's 3-inch display is about half the size of most others, so apps often require adjustments to ensure a pleasant user experience. 
 
-Zebra recommends reading Google's [screen compatibility overview](https://developer.android.com/guide/practices/screens_support) and guidelines for adapting apps to [support different screen sizes](https://developer.android.com/training/multiscreen/screensizes). These and other useful links can be found in the [Also See](#alsosee) section at the bottom of this document.
+**Zebra recommends reading Google's [screen compatibility overview](https://developer.android.com/guide/practices/screens_support) and guidelines for adapting apps to [support different screen sizes](https://developer.android.com/training/multiscreen/screensizes)**. These and other useful links can be found in the [Also See](#alsosee) section at the bottom of this document.
 
 #### Deviations from TC-Series Devices
 

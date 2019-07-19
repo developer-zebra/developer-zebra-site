@@ -50,8 +50,8 @@ Actions are implemented as intent extras. See [sample code](#samplecode) for syn
 **Type**: Bundle<br>
 **Parameters**: LED, Timeout<br>
 * **"LED"**: Boolean<br>
- * **"true"**: Unlock cradle slot and flash its LED<br>
- * **"false": Unlock cradle without flashing LED (default)**<br>
+ * **"true"**: Unlock cradle slot and light its LED solid green<br>
+ * **"false": Unlock cradle lighting LED (default)**<br>
 * **"TIMEOUT"**: Integer<br>
  * **Range**: 5&ndash;20 (seconds)<br>
  * **Step value**: 1<br>

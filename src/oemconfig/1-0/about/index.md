@@ -17,17 +17,13 @@ menu:
 
 ## Overview
 
-`UNDER CONSTRUCTION`
+Zebra OEMConfig is an administrative tool for configuring Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only available method based on publicly available specifications developed by Google and the Android community. OEMConfig interfaces with Zebra's [MX Management System (MXMS or just MX)](/mx/overview), an XML-based communication framework for managing the capabilities and behaviors of Zebra Android devices. 
 
+Since the release of Android Enterprise, capabilities once accessible only through MX can now be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. Functions lacking an Android API can be configured using OEMConfig, which interfaces with MX through the Android Managed Configurations mechanism. 
 
-Zebra OEMConfig is an administrative tool for configuring Zebra Android devices using Android Managed Configurations. To configure a feature for which no Android Enterprise API is available, Managed Configurations is the only method available that's based on publicly available specifications developed by Google and the Android community. Below are some common questions related to OEMConfig, Managed Configurations and the schemas that drive them. 
-
+There's more about OEMConfig in [frequently asked questions](../faq).
 
 <!-- 
-The Zebra Enterprise Mobility Management Toolkit (EMMTK) is designed to allow developers of EMM solutions to adapt their products to manage Zebra devices. This has historically involved interfacing with the [MX Management System (MXMS)](/mx/overview), Zebra's XML-based communication framework for managing the capabilities and behaviors of its Android devices. 
-
-With the emergence of Android Enterprise, some capabilities once accessible only through Zebra's proprietary management layer can now be controlled by an agent designated as a "Android Enterprise Device Owner" (AEDO) using standardized Android APIs. Functions lacking an Android API can be configured using OEMConfig, a Google-sanctioned approach developed by Zebra that controls device settings through the Android Managed Configurations mechanism. [More about OEMConfig](../glossary/#oemconfig).
-
 **The general Zebra staging process**:​
 
 * **Create staging profiles** through the StageNow desktop client
@@ -37,6 +33,8 @@ With the emergence of Android Enterprise, some capabilities once accessible only
  * Configure the device for connection to a staging network​
  * Download, install, configure and launch an EMM agent on the device​
  * Perform persistence and/or other desired staging tasks
+
+
 
 The primary method of integrating an EMM solution with Zebra's staging tools is through the [Staging Service APIs](../api). This guide contains all information necessary for adding Zebra-device staging capabilities to an EMM management console. 
 

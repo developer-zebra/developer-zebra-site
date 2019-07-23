@@ -58,22 +58,20 @@ products:
       - url: datawedge/5-0/guide/about
         label: '5.0'
   - title: DEX Scan & Pair
-    description: Instantly test and diagnose device system operability to determine system health.
-    url: /dex/1-5/guide/about
+    description: Easily pair the DX30 Bluetooth accessory to a mobile computer for DEX communications
+    url: /dex-scanpair/1-8/guide/about
     btn-text: Latest Guides
-    image: /ddt/ddt_logo.png
+    image: /dex-scanpair/dex-scanpair.png
     sections:
       - title: About
-        url: /dex/1-5/guide/about
+        url: /dex-scanpair/1-8/guide/about
       - title: Installation
-        url: /dex/1-5/guide/install
+        url: /dex-scanpair/1-8/guide/install
       - title: Configuration
-        url: /dex/1-5/guide/configuration
-      - title: Usage
-        url: /dex/1-5/guide/usage
+        url: /dex-scanpair/1-8/guide/configuration
     versions:
-      - url: /dex/1-5/guide/about
-        label: '1.5'
+      - url: /dex-scanpair/1-8/guide/about
+        label: '1.8'
   - title: EMDK For Android
     description: "The Enterprise Mobility Developer Kit includes Java sample projects using EMDK APIs, Data Capture, Profile Manager, etc."
     url: /emdk-for-android/6-6/guide/about

@@ -1,8 +1,8 @@
 ---
 title: DEX Scan & Pair
-img: ddt_logo.png
+img: dex-scanpair.png
 layout: redirect.html
-redirect_url: /dex/1-5/guide/about
+redirect_url: /dex-scanpair/1-8/guide/about
 ---
 
 ### Loading the latest Diagnostic Tool documentation...

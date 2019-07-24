@@ -13,13 +13,13 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 
 -----
 
-OLD OLD OLD
-
 ### Supported Devices
 
-EMDK-X has been designed to work with all Zebra mobile computers running Android. **Devices and/or dessert flavors in bold are newly added** in the current release. 
+EMDK-X has been designed to work with all Zebra mobile computers running Android. 
 
-**Devices tested and validated**:
+**Devices and/or dessert flavors shown in bold below are newly added** in the current release. 
+
+**Devices tested and validated for this release**:
 
 ### Mobile devices
 
@@ -34,7 +34,6 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 * TC56 - **Oreo**
 * TC57 - Oreo
 * TC72 - Oreo, **Pie**
-* TC75x  - Marshmallow, Nougat 
 * TC77 - Oreo
 * **VC8300 - Oreo**
 
@@ -56,19 +55,19 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 
 
 ### Device Support
-**Support <u>added</u> for these Zebra devices running Android 8.x Oreo**:<br>
+**Support <u>added</u> for Zebra devices running Android 8.x Oreo**:<br>
 * EC30 
 * ET51 
 * ET56 
 * L10 
 * VC8300 
 
-**Support <u>added</u> for these Zebra devices running Android 9.x Pie**:<br>
+**Support <u>added</u> for Zebra devices running Android 9.x Pie**:<br>
 * PS20
 * TC52 
 * TC72
 
-**Support <u>terminated</u> for these Zebra devices running Android 7.x Nougat**:<br>
+**Support <u>terminated</u> for Zebra devices running Android 7.x Nougat**:<br>
 * MC33
 * TC20 
 * TC25
@@ -84,13 +83,13 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 * Microsoft Visual Studio 2019
 * Android 9.x Pie 
 
-#### Support ends: 
+#### Support terminated: 
 * Android 7.x Nougat
 
 To target Zebra devices running Android 7.x Nougat, please use [EMDK for Xamarin 4.0](/emdk-for-xamarin/4-0/guide/about).  
 
 #### Deprecations:
-Support for Unique Device Identification (UDI) standard barcodes such as GS1, HIBCC and ICCBBA in Barcode APIs has been deprecated; support will be terminated in Android 10 Q. 
+Support for Unique Device Identification (UDI) standard barcodes such as GS1, HIBCC and ICCBBA in Barcode APIs has been deprecated; **support will be terminated in Android 10 Q**. 
 
 -----
 

@@ -7,17 +7,17 @@ content-items:
     level: 4
     title: Set up EMDK For Xamarin
     text: Step-by-step setup instructions for Mac OS and Windows development hosts.
-    url: /emdk-for-xamarin/4-0/guide/nuget
+    url: /emdk-for-xamarin/5-0/guide/nuget
   - type: section
     level: 4
     title: Build 'Hello EMDK' App
     text: A simple getting-started tutorial for beginners.
-    url: /emdk-for-xamarin/4-0/tutorial/helloxamarin
+    url: /emdk-for-xamarin/5-0/tutorial/helloxamarin
   - type: section
     level: 4
     title: Using Profile Manager
     text: Learn how to automatically generate the XML needed for configuring Zebra devices.
-    url: /emdk-for-xamarin/4-0/guide/profile-manager
+    url: /emdk-for-xamarin/5-0/guide/profile-manager
 product: EMDK For Xamarin
 productversion: '5.0'
 ---
@@ -28,7 +28,7 @@ productversion: '5.0'
     level: 4
     title: Configure A Device
     text: Update a device to provide full feature support
-    url: /emdk-for-xamarin/4-0/guide/deviceupdate
+    url: /emdk-for-xamarin/5-0/guide/deviceupdate
 
  -->
 

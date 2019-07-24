@@ -11,12 +11,12 @@ This document contains step by step instructions for using EMDK Api's in a new X
 ##Create a new project
 When creating a project for this tutorial use the project name **GettingStartedTutorial**
 
-Follow this [guide](/emdk-for-xamarin/4-0/guide/newprojectvisualstudio) to create a new project in Visual Studio.
+Follow this [guide](/emdk-for-xamarin/5-0/guide/newprojectvisualstudio) to create a new project in Visual Studio.
 
-Follow this [guide](/emdk-for-xamarin/4-0/guide/newprojectxamarinstudio) to create a new project in Xamarin Studio.
+Follow this [guide](/emdk-for-xamarin/5-0/guide/newprojectxamarinstudio) to create a new project in Xamarin Studio.
 
 ##Add Symbol EMDK Component
-Follow this [guide](/emdk-for-xamarin/4-0/guide/component/install) to add the needed component you your project.
+Follow this [guide](/emdk-for-xamarin/5-0/guide/component/install) to add the needed component you your project.
 
 ##Build a Profile
 In this project we will perform a simple task to demonstrate how to use the ProfileManager Wizard to create a profile

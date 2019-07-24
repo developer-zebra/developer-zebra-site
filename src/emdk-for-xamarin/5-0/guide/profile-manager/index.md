@@ -137,7 +137,7 @@ Profile Manager is an exclusive EMDK technology offered within your IDE, providi
 	>The profile XML will be updated and saved to "EMDKConfig.XML" inside your projects "assets" folder.
 
 ##Using the Profile Manager API
-Once you create your profiles using the Profile Manager, they will be bundled with your application and available to access using the [Profile Manager APIs](/emdk-for-xamarin/4-0/api/). These profiles will NOT be applied on the device until it is processed using these APIs.
+Once you create your profiles using the Profile Manager, they will be bundled with your application and available to access using the [Profile Manager APIs](/emdk-for-xamarin/5-0/api/). These profiles will NOT be applied on the device until it is processed using these APIs.
 
 ### Multiple Ways to Access
 In the ProfileManager API, you will see methods for `ProcessProfile` and `ProcessProfileAsync`. Essentially the last parameter, `extraData`, is one of two types:
@@ -156,7 +156,7 @@ A profile is created or activated with using the PROFILE_FLAG.SET option. If the
 
 ## Usage Notes
 ### Get Started with a Tutorial
-Be sure to follow step by step instructions for using the Profile Manager and the associated API's in the [Getting Started Tutorial](/emdk-for-xamarin/4-0/tutorial/helloxamarin)
+Be sure to follow step by step instructions for using the Profile Manager and the associated API's in the [Getting Started Tutorial](/emdk-for-xamarin/5-0/tutorial/helloxamarin)
 
 ### Multiple Instance of Features
 There should only be one instance of the DataCapture feature. The EMDK Profile Manager will not allow you to add multiple DataCapture features, but may happen if you are manually editing the EMDKConfig.xml. Other profile features can have multiple instances and may be required in some cases. For example, you may need two 'Certificate Manager' features. The first one to initialize the certificate store and the second one to install a new certificate.

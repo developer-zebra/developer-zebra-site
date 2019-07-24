@@ -17,26 +17,26 @@ OLD OLD OLD
 
 ### Supported Devices
 
-EMDK-X has been designed to work with all Zebra mobile computers running Android. 
+EMDK-X has been designed to work with all Zebra mobile computers running Android. **Devices and/or dessert flavors in bold are newly added** in the current release. 
 
 **Devices tested and validated**:
 
 ### Mobile devices
 
-* MC33 - Nougat, Oreo
-* PS20 - Oreo
-* TC20 - Nougat
-* TC25 - Nougat
-* TC51 - Marshmallow, Nougat
-* TC52 - Oreo
-* TC56 - Marshmallow, Nougat
+* **EC30 - Oreo**
+* **ET51 - Oreo**
+* **ET56 - Oreo**
+* **L10 - Oreo**
+* MC33 - Oreo
+* PS20 - Oreo, **Pie**
+* TC51 - **Oreo**
+* TC52 - Oreo, **Pie**
+* TC56 - **Oreo**
 * TC57 - Oreo
-* TC70x - Marshmallow, Nougat
-* TC72 - Oreo
+* TC72 - Oreo, **Pie**
 * TC75x  - Marshmallow, Nougat 
 * TC77 - Oreo
-* VC80x  - Nougat
-* WT6000 - Nougat
+* **VC8300 - Oreo**
 
 ### Scanners and imagers
 
@@ -54,20 +54,43 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 
 ## New in v5.0
 
-Device Support  
-Newly supported devices in this release: EC30 Oreo, ET51 Oreo, ET56 Oreo, L10 Oreo, VC8300 Oreo, PS20 Pie, TC52 Pie, TC72 Pie 
 
-Device support dropped with this release: MC33 Nougat, TC20 Nougat, TC25 Nougat, TC51 Nougat, TC56 Nougat, TC70x Nougat, TC75x Nougat, VC80x Nougat, WT6000 Nougat 
+### Device Support
+**Support <u>added</u> for these Zebra devices running Android 8.x Oreo**:<br>
+* EC30 
+* ET51 
+* ET56 
+* L10 
+* VC8300 
 
-FROM 5.0 RELEASE NOTES: 
-Support for Visual Studio 2019 has been added - EMDK for Xamarin 5.0 is the first version supporting Visual Studio 2019.  
+**Support <u>added</u> for these Zebra devices running Android 9.x Pie**:<br>
+* PS20
+* TC52 
+* TC72
 
-Support for Pie (Android 9) devices has been added - EMDK for Xamarin 5.0 is the first version supporting Pie (Android 9) devices.  
+**Support <u>terminated</u> for these Zebra devices running Android 7.x Nougat**:<br>
+* MC33
+* TC20 
+* TC25
+* TC51
+* TC56 
+* TC70x 
+* TC75x 
+* VC80x
+* WT6000 
 
-Support for Nougat (Android 7.1) devices has been terminated - EMDK for Xamarin 4.0 was the final version supporting Nougat (Android 7.1) devices. Starting from v5.0, only the Oreo (Android 8.1.0) or higher devices are supported.  
+### Software Support
+#### Support added: 
+* Microsoft Visual Studio 2019
+* Android 9.x Pie 
 
-Support for Unique Device Identification (UDI) standard barcodes such as GS1, HIBCC and ICCBBA in Barcode APIs has been deprecated and will be terminated in Android Q – Starting from EMDK for Xamarin 5.0, the UDI feature is deprecated and it will be terminated when providing the EMDK for Xamarin support for Android Q devices. 
+#### Support ends: 
+* Android 7.x Nougat
 
+To target Zebra devices running Android 7.x Nougat, please use [EMDK for Xamarin 4.0](/emdk-for-xamarin/4-0/guide/about).  
+
+#### Deprecations:
+Support for Unique Device Identification (UDI) standard barcodes such as GS1, HIBCC and ICCBBA in Barcode APIs has been deprecated; support will be terminated in Android 10 Q. 
 
 -----
 

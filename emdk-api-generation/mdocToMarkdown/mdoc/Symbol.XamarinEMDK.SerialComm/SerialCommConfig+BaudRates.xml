@@ -3,7 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit SerialCommConfig/BaudRates extends Java.Lang.Object" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>4.0.0.2</AssemblyVersion>
+    <AssemblyVersion>5.0.0.1</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Object</BaseTypeName>
@@ -24,7 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -42,7 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
@@ -60,7 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br115200 = (115200)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -81,7 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br1200 = (1200)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -102,7 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br14400 = (14400)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -123,7 +123,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br19200 = (19200)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -144,7 +144,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br230400 = (230400)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -165,7 +165,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br2400 = (2400)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -186,7 +186,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br28800 = (28800)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -207,7 +207,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br300 = (300)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -228,7 +228,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br38400 = (38400)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -249,7 +249,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br460800 = (460800)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -270,7 +270,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br4800 = (4800)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -291,7 +291,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br57600 = (57600)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -312,7 +312,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br921600 = (921600)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -333,7 +333,7 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int64 Br9600 = (9600)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -354,7 +354,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -370,7 +370,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>4.0.0.2</AssemblyVersion>
+        <AssemblyVersion>5.0.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>

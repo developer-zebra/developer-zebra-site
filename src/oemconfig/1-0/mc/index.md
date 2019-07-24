@@ -15,10 +15,10 @@ menu:
       url: /oemconfig/1-0/search
 ---
 
-## Transaction Creation Overview
+## Transaction Overview
 
 
-This section describes all supported Managed Configurations (MCs), which can be used to define an ordered list of Steps for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*. 
+This document describes all supported Managed Configurations (MCs), which can be used to define an ordered list of Steps for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*. 
 
 ### Transaction Steps
 
@@ -42,7 +42,7 @@ Use this Group to specify a single *Transaction Step* that defines one or more A
 #### The following rules apply to Transaction Steps: 
 
 - Any number of MCs can be included in a single step, but each MC may be used exactly once in any individual Step. 
-- If an individual MC is required more than once in a *Transaction*, it must be added a separate Step each time it is required. 
+- If an individual MC is required more than once in a *Transaction*, it must be added in a separate Step each time it is required. 
 - Multiple Actions or configurations of different types can be defined as part of a single *Transaction Step*, but you CANNOT directly control the order or execution within a *Transaction Step*.
 - OemConfig will execute multiple Actions and configurations defined within a *Transaction Step* in an order that it determines will ensure that everything is executed successfully.
 - If you need to control the order of execution of various Actions or configurations, placed in different *Transaction Steps* and order the *Transaction Steps* within the *Transaction* as needed.

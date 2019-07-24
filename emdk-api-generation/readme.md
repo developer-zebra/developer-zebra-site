@@ -24,7 +24,7 @@
 2. Get latest `Symbol.XamarinEMDK.dll` from Praveen (should be here: http://10.17.216.63:8080/jenkins/job/tut_emdkx_build/. On Oct 8, it was here: \\10.233.84.19\Data\USER_BUILD_OUTPUT\TUT_XAMARIN_TOOL_MAC\97) Team is migrating to Artifactory.-->
 3. Copy `Symbol.XamarinEMDK.dll` file to `/libs` folder in `/mDocToMarkdown` (replace or remame the existing file).
 4. Go to Terminal and navigate to folder `/mDocToMarkdown`. Then run command in the readme file in that folder (cross fingers - requires mdoc from Xamarin tools). Keep the Terminal window open for Step 13. 
-5. Using the latest release notes as a reference, identify each **NEW API feature** and use the "Find in Folder" function (in your text editor [to search the /mdoc folder?]) to confirm that each new API feature is there. 
+5. Using the latest release notes as a reference, identify each **NEW API feature** and use the "Find in Folder" function (in your text editor to search the /mdoc folder) to confirm that each new API feature is there. 
 6. Check AssemblyFileVersion inside any mdoc API to confirm that it matches the EMDK-X major and minor version numbers. 
 7. Using the "Find in Folder" function, search /mdoc folder for "To be added" - this finds everything new/changed. 
 8. In each corresponding function in the EMDK-A JavaDocs, copy its description (from EMDK-A API) to the Summary field (replacing "to be added") and remove other instances of "to be added" from nearby "value" and "remarks" fields. **NOTE**: When looking at JavaDocs - always click down into the details (do not take "first sentence" from top-level summary; it's not always the same). 

@@ -15,4 +15,4 @@ menu:
       url: /dex-scanpair/1-8/search
 product: DEX Scan & Pair
 productversion: '1.8'
----
+--- 

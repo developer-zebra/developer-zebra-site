@@ -954,7 +954,7 @@ var sitebuild = Metalsmith(__dirname)
     }))
         
         .use(foldermenu({
-        folder: 'dex/1-8/'
+        folder: 'dex-scanpair/1-8/'
     }))
     
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))

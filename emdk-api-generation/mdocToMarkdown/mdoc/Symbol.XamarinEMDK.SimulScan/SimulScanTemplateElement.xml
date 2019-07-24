@@ -3,14 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SimulScanTemplateElement extends Java.Lang.Object implements class Android.Runtime.IJavaObject, class Java.IO.ISerializable, class System.IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>2.4.0.87</AssemblyVersion>
-    <AssemblyVersion>2.5.0.41</AssemblyVersion>
-    <AssemblyVersion>2.5.0.48</AssemblyVersion>
-    <AssemblyVersion>2.6.0.69</AssemblyVersion>
-    <AssemblyVersion>2.7.0.76</AssemblyVersion>
-    <AssemblyVersion>3.0.0.41</AssemblyVersion>
     <AssemblyVersion>4.0.0.2</AssemblyVersion>
-    <AssemblyVersion>4.0.0.3</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Object</BaseTypeName>
@@ -29,9 +22,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The TemplateElement class represents elements nested directly under the tag in an XML template file</summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,14 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -55,10 +40,8 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>
-        </summary>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,14 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(int32 p0, string p1) cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -85,14 +61,10 @@
         <Parameter Name="p1" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="p0">
-        </param>
-        <param name="p1">
-        </param>
-        <summary>
-        </summary>
-        <remarks>
-        </remarks>
+        <param name="p0">To be added.</param>
+        <param name="p1">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,28 +72,17 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference">
-        </param>
-        <param name="transfer">
-        </param>
-        <summary>
-        </summary>
-        <remarks>
-        </remarks>
+        <param name="javaReference">To be added.</param>
+        <param name="transfer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -129,14 +90,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -147,11 +101,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the friendly name of the element</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -159,14 +111,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Number" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -177,12 +122,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="private_name">
@@ -190,14 +132,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string private_name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -208,12 +143,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegionNumber">
@@ -221,14 +153,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 RegionNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -239,11 +164,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the region number of the element</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -251,25 +174,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -277,25 +190,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

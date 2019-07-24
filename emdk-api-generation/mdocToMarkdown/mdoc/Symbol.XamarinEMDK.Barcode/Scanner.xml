@@ -3,21 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Scanner extends Java.Lang.Object" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <AssemblyVersion>1.0.3.1</AssemblyVersion>
-    <AssemblyVersion>1.0.3.2</AssemblyVersion>
-    <AssemblyVersion>2.0.0.1</AssemblyVersion>
-    <AssemblyVersion>2.1.0.4</AssemblyVersion>
-    <AssemblyVersion>2.1.0.5</AssemblyVersion>
-    <AssemblyVersion>2.4.0.87</AssemblyVersion>
-    <AssemblyVersion>2.5.0.41</AssemblyVersion>
-    <AssemblyVersion>2.5.0.48</AssemblyVersion>
-    <AssemblyVersion>2.6.0.69</AssemblyVersion>
-    <AssemblyVersion>2.7.0.76</AssemblyVersion>
-    <AssemblyVersion>3.0.0.41</AssemblyVersion>
     <AssemblyVersion>4.0.0.2</AssemblyVersion>
-    <AssemblyVersion>4.0.0.3</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Object</BaseTypeName>
@@ -29,10 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-Scanner class will represent and provides access to the physical scanner device.</summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,89 +24,17 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference">
-        </param>
-        <param name="transfer">
-        </param>
-        <summary>
-        </summary>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AddDataListener">
-      <MemberSignature Language="C#" Value="public virtual void AddDataListener (Symbol.XamarinEMDK.Barcode.Scanner.IDataListener p0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddDataListener(class Symbol.XamarinEMDK.Barcode.Scanner/IDataListener p0) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Android.Runtime.Register("addDataListener", "(Lcom/symbol/emdk/barcode/Scanner$DataListener;)V", "GetAddDataListener_Lcom_symbol_emdk_barcode_Scanner_DataListener_Handler")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="p0" Type="Symbol.XamarinEMDK.Barcode.Scanner+IDataListener" />
-      </Parameters>
-      <Docs>
-        <param name="p0">IDataListener object.</param>
-        <summary>The client can register to get data notification via callbacks.</summary>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AddStatusListener">
-      <MemberSignature Language="C#" Value="public virtual void AddStatusListener (Symbol.XamarinEMDK.Barcode.Scanner.IStatusListener p0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddStatusListener(class Symbol.XamarinEMDK.Barcode.Scanner/IStatusListener p0) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Android.Runtime.Register("addStatusListener", "(Lcom/symbol/emdk/barcode/Scanner$StatusListener;)V", "GetAddStatusListener_Lcom_symbol_emdk_barcode_Scanner_StatusListener_Handler")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="p0" Type="Symbol.XamarinEMDK.Barcode.Scanner+IStatusListener" />
-      </Parameters>
-      <Docs>
-        <param name="p0">IStatusListener object</param>
-        <summary>The client can register to get status notification via callbacks.</summary>
-        <remarks>
-        </remarks>
+        <param name="javaReference">To be added.</param>
+        <param name="transfer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelRead">
@@ -130,21 +42,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelRead() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -156,37 +54,8 @@ Scanner class will represent and provides access to the physical scanner device.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This Cancels any pending asynchronous read() calls</summary>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Config">
-      <MemberSignature Language="C#" Value="public virtual Symbol.XamarinEMDK.Barcode.ScannerConfig Config { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig Config" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: Android.Runtime.Register("getConfig", "()Lcom/symbol/emdk/barcode/ScannerConfig;", "GetGetConfigHandler")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: Android.Runtime.Register("setConfig", "(Lcom/symbol/emdk/barcode/ScannerConfig;)V", "GetSetConfig_Lcom_symbol_emdk_barcode_ScannerConfig_Handler")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Get or Set the ScannerConfig settings.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -194,29 +63,14 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Symbol.XamarinEMDK.Barcode.Scanner/DataEventArgs&gt; Data" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Symbol.XamarinEMDK.Barcode.Scanner+DataEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This is an internal event not intended to be used by applications.</summary>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Disable">
@@ -224,21 +78,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Disable() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -250,9 +90,8 @@ Scanner class will represent and provides access to the physical scanner device.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Disables the scanner hardware. Any pending scanned data will be lost. This method releases the scanner hardware resources for other application to use. You must call this as soon as you're done with the scanning.</summary>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Enable">
@@ -260,21 +99,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Enable() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -286,9 +111,8 @@ Scanner class will represent and provides access to the physical scanner device.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Enables the scanner hardware. This method does not make the scanner scan or turn on the laser. If the same scanner is enabled by other applications, this will throw ScannerExceptions. You must call disable() when you are done scanning, otherwise it will remain locked and be unavailable to other applications.</summary>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConfig">
@@ -296,18 +120,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.Barcode.ScannerConfig GetConfig() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -319,11 +132,9 @@ Scanner class will represent and provides access to the physical scanner device.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the current configuration settings for this scanner device. If modifications are made to the returned ScannerConfig object, the Scanner.SetConfig(ScannerConfig) must be called to take effect. Scanner must be enabled before calling GetConfig().</summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInterfaceConfig">
@@ -331,18 +142,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.Barcode.InterfaceConfig GetInterfaceConfig() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -354,40 +154,9 @@ Scanner class will represent and provides access to the physical scanner device.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-        </summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="InterfaceConfig">
-      <MemberSignature Language="C#" Value="public virtual Symbol.XamarinEMDK.Barcode.InterfaceConfig InterfaceConfig { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.InterfaceConfig InterfaceConfig" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: Android.Runtime.Register("getInterfaceConfig", "()Lcom/symbol/emdk/barcode/InterfaceConfig;", "GetGetInterfaceConfigHandler")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: Android.Runtime.Register("setInterfaceConfig", "(Lcom/symbol/emdk/barcode/InterfaceConfig;)V", "GetSetInterfaceConfig_Lcom_symbol_emdk_barcode_InterfaceConfig_Handler")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>Symbol.XamarinEMDK.Barcode.InterfaceConfig</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Get or Set InterfaceConfig</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -395,21 +164,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -420,11 +175,9 @@ Scanner class will represent and provides access to the physical scanner device.
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns scanner enabled state.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadPending">
@@ -432,21 +185,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadPending" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -457,11 +196,9 @@ Scanner class will represent and provides access to the physical scanner device.
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns state of pending scanner read. Another read() cannot be submitted while a read is pending.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -469,21 +206,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Read() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -495,9 +218,8 @@ Scanner class will represent and provides access to the physical scanner device.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Starts an asynchronous Scan. The method will not turn on the scanner. It will, however, put the scanner in a state in which the scanner can be turned ON either by pressing a hardware trigger or can be turned ON automatically. This is determined by the Scanner.triggerType. The data notification must registered in order to scan and get the Scan Data. The read request can be cancelled by issuing a cancelRead. If a read() is submitted while another read is pending, the method call will fail. It is recommended to check whether a read is pending by calling isReadPending() before submitting a read(). A read() can also be submitted from within onData and onStatus events. If called within onStatus, it should be called only when IDLE status is received. If called within onData, then checking for isReadPending() is recommended.</summary>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Release">
@@ -505,21 +227,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Release() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -531,63 +239,8 @@ Scanner class will represent and provides access to the physical scanner device.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the scanner object resources. The scanner object is unusable after this call. The new object can be requested using BarcodeManager.getDevice(...). The object will be unusable after this call even if any failure occurs.</summary>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RemoveDataListener">
-      <MemberSignature Language="C#" Value="public virtual void RemoveDataListener (Symbol.XamarinEMDK.Barcode.Scanner.IDataListener p0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveDataListener(class Symbol.XamarinEMDK.Barcode.Scanner/IDataListener p0) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Android.Runtime.Register("removeDataListener", "(Lcom/symbol/emdk/barcode/Scanner$DataListener;)V", "GetRemoveDataListener_Lcom_symbol_emdk_barcode_Scanner_DataListener_Handler")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="p0" Type="Symbol.XamarinEMDK.Barcode.Scanner+IDataListener" />
-      </Parameters>
-      <Docs>
-        <param name="p0">IDataListener object</param>
-        <summary>Cancels any IDataListener callbacks.</summary>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RemoveStatusListener">
-      <MemberSignature Language="C#" Value="public virtual void RemoveStatusListener (Symbol.XamarinEMDK.Barcode.Scanner.IStatusListener p0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveStatusListener(class Symbol.XamarinEMDK.Barcode.Scanner/IStatusListener p0) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Android.Runtime.Register("removeStatusListener", "(Lcom/symbol/emdk/barcode/Scanner$StatusListener;)V", "GetRemoveStatusListener_Lcom_symbol_emdk_barcode_Scanner_StatusListener_Handler")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="p0" Type="Symbol.XamarinEMDK.Barcode.Scanner+IStatusListener" />
-      </Parameters>
-      <Docs>
-        <param name="p0">IStatusListener object.</param>
-        <summary>Cancels any IStatusListener callbacks.</summary>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScannerInfo">
@@ -595,21 +248,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerInfo ScannerInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -620,11 +259,9 @@ Scanner class will represent and provides access to the physical scanner device.
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns information about the scanner device.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetConfig">
@@ -632,18 +269,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetConfig(class Symbol.XamarinEMDK.Barcode.ScannerConfig p0) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -657,10 +283,9 @@ Scanner class will represent and provides access to the physical scanner device.
         <Parameter Name="p0" Type="Symbol.XamarinEMDK.Barcode.ScannerConfig" />
       </Parameters>
       <Docs>
-        <param name="p0">The Parameters to use for this scanner device.</param>
-        <summary>Changes the settings for this scanner device. The unsupported parameters will be ignored. This method skips the unsupported parameters and continues with setting the supported values.</summary>
-        <remarks>
-        </remarks>
+        <param name="p0">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetInterfaceConfig">
@@ -668,18 +293,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInterfaceConfig(class Symbol.XamarinEMDK.Barcode.InterfaceConfig interfaceConfig) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -693,12 +307,9 @@ Scanner class will represent and provides access to the physical scanner device.
         <Parameter Name="interfaceConfig" Type="Symbol.XamarinEMDK.Barcode.InterfaceConfig" />
       </Parameters>
       <Docs>
-        <param name="interfaceConfig">
-        </param>
-        <summary>
-        </summary>
-        <remarks>
-        </remarks>
+        <param name="interfaceConfig">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -706,29 +317,14 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Symbol.XamarinEMDK.Barcode.Scanner/StatusEventArgs&gt; Status" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Symbol.XamarinEMDK.Barcode.Scanner+StatusEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This event is used internally and not meant for applications.</summary>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -736,32 +332,15 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -769,32 +348,15 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TriggerType">
@@ -802,21 +364,7 @@ Scanner class will represent and provides access to the physical scanner device.
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.Scanner/TriggerTypes TriggerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -827,11 +375,9 @@ Scanner class will represent and provides access to the physical scanner device.
         <ReturnType>Symbol.XamarinEMDK.Barcode.Scanner+TriggerTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the trigger type for the scanner. It is set to HARD by default.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

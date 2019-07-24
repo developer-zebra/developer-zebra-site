@@ -130,7 +130,7 @@ Support for Unique Device Identification (UDI) standard barcodes such as GS1, HI
 
 Note: SAM APIs support only transceiver commands with the SAM. For NFC tag reading and tag-related transactions, Zebra recommends using the standard [Android NFC APIs](https://developer.android.com/guide/topics/connectivity/nfc).
 
-### API Enhancements
+#### API Enhancements
 
 **Enhanced Barcode Manager API** adds the following features on devices running Android 8.1 Oreo:
 * Support for GridMatrix Symbology and Label type:
@@ -155,7 +155,7 @@ Note: SAM APIs support only transceiver commands with the SAM. For NFC tag readi
  * New `BarcodeManager.DeviceIdentifier` enum for selecting the DS8178 Bluetooth Scanner.
  * **Digimarc decoding support for rear camera** (formerly supported only on internal imagers).
 
-### Deprecations
+#### Deprecations
 
 **Support ends for targeting devices running Android 6.x Marshmallow**. EMDK for Xamarin 3.0 was the final version to support Marshmallow targets. EMDK for Xamarin 4.0 supports only devices running Android 7.1.2 Nougat or newer.
 

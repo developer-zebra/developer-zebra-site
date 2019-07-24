@@ -3,21 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit ScanDataCollection/LabelType extends Java.Lang.Enum" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <AssemblyVersion>1.0.3.1</AssemblyVersion>
-    <AssemblyVersion>1.0.3.2</AssemblyVersion>
-    <AssemblyVersion>2.0.0.1</AssemblyVersion>
-    <AssemblyVersion>2.1.0.4</AssemblyVersion>
-    <AssemblyVersion>2.1.0.5</AssemblyVersion>
-    <AssemblyVersion>2.4.0.87</AssemblyVersion>
-    <AssemblyVersion>2.5.0.41</AssemblyVersion>
-    <AssemblyVersion>2.5.0.48</AssemblyVersion>
-    <AssemblyVersion>2.6.0.69</AssemblyVersion>
-    <AssemblyVersion>2.7.0.76</AssemblyVersion>
-    <AssemblyVersion>3.0.0.41</AssemblyVersion>
     <AssemblyVersion>4.0.0.2</AssemblyVersion>
-    <AssemblyVersion>4.0.0.3</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Enum</BaseTypeName>
@@ -29,9 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>This class describes the barcode symbology.</summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Auspostal">
@@ -39,21 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Auspostal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -64,11 +35,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The AUSTRALIAN POSTAL symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Aztec">
@@ -76,21 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Aztec" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -101,11 +56,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The AZTEC symbology</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Bookland">
@@ -113,21 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Bookland" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -138,11 +77,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The BOOKLAND EAN symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Canpostal">
@@ -150,21 +87,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Canpostal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -175,11 +98,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CANADIAN POSTAL symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Chinese2of5">
@@ -187,21 +108,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Chinese2of5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -212,11 +119,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CHINESE_2OF5 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Codabar">
@@ -224,21 +129,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Codabar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -249,11 +140,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CODABAR symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Code11">
@@ -261,21 +150,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Code11" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -286,11 +161,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CODE-11 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Code128">
@@ -298,21 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Code128" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -323,11 +182,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CODE-128 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Code32">
@@ -335,21 +192,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Code32" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -360,11 +203,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CODE-32 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Code39">
@@ -372,21 +213,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Code39" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -397,11 +224,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CODE-39 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Code93">
@@ -409,21 +234,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Code93" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -434,11 +245,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The CODE-93 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CompositeAb">
@@ -446,21 +255,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType CompositeAb" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -471,11 +266,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The COMPOSITE AB symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CompositeC">
@@ -483,21 +276,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType CompositeC" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -508,11 +287,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The COMPOSITE C symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Coupon">
@@ -520,21 +297,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Coupon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -545,11 +308,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The COUPON CODE symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="D2of5">
@@ -557,21 +318,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType D2of5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -582,11 +329,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Discrete 2 of 5 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DatabarCoupon">
@@ -594,21 +339,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType DatabarCoupon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -619,11 +350,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The databar coupon symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Datamatrix">
@@ -631,21 +360,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Datamatrix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -656,11 +371,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DATAMATRIX symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dotcode">
@@ -669,7 +382,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -680,11 +392,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>List of label types of the scanner data.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dutchpostal">
@@ -692,21 +402,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Dutchpostal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -717,11 +413,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The DUTCH POSTAL symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Ean128">
@@ -729,21 +423,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Ean128" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -754,11 +434,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The EAN-128 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Ean13">
@@ -766,21 +444,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Ean13" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -791,11 +455,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The EAN-13 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Ean8">
@@ -803,21 +465,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Ean8" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -828,12 +476,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Gridmatrix">
@@ -842,7 +487,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -853,11 +497,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>List of label types of the scanner data.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Gs1Databar">
@@ -865,21 +507,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Gs1Databar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -890,11 +518,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The EAN-8 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Gs1DatabarExp">
@@ -902,21 +528,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Gs1DatabarExp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -927,11 +539,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The GS1_DATABAR symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Gs1DatabarLim">
@@ -939,21 +549,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Gs1DatabarLim" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -964,11 +560,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The GS1_DATABAR_LIM symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Gs1Datamatrix">
@@ -976,9 +570,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Gs1Datamatrix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -989,11 +581,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The GS1_DATAMATRIX symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Gs1Qrcode">
@@ -1001,9 +591,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Gs1Qrcode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1014,11 +602,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The GS1_QRCODE symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Hanxin">
@@ -1026,21 +612,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Hanxin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1051,11 +623,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The HANXIN symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="I2of5">
@@ -1063,21 +633,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType I2of5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1088,11 +644,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Interleaved 2 of 5 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Iata2of5">
@@ -1100,21 +654,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Iata2of5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1125,11 +665,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The IATA 2 of 5 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Isbt128">
@@ -1137,21 +675,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Isbt128" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1162,11 +686,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The ISBT 128 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Jappostal">
@@ -1174,21 +696,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Jappostal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1199,11 +707,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The JAPANESE POSTAL symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Korean3of5">
@@ -1211,21 +717,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Korean3of5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1236,11 +728,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The KOREAN 3OF5 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Mailmark">
@@ -1248,21 +738,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Mailmark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1273,11 +749,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The MAILMARK symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Matrix2of5">
@@ -1285,21 +759,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Matrix2of5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1310,11 +770,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The MATRIX 2OF5 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Maxicode">
@@ -1322,21 +780,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Maxicode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1347,11 +791,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The MAXICODE symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Micropdf">
@@ -1359,21 +801,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Micropdf" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1384,11 +812,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The MICRO PDF symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Microqr">
@@ -1396,21 +822,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Microqr" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1421,11 +833,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The MICRO QR symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Msi">
@@ -1433,21 +843,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Msi" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1458,11 +854,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The MSI symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Ocr">
@@ -1470,21 +864,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Ocr" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1495,11 +875,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The OCR symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pdf417">
@@ -1507,21 +885,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Pdf417" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1532,11 +896,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The PDF 417 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Qrcode">
@@ -1544,21 +906,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Qrcode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1569,11 +917,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The QRCODE symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Signature">
@@ -1581,21 +927,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Signature" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1606,11 +938,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Signature symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -1618,32 +948,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -1651,32 +964,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Tlc39">
@@ -1684,21 +980,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Tlc39" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1709,11 +991,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The TCIF Linked CODE 39 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Trioptic39">
@@ -1721,21 +1001,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Trioptic39" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1746,11 +1012,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The TRIOPTIC 3 of 9 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Ukpostal">
@@ -1758,21 +1022,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Ukpostal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1783,11 +1033,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The UK POSTAL symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Undefined">
@@ -1795,21 +1043,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Undefined" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1820,11 +1054,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Symbology is unknown or not defined.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Upca">
@@ -1832,21 +1064,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Upca" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1857,11 +1075,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The UPC-A symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Upce0">
@@ -1869,21 +1085,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Upce0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1894,11 +1096,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The UPC-E0 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Upce1">
@@ -1906,21 +1106,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Upce1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1931,11 +1117,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The UPC-E1 symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Us4state">
@@ -1943,21 +1127,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Us4state" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1968,11 +1138,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The US4STATE symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Us4stateFics">
@@ -1980,21 +1148,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Us4stateFics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2005,11 +1159,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The US4STATE_FICS symbology</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Usplanet">
@@ -2017,21 +1169,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Usplanet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2042,11 +1180,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The US PLANET symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Uspostnet">
@@ -2054,21 +1190,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Uspostnet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2079,11 +1201,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The US POSTNET symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueOf">
@@ -2091,21 +1211,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType ValueOf(string this_) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2116,17 +1222,13 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="p0" Type="System.String" />
+        <Parameter Name="this_" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="this_">
-        </param>
-        <summary>
-        </summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
+        <param name="this_">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -2134,21 +1236,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType[] Values() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2160,36 +1248,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-        </summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Webcode">
-      <MemberSignature Language="C#" Value="public static Symbol.XamarinEMDK.Barcode.ScanDataCollection.LabelType Webcode { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScanDataCollection/LabelType Webcode" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Android.Runtime.Register("WEBCODE")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>The Scanlet WEBCODE symbology.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

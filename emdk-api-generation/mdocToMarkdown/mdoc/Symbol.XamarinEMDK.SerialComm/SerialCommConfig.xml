@@ -3,14 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SerialCommConfig extends Java.Lang.Object" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>2.4.0.87</AssemblyVersion>
-    <AssemblyVersion>2.5.0.41</AssemblyVersion>
-    <AssemblyVersion>2.5.0.48</AssemblyVersion>
-    <AssemblyVersion>2.6.0.69</AssemblyVersion>
-    <AssemblyVersion>2.7.0.76</AssemblyVersion>
-    <AssemblyVersion>3.0.0.41</AssemblyVersion>
     <AssemblyVersion>4.0.0.2</AssemblyVersion>
-    <AssemblyVersion>4.0.0.3</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Object</BaseTypeName>
@@ -22,9 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Supported in EMDK v6.1.0 or higher.Not supported on all BSP eventhough the EMDK provides this interface. Refer to release notes for more details.</summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,28 +24,17 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference">
-        </param>
-        <param name="transfer">
-        </param>
-        <summary>
-        </summary>
-        <remarks>
-        </remarks>
+        <param name="javaReference">To be added.</param>
+        <param name="transfer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaudRate">
@@ -61,14 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 BaudRate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -79,11 +53,9 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the baud at which the communications device operates. The application shall be able to select the baud rates. The possible values are defined as constants under BaudRates class such as BR_300, BR_1200, etc. Note: Not all the values are supported all the the products, refer product documentation for more details.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBit">
@@ -91,14 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.SerialComm.SerialCommConfig/DataBits DataBit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -109,11 +74,9 @@
         <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+DataBits</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The number of data bits for each character.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FlowControlMode">
@@ -122,7 +85,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -133,11 +95,9 @@
         <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+FlowControlModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Pre-defined constants to specify flow control.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Parity">
@@ -145,14 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.SerialComm.SerialCommConfig/ParityBits Parity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -163,11 +116,9 @@
         <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Parity bits are used for detecting error in the transmission.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StopBit">
@@ -175,14 +126,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.SerialComm.SerialCommConfig/StopBits StopBit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -193,11 +137,9 @@
         <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+StopBits</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the number of stop bits to be used.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -205,25 +147,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -231,25 +163,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

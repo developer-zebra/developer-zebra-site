@@ -3,16 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConnectionType extends Java.Lang.Enum" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>2.1.0.4</AssemblyVersion>
-    <AssemblyVersion>2.1.0.5</AssemblyVersion>
-    <AssemblyVersion>2.4.0.87</AssemblyVersion>
-    <AssemblyVersion>2.5.0.41</AssemblyVersion>
-    <AssemblyVersion>2.5.0.48</AssemblyVersion>
-    <AssemblyVersion>2.6.0.69</AssemblyVersion>
-    <AssemblyVersion>2.7.0.76</AssemblyVersion>
-    <AssemblyVersion>3.0.0.41</AssemblyVersion>
     <AssemblyVersion>4.0.0.2</AssemblyVersion>
-    <AssemblyVersion>4.0.0.3</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Enum</BaseTypeName>
@@ -24,10 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-    </summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BluetoothSsi">
@@ -35,16 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Notification.ConnectionType BluetoothSsi" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -55,11 +35,9 @@
         <ReturnType>Symbol.XamarinEMDK.Notification.ConnectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Bluetooth SSI</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pluggable">
@@ -67,16 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Notification.ConnectionType Pluggable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -87,11 +56,9 @@
         <ReturnType>Symbol.XamarinEMDK.Notification.ConnectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Pluggable</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -99,27 +66,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -127,27 +82,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Undefined">
@@ -155,16 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Notification.ConnectionType Undefined" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -175,11 +109,9 @@
         <ReturnType>Symbol.XamarinEMDK.Notification.ConnectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Undefined</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueOf">
@@ -187,16 +119,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.Notification.ConnectionType ValueOf(string p0) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -210,14 +133,10 @@
         <Parameter Name="p0" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="p0">
-        </param>
-        <summary>
-        </summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
+        <param name="p0">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -225,16 +144,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.Notification.ConnectionType[] Values() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -246,12 +156,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-        </summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -3,11 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit ScannerConfig/OcrBVariant extends Java.Lang.Enum" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>2.6.0.69</AssemblyVersion>
-    <AssemblyVersion>2.7.0.76</AssemblyVersion>
-    <AssemblyVersion>3.0.0.41</AssemblyVersion>
     <AssemblyVersion>4.0.0.2</AssemblyVersion>
-    <AssemblyVersion>4.0.0.3</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Enum</BaseTypeName>
@@ -19,10 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-    </summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Banking">
@@ -30,11 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant Banking" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -45,12 +35,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrBVariant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FullAscii">
@@ -58,11 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant FullAscii" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -73,12 +56,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrBVariant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IcaoTravelDocument">
@@ -86,11 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant IcaoTravelDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -101,12 +77,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrBVariant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Isbn1">
@@ -114,11 +87,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant Isbn1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -129,12 +98,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrBVariant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Isbn2">
@@ -142,11 +108,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant Isbn2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -157,12 +119,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrBVariant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Limited">
@@ -170,11 +129,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant Limited" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -185,12 +140,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrBVariant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Passport">
@@ -198,11 +150,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant Passport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -213,12 +161,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrBVariant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -226,22 +171,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -249,22 +187,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TravelDocument1">
@@ -272,11 +203,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant TravelDocument1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -287,12 +214,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrBVariant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TravelDocument2">
@@ -300,11 +224,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant TravelDocument2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -315,12 +235,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrBVariant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TravelDocument3">
@@ -328,11 +245,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant TravelDocument3" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -343,12 +256,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrBVariant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueOf">
@@ -356,11 +266,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant ValueOf(string p0) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -374,14 +280,10 @@
         <Parameter Name="p0" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="p0">
-        </param>
-        <summary>
-        </summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
+        <param name="p0">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -389,11 +291,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant[] Values() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -405,12 +303,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-        </summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VisaTypeA">
@@ -418,11 +313,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant VisaTypeA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -433,12 +324,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrBVariant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VisaTypeB">
@@ -446,11 +334,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.Barcode.ScannerConfig/OcrBVariant VisaTypeB" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -461,12 +345,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OcrBVariant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

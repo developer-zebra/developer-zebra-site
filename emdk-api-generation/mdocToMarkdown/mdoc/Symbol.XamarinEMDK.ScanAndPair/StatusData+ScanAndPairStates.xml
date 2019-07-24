@@ -3,17 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit StatusData/ScanAndPairStates extends Java.Lang.Enum" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <AssemblyVersion>2.1.0.4</AssemblyVersion>
-    <AssemblyVersion>2.1.0.5</AssemblyVersion>
-    <AssemblyVersion>2.4.0.87</AssemblyVersion>
-    <AssemblyVersion>2.5.0.41</AssemblyVersion>
-    <AssemblyVersion>2.5.0.48</AssemblyVersion>
-    <AssemblyVersion>2.6.0.69</AssemblyVersion>
-    <AssemblyVersion>2.7.0.76</AssemblyVersion>
-    <AssemblyVersion>3.0.0.41</AssemblyVersion>
     <AssemblyVersion>4.0.0.2</AssemblyVersion>
-    <AssemblyVersion>4.0.0.3</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Enum</BaseTypeName>
@@ -25,9 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines the different states of the scan and pir/unpair.</summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Discovering">
@@ -35,17 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.ScanAndPair.StatusData/ScanAndPairStates Discovering" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -56,11 +35,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Discovering the Bluetooth device to be paired.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -68,17 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.ScanAndPair.StatusData/ScanAndPairStates Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -89,11 +56,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Error occurred during the scan and pair or unpair. Call StatusData .getResult() for error information.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Paired">
@@ -101,17 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.ScanAndPair.StatusData/ScanAndPairStates Paired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -122,11 +77,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Bluetooth device is paired.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Scanning">
@@ -134,17 +87,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.ScanAndPair.StatusData/ScanAndPairStates Scanning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -155,11 +98,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>canner beam is on and it is acquiring data.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -167,28 +108,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -196,28 +124,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Undefined">
@@ -225,17 +140,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.ScanAndPair.StatusData/ScanAndPairStates Undefined" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -246,11 +151,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Undefined. This is the initial state.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Unpaired">
@@ -258,17 +161,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.ScanAndPair.StatusData/ScanAndPairStates Unpaired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -279,11 +172,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Bluetooth device is unpaired.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueOf">
@@ -291,17 +182,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.ScanAndPair.StatusData/ScanAndPairStates ValueOf(string this_) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -312,17 +193,13 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="p0" Type="System.String" />
+        <Parameter Name="this_" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="this_">
-        </param>
-        <summary>
-        </summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
+        <param name="this_">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -330,17 +207,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Symbol.XamarinEMDK.ScanAndPair.StatusData/ScanAndPairStates[] Values() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -352,12 +219,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-        </summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Waiting">
@@ -365,17 +229,7 @@
       <MemberSignature Language="ILAsm" Value=".property class Symbol.XamarinEMDK.ScanAndPair.StatusData/ScanAndPairStates Waiting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -386,11 +240,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.StatusData+ScanAndPairStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Scanner is waiting for hard trigger press</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

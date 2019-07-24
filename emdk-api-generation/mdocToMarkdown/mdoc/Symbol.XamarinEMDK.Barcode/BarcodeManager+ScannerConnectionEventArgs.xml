@@ -3,30 +3,15 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit BarcodeManager/ScannerConnectionEventArgs extends System.EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <AssemblyVersion>1.0.3.1</AssemblyVersion>
-    <AssemblyVersion>1.0.3.2</AssemblyVersion>
-    <AssemblyVersion>2.0.0.1</AssemblyVersion>
-    <AssemblyVersion>2.1.0.4</AssemblyVersion>
-    <AssemblyVersion>2.1.0.5</AssemblyVersion>
-    <AssemblyVersion>2.4.0.87</AssemblyVersion>
-    <AssemblyVersion>2.5.0.41</AssemblyVersion>
-    <AssemblyVersion>2.5.0.48</AssemblyVersion>
-    <AssemblyVersion>2.6.0.69</AssemblyVersion>
-    <AssemblyVersion>2.7.0.76</AssemblyVersion>
-    <AssemblyVersion>3.0.0.41</AssemblyVersion>
     <AssemblyVersion>4.0.0.2</AssemblyVersion>
-    <AssemblyVersion>4.0.0.3</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>used internally by BarcodeManager - not to be used in applications.</summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,35 +19,17 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Symbol.XamarinEMDK.Barcode.ScannerInfo p0, class Symbol.XamarinEMDK.Barcode.BarcodeManager/ConnectionState p1) cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="p0" Type="Symbol.XamarinEMDK.Barcode.ScannerInfo" />
         <Parameter Name="p1" Type="Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState" />
       </Parameters>
       <Docs>
-        <param name="p0">
-        </param>
-        <param name="p1">
-        </param>
-        <summary>
-        </summary>
-        <remarks>
-        </remarks>
+        <param name="p0">To be added.</param>
+        <param name="p1">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="P0">
@@ -70,32 +37,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerInfo P0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="P1">
@@ -103,32 +53,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.BarcodeManager/ConnectionState P1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

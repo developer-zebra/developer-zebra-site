@@ -3,21 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ScannerConfig/DecoderParameters/I2of5Decoder extends Symbol.XamarinEMDK.Barcode.ScannerConfig/DecoderParameters/BaseDecoder" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <AssemblyVersion>1.0.3.1</AssemblyVersion>
-    <AssemblyVersion>1.0.3.2</AssemblyVersion>
-    <AssemblyVersion>2.0.0.1</AssemblyVersion>
-    <AssemblyVersion>2.1.0.4</AssemblyVersion>
-    <AssemblyVersion>2.1.0.5</AssemblyVersion>
-    <AssemblyVersion>2.4.0.87</AssemblyVersion>
-    <AssemblyVersion>2.5.0.41</AssemblyVersion>
-    <AssemblyVersion>2.5.0.48</AssemblyVersion>
-    <AssemblyVersion>2.6.0.69</AssemblyVersion>
-    <AssemblyVersion>2.7.0.76</AssemblyVersion>
-    <AssemblyVersion>3.0.0.41</AssemblyVersion>
     <AssemblyVersion>4.0.0.2</AssemblyVersion>
-    <AssemblyVersion>4.0.0.3</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Symbol.XamarinEMDK.Barcode.ScannerConfig+DecoderParameters+BaseDecoder</BaseTypeName>
@@ -29,9 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The I2of5 class provides access to parameters that are available for the I2of5 decoder.</summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,35 +24,17 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference">
-        </param>
-        <param name="transfer">
-        </param>
-        <summary>
-        </summary>
-        <remarks>
-        </remarks>
+        <param name="javaReference">To be added.</param>
+        <param name="transfer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToEan13">
@@ -75,21 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ConvertToEan13" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -100,11 +53,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Transmit Interleaved 2 of 5 data with or without the check digit.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Febraban">
@@ -113,7 +64,6 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -124,12 +74,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Length1">
@@ -137,21 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -162,11 +95,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use to set decode lengths. The valid range is 0 to 55.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Length2">
@@ -174,21 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -199,11 +116,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Use to set decode lengths. The valid range is 0 to 55.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReducedQuietZone">
@@ -211,14 +126,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ReducedQuietZone" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -229,11 +137,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Flag to Enable or Disable decoding of I2of5 barcodes with reduced quiet zones. If you enable, select a OneDQuietZoneLevel to set the effort level.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Redundancy">
@@ -241,21 +147,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Redundancy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -266,11 +158,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets the reader to read the bar code twice before accepting data.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReportCheckDigit">
@@ -278,21 +168,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ReportCheckDigit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -303,11 +179,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Transmit Interleaved 2 of 5 data with or without the check digit.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SecurityLevel">
@@ -315,21 +189,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/SecurityLevel SecurityLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -340,11 +200,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+SecurityLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies security level. Use class ScannerConfig.SecurityLevel.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -352,32 +210,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -385,32 +226,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VerifyCheckDigit">
@@ -418,21 +242,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/CheckDigitType VerifyCheckDigit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -443,11 +253,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The check digit type to verify. Use enum ScannerConfig.CheckDigitType.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

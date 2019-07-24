@@ -1,7 +1,16 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="Symbol.XamarinEMDK" Version="4.0.0.3">
+    <Assembly Name="Symbol.XamarinEMDK" Version="4.0.0.2">
       <Attributes>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.simulscan", Managed="Symbol.XamarinEMDK.SimulScan")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.serialcomm", Managed="Symbol.XamarinEMDK.SerialComm")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.scanandpair", Managed="Symbol.XamarinEMDK.ScanAndPair")</AttributeName>
+        </Attribute>
         <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk", Managed="Symbol.XamarinEMDK")</AttributeName>
         </Attribute>
@@ -13,18 +22,6 @@
         </Attribute>
         <Attribute>
           <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.personalshopper", Managed="Symbol.XamarinEMDK.PersonalShopper")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.sam", Managed="Symbol.XamarinEMDK.Sam")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.scanandpair", Managed="Symbol.XamarinEMDK.ScanAndPair")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.serialcomm", Managed="Symbol.XamarinEMDK.SerialComm")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>Android.Runtime.NamespaceMapping(Java="com.symbol.emdk.simulscan", Managed="Symbol.XamarinEMDK.SimulScan")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>Java.Interop.DoNotPackage("com.symbol.emdk.jar")</AttributeName>
@@ -42,10 +39,10 @@
           <AttributeName>System.Reflection.AssemblyDescription("EMDK for Xamarin")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.0.3")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyFileVersion("4.0.0.2")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.0.3")</AttributeName>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.0.0.2")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyProduct("EMDK for Xamarin")</AttributeName>
@@ -68,10 +65,8 @@
       </Attributes>
     </Assembly>
   </Assemblies>
-  <Remarks>
-  </Remarks>
-  <Copyright>
-  </Copyright>
+  <Remarks>To be added.</Remarks>
+  <Copyright>To be added.</Copyright>
   <Types>
     <Namespace Name="Symbol.XamarinEMDK">
       <Type Name="EMDKBase" Kind="Class" />
@@ -188,7 +183,6 @@
       <Type Name="ScannerConfig+LcdMode" Kind="Class" />
       <Type Name="ScannerConfig+LinearSecurityLevel" Kind="Class" />
       <Type Name="ScannerConfig+MultiBarcodeParameters" Kind="Class" />
-      <Type Name="ScannerConfig+MultiBarcodeParams" Kind="Class" />
       <Type Name="ScannerConfig+OcrAVariant" Kind="Class" />
       <Type Name="ScannerConfig+OcrBVariant" Kind="Class" />
       <Type Name="ScannerConfig+OcrLines" Kind="Class" />
@@ -261,13 +255,6 @@
       <Type Name="DiagnosticResults" Kind="Class" />
       <Type Name="PersonalShopperMgr" Kind="Class" />
     </Namespace>
-    <Namespace Name="Symbol.XamarinEMDK.Sam">
-      <Type Name="SAM" Kind="Class" />
-      <Type Name="SAMException" Kind="Class" />
-      <Type Name="SAMManager" Kind="Class" />
-      <Type Name="SAMResults" Kind="Class" />
-      <Type Name="SAMType" Kind="Class" />
-    </Namespace>
     <Namespace Name="Symbol.XamarinEMDK.ScanAndPair">
       <Type Name="ScanAndPairConfig" Kind="Class" />
       <Type Name="ScanAndPairConfig+BluetoothInformation" Kind="Class" />
@@ -287,7 +274,6 @@
       <Type Name="SerialCommConfig" Kind="Class" />
       <Type Name="SerialCommConfig+BaudRates" Kind="Class" />
       <Type Name="SerialCommConfig+DataBits" Kind="Class" />
-      <Type Name="SerialCommConfig+FlowControlMode" Kind="Class" />
       <Type Name="SerialCommConfig+FlowControlModes" Kind="Class" />
       <Type Name="SerialCommConfig+ParityBits" Kind="Class" />
       <Type Name="SerialCommConfig+StopBits" Kind="Class" />

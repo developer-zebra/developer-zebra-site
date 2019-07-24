@@ -3,17 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public interface auto ansi abstract EMDKManager/IStatusListener implements class Android.Runtime.IJavaObject, class System.IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>2.0.0.1</AssemblyVersion>
-    <AssemblyVersion>2.1.0.4</AssemblyVersion>
-    <AssemblyVersion>2.1.0.5</AssemblyVersion>
-    <AssemblyVersion>2.4.0.87</AssemblyVersion>
-    <AssemblyVersion>2.5.0.41</AssemblyVersion>
-    <AssemblyVersion>2.5.0.48</AssemblyVersion>
-    <AssemblyVersion>2.6.0.69</AssemblyVersion>
-    <AssemblyVersion>2.7.0.76</AssemblyVersion>
-    <AssemblyVersion>3.0.0.41</AssemblyVersion>
     <AssemblyVersion>4.0.0.2</AssemblyVersion>
-    <AssemblyVersion>4.0.0.3</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -29,9 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>This is the interface for the callback to notify the status of the feature object request. On a successful, the feature object will be returned and this must be type casted to the corresponding feature manager class based on the type.. An interface for notifying clients when they the feature manager is ready to use or not and interface will be used with EMDKManager.GetInstanceAsync()</summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="OnStatus">
@@ -39,17 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnStatus(class Symbol.XamarinEMDK.EMDKManager/StatusData p0, class Symbol.XamarinEMDK.EMDKBase p1) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -64,13 +43,10 @@
         <Parameter Name="p1" Type="Symbol.XamarinEMDK.EMDKBase" />
       </Parameters>
       <Docs>
-        <param name="p0">
-        </param>
-        <param name="p1">
-        </param>
-        <summary>Called to notify the client when the feature manager object is available and its state to use.</summary>
-        <remarks>
-        </remarks>
+        <param name="p0">To be added.</param>
+        <param name="p1">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

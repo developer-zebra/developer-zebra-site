@@ -3,21 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProfileManager extends Symbol.XamarinEMDK.EMDKBase" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <AssemblyVersion>1.0.3.1</AssemblyVersion>
-    <AssemblyVersion>1.0.3.2</AssemblyVersion>
-    <AssemblyVersion>2.0.0.1</AssemblyVersion>
-    <AssemblyVersion>2.1.0.4</AssemblyVersion>
-    <AssemblyVersion>2.1.0.5</AssemblyVersion>
-    <AssemblyVersion>2.4.0.87</AssemblyVersion>
-    <AssemblyVersion>2.5.0.41</AssemblyVersion>
-    <AssemblyVersion>2.5.0.48</AssemblyVersion>
-    <AssemblyVersion>2.6.0.69</AssemblyVersion>
-    <AssemblyVersion>2.7.0.76</AssemblyVersion>
-    <AssemblyVersion>3.0.0.41</AssemblyVersion>
     <AssemblyVersion>4.0.0.2</AssemblyVersion>
-    <AssemblyVersion>4.0.0.3</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Symbol.XamarinEMDK.EMDKBase</BaseTypeName>
@@ -29,9 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>This class handles all the profile related functions.</summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,61 +24,17 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference">
-        </param>
-        <param name="transfer">
-        </param>
-        <summary>
-        </summary>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AddDataListener">
-      <MemberSignature Language="C#" Value="public virtual void AddDataListener (Symbol.XamarinEMDK.ProfileManager.IDataListener p0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddDataListener(class Symbol.XamarinEMDK.ProfileManager/IDataListener p0) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Android.Runtime.Register("addDataListener", "(Lcom/symbol/emdk/ProfileManager$DataListener;)V", "GetAddDataListener_Lcom_symbol_emdk_ProfileManager_DataListener_Handler")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="p0" Type="Symbol.XamarinEMDK.ProfileManager+IDataListener" />
-      </Parameters>
-      <Docs>
-        <param name="p0">
-        </param>
-        <summary>The client can register to get data notification via callbacks.</summary>
+        <param name="javaReference">To be added.</param>
+        <param name="transfer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNameValuePair">
@@ -101,21 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateNameValuePair(string p0, string p1, string p2) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -131,14 +58,12 @@
         <Parameter Name="p2" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="p0">emdk name String</param>
-        <param name="p1">Parameter name String</param>
-        <param name="p2">Parameter value String</param>
-        <summary>This function creates a name value pair string according to the Name-Value pair request. The return string is compatible with com.symbol.emdk.ProfileManager. processProfile(String profileName, PROFILE_FLAG profileFlag, String[] extraData) function’s extraData array element. If this function failed it throws InvalidParameterException exception.</summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
+        <param name="p0">To be added.</param>
+        <param name="p1">To be added.</param>
+        <param name="p2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -146,30 +71,14 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Symbol.XamarinEMDK.ProfileManager/DataEventArgs&gt; Data" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Symbol.XamarinEMDK.ProfileManager+DataEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPreviousRequestPending">
@@ -177,21 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPreviousRequestPending" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -202,11 +97,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This method tells whether the previous process profile request is pending or not. If the previous request is pending, you can't submit the next request till the current request completes and calling the process profile method will return error.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessProfile">
@@ -214,21 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.EMDKResults ProcessProfile(string p0, class Symbol.XamarinEMDK.ProfileManager/PROFILE_FLAG p1, class Org.W3c.Dom.IDocument p2) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -244,45 +123,12 @@
         <Parameter Name="p2" Type="Org.W3c.Dom.IDocument" />
       </Parameters>
       <Docs>
-        <param name="p0">Name of the profile. ex: 'Profile1'. You can also specify just part of the profile when a fully qualified name of the following format is given: [profileName][featureType][name in profile parameter] to just edit part of the profile. For example, if my profile is called 'Profile1' and the name in profile parameter is 'myName'. Passing 'profileName' as 'Profile1/ActivitySelection/myName' will just process this part of the profile. Valid [featureType]: ActivitySelection, Barcode, MSR, Intent, Keystroke, IP.</param>
-        <param name="p1">ProfileManager.PROFILE_FLAG If the profileFlag is set to SET, and if the given profile is not available in the EMDKConfig.xml, it will look for valid profile in extraData argument and if present, the profile will be added to the internal XML volatile repository and also applied to the device. If the profile is present in the EMDKConfig.xml, it will be applied to the device. If profileFlag is set to GET and if the profile is present in the internal repository, it will be returned in extraData.</param>
-        <param name="p2">This can be used to provide data for processing action.</param>
-        <summary>Processes the given profile based on the data provided and the flag and return status of the action.</summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ProcessProfile">
-      <MemberSignature Language="C#" Value="public virtual Symbol.XamarinEMDK.EMDKResults ProcessProfile (string p0, Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG p1, Symbol.XamarinEMDK.ProfileConfig p2);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.EMDKResults ProcessProfile(string p0, class Symbol.XamarinEMDK.ProfileManager/PROFILE_FLAG p1, class Symbol.XamarinEMDK.ProfileConfig p2) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Android.Runtime.Register("processProfile", "(Ljava/lang/String;Lcom/symbol/emdk/ProfileManager$PROFILE_FLAG;Lcom/symbol/emdk/ProfileConfig;)Lcom/symbol/emdk/EMDKResults;", "GetProcessProfile_Ljava_lang_String_Lcom_symbol_emdk_ProfileManager_PROFILE_FLAG_Lcom_symbol_emdk_ProfileConfig_Handler")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>Symbol.XamarinEMDK.EMDKResults</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="p0" Type="System.String" />
-        <Parameter Name="p1" Type="Symbol.XamarinEMDK.ProfileManager+PROFILE_FLAG" />
-        <Parameter Name="p2" Type="Symbol.XamarinEMDK.ProfileConfig" />
-      </Parameters>
-      <Docs>
-        <param name="p0">
-        </param>
-        <param name="p1">
-        </param>
-        <param name="p2">
-        </param>
-        <summary>
-        </summary>
+        <param name="p0">To be added.</param>
+        <param name="p1">To be added.</param>
+        <param name="p2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessProfile">
@@ -290,21 +136,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.EMDKResults ProcessProfile(string p0, class Symbol.XamarinEMDK.ProfileManager/PROFILE_FLAG p1, string[] p2) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -320,14 +152,12 @@
         <Parameter Name="p2" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="p0">Name of the profile. ex: 'Profile1' You can also specify just part of the profile when a fully qualified name of the following format is given: [profileName][featureType][name in profile parameter] to just edit part of the profile. For example, if my profile is called ‘EmdkSampleProfile-1’ and the name I gave to the Clock feature is 'clock1'. Passing 'profileName' as ' EmdkSampleProfile-1/Clock/clock1’ will just process this part of the profile. Valid [featureType]: ActivitySelection, Barcode, MSR, Intent, Keystroke, IP, Clock, PowerMgr, PersistMgr, CertMgr, AppMgr, AccessMgr, Wi-Fi, GprsMgr</param>
-        <param name="p1">ProfileManager.PROFILE_FLAG If the profileFlag is set to SET, and if the given profile is not available in the EMDKConfig.xml, it will look for valid profile in extraData argument and if present, the profile will be added to the internal XML volatile repository and also applied to the device. If the profile is present in the EMDKConfig.xml, it will be applied to the device. If profileFlag is set to GET and if the profile is present in the internal repository, it will be returned in extraData.</param>
-        <param name="p2">This can be used to provide data for processing action.</param>
-        <summary>Processes the given profile based on the data provided and the flag and return status of the action.</summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
+        <param name="p0">To be added.</param>
+        <param name="p1">To be added.</param>
+        <param name="p2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessProfileAsync">
@@ -335,21 +165,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.EMDKResults ProcessProfileAsync(string p0, class Symbol.XamarinEMDK.ProfileManager/PROFILE_FLAG p1, class Org.W3c.Dom.IDocument p2) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -365,45 +181,12 @@
         <Parameter Name="p2" Type="Org.W3c.Dom.IDocument" />
       </Parameters>
       <Docs>
-        <param name="p0">Name of the profile.</param>
-        <param name="p1">ProfileManager.PROFILE_FLAG - If the profileFlag is set to SET, and if the given profile is not available in the EMDKConfig.xml, it will look for valid profile in extraData argument and if present, the profile will be added to the internal XML volatile repository and also applied to the device. If the profile is present in the EMDKConfig.xml, it will be applied to the device. The result will be returned to the application via data listener callback. If profileFlag is set to GET and if the profile is present in the internal repository, it will be returned via data listener callback.</param>
-        <param name="p2">This can be used to provide data for processing action.</param>
-        <summary>Processes the given profile based on the data provided and the flag and return status of the request. This is an asynchronous method and result will be returned through the registered callback.</summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ProcessProfileAsync">
-      <MemberSignature Language="C#" Value="public virtual Symbol.XamarinEMDK.EMDKResults ProcessProfileAsync (string p0, Symbol.XamarinEMDK.ProfileManager.PROFILE_FLAG p1, Symbol.XamarinEMDK.ProfileConfig p2);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.EMDKResults ProcessProfileAsync(string p0, class Symbol.XamarinEMDK.ProfileManager/PROFILE_FLAG p1, class Symbol.XamarinEMDK.ProfileConfig p2) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Android.Runtime.Register("processProfileAsync", "(Ljava/lang/String;Lcom/symbol/emdk/ProfileManager$PROFILE_FLAG;Lcom/symbol/emdk/ProfileConfig;)Lcom/symbol/emdk/EMDKResults;", "GetProcessProfileAsync_Ljava_lang_String_Lcom_symbol_emdk_ProfileManager_PROFILE_FLAG_Lcom_symbol_emdk_ProfileConfig_Handler")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>Symbol.XamarinEMDK.EMDKResults</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="p0" Type="System.String" />
-        <Parameter Name="p1" Type="Symbol.XamarinEMDK.ProfileManager+PROFILE_FLAG" />
-        <Parameter Name="p2" Type="Symbol.XamarinEMDK.ProfileConfig" />
-      </Parameters>
-      <Docs>
-        <param name="p0">
-        </param>
-        <param name="p1">
-        </param>
-        <param name="p2">
-        </param>
-        <summary>
-        </summary>
+        <param name="p0">To be added.</param>
+        <param name="p1">To be added.</param>
+        <param name="p2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessProfileAsync">
@@ -411,21 +194,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Symbol.XamarinEMDK.EMDKResults ProcessProfileAsync(string p0, class Symbol.XamarinEMDK.ProfileManager/PROFILE_FLAG p1, string[] p2) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -441,40 +210,12 @@
         <Parameter Name="p2" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="p0">Name of the profile.</param>
-        <param name="p1">ProfileManager.PROFILE_FLAG - If the profileFlag is set to SET, and if the given profile is not available in the EMDKConfig.xml, it will look for valid profile in extraData argument and if present, the profile will be added to the internal XML volatile repository and also applied to the device. If the profile is present in the EMDKConfig.xml, it will be applied to the device. If profileFlag is set to GET and if the profile is present in the internal repository, it will be returned data listener callback.</param>
-        <param name="p2">This can be used to provide data for processing action.</param>
-        <summary>Processes the given profile based on the data provided and the flag and return status of the request. This is an asynchronous method and result will be returned through the registered callback.</summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RemoveDataListener">
-      <MemberSignature Language="C#" Value="public virtual void RemoveDataListener (Symbol.XamarinEMDK.ProfileManager.IDataListener p0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveDataListener(class Symbol.XamarinEMDK.ProfileManager/IDataListener p0) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Android.Runtime.Register("removeDataListener", "(Lcom/symbol/emdk/ProfileManager$DataListener;)V", "GetRemoveDataListener_Lcom_symbol_emdk_ProfileManager_DataListener_Handler")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="p0" Type="Symbol.XamarinEMDK.ProfileManager+IDataListener" />
-      </Parameters>
-      <Docs>
-        <param name="p0">
-        </param>
-        <summary>The client can un-register to get data notification via callbacks.</summary>
+        <param name="p0">To be added.</param>
+        <param name="p1">To be added.</param>
+        <param name="p2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -482,32 +223,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -515,32 +239,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

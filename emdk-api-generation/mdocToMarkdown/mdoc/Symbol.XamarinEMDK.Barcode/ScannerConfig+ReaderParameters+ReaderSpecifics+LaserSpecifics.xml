@@ -3,20 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ScannerConfig/ReaderParameters/ReaderSpecifics/LaserSpecifics extends Java.Lang.Object" />
   <AssemblyInfo>
     <AssemblyName>Symbol.XamarinEMDK</AssemblyName>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <AssemblyVersion>1.0.3.1</AssemblyVersion>
-    <AssemblyVersion>1.0.3.2</AssemblyVersion>
-    <AssemblyVersion>2.0.0.1</AssemblyVersion>
-    <AssemblyVersion>2.1.0.4</AssemblyVersion>
-    <AssemblyVersion>2.1.0.5</AssemblyVersion>
-    <AssemblyVersion>2.4.0.87</AssemblyVersion>
-    <AssemblyVersion>2.5.0.41</AssemblyVersion>
-    <AssemblyVersion>2.5.0.48</AssemblyVersion>
-    <AssemblyVersion>2.6.0.69</AssemblyVersion>
-    <AssemblyVersion>2.7.0.76</AssemblyVersion>
-    <AssemblyVersion>3.0.0.41</AssemblyVersion>
     <AssemblyVersion>4.0.0.2</AssemblyVersion>
-    <AssemblyVersion>4.0.0.3</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Java.Lang.Object</BaseTypeName>
@@ -28,9 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>LaserSpecific class provides access to the laser scanner specific parameters.</summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,34 +24,17 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int javaReference, valuetype Android.Runtime.JniHandleOwnership transfer) cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="javaReference" Type="System.IntPtr" />
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference">
-        </param>
-        <param name="transfer">
-        </param>
-        <summary>
-        </summary>
-        <remarks>
-        </remarks>
+        <param name="javaReference">To be added.</param>
+        <param name="transfer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AdaptiveScanning">
@@ -73,14 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/AdaptiveScanning AdaptiveScanning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -91,12 +53,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+AdaptiveScanning</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This parameter enables or disables the adaptive scanning. When adaptive scanning is enabled, the scan engine will automatically toggle between 2 scan angles, wide and narrow, allowing the scan engine to decode barcodes based on the distance. Use enum ScannerConfig.AdaptiveScanning.
-</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AimTimer">
@@ -104,14 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 AimTimer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -122,11 +74,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Duration in milliseconds for timed aim types ScannerConfig.AimType.TIMED_HOLD and ScannerConfig.AimType.TIMED_RELEASE. Note than this duration must be less than the beamTimer.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AimType">
@@ -134,14 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/AimType AimType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -152,12 +95,9 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+AimType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Describes the type of aiming to use.
-Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead.isContinuousScan. If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead.isContinuousScan and aimType, the aimType settings will take precedence.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoCharacterSetFailureOption">
@@ -165,9 +105,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/AutoCharacterSetFailureOption AutoCharacterSetFailureOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -178,11 +116,9 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetFailureOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Failure option for auto character set selection.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoCharacterSetPreferredOrder">
@@ -190,9 +126,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Symbol.XamarinEMDK.Barcode.ScannerConfig/AutoCharacterSetPreference&gt; AutoCharacterSetPreferredOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -203,11 +137,9 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
         <ReturnType>System.Collections.Generic.IList&lt;Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetPreference&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Selection of character sets available for automatic decoding.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeamTimer">
@@ -215,20 +147,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       <MemberSignature Language="ILAsm" Value=".property instance int32 BeamTimer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -239,11 +158,9 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets the maximum amount of time that the reader remains on (0 - 60,000 ms in increments of 100 ms). A value of 0 sets the reader to stay on indefinitely.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeamWidth">
@@ -251,14 +168,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/BeamWidth BeamWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -269,11 +179,9 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+BeamWidth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Controls the beam width of a laser scanner. Laser beam width can be shortened or widened using this parameter. Use enum ScannerConfig.BeamWidth.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CharacterSetSelection">
@@ -281,9 +189,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/CharacterSet CharacterSetSelection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -294,11 +200,9 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+CharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Selection of character set for decoding the barcode.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectionIdleTime">
@@ -306,9 +210,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionIdleTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -319,12 +221,9 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContinuousRead">
@@ -332,20 +231,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/ReaderParameters/ReaderSpecifics/ContinuousRead ContinuousRead" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -356,11 +242,9 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+ReaderParameters+ReaderSpecifics+ContinuousRead</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ContinuousRead class provides access to continuous scanning related parameters.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DifferentSymbolTimeout">
@@ -368,14 +252,7 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
       <MemberSignature Language="ILAsm" Value=".property instance int32 DifferentSymbolTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -386,12 +263,9 @@ Note: Setting aimType is recommended instead of ScannerConfig.ReaderParams.Reade
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This setting is used to prevent the scanner from decoding another symbol within this time interval. This is applicable only for the aim type ScannerConfig.AimType.CONTINUOUS_READ. The user may want to prevent decoding too quickly and set an interval that the user can aim before decoding the next barcode. A value of 0 means no interval is required between two successive reads. Boundary values are 0 to 5000 in milliseconds in 500 increments such as 0, 500, 1000... etc
-Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead.differentSymbolTimeout and differentSymbolTimeout, the differentSymbolTimeout settings will take precedence.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisconnectOnExit">
@@ -399,9 +273,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
       <MemberSignature Language="ILAsm" Value=".property instance bool DisconnectOnExit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -412,12 +284,9 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Inverse1DMode">
@@ -425,20 +294,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/Inverse1DMode Inverse1DMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -449,11 +305,9 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+Inverse1DMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This parameter allows the user to select decoding on inverse 1D bar codes. Use enum ScannerConfig.Inverse1DMode.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LinearSecurityLevel">
@@ -461,20 +315,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/LinearSecurityLevel LinearSecurityLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -485,11 +326,9 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+LinearSecurityLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets the number of times a bar code is read to confirm an accurate decode. Use enum ScannerConfig.LinearSecurityLevel.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OneDQuietZoneLevel">
@@ -497,14 +336,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/OneDQuietZoneLevel OneDQuietZoneLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -515,11 +347,9 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+OneDQuietZoneLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This parameter sets the effort at which the decoder will attempt to decode margin-less barcodes. Behavior of the level set to this parameter will vary based on the margin-less decoder selected. Note: Higher margin-less levels will increase decoding times and the risk of decoding errors. Zebra therefore recommends enabling only the symbologies that require a higher margin-less level, and leaving all other symbologies at the default level of 1. Use enum ScannerConfig.OneDQuietZoneLevel.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PairAfterScannerReboot">
@@ -527,9 +357,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/PairAfterScannerReboot PairAfterScannerReboot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -540,11 +368,9 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+PairAfterScannerReboot</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Enable/disable automatic reconnection after scanner reboot.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PoorQualityDecodeEffortLevel">
@@ -552,14 +378,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/PoorQualityDecodeEffortLevel PoorQualityDecodeEffortLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -570,11 +389,9 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+PoorQualityDecodeEffortLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This parameter permits selection of enhancement modes for decoding barcodes of poor or degraded quality. Use enum ScannerConfig.PoorQualityDecodeEffortLevel.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PowerMode">
@@ -582,20 +399,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
       <MemberSignature Language="ILAsm" Value=".property instance class Symbol.XamarinEMDK.Barcode.ScannerConfig/PowerMode PowerMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -606,11 +410,9 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <ReturnType>Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Set scanner power mode. Use enum ScannerConfig.PowerMode.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SameSymbolTimeout">
@@ -618,14 +420,7 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
       <MemberSignature Language="ILAsm" Value=".property instance int32 SameSymbolTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -636,12 +431,9 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This setting is used to prevent the scanner driver from decoding the same symbol within this time interval. This is applicable only for the aim type ScannerConfig.AimType.CONTINUOUS_READ. Basically in the continuous mode the user can perform rapid scan and to prevent the user from decoding the same barcode twice user can set this value to an appropriate interval (in milliseconds). A value of 0 means no interval is required between two successive reads. Boundary values are 0 to 5000 in milliseconds in 500 increments such as 0, 500, 1000... etc
-Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.ContinuousRead.sameSymbolTimeout and sameSymbolTimeout, the sameSymbolTimeout settings will take precedence.</summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -649,31 +441,15 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
       <MemberSignature Language="ILAsm" Value=".property instance native int ThresholdClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -681,31 +457,15 @@ Note: If the application modifies ScannerConfig.ReaderParams.ReaderSpecific.Cont
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThresholdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>1.0.3.1</AssemblyVersion>
-        <AssemblyVersion>1.0.3.2</AssemblyVersion>
-        <AssemblyVersion>2.0.0.1</AssemblyVersion>
-        <AssemblyVersion>2.1.0.4</AssemblyVersion>
-        <AssemblyVersion>2.1.0.5</AssemblyVersion>
-        <AssemblyVersion>2.4.0.87</AssemblyVersion>
-        <AssemblyVersion>2.5.0.41</AssemblyVersion>
-        <AssemblyVersion>2.5.0.48</AssemblyVersion>
-        <AssemblyVersion>2.6.0.69</AssemblyVersion>
-        <AssemblyVersion>2.7.0.76</AssemblyVersion>
-        <AssemblyVersion>3.0.0.41</AssemblyVersion>
         <AssemblyVersion>4.0.0.2</AssemblyVersion>
-        <AssemblyVersion>4.0.0.3</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-        </summary>
-        <value>
-        </value>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

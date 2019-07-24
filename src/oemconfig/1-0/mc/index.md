@@ -15,14 +15,14 @@ menu:
       url: /oemconfig/1-0/search
 ---
 
-## Transaction Steps Level
+## Transaction Creation Overview
 
-This section describes Managed Configurations that can be used to define an ordered list of Steps, where each Step defines one or more Actions or configurations to be performed on a devices as part of an overall *Transaction*.
+
+This section describes all supported Managed Configurations (MCs), which can be used to define an ordered list of Steps for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*. 
 
 ### Transaction Steps
 
-Use this Array to define a sequence of *Transaction Steps*, where each *Transaction Step* will perform one or more Actions and/or configure one or more aspects of a device.
-
+A *Transaction* is a sequence of one or more *Transaction Steps* in which each *Transaction Step* performs one or more Actions or configuration settings on a device. Any number of MCs can be included in a single step, but any given MC may be used exactly once in any individual Step. If an individual MC is required more than once in a *Transaction*, it must be added a separate Step each time it is required. 
 
 Any number of *Transaction Steps* can be included within a single *Transaction* and the individual *Transactions Steps* within a *Transaction* will be executed in the order they are specified.
 
@@ -33,20 +33,20 @@ Any number of *Transaction Steps* can be included within a single *Transaction* 
 
 - Type = bundle_array 
 
+-----
 
-#### Transaction Step
-
-
+## Transaction Step Configuration
 
 Use this Group to specify a single *Transaction Step* that defines one or more Actions or configurations that you wish to perform on a device as part of an overall *Transaction*.
 
+#### The following rules apply to Transaction Steps: 
 
-Multiple Actions or configurations of different types can be defined as part of a single *Transaction Step*, but you CANNOT directly control the order or execution within a *Transaction Step*.
+- Any number of MCs can be included in a single step, but each MC may be used exactly once in any individual Step. 
+- If an individual MC is required more than once in a *Transaction*, it must be added a separate Step each time it is required. 
+- Multiple Actions or configurations of different types can be defined as part of a single *Transaction Step*, but you CANNOT directly control the order or execution within a *Transaction Step*.
 - OemConfig will execute multiple Actions and configurations defined within a *Transaction Step* in an order that it determines will ensure that everything is executed successfully.
-- If your need to control the order of execution of various Actions or configurations, place them in different *Transaction Steps*, and control the ordering those *Transaction Steps* within the *Transaction*.
-
-
-The following section **Transaction Step Level** describes the Actions and configurations you can perform as a part of a *Transaction Step*.
+- If you need to control the order of execution of various Actions or configurations, placed in different *Transaction Steps* and order the *Transaction Steps* within the *Transaction* as needed.
+- The **Transaction Step Level** section (below) describes the Actions and configurations that can be performed as a part of a *Transaction Step*.
 
 
 **Detail Information:** 
@@ -56,22 +56,13 @@ The following section **Transaction Step Level** describes the Actions and confi
 - Type = bundle 
 
 
-## Transaction Step Level
+### Transaction Step Level
 
+This section describes MCs that can be used to define the Actions and configurations to be performed by a *Transaction Step* within a *Transaction*, to provide an *Explanation* about a *Transaction Step*, and to define how errors that occur during the processing of a *Transaction Step* will be handled.
 
-
-This section describes Managed Configurations that can be used to define the content of a single *Transaction Step* within a *Transaction*, to provide an *Explanation* about the *Transaction Step*, and to define how errors that occur during the processing of the *Transaction Step* will be handled.
-
-
-
-### Explanation
-
-
+### Explanation of Step
 
 Enter an optional *Explanation* that describes the purpose or intended behavior of a *Transaction Step*.
-
-
-
 
 Since a *Transaction* may include many *Transaction Steps* and each *Transaction Step* could include one or more configurations, describing the *Transaction Step* can be beneficial when later reviewing the *Transaction* and/or when editing a *Transaction*, and especially when reordering the *Transaction Steps* within the *Transaction*.
 
@@ -85,17 +76,16 @@ Since a *Transaction* may include many *Transaction Steps* and each *Transaction
 
 ### Error Mode
 
-
-
 Select an *Error Mode* that determines how errors that occur during the execution of a *Transaction Step* should be handled.
 
 
-Since a *Transaction* may include multiple *Transaction Steps*, there may be cases where one *Transaction Step* within a *Transaction* is dependent on configuration performed by one or more preceding *Transaction Steps* in the same *Transaction*. In such cases, it may be desirable to terminate a *Transaction* if the processing of a *Transaction Step* results in an error to avoid propagating the results of that error into subsequent *Transaction Steps*.
+Since a *Transaction* may include multiple *Transaction Steps*, there may be cases where one *Transaction Step* within a *Transaction* is dependent on configuration performed by one or more preceding *Transaction Steps* in the same *Transaction*. In such cases, it might be desirable to avoid propagating the results of that error into subsequent *Transaction Steps* by terminating a *Transaction* if the processing of a *Transaction Step* results in an error.
 
 
-By default, execution will continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed. A decision to override this default behavior can be made independently for each *Transaction Step* within a *Transaction* by supplying an *Error Mode* value:
-- If the value ***Continue*** is selected, the default behavior will be used and hence any errors that occur during the execution of the current *Transaction Step* will NOT terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will thus always continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed.
-- If the value ***Stop*** is selected, the default behavior will be overridden and hence any errors that occur during the execution of the current *Transaction Step* will terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will continue with the next *Transaction Step* only if execution of the current *Transaction Step* completes with NO errors.
+By default, execution will continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed. A decision to override this default behavior can be made independently for each *Transaction Step* within a *Transaction* by supplying one of the following *Error Mode* values:
+
+- If the value ***Continue*** is selected, the default behavior will be used and any errors that occur during the execution of the current *Transaction Step* will NOT terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will thus always continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed.
+- If the value ***Stop*** is selected, the default behavior will be overridden and any errors that occur during the execution of the current *Transaction Step* will terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will continue with the next *Transaction Step* only if execution of the current *Transaction Step* completes with NO errors.
 
 
 **Detail Information:** 
@@ -106,11 +96,14 @@ By default, execution will continue with the next *Transaction Step* once execut
 
 - Choices = ***Stop*** , ***Continue*** 
 
------
+
+
+<<<<< ---- END OF EDDIE'S EDITS --- >>>>>
+
+
+
 
 ## Analytics Configuration
-
-
 
 Use this Group to configure the Analytics Client in a device.
 
@@ -177,7 +170,6 @@ The Analytics Client is turned on (enabled) by default on all devices: - If the 
 
 - Supported from: MX 7.2.
 
------
 
 ## Audio Configuration
 
@@ -286,7 +278,6 @@ Select the audio replication behavior of of a device.
 
 - Supported from: MX 7.2.
 
------
 
 ## Auto Trigger Configuration
 
@@ -372,7 +363,6 @@ Select the range at which automatic triggering will detect the presence of an ob
 
 - Supported from: MX 8.1.
 
------
 
 ## Blacklist Configuration
 

@@ -2,7 +2,7 @@
 title: ScannerConfig.VerifyCheckDigit
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Check the integrity of all Code 11 symbols to verify that the data complies with the specified check digit algorithm. This selects the check digit mechanism for the decoded Code 11 bar code.
 

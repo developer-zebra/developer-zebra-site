@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters+Code93Decoder
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 The Code93 class provides access to parameters that are available for the Code93 decoder.
 

@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: xmlmgr
 product: EMDK For Xamarin
-productversion: '4.0'
+productversion: '5.0'
 ---
 
 

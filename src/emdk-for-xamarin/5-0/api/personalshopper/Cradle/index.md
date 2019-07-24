@@ -2,7 +2,7 @@
 title: Cradle
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Class to communicate with the MC18 cradle.
 

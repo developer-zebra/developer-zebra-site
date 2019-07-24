@@ -2,7 +2,7 @@
 title: ScannerResults
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Defines all the error codes the barcode scanning API returns.
 

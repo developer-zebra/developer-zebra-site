@@ -2,7 +2,7 @@
 title: ScannerInfo
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 ScannerInfo provides information of the scanner device.
 

@@ -2,7 +2,7 @@
 title: ScannerConfig.AutoCharacterSetFailureOption
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Failure option for auto character set selection.
  

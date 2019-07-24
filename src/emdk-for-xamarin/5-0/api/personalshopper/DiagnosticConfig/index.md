@@ -2,7 +2,7 @@
 title: DiagnosticConfig
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 The diagnostic configuration class has to be configured before calling the get diagnostics parameter data. This class configures average current and Shopping trip in minutes.
 

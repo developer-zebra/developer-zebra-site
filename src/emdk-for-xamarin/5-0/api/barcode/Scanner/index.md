@@ -2,7 +2,7 @@
 title: Scanner
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 
 Scanner class will represent and provides access to the physical scanner device.

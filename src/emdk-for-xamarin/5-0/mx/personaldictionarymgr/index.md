@@ -6,7 +6,7 @@ mxversions:
     value: 7
 csp: personaldictionarymgr
 product: EMDK for Xamarin
-productversion: '4.0'
+productversion: '5.0'
 ---
 
 

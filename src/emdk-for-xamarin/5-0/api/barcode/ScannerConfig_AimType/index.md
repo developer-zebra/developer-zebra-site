@@ -2,7 +2,7 @@
 title: ScannerConfig.AimType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Describes the type of aiming to use. Takes affect only when continuous read is set to false.
 

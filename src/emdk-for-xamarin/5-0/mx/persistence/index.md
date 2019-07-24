@@ -12,7 +12,7 @@ mxversions:
     value: 5
 csp: persistmgr
 product: EMDK for Xamarin
-productversion: '4.0'
+productversion: '5.0'
 ---
 
 

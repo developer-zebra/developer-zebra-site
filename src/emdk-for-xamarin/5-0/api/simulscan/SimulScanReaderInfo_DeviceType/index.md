@@ -2,7 +2,7 @@
 title: SimulScanReaderInfo.DeviceType
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 List of supported scanner device type.
 

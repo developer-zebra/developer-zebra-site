@@ -2,7 +2,7 @@
 title: ScannerConfig.OneDQuietZoneLevel
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Describes the effort at which the decoder will attempt to decode margin-less barcodes.
 

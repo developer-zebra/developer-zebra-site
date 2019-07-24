@@ -2,7 +2,7 @@
 title: "How to Check a Device's MX Version"
 layout: guide.html
 product: EMDK For Xamarin
-productversion: '4.0'
+productversion: '5.0'
 ---
 
 ## Overview

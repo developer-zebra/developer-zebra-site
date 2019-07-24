@@ -2,7 +2,7 @@
 title: ScannerConfig.GS1LimitedSecurityLevel
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Security level addition of GS1 DataBar lim decoder.
 

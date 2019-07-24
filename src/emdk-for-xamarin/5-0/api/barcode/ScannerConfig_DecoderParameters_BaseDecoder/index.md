@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters.BaseDecoder
 layout: guide.html 
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 The BaseDecoder class is the parent decoder to all decoders and is inherited by all decoders.
 

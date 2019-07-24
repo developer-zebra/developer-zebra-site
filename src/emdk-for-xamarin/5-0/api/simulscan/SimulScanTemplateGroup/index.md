@@ -2,7 +2,7 @@
 title: SimulScanTemplateGroup
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 The SimulScanTemplateGroup class is a grouping of multiple SimulScanTemplateRegion items.
 

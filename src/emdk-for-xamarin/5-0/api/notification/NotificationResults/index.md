@@ -2,7 +2,7 @@
 title: NotificationResults
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Defines all the error codes that Notification API returns. 
 

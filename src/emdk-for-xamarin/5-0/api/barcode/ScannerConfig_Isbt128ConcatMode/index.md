@@ -2,7 +2,7 @@
 title: ScannerConfig.Isbt128ConcatMode
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Option for concatenating pairs of ISBT128 code types.
 

@@ -2,7 +2,7 @@
 title: EMDK Setup
 layout: guide.html
 product: EMDK for Xamarin
-productversion: '4.0'
+productversion: '5.0'
 ---
 
 Starting with version 3.0, EMDK for Xamarin development tools are installed from NuGet packages and updated using the NuGet package management system. The EMDK-X NuGet package adds to Microsoft Visual Studio the API libraries required for building Android applications with Xamarin. **The package must be added to any Android project before the APIs are available for use**. 

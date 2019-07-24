@@ -2,7 +2,7 @@
 title: ScannerConfig.Inverse1DMode
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 This parameter allows the user to select decoding on inverse 1D bar codes.
 

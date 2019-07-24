@@ -2,7 +2,7 @@
 title: ScanAndPairManager
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 The ScanAndPair provides simple methods to scan a Bluetooth barcode (name or address) of a remote Bluetooth device and pair/unpair with the remote Bluetooth device.
 

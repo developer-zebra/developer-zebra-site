@@ -2,7 +2,7 @@
 title: EMDKException
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 The methods of EMDKManager object throws EMDKException when an error occurs.
     The error could be due to a Client application using the API incorrectly

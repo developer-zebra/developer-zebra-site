@@ -6,7 +6,7 @@ mxversions:
     value: 7
 csp: bugreportmgr
 product: EMDK for Xamarin
-productversion: '4.0'
+productversion: '5.0'
 ---
 
 

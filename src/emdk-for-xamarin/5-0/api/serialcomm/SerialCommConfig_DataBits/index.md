@@ -2,7 +2,7 @@
 title: SerialCommConfig.DataBits
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Pre-defined constants for number of data bits in a serial frame in SerialComm object.
 

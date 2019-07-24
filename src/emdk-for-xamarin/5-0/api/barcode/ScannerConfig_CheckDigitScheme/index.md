@@ -2,7 +2,7 @@
 title: ScannerConfig.CheckDigitScheme
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit.
 

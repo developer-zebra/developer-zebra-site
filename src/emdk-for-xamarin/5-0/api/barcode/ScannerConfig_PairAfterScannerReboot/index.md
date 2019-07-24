@@ -2,7 +2,7 @@
 title: ScannerConfig.PairAfterScannerReboot
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Enable/disable automatic reconnection after scanner reboot. Applicable to DS3678 Bluetooth scanner only.
 

@@ -2,7 +2,7 @@
 title: EMDKManager.StatusData
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 StatusData class provides access to EMDK Manager feature ready to use status.
 

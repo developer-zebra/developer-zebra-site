@@ -2,7 +2,7 @@
 title: SimulScanReader
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 SimulScanReader class will represent and provides access to the physical Reader device.
 

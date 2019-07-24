@@ -2,7 +2,7 @@
 title: EMDKManager.IEMDKListener
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 This is the interface for the callback to notify the opening and closing status of the EMDK. On a successful opening, the EMDKManager object will be returned. An interface for notifying clients when they the EMDKManager is ready to use or closed abruptly.
     

@@ -2,7 +2,7 @@
 title: ScanAndPairConfig.NotificationTypes
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 This enum provides notification related information during scanning process and is used by the ScanAndPair APIs to set the notification type. The notifications can be provided to the user to indicate the progress of the different scanning states via beep sequences.  The beep sequence is explained below 
 

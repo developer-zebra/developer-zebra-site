@@ -2,7 +2,7 @@
 title: ScannerConfig.ReaderParameters+ReaderSpecifics
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 ReaderSpecific class provides access to the reader specific parameters.
 

@@ -2,7 +2,7 @@
 title: ScannerConfig.LinearSecurityLevel
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Sets the number of times a bar code is read to confirm an accurate decode.
 

@@ -2,7 +2,7 @@
 title: SerialCommConfig.FlowControlMode
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Pre-defined constants to specify flow control.
 

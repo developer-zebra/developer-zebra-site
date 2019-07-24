@@ -2,7 +2,7 @@
 title: ScannerConfig.DecoderParameters+Upce1Decoder
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 The Upce1 class provides access to parameters that are available for the Upce1 decoder.
 

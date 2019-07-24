@@ -2,7 +2,7 @@
 title: BarcodeManager
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 This is the primary object to access the barcode scanning feature.
 

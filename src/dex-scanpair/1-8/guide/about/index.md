@@ -12,16 +12,14 @@ productversion: '1.8'
 This utility applies to Direct Store Delivery (DSD) Direct Exchange (DEX) protocol applications that have traditionally used serial communications over a DEX cable, enabling them to communicate over Bluetooth via the DX30. **DEX Scan & Pair** pairs the DX30 over Bluetooth by scanning the MAC address of the DX30 with a mobile computer. After pairing with the DX30, the custom DEX app must setup a Serial Port Profile connection to communicate with DX30 over Bluetooth.<br><br>
 
 Direct EXchange (DEX) is a digital communication protocol that extends the UCS (Uniform Communication Standard), which enables direct store delivery drivers to transmit digital invoices to the retailer's receiving clerk at the loading dock. Created by the Uniform Code Council (UCC), DEX has been adopted by most national grocery chains. This standardized system reduces time, costs and inaccuracies inherent in paper invoices.
-
-Refer to _DX30 Quick Start Guide_ from [Zebra Support and Downloads](http://www.zebra.com/support) for information on the DX30.
+<br><br>
+Refer to [DX30 Quick Start Guide](https://www.zebra.com/us/en/support-downloads/software/utilities/dx30.html) from _Zebra Support and Downloads_ for information on DX30.
 
 ## Supported Devices
 
 <table class="facelift" align="center" style="width:90%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
     <th>Device</th>
-    <th style="text-align:center">Android 4.4 <br>(KitKat)</th>
-    <th style="text-align:center">Android 5.x <br>(Lollipop)</th>
     <th style="text-align:center">Android 6.x <br>(Marshmallow)</th>
     <th style="text-align:center">Android 7.x <br>(Nougat)</th>
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
@@ -30,14 +28,10 @@ Refer to _DX30 Quick Start Guide_ from [Zebra Support and Downloads](http://www.
     <td>ET56</td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>L10</td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
@@ -45,39 +39,29 @@ Refer to _DX30 Quick Start Guide_ from [Zebra Support and Downloads](http://www.
   <tr>
     <td>MC33</td>
     <td></td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>TC20/TC25</td>
     <td></td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>TC51</td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
     <td></td>
   </tr>
     <tr>
     <td>TC56</td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>TC57</td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
@@ -94,16 +78,12 @@ Refer to _DX30 Quick Start Guide_ from [Zebra Support and Downloads](http://www.
   -->
   <tr>
     <td>TC70X/TC75X</td>
-    <td></td>
-    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>TC77</td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>

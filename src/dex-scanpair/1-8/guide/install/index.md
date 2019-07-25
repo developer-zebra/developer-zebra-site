@@ -9,8 +9,8 @@ productversion: '1.8'
 This section describes how to install the DEX Scan & Pair application on an Android mobile computer when used with a line of business application.
 
 ## Install
-To install the DEX Scan & Pair application on a supported Zebra device:
-1. Download the DEX Scan & Pair application from [Zebra Support and Downloads](http://www.zebra.com/support) web site.
+To install DEX Scan & Pair on a supported Zebra device:
+1. Download [DEX Scan & Pair](https://www.zebra.com/us/en/support-downloads/software/utilities/dx30.html) from _Zebra Support and Downloads_.
 2. Uncompress the file into a folder on the host computer.
 3. Copy the .APK file from the host computer to the mobile computer.
 4. Install the .APK file on the mobile computer.

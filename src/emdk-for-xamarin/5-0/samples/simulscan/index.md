@@ -1,7 +1,7 @@
 ---
 publish: true
-title: Document Capture
-description: "This sample application will show how the Simulscan API's can be used to capture multiple types of data from paper forms."
+title: SimulScan Document Capture
+description: "Demonstrates how Simulscan APIs can be used to capture multiple types of data from paper forms."
 download: 'https://github.com/Zebra/samples-emdkforxamarin-3_0/archive/master.zip'
 source: 'https://github.com/Zebra/samples-emdkforxamarin-3_0'
 features:
@@ -13,10 +13,11 @@ devices:
   - TC75KK
 image: 1.png
 screenshots:
-  - 1.png
-  - 2.png
-  - 3.png
-  - 4.png
+  - simulscan_storage.png
+  - simulscanSample1.png
+  - simulscanSample2.png
+  - simulscanSample3.png
+  - simulscanSample4.png
 layout: sample.html
 product: EMDK For Xamarin
 productversion: '5.0'
@@ -24,20 +25,13 @@ productversion: '5.0'
 
 
 ##Overview
-This sample application will show how the Simulscan API's can be used to capture multiple types of data from forms, boxes and the like.
+This sample application demonstrates how Simulscan APIs can be used to capture multiple types of data from forms, boxes and the like.
 
 ##Prerequisites
-
-You will need:
-
-* A SimulScan licensed device
+* A SimulScan-licensed device
 * A Simulscan template
 * A printed copy of the form used to create the template
-
-
-##Requirements
-Android API 19 must be installed via the SDK Manager before attempting to load this sample.
-
+* Android API 19 or higher loaded via the SDK Manager
 
 ##Loading the Sample Application
 
@@ -50,30 +44,32 @@ Alternatively, launch a preferred IDE and load the project via the File > Open m
 
 ##Using This Sample
 
-1. Place a template on the sdcard of you SimulScan licensed device.
+1. Place a template on the SD card of the SimulScan-licensed device using an adb command similar to the one below: 
 
-		:::
-		adb push myTemplate.xml /sdcard/simulscan/templates/
-	
+    :::term
+    adb push myTemplate.xml /sdcard/simulscan/templates/
+  
+2. Grant the app permission to access “Storage” by navigating to<br> **Settings -> Apps -> SimulScanSample1 -> Permissions**. The screen should look similar to the image below:
+  <img alt="image" style="height:400px" src="simulscan_storage.png"/>
 
-2. Launch The SimulScan sample application
-	
-	The Simulscan sample app will find the templates you place on the devices sdcard, and populate the "Set Template" option list.  Select the template you wish to use from that list.
-	![img](simulscanSample1.png) 
+3. Launch The SimulScan sample app, which finds all templates stored in the SD card. **Tap the "Set Template" button** and select the template pushed to the device in Step 1: 
+  <img alt="image" style="height:400px" src="simulscanSample1.png"/>
+
+4. **Press the "Read" button** and follow the on-screen instructions. The sample app extracts the fields defined in the template: 
+  <img alt="image" style="height:400px" src="simulscanSample2.png"/><br>
+  If the "Display Results View" option is checked, a list of results is displayed for review: 
+  <img alt="image" style="height:400px" src="simulscanSample3.png"/>
+
+5. **Press the "Accept" button**. The app displays the elapsed time for capturing and decoding the template fields: 
+
+  <img alt="image" style="height:400px" src="simulscanSample4.png"/>
+
+6. Press the device's "BACK" button to return to the main screen.
 
 
-3. Press the "Read" button, and follow the on screen instructions. The sample app will extract the fields defined in the template. If the "Display Results View" option is checked, a list of results will be displayed for you to review.
-
-	![img](simulscanSample2.png)  ![img](simulscanSample3.png)   
-
-
-4. Press the "Accept" button. The sample app will then display a screen showing how long simulscan took to capture and decode the template fields. Press the devices "Back" hardware button to return to the main screen.
-
-	![img](simulscanSample4.png) 
-
-
-
-
+<!-- 
+  ![img](simulscanSample2.png)  ![img](simulscanSample3.png)   
+ -->
 
 
 

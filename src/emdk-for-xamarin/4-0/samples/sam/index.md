@@ -2,12 +2,8 @@
 publish: true
 title: NFC SAM Configuration
 description: Demonstrates use of the NFC Secure Access Module.
-downloads:
-  - title: Sample Projects
-    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3/archive/master.zip'
-sources:
-  - title: Github Repo
-    url: 'https://github.com/Zebra/samples-emdkforandroid-7_3'
+download: 'https://github.com/Zebra/samples-emdkforxamarin-3_0/archive/master.zip'
+source: 'https://github.com/Zebra/samples-emdkforxamarin-3_0'
 features:
   - Profile Manager
   - NFC Manager

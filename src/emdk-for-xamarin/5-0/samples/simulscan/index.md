@@ -25,7 +25,7 @@ productversion: '5.0'
 
 
 ##Overview
-This sample application demonstrates how Simulscan APIs can be used to capture multiple types of data from forms, boxes and the like.
+This sample application demonstrates how Simulscan APIs can be used to capture multiple types of data from forms, labels, boxes etc.
 
 ##Prerequisites
 * A SimulScan-licensed device
@@ -46,7 +46,7 @@ Alternatively, launch a preferred IDE and load the project via the File > Open m
 
 1. Place a template on the SD card of the SimulScan-licensed device using an adb command similar to the one below: 
 
-    :::term
+    :::
     adb push myTemplate.xml /sdcard/simulscan/templates/
   
 2. Grant the app permission to access “Storage” by navigating to<br> **Settings -> Apps -> SimulScanSample1 -> Permissions**. The screen should look similar to the image below:

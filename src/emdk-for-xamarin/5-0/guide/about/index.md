@@ -15,11 +15,7 @@ EMDK for Xamarin inserts the Zebra-exclusive Profile Manager technology within t
 
 ### Supported Devices
 
-EMDK-X has been designed to work with all Zebra mobile computers running Android. 
-
-**Devices and/or dessert flavors shown in bold below are newly added** in the current release. 
-
-**Devices tested and validated for this release**:
+EMDK-X has been designed to work with all Zebra mobile computers running Android. The devices listed below have been tested and validated for compatibility with this release. 
 
 ### Mobile devices
 
@@ -37,6 +33,8 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 * TC77 - Oreo
 * **VC8300 - Oreo**
 
+Devices and/or dessert flavors **shown in bold below are newly added** in the current release. 
+
 ### Scanners and imagers
 
 * RS507
@@ -52,7 +50,6 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 -----
 
 ## New in v5.0
-
 
 ### Device Support
 **Support <u>added</u> for Zebra devices running Android 8.x Oreo**:<br>
@@ -90,6 +87,19 @@ To target Zebra devices running Android 7.x Nougat, please use [EMDK for Xamarin
 
 #### Deprecations:
 Support for Unique Device Identification (UDI) standard barcodes such as GS1, HIBCC and ICCBBA in Barcode APIs has been deprecated; **support will be terminated in Android 10 Q**. 
+
+#### NFC Sample App
+**An [NFC SAM sample app](../../samples/sam)** demonstrates usage of the NFC Secure Access Module, which allows secure communication with NFC tags from NFC-equipped Zebra devices. 
+
+### API Enhancements
+
+**Enhanced Barcode Manager API** adds the following features on devices running Android 8.1 Oreo and higher:
+* Added `enum` and reader parameters to support DPM mode, which allows selection of the DPM mode based on the type of barcode being scanned: 
+ * New ScannerConfig `enum` DpmModes: **DISABLED, MODE_1, MODE_2** 
+ * New reader parameter DpmMode in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` activates the DPM mode
+* Added `enum` and reader parameters to support DPM illumination, providing illumination for DPM barcode reading: 
+ * New ScannerConfig `DpmIlluminationControl` `enum` allows selection of the DPM illumination options: **CYCLE, DIRECT, INDIRECT** 
+ * New reader parameter `dpmIlluminationControl` in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` controls DPM illumination 
 
 -----
 

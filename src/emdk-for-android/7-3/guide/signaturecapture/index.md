@@ -13,7 +13,7 @@ The EMDK Barcode API enables an app to capture a signature by designating a pred
 
 *A typical signature capture barcode*. 
 
-For help creating a signature-capture barcode like the one above, please refer to the [Signature Capture Code Guide (pdf)](Signature_Capture_code.pdf). 
+For help creating a signature-capture barcode like the one above, please refer to the [Signature Capture Code Guide (pdf)](Decoder_Signature_v0.3.pdf). 
 
 -----
 
@@ -110,7 +110,7 @@ The signature type is held in the second byte of the byte array. The image below
 
 The table below lists the accepted start/stop patterns. The bar and space widths are expressed as multiples of X. Values must be the same pattern on either side of a signature capture box. The signature type value is reported with the captured signature image.
 
-For help creating a signature-capture barcode like the one above, please refer to the [Signature Capture Code Guide (pdf)](Signature_Capture_code.pdf). 
+For help creating a signature-capture barcode like the one above, please refer to the [Signature Capture Code Guide (pdf)](Decoder_Signature_v0.3.pdf). 
 
 <img alt="image" style="height:200px" src="bar-space_patterns.png"/>
  
@@ -173,4 +173,4 @@ To display the image as a bitmap, use the following code:
 ## Also See 
 
 * **[Barcode Scanning API Programmer's Guide](../barcode_scanning_guide)**
-* **[Signature Capture Code Guide (pdf)](Signature_Capture_code.pdf)** 
+* **[Signature Capture Code Guide (pdf)](Decoder_Signature_v0.3.pdf)** 

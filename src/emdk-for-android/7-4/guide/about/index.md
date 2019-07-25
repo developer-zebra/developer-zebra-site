@@ -26,33 +26,33 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 -----
 
 ### Supported Devices
+The devices listed below have been tested and validated for compatibility with this release. 
 
 #### Mobile devices
 
 * CC600 - Oreo
 * CC6000 - Oreo 
+* **EC30 - Oreo**
+* **L10 - Oreo**
 * MC33 - Oreo
 * MC9300 - Oreo
-* PS20 - Oreo
+* PS20 - Oreo, **Pie**
 * TC20 - Oreo
 * TC25 - Oreo
 * TC51 - Oreo
-* TC52 - Oreo
+* TC52 - Oreo, **Pie**
 * TC56 - Oreo
 * TC57 - Oreo
 * TC70x - Oreo
-* TC72 - Oreo
+* TC72 - Oreo, **Pie**
 * TC75x - Oreo
 * TC77 - Oreo
 * TC8300 - Oreo
 * VC80x - Oreo
+* **VC8300 - Oreo**
 
-<!-- 6/27/19- per eng, there will be no Nougat support for WT6000; device no longer supported by EMDK. 
+Devices and/or dessert flavors **shown in bold below are newly added** in the current release. 
 
-* WT6000 - (OS support info to come)
- -->
-<!-- **Bold text** indicates support added after initial release; device refresh might be required. 
- -->
 #### Scanners and imagers
 
 * DS2278
@@ -70,22 +70,32 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 ## New in v7.4 
 
 #### Nougat Support Ends
-**EMDK-A 7.4 and higher no longer targets devices running Android 7.x Nougat or older, including the WT6000 wearable computer**. To target the WT6000 (which currently supports up to Nougat), please use [EMDK-A 7.3](../../7-3/guide/about) or earlier.   
+**EMDK-A 7.4 and higher no longer targets devices running Android 7.x Nougat or older, including the WT6000 wearable computer**. To target the WT6000 (which currently supports up to Nougat), please use [EMDK-A 7.3](../../7-3/guide/about).   
 
 #### FAQ Page
 EMDK-A 7.3 and 7.4 now present a page of [frequently asked questions](../../faq) submitted to Zebra customer- and partner-support departments. Answers are provided as a mixture of simple guidance, links to relevant guides and/or sample code. Access the page through the "FAQs" tab at the top of any EMDK-A guide page or from the "FAQs" button in the EMDK-A tile on the [TechDocs main page](../../../../). 
 
-#### SmartCradle API
-**EMDK-A 7.4 introduces [Locking SmartCradle APIs](../../intents/cradle)** for the EC30, intent-based interfaces for controlling the secure charging station of Zebra's latest small form-factor mobile computing device. 
-
 #### IrDA API
 **EMDK-A 7.3 (and later) now contains [IrDA APIs](../../intents/irda)**, intent-based interfaces for controlling hardware that conforms to the Infrared Data Association (IrDA) specification** commonly found in mobile computers, printers, handheld remote controls and some medical devices. 
+
+#### SmartCradle API
+**EMDK-A 7.4 introduces [Locking SmartCradle APIs](../../intents/cradle)** for the EC30, intent-based interfaces for controlling the secure charging station of Zebra's latest small form-factor mobile computing device. 
 
 #### EC30 Programmer's Guide
 The EC30 Enterprise Companion is Zebra's ultra-compact, fully functional mobile computing device capable of executing TC-series apps out-of-the box. But its small screen might require app changes to ensure a pleasant user experience. The [EC30 Programmer's Guide](../ec30_programming) describes how. 
 
 #### NFC Sample App
 **An [NFC SAM sample app](../../samples/sam)** demonstrates usage of the NFC Secure Access Module, which allows secure communication with NFC tags from NFC-equipped Zebra devices. 
+
+### API Enhancements
+
+**Enhanced Barcode Manager API** adds the following features on devices running Android 8.1 Oreo and higher:
+* Added `enum` and reader parameters to support DPM mode, which allows selection of the DPM mode based on the type of barcode being scanned: 
+ * New ScannerConfig `enum` DpmModes: **DISABLED, MODE_1, MODE_2** 
+ * New reader parameter DpmMode in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` activates the DPM mode
+* Added `enum` and reader parameters to support DPM illumination, providing illumination for DPM barcode reading: 
+ * New ScannerConfig `DpmIlluminationControl` `enum` allows selection of the DPM illumination options: **CYCLE, DIRECT, INDIRECT** 
+ * New reader parameter `dpmIlluminationControl` in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` controls DPM illumination 
 
 -----
 

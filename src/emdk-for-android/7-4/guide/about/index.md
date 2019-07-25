@@ -51,7 +51,7 @@ The devices listed below have been tested and validated for compatibility with t
 * VC80x - Oreo
 * **VC8300 - Oreo**
 
-Devices and/or dessert flavors **shown in bold below are newly added** in the current release. 
+Devices and/or dessert flavors **shown in bold are newly added** in the current release. 
 
 #### Scanners and imagers
 
@@ -70,7 +70,7 @@ Devices and/or dessert flavors **shown in bold below are newly added** in the cu
 ## New in v7.4 
 
 #### Nougat Support Ends
-**EMDK-A 7.4 and higher no longer targets devices running Android 7.x Nougat or older, including the WT6000 wearable computer**. To target the WT6000 (which currently supports up to Nougat), please use [EMDK-A 7.3](../../7-3/guide/about).   
+**EMDK-A 7.4 and higher no longer targets devices running Android 7.x Nougat or older, including the WT6000 wearable computer**. To target the WT6000 (which currently supports up to Nougat), please use [EMDK-A 7.3](../../../7-3/guide/about).   
 
 #### FAQ Page
 EMDK-A 7.3 and 7.4 now present a page of [frequently asked questions](../../faq) submitted to Zebra customer- and partner-support departments. Answers are provided as a mixture of simple guidance, links to relevant guides and/or sample code. Access the page through the "FAQs" tab at the top of any EMDK-A guide page or from the "FAQs" button in the EMDK-A tile on the [TechDocs main page](../../../../). 

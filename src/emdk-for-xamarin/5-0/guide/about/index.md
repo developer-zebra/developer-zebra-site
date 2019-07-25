@@ -33,7 +33,7 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 * TC77 - Oreo
 * **VC8300 - Oreo**
 
-Devices and/or dessert flavors **shown in bold below are newly added** in the current release. 
+Devices and/or dessert flavors **shown in bold are newly added** in the current release. 
 
 ### Scanners and imagers
 

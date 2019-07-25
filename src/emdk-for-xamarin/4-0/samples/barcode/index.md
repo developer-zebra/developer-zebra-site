@@ -2,8 +2,8 @@
 publish: true
 title: Barcode APIs
 description: 'This sample application will allow you to scan barcodes based on selected scanner device, trigger type and a few decoder Decoder Params.'
-download: 'https://github.com/Zebra/samples-emdkforxamarin-3_0/archive/master.zip'
-source: 'https://github.com/Zebra/samples-emdkforxamarin-3_0'
+download: 'https://github.com/Zebra/samples-emdkforxamarin-4_0/archive/master.zip'
+source: 'https://github.com/Zebra/samples-emdkforxamarin-4_0'
 
 features:
   - Profile Manager
@@ -33,7 +33,7 @@ product: EMDK For Xamarin
 productversion: '4.0'
 ---
 
-https://github.com/Zebra/samples-emdkforxamarin-3_0/tree/master/BarcodeSample1
+https://github.com/Zebra/samples-emdkforxamarin-4_0/tree/master/BarcodeSample1
 
 ##Overview
 The Barcode API's are used when you wish to handle all barcode scanning entirely in C# using [Barcode/Scanning APIs](/emdk-for-xamarin/4-0/api/). These API's work independently of any Data Capture profiles.  

@@ -2,8 +2,8 @@
 publish: true
 title: SimulScan Document Capture
 description: "Demonstrates how Simulscan APIs can be used to capture multiple types of data from paper forms."
-download: 'https://github.com/Zebra/samples-emdkforxamarin-3_0/archive/master.zip'
-source: 'https://github.com/Zebra/samples-emdkforxamarin-3_0'
+download: 'https://github.com/Zebra/samples-emdkforxamarin-4_0/archive/master.zip'
+source: 'https://github.com/Zebra/samples-emdkforxamarin-4_0'
 features:
   - Profile Manager
   - Simulscan

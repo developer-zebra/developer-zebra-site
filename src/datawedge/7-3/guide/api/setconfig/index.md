@@ -997,6 +997,11 @@ Other Scanner Input Parameters:
   </tr>
 
   <tr>
+	<td>instant_reporting_enable</td>
+	<td>true<br>false</td>
+  </tr>
+
+  <tr>
 	<td></td>
 	<td>true<br>false</td>
   </tr>

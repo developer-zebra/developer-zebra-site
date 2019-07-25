@@ -15,8 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary></summary>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,10 +31,10 @@
         <Parameter Name="transfer" Type="Android.Runtime.JniHandleOwnership" />
       </Parameters>
       <Docs>
-        <param name="javaReference">To be added.</param>
-        <param name="transfer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="javaReference"></param>
+        <param name="transfer"></param>
+        <summary></summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="BluetoothDeviceDiscoveryFailed">
@@ -53,9 +53,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="BluetoothNotEnabled">
@@ -74,9 +74,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="BluetoothServiceDiscoveryFailed">
@@ -95,9 +95,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeviceAlreadyPaired">
@@ -116,9 +116,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeviceNotPaired">
@@ -137,9 +137,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="DevicePairingFailed">
@@ -158,9 +158,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeviceUnpairingFailed">
@@ -179,9 +179,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Failure">
@@ -200,9 +200,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetErrorDescription">
@@ -224,10 +224,10 @@
         <Parameter Name="p0" Type="Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults" />
       </Parameters>
       <Docs>
-        <param name="p0">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="p0"></param>
+        <summary></summary>
+        <returns></returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Inprogress">
@@ -246,9 +246,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidBluetoothDeviceInfo">
@@ -267,9 +267,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidConfig">
@@ -288,9 +288,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidObject">
@@ -309,9 +309,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidPairingPin">
@@ -330,9 +330,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidScannedData">
@@ -351,9 +351,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="PairingTimedout">
@@ -372,9 +372,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousCommandPending">
@@ -393,9 +393,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScannerInitFailure">
@@ -414,9 +414,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScannerInUse">
@@ -435,9 +435,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScannerNotSupported">
@@ -456,9 +456,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScannerReadFailed">
@@ -477,9 +477,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScannerUnintFailed">
@@ -498,9 +498,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Success">
@@ -519,9 +519,9 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -535,9 +535,9 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -551,9 +551,9 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueOf">
@@ -575,10 +575,10 @@
         <Parameter Name="p0" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="p0">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="p0"></param>
+        <summary></summary>
+        <returns></returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -598,9 +598,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <returns></returns>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

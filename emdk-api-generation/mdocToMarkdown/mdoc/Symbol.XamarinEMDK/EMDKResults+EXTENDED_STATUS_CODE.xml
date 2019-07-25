@@ -15,8 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary></summary>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActivitySelectionMergingNotSupported">
@@ -35,9 +35,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AppNotAllowedToSubmitXml">
@@ -56,9 +56,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="DependencyComponentFailure">
@@ -77,9 +77,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="FeatureNameNotFoundInConfig">
@@ -98,9 +98,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="FeatureNameNotFoundInExtradata">
@@ -119,9 +119,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="FeatureNotUniqueInConfig">
@@ -140,9 +140,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="FeatureNotUniqueInExtradata">
@@ -161,9 +161,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="FeatureTypeNotFoundInConfig">
@@ -182,9 +182,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="FeatureTypeNotFoundInExtradata">
@@ -203,9 +203,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GeneralExceptionOccured">
@@ -224,9 +224,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidProfileConfiguration">
@@ -245,9 +245,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidValue">
@@ -266,9 +266,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="NamevalueMismatchInConfig">
@@ -287,9 +287,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="NamevalueMismatchInExtradata">
@@ -308,9 +308,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -329,9 +329,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProfileNameFormatError">
@@ -350,9 +350,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProfileNotFoundInConfig">
@@ -371,9 +371,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProfileNotFoundInExtradata">
@@ -392,9 +392,9 @@
         <ReturnType>Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdClass">
@@ -408,9 +408,9 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThresholdType">
@@ -424,9 +424,9 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <value></value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueOf">
@@ -448,10 +448,10 @@
         <Parameter Name="this_" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="this_">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="this_"></param>
+        <summary></summary>
+        <returns></returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -471,9 +471,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary></summary>
+        <returns></returns>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

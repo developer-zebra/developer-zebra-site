@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-List of supported scanner device type.
+Provides information about the reader device.
 
 **Type** - Java.Lang.Enum
 
@@ -13,13 +13,11 @@ List of supported scanner device type.
 
 **public static Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo.DeviceType ValueOf (string this_);**
 
-
-        
+Provides information about the reader device.
 
 **Parameters:**
 
 System.String **this_**  - 
-        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo+DeviceType
 
@@ -27,8 +25,7 @@ System.String **this_**  -
 
 **public static Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo.DeviceType[] Values ();**
 
-
-        
+Provides information about the reader device.
 
 **Parameters:**
 
@@ -37,14 +34,14 @@ System.String **this_**  -
 ##Properties
 
 ###Camera
-The Scanner device class is camera.
+Provides information about the reader device.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo+DeviceType
 ###Imager
-The scanner device class is imager.
+Provides information about the reader device.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo+DeviceType
 ###Undefined
-The scanner device class is not defined.
+Provides information about the reader device.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo+DeviceType

@@ -2,10 +2,9 @@
 title: ScannerConfig.AutoCharacterSetPreference
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
-
-    
+Selection of character sets available for automatic decoding.
 
 **Type** - Java.Lang.Enum
 
@@ -14,13 +13,11 @@ productversion: '4.0'
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AutoCharacterSetPreference ValueOf (string this_);**
 
-
-        
+Selection of character sets available for automatic decoding.
 
 **Parameters:**
 
 System.String **this_**  - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetPreference
 
@@ -28,8 +25,7 @@ System.String **this_**  -
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AutoCharacterSetPreference[] Values ();**
 
-
-        
+Selection of character sets available for automatic decoding.
 
 **Parameters:**
 
@@ -38,10 +34,10 @@ System.String **this_**  -
 ##Properties
 
 ###Gb2312
-Select GB2312 as a character set.
+Selection of character sets available for automatic decoding.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetPreference
 ###Utf8
-Select UTF-8 as a character set.
+Selection of character sets available for automatic decoding.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetPreference

@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-SimulScanReader class will represent and provides access to the physical Reader device.
+Represents and provides access to the physical reader device.
 
 **Type** - Java.Lang.Object
 
@@ -13,7 +13,7 @@ SimulScanReader class will represent and provides access to the physical Reader 
 
 **public virtual void CancelRead ();**
 
-This cancels any pending read() calls
+Represents and provides access to the physical reader device.
 
 **Parameters:**
 
@@ -23,7 +23,7 @@ This cancels any pending read() calls
 
 **public virtual void Disable ();**
 
-Disables the reader hardware. Any pending scanned data will be lost. This method releases the reader hardware resources so that other readers can be enabled. You must call this as soon as you're done with the scanning. Other applications will not be able to access SimulScan related functions till this function is called.
+Represents and provides access to the physical reader device.
 
 **Parameters:**
 
@@ -33,7 +33,7 @@ Disables the reader hardware. Any pending scanned data will be lost. This method
 
 **public virtual void Enable ();**
 
-Enables the reader hardware. This method does not make the reader to scan. If another reader is already enabled, this will throw a SimulScanException. You must call disable() when you are done, otherwise all readers will remain locked and will be unavailable for this and any other application that uses SimulScan.
+Represents and provides access to the physical reader device.
 
 **Parameters:**
 
@@ -43,13 +43,13 @@ Enables the reader hardware. This method does not make the reader to scan. If an
 
 **public virtual void FetchTemplate (string p0, string p1);**
 
-Fetch templates from an external server and place them in the template directory. FETCH_TEMPLATE_COMPLETED status will be notified once the fetching is completed.
+Represents and provides access to the physical reader device.
 
 **Parameters:**
 
-System.String **p0**  - userName - Username for SimulScan Template Builder
+System.String **p0**  - 
 
-System.String **p1**  - password - Password for SimulScan Template Builder
+System.String **p1**  - 
 
 **Returns** - System.Void
 
@@ -57,7 +57,7 @@ System.String **p1**  - password - Password for SimulScan Template Builder
 
 **public virtual Java.Lang.Boolean IsReadPending ();**
 
-Another read() cannot be submitted while a read is pending.
+Represents and provides access to the physical reader device.
 
 **Parameters:**
 
@@ -67,7 +67,7 @@ Another read() cannot be submitted while a read is pending.
 
 **public virtual void Read ();**
 
-This method initiates a SimulScan read() request. This is an asynchronous call, the data and status will be returned through the registered callbacks. If a read() is submitted while another read is pending, the method call will fail. The read request can be cancelled by issuing a cancelRead(). It is recommended to check whether a read is pending by calling isReadPending() before submitting a read().
+Represents and provides access to the physical reader device.
 
 **Parameters:**
 
@@ -76,24 +76,24 @@ This method initiates a SimulScan read() request. This is an asynchronous call, 
 ##Properties
 
 ###Config
-Gets the current configuration settings for this reader device. The reader must be enabled before the calling this function. If modifications are made to the returned SimulScanConfig object, the Reader.setConfig(SimulScanConfig) must be called to take effect.
+Represents and provides access to the physical reader device.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanConfig
 ###IsEnabled
-Returns reader enabled state
+Represents and provides access to the physical reader device.
 
 **Type** - System.Boolean
 ###ReaderInfo
-Returns information about the reader device.
+Represents and provides access to the physical reader device.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo
 ##Events
 
 ###Data
 
-An event that notifies a client application when the scan data is available.
+Represents and provides access to the physical reader device.
 
 ###Status
 
-An event that notifies client application of scan events.
+Represents and provides access to the physical reader device.
 

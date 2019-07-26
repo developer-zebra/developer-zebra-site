@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-Connection states of a scanner device.
+Indicates the connection states (connected, disconnected) of the scanning device.
 
 **Type** - Java.Lang.Enum
 
@@ -13,12 +13,11 @@ Connection states of a scanner device.
 
 **public static Symbol.XamarinEMDK.Barcode.BarcodeManager.ConnectionState ValueOf (string this_);**
 
-
-        
+Indicates the connection states (connected, disconnected) of the scanning device.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.Barcode.BarcodeManager.ConnectionState[] Values ();**
 
-
-        
+Indicates the connection states (connected, disconnected) of the scanning device.
 
 **Parameters:**
 
@@ -36,10 +34,10 @@ System.String **p0**
 ##Properties
 
 ###Connected
-Scanner interface is connected. Ready to scan barcodes.
+Indicates the connection states (connected, disconnected) of the scanning device.
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState
 ###Disconnected
-Scanner interface is dis-connected. Not ready to scan barcodes.
+Indicates the connection states (connected, disconnected) of the scanning device.
 
 **Type** - Symbol.XamarinEMDK.Barcode.BarcodeManager+ConnectionState

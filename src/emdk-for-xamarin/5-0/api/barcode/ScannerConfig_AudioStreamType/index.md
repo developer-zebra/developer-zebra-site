@@ -13,12 +13,11 @@ Volume slider type for decode audio feedback.
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AudioStreamType ValueOf (string this_);**
 
-
-        
+Volume slider type for decode audio feedback.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AudioStreamType
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AudioStreamType[] Values ();**
 
-
-        
+Volume slider type for decode audio feedback.
 
 **Parameters:**
 
@@ -36,14 +34,14 @@ System.String **p0**
 ##Properties
 
 ###Alarms
-Alarms
+Volume slider type for decode audio feedback.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AudioStreamType
 ###Media
-Music and Media.
+Volume slider type for decode audio feedback.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AudioStreamType
 ###Ringer
-Ringer and Notifications.
+Volume slider type for decode audio feedback.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AudioStreamType

@@ -2,13 +2,9 @@
 title: ScannerConfig.AutoCharacterSetFailureOption
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Failure option for auto character set selection.
- 
- 	Example Usage:
- 	new AutoCharacterSetFailureOption.UTF_8;
- 
 
 **Type** - Java.Lang.Enum
 
@@ -17,13 +13,11 @@ Failure option for auto character set selection.
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AutoCharacterSetFailureOption ValueOf (string this_);**
 
-
-        
+Failure option for auto character set selection.
 
 **Parameters:**
 
 System.String **this_**  - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetFailureOption
 
@@ -31,8 +25,7 @@ System.String **this_**  -
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AutoCharacterSetFailureOption[] Values ();**
 
-
-        
+Failure option for auto character set selection.
 
 **Parameters:**
 
@@ -41,22 +34,22 @@ System.String **this_**  -
 ##Properties
 
 ###Gb18030
-Select GB18030 as a character set.
+Failure option for auto character set selection.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetFailureOption
 ###Iso88591
-Select ISO-8859-1 as a character set.
+Failure option for auto character set selection.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetFailureOption
 ###None
-Do not send any string data.
+Failure option for auto character set selection.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetFailureOption
 ###ShiftJIS
-Select Shift_JIS as a character set.
+Failure option for auto character set selection.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetFailureOption
 ###Utf8
-Select UTF-8 as a character set.
+Failure option for auto character set selection.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AutoCharacterSetFailureOption

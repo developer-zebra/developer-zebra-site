@@ -2,7 +2,7 @@
 title: ScannerConfig.CheckDigitScheme
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit.
 
@@ -13,12 +13,11 @@ Two algorithms are possible for the verification of the second MSI check digit. 
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigitScheme ValueOf (string this_);**
 
-
-        
+Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigitScheme
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigitScheme[] Values ();**
 
-
-        
+Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit.
 
 **Parameters:**
 
@@ -36,10 +34,10 @@ System.String **p0**
 ##Properties
 
 ###MOD_10_10
-First check digit is MOD 11 and second check digit is MOD 10.
+Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigitScheme
 ###MOD_11_10
-First check digit is MOD 11 and second check digit is MOD 10.
+Two algorithms are possible for the verification of the second MSI check digit. Select the algorithm used to encode the check digit.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigitScheme

@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-The diagnostic configuration class has to be configured before calling the get diagnostics parameter data. This class configures average current and Shopping trip in minutes.
+Configures averageCurrent and shopping tripInMinutes. Must be configured before calling the get diagnostics parameter data.
 
 **Type** - Java.Lang.Object
 
@@ -14,15 +14,15 @@ The diagnostic configuration class has to be configured before calling the get d
 
 **public DiagnosticConfig (int p0, int p1);**
 
-DiagnosticsConfig Constructor
+Configures averageCurrent and shopping tripInMinutes. Must be configured before calling the get diagnostics parameter data.
 
 ##Properties
 
 ###AverageCurrent
-The average current consumption in mA. When this is 0, the default value will be selected based on the running average.
+Configures averageCurrent and shopping tripInMinutes. Must be configured before calling the get diagnostics parameter data.
 
 **Type** - System.Int32
 ###TripInMinutes
-The shopping trip duration in minutes. When this is 0, the value will be generated for 45 minutes.
+Configures averageCurrent and shopping tripInMinutes. Must be configured before calling the get diagnostics parameter data.
 
 **Type** - System.Int32

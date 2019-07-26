@@ -4,13 +4,13 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-The SimulScan APIs throw a SimulScanException when an error occurs. 
+Throws a SimulScanException on incorrect API use or other unexpected error.
 
 **Type** - Java.Lang.Exception
 
 ##Properties
 
 ###Result
-Returns the SimulScanResults object that provides additional information on the exception.
+Throws a SimulScanException on incorrect API use or other unexpected error.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults

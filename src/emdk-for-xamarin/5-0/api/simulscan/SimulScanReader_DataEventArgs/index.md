@@ -4,8 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-
-    
+Represents and provides access to the physical reader device.
 
 **Type** - System.EventArgs
 
@@ -15,13 +14,11 @@ productversion: '5.0'
 
 **public DataEventArgs (Symbol.XamarinEMDK.SimulScan.SimulScanData p0);**
 
-
-        
+Represents and provides access to the physical reader device.
 
 ##Properties
 
 ###P0
-
-        
+Represents and provides access to the physical reader device.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanData

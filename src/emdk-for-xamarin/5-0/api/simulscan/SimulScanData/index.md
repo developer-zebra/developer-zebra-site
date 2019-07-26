@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-The SimulScanData object gives scanning result
+Provides scanning results.
 
 **Type** - Java.Lang.Object
 
@@ -14,20 +14,19 @@ The SimulScanData object gives scanning result
 
 **public SimulScanData ();**
 
-
-        
+Provides scanning results.
 
 ##Properties
 
 ###Elements
-Returns a list of scanned elements.
+Provides scanning results.
 
 **Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.SimulScan.SimulScanElement>
 ###Template
-Returns the scanned template.
+Provides scanning results.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanTemplate
 ###Timestamp
-Returns the time at which the data was captured. The time format is "YYYY-MM-DD HH:MM:SS.nnnnnnnnn"
+Provides scanning results.
 
 **Type** - System.String

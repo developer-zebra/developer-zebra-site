@@ -13,12 +13,11 @@ Verify data integrity.
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigitType ValueOf (string this_);**
 
-
-        
+Verify data integrity.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigitType
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigitType[] Values ();**
 
-
-        
+Verify data integrity.
 
 **Parameters:**
 
@@ -36,14 +34,14 @@ System.String **p0**
 ##Properties
 
 ###No
-A check digit is not used.
+Verify data integrity.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigitType
 ###Opcc
-Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with either the Optical Product Code Council (OPCC) check digit algorithm.
+Verify data integrity.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigitType
 ###Uss
-Select to check the integrity of all Interleaved 2 of 5 symbols to verify the data complies with either the Uniform Symbology Specification (USS) check digit algorithm.
+Verify data integrity.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigitType

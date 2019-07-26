@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-This is the primary object to access the SimulScan feature.
+Primary object to access SimulScan features.
 
 **Type** - Symbol.XamarinEMDK.EMDKBase
 
@@ -13,11 +13,11 @@ This is the primary object to access the SimulScan feature.
 
 **public virtual Symbol.XamarinEMDK.SimulScan.SimulScanReader GetDevice (Symbol.XamarinEMDK.SimulScan.SimulScanManager.DeviceIdentifier p0);**
 
-This method returns the reader object based on device identifier specified.
+Primary object to access SimulScan features.
 
 **Parameters:**
 
-Symbol.XamarinEMDK.SimulScan.SimulScanManager.DeviceIdentifier **p0**  - deviceIdentifier - The device identifier specifies which reader the application wants.
+Symbol.XamarinEMDK.SimulScan.SimulScanManager.DeviceIdentifier **p0**  - 
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanReader
 
@@ -25,17 +25,17 @@ Symbol.XamarinEMDK.SimulScan.SimulScanManager.DeviceIdentifier **p0**  - deviceI
 
 **public virtual Symbol.XamarinEMDK.SimulScan.SimulScanReader GetDevice (Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo p0);**
 
-This method returns the reader object based on the input SimulScanReaderInfo object.
+Primary object to access SimulScan features.
 
 **Parameters:**
 
-Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo **p0**  - simulscanReaderInfo - The SimulScanReadInfo specifies which reader the application wants.
+Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo **p0**  - 
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanReader
 
 ##Properties
 
 ###SupportedDevicesInfo
-Returns list of supported reader devices information.
+Primary object to access SimulScan features.
 
 **Type** - System.Collections.Generic.IList<Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo>

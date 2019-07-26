@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-A Code ID character identifies the code type of a scanned bar code. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
+A Code ID character identifies the code type of a scanned barcode. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
 
 **Type** - Java.Lang.Enum
 
@@ -13,12 +13,11 @@ A Code ID character identifies the code type of a scanned bar code. This is usef
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CodeIdType ValueOf (string this_);**
 
-
-        
+A Code ID character identifies the code type of a scanned barcode. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CodeIdType
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CodeIdType[] Values ();**
 
-
-        
+A Code ID character identifies the code type of a scanned barcode. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
 
 **Parameters:**
 
@@ -36,14 +34,14 @@ System.String **p0**
 ##Properties
 
 ###Aim
-A standards based three character prefix.
+A Code ID character identifies the code type of a scanned barcode. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CodeIdType
 ###None
-No prefix.
+A Code ID character identifies the code type of a scanned barcode. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CodeIdType
 ###Symbol
-A Symbol defined single character prefix.
+A Code ID character identifies the code type of a scanned barcode. This is useful when the reader is decoding more than one code type. Select a code ID character to insert between the prefix and the decoded symbol.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CodeIdType

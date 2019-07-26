@@ -4,21 +4,21 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-The SimulScanElement abstract class represents a processed SimulScanTemplateElement.
+Represents a processed SimulScanTemplateElement.
 
 **Type** - Java.Lang.Object
 
 ##Properties
 
 ###Data
-Returns additional processed data as an object of type Object
+Represents a processed SimulScanTemplateElement.
 
 **Type** - Java.Lang.Object
 ###ElementNumber
-Returns unique identifier of this element
+Represents a processed SimulScanTemplateElement.
 
 **Type** - System.Int32
 ###Name
-Returns the friendly name of this element
+Represents a processed SimulScanTemplateElement.
 
 **Type** - System.String

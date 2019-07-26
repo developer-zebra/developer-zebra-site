@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-Serial Communication error codes and its details.
+Provides serial communication error codes and details.
 
 **Type** - Java.Lang.Enum
 
@@ -13,13 +13,11 @@ Serial Communication error codes and its details.
 
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommResults ValueOf (string p0);**
 
-
-        
+Provides serial communication error codes and details.
 
 **Parameters:**
 
 System.String **p0**  - 
-        
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 
@@ -27,8 +25,7 @@ System.String **p0**  -
 
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommResults[] Values ();**
 
-
-        
+Provides serial communication error codes and details.
 
 **Parameters:**
 
@@ -37,70 +34,70 @@ System.String **p0**  -
 ##Properties
 
 ###AlreadyEnabled
-The communication channel is already enabled.
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###CommPortInUse
-The serial communication port is already used by other instance.
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###DataSizeTooLarge
-The number of bytes to write can't exceed maximum limit(4096 Bytes).
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###Description
-Returns the description for the error.
+Provides serial communication error codes and details.
 
 **Type** - System.String
 ###DeviceNotConnected
-The remote device is not connected or attached to the mobile device.
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###DeviceNotReady
-Serial port is not ready to use.
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###EmdkNotOpened
-EMDK is not opened
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###Failure
-Failure
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###FeatureNotSupported
-The feature is not supported.
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###InvalidObject
-The object is not valid.
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###InvalidValue
-Invalid value.
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###NotEnabled
-The communication channel is not enabled.
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###ReadOnlySignal
-The requested signal settings is read only.
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###SignalOutOfRange
-The signal is out of range.
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###Success
-Success
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###Undefined
-Error code not defined.
+Provides serial communication error codes and details.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults
 ###Value
-This method provides integer value assigned to the enum. It is recommended only to get error for the UNDEFINED enums at runtime if required.
+Provides serial communication error codes and details.
 
 **Type** - System.Int32

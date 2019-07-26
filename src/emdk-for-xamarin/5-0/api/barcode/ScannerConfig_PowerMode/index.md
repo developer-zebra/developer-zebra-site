@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-Set laser scanner power mode
+
 
 **Type** - Java.Lang.Enum
 
@@ -14,11 +14,10 @@ Set laser scanner power mode
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode ValueOf (string this_);**
 
 
-        
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode
 
@@ -27,7 +26,6 @@ System.String **p0**
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.PowerMode[] Values ();**
 
 
-        
 
 **Parameters:**
 
@@ -36,18 +34,18 @@ System.String **p0**
 ##Properties
 
 ###AlwaysOn
-Highest power, fastest performance.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode
 ###High
-High power, and excellent performance.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode
 ###Low
-Lowest power, but slowest performance.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode
 ###Optimized
-Power level adjusts with scanning usage.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+PowerMode

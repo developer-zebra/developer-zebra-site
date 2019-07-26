@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-NotificationDevice class will represent and provides access to the physical notification device instance. This can be used with a connected notification device. Once disconnected, current instances cannot be used any longer. When connected again, you must use NotificationManager.getDevice() method to get a new notification device object.
+
 
 **Type** - Java.Lang.Object
 
@@ -13,7 +13,7 @@ NotificationDevice class will represent and provides access to the physical noti
 
 **public virtual void CancelNotification ();**
 
-This cancels the active notification from the device.
+
 
 **Parameters:**
 
@@ -23,7 +23,7 @@ This cancels the active notification from the device.
 
 **public virtual void Disable ();**
 
-Disables the notification device. This closes the communication port to send the notifications to the devices.
+
 
 **Parameters:**
 
@@ -33,7 +33,7 @@ Disables the notification device. This closes the communication port to send the
 
 **public virtual void Enable ();**
 
-Enables the notification device. You must call disable() when you are done. This opens the communication port to send the notifications to the devices.
+
 
 **Parameters:**
 
@@ -44,12 +44,10 @@ Enables the notification device. You must call disable() when you are done. This
 **public virtual void Notify (Symbol.XamarinEMDK.Notification.NotificationConfig p0);**
 
 
-        
 
 **Parameters:**
 
 Symbol.XamarinEMDK.Notification.NotificationConfig **p0**  - 
-        
 
 **Returns** - System.Void
 
@@ -57,7 +55,7 @@ Symbol.XamarinEMDK.Notification.NotificationConfig **p0**  -
 
 **public virtual void Release ();**
 
-Releases the notification device. You must release the notification device when you are done using it, so that internal resources can be freed up. Once you release, the notification device object will be unusable and you must use NotificationManager.getDevice() method to get a new notification device object.
+
 
 **Parameters:**
 
@@ -66,14 +64,14 @@ Releases the notification device. You must release the notification device when 
 ##Properties
 
 ###DeviceInfo
-Returns information about the notification device.
+
 
 **Type** - Symbol.XamarinEMDK.Notification.DeviceInfo
 ###IsConnected
-Returns whether the notification device is connected to the Mobile device or not.
+
 
 **Type** - System.Boolean
 ###IsEnabled
-Returns whether the notification device is enabled or not.
+
 
 **Type** - System.Boolean

@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-
+Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.
 
 **Type** - Symbol.XamarinEMDK.EMDKBase
 
@@ -13,7 +13,7 @@ productversion: '5.0'
 
 **public virtual System.Collections.Generic.IList<Symbol.XamarinEMDK.Sam.SAM> EnumerateSAMs ();**
 
-
+Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.
 
 **Parameters:**
 
@@ -22,6 +22,6 @@ productversion: '5.0'
 ##Properties
 
 ###ActiveSlot
-
+Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.
 
 **Type** - System.Int32

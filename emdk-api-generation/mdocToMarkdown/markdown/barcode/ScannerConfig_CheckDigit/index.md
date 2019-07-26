@@ -2,7 +2,7 @@
 title: ScannerConfig.CheckDigit
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 The number of check digits to be verified. With MSI symbols, one check digit is mandatory and always verified by the reader. The second check digit is optional.
 
@@ -13,12 +13,11 @@ The number of check digits to be verified. With MSI symbols, one check digit is 
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigit ValueOf (string this_);**
 
-
-        
+The number of check digits to be verified. With MSI symbols, one check digit is mandatory and always verified by the reader. The second check digit is optional.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigit
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CheckDigit[] Values ();**
 
-
-        
+The number of check digits to be verified. With MSI symbols, one check digit is mandatory and always verified by the reader. The second check digit is optional.
 
 **Parameters:**
 
@@ -36,10 +34,10 @@ System.String **p0**
 ##Properties
 
 ###One
-Verify one check digit.
+The number of check digits to be verified. With MSI symbols, one check digit is mandatory and always verified by the reader. The second check digit is optional.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigit
 ###Two
-Verify two check digits.
+The number of check digits to be verified. With MSI symbols, one check digit is mandatory and always verified by the reader. The second check digit is optional.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CheckDigit

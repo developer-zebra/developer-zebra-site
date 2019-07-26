@@ -4,45 +4,45 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-The SimulScanConfig class provides access to reader configuration settings.
+Provides access to reader configuration settings.
 
 **Type** - Java.Lang.Object
 
 ##Properties
 
 ###AudioFeedback
-Turn on/off audio feedback.
+Provides access to reader configuration settings.
 
 **Type** - Java.Lang.Boolean
 ###AutoCapture
-If true, form will be captured automatically when detected.
+Provides access to reader configuration settings.
 
 **Type** - Java.Lang.Boolean
 ###DebugMode
-If enabled, allows a session to write form capture, region images, region values, and other data to storage.
+Provides access to reader configuration settings.
 
 **Type** - Java.Lang.Boolean
 ###HapticFeedback
-Turn on/off haptic feedback.
+Provides access to reader configuration settings.
 
 **Type** - Java.Lang.Boolean
 ###IdentificationTimeout
-Amount of time in milliseconds to wait before timing out identification.
+Provides access to reader configuration settings.
 
 **Type** - System.Int32
 ###LedFeedback
-Turn on/off LED feedback.
+Provides access to reader configuration settings.
 
 **Type** - Java.Lang.Boolean
 ###MultiTemplate
-The SimulScanMultiTemplate to scan
+Provides access to reader configuration settings.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanMultiTemplate
 ###ProcessingTimeout
-Amount of time in milliseconds to wait before timing out processing.
+Provides access to reader configuration settings.
 
 **Type** - System.Int32
 ###UserConfirmationOnScan
-If userConfirmationOnScan is true, shows UI for user to confirm the scanned data before sending results to application.
+Provides access to reader configuration settings.
 
 **Type** - Java.Lang.Boolean

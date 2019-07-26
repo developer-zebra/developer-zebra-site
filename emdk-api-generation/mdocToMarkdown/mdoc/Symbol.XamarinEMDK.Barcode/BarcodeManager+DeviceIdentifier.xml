@@ -361,7 +361,7 @@
         <ReturnType>Symbol.XamarinEMDK.Barcode.BarcodeManager+DeviceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        </remarks>
+       <remarks></remarks>
         <summary>Defines specific scanner devices of each type.</summary>
         <value></value>
         <remarks></remarks>

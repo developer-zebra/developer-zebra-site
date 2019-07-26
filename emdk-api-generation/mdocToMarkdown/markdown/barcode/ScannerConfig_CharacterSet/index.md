@@ -2,10 +2,9 @@
 title: ScannerConfig.CharacterSet
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
-
-    
+For selection of character set for decoding the barcode.
 
 **Type** - Java.Lang.Enum
 
@@ -14,13 +13,11 @@ productversion: '4.0'
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CharacterSet ValueOf (string this_);**
 
-
-        
+For selection of character set for decoding the barcode.
 
 **Parameters:**
 
 System.String **this_**  - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CharacterSet
 
@@ -28,8 +25,7 @@ System.String **this_**  -
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CharacterSet[] Values ();**
 
-
-        
+For selection of character set for decoding the barcode.
 
 **Parameters:**
 
@@ -38,22 +34,22 @@ System.String **this_**  -
 ##Properties
 
 ###Auto
-Select the character set automatically.
+For selection of character set for decoding the barcode.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CharacterSet
 ###Gb18030
-Select GB18030 as a character set.
+For selection of character set for decoding the barcode.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CharacterSet
 ###Iso88591
-Select ISO-8859-1 as a character set.
+For selection of character set for decoding the barcode.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CharacterSet
 ###ShiftJIS
-Select Shift_JIS as a character set.
+For selection of character set for decoding the barcode.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CharacterSet
 ###Utf8
-Select UTF-8 as a character set.
+For selection of character set for decoding the barcode.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CharacterSet

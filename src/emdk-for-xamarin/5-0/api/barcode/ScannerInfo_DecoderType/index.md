@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-This lists all the barcode types supported by scanners
+
 
 **Type** - Java.Lang.Enum
 
@@ -14,11 +14,10 @@ This lists all the barcode types supported by scanners
 **public static Symbol.XamarinEMDK.Barcode.ScannerInfo.DecoderType ValueOf (string this_);**
 
 
-        
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DecoderType
 
@@ -27,7 +26,6 @@ System.String **p0**
 **public static Symbol.XamarinEMDK.Barcode.ScannerInfo.DecoderType[] Values ();**
 
 
-        
 
 **Parameters:**
 
@@ -36,14 +34,14 @@ System.String **p0**
 ##Properties
 
 ###OneDimensional
-Barcode scanning is 1-D only.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DecoderType
 ###TwoDimensional
-Barcode scanning is 2-D. This supports both 1-D and 2-D barcode scanning.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DecoderType
 ###Undefined
-Decoder type not defined.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerInfo+DecoderType

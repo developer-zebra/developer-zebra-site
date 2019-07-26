@@ -5,7 +5,6 @@ product: EMDK For Xamarin
 productversion: '5.0' 
 ---
 
-    
 
 **Type** - Java.Lang.Enum
 
@@ -15,12 +14,10 @@ productversion: '5.0'
 **public static Symbol.XamarinEMDK.Notification.ConnectionType ValueOf (string p0);**
 
 
-        
 
 **Parameters:**
 
 System.String **p0**  - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Notification.ConnectionType
 
@@ -29,7 +26,6 @@ System.String **p0**  -
 **public static Symbol.XamarinEMDK.Notification.ConnectionType[] Values ();**
 
 
-        
 
 **Parameters:**
 
@@ -38,14 +34,14 @@ System.String **p0**  -
 ##Properties
 
 ###BluetoothSsi
-Bluetooth SSI
+
 
 **Type** - Symbol.XamarinEMDK.Notification.ConnectionType
 ###Pluggable
-Pluggable
+
 
 **Type** - Symbol.XamarinEMDK.Notification.ConnectionType
 ###Undefined
-Undefined
+
 
 **Type** - Symbol.XamarinEMDK.Notification.ConnectionType

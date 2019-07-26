@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-Defines scanner device identifier.
+Defines a scanner device identifier.
 
 **Type** - Java.Lang.Enum
 
@@ -13,13 +13,11 @@ Defines scanner device identifier.
 
 **public static Symbol.XamarinEMDK.SimulScan.SimulScanManager.DeviceIdentifier ValueOf (string this_);**
 
-
-        
+Defines a scanner device identifier.
 
 **Parameters:**
 
 System.String **this_**  - 
-        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanManager+DeviceIdentifier
 
@@ -27,8 +25,7 @@ System.String **this_**  -
 
 **public static Symbol.XamarinEMDK.SimulScan.SimulScanManager.DeviceIdentifier[] Values ();**
 
-
-        
+Defines a scanner device identifier.
 
 **Parameters:**
 
@@ -37,14 +34,14 @@ System.String **this_**  -
 ##Properties
 
 ###Default
-The scanner device is selected based on the template if the scanning device is specified in the template otherwise uses default scanner.
+Defines a scanner device identifier.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanManager+DeviceIdentifier
 ###InternalCamera1
-Use the internal camera
+Defines a scanner device identifier.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanManager+DeviceIdentifier
 ###InternalImager1
-Use the internal imager
+Defines a scanner device identifier.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanManager+DeviceIdentifier

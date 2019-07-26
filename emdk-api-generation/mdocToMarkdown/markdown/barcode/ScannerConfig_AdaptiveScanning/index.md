@@ -2,9 +2,9 @@
 title: ScannerConfig.AdaptiveScanning
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
-Enable or Disable Adaptive scanning.
+Enables or disables adaptive scanning.
 
 **Type** - Java.Lang.Enum
 
@@ -13,11 +13,11 @@ Enable or Disable Adaptive scanning.
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AdaptiveScanning ValueOf (string this_);**
 
-Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)
+Enables or disables adaptive scanning.
 
 **Parameters:**
 
-System.String **this_**  - the name of the enum constant to be returned.
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AdaptiveScanning
 
@@ -25,7 +25,7 @@ System.String **this_**  - the name of the enum constant to be returned.
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.AdaptiveScanning[] Values ();**
 
-Returns an array containing the constants of this enum type, in the order they are declared. This method may be used to iterate over the constants as follows:
+Enables or disables adaptive scanning.
 
 **Parameters:**
 
@@ -34,10 +34,10 @@ Returns an array containing the constants of this enum type, in the order they a
 ##Properties
 
 ###Disable
-Adaptive Scan turned off during scanning.
+Enables or disables adaptive scanning.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AdaptiveScanning
 ###Enable
-Scan engine will automatically toggle between 2 scan angles, wide and narrow, allowing the scan engine to decode barcodes based on the distance.
+Enables or disables adaptive scanning.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+AdaptiveScanning

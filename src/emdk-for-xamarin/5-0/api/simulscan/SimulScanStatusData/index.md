@@ -4,8 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-
-    
+Provides access to reader status.
 
 **Type** - Java.Lang.Object
 
@@ -15,24 +14,23 @@ productversion: '5.0'
 
 **public SimulScanStatusData ();**
 
-
-        
+Provides access to reader status.
 
 ##Properties
 
 ###ExtendedState
-Returns the extended status if any
+Provides access to reader status.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus
 ###FriendlyName
-Returns the friendly name of the Reader from which the SimulScanStatusData object was from
+Provides access to reader status.
 
 **Type** - System.String
 ###State
-Returns the the current status
+Provides access to reader status.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+SimulScanStatus
 ###StatusDescription
-Returns the description for any status if available.
+Provides access to reader status.
 
 **Type** - System.String

@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-Used by EMDKManager internally, not for development use.
+
 
 **Type** - System.EventArgs
 
@@ -15,12 +15,10 @@ Used by EMDKManager internally, not for development use.
 **public OpenedEventArgs (Symbol.XamarinEMDK.EMDKManager p0);**
 
 
-        
 
 ##Properties
 
 ###P0
 
-        
 
 **Type** - Symbol.XamarinEMDK.EMDKManager

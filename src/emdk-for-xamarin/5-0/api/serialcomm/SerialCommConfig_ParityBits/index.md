@@ -13,13 +13,11 @@ Specifies the parity bits for a SerialComm object.
 
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits ValueOf (string this_);**
 
-
-        
+Specifies the parity bits for a SerialComm object.
 
 **Parameters:**
 
 System.String **this_**  - 
-        
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits
 
@@ -27,8 +25,7 @@ System.String **this_**  -
 
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommConfig.ParityBits[] Values ();**
 
-
-        
+Specifies the parity bits for a SerialComm object.
 
 **Parameters:**
 
@@ -37,22 +34,22 @@ System.String **this_**  -
 ##Properties
 
 ###Even
-Sets the parity bit so that the count of bits set is an even number
+Specifies the parity bits for a SerialComm object.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits
 ###Mark
-Leaves the parity bit set to 1
+Specifies the parity bits for a SerialComm object.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits
 ###None
-No parity check occurs
+Specifies the parity bits for a SerialComm object.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits
 ###Odd
-Sets the parity bit so that the count of bits set is an odd number
+Specifies the parity bits for a SerialComm object.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits
 ###Space
-Leaves the parity bit set to 0
+Specifies the parity bits for a SerialComm object.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits

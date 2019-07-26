@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-
+SAM class represents and provides access to the physical SAMs.
 
 **Type** - Java.Lang.Object
 
@@ -13,7 +13,7 @@ productversion: '5.0'
 
 **public virtual void Connect ();**
 
-
+SAM class represents and provides access to the physical SAMs.
 
 **Parameters:**
 
@@ -23,7 +23,7 @@ productversion: '5.0'
 
 **public virtual void Disconnect ();**
 
-
+SAM class represents and provides access to the physical SAMs.
 
 **Parameters:**
 
@@ -33,7 +33,7 @@ productversion: '5.0'
 
 **public virtual byte[] Transceive (byte[] p0, short p1, bool p2);**
 
-
+SAM class represents and provides access to the physical SAMs.
 
 **Parameters:**
 
@@ -48,14 +48,14 @@ System.Boolean **p2**  -
 ##Properties
 
 ###IsConnected
-
+SAM class represents and provides access to the physical SAMs.
 
 **Type** - System.Boolean
 ###SamIndex
-
+SAM class represents and provides access to the physical SAMs.
 
 **Type** - System.Int32
 ###SamType
-
+SAM class represents and provides access to the physical SAMs.
 
 **Type** - Symbol.XamarinEMDK.Sam.SAMType

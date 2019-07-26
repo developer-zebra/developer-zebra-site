@@ -13,12 +13,11 @@ Provides the list of supported trigger types.
 
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.TriggerType ValueOf (string this_);**
 
-
-        
+Provides the list of supported trigger types.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+TriggerType
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.TriggerType[] Values ();**
 
-
-        
+Provides the list of supported trigger types.
 
 **Parameters:**
 
@@ -36,10 +34,10 @@ System.String **p0**
 ##Properties
 
 ###Hard
-Hardware trigger needs to be manually pressed to turn ON the scanner
+Provides the list of supported trigger types.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+TriggerType
 ###Soft
-Scanner is turned ON automatically and no need to press any triggers
+Provides the list of supported trigger types.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+TriggerType

@@ -13,12 +13,11 @@ Provides the different types of barcode data to be scanned.
 
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.ScanDataType ValueOf (string this_);**
 
-
-        
+Provides the different types of barcode data to be scanned.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanDataType
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.ScanDataType[] Values ();**
 
-
-        
+Provides the different types of barcode data to be scanned.
 
 **Parameters:**
 
@@ -36,14 +34,14 @@ System.String **p0**
 ##Properties
 
 ###DeviceName
-Scan data is a Bluetooth device name.
+Provides the different types of barcode data to be scanned.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanDataType
 ###MacAddress
-Scan data is a Bluetooth MAC address
+Provides the different types of barcode data to be scanned.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanDataType
 ###Unspecified
-Scan data type is unknown. The ScanAndPair library will automatically attempt to determine if it is a valid address. If not, it will be considered as a Bluetooth name.
+Provides the different types of barcode data to be scanned.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanDataType

@@ -4,8 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-
-    
+Provides access to reader status.
 
 **Type** - Java.Lang.Enum
 
@@ -14,13 +13,11 @@ productversion: '5.0'
 
 **public static Symbol.XamarinEMDK.SimulScan.SimulScanStatusData.ExtendedStatus ValueOf (string this_);**
 
-
-        
+Provides access to reader status.
 
 **Parameters:**
 
 System.String **this_**  - 
-        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus
 
@@ -28,8 +25,7 @@ System.String **this_**  -
 
 **public static Symbol.XamarinEMDK.SimulScan.SimulScanStatusData.ExtendedStatus[] Values ();**
 
-
-        
+Provides access to reader status.
 
 **Parameters:**
 
@@ -38,38 +34,38 @@ System.String **this_**  -
 ##Properties
 
 ###Cancelled
-Cancelled scanning
+Provides access to reader status.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus
 ###FetchTemplateCancelled
-User cancelled fetch template
+Provides access to reader status.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus
 ###FetchTemplateLoginError
-Fetch template login error
+Provides access to reader status.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus
 ###FetchTemplateNetworkError
-Network error occurred while trying to fetch templates
+Provides access to reader status.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus
 ###FormDecoded
-Form decoded successfully
+Provides access to reader status.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus
 ###IdentificationTimeout
-Timeout occurred during identification
+Provides access to reader status.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus
 ###ProcessingTimeout
-Timeout occurred during processing
+Provides access to reader status.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus
 ###Undefined
-No extended error
+Provides access to reader status.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus
 ###UnlicensedFeature
-Unlicensed feature detected Use getStatusDescription() method to identify the unlicensed feature
+Provides access to reader status.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus

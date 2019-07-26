@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-Provides the list of DeviceIdentifier types.
+Provides list of DeviceIdentifier types.
 
 **Type** - Java.Lang.Enum
 
@@ -13,12 +13,11 @@ Provides the list of DeviceIdentifier types.
 
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.DeviceIdentifier ValueOf (string this_);**
 
-
-        
+Provides list of DeviceIdentifier types.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+DeviceIdentifier
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig.DeviceIdentifier[] Values ();**
 
-
-        
+Provides list of DeviceIdentifier types.
 
 **Parameters:**
 
@@ -36,22 +34,22 @@ System.String **p0**
 ##Properties
 
 ###BluetoothImager1
-Use first available Bluetooth imager. Note: This requires pairing the Bluetooth Imager before calling the ScanAndPair or ScanAndUnPair methods.
+Provides list of DeviceIdentifier types.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+DeviceIdentifier
 ###Default
-Use default scanner. Depending on the mobile device, the first available scanner can be laser, imager or camera.
+Provides list of DeviceIdentifier types.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+DeviceIdentifier
 ###InternalCamera1
-Use first available camera
+Provides list of DeviceIdentifier types.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+DeviceIdentifier
 ###InternalImager1
-Use first available imager
+Provides list of DeviceIdentifier types.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+DeviceIdentifier
 ###InternalLaser1
-Use first available laser scanner
+Provides list of DeviceIdentifier types.
 
 **Type** - Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+DeviceIdentifier

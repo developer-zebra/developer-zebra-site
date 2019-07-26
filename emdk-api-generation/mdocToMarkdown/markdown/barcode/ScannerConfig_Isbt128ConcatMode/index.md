@@ -2,7 +2,7 @@
 title: ScannerConfig.Isbt128ConcatMode
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
 Option for concatenating pairs of ISBT128 code types.
 
@@ -13,12 +13,11 @@ Option for concatenating pairs of ISBT128 code types.
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.Isbt128ConcatMode ValueOf (string this_);**
 
-
-        
+Option for concatenating pairs of ISBT128 code types.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Isbt128ConcatMode
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.Isbt128ConcatMode[] Values ();**
 
-
-        
+Option for concatenating pairs of ISBT128 code types.
 
 **Parameters:**
 
@@ -36,14 +34,14 @@ System.String **p0**
 ##Properties
 
 ###Always
-Will not decode if both the barcodes are not present or if one of them cannot be decoded. There must be two ISBT codes in order to decode and perform concatenation.
+Option for concatenating pairs of ISBT128 code types.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Isbt128ConcatMode
 ###Auto
-Decodes and concatenates pairs of ISBT codes immediately. If only a single ISBT symbol is present, the device must decode the symbol the number of times set via DataWedge Configuration 4 - 1 1 Redundancy - Code128 before transmitting its data to confirm that there is no additional ISBT symbol.
+Option for concatenating pairs of ISBT128 code types.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Isbt128ConcatMode
 ###Never
-Will ignore the barcode pair and only output decode data for only one of the barcodes
+Option for concatenating pairs of ISBT128 code types.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+Isbt128ConcatMode

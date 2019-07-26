@@ -2,9 +2,9 @@
 title: ScanDataCollection.ScanData
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
-The object contains the barcode data that has been scanned and other useful information.
+Provides a list of the different types of barcode data to be scanned.
 
 **Type** - Java.Lang.Object
 
@@ -13,7 +13,7 @@ The object contains the barcode data that has been scanned and other useful info
 
 **public virtual byte[] GetRawData ();**
 
-Returns the raw decoded data as byte array. The application can use this raw data directly or can convert the byte array to a string using the named charset.
+Provides a list of the different types of barcode data to be scanned.
 
 **Parameters:**
 
@@ -22,14 +22,14 @@ Returns the raw decoded data as byte array. The application can use this raw dat
 ##Properties
 
 ###Data
-The barcode data that was scanned.
+Provides a list of the different types of barcode data to be scanned.
 
 **Type** - System.String
 ###LabelType
-The barcode symbology that was scanned.
+Provides a list of the different types of barcode data to be scanned.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScanDataCollection+LabelType
 ###TimeStamp
-The timestamp when the barcode was scanned.
+Provides a list of the different types of barcode data to be scanned.
 
 **Type** - System.String

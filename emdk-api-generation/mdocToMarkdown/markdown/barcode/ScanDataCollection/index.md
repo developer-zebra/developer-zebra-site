@@ -2,9 +2,9 @@
 title: ScanDataCollection
 layout: guide.html
 product: EMDK For Xamarin 
-productversion: '4.0' 
+productversion: '5.0' 
 ---
-The ScanDataCollection object contains the scanning result and the collection of ScanData.
+ScanDataCollection object gives scanning result and the collection of ScanData.
 
 **Type** - Java.Lang.Object
 
@@ -13,7 +13,7 @@ The ScanDataCollection object contains the scanning result and the collection of
 
 **public virtual System.Collections.Generic.IList<Symbol.XamarinEMDK.Barcode.ScanDataCollection.ScanData> GetScanData ();**
 
-This method is used to obtain the scanned data list.
+ScanDataCollection object gives scanning result and the collection of ScanData.
 
 **Parameters:**
 
@@ -22,18 +22,18 @@ This method is used to obtain the scanned data list.
 ##Properties
 
 ###FriendlyName
-Returns the friendly name of scanner for which the data is returned (ex:'Camera')
+ScanDataCollection object gives scanning result and the collection of ScanData.
 
 **Type** - System.String
 ###LabelIdentifier
-Get the decoded type of the barcode. Note: This is specially applicable for UDI decoding. Use getLabelType() defined in each data item to get the individual barcode label types.
+ScanDataCollection object gives scanning result and the collection of ScanData.
 
 **Type** - System.String
 ###Result
-This method used to obtain the scanned result in the form of a ScannerResults object.
+ScanDataCollection object gives scanning result and the collection of ScanData.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerResults
 ###TokenizedData
-List of tokenized data received after processing the raw scanner data
+ScanDataCollection object gives scanning result and the collection of ScanData.
 
 **Type** - Symbol.XamarinEMDK.Barcode.TokenizedData

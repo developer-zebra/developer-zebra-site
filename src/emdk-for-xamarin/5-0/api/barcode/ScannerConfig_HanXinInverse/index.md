@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-This class allows the user to select decoding on inverse HanXin bar codes.
+This parameter allows the user to select decoding on inverse HanXin barcodes.
 
 **Type** - Java.Lang.Enum
 
@@ -13,12 +13,11 @@ This class allows the user to select decoding on inverse HanXin bar codes.
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.HanXinInverse ValueOf (string this_);**
 
-
-        
+This parameter allows the user to select decoding on inverse HanXin barcodes.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+HanXinInverse
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.HanXinInverse[] Values ();**
 
-
-        
+This parameter allows the user to select decoding on inverse HanXin barcodes.
 
 **Parameters:**
 
@@ -36,14 +34,14 @@ System.String **p0**
 ##Properties
 
 ###Auto
-Allows decoding of both positive as well as inverse HanXin symbologies.
+This parameter allows the user to select decoding on inverse HanXin barcodes.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+HanXinInverse
 ###Disabled
-Disables decoding of inverse HanXin symbologies
+This parameter allows the user to select decoding on inverse HanXin barcodes.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+HanXinInverse
 ###Enabled
-Enables decoding of only inverse HanXin symbologies.
+This parameter allows the user to select decoding on inverse HanXin barcodes.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+HanXinInverse

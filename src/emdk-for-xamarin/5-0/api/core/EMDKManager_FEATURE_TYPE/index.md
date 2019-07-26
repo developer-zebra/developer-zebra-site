@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-This lists all the features exposed by the EMDK.
+This lists all features exposed by EMDK.
 
 **Type** - Java.Lang.Enum
 
@@ -13,12 +13,11 @@ This lists all the features exposed by the EMDK.
 
 **public static Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE ValueOf (string this_);**
 
-
-        
+This lists all features exposed by EMDK.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.EMDKManager.FEATURE_TYPE[] Values ();**
 
-
-        
+This lists all features exposed by EMDK.
 
 **Parameters:**
 
@@ -36,42 +34,42 @@ System.String **p0**
 ##Properties
 
 ###Barcode
-EMDK feature type barcode
+This lists all features exposed by EMDK.
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###Notification
-EMDK feature type for Notification
+This lists all features exposed by EMDK.
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###Personalshopper
-EMDK feature type for Personal Self Shopper Device
+This lists all features exposed by EMDK.
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###Profile
-EMDK feature type profile
+This lists all features exposed by EMDK.
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###Sam
-
+This lists all features exposed by EMDK.
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###Scanandpair
-EMDK feature type for ScanAndPair
+This lists all features exposed by EMDK.
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###Serialcomm
-Deprecated. 
+This lists all features exposed by EMDK.
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###SerialcommEx
-EMDK feature type for Extended Serial Communication
+This lists all features exposed by EMDK.
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###Simulscan
-EMDK feature type for SimulScan\Document Capture
+This lists all features exposed by EMDK.
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE
 ###Version
-EMDK feature type version
+This lists all features exposed by EMDK.
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE

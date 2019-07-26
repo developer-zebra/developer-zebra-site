@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-Supported Coupon modes
+Supported Coupon modes.
 
 **Type** - Java.Lang.Enum
 
@@ -13,12 +13,11 @@ Supported Coupon modes
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CouponReport ValueOf (string this_);**
 
-
-        
+Supported Coupon modes.
 
 **Parameters:**
 
-System.String **p0** 
+System.String **this_**  - 
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CouponReport
 
@@ -26,8 +25,7 @@ System.String **p0**
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.CouponReport[] Values ();**
 
-
-        
+Supported Coupon modes.
 
 **Parameters:**
 
@@ -36,14 +34,14 @@ System.String **p0**
 ##Properties
 
 ###Both
-Scanner will read both old coupon format as well as the new GS1 DataBar coupon format
+Supported Coupon modes.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CouponReport
 ###New
-Scanner will read only the new GS1 DataBar coupon format
+Supported Coupon modes.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CouponReport
 ###Old
-Scanner will read only the old coupon format
+Supported Coupon modes.
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+CouponReport

@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-List of control signals
+Provides a list of control signals.
 
 **Type** - Java.Lang.Enum
 
@@ -13,13 +13,11 @@ List of control signals
 
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal ValueOf (string this_);**
 
-
-        
+Provides a list of control signals.
 
 **Parameters:**
 
 System.String **this_**  - 
-        
 
 **Returns** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 
@@ -27,8 +25,7 @@ System.String **this_**  -
 
 **public static Symbol.XamarinEMDK.SerialComm.SerialCommMgr.ControlSignal[] Values ();**
 
-
-        
+Provides a list of control signals.
 
 **Parameters:**
 
@@ -37,26 +34,26 @@ System.String **this_**  -
 ##Properties
 
 ###Cts
-Clear To Send
+Provides a list of control signals.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 ###Dcd
-Data Carrier Detect
+Provides a list of control signals.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 ###Dsr
-Data Set Ready
+Provides a list of control signals.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 ###Dtr
-Data Terminal Ready
+Provides a list of control signals.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 ###Ri
-Ring Indicator
+Provides a list of control signals.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal
 ###Rts
-Request To Send
+Provides a list of control signals.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommMgr+ControlSignal

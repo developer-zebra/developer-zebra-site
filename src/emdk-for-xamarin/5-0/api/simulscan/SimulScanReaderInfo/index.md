@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-SimulScanReaderInfo provides information of the reader device.
+Provides information about the reader device.
 
 **Type** - Java.Lang.Object
 
@@ -13,7 +13,7 @@ SimulScanReaderInfo provides information of the reader device.
 
 **public virtual Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo.DeviceType GetDeviceType ();**
 
-Returns the reader device type
+Provides information about the reader device.
 
 **Parameters:**
 
@@ -22,6 +22,6 @@ Returns the reader device type
 ##Properties
 
 ###FriendlyName
-Returns the friendly name of the Device.
+Provides information about the reader device.
 
 **Type** - System.String

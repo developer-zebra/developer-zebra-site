@@ -4,13 +4,13 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-This is the base class for all the EMDK manager classes derived from.
+The base class from which all EMDK manager classes are derived.
 
 **Type** - Java.Lang.Object
 
 ##Properties
 
 ###Type
-Return the feature type of the object.
+The base class from which all EMDK manager classes are derived.
 
 **Type** - Symbol.XamarinEMDK.EMDKManager+FEATURE_TYPE

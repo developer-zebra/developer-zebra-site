@@ -5,7 +5,6 @@ product: EMDK For Xamarin
 productversion: '5.0' 
 ---
 
-    
 
 **Type** - Java.Lang.Enum
 
@@ -14,12 +13,11 @@ productversion: '5.0'
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.SignatureImageBitsPerPixel ValueOf (string this_);**
 
-Selection of bits-per-pixel for signature image.
+
 
 **Parameters:**
 
 System.String **this_**  - 
-        
 
 **Returns** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SignatureImageBitsPerPixel
 
@@ -27,7 +25,7 @@ System.String **this_**  -
 
 **public static Symbol.XamarinEMDK.Barcode.ScannerConfig.SignatureImageBitsPerPixel[] Values ();**
 
-Selection of bits-per-pixel for signature image.
+
 
 **Parameters:**
 
@@ -36,14 +34,14 @@ Selection of bits-per-pixel for signature image.
 ##Properties
 
 ###Bpp1
-Selection of bits-per-pixel for signature image.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SignatureImageBitsPerPixel
 ###Bpp4
-Selection of bits-per-pixel for signature image.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SignatureImageBitsPerPixel
 ###Bpp8
-Selection of bits-per-pixel for signature image.
+
 
 **Type** - Symbol.XamarinEMDK.Barcode.ScannerConfig+SignatureImageBitsPerPixel

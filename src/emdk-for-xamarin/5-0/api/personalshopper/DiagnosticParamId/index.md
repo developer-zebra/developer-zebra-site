@@ -14,6 +14,5 @@ The diagnostic parameter IDs.
 
 **public DiagnosticParamId ();**
 
-
-        
+The diagnostic parameter IDs.
 

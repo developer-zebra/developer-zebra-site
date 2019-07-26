@@ -4,7 +4,7 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-Defines all the error codes the SimulScan API returns.
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Java.Lang.Enum
 
@@ -13,13 +13,11 @@ Defines all the error codes the SimulScan API returns.
 
 **public static Symbol.XamarinEMDK.SimulScan.SimulScanResults ValueOf (string p0);**
 
-
-        
+Defines all error codes returned by the SimulScan API.
 
 **Parameters:**
 
 System.String **p0**  - 
-        
 
 **Returns** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 
@@ -27,8 +25,7 @@ System.String **p0**  -
 
 **public static Symbol.XamarinEMDK.SimulScan.SimulScanResults[] Values ();**
 
-
-        
+Defines all error codes returned by the SimulScan API.
 
 **Parameters:**
 
@@ -37,95 +34,94 @@ System.String **p0**  -
 ##Properties
 
 ###AlreadyScanning
-A scan operation is already in progress.
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###AlreadyStoppedScanning
-The reader has already stopped scanning
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###Description
-Returns the description for the error.
+Defines all error codes returned by the SimulScan API.
 
 **Type** - System.String
 ###EmdkNotOpened
-EMDK is not opened
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###FailedToLoadTemplate
-Failed to load template
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###FailedToSetTemplate
-Failed to set template
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###Failure
-Failure
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###FeatureNotSupported
-The feature is not supported completely or for specified input.
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###FetchTemplateInProgress
-Fetch template is in progress
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###FetchTemplateNotAllowed
-Fetch template not allowed while a read is in progress
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###InvalidObject
-The reader has been released and is not valid.
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###InvalidValue
-The value passed is not valid.
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###NoDataListener
-Data listner is not set
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###ReaderAlreadyDisabled
-The reader is already disabled
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###ReaderAlreadyEnabled
-Reader is already enabled
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###ReaderDeinitFailed
-Reader de-initialization failed.
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###ReaderInitFailed
-Reader initialization failed.
-
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###ReaderInUse
-Another reader is already enabled and in use.
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###ReaderNotEnabled
-The selected reader is not enabled.
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###Success
-Success
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###TemplateNotSet
-Failed to set template
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###Undefined
-Undefined
+Defines all error codes returned by the SimulScan API.
 
 **Type** - Symbol.XamarinEMDK.SimulScan.SimulScanResults
 ###Value
-Get the error code integer value assigned to the SimulScanResults
+Defines all error codes returned by the SimulScan API.
 
 **Type** - System.Int32

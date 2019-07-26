@@ -4,37 +4,37 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-Class for holding EMDK result data.
+Class for holding result data.
 
 **Type** - Java.Lang.Object
 
 ##Properties
 
 ###ExtendedStatusCode
-Gets status code result from process profile as enum value of type EMDKResults.EXTENDED_STATUS_CODE.
+Class for holding result data.
 
 **Type** - Symbol.XamarinEMDK.EMDKResults+EXTENDED_STATUS_CODE
 ###ExtendedStatusMessage
-Return the extended status information string. If there is not any extended information this returns empty string "".
+Class for holding result data.
 
 **Type** - System.String
 ###StatusCode
-Gets status code result from process profile as enum value of type EMDKResults.STATUS_CODE .
+Class for holding result data.
 
 **Type** - Symbol.XamarinEMDK.EMDKResults+STATUS_CODE
 ###StatusDocument
-Gets status results from process profile as xml document.
+Class for holding result data.
 
 **Type** - Org.W3c.Dom.IDocument
 ###StatusString
-Gets status results from process profile as xml string.
+Class for holding result data.
 
 **Type** - System.String
 ###SuccessFeaturesCount
-Return the total number of features in profile request is success. Currently these values will be available when the process profile is called to check profile compatibility. This will return -1 if the value is not used/set.
+Class for holding result data.
 
 **Type** - System.Int32
 ###TotalFeaturesCount
-Return the total number of features in the profile. Currently these values will be available when the process profile is called to check profile compatibility. This will return -1 if the value is not used/set.
+Class for holding result data.
 
 **Type** - System.Int32

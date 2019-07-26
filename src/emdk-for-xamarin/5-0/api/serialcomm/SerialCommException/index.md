@@ -4,13 +4,13 @@ layout: guide.html
 product: EMDK For Xamarin 
 productversion: '5.0' 
 ---
-The methods of serial communication object throw a SerialCommException when an error occurs.
+Throws an SerialCommException on incorrect API use by client or other unexpected error.
 
 **Type** - Java.Lang.Exception
 
 ##Properties
 
 ###Result
-Returns the SerialCommResults enum value.
+Throws a SerialCommException on incorrect API use by client or other unexpected error.
 
 **Type** - Symbol.XamarinEMDK.SerialComm.SerialCommResults

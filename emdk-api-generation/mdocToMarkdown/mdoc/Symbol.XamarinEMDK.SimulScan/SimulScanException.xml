@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Throws a SimulScanException on incorrect API use or other unexpected error.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </Parameters>
       <Docs>
         <param name="p0"></param>
-        <summary></summary>
+        <summary>Throws a SimulScanException on incorrect API use or other unexpected error.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -59,7 +59,7 @@
       <Docs>
         <param name="p0"></param>
         <param name="p1"></param>
-        <summary></summary>
+        <summary>Throws a SimulScanException on incorrect API use or other unexpected error.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -77,7 +77,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Throws a SimulScanException on incorrect API use or other unexpected error.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -97,7 +97,7 @@
         <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Throws a SimulScanException on incorrect API use or other unexpected error.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -113,7 +113,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Throws a SimulScanException on incorrect API use or other unexpected error.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -129,7 +129,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Throws a SimulScanException on incorrect API use or other unexpected error.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

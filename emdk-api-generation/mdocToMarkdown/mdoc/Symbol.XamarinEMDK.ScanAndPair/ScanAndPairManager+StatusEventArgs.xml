@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary></summary>
+    <summary>Provides simple methods to scan a Bluetooth barcode (name or address) of a remote Bluetooth device and pair/unpair with the remote Bluetooth device.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </Parameters>
       <Docs>
         <param name="p0"></param>
-        <summary></summary>
+        <summary>Provides simple methods to scan a Bluetooth barcode (name or address) of a remote Bluetooth device and pair/unpair with the remote Bluetooth device.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -41,7 +41,7 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.StatusData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides simple methods to scan a Bluetooth barcode (name or address) of a remote Bluetooth device and pair/unpair with the remote Bluetooth device.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

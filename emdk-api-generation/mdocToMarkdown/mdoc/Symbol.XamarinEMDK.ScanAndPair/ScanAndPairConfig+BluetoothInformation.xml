@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Class used by the ScanAndPairTool class. Specifies Bluetooth related information. The settings provided through this class are used for pairing/unpairing.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>Class used by the ScanAndPairTool class. Specifies Bluetooth related information. The settings provided through this class are used for pairing/unpairing.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -51,7 +51,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Class used by the ScanAndPairTool class. Specifies Bluetooth related information. The settings provided through this class are used for pairing/unpairing.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -71,7 +71,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class used by the ScanAndPairTool class. Specifies Bluetooth related information. The settings provided through this class are used for pairing/unpairing.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -92,7 +92,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class used by the ScanAndPairTool class. Specifies Bluetooth related information. The settings provided through this class are used for pairing/unpairing.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -113,7 +113,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class used by the ScanAndPairTool class. Specifies Bluetooth related information. The settings provided through this class are used for pairing/unpairing.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -129,7 +129,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class used by the ScanAndPairTool class. Specifies Bluetooth related information. The settings provided through this class are used for pairing/unpairing.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -145,7 +145,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class used by the ScanAndPairTool class. Specifies Bluetooth related information. The settings provided through this class are used for pairing/unpairing.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

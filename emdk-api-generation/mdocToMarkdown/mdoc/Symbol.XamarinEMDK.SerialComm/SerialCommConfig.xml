@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Provides access to serial-port setting configuration. Supported in EMDK v6.1.0 or higher. Not supported on all BSPs. See release notes for details.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Provides access to serial-port setting configuration. Supported in EMDK v6.1.0 or higher. Not supported on all BSPs. See release notes for details.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -53,7 +53,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to serial-port setting configuration. Supported in EMDK v6.1.0 or higher. Not supported on all BSPs. See release notes for details.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -74,7 +74,7 @@
         <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+DataBits</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to serial-port setting configuration. Supported in EMDK v6.1.0 or higher. Not supported on all BSPs. See release notes for details.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -95,7 +95,7 @@
         <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+FlowControlModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to serial-port setting configuration. Supported in EMDK v6.1.0 or higher. Not supported on all BSPs. See release notes for details.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -116,7 +116,7 @@
         <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+ParityBits</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to serial-port setting configuration. Supported in EMDK v6.1.0 or higher. Not supported on all BSPs. See release notes for details.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -137,7 +137,7 @@
         <ReturnType>Symbol.XamarinEMDK.SerialComm.SerialCommConfig+StopBits</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to serial-port setting configuration. Supported in EMDK v6.1.0 or higher. Not supported on all BSPs. See release notes for details.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -153,7 +153,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to serial-port setting configuration. Supported in EMDK v6.1.0 or higher. Not supported on all BSPs. See release notes for details.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -169,7 +169,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to serial-port setting configuration. Supported in EMDK v6.1.0 or higher. Not supported on all BSPs. See release notes for details.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

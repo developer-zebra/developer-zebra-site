@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -40,7 +40,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -58,7 +58,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -78,7 +78,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Symbol.XamarinEMDK.SimulScan.SimulScanTemplateElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -99,7 +99,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -120,7 +120,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -141,7 +141,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -162,7 +162,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -183,7 +183,7 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -204,7 +204,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -225,7 +225,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -246,7 +246,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -262,7 +262,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -278,7 +278,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -299,7 +299,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents the XML template passed into the SimulScanEngine. All recognizable tags and attributes are placed into this class.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

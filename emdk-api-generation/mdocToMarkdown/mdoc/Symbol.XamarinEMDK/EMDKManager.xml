@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>The key class in Android EMDK, provides access to different classes for the supported features. Clients should call EMDKManager.getEMDKManager(Context, EMDKManager.EMDKListener), to get the EMDKManager object. Each application implements EMDKListener interface. The EMDKManager object will be returned on successful opening through the EMDKListener callback.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>The key class in Android EMDK, provides access to different classes for the supported features. Clients should call EMDKManager.getEMDKManager(Context, EMDKManager.EMDKListener), to get the EMDKManager object. Each application implements EMDKListener interface. The EMDKManager object will be returned on successful opening through the EMDKListener callback.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -59,7 +59,7 @@
       <Docs>
         <param name="p0"></param>
         <param name="p1"></param>
-        <summary></summary>
+        <summary>The key class in Android EMDK, provides access to different classes for the supported features. Clients should call EMDKManager.getEMDKManager(Context, EMDKManager.EMDKListener), to get the EMDKManager object. Each application implements EMDKListener interface. The EMDKManager object will be returned on successful opening through the EMDKListener callback.</summary>
         <returns></returns>
         <remarks></remarks>
       </Docs>
@@ -84,7 +84,7 @@
       </Parameters>
       <Docs>
         <param name="p0"></param>
-        <summary></summary>
+        <summary>The key class in Android EMDK, provides access to different classes for the supported features. Clients should call EMDKManager.getEMDKManager(Context, EMDKManager.EMDKListener), to get the EMDKManager object. Each application implements EMDKListener interface. The EMDKManager object will be returned on successful opening through the EMDKListener callback.</summary>
         <returns></returns>
         <remarks></remarks>
       </Docs>
@@ -111,7 +111,7 @@
       <Docs>
         <param name="p0"></param>
         <param name="p1"></param>
-        <summary></summary>
+        <summary>The key class in Android EMDK, provides access to different classes for the supported features. Clients should call EMDKManager.getEMDKManager(Context, EMDKManager.EMDKListener), to get the EMDKManager object. Each application implements EMDKListener interface. The EMDKManager object will be returned on successful opening through the EMDKListener callback.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -132,7 +132,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>The key class in Android EMDK, provides access to different classes for the supported features. Clients should call EMDKManager.getEMDKManager(Context, EMDKManager.EMDKListener), to get the EMDKManager object. Each application implements EMDKListener interface. The EMDKManager object will be returned on successful opening through the EMDKListener callback.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -156,7 +156,7 @@
       </Parameters>
       <Docs>
         <param name="p0"></param>
-        <summary></summary>
+        <summary>The key class in Android EMDK, provides access to different classes for the supported features. Clients should call EMDKManager.getEMDKManager(Context, EMDKManager.EMDKListener), to get the EMDKManager object. Each application implements EMDKListener interface. The EMDKManager object will be returned on successful opening through the EMDKListener callback.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -171,7 +171,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>The key class in Android EMDK, provides access to different classes for the supported features. Clients should call EMDKManager.getEMDKManager(Context, EMDKManager.EMDKListener), to get the EMDKManager object. Each application implements EMDKListener interface. The EMDKManager object will be returned on successful opening through the EMDKListener callback.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -187,7 +187,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>The key class in Android EMDK, provides access to different classes for the supported features. Clients should call EMDKManager.getEMDKManager(Context, EMDKManager.EMDKListener), to get the EMDKManager object. Each application implements EMDKListener interface. The EMDKManager object will be returned on successful opening through the EMDKListener callback.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

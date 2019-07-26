@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Provides access to reader status.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader status.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -51,7 +51,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Provides access to reader status.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -71,7 +71,7 @@
         <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+ExtendedStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader status.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -92,7 +92,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader status.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -113,7 +113,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader status.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -134,7 +134,7 @@
         <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+SimulScanStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader status.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -155,7 +155,7 @@
         <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanStatusData+SimulScanStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader status.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -176,7 +176,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader status.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -192,7 +192,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader status.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -208,7 +208,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader status.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Represents a processed SimulScanTemplateGroup.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateGroup.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -51,7 +51,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateGroup.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -76,7 +76,7 @@
         <param name="p0"></param>
         <param name="p1"></param>
         <param name="p2"></param>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateGroup.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -100,7 +100,7 @@
       </Parameters>
       <Docs>
         <param name="p0"></param>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateGroup.</summary>
         <returns></returns>
         <remarks></remarks>
       </Docs>
@@ -121,7 +121,7 @@
         <ReturnType>Java.Lang.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateGroup.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -142,7 +142,7 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateGroup.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -163,7 +163,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Symbol.XamarinEMDK.SimulScan.SimulScanRegion&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateGroup.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -179,7 +179,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateGroup.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -195,7 +195,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateGroup.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

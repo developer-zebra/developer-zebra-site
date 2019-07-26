@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Represents a processed SimulScanTemplateElement.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -40,7 +40,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateElement.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -58,7 +58,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateElement.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -83,7 +83,7 @@
         <param name="p0"></param>
         <param name="p1"></param>
         <param name="p2"></param>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateElement.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -103,7 +103,7 @@
         <ReturnType>Java.Lang.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateElement.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -124,7 +124,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateElement.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -145,7 +145,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateElement.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -166,7 +166,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateElement.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -187,7 +187,7 @@
         <ReturnType>Java.Lang.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateElement.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -208,7 +208,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateElement.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -224,7 +224,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateElement.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -240,7 +240,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents a processed SimulScanTemplateElement.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

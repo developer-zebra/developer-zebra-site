@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>A grouping of multiple SimulScanTemplateRegion items.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>A grouping of multiple SimulScanTemplateRegion items.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -56,7 +56,7 @@
       <Docs>
         <param name="p0"></param>
         <param name="p1"></param>
-        <summary></summary>
+        <summary>A grouping of multiple SimulScanTemplateRegion items.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -74,7 +74,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>A grouping of multiple SimulScanTemplateRegion items.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -94,7 +94,7 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>A grouping of multiple SimulScanTemplateRegion items.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -115,7 +115,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Symbol.XamarinEMDK.SimulScan.SimulScanTemplateRegion&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>A grouping of multiple SimulScanTemplateRegion items.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -131,7 +131,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>A grouping of multiple SimulScanTemplateRegion items.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -147,7 +147,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>A grouping of multiple SimulScanTemplateRegion items.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

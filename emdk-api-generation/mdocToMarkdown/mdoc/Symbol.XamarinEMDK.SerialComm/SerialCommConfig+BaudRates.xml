@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -51,7 +51,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -72,7 +72,7 @@
       </ReturnValue>
       <MemberValue>115200</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -93,7 +93,7 @@
       </ReturnValue>
       <MemberValue>1200</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -114,7 +114,7 @@
       </ReturnValue>
       <MemberValue>14400</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -135,7 +135,7 @@
       </ReturnValue>
       <MemberValue>19200</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -156,7 +156,7 @@
       </ReturnValue>
       <MemberValue>230400</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -177,7 +177,7 @@
       </ReturnValue>
       <MemberValue>2400</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -198,7 +198,7 @@
       </ReturnValue>
       <MemberValue>28800</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -219,7 +219,7 @@
       </ReturnValue>
       <MemberValue>300</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -240,7 +240,7 @@
       </ReturnValue>
       <MemberValue>38400</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -261,7 +261,7 @@
       </ReturnValue>
       <MemberValue>460800</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -282,7 +282,7 @@
       </ReturnValue>
       <MemberValue>4800</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -303,7 +303,7 @@
       </ReturnValue>
       <MemberValue>57600</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -324,7 +324,7 @@
       </ReturnValue>
       <MemberValue>921600</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -345,7 +345,7 @@
       </ReturnValue>
       <MemberValue>9600</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -360,7 +360,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -376,7 +376,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines possible baud rate constants. Not all baud rates are supported by all serial devices. Refer to the product documentation before setting the baud rates.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

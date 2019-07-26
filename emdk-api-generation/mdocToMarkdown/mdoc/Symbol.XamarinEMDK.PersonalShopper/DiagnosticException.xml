@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>The methods of diagnostic API throw a DiagnosticException when an error occurs due to incorrect API use by client or other unexpected error.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>The methods of diagnostic API throw a DiagnosticException when an error occurs due to incorrect API use by client or other unexpected error.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -53,7 +53,7 @@
         <ReturnType>Symbol.XamarinEMDK.PersonalShopper.DiagnosticResults</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>The methods of diagnostic API throw a DiagnosticException when an error occurs due to incorrect API use by client or other unexpected error.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -69,7 +69,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>The methods of diagnostic API throw a DiagnosticException when an error occurs due to incorrect API use by client or other unexpected error.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -85,7 +85,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>The methods of diagnostic API throw a DiagnosticException when an error occurs due to incorrect API use by client or other unexpected error.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

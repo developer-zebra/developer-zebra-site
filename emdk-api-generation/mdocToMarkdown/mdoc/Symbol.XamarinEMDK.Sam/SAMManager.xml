@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -53,7 +53,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -75,7 +75,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.</summary>
         <returns></returns>
         <remarks></remarks>
       </Docs>
@@ -91,7 +91,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -107,7 +107,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Once initialized, SAMManager allows app to query available SAM information to apps. Returns an array of SAMDevice objects consisting of only SAM slots with a SAM present in the corresponding slot. Returns null if no SAM is present in the device. If only one SAM is present, one SAMDevice instance is returned. With multiple SAMs present, all SAMDevices are returned according to their index.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -53,7 +53,7 @@
         <ReturnType>Java.Lang.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -74,7 +74,7 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+BluetoothInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -95,7 +95,7 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+NotificationTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -117,7 +117,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -137,7 +137,7 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -153,7 +153,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -169,7 +169,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class provides a means of configuring the settings for use in scanAndPair() or scanAnUnpair() methods. Settings must be configured before calling the scanAndPair() or scanAnUnpair() methods. Do not modify while the method is processing its job.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

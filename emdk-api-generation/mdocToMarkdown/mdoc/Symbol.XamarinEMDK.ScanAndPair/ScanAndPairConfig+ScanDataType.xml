@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Provides the different types of barcode data to be scanned.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides the different types of barcode data to be scanned.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -56,7 +56,7 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides the different types of barcode data to be scanned.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -72,7 +72,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides the different types of barcode data to be scanned.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -88,7 +88,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides the different types of barcode data to be scanned.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -109,7 +109,7 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides the different types of barcode data to be scanned.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -134,7 +134,7 @@
       </Parameters>
       <Docs>
         <param name="this_"></param>
-        <summary></summary>
+        <summary>Provides the different types of barcode data to be scanned.</summary>
         <returns></returns>
         <remarks></remarks>
       </Docs>
@@ -156,7 +156,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>Provides the different types of barcode data to be scanned.</summary>
         <returns></returns>
         <remarks></remarks>
       </Docs>

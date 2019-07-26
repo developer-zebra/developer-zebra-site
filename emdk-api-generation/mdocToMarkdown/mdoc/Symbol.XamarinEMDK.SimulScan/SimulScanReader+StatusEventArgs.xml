@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary></summary>
+    <summary>Represents and provides access to the physical reader device.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </Parameters>
       <Docs>
         <param name="p0"></param>
-        <summary></summary>
+        <summary>Represents and provides access to the physical reader device.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -41,7 +41,7 @@
         <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanStatusData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Represents and provides access to the physical reader device.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

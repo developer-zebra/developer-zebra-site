@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Class used by ScanAndPairTool class. Specifies the scanning-related information and exposes the scanned data. The settings provided through this class are used for scanning the barcode. Maximum allowable scanned barcode length is 123 characters.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>Class used by ScanAndPairTool class. Specifies the scanning-related information and exposes the scanned data. The settings provided through this class are used for scanning the barcode. Maximum allowable scanned barcode length is 123 characters.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -51,7 +51,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Class used by ScanAndPairTool class. Specifies the scanning-related information and exposes the scanned data. The settings provided through this class are used for scanning the barcode. Maximum allowable scanned barcode length is 123 characters.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -71,7 +71,7 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+DeviceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class used by ScanAndPairTool class. Specifies the scanning-related information and exposes the scanned data. The settings provided through this class are used for scanning the barcode. Maximum allowable scanned barcode length is 123 characters.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -92,7 +92,7 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+ScanDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class used by ScanAndPairTool class. Specifies the scanning-related information and exposes the scanned data. The settings provided through this class are used for scanning the barcode. Maximum allowable scanned barcode length is 123 characters.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -113,7 +113,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class used by ScanAndPairTool class. Specifies the scanning-related information and exposes the scanned data. The settings provided through this class are used for scanning the barcode. Maximum allowable scanned barcode length is 123 characters.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -134,7 +134,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class used by ScanAndPairTool class. Specifies the scanning-related information and exposes the scanned data. The settings provided through this class are used for scanning the barcode. Maximum allowable scanned barcode length is 123 characters.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -150,7 +150,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class used by ScanAndPairTool class. Specifies the scanning-related information and exposes the scanned data. The settings provided through this class are used for scanning the barcode. Maximum allowable scanned barcode length is 123 characters.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -166,7 +166,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class used by ScanAndPairTool class. Specifies the scanning-related information and exposes the scanned data. The settings provided through this class are used for scanning the barcode. Maximum allowable scanned barcode length is 123 characters.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -187,7 +187,7 @@
         <ReturnType>Symbol.XamarinEMDK.ScanAndPair.ScanAndPairConfig+TriggerType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Class used by ScanAndPairTool class. Specifies the scanning-related information and exposes the scanned data. The settings provided through this class are used for scanning the barcode. Maximum allowable scanned barcode length is 123 characters.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

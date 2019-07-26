@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Primary object to access SimulScan features.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Primary object to access SimulScan features.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -57,7 +57,7 @@
       </Parameters>
       <Docs>
         <param name="p0"></param>
-        <summary></summary>
+        <summary>Primary object to access SimulScan features.</summary>
         <returns></returns>
         <remarks></remarks>
       </Docs>
@@ -82,7 +82,7 @@
       </Parameters>
       <Docs>
         <param name="p0"></param>
-        <summary></summary>
+        <summary>Primary object to access SimulScan features.</summary>
         <returns></returns>
         <remarks></remarks>
       </Docs>
@@ -103,7 +103,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Symbol.XamarinEMDK.SimulScan.SimulScanReaderInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Primary object to access SimulScan features.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -119,7 +119,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Primary object to access SimulScan features.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -135,7 +135,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Primary object to access SimulScan features.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Defines a scanner device identifier.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanManager+DeviceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines a scanner device identifier.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -56,7 +56,7 @@
         <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanManager+DeviceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines a scanner device identifier.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -77,7 +77,7 @@
         <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanManager+DeviceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines a scanner device identifier.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -93,7 +93,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines a scanner device identifier.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -109,7 +109,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Defines a scanner device identifier.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -134,7 +134,7 @@
       </Parameters>
       <Docs>
         <param name="this_"></param>
-        <summary></summary>
+        <summary>Defines a scanner device identifier.</summary>
         <returns></returns>
         <remarks></remarks>
       </Docs>
@@ -156,7 +156,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>Defines a scanner device identifier.</summary>
         <returns></returns>
         <remarks></remarks>
       </Docs>

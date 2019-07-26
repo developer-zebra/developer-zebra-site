@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Provides access to reader configuration settings.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Provides access to reader configuration settings.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -53,7 +53,7 @@
         <ReturnType>Java.Lang.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader configuration settings.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -74,7 +74,7 @@
         <ReturnType>Java.Lang.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader configuration settings.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -95,7 +95,7 @@
         <ReturnType>Java.Lang.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader configuration settings.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -116,7 +116,7 @@
         <ReturnType>Java.Lang.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader configuration settings.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -137,7 +137,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader configuration settings.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -158,7 +158,7 @@
         <ReturnType>Java.Lang.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader configuration settings.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -179,7 +179,7 @@
         <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanMultiTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader configuration settings.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -200,7 +200,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader configuration settings.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -216,7 +216,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader configuration settings.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -232,7 +232,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader configuration settings.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -253,7 +253,7 @@
         <ReturnType>Java.Lang.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides access to reader configuration settings.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

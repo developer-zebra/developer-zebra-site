@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>Provides information about the reader device.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       <Docs>
         <param name="javaReference"></param>
         <param name="transfer"></param>
-        <summary></summary>
+        <summary>Provides information about the reader device.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -53,7 +53,7 @@
         <ReturnType>Symbol.XamarinEMDK.SimulScan.SimulScanManager+DeviceIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides information about the reader device.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -74,7 +74,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides information about the reader device.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -96,7 +96,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>Provides information about the reader device.</summary>
         <returns></returns>
         <remarks></remarks>
       </Docs>
@@ -117,7 +117,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides information about the reader device.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -133,7 +133,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides information about the reader device.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -149,7 +149,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>Provides information about the reader device.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>

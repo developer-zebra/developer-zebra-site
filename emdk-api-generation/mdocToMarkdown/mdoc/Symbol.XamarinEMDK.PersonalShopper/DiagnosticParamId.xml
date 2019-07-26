@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary></summary>
+    <summary>The diagnostic parameter IDs.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -54,7 +54,7 @@
       </ReturnValue>
       <MemberValue>255</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -75,7 +75,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -96,7 +96,7 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -117,7 +117,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -138,7 +138,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -159,7 +159,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -180,7 +180,7 @@
       </ReturnValue>
       <MemberValue>191</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -201,7 +201,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -216,7 +216,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -232,7 +232,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <value></value>
         <remarks></remarks>
       </Docs>
@@ -254,7 +254,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -275,7 +275,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary></summary>
+        <summary>The diagnostic parameter IDs.</summary>
         <remarks></remarks>
       </Docs>
     </Member>

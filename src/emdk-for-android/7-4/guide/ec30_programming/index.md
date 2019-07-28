@@ -146,7 +146,7 @@ Part of an app's UX might live outside of the app itself. **Take a holistic view
 Since it's likely that the EC30-targeted app is being ported from a device with higher resolution than the EC30's 480 x 854 pixels, it's probably better to create all new UI layouts than to squeeze existing ones onto a smaller screen. **A common EC30 UI issue comes when inputting text when in portrait mode**; the narrow keypad doesn't provide enough space between keys. One solution is to switch device orientation to landscape mode whenever text input is required, and to switch back again when finished.  
 
 <img alt="image" style="height:250px" src="force_landscape.png"/>
-_It's easier to type on a wider SIP_.<br>
+_It's easier to type on a wider SIP. Click to enlarge_.<br>
 
 ##### How to Toggle Landscape Mode
 
@@ -162,8 +162,216 @@ In essence, toggling landscape mode for text entry requires that the activity cl
 * `onTouch()`
 * `onEditorAction()`
 
-**Set and lock desired screen orientation**:   
+####Set and lock desired screen orientation:   
 
+    :::java
+    public class MainActivity extends AppCompatActivity implements View.OnClickListener,View.OnTouchListener,TextView.OnEditorActionListener {
+
+        private EditText editTextFirstName = null;
+        private EditText editTextLastName = null;
+        private EditText editTextMobile = null;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+
+            //Set click and touch listeners to edit text fields:
+            editTextFirstName = (EditText) findViewById(R.id.editFirstName);
+            editTextFirstName.setOnClickListener(this);
+            editTextFirstName.setOnTouchListener(this);
+            editTextFirstName.setOnEditorActionListener(this);
+
+            editTextLastName = (EditText) findViewById(R.id.editLastName);
+            editTextLastName.setOnClickListener(this);
+            editTextLastName.setOnTouchListener(this);
+            editTextLastName.setOnEditorActionListener(this);
+
+            editTextMobile = (EditText) findViewById(R.id.editMobile);
+            editTextMobile.setOnClickListener(this);
+            editTextLastName.setOnTouchListener(this);
+            editTextMobile.setOnEditorActionListener(this);
+
+            //Set click listener for submit button:
+            Button button = (Button) findViewById(R.id.buttonSubmit);
+            button.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()) {
+                case R.id.buttonSubmit:
+
+            // Unlock screen after tapping submit button:
+                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
+                    break;
+
+                default:
+            // If in portrait mode, put device in landscape mode and lock rotation. 
+            // If already in landscape mode, just lock rotation:
+                    if (getResources().getConfiguration().orientation  != Configuration.ORIENTATION_LANDSCAPE){
+                        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+                    } else {
+                        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
+                    }
+                    break;
+            }
+        }
+
+        @Override
+        public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+            if(actionId != EditorInfo.IME_ACTION_DONE) {
+                return false;
+            }
+            //Unlock the screen rotation:
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
+            return false;
+        }
+
+        @Override
+        protected void onDestroy() {
+            super.onDestroy();
+        }
+
+        @Override
+        public boolean onTouch(View v, MotionEvent event) {
+            //On touch requesting the focus for the view.
+            if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                v.requestFocus();
+            }
+            return false;
+        }
+    }
+
+
+### Input Alternatives
+
+To avoid manual text input through the SIP, implement drop-down "spinner" menus or "left-right navigators" whenever possible. Use the `setItemList` API to provide the list of items and the `getSelectedItem` API to get the text for the selected item text.
+
+<img alt="image" style="height:250px" src="spinner_LR_nav.png"/>
+_Click image to enlarge._
+
+####To use input alternatives:
+
+1. Download the desired controls from the list below:<br>
+    [dropdown.aar](dropdown.aar) | Drop-down spinner<br>
+    [CustomSelectionView.aar](CustomSelectionView.aar) | Left-right navigator<br>
+2. **Import the code**: <br>
+**File->Project Structure -> “+" (plus sign in top-left corner) ->import .JAR/.AAR package -> [file name]**
+
+3. **Add control to layout .xml** as below:<br>
+    **Drop-down spinner**:<br>
+
+        <com.zebra.dropdown.DropDown
+            android:id="@+id/cdp1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            app:dd_gravity="CENTER"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    **Left-right navigator**:<br>
+
+        <com.zebra.selectionview.CustomSelectionView
+            android:id="@+id/csv1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            app:csv_gravity="CENTER"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cdp1"/>
+
+4. **Add items in the control** using the `setItemList()` method as below: 
+
+        :::java
+        public class MainActivity extends AppCompatActivity {
+
+            private DropDown mCustomDropDown;
+            private CustomSelectionView mCustomSelectionView;
+
+            @Override
+            protected void onCreate(Bundle savedInstanceState) {
+                super.onCreate(savedInstanceState);
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+                setContentView(R.layout.activity_main);
+
+                ArrayList<String> strings = new ArrayList<String>();
+                for (int i = 0; i <= 50; i++) {
+                    strings.add("Item " + i);
+                }
+                mCustomDropDown = (DropDown) findViewById(R.id.cdp1);
+                mCustomDropDown.setItemList(strings);
+
+                mCustomSelectionView = (CustomSelectionView) findViewById(R.id.csv1);
+                mCustomSelectionView.setItemList(strings);
+        }
+
+5. **Access selected item from drop-down or left-right navigator control** using the `getSelectedItem()` method as below: 
+
+        :::java
+        public void onSubmitClick(View view){
+                Toast.makeText(this,"Selected Item on Drop down is = " + mCustomDropDown.getSelectedItem() 
+                            "\n Selected Item on Left Right Navigator is = " + mCustomSelectionView.getSelectedItem(),Toast.LENGTH_SHORT).show();
+        }
+ 
+-----
+
+### Embedded Tools
+
+The EC30 implements embedded tools to simplify changes to display size and font scaling during development. Accessed through the "Power-off" menu when developer options are enabled on the device, the tools are designed to simplify changes to the UX for testing and can be easily disabled before device deployment. 
+
+<img alt="image" style="height:250px" src="embedded_apps.png"/>
+_Click image to enlarge._
+
+### Remove Small-screen Restriction
+
+The EC30 falls to the category of small-screen devices, and a migrated app will fail to launch if the “smallScreens” attribute in its Android manifest file is to "false." To prevent this issue in the migrated app, the smallScreens attribute must be "true" in the app's manifest:
+
+    <supports-screens 
+                      android:resizeable=["true"| "false"]
+                      android:smallScreens=["true" | "false"] <-- SET TO "true" FOR EC30
+                      android:normalScreens=["true" | "false"]
+                      android:largeScreens=["true" | "false"]
+                      android:xlargeScreens=["true" | "false"]
+                      android:anyDensity=["true" | "false"]
+                      android:requiresSmallestWidthDp="integer"
+                      android:compatibleWidthLimitDp="integer"
+                      android:largestWidthLimitDp="integer“
+    /> 
+
+-----
+
+## Power Management
+
+The EC30's 1200 mAh Li-Ion PowerPrecision+ battery is rated to provide a full 10 hours of continuous operation. However, battery performance varies greatly depending on device settings, especially those of the display panel and backlight. **To maximize operation of EC30 devices while on battery power, Zebra recommends the following power-management best practices**:
+
+#####To Prolong Battery Life:
+
+* Set screen brightness to minimum level for use
+* Set a short screen timeout interval (10-15 seconds)
+* Set the device to wake after pressing scan trigger or PTT button
+* Optimize all EC30 apps for Doze and App Standby
+* Observe [Doze Restrictions](https://developer.android.com/training/monitoring-device-state/doze-standby)
+* Ensure apps are managing activities during the Doze maintenance window
+* Do not disable Doze mode through MX
+* Do not "whitelist" an app for battery optimization (prevents Doze mode)
+* Test app to ensure proper operation when entering/exiting Doze mode 
+
+-----
+
+## Also See
+
+* **[Google Material Design](https://material.io/) | Google app design tool**
+* **[Screen compatibility overview](https://developer.android.com/guide/practices/screens_support) | Google development community**
+* **[Support different screen sizes](https://developer.android.com/training/multiscreen/screensizes) | Google development community** 
+* [Support different pixel densities](https://developer.android.com/training/multiscreen/screendensities) | Google development community
+* [Optimize for battery life](https://developer.android.com/topic/performance/power/) | Google development community
+* [Keeping an app running when it wants to sleep](https://developer.zebra.com/community/home/blog/2018/10/26/keeping-your-application-running-when-the-device-wants-to-sleep) | Zebra engineering
+
+<!-- 7/28/19- removed from "Set and lock desired screen orientation" section, per eng. 
 1. Have the app's `activity` class implement the listeners below for Touch and EditorAction:
 
         :::Java
@@ -222,89 +430,4 @@ In essence, toggling landscape mode for text entry requires that the activity cl
             }
             return false;
         }
-
-### Input Alternatives
-
-To avoid manual text input through the SIP, implement drop-down "spinner" menus or "left-right navigators" whenever possible. Use the `setItemList` API to provide the list of items and the `getSelectedItem` API to get the text for the selected item text.
-
-<img alt="image" style="height:250px" src="spinner_LR_nav.png"/>
-_Click image to enlarge._
-
-### Sample Code
-
-#### Drop-down Spinner
-    <com.zebra.dropdown.DropDown 
-        android:id="@+id/cdp1" 
-        android:layout_width="300dp" 
-        android:layout_height="40dp" 
-        android:layout_marginTop="30dp" 
-        android:layout_marginLeft="10dp" 
-        app:dd_gravity="CENTER" 
-        app:layout_constraintLeft_toLeftOf="parent" 
-        app:layout_constraintTop_toTopOf="parent"
-    /> 
-
-#### Left-Right Navigator
-    <com.zebra.selectionview.CustomSelectionView 
-        android:id="@+id/csv1" 
-        android:layout_width="300dp" 
-        android:layout_height="40dp" 
-        android:layout_marginTop="30dp" 
-        android:layout_marginLeft="10dp" 
-        app:csv_gravity="CENTER" 
-        app:layout_constraintLeft_toLeftOf="parent" 
-        app:layout_constraintTop_toBottomOf="@+id/cdp1"
-    /> 
-
-### Embedded Tools
-
-The EC30 implements embedded tools to simplify changes to display size and font scaling. Accessed through the "Power-off" menu when developer options are enabled on the device, the tools are designed to simplify changes to the UX for testing and can be easily disabled before device deployment. 
-
-<img alt="image" style="height:250px" src="embedded_apps.png"/>
-_Click image to enlarge._
-
-### Remove Small-screen Restriction
-
-The EC30 falls to the category of small-screen devices, and a migrated app will fail to launch if the “smallScreens” attribute in its Android manifest file is to "false." To prevent this issue in the migrated app, the smallScreens attribute must be "true" in the app's manifest:
-
-    <supports-screens 
-                      android:resizeable=["true"| "false"]
-                      android:smallScreens=["true" | "false"] <-- SET TO "true" FOR EC30
-                      android:normalScreens=["true" | "false"]
-                      android:largeScreens=["true" | "false"]
-                      android:xlargeScreens=["true" | "false"]
-                      android:anyDensity=["true" | "false"]
-                      android:requiresSmallestWidthDp="integer"
-                      android:compatibleWidthLimitDp="integer"
-                      android:largestWidthLimitDp="integer“
-    /> 
-
------
-
-## Power Management
-
-The EC30's 1200 mAh Li-Ion PowerPrecision+ battery is rated to provide a full 10 hours of continuous operation. However, battery performance varies greatly depending on device settings, especially those of the display panel and backlight. **To maximize operation of EC30 devices while on battery power, Zebra recommends the following power-management best practices**.
-
-#####To Prolong Battery Life:
-
-* Set screen brightness to minimum level for use
-* Set a short screen timeout interval (10-15 seconds)
-* Set the device to wake after pressing scan trigger or PTT button
-* Optimize all EC30 apps for Doze and App Standby
-* Observe [Doze Restrictions](https://developer.android.com/training/monitoring-device-state/doze-standby)
-* Ensure apps are managing activities during the Doze maintenance window
-* Do not disable Doze mode through MX
-* Do not "whitelist" an app for battery optimization (prevents Doze mode)
-* Test app to ensure proper operation when entering/exiting Doze mode 
-
------
-
-## Also See
-
-* [Google Material Design](https://material.io/) | Google app design tool
-* **[Screen compatibility overview](https://developer.android.com/guide/practices/screens_support) | Google development community** `Recommended`
-* **[Support different screen sizes](https://developer.android.com/training/multiscreen/screensizes) | Google development community** `Recommended` 
-* [Support different pixel densities](https://developer.android.com/training/multiscreen/screendensities) | Google development community
-* [Optimize for battery life](https://developer.android.com/topic/performance/power/) | Google development community
-* [Keeping an app running when it wants to sleep](https://developer.zebra.com/community/home/blog/2018/10/26/keeping-your-application-running-when-the-device-wants-to-sleep) | Zebra engineering
-
+ -->

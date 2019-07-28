@@ -14,17 +14,77 @@ menu:
     - icon: fa fa-search
       url: /oemconfig/1-0/search
 ---
-
 ## Transaction Overview
 
+This section of the OEMConfig documentation describes all supported Managed Configurations (MCs), which can be used to define an ordered list of Steps for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*. 
 
-This document describes all supported Managed Configurations (MCs), which can be used to define an ordered list of Steps for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*. 
+Before attempting to configure a Transaction, it's important to understand the concept of arrays, of which a Transaction can contain one or many, and which can be nested as sub-arrays. 
+
+### Definition of Terms
+
+**Array -** a collection of steps, each of which can include no more than one instance of a given MC. 
+
+**Define -** used when referring to the definition (in the OemConfig schema) that determines what the administrator is allowed to do, not what they elect to do. For example “Within a step, some MCs are defined directly but most are organized into Managed Configuration Groups.”
+
+**Group -** any collection of two or more MC Actions or device-configuration settings. An instance of a particular Group can appear in a given step no more than one time.
+
+**Instance -** an occurrence or use of something. It can refer to electing to include a group or sub-group or electing to include a sub-group as an element of an array.
+
+**Include -** used when referring to the insertion of an instance. For example “Each instance of a step included within a Transaction can include any number of groups.”
+
+**Transaction -** an ordered list of Steps for defining one or more Actions to be performed or settings to be configured on a Zebra device 
+
+I alternated talking about what was “defined” at a given level, followed by talking about what could be “included” within an instance at that level.
+I didn’t think I needed to go any deeper since the explanation of a sub-group or sub-array is the same whether that sub-group or sub-array is within a group or within any sub-group at any level.
+
+Group
+Sub-group
+Array
+Sub-array
+Transaction
+Step
+
+
+The notion of “arrays” was difficult to explain, but I tried my best. The trickiest thing to capture is that a sub-array is one or more instances of a SINGLE sub-group, and each “instance” of that sub-group can contain anything that sub-group is defined to allow. That was the key thing that lead me to do this write-up, because the simple statement that you had that “Any number of MCs can be included in a single step, but any given MC may be used exactly once in any individual Step” was not really correct. An MC does NOT have to be used “exactly once” – it can be used “at most once” since not being used at all is allowed. 
+
+Further, since a step can contain a sub-array, the SAME MC can appear in EACH instance that is added to that sub-array, hence the same MC can actually appear MANY times within the same step. Without explaining the nature of arrays, it is impossible to make an accurate statement about when the same MC can and cannot appear more than once. 
+
+The basic rule is that within any group or sub-group an MC defined within that sub-group can be included zero times or one time. Since a sub-array allows a sub-group to appear more than once within a group or sub-group, it allows the same MC to appear once within each such sub-group. It is exactly this nature of arrays that allows each step instance in the transaction to use a given MC or group zero or ones times.
+
+
+#### A Transaction can include: 
+* An unlimited number of steps, each of which can include: 
+ * An unlimited number of *different* MC groups, but
+  * Only one instance of 
+
 
 ### Transaction Steps
 
-A *Transaction* is a sequence of one or more *Transaction Steps* in which each *Transaction Step* performs one or more Actions or configuration settings on a device. Any number of MCs can be included in a single step, but any given MC may be used exactly once in any individual Step. If an individual MC is required more than once in a *Transaction*, it must be added a separate Step each time it is required. 
+A *Transaction* is a sequence of one or more *Transaction Steps*. A single *Transaction* may include any number of steps, where each step performs one or more Actions or configuration settings on a device. Step instances will be executed in the order they are included within the *Transaction*.
 
-Any number of *Transaction Steps* can be included within a single *Transaction* and the individual *Transactions Steps* within a *Transaction* will be executed in the order they are specified.
+
+Within a step, some MCs are defined directly but most are organized into *Managed Configuration Groups*. MCs defined under a given group relate to some common aspect of device behavior. For example, MCs defined under the **Audio Configuration** group affect the audible sounds produced by a device.
+
+
+Each instance of a step included within a *Transaction* can include any number of groups, but at most one instance of any given group may be used within a given step instance. To include a group more than once within a *Transaction*, each instance of the group must be included in a separate step within the *Transaction*. For example, use a single Transaction to set a device to play a sound when plugged into AC power *and* to configure the device to replicate audio on the speaker and a connected headset, each of those Audio Configuration group instances must be implemented in its own step.
+
+### Order of Execution
+Within a group, MCs can be defined directly or organized into sub-groups or sub-arrays under that group. If a single step includes multiple groups, the order of execution of those groups within that step cannot be controlled. To control the order of execution among groups, the groups must be included in separate steps within the *Transaction*. This allows the order of execution of the groups to be controlled by the order of execution of the steps in which the groups are included.
+
+
+Each instance of a group included within a step can include any number of the MCs, sub-groups, or sub-arrays that are defined for that group, but at most one instance of any given MC, sub-group, or sub-array may be included within a group instance. To include an MC, sub-group, or sub-array more than once, multiple instances of the group must be used, each within a step instance.
+
+
+Within a sub-group, MCs may be defined directly or may be further organized into lower level sub-groups or sub-arrays.
+
+
+Each instance of a sub-group can include any number of MCs, sub-groups, or sub-arrays that are defined for that sub-group, but at most one instance of any given MC, sub-group, or sub-array may be used within a sub-group instance.
+
+
+Within a sub-array, a single sub-group is defined within which MCs may be defined directly or may be further organized into lower level sub-groups or sub-arrays.
+
+
+Each instance of a sub-array can include any number of instances of the sub-group defined for that sub-array. Each instance of the sub-group included in a sub-array may include any number of the MCs, sub-groups, or sub-arrays that are defined for that sub-group of that sub-array, but at most one instance of any given MC, sub-group, or sub-array included within a given sub-group instance within a sub-array.
 
 
 **Detail Information:** 
@@ -33,20 +93,20 @@ Any number of *Transaction Steps* can be included within a single *Transaction* 
 
 - Type = bundle_array 
 
------
 
-## Transaction Step Configuration
+#### Transaction Step
+
+
 
 Use this Group to specify a single *Transaction Step* that defines one or more Actions or configurations that you wish to perform on a device as part of an overall *Transaction*.
 
-#### The following rules apply to Transaction Steps: 
 
-- Any number of MCs can be included in a single step, but each MC may be used exactly once in any individual Step. 
-- If an individual MC is required more than once in a *Transaction*, it must be added in a separate Step each time it is required. 
-- Multiple Actions or configurations of different types can be defined as part of a single *Transaction Step*, but you CANNOT directly control the order or execution within a *Transaction Step*.
+Multiple Actions or configurations of different types can be defined as part of a single *Transaction Step*, but you CANNOT directly control the order or execution within a *Transaction Step*.
 - OemConfig will execute multiple Actions and configurations defined within a *Transaction Step* in an order that it determines will ensure that everything is executed successfully.
-- If you need to control the order of execution of various Actions or configurations, placed in different *Transaction Steps* and order the *Transaction Steps* within the *Transaction* as needed.
-- The **Transaction Step Level** section (below) describes the Actions and configurations that can be performed as a part of a *Transaction Step*.
+- If your need to control the order of execution of various Actions or configurations, place them in different *Transaction Steps*, and control the ordering those *Transaction Steps* within the *Transaction*.
+
+
+The following section **Transaction Step Level** describes the Actions and configurations you can perform as a part of a *Transaction Step*.
 
 
 **Detail Information:** 
@@ -56,13 +116,22 @@ Use this Group to specify a single *Transaction Step* that defines one or more A
 - Type = bundle 
 
 
-### Transaction Step Level
+# Transaction Step Level
 
-This section describes MCs that can be used to define the Actions and configurations to be performed by a *Transaction Step* within a *Transaction*, to provide an *Explanation* about a *Transaction Step*, and to define how errors that occur during the processing of a *Transaction Step* will be handled.
 
-### Explanation of Step
+
+This section describes Managed Configurations that can be used to define the Actions and configurations to be performed by a *Transaction Step* within a *Transaction*, to provide an *Explanation* about a *Transaction Step*, and to define how errors that occur during the processing of a *Transaction Step* will be handled.
+
+
+
+## Explanation
+
+
 
 Enter an optional *Explanation* that describes the purpose or intended behavior of a *Transaction Step*.
+
+
+
 
 Since a *Transaction* may include many *Transaction Steps* and each *Transaction Step* could include one or more configurations, describing the *Transaction Step* can be beneficial when later reviewing the *Transaction* and/or when editing a *Transaction*, and especially when reordering the *Transaction Steps* within the *Transaction*.
 
@@ -74,18 +143,19 @@ Since a *Transaction* may include many *Transaction Steps* and each *Transaction
 - Type = string 
 
 
-### Error Mode
+## Error Mode
+
+
 
 Select an *Error Mode* that determines how errors that occur during the execution of a *Transaction Step* should be handled.
 
 
-Since a *Transaction* may include multiple *Transaction Steps*, there may be cases where one *Transaction Step* within a *Transaction* is dependent on configuration performed by one or more preceding *Transaction Steps* in the same *Transaction*. In such cases, it might be desirable to avoid propagating the results of that error into subsequent *Transaction Steps* by terminating a *Transaction* if the processing of a *Transaction Step* results in an error.
+Since a *Transaction* may include multiple *Transaction Steps*, there may be cases where one *Transaction Step* within a *Transaction* is dependent on configuration performed by one or more preceding *Transaction Steps* in the same *Transaction*. In such cases, it may be desirable to terminate a *Transaction* if the processing of a *Transaction Step* results in an error to avoid propagating the results of that error into subsequent *Transaction Steps*.
 
 
-By default, execution will continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed. A decision to override this default behavior can be made independently for each *Transaction Step* within a *Transaction* by supplying one of the following *Error Mode* values:
-
-- If the value ***Continue*** is selected, the default behavior will be used and any errors that occur during the execution of the current *Transaction Step* will NOT terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will thus always continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed.
-- If the value ***Stop*** is selected, the default behavior will be overridden and any errors that occur during the execution of the current *Transaction Step* will terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will continue with the next *Transaction Step* only if execution of the current *Transaction Step* completes with NO errors.
+By default, execution will continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed. A decision to override this default behavior can be made independently for each *Transaction Step* within a *Transaction* by supplying an *Error Mode* value:
+- If the value ***Continue*** is selected, the default behavior will be used and hence any errors that occur during the execution of the current *Transaction Step* will NOT terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will thus always continue with the next *Transaction Step* once execution of the current *Transaction Step* is completed.
+- If the value ***Stop*** is selected, the default behavior will be overridden and hence any errors that occur during the execution of the current *Transaction Step* will terminate execution of subsequent *Transaction Steps* in the same *Transaction*. Execution will continue with the next *Transaction Step* only if execution of the current *Transaction Step* completes with NO errors.
 
 
 **Detail Information:** 
@@ -97,13 +167,9 @@ By default, execution will continue with the next *Transaction Step* once execut
 - Choices = ***Stop*** , ***Continue*** 
 
 
-
-<<<<< ---- END OF EDDIE'S EDITS --- >>>>>
-
-
-
-
 ## Analytics Configuration
+
+
 
 Use this Group to configure the Analytics Client in a device.
 
@@ -5517,7 +5583,7 @@ Values MUST specify a *Language*, and optionally a *Region*.
 
 - Type = string 
 
-- Choices = ***CANADA*** , ***CANADA_FRENCH*** , ***CHINA*** , ***CHINESE*** , ***ENGLISH*** , ***FRANCE*** , ***FRENCH*** , ***GERMAN*** , ***GERMANY*** , ***ITALIAN*** , ***ITALY*** , ***JAPAN*** , ***JAPANESE*** , ***KOREA*** , ***KOREAN*** , ***PRC*** , ***SIMPLIFIED_CHINESE*** , ***TAIWAN*** , ***TRADITIONAL_CHINESE*** , ***UK*** , ***US*** , ***SPANISH*** , ***US_SPANISH*** , ***BRAZIL_PORTUGUESE*** , ***PORTUGUESE*** , ***AUSTRALIA_ENGLISH*** , ***INDIA_ENGLISH*** , ***SWEDEN_SWEDISH*** , ***NORWAY_NORWEGIAN-BOKMÃL*** , *** FINLAND_FINISH*** , ***DENMARK_DANISH*** 
+- Choices = ***CANADA*** , ***CANADA_FRENCH*** , ***CHINA*** , ***CHINESE*** , ***ENGLISH*** , ***FRANCE*** , ***FRENCH*** , ***GERMAN*** , ***GERMANY*** , ***ITALIAN*** , ***ITALY*** , ***JAPAN*** , ***JAPANESE*** , ***KOREA*** , ***KOREAN*** , ***PRC*** , ***SIMPLIFIED_CHINESE*** , ***TAIWAN*** , ***TRADITIONAL_CHINESE*** , ***UK*** , ***US*** , ***SPANISH*** , ***US_SPANISH*** , ***BRAZIL_PORTUGUESE*** , ***PORTUGUESE*** , ***AUSTRALIA_ENGLISH*** , ***INDIA_ENGLISH*** , ***SWEDEN_SWEDISH*** , ***NORWAY_NORWEGIAN-BOKMAL*** , ***FINLAND_FINISH*** , ***DENMARK_DANISH*** 
 
 
 **Support Information:** 
@@ -6289,7 +6355,7 @@ Select the key code that will be sent as the behavior for a specified key a spec
 
 - Type = string 
 
-- Choices = ***0*** , ***1*** , ***2*** , ***3*** , ***4*** , ***5*** , ***6*** , ***7*** , ***8*** , ***9*** , ***+ (Plus)*** , ***- (Minus)*** , ***= (Equals)*** , ***( (Left Bracket)*** , ***) (Right Bracket)*** , ***` (Grave)*** , ***/ (Slash)*** , ***\ (Backslash)*** , ***; (Semicolon)*** , ***' (Apostrophe)*** , ***, (Comma)*** , ***. (Period)*** , ***\* (Star)*** , ***# (Pound)*** , ***@ (At)*** , ***A*** , ***B*** , ***C*** , ***D*** , ***E*** , ***F*** , ***G*** , ***H*** , ***I*** , ***J*** , ***K*** , ***L*** , ***M*** , ***N*** , ***O*** , ***P*** , ***Q*** , ***R*** , ***S*** , ***T*** , ***U*** , ***V*** , ***W*** , ***X*** , ***Y*** , ***Z*** , ***Enter*** , ***Tab*** , ***Space*** , ***Escape*** , ***Delete*** , ***F1*** , ***F2*** , ***F3*** , ***F4*** , ***F5*** , ***F6*** , ***F7*** , ***F8*** , ***F9*** , ***F10*** , ***F11*** , ***F12*** , ***NUMPAD 0*** , ***NUMPAD 1*** , ***NUMPAD 2*** , ***NUMPAD 3*** , ***NUMPAD 4*** , ***NUMPAD 5*** , ***NUMPAD 6*** , ***NUMPAD 7*** , ***NUMPAD 8*** , ***NUMPAD 9*** , ***NUMPAD / (NUMPAD Divide)*** , ***NUMPAD \* (NUMPAD Multiply)*** , ***NUMPAD - (NUMPAD Subtract)*** , ***NUMPAD + (NUMPAD Add)*** , ***NUMPAD . (NUMPAD Period)*** , ***NUMPAD , (NUMPAD Comma)*** , ***NUMPAD Enter*** , ***NUMPAD = (NUMPAD Equals)*** , ***NUMPAD { (NUMPAD Left Parenthesis)*** , ***NUMPAD } (NUMPAD Right Parenthesis)*** , ***DPAD Up*** , ***DPAD Down*** , ***DPAD Left*** , ***DPAD Right*** , ***DPAD Center*** , ***Move Home*** , ***Move End*** , ***Page Up*** , ***Page Down*** , ***Insert*** , ***Forward Delete*** , ***Clear*** , ***Lamp*** , ***Do Nothing*** , ***Blue*** , ***Orange*** , ***Grey*** , ***Diamond*** , ***Alt*** , ***Control*** , ***Shift*** , ***Keyboard*** , ***Touch Calibrate*** , ***Scan*** , ***Search Key*** , ***None*** , ***KeyLight*** , ***Keylight Up*** , ***Keylight Down*** , ***Left Shift*** , ***Right Shift*** , ***Left Alt*** , ***Right Alt*** , ***Left Control*** , ***Right Control*** , ***Meta Left*** , ***Meta Right*** , ***Caps Lock*** , ***Num Lock*** , ***Scroll Lock*** , ***SysRq*** , ***Break*** , ***Function*** , ***Back*** , ***Forward*** , ***Home*** , ***Menu*** , ***Settings*** , ***Application Switch*** , ***Calculator*** , ***Explorer*** , ***Envelope*** , ***Bookmark*** , ***Music*** , ***Call*** , ***End Call*** , ***Microphone Mute*** , ***Camera*** , ***Search*** , ***Contacts*** , ***Calendar*** , ***Volume Up*** , ***Volume Down*** , ***Volume Mute*** , ***Brightness Up*** , ***Brightness Down*** , ***Power*** , ***Sleep*** , ***Wakeup*** , ***Headset*** , ***Push-to-talk*** , ***Camera Focus*** , ***Media Play/Pause*** , ***Media Stop*** , ***Media Next*** , ***Media Previous*** , ***Media Rewind*** , ***Media Fast-Forward*** , ***Media Play*** , ***Media Pause*** , ***Media Close*** , ***Media Eject*** , ***Media Record*** , ***Button L1*** , ***Button R1*** , ***Button L2*** , ***Button R2*** , ***Button A*** , ***Button B*** , ***Button C*** , ***Button X*** , ***Button Y*** , ***Button Z*** , ***Left Thumb Button*** , ***Right Thumb Button*** , ***Start Button*** , ***Select Button*** , ***Mode Button*** , ***Gamepad Button 1*** , ***Gamepad Button 2*** , ***Gamepad Button 3*** , ***Gamepad Button 4*** , ***Gamepad Button 5*** , ***Gamepad Button 6*** , ***Gamepad Button 7*** , ***Gamepad Button 8*** , ***Gamepad Button 9*** , ***Gamepad Button 10*** , ***Gamepad Button 11*** , ***Gamepad Button 12*** , ***Gamepad Button 13*** , ***Gamepad Button 14*** , ***Gamepad Button 15*** , ***Gamepad Button 16*** , ***Zenkaku/Hankaku*** , ***Eisu*** , ***Muhenkan*** , ***Henkan*** , ***Katakana/Hiragana*** , ***Ro*** , ***Yen*** , ***Kana*** , ***Keyboard*** 
+- Choices = ***0*** , ***1*** , ***2*** , ***3*** , ***4*** , ***5*** , ***6*** , ***7*** , ***8*** , ***9*** , ***+ (Plus)*** , ***- (Minus)*** , ***= (Equals)*** , ***( (Left Bracket)*** , ***) (Right Bracket)*** , ***` (Grave)*** , ***/ (Slash)*** , ***\\\\ (Backslash)*** , ***; (Semicolon)*** , ***' (Apostrophe)*** , ***, (Comma)*** , ***. (Period)*** , ***\* (Star)*** , ***# (Pound)*** , ***@ (At)*** , ***A*** , ***B*** , ***C*** , ***D*** , ***E*** , ***F*** , ***G*** , ***H*** , ***I*** , ***J*** , ***K*** , ***L*** , ***M*** , ***N*** , ***O*** , ***P*** , ***Q*** , ***R*** , ***S*** , ***T*** , ***U*** , ***V*** , ***W*** , ***X*** , ***Y*** , ***Z*** , ***Enter*** , ***Tab*** , ***Space*** , ***Escape*** , ***Delete*** , ***F1*** , ***F2*** , ***F3*** , ***F4*** , ***F5*** , ***F6*** , ***F7*** , ***F8*** , ***F9*** , ***F10*** , ***F11*** , ***F12*** , ***NUMPAD 0*** , ***NUMPAD 1*** , ***NUMPAD 2*** , ***NUMPAD 3*** , ***NUMPAD 4*** , ***NUMPAD 5*** , ***NUMPAD 6*** , ***NUMPAD 7*** , ***NUMPAD 8*** , ***NUMPAD 9*** , ***NUMPAD / (NUMPAD Divide)*** , ***NUMPAD \* (NUMPAD Multiply)*** , ***NUMPAD - (NUMPAD Subtract)*** , ***NUMPAD + (NUMPAD Add)*** , ***NUMPAD . (NUMPAD Period)*** , ***NUMPAD , (NUMPAD Comma)*** , ***NUMPAD Enter*** , ***NUMPAD = (NUMPAD Equals)*** , ***NUMPAD { (NUMPAD Left Parenthesis)*** , ***NUMPAD } (NUMPAD Right Parenthesis)*** , ***DPAD Up*** , ***DPAD Down*** , ***DPAD Left*** , ***DPAD Right*** , ***DPAD Center*** , ***Move Home*** , ***Move End*** , ***Page Up*** , ***Page Down*** , ***Insert*** , ***Forward Delete*** , ***Clear*** , ***Lamp*** , ***Do Nothing*** , ***Blue*** , ***Orange*** , ***Grey*** , ***Diamond*** , ***Alt*** , ***Control*** , ***Shift*** , ***Keyboard*** , ***Touch Calibrate*** , ***Scan*** , ***Search Key*** , ***None*** , ***KeyLight*** , ***Keylight Up*** , ***Keylight Down*** , ***Left Shift*** , ***Right Shift*** , ***Left Alt*** , ***Right Alt*** , ***Left Control*** , ***Right Control*** , ***Meta Left*** , ***Meta Right*** , ***Caps Lock*** , ***Num Lock*** , ***Scroll Lock*** , ***SysRq*** , ***Break*** , ***Function*** , ***Back*** , ***Forward*** , ***Home*** , ***Menu*** , ***Settings*** , ***Application Switch*** , ***Calculator*** , ***Explorer*** , ***Envelope*** , ***Bookmark*** , ***Music*** , ***Call*** , ***End Call*** , ***Microphone Mute*** , ***Camera*** , ***Search*** , ***Contacts*** , ***Calendar*** , ***Volume Up*** , ***Volume Down*** , ***Volume Mute*** , ***Brightness Up*** , ***Brightness Down*** , ***Power*** , ***Sleep*** , ***Wakeup*** , ***Headset*** , ***Push-to-talk*** , ***Camera Focus*** , ***Media Play/Pause*** , ***Media Stop*** , ***Media Next*** , ***Media Previous*** , ***Media Rewind*** , ***Media Fast-Forward*** , ***Media Play*** , ***Media Pause*** , ***Media Close*** , ***Media Eject*** , ***Media Record*** , ***Button L1*** , ***Button R1*** , ***Button L2*** , ***Button R2*** , ***Button A*** , ***Button B*** , ***Button C*** , ***Button X*** , ***Button Y*** , ***Button Z*** , ***Left Thumb Button*** , ***Right Thumb Button*** , ***Start Button*** , ***Select Button*** , ***Mode Button*** , ***Gamepad Button 1*** , ***Gamepad Button 2*** , ***Gamepad Button 3*** , ***Gamepad Button 4*** , ***Gamepad Button 5*** , ***Gamepad Button 6*** , ***Gamepad Button 7*** , ***Gamepad Button 8*** , ***Gamepad Button 9*** , ***Gamepad Button 10*** , ***Gamepad Button 11*** , ***Gamepad Button 12*** , ***Gamepad Button 13*** , ***Gamepad Button 14*** , ***Gamepad Button 15*** , ***Gamepad Button 16*** , ***Zenkaku/Hankaku*** , ***Eisu*** , ***Muhenkan*** , ***Henkan*** , ***Katakana/Hiragana*** , ***Ro*** , ***Yen*** , ***Kana*** , ***Keyboard*** 
 
 
 **Support Information:** 

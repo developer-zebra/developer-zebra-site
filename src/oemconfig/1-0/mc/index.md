@@ -24,32 +24,39 @@ Before attempting to configure a Transaction, it's important to understand the c
 
 **Array -** a collection of steps, each of which can include no more than one instance of a given MC. 
 
-**Define -** used when referring to the definition (in the OemConfig schema) that determines what the administrator is allowed to do, not what they elect to do. For example “Within a step, some MCs are defined directly but most are organized into Managed Configuration Groups.”
+**Define -** used when referring to the definition that determines what the administrator is *permitted* to do by the OemConfig schema (not what they elect to do). For example “Within a step, some MCs are defined directly but most are organized into Managed Configuration Groups.”
 
-**Group -** any collection of two or more MC Actions or device-configuration settings. An instance of a particular Group can appear in a given step no more than one time.
+**Group -** any collection of two or more MC Actions or device configuration settings. An instance of a particular Group can appear in a given step no more than one time.
 
-**Instance -** an occurrence or use of something. It can refer to electing to include a group or sub-group or electing to include a sub-group as an element of an array.
+**Instance -** an occurrence or use of something (`such as a Configuration Group...?`). An Instance can refer to electing to include a group or sub-group `include it in what?` or electing to include a sub-group as an element of an array.
 
 **Include -** used when referring to the insertion of an instance. For example “Each instance of a step included within a Transaction can include any number of groups.”
 
+**Managed Configuration Group -** one or more Actions or configuration settings that when sent to a device cause the device to behave or be configured in a certain way.  
+
+**Step -**(`capitalize in context?`) a single component of a Transaction. 
+
+**Sub-array -** one or more instances of a SINGLE sub-group, each “instance” of which can contain anything that sub-group is defined to allow. 
+
+**Sub-group -** an individual Action or setting that's part of a group. For example, configuring a device to "play a sound when plugged into AC power" is a sub-group of the Audio Configuration group.
+
 **Transaction -** an ordered list of Steps for defining one or more Actions to be performed or settings to be configured on a Zebra device 
 
+
+`FROM ALLAN:`
 I alternated talking about what was “defined” at a given level, followed by talking about what could be “included” within an instance at that level.
+
 I didn’t think I needed to go any deeper since the explanation of a sub-group or sub-array is the same whether that sub-group or sub-array is within a group or within any sub-group at any level.
 
-Group
-Sub-group
-Array
-Sub-array
-Transaction
-Step
+The notion of “arrays” was difficult to explain, but I tried my best. 
 
+The trickiest thing to capture is that a sub-array is one or more instances of a SINGLE sub-group, and each “instance” of that sub-group can contain anything that sub-group is defined to allow. 
 
-The notion of “arrays” was difficult to explain, but I tried my best. The trickiest thing to capture is that a sub-array is one or more instances of a SINGLE sub-group, and each “instance” of that sub-group can contain anything that sub-group is defined to allow. That was the key thing that lead me to do this write-up, because the simple statement that you had that “Any number of MCs can be included in a single step, but any given MC may be used exactly once in any individual Step” was not really correct. An MC does NOT have to be used “exactly once” – it can be used “at most once” since not being used at all is allowed. 
+That was the key thing that lead me to do this write-up, because the simple statement that you had that “Any number of MCs can be included in a single step, but any given MC may be used exactly once in any individual Step” was not really correct. An MC does NOT have to be used “exactly once” – it can be used “at most once” since not being used at all is allowed. 
 
-Further, since a step can contain a sub-array, the SAME MC can appear in EACH instance that is added to that sub-array, hence the same MC can actually appear MANY times within the same step. Without explaining the nature of arrays, it is impossible to make an accurate statement about when the same MC can and cannot appear more than once. 
+Further, `since a step can contain a sub-array, the SAME MC can appear in EACH instance that is added to that sub-array, hence the same MC can actually appear MANY times within the same step` `<<<where should this explanation be placed?`. Without explaining the nature of arrays, it is impossible to make an accurate statement about when the same MC can and cannot appear more than once. 
 
-The basic rule is that within any group or sub-group an MC defined within that sub-group can be included zero times or one time. Since a sub-array allows a sub-group to appear more than once within a group or sub-group, it allows the same MC to appear once within each such sub-group. It is exactly this nature of arrays that allows each step instance in the transaction to use a given MC or group zero or ones times.
+The basic rule is that within any group or sub-group, an MC defined within that sub-group can be included zero times or one time. Since a sub-array allows a sub-group to appear more than once within a group or sub-group, it allows the same MC to appear once within each such sub-group. It is exactly this nature of arrays that allows each step instance in the transaction to use a given MC or group zero or ones times.
 
 
 #### A Transaction can include: 
@@ -60,7 +67,7 @@ The basic rule is that within any group or sub-group an MC defined within that s
 
 ### Transaction Steps
 
-A *Transaction* is a sequence of one or more *Transaction Steps*. A single *Transaction* may include any number of steps, where each step performs one or more Actions or configuration settings on a device. Step instances will be executed in the order they are included within the *Transaction*.
+A *Transaction* is a sequence of one or more *Transaction Steps*. A single *Transaction* may include any number of steps, with each step performing one or more Actions or configuration settings on a device. Step instances will be executed in the order they are included within the *Transaction*.
 
 
 Within a step, some MCs are defined directly but most are organized into *Managed Configuration Groups*. MCs defined under a given group relate to some common aspect of device behavior. For example, MCs defined under the **Audio Configuration** group affect the audible sounds produced by a device.
@@ -86,6 +93,8 @@ Within a sub-array, a single sub-group is defined within which MCs may be define
 
 Each instance of a sub-array can include any number of instances of the sub-group defined for that sub-array. Each instance of the sub-group included in a sub-array may include any number of the MCs, sub-groups, or sub-arrays that are defined for that sub-group of that sub-array, but at most one instance of any given MC, sub-group, or sub-array included within a given sub-group instance within a sub-array.
 
+`WE MUST INSERT A HORIZ. RULE WHERE THE TRANSACTION GROUP BEGINS`
+
 
 **Detail Information:** 
 
@@ -94,7 +103,8 @@ Each instance of a sub-array can include any number of instances of the sub-grou
 - Type = bundle_array 
 
 
-`BEGIN REPLACED PART (replaced with Allal oemconfig #4)
+## BEGIN REPLACED PART (replaced with Allan oemconfig #4)
+
 -----
 ## Transaction Overview
 
@@ -114,7 +124,7 @@ A *Transaction* is a sequence of one or more *Transaction Steps*. A single *Tran
 Within a step, somes MCs are defined directly but most are organized into *Managed Configuration Groups*. MCs defined under a given group relate to some common aspect of device behavior. For example, MCs defined under the **Audio Configuration** group affect the audible sounds produced by a device.
 
 
-Each instance of a step included within a *Transaction* can include any number of groups, but at most one instance of any given group may be used within a given step instance. To include a group more than once within a *Transaction*, each instance of the group must be included in a separate step within the *Transaction*.
+Each `instance of a` step `included with`in a *Transaction* can include any number of groups, but at most one instance of any given group may be used within a given step instance. To include a group more than once within a *Transaction*, each instance of the group must be included in a separate step within the *Transaction*.
 
 
 Within a group, MCs may be defined directly or may be organized into sub-groups or sub-arrays under that group. If a single step includes multiple groups, the order of execution of those groups within that step cannot be controlled. To control the order of execution amomgst groups, the groups must be included in separate steps within the *Transaction*. This allows the order of exection of the groups to be controlled by the order of execution of the steps in which the groups are included.
@@ -212,7 +222,14 @@ By default, execution will continue with the next *Transaction Step* once execut
 
 - Type = string 
 
+`OLD WAY:`
+ 
 <table border="1"><tr><th><small>UI Choice</small></th><th><small>JSON Value</small></th></tr><tr><td><b><i><small>Stop</small></i></b></td><td><small>Stop</small></td></tr><tr><td><b><i><small>Continue</small></i></b></td><td><small>Continue</small></td></tr></table> 
+
+`NEW WAY:`
+
+<table border="1 "><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr><tr align="center"><td><b><i><small>&nbsp;Stop&nbsp;</small></i></b></td><td><small>&nbsp;Stop&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Continue&nbsp;</small></i></b></td><td><small>&nbsp;Continue&nbsp;</small></td></tr></table>
+
 
 
 ## Analytics Configuration

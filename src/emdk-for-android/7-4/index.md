@@ -36,7 +36,7 @@ menu:
     - title: APIs
       url: /emdk-for-android/7-4/apimenu
     - icon: fa fa-comments-o
-      url: https://developer-dev.savanna.zebra.com/community/tools/emdk
+      url: https://developer.zebra.com/forum/search?keys=&field_zebra_curated_tags_tid%5B%5D=184 
     - icon: fa fa-search
       url: /emdk-for-android/7-4/search
 ---

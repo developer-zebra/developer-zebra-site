@@ -36,7 +36,7 @@ Administrators can grant or restrict access to individual features or hide the s
 
 > **Note: After selecting "Always," some devices require a 10-second pause before restarting to ensure the change remains persistent**. 
 
-Ready to get started? [Download Enterprise Home Screen 3.0](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
+Ready to get started? [Download Enterprise Home Screen 3.1](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
 
 -----
 
@@ -256,7 +256,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 ***Applies to devices running Android 8.x Oreo and higher***.
 
 * **SSID and BSSID information do not appear in the "Wireless Info" or "[Battery and Wi-Fi Quick View](../setup/#batteryandwifiquickview)" screens** on Oreo devices if Location services (Settings -> Security & Location -> Location) are turned off. 
-* **If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo** from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.0 is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Prior configuration settings, if any, are re-applied automatically**.
+* **If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo** from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.1 is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Prior configuration settings, if any, are re-applied automatically**.
 * EHS can **<u>NOT</u>** launch links that reference local files though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and newer).
 
 
@@ -265,7 +265,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 ### Android Nougat Notes
 **_Applies to devices running Android Nougat 7.x and higher_**:
 
-* **Disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. This occurs on some devices running Android N if the device is rebooted from the lock screen. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
+* **Disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. This occurs on some devices running Android N (and higher) if the device is rebooted from the lock screen. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
 * **Applies to EHS 2.8 and older only**: To enable Secure Mode in EHS, manual file-push is no longer supported in Android N for installing a device root certificate. To deploy cert files to the device, use Certificate Manager through [StageNow](../../../../stagenow) or [EMDK](../../../../emdk-for-android). 
 * **When referencing a file stored on a removable SD Card in a device running Android N**, references to that card must include its symbolic link rather than its direct path. For example, while the file path on pre-M devices might be visible as `/storage/sdcard1/image.png`, the same path on M and N devices might appear in the file browser something like `/storage/0097-B7BA/image.png`. The symbolic link (which in this case is "0097-B7BA") is **<u>unique to the device</u>**. Therefore, **Zebra recommends avoiding the use of removable storage in mass-deployment scenarios**. 
 * **[Airplane Option Disabled](../settings#airplaneoptiondisabled) feature cannot be controlled through EHS on devices running Android M or N**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.

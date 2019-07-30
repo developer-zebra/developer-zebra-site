@@ -293,7 +293,7 @@ EHS 3.0 now supports these devices **running Android 8.1 Oreo**
 ### Android Nougat Notes
 **_Applies to devices running Android Nougat 7.x and higher_**:
 
-* **Disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. This occurs on some devices running Android N if the device is rebooted from the lock screen. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
+* **Disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. This occurs on some devices running Android N (and higher) if the device is rebooted from the lock screen. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
 
 <!-- 
 ABOVE NOTE REPLICATED ON SETTINGS PAGE 

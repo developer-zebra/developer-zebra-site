@@ -19,12 +19,12 @@ parm:
       devicetype: A
       name: Enable
       mx: "9.1"
-      description: Enables device wake-up when it detects a signal from hardware. 
+      description: Enables device wake-up when a hardware signal is detected. 
     - code: 2
       devicetype: A
       name: Disable
       mx: "9.1"
-      description: Enables device wake-up when it detects a signal from a programmable keycode. 
+      description: Enables device wake-up when a programmable keycode signal is detected. 
 ---
 
-Allows the selection of the device wake-up method. 
+Allows the selection of the device wake-up method.

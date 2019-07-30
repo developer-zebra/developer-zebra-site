@@ -69,23 +69,36 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 
 ## New in v7.4 
 
-#### Nougat Support Ends
+### Nougat Support Ends
 **EMDK-A 7.4 and higher no longer targets devices running Android 7.x Nougat or older, including the WT6000 wearable computer**. To target the WT6000 (which currently supports up to Nougat), please use [EMDK-A 7.3](../../../7-3/guide/about).   
 
-#### FAQ Page
+### FAQ Page
 EMDK-A 7.3 and 7.4 now present a page of [frequently asked questions](../../faq) submitted to Zebra customer- and partner-support departments. Answers are provided as a mixture of simple guidance, links to relevant guides and/or sample code. Access the page through the "FAQs" tab at the top of any EMDK-A guide page or from the "FAQs" button in the EMDK-A tile on the [TechDocs main page](../../../../). 
 
-#### IrDA API
+### IrDA API
 **EMDK-A 7.3 (and later) now contains [IrDA APIs](../../intents/irda)**, intent-based interfaces for controlling hardware that conforms to the Infrared Data Association (IrDA) specification** commonly found in mobile computers, printers, handheld remote controls and some medical devices. 
 
-#### SmartCradle API
+### SmartCradle API
 **EMDK-A 7.4 introduces [Locking SmartCradle APIs](../../intents/cradle)** for the EC30, intent-based interfaces for controlling the secure charging station of Zebra's latest small form-factor mobile computing device. 
 
-#### EC30 Programmer's Guide
+### EC30 Programmer's Guide
 The EC30 Enterprise Companion is Zebra's ultra-compact, fully functional mobile computing device capable of executing TC-series apps out-of-the box. But its small screen might require app changes to ensure a pleasant user experience. The [EC30 Programmer's Guide](../ec30_programming) describes how. 
 
-#### NFC Sample App
+### NFC Sample App
 **An [NFC SAM sample app](../../samples/sam)** demonstrates usage of the NFC Secure Access Module, which allows secure communication with NFC tags from NFC-equipped Zebra devices. 
+
+### New Features
+* **Now supports MX 9.1**, which adds the following features and enhancements:
+* **Enhanced [UI Manager](../mx/uimgr)** now allows an admin to:
+ * Control whether password characters are displayed briefly on the screen as they're entered (otherwise masked at all times)
+* **Enhanced [App Manager](../mx/appmgr)** now allows an admin to:
+ * Erases all data created by an app specified in the Package parameter
+* **Enhanced [GMS Manager](../mx/gmsmgr)** now allows an admin to:
+ * Select and enable a subset of GMS apps and services to run on a device (i.e. Chrome browser, Google Maps, Firebase Cloud messaging)
+* **Enhanced [Power Manager](../mx/powermgr)** now allows an admin to:
+ * Select hardware signals as the device wake-up method
+ * Select mappable keycodes as the device wake-up method 
+
 
 ### API Enhancements
 

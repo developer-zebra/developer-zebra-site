@@ -6,13 +6,13 @@ productversion: '9.1'
 menu:
   items:
     - title: About
-      url: /oemconfig/1-0/about
+      url: /oemconfig/9-1/about
     - title: FAQs
-      url: /oemconfig/1-0/faq
+      url: /oemconfig/9-1/faq
     - title: Managed Configurations
-      url: /oemconfig/1-0/mc
+      url: /oemconfig/9-1/mc
     - icon: fa fa-search
-      url: /oemconfig/1-0/search
+      url: /oemconfig/9-1/search
 ---
 <!-- 
 ## Transaction Overview

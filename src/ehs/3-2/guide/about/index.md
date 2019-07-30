@@ -61,6 +61,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
+<tr >
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">CC600/CC6000</font></p>
 </td>
@@ -73,6 +74,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
+<tr >
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">EC30</font></p>
 </td>
@@ -85,6 +87,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
+<tr >
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">ET51/ET56</font></p>
 </td>
@@ -97,10 +100,10 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
+<tr >
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">L10</font></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
@@ -117,7 +120,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
 
@@ -125,7 +128,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 150.35pt;"  width="250">
 <p class="MsoNormal"><font color="#333399" size="3">MC9300</font></p>
 </td>
-
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
@@ -139,7 +141,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">PS20</font></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
@@ -152,12 +153,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC20, TC25</font></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
 
@@ -165,7 +165,18 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC51, TC56</font></p>
 </td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
 
+<tr>
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC52</font></p>
+</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
@@ -176,9 +187,20 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC52, TC57</font></p>
+<p class="MsoNormal"><font color="#333399" size="3">TC57</font></p>
 </td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
+</td>
+</tr>
 
+<tr>
+<td style="width: 118.35pt;" width="158">
+<p class="MsoNormal"><font color="#333399" size="3">TC72</font></p>
+</td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
@@ -189,27 +211,24 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal"><font color="#333399" size="3">TC72, TC77</font></p>
-</td>
-
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
+<p class="MsoNormal"><font color="#333399" size="3">TC77</font></p>
 </td>
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
+</td>
+<td style="width: 96px;" >
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
-
 
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC70x</font></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
 
@@ -217,12 +236,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;" width="158">
 <p class="MsoNormal"><font color="#333399" size="3">TC75x</font></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
 
@@ -230,12 +248,11 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">VC80x</font></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
 <td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
+<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
 </td>
 </tr>
 
@@ -243,7 +260,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 150.35pt;"  width="250">
 <p class="MsoNormal"><font color="#333399" size="3">TC8300</font></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
@@ -255,7 +271,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 <td style="width: 118.35pt;"  width="158">
 <p class="MsoNormal"><font color="#333399" size="3">VC8300</font></p>
 </td>
-
 <td style="width: 96px;" >
 <p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
 </td>
@@ -264,18 +279,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 </td>
 </tr>
 
-<tr >
-<td style="width: 118.35pt;"  width="158">
-<p class="MsoNormal"><font color="#333399" size="3">WT6000</font></p>
-</td>
-
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">&nbsp;</font></b></p>
-</td>
-<td style="width: 96px;" >
-<p class="MsoNormal" align="center"><b><font color="#333399" size="4">√</font></b></p>
-</td>
-</tr>
 </tbody>
 </table>
 
@@ -284,19 +287,9 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 ## New in EHS 3.2
 
 * **Now supports <u>ONLY</u> Android 8.x (Oreo) and Android 9.x (Pie)**.
-
 * **EHS 3.2 download package contains a single .apk file** compatible with all supported devices running Oreo and Pie. 
-
-Newly added device support in this release: EC30 Oreo, ET51 Oreo, ET56 Oreo, L10 Oreo, VC8300 Oreo,
-PS20 Pie, TC52 Pie, TC72 Pie
-
-
-Bypass user confirmation dialog when adding Pinned shortcuts:
-When a Pinned shortcut is added to the home screen, prior versions of EHS presented a dialog to confirm the
-request with no way to bypass. EHS 3.2 provides a configurable option to bypass this confirmation dialog. This
-would be useful when the Pinned shortcut creation is automated using applications such as Enterprise Browser.
-By default, bypass UI confirmation is disabled. For more information about the feature, visit the TechDocs
-webpage.
+* **Bypass user confirmation dialog when adding Pinned shortcuts** is a configurable option designed to aid automated shortcut creation by suppressing the dialog that appears when a shortcut is added. Disabled by default. 
+* **EHS can now launch links that reference local files** though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later) if files reside on external storage (i.e. SD card).
 
 -----
 
@@ -306,16 +299,7 @@ webpage.
 
 * **Support for Install Shortcuts is dropped**. This feature was coupled with Android Nougat, and is no longer supported with the termination of Nougat support. As an alternative, **Zebra recommends the use of Pinned Shortcuts**, which are supported in devices running Android Oreo and higher.
 
-* **Support ends for the following devices running Nougat**:
- * MC33
- * TC20
- * TC25
- * TC51
- * TC56
- * TC70x
- * TC75x
- * VC80x
- * WT6000
+* **Support ends for the following devices running Nougat**: MC33, TC20, TC25, TC51, TC56, TC70x, TC75x, VC80x, WT6000
 
 -----
 
@@ -324,7 +308,7 @@ webpage.
 
 * **SSID and BSSID information do not appear in the "Wireless Info" or "[Battery and Wi-Fi Quick View](../setup/#batteryandwifiquickview)" screens** on Oreo devices if Location services (Settings -> Security & Location -> Location) are turned off. 
 * **If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo** from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before the new version of EHS is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Prior configuration settings, if any, are re-applied automatically**.
-* EHS can **<u>NOT</u>** launch links that reference local files though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and newer).
+* EHS **<u>CAN</u>** now launch links that reference local files though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later).
 
 ------
 

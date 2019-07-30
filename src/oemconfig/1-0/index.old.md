@@ -5,7 +5,7 @@ insert:
 layout: guide.html
 redirect_url: /oemconfig/1-0/about
 product: OEMConfig
-productversion: '1.0'
+productversion: '9.1'
 menu:
   items:
     - title: About

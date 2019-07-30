@@ -193,7 +193,9 @@ These instructions apply to remote installation of EHS, an `enterprisehomescreen
 
 &#52;. <b>Set Enterprise Home Screen as the default</b> home application on the device.  
 
-&#53;. <b>Reboot the device</b> to complete the installation. This is a <b>required step</b>. 
+&#53;. Set a delay of 10 seconds before rebooting device to ensure the change remains persistent.
+
+&#54;. <b>Reboot the device</b> to complete the installation. This is a <b>required step</b>. 
 
 > **Note: After selecting "Always," wait 10 seconds before restarting to ensure the change remains persistent.**. 
 

@@ -4,7 +4,7 @@ img: ehs-logo.png
 layout: redirect.html
 redirect_url: /ehs/3-2/guide/about
 menu:
-  title: Enterprise Home Screen 3.1
+  title: Enterprise Home Screen 3.2
   img: /ehs/ehs-logo.png
   languages:
     - lang: cn,

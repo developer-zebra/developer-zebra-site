@@ -16,7 +16,7 @@ EHS works by inserting itself in place of the stock Android app launcher and hom
 * US English
 * Simplified Chinese
 
-**[What's New in EHS 3.1](#newinehs31)**
+**[What's New in EHS 3.2](#newinehs32)**
 
 ------
 
@@ -36,7 +36,7 @@ Administrators can grant or restrict access to individual features or hide the s
 
 > **Note: After selecting "Always," wait 10 seconds before restarting to ensure the change remains persistent.**. 
 
-Ready to get started? [Download Enterprise Home Screen 3.1](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
+Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
 
 -----
 
@@ -237,18 +237,31 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 -----
 
-## New in EHS 3.1
+## New in EHS 3.2
 
-* **Now supports <u>ONLY</u> Android 8.x (Oreo) and Android 7.x (Nougat)**.
-* **New [Lockout Recovery mode](../settings/#lockoutrecovery)** allows an admin to quickly return a device to service that is locked after exceeding the maximum number of unsuccessful admin login attempts and to set the period of time (in minutes) the device must be locked before Lockout Recovery is possible. 
-* **Now supports Android [Multi-user mode](../features/#multiusermode)**, which allows administrators to create Primary and Secondary device users, any of which can share a single EHS global configuration. **Applies to devices running Android 8.1.0 and higher only**.
-* Compatible with **[GMS Restricted Mode](../features/#gmsrestrictedmode) -** an optional state on Zebra devices that disables GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device based on administrator preferences. See the [Special Features section](../features/#gmsrestrictedmode) for important information about related EHS behaviors. 
+* **Now supports <u>ONLY</u> Android 8.x (Oreo) and Android 9.x (Pie)**.
+
+FROM RELEASE NOTES: 
+
+Support for Install Shortcuts feature has been terminated - With Android Nougat support termination, EHS
+feature Install Shortcuts has also been terminated beginning with EHS 3.2. The use of Pinned Shortcuts is the
+recommended alternative and will continue to be supported in devices running Android Oreo and above.
+
+EHS 3.2 download package contains a single .apk file only – With Android Nougat support termination, EHS
+3.2 download package in Zebra Support Portal has only one .apk file. It supports all Android Oreo and higher
+devices.
+
+Newly added device support in this release: EC30 Oreo, ET51 Oreo, ET56 Oreo, L10 Oreo, VC8300 Oreo,
+PS20 Pie, TC52 Pie, TC72 Pie
+
+Device support dropped with this release: MC33 Nougat, TC20 Nougat, TC25 Nougat, TC51 Nougat, TC56
+Nougat, TC70x Nougat, TC75x Nougat, VC80x Nougat, WT6000 Nougat
 
 -----
 
 ### End of Support
 
-* **Support for Android 6.x Marshmallow is dropped**. Use [EHS 3.0](/ehs/3-0/guide/about) if Marshmallow support is required. 
+* **Support for Android 7.x Nougat is dropped**. Use [EHS 3.1](/ehs/3-1/guide/about) if Nougat support is required. 
 
 -----
 
@@ -256,21 +269,8 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 ***Applies to devices running Android 8.x Oreo and higher***.
 
 * **SSID and BSSID information do not appear in the "Wireless Info" or "[Battery and Wi-Fi Quick View](../setup/#batteryandwifiquickview)" screens** on Oreo devices if Location services (Settings -> Security & Location -> Location) are turned off. 
-* **If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo** from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.1 is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Prior configuration settings, if any, are re-applied automatically**.
+* **If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo** from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before the new version of EHS is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Prior configuration settings, if any, are re-applied automatically**.
 * EHS can **<u>NOT</u>** launch links that reference local files though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and newer).
-
-
------
-
-### Android Nougat Notes
-**_Applies to devices running Android Nougat 7.x and higher_**:
-
-* **Disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. This occurs on some devices running Android N (and higher) if the device is rebooted from the lock screen. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
-* **When referencing a file stored on a removable SD Card in a device running Android N (and higher)**, references to that card must include its symbolic link rather than its direct path. For example, while the file path on pre-M devices might be visible as `/storage/sdcard1/image.png`, the same path on M and N devices might appear in the file browser something like `/storage/0097-B7BA/image.png`. The symbolic link (which in this case is "0097-B7BA") is **<u>unique to the device</u>**. Therefore, **Zebra recommends avoiding the use of removable storage in mass-deployment scenarios**. 
-* **[Airplane Option Disabled](../settings#airplaneoptiondisabled) feature cannot be controlled through EHS on devices running Android N**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
-* **Some devices retain the "Recent Apps" list after device reboot**, posing a potential security risk. EHS disables the Recent Apps button on <u>Nougat (and higher) devices</u> to help address this risk. For all devices, the list can be cleared using [App Manager](/mx/appmgr) through Zebra EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Special Features section. 
-* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, an Android feature that works in a similar way.
-* **[Screen orientation](../settings#orientation) can be changed through the Quick Settings panel on devices** <u>only</u> when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 
 ------
 
@@ -289,6 +289,42 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 -->
 
 ## Version History
+
+### Added in EHS 3.1
+
+* **Now supports <u>ONLY</u> Android 8.x (Oreo) and Android 7.x (Nougat)**.
+* **New [Lockout Recovery mode](../settings/#lockoutrecovery)** allows an admin to quickly return a device to service that is locked after exceeding the maximum number of unsuccessful admin login attempts and to set the period of time (in minutes) the device must be locked before Lockout Recovery is possible. 
+* **Now supports Android [Multi-user mode](../features/#multiusermode)**, which allows administrators to create Primary and Secondary device users, any of which can share a single EHS global configuration. **Applies to devices running Android 8.1.0 and higher only**.
+* Compatible with **[GMS Restricted Mode](../features/#gmsrestrictedmode) -** an optional state on Zebra devices that disables GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device based on administrator preferences. See the [Special Features section](../features/#gmsrestrictedmode) for important information about related EHS behaviors. 
+
+-----
+
+#### End of Support
+
+* **Support for Android 6.x Marshmallow is dropped**. Use [EHS 3.0](/ehs/3-0/guide/about) if Marshmallow support is required. 
+
+-----
+
+#### Android Oreo Notes
+***Applies to devices running Android 8.x Oreo and higher***.
+
+* **SSID and BSSID information do not appear in the "Wireless Info" or "[Battery and Wi-Fi Quick View](../setup/#batteryandwifiquickview)" screens** on Oreo devices if Location services (Settings -> Security & Location -> Location) are turned off. 
+* **If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo** from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.1 is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Prior configuration settings, if any, are re-applied automatically**.
+* EHS can **<u>NOT</u>** launch links that reference local files though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and newer).
+
+
+-----
+
+#### Android Nougat Notes
+**_Applies to devices running Android Nougat 7.x and higher_**:
+
+* **Disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. This occurs on some devices running Android N (and higher) if the device is rebooted from the lock screen. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
+* **When referencing a file stored on a removable SD Card in a device running Android N (and higher)**, references to that card must include its symbolic link rather than its direct path. For example, while the file path on pre-M devices might be visible as `/storage/sdcard1/image.png`, the same path on M and N devices might appear in the file browser something like `/storage/0097-B7BA/image.png`. The symbolic link (which in this case is "0097-B7BA") is **<u>unique to the device</u>**. Therefore, **Zebra recommends avoiding the use of removable storage in mass-deployment scenarios**. 
+* **[Airplane Option Disabled](../settings#airplaneoptiondisabled) feature cannot be controlled through EHS on devices running Android N**. For devices on which the "Airplane option disabled" feature appears "grayed out" in the Admin-Mode Preferences panel, it might still be possible to access the feature using the [Power Key Manager](/mx/powerkeymgr) through Zebra EMDK or StageNow tools.
+* **Some devices retain the "Recent Apps" list after device reboot**, posing a potential security risk. EHS disables the Recent Apps button on <u>Nougat (and higher) devices</u> to help address this risk. For all devices, the list can be cleared using [App Manager](/mx/appmgr) through Zebra EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Special Features section. 
+* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, an Android feature that works in a similar way.
+* **[Screen orientation](../settings#orientation) can be changed through the Quick Settings panel on devices** <u>only</u> when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
+
 
 ### Added in EHS 3.0
 

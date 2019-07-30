@@ -31,7 +31,7 @@ menu:
     - icon: fa fa-search
       url: /ehs/3-1/search
 product: Enterprise Home Screen
-productversion: '3.1'
+productversion: '3.2'
 ---
 
 ### Redirecting to the latest Enterprise Home Screen docs...

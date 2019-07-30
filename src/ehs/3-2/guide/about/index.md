@@ -2,7 +2,7 @@
 title: About Enterprise Home Screen
 layout: guide.html
 product: Enterprise Home Screen
-productversion: '3.1'
+productversion: '3.2'
 ---
 
 ## Overview

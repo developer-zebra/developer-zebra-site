@@ -242,7 +242,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **Now supports <u>ONLY</u> Android 8.x (Oreo) and Android 7.x (Nougat)**.
 * **New [Lockout Recovery mode](../settings/#lockoutrecovery)** allows an admin to quickly return a device to service that is locked after exceeding the maximum number of unsuccessful admin login attempts and to set the period of time (in minutes) the device must be locked before Lockout Recovery is possible. 
 * **Now supports Android [Multi-user mode](../features/#multiusermode)**, which allows administrators to create Primary and Secondary device users, any of which can share a single EHS global configuration. **Applies to devices running Android 8.1.0 and higher only**.
-* Compatible with **[GMS Restricted Mode](../features/#gmsrestrictedmode) -** an optional state on Zebra devices that disables all GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device (that are safe to disable). See the [Special Features section](../features/#gmsrestrictedmode) for important information about related EHS behaviors. 
+* Compatible with **[GMS Restricted Mode](../features/#gmsrestrictedmode) -** an optional state on Zebra devices that disables GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device based on administrator preferences. See the [Special Features section](../features/#gmsrestrictedmode) for important information about related EHS behaviors. 
 
 -----
 

@@ -31,7 +31,7 @@ The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing
 ## EC30 Specifications
 
 ### Hardware
-* **Outer dimensions**: `INFO NEEDED` L x W  about 1/2-inch thick
+* **Outer dimensions**: 4.5 x 2.2 x 0.6 inches (114mm x 57mm x14mm) 
 * **Weight**: Less than 4 oz. 
 * **Display size**: 3.0 inches (diagonal) 
 * **Screen dimensions**: 1.5 inches (37 mm) x 2.6 inches (67 mm)
@@ -43,7 +43,7 @@ The EC30 is built on the same platform as Zebra's TC52 and TC57 mobile computing
 * **Sensors**: 3-axis accelerometer, gyroscope, e-compass
 * **Radios**: Bluetooth 5.0, Wi-Fi 802.11 a/b/g/n/ac 
 * **Scanner**: SE2100 1D/2D barcode scanner
-* **Audio**: 3.5-inch audio jack, built-in speaker
+* **Audio**: 3.5mm audio jack, built-in speaker
 * **Mechanical buttons**: HOME, Power, PTT, volume up/down, scan  
 * **Capacitive buttons**: BACK, RECENT 
 * **Programmable buttons**: Scan, PTT, HOME, BACK, RECENT

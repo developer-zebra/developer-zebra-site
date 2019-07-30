@@ -36,7 +36,7 @@ Administrators can grant or restrict access to individual features or hide the s
 
 > **Note: After selecting "Always," wait 10 seconds before restarting to ensure the change remains persistent.**. 
 
-Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html)
+Ready to get started? [Download Enterprise Home Screen](https://www.zebra.com/us/en/support-downloads/software/utilities/enterprise-home-screen.html) now! 
 
 -----
 

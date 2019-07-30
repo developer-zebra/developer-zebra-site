@@ -27,4 +27,4 @@ parm:
       description: Enables device wake-up when it detects a signal from a programmable keycode. 
 ---
 
-Allows the selection of the device wake-up method. This is the On/Off switch for Doze Mode energy saving features on the device. When Doze Mode is enabled, only apps specifically added to the "exemption whitelist" can prevent the device from entering this low-power state. Apps are added to the exemption whitelist using the [App Manager CSP](../appmgr).
+Allows the selection of the device wake-up method. 

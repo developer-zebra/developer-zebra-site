@@ -316,7 +316,7 @@ ABOVE NOTE REPLICATED ON SETTINGS PAGE
 
 * **Some devices retain the "Recent Apps" list after device reboot**, posing a potential security risk. EHS disables the Recent Apps button on <u>Nougat (and higher) devices</u> to help address this risk. For all devices, the list can be cleared using [App Manager](/mx/appmgr) through Zebra EMDK, StageNow or a third-party MDM system. For more information, see [Security Notes](../features#securitynotes) in the Special Features section. 
 
-* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, a feature implemented in Android L and higher that works in a similar way.
+* **[Kiosk Mode](../features#kioskmode) should not be used with Screen Pinning**, an Android feature that works in a similar way.
 
 * **[Screen orientation](../settings#orientation) can be changed through the Quick Settings panel on devices** <u>only</u> when EHS is configured to accept the System orientation setting (the EHS default). If an EHS administrator sets the orientation to landscape or portrait mode, the device user will no longer be able to change the orientation setting.
 

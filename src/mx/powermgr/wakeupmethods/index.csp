@@ -1,0 +1,34 @@
+---
+csp: powermgr
+title: Doze Mode Enable/Disable
+type: parm
+order: 50
+mx: "7.2"
+osx: "7.3"
+devicetype: A,B
+parm:
+  pivotal: Yes
+  name: DozeModeUsage
+  type: list
+  list:
+    - code: 0
+      mx: "7.2"
+      osx: "7.3"
+      devicetype: A,B
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
+    - code: 1
+      devicetype: A,B
+      name: Enable
+      mx: "7.2"
+      osx: "7.3"
+      description: Enables Doze Mode energy saving features on the device. 
+    - code: 2
+      devicetype: A,B
+      name: Disable
+      mx: "7.2"
+      osx: "7.3"
+      description: Disables Doze Mode energy saving features on the device. 
+---
+
+This is the On/Off switch for Doze Mode energy saving features on the device. When Doze Mode is enabled, only apps specifically added to the "exemption whitelist" can prevent the device from entering this low-power state. Apps are added to the exemption whitelist using the [App Manager CSP](../appmgr).

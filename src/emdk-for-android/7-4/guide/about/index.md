@@ -88,11 +88,11 @@ The EC30 Enterprise Companion is Zebra's ultra-compact, fully functional mobile 
 **An [NFC SAM sample app](../../samples/sam)** demonstrates usage of the NFC Secure Access Module, which allows secure communication with NFC tags from NFC-equipped Zebra devices. 
 
 ### New Features
-* **Now supports MX 9.1**, which adds the following features and enhancements:
+**Now supports MX 9.1**, which adds the following features and enhancements:
 * **Enhanced [UI Manager](../../mx/uimgr)** now allows an admin to:
  * Control whether password characters are displayed briefly on the screen as they're entered (otherwise masked at all times)
 * **Enhanced [App Manager](../../mx/appmgr)** now allows an admin to:
- * Erases all data created by an app specified in the Package parameter
+ * Erase all data created by an app specified in the Package parameter
 * **Enhanced [GMS Manager](../../mx/gmsmgr)** now allows an admin to:
  * Select and enable a subset of GMS apps and services to run on a device (i.e. Chrome browser, Google Maps, Firebase Cloud messaging)
 * **Enhanced [Power Manager](../../mx/powermgr)** now allows an admin to:

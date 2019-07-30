@@ -64,8 +64,8 @@ The following software must be installed on the staging workstation prior to usi
 * **Enhanced [GMS Manager](../csp/gmsmgr)** now allows an admin to:
  * Select and enable a subset of GMS apps and services to run on a device (i.e. Chrome browser, Google Maps, Firebase Cloud messaging)
 * **Enhanced [Power Manager](../csp/power)** now allows an admin to:
- * Wake the device using hardware signals
- * Wake the device using programmable software keys 
+ * Select hardware signals as the device wake-up method
+ * Select mappable keycodes as the device wake-up method 
 
 -----
 

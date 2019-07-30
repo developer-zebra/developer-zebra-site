@@ -27,6 +27,7 @@ Selecting "Always" locks EHS in as the default home app and **locks users out of
 
 * USB debugging
 * Access to the file system
+* Access to the Search app
 * Keyguard-screen camera and search functions
 * Full access to the System Settings panel
 * Recent apps button

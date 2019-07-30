@@ -113,6 +113,7 @@ In User Mode, the following features are disabled by default:
 
 * USB debugging
 * Access to the file system
+* Access to the Search app
 * Keyguard-screen camera and search functions
 * Full access to the System Settings panel
 * Recent apps button

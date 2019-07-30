@@ -257,6 +257,13 @@ PS20 Pie, TC52 Pie, TC72 Pie
 Device support dropped with this release: MC33 Nougat, TC20 Nougat, TC25 Nougat, TC51 Nougat, TC56
 Nougat, TC70x Nougat, TC75x Nougat, VC80x Nougat, WT6000 Nougat
 
+Bypass user confirmation dialog when adding Pinned shortcuts:
+When a Pinned shortcut is added to the home screen, prior versions of EHS presented a dialog to confirm the
+request with no way to bypass. EHS 3.2 provides a configurable option to bypass this confirmation dialog. This
+would be useful when the Pinned shortcut creation is automated using applications such as Enterprise Browser.
+By default, bypass UI confirmation is disabled. For more information about the feature, visit the TechDocs
+webpage.
+
 -----
 
 ### End of Support

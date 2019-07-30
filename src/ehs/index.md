@@ -1,7 +1,7 @@
 ---
 title: Enterprise Home Screen
 layout: redirect.html
-redirect_url: /ehs/3-0/guide/about
+redirect_url: /ehs/3-2/guide/about
 
 ---
 

@@ -304,7 +304,7 @@ ABOVE NOTE REPLICATED ON SETTINGS PAGE
 ### Android Marshmallow and Nougat Notes
 **_Applies to devices running Android Marshmallow and Nougat_**:
 
-* **When referencing a file stored on a removable SD Card in a device running Android M or N**, references to that card must include its symbolic link rather than its direct path. For example, while the file path on pre-M devices might be visible as `/storage/sdcard1/image.png`, the same path on M and N devices might appear in the file browser something like `/storage/0097-B7BA/image.png`. The symbolic link (which in this case is "0097-B7BA") is **<u>unique to the device</u>**. Therefore, **Zebra recommends avoiding the use of removable storage in mass-deployment scenarios**. 
+* **When referencing a file stored on a removable SD Card in a device running Android M or N (and higher)**, references to that card must include its symbolic link rather than its direct path. For example, while the file path on pre-M devices might be visible as `/storage/sdcard1/image.png`, the same path on M and N devices might appear in the file browser something like `/storage/0097-B7BA/image.png`. The symbolic link (which in this case is "0097-B7BA") is **<u>unique to the device</u>**. Therefore, **Zebra recommends avoiding the use of removable storage in mass-deployment scenarios**. 
 
 **_Applies to devices running Android Marshmallow 6.x and higher_**:
 

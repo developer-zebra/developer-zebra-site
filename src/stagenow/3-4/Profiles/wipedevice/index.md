@@ -50,6 +50,8 @@ Use this Wizard to erase data on the device using Factory Reset (all data) or En
 
 ### Setup Wizard Manual Bypass
 
+>**With MX 9.1 and higher, the barcode for bypassing the Android Setup Wizard is embedded within the configuration barcode(s). This combines bypass and device configuration into a single step.** The processes and rules below apply to barcodes generated for devices with versions prior to MX 9.1. 
+
 When staging manually, it's possible to skip the Android Setup Wizard on devices with **Android M and higher** by scanning the barcode below at any stage of the wizard. On devices with Android N and higher, scanning the barcode bypasses the Android **_and_** Zebra Setup Wizards (including Analytics opt-out). **If the Android Setup wizard is partially completed, data entered prior to the bypass scan is applied**. 
 
 Scan-to-Bypass is **<u>supported only on these Zebra devices and minimum BSPs</u>**: 

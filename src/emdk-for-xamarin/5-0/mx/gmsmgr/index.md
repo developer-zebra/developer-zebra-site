@@ -1,5 +1,5 @@
 ---
-title: GPRS Manager
+title: GMS Manager
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2
@@ -10,7 +10,7 @@ mxversions:
     value: 4.4
   - text: MX 5.0
     value: 5
-csp: gprsmgr
+csp: gmsmgr
 product: EMDK For Xamarin
 productversion: '5.0'
 ---

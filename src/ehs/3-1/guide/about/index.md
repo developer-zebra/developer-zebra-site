@@ -288,18 +288,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 ----- 
 -->
 
-### ET50/ET55 Device Notes
-
-**Applies to Zebra ET50 and ET55 devices with Google Mobile Services (GMS) only**.  
-
-* **The Launcher selection pop-up does not appear** when the HOME button is pressed while in User Mode, preventing a user or administrator from easily selecting the default Launcher app on the device. <img style="height:100px" src="homePrompt.png"/> **To avoid this issue, switch to Admin Mode** and press the HOME button; the "Select a home app" pop-up appears. **Select EHS and tap "Always"** to make the selection permanent.
-
-* **A permanent system UI crash could occur if EHS is uninstalled remotely (i.e. via MDM) while in User Mode**. Before uninstalling EHS remotely, Zebra recommends pushing to the device an EHS configuration file (`enterprisehomescreen.xml`) with the Search app enabled.
-
-See the [Advanced Settings](../settings) section for a complete `enterprisehomescreen.xml` configuration file reference. 
-
------
-
 ## Version History
 
 ### Added in EHS 3.0

@@ -14,6 +14,7 @@ menu:
     - icon: fa fa-search
       url: /oemconfig/1-0/search
 ---
+<!-- 
 ## Transaction Overview
 
 This section of the OEMConfig documentation describes all supported Managed Configurations (MCs), which can be used to define an ordered list of Steps for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*. 
@@ -32,7 +33,7 @@ Before attempting to configure a Transaction, it's important to understand the c
 
 **Include -** used when referring to the insertion of an instance. For example “Each instance of a step included within a Transaction can include any number of groups.”
 
-**Managed Configuration Group -** one or more Actions or configuration settings that when sent to a device cause the device to behave or be configured in a certain way.  
+**Managed Configuration Group -** a collection of one or more Actions or configuration settings that when sent to a device cause it to behave or be configured in a certain way.  
 
 **Step -**(`capitalize in context?`) a single component of a Transaction. 
 
@@ -64,7 +65,6 @@ The basic rule is that within any group or sub-group, an MC defined within that 
  * An unlimited number of *different* MC groups, but
   * Only one instance of 
 
-
 ### Transaction Steps
 
 A *Transaction* is a sequence of one or more *Transaction Steps*. A single *Transaction* may include any number of steps, with each step performing one or more Actions or configuration settings on a device. Step instances will be executed in the order they are included within the *Transaction*.
@@ -93,8 +93,6 @@ Within a sub-array, a single sub-group is defined within which MCs may be define
 
 Each instance of a sub-array can include any number of instances of the sub-group defined for that sub-array. Each instance of the sub-group included in a sub-array may include any number of the MCs, sub-groups, or sub-arrays that are defined for that sub-group of that sub-array, but at most one instance of any given MC, sub-group, or sub-array included within a given sub-group instance within a sub-array.
 
-`WE MUST INSERT A HORIZ. RULE WHERE THE TRANSACTION GROUP BEGINS`
-
 
 **Detail Information:** 
 
@@ -106,7 +104,10 @@ Each instance of a sub-array can include any number of instances of the sub-grou
 ## BEGIN REPLACED PART (replaced with Allan oemconfig #4)
 
 -----
+ -->
+
 ## Transaction Overview
+
 
 
 
@@ -124,7 +125,7 @@ A *Transaction* is a sequence of one or more *Transaction Steps*. A single *Tran
 Within a step, somes MCs are defined directly but most are organized into *Managed Configuration Groups*. MCs defined under a given group relate to some common aspect of device behavior. For example, MCs defined under the **Audio Configuration** group affect the audible sounds produced by a device.
 
 
-Each `instance of a` step `included with`in a *Transaction* can include any number of groups, but at most one instance of any given group may be used within a given step instance. To include a group more than once within a *Transaction*, each instance of the group must be included in a separate step within the *Transaction*.
+Each step in a *Transaction* can include any number of groups, but at most one instance of any given group may be used within a given step instance. To include a group more than once within a *Transaction*, each instance of the group must be included in a separate step within the *Transaction*.
 
 
 Within a group, MCs may be defined directly or may be organized into sub-groups or sub-arrays under that group. If a single step includes multiple groups, the order of execution of those groups within that step cannot be controlled. To control the order of execution amomgst groups, the groups must be included in separate steps within the *Transaction*. This allows the order of exection of the groups to be controlled by the order of execution of the steps in which the groups are included.
@@ -173,23 +174,15 @@ The following section **Transaction Step Level** describes the Actions and confi
 
 - Type = bundle 
 
+-----
 
-# Transaction Step Level
-
-
+## Transaction Step Level
 
 This section describes Managed Configurations that can be used to define the Actions and configurations to be performed by a *Transaction Step* within a *Transaction*, to provide an *Explanation* about a *Transaction Step*, and to define how errors that occur during the processing of a *Transaction Step* will be handled.
 
-
-
-## Explanation
-
-
+### Explanation
 
 Enter an optional *Explanation* that describes the purpose or intended behavior of a *Transaction Step*.
-
-
-
 
 Since a *Transaction* may include many *Transaction Steps* and each *Transaction Step* could include one or more configurations, describing the *Transaction Step* can be beneficial when later reviewing the *Transaction* and/or when editing a *Transaction*, and especially when reordering the *Transaction Steps* within the *Transaction*.
 

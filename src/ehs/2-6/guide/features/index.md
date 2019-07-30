@@ -316,7 +316,7 @@ This section covers important interactions between EHS and Android features that
 ### Recent Apps List
 
 * Accessing an app from the Recent Apps list could represent a security risk; apps not cleared from the list can be activated with the BACK button, potentially exposing a non-EHS home screen.
-* EHS does not add apps or activities to the Android Recent Apps list, but apps/activities launched from within EHS might. Such apps/activities could launch others that might appear on the Recent Apps list and pose a security risk.  
+* EHS does not add apps or activities to the Android Recent Apps list. However, apps/activities launched from within EHS could subsequently launch other apps/activities that could appear on the Recent Apps list and pose a security risk.  
 * The Recent Apps list can be cleared on pre-Android L devices by rebooting the device. 
 * Android L devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party MDM system to clear the list. 
 * To manually clear Recent Apps, bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears, then swipe away each app.

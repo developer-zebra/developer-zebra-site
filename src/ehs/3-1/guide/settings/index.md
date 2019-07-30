@@ -24,7 +24,7 @@ This section describes important interactions between EHS and the `enterprisehom
 
 #### Config File Location
 
-* The config file is initially stored in the `/enterprise/usr` directory on the device.
+* The config file is stored in the `/enterprise/usr` directory on the device.
 * This directory is <b>invisible</b> to most apps, <b>including Windows Explorer and Android File Transfer (Mac)</b>. 
 * The directory is <b>visible to Android File Browser</b>, which can be used to manage its contents. 
 * The file is <b>accessible via Android Debug Bridge (ADB)</b> "pull" and "push" commands. 
@@ -209,9 +209,6 @@ Specifies the app to run when the device is in [Kiosk Mode](../features), an opt
             <application label="Calculator" package="com.android.calculator2" activity=""/>
     </kiosk>
 
-
-> **Note: When starting up in Kiosk Mode on a device running KitKat**, a "please wait" prompt remains displayed. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
-
 ------
 
 ### Applications
@@ -316,7 +313,7 @@ In the EHS version localized for Simplified Chinese, the default `enterprisehome
     * com.&#42;
 
 * Wildcard searches can include "com.androidX" where X=any character except dot (.).  
-* The `enterprisehomescreen.log` file will store error messages resulting from invalid wildcard usare. 
+* The `enterprisehomescreen.log` file will store error messages resulting from invalid wildcard usage. 
 * The EHS app and EHS installer always are excluded from any filtered app list. 
 
 -----
@@ -570,7 +567,7 @@ Optionally designates the custom graphic specified using the [Title Bar Icon Fil
 ------
 
 ### Icon Label Background
-Specifies the background color of the icon label text of applications displayed in User Mode. Default background is #00FFFFFF, which is transparent with an opacity value of 00 (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
+Specifies the background color of the icon label text of apps and links displayed in Admin and User Modes. Default background is #00FFFFFF, which is transparent with an opacity value of 00 (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
 
 <img alt="" style="height:350px" src="icon_label_bg.png"/>
 <br>
@@ -600,7 +597,7 @@ Specifies the background color of the icon label text of applications displayed 
 ------
 
 ### Icon Label Text Color
-Specifies the color of the icon label text of applications displayed in User Mode. The EHS default icon text color is #FFFFFFFF, that is white with an opacity value of FF (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
+Specifies the color of the icon label text of apps and links displayed in Admin and User Modes. The EHS default icon text color is #FFFFFFFF, that is white with an opacity value of FF (from a range of 00 to FF). Get help [picking HTML color codes](http://www.colorpicker.com/).
 
 <img alt="" style="height:350px" src="icon_label_text.png"/>
 <br>
@@ -709,7 +706,7 @@ Enables one or more services to be automatically launched in the foreground afte
 -----
 
 ### Wallpaper
-Allows a background image to be specified for display in User Mode. If left unspecified, the system's default image is displayed. **Supports .bmp, .gif, .jpg, .png and .webp file formats. Resolution support varies by device**. If a selected image fails to display, Zebra recommends scaling down the resolution or selecting a different image. 
+Allows a background image to be specified for display in Admin and User Modes. If left unspecified, the system's default image is displayed. **Supports .bmp, .gif, .jpg, .png and .webp file formats. Resolution support varies by device**. If a selected image fails to display, Zebra recommends scaling down the resolution or selecting a different image. 
 
 When selecting an image using the Preferences panel UI, use tap-navigation to locate the image in the device file system or specify the file name and path using the keyboard (required for restricted areas not visible to the file browser). 
 
@@ -733,7 +730,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 ------
 
 ### Wallpaper Stretching
-Used to enable/disable the background image for display in User Mode to be stretched to fill the screen. Disabled by default. Stretching is disabled if this value is unspecified. **See Wallpaper parameter for supported file format and location**.  
+Used to enable/disable the background image for display in Admin and User Modes to be stretched to fill the screen. Disabled by default. Stretching is disabled if this value is unspecified. **See Wallpaper parameter for supported file format and location**.  
 
 <img alt="" style="height:350px" src="2-7_wallpaper_stretch.png"/>
 
@@ -780,8 +777,7 @@ EHS can be made to run in full-screen mode by setting the value of this tag to 1
 ### Kiosk Mode Enabled
 Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS start-up and prevents use of BACK and HOME keys to exit the app. Disabled by default. See also: [Auto-Launch](#autolaunch). <!-- 10/18/18- removed L ref. per eng. **On Android L devices: Kiosk Mode should not be used with Screen Pinning, a feature in Android L that provides similar functionality**. -->
 
-
-> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to 0 if USB Debugging is enabled. Otherwise a factory reset is required. 
+> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to "0" if USB Debugging is enabled. Otherwise a factory reset is required. Kiosk Mode also can be enabled/disabled programmatically from an Android application using Android Intents. For more information, see the [Special Features section](../features/#disablekioskmode).
 
 <img alt="" style="height:350px" src="kiosk.png"/>
 
@@ -794,13 +790,10 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 
     <kiosk_mode_enabled>0</kiosk_mode_enabled>
 
-
-> **Note: When starting up in Kiosk Mode on a device running KitKat**, a "please wait" prompt remains displayed. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
-
 ------
 
 ### Install Shortcuts
-**Applies to Nougat devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. For shortcuts devices, see [Pinned Shortcuts](#pinnedshortcuts), below.  
+**Applies to Nougat devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. For shortcuts in Oreo devices, see [Pinned Shortcuts](#pinnedshortcuts), below.  
 
 <img alt="" style="height:350px" src="install_shortcuts.png"/>
 
@@ -873,7 +866,6 @@ Controls whether the device camera is accessible from the Keyguard screen (also 
 * The camera app is enabled on the device
 * The Keyguard screen is in "Swipe" mode 
 * The camera icon is visible on the Keyguard screen 
-* The Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag
 
 Unless **_all four_** of the above conditions are true, the value in this tag is ignored. 
 
@@ -928,7 +920,7 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 ------
 
 ### USB Debugging Disabled
-Controls whether communication via USB is permitted between the device and a computer while the device is in User Mode. A setting of 1 (default) or if left unspecified will prevent user access to the file system and all ADB functionality on the device. This setting has no bearing on Admin Mode, in which USB communication is always enabled. **Zebra recommends manually returning USB Debugging to its desired state before uninstalling EHS**. 
+Controls whether communication via USB is permitted between the device and a computer while the device is in User Mode. A setting of 1 (default) or if left unspecified will prevent user access to the file system and all ADB functionality on the device. **Zebra recommends manually returning USB Debugging to its desired state before uninstalling EHS**. 
 
 <img alt="" style="height:350px" src="usb_debug_disable.png"/>
 
@@ -944,7 +936,7 @@ Controls whether communication via USB is permitted between the device and a com
 ------
 
 ### System Settings Restricted
-Controls whether full or limited settings are available when the device is in User Mode. A setting of 1 (default) or if left unspecified limits user access to Display and Sound settings and the "About phone" panel. <b>A setting of 0 permits user access to all device settings</b>.
+Controls whether full or limited settings are available when the device is in Admin or User Mode. A setting of 1 (default) or if left unspecified limits user access to Display and Sound settings and the "About phone" panel. <b>A setting of 0 permits user access to all device settings</b>.
 
 <img alt="" style="height:350px" src="settings_restricted_panels.png"/>
 
@@ -967,7 +959,7 @@ Controls whether full or limited settings are available when the device is in Us
 ------
 
 ### Recent Apps Button Disabled 
-**Applies only to devices running Android Nougat and later**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Nougat (and later) devices only; otherwise enabled**. Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
+**Applies only to devices running Android Nougat and higher**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Nougat (and higher) devices**. Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
 
 >This setting persists after EHS is removed.
 
@@ -1190,7 +1182,7 @@ Permits a custom graphic to be specified in place of the system or default icon 
 ------
 
 ### Enable/Disable Apps
-Allows apps on a device to be explicitly disabled or enabled in Admin and User Modes. Use these tags to enable Settings and/or Search apps in User Mode. (Settings and Search apps are always enabled in Admin Mode, even if  &lt;apps_disabled&gt; tag is applied). Applies to both Admin and User Modes for all other apps. <b>Note: Package names might vary from one Android version to another</b>. 
+Allows apps on a device to be explicitly disabled or enabled in Admin and User Modes. <b>Note: Package names might vary from one Android version to another</b>. 
 
 <img alt="" style="height:350px" src="disable_apps.png"/>
 
@@ -1406,7 +1398,7 @@ Notes:
 * **Mass deployment is not supported** for pinned shortcuts. Each pinned shortcut must be added manually by an administrator. As with all versions of EHS, shortcuts cannot be cloned from one device to another.
 * **Duplicate shortcuts are permitted**. As with all versions of EHS, multiple shortcuts can exist on a device with precisely the same attributes.
 * **To remove added shortcuts**, manually delete them from the configuration XML file, as with shortcut handling of prior EHS versions.
-* **On multi-user devices, only the user adding the pinned shortcuts has access**. Other users see the User-screen shortcut icons but are unable to launch them. This shortcut behavior is consistent with all EHS versions. 
+* **On multi-user devices, only the user adding the pinned shortcuts has access to them**. Other users see the User-screen shortcut icons but are unable to launch them. This shortcut behavior is consistent with the Android Launcher. 
 
 <!-- 10/22/18- removed, per eng. 
 
@@ -1443,7 +1435,7 @@ App Launch Flags can be assigned only to Kiosk apps or those designated as part 
 * Tools-Menu apps
 * Kiosk apps
 
-**EHS 2.4 does not support assignment of Launch Flags to individual apps**. 
+**EHS does not support assignment of Launch Flags to individual apps**. 
 
 <b>Supported flags</b>:
 

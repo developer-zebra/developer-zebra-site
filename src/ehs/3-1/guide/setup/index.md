@@ -12,7 +12,7 @@ These instructions provide a basic understanding of the installation, configurat
 Many of the capabilities of EHS can be accomplished manually on the device, programmatically through [EMDK](../../../../emdk-for-android) or remotely using [StageNow](../../../../stagenow) or a third-party EMM system (if supported by that EMM system). EHS simply puts these capabilities into a single, convenient tool.
 
 > <b>Note</b>: Installation and setup requires that the EHS .apk file be present on a PC or Mac that can communicate with the target device and write to all storage areas. If necessary, please [download EHS](../../download) and establish connectivity between the computer and device. Then resume from here. 
->**<u>The SD card slot is disabled</u> when a device is in Multi-user Mode**. See Special Features section for more information. 
+>**<u>The SD card slot is disabled</u> when a device is in Multi-user Mode**. See [Special Features section](../features) for more information. 
 
 -----
 
@@ -23,12 +23,12 @@ These instructions apply to direct installation (from a computer to a single dev
 
 The EHS 3.x download includes two separate .apk files: 
 
-* `EHS_xxxxxx_A.apk` - for all devices **_except_ TC20/TC25 and devices running Oreo**
-* `EHS_xxxxxx_B.apk` - for **TC20/TC25 and devices running Oreo**
+* `EHS_xxxxxx_A.apk` - for all Nougat devices **_except_ TC20/TC25**
+* `EHS_xxxxxx_B.apk` - for all Android Oreo devices and **TC20/TC25 Nougat devices**
 
-See the full list of [devices supported by EHS v3.1](../guide/about#supporteddevices). 
+See the full list of [devices supported by EHS v3.1](../about#supporteddevices). 
 
-> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.x is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. **Note**: Prior configuration settings, if any, are re-applied automatically.
+> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.x is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Note**: Prior configuration settings, if any, are re-applied automatically.
 
 > **EHS 3.1 DOES NOT support Android 6.x Marshmallow**. 
 
@@ -70,11 +70,9 @@ _If "Done" was accidentally selected instead of "Open," launch "Enterprise Home 
 
 &#56;. <b>Select Enterprise Home Screen</b> and <b>tap "Just once"</b> for now. This will allow easy switching between EHS and the Android launcher during setup. This choice will be presented every time the HOME key is tapped until selecting "Always" makes the selection permanent. 
 
-> **Note: On ET50 and ET55 devices with Google Mobile Services (GMS)**, the Launcher selection pop-up does not appear when the HOME button is pressed while in User Mode. To avoid this issue, switch to Admin Mode and press the HOME button; the pop-up appears and the default Launcher app can be selected. 
-
 &#57;. <b>A restart is required</b> to complete the installation (for first-time EHS installations). Again, a screen like the one above will appear. <b>Select Enterprise Home Screen</b> and <b>tap "Just once"</b> to continue or select "Always" to make the selection permanent. To undo this choice, see [Change the Default Launcher](#changethedefaultlauncher) section below. 
 
-> **Note: After selecting "Always," some devices require a 10-second pause before restarting to ensure the change remains persistent**. 
+> **Note: After selecting "Always," wait 10 seconds before restarting to ensure the change remains persistent.**. 
 
 ### Select Apps for User Mode 
 EHS is now ready to use. The next steps are for selecting which apps to display (and which to hide) while in User Mode, and for configuring the level of user access to device settings. When first run, EHS always defaults to User Mode, and will display a screen similar to the image below: 
@@ -197,6 +195,8 @@ These instructions apply to remote installation of EHS, an `enterprisehomescreen
 
 &#53;. <b>Reboot the device</b> to complete the installation. This is a <b>required step</b>. 
 
+> **Note: After selecting "Always," wait 10 seconds before restarting to ensure the change remains persistent.**. 
+
 The capabilities of EMM systems vary. Please refer to the EMM documentation for specific information about how to configure these commands. 
 
 **Note: App installation, uninstallation, setting the default launcher and other operations are possible using the [App Manager](/mx/#app-manager) through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools**. 
@@ -210,7 +210,7 @@ The capabilities of EMM systems vary. Please refer to the EMM documentation for 
 **On ET50/ET55 devices running Android 5.x Lollipop with GMS**, <u>a permanent system UI crash could occur</u> if EHS is uninstalled while in User Mode. Before uninstalling EHS, Zebra recommends pushing to the device an EHS configuration file (`enterprisehomescreen.xml`) with the Search app enabled. See the [Advanced Settings](../settings) section for configuration file usage. 
  -->
 ### Manual Uninstallation
->**Important**: Device settings configured by EHS such as USB debugging, [System Settings Restricted](../settings#systemsettingsrestricted) (restricting user access to Airplane mode and other settings), disabling apps and recent apps button and so on, DO NOT revert to their state prior to EHS installation and configuration. <u>**All such settings MUST BE REVERSED** prior to the removal of EHS</u>. This can be done prior to uninstalling EHS by pushing to the device an `enterprisehomescreen.xml` file properly configured to unrestrict the settings.
+>**Important**: Device settings configured by EHS such as USB debugging, [System Settings Restricted](../settings#systemsettingsrestricted) (restricting user access to Display and Sound settings, and the "About phone" panel only), disabling apps and recent apps button and so on, DO NOT revert to their state prior to EHS installation and configuration. <u>**All such settings MUST BE REVERSED** prior to the removal of EHS</u>. This can be done prior to uninstalling EHS by pushing to the device an `enterprisehomescreen.xml` file properly configured to unrestrict the settings.
 
 To remove EHS, simply use the Android App Manager to <b>uninstall the EHS app</b>.  
 
@@ -254,10 +254,11 @@ The steps above do not remove the `enterprisehomescreen.xml` configuration file 
 ### Automated Uninstallation
 These instructions apply to remote uninstallation using an organization's own EMM server to remove EHS from multiple managed devices. This task also can be accomplished through Zebra's [EMDK](/emdk-for-android/4-0/guide/about) or [StageNow](/stagenow/2-2/about/) tools using the [App Manager](/mx/#app-manager) service. 
 
->**`IMPORTANT`**: Device settings configured by EHS such as USB debugging, [System Settings Restricted](../settings#systemsettingsrestricted) (restricting user access to Airplane mode and other settings), disabling apps and recent apps button and so on, DO NOT revert to their former state when EHS is uninstalled. <u>To restore a device to its former state, **all such settings MUST BE REVERSED** prior to the removal of EHS</u>. This can be done prior to uninstalling EHS by pushing to the device an `enterprisehomescreen.xml` file properly configured to unrestrict the settings.
+>**`IMPORTANT`**: Device settings configured by EHS such as USB debugging, [System Settings Restricted](../settings#systemsettingsrestricted) (restricting user access to Display and Sound settings, and the "About phone" panel only), disabling apps and recent apps button and so on, DO NOT revert to their former state when EHS is uninstalled. <u>To restore a device to its former state, **all such settings MUST BE REVERSED** prior to the removal of EHS</u>. This can be done prior to uninstalling EHS by pushing to the device an `enterprisehomescreen.xml` file properly configured to unrestrict the settings.
 
+<!-- 7/30/19- also removed (though not per eng) b/c of ET50/55 support drop
 > **`CRASH WARNING`**: <u>On ET50 and ET55 devices with GMS, a permanent system UI crash could occur</u> if EHS is uninstalled remotely (i.e. via EMM) while in User Mode. Before uninstalling EHS, Zebra recommends pushing to the device an EHS configuration file (`enterprisehomescreen.xml`) with the Search app enabled. See the [Advanced Settings](../settings) section for configuration file usage. 
-
+ -->
 **To uninstall EHS using an EMM, instruct the EMM to do the following**:
 
 &#49;. <b> Uninstall (remove) the EHS app</b>, referencing the package and activity names as indicated in the table below. 
@@ -309,10 +310,7 @@ Removing EHS as the default launcher on a device can be done with a simple chang
 
 If EHS is removed from the device and the Android Launcher is the only remaining launcher on the device, it will become the default launcher. **If more than one launcher will remain on the device after EHS is removed, a new default launcher should be selected to ensure desired operation**.  
 
-**The following process applies only to Android 4.4.3 and higher**. To remove EHS as the default launcher on Android versions prior to 4.4.3, follow the instructions (above) for manually uninstalling EHS using Android App Manager. 
-
-**To manually change the default launcher on a device without removing EHS**: 
-(Android 4.4.3 and higher)
+**To manually change the default launcher on a device without removing EHS**:
 
 &#49;. In Admin Mode <b>open the Settings panel and tap Home</b>: 
 <img alt="" style="height:350px" src="settings_panel.png"/>

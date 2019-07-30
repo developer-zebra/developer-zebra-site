@@ -145,6 +145,8 @@ All three Privileged Settings are enabled as a group through an Admin-mode UI co
 <img alt="" style="height:200px" src="Priviledged_04.png"/>
 <br>
 
+> **Administrator Note**: Be sure to restore settings (to disable USB debugging, Settings app, Search app) once privileged-mode tasks are completed.
+
 -----
 
 **To disable Privileged Settings**: 
@@ -173,7 +175,7 @@ EHS records all major activities, failures and security events in the `/enterpri
 For more information about logging, see [Logging Preferences](../settings/#loggingdisabled). 
 
 <img alt="" style="height:450px" src="logging_disabled.png"/>
-_In EHS 2.7 and higher, logging is disabled through the UI or config file._
+_In EHS 2.7 and higher, logging can be enabled/disabled through the UI or config file._
 <br>
 
 **IMPORTANT**: Secure Mode is discontinued in EHS 3.0 and higher. Log files are no longer designated as "SECURED" or "UNSECURED" in log entries.  
@@ -186,8 +188,8 @@ This section covers important interactions between EHS and Android features that
 ### Recent Apps List
 
 * Accessing an app from the Recent Apps list could represent a security risk; apps not cleared from the list can be activated with the BACK button, potentially exposing a non-EHS home screen.
-* On Android Nougat devices, **the Recent Apps button can be Enabled/Disabled**. It is disabled by default to prevent the use of multi-window mode. 
-* EHS does not add apps or activities to the Android Recent Apps list, but apps/activities launched from within EHS might. Such apps/activities could launch others that might appear on the Recent Apps list and pose a security risk.  
+* On Android Nougat and higher devices, **the Recent Apps button can be Enabled/Disabled**. It is disabled by default to prevent the use of multi-window mode. 
+* EHS does not add apps or activities to the Android Recent Apps list. However, apps/activities launched from within EHS could subsequently launch other apps/activities that could appear on the Recent Apps list and pose a security risk.
 * Some devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party EMM system to clear the list. 
 * To manually clear Recent Apps, bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears, then swipe away each app.
 
@@ -198,7 +200,7 @@ This section covers important interactions between EHS and Android features that
 
 ### Other Unintended Access
 
-* On devices running Android 4.4 KitKat, users might gain access to Airplane mode, Wi-Fi, Bluetooth and other device settings via the Quick Settings menu in the Notification drop-down. This can be prevented with the [Disable Status Bar Settings tag](../settings#disablestatusbarsettings). 
+* Users might gain access to Airplane mode, Wi-Fi, Bluetooth and other device settings via the Quick Settings panel in the Notification drop-down even if Settings app is disabled by EHS. This can be prevented with settings configurable using the [UI Manager](/mx/uimgr) through StageNow or EMDK. 
 * Wireless capabilities also can be individually disabled through these MX modules: 
 	* [SettingsMgr](../../../../mx/settingsmgr) for Airplane Mode and Wi-Fi 
 	* [UiMgr](../../../../mx/uimgr) for Quick Settings and the "Gear" icon
@@ -209,9 +211,9 @@ This section covers important interactions between EHS and Android features that
 
 ### Bluetooth User Access
 
-EHS by default disables the Settings app (`com.android.settings`) when the device is in User Mode. This prevents the "BT Pairing Utility" (accessible in User Mode) from enabling Bluetooth and pairing with devices. For organizations that wish to allow this capability, EHS offers a means of enabling Bluetooth control while restricting access to most other Settings panel features.
+EHS by default disables the Settings app (`com.android.settings`) when the device is in User Mode or Admin mode. This prevents the "BT Pairing Utility" from enabling Bluetooth and pairing with devices. For organizations that wish to allow this capability, EHS offers a means of enabling Bluetooth control while restricting access to most other Settings panel features.
 
-**To enable Bluetooth in User More**: 
+**To enable Bluetooth**: 
 
 1. Enable the Settings app using the [Enable/Disable Apps](../settings/#enabledisableapps) feature. 
 2. Enable the [Restrict System Settings](../settings/#systemsettingsrestricted) feature, which allows Bluetooth to be turned on and off while in User Mode. 
@@ -221,36 +223,3 @@ EHS by default disables the Settings app (`com.android.settings`) when the devic
 **Note**: The System Settings Restricted feature allows the device user to access Display and Sound settings and the "About device" screen. 
 
 ------
-
-## Install OpenSSL
-
-Installing OpenSSL tool on Windows PC: 
-
-&#49;. [Download OpenSSL 1.0.1g or above](http://slproweb.com/products/Win32OpenSSL.html) for Windows. 
-
-&#50;. Install OpenSSL on a computer with connectivity to the target device.
-
-&#51;. Dismiss the Visual C++ 2008 warning, if any, during installation and complete the installation.
-
-&#52;. At the command prompt, navigate to the OpenSSL installed folder (c:\OpenSSL-Win32\ by default)
-
-&#53;. Set the OpenSSL configuration environment variable by executing the following command:
- 
-	C:\OpenSSL-Win32\ Set OPENSSL_CONF=C:\OpenSSL-Win32\bin\openssl.cfg
-
-
-OpenSSL can now be used to sign EHS files. 
-
-------
-
-
-
-
-
-
-
-
-
-
-
-

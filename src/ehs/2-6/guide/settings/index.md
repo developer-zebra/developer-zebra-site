@@ -285,7 +285,7 @@ When specifying links, the package and activity parameters can be used to launch
     * com.&#42;
 
 * Wildcard searches can include "com.androidX" where X=any character except dot (.).  
-* The `enterprisehomescreen.log` file will store error messages resulting from invalid wildcard usare. 
+* The `enterprisehomescreen.log` file will store error messages resulting from invalid wildcard usage. 
 * The EHS app and EHS installer always are excluded from any filtered app list. 
 
 #### URL Example
@@ -591,8 +591,7 @@ EHS can be made to run in full-screen mode by setting the value of this tag to 1
 ### Kiosk Mode Enabled
 Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS start-up and prevents use of BACK and HOME keys to exit the app. Disabled by default. See also: [Auto-Launch](#autolaunch). **On Android L devices: Kiosk Mode should not be used with Screen Pinning, a feature in Android L that provides similar functionality**.
 
-
-> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to 0 if USB Debugging is enabled. Otherwise a factory reset is required. 
+> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to "0" if USB Debugging is enabled. Otherwise a factory reset is required. Kiosk Mode also can be enabled/disabled programmatically from an Android application using Android Intents. For more information, see the [Special Features section](../features/#disablekioskmode).
 
 <img alt="" style="height:350px" src="kiosk.png"/>
 
@@ -613,7 +612,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 ### Disable Status Bar Settings
 Controls whether the Settings icon is displayed in the Android Status Bar, and therefore whether the Settings panel is accessible by users. <b>Not supported on all devices</b>. A setting of 0 in this tag will enable the Status Bar Settings icon. 
 
-**On Android L devices**: A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (which UI Manager calls the Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system. **This will override any EHS setting for controlling the Status Bar Settings icon**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain.
+**On Android L devices**: A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (which UI Manager calls the Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system. **This will override any EHS setting for controlling the Status Bar Settings icon**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and higher; any prior device limitations remain.
 
 <img alt="" style="height:350px" src="disable_settings_icon.png"/>
 
@@ -633,7 +632,7 @@ Controls whether the Settings icon is displayed in the Android Status Bar, and t
 ### Disable Status Bar Pull-down
 Controls whether the Android Status Bar can be pulled down to reveal controls and notifications. The Status Bar Pull-down is enabled by default. If this tag is omitted, contains a value of 0 or is left blank, the Status Bar Pull-down will be enabled. To disable, enter a value of 1. 
 
-**On Android L devices**: A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (which UI Manager calls the Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) systems. **This will override any EHS setting for controlling the Status Bar**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later. 
+**On Android L devices**: A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Pull-down (which UI Manager calls the Notification Pulldown) to be controlled through EMDK, StageNow or a third-party mobile device management (MDM) systems. **This will override any EHS setting for controlling the Status Bar**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and higher. 
 
 <img alt="" style="height:350px" src="disable_status_bar.png"/>
 
@@ -1177,7 +1176,7 @@ App Launch Flags can be assigned only to Kiosk apps or those designated as part 
 * Tools-Menu apps
 * Kiosk apps
 
-**EHS 2.4 does not support assignment of Launch Flags to individual apps**. 
+**EHS does not support assignment of Launch Flags to individual apps**. 
 
 <b>Supported flags</b>:
 

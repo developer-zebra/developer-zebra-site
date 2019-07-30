@@ -295,10 +295,7 @@ Removing EHS as the default launcher on a device can be done with a simple chang
 
 If EHS is removed from the device and the Android Launcher is the only remaining launcher on the device, it will become the default launcher. **If more than one launcher will remain on the device after EHS is removed, a new default launcher should be selected to ensure desired operation**.  
 
-**The following process applies only to Android 4.4.3 and higher**. To remove EHS as the default launcher on Android versions prior to 4.4.3, follow the instructions (above) for manually uninstalling EHS using Android App Manager. 
-
 **To manually change the default launcher on a device without removing EHS**: 
-(Android 4.4.3 and higher)
 
 &#49;. In Admin Mode <b>open the Settings panel and tap Home</b>: 
 <img alt="" style="height:350px" src="settings_panel.png"/>

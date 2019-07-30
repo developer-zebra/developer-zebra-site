@@ -285,7 +285,7 @@ When specifying links, the package and activity parameters can be used to launch
     * com.&#42;
 
 * Wildcard searches can include "com.androidX" where X=any character except dot (.).  
-* The `enterprisehomescreen.log` file will store error messages resulting from invalid wildcard usare. 
+* The `enterprisehomescreen.log` file will store error messages resulting from invalid wildcard usage. 
 * The EHS app and EHS installer always are excluded from any filtered app list. 
 
 #### URL Example
@@ -1168,7 +1168,7 @@ App Launch Flags can be assigned only to Kiosk apps or those designated as part 
 * Tools-Menu apps
 * Kiosk apps
 
-**EHS 2.4 does not support assignment of Launch Flags to individual apps**. 
+**EHS does not support assignment of Launch Flags to individual apps**. 
 
 <b>Supported flags</b>:
 

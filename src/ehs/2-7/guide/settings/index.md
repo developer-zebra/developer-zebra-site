@@ -188,9 +188,6 @@ Specifies the app to run when the device is in [Kiosk Mode](../features), an opt
             <application label="Calculator" package="com.android.calculator2" activity=""/>
     </kiosk>
 
-
-> **Note: When starting up in Kiosk Mode on a device running KitKat**, a "please wait" prompt remains displayed. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
-
 ------
 
 ### Applications
@@ -285,7 +282,7 @@ When specifying links, the package and activity parameters can be used to launch
     * com.&#42;
 
 * Wildcard searches can include "com.androidX" where X=any character except dot (.).  
-* The `enterprisehomescreen.log` file will store error messages resulting from invalid wildcard usare. 
+* The `enterprisehomescreen.log` file will store error messages resulting from invalid wildcard usage. 
 * The EHS app and EHS installer always are excluded from any filtered app list. 
 
 #### URL Example
@@ -639,8 +636,7 @@ EHS can be made to run in full-screen mode by setting the value of this tag to 1
 ### Kiosk Mode Enabled
 Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS start-up and prevents use of BACK and HOME keys to exit the app. Disabled by default. See also: [Auto-Launch](#autolaunch). **On Android L devices: Kiosk Mode should not be used with Screen Pinning, a feature in Android L that provides similar functionality**.
 
-
-> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to 0 if USB Debugging is enabled. Otherwise a factory reset is required. 
+> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to "0" if USB Debugging is enabled. Otherwise a factory reset is required. Kiosk Mode also can be enabled/disabled programmatically from an Android application using Android Intents. For more information, see the [Special Features section](../features/#disablekioskmode).
 
 <img alt="" style="height:350px" src="kiosk.png"/>
 
@@ -653,15 +649,12 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 
     <kiosk_mode_enabled>0</kiosk_mode_enabled>
 
-
-> **Note: When starting up in Kiosk Mode on a device running KitKat**, a "please wait" prompt remains displayed. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
-
 ------
 
 ### Disable Status Bar Settings
 Controls whether the Settings icon is displayed in the Android Status Bar, and therefore whether the Settings panel is accessible by users. <b>Not supported on all devices</b>. A setting of 0 in this tag will enable the Status Bar Settings icon. 
 
-**On Android L devices**: A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (which UI Manager calls the Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system. **This will override any EHS setting for controlling the Status Bar Settings icon**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and later; any prior device limitations remain.
+**On Android L devices**: A new feature in [UI Manager](/mx/uimgr) allows the Status Bar Settings Icon (which UI Manager calls the Notification Quick Settings Icons) to be controlled through EMDK, StageNow or a third-party MDM system. **This will override any EHS setting for controlling the Status Bar Settings icon**. Applies only to devices with MX 6.0 and higher, which is for Android Lollipop and higher; any prior device limitations remain.
 
 <img alt="" style="height:350px" src="disable_settings_icon.png"/>
 
@@ -764,8 +757,8 @@ Controls whether the device can be put into "airplane mode" from the Power menu 
 Controls whether the Keyguard screen (also known as the "Lock Screen") is displayed when the device is powered up. Keyguard is bypassed (not displayed) by default. A setting of 0 in this tag enables the Keyguard. 
 
 ####Notes
-* **On devices running Android L and later**, the Bypass Keyguard feature fails to unlock the screen after rebooting the device.
-* **On devices running Android N and later**, the Bypass Keyguard feature also can be disabled through the "Screen Lock Type" parameter of the [DevAdmin CSP](/mx/devadmin). 
+* **On devices running Android L and higher**, the Bypass Keyguard feature fails to unlock the screen after rebooting the device.
+* **On devices running Android N and higher**, the Bypass Keyguard feature also can be disabled through the "Screen Lock Type" parameter of the [DevAdmin CSP](/mx/devadmin). 
 * **On devices that employ MX Multi-user features**, a setting of 1 for this tag will prevent display of the multi-user login screen. Please see important [Security Notes](../features#securitynotes) involving interactions between EHS and MX Multi-user features. 
 
 <img alt="" style="height:350px" src="keyguard.png"/>
@@ -959,7 +952,7 @@ Controls whether full or limited settings are available when the device is in Us
 ------
 
 ### Recent Apps Button Disabled 
-**Applies only to devices running Android Nougat and later**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Nougat (and later) devices only; otherwise enabled**. Default value will be used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
+**Applies only to devices running Android Nougat and higher**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Nougat (and higher) devices only; otherwise enabled**. Default value will be used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
 
 >This setting persists after EHS is removed.
 
@@ -1286,7 +1279,7 @@ App Launch Flags can be assigned only to Kiosk apps or those designated as part 
 * Tools-Menu apps
 * Kiosk apps
 
-**EHS 2.4 does not support assignment of Launch Flags to individual apps**. 
+**EHS does not support assignment of Launch Flags to individual apps**. 
 
 <b>Supported flags</b>:
 

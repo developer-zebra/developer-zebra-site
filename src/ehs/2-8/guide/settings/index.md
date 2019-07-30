@@ -203,9 +203,6 @@ Specifies the app to run when the device is in [Kiosk Mode](../features), an opt
             <application label="Calculator" package="com.android.calculator2" activity=""/>
     </kiosk>
 
-
-> **Note: When starting up in Kiosk Mode on a device running KitKat**, a "please wait" prompt remains displayed. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
-
 ------
 
 ### Applications
@@ -307,7 +304,7 @@ In the EHS version localized for Simplified Chinese, the default `enterprisehome
     * com.&#42;
 
 * Wildcard searches can include "com.androidX" where X=any character except dot (.).  
-* The `enterprisehomescreen.log` file will store error messages resulting from invalid wildcard usare. 
+* The `enterprisehomescreen.log` file will store error messages resulting from invalid wildcard usage. 
 * The EHS app and EHS installer always are excluded from any filtered app list. 
 
 -----
@@ -742,8 +739,7 @@ EHS can be made to run in full-screen mode by setting the value of this tag to 1
 ### Kiosk Mode Enabled
 Causes the app specified in the &lt;kiosk&gt; section to be launched in full screen mode after EHS start-up and prevents use of BACK and HOME keys to exit the app. Disabled by default. See also: [Auto-Launch](#autolaunch). **On Android L devices: Kiosk Mode should not be used with Screen Pinning, a feature in Android L that provides similar functionality**.
 
-
-> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to 0 if USB Debugging is enabled. Otherwise a factory reset is required. 
+> Once enabled, Kiosk Mode can be disabled by pushing a new config file with its tag set to "0" if USB Debugging is enabled. Otherwise a factory reset is required. Kiosk Mode also can be enabled/disabled programmatically from an Android application using Android Intents. For more information, see the [Special Features section](../features/#disablekioskmode).
 
 <img alt="" style="height:350px" src="kiosk.png"/>
 
@@ -755,9 +751,6 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 #### Example
 
     <kiosk_mode_enabled>0</kiosk_mode_enabled>
-
-
-> **Note: When starting up in Kiosk Mode on a device running KitKat**, a "please wait" prompt remains displayed. Press the HOME key to launch the Kiosk-Mode app and resume normal behavior. 
 
 ------
 
@@ -904,7 +897,6 @@ Controls whether the device camera is accessible from the Keyguard screen (also 
 * The camera app is enabled on the device
 * The Keyguard screen is in "Swipe" mode 
 * The camera icon is visible on the Keyguard screen 
-* The Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag
 
 Unless **_all four_** of the above conditions are true, the value in this tag is ignored. 
 
@@ -983,7 +975,6 @@ Applies only if **_all_** of the following conditions are true:
 * The search app is enabled on the device
 * The Keyguard screen is in "Swipe" mode 
 * The search icon is visible on the Keyguard screen 
-* The Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag
 
 Unless **_all four_** of the above conditions are true, the value in this tag is ignored. Note: If no search-app shortcut exists on the device lock screen, use of this tag is not required. 
 
@@ -1050,7 +1041,7 @@ To permit access to the search app only after the device has been unlocked, set 
 ------
 
 ### USB Debugging Disabled
-Controls whether communication via USB is permitted between the device and a computer while the device is in User Mode. A setting of 1 (default) or if left unspecified will prevent user access to the file system and all ADB functionality on the device. This setting has no bearing on Admin Mode, in which USB communication is always enabled. **Zebra recommends manually returning USB Debugging to its desired state before uninstalling EHS**. 
+Controls whether communication via USB is permitted between the device and a computer while the device is in Admin or User Mode. A setting of 1 (default) or if left unspecified will prevent user access to the file system and all ADB functionality on the device. This setting has no bearing on Admin Mode, in which USB communication is always enabled. **Zebra recommends manually returning USB Debugging to its desired state before uninstalling EHS**. 
 
 <img alt="" style="height:350px" src="usb_debug_disable.png"/>
 
@@ -1089,7 +1080,7 @@ Controls whether full or limited settings are available when the device is in Us
 ------
 
 ### Recent Apps Button Disabled 
-**Applies only to devices running Android Nougat and later**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Nougat (and later) devices only; otherwise enabled**. Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
+**Applies only to devices running Android Nougat and higher**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Nougat (and later) devices only; otherwise enabled**. Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
 
 >This setting persists after EHS is removed.
 
@@ -1416,7 +1407,7 @@ App Launch Flags can be assigned only to Kiosk apps or those designated as part 
 * Tools-Menu apps
 * Kiosk apps
 
-**EHS 2.4 does not support assignment of Launch Flags to individual apps**. 
+**EHS does not support assignment of Launch Flags to individual apps**. 
 
 <b>Supported flags</b>:
 

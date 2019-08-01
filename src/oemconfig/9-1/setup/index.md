@@ -1,5 +1,5 @@
 ---
-title: Set up OEMConfig
+title: OEMConfig Set-up
 layout: guide.html
 product: OEMConfig
 productversion: '9.1'
@@ -26,7 +26,7 @@ OEMConfig interfaces with Zebra's [Mobility Extensions Management System (known 
 ### System Requirements
 
 * Zebra device(s) with Android 7.x or higher
-* MX 9.1 or higher on device(s) [Which version is installed?](/mx/mx-version-on-device)
+* MX 9.1 or higher on device(s). [Which version is installed?](/mx/mx-version-on-device)
 * A UEM/EMM with support for OEMConfig
 
 ### Download and install

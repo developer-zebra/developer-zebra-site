@@ -26,8 +26,10 @@ OEMConfig interfaces with Zebra's [Mobility Extensions Management System (known 
 ### System Requirements
 
 * Zebra device(s) with Android 7.x or higher
-* MX 9.1 or higher on device(s). [Which version is installed?](/mx/mx-version-on-device)
+* MX 9.1 or higher* on device(s). [Which version is installed?](/mx/mx-version-on-device)
 * A UEM/EMM with support for OEMConfig
+
+&#42;OEMConfig will operate on devices with MX versions prior to 9.1, but attempts to access features implemented in later MX versions will result in error(s). See the [MX Feature Matrix](/mx) for a complete list of features. 
 
 ### Download and install
 

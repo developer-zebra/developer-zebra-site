@@ -23,8 +23,9 @@ menu:
 <h1 style="font-size:20px;">20px Heading</h1>
  -->
 
-## Transaction Overview
+<b><font size="6">Terms in this Guide</font></b> 
 
+(Transaction Overview)
 This section of the OEMConfig documentation describes all supported Managed Configurations (MCs), which can be used to define an ordered list of *Steps* for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*. 
 
 Before attempting to configure a Transaction, it's important to understand the concept of Managed Configuration groups, sub-groups, arrays and sub-arrays. A *Transaction* can contain one or many of these objects, and some can be nested as other sub-arrays. 
@@ -36,7 +37,7 @@ Before attempting to configure a Transaction, it's important to understand the c
 
 **Include -** Used when referring to a decision by an administrator to *elect* to perform some *Action* or setting configuration as opposed to what the administrator is *permitted* to do, but may or may not elect to do. For example, an admin would be permitted to include one of everything, but likely would elect to include only one or a few.
 
-**Instance -** a *single* occurrence or use of something (such as a *Step*, MC, *Group*, *Sub-group*, or *Sub-array*). An Instance might refer to the inclusion of a *Step* in a *Transaction*; an MC in a *Step; an MC, *Sub-group* or s*Sb-array* in a *Group*; or a *Sub-group* as an element of a *Sub-array*.
+**Instance -** a *single* occurrence or use of something (such as a *Step*, MC, *Group*, *Sub-group*, or *Sub-array*). An Instance might refer to the inclusion of a *Step* in a *Transaction*; an MC in a *Step*; an MC, *Sub-group* or *Sub-array* in a *Group*; or a *Sub-group* as an element of a *Sub-array*.
 
 #### Elements
 **Transaction -** An ordered list of *Steps*, each of which specifies one or more Actions to be performed or settings to be configured on a Zebra device. *Steps* are executed in the exact order specified within the *Transaction*, but the order of execution within a *Step* is controlled by the system. The recommended means of controlling the order of execution, if required, is to use separate *Steps* within a *Transaction*.
@@ -45,7 +46,7 @@ Before attempting to configure a Transaction, it's important to understand the c
 
 **Group -** See *Managed Configuration Group*. 
 
-**Managed Configuration group -** A collection of MCs, sub-groups or sub-arrays defined as permitted to control some aspect of the device (such as "Analytics Configuration" or "Audio Configuration"). A *Steps* can include no more than one instance of any MC, sub-group or sub-array defined as permitted for that group.
+**Managed Configuration group -** A collection of MCs, sub-groups or sub-arrays defined as permitted to control some aspect of the device (such as "**Analytics Configuration**" or "**Audio Configuration**"). A *Steps* can include no more than one instance of any MC, sub-group or sub-array defined as permitted for that group.
 
 **Sub-group -** A collection of MCs, sub-groups or sub-arrays defined as permitted to control some sub-aspect of the device (such as "Send to Cloud Detail" in the "Bug Reporting Configuration" group). A sub-group may include no more than one instance of any MC, sub-group or sub-array defined as permitted for that sub-group.
 

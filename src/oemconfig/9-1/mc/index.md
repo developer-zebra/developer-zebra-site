@@ -34,8 +34,7 @@ Order of execution
 
 **Instance -** a *single* occurrence or use of something (such as a *Step*, MC, *Group*, *Sub-group*, or *Sub-array*). An Instance might refer to the inclusion of a *Step* in a *Transaction*; an MC in a *Step; an MC, *Sub-group* or s*Sb-array* in a *Group*; or a *Sub-group* as an element of a *Sub-array*.
 
-#### Objects
-
+#### Elements
 **Group -** See *Managed Configuration Group*. 
 
 **Managed Configuration group -** A collection of MCs, sub-groups or sub-arrays defined as permitted to control some aspect of the device (such as "Analytics Configuration" or "Audio Configuration"). A Step can include no more than one instance of any MC, sub-group or sub-array defined as permitted for that group.
@@ -51,9 +50,10 @@ Order of execution
 #### Type Styling
 Type styling is used in this document to help differentiate common words from significant terms specific to OEMConfig.
 
-* ***Bold-italic*** styling identifies ***values*** of a Managed Configuration (i.e. ***On*** and ***Off***). 
-* **Bold** type identifies the name of a **Managed Configuration** group, such as **Audio Configuration**.
-* *Italic* type identifies *defined terms* such as *Transaction* and *Step*. Such terms are capitalized to differentiate them from the use of italics for *ordinary* emphasis. 
+* ***Bold-italic type*** indicates ***values*** of a Managed Configuration such as ***On*** or ***Enable***. 
+* **Bold type** indicates the name of a **Managed Configuration** group, such as the **Audio Configuration** group.
+* *Italic type* identifies *defined terms* such as *Transaction* and *Step*.<br>
+**NOTE**: Defined terms are capitalized to differentiate from italics used for *emphasis*. 
 
 -----
 

@@ -10,6 +10,8 @@ menu:
       url: /oemconfig/9-1/about
     - title: FAQs
       url: /oemconfig/9-1/faq
+    - title: Setup
+      url: /oemconfig/9-1/setup
     - title: Managed Configurations
       url: /oemconfig/9-1/mc
     - icon: fa fa-search

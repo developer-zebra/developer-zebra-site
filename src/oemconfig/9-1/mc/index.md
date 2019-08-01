@@ -113,6 +113,41 @@ Each instance of a sub-array can include any number of instances of the sub-grou
 
 ## BEGIN `OemConfig-9.1.mkdn` 
 
+## Terms in this Guide
+
+
+
+Before attempting to use OEMConfig, it's important to understand certain terms and concepts related to the organization and usage of Managed Configurations by used with OEMConfig.**
+
+
+Define -** used when referring to the definition in the OEMConfig schema that determines what the administrator is permitted to do as opposed to what an admin might elect to do. For example, within a step, an admin is permitted to include one of every defined MC and group but in most cases would only elect to include only one or a few.
+
+
+**Include -** used when referring to a decision by an administrator to elect to perform some Action or configuration as opposed to what the administrator is permitted to do, but may or may not elect to do. For example, an admin would be permitted to include one of everything, but likely would elect to include only one or a few.
+
+
+**Instance -** a SINGLE occurrence or use of something (such as a step, MC, group, sub-group, or sub-array). An Instance might refer to the inclusion of a step in a Transaction, an MC or group in a step, an MC or sub-group or sub-array in a group, or a sub-group as an element of a sub-array.
+
+
+**Transaction -** an ordered list of steps, each of which specifies one or more Actions to be performed or settings to be configured on a Zebra device. Steps are executed in the exact order specified within the transaction, but the order of execution within a step is controlled by the system. The recommended way to control order of execution, if required, is to use separate steps within a transaction.
+
+
+**Step -** a collection of Actions to be performed or settings to be configured at a specific point within a Transaction. Within a step, some MCs are defined directly (such as for entering a "Description"), while most are organized into Managed Configuration groups. An instance of a step may include no more than one instance of any MC or group that is defined as permitted for a step. Within a step, all included MCs and groups, and anything included within any groups, are executed in an order determined by the system to afford the greatest likelihood of success. For example, the system might execute a Bluetooth configuration after an Action to enable Bluetooth because configuring Bluetooth might fail if attempted when Bluetooth was disabled.
+
+
+**Group -** See Managed Configuration group.
+
+
+**Managed Configuration group -** a collection of MCs, sub-groups, or sub-arrays that are defined as permitted to control some aspect of the device (such as "Analytics Configuration" or "Audio Configuration"). A group may include no more than one instance of any MC, sub-group, or sub-array that is defined as permitted for that group.
+
+
+**Sub-group -** a collection of MCs, sub-groups, or sub-arrays that are defined as permitted to control some sub-aspect of the device (such as "Send to Cloud Detail" in "Bug Reporting Configuration"). A sub-group may include no more than one instance of any MC, sub-group, or sub-array defined as permitted for that sub-group.
+
+
+**Sub-array -** an ordered list of instances of a SINGLE sub-group, each of which can contain anything that is defined as permitted for that sub-group. The only time the same MC, sub-group, or sub-array can be included more than once into the same step is when it appears within different elements of a sub-array. For example, the "Key Mapping Configuration" group defines a sub-array "Add Mapping Behaviors" that can be used to configure multiple behaviors for a single key in different modifier states (orange, green, blue, etc.). A single step can include multiple instances of the MCs defined for the "Behaviors" sub-group, by including them in different elements in the "Add Mapping Behaviors" sub-array.
+
+
+
 ## Transaction Overview
 
 
@@ -121,35 +156,11 @@ This section describes all supported Managed Configurations (MCs), which can be 
 
 
 
-### Transaction Steps
+## Transaction Steps
 
 
 
-A *Transaction* is a sequence of one or more *Transaction Steps*. A single *Transaction* may include any number of steps, where each step performs one or more Actions or configuration settings on a device. Step instances will be executed in the order they are included within the *Transaction*.
-
-
-Within a step, somes MCs are defined directly but most are organized into *Managed Configuration Groups*. MCs defined under a given group relate to some common aspect of device behavior. For example, MCs defined under the **Audio Configuration** group affect the audible sounds produced by a device.
-
-
-Each instance of a step included within a *Transaction* can include any number of groups, but at most one instance of any given group may be used within a given step instance. To include a group more than once within a *Transaction*, each instance of the group must be included in a separate step within the *Transaction*.
-
-
-Within a group, MCs may be defined directly or may be organized into sub-groups or sub-arrays under that group. If a single step includes multiple groups, the order of execution of those groups within that step cannot be controlled. To control the order of execution amomgst groups, the groups must be included in separate steps within the *Transaction*. This allows the order of exection of the groups to be controlled by the order of execution of the steps in which the groups are included.
-
-
-Each instance of a group included within a step can include any number of the MCs, sub-groups, or sub-arrays that are defined for that group, but at most one instance of any given MC, sub-group, or sub-array may be included within a group instance. To include an MC, sub-group, or sub-array more than once, multiple instances of the group must be used, each within a step instance.
-
-
-Within a sub-group, MCs may be defined directly or may be further organized into lower level sub-groups or sub-arrays.
-
-
-Each instance of a sub-group can include any number of MCs, sub-groups, or sub-arrays that are defined for that sub-group, but at most one instance of any given MC, sub-group, or sub-array may be used within a sub-group instance.
-
-
-Within a sub-array, a single sub-group is defined within which MCs may be defined directly or may be further organized into lower level sub-groups or sub-arrays.
-
-
-Each instance of a sub-array can include any number of instances of the sub-group defined for that sub-array. Each instance of the sub-group included in a sub-array may include any number of the MCs, sub-groups, or sub-arrays that are defined for that sub-group of that sub-array, but at most one instance of any given MC, sub-group, or sub-array included within a given sub-group instance within a sub-array.
+Use this Array to specify an order list of *Transaction Steps* that define the Actions or configurations that you wish to perform on a device as part of an overall *Transaction*.
 
 
 **Detail Information:** 
@@ -159,19 +170,12 @@ Each instance of a sub-array can include any number of instances of the sub-grou
 - Type = bundle_array 
 
 
-#### Transaction Step
+-----
+## Transaction Step
 
 
 
-Use this Group to specify a single *Transaction Step* that defines one or more Actions or configurations that you wish to perform on a device as part of an overall *Transaction*.
-
-
-Multiple Actions or configurations of different types can be defined as part of a single *Transaction Step*, but you CANNOT directly control the order or execution within a *Transaction Step*.
-- OemConfig will execute multiple Actions and configurations defined within a *Transaction Step* in an order that it determines will ensure that everything is executed successfully.
-- If your need to control the order of execution of various Actions or configurations, place them in different *Transaction Steps*, and control the ordering those *Transaction Steps* within the *Transaction*.
-
-
-The following section **Transaction Step Level** describes the Actions and configurations you can perform as a part of a *Transaction Step*.
+Use this Group to specify a single *Transaction Step* that defines one or more Actions or configurations that you wish to perform on a device at a specific point in an an overall *Transaction*.
 
 
 **Detail Information:** 
@@ -181,15 +185,7 @@ The following section **Transaction Step Level** describes the Actions and confi
 - Type = bundle 
 
 
-# Transaction Step Level
-
-
-
-This section describes Managed Configurations that can be used to define the Actions and configurations to be performed by a *Transaction Step* within a *Transaction*, to provide an *Explanation* about a *Transaction Step*, and to define how errors that occur during the processing of a *Transaction Step* will be handled.
-
-
-
-## Explanation
+### Explanation
 
 
 
@@ -208,7 +204,7 @@ Since a *Transaction* may include many *Transaction Steps* and each *Transaction
 - Type = string 
 
 
-## Error Mode
+### Error Mode
 
 
 
@@ -230,6 +226,14 @@ By default, execution will continue with the next *Transaction Step* once execut
 - Type = string 
 
 <table border="1"><tr align="center"><th><small> UI Choice </small></th><th><small> JSON Value </small></th></tr align="center"><tr align="center"><td><b><i><small> Stop </small></i></b></td><td><small> Stop </small></td></tr><tr align="center"><td><b><i><small> Continue </small></i></b></td><td><small> Continue </small></td></tr></table> 
+
+
+## Managed Configuration Groups
+
+
+
+A step may contain one or more of the following groups.
+
 
 
 -----
@@ -307,7 +311,7 @@ The Analytics Client is turned on (enabled) by default on all devices:
 
 
 
-:broken_heart: **CONTENT-TBD**
+This Group is deprecated and will be discontinued in a subsequent version.
 
 
 **Detail Information:** 
@@ -321,7 +325,7 @@ The Analytics Client is turned on (enabled) by default on all devices:
 
 
 
-:broken_heart: **CONTENT-TBD**
+This Managed Configuration is deprecated and will be discontinued in a subsequent version.
 
 
 **Detail Information:** 
@@ -342,7 +346,7 @@ The Analytics Client is turned on (enabled) by default on all devices:
 
 
 
-:broken_heart: **CONTENT-TBD**
+This Managed Configuration is deprecated and will be discontinued in a subsequent version.
 
 
 **Detail Information:** 
@@ -363,7 +367,7 @@ The Analytics Client is turned on (enabled) by default on all devices:
 
 
 
-:broken_heart: **CONTENT-TBD**
+This Managed Configuration is deprecated and will be discontinued in a subsequent version.
 
 
 **Detail Information:** 
@@ -384,7 +388,7 @@ The Analytics Client is turned on (enabled) by default on all devices:
 
 
 
-:broken_heart: **CONTENT-TBD**
+This Managed Configuration is deprecated and will be discontinued in a subsequent version.
 
 
 **Detail Information:** 
@@ -403,7 +407,7 @@ The Analytics Client is turned on (enabled) by default on all devices:
 
 
 
-:broken_heart: **CONTENT-TBD**
+This Managed Configuration is deprecated and will be discontinued in a subsequent version.
 
 
 **Detail Information:** 
@@ -422,7 +426,7 @@ The Analytics Client is turned on (enabled) by default on all devices:
 
 
 
-:broken_heart: **CONTENT-TBD**
+This Managed Configuration is deprecated and will be discontinued in a subsequent version.
 
 
 **Detail Information:** 

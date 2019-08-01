@@ -41,7 +41,7 @@ Before attempting to configure a Transaction, it's important to understand the c
 #### Elements
 **Transaction -** An ordered list of *Steps*, each of which specifies one or more Actions to be performed or settings to be configured on a Zebra device. *Steps* are executed in the exact order specified within the *Transaction*, but the order of execution within a *Step* is controlled by the system. The recommended means of controlling the order of execution, if required, is to use separate *Steps* within a *Transaction*.
 
-**Step -** A collection of Actions to be performed or settings to be configured at a specific point within a Transaction. Within a Step, some MCs are defined directly (such as for entering a "Description"), but most are organized into Managed Configuration groups. An instance of a *Step* may include no more than one instance of any MC or group that is defined as permitted for a Step. Within a Step, all included MCs and groups, and anything included within any groups, are executed in an order determined by the system to afford the greatest likelihood of success. For example, the system might execute a Bluetooth configuration after an Action to enable Bluetooth because configuring Bluetooth might fail if attempted when Bluetooth was disabled.
+**Step -** A collection of Actions to be performed or settings to be configured at a specific point within a Transaction. Within a *Step*, some MCs are defined directly (such as for entering a "Description"), but most are organized into Managed Configuration groups. An instance of a *Step* may include no more than one instance of any MC or group that is defined as permitted for a *Step*. Within a *Step*, all included MCs and groups, and anything included within any groups, are executed in an order determined by the system to afford the greatest likelihood of success. For example, the system might execute a Bluetooth configuration after an Action to enable Bluetooth because configuring Bluetooth might fail if attempted when Bluetooth was disabled.
 
 **Group -** See *Managed Configuration Group*. 
 
@@ -50,7 +50,6 @@ Before attempting to configure a Transaction, it's important to understand the c
 **Sub-group -** A collection of MCs, sub-groups or sub-arrays defined as permitted to control some sub-aspect of the device (such as "Send to Cloud Detail" in the "Bug Reporting Configuration" group). A sub-group may include no more than one instance of any MC, sub-group or sub-array defined as permitted for that sub-group.
 
 **Sub-array -** An ordered list of instances of a SINGLE sub-group, each of which can contain anything defined as permitted for that sub-group. **The only time the same MC, sub-group or sub-array can be included more than once into the same *Step* is when it appears within different elements of a sub-array**. For example, the "Key Mapping Configuration" group defines the sub-array "Add Mapping Behaviors," which can be used to configure multiple behaviors for a single key in different modifier states (orange, green, blue, etc.). A single *Step* can include multiple instances of the MCs defined for the "Behaviors" sub-group by including them in different elements in the "Add Mapping Behaviors" sub-array.
-
 
 ### Type Styling
 Type styling is used in this document to help differentiate common words from significant terms specific to OEMConfig.
@@ -70,7 +69,7 @@ Type styling is used in this document to help differentiate common words from si
 
 
 
-This section describes all supported Managed Configurations (MCs), which can be used to define an ordered list of Steps for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*.
+This section describes all supported Managed Configurations (MCs), which can be used to define an ordered list of *Steps* for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*.
 
 
 

@@ -32,13 +32,13 @@ A: OEMConfig is a Google-sanctioned, standards-based approach for an OEM to exte
 
 -----
 
-####Q: What is Zebra OEMConfig?**
+####Q: What is Zebra OEMConfig?
 
 A: Zebra OEMConfig is Zebra’s OEM-specific application that conforms to the OEMConfig model and provides access to Zebra-specific and privileged functions via Managed Configurations that are exposed by the Zebra OEMConfig application, which is built-into Zebra Android devices. 
 
 -----
 
-####Q: What are Managed Configurations?** 
+####Q: What are Managed Configurations?
 
 A: Managed Configurations are a standard feature of Android Enterprise whereby any application that is installed on an Android device can choose to expose a set of name/value pairs that can be used to configure selected aspects of that application. 
 

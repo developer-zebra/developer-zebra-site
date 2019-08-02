@@ -25,16 +25,29 @@ OEMConfig is not pre-installed on Zebra devices; it must be installed through th
 
 ### System Requirements
 
-* **Fully managed Zebra device(s)** with Android 7.x (Nougat) or higher
+* **Fully managed Zebra device(s)** running Android 7.x (Nougat) or higher
 * **MX 9.1 or higher*** on device(s). [Which version is installed?](/mx/mx-version-on-device)
-* A [UEM or EMM](../faq) system with support for [OEMConfig-compliant admin tools](../faq)
+* A [UEM or EMM](../faq/#whatsauem) system with support for [OEMConfig-compliant admin tools](../faq)
 
 &#42;_OEMConfig works on devices with MX versions prior to 9.1, but attempts to access features implemented in later MX versions will result in error(s). See the [MX Feature Matrix](/mx) for a complete list of features in each MX version_. 
 
 ### Download and install
+The exact process for using Zebra OEMConfig varies depending on the device management system in use. The general processes should be similar to those listed below.  
 
-Google Play
-etc. 
+##### Google Play-compliant EMMs 
+1. Point the EMM's management console to the Google Play Store.
+2. Download OEMConfig; the Zebra schema and other required files are automatically included. 
+3. Push `OEMConfig.apk` to the Zebra device(s) to be configured.
+4. Point the EMM to the Zebra schema to display the Zebra data-driven UI for configuring Zebra devices. 
+5. Create *Transaction(s)* using the [Managed Configurations](../mc) described in the Zebra schema.
+6. Push *Transaction(s)* to device(s). 
+
+##### Other EMMs; AOSP, GMS-restricted Devices
+1. Download OEMConfig from the [Zebra Support Portal](http://zebra.com/support); the Zebra schema and other required files are automatically included. 
+3. Push `OEMConfig.apk` to the Zebra device(s) to be configured.
+4. Point the EMM to the Zebra schema to display the Zebra data-driven UI for configuring Zebra devices. 
+5. Create *Transaction(s)* using the [Managed Configurations](../mc) described in the Zebra schema.
+6. Push *Transaction(s)* to device(s). 
 
 -----
 

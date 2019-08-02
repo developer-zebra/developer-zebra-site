@@ -16,68 +16,6 @@ menu:
     - icon: fa fa-search
       url: /oemconfig/9-1/search
 ---
-<!-- 
-<h1 style="font-size:50px;">50px Heading</h1>
-<h1 style="font-size:40px;">40px Heading</h1>
-<h1 style="font-size:30px;">30px Heading</h1>
-<h1 style="font-size:20px;">20px Heading</h1>
-
-
-<b><font size="7" color="black">Terms in this Guide (size 7, "black")</font></b>
-#Terms in this Guide (#)
-
-<b><font size="6">Terms in this Guide (font size 6, default body color)</font></b>
-##Terms in this Guide(##)
-
-<b><font size="5" color="black">Terms in this Guide (size 5, "black")</font></b>
-###Terms in this Guide (###)
-
-<b><font size="4" color="0000000">Terms in this Guide (size 4, color "000000")</font></b>
-####Terms in this Guide (####)
-
-
-(Transaction Overview)
-This section of the OEMConfig documentation describes all supported Managed Configurations (MCs), which can be used to define an ordered list of *Steps* for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*. 
-
-Before attempting to configure a Transaction, it's important to understand the concept of Managed Configuration groups, sub-groups, arrays and sub-arrays. A *Transaction* can contain one or many of these objects, and some can be nested as other sub-arrays. 
-
-### Terms in this Guide
-
-#### Concepts
-**Define -** Used when referring to the definition in the OEMConfig schema that determines what the administrator is *permitted* to do as opposed to what an admin might *elect* to do. For example, within a *Step*, an admin is permitted to include one of every defined *Managed Configuration Group*, but in most cases would elect to include only one or a few.
-
-**Include -** Used when referring to a decision by an administrator to *elect* to perform some *Action* or setting configuration as opposed to what the administrator is *permitted* to do, but may or may not elect to do. For example, an admin would be permitted to include one of everything, but likely would elect to include only one or a few.
-
-**Instance -** a *single* occurrence or use of something (such as a *Step*, MC, *Group*, *Sub-group*, or *Sub-array*). An Instance might refer to the inclusion of a *Step* in a *Transaction*; an MC in a *Step*; an MC, *Sub-group* or *Sub-array* in a *Group*; or a *Sub-group* as an element of a *Sub-array*.
-
-#### Elements
-**Transaction -** An ordered list of *Steps*, each of which specifies one or more Actions to be performed or settings to be configured on a Zebra device. *Steps* are executed in the exact order specified within the *Transaction*, but the order of execution within a *Step* is controlled by the system. The recommended means of controlling the order of execution, if required, is to use separate *Steps* within a *Transaction*.
-
-**Step -** A collection of Actions to be performed or settings to be configured at a specific point within a Transaction. Within a *Step*, some MCs are defined directly (such as for entering a "Description"), but most are organized into Managed Configuration groups. An instance of a *Step* may include no more than one instance of any MC or group that is defined as permitted for a *Step*. Within a *Step*, all included MCs and groups, and anything included within any groups, are executed in an order determined by the system to afford the greatest likelihood of success. For example, the system might execute a Bluetooth configuration after an Action to enable Bluetooth because configuring Bluetooth might fail if attempted when Bluetooth was disabled.
-
-**Group -** See *Managed Configuration Group*. 
-
-**Managed Configuration group -** A collection of MCs, sub-groups or sub-arrays defined as permitted to control some aspect of the device (such as "**Analytics Configuration**" or "**Audio Configuration**"). A *Steps* can include no more than one instance of any MC, sub-group or sub-array defined as permitted for that group.
-
-**Sub-group -** A collection of MCs, sub-groups or sub-arrays defined as permitted to control some sub-aspect of the device (such as "Send to Cloud Detail" in the "Bug Reporting Configuration" group). A sub-group may include no more than one instance of any MC, sub-group or sub-array defined as permitted for that sub-group.
-
-**Sub-array -** An ordered list of instances of a SINGLE sub-group, each of which can contain anything defined as permitted for that sub-group. **The only time the same MC, sub-group or sub-array can be included more than once into the same *Step* is when it appears within different elements of a sub-array**. For example, the "Key Mapping Configuration" group defines the sub-array "Add Mapping Behaviors," which can be used to configure multiple behaviors for a single key in different modifier states (orange, green, blue, etc.). A single *Step* can include multiple instances of the MCs defined for the "Behaviors" sub-group by including them in different elements in the "Add Mapping Behaviors" sub-array.
-
-### Type Styling
-Type styling is used in this document to help differentiate common words from significant terms specific to OEMConfig.
-
-* ***Bold-italic type*** indicates ***values*** of a Managed Configuration such as ***On*** or ***Enable***. 
-* **Bold type** indicates the name of a **Managed Configuration** group, such as the **Audio Configuration** group.
-* *Italic type* identifies *defined terms* such as *Transaction* and *Step*.<br>
-**NOTE**: Defined terms are capitalized to differentiate from italics used for *emphasis*. 
-
------
-
-## BEGIN `OemConfig-9.1.mkdn` 
-
------
--->
-
 <b><font size="6" color="black"> Terms in this Guide</font></b>
 
 
@@ -90,7 +28,7 @@ Type styling is used in this document to help differentiate common words from si
 
 
 
-**Define -** Used when referring to the definition in the OEMConfig schema that determines what the administrator is *permitted* to do as opposed to what an admin might *elect* to do. For example, within a step, an admin is *permitted* to include one of every defined Managed Configuration group but in most cases would only *elect* to include only one or a few.
+**Define -** Used when referring to the definition in the OEMConfig schema that determines what the administrator is *permitted* to do as opposed to what an admin might *elect* to do. For example, within a *Step*, an admin is *permitted* to include one of every defined *Managed Configuration Group* but in most cases would only *elect* to include only one or a few.
 
 
 **Include -** Used when referring to a decision by an administrator to *elect* to perform some Action or configuration as opposed to what the administrator is *permitted* to do, but may or may not *elect* to do. For example, an admin would be *permitted* to include one of everything, but likely would *elect* to include only one or a few.
@@ -107,13 +45,13 @@ Type styling is used in this document to help differentiate common words from si
 **Transaction -** An ordered list of *Steps*, each of which specifies one or more Actions to be performed or settings to be configured on a Zebra device. *Steps* are executed in the exact order specified within the *Transaction*, but the order of execution within a *Step* is controlled by the system. The recommended means of controlling the order of execution, if required, is to use separate *Steps* within a *Transaction*.
 
 
-**Step -** A collection of Actions to be performed or settings to be configured at a specific point within a Transaction. Within a *Step*, some MCs are defined directly (such as for entering an **Explanation** or selecting an **Error Mode**), but most are organized into *Managed Configuration Groups*. An instance of a *Step* can include no more than one instance of any MC or group that is defined for a *Step*. Within a *Step*, all included MCs and groups, and anything included within any groups, are executed in an order determined by the system to afford the greatest likelihood of success. For example, the system might execute a Bluetooth configuration after an Action to enable Bluetooth because configuring Bluetooth might fail if attempted when Bluetooth was disabled.
+**Step -** A collection of Actions to be performed or settings to be configured at a specific point within a Transaction. Within a *Step*, some MCs are defined directly (such as for entering an **Explanation** or selecting an **Error Mode**), but most are organized into *Managed Configuration Groups*. An instance of a *Step* can include no more than one instance of any MC or *Group* that is defined for a *Step*. Within a *Step*, all included MCs and *Groups*, and anything included within any *Groups*, are executed in an order determined by the system to afford the greatest likelihood of success. For example, the system might execute a Bluetooth configuration after an Action to enable Bluetooth because configuring Bluetooth might fail if attempted when Bluetooth was disabled.
 
 
 **Group -** See *Managed Configuration Group*.
 
 
-**Managed Configuration Group -** A collection of MCs, *Sub-groups*, or *Sub-arrays* that are defined to control some aspect of the device (such as **Analytics Configuration** or **Audio Configuration**). A group can include no more than one instance of any MC, *Sub-group*, or *Sub-array* that is defined for that group.
+**Managed Configuration Group -** A collection of MCs, *Sub-groups*, or *Sub-arrays* that are defined to control some aspect of the device (such as **Analytics Configuration** or **Audio Configuration**). A *Group* can include no more than one instance of any MC, *Sub-group*, or *Sub-array* that is defined for that *Group*.
 
 
 **Sub-group -** A collection of MCs, *Sub-groups*, or *Sub-arrays* that are defined as *permitted* to control some sub-aspect of the device (such as **Send to Cloud Detail** in **Bug Reporting Configuration**). A *Sub-group* can include no more than one instance of any MC, *Sub-group*, or *Sub-array* defined for that *Sub-group*.
@@ -132,9 +70,13 @@ Type styling is used in this document to help differentiate common words from si
 - *Italic type* indicates *defined terms*, such as *Transaction* and *Step*.
 **NOTE**: Defined terms are Capitalized to differentiate from italics used for *emphasis*.
 
+
+
 <b><font size="6" color="black"> Transaction Overview</font></b>
 
-This section of the OEMConfig documentation describes all supported Managed Configurations (MCs), which can be used to define an ordered list of Steps for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*. Before attempting to configure a *Transaction*, it's important to understand the concept of Managed Configuration groups, sub-groups, arrays and sub-arrays. A *Transaction* can contain one or many of these objects, and some can be nested as other sub-arrays.
+
+
+This section of the OEMConfig documentation describes all supported Managed Configurations (MCs), which can be used to define an ordered list of *Steps* for defining one or more Actions to be performed or settings to be configured on a Zebra device as part of an overall *Transaction*. Before attempting to configure a *Transaction*, it's important to understand the concept of Managed Configuration *Groups*, *Sub-groups*, *Sub-arrays*. A *Transaction* can contain one or many of these elements, and can be nested multiple levels deep.
 
 
 
@@ -208,13 +150,13 @@ By default, execution will continue with the next *Transaction Step* once execut
 - Type = string 
 
 <table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Stop&nbsp;</small></i></b></td><td><small>&nbsp;Stop&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Continue&nbsp;</small></i></b></td><td><small>&nbsp;Continue&nbsp;</small></td></tr></table> 
-
+<br>
 
 <b><font size="6" color="black"> Managed Configuration Groups</font></b>
 
 
 
-A step can include one or more of the following groups.
+A *Step* can include one or more of the following *Managed Configuration Groups*.
 
 
 
@@ -223,7 +165,7 @@ A step can include one or more of the following groups.
 
 
 
-Use this group to configure the Analytics Client in a device.
+Use this *Group* to configure the Analytics Client in a device.
 
 
 **Detail Information:** 
@@ -428,7 +370,7 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 
 
 
-Use this group to configure the audio settings on a device.
+Use this *Group* to configure the audio settings on a device.
 
 
 **Detail Information:** 
@@ -511,7 +453,7 @@ Select the audio replication behavior of of a device.
 
 
 
-Use this group to configure whether and how *Automatic Triggering* will occur on a device.
+Use this *Group* to configure whether and how *Automatic Triggering* will occur on a device.
 
 
 Automatic triggering allows a Device User to initiate trigger-activated functions simply by bringing an object within proximity of the device sensor as opposed to requiring the Device User to manually initiate such functions.
@@ -597,7 +539,7 @@ Select the range at which automatic triggering will detect the presence of an ob
 
 
 
-Use this group to configure which built-in System Applications can/cannot be used on a device.
+Use this *Group* to configure which built-in System Applications can/cannot be used on a device.
 
 
 **Detail Information:** 
@@ -688,7 +630,7 @@ Enter the *Android Package Name* that identifies a *Built-In System Application*
 
 
 
-Use this group to configure Bluetooth settings on a device.
+Use this *Group* to configure Bluetooth settings on a device.
 
 
 **Detail Information:** 
@@ -988,7 +930,7 @@ Any existing rule or rules that have the specified *Device Upper Address Part* w
 
 
 
-Use this group to configure Bug Reporting on a device.
+Use this *Group* to configure Bug Reporting on a device.
 
 
 **Detail Information:** 
@@ -1168,7 +1110,7 @@ Select whether Zebra Extended Bug Reporting should watch for the occurrence of U
 
 
 
-Use this sub-group to configure whether copies of generated Bug Reports will be automatically emailed and, if so, the details of the email that should be sent.
+Use this *Sub-group* to configure whether copies of generated Bug Reports will be automatically emailed and, if so, the details of the email that should be sent.
 
 
 **Detail Information:** 
@@ -1239,7 +1181,7 @@ Enter a timeout value, the expiration of which will cause the sending Bug Report
 
 
 
-Use this sub-group to configure whether copies of generated Bug Reports will be stored in the Zebra device and, if so, where in the device they will be stored.
+Use this *Sub-group* to configure whether copies of generated Bug Reports will be stored in the Zebra device and, if so, where in the device they will be stored.
 
 
 **Detail Information:** 
@@ -1335,7 +1277,7 @@ Enter a timeout value, the expiration of which will cause the storing of Bug Rep
 
 
 
-Use this sub-group to configure whether copies of generated Bug Reports will be automatically emailed and, if so, the details of the email that should be sent.
+Use this *Sub-group* to configure whether copies of generated Bug Reports will be automatically emailed and, if so, the details of the email that should be sent.
 
 
 **Detail Information:** 
@@ -1522,7 +1464,7 @@ Enter a timeout value, the expiration of which will cause the sending of Bug Rep
 
 
 
-Use this sub-array to customize the dialog that will be presented to the Device User to collect information that will be included in generated Bug Reports.
+Use this *Sub-array* to customize the dialog that will be presented to the Device User to collect information that will be included in generated Bug Reports.
 
 
 **Detail Information:** 
@@ -1541,7 +1483,7 @@ Use this sub-array to customize the dialog that will be presented to the Device 
 
 
 
-Use this sub-group to define a single element of a dialog the Device User will use to provide Bug Report information.
+Use this *Sub-group* to define a single element of a dialog the Device User will use to provide Bug Report information.
 
 
 **Detail Information:** 
@@ -1677,7 +1619,7 @@ Enter the amount of inactivity time (time in milliseconds with no Device User ac
 
 
 
-Use this group to configure which camera(s) or other image capture devices can be used to take pictures on a device.
+Use this *Group* to configure which camera(s) or other image capture devices can be used to take pictures on a device.
 
 
 **Detail Information:** 
@@ -1775,7 +1717,7 @@ Select whether the Imager (special-purpose image capture device), if present on 
 
 
 
-Use this group to configure the operation and state of the clock on a device.
+Use this *Group* to configure the operation and state of the clock on a device.
 
 
 **Detail Information:** 
@@ -1950,7 +1892,7 @@ Select whether the format in which time will be displayed on the device will be 
 
 
 
-Use this group to configure the Dynamic Host Configuration Protocol (DHCP) Client on a device.
+Use this *Group* to configure the Dynamic Host Configuration Protocol (DHCP) Client on a device.
 
 
 
@@ -2515,7 +2457,7 @@ Enter the option value for a custom DHCP Option that the DHCP Client on a device
 
 
 
-Use this group to perform Device Administration functions, such as:
+Use this *Group* to perform Device Administration functions, such as:
 - Control which applications and services are allowed to submit XML for processing by the Zebra MX Management System on a device
 - Submit XML for processing by the Zebra MX Management System
 - Reserve (and unreserve) application User IDs
@@ -2623,7 +2565,7 @@ Enter an XML string to be submitted for processing by the .Zebra MX Management S
 
 
 
-Use this group to configure Device Central behavior on a device.
+Use this *Group* to configure Device Central behavior on a device.
 
 
 **Detail Information:** 
@@ -2728,7 +2670,7 @@ Select whether the Device User should be allowed to use the Device Central UI to
 
 
 
-Use this group to configure Display Screen settings on a device.
+Use this *Group* to configure Display Screen settings on a device.
 
 
 **Detail Information:** 
@@ -2959,7 +2901,7 @@ Select the system font size
 
 
 
-Use this group to configure the Enterprise Keyboard in a device.
+Use this *Group* to configure the Enterprise Keyboard in a device.
 
 
 **Detail Information:** 
@@ -3762,7 +3704,7 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 
 
 
-Use this group to configure Enterprise NFC settings on a device.
+Use this *Group* to configure Enterprise NFC settings on a device.
 
 
 **Detail Information:** 
@@ -3781,7 +3723,7 @@ Use this group to configure Enterprise NFC settings on a device.
 
 
 
-Use this sub-group to reset all the Enterprise NFC settings to their factory default values on a device.
+Use this *Sub-group* to reset all the Enterprise NFC settings to their factory default values on a device.
 
 
 **Detail Information:** 
@@ -3805,7 +3747,7 @@ Use this sub-group to reset all the Enterprise NFC settings to their factory def
 
 
 
-Use this sub-group to configure whether Enterprise NFC should read NFC Type A Tags.
+Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type A Tags.
 
 
 - If the value ***Do Not Read*** is selected, Enterprise NFC will NOT attempt to read NFC Type A Tags. This could increase the speed of reading other tag types in cases where Type A Tags are not used.
@@ -3835,7 +3777,7 @@ Use this sub-group to configure whether Enterprise NFC should read NFC Type A Ta
 
 
 
-Use this sub-group to configure whether Enterprise NFC should read NFC Type BTags.
+Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type BTags.
 
 
 - If the value ***Do Not Read*** is selected, Enterprise NFC will NOT attempt to read NFC Type B Tags. This could increase the speed of reading other tag types in cases where Type B Tags are not used.
@@ -3865,7 +3807,7 @@ Use this sub-group to configure whether Enterprise NFC should read NFC Type BTag
 
 
 
-Use this sub-group to configure whether Enterprise NFC should read NFC Type F Tags.
+Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type F Tags.
 
 
 - If the value ***Do Not Read*** is selected, Enterprise NFC will NOT attempt to read NFC Type F Tags. This could increase the speed of reading other tag types in cases where Type F Tags are not used.
@@ -3895,7 +3837,7 @@ Use this sub-group to configure whether Enterprise NFC should read NFC Type F Ta
 
 
 
-Use this sub-group to configure whether Enterprise NFC should read NFC Type V Tags.
+Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type V Tags.
 
 
 - If the value ***Do Not Read*** is selected, Enterprise NFC will NOT attempt to read NFC Type V Tags. This could increase the speed of reading other tag types in cases where Type V Tags are not used.
@@ -3925,7 +3867,7 @@ Use this sub-group to configure whether Enterprise NFC should read NFC Type V Ta
 
 
 
-Use this sub-group to configure whether Enterprise NFC should attempt to use NFC Data Exchange Format (NDEF) when reading tags.
+Use this *Sub-group* to configure whether Enterprise NFC should attempt to use NFC Data Exchange Format (NDEF) when reading tags.
 
 
 - If the value ***Do Not Use*** is selected, Enterprise NFC will NOT attempt tp read NDEF formatted tags. This could increase the speed of reading non-NDEF tags by not spending unnecessary time trying to interpret tag data according to NDEF formatting rules.
@@ -3955,7 +3897,7 @@ Use this sub-group to configure whether Enterprise NFC should attempt to use NFC
 
 
 
-Use this sub-group to configure the polling mode that the Enterprise NFC should use.
+Use this *Sub-group* to configure the polling mode that the Enterprise NFC should use.
 
 
 - If the value ***Hybrid*** is selected, Enterprise NFC will poll in a manner designed to strike a reasonable balance between polling speed and battery life.
@@ -3988,7 +3930,7 @@ Use this sub-group to configure the polling mode that the Enterprise NFC should 
 
 
 
-Use this sub-group to configure whether the Enterprise NFC should Boost CPU Speed during NFC transactions.
+Use this *Sub-group* to configure whether the Enterprise NFC should Boost CPU Speed during NFC transactions.
 - If the value ***Do Not Boost*** is selected, Enterprise NFC will leave the CPU Speed unmodified during NFC transactions.
 - If the value ***Boost*** is selected, Enterprise NFC will Boost the CPU Speed during NFC transactions to enhance performance of those transactions.
 
@@ -4014,7 +3956,7 @@ Use this sub-group to configure whether the Enterprise NFC should Boost CPU Spee
 
 
 
-Use this sub-group to configure the Baud Rate that Enterprise NFC should use to communicate to Type A Tags.
+Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use to communicate to Type A Tags.
 - If the value ***106 kbps*** is selected, Enterprise NFC will always communicate to Type A Tags using a Baud Rate of 106 kbps.
 - If the value ***212 kbps*** is selected, Enterprise NFC will communicate to Type A Tags using a Baud Rate of 106 kbps or 212 kbps, depending on the Baud Rate supported by the tag.
 - If the value ***424 kbps*** is selected, Enterprise NFC will communicate to Type A Tags using a Baud Rate of 106 kbps, 212 kbps, or 424 kbps, depending on the Baud Rate supported by the tag.
@@ -4042,7 +3984,7 @@ Use this sub-group to configure the Baud Rate that Enterprise NFC should use to 
 
 
 
-Use this sub-group to configure the Baud Rate that Enterprise NFC should use to communicate to Type B Tags.
+Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use to communicate to Type B Tags.
 
 
 - If the value ***106 kbps*** is selected, Enterprise NFC will always communicate to Type B Tags using a Baud Rate of 106 kbps.
@@ -4078,7 +4020,7 @@ Use this sub-group to configure the Baud Rate that Enterprise NFC should use to 
 
 
 
-Use this sub-group to configure whether the Enterprise NFC should use *Peer-to-Peer Mode*. This is generally used when two NFC enabled devices want to communicate with each other to exchange data.
+Use this *Sub-group* to configure whether the Enterprise NFC should use *Peer-to-Peer Mode*. This is generally used when two NFC enabled devices want to communicate with each other to exchange data.
 - If the value ***Do Not Use*** is selected, Enterprise NFC will NOT use *Peer-to-Peer Mode* and hence will operate only in *Read/Write Mode*, unless it is also configured to operated in *Card Emulation Mode* by via **Card Emulation Mode**.
 - If the value ***Use*** is selected, Enterprise NFC will use *Peer-to-Peer Mode* and hence will operate in both *Peer-to-Peer Mode* and *Read/Write Mode*, and and optionally also in *Card Emulation Mode*, if configured via **Card Emulation Mode**.
 
@@ -4104,7 +4046,7 @@ Use this sub-group to configure whether the Enterprise NFC should use *Peer-to-P
 
 
 
-Use this sub-group to configure whether the Enterprise NFC should use *Card Emulation Mode*. This is generally used when an NFC enabled device wants to emulate a *Smart Card*.
+Use this *Sub-group* to configure whether the Enterprise NFC should use *Card Emulation Mode*. This is generally used when an NFC enabled device wants to emulate a *Smart Card*.
 - If the value ***Do Not Use*** is selected, Enterprise NFC will NOT use *Card Emulation Mode* and hence will operate only in *Read/Write Mode*, unless it is also configured to operated in *Peer-to-Peer Mode* by via **Peer to Peer Mode**.
 - If the value ***Use*** is selected, Enterprise NFC will use *Card Emulation Mode* and hence will operate in both *Card Emulation Mode* and *Read/Write Mode* and optionally also in *Peer-to-Peer Mode*, if configured via **Peer to Peer Mode**.
 
@@ -4130,7 +4072,7 @@ Use this sub-group to configure whether the Enterprise NFC should use *Card Emul
 
 
 
-Use this sub-group to configure whether the Enterprise NFC should be allowed to be used from the Lock Screen on a device.
+Use this *Sub-group* to configure whether the Enterprise NFC should be allowed to be used from the Lock Screen on a device.
 
 
 - If the value ***Disallow*** is selected, Enterprise NFC will NOT allow NFC operations to be performed when the device is at the lock screen.
@@ -4161,7 +4103,7 @@ Use this sub-group to configure whether the Enterprise NFC should be allowed to 
 
 
 
-Use this group to configure the operation of the Ethernet Adapter on a device.
+Use this *Group* to configure the operation of the Ethernet Adapter on a device.
 
 
 **Detail Information:** 
@@ -4515,7 +4457,7 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 
 
 
-Use this group to configure how Firmware Over The Air (FOTA) operations are performed and and to explicitly initiate such operations on a device.
+Use this *Group* to configure how Firmware Over The Air (FOTA) operations are performed and and to explicitly initiate such operations on a device.
 
 
 **Detail Information:** 
@@ -4696,7 +4638,7 @@ Enter the path and file name of a Manifest file, which must already exist at the
 
 
 
-Use this group to configure Google Mobile Services (GMS) settings on a device.
+Use this *Group* to configure Google Mobile Services (GMS) settings on a device.
 
 
 **Detail Information:** 
@@ -4747,7 +4689,7 @@ Select the amount of functionality of Google Mobile Services (GMS) to enable.
 
 
 
-Use this group to configure the operation of the General Packet Radio Service (GPRS) subsystem on a device by controlling the configurations of GPRS Access Point Name (APNs).
+Use this *Group* to configure the operation of the General Packet Radio Service (GPRS) subsystem on a device by controlling the configurations of GPRS Access Point Name (APNs).
 
 
 **Detail Information:** 
@@ -5223,7 +5165,7 @@ Enter the name of an APN to be removed when the value ***RemoveApn*** is selecte
 
 
 
-Use this group to configure General User Interface (UI) aspects of a device.
+Use this *Group* to configure General User Interface (UI) aspects of a device.
 
 
 **Detail Information:** 
@@ -6038,7 +5980,7 @@ Select whether the Device User will be allowed to turn the *Large Key Indicator*
 
 
 
-Use this group to configure the network host name on the device.
+Use this *Group* to configure the network host name on the device.
 
 
 **Detail Information:** 
@@ -6080,7 +6022,7 @@ Enter the name by which a device will be known on the network.
 
 
 
-Use this group to configure how the keys on the physical keyboard (if any) of the device are mapped into key and other behaviors.
+Use this *Group* to configure how the keys on the physical keyboard (if any) of the device are mapped into key and other behaviors.
 
 
 **Detail Information:** 
@@ -6100,7 +6042,7 @@ Use this group to configure how the keys on the physical keyboard (if any) of th
 
 
 Select an Action to affect the behaviors mapped to the keys on the physical keyboard (if any) of a device:
-- If the value ***Add Mapping*** is selected, a new mapping for a single physical key is added to the mapping tables for one or more keyboard states. You must also specify **Add Mapping Key ID** to provide the physical key for which mappings are to be added or replaced. In addition, you must also specify the sub-array **Add Mapping Behaviors** to define the behavior(s) to be mapped to the identified physical key. If any prior mappings were applied to specify the behaviors of the identified physical key, they will all be replaced by the new specified behaviors.
+- If the value ***Add Mapping*** is selected, a new mapping for a single physical key is added to the mapping tables for one or more keyboard states. You must also specify **Add Mapping Key ID** to provide the physical key for which mappings are to be added or replaced. In addition, you must also specify the *Sub-array* **Add Mapping Behaviors** to define the behavior(s) to be mapped to the identified physical key. If any prior mappings were applied to specify the behaviors of the identified physical key, they will all be replaced by the new specified behaviors.
 - If the value ***Reset All Mappings*** is selected, the mapping tables are reset to their defaults. This effectively removes all mappings that have previously been added and returns the behaviors of all keys to their default out-of-box state.
 
 
@@ -6149,7 +6091,7 @@ Enter a value that uniquely identifies a physical key on the physical keyboard o
 
 
 
-Use this sub-array to specify the set of behaviors to be performed for one or more keyboard states. for a specified physical key on a device.
+Use this *Sub-array* to specify the set of behaviors to be performed for one or more keyboard states. for a specified physical key on a device.
 
 
 **Detail Information:** 
@@ -6171,7 +6113,7 @@ Use this sub-array to specify the set of behaviors to be performed for one or mo
 
 
 
-Use this sub-group to specify the behavior when a specified key is pressed in a specified state on the physical keyboard of a device.
+Use this *Sub-group* to specify the behavior when a specified key is pressed in a specified state on the physical keyboard of a device.
 
 
 **Detail Information:** 
@@ -6752,7 +6694,7 @@ Note that the application *Friendly Name* is NOT the same as *Android Package Na
 
 
 
-Use this group to perform power-related actions and configure power-related settings on a device.
+Use this *Group* to perform power-related actions and configure power-related settings on a device.
 
 
 **Detail Information:** 
@@ -7276,7 +7218,7 @@ Select whether Doze Mode will be globally used on the device.
 
 
 
-Use this group to configure the RFID module in a device.
+Use this *Group* to configure the RFID module in a device.
 
 
 **Detail Information:** 
@@ -7544,7 +7486,7 @@ Select how the A and B flags of RFID tags should be handled by the RFID module d
 
 
 
-Use this group to manage a *Remote Scanner* that is connected to a device.
+Use this *Group* to manage a *Remote Scanner* that is connected to a device.
 
 
 **Detail Information:** 
@@ -7770,7 +7712,7 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be unpaired when
 
 
 
-Use this group to configure security-related settings on a device.
+Use this *Group* to configure security-related settings on a device.
 
 
 **Detail Information:** 
@@ -8002,7 +7944,7 @@ Select what happens when a device turns off as a result of a timeout.
 
 
 
-Use this group to configure which *Zebra Value-Add Services* are allowed to be used on a device and, optionally, by which applications. *Zebra Value-Add Services* may be of various types, and may include:
+Use this *Group* to configure which *Zebra Value-Add Services* are allowed to be used on a device and, optionally, by which applications. *Zebra Value-Add Services* may be of various types, and may include:
 
 
 - *Privilege Escalation APIs*, typically used by special purpose applications, such as Remote Control Clients.
@@ -8288,7 +8230,7 @@ Enter the *Android Package Signature* of an application that should be disallowe
 
 
 
-Use this group to configure the behavior of the Settings UI on a device, especially which features of the Settings UI will the Device User will be allowed to access.
+Use this *Group* to configure the behavior of the Settings UI on a device, especially which features of the Settings UI will the Device User will be allowed to access.
 
 
 **Detail Information:** 
@@ -8722,7 +8664,7 @@ Select whether the Device User is allowed to use the Settings Icon on the Notifi
 
 
 
-Use this group to configure which threats to a device will be monitored and which countermeasures will be taken when threats are detected.
+Use this *Group* to configure which threats to a device will be monitored and which countermeasures will be taken when threats are detected.
 
 
 **Detail Information:** 
@@ -8742,7 +8684,7 @@ Use this group to configure which threats to a device will be monitored and whic
 
 
 Select an Action to configure whether a given threat will be monitored.
-- If the value ***Detect*** is selected, a specific threat will be configured to be monitored and, if that threat is detected, a countermeasure will be taken to mitigate that threat. You must also specify **Detect Threat Type** to provide the threat that will be monitored. In addition, you must also specify the sub-array **Detect Countermeasures** to provide the set of countermeasures that will be performed if the specified threat is detected.
+- If the value ***Detect*** is selected, a specific threat will be configured to be monitored and, if that threat is detected, a countermeasure will be taken to mitigate that threat. You must also specify **Detect Threat Type** to provide the threat that will be monitored. In addition, you must also specify the *Sub-array* **Detect Countermeasures** to provide the set of countermeasures that will be performed if the specified threat is detected.
 - If the value ***Ignore*** is selected, a specific threat will be configured to not be monitored and hence will never be detected. You must also specify **Ignore Threat Type** to provide the threat that will be ignored.
 
 
@@ -8796,7 +8738,7 @@ Select the type of threat that will be monitored when the value ***Detect*** is 
 
 
 
-Use this sub-array to specofy the set of countermeasures that should be applied to mitigate a detected threat.
+Use this *Sub-array* to specofy the set of countermeasures that should be applied to mitigate a detected threat.
 
 
 **Detail Information:** 
@@ -8815,7 +8757,7 @@ Use this sub-array to specofy the set of countermeasures that should be applied 
 
 
 
-Use this sub-group to specify a countermeasure to mitigate a detected threat.
+Use this *Sub-group* to specify a countermeasure to mitigate a detected threat.
 
 
 **Detail Information:** 
@@ -9131,7 +9073,7 @@ Signal the detection of an externally detected threat. This would generally be r
 
 
 
-Use this group to configure the UI behavior of the Zebra Volume Control on a device.
+Use this *Group* to configure the UI behavior of the Zebra Volume Control on a device.
 
 
 **Detail Information:** 
@@ -9209,7 +9151,7 @@ Enter the name of a new *Audio UI Profile* to be added when the value ***Add Pro
 
 
 
-Use this sub-array to specify the set of *Audio Streams* that will be included as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action**.
+Use this *Sub-array* to specify the set of *Audio Streams* that will be included as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action**.
 
 
 **Detail Information:** 
@@ -9228,7 +9170,7 @@ Use this sub-array to specify the set of *Audio Streams* that will be included a
 
 
 
-Use this sub-group to define a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the sub-array **Stream**.
+Use this *Sub-group* to define a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Stream**.
 
 
 **Detail Information:** 
@@ -9247,7 +9189,7 @@ Use this sub-group to define a single *Audio Stream* that will be included as pa
 
 
 
-Ypu must select the type of a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added within each instance of the sub-group **Stream** within sub-array **Add Profile Streams**. You must also specify **Label**, **Icon**, **Visible**, and **Modes** to define the characteristics of the new *Audio Stream* of the specified type that will be added.
+Ypu must select the type of a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added within each instance of the *Sub-group* **Stream** within *Sub-array* **Add Profile Streams**. You must also specify **Label**, **Icon**, **Visible**, and **Modes** to define the characteristics of the new *Audio Stream* of the specified type that will be added.
 - If the value ***Music*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for playback of Music and other Media.
 - If the value ***Ring*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for ringtones.
 - If the value ***Notification*** is selected, the *Audio Stream* to be added to the new *Audio UI Profile* will define the behavior of the Zebra Volume Control with respect to the *Audio Stream* used for notifications.
@@ -9278,7 +9220,7 @@ Ypu must select the type of a single *Audio Stream* that will be included as par
 
 
 
-Enter the text label to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Stream** within the sub-array **Add Profile Streams**.
+Enter the text label to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 The text label might be changed for an *Audio Stream* because it is used for some purpose(s) other than the one identified by the default text label. Changing the text label to something more description of the actual purpose(s) for which the *Audio Stream* is used can make the Zebra Volume Control behavior more intuitive for the Device User.
@@ -9306,7 +9248,7 @@ If no text label is selected for an *Audio Stream*, the *Factory Preset* default
 
 
 
-Enter the icon to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Stream** within the sub-array **Add Profile Streams**.
+Enter the icon to be displayed for a single *Audio Stream* that will be included as part of a new *Audio UI Profile* being added and may be specified within each instance of the group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 The icon might be changed for an *Audio Stream* because it is used for some purpose(s) other than the one identified by the default text label. Changing the icon to something more representative of the actual purpose(s) for which the *Audio Stream* is used can make the Zebra Volume Control behavior more intuitive for the Device User.
@@ -9337,7 +9279,7 @@ If no icon is selected for an *Audio Stream*, the *Factory Preset* default icon 
 
 
 
-Select whether a single *Audio Stream* will be visible to the Device User within the *Zebra Volume Control* when it is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the Group **Stream** within the sub-array **Add Profile Streams**.
+Select whether a single *Audio Stream* will be visible to the Device User within the *Zebra Volume Control* when it is included as part of a new *Audio UI Profile* being added and may be specified within each instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 If an *Audio Stream* is made not visible for an *Audio UI Profile*, the *Zebra Volume Control* will not present ANY UI to the Device User to control the volume of that *Audio Stream*. The result is basically identical to not including the *Audio Stream* in the *Audio UI Profile*. This might be used when temporarily disabling an *Audio Stream* to avoid the need to remove and then add back in the entire definition of that *Audio Stream*.
@@ -9362,7 +9304,7 @@ If an *Audio Stream* is made not visible for an *Audio UI Profile*, the *Zebra V
 
 
 
-Use this sub-array to specify the behaviors of the UI for a single *Audio Stream* in one or more modes as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** and as part of an instance of the group **Stream** within the sub-array **Add Profile Streams**.
+Use this *Sub-array* to specify the behaviors of the UI for a single *Audio Stream* in one or more modes as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** and as part of an instance of the group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 **Detail Information:** 
@@ -9381,7 +9323,7 @@ Use this sub-array to specify the behaviors of the UI for a single *Audio Stream
 
 
 
-Use this sub-group to define the behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the sub-array **Modes** as an instance of the Group **Stream** within the sub-array **Add Profile Streams**.
+Use this *Sub-group* to define the behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Modes** as an instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 For each *Audio Mode* defined for an *Audio Stream*, You must also specify **Type** to provide which *Audio Mode* will be defined. You must also specify **Minimum**, **Maximum**, and **Preset** to define the lower, upper, and default (preset) volume levels for that *Audio Mode* within that *Audio Stream*.
@@ -9403,7 +9345,7 @@ For each *Audio Mode* defined for an *Audio Stream*, You must also specify **Typ
 
 
 
-Enter the minimum volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the sub-array **Modes** as an instance of the Group **Stream** within the sub-array **Add Profile Streams**.
+Enter the minimum volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Modes** as an instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 
@@ -9436,7 +9378,7 @@ The value specified must be less than or equal to the value entered for **Maximu
 
 
 
-Enter the maximum volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the sub-array **Modes** as an instance of the Group **Stream** within the sub-array **Add Profile Streams**.
+Enter the maximum volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Modes** as an instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 
@@ -9469,7 +9411,7 @@ The value specified must be greater than or equal to the value entered for **Min
 
 
 
-Enter the preset volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the sub-array **Modes** as an instance of the Group **Stream** within the sub-array **Add Profile Streams**.
+Enter the preset volume level that the UI will allow the Device User to select for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Modes** as an instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 
 
 
@@ -9502,7 +9444,7 @@ The value specified must be greater than or equal to the value entered for **Min
 
 
 
-Select the type of behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the sub-array **Modes** as an instance of the Group **Stream** within the sub-array **Add Profile Streams**.
+Select the type of behavior of the UI for a single *Audio Stream* in a single *Audio Mode* as part of a new *Audio UI Profile* being added when the value ***Add Profile*** is selected for **Action** within the *Sub-array* **Modes** as an instance of the Group **Stream** within the *Sub-array* **Add Profile Streams**.
 - If the value ***Speaker*** is selected, the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to the built-in device speaker.
 - If the value ***Receiver*** is selected, the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to receiver mode.
 - If the value ***WiredHeadset*** is selected, the *Audio Mode* will be configured for the *Audio Stream* under conditions where the *Audio Stream* is being routed to a wired audio headset.
@@ -9601,7 +9543,7 @@ Select whether the current device *Volume Settings* will be adjusted to ensure t
 
 
 
-Use this group to configure Wakeups on a device.
+Use this *Group* to configure Wakeups on a device.
 
 
 **Detail Information:** 
@@ -9648,7 +9590,7 @@ Select whether all controllable Wakeup Sources should be turned on or off.
 
 
 
-Use this group to configure which applications can be installed and run on a device.
+Use this *Group* to configure which applications can be installed and run on a device.
 
 
 **Detail Information:** 
@@ -9845,7 +9787,7 @@ Select the Whitelisting State, which determines whether the set of applications 
 
 
 
-Use this group to configure General Wireless settings on a device.
+Use this *Group* to configure General Wireless settings on a device.
 
 
 **Detail Information:** 
@@ -9864,7 +9806,7 @@ Use this group to configure General Wireless settings on a device.
 
 
 
-Use this sub-group to configure which of multiple antennas should be used for wireless communications.
+Use this *Sub-group* to configure which of multiple antennas should be used for wireless communications.
 
 
 - If the value ***Internal*** is selected, the internal built-in antenna will be used.
@@ -9896,7 +9838,7 @@ Use this sub-group to configure which of multiple antennas should be used for wi
 
 
 
-Use this sub-group to configure whether the GPS radio state should be On or Off.
+Use this *Sub-group* to configure whether the GPS radio state should be On or Off.
 - If the value ***Off*** is selected, the GPS radio state will be turned off, preventing GPS-based location detection from being performed.
 - If the value ***On*** is selected, the GPS radio state will be turned on, allowing GPS-based location detection to be performed, given satellite availability.
 
@@ -9923,7 +9865,7 @@ Use this sub-group to configure whether the GPS radio state should be On or Off.
 
 
 
-Use this group to configure Global settings that affect the Wireless Local Area Network (WLAN) operation on a device. (WLAN) subsystem. - Changes made using this Group will generally affect the operation of ALL WLAN Networks.
+Use this *Group* to configure Global settings that affect the Wireless Local Area Network (WLAN) operation on a device. (WLAN) subsystem. - Changes made using this Group will generally affect the operation of ALL WLAN Networks.
 - This Group does NOT allow management of specific WLAN Profiles. To manage WLAN Profiles, consult the documentation for your specific EMM.
 
 
@@ -10111,7 +10053,7 @@ Select whether the *Verbose Logging* feature of the WLAN adapter should be turne
 
 
 
-Use this sub-group to configure all settings related to *Hotspot Mode* of the WLAN adapter on a device, with the exception of the state of *Hotspot Mode*, which is configured via **Hotspot State**.
+Use this *Sub-group* to configure all settings related to *Hotspot Mode* of the WLAN adapter on a device, with the exception of the state of *Hotspot Mode*, which is configured via **Hotspot State**.
 
 
 
@@ -10261,7 +10203,7 @@ Enter the PSK passphrase that will be used to secure the *Hotspot Mode* network 
 
 
 
-Use this sub-group to configure Omnitrail settings for the WLAN adapter on a device.
+Use this *Sub-group* to configure Omnitrail settings for the WLAN adapter on a device.
 
 
 **Detail Information:** 
@@ -10331,7 +10273,7 @@ The value provided should be in milliseconds (ms) and should have a value in the
 
 
 
-Use this sub-array to specify the set of Omnitrail options to be configured for the WLAN adapter on a device.
+Use this *Sub-array* to specify the set of Omnitrail options to be configured for the WLAN adapter on a device.
 
 
 **Detail Information:** 
@@ -10353,7 +10295,7 @@ Use this sub-array to specify the set of Omnitrail options to be configured for 
 
 
 
-Use this sub-group to specify a name and value for a single Omnitrail option to be configured for the WLAN adapter on a device.
+Use this *Sub-group* to specify a name and value for a single Omnitrail option to be configured for the WLAN adapter on a device.
 
 
 **Detail Information:** 
@@ -10547,7 +10489,7 @@ Select an omnittrail datarate to be used by the WLAN adapter on a device when **
 
 
 
-Use this sub-array to specify the set of advanced options to be configured for the WLAN adapter on a device.
+Use this *Sub-array* to specify the set of advanced options to be configured for the WLAN adapter on a device.
 
 
 **Detail Information:** 
@@ -10569,7 +10511,7 @@ Use this sub-array to specify the set of advanced options to be configured for t
 
 
 
-Use this sub-group to specify a name and value for a single advanced option to be configured for the WLAN adapter on a device.
+Use this *Sub-group* to specify a name and value for a single advanced option to be configured for the WLAN adapter on a device.
 
 
 **Detail Information:** 
@@ -10659,7 +10601,7 @@ Enter a value for a single advanced option to be configured for the WLAN adapter
 
 
 
-Use this sub-group to specify one or more *Diagnostic Options* to be configured for the WLAN adapter on a device.
+Use this *Sub-group* to specify one or more *Diagnostic Options* to be configured for the WLAN adapter on a device.
 
 
 **Detail Information:** 
@@ -10681,7 +10623,7 @@ Use this sub-group to specify one or more *Diagnostic Options* to be configured 
 
 
 
-Use this sub-group to specify a name and value for a single *Diagnostic Option* to be configured for the WLAN adapter on a device.
+Use this *Sub-group* to specify a name and value for a single *Diagnostic Option* to be configured for the WLAN adapter on a device.
 
 
 **Detail Information:** 
@@ -10802,7 +10744,7 @@ Select whether the Device User will be notified about, and allowed to connect to
 
 
 
-Use this group to configure Wireless Wide Area Network (WWAN) settings on a device.
+Use this *Group* to configure Wireless Wide Area Network (WWAN) settings on a device.
 
 
 **Detail Information:** 
@@ -11215,7 +11157,7 @@ Select whether the WWAN adapter should handle multiple SIM Card(s) in Dual SIM D
 
 
 
-Use this group to configure the Worry Free WiFi features in a device.
+Use this *Group* to configure the Worry Free WiFi features in a device.
 
 
 **Detail Information:** 
@@ -11263,7 +11205,7 @@ Select the state of the Worry Free WiFi features in a device.
 
 
 
-Use this sub-group to configure Global Settings that control Worry Free WiFi behavior in a device.
+Use this *Sub-group* to configure Global Settings that control Worry Free WiFi behavior in a device.
 
 
 **Detail Information:** 
@@ -11651,7 +11593,7 @@ Select how SD Card Storage will be used for an *Analysis Session* started for th
 
 
 
-Use this sub-group to configure Settings that control the operation of Packet Capture by the Worry Free WiFi feature in a device.
+Use this *Sub-group* to configure Settings that control the operation of Packet Capture by the Worry Free WiFi feature in a device.
 
 
 **Detail Information:** 
@@ -11791,7 +11733,7 @@ Select the *Package Capture Type* that will be control the type of Packets that 
 
 
 
-Use this sub-group to configure Settings that control the operation of Coverage View by the Worry Free WiFi feature in a device.
+Use this *Sub-group* to configure Settings that control the operation of Coverage View by the Worry Free WiFi feature in a device.
 
 
 **Detail Information:** 
@@ -11994,7 +11936,7 @@ Enter a *Session Name* that should be used by Worry Free WiFi as part of Coverag
 
 
 
-Use this group to manage Zebra-issued licenses on a device.
+Use this *Group* to manage Zebra-issued licenses on a device.
 
 
 **Detail Information:** 

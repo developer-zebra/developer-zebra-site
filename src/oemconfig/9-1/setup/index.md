@@ -7,10 +7,10 @@ menu:
   items:
     - title: About
       url: /oemconfig/9-1/about
-    - title: FAQs
-      url: /oemconfig/9-1/faq
     - title: Setup
       url: /oemconfig/9-1/setup
+    - title: FAQs
+      url: /oemconfig/9-1/faq
     - title: Managed Configurations
       url: /oemconfig/9-1/mc
     - icon: fa fa-search
@@ -19,17 +19,17 @@ menu:
 
 ## Overview
 
-Zebra OEMConfig is an administrative tool for 
+Zebra OEMConfig is an administrative tool for performing Actions and settings configurations on Zebra devices running Android. OEMConfig works with Zebra's [Mobility Extensions Management System (known simply as MX)](/mx/overview), an XML-based communication framework for managing the capabilities and behaviors of Zebra devices. 
 
-OEMConfig interfaces with Zebra's [Mobility Extensions Management System (known simply as MX)](/mx/overview), an XML-based communication framework for managing the capabilities and behaviors of Zebra Android devices. 
+OEMConfig is not pre-installed on Zebra devices; it must be installed through the Google Play store or downloaded from Zebra.com and pushed to the device via ADB before   
 
 ### System Requirements
 
-* Zebra device(s) with Android 7.x or higher
-* MX 9.1 or higher* on device(s). [Which version is installed?](/mx/mx-version-on-device)
-* A UEM/EMM with support for OEMConfig
+* **Fully managed Zebra device(s)** with Android 7.x (Nougat) or higher
+* **MX 9.1 or higher*** on device(s). [Which version is installed?](/mx/mx-version-on-device)
+* A [UEM or EMM](../faq) system with support for [OEMConfig-compliant admin tools](../faq)
 
-&#42;OEMConfig will operate on devices with MX versions prior to 9.1, but attempts to access features implemented in later MX versions will result in error(s). See the [MX Feature Matrix](/mx) for a complete list of features. 
+&#42;_OEMConfig works on devices with MX versions prior to 9.1, but attempts to access features implemented in later MX versions will result in error(s). See the [MX Feature Matrix](/mx) for a complete list of features in each MX version_. 
 
 ### Download and install
 

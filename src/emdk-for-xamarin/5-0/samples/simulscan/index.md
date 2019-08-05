@@ -45,7 +45,6 @@ Alternatively, launch a preferred IDE and load the project via the File > Open m
 ##Using This Sample
 
 1. Place a template on the SD card of the SimulScan-licensed device using an adb command similar to the one below: 
-
     :::
     adb push myTemplate.xml /sdcard/simulscan/templates/
   

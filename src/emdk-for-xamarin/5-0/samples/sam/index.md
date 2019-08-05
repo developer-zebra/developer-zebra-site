@@ -8,7 +8,8 @@ features:
   - Profile Manager
   - NFC Manager
 devices:
-  - All supported devices
+  - TC72,
+  - TC77
 image: SamSample1.png
 screenshots:
   - SamSample1.png
@@ -30,15 +31,17 @@ EMDK for Xamarin allows secure communication with NFC tags through use of the Se
 * Get the SAM index
 * Detect an NFC tag
 
-This sample application will allow you to perform all the above mentioned Wi-Fi actions on Symbol device.
+## Requirements
+* Supported Visual Studio version on a Mac or Windows PC with Android API 22 (or higher) installed.<br>See [EMDK Setup Guide](../../guide/setup) for help. 
+* A supported Zebra Android device (see list above)
+* A Zebra SAM module installed and configured 
 
-##Requirements
-Android API 22 (or higher) must be installed via the SDK Manager before attempting to load this sample.
+##Load Sample App
 
-##Loading the Sample Application
-The following guide will walk you through setting up the EMDK samples in your IDE.
-
-* [Android Studio](../../guide/emdksamples_androidstudio)
+1. Choose a sample and click the **See Details** button.
+2. Click the **Download** button 
+3. `IMPORTANT:` **Extract the downloaded project zip file <u>to C:\</u>** (or to the **root** of an alternate drive).
+4. Navigate to the root of the unzipped project folder and double-click the **.sln** file. The project loads in the default IDE for that file type.
 
 >**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
 
@@ -47,27 +50,8 @@ The following guide will walk you through setting up the EMDK samples in your ID
 1. When the application starts it should look like the following:
   
   <img alt="image" style="height:400px" src="SamSample1.png"/>
-  
-2. Select the Wi-Fi operation you want (Enable/Disable).
-   
-  <img alt="image" style="height:400px" src="SamSample1.png"/>
 
-3. Select the Network action you want to execute from the Network Action drop-down. 
-  Let us select "Add(Default Open Network)" option.
-
-  <img alt="image" style="height:400px" src="SamSample1.png"/>
-
-  > Note: You could also add Personal Network with Passphrase and Enterprise Network with required certificate, which is not in the scope of this sample. 
-4. Provide some SSID to the network you want to add in SSID field (Ex. Test_Network).
-
-  <img alt="image" style="height:400px" src="SamSample1.png"/>
-
-5. Click "Apply" button.
-
-6. Check the status field.
-   
-  <img alt="image" style="height:400px" src="SamSample1.png"/>
-  
+-----
 
 ## Also See
 [SAM API Programmers Guide](../../guide/samapiusage)

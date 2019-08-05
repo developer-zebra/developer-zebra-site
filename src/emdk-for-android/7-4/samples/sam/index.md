@@ -12,7 +12,8 @@ features:
   - Profile Manager
   - NFC Manager
 devices:
-  - All supported devices
+  - TC72,
+  - TC77
 image: SamSample1.png
 screenshots:
   - SamSample1.png
@@ -34,44 +35,24 @@ EMDK for Android allows secure communication with NFC tags through use of the Se
 * Get the SAM index
 * Detect an NFC tag
 
-This sample application will allow you to perform all the above mentioned Wi-Fi actions on Symbol device.
+## Requirements
+* Supported Visual Studio version on a Mac or Windows PC with Android API 22 (or higher) installed.<br>See [EMDK Setup Guide](../../guide/setup) for help. 
+* A supported Zebra Android device (see list above)
+* A Zebra SAM module installed and configured 
 
-##Requirements
-Android API 22 (or higher) must be installed via the SDK Manager before attempting to load this sample.
-
-##Loading the Sample Application
-The following guide will walk you through setting up the EMDK samples in your IDE.
-
-* [Android Studio](../../guide/emdksamples_androidstudio)
+##Load Sample App
 
 >**NOTE**: The appearance of sample app screens can vary by sample app version, Android version and screen size.
+
+**Before beginning, download, build and install the sample app**.<br> See the [Sample App Set-up Guide](../../guide/emdksamples_androidstudio) for help. 
 
 ##Using This Sample
 
 1. When the application starts it should look like the following:
   
   <img alt="image" style="height:400px" src="SamSample1.png"/>
-  
-2. Select the Wi-Fi operation you want (Enable/Disable).
-   
-  <img alt="image" style="height:400px" src="SamSample1.png"/>
 
-3. Select the Network action you want to execute from the Network Action drop-down. 
-  Let us select "Add(Default Open Network)" option.
-
-  <img alt="image" style="height:400px" src="SamSample1.png"/>
-
-  > Note: You could also add Personal Network with Passphrase and Enterprise Network with required certificate, which is not in the scope of this sample. 
-4. Provide some SSID to the network you want to add in SSID field (Ex. Test_Network).
-
-  <img alt="image" style="height:400px" src="SamSample1.png"/>
-
-5. Click "Apply" button.
-
-6. Check the status field.
-   
-  <img alt="image" style="height:400px" src="SamSample1.png"/>
-  
+-----  
 
 ## Also See
 [SAM API Programmers Guide](../../guide/samapiusage)

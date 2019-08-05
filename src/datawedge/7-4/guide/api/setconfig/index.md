@@ -34,6 +34,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 7.2 -** Added new DotCode decoder support.
 * **DataWedge 7.3 -** Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
 * **DataWedge 7.3.22 -** Added new RFID Input feature 
+* **DataWedge 7.4 -** Added new DPM support.
 <!--* **DataWedge 7.5 -** Added new Enterprise Keyboard Configuration feature. -->
 
 ### Function Prototype
@@ -1281,12 +1282,12 @@ Other Scanner Input Parameters:
 
   <tr>
 	<td>dpm_illumination_control</td>
-	<td>Controls the illumination for decoding DPM barcodes. Default value is 10. Values:<br><br>0 - Direct<br>11 - Indirect<br>10 - Cycle<br><br><a href="../../input/barcode">More info</a></td>
+	<td>Controls the illumination for decoding DPM barcodes. Default value is 10. Values:<br><br>0 - Direct<br>11 - Indirect<br>10 - Cycle<br><br><a href="../../input/barcode#readerparams">More info</a></td>
   </tr>
 
   <tr>
 	<td>dpm_mode</td>
-	<td>Optimize DPM barcode decoding performance based on the barcode size. Default value is 2. Values:<br><br>0 – Disabled<br>1 – Mode 1<br>2 – Mode 2<br><br><a href="../../input/barcode">More info</a></td>
+	<td>Optimize DPM barcode decoding performance based on the barcode size. Default value is 2. Values:<br><br>0 – Disabled<br>1 – Mode 1<br>2 – Mode 2<br><br><a href="../../input/barcode#readerparams">More info</a></td>
   </tr>
 
 </table>

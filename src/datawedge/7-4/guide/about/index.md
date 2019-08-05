@@ -96,8 +96,8 @@ For more information about approved languages or to download a localized operati
 
 ## New in DataWedge 7.4
 * **DataWedge 7.4 and later versions only support Android Oreo (v8.0) and later.**
-* Introduced **voice capture activation by PTT** (push-to-talk) button with new [Data capture start option](../input/barcode).
-* Added support for new **[DPM parameters](../input/barcode)**. DPM parameters also added to [SetConfig](../api/setconfig) API.
+* Introduced **voice capture activation by PTT** (push-to-talk) button with new [Data capture start option](../input/voice).
+* Added new **[DPM support](../input/barcode#readerparams)** for barcode reader and [SetConfig](../api/setconfig) API.
 * **Enterprise Keyboard** option visible in the DataWedge profile screen is an upcoming feature for future use. 
 * **Support for Unique Device Identification (UDI) barcodes, such as GS1, HIBCC and ICCBBA, is being deprecated** – UDI is supported on [selected Zebra devices](../input/barcode/#udidecoding) up to Android P (version 9.x) only.
 <!--* New **[Enterprise Keyboard Configuration](../utilities/ekb)** feature. // moved to DW 7.5 -->

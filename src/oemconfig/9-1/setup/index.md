@@ -21,7 +21,7 @@ menu:
 
 Zebra OEMConfig is an administrative tool for performing Actions and settings configurations on Zebra devices running Android. OEMConfig works with Zebra's [Mobility Extensions Management System (known simply as MX)](/mx/overview), an XML-based communication framework for managing the capabilities and behaviors of Zebra devices. 
 
-OEMConfig is not pre-installed on Zebra devices; it must be installed through the Google Play store or downloaded from Zebra.com and pushed to the device via ADB before   
+OEMConfig is not pre-installed on Zebra devices; it must be installed through the Google Play store before it can be used to perform Actions and settings configurations. These actions are typically done using an EMM.
 
 ### System Requirements
 

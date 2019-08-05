@@ -38,7 +38,7 @@ parm:
       osx: "1.2"
 ---
 
-Used to add or remove apps from the Protected List, which allows apps to be exempted from certain constraints imposed when Multi-User Mode is enabled. **Applies only to devices with OSx X.x or older.  
+Used to add or remove apps from the Protected List, which allows apps to be exempted from certain constraints imposed when Multi-User Mode is enabled. <!--**Applies only to devices with OSx X.x or older**.-->  
 
 >**Note**: On some devices, protected apps remain on the Recent Apps list after it has been cleared using the "ClearRecentApps" Action. 
 

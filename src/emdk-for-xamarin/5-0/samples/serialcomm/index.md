@@ -31,10 +31,9 @@ This sample demonstrates the EMDK Serial Communication API to enable support for
 
 ##Load Sample App
 
-1. Choose a sample and click the **See Details** button.
-2. Click the **Download** button 
-3. `IMPORTANT:` **Extract the downloaded project zip file <u>to C:\</u>** (or to the **root** of an alternate drive).
-4. Navigate to the root of the unzipped project folder and double-click the **.sln** file. The project loads in the default IDE for that file type.
+1. Click the **Download** button from the sample-app details page. 
+2. `IMPORTANT:` **Extract the downloaded project zip file <u>to C:\</u>** (or to the **root** of an alternate drive).
+3. Navigate to the root of the unzipped project folder and double-click the **.sln** file. The project loads in the default IDE for that file type.
 
 Alternatively, launch a preferred IDE and load the project via the **File -> Open** menu.  
 

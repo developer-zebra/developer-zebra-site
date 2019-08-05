@@ -27,7 +27,7 @@ The following software is required to use EMDK for Xamarin:
 * Java Development Kit (JDK) v7u45 or newer
 * Visual Studio 2017 or Visual Studio 2015 (up to v15.5) 
 
-> **NOTE: EMDK-X is not supported on Visual Studio Community Edition for Windows**. 
+> **NOTE: EMDK-X is NOT supported on Visual Studio Community Edition for Windows**. 
 
 **Mac OS**:  
 * Mac OS X 10.11 (El Capitan) or newer

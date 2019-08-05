@@ -52,7 +52,6 @@ EMDK for Xamarin allows secure communication with NFC tags through use of the Se
 
 2. **Note the information provided** by this static sample app. 
 
------
 <!-- Currently for Android only
 ## Also See
 [SAM API Programmers Guide](../../guide/samapiusage)

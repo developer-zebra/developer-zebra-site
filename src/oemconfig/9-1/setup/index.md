@@ -21,7 +21,7 @@ menu:
 
 Zebra OEMConfig is an administrative tool for performing Actions and settings configurations on Zebra devices running Android. OEMConfig works with Zebra's [Mobility Extensions Management System (known simply as MX)](/mx/overview), an XML-based communication framework for managing the capabilities and behaviors of Zebra devices. 
 
-OEMConfig is not pre-installed on Zebra devices; it must be installed through the Google Play store before it can be used to perform Actions and settings configurations. These actions are typically done using an EMM.
+OEMConfig is not pre-installed on Zebra devices; it must be installed through the Google Play store before it can be used to perform Actions and settings configurations. These activities are typically done using an EMM.
 
 ### System Requirements
 
@@ -29,9 +29,8 @@ OEMConfig is not pre-installed on Zebra devices; it must be installed through th
 * **MX 9.1 or higher*** on device(s) is recommended. [Which version is installed?](/mx/mx-version-on-device)
 * A [UEM or EMM](../faq/#qwhatsauem) system with support for [OEMConfig-compliant admin tools](../faq)
 
-<i><font size="2" color="black"> &#42;OEMConfig runs on devices with **MX versions <u>older</u> than 9.1**, but attempting to access newer MX features not implemented in older MX versions will result in error(s).</font></i>
-<br>
-<i><font size="1" color="black"> See the [MX Feature Matrix](/mx) for a complete list of features in each MX version.</font></i>
+<i><font size="2" color="black"> &#42;OEMConfig runs on devices with **MX versions <u>older</u> than MX 9.1**, but attempting to access newer MX features not implemented in older MX versions will result in error(s).</font></i>
+<i><font size="2" color="black"> See the [MX Feature Matrix](/mx) for a complete list of features in each MX version.</font></i>
 
 <!-- 
 &#42;_The OEMConfig app runs on devices with **MX versions <u>older</u> than 9.1**. However, attempting to access newer MX features not implemented in older MX versions will result in error(s). See the [MX Feature Matrix](/mx) for a complete list of features in each MX version_. 

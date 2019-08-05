@@ -25,7 +25,7 @@ menu:
     - title: APIs
       url: /emdk-for-xamarin/4-0/api
     - icon: fa fa-comments-o
-      url: https://developer-dev.savanna.zebra.com/community/tools/emdk   
+      url: https://developer.zebra.com/forum/search?keys=&field_zebra_curated_tags_tid%5B%5D=184   
     - icon: fa fa-search
       url: /emdk-for-xamarin/4-0/search
 ---

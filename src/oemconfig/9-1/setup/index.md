@@ -26,10 +26,10 @@ OEMConfig is not pre-installed on Zebra devices; it must be installed through th
 ### System Requirements
 
 * **Fully managed Zebra device(s)** running Android 7.x (Nougat) or higher
-* **MX 9.1 or higher*** on device(s). [Which version is installed?](/mx/mx-version-on-device)
+* **MX 9.1 or higher*** on device(s) is recommended. [Which version is installed?](/mx/mx-version-on-device)
 * A [UEM or EMM](../faq/#qwhatsauem) system with support for [OEMConfig-compliant admin tools](../faq)
 
-<i><font size="1" color="black"> &#42;OEMConfig runs on devices with **MX versions <u>older</u> than 9.1**, but attempting to access newer MX features not implemented in older MX versions will result in error(s).</font></i>
+<i><font size="2" color="black"> &#42;OEMConfig runs on devices with **MX versions <u>older</u> than 9.1**, but attempting to access newer MX features not implemented in older MX versions will result in error(s).</font></i>
 <br>
 <i><font size="1" color="black"> See the [MX Feature Matrix](/mx) for a complete list of features in each MX version.</font></i>
 

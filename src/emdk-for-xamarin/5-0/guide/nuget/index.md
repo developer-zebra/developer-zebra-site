@@ -16,6 +16,7 @@ In previous versions of EMDK for Xamarin, the EMDK APIs were distributed through
 
 * Visual Studio 2017 for Mac OS
 * Visual Studio 2017 for Windows
+* Visual Studio 2019 for Windows `NEW`
 
 -----
 
@@ -25,7 +26,7 @@ The following software is required to use EMDK for Xamarin:
 **Windows**:
 * Windows 7, 8, 8.1, 10 (32- or 64-bit)
 * Java Development Kit (JDK) v7u45 or newer
-* Visual Studio 2017 or Visual Studio 2015 (up to v15.5) 
+* Visual Studio 2019, 2017 or Visual Studio 2015 (up to v15.5) 
 
 > **NOTE: EMDK-X is NOT supported on Visual Studio Community Edition for Windows**. 
 
@@ -33,7 +34,7 @@ The following software is required to use EMDK for Xamarin:
 * Mac OS X 10.11 (El Capitan) or newer
 * Java for OS X 2014-10x or newer
 * Java Development Kit (JDK) v7u75 or newer
-* **Visual Studio 2017 for Mac OS** `NEW` (Xamarin Studio is no longer supported)
+* **Visual Studio 2017 for Mac OS** (Xamarin Studio is no longer supported)
 
 **Attention Visual Studio 2015 users**: EMDK for Xamarin supports Visual Studio 2015 <u>only up to version 15.5</u>. Upgrading to any newer version results in failure. **Zebra recommends using Visual Studio 2017**. 
 
@@ -43,7 +44,7 @@ The following software is required to use EMDK for Xamarin:
 
 #### Windows
 
-The following instructions apply to Visual Studio 2017. A supported version of Visual Studio must be installed to complete the steps below. If necessary, [install Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) before proceeding. 
+The following instructions apply to Visual Studio 2017. A supported version of Visual Studio must be installed to complete the steps below. If necessary, [install Visual Studio](https://visualstudio.microsoft.com/downloads/) before proceeding. 
 
 **To install the NuGet package in Visual Studio 2017 for Windows**: 
  
@@ -60,6 +61,11 @@ The following instructions apply to Visual Studio 2017. A supported version of V
 	<img alt="image" style="height:418px" src="setup_05.png"/>
 	_Click to enlarge; ESC to exit_.<br><br>
 5. Repeat Steps 1&ndash;4 for each project that uses EMDK for Xamarin APIs. 
+
+**Note for Visual Studio 2019 users**: An EMDK submenu is now displayed in the "Extensions" menu.  
+
+<img alt="image" style="height:418px" src="emdk-x_5_vs2019.png"/>
+
 
 > The project is ready to use EMDK for Xamarin APIs. 
 

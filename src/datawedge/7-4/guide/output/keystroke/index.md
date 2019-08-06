@@ -29,7 +29,7 @@ To enable Keystroke output for a Profile, place a check in the checkbox:
 _Keystroke Output options_
 <br>
 
-**Action key character -** enables injection of a special character embedded within barcode or MSR data. Possible values:
+**Action key character -** enables injection of a special character embedded within barcode, serial, voice or MSR data. Possible values:
 
 * **None -** inject no action key
 * **Tab -** inject action key in place of a ASCII Tab (0x09) character

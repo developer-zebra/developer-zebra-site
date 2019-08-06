@@ -24,7 +24,7 @@ For example, if the manifest contains...
 
 ...the intent action in the Intent Output configuration would be:
 
-`android.intent.category.DEFAULT`
+`android.intent.action.DEFAULT`
 
 and the Intent category would be:
 
@@ -83,7 +83,7 @@ _Intent Output options for the "Launcher" Profile_
 * **Send via startForegroundService**
 * **Broadcast Intent** 
 
-**When Intent delivery is set to "Broadcast Intent"**, DataWedge sets the **Receiver foreground flag** `Intent.FLAG_RECEIVER_FOREGROUND` in the broadcast Intent, giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. **Zebra recommends using this flag <u>only if delays are seen</u> in delivery of intents immediately following device boot-up**.
+**When Intent delivery is set to "Broadcast Intent"**, <i>**Receiver foreground flag**</i> `Intent.FLAG_RECEIVER_FOREGROUND` can be set giving the broadcast recipient permission to run at foreground priority with a shorter timeout interval. **Zebra recommends using this flag <u>only if delays are seen</u> in delivery of intents immediately following device boot-up**.
 
 **When Intent delivery is set to "Send via startForegroundService"**, startForegroundService() Android API is called to deliver data. This option applies to Android Oreo (v8.0) and above.
 
@@ -104,6 +104,9 @@ Single mode reads and decodes a single barcode at a time, and is the most common
 * "msr"
 * "scanner"
 * "simulscan"
+* "serial"
+* "voice"
+* "rfid"
 
 **NOTE**: Source of incoming data is "scanner" for camera, imager or scanner. 
 
@@ -345,10 +348,10 @@ When decoding a UDI-compliant object, data is acquired from multiple barcodes si
 
 ## Other Decode Tags
 
-The decode-related data added to an intent bundle can be retrieved using specific string tags. Use the JavaScript call below with the string tags in the section that follows.
+The decode-related data added to an intent bundle can be retrieved using specific string tags. Use the code below with the string tags in the section that follows.
 
 	:::java
-	Intent.getStringtExtra()
+	Intent.getStringExtra()
 
 **Tag**: LABEL_TYPE_TAG <br>
 **Type**: [String]<br>

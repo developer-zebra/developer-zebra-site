@@ -1120,6 +1120,11 @@ Other Scanner Input Parameters:
   </tr>
 
   <tr>
+	<td>illumination_brightness</td>
+	<td>Integer from 1–10</td>
+  </tr>
+
+  <tr>
 	<td>cd_mode</td>
 	<td>0 - Disabled<br>3 - Enabled</td>
   </tr>
@@ -1132,11 +1137,6 @@ Other Scanner Input Parameters:
   <tr>
 	<td>delay_to_low_power_mode</td>
 	<td>16 - 1 Second<br>29 - 30 Seconds<br>32 - 1 Minute<br>37 - 5 Minutes</td>
-  </tr>
-
-  <tr>
-	<td>illumination_brightness</td>
-	<td>Integer from 0–10</td>
   </tr>
 
   <tr>

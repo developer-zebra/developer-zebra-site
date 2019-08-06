@@ -92,7 +92,7 @@ Also see the [Glossary of terms](../glossary).
 
 ####Q: Does my EMM need to have custom-support for Zebra for me to be able to utilize Zebra OEMConfig via that EMM? 
 
-**A: Not really**. The beauty of Managed Configurations is that they allow discoverability of the configurable aspects of applications that expose them. OEMConfig is no exception. Hence any EMM that supports Managed Configurations and that supports the richer Managed Configuration Schemas allowed to be exposed by OEMConfig applications should be able to configure all the aspects exposed by the OEMConfig Schema of any OEM, include Zebra, without having code specifically tailored to any OEM. 
+**A: Not really**. The beauty of Managed Configurations is that they allow discoverability of the configurable aspects of applications that expose them. OEMConfig is no exception. Hence any EMM that supports Managed Configurations and that supports the richer Managed Configuration Schemas allowed to be exposed by OEMConfig applications should be able to configure all the aspects exposed by the OEMConfig Schema of any OEM, including Zebra, without having code specifically tailored to any OEM. 
 
 -----
 
@@ -104,7 +104,7 @@ Also see the [Glossary of terms](../glossary).
 
 ####Q: Where does an OEMConfig Schema come from? 
 
-**A: Fundamentally, an OEMConfig Schema, like any Managed Configuration Schema for any application, is built-into the APK of the application by referencing it** from the Manifest when the APK file is built. Hence the APK file is the primary source of the Schema. APIs exist in the device to acquire the Schema for any application that exposes Managed Configurations, hence an application (including an EMM Agent) could acquire an OEMConfig Schema on-device and send it to the EMM Server. While that is possible, it is probably not the most common case since the EMM Server would then need to receive and collate one or more Schemas from every single managed device. 
+**A: Fundamentally, an OEMConfig Schema, like any Managed Configuration Schema for any application, is built into the APK of the application by referencing it** from the Manifest when the APK file is built. Hence the APK file is the primary source of the Schema. APIs exist in the device to acquire the Schema for any application that exposes Managed Configurations, hence an application (including an EMM Agent) could acquire an OEMConfig Schema on-device and send it to the EMM Server. While that is possible, it is probably not the most common case since the EMM Server would then need to receive and collate one or more Schemas from every single managed device. 
 
 More commonly, an OEMConfig APK is published to the Google Play Store. The advantage of doing this is that an EMM Server can then make a server-to-server call to the Google Play Store, using the Google Play EMM API to acquire the Schema for that OEMConfig APK. This is especially beneficial since the EMM can use logic identical to that used for non-OEMConfig Schemas to access the OEMConfig Schema for any OEMConfig application from any OEM, so long as it knows the Android Package Name of that OEMConfig application. 
 

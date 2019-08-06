@@ -65,7 +65,7 @@ The following instructions apply to Visual Studio 2017. A supported version of V
 #### The project is ready to use EMDK for Xamarin APIs. 
 <br>
 
-#### Note for Visual Studio 2019 Users:
+#### Note for Visual Studio 2019 users:
 In Visual Studio 2019, an EMDK submenu is displayed in the "Extensions" menu simimar to the image below: 
 <img alt="image" style="height:200px" src="emdk-x_5_vs2019.png"/>
 _Click to enlarge; ESC to exit_.

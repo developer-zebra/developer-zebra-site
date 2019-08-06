@@ -531,7 +531,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 * **Use of this tag requires addition of &lt;title_bar_icon&gt; node** to `enterprisehomescreen.xml` file; not included by default.
 * **Default EHS logo is used if tag is missing or left blank**, or if the specified image file is missing or invalid (such instances are [logged](../features/#ehslog)).
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
-* **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**. [More info](../about/#androidnougatnotes).
+* **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**.
 * **The SD card slot is disabled when a device is in [Multi-user Mode](../features/#multiusermode)**; files on removable storage are not accessible in this mode.
 
 #### Example
@@ -720,7 +720,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 
 **Notes**: 
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
-* **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**. [More info](../about/#androidnougatnotes).
+* **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**.
 
 
 #### Example
@@ -794,6 +794,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 
 ------
 
+<!-- 8/6/19- Removed per eng; Nougat support dropped. 
 ### Install Shortcuts
 **Applies to Nougat devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. For shortcuts in Oreo devices, see [Pinned Shortcuts](#pinnedshortcuts), below.  
 
@@ -809,7 +810,7 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
     <install_shortcuts>0</install_shortcuts>
 
 ------
-
+ -->
 ### Pinned Shortcuts
 **Applies to Oreo devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. 
 
@@ -875,8 +876,9 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 * **To prevent use of the camera**, Zebra recommends using this tag _and_ removing the camera app from the User Mode screen.  
 * **If no camera shortcut exists on the device lock screen**, use of this tag is not required. 
 * **Display of the camera app icon on the Admin home screen can be delayed** by as much as five seconds after unlocking the screen following a configuration change. 
+<!-- 8/6/19- Removed per eng; Nougat support dropped.
 * **On some devices running Nougat (except TC20/TC25), disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
-
+ -->
 <img alt="" style="height:350px" src="camera_disable.png"/>
 
 <b>Possible values</b>:
@@ -906,8 +908,9 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 * **To prevent use of search**, Zebra recommends using this tag _and_ removing the search app from the User Mode screen.  
 * **Display of the search app icon on the Admin home screen can be delayed** by as much as five seconds after unlocking the screen following a configuration change.
 * **If no search shortcut exists on the device lock screen**, use of this tag is not required.  
+<!-- 8/6/19- Removed per eng; Nougat support dropped.
 * **On some devices running Nougat (except TC20/TC25), disabling access to the camera and/or search apps from the lock screen also might disable them from the User-Mode screen**, even if camera/search usage is permitted on the device. To prevent this issue, use the [Screen Lock Type](/mx/devadmin/#screen-lock-type) parameter of DevAdmin CSP and disable the lock screen by selecting the "None" option. 
-
+ -->
 <img alt="" style="height:350px" src="search_disable.png"/>
 
 <b>Possible values</b>:
@@ -961,7 +964,7 @@ Controls whether full or limited settings are available when the device is in Ad
 ------
 
 ### Recent Apps Button Disabled 
-**Applies only to devices running Android Nougat and higher**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Nougat (and higher) devices**. Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
+**Applies only to devices running Android Oreo and higher**. Controls whether the Recent Apps button can be used to potentially launch unapproved apps and/or a non-EHS home screen. Setting applies to Admin and User Modes. **Recent apps button is disabled by default on Oreo (and higher) devices**. Default value is used if this tag left blank, absent from the config file or contains an invalid value. See important [EHS Security Notes](../features/#securitynotes). 
 
 >This setting persists after EHS is removed.
 
@@ -1331,6 +1334,7 @@ Specifies the period of time (in minutes) that an admin must wait following a de
 
 ## Shortcuts and Intents
 
+<!-- 8/6/19- Removed per eng; Nougat support dropped.
 ### On Nougat 
 **_For devices running Oreo, see the section that follows_**. 
 
@@ -1369,11 +1373,10 @@ A shortcut added to the remote application "Microsoft Excel" via Citrix Receiver
 * The Android Launcher monitors the same broadcast intent as EHS, and therefore also receives shortcuts sent to EHS. 
 * If the Android home screen space limit is reached, Android Launcher displays an error message in EHS. 
 * To eliminate the error message, temporarily [enable the Android Launcher](../setup#changethedefaultlauncher) and delete the shortcuts. 
-
+ -->
 -----
 
 ### On Oreo 
-_For Nougat Devices, see section above_.
 
 EHS has historically offered the ability to add shortcuts programmatically using the `INSTALL_SHORTCUT` broadcast intent. Android 8.x Oreo replaces this intent with the `requestPinShortcut()` method of the `ShortcutManager` class. When shortcuts that link to local apps or remote websites are added in this way, EHS adds a link tag to the config XML file with the attributes listed below and displays the shortcut on the User screen. 
 

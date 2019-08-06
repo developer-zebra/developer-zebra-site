@@ -19,16 +19,14 @@ Many of the capabilities of EHS can be accomplished manually on the device, prog
 ## Manual Installation
 These instructions apply to direct installation (from a computer to a single device) using the EHS 3.x installer (.apk) file. 
 
-### Installer (.apk) File Info
+### EHS 3.2 Compatibility Notes
 
-The EHS 3.x download includes two separate .apk files: 
+* **Supports Oreo and Pie on [supported devices](../guide/about#supporteddevices) only**. 
+* **No longer supports devices running Android 7.x Nougat**. 
+* Download package includes a single .apk file: 
+ * `EHS_xxxxxx_A.apk` - for all devices running Oreo and Pir **_including_ TC20/TC25**
 
-* `EHS_xxxxxx_A.apk` - for all Nougat devices **_except_ TC20/TC25**
-* `EHS_xxxxxx_B.apk` - for all Android Oreo devices and **TC20/TC25 Nougat devices**
-
-See the full list of [devices supported by this version of EHS](../about#supporteddevices). 
-
-> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before EHS 3.x is installed</u>**. Follow instructions to [uninstall EHS](../setup#uninstallation) before installing EHS on an Oreo device. **Note**: Prior configuration settings, if any, are re-applied automatically.
+> **ABOUT OREO UPGRADES**: If the operating system on a device (except TC20/TC25) is being upgraded to Android 8.1 Oreo from Marshmallow or Nougat, **<u>the previous EHS installation must be removed before the new version of EHS is installed</u>**. Follow instructions to [uninstall EHS](../guide/setup#uninstallation) before installing EHS on an Oreo device. <br><br>**Note**: Prior configuration settings, if any, are re-applied automatically.
 
 > **EHS 3.2 DOES NOT support Android 7.x Nougat**. 
 

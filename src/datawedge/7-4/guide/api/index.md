@@ -8,6 +8,8 @@ automenu:
   items:
     - title: General Information
       items:
+        - title: Getting Started
+          url: ../gettingstarted
         - title: Using Intents 
           url: ../output/intent
         - title: Using DataWedge APIs 
@@ -15,7 +17,7 @@ automenu:
         - title: Using Intent Result Codes  
           url: resultinfo
         - title: DataWedge API Benefits & Usage (article) 
-          url: https://developer.zebra.com/community/android/android-forums/android-blogs/blog/2017/06/27/datawedge-apis-benefits-challenges
+          url: https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges
         - title: DataWedge Intent Demo App 
           url: tutorials
     - title: DataWedge APIs

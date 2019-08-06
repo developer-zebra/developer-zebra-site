@@ -1015,11 +1015,6 @@ Other Scanner Input Parameters:
   </tr>
 
   <tr>
-	<td></td>
-	<td>true<br>false</td>
-  </tr>
-
-  <tr>
 	<td>scanner_selection_by_identifier</td>
 	<td>See <a href="#scanneridentifiers">Scanner Identifiers</a> table</td>
   </tr>

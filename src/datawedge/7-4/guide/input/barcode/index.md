@@ -29,7 +29,7 @@ Barcode Input is used to specify:
 
 ## Scanner Selection
 For Barcode Input, the Scanner selection panel determines which scanning device will be used for data capture. The list of available scanners is based on devices present in (or connected to) the unit being configured. 
-<img style="height:350px" src="../11_select_input.png"/>
+<img style="height:350px" src="../select_input.png"/>
 <br>
 
 The "Auto" option automatically determines the best scanning device from the list of available devices based on the rules below. 
@@ -65,6 +65,8 @@ DataWedge supports the following Zebra USB SSI scanners:
 
 * **DS3608** USB SSI Scanner
 * **LI3608** Ultra-Rugged USB SSI Laser Scanner
+* **RS4000** USB SSI Ring Scanner
+* **RS5000** USB SSI Ring Scanner
 
 **Support notes**: 
 

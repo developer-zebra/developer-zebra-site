@@ -220,7 +220,7 @@ When specifying links, the package and activity parameters can be used to launch
 <b>Notes</b>:
 * Package names might vary from one Android version to another. 
 * **EHS 3.0 and higher supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
-
+* **EHS can launch links that reference local files** though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later) if files reside on external storage (i.e. SD card).
 
 ------
 
@@ -475,6 +475,7 @@ Allows (dynamic) information that uniquely identifies the device to be displayed
 **NOTES**: 
 * **If the IMEI number is specified** in a non-WWAN device, the default EHS title is displayed.
 * **To display the Bluetooth MAC address** as the title, Bluetooth must be enabled on the device ([how to enable Bluetooth](../features/#bluetoothuseraccess)). 
+* **If the MAC address is specified but unavailable**, the default EHS title is displayed.
 
 **<u>WARNING</u>: Square brackets must not be used inside the &lt;value&gt; tags except as specified above**. 
 
@@ -528,6 +529,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 
 **Notes**: 
 
+* **
 * **Use of this tag requires addition of &lt;title_bar_icon&gt; node** to `enterprisehomescreen.xml` file; not included by default.
 * **Default EHS logo is used if tag is missing or left blank**, or if the specified image file is missing or invalid (such instances are [logged](../features/#ehslog)).
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
@@ -809,10 +811,11 @@ Causes the app specified in the &lt;kiosk&gt; section to be launched in full scr
 
     <install_shortcuts>0</install_shortcuts>
 
-------
- -->
+-->
+
 ### Pinned Shortcuts
-**Applies to Oreo devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. 
+
+**Applies to Oreo (and higher) devices only**. Controls whether shortcuts to local apps or websites can be added programmatically. **Disabled by default**. See [Shortcuts and Intents](#shortcutsandintents) for more information. 
 
 <img alt="" style="height:350px" src="EHS_pinned_shortcuts.png"/>
 
@@ -1024,7 +1027,7 @@ Permits a maximum size (in MB) to be specified for the EHS log file. When the ma
 ------
 
 ## Optional Feature Tags
-This section covers optional features and tags not included in the `enterprisehomescreen.xml` file by default. These tags are added by EHS for enabled options or can be added as needed by an administrator.
+This section covers optional features and tags **NOT** included in the `enterprisehomescreen.xml` file by default. Tags are added automatically by EHS when options are enabled through the Settings panel UI. Tags also can be added manually by an administrator as needed.
 
 ------
 
@@ -1142,6 +1145,31 @@ _Appears in UI only on Oreo devices_.
 
 ------
 
+### Pinned Shortcut Bypass Confirmation
+
+In versions prior to EHS 3.2, EHS displays a confirmation dialog whenever a pinned shortcut is created. Display of this confirmation is configurable in EHS 3.2 and higher, and can be bypassed to facilitate automation or creation of shortcuts by other apps. 
+
+<img alt="" style="height:350px" src="ehs32_pin_shortcut_config.png"/>
+<br>
+
+<b>Possible values</b>:
+
+* 1
+* <b>0 (default)</b>
+
+#### Example
+
+        <preferences>
+        ...
+          <pin_shortcuts>
+            <pin_shortcuts_enabled>1</pin_shortcuts_enabled> //1=allow, 0=disable (default)
+            <bypass_confirmation>1</bypass_confirmation> // 1=bypass, 0=confirm (default)
+          </pin_shortcuts>
+        ...
+        </preferences>
+
+------
+
 ### Bundle
 Permits the option of injecting key-value pairs via XML into an app when it launches in User Mode. Bundled data can include application parameters, user data or any other information consumable by the application as an Android Intent. This feature can be used with User-Mode apps, Kiosk apps, auto-launch apps and those resulting from wildcard searches. When used with apps specified using the wildcard attribute, all apps receive the same data. The Bundle tag must be configured within the `enterprisehomescreen.xml` file. **Bundle is not supported for Admin-mode apps or for use with links or services**. 
 
@@ -1228,8 +1256,9 @@ The number of failed Admin-mode login attempts before EHS disables Admin Mode lo
 
 Once disabled, counter is reset by pushing a new `enterprisehomescreen.xml` file to the device with a greater "max attempts" value, or by using the [Lockout Recovery](#lockoutrecovery) feature, if enabled. If this tag is not present or contains no value, the default of 10 is used. Failed login attempts are added to the [EHS log](../features#ehslog).  
 
-<img alt="" style="height:350px" src="max_logins.png"/>
+**NOTE**: The maximum number accepted in the UI is 9999. Greater values specified in the `enterprisehomescreen.xml` file are displayed as "9999" in the UI.
 
+<img alt="" style="height:350px" src="max_logins.png"/>
 
 #### Examples
 

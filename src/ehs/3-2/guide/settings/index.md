@@ -1231,13 +1231,13 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 
 #### GMS Restricted Mode
 
-On GMS devices running Android 8.x Oreo and higher, Zebra implements a feature called [GMS Restricted Mode](/mx/gmsmgr), an optional state that disables all or select sets of GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device and removes their icons from the Android Launcher.
+On GMS devices running Android 8.x Oreo and higher, Zebra implements a mode called [GMS Restricted](/mx/gmsmgr), an optional state that disables all or select sets of GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device and removes their icons from the Android Launcher.
 
-##### Notes: 
+<b>Notes</b>: 
 
 * **While apps and services disabled through GMS Restricted mode also are disabled on devices running EHS, <u>their names remain visible in the EHS Preferences -> Disable Applications</u>** panel.
 * Attempts to enable or disable any of the effected apps&ndash;either through the EHS Preferences UI, the Privileged Settings UI or by pushing a config file&ndash;result in failures entered in the [EHS log](../features#ehslog).
-* For more information and important warnings about GMS Restricted mode, see the [GMS Manager](/mx/gmsmgr). 
+* For more information and important warnings about GMS Restricted mode, see the [GMS Manager](/mx/gmsmgr) documentation. 
 
 <b>Possible values</b>:
 

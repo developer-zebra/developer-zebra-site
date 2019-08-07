@@ -1,0 +1,22 @@
+---
+csp: appmgr
+title: Package Signature
+type: parm
+order: 8
+mx: "9.2"
+devicetype: A
+parm:
+  presentif: The Protected List Action is "Reserve Application UID"
+  pivotal: No
+  name: PackageSignature
+  type: string
+---
+
+Used to specify the Package Name(s) of the application to add or remove from the Protected List. Separate multiple names using commas. Name(s) must be specified exactly, and can be acquired from the application developer, by extracting the Package Name from the .apk file or by finding it in the device. 
+
+> **Important: If a Package Name is specified incorrectly in a list, all names following that name are ignored**. 
+
+**Input value rules**: 
+
+* String of at least 1 character containing a valid Package Name. For example: `com.mycompany.mypackage`.
+* Use commas to seperate multiple names

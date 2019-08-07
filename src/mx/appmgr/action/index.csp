@@ -100,6 +100,16 @@ parm:
       mx: "9.1"
       osx: "8.1"
       apilevel: "24"
+    - code: 14
+      devicetype: A
+      name: ReserveUID
+      description: Reserves a UID for an app never before installed or preserves a UID for one already installed and assigned a UID.
+      mx: "9.2"
+    - code: 15
+      devicetype: A
+      name: UnReserveUID
+      description: Removed a UID reservation for an installed app that has been assigned a UID.
+      mx: "9.2"
 ---
 
 Used to specify the Action to perform on an application or app-related setting or action. Actions can apply only to System apps, only to User apps, or to both (as noted in the table below). 
@@ -124,8 +134,4 @@ Used to specify the Action to perform on an application or app-related setting o
  * If desired, use Persist Manager to safeguard the XML on the device.<br>
 **`NOTE:` It is not possible to transition a device to a new OS _and_ to implement GMS Restricted mode with the same XML profile**.
 
-
-<!--
-<br>
-**More [about GMS Restricted](/bestpractices/Zebra_BestPractices_GMS_Restricted.pdf) device state**. 
--->
+> **See [GMS Manager](../gmsmgr) for more information about GMS Restricted**. 

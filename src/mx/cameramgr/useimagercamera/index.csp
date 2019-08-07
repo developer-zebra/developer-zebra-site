@@ -6,6 +6,7 @@ order: 10
 mx: "6.0"
 osx: "5.0"
 devicetype: A
+info: The imager is not supported for data capture on devices running Android 8.x Oreo.
 parm:
   presentif: Use All Cameras is set to "Control Individual Cameras"
   pivotal: No

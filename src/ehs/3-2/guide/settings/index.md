@@ -1222,13 +1222,22 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 <b>Notes</b>: 
 
 * Settings defined by **these tags override EHS defaults** and any settings applied with other tags.
-* If one of these tags is present without the other, Settings and Search apps is disabled in User Mode.
-* If the same package name is present under both (enable and disable) tags, that app is disabled.
-* Uninstalling EHS will not re-enable apps disabled using the &lt;apps_disabled&gt; tag. 
-* **Disabled apps must be manually returned to their desired state before uninstalling EHS**.  
+* If one of these tags is present without the other, Settings and Search apps are disabled in User Mode.
+* If the same package name is present under both (enable and disable) tags, the app is disabled. 
+* **Disabled apps must be manually returned to their desired state before uninstalling EHS**; <u>uninstalling EHS does NOT re-enable apps</u> disabled using the &lt;apps_disabled&gt; tag..  
 * To re-enable an app that was disabled using the &lt;apps_disabled&gt; tag, the app must be explicitly enabled using the &lt;apps_enabled&gt; tag.
 * **After the device user takes a screenshot, some Android versions present apps (i.e. Gmail, Messaging, etc.) as a means of sharing the image. Disable such apps to prevent unwanted access**. 
 * These tags cannot be used to [disable DataWedge](../../../../datawedge/5-0/guide/setup#disabledatawedge) or other services. 
+
+#### GMS Restricted Mode
+
+On GMS devices running Android 8.x Oreo and higher, Zebra implements a feature called [GMS Restricted Mode](/mx/gmsmgr), an optional state that disables all or select sets of GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device and removes their icons from the Android Launcher.
+
+##### Notes: 
+
+* **While apps and services disabled through GMS Restricted mode also are disabled on devices running EHS, <u>their names remain visible in the EHS Preferences -> Disable Applications</u>** panel.
+* Attempts to enable or disable any of the effected apps&ndash;either through the EHS Preferences UI, the Privileged Settings UI or by pushing a config file&ndash;result in failures entered in the [EHS log](../features#ehslog).
+* For more information and important warnings about GMS Restricted mode, see the [GMS Manager](/mx/gmsmgr). 
 
 <b>Possible values</b>:
 

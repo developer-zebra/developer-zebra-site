@@ -18,4 +18,4 @@ Used to specify the service on which to perform a Service Access Action.
 **Parm value input rules**: 
 
 * String with a minimum size of 1 character
-* Service names must be separated by commas, such as "`com.mycompany.mypackage,com.mycompany2.mypackage2`" 
+* Service names must be separated by commas, such as "`com.mycompany.mypackage`,`com.mycompany2.mypackage2`" 

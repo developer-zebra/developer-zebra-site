@@ -103,13 +103,17 @@ parm:
     - code: 14
       devicetype: A
       name: ReserveUID
-      description: Reserves a UID for an app never before installed or preserves a UID for one already installed and assigned a UID.
+      description: Reserves a unique Android user ID (UID) for an app never before installed or preserves the UID of one previously assigned.
       mx: "9.2"
+      osx: "9.2"
+      apilevel: "28"
     - code: 15
       devicetype: A
       name: UnReserveUID
-      description: Removed a UID reservation for an installed app that has been assigned a UID.
+      description: Removes the reservation for a UID of an installed app.
       mx: "9.2"
+      osx: "9.2"
+      apilevel: "28"
 ---
 
 Used to specify the Action to perform on an application or app-related setting or action. Actions can apply only to System apps, only to User apps, or to both (as noted in the table below). 

@@ -13,12 +13,12 @@ parm:
   type: string
 ---
 
-Used to specify the path and file name of the Android .apk file within the device file system from which to perform an app installation or upgrade.
+Used to specify the path and file name of the Android `.apk` file within the device file system from which to perform an app installation or upgrade.
 
-**Important: An .apk file can be used only to Install or Upgrade a User app or to Upgrade a System app**. Any application being installed from an .apk file is by definition a User Application since it was not built into the device. 
+**Important: An `.apk` file can be used only to Install or Upgrade a User app or to Upgrade a System app**. Any application being installed from an `.apk` file is by definition a User Application since it was not built into the device. 
 
-For an Upgrade, the .apk file must be signed with the same developer certificate as the application it is intended to upgrade or an error will be returned in the Result XML document. A System application can be upgraded using only an .apk file produced by the same developer that produced the built-in System application. A System application that has been upgraded is considered a User app, but will have the same permissions as the version it replaced, allowing the new version to perform the same operations as the original System app. If data is cleared and upgrades are removed from such an app, the app reverts to its original built-in version and is once again considered a System app.
+For an Upgrade, the `.apk` file must be signed with the same developer certificate as the application it is intended to upgrade or an error will be returned in the Result XML document. A System application can be upgraded using only an `.apk` file produced by the same developer that produced the built-in System application. A System application that has been upgraded is considered a User app, but will have the same permissions as the version it replaced, allowing the new version to perform the same operations as the original System app. If data is cleared and upgrades are removed from such an app, the app reverts to its original built-in version and is once again considered a System app.
 
 **Input value rules**: 
 
-* String from 1-255 characters containing the full path and name of device-resident .apk file. For example: `/storage/sdcard1/Herald.apk`
+* String from 1-255 characters containing the full path and name of device-resident `.apk` file. For example: `/storage/sdcard1/Herald.apk`

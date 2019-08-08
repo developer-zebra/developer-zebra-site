@@ -11,20 +11,22 @@ parm:
   name: OperationMode
   type: list
   list:
+    - code: 0
+      mx: "9.2"
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change; any prior settings are retained.
     - code: 1
       mx: "4.1"
       osx: "1.0"
       devicetype: A
       name: Single User without Whitelist
-      description: This value will cause Whitelisting to be turned off and hence disable all Whitelisting functionality.
+      description: Turns off Whitelisting and all associated functionality.
     - code: 2
       mx: "4.1"
       osx: "1.0"
       devicetype: A
       name: Single User with Whitelist
-      description: This value will cause Whitelisting to be turned on and hence enable Whitelisting functionality. The exact behavior of Whitelisting will depend on the configuration of the other parms.
+      description: Turns on Whitelisting and associated functionality.
 ---
 
-Select the desired Operation Mode which will turn Whitelisting on or off. Whitelisting is turned off by default, and hence no restrictions are imposed on which applications device users can install or which applications can be launched.
-
-Turning on Whitelisting allows a device to be made more secure by preventing a device user from installing applications that are not on the "white" list and by preventing all launching of applications that are not on the "white" list. Turning on Whitelisting also complicates the process of deploying applications since applications that are deployed and installed will have to also be added to the "white" list before they can be launched.  
+This is the On/Off switch for Whitelisting, which restricts the apps that a device user can install and/or launch. **Whitelisting is Off by default**, imposing no restrictions. Whitelisting provides device security by preventing the installation and/or use of unauthorized apps, and by complicating the process of app deployment.

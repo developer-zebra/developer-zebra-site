@@ -1,0 +1,278 @@
+---
+csp: accessmgr
+title: CSP Access Action
+type: parm
+order: 2
+mx: "9.2"
+devicetype: A
+parm:
+  pivotal: Yes
+  name: CspAccessAction
+  type: list
+  list:
+    - code: 0
+      mx: "9.2"
+      devicetype: A
+      name: Custom
+      description: 
+    - code: 1
+      mx: "9.2"
+      devicetype: A
+      name: AccessMgr
+      description:  
+    - code: 2
+      mx: "9.2"
+      devicetype: A
+      name: AnalyticsMgr
+      description: 
+    - code: 3
+      mx: "9.2"
+      devicetype: A
+      name: AppGalleryMgr
+      description: 
+    - code: 4
+      mx: "9.2"
+      devicetype: A
+      name: AppMgr
+      description:  
+    - code: 5
+      mx: "9.2"
+      devicetype: A
+      name: AudioMgr
+      description:  
+    - code: 6
+      mx: "9.2"
+      devicetype: A
+      name: AudioVolUIMgr
+      description: 
+    - code: 7
+      mx: "9.2"
+      devicetype: A
+      name: AutoTriggerMgr
+      description: 
+    - code: 8
+      mx: "9.2"
+      devicetype: A
+      name: Batch
+      description: 
+    - code: 9
+      mx: "9.2"
+      devicetype: A
+      name: BatteryMgr
+      description: 
+    - code: 10
+      mx: "9.2"
+      devicetype: A
+      name: BluetoothMgr
+      description: 
+    - code: 11
+      mx: "9.2"
+      devicetype: A
+      name: BrowserMgr
+      description: 
+    - code: 12
+      mx: "9.2"
+      devicetype: A
+      name: BugReportMgr
+      description: 
+    - code: 13
+      mx: "9.2"
+      devicetype: A
+      name: CameraMgr
+      description: 
+    - code: 14
+      mx: "9.2"
+      devicetype: A
+      name: CellularMgr
+      description: 
+    - code: 15
+      mx: "9.2"
+      devicetype: A
+      name: CertMgr
+      description: 
+    - code: 16
+      mx: "9.2"
+      devicetype: A
+      name: Clock
+      description: 
+    - code: 17
+      mx: "9.2"
+      devicetype: A
+      name: ComponentMgr
+      description: 
+    - code: 18
+      mx: "9.2"
+      devicetype: A
+      name: ConditionMgr
+      description: 
+    - code: 19
+      mx: "9.2"
+      devicetype: A
+      name: DevAdmin
+      description: 
+    - code: 20
+      mx: "9.2"
+      devicetype: A
+      name: DeviceCentralMgr
+      description: 
+    - code: 21
+      mx: "9.2"
+      devicetype: A
+      name: DisplayMgr
+      description: 
+    - code: 22
+      mx: "9.2"
+      devicetype: A
+      name: EncryptMgr
+      description: 
+    - code: 23
+      mx: "9.2"
+      devicetype: A
+      name: EnterpriseKeyboard
+      description: 
+    - code: 24
+      mx: "9.2"
+      devicetype: A
+      name: EthernetMgr
+      description: 
+    - code: 25
+      mx: "9.2"
+      devicetype: A
+      name: FileMgr
+      description: 
+    - code: 26
+      mx: "9.2"
+      devicetype: A
+      name: GmsMgr
+      description: 
+    - code: 27
+      mx: "9.2"
+      devicetype: A
+      name: GprsMgr
+      description: 
+    - code: 28
+      mx: "9.2"
+      devicetype: A
+      name: HostsMgr
+      description: 
+    - code: 29
+      mx: "9.2"
+      devicetype: A
+      name: Intent
+      description: 
+    - code: 30
+      mx: "9.2"
+      devicetype: A
+      name: KeyMappingMgr
+      description: 
+    - code: 31
+      mx: "9.2"
+      devicetype: A
+      name: LicenseMgr
+      description: 
+    - code: 32
+      mx: "9.2"
+      devicetype: A
+      name: LifeGuardOTAManager
+      description: 
+    - code: 33
+      mx: "9.2"
+      devicetype: A
+      name: NfcMgr
+      description: 
+    - code: 34
+      mx: "9.2"
+      devicetype: A
+      name: PersistMgr
+      description: 
+    - code: 35
+      mx: "9.2"
+      devicetype: A
+      name: PersonalDictionary
+      description: 
+    - code: 36
+      mx: "9.2"
+      devicetype: A
+      name: PowerKeyMgr
+      description: 
+    - code: 37
+      mx: "9.2"
+      devicetype: A
+      name: PowerMgr
+      description: 
+    - code: 38
+      mx: "9.2"
+      devicetype: A
+      name: RemoteScannerMgr
+      description: 
+    - code: 39
+      mx: "9.2"
+      devicetype: A
+      name: RfidMgr
+      description: 
+    - code: 40
+      mx: "9.2"
+      devicetype: A
+      name: SdCardMgr
+      description: 
+    - code: 41
+      mx: "9.2"
+      devicetype: A
+      name: SettingsMgr
+      description: 
+    - code: 42
+      mx: "9.2"
+      devicetype: A
+      name: Stats
+      description: 
+    - code: 43
+      mx: "9.2"
+      devicetype: A
+      name: StatusMgr
+      description: 
+    - code: 44
+      mx: "9.2"
+      devicetype: A
+      name: ThreatMgr
+      description: 
+    - code: 45
+      mx: "9.2"
+      devicetype: A
+      name: TouchMgr
+      description: 
+    - code: 46
+      mx: "9.2"
+      devicetype: A
+      name: UiMgr
+      description: 
+    - code: 47
+      mx: "9.2"
+      devicetype: A
+      name: UsbMgr
+      description: 
+    - code: 48
+      mx: "9.2"
+      devicetype: A
+      name: Wi-Fi
+      description: 
+    - code: 49
+      mx: "9.2"
+      devicetype: A
+      name: WirelessMgr
+      description: 
+    - code: 50
+      mx: "9.2"
+      devicetype: A
+      name: WorryFreeWiFiMgr
+      description: 
+    - code: 51
+      mx: "9.2"
+      devicetype: A
+      name: XmlMgr
+      description: 
+---
+Used to specify a CSP as "Protected," 
+
+
+from access by apps and which apps are approved to access Protected CSPs. This can be used, for example, to prevent access to CSPs that provide sensitive functionality, or to allow only certain apps to access such CSPs. 
+

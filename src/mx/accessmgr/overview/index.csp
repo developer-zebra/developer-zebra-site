@@ -40,7 +40,7 @@ User applications are those ***NOT*** built into the device and hence must be in
 
 AccessMgr also provides the option to control whether the device user can access a full or reduced version of the in-device Settings panel.
 
-## Main Functionality
+### Main Functionality
 
 * Turn whitelisting on or off
 * Manage the "whitelist" of applications that a device user can install and launch

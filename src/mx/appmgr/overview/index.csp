@@ -23,6 +23,7 @@ When considering the capabilities of AppMgr, it is important to understand the d
 * Enable all GMS apps
 * Disable all GMS apps that are safe to disable
 * Enable/Disable access to application info
+* Reserve/Unreserve an Android unique ID (UID)
 
 > **GMS Restricted Mode**: In response to security concerns, Zebra has implemented GMS Restricted Mode, which allows administrators to disable some or all GMS apps deemed "safe to disable" without interfering with normal device operations. See [GMS Manager](../gmsmgr) for more information. 
 

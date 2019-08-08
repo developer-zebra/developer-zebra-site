@@ -29,6 +29,7 @@ In the [Admin View](../admin) dashboard, click on the **Settings** tab to displa
     2.	Open the .csv file. Fill in the necessary information and save changes.  
     3.	Tap on “Upload CSV File” next to the appropriate category. Browse and select the updated file. 
     4.	Check the status in Data Upload History. If successful, the data is uploaded. 
+Make sure to have write permissions to the ZDVC folder and subfolders.
 <br>
 <br>
   **Important**: 

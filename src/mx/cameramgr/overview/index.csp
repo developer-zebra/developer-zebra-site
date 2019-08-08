@@ -16,7 +16,7 @@ The CameraMgr controls access to camera(s) and other mechanisms on the device th
 * Blocking some or all cameras also might inhibit use of SimulScan using those cameras since some or all functions of SimulScan might rely on or expose the ability to take pictures.
 * Blocking the imager on Android L devices disables SimulScan. 
 
->**The imager is not supported for data capture on devices running Android 8.x Oreo**.
+>**Capturing images from the Imager using Camera APIs is not supported on devices running Android 8.x Oreo**.
 
 ### Main Functionality
 

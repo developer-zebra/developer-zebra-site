@@ -15,13 +15,13 @@ parm:
     - code: 0
       devicetype: A
       name: Add No Packages
-      description: This value will not cause any Package Names to be added to the "white" list.
+      description: This value will not cause any Package Names to be added to the "whitelist."
       mx: "4.1"
       osx: "1.0"
     - code: 1
       devicetype: A
       name: Add Specified Package(s)
-      description: This value will cause the specified Package Names to be added the "white" list.
+      description: This value will cause the specified Package Names to be added the "whitelist."
       mx: "4.1"
       osx: "1.0"
 ---

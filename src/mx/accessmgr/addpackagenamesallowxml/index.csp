@@ -13,9 +13,9 @@ parm:
   type: string
 ---
 
-Used to specify Package Name(s) to add to the "white" list, granting them the ability to submit XML. Specifying an empty (length of zero) value (or the absence of this parm from the XML) adds no package names to the list.
+Used to specify Package Name(s) to add to the "whitelist", granting them the ability to submit XML. Specifying an empty (length of zero) value (or the absence of this parm from the XML) adds no package names to the list.
 
 **Parm value input rules**: 
 
 * String with a minimum size of 1 character
-* Package names must be separated by commas, such as "com.mycompany.mypackage,com.mycompany2.mypackage2"
+* Package names must be separated by commas, such as "`com.mycompany.mypackage,com.mycompany2.mypackage2`"

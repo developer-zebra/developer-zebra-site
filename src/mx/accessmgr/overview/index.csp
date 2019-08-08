@@ -36,7 +36,7 @@ Whitelisting applies only to user applications and has no effect on System appli
 
 User applications are those ***NOT*** built into the device and hence must be installed before they can be used. Whitelisting can be used to control whether a device user is allowed to install a user application, but cannot control whether an application can be installed programmatically by using AppMgr. Whitelisting also can be used to control whether a user application can be launched (by any means) once it is installed.
 
->**Note:** It is important to understand that if a user application uses AccessMgr to turn on whitelisting, then that application will become subject to whitelisting. If the application does not add itself to the "white" list, then that application will no longer be allowed to run. Also, if such an application does not explicitly allow itself to submit XML, then it would not be able to alter the configuration once it was successfully applied.
+>**Note:** It is important to understand that if a user application uses AccessMgr to turn on whitelisting, then that application will become subject to whitelisting. If the application does not add itself to the "whitelist", then that application will no longer be allowed to run. Also, if such an application does not explicitly allow itself to submit XML, then it would not be able to alter the configuration once it was successfully applied.
 
 AccessMgr also provides the option to control whether the device user can access a full or reduced version of the in-device Settings panel.
 

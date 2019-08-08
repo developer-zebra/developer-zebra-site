@@ -17,22 +17,22 @@ parm:
       name: Allow NO applications
       mx: "4.2"
       osx: "4.1"
-      description: This value (or the absence of this parm from the XML) will not cause any changes and hence does not explicitly allow any applications to submit XML.
+      description: This value (or the absence of this parm from the XML) causes no change; any previously selected setting is retained.
     - code: 1
       devicetype: A
       name: Allow specified application(s)
       mx: "4.2"
       osx: "4.1"
-      description: This value will cause the applications identified by the specified list of Package Names to be allowed to submit XML.</p><p>This value also allows a list of Package Names to be specified that will NOT be allowed to submit XML, thus providing an option to specify "these but not those"
+      description: This value will cause the applications identified by the specified list of Package Names to be allowed to submit XML. This value also allows a list of Package Names to be specified that will NOT be allowed to submit XML, thus providing an option to specify "these but not those."
     - code: 2
       devicetype: A
-      name: Allow ALL applications that are permitted to be executed
+      name: Allow ALL applications that are permitted to be executed.
       mx: "4.2"
       osx: "4.1"
-      description: This value will cause all of the applications that are on the "white" list (i.e. that are allowed to be launched) to be allowed to submit XML. This value also allows a list of Package Names to be specified that will NOT be allowed to submit XML, thus providing an option to specify "all except these".
+      description: Causes all of the applications that are on the "whitelist" (i.e. that are allowed to be launched) to be allowed to submit XML. This value also allows a list of Package Names to be specified that will NOT be allowed to submit XML, thus providing an option to specify "all except these."
 ---
 
-Select whether or not to allow the application to submit XML. This will allow or restrict applications from submitting changes to the MX Framework. 
+Select whether to allow the application to submit XML. This will allow or restrict applications from submitting changes to the MX Framework. 
 
 >**Note:** This feature is supported on devices that are running KitKat versions of Android like the TC70 and will only be used when the Whitelist feature is enabled.
 

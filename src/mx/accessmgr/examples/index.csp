@@ -5,7 +5,7 @@ type: text
 order: 99
 ---
 
-###Add an Application to the "white" list
+###Add an Application to the "whitelist"
 
 	:::XML
 	<wap-provisioningdoc>

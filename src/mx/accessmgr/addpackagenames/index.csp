@@ -13,9 +13,9 @@ parm:
   type: string
 ---
 
-Used to specify Package Names to add to the "white" list.
+Used to specify Package Names to add to the "whitelist."
 
 **Parm value input rules**: 
 
 * String with a minimum size of 1 character
-* Package names must be separated by commas, such as "com.mycompany.mypackage,com.mycompany2.mypackage2"  
+* Package names must be separated by commas, such as "`com.mycompany.mypackage,com.mycompany2.mypackage2`"  

@@ -2,7 +2,7 @@
 csp: accessmgr
 title: CSP Access Action
 type: parm
-order: 2
+order: 20
 mx: "9.2"
 devicetype: A
 parm:
@@ -13,7 +13,7 @@ parm:
     - code: 0
       mx: "9.2"
       devicetype: A
-      name: D o Nothing
+      name: Do Nothing
       description: This value (or the absence of this parm from the XML) causes no change; any prior settings are retained.
     - code: 1
       mx: "9.2"

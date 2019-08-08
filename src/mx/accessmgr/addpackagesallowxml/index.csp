@@ -17,13 +17,13 @@ parm:
       name: Add NO Packages
       mx: "4.2"
       osx: "4.1"
-      description: This value (or the absence of this parm from the XML) will not cause any Package Names to be added to the "white" list and does not explicitly allow any applications to submit XML.
+      description: This value (or the absence of this parm from the XML) will not cause any Package Names to be added to the "whitelist" and does not explicitly allow any applications to submit XML.
     - code: 1
       devicetype: A
       name: Add specified Package(s)
       mx: "4.2"
       osx: "4.1"
-      description: This value will cause the specified Package Names to be added to the "white" list and also allows the applications identified by those Package Names to submit XML.
+      description: This value will cause the specified Package Names to be added to the "whitelist" and also allows the applications identified by those Package Names to submit XML.
 ---
 
-Select whether or not to add Packages to the "white" list and allow them to submit XML.  
+Select whether or not to add Packages to the "whitelist" and allow them to submit XML.  

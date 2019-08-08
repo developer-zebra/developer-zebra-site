@@ -1,8 +1,8 @@
 ---
 csp: accessmgr
-title: CSP Access Action
+title: CSP Name
 type: parm
-order: 2
+order: 21
 mx: "9.2"
 devicetype: A
 parm:
@@ -14,7 +14,7 @@ parm:
       mx: "9.2"
       devicetype: A
       name: Custom
-      description: 
+      description: Allows a CSP name not shown on the CSP Names list to be specified.  
     - code: 1
       mx: "9.2"
       devicetype: A
@@ -271,8 +271,4 @@ parm:
       name: XmlMgr
       description: 
 ---
-Used to specify a CSP as "Protected," 
-
-
-from access by apps and which apps are approved to access Protected CSPs. This can be used, for example, to prevent access to CSPs that provide sensitive functionality, or to allow only certain apps to access such CSPs. 
-
+Used to specify the CSP Name for the selected CSP Action.

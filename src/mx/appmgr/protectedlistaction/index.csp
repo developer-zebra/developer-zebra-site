@@ -2,7 +2,7 @@
 csp: appmgr
 title: Protected List Action
 type: parm
-order: 6
+order: 10
 mx: "4.2"
 osx: "1.2"
 devicetype: A

@@ -2,7 +2,7 @@
 csp: appmgr
 title: Package Signature
 type: parm
-order: 8
+order: 6
 mx: "9.2"
 devicetype: A
 parm:

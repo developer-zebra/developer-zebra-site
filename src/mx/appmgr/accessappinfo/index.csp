@@ -2,7 +2,7 @@
 csp: appmgr
 title: Access App Info
 type: parm
-order: 810
+order: 14
 mx: "4.2"
 osx: "4.2"
 devicetype: A,B

@@ -2,7 +2,7 @@
 csp: appmgr
 title: Allow Doze Mode
 type: parm
-order: 15
+order: 18
 mx: "7.0"
 devicetype: A
 parm:

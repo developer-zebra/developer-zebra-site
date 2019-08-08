@@ -2,7 +2,7 @@
 csp: appmgr
 title: Application Name
 type: parm
-order: 5
+order: 8
 mx: "5.1"
 devicetype: A,B
 parm:

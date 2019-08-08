@@ -68,7 +68,7 @@ parm:
     - code: 9
       devicetype: A,B
       name: BatteryOptimization
-      description: On devices running Nougat, all apps by default allow the device to enter Doze Mode to maximize battery life. The "BatteryOptimization" parameter allows one or more apps to be added to (or if previously added, removed from) the "Doze Mode exemption" list, which determines whether the device can enter a power saving mode while the app is running. 
+      description: On devices running Nougat (and higher), all apps by default allow the device to enter Doze Mode to maximize battery life. The "BatteryOptimization" parameter allows one or more apps to be added to (or if previously added, removed from) the "Doze Mode exemption" list, which determines whether the device can enter a power saving mode while the app is running. 
       mx: "7.0"
       apilevel: "23"
     - code: 10

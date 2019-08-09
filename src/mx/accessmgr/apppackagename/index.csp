@@ -1,15 +1,15 @@
 ---
 csp: accessmgr
-title: Caller Package Name
+title: App Package Name
 type: parm
-order: 6
+order: 23
 devicetype: A
 parm:
   presentif: The Service Access Action is "Allow Caller," "Disallow Caller" or "Verify Caller."
   pivotal: Yes
-  name: CallerPackageName
+  name: AppPackageName
   type: string
-mx: "8.3"
+mx: "9.2"
 ---
 
 Used to specify the application package name on which to perform a Service Access Action. 

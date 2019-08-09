@@ -18,5 +18,5 @@ Used to specify Signatures be add to the "whitelist."
 
 **Parm value input rules**: 
 
-* String with a minimum size of 1 character
+* String with a minimum of 1 character
 * Package signatures must be separated by commas

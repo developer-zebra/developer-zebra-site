@@ -6,8 +6,9 @@ order: 21
 mx: "9.2"
 devicetype: A
 parm:
+  presentif: The CSP Access Action is NOT "Do Nothing" 
   pivotal: Yes
-  name: CspAccessAction
+  name: CspName
   type: list
   list:
     - code: 0
@@ -271,4 +272,4 @@ parm:
       name: XmlMgr
       description: 
 ---
-Used to specify the CSP Name for the selected CSP Action.
+Used to specify the CSP Name for the selected CSP Access Action.

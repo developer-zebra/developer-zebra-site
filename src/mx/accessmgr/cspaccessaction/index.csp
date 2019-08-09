@@ -4,6 +4,8 @@ title: CSP Access Action
 type: parm
 order: 20
 mx: "9.2"
+apilevel: "26"
+info: Supported on SDM660-platform devices only. 
 devicetype: A
 parm:
   pivotal: Yes
@@ -12,36 +14,43 @@ parm:
   list:
     - code: 0
       mx: "9.2"
+      apilevel: "26"
       devicetype: A
       name: Do Nothing
       description: This value (or the absence of this parm from the XML) causes no change; any prior settings are retained.
     - code: 1
       mx: "9.2"
+      apilevel: "26"
       devicetype: A
       name: Protect
       description: Designates a CSP as inaccessible by apps. 
     - code: 2
       mx: "9.2"
+      apilevel: "26"
       devicetype: A
       name: Unprotect
       description: Removes protected designation from a CSP, making it available to apps. 
     - code: 3
       mx: "9.2"
+      apilevel: "26"
       devicetype: A
       name: VerifyProtected
       description: Confirms that a CSP is designated as "Protected" and inaccessible to apps.
     - code: 4
       mx: "9.2"
+      apilevel: "26"
       devicetype: A
       name: ApproveApplication
       description: Designates an app as "permitted to access" a Protected CSP. 
     - code: 5
       mx: "9.2"
+      apilevel: "26"
       devicetype: A
       name: UnapproveApplication
       description: Removed approval from an app previously "permitted to access" a Protected CSP. 
     - code: 6
       mx: "9.2"
+      apilevel: "26"
       devicetype: A
       name: VerifyApproved
       description: Confirms that an app is designated as "permitted to access" a Protected CSP.

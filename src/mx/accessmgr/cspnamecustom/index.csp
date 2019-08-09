@@ -1,0 +1,19 @@
+---
+csp: accessmgr
+title: CSP Custom Name
+type: parm
+order: 22
+devicetype: A
+parm:
+  presentif: The Service Access Action is "Allow Caller," "Disallow Caller" or "Verify Caller."
+  pivotal: Yes
+  name: CspNameCustom
+  type: string
+mx: "9.2"
+---
+
+Used to specify the custom CSP name for a CSP Access Action when the CSP name is not shown on the CSP Names list. 
+
+**Parm value input rules**: 
+
+* String with a minimum of 1 character

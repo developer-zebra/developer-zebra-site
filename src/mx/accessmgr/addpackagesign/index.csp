@@ -5,7 +5,7 @@ type: parm
 order: 10
 devicetype: A
 parm:
-  presentif: The Application verification signing mode is "Do not verify app signature" or "Verify user app signature" *AND* Add Packages is "Add Specified Package(s)"
+  presentif: The Application verification signing mode is "Do not verify app signature" or "Verify user app signature" AND Add Packages is "Add Specified Package(s)"
   pivotal: Yes
   name: AddPackageSign
   type: string
@@ -13,4 +13,8 @@ mx: "4.3"
 osx: "3.4"
 ---
 
-Provide the Signatures that should be added to the "whitelist." Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no package signatures to be added.
+Used to specify Signature files to be added to the "whitelist." 
+
+**Parm value input rules**: 
+
+* String with a minimum of 0 character

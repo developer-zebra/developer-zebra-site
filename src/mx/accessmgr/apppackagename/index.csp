@@ -5,16 +5,16 @@ type: parm
 order: 23
 devicetype: A
 parm:
-  presentif: The Service Access Action is "Allow Caller," "Disallow Caller" or "Verify Caller."
+  presentif: The CSP Access Action is "Approve Application" or "Unapprove Application" or "Verify Approved"
   pivotal: Yes
   name: AppPackageName
   type: string
 mx: "9.2"
 ---
 
-Used to specify the application package name on which to perform a Service Access Action. 
+Used to specify the application package name on which to perform a certain CSP Access Actions. 
 
 **Parm value input rules**: 
 
 * String with a minimum of 1 character
-* Package names must be separated by commas, such as "`com.mycompany.mypackage`,`com.mycompany2.mypackage2`"  
+* Separate multiple package names with commas, such as "`com.mycompany.mypackage`,`com.mycompany2.mypackage2`"  

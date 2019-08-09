@@ -5,7 +5,7 @@ type: parm
 order: 6
 devicetype: A
 parm:
-  presentif: The Service Access Action is NOT "Do nothing."
+  presentif: The Service Access Action is NOT "Do Nothing"
   pivotal: Yes
   name: ServiceIdentifier
   type: string

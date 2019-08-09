@@ -48,7 +48,7 @@ The next time the target device reports to the server, it identifies it is marke
 4. **Play sound to search for device** <br>
 <font color="blue">[Associate]</font> Once in the AP zone, tap **Play Sound** on the associate's device to play audio on the target device. Walk towards the chirping sound heard to locate the target device. To return back to the main screen, tap the device back button. <br>
 **Important:** The time specified in the [Reporting Frequency](../config/#applicationconfiguration) needs to elapse before the sound can be played. For example, if the Reporting Frequency is set to 5 minutes, the associate must wait for 5 minutes before tapping **Play Sound**. Once the target device reports to the server and receives the flag that it is in the "To be found" state, it automatically changes the reporting frequency to 3 seconds for more frequent updates to the server until the device has been found. 
-    ![img](find_device.png)
+    ![img](finding_device.jpg)
     _Figure 1. Device Tracker client_ 
 
 5. **Device found.** <br>

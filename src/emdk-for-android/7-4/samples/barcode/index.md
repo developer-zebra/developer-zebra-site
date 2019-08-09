@@ -14,7 +14,7 @@ features:
   - Java APIs
 devices:
   - All supported devices
-image: 1.png
+image: Barcode.jpg
 screenshots:
   - Barcode.jpg
   - Barcode_scanner_list.jpg

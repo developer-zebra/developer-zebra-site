@@ -108,12 +108,14 @@ Support for Unique Device Identification (UDI) standard barcodes such as GS1, HI
  * Control whether password characters are displayed briefly on the screen as they're entered (otherwise masked at all times)
 * **Enhanced [App Manager](../../mx/appmgr)** now allows an admin to:
  * Erase all data created by an app specified in the Package parameter
-* **Enhanced [GMS Manager](../../mx/gmsmgr)** now allows an admin to:
- * Select and enable a subset of GMS apps and services to run on a device (i.e. Chrome browser, Google Maps, Firebase Cloud messaging)
 * **Enhanced [Power Manager](../../mx/powermgr)** now allows an admin to:
  * Select hardware signals as the device wake-up method
  * Select mappable keycodes as the device wake-up method 
 
+<!-- 8/9/19- removed per eng. b/c it's "only for admin and not applicable for developer role.""
+* **Enhanced [GMS Manager](../../mx/gmsmgr)** now allows an admin to:
+ * Select and enable a subset of GMS apps and services to run on a device (i.e. Chrome browser, Google Maps, Firebase Cloud messaging)
+ -->
 -----
 
 ## Version History

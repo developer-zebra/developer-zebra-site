@@ -38,15 +38,16 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 
 ### Scanners and imagers
 
-* RS507
-* RS6000
-* RS5000
-* RS4000
 * DS2278
-* DS3678
 * DS3608
+* DS3678
+* DS8178
 * LI3608
 * LI3678
+* RS507
+* RS4000
+* RS5000
+* RS6000
 
 -----
 

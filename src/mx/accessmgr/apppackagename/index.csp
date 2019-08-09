@@ -12,7 +12,7 @@ parm:
 mx: "9.2"
 ---
 
-Used to specify the application package name on which to perform a certain CSP Access Actions. 
+Used to specify the application package name on which to perform certain CSP Access Actions. 
 
 **Parm value input rules**: 
 

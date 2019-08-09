@@ -12,10 +12,8 @@ parm:
 mx: "8.3"
 ---
 
-Used to specify the application package name on which to perform a Service Access Action. 
-
+Used to specify the signature file on the device that contains the app certificate. 
 
 **Parm value input rules**: 
 
 * String with a minimum of 1 character
-* Package names must be separated by commas, such as "`com.mycompany.mypackage`,`com.mycompany2.mypackage2`"  

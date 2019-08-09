@@ -898,7 +898,6 @@ Applies only if **_all_** of the following conditions are true:
 * The search app is enabled on the device
 * The Keyguard screen is in "Swipe" mode 
 * The search icon is visible on the Keyguard screen 
-* The Keyguard has not been bypassed using the &lt;bypass_keyguard&gt; tag
 
 Unless **_all four_** of the above conditions are true, the value in this tag is ignored. Note: If no search-app shortcut exists on the device lock screen, use of this tag is not required. 
 
@@ -922,7 +921,7 @@ Unless **_all four_** of the above conditions are true, the value in this tag is
 ------
 
 ### USB Debugging Disabled
-Controls whether communication via USB is permitted between the device and a computer while the device is in User Mode. A setting of 1 (default) or if left unspecified will prevent user access to the file system and all ADB functionality on the device. **Zebra recommends manually returning USB Debugging to its desired state before uninstalling EHS**. 
+Controls whether communication via USB is permitted between the device and a computer while the device is in Admin or User Mode. A setting of 1 (default) or if left unspecified will prevent user access to the file system and all ADB functionality on the device. **Zebra recommends manually returning USB Debugging to its desired state before uninstalling EHS**. 
 
 <img alt="" style="height:350px" src="usb_debug_disable.png"/>
 
@@ -1191,7 +1190,7 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 <b>Notes</b>: 
 
 * Settings defined by **these tags override EHS defaults** and any settings applied with other tags.
-* If one of these tags is present without the other, Settings and Search apps is disabled in User Mode.
+* If one of these tags is present without the other, Settings and Search apps are disabled in Admin and User Modes.
 * If the same package name is present under both (enable and disable) tags, that app is disabled.
 * Uninstalling EHS will not re-enable apps disabled using the &lt;apps_disabled&gt; tag. 
 * **Disabled apps must be manually returned to their desired state before uninstalling EHS**.  

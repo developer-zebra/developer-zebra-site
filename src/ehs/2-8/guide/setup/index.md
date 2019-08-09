@@ -111,13 +111,12 @@ EHS provides extensive control over which device settings (such as networking) a
 
 In User Mode, the following features are disabled by default:
 
-* Airplane mode
 * USB debugging
 * Access to the file system
-* Keyguard (for unlocking the screen)
+* Access to the Search app
 * Keyguard-screen camera and search functions
-* The status-bar Settings icon  
-* Full access to the System Settings panel  
+* Full access to the System Settings panel
+* Recent apps button
 
 **To select which settings will be available while the device is in User Mode and/or to modify other User Mode preferences**:
 

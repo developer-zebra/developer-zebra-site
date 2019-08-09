@@ -133,10 +133,14 @@ This section covers important interactions between EHS and Android features that
 * Some devices retain the Recent Apps list after a reboot. Use [App Manager](/mx/appmgr) through EMDK, StageNow or a third-party EMM system to clear the list. 
 * To manually clear Recent Apps, bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears, then swipe away each app.
 
+<!-- 8/7/19- MX MU feature has been terminated; removed from docs
+
 ### EHS and MX Multi-user
 
 * If using EHS with Zebra's MX Multi-user feature, it's important to enable the device Lock Screen. Failure to do so will prevent the MX multi-user login screen from being displayed. Use the [DevAdmin](/mx/devadmin) features of Zebra's StageNow or EMDK tools to configure this setting.
 * MX Multi-user has the ability to override EHS-imposed restrictions on access to System Settings. Users logged in as an MX Admin will have full access to System Settings at all times. MX non-admin users by default will have access only to Sound, Display and About screens. 
+
+-->
 
 ### Other Unintended Access
 

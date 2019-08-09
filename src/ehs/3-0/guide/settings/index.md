@@ -1178,7 +1178,7 @@ Allows apps on a device to be explicitly disabled or enabled in Admin and User M
 <b>Notes</b>: 
 
 * Settings defined by **these tags override EHS defaults** and any settings applied with other tags.
-* If one of these tags is present without the other, Settings and Search apps is disabled in User Mode.
+* If one of these tags is present without the other, Settings and Search apps are disabled in Admin and User Modes.
 * If the same package name is present under both (enable and disable) tags, that app is disabled.
 * Uninstalling EHS will not re-enable apps disabled using the &lt;apps_disabled&gt; tag. 
 * **Disabled apps must be manually returned to their desired state before uninstalling EHS**.  

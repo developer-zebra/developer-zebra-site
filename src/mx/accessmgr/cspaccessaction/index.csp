@@ -23,19 +23,19 @@ parm:
       apilevel: "26"
       devicetype: A
       name: Protect
-      description: Designates a CSP as inaccessible by apps. 
+      description: Designates a CSP as inaccessible by all apps except those specifically Approved (see Option 4). 
     - code: 2
       mx: "9.2"
       apilevel: "26"
       devicetype: A
       name: Unprotect
-      description: Removes protected designation from a CSP, making it available to apps. 
+      description: Removes "Protected" designation from a CSP, making it available to all apps. 
     - code: 3
       mx: "9.2"
       apilevel: "26"
       devicetype: A
       name: VerifyProtected
-      description: Confirms that a CSP is designated as "Protected" and inaccessible to apps.
+      description: Confirms that a CSP is designated as "Protected" and inaccessible to unapproved apps.
     - code: 4
       mx: "9.2"
       apilevel: "26"
@@ -47,7 +47,7 @@ parm:
       apilevel: "26"
       devicetype: A
       name: UnapproveApplication
-      description: Removed approval from an app previously "permitted to access" a Protected CSP. 
+      description: Removes approval from an app previously "permitted to access" a Protected CSP. 
     - code: 6
       mx: "9.2"
       apilevel: "26"
@@ -56,5 +56,4 @@ parm:
       description: Confirms that an app is designated as "permitted to access" a Protected CSP.
 ---
 
-Used to control which CSPs on a device are "Protected" from access by apps and which apps are approved to access Protected CSPs. This can be used, for example, to prevent access to CSPs that provide sensitive functionality, or to allow only certain apps to access such CSPs. 
-
+Used to control which CSPs on a device are "Protected" from access by apps and which apps are approved to access Protected CSPs. This can be used, for example, to prevent access to CSPs that provide sensitive functionality, or to allow only certain apps to access such CSPs. **By default, all CSPs are Unprotected and accessible by all apps**. 

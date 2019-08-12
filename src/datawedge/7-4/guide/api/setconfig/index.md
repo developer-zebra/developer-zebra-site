@@ -6,7 +6,7 @@ productversion: '7.4'
 ---
 
 ## SET_CONFIG
-Used to create, update or replace a [DataWedge Profile](../../profiles) and its settings, and can configure multiple options with a single intent action. SET_CONFIG implements nested bundles, where a `PARAM_LIST` _(parameter list)_ bundle can be nested within its corresponding `PLUGIN_CONFIG` _(option)_ bundle, which can then be nested within the _main_ `SET_CONFIG` bundle. Multiple `PLUGIN_CONFIG` bundles can be nested within the `SET_CONFIG` bundle.   
+Used to create, update or replace a [DataWedge Profile](../../profiles) and its settings, and can configure multiple options with a single intent action. `SET_CONFIG` implements nested bundles, where a `PARAM_LIST` _(parameter list)_ bundle can be nested within its corresponding `PLUGIN_CONFIG` _(option based on input, data processing, utilities, or output)_ bundle, which can then be nested within the _main_ `SET_CONFIG` bundle. Multiple `PLUGIN_CONFIG` bundles can be nested within the `SET_CONFIG` bundle.   
 
 <img style="height:250px" src="nested_bundles_labelled.png"/>
 <i><b>Figure 1.</b> Visual representation of nested bundles.</i>
@@ -61,166 +61,57 @@ The main `SET_CONFIG` bundle includes the following properties:
  * **UPDATE**: Updates only specified settings
 * **PROFILE_ENABLED** [String]: Optional; Controls whether to enable (true) or disable (false) a Profile (default=true). If not specified, no change is made to the Profile state.
 * **PLUGIN_CONFIG** [Bundle[ ]]: A bundle array (nested within the main bundle) that contains settings of each Plug-in
-* **APP_LIST** [Array]: List of applications and/or activities to associate with the Profile
-<!-- // Commented out 6/17/19
-* **Data Capture Plus (DCP) configuration** - [String]: Parameters to control DCP configuration  -->
+* **APP_LIST** [Array]: An array of bundles to be associated with the Profile. Each APP_LIST bundle contains the following properties:
+ * **PACKAGE_NAME** [String]: The package name for the app to be associated with the profile. For example: "com.symbol.emdk.barcodesample1" or a wildcard (&#42;) character. 
+ * **ACTIVITY_LIST** [List]: A list of activities from the `PACKAGE_NAME`. Wildcard (&#42;) character is also supported.
 
 #### PLUGIN_CONFIG BUNDLE
 The `PLUGIN_CONFIG` bundle is configured using the following properties:
 
 * **RESET_CONFIG** [String]: Optional - applies to an existing Profile. Values: 
  * **True (Default) –** Clear any existing configuration and create a new configuration with the specified parameter values  
- * **False –** Merge existing configuration with changes from the new configuration - update the existing values and add values not already in the configuration
-
-**PLUGIN_NAME** [String]: Name of the Plug-in to configure:
+ * **False –** Merge existing configuration with changes from the new configuration - update the existing values and add values not already in the configuration<br>
+* **PLUGIN_NAME** [String]: Name (case-sensitive) of the Plug-in to configure. See tables below for `PARAM_LIST` values. For DataWedge 6.5 and below, each intent involving a Plug-in requires a separate intent Action:<br>
  * **BARCODE** input
- * **SERIAL** input
  * **MSR** (Magnetic Stripe Reader) input
  * **RFID** (Radio-frequency Identification) input
+ * **SERIAL** input
  * **SIMULSCAN** input
  * **VOICE** input
- * **BDF** (basic data formatting) processing
- * **ADF** (advanced data formatting) processing
+ * **BDF** (Basic Data Formatting) processing
+ * **ADF** (Advanced Data Formatting) processing
  * **TOKENS** (data formatting and ordering for Keystroke and IP output with UDI/Multi-barcode data) processing
  * **INTENT** output
  * **KEYSTROKE** output
  * **IP** (Internet Protocol) output
  * **DCP** (Data Capture Plus) utilities
- * **EKB** utilities
-
-**Notes**: 
-* Plug-in names are case sensitive.
-* For DataWedge 6.5 and below, each intent involving a Plug-in requires a separate intent Action.
-* See tables below for `PARAM_LIST` values. 
-
-**PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters to be updated under the specified Plug-in. **Setting an empty string in any parameter value resets that parameter to its default setting**. 
-
-<img style="height:750px" src="setconfig_nested.jpg"/>
-<br> 
-<i><b>Figure 2.</b> Visual representation of nested `SET_CONFIG` bundle. Bundles are designated in blue with corresponding properties listed. `PLUGIN_NAME` lists the name of the plug-ins (options) available to configure. Dotted arrows from each plug-in point to the corresponding `PARAM_LIST`, properties that can be configured for that particular plug-in. [See example code](#examplecode).</i>
-<br>
-<br>
-
+* **PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters to be updated under the specified Plug-in. **Setting an empty string in any parameter value resets that parameter to its default setting**. 
+<!--  * **EKB** (Enterprise Keyboard) utilities -->
 
 #### PARAM_LIST BUNDLE
-The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the table below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
+The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the respective `PLUGIN_NAME` parameter tables below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
 
-* **BARCODE –** takes a value from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
- * `scanner_selection_by_identifier` [string]- takes a value from the list of [Scanner Identifiers](#scanneridentifiers) below.
+* **BARCODE –** accepts values from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
+ * `scanner_selection_by_identifier` [string]- accepts a value from the list of [Scanner Identifiers](#scanneridentifiers) below.
  * `configure_all_scanners` [string]- true/false
  <br>
  If set to “true”, the parameter `scanner_selection_by_identifier` is ignored and the configuration is saved as a Global Scanner Configuration. If there is any previous configuration for any individual scanners, they will be replaced with the new global configuration. <br>
  If set to "false", the configuration will be saved for the individual selected scanner only. In the event the scanner selection is set to “Auto”, the current default scanner configuration is updated.
 
-* **RFID -** takes values as indicated below:
- * `rfid_input_enabled` [string] - true/false
- * `rfid_beeper_enable` [string] - true/false
- * `rfid_led_enable` [string] - true/false
- * `rfid_antenna_transmit_power` [string] - 5 to 30
- * `rfid_memory_bank` [string]:
-   <ul>
-	 	<li>0 - None (default)</li>
-	  <li>1 - User</li>
-	  <li>2 - Reserved</li>
-	  <li>3 - TID (tag identification)</li>
-	  <li>4 - EPC (electronic product code)</li>
-	 </ul>
- * `rfid_session` [string] - configures the session to read. This is one of the singulation controls in RFID:
-  <ul>
-	 	<li>0 - Session 0</li>
-	  <li>1 - Session 1 (default)</li>
-	  <li>2 - Session 2</li>
-	  <li>3 - Session 3</li>
-	</ul>
- * `rfid_filter_duplicate_tags` [string] - true/false
- * `rfid_hardware_trigger_enabled` [string] - true/false
- * `rfid_tag_read_duration` [string] - 10 to 60000 (in ms)
- * `rfid_trigger_mode` [string]:
-   <ul>
-	 	<li>0 - Immediate (default)</li>
-	  <li>1 - Continuous</li>
-	 </ul>
-
-* **SERIAL -** takes values as indicated below: 
- * `serial_port_id` [string] - 0&ndash;n (must be a valid port index)
- * `serial_input_enabled` [string] - true/false
- * `serial_baudrate` [string] - 300, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 230400, 460800 or 921600
- * `serial_databits` [string] - 7 or 8
- * `serial_parity` [string] - NONE, ODD, EVEN, MARK or SPACE
- * `serial_stopbits` [string] - 1 or 2
- * `serial_flow` [string] - FLOW_NONE, FLOW_RTS_CTS or FLOW_XON_XOFF
-
-* **VOICE -** takes values as indicated below: 
- * `voice_input_enabled` [string] - true/false
- * `voice_data_capture_start_phrase` [string] - start (default value)
- * `voice_data_capture_end_phrase` [string] - [blank] (default value)
- * `voice_tab_command` [string] - true/false
- * `voice_enter_command` [string] - true/false
- * `voice_data_type` [string] - 0 - Any, 1- Alpha, 2 - Numeric
- * `voice_start_phrase_waiting_tone` [string] - true/false
- * `voice_data_capture_waiting_tone` [string] - true/false
- * `voice_validation_window` [string] - true/false
- * `voice_offline_speech` [string] - true/false
-
-
-* **INTENT -** takes values as indicated below: 
- * `intent_output_enabled` [string]- true/false
- * `intent_action` [string] - exact name of the action
- * `intent_category` [string] - exact name of the category
- * `intent_delivery` [string]:
- 	* 0 - Start Activity
- 	* 1 - Start Service
- 	* 2 - Broadcast
+* **MSR -** Accepts values from the [MSR Input Parameters](#msrinputparameters) table below.
+* **RFID -** Accepts values from the [RFID Input Parameters](#rfidinputparameters) table below.
+* **SERIAL -** Accepts values from the [Serial Input Parameters](#serialinputparameters) table below.
+* **SIMULSCAN -** Accepts values from the [Simulscan Input Parameters](#simulscaninputparameters) table below.
+* **VOICE -** Accepts values from the [Voice Input Parameters](#voiceinputparameters) table below.
+* **DATA CAPTURE PLUS (DCP) -** Accepts values from the [DCP Utilities Parameters](#dcputilitiesparameters) table below.
+* **BDF (Basic Data Formatting) -** Applies [Basic Data Formatting](../../process/bdf) rules to the acquired data. Accepts values from the [BDF Processing Parameters](#bdfprocessingparameters) table below. 
+* **ADF (Advanced Data Formatting) -** Applies [Advanced Data Formatting](../../process/adf) rules to the acquired data. This bundle contains Action, Device, Decoder and Label_ID sub-bundles. Accepts values from the [ADF Processing Parameters](#adfprocessingparameters) table below.
+* **TOKENS -** Applicable for UDI or multibarcodes; accepts values from the [Token Parameters](#tokenparameters) table below.
+* **INTENT -** Accepts values from the [Intent Output Parameters](#intentoutputparameters) table below.
+* **KEYSTROKE -** Accepts values from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
+* **IP (Internet Protocol) -** Accepts values from the [IP Output Parameters](#ipoutputparameters) table below.
 
 <!-- `intent_flag_receiver_foreground` [string] &lt;true/false&gt; -->
-
-* **KEYSTROKE -** takes a value from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
-
-* **BDF -** Applies [Basic Data Formatting](../../process/bdf) rules to the acquired data. Takes values: 
- * `bdf_enabled` [string]- true/false
-
- * `bdf_prefix` [string]- prepend acquired data
-
- * `bdf_suffix` [string]- append acquired data
-
- * `bdf_send_data` [string]- true/false
-
- * `bdf_send_hex` [string]- true/false
-
- * `bdf_send_tab` [string]- true/false
-
- * `bdf_send_enter` [string]- true/false
-
-* **ADF -** Applies [Advanced Data Formatting](../../process/adf) rules to the acquired data. This bundle contains Action, Device, Decoder and Label_ID sub-bundles, and takes values:
- * `adf_enabled` [string] – true/false (default=false)
-
- * `ADF_RULE` [bundle] - Takes values:
-	* `name` [string] – Name of the ADF rule to use
-	* `enabled` [string] – Rule enabled; true/false (default=true)
-	* `alldevices` [string] – Accept data from all supported input sources; true/false (default=true)	
-	* `string` [string] – String to check for (default=empty string)
-	* `string_pos` [string] – String position (default=0)
-	* `string_len` [string] - String length (default=0)
-	* `ACTIONS` [bundle] - Accepts multiple instances. Takes value(s): 
-		* `type` [string] - Name of Action from [ADF Actions table](#adfactions)
-		* `action_param_1`, `action_param_2`... (as determined by ADF Action; see table)
-
- * `DEVICES` [bundle] - Accepts multiple instances. Takes values:
-		* `device_id` [string] - Name of the input source: BARCODE, MSR, SIMULSCAN or SERIAL
-		* `enabled` [string] - Accept data from specified device ID: true/false (default=true)
-		* `alldecoders` [string] - Allow all barcode symbologies: true/false (default=true)
-		* `all_label_ids` [string] - Allow all UDI label IDs: true/false (default=true)
-
- * `DECODERS` [bundle] - Accepts multiple instances. Takes values:
-		* `device_id` [string] - BARCODE, MSR, SERIAL or SIMULSCAN
-		* `decoder` [string] - (i.e. "Australian Postal")
-		* `enabled` [string] - true/false (default=true)
-
- * `LABEL_IDS` [bundle] - Accepts multiple instances. Takes values:
-		* `device_id` [string] - BARCODE, MSR, SERIAL or SIMULSCAN
-		* `label_id` [string] - UDI_GS1, UDI_HIBCC or UDI_ICCBBA
-		* `enabled` [string] - true/false (default=true)
-
 <!--  // moved to DW 7.5
 <ul>
  <li><b>EKB -</b> Set Enterprise Keyboard Configuration for a DataWedge Profile. Options: </li>
@@ -235,154 +126,18 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 </ul>
 -->
 
-
 **IMPORTANT**: 
 
 * **If a Profile is created without at least one Rule**, DataWedge creates a "Rule0" with a single action to "SEND_REMAINING" data without modification. 
 * **If values in one or more newly created Rules are missing or invalid**, DataWedge uses default values. 
 * **To update one or more Actions in an existing Profile** using an intent, all Actions in the Profile must be included in the intent. 
 
-### ADF ACTIONS
 
-<table class="facelift" rules="all"
-width="100%"
-frame="border"
-cellspacing="0" cellpadding="4" padding="5px">
-<caption class="title"></caption>
-<col width="22%" />
-<col width="22%" />
-<col width="55%" />
-<thead>
-<tr bgcolor="#dce8ef">
-<th align="left" valign="top">Category</th>
-<th align="left" valign="top">Action Type<br>Parameter(s) (if any)</th>
-<th align="left" valign="top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td rowspan="5" align="left" valign="top"><p class="table"><strong>Cursor Movement</strong></p></td>
-<td align="left" valign="top"><p class="table">SKIP_AHEAD<br>action _param_1</p></td>
-<td align="left" valign="top"><p class="table">Moves the cursor forward by the specified number of characters (default=1)</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">SKIP_BACK<br>action _param_1</p></td>
-<td align="left" valign="top"><p class="table">Moves the cursor back by the specified number of characters (default=1)</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">SKIP_TO_START</p></td>
-<td align="left" valign="top"><p class="table">Moves the cursor to the beginning of the data</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">MOVE_AHEAD_TO<br>action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Known as "Move to" in the DataWedge UI, advances the cursor until the specified string is found</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">MOVE_PAST_A<br>action_param_1</p></td>
-<td align="left" valign="top"><div><div class="paragraph"><p>Moves the cursor forward past the specified string</p></div></div></td>
-</tr>
-<tr>
-<td rowspan="14" align="left" valign="top"><p class="table"><strong>Data Modification</strong></p></td>
-<td align="left" valign="top"><p class="table">CRUNCH_SPACES</p></td>
-<td align="left" valign="top"><p class="table">Reduces spaces between words to one, and removes all spaces at the beginning and end of the data</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">STOP_CRUNCH_SPACE</p></td>
-<td align="left" valign="top"><p class="table">Disables the last <strong>Crunch spaces</strong> action</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">REMOVE_SPACES</p></td>
-<td align="left" valign="top"><p class="table">Known as "Remove all spaces" in the DataWedge UI, removes all spaces in the data</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">STOP_REMOVE_SPACES</p></td>
-<td align="left" valign="top"><p class="table">Disables the last <strong>REMOVE_SPACES</strong> action</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">TRIM_LEFT_ZEROS</p></td>
-<td align="left" valign="top"><p class="table">Known as "Remove leading zeros" in the DataWedge UI, removes all zeros at the beginning of the data</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">STOP_TRIM_LEFT_ZEROS</p></td>
-<td align="left" valign="top"><p class="table">Disables the previous <strong>TRIM_LEFT_ZEROS</strong> action</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">PAD_LEFT_ZEROS<br>action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Known as "Pad with zeros" in the DataWedge UI, left-pads the data with the specified number of zeros (default=0)</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">STOP_PAD_LEFT_ZEROS</p></td>
-<td align="left" valign="top"><p class="table">Disables the previous <strong>PAD_LEFT_ZEROS</strong> action</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">PAD_LEFT_SPACES<br>action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Known as "Pad with spaces" in the DataWedge UI, left-pads the data with the specified number of spaces (default=0)</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">STOP_PAD_LEFT_SPACES</p></td>
-<td align="left" valign="top"><p class="table">Disables the previous <strong>PAD_LEFT_SPACES</strong> action</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">REPLACE_STRING<br>action_param_1<br>  action_param_2</p></td>
-<td align="left" valign="top"><p class="table">Replaces a specified string (action_param_1) with a new specified string (action_param_2). Both must be specified (default=empty)</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">STOP_REPLACE_ALL</p></td>
-<td align="left" valign="top"><p class="table">Known as "Stop all replace string" in the DataWedge UI, stops all <strong>REPLACE_STRING</strong> actions</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">REMOVE_CHARACTERS<br>action_param_1<br>action_param_2<br>action_param_3</p></td>
-<td align="left" valign="top"><p class="table">Removes the number of characters specified in given positions when send actions are executed<br>action_param_1: (0=front (default); 1=in between; 2=end; 3=center)<br>action_param_2: start position (default=0)<br>action_param_3: number of characters (default=0)</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">STOP_REMOVE_CHARS</p></td>
-<td align="left" valign="top"><p class="table">Stops removing characters from subsequent send actions</p></td>
-</tr>
-<tr>
-<td rowspan="6" align="left" valign="top"><p class="table"><strong>Data Sending</strong></p></td>
-<td align="left" valign="top"><p class="table">SEND_NEXT<br>action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Sends the specified number of characters from the current cursor position (default=0)</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">SEND_REMAINING</p></td>
-<td align="left" valign="top"><p class="table">Sends all data that remains from the current cursor position</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">SEND_UP_TO<br>action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Sends all data up to the specified string</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">DELAY</p></td>
-<td align="left" valign="top"><p class="table">Known as "Send pause" in the DataWedge UI, pauses the specified number of milliseconds (default = 0; max. = 120000) before executing the next action. <strong>Zebra recommends pausing 50 ms after sending any ENTER, LINE FEED or TAB character</strong>.</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">SEND_STRING<br>action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Sends the specified string</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p class="table">SEND_CHAR<br>action_param_1</p></td>
-<td align="left" valign="top"><p class="table">Sends the specified ASCII/ Unicode character. The maximum Unicode character value is U-10FFFF (1114111 in decimal)</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-**Notes**:
-* **Default action_param values are 0, empty or none** unless otherwise noted.
-* **To help minimize data loss**, Zebra recommends sending a DELAY of 50 ms after sending any ENTER, LINE FEED or TAB character.
-
------
-
-#### APP_LIST
-An array of bundles that contains a set of `PACKAGE_NAMES` and an `ACTIVITY_LIST` to be associated with the Profile. 
-
-##### APP_LIST BUNDLE
-Contains the following properties:
-
-**PACKAGE_NAME** [String]: ex: "com.symbol.emdk.barcodesample1" or a wildcard (&#42;) character 
-
-**ACTIVITY_LIST** [List]: A list of activities for the `PACKAGE_NAME`. Wildcard (&#42;) character also supported.
-
------
+<img style="height:750px" src="setconfig_nested.jpg"/>
+<br> 
+<i><b>Figure 2.</b> Visual representation of nested `SET_CONFIG` bundle. Bundles are designated in blue with corresponding properties listed. `PLUGIN_NAME` lists the name of the plug-ins (options) available to configure. Dotted arrows from each plug-in point to the corresponding `PARAM_LIST`, properties that can be configured for that particular plug-in. [See example code](#examplecode).</i>
+<br>
+<br>
 
 ### Scanner Identifiers
 The scanner identifier (introduced in DataWedge 6.5) permits scanners to be identified by a friendly name rather than an index number. 
@@ -403,8 +158,6 @@ The scanner identifier (introduced in DataWedge 6.5) permits scanners to be iden
 * **PLUGABLE_SSI** - Serial SSI scanner RS429 (for use with WT6000)
 * **PLUGABLE_SSI_RS5000** - Serial SSI scanner RS5000 (for use with WT6000)
 * **USB_SSI_DS3608** - DS3608 pluggable USB scanner
-
------
 
 ### Result Codes
 
@@ -1289,6 +1042,72 @@ Other Scanner Input Parameters:
 
 -----
 
+## MSR Input Parameters 
+
+> All parameters are case sensitive.
+
+<table class="facelift" style="width:50%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+		<th>Parameter</th>
+		<th>Parameter Value</th>
+	</tr>
+	<tr>
+		<td>msr_input_enabled</td>
+		<td>True<br>False</td>
+	</tr>
+</table>
+
+-----
+
+## RFID Input Parameters
+
+> All parameters are case sensitive.
+
+<table class="facelift" style="width:70%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Parameter</th>
+    <th>Parameter Value</th>
+  </tr>
+	<tr>
+		<td>rfid_input_enabled</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>rfid_beeper_enable</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>rfid_led_enable</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>rfid_antenna_transmit_power</td>
+		<td>5 to 30</td>
+	</tr>
+	<tr>
+		<td>rfid_memory_bank</td>
+		<td>0 - None (default)<br>1 - User<br>2 - Reserved<br>3 - TID (tag identification<br>4 - EPC (electronic product code)</td>
+	</tr>
+	<tr>
+		<td>rfid_session</td>
+		<td>0 - Session 0<br>1 - Session 1 (default)<br>2 - Session 2<br>3 - Session 3</td>
+	</tr>
+	<tr>
+		<td>rfid_filter_duplicate_tags</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>rfid_hardware_trigger_enabled</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>rfid_trigger_mode</td>
+		<td>0 - Immediate (default)<br>1 - Continuous</td>
+	</tr>
+</table>
+
+-----
+
 ## Serial Input Parameters 
 
 **Important**: Support for serial parameters varies by device. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
@@ -1314,54 +1133,21 @@ Other Scanner Input Parameters:
 	</tr>
 	<tr>
 		<td>serial_databits</td>
-		<td>7 or 8</td>
+		<td>7<br>8</td>
 	</tr>
 	<tr>
 		<td>serial_parity</td>
-		<td>NONE, ODD, EVEN, MARK or SPACE</td>
+		<td>NONE<br>ODD<br>EVEN<br>MARK<br>SPACE</td>
 	</tr>
 	<tr>
 		<td>serial_stopbits</td>
-		<td>1 or 2</td>
+		<td>1<br>2</td>
 	</tr>
 	<tr>
 		<td>serial_flow</td>
 		<td>FLOW_NONE, FLOW_RTS_CTS or FLOW_XON_XOFF</td>
 	</tr>
 </table>
-
-<!--
-<table class="c19">
-<tbody>
-<tr class="c6" bgcolor="#e0e0eb">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c1">
-<span class="c9">
-<u><strong>Param name</strong></u>
-</span>
-</p>
-</td>
-<td class="c14" colspan="1" rowspan="1">
-<p class="c1"> <span class="c9"><u><strong>Param values</strong></u></span></p>
-</td>
-</tr>
-<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_port_id</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">0&ndash;n (must be a valid index)</span></p>
-</td>
-<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_input_enabled</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p>
-</td>
-<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_baudrate</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">300, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 230400, 460800 or 921600</span></p>
-</td>
-<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_databits</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">7 or 8</span></p>
-</td>
-<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_parity</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">NONE, ODD, EVEN, MARK or SPACE</span></p>
-</td>
-<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_stopbits</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">1 or 2</span></p>
-</td>
-<tr class="c3" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">serial_flow</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">FLOW_NONE, FLOW_RTS_CTS or FLOW_XON_XOFF</span></p>
-</td>
-</tbody>
-</table>
--->
 
 -----
 
@@ -1403,9 +1189,58 @@ Other Scanner Input Parameters:
 		<td>True<br>False</td>
 	</tr>
 </table>
+
 -----
 
-## Data Capture Plus (DCP) Input Parameters
+## Voice Input Parameters 
+> All parameters are case sensitive.
+
+<table class="facelift" style="width:70%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Parameter</th>
+    <th>Parameter Value</th>
+  </tr>
+	<tr>
+		<td>voice_input_enabled</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>voice_data_capture_start_phrase</td>
+		<td>start (default value)</td>
+	</tr>
+	<tr>
+		<td>voice_data_capture_end_phrase</td>
+		<td><i>[blank]</i> (default value)</td>
+	</tr>
+	<tr>
+		<td>voice_enter_command</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>voice_data_type</td>
+		<td>0 - Any<br>1- Alpha<br>2 - Numeric</td>
+	</tr>
+		<tr>
+		<td>voice_start_phrase_waiting_tone</td>
+		<td>true<br>false</td>
+	</tr>
+		<tr>
+		<td>voice_data_capture_waiting_tone</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>voice_validation_window</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>voice_offline_speech</td>
+		<td>true<br>false</td>
+	</tr>
+</table>
+
+-----
+
+## DCP Utilities Parameters
 
 > All parameters are case sensitive.
 
@@ -1418,7 +1253,7 @@ Other Scanner Input Parameters:
 	<tr>
 		<td>dcp_input_enabled</td>
 		<td>true<br>false</td>
-		<td>Enable/Disable DCP input</td>
+		<td>Enable/Disable Data Capture Plus input</td>
 	</tr>
 	<tr>
 		<td>dcp_dock_button_on</td>
@@ -1452,19 +1287,284 @@ See [DCP Input](../../input/dcp).
 <br>
 
 -----
-
-## MSR (Magnetic Stripe) Input Parameters 
+## BDF Processing Parameters
 
 > All parameters are case sensitive.
 
-<table class="facelift" style="width:50%" border="1" padding="5px">
+<table class="facelift" style="width:70%" border="1" padding="5px">
   <tr bgcolor="#dce8ef">
-		<th>Parameter</th>
+    <th>Parameter</th>
+    <th>Parameter Value</th>
+  </tr>
+	<tr>
+		<td>bdf_enabled</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>bdf_prefix</td>
+		<td>[string to prepend acquired data]</td>
+	</tr>
+	<tr>
+		<td>bdf_suffix</td>
+		<td>[string to append acquired data]]</td>
+	</tr>
+	<tr>
+		<td>bdf_send_data</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>bdf_send_hex</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>bdf_send_tab</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>bdf_send_enter</td>
+		<td>true<br>false</td>
+	</tr>
+
+</table>
+
+-----
+## ADF Processing Parameters
+
+> All parameters are case sensitive.
+
+<table class="facelift" style="width:70%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Parameter</th>
+    <th>Parameter Value</th>
+  </tr>
+	<tr>
+		<td>adf_enabled</td>
+		<td>true<br>false (default)</td>
+	</tr>
+	<tr>
+		<td>ADF_RULE</td>
+		<td>Bundle that accepts values:<br>&nbsp; &#8226; name [string] – Name of the ADF rule to use<br>&nbsp; &#8226; enabled [string] – Rule enabled; true/false (default=true)<br>&nbsp; &#8226; alldevices [string] – Accept data from all supported input sources; true/false (default=true)<br>&nbsp; &#8226; string [string] – String to check for (default=empty string)<br>&nbsp; &#8226; string_pos [string] – String position (default=0)<br>&nbsp; &#8226; string_len [string] - String length (default=0)</td>
+	</tr>
+	<tr>
+		<td>ACTIONS</td>
+		<td>Bundle that can have multiple instances; accepts values:<br>&nbsp; &#8226; type [string] - Name of Action from <a href="./#adfactions">ADF Actions</a> table<br>&nbsp; &#8226; [action_param_1], [action_param_2]... (as determined by <a href="./#adfactions">ADF Action</a>; see table)</td>
+	</tr>
+	<tr>
+		<td>DEVICES</td>
+		<td>Bundle that can have multiple instances; accepts values:<br>&nbsp; &#8226; device_id [string] - Name of the input source: BARCODE, MSR, RFID, SERIAL, SIMULSCAN or VOICE<br>&nbsp; &#8226; enabled [string] - Accept data from specified device ID: true/false (default=true)<br>&nbsp; &#8226; alldecoders [string] - Allow all barcode symbologies: true/false (default=true)<br>&nbsp; &#8226; all_label_ids [string] - Allow all UDI label IDs: true/false (default=true)
+		</td>
+	</tr>
+	<tr>
+		<td>DECODERS</td>
+		<td>Bundle that can have multiple instances; accepts values:<br>&nbsp; &#8226; device_id [string] - BARCODE, MSR, RFID, SERIAL, SIMULSCAN or VOICE<br>&nbsp; &#8226; decoder [string] - (i.e. "Australian Postal")<br>&nbsp; &#8226; enabled [string] - true/false (default=true)
+		</td>
+	</tr>
+	<tr>
+		<td>LABEL_IDS</td>
+		<td>Bundle that can have multiple instances; accepts values:<br>&nbsp; &#8226; device_id [string] - BARCODE, MSR, RFID, SERIAL, SIMULSCAN or VOICE<br>&nbsp; &#8226; label_id [string] - UDI_GS1, UDI_HIBCC or UDI_ICCBBA<br>&nbsp; &#8226; enabled [string] - true/false (default=true)
+		</td>
+	</tr>
+</table>
+
+### ADF ACTIONS
+
+<table class="facelift" rules="all"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4" padding="5px">
+<caption class="title"></caption>
+<col width="22%" />
+<col width="22%" />
+<col width="55%" />
+<thead>
+<tr bgcolor="#dce8ef">
+<th align="left" valign="top">Category</th>
+<th align="left" valign="top">Action Type<br>Parameter(s) (if any)</th>
+<th align="left" valign="top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="5" align="left" valign="top"><p class="table"><strong>Cursor Movement</strong></p></td>
+<td align="left" valign="top"><p class="table">SKIP_AHEAD<br>action _param_1</p></td>
+<td align="left" valign="top"><p class="table">Moves the cursor forward by the specified number of characters (default=1)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">SKIP_BACK<br>action _param_1</p></td>
+<td align="left" valign="top"><p class="table">Moves the cursor back by the specified number of characters (default=1)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">SKIP_TO_START</p></td>
+<td align="left" valign="top"><p class="table">Moves the cursor to the beginning of the data</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">MOVE_AHEAD_TO<br>action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Known as "Move to" in the DataWedge UI, advances the cursor until the specified string is found</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">MOVE_PAST_A<br>action_param_1</p></td>
+<td align="left" valign="top"><div><div class="paragraph"><p>Moves the cursor forward past the specified string</p></div></div></td>
+</tr>
+<tr>
+<td rowspan="14" align="left" valign="top"><p class="table"><strong>Data Modification</strong></p></td>
+<td align="left" valign="top"><p class="table">CRUNCH_SPACES</p></td>
+<td align="left" valign="top"><p class="table">Reduces spaces between words to one, and removes all spaces at the beginning and end of the data</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_CRUNCH_SPACE</p></td>
+<td align="left" valign="top"><p class="table">Disables the last <strong>Crunch spaces</strong> action</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">REMOVE_SPACES</p></td>
+<td align="left" valign="top"><p class="table">Known as "Remove all spaces" in the DataWedge UI, removes all spaces in the data</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_REMOVE_SPACES</p></td>
+<td align="left" valign="top"><p class="table">Disables the last <strong>REMOVE_SPACES</strong> action</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">TRIM_LEFT_ZEROS</p></td>
+<td align="left" valign="top"><p class="table">Known as "Remove leading zeros" in the DataWedge UI, removes all zeros at the beginning of the data</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_TRIM_LEFT_ZEROS</p></td>
+<td align="left" valign="top"><p class="table">Disables the previous <strong>TRIM_LEFT_ZEROS</strong> action</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">PAD_LEFT_ZEROS<br>action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Known as "Pad with zeros" in the DataWedge UI, left-pads the data with the specified number of zeros (default=0)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_PAD_LEFT_ZEROS</p></td>
+<td align="left" valign="top"><p class="table">Disables the previous <strong>PAD_LEFT_ZEROS</strong> action</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">PAD_LEFT_SPACES<br>action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Known as "Pad with spaces" in the DataWedge UI, left-pads the data with the specified number of spaces (default=0)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_PAD_LEFT_SPACES</p></td>
+<td align="left" valign="top"><p class="table">Disables the previous <strong>PAD_LEFT_SPACES</strong> action</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">REPLACE_STRING<br>action_param_1<br>  action_param_2</p></td>
+<td align="left" valign="top"><p class="table">Replaces a specified string (action_param_1) with a new specified string (action_param_2). Both must be specified (default=empty)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_REPLACE_ALL</p></td>
+<td align="left" valign="top"><p class="table">Known as "Stop all replace string" in the DataWedge UI, stops all <strong>REPLACE_STRING</strong> actions</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">REMOVE_CHARACTERS<br>action_param_1<br>action_param_2<br>action_param_3</p></td>
+<td align="left" valign="top"><p class="table">Removes the number of characters specified in given positions when send actions are executed<br>action_param_1: (0=front (default); 1=in between; 2=end; 3=center)<br>action_param_2: start position (default=0)<br>action_param_3: number of characters (default=0)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">STOP_REMOVE_CHARS</p></td>
+<td align="left" valign="top"><p class="table">Stops removing characters from subsequent send actions</p></td>
+</tr>
+<tr>
+<td rowspan="6" align="left" valign="top"><p class="table"><strong>Data Sending</strong></p></td>
+<td align="left" valign="top"><p class="table">SEND_NEXT<br>action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Sends the specified number of characters from the current cursor position (default=0)</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">SEND_REMAINING</p></td>
+<td align="left" valign="top"><p class="table">Sends all data that remains from the current cursor position</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">SEND_UP_TO<br>action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Sends all data up to the specified string</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">DELAY</p></td>
+<td align="left" valign="top"><p class="table">Known as "Send pause" in the DataWedge UI, pauses the specified number of milliseconds (default = 0; max. = 120000) before executing the next action. <strong>Zebra recommends pausing 50 ms after sending any ENTER, LINE FEED or TAB character</strong>.</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">SEND_STRING<br>action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Sends the specified string</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table">SEND_CHAR<br>action_param_1</p></td>
+<td align="left" valign="top"><p class="table">Sends the specified ASCII/ Unicode character. The maximum Unicode character value is U-10FFFF (1114111 in decimal)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+**Notes**:
+* **Default action_param values are 0, empty or none** unless otherwise noted.
+* **To help minimize data loss**, Zebra recommends sending a DELAY of 50 ms after sending any ENTER, LINE FEED or TAB character.
+
+-----
+
+## Token Parameters 
+
+Applicable for UDI or multibarcodes.
+
+> All parameters are case sensitive.
+
+<table class="facelift" style="width:80%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+		<th>Parameter Name</th>
 		<th>Parameter Value</th>
 	</tr>
 	<tr>
-		<td>msr_input_enabled</td>
-		<td>True<br>False</td>
+		<td>send_tokens_option</td>
+		<td>DISABLED<br>TOKENS<br>BARCODES_TOKENS</td>
+	</tr>
+	<tr>
+		<td>token_separator</td>
+		<td>TAB<br>CR<br>LF<br>NONE</td>
+	</tr>
+	<tr>
+		<td>multibarcode_separator</td>
+		<td>TAB<br>CR<br>LF<br>NONE</td>
+	</tr>
+	<tr>
+		<td>token_order</td>
+		<td>name: manufacturing_date_original<br>enabled: True/False<br><br>
+		name: expiration_date_original<br>enabled: True/False<br><br>
+		name: di<br>enabled: True/False<br><i>(Note: "di" stands for device identifier.)</i><br><br>
+		name: lot_number<br>enabled: True/False<br><br>
+		name: serial_number<br>enabled: True/False<br><br>
+		name: mpho_lot_number<br>enabled: True/False<br><br>
+		name: donation_id<br>enabled: True/False<br><br>
+		name: labeler_identification_code<br>enabled: True/False<br><br>
+		name: product_or_catalog_number<br>enabled: True/False<br><br>
+		name: unit_of_measure_id<br>enabled: True/False<br><br>
+		name: quantity<br>enabled: True/False<br><br>
+		<i>&#42; DataWedge determines the priority order according to the order of items listed in the ArrayList, with Element 0 having the highest priority.</i>
+		</td>
+	</tr>
+</table>
+
+<br>
+See **UDI Data Output** in [IP Output](../../output/ip#udidataoutput) or [Keystroke Output](../../output/keystroke#udidataoutput)
+
+-----
+## Intent Output Parameters
+
+> All parameters are case sensitive.
+
+<table class="facelift" style="width:70%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th>Parameter</th>
+    <th>Parameter Value</th>
+  </tr>
+	<tr>
+		<td>intent_output_enabled</td>
+		<td>true<br>false</td>
+	</tr>
+	<tr>
+		<td>intent_action</td>
+		<td>[exact name of the action]</td>
+	</tr>
+	<tr>
+		<td>intent_category</td>
+		<td>[exact name of the category]]</td>
+	</tr>
+	<tr>
+		<td>intent_delivery</td>
+		<td>0 - Start Activity<br>1 - Start Service<br>2 - Broadcast</td>
 	</tr>
 </table>
 
@@ -1517,41 +1617,6 @@ See [DCP Input](../../input/dcp).
 	</tr>
 </table>
 
-<!--
-<table class="c19">
-<tbody>
-<tr class="c6" bgcolor="#e0e0eb">
-<td class="c20" colspan="1" rowspan="1">
-<p class="c1">
-<span class="c9">
-<strong>Param name</strong>
-</span>
-</p>
-</td>
-<td class="c14" colspan="1" rowspan="1">
-<p class="c1"> <span class="c9"><strong>Param values</strong></span></p>
-</td>
-</tr>
-<tr class="c3"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">keystroke_output_enabled</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td>
-</tr>
-<tr class="c10" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1"><span class="c0">keystroke_action_character</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">NONE - ASCII_NO_VALUE</span></p><p class="c1"><span class="c0">TAB - ASCII_TAB_VALUE</span></p><p class="c1"><span class="c0">LF - ASCII_LF_VALUE</span></p><p class="c1"><span class="c0">CR - ASCII_CR_VALUE</span></p></td>
-</tr>
-<tr class="c13"><td class="c4" colspan="1" rowspan="1"><p class="c1">
-<span class="c0">keystroke_delay_extended_ascii<br>(deprecated)</p></span></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Integer from 0&ndash;1000</span></p></td>
-</tr>
-<tr class="c13" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1">
-<span class="c0">keystroke_delay_control_characters</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Integer from 0&ndash;1000</span></p></td>
-</tr>
-<tr class="c13"><td class="c4" colspan="1" rowspan="1"><p class="c1">
-<span class="c0">keystroke_character_delay</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">Integer from 0&ndash;1000</span></p></td>
-</tr>
-<tr class="c13" bgcolor="#e0e0eb"><td class="c4" colspan="1" rowspan="1"><p class="c1">
-<span class="c0">keystroke_delay_multibyte_chars_only</span></p></td><td class="c2" colspan="1" rowspan="1"><p class="c1"><span class="c0">false</span></p><p class="c1"><span class="c0">true</span></p></td>
-</tr>
-</tbody>
-</table>
--->
-
 ### Keystroke Delay Notes
 
 * The `keystroke_delay_extended_ascii` parameter is deprecated. 
@@ -1563,7 +1628,7 @@ See [DCP Input](../../input/dcp).
 
 -----
 
-## IP (Internet Protocol) Output Parameters 
+## IP Output Parameters 
 
 > All parameters are case sensitive.
 
@@ -1593,52 +1658,6 @@ See [DCP Input](../../input/dcp).
 		<td>1 – 65535</td>
 	</tr>
 </table>
-
------
-
-## TOKEN Parameters 
-
-Applicable for UDI or multibarcodes.
-
-> All parameters are case sensitive.
-
-<table class="facelift" style="width:80%" border="1" padding="5px">
-  <tr bgcolor="#dce8ef">
-		<th>Parameter Name</th>
-		<th>Parameter Value</th>
-	</tr>
-	<tr>
-		<td>send_tokens_option</td>
-		<td>DISABLED<br>TOKENS<br>BARCODES_TOKENS</td>
-	</tr>
-	<tr>
-		<td>token_separator</td>
-		<td>TAB<br>CR<br>LF<br>NONE</td>
-	</tr>
-	<tr>
-		<td>multibarcode_separator</td>
-		<td>TAB<br>CR<br>LF<br>NONE</td>
-	</tr>
-	<tr>
-		<td>token_order</td>
-		<td>name: manufacturing_date_original<br>enabled: True/False<br><br>
-		name: expiration_date_original<br>enabled: True/False<br><br>
-		name: di<br>enabled: True/False<br><i>(Note: "di" stands for device identifier.)</i><br><br>
-		name: lot_number<br>enabled: True/False<br><br>
-		name: serial_number<br>enabled: True/False<br><br>
-		name: mpho_lot_number<br>enabled: True/False<br><br>
-		name: donation_id<br>enabled: True/False<br><br>
-		name: labeler_identification_code<br>enabled: True/False<br><br>
-		name: product_or_catalog_number<br>enabled: True/False<br><br>
-		name: unit_of_measure_id<br>enabled: True/False<br><br>
-		name: quantity<br>enabled: True/False<br><br>
-		<i>&#42; DataWedge determines the priority order according to the order of items listed in the ArrayList, with Element 0 having the highest priority.</i>
-		</td>
-	</tr>
-</table>
-
-<br>
-See **UDI Data Output** in [IP Output](../../output/ip#udidataoutput) or [Keystroke Output](../../output/keystroke#udidataoutput)
 
 -----
 ## Example Code

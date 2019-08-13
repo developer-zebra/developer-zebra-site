@@ -86,10 +86,14 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
  * **IP** (Internet Protocol) output
  * **DCP** (Data Capture Plus) utilities
 * **PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters to be updated under the specified Plug-in. **Setting an empty string in any parameter value resets that parameter to its default setting**. 
+* **OUTPUT_PLUGIN_NAME** [String]: Applies only to **ADF** and **BDF** when specified as the `PLUGIN_NAME`. Specifies the output plug-in associated with the ADF or BDF parameters: 
+ * **KEYSTROKE**
+ * **INTENT**
+ * **IP**
 <!--  * **EKB** (Enterprise Keyboard) utilities -->
 
 #### PARAM_LIST BUNDLE
-The `PARAM_LIST` bundle is configured by specifying the parameter name and value from the respective `PLUGIN_NAME` parameter tables below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle. 
+The `PARAM_LIST` bundle is configured by specifying the parameter name and values from the respective `PLUGIN_NAME` parameter tables below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle:
 
 * **BARCODE –** accepts values from the [Scanner Input Parameters](#scannerinputparameters) table below; specify decoder and other input settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
  * `scanner_selection_by_identifier` [string]- accepts a value from the list of [Scanner Identifiers](#scanneridentifiers) below.
@@ -103,13 +107,13 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 * **SERIAL -** Accepts values from the [Serial Input Parameters](#serialinputparameters) table below.
 * **SIMULSCAN -** Accepts values from the [Simulscan Input Parameters](#simulscaninputparameters) table below.
 * **VOICE -** Accepts values from the [Voice Input Parameters](#voiceinputparameters) table below.
-* **DATA CAPTURE PLUS (DCP) -** Accepts values from the [DCP Utilities Parameters](#dcputilitiesparameters) table below.
-* **BDF (Basic Data Formatting) -** Applies [Basic Data Formatting](../../process/bdf) rules to the acquired data. Accepts values from the [BDF Processing Parameters](#bdfprocessingparameters) table below. 
-* **ADF (Advanced Data Formatting) -** Applies [Advanced Data Formatting](../../process/adf) rules to the acquired data. This bundle contains Action, Device, Decoder and Label_ID sub-bundles. Accepts values from the [ADF Processing Parameters](#adfprocessingparameters) table below.
+* **DCP -** Accepts values from the [DCP (Data Capture Plus) Utilities Parameters](#dcputilitiesparameters) table below.
+* **BDF -** Applies [Basic Data Formatting](../../process/bdf) rules to the acquired data. Accepts values from the [BDF Processing Parameters](#bdfprocessingparameters) table below. 
+* **ADF -** Applies [Advanced Data Formatting](../../process/adf) rules to the acquired data. This bundle contains Action, Device, Decoder and Label_ID sub-bundles. Accepts values from the [ADF Processing Parameters](#adfprocessingparameters) table below.
 * **TOKENS -** Applicable for UDI or multibarcodes; accepts values from the [Token Parameters](#tokenparameters) table below.
 * **INTENT -** Accepts values from the [Intent Output Parameters](#intentoutputparameters) table below.
 * **KEYSTROKE -** Accepts values from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
-* **IP (Internet Protocol) -** Accepts values from the [IP Output Parameters](#ipoutputparameters) table below.
+* **IP** (Internet Protocol) - Accepts values from the [IP Output Parameters](#ipoutputparameters) table below.
 
 <!-- `intent_flag_receiver_foreground` [string] &lt;true/false&gt; -->
 <!--  // moved to DW 7.5
@@ -205,7 +209,7 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
 
   <tr>
     <td rowspan="3">decoder_code11</td>
-	<td rowspan="3">True <br> False</td>
+	<td rowspan="3">true <br>false</td>
     <td>decoder_code11_length1 <br>decoder_code11_length2</td>
     <td>Integer from 0–55</td>
   </tr>
@@ -220,13 +224,13 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
 
   <tr>
     <td rowspan="6">decoder_code128</td>
-	<td rowspan="6">True <br> False</td>
+	<td rowspan="6">true <br>false</td>
     <td>decoder_code128_length1 <br>decoder_code128_length2</td>
     <td>Integer from 0–55</td>
   </tr>
   <tr>
 	<td>decoder_code128_redundancy <br>decoder_code128_enable_plain<br>decoder_code128_enable_ean128<br>decoder_code128_enable_isbt128<br>decoder_code128_check_isbt_table</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
   <tr>
 	<td>decoder_code128_isbt128_concat_mode</td>
@@ -247,7 +251,7 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
 
   <tr>
     <td rowspan="3">decoder_code39</td>
-	<td rowspan="3">True <br> False</td>
+	<td rowspan="3">true <br>false</td>
     <td>decoder_code39_length1<br>decoder_code39_length2</td>
     <td>Integer from 0–55</td>
   </tr>
@@ -262,7 +266,7 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
 
 <tr>
 	<td rowspan="2">decoder_dotcode</td>
-	<td rowspan="2">True<br>False</td>
+	<td rowspan="2">true<br>false</td>
 	<td>decoder_dotcode_inverse</td>
 	<td>Disabled (0)<br>Enabled (1)<br>Auto (2)</td>
   </tr>
@@ -469,7 +473,7 @@ Refer to [Barcode Input](../../input/barcode) for more information on decoders, 
 
   <tr>
     <td rowspan="5">decoder_i2of5</td>
-	  <td rowspan="5">True <br>False</td>
+	  <td rowspan="5">true <br>false</td>
     <td>decoder_i2of5_length1 <br>decoder_i2of5_length2</td>
     <td>Integer from 0–55</td>
   </tr>
@@ -960,12 +964,12 @@ Other Scanner Input Parameters:
 
   <tr>
 	<td>decode_haptic_feedback</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
 	<td>bt_disconnect_on_exit</td>
-	<td>True<br>False</td>
+	<td>true<br>false</td>
   </tr>
 
   <tr>
@@ -1053,7 +1057,7 @@ Other Scanner Input Parameters:
 	</tr>
 	<tr>
 		<td>msr_input_enabled</td>
-		<td>True<br>False</td>
+		<td>true<br>false</td>
 	</tr>
 </table>
 
@@ -1162,7 +1166,7 @@ Other Scanner Input Parameters:
   </tr>
 	<tr>
 		<td>simulscan_input_enabled</td>
-		<td>True<br>False</td>
+		<td>true<br>false</td>
 	</tr>
 	<tr>
 		<td>simulscan_input_source</td>
@@ -1186,7 +1190,7 @@ Other Scanner Input Parameters:
 	</tr>
 	<tr>
 		<td>simulscan_enable_timestamp</td>
-		<td>True<br>False</td>
+		<td>true<br>false</td>
 	</tr>
 </table>
 
@@ -1521,17 +1525,17 @@ Applicable for UDI or multibarcodes.
 	</tr>
 	<tr>
 		<td>token_order</td>
-		<td>name: manufacturing_date_original<br>enabled: True/False<br><br>
-		name: expiration_date_original<br>enabled: True/False<br><br>
-		name: di<br>enabled: True/False<br><i>(Note: "di" stands for device identifier.)</i><br><br>
-		name: lot_number<br>enabled: True/False<br><br>
-		name: serial_number<br>enabled: True/False<br><br>
-		name: mpho_lot_number<br>enabled: True/False<br><br>
-		name: donation_id<br>enabled: True/False<br><br>
-		name: labeler_identification_code<br>enabled: True/False<br><br>
-		name: product_or_catalog_number<br>enabled: True/False<br><br>
-		name: unit_of_measure_id<br>enabled: True/False<br><br>
-		name: quantity<br>enabled: True/False<br><br>
+		<td>name: manufacturing_date_original<br>enabled: true/false<br><br>
+		name: expiration_date_original<br>enabled: true/false<br><br>
+		name: di<br>enabled: true/false<br><i>(Note: "di" stands for device identifier.)</i><br><br>
+		name: lot_number<br>enabled: true/false<br><br>
+		name: serial_number<br>enabled: true/false<br><br>
+		name: mpho_lot_number<br>enabled: true/false<br><br>
+		name: donation_id<br>enabled: true/false<br><br>
+		name: labeler_identification_code<br>enabled: true/false<br><br>
+		name: product_or_catalog_number<br>enabled: true/false<br><br>
+		name: unit_of_measure_id<br>enabled: true/false<br><br>
+		name: quantity<br>enabled: true/false<br><br>
 		<i>&#42; DataWedge determines the priority order according to the order of items listed in the ArrayList, with Element 0 having the highest priority.</i>
 		</td>
 	</tr>
@@ -1639,11 +1643,11 @@ See **UDI Data Output** in [IP Output](../../output/ip#udidataoutput) or [Keystr
 	</tr>
 	<tr>
 		<td>ip_output_enabled</td>
-		<td>True<br>False</td>
+		<td>true<br>false</td>
 	</tr>
 	<tr>
 		<td>ip_output_ip_wedge_enabled</td>
-		<td>True<br>False</td>
+		<td>true<br>false</td>
 	</tr>
 	<tr>
 		<td>ip_output_protocol</td>

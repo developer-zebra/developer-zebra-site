@@ -14,20 +14,27 @@ This section discusses common issues that can occur with possible solutions.
 
 ###Cannot login or connect to server
 Possible causes:
-* **Incorrect server ports.** The ports specified during [server installation](../setup#serverinstallation) must match the ports specified in files **.env** (from default folder: /Program Files/Zebra Technologies/ZDVC/WebUI) and **application.properties** (from default folder: /Program Files/Zebra Technologies/ZDVC/BackendServer/config). 
-* **No communication between the server and web portal.** Verify there is communication between the server and web portal by checking whether an endpoint is accessible through the browser. This is accomplished by appending a single endpoint to the server URL. For example: `https://name.company.com:8081/zdvc/dtrk/admindevops/getDeviceStatisticsSummary`, where endpoint `/zdvc/dtrk/admindevops/getDeviceStatisticsSummary` is appended to server URL `https://name.company.com:8081`.
+* **No communication between the server and web portal.** Verify there is communication between the server and web portal by checking whether an endpoint is accessible through the browser. This is accomplished by appending a single endpoint to the server URL. For example: `https://name.company.com:8081/zdvc/dtrk/admindevops/getDeviceStatisticsSummary`, where endpoint `/zdvc/dtrk/admindevops/getDeviceStatisticsSummary` is appended to server URL `https://name.company.com:8081`.<br>
 Sample result string:
 <br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{"neverConnected":43,"outOfService":8,"connected":16,"disconnected":276,"normal":254,"toBeFound":6,"findInProgress":14,"deviceFound":14,
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"charging":84,"batteryLow":37,"devicesTracked":335,"cannotFindDevice":2}
+<br>
+<i>
+    {"neverConnected":43,"outOfService":8,"connected":16,"disconnected":276,"normal":254,"toBeFound":6,"findInProgress":14,"deviceFound":14,
+    "charging":84,"batteryLow":37,"devicesTracked":335,"cannotFindDevice":2}
+</i>
+<br>
 <br>
 If the endpoint is not accessible, there is no communication between the server and web portal.  Verify that the server is running. It is possible that the certificate is invalid. 
 
-###Cannot import .csv file for access point or device data
+* **Incorrect server ports.** The ports specified during [server installation](../setup#serverinstallation) must match the ports specified in files **.env** (from default folder: /Program Files/Zebra Technologies/ZDVC/WebUI) and **application.properties** (from default folder: /Program Files/Zebra Technologies/ZDVC/BackendServer/config). 
+
+
+###Cannot import .csv file containing access point or device data
 Make sure to have write permissions to the ZDVC folder and subfolders.
-
+<br>
+<br>
 ##FAQ
-
+Frequently Asked Questions:
 ###How do I delete entries?
 Currently there is no ability to delete device entries from the [admin view](../admin). Device records can be set to **[out of service](../admin)**, preventing them from being displayed the main dashboard. Alternatively, a [tag can be added](../admin#organizedevices) to the device to aid in categorization.
 

@@ -116,3 +116,4 @@ To add a user:
 * [Install & Setup](../setup)
 * [Device Tracking](../mgmt)
 * [Configuration](../config)
+* [Troubleshooting & FAQ](../troubleshooting)

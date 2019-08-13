@@ -110,3 +110,4 @@ Use of friendly names for devices allows for easier device identification. The s
 * [Install & Setup](../setup)
 * [Admin View](../admin)
 * [Configuration](../config)
+* [Troubleshooting & FAQ](../troubleshooting)

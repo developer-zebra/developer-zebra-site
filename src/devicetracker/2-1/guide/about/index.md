@@ -93,4 +93,4 @@ See supported [Zebra devices](../setup/#devicerequirements).
 * [Admin View](../admin)
 * [Device Tracking](../mgmt)
 * [Configuration](../config)
-
+* [Troubleshooting & FAQ](../troubleshooting)

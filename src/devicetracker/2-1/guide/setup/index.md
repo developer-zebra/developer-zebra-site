@@ -46,7 +46,9 @@ This section provides the server and device requirements. Device Tracker support
         * Web Portal: UI Port 8443 for accessing Device Tracker web portal  
    * If required, perform **DNS setup** to add server IP address to the DNS server. 
 
-5. Hardware Requirements:
+5. Internet Access Required: Internet access is needed to download npm package dependencies.
+
+6. Hardware Requirements:
    * Minimum CPU cores: 16
      * Minimum memory (RAM): 64 GB
          * Minimum available hard drive space: 500 GB
@@ -519,3 +521,4 @@ _Figure 40. Export for EMM_
 * [Admin View](../admin)
 * [Device Tracking](../mgmt)
 * [Configuration](../config)
+* [Troubleshooting & FAQ](../troubleshooting)

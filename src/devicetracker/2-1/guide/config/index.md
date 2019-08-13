@@ -55,3 +55,4 @@ From the Device Tracker client, in the main screen tap on the hamburger menu at 
 * [Install & Setup](../setup)
 * [Admin View](../admin)
 * [Device Tracking](../mgmt)
+* [Troubleshooting & FAQ](../troubleshooting)

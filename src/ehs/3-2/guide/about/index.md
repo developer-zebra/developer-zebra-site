@@ -307,7 +307,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 ***Applies to devices running Android 9.x Pie and higher***.
 
 * In Android multi-user mode, **Camera and Search apps are not locked for Secondary users** when locked by the Primary user or Administrator. 
-* When multi-user mode is employed **on devices running Android Pie, app icons sometimes do not appear on the Secondary user's Home screen** when repeatedly switching between Primary and Secondary users.
+* When multi-user mode is employed **on devices running Android Pie, app icons sometimes do not appear on the Secondary user's Home screen** when repeatedly switching between Primary and Secondary users. This can be addressed by logging in as the primary user then logging in as the secondary user, or rebooting the device.
 * In the file browser UI, **access is limited to the following folders**:
   * internal storage
   * external storage (SD card)

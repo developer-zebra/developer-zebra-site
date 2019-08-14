@@ -297,9 +297,21 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 
 * **Support for Android 7.x Nougat is dropped**. Use [EHS 3.1](/ehs/3-1/guide/about) if Nougat support is required. 
 
-* **Support for Install Shortcuts is dropped**. This feature was coupled with Android Nougat, and is no longer supported with the termination of Nougat support. As an alternative, **Zebra recommends the use of Pinned Shortcuts**, which are supported in devices running Android Oreo and higher.
+* **Support for Install Shortcuts is dropped**. This feature was coupled with Android Nougat, and is no longer supported with the termination of Nougat support. As an alternative, **Zebra recommends the use of [Pinned Shortcuts](../settings/#pinnedshortcuts)**, which are supported in devices running Android Oreo and higher.
 
 * **Support ends for the following devices running Nougat**: MC33, TC20, TC25, TC51, TC56, TC70x, TC75x, VC80x, WT6000
+
+-----
+
+### Android Pie Notes
+***Applies to devices running Android 9.x Pie and higher***.
+
+* In Android multi-user mode, **Camera and Search apps are not locked for Secondary users** when locked by the Primary user or Administrator. 
+* When multi-user mode is employed **on devices running Android Pie, app icons sometimes do not appear on the Secondary user's Home screen** when repeatedly switching between Primary and Secondary users.
+* In the file browser UI, **access is limited to the following folders**:
+  * internal storage
+  * external storage (SD card)
+  * /enterprise/usr
 
 -----
 
@@ -311,14 +323,6 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * EHS **<u>CAN</u>** now launch links that reference local files though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later).
 
 ------
-
-### Android Pie Notes
-***Applies to devices running Android 9.x Pie and higher***.
-
-* In Android multi-user mode, **Camera and Search apps are not locked for Secondary users** when locked by the Primary user or Administrator. 
-* When multi-user mode is employed **on devices running Android Pie, app icons sometimes do not appear on the Secondary user's Home screen** when repeatedly switching between Primary and Secondary users.
-
------
 
 <!-- 12/18/18- Marshmallow support ended with 3.0
 

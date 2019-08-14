@@ -175,7 +175,6 @@ The EHS config file is broken into five sections:
                 <service_auto_launch_enable>0</service_auto_launch_enable>
                 <wallpaper></wallpaper>
                 <kiosk_mode_enabled>0</kiosk_mode_enabled>
-                <install_shortcuts>0</install_shortcuts>
                 <keyguard_camera_disabled>1</keyguard_camera_disabled>
                 <keyguard_search_disabled>1</keyguard_search_disabled>      
                 <usb_debugging_disabled>1</usb_debugging_disabled>
@@ -528,13 +527,15 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 * fully qualified local (on-device) path to a .bmp, .gif, .jpg, .png or .webp image file
 
 **Notes**: 
-
-* **
 * **Use of this tag requires addition of &lt;title_bar_icon&gt; node** to `enterprisehomescreen.xml` file; not included by default.
 * **Default EHS logo is used if tag is missing or left blank**, or if the specified image file is missing or invalid (such instances are [logged](../features/#ehslog)).
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
 * **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**.
 * **The SD card slot is disabled when a device is in [Multi-user Mode](../features/#multiusermode)**; files on removable storage are not accessible in this mode.
+* In EHS 3.2 and higher, **folder access with the file browser UI is limited to:**
+  * internal storage
+  * external storage (SD card)
+  * /enterprise/usr
 
 #### Example
 
@@ -723,7 +724,10 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 **Notes**: 
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
 * **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**.
-
+* In EHS 3.2 and higher, **folder access with the file browser UI is limited to:**
+  * internal storage
+  * external storage (SD card)
+  * /enterprise/usr
 
 #### Example
 
@@ -1151,9 +1155,9 @@ In versions prior to EHS 3.2, EHS displays a confirmation dialog whenever a pinn
 <img alt="" style="height:350px" src="ehs32_pin_shortcut_config.png"/>
 <br>
 
-<b>Possible values</b>:
+<b>Possible values for Bypass confirmation</b>:
 
-* 1
+* 1 
 * <b>0 (default)</b>
 
 #### Example

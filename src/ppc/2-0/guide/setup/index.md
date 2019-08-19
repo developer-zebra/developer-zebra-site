@@ -18,7 +18,7 @@ Before installing, ensure to prepare additional steps for system setup - consult
  * **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
  * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 
 
-> Important: An SSL Certificate is required from a third party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non-third party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
+<font color="red"><b>Important:</b> An SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.</font>
 
 ##System Requirements
 This section provides the server and device requirements. PPC supports a maximum of 10,000 devices and 20,000 batteries per installation based on the hardware requirements.
@@ -46,7 +46,9 @@ This section provides the server and device requirements. PPC supports a maximum
         * Web Portal: UI Port 8443 for accessing PPC web portal  
    * If required, perform DNS setup to add server IP address to the DNS server. 
 
-5. Hardware Requirements: 
+5. Internet Access Required: Internet access is needed to download npm package dependencies.
+
+6. Hardware Requirements: 
    * Minimum CPU cores: 8  
    * Minimum memory (RAM): 4 GB  
    * Minimum available hard drive space: 300 GB 
@@ -93,7 +95,7 @@ For new installations, download ZDVC Server from [Zebra Support and Downloads](h
 
 ###Server Prerequisites
 The following are the prerequisites required for the server: <br>
-1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _name.company.com_. An entry with the hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
+1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _company.com_. An entry with the server hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
 
 2. **SSL Certificate.** ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) section for details.
 
@@ -125,7 +127,7 @@ It prompts to enter the private key password (created in step 5). Enter in the r
    * **Locality or City** - Enter the city or town name without abbreviation, for example: Berkeley or Saint Louis.
    * **Organization Name** - Enter the company. If the company or department contains a special character such as "&" or "@", the symbol must be spelled out or omitted in order to enroll successfully. 
    * **Organizational Unit Name** - Enter the name of the department or organization unit making the request. This is optional, to skip, press Enter on the keyboard.
-   * **Common Name** - Enter the fully qualified host name, for example: "ppc.zebra.com". _This is the same name to be used in the Server Installation in step 5 for the Domain name._
+   * **Common Name** - Enter the fully qualified host name, for example: "hostname.company.com". _This is the same name to be used in the Server Installation in step 5 for the Domain name._
    * **Email Address** - Enter the contact email address.<br>
 When prompted for the challenge password, it is not required - _do not supply one_. 
 6. Submit the CSR created to the CA. They will supply a certificate in .p7b format, e.g. ssl_certificate.p7b.
@@ -180,18 +182,55 @@ F. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
 -->
 
 ###Server Installation
-Double-click on the ZDVC installer and follow the steps to proceed with installation until the server has been successfully installed.
+ZDVC Server Installation steps for a new installation: <br>
+1. Double-click on the .EXE to launch the installer.
+2. At the initial window, click Next.
+![img](ZDVC_Install_1.JPG)
+_Figure 1. Installation - initial screen_
+3. Accept the license agreement. Click Next.
+![img](ZDVC_Install_2.JPG)
+_Figure 2. Installation - EULA_
+4. Accept the default folder or browse to the destination folder. Click Next.
+![img](ZDVC_Install_3.JPG)
+_Figure 3. Installation - destination location_
+5. Enter in the server configurations, then click Next:
+   * **Domain** - fully qualified domain name (FQDN) which consists of the hostname and domain name, e.g. "hostname.company.com"
+   * **Server Certificate Path** - location of server certificate (.pfx file)
+   * **Server Certificate Password** - password for server certificate
+   * **UI port** - designated UI port, can default to 8443
+   * **Backend Server Port** - designated server port, can default to 8080
+![img](ZDVC_Install_4.JPG)
+_Figure 4. Installation - server configuration_
+6. Set the server authentication and login credentials, then click Next:
+   * Super admin and database password
+   * Server auth key
+   * Server auth password
+<br>
+**Important**: Use of the following special characters is not supported for the "Server auth key" and "Server auth password": <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt; (less than) <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &gt; (greater than) <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#38; (ampersand) <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#39; (single quote) <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#34; (double quote) <br>
+![img](ZDVC_Install_5.JPG)
+_Figure 5. Installation - server authentication and credentials_
+7. Review settings. Click Next. Third party applications (such as Postgres and Node.js) will be installed if it does not pre-exist in the system.
+![img](ZDVC_Install_6.JPG)
+_Figure 6. Installation - review settings_
+8. Installation complete. Click Finish.
+![img](ZDVC_Install_7.JPG)
+_Figure 7. Installation - complete_
 
 ###Server Setup
 Steps for ZDVC server setup after installation: <br>
 1. **Run ZDVC Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". 
-2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://name.company.com:8443/zdvc`, where "name.company.com:8443" is replaced with the appropriate domain and port number.
+2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate domain and port number.
 3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "PowerPrecision Console" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.
 4. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
 A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
-B. Enter the Web UI URL, for example `https://name.company.com:8443/zdvc`<br>
+B. Enter the Web UI URL, for example `https://hostname.company.com:8443/zdvc`<br>
 C. Click the Scan button. A successful result returns green checks for each step. _See Figure 1 below._ <br>
-D. Enter the backend URL for your server, for example `https://name.company.com:8080/zdvc` <br>
+D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
 E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
 _Figure 1. SSLTools.com results_
@@ -220,9 +259,9 @@ Steps for manual configuration:
 3. Tap the hamburger menu at the top right, then tap Settings. 
 4. Enter in the settings based on the PPC version:<br><br>
 **For PPC v2.0 or higher:** <br>
- Tap **Server URL**. Enter in the server URL, for example: `name.company.com:8080/zdvc/ppc`
+ Tap **Server URL**. Enter in the server URL, for example: `hostname.company.com:8080/zdvc/ppc`
 <br>
-Where "name.company.com:8080" is replaced with the appropriate domain name and port number. _The URL must **not** contain "https://"._ <br>
+Where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. _The URL must **not** contain "https://"._ <br>
  Tap **Server Auth UserName**. Enter in the user name specified during server installation. <br>
 Tap **Server Auth Password**. Enter in the password specified during server installation. <br><br>
 **For PPC v1.0:** <br>
@@ -299,7 +338,7 @@ A. In the StageNow home screen, click “All Settings” from the left menu. Cli
 _Figure 7. Import into CSP Library_ <br>
 B. Depending on the PPC version: <br>
 **For PPC v2.0:** <br>
-For the “Setting Type”, select “com.zebra.ppclientmgr." Enter a name for the setting. Enter the server URL e.g. `ppc.zebra.com:8080/ppcdata`. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install. Select the MX version for the device.<br>
+For the “Setting Type”, select “com.zebra.ppclientmgr." Enter a name for the setting. Enter the server URL e.g. `hostname.company.com:8080/ppcdata`. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install. Select the MX version for the device.<br>
 ![img](SN_CreateSettings2_0.jpg)
 _Figure 8. Create New Setting for PPC v2.0_ <br>
 **For PPC v1.0:** <br>

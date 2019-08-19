@@ -94,7 +94,7 @@ Refer to [PowerPrecision and Battery Management Fact Sheet](https://www.zebra.co
 
 ## Important Notes
 Important notes for consideration during PPC use:
-* **When the device is rebooted after the PPC app is force stopped, the user must manually launch PPC.** If the user force stops PPC (through Android Settings > Apps & notifications > PowerPrecision Console > Force Stop) then reboots the device, PPC does not automatically restart on startup requiring the user to manually launch PPC. This is due to an Android restriction that considers the app in a stopped state and thus requires the app to be launched manually even after reboot. 
+* **For Android Oreo devices or higher, when the device is rebooted after the PPC app is force stopped, the user must manually launch PPC.** If the user force stops PPC (through Android Settings > Apps & notifications > PowerPrecision Console > Force Stop) then reboots the device, PPC does not automatically restart on startup, requiring the user to manually launch PPC. This is due to an Android restriction that considers the app in a stopped state and thus requires the app to be launched manually even after reboot. 
 <br>
 <br>
 

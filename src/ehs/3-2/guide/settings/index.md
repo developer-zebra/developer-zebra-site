@@ -532,7 +532,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
 * **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**.
 * **The SD card slot is disabled when a device is in [Multi-user Mode](../features/#multiusermode)**; files on removable storage are not accessible in this mode.
-* In EHS 3.2 and higher, **folder access with the file browser UI is limited to:**
+* **For Android Pie devices with EHS 3.2 or higher, folder access with the file browser UI is limited** to:
   * internal storage
   * external storage (SD card)
   * /enterprise/usr
@@ -724,7 +724,7 @@ When selecting an image using the Preferences panel UI, use tap-navigation to lo
 **Notes**: 
 * **Only files in the** `/enterprise` **directory are persistent**, and remain on the device following an [Enterprise Reset](/mx/powermgr/#enterprisereset). 
 * **Zebra recommends avoiding the use of removable storage for wallpaper and icon image files**.
-* In EHS 3.2 and higher, **folder access with the file browser UI is limited to:**
+* **For Android Pie devices with EHS 3.2 or higher, folder access with the file browser UI is limited** to:
   * internal storage
   * external storage (SD card)
   * /enterprise/usr

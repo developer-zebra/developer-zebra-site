@@ -249,16 +249,16 @@ F. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
 ###Server Installation
 ZDVC Server Installation steps for a new installation: <br>
 1. Double-click on the .EXE to launch the installer.
-2. At the initial window, click Next.
+2. At the initial window, click **Next.**
 ![img](DTRK_Install_1.JPG)
 _Figure 1. Installation - initial screen_
-3. Accept the license agreement. Click Next.
+3. Accept the license agreement. Click **Next.**
 ![img](DTRK_Install_2.JPG)
 _Figure 2. Installation - EULA_
 4. Accept the default folder or browse to the destination folder. Click Next.
 ![img](DTRK_Install_3.JPG)
 _Figure 3. Installation - destination location_
-5. Enter in the server configurations, then click Next:
+5. Enter in the server configurations, then click **Next:**
    * **Domain** - fully qualified domain name (FQDN) which consists of the hostname and domain name, e.g. "hostname.company.com"
    * **Server Certificate Path** - location of server certificate (.pfx file)
    * **Server Certificate Password** - password for server certificate
@@ -266,7 +266,7 @@ _Figure 3. Installation - destination location_
    * **Backend Server Port** - designated server port, can default to 8080
 ![img](DTRK_Install_4.JPG)
 _Figure 4. Installation - server configuration_
-6. Set the server authentication and login credentials, then click Next:
+6. Set the server authentication and login credentials, then click **Next:**
    * Super admin and database password
    * Server auth key
    * Server auth password
@@ -279,25 +279,23 @@ _Figure 4. Installation - server configuration_
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#34; (double quote) <br>
 ![img](DTRK_Install_5.JPG)
 _Figure 5. Installation - server authentication and credentials_
-7. Review settings. Click Next. Third party applications (such as Postgres and Node.js) will be installed if it does not pre-exist in the system.
+7. Review settings. Click **Next.** Third party applications (such as Postgres and Node.js) will be installed if it does not pre-exist in the system.
 ![img](DTRK_Install_6.JPG)
 _Figure 6. Installation - review settings_
-8. Installation complete. Click Finish.
+8. Installation complete. Click **Finish.**
 ![img](DTRK_Install_7.JPG)
 _Figure 7. Installation - complete_
 
 ###Server Upgrade
 ZDVC Server can be upgraded from a previous existing ZDVC installation:
 1. Double-click on the .EXE to launch the installer.
-2. Click Yes when prompted to upgrade.
+2. Click **Yes** when prompted to upgrade.
 <img style="height:150px" src="zdvc-upgrade-1.jpg"/>
 _Figure 8. Server upgrade_
-3. At the initial window, click Next to proceed with the upgrade.
-4. Once installation completes, click Finish.
+3. At the initial window, click **Next** to proceed with the upgrade.
+4. Once installation completes, click **Finish.**
 <img style="height:430px" src="zdvc-upgrade-2.jpg"/>
 _Figure 9. Server upgrade - complete_
-
-**Note:** Server upgrade is not applicable to PowerPrecision Console Server 1.0 installations.
 
 ###Server Downgrade
 To downgrade the server, uninstall the previous version and install the older server version.
@@ -321,7 +319,7 @@ To meet certain customer requirement needs, for example for Device Tracker to ru
 1. Open **Task Scheduler** in **Administrative Tools.** 
 <img style="height:350px" src="TS_1.png"/>
 _Figure 11. Task Scheduler main screen_
-2. Click **Create Basic Task** in the Actions menu to the right. Enter a name for the task, such as “Zebra DevTracker Backend. 
+2. Click **Create Basic Task** in the Actions menu to the right. Enter a name for the task, such as “Zebra ZDVC Backend." 
 <img style="height:350px" src="TS_2.png"/>
 _Figure 12. Create Backend Task_
 3. Click **Next.** Select the desired time to trigger the task, for example “When the computer starts” to run on startup.
@@ -350,10 +348,10 @@ _Figure 20. Complete WebUI Task_
 <img style="height:200px" src="TS_11.png"/>
 _Figure 21. Select Task Trigger_
 10.	Double-click on one of the schedule tasks created. The specific task is displayed.
-<img style="height:350px" src="TS_1.png"/>
+<img style="height:350px" src="TS_12.png"/>
 _Figure 22. Task Details_
 11.	Tap **Properties** in the right panel. In the **Security options** section select “Run whether user is logged on or not”.
-<img style="height:500px" src="TS_12.png"/>
+<img style="height:350px" src="TS_13.png"/>
 _Figure 23. Task Properties_
 12.	Click **OK.**
 13.	Repeat steps 10–12 for the other scheduled task.

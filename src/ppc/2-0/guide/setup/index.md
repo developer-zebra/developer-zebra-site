@@ -49,11 +49,18 @@ This section provides the server and device requirements. PPC supports a maximum
 5. Internet Access Required: Internet access is needed to download npm package dependencies.
 
 6. Hardware Requirements: 
+
+  **For PPC 2.0 or higher (includes Device Tracker):**
+   * Minimum CPU cores: 16  
+   * Minimum memory (RAM): 64 GB  
+   * Minimum available hard drive space: 500 GB 
+
+  **For PPC 1.0:**
    * Minimum CPU cores: 8  
    * Minimum memory (RAM): 4 GB  
    * Minimum available hard drive space: 300 GB 
 
-  Recommended hardware requirements based on number of devices and batteries:
+  Recommended hardware requirements based on number of devices and batteries for PPC 1.0:
    <table class="facelift" align="center" style="width:70%" border="1" padding="5px">
    <tr bgcolor="#dce8ef">
       <th>Number of Devices</th>
@@ -184,16 +191,16 @@ F. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
 ###Server Installation
 ZDVC Server Installation steps for a new installation: <br>
 1. Double-click on the .EXE to launch the installer.
-2. At the initial window, click Next.
+2. At the initial window, click **Next.**
 ![img](ZDVC_Install_1.JPG)
 _Figure 1. Installation - initial screen_
-3. Accept the license agreement. Click Next.
+3. Accept the license agreement. Click **Next.**
 ![img](ZDVC_Install_2.JPG)
 _Figure 2. Installation - EULA_
 4. Accept the default folder or browse to the destination folder. Click Next.
 ![img](ZDVC_Install_3.JPG)
 _Figure 3. Installation - destination location_
-5. Enter in the server configurations, then click Next:
+5. Enter in the server configurations, then click **Next:**
    * **Domain** - fully qualified domain name (FQDN) which consists of the hostname and domain name, e.g. "hostname.company.com"
    * **Server Certificate Path** - location of server certificate (.pfx file)
    * **Server Certificate Password** - password for server certificate
@@ -201,7 +208,7 @@ _Figure 3. Installation - destination location_
    * **Backend Server Port** - designated server port, can default to 8080
 ![img](ZDVC_Install_4.JPG)
 _Figure 4. Installation - server configuration_
-6. Set the server authentication and login credentials, then click Next:
+6. Set the server authentication and login credentials, then click **Next:**
    * Super admin and database password
    * Server auth key
    * Server auth password
@@ -214,10 +221,10 @@ _Figure 4. Installation - server configuration_
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#34; (double quote) <br>
 ![img](ZDVC_Install_5.JPG)
 _Figure 5. Installation - server authentication and credentials_
-7. Review settings. Click Next. Third party applications (such as Postgres and Node.js) will be installed if it does not pre-exist in the system.
+7. Review settings. Click **Next.** Third party applications (such as Postgres and Node.js) will be installed if it does not pre-exist in the system.
 ![img](ZDVC_Install_6.JPG)
 _Figure 6. Installation - review settings_
-8. Installation complete. Click Finish.
+8. Installation complete. Click **Finish.**
 ![img](ZDVC_Install_7.JPG)
 _Figure 7. Installation - complete_
 
@@ -233,7 +240,57 @@ C. Click the Scan button. A successful result returns green checks for each step
 D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
 E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
-_Figure 1. SSLTools.com results_
+_Figure 8. SSLTools.com results_
+
+
+<!-- SERVER UPGRADE
+**Note:** Server upgrade is not applicable to PowerPrecision Console Server 1.0 installations.
+-->
+
+###Post-Server Setup
+To meet certain customer requirement needs, for example for PowerPrecision Console to run without a logged in user or PPC to run on server startup, this can be accomplished by having PPC run as a scheduled task using the following procedure.  Two scheduled tasks are needed, one for the backend and one for the WebUI:<br>
+1. Open **Task Scheduler** in **Administrative Tools.** 
+<img style="height:350px" src="TS_1.png"/>
+_Figure 9. Task Scheduler main screen_
+2. Click **Create Basic Task** in the Actions menu to the right. Enter a name for the task, such as “Zebra ZDVC Backend." 
+<img style="height:350px" src="TS_2.png"/>
+_Figure 10. Create Backend Task_
+3. Click **Next.** Select the desired time to trigger the task, for example “When the computer starts” to run on startup.
+<img style="height:350px" src="TS_3.png"/>
+_Figure 11. Task Trigger_
+4. Click **Next.** Select **Start a program**.
+<img style="height:350px" src="TS_4.png"/>
+_Figure 12. Task Action_
+5. Click **Next.** Browse to the backend RunBackendServer.bat file (file path by default `C:\Program Files (x86)\Zebra Technologies\ZDVC\BackendServer\RunBackendServer.bat`). Enter the folder path for the **Start in** field - even though it indicates it is optional, it is required for this to work.
+<img style="height:350px" src="TS_5.png"/>
+_Figure 13. Task Program_
+6. Click **Next.**
+<img style="height:350px" src="TS_6.png"/>
+_Figure 14. Complete Task creation_
+7. Click **Finish.** After authentication, the new task is listed in the Active Tasks list.
+<img style="height:200px" src="TS_7.png"/>
+_Figure 15. Task list_
+8. Repeat above steps for the WebUI batch file RunWebUI.bat (file path by default: `C:\Program Files (x86)\Zebra Technologies\ZDVC\WebUI\RunWebUI.bat`).  Screens specific to WebUI:
+<img style="height:350px" src="TS_8.png"/>
+_Figure 16. Create WebUI Task_
+<img style="height:350px" src="TS_9.png"/>
+_Figure 17. Task WebUI Program_
+<img style="height:350px" src="TS_10.png"/>
+_Figure 18. Complete WebUI Task_
+9. Both tasks created are listed in the Active Tasks list.
+<img style="height:200px" src="TS_11.png"/>
+_Figure 19. Select Task Trigger_
+10.	Double-click on one of the schedule tasks created. The specific task is displayed.
+<img style="height:350px" src="TS_12.png"/>
+_Figure 20. Task Details_
+11.	Tap **Properties** in the right panel. In the **Security options** section select “Run whether user is logged on or not”.
+<img style="height:350px" src="TS_13.png"/>
+_Figure 21. Task Properties_
+12.	Click **OK.**
+13.	Repeat steps 10–12 for the other scheduled task.
+14.	Click **Run** in the right menu (same screen as in step 11). 
+
+This allows PPC to run each time the server restarts regardless of the user logged in.
 
 ##Client Install & Setup
 Install PPC client on the supported Zebra devices to register the device, upload device battery data and display end-of-life (EOL) battery alerts. The device must be connected to the same network as the server. The server address needs to be configured on the PPC client to communicate with the PPC Server. PPC client install and setup can be accomplished either manually or remotely with Zebra [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management).
@@ -259,15 +316,15 @@ Steps for manual configuration:
 3. Tap the hamburger menu at the top right, then tap Settings. 
 4. Enter in the settings based on the PPC version:<br><br>
 **For PPC v2.0 or higher:** <br>
- Tap **Server URL**. Enter in the server URL, for example: `hostname.company.com:8080/zdvc/ppc`
+ A. Tap **Server URL**. Enter in the server URL, for example: `hostname.company.com:8080/zdvc/ppc`
 <br>
 Where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. _The URL must **not** contain "https://"._ <br>
- Tap **Server Auth UserName**. Enter in the user name specified during server installation. <br>
-Tap **Server Auth Password**. Enter in the password specified during server installation. <br><br>
+ B. Tap **Server Auth UserName**. Enter in the user name specified during server installation. <br>
+ C. Tap **Server Auth Password**. Enter in the password specified during server installation. <br><br>
 **For PPC v1.0:** <br>
- Tap **Server URL**. Enter in the server URL, for example: `name.company.com:8080/zdvc/ppc`
+ A. Tap **Server URL**. Enter in the server URL, for example: `name.company.com:8080/zdvc/ppc`
 <br>
-Where "name.company.com:8080" is replaced with the appropriate domain name and port number. _The URL must **not** contain "https://"._ <br><br>
+ Where "hostname.company.com:8080" is replaced with the appropriate domain name and port number. _The URL must **not** contain "https://"._ <br><br>
 5. Tap **OK** to save the changes and return to the main screen.
 PPC Client registers with the server and uploads battery data.
 
@@ -296,11 +353,11 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 2. Profile wizard_ <br>
+_Figure 22. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “Intent”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_AddIntentSetting.jpg)
-_Figure 3. Add Setting_ <br>
+_Figure 23. Add Setting_ <br>
 6. Enter the following information:
    * **Action:** StartActivty
    * **Android Action Name:** android.intent.action.MAIN
@@ -308,11 +365,11 @@ _Figure 3. Add Setting_ <br>
    * **Class Name:** com.zebra.ppcclient.activity.MainActivity <br>
 Click Continue.
 ![img](SN_IntentStartActivityConfig.jpg)
-_Figure 4. Configure Setting_ <br>
+_Figure 24. Configure Setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 5. Generate StageNow barcode_ <br>
+_Figure 25. Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -331,20 +388,20 @@ A. In the StageNow home screen, click “CSP Library” from the left menu. <br>
 B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file.<br> 
 C. Once successfully uploaded, the CSP Library is listed in the Plugin tab.<br>
 ![img](SN_CSPLib.JPG)
-_Figure 6. Import plugin into CSP Library_
+_Figure 26. Import plugin into CSP Library_
 5. Create a new setting.<br>
 A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” button at the top right. <br>
 ![img](SN_Settings.JPG)
-_Figure 7. Import into CSP Library_ <br>
+_Figure 27. Import into CSP Library_ <br>
 B. Depending on the PPC version: <br>
 **For PPC v2.0:** <br>
 For the “Setting Type”, select “com.zebra.ppclientmgr." Enter a name for the setting. Enter the server URL e.g. `hostname.company.com:8080/ppcdata`. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install. Select the MX version for the device.<br>
 ![img](SN_CreateSettings2_0.jpg)
-_Figure 8. Create New Setting for PPC v2.0_ <br>
+_Figure 28. Create New Setting for PPC v2.0_ <br>
 **For PPC v1.0:** <br>
 For the “Setting Type”, select “com.zebra.ppclientmgr." Enter a name for the setting. Enter the server URL e.g. `ppc.zebra.com:8080/ppcdata`. Select the desired option to determine whether or not to allow the end user to edit the setting. Select the MX version for the device.  <br>
 ![img](SN_CreateSettings.JPG)
-_Figure 9. Create New Setting for PPC v1.0_ <br>
+_Figure 29. Create New Setting for PPC v1.0_ <br>
 C. Tap Save. The new setting is listed in the Settings screen.
 6. Create profile.<br>
 A. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
@@ -353,17 +410,17 @@ C. Select “XpertMode." Click Create.<br>
 D. Enter the profile name. Click Start.<br>
 E. In the Settings list, click the add (+) sign next to “com.zebra.ppcclientmgr”. This adds to the Config tab on the right side. Click on Add button.<br>
 ![img](SN_Profile_AddSetting.JPG)
-_Figure 10. Add CSP to profile_ <br>
+_Figure 30. Add CSP to profile_ <br>
 F. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in step 5 depending on the version of PPC:<br>
 ![img](SN_Profile_SNConfig2_0.jpg)
-_Figure 11. Re-use saved setting for PPC 2.0_ <br>
+_Figure 31. Re-use saved setting for PPC 2.0_ <br>
 ![img](SN_Profile_SNConfig.JPG)
-_Figure 12. Re-use saved setting for PPC 1.0_ <br>
+_Figure 32. Re-use saved setting for PPC 1.0_ <br>
 G. Click Continue. <br>
 H. In the Review section, review the settings and make modifications if needed. Click “Complete Profile." <br>
 I. In the Publish section, select the desired barcode type. 
 ![img](SN_Publish.JPG)
-_Figure 13. Generate StageNow barcode_ <br>
+_Figure 33. Generate StageNow barcode_ <br>
 J. Click Test. A window opens with the generated StageNow barcode in .pdf format.<br>
 7. For EMM Staging, continue to section "Steps for EMM Staging" below.
 8. Open the StageNow client on the device.

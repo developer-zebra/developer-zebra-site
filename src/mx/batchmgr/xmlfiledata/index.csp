@@ -2,7 +2,7 @@
 csp: batchmgr
 title: File Data
 type: parm
-order: 5
+order: 15
 mx: "4.3"
 devicetype: A,B
 parm:

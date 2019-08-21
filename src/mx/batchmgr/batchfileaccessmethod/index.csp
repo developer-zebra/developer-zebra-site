@@ -2,7 +2,7 @@
 csp: batchmgr
 title: Batch File Access
 type: parm
-order: 3
+order: 7
 mx: "4.3"
 devicetype: A,B
 parm:

@@ -2,7 +2,7 @@
 csp: batchmgr
 title: Security Password
 type: parm
-order: 4
+order: 9
 mx: "4.3"
 devicetype: A
 parm:

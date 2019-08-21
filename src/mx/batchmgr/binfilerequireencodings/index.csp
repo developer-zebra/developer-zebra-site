@@ -2,7 +2,7 @@
 csp: batchmgr
 title: Require Specific Encodings
 type: parm
-order: 6
+order: 17
 mx: "4.3"
 devicetype: A,B
 parm:

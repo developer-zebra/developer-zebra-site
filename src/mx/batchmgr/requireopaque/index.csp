@@ -2,7 +2,7 @@
 csp: batchmgr
 title: Require Opaque
 type: parm
-order: 7
+order: 20
 mx: "4.3"
 devicetype: A,B
 parm:

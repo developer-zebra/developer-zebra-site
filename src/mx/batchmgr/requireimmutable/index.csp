@@ -2,7 +2,7 @@
 csp: batchmgr
 title: Require Immutable
 type: parm
-order: 9
+order: 22
 mx: "4.3"
 devicetype: A
 parm:

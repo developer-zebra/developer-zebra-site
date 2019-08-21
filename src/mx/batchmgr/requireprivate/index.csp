@@ -2,7 +2,7 @@
 csp: batchmgr
 title: Require Private
 type: parm
-order: 10
+order: 24
 mx: "4.3"
 devicetype: A,B
 parm:

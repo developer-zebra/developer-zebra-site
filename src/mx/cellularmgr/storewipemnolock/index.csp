@@ -1,0 +1,26 @@
+---
+csp: cellularmgr
+title: PLMN Lock UI Show/Hide 
+type: parm
+order: 47
+mx: "9.2"
+devicetype: A,B
+info: WWAN-enabled devices only
+parm:
+  pivotal: No
+  name: StoreWipeMNOLock
+  type: list
+  list:
+    - code: 1
+      devicetype: A,B
+      name: StoreMNOLock
+      mx: "9.2"
+      description: Stores MNO Lock key code. 
+    - code: 2
+      devicetype: A,B
+      name: WipeMNOLock
+      mx: "9.2"
+      description: Erases MNO Lock key code cache. 
+---
+
+Used to manage Mobile Network Operator (MNO) Lock codes stored on the device. These codes are provided by the MNO and used to lock and unlock MNOs on the device. 

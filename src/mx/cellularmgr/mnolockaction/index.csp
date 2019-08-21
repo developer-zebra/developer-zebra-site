@@ -1,0 +1,26 @@
+---
+csp: cellularmgr
+title: MNO Lock Action 
+type: parm
+order: 47
+mx: "9.2"
+devicetype: A,B
+info: WWAN-enabled devices only
+parm:
+  pivotal: No
+  name: MNOLockAction
+  type: list
+  list:
+    - code: 1
+      devicetype: A,B
+      name: Lock
+      mx: "9.2"
+      description: Prevents the user from changing to the MNO. 
+    - code: 2
+      devicetype: A,B
+      name: Unlock
+      mx: "9.2"
+      description: Allows the device user to change to the MNO. 
+---
+
+Controls whether the Mobile Network Operator (MNO) can be changed on the device. 

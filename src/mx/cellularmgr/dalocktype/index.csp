@@ -1,0 +1,26 @@
+---
+csp: cellularmgr
+title: PLMN Lock UI Show/Hide 
+type: parm
+order: 47
+mx: "9.2"
+devicetype: A,B
+info: WWAN-enabled devices only
+parm:
+  pivotal: No
+  name: ShowPlmnLock
+  type: list
+  list:
+    - code: 0
+      mx: "9.2"
+      devicetype: A,B
+      name: Network Lock
+      description: Locks the device by MNO.
+    - code: 1
+      devicetype: A,B
+      name: ICCID Lock
+      mx: "9.2"
+      description: Locks the device by SIM card.
+---
+
+Used to select whether the device is locked to a Mobile Network Operator (MNO) or an ICCID (SIM card). 

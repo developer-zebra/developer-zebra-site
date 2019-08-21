@@ -278,7 +278,7 @@ _Figure 17. Task WebUI Program_
 <img style="height:350px" src="TS_10.png"/>
 _Figure 18. Complete WebUI Task_
 9. Both tasks created are listed in the Active Tasks list.
-<img style="height:200px" src="TS_11.png"/>
+<img style="height:200px" src="TS_11.PNG"/>
 _Figure 19. Select Task Trigger_
 10.	Double-click on one of the schedule tasks created. The specific task is displayed.
 <img style="height:350px" src="TS_12.png"/>

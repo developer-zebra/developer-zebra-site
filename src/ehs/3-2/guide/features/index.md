@@ -19,7 +19,7 @@ This guide covers advanced EHS features such as Kiosk Mode and EHS Logging. It a
 
 EHS 3.1 and higher supports Multi-user Mode on devices running Android 8.x Oreo and higher. The feature works through the concept of User Profiles, which allow for Primary, Secondary and Guest users, each with different sets of apps, capabilities and access privileges. In EHS, Multi-user Mode behaves as indicated below. 
 
-> **NOTE: When multi-user mode is employed on devices running Android Pie**, app icons sometimes do not appear on the Secondary user's Home screen when repeatedly switching between Primary and Secondary users.
+**When multi-user mode is employed on devices running Android Pie**, app icons sometimes do not appear on the Secondary user's Home screen when repeatedly switching between Primary and Secondary users. This can be addressed by logging in as the primary user then logging in as the secondary user, or rebooting the device.
 
 ### User Types
 * **Primary user -** the first user added to a device and **can be removed only by a factory reset**. The Primary user is always running, even when a Secondary user is in the foreground. This user has privileges available to no others, including the ability to add Secondary users and access all device features and settings.  

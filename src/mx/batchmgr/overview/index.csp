@@ -22,3 +22,5 @@ A Batch setting also can refer to a file in the device file system that contains
 * Execute Batch Actions: 
 * Enable/disable Trusted Mode
 * Specify a Trusted Mode certificate file
+
+-----

@@ -1,0 +1,29 @@
+---
+csp: accessmgr
+title: Auto-Unapprove CSP (checkbox)
+type: parm
+order: 21
+mx: "9.2"
+apilevel: "26"
+devicetype: A
+parm:
+  presentif: The CSP Access Action is "Unprotect"
+  pivotal: No
+  name: CspAutoUnapprove
+  type: list
+  list:
+    - code: 0
+      mx: "9.2"
+      devicetype: A
+      name: (unchecked)
+      apilevel: "26"
+      description: Unblocks the app specified in the Protect Action from accessing ONLY the specified CSP.
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "9.2"
+      apilevel: "26"
+      description: Unblocks the app specified in the Unprotect Action and allows access to ALL CSPs on the device (default).
+---
+
+Controls whether the app specified in the Unprotect Action is blocked from accessing <u>all CSPs</u> on the device (default) or <u>only the CSP specified</u> using the CSP Name parameter. 

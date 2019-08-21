@@ -1,0 +1,29 @@
+---
+csp: accessmgr
+title: Auto-approve CSP (checkbox)
+type: parm
+order: 20
+mx: "9.2"
+apilevel: "26"
+devicetype: A
+parm:
+  presentif: The CSP Access Action is "Protect"
+  pivotal: No
+  name: CspAutoApprove
+  type: list
+  list:
+    - code: 0
+      mx: "9.2"
+      devicetype: A
+      name: (unchecked)
+      apilevel: "26"
+      description: Blocks the app specified in the Protect Action from accessing ONLY the specified CSP.
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "9.2"
+      apilevel: "26"
+      description: Blocks the app specified in the Protect Action from accessing ALL CSPs on the device (default).
+---
+
+Controls whether the app specified in the Protect Action is blocked from accessing <u>all CSPs</u> on the device (default) or <u>only the CSP specified</u> using the CSP Name parameter. 

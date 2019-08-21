@@ -38,7 +38,7 @@ If the launched app already has an associated DataWedge Profile, the `setDefault
 
 ### Result Codes
 
-DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+DataWedge returns the following error codes if the app includes the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
 * **PROFILE_ALREADY_SET -** FAILURE
 * **PROFILE_NOT_FOUND -** FAILURE 

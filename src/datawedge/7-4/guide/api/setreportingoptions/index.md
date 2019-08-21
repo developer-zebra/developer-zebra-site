@@ -47,7 +47,7 @@ Error messages are logged for invalid actions and parameters.
 
 ### Result Codes
  
-DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example Code](#example), below.
+DataWedge returns the following error codes if the app includes the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example Code](#example), below.
 
 * **BUNDLE_EMPTY -** FAILURE
 * **FAILURE –** FAILURE

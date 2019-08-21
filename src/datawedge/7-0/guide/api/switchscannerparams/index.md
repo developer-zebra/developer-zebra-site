@@ -28,7 +28,7 @@ Used to pass one or more [barcode, scanner and/or reader parameters](../../input
 
 ### Result Codes
 
-DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+DataWedge returns the following error codes if the app includes the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
 * **DATAWEDGE_DISABLED -** DataWedge is disabled
 * **PROFILE_DISABLED -** Profile is disabled
@@ -54,7 +54,7 @@ Error messages are logged for invalid actions, missing parameters or other failu
 
 ## Example Code
 
-The code below passes an intent that switches a scanner parameter for the active scanner in the active profile. To verify results of the switch (or if errors are expected), include the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
+The code below passes an intent that switches a scanner parameter for the active scanner in the active profile. To verify results of the switch (or if errors are expected), include the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
 
 		:::javascript
 	// create the intent and action
@@ -68,7 +68,7 @@ The code below passes an intent that switches a scanner parameter for the active
 		i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER_PARAMS", bScannerParams);
 
 	// generate result codes
-		i.putExtra(“RECEIVE_RESULT”,"true");
+		i.putExtra(“SEND_RESULT”,"true");
 		i.putExtra("COMMAND_IDENTIFIER", "123456789"); //returned as it is with the result
 
 	// send the intent

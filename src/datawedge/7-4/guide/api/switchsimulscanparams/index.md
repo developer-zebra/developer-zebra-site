@@ -49,7 +49,7 @@ Learn more [about SimulScan parameters](../../input/simulscan).
 
 ### Result Codes
 
-DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+DataWedge returns the following error codes if the app includes the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
 * **VALUE_ALREADY_SET -** No parameters set; equal values previously exist
 * **PARAMETER_INVALID -** Given SimulScan parameter is invalid or not recognized
@@ -70,7 +70,7 @@ Error messages are logged for invalid actions, missing parameters or other failu
 
 ## Example Code
 
-The code below shows how to pass an intent that switches SimulScan parameters for the current scanner in the active Profile. To verify results of the switch (or if errors are expected), include the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
+The code below shows how to pass an intent that switches SimulScan parameters for the current scanner in the active Profile. To verify results of the switch (or if errors are expected), include the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to get results (also shown).
 
 	//Create param bundle
 	Bundle paramBundle = new Bundle();

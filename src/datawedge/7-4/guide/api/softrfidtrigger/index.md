@@ -32,7 +32,7 @@ Used to start, stop or toggle a software RFID trigger.
 
 ### Result Codes
 
-DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+DataWedge returns the following error codes if the app includes the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
 * **DATAWEDGE_DISABLED -** FAILURE
 * **INPUT_NOT_ENABLED -** FAILURE

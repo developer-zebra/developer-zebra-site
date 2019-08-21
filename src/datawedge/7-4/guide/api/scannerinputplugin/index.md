@@ -37,7 +37,7 @@ Used to enable/disable the scanner Plug-in being used by the currently active Pr
 
 ### Result Codes
 
-DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
+DataWedge returns the following error codes if the app includes the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#example), below. 
 
 * **SCANNER_ALREADY_SUSPENDED -** An intent was received to suspend the scanner which is already suspended.
 * **PLUGIN_DISABLED -** The scanner plugin is disabled so the suspend/resume action cannot be executed.

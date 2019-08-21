@@ -56,7 +56,7 @@ The scanner identifier permits scanners to be identified by a friendly name rath
 
 ### Result Codes
 
-DataWedge returns the following error codes if the app includes the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#examplecode), below. 
+DataWedge returns the following error codes if the app includes the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to enable the app to get results using the DataWedge result intent mechanism. See [Example](#examplecode), below. 
 
 * **DATAWEDGE_DISABLED -** DataWedge is disabled
 * **NO_ACTIVE_PROFILE -** 
@@ -81,7 +81,7 @@ Error messages are logged for invalid actions, missing parameters or other failu
 -----
 
 ## Example Code
-The code below shows how to pass an intent to change to scanner "3" from the current scanner. To verify results of the switch (or if errors are expected), include the intent extras `RECEIVE_RESULT` and `COMMAND_IDENTIFIER` to get results.
+The code below shows how to pass an intent to change to scanner "3" from the current scanner. To verify results of the switch (or if errors are expected), include the intent extras `SEND_RESULT` and `COMMAND_IDENTIFIER` to get results.
 
 	:::javascript
 	String scannerIndex = “3”;
@@ -92,7 +92,7 @@ The code below shows how to pass an intent to change to scanner "3" from the cur
 		i.putExtra("com.symbol.datawedge.api.SWITCH_SCANNER", scannerIndex);
 
 	// generate result codes
-		i.putExtra("RECEIVE_RESULT","true");
+		i.putExtra("SEND_RESULT","true");
 		i.putExtra("COMMAND_IDENTIFIER","123456789");
 		     
 	// send the intent

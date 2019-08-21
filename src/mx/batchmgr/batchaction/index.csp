@@ -1,0 +1,35 @@
+---
+csp: batchmgr
+title: Batch Action
+type: parm
+order: 2
+mx: "9.2"
+devicetype: A,B
+parm:
+  pivotal: Yes
+  name: BatchAction
+  type: list
+  list:
+    - code: 0
+      devicetype: A,B
+      mx: "9.2"
+      name: Do Nothing
+      description: This value (or the absense of this parm from the XML) performs no action; any previously selected settings are retained.
+    - code: 1
+      devicetype: A,B
+      mx: "9.2"
+      name: Execute Batch
+      description: Runs the Batch specified in the 'XML Path and File Name' parameter.
+    - code: 2
+      devicetype: A,B
+      mx: "9.2"
+      name: Turn On Trusted Mode
+      description: Activates Trusted Mode, requiring a certificate on the device to perform staging.
+    - code: 3
+      devicetype: A,B
+      mx: "9.2"
+      name: Turn Off Trusted Mode
+      description: Deactivates Trusted Mode, requiring no certificate to perform staging.
+---
+
+Allows selection of a Batch Action to perform on a device. 

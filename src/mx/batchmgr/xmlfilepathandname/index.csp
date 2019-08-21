@@ -1,0 +1,15 @@
+---
+csp: batchmgr
+title: File Path
+type: parm
+order: 4
+mx: "4.3"
+devicetype: A,B
+parm:
+  pivotal: No
+  presentif: File Access method is file system
+  name: XmlFilePathAndName
+  type: string
+---
+
+Enter a path and file name on the device where the XML or binary file to be processed will be located.

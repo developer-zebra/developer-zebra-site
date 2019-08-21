@@ -1,6 +1,6 @@
 ---
 csp: batchmgr
-title: Require Specific Encodings
+title: Require Encodings (checkbox)
 type: parm
 order: 17
 mx: "4.3"
@@ -13,12 +13,12 @@ parm:
   list:
     - code: 0
       devicetype: A,B
-      name: False
+      name: False (unchecked)
       description: Binary file does not require encoding.
       mx: "4.3"
     - code: 1
       devicetype: A,B
-      name: True
+      name: True (checked)
       description: Binary file requires to be encoded.
       mx: "4.3"
 

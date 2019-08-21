@@ -1,13 +1,13 @@
 ---
 csp: batchmgr
-title: Security Password
+title: Binary File Password
 type: parm
 order: 9
 mx: "4.3"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Batch File Type is "Binary" and Require Encodings is "Checked"
+  presentif: Batch File Type is "Binary" and Require Encodings box is "checked"
   name: BinFilePassword
   type: string
 ---

@@ -1,6 +1,6 @@
 ---
 csp: batchmgr
-title: Require Opaque
+title: Require Opaque (checkbox)
 type: parm
 order: 20
 mx: "4.3"
@@ -13,15 +13,15 @@ parm:
   list:
     - code: 0
       devicetype: A,B
-      name: False
-      description: 
+      name: False (unchecked)
+      description: Can be examined. 
       mx: "4.3"
     - code: 1
       devicetype: A,B
-      name: True
-      description: Cannot be examined, only the StageNow Client can decrypt with a private key.
+      name: True (checked)
+      description: Cannot be examined; can be decrypted only by the StageNow Client using a private key.
       mx: "4.3"
 
 ---
 
-Cannot be examined; only the StageNow Client can decrypt with a private key. 
+Used to select whether the file can be examined by the StageNow client and descypted using a private key. 

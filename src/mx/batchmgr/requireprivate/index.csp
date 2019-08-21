@@ -1,6 +1,6 @@
 ---
 csp: batchmgr
-title: Require Private
+title: Require Private (checkbox)
 type: parm
 order: 24
 mx: "4.3"
@@ -13,13 +13,13 @@ parm:
   list:
     - code: 0
       devicetype: A,B
-      name: False
-      description: 
+      name: False (unchecked)
+      description: Private encryption is not required. 
       mx: "4.3"
     - code: 1
       devicetype: A,B
-      name: True
-      description: Sets private encryption to be required.
+      name: True (checked)
+      description: Private encryption is required.
       mx: "4.3"
 
 ---

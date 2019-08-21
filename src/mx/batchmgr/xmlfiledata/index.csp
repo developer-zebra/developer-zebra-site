@@ -1,6 +1,6 @@
 ---
 csp: batchmgr
-title: File Data
+title: XML File Data
 type: parm
 order: 15
 mx: "4.3"

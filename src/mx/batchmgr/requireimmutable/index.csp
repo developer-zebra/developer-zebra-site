@@ -1,6 +1,6 @@
 ---
 csp: batchmgr
-title: Require Immutable
+title: Require Immutable (checkbox)
 type: parm
 order: 22
 mx: "4.3"
@@ -13,15 +13,14 @@ parm:
   list:
     - code: 0
       devicetype: A
-      name: False
-      description: 
+      name: False (unchecked)
+      description: Can be modified.
       mx: "4.3"
     - code: 1
       devicetype: A
-      name: True
-      description: Cannot be modifed, but anyone can decrypt with a public key. Future, not supported in StageNow V2.0.
+      name: True (checked)
+      description: Cannot be modifed but anyone can decrypt with a public key.
       mx: "4.3"
-
 ---
 
-Cannot be modifed, but anyone can decrypt with a public key. Not supported in StageNow V2.0.
+Used to select whether the file can be modified and descypted using a public key. Not supported in StageNow 2.0.

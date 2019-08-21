@@ -12,10 +12,12 @@ parm:
   list:
     - code: 1
       devicetype: A,B
+      mx: "4.3"
       name: XML File
       description: The batch file is encoded as XML.
     - code: 2
       devicetype: A,B
+      mx: "4.3"
       name: Binary File
       description: The batch file is encoded as binary.
 ---

@@ -12,4 +12,4 @@ parm:
   type: string
 ---
 
-Select an XML or binary file in the workstation file system. This file is encoded and placed into the Batch setting.
+Select an XML or binary file in the workstation file system to be encoded and placed into the Batch setting.

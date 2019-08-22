@@ -87,7 +87,11 @@ The OS Update allows the device operating system to be replaced or patched using
 
 ### OS Upgrade/Downgrade
 
-Use the following basic steps to perform an OS Upgrade on devices running Oreo and higher. Steps might vary slightly depending on the environment. 
+#### Upgrade Oreo+ Device
+
+Use the following basic steps to perform an OS Upgrade on devices running Oreo and higher. Steps might vary slightly depending on the device(s), the environment or other factors. 
+
+**To perform an OS Upgrade**:
 
 1. Create a StageNow Profile with PowerMgr settings.
 2. Push the ota upgrade `.zip` file to internal storage (`/storage/sdcard0`) of the unit under test (UUT).
@@ -96,7 +100,7 @@ Use the following basic steps to perform an OS Upgrade on devices running Oreo a
 This step is optional because the OS Update Action automatically triggers a device reboot.
 5. Generate a barcode that contains the Profile with these settings.
 6. Launch StageNow and scan the barcode.
-7. Verify that the UUT starts an update process and reboots after a successful OS Update.
+7. Verify that the UUT starts an update process and reboots after a successful OS Update (and Enterprise Reset if security patch is different).
  
 #### XML for Upgrade
 
@@ -112,18 +116,18 @@ This step is optional because the OS Update Action automatically triggers a devi
 	</wap-provisioningdoc>
 
  
+#### Downgrade Oreo+ Device
 
-DOWNGRADE OREO DEVICE:
+Use the following basic steps to perform an OS Downgrade on devices running Oreo and higher. Steps might vary slightly depending on the device(s), the environment or other factors. 
 
-=======================
-
-Steps:
+**To perform an OS Downgrade**:
 
 1. Create a StageNow Profile with PowerMgr Settings.
-2. Push downgrade `.zip` file to Internal SDcard of the UUT.
-3. Set ResetAction (Select OS Downgrade from UI) as '11' to perform an update of the UUT and Specify 'file-details' characteristic with location of the `.zip` file in UUT i.e internal storage (`/storage/sdcard0`).
-4. Launch StageNow and Scan the barcode.
-5. Verify that the UUT starts an update process and reboots after OS Downgrade and Enterprise Reset (only if security patch is different) is successful.
+2. Push downgrade `.zip` file to internal storage (`/storage/sdcard0`) of the UUT.
+3. Set ResetAction as "11" (OS Downgrade) to perform a downgrade of the UUT. Specify the "file-details" characteristic with the location of the `.zip` file in UUT.
+4. Generate a barcode that contains the Profile with these settings.
+5. Launch StageNow and scan the barcode.
+6. Verify that the UUT starts an update process and reboots after a successful OS Downgrade (and Enterprise Reset if security patch is different).
 
 #### XML for Downgrade
 

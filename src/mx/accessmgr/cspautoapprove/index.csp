@@ -26,4 +26,5 @@ parm:
       description: Blocks the app specified in the Protect Action from accessing ALL CSPs on the device (default).
 ---
 
-Controls whether the app specified in the Protect Action is blocked from accessing <u>all CSPs</u> on the device (default) or <u>only the CSP specified</u> using the CSP Name parameter. 
+Controls whether the application package calling the Protect Action is automatically approved to access the CSP on which the Protect action is being applied. 
+

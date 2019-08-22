@@ -87,7 +87,7 @@ The OS Update allows the device operating system to be replaced or patched using
 
 ### OS Upgrade/Downgrade
 
-#### Upgrade Oreo+ Device
+#### OS Upgrade (Oreo+)
 
 Use the following basic steps to perform an OS Upgrade on devices running Oreo and higher. Steps might vary slightly depending on the device(s), the environment or other factors. 
 
@@ -116,7 +116,7 @@ This step is optional because the OS Update Action automatically triggers a devi
 	</wap-provisioningdoc>
 
  
-#### Downgrade Oreo+ Device
+#### OS Downgrade (Oreo+)
 
 Use the following basic steps to perform an OS Downgrade on devices running Oreo and higher. Steps might vary slightly depending on the device(s), the environment or other factors. 
 

@@ -79,8 +79,7 @@ The OS Update allows the device operating system to be replaced or patched using
 > **Devices running Android 7.x Nougat and below** support OS Update only.
 > **Devices with Android 8.x Oreo and later** support Upgrade and Downgrade Actions and the Supress Reboot parameter. 
 
-**Notes**: 
-
+####Notes: 
 * **The OS Update Action causes the device to Reboot (into Recovery Mode), <u>which prevents execution of any subsequent Actions</u>**, including the submission of a Result XML to the application sending the original request. 
 * **OS Update can be used to upgrade or downgrade Android 7.x Nougat and older**. 
 * **On devices running Android 8.x Oreo or later**, the OS Update Action can only **<u>upgrade</u>**. 
@@ -95,7 +94,7 @@ Use the following basic steps to perform an OS Upgrade on devices running Oreo a
 
 1. Create a StageNow Profile with PowerMgr settings.
 2. Push the ota upgrade `.zip` file to internal storage (`/storage/sdcard0`) of the unit under test (UUT).
-3. Set ResetAction as "10" (OS Upgrade) to perform an update of the UUT. Specify "file-details" characteristic with location of the `.zip' file in UUT.
+3. Set ResetAction as "10" (OS Upgrade) to perform an update of the UUT. Specify "file-details" characteristic with location of the `.zip` file in UUT (see sample XML below).
 4. Optionally, set SuppressReboot as False (unchecked). <br>
 This step is optional because the OS Update Action automatically triggers a device reboot.
 5. Generate a barcode that contains the Profile with these settings.
@@ -124,7 +123,7 @@ Use the following basic steps to perform an OS Downgrade on devices running Oreo
 
 1. Create a StageNow Profile with PowerMgr Settings.
 2. Push downgrade `.zip` file to internal storage (`/storage/sdcard0`) of the UUT.
-3. Set ResetAction as "11" (OS Downgrade) to perform a downgrade of the UUT. Specify the "file-details" characteristic with the location of the `.zip` file in UUT.
+3. Set ResetAction as "11" (OS Downgrade) to perform a downgrade of the UUT. Specify the "file-details" characteristic with the location of the `.zip` file in UUT (see sample XML below).
 4. Generate a barcode that contains the Profile with these settings.
 5. Launch StageNow and scan the barcode.
 6. Verify that the UUT starts an update process and reboots after a successful OS Downgrade (and Enterprise Reset if security patch is different).

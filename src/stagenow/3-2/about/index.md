@@ -28,7 +28,29 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-## Device Support 
+### Sections of This Guide
+
+* [Installing StageNow](../installing) provides instructions for installing, uninstalling, and upgrading the StageNow staging solution, including system requirements.
+
+* [Getting Started](../gettingstarted) describes the StageNow solution, including information about users, use cases and supported devices.
+
+* [Profiles](../stagingprofiles) provides information about StageNow Wizards, which allow the staging administrator to define software configurations and installation scenarios for enterprise devices.
+
+* [Profile Wizards](../ProfileWizards) describes how to use the profile-creation Wizards.
+
+* [Settings](../settingconfig) provides information for the staging administrator about configuring and managing settings for use in profile creation.
+
+* [Setting Types](../settingtypes) lists the parameters and values available when creating settings.
+
+* [Device Staging](../stageclient) provides information for the staging operator about selecting a profile for configuring the target devices and deploying the profile material to the devices.
+
+* [Troubleshooting](../troubleshooting) describes errors that can occur in the StageNow Tool and provides possible solutions.
+
+-----
+
+## What's New in v3.2
+
+### Device Support 
 
 **StageNow v3.2 supports all Zebra devices with the following operating systems and extensions**: 
 
@@ -47,7 +69,7 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-## New Features
+### New Features
 
 **Support for MX 8.3** provides the following enhancements:
 
@@ -64,25 +86,8 @@ The following software must be installed on the staging workstation prior to usi
  * Confirm that service calling is allowed
 * **Enhanced [File Manager](../csp/file)** can download and expand archive files by from a local PC or a server.
 
------
-
-### Sections of This Guide
-
-* [Installing StageNow](../installing) provides instructions for installing, uninstalling, and upgrading the StageNow staging solution, including system requirements.
-
-* [Getting Started](../gettingstarted) describes the StageNow solution, including information about users, use cases and supported devices.
-
-* [Profiles](../stagingprofiles) provides information about StageNow Wizards, which allow the staging administrator to define software configurations and installation scenarios for enterprise devices.
-
-* [Profile Wizards](../ProfileWizards) describes how to use the profile-creation Wizards.
-
-* [Settings](../settingconfig) provides information for the staging administrator about configuring and managing settings for use in profile creation.
-
-* [Setting Types](../settingtypes) lists the parameters and values available when creating settings.
-
-* [Device Staging](../stageclient) provides information for the staging operator about selecting a profile for configuring the target devices and deploying the profile material to the devices.
-
-* [Troubleshooting](../troubleshooting) describes errors that can occur in the StageNow Tool and provides possible solutions.
+> **IMPORTANT NOTE**:<br> 
+> <u>**StageNow 3.2 supports only devices running Android 7.x Nougat and newer**</u>.<br>Support for Android 6.x Marshmallow (and older) is discontinued in StageNow 3.2.
 
 -----
 

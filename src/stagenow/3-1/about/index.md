@@ -28,6 +28,28 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
+### Sections of This Guide
+
+* [Installing StageNow](../installing) provides instructions for installing, uninstalling, and upgrading the StageNow staging solution, including system requirements.
+
+* [Getting Started](../gettingstarted) describes the StageNow solution, including information about users, use cases and supported devices.
+
+* [Profiles](../stagingprofiles) provides information about StageNow Wizards, which allow the staging administrator to define software configurations and installation scenarios for enterprise devices.
+
+* [Profile Wizards](../ProfileWizards) describes how to use the profile-creation Wizards.
+
+* [Settings](../settingconfig) provides information for the staging administrator about configuring and managing settings for use in profile creation.
+
+* [Setting Types](../settingtypes) lists the parameters and values available when creating settings.
+
+* [Device Staging](../stageclient) provides information for the staging operator about selecting a profile for configuring the target devices and deploying the profile material to the devices.
+
+* [Troubleshooting](../troubleshooting) describes errors that can occur in the StageNow Tool and provides possible solutions.
+
+-----
+
+## What's New in v3.1
+
 ### Device Support
 
 **StageNow v3.1 supports all Zebra devices with the following operating systems and extensions**: 
@@ -51,30 +73,7 @@ The following software must be installed on the staging workstation prior to usi
 
 -----
 
-### Sections of This Guide
-
-* [Installing StageNow](../installing) provides instructions for installing, uninstalling, and upgrading the StageNow staging solution, including system requirements.
-
-* [Getting Started](../gettingstarted) describes the StageNow solution, including information about users, use cases and supported devices.
-
-* [Profiles](../stagingprofiles) provides information about StageNow Wizards, which allow the staging administrator to define software configurations and installation scenarios for enterprise devices.
-
-* [Profile Wizards](../ProfileWizards) describes how to use the profile-creation Wizards.
-
-* [Settings](../settingconfig) provides information for the staging administrator about configuring and managing settings for use in profile creation.
-
-* [Setting Types](../settingtypes) lists the parameters and values available when creating settings.
-
-* [Device Staging](../stageclient) provides information for the staging operator about selecting a profile for configuring the target devices and deploying the profile material to the devices.
-
-* [Troubleshooting](../troubleshooting) describes errors that can occur in the StageNow Tool and provides possible solutions.
-
------
-
-## New in v3.1
-
-> **IMPORTANT NOTE**:<br> 
-> <u>**StageNow 3.1 supports devices running Android 6.x Marshmallow and newer only**</u>.<br>Support for Android 5.x Lollipop (and older) is discontinued in StageNow 3.1.
+### New Features
 
 ### Enhanced User experience
 
@@ -130,6 +129,9 @@ The following software must be installed on the staging workstation prior to usi
 * **New [AutoTrigger Manager](../csp/autotriggermgr) CSP** is used to configure automatic scan-triggering, which initiates scanning when a scan target is brought within proximity of the device sensor. Currently supports the Zebra PS20 Personal Shopper device only. 
 * **New [DeviceCentral Manager](../csp/devicecentralmgr) CSP** allows configuration of settings on the device for Zebra Device Central, an enterprise tool for viewing connection state, battery status, firmware version and other device conditions from a central console.
 * **New [Fota Manager](../csp/fotamgr) CSP** controls the Firmware Over The Air (FOTA) Client on the device, allowing administrators to perform OS updates on Zebra devices without a physical connection. The FOTA Client app comes preinstalled on supported devices and is configured to communicate with the Zebra update server.
+
+> **IMPORTANT NOTE**:<br> 
+> <u>**StageNow 3.1 supports devices running Android 6.x Marshmallow and newer only**</u>.<br>Support for Android 5.x Lollipop (and older) is discontinued in StageNow 3.1.
 
 -----
 

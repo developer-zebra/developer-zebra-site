@@ -207,6 +207,8 @@ The following software must be installed on the staging workstation prior to usi
 * **New [DeviceCentral Manager](../csp/devicecentralmgr) CSP** allows configuration of settings on the device for Zebra Device Central, an enterprise tool for viewing connection state, battery status, firmware version and other device conditions from a central console.
 * **New [Fota Manager](../csp/fotamgr) CSP** controls the Firmware Over The Air (FOTA) Client on the device, allowing administrators to perform OS updates on Zebra devices without a physical connection. The FOTA Client app comes preinstalled on supported devices and is configured to communicate with the Zebra update server.
 
+-----
+
 ### Added in v3.0
 
 **Support for Chinese language**. The StageNow tool and device client now support localization for the Chinese language and Chinese version of Windows. 

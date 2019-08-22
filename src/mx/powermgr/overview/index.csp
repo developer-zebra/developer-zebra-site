@@ -84,3 +84,57 @@ The OS Update allows the device operating system to be replaced or patched using
 * **The OS Update Action causes the device to Reboot (into Recovery Mode), <u>which prevents execution of any subsequent Actions</u>**, including the submission of a Result XML to the application sending the original request. 
 * **OS Update can be used to upgrade or downgrade Android 7.x Nougat and older**. 
 * **On devices running Android 8.x Oreo or later**, the OS Update Action can only **<u>upgrade</u>**. 
+
+### OS Upgrade/Downgrade
+
+Use the following basic steps to perform an OS Upgrade on devices running Oreo and higher. Steps might vary slightly depending on the environment. 
+
+1. Create a StageNow Profile with PowerMgr settings.
+2. Push the ota upgrade `.zip` file to internal storage (`/storage/sdcard0`) of the unit under test (UUT).
+3. Set ResetAction as "10" (OS Upgrade) to perform an update of the UUT. Specify "file-details" characteristic with location of the `.zip' file in UUT.
+4. Optionally, set SuppressReboot as False (unchecked). <br>
+This step is optional because the OS Update Action automatically triggers a device reboot.
+5. Generate a barcode that contains the Profile with these settings.
+6. Launch StageNow and scan the barcode.
+7. Verify that the UUT starts an update process and reboots after a successful OS Update.
+ 
+#### XML for Upgrade
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="PowerMgr" version="8.1" >
+				<parm name="ResetAction" value="10"/>
+			<characteristic type="file-details">
+				<parm name="ZipFile" value="/storage/sdcard0/name_of_upgrade_file.zip"/> // <-- upgrade .zip file
+			</characteristic>
+				<parm name="SuppressReboot" value="2"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+ 
+
+DOWNGRADE OREO DEVICE:
+
+=======================
+
+Steps:
+
+1. Create a StageNow Profile with PowerMgr Settings.
+2. Push downgrade `.zip` file to Internal SDcard of the UUT.
+3. Set ResetAction (Select OS Downgrade from UI) as '11' to perform an update of the UUT and Specify 'file-details' characteristic with location of the `.zip` file in UUT i.e internal storage (`/storage/sdcard0`).
+4. Launch StageNow and Scan the barcode.
+5. Verify that the UUT starts an update process and reboots after OS Downgrade and Enterprise Reset (only if security patch is different) is successful.
+
+#### XML for Downgrade
+
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="PowerMgr" version="8.1" >
+				<parm name="ResetAction" value="11"/>
+			<characteristic type="file-details">
+				<parm name="ZipFile" value="/storage/sdcard0/name_of_downgrade_file.zip"/> // <-- downgrade .zip file
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+-----

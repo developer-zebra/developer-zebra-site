@@ -54,6 +54,7 @@ Also included is Profile Manager, which enhances Android IDE with a GUI-based to
 * DS2278
 * DS3608
 * DS3678
+* **DS8178**
 * LI3608
 * LI3678
 * RS507

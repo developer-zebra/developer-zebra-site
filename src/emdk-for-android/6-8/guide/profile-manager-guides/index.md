@@ -24,8 +24,6 @@ automenu:
           url: /emdk-for-android/6-8/mx/appgallerymgr
         - title: Browser Manager
           url: /emdk-for-android/6-8/mx/browsermgr
-        - title: Enterprise Keyboard Manager
-          url: /emdk-for-android/6-8/mx/enterprisekeyboardmgr/
     - title: Device Configuration
       items:
         - title: Analytics Manager

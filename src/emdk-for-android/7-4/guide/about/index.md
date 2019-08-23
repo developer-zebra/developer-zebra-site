@@ -33,18 +33,20 @@ The devices listed below have been tested and validated for compatibility with t
 * CC600 - Oreo
 * CC6000 - Oreo 
 * **EC30 - Oreo**
+* **ET51 Oreo**
+* **ET56 Oreo**
 * **L10 - Oreo**
 * MC33 - Oreo
 * MC9300 - Oreo
-* PS20 - Oreo, **Pie**
+* **PS20** - Oreo, **Pie**
 * TC20 - Oreo
 * TC25 - Oreo
 * TC51 - Oreo
-* TC52 - Oreo, **Pie**
+* **TC52** - Oreo, **Pie**
 * TC56 - Oreo
 * TC57 - Oreo
 * TC70x - Oreo
-* TC72 - Oreo, **Pie**
+* **TC72** - Oreo, **Pie**
 * TC75x - Oreo
 * TC77 - Oreo
 * TC8300 - Oreo
@@ -58,6 +60,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 * DS2278
 * DS3608
 * DS3678
+* DS8178
 * LI3608
 * LI3678
 * RS507
@@ -93,12 +96,14 @@ The EC30 Enterprise Companion is Zebra's ultra-compact, fully functional mobile 
  * Control whether password characters are displayed briefly on the screen as they're entered (otherwise masked at all times)
 * **Enhanced [App Manager](../../mx/appmgr)** now allows an admin to:
  * Erase all data created by an app specified in the Package parameter
-* **Enhanced [GMS Manager](../../mx/gmsmgr)** now allows an admin to:
- * Select and enable a subset of GMS apps and services to run on a device (i.e. Chrome browser, Google Maps, Firebase Cloud messaging)
 * **Enhanced [Power Manager](../../mx/powermgr)** now allows an admin to:
  * Select hardware signals as the device wake-up method
  * Select mappable keycodes as the device wake-up method 
 
+<!-- 8/23/19- removed per eng (admin only)
+* **Enhanced [GMS Manager](../../mx/gmsmgr)** now allows an admin to:
+ * Select and enable a subset of GMS apps and services to run on a device (i.e. Chrome browser, Google Maps, Firebase Cloud messaging)
+ -->
 
 ### API Enhancements
 
@@ -109,6 +114,10 @@ The EC30 Enterprise Companion is Zebra's ultra-compact, fully functional mobile 
 * Added `enum` and reader parameters to support DPM illumination, providing illumination for DPM barcode reading: 
  * New ScannerConfig `DpmIlluminationControl` `enum` allows selection of the DPM illumination options: **CYCLE, DIRECT, INDIRECT** 
  * New reader parameter `dpmIlluminationControl` in `ScannerConfig.ReaderParams.ReaderSpecific.ImagerSpecific` controls DPM illumination 
+
+### Deprecations
+
+**Support for Unique Device Identification (UDI) barcodes is deprecated**. GS1, HIBCC and ICCBBA barcode standards will no longer be advanced in the Barcode API, and will be discontinued with Android 10 Q.
 
 -----
 

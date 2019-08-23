@@ -24,8 +24,6 @@ automenu:
           url: /emdk-for-android/6-9/mx/appgallerymgr
         - title: Browser Manager
           url: /emdk-for-android/6-9/mx/browsermgr
-        - title: Enterprise Keyboard Manager
-          url: /emdk-for-android/6-9/mx/enterprisekeyboardmgr/
         - title: License Manager 
           url: /emdk-for-android/6-9/mx/licensemgr/
     - title: Device Configuration

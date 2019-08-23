@@ -24,8 +24,6 @@ automenu:
           url: /emdk-for-android/7-0/mx/appgallerymgr
         - title: Browser Manager
           url: /emdk-for-android/7-0/mx/browsermgr
-        - title: Enterprise Keyboard Manager
-          url: /emdk-for-android/7-0/mx/enterprisekeyboardmgr/
         - title: License Manager 
           url: /emdk-for-android/7-0/mx/licensemgr/
     - title: Device Configuration

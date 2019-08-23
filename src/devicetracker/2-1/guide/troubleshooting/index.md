@@ -10,7 +10,7 @@ This section covers troubleshooting steps as well as Frequently Asked Questions.
 
 
 ##Troubleshooting
-This section discusses common issues that can occur with possible solutions.
+This section discusses common issues that can occur and possible solutions. Server log files can help identify any server errors or exceptions, located in default folder `\Program Files (x86)\Zebra Technologies\ZDVC\Backend Server\log`. 
 
 ###Cannot login or connect to server
 Possible causes:

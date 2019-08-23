@@ -17,13 +17,13 @@ parm:
       devicetype: A
       name: (unchecked)
       apilevel: "26"
-      description: Blocks the app specified in the Protect Action from accessing ONLY the specified CSP.
+      description: Requires the app calling the Protect Action to be approved separately to access the specified CSP on the device.
     - code: 1
       devicetype: A
       name: (checked)
       mx: "9.2"
       apilevel: "26"
-      description: Blocks the app specified in the Protect Action from accessing ALL CSPs on the device (default).
+      description: Automatically approves the app calling the Protect Action to access the specified CSP on the device (default).
 ---
 
 Controls whether the application package calling the Protect Action is automatically approved to access the CSP on which the Protect Action is being applied. 

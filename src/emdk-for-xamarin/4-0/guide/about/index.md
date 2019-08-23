@@ -41,7 +41,6 @@ EMDK-X has been designed to work with all Zebra mobile computers running Android
 * DS2278
 * DS3608
 * DS3678
-* DS8178
 * **DS8178**
 * LI3608
 * LI3678

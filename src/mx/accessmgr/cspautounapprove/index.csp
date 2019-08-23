@@ -1,6 +1,6 @@
 ---
 csp: accessmgr
-title: Auto-Unapprove CSP (checkbox)
+title: Auto-unapprove CSP (checkbox)
 type: parm
 order: 21
 mx: "9.2"

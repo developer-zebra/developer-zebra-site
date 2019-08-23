@@ -4,7 +4,8 @@ title: Trusted Mode Certificate File
 type: parm
 order: 3
 mx: "9.2"
-devicetype: A,B
+apilevel: "26"
+devicetype: A
 parm:
   pivotal: No
   presentif: Batch Action is "Turn On Trusted Mode"

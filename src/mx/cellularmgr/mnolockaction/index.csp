@@ -15,12 +15,12 @@ parm:
       devicetype: A,B
       name: Lock
       mx: "9.2"
-      description: Prevents the user from changing to the MNO. 
+      description: Prevents the user from changing the MNO. 
     - code: 2
       devicetype: A,B
       name: Unlock
       mx: "9.2"
-      description: Allows the device user to change to the MNO. 
+      description: Allows the device user to change the MNO. 
 ---
 
 Controls whether the Mobile Network Operator (MNO) can be changed on the device. 

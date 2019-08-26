@@ -15,12 +15,12 @@ parm:
       devicetype: A,B
       name: StoreMNOLock
       mx: "9.2"
-      description: Stores MNO Lock key code. 
+      description: Stores key code for locking and unlocking the MNO. 
     - code: 2
       devicetype: A,B
       name: WipeMNOLock
       mx: "9.2"
-      description: Erases MNO Lock key code cache. 
+      description: Erases all MNO lock key codes stored in the device. 
 ---
 
-Used to manage Mobile Network Operator (MNO) Lock codes stored on the device. These codes are provided by the MNO and used to lock and unlock MNOs on the device. 
+Used to manage Mobile Network Operator (MNO) Lock codes stored on the device. Codes provided by the MNO are stored on the device and used to lock and unlock the device's MNO.

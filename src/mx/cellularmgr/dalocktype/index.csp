@@ -23,4 +23,4 @@ parm:
       description: Locks the device by SIM card.
 ---
 
-Used to select whether the device is locked to a Mobile Network Operator (MNO) or an ICCID (SIM card). 
+Used to select how the device is locked&ndash; either to a Mobile Network Operator (MNO) or an ICCID (SIM card). 

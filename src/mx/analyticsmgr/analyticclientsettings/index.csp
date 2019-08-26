@@ -1,13 +1,12 @@
 ---
 csp: analyticsmgr
-title: Analytics Client Settings
+title: Analytics Data Collection
 type: parm
 order: 3
 mx: "5.1"
 apilevel: "19"
 devicetype: A
 parm:
-  presentif: Analytics Action is set to "Enable"
   pivotal: No
   name: DASettings
   type: list
@@ -17,19 +16,19 @@ parm:
       apilevel: "19"
       devicetype: A
       name: Do not change
-      description: This value (or the absence of this parm from the XML) will cause no change to whether the Analytics Client Settings are enabled; any previously selected setting will be retained. 
+      description: This value (or the absence of this parm from the XML) causes no settings change; any previously selected setting is retained. 
     - code: 1
       mx: "5.1"
       apilevel: "19"
       devicetype: A
       name: Enable
-      description: Enables Analytics Client Settings to be configured for throttling or controlling data and events upload.
+      description: Enables Analytics data collection and upload on the device.
     - code: 2
       mx: "5.1"
       apilevel: "19"
       devicetype: A
       name: Disable
-      description: Disables the ability to configure Analytics Client Settings for throttling or data and events upload.
+      description: Disables Analytics data collection and upload on the device.
 ---
 
-This is the On/Off switch for Analytics Client Settings, which allow AnalyticsMgr to control the ability of client components (such as [Stats](../stats)) to submit data and events to AnalyticsMgr for processing and transport. By enabling this parameter, administrators can set limits on incoming data and events using the throttling parameters (below), and can choose whether to allow the upload of those elements to the cloud. Analytics Client Settings can be used to prevent the Analytics Engine from being overwhelmed by client activities. 
+This is the On/Off switch for the Zebra Data Analytics Engine, which allows the Data Collection Agent to collect data about events on the device and submit data to the Zebra Cloud for processing and analysis.

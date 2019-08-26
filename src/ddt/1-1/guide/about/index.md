@@ -34,6 +34,36 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <th style="text-align:center">Android 9.x <br>(Pie)</th>
   </tr>
   <tr>
+    <td>CC600</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>EC30</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PS20</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>ET50/ET55</td>
     <td></td>
     <td></td>
@@ -161,7 +191,7 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
-    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>TC55</td>
@@ -201,7 +231,7 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
-    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
     <td>TC80</td>
@@ -230,6 +260,16 @@ Diagnostic Tool is pre-installed on all supported Zebra devices.
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>VC8300</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td style="text-align:center">&#x25cf;</td>
     <td></td>
   </tr>

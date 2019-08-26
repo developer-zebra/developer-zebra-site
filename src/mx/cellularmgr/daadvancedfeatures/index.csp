@@ -1,0 +1,32 @@
+---
+csp: cellularmgr
+title: DA Advanced Features (checkbox) 
+type: parm
+order: 47
+mx: "9.2"
+devicetype: A
+info: WWAN-enabled devices only
+parm:
+  pivotal: No
+  name: DAAdvancedFeatures
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: (unchecked)
+      mx: "9.2"
+      description: Prevents configuration of advanced features. 
+    - code: 1
+      devicetype: A,B
+      name: (checked)
+      mx: "9.2"
+      description: Allows configuration of advanced features. 
+---
+
+Controls whether the device administrator has access to configuration of advanced features:
+
+* **Network Lock**
+* **Lock Type**
+* **Unlock code**
+* **Unlock retry count**
+

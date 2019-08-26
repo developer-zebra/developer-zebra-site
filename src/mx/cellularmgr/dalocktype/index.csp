@@ -8,7 +8,7 @@ devicetype: A,B
 info: WWAN-enabled devices only
 parm:
   pivotal: No
-  name: ShowPlmnLock
+  name: DALockType
   type: list
   list:
     - code: 0
@@ -24,3 +24,5 @@ parm:
 ---
 
 Used to select how the device is locked&ndash; either to a Mobile Network Operator (MNO) or an ICCID (SIM card). 
+
+Controls whether the user interface for changing the lock for public land mobile network is displayed. 

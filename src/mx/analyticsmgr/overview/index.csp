@@ -1,5 +1,5 @@
 ---
-csp: (86'd)
+csp: analyticsmgr
 title: Overview
 type: text
 devicetype: A
@@ -16,6 +16,8 @@ Central to Zebra Analytics is the Analytics Engine, which collects information a
  
 * Enable/disable data collection by the Analytics Engine
 * Enable/disable ability of device user or app to change data collection setting
+
+<!-- 8/26/19- removed per eng. 
 * Set data collection thresholds for individual metrics
 * Control whether data is stored on the device or in the Zebra Cloud
 * Automatically clear on-device data when Analytics Engine is disabled 
@@ -36,3 +38,5 @@ Central to Zebra Analytics is the Analytics Engine, which collects information a
 	* Medium (moderate frequency)
 	* High (very often)
 	* Custom interval (in minutes)
+
+-->

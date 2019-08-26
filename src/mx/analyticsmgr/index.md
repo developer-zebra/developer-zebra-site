@@ -11,7 +11,7 @@ mxversions:
     value: 4.4
   - text: MX 5.0
     value: 5
-csp: (86'd)
+csp: analyticsmgr
 ---
 
 

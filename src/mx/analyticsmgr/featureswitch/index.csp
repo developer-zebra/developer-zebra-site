@@ -1,5 +1,5 @@
 ---
-csp: analyticsmgr
+csp: (86'd)
 title: Feature Switch
 type: parm
 order: 7

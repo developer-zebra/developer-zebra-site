@@ -1,5 +1,5 @@
 ---
-csp: analyticsmgr
+csp: (86'd)
 title: Battery and CPU Status
 type: parm
 mx: "4.3"

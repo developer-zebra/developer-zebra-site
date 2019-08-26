@@ -1,5 +1,5 @@
 ---
-csp: analyticsmgr
+csp: (86'd)
 title: Events Throttling
 type: parm
 order: 5

@@ -1,5 +1,5 @@
 ---
-csp: analyticsmgr
+csp: (86'd)
 title: Metric Action
 type: parm
 order: 11

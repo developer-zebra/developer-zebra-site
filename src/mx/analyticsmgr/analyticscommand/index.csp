@@ -1,5 +1,5 @@
 ---
-csp: analyticsmgr
+csp: (86'd)
 title: Analytics Command
 type: parm
 order: 15

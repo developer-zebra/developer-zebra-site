@@ -1,5 +1,5 @@
 ---
-csp: analyticsmgr
+csp: (86'd)
 title: WLAN Performance Metrics
 type: parm
 mx: "5.1"

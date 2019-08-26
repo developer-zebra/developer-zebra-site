@@ -1,5 +1,5 @@
 ---
-csp: analyticsmgr
+csp: (86'd)
 title: Enable File/Events Upload
 type: parm
 order: 6

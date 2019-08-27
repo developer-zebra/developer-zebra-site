@@ -1,0 +1,26 @@
+---
+csp: cellularmgr
+title: Erase MNO Lock Info (checkbox) 
+type: parm
+order: 55
+mx: "9.2"
+devicetype: A
+info: Supported only on WWAN-enabled devices.
+parm:
+  pivotal: No
+  name: WipeMNOLock
+  type: list
+  list:
+    - code: 0
+      mx: "9.2"
+      devicetype: A
+      name: (unchecked)
+      description: Leaves MNO Lock information stored on the device. 
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "9.2"
+      description: Removes MNO Lock information from the device. 
+---
+
+Controls whether to remove (erase) the current MNO Lock information stored on the device.

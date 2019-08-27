@@ -5,7 +5,7 @@ type: parm
 order: 46
 mx: "9.2"
 devicetype: A
-info: WWAN-enabled devices only
+info: WWAN-enabled devices only.
 parm:
   presentif: DA Network Lock is "Lock" or "Unlock"
   pivotal: No

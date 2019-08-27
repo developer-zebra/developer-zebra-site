@@ -1,0 +1,26 @@
+---
+csp: cellularmgr
+title: Service Tech Features (checkbox) 
+type: parm
+order: 55
+mx: "9.2"
+devicetype: A
+info: Supported only on WWAN-enabled devices.
+parm:
+  pivotal: No
+  name: SvcAdvancedFeatures
+  type: list
+  list:
+    - code: 0
+      mx: "9.2"
+      devicetype: A
+      name: (unchecked)
+      description: Prevents Service Technician Features from being used. 
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "9.2"
+      description: Allows Service Technician Features to be used. 
+---
+
+Select whether to use Service Technician Advanced Features. 

@@ -5,7 +5,7 @@ type: parm
 order: 28
 mx: "6.3"
 devicetype: A,B
-info: WWAN-enabled devices only
+info: WWAN-enabled devices only.
 parm:
   presentif: Cellular Data State is set to "Turn On"
   pivotal: No

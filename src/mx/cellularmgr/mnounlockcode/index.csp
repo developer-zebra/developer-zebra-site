@@ -5,7 +5,7 @@ type: parm
 order: 50
 mx: "9.2"
 devicetype: A
-info: WWAN-enabled devices only
+info: WWAN-enabled devices only.
 parm:
   presentif: MNO Lock Action is "Unlock"
   pivotal: No

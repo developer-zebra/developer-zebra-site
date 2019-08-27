@@ -6,7 +6,7 @@ order: 41
 mx: "4.3"
 osx: "1.3"
 devicetype: A,B
-info: WWAN-enabled devices only
+info: WWAN-enabled devices only.
 parm:
   presentif: Background Data Usage is set to "Enable"
   pivotal: No

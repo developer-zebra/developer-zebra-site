@@ -1,0 +1,26 @@
+---
+csp: cellularmgr
+title: Import MNO Lock Info (checkbox) 
+type: parm
+order: 55
+mx: "9.2"
+devicetype: A
+info: Supported only on WWAN-enabled devices.
+parm:
+  pivotal: No
+  name: ImportMNOLock
+  type: list
+  list:
+    - code: 0
+      mx: "9.2"
+      devicetype: A
+      name: (unchecked)
+      description: Prevents importation of MNO Lock information. 
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "9.2"
+      description: Allows importation of MNO Lock information. 
+---
+
+Controls whether to Import and restore MNO Lock information from an SD card. 

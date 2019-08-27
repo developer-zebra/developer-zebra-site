@@ -6,7 +6,7 @@ order: 40
 mx: "4.4"
 osx: "4.4"
 devicetype: A,B
-info: WWAN-enabled devices only
+info: WWAN-enabled devices only.
 parm:
   pivotal: No
   name: BackgroundDataUsage

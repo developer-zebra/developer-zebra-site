@@ -1,0 +1,20 @@
+---
+csp: cellularmgr
+title: Service Tech Activation ID
+type: parm
+order: 52
+mx: "9.2"
+devicetype: A
+info: WWAN-enabled devices only.
+parm:
+  presentif: Service Tech Advanced Features is "checked"
+  pivotal: No
+  name: SvcActivationID
+  type: string
+---
+
+Used to specify the license Activation ID to authorize use of Service Technician Advanced Features. 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;255 characters 

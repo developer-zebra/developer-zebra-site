@@ -1,0 +1,20 @@
+---
+csp: cellularmgr
+title: DA Unlock Code
+type: parm
+order: 46
+mx: "9.2"
+devicetype: A
+info: WWAN-enabled devices only
+parm:
+  presentif: DA Network Lock is "Lock" or "Unlock"
+  pivotal: No
+  name: DAUnlockCode
+  type: string
+---
+
+Used to specify the Device Admin Unlock Code.  
+
+**Parm value input rules**: 
+
+* String from 1&ndash;255 characters 

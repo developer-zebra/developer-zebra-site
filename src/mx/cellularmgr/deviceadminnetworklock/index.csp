@@ -1,0 +1,26 @@
+---
+csp: cellularmgr
+title: Device Admin Network Lock 
+type: parm
+order: 47
+mx: "9.2"
+devicetype: A
+info: WWAN-enabled devices only
+parm:
+  pivotal: No
+  name: DeviceAdminNetworkLock
+  type: list
+  list:
+    - code: 1
+      devicetype: A
+      name: Lock
+      mx: "9.2"
+      description: Locks the MNO. 
+    - code: 2
+      devicetype: A
+      name: Unock
+      mx: "9.2"
+      description: Unlocks the MNO using a key code. 
+---
+
+Used to Lock/Unlock the device to/from a specific network.

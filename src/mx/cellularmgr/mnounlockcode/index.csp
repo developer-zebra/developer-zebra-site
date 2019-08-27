@@ -1,0 +1,22 @@
+---
+csp: cellularmgr
+title: MNO Unlock Code
+type: parm
+order: 50
+mx: "9.2"
+devicetype: A
+info: WWAN-enabled devices only
+parm:
+  presentif: MNO Lock Action is "Unlock"
+  pivotal: No
+  name: MNOUnlockCode
+  type: string
+---
+
+MNOUnlockCode
+
+Used to specify the Integrated Circuit Card Identifier (ICCID) number, which uniquely identifies a SIM card.  
+
+**Parm value input rules**: 
+
+* String from 1&ndash;255 characters 

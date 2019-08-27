@@ -1,0 +1,20 @@
+---
+csp: cellularmgr
+title: Specify ICCID
+type: parm
+order: 46
+mx: "9.2"
+devicetype: A
+info: WWAN-enabled devices only
+parm:
+  presentif: DA Network Lock is "Lock" and DA Lock Type is "ICCID Lock"
+  pivotal: No
+  name: Iccid
+  type: string
+---
+
+Used to specify the Integrated Circuit Card Identifier (ICCID) number, which uniquely identifies a SIM card.  
+
+**Parm value input rules**: 
+
+* String from 5&ndash;255 characters 

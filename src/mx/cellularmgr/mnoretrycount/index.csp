@@ -1,0 +1,21 @@
+---
+csp: cellularmgr
+title: MNO Retry Count
+type: parm
+order: 49
+mx: "9.2"
+devicetype: A
+info: WWAN-enabled devices only
+parm:
+  presentif: MNO Lock Action is "Lock"
+  pivotal: No
+  name: MNORetryCount
+  type: string
+---
+
+Used to specify the maximum number of failed attempts to Unlock the device. 
+
+**Parm value input rules**: 
+
+* String from 1&ndash;2 characters 
+

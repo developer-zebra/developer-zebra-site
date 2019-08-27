@@ -1,10 +1,10 @@
 ---
 csp: cellularmgr
-title: SIM Socket Selection Enable/Disable 
+title: Service Technician Features (checkbox) 
 type: parm
-order: 5
-mx: "6.2"
-devicetype: A,B
+order: 55
+mx: "9.2"
+devicetype: A
 info: Supported only on WWAN-enabled devices with more than one SIM socket
 parm:
   pivotal: No
@@ -12,20 +12,20 @@ parm:
   type: list
   list:
     - code: 0
-      mx: "6.2"
-      devicetype: A,B
-      name: Do not change
-      description: This value (or the absence of this parm from the XML) causes no change to user control over SIM Socket selection; any previously selected setting is retained.
+      mx: "9.2"
+      devicetype: A
+      name: (unchecked)
+      description: Prevents Service Technician Features from being used. 
     - code: 1
-      devicetype: A,B
-      name: Enable
-      mx: "6.2"
-      description: Enables the device user to control which SIM Socket is used.
-    - code: 2
-      devicetype: A,B
-      name: Disable
-      mx: "6.2"
-      description: Prevents the user from changing the selected SIM Socket.
+      devicetype: A
+      name: (checked)
+      mx: "9.2"
+      description: Allows Service Technician Features to be used. 
 ---
+
+Select whether to use Service Technician Advanced Features
+
+
+old old old
 
 Controls whether the device user can change the selected SIM Socket using the Select SIM Socket parameter. When Disabled, the SIM Socket cannot be selected by the device user. **Supported on specific Zebra devices only**.

@@ -1,0 +1,21 @@
+---
+csp: cellularmgr
+title: Retry Count
+type: parm
+order: 46
+mx: "9.2"
+devicetype: A
+info: WWAN-enabled devices only
+parm:
+  presentif: DA Network Lock is "Lock" or "Unlock"
+  pivotal: No
+  name: RetryCount
+  type: string
+---
+
+Used to specify the maximum number of failed attempts to Unlock the device.
+
+**Parm value input rules**: 
+
+* String from 1&ndash;2 characters 
+

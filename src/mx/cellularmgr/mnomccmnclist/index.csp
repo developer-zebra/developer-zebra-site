@@ -1,0 +1,22 @@
+---
+csp: cellularmgr
+title: MNO MCC MNC List
+type: parm
+order: 48
+mx: "9.2"
+devicetype: A
+info: WWAN-enabled devices only
+parm:
+  presentif: MNO Lock Action is "Lock"
+  pivotal: No
+  name: MNOMccMncList
+  type: string
+---
+
+Used to specify at least one mobile country code (MCC) and mobile network code (MNC) for use by the device. This number includes the MCC first&ndash;which is always three numerical digits&ndash;followed by the MNC, which can be two or three digits. Therefore when combined, **each entry must be expressed as either a five- or six-digit number** (MCCMNC i.e. XXXYY or XXXYYY). Specify multiple entries in a comma-separated list. 
+
+**Parm value input rules**: 
+
+* String from 5&ndash;255 characters 
+* Separate multiple values using commas, such as "310410,31090,001001"
+

@@ -13,7 +13,7 @@ parm:
   type: integer
 ---
 
-Used to specify the PLMN LockSet, which consists of the mobile country code (MCC) and mobile network code (MNC) numbers for use on the device. Expressed as a single five- or six-digit number (MCCMNC i.e. XXXYYY or XXXYY). 
+Used to specify the PLMN LockSet for use on the device. This number includes the mobile country code (MCC) first, which is always three numerical digits, followed by the mobile network code (MNC), which can be two or three digits. Therefore when combined, **entry must be expressed as either a single five- or six-digit number** (MCCMNC i.e. XXXYY or XXXYYY). 
 
 **Parm value input rules**: 
 

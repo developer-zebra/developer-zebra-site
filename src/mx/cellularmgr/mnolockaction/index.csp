@@ -1,0 +1,26 @@
+---
+csp: cellularmgr
+title: MNO Lock Action 
+type: parm
+order: 47
+mx: "9.2"
+devicetype: A
+info: WWAN-enabled devices only
+parm:
+  pivotal: No
+  name: MNOLockAction
+  type: list
+  list:
+    - code: 1
+      devicetype: A
+      name: Lock
+      mx: "9.2"
+      description: Locks the MNO. 
+    - code: 2
+      devicetype: A
+      name: Unlock
+      mx: "9.2"
+      description: Unlocks the MNO. 
+---
+
+Used to Lock and Unlock the Mobile Network Operator (MNO) on the device using a key code provided by the MNO.

@@ -24,4 +24,4 @@ parm:
       description: Enables a data limit warning threshold (in MB) to be specified.
 ---
 
-Controls whether the device user or an app running on the device can specify a threshold for cellular data usage that triggers a warning. 
+Controls whether the device user or an app running on the device can enter a threshold for cellular data usage that triggers a warning. 

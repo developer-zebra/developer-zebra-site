@@ -33,4 +33,4 @@ parm:
       description: Sens a query to SIM4.
 ---
 
-Used to specify a SIM card to which to send the query specified in the SIM Socket Query parameter. 
+Used to enter a SIM card to which to send the query specified in the SIM Socket Query parameter. 

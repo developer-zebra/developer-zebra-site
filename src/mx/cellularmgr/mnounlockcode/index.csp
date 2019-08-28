@@ -15,7 +15,7 @@ parm:
 
 MNOUnlockCode
 
-Used to specify the Integrated Circuit Card Identifier (ICCID) number, which uniquely identifies a SIM card.  
+Used to enter the Integrated Circuit Card Identifier (ICCID) number, which uniquely identifies a SIM card.  
 
 **Parm value input rules**: 
 

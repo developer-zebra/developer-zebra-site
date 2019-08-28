@@ -13,7 +13,7 @@ parm:
   type: integer
 ---
 
-Used to specify the limit (in MB per month) of cellular data usage by the device. Once the limit is reached, the cellular data connection is terminated until a new month begins or the restriction is lifted.
+Used to enter the limit (in MB per month) of cellular data usage by the device. Once the limit is reached, the cellular data connection is terminated until a new month begins or the restriction is lifted.
 
 **Parm value input rules**: 
 

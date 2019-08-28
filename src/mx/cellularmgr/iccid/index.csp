@@ -1,6 +1,6 @@
 ---
 csp: cellularmgr
-title: Specify ICCID
+title: Enter ICCID
 type: parm
 order: 46
 mx: "9.2"
@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the Integrated Circuit Card Identifier (ICCID) number, which uniquely identifies a SIM card.  
+Used to enter the Integrated Circuit Card Identifier (ICCID) number, which uniquely identifies a SIM card.  
 
 **Parm value input rules**: 
 

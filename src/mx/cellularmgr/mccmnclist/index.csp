@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify at least one mobile country code (MCC) and mobile network code (MNC) for use by the device. This number includes the MCC first&ndash;which is always three numerical digits&ndash;followed by the MNC, which can be two or three digits. Therefore when combined, **each entry must be expressed as either a five- or six-digit number** (MCCMNC i.e. XXXYY or XXXYYY). Specify multiple entries in a comma-separated list. 
+Used to enter at least one mobile country code (MCC) and mobile network code (MNC) for use by the device. This number includes the MCC first&ndash;which is always three numerical digits&ndash;followed by the MNC, which can be two or three digits. Therefore when combined, **each entry must be expressed as either a five- or six-digit number** (MCCMNC i.e. XXXYY or XXXYYY).
 
 **Parm value input rules**: 
 

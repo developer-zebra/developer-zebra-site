@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the 16-digit code to be used to Lock the device.  
+Used to enter the 16-digit code to be used to Lock the device.  
  
 **Parm value input rules**: 
 

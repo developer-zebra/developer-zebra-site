@@ -13,7 +13,7 @@ parm:
   type: string
 ---
 
-Used to specify the license Activation ID to authorize use of MNO advanced features. 
+Used to enter the license Activation ID to authorize use of MNO advanced features. 
 
 **Parm value input rules**: 
 

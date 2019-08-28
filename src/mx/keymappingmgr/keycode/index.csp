@@ -63,11 +63,11 @@ parm:
       devicetype: A
       code: 70
       mx: "4.4"
-    - name: Left Bracket
+    - name: [ (Left Bracket)
       devicetype: A
       code: 71
       mx: "4.4"
-    - name: Right Bracket
+    - name: ] (Right Bracket)
       devicetype: A
       code: 72
       mx: "4.4"
@@ -355,11 +355,11 @@ parm:
       devicetype: A
       code: 161
       mx: "4.4"
-    - name: NUMPAD Left Parenthesis
+    - name: ( (NUMPAD Left Parenthesis)
       devicetype: A
       code: 162
       mx: "4.4"
-    - name: NUMPAD Right Parenthesis
+    - name: ) (NUMPAD Right Parenthesis)
       devicetype: A
       code: 163
       mx: "4.4"
@@ -606,6 +606,10 @@ parm:
     - name: Calendar
       devicetype: A
       code: 208
+      mx: "4.4"
+    - name: Photos
+      devicetype: A
+      code: 10042
       mx: "4.4"
     - name: Volume Up
       devicetype: A

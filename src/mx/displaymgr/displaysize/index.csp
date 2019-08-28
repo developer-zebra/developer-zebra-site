@@ -1,0 +1,53 @@
+---
+csp: displaymgr
+title: Display Size
+type: parm
+order: 40
+mx: "9.2"
+apilevel: "27"
+devicetype: A
+parm:
+  pivotal: No
+  name: DisplaySize
+  type: list
+  list:
+    - code: 0
+      mx: "9.2"
+      apilevel: "27"
+      devicetype: A
+      name: Do Nothing
+      description: This value (or the absence of this parm from the XML) causes no change to the current behavior; any previously selected setting is retained.
+    - code: SMALL
+      devicetype: A
+      name: Small
+      mx: "9.2"
+      apilevel: "27"
+      description: Sets the size of UI elements at one step smaller than Android default size.
+    - code: DEFAULT
+      devicetype: A
+      name: Default
+      mx: "9.2"
+      apilevel: "27"
+      description: Sets the Android default size for UI elements.
+    - code: LARGE
+      devicetype: A
+      name: Large
+      mx: "9.2"
+      apilevel: "27"
+      description: Sets the size of UI elements at one step larger than Android default size.
+    - code: LARGER
+      devicetype: A
+      name: Larger
+      mx: "9.2"
+      apilevel: "27"
+      description: Sets the size of UI elements at two steps larger than Android default size. 
+    - code: LARGEST
+      devicetype: A
+      name: Largest
+      mx: "9.2"
+      apilevel: "27"
+      description: Sets the size of UI elements at three steps larger than Android default size.
+---
+
+Used to select the size of UI elements displayed on the device. 
+

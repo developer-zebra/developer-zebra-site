@@ -59,6 +59,12 @@ parm:
       mx: "4.3"
       apilevel: "1"
       description: Causes the display screen to timeout after 30 minutes of device-user inaction.
+    - code: 65535
+      devicetype: A,B
+      name: Never
+      mx: "9.2"
+      apilevel: "1"
+      description: Keeps the display screen on at all times despite any period of device-user inaction.
 ---
 
 Used to set the length of time the device waits during periods of inactivity (without screen touches or key presses) before turning off the screen to conserve power. Ideally, this interval should represent a balance between battery preservation and user convenience.

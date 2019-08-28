@@ -1,0 +1,42 @@
+---
+csp: displaymgr
+title: Font Size
+type: parm
+order: 35
+mx: "9.2"
+apilevel: "17"
+devicetype: A
+parm:
+  pivotal: No
+  name: FontSize
+  type: list
+  list:
+    - code: 0
+      mx: "9.2"
+      devicetype: A
+      name: Do Nothing
+      description: This value (or the absence of this parm from the XML) causes no change to the current behavior; any previously selected setting is retained.
+    - code: 0.85
+      devicetype: A
+      name: Small
+      mx: "9.2"
+      description: Sets the font to one size smaller than the Android default size.
+    - code: 1.0
+      devicetype: A
+      name: Default
+      mx: "9.2"
+      description: Sets the font to the Android default size. 
+    - code: 1.15
+      devicetype: A
+      name: Large
+      mx: "9.2"
+      description: Sets the font to one size larger than the Android default size.
+    - code: 1.3
+      devicetype: A
+      name: Largest
+      mx: "9.2"
+      description: Sets the font to two sizes larger than the Android default size.
+---
+
+
+Controls the size of alpha-numeric characters for all UI elements displayed on the device screen. 

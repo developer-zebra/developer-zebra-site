@@ -7,7 +7,6 @@ apilevel: "1"
 order: 11
 devicetype: A,B
 parm:
-  presentif: The Action is NOT "Broadcast"
   pivotal: No
   name: Type
   type: string
@@ -18,3 +17,7 @@ Used to specify the Package Name of the application to which the Intent will be 
 **Parm value input rules**: 
 
 * String from 1 - 255 characters containing the Package Name of the target app
+
+<!-- 8/28/19- removed from DSD
+  presentif: The Action is NOT "Broadcast"
+-->

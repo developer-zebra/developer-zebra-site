@@ -7,7 +7,6 @@ mx: "4.1"
 apilevel: "1"
 devicetype: A,B
 parm:
-  presentif: The Action is NOT "Broadcast"
   pivotal: No
   name: Type
   type: string
@@ -18,3 +17,7 @@ Used to specify a Class Name, within the application identified by the specified
 **Parm value input rules**: 
 
 * String from 1 - 255 characters containing the Class Name of the target app 
+
+<!-- 8/28/19- removed from DSD
+  presentif: The Action is NOT "Broadcast"
+-->

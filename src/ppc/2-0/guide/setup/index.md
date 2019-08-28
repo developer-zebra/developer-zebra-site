@@ -9,7 +9,7 @@ productversion: '2.0'
 As part of Zebra DNA Visibility Console (ZDVC) starting with PowerPrecision Console (PPC) v2.0, PPC runs on a supported Windows-based server. PPC client runs on supported [Zebra devices](../about#devicerequirements). This section provides system requirements and instructions for install and setup for the solution.
 
 Solution components:
-* **ZDVC server** - PPC monitors battery health, state of charge, battery status, and other information from deployed devices. 
+* **ZDVC server** - consists of a suite of solutions including [Device Tracker](/devicetracker/latest/guide/about) and PPC. PPC monitors battery health, state of charge, battery status, and other information from deployed devices. 
 * **Web portal** - centralized dashboard for monitoring device presence, device tracking, battery status, and trigger actions based on battery depletion.
 * **PPC client** - reports battery and device information to server
 
@@ -48,49 +48,10 @@ This section provides the server and device requirements. PPC supports a maximum
 
 5. Internet Access Required: Internet access is needed to download npm package dependencies.
 
-6. Hardware Requirements: 
-
-  **For PPC 2.0 or higher (includes Device Tracker):**
-   * Minimum CPU cores: 16  
-   * Minimum memory (RAM): 64 GB  
-   * Minimum available hard drive space: 500 GB 
-
-  **For PPC 1.0:**
-   * Minimum CPU cores: 8  
-   * Minimum memory (RAM): 4 GB  
-   * Minimum available hard drive space: 300 GB 
-
-  Recommended hardware requirements based on number of devices and batteries for PPC 1.0:
-   <table class="facelift" align="center" style="width:70%" border="1" padding="5px">
-   <tr bgcolor="#dce8ef">
-      <th>Number of Devices</th>
-      <th>Number of Batteries</th>
-      <th style="text-align:center">RAM</th>
-      <th style="text-align:center">CPU Cores</th>
-      <th style="text-align:center">Hard Drive Space</th>
-    </tr>
-    <tr>
-      <td>Up to 1,000 devices</td>
-      <td style="text-align:center">Up to 2,000 batteries</td>
-      <td style="text-align:center">4 GB</td>
-      <td style="text-align:center">8 cores</td>
-      <td style="text-align:center">300 GB</td>
-    </tr>
-    <tr>
-      <td>1,000 to 5,000 devices</td>
-      <td style="text-align:center">2,000 to 10,000 batteries</td>
-      <td style="text-align:center">8 GB</td>
-      <td style="text-align:center">8 cores</td>
-      <td style="text-align:center">600 GB</td>
-    </tr>
-    <tr>
-      <td>Up to 10,000 devices</td>
-      <td style="text-align:center">Up to 20,000 batteries</td>
-      <td style="text-align:center">16 GB</td>
-      <td style="text-align:center">16 cores</td>
-      <td style="text-align:center">750 GB</td>
-    </tr>
-   </table>
+6. Hardware Requirements:
+   * Minimum CPU cores: 16
+     * Minimum memory (RAM): 64 GB
+         * Minimum available hard drive space: 500 GB
 
 ###Device Requirements
 See [Device Requirements](../about/#devicerequirements).
@@ -296,15 +257,13 @@ This allows PPC to run each time the server restarts regardless of the user logg
 Install PPC client on the supported Zebra devices to register the device, upload device battery data and display end-of-life (EOL) battery alerts. The device must be connected to the same network as the server. The server address needs to be configured on the PPC client to communicate with the PPC Server. PPC client install and setup can be accomplished either manually or remotely with Zebra [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management).
 
 ###Installation
-Client installation can be performed manually or remotely with Zebra [StageNow](/stagenow/latest/about) or an EMM.
-
 Steps for manual client installation:
 1. Download PPC Client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
 2. Install PowerPrecisionConsole.apk. 
-   * For Android Marshmallow and Nougat devices, install the .APK located in folder PPCClient\Client\M_N.
-   * For Android Oreo devices, install the .APK located in folder PPCClient\Client\O.
+   * For Android Marshmallow and Nougat devices, install the .APK located in folder `PPCClient\Client\M_N`.
+   * For Android Oreo devices, install the .APK located in folder `PPCClient\Client\O`.
 3. When prompted, enable the “Apps that can draw over other apps” overlay permission. 
-4. For remote configuration using StageNow or an EMM (using XML or Managed Config), install PPCClientMgr.apk located in PPCClient\PluginCSP
+4. For remote configuration using StageNow or an EMM (using XML or Managed Config), install PPCClientMgr.apk located in `PPCClient\PluginCSP`.
 
 ###Configuration
 After client installation, configure the server address, port, server auth username (if applicable) and server auth password either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
@@ -322,14 +281,13 @@ Where "hostname.company.com:8080" is replaced with the appropriate hostname, dom
  B. Tap **Server Auth UserName**. Enter in the user name specified during server installation. <br>
  C. Tap **Server Auth Password**. Enter in the password specified during server installation. <br><br>
 **For PPC v1.0:** <br>
- A. Tap **Server URL**. Enter in the server URL, for example: `name.company.com:8080/zdvc/ppc`
+ A. Tap **Server URL**. Enter in the server URL, for example: `hostname.company.com:8080/zdvc/ppc`
 <br>
  Where "hostname.company.com:8080" is replaced with the appropriate domain name and port number. _The URL must **not** contain "https://"._ <br><br>
 5. Tap **OK** to save the changes and return to the main screen.
 PPC Client registers with the server and uploads battery data.
 
 ####Remote Configuration Deployment
-
 After PPC client and PPCClientMgr app installation, follow these steps to create StageNow profiles to remotely configure the client:
 1. Start PPC client 
 2. Configure PPC settings with CSP

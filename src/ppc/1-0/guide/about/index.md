@@ -7,7 +7,7 @@ productversion: '1.0'
 
 ## Overview
 
-PowerPrecision Console (PPC) is a battery management solution that gives organizations using Zebra mobile computing devices a centralized view of the health, state of charge and performance statistics of device batteries in their organization. Starting with PPC v2.0, it is part of Zebra DNA Visibility Console (ZDVC), which consists of a suite of solutions including [Device Tracker](/devicetracker/latest/about). Using data gathered and stored in Zebra's [PowerPrecision](https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/accessories/Mobile%20Computer%20Accessories/Batteries/Power%20Precision%20Battery%20Solutions/white-paper/power-precision-batteries-white-paper-en-us.pdf) batteries, PPC provides administrators with insight that can help them determine when battery health could affect productivity and when a device battery should be removed from service. The PPC centralized management system continuously monitors battery health data analyzed in real time, and can trigger customized notifications to alert device users of actions needed for battery swapping or decommissioning, helping to ensure optimized deployment of healthy batteries at all times.
+PowerPrecision Console (PPC) is a battery management solution that gives organizations using Zebra mobile computing devices a centralized view of the health, state of charge and performance statistics of device batteries in their organization. Starting with PPC v2.0, it is part of Zebra DNA Visibility Console (ZDVC), which consists of a suite of solutions including [Device Tracker](/devicetracker/latest/guide/about). Using data gathered and stored in Zebra's [PowerPrecision](https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/accessories/Mobile%20Computer%20Accessories/Batteries/Power%20Precision%20Battery%20Solutions/white-paper/power-precision-batteries-white-paper-en-us.pdf) batteries, PPC provides administrators with insight that can help them determine when battery health could affect productivity and when a device battery should be removed from service. The PPC centralized management system continuously monitors battery health data analyzed in real time, and can trigger customized notifications to alert device users of actions needed for battery swapping or decommissioning, helping to ensure optimized deployment of healthy batteries at all times.
 
 ##Main Features
 PowerPrecision Console main features:
@@ -30,12 +30,6 @@ PowerPrecision Console consists of the following components:
 * Web portal - Part of Zebra DNA Visibility Console, which provides a centralized dashboard for monitoring battery status information, sends notifications and generates reports.
 
 The PPC client software registers the device with the on-premise PPC server and reports battery information based on preset configurations such as frequency of reporting and event triggers including new battery inserted, battery low and device power-off. The state of battery health is monitored continuously, with multiple electrical and historical characteristics used to determine each battery’s health relative to a new battery. As battery life diminishes over time, custom messages can be triggered based on pre-determined thresholds to notify users of required actions. 
-
-## New in PPC 2.0
-* New Zebra DNA Visibility Console (ZDVC) server 2.0 support with updated server URL root path.
-* Support added for Server Auth Name and Password in:
-  * PPC Client
-  * PPC Plug-in
 
 ##Device Requirements
 This section provides the device requirements.

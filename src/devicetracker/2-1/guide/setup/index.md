@@ -25,8 +25,8 @@ This section provides the server and device requirements. Device Tracker support
 
 ###Server Requirements
 1. Windows Operating System supported:
-   * Windows® Server 2012, 64-bit processor
-   * Windows® Server 2016, 64-bit processor
+   * Windows Server 2012, 64-bit processor
+   * Windows Server 2016, 64-bit processor
 
 2. Browsers supported (connect over https):  
    * Google Chrome Browser version 66 and higher

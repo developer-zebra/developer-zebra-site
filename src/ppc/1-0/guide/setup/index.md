@@ -9,7 +9,7 @@ productversion: '1.0'
 As part of Zebra DNA Visibility Console (ZDVC) starting with PowerPrecision Console (PPC) v2.0, PPC runs on a supported Windows-based server. PPC client runs on supported [Zebra devices](../about#devicerequirements). This section provides system requirements and instructions for install and setup for the solution.
 
 Solution components:
-* **ZDVC server** - PPC monitors battery health, state of charge, battery status, and other information from deployed devices. 
+* **ZDVC server** - consists of a suite of solutions including [Device Tracker](/devicetracker/latest/about) and PPC. PPC monitors battery health, state of charge, battery status, and other information from deployed devices. 
 * **Web portal** - centralized dashboard for monitoring device presence, device tracking, battery status, and trigger actions based on battery depletion.
 * **PPC client** - reports battery and device information to server
 
@@ -18,15 +18,15 @@ Before installing, ensure to prepare additional steps for system setup - consult
  * **Open specific incoming and outgoing ports** - for server communication through the firewall, based on ports specified during server installation
  * **Add DNS (Domain Name Server) Entry** - an entry is added to the DNS to map the server IP address to the domain 
 
-> Important: An SSL Certificate is required from a third party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non-third party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.
+<font color="red"><b>Important:</b> An SSL Certificate is required from a third-party certificate authority (CA), such as Verisign or Thawte. Any self-signed certificate or one issued by a non third-party CA will not work. The .pfx certificate must contain the complete certificate chain, including intermediate certificates.</font>
 
 ##System Requirements
 This section provides the server and device requirements. PPC supports a maximum of 10,000 devices and 20,000 batteries per installation based on the hardware requirements.
 
 ###Server Requirements
 1. Windows Operating Systems supported:
-   * Windows® Server 2012, 64-bit processor
-   * Windows® Server 2016, 64-bit processor
+   * Windows Server 2012, 64-bit processor
+   * Windows Server 2016, 64-bit processor
 
 2. Browsers supported (connect over https):  
    * Chrome Browser version 63 or higher
@@ -46,7 +46,9 @@ This section provides the server and device requirements. PPC supports a maximum
         * Web Portal Port 8443 for accessing PPC web portal  
    * If required, perform DNS setup to add server IP address to the DNS server. 
 
-5. Hardware Requirements: 
+5. Internet Access Required: Internet access is needed to download npm package dependencies.
+
+6. Hardware Requirements: 
    * Minimum CPU cores: 8  
    * Minimum memory (RAM): 4 GB  
    * Minimum available hard drive space: 300 GB 
@@ -93,34 +95,54 @@ For new installations, download ZDVC Server from [Zebra Support and Downloads](h
 
 ###Server Prerequisites
 The following are the prerequisites required for the server: <br>
-1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _name.company.com_. An entry with the hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
+1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _company.com_. An entry with the hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
 
-2. **SSL Certificate.** ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate Procurement](./#servercertificateprocurement) for details.
+2. **SSL Certificate.** ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) for details.
 
 3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator. 
 
-	* UI Port: inbound and outbound (e.g. port 8080)  
-	* Backend Server Port: inbound (e.g. port 8443)
+	* Backend Server (data) Port: inbound (e.g. port 8080)  
+	* Web Portal (UI) Port: inbound and outbound (e.g. port 8443)
 <br>
 
-###Server Installation
-Double-click on the ZDVC installer and follow the steps to proceed with installation until the server has been successfully installed.
+###Server Certificate
+An SSL certificate is needed for secure connections. Generate the CSR (Certificate Signing Request) with private key and submit it to the trusted CA. The CA issues the SSL Certificate signed with the public key (in .p7b format). Use this issued certificate to generate the SSL certificate with the private key. The final, complete SSL certificate contains the server certificate, any intermediate certificates, the public key and private key. The procedure to accomplish this is separated into two sections below:
+* **Procure server certificate** (.p7b format) with public key 
+* **Generate complete SSL certificate** (.pfx format) with both public and private keys 
 
-###Server Setup
-Steps for ZDVC server setup after installation: <br>
-1. **Run ZDVC Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". 
-2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://name.company.com:8443/zdvc`, where "name.company.com:8443" is replaced with the appropriate domain and port number.
-3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "PowerPrecision Console" then enter the login credentials to login.
-4. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
-A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
-B. Enter the Web UI URL, for example `https://name.company.com:8443/zdvc`<br>
-C. Click the Scan button. A successful result returns green checks for each step. _See Figure 1 below._ <br>
-D. Enter the backend URL for your server, for example `https://name.company.com:8080/zdvc` <br>
-E. Click the Scan button. A successful result returns green checks for each step:
-![img](SSLTools.JPG)
-_Figure 1. SSLTools.com results_
+If the server certificate with public key already exists, skip to the second section _Generate complete SSL Certificate_. If the complete SSL certificate already exists, skip to section _Server Installation_. <br><br>
+**Procure server certificate:** Create a private key and generate the CSR. Submit the CSR to the CA for signing. The server certificate issued should be in .p7b format.
+1. Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source/) for Windows. Follow the instructions stated to download the file based on your Windows configuration.<br>
+2. Add a new "openSSL" environment variable to the Windows system and set the value to the location where openSSL is installed (e.g. "C:\Program Files\OpenSSL-Win64\bin\").<br>
+3. Create a folder named "ServerCert".  Open the command prompt to this folder path.<br>
+4. Create a private key. It prompts to enter the passphrase - _make note of this passphrase_, which is used in PPC. Run the command:  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL genrsa -des3 -out ppcdemo.key 2048`<br>
+where "ppcdemo.key" can be replaced with a custom file name.
+5. Create a CSR based on the new private key. Run the command:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openSSL req key ppcdemo.key -new -out ppcdemo.csr`<br>
+where "ppcdemo.key" (same file name as in step 4) and "ppcdemo.csr" (new file created) can be replaced with custom file names. 
+It prompts to enter the private key password (created in step 5). Enter in the required fields when prompted (the information entered must match that registered with the CA):
+   * **Country Name** - Enter the two-letter code without punctuation for country, for example: US or CA.
+   * **State or Province** - Enter the full state or province name without abbreviation, for example: California.
+   * **Locality or City** - Enter the city or town name without abbreviation, for example: Berkeley or Saint Louis.
+   * **Organization Name** - Enter the company. If the company or department contains a special character such as "&" or "@", the symbol must be spelled out or omitted in order to enroll successfully. 
+   * **Organizational Unit Name** - Enter the name of the department or organization unit making the request. This is optional, to skip, press Enter on the keyboard.
+   * **Common Name** - Enter the fully qualified host name, for example: "hostname.company.com". _This is the same name to be used in the Server Installation in step 5 for the Domain name._
+   * **Email Address** - Enter the contact email address.<br>
+When prompted for the challenge password, it is not required - _do not supply one_. 
+6. Submit the CSR created to the CA. They will supply a certificate in .p7b format, e.g. ssl_certificate.p7b.
 
-###Server Certificate Procurement
+**Generate complete SSL Certificate:** Zebra requires the certificate be procured in .p7b format and combined with the private key (.key file) to generate the SSL certificate in .pfx file format. If the certificate is in a different format, use an SSL certificate converter tool to convert to the proper format.  <br>
+1. Create an ssl_certificate.cer file with the command:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs7 -print_certs -in ssl_certificate.p7b -out ssl_certificate.cer`<br>
+where "ssl_certificate.p7b" is the certificate issued by the CA.
+2. Create SSL certificate "ssl_certificate.pfx" with command (using the private key password created from step 4 in the previous section): <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs12 -export -in ssl_certificate.cer -inkey ppcdemo.key -out ssl_certificate.pfx`<br>
+where "ppcdemo.key" is the private key generated from step 4 in the previous section and "ssl_certificate.cer" is the file generated from the previous step 1.
+3. Import the SSL certificate on the server. Double-click the certificate on the local computer and follow the Certificate Import wizard.
+4. Use SSL certificate "ssl_certificate.pfx" and the private key password for PPC server installation and setup in the sections that follow.
+
+<!--
 Procedure to procure the server certificate, if needed:
 1. **Intermediate Root Certificate Generation and CSR (Certificate Signing Request) Signing from CA.** Procedure to generate a CSR to send to a CA for signing, configuring a custom intermediate root certificate for SSL: <br>
 A. Download [OpenSSL](https://www.openssl.org/source/) for Windows. Follow the instructions stated to download the file based on your Windows configuration.<br>
@@ -155,117 +177,50 @@ D. At the command prompt, execute the following command:<br>
 	Where "-certfile IntermediateCA.cer" is optional.
 <br>
 E. When prompted, enter the certificate password to export "ssl_certificate.pfx". This is the challenge password specified in step 2.G. above.<br>
-F. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to a designated folder.
+F. Copy the SSL certificate "ssl_certificate.pfx" with domain name “hostname.company.com” to a designated folder.
 <br>
+-->
 
-<!--
+###Server Installation
+Double-click on the ZDVC installer and follow the steps to proceed with installation until the server has been successfully installed.
 
-3. **Server SSL Certificate.** An SSL certificate is required for secured connections. 
-Steps to generate the certificate:<br>
-A. Zebra recommends the certificate to be procured in .p7b format and the certificate private key to be a .key file. If the certificates are in different format, use a SSL certificate converter tool to convert to the proper format.<br>
-B. Download [OpenSSL](https://www.openssl.org/source/) tool and install on the server.<br>
-C. Create an empty directory named "generated_certs" to contain the .pfx certificate.<br>
-D. Copy the following certificate files to "generated_certs" folder: primary certificate (e.g. "ssl_certificate.p7b"), private key (e.g. "ppc_private_key.key"), and intermediate CA certificate (e.g. "IntermediateCA.cer").  _The intermediate CA certificate is optional - use if required in the certificate chain._  <br>
-E. Open a command prompt. Execute the following command to generate "ssl_certificate.cer":<br>
- 		`openssl pkcs7 -print_certs -in ssl_certificate.p7b -out ssl_certificate.cer`
-<br>
-F. At the command prompt, execute the following command:<br>
-		`openssl pkcs12 -export -in ssl_certificate.cer -inkey ppc_private_key.key -out ssl_certificate.pfx -certfile IntermediateCA.cer`
-	<br>
-	Where "-certfile IntermediateCA.cer" is optional.
-<br>
-G. When prompted, enter the certificate password to export "ssl_certificate.pfx".<br>
-H. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.company.com” to the following folders:
-   * Zebra Technologies\PowerPrecision Console\Server\PowerPrecision Console Server
-   * Zebra Technologies\PowerPrecision Console\Server\WebUI
-<br>
-
-4. **Server Setup.** From default folder “\Power Precision Console\Release\Server\WebUI”, open the .env file.  Set the following variables: 
-
-		SERVER=”https://name.company.com:8080/ppcdata" 
-		PORT=”8080”
-		SSL_CERT = <ssl_certificate.pfx>
-		SSL_CERT_PASSWORD = <*****>
-		PORT_HTPS=<port_number> 
-
-	Replace all values in the angled brackets <> to the appropriate value or string and remove the brackets. 
-
-	For SERVER, replace “name.company.com” and the port number 8080 with the appropriate server name and port number (if changed). <br>
-	For PORT, change this to the appropriate desired value if necessary. This value must match the "server.port" value specified in "application.properties" file, discussed in the next step.<br>
-	For SSL_CERT, replace the string with the name of the SSL certificate.<br>
-	For SSL_CERT_PASSWORD, replace the string with the SSL certificate password.<br>
-	For PORT_HTTPS, this is optional and required only if port 8443 is not used by default for HTTPS. Specify the alternative port used for HTTPS.
-
-	In default folder “\Power Precision Console\Server\PowerPrecisionConsoleServer\config”, open “application.properties.”  Set the following properties:  
-
-		server.dns=<name.company.com> 
-		server.idDesc=<store location> 
-		server.port=<8080> 
-
-		# SSL certificates 
-		server.ssl.key-store:<ssl_certificate.pfx>  
-		server.ssl.key-store-password:<password>
-
-		# export data
-		data.export.Path=<C:\\ppcData\\>
-
-	Replace all values in the angled brackets <> to the appropriate value or string and remove the brackets. 
-	
-	The "export data" section specifies the file path for data to be exported from an automatic data backup or [manual report export](../mgmt). Only the hard drive letter is configurable, ie. D:\\ppcData\\, and write permissions are required for the specified hard drive. A monthly data backup is automatically generated on a daily basis starting one month after install. Historical data is accumulated for the month and exported in .CSV format.
-
-	In the "SSL certificates" section, if a hashtag exists in the password line, it must be removed to uncomment out the password line. Enter in the appropriate SSL password following the colon.
-
-	Note: If port 8080 is not available on the server, any other available port can be used in replacement. Some network policies might block incoming and outgoing ports - it is required to open the configured ports in the network firewall as described in the next section “Open inbound/outbound ports on the firewall” 
-
-5. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices, specified in the .env file. The method to open the ports depends on the firewall software used by the network administrator. By default the ports are:   
-
-	* Inbound ports: TCP ports 8080 and 8443
-	* Outbound port: TCP port 8080
-<br>
-6. **Run the PPC Server Software.** Start the server services by launching the desktop shortcut icon "START_PPC_SERVICE". Open the supported browser. Enter the default server URL: **https://name.company.com:8443/ppcui**
-
-	Where "name.company.com" is replaced with the appropriate information.
-
-	Default login credentials (case-sensitive) for _super admin_ user are: 
-
-	* User: SAdmin 
-	* Password: admin 
-
-   Zebra recommends to change the password immediately for the _super admin_ user to avoid unauthorized access. Tap on "SAdmin" user at the top right of the Admin View and select "Change password".
-7. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
+###Server Setup
+Steps for ZDVC server setup after installation: <br>
+1. **Run ZDVC Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". 
+2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate domain and port number.
+3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "PowerPrecision Console" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.
+4. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
 A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
-B. Enter the Web UI URL, for example `https://name.company.com:8443/ppcui`<br>
+B. Enter the Web UI URL, for example `https://hostname.company.com:8443/zdvc`<br>
 C. Click the Scan button. A successful result returns green checks for each step. _See Figure 1 below._ <br>
-D. Enter the backend URL for your server, for example `https://name.company.com:8080/ppcdata` <br>
+D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
 E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
 _Figure 1. SSLTools.com results_
-
--->
 
 ##Client Install & Setup
 Install PPC client on the supported Zebra devices to register the device, upload device battery data and display end-of-life (EOL) battery alerts. The device must be connected to the same network as the server. The server address needs to be configured on the PPC client to communicate with the PPC Server. PPC client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management).
 
 ###Installation
-Steps for client installation:
+Steps for manual client installation:
 1. Download PPC Client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
 2. Install PowerPrecisionConsole.apk. 
-   * For Android Marshmallow and Nougat devices, install the .APK located in folder PPCClient\Client\M_N.
-   * For Android Oreo devices, install the .APK located in folder PPCClient\Client\O.
+   * For Android Marshmallow and Nougat devices, install the .APK located in folder `PPCClient\Client\M_N`.
+   * For Android Oreo devices, install the .APK located in folder `PPCClient\Client\O`.
 3. When prompted, enable the “Apps that can draw over other apps” overlay permission. 
-4. For remote configuration using StageNow or an EMM (using XML or Managed Config), install PPCClientMgr.apk located in PPCClient\PluginCSP
+4. For remote configuration using StageNow or an EMM (using XML or Managed Config), install PPCClientMgr.apk located in `PPCClient\PluginCSP`.
 
 ###Configuration
-Configure the server address and port either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
+After client installation, configure the server address and port either manually or remotely. For information on using CSP for remote configuration deployment, refer to [MX documentation](/mx/overview).
 
 ####Manual Configuration
 Steps for manual configuration:
 1. Open PowerPrecision Console Client.
 2. If prompted, enable the “Apps that can draw over other apps” overlay permission. 
 3. Tap the hamburger menu at the top right, then tap Settings. 
-4. Tap Server URL. Enter in the server URL, for example: **name.company.com:8080/zdvc/ppc** 
+4. Tap Server URL. Enter in the server URL, for example: **hostname.company.com:8080/zdvc/ppc** 
 <br>
-Where "name.company.com:8080" is replaced with the appropriate domain name and port number. <br>
+Where "hostname.company.com:8080" is replaced with the appropriate domain name and port number. <br>
 **Note: The URL must _not_ contain "https://".**
 5. Tap OK to save the changes and return to the main screen.
 PPC Client registers with the server and uploads battery data.
@@ -278,7 +233,7 @@ Steps for remote configuration with StageNow and CSP Plug-in, with the option of
 	* com.zebra.ppcclientmgr.dsd 
 	* PPCClientMgr.apk (PPC Client CSP Manager Plug-in)
 
-3. Open StageNow. 
+3. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC. 
 4. Import the CSP Plugin Library. <br>
 A. In the StageNow home screen, click “CSP Library” from the left menu. <br>
 B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file.<br> 
@@ -313,6 +268,13 @@ J. Click Test. A window opens with the generated StageNow barcode in .pdf format
 7. For EMM Staging, continue to section "Steps for EMM Staging" below.
 8. Open the StageNow client on the device.
 9. Scan the barcode with the StageNow client to configure the PPC Client. <br>
+
+When using StageNow or any EMM system for remote configuration, use of the following special characters is not supported (for example, when setting the password): <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt; (less than) <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &gt; (greater than) <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#38; (ampersand) <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#39; (single quote) <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#34; (double quote) <br>
 
 For more information refer to [StageNow download](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) and [StageNow documentation](http://techdocs.zebra.com/stagenow). 
 <br>

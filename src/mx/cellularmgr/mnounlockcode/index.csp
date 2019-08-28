@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: MNO Unlock Code
 type: parm
-order: 50
+order: 66
 mx: "9.2"
 devicetype: A
 info: WWAN-enabled devices only.

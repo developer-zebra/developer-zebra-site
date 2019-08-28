@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Import MNO Lock Info (checkbox) 
 type: parm
-order: 55
+order: 82
 mx: "9.2"
 devicetype: A
 info: Supported only on WWAN-enabled devices.

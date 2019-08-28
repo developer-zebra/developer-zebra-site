@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Device Admin Network Lock 
 type: parm
-order: 47
+order: 76
 mx: "9.2"
 devicetype: A
 info: WWAN-enabled devices only.

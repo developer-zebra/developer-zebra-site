@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: DA Advanced Features (checkbox) 
 type: parm
-order: 47
+order: 58
 mx: "9.2"
 devicetype: A
 info: WWAN-enabled devices only.

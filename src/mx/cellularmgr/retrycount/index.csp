@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Retry Count
 type: parm
-order: 46
+order: 52
 mx: "9.2"
 devicetype: A
 info: WWAN-enabled devices only.

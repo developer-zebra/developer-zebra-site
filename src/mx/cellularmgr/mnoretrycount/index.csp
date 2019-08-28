@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: MNO Retry Count
 type: parm
-order: 49
+order: 64
 mx: "9.2"
 devicetype: A
 info: WWAN-enabled devices only.

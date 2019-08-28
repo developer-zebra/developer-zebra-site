@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Service Tech Activation ID
 type: parm
-order: 52
+order: 80
 mx: "9.2"
 devicetype: A
 info: WWAN-enabled devices only.

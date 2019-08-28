@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: MNO Lock Action 
 type: parm
-order: 47
+order: 60
 mx: "9.2"
 devicetype: A
 info: WWAN-enabled devices only.

@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Service Tech Features (checkbox) 
 type: parm
-order: 55
+order: 78
 mx: "9.2"
 devicetype: A
 info: Supported only on WWAN-enabled devices.

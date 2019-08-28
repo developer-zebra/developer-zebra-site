@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Enter ICCID
 type: parm
-order: 46
+order: 54
 mx: "9.2"
 devicetype: A
 info: WWAN-enabled devices only.

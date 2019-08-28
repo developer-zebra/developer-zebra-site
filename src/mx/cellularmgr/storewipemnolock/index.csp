@@ -1,8 +1,8 @@
 ---
 csp: cellularmgr
-title: PLMN Lock UI Show/Hide 
+title: Lock Codes Store/Erase 
 type: parm
-order: 47
+order: 72
 mx: "9.2"
 devicetype: A,B
 info: WWAN-enabled devices only.

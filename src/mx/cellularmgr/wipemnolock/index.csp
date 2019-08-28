@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: Erase MNO Lock Info (checkbox) 
 type: parm
-order: 55
+order: 86
 mx: "9.2"
 devicetype: A
 info: Supported only on WWAN-enabled devices.

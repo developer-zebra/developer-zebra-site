@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: DA Lock Type 
 type: parm
-order: 47
+order: 74
 mx: "9.2"
 devicetype: A,B
 info: WWAN-enabled devices only.

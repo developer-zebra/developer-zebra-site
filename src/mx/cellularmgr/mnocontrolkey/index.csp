@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: MNO Control Key
 type: parm
-order: 51
+order: 68
 mx: "9.2"
 devicetype: A
 info: WWAN-enabled devices only.

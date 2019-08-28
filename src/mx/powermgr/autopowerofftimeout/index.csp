@@ -13,7 +13,7 @@ parm:
 
 ---
 
-Used to specify the time (in minutes) before the device will shut down after vehicle-mounted computer and similarly equipped Zebra devices ignition is turned off. Default value is 30 minutes. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**. 
+Used to enter the time (in minutes) before the device will shut down after vehicle-mounted computer and similarly equipped Zebra devices ignition is turned off. Default value is 30 minutes. **This feature applies only to the VC80x vehicle-mounted computer and similarly equipped Zebra devices**. 
 
 **Parm value input rules**: 
 

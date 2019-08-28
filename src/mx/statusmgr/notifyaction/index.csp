@@ -22,4 +22,4 @@ parm:
       description: Performs a notification action.
 ---
 
-Used to specify the nofitication action to take for status requests.
+Used to select the notification action to take for status requests.

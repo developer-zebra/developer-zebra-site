@@ -38,5 +38,4 @@ parm:
       description: Sets the font to two sizes larger than the Android default size.
 ---
 
-
-Controls the size of alpha-numeric characters for all UI elements displayed on the device screen. 
+used to select the size of alpha-numeric characters for all UI elements displayed on the device screen. 

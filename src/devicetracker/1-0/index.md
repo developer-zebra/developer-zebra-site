@@ -15,6 +15,8 @@ menu:
       url: /devicetracker/1-0/guide/mgmt
     - title: Configuration
       url: /devicetracker/1-0/guide/config
+    - title: Troubleshooting & FAQ
+      url: /devicetracker/1-0/guide/troubleshooting
     - icon: fa fa-search
       url: /devicetracker/1-0/search
 product: Device Tracker

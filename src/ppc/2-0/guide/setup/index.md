@@ -192,7 +192,7 @@ _Figure 7. Installation - complete_
 ###Server Setup
 Steps for ZDVC server setup after installation: <br>
 1. **Run ZDVC Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". 
-2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate domain and port number.
+2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.
 3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "PowerPrecision Console" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.
 4. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
 A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
@@ -283,7 +283,7 @@ Where "hostname.company.com:8080" is replaced with the appropriate hostname, dom
 **For PPC v1.0:** <br>
  A. Tap **Server URL**. Enter in the server URL, for example: `hostname.company.com:8080/zdvc/ppc`
 <br>
- Where "hostname.company.com:8080" is replaced with the appropriate domain name and port number. _The URL must **not** contain "https://"._ <br><br>
+ Where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. _The URL must **not** contain "https://"._ <br><br>
 5. Tap **OK** to save the changes and return to the main screen.
 PPC Client registers with the server and uploads battery data.
 

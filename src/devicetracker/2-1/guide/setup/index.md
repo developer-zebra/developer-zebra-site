@@ -9,7 +9,7 @@ productversion: '2.1'
 As part of Zebra DNA Visibility Console (ZDVC) server, Device Tracker runs on a supported Windows-based server. Device Tracker client runs on supported [Zebra devices](../about/#supporteddevices). This section provides system requirements and instructions for install and setup for the solution.
 
 Solution components:
-* **ZDVC server** - ZDVC server includes Device Tracker and PowerPrecision Console. Device Tracker collects and processes device data for tracking misplaced devices.
+* **ZDVC server** - ZDVC server includes Device Tracker and [PowerPrecision Console](/ppc/latest/guide/about). Device Tracker collects and processes device data for tracking misplaced devices.
 * **Web portal** - ZDVC centralized dashboard for monitoring device presence, device tracking, and battery status.
 * **Device Tracker client** - reports device presence status and information (such as remaining battery and charging status) to server
 
@@ -255,7 +255,7 @@ _Figure 1. Installation - initial screen_
 3. Accept the license agreement. Click **Next.**
 ![img](DTRK_Install_2.JPG)
 _Figure 2. Installation - EULA_
-4. Accept the default folder or browse to the destination folder. Click Next.
+4. Accept the default folder or browse to the destination folder. Click **Next.**
 ![img](DTRK_Install_3.JPG)
 _Figure 3. Installation - destination location_
 5. Enter in the server configurations, then click **Next:**
@@ -303,7 +303,7 @@ To downgrade the server, uninstall the previous version and install the older se
 ###Server Setup
 Steps for ZDVC server setup after installation: <br>
 1. **Run ZDVC Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". 
-2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate domain and port number.
+2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.
 3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "Device Tracker" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.
 4. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
 A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
@@ -378,7 +378,7 @@ Steps for manual client configuration after installation:
 2. Tap "Yes" to "Ignore battery optimizations". This is required for the client to remain connected to the server while running in the background.
 3. Tap the hamburger menu at the top right, then tap "Settings".  
 4. Enter in the following information:
-   * **Server URL** - URL for the server with port number and Device Tracker path specified, for example: **hostname.company.com:8080/zdvc/dtrk**, where "hostname.company.com:8080" is replaced with the appropriate domain and port number. The URL must not contain "https://" nor "http://".
+   * **Server URL** - URL for the server with port number and Device Tracker path specified, for example: **hostname.company.com:8080/zdvc/dtrk**, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. The URL must not contain "https://" nor "http://".
    * **Server Auth Key** - UserName designated during server install
    * **Server Auth Password** - Password designated during server install
 <br>
@@ -470,7 +470,7 @@ _Figure 32. Import plugin into CSP Library_
 A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” at the top right. <br>
 ![img](SN_Settings.JPG)
 _Figure 33. Import into CSP Library_ <br>
-B. Select the MX version for the device. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `hostname.company.com:8080/zdvc/dtrk`, where "hostname.company.com:8080" is replaced with the appropriate domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install.  <br>
+B. Select the MX version for the device. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `hostname.company.com:8080/zdvc/dtrk`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install.  <br>
 ![img](SN_CreateSettings.JPG)
 _Figure 34. Create New Setting_ <br>
 C. Tap Save. The new setting is listed in the Settings screen.

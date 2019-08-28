@@ -9,7 +9,7 @@ productversion: '1.0'
 As part of Zebra DNA Visibility Console (ZDVC) server, Device Tracker runs on a supported Windows-based server. Device Tracker client runs on supported [Zebra devices](../about/#supporteddevices). This section provides system requirements and instructions for install and setup for the solution.
 
 Solution components:
-* **ZDVC server** - ZDVC server includes Device Tracker and PowerPrecision Console. Device Tracker collects and processes device data for tracking misplaced devices.
+* **ZDVC server** - ZDVC server includes Device Tracker and [PowerPrecision Console](/ppc/latest/guide/about). Device Tracker collects and processes device data for tracking misplaced devices.
 * **Web portal** - ZDVC centralized dashboard for monitoring device presence, device tracking, and battery status.
 * **Device Tracker client** - reports device presence status and information (such as remaining battery and charging status) to server
 
@@ -46,7 +46,9 @@ This section provides the server and device requirements. Device Tracker support
         * UI Port: Web Portal Port 8443 for accessing Device Tracker web portal  
    * If required, perform **DNS setup** to add server IP address to the DNS server. 
 
-5. Hardware Requirements:
+5. Internet Access Required: Internet access is needed to download npm package dependencies.
+
+6. Hardware Requirements:
    * Minimum CPU cores: 16
      * Minimum memory (RAM): 64 GB
          * Minimum available hard drive space: 500 GB
@@ -73,14 +75,6 @@ Supported Devices (including GMS and non-GMS versions):
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
-<!--  // Will be in next release
-  <tr>
-    <td>MC93 </td>
-    <td></td>
-    <td></td>
-    <td style="text-align:center">&#x25cf;</td>
-  </tr>
-  -->
   <tr>
     <td>PS20</td>
     <td></td>
@@ -123,18 +117,18 @@ Supported Devices (including GMS and non-GMS versions):
 
 
 ##Server Install & Setup
-Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html).<!--[Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software.html)--> Install ZDVC server on the supported system that meets the specified requirements. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
+Download ZDVC server from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/device-tracker.html). Install ZDVC server on the supported system that meets the specified requirements. The user must have the appropriate system privileges to install the server. After server installation, further network and certificate setup is required to allow communication between the server and devices via DNS and firewall. Instructions for server installation and setup:
 
 ###Server Prerequisites
 The following are the prerequisites required for the server: <br>
-1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _name.company.com_. An entry with the hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
+1. **DNS (Domain Name Server) Setup.** ZDVC server runs in a domain, for example _hostname.company.com_. An entry with the hostname and corresponding IP address is required in the DNS server for name resolution. The DNS server and ZDVC server are required to be on the same network. Contact your local IT Administrator to configure the domain to IP address mapping. 
 
 2. **SSL Certificate.** ZDVC requires an SSL certificate for secure communications. The certificate must be in .pfx format and set with a password. See [Server Certificate](./#servercertificate) section for details.
 
 3. **Open Inbound/Outbound Ports on the Firewall.** The appropriate ports are required to be opened for inbound/outbound network traffic flow through the firewall for communication between the server and devices. The UI and Backend Server ports are specified during server install. The method to open the ports depends on the firewall software used by the network administrator. 
 
-	* UI Port: inbound and outbound (e.g. port 8080)  
-	* Backend Server Port: inbound (e.g. port 8443)
+	* Backend Server (data) Port: inbound (e.g. port 8080)
+	* Web Portal (UI) Port: inbound and outbound (e.g. port 8443)
 <br>
 
 ###Server Certificate
@@ -209,24 +203,24 @@ F. Copy the SSL certificate "ssl_certificate.pfx" with domain name “name.compa
 ###Server Installation
 ZDVC Server Installation steps: <br>
 1. Double-click on the .EXE to launch the installer.
-2. At the initial window, click Next.
+2. At the initial window, click **Next.**
 ![img](DTRK_Install_1.JPG)
 _Figure 1. Installation - initial screen_
-3. Accept the license agreement. Click Next.
+3. Accept the license agreement. Click **Next.**
 ![img](DTRK_Install_2.JPG)
 _Figure 2. Installation - EULA_
-4. Accept the default folder or browse to the destination folder. Click Next.
+4. Accept the default folder or browse to the destination folder. Click **Next.**
 ![img](DTRK_Install_3.JPG)
 _Figure 3. Installation - destination location_
-5. Enter in the server configurations, then click Next:
-   * **Domain** - domain name for server, e.g. "name.company.com"
+5. Enter in the server configurations, then click **Next:**
+   * **Domain** - fully qualified domain name (FQDN) which consists of the hostname and domain name, e.g. "hostname.company.com"
    * **Server Certificate Path** - location of server certificate (.pfx file)
    * **Server Certificate Password** - password for server certificate
    * **UI port** - designated UI port, can default to 8443
    * **Backend Server Port** - designated server port, can default to 8080
 ![img](DTRK_Install_4.JPG)
 _Figure 4. Installation - server configuration_
-6. Enter in server authentication and credentials, then click Next:
+6. Enter in server authentication and credentials, then click **Next:**
    * Super admin and database password
    * Server auth key
    * Server auth password
@@ -239,23 +233,23 @@ _Figure 4. Installation - server configuration_
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#34; (double quote) <br>
 ![img](DTRK_Install_5.JPG)
 _Figure 5. Installation - server authentication and credentials_
-7. Review settings. Click Next. Third party applications (such as Postgres and Node.js) will be installed if it does not pre-exist in the system.
+7. Review settings. Click **Next.** Third party applications (such as Postgres and Node.js) will be installed if it does not pre-exist in the system.
 ![img](DTRK_Install_6.JPG)
 _Figure 6. Installation - review settings_
-8. Installation complete. Click Finish.
+8. Installation complete. Click **Finish.**
 ![img](DTRK_Install_7.JPG)
 _Figure 7. Installation - complete_
 
 ###Server Setup
 Steps for ZDVC server setup after installation: <br>
 1. **Run ZDVC Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". 
-2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://name.company.com:8443/zdvc`, where "name.company.com:8443" is replaced with the appropriate domain and port number.
+2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.
 3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "Device Tracker" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.
 4. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
 A. Open [ssltools.com](http://ssltools.com/) in the browser.<br>
-B. Enter the Web UI URL, for example `https://name.company.com:8443/zdvc`<br>
+B. Enter the Web UI URL, for example `https://hostname.company.com:8443/zdvc`<br>
 C. Click the Scan button. A successful result returns green checks for each step. _See Figure 8 below._ <br>
-D. Enter the backend URL for your server, for example `https://name.company.com:8080/zdvc` <br>
+D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
 E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
 _Figure 8. SSLTools.com results_
@@ -324,7 +318,7 @@ Steps for manual client configuration after installation:
 2. Tap "Yes" to "Ignore battery optimizations". This is required for the client to remain connected to the server while running in the background.
 3. Tap the hamburger menu at the top right, then tap "Settings".  
 4. Enter in the following information:
-   * **Server URL** - URL for the server with port number and Device Tracker path specified, for example: **name.company.com:8080/zdvc/dtrk**, where "name.company.com:8080" is replaced with the appropriate domain and port number. The URL must not contain "https://" nor "http://".
+   * **Server URL** - URL for the server with port number and Device Tracker path specified, for example: **hostname.company.com:8080/zdvc/dtrk**, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain and port number. The URL must not contain "https://" nor "http://".
    * **Server Auth Key** - UserName designated during server install
    * **Server Auth Password** - Password designated during server install
 <br>
@@ -416,7 +410,7 @@ _Figure 30. Import plugin into CSP Library_
 A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” at the top right. <br>
 ![img](SN_Settings.JPG)
 _Figure 31. Import into CSP Library_ <br>
-B. Select the MX version for the device. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `name.company.com:8080/zdvc/dtrk`, where "name.company.com:8080" is replaced with the appropriate domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install.  <br>
+B. Select the MX version for the device. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `hostname.company.com:8080/zdvc/dtrk`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install.  <br>
 ![img](SN_CreateSettings.JPG)
 _Figure 32. Create New Setting_ <br>
 C. Tap Save. The new setting is listed in the Settings screen.

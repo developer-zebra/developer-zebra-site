@@ -6,7 +6,7 @@ order: 50
 mx: "9.2"
 apilevel: "26"
 devicetype: A
-info: WWAN-enabled devices only.
+info: WWAN-enabled SDM660-platform devices only.
 parm:
   presentif: DA Network Lock is "Lock" or "Unlock"
   pivotal: No

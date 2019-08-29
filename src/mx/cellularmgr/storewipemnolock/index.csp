@@ -4,7 +4,7 @@ title: Lock Codes Store/Erase
 type: parm
 order: 72
 mx: "9.2"
-devicetype: A,B
+devicetype: A
 info: WWAN-enabled devices only.
 parm:
   pivotal: No
@@ -12,12 +12,12 @@ parm:
   type: list
   list:
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: StoreMNOLock
       mx: "9.2"
       description: Stores key code for locking and unlocking the MNO. 
     - code: 2
-      devicetype: A,B
+      devicetype: A
       name: WipeMNOLock
       mx: "9.2"
       description: Erases all MNO lock key codes stored in the device. 

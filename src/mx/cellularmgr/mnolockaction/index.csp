@@ -4,6 +4,7 @@ title: MNO Lock Action
 type: parm
 order: 60
 mx: "9.2"
+apilevel: "26"
 devicetype: A
 info: WWAN-enabled devices only.
 parm:

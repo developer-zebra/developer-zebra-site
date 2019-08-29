@@ -4,6 +4,7 @@ title: Export MNO Lock Info (checkbox)
 type: parm
 order: 84
 mx: "9.2"
+apilevel: "26"
 devicetype: A
 info: Supported only on WWAN-enabled devices.
 parm:
@@ -13,6 +14,7 @@ parm:
   list:
     - code: 0
       mx: "9.2"
+      apilevel: "26"
       devicetype: A
       name: (unchecked)
       description: Prevents MNO Lock information from being saved to the SD card. 
@@ -20,6 +22,7 @@ parm:
       devicetype: A
       name: (checked)
       mx: "9.2"
+      apilevel: "26"
       description: Allows MNO Lock information to be saved to the SD card. 
 ---
 

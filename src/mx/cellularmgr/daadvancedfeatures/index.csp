@@ -4,6 +4,7 @@ title: DA Advanced Features (checkbox)
 type: parm
 order: 58
 mx: "9.2"
+apilevel: "26"
 devicetype: A
 info: WWAN-enabled devices only.
 parm:
@@ -15,11 +16,13 @@ parm:
       devicetype: A
       name: (unchecked)
       mx: "9.2"
+      apilevel: "26"
       description: Prevents configuration of advanced features. 
     - code: 1
-      devicetype: A,B
+      devicetype: A
       name: (checked)
       mx: "9.2"
+      apilevel: "26"
       description: Allows configuration of advanced features. 
 ---
 

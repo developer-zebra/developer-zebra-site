@@ -4,6 +4,7 @@ title: DA Lock Type
 type: parm
 order: 74
 mx: "9.2"
+apilevel: "26"
 devicetype: A
 info: WWAN-enabled devices only.
 parm:
@@ -14,6 +15,7 @@ parm:
   list:
     - code: 0
       mx: "9.2"
+      apilevel: "26"
       devicetype: A
       name: Network Lock
       description: Locks the device by MNO.
@@ -21,6 +23,7 @@ parm:
       devicetype: A
       name: ICCID Lock
       mx: "9.2"
+      apilevel: "26"
       description: Locks the device by SIM card.
 ---
 

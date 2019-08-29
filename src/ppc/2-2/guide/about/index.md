@@ -31,7 +31,15 @@ PowerPrecision Console consists of the following components:
 
 The PPC client software registers the device with the on-premise PPC server and reports battery information based on preset configurations such as frequency of reporting and event triggers including new battery inserted, battery low and device power-off. The state of battery health is monitored continuously, with multiple electrical and historical characteristics used to determine each battery’s health relative to a new battery. As battery life diminishes over time, custom messages can be triggered based on pre-determined thresholds to notify users of required actions. 
 
-## New in PPC 2.0
+## New in PPC 2.2.1
+* Added method to start server background services to run at startup and without a logged-in user.
+* New device support for: 
+  * Android P: TC52, TC72, PS20
+  * Android O: ET51/ET56, L10 Android, EC30, MC9300, TC8300
+  * Android N: WT6000
+
+## Recent Version History
+### Added in PPC 2.0
 * New Zebra DNA Visibility Console (ZDVC) server 2.0 support with updated server URL root path.
 * Support added for Server Auth Name and Password in:
   * PPC Client
@@ -49,42 +57,105 @@ See [Install & Setup](../setup) for System Requirements.
       <th style="text-align:center">Android 6.x <br>(Marshmallow)</th>
       <th style="text-align:center">Android 7.x <br>(Nougat)</th>
       <th style="text-align:center">Android 8.x <br>(Oreo)</th>
+      <th style="text-align:center">Android 9.x <br>(Pie)</th>
     </tr>
     <tr>
-      <td>TC70X/TC75X</td>
-      <td style="text-align:center">&#x25cf;</td>
-      <td style="text-align:center">&#x25cf;</td>
-      <td style="text-align:center">&#x25cf;</td>
-    </tr>
-    <tr>
-      <td>TC51/TC56 </td>
-      <td style="text-align:center">&#x25cf;</td>
-      <td style="text-align:center">&#x25cf;</td>
-      <td style="text-align:center">&#x25cf;</td>
-    </tr>
-    <tr>
-      <td>TC52/TC57</td>
+      <td>EC30</td>
       <td></td>
       <td></td>
       <td style="text-align:center">&#x25cf;</td>
+      <td></td>
     </tr>
     <tr>
-      <td>TC72/TC77</td>
+      <td>ET51/ET56</td>
       <td></td>
       <td></td>
       <td style="text-align:center">&#x25cf;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L10 Android</td>
+      <td></td>
+      <td></td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td></td>
     </tr>
     <tr>
       <td>MC3300 </td>
       <td></td>
       <td style="text-align:center">&#x25cf;</td>
       <td style="text-align:center">&#x25cf;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MC9300</td>
+      <td></td>
+      <td></td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td></td>
     </tr>
     <tr>
       <td>PS20</td>
       <td></td>
       <td></td>
+      <td></td>
       <td style="text-align:center">&#x25cf;</td>
+    </tr>
+    <tr>
+      <td>TC70X/TC75X</td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TC51/TC56 </td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TC52</td>
+      <td></td>
+      <td></td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td style="text-align:center">&#x25cf;</td>
+    </tr>
+    <tr>
+      <td>TC57</td>
+      <td></td>
+      <td></td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TC72</td>
+      <td></td>
+      <td></td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td style="text-align:center">&#x25cf;</td>
+    </tr>
+    <tr>
+      <td>TC77</td>
+      <td></td>
+      <td></td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TC8300</td>
+      <td></td>
+      <td></td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WT6000</td>
+      <td></td>
+      <td style="text-align:center">&#x25cf;</td>
+      <td></td>
+      <td></td>
     </tr>
   </table>
   

@@ -316,7 +316,7 @@ _Figure 6. Installation - review settings_
 ![img](DTRK_Install_7.JPG)
 _Figure 7. Installation - complete_
 9. Perform one of the following to run the server:<br>
-A. Reboot the server. The ZDVC server services automatically start as scheduled tasks after reboot.<br>
+A. Reboot the server. The ZDVC server services automatically start as scheduled tasks.<br>
 B. Manually start the **ZDVC Backend Server** and **ZDVC WebUI Server** scheduled tasks. 
 Open **Task Scheduler** in **Administrative Tools.** For each scheduled task, select the scheduled task to run, right-click on the task and select **Run** from the menu.
 

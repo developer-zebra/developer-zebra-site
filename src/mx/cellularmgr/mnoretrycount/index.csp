@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to enter the maximum number of failed attempts to Unlock the device. 
+Used to enter the maximum number of failed attempts to unlock the device, after which the unlock feature is disabled and a service technician is required to unlock the device. 
 
 **Parm value input rules**: 
 

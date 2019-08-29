@@ -4,8 +4,9 @@ title: Erase MNO Lock Info (checkbox)
 type: parm
 order: 86
 mx: "9.2"
+apilevel: "26"
 devicetype: A
-info: Supported only on WWAN-enabled devices.
+info: WWAN-enabled SDM660-platform devices only.
 parm:
   pivotal: No
   name: WipeMNOLock
@@ -23,4 +24,4 @@ parm:
       description: Removes MNO Lock information from the device. 
 ---
 
-Controls whether to remove (erase) the current MNO Lock information stored on the device.
+Controls whether to remove (erase) the current MNO Lock information stored internally on the device.

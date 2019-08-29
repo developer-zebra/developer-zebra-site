@@ -4,8 +4,9 @@ title: Import MNO Lock Info (checkbox)
 type: parm
 order: 82
 mx: "9.2"
+apilevel: "26"
 devicetype: A
-info: Supported only on WWAN-enabled devices.
+info: WWAN-enabled SDM660-platform devices only.
 parm:
   pivotal: No
   name: ImportMNOLock
@@ -23,4 +24,4 @@ parm:
       description: Allows importation of MNO Lock information. 
 ---
 
-Controls whether to Import and restore MNO Lock information from an SD card. 
+Controls whether to Import and restore MNO Lock information from an SD card to restore an MNO Lock. 

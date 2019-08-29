@@ -4,8 +4,9 @@ title: Device Admin Network Lock
 type: parm
 order: 76
 mx: "9.2"
+apilevel: "26"
 devicetype: A
-info: WWAN-enabled devices only.
+info: WWAN-enabled SDM660-platform devices only.
 parm:
   pivotal: No
   name: DeviceAdminNetworkLock
@@ -23,4 +24,4 @@ parm:
       description: Unlocks the MNO using a key code. 
 ---
 
-Used to Lock/Unlock the device to/from a specific network.
+Used to Lock the device to a specific Mobile Network Operator (MNO) and Unlock it for use on other networks.

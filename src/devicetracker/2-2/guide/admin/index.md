@@ -2,7 +2,7 @@
 title: Admin View
 layout: guide.html
 product: Device Tracker
-productversion: '2.2'
+productversion: '2.2.1'
 ---
 
 ## Overview

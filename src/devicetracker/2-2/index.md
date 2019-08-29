@@ -20,5 +20,5 @@ menu:
     - icon: fa fa-search
       url: /devicetracker/2-2/search
 product: Device Tracker
-productversion: '2.2'
+productversion: '2.2.1'
 ---

@@ -2,7 +2,7 @@
 title: Install & Setup
 layout: guide.html
 product: Device Tracker
-productversion: '2.2'
+productversion: '2.2.1'
 ---
 ## Overview
 
@@ -68,16 +68,19 @@ Supported Devices (including GMS and non-GMS versions):
     <th style="text-align:center">Android 6.x <br>(Marshmallow)</th>
     <th style="text-align:center">Android 7.x <br>(Nougat)</th>
     <th style="text-align:center">Android 8.x <br>(Oreo)</th>
+     <th style="text-align:center">Android 9.x <br>(Pie)</th>
   </tr>
   <tr>
     <td>EC30</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>ET50/ET55</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
     <td></td>
     <td></td>
   </tr>
@@ -86,29 +89,34 @@ Supported Devices (including GMS and non-GMS versions):
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>L10 Android</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>MC3300 </td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>MC9300</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>PS20</td>
     <td></td>
     <td></td>
+    <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
   </tr>
   <tr>
@@ -116,11 +124,13 @@ Supported Devices (including GMS and non-GMS versions):
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>TC25</td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
     <td></td>
   </tr>
   <tr>
@@ -128,35 +138,55 @@ Supported Devices (including GMS and non-GMS versions):
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
-    <td>TC52/TC57</td>
+    <td>TC52</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>TC57</td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>TC70X/TC75X</td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
-    <td>TC72/TC77</td>
+    <td>TC72</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td style="text-align:center">&#x25cf;</td>
+  </tr>
+  <tr>
+    <td>TC77</td>
+    <td></td>
+    <td></td>
+    <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>TC8300</td>
     <td></td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
   </tr>
   <tr>
     <td>WT6000</td>
     <td></td>
     <td style="text-align:center">&#x25cf;</td>
+    <td></td>
     <td></td>
   </tr>
 </table>
@@ -285,6 +315,10 @@ _Figure 6. Installation - review settings_
 8. Installation complete. Click **Finish.**
 ![img](DTRK_Install_7.JPG)
 _Figure 7. Installation - complete_
+9. Perform one of the following to run the server:<br>
+A. Reboot the server. The ZDVC server services automatically start as scheduled tasks after reboot.<br>
+B. Manually start the **ZDVC Backend Server** and **ZDVC WebUI Server** scheduled tasks. 
+Open **Task Scheduler** in **Administrative Tools.** For each scheduled task, select the scheduled task to run, right-click on the task and select **Run** from the menu.
 
 ###Server Upgrade
 ZDVC Server can be upgraded from a previous existing ZDVC installation:
@@ -314,6 +348,7 @@ E. Click the Scan button. A successful result returns green checks for each step
 ![img](SSLTools.JPG)
 _Figure 10. SSLTools.com results_
 
+<!--
 ###Post-Server Setup
 To meet certain customer requirement needs, for example for Device Tracker to run without a logged in user or Device Tracker to run on server startup, this can be accomplished by having Device Tracker run as a scheduled task using the following procedure.  Two scheduled tasks are needed, one for the backend and one for the WebUI:<br>
 1. Open **Task Scheduler** in **Administrative Tools.** 
@@ -358,7 +393,7 @@ _Figure 23. Task Properties_
 14.	Click **Run** in the right menu (same screen as in step 11). 
 
 This allows Device Tracker to run each time the server restarts regardless of the user logged in.
-
+-->
 ##Client Install & Setup
 Install Device Tracker client on the supported Zebra device to register the device and transmit data to the server. Client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management) system. 
 
@@ -411,18 +446,18 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 24. Profile wizard_ <br>
+_Figure 11. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “AppMgr”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_AddAppMgr.JPG)
-_Figure 25. Add Setting_ <br>
+_Figure 12. Add Setting_ <br>
 6. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in step 5. Validate all settings and click Continue.
 ![img](SN_BattOpt.JPG)
-_Figure 26. Re-use saved setting_ <br>
+_Figure 13. Re-use saved setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 27. Generate StageNow barcode_ <br>
+_Figure 14. Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -433,22 +468,22 @@ _Figure 27. Generate StageNow barcode_ <br>
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 28. Profile wizard_ <br>
+_Figure 15. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
 5. Scroll down and click the plus (+) sign next to “Intent”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_AddIntentSetting.jpg)
-_Figure 29. Add Setting_ <br>
+_Figure 16. Add Setting_ <br>
 6. Enter the following information:
    * Action: select "StartService"
    * Android Action Name: enter "com.zebra.devicetracker.csp.DTCspService"
    * Package Name: enter "com.zebra.devicetracker"
 Click Continue.
 ![img](SN_IntentConfig.jpg)
-_Figure 30. Configure Setting_ <br>
+_Figure 17. Configure Setting_ <br>
 7. Click “Complete Profile." <br>
 8. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 31. Generate StageNow barcode_ <br>
+_Figure 18. Generate StageNow barcode_ <br>
 9. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 10. For EMM Staging, continue to section "Steps for EMM Staging" below.
 11. Open the StageNow client on the device.
@@ -465,33 +500,33 @@ A. In the StageNow home screen, click “CSP Library” from the left menu. <br>
 B. Upload the .zip file to the CSP Library by clicking “Choose File” then browsing to the .zip file, or by dragging and dropping the .zip file. Click "OK" in the confirmation message. <br> 
 C. Once successfully uploaded, the CSP Library is listed in the Plugin tab.<br>
 ![img](SN_CSPLib.JPG)
-_Figure 32. Import plugin into CSP Library_
+_Figure 19. Import plugin into CSP Library_
 4. Create a new setting:<br>
 A. In the StageNow home screen, click “All Settings” from the left menu. Click “Create Setting” at the top right. <br>
 ![img](SN_Settings.JPG)
-_Figure 33. Import into CSP Library_ <br>
+_Figure 20. Import into CSP Library_ <br>
 B. Select the MX version for the device. For the “Setting Type”, select “com.zebra.devicetracker." Enter a name for the setting. Enter the server URL e.g. `hostname.company.com:8080/zdvc/dtrk`, where "hostname.company.com:8080" is replaced with the appropriate hostname, domain name and port number. Select the desired option to determine whether or not to allow the end user to edit the setting. Enter the "Server Auth Key" and "Server Auth Password", both designated during server install.  <br>
 ![img](SN_CreateSettings.JPG)
-_Figure 34. Create New Setting_ <br>
+_Figure 21. Create New Setting_ <br>
 C. Tap Save. The new setting is listed in the Settings screen.
 ![img](SN_NewSetting.JPG)
-_Figure 35. New Setting created_ <br>
+_Figure 22. New Setting created_ <br>
 5. Create profile:<br>
 A. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
 B. Ensure the proper MX version is selected at the top drop-down selector. Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
-_Figure 36. Profile wizard_ <br>
+_Figure 23. Profile wizard_ <br>
 C. Enter the profile name. Click Start.<br>
 D. Click the plus (+) sign next to “com.zebra.devicetracker”. This adds to the Config tab on the right side. Click Add.<br>
 ![img](SN_Profile_AddSetting.JPG)
-_Figure 37. Add Setting_ <br>
+_Figure 24. Add Setting_ <br>
 E. In the StageNow Config section, click “Re-use Saved Setting” tab. The screen is populated with the information from the setting created in previous steps. Validate all settings and click Continue.
 ![img](SN_ReUseSavedSetting.JPG)
-_Figure 38. Re-use saved setting_ <br>
+_Figure 25. Re-use saved setting_ <br>
 F. Click “Complete Profile." <br>
 G. In the Publish section, select the desired barcode type. Click Test. 
 ![img](SN_Publish.JPG)
-_Figure 39. Generate StageNow barcode_ <br>
+_Figure 26. Generate StageNow barcode_ <br>
 H. A window opens with the generated StageNow barcode in .pdf format. When ready to publish, click Publish.<br>
 6. For EMM Staging, continue to section "Steps for EMM Staging" below.
 7. Open the StageNow client on the device.
@@ -507,7 +542,7 @@ For more information on StageNow, refer to its [documentation](http://techdocs.z
    * Follow procedure for "Create StageNow profile to automatically bypass the device Battery Optimization pop-up message" up to step 11.
 2. Select "Export option for EMM" from the top to export the .xml file.  Save the .xml file.
 ![img](SN_ExportMDM.JPG)
-_Figure 40. Export for EMM_
+_Figure 27. Export for EMM_
 3. Push the .xml settings via EMM to the device for the desired client configuration.
 
 <br>

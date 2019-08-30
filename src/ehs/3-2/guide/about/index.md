@@ -289,7 +289,7 @@ This version of Enterprise Home Screen has been approved for use with the Zebra 
 * **Now supports <u>ONLY</u> Android 8.x (Oreo) and Android 9.x (Pie)**.
 * **EHS 3.2 download package contains a single .apk file** compatible with all supported devices running Oreo and Pie. 
 * **Bypass user confirmation dialog when adding Pinned shortcuts** is a configurable option designed to aid automated shortcut creation by suppressing the dialog that appears when a shortcut is added. Disabled by default. 
-* **EHS can now launch links that reference local files** though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later) if files reside on external storage (i.e. SD card).
+* **EHS can now launch links that reference local files** though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later) if files reside on internal or external storage (i.e. SD card).
 
 -----
 

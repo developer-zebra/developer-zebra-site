@@ -219,7 +219,7 @@ When specifying links, the package and activity parameters can be used to launch
 <b>Notes</b>:
 * Package names might vary from one Android version to another. 
 * **EHS 3.0 and higher supports VectorDrawable app icons**, which scale to different sizes without loss of image quality. [Learn more](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
-* **EHS can launch links that reference local files** though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later) if files reside on external storage (i.e. SD card).
+* **EHS can launch links that reference local files** though a “URL” tag (i.e. "file://&#42;.html") on devices running Android 8.x Oreo (and later) if files reside on internal or external storage (i.e. SD card).
 
 ------
 

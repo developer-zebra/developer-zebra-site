@@ -1,0 +1,19 @@
+---
+csp: licensemg
+title: Delete License Source Name
+type: parm
+order: 11
+mx: "9.2"
+devicetype: A,B
+parm:
+  pivotal: No
+  presentif: The License Action Zebra is "Delete License Source" and License Choice is "Reset"
+  name: DeleteLicenseSourceName
+  type: string
+---
+
+Used to enter the "friendly" name of a local licensing server to delete as a license source. 
+
+**Parm value input rules**: 
+
+* String of at least one character 

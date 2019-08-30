@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: MNO MCC MNC List
 type: parm
-order: 62
+order: 76
 mx: "9.2"
 apilevel: "26"
 devicetype: A

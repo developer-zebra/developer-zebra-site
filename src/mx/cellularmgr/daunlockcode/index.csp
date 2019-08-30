@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: DA Unlock Code
 type: parm
-order: 50
+order: 53
 mx: "9.2"
 apilevel: "26"
 devicetype: A
@@ -14,7 +14,7 @@ parm:
   type: string
 ---
 
-Used to enter the Device Admin Unlock Code.  
+Used to enter the Device Admin Lock/Unlock Code.  
 
 **Parm value input rules**: 
 

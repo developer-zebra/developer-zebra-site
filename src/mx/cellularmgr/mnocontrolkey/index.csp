@@ -2,7 +2,7 @@
 csp: cellularmgr
 title: MNO Control Key
 type: parm
-order: 68
+order: 74
 mx: "9.2"
 apilevel: "26"
 devicetype: A

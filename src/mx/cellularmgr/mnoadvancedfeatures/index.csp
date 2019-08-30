@@ -1,0 +1,38 @@
+---
+csp: cellularmgr
+title: MNO Advanced Features (checkbox) 
+type: parm
+order: 69
+mx: "9.2"
+apilevel: "26"
+devicetype: A
+info: Supported on WWAN-enabled SDM660-platform devices only.
+parm:
+  pivotal: No
+  name: MNOAdvancedFeatures
+  type: list
+  list:
+    - code: 0
+      devicetype: A
+      name: (unchecked)
+      mx: "9.2"
+      apilevel: "26"
+      description: Prevents configuration of MNO advanced features. 
+    - code: 1
+      devicetype: A
+      name: (checked)
+      mx: "9.2"
+      apilevel: "26"
+      description: Allows configuration of MNO advanced features. 
+---
+
+Controls access to configuration of Mobile Metwork Operator (MNO) advanced features:
+
+* **MNO Lock Action**
+* **MNO Activation ID**
+* **MNO Unlock Code**
+* **MNO Control Key**
+* **MNO Retry Count**
+* **MNO MCCMNC List**
+
+

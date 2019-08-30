@@ -26,10 +26,10 @@ parm:
       description: Allows configuration of advanced features. 
 ---
 
-Controls whether the device administrator has access to configuration of advanced features:
+Controls whether the device administrator (DA) has access to configuration of advanced features:
 
-* **Network Lock**
-* **Lock Type**
-* **Unlock code**
-* **Unlock retry count**
+* **DA Lock Type**
+* **DA Network Lock**
+* **DA Unlock code**
+* **DA Unlock retry count**
 

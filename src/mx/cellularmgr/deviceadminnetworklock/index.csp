@@ -19,7 +19,7 @@ parm:
       description: Locks the MNO. 
     - code: 2
       devicetype: A
-      name: Unock
+      name: Unlock
       mx: "9.2"
       description: Unlocks the MNO using a key code. 
 ---

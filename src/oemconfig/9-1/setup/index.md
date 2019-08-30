@@ -39,9 +39,9 @@ OEMConfig is not pre-installed on Zebra devices; it must be installed through th
 The exact process for setting up an EMM console to use Zebra OEMConfig varies widely depending on the device management system in use. For EMMs compatible with the Google Play system, the generally required steps are listed below. 
 
 ##### EMM General Setup:
-* [Download the OEMConfig app](https://play.google.com/store/apps/details?id=com.zebra.oemconfig.common&hl=en_US) from the Google Play Store  
-* Point EMM console to the Zebra schema to display the Zebra data-driven UI for configuring Zebra devices
-* Create *Transaction(s)* using the [Managed Configurations](../mc) described in the schema
+* [Download OEMConfig app](https://play.google.com/store/apps/details?id=com.zebra.oemconfig.common&hl=en_US) from Google Play Store  
+* Point EMM console to Zebra schema to display data-driven UI for configuring Zebra devices
+* Create *Transaction(s)* using [Managed Configurations](../mc) described in schema
 * Push `OEMConfig.apk` to the Zebra device(s) to be configured
 * Push *Transaction(s)* to device(s) for consumption by OEMConfig tool
 
@@ -49,7 +49,7 @@ The exact process for setting up an EMM console to use Zebra OEMConfig varies wi
 For EMMs that use the Android Management APIs and CloudDPC as their EMM agent, Google offers an option to define a JSON document that specifies a set of `.apk`s to be installed, Managed Configurations to be applied to those `.apk`s, and other non-application-oriented management operations. In such a case, some of the steps above would happen together in a way that might not be obvious to the administrator or console operator.
 
 ##### About The Schema
-Every `.apk` that supports Managed Configurations also must provide a schema, which defines the Managed Configurations supported by that `.apk`. The Play Store provides server-to-server APIs that allow an EMM server to acquire the schema from the Play Store for the published `.apk`. There's more about schemas on the [FAQ page](../faq).
+Every `.apk` that supports Managed Configurations must provide a schema, which defines the Managed Configurations supported by that `.apk`. The Play Store provides server-to-server APIs that allow an EMM server to acquire the schema from the Play Store for the published `.apk`. There's more about schemas on the [FAQ page](../faq).
 
 <!-- ##### Other EMMs; AOSP, GMS-restricted Devices
 1. Download OEMConfig from the [Zebra Support Portal](http://zebra.com/support); the Zebra schema and other required files are automatically included. 

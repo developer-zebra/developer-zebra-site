@@ -26,4 +26,4 @@ parm:
       description: Allows MNO Lock information to be saved to the SD card. 
 ---
 
-Controls whether MNO Lock information is saved to internal device storage. 
+Controls whether Mobile Metwork Operator (MNO) Lock information is saved to internal device storage. 

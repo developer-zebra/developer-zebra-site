@@ -24,4 +24,4 @@ parm:
       description: Removes MNO Lock information from the device. 
 ---
 
-Controls whether to remove (erase) the current MNO Lock information stored internally on the device.
+Controls whether to remove (erase) the current Mobile Metwork Operator (MNO) Lock information stored internally on the device.

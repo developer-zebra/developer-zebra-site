@@ -37,6 +37,10 @@ The PPC client software registers the device with the on-premise PPC server and 
   * Android P: TC52, TC72, PS20
   * Android O: ET51/ET56, L10 Android, EC30, MC9300, TC8300
   * Android N: WT6000
+* Behavior changes due to new Android 9 Pie requirements:
+  * When opening PPC client app after initial install, permission needs to be granted to allow the device to register to the server.
+  * A PPC Client and PPCClientMgr notification message is displayed in the device notifications drawer when the respective app is running.  
+
 
 ## Recent Version History
 ### Added in PPC 2.0

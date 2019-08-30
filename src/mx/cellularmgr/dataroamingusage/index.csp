@@ -6,7 +6,7 @@ order: 10
 mx: "4.4"
 osx: "4.4"
 devicetype: A,B
-info: WWAN-enabled devices only.
+info: Supported on WWAN-enabled devices only.
 parm:
   pivotal: No
   name: DataRoamingUsage

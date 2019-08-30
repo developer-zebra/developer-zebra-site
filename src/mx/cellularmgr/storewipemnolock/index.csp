@@ -5,7 +5,7 @@ type: parm
 order: 72
 mx: "9.2"
 devicetype: A
-info: WWAN-enabled devices only.
+info: Supported on WWAN-enabled devices only.
 parm:
   pivotal: No
   name: StoreWipeMNOLock

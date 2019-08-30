@@ -5,7 +5,7 @@ type: parm
 order: 25
 mx: "6.3"
 devicetype: A
-info: WWAN-enabled devices only.
+info: Supported on WWAN-enabled devices only.
 parm:
   pivotal: No
   name: CellularDataLimitUsage

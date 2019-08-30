@@ -5,7 +5,7 @@ type: parm
 order: 46
 mx: "8.1"
 devicetype: A
-info: WWAN-enabled devices only.
+info: Supported on WWAN-enabled devices only.
 parm:
   presentif: Manual PLMN Lock is set to "Enable"
   pivotal: No

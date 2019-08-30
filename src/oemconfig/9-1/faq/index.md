@@ -44,9 +44,9 @@ Also see the [Glossary of terms](../glossary).
 
 -----
 
-###Q: What is a Managed Configuration Schema? 
+###Q: What is a Managed Configuration schema? 
 
-**A: A Managed Configuration Schema is a means by which an application that chooses to expose Managed Configurations defines the set of Managed Configurations that it supports**. The Managed Configuration Schema allows an entity, such as an Enterprise Mobility Management system (EMM) to: 
+**A: A Managed Configuration schema is a means by which an application that chooses to expose Managed Configurations defines the set of Managed Configurations that it supports**. The Managed Configuration schema allows an entity, such as an Enterprise Mobility Management system (EMM) to: 
 
 1. Determine whether the application does or does not expose any Managed Configurations, so the EMM knows if any configuration of the application is possible. 
 2. Identify the set of Managed Configurations that are exposed by the application, so the EMM knows what configurations can be controlled for the application. 
@@ -54,45 +54,45 @@ Also see the [Glossary of terms](../glossary).
 
 -----
 
-###Q: What is an OEMConfig Schema? 
+###Q: What is an OEMConfig schema? 
 
-**A: An OEMConfig Schema is the Managed Configuration Schema that defines the Managed Configurations exposed by an OEMConfig application** running on a device manufactured by the corresponding OEM. 
-
------
-
-###Q: What is the Zebra OEMConfig Schema? 
-
-**A: The Zebra OEMConfig Schema is the OEMConfig Schema that defines the Managed Configurations exposed by the Zebra OEMConfig application**. 
+**A: An OEMConfig schema is the Managed Configuration schema that defines the Managed Configurations exposed by an OEMConfig application** running on a device manufactured by the corresponding OEM. 
 
 -----
 
-###Q: Are OEMConfig Schemas different from the Managed Configuration Schemas of other applications? 
+###Q: What is the Zebra OEMConfig schema? 
 
-**A: Yes and no**. Android Enterprise defines that Managed Configuration Schemas built-into Android applications can be very flexible, but applications that are published to the Google Play Store are constrained to use only a very limited subset of the complexity allowed by Android Enterprise for Managed Configuration Schemas. This was done to limit the complexity of Managed Configurations exposed by most applications to reduce the effort for EMMs to implement basic application configuration. With Google’s approval. OEMConfig applications provided by approved OEMs can get approval to upload OEMConfig applications to the Google Play Store that use more of the Managed Configuration Schemas capabilities defined as part of Android Enterprise than are supported by other non-OEMConfig applications. Thus, OEMConfig Schemas are generally richer and more sophisticated than the Managed Configuration Schemas of other applications, even though both conform to the rules defined by Android Enterprise for Managed Configuration Schemas. 
+**A: The Zebra OEMConfig schema is the OEMConfig schema that defines the Managed Configurations exposed by the Zebra OEMConfig application**. 
 
 -----
 
-###Q: Are OEMConfig Managed Configurations used for different purposes than the Managed Configurations exposed by other applications? 
+###Q: Are OEMConfig schemas different from the Managed Configuration schemas of other applications? 
+
+**A: Yes and no**. Android Enterprise defines that Managed Configuration schemas built-into Android applications can be very flexible, but applications that are published to the Google Play Store are constrained to use only a very limited subset of the complexity allowed by Android Enterprise for Managed Configuration schemas. This was done to limit the complexity of Managed Configurations exposed by most applications to reduce the effort for EMMs to implement basic application configuration. With Google’s approval. OEMConfig applications provided by approved OEMs can get approval to upload OEMConfig applications to the Google Play Store that use more of the Managed Configuration schemas capabilities defined as part of Android Enterprise than are supported by other non-OEMConfig applications. Thus, OEMConfig schemas are generally richer and more sophisticated than the Managed Configuration schemas of other applications, even though both conform to the rules defined by Android Enterprise for Managed Configuration schemas. 
+
+-----
+
+###Q: Are OEMConfig Managed Configurations used for purposes other than for Managed Configurations exposed by other applications? 
 
 **A: Yes**. In most cases, OEMConfig Managed Configurations are used to configure OEM-specific device-oriented settings rather than application-oriented settings. As such, configuration performed using OEMConfig Managed Configurations will often have a more global, cross-application impact, rather than a localized, application-local impact 
 
 -----
 
-###Q: Is the Zebra OEMConfig Schema different than the OEMConfig Schemas of other OEMs? 
+###Q: Is the Zebra OEMConfig schema different than the OEMConfig schemas of other OEMs? 
 
-**A: Every OEM is free to define their OEMConfig Schema in whatever way they need** to suit the needs for configuring their device. Since Zebra devices have their own proprietary OEM-specific value-add features, the Zebra OEMConfig Schema exposes Managed Configurations that are tailored to the needs of configuring those features. 
-
------
-
-###Q: Does an EMM need to handle OEMConfig Schemas differently than the Managed Configuration Schemas of other applications? 
-
-**A: Yes**. An EMM that wants to support OEMConfig must support the richer set of Managed Configuration Schema elements that OEMConfig application can expose. If an EMM only supports the more restricted set allowed to be used by non-OEMConfig applications, that EMM will likely not be able to support configuration using OEMConfig applications from any OEM. 
+**A: Every OEM is free to define their OEMConfig schema in whatever way they need** to suit the needs for configuring their device. Since Zebra devices have their own proprietary OEM-specific value-add features, the Zebra OEMConfig schema exposes Managed Configurations that are tailored to the needs of configuring those features. 
 
 -----
 
-###Q: Does my EMM need to have custom-support for Zebra for me to be able to utilize Zebra OEMConfig via that EMM? 
+###Q: Does an EMM need to handle OEMConfig schemas differently than the Managed Configuration schemas of other applications? 
 
-**A: Not really**. The beauty of Managed Configurations is that they allow discoverability of the configurable aspects of applications that expose them. OEMConfig is no exception. Hence any EMM that supports Managed Configurations and that supports the richer Managed Configuration Schemas allowed to be exposed by OEMConfig applications should be able to configure all the aspects exposed by the OEMConfig Schema of any OEM, including Zebra, without having code specifically tailored to any OEM. 
+**A: Yes**. An EMM that wants to support OEMConfig must support the richer set of Managed Configuration schema elements that OEMConfig application can expose. If an EMM only supports the more restricted set allowed to be used by non-OEMConfig applications, that EMM will likely not be able to support configuration using OEMConfig applications from any OEM. 
+
+-----
+
+###Q: Must my EMM specifically support Zebra to use Zebra OEMConfig? 
+
+**A: Not really**. Among the major benefits of Managed Configurations is that they allow discoverability of the configurable aspects of applications that expose them. OEMConfig is no exception. Hence any EMM that supports Managed Configurations and that supports the richer Managed Configuration schemas allowed to be exposed by OEMConfig applications should be able to configure all the aspects exposed by the OEMConfig schema of any OEM, including Zebra, without having code specifically tailored to any OEM. 
 
 -----
 
@@ -102,37 +102,37 @@ Also see the [Glossary of terms](../glossary).
 
 -----
 
-###Q: Where does an OEMConfig Schema come from? 
+###Q: Where does an OEMConfig schema come from? 
 
-**A: Fundamentally, an OEMConfig Schema, like any Managed Configuration Schema for any application, is built into the APK of the application by referencing it** from the Manifest when the APK file is built. Hence the APK file is the primary source of the Schema. APIs exist in the device to acquire the Schema for any application that exposes Managed Configurations, hence an application (including an EMM Agent) could acquire an OEMConfig Schema on-device and send it to the EMM Server. While that is possible, it is probably not the most common case since the EMM Server would then need to receive and collate one or more Schemas from every single managed device. 
+**A: Fundamentally, an OEMConfig schema, like any Managed Configuration schema for any application, is built into the APK of the application by referencing it** from the Manifest when the APK file is built. Hence the APK file is the primary source of the schema. APIs exist in the device to acquire the schema for any application that exposes Managed Configurations, hence an application (including an EMM Agent) could acquire an OEMConfig schema on-device and send it to the EMM Server. While that is possible, it is probably not the most common case since the EMM Server would then need to receive and collate one or more schemas from every single managed device. 
 
-More commonly, an OEMConfig APK is published to the Google Play Store. The advantage of doing this is that an EMM Server can then make a server-to-server call to the Google Play Store, using the Google Play EMM API to acquire the Schema for that OEMConfig APK. This is especially beneficial since the EMM can use logic identical to that used for non-OEMConfig Schemas to access the OEMConfig Schema for any OEMConfig application from any OEM, so long as it knows the Android Package Name of that OEMConfig application. 
+More commonly, an OEMConfig APK is published to the Google Play Store. The advantage of doing this is that an EMM Server can then make a server-to-server call to the Google Play Store, using the Google Play EMM API to acquire the schema for that OEMConfig APK. This is especially beneficial since the EMM can use logic identical to that used for non-OEMConfig schemas to access the OEMConfig schema for any OEMConfig application from any OEM, so long as it knows the Android Package Name of that OEMConfig application. 
 
-Since an OEMConfig Schema (like any other Managed Configuration) is just a file, it could also be obtained in various other ways, such as downloading it from an OEM web site, an on-line repository, etc. Ultimately, it is the decision of a given EMM vendor which methods of Schema acquisition make the most sense to provide based on the use cases of the users of that EMM. 
-
------
-
-###Q: Where does the Zebra OEMConfig Schema come from? 
-
-**A: Zebra publishes the Zebra OEMConfig Schema to the Google Play Store** with the Android Package Name `com.zebra.oemconfig.common`. This means that any EMM vendor that has registered with Google to gain access to the Google Play EMM API can acquire the Zebra OEMConfig Schema from the Google Play Store. Zebra also might elect to post the Zebra OEMConfig Schema on its own web site and provide it through its online repository from which OS Update and Patch images can be acquired. 
+Since an OEMConfig schema (like any other Managed Configuration) is just a file, it could also be obtained in various other ways, such as downloading it from an OEM web site, an on-line repository, etc. Ultimately, it is the decision of a given EMM vendor which methods of schema acquisition make the most sense to provide based on the use cases of the users of that EMM. 
 
 -----
 
-###Q: Do OEMConfig Schemas have versions? 
+###Q: Where does the Zebra OEMConfig schema come from? 
 
-**A: Yes and no**. Since the primary source of an OEMConfig Schema is the APK for the corresponding OEMConfig application that exposes that Schema, and since APKs have versions, you could say by inference that any OEMConfig Schema can be considered to have the version of the APK file that publishes it. The versioning applied by an OEM to an OEMConfig application may or may not provide any particularly useful information about the nature of the OEMConfig Schema exposed by that application. It would probably be a mistake to make any assumptions about the relationships between two OEMConfig Schemas obtained from different versions of OEMConfig APKs from the same OEM that have the same Android Package Name. 
-
------
-
-###Q: Do Zebra OEMConfig Schemas have versions? 
-
-**A: Yes**. Zebra has recognized that the Zebra OEMConfig Schema will evolve over time and that EMMs will likely want to have a way to differentiate various versions of Zebra OEMConfig Schemas that may be supported on various Zebra Android device and that may support different sets of capabilities. Zebra has therefore chosen to include a “hidden” Managed Configuration within every Zebra OEMConfig Schema that identifies the version of that Schema. This allows an EMM or Administrator that chooses to do so to differentiate versions of Schemas and better organize their use. 
+**A: Zebra publishes the Zebra OEMConfig schema to the Google Play Store** with the Android Package Name `com.zebra.oemconfig.common`. This means that any EMM vendor that has registered with Google to gain access to the Google Play EMM API can acquire the Zebra OEMConfig schema from the Google Play Store. Zebra also might elect to post the Zebra OEMConfig schema on its own web site and provide it through its online repository from which OS Update and Patch images can be acquired. 
 
 -----
 
-###Q: Can multiple versions of OEMConfig Schemas from the same OEM be obtained from the Google Play Store? 
+###Q: Do OEMConfig schemas have versions? 
 
-**A: Not really**. The Google Play Store only allows one version of a given APK, identified by a given Package Name to be uploaded at a time. If a newer version is uploaded, it replaces the older version. This means that only the “latest and greatest” version of OEMConfig Schema for a given Package Name can be acquired from the Google Play Store using the Google Play EMM API at any given time. While an OEM could post a new version of an OEMConfig application to the Google Play Store with a different Package Name, this might create confusion for customers since they would not know which Package Name to use for a given device from that OEM, unless the OEM created some clear way to identify that, such as by including device models in the Package Name or some other similar method. 
+**A: Yes and no**. Since the primary source of an OEMConfig schema is the APK for the corresponding OEMConfig application that exposes that schema, and since APKs have versions, you could say by inference that any OEMConfig schema can be considered to have the version of the APK file that publishes it. The versioning applied by an OEM to an OEMConfig application may or may not provide any particularly useful information about the nature of the OEMConfig schema exposed by that application. It would probably be a mistake to make any assumptions about the relationships between two OEMConfig schemas obtained from different versions of OEMConfig APKs from the same OEM that have the same Android Package Name. 
+
+-----
+
+###Q: Do Zebra OEMConfig schemas have versions? 
+
+**A: Yes**. Zebra has recognized that the Zebra OEMConfig schema will evolve over time and that EMMs will likely want to have a way to differentiate various versions of Zebra OEMConfig schemas that may be supported on various Zebra Android device and that may support different sets of capabilities. Zebra has therefore chosen to include a “hidden” Managed Configuration within every Zebra OEMConfig schema that identifies the version of that schema. This allows an EMM or Administrator that chooses to do so to differentiate versions of schemas and better organize their use. 
+
+-----
+
+###Q: Can multiple versions of OEMConfig schemas from the same OEM be obtained from the Google Play Store? 
+
+**A: Not really**. The Google Play Store only allows one version of a given APK, identified by a given Package Name to be uploaded at a time. If a newer version is uploaded, it replaces the older version. This means that only the “latest and greatest” version of OEMConfig schema for a given Package Name can be acquired from the Google Play Store using the Google Play EMM API at any given time. While an OEM could post a new version of an OEMConfig application to the Google Play Store with a different Package Name, this might create confusion for customers since they would not know which Package Name to use for a given device from that OEM, unless the OEM created some clear way to identify that, such as by including device models in the Package Name or some other similar method. 
 
 -----
 

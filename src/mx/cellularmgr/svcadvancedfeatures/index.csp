@@ -23,4 +23,12 @@ parm:
       description: Allows Service Technician Features to be used. 
 ---
 
-Select whether to use Service Technician Advanced Features. 
+Controls access to Service Technician Advanced Features: 
+
+* **Service Tech Activation ID**
+* **Import MNO Lock**
+* **Export MNO Lock**
+* **Wipe MNO Lock**
+
+
+

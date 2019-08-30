@@ -17,29 +17,23 @@ The CellularMgr provides the ability to control the State (active/inactive) and 
  * Background Data
  * SIM Slot(s)
  * Change the public land mobile network (PLMN) 
+ * Cellular Data
+ * Cellular Data Limit
 * Turn On/Off (control State of): 
  * Data Roaming 
  * Background Data
-* Select SIM Slot 
+ * Cellular Data
+ * Cellular Data Limit
 * Enter a custom cellular data limit and warning threshold
+* Select SIM Slot 
 * Lock the device to:
  * A specific public land mobile network (PLMN)
  * A specific Mobile Network Operator
  * An individual ICCID (SIM card)
- * Access by a service technician
+ * Access only by a service technician
 * Set the number of unlock retries before service is required to unlock
 * Enter a list of acceptable Mobile Country Codes/Mobile Network Operator (MCC/MNO) 
 * Store and erase Lock and Unlock codes
 * Show/hide PLMN user interface controls
-
-<!-- 
-Present in DSD but not implemented in the CSP (with MX 6.3):   
-* Enable/Disable
- * Cellular Data
- * Cellular Data Limit
-* Turn On/Off 
- * Cellular Data
- * A Cellular Data Limit
- -->
 
 -----

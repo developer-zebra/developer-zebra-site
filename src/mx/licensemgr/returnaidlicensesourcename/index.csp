@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Return AID Server Friendly Name
 type: parm
-order: 11
+order: 36
 mx: "9.2"
 devicetype: A,B
 parm:

@@ -2,7 +2,7 @@
 csp: licensemg
 title: Return All AID Server Name
 type: parm
-order: 11
+order: 38
 mx: "9.2"
 devicetype: A,B
 parm:

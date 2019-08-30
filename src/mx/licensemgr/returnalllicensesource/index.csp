@@ -2,7 +2,7 @@
 csp: licensemgr
 title: Return All License Source
 type: parm
-order: 7
+order: 34
 mx: "9.2"
 devicetype: A,B
 parm:

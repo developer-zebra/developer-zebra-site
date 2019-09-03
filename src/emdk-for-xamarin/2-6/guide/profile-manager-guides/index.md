@@ -24,8 +24,6 @@ automenu:
           url: /emdk-for-xamarin/2-6/mx/appgallerymgr
         - title: Browser Manager
           url: /emdk-for-xamarin/2-6/mx/browsermgr
-        - title: Enterprise Keyboard Manager
-          url: /emdk-for-xamarin/2-6/mx/enterprisekeyboardmgr/
     - title: Data Capture
       items:
         - title: Activity Selection

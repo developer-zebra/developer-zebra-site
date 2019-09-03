@@ -1,21 +1,21 @@
 ---
 title: Search
 layout: search.html
-index: /oemconfig/9-1/index.json
+index: /oemconfig/9-2/index.json
 product: OEMConfig
 productversion: '9.2'
 menu:
   items:
     - title: About
-      url: /oemconfig/9-1/about
+      url: /oemconfig/9-2/about
     - title: Setup
-      url: /oemconfig/9-1/setup
+      url: /oemconfig/9-2/setup
     - title: FAQs
-      url: /oemconfig/9-1/faq
+      url: /oemconfig/9-2/faq
     - title: Managed Configurations
-      url: /oemconfig/9-1/mc
+      url: /oemconfig/9-2/mc
     - icon: fa fa-search
-      url: /oemconfig/9-1/search
+      url: /oemconfig/9-2/search
 ---
 
 

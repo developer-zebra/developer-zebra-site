@@ -23,8 +23,15 @@ Zebra OEMConfig is an administrative tool for configuring Zebra Android devices 
 
 Over time, many of the capabilities once available only through proprietary mechanisms such as MX have been added by the Android development community. Starting as "Android for Work," these capabilities are now available as "Android Enterprise" APIs or Android Managed Configurations, both of which are based on publicly available specifications. Zebra is adopting both as part of the natural evolution of its device management system. 
 
-### What's New in v9.2
+### Using OEMConfig
 
+OEMConfig provides a single interface for managing Zebra Android devices regardless of the underlying APIs required to get the job done. OEMConfig works through Android Enterprise APIs when possible, and through Managed Configurations when no Android Enterprise API is available. 
+
+OEMConfig and the Zebra schema are available from the Google Play Store and must be used together to configure Zebra Android devices. The Schema defines the functions available for configuration and provides the data necessary to present the corresponding data-driven UI for configuring those functions. This mechanism allows Zebra to make a new Schema available as soon as new features are available for use. 
+
+-----
+
+### What's New in v9.2
 
 **For Enrollment Configuration**, now supports configurable items defined in a plug-in CSP. 
 
@@ -37,15 +44,9 @@ Over time, many of the capabilities once available only through proprietary mech
 * **Worry Free WiFi Configuration: Supports Worry Free Wi-Fi password features**
 * **DataWedge Configuration: Supports restrictions**
 
-`IMPORTANT:` Some features listed above are supported ONLY on devices with MX 9.2 and higher.  
+`IMPORTANT:` Features listed above are supported ONLY on devices with MX 9.2 and higher.  
 
 For a detailed list of configuration parameters, see [Managed Configurations](../mc). 
-
-### Using OEMConfig
-
-OEMConfig provides a single interface for managing Zebra Android devices regardless of the underlying APIs required to get the job done. OEMConfig works through Android Enterprise APIs when possible, and through Managed Configurations when no Android Enterprise API is available. 
-
-OEMConfig and the Zebra schema are available from the Google Play Store and must be used together to configure Zebra Android devices. The Schema defines the functions available for configuration and provides the data necessary to present the corresponding data-driven UI for configuring those functions. This mechanism allows Zebra to make a new Schema available as soon as new features are available for use. 
 
 -----
 

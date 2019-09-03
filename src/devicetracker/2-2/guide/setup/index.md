@@ -317,26 +317,36 @@ _Figure 6. Installation - review settings_
 _Figure 7. Installation - complete_
 9. Perform one of the following to run the server:<br>
 A. Reboot the server. The ZDVC server services automatically start as scheduled tasks.<br>
-B. Manually start the **ZDVC Backend Server** and **ZDVC WebUI Server** scheduled tasks. 
-Open **Task Scheduler** in **Administrative Tools.** For each scheduled task, select the scheduled task to run, right-click on the task and select **Run** from the menu.
+B. Manually start the **ZDVC Backend Server** and **ZDVC WebUI Server** scheduled tasks to run the services. Open **Task Scheduler** in **Administrative Tools.** For each scheduled task, right-click on the task and select **Run** from the menu.
+<img style="height:350px" src="zdvc_service_run.png"/>
+_Figure 8. Run ZDVC service_
 
 ###Server Upgrade
-ZDVC Server can be upgraded from a previous existing ZDVC installation:
-1. Double-click on the .EXE to launch the installer.
-2. Click **Yes** when prompted to upgrade.
-<img style="height:150px" src="zdvc-upgrade-1.jpg"/>
-_Figure 8. Server upgrade_
-3. At the initial window, click **Next** to proceed with the upgrade.
-4. Once installation completes, click **Finish.**
-<img style="height:430px" src="zdvc-upgrade-2.jpg"/>
-_Figure 9. Server upgrade - complete_
+ZDVC Server can be upgraded from a previous existing ZDVC installation. Prior to upgrading, the ZDVC services must be stopped. Procedure to upgrade:
+1. Stop the **ZDVC Backend Service** and **ZDVC Web UI Service** from **Task Scheduler** in **Administrative Tools.** Right-click on the service and select **End.**
+<img style="height:350px" src="zdvc_service_end.png"/>
+_Figure 9. End ZDVC service_
+2. Run the new installer.
+3. Click **Yes** when prompted to upgrade.
+4. At the initial window, click **Next** to proceed with the upgrade.
+5. Once installation completes, click **Finish.**
 
 ###Server Downgrade
-To downgrade the server, uninstall the previous version and install the older server version.
+To downgrade the server, uninstall the previous version, terminate the ZDVC server processes and install the older server version. Procedure to downgrade:
+1. Uninstall ZDVC server.
+2. Terminate the active processes running on specified ports by using one of the following methods:<br>
+A. Reboot the system.<br>
+B. Run the following commands from the command prompt to find the process ID and terminate the specific process ID:<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`netstat -aon | find /i "8080" `<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`taskkill /pid 1234 /f`
+<br>
+Where "8080" represents the specific backend server port number specified during install and "1234" represents the process ID returned from the first command. Repeat these steps for the Web UI port.
+3. Stop the **ZDVC Backend Service** and **ZDVC Web UI Service** from **Task Scheduler** in **Administrative Tools.** Right-click on the service and select **End.**
+4. Run the installer for the older server version. Follow the prompts to complete installation.
 
 ###Server Setup
 Steps for ZDVC server setup after installation: <br>
-1. **Run ZDVC Server Software.** Start the server services by launching the desktop shortcut icon "START_ZDVC_SERVICE". 
+1. **Run ZDVC Server Software.** Start the server services either manually or by rebooting the server after install. Refer to the last step in the [Server Installation](#serverinstallation) section.
 2. **View the web portal.** Open a supported browser. Enter the default server URL: `https://hostname.company.com:8443/zdvc`, where "hostname.company.com:8443" is replaced with the appropriate hostname, domain and port number.
 3. **Select app to launch.** As part of ZDVC, the server consists of multiple solution offerings. Select "Device Tracker" then enter the login credentials to login. The default user name is "SAdmin". The password is the super admin and database password entered during server installation.
 4. **Server certificate validation.** Use an SSL Tool (such as [ssltools.com](http://ssltools.com/)) to aid in diagnostics and validate the certificate chain.<br>
@@ -395,7 +405,7 @@ _Figure 23. Task Properties_
 This allows Device Tracker to run each time the server restarts regardless of the user logged in.
 -->
 ##Client Install & Setup
-Install Device Tracker client on the supported Zebra device to register the device and transmit data to the server. Client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management) system. 
+Install Device Tracker client on the supported Zebra device to register the device and transmit data to the server. The device must be connected to the same network as the server. Client install and setup can be accomplished either manually or remotely with Zebra's [StageNow](/stagenow/latest/about) or an EMM (Enterprise Mobility Management) system. 
 
 ###Client Installation
 Steps for client installation on the device, which may be performed either manually or with an EMM (Enterprise Mobile Management):

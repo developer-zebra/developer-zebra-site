@@ -43,7 +43,7 @@ The PPC client software registers the device with the on-premise PPC server and 
 
 
 ## Recent Version History
-### Added in PPC 2.0
+### New in PPC 2.0
 * New Zebra DNA Visibility Console (ZDVC) server 2.0 support with updated server URL root path.
 * Support added for Server Auth Name and Password in:
   * PPC Client

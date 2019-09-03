@@ -56,6 +56,7 @@ This section provides the server and device requirements. Device Tracker support
 
 ###Device Requirements
 Requirements for Device Tracker client:
+* The ZDVC server is installed and running.
 * The device is connected via WiFi on the same network as the server. 
 * Zebra Data Service agent is running on the device. This agent collects data from the device.
 * The server URL, user name, and password is configured in the Device Tracker client to communicate with the server. 

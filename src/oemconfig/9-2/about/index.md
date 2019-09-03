@@ -23,6 +23,24 @@ Zebra OEMConfig is an administrative tool for configuring Zebra Android devices 
 
 Over time, many of the capabilities once available only through proprietary mechanisms such as MX have been added by the Android development community. Starting as "Android for Work," these capabilities are now available as "Android Enterprise" APIs or Android Managed Configurations, both of which are based on publicly available specifications. Zebra is adopting both as part of the natural evolution of its device management system. 
 
+### What's New in v9.2
+
+
+**For Enrollment Configuration**, now supports configurable items defined in a plug-in CSP. 
+
+**Now supports forthcoming release of MX 9.2**, which adds the following features:  
+* **Device Administration Configuration: Reserve and Unreserve UI**
+* **Display Configuration: Control display size and font size**
+* **Wireless WAN Configuration: Supports WWAN advanced features**
+* **Wakeup Configuration: Control wake-up source method**
+* **Service Access Configuration: Control access by apps to specific CSPs**
+* **Worry Free WiFi Configuration: Supports Worry Free Wi-Fi password features**
+* **DataWedge Configuration: Supports restrictions**
+
+`IMPORTANT:` Some features listed above are supported ONLY on devices with MX 9.2 and higher.  
+
+For a detailed list of configuration parameters, see [Managed Configurations](../mc). 
+
 ### Using OEMConfig
 
 OEMConfig provides a single interface for managing Zebra Android devices regardless of the underlying APIs required to get the job done. OEMConfig works through Android Enterprise APIs when possible, and through Managed Configurations when no Android Enterprise API is available. 

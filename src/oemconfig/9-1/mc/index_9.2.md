@@ -16,6 +16,7 @@ menu:
     - icon: fa fa-search
       url: /oemconfig/9-1/search
 ---
+
 <b><font size="6" color="black"> Terms in this Guide</font></b>
 
 
@@ -68,7 +69,7 @@ menu:
 - ***Bold Italic type*** indicates ***values*** of a Managed Configuration such as ***On*** or ***Enable***.
 - **Bold type** indicates the name of an MC, *Group*, *Sub-group*, or *Sub-array*, such as the **Audio Configuration** *Group* or the **State** Managed Configuration.*
 - *Italic type* indicates *defined terms*, such as *Transaction* and *Step*.
-**NOTE**: Defined terms are Capitalized to differentiate from italics used for *emphasis*.
+**NOTE: *Defined terms are Capitalized to differentiate from italics used for *emphasis*.
 
 
 
@@ -150,7 +151,7 @@ By default, execution will continue with the next *Transaction Step* once execut
 - Type = string 
 
 <table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Stop&nbsp;</small></i></b></td><td><small>&nbsp;Stop&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Continue&nbsp;</small></i></b></td><td><small>&nbsp;Continue&nbsp;</small></td></tr></table> 
-<br>
+
 
 <b><font size="6" color="black"> Managed Configuration Groups</font></b>
 
@@ -235,7 +236,7 @@ The Analytics Client is turned on (enabled) by default on all devices:
 
 
 
-This Group is deprecated and will be discontinued in a subsequent version.
+This *Group* is deprecated and will be discontinued in a subsequent version.
 
 
 **Detail Information:** 
@@ -266,6 +267,9 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 - Supported from: MX 6.0.
 
 
+- Support discontinued from: MX 9.2.
+
+
 ### Push Notifications
 
 
@@ -285,6 +289,9 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 **Support Information:** 
 
 - Supported from: MX 6.0.
+
+
+- Support discontinued from: MX 9.2.
 
 
 ### Credential Type
@@ -308,6 +315,9 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 - Supported from: MX 6.0.
 
 
+- Support discontinued from: MX 9.2.
+
+
 ### Custom User Name
 
 
@@ -325,6 +335,9 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 **Support Information:** 
 
 - Supported from: MX 6.0.
+
+
+- Support discontinued from: MX 9.2.
 
 
 ### Custom Password
@@ -346,6 +359,9 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 - Supported from: MX 6.0.
 
 
+- Support discontinued from: MX 9.2.
+
+
 ### Custom Organization Key
 
 
@@ -363,6 +379,9 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 **Support Information:** 
 
 - Supported from: MX 6.0.
+
+
+- Support discontinued from: MX 9.2.
 
 
 -----
@@ -539,7 +558,11 @@ Select the range at which automatic triggering will detect the presence of an ob
 
 
 
-Use this *Group* to configure which built-in System Applications can/cannot be used on a device.
+Use this *Group* to configure which System applications can/cannot be used on a device.
+
+Blacklisting applies only to System applications, which are applications built into the device and are therefore always present. It has no effect on user applications, which are installed during staging or at some time after the device is put into service and DO NOT come preinstalled on the device. User apps are controlled using the Whitelist Configuration Group. 
+
+>WARNING: It is important to understand that an app COULD use the Blacklist Configuration Group to blacklist itself. If an app is blacklisted, then it is prevented from running once the Blacklist Configuration is successfully applied, even if the app being blacklisted was the app that requested the blacklisting to be performed.
 
 
 **Detail Information:** 
@@ -2453,6 +2476,123 @@ Enter the option value for a custom DHCP Option that the DHCP Client on a device
 
 
 -----
+## DataWedge Configuration
+
+
+
+Use this *Group* to configure DataWedge settings on a device.
+
+
+**Detail Information:** 
+
+- Key = dataWedgeStep 
+
+- Type = bundle 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Database File
+
+
+
+Enter the device path and file name of a DataWedge Database file (full or partial) to replace or be merged to modify the current configuration of DataWedge.
+
+
+**Detail Information:** 
+
+- Key = dataWedgeDatabaseFile 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Automatic Database Import
+
+
+
+Select whether DataWedge Database Files deployed to the DataWedge autoimport folder on the device will automatically trigger importing of the file.
+
+
+**Detail Information:** 
+
+- Key = dataWedgeAutoImport 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Off&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;On&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Manual Configuration
+
+
+
+Select whether Device Users will be allowed to manually alter the configuration of DataWedge from the DataWedge configuration UI.API.
+
+
+**Detail Information:** 
+
+- Key = dataWedgeManualConfiguration 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Programmatic Import
+
+
+
+Select whether whether applications will be allowed to programmatically import DataWedge Configuration Files using the DataWedge Intent API.
+
+
+**Detail Information:** 
+
+- Key = dataWedgeApiImport 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+-----
 ## Device Administration Configuration
 
 
@@ -2558,6 +2698,64 @@ Enter an XML string to be submitted for processing by the .Zebra MX Management S
 **Support Information:** 
 
 - Supported from: MX 9.1.
+
+
+### Reserve User ID Package Name
+
+
+
+Enter the *Android Package Name* of the application needing a reserved UID, when the value ***ReserveUID*** is selected for **Action**.
+
+
+**Detail Information:** 
+
+- Key = devadminActionReserveUIDPackageName 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+### Reserve User ID Package Signature
+
+
+
+Enter the *Android Package Signature* of the application needing a reserved UID, when the value ***ReserveUID*** is selected for **Action**.
+The value entered must be the Base 64 encoded content of the DER format certificate used to sign the application. The DER-format certificate can be obtained from the application author or can be extracted from the APK file if necessary. Base 64 encoding must be performed to ensure that the value is suitable for transmission as a Managed Configuration.
+
+
+**Detail Information:** 
+
+- Key = devadminActionReserveUIDPackageSignature 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+### Unreserve User ID Package Name
+
+
+
+Enter the *Android Package Name* of the application whose user ID can be released (unreserved), when the value ***UnreserveUID*** is selected for **Action**.
+
+
+**Detail Information:** 
+
+- Key = devadminActionUnreserveUIDPackageName 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
 
 
 -----
@@ -2892,6 +3090,67 @@ Select the system font size
 
 - NOT supported on Device(s): TC20 and TC25.
 
+
+- Supported from: MX 9.2.
+
+
+-----
+## Enrollment
+
+
+
+Use this *Group* to specify an Enrolllment Action to be performed on a device.
+
+
+**Detail Information:** 
+
+- Key = enrollmentStep 
+
+- Type = bundle 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+### Action
+
+
+
+Select an Action to specify an Enrollment Action to be performed:
+- If the value ***Claim Device*** is selected, you must also specify **Claim Device Token** to provide the *Device Claim Token* required to identify the Customer Account under which Ownership of the device will be Claimed.
+
+
+**Detail Information:** 
+
+- Key = enrollmentAction 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Claim Device&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+### Claim Device Token
+
+
+
+Enter the *Device Claim Token* value obtained from Zebra for a *Zebra Customer Account* that can be used to Claim Ownership of a device for that Customer.
+
+
+**Detail Information:** 
+
+- Key = enrollmentActionClaimDeviceToken 
+
+- Type = string 
+
+
+**Support Information:** 
 
 - Supported from: MX 9.2.
 
@@ -7748,7 +8007,7 @@ Select an Action to adjust various security features on a device.
 - NOT supported on Device(s): TC20 and TC25.
 
 
-- Supported from: Ask=TBD.
+- Supported from: MX 4.3.
 
 
 ### Add Key Name
@@ -8223,6 +8482,399 @@ Enter the *Android Package Signature* of an application that should be disallowe
 
 
 - Supported from: MX 8.3.
+
+
+### Use CSP Action
+
+
+
+Select an Action to Declare a CSP to be *Protected* or *Unprotected* and/or to make an application *Approved* or *Unapproved* to use a CSP that has been declared as *Protected*.
+
+
+Note that the default state for all CSPs is *Unprotected*. This means that ALL CSPs can used by ALL applications. This ensures backward compatibility wherein any applications designed to use any CSPs will continue to be allowed to do so unless you specifically choose to prevent it.
+
+
+To limit access to a CSP, the CSP must first be declared to be *Protected*. Once a CSP has been declared to be *Protected*, no applications will be allowed to use that CSP until they have been explicitly been *Approved* to use that CSP.
+
+
+- If the value ***Protect*** is selected, a specifically identified CSP will be declared to be *Protected* and hence will be limited to use by specifically *Approved* applications. You must also specify one of **Protect CSP Name** or **Custom** to identify the CSP to be declared *Protected*. You may also specify **Protect CSP Auto Approve** to automatically make OemConfig *Approved* to use that CSP.
+
+
+- If the value ***Unprotect*** is selected, a specifically identified CSP will be declared to be *Unprotected* and hence will no longer be limited to use by specifically *Approved* applications. You must also specify one of **Unprotect CSP Name** or **Custom** to identify the CSP to be declared *Unprotected*. You may also specify **Unprotect CSP Auto Unapprove** to automatically make OemConfig *Unapproved* from using that CSP.
+
+
+- If the value ***Approve*** is selected, a specifically identified application will be *Approved* to use a specifically identified *Protected* CSP. You must also specify one of **Approve CSP Name** or **Custom** to identify the CSP for which access is to be *Approved*. You must also specify **Approve Caller Package** and **Approve Caller Signature** to identify the specific application that will be *Approved* to use the specified CSP.
+
+
+- If the value ***Unapprove*** is selected, a specifically identified application will *Unapproved* from using a specifically identified *Protected* CSP. You must also specify one of **Unapprove CSP Name** or **Custom** to identify the CSP for which access is to be *Unapproved*. You must also specify one of **Unapprove Caller Package** and **Unapprove Caller Signature** to identify the specific application that will be *Unapproved* from using the specified CSP.
+
+
+**Detail Information:** 
+
+- Key = serviceCspAction 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Protect&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unprotect&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Approve&nbsp;</small></i></b></td><td><small>&nbsp;4&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unapprove&nbsp;</small></i></b></td><td><small>&nbsp;5&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Protect CSP Auto Approve
+
+
+
+Select whether OemConfig should automatically be *Approved* to use the CSP being Declared as *Protected* when the value ***Protect*** is selected for **Use CSP Action** to Declare a CSP as *Protected*. This is a convenience to eliminate the need to separately make OemConfig *Approved* to allow it to use a CSP that has been Declared as *Protected*.
+- If the value ***True*** is selected, the effect will be the same as if a **Use CSP Action** were with the value ***Approve*** to make OemConfig *Approved* to use that CSP. In most cases, it makes sense for OemConfig to be *Approved* to use any CSP that it used to declare to be *Protected*.
+- If the value ***False*** is selected, the effect will be the same as if **Use CSP Action** was not used with the value ***Approve*** to make OemConfig *Approved* to use that CSP. This should be used with caution since if OemConfig is *Unapproved* from using any CSP that it has been used to declare to be *Protected*, any subsequent use of OemConfig that relies on that CSP will fail.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionProtectAutoApprove 
+
+- Type = boolean 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Protect CSP Name
+
+
+
+Select a standard CSP that will be declared as *Protected* when the value ***Protect*** is selected for **Use CSP Action**.
+
+
+All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionProtectCspName 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AccessMgr&nbsp;</small></i></b></td><td><small>&nbsp;AccessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AnalyticsMgr&nbsp;</small></i></b></td><td><small>&nbsp;AnalyticsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppGalleryMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppGalleryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioVolUIMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioVolUIMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AutoTriggerMgr&nbsp;</small></i></b></td><td><small>&nbsp;AutoTriggerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Batch&nbsp;</small></i></b></td><td><small>&nbsp;Batch&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BatteryMgr&nbsp;</small></i></b></td><td><small>&nbsp;BatteryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothMgr&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BrowserMgr&nbsp;</small></i></b></td><td><small>&nbsp;BrowserMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BugReportMgr&nbsp;</small></i></b></td><td><small>&nbsp;BugReportMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CameraMgr&nbsp;</small></i></b></td><td><small>&nbsp;CameraMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CellularMgr&nbsp;</small></i></b></td><td><small>&nbsp;CellularMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CertMgr&nbsp;</small></i></b></td><td><small>&nbsp;CertMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clock&nbsp;</small></i></b></td><td><small>&nbsp;Clock&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ComponentMgr&nbsp;</small></i></b></td><td><small>&nbsp;ComponentMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ConditionMgr&nbsp;</small></i></b></td><td><small>&nbsp;ConditionMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DevAdmin&nbsp;</small></i></b></td><td><small>&nbsp;DevAdmin&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DeviceCentralMgr&nbsp;</small></i></b></td><td><small>&nbsp;DeviceCentralMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisplayMgr&nbsp;</small></i></b></td><td><small>&nbsp;DisplayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EncryptMgr&nbsp;</small></i></b></td><td><small>&nbsp;EncryptMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnterpriseKeyboard&nbsp;</small></i></b></td><td><small>&nbsp;EnterpriseKeyboard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EthernetMgr&nbsp;</small></i></b></td><td><small>&nbsp;EthernetMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FileMgr&nbsp;</small></i></b></td><td><small>&nbsp;FileMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GmsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GmsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GooglePlayMgr&nbsp;</small></i></b></td><td><small>&nbsp;GooglePlayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GprsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GprsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HostsMgr&nbsp;</small></i></b></td><td><small>&nbsp;HostsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Intent&nbsp;</small></i></b></td><td><small>&nbsp;Intent&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyMappingMgr&nbsp;</small></i></b></td><td><small>&nbsp;KeyMappingMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LicenseMgr&nbsp;</small></i></b></td><td><small>&nbsp;LicenseMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LifeGuardOTAManager&nbsp;</small></i></b></td><td><small>&nbsp;LifeGuardOTAManager&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NfcMgr&nbsp;</small></i></b></td><td><small>&nbsp;NfcMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersistMgr&nbsp;</small></i></b></td><td><small>&nbsp;PersistMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersonalDictionary&nbsp;</small></i></b></td><td><small>&nbsp;PersonalDictionary&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerKeyMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerKeyMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoteScannerMgr&nbsp;</small></i></b></td><td><small>&nbsp;RemoteScannerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RfidMgr&nbsp;</small></i></b></td><td><small>&nbsp;RfidMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanModeMgr&nbsp;</small></i></b></td><td><small>&nbsp;ScanModeMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SdCardMgr&nbsp;</small></i></b></td><td><small>&nbsp;SdCardMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SettingsMgr&nbsp;</small></i></b></td><td><small>&nbsp;SettingsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stats&nbsp;</small></i></b></td><td><small>&nbsp;Stats&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;StatusMgr&nbsp;</small></i></b></td><td><small>&nbsp;StatusMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ThreatMgr&nbsp;</small></i></b></td><td><small>&nbsp;ThreatMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TouchMgr&nbsp;</small></i></b></td><td><small>&nbsp;TouchMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UiMgr&nbsp;</small></i></b></td><td><small>&nbsp;UiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UsbMgr&nbsp;</small></i></b></td><td><small>&nbsp;UsbMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wi-Fi&nbsp;</small></i></b></td><td><small>&nbsp;Wi-Fi&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WirelessMgr&nbsp;</small></i></b></td><td><small>&nbsp;WirelessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></i></b></td><td><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;XmlMgr&nbsp;</small></i></b></td><td><small>&nbsp;XmlMgr&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Custom
+
+
+
+Enter the name of a custom CSP that will be declared as *Protected* when the value ***Protect*** is selected for **Use CSP Action**.
+
+
+Use when the CSP to be declared as *Protected* is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Protect CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionProtectCspNameCustom 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Unprotect CSP Auto Unapprove
+
+
+
+Select whether OemConfig should automatically be *Unapproved* from using the CSP being Declared as *Unprotected* when the value ***Unprotect*** is selected for **Use CSP Action** to declare a CSP as *Unprotected*.
+
+
+This is a convenience to eliminate the need to separately make OemConfig *Unapproved* to remove it from the list of applications that are *Approved* to use a CSP that it has been used to declare as *Unprotected*. Strictly speaking, this is not mandatory, since once a CSP has been declared as *Unprotected* the list of applications that are *Approved* to use that CSP is no longer relevant. But since the list of applications that are *Approved* to use a CSP is preserved across declaring a CSP as *Unprotected* and then later declaring that CSP as *Protected*, it is good practice to clean-up the list to avoid unexpected behavior in the future.
+
+
+- If the value ***True*** is selected, the effect will be the same as if **Use CSP Action** were used with the value ***Unapprove*** to make OemConfig *Unapproved* to use that CSP. This will NOT result in OemConfig being unable to use the CSP since declaring the CSP as *Unprotected* explicitly allows ALL applications to use that CSP.
+
+
+- If the value ***False*** is selected, the effect will be the same as if **Use CSP Action** were not used with the value ***Unapprove*** to make OemConfig *Unapproved* to use that CSP. This would effectively clean-up the list and could avoid unexpected behavior in the future, should the CSP later be *Protected* again.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionUnprotectAutoUnapprove 
+
+- Type = boolean 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Unprotect CSP Name
+
+
+
+Select a standard CSP that will be declared as *Unprotected* when the value ***Unprotect*** is selected for **Use CSP Action**.
+
+
+All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionUnprotectCspName 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AccessMgr&nbsp;</small></i></b></td><td><small>&nbsp;AccessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AnalyticsMgr&nbsp;</small></i></b></td><td><small>&nbsp;AnalyticsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppGalleryMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppGalleryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioVolUIMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioVolUIMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AutoTriggerMgr&nbsp;</small></i></b></td><td><small>&nbsp;AutoTriggerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Batch&nbsp;</small></i></b></td><td><small>&nbsp;Batch&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BatteryMgr&nbsp;</small></i></b></td><td><small>&nbsp;BatteryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothMgr&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BrowserMgr&nbsp;</small></i></b></td><td><small>&nbsp;BrowserMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BugReportMgr&nbsp;</small></i></b></td><td><small>&nbsp;BugReportMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CameraMgr&nbsp;</small></i></b></td><td><small>&nbsp;CameraMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CellularMgr&nbsp;</small></i></b></td><td><small>&nbsp;CellularMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CertMgr&nbsp;</small></i></b></td><td><small>&nbsp;CertMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clock&nbsp;</small></i></b></td><td><small>&nbsp;Clock&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ComponentMgr&nbsp;</small></i></b></td><td><small>&nbsp;ComponentMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ConditionMgr&nbsp;</small></i></b></td><td><small>&nbsp;ConditionMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DevAdmin&nbsp;</small></i></b></td><td><small>&nbsp;DevAdmin&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DeviceCentralMgr&nbsp;</small></i></b></td><td><small>&nbsp;DeviceCentralMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisplayMgr&nbsp;</small></i></b></td><td><small>&nbsp;DisplayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EncryptMgr&nbsp;</small></i></b></td><td><small>&nbsp;EncryptMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnterpriseKeyboard&nbsp;</small></i></b></td><td><small>&nbsp;EnterpriseKeyboard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EthernetMgr&nbsp;</small></i></b></td><td><small>&nbsp;EthernetMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FileMgr&nbsp;</small></i></b></td><td><small>&nbsp;FileMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GmsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GmsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GooglePlayMgr&nbsp;</small></i></b></td><td><small>&nbsp;GooglePlayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GprsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GprsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HostsMgr&nbsp;</small></i></b></td><td><small>&nbsp;HostsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Intent&nbsp;</small></i></b></td><td><small>&nbsp;Intent&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyMappingMgr&nbsp;</small></i></b></td><td><small>&nbsp;KeyMappingMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LicenseMgr&nbsp;</small></i></b></td><td><small>&nbsp;LicenseMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LifeGuardOTAManager&nbsp;</small></i></b></td><td><small>&nbsp;LifeGuardOTAManager&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NfcMgr&nbsp;</small></i></b></td><td><small>&nbsp;NfcMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersistMgr&nbsp;</small></i></b></td><td><small>&nbsp;PersistMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersonalDictionary&nbsp;</small></i></b></td><td><small>&nbsp;PersonalDictionary&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerKeyMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerKeyMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoteScannerMgr&nbsp;</small></i></b></td><td><small>&nbsp;RemoteScannerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RfidMgr&nbsp;</small></i></b></td><td><small>&nbsp;RfidMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanModeMgr&nbsp;</small></i></b></td><td><small>&nbsp;ScanModeMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SdCardMgr&nbsp;</small></i></b></td><td><small>&nbsp;SdCardMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SettingsMgr&nbsp;</small></i></b></td><td><small>&nbsp;SettingsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stats&nbsp;</small></i></b></td><td><small>&nbsp;Stats&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;StatusMgr&nbsp;</small></i></b></td><td><small>&nbsp;StatusMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ThreatMgr&nbsp;</small></i></b></td><td><small>&nbsp;ThreatMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TouchMgr&nbsp;</small></i></b></td><td><small>&nbsp;TouchMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UiMgr&nbsp;</small></i></b></td><td><small>&nbsp;UiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UsbMgr&nbsp;</small></i></b></td><td><small>&nbsp;UsbMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wi-Fi&nbsp;</small></i></b></td><td><small>&nbsp;Wi-Fi&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WirelessMgr&nbsp;</small></i></b></td><td><small>&nbsp;WirelessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></i></b></td><td><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;XmlMgr&nbsp;</small></i></b></td><td><small>&nbsp;XmlMgr&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Custom
+
+
+
+Enter the name of a custom CSP that will be declared as *Unprotected* when the value ***Unprotect*** is selected for **Use CSP Action**.
+
+
+Use when the CSP to be declared as *Unprotected* is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Unprotect CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionUnprotectCspNameCustom 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Approve CSP Name
+
+
+
+Select a standard CSP that will be *Approved* for an application when the value ***Approve*** is selected for **Use CSP Action**.
+
+
+All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionApproveCspName 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AccessMgr&nbsp;</small></i></b></td><td><small>&nbsp;AccessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AnalyticsMgr&nbsp;</small></i></b></td><td><small>&nbsp;AnalyticsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppGalleryMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppGalleryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioVolUIMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioVolUIMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AutoTriggerMgr&nbsp;</small></i></b></td><td><small>&nbsp;AutoTriggerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Batch&nbsp;</small></i></b></td><td><small>&nbsp;Batch&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BatteryMgr&nbsp;</small></i></b></td><td><small>&nbsp;BatteryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothMgr&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BrowserMgr&nbsp;</small></i></b></td><td><small>&nbsp;BrowserMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BugReportMgr&nbsp;</small></i></b></td><td><small>&nbsp;BugReportMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CameraMgr&nbsp;</small></i></b></td><td><small>&nbsp;CameraMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CellularMgr&nbsp;</small></i></b></td><td><small>&nbsp;CellularMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CertMgr&nbsp;</small></i></b></td><td><small>&nbsp;CertMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clock&nbsp;</small></i></b></td><td><small>&nbsp;Clock&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ComponentMgr&nbsp;</small></i></b></td><td><small>&nbsp;ComponentMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ConditionMgr&nbsp;</small></i></b></td><td><small>&nbsp;ConditionMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DevAdmin&nbsp;</small></i></b></td><td><small>&nbsp;DevAdmin&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DeviceCentralMgr&nbsp;</small></i></b></td><td><small>&nbsp;DeviceCentralMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisplayMgr&nbsp;</small></i></b></td><td><small>&nbsp;DisplayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EncryptMgr&nbsp;</small></i></b></td><td><small>&nbsp;EncryptMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnterpriseKeyboard&nbsp;</small></i></b></td><td><small>&nbsp;EnterpriseKeyboard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EthernetMgr&nbsp;</small></i></b></td><td><small>&nbsp;EthernetMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FileMgr&nbsp;</small></i></b></td><td><small>&nbsp;FileMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GmsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GmsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GooglePlayMgr&nbsp;</small></i></b></td><td><small>&nbsp;GooglePlayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GprsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GprsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HostsMgr&nbsp;</small></i></b></td><td><small>&nbsp;HostsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Intent&nbsp;</small></i></b></td><td><small>&nbsp;Intent&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyMappingMgr&nbsp;</small></i></b></td><td><small>&nbsp;KeyMappingMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LicenseMgr&nbsp;</small></i></b></td><td><small>&nbsp;LicenseMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LifeGuardOTAManager&nbsp;</small></i></b></td><td><small>&nbsp;LifeGuardOTAManager&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NfcMgr&nbsp;</small></i></b></td><td><small>&nbsp;NfcMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersistMgr&nbsp;</small></i></b></td><td><small>&nbsp;PersistMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersonalDictionary&nbsp;</small></i></b></td><td><small>&nbsp;PersonalDictionary&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerKeyMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerKeyMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoteScannerMgr&nbsp;</small></i></b></td><td><small>&nbsp;RemoteScannerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RfidMgr&nbsp;</small></i></b></td><td><small>&nbsp;RfidMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanModeMgr&nbsp;</small></i></b></td><td><small>&nbsp;ScanModeMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SdCardMgr&nbsp;</small></i></b></td><td><small>&nbsp;SdCardMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SettingsMgr&nbsp;</small></i></b></td><td><small>&nbsp;SettingsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stats&nbsp;</small></i></b></td><td><small>&nbsp;Stats&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;StatusMgr&nbsp;</small></i></b></td><td><small>&nbsp;StatusMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ThreatMgr&nbsp;</small></i></b></td><td><small>&nbsp;ThreatMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TouchMgr&nbsp;</small></i></b></td><td><small>&nbsp;TouchMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UiMgr&nbsp;</small></i></b></td><td><small>&nbsp;UiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UsbMgr&nbsp;</small></i></b></td><td><small>&nbsp;UsbMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wi-Fi&nbsp;</small></i></b></td><td><small>&nbsp;Wi-Fi&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WirelessMgr&nbsp;</small></i></b></td><td><small>&nbsp;WirelessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></i></b></td><td><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;XmlMgr&nbsp;</small></i></b></td><td><small>&nbsp;XmlMgr&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Custom
+
+
+
+Enter the name of a custom CSP that will be *Approved* to use a CSP when the value ***Approve*** is selected for **Use CSP Action**.
+
+
+Use when the CSP to be *Approved* for an application is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Approve CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionApproveCspNameCustom 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Approve Caller Package
+
+
+
+Enter the *Android Package Name* of an application that should be *Approved* to use a CSP when the value ***Approve*** is selected for **Use CSP Action**, to identify the specific application that should be *Approved* to use the CSP.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionApproveCallerPackage 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Approve Caller Signature
+
+
+
+Enter the *Android Package Signature* of an application that should be *Approved* to use a CSP when the value ***Approve*** is selected for **Use CSP Action**, to provide the *Android Package Signature* of the specific application that should be *Approved* to use the CSP.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionApproveCallerSignature 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Unapprove CSP Name
+
+
+
+Select a standard CSP that will be *Unapproved* for an application when the value ***Unapprove*** is selected for **Use CSP Action**.
+
+
+All standard CSP names are listed and can be picked from the list instead of having to enter them manually. This can help to avoid errors that could occur from mis-typing a CSP name. **Custom** could alternately be used in cases where typing in the CSP name is preferable.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionUnapproveCspName 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;AccessMgr&nbsp;</small></i></b></td><td><small>&nbsp;AccessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AnalyticsMgr&nbsp;</small></i></b></td><td><small>&nbsp;AnalyticsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppGalleryMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppGalleryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AppMgr&nbsp;</small></i></b></td><td><small>&nbsp;AppMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AudioVolUIMgr&nbsp;</small></i></b></td><td><small>&nbsp;AudioVolUIMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;AutoTriggerMgr&nbsp;</small></i></b></td><td><small>&nbsp;AutoTriggerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Batch&nbsp;</small></i></b></td><td><small>&nbsp;Batch&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BatteryMgr&nbsp;</small></i></b></td><td><small>&nbsp;BatteryMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BluetoothMgr&nbsp;</small></i></b></td><td><small>&nbsp;BluetoothMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BrowserMgr&nbsp;</small></i></b></td><td><small>&nbsp;BrowserMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;BugReportMgr&nbsp;</small></i></b></td><td><small>&nbsp;BugReportMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CameraMgr&nbsp;</small></i></b></td><td><small>&nbsp;CameraMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CellularMgr&nbsp;</small></i></b></td><td><small>&nbsp;CellularMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;CertMgr&nbsp;</small></i></b></td><td><small>&nbsp;CertMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Clock&nbsp;</small></i></b></td><td><small>&nbsp;Clock&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ComponentMgr&nbsp;</small></i></b></td><td><small>&nbsp;ComponentMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ConditionMgr&nbsp;</small></i></b></td><td><small>&nbsp;ConditionMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DevAdmin&nbsp;</small></i></b></td><td><small>&nbsp;DevAdmin&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DeviceCentralMgr&nbsp;</small></i></b></td><td><small>&nbsp;DeviceCentralMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;DisplayMgr&nbsp;</small></i></b></td><td><small>&nbsp;DisplayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EncryptMgr&nbsp;</small></i></b></td><td><small>&nbsp;EncryptMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EnterpriseKeyboard&nbsp;</small></i></b></td><td><small>&nbsp;EnterpriseKeyboard&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;EthernetMgr&nbsp;</small></i></b></td><td><small>&nbsp;EthernetMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;FileMgr&nbsp;</small></i></b></td><td><small>&nbsp;FileMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GmsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GmsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GooglePlayMgr&nbsp;</small></i></b></td><td><small>&nbsp;GooglePlayMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;GprsMgr&nbsp;</small></i></b></td><td><small>&nbsp;GprsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;HostsMgr&nbsp;</small></i></b></td><td><small>&nbsp;HostsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Intent&nbsp;</small></i></b></td><td><small>&nbsp;Intent&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;KeyMappingMgr&nbsp;</small></i></b></td><td><small>&nbsp;KeyMappingMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LicenseMgr&nbsp;</small></i></b></td><td><small>&nbsp;LicenseMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;LifeGuardOTAManager&nbsp;</small></i></b></td><td><small>&nbsp;LifeGuardOTAManager&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;NfcMgr&nbsp;</small></i></b></td><td><small>&nbsp;NfcMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersistMgr&nbsp;</small></i></b></td><td><small>&nbsp;PersistMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PersonalDictionary&nbsp;</small></i></b></td><td><small>&nbsp;PersonalDictionary&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerKeyMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerKeyMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;PowerMgr&nbsp;</small></i></b></td><td><small>&nbsp;PowerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RemoteScannerMgr&nbsp;</small></i></b></td><td><small>&nbsp;RemoteScannerMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;RfidMgr&nbsp;</small></i></b></td><td><small>&nbsp;RfidMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ScanModeMgr&nbsp;</small></i></b></td><td><small>&nbsp;ScanModeMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SdCardMgr&nbsp;</small></i></b></td><td><small>&nbsp;SdCardMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;SettingsMgr&nbsp;</small></i></b></td><td><small>&nbsp;SettingsMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Stats&nbsp;</small></i></b></td><td><small>&nbsp;Stats&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;StatusMgr&nbsp;</small></i></b></td><td><small>&nbsp;StatusMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ThreatMgr&nbsp;</small></i></b></td><td><small>&nbsp;ThreatMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;TouchMgr&nbsp;</small></i></b></td><td><small>&nbsp;TouchMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UiMgr&nbsp;</small></i></b></td><td><small>&nbsp;UiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;UsbMgr&nbsp;</small></i></b></td><td><small>&nbsp;UsbMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Wi-Fi&nbsp;</small></i></b></td><td><small>&nbsp;Wi-Fi&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WirelessMgr&nbsp;</small></i></b></td><td><small>&nbsp;WirelessMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></i></b></td><td><small>&nbsp;WorryFreeWiFiMgr&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;XmlMgr&nbsp;</small></i></b></td><td><small>&nbsp;XmlMgr&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Custom
+
+
+
+Enter the name of a custom CSP that will be *Unapproved* for an application when the value ***Unapprove*** is selected for **Use CSP Action**.
+
+
+Use when the CSP to be *Unapproved* for an application is not in the list of standard CSP names, such as when the CSP is a Plug-In CSP. Standard CSP names COULD be entered, but it would generally be preferable to use **Unapprove CSP Name** instead, since picking a name from a list is less error-prone than typing the name.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionUnapproveCspNameCustom 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Unapprove Caller Package
+
+
+
+Enter the *Android Package Name* of an application that should be *Unapproved* from using a CSP when the value ***Unapprove*** is selected for **Use CSP Action**, to identify the specific application that should be *Unapproved* from using the CSP.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionUnapproveCallerPackage 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+### Unapprove Caller Signature
+
+
+
+Enter the *Android Package Signature* of an application that should be *Unapproved* from using a CSP when the value ***Unapprove*** is selected for **Use CSP Action**, to provide the *Android Package Signature* of the specific application that should be *Unapproved* from using the CSP.
+
+
+**Detail Information:** 
+
+- Key = serviceCspActionUnapproveCallerSignature 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
 
 
 -----
@@ -8702,7 +9354,7 @@ Select an Action to configure whether a given threat will be monitored.
 - NOT supported on Device(s): TC20 and TC25.
 
 
-- Supported from: Ask=TBD.
+- Supported from: MX 4.3.
 
 
 ### Detect Threat Type
@@ -8731,7 +9383,7 @@ Select the type of threat that will be monitored when the value ***Detect*** is 
 - NOT supported on Device(s): TC20 and TC25.
 
 
-- Supported from: Ask=TBD.
+- Supported from: MX 4.3.
 
 
 ### Detect Countermeasures
@@ -8938,7 +9590,7 @@ Select the type of threat that will NOT be monitored, and hence cannot be detect
 - NOT supported on Device(s): TC20 and TC25.
 
 
-- Supported from: Ask=TBD.
+- Supported from: MX 4.3.
 
 
 ### Periodic Scan
@@ -9088,7 +9740,7 @@ Use this *Group* to configure the UI behavior of the Zebra Volume Control on a d
 - NOT supported on Device(s): TC20 and TC25.
 
 
-- Supported from: ASK=TBD.
+- Supported from: MX 4.4.
 
 
 ### Action
@@ -9558,6 +10210,30 @@ Use this *Group* to configure Wakeups on a device.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+### Select Wakeup Source Method
+
+
+
+Select the Method that will be used to implement and control device Wake-up. - Hardware - Use Hardware Signals for Wake-Up - Software - Use Software (Mappable Keycodes) for Wake-Up
+
+
+**Detail Information:** 
+
+- Key = selectwakeupsourceMethod 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Hardware&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Software&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
 ### Wakeup Sources
 
 
@@ -9590,7 +10266,11 @@ Select whether all controllable Wakeup Sources should be turned on or off.
 
 
 
-Use this *Group* to configure which applications can be installed and run on a device.
+Use this *Group* to configure which user applications can be installed and run on a device. 
+
+Whitelisting applies only to user applications; it has no effect on System applications, which are applications built into the device and are therefore always present. User applications are those that DO NOT come preinstalled on the device, but are installed during staging or at some time after the device is put into service. System apps are controlled using the Blacklist Configuration Group. 
+
+>WARNING: It is important to understand that if an app uses the Whitelist Configuration Group to enable whitelisting, then that app becomes subject to whitelisting. If the app does not add itself to the "whitelist," the app is prevented from running once the configuration is successfully applied.
 
 
 **Detail Information:** 
@@ -9878,7 +10558,7 @@ Use this *Group* to configure Global settings that affect the Wireless Local Are
 
 **Support Information:** 
 
-- Supported from: Ask=TBD.
+- Supported from: MX 4.1.
 
 
 ### Auto Wakeup
@@ -11152,6 +11832,421 @@ Select whether the WWAN adapter should handle multiple SIM Card(s) in Dual SIM D
 - Supported from: MX 8.1.
 
 
+### Device Administrator Advanced Features
+
+
+
+Use this *Sub-group* to configure Device Administrator (DA) Advanced Features as part of Wireless WAN configuration.
+
+
+**Detail Information:** 
+
+- Key = wwanDaAdvancedFeatures 
+
+- Type = bundle 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Lock Action
+
+
+
+Select the Lock Action to be performed.
+- If the value ***Lock*** is selected, you must also specify **Lock Type**, **Lock Unlock Code**, **Lock Unlock Retry Count**, and **Lock Network List** to provide the detail information required to perform the Lock. You must also specify **Lock ICCID** if the value ***ICCID Lock*** is selected for **Lock Type**.
+If the value ***Unlock*** is selected, you must also specify **Lock Type** to identify the type of prior Lock to be Unlocked and you must also specify **Lock Unlock Code** to provide the same *Unlock Code* provided when the Lock was performed.
+
+
+**Detail Information:** 
+
+- Key = wwanDaLockAction 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Lock&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unlock&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Lock Type
+
+
+
+Select the Lock Type to be used for a Lock Action to be performed.
+
+
+**Detail Information:** 
+
+- Key = wwanDaLockActionLockType 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Network Lock&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ICCID Lock&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Lock Unlock Code
+
+
+
+Enter a string value to use as the Unlock Code for a Lock Action. The same value will need to be provided to perform a subsequent Unlock Action.
+
+
+**Detail Information:** 
+
+- Key = wwanDaLockActionLockUnlockCode 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Lock Unlock Retry Count
+
+
+
+Enter the integer Retry Count, from 1-99, for a Lock Action, indicating the maximum number of times a subsequent Unlock Action can be attempted unsuccessfully before disallowing Unlock.
+
+
+**Detail Information:** 
+
+- Key = wwanDaLockActionLockUnlockRetryCount 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Lock Network List
+
+
+
+Enter the Network List, as one or more MCC or MNC values, identifying the network(s) to which a device should be Locked. To provide multiple values, separate with commas (e.g. 1,310410,31012).
+
+
+**Detail Information:** 
+
+- Key = wwanDaLockActionLockNetworkList 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Lock ICCID
+
+
+
+Enter the ICCID, also known as the SIM Card identifier, identifying the ICCID/SIM Card to which a device should be Locked.
+
+
+**Detail Information:** 
+
+- Key = wwanDaLockActionLockIccid 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Unlock Type
+
+
+
+Select the the Unlock Type to be used for a Unlock Action to be performed. This should match the Lock Type of the prior Lock Action to be reversed.
+
+
+**Detail Information:** 
+
+- Key = wwanDaLockActionUnlockType 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Network Unlock&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;ICCID Unlock&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Unlock Unlock Code
+
+
+
+Enter a string value to use as the Unlock Code for an Unlock Action. This must be the same value previously specified for the Lock Action to be reversed.
+
+
+**Detail Information:** 
+
+- Key = wwanDaLockActionUnlockUnlockCode 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+### Mobile Network Operator Advanced Features
+
+
+
+Use this *Sub-group* to configure Mobile Network Operator (MNO) Advanced Features as part of Wireless WAN configuration.
+
+
+**Detail Information:** 
+
+- Key = wwanMnoAdvancedFeatures 
+
+- Type = bundle 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Lock Action
+
+
+
+Select the Lock Action to be performed.
+
+
+- If the value ***Lock*** is selected, you must also specify **Lock Activation ID**, **Lock Control Key**, **Lock Network List**, and **Lock Unlock Retry Count** to provide the detail information required to perform the Lock.
+
+
+- If the value ***Unlock*** is selected, you must also specify **Unlock Unlock Code** to provide the device-specific *Unlock Code* provided by the MNO that Locked the device and that is required to reverse the Lock.
+
+
+**Detail Information:** 
+
+- Key = wwanMnoLockAction 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Lock&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Unlock&nbsp;</small></i></b></td><td><small>&nbsp;2&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Lock Activation ID
+
+
+
+Enter the Activation ID that will grant the MNO the permission to perform a Lock Action. The Activation ID must be acquired by an MNO from Zebra and typically will be tied to a set of pre-defined device identities and will enable an MNO to Lock those devices but no others.
+
+
+**Detail Information:** 
+
+- Key = wwanMnoLockActionLockActivationId 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Lock Control Key
+
+
+
+Enter the Control Key that will later be used to create Unlock Codes for devices Locked using that Control Key. An MNO can later use a tool provided by Zebra to produce individual one-time-use Unlock Codes that can be used to Unlock individual devices that were previously Locked by that MNO using that Control Key.
+
+
+**Detail Information:** 
+
+- Key = wwanMnoLockActionLockControlKey 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Lock Unlock Retry Count
+
+
+
+Enter the integer Retry Count, from 1-99, for a Lock Action, indicating the maximum number of times a subsequent Unlock Action can be attempted unsuccessfully before disallowing Unlock.
+
+
+**Detail Information:** 
+
+- Key = wwanMnoLockActionLockUnlockRetryCount 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Lock Network List
+
+
+
+Enter the Network List, as one or more MCC or MNC values, identifying the network(s) to which a device should be Locked. To provide multiple values, separate with commas (e.g. 1,310410,31012).
+
+
+**Detail Information:** 
+
+- Key = wwanMnoLockActionLockNetworkList 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Unlock Unlock Code
+
+
+
+Enter a string value to use as the Unlock Code for an Unlock Action. This must be a device-specific value provided by the MNO that originally performed the Lock Action to be reversed.
+
+
+**Detail Information:** 
+
+- Key = wwanMnoLockActionUnlockUnlockCode 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+### Service Technician Advanced Features
+
+
+
+Use this *Sub-group* to configure Service Technician Advanced Features as part of Wireless WAN configuration.
+
+
+**Detail Information:** 
+
+- Key = wwanSvcAdvancedFeatures 
+
+- Type = bundle 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Activation ID
+
+
+
+Enter the Activation ID that will grant the Service Technician the permission to perform a Service operation. The Activation ID must be acquired by a Service Technician from Zebra.
+
+
+**Detail Information:** 
+
+- Key = wwanSvcActivationId 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Export Lock Info
+
+
+
+Select whether the current MNO Lock Information will be Exported and stored to a file on the SD Card of the device.
+
+
+**Detail Information:** 
+
+- Key = wwanSvcExport 
+
+- Type = boolean 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Wipe Lock Info
+
+
+
+Select whether the current MNO Lock Information will be Wiped, thus forcing the device to return to an Unlocked state.
+
+
+**Detail Information:** 
+
+- Key = wwanSvcWipe 
+
+- Type = boolean 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
+#### Import Lock Info
+
+
+
+Select whether MNO Lock Information will be Imported from a file stored on the SD Card of the device and used to Lock a device based on information previously Exported from the same or a different device.
+
+
+**Detail Information:** 
+
+- Key = wwanSvcImport 
+
+- Type = boolean 
+
+
+**Support Information:** 
+
+- Supported from: MX 9.2.
+
+
 -----
 ## Worry Free WiFi Configuration
 
@@ -11172,7 +12267,7 @@ Use this *Group* to configure the Worry Free WiFi features in a device.
 - NOT supported on Device(s): TC20 and TC25.
 
 
-- Supported from: ASK=TBD.
+- Supported from: MX 8.3.
 
 
 ### State
@@ -11265,6 +12360,76 @@ Enter the Password Value required by the Device User to access the in-device UI 
 
 
 - Supported from: MX 8.3.
+
+
+#### Worry Free WiFi Configuration - Global Settings Temporary Password Allow
+
+
+
+Select whether a Temporary Password feature will be Allowed or Disallowed.
+- If the value ***Disallow*** is selected, the Temporary Password feature will NOT be Allowed and you do not need to specify any additional information.
+- If the value ***Allow*** is selected, the Temporary Password feature WILL be Allowed and you must also specify **Worry Free WiFi Configuration - Global Settings Temporary Password Duration** and **Worry Free WiFi Configuration - Global Settings Temporary Password Duration** to provide the Temporary Password Value and the Duration for which the Temporary Password Feature may be used.
+
+
+**Detail Information:** 
+
+- Key = wfWiFiTemporaryPasswordState 
+
+- Type = string 
+
+<table border="1"><tr align="center"><th><small>&nbsp;UI Choice&nbsp;</small></th><th><small>&nbsp;JSON Value&nbsp;</small></th></tr align="center"><tr align="center"><td><b><i><small>&nbsp;Disallow&nbsp;</small></i></b></td><td><small>&nbsp;0&nbsp;</small></td></tr><tr align="center"><td><b><i><small>&nbsp;Allow&nbsp;</small></i></b></td><td><small>&nbsp;1&nbsp;</small></td></tr></table> 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+#### Worry Free WiFi Configuration - Global Settings Temporary Password Duration
+
+
+
+Enter a duration in hours after which a Temporary Password expires and must be replaced with a new one.
+
+
+**Detail Information:** 
+
+- Key = wfWiFiTemporaryPasswordDuration 
+
+- Type = integer 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
+
+
+#### Temporary Password Value
+
+
+
+Enter a Temporary Password that can be shared with a Device User to provide temporary and limited access to configure Worry Free WiFi to collect packets and encrypt those packets without having to share the full administrative password (which provides full access and never expires).
+
+
+**Detail Information:** 
+
+- Key = wfWiFiTemporaryPassword 
+
+- Type = string 
+
+
+**Support Information:** 
+
+- NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.2.
 
 
 #### Device User Control

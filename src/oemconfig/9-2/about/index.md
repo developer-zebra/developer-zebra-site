@@ -44,7 +44,7 @@ OEMConfig and the Zebra schema are available from the Google Play Store and must
 * **Worry Free WiFi Configuration: Supports Worry Free Wi-Fi password features**
 * **DataWedge Configuration: Supports restrictions**
 
-`IMPORTANT:` Features listed above are supported ONLY on devices with MX 9.2 and higher.  
+`IMPORTANT:` Features listed above are supported ONLY on devices with MX 9.2 and higher. [Which version is installed?](http://techdocs.zebra.com/mx/mx-version-on-device/)
 
 For a detailed list of configuration parameters, see [Managed Configurations](../mc). 
 

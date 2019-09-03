@@ -2,19 +2,19 @@
 title: Zebra Managed Configurations
 layout: guide.html
 product: OEMConfig
-productversion: '9.2'
+productversion: '9.1'
 menu:
   items:
     - title: About
-      url: /oemconfig/9-2/about
+      url: /oemconfig/9-1/about
     - title: Setup
-      url: /oemconfig/9-2/setup
+      url: /oemconfig/9-1/setup
     - title: FAQs
-      url: /oemconfig/9-2/faq
+      url: /oemconfig/9-1/faq
     - title: Managed Configurations
-      url: /oemconfig/9-2/mc
+      url: /oemconfig/9-1/mc
     - icon: fa fa-search
-      url: /oemconfig/9-2/search
+      url: /oemconfig/9-1/search
 ---
 
 

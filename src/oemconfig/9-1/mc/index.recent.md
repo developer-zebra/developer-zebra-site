@@ -202,6 +202,9 @@ On some devices, the ability to turn off (disable) the Analytics Client may not 
 
 **Support Information:** 
 
+- Supported from: MX 4.3.
+
+
 ### User Control of State
 
 
@@ -224,6 +227,9 @@ The Analytics Client is turned on (enabled) by default on all devices:
 
 
 **Support Information:** 
+
+- Supported from: MX 7.2.
+
 
 -----
 ## AppGallery Configuration
@@ -258,6 +264,12 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 
 **Support Information:** 
 
+- Supported from: MX 6.0.
+
+
+- Support discontinued from: MX 9.2.
+
+
 ### Push Notifications
 
 
@@ -275,6 +287,12 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 
 
 **Support Information:** 
+
+- Supported from: MX 6.0.
+
+
+- Support discontinued from: MX 9.2.
+
 
 ### Credential Type
 
@@ -294,6 +312,12 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 
 **Support Information:** 
 
+- Supported from: MX 6.0.
+
+
+- Support discontinued from: MX 9.2.
+
+
 ### Custom User Name
 
 
@@ -309,6 +333,12 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 
 
 **Support Information:** 
+
+- Supported from: MX 6.0.
+
+
+- Support discontinued from: MX 9.2.
+
 
 ### Custom Password
 
@@ -326,6 +356,12 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 
 **Support Information:** 
 
+- Supported from: MX 6.0.
+
+
+- Support discontinued from: MX 9.2.
+
+
 ### Custom Organization Key
 
 
@@ -341,6 +377,12 @@ This Managed Configuration is deprecated and will be discontinued in a subsequen
 
 
 **Support Information:** 
+
+- Supported from: MX 6.0.
+
+
+- Support discontinued from: MX 9.2.
+
 
 -----
 ## Audio Configuration
@@ -392,6 +434,9 @@ Select the mute and vibrate behavior of a device.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ### Replication Action
 
 
@@ -417,6 +462,9 @@ Select the audio replication behavior of of a device.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.2.
 
 
 -----
@@ -472,6 +520,9 @@ Select whether and how automatic triggering should occur on a device.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.1.
+
+
 ### Range
 
 
@@ -497,6 +548,9 @@ Select the range at which automatic triggering will detect the presence of an ob
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 -----
@@ -553,6 +607,9 @@ To prevent the use of a built-in System Application, you can disable it and ther
 
 **Support Information:** 
 
+- Supported from: MX 4.2.
+
+
 ### Allow System Package Name
 
 
@@ -569,6 +626,9 @@ Enter the *Android Package Name* that identifies a *Built-In System Application*
 
 **Support Information:** 
 
+- Supported from: MX 4.2.
+
+
 ### Disallow System Package Name
 
 
@@ -584,6 +644,9 @@ Enter the *Android Package Name* that identifies a *Built-In System Application*
 
 
 **Support Information:** 
+
+- Supported from: MX 4.2.
+
 
 -----
 ## Bluetooth Configuration
@@ -633,6 +696,9 @@ Devices are NOT *Discoverable* via Bluetooth by default except when the Bluetoot
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.2.
+
+
 ### New Pairings
 
 
@@ -657,6 +723,9 @@ devices will accept new Bluetooth Pairings by default.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 5.1.
 
 
 ### Turn On/Off Silent Pairing
@@ -686,6 +755,9 @@ Note that even when the device CAN silently perform Bluetooth Pairings, it WILL 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.0.
 
 
 ### Action
@@ -723,6 +795,9 @@ Since the list of rules is empty by default on devices, Bluetooth *Silent Pairin
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.0.
+
+
 ### Add Rule Name
 
 
@@ -740,6 +815,9 @@ Enter a name for a new rule to be added to the list of rules that control the op
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.0.
 
 
 ### Add Rule Device Class
@@ -764,6 +842,9 @@ When a *Device Class* is specified for a rule, Bluetooth *Silent Pairing* will a
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.0.
+
+
 ### Add Rule Device Upper Address Part
 
 
@@ -784,6 +865,9 @@ When a *Device Upper Address Part* is selected for a rule, Bluetooth *Silent Pai
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.0.
 
 
 ### Remove Rule Name
@@ -810,6 +894,9 @@ Any existing rule that has the specified name will be removed.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.0.
+
+
 ### Remove Rule Device Class
 
 
@@ -834,6 +921,9 @@ Any existing rule or rules that have the specified *Device Class* will be remove
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.0.
+
+
 ### Remove Rule Device Upper Address Part
 
 
@@ -855,6 +945,9 @@ Any existing rule or rules that have the specified *Device Upper Address Part* w
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.0.
+
+
 -----
 ## Bug Reporting Configuration
 
@@ -873,6 +966,9 @@ Use this *Group* to configure Bug Reporting on a device.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.3.
 
 
 ### Extensions State
@@ -898,6 +994,9 @@ Select whether the Standard Android or Zebra Extended Bug Reporting should be us
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 ### Intent Enable
 
 
@@ -919,6 +1018,9 @@ Select whether the Zebra Extended Bug Reporting should allow a Bug Report to be 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.0.
 
 
 ### Screenshot Enable
@@ -944,6 +1046,9 @@ Select whether the Zebra Extended Bug Reporting should be allowed to capture scr
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.0.
+
+
 ### Show In Power Key Menu
 
 
@@ -965,6 +1070,9 @@ Select whether Zebra Extended Bug Reporting should display an option to initiate
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.3.
 
 
 ### ANR Error Action
@@ -991,6 +1099,9 @@ Select whether Zebra Extended Bug Reporting should watch for the occurrence of A
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.0.
+
+
 ### Unexpected Error Action
 
 
@@ -1013,6 +1124,9 @@ Select whether Zebra Extended Bug Reporting should watch for the occurrence of U
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.0.
 
 
 ### Send to Cloud Detail
@@ -1057,6 +1171,9 @@ Select whether Zebra Extended Bug Reporting should automatically send copies of 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 #### Time to Live
 
 
@@ -1078,6 +1195,9 @@ Enter a timeout value, the expiration of which will cause the sending Bug Report
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 ### Store in Device Detail
@@ -1122,6 +1242,9 @@ Select whether Zebra Extended Bug Reporting should automatically store copies of
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 #### File Path
 
 
@@ -1142,6 +1265,9 @@ Note that either fixed or removable storage are supported, but the specified pat
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.3.
 
 
 #### Time to Live
@@ -1165,6 +1291,9 @@ Enter a timeout value, the expiration of which will cause the storing of Bug Rep
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 ### Send Via Email Detail
@@ -1209,6 +1338,9 @@ Select whether Zebra Extended Bug Reporting should automatically send copies of 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 #### SMTP Host
 
 
@@ -1231,6 +1363,9 @@ Note that you must have access to an email account on the selected SMTP Server a
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 #### SMTP Port
 
 
@@ -1248,6 +1383,9 @@ Enter the TCP port number of the SMTP (email) Server via which emails will be se
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.3.
 
 
 #### Sender ID
@@ -1272,6 +1410,9 @@ Note that you must have access to a valid email account on the configured SMTP (
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 #### Sender Password
 
 
@@ -1291,6 +1432,9 @@ Enter the password of the email account that will be used as the source (from ad
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 #### Send To Address
 
 
@@ -1308,6 +1452,9 @@ Enter the email address of the email account that will be used as the destinatio
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.3.
 
 
 #### Time to Live
@@ -1331,6 +1478,9 @@ Enter a timeout value, the expiration of which will cause the sending of Bug Rep
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 ### Dialog Elements
@@ -1396,6 +1546,9 @@ Select the type of a single dialog element being included in the dialog that wil
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 ##### Error Name Text Box Text
 
 
@@ -1413,6 +1566,9 @@ Enter the text to be pre-populated into a text box that will be added to the dia
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.3.
 
 
 ##### Label Text
@@ -1434,6 +1590,9 @@ Enter the text of a label that will be added to the dialog presented to the Devi
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 ##### Text Box Text
 
 
@@ -1453,6 +1612,9 @@ Enter the text that be pre-populated into a text box added to the dialog present
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 ### Dialog Time Out
 
 
@@ -1470,6 +1632,9 @@ Enter the amount of inactivity time (time in milliseconds with no Device User ac
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.3.
 
 
 -----
@@ -1515,6 +1680,9 @@ Select whether the Rear Facing Camera, if present on a device, can be used to ta
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Use Of Front Camera
 
 
@@ -1538,6 +1706,9 @@ Select whether the Front Facing (selfie) Camera, if present on a device, can be 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Use Of Imager
 
 
@@ -1559,6 +1730,9 @@ Select whether the Imager (special-purpose image capture device), if present on 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 5.1.
 
 
 -----
@@ -1594,6 +1768,9 @@ Select whether time and date configuration will be performed explicitly, through
 
 **Support Information:** 
 
+- Supported from: MX 4.2.
+
+
 ### Manual Date
 
 
@@ -1609,6 +1786,9 @@ Enter the date to be set on a device when the value ***Manual*** is selected for
 
 
 **Support Information:** 
+
+- Supported from: MX 4.1.
+
 
 ### Manual Time
 
@@ -1626,6 +1806,9 @@ Enter the time to be set on a device when the value ***Manual*** is selected for
 
 **Support Information:** 
 
+- Supported from: MX 4.1.
+
+
 ### Auto NTP Server Address
 
 
@@ -1641,6 +1824,9 @@ Enter the address of the Network Time Protocol (NTP) Server to be used to perfor
 
 
 **Support Information:** 
+
+- Supported from: MX 4.2.
+
 
 ### Auto NTP Sync Interval
 
@@ -1660,6 +1846,9 @@ Enter the interval at which automatic date and time configuration will be perfor
 
 **Support Information:** 
 
+- Supported from: MX 4.2.
+
+
 ### Time Zone Mode
 
 
@@ -1678,6 +1867,9 @@ Select whether time zone configuration will be performed explicitly, using other
 
 **Support Information:** 
 
+- Supported from: MX 6.0.
+
+
 ### Zone
 
 
@@ -1693,6 +1885,9 @@ Enter the time zone to be set on a device when the value ***Manual*** is selecte
 
 
 **Support Information:** 
+
+- Supported from: MX 4.1.
+
 
 ### Time Format
 
@@ -1711,6 +1906,9 @@ Select whether the format in which time will be displayed on the device will be 
 
 
 **Support Information:** 
+
+- Supported from: MX 6.0.
+
 
 -----
 ## DHCP Option Configuration
@@ -1753,6 +1951,9 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 **Support Information:** 
 
+- Supported from: MX 4.4.
+
+
 ### Request Broadcast Address (Option 28)
 
 
@@ -1770,6 +1971,9 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 
 **Support Information:** 
+
+- Supported from: MX 4.4.
+
 
 ### Request NTP Server (Option 42)
 
@@ -1789,6 +1993,9 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 **Support Information:** 
 
+- Supported from: MX 4.4.
+
+
 ### Request TFTP Server Address (Option 66)
 
 
@@ -1806,6 +2013,9 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 
 **Support Information:** 
+
+- Supported from: MX 4.4.
+
 
 ### Request Vendor Encapsulated Options (Option 43)
 
@@ -1825,6 +2035,9 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 **Support Information:** 
 
+- Supported from: MX 4.5.
+
+
 ### Request Domain Search List (Option 119)
 
 
@@ -1842,6 +2055,9 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 
 **Support Information:** 
+
+- Supported from: MX 4.4.
+
 
 ### Request TFTP Server Names (Option 150)
 
@@ -1861,6 +2077,9 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 **Support Information:** 
 
+- Supported from: MX 4.4.
+
+
 ### Request Vendor Specific Option#1 (Option 186)
 
 
@@ -1878,6 +2097,9 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 
 **Support Information:** 
+
+- Supported from: MX 4.5.
+
 
 ### Request Vendor Specific Option#2 (Option 188)
 
@@ -1897,6 +2119,9 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 **Support Information:** 
 
+- Supported from: MX 4.5.
+
+
 ### Request Vendor Specific Option#3 (Option 230)
 
 
@@ -1914,6 +2139,9 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 
 **Support Information:** 
+
+- Supported from: MX 6.3.
+
 
 ### Send Client Identifier State (Option 61)
 
@@ -1935,6 +2163,9 @@ Select whether the DHCP Client on a device will send a *Client Identifier* to th
 
 **Support Information:** 
 
+- Supported from: MX 6.3.
+
+
 ### Send Client Identifier Value (Option 61)
 
 
@@ -1950,6 +2181,9 @@ Enter the *Client Identifier* that the DHCP Client on a device will send to the 
 
 
 **Support Information:** 
+
+- Supported from: MX 6.3.
+
 
 ### Send Host Name State (Option 12)
 
@@ -1971,6 +2205,9 @@ Select whether the DHCP Client on a device will send a *Host Name* to the DHCP S
 
 **Support Information:** 
 
+- Supported from: MX 4.4.
+
+
 ### Send Host Name Value (Option 12)
 
 
@@ -1986,6 +2223,9 @@ Enter the *Host Name* that the DHCP Client on a device will send to the DHCP Ser
 
 
 **Support Information:** 
+
+- Supported from: MX 4.4.
+
 
 ### Send User Class State (Option 77)
 
@@ -2007,6 +2247,9 @@ Select whether the DHCP Client on a device will send a *User Class* to the DHCP 
 
 **Support Information:** 
 
+- Supported from: MX 4.4.
+
+
 ### Send User Class Value (Option 77)
 
 
@@ -2022,6 +2265,9 @@ Enter the *User Class* that the DHCP Client on a device will send to the DHCP Se
 
 
 **Support Information:** 
+
+- Supported from: MX 4.4.
+
 
 ### Send Vendor Class State (Option 60)
 
@@ -2043,6 +2289,9 @@ Select whether the DHCP Client on a device will send a *Vendor Class* to the DHC
 
 **Support Information:** 
 
+- Supported from: MX 4.5.
+
+
 ### Send Vendor Class Value (Option 60)
 
 
@@ -2058,6 +2307,9 @@ Enter the *Vendor Class* that the DHCP Client on a device will send to the DHCP 
 
 
 **Support Information:** 
+
+- Supported from: MX 4.5.
+
 
 ### Send FQDN State (Option 81)
 
@@ -2079,6 +2331,9 @@ Select whether the DHCP Client on a device will send a *Fully Qualified Domain N
 
 **Support Information:** 
 
+- Supported from: MX 6.3.
+
+
 ### Send FQDN Value (Option 81)
 
 
@@ -2094,6 +2349,9 @@ Enter the *Fully Qualified Domain Name (FQDN)* that will be sent to the DHCP Ser
 
 
 **Support Information:** 
+
+- Supported from: MX 6.3.
+
 
 ### Send FQDN Flag (Option 81)
 
@@ -2111,6 +2369,9 @@ Enter the flags to be sent along with the *Fully Qualified Domain Name (FQDN)* t
 
 **Support Information:** 
 
+- Supported from: MX 6.3.
+
+
 ### Request Custom Option Number
 
 
@@ -2126,6 +2387,9 @@ Enter the option number of a custom DHCP Option that the DHCP Client on a device
 
 
 **Support Information:** 
+
+- Supported from: MX 8.1.
+
 
 ### Request Custom Option State
 
@@ -2147,6 +2411,9 @@ Select whether the DHCP Client on a device will request that the DHCP Server acq
 
 **Support Information:** 
 
+- Supported from: MX 8.1.
+
+
 ### Send Custom Option Number
 
 
@@ -2162,6 +2429,9 @@ Enter the option number of a custom DHCP Option that the DHCP Client on a device
 
 
 **Support Information:** 
+
+- Supported from: MX 8.1.
+
 
 ### Send Custom Option State
 
@@ -2183,6 +2453,9 @@ Select whether the DHCP Client on a device will request that the DHCP Server sen
 
 **Support Information:** 
 
+- Supported from: MX 8.1.
+
+
 ### Send Custom Option Value
 
 
@@ -2198,6 +2471,9 @@ Enter the option value for a custom DHCP Option that the DHCP Client on a device
 
 
 **Support Information:** 
+
+- Supported from: MX 8.1.
+
 
 -----
 ## Device Administration Configuration
@@ -2244,6 +2520,9 @@ Select an Action to control access to or utilize the Zebra MX Management System 
 
 **Support Information:** 
 
+- Supported from: MX 4.2.
+
+
 ### Allow Submit XML Package Name
 
 
@@ -2259,6 +2538,9 @@ Enter the *Android Package Name* that identifies the application or service is t
 
 
 **Support Information:** 
+
+- Supported from: MX 4.2.
+
 
 ### Disallow Submit XML Package Name
 
@@ -2276,6 +2558,9 @@ Enter the *Android Package Name* that identifies the application or service is t
 
 **Support Information:** 
 
+- Supported from: MX 4.2.
+
+
 ### Submit XML
 
 
@@ -2291,6 +2576,9 @@ Enter an XML string to be submitted for processing by the .Zebra MX Management S
 
 
 **Support Information:** 
+
+- Supported from: MX 9.1.
+
 
 -----
 ## Device Central Configuration
@@ -2310,6 +2598,9 @@ Use this *Group* to configure Device Central behavior on a device.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 ### Bluetooth On/Off Control
@@ -2339,6 +2630,9 @@ Select whether the Device User should be allowed to use the Device Central UI to
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.1.
+
+
 ### Bluetooth Pairing Control
 
 
@@ -2362,6 +2656,9 @@ Select whether Device Central system should allow multiple pairings to the same 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.1.
+
+
 ### Firmware Update Button
 
 
@@ -2383,6 +2680,9 @@ Select whether the Device User should be allowed to use the Device Central UI to
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 -----
@@ -2421,6 +2721,9 @@ A given device may not support all available values. In the event that a selecte
 
 **Support Information:** 
 
+- Supported from: MX 4.3.
+
+
 ### Blanking Mode
 
 
@@ -2453,6 +2756,9 @@ At present, *Display Blanking Mode* is supported ONLY on the Zebra VC80x vehicle
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Stay Awake
 
 
@@ -2477,6 +2783,9 @@ When a Device User is operating a vehicle with a vehicle-mounted device, the dev
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.2.
 
 
 ### Signal
@@ -2505,6 +2814,9 @@ A common configuration to support *Display Blanking Mode* would be to connect th
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Polarity
 
 
@@ -2528,6 +2840,9 @@ Select the Polarity of the Signal that will be used to trigger automatic Display
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Debounce Delay
 
 
@@ -2548,6 +2863,9 @@ The value specified should be in milliseconds and will be used as a delay follow
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.1.
 
 
 ### Set Display Size
@@ -2635,6 +2953,9 @@ Select whether the Enterprise Keyboard on a device will have automatic capitaliz
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.0.
+
+
 ### Auto Correction
 
 
@@ -2656,6 +2977,9 @@ Select whether the Enterprise Keyboard on a device will have automatic correctio
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.0.
 
 
 ### Block Offensive Words
@@ -2681,6 +3005,9 @@ Select whether the Enterprise Keyboard on a device will have automatic blocking 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.0.
+
+
 ### Double Space Period
 
 
@@ -2702,6 +3029,9 @@ Select whether the Enterprise Keyboard on a device will have automatic sentence 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.0.
 
 
 ### Flick for Alternate Chars
@@ -2727,6 +3057,9 @@ Select whether the Enterprise Keyboard on a device will show alternate character
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.1.
+
+
 ### Key Long Press Delay
 
 
@@ -2744,6 +3077,9 @@ Enter the length of time (in milliseconds) that a key within the Enterprise Keyb
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.0.
 
 
 ### Navigation Mode
@@ -2769,6 +3105,9 @@ Select the navigation mode the Enterprise Keyboard on a device will use to provi
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Numeric Layout Mode
 
 
@@ -2790,6 +3129,9 @@ Select the numeric layout mode the Enterprise Keyboard on a device will use when
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.1.
 
 
 ### Show Alphanumeric Tab
@@ -2815,6 +3157,9 @@ Select whether the Enterprise Keyboard on a device will show the alphanumeric ta
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Show Numeric Tab
 
 
@@ -2836,6 +3181,9 @@ Select whether the Enterprise Keyboard on a device will show the numeric tab to 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.1.
 
 
 ### Show Scan Tab
@@ -2861,6 +3209,9 @@ Select whether the Enterprise Keyboard on a device will show the scan tab to all
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.0.
+
+
 ### Show Symbol Tab
 
 
@@ -2884,6 +3235,9 @@ Select whether the Enterprise Keyboard on a device will show the symbol tab to a
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Show Voice Input Key
 
 
@@ -2905,6 +3259,9 @@ Select whether the Enterprise Keyboard on a device will show a key to invoke voi
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.0.
 
 
 ### Preferred Tab
@@ -2934,6 +3291,9 @@ Select the preferred tab the Enterprise Keyboard on a device will select by defa
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Suggest Contact Names
 
 
@@ -2955,6 +3315,9 @@ Select whether the Enterprise Keyboard on a device showing contact name suggesti
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.0.
 
 
 ### Suggest Misspelling Corrections
@@ -2980,6 +3343,9 @@ Select whether the Enterprise Keyboard on a device showing suggestions for corre
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.0.
+
+
 ### Popup on Keypress
 
 
@@ -3001,6 +3367,9 @@ Select whether the Enterprise Keyboard on a device will have key popup on each k
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.0.
 
 
 ### Sound on Keypress
@@ -3026,6 +3395,9 @@ Select whether the Enterprise Keyboard on a device will have sound on each keypr
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.0.
+
+
 ### Mode
 
 
@@ -3049,6 +3421,9 @@ Select the volume mode that will be used by the Enterprise Keyboard on a device 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.0.
+
+
 ### Volume
 
 
@@ -3066,6 +3441,9 @@ Enter the volume (from 0 to 100) that will be used by the Enterprise Keyboard on
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.0.
 
 
 ### Vibrate on Keypress
@@ -3091,6 +3469,9 @@ Select whether the Enterprise Keyboard on a device will have vibration on each k
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.0.
+
+
 ### Mode
 
 
@@ -3114,6 +3495,9 @@ Enter the duration mode that will be used by the Enterprise Keyboard on a device
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.0.
+
+
 ### Duration
 
 
@@ -3131,6 +3515,9 @@ Enter the duration (from 0 to 100 milliseconds) that will be used by the Enterpr
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.0.
 
 
 ### Remap Alpha P1
@@ -3156,6 +3543,9 @@ Possible values can be:
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.0.
 
 
 ### Remap Numeric P1
@@ -3188,6 +3578,9 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.0.
+
+
 ### Remap Numeric P2
 
 
@@ -3216,6 +3609,9 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.0.
 
 
 ### Remap Numeric P3
@@ -3248,6 +3644,9 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.0.
+
+
 ### Remap Numeric P4
 
 
@@ -3278,6 +3677,9 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.0.
+
+
 ### Remap Symbol P1
 
 
@@ -3306,6 +3708,9 @@ Possible values can be: - A single character value (e.g. the letter "A" or the s
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.0.
 
 
 -----
@@ -3349,6 +3754,9 @@ Use this *Sub-group* to reset all the Enterprise NFC settings to their factory d
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Type A Tags
 
 
@@ -3374,6 +3782,9 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type A 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Type B Tags
@@ -3403,6 +3814,9 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type BT
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Type F Tags
 
 
@@ -3428,6 +3842,9 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type F 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Type V Tags
@@ -3457,6 +3874,9 @@ Use this *Sub-group* to configure whether Enterprise NFC should read NFC Type V 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Use NFC Data Exchange Format (NDEF)
 
 
@@ -3482,6 +3902,9 @@ Use this *Sub-group* to configure whether Enterprise NFC should attempt to use N
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Polling Mode
@@ -3514,6 +3937,9 @@ Use this *Sub-group* to configure the polling mode that the Enterprise NFC shoul
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### CPU Boost
 
 
@@ -3535,6 +3961,9 @@ Use this *Sub-group* to configure whether the Enterprise NFC should Boost CPU Sp
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Type A Tag Baud Rate
@@ -3560,6 +3989,9 @@ Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use t
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Type B Tag Baud Rate
@@ -3595,6 +4027,9 @@ Use this *Sub-group* to configure the Baud Rate that Enterprise NFC should use t
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Peer to Peer Mode
 
 
@@ -3618,6 +4053,9 @@ Use this *Sub-group* to configure whether the Enterprise NFC should use *Peer-to
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Card Emulation Mode
 
 
@@ -3639,6 +4077,9 @@ Use this *Sub-group* to configure whether the Enterprise NFC should use *Card Em
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Use on Lock Screen
@@ -3666,6 +4107,9 @@ Use this *Sub-group* to configure whether the Enterprise NFC should be allowed t
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 -----
@@ -3712,6 +4156,9 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ### Control by User
 
 
@@ -3734,6 +4181,9 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ### Use Proxy Server
@@ -3763,6 +4213,9 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.2.
+
+
 ### Proxy Server
 
 
@@ -3786,6 +4239,9 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.2.
 
 
 ### Port
@@ -3813,6 +4269,9 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.2.
+
+
 ### Bypass List
 
 
@@ -3836,6 +4295,9 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.2.
 
 
 ### IP Address Type
@@ -3866,6 +4328,9 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.2.
+
+
 ### IP Address
 
 
@@ -3888,6 +4353,9 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.2.
 
 
 ### Gateway Address
@@ -3914,6 +4382,9 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.2.
+
+
 ### Network Mask
 
 
@@ -3936,6 +4407,9 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.2.
 
 
 ### Primary DNS
@@ -3962,6 +4436,9 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.2.
+
+
 ### Secondary DNS
 
 
@@ -3986,6 +4463,9 @@ A given device may or may not support an Ethernet Adapter. An attempt to configu
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.2.
+
+
 -----
 ## Firmware Over The Air Configuration
 
@@ -4002,6 +4482,9 @@ Use this *Group* to configure how Firmware Over The Air (FOTA) operations are pe
 
 
 **Support Information:** 
+
+- Supported from: MX 4.1.
+
 
 ### Device User Control Mode
 
@@ -4020,6 +4503,9 @@ Select whether the Device User should be allowed to control the Mode of the Life
 
 
 **Support Information:** 
+
+- Supported from: MX 9.1.
+
 
 ### Mode
 
@@ -4040,6 +4526,9 @@ Select the mode used to perform Firmware Over The Air (FOTA) operations on a dev
 
 
 **Support Information:** 
+
+- Supported from: MX 9.1.
+
 
 ### Mode Manual Action
 
@@ -4075,6 +4564,9 @@ Note that the Action value ***OS Downgrade*** can only be used to perform a Down
 
 **Support Information:** 
 
+- Supported from: MX 4.1.
+
+
 ### Enterprise Reset SUW Bypass
 
 
@@ -4092,6 +4584,9 @@ Select whether the Setup Wizard (SUW) will be bypassed on GMS devices when perfo
 
 
 **Support Information:** 
+
+- Supported from: MX 7.1.
+
 
 ### OS Upgrade Suppress Reboot
 
@@ -4111,6 +4606,9 @@ Select whether the automatic reboot that would normally be performed following t
 
 **Support Information:** 
 
+- Supported from: MX 8.1.
+
+
 ### OS Update/Upgrade/Downgrade File
 
 
@@ -4127,6 +4625,9 @@ Enter the path and file name of an OS Update or Patch image file, which must alr
 
 **Support Information:** 
 
+- Supported from: MX 4.1.
+
+
 ### Verify Manifest File
 
 
@@ -4142,6 +4643,9 @@ Enter the path and file name of a Manifest file, which must already exist at the
 
 
 **Support Information:** 
+
+- Supported from: MX 8.1.
+
 
 -----
 ## GMS Configuration
@@ -4161,6 +4665,9 @@ Use this *Group* to configure Google Mobile Services (GMS) settings on a device.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### GMS Feature Set
@@ -4188,6 +4695,9 @@ Select the amount of functionality of Google Mobile Services (GMS) to enable.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 -----
 ## GPRS Configuration
 
@@ -4204,6 +4714,9 @@ Use this *Group* to configure the operation of the General Packet Radio Service 
 
 
 **Support Information:** 
+
+- Supported from: MX 8.3.
+
 
 ### Action
 
@@ -4240,6 +4753,9 @@ Select an Action to manage the GPRS APNs on a device:
 
 **Support Information:** 
 
+- Supported from: MX 4.1.1.
+
+
 ### Add APN Name
 
 
@@ -4255,6 +4771,9 @@ Enter the name of an APN to be added when the value ***AddApn*** is selected for
 
 
 **Support Information:** 
+
+- Supported from: MX 4.2.
+
 
 ### Add APN Replace If Existing
 
@@ -4276,6 +4795,9 @@ Select what happens when an APN already exists with the APN name being added whe
 
 **Support Information:** 
 
+- Supported from: MX 4.2.
+
+
 ### Add APN Make Default
 
 
@@ -4294,6 +4816,9 @@ Select whether a new APN being added should become the new default APN when the 
 
 
 **Support Information:** 
+
+- Supported from: MX 4.2.
+
 
 ### Add APN Access Point
 
@@ -4316,6 +4841,9 @@ APN Identifiers are allocated by cellular carriers to identify the networks that
 
 **Support Information:** 
 
+- Supported from: MX 4.2.
+
+
 ### Add APN User Name
 
 
@@ -4337,6 +4865,9 @@ A network accessed via a given APN Identifier may or may not require authenticat
 
 **Support Information:** 
 
+- Supported from: MX 4.2.
+
+
 ### Add APN Password
 
 
@@ -4355,6 +4886,9 @@ A network accessed via a given APN Identifier may or may not require authenticat
 
 
 **Support Information:** 
+
+- Supported from: MX 4.2.
+
 
 ### Add APN Port
 
@@ -4375,6 +4909,9 @@ If a Proxy is required, a Port is also generally always required.
 
 **Support Information:** 
 
+- Supported from: MX 6.1.
+
+
 ### Add APN Proxy
 
 
@@ -4391,6 +4928,9 @@ Enter the address or name of an HTTP proxy to use for all traffic over the netwo
 
 
 **Support Information:** 
+
+- Supported from: MX 6.1.
+
 
 ### Add APN MMS Port
 
@@ -4409,6 +4949,9 @@ Enter the port number of an HTTP proxy to use ONLY for (Multimedia Messaging Ser
 
 **Support Information:** 
 
+- Supported from: MX 6.1.
+
+
 ### Add APN MMS Proxy
 
 
@@ -4425,6 +4968,9 @@ Enter the address or name of an HTTP proxy to use ONLY for (Multimedia Messaging
 
 
 **Support Information:** 
+
+- Supported from: MX 6.1.
+
 
 ### Add APN Server
 
@@ -4445,6 +4991,9 @@ WAP Gateways are rarely, if ever, used on or supported by modern cellular carrie
 
 **Support Information:** 
 
+- Supported from: MX 6.1.
+
+
 ### Add APN MMSC
 
 
@@ -4460,6 +5009,9 @@ Enter the Multimedia Messaging Service Center (MMSC) address required to route M
 
 
 **Support Information:** 
+
+- Supported from: MX 6.1.
+
 
 ### Add APN Type
 
@@ -4482,6 +5034,9 @@ The value to specify for Type should be obtained from the cellular carrier whose
 
 **Support Information:** 
 
+- Supported from: MX 6.1.
+
+
 ### Add APN MCC
 
 
@@ -4503,6 +5058,9 @@ The MCC generally match the SIM Card being used or the APN will not be usable.
 
 **Support Information:** 
 
+- Supported from: MX 6.1.
+
+
 ### Add APN MNC
 
 
@@ -4521,6 +5079,9 @@ The MNC generally match the SIM Card being used or the APN will not be usable.
 
 
 **Support Information:** 
+
+- Supported from: MX 6.1.
+
 
 ### Add Authentication Type
 
@@ -4542,6 +5103,9 @@ Select the Type of Authentication to be used for APN to be added when the value 
 
 
 **Support Information:** 
+
+- Supported from: MX 8.3.
+
 
 ### Add MVNO Type
 
@@ -4566,6 +5130,9 @@ Enter the MVNO (Mobile Virtual Network Operator) Type to be used for APN to be a
 
 **Support Information:** 
 
+- Supported from: MX 8.4.
+
+
 ### Add MVNO Match Data
 
 
@@ -4585,6 +5152,9 @@ The exact value to be specified depends on the MVNO Type specified. Consult your
 
 **Support Information:** 
 
+- Supported from: MX 8.4.
+
+
 ### Remove APN Name
 
 
@@ -4600,6 +5170,9 @@ Enter the name of an APN to be removed when the value ***RemoveApn*** is selecte
 
 
 **Support Information:** 
+
+- Supported from: MX 4.1.1.
+
 
 -----
 ## General UI Configuration
@@ -4617,6 +5190,9 @@ Use this *Group* to configure General User Interface (UI) aspects of a device.
 
 
 **Support Information:** 
+
+- Supported from: MX 9.1.
+
 
 ### Action
 
@@ -4646,6 +5222,9 @@ Note: Since it is possible to turn GMS Applications on or off individually, usin
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.2.
+
+
 ### Clear Application Data Package
 
 
@@ -4665,6 +5244,9 @@ Enter the *Android Package Name* for which the cache should be cleared by a Clea
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.0.
+
+
 ###  Clear Application Data Package
 
 
@@ -4682,6 +5264,9 @@ Enter the *Android Package Name* for which all user data should be cleared when 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.1.
 
 
 ### Allow Device User Control of Do Not Disturb Mode
@@ -4705,6 +5290,9 @@ Select whether the Device User will be presented with the option to control the 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.1.
+
+
 ### App Info Icon on Long Press on Recent App Header
 
 
@@ -4726,6 +5314,9 @@ Select whether a Long Press on the Home Key will Launch the Google Assistant.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.2.
 
 
 ### Auto Correct
@@ -4757,6 +5348,9 @@ Select whether the Device User prompted for corrections to potential mistakes ma
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Battery Charging LED
 
 
@@ -4778,6 +5372,9 @@ Select whether the charging system be allowed to display the battery charging st
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 ### Battery Swap UI Popup
@@ -4803,6 +5400,9 @@ Select whether the Device User will automatically be presented with the Battery 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.1.
+
+
 ### Display of Navigation Bar
 
 
@@ -4823,6 +5423,9 @@ Select whether the on-screen Navigation Bar will be displayed and hence whether 
 
 **Support Information:** 
 
+- Supported from: MX 7.1.
+
+
 ### Launcher Package Name
 
 
@@ -4840,6 +5443,9 @@ Enter the *Android Package Name* of the default launcher application. This would
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.1.
 
 
 ### Locale
@@ -4868,6 +5474,9 @@ Values MUST specify a *Language*, and optionally a *Region*.
 
 **Support Information:** 
 
+- Supported from: MX 4.3.
+
+
 ### Long Press on Home Key to Launch Google Assistant
 
 
@@ -4889,6 +5498,9 @@ Select whether a Long Press on the Home Key will Launch the Google Assistant.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.2.
 
 
 ### Network Notification Popup
@@ -4914,6 +5526,9 @@ Select whether the Network Notification Popup will be presented to inform the De
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.1.
+
+
 ### On-Screen Power Button
 
 
@@ -4935,6 +5550,9 @@ Select whether the *On Screen Power Button* feature will be turned ON or OFF. th
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Pull Down Notification Bar
@@ -4960,6 +5578,9 @@ Select whether the Device User is allowed to Pull Down the Notification Bar to i
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 5.1.
+
+
 ### Show Airplane Mode in Power Key Menu
 
 
@@ -4979,6 +5600,9 @@ Select whether the Device User will be presented with the option to control the 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.3.
 
 
 ### Show Pairing Popup
@@ -5005,6 +5629,9 @@ Select whether a New Pairing Popup will be presented when an unpaired peripheral
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Show Passwords
 
 
@@ -5026,6 +5653,9 @@ Select whether passwords should be shown (displayed) when entered on the device 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.1.
 
 
 ### Show Virtual Keyboard when Physical Keyboard is Active
@@ -5051,6 +5681,9 @@ Select whether the Virtual Keyboard will be shown when the Physical Keyboard is 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.0.
+
+
 ### Status Bar
 
 
@@ -5074,6 +5707,9 @@ Select whether the Android Status Bar should be displayed.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.4.
+
+
 ### Use Of Clipboard
 
 
@@ -5093,6 +5729,9 @@ Select whether the Device User will be allowed to utilize the clipboard on a dev
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.2.
 
 
 ### Use of Date in Notification Panel to Access Clock Application
@@ -5118,6 +5757,9 @@ Select whether the Date in the Notification Panel can be used to invoke the Cloc
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.2.
+
+
 ### Use of Home Key
 
 
@@ -5141,6 +5783,9 @@ Select whether the Device User will be allowed to utilize the Home Key on a devi
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Use of Magnification Gestures
 
 
@@ -5161,6 +5806,9 @@ Select whether the Device User is allowed to Use Magnification Gestures.
 
 **Support Information:** 
 
+- Supported from: MX 8.0.
+
+
 ### Use of Recent Apps Key
 
 
@@ -5180,6 +5828,9 @@ Select whether the Device User is allowed to Use the Recent Apps Key to access r
 
 
 **Support Information:** 
+
+- Supported from: MX 7.1.
+
 
 ### Use of Split Screen Mode
 
@@ -5204,6 +5855,9 @@ Select whether Split Screen Mode is allowed to be used on the device.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.1.
+
+
 ### User Control of Multi User
 
 
@@ -5225,6 +5879,9 @@ Select whether Primary Device User is allowed to invoke UI to manage Multi User,
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 ### Touch Mode
@@ -5257,6 +5914,9 @@ Not all devices support the ability to configure the Touch Panel mode and those 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 5.0.
+
+
 ### Screen Protector
 
 
@@ -5280,6 +5940,9 @@ Not all devices support the ability to configure the Touch Panel to account for 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 9.1.
+
+
 ### Turn on/off the Large Key Indicator feature
 
 
@@ -5300,6 +5963,9 @@ Select whether the *Large Key Indicator* feature, which allows a large on-screen
 
 **Support Information:** 
 
+- Supported from: MX 9.0.
+
+
 ### Device user control of Large Key Indicator
 
 
@@ -5319,6 +5985,9 @@ Select whether the Device User will be allowed to turn the *Large Key Indicator*
 
 
 **Support Information:** 
+
+- Supported from: MX 9.0.
+
 
 -----
 ## Host Name Configuration
@@ -5357,6 +6026,9 @@ Enter the name by which a device will be known on the network.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 5.1.
 
 
 -----
@@ -5402,6 +6074,9 @@ Select an Action to affect the behaviors mapped to the keys on the physical keyb
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ### Add Mapping Key ID
 
 
@@ -5423,6 +6098,9 @@ Enter a value that uniquely identifies a physical key on the physical keyboard o
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ### Add Mapping Behaviors
 
 
@@ -5440,6 +6118,9 @@ Use this *Sub-array* to specify the set of behaviors to be performed for one or 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 #### Behavior
@@ -5503,6 +6184,9 @@ Note that due to variations in keyboard size and layout, not all keyboard states
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Type
 
 
@@ -5543,6 +6227,9 @@ Sending an Android Intent provides a very flexible way to specify the behavior t
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Send Key Code
 
 
@@ -5562,6 +6249,9 @@ Select the key code that will be sent as the behavior for a specified key a spec
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ##### Alt
@@ -5588,6 +6278,9 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Ctrl
 
 
@@ -5610,6 +6303,9 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ##### Fn
@@ -5636,6 +6332,9 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Shift
 
 
@@ -5660,6 +6359,9 @@ Select how a key code will be sent as the behavior for a specified key a specifi
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Send Trigger
 
 
@@ -5682,6 +6384,9 @@ Eight trigger signals are defined, but not all may be supported on all devices. 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ##### Send Intent
@@ -5710,6 +6415,9 @@ Select when an intent should be sent as the behavior for a remapped key.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Type
 
 
@@ -5736,6 +6444,9 @@ Depending on the application or service to be invoked, there is likely only one 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Action
 
 
@@ -5758,6 +6469,9 @@ An action value is NOT mandatory to specify for an Android Intent. But an action
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ##### Category
@@ -5784,6 +6498,9 @@ A category value is NOT mandatory to specify for an Android Intent. But a catego
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Package Name
 
 
@@ -5808,6 +6525,9 @@ It is not mandatory to specify the *Android Package Name* when sending an Androi
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Class
 
 
@@ -5825,6 +6545,9 @@ Enter the *Android Class* that identifies an *Android Component* within an appli
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ##### Data URI
@@ -5851,6 +6574,9 @@ Whether the intended recipient of the intent expects a URI to be specified as pa
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Flags
 
 
@@ -5871,6 +6597,9 @@ Intent flags control how the intent is handled by Android. Some intent flags are
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ##### MIME Type
@@ -5897,6 +6626,9 @@ Normally the type would be inferred from the data itself. Setting a MIME type ex
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Extra Name
 
 
@@ -5921,6 +6653,9 @@ Android allows a collection of extra named values, of various types, to be attac
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Extra Value
 
 
@@ -5938,6 +6673,9 @@ Enter the value of the *String Extra* to be attached to the intent to be sent an
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ##### Launch Application Name
@@ -5962,6 +6700,9 @@ Note that the application *Friendly Name* is NOT the same as *Android Package Na
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 -----
 ## Power Configuration
 
@@ -5980,6 +6721,9 @@ Use this *Group* to perform power-related actions and configure power-related se
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.1.
 
 
 ### Power Action
@@ -6007,6 +6751,9 @@ Select an Action to control the Power to the device.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.1.
+
+
 ### Battery Percentage Decommission Threshold
 
 
@@ -6026,6 +6773,9 @@ Enter the percentage of remaining battery capacity below which the battery will 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ### Battery Usage Decommission Threshold
 
 
@@ -6043,6 +6793,9 @@ Enter the amount of battery usage (e.g. charge/discharge cycles, coulombs in/out
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ### Battery Critical Low Threshold
@@ -6065,6 +6818,9 @@ Enter the threshold battery level below which the battery is deemed to be critic
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Battery Optimization Action
@@ -6090,6 +6846,9 @@ Select an Action to control which applications are subject to battery optimizati
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.0.
+
+
 ### Add Package Names
 
 
@@ -6108,6 +6867,9 @@ Enter one or more *Android Package Name(s)* that identify application(s) that sh
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.0.
 
 
 ### Remove Package Names
@@ -6130,6 +6892,9 @@ If specified, multiple *Android Package Names* should be separated using commas.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.0.
 
 
 ### Port Action
@@ -6162,6 +6927,9 @@ You must also specify **Port Select** to provide the Port for which Output Power
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Port Select
 
 
@@ -6186,6 +6954,9 @@ Select the Port that will be affected by an Action to control the Output Power o
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.1.
 
 
 ### Auto Power Control
@@ -6213,6 +6984,9 @@ Select whether device power will be automatically controlled.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Auto Power Off
 
 
@@ -6238,6 +7012,9 @@ Select whether and how device power will be automatically turned off as part of 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Timeout
 
 
@@ -6255,6 +7032,9 @@ Enter the timeout that will be in effect before device power is automatically tu
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.1.
 
 
 ### Auto Power On
@@ -6280,6 +7060,9 @@ Select whether and how device power will be automatically turned on as part of a
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.1.
 
 
 ### Heater Action
@@ -6317,6 +7100,9 @@ You must also specify **Heater Select** to identify the Heater to be affected.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Heater Select
 
 
@@ -6350,6 +7136,9 @@ Select the Heater to be affected by a specified Heater Action when **Heater Acti
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Off Threshold
 
 
@@ -6375,6 +7164,9 @@ Select the temperature above which a specified Heater should automatically turn 
 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 7.1.
 
 
 ### On Threshold
@@ -6404,6 +7196,9 @@ Select the temperature below which a specified Heater should automatically turn 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### Doze Mode State
 
 
@@ -6429,6 +7224,9 @@ Select whether Doze Mode will be globally used on the device.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.2.
+
+
 -----
 ## RFID Configuration
 
@@ -6447,6 +7245,9 @@ Use this *Group* to configure the RFID module in a device.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 ### Country of Operation
@@ -6476,6 +7277,9 @@ In most cases, the *Country of Operation* will be set once and never changed, un
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.1.
+
+
 ### Channel Mask
 
 
@@ -6502,6 +7306,9 @@ Consult the product documentation for the device being used to obtain the set of
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.1.
+
+
 ### Channel Hopping
 
 
@@ -6521,6 +7328,9 @@ Select whether *Channel Hopping* will be performed among the *Channels* that are
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 ### Action
@@ -6549,6 +7359,9 @@ Select an Action to alter the behavior or configuration of the RFID module.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.1.
+
+
 ### Update Firmware File
 
 
@@ -6566,6 +7379,9 @@ Enter the path and file name of the file containing the firmware update to be ap
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 ### Transmit Power Level
@@ -6592,6 +7408,9 @@ For example, to specify an *RFID Power Level* of ***29.5 dBm***, specify a value
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.1.
+
+
 ### Query Select
 
 
@@ -6614,6 +7433,9 @@ Select which RFID tags should be operated upon by the RFID module during a *Quer
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 ### Query Session
@@ -6643,6 +7465,9 @@ Allowable values are ***SessionS0***, ***SessionS1***, ***SessionS2***, and ***S
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.1.
+
+
 ### Query Target
 
 
@@ -6665,6 +7490,9 @@ Select how the A and B flags of RFID tags should be handled by the RFID module d
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 -----
@@ -6714,6 +7542,9 @@ Select an Action to control a *Remote Scanner* that isconnected to a device.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 5.2.
+
+
 ### Config Serial Number
 
 
@@ -6731,6 +7562,9 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to which configurat
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 5.2.
 
 
 ### Config File
@@ -6752,6 +7586,9 @@ Enter the path and file name of a configuration file, which must exist at the sp
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 5.2.
+
+
 ### Update Serial Number
 
 
@@ -6769,6 +7606,9 @@ Enter the *Serial Number* that identifies a *Remote Scanner* for which a firmwar
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.2.
 
 
 ### Update File
@@ -6790,6 +7630,9 @@ Enter the path and file name of a firmware file, which must exist at the specifi
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 5.2.
+
+
 ### Reset Serial Number
 
 
@@ -6807,6 +7650,9 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be reset when th
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 5.2.
 
 
 ### Page Serial Number
@@ -6828,6 +7674,9 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be paged when th
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 5.2.
+
+
 ### Disconnect Serial Number
 
 
@@ -6847,6 +7696,9 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be disconnected 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 5.2.
+
+
 ### Unpair Serial Number
 
 
@@ -6864,6 +7716,9 @@ Enter the *Serial Number* that identifies a *Remote Scanner* to be unpaired when
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 5.2.
 
 
 -----
@@ -6934,6 +7789,9 @@ You must also specify **Add Key Value** to provide the value to be added for the
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Add Key Value
 
 
@@ -6968,6 +7826,9 @@ The key value can be generated in any manner desired as long as it is a 256 bit 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Remove Key Name
 
 
@@ -6989,6 +7850,9 @@ Enter the name of a key to be removed when the Action value ***Remove Key*** is 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Encrypt SD Card Key Name
 
 
@@ -7006,6 +7870,9 @@ Enter the name of a key to be used to encrypt the SD Card when the Action value 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.3.
 
 
 ### Instant Screen Lock on Power Key
@@ -7029,6 +7896,9 @@ Select what happens when the Power Key on the device is used to turn the device 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.3.
 
 
 ### Screen Lock Type
@@ -7057,6 +7927,9 @@ Select the type of lock that is used to protect the device from use by unauthori
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.0.
+
+
 ### Screen Lock Timeout
 
 
@@ -7076,6 +7949,9 @@ Select what happens when a device turns off as a result of a timeout.
 
 
 **Support Information:** 
+
+- Supported from: MX 4.3.
+
 
 -----
 ## Service Access Configuration
@@ -7101,6 +7977,9 @@ Use this *Group* to configure which *Zebra Value-Add Services* are allowed to be
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Service Binding Action
@@ -7142,6 +8021,9 @@ Note that every *Zebra Value-Add Service* that exposes APIs will be identified b
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Allow Service Identifier
 
 
@@ -7161,6 +8043,9 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Disallow Service Identifier
 
 
@@ -7178,6 +8063,9 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Service Caller Action
@@ -7213,6 +8101,9 @@ Note also that since a *Binding* to a Service is required to call any APIs expos
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Allow Service Identifier
 
 
@@ -7232,6 +8123,9 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Allow Caller Package
 
 
@@ -7249,6 +8143,9 @@ Enter the *Android Package Name* of an application that should be allowed to cal
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Allow Caller Signature
@@ -7273,6 +8170,9 @@ Note that the use of a *Android Package Signature* is MANDATORY and ensures that
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Disallow Service Identifier
 
 
@@ -7290,6 +8190,9 @@ Enter the *Service Identifier* of a *Zebra Value-Add Service* when the value ***
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Disallow Caller Package
@@ -7311,6 +8214,9 @@ Enter the *Android Package Name* of an application that should be disallowed fro
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Disallow Caller Signature
 
 
@@ -7328,6 +8234,9 @@ Enter the *Android Package Signature* of an application that should be disallowe
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 -----
@@ -7377,6 +8286,9 @@ Select whether the Device User will be allowed to access the Android Quick Setti
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 5.2.
+
+
 ### Allow Device User Control Airplane Mode
 
 
@@ -7398,6 +8310,9 @@ Select whether the Device User will be allowed to change the state of Airplane M
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.3.
 
 
 ### Allow Device User Control App Notifications
@@ -7423,6 +8338,9 @@ Select whether the Device User will be allowed to configure which application no
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.2.
+
+
 ### Allow Device User Control Apps
 
 
@@ -7444,6 +8362,9 @@ Select whether the Device User will be allowed to enter the AppInfo section of t
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.2.
 
 
 ### Allow Device User Control Background Data
@@ -7469,6 +8390,9 @@ Select whether the Device User will be allowed to change the usage of Background
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ### Allow Device User Control Ethernet
 
 
@@ -7490,6 +8414,9 @@ Select whether the Device User will be allowed to change the state of the Ethern
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ### Allow Device User Control Instant Lock
@@ -7515,6 +8442,9 @@ Select whether the Device User will be allowed to change whether pressing the Po
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Allow Device User Control USB
 
 
@@ -7534,6 +8464,9 @@ Select whether the Device User will be allowed to change the state of USB.
 
 
 **Support Information:** 
+
+- Supported from: MX 4.2.
+
 
 ### Allow Device User Control Unknown Sources
 
@@ -7556,6 +8489,9 @@ Select whether the Device User will be allowed to change whether applications ca
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.3.
 
 
 ### Allow Device User Control WLAN
@@ -7581,6 +8517,9 @@ Select whether the Device User will be allowed to change the configuration of th
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Allow Device User to Initiate an Enterprise Reset
 
 
@@ -7602,6 +8541,9 @@ Select whether the Device User will be allowed to perform an Enterprise Reset fr
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.2.
 
 
 ### Show Quick Settings Icon
@@ -7627,6 +8569,9 @@ Select whether the Device User will be allowed to invoke the Settings UI using a
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 5.1.
+
+
 ### Use Reduced Version
 
 
@@ -7646,6 +8591,9 @@ Select whether the Full or Reduced version of the Settings UI will be used.
 
 
 **Support Information:** 
+
+- Supported from: MX 4.1.
+
 
 ### Use of Notification Settings Icon
 
@@ -7668,6 +8616,9 @@ Select whether the Device User is allowed to use the Settings Icon on the Notifi
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 5.1.
 
 
 ### Use of Settings Slide Out Drawer
@@ -7693,6 +8644,9 @@ Select whether the Device User is allowed to use the Slide Out Drawer in Setting
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.1.
+
+
 ### Use of Tethering and Portable Hotspot
 
 
@@ -7714,6 +8668,9 @@ Select whether the Device User is allowed to use the Settings Icon on the Notifi
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.0.
 
 
 -----
@@ -7856,6 +8813,9 @@ Select the type of a single countermeasure that will be performed to mitigate a 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ##### Uninstall Package Name
 
 
@@ -7873,6 +8833,9 @@ Enter the *Android Package Name* of an application that will be uninstalled as a
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.3.
 
 
 ##### Unsolicited Alert Package Name
@@ -7894,6 +8857,9 @@ Enter the *Android Package Name* of an application that will be sent an unsolici
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ##### Unsolicited Alert Class
 
 
@@ -7911,6 +8877,9 @@ Enter the Class Name of component within an application that will be sent an uns
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.3.
 
 
 ##### Unsolicited Alert Message
@@ -7932,6 +8901,9 @@ Enter the string text message that will be sent to a component of an application
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Action Detect Threat Type MDM Client Removal Package Name
 
 
@@ -7949,6 +8921,9 @@ Enter the *Android Package Name* of the MDM Agent that will be monitored to dete
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.3.
 
 
 ### Ignore Threat Type
@@ -8003,6 +8978,9 @@ Select whether the Threat Management System should perform background polling to
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.1.
+
+
 ### Interval
 
 
@@ -8024,6 +9002,9 @@ The interval is specified in seconds between polls.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.1.
 
 
 ### Additional Folders
@@ -8054,6 +9035,9 @@ When background polling to detect device rooting is performed, the Threat Manage
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.1.
+
+
 ### List
 
 
@@ -8073,6 +9057,9 @@ Enter list of additional folders that will be polled when the value ***On*** is 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.1.
+
+
 ### Send Externally Detected Threat Message
 
 
@@ -8090,6 +9077,9 @@ Signal the detection of an externally detected threat. This would generally be r
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.3.
 
 
 -----
@@ -8144,6 +9134,9 @@ The *Zebra Volume Control* provides a configurable UI that allows the Device Use
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ### Add Profile Name
 
 
@@ -8163,6 +9156,9 @@ Enter the name of a new *Audio UI Profile* to be added when the value ***Add Pro
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ### Add Profile Streams
@@ -8231,6 +9227,9 @@ Ypu must select the type of a single *Audio Stream* that will be included as par
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Label
 
 
@@ -8254,6 +9253,9 @@ If no text label is selected for an *Audio Stream*, the *Factory Preset* default
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ##### Icon
@@ -8284,6 +9286,9 @@ If no icon is selected for an *Audio Stream*, the *Factory Preset* default icon 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Visible
 
 
@@ -8304,6 +9309,9 @@ If an *Audio Stream* is made not visible for an *Audio UI Profile*, the *Zebra V
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ##### Modes
@@ -8377,6 +9385,9 @@ The value specified must be less than or equal to the value entered for **Maximu
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ###### *Maximum*
 
 
@@ -8405,6 +9416,9 @@ The value specified must be greater than or equal to the value entered for **Min
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ###### *Preset*
@@ -8437,6 +9451,9 @@ The value specified must be greater than or equal to the value entered for **Min
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ###### *Type*
 
 
@@ -8464,6 +9481,9 @@ Select the type of behavior of the UI for a single *Audio Stream* in a single *A
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ### Remove Profile Name
 
 
@@ -8481,6 +9501,9 @@ Enter the name of an existing *Audio UI Profile* to be removed when the value **
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ### Set Current Profile Name
@@ -8502,6 +9525,9 @@ Enter the name of an existing *Audio UI Profile* to be made the current active *
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ### Set Current Profile Adjust Volume
 
 
@@ -8521,6 +9547,9 @@ Select whether the current device *Volume Settings* will be adjusted to ensure t
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 -----
@@ -8566,6 +9595,9 @@ Select whether all controllable Wakeup Sources should be turned on or off.
 
 
 **Support Information:** 
+
+- Supported from: MX 8.0.
+
 
 -----
 ## Whitelist Configuration
@@ -8617,6 +9649,9 @@ Using the value ***Package Name and Signature*** provides significantly better s
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Action
 
 
@@ -8640,6 +9675,9 @@ Select an Action to alter the Whitelisting configuration of a device.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.1.
+
+
 ### Allow Package Name
 
 
@@ -8658,6 +9696,9 @@ Enter the *Android Package Name* of an application to be allowed when the value 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.1.
 
 
 ### Allow Signature
@@ -8679,6 +9720,9 @@ Enter the *Android Package Signature* of an application to be allowed when the v
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.3.
+
+
 ### Disallow Signature
 
 
@@ -8696,6 +9740,9 @@ Enter the *Android Package Signature* of an application to be disallowed when th
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.3.
 
 
 ### Disallow Package Name
@@ -8718,6 +9765,9 @@ If the value ***Package Name and Signature*** is selected for **Mode**, you must
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.1.
 
 
 ### State
@@ -8745,6 +9795,9 @@ Select the Whitelisting State, which determines whether the set of applications 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.1.
 
 
 -----
@@ -8796,6 +9849,9 @@ Use this *Sub-group* to configure which of multiple antennas should be used for 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 7.1.
+
+
 ### GPS Power State
 
 
@@ -8817,6 +9873,9 @@ Use this *Sub-group* to configure whether the GPS radio state should be On or Of
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.3.
 
 
 -----
@@ -8867,6 +9926,9 @@ Select whether Wi-Fi (not the device) should *Wake Up* (turn on) automatically w
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 9.1.
+
+
 ### Bands
 
 
@@ -8887,6 +9949,9 @@ Select the frequency *Bands* on which the WLAN subsystem will operate on a devic
 
 
 **Support Information:** 
+
+- Supported from: MX 4.1.
+
 
 ### Channels
 
@@ -8919,6 +9984,9 @@ Note that individual countries may apply their own regulations regarding the cha
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.1.
+
+
 ### Country
 
 
@@ -8938,6 +10006,9 @@ Select the *Country* in which the WLAN subsystem will operate on a device:
 
 
 **Support Information:** 
+
+- Supported from: MX 4.1.
+
 
 ### Hotspot State
 
@@ -8962,6 +10033,9 @@ Select the state of the *Hotspot Mode* of the WLAN adapter on a device.
 
 
 **Support Information:** 
+
+- Supported from: MX 8.1.
+
 
 ### Verbose Logging
 
@@ -8990,6 +10064,9 @@ Select whether the *Verbose Logging* feature of the WLAN adapter should be turne
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Hotspot Options
 
 
@@ -9011,6 +10088,9 @@ All the settings is this group can be configured independently of the state of *
 
 **Support Information:** 
 
+- Supported from: MX 6.3.
+
+
 #### SSID
 
 
@@ -9026,6 +10106,9 @@ Enter the Service Set Identifier (SSID) that will identify the network supported
 
 
 **Support Information:** 
+
+- Supported from: MX 6.3.
+
 
 #### Band
 
@@ -9047,6 +10130,9 @@ Select the *Frequency Band* in which *Hotspot Mode* of the WLAN adapter will ope
 
 **Support Information:** 
 
+- Supported from: MX 6.3.
+
+
 #### Band 2.4GHz Channel
 
 
@@ -9065,6 +10151,9 @@ Select the single 2.4 HGHz Channel in which *Hotspot Mode* of the WLAN adapter w
 
 **Support Information:** 
 
+- Supported from: MX 6.3.
+
+
 #### 5GHz Channel
 
 
@@ -9082,6 +10171,9 @@ Select the single 5.0 HGHz Channel in which *Hotspot Mode* of the WLAN adapter w
 
 
 **Support Information:** 
+
+- Supported from: MX 6.3.
+
 
 #### Security Mode
 
@@ -9103,6 +10195,9 @@ Select the *Security Mode* to be used to secure the *Hotspot Mode* of the WLAN a
 
 **Support Information:** 
 
+- Supported from: MX 6.3.
+
+
 #### Security Passphrase
 
 
@@ -9118,6 +10213,9 @@ Enter the PSK passphrase that will be used to secure the *Hotspot Mode* network 
 
 
 **Support Information:** 
+
+- Supported from: MX 6.3.
+
 
 ### Omnitrail
 
@@ -9159,6 +10257,9 @@ Select whether the Omnitrail feature of the WLAN adapter is turned On or Off for
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 #### Interval
 
 
@@ -9183,6 +10284,9 @@ The value provided should be in milliseconds (ms) and should have a value in the
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.0.
+
+
 #### Options
 
 
@@ -9202,6 +10306,9 @@ Use this *Sub-array* to specify the set of Omnitrail options to be configured fo
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 ##### Option Pair
 
 
@@ -9219,6 +10326,9 @@ Use this *Sub-group* to specify a name and value for a single Omnitrail option t
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.3.
 
 
 ###### Name
@@ -9242,6 +10352,9 @@ Select a standard name that identifies a single Omnitrail optOmnitrail option to
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 ###### Name Custom
 
 
@@ -9261,6 +10374,9 @@ Enter a custom name that identifies a Omnitrail option to be configured for the 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 ###### Value
 
 
@@ -9278,6 +10394,9 @@ Enter a value for a single Omnitrail option to be configured for the WLAN adapte
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.3.
 
 
 #### Standard
@@ -9304,6 +10423,9 @@ Select an omnittrail datarate standard to be used by the WLAN adapter on a devic
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.3.
 
 
 #### Datarate
@@ -9378,6 +10500,9 @@ Select an omnittrail datarate to be used by the WLAN adapter on a device when **
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 ### Advanced Options
 
 
@@ -9397,6 +10522,9 @@ Use this *Sub-array* to specify the set of advanced options to be configured for
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.1.1.
+
+
 #### Option Pair
 
 
@@ -9414,6 +10542,9 @@ Use this *Sub-group* to specify a name and value for a single advanced option to
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.1.1.
 
 
 ##### Name
@@ -9437,6 +10568,9 @@ Select a standard name that identifies a single advanced option to be configured
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.1.1.
+
+
 ##### Custom Name
 
 
@@ -9454,6 +10588,9 @@ Enter a custom name that identifies a single advanced option to be configured fo
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.1.1.
 
 
 ##### Value
@@ -9475,6 +10612,9 @@ Enter a value for a single advanced option to be configured for the WLAN adapter
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.1.1.
+
+
 ### Diagnostics Options
 
 
@@ -9494,6 +10634,9 @@ Use this *Sub-group* to specify one or more *Diagnostic Options* to be configure
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 #### Option Pair
 
 
@@ -9511,6 +10654,9 @@ Use this *Sub-group* to specify a name and value for a single *Diagnostic Option
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ##### Name
@@ -9534,6 +10680,9 @@ Select a standard name that identifies a single *Diagnostic Option* to be config
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Name Custom
 
 
@@ -9553,6 +10702,9 @@ Enter a custom name that identifies a single *Diagnostic Option* to be configure
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 4.4.
+
+
 ##### Value
 
 
@@ -9570,6 +10722,9 @@ Enter a value for a single *Diagnostic Option* to be configured for the WLAN ada
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ### Network Notification
@@ -9597,6 +10752,9 @@ Select whether the Device User will be notified about, and allowed to connect to
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.1.
 
 
 -----
@@ -9635,6 +10793,9 @@ A given device may or may not support a WWAN Adapter. An attempt to configure th
 
 **Support Information:** 
 
+- Supported from: MX 4.3.
+
+
 ### Background Data
 
 
@@ -9654,6 +10815,9 @@ Select whether WWAN data can be used by applications that are in the *Background
 
 
 **Support Information:** 
+
+- Supported from: MX 4.3.
+
 
 ### State
 
@@ -9676,6 +10840,9 @@ Select the Power Srate of the WWAN adapter.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.3.
 
 
 ### SIM Card Slot
@@ -9711,6 +10878,9 @@ A given device may or may not support a WWAN Adapter. An attempt to configure th
 
 **Support Information:** 
 
+- Supported from: MX 6.2.
+
+
 ### Data Limit State
 
 
@@ -9735,6 +10905,9 @@ Select whether a limit should be imposed on the amount of WWAN data used, such a
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 ### Custom Limit
 
 
@@ -9757,6 +10930,9 @@ The custom limit should be an integer value specifying the maximum amount of WWA
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 ### Data Warning Threshold
 
 
@@ -9777,6 +10953,9 @@ The threshold should be an integer value specifying the threshold amount of WWAN
 
 
 **Support Information:** 
+
+- Supported from: MX 6.3.
+
 
 ### User Control of Background Data
 
@@ -9803,6 +10982,9 @@ Select whether a Device User is allowed to use the in-device Settings Menu to ch
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 4.4.
 
 
 ### User Control of Data Limit
@@ -9832,6 +11014,9 @@ Select whether a Device User is allowed to use the in-device Settings Menu to ch
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.3.
+
+
 ### User Control of Power
 
 
@@ -9853,6 +11038,9 @@ Select whether a Device User is allowed to use the in-device Settings Menu to ch
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 6.3.
 
 
 ### User Control of Sim Socket
@@ -9878,6 +11066,9 @@ Select whether a Device User is allowed to use the in-device Settings Menu to se
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 6.2.
+
+
 ### Public Land Mobile Network Lock
 
 
@@ -9898,6 +11089,9 @@ Select whether the WWAN adapter should be locked to a single Public Land Mobile 
 
 **Support Information:** 
 
+- Supported from: MX 8.1.
+
+
 ### Value
 
 
@@ -9916,6 +11110,9 @@ The value provided to identify a PLMN must specify both the Mobile Country Code 
 
 
 **Support Information:** 
+
+- Supported from: MX 8.1.
+
 
 ### User Control of Public Land Mobile Network Lock
 
@@ -9938,6 +11135,9 @@ Select whether a Device User is allowed to control locking of the WWAN adapter t
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 ### Dual SIM Dual Standby Mode
@@ -9965,6 +11165,9 @@ Select whether the WWAN adapter should handle multiple SIM Card(s) in Dual SIM D
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.1.
 
 
 -----
@@ -10013,6 +11216,9 @@ Select the state of the Worry Free WiFi features in a device.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Global Settings
 
 
@@ -10030,6 +11236,9 @@ Use this *Sub-group* to configure Global Settings that control Worry Free WiFi b
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 #### Existing Password
@@ -10051,6 +11260,9 @@ Enter the Existing Password to enabling changing that Password.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 9.1.
+
+
 #### Password Value
 
 
@@ -10068,6 +11280,9 @@ Enter the Password Value required by the Device User to access the in-device UI 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 #### Device User Control
@@ -10093,6 +11308,9 @@ Select whether the Device User can access in-device UI for configuring Worry Fre
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Analysis Type
 
 
@@ -10115,6 +11333,9 @@ Select the *Analysis Type* that will be used by the Worry Free WiFi features in 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Action
@@ -10151,6 +11372,9 @@ Select an Action to perform Worry Free WiFi features in a device.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Start Server Analytics
 
 
@@ -10172,6 +11396,9 @@ Select whether Server Analytics should be performed during an *Analysis Session*
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Start Activity Mode
@@ -10197,6 +11424,9 @@ Select the Activity Mode for an *Analysis Session* started for the Worry Free Wi
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Start Analysis SSID
 
 
@@ -10217,6 +11447,9 @@ Note that if an *Analysis Session* is started for a network other than the curre
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Start Session Name
@@ -10243,6 +11476,9 @@ The name assigned to an *Analysis Session* can help to analyze exported data by 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Start Logger Report Level
 
 
@@ -10265,6 +11501,9 @@ Select the Logger Report Level for an *Analysis Session* started for the Worry F
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Start Ping Type
@@ -10290,6 +11529,9 @@ Select the Ping Type for an *Analysis Session* started for the Worry Free WiFi f
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Start Remote Gateway Type
 
 
@@ -10313,6 +11555,9 @@ Select the Type of Remote Gateway for an *Analysis Session* started for the Worr
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Custom Server Address
 
 
@@ -10330,6 +11575,9 @@ Enter the Custom Remote Gateway Server Address for an *Analysis Session* started
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 ### Start SD Card Storage
@@ -10356,6 +11604,9 @@ Select how SD Card Storage will be used for an *Analysis Session* started for th
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 ### Packet Capture
 
 
@@ -10373,6 +11624,9 @@ Use this *Sub-group* to configure Settings that control the operation of Packet 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 #### State
@@ -10398,6 +11652,9 @@ Select whether Packet Capture will be performed by the Worry Free WiFi feature i
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 #### On File Name
 
 
@@ -10415,6 +11672,9 @@ Enter the file name of the file into which Packet Capture data will be stored by
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 #### On Max File Size
@@ -10436,6 +11696,9 @@ Enter the maximum size of the file into which Packet Capture data (in megabytes)
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 8.3.
+
+
 #### On Max Storage Size
 
 
@@ -10453,6 +11716,9 @@ Enter the maximum amount of Packet Capture data (in megabytes) that will be stor
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 8.3.
 
 
 #### Type
@@ -10478,6 +11744,9 @@ Select the *Package Capture Type* that will be control the type of Packets that 
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 9.1.
+
+
 ### Coverage View
 
 
@@ -10495,6 +11764,9 @@ Use this *Sub-group* to configure Settings that control the operation of Coverag
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.1.
 
 
 #### Scan Feature Type
@@ -10518,6 +11790,9 @@ Select the *Scan Feature Type* that will control the type of Scanning that will 
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.1.
 
 
 #### Action
@@ -10553,6 +11828,9 @@ Select an Action to perform for Coverage View.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 9.1.
+
+
 #### Start SSID
 
 
@@ -10572,6 +11850,9 @@ Enter the SSID that identifies the network to be used for Coverage View.
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 9.1.
+
+
 #### Start Scan Interval
 
 
@@ -10589,6 +11870,9 @@ Enter the *Scan Interval* to be used for Coverage View.
 **Support Information:** 
 
 - NOT supported on Device(s): TC20 and TC25.
+
+
+- Supported from: MX 9.1.
 
 
 #### Start Auto Reachability Test
@@ -10614,6 +11898,9 @@ Select whether an Auto Reachability Test should be performed as part of Coverage
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 9.1.
+
+
 #### Start Server Analytics
 
 
@@ -10637,6 +11924,9 @@ Select whether Server Analytics should be performed by Worry Free WiFi as part o
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 9.1.
+
+
 #### Start Session Name
 
 
@@ -10656,6 +11946,9 @@ Enter a *Session Name* that should be used by Worry Free WiFi as part of Coverag
 - NOT supported on Device(s): TC20 and TC25.
 
 
+- Supported from: MX 9.1.
+
+
 -----
 ## Zebra Licensing Configuration
 
@@ -10672,6 +11965,9 @@ Use this *Group* to manage Zebra-issued licenses on a device.
 
 
 **Support Information:** 
+
+- Supported from: MX 7.1.
+
 
 ### License Action
 
@@ -10696,6 +11992,9 @@ Select an Action to manage Zebra-issued licenses on a device.
 
 **Support Information:** 
 
+- Supported from: MX 7.1.
+
+
 ### Activate License Method
 
 
@@ -10717,6 +12016,9 @@ Select the method that should be used to activate a Zebra-issued license a devic
 
 **Support Information:** 
 
+- Supported from: MX 7.1.
+
+
 ### From Server AID Value
 
 
@@ -10732,6 +12034,9 @@ Enter the Activation Identifier (AID) that identifies a Zebra-issued license to 
 
 
 **Support Information:** 
+
+- Supported from: MX 7.1.
+
 
 ### From Server Standard Class
 
@@ -10752,6 +12057,9 @@ Select the Class of Standard Server via which a Zebra-issued license will be act
 
 
 **Support Information:** 
+
+- Supported from: MX 7.1.
+
 
 ### From Server Custom Class
 
@@ -10775,6 +12083,9 @@ Select the Class of Custom Server via which a Zebra-issued license will be activ
 
 **Support Information:** 
 
+- Supported from: MX 7.1.
+
+
 ### From Server Custom URL
 
 
@@ -10790,6 +12101,9 @@ Enter the URL of a Custom Server via which a Zebra-issued license will be activa
 
 
 **Support Information:** 
+
+- Supported from: MX 7.1.
+
 
 ### From Server Custom Friendly Name
 
@@ -10810,6 +12124,9 @@ A *Friendly Name* is kept for each Custom Server used to acquire licenses and is
 
 **Support Information:** 
 
+- Supported from: MX 7.1.
+
+
 ### From Local File Path and Name
 
 
@@ -10825,6 +12142,9 @@ Enter the local path and file name of a license file in the device file system f
 
 
 **Support Information:** 
+
+- Supported from: MX 7.1.
+
 
 ### From Local File Source Server Class
 
@@ -10843,6 +12163,9 @@ Select the class of Server from which the license file to be activated was acqui
 
 
 **Support Information:** 
+
+- Supported from: MX 7.1.
+
 
 ### Return License Server Type
 
@@ -10865,6 +12188,9 @@ Select the Type of Standard Server via which a Zebra-issued license was activate
 
 **Support Information:** 
 
+- Supported from: MX 8.1.
+
+
 ### Friendly Name
 
 
@@ -10881,6 +12207,9 @@ Enter the *Friendly Name* that identifies the *Custom Server* via which a Zebra-
 
 **Support Information:** 
 
+- Supported from: MX 8.1.
+
+
 ### Return License AID Value
 
 
@@ -10896,6 +12225,9 @@ Enter the Activation Identifier (AID) that identifies a Zebra-issued license to 
 
 
 **Support Information:** 
+
+- Supported from: MX 8.1.
+
 
 ### Return All Licenses Server Type
 
@@ -10918,6 +12250,9 @@ Select the Type of Standard Server via which a set of Zebra-issued licenses was 
 
 **Support Information:** 
 
+- Supported from: MX 8.1.
+
+
 ### Friendly Name
 
 
@@ -10933,6 +12268,9 @@ Enter the *Friendly Name* that identifies the *Custom Server* via which a set of
 
 
 **Support Information:** 
+
+- Supported from: MX 8.1.
+
 
 ### Refresh License AID Value
 
@@ -10950,6 +12288,9 @@ Enter the Activation Identifier (AID) that identifies a Zebra-issued license to 
 
 **Support Information:** 
 
+- Supported from: MX 7.1.
+
+
 ### Delete Server Friendly Name
 
 
@@ -10964,4 +12305,6 @@ Enter the *Friendly Name* that identifies the *Custom Server* to be deleted, whe
 - Type = string 
 
 
-**Support Information:**
+**Support Information:** 
+
+- Supported from: MX 8.1.

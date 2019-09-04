@@ -5,9 +5,26 @@ product: StageNow
 productversion: '3.4'
 ---
 
-This section discusses errors that can occur in the StageNow Tool, and possible solutions. 
+This section covers common errors that can occur when using StageNow and offers advice on how to address them. 
 
-## Wi-Fi Hotspot Troubleshooting
+-----
+
+## XML Configuration Failed
+
+![img](XML_configuration_failed_error.png)
+
+#####Problem
+When device staging completes, the message "FMC download FTP File Read timed out" or something similar appears. 
+
+#####Cause
+This error generally sometimes occurs when FTP is used during staging to download a large file (greater than 1.5 GB) from a public server. 
+
+#####Solution
+Try using FTPS instead of FTP for the file transfer. 
+
+-----
+
+## Wi-Fi Hotspot
 The following error can occur when turning on the Wi-Fi hotspot in the StageNow Tool. 
  
 ![img](../images/TroubleWifi_Error.jpg)

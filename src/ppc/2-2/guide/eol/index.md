@@ -32,15 +32,28 @@ Send an EOL request alerting the end-user to prepare for battery decommission. T
 5. Select the desired options and tap Send.
 6. Tap OK in the confirmation message.
 7. The Admin View displays "EOL Request Sent" in the Status column of the battery.
-8. The EOL request is displayed on the device once one of the events are triggered as set in **Client Settings**. 
+8. The EOL request is displayed on the device once one of the events is triggered as set in **Client Settings**. The "Battery Swap" option is available if the device supports Battery Swap, an application that exists by default on supported devices to aid in changing batteries.
 
-	![img](device_eol.png)
+	<table>
+	  <tr>
+	   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	   <td><img style="height:350px" src="eol.png"/> </td>
+	   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	   <td><img style="height:350px" src="eol_nobattswap.png"/> </td>
+	  </tr>
+	  <tr>
+	   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	   <td><i>On device that supports battery swap</i></td>
+	   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	   <td><i>On device that does not support battery swap</i></td>
+	  </tr>
+	</table>
 	_Figure 2. Device EOL Request_
 
-9. The user has the option to snooze (if configured by the admin) or initiate the battery swap. If “Battery Swap” is tapped, the decommission process is initiated. _See Manually Decommission section_. If the user taps “Snooze”, then the snooze duration can be selected: 1 hour, 4 hours, 8 hours, 24 hours. The same message reappears after the elapsed snooze time until the maximum snooze count is reached, at which time the Snooze option is no longer available.
+9. The user has the option to snooze (if configured by the admin) or initiate the battery swap. If “Battery Swap” is tapped, the decommission process is initiated. _See Manually Decommission section_. If the user taps “Snooze”, then the snooze duration can be selected: 1 hour, 4 hours, 8 hours, 24 hours. The same message reappears after the elapsed snooze time until the maximum snooze count is reached, at which time the Snooze option is no longer available. If "Battery Swap" is not available, skip to step 12.
 10. Accept the EOL request by tapping "Battery Swap" to start the decommission process.
 11. The Admin View displays "EOL Request Accepted" in the Status column of the battery. The battery is removed from the **Active** tab and moved to the **Decommissioned** tab on the Admin View.
-The battery can now be decommissioned. _Continue to step 8 in **Decommission Battery** section below._ 
+12. The battery can now be decommissioned. _Continue to step 8 in **Decommission Battery** section below._ 
 
 ##Cancel EOL
 The EOL request can be cancelled with the following steps:
@@ -62,12 +75,26 @@ Steps to decommission the battery:
 3. The Action button appears at the top left. Tap on the Action button.
 4. Select "Decommission Battery". A confirmation message appears to decommission the selected battery/batteries. 
 5. When confirmed, a message appears in the Admin View indicating the battery has been decommissioned. The battery is removed from the **Active** tab and moved to the **Decommissioned** tab on the Admin View. 
-6. When the EOL Alert event is triggered (as configured in the **Client Settings** tab) the device end-user receives a message notification indicating that the battery needs to be decommissioned. 
+6. When the EOL Alert event is triggered (as configured in the **Client Settings** tab) the device end-user receives a message notification indicating that the battery needs to be decommissioned. The "Battery Swap" option is available if the device supports Battery Swap, an application that exists by default on supported devices to aid in changing batteries.
 
-	![img](device_decommission.png)
+
+	<table>
+	  <tr>
+	   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	   <td><img style="height:350px" src="decommission.png"/> </td>
+	   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	   <td><img style="height:350px" src="decommission_nobattswap.png"/> </td>
+	  </tr>
+	  <tr>
+	   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	   <td><i>On device that supports battery swap</i></td>
+	   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	 	<td><i>On device that does not support battery swap</i></td>
+	  </tr>
+	</table>
 	_Figure 3. Decommission Battery_
 
-	The user cannot access the device until the steps are followed to swap out the battery to decommissioned. 
+	The user cannot access the device until the steps are followed to swap out the battery to be decommissioned. If "Battery Swap" is available, proceed to the following steps. Otherwise, replace the battery with a charged one and skip to step 9.
 7. Tap “Battery Swap”. The Battery Swap Mode application appears.
 
 	![img](battery_swap.png)
@@ -75,7 +102,7 @@ Steps to decommission the battery:
 
 8. Tap Swap Battery. Follow the procedure as instructed to replace the poor health battery with a healthy battery without loss of information. 
 9. After swapping the battery, press the power button to turn the device back on. 
-10. Manually take the decommissioned battery out of service and remove it from inventory.
+10. Manually take the decommissioned battery out of service and remove it from inventory to recharge.
 
 ##Undo Decommission
 If a battery is decommissioned prematurely or mistakenly, it can be placed back into commission.

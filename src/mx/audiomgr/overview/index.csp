@@ -6,10 +6,14 @@ devicetype: A
 order: 0
 ---
 
-The Audio Manager (AudioMgr) controls whether audio on a device plays only through a connected handset or is replicated on the built-in device speaker so that it plays on both. This feature was developed for the VC80x vehicle-mount computer, which has a custom port for attaching the Zebra M1000 handset. AudioMgr can force audio normally sent only to the M1000 speaker to be replicated on the VC80x's built-in speaker. This addresses the issue of missed communications that can arise when the handset is not being worn. 
+The Audio Manager (AudioMgr) controls a small number of specialized audio functions on Zebra devices, including whether audio on a device plays only through a connected handset or is replicated on the built-in device speaker (so that it plays on both). AudioMgr also controls whether a sound is played when the device is connected to a charger.  
+
+The replication feature was developed for the VC80x vehicle-mount computer, which has a custom port for attaching the Zebra M1000 handset. AudioMgr can force audio normally sent only to the M1000 speaker to be replicated on the VC80x's built-in speaker. This addresses the issue of missed communications that can arise when the handset is not being worn. 
 
 >**AudioMgr is supported only on the Zebra VC80x vehicle mount computer**. 
 
 ### Main Functionality
 
-* Enable/disable replication of handset audio on the built-in device speaker
+* Enable/disable: 
+ * Replicate handset audio on device speaker (VC80x only)
+ * Sound when device connects to a charger 

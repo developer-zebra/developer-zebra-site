@@ -2,7 +2,7 @@
 csp: audiomgr
 title: Audio Replication Action
 type: parm
-order: 2
+order: 4
 mx: "7.2"
 apilevel: "25"
 devicetype: A

@@ -196,9 +196,7 @@ _Figure 8. Run ZDVC service_
 
 ###Server Upgrade
 ZDVC Server can be upgraded from a previous existing ZDVC installation. Prior to upgrading, the ZDVC services must be stopped. Procedure to upgrade:
-1. Stop the **ZDVC Backend Service** and **ZDVC Web UI Service** from **Task Scheduler** in **Administrative Tools.** Right-click on the service and select **End.**
-<img style="height:350px" src="zdvc_service_end.png"/>
-_Figure 9. End ZDVC service_
+1. Follow steps to [stop the application server.](./#stopapplicationserver) 
 2. Run the new installer.
 3. Click **Yes** when prompted to upgrade.
 4. At the initial window, click **Next** to proceed with the upgrade.
@@ -215,8 +213,7 @@ B. Run the following commands from the command prompt to find the process ID and
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`taskkill /pid 1234 /f` 
 <br>
 Where "8080" represents the specific backend server port number specified during install and "1234" represents the process ID returned from the first command. Repeat these steps for the Web UI port.
-3. Stop the **ZDVC Backend Service** and **ZDVC Web UI Service** from **Task Scheduler** in **Administrative Tools.** Right-click on the service and select **End.**
-4. Run the installer for the older server version. Follow the prompts to complete installation.
+3. Run the installer for the older server version. Follow the prompts to complete installation.
 
 ###Server Setup
 Steps for ZDVC server setup after installation: <br>
@@ -230,8 +227,12 @@ C. Click the Scan button. A successful result returns green checks for each step
 D. Enter the backend URL for your server, for example `https://hostname.company.com:8080/zdvc` <br>
 E. Click the Scan button. A successful result returns green checks for each step:
 ![img](SSLTools.JPG)
-_Figure 10. SSLTools.com results_
+_Figure 9. SSLTools.com results_
 
+###Stop Application Server
+To stop the application server, stop the **ZDVC Backend Service** and **ZDVC Web UI Service** from **Task Scheduler** in **Administrative Tools.** Right-click on the service and select **End.**
+<img style="height:350px" src="zdvc_service_end.png"/>
+_Figure 10. End ZDVC service_
 
 <!-- SERVER UPGRADE
 **Note:** Server upgrade is not applicable to PowerPrecision Console Server 1.0 installations.
@@ -291,7 +292,7 @@ Steps for manual client installation:
 1. Download PPC Client from [Zebra Support and Downloads](https://www.zebra.com/us/en/support-downloads/software/productivity-apps/power-precision-console.html). Extract the files and folders.
 2. Install PowerPrecisionConsole.apk. 
    * For Android Marshmallow and Nougat devices, install the .APK located in folder `PPCClient\Client\M_N`.
-   * For Android Oreo devices, install the .APK located in folder `PPCClient\Client\O`.
+   * For Android Oreo and Pie devices, install the .APK located in folder `PPCClient\Client\O_P`.
 3. When prompted, enable the “Apps that can draw over other apps” overlay permission. 
 4. Installation is complete.
 5. Open PPC client app. 

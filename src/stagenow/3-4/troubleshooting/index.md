@@ -9,29 +9,37 @@ This section covers common errors that can occur when using StageNow and offers 
 
 -----
 
-## XML Configuration Failed
+## XML Configuration Failure
 
 ![img](XML_configuration_failed_error.png)
 
-#####Problem
-When device staging completes, the message "FMC download FTP File Read timed out" or something similar appears. 
+####Problem
+**The message "FMC download FTP File Read timed out"** (or something similar) appears in the device when staging completes. 
 
-#####Cause
-This error generally sometimes occurs when FTP is used during staging to download a large file (greater than 1.5 GB) from a public server. 
+####Cause
+**This error generally occurs when FTP is used during staging** to download a large file (greater than 1.5 GB) from a public server. 
 
-#####Solution
-Try using FTPS instead of FTP for the file transfer. 
+####Solution
+**Try using FTPS** instead of FTP for the file transfer. 
 
 -----
 
-## Wi-Fi Hotspot
-The following error can occur when turning on the Wi-Fi hotspot in the StageNow Tool. 
- 
+## Wi-Fi Hotspot 
+
 ![img](../images/TroubleWifi_Error.jpg)
 
-Following are actions you can take to resolve the issue.
+####Problem
 
-### Disable and Re-enable the Wi-Fi Adapter
+**The message "Unable to turn on the Wi-Fi Hotspot"** (or something similar) appears when attempting to turn on the StageNow Wi-Fi Hotspot feature. 
+
+####Cause
+**This can occur if the Wi-Fi adapter in the host PC is not initialized** or is inactive when StageNow launches. 
+
+####Solution 
+
+Try the following steps to resolve the issue: 
+
+##### Restart Wi-Fi Adapter
 
 1. Right-click on the Network icon on the bottom right corner of the Windows host and select Open Network and Sharing Center to open the following screen.
 
@@ -50,10 +58,9 @@ Following are actions you can take to resolve the issue.
 5. Right-click again and select Enable. After a few minutes, try using the StageNow Tool.
 
 
-### Add Unsupported Wi-Fi Hotspot
+##### Add Unsupported Hotspot
 
-
-   Note: Results that deviate from the following can be considered a Windows driver/software issue regarding the Wi-Fi hotspot. 
+**Note**: Results that deviate from the following can be considered a Windows driver/software issue regarding the Wi-Fi hotspot. 
 
 
 1. Open a command prompt as an Administrator.

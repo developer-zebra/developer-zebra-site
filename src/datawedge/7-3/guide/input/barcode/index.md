@@ -1042,63 +1042,6 @@ _**Note:** Same performance from Effort Level 1 to Effort Level 3._
 
 > See **Important** notes below.
 
-------
-
-### UDI Decoding
-The Universal Device Identifier (UDI) parameter acquires multiple barcodes simultaneously. 
-
-**This feature is supported using the imager on the following devices only**:
-
-* **TC51**
-* **TC56**
-* **TC70x**
-* **TC75x**
-
-**Tap Scanning Modes to enable UDI decoding**: 
-
-<img style="height:350px" src="scanning_modes.png"/>
-_When UDI scanning mode is enabled (as above)_... 
-<img style="height:350px" src="udi_params.png"/>
-..._the selected UDI input parameter(s) will be used_.  
-
-**UDI Decoding Notes** 
-
-* **UDI decoding is supported only on the devices listed above**. 
-* **Output of collected UDI data might require settings adjustments** of the token-separation character and/or output order. See the [Keystroke Output guide](../../output/keystroke/#udidataoutput) guide for more information. 
-* UDI settings can vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke), [Intent Output](../../output/intent) and/or [IP Output](../../output/ip) guides for more information.
-
------
-
-### MultiBarcode Decoding
-MultiBarcode acquires multiple, unique barcodes in a single scan session and can deliver the data either immediately or after the specified number of barcodes per scan is reached. **Basic MultiBarcode** is enabled through **Scanning Modes** within **Reader Params**, per above.
-<table>
- <tr>
-  <td>
-  <img style="height:350px" src="multibarcode.png"/>
-  </td>    
-  <td> &nbsp; &nbsp; &nbsp;
-  </td>
-  <td>
-  <img style="height:350px" src="multibarcode_params.png"/>
-  </td>
- </tr>
-
-</table>
-<i>Access to Basic MultiBarcode params</i>
-
-Basic MultiBarcode params:
-* **Number of barcodes per scan-** Specifies the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 10._
-* **Instant Reporting -** If enabled, returns each unique barcode immediately as it is decoded without waiting for the specified number of barcodes to be scanned. If disabled _(default)_, the decoded data is returned as a single entity after the amount of barcodes scanned reaches the specified **Number of barcodes per scan**.
-
-**MultiBarcode Notes**
-
-* **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke/#multibarcodedataoutput). 
-* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes (from 2-10) specified in the Basic MultiBarcode params panel. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
-* **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
-* **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a MultiBarcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
-* **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
-* **If both Continuous Read and Instant Reporting parameters are enabled, Instant Reporting** takes precedence over **Continuous Read,** which is ignored. 
-
 -----
 
 ### Character Set Configuration
@@ -1172,6 +1115,63 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 
 
 >**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
+
+------
+
+## UDI Decoding
+The Universal Device Identifier (UDI) parameter acquires multiple barcodes simultaneously. 
+
+**This feature is supported using the imager on the following devices only**:
+
+* **TC51**
+* **TC56**
+* **TC70x**
+* **TC75x**
+
+**Tap Scanning Modes to enable UDI decoding**: 
+
+<img style="height:350px" src="scanning_modes.png"/>
+_When UDI scanning mode is enabled (as above)_... 
+<img style="height:350px" src="udi_params.png"/>
+..._the selected UDI input parameter(s) will be used_.  
+
+**UDI Decoding Notes** 
+
+* **UDI decoding is supported only on the devices listed above**. 
+* **Output of collected UDI data might require settings adjustments** of the token-separation character and/or output order. See the [Keystroke Output guide](../../output/keystroke/#udidataoutput) guide for more information. 
+* UDI settings can vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke), [Intent Output](../../output/intent) and/or [IP Output](../../output/ip) guides for more information.
+
+-----
+
+## MultiBarcode Decoding
+MultiBarcode acquires multiple, unique barcodes in a single scan session and can deliver the data either immediately or after the specified number of barcodes per scan is reached. **Basic MultiBarcode** is enabled through **Scanning Modes** within **Reader Params**, per above.
+<table>
+ <tr>
+  <td>
+  <img style="height:350px" src="multibarcode.png"/>
+  </td>    
+  <td> &nbsp; &nbsp; &nbsp;
+  </td>
+  <td>
+  <img style="height:350px" src="multibarcode_params.png"/>
+  </td>
+ </tr>
+
+</table>
+<i>Access to Basic MultiBarcode params</i>
+
+Basic MultiBarcode params:
+* **Number of barcodes per scan-** Specifies the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 10._
+* **Instant Reporting -** If enabled, returns each unique barcode immediately as it is decoded without waiting for the specified number of barcodes to be scanned. If disabled _(default)_, the decoded data is returned as a single entity after the amount of barcodes scanned reaches the specified **Number of barcodes per scan**.
+
+**MultiBarcode Notes**
+
+* **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke/#multibarcodedataoutput). 
+* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes (from 2-10) specified in the Basic MultiBarcode params panel. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
+* **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
+* **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a MultiBarcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
+* **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
+* **If both Continuous Read and Instant Reporting parameters are enabled, Instant Reporting** takes precedence over **Continuous Read,** which is ignored. 
 
 ------
 

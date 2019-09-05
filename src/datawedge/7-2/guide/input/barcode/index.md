@@ -996,50 +996,6 @@ _**Note:** Same performance from Effort Level 1 to Effort Level 3._
 > See **Important** notes below.
 
 ------
-
-### UDI Decoding
-The Universal Device Identifier (UDI) parameter acquires multiple barcodes simultaneously. 
-
-**This feature is supported using the imager on the following devices only**:
-
-* **TC51**
-* **TC56**
-* **TC70x**
-* **TC75x**
-
-**Tap Scanning Modes to enable UDI decoding**: 
-
-<img style="height:350px" src="scanning_modes.png"/>
-_When UDI scanning mode is enabled (as above)_... 
-<img style="height:350px" src="udi_params.png"/>
-..._the selected UDI input parameter(s) will be used_.  
-
-**UDI Decoding Notes** 
-
-* **UDI decoding is supported only on the devices listed above**. 
-* **Output of collected UDI data might require settings adjustments** of the token-separation character and/or output order. See the [Keystroke Output guide](../../output/keystroke/#udidataoutput) guide for more information. 
-* UDI settings can vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke), [Intent Output](../../output/intent) and/or [IP Output](../../output/ip) guides for more information.
-
------
-
-### Multi-barcode Decoding
-
-<img style="height:350px" src="dw_6.7_multibarcode.png"/>
-_When Multi-barcode scanning mode is enabled (as above)_... 
-<img style="height:350px" src="dw_6.7_multibarcode_param_embed.png"/>
-..._specify the number of barcodes to be decoded with each scan_.  
-
-**Multi-barcode Notes**
-
-* **Supported with internal imager on TC20/TC25 devices only**.  
-* **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke/#multibarcodedataoutput). 
-* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes (from 2-10) specified in the Multi-barcode params panel. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
-* **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
-* **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a Multi-barcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
-* **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
-
------
-
 ### Character Set Configuration
 Provides options to make adjustments with the decoder character set. These options are:
 * Character Set Selection 
@@ -1063,7 +1019,7 @@ Both the preferred character set list and its preference order is configurable. 
 
 ![img](charset_failure_option.png)
 
------
+------
 
 ## Scan Params
 Scan Parameters allow for configuration of Code ID and scanner-specific decoding feedback options for the scanner selected in the Profile being edited. 
@@ -1113,6 +1069,49 @@ Scan Parameters allow for configuration of Code ID and scanner-specific decoding
 >**Important**: Support for decode parameters can vary depending on the scanning device selected. For device-specific support notes, please refer to the [Integrator Guide](https://www.zebra.com/us/en/sitesearch.html?q=integrator) that accompanied the unit. 
 
 ------
+
+## UDI Decoding
+The Universal Device Identifier (UDI) parameter acquires multiple barcodes simultaneously. 
+
+**This feature is supported using the imager on the following devices only**:
+
+* **TC51**
+* **TC56**
+* **TC70x**
+* **TC75x**
+
+**Tap Scanning Modes to enable UDI decoding**: 
+
+<img style="height:350px" src="scanning_modes.png"/>
+_When UDI scanning mode is enabled (as above)_... 
+<img style="height:350px" src="udi_params.png"/>
+..._the selected UDI input parameter(s) will be used_.  
+
+**UDI Decoding Notes** 
+
+* **UDI decoding is supported only on the devices listed above**. 
+* **Output of collected UDI data might require settings adjustments** of the token-separation character and/or output order. See the [Keystroke Output guide](../../output/keystroke/#udidataoutput) guide for more information. 
+* UDI settings can vary by geographic region. See the relevant sections of [Keystroke Output](../../output/keystroke), [Intent Output](../../output/intent) and/or [IP Output](../../output/ip) guides for more information.
+
+-----
+
+## Multi-barcode Decoding
+
+<img style="height:350px" src="dw_6.7_multibarcode.png"/>
+_When Multi-barcode scanning mode is enabled (as above)_... 
+<img style="height:350px" src="dw_6.7_multibarcode_param_embed.png"/>
+..._specify the number of barcodes to be decoded with each scan_.  
+
+**Multi-barcode Notes**
+
+* **Supported with internal imager on TC20/TC25 devices only**.  
+* **Acquired data from all barcodes is delivered as a single string** when output as keystrokes. To add separators and adjust output order, see the [Keystroke Output guide](../../output/keystroke/#multibarcodedataoutput). 
+* **Picklist behavior -** If the Picklist parameter is set to “Disabled,” the device will attempt to scan the number of barcodes (from 2-10) specified in the Multi-barcode params panel. If the Picklist parameter is set to a value other than “Disabled," the user is expected to move the cross-hair to each barcode to be scanned. **Data is returned only after the specified number of barcodes is read**. 
+* **Duplicate barcodes -** If a label to be scanned contains multiple barcodes, some of which are duplicates (with the same label type and data), only one barcode from the duplicates is decoded; the remainder are ignored. If the label has two duplicate barcodes plus another two different barcodes, a maximum of three barcodes will be decoded from that form; one will be ignored as a duplicate.
+* **Multiple barcode types -** Barcodes can be of multiple label types and still be acquired together. For example, if the specified quantity for a Multi-barcode scan is four, two barcodes can be label type Code 128 and the other two can be type Code 39. 
+* **Barcodes in view -**If the specified number of barcodes is not initially in view of the scanner, the scanner will not decode any data. If the scanner's field of view contains a number of barcodes greater than the specified quantity, the scanner will randomly decode barcode(s) until the specified number is reached. For example, if the count is set to two and eight barcodes are in the field of view, the scanner will decode the first two barcodes it sees, returning the data in random order. **Data is returned only after the specified number of barcodes is read**. 
+
+-----
 
 **Other DataWedge Input Options**:
 

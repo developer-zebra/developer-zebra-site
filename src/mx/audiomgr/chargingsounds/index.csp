@@ -4,7 +4,7 @@ title: Charging Sounds On/Off
 type: parm
 order: 2
 mx: "9.3"
-apilevel: "25"
+apilevel: "26"
 devicetype: A
 parm:
   pivotal: No
@@ -13,7 +13,7 @@ parm:
   list:
     - code: 0
       mx: "9.3"
-      apilevel: "25"
+      apilevel: "26"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
@@ -21,13 +21,13 @@ parm:
       devicetype: A
       name: Turn On
       mx: "9.3"
-      apilevel: "25"
+      apilevel: "26"
       description: Causes device to play a sound when a battery charger is connected.
     - code: 2
       devicetype: A
       name: Turn Off
       mx: "9.3"
-      apilevel: "25"
+      apilevel: "26"
       description: Causes device to remain silent when a battery charger is connected.
 ---
 

@@ -71,3 +71,4 @@ To add a user:
 * [Admin View](../admin)
 * [Battery Management](../mgmt)
 * [EOL Management](../eol)
+* [Troubleshooting & FAQ](../troubleshooting)

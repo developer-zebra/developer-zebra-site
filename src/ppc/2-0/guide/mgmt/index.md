@@ -61,3 +61,4 @@ A report of all battery data can be generated for inventory tracking and repleni
 * [Admin View](../admin)
 * [EOL Management](../eol)
 * [Configuration](../config)
+* [Troubleshooting & FAQ](../troubleshooting)

@@ -122,3 +122,4 @@ If a battery is decommissioned prematurely or mistakenly, it can be placed back 
 * [Admin View](../admin)
 * [Battery Management](../mgmt)
 * [Configuration](../config)
+* [Troubleshooting & FAQ](../troubleshooting)

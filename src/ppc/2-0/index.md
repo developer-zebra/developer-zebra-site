@@ -17,6 +17,8 @@ menu:
       url: /ppc/2-0/guide/eol
     - title: Configuration
       url: /ppc/2-0/guide/config
+    - title: Troubleshooting & FAQ
+      url: /ppc/2-0/guide/troubleshooting
     - icon: fa fa-search
       url: /ppc/2-0/search
 product: PowerPrecision Console

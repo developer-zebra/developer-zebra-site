@@ -108,4 +108,5 @@ Important notes for consideration during PPC use:
 * [Battery Management](../mgmt)
 * [EOL Management](../eol)
 * [Configuration](../config)
+* [Troubleshooting & FAQ](../troubleshooting)
 

@@ -97,4 +97,5 @@ Refer to [PowerPrecision and Battery Management Fact Sheet](https://www.zebra.co
 * [Battery Management](../mgmt)
 * [EOL Management](../eol)
 * [Configuration](../config)
+* [Troubleshooting & FAQ](../troubleshooting)
 

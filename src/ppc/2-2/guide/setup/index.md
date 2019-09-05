@@ -466,3 +466,4 @@ Steps for remote configuration deployment with CSP and EMM:
 * [Battery Management](../mgmt)
 * [EOL Management](../eol)
 * [Configuration](../config)
+* [Troubleshooting & FAQ](../troubleshooting)

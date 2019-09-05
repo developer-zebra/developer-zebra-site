@@ -70,3 +70,4 @@ Note: When the checkbox in the table header is ticked, it selects all batteries 
 * [Battery Management](../mgmt)
 * [EOL Management](../eol)
 * [Configuration](../config)
+* [Troubleshooting & FAQ](../troubleshooting)

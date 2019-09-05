@@ -101,6 +101,8 @@ products:
         url: /devicetracker/2-2/guide/mgmt
       - title: Configuration
         url: /devicetracker/2-2/guide/config
+      - title: Troubleshooting & FAQ
+        url: /devicetracker/2-2/guide/troubleshooting
     versions:
       - url: /devicetracker/2-2/guide/about
         label: '2.2'
@@ -220,6 +222,8 @@ products:
         url: /ppc/2-2/guide/eol
       - title: Configuration
         url: /ppc/2-2/guide/config
+      - title: Troubleshooting & FAQ
+        url: /ppc/2-2/guide/troubleshooting
     versions:
       - url: /ppc/2-2/guide/about
         label: '2.2'

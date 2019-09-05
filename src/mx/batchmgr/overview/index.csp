@@ -19,8 +19,8 @@ A Batch setting also can refer to a file in the device file system that contains
 * Process a Profile that is embedded within the Batch setting
 * Process Profiles that are XML or binary
 * Process Profiles that are optionally encrypted
-* Execute Batch Actions: 
+* Execute Batch Actions
 * Enable/disable Trusted Mode
-* Specify a Trusted Mode certificate file
+* Specify a Trusted-mode certificate file
 
 -----

@@ -7,6 +7,7 @@ apilevel: "1"
 order: 11
 devicetype: A,B
 parm:
+  presentif: The Action is NOT "Broadcast"
   pivotal: No
   name: Type
   type: string

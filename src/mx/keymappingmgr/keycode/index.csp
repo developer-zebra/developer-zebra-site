@@ -66,11 +66,11 @@ parm:
     - name: [ (Left Bracket)
       devicetype: A
       code: 71
-      mx: "4.4"
+      mx: "9.2"
     - name: ] (Right Bracket)
       devicetype: A
       code: 72
-      mx: "4.4"
+      mx: "9.2"
     - name: Grave
       devicetype: A
       code: 68

@@ -363,12 +363,12 @@ parm:
       name: Keyboard Backlight Brightness Down
       description: The key that reduces keyboard brightness
     - code: ROTATE
-      mx: "8.3"
+      mx: "9.2"
       devicetype: A
       name: Rotate
       description: The key that causes the screen to rotate
     - code: MINUS
-      mx: "8.3"
+      mx: "9.2"
       devicetype: A
       name: - (Minus)
       description: The key that inputs a minus sign or dash

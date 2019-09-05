@@ -297,7 +297,7 @@ Steps for manual client installation:
 4. Installation is complete.
 5. Open PPC client app. 
 6. A message displays requesting for permission: "Allow PowerPrecision Console to make and manage phone calls?" Accept the permission to allow the device to register to the server with the device serial number. 
-7. PPC client app is opened. A PPC notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that PPC is running in the background. 
+7. PPC client app is opened. On Android O or higher devices, a PPC notification message is displayed in the device notifications drawer. This notification cannot be dismissed, indicating that PPC is running in the background. 
 <img style="height:350px" src="Notifications_PPC.png"/>
 _Figure 11. PPC client notification_ <br>
 
@@ -341,7 +341,7 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 * Use of a StageNow profile which combines installation and configuration into a single profile is not supported. Two separate profiles need to be created:<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Install PPC client and PPCClientMgr app. Start the PPC client activity.<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2. Configure PPC settings.
-* When PPCClientMgr app is opened, a notification message is displayed in the device notifications drawer. This indicates that PPCClientMgr is running in the background. 
+* When PPCClientMgr app is opened on Android O or higher devices, a notification message is displayed in the device notifications drawer. This indicates that PPCClientMgr is running in the background. 
 <img style="height:350px" src="Notifications_PPCClientMgr.png"/>
 _Figure 12. PPC client notification_ <br>
 

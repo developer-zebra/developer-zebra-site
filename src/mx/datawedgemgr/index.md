@@ -1,6 +1,6 @@
 ---
-title: Bluetooth Manager
-description: The BluetoothMgr controls whether to allow new devices to pair.
+title: DataWedge Manager
+description: The DataWedge Manager controls Zebra's DataWedge data acquisition service for Android devices. 
 layout: csp-detail.html
 mxversions:
   - text: MX 4.2

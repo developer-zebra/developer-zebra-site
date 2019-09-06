@@ -6,15 +6,13 @@ devicetype: A
 order: 0
 ---
 
-The Bluetooth Manager (BluetoothMgr) controls whether a device can pair with other Bluetooth devices such as headsets, printers and computers that come into range, and whether the device can be "discoverable," which would enable other Bluetooth devices to initiate pairing requests with it. 
-
-Bluetooth is a short-range wireless technology operating in the 2.4 GHz ISM band that was originally intended as a replacement for serial communications cables. It has since been adopted as a standard for hands-free headsets, stereo audio, networking to PCs and connections for barcode scanners, medical equipment and other devices formerly using RS-232. 
+The DataWedge Manager (DataWedgeMgr) enables control of the Zebra DataWedge data acquisition service for Android devices programmatically or through an Enteprise Mobility Management system. DataWedge allows any application on the device to acquire data from any of a device's input sources, including barcode scanners and MSR and RFID readers, and to manipulate the data as needed based on simple options or complex rules. 
 
 ### Main Functionality
 
-* Enable/Disable 
- * Bluetooth Pairing 
- * Bluetooth Discoverability
- * Silent Pairing (no user confirmation)
-* Create Silent Pairing Rules  
+* Enable/Disable: 
+ * Automatic importing of configuration files 
+ * Importing of configuration files through intents
+ * Settings changes by the device user 
 
+-----

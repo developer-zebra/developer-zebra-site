@@ -66,7 +66,7 @@ When switching to a Guest user on a device, Android displays a prompt asking to 
 
 ## GMS Restricted Mode
 
-On GMS devices running Android 8.x Oreo and higher, Zebra implements a feature called [GMS Restricted Mode](/mx/appmgr/#mainfunctionality), an optional state that disables all GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device (that are safe to disable) and removes their icons from the Android Launcher. **Although these apps and services also are disabled on devices running EHS, <u>their names remain visible in the EHS Preferences -> Disable Applications</u>** panel. 
+On GMS devices running Android 8.x Oreo and higher, Zebra implements a feature called [GMS Restricted Mode](/mx/appmgr/#mainfunctionality), an optional state that disables GMS applications and services (i.e. Gmail, Google Maps, etc.) on the device based on administrator preferences. **Although these apps and services also are disabled on devices running EHS, <u>their names remain visible in the EHS Preferences -> Disable Applications</u>** panel. 
 
 Attempts to enable any of the effected apps&ndash;either through the EHS Preferences UI or by pushing a config file&ndash;result in failure and are added to the [EHS log](../features#ehslog). Users attempting to enable GMS apps through the Privileged Settings UI also see a failure message on the screen.
 

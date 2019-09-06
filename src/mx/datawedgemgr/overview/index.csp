@@ -11,7 +11,7 @@ The DataWedge Manager (DataWedgeMgr) enables control of the Zebra DataWedge data
 ### Main Functionality
 
 * Enable/Disable: 
- * Automatic importing of configuration files 
+ * Automatic importing of Configuration files 
  * Importing of configuration files through intents
  * Settings changes by the device user 
 

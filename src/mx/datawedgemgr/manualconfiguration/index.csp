@@ -27,4 +27,4 @@ parm:
       description: Disables the DataWedge UI on the device.
 ---
 
-Controls whether the device user has access to DataWedge configuration settings on the device. 
+Controls whether the device user has access to the DataWedge user interface and can change configuration settings on the device. 

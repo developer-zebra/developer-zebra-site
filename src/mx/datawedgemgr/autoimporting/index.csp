@@ -2,7 +2,7 @@
 csp: datawedgemgr
 title: Auto-import Settings Enable/Disable
 type: parm
-order: 2
+order: 4
 mx: "9.2"
 devicetype: A
 parm:
@@ -27,4 +27,4 @@ parm:
       description: Maintains current DataWedge settings and does not activate settings contained in a Configuration file pushed to the device.
 ---
 
-This is the On/Off switch for automatic importation of DataWedge configuration files when they're pushed to the `/enterprise/device/settings/datawedge/autoimport` folder on the device. If Enabled (option 1) and DataWedge is running, settings contained in a Configuration file take effect as soon as the file is pushed to the device. If DataWedge is not running when a config file is pushed, settings take effect the next time DataWedge launches. 
+This is the On/Off switch for automatic importation of DataWedge configuration files when they're pushed to the `/enterprise/device/settings/datawedge/autoimport` folder on the device. When Enabled (option 1), settings contained in a Configuration file take effect as soon as the file is pushed to the device if DataWedge is running when the file is received. If DataWedge is not running when a config file is pushed, settings take effect the next time DataWedge is launched. 

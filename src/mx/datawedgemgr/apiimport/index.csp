@@ -1,8 +1,8 @@
 ---
 csp: datawedgemgr
-title: Intent-based Import Enable/Disable
+title: Import via Intent Enable/Disable
 type: parm
-order: 7
+order: 5
 mx: "9.2"
 devicetype: A
 parm:
@@ -19,14 +19,12 @@ parm:
       devicetype: A
       name: Enable
       mx: "9.2"
-      description: Enables the feature.
+      description: Enables Configuration files to be imported programmatically through intents.
     - code: 2
       devicetype: A
       name: Disable
       mx: "9.2"
-      description: Disables the feature.
+      description: Disables intent-based Configuration file imports. 
 ---
 
-Controls whether 
-
-configuration import should be allowed via the DataWedge Intent API
+Controls whether Configuration files can be delivered to DataWedge by other apps on the device using intents. 

@@ -11,23 +11,31 @@ The KeyMappingMgr allows an app to modify the behavior of one or more physical (
 ####Requirements
 
 * KeyMappingMgr is **supported only on the following devices**:
+	* **EC30**
+	* **ET51**
+	* **ET56**
+	* **L10**
 	* MC18
 	* MC33
+	* **MC330**
 	* MC40
 	* MC67
 	* MC92
-	* **TC20**
-	* **TC25**
+	* **MC93**
+	* TC20
+	* TC25
 	* TC51
-	* **TC52**
+	* TC52
 	* TC56
-	* **TC57**
+	* TC57
 	* TC70x
-	* **TC72**
+	* TC72
 	* TC75x
-	* **TC77**
+	* TC77
 	* TC8000
+	* **TC8300**
 	* VC80x
+	* **VC8300**
 	* WT6000
 * **Device must be running Android 4.4 KitKat or later**
 * **Device must contain MX 4.4 or higher**

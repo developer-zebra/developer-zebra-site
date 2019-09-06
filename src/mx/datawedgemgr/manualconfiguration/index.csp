@@ -2,7 +2,7 @@
 csp: datawedgemgr
 title: Device UI Enable/Disable
 type: parm
-order: 5
+order: 2
 mx: "9.2"
 devicetype: A
 parm:

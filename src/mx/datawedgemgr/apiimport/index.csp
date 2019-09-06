@@ -1,10 +1,9 @@
 ---
 csp: datawedgemgr
-title: Silent Pairing Enable/Disable
+title: Intent-based Import Enable/Disable
 type: parm
 order: 7
 mx: "9.2"
-apilevel: "24"
 devicetype: A
 parm:
   pivotal: No

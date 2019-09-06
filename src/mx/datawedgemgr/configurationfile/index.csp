@@ -4,7 +4,6 @@ title: Configuration File
 type: parm
 order: 12
 mx: "9.2"
-apilevel: "24"
 devicetype: A
 parm:
   presentif: Allow Pairing and Allow Silent Pairing are BOTH set to "Enable"
@@ -13,8 +12,24 @@ parm:
   type: string
 ---
 
-Used to specify the name of a Bluetooth device with which to allow device pairing without requiring user confirmation. **Only the Name field is required to create a Silent Pairing Rule**. Optionally, device Name can be combined with Class of Device and/or Upper Address Part (UAP) of the device's MAC address to create Silent Pairing Rules with more specificity than using the device Name alone. 
+Used to enter the name of a file on the device that contains DataWedge configuration settings. 
 
 **Input value rules**: 
 
-* String from 1-255 characters containing Bluetooth device name. For example: "Zebra Printer_01" 
+* String from 0&ndash;255 characters containing name of configuration file on the device
+
+DataWedge supports the importing of Config files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices through commercially available third-party Mobile Device Management (MDM) systems. When DataWedge launches, it checks the `/enterprise/device/settings/datawedge/autoimport` directory for the presence of such files. If any are found, it executes the functions below.
+
+**DataWedge Auto-Import routine**:
+
+1. Import the new file(s)
+2. Replace the existing Config file and like-named Profile(s) (if any)
+3. Delete the imported files
+4. Put new settings immediately into effect
+
+
+Important Notes:
+* For the best experience, **Zebra strongly recommends that users be advised to <u>exit any DataWedge configuration UI screen</u>** before new Config files are remotely deployed.
+* **On devices running Android KitKat or later**, the /enterprise folder cannot be seen with File Explorer or other user-level tools. Moving configuration files to and from the /autoimport or /enterprisereset folders must be done programmatically, or with a staging client app or MDM.
+* **DataWedge versions prior to 6.9** attempt to consume any of the monitored “.db” files as soon the file name(s) appear in the /autoimport folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, **Zebra recommends initially storing the file with an alternate extension** (i.e. ".tmp") and changing the extension to .db once writing is complete.
+* **Zebra recommends applying explicit file permissions to the all .db files** so that DataWedge file procedures will not be impeded.

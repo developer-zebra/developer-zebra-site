@@ -88,6 +88,10 @@ csps:
     url: /mx/conditionmgr
     csp: conditionmgr
   - type: section
+    title: DataWedge Manager
+    url: /mx/datawedgemgr
+    csp: datawedgemgr
+  - type: section
     title: DevAdmin
     url: /mx/devadmin
     csp: devadmin

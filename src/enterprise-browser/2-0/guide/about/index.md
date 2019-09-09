@@ -85,8 +85,8 @@ See all [supported Zebra devices](../about#mobile).
  * **[&lt;TTSEnginePreference&gt;](../configreference#ttsenginepreference) -** Allows a third-party speech recognition engine to be selected if an engine other than the Google TTS engine is desired. 
  * **[&lt;TTSEngine&gt;](../configreference#ttsengine) -** Used to specify the package name when a TTS engine other than Google TTS (`com.google.android.tts`) is used.
  * **[&lt;asrenabled&gt;](../configreference#asrenabled) -** Controls whether Android Speech Recognition (ASR) features are enabled in an app. 
- * **[&lt;asrpackagename&gt;](../configreference#asrpackagename) -** Used to specify the package name of a third-party ASR engine is one other than Google ASR (default) used. 
- * **[&lt;asrclassname&gt;](../configreference#asrclassname) -** Used to specify the class name of a third-party ASR engine is one other than Google ASR (default) used. 
+ * **[&lt;asrpackagename&gt;](../configreference#asrpackagenameasrclassname) -** Used to specify the package name of a third-party ASR engine is one other than Google ASR (default) used. 
+ * **[&lt;asrclassname&gt;](../configreference#asrpackagenameasrclassname) -** Used to specify the class name of a third-party ASR engine is one other than Google ASR (default) used. 
  * **[&lt;asrpreferoffline&gt;](../configreference#asrpreferoffline) -** Controls whether voice recognition service can be provided without an internet connection. 
  * **[&lt;audionotificationenabled&gt;](../configreference#audionotificationenabled) -** Controls whether a beep sound is played to indicate the device is ready to accept voice input. 
  * **[&lt;asrpartialmodeenabled&gt;](../configreference#asrpartialmodeenabled) -** Controls whether the speech engine displays recognized words in real time or all at once when speaking ends. 
@@ -129,10 +129,7 @@ The following new methods, properties and/or callbacks were added to Android API
  * &lt;VerifyClientCertificate&gt;
  * &lt;DisplayZoomControls&gt;
 
-A **new [ButtonBarLayout API](../../api/re2x/buttonbarlayout) includes: 
- * 
-
-
+**New layouts for the [ButtonBarLayout API](../../api/re2x/buttonbar)**
 
 ### New/Updated Features/Guides
 
@@ -427,7 +424,7 @@ For details, see the [Config.xml Reference](../configreference/#substitutionvari
 
 * An **updated [WebView API](../../api/webview)** provides programmatic control over the Android WebView using new **clearApplicationCache, clearCache, clearHistory, clearCookies, resizeWebviewLayout and resetWebviewLayout** methods, and **blockNetworkImage, blockNetworkLoads and contentHeight** properties.  
 * An **updated [Device API](../../api/device) -** adds a **reboot** method for Android. 
-* An **updated [SIP API](../../api/sip) -** adds **disableAIIIME** and **resetToDefault** methods for Android. 
+* An **updated [SIP API](../../api/Sip) -** adds **disableAIIIME** and **resetToDefault** methods for Android. 
 * An **updated [RemoteNotification API](../../api/remotenotification) -** introduces a **cancelNotification** method and **isLEDSupported, isBeepSupported and isVibrateSupported** properties for Android. 
 * An **updated [Barcode API](../../api/barcode) -** gives Android devices new **resetToDefault** and **isParamSupported** methods and properties for **aimType, timesAimDuration, sameSymbolTimeout, differentSymbolTimeout, picklistEx, decodeLEDtime, decodeLEDFeedback, decodeLEDFeedbackMode, OneDQuietZoneLevel** and **PoorQualityDecideZoneLevel**.
 

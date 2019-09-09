@@ -2,7 +2,7 @@
 title: Frequently Asked Questions
 layout: guide.html
 product: EMDK for Xamarin
-productversion: '5.0'
+productversion: '4.0'
 ---
 
 ## About the FAQ 

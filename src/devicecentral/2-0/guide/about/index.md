@@ -114,7 +114,7 @@ Device Central is approved for use with the following Bluetooth peripherals:
   </tr>
   <tr>
     <td>Bluetooth Printer</td>
-    <td>Zebra Bluetooth Printers (for example QLN320, ZQ110)</td>
+    <td>Zebra Bluetooth Printers: QLN320, ZQ110</td>
   </tr>
   <!-- ** Payment Support removed **
   <tr>

@@ -22,6 +22,8 @@ menu:
       url: /emdk-for-xamarin/5-0/guide/programming-guides
     - title: Profile Manager
       url: /emdk-for-xamarin/5-0/guide/profile-manager-guides
+    - title: FAQs
+      url: /emdk-for-xamarin/5-0/faq
     - title: APIs
       url: /emdk-for-xamarin/5-0/api
     - icon: fa fa-comments-o

@@ -44,29 +44,29 @@ When developing an app, Android developers should specify in the app manifest a 
 
 A: Retry the API command or gracefully exit the app. The exception handling code snippet below also might be helpful:
 
-		catch (ScannerException ex)
-            {
-                Log.d("EMDK Exception", ex.StackTrace);
+    catch (ScannerException ex)
+    {
+        Log.d("EMDK Exception","" + ex.getStackTrace());
 
-                // Check if the failure is recoverable within the application
-                if (ex.Result == ScannerResults.Failure ||
-                    ex.Result == ScannerResults.ScannerNotEnabled ||
-                    ex.Result == ScannerResults.ScannerNotConnected ||
-                    ex.Result == ScannerResults.InvalidObject ||
-                    ex.Result == ScannerResults.NoDataListener)
-                {
-                    // Decide what actions can be taken as per the business logic
-                }
+        // Check if the failure is recoverable within the application
+        if (ex.getResult() == ScannerResults.FAILURE ||
+                ex.getResult() == ScannerResults.SCANNER_NOT_ENABLED ||
+                ex.getResult() == ScannerResults.SCANNER_NOT_CONNECTED ||
+                ex.getResult() == ScannerResults.INVALID_OBJECT ||
+                ex.getResult() == ScannerResults.NO_DATA_LISTENER)
+        {
+            // Decide what actions can be taken as per the business logic
+        }
 
-                // Check if the failure is not recoverable within the application
-                if (ex.Result == ScannerResults.ScannerInUse ||
-                    ex.Result == ScannerResults.FeatureNotSupported ||
-                    ex.Result == ScannerResults.ScannerNotSupported ||
-                    ex.Result == ScannerResults.ScannerInitFailure )
-                {
-                    // Decide what actions can be taken as per the business logic
-                }
-            }
+        // Check if the failure is not recoverable within the application
+        if (ex.getResult() == ScannerResults.SCANNER_IN_USE ||
+                ex.getResult() == ScannerResults.FEATURE_NOT_SUPPORTED ||
+                ex.getResult() == ScannerResults.SCANNER_NOT_SUPPORTED ||
+                ex.getResult() == ScannerResults.SCANNER_INIT_FAILURE )
+        {
+            // Decide what actions can be taken as per the business logic
+        }
+    }
 
 -----
 

@@ -529,11 +529,11 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 ###Mobile
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
-  <th width="15%" class="clsSyntaxHeadings"></th>
-  <th width="10%" class="clsSyntaxHeadings">Device family</th>
-  <th width="25%" class="clsSyntaxHeadings">Device</th>
-  <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
-  <th width="25%" class="clsSyntaxHeadings">Supported WebView(s)</th>
+  <th class="clsSyntaxHeadings"></th>
+  <th class="clsSyntaxHeadings">Device family</th>
+  <th class="clsSyntaxHeadings">Device model(s)</th>
+  <th class="clsSyntaxHeadings">Operating System(s)</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="es400Pic" src="../../images/es400.jpeg" height="25"></td>
@@ -740,10 +740,10 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
 <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc55.jpeg" height="25"></td>
-  <td class="clsSyntaxCells clsOddRow"><b>TC55</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC55</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)</td>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc57.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC57</b></td>
+  <td class="clsSyntaxCells clsOddRow">TC57</td>
+  <td class="clsSyntaxCells clsOddRow">Android 8.0 (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
 <tr>
@@ -765,6 +765,13 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>TC70x</b></td>
   <td class="clsSyntaxCells clsOddRow">TC70x</td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshamallow)<br>(requires BSP 01-21-04 with LG patch 13)<br><br>Android 7.0 (Nougat)<br>(requires BSP 01-01-49 with LG patch 13)<br><br>Android 8.x (Oreo)</td>
+  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+ </tr>
+<tr>
+  <td class="clsSyntaxCells clsOddRow"><img id="tc55Pic" src="../../images/tc72.jpg" height="25"></td>
+  <td class="clsSyntaxCells clsOddRow"><b>TC72</b></td>
+  <td class="clsSyntaxCells clsOddRow">TC72</td>
+  <td class="clsSyntaxCells clsOddRow">Android 8.0 (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
@@ -816,11 +823,11 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 ###Vehicle
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
-  <th width="15%" class="clsSyntaxHeadings"></th>
-  <th width="10%" class="clsSyntaxHeadings">Device family</th>
-  <th width="25%" class="clsSyntaxHeadings">Device</th>
-  <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
-  <th width="25%" class="clsSyntaxHeadings">Supported WebView(s)</th>
+  <th class="clsSyntaxHeadings"></th>
+  <th class="clsSyntaxHeadings">Device family</th>
+  <th class="clsSyntaxHeadings">Device model(s)</th>
+  <th class="clsSyntaxHeadings">Operating System(s)</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="vh10pic" src="../../images/vh10.png" height="25"></td>
@@ -864,11 +871,11 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody>
  <tr>
-  <th width="15%" class="clsSyntaxHeadings"></th>
-  <th width="10%" class="clsSyntaxHeadings">Device family</th>
-  <th width="25%" class="clsSyntaxHeadings">Device</th>
-  <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
-  <th width="25%" class="clsSyntaxHeadings">Supported WebView(s)</th>
+  <th class="clsSyntaxHeadings"></th>
+  <th class="clsSyntaxHeadings">Device family</th>
+  <th class="clsSyntaxHeadings">Device model(s)</th>
+  <th class="clsSyntaxHeadings">Operating System(s)</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
   <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="cc5000" src="../../images/cc5000.png" height="25"></td>
@@ -919,11 +926,11 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody>
  <tr>
-  <th width="15%" class="clsSyntaxHeadings"></th>
-  <th width="10%" class="clsSyntaxHeadings">Device family</th>
-  <th width="25%" class="clsSyntaxHeadings">Device</th>
-  <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
-  <th width="25%" class="clsSyntaxHeadings">Supported WebView(s)</th>
+  <th class="clsSyntaxHeadings"></th>
+  <th class="clsSyntaxHeadings">Device family</th>
+  <th class="clsSyntaxHeadings">Device model(s)</th>
+  <th class="clsSyntaxHeadings">Operating System(s)</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="wt4000Pic" src="../../images/wt4090.png" height="25"></td>
@@ -953,11 +960,11 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody>
  <tr>
-  <th width="15%" class="clsSyntaxHeadings"></th>
-  <th width="10%" class="clsSyntaxHeadings">Device family</th>
-  <th width="25%" class="clsSyntaxHeadings">Device</th>
-  <th width="25%" class="clsSyntaxHeadings">Device type</th>
-  <th width="25%" class="clsSyntaxHeadings">Supported for use with:</th>
+  <th class="clsSyntaxHeadings"></th>
+  <th class="clsSyntaxHeadings">Device family</th>
+  <th class="clsSyntaxHeadings">Device model(s)</th>
+  <th class="clsSyntaxHeadings">Device type</th>
+  <th class="clsSyntaxHeadings">Supported for use with:</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="rs5000Pic" src="../../images/rs5000.jpg" height="25"></td>
@@ -1000,11 +1007,11 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody>
  <tr>
-  <th width="15%" class="clsSyntaxHeadings"></th>
-  <th width="10%" class="clsSyntaxHeadings">Device family</th>
-  <th width="25%" class="clsSyntaxHeadings">Device</th>
-  <th width="25%" class="clsSyntaxHeadings">Device type</th>
-  <th width="25%" class="clsSyntaxHeadings">Supported for use with:</th>
+  <th class="clsSyntaxHeadings"></th>
+  <th class="clsSyntaxHeadings">Device family</th>
+  <th class="clsSyntaxHeadings">Device model(s)</th>
+  <th class="clsSyntaxHeadings">Device type</th>
+  <th class="clsSyntaxHeadings">Supported for use with:</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="ds3678" src="../../images/ds3678.jpg" height="25"></td>
@@ -1035,11 +1042,11 @@ Android 8.0 (Oreo)</td>
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody>
  <tr>
-  <th width="15%" class="clsSyntaxHeadings"></th>
-  <th width="10%" class="clsSyntaxHeadings">Device family</th>
-  <th width="25%" class="clsSyntaxHeadings">Device</th>
-  <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
-  <th width="25%" class="clsSyntaxHeadings">Supported WebView(s)</th>
+  <th class="clsSyntaxHeadings"></th>
+  <th class="clsSyntaxHeadings">Device family</th>
+  <th class="clsSyntaxHeadings">Device model(s)</th>
+  <th class="clsSyntaxHeadings">Operating System(s)</th>
+  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><img id="CBL-NGWT-HDVBAP-01pic" src="../../images/CBL-NGWT-HDVBAP-01.jpg" height="25"></td>
@@ -1057,11 +1064,11 @@ The printers shown below have been tested for compatibility with USB printing fr
 
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
-  <th width="15%" class="clsSyntaxHeadings"></th>
-  <th width="10%" class="clsSyntaxHeadings">Device family</th>
-  <th width="25%" class="clsSyntaxHeadings">Device models</th>
-  <th width="25%" class="clsSyntaxHeadings">Operating System(s)</th>
-  <th width="25%" class="text-centered">Interface(s)</th>
+  <th class="clsSyntaxHeadings"></th>
+  <th class="clsSyntaxHeadings">Device family</th>
+  <th class="clsSyntaxHeadings">Device models</th>
+  <th class="clsSyntaxHeadings">Operating System(s)</th>
+  <th class="text-centered">Interface(s)</th>
  </tr>
 <tr>
 <td class="clsSyntaxCells clsOddRow"><img id="mz220pic" src="https://raw.githubusercontent.com/EBZebra/docs/d05601dc71f2531672f39c00238de2ea250d851f/edge/images/zebra-mz220.jpg"></img></td>

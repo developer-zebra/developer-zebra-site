@@ -1444,6 +1444,10 @@ display:none
   display:none;
 }
 
+#main-menu .languagedropdown {
+  display: inherit;
+}
+
 .facelift td, .facelift th {
   padding: 5px
 }

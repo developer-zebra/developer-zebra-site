@@ -97,6 +97,17 @@
                             </a>
                         </li>
                         {{/each}}
+                        {{#if this.menu.languages}}
+                        <li class="dropdown languagedropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"> <img src="/images/flags/img-flag-usa.png" style="display:inline!important;" alt=""> US - English
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            {{#each this.menu.languages}}
+                                <li><a onclick="changeLanguage('{{this.urlFrom}}','{{this.urlTo}}')"><img src="{{this.img}}" style="display:inline!important;" alt="{{ this.label }}"> {{ this.label }}</a></li>
+                            {{/each}}
+                          </ul>
+                        </li>                    
+                        {{/if}}
                         <!-- <li ><a href="/products">SDKs</a></li>
                         <li ><a href="/samples">Samples</a></li>
                         <li ><a href="/guides">Guides</a></li>

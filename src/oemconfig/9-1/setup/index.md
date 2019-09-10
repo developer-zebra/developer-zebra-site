@@ -46,7 +46,7 @@ The exact process for setting up an EMM console to use Zebra OEMConfig varies wi
 * Push *Transaction(s)* to device(s) for consumption by OEMConfig tool
 
 ##### Using CloudDPC? 
-For EMMs that use the Android Management APIs and CloudDPC as their EMM agent, Google offers an option to define a JSON document that specifies a set of `.apk`s to be installed, Managed Configurations to be applied to those `.apk`s, and other non-application-oriented management operations. In such a case, some of the steps above would happen together in a way that might not be obvious to the administrator or console operator.
+For EMMs that use the Android Management APIs and Google's CloudDPC device policy controller as their EMM agent, Google offers an option to define a JSON document that specifies a set of `.apk`s to be installed, Managed Configurations to be applied to those `.apk`s, and other non-application-oriented management operations. In such a case, some of the steps above would happen together in a way that might not be obvious to the administrator or console operator.
 
 ##### About The Schema
 Every `.apk` that supports Managed Configurations must provide a schema, which defines the Managed Configurations supported by that `.apk`. The Play Store provides server-to-server APIs that allow an EMM server to acquire the schema from the Play Store for the published `.apk`. There's more about schemas on the [FAQ page](../faq).

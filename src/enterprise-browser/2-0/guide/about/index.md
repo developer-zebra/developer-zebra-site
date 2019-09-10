@@ -1004,17 +1004,16 @@ Android 8.0 (Oreo)</td>
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody>
  <tr>
-  <th class="clsSyntaxHeadings"></th>
   <th class="clsSyntaxHeadings">Device family</th>
-  <th class="clsSyntaxHeadings">Device model(s)</th>
-  <th class="clsSyntaxHeadings">Operating System(s)</th>
-  <th class="clsSyntaxHeadings">Supported WebView(s)</th>
+  <th class="clsSyntaxHeadings">Description</th>
+  <th class="clsSyntaxHeadings">Device type</th>
+  <th class="clsSyntaxHeadings">Support note(s)</th>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>Vibrator CBL-NGWT-HDVBAP-01</b></td>
   <td class="clsSyntaxCells clsOddRow">Vibrating Cable</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">Supported for use with WT6000 Android 5.0 (Lollipop) or Android 7.0 (Nougat)</td>
+  <td class="clsSyntaxCells clsOddRow">Supported for use with WT6000 Android 5.0 (Lollipop) <br>or Android 7.0 (Nougat)</td>
  </tr>
 </tbody>
 </table>
@@ -1028,7 +1027,7 @@ The printers shown below have been tested for compatibility with USB printing fr
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
   <th class="clsSyntaxHeadings">Device family</th>
-  <th class="clsSyntaxHeadings">Device models</th>
+  <th class="clsSyntaxHeadings">Device model(s)</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="text-centered">Interface(s)</th>
  </tr>

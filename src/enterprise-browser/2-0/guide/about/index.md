@@ -561,7 +561,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC3100</b></td>
-  <td class="clsSyntaxCells clsOddRow">MC3100R, MC3100S, MC3190G, MC3190R, MC3190S, MC3190Z</td>
+  <td class="clsSyntaxCells clsOddRow">MC3100R, MC3100S, MC3190G,<br> MC3190R, MC3190S, MC3190Z</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 Professional<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
@@ -669,7 +669,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC9500</b></td>
-  <td class="clsSyntaxCells clsOddRow">MC9590, MC9596, MC9598, MC959B (WM6.1)</td>
+  <td class="clsSyntaxCells clsOddRow">MC9590, MC9596, MC9598,<br> MC959B (WM6.1)</td>
   <td class="clsSyntaxCells clsOddRow">Windows Mobile 6.1<br>Windows Embedded Handheld 6.5</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
@@ -687,7 +687,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  </tr>
 <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC20</b></td>
-  <td class="clsSyntaxCells clsOddRow">TC20, TC20K, TC20 with RFD2000 RFID Sled</td>
+  <td class="clsSyntaxCells clsOddRow">TC20, TC20K, TC20 with <br>RFD2000 RFID Sled</td>
   <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>(requires BSP 04-14-30 with LG patch 6)<br><br>Android 8.x (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
@@ -773,11 +773,13 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <tr>
   <td class="clsSyntaxCells clsOddRow"><b>Workabout Pro 4</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>7528</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 (requires BSP WAP4 CE-2.4 or higher)<br>Windows Embedded Handheld 6.5 (requires BSP WAP4 WEH-3.0.1 or higher)</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 <br>(requires BSP WAP4 CE-2.4 or higher)<br>Windows Embedded Handheld 6.5 <br>(requires BSP WAP4 WEH-3.0.1 or higher)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
 </tbody>
 </table>
+
+-----
 
 ###Vehicle
 <table cellspacing="0" cellpadding="0" class="table table-striped">
@@ -817,8 +819,16 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>(requires BSP 01-01-49 with LG patch 13)<br><br>Android 8.x (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Stock Android Webkit</td>
  </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"></td>
+  <td class="clsSyntaxCells clsOddRow"></td>
+  <td class="clsSyntaxCells clsOddRow"></td>
+  <td class="clsSyntaxCells clsOddRow"></td>
+ </tr>
 </tbody>
 </table>
+
+-----
 
 ###Micro-Kiosk
 <table cellspacing="0" cellpadding="0" class="table table-striped">
@@ -868,6 +878,8 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 </tbody>
 </table>
 
+-----
+
 ###Wearable
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody>
@@ -895,9 +907,16 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>(requires BSP 04-10-03 with LG patch 6)<br><br>Android 7.x (Nougat)<br>(requires BSP 12-29 with LG patch 3)</td>
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"></td>
+  <td class="clsSyntaxCells clsOddRow"></td>
+  <td class="clsSyntaxCells clsOddRow"></td>
+  <td class="clsSyntaxCells clsOddRow"></td>
+ </tr>
  </tbody>
  </table>
- 
+
+
 <h3>Ring Scanners</h3>
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody>
@@ -917,7 +936,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>RS6000</b></td>
   <td class="clsSyntaxCells clsOddRow">Bluetooth Ring Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">TC75, TC8000 Android 5.0 (Lollipop)<br>TC51, TC56, TC70X Android 6.0 (Marshmallow)<br>MC33X, TC51, TC51HC, TC56, TC70X, TC75X, VC80X Android 7.0 (Nougat) or Android 8.0 (Oreo)<br>TC52, TC57, TC72, TC77 Android 8.0 (Oreo)</td>
+  <td class="clsSyntaxCells clsOddRow">TC75, TC8000 Android 5.0 (Lollipop)<br>TC51, TC56, TC70X Android 6.0 (Marshmallow)<br>MC33X, TC51, TC51HC, TC56, TC70X, TC75X, <br>VC80X Android 7.0 (Nougat) or Android 8.0 (Oreo)<br>TC52, TC57, TC72, TC77 Android 8.0 (Oreo)</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>RS4000</b></td>
@@ -929,7 +948,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>RS507</b></td>
   <td class="clsSyntaxCells clsOddRow">Cordless Ring Imager</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">TC70 Android 4.4 (KitKat)<br>TC51, TC51HC, TC56, TC70X Android 6.0 (Marshmallow)<br>MC33X, TC51, TC51HC, TC56, TC70X, TC75X, VC80X Android 7.0 (Nougat) or Android 8.0 (Oreo)<br>TC52, TC57, TC72, TC77 Android 8.0 (Oreo)<br>See RS507 Support Notes below.</td>
+  <td class="clsSyntaxCells clsOddRow">TC70 Android 4.4 (KitKat)<br>TC51, TC51HC, TC56, TC70X Android 6.0 (Marshmallow)<br>MC33X, TC51, TC51HC, TC56, TC70X, TC75X, <br>VC80X Android 7.0 (Nougat) or Android 8.0 (Oreo)<br>TC52, TC57, TC72, TC77 Android 8.0 (Oreo)<br>See RS507 Support Notes below.</td>
  </tr>
 </tbody>
 </table>
@@ -939,6 +958,8 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
 * Works with the Enterprise Browser Barcode API on all supported devices running KitKat or higher (relies on the EMDK service, which is standard on such devices).
 
 * Works with RhoElements 2.x and PocketBrowser 2.x/3.x APIs on all supported devices running KitKat or higher **except the TC70-GA1**. 
+
+-----
 
 <h3>Handheld Scanners</h3>
 <table cellspacing="0" cellpadding="0" class="table table-striped">
@@ -953,23 +974,31 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>DS3678</b></td>
   <td class="clsSyntaxCells clsOddRow">Ultra-Rugged Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">TC70X, TC75X, VC80X devices running Android 7.0 (Nougat)<br>MC33X, TC51, TC51HC, TC52, TC56, TC57, TC72, TC77, TC70X, TC75X and VC80X devices running Android 8.0 (Oreo)</td>
+  <td class="clsSyntaxCells clsOddRow">TC70X, TC75X, VC80X devices running Android 7.0 (Nougat)<br>MC33X, TC51, TC51HC, TC52, TC56, TC57, TC72, TC77, TC70X, <br>TC75X and VC80X devices running Android 8.0 (Oreo)</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>LI3678</b></td>
   <td class="clsSyntaxCells clsOddRow">Ultra-Rugged Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">MC33X, TC51, TC52, TC51HC, TC56, TC57, TC72, TC77, TC70X, TC75X and VC80X devices running Android 8.0 (Oreo)</td>
+  <td class="clsSyntaxCells clsOddRow">MC33X, TC51, TC52, TC51HC, TC56, TC57, TC72, TC77, TC70X, <br>TC75X and VC80X devices running Android 8.0 (Oreo)</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>DS2278</b></td>
   <td class="clsSyntaxCells clsOddRow">Handheld Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">MC33X, TC51, TC51HC, TC56, TC70X, TC75X and VC80X devices running Android 8.0 (Oreo)<br>TC52, TC57, TC72, TC77
+  <td class="clsSyntaxCells clsOddRow">MC33X, TC51, TC51HC, TC56, TC70X, <br>TC75X and VC80X devices running Android 8.0 (Oreo)<br>TC52, TC57, TC72, TC77
 Android 8.0 (Oreo)</td>
+ </tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"></td>
+  <td class="clsSyntaxCells clsOddRow"></td>
+  <td class="clsSyntaxCells clsOddRow"></td>
+  <td class="clsSyntaxCells clsOddRow"></td>
  </tr>
 </tbody>
 </table>
+
+-----
 
 <h3>Misc. Accessories</h3>
 <table cellspacing="0" cellpadding="0" class="table table-striped">
@@ -982,7 +1011,6 @@ Android 8.0 (Oreo)</td>
   <th class="clsSyntaxHeadings">Supported WebView(s)</th>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><img id="CBL-NGWT-HDVBAP-01pic" src="../../images/CBL-NGWT-HDVBAP-01.jpg" height="25"></td>
   <td class="clsSyntaxCells clsOddRow"><b>Vibrator CBL-NGWT-HDVBAP-01</b></td>
   <td class="clsSyntaxCells clsOddRow">Vibrating Cable</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
@@ -991,53 +1019,56 @@ Android 8.0 (Oreo)</td>
 </tbody>
 </table>
 
+-----
+
 ###Printers
 
 The printers shown below have been tested for compatibility with USB printing from Enterprise Browser. Printing wirelessly from EB apps is supported on many other Zebra printer models. **NOTE**: Zebra's QL Plus and QLn series printers do not support USB printing.
 
 <table cellspacing="0" cellpadding="0" class="table table-striped">
  <tbody><tr>
-  <th class="clsSyntaxHeadings"></th>
   <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device models</th>
   <th class="clsSyntaxHeadings">Operating System(s)</th>
   <th class="text-centered">Interface(s)</th>
  </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="mz220pic" src="https://raw.githubusercontent.com/EBZebra/docs/d05601dc71f2531672f39c00238de2ea250d851f/edge/images/zebra-mz220.jpg"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>MZ</b></td>
 <td class="clsSyntaxCells clsOddRow">MZ 220, MZ 320</td>
 <td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
 </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="imz220pic" src="../../images/imz320.jpg"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>iMZ</b></td>
 <td class="clsSyntaxCells clsOddRow">iMZ 220, iMZ 320</td>
 <td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
 </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="rw420pic" src="../../images/rw420_inCradle.jpg"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>RW</b></td>
 <td class="clsSyntaxCells clsOddRow">RW 220, RW 420, RW 420 Print Station</td>
 <td class="clsSyntaxCells usb comp">Android, Windows Mobile/CE</td>
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
 </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="rp4tpic" src="https://raw.githubusercontent.com/EBZebra/docs/d05601dc71f2531672f39c00238de2ea250d851f/edge/images/zebra-p4t.jpg"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>P4T</b></td>
 <td class="clsSyntaxCells clsOddRow">P4T, RP4T Passive RFID Printer</td>
 <td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
 </tr>
 <tr>
-<td class="clsSyntaxCells clsOddRow"><img id="zd500rpic" src="../../images/zd500r.jpg"></img></td>
 <td class="clsSyntaxCells clsOddRow"><b>ZD500R</b></td>
 <td class="clsSyntaxCells clsOddRow">ZD500R RFID Printer</td>
 <td class="clsSyntaxCells clsOddRow">Android, Windows Mobile/CE</td>
 <td class="clsSyntaxCells clsOddRow">Bluetooth, USB, Wi-Fi</td>
+</tr>
+ <tr>
+  <td class="clsSyntaxCells clsOddRow"></td>
+  <td class="clsSyntaxCells clsOddRow"></td>
+  <td class="clsSyntaxCells clsOddRow"></td>
+  <td class="clsSyntaxCells clsOddRow"></td>
+ </tr>
 </tbody>
 </table>
 
-
+-----

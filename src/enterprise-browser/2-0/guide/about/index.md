@@ -1028,7 +1028,7 @@ The printers shown below have been tested for compatibility with USB printing fr
  <tbody><tr>
   <th class="clsSyntaxHeadings">Device family</th>
   <th class="clsSyntaxHeadings">Device model(s)</th>
-  <th class="clsSyntaxHeadings">Operating System(s)</th>
+  <th class="clsSyntaxHeadings">OS Compatibility</th>
   <th class="text-centered">Interface(s)</th>
  </tr>
 <tr>

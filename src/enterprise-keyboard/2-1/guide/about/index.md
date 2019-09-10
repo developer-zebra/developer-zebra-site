@@ -14,12 +14,12 @@ Enterprise Keyboard (1.1 and higher) can be configured in the following ways:
 
 * **Manually** on the device
 * **Programmatically** through [EMDK for Android](../../../../emdk-for-android) development tools
-* **Remotely** using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service
-* Remotely through a company's own enterprise mobile management (EMM) system (if supported by that system)
+* **Remotely** using [StageNow](../../../../stagenow) and the [UI Manager](/mx/uimgr/) service
+* Remotely through a company's own enterprise mobility management (EMM) system (if supported by that system)
 
 -----
 
-**Enterprise Keyboard makes use of the Android Personal Dictionary for spelling corrections and shortcut substitutions**, and permits the dictionary to be easily populated with industry-specific terms to help improve the speed and accuracy of keyboard input. A custom dictionary can be populated in bulk and mass-deployed through Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools. 
+**Enterprise Keyboard makes use of the Android Personal Dictionary for spelling corrections and shortcut substitutions**, and permits the dictionary to be easily populated with industry-specific terms to help improve the speed and accuracy of keyboard input. A custom dictionary can be populated in bulk and mass-deployed through Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../stagenow) tools. 
 
 This version of Enterprise Keyboard includes the following languages: 
 

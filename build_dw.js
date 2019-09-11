@@ -213,7 +213,8 @@ var sitebuild = Metalsmith(__dirname)
             sortBy: 'order'
         },
 
-	}))
+    }))
+    /*
     .use(foldermenu({
         folder: 'datawedge/5-0/'
     }))
@@ -253,6 +254,7 @@ var sitebuild = Metalsmith(__dirname)
   .use(foldermenu({
         folder: 'datawedge/7-2/'
     }))
+    */
   .use(foldermenu({
         folder: 'datawedge/7-3/'
     }))

@@ -54,7 +54,7 @@ var index_generate = function(folder){
             for (var x = 0; x < keywords.length; x++) {
                 keyword_string += keywords[x] + " ";
             };
-            var snippet = snippets.snip(removeMd(yaml.body), {len: 150});
+            var snippet = snippets.snip(html.text, {len: 150});
             index_item = {
                 title: yaml.attributes.title,
                 keywords: keyword_string,
@@ -88,8 +88,7 @@ var index_generate = function(folder){
     
 
 }
-      index_generate("emdk-for-android/4-0");
-      index_generate("emdk-for-xamarin/1-0");
-      index_generate("enterprise-keyboard/1-0");
-      index_generate("ehs/2-3");
-      index_generate("stagenow/2-2");
+
+      index_generate("emdk-for-xamarin/2-2");
+      
+

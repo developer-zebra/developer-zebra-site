@@ -1,0 +1,174 @@
+
+{{> header}}
+    <section id="blog">
+        <div class="">
+            <section class="content-with-sidebar">
+            <div class="row">
+                <div class="col-sm-3 fixed-column-left"  >
+                    <ul class="nav">
+                        {{#each this.csps}}
+                            <li class="csp-select" data-id="{{this.csp}}"><a>{{this.title}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>                
+                <div class="col-sm-9 fixed-column-right">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <section id="cta" class="wow fadeIn">
+                                <div class="">
+                                    <h1>{{ title }}</h1>
+                                    <p</p>
+                                    <p>
+                                    {{#if product}}
+                                        {{ product }}
+                                    {{/if}}
+                                    {{#if productversion}}
+                                        - {{ productversion }}
+                                    {{/if}}
+                                    {{#if mxversion}}
+                                         - MX: {{mxversion}}
+                                    {{/if}}
+                                    </p>
+                                </div>
+                            </section>                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                        {{>navbar-smartdocs-vt}}
+                        </div>
+                    </div>
+                    {{#each this.csps}}
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <section id="{{this.csp}}" class="csp">
+                                <h2><a href="{{this.url}}">{{this.title}}</a></h2>
+                                <div class="">
+                                <!-- Start of content list -->
+                                    <div class="parm-table">
+                                        <table class="table">
+                                            <tr>
+                                                <th></th>
+                                                <th> OSX</th>
+                                                <th> MX </th>
+                                                <th> Android API Level </th>
+                                            </tr>
+                                            {{#each ../collections.csp}}
+                                            {{#is ../csp this.csp}}
+                                                 {{#isnt this.type "text"}}
+                                                    <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
+                                                        <td><span ><i>{{this.title}}</i></td>
+                                                        <td class="col-md-2">
+
+                                                            {{#if this.osx}}
+                                                                {{this.osx}}{{#if this.osx-end}}- {{this.osx-end}}{{else}}+{{/if}}
+                                                            {{else}}
+                                                                {{#if this.osx-specific}}
+                                                                    {{this.osx-specific}}{{#if this.osx-specific-end}} - {{this.osx-specific-end}}{{else}}{{/if}}
+                                                                     ONLY
+                                                                {{else}}
+                                                                    {{#if this.osx-specific-list}}{{this.osx-specific-list}} 
+                                                                    ONLY
+                                                                    {{else}}N/A
+                                                                    {{/if}}
+                                                                {{/if}}
+                                                            {{/if}}
+                                                            
+                                                            {{#if this.osx-exclude}}
+                                                                <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}{{#if this.osx-exclude-end}} - {{this.osx-exclude-end}}{{else}}{{/if}}
+                                                                </p>
+                                                            {{/if}}
+                                                        </td>
+                                                        <td class="col-md-2">
+                                                            {{#if this.mx}}
+                                                                {{this.mx}}+
+                                                            {{else}}
+                                                                All
+                                                            {{/if}}
+                                                        </td>
+                                                        <td class="col-md-2">
+                                                            {{#if this.apilevel}}
+                                                                {{this.apilevel}}+
+                                                            {{else}}
+                                                                All
+                                                            {{/if}}
+                                                        </td>
+                                                    </tr>                                                          
+
+                                                {{#is this.parm.type "list"}}
+                                                    {{#each this.parm.list}}
+                                                    <tr data-osx="{{this.osx}}" data-osx-specific="{{this.osx-specific}}" data-osx-exclude="{{this.osx-exclude}}" data-mx="{{this.mx}}" data-api="{{this.apilevel}}"  data-smartdoc>
+                                                        <td class="col-md-4"><span style="padding-left:15px"><i>{{this.name}}</i></td>
+                                                        <td class="col-md-2">
+                                                            {{#if this.osx}}
+                                                                {{this.osx}}{{#if this.osx-end}}- {{this.osx-end}}{{else}}+{{/if}}
+                                                            {{else}}
+                                                                {{#if this.osx-specific}}
+                                                                    {{this.osx-specific}}{{#if this.osx-specific-end}} - {{this.osx-specific-end}}{{else}}{{/if}}
+                                                                     ONLY
+                                                                {{else}}
+                                                                    {{#if this.osx-specific-list}}{{this.osx-specific-list}} 
+                                                                    ONLY
+                                                                    {{else}}N/A
+                                                                    {{/if}}
+                                                                {{/if}}
+                                                            {{/if}}
+                                                            
+                                                            {{#if this.osx-exclude}}
+                                                                <p class="text-danger">NOT IN OSX: {{this.osx-exclude}}{{#if this.osx-exclude-end}} - {{this.osx-exclude-end}}{{else}}{{/if}}
+                                                                </p>
+                                                            {{/if}}
+                                                        </td>
+                                                        <td class="col-md-2">
+                                                            {{#if this.mx}}
+                                                                {{this.mx}}+
+                                                            {{else}}
+                                                                All
+                                                            {{/if}}
+                                                        </td>
+                                                        <td class="col-md-2">
+                                                            {{#if this.apilevel}}
+                                                                {{this.apilevel}}+
+                                                            {{else}}
+                                                                All
+                                                            {{/if}}
+                                                        </td>
+                                                    </tr>                                                                                     
+                                                    {{/each}}
+                                                    
+                                                    
+                                                {{/is}}
+                                                {{/isnt}}
+                                            {{/is}} 
+                                            {{/each}}  
+                                        </table>
+                                    </div>	
+                                </div><!--/.container-->
+                                
+                            </section><!--/#services-->
+                        </div>
+                    </div>
+                    {{/each}} <!-- csp loop -->
+                    
+                </div><!--/.col-sm-6-->
+            </div>
+            </section>
+        </div>
+    </section>   
+<script type="text/javascript">
+    $(document).ready(function() {
+        console.log('ready');
+        $('.csp-select').click(function(e) { 
+            console.log('click');
+             var csp = $(this).attr("data-id");
+             $(".csp").hide();
+             $(".csp-select").removeClass("active");
+             $("#"+csp).show();
+             $(this).addClass("active");
+        }); 
+    });
+</script>
+{{> footer }}
+
+

@@ -1,7 +1,7 @@
 ---
 title: Enterprise Home Screen Setup
 layout: guide.html
-product: Enteprise Home Screen
+product: Enterprise Home Screen
 productversion: '2.3'
 ---
 
@@ -396,7 +396,7 @@ To install EHS using an MDM, instruct the MDM to do the following, in this order
 
 <tr>
 <td style="width: 118.35pt;" width="158">
-<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">HS_R_020300.apk</font></p>
+<p class="MsoNormal" style="text-align: center;"><font color="#333399" size="2">EHS_R_020300.apk</font></p>
 </td>
 <td style="width: 96px;">
 <p class="MsoNormal" align="center"><font color="#333399" size="2">com.symbol.enterprisehomescreen</font></p>

@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   color: #64686d;
   line-height: 26px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 h1,
 h2,
@@ -607,7 +607,7 @@ ul.nostyle i {
   border: 2px solid #eeeeee;
   transition: border-color 400ms;
   -webkit-transition: border-color 400ms;
-  height: 160px;
+  height: 200px;
 }
 
 #meet-team .team-description {
@@ -1407,6 +1407,12 @@ ul.nostyle i {
     filter:alpha(opacity=40); /* For IE8 and earlier */
 }
 
+.not-present
+{
+    display:none; /* to remove param rows not supported in a CSP 
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+}
+
 .goToTop {
   position: fixed;
   top: 100px;
@@ -1425,4 +1431,15 @@ pre {
 }
 .csp-select.active a{
   color:#fff
+}
+.ToggleView{
+display:none;
+}
+nobr{
+display:none  
+}
+
+
+#main-menu .dropdown{
+  display:none;
 }

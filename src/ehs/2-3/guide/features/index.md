@@ -1,7 +1,7 @@
 ---
 title: EHS Special Features
 layout: guide.html
-product: Enteprise Home Screen
+product: Enterprise Home Screen
 productversion: '2.3'
 ---
 
@@ -144,7 +144,7 @@ There are two ways to recover from Lockdown State and return a device to Secure 
 Copy the valid EHS config and signature files to the `/enterprise/usr` directory on the device. This will cause EHS to exit the Lockdown State, import the config file and return to Secure Mode. The valid files can be copied manually via ADB or deployed using an MDM.
 
 ##### Method 2: Delete Signature File
-Log into Admin Mode and delete the signature file from the `/enterprise/usr` directory. This will cause EHS to exit the Lockdown State and enter Secure Mode. This method will work only if EHS was already running in Secure Mode. If EHS was previously running in Normal Mode and entered Lockdown State due to an unsuccessful attempt to switch to Secure Mode, EHS will remain in Lockdown State. 
+Log into Admin Mode and delete the signature file from the `/enterprise/usr` directory. This will cause EHS to exit the Lockdown State and enter Secure Mode. This method will work only if EHS was already running in Secure Mode. If EHS was previously running in Normal Mode and entered Lockdown State due to an unsuccessful attempt to switch to Secure Mode, EHS returns to Normal Mode when the signature file is deleted. 
 
 <b>Note: Whether running in Normal or Secure Mode, reaching the maximum number of 10 unsuccessful admin login attempts (or the number otherwise specified in the EHS config file) will disable Admin Mode login. To exit this state, copy a valid config file (and its matching signature file if previously running in Secure Mode) to the device or delete the existing signature file remotely via MDM</b>.
 
@@ -303,7 +303,7 @@ This section covers important interactions between EHS and Android features that
 ### Recent Apps List
 
 * Accessing an app from the Recent Apps list could represent a security risk. 
-* EHS does not add apps or activities to the Android Recent Apps list, but apps launched from within EHS might. 
+* EHS does not add apps or activities to the Android Recent Apps list, but apps/activities launched from within EHS might. Such apps/activities could launch others that might appear on the Recent Apps list and pose a security risk.
 * To clear the Recent Apps list, reboot the device or bring up the list and manually swipe away each app. 
 * Bring up the Recent Apps list by long-pressing the Home or Menu button (depending on the device) until the list appears.
 * Recent apps not cleared from the list can be activated with the Back button, potentially exposing a non-EHS home screeen.
@@ -315,7 +315,12 @@ This section covers important interactions between EHS and Android features that
 
 ### Other Unintended Access
 
-* On devices running Android 4.4 KitKat, users might gain access to Airplane mode, Wi-Fi, Bluetooth and other device settings via the Quick Settings menu in the Notification drop-down. This can be prevented with the [Disable Status Bar Settings tag](../settings#disablestatusbarsettings) ot through EMDK or StageNow. 
+* On devices running Android 4.4 KitKat, users might gain access to Airplane mode, Wi-Fi, Bluetooth and other device settings via the Quick Settings menu in the Notification drop-down. This can be prevented with the [Disable Status Bar Settings tag](../settings#disablestatusbarsettings). 
+* Wireless capabilities also can be individually disabled through these MX modules: 
+	* [SettingsMgr](../../../../mx/settingsmgr) for Airplane Mode and Wi-Fi 
+	* [UiMgr](../../../../mx/uimgr) for Quick Settings and the "Gear" icon
+	* [WirelessMgr](../../../../mx/wirelessmgr) for Bluetooth, GPS, NFC and WWAN 
+* MX modules are accessible using EMDK or StageNow tools. 
 * Taking a screenshot (by pressing the "volume-down" and "Power" buttons simultaneously) while in User Mode might expose users to the Gallery app. To prevent this, disable the Gallery app in the Disable/Enable Applications section of [Optional Feature Tags section](../settings#optionalfeaturetags).
 * If the Programmable Keys feature on the Android System Settings panel is used to program a key to launch an application, that key mapping will be available in User Mode. 
 

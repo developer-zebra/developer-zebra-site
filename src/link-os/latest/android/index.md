@@ -7,6 +7,8 @@ menu:
   items:
     - title: Android
       url: /link-os/latest/android
+    - title: Android BTLE
+      url: /link-os/latest/android_btle
     - title: Xamarin
       url: /link-os/latest/xamarin
     - title: iOS

@@ -1,0 +1,393 @@
+<nav class="navbar  navbar-inverse" role="navigation" id="smartdocs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+      <ul class="nav navbar-nav">
+     	<li class="navbar-right"><a id="smartdocs-help"><i class="fa fa-question-circle fa-lg fa-inverse"></i></a></li>
+     	<li>
+     		<div class="btn-group" role="group" aria-label="...">
+     			<button type="button" style="display:none" id="smartdocs-prev" class="btn btn-default navbar-btn"><i class="fa fa-chevron-left"></i></button>
+
+     			<button type="button" id="smartdocs-status" class="btn btn-default navbar-btn"><i class="fa fa-mobile fa-lg"></i> SmartDocs</button>
+     			<button type="button" style="display:none" id="smartdocs-next" class="btn btn-default navbar-btn"><i class="fa fa-chevron-right"></i></button>
+     		</div>
+     	</li>
+     	<li><p class="navbar-text"> Your Device:</p></li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" id="smartdocs-mx-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MX: 7.0 <span class="caret"></span></a>
+      <!--    
+        <ul class="dropdown-menu">
+          <li class="smartdocs-mx" data-value="" ><a>All</a></li>
+          <li class="smartdocs-mx" data-value="6.3" ><a>7.0</a></li>
+        </ul>
+      -->
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" id="smartdocs-osx-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">OSX: 7.1UL <span class="caret"></span></a>
+      <!--          
+        <ul class="dropdown-menu">
+         <li class="smartdocs-osx" data-value="" ><a>None</a></li>
+        </ul>
+      -->        
+      </li>
+     	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" id="smartdocs-api-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Android: 7.0 Nougat <span class="caret"></span></a>
+      <!-- 
+        <ul class="dropdown-menu">
+          <li class="smartdocs-api" data-value="" ><a>All</a></li>
+          <li class="smartdocs-api" data-value="23"><a>7.0 Nougat</a></li>
+        </ul>
+      -->
+        </li>
+              <li class="dropdown">
+          <a href="#" class="dropdown-toggle" id="smartdocs-device-selected" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="smartdocs-devicetype" data-value="B">Group: B <span class="caret"></span></a>
+      <!--          
+        <ul class="dropdown-menu">
+         <li class="smartdocs-osx" data-value="" ><a>None</a></li>
+        </ul>
+      -->        
+      </li>   
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="modal fade" id="modal-smartdocs-info" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" data-backdrop="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+				<h4 class="modal-title">About <i class="fa fa-mobile fa-lg"></i> SmartDocs</h4>
+			</div>
+			<div class="modal-body">
+			 <p><br/><b>This matrix has been designed to display only the MX features supported in Group B devices. The "SmartDocs" bar also can customize CSP pages to show only those features and can automatically navigate among them.</b> 
+      <ol>
+       <li><b>Click on one of the CSPs in the matrix to bring up its page. Then use drop-downs to select Group B</b>. Features of that CSP not present in the device will turn grey.</li>
+       <li>Click the left and right buttons on the SmartDocs nav bar to more forward and back through supported features.</li>  
+       <li><b>To clear </b> press the SmartDocs button.</li> 
+       </ol>
+      <p><b>OSX, MX and Android version information</b> for a device can be found in the Android Settings panel or by querying the device through ADB, EMDK or the MX CSP.<a href="/mx/mx-version-on-device/"> More info</a></p>
+      <ul>
+        <li><b>The OSX layer</b> provides extensions to the base operating system to implement functionality not offered by Android. The root OSX version number always matches the root number of the Android version that it extends.<a href="/mx/overview/"> More info</a></li>
+        <li><b>The MX Management System</b> provides a uniform interface into privileged and unprivileged Android APIs on the device. Some features require a specific pairing of MX and OSX versions. <a href="/mx/overview/">More info</a></li>
+        <li><b>The Android version</b> is sometimes enough to determine a feature set. Others require a specific MX version plus a minimum version of Android.</li>
+        <li><b>The Device Group</b> indicates which subset of MX features is present in the device.</li>
+      </ul> 
+      <p><b><u>Note: An error will result if a Group-B CSP calls a device feature implemented by a CSP resident only on Group A devices.</u></b>.</p> 
+			<ul>
+        <li><b>The MX Management System</b> provides a uniform interface into privileged and unprivileged Android APIs on the device.<a href="/mx/overview/">More info</a></li>
+				<li><b>The Android version</b> is sometimes enough to determine a feature set. Others require a specific MX version plus a minimum version of Android.</li>
+			</ul>				
+			</div>
+	</div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+	var smartdocOptions = {
+		enabled: false,
+		mx: "",
+		osx: "",
+		api: "",
+		index: -1
+	}
+
+	var parseVersionFloat = function (versionString) {
+	    var versionArray = ("" + versionString)
+	            .replace("_", ".")
+	            .replace(/[^0-9.]/g, "")
+	            .split("."),
+	        sum = 0;
+	    for (var i = 0; i < versionArray.length; ++i) {
+	        sum += Number(versionArray[i]) / Math.pow(10, i * 3);
+	    }
+	    // console.log(versionString + " -> " + sum);
+	    return sum;
+	}
+	
+    var showelement = function(el,filter){
+    	// console.log("Showing");
+    	// console.log(el);
+    	var filters=["mx","osx","api"];
+    	var otherhidden = false;
+    	//check if something else is hiden element
+    	for (var i = 0; i < filters.length; i++) {
+    		if(typeof(el.attr('data-filter-'+filters[i])) != 'undefined' && filters[i] != filter){
+    			otherhidden=true;
+    			break;
+    		}
+    	};
+    	if(!otherhidden){
+    		// console.log("Not Showing something else has it hidden");
+	        el.removeClass( "not-available" );
+	        el.removeAttr('data-filter');
+    	}
+        el.removeAttr('data-filter-'+filter);
+    }
+    var hideelement = function(el,filter){
+    	// console.log("Hiding");
+    	// console.log(el);
+      //  el.addClass( "not-available" );
+      
+      //HIDE FEATURES NOT AVAILABLE
+
+        el.hide();
+        el.attr('data-filter-'+filter,"");
+        el.attr('data-filter',"");
+    }
+    var clear = function(selection){
+    	if(selection =='mx' || selection =='all'){
+	        $('[data-mx]').each(function() {
+	            showelement($(this),'mx');
+	        });
+
+    	}
+    	if(selection =='osx' || selection =='all'){
+	        $('[data-osx]').each(function() {
+	            showelement($(this),'osx');
+	        });
+    	}
+    	if(selection =='api' || selection =='all'){
+	        $('[data-api]').each(function() {
+	            showelement($(this),'api');
+	        });
+    	}
+    }
+    var smartdocsStatus = function(enabled){
+    	var filtered = $('[data-smartdoc]').not('[data-filter]');
+
+    	if(enabled & filtered.length>0){
+				smartdocOptions.enabled = true;
+  				$("#smartdocs-status").addClass("btn-primary");
+  				$("#smartdocs-status").removeClass("btn-default");    		
+  				$("#smartdocs-prev").show();
+  				$("#smartdocs-next").show();
+  						
+    	}
+    	else{
+				smartdocOptions.enabled = false;
+  				$("#smartdocs-status").removeClass("btn-primary");
+  				$("#smartdocs-status").addClass("btn-default");
+  				$("#smartdocs-prev").hide();
+  				$("#smartdocs-next").hide();
+    	}
+    }
+    var showmx = function(haveVersion){
+    	clear('mx');
+    	smartdocOptions.mx = haveVersion;
+        $('[data-mx]').each(function() {
+            var needVersion = $(this).attr("data-mx");
+            // console.log("Have")
+            // console.log(parseVersionFloat(haveVersion));
+            // console.log("Need")
+            // console.log(parseVersionFloat(needVersion));
+            if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
+                hideelement($(this),'mx');
+            }
+            else{
+                // showelement($(this));
+            }
+            
+        });
+        smartdocsStatus(true);
+    }
+    var showapi = function(haveVersion){
+        clear('api');
+    	smartdocOptions.api = haveVersion;
+        $('[data-api]').each(function() {
+            var needVersion = $(this).attr("data-api");
+
+            if(parseVersionFloat(haveVersion)<parseVersionFloat(needVersion)){
+                hideelement($(this),'api');
+            }
+            else{
+                // showelement($(this));
+            }
+            
+        });
+        smartdocsStatus(true);
+    }
+
+    var showosx = function(haveVersion){
+        clear('osx');
+    	smartdocOptions.osx = haveVersion;
+        $('[data-osx]').each(function() {
+            var needVersions = $(this).attr("data-osx").split(",");
+            var versionStrict = $(this).attr("data-osx-specific");
+            if(typeof(versionStrict)!='undefined' && versionStrict!=''){
+                console.log('Using Strict OSX Match')
+                var match=false;
+                for (var i = 0; i < needVersions.length; i++) {
+                    
+                    if(parseVersionFloat(needVersions[i]) == parseVersionFloat(haveVersion)){
+                        match=true;
+                        
+                    }
+                    else{
+                        match=false;
+                    }
+                };
+
+                if(match){
+                    // $( this ).fadeTo( "slow", 0.40 )
+                    hideelement($(this),'osx');
+                }
+                else{
+                    // showelement($(this));
+                }
+
+            }
+            else{
+                var okinlist=false;
+                for (var i = 0; i < needVersions.length; i++) {
+					// console.log("Have")
+		   //          console.log(parseVersionFloat(haveVersion));
+		   //          console.log("Need")
+		   //          console.log(parseVersionFloat(needVersions[i]));                	
+                    if( parseVersionFloat(haveVersion) >= parseVersionFloat(needVersions[i])){
+                        okinlist=true;
+                        break;
+                    }
+                };
+                if(!okinlist){
+                	console.log("Hiding: " + match)
+                    hideelement($(this),'osx');
+                }
+                else{
+                    // showelement($(this));
+                }
+
+            }
+            
+        });
+        smartdocsStatus(true);
+
+    }
+
+    var gotoNextAvailable = function() {
+    	var filtered = $('[data-smartdoc]').not('[data-filter]');
+
+    	if(filtered.length>0 ){
+		    var max_index = filtered.length-1;
+		    
+		    smartdocOptions.index  = smartdocOptions.index  + 1;
+		    if(smartdocOptions.index >max_index){
+		    	smartdocOptions.index  = 0; //loop
+		    }
+		    var target = $(filtered[smartdocOptions.index ]);
+	    	$('html, body').animate({
+	            scrollTop: target.offset().top - 220
+	        }, 1000);
+	        
+
+    	}
+
+    }
+    var gotoPrevAvailable = function() {
+    	var filtered = $('[data-smartdoc]').not('[data-filter]');
+    	if(filtered.length>0 ){
+		    var max_index = filtered.length-1;
+		    
+		    smartdocOptions.index  = smartdocOptions.index  - 1;
+		    if(smartdocOptions.index == -1){
+		    	smartdocOptions.index  = max_index; //loop
+		    }
+		    var target = $(filtered[smartdocOptions.index ]);
+	    	$('html, body').animate({
+	            scrollTop: target.offset().top - 220
+	        }, 1000);
+	        
+
+    	}
+    }
+    
+
+    $(document).ready(function() {
+
+		$( "#smartdocs-help" ).click(function() {
+  			console.log('Show SmartDocs help');
+  			$("#modal-smartdocs-info").modal({show: true});
+  			
+		});
+		$(window).bind('scroll', function() {
+
+			var navHeight = 200; // custom nav height
+			($(window).scrollTop() > navHeight) ? $('#smartdocs').addClass('goToTop') : $('nav').removeClass('goToTop');
+
+		});
+
+    //for pages that have fixed content
+    $(".fixed-column-right").bind('scroll', function() {
+
+      var navHeight = 200; // custom nav height
+      ($(".fixed-column-right").scrollTop() > navHeight) ? $('#smartdocs').addClass('goToTop') : $('nav').removeClass('goToTop');
+
+    });
+
+		$( "#smartdocs-status" ).click(function() {
+  			console.log('Change Status');
+  			console.log(smartdocOptions);
+  			
+  			if(smartdocOptions.enabled){
+  				//clear settings
+  				smartdocsStatus(!smartdocOptions.enabled);
+  				smartdocOptions = {
+					enabled: false,
+					mx: "",
+					osx: "",
+					api: ""
+				};
+				$("#smartdocs-mx-selected").html("MX: All" + '<span class="caret"></span>');
+  				$("#smartdocs-osx-selected").html("OSX: All" + '<span class="caret"></span>');
+  				$("#smartdocs-api-selected").html("Android: All" + '<span class="caret"></span>');
+  				clear('all');    		
+  				
+  			}
+		});
+		$( "#smartdocs-next" ).click(function() {
+			gotoNextAvailable();
+		});
+		$( "#smartdocs-prev" ).click(function() {
+			gotoPrevAvailable();
+		});
+		$( ".smartdocs-mx" ).click(function() {
+			var mx=$(this).attr("data-value");
+
+  			console.log('Setting mx');
+  			$("#smartdocs-mx-selected").html("MX: " + $(this).text() + '<span class="caret"></span>');
+  			if(mx ==""){
+  				clear('mx')
+  			}
+  			else{
+	  			showmx(mx);
+	  		}
+		});
+		$( ".smartdocs-osx" ).click(function() {
+			var osx=$(this).attr("data-value");
+  			$("#smartdocs-osx-selected").html("OSX: " + $(this).text() + '<span class="caret"></span>');
+  			console.log('Setting osx');
+  			if(osx ==""){
+  				clear('osx')
+  			}
+  			else{
+  				showosx(osx);
+  			}
+		});
+		$( ".smartdocs-api" ).click(function() {
+			var api=$(this).attr("data-value");
+  			$("#smartdocs-api-selected").html("Android: " + $(this).text() + '<span class="caret"></span>');
+  			console.log('Setting api');
+  			if(api ==""){
+  				clear('api')
+  			}
+  			else{
+  				showapi(api);
+  			}
+		});
+
+    	
+
+    });
+</script>

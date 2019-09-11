@@ -8,6 +8,7 @@
 ehthumbs.db
 Thumbs.db
 build/
+build_mdmtk/
 import/
 export/
 

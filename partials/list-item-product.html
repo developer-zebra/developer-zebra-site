@@ -19,7 +19,30 @@
           <div class="media-body" style="
             padding-left: 15px;
             ">
-            <h4 class="media-heading"> <a href="{{this.url}}">{{ title }}</a></h4>
+            <div class="row">
+              <div class="col-sm-6 col-md-8">
+                <h4 class="media-heading"> <a href="{{this.url}}">{{ title }}</a></h4>
+              </div>
+              <div class="col-sm-6 col-md-4 pull-right">
+                  {{#if this.versions}}
+                  <div class="btn-group pull-right">
+                    <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      {{ this.versions.[0].label }} <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                          {{#each this.versions}}
+                              <li><a href="{{ this.url }}">{{  this.label }}</a></li>
+                          {{/each}}
+                    </ul>
+                  </div>                    
+                  {{/if}}
+
+              </div>
+            </div>
+            
+
+
+
             <p>{{ description }}</p>
             {{#each sections}}
                 <a href="{{this.url}}"><span class="label label-primary">{{this.title}}</span></a>

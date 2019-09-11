@@ -32,4 +32,4 @@ for applowing apps to access each of the supported Storage Cards within a device
 * **Storage Cards can be accessed in multiple ways**, including through built-in privileged System apps, installed unprivileged apps, and from computers using MTP or ADB over USB. 
 
 * **If access to a Storage Card is disabled using the SdCardMgr, all access to that Storage Card is blocked, without exception**, until access is re-enabled using the SdCardMgr. 
-* **Removable media can become inaccessible by means other than blockage by this CSP**. For example, an unblocked Micro SD Card will be inaccessible if physically removed from the device or if encrypted and the Named Key has been removed from the Key Storage Database (see [EncryptMgr](../encryptmgr)). 
+* **Removable media can become inaccessible by means other than blockage by this CSP**. For example, an unblocked Micro SD Card will be inaccessible if physically removed from the device or if encrypted and the Named Key has been removed from the Key Storage Database (see [EncryptMgr](/mx/encryptmgr)). 

@@ -138,4 +138,4 @@ Used to specify the Action to perform on an application or app-related setting o
  * If desired, use Persist Manager to safeguard the XML on the device.<br>
 **`NOTE:` It is not possible to transition a device to a new OS _and_ to implement GMS Restricted mode with the same XML profile**.
 
- > **See [GMS Manager](../gmsmgr) for more information about GMS Restricted**. 
+ > **See [GMS Manager](/mx/gmsmgr) for more information about GMS Restricted**. 

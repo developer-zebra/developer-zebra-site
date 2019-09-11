@@ -6,7 +6,7 @@ devicetype: A
 order: 0
 ---
 
-Ethernet Manager is used to administer settings for devices connected to a network through an Ethernet-equipped cradle. **This CSP has no effect on Wi-Fi communications or wireless Ethernet adapter settings**, which are controlled through the [Wi-Fi Manager](../wifi). 
+Ethernet Manager is used to administer settings for devices connected to a network through an Ethernet-equipped cradle. **This CSP has no effect on Wi-Fi communications or wireless Ethernet adapter settings**, which are controlled through the [Wi-Fi Manager](/mx/wifi). 
 
 ### Main Functionality
 

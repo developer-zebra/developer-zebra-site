@@ -40,7 +40,7 @@ For example, if the .zip files `M99N0KXXVPUCP14500.zip` and `CFE-M99-L-N0-010101
 
 ### Android Location Rules
 
-* **Update file location must not be blocked** by [SdCardMgr](../sdcardmgr) or any other means. 
+* **Update file location must not be blocked** by [SdCardMgr](/mx/sdcardmgr) or any other means. 
 * **Removable media must be physically present**. Storage partitions implemented on a removable medium such as a Micro SD Card must be inserted in the device when the Reset Action is initiated. 
 * **The location must not be encrypted**. A location that is encrypted cannot be used for OS Updates. For example, if Full Storage Card Encryption is enabled for a particular Storage Card, that card contains no suitable locations for OS Updates. Similarly, if an Encrypted File System was mounted on a Storage Card, that card also would be unsuitable for OS Updates.
 * **The update entity must have write permissions** in the update file location. 

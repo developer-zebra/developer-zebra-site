@@ -106,4 +106,4 @@ While new CSPs can be introduced with each version of MX, and pre-existing CSPs 
 
 Related guides: 
 
-* [Which version of MX/OSX is installed?](../mx-version-on-device)
+* [Which version of MX/OSX is installed?](/mx/mx-version-on-device)

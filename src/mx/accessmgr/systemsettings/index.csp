@@ -28,4 +28,4 @@ parm:
 
 Controls the level of access to the Android Settings panel a device user is granted.
 
-**Note: This parameter takes priority over the "Quick Settings" parameter of [UI Manager](../uimgr). If Reduced Access is enabled, later attempts enable Quick Settings result in failure**.
+**Note: This parameter takes priority over the "Quick Settings" parameter of [UI Manager](/mx/uimgr). If Reduced Access is enabled, later attempts enable Quick Settings result in failure**.

@@ -33,7 +33,7 @@ parm:
 
 Controls whether the device user can access the "Enterprise Reset" function of the Android Settings panel. An Enterprise Reset is intended to return the device to an enterprise-defined default state, generally as determined by the contents of the `/enterprise` partition on the device. **Note: This parameter does not perform an Enterprise Reset**.  
 
-**An Enterprise Reset can cause data loss. For more information, see [Power Manager](../powermgr/#enterprisereset)**. 
+**An Enterprise Reset can cause data loss. For more information, see [Power Manager](/mx/powermgr/#enterprisereset)**. 
 
 <!-- 
 4/10/18- removed because it doesn't seem to relate; possibly placed here by mistake:

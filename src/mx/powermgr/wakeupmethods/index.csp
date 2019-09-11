@@ -2,7 +2,7 @@
 csp: powermgr
 title: Wake-Up Method
 type: parm
-order: 51
+order: 50
 mx: "9.1"
 devicetype: A
 parm:
@@ -17,14 +17,14 @@ parm:
       description: This value (or the absence of this parm from the XML) causes no action to be performed on the device; any previously selected setting is retained.
     - code: 1
       devicetype: A
-      name: Enable
+      name: Hardware
       mx: "9.1"
       description: Enables device wake-up when a hardware signal is detected. 
     - code: 2
       devicetype: A
-      name: Disable
+      name: Software
       mx: "9.1"
       description: Enables device wake-up when a programmable keycode signal is detected. 
 ---
 
-Allows the selection of the device wake-up method.
+Allows the selection of the device wake-up method. **WARNING: Switching the wake-up method using this parameter requires Wake-up Sources to be re-applied**. 

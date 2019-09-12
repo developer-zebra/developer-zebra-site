@@ -11,92 +11,125 @@ lastUpdate: 9/11/2019
 
 The Enterprise Keyboard Designer (EKD) is a powerful key-layout editor for Windows 7, 8 and 10. It provides a graphical interface for creating and modifying custom key layouts for Enterprise Keyboard, Zebra's replacement for the stock Android keyboard designed specifically for the workplace. 
 
-An unlimited number of custom key layouts can be created, deployed to devices and called by customer apps (through Android intents) as needed to match specific types of input. Zebra Enterprise Keyboard (EKB) must be installed to make use of custom EKD layouts. EKB is pre-installed on many Zebra devices and available as a side-load for others. 
+An unlimited number of custom key layouts can be created, deployed to devices and called by customer apps (through Android intents) as needed to match specific types of input. Zebra Enterprise Keyboard (EKB) must be installed to make use of custom EKD layouts. EKB is preinstalled on many Zebra devices and available as a side-load for others. 
 
 <img alt="" style="height:350px" src="ekd_main_screen.png"/>
 
 *EKD features a simple drag-and-drop UI with device emulation allows quick creation of purpose-built key layouts <br>configured for specific key actions that can be modified for different devices and screen resolutions*.
 
-<!-- <img alt="" style="height:350px" src="ekd_01.png"/>
-<img alt="" style="height:350px" src="ekd_02.png"/>
-
-
-ekd_main_screen.png
-enterprisekeyboarddesigner-1.0.0.exe.zip
-ekd_device_orientation.png
-ekd_device_model.png
-ekd_layout_name.png
-EKD_splash.png
-
-
- -->
-
-
-### `PLEASE READ`
+### `IMPORTANT - PLEASE READ`
 * To use custom layouts created with EKD, **the Zebra Enterprise Keyboard MUST be installed on the device and selected as the default input source**. 
 * **<u>Only one keyboard or custom key layout can be displayed on the device screen at a time</u>**. When a custom key layout is displayed, all other keyboards are hidden, including the (alpha-numeric) Enterprise Keyboard. 
-* **Custom layouts must be called by an app using intents** (see [Intent APIs section](#intentapis)).
-* Multiple layouts can be saved in a single file, but only a single file can be accessed by apps on the device.  
-* EKD projects are automatically saved and deployed as encrypted files that can be decrypted only by **DataWedge, Enterprise Browser and Enterprise Keyboard**, applications running on a Zebra Android device, or by the **Enterprise Keyboard Designer** tool itself. 
-* Layout files can be imported into the Enterprise Keyboard Designer and modified or supplemented with additional keys or layouts. 
+* To be displayed, **layouts made with EKD must be called by an app using intents** (see [Intent APIs section](#intentapis)).
+* Multiple layouts can be saved in a single project file, and apps on the device can access only a single EKD project file.  
+* EKD projects are automatically saved and deployed as encrypted files that can be decrypted on the device only by **DataWedge, Enterprise Browser and Enterprise Keyboard** and applications running on a Zebra Android device. 
+* Layout files can be imported into Enterprise Keyboard Designer and modified or supplemented with additional keys and/or layouts. 
 * **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
 * In this guide, the terms “button” and “key” are used interchangeably. 
 
 -----
 
 ### Installation
-EKD is instaled in the same was as any Windows application. 
+EKD is installed in the same was as any Windows application. 
 
-1. Download the “CustomKeyboardDesignerUtility.exe” onto the target Windows system. 
-2. Double-click .exe file to install.
+1. Download the “`CustomKeyboardDesignerUtility.exe`” onto the target Windows system. 
+2. Double-click `.exe` file to run the installer.
 3. Enterprise Keyboard Designer launches automatically after installation.
 
 -----
 
 ### Using EKD
 
-Each Enterprise Keyboard Designer project contains one or more key layouts saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. “`myTC75Layout.encrypted`”). 
+Each Enterprise Keyboard Designer project contains one or more key layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. “`myTC75Layout.encrypted`”). 
 
 #### I. Create a Project
 
-In the Custom Enterprise Keyboard Designer Utility: 
-Click “New keyboard Project” 
-Enter a project name and click “Submit” or press ENTER
-Select a target device from the drop-down and click “Confirm” 
-Select the device orientation and click “Confirm”
+1. Launch the Enterprise Keyboard Designer utility: 
+ <img alt="" style="height:250px" src="EKD_app_icon.png"/>
+ <br>
+2. **Click the “NEW KEYBOARD PROJECT”** button:
+ <img alt="" style="height:200px" src="ekd_splash_0.png"/>
+ <br>
+2. **Enter a project name and click “Submit”** or press ENTER:
+ <img alt="" style="height:250px" src="EKD_splash.png"/>
+ <br>
+3. Select a target device from the drop-down and click the “Confirm” button:  
+ <img alt="" style="height:350px" src="ekd_select_device.png"/>
+ <br>
 
-When the project name is seen in the top-left corner, the workspace is ready to create new Layouts. Note: Project-level settings cannot be changed later.
+**The EKD displays the main designer screen with the project name in the upper-left corner and is ready to create custom keyboard layouts**. 
 
+**Note**: Once a project is created, its target device and other project-level settings cannot be changed later.
+
+<!-- 
 For a demo of the steps above, see the "createProject.mp4” video.
+ -->
 
-Create a Layout
-A Layout is defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid layout” option. Layout names must be unique and contain only alpha-numeric characters.
+### II. Create a Layout
+
+1. From the main designer screen, **click the menu button** in the upper-left corner:  
+ <img alt="" style="height:350px" src="ekd_main_layout_screen.png"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
+2. Select an existing layout to edit or **click the [+] icon** to create a new layout. <br>
+ <img alt="" style="height:350px" src="ekd_layout_names.png"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
+3. **Select the device orientation** and click the “Confirm” button:
+ <img alt="" style="height:350px" src="ekd_orientation_screen.png"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
+4. **Enter a layout name and press ENTER**. **`NOTE:`** Layout names within a project must be unique and contain only alpha-numeric characters. <br>The name of the current layout appears in the upper-left corner of the screen: 
+ <img alt="" style="height:350px" src="ekd_layout_name_location.png"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
+5. With the mouse pointer on the simulated device screen, **drag to create a layout background** in approximately the desired position on the simulator: 
+ <img alt="" style="height:350px" src="ekd_drag_layout.gif"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
 
 
-1. Click on the Menu button to open the sidebar:
-<b>Switch layouts with taps or swipes</b> across the keypad:  
-<img alt="" style="height:350px" src="ekd_03.png"/>
-<br>
-2. Click the add button icon (+):
-<b>Switch layouts with taps or swipes</b> across the keypad:  
-<img alt="" style="height:350px" src="ekd_04.png"/>
-<br>
-3. Specify a name and press ENTER:
-<b>Switch layouts with taps or swipes</b> across the keypad:  
-<img alt="" style="height:350px" src="ekd_05.png"/>
-<br>
-4. To modify an existing Layout, click the EDIT icon; <br>To delete, click the TRASH icon: 
-<b>Switch layouts with taps or swipes</b> across the keypad:  
-<img alt="" style="height:350px" src="ekd_06.png"/>
-<br>
-
-Using drag and drop
-1. Select the Layout to edit (if not already selected).
-2. With the mouse pointer on the (simulated) device screen, drag to create a Key Layout Background in approximately the desired position on the simulator. Once created, the Layout can be repositioned on the device by dragging. To resize, grab and drag the right or bottom edges. 
+Once created, the Layout can be repositioned on the device by dragging. To resize, grab and drag the right or bottom edges. 
 3. Drag the desired key(s) from the key panel (at right) to the new Key Layout Background. Drag to reposition. 
 4. Save your progress using the “Save Layout” button. There is no confirmation window when saving.
 
-`**IMPORTANT**:` Always save the current Layout before switching to another. Otherwise changes to the current Layout are lost. 
+
+f
+
+
+
+ekd_new_layout_button.png
+
+ekd_03.png
+
+
+
+<!-- UNUSED IMAGES
+ekd_device_orientation.png
+ekd_device_model.png
+ekd_layout_name.png
+-->
+
+
+1. **Click on the Menu button** to open the sidebar:
+<img alt="" style="height:350px" src="ekd_03.png"/>
+<br>
+2. **Click the "Add" [+] button** icon:
+<img alt="" style="height:350px" src="ekd_04.png"/>
+<br>
+3. **Enter a name** and press ENTER:
+<img alt="" style="height:350px" src="ekd_05.png"/>
+<br>
+4. **To modify an existing Layout, click the EDIT icon** for that payout; <br>
+To delete, click the TRASH CAN icon: 
+<img alt="" style="height:350px" src="ekd_06.png"/>
+<br>
+
+
+### Using drag and drop
+1. Select the Layout to edit (if not already selected).
+
+`**IMPORTANT**:` To avoid losing changes, **always save the current layout before switching to another**. 
 
 Using Grid Layout
 The Grid Layout option permits button Layouts to be created more quickly and with more precision than the drag-and-drop method. When a Grid is initially created, it is automatically placed with its left and bottom edges flush with the left and bottom edges of the simulator.  
@@ -123,8 +156,8 @@ Grid Properties:
 4. Configure Button Properties and functions as required (see below).  
 5. Configure Layout Properties as required (see below).
 <b>Switch layouts with taps or swipes</b> across the keypad:  
-<img alt="" style="height:350px" src="sample_1.png"/>
-_The Tab bar can be set to automatically hide away, maximizing screen space for applications_. 
+<!-- <img alt="" style="height:350px" src="sample_1.png"/>
+ -->_The Tab bar can be set to automatically hide away, maximizing screen space for applications_. 
 <br>
 
 **Notes**: 

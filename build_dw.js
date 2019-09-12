@@ -245,6 +245,7 @@ var sitebuild = Metalsmith(__dirname)
   .use(foldermenu({
         folder: 'datawedge/6-9/'
     }))
+    */
   .use(foldermenu({
         folder: 'datawedge/7-0/'
     }))
@@ -254,12 +255,14 @@ var sitebuild = Metalsmith(__dirname)
   .use(foldermenu({
         folder: 'datawedge/7-2/'
     }))
-    */
   .use(foldermenu({
         folder: 'datawedge/7-3/'
     }))
   .use(foldermenu({
         folder: 'datawedge/7-4/'
+    }))
+  .use(foldermenu({
+        folder: 'datawedge/7-5/'
     }))
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({

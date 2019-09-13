@@ -537,8 +537,8 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC32N0</b></td>
   <td class="clsSyntaxCells clsOddRow">MC32N0</td>
-  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>Windows CE 7.0</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 7.0</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
 <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC33X</b></td>
@@ -553,6 +553,12 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
  </tr>
  <tr>
+  <td class="clsSyntaxCells clsOddRow"><b>MC55</b></td>
+  <td class="clsSyntaxCells clsOddRow">MC5574, MC5590</td>
+  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
+ </tr>
+  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC55X</b></td>
   <td class="clsSyntaxCells clsOddRow">MC55-HC Healthcare</td>
   <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5</td>
@@ -585,7 +591,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>Omnii XT15</b></td>
   <td class="clsSyntaxCells clsOddRow">XT15</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>(requires BSP Omnii CE-12.2.44149 or higher)<br><br>Windows Embedded Handheld 6.5<br>(requires BSP Omnii CE-12.2.44149 or higher)</td>
+  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0<br>(requires BSP Omnii CE-12.2.44149 or higher)<br><br>Windows Embedded Handheld 6.5<br>(requires BSP WEH 8.2.44159 or higher)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>

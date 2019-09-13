@@ -88,11 +88,11 @@ For a demo of the steps above, see the "createProject.mp4” video.
  _Click image to enlarge, ESC to exit_.
  <br>
 6. **Drag the layout on the device screen** to reposition and resize as needed:  
- <img alt="" style="height:350px" src="ekd_drag_buttons.gif"/>
+ <img alt="" style="height:350px" src="ekd_resize_layout.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
 7. Drag the desired key(s) from the key panel (at right) to the layout, dragging to reposition as needed:
- <img alt="" style="height:350px" src="ekd_resize_layout.gif"/>
+ <img alt="" style="height:350px" src="ekd_drag_buttons.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
 8. Click on the layout and key(s) to modify properties using the [Button and Layout Properties](#buttonandlayoutproperties) panels. 

@@ -42,7 +42,7 @@ EKD is installed in the same was as any Windows application.
 
 Each Enterprise Keyboard Designer project contains one or more key layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. “`myTC75Layout.encrypted`”). 
 
-#### I. Create a Project
+#### I. Create Project
 
 1. Launch the Enterprise Keyboard Designer utility: 
  <img alt="" style="height:250px" src="EKD_app_icon.png"/>
@@ -65,7 +65,7 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 For a demo of the steps above, see the "createProject.mp4” video.
  -->
 
-### II. Create a Layout
+### II. Create Layout(s)
 
 1. From the main designer screen, **click the menu button** in the upper-left corner:  
  <img alt="" style="height:350px" src="ekd_main_layout_screen.png"/>
@@ -87,24 +87,22 @@ For a demo of the steps above, see the "createProject.mp4” video.
  <img alt="" style="height:350px" src="ekd_drag_layout.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
+6. **Drag the layout on the device screen** to reposition and resize as needed:  
+ <img alt="" style="height:350px" src="ekd_drag_buttons.gif"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
+7. Drag the desired key(s) from the key panel (at right) to the layout, dragging to reposition as needed:
+ <img alt="" style="height:350px" src="ekd_resize_layout.gif"/>
+ _Click image to enlarge, ESC to exit_.
+ <br>
+8. Click on the layout and key(s) to modify properties using the [Button and Layout Properties](#buttonandlayoutproperties) panels. 
+9. **Save settings** by clicking the “Save Layout” button.
 
-
-Once created, the Layout can be repositioned on the device by dragging. To resize, grab and drag the right or bottom edges. 
-3. Drag the desired key(s) from the key panel (at right) to the new Key Layout Background. Drag to reposition. 
-4. Save your progress using the “Save Layout” button. There is no confirmation window when saving.
-
-
-f
-
-
-
-ekd_new_layout_button.png
-
-ekd_03.png
-
-
+### III. Deploy Layout(s)
 
 <!-- UNUSED IMAGES
+ekd_new_layout_button.png
+ekd_03.png
 ekd_device_orientation.png
 ekd_device_model.png
 ekd_layout_name.png
@@ -136,6 +134,9 @@ The Grid Layout option permits button Layouts to be created more quickly and wit
 
 1. Create or open a Layout to edit (if not already open). 
 2. Check the “Create Grid Layout” checkbox. This enables parameters to be entered in the Grid Properties input fields shown below. Configure the values as required (in pixels or count, as applicable). Changes are immediately visible in the Layout. 
+
+### Button and Layout Properties
+
 Grid Properties:
 
 ** Left -** Layout offset (in pixels) from the left edge of the screen.

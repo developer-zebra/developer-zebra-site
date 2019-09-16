@@ -105,7 +105,7 @@ For a demo of the steps above, see the "createProject.mp4” video.
   <img alt="" style="height:350px" src="ekd_grid_layout.png"/>
  _Click image to enlarge, ESC to exit_.
  <br> 
-8. Click on the layout and/or key(s) to **modify properties using the [Button and Layout Properties](#buttonandlayoutproperties) panels**: 
+8. Click on the layout and/or key(s) to **modify properties using the [Button and Layout Properties](#properties) panels**: 
  <img alt="" style="height:350px" src="ekd_properties_panels.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
@@ -113,7 +113,7 @@ For a demo of the steps above, see the "createProject.mp4” video.
 10. **Repeat Steps 8 and 9** until the layout appears as desired. 
 11. **Click "Save Project" to create a project file for deployment**.
 
-> Data for custom layout(s) and key-value assignment(s) is stored in the keyboard definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. Layouts are available immediately upon deployment.<br> Instructions follow below. 
+> Data for custom layout(s) and key-value assignment(s) is stored in the keyboard definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. Layouts are available immediately upon deployment.<br> Deployment instructions follow below. 
 
 -----
 
@@ -136,7 +136,30 @@ For a demo of the steps above, see the "createProject.mp4” video.
 
 -----
 
-## Button and Layout Properties
+## Properties
+
+### Action Properties
+
+**PressAction -** Defines the action taken when the selected Button is pressed and released. Accepts a predefined command string only (see below). Overridden by ActionDown property. 
+
+**LongPressAction –** Defines the action taken when the selected Button is long-pressed. Accepts a predefined command string only (see below). Overridden by ActionUp property. 
+
+**ActionDown -** Defines the action to be taken immediately upon Button press (before it is released). Accepts a predefined command string only (see below). Overrides PressAction property. 
+
+**ActionUp -** Defines the action to be taken when the selected key is released (after being pressed). Accepts a predefined command string only (see below). Overrides Long Press Action property.
+
+### Button Properties
+
+If the Layout was created using drag and drop, a key must be selected from the key panel and dropped into the Layout. Double-click the key to change its default button settings.
+
+If the Layout was created using Grid Layout, double-click on any key (I.e. a box in the Grid) to configure its properties.
+
+The currently selected key is indicated by a red border, and input fields for its Button Properties are enabled. The following key properties can be configured; changes appear immediately on the selected button.
+
+### Feedback Properties
+
+**HapticFeedback -** Used to control whether the device vibrates when the selected button is clicked. Set the value to “true” to vibrate (default = false).
+**Duration -** Used to specify the duration (in ms) of vibration when the “Haptic Feedback” property is set to true (default = 40 ms). 
 
 ### Grid Properties
 
@@ -164,27 +187,11 @@ For a demo of the steps above, see the "createProject.mp4” video.
 * **The number of grid columns and rows cannot be changed once a grid is created**.  
 
 ### Layout Properties
-Layout Properties can be configured when using drag-and-drop or Grid Layout functions. 
-
-#### Layout Properties
+Layout Properties can be configured when using drag-and-drop or grid layout functions. 
 
 **Background Color -** Specifies the color of the Key Layout. Changes appear in the Layout immediately after clicking OK in the color picker. 
 
 **Transparency -** Used to select of the transparency from 0 (opaque) to 100 (fully transparent) of the Key Layout Background using a slider. Changes appear immediately.
-
-### Simulator Properties
-
-**Status Bar -** Used to show/hide the Status bar on the device simulator screen. The Layout “top” coordinate changes based on this setting, which depends on status bar setting configured at the application level. Must be hidden for full-screen applications.
-
-**System Bar -** Used to show/hide the System bar on the device simulator screen. The Layout “top” coordinate changes based on this setting, which depends on System bar setting configured at the application level. Must be hidden for full-screen applications. 
-
-### Configure Button Properties
-
-If the Layout was created using drag and drop, a key must be selected from the key panel and dropped into the Layout. Double-click the key to change its default button settings.
-
-If the Layout was created using Grid Layout, double-click on any key (I.e. a box in the Grid) to configure its properties.
-
-The currently selected key is indicated by a red border, and input fields for its Button Properties are enabled. The following key properties can be configured; changes appear immediately on the selected button.
 
 ### Position Properties
 
@@ -195,6 +202,25 @@ The currently selected key is indicated by a red border, and input fields for it
 **Width -** Specifies the width (in pixels) of the selected button.
 
 **Height -** Specifies the height (in pixels) of the selected button.
+
+### Simulator Properties
+
+**Status Bar -** Used to show/hide the Status bar on the device simulator screen. The Layout “top” coordinate changes based on this setting, which depends on status bar setting configured at the application level. Must be hidden for full-screen applications.
+
+**System Bar -** Used to show/hide the System bar on the device simulator screen. The Layout “top” coordinate changes based on this setting, which depends on System bar setting configured at the application level. Must be hidden for full-screen applications. 
+
+### Style Properties
+**Preview -** Used to expose the value of a key when pressed. The key value is previewed only if the preview value is set to “true” (default for all keys).
+
+**Transparency -** Used to specify the transparency for the selected key from 0 (opaque) to 100 (fully transparent). Changes appear on the device simulator immediately. 
+
+**Button Color -** Used to specify the color of the selected key. Changes appear on the device simulator immediately. 
+
+**ColorPressed -** Used to specify the color of the selected key when the key is pressed. Changes appear on the device simulator when the key is pressed. 
+
+**Image -** Used to specify an image to fill the space of the selected key. After selection, the image appears immediately on the device simulator. When the Layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats. 
+
+**ImagePressed -** Used to specify an image to be displayed when the button is pressed. After selection, the image appears on the device simulator when the button is pressed. When the Layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats.
 
 ### Text Properties
 
@@ -213,17 +239,9 @@ The currently selected key is indicated by a red border, and input fields for it
 * All key-label text (including secondary text) is ignored if a key image is specified.
 * The number and size of characters in the button text and secondary text fields should correspond to the key size to avoid automatic changes to the size.
 
-### Action Properties
+-----
 
-**PressAction -** Defines the action taken when the selected Button is pressed and released. Accepts a predefined command string only (see below). Overridden by ActionDown property. 
-
-**LongPressAction –** Defines the action taken when the selected Button is long-pressed. Accepts a predefined command string only (see below). Overridden by ActionUp property. 
-
-**ActionDown -** Defines the action to be taken immediately upon Button press (before it is released). Accepts a predefined command string only (see below). Overrides PressAction property. 
-
-**ActionUp -** Defines the action to be taken when the selected key is released (after being pressed). Accepts a predefined command string only (see below). Overrides Long Press Action property.
-
-### Predefined command strings
+## Predefined Command Strings
 
 **Perform KeyEvent action -** Used to generate a particular KeyEvent or output as a character. Specify the key and value in key-value format from among the standard Android KeyEvent values. The KeyEvent for a key can be captured inside JavaScript onKeyDown events and output the value, if associated. It should be written in the format below. 
 
@@ -266,23 +284,6 @@ The currently selected key is indicated by a red border, and input fields for it
 * While the key action can be configured to execute a command, Enterprise Keyboard currently supports only the “scantrigger” action command, which scans a barcode using DataWedge.
 * The Enterprise Browser ButtonBar API accepts several predefined commands as button actions. Refer to the Enterprise Browser TechDocs for more information. 
 
-### Style properties
-**Preview -** Used to expose the value of a key when pressed. The key value is previewed only if the preview value is set to “true” (default for all keys).
-
-**Transparency -** Used to specify the transparency for the selected key from 0 (opaque) to 100 (fully transparent). Changes appear on the device simulator immediately. 
-
-**Button Color -** Used to specify the color of the selected key. Changes appear on the device simulator immediately. 
-
-**ColorPressed -** Used to specify the color of the selected key when the key is pressed. Changes appear on the device simulator when the key is pressed. 
-
-**Image -** Used to specify an image to fill the space of the selected key. After selection, the image appears immediately on the device simulator. When the Layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats. 
-
-**ImagePressed -** Used to specify an image to be displayed when the button is pressed. After selection, the image appears on the device simulator when the button is pressed. When the Layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats.
-
-### Feedback properties
-
-**HapticFeedback -** Used to control whether the device vibrates when the selected button is clicked. Set the value to “true” to vibrate (default = false).
-**Duration -** Used to specify the duration (in ms) of vibration when the “Haptic Feedback” property is set to true (default = 40 ms). 
 
 ### Additional Features
 
@@ -315,12 +316,14 @@ The currently selected key is indicated by a red border, and input fields for it
 To save the current layout data, click the “Save Layout” button. No confirmation dialog appears. 
 
 ### Save Project
+
 To save the current keyboard Layout project, click the “Save Project” button. A dialog appears indicating the location of the saved “.encrypted” file. 
 Take note of the save directory for later reference. 
 
 -----
 
-### general Usage Notes
+## General Usage Notes
+
 * **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
 * **The number of allowable characters in a button label field is dependent on width of the key**. To avoid automatic key resizing, button label should not exceed available width. 
 * **The font size used for a button label is dependent on the size of the key being labeled**. To avoid automatic key resizing, select a point size appropriate for the size of the button.
@@ -346,7 +349,7 @@ Keyboard projects created earlier can be modified for use on different devices, 
 **To import a project**: 
 
 1. On the Enterprise Keyboard Designer’s launch screen, click the “IMPORT KEYBOARD PROJECT” button. 
-2. Navigate to and double-click the project (“.encrypted” file) to import.
+2. Navigate to and double-click the project (“`.encrypted`” file) to import.
 3. Select the target device using the drop-down menu and click the “Confirm” button. 
 4. Select the device orientation and click the “Confirm” button.
 5. When the Project name is seen at top-left corner, the workspace is ready for use.

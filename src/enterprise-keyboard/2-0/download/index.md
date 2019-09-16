@@ -104,6 +104,6 @@ productversion: '2.0'
 3. Download and install the package using the standard procedure.
 
 ### Remote Management
-Enterprise Keyboard can be managed programmatically through [EMDK for Android](../../../../emdk-for-android) development tools or remotely using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service (requires MX 6.3 or higher) or a company's own enterprise mobile management (EMM) system (if supported by that system). 
+Enterprise Keyboard can be managed remotely using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service (requires MX 6.3 or higher) or a company's own enterprise mobile management (EMM) system (if supported by that system). 
 
 See the [Enterprise Keyboard Manager guide](../../../../mx/enterprisekeyboardmgr) for details.

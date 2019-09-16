@@ -17,7 +17,6 @@ See the [EKB 1.6 download page](../../download) for a list of supported devices.
 Enterprise Keyboard 1.1 (and higher) can be activated and configured: 
 
 * Manually at the device
-* Programmatically through [EMDK for Android](../../../../emdk-for-android) development tools 
 * Remotely:
     * Using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service 
     * Through a company's own mobile device management (MDM) system (if supported by that system) 
@@ -116,7 +115,7 @@ See the [Customize section](../settings) for more information about Enterprise K
 ------
 
 ## Automated Activation
-Enterprise Keyboard 1.1 (and higher) can be configured remotely on multiple managed devices using Zebra's [StageNow](../../../../) tools and the [UI Manager](/mx/uimgr/) service or an organization's own MDM system. Configuration also can be handled programmatically through Zebra's [EMDK for Android](../../../../) software development kit. 
+Enterprise Keyboard 1.1 (and higher) can be configured remotely on multiple managed devices using Zebra's [StageNow](../../../../) tools and the [UI Manager](/mx/uimgr/) service or an organization's own MDM system. 
 
 Actions to be executed on the Android Settings panel:
 1. <b>Open Language and input</b> 

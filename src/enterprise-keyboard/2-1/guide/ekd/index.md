@@ -42,6 +42,8 @@ EKD is installed in the same was as any Windows application.
 
 Each Enterprise Keyboard Designer project contains one or more key layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. “`myTC75Layout.encrypted`”). 
 
+-----
+
 ### I. Create a Project
 
 1. Launch the Enterprise Keyboard Designer utility: 
@@ -57,13 +59,15 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
  <img alt="" style="height:367px" src="ekd_select_device.png"/>
  <br>
 
-**The project name is displayed in the upper-left corner and EKD is ready to create custom layouts**. 
+**When the project name is displayed in the upper-left corner of the main designer screen as below, EKD is ready to create custom layouts**.
 
-**Note**: Once a project is created, its target device and other project-level settings cannot be changed later.
+> **Note**: Once a project is created, its target device and other project-level settings cannot be changed.
 
 <!-- 
 For a demo of the steps above, see the "createProject.mp4” video.
  -->
+
+-----
 
 ### II. Create Layout(s)
 
@@ -91,16 +95,17 @@ For a demo of the steps above, see the "createProject.mp4” video.
  <img alt="" style="height:350px" src="ekd_resize_layout.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-7. Drag the desired key(s) from the key panel (at right) to the layout, dragging to reposition as needed:
+7. **Drag the desired key(s) from the key panel** (at right) to the layout, dragging to reposition as needed:
  <img alt="" style="height:350px" src="ekd_drag_buttons.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-8. Click on the layout and key(s) to modify properties using the [Button and Layout Properties](#buttonandlayoutproperties) panels: 
+8. Click on the layout and/or key(s) to **modify properties using the [Button and Layout Properties](#buttonandlayoutproperties) panels**: 
  <img alt="" style="height:350px" src="ekd_properties_panels.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
 9. **Click "Save Layout" button** often to preserve settings.
 10. **Repeat Steps 8 and 9** until the layout appears as desired. 
+11. **Click "Save Project" to create a project file for deployment**.
 
 ### III. Deploy Layout(s)
 

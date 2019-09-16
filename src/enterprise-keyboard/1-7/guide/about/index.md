@@ -13,7 +13,6 @@ Enterprise Keyboard is a soft input device that's designed to provide the most p
 Enterprise Keyboard (1.1 and higher) can be configured in the following ways: 
 
 * **Manually** on the device
-* **Programmatically** through [EMDK for Android](../../../../emdk-for-android) development tools
 * **Remotely** using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service
 * Remotely through a company's own enterprise mobile management (EMM) system (if supported by that system)
 

@@ -15,7 +15,7 @@ An unlimited number of custom key layouts can be created, deployed to devices an
 
 <img alt="" style="height:350px" src="ekd_main_steps.png"/>
 
-*EKD features a simple drag-and-drop UI with device simulator to allow quick creation of purpose-built key layouts <br>configured for specific key actions that can be modified for different devices and screen resolutions*.
+*EKD features a simple drag-and-drop UI with device simulator to allow quick creation of purpose-built key layouts <br>configured for specific key actions that can be modified for different devices and screen resolutions.<br> Click image to enlarge, ESC to exit*.
 
 ### `IMPORTANT - PLEASE READ`
 * **Zebra Enterprise Keyboard MUST be installed on the device and selected as the default input source** to use custom layouts created with EKD. 

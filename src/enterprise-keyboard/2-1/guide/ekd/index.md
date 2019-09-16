@@ -15,14 +15,14 @@ An unlimited number of custom key layouts can be created, deployed to devices an
 
 <img alt="" style="height:350px" src="ekd_main_steps.png"/>
 
-*EKD features a simple drag-and-drop UI with device emulation allows quick creation of purpose-built key layouts <br>configured for specific key actions that can be modified for different devices and screen resolutions*.
+*EKD features a simple drag-and-drop UI with device simulator to allow quick creation of purpose-built key layouts <br>configured for specific key actions that can be modified for different devices and screen resolutions*.
 
 ### `IMPORTANT - PLEASE READ`
-* To use custom layouts created with EKD, **the Zebra Enterprise Keyboard MUST be installed on the device and selected as the default input source**. 
-* **<u>Only one keyboard or custom key layout can be displayed on the device screen at a time</u>**. When a custom key layout is displayed, all other keyboards are hidden, including the (alpha-numeric) Enterprise Keyboard. 
-* To be displayed, **layouts made with EKD must be called by an app using intents** (see [Intent APIs section](#intentapis)).
-* Multiple layouts can be saved in a single project file, and apps on the device can access only a single EKD project file.  
-* EKD projects are automatically saved and deployed as encrypted files that can be decrypted on the device only by **DataWedge, Enterprise Browser and Enterprise Keyboard** and applications running on a Zebra Android device. 
+* **Zebra Enterprise Keyboard MUST be installed on the device and selected as the default input source** to use custom layouts created with EKD. 
+* **<u>Only one keyboard or custom key layout can be displayed on the device screen at a time</u>**. When a custom key layout is displayed, all other keyboards are hidden, including any Enterprise Keyboard layout. 
+* **Layouts made with EKD must be called by an app using intents** to be displayed (see [Intent APIs section](#intentapis)).
+* **Apps on the device can access <u>only a single EKD project file</u>**, but multiple layouts can be saved in that single project file and called independently through intents.  
+* EKD projects are saved and deployed as encrypted files that can be decrypted on the device only by **DataWedge, Enterprise Browser and Enterprise Keyboard** and applications running on a Zebra Android device. 
 * Layout files can be imported into Enterprise Keyboard Designer and modified or supplemented with additional keys and/or layouts. 
 * **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
 * In this guide, the terms “button” and “key” are used interchangeably. 

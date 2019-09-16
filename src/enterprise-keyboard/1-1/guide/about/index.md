@@ -10,8 +10,7 @@ Enterprise Keyboard is a soft input device that's designed to provide the most p
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dPzyDFMcJzI" frameborder="0" allowfullscreen></iframe>
 
-Enterprise Keyboard 1.1 (and higher) can be activated and configured manually on the device,
-programmatically through [EMDK for Android](../../../../emdk-for-android) development tools or remotely using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service or through a company's own mobile device management (MDM) system (if supported by that system). 
+Enterprise Keyboard 1.1 (and higher) can be activated and configured manually on the device or remotely using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service or through a company's own mobile device management (MDM) system (if supported by that system). 
 
 Zebra's keyboard also makes use of the Android Personal Dictionary for spelling suggestions and corrections, and permits customers and partners to populate the device with industry-specific terms to help improve the speed and accuracy of keyboard input. A Personal dictionary can be populated and mass-deployed through Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../) tools. 
 

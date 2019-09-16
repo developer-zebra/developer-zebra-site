@@ -13,7 +13,7 @@ The Enterprise Keyboard Designer (EKD) is a powerful key-layout editor for Windo
 
 An unlimited number of custom key layouts can be created, deployed to devices and called by customer apps (through Android intents) as needed to match specific types of input. Zebra Enterprise Keyboard (EKB) must be installed to make use of custom EKD layouts. EKB is preinstalled on many Zebra devices and available as a side-load for others. 
 
-<img alt="" style="height:350px" src="ekd_main_screen.png"/>
+<img alt="" style="height:350px" src="ekd_main_steps.png"/>
 
 *EKD features a simple drag-and-drop UI with device emulation allows quick creation of purpose-built key layouts <br>configured for specific key actions that can be modified for different devices and screen resolutions*.
 
@@ -42,7 +42,7 @@ EKD is installed in the same was as any Windows application.
 
 Each Enterprise Keyboard Designer project contains one or more key layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. “`myTC75Layout.encrypted`”). 
 
-### I. Create Project
+### I. Create a Project
 
 1. Launch the Enterprise Keyboard Designer utility: 
  <img alt="" style="height:250px" src="EKD_app_icon.png"/>
@@ -108,8 +108,9 @@ Data for custom layout(s) and key-value assignment(s) are stored in a single, en
 
 **To push a keyboard definition file**:
 
-1. **Locate the keyboard definition file** (i.e. “`layoutProjectName.encrypted`") on the development host computer. By default, the files are saved in the download directory of the current user: <br>
- `c:\Users\userName\Downloads\layoutProjectName.encrypted`
+1. **Locate the keyboard definition file** (i.e. “`layoutProjectName.encrypted`") on the development host computer. <br>
+ By default, the files are saved in the download directory of the current user: <br>
+ `c:\Users\userName\Downloads\layoutProjectName.encrypted`<br>
  **NOTE**: When clicking EKD's "Save Project" button, the default folder is shown similar to the image below: 
  <img alt="" style="height:250px" src="ekd_project_saved.png"/>
  _Click image to enlarge, ESC to exit_.
@@ -118,8 +119,7 @@ Data for custom layout(s) and key-value assignment(s) are stored in a single, en
 3. Push definition file to the device folder:<br>
  `/enterprise/device/settings/ekb/config/`
 
-Custom keyboard layouts are available for selection immediately upon deployment of the file. 
-
+**Custom keyboard layouts are available on the device immediately upon file deployment**. 
 
 -----
 
@@ -239,7 +239,7 @@ If the Layout was created using Grid Layout, double-click on any key (I.e. a box
 
 The currently selected key is indicated by a red border, and input fields for its Button Properties are enabled. The following key properties can be configured; changes appear immediately on the selected button.
 
-#### Positioning Properties
+#### Position Properties
 
 **Left -** Layout offset (in pixels) from the left edge of the screen. 
 

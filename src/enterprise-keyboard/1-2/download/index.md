@@ -27,4 +27,4 @@ productversion: '1.2'
 
 **Related Guide**:
 
-* [Use Enterprise Keyboard Manager](../../../../mx/enterprisekeyboardmgr) to remotely configure EKB (1.1 and higher) with EMDK, StageNow or a compatible MDM system.
+* [Use Enterprise Keyboard Manager](../../../../mx/enterprisekeyboardmgr) to remotely configure EKB (1.1 and higher) with StageNow or a compatible MDM system.

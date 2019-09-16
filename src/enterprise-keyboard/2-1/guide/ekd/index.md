@@ -99,6 +99,10 @@ For a demo of the steps above, see the "createProject.mp4” video.
  <img alt="" style="height:350px" src="ekd_drag_buttons.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
+ **Alternatively, use Grid Layout option (checkbox)**, which automatically aligns the layout with the left and bottom edges of the simulator and divides the layout based on the specified number of columns and rows. 
+  <img alt="" style="height:350px" src="ekd_grid_layout.png"/>
+ _Click image to enlarge, ESC to exit_.
+ <br> 
 8. Click on the layout and/or key(s) to **modify properties using the [Button and Layout Properties](#buttonandlayoutproperties) panels**: 
  <img alt="" style="height:350px" src="ekd_properties_panels.png"/>
  _Click image to enlarge, ESC to exit_.
@@ -110,7 +114,7 @@ For a demo of the steps above, see the "createProject.mp4” video.
 > Data for custom layout(s) and key-value assignment(s) is stored in the keyboard definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. Layouts are available immediately upon deployment.<br> Instructions follow below. 
 
 ### Using Grid Layout
-The Grid Layout option permits button Layouts to be created more quickly and with more precision than the drag-and-drop method. When a Grid is initially created, it is automatically placed with its left and bottom edges flush with the left and bottom edges of the simulator.  
+The Grid Layout option permits button Layouts to be created more quickly and with more precision than the drag-and-drop method. When a Grid is initially created, it is   
 
 1. Create or open a Layout to edit (if not already open). 
 2. Check the “Create Grid Layout” checkbox. This enables parameters to be entered in the Grid Properties input fields shown below. Configure the values as required (in pixels or count, as applicable). Changes are immediately visible in the Layout. 
@@ -141,7 +145,7 @@ The Grid Layout option permits button Layouts to be created more quickly and wit
 
 ## Button and Layout Properties
 
-Grid Properties:
+#### Grid Properties:
 
 **Left -** Layout offset (in pixels) from the left edge of the screen.
 
@@ -162,13 +166,7 @@ Grid Properties:
 5. Configure Layout Properties as required (see below).
 <b>Switch layouts with taps or swipes</b> across the keypad:  
 
-<!-- <img alt="" style="height:350px" src="sample_1.png"/>
-_The Tab bar can be set to automatically hide away, maximizing screen space for applications_. 
-
-<br>
--->
-
-**Notes**: 
+##### Grid Usage Notes
 * Layout drag and resize features are disabled when using Grid Layout. 
 * Button drag and resize features are enabled only after saving the Grid Layout clicking the “Save Grid Layout” button, in the Layout Properties panel.
 
@@ -244,8 +242,7 @@ The currently selected key is indicated by a red border, and input fields for it
 <b>Switch layouts with taps or swipes</b> across the keypad:  
 <img alt="" style="height:150px" src="ekd_07.png"/>
 
-
-Action to Switch Layout - Use the key-value pairs below to switch to a specific layout when using Zebra Enterprise Keyboard.
+**Action to Switch Layout -** Use the key-value pairs below to switch to a specific layout when using Zebra Enterprise Keyboard.
 
 Predefined commands:
 

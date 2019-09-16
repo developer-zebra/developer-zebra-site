@@ -113,6 +113,32 @@ For a demo of the steps above, see the "createProject.mp4” video.
 10. **Repeat Steps 8 and 9** until the layout appears as desired. 
 11. **Click "Save Project" to create a project file for deployment**.
 
+#### Button Positioning (non-grid layout)
+
+**Move -** A key can be repositioned by dragging it within the key layout/background. A selected key (indicated by a red dotted line surrounding it) also can be moved using the arrow keys on the host computer keyboard.  
+
+**Resize -** Key width and height are changed by dragging the key's right and bottom edges within the key layout/background.
+
+#####To Delete a Key:
+
+1. Open the kayout that contains the key to be deleted. 
+2. Double-click on the the key to be deleted; the selected key is surrounded by a dotted red line. 
+3. Press the “Delete” key on the host computer’s keyboard. A confirmation dialog appears. 
+4. Click “Yes” on the confirmation dialog to delete. 
+
+#####To Clear a layout: 
+1. Open the layout to be cleared. 
+2. Click the red “Clear Layout” button. 
+3. Click “Yes” to confirm the deletion of all layout elements. 
+
+### Save Layout
+
+To save the current layout data, click the “Save Layout” button. No confirmation dialog appears. 
+
+### Save Project
+
+To save the current keyboard layout project, click the “Save Project” button. A dialog appears indicating the location of the saved “`.encrypted`” file. Take note of the save directory for later reference. 
+
 > Data for custom layout(s) and key-value assignment(s) is stored in the keyboard definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. Layouts are available immediately upon deployment.<br> Deployment instructions follow below. 
 
 -----
@@ -283,42 +309,6 @@ Layout Properties can be configured when using drag-and-drop or grid layout func
  * key-keyincaps
 * While the key action can be configured to execute a command, Enterprise Keyboard currently supports only the “scantrigger” action command, which scans a barcode using DataWedge.
 * The Enterprise Browser ButtonBar API accepts several predefined commands as button actions. Refer to the Enterprise Browser TechDocs for more information. 
-
-
-### Additional Features
-
-**Drag -** The key position is changeable by dragging the key within the key layout/background.
-
-**Resize -** The key width and height are re-sizable by dragging the right and bottom edges within the key layout/background.
-
-**ArrowUp -** The top position of the selected key is changeable by pressing up arrow on the host computer’s keyboard.
-
-**ArrowDown -** The top position of the selected key is changeable by pressing the down arrow on host computer’s keyboard.
-
-**ArrowLeft -** The left position of the selected key is changeable by pressing the left arrow on the host computer's keyboard.
-
-**ArrowRight -** The left position of the selected key is changeable by pressing the right arrow on the host computer’s keyboard. 
-
-**To Delete a Key**:
-
-1. Open the Layout that contains the key to be deleted. 
-2. Select the key to be deleted. 
-3. Press the “Delete” key on the host computer’s keyboard. 
-4. Click “Yes” on the confirmation dialog to delete. 
-
-**To Clear a layout**: 
-1. Open the Layout to be cleared. 
-2. Click the red “Clear Layout” button. 
-3. Click “Yes” to confirm the deletion of all Layout elements. 
-
-### Save Layout
-
-To save the current layout data, click the “Save Layout” button. No confirmation dialog appears. 
-
-### Save Project
-
-To save the current keyboard Layout project, click the “Save Project” button. A dialog appears indicating the location of the saved “.encrypted” file. 
-Take note of the save directory for later reference. 
 
 -----
 

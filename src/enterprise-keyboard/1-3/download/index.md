@@ -27,4 +27,4 @@ productversion: '1.3'
 
 **Related Guide**:
 
-* The [Enterprise Keyboard Manager](../../../../mx/enterprisekeyboardmgr) guide covers remote configuration with EMDK, StageNow or a compatible MDM system.
+* The [Enterprise Keyboard Manager](../../../../mx/enterprisekeyboardmgr) guide covers remote configuration with StageNow or a compatible MDM system.

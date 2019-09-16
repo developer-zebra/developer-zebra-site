@@ -1,8 +1,8 @@
 ---
 title: Enterprise Keyboard Designer
 layout: guide.html
-product: Enterprise Keyboard
-productversion: '2.1'
+product: Enterprise Keyboard Designer
+productversion: '1.0'
 author: Eddie Correia
 created: 9/9/2019
 ---
@@ -19,7 +19,7 @@ An unlimited number of custom key layouts can be created, deployed to devices an
 
 ### `IMPORTANT - PLEASE READ`
 * **Zebra Enterprise Keyboard MUST be installed on the device and selected as the default input source** to use custom layouts created with EKD. 
-* **<u>Only one keyboard or custom key layout can be displayed on the device screen at a time</u>**. When a custom key layout is displayed, all other keyboards are hidden, including any Enterprise Keyboard layout. 
+* **<u>Only one keyboard or custom key layout can be displayed on the device screen at a time</u>**. When a custom key layout is displayed, all other keyboards are hidden, including the standard Enterprise Keyboard alpha-numeric layout. 
 * **Layouts made with EKD must be called by an app using intents** to be displayed (see [Intent APIs section](#intentapis)).
 * **Apps on the device can access <u>only a single EKD project file</u>**, but multiple layouts can be saved in that single project file and called independently through intents.  
 * EKD projects are saved and deployed as encrypted files that can be decrypted on the device only by **DataWedge, Enterprise Browser and Enterprise Keyboard** and applications running on a Zebra Android device. 
@@ -57,11 +57,11 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 2. **Enter a project name and click “Submit”** or press ENTER:
  <img alt="" style="height:250px" src="EKD_splash.png"/>
  <br>
-3. Select a target device from the drop-down and click the “Confirm” button:  
+3. **Select a target device** from the drop-down and click the “Confirm” button:  
  <img alt="" style="height:367px" src="ekd_select_device.png"/>
  <br>
 
-**When the project name is displayed in the upper-left corner of the main designer screen as below, EKD is ready to create custom layouts**.
+**When the project name is displayed in the upper-left corner of the main designer screen (as below), EKD is ready to create custom layouts**.
 
 > **Note**: Once a project is created, its target device and other project-level settings cannot be changed.
 
@@ -85,7 +85,7 @@ For a demo of the steps above, see the "createProject.mp4” video.
  <img alt="" style="height:350px" src="ekd_orientation_screen.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-4. **Enter a layout name and press ENTER**. **`NOTE:`** Layout names within a project must be unique and contain only alpha-numeric characters. <br>The name of the current layout appears in the upper-left corner of the screen: 
+4. **Enter a layout name and press ENTER**. **`NOTE:`** Each layout name within a project must be unique and contain only alpha-numeric characters. <br>The name of the current layout appears in the upper-left corner of the screen: 
  <img alt="" style="height:350px" src="ekd_layout_name_location.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
@@ -101,7 +101,7 @@ For a demo of the steps above, see the "createProject.mp4” video.
  <img alt="" style="height:350px" src="ekd_drag_buttons.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
- **Alternatively, use Grid Layout option (checkbox)**, which automatically aligns the layout with the left and bottom edges of the simulator and creates buttons on the layout based on the specified number of columns and rows. 
+ **Alternatively, use Grid Layout option (checkbox)**, which automatically aligns the layout with the left and bottom edges of the simulator and creates buttons on the layout based on the specified number of columns and rows. Grid-style layout can be resized as in Step 5, if needed. 
   <img alt="" style="height:350px" src="ekd_grid_layout.png"/>
  _Click image to enlarge, ESC to exit_.
  <br> 
@@ -109,8 +109,8 @@ For a demo of the steps above, see the "createProject.mp4” video.
  <img alt="" style="height:350px" src="ekd_properties_panels.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-9. **Click "Save Layout" button** often to preserve settings.
-10. **Repeat Steps 8 and 9** until the layout appears as desired. 
+9. **Click "Save Layout" button** often to preserve settings. 
+10. **Repeat Steps 7&ndash;9** until the layout is configured as desired. 
 11. **Click "Save Project" to create a project file for deployment**.
 
 #### Button Positioning (non-grid layout)

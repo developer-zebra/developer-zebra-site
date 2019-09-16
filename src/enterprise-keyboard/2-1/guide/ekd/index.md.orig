@@ -434,24 +434,4 @@ Custom keyboard layouts are available for selection immediately upon deployment 
 ### Known Issues
 When switching layouts, a thin white line is sometimes shown at the bottom or sides of the background key layout in the device simulator, but has no effect on the simulated display.
 
-
-<!--  EMBEDDED VIDEO CODING
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dPzyDFMcJzI" frameborder="0" allowfullscreen></iframe>
-
- -->
-
-<!-- LINKS
-* **Manually** on the device
-* **Programmatically** through [EMDK for Android](../../../../emdk-for-android) development tools
-* **Remotely** using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service
-* Remotely through a company's own enterprise mobile management (EMM) system (if supported by that system)
-
-<b>Switch layouts with taps or swipes</b> across the keypad:  
-<img alt="" style="height:350px" src="sample_1.png"/>
-_The Tab bar can be set to automatically hide away, maximizing screen space for applications_. 
-<br>
-
- -->
-
-
+-----

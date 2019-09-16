@@ -364,25 +364,3 @@ Keyboard projects created earlier can be modified for use on different devices, 
 7. When the Layout name is seen in the top-left corner (after the Project name) and layout keys are visible in the device simulator, the Layout is ready to be edited.
 
 -----
-
-
-<!--  EMBEDDED VIDEO CODING
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dPzyDFMcJzI" frameborder="0" allowfullscreen></iframe>
-
- -->
-
-<!-- LINKS
-* **Manually** on the device
-* **Programmatically** through [EMDK for Android](../../../../emdk-for-android) development tools
-* **Remotely** using [StageNow](../../../../) and the [UI Manager](/mx/uimgr/) service
-* Remotely through a company's own enterprise mobile management (EMM) system (if supported by that system)
-
-<b>Switch layouts with taps or swipes</b> across the keypad:  
-<img alt="" style="height:350px" src="sample_1.png"/>
-_The Tab bar can be set to automatically hide away, maximizing screen space for applications_. 
-<br>
-
- -->
-
-

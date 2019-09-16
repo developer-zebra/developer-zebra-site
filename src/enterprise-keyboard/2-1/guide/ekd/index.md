@@ -115,7 +115,7 @@ For a demo of the steps above, see the "createProject.mp4” video.
 
 #### Button Positioning (non-grid layout)
 
-**Move -** A key can be repositioned by dragging it within the key layout/background. A selected key (indicated by a red dotted line surrounding it) also can be moved using the arrow keys on the host computer keyboard.  
+**Move -** A key can be repositioned by dragging it within the key layout/background. A selected key (one surrounded by a red dotted line) also can be moved using the arrow keys on the host computer keyboard.
 
 **Resize -** Key width and height are changed by dragging the key's right and bottom edges within the key layout/background.
 

@@ -34,7 +34,9 @@ EKD is installed in the same was as any Windows application.
 
 1. Download the “`CustomKeyboardDesignerUtility.exe`” onto the target Windows system. 
 2. Double-click `.exe` file to run the installer.
-3. Enterprise Keyboard Designer launches automatically after installation.
+3. Follow prompts presented by the installer. 
+
+**Enterprise Keyboard Designer launches automatically when installation completes successfully**.
 
 -----
 
@@ -99,7 +101,7 @@ For a demo of the steps above, see the "createProject.mp4” video.
  <img alt="" style="height:350px" src="ekd_drag_buttons.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
- **Alternatively, use Grid Layout option (checkbox)**, which automatically aligns the layout with the left and bottom edges of the simulator and divides the layout based on the specified number of columns and rows. 
+ **Alternatively, use Grid Layout option (checkbox)**, which automatically aligns the layout with the left and bottom edges of the simulator and creates buttons on the layout based on the specified number of columns and rows. 
   <img alt="" style="height:350px" src="ekd_grid_layout.png"/>
  _Click image to enlarge, ESC to exit_.
  <br> 
@@ -112,15 +114,6 @@ For a demo of the steps above, see the "createProject.mp4” video.
 11. **Click "Save Project" to create a project file for deployment**.
 
 > Data for custom layout(s) and key-value assignment(s) is stored in the keyboard definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. Layouts are available immediately upon deployment.<br> Instructions follow below. 
-
-### Using Grid Layout
-The Grid Layout option permits button Layouts to be created more quickly and with more precision than the drag-and-drop method. When a Grid is initially created, it is   
-
-1. Create or open a Layout to edit (if not already open). 
-2. Check the “Create Grid Layout” checkbox. This enables parameters to be entered in the Grid Properties input fields shown below. Configure the values as required (in pixels or count, as applicable). Changes are immediately visible in the Layout. 
-
------
-
 
 -----
 
@@ -145,11 +138,11 @@ The Grid Layout option permits button Layouts to be created more quickly and wit
 
 ## Button and Layout Properties
 
-#### Grid Properties:
+### Grid Properties
 
-**Left -** Layout offset (in pixels) from the left edge of the screen.
+**Left -** Layout position offset (in pixels) from the left edge of the screen.
 
-**Top -** Layout offset (in pixels) from the top edge of the screen.
+**Top -** Layout position offset (in pixels) from the top edge of the screen.
 
 **Width -** Overall width (in pixels) of the Layout.
 
@@ -161,16 +154,16 @@ The Grid Layout option permits button Layouts to be created more quickly and wit
 
 **Margin -** Distance (in pixels) between Grid boxes, each of which stores one Button.
 
-3. Click on “Save Grid Layout” button (in the Layout Properties panel) to store changes to the Layout.
-4. Configure Button Properties and functions as required (see below).  
-5. Configure Layout Properties as required (see below).
-<b>Switch layouts with taps or swipes</b> across the keypad:  
+1. Click on “Save Grid Layout” button (in the Layout Properties panel) to store changes to the Layout.
+2. Configure Button Properties and functions as required (see below).  
+3. Configure Layout Properties as required (see below).
 
 ##### Grid Usage Notes
-* Layout drag and resize features are disabled when using Grid Layout. 
+* Layout drag-and-drop and resize features are disabled when using Grid Layout. 
 * Button drag and resize features are enabled only after saving the Grid Layout clicking the “Save Grid Layout” button, in the Layout Properties panel.
+* **The number of grid columns and rows cannot be changed once a grid is created**.  
 
-### Configure Layout Properties
+### Layout Properties
 Layout Properties can be configured when using drag-and-drop or Grid Layout functions. 
 
 #### Layout Properties
@@ -193,7 +186,7 @@ If the Layout was created using Grid Layout, double-click on any key (I.e. a box
 
 The currently selected key is indicated by a red border, and input fields for its Button Properties are enabled. The following key properties can be configured; changes appear immediately on the selected button.
 
-#### Position Properties
+### Position Properties
 
 **Left -** Layout offset (in pixels) from the left edge of the screen. 
 
@@ -203,7 +196,7 @@ The currently selected key is indicated by a red border, and input fields for it
 
 **Height -** Specifies the height (in pixels) of the selected button.
 
-#### Text Properties
+### Text Properties
 
 **Text -** Specifies the Button label (displayed text) for the selected Button. Applies only if an image is NOT selected.
 
@@ -231,6 +224,7 @@ The currently selected key is indicated by a red border, and input fields for it
 **ActionUp -** Defines the action to be taken when the selected key is released (after being pressed). Accepts a predefined command string only (see below). Overrides Long Press Action property.
 
 ### Predefined command strings
+
 **Perform KeyEvent action -** Used to generate a particular KeyEvent or output as a character. Specify the key and value in key-value format from among the standard Android KeyEvent values. The KeyEvent for a key can be captured inside JavaScript onKeyDown events and output the value, if associated. It should be written in the format below. 
 
 **Note**: Command strings are case sensitive. 
@@ -244,7 +238,7 @@ The currently selected key is indicated by a red border, and input fields for it
 
 **Action to Switch Layout -** Use the key-value pairs below to switch to a specific layout when using Zebra Enterprise Keyboard.
 
-Predefined commands:
+#### Predefined commands
 
 **switch-abc -** switches to the default “abc” (alphabetic) layout
 
@@ -256,8 +250,9 @@ Predefined commands:
 
 **switch- [LayoutName] -** switches to the named custom layout
 
-##### Notes 	
-* The Layout names shown above (“abc”, “123”, “scan” and “&#35;&#42;&#47;”) are reserved for default Enterprise Keyboard layouts and cannot be used as custom Layout names. Switching Layouts is supported on Enterprise Keyboard only.
+#### Usage Notes 	
+* The Layout names shown above (“abc," “123," “scan” and “&#35;&#42;&#47;”) are reserved for default Enterprise Keyboard layouts and cannot be used as custom Layout names. 
+* **Switching Layouts is supported on Enterprise Keyboard only**.
 * The following reserved names must not be used in Model Input fields (PressAction, LongPressAction, etc.) or in KeyEvents: 
  * Scantrigger
  * deviceInfo
@@ -271,7 +266,7 @@ Predefined commands:
 * While the key action can be configured to execute a command, Enterprise Keyboard currently supports only the “scantrigger” action command, which scans a barcode using DataWedge.
 * The Enterprise Browser ButtonBar API accepts several predefined commands as button actions. Refer to the Enterprise Browser TechDocs for more information. 
 
-##### Style properties
+### Style properties
 **Preview -** Used to expose the value of a key when pressed. The key value is previewed only if the preview value is set to “true” (default for all keys).
 
 **Transparency -** Used to specify the transparency for the selected key from 0 (opaque) to 100 (fully transparent). Changes appear on the device simulator immediately. 
@@ -280,20 +275,20 @@ Predefined commands:
 
 **ColorPressed -** Used to specify the color of the selected key when the key is pressed. Changes appear on the device simulator when the key is pressed. 
 
-**Image -** Used to specify an image to fill the space of the selected key. After selection, the image appears immediately on the device simulator. When the Layout is saved, selected image(s) are embedded within the “.encripted” file. Supports .jpg and .png image file formats. 
+**Image -** Used to specify an image to fill the space of the selected key. After selection, the image appears immediately on the device simulator. When the Layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats. 
 
-**ImagePressed -** Used to specify an image to be displayed when the button is pressed. After selection, the image appears on the device simulator when the button is pressed. When the Layout is saved, selected image(s) are embedded within the “.encripted” file. Supports .jpg and .png image file formats.
+**ImagePressed -** Used to specify an image to be displayed when the button is pressed. After selection, the image appears on the device simulator when the button is pressed. When the Layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats.
 
-##### Feedback properties
+### Feedback properties
 
 **HapticFeedback -** Used to control whether the device vibrates when the selected button is clicked. Set the value to “true” to vibrate (default = false).
 **Duration -** Used to specify the duration (in ms) of vibration when the “Haptic Feedback” property is set to true (default = 40 ms). 
 
-##### Additional Features
+### Additional Features
 
 **Drag -** The key position is changeable by dragging the key within the key layout/background.
 
-**Resize -** The key width and height are resizable by dragging the right and bottom corners (respectively) within the key layout/background.
+**Resize -** The key width and height are re-sizable by dragging the right and bottom edges within the key layout/background.
 
 **ArrowUp -** The top position of the selected key is changeable by pressing up arrow on the host computer’s keyboard.
 
@@ -324,12 +319,14 @@ To save the current keyboard Layout project, click the “Save Project” button
 Take note of the save directory for later reference. 
 
 -----
-### Usage Notes
+
+### general Usage Notes
 * **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
 * **The number of allowable characters in a button label field is dependent on width of the key**. To avoid automatic key resizing, button label should not exceed available width. 
-* **The font size used for a button label is dependent on the size of the key being labelled**. To avoid automatic key resizing, select a point size appropriate for the size of the button.
+* **The font size used for a button label is dependent on the size of the key being labeled**. To avoid automatic key resizing, select a point size appropriate for the size of the button.
 * **The secondary text button label field is dependent on the width of the key**. To avoid automatic key resizing, the secondary button label should not exceed available width.
 * **Zebra recommends that button image size not exceed 100 KB**. Larger images are supported but might impact performance of the layout. 
+* When switching layouts, a thin white line is sometimes shown at the bottom or sides of the background key layout in the device simulator, but has no effect on the simulated display.
 * The following reserved names must not be used in Model Input fields (PressAction, LongPressAction, etc.) or in KeyEvents: 
  * Scantrigger
  * deviceInfo
@@ -340,10 +337,6 @@ Take note of the save directory for later reference.
  * switch-scan
  * customLayout
  * key-keyincaps
- 
-
-### Known Issues
-When switching layouts, a thin white line is sometimes shown at the bottom or sides of the background key layout in the device simulator, but has no effect on the simulated display.
 
 -----
 

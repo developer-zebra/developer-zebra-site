@@ -75,7 +75,7 @@ For a demo of the steps above, see the "createProject.mp4” video.
  <img alt="" style="height:350px" src="ekd_main_layout_screen.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-2. Select an existing layout to edit or **click the [+] icon** to create a new layout. <br>
+2. **Click the [+] icon to create a new layout** or select an existing layout to edit: <br>
  <img alt="" style="height:350px" src="ekd_layout_names.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
@@ -107,9 +107,20 @@ For a demo of the steps above, see the "createProject.mp4” video.
 10. **Repeat Steps 8 and 9** until the layout appears as desired. 
 11. **Click "Save Project" to create a project file for deployment**.
 
-### III. Deploy Layout(s)
+> Data for custom layout(s) and key-value assignment(s) is stored in the keyboard definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. Layouts are available immediately upon deployment.<br> Instructions follow below. 
 
-Data for custom layout(s) and key-value assignment(s) are stored in a single, encrypted keyboard definition file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. 
+### Using Grid Layout
+The Grid Layout option permits button Layouts to be created more quickly and with more precision than the drag-and-drop method. When a Grid is initially created, it is automatically placed with its left and bottom edges flush with the left and bottom edges of the simulator.  
+
+1. Create or open a Layout to edit (if not already open). 
+2. Check the “Create Grid Layout” checkbox. This enables parameters to be entered in the Grid Properties input fields shown below. Configure the values as required (in pixels or count, as applicable). Changes are immediately visible in the Layout. 
+
+-----
+
+
+-----
+
+### III. Deploy Layout(s)
 
 **To push a keyboard definition file**:
 
@@ -125,66 +136,6 @@ Data for custom layout(s) and key-value assignment(s) are stored in a single, en
  `/enterprise/device/settings/ekb/config/`
 
 **Custom keyboard layouts are available on the device immediately upon file deployment**. 
-
------
-
-### Notes
-* **The Enterprise Keyboard Designer must be used only in full screen mode**. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
-* **The number of allowable characters in a button label field is dependent on width of the key**. To avoid automatic key resizing, button label should not exceed available width. 
-* **The font size used for a button label is dependent on the size of the key being labelled**. To avoid automatic key resizing, select a point size appropriate for the size of the button.
-* **The secondary text button label field is dependent on the width of the key**. To avoid automatic key resizing, the secondary button label should not exceed available width.
-* **Zebra recommends that button image size not exceed 100 KB**. Larger images are supported but might impact performance of the layout. 
-* The following reserved names must not be used in Model Input fields (PressAction, LongPressAction, etc.) or in KeyEvents: 
- * Scantrigger
- * deviceInfo
- * calculator
- * switch-abc
- * switch-123
- * switch-&#35;&#42;&#47;
- * switch-scan
- * customLayout
- * key-keyincaps
- 
-
-### Known Issues
-When switching layouts, a thin white line is sometimes shown at the bottom or sides of the background key layout in the device simulator, but has no effect on the simulated display.
-
-<!-- UNUSED IMAGES
-ekd_new_layout_button.png
-ekd_03.png
-ekd_device_orientation.png
-ekd_device_model.png
-ekd_layout_name.png
-
-
-1. **Click on the Menu button** to open the sidebar:
-<img alt="" style="height:350px" src="ekd_03.png"/>
-<br>
-2. **Click the "Add" [+] button** icon:
-<img alt="" style="height:350px" src="ekd_04.png"/>
-<br>
-3. **Enter a name** and press ENTER:
-<img alt="" style="height:350px" src="ekd_05.png"/>
-<br>
-4. **To modify an existing Layout, click the EDIT icon** for that payout; <br>
-To delete, click the TRASH CAN icon: 
-<img alt="" style="height:350px" src="ekd_06.png"/>
-<br>
-
--->
-
------
-
-## Using drag and drop
-1. Select the Layout to edit (if not already selected).
-
-`**IMPORTANT**:` To avoid losing changes, **always save the current layout before switching to another**. 
-
-### Using Grid Layout
-The Grid Layout option permits button Layouts to be created more quickly and with more precision than the drag-and-drop method. When a Grid is initially created, it is automatically placed with its left and bottom edges flush with the left and bottom edges of the simulator.  
-
-1. Create or open a Layout to edit (if not already open). 
-2. Check the “Create Grid Layout” checkbox. This enables parameters to be entered in the Grid Properties input fields shown below. Configure the values as required (in pixels or count, as applicable). Changes are immediately visible in the Layout. 
 
 -----
 
@@ -376,8 +327,34 @@ To save the current keyboard Layout project, click the “Save Project” button
 Take note of the save directory for later reference. 
 
 -----
+### Usage Notes
+* **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
+* **The number of allowable characters in a button label field is dependent on width of the key**. To avoid automatic key resizing, button label should not exceed available width. 
+* **The font size used for a button label is dependent on the size of the key being labelled**. To avoid automatic key resizing, select a point size appropriate for the size of the button.
+* **The secondary text button label field is dependent on the width of the key**. To avoid automatic key resizing, the secondary button label should not exceed available width.
+* **Zebra recommends that button image size not exceed 100 KB**. Larger images are supported but might impact performance of the layout. 
+* The following reserved names must not be used in Model Input fields (PressAction, LongPressAction, etc.) or in KeyEvents: 
+ * Scantrigger
+ * deviceInfo
+ * calculator
+ * switch-abc
+ * switch-123
+ * switch-&#35;&#42;&#47;
+ * switch-scan
+ * customLayout
+ * key-keyincaps
+ 
 
-### Import Keyboard Project
+### Known Issues
+When switching layouts, a thin white line is sometimes shown at the bottom or sides of the background key layout in the device simulator, but has no effect on the simulated display.
+
+-----
+
+## Import Keyboard Project
+Keyboard projects created earlier can be modified for use on different devices, adapted for different screen sizes and features or for any reason. 
+
+**To import a project**: 
+
 1. On the Enterprise Keyboard Designer’s launch screen, click the “IMPORT KEYBOARD PROJECT” button. 
 2. Navigate to and double-click the project (“.encrypted” file) to import.
 3. Select the target device using the drop-down menu and click the “Confirm” button. 

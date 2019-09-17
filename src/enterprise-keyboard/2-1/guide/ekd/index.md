@@ -103,7 +103,7 @@ For a demo of the steps above, see the "createProject.mp4” video.
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
-7. **Drag the desired key(s) from the key panel** (at right) to the layout, dragging to reposition as needed:
+7. **Drag the desired key(s) from the key panel** (at right) to the layout, dragging to resize and/or reposition as needed:
  <img alt="" style="height:350px" src="ekd_drag_buttons.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
@@ -131,6 +131,8 @@ For a demo of the steps above, see the "createProject.mp4” video.
 
 **Resize -** Key width and height are changed by dragging the key's right and bottom edges within the key layout/background.
 
+-----
+
 ### Properties
 
 #### Action Properties
@@ -143,6 +145,8 @@ For a demo of the steps above, see the "createProject.mp4” video.
 
 **ActionUp -** Defines the action to be taken when the selected key is released (after being pressed). Accepts a predefined command string only (see below). Overrides Long Press Action property.
 
+-----
+
 #### Button Properties
 
 If the Layout was created using drag and drop, a key must be selected from the key panel and dropped into the Layout. Double-click the key to change its default button settings.
@@ -151,10 +155,14 @@ If the Layout was created using Grid Layout, double-click on any key (I.e. a box
 
 The currently selected key is indicated by a red border, and input fields for its Button Properties are enabled. The following key properties can be configured; changes appear immediately on the selected button.
 
+-----
+
 #### Feedback Properties
 
 **HapticFeedback -** Used to control whether the device vibrates when the selected button is clicked. Set the value to “true” to vibrate (default = false).
 **Duration -** Used to specify the duration (in ms) of vibration when the “Haptic Feedback” property is set to true (default = 40 ms). 
+
+-----
 
 #### Grid Properties
 
@@ -181,12 +189,16 @@ The currently selected key is indicated by a red border, and input fields for it
 * Button drag and resize features are enabled only after saving the Grid Layout.
 * **The number of grid columns and rows cannot be changed once a grid is created**.  
 
+-----
+
 #### Layout Properties
 Layout Properties can be configured when using drag-and-drop or grid layout functions. 
 
 **Background Color -** Specifies the color of the Key Layout. Changes appear in the Layout immediately after clicking OK in the color picker. 
 
 **Transparency -** Used to select of the transparency from 0 (opaque) to 100 (fully transparent) of the Key Layout Background using a slider. Changes appear immediately.
+
+-----
 
 #### Position Properties
 
@@ -198,24 +210,30 @@ Layout Properties can be configured when using drag-and-drop or grid layout func
 
 **Height -** Specifies the height (in pixels) of the selected button.
 
+-----
+
 #### Simulator Properties
 
 **Status Bar -** Used to show/hide the Status bar on the device simulator screen. The Layout “top” coordinate changes based on this setting, which depends on status bar setting configured at the application level. Must be hidden for full-screen applications.
 
 **System Bar -** Used to show/hide the System bar on the device simulator screen. The Layout “top” coordinate changes based on this setting, which depends on System bar setting configured at the application level. Must be hidden for full-screen applications. 
 
+-----
+
 #### Style Properties
 **Preview -** Used to expose the value of a key when pressed. The key value is previewed only if the preview value is set to “true” (default for all keys).
 
-**Transparency -** Used to specify the transparency for the selected key from 0 (opaque) to 100 (fully transparent). Changes appear on the device simulator immediately. 
+**Transparency -** Used to specify the transparency for the selected key from 0 (opaque) to 100 (fully transparent). Changes appear immediately on the device simulator. 
 
-**Button Color -** Used to specify the color of the selected key. Changes appear on the device simulator immediately. 
+**Button Color -** Used to specify the color of the selected key. Changes appear immediately on the device simulator.
 
 **ColorPressed -** Used to specify the color of the selected key when the key is pressed. Changes appear on the device simulator when the key is pressed. 
 
 **Image -** Used to specify an image to fill the space of the selected key. After selection, the image appears immediately on the device simulator. When the Layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats. 
 
 **ImagePressed -** Used to specify an image to be displayed when the button is pressed. After selection, the image appears on the device simulator when the button is pressed. When the Layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats.
+
+-----
 
 #### Text Properties
 
@@ -251,6 +269,8 @@ Layout Properties can be configured when using drag-and-drop or grid layout func
 
 **Action to Switch Layout -** Use the key-value pairs below to switch to a specific layout when using Zebra Enterprise Keyboard.
 
+-----
+
 #### Predefined commands
 
 **switch-abc -** switches to the default “abc” (alphabetic) layout
@@ -262,6 +282,8 @@ Layout Properties can be configured when using drag-and-drop or grid layout func
 **switch-&#35;&#42;&#47; -** switches to the “&#35;&#42;&#47;” (symbolic) layout
 
 **switch- [LayoutName] -** switches to the named custom layout
+
+-----
 
 #### Layout Usage Notes 	
 * The Layout names shown above (“abc," “123," “scan” and “&#35;&#42;&#47;”) are reserved for default Enterprise Keyboard layouts and cannot be used as custom Layout names. 

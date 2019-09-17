@@ -133,7 +133,7 @@ For a demo of the steps above, see the "createProject.mp4” video.
 
 -----
 
-### Properties
+### III. Set Properties
 
 #### Action Properties
 
@@ -179,10 +179,6 @@ The currently selected key is indicated by a red border, and input fields for it
 **Columns -** Number of columns in the Layout, divided equally across the specified Width. 
 
 **Margin -** Distance (in pixels) between Grid boxes, each of which stores one Button.
-
-1. Click on “Save Grid Layout” button (in the Layout Properties panel) to store changes to the Layout.
-2. Configure Button Properties and functions as required (see below).  
-3. Configure Layout Properties as required (see below).
 
 ##### Grid Usage Notes
 * Layout drag-and-drop and resize features are disabled when using Grid Layout. 
@@ -247,14 +243,14 @@ Layout Properties can be configured when using drag-and-drop or grid layout func
 
 **SecondaryText -** Specifies the secondary Button label displayed in the upper-right corner of the selected button. Indicates the key’s output or Action when long-pressed. Applies only if an image is NOT specified.
 
-**Notes**: 
+##### Notes
 * The text input field accepts all characters, including Chinese.
 * All key-label text (including secondary text) is ignored if a key image is specified.
 * The number and size of characters in the button text and secondary text fields should correspond to the key size to avoid automatic changes to the size.
 
 -----
 
-## Predefined Command Strings
+#### Predefined Command Strings
 
 **Perform KeyEvent action -** Used to generate a particular KeyEvent or output as a character. Specify the key and value in key-value format from among the standard Android KeyEvent values. The KeyEvent for a key can be captured inside JavaScript onKeyDown events and output the value, if associated. It should be written in the format below. 
 
@@ -325,7 +321,7 @@ To save the current keyboard layout project, click the “Save Project” button
 
 -----
 
-### III. Deploy Layout(s)
+### IV. Deploy Layout(s)
 
 **To push a keyboard definition file**:
 

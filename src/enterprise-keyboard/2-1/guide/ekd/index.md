@@ -101,7 +101,7 @@ For a demo of the steps above, see the "createProject.mp4” video.
  <img alt="" style="height:350px" src="ekd_drag_buttons.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
- **Alternatively, use Grid Layout option (checkbox)**, which automatically aligns the layout with the left and bottom edges of the simulator and creates buttons on the layout based on the specified number of columns and rows. Grid-style layout can be resized as in Step 5, if needed. 
+ **Alternatively, use the Grid Layout option (checkbox)** to automatically fill the layout with a matrix of equally spaced buttons based on the specified number of columns and rows. The new layout is placed along the left and bottom edges of the simulator and can be resized as in Step 5, if needed.<br>**WARNING**: Checking this box clears the current layout, if any. 
   <img alt="" style="height:350px" src="ekd_grid_layout.png"/>
  _Click image to enlarge, ESC to exit_.
  <br> 
@@ -119,27 +119,25 @@ For a demo of the steps above, see the "createProject.mp4” video.
 
 **Resize -** Key width and height are changed by dragging the key's right and bottom edges within the key layout/background.
 
-#####To Delete a Key:
-
-1. Open the kayout that contains the key to be deleted. 
-2. Double-click on the the key to be deleted; the selected key is surrounded by a dotted red line. 
-3. Press the “Delete” key on the host computer’s keyboard. A confirmation dialog appears. 
-4. Click “Yes” on the confirmation dialog to delete. 
-
-#####To Clear a layout: 
-1. Open the layout to be cleared. 
-2. Click the red “Clear Layout” button. 
-3. Click “Yes” to confirm the deletion of all layout elements. 
-
-### Save Layout
+#### To Save Layout:
 
 To save the current layout data, click the “Save Layout” button. No confirmation dialog appears. 
 
-### Save Project
+#### To Save Project:
 
 To save the current keyboard layout project, click the “Save Project” button. A dialog appears indicating the location of the saved “`.encrypted`” file. Take note of the save directory for later reference. 
 
-> Data for custom layout(s) and key-value assignment(s) is stored in the keyboard definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. Layouts are available immediately upon deployment.<br> Deployment instructions follow below. 
+#### To Delete a Key:
+
+1. In the layout that contains the key to be deleted, **double-click on the the key to be deleted**; the selected key is surrounded by a dotted red line. 
+3. **Press the “Delete” key on the host computer’s keyboard**. A confirmation dialog appears. 
+4. **Click “Yes”** on the confirmation dialog to delete. 
+
+#### To Clear a layout: 
+1. In the layout to be cleared, **Click the red “Clear Layout” button**. 
+3. **Click “Yes”** to confirm the deletion of all layout elements. 
+
+> Data for custom layout(s) and key-value assignment(s) is stored in the keyboard definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. Layouts are available immediately upon deployment.<br> **Deployment instructions follow below**. 
 
 -----
 

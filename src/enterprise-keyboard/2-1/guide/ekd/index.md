@@ -242,12 +242,11 @@ For a demo of the steps above, see the "createProject.mp4” video.
 
 #### Simulator Properties
 
-**Status Bar -** Used to show/hide the Status bar on the device simulator screen. The Layout “top” coordinate changes based on this setting, which depends on status bar setting configured at the application level. Must be hidden for full-screen applications.
+**Status Bar -** Used to show/hide the Status bar (which contains notifications and system icons) at the top of the device simulator screen. The Layout “Top” coordinate changes based on this setting, which depends on status bar setting configured at the application level. **Must be hidden for full-screen applications**.
 
-**System Bar -** Used to show/hide the System bar on the device simulator screen. The Layout “top” coordinate changes based on this setting, which depends on System bar setting configured at the application level. Must be hidden for full-screen applications. 
+**System Bar -** Used to show/hide the System (navigation) bar at the bottom of the device simulator screen. The Layout “Top” coordinate changes based on this setting, which depends on System bar setting configured at the application level. **Must be hidden for full-screen applications**. 
 
 -----
-
 
 #### Predefined Command Strings
 

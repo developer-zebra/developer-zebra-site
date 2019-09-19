@@ -13,8 +13,8 @@ content-items:
     title: Customize
     text: How to tailor Enterprise Keyboard with custom key mappings and industry-specific content and features
     url: /enterprise-keyboard/2-1/guide/settings
-product: Enterprise Keyboard
-productversion: '2.1'
+product: Enterprise Keyboard Designer
+productversion: '1.0'
 ---
 
 

@@ -1,8 +1,8 @@
 ---
 title: About Enterprise Keyboard
 layout: guide.html
-product: Enterprise Keyboard
-productversion: '2.1'
+product: Enterprise Keyboard Designer
+productversion: '1.0'
 ---
 
 ## Overview

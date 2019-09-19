@@ -1,7 +1,7 @@
 ---
 title: Enterprise Keyboard Designer
 layout: guide.html
-product: Enterprise Keyboard Designer
+product: Enterprise Keyboard Designer Designer
 productversion: '1.0'
 author: Eddie Correia
 created: 9/9/2019

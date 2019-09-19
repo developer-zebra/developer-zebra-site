@@ -17,6 +17,6 @@ menu:
       url: /enterprise-keyboard/2-1/download
     - icon: fa fa-search
       url: /enterprise-keyboard/2-1/search
-product: Enterprise Keyboard
-productversion: '2.1'
+product: Enterprise Keyboard Designer
+productversion: '1.0'
 ---

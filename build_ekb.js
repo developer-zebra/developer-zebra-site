@@ -264,6 +264,12 @@ var sitebuild = Metalsmith(__dirname)
         folder: 'enterprise-keyboard/2-1/'
     }))
 
+// Enterprise Keyboard Designer build section
+
+        .use(foldermenu({
+        folder: 'ekd/1-0/'
+    }))
+
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))
     .use(snippet({
       maxLength: 250,

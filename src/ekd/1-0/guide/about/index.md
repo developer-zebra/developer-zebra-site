@@ -15,6 +15,15 @@ An unlimited number of custom key Layouts can be created, deployed to devices an
 
 ***Click image to enlarge, ESC to exit***<br>*EKD features a simple drag-and-drop UI with device simulator to allow quick creation of purpose-built key Layouts <br>configured for specific key actions that can be modified for different devices and screen resolutions*.
 
+<b>Through it's not required for EKD, Zebra's Enterprise Keyboard offers many enhancements over the stock Android Keyboard, including tabbed layouts with "swipe-to-switch," programmable keys and much more: 
+<br>
+_Enterprise Keyboard_:
+<img alt="" style="height:150px" src="keyboard_alone.png"/>
+
+_Stock Android keyboard_:
+<img alt="" style="height:150px" src="keyboard_android.png"/>
+<br>
+
 ### `IMPORTANT - PLEASE READ`
 * **<u>Only one keyboard or custom key Layout can be displayed on the device screen at a time</u>**. When a custom key Layout is displayed, all other keyboards are hidden, including the standard Enterprise Keyboard alpha-numeric Layout. 
 * **Layouts made with EKD must be called by an app using intents** to be displayed (see [Intent APIs section](#intentapis)).

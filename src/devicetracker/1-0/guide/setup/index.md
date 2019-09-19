@@ -46,7 +46,7 @@ This section provides the server and device requirements. Device Tracker support
         * UI Port: Web Portal Port 8443 for accessing Device Tracker web portal  
    * If required, perform **DNS setup** to add server IP address to the DNS server. 
 
-5. Internet Access Required: Internet access is needed to download npm package dependencies.
+5. Internet Access Required: Internet access is needed during initial setup to download npm package dependencies.
 
 6. Hardware Requirements:
    * Minimum CPU cores: 16

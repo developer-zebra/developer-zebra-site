@@ -9,7 +9,7 @@ created: 9/9/2019
 
 ## Overview
 
-Each Enterprise Keyboard Designer project contains one or more key Layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid Layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. “`myTC75Layout.encrypted`”). 
+Each Enterprise Keyboard Designer project contains one or more key Layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid Layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. `myTC75Layout.encrypted`). 
 
 -----
 
@@ -290,7 +290,7 @@ To save the current keyboard Layout project, click the “Save Project” button
 
 **To push a keyboard definition file**:
 
-1. **Locate the keyboard definition file** (i.e. “`LayoutProjectName.encrypted`") on the development host computer. <br>
+1. **Locate the keyboard definition file** (i.e. `LayoutProjectName.encrypted`) on the development host computer. <br>
  By default, the files are saved in the download directory of the current user: <br>
  `c:\Users\userName\Downloads\LayoutProjectName.encrypted`<br>
  **NOTE**: When clicking EKD's "Save Project" button, the default folder is shown similar to the image below: 

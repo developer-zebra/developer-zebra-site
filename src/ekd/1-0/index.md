@@ -6,17 +6,17 @@ menu:
   title: Enterprise Keyboard
   items:
     - title: About
-      url: /enterprise-keyboard/2-1/guide/about
+      url: /ekd/1-0/guide/about
     - title: Setup
-      url: /enterprise-keyboard/2-1/guide/setup
+      url: /ekd/1-0/guide/setup
     - title: Customize
-      url: /enterprise-keyboard/2-1/guide/settings
+      url: /ekd/1-0/guide/settings
     - title: EKB Designer
-      url: /enterprise-keyboard/2-1/guide/ekd
+      url: /ekd/1-0/guide/ekd
     - icon: fa fa-download
-      url: /enterprise-keyboard/2-1/download
+      url: /ekd/1-0/download
     - icon: fa fa-search
-      url: /enterprise-keyboard/2-1/search
+      url: /ekd/1-0/search
 product: Enterprise Keyboard Designer
 productversion: '1.0'
 ---

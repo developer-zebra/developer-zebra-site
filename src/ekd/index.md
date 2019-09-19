@@ -1,11 +1,11 @@
 ---
-title: Enterprise Keyboard
+title: Enterprise Keyboard Designer
 img: ekb_logo.png
 layout: redirect.html
 redirect_url: /ekd/1-0/guide/about
 ---
 
-### Loading the latest EKB version...
+### Loading the latest EKD docs...
 
 
 

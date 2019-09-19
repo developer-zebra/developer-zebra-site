@@ -1,18 +1,18 @@
 ---
-title: Guides
-description: Enterprise Keyboard replaces the default Android soft keyboard with a customizable keyboard designed for the workplace.
+title: EKD Guides
+description: The Enterprise Keyboard Designer (EKD) is a key-Layout editor for Windows 7, 8 and 10 with a GUI for creating custom key layouts for Zebra devices. 
 layout: list-content-items.html
 content-items:
   - type: section
     level: 4
-    title: Setup Guide
-    text: A step-by-step guide to installation and proper configuration of Enterprise Keyboard on a device
-    url: /ekd/1-0/guide/setup
+    title: Usage Guide
+    text: A step-by-step guide to first-time usage and deployment. 
+    url: /ekd/1-0/guide/usage
   - type: section
     level: 4
-    title: Customize
-    text: How to tailor Enterprise Keyboard with custom key mappings and industry-specific content and features
-    url: /ekd/1-0/guide/settings
+    title: API Guide
+    text: How to call custom EKD layouts from apps using Android intents.  
+    url: /ekd/1-0/guide/apis
 product: Enterprise Keyboard Designer
 productversion: '1.0'
 ---

@@ -1,5 +1,5 @@
 ---
-title: Enterprise Keyboard
+title: Enterprise Keyboard Designer
 img: ekb_logo.png
 layout: list-mx.html
 menu:
@@ -9,10 +9,10 @@ menu:
       url: /ekd/1-0/guide/about
     - title: Setup
       url: /ekd/1-0/guide/setup
-    - title: Customize
-      url: /ekd/1-0/guide/settings
-    - title: EKB Designer
-      url: /ekd/1-0/guide/ekd
+    - title: Using EKB
+      url: /ekd/1-0/guide/usage
+    - title: APIs
+      url: /ekd/1-0/guide/apis
     - icon: fa fa-download
       url: /ekd/1-0/download
     - icon: fa fa-search

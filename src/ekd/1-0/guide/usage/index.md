@@ -9,39 +9,6 @@ created: 9/9/2019
 
 ## Overview
 
-The Enterprise Keyboard Designer (EKD) is a powerful key-Layout editor for Windows 7, 8 and 10. It provides a graphical interface for creating and modifying custom key Layouts for Enterprise Keyboard, Zebra's replacement for the stock Android keyboard designed specifically for the workplace. 
-
-An unlimited number of custom key Layouts can be created, deployed to devices and called by customer apps (through Android intents) as needed to match specific types of input. Zebra Enterprise Keyboard (EKB) must be installed to make use of custom EKD Layouts. EKB is preinstalled on many Zebra devices and available as a side-load for others. 
-
-<img alt="" style="height:350px" src="ekd_main_steps.png"/>
-
-***Click image to enlarge, ESC to exit***<br>*EKD features a simple drag-and-drop UI with device simulator to allow quick creation of purpose-built key Layouts <br>configured for specific key actions that can be modified for different devices and screen resolutions*.
-
-### `IMPORTANT - PLEASE READ`
-* **Zebra Enterprise Keyboard MUST be installed on the device and selected as the default input source** to use custom Layouts created with EKD. 
-* **<u>Only one keyboard or custom key Layout can be displayed on the device screen at a time</u>**. When a custom key Layout is displayed, all other keyboards are hidden, including the standard Enterprise Keyboard alpha-numeric Layout. 
-* **Layouts made with EKD must be called by an app using intents** to be displayed (see [Intent APIs section](#intentapis)).
-* **Apps on the device can access <u>only a single EKD project file</u>**, but multiple Layouts can be saved in that single project file and called independently through intents.  
-* EKD projects are saved and deployed as encrypted files that can be decrypted on the device only by **DataWedge, Enterprise Browser and Enterprise Keyboard** and applications running on a Zebra Android device. 
-* Layout files can be imported into Enterprise Keyboard Designer and modified or supplemented with additional keys and/or Layouts. 
-* **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
-* In this guide, the terms “button” and “key” are used interchangeably. 
-
------
-
-## Installation
-EKD is installed in the same was as any Windows application. 
-
-1. Download the “`CustomKeyboardDesignerUtility.exe`” onto the target Windows system. 
-2. Double-click `.exe` file to run the installer.
-3. Follow prompts presented by the installer. 
-
-**Enterprise Keyboard Designer launches automatically when installation completes successfully**.
-
------
-
-## Using EKD
-
 Each Enterprise Keyboard Designer project contains one or more key Layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid Layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. “`myTC75Layout.encrypted`”). 
 
 -----

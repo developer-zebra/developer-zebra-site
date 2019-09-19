@@ -1,267 +1,48 @@
 ---
-title: About Enterprise Keyboard
+title: About Enterprise Keyboard Designer
 layout: guide.html
 product: Enterprise Keyboard Designer
 productversion: '1.0'
 ---
 
 ## Overview
-Enterprise Keyboard is a soft input device that's designed to provide the most productive means possible of inputting data into Zebra devices. Building on the stock Android keyboard, Enterprise Keyboard provides programmable keys, can switch quickly between languages and key layouts, and has the ability to scan barcode data directly into an application using any of the device's scanners. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dPzyDFMcJzI" frameborder="0" allowfullscreen></iframe>
+The Enterprise Keyboard Designer (EKD) is a powerful key-Layout editor for Windows 7, 8 and 10. It provides a graphical interface for creating and modifying custom key Layouts for Enterprise Keyboard, Zebra's replacement for the stock Android keyboard designed specifically for the workplace. 
 
-Enterprise Keyboard (1.1 and higher) can be configured in the following ways: 
+An unlimited number of custom key Layouts can be created, deployed to devices and called by customer apps (through Android intents) as needed to match specific types of input. Zebra Enterprise Keyboard (EKB) must be installed to make use of custom EKD Layouts. EKB is preinstalled on many Zebra devices and available as a side-load for others. Enterprise Keyboard, Zebra's soft input device for enhancing workplace productivity, is not required to use EKD layouts on a device. 
 
-* **Manually** on the device
-* **Remotely** using [StageNow](../../../../stagenow) and the [UI Manager](/mx/uimgr/) service
-* Remotely through a company's own enterprise mobility management (EMM) system (if supported by that system)
+<img alt="" style="height:350px" src="ekd_main_steps.png"/>
 
------
+***Click image to enlarge, ESC to exit***<br>*EKD features a simple drag-and-drop UI with device simulator to allow quick creation of purpose-built key Layouts <br>configured for specific key actions that can be modified for different devices and screen resolutions*.
 
-**Enterprise Keyboard makes use of the Android Personal Dictionary for spelling corrections and shortcut substitutions**, and permits the dictionary to be easily populated with industry-specific terms to help improve the speed and accuracy of keyboard input. A custom dictionary can be populated in bulk and mass-deployed through Zebra's Mobility Extensions [(MX)](../../../../mx) and [StageNow](../../../../stagenow) tools. 
-
-This version of Enterprise Keyboard includes the following languages: 
-
-* English (UK)
-* English (US) 
-* French
-* German
-* Italian
-* Spanish
-* Russian
-
-#### Learn more about:
-* [Text correction features](../settings#textcorrection)
-* The "Loadable" [Personal Dictionary](../../../../mx/personaldictionarymgr)
+### `IMPORTANT - PLEASE READ`
+* **<u>Only one keyboard or custom key Layout can be displayed on the device screen at a time</u>**. When a custom key Layout is displayed, all other keyboards are hidden, including the standard Enterprise Keyboard alpha-numeric Layout. 
+* **Layouts made with EKD must be called by an app using intents** to be displayed (see [Intent APIs section](#intentapis)).
+* **Apps on the device can access <u>only a single EKD project file</u>**, but multiple Layouts can be saved in that single project file and called independently through intents.  
+* EKD projects are saved and deployed as encrypted files that can be decrypted on the device only by **DataWedge, Enterprise Browser and Enterprise Keyboard** and applications running on a Zebra Android device. 
+* Layout files can be imported into Enterprise Keyboard Designer and modified or supplemented with additional keys and/or Layouts. 
+* **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
+* In this guide, the terms “button” and “key” are used interchangeably. 
 
 -----
 
-## New in v2.1
+## General Usage Notes
 
-### Supported Devices
-
-<u>EKB 2.1 comes pre-installed</u> on the following Zebra **devices running Android 8.x Oreo**: 
-
-* **CC605**
-* **CC610**
-* **MC93**
-* **TC8200**
-
------
-
-## Unique EKB features  
-All versions of Enterprise Keyboard offer these other unique capabilities to help improve the speed and accuracy of input:  
-
-<b>Switch layouts with taps or swipes</b> across the keypad:  
-<img alt="" style="height:350px" src="sample_1.png"/>
-_The Tab bar can be set to automatically hide away, maximizing screen space for applications_. 
-<br>
-
-<b>Scan directly with the Barcode tab</b> to collect data where and when it's needed:
-<img alt="" style="height:350px" src="sample_5.png"/>
-_The scan tab displays a scanner button for in-app data acquisition from barcode(s)_.
-<br>
-
-<b>Input long-press characters with a finger-flick</b> of the main key:
-<img alt="" style="height:350px" src="emailAddress.png"/>
-_High-contrast key colors are visible in all lighting conditions_. 
-<br>
-
-<!--
-The <b>Language tab</b> quickly selects languages to include:  
-<img alt="" style="height:350px" src="sample_2.png"/>
-<br>
--->
-
-<b>Quickly page through selected languages</b> using the "globe" key:  
-<img alt="" style="height:150px" src="keyboard_globe.png"/>
-<br>
-
-<!--
-The <b>Numerical tab provides sub-tabs</b> for symbol key and custom function key layouts: 
-<img alt="" style="height:350px" src="sample_3.png"/>
-<br>
--->
-
-<b>Design custom key layouts easily</b> with six (6) remappable keys: 
-<img alt="" style="height:150px" src="keyboard_alpha.png"/>
-<img alt="" style="height:145px" src="EKB_symbol_layout.png"/>
-<img alt="" style="height:150px" src="keyboard_numerical.png"/>
-_Shown here with the EMOJI key (upper two layouts) and other default key assignments_. 
-<br>
-
-<b>View the keyboard indoors or out</b> thanks to a specially designed color scheme: 
-<br>
-_Enterprise Keyboard_:
-<img alt="" style="height:150px" src="keyboard_alone.png"/>
-
-_Stock Android keyboard_:
-<img alt="" style="height:150px" src="keyboard_android.png"/>
-<br>
+* **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
+* **The number of allowable characters in a button label field is dependent on width of the key**. To avoid automatic key resizing, button label should not exceed available width. 
+* **The font size used for a button label is dependent on the size of the key being labeled**. To avoid automatic key resizing, select a point size appropriate for the size of the button.
+* **The secondary text button label field is dependent on the width of the key**. To avoid automatic key resizing, the secondary button label should not exceed available width.
+* **Zebra recommends that button image size not exceed 100 KB**. Larger images are supported but might impact performance of the Layout. 
+* When switching Layouts, a thin white line is sometimes shown at the bottom or sides of the background key Layout in the device simulator, but has no effect on the simulated display.
+* The following reserved names must not be used in Model Input fields (PressAction, LongPressAction, etc.) or in KeyEvents: 
+ * Scantrigger
+ * deviceInfo
+ * calculator
+ * switch-abc
+ * switch-123
+ * switch-&#35;&#42;&#47;
+ * switch-scan
+ * customLayout
+ * key-keyincaps
 
 -----
-
-## Version History
-
-### Added in v2.0
-
-#### Supported Devices
-
-<u>EKB 2.0 comes pre-installed</u> on the following Zebra **devices running Android 8.x Oreo**: 
-
-* **MC33**
-* **PS20**
-* **TC51**
-* **TC51 Healthcare**
-* **TC52**
-* **TC56**
-* **TC56 Healthcare**
-* **TC57**
-* **TC70x**
-* **TC72**
-* **TC75x**
-* **TC77**
-* **VC80x**
-
-See all [supported Zebra devices](../../download). 
-
-#### Added Features
-
-* **Escape key support -** allows the ESC key to be remapped to an ASCII or Unicode character or to an EMOJI symbol or to function normally. [About key remapping](../settings/#remappingkeys).
-* **[Multi-user Mode](../setup/#multiusermode) -** supports deployment of Primary and Secondary Users, the latter of which are blocked from making EKB settings changes on the device. **Supported only on SDM660-platform devices running Android 8.x Oreo**.
-
-### Changes in v1.9
-
-##### Behavior Corrections:
-
-* Auto-capitalization now works properly after navigating away from the alpha keyboard prior to typing.
-* Keyboard pop-ups no longer disappear when swiping from alpha to symbol layouts and back. 
-
------
-
-### Added in v1.8
-
-**NOTICE**: Enterprise Keyboard comes preinstalled on Zebra devices running Android 7.x Nougat and higher. For supported pre-Nougat devices, EKB is added as a LifeGuard patch. See [download page](../../download) for more information. 
-
-#### Supported Devices
-EKB 1.8 adds support for (and comes preinstalled on) the following devices: 
-
-* **WT6000 N**
-
-#### Added Features 
-
-* The **Symbol Key P1 can be remapped** to an ASCII or Unicode character or to an EMOJI symbol.
-* The **Text Correction suggestion bar remains visible** whenever [voice input key](../settings/#preferences) is enabled, even if no corrections are suggested.
-* If voice input is disabled, correction suggestions (if enabled) appear only when typing.
-
-#### Discontinued Features
-
-* **Personalized suggestion and Next Word suggestion** features have been removed <br>([Text Correction suggestion](../settings/#textcorrection) and other Personal Dictionary features are unaffected). 
-
------
-
-### Added in v1.7
-
-**Enterprise Keyboard 1.7 comes pre-installed on Zebra devices running Android 7.x Nougat and higher**. 
-
-#### Supported Devices
-
-EKB 1.7 is certified on the following Zebra devices running Android 7.x Nougat:
-
- * **MC33**
- * **TC51**
- * **TC51 Healthcare**
- * **TC56**
- * **TC56 Healthcare**
- * **TC70x**
- * **TC75x**
- * **VC80x**
-
-For more information and device options, see the [download page](../../download).
-
------
-
-### Added in v1.6
-
-New settings in the [Preferences panel](../settings/#preferences): 
-
-* <b><u>Navigation</u></b> controls the means of navigating between keyboard layouts. "<b>Tabs</b>" mode permits switching layouts by swiping across a layout (to bring up the adjacent one) or tapping directly on the desired layout tab. The tab bar is visible at all times except when word corrections (if enabled) are being displayed. "<b>Keys</b>" mode permits keys to be used for switching layouts. Such keys are typically in the lower-left corner of the layout.
-
-* <b><u>Tab configuration</u></b> allows a user or administrator to enable or disable the numeric, alphanumeric, symbol and/or scan key-layout tab(s), hiding them from view and preventing display of the corresponding layout.
-
-* <b><u>Select prefer tab</u></b> causes the selected tab to appear whenever EKB is invoked. 
-
-<img alt="" style="height:350px" src="../settings/ekb1.6_prefs.png"/>
-**_Navigation and Tab configuration features are supported only on devices with MX 7.1 and higher_**.
-
-See the [EKB 1.6 download page](../../download) for a list of supported devices.  
-
------
-
-### Added in v1.5
-
-**New device support**: 
-* **MC40 KK**
-* **TC55 KK**
-* **TC75x KK, L, M**
-* **TC8000 L**
-* **WT6000 L**
-
------
-
-### Added in v1.4
-
-The downloadable soft keyboard was certified for use on the following Zebra devices running Android 6.x Marshmallow: 
-
-* **ET50**
-* **ET55**
-* **TC51**
-* **TC56**
-* **TC70x**
-* **TC75x**
-
-Support for MX 6.3 and the "Loadable" [Personal Dictionary](../../../../mx/personaldictionarymgr), which can be bulk-loaded from a file of custom terms. 
-
------
-
-### Added in v1.3
-
-Support for the Zebra ET50 and ET55 tablet devices running Android. 
-
-See the [EKB 1.3 download page](../../../1-3/download) for a complete list of supported devices. 
-
------
-
-### Added in v1.2
-
-<b>A Calculator Mode</b> arranges numerical keys for input with financial apps: 
-<img alt="" style="height:350px" src="calculator_mode.png"/>
-<br>
-
-<b>A Telephone Mode</b> arranges numerical keys like a phone:  
-<img alt="" style="height:350px" src="telephone_mode.png"/> 
-<br>
-
-<b>New portrait layouts cater to tablets and wearables</b> such as the ET50/ET55 and WT6000:  
-<img alt="" style="height:250px" src="alpha_portrait.png"/>
-<br>
-<img alt="" style="height:250px" src="numeric_portrait.png"/>
-<br>
-
-<b>A Flick Enable/Disable switch</b> simplifies control of this time-saving input feature:  
-<img alt="" style="height:350px" src="flick_enable-disable.png"/> 
-<br>
-
-<b>Supports [dynamic selection](../settings/#dynamicinputmethod) of text- and scan-tab focus</b> to match the desired input:  
-<img alt="" style="height:350px" src="text_input.png"/> 
-<br>
-<img alt="" style="height:350px" src="scan_input.png"/> 
-<br>
-
------
-
-## How to Get It
-
-Enterprise Keyboard comes pre-installed on supported Zebra devices. 
-
-For more information, see the [download page](../../download) or [contact a Zebra representative or partner](https://www.zebra.com/us/en/about-zebra/contact-zebra.html). 

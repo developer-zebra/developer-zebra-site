@@ -548,7 +548,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">MC40</td>
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br> (requires BSP 03-07-03 with patch 7)</td>
   <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
@@ -650,7 +650,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC75, TC75x</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">TC75, TC75x</td>
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
   <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
@@ -776,7 +776,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>WT6000</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>WT6000</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">WT6000</td>
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>(requires BSP 04-10-03 with LG patch 6)<br><br>Android 7.x (Nougat)<br>(requires BSP 12-29 with LG patch 3)</td>
   <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>

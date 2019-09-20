@@ -544,13 +544,13 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>MC33X</b></td>
   <td class="clsSyntaxCells clsOddRow">MC3300</td>
   <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br><br>Android 8.0 (Oreo)<br> (requires BSP 01-01-49 with LG patch 13)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br><br>Android 5.0 (Lollipop)<br> (requires BSP 03-07-03 with patch 7)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC55</b></td>
@@ -568,7 +568,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
   <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br><br>Android 4.4 (KitKat)<br> (requires BSP 03-20-01 with LG patch 4)</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC9100</b></td>
@@ -580,13 +580,13 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>MC9200</b></td>
   <td class="clsSyntaxCells clsOddRow">MC92N0</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 7.0<br>Windows Embedded Handheld 6.5<br><br>Android 4.4 KitKat<br> (requires BSP 03-13-1006 with LG patch 3)</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC9300</b></td>
   <td class="clsSyntaxCells clsOddRow">MC9300</td>
   <td class="clsSyntaxCells clsOddRow">Android 8.1 (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>Omnii XT15</b></td>
@@ -598,92 +598,92 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>PS20</b></td>
   <td class="clsSyntaxCells clsOddRow">PS20J</td>
   <td class="clsSyntaxCells clsOddRow">Android 8.0 (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
 <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC20</b></td>
   <td class="clsSyntaxCells clsOddRow">TC20, TC20K, TC20 with <br>RFD2000 RFID Sled</td>
   <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>(requires BSP 04-14-30 with LG patch 6)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
 <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC25</b></td>
   <td class="clsSyntaxCells clsOddRow">TC25</td>
   <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>(requires BSP 04-14-30 with LG patch 6)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
 <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC51</b></td>
   <td class="clsSyntaxCells clsOddRow">TC51, TC51HC</td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>(requires BSP 01-21-04 with LG patch 13)<br><br>Android 7.0 (Nougat)<br>(requires BSP 01-01-49 with LG patch 13)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC52</b></td>
   <td class="clsSyntaxCells clsOddRow">TC52, TC52HC</td>
   <td class="clsSyntaxCells clsOddRow">Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
 <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC57</b></td>
   <td class="clsSyntaxCells clsOddRow">TC57</td>
   <td class="clsSyntaxCells clsOddRow">Android 8.0 (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
 <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC56</b></td>
   <td class="clsSyntaxCells clsOddRow">TC56</td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>(requires BSP 01-21-04 with LG patch 13)<br><br>Android 7.0 (Nougat)<br>(requires BSP 01-01-49 with LG patch 13)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
   <td class="clsSyntaxCells clsOddRow">TC70 GA1, TC70 GA2</td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br><br>Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC70x</b></td>
   <td class="clsSyntaxCells clsOddRow">TC70x</td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshamallow)<br>(requires BSP 01-21-04 with LG patch 13)<br><br>Android 7.0 (Nougat)<br>(requires BSP 01-01-49 with LG patch 13)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
 <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC72</b></td>
   <td class="clsSyntaxCells clsOddRow">TC72</td>
   <td class="clsSyntaxCells clsOddRow">Android 8.0 (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC75, TC75x</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br><br>Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC75x</b></td>
   <td class="clsSyntaxCells clsOddRow">TC75x</td>
   <td class="clsSyntaxCells clsOddRow">Android 6.0 (Marshmallow)<br>(requires BSP 01-21-04 with LG patch 13)<br><br>Android 7.0 (Nougat)<br>(requires BSP 01-01-49 with LG patch 13)<br><br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC77</b></td>
   <td class="clsSyntaxCells clsOddRow">TC77</td>
   <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>Android 8.x (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC8000</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br><br>Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC8300</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC8300</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 8.1 (Oreo)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
   <tr>
   <td class="clsSyntaxCells clsOddRow"><b>Workabout Pro 4</b></td>
@@ -746,13 +746,13 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>CC600</b></td>
   <td class="clsSyntaxCells clsOddRow">Customer Concierge (5-inch display)</td>
   <td class="clsSyntaxCells clsOddRow">Android 8.1 Oreo</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
   <tr>
   <td class="clsSyntaxCells clsOddRow"><b>CC6000</b></td>
   <td class="clsSyntaxCells clsOddRow">Customer Concierge (10-inch display)</td>
   <td class="clsSyntaxCells clsOddRow">Android 8.1 Oreo</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MK3100</b></td>
@@ -784,7 +784,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <td class="clsSyntaxCells clsOddRow"><b>WT6000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>WT6000</nobr></td>
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>(requires BSP 04-10-03 with LG patch 6)<br><br>Android 7.x (Nougat)<br>(requires BSP 12-29 with LG patch 3)</td>
-  <td class="clsSyntaxCells clsOddRow">Android Stock Webkit</td>
+  <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"></td>

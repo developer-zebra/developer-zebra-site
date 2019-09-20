@@ -22,7 +22,7 @@ Used to import a DataWedge Profile and/or Config settings files. **A Profile is 
 * If a Profile exists on the device with the same name as one being imported, **the existing Profile will be modified by the imported one**.
 * If the specified folder contains a Profile with the same name as the currently active Profile, the new Profile is imported and its settings are applied immediately.
 * While the `IMPORT_CONFIG` intent is running, the [Auto Import](../../settings/#autoimport) function is disabled. 
-* If a duplicate [Associated App](../setup) exists between a current profile and a profile being imported, the profile being imported will not take into effect. For example, if current profile A is configured with an associated app and that same app is associated with profile B, when importing profile B the import does not take into effect due to the duplication. This similarly applies if an app is listed in the [Disabled App List](../settings) and that same app is an Associated App in a profile being imported - the import does not take into effect and the app remains on the Disabled App List.
+* If a duplicate [Associated App](../gettingstarted) exists between a current profile and a profile being imported, the profile being imported will not take into effect. For example, if current profile A is configured with an associated app and that same app is associated with profile B, when importing profile B the import does not take into effect due to the duplication. This similarly applies if an app is listed in the [Disabled App List](../settings) and that same app is an Associated App in a profile being imported - the import does not take into effect and the app remains on the Disabled App List.
 
 **See also**: 
 

@@ -129,7 +129,7 @@ Setting up Advanced Data Formatting is done in three basic steps:
 2. Define Criteria to activate the Rule
 3. Define the Action(s) to be executed by the Rule
 
-These steps are all carried out within the Advanced Data Formatting Process Plug-in, which is part of every DataWedge Output Plug-in. For further details, see the Plug-ins section of the [DataWedge Setup Guide](../setup). 
+These steps are all carried out within the Advanced Data Formatting Process Plug-in, which is part of every DataWedge Output Plug-in. For further details, see [DataWedge Profiles](../profiles). 
 
 **To Create an ADF Rule**: 
 

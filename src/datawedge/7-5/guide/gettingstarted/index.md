@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Get Started
 layout: guide.html
 product: DataWedge
 productversion: '7.5'
@@ -47,6 +47,23 @@ For example, "App A" might require a TAB to be sent after each dataset is passed
 **[Auto Import](../settings/#autoimport) –** provides the ability to automatically load pre-configured profiles or configuration files in DataWedge. This can be used for device remote deployment using tools such as third-party Enterprise Mobility Management (EMM) systems. DataWedge monitors a particular folder for the profile or configuration file. If a profile or configuration file is found, it imports the file to replace any existing configuration or profile.  
 
 **[Mass Deployment](../settings/#massdeployment) -** DataWedge profiles and settings can be deployed to multiple devices either manually or with an EMM (Enterprise Mobility Management) software. The exported config file or profile can be automatically imported when placed in the `/enterprise/device/settings/datawedge/autoimport` directory.  
+
+**[Create a Profile and Associate App with Profile](../createprofile) -** The basic steps for creating a Profile and associating an app with the profile on the device are shown below. For most scenarios, a version of this process must be used for every app that will call on DataWedge for scanning services. To enable DataWedge scanning services for an app:
+
+1. **Install the app** that will use DataWedge for scanning. 
+2. **Start DataWedge** app and navigate to the Profiles list (if not shown by default).  
+3. Tap on the Profiles screen's "hamburger" menu and select **New profile**. 
+4. **Enter a name for the Profile and tap OK**. The new Profile appears in the Profiles list. 
+5. Tap on the new profile.
+6. Select **Associated Apps** from the Applications section.
+7. In the Hamburger menu, select **New app/activity**. A list of installed apps appears. 
+8. Select your app's package name (scrolling down, if necessary).
+9. Tap the asterisk (*) to associate all of your app's activities with DataWedge. 
+10. Tap the device's Back button until the new Profile's Settings screen appears.
+11. Confirm that the "Profile enabled" checkbox is checked. 
+12. As needed, **confirm that Barcode Input and Keystroke Output are enabled**. <br>
+
+The app now uses DataWedge for barcode data acquisition. Test and adjust input, processing (data formatting) and output parameters as necessary.
 
 
 ## DataWedge Programming
@@ -107,7 +124,7 @@ The following information provides guidance and best practices for DataWedge app
 * When using [DataWedge intent APIs](../api/overview) to **query DataWedge for information** (such as Get Active Profile), the app must register to receive the result with a filter that identifies the action and category of the result intent. 
 
 ###Profiles 
-* **Existence of duplicate Associated Apps when importing profiles:** If a duplicate [Associated App](../setup) exists between a current profile and a profile being imported, the profile being imported will not take into effect. For example, if current profile A is configured with an associated app and that same app is associated with profile B, when importing profile B the import does not take into effect due to the duplication. This similarly applies if an app is listed in the [Disabled App List](../settings) and that same app is an Associated App in a profile being imported - the import does not take into effect and the app remains on the Disabled App List. 
+* **Existence of duplicate Associated Apps when importing profiles:** If a duplicate [Associated App](../gettingstarted) exists between a current profile and a profile being imported, the profile being imported will not take into effect. For example, if current profile A is configured with an associated app and that same app is associated with profile B, when importing profile B the import does not take into effect due to the duplication. This similarly applies if an app is listed in the [Disabled App List](../settings) and that same app is an Associated App in a profile being imported - the import does not take into effect and the app remains on the Disabled App List. 
 * **Activity/app association with profiles:** A single profile can be associated with one or more activities or apps.  However, an activity or app can be associated with only one profile. If there is a requirement to associate an activity or app to more than one profile, this can be addressed with SWITCH_TO_PROFILE, which does not specify any associated apps. <br>
 The following example discusses the use of SWITCH_TO_PROFILE with SCANNER_INPUT_PLUGIN with two activities: Activity A launches and uses Switch to Profile API to switch to ProfileA, which SCANNER_INPUT_PLUGIN is enabled, then at some point it disables the scanner plug-in. Activity B is launched, associated with ProfileB. DataWedge switches to ProfileB. When activity A comes back to the foreground from the onResume method, activity A needs to use Switch to Profile to switch back to ProfileA, then use the same API intent again to disable the scanner plug-in, to return back to the state it was in. Reminder: Use of this API changes only the runtime status of the scanner; it does not make persistent changes to the Profile. The above assumes that ProfileA is not associated with any applications/activities, therefore when focus switches back to activity A, DataWedge will not automatically switch to ProfileA - therefore activity A must switch back to ProfileA in its onResume method. Because DataWedge will automatically switch Profile when an activity is paused, it is recommended that this API function be called from the onResume method of the activity.
 
@@ -127,9 +144,9 @@ As of writing, the following [DataWedge sample applications](../samples) are ava
 -------
 
 Related information: 
-* [DataWedge Profiles](../profiles) 
-* [DataWedge Profile Architecture](../overview) – app associations, built-in profiles, hidden profiles 
-* [Creating DataWedge Profiles](../createprofile) 
+* [DataWedge Profiles](../profiles) - links and details for all DataWedge Plug-ins
+* [DataWedge Profile Architecture](../overview) – explains how DataWedge uses Profiles and Plug-ins
+* [Create a DataWedge Profile](../createprofile) 
 * [Using DataWedge APIs](../api/overview)
 * [Using Intents](../output/intent) - A brief primer on intents and how to configure DataWedge 
 * [DataWedge APIs](../api)

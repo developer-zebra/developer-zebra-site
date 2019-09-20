@@ -16,7 +16,7 @@ DataWedge features can be demonstrated and tested using:
 
 DWDemo shows how data is acquired by an application using the DataWedge service. A DataWedge Profile called "DWDemo" is installed along with DataWedge and associated with the demo app. Disabled by default, the Profile can be modified as needed for testing and demo purposes. Once the demo Profile is enabled (see below), pressing the app's Scan button or a device trigger initiates a barcode scan and decoded data is displayed on the screen. The DWDemo app supports scanning with the imager, camera, Bluetooth device or a magstripe reader (MSR), if one is connected. 
 
-This guide requires a working knowledge of DataWedge Profiles. For more information about Profile settings, see the [DataWedge Setup Guide](../setup).  
+This guide requires a working knowledge of [DataWedge Profiles](../profiles). 
 
 <img style="height:350px" src="DWDemo-icon-in-launcher.png"/>
 _The DWDemo app as it appears in the Android App Drawer_. 
@@ -25,7 +25,7 @@ _The DWDemo app as it appears in the Android App Drawer_.
 ------
 
 ####Device Selector
-The DWDemo app provides a menu of available scanning input devices, making it easy to switch from one to another for testing purposes. This and other DataWedge settings and preferences also can be configured in the DWDemo Profile, shown below. For information about Profile settings, see the [DataWedge Setup Guide](../setup).  
+The DWDemo app provides a menu of available scanning input devices, making it easy to switch from one to another for testing purposes. This and other DataWedge settings and preferences also can be configured in the DWDemo Profile, shown below. For information about Profile settings, see the [Manage Profiles](../createprofile) section.  
 
 <img style="height:350px" src="02_dwdemo_device_selector.png"/>
 <br>

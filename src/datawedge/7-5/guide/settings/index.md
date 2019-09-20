@@ -203,7 +203,7 @@ While the Profile importing _process_ is similar to that of the Configuration fi
 
 **Importing a Config file overwrites all previous DataWedge settings and Profiles**. Importing a Profile simply adds the imported Profile to the list of available Profiles on the device. If a Profile exists on the device with the same name as the one being imported, the existing Profile will be modified by the imported one.
 
-**Duplicate Associated Apps when importing profiles**. If a duplicate [Associated App](../setup) exists between a current profile and a profile being imported, the profile being imported will not take into effect. For example, if current profile A is configured with an associated app and that same app is associated with profile B, when importing profile B the import does not take into effect due to the duplication.
+**Duplicate Associated Apps when importing profiles**. If a duplicate [Associated App](../gettingstarted) exists between a current profile and a profile being imported, the profile being imported will not take into effect. For example, if current profile A is configured with an associated app and that same app is associated with profile B, when importing profile B the import does not take into effect due to the duplication.
 
 This similarly applies if an app is listed in the [Disabled App List](../settings) and that same app is an Associated App in a profile being imported - the import does not take into effect and the app remains on the Disabled App List.
 

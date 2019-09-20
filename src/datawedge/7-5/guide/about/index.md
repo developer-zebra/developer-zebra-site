@@ -13,14 +13,29 @@ There are two approaches to capture data:
 * **DataWedge “zero-code” approach** eliminates the need for any programming or app modification by capturing and processing data with the use of [DataWedge profiles](../profiles) configured from the user interface.
 * **[DataWedge APIs](../api)** provide the ability to programmatically control, modify and query the DataWedge configuration settings and operations through Android intents. This allows new or existing Android apps to be easily modified to acquire data using Zebra devices without concern of the underlying hardware. 
 
-Follow the [Getting Started](../gettingstarted) guide, which discusses both approaches and includes a programmer's guide on common use cases and best practices.
+Follow the [Get Started](../gettingstarted) guide, which discusses both approaches and includes a programmer's guide on common use cases and best practices.
+
+**[Profiles and Plug-ins](../profiles)** form the basis of most DataWedge functionality. Profiles include all the information about how DataWedge should behave when providing scanning services for a particular application. Much of that information comes from Plug-ins, which determine how the data will be input, processed and output.
+
+Each Profile generally contains four elements: 
+* **An Input Plug-in -** to determine how data will be acquired (i.e. a barcode scanner)
+* **A Process Plug-in -** to specify how the acquired data should be manipulated 
+* **An Output Plug-in -** to control the passing of data to an application
+* **An associated application -** (or activity) with which to link DataWedge actions
+
+When associated with an app, DataWedge can be invoked to scan and acquire the data, format or append it in a specified way, and pass it to the associated app when the app comes to the foreground. DataWedge also includes Profile0, which works with any unassociated application that comes to the foreground. Profile0 contains baseline settings that can be tailored to suit individual needs. This allows DataWedge to be used out of the box with little or no setup. 
+ 
+**Important:** 
+* **Control of barcode scanning hardware is exclusive**. When DataWedge is active, Scanner and Barcode APIs of apps such as Enterprise Browser and others will be inoperative. Likewise, when an app such as Enterprise Browser controls the scanning hardware, other apps (including DataWedge) are locked out. It is therefore important to understand how to take control of a device's scanner hardware and, if necessary, release it to other apps when scanning is complete. For more information, see the section on **[disabling DataWedge](../settings/#disabledatawedge)**. 
+* **Delay in scanning after a device reboot**. DataWedge requires a brief period of time to initialize after device reboot due to waiting for a response to be received from the initialization of the scanning subsystem, causing scanning to be inactive from DataWedge during this time frame.
 
 <!--
 DataWedge provides “zero-code” barcode scanning and processing services for Zebra devices running Android with the use of profiles. Included with every Zebra device, DataWedge enables all apps on the device (whether stock or added later) to acquire scanned data without using scanner APIs directly. DataWedge can be easily configured to automatically provide scanning services whenever a particular app is launched; to use a particular scanner, reader or other sensor; and to manipulate acquired data according to simple options or complex rules. 
 
 When programmatic control is required, [DataWedge APIs](../api) provide the ability to control, modify and query the DataWedge configuration settings and operations through Android intents. This allows new or existing Android apps to be easily modified with an organization's current development resources to acquire data using Zebra devices. 
--->
+
 To learn more about DataWedge APIs, read [DataWedge APIs - Benefits & Usage Scenarios](https://developer.zebra.com/community/home/blog/2017/06/27/datawedge-apis-benefits-challenges) by Zebra engineer Darryn Campbell. 
+-->
 
 -----
 
@@ -31,7 +46,7 @@ DataWedge provides the following primary functions and options (feature availabi
 #### Data Capture
 * Scan and process all [major barcode symbologies](../input/barcode/#decoderselection)
 * Use existing apps to [acquire barcodes](../input/barcode), images, text, phone numbers, mag-stripe and other data
-* Set DataWedge to [acquire scanned data for one or multiple apps](../setup)
+* Set DataWedge to [acquire scanned data for one or multiple apps](../gettingstarted)
 * Read RFID (radio-frequency identification) tags with [RFID Input](../input/rfid)
 * Use voice capture to acquire data with [Voice Input](../input/voice)
 * Use a [magnetic stripe reader (MSR)](../input/msr) to capture data
@@ -59,7 +74,7 @@ DataWedge provides the following primary functions and options (feature availabi
 
 **Note**: Availability and operation of DataWedge features varies by device and operating system (which determine the DataWedge version installed on the device). 
 
-> Ready to get started? Go to the [DataWedge Setup guide](../setup).
+> Ready to get started? Go to the [DataWedge Get Started guide](../gettingstarted).
 
 -----
 
@@ -263,5 +278,7 @@ _The Zebra Support Central site showing search results for the search term "inte
 
 Related Guides: 
 
-* [DataWedge Setup Guide](../setup)
+* [DataWedge Get Started guide](../gettingstarted)
 * [DataWedge Demo app](../samples/dwdemo)
+* [Profile Overview](../overview) 
+* [Profiles/Plug-Ins listing](../profiles)

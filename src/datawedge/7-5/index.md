@@ -7,18 +7,18 @@ menu:
   items:
     - title: About
       url: /datawedge/7-5/guide/about
-    - title: Getting Started
+    - title: Get Started
       url: /datawedge/7-5/guide/gettingstarted
-    - title: Setup
-      url: /datawedge/7-5/guide/setup
     - title: Profiles
       url: /datawedge/7-5/guide/profiles
-    - title: DataWedge Settings
+    - title: DW Settings
       url: /datawedge/7-5/guide/settings
     - title: APIs
       url: /datawedge/7-5/guide/api
-    - title: Demo App & Samples
+    - title: Demo & Samples
       url: /datawedge/7-5/guide/samples
+    - title: Remote Admin
+      url: /datawedge/7-5/guide/admin
     - icon: fa fa-graduation-cap
       url: https://supportcommunity.zebra.com/s/global-search/datawedge?language=en_US
     - icon: fa fa-search

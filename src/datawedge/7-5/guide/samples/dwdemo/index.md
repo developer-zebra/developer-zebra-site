@@ -53,7 +53,7 @@ DWDemo menu settings (from left to right):
 DataWedge settings and preferences can be configured in the DWDemo Profile, shown below. 
 
 ##Using DWDemo
-This guide requires a working knowledge of DataWedge Profiles. For more information about Profile settings, see the [DataWedge Setup Guide](../../setup). 
+This guide requires a working knowledge of [DataWedge Profiles](../../profiles). 
 
 **To activate scanning in the DWDemo app, the "Profile enabled" checkbox must be checked** (as shown) in the associated DWDemo Profile. Additional settings can be changed as required. 
   ![img](dwdemo_profile.png) 
@@ -76,7 +76,7 @@ By making changes in the DWDemo Profile, the associated DWDemo app can be used t
 
 **Related guides**:
 
-* [DataWedge Setup Guide](../../setup) for profile settings
+* [DataWedge Getting Started](../../profiles) for information on getting started
 * [DataWedge Profiles](../../profiles) for information on DataWedge profiles 
 * [Managing Profiles](../../createprofile) to change profile settings
 

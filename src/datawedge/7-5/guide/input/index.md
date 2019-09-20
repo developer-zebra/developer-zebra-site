@@ -180,7 +180,7 @@ cellspacing="0" cellpadding="4">
 <br>
 
 ## Decoder Parameters
-Editable parameters of individual Decoders are explained below. **Note: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section**. For further instructions about creating and editing DataWedge Profiles, please see "Create a Profile" in the [Setup Guide](../setup).
+Editable parameters of individual Decoders are explained below. **Note: Decoders that do not have configurable parameters do not appear in the Decoder Parameters section**. For further instructions about creating and editing DataWedge Profiles, please see "Create a Profile" in [Manage Profiles](../createprofile).
 
 ### Reduced Quiet Zone 
 The quiet zone is the blank space on either side of a bar code that indicates where the symbology begins and ends, and is intended to prevent the reader from scanning irrelevant information. When margin-less decoders are used with Reduced Quiet Zone Level reader parameters, the decoders behave according to the following table: 

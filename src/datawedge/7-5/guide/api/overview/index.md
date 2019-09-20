@@ -19,7 +19,7 @@ In DataWedge versions prior to 6.2, applications access DataWedge APIs by broadc
 -----
 
 ### Requirements
-The use of DataWedge APIs requires experience with Java programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Setup Guide](../../setup) and the [Architecture Overview](../../overview). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
+The use of DataWedge APIs requires experience with Java programming and familiarity with [Android Intents](https://developer.android.com/reference/android/content/Intent.html). It also requires knowledge of DataWedge usage, features and terminology. For more information about DataWedge, see the DataWedge [Getting Started Guide](../../gettingstarted) and the [Architecture Overview](../../overview). It also might be helpful to read the DataWedge section of the Integrator Guide included with Zebra devices.
 
 ### Sending Intents
 The new syntax defined in DataWedge 6.2 permits multiple DataWedge API calls as extras on a single intent action. The syntax is as follows:

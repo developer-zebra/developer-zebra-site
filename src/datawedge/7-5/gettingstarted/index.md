@@ -17,7 +17,7 @@ content-items:
     level: 4
     title: Basic Setup
     text: Profiles and Plug-ins are the basis of all DataWedge functionality. This guide explains their basic concepts and how to activate DataWedge for any app. 
-    url: /datawedge/7-5/guide/setup
+    url: /datawedge/7-5/guide
   - type: section
     level: 4
     title: Decoders

@@ -10,7 +10,7 @@ menu:
     - title: Getting Started
       url: /datawedge/7-5/gettingstarted
     - title: Profiles
-      url: /datawedge/7-5/guide/setup
+      url: /datawedge/7-5/guide/profiles
     - title: Parameters
       url: /datawedge/7-5/guide/decoders
     - title: IP Output

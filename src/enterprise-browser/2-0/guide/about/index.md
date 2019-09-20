@@ -542,14 +542,14 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  </tr>
 <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC33X</b></td>
-  <td class="clsSyntaxCells clsOddRow">MC3300</td>
+  <td class="clsSyntaxCells clsOddRow">MC3300, MC3300R</td>
   <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br><br>Android 8.0 (Oreo)<br> (requires BSP 01-01-49 with LG patch 13)</td>
   <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC40</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>MC40</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br><br>Android 5.0 (Lollipop)<br> (requires BSP 03-07-03 with patch 7)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br> (requires BSP 03-07-03 with patch 7)</td>
   <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
@@ -567,14 +567,8 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC67</b></td>
   <td class="clsSyntaxCells clsOddRow">MC67</td>
-  <td class="clsSyntaxCells clsOddRow">Windows Embedded Handheld 6.5<br><br>Android 4.4 (KitKat)<br> (requires BSP 03-20-01 with LG patch 4)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br> (requires BSP 03-20-01 with LG patch 4)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit, Chromium WebView</td>
- </tr>
- <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>MC9100</b></td>
-  <td class="clsSyntaxCells clsOddRow">MC9190-G, MC9190Z</td>
-  <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 Professional<br>Windows Embedded Handheld 6.5</td>
-  <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>MC9200</b></td>
@@ -596,7 +590,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>PS20</b></td>
-  <td class="clsSyntaxCells clsOddRow">PS20J</td>
+  <td class="clsSyntaxCells clsOddRow">PS20J, PS20J Plus/Base</td>
   <td class="clsSyntaxCells clsOddRow">Android 8.0 (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>

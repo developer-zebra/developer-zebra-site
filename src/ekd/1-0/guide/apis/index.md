@@ -15,12 +15,12 @@ Using EKB APIs requires experience with Java programming, familiarity with Andro
 ### About the APIs
 Enterprise Keyboard APIs allow the following functions: 
 
+* **ENABLE** (true/false) enables or disables the keyboard 
 * **GET** can return lists of: 
  * Available keyboard layouts
  * Current keyboard layout group and current layout name
 * **SET** switches to the specified keyboard layout
 * **SHOW** displays the specified layout on the device
-* **ENABLE** (true/false) enables or disables the keyboard 
 * **RESET** Resets EKB layouts and enables Enterprise Keyboard (if disabled)
 
 -----
@@ -106,10 +106,50 @@ For intents that query EKB for information (such as `GET_AVAILABLE_LAYOUTS`), th
 
 ## Sample Code
 
-### Get available keyboard layouts
+### ENABLE
+Used to enable or disable the keyboard. 
+
+**Parameter values**:
+* **TRUE**: Keyboard enabled and shown whenever device user taps on an input field.
+* **FALSE**: Keyboard is disabled and does not show even after using SHOW API or tapping on an input area.
+
+Once keyboard is enabled/disabled, requested application will receive a response intent having `RESULT_CODE` and `RESULT_MESSAGE`.
+
+##### Show keyboard:
+	:::java
+			Intent intent = new Intent();
+		intent.setAction("com.symbol.ekb.api.ACTION_UPDATE");
+			intent.setPackage("com.symbol.mxmf.csp.enterprisekeyboard");
+		intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+
+	// needToEnable is a Boolean object; it can be true or false:
+
+		intent.putExtra("ENABLE", needToEnable);	
+
+	//  Intent sent back with status (via explicit broadcast)
+
+	Intent responseIntent = new Intent(this, MyBroadcastReceiver.class);
+	PendingIntent piResponse = PendingIntent.getBroadcast(getApplicationContext(), requestCode, responseIntent, flags);
+	intent.putExtra("CALLBACK_RESPONSE", piResponse);
+	sendBroadcast(intent);
+	 
+
+##### Receive the result:
+	::java
+		@Override
+	public void onReceive(Context context, Intent intent) {
+	    Toast.makeText(context, "onReceived", Toast.LENGTH_SHORT).show();
+	    Bundle mBundle = intent.getExtras();
+	    String result = mBundle.getString("RESULT_CODE");
+	    String msg = mBundle.getString("RESULT_MESSAGE");    
+	}
+
+-----
+
+### GET (available layouts)
 Returns a list of custom enterprise keyboard layouts currently available in the device.
 
-##### Send the intent to get available keyboard layouts:
+##### Get available keyboard layouts:
 
 	:::java
 		Intent intent = new Intent();
@@ -152,7 +192,7 @@ Returns a list of custom enterprise keyboard layouts currently available in the 
 
 -----
 
-### Get current layout
+### GET (current layout)
 
 This gets the current keyboard layout group and the current keyboard layout name. Returns the currently selected keyboard layout group and current keyboard layout name as set by Enterprise Keyboard.
 
@@ -189,7 +229,7 @@ This gets the current keyboard layout group and the current keyboard layout name
 	}
 
 
-### Set keyboard layout
+### SET (keyboard layout)
 Sets the custom layout in Enterprise Keyboard. While sending the intent to set the keyboard layout, developer must add `CURRENT_LAYOUT_GROUP` and `CURRENT_LAYOUT_NAME` params as extras.
 
 Once keyboard layout is set in Enterprise Keyboard, requested application receives a response intent with `RESULT_CODE` and `RESULT_MESSAGE` extras.
@@ -226,15 +266,14 @@ Once keyboard layout is set in Enterprise Keyboard, requested application receiv
 
 -----
 
-### ENABLE
-Used to enable or disable the keyboard. 
+### SHOW
+Used to display the specified keyboard layout. 
 
 **Parameter values**:
-* **TRUE**: Keyboard enabled and shown whenever device user taps on an input field.
-* **FALSE**: Keyboard is disabled and does not show even after using SHOW API or tapping on an input area.
 
-Once keyboard is enabled/disabled, requested application will receive a response intent having `RESULT_CODE` and `RESULT_MESSAGE`.
+`INFO TO COME FROM ENGINEERING`
 
+<!-- 
 ##### Show keyboard:
 	:::java
 			Intent intent = new Intent();
@@ -263,7 +302,8 @@ Once keyboard is enabled/disabled, requested application will receive a response
 	    String result = mBundle.getString("RESULT_CODE");
 	    String msg = mBundle.getString("RESULT_MESSAGE");    
 	}
-
+ -->
+ 
 -----
 
 ### RESET

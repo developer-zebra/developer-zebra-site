@@ -9,7 +9,7 @@ created: 9/9/2019
 
 ## Overview
 
-Each Enterprise Keyboard Designer project contains one or more key Layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid Layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. `myTC75Layout.encrypted`). 
+Each Enterprise Keyboard Designer project contains one or more key layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. `myTC75Layout.encrypted`). 
 
 -----
 
@@ -28,7 +28,7 @@ Each Enterprise Keyboard Designer project contains one or more key Layouts, whic
  <img alt="" style="height:367px" src="ekd_select_device.png"/>
  <br>
 
-**When the project name is displayed in the upper-left corner of the main designer screen (as below), EKD is ready to create custom Layouts**.
+**When the project name is displayed in the upper-left corner of the main designer screen (as below), EKD is ready to create custom layouts**.
 
 > **Note**: Once a project is created, its target device and other project-level settings cannot be changed.
 
@@ -45,7 +45,7 @@ For a demo of the steps above, see the "createProject.mp4” video.
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
-2. **Click the [+] icon to create a new Layout** or select an existing Layout to edit: <br>
+2. **Click the [+] icon to create a new layout** or select an existing layout to edit: <br>
  <img alt="" style="height:350px" src="ekd_Layout_names.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
@@ -55,41 +55,41 @@ For a demo of the steps above, see the "createProject.mp4” video.
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
-4. **Enter a Layout name and press ENTER**. **`NOTE:`** Each Layout name within a project must be unique and contain only alpha-numeric characters. <br>The name of the current Layout appears in the upper-left corner of the screen: 
+4. **Enter a layout name and press ENTER**. **`NOTE:`** Each layout name within a project must be unique and contain only alpha-numeric characters. <br>The name of the current layout appears in the upper-left corner of the screen: 
  <img alt="" style="height:350px" src="ekd_Layout_name_location.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
-5. With the mouse pointer on the simulated device screen, **drag to create a Layout background** in approximately the desired position on the simulator: 
+5. With the mouse pointer on the simulated device screen, **drag to create a layout background** in approximately the desired position on the simulator: 
  <img alt="" style="height:350px" src="ekd_drag_Layout.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
-6. **Drag the Layout on the device screen** to reposition and resize as needed:  
+6. **Drag the layout on the device screen** to reposition and resize as needed:  
  <img alt="" style="height:350px" src="ekd_resize_Layout.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
-7. **Drag the desired key(s) from the key panel** (at right) to the Layout, dragging to resize and/or reposition as needed:
+7. **Drag the desired key(s) from the key panel** (at right) to the layout, dragging to resize and/or reposition as needed:
  <img alt="" style="height:350px" src="ekd_drag_buttons.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
- **To move a key**, drag it within the key Layout background or double-click it (to select) and move it using the arrow keys on the host computer keyboard.<br>
- **To resize a key**, drag the key's right and bottom edges within the key Layout background or select it and edit the "Layout Properties" fields in the Button Properties panel.
+ **To move a key**, drag it within the key layout background or double-click it (to select) and move it using the arrow keys on the host computer keyboard.<br>
+ **To resize a key**, drag the key's right and bottom edges within the key layout background or select it and edit the "layout Properties" fields in the Button Properties panel.
  <br>
  <br>
- **Alternatively, use the Grid Layout option (checkbox)** to automatically fill the Layout with a matrix of equally spaced buttons based on the specified number of columns and rows. The new Layout is placed along the left and bottom edges of the simulator and can be resized as in Step 5, if needed.<br>**WARNING**: Checking this box clears the current Layout, if any. 
+ **Alternatively, use the Grid layout option (checkbox)** to automatically fill the layout with a matrix of equally spaced buttons based on the specified number of columns and rows. The new layout is placed along the left and bottom edges of the simulator and can be resized as in Step 5, if needed.<br>**WARNING**: Checking this box clears the current layout, if any. 
   <img alt="" style="height:350px" src="ekd_grid_Layout.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br> 
-8. Click on the Layout and/or key(s) to **modify properties using the [Button and Layout Properties](#properties) panels**: 
+8. Click on the layout and/or key(s) to **modify properties using the [Button and Layout Properties](#properties) panels**: 
  <img alt="" style="height:350px" src="ekd_properties_panels.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
 9. **Click "Save Layout" or "Save Grid Layout" button** often to preserve settings. 
-10. **Repeat Steps 7&ndash;9** until the Layout is configured as desired. 
+10. **Repeat Steps 7&ndash;9** until the layout is configured as desired. 
 11. **Click "Save Project" to create a project file for deployment**.
 <br>
 
@@ -103,9 +103,9 @@ For a demo of the steps above, see the "createProject.mp4” video.
 
 **The Layout Properties** section of the Button Properties panel refers to the left and top offsets and the width and height of the selected button. All measurements are in pixels. 
 
-**If the Layout was created using drag-and-drop**, a key must be selected from the key panel and dropped into the Layout. Double-click the key to change its default settings.
+**If the layout was created using drag-and-drop**, a key must be selected from the key panel and dropped into the layout. Double-click the key to change its default settings.
 
-**If the Layout was created using Grid Layout**, double-click on any box in the grid to configure its properties.
+**If the layout was created using Grid Layout**, double-click on any box in the grid to configure its properties.
 
 #### Layout Properties (within Button Properties panel)
 
@@ -159,9 +159,9 @@ For a demo of the steps above, see the "createProject.mp4” video.
 
 **ColorPressed -** Used to specify the color of the selected key when the key is pressed. Changes appear on the device simulator when the key is pressed. 
 
-**Image -** Used to specify an image to fill the space of the selected key. After selection, the image appears immediately on the device simulator. When the Layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats. 
+**Image -** Used to specify an image to fill the space of the selected key. After selection, the image appears immediately on the device simulator. When the layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats. 
 
-**ImagePressed -** Used to specify an image to be displayed when the button is pressed. After selection, the image appears on the device simulator when the button is pressed. When the Layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats.
+**ImagePressed -** Used to specify an image to be displayed when the button is pressed. After selection, the image appears on the device simulator when the button is pressed. When the layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats.
 
 -----
 
@@ -181,13 +181,13 @@ For a demo of the steps above, see the "createProject.mp4” video.
 
 **Top -** Layout position offset (in pixels) from the top edge of the screen.
 
-**Width -** Overall width (in pixels) of the Layout.
+**Width -** Overall width (in pixels) of the layout.
 
-**Height -** Overall height (in pixels) of the Layout.
+**Height -** Overall height (in pixels) of the layout.
 
-**Rows -** Number of rows in the Layout, divided equally across the specified Height.
+**Rows -** Number of rows in the layout, divided equally across the specified Height.
 
-**Columns -** Number of columns in the Layout, divided equally across the specified Width. 
+**Columns -** Number of columns in the layout, divided equally across the specified Width. 
 
 **Margin -** Distance (in pixels) between Grid boxes, each of which stores one Button.
 
@@ -195,13 +195,13 @@ For a demo of the steps above, see the "createProject.mp4” video.
 * **Once a grid is created, the number of its columns and rows cannot be changed**.  
 * **Layout drag-and-drop and resize features are disabled** when using Grid Layout. 
 * **Button drag and resize features are enabled** only after saving the Grid Layout.
-* Style Properties can be configured when using drag-and-drop or grid Layout functions. 
+* Style Properties can be configured when using drag-and-drop or grid layout functions. 
 
 -----
 
 #### Style Properties
 
-**Background Color -** Specifies the color of the Key Layout. Changes appear in the Layout immediately after clicking OK in the color picker. 
+**Background Color -** Specifies the color of the Key Layout. Changes appear in the layout immediately after clicking OK in the color picker. 
 
 **Transparency -** Used to select of the transparency from 0 (opaque) to 100 (fully transparent) of the Key Layout Background using a slider. Changes appear immediately.
 
@@ -209,9 +209,9 @@ For a demo of the steps above, see the "createProject.mp4” video.
 
 #### Simulator Properties
 
-**Status Bar -** Used to show/hide the Status bar (which contains notifications and system icons) at the top of the device simulator screen. The Layout “Top” coordinate changes based on this setting, which depends on status bar setting configured at the application level. **Must be hidden for full-screen applications**.
+**Status Bar -** Used to show/hide the Status bar (which contains notifications and system icons) at the top of the device simulator screen. The layout “Top” coordinate changes based on this setting, which depends on status bar setting configured at the application level. **Must be hidden for full-screen applications**.
 
-**System Bar -** Used to show/hide the System (navigation) bar at the bottom of the device simulator screen. The Layout “Top” coordinate changes based on this setting, which depends on System bar setting configured at the application level. **Must be hidden for full-screen applications**. 
+**System Bar -** Used to show/hide the System (navigation) bar at the bottom of the device simulator screen. The layout “Top” coordinate changes based on this setting, which depends on System bar setting configured at the application level. **Must be hidden for full-screen applications**. 
 
 -----
 
@@ -225,30 +225,30 @@ For a demo of the steps above, see the "createProject.mp4” video.
 * To capture an upper-case "A" the action should be “keyincaps-29”
 * To capture a Unicode, the action should be “uc-003C”
 
-<b>Switch Layouts with taps or swipes</b> across the keypad:  
+<b>Switch layouts with taps or swipes</b> across the keypad:  
 <img alt="" style="height:150px" src="ekd_07.png"/>
 
-**Action to Switch Layout -** Use the key-value pairs below to switch to a specific Layout when using Zebra Enterprise Keyboard.
+**Action to Switch Layout -** Use the key-value pairs below to switch to a specific layout when using Zebra Enterprise Keyboard.
 
 -----
 
 #### Predefined commands
 
-**switch-abc -** switches to the default “abc” (alphabetic) Layout
+**switch-abc -** switches to the default “abc” (alphabetic) layout
 
-**switch-123 -** switches to the “123” (numeric) Layout
+**switch-123 -** switches to the “123” (numeric) layout
 
-**switch-scan -** switches to the “scan” (scanning button) Layout
+**switch-scan -** switches to the “scan” (scanning button) layout
 
-**switch-&#35;&#42;&#47; -** switches to the “&#35;&#42;&#47;” (symbolic) Layout
+**switch-&#35;&#42;&#47; -** switches to the “&#35;&#42;&#47;” (symbolic) layout
 
-**switch- [LayoutName] -** switches to the named custom Layout
+**switch- [LayoutName] -** switches to the named custom layout
 
 -----
 
 #### Layout Usage Notes 	
-* The Layout names shown above (“abc," “123," “scan” and “&#35;&#42;&#47;”) are reserved for default Enterprise Keyboard Layouts and cannot be used as custom Layout names. 
-* **Switching Layouts is supported on Enterprise Keyboard only**.
+* The layout names shown above (“abc," “123," “scan” and “&#35;&#42;&#47;”) are reserved for default Enterprise Keyboard layouts and cannot be used as custom layout names. 
+* **Switching layouts is supported on Enterprise Keyboard only**.
 * The following reserved names must not be used in Model Input fields (PressAction, LongPressAction, etc.) or in KeyEvents: 
  * Scantrigger
  * deviceInfo
@@ -266,23 +266,23 @@ For a demo of the steps above, see the "createProject.mp4” video.
 
 #### To Save Layout:
 
-To save the current Layout data, click the “Save Layout” button in the lower-right corner of the main designer screen or the “Save Grid Layout” button in the Layout Properties panel.
+To save the current layout data, click the “Save Layout” button in the lower-right corner of the main designer screen or the “Save Grid Layout” button in the Layout Properties panel.
 
 #### To Save Project:
 
-To save the current keyboard Layout project, click the “Save Project” button. A dialog appears indicating the location of the saved “`.encrypted`” file. Take note of the save directory for later reference. 
+To save the current keyboard layout project, click the “Save Project” button. A dialog appears indicating the location of the saved “`.encrypted`” file. Take note of the save directory for later reference. 
 
 #### To Delete a Key:
 
-1. In the Layout that contains the key to be deleted, **double-click on the the key to be deleted**; the selected key is surrounded by a dotted red line. 
+1. In the layout that contains the key to be deleted, **double-click on the the key to be deleted**; the selected key is surrounded by a dotted red line. 
 3. **Press the “Delete” key on the host computer’s keyboard**. A confirmation dialog appears. 
 4. **Click “Yes”** on the confirmation dialog to delete. 
 
 #### To Clear a Layout: 
-1. In the Layout to be cleared, **Click the red “Clear Layout” button**. 
-3. **Click “Yes”** to confirm the deletion of all Layout elements. 
+1. In the layout to be cleared, **Click the red “Clear Layout” button**. 
+3. **Click “Yes”** to confirm the deletion of all layout elements. 
 
-> Data for custom Layout(s) and key-value assignment(s) is stored in the keyboard definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom Layouts through application intents. Layouts are available immediately upon deployment.<br> **Deployment instructions follow below**. 
+> Data for custom layout(s) and key-value assignment(s) is stored in the keyboard definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. Layouts are available immediately upon deployment.<br> **Deployment instructions follow below**. 
 
 -----
 
@@ -301,7 +301,7 @@ To save the current keyboard Layout project, click the “Save Project” button
 3. Push definition file to the device folder:<br>
  `/enterprise/device/settings/ekb/config/`
 
-**Custom keyboard Layouts are available on the device immediately upon file deployment**. 
+**Custom keyboard layouts are available on the device immediately upon file deployment**. 
 
 -----
 
@@ -315,8 +315,8 @@ Keyboard projects created earlier can be modified for use on different devices, 
 3. Select the target device using the drop-down menu and click the “Confirm” button. 
 4. Select the device orientation and click the “Confirm” button.
 5. When the Project name is seen at top-left corner, the workspace is ready for use.
-6. Click on the menu button and select a Layout to edit.
-7. When the Layout name is seen in the top-left corner (after the Project name) and Layout keys are visible in the device simulator, the Layout is ready to be edited.
+6. Click on the menu button and select a layout to edit.
+7. When the layout name is seen in the top-left corner (after the Project name) and layout keys are visible in the device simulator, the layout is ready to be edited.
 
 -----
 
@@ -326,8 +326,8 @@ Keyboard projects created earlier can be modified for use on different devices, 
 * **The number of allowable characters in a button label field is dependent on width of the key**. To avoid automatic key resizing, button label should not exceed available width. 
 * **The font size used for a button label is dependent on the size of the key being labeled**. To avoid automatic key resizing, select a point size appropriate for the size of the button.
 * **The secondary text button label field is dependent on the width of the key**. To avoid automatic key resizing, the secondary button label should not exceed available width.
-* **Zebra recommends that button image size not exceed 100 KB**. Larger images are supported but might impact performance of the Layout. 
-* When switching Layouts, a thin white line is sometimes shown at the bottom or sides of the background key Layout in the device simulator, but has no effect on the simulated display.
+* **Zebra recommends that button image size not exceed 100 KB**. Larger images are supported but might impact performance of the layout. 
+* When switching layouts, a thin white line is sometimes shown at the bottom or sides of the background key layout in the device simulator, but has no effect on the simulated display.
 * The following reserved names must not be used in Model Input fields (PressAction, LongPressAction, etc.) or in KeyEvents: 
  * Scantrigger
  * deviceInfo

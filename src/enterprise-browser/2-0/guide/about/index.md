@@ -633,7 +633,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC70</b></td>
   <td class="clsSyntaxCells clsOddRow">TC70 GA1, TC70 GA2</td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br><br>Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
   <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
@@ -651,7 +651,7 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC75</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC75, TC75x</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br><br>Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
   <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
@@ -664,13 +664,13 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC77</b></td>
   <td class="clsSyntaxCells clsOddRow">TC77</td>
-  <td class="clsSyntaxCells clsOddRow">Android 7.0 (Nougat)<br>Android 8.x (Oreo)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 8.x (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
   <td class="clsSyntaxCells clsOddRow"><nobr>TC8000</nobr></td>
-  <td class="clsSyntaxCells clsOddRow">Android 4.4 (KitKat)<br><br>Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
+  <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
   <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
@@ -844,12 +844,6 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
   <th class="clsSyntaxHeadings">Supported for use with:</th>
  </tr>
  <tr>
-  <td class="clsSyntaxCells clsOddRow"><b>DS3678</b></td>
-  <td class="clsSyntaxCells clsOddRow">Ultra-Rugged Scanner</td>
-  <td class="clsSyntaxCells clsOddRow">Accessory</td>
-  <td class="clsSyntaxCells clsOddRow">TC70X, TC75X, VC80X devices running Android 7.0 (Nougat)<br>MC33X, TC51, TC51HC, TC52, TC56, TC57, TC72, TC77, TC70X, <br>TC75X and VC80X devices running Android 8.0 (Oreo)</td>
- </tr>
- <tr>
   <td class="clsSyntaxCells clsOddRow"><b>LI3678</b></td>
   <td class="clsSyntaxCells clsOddRow">Ultra-Rugged Scanner</td>
   <td class="clsSyntaxCells clsOddRow">Accessory</td>
@@ -892,7 +886,7 @@ Android 8.0 (Oreo)</td>
 </table>
 
 -----
-
+<!-- 9/20/19- Printers removed per eng TUT-35220
 ###Printers
 
 The printers shown below have been tested for compatibility with USB printing from Enterprise Browser. Printing wirelessly from EB apps is supported on many other Zebra printer models. **NOTE**: Zebra's QL Plus and QLn series printers do not support USB printing.
@@ -942,5 +936,5 @@ The printers shown below have been tested for compatibility with USB printing fr
  </tr>
 </tbody>
 </table>
-
+ -->
 -----

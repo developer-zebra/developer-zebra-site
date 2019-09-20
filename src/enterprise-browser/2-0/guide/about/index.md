@@ -669,19 +669,19 @@ Enterprise Browser 1.6 and higher will no longer support devices running Android
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC8000</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC8000</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">TC8000</td>
   <td class="clsSyntaxCells clsOddRow">Android 5.0 (Lollipop)<br>(requires BSP 02-10-02 with LG patch 10)</td>
   <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
  <tr>
   <td class="clsSyntaxCells clsOddRow"><b>TC8300</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>TC8300</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">TC8300</td>
   <td class="clsSyntaxCells clsOddRow">Android 8.1 (Oreo)</td>
   <td class="clsSyntaxCells clsOddRow">Chromium WebView</td>
  </tr>
   <tr>
   <td class="clsSyntaxCells clsOddRow"><b>Workabout Pro 4</b></td>
-  <td class="clsSyntaxCells clsOddRow"><nobr>7528</nobr></td>
+  <td class="clsSyntaxCells clsOddRow">7528</td>
   <td class="clsSyntaxCells clsOddRow">Windows CE 6.0 <br>(requires BSP WAP4 CE-2.4 or higher)<br>Windows Embedded Handheld 6.5 <br>(requires BSP WAP4 WEH-3.0.1 or higher)</td>
   <td class="clsSyntaxCells clsOddRow">Internet Explorer, Webkit</td>
  </tr>

@@ -15,13 +15,13 @@ Using EKB APIs requires experience with Java programming, familiarity with Andro
 ### About the APIs
 Enterprise Keyboard APIs allow the following functions: 
 
-* **GET** returns a list of: 
- * available keyboard layouts
- * the current keyboard layout group and current layout name
+* **GET** can return lists of: 
+ * Available keyboard layouts
+ * Current keyboard layout group and current layout name
 * **SET** switches to the specified keyboard layout
 * **SHOW** 
 * **ENABLE** (true/false) enables or disables the keyboard 
-* **RESET** Resets EKB layouts and enables the keyboard (if disabled)
+* **RESET** Resets EKB layouts and enables Enterprise Keyboard (if disabled)
 
 -----
 

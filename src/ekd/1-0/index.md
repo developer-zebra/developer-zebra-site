@@ -1,6 +1,6 @@
 ---
 title: Enterprise Keyboard Designer
-img: ekb_logo.png
+img: ekd_logo.png
 layout: list-mx.html
 menu:
   title: Enterprise Keyboard

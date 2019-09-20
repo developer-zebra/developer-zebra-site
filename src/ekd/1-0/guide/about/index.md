@@ -17,10 +17,11 @@ An unlimited number of custom key Layouts can be created, deployed to devices an
 
 <b>Through it's not required for EKD, Zebra's Enterprise Keyboard offers many enhancements over the stock Android Keyboard, including tabbed layouts with "swipe-to-switch," programmable keys and much more: 
 <br>
-_Enterprise Keyboard_:
+<br>
+***Enterprise Keyboard***:
 <img alt="" style="height:150px" src="keyboard_alone.png"/>
 
-_Stock Android keyboard_:
+***Stock Android keyboard***:
 <img alt="" style="height:150px" src="keyboard_android.png"/>
 <br>
 

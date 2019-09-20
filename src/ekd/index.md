@@ -1,6 +1,6 @@
 ---
 title: Enterprise Keyboard Designer
-img: ekb_logo.png
+img: ekd_logo.png
 layout: redirect.html
 redirect_url: /ekd/1-0/guide/about
 ---

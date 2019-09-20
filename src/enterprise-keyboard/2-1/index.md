@@ -11,8 +11,6 @@ menu:
       url: /enterprise-keyboard/2-1/guide/setup
     - title: Customize
       url: /enterprise-keyboard/2-1/guide/settings
-    - title: EKB Designer
-      url: /enterprise-keyboard/2-1/guide/ekd
     - icon: fa fa-download
       url: /enterprise-keyboard/2-1/download
     - icon: fa fa-search

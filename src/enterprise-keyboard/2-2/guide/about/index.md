@@ -40,7 +40,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### Added Features 
 
-**Two more remappable keys** have been added to the fixed keyboard layout, which now features a total of six remappable keys.
+**Two remappable keys have been added** to the fixed keyboard layout, which now provides a total of six remappable keys.
 
 ### Supported Devices
 
@@ -48,7 +48,7 @@ This version of Enterprise Keyboard includes the following languages:
 
 * **VC8300**
 
-See the complete [list of supported devices](../download) is on the Download page. 
+See the complete [list of supported devices](../../download) on the Download page. 
 
 -----
 

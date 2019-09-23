@@ -7,6 +7,11 @@ productversion: '2.2'
 
 ### Supported Devices
 
+
+<u>EKB 2.2 comes pre-installed</u> on the following Zebra devices running Android 8.x Oreo: 
+
+* **VC8300**
+
 <u>EKB 2.1 comes pre-installed</u> on the following Zebra devices running Android 8.x Oreo: 
 
 * **CC605**

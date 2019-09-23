@@ -79,7 +79,8 @@ An SSL certificate is needed for secure connections. Generate the CSR (Certifica
 * **Generate complete SSL certificate** (.pfx format) with both public and private keys 
 
 If the server certificate with public key already exists, skip to the second section _Generate complete SSL Certificate_. If the complete SSL certificate already exists, skip to section _Server Installation_. <br><br>
-**Procure server certificate:** Create a private key and generate the CSR. Submit the CSR to the CA for signing. The server certificate issued should be in .p7b format.
+**Procure server certificate:** Create a private key and generate the CSR. Submit the CSR to the CA for signing. The server certificate issued should be in .p7b format. Watch a video demonstration or follow the steps below:
+<div><iframe width="430" height="290" src="../../../videos/ZDVC_ServerCert-Step1.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
 1. Download and install the SSL toolkit [OpenSSL](https://www.openssl.org/source/) for Windows. Follow the instructions stated to download the file based on your Windows configuration.<br>
 2. Add a new "openSSL" environment variable to the Windows system and set the value to the location where openSSL is installed (e.g. "C:\Program Files\OpenSSL-Win64\bin\").<br>
 3. Create a folder named "ServerCert".  Open the command prompt to this folder path.<br>
@@ -100,7 +101,8 @@ It prompts to enter the private key password (created in step 5). Enter in the r
 When prompted for the challenge password, it is not required - _do not supply one_. 
 6. Submit the CSR created to the CA. They will supply a certificate in .p7b format, e.g. ssl_certificate.p7b.
 
-**Generate complete SSL Certificate:** Zebra requires the certificate be procured in .p7b format and combined with the private key (.key file) to generate the SSL certificate in .pfx file format. If the certificate is in a different format, use an SSL certificate converter tool to convert to the proper format.  <br>
+**Generate complete SSL Certificate:** Zebra requires the certificate be procured in .p7b format and combined with the private key (.key file) to generate the SSL certificate in .pfx file format. If the certificate is in a different format, use an SSL certificate converter tool to convert to the proper format.  Watch a video demonstration or follow the steps below:
+<div><iframe width="450" height="280" src="../../../videos/ZDVC_ServerCert-Step2.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div> 
 1. Create an ssl_certificate.cer file with the command:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs7 -print_certs -in ssl_certificate.p7b -out ssl_certificate.cer`<br>
 where "ssl_certificate.p7b" is the certificate issued by the CA.

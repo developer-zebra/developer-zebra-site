@@ -2,7 +2,7 @@
 title: Download Enterprise Keyboard
 layout: guide.html
 product: Enterprise Keyboard
-productversion: '2.2'
+productversion: '3.1'
 ---
 
 ### Supported Devices

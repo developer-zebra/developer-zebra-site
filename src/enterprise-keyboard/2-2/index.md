@@ -6,15 +6,15 @@ menu:
   title: Enterprise Keyboard
   items:
     - title: About
-      url: /enterprise-keyboard/2-1/guide/about
+      url: /enterprise-keyboard/2-2/guide/about
     - title: Setup
-      url: /enterprise-keyboard/2-1/guide/setup
+      url: /enterprise-keyboard/2-2/guide/setup
     - title: Customize
-      url: /enterprise-keyboard/2-1/guide/settings
+      url: /enterprise-keyboard/2-2/guide/settings
     - icon: fa fa-download
-      url: /enterprise-keyboard/2-1/download
+      url: /enterprise-keyboard/2-2/download
     - icon: fa fa-search
-      url: /enterprise-keyboard/2-1/search
+      url: /enterprise-keyboard/2-2/search
 product: Enterprise Keyboard
 productversion: '2.2'
 ---

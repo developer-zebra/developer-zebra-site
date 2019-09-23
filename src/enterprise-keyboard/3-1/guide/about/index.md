@@ -48,36 +48,29 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### Supported Devices
 
-Support added for the following Zebra devices running **Android 9.x Pie**: 
+Support added for the following Zebra devices: 
 
-* **PS20**  
-* **TC52**
-* **TC72**
-
-Support added for the following Zebra devices running **Android 8.x Oreo**: 
-
-* **CC600**
-* **CC6000**
-* **EC30**
-* **ET51**
-* **ET50**
-* **ET55**
-* **ET56**
-* **L10**
-* **MC33X**
-* **MC93**
-* **TC83**
-* **VC83** 
-
-Support added for the following Zebra devices running **Android 7.x Nougat**: 
-
-* **ET51**
-* **ET56**
-* **MC33X**
-
-<u>EKB 2.2 comes pre-installed</u> on the following additional Zebra **devices running Android 8.x Oreo**: 
-
-* **VC8300**
+* **Running Android 9.x Pie**: 
+ * **PS20**  
+ * **TC52**
+ * **TC72**
+* **Running Android 8.x Oreo**: 
+ * **CC600**
+ * **CC6000**
+ * **EC30**
+ * **ET51**
+ * **ET50**
+ * **ET55**
+ * **ET56**
+ * **L10**
+ * **MC33XX**
+ * **MC93**
+ * **TC83**
+ * **VC83** 
+* **Running Android 7.x Nougat**: 
+ * **ET51**
+ * **ET56**
+ * **MC33XX**
 
 See the complete [list of supported devices](../../download) on the Download page. 
 

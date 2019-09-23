@@ -48,13 +48,13 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### Supported Devices
 
-Support added for the following Zebra devices running Android 9.x Pie: 
+Support added for the following Zebra devices running **Android 9.x Pie**: 
 
 * **PS20**  
 * **TC52**
 * **TC72**
 
-Support added for the following Zebra devices running Android 8.x Oreo: 
+Support added for the following Zebra devices running **Android 8.x Oreo**: 
 
 * **CC600**
 * **CC6000**
@@ -69,7 +69,7 @@ Support added for the following Zebra devices running Android 8.x Oreo:
 * **TC83**
 * **VC83** 
 
-Support added for the following Zebra devices running Android 7.x Nougat: 
+Support added for the following Zebra devices running **Android 7.x Nougat**: 
 
 * **ET51**
 * **ET56**

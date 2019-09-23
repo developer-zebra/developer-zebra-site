@@ -953,12 +953,11 @@ _**Note**: Higher marginless levels will increase decoding times and the risk of
 
 * **Press and Sustain -** Starts the scan beam when the trigger is pressed and continues the decode session until the Beam Timer is expired, barcode is decoded or read is canceled. **Scan beam is not stopped when the trigger is released**. This avoids unexpected cancellations of a read by subsequently pressing the trigger button of the device; subsequent trigger presses while the beam is ON have no effect. **Applies to internal imager on TC20/TC25 and RS6000/RS507 Bluetooth scanners connected to TC57/TC77 and PS20 devices**. 
 
-<!-- **COMMENT OUT TEMPORARILY UNTIL READY IN FUTURE RELEASE**
-**Presentation mode parameters -** &#42;<i>**For future use only**</i>&#42;
-* **Scene Detection Qualifier** 
- * **None**
- * **Proximity Sensor Input**
- -->
+**Presentation Mode -** Sets the sensitivity level in reaction to environment changes during the scanning session. Used when AimType is in Presentation Mode. Sensitivity levels:
+
+* **High -** Scanning is activated with high sensitivity to environment changes (default).
+* **Medium -** Scanning is activated with medium sensitivity to environment changes.
+* **Low -** Scanning is activated with low sensitivity to environment changes.
 
 **DPM Illumination Control -** Controls illumination for DPM barcodes: 
 * **Direct Illumination -** Scanner uses only direct (white) illumination. Recommended for use with dot peen barcodes - tilt the part 30 degrees for optimal decoding.

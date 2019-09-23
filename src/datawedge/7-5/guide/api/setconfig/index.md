@@ -742,6 +742,11 @@ Other Scanner Input Parameters:
   </tr>
 
   <tr>
+    <td>presentation_mode_sensitivity</td>
+	<td>80 - Low <br>120 - Medium<br>190 - High (default) <br><a href="../../input/barcode/#readerparams">More info</a></td>
+  </tr>
+
+  <tr>
     <td>barcode_trigger_mode</td>
 	<td>0 - Disabled <br>1 - Enabled<br><a href="../../input/barcode/#hardwaretrigger">More info</a></td>
   </tr>

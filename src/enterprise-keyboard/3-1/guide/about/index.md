@@ -36,19 +36,69 @@ This version of Enterprise Keyboard includes the following languages:
 
 -----
 
-## New in v2.2
+## New in v3.1
 
 ### Added Features 
 
-**Two remappable keys have been added** to the fixed keyboard layout, which now provides a total of six remappable keys.
+**Now can be sideloaded** onto any supported device.  
+
+**Supports custom key layouts** created with [Enterprise Keyboard Designer](/ekd), Zebra's all-new desktop tool for Windows. 
 
 ### Supported Devices
 
-<u>EKB 2.2 now comes pre-installed</u> on the following additional Zebra **devices running Android 8.x Oreo**: 
+Now supports the following Zebra devices running Android 9.x Pie: 
+
+* **PS20**  
+* **TC52**
+* **TC72**
+
+Oreo: 
+
+* **CC600**
+* **CC6000**
+* **EC30**
+* **ET51**
+* **ET50**
+* **ET55**
+* **ET56**
+* **L10**
+* **MC33X**
+* **MC93**
+* PS20
+* **TC83**
+* TC51
+* TC51 HC
+* TC52
+* TC56
+* TC57
+* TC70x
+* TC72
+* TC75x
+* TC77
+* VC80x 
+* **VC83** 
+
+
+Nougat:
+
+* **ET51**
+* **ET56**
+* **MC33X**
+* TC51 HC
+* TC51
+* TC56
+* TC70X
+* TC75X
+* VC80X
+* WT6000
+
+<u>EKB 2.2 comes pre-installed</u> on the following additional Zebra **devices running Android 8.x Oreo**: 
 
 * **VC8300**
 
 See the complete [list of supported devices](../../download) on the Download page. 
+
+**Bold text** indicates device support newly added with the current version. 
 
 -----
 
@@ -105,6 +155,18 @@ _Stock Android keyboard_:
 -----
 
 ## Version History
+
+### Added in v2.2
+
+#### New Features 
+
+**Two remappable keys have been added** to the fixed keyboard layout, which now provides a total of six remappable keys.
+
+#### Supported Devices
+
+<u>EKB 2.2 now comes pre-installed</u> on the following additional Zebra **devices running Android 8.x Oreo**: 
+
+* **VC8300**
 
 ### Added in v2.1
 

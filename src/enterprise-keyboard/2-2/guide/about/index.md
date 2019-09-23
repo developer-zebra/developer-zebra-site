@@ -36,16 +36,19 @@ This version of Enterprise Keyboard includes the following languages:
 
 -----
 
-## New in v2.1
+## New in v2.2
+
+### Added Features 
+
+**Two more remappable keys** have been added to the fixed keyboard layout, which now features a total of six remappable keys.
 
 ### Supported Devices
 
-<u>EKB 2.1 comes pre-installed</u> on the following Zebra **devices running Android 8.x Oreo**: 
+<u>EKB 2.2 now comes pre-installed</u> on the following additional Zebra **devices running Android 8.x Oreo**: 
 
-* **CC605**
-* **CC610**
-* **MC93**
-* **TC8200**
+* **VC8300**
+
+See the complete [list of supported devices](../download) is on the Download page. 
 
 -----
 
@@ -102,6 +105,17 @@ _Stock Android keyboard_:
 -----
 
 ## Version History
+
+### Added in v2.1
+
+#### Supported Devices
+
+<u>EKB 2.1 comes pre-installed</u> on the following Zebra **devices running Android 8.x Oreo**: 
+
+* **CC605**
+* **CC610**
+* **MC93**
+* **TC8200**
 
 ### Added in v2.0
 

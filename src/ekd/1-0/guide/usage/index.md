@@ -13,7 +13,7 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 
 -----
 
-### I. Create a Project
+### I. Create Project
 
 1. Launch the Enterprise Keyboard Designer utility: 
  <img alt="" style="height:250px" src="EKD_app_icon.png"/>
@@ -32,11 +32,7 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 
 > **Note**: Once a project is created, its target device and other project-level settings cannot be changed.
 
-<!-- 
-For a demo of the steps above, see the "createProject.mp4” video.
- -->
-
------
+<hr>
 
 ### II. Create Layout(s)
 
@@ -305,7 +301,7 @@ The data for custom keyboard layout(s) is stored in the custom keyboard definiti
 
 **Custom keyboard layouts are available on the device immediately upon file deployment**. 
 
------
+<hr>
 
 ## Import Keyboard Project
 Keyboard projects created earlier can be modified for use on different devices, adapted for different screen sizes and features or for any reason. 

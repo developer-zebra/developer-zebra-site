@@ -34,7 +34,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 7.2 -** Added new DotCode decoder support.
 * **DataWedge 7.3 -** Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
 * **DataWedge 7.3.22 -** Added new RFID Input feature 
-* **DataWedge 7.5 -** Added new DPM support.
+* **DataWedge 7.5 -** Added new DPM support, increased the maximum number of barcodes supported by MultiBarcode.
 <!--* **DataWedge 7.5 -** Added new Enterprise Keyboard Configuration feature. -->
 
 ### Function Prototype
@@ -768,7 +768,7 @@ Other Scanner Input Parameters:
  
    <tr>
 	<td>multi_barcode_count</td>
-	<td>Integer from 2–10</td>
+	<td>Integer from 2–100</td>
   </tr>
 
   <tr>

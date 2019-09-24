@@ -1177,7 +1177,7 @@ MultiBarcode acquires multiple, unique barcodes in a single scan session and can
 <i>Access to Basic MultiBarcode params</i>
 
 Basic MultiBarcode params:
-* **Number of barcodes per scan-** Specifies the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 10._
+* **Number of barcodes per scan-** Specifies the number of unique barcodes to be decoded with each scan session before sending the scanned data. This setting does not take effect if **Instant Reporting** is enabled. For example, if 5 is specified, the scanner does not send the data until 5 barcodes are scanned. _Default value: 5; value range: 2 to 100._
 * **Instant Reporting -** If enabled, returns each unique barcode immediately as it is decoded without waiting for the specified number of barcodes to be scanned. If disabled _(default)_, the decoded data is returned as a single entity after the amount of barcodes scanned reaches the specified **Number of barcodes per scan**.
 
 **MultiBarcode Notes**

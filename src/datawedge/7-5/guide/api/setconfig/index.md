@@ -34,7 +34,7 @@ To create a Profile without configuring its settings parameters, use [CREATE_PRO
 * **DataWedge 7.2 -** Added new DotCode decoder support.
 * **DataWedge 7.3 -** Added new Decoder Signature support, new Grid Matrix decoder support and new keystroke output parameters.
 * **DataWedge 7.3.22 -** Added new RFID Input feature 
-* **DataWedge 7.5 -** Added new DPM support, increased the maximum number of barcodes supported by MultiBarcode.
+* **DataWedge 7.5 -** New Enterprise Keyboard Configuration feature, added DPM support, increased the maximum number of barcodes supported by MultiBarcode.
 <!--* **DataWedge 7.5 -** Added new Enterprise Keyboard Configuration feature. -->
 
 ### Function Prototype
@@ -85,12 +85,12 @@ The `PLUGIN_CONFIG` bundle is configured using the following properties:
  * **KEYSTROKE** output
  * **IP** (Internet Protocol) output
  * **DCP** (Data Capture Plus) utilities
+ * **EKB** (Enterprise Keyboard) utilities
 * **PARAM_LIST** [Bundle]: A parameter list bundle nested within the `PLUGIN_CONFIG` bundle. Includes the list of parameters to be updated under the specified Plug-in. **Setting an empty string in any parameter value resets that parameter to its default setting**. 
 * **OUTPUT_PLUGIN_NAME** [String]: Applies only to **ADF** and **BDF** when specified as the `PLUGIN_NAME`. Specifies the output plug-in associated with the ADF or BDF parameters: 
  * **KEYSTROKE**
  * **INTENT**
  * **IP**
-<!--  * **EKB** (Enterprise Keyboard) utilities -->
 
 #### PARAM_LIST BUNDLE
 The `PARAM_LIST` bundle is configured by specifying the parameter name and values from the respective `PLUGIN_NAME` parameter tables below. Applies to parameters matching the `PLUGIN_NAME` specified in `PLUGIN_CONFIG` bundle:
@@ -108,27 +108,13 @@ The `PARAM_LIST` bundle is configured by specifying the parameter name and value
 * **SIMULSCAN -** Accepts values from the [Simulscan Input Parameters](#simulscaninputparameters) table below.
 * **VOICE -** Accepts values from the [Voice Input Parameters](#voiceinputparameters) table below.
 * **DCP -** Accepts values from the [DCP (Data Capture Plus) Utilities Parameters](#dcputilitiesparameters) table below.
+* **EKB -** Accepts values from the [Enterprise Keyboard Configuration Parameters](#enterprisekeyboardconfigurationparameters) table below.
 * **BDF -** Applies [Basic Data Formatting](../../process/bdf) rules to the acquired data. Accepts values from the [BDF Processing Parameters](#bdfprocessingparameters) table below. 
 * **ADF -** Applies [Advanced Data Formatting](../../process/adf) rules to the acquired data. This bundle contains Action, Device, Decoder and Label_ID sub-bundles. Accepts values from the [ADF Processing Parameters](#adfprocessingparameters) table below.
 * **TOKENS -** Applicable for UDI or multibarcodes; accepts values from the [Token Parameters](#tokenparameters) table below.
 * **INTENT -** Accepts values from the [Intent Output Parameters](#intentoutputparameters) table below.
 * **KEYSTROKE -** Accepts values from the [Keystroke Output Parameters](#keystrokeoutputparameters) table below; specify output settings as `EXTRA_DATA` in the `PARAM_LIST` nested bundle.
 * **IP** (Internet Protocol) - Accepts values from the [IP Output Parameters](#ipoutputparameters) table below.
-
-<!-- `intent_flag_receiver_foreground` [string] &lt;true/false&gt; -->
-<!--  // moved to DW 7.5
-<ul>
- <li><b>EKB -</b> Set Enterprise Keyboard Configuration for a DataWedge Profile. Options: </li>
- <ul>
-   <li><span style="background-color: #F9F2F4"><font face="Courier New" color="#C22F52">ekb_enabled</font></span> [string] – true/false (default=false)</li>
-   <li><span style="background-color: #F9F2F4"><font face="Courier New" color="#C22F52">ekb_layout</font></span> [bundle] - Specifies the keyboard layout to be used. Required values: </li>
-	 <ul>
-	    <li>layout_group [string] - specify group name that matches the group as displayed in DataWedge UI.</li>
-			<li>layout_name [string] - specify layout name that matches the name as displayed in DataWedge UI. Specify <b>null</b> to set to default. </li>
-	 </ul>
- </ul>
-</ul>
--->
 
 **IMPORTANT**: 
 
@@ -1293,6 +1279,42 @@ Other Scanner Input Parameters:
 <br>
 
 See [DCP Input](../../input/dcp).
+<br>
+
+-----
+## Enterprise Keyboard Configuration Parameters
+<!--  // moved to DW 7.5
+<ul>
+ <li><b>EKB -</b> Set Enterprise Keyboard Configuration for a DataWedge Profile. Options: </li>
+ <ul>
+   <li><span style="background-color: #F9F2F4"><font face="Courier New" color="#C22F52">ekb_enabled</font></span> [string] – true/false (default=false)</li>
+   <li><span style="background-color: #F9F2F4"><font face="Courier New" color="#C22F52">ekb_layout</font></span> [bundle] - Specifies the keyboard layout to be used. Required values: </li>
+	 <ul>
+	    <li>layout_group [string] - specify group name that matches the group as displayed in DataWedge UI.</li>
+			<li>layout_name [string] - specify layout name that matches the name as displayed in DataWedge UI. Specify <b>null</b> to set to default. </li>
+	 </ul>
+ </ul>
+</ul>
+-->
+> All parameters are case sensitive.
+
+<table class="facelift" style="width:100%" border="1" padding="5px">
+  <tr bgcolor="#dce8ef">
+    <th style="width:20%">Parameter</th>
+    <th style="width:25%">Parameter Value</th>
+		<th style="width:55%">Description</th>
+  </tr>
+	<tr>
+		<td>ekb_enabled</td>
+		<td>true<br>false</td>
+		<td>Enable/Disable Enterprise Keyboard</td>
+	</tr>
+	<tr>
+		<td>ekb_layout</td>
+		<td>Bundle that accepts values: <br>&nbsp; &#8226;layout_group [string]<br>&nbsp; &#8226;layout_name [string]</td>
+		<td>Specify layout name that matches the name as displayed in DataWedge UI. Specify <b>null</b> to set to default</td>
+	</tr>
+</table>
 <br>
 
 -----
@@ -2977,14 +2999,13 @@ Support started with DataWedge 7.1.  Previous DataWedge versions required multip
 	i.putExtra("com.symbol.datawedge.api.SET_CONFIG", bMain); 
 	this.sendBroadcast(i); 
 
-<!-- // moved to DW 7.5
 ###Set Enterprise Keyboard Configuration
 	//SetConfig [Start] 
 	Bundle bMain = new Bundle(); 
 	Bundle bConfigEKB = new Bundle();
 
 	Bundle bParamsEKB = new Bundle(); 
-	bParamsEKB.putString("ekb_enabled", "true"); //Supported values: true/false 
+	bParamsEKB.putString("ekb_enabled", "true"); // Supported values: true/false 
 	Bundle layoutParams = new Bundle(); 
 	layoutParams.putString("layout_group", "EKBCustomLayouts"); 
 	layoutParams.putString("layout_name", "qwerty"); 
@@ -3008,7 +3029,7 @@ Support started with DataWedge 7.1.  Previous DataWedge versions required multip
 	//SetConfig [End] 
 	
 	this.sendBroadcast(iSetConfig); 
--->
+
 -----
 
 **SEE ALSO**:

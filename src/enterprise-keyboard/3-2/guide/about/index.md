@@ -42,13 +42,10 @@ This version of Enterprise Keyboard includes the following languages:
 
 ### Added Features 
 
-**Now can be sideloaded** onto any supported device.  
-
-**Supports custom key layouts** created with [Enterprise Keyboard Designer](/ekd), Zebra's all-new desktop tool for Windows. 
-
-**Now supports devices running Android 9.2 Pie**.
-
-**No longer supports devices running Android 6.x Marshmallow, 5.x Lollipop, 4.x KitKat**. 
+* **Now can be sideloaded** onto any supported device.  
+* **Supports custom key layouts** created with [Enterprise Keyboard Designer](/ekd), Zebra's all-new desktop tool for Windows. 
+* **Now supports devices running Android 9.2 Pie**.
+* **No longer supports devices running Android 6.x Marshmallow, 5.x Lollipop, 4.x KitKat**. 
 
 ### Supported Devices
 

@@ -20,6 +20,8 @@ In the [Admin View](../admin) dashboard, click on the **Settings** tab to displa
  * **Volume Level** - Specifies the loudness level of the chirping sound to be heard from the device being located. Minimum value: 15, maximum value: 100.
      * **Duration** - Amount of time in seconds for the chirping to sound on the device being located. Minimum value: 1, maximum value: 30.
 
+* **Bluetooth LE-** Enable/disable Bluetooth LE (Low Energy) for proximity tracking. If enabled, displays a BLE proximity indicator in the client app identifying how close or far the tracking device is in reference to the target device being tracked. Proximity is based on Bluetooth beacons detected from the tracking device received from the misplaced device. If disabled, no BLE proximity indicator is displayed on the client device; therefore, the user must rely on audio for device tracking. If a device is in the process of being tracked and BLE is toggled, a notification message appears on the tracking device displaying the BLE status change and the screen refreshes accordingly in displaying the proximity indicator.
+
 <!--
  * **Disconnect Threshold Time** - Defines the amount of time (hours and minutes) to elapse for a device to be considered in the disconnected state due to lack of response from the device within this time frame. Minimum value: 7 min, maximum value: 12 hours. -->
 

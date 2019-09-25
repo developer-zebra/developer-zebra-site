@@ -320,6 +320,7 @@ Keyboard projects created earlier can be modified for use on different devices, 
 
 ## General Usage Notes
 
+* **Enterprise Keyboard must be installed on the device** to display layouts made with EKD.
 * **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
 * **The number of allowable characters in a button label field is dependent on width of the key**. To avoid automatic key resizing, button label should not exceed available width. 
 * **The font size used for a button label is dependent on the size of the key being labeled**. To avoid automatic key resizing, select a point size appropriate for the size of the button.

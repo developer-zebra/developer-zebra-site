@@ -2,7 +2,7 @@
 title: About Enterprise Keyboard Designer
 layout: guide.html
 product: Enterprise Keyboard Designer
-productversion: '1.0'
+productversion: '1.2'
 ---
 
 ## Overview

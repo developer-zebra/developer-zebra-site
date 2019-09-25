@@ -6,21 +6,21 @@ menu:
   title: Enterprise Keyboard
   items:
     - title: About
-      url: /ekd/1-0/guide/about
+      url: /ekd/1-2/guide/about
     - title: Setup
-      url: /ekd/1-0/guide/setup
+      url: /ekd/1-2/guide/setup
     - title: Customize
-      url: /ekd/1-0/guide/settings
+      url: /ekd/1-2/guide/settings
 <<<<<<< HEAD
     - title: EKB Designer
 =======
     - title: KB Designer
 >>>>>>> 94adfbed23194bbab916067d2cecfee69a5fcce9
-      url: /ekd/1-0/guide/ekd
+      url: /ekd/1-2/guide/ekd
     - icon: fa fa-download
-      url: /ekd/1-0/download
+      url: /ekd/1-2/download
     - icon: fa fa-search
-      url: /ekd/1-0/search
+      url: /ekd/1-2/search
 product: Enterprise Keyboard Designer
-productversion: '1.0'
+productversion: '1.2'
 ---

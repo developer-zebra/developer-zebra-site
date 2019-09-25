@@ -38,7 +38,7 @@ This version of Enterprise Keyboard includes the following languages:
 -----
 
 
-## New in v3.1
+## New in v3.2
 
 ### Added Features 
 

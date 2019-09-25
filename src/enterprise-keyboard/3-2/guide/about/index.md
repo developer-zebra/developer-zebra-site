@@ -55,6 +55,16 @@ Support added for the following Zebra devices:
  * **TC52**
  * **TC72**
 * **Running Android 8.x Oreo**: 
+ * **EC30**
+ * **L10**
+
+
+<!-- my old delta list, not sure it's totally wrong
+* **Running Android 9.x Pie**: 
+ * **PS20**  
+ * **TC52**
+ * **TC72**
+* **Running Android 8.x Oreo**: 
  * **CC600**
  * **CC6000**
  * **EC30**
@@ -71,7 +81,7 @@ Support added for the following Zebra devices:
  * **ET51**
  * **ET56**
  * **MC33xx**
-
+ -->
 See the complete [list of supported devices](../../download) on the Download page. 
 
 -----

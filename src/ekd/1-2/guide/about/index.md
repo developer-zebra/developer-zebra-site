@@ -28,6 +28,7 @@ An unlimited number of custom key layouts can be created, deployed to devices an
 <br>
 
 ### `IMPORTANT - PLEASE READ`
+* **Enterprise Keyboard must be installed on the device** to display layouts made with EKD.
 * **<u>Only one keyboard or custom key layout can be displayed on the device screen at a time</u>**. When a custom key layout is displayed, all other keyboards are hidden, including the standard Enterprise Keyboard alpha-numeric layout. 
 * **Layouts made with EKD must be called by an app using intents** to be displayed (see [Intent APIs section](#intentapis)).
 * **Apps on the device can access <u>only a single EKD project file</u>**, but multiple layouts can be saved in that single project file and called independently through intents.  

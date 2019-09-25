@@ -1,9 +1,9 @@
 ---
 title: Search
 layout: search.html
-index: /enterprise-keyboard/3-1/index.json
+index: /enterprise-keyboard/3-2/index.json
 product: Enterprise Keyboard
-productversion: '3.1'
+productversion: '3.2'
 ---
 
 

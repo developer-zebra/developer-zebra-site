@@ -22,6 +22,7 @@ Enterprise Keyboard Configuration is accessible from the DataWedge profile scree
 Enterprise Keyboard Configuration options include:
 * Enable/Disable Enterprise Keyboard
 * Select a layout for the keyboard
+
 <br>
 Enterprise Keyboard Configuration is disabled and cannot be configured if one of the following conditions exist:
 * Enterprise Keyboard is not the default IME in Android on the device.  
@@ -33,10 +34,10 @@ _Figure 4. Enterprise Keyboard disabled_
 <br> 
 
 ### Enable/Disable  
-Enable/disable Enterprise Keyboard used with the DataWedge profile. If enabled, the selected layout for Enterprise Keyboard automatically appears within the associated app during a profile or activity switch/change from the activity/app appearing in the foreground. If disabled, Enterprise Keyboard does not appear within the associated app. 
+Enable/disable Enterprise Keyboard used with the DataWedge profile. If enabled, the selected layout for Enterprise Keyboard automatically appears within the associated app during a profile or activity switch/change when appearing in the foreground. If disabled, Enterprise Keyboard does not appear within the associated app. 
 
 ### Select layout 
-Select a layout for the keyboard. The available layouts are populated from a custom generated `.encrypted` file (for example _EKBCustomLayouts.encrypted_) located in `/enterprise/device/settings/ekb/config` directory on the device. If the file does not exist, Enterprise Keyboard Configuration is inaccessible (grayed-out) and cannot be configured. The Layout group name is based on the `.encrypted` file name. See [Enterprise Keyboard](/enterprise-keyboard/latest/guide/settings) for more information. 
+Select a layout for the keyboard. The available layouts are populated from a custom generated `.encrypted` file (for example _EKBCustomLayouts.encrypted_) located in folder `/enterprise/device/settings/ekb/config` on the device. If the file does not exist, Enterprise Keyboard Configuration is disabled and cannot be configured. The Layout group name is based on the `.encrypted` file name. See [Enterprise Keyboard](/enterprise-keyboard/latest/guide/settings) for more information. 
 
 
 ## Configuration

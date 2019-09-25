@@ -63,14 +63,14 @@ Support added for the following Zebra devices:
  * **ET55**
  * **ET56**
  * **L10**
- * **MC33XX**
+ * **MC33xx**
  * **MC93**
  * **TC83**
  * **VC83** 
 * **Running Android 7.x Nougat**: 
  * **ET51**
  * **ET56**
- * **MC33XX**
+ * **MC33xx**
 
 See the complete [list of supported devices](../../download) on the Download page. 
 

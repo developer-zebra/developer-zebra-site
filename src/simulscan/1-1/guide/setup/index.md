@@ -7,7 +7,7 @@ productversion: '1.1'
 
 <div class="alert alert-danger alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <h4>Important information about SimulScan:</h4> <p><b>The most important SimulScan capabilities, including multi-barcode scanning and OCR A/B capture for travel documentation, are being migrated to the internal scanning framework that runs on all Zebra devices</b>. Once complete, capabilities formerly available only through SimulScan will be accessible through DataWedge and Android intent APIs. Therefore, Zebra strongly recommends that partners develop of a migration plan to DataWedge for all applications that currently use SimulScan.</p><p><b>Key migration dates</b>:
     </p><ul>
-        <li>Dec. 31, 2019 - Final day to buy SimulScan licenses/li>
+        <li>Dec. 31, 2019 - Final day to buy SimulScan licenses</li>
         <li>Dec. 31, 2020 - End of support for licensed SimulScan API features</li>
         <li>Device end-of-life - End of support for non-licensed SimulScan API features</li>
         <li>For more information, refer to <b>PMB 10281</b> on the Zebra Partner Portal:</li>

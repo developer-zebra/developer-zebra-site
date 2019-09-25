@@ -1311,8 +1311,8 @@ See [DCP Input](../../input/dcp).
 	</tr>
 	<tr>
 		<td>ekb_layout</td>
-		<td>Bundle that accepts values: <br>&nbsp; &#8226;layout_group [string]<br>&nbsp; &#8226;layout_name [string]</td>
-		<td>Specify layout name that matches the name as displayed in DataWedge UI. Specify <b>null</b> to set to default</td>
+		<td>Bundle that accepts values: <br>&nbsp; &#8226; layout_group [string]<br>&nbsp; &#8226; layout_name [string]</td>
+		<td>Specify <i>layout_group</i> and <i>layout_name</i> that matches that displayed in DataWedge UI for <a href="../../utilities/ekb">Enterprise Keyboard Configuration</a>. Both names are set from <a href="/ekd">Enterprise Keyboard Designer</a>: <i>layout_group</i> is based on the project name and <i>layout_name</i> is based on the layout name specified. Use <b>null</b> for <i>ekb_layout</i> to set to default, the standard Enterprise Keyboard.</td>
 	</tr>
 </table>
 <br>

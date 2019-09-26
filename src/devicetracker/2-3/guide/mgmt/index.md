@@ -9,28 +9,22 @@ productversion: '2.3'
 Monitoring device presence and prevention of misplaced devices is important for smooth operational productivity. This section covers the procedures to organize, track, locate, and prevent misplaced devices.
 
 **Version History**
-* **Device Tracking 2.3 -** New BLE (Bluetooth Low Energy) proximity feature to track devices.
+* **Device Tracking 2.3 -** New BLE (Bluetooth Low Energy) feature for device proximity tracking.
 
 ## Locating Devices
-The facility administrator monitors devices from the [admin dashboard](../admin) and can mark a device "To be found" if it is misplaced or at risk, e.g. needs to be charged due to low battery. The administrator assigns an associate to search the target device by using their Zebra device to locate the general area the target device resides based on the Access Point (AP) where it last connected. Then a sound can be played by tapping the Play Sound button on the associate's device to locate the target device by audio sound, determining its location. The volume level and sound duration can be adjusted in the server [Settings](../config).
+The facility administrator monitors devices from the [admin dashboard](../admin) and can mark a device "To be found" if it is misplaced or at risk, e.g. needs to be charged due to low battery. The administrator assigns an associate to search the target device by using their Zebra device to locate the general area the target device resides based on the Access Point (AP) where it last connected. The BLE proximity indicator can be used to identify how close or far the target device is in relation to the associate. To further pinpoint device location, a sound can be played by tapping the **Play Sound** button on the associate's device to locate the target device by audio sound. The volume level and sound duration are adjustable in the server [Settings](../config).
 
 **Important**:
 * WiFi must be enabled on both devices.
-* For proximity tracking, Bluetooth must be enabled on both devices.
+* For BLE proximity tracking, Bluetooth must be enabled on both devices.
 * When **Play Sound** is tapped repeatedly on the client during network congestion, the congestion may cause a delay in the playback. Once the congestion disappears, the audio plays back once based on the last tap to play audio.
-* During network congestion, client requests over WiFi frequency band 2.4 GHz may not reach the server. For example, requests to Play Sound may not reach the intended device. In this situation, Zebra recommends to move to a 5 GHz frequency band or move to another network without congestion.
+* During network congestion, client requests over WiFi frequency band 2.4 GHz may not reach the server. For example, requests to **Play Sound** may not reach the intended device. In this situation, Zebra recommends to move to a 5 GHz frequency band or move to another network without congestion.
 <!--
 * During network congestion, the user may need to wait for 10 seconds before being able to exit the Play Sound screen by tapping the device back button. // Remove per SOLA-4230, issue no longer reproduceable-->
 
 <!--
-The facility administrator monitors devices from the [admin dashboard](../admin) and can mark a device "To be found" if it is misplaced or at risk, e.g. needs to be charged due to low battery. The administrator assigns an associate to search the target device by using their device to locate the general area the target device resides based on the Access Point (AP) where it last connected. Then BLE (Bluetooth Low Energy) based proximity indicator and a sound can be played by tapping the Play Sound button on the associate's device to locate the target device by audio sound, determining its location. The volume level and sound duration can be adjusted in the server [Settings](../config).
-
 1. **Animated BLE proximity indicator** – Shows the proximity range of the target device in relation to the searching device. The animation and color changes reflect the proximity as the user moves closer or further away from the device being searched.
-2. **Chirping sound** – Triggers a chirping sound to play on the target device. This is particularly helpful if the device is hidden. The volume level and sound duration can be adjusted in the server [Settings](../config).
-
-The proximity depicted in the BLE indicator is based on the strength of the Bluetooth signal received from the target device. The accuracy of proximity may vary depending on multiple contributing factors, such as noise on the signal measurement, signal reflections and interference.-->
-
-<!--Within proximity of about 1 meter, distance estimation ranges between 0.5 to 2 meters. Further distances will encounter more variation - at 20 meters or more the estimate may vary between 10 to 40 meters. --> 
+Within proximity of about 1 meter, distance estimation ranges between 0.5 to 2 meters. Further distances will encounter more variation - at 20 meters or more the estimate may vary between 10 to 40 meters. --> 
 
 
 
@@ -47,21 +41,21 @@ The next time the target device reports to the server, it identifies it is marke
 3. **Start device search based on connected AP.** <br>
 <font color="blue">[Associate]</font> Open Device Tracker client on the associate's device. In the list of "Devices to be found", tap on the target device to find. The **Device Details** screen appears providing information on the device including “Last Connected AP”, which identifies the last known AP zone where the device is located. Walk to the AP zone and tap **Go** to begin the device search. The target device displays a notification indicating the device is marked "To be found." <br>
 <font color="orange">[Admin]</font> On the admin dashboard, the device automatically changes state from "To be Found" to "Being Found". 
-4. **If [BLE is enabled,](../config) walk towards the target device based on the BLE proximity meter.**
-The Bluetooth Low Energy proximity meter identifies the overall trend based on how far or how close the user is located to the target device. The closer the user is, the further the blue indicator bar expands to the right and the lower the numerical value on the meter as the indicator reaches “Close” or “0” value.  
-
-In the Proximity screen, the BLE signal detection status is displayed next to the Bluetooth icon with one of the following values:
-* **Signal good –** Bluetooth beacons are detected and read from the target device; the estimated proximity is reflected in the meter indicator.
-* **Finding Signal –** Bluetooth beacons are no longer detected from the target device after initial detection. The Bluetooth signal could be blocked or out of range.
-* **No Signal –** Bluetooth beacons are not detected. Possible causes include problems with the Bluetooth radio on either device, the Bluetooth signal is blocked, or the device is out of Bluetooth range.
-
+4. **Walk towards the target device based on the BLE proximity meter, if [BLE is enabled,](../config).**<br>
+The Bluetooth Low Energy proximity meter identifies the _overall trend_ on how far or how close the user is located to the target device. The closer the user is, the further the blue indicator bar expands to the right and the lower the numerical value on the meter as the indicator reaches “Close” or “0” value. _Proximity is determined based on the strength of the Bluetooth signal received from the target device. The accuracy of proximity may vary depending on multiple contributing factors, such as noise on the signal measurement, signal reflections and interference._ In the Proximity screen, the BLE signal detection status is displayed next to the Bluetooth icon with one of the following values:
+       <ul>
+       <li><b>Signal good –</b> Bluetooth beacons are detected and read from the target device; the estimated proximity is reflected in the meter indicator.</li>
+       <li><b>Finding Signal –</b> Bluetooth beacons are no longer detected from the target device after initial detection. The Bluetooth signal could be blocked or out of range.</li>
+       <li><b>No Signal –</b> Bluetooth beacons are not detected. Possible causes include problems with the Bluetooth radio on either device, the Bluetooth signal is blocked, or the device is out of Bluetooth range.</li>
+       </ul>
+ <img style="height:350px" src="find_device_ble.png" />
+ _Figure 1. Device Tracker client with BLE enabled_ 
 5. **Play sound to identify specific device location.** <br>
 <font color="blue">[Associate]</font> Once in the AP zone, tap **Play Sound** on the associate's device to play audio on the target device. Walk towards the chirping sound heard to locate the target device. To return back to the main screen, tap the device back button. <br>
 **Important:** The time specified in the [Reporting Frequency](../config/#applicationconfiguration) needs to elapse before the sound can be played. For example, if the Reporting Frequency is set to 5 minutes, the associate must wait for 5 minutes before tapping **Play Sound**. Once the target device reports to the server and receives the flag that it is in the "To be found" state, it automatically changes the reporting frequency to 3 seconds for more frequent updates to the server until the device has been found. 
-    ![img](find_device.png)
-    _Figure 1. Device Tracker client_ 
-
-5. **Device found.** <br>
+ <img style="height:350px" src="find_device_no_ble.png" />
+ _Figure 2. Device Tracker client with BLE disabled_ 
+6. **Device found.** <br>
 <font color="blue">[Associate]</font> Once the device is found, tap **Device found** at the bottom of the screen. Some devices may require the user to scroll down the screen for the button to be visible. Tap “Yes” to the confirmation message to designate the device as found. <br>
 <font color="orange">[Admin]</font> On the dashboard, the device status changes from “Being found” to “Device has been found”. The admin can take action to set the device back to the “Active” state, placing it back into the active device pool: <br>
        A. Select the device in the dashboard.<br>
@@ -103,7 +97,6 @@ The admin dashboard on the web portal monitors device tracking by providing info
 Prevent devices from being misplaced by monitoring the low battery state so action can be taken by the administrator to charge the device prior to battery loss. Configure the “Low Power Alert Threshold %” in the [Settings screen](../config) from the web portal to set the threshold value. When a device battery drops below this defined threshold, the device is listed in the Low Battery section in the admin dashboard. The admin can then initiate the device to be located by [marking the device "To be found"](./#locatingdevices).
 
 <!--
-
 ##Device Tagging
 Tag devices for easier organization and tracking. Refer to [Organize Devices](../admin/#organizedevices) in the Admin View.
 

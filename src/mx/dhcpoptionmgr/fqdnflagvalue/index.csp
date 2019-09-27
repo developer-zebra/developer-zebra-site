@@ -12,8 +12,15 @@ parm:
   type: string
 ---
 
-Used to specify the value of the optional FQDN flag, which DHCP clients can use to convey information about DNS updates. 
+Used to specify the value of the optional FQDN flag, which DHCP clients can use to convey information about DNS updates. The FQDN Flag value is passed as "x,x,x,x" to overcome a hostname prefixed with a special character.  
+
+**0100 = "E" –** When this bit is set, FQDN is binary-encoded (**recommended**). The DNS Server should have the capability to handle a binary-encoded FQDN value.
+
+**0001 = "S" -** Client will not perform Dynamic DNS update (**not recommended**). When this bit is cleared, the client indicates that it intends to maintain its own FQDN-to-IP mapping.
+
+**0010 = "O" –** DNS Server indication to client (do not set). 
 
 **Parm value input rules**: 
 
-* String of exactly 7 characters containing an FQDN flag value
+* String of exactly 7 characters as "x,x,x,x" containing an FQDN flag value 
+* For example, "0,1,0,0" sends the recommended value of "E"

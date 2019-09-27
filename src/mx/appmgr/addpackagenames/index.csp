@@ -18,7 +18,7 @@ Used to specify one or more apps (by Package Name) to be added to the Doze Mode 
 
 **Input value rules**: 
 
-* String containing one or more Package Names. For example: `com.mycompany.mypackage`.
+* String containing one or more Package Names. For example: `com.mycompany.mypackage`
 * Separate multiple names with commas
 > `Important:` If a name is specified incorrectly in a list, all names following that name are ignored. 
 

@@ -10,10 +10,11 @@ productversion: '1.1'
         <li>Dec. 31, 2019 - Final day to buy SimulScan licenses</li>
         <li>Dec. 31, 2020 - End of support for licensed SimulScan API features</li>
         <li>Device end-of-life - End of support for non-licensed SimulScan API features</li>
-        <li>For more information, refer to <b>PMB 10281</b> on the Zebra Partner Portal:</li>
+        <li>For more information, refer to <b>the full alert</b>:</li>
     </ul>
     <br>
-    <a href="http://partnerportal.zebra.com" class="btn btn-danger">Go to Partner Portal</a> <br></div>
+    <a href="../alert" class="btn btn-danger">See Full Alert</a> <br></div>
+
 
 
 

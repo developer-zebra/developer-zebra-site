@@ -461,7 +461,7 @@ When using StageNow or any EMM system for remote configuration, use of the follo
 **Steps to create StageNow profile to automatically bypass the device Battery Optimization pop-up message:**
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC. 
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
-3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
+3. Ensure the proper MX version is selected at the top drop-down selector. This should match the MX version on the device. See [MX documentation](/mx/mx-version-on-device) for instructions how to check the version. <br>Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
 _Figure 11. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>
@@ -483,7 +483,7 @@ _Figure 14. Generate StageNow barcode_ <br>
 **Steps to create StageNow profile to start Device Tracker service remotely:**
 1. Open [StageNow](https://www.zebra.com/us/en/support-downloads/software/utilities/stagenow.html) on a PC. 
 2. In the StageNow home screen, click “Create New Profile” from the left menu.  <br>
-3. Ensure the proper MX version is selected at the top drop-down selector. This should match the StageNow client version on the device. Select “XpertMode" from the table. Click Create.<br>
+3. Ensure the proper MX version is selected at the top drop-down selector. This should match the MX version on the device. See [MX documentation](/mx/mx-version-on-device) for instructions how to check the version. <br>Select “XpertMode" from the table. Click Create.<br>
 ![img](SN_CreateNewProfile.JPG)
 _Figure 15. Profile wizard_ <br>
 4. Enter the profile name. Click Start.<br>

@@ -3,7 +3,7 @@ publish: true
 title: Barcode APIs
 description: 'This sample application will allow you to scan barcodes based on selected scanner device, trigger type and a few decoder Decoder Params.'
 download: 'https://github.com/Zebra/samples-emdkforxamarin-4_0/archive/master.zip'
-source: 'https://github.com/Zebra/samples-emdkforxamarin-4_0'
+source: 'https://github.com/Zebra/samples-emdkforxamarin-4_0/tree/samples-emdkforxamarin-5_0'
 features:
   - Profile Manager
   - Barcode

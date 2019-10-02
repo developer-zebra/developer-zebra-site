@@ -3,7 +3,7 @@ publish: true
 title: Multi-barcode Scanning
 description: Shows how to scan multiple barcodes simultaneously.
 download: 'https://github.com/Zebra/samples-emdkforxamarin-4_0/archive/master.zip'
-source: 'https://github.com/Zebra/samples-emdkforxamarin-4_0'
+source: 'https://github.com/Zebra/samples-emdkforxamarin-4_0/tree/samples-emdkforxamarin-5_0'
 features:
   - Profile Manager
   - Barcode

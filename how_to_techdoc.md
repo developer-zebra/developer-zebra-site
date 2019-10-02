@@ -21,8 +21,7 @@
 2. Copy the folder of an existing CSP in /csp folder
 3. Edit the contents of the copied CSP stub file to match the new CSP
 4. When built, a productized version of the MX CSP page will be injected into the folder. 
-
-Rob is a genius. 
+5. Acknowledge that Rob is a genius. =:^] 
 
 ## Document a NEW PRODUCT
 (example: Enterprise Browser 1.6)
@@ -114,6 +113,8 @@ From within the branch that develop is merging into:
 
 ## Add an MX version to Android Studio
 
+As of EMDK 7.1, EMDK plug-ins are distributed through the JCenter repository, making these steps obsolete. 
+
 * On a Mac, open the folder: "/users/shared/Symbol EMDK for Android/wizard/DSD" 
 * Create a folder for the new MX version, following the existing naming convention
 * Copy the new DSDs to the new folder
@@ -125,12 +126,12 @@ From within the branch that develop is merging into:
 
 ## Add a new CSP to MX
 
-* Create a branch off develop
-* Analyze the new CSPs DSD for the number and types of parameters
+* On develop repo, go to "tut" branch 
+* Analyze the new CSP's DSD for the number and types of parameters
 * Identify and copy an existing CSP that's similar to the new one
 * Rename the folders as needed to correspond to the new DSD
 * Search and replace the contents of the copied index.md files for mx: "x.x"; osx: "x.x"; apilevel: "xx"; csp: name; and any other global information, as appropriate
-* Manually edit remaining file content as appropriate to document usage CSP (see gerrit repo for Mini-HLD, release notes and other techteam artifacts provided by engineering. Also see APA slides)
+* Manually edit remaining file content as appropriate to document usage CSP (see gerrit repo for Mini-HLD, release notes and other techteam artifacts provided by engineering. Also see APA slides, Polarion for parm descriptions)
 * Edit /mx/index.md; /mx/&lt;newCSPname&gt;/index.md; /mx/compatibility/index.md as needed for the new CSP
 * Edit /src/build.js (if necessary) to add the new version's directory to the source list
 * In StageNow docs: 
@@ -156,3 +157,18 @@ From within the branch that develop is merging into:
  * cd ..
  * rm -rf old-repository.git
 * See emdk-api-generation doc for more details
+
+ALTERNATE
+
+1. In a browser, go to the prior version of the sample-code branch (i.e. "samples-emdkforxamarin-4_0")
+2. Click the green "Clone or download" button and copy the clone URL
+3. In a terminal window, go to your repo folder and make a clone of the samples branch using this command:
+ * git clone "https://github.com/Zebra/samples-emdkforxamarin-4_0" (replacing quoted text with copied URL)
+4. Switch to the new cloned repo and create a new incremented samples branch
+5. Copy the new sample files into the new branch off the master branch: 
+ git checkout -b samples-emdkforxamarin-5_0 master
+6. Add, commit and push the new sample files
+7. In the browser, switch to the newly created branch and copy the URL
+8. Insert the copied URL into guide pages
+
+

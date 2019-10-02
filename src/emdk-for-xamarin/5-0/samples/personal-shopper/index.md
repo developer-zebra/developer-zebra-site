@@ -2,7 +2,7 @@
 publish: true
 title: Personal Shopper
 description: This sample application will show how the Personal Shopper APIs can be used to interact with the MC18 Cradle programmatically.
-download: 'https://github.com/Zebra/samples-emdkforxamarin-4_0/archive/master.zip'
+download: 'https://github.com/Zebra/samples-emdkforxamarin-4_0/archive/samples-emdkforxamarin-5_0.zip'
 source: 'https://github.com/Zebra/samples-emdkforxamarin-4_0/tree/samples-emdkforxamarin-5_0'
 
 devices:

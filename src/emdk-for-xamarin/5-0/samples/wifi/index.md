@@ -2,7 +2,7 @@
 publish: true
 title: WiFi Configuration
 description: This sample application demonstrate how to manage WiFi networks.
-download: 'https://github.com/Zebra/samples-emdkforxamarin-4_0/archive/master.zip'
+download: 'https://github.com/Zebra/samples-emdkforxamarin-4_0/archive/samples-emdkforxamarin-5_0.zip'
 source: 'https://github.com/Zebra/samples-emdkforxamarin-4_0/tree/samples-emdkforxamarin-5_0'
 features:
   - Profile Manager
@@ -24,7 +24,6 @@ layout: sample.html
 product: EMDK For Xamarin
 productversion: '5.0'
 ---
-
 ##Overview
 The Wifi Profile allows you to configure Wi-Fi settings for the device. 
 

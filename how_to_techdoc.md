@@ -158,17 +158,20 @@ As of EMDK 7.1, EMDK plug-ins are distributed through the JCenter repository, ma
  * rm -rf old-repository.git
 * See emdk-api-generation doc for more details
 
-ALTERNATE
+## Update EMDK Sample Code (alternative method)
 
 1. In a browser, go to the prior version of the sample-code branch (i.e. "samples-emdkforxamarin-4_0")
 2. Click the green "Clone or download" button and copy the clone URL
-3. In a terminal window, go to your repo folder and make a clone of the samples branch using this command:
+3. Navigate to your repo folder in a terminal window and make a clone of the samples branch using this command:
  * git clone "https://github.com/Zebra/samples-emdkforxamarin-4_0" (replacing quoted text with copied URL)
-4. Switch to the new cloned repo and create a new incremented samples branch
-5. Copy the new sample files into the new branch off the master branch: 
- git checkout -b samples-emdkforxamarin-5_0 master
+4. Switch to the new cloned repo and create a new incremented samples branch off the "master" branch using command similar to:
+ * git checkout -b samples-emdkforxamarin-5_0 master
+5. Copy the new sample files into the new branch off the master branch, REPLACING the existing folders
 6. Add, commit and push the new sample files
-7. In the browser, switch to the newly created branch and copy the URL
-8. Insert the copied URL into guide pages
+7. In the browser, switch to the newly created branch and copy the URL from the browser's address bar
+8. Insert the copied URL into the "source:" line on the sample guide pages' frontmatter
+9. Click the green "Clone or download" button, right-click the "Download ZIP" link and select "Copy Link Address" from the right-click drop-down
+10. Insert the copied URL into the "download:" line on the sample guide pages' frontmatter
+
 
 

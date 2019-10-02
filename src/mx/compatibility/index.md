@@ -152,13 +152,13 @@ csps:
     url: /mx/fotamgr
     csp: fotamgr
   - type: section
-    title: Persist Manager
-    url: /mx/persistmgr
-    csp: persistmgr
-  - type: section
     title: NFC Manager
     url: /mx/nfcmgr
     csp: nfcmgr
+  - type: section
+    title: Persist Manager
+    url: /mx/persistmgr
+    csp: persistmgr
   - type: section
     title: Personal Dictionary
     url: /mx/personaldictionarymgr

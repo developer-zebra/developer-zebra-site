@@ -6,44 +6,47 @@
 **NOTE**: When selecting the source CSP to copy, pick one with a small number of parms with at least one list parm and one string parm. BluetoothMgr is a good choice.  
 3. Edit one of the parms to match data of the new CSP and REPLICATE THAT ONE for the remaining parms. This will minimize editing later. 
 **REMEMBER, ALWAYS USE ALL LOWER CASE** for folder names.
-4. Edit the file at the root of the csp directory, which controls the title on the CSP detail page and provides a description elsewhere.  
+4. Edit the `index.md` file at the root of the new CSP's directory, which controls the title on the CSP detail page and provides a description of the CSP in other places.
 
 ### For EMDK-A, EMDK-X and StageNow
 
-####EMDK
-1. Add a menu choice to /profile-manager-guides
+####EMDK (A and X)
+0. Confirm that the CSP is (or will be) supported by the current (or next) version of EMDK A and X 
+1. Add a menu choice to /profile-manager-guides, paying attention to existing CSP categorization
 2. Copy the folder of an existing CSP in EMDK's /mx folder (**not MX's MX folder**)
 3. Edit the contents of the copied CSP stub file to match the new CSP
-4. When built, a productized version of the MX CSP page will be injected into the folder. 
+4. When built, a productized version of the CSP's detail page will be injected into the folder 
+5. Acknowledge that Rob is a genius for developing this time-saving gem =:^] 
 
 #### StageNow
-1. Add a menu choice to /settingtypes
+1. Add a menu choice to /settingtypes, paying attention to existing CSP categorization
 2. Copy the folder of an existing CSP in /csp folder
 3. Edit the contents of the copied CSP stub file to match the new CSP
-4. When built, a productized version of the MX CSP page will be injected into the folder. 
-5. Acknowledge that Rob is a genius. =:^] 
+4. When built, a productized version of the CSP's detail page will be injected into the folder
+5. Genuflect once again to Rob. =:^] 
 
 ## Document a NEW PRODUCT
 (example: Enterprise Browser 1.6)
 
-### I. Create a new BRANCH in the developer-zebra-site repo from the same folder from which you'll be copying the product. For example, if you're documenting EB 1.6, checkout the branch containing EB 1.5. 
+### I. Check out the product branch to be updated. For EB, the command would be as follows: 
 
 		:::term
-		$ git checkout eb-1.5
-		$ git checkout -b eb-1.6 ("eb-1.6" = new branch that contains EB 1.5)
-
+		$ git checkout eb
 
 ### II. Create folder structure
 
 1. In product folder ("enterprise-browser"), copy the folder of prior version.
 2. Rename the copied folder to "1-6" (separate digits with a **dash**, **NOT a dot**).
-3. Using your editor, search and replace "productversion: 1-5" with "productversion: 1-6" on all pages. 
-4. Search and replace "1.5" with "1.6" in appropriate places (a manual replacement process is recommended; some search results will be "false positives," such as those that read "for EB 1.5 and higher...").
+3. Commit this change using the commands and comment similar to the following: 
 
 		:::term
-		$ git add . (stages all changed files for commit)  
-		$ git commit -m 'EB 1.6 initial commit' 
+		$ git add . <-- stages all changed files for commit  
+		$ git commit -m '[TUT-12345] EB 1.6 initial commit (raw copy of EB 1.5)' 
 		$ git push 
+
+4. Using your text editor, search and replace "productversion: 1-5" with "productversion: 1-6" on all pages. 
+5. Search and replace "1-5" with "1-6" to update menus and links. Notice use of a hyphen (-) and NOT a dot (.).
+6. Search and replace "1.5" with "1.6" in appropriate places (a manual replacement process is recommended; some search results will be "false positives," such as those that read "for EB 1.5 and higher...").
 
 <!-- THIS PUSH-COMMAND PARAMETER IS NO LONGER REQUIRED : 
 		--set-upstream origin eb-1.6 
@@ -172,6 +175,5 @@ As of EMDK 7.1, EMDK plug-ins are distributed through the JCenter repository, ma
 8. Insert the copied URL into the "source:" line on the sample guide pages' frontmatter
 9. Click the green "Clone or download" button, right-click the "Download ZIP" link and select "Copy Link Address" from the right-click drop-down
 10. Insert the copied URL into the "download:" line on the sample guide pages' frontmatter
-
-
+11. Build the pages and test the links
 

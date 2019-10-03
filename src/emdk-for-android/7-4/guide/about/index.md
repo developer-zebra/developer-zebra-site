@@ -73,7 +73,7 @@ Devices and/or dessert flavors **shown in bold are newly added** in the current 
 ## New in v7.4 
 
 ####`OCTOBER 2019 UPDATE:` 
-**EMDK for Android 7.4.1 has been certified to support [Android Studio 3.5](https://developer.android.com/studio/)**; an update of the EMDK plug-in to version 7.4.1 is required to use Android Studio 3.5 (or higher).
+**EMDK for Android 7.4.1 has been certified to support [Android Studio 3.5](https://developer.android.com/studio/)**; the EMDK plug-in must be updated to version 7.4.1 to work with Android Studio 3.5 (or higher).
 
 ### Nougat Support Ends
 **EMDK-A 7.4 and higher no longer targets devices running Android 7.x Nougat or older, including the WT6000 wearable computer**. To target the WT6000 (which currently supports up to Nougat), please use [EMDK-A 7.3](../../../7-3/guide/about).   

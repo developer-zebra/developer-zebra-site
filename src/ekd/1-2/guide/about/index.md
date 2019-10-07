@@ -7,25 +7,27 @@ productversion: '1.2'
 
 ## Overview
 
-Enterprise Keyboard Designer is a free GUI tool for Windows 7, 8 or 10 that can create custom keyboards, button bars and other application-specific input layouts **for use on Zebra Android devices with Zebra's [Enterprise Keyboard](/enterprise-keyboard) 3.2 (and higher) installed**. EKD is designed for making specialized **input panels invoked programmatically through Android intents** to enhance an application and enable efficient and accurate data entry when specific input situations arise. 
+Enterprise Keyboard Designer (EKD) is a free GUI tool for Windows that can be used to create customized application-specific key layouts **for use on Zebra Android devices with Zebra's [Enterprise Keyboard](/enterprise-keyboard) 3.2 (and higher) installed**. EKD is intended for making specialized **input panels invoked programmatically through Android intents** to enhance an application and enable efficient and accurate data entry when specific input situations arise. 
 
 >**NOTE**: This tool is ***NOT*** intended for creating layouts to replace any general-purpose keyboard.
 
+<!-- do not use this image; some laouyts are not yet possible. 
 <img alt="" style="height:350px" src="ekd_use_cases.png"/>
+
+***Click image to enlarge, ESC to exit***
 <br>
+ -->
 
 #### EKD is perfect for making...
-* Numerical and/or symbolic input layouts
-* Function key layouts
-* Custom login screens
-* Function/scan combo button bars
-* Application-specific menus and pick-lists
-* Custom button-bars of any kind
-* Input panels of custom size or shape (i.e. narrow, vertical, horizontal, etc.)
+* Numerical and/or symbolic input layouts 
+* Function-key layouts
+* Layouts that combine function keys with buttons for scanning or other purposes
+* Key and button layouts with custom colors, images and levels of transparancy
+* Layouts of custom size or shape (i.e. narrow, vertical, horizontal, etc.)
 
 #### EKD should NOT be used...
-* To create a general-purpose keyboard replacement
-* On devices that do not have Zebra Enterprise Keyboard 3.2 (or higher) installed
+* To create a general-purpose device keyboard replacement
+* On devices that do not have Zebra Enterprise Keyboard 3.2 (or higher) installed and set as the default
 
 Enterprise Keyboard Designer employs a drag-and-drop interface for quickly creating any number of customized keyboard designs to address specific input requirements. It provides control over fonts, images, key codes, layout transparency and many other layout properties. An unlimited number of custom key layouts can be created, deployed to devices and called by customer apps as needed to match specific types of input. **Zebra Enterprise Keyboard (EKB) must be installed to make use of custom EKD layouts**. EKB is preinstalled on many Zebra devices and available as a side-load for others. 
 

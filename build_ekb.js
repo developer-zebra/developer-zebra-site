@@ -269,11 +269,17 @@ var sitebuild = Metalsmith(__dirname)
        .use(foldermenu({
         folder: 'enterprise-keyboard/3-1/'
     }))
+       .use(foldermenu({
+        folder: 'enterprise-keyboard/3-2/'
+    }))
 
 // Enterprise Keyboard Designer build section
 
         .use(foldermenu({
         folder: 'ekd/1-0/'
+    }))
+        .use(foldermenu({
+        folder: 'ekd/1-2/'
     }))
 
     .use(showdown({literalMidWordUnderscores:true,ghCodeBlocks:false,smartIndentationFix:true}))

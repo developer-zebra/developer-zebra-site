@@ -137,6 +137,7 @@ Once deployed to the device, SimulScan Licenses are installed automatically. For
 
 -----
 
+<!-- 9/7/19- Removed demo section; product scheduled for EOL 12/31/19.  
 ## Demo License
 Demo Licenses are available for companies wishing to evaluate SimulScan or while integrating a custom app using SimulScan APIs. To request a demo License to enable SimulScan advanced features and APIs on a device:
 
@@ -147,7 +148,9 @@ A reply will be sent with access credentials for [Zebra's Software Licensing Por
 
 * **Follow directions** to [assign the license](#iiiassignlicenses). 
 
-<!--
+ -->
+
+ <!--
 ## Device License
 SimulScan licenses are purchased through Zebra Technologies product resellers. Licensees receive an email with access credentials for the [Zebra Enterprise Software Licensing system](https://softwarelicensing.zebra.com/), where licenses are allocated to devices by an administrator. The general process is explained below. For additional help, please refer to [Licensing documentation](https://softwarelicensing.zebra.com/documentation/index.html). 
 

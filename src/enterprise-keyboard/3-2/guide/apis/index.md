@@ -1,8 +1,8 @@
 ---
 title: Enterprise Keyboard APIs
 layout: guide.html
-product: Enterprise Keyboard Designer
-productversion: '1.2'
+product: Enterprise Keyboard
+productversion: '3.2'
 ---
 
 ## Overview

@@ -11,8 +11,6 @@ menu:
       url: /ekd/1-2/guide/setup
     - title: Using EKB
       url: /ekd/1-2/guide/usage
-    - title: APIs
-      url: /ekd/1-2/guide/apis
     - icon: fa fa-download
       url: /ekd/1-2/download
     - icon: fa fa-search

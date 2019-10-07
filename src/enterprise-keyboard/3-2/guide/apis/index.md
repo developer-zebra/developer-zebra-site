@@ -7,7 +7,7 @@ productversion: '3.2'
 
 ## Overview
 
-Zebra Enterprise Keyboard APIs operate primarily through Android intents&ndash;specific commands that can be used by Android applications to control EKB and layouts made with the Enterprise Keyboard Designer. This guide describes the functionality of the intents supported by EKB and their effects on EKD layouts.
+Zebra Enterprise Keyboard APIs operate primarily through Android intents&ndash;specific commands that can be used by Android applications to control EKB and layouts made with the [Enterprise Keyboard Designer](/ekd), Zebra's GUI-based custom keyboard creator tool for Windows. This guide describes the functionality of the intents supported by EKB and their effects on EKD layouts.
 
 ### Requirements
 Using EKB APIs requires experience with Java programming, familiarity with Android intents and at least one custom layout file (i.e. `myLayout.encrypted`). It also requires knowledge of EKB usage, features and terminology. Learn more [about Enterprise Keyboard](http://techdocs.zebra.com/enterprise-keyboard).

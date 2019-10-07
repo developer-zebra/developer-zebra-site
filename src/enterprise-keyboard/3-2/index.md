@@ -11,6 +11,8 @@ menu:
       url: /enterprise-keyboard/3-2/guide/setup
     - title: Customize
       url: /enterprise-keyboard/3-2/guide/settings
+    - title: APIs
+      url: /enterprise-keyboard/3-2/guide/apis
     - icon: fa fa-download
       url: /enterprise-keyboard/3-2/download
     - icon: fa fa-search

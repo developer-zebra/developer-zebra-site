@@ -9,7 +9,7 @@ menu:
       url: /ekd/1-2/guide/about
     - title: Setup
       url: /ekd/1-2/guide/setup
-    - title: Using EKB
+    - title: Using EKD
       url: /ekd/1-2/guide/usage
     - icon: fa fa-download
       url: /ekd/1-2/download

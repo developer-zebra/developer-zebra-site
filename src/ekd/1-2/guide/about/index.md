@@ -61,6 +61,7 @@ Enterprise Keyboard Designer employs a drag-and-drop interface for quickly creat
 ### Prerequisites
 
 * Computer running Windows 7, 8 or 10
+* Enterprise Keyboard Designer 1.2 (or higher) installed [(how to download)](../../download)
 * One or more [supported Zebra devices](/enterprise-keyboard/3-2/download/) running Android 7.x Nougat or higher 
 
 -----

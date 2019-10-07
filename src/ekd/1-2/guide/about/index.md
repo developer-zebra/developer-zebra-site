@@ -11,15 +11,19 @@ Enterprise Keyboard Designer is a free GUI tool for Windows 7, 8 or 10 that can 
 
 >**NOTE**: This tool is ***NOT*** intended for creating layouts to replace any general-purpose keyboard.
 
-#### Example Use Cases:
+<img alt="" style="height:350px" src="ekd_use_cases.png"/>
+<br>
+
+#### EKD is perfect for making...
 * Numerical and/or symbolic input layouts
 * Function key layouts
 * Custom login screens
+* Function/scan combo button bars
 * Application-specific menus and pick-lists
 * Custom button-bars of any kind
 * Input panels of custom size or shape (i.e. narrow, vertical, horizontal, etc.)
 
-#### EKD Should NOT be Used:
+#### EKD should NOT be used...
 * To create a general-purpose keyboard replacement
 * On devices that do not have Zebra Enterprise Keyboard 3.2 (or higher) installed
 

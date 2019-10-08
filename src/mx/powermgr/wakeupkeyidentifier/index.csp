@@ -49,4 +49,5 @@ parm:
 
 Used to select an individual device button to be used to wake the device from power-saving modes.
 
+OLD OLD
  when it detects a hardware signal (such as a button press) or a keycode (software) signal. 

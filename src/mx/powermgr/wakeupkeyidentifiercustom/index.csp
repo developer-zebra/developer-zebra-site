@@ -1,0 +1,19 @@
+---
+csp: powermgr
+title: Custom Wake-up Key Identifier
+type: parm
+order: 40
+mx: "9.2"
+devicetype: A
+parm:
+  presentif: The Wake-up Key Identifier is "86" and Wake Individual Action is NOT "Do Nothing"
+  pivotal: No
+  name: WakeUpKeyIdentifierCustom
+  type: string
+---
+
+Used to enter a custom keycode 
+
+**Parm value input rules**: 
+
+* Text string of at least one character

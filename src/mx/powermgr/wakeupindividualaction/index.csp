@@ -23,14 +23,13 @@ parm:
       name: Turn on
       mx: "9.2"
       osx: "7.7"
-      description: Enables power, PTT and scan buttons to wake the device from suspend mode. 
+      description: Enables individual buttons to be selected for waking the device from suspend mode. 
     - code: 2
       devicetype: B
       name: Turn off
       mx: "9.2"
       osx: "7.7"
-      description: Allows only the power button to wake the device from suspend mode. 
+      description: Prevents individual buttons from being selected to wake the device from suspend mode. 
 ---
 
-OLD OLD OLD
-Used to control the button-presses that wake the device from suspend mode. **Supported devices by default wake only when the power button is pressed**. Enabling this paramater (option 1) adds the push-to-talk (PTT) button (on the left side of the device) and scan buttons as wake-up sources.
+Controls whether individual device buttons are allowed to wake the device from suspend mode. 

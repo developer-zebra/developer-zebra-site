@@ -1,6 +1,6 @@
 ---
 csp: powermgr
-title: Supress Reboot
+title: Suppress Reboot
 type: parm
 order: 4
 mx: "8.1"

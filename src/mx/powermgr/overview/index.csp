@@ -14,7 +14,7 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
 
 * Reboot a device
 * Update, upgrade or downgrade the OS on a device
-* Supress reboot following an OS upgrade or downgrade
+* Suppress reboot following an OS upgrade or downgrade
 * Put a device into Sleep Mode
 * Perform an Enterprise Reset on a device
 * Bypass the setup wizard (GMS Welcome Screen)
@@ -22,15 +22,18 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
 * Wipe a device (erase all storage) 
 * Verify an OS update
 * Perform multiple updates in a single step
-* Enable/disable Doze Mode
-* Enable/disable Wake-up Sources
-* Enable/disable keyboard heater on VC8300 devices. 
-* Enable/disable scanner-window heater on MC93 devices. 
+* Enable/disable: 
+ * Doze Mode
+ * Wake-up methods (hardware or software)
+ * Wake-up sources (keys)
+ * Individual buttons to wake device  
+ * Keyboard heater on VC8300 devices
+ * Scanner-window heater on MC93 devices. 
 * **On the VC80x vehicle-mounted computer and similarly equipped Zebra devices**: 
  * Turn power to specific serial and USB ports on and off
  * Control heaters for touch panel and battery, and on serial and USB ports
  * Set temperature thresholds (in degrees Celsius) for turning heaters on and off
- * Set the device to automatically turn on and/or off with the vehicle-mounted computer and similarly equipped Zebra devices ignition switch
+ * Set the device to automatically turn on and/or off vehicle-mounted computers along with vehicle ignition switch
  * Set a delay (in minutes) for device auto-off
 
 ### Sleep Mode

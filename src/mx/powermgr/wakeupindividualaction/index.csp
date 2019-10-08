@@ -33,3 +33,5 @@ parm:
 ---
 
 Controls whether individual device buttons are allowed to wake the device from suspend mode. 
+
+This parameter works in concert with 

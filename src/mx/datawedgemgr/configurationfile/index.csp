@@ -4,6 +4,7 @@ title: Configuration File
 type: parm
 order: 5
 mx: "9.2"
+apilevel: "7.6"
 devicetype: A
 parm:
   pivotal: No

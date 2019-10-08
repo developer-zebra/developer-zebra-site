@@ -4,6 +4,7 @@ title: Auto-import Settings Enable/Disable
 type: parm
 order: 4
 mx: "9.2"
+apilevel: "7.6"
 devicetype: A
 parm:
   pivotal: No
@@ -12,6 +13,7 @@ parm:
   list:
     - code: 86
       mx: "9.2"
+      apilevel: "7.6"
       devicetype: A
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to device settings; any previously selected setting is retained.
@@ -19,12 +21,14 @@ parm:
       devicetype: A
       name: Turn On
       mx: "9.2"
+      apilevel: "7.6"
       description: Causes settings contained in a Configuration file to take effect as soon as the file is pushed to the device if DataWedge is running, or to be put into effect the next time DataWedge launches.
     - code: 0
       devicetype: A
       name: Turn Off
       mx: "9.2"
-      description: Maintains current DataWedge settings and does not activate settings contained in a Configuration file pushed to the device.
+      apilevel: "7.6"
+      description: Maintains current DataWedge settings and does not activate settings contained in a Configuration file pushed to the device. Use this option to prevent unauthorized changes to the DataWedge configuration. 
 ---
 
-This is the On/Off switch for automatic importation of DataWedge configuration files when they're pushed to the `/enterprise/device/settings/datawedge/autoimport` folder on the device. When enabled (option 1), settings contained in a Configuration file take effect as soon as the file is pushed to the device if DataWedge is running when the file is received. If DataWedge is not running when a config file is pushed, settings take effect the next time DataWedge is launched. 
+This is the On/Off switch for automatic importation of DataWedge configuration files when they're pushed to the `/enterprise/device/settings/datawedge/autoimport` folder on the device. When enabled (option 1), settings contained in a Configuration file take effect as soon as the file is pushed to the device if DataWedge is running when the file is received. If DataWedge is not running when a config file is pushed, settings take effect the next time DataWedge is launched. **Select "Turn Off" (option 0) to prevent unauthorized changes to the DataWedge configuration that could result from a file being pushed to the auto-import folder**.

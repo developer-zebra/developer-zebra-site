@@ -10,7 +10,7 @@ parm:
   name: AutoImporting
   type: list
   list:
-    - code: 0
+    - code: 86
       mx: "9.2"
       devicetype: A
       name: Do not change

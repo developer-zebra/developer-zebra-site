@@ -44,7 +44,7 @@ parm:
       devicetype: A
       name: Custom
       mx: "9.2"
-      description: Allows use of a custom key identifier. Use with Custom Wake-up Key Identifier parameter. 
+      description: Allows use of a custom key identifier. See Custom Wake-up Key Identifier parameter. 
 ---
 
-Used to select an individual device button to allow or prevent the device from waking from power-saving modes.
+Used to select an individual device button to allow or prevent the device from waking from power-saving modes. 

@@ -6,7 +6,7 @@ order: 51
 mx: "8.0"
 osx: "7.7"
 devicetype: A,B
-info: Supported on TC70x and TC75x devices with MX 9.2. Otherwise supported on TC20/TC25 devices only.
+info: Supported on TC70x and TC75x devices with MX 9.2 or higher. Otherwise supported on TC20/TC25 devices only.
 parm:
   pivotal: Yes
   name: WakeUpSources

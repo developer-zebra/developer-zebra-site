@@ -7,7 +7,6 @@ mx: "4.1"
 apilevel: "1"
 devicetype: A,B
 parm:
-  presentif: The Action is NOT "Broadcast"
   pivotal: No
   name: Type
   type: string

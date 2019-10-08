@@ -1,0 +1,52 @@
+---
+csp: powermgr
+title: Wake-Up Key Identifier
+type: parm
+order: 50
+mx: "9.2"
+devicetype: A
+parm:
+  pivotal: Yes
+  name: WakeUpKeyIdentifier
+  type: list
+  list:
+    - code: 1
+      devicetype: A
+      name: BUTTON_L1
+      mx: "9.2"
+      description: BUTTON_L1 
+    - code: 2
+      devicetype: A
+      name: BUTTON_L2
+      mx: "9.2"
+      description: BUTTON_L2 Enables device wake-up when a programmable keycode signal is detected. 
+    - code: 3
+      devicetype: A
+      name: BUTTON_R1
+      mx: "9.2"
+      description: BUTTON_R1 Enables device wake-up when a programmable keycode signal is detected. 
+    - code: 4
+      devicetype: A
+      name: BUTTON_R2
+      mx: "9.2"
+      description: BUTTON_R2 Enables device wake-up when a programmable keycode signal is detected. 
+    - code: 5
+      devicetype: A
+      name: GUN_TRIGGER
+      mx: "9.2"
+      description: GUN_TRIGGER - Grip (Gun) Trigger Enables device wake-up when a programmable keycode signal is detected. 
+    - code: 6
+      devicetype: A
+      name: REAR_BUTTON
+      mx: "9.2"
+      description: Rear button (if so equipped) Enables device wake-up when a programmable keycode signal is detected. 
+    - code: 86
+      devicetype: A
+      name: Custom
+      mx: "9.2"
+      description: Custom Enables device wake-up when a programmable keycode signal is detected. 
+---
+
+Used to select an individual device button to be used to wake the device from power-saving modes.
+
+ when it detects a hardware signal (such as a button press) or a keycode (software) signal. 

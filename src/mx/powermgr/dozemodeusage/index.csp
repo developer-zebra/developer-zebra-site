@@ -19,13 +19,13 @@ parm:
       description: This value (or the absence of this parm from the XML) will cause no action to be performed on the device; any previously selected setting will be retained.
     - code: 1
       devicetype: A,B
-      name: Enable
+      name: Turn on
       mx: "7.2"
       osx: "7.3"
       description: Enables Doze Mode energy saving features on the device. 
     - code: 2
       devicetype: A,B
-      name: Disable
+      name: Turn off
       mx: "7.2"
       osx: "7.3"
       description: Disables Doze Mode energy saving features on the device. 

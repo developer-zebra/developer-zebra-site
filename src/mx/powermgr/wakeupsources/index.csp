@@ -5,8 +5,8 @@ type: parm
 order: 51
 mx: "8.0"
 osx: "7.7"
-devicetype: B
-info: Supported on TC20/TC25 devices only.
+devicetype: A,B
+info: Supported on TC70x and TC75x devices with MX 9.2. Otherwise supported on TC20/TC25 devices only.
 parm:
   pivotal: Yes
   name: WakeUpSources
@@ -15,31 +15,31 @@ parm:
     - code: 0
       mx: "8.0"
       osx: "7.7"
-      devicetype: B
+      devicetype: A,B
       name: Do not change
       description: This value (or the absence of this parm from the XML) causes no change to the device; any previously selected setting is retained.
     - code: 1
-      devicetype: B
+      devicetype: A,B
       name: Turn on
       mx: "8.0"
       osx: "7.7"
       description: Enables power, PTT and scan buttons to wake the device from suspend mode. 
     - code: 2
-      devicetype: B
+      devicetype: A,B
       name: Turn off
       mx: "8.0"
       osx: "7.7"
       description: Allows only the power button to wake the device from suspend mode. 
 ---
 
-Used to control the button-presses that wake the device from suspend mode. **Supported devices by default wake only when the power button is pressed**. Enabling this paramater (option 1) adds the push-to-talk (PTT) button (on the left side of the device) and scan buttons as wake-up sources.
+Used to control the button-presses that wake the device from suspend mode. **Supported devices by default wake only when the power button is pressed**. Enabling this parameter (option 1) adds the push-to-talk (PTT) button (on the left side of the device) and scan buttons as wake-up sources. **To control individual buttons, see the Wake-up Individual Action parameter.**
 
 <!-- 9/11/19- per eng: 
 With MX 9.2, this parm will be supported on TC7x and TC5x devices too.
 
 So...
 
-1. Make the note something like "info: With MX versions prior to 9.2, supported on TC20/TC25 devices only."
+1. Make the note something like "info: On devices with MX versions prior to 9.2, supported on TC20/TC25 devices only." (obviously added the TC7x part too). 
 2. Don't forget to update the devicetype: field.
 
 -->

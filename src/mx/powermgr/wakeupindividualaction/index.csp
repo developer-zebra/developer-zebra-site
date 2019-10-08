@@ -32,6 +32,4 @@ parm:
       description: Prevents individual buttons from being selected to wake the device from suspend mode. 
 ---
 
-Controls whether individual device buttons are allowed to wake the device from suspend mode. 
-
-This parameter works in concert with 
+Controls whether individual device buttons are allowed to wake the device from suspend mode. For example, if after using the Wake-up Sources parameter to "Turn on" all buttons as wake-up sources, this parameter can be used to turn off individual buttons identified using this and the Wake-up Key Identifier parameters.  

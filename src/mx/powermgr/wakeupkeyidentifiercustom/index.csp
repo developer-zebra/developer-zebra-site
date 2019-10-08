@@ -2,7 +2,7 @@
 csp: powermgr
 title: Custom Wake-up Key Identifier
 type: parm
-order: 53
+order: 54
 mx: "9.2"
 devicetype: A
 parm:
@@ -12,7 +12,7 @@ parm:
   type: string
 ---
 
-Used to enter a custom key identifier code.  
+Used to enter a custom key identifier code to allow or prevent the device from waking from power-saving modes when that key signal is detected.
 
 **Parm value input rules**: 
 

@@ -18,7 +18,7 @@ Used to enter the name of a file on the device containing configuration settings
 
 * String from 0&ndash;255 characters containing name of configuration file on the device
 
-DataWedge supports the importing of Config files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices delivered through commercially available Enterprise Mobility Management (EMM) systems. When DataWedge launches, it checks the `/enterprise/device/settings/datawedge/autoimport` folder for the presence of such files. If any are found, it executes the following functions:
+DataWedge supports the importation of Config files (`datawedge.db`) and Profiles (`dwprofile_profilename.db`) to devices delivered through commercially available Enterprise Mobility Management (EMM) systems. When DataWedge launches, it checks the `/enterprise/device/settings/datawedge/autoimport` folder for the presence of such files. If any are found, it executes the following functions:
 
 1. Import the new file(s)
 2. Replace the existing Config file and like-named Profile(s), if any
@@ -26,7 +26,9 @@ DataWedge supports the importing of Config files (`datawedge.db`) and Profiles (
 4. Put new settings immediately into effect
 
 ##### Important Notes:
-* For the best experience, **Zebra strongly recommends that users be advised to <u>exit any DataWedge configuration UI screen</u>** before new Config files are remotely deployed.
-* **On devices running Android KitKat or later**, the `/enterprise` folder cannot be seen with File Explorer or other user-level tools. Moving configuration files to and from the `/autoimport` or `/enterprisereset` folders must be done programmatically, or with a staging client app or EMM.
+* For the best users experience, **Zebra strongly recommends that device users be advised to <u>exit any DataWedge configuration UI screen</u>** before new Config files are remotely deployed.
 * **DataWedge versions prior to 6.9** attempt to consume any of the monitored “`.db`” files as soon the file name(s) appear in the `/autoimport` folder. Therefore, **it is possible for DataWedge to attempt to consume a file before it is completely written**. To avoid this condition, **Zebra recommends initially storing the file with an alternate extension** (i.e. "`.tmp`") and changing the extension to `.db` once writing is complete.
-* **Zebra recommends applying explicit file permissions to the all `.db` files** so that DataWedge file procedures are not impeded.
+* **Zebra recommends applying explicit file permissions to all `.db` files** so that DataWedge file procedures are not impeded.
+
+<!-- 10/8/19- removed; this CSP requires Android 7.6 
+* **On devices running Android KitKat or later**, the `/enterprise` folder cannot be seen with File Explorer or other user-level tools. Moving configuration files to and from the `/autoimport` or `/enterprisereset` folders must be done programmatically, or with a staging client app or EMM. -->

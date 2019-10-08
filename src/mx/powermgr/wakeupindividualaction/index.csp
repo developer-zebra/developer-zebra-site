@@ -2,7 +2,7 @@
 csp: powermgr
 title: Wake-up Individual Action Enable/Disable
 type: parm
-order: 51
+order: 52
 mx: "9.2"
 osx: "7.7"
 devicetype: B

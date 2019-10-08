@@ -2,7 +2,7 @@
 csp: powermgr
 title: Custom Wake-up Key Identifier
 type: parm
-order: 40
+order: 53
 mx: "9.2"
 devicetype: A
 parm:

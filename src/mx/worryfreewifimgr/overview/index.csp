@@ -16,6 +16,7 @@ WorryFree Wi-Fi Manager (WorryFreeWifiMgr) controls Zebra Wi-Fi analysis and dia
  * Wi-Fi operations analysis
  * Wi-Fi coverage area analysis
  * Packet capture
+ * Temporary password for user access to packet capture
  * Ping data 
  * User access to on-device client UI and password change
  * Call admission control
@@ -35,6 +36,7 @@ WorryFree Wi-Fi Manager (WorryFreeWifiMgr) controls Zebra Wi-Fi analysis and dia
  * Coverage SSID
  * Analysis type
  * Scan interval
+ * Temporary password duration
 * Capture all packets or only Management packets: 
  * Association request
  * Association response

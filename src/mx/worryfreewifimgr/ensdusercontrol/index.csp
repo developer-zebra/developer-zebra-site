@@ -20,12 +20,12 @@ parm:
       mx: "8.2"
       devicetype: A
       name: Enable
-      description: Allows the device user to configure WorryFree WiFi settings. 
+      description: Allows the device user to configure WorryFree Wi-Fi settings. 
     - code: 0
       mx: "8.2"
       devicetype: A
       name: Disable
-      description: Prevents the device user from configuring WorryFree WiFi settings.
+      description: Prevents the device user from configuring WorryFree Wi-Fi settings.
 ---
 
-Controls whether the device user can access the in-device UI for configuring WorryFree WiFi settings for the device. 
+Controls whether the device user can access the in-device UI for configuring WorryFree Wi-Fi settings for the device. 

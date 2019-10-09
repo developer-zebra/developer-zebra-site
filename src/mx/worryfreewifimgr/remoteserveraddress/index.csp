@@ -7,12 +7,12 @@ mx: "8.2"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Activate is set to "Turn On" and Use Analysis box is "checked" and Use Default Gateway is set to "User Provided Remote Server Address"
+  presentif: Action is set to "Start" and Use Default Gateway is set to "User Provided Remote Server Address"
   name: RemoteServerAddress
   type: string
 ---
 
-Used to specify the address of a user-provided remote gateway or an alternative default gateway to the one stored in the device. 
+Used to specify the address of a user-provided remote gateway or an alternative default gateway to the gateway stored in the device. 
 
 **Parm value input rules**: 
 

@@ -7,6 +7,7 @@ mx: "8.2"
 devicetype: A
 parm:
   pivotal: No
+  presentif: Action is set to "Start" and Analysis Type is NOT set to "Do not change" 
   name: EnableServerAnalytics
   type: list
   list:

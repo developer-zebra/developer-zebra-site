@@ -1,0 +1,21 @@
+---
+csp: worryfreewifimgr
+title: Temporary Password Duration
+type: parm
+order: 69
+mx: "9.2"
+devicetype: A
+info: NOT supported on TC20/TC25 devices. 
+parm:
+  pivotal: No
+  presentif: Enable Temporary Password is set to "Enable" 
+  name: TemporaryPasswordDuration
+  type: string
+---
+
+Used to specify the Temporary Password Duration (in hours), after which the Temporary Password expires and prevents further access to WorryFree Wi-Fi packet collection and encryption options on the device. Permissable range is between one and 168 hours (seven days). 
+
+**Parm value input rules**: 
+
+* Integer from 1&ndash;168  
+

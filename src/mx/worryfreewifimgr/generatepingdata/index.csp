@@ -7,7 +7,8 @@ mx: "8.2"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Activate is set to "Turn On" and Use Analysis box is "checked" and Analysis Type is "roam" 
+  presentif: Action is set to "Start" and Analysis Type is "Roam" 
+ and Analysis Type is "roam" 
   name: GeneratePingData
   type: list
   list:

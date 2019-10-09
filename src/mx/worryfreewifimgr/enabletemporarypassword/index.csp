@@ -1,0 +1,31 @@
+---
+csp: worryfreewifimgr
+title: Temporary Password Enable/Disable 
+type: parm
+order: 67
+mx: "9.2"
+devicetype: A
+info: NOT supported on TC20/TC25 devices. 
+parm:
+  pivotal: No
+  name: EnableTemporaryPassword
+  type: list
+  list:
+    - code: 2
+      mx: "9.2"
+      devicetype: A
+      name: Do not change
+      description: This value (or the absence of this parm from the XML) causes no change to the setting; any previously selected setting is retained.
+    - code: 1
+      mx: "9.2"
+      devicetype: A
+      name: Enable
+      description: Enables the assignment of a temporary password for access to Worry-free Wi-Fi settings on the device. 
+    - code: 0
+      mx: "9.2"
+      devicetype: A
+      name: Disable
+      description: Disables the assignment of a temporary password, preventing access to Worry-free Wi-Fi settings on the device. 
+---
+
+Controls whether to allow the assignment of a Temporary Password, which grants the device user access to Worry-free Wi-Fi packet collection and encryption options on the device without the need to share the full administrative password (which provides full access and never expires). Set the password value using the Temporary Password parameter. Set the temporary period (from one to 168 hours) using the Temporary Password Duration parameter. 

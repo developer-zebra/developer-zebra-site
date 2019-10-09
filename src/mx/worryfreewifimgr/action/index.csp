@@ -7,7 +7,7 @@ mx: "8.2"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Use Analysis box is "checked" 
+  presentif: Analysis Type is NOT set to "Do not change" 
   name: Action
   type: list
   list:

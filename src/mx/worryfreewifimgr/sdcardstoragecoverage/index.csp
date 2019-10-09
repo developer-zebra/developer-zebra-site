@@ -7,7 +7,7 @@ mx: "9.1"
 devicetype: A
 parm:
   pivotal: No
-  presentif: Coverage Action is "Start" and Scan Feature Type is NOT "Do not change" 
+  presentif: Action is set to "Start" and Analysis Type is NOT set to "Do not change" 
   name: SDcardStorageCoverage
   type: list
   list:

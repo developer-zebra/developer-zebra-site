@@ -3,17 +3,55 @@ csp: worryfreewifimgr
 title: Scan Interval
 type: parm
 order: 52
-mx: "9.1"
+mx: "9.2"
 devicetype: A
+info: NOT supported on TC20/TC25 devices. 
 parm:
   pivotal: No
   presentif: Coverage Action is "Start" and Scan Feature Type is NOT "Do not change" 
   name: ScanInterval
-  type: string
+  type: list
+  list:
+    - code: 0
+      mx: "9.2"
+      devicetype: A
+      name: 6
+      description: Sets the Scan Interval at six seconds. 
+    - code: 1
+      mx: "9.2"
+      devicetype: A
+      name: 7
+      description: Sets the Scan Interval at seven seconds.
+    - code: 2
+      mx: "9.2"
+      devicetype: A
+      name: 8
+      description: Sets the Scan Interval at eight seconds.
+    - code: 3
+      mx: "9.2"
+      devicetype: A
+      name: 9
+      description: Sets the Scan Interval at nine seconds.
+    - code: 4
+      mx: "9.2"
+      devicetype: A
+      name: 11
+      description: Sets the Scan Interval at 11 seconds.
+    - code: 5
+      mx: "9.2"
+      devicetype: A
+      name: 12
+      description: Sets the Scan Interval at 12 seconds.
+    - code: 6
+      mx: "9.2"
+      devicetype: A
+      name: 13
+      description: Sets the Scan Interval at 13 seconds.
+    - code: 7
+      mx: "9.2"
+      devicetype: A
+      name: 14
+      description: Sets the Scan Interval at 14 seconds.
 ---
 
-Used to specify the time (in seconds) between scans on the device. This parameter is intended to help strike a balance between device resource utilization (scanning too frequently) and failure to detect important events (scanning too seldom). 
-
-**Parm value input rules**: 
-
-* Integer from 5&ndash;15 seconds
+Used to select the time (in seconds) between scans on the device. This parameter is intended to help strike a balance between device resource utilization (scanning too frequently) and failure to detect important events (scanning too seldom). 

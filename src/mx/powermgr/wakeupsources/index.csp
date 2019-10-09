@@ -6,7 +6,7 @@ order: 51
 mx: "8.0"
 osx: "7.7"
 devicetype: A,B
-info: Supported on TC70x and TC75x devices with MX 9.2 or higher. Otherwise supported on TC20/TC25 devices only.
+info: Supported on TC70x and TC75x devices with MX 9.2 or higher. Otherwise supported only on TC20/TC25 devices.
 parm:
   pivotal: Yes
   name: WakeUpSources
@@ -35,7 +35,7 @@ parm:
 Used to control the button-presses that wake the device from suspend mode. **Supported devices by default wake only when the power button is pressed**. Enabling this parameter (option 1) adds the push-to-talk (PTT) button (on the left side of the device) and scan buttons as wake-up sources. **To control individual buttons, see the Wake-up Individual Action parameter.**
 
 <!-- 9/11/19- per eng: 
-With MX 9.2, this parm will be supported on TC7x and TC5x devices too.
+With MX 9.2, this parm will be supported on TC7x and TC5x devices too (per eng). 
 
 So...
 

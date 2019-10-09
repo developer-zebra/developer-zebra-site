@@ -7,20 +7,20 @@ productversion: '1.2'
 
 ## Overview
 
-Enterprise Keyboard Designer (EKD) is a free GUI tool for Windows that can be used to create customized application-specific key layouts to enhance an application and enable efficient and accurate data entry. **Layouts created with EKD work on Zebra Android devices with Zebra's [Enterprise Keyboard](/enterprise-keyboard) 3.2 (and higher) installed**, and can be **displayed programmatically using Android intents** when specific input situations arise.
+Enterprise Keyboard Designer (EKD) is a free GUI tool for Windows that can be used to create customized key layouts to enhance an application and enable efficient and accurate data entry. **Layouts created with EKD work on Zebra Android devices that use Zebra's [Enterprise Keyboard](/enterprise-keyboard) 3.2 (and higher)**, and can be displayed **programmatically using Android intents or through DataWedge 7.5 (and higher)** when specific input situations arise. 
 
 >**NOTE**: This tool is ***NOT*** intended for creating layouts to replace any general-purpose keyboard.
 
-EKD employs a drag-and-drop interface with control over fonts, images, key codes, layout transparency and many other layout properties. An unlimited number of custom key layouts can be created, deployed to devices and called by apps as needed to match specific types of input. **Zebra Enterprise Keyboard (EKB) must be installed and set as the default input method to make use of custom EKD layouts**. EKB is preinstalled on many Zebra devices and available as a side-load for others. See [supported Zebra devices](/enterprise-keyboard/3-2/download/). 
+EKD employs a drag-and-drop interface with control over fonts, images, key codes, layout transparency and many other layout properties. An unlimited number of custom key layouts can be created, deployed to devices and called by apps as needed to match specific types of input. **Zebra Enterprise Keyboard (EKB) must be installed and set as the default input method to make use of custom EKD layouts**. EKB is preinstalled on many Zebra devices and available as a side-load for others. See [supported Zebra devices](/enterprise-keyboard/3-2/download/) for more information. 
 
-#### EKD is perfect for making...
+#### USE EKD FOR:
 * Numerical and/or symbolic input layouts 
 * Function-key layouts
 * Layouts that combine function keys with buttons for scanning or other purposes
-* Key and button layouts with custom colors, images and levels of transparancy
+* Key and button layouts with custom colors, images and levels of transparency
 * Layouts of custom size or shape (i.e. narrow, vertical, horizontal, etc.)
 
-#### EKD should NOT be used...
+#### DO NOT USE EKD:
 * To create a general-purpose device keyboard replacement
 * On devices that do not have Zebra Enterprise Keyboard 3.2 (or higher) installed and set as the default
 

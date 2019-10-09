@@ -37,7 +37,7 @@ WorryFree Wi-Fi Manager (WorryFreeWifiMgr) controls Zebra Wi-Fi analysis and dia
  * Analysis type
  * Scan interval
  * Temporary password duration
-* Capture all packets or only Management packets: 
+* **Capture all packets or only Management packets**: 
  * Association request
  * Association response
  * Re-association request

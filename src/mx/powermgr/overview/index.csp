@@ -25,7 +25,7 @@ The Power Manager (PowerMgr) allows an app to perform certain OS- and power-rela
 * Enable/disable: 
  * Doze Mode
  * Wake-up methods (hardware or software)
- * Wake-up sources (keys)
+ * Wake-up sources (device buttons)
  * Individual buttons to wake device  
  * Keyboard heater on VC8300 devices
  * Scanner-window heater on MC93 devices. 

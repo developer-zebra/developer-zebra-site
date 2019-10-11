@@ -19,7 +19,7 @@ The facility administrator monitors devices from the [admin dashboard](../admin)
 * For BLE proximity tracking, Bluetooth must be enabled on both devices.
 * When **Play Sound** is tapped repeatedly on the client during network congestion, the congestion may cause a delay in the playback. Once the congestion disappears, the audio plays back once based on the last tap to play audio.
 * During network congestion, client requests over WiFi frequency band 2.4 GHz may not reach the server. For example, requests to **Play Sound** may not reach the intended device. In this situation, Zebra recommends to move to a 5 GHz frequency band or move to another network without congestion.
-* If **Do Not Disturb** is enabled on the device, **Play Sound** will have no effect - therefore no sound is emitted from the device.
+* If **Do Not Disturb** is enabled on the device, it prevents any sound from being emitted from the device. Therefore, **Play Sound** has no effect.
 <!--
 * During network congestion, the user may need to wait for 10 seconds before being able to exit the Play Sound screen by tapping the device back button. // Remove per SOLA-4230, issue no longer reproduceable-->
 

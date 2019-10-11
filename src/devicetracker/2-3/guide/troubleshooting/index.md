@@ -45,7 +45,7 @@ Possible causes:
 
 ###Device does not play sound or there is a delay
 Possible causes:
-* The target device is in **Do Not Disturb** mode so no sound is emitted.
+* The target device is in **Do Not Disturb** mode, preventing any sound from being emitted.
 * If "Could not refresh lost device details" is seen at the bottom of the device tracking screen, this could be caused by the target device not reporting back to the server yet since initiating the device tracking. Wait for the [Reporting Frequency](../config) time interval to elapse. 
 * There could be network issues that need to be diagnosed.
 

@@ -43,8 +43,11 @@ Possible causes:
 * Ensure the the **Server URL, Server Auth UserName** and **Server Auth Password** are entered correctly. The **Server URL** can be obtained from the **Settings** tab in the server [admin view](../admin) in the format: `hostname.company.com:8081/zdvc/dtrk`, where "hostname.company.com" and the port number "8081" is replaced with the appropriate information.
 * The server certificate is not trusted - it must be a valid SSL certificate issued by a Certificate Authority, a [server requirement](../setup) for Device Tracker. Follow steps for [Server certificate validation](../setup#serversetup).
 
-###Device does not chirp or there is a delay
-"Could not refresh lost device details" may be seen at the bottom of the device tracking screen. This could be caused by the target device not reporting back to the server yet since initiating the device tracking. Wait for the [Reporting Frequency](../config) time interval to elapse. Otherwise, there could be network issues that need to be diagnosed.
+###Device does not play sound or there is a delay
+Possible causes:
+* The target device is in **Do Not Disturb** mode so no sound is emitted.
+* If "Could not refresh lost device details" is seen at the bottom of the device tracking screen, this could be caused by the target device not reporting back to the server yet since initiating the device tracking. Wait for the [Reporting Frequency](../config) time interval to elapse. 
+* There could be network issues that need to be diagnosed.
 
 ###Device client app is unresponsive
 There could be a network delay in contacting the server. Wait for some time to elapse and then retry. Otherwise check for network issues.

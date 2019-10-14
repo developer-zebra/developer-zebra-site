@@ -120,9 +120,9 @@ Before beginning a layout, please make note of the following:
  <br>
  <br>
  <font face="arial" font size="4" color="black"> Grid Properties</font><br>
- <b>Left -</b> Layout position offset (in pixels) from the left edge of the screen <br>
- <b>Top -</b> Layout position offset (in pixels) from the top edge of the screen<br>
- <b>Width -</b> Overall width (in pixels) of the layout <br>
+ <b>Left -</b> Layout position offset (in pixels) from the left edge of the screen. **Must be no greater than 90% of *devicewidth* property (min = 0). <br>
+ <b>Top -</b> Layout position offset (in pixels) from the top edge of the screen. **Must be no greater than 90% of *deviceheight* property (min = 0). <br>
+ <b>Width -</b> Overall width (in pixels) of the layout. <br>
  <b>Height -</b> Overall height (in pixels) of the layout<br>
  <b>Rows -</b> Number of rows in the layout, divided equally across the specified height<br>
  <b>Columns -</b> Number of columns in the layout, divided equally across the specified width<br> 
@@ -165,9 +165,9 @@ Before beginning a layout, please make note of the following:
 
 **Top -** Layout offset (in pixels) from the top edge of the screen. **Value must fall between the layout's upper and lower boundries**.
 
-**Width -** Specifies the width (in pixels) of the selected button. **Value must be less than the layout width. Min. = 50**.
+**Width -** Specifies the width (in pixels) of the selected button. **Value must be less than the layout width (min = 50)**.
 
-**Height -** Specifies the height (in pixels) of the selected button. **Value must be less than the layout height. Minimum = 50**.
+**Height -** Specifies the height (in pixels) of the selected button. **Value must be less than the layout height (min = 50)**.
 
 ##### Drag-and-drop mode only:
 **To move a key**, drag it within the key layout background or double-click it (to select) and move it using the arrow keys on the host computer keyboard.

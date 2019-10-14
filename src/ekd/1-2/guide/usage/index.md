@@ -120,13 +120,13 @@ Before beginning a layout, please make note of the following:
  <br>
  <br>
  <font face="arial" font size="4" color="black"> Grid Properties</font><br>
- <b>Left -</b> Layout position offset (in pixels) from the left edge of the screen. **Must be no greater than 90% of *devicewidth* property (min = 0). <br>
- <b>Top -</b> Layout position offset (in pixels) from the top edge of the screen. **Must be no greater than 90% of *deviceheight* property (min = 0). <br>
+ <b>Left -</b> Layout position offset (in pixels) from the left edge of the screen. **Must be no greater than 90% of *devicewidth* property (min = 0)**. <br>
+ <b>Top -</b> Layout position offset (in pixels) from the top edge of the screen. **Must be no greater than 90% of *deviceheight* property (min = 0)**. <br>
  <b>Width -</b> Overall width (in pixels) of the layout. <br>
  <b>Height -</b> Overall height (in pixels) of the layout<br>
- <b>Rows -</b> Number of rows in the layout, divided equally across the specified height<br>
- <b>Columns -</b> Number of columns in the layout, divided equally across the specified width<br> 
- <b>Margin -</b> Distance (in pixels) between Grid boxes, each of which stores one button<br>
+ <b>Rows -</b> Number of rows in the layout, divided equally across the specified height. <br>
+ <b>Columns -</b> Number of columns in the layout, divided equally across the specified width. <br> 
+ <b>Margin -</b> Distance (in pixels) between Grid boxes, each of which stores one button. <br>
 <!-- <img alt="" style="height:350px" src="ekd_grid_Layout.png"/>
  --> <br>
 6. **Double-click within each grid box to select it**. Then set its Button Properties: 

@@ -11,7 +11,7 @@ Enterprise Keyboard Designer (EKD) is a free GUI tool for Windows that can be us
 
 >**NOTE**: This tool is ***NOT*** intended for creating layouts to replace any general-purpose keyboard.
 
-EKD employs a drag-and-drop interface with control over fonts, images, key codes, layout transparency and many other layout properties. An unlimited number of custom key layouts can be created, deployed to devices and called by apps as needed to match specific types of input. **Zebra Enterprise Keyboard (EKB) must be installed and set as the default input method to make use of custom EKD layouts**. EKB is preinstalled on many Zebra devices and available as a side-load for others. See [supported Zebra devices](/enterprise-keyboard/3-2/download/) for more information. 
+EKD employs a drag-and-drop interface with control over fonts, images, key codes, layout transparency and many other layout properties. As many as 20 custom key layouts can be created and stored in a file, deployed to devices and called by apps as needed to match specific types of input. **Zebra Enterprise Keyboard (EKB) must be installed and set as the default input method to make use of custom EKD layouts**. EKB is preinstalled on many Zebra devices and available as a side-load for others. See [supported Zebra devices](/enterprise-keyboard/3-2/download/) for more information. 
 
 #### USE EKD FOR:
 * Numerical and/or symbolic input layouts 
@@ -51,13 +51,13 @@ EKD employs a drag-and-drop interface with control over fonts, images, key cod
 <br>
 
 ### `IMPORTANT - PLEASE READ`
+* <u>**Enterprise Keyboard Designer must be used only in full screen mode**</u>. Resizing the EKD application window after starting a project can result in unpredictable behavior.
 * **Enterprise Keyboard 3.2 (or higher) must be installed and set as the default input method on the device** to display layouts made with EKD.
 * **<u>Only one keyboard or custom key layout can be displayed on the device screen at a time</u>**. When a custom key layout is displayed, all other keyboards are hidden, including the standard Enterprise Keyboard alpha-numeric layout. 
 * **To display an EKD layout, it must be called by an app using intents** (see [EKB APIs section](/enterprise-keyboard/latest/guide/apis)).
-* **Apps on the device can access <u>only a single EKD project file</u>**, but multiple layouts can be saved in that single project file and called independently through intents.  
+* **Apps on the device can access <u>only a single EKD project file</u>**, but as many as 20 layouts can be saved in that single project file and called independently through intents.  
 * EKD projects are saved and deployed as encrypted files that can be decrypted on the device only by **DataWedge, Enterprise Browser and Enterprise Keyboard** and applications running on a Zebra Android device. 
-* Layout files can be imported into Enterprise Keyboard Designer and modified or supplemented with additional keys and/or layouts. 
-* **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
+* Layout files can be imported into EKD and modified or supplemented with additional keys and/or layouts. 
 
 > **Note**: In this guide, the terms “button” and “key” are used interchangeably. 
 

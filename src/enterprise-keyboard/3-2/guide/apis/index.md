@@ -23,6 +23,8 @@ Enterprise Keyboard APIs allow the following functions:
 * **SHOW** displays the specified layout on the device
 * **RESET** Resets EKB layouts and enables Enterprise Keyboard (if disabled)
 
+> * **Zebra recommends resetting to the default input device when quitting an app that uses EKB**. 
+
 -----
 
 ### Using EKB APIs
@@ -55,7 +57,7 @@ When `FunctionKeyActivity` comes to the foreground, the app should `GET` the fol
 
 ### `IMPORTANT - PLEASE READ`
 * **<u>Only one keyboard or custom key layout can be displayed on the device screen at a time</u>**. When a custom key layout is displayed, all other keyboards are hidden, including the standard Enterprise Keyboard alpha-numeric layout. 
-* **Layouts made with EKD must be called by an app using intents** to be displayed (see [Intent APIs section](#intentapis)).
+* **Layouts made with EKD must be called by an app using intents** to be displayed.
 * **Apps on the device can access <u>only a single EKD project file</u>**, but multiple layouts can be saved in that single project file and called independently through intents.  
 * EKD projects are saved and deployed as encrypted files that can be decrypted on the device only by **DataWedge, Enterprise Browser and Enterprise Keyboard** and applications running on a Zebra Android device. 
 * Layout files can be imported into Enterprise Keyboard Designer and modified or supplemented with additional keys and/or layouts. 

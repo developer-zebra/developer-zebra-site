@@ -3,7 +3,7 @@ title: Enterprise Keyboard Designer
 img: ekd_logo.png
 layout: list-mx.html
 menu:
-  title: Enterprise Keyboard
+  title: Enterprise Keyboard Designer
   items:
     - title: About
       url: /ekd/1-2/guide/about

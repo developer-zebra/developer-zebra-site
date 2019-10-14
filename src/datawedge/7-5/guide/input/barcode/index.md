@@ -921,6 +921,12 @@ Reader Parameters control specific configuration options for the barcode reader 
 <img style="height:350px" src="reader_params.png"/>
 <br>
 
+**Presentation mode parameters -** Sets the sensitivity level in reaction to movement within the scanner field of view during the scanning session to automatically activate the scanner when movement is detected. Used when **Presentation Mode** is selected for **Aim Type.**
+* **Sensitivity -** Sets the sensitivity level. 
+   * **High -** Scanning is activated with high sensivity to movement in the scanner field of view (default). Any slight movement in the field of view can activate the scanner.
+   * **Medium -** Scanning is activated with medium sensivity to movement in the scanner field of view.
+   * **Low -** Scanning is activated with low sensivity to movement in the scanner field of view. Fast movement in the field of view does not activate the scanner.
+
 **1D Quiet Zone Level -** Sets the effort at which the decoder will attempt to decode "marginless" barcodes. Behavior of these levels will vary based on the marginless decoder selected. See the [Reduced Quiet Zone](#reducedquietzone) table for behaviors: 
 
 * **Level 0 -** The decoder will perform margin decoding as usual.
@@ -952,12 +958,6 @@ _**Note**: Higher marginless levels will increase decoding times and the risk of
 * **Continuous Read -** A press and hold of the scan trigger continuously scans barcodes. The same barcode can be scanned multiple times. **Not supported with the Zebra RS507 Bluetooth Ring Scanner**.
 
 * **Press and Sustain -** Starts the scan beam when the trigger is pressed and continues the decode session until the Beam Timer is expired, barcode is decoded or read is canceled. **Scan beam is not stopped when the trigger is released**. This avoids unexpected cancellations of a read by subsequently pressing the trigger button of the device; subsequent trigger presses while the beam is ON have no effect. **Applies to internal imager on TC20/TC25 and RS6000/RS507 Bluetooth scanners connected to TC57/TC77 and PS20 devices**. 
-
-**Presentation Mode -** Sets the sensitivity level in reaction to environment changes during the scanning session. Used when AimType is in Presentation Mode. Sensitivity levels:
-
-* **High -** Scanning is activated with high sensitivity to environment changes (default).
-* **Medium -** Scanning is activated with medium sensitivity to environment changes.
-* **Low -** Scanning is activated with low sensitivity to environment changes.
 
 **DPM Illumination Control -** Controls illumination for DPM barcodes: 
 * **Direct Illumination -** Scanner uses only direct (white) illumination. Recommended for use with dot peen barcodes - tilt the part 30 degrees for optimal decoding.

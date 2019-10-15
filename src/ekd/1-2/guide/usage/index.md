@@ -19,9 +19,9 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
  <img alt="" style="height:250px" src="EKD_app_icon.png"/>
  <br>
 2. **Click the “NEW KEYBOARD PROJECT”** button:
- <img alt="" style="height:268px" src="ekd_splash_0.png"/>
+ <img alt="" style="height:250px" src="ekd_splash_0.png"/>
  <br>
-2. **Enter a project name and click “Submit”** or press ENTER:
+2. **Enter a project name and click “Submit”** or press ENTER (recommended 15 character max):<br>
  <img alt="" style="height:250px" src="EKD_splash.png"/>
  <br>
 3. **Select a target device** from the drop-down and click the “Confirm” button:  
@@ -41,7 +41,7 @@ Before beginning a layout, please make note of the following:
 ##### Usage Notes
 
 * All buttons should be placed within the bounds of the layout background. A layout must not be resized so that it hides any key or button.
-* When switching from one layout to another during design, a thin white line is sometimes visible at the bottom or sides of the layout background in the device simulator. It has no effect on the simulated display.
+* When switching from one layout to another during design, a thin white line is sometimes visible at the bottom or sides of the layout background in the device simulator. This has no effect on the simulated display.
 * Button positions sometimes shift slightly when switching layouts. 
 
 ### Using Drag-and-drop
@@ -61,9 +61,12 @@ Before beginning a layout, please make note of the following:
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
-4. **Enter a layout name and press ENTER**.<br> **`NOTE:`** Layout names are case-sensitive, must be unique within a project and may contain only alpha-numeric characters. <br>**Zebra recommends layout names contain a maximum of 15 characters**. <br>The name of the current layout appears in the upper-left corner of the screen: 
+4. **Enter a layout name and press ENTER**.<br> **`NOTE:`** Layout names are case-sensitive, must be unique within a project and may contain only alpha-numeric characters. <br>**Zebra recommends layout names contain a <u>maximum of 15 characters</u>**. <br>The name of the current layout appears in the upper-left corner of the screen: 
  <img alt="" style="height:350px" src="ekd_Layout_name_location.png"/>
  _Click image to enlarge, ESC to exit_.
+ <br>
+ <br>
+ **Note: Buttons shown in the sample images are for illustration purposes. They DO NOT appear in layouts created with EKD**.
  <br>
  <br>
 5. With the mouse pointer on the simulated device screen, **drag to create a layout background** in approximately the desired position on the simulator: 
@@ -108,9 +111,9 @@ Before beginning a layout, please make note of the following:
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
-4. **Enter a layout name and press ENTER**.<br> **`NOTE:`** Layout names are case-sensitive, must be unique within a project and may contain only alpha-numeric characters. <br>**Zebra recommends layout names contain a maximum of 15 characters**. <br>The name of the current layout appears in the upper-left corner of the screen: 
+4. **Enter a layout name and press ENTER**.<br> **`NOTE:`** Layout names are case-sensitive, must be unique within a project and may contain only alpha-numeric characters. <br>**Zebra recommends layout names contain a <u>maximum of 15 characters</u>**. <br>The name of the current layout appears in the upper-left corner of the screen: 
  <img alt="" style="height:350px" src="ekd_Layout_name_location.png"/>
- _Click image to enlarge, ESC to exit_.
+ _**Note**: Buttons shown in the sample images are for illustration; they DO NOT appear in EKD layouts_.
  <br>
  <br>
 5. **Check the Grid Layout checkbox** and set grid properties.<br> 
@@ -120,15 +123,16 @@ Before beginning a layout, please make note of the following:
  <br>
  <br>
  <font face="arial" font size="4" color="black"> Grid Properties</font><br>
- <b>Left -</b> Layout position offset (in pixels) from the left edge of the screen. **Must be no greater than 90% of *devicewidth* property (min = 0)**. <br>
- <b>Top -</b> Layout position offset (in pixels) from the top edge of the screen. **Must be no greater than 90% of *deviceheight* property (min = 0)**. <br>
- <b>Width -</b> Overall width (in pixels) of the layout. <br>
- <b>Height -</b> Overall height (in pixels) of the layout<br>
- <b>Rows -</b> Number of rows in the layout, divided equally across the specified height. <br>
- <b>Columns -</b> Number of columns in the layout, divided equally across the specified width. <br> 
- <b>Margin -</b> Distance (in pixels) between Grid boxes, each of which stores one button. <br>
-<!-- <img alt="" style="height:350px" src="ekd_grid_Layout.png"/>
- --> <br>
+ <b>Left -</b> Layout position offset (in pixels) from the left edge of the screen. **Must be no greater than 90% of device horizontal resolution** (deviceWidth property) **(min = 0)**.<br>
+ <b>Top -</b> Layout position offset (in pixels) from the top edge of the screen. **Must be no greater than 90% of device vertical resolution** (deviceHeight property) including softSystemBar, if any **(min = 0)**.<br>
+ <b>Width -</b> Overall width (in pixels) of the layout **(min = 80; max = deviceWidth)**. <br>
+ <b>Height -</b> Overall height (in pixels) of the layout **(min = 80; max = deviceHeight)**. <br>
+ <b>Rows -</b> Number of rows in the layout, divided equally across the specified Height **(min = 1)**.<br>
+ <b>Columns -</b> Number of columns in the layout, divided equally across the specified Width **(min = 1)**.<br> 
+ <b>Margin -</b> Distance (in pixels) between Grid boxes, each of which stores one button **(min = 2; max = 10)**. <br>
+  **See [Zebra device specs](https://www.zebra.com/us/en/support-downloads/mobile-computers.html) for device resolution information**.<br>
+  **See [Grid Usage Notes](#gridusagenotes) for important restrictions**.<br>
+  <br>
 6. **Double-click within each grid box to select it**. Then set its Button Properties: 
  <img alt="" style="height:350px" src="ekd_properties_panels.png"/>
  _Click image to enlarge, ESC to exit_.
@@ -140,10 +144,16 @@ Before beginning a layout, please make note of the following:
 <br>
 
 #### Grid Usage Notes
-* **Once a grid is created, the number of its columns and rows cannot be changed**.  
+* Button and layout property settings are enabled only after saving the Grid layout.
+* **Once a grid is created, its properties&ndash;including the number of columns and rows&ndash; cannot be changed**.
+* **For the best layout performance, Zebra recommends the following**: 
+ * **Horizontal layouts**: max rows = 5; max columns = 15
+ * **Vertical layouts**: max rows = 15; max columns = 5
+* Departure from recommended values might cause unpredictable button positioning or layout performance. 
 * **Layout drag-and-drop and resize features are disabled** when using Grid Layout. 
-* **Button drag and resize features are enabled** only after saving the Grid Layout.
+* **Button-drag and -resize features are enabled** only after saving the Grid Layout.
 * Style Properties can be configured when using drag-and-drop or grid layout functions. 
+* When switching between layouts in a project, resizing or changing layout position might effect a Grid layout design.
 
 -----
 
@@ -155,15 +165,15 @@ Before beginning a layout, please make note of the following:
 
 **The Layout Properties** section of the Button Properties panel refers to the left and top offsets and the width and height of the selected button. All measurements are in pixels. 
 
-**If the layout was created using drag-and-drop**, at least key must be selected from the key panel and dropped into the layout before beginning. Double-click a key to change its default property settings.
+**If the layout was created using drag-and-drop**, at least one key must be selected from the key panel and dropped into the layout before beginning. Double-click a key to change its default property settings.
 
 **If the layout was created using Grid Layout**, double-click on any box in the grid to configure button properties for that box.
 
 ### Layout Properties (within Button Properties panel)
 
-**Left -** Layout offset (in pixels) from the left edge of the screen. **Value must fall between the layout's left and right boundries**.  
+**Left -** Layout offset (in pixels) from the left edge of the screen. **Value must fall between the layout's left and right boundaries**.  
 
-**Top -** Layout offset (in pixels) from the top edge of the screen. **Value must fall between the layout's upper and lower boundries**.
+**Top -** Layout offset (in pixels) from the top edge of the screen. **Value must fall between the layout's upper and lower boundaries**.
 
 **Width -** Specifies the width (in pixels) of the selected button. **Value must be less than the layout width (min = 50)**.
 
@@ -178,20 +188,22 @@ Before beginning a layout, please make note of the following:
 
 ### Text Properties
 
-**Text -** Specifies the Button label (displayed text) for the selected Button. **Applies only if an image is NOT selected**.
+**Text -** Specifies the Button label (displayed text) for the selected Button. **<u>Must be blank if an image is selected</u> as button background**.
 
-**Font Size -** Specifies the font size (in points) of the Button label text for the selected Button. 
+**Font Size -** Specifies the font size (in points) of the Button label text for the selected Button **(min = 10; max = 25)**. 
 
 **TextColor -** Specifies the color of the Button label text for the selected button. 
 
 **TextStyle –** Specifies the style of the Button label text for the selected button. Drop-down values: Normal, Bold, BoldItalic, Italic. 
 
-**SecondaryText -** Specifies the secondary Button label displayed in the upper-right corner of the selected button. Indicates the key’s output or Action when long-pressed. **Applies only if an image is NOT specified**.
+**SecondaryText -** Specifies the secondary Button label displayed in the upper-right corner of the selected button. Indicates the key’s output or Action when long-pressed. **<u>Must be blank if an image is selected</u> as button background**.
 
 ### Notes
 * The text input field accepts all characters, including Chinese.
 * All key-label text (including secondary text) is ignored if a key image is specified.
-* The number and size of characters in the button text and secondary text fields should correspond to the key size to avoid automatic changes to the size.
+* The font size used for a button label is dependent on the size of the button being labeled. To avoid automatic button resizing, select a font size appropriate for the size of the button.
+* The number and size of characters in the button text and secondary text fields should correspond to the key size to avoid automatic size changes.
+* The position of secondary text can exceed button height if the button is too small. To overcome this issue, increase button height.
 
 -----
 
@@ -223,10 +235,11 @@ Before beginning a layout, please make note of the following:
 -----
 
 ### Feedback Properties
+_Applies only to devices that support vibration_.  
 
-**HapticFeedback -** Used to control whether the device vibrates when the selected button is clicked. Set the value to “true” to vibrate (default = false).
+**HapticFeedback -** Used to control whether the device vibrates when the selected button is clicked. Set the value to “true” to vibrate (**default = false**).
 
-**Duration -** Used to specify the duration (in ms) of vibration when the “Haptic Feedback” property is set to true (default = 40 ms). 
+**Duration -** Used to specify the duration (in ms) of vibration when the “Haptic Feedback” property is set to true **(min = 40 (default); max = 1000)**. 
 
 -----
 
@@ -341,24 +354,25 @@ The data for custom keyboard layout(s) is stored in the custom keyboard definiti
 <hr>
 
 ## Import Keyboard Project
-Keyboard projects created earlier can be modified for use on different devices, adapted for different screen sizes and features or for any reason. 
+Layout projects can be saved and modified later for use on different devices, adapted for different applications or screen sizes appended with additional layouts. 
 
 **To import a project**: 
 
 1. On the Enterprise Keyboard Designer’s launch screen, click the “IMPORT KEYBOARD PROJECT” button. 
 2. Navigate to and double-click the project (“`.encrypted`” file) to import.
 3. Select the target device using the drop-down menu and click the “Confirm” button. 
-4. Select the device orientation and click the “Confirm” button.
-5. When the Project name is seen at top-left corner, the workspace is ready for use.
-6. Click on the menu button and select a layout to edit.
-7. When the layout name is seen in the top-left corner (after the Project name) and layout keys are visible in the device simulator, the layout is ready to be edited.
+4. When the Project name is seen at top-left corner, the workspace is ready for use.
+5. Click the menu button to view a list of layouts available for editing. 
+6. Select the layout to be edited and click the edit icon. The layout is displayed in the device simulator and its name is displayed the top-left corner. 
+7. Edit as desired.
+8. To add a new layout to the project, click the [+] icon on the EKD menu and follow steps in the [Crete Layout(s)](#iicreatelayouts) section. 
 
 -----
 
 ## General Usage Notes
 
-* **Enterprise Keyboard must be installed on the device** to display layouts made with EKD.
 * **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
+* **To display EKD layouts on a device, Enterprise Keyboard must be installed on that device** and set as the default input source.
 * **The number of allowable characters in a button label field is dependent on width of the key**. To avoid automatic key resizing, button label should not exceed available width. 
 * **The font size used for a button label is dependent on the size of the key being labeled**. To avoid automatic key resizing, select a point size appropriate for the size of the button.
 * **The secondary text button label field is dependent on the width of the key**. To avoid automatic key resizing, the secondary button label should not exceed available width.

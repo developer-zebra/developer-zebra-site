@@ -354,18 +354,20 @@ The data for custom keyboard layout(s) is stored in the custom keyboard definiti
 <hr>
 
 ## Import Keyboard Project
-Layout projects can be saved and modified later for use on different devices, adapted for different applications or screen sizes appended with additional layouts. 
+Layout projects can be saved and modified later for use on different devices, adapted for different applications or screen sizes and appended with additional layouts. 
 
 **To import a project**: 
 
-1. On the Enterprise Keyboard Designer’s launch screen, click the “IMPORT KEYBOARD PROJECT” button. 
-2. Navigate to and double-click the project (“`.encrypted`” file) to import.
-3. Select the target device using the drop-down menu and click the “Confirm” button. 
-4. When the Project name is seen at top-left corner, the workspace is ready for use.
-5. Click the menu button to view a list of layouts available for editing. 
-6. Select the layout to be edited and click the edit icon. The layout is displayed in the device simulator and its name is displayed the top-left corner. 
-7. Edit as desired.
-8. To add a new layout to the project, click the [+] icon on the EKD menu and follow steps in the [Crete Layout(s)](#iicreatelayouts) section. 
+1. On the Enterprise Keyboard Designer’s launch screen, **click the “IMPORT KEYBOARD PROJECT” button**. 
+2. **Navigate to and double-click the project** (“`.encrypted`” file) to import.
+3. **Select the target device** using the drop-down menu and click the “Confirm” button.
+4. **Click the EKD menu button** to view a list of layouts available for editing. 
+5. **Select the layout to be edited and click the edit icon**. The layout is displayed in the device simulator and its name is displayed the top-left corner. 
+6. **Edit the layout as desired**.
+7. **To add a new layout to the project**, click the [+] icon on the EKD menu and follow steps in the [Crete Layout(s)](#iicreatelayouts) section. 
+8. **Click "Save Layout" button often** to preserve settings. 
+9. **Repeat Step 7** until the layout is configured as desired. 
+10. **Click "Save Project" to create a project file for deployment**.
 
 -----
 

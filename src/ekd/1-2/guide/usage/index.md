@@ -243,13 +243,13 @@ Use the Control key on the host computer's keyboard to select multiple keys simu
 
 ### Action Properties
 
-**PressAction -** Defines the action taken when the selected Button is pressed and released. Accepts a predefined command string only (see below). Overridden by ActionDown property. 
+**PressAction -** Defines the action taken when the selected Button is pressed and released. Accepts a predefined command string only (see below). **Overridden by ActionDown property. Default = no action**.
 
-**LongPressAction –** Defines the action taken when the selected button is long-pressed. Accepts a predefined command string only (see below). Overridden by ActionUp property. 
+**LongPressAction –** Defines the action taken when the selected button is long-pressed. Accepts a predefined command string only (see below). **Overridden by ActionUp property. Default = no action**.
 
-**ActionDown -** Defines the action to be taken immediately upon button press (before it is released). Accepts a predefined command string only (see below). Overrides PressAction property. 
+**ActionDown -** Defines the action to be taken immediately upon button press (before it is released). Accepts a predefined command string only (see below). **Overrides PressAction property. Default = no action**.
 
-**ActionUp -** Defines the action to be taken when the selected key is released (after being pressed). Accepts a predefined command string only (see below). Overrides Long Press Action property.
+**ActionUp -** Defines the action to be taken when the selected key is released (after being pressed). Accepts a predefined command string only (see below). **Overrides LongPressAction property. Default = no action**.
 
 -----
 
@@ -297,13 +297,29 @@ _Applies only to devices that support vibration_.
 
 ### Predefined Command Strings
 
-**Perform KeyEvent action -** Used to generate a particular KeyEvent or output as a character. Specify the key and value in key-value format from among the [standard Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent). The KeyEvent for a key can be captured inside JavaScript onKeyDown events and output the value, if associated. It should be written in the format below. 
+**Perform KeyEvent action -** Used to generate a particular KeyEvent or output as a character. Specify the key and value in key-value format from among the standard [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent). The KeyEvent for a key can be captured inside JavaScript onKeyDown events and outputs the value, if associated. The drop-down action commands are selected using the steps below. 
+
+#### To assign a keyEvent value: 
+
+1. In the Action section of the Button Properties panel, **select the desired Action from the drop-down**: 
+<img alt="" style="height:150px" src="ekd_keyaction.png"/>
+ _Click image to enlarge, ESC to exit_.
+<br>
+<br>
+2. A box pops up similar to the one below. **Enter a single value corresponding to the type of Action selected**:  
+<img alt="" style="height:150px" src="ekd_keyaction_entry.png"/>
+ _Click image to enlarge, ESC to exit_.
+<br>
+<br>
+3. Repeat Steps 1 and 2 for all buttons.  
+4. **Click "Save Layout" button** to store settings. 
+5. **Click "Save Project" to create a project file for deployment**.
 
 **Note**: Command strings are case sensitive. 
 
-* To capture a lower-case "a" the action should be “key-29”
-* To capture an upper-case "A" the action should be “keyincaps-29”
-* To capture a Unicode character, the action should be “uc-003C”
+* To capture a lower-case "a" the Action should be “key-29”
+* To capture an upper-case "A" the Action should be “keyincaps-29”
+* To capture a Unicode character, the Action should be “uc-003C”
 
 **See [all Unicode characters](https://unicode-table.com/en/)**<br>
 **See all [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**

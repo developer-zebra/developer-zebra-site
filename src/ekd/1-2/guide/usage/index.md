@@ -107,7 +107,7 @@ Before beginning a layout, please make note of the following:
  <br>
  <br>
 3. **Select the device orientation** and click the “Confirm” button:
- <img alt="" style="height:350px" src="ekd_orientation_screen.png"/>
+ <img alt="" style="height:350px" src="device_orientation.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
@@ -206,17 +206,17 @@ Before beginning a layout, please make note of the following:
 **The following properties can <u>NOT</u> be assigned when selected multiple buttons are selected**: 
 
 * **Button action properties**: 
- * Press Action
- * Long Press Action
- * Action Up
- * Action Down
- * Image 
- * Image pressed
+ * **Press Action**
+ * **Long Press Action**
+ * **Action Up**
+ * **Action Down**
+ * **Image**
+ * **Image pressed**
 * **Layout properties**:
- * Left
- * Top
- * Width
- * Height 
+ * **Left**
+ * **Top**
+ * **Width**
+ * **Height** 
 
 #### Usage Notes
 * **Deleting a group of selected buttons** using the “Delete” key on the host computer’s keyboard is not supported.

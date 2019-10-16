@@ -163,7 +163,7 @@ Before beginning a layout, please make note of the following:
 
 ### Button Position 
 
-**Double-click a button to select it and adjust its properties. Use the Control key to select multiple keys simultaneously (see [Multi-selection Properties](#multiselectionproperties), below)**. Selected key(s) are indicated by a red border, and supported input fields for Button Properties are enabled. Changes to properties appear immediately on the selected button(s).
+**Double-click a button to select it and adjust its properties. Use the Control key on the host computer's keyboard to select multiple keys simultaneously (see [Multi-selection Properties](#multiselectionproperties), below)**. Selected key(s) are indicated by a red border, and supported input fields for Button Properties are enabled. Changes to properties appear immediately on the selected button(s).
 
 **The Layout Properties** section of the Button Properties panel refers to the left and top offsets and the width and height of the selected button. All measurements are in pixels. 
 
@@ -188,6 +188,7 @@ Before beginning a layout, please make note of the following:
 -----
 
 ### Multi-selection Properties
+Use the Control key on the host computer's keyboard to select multiple keys simultaneously. Selected key(s) are indicated by a red border, and supported input fields for Button Properties are enabled. Changes to properties appear immediately on the selected button(s). Properties are described in their relevant sections below. 
 
 **The following properties can be assigned when multiple buttons are selected**: 
 

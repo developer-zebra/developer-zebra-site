@@ -57,7 +57,7 @@ Before beginning a layout, please make note of the following:
  <br>
  <br>
 3. **Select the device orientation** and click the “Confirm” button:
- <img alt="" style="height:350px" src="ekd_orientation_screen.png"/>
+ <img alt="" style="height:350px" src="device_orientation.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
@@ -84,17 +84,17 @@ Before beginning a layout, please make note of the following:
  _Click image to enlarge, ESC to exit_.
  <br>
  **To move a key**, drag it within the key layout background or double-click it (to select) and move it using the arrow keys on the host computer keyboard.<br>
- **To resize a key**, drag the key's right and bottom edges within the key layout background or select it and edit the "Layout Properties" fields in the Button Properties panel.
+ **To resize a key**, drag the key's right and bottom edges within the key layout background or select it and edit the "Layout Properties" fields in the button Properties panel.
  <br>
-8. **Click "Save Layout" button often** to preserve settings. 
-9. **Repeat Step 7** until the layout is configured as desired. 
+8. **Repeat Step 7** until the layout is configured as desired. 
+9. **Click "Save Layout" button** to store settings. 
 10. **Click "Save Project" to create a project file for deployment**.
 
 -----
 
 ### Using Grid Layout
 
-**The Grid layout option** automatically fills the layout with a matrix of equally spaced buttons based using the specified number of columns and rows. The new layout is placed along the left and bottom edges of the simulator and can be resized if needed.<br>**`WARNING:`** Checking the Grid Layout box clears any existing layout. 
+**The Grid layout option** automatically fills the layout with a matrix of equally spaced buttons based using the specified number of columns and rows. Once created, buttons can be relocated on the grid as desired. The new layout is placed along the left and bottom edges of the simulator and can be resized if needed.<br>**`WARNING:`** Checking the Grid Layout box clears any existing layout. 
 
 1. From the main designer screen, **click the menu button** in the upper-left corner:  
  <img alt="" style="height:350px" src="ekd_main_Layout_screen.png"/>
@@ -133,12 +133,14 @@ Before beginning a layout, please make note of the following:
   **See [Zebra device specs](https://www.zebra.com/us/en/support-downloads/mobile-computers.html) for device resolution information**.<br>
   **See [Grid Usage Notes](#gridusagenotes) for important restrictions**.<br>
   <br>
-6. **Double-click within each grid box to select it**. Then set its Button Properties: 
+6. **Double-click within each grid box to select it**. Then set its button properties: 
  <img alt="" style="height:350px" src="ekd_properties_panels.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
-7. **Click "Save Grid Layout" button often** to preserve settings. 
+7. **Click "Save Grid Layout" button** to store settings. <br>
+ **To move a key**, drag it within the key layout background or double-click it (to select) and move it using the arrow keys on the host computer keyboard.<br>
+ **To resize a key**, drag the key's right and bottom edges within the key layout background or select it and edit the "Layout Properties" fields in the Button Properties panel.<br>
 8. **Repeat Step 6** until all buttons in the layout are configured as desired. 
 9. **Click "Save Project" to create a project file for deployment**.
 <br>
@@ -161,13 +163,13 @@ Before beginning a layout, please make note of the following:
 
 ### Button Position 
 
-**Double-click a button to select it and adjust its properties**. The currently selected key is indicated by a red border, and input fields for its Button Properties are enabled. Changes to properties appear immediately on the selected button.
+**Double-click a button to select it and adjust its properties. Use the Control key to select multiple keys simultaneously (see [Multi-selection Properties](#multiselectionproperties), below)**. Selected key(s) are indicated by a red border, and supported input fields for Button Properties are enabled. Changes to properties appear immediately on the selected button(s).
 
 **The Layout Properties** section of the Button Properties panel refers to the left and top offsets and the width and height of the selected button. All measurements are in pixels. 
 
 **If the layout was created using drag-and-drop**, at least one key must be selected from the key panel and dropped into the layout before beginning. Double-click a key to change its default property settings.
 
-**If the layout was created using Grid Layout**, double-click on any box in the grid to configure button properties for that box.
+**If the layout was created using Grid Layout**, double-click on box(es) in the grid to configure button properties.
 
 ### Layout Properties (within Button Properties panel)
 
@@ -179,24 +181,60 @@ Before beginning a layout, please make note of the following:
 
 **Height -** Specifies the height (in pixels) of the selected button. **Value must be less than the layout height (min = 50)**.
 
-##### Drag-and-drop mode only:
 **To move a key**, drag it within the key layout background or double-click it (to select) and move it using the arrow keys on the host computer keyboard.
 
 **To resize a key**, drag the key's right and bottom edges within the key layout background or select it and edit the "Layout Properties" fields in the Button Properties panel.
 
 -----
 
+### Multi-selection Properties
+
+**The following properties can be assigned when multiple buttons are selected**: 
+
+* **Text**
+* **Secondary Text**
+* **Font Size** 
+* **Text Color**
+* **Text Style** 
+* **Preview value** 
+* **Transparency**
+* **Button Color**
+* **Color pressed** 
+* **Haptic Feedback**
+* **Duration**
+
+**The following properties can <u>NOT</u> be assigned when selected multiple buttons are selected**: 
+
+* **Button action properties**: 
+ * Press Action
+ * Long Press Action
+ * Action Up
+ * Action Down
+ * Image 
+ * Image pressed
+* **Layout properties**:
+ * Left
+ * Top
+ * Width
+ * Height 
+
+#### Usage Notes
+* **Deleting a group of selected buttons** using the “Delete” key on the host computer’s keyboard is not supported.
+* **The same button property minimum and maximum value rules apply** when individual or multiple buttons are selected. 
+
+-----
+
 ### Text Properties
 
-**Text -** Specifies the Button label (displayed text) for the selected Button. **<u>Must be blank if an image is selected</u> as button background**.
+**Text -** Specifies the button label (displayed text) for the selected button. **<u>Must be blank if an image is selected</u> as button background**.
 
-**Font Size -** Specifies the font size (in points) of the Button label text for the selected Button **(min = 10; max = 25)**. 
+**Font Size -** Specifies the font size (in points) of the button label text for the selected button **(min = 10; max = 25)**. 
 
-**TextColor -** Specifies the color of the Button label text for the selected button. 
+**TextColor -** Specifies the color of the button label text for the selected button. 
 
-**TextStyle –** Specifies the style of the Button label text for the selected button. Drop-down values: Normal, Bold, BoldItalic, Italic. 
+**TextStyle –** Specifies the style of the button label text for the selected button. Drop-down values: Normal, Bold, BoldItalic, Italic. 
 
-**SecondaryText -** Specifies the secondary Button label displayed in the upper-right corner of the selected button. Indicates the key’s output or Action when long-pressed. **<u>Must be blank if an image is selected</u> as button background**.
+**SecondaryText -** Specifies the secondary button label displayed in the upper-right corner of the selected button. Indicates the key’s output or Action when long-pressed. **<u>Must be blank if an image is selected</u> as button background**.
 
 ### Notes
 * The text input field accepts all characters, including Chinese.
@@ -211,9 +249,9 @@ Before beginning a layout, please make note of the following:
 
 **PressAction -** Defines the action taken when the selected Button is pressed and released. Accepts a predefined command string only (see below). Overridden by ActionDown property. 
 
-**LongPressAction –** Defines the action taken when the selected Button is long-pressed. Accepts a predefined command string only (see below). Overridden by ActionUp property. 
+**LongPressAction –** Defines the action taken when the selected button is long-pressed. Accepts a predefined command string only (see below). Overridden by ActionUp property. 
 
-**ActionDown -** Defines the action to be taken immediately upon Button press (before it is released). Accepts a predefined command string only (see below). Overrides PressAction property. 
+**ActionDown -** Defines the action to be taken immediately upon button press (before it is released). Accepts a predefined command string only (see below). Overrides PressAction property. 
 
 **ActionUp -** Defines the action to be taken when the selected key is released (after being pressed). Accepts a predefined command string only (see below). Overrides Long Press Action property.
 
@@ -247,9 +285,9 @@ _Applies only to devices that support vibration_.
 
 ### Style Properties
 
-**Background Color -** Specifies the color of the Key Layout. Changes appear in the layout immediately after clicking OK in the color picker. 
+**Background Color -** Specifies the color of the key layout. Changes appear in the layout immediately after clicking OK in the color picker. 
 
-**Transparency -** Used to select of the transparency from 0 (opaque) to 100 (fully transparent) of the Key Layout Background using a slider. Changes appear immediately.
+**Transparency -** Used to select of the transparency from 0 (opaque) to 100 (fully transparent) of the key layout Background using a slider. Changes appear immediately.
 
 -----
 
@@ -263,13 +301,16 @@ _Applies only to devices that support vibration_.
 
 ### Predefined Command Strings
 
-**Perform KeyEvent action -** Used to generate a particular KeyEvent or output as a character. Specify the key and value in key-value format from among the standard Android KeyEvent values. The KeyEvent for a key can be captured inside JavaScript onKeyDown events and output the value, if associated. It should be written in the format below. 
+**Perform KeyEvent action -** Used to generate a particular KeyEvent or output as a character. Specify the key and value in key-value format from among the [standard Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent). The KeyEvent for a key can be captured inside JavaScript onKeyDown events and output the value, if associated. It should be written in the format below. 
 
 **Note**: Command strings are case sensitive. 
 
 * To capture a lower-case "a" the action should be “key-29”
 * To capture an upper-case "A" the action should be “keyincaps-29”
-* To capture a Unicode, the action should be “uc-003C”
+* To capture a Unicode character, the action should be “uc-003C”
+
+**See [all Unicode characters](https://unicode-table.com/en/)**<br>
+**See all [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
 
 <b>Switch layouts with taps or swipes</b> across the keypad:  
 <img alt="" style="height:150px" src="ekd_07.png"/>
@@ -316,7 +357,7 @@ To save the current layout data, click the “Save Layout” button in the lower
 
 ### Save Project
 
-To save the current keyboard layout project, click the “Save Project” button. A dialog appears indicating the location of the saved “`.encrypted`” file. Take note of the save directory for later reference. 
+To save the current key layout project, click the “Save Project” button. A dialog appears indicating the location of the saved “`.encrypted`” file. Take note of the save directory for later reference. 
 
 ### Delete a Key
 
@@ -328,32 +369,32 @@ To save the current keyboard layout project, click the “Save Project” button
 1. In the layout to be cleared, **Click the red “Clear Layout” button**. 
 3. **Click “Yes”** to confirm the deletion of all layout elements. 
 
-> Data for custom layout(s) and key-value assignment(s) is stored in the keyboard definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. Layouts are available immediately upon deployment.<br> **Deployment instructions follow below**. 
+> Data for custom layout(s) and key-value assignment(s) is stored in the key layout definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. Layouts are available immediately upon deployment.<br> **Deployment instructions follow below**. 
 
 -----
 
 ## V. Deploy Layout(s)
 
-The data for custom keyboard layout(s) is stored in the custom keyboard definition file, an encrypted file generated by the Enterprise Keyboard Designer. This file contains information about key locations, key-value assignments, etc. for each keyboard layout created. This single file can contain multiple layout groups, each of which defines a layout. **It's important to note that an app can access only a single layout file on the device, so all layouts required on a device MUST be stored in that single file**. 
+The data for custom key layout(s) is stored in the custom key-layout definition file, an encrypted file generated by the Enterprise Keyboard Designer. This file contains information about key locations, key-value assignments, etc. for each key layout created. This single file can contain as many as 20 layout groups, each of which defines a layout. **It's important to note that an app can access only a single layout file on the device, so all layouts required for a device MUST be stored in that single file**. 
 
-**To push a keyboard definition file**:
+#### To deploy a key layout definition file:
 
-1. **Locate the keyboard definition file** (i.e. `LayoutProjectName.encrypted`) on the development host computer. <br>
+1. **Locate the key layout definition file** (i.e. `LayoutProjectName.encrypted`) on the development host computer. <br>
  By default, the files are saved in the download directory of the current user: <br>
  `c:\Users\userName\Downloads\LayoutProjectName.encrypted`<br>
- **NOTE**: When clicking EKD's "Save Project" button, the default folder is shown similar to the image below: 
+ **NOTE**: When clicking EKD's "Save Project" button, the default folder is shown as in the image below: 
  <img alt="" style="height:250px" src="ekd_project_saved.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
-2. In the Settings panel on the device, set Enterprise Keyboard as a default IME.
-3. Push definition file to the device folder:<br>
+2. In the "Language and input" Settings panel on the device, **set Enterprise Keyboard as a default keyboard**.
+3. **Push definition file to the device** folder:<br>
  `/enterprise/device/settings/ekb/config/`
 
-**Custom keyboard layouts are available on the device immediately upon file deployment**. 
+**Custom key layouts are available on the device immediately upon file deployment**. 
 
 <hr>
 
-## Import Keyboard Project
+## Import an EKD Project
 Layout projects can be saved and modified later for use on different devices, adapted for different applications or screen sizes and appended with additional layouts. 
 
 **To import a project**: 
@@ -365,8 +406,8 @@ Layout projects can be saved and modified later for use on different devices, ad
 5. **Select the layout to be edited and click the edit icon**. The layout is displayed in the device simulator and its name is displayed the top-left corner. 
 6. **Edit the layout as desired**.
 7. **To add a new layout to the project**, click the [+] icon on the EKD menu and follow steps in the [Crete Layout(s)](#iicreatelayouts) section. 
-8. **Click "Save Layout" button often** to preserve settings. 
-9. **Repeat Step 7** until the layout is configured as desired. 
+8. **Repeat Step 7** until the layout is configured as desired. 
+9. **Click "Save Layout" button** to store settings. 
 10. **Click "Save Project" to create a project file for deployment**.
 
 -----

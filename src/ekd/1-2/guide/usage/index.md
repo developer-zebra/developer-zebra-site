@@ -297,41 +297,7 @@ _Applies only to devices that support vibration_.
 
 ### Predefined Command Strings
 
-**Perform KeyEvent action -** Used to generate a particular KeyEvent or output as a character. Specify the key and value in key-value format from among the standard [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent). The KeyEvent for a key can be captured inside JavaScript onKeyDown events and outputs the value, if associated. The drop-down action commands are selected using the steps below. 
-
-#### To assign a keyEvent value: 
-
-1. In the Action section of the Button Properties panel, **select the desired Action from the drop-down**: 
-<img alt="" style="height:150px" src="ekd_keyaction.png"/>
- _Click image to enlarge, ESC to exit_.
-<br>
-<br>
-2. A box pops up similar to the one below. **Enter a single value corresponding to the type of Action selected**:  
-<img alt="" style="height:150px" src="ekd_keyaction_entry.png"/>
- _Click image to enlarge, ESC to exit_.
-<br>
-<br>
-3. Repeat Steps 1 and 2 for all buttons.  
-4. **Click "Save Layout" button** to store settings. 
-5. **Click "Save Project" to create a project file for deployment**.
-
-**Note**: Command strings are case sensitive. 
-
-* To capture a lower-case "a" the Action should be “key-29”
-* To capture an upper-case "A" the Action should be “keyincaps-29”
-* To capture a Unicode character, the Action should be “uc-003C”
-
-**See [all Unicode characters](https://unicode-table.com/en/)**<br>
-**See all [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
-
-<b>Switch layouts with taps or swipes</b> across the keypad:  
-<img alt="" style="height:150px" src="ekd_07.png"/>
-
-**Action to Switch Layout -** Use the key-value pairs below to switch to a specific layout when using Zebra Enterprise Keyboard.
-
------
-
-### Predefined commands
+**Action to Switch Layout -** Use the key-value pairs below to switch to a specific layout when using Zebra Enterprise Keyboard. **Note: Command strings are case sensitive**. 
 
 **switch-abc -** switches to the default “abc” (alphabetic) layout
 
@@ -341,7 +307,37 @@ _Applies only to devices that support vibration_.
 
 **switch-&#35;&#42;&#47; -** switches to the “&#35;&#42;&#47;” (symbolic) layout
 
-**switch- [LayoutName] -** switches to the named custom layout
+**switch-[LayoutName] -** switches to the named custom layout
+
+-----
+
+**Perform keyEvent action -** Used to generate a particular KeyEvent or output a character. Specify the key and value in key-value format from among the standard [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent). The keyEvent for a key can be captured inside JavaScript onKeyDown events and outputs the value, if associated. The drop-down action commands are selected using the steps below. 
+
+#### To assign a keyEvent value: 
+
+1. In the Action section of the Button Properties panel, **select the desired Action from the drop-down**: 
+<img alt="" style="height:150px" src="ekd_keyaction.png"/>
+ _Click image to enlarge, ESC to exit_.
+<br>
+2. For keycodes (i.e. key in caps, Unicode, etc), a box pops up similar to the one below. **Enter a single value corresponding to the type of Action selected**:  
+<img alt="" style="height:150px" src="ekd_keyaction_entry.png"/>
+ _Click image to enlarge, ESC to exit_.
+<br>
+3. **Repeat Steps 1 and 2** until each button contains the desired Action.  
+4. **Click "Save Layout" button** to store settings. 
+5. **Click "Save Project" to create a project file for deployment**.
+
+**See [all Unicode characters](https://unicode-table.com/en/)**<br>
+**See all [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
+
+<!-- 
+<b>Switch layouts with taps or swipes</b> across the keypad:  
+<img alt="" style="height:150px" src="ekd_07.png"/>
+
+* To capture a lower-case "a" the Action should be “key-29”
+* To capture an upper-case "A" the Action should be “keyincaps-29”
+* To capture a Unicode character, the Action should be “uc-003C”
+ -->
 
 -----
 

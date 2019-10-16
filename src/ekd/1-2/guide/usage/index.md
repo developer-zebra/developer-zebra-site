@@ -83,9 +83,6 @@ Before beginning a layout, please make note of the following:
  <img alt="" style="height:350px" src="ekd_drag_buttons.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
- **To move a key**, drag it within the key layout background or double-click it (to select) and move it using the arrow keys on the host computer keyboard.<br>
- **To resize a key**, drag the key's right and bottom edges within the key layout background or select it and edit the "Layout Properties" fields in the button Properties panel.
- <br>
 8. **Repeat Step 7** until the layout is configured as desired. 
 9. **Click "Save Layout" button** to store settings. 
 10. **Click "Save Project" to create a project file for deployment**.
@@ -139,8 +136,6 @@ Before beginning a layout, please make note of the following:
  <br>
  <br>
 7. **Click "Save Grid Layout" button** to store settings. <br>
- **To move a key**, drag it within the key layout background or double-click it (to select) and move it using the arrow keys on the host computer keyboard.<br>
- **To resize a key**, drag the key's right and bottom edges within the key layout background or select it and edit the "Layout Properties" fields in the Button Properties panel.<br>
 8. **Repeat Step 6** until all buttons in the layout are configured as desired. 
 9. **Click "Save Project" to create a project file for deployment**.
 <br>
@@ -267,9 +262,9 @@ Use the Control key on the host computer's keyboard to select multiple keys simu
 
 **ColorPressed -** Used to specify the color of the selected key when the key is pressed. Changes appear on the device simulator when the key is pressed. 
 
-**Image -** Used to specify an image to fill the space of the selected key. After selection, the image appears immediately on the device simulator. When the layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats. 
+**Image -** Used to specify an image to fill the space of the selected key. After selection, the image appears immediately on the device simulator. When the layout is saved, selected image(s) are embedded within the “.encrypted” file. **Supports** `.jpg` **and** `.png` **image files. Zebra recommends using files of 100 KB or less for optimal layout performance. File name must begin with an alpha-numeric character**. 
 
-**ImagePressed -** Used to specify an image to be displayed when the button is pressed. After selection, the image appears on the device simulator when the button is pressed. When the layout is saved, selected image(s) are embedded within the “.encrypted” file. Supports `.jpg` and `.png` image file formats.
+**ImagePressed -** Used to specify an image to be displayed when the button is pressed. After selection, the image appears on the device simulator when the button is pressed. When the layout is saved, selected image(s) are embedded within the “.encrypted” file.  **Supports** `.jpg` **and** `.png` **image files. Zebra recommends using files of 100 KB or less for optimal layout performance. File name must begin with an alpha-numeric character**. 
 
 -----
 

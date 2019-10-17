@@ -311,7 +311,7 @@ _Applies only to devices that support vibration_.
 
 -----
 
-**Perform keyEvent action -** Used to generate a particular KeyEvent or output a character. Specify the key and value in key-value format from among the standard [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent). The keyEvent for a key can be captured inside JavaScript onKeyDown events and outputs the value, if associated. The drop-down action commands are selected using the steps below. 
+**Perform keyEvent action -** Used to generate a particular keyEvent or output a character. Specify the key and value in key-value format from among the standard [Android keyEvent values](https://developer.android.com/reference/android/view/keyEvent). The keyEvent for a key can be captured inside JavaScript onKeyDown events and outputs the value, if associated. The drop-down action commands are selected using the steps below. 
 
 #### To assign a keyEvent value: 
 
@@ -328,7 +328,7 @@ _Applies only to devices that support vibration_.
 5. **Click "Save Project" to create a project file for deployment**.
 
 **See [all Unicode characters](https://unicode-table.com/en/)**<br>
-**See all [Android KeyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
+**See all [Android keyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
 
 <!-- 
 <b>Switch layouts with taps or swipes</b> across the keypad:  
@@ -344,7 +344,7 @@ _Applies only to devices that support vibration_.
 ### Layout Usage Notes 	
 * The layout names shown above (“abc," “123," “scan” and “&#35;&#42;&#47;”) are reserved for default Enterprise Keyboard layouts and cannot be used as custom layout names. 
 * **Switching layouts is supported on Enterprise Keyboard only**.
-* The following reserved names must not be used in Model Input fields (PressAction, LongPressAction, etc.) or in KeyEvents: 
+* The following reserved names must not be used in Model Input fields (PressAction, LongPressAction, etc.) or in keyEvents: 
  * Scantrigger
  * deviceInfo
  * calculator
@@ -429,7 +429,7 @@ Layout projects can be saved and modified later for use on different devices, ad
 * **The secondary text button label field is dependent on the width of the key**. To avoid automatic key resizing, the secondary button label should not exceed available width.
 * **Zebra recommends that button image size not exceed 100 KB**. Larger images are supported but might impact performance of the layout. 
 * When switching layouts, a thin white line is sometimes shown at the bottom or sides of the background key layout in the device simulator, but has no effect on the simulated display.
-* The following reserved names must not be used in Model Input fields (PressAction, LongPressAction, etc.) or in KeyEvents: 
+* The following reserved names must not be used in Model Input fields (PressAction, LongPressAction, etc.) or in keyEvents: 
  * Scantrigger
  * deviceInfo
  * calculator

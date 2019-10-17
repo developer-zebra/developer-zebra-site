@@ -12,14 +12,14 @@ Monitoring device presence and prevention of misplaced devices is important for 
 * **Device Tracking 2.3 -** New BLE (Bluetooth Low Energy) feature for device proximity tracking.
 
 ## Locating Devices
-The facility administrator monitors devices from the [admin dashboard](../admin) and can mark a device "To be found" if it is misplaced or at risk, e.g. needs to be charged due to low battery. The administrator assigns an associate to search the target device by using their Zebra device to locate the general area the target device resides based on the Access Point (AP) where it last connected. The BLE proximity indicator can be used to identify how close or far the target device is in relation to the associate. To further pinpoint device location, a sound can be played by tapping the **Play Sound** button on the associate's device to locate the target device by audio sound. The volume level and sound duration are adjustable in the server [Settings](../config).
+The facility administrator monitors devices from the [admin dashboard](../admin) and can mark a device "To be found" if it is misplaced or at risk, e.g. needs to be charged due to low battery. The administrator assigns an associate to search the target device by using their Zebra device to locate the general area where the target device is located. This general location is based on the Access Point (AP) where it last connected. The BLE proximity indicator can be used to identify how close or far the target device is in relation to the associate. To further pinpoint device location, a sound can be played by tapping the **Play Sound** button on the associate's device to locate the target device by audio sound. The volume level and sound duration are adjustable in the server [Settings](../config).
 
 **Important**:
 * WiFi must be enabled on both devices.
-* For BLE proximity tracking, Bluetooth must be enabled on both devices.
+* For BLE proximity tracking, Bluetooth must be enabled on both devices. This can be controlled from the [BLE option](../config) on the server.
 * When **Play Sound** is tapped repeatedly on the client during network congestion, the congestion may cause a delay in the playback. Once the congestion disappears, the audio plays back once based on the last tap to play audio.
 * During network congestion, client requests over WiFi frequency band 2.4 GHz may not reach the server. For example, requests to **Play Sound** may not reach the intended device. In this situation, Zebra recommends to move to a 5 GHz frequency band or move to another network without congestion.
-* If **Do Not Disturb** is enabled on the device, it prevents any sound from being emitted from the device. Therefore, **Play Sound** has no effect.
+* If the device is in **Do Not Disturb (DND)** mode, it prevents any sound from being emitted from the device and therefore **Play Sound** has no effect. For **Play Sound** to function while in **Do Not Disturb** mode, access must be enabled for Device Tracker in the Do Not Disturb access settings on the device. 
 <!--
 * During network congestion, the user may need to wait for 10 seconds before being able to exit the Play Sound screen by tapping the device back button. // Remove per SOLA-4230, issue no longer reproduceable-->
 

@@ -10,7 +10,7 @@ productversion: '2.3'
 Device Tracker is a centralized solution that tracks and finds misplaced devices within a facility. As part of Zebra DNA Visibility Console, it leverages existing WiFi network infrastructure and uses both Bluetooth Low Energy (BLE) and audio to aid in locating devices, preventing device inventory shrinkage. When locating a device, Device Tracker identifies the general area where the device is located based on the Access Point (AP) it is connected to within the facility. BLE (Bluetooth Low Energy) beacons are transmitted from the misplaced device for real-time proximity sensing, determining its relative position compared to the misplaced device. Audio can be played on the misplaced device to further pinpoint its specific location. Device Tracker centralized management system continuously monitors device presence, tracking status, connection state, and battery charge to ensure visibility of devices prior to reaching a disconnected or loss of battery state.
 
 ## New in Device Tracker 2.3
-* New server setting to toggle Bluetooth Low Energy (BLE) for device proximity tracking.
+* New feature on the server to toggle BLE for device proximity tracking.
 * New BLE feature in app client for device proximity tracking.
 
 ## Version History

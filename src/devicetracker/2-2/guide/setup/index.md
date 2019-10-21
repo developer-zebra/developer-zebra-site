@@ -209,7 +209,7 @@ The following are the prerequisites required for the server: <br>
 <br>
 
 ###Server Certificate
-An SSL certificate is needed for secure connections. Generate the CSR (Certificate Signing Request) with private key and submit it to the trusted CA. The CA issues the SSL Certificate signed with the public key (in .p7b format). Use this issued certificate to generate the SSL certificate with the private key. The final, complete SSL certificate contains the server certificate, any intermediate certificates, the public key and private key. The procedure to accomplish this is separated into two sections below:
+An SSL certificate is required for secure connections. Domain level and wildcard certificates are acceptable. Generate the CSR (Certificate Signing Request) with private key and submit it to the trusted CA. The CA issues the SSL Certificate signed with the public key (in .p7b format). Use this issued certificate to generate the SSL certificate with the private key. The final, complete SSL certificate contains the server certificate, any intermediate certificates, the public key and private key. The procedure to accomplish this is separated into two sections below:
 * **Procure server certificate** (.p7b format) with public key 
 * **Generate complete SSL certificate** (.pfx format) with both public and private keys 
 
@@ -255,7 +255,7 @@ F. Enter in the required fields when prompted:
  G. Enter the challenge password when prompted. _This is the password needed when generating the certificate in .pfx format._<br>
  H. A .csr file is created in the "CSR_Request" folder. Submit this file to the CA to have it signed. <br>
  I. Obtain the certificate bundle from the CA in .pkcs format and certificate in .p7b format (which includes the public key). -->
-**Generate complete SSL Certificate:** Zebra requires the certificate be procured in .p7b format and combined with the private key (.key file) to generate the SSL certificate in .pfx file format. If the certificate is in a different format, use an SSL certificate converter tool to convert to the proper format. Watch a video demonstration or follow the steps below:
+**Generate complete SSL Certificate:** Zebra requires the certificate be procured in .p7b format and combined with the private key (.key file) to generate the SSL certificate in .pfx file format. If the certificate is in a different format, use an SSL certificate converter tool to convert to the proper format. Watch a video demonstration and follow the steps below:
 <video controls width="450" height="280"> <source src="../../../videos/ZDVC_ServerCert-Step2.mp4" type="video/mp4">
 </video>
 1. Create an ssl_certificate.cer file with the command:<br>
@@ -263,8 +263,8 @@ F. Enter in the required fields when prompted:
 where "ssl_certificate.p7b" is the certificate issued by the CA.
 2. Create SSL certificate "ssl_certificate.pfx" with command (using the private key password created from step 4 in the previous section):<br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`openssl pkcs12 -export -in ssl_certificate.cer -inkey dtrkdemo.key -out ssl_certificate.pfx`<br>
-where "dtrkdemo.key" is the private key generated from step 4 in the previous section and "ssl_certificate.cer" is the file generated from the previous step 1.
-3. Import the SSL certificate on the server. Double-click the certificate on the local computer and follow the Certificate Import wizard.
+where "dtrkdemo.key" is the private key generated from step 4 in the previous section and "ssl_certificate.cer" is the file generated from the previous step 1. When prompted, enter the passphrase (from step 4 in the previous section) and specify an export password. 
+3. Import the SSL certificate on the server. Double-click the certificate on the local computer and follow the Certificate Import wizard. When prompted for a password, enter the password set from the previous step.
 4. Use SSL certificate "ssl_certificate.pfx" and the private key password for Device Tracker server installation and setup in the sections that follow.
 <!--
 A. Create an empty directory named "generated_certs" to contain the .pfx certificate.<br>

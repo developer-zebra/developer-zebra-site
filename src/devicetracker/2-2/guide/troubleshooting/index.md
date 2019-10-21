@@ -12,6 +12,14 @@ This section covers troubleshooting steps as well as Frequently Asked Questions.
 ##Troubleshooting
 This section discusses common issues that can occur and possible solutions. Server log files can help identify any server errors or exceptions, located in default folder `\Program Files (x86)\Zebra Technologies\ZDVC\Backend Server\log`. 
 
+###Issues related to server certificate
+Possible issues or causes:
+* **Server certificate is not signed by an authorized Certificate Authority.** Self-signed certificates do not meet the Device Tracker server requirement. See [Server Requirements](../setup).
+* **Error "Unable to write 'random state'" occurs when generating the SSL certificate with OpenSSL.** The command prompt may need to be launched in "Run As Administrator" mode.
+* **"Warning: Can't open config file [folder_path]/openssl.cnf" occurs when generating the SSL certificate with OpenSSL.** An OpenSSL variable may need to be set in the Windows system with the following command:
+`set OPENSSL_CONF=c:\[folder_path]\openssl.cnf`<br>
+where [folder_path] is the path to the OpenSSL directory.
+
 ###Cannot start server
 It is possible the certificate password entered during ZDVC server installation does not match the actual certificate. Perform the server installation again to enter the correct certificate password.
 

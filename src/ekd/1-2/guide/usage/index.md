@@ -1,5 +1,5 @@
 ---
-title: Enterprise Keyboard Designer
+title: Using Enterprise Keyboard Designer
 layout: guide.html
 product: Enterprise Keyboard Designer
 productversion: '1.2'
@@ -49,22 +49,24 @@ Before beginning a layout, please make note of the following:
 ### Using Drag-and-drop
 
 1. From the main designer screen, **click the menu button** in the upper-left corner:  
- <img alt="" style="height:350px" src="ekd_main_Layout_screen.png"/>
+ <img alt="" style="height:350px" src="ekd_main_layout_screen.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
-2. **Click the [+] icon to create a new layout** or select an existing layout to edit: <br>
- <img alt="" style="height:350px" src="ekd_Layout_names.png"/>
+2. **Click the [+] icon to create a new layout**:
+ <img alt="" style="height:350px" src="ekd_layout_names.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
 3. **Select the device orientation** and click the “Confirm” button:
+ <br>
+ **`NOTE:`** Orientation option **NOT** available on CC600, CC6000, MC33, MC93, PS20, TC8x, VC80x or VC83x devices.
  <img alt="" style="height:350px" src="device_orientation.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
 4. **Enter a layout name and press ENTER**.<br> **`NOTE:`** Layout names are case-sensitive, must be unique within a project and may contain only alpha-numeric characters. <br>**Zebra recommends layout names contain a <u>maximum of 15 characters</u>**. <br>The name of the current layout appears in the upper-left corner of the screen: 
- <img alt="" style="height:350px" src="ekd_Layout_name_location.png"/>
+ <img alt="" style="height:350px" src="ekd_layout_name_location.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
@@ -72,12 +74,12 @@ Before beginning a layout, please make note of the following:
  <br>
  <br>
 5. With the mouse pointer on the simulated device screen, **drag to create a layout background** in approximately the desired position on the simulator: 
- <img alt="" style="height:350px" src="ekd_drag_Layout.gif"/>
+ <img alt="" style="height:350px" src="ekd_drag_layout.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
 6. **Drag the layout on the device screen** to reposition and resize as needed:  
- <img alt="" style="height:350px" src="ekd_resize_Layout.gif"/>
+ <img alt="" style="height:350px" src="ekd_resize_layout.gif"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
@@ -93,25 +95,27 @@ Before beginning a layout, please make note of the following:
 
 ### Using Grid Layout
 
-**The Grid layout option** automatically fills the layout with a matrix of equally spaced buttons based using the specified number of columns and rows. Once created, buttons can be relocated on the grid as desired. The new layout is placed along the left and bottom edges of the simulator and can be resized if needed.<br>**`WARNING:`** Checking the Grid Layout box clears any existing layout. 
+**The Grid layout option** automatically fills the layout with a matrix of equally spaced buttons based on the specified number of columns and rows. The new layout is placed along the left and bottom edges of the simulator and can be resized (and buttons relocated) as needed.<br>**`WARNING:`** Checking the Grid Layout box clears any existing layout. 
 
 1. From the main designer screen, **click the menu button** in the upper-left corner:  
- <img alt="" style="height:350px" src="ekd_main_Layout_screen.png"/>
+ <img alt="" style="height:350px" src="ekd_main_layout_screen.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
-2. **Click the [+] icon to create a new layout** or select an existing layout to edit: <br>
- <img alt="" style="height:350px" src="ekd_Layout_names.png"/>
+2. **Click the [+] icon to create a new layout**:
+ <img alt="" style="height:350px" src="ekd_layout_names.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
 3. **Select the device orientation** and click the “Confirm” button:
+ <br>
+ **`NOTE:`** Orientation option **NOT** available on CC600, CC6000, MC33, MC93, PS20, TC8x, VC80x or VC83x devices.
  <img alt="" style="height:350px" src="device_orientation.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
  <br>
 4. **Enter a layout name and press ENTER**.<br> **`NOTE:`** Layout names are case-sensitive, must be unique within a project and may contain only alpha-numeric characters. <br>**Zebra recommends layout names contain a <u>maximum of 15 characters</u>**. <br>The name of the current layout appears in the upper-left corner of the screen: 
- <img alt="" style="height:350px" src="ekd_Layout_name_location.png"/>
+ <img alt="" style="height:350px" src="ekd_layout_name_location.png"/>
  _**Note**: Buttons shown in the sample images are for illustration; they DO NOT appear in EKD layouts_.
  <br>
  <br>
@@ -226,18 +230,18 @@ _Click image to enlarge, ESC to exit_.
 
 ### Text Properties
 
-* **Text -** Specifies the button label (displayed text) for the selected button. **<u>Must be blank if an image is selected</u> as button background**.
+* **Text -** Specifies the button label (displayed text) for the selected button **(max = 5)**; **<u>must be blank if an image is selected</u> as button background**.
 * **Font Size -** Specifies the font size (in points) of the button label text for the selected button **(min = 10; max = 25)**. 
 * **TextColor -** Specifies the color of the button label text for the selected button. 
 * **TextStyle –** Specifies the style of the button label text for the selected button. Drop-down values: Normal, Bold, BoldItalic, Italic. 
-* **SecondaryText -** Specifies the secondary button label displayed in the upper-right corner of the selected button. Indicates the key’s output or Action when long-pressed. **<u>Must be blank if an image is selected</u> as button background**.
+* **SecondaryText -** Specifies the secondary button label displayed in the upper-right corner of the selected button. Indicates the key’s output or Action when long-pressed  **(max = 2); <u>must be blank if an image is selected</u> as button background**.
 
 #### Usage Notes
 * The text input field accepts all characters, including Chinese.
 * All key-label text (including secondary text) is ignored if a key image is specified.
 * The font size used for a button label is dependent on the size of the button being labeled. To avoid automatic button resizing, select a font size appropriate for the size of the button.
 * The number and size of characters in the button text and secondary text fields should correspond to the key size to avoid automatic size changes.
-* The position of secondary text can exceed button height if the button is too small. To overcome this issue, increase button height.
+* The position of secondary text can exceed button height (and be positioned out of view) if button is too small. To avoid this issue, increase button height.
 
 -----
 
@@ -267,20 +271,17 @@ Button Actions supported by EKD include predefined command strings for generatin
 4. **Click "Save Layout" button** to store settings. 
 5. **Click "Save Project" to create a project file for deployment**.
 
-**See [all Unicode characters](https://unicode-table.com/en/)**<br>
-**See all [Android keyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
-
 * **Predefined command strings -** Enter an Android keyEvent value in the pop-up:
  * **key in caps -** Outputs an upper-case letter corresponding to the keyValue entered 
  * **key -** Outputs the lower-case character corresponding to the keyValue entered
  * **UC -** Outputs the Unicode character corresponding to the Unicode value entered
 * **Actions to switch the layout -** Use the key-value pairs below to switch to a specific layout. 
- * **Switch-abc -** switches to the Enterprise Keyboard standard alpha-numeric layout
- * **Switch-123 -** switches to the fixed numeric layout
- * **Switch-Scan -** switches to the “scanning button" layout
- * **Switch-&#35;&#42;&#47; -** switches to the “&#35;&#42;&#47;” (symbolic) layout
- * **Switch-CustomLayout -** switches to a custom layout (enter a valid layout name in the pop-up)
- * **Scan Trigger -** 
+ * **Switch-abc -** Switches to the Enterprise Keyboard standard alpha-numeric layout
+ * **Switch-123 -** Switches to the fixed numeric layout
+ * **Switch-Scan -** Switches to the “scanning button" layout
+ * **Switch-&#35;&#42;&#47; -** Switches to the “&#35;&#42;&#47;” (symbolic) layout
+ * **Switch-CustomLayout -** Switches to a custom layout (enter a valid layout name in the pop-up)
+ * **Scan Trigger -** Scans a barcode using DataWedge, which must be configured in advance of this command. See [DataWedge documentation](/datawedge) for more information. **Supported only with Press Action**
 
 **See [all Unicode characters](https://unicode-table.com/en/)**<br>
 **See all [Android keyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
@@ -297,9 +298,24 @@ Button Actions supported by EKD include predefined command strings for generatin
  -->
 
 #### Layout Naming and KeyAction 
-Usage Notes 	
-* The layout names shown above (“abc," “123," “scan” and “&#35;&#42;&#47;”) are reserved for default Enterprise Keyboard layouts and cannot be used as custom layout names. 
+
+##### Usage Notes 	
+
+* **Do NOT use the terms shown below as custom names**; they are reserved for default Enterprise Keyboard layouts: 
+ * abc
+ * 123
+ * scan
+ * &#35;&#42;&#47;
+ * Scantrigger
+ * switch-abc
+ * switch-123
+ * switch-&#35;&#42;&#47;
+ * switch-scan
+ * customLayout
+ * key-[any Content]
 * **Switching layouts is supported on Enterprise Keyboard only**.
+
+<!-- 10/21/19- removed per eng.
 * The following reserved names must not be used in modal input fields (PressAction, LongPressAction, etc.) or in keyEvents: 
  * Scantrigger
  * deviceInfo
@@ -312,7 +328,7 @@ Usage Notes
  * key-keyincaps
 * While the key action can be configured to execute a command, Enterprise Keyboard currently supports only the “Scantrigger” action command, which scans a barcode using DataWedge.
 * The Enterprise Browser ButtonBar API accepts several predefined commands as button Actions. Please see [Enterprise Browser documentation](/enterprise-browser) for more information. 
-
+ -->
 -----
 
 ### Style Properties
@@ -417,6 +433,12 @@ Layout projects can be saved and modified later for use on different devices, ad
 
 * **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
 * **To display EKD layouts on a device, Enterprise Keyboard must be installed on that device** and set as the default input source.
+* Switching to a scanner layout **OTHER than the standard EKB scanner layout** using the "Switch-Scan" Press Action can cause unpredictable behavior. 
+* **The order of layout names shown in the EKD layout menu can vary** from the list shown in the "Languages and Input" Settings panel on the device.
+* Deployed layouts sometimes look slightly different than their appearance in the device simulator.    
+* **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.
+
+<!-- 10/21/19- removed per eng. 
 * **The number of allowable characters in a button label field is dependent on width of the key**. To avoid automatic key resizing, button label should not exceed available width. 
 * **The font size used for a button label is dependent on the size of the key being labeled**. To avoid automatic key resizing, select a point size appropriate for the size of the button.
 * **The secondary text button label field is dependent on the width of the key**. To avoid automatic key resizing, the secondary button label should not exceed available width.
@@ -433,4 +455,5 @@ Layout projects can be saved and modified later for use on different devices, ad
  * customLayout
  * key-keyincaps
 
------
+ -->
+ -----

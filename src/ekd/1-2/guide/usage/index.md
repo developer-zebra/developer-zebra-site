@@ -11,6 +11,15 @@ created: 9/9/2019
 
 Each Enterprise Keyboard Designer project contains one or more key layouts, which are defined as any grouping of keys. Layouts are created using “drag and drop” or the “grid layout” option and are saved as a single encrypted file. The project name becomes the file name, with “`.encrypted`” as the file extension (i.e. `myTC75Layout.encrypted`). 
 
+### General Usage Notes
+
+* **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
+* **To display EKD layouts on a device, Enterprise Keyboard must be installed on that device** and set as the default input source.
+* Switching to a scanner layout **OTHER than the standard EKB scanner layout** using the "Switch-Scan" Press Action can cause unpredictable behavior. 
+* **The order of layout names shown in the EKD layout menu can vary** from the list shown in the "Languages and Input" Settings panel on the device.
+* Deployed layouts sometimes look slightly different than their appearance in the device simulator.    
+* **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.
+
 > **Note**: In this guide, the terms “button” and “key” are used interchangeably. 
 
 -----
@@ -263,7 +272,7 @@ Button Actions supported by EKD include predefined command strings for generatin
 <img alt="" style="height:150px" src="ekd_keyaction.png"/>
  _Click image to enlarge, ESC to exit_.
 <br>
-2. For keycodes (i.e. key in caps, Unicode, etc), a box pops up similar to the one below. **Enter a single value corresponding to the type of Action selected**:  
+2. For keycodes (i.e. key in caps, Unicode, etc), a box pops up <u>similar</u> to the one below. <br>**Enter a single value corresponding to the type of Action selected**:  
 <img alt="" style="height:150px" src="ekd_keyaction_entry.png"/>
  _Click image to enlarge, ESC to exit_.
 <br>
@@ -379,14 +388,12 @@ To save the current key layout project, click the “Save Project” button. A d
 ### Delete a Key
 
 1. In the layout that contains the key to be deleted, **double-click on the the key to be deleted**; the selected key is surrounded by a dotted red line. 
-3. **Press the “Delete” key on the host computer’s keyboard**. A confirmation dialog appears. 
-4. **Click “Yes”** on the confirmation dialog to delete. 
+2. **Press the “Delete” key on the host computer’s keyboard**. A confirmation dialog appears. 
+3. **Click “Yes”** on the confirmation dialog to delete. 
 
 ### Clear a Layout 
 1. In the layout to be cleared, **Click the red “Clear Layout” button**. 
-3. **Click “Yes”** to confirm the deletion of all layout elements. 
-
-> Data for custom layout(s) and key-value assignment(s) is stored in the key layout definition file, a single encrypted file on the development host computer. To deploy, simply push this file to the desired mobile device(s) and activate custom layouts through application intents. Layouts are available immediately upon deployment.<br> **Deployment instructions follow below**. 
+2. **Click “Yes”** to confirm the deletion of all layout elements. 
 
 -----
 
@@ -428,15 +435,6 @@ Layout projects can be saved and modified later for use on different devices, ad
 10. **Click "Save Project" to create a project file for deployment**.
 
 -----
-
-## General Usage Notes
-
-* **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
-* **To display EKD layouts on a device, Enterprise Keyboard must be installed on that device** and set as the default input source.
-* Switching to a scanner layout **OTHER than the standard EKB scanner layout** using the "Switch-Scan" Press Action can cause unpredictable behavior. 
-* **The order of layout names shown in the EKD layout menu can vary** from the list shown in the "Languages and Input" Settings panel on the device.
-* Deployed layouts sometimes look slightly different than their appearance in the device simulator.    
-* **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.
 
 <!-- 10/21/19- removed per eng. 
 * **The number of allowable characters in a button label field is dependent on width of the key**. To avoid automatic key resizing, button label should not exceed available width. 

@@ -15,8 +15,8 @@ Each Enterprise Keyboard Designer project contains one or more key layouts, whic
 
 * **The Enterprise Keyboard Designer <u>must be used only in full screen mode**</u>. Resizing the Enterprise Keyboard Designer application window after starting a Project can result in unpredictable behavior. 
 * **To display EKD layouts on a device, Enterprise Keyboard must be installed on that device** and set as the default input source.
-* Switching to a scanner layout **OTHER than the standard EKB scanner layout** using the "Switch-Scan" Press Action can cause unpredictable behavior. 
-* **The order of layout names shown in the EKD layout menu can vary** from the list shown in the "Languages and Input" Settings panel on the device.
+* The "Switch-Scan" Press Action (which is supposed to invoke the EKB "scan" layout) sometimes brings up a different layout. 
+* **The order of layout names shown in the EKD layout menu can vary** from the list returned by the `GET available keyboard layouts` intent API. See [Enterprise Keyboard APIs](/enterprise-keyboard/latest/guide/apis) for details.
 * Deployed layouts sometimes look slightly different than their appearance in the device simulator.    
 * **Do NOT deploy empty key layouts**; they can cause Enterprise Keyboard to behave unpredictably.
 
@@ -179,48 +179,11 @@ Buttons can be positioned and resized within a layout by dragging manually, by u
 
 #### Manual Positioning
 
-**Double-click a button to select it and adjust its position and properties. Use the Control key on the host computer's keyboard to select multiple keys simultaneously (see [Multi-selection Properties](#multiselectionproperties), below)**. Selected key(s) are indicated by a red border, and supported input fields for Button Properties are enabled. Changes to most properties appear immediately on the selected button(s).
+**Double-click a button to select it and adjust its position and properties**. Selected key(s) are indicated by a red border, and supported input fields for Button Properties are enabled. Changes to most properties appear immediately on the selected button(s).
 
 **To move a key**, drag it within the key layout background or double-click it (to select) and move it using the arrow keys on the host computer keyboard. **To resize a key**, drag the key's right and bottom edges within the key layout background or select it and edit the "Layout Properties" fields in the Button Properties panel.
 
 **The Layout Properties** section of the Button Properties panel refers to the left and top offsets and the width and height of the selected button. All measurements are in pixels. **If the layout was created using drag-and-drop**, at least one key must be selected from the key panel and dropped into the layout before these properties can be set. Double-click a key to change its default property settings. **If the layout was created using Grid Layout**, double-click on box(es) in the grid to configure button properties.
-
-#### Multi-key Selection
-Use the CTRL key on the host computer's keyboard to select multiple keys simultaneously. Selected key(s) are indicated by a red border, and supported input fields for Button Properties are enabled. Changes to properties appear immediately on the selected button(s). Properties are described in their relevant sections below. 
-
-<img alt="" style="height:150px" src="ekd_selected_key.png"/>
-<img alt="" style="height:150px" src="ekd_multi-select.png"/>
-_Click image to enlarge, ESC to exit_.
-<br>
-
-**These properties can be assigned to multiple buttons simultaneously**: 
-
-* **Text**
-* **Secondary Text**
-* **Font Size** 
-* **Text Color**
-* **Text Style** 
-* **Preview value** 
-* **Transparency**
-* **Button Color**
-* **Color pressed** 
-* **Haptic Feedback**
-* **Duration**
-
-**These properties can be assigned <u>only to individual keys</u>**: 
-
-* **Button action properties**: 
- * **Press Action**
- * **Long Press Action**
- * **Action Up**
- * **Action Down**
- * **Image**
- * **Image pressed**
-* **Layout properties**:
- * **Left**
- * **Top**
- * **Width**
- * **Height** 
 
 -----
 
@@ -231,9 +194,7 @@ _Click image to enlarge, ESC to exit_.
 * **Width -** Specifies the width (in pixels) of the selected button. **Value must be less than the layout width (min = 50)**.
 * **Height -** Specifies the height (in pixels) of the selected button. **Value must be less than the layout height (min = 50)**.
 
-#### Usage Notes
-* **Button property minimum and maximum value rules** are the same for individual buttons and for groups. 
-* **Deleting a group of selected buttons** using the “Delete” key on the host computer’s keyboard is not supported.
+> `IMPORTANT:` **The button layout properties above DO NOT support multi-key selection**; behavior is unpredictable.  
 
 -----
 
@@ -246,6 +207,9 @@ _Click image to enlarge, ESC to exit_.
 * **SecondaryText -** Specifies the secondary button label displayed in the upper-right corner of the selected button. Indicates the key’s output or Action when long-pressed  **(max = 2); <u>must be blank if an image is selected</u> as button background**.
 
 #### Usage Notes
+
+* **Button property minimum and maximum value rules** are the same for individual and multi-key selections. 
+* **Deleting a group of multi-selected keys** using the “Delete” key on the host computer’s keyboard is not supported. Keys must be deleted individually. 
 * The text input field accepts all characters, including Chinese.
 * All key-label text (including secondary text) is ignored if a key image is specified.
 * The font size used for a button label is dependent on the size of the button being labeled. To avoid automatic button resizing, select a font size appropriate for the size of the button.
@@ -256,10 +220,16 @@ _Click image to enlarge, ESC to exit_.
 
 ### Action Properties
 
-* **PressAction -** Defines the action taken when the selected Button is pressed and released. Accepts only the predefined command strings in drop-down menu (see below). **Overridden by ActionDown property. Default = no action**.
-* **LongPressAction –** Defines the action taken when the selected button is pressed and held. Accepts only the predefined command strings in drop-down menu (see below). **Overridden by ActionUp property. Default = no action**.
-* **ActionDown -** Defines the action to be taken immediately upon button press (before it is released). Accepts only the predefined command strings in the drop-down menu (see below). **Overrides PressAction property. Default = no action**.
-* **ActionUp -** Defines the action to be taken when the selected key is released (after being pressed). Accepts only the predefined command strings in the drop-down (see below). **Overrides LongPressAction property. Default = no action**.
+* **PressAction -** Defines the action taken when the selected Button is pressed and released. Accepts only the predefined command strings in drop-down menu (see below). <br>
+**Overridden by ActionDown property. Default = no action**.
+* **LongPressAction –** Defines the action taken when the selected button is pressed and held. Accepts only the predefined command strings in drop-down menu (see below). <br>
+**Overridden by ActionUp property. Default = no action**.
+* **ActionDown -** Defines the action to be taken immediately upon button press (before it is released). Accepts only the predefined command strings in the drop-down menu (see below). <br>
+**Overrides PressAction property. Default = no action**.
+* **ActionUp -** Defines the action to be taken when the selected key is released (after being pressed). Accepts only the predefined command strings in the drop-down (see below). <br>
+**Overrides LongPressAction property. Default = no action**.
+
+`IMPORTANT:` **The Action properties above DO NOT support multi-key selection**.
 
 #### Button Actions
 Button Actions supported by EKD include predefined command strings for generating keyEvent output and for switching the key layout currently displayed on the device. 
@@ -296,15 +266,6 @@ Button Actions supported by EKD include predefined command strings for generatin
 **See all [Android keyEvent values](https://developer.android.com/reference/android/view/KeyEvent)**
 
 > **Note: Entries are case sensitive**. 
-
-<!-- 
-<b>Switch layouts with taps or swipes</b> across the keypad:  
-<img alt="" style="height:150px" src="ekd_07.png"/>
-
-* To capture a lower-case "a" the Action should be “key-29”
-* To capture an upper-case "A" the Action should be “keyincaps-29”
-* To capture a Unicode character, the Action should be “uc-003C”
- -->
 
 #### Layout Naming and KeyAction 
 
@@ -351,6 +312,11 @@ Changes to these settings appear immediately in the device simulator unless othe
 * **Image -** Used to select an image to fill the space of the selected key. When the layout is saved, selected image(s) are embedded within the “.encrypted” file. **Supports** `.jpg` **and** `.png` **image files. Zebra recommends using files of 100 KB or less for optimal layout performance. File name must begin with an alpha-numeric character**. 
 * **ImagePressed -** Used to select an image to be displayed when the button is pressed. After selection, the image appears on the device simulator when the button is pressed. When the layout is saved, selected image(s) are embedded within the “.encrypted” file. **Supports** `.jpg` **and** `.png` **image files. Zebra recommends using files of 100 KB or less for optimal layout performance. File name must begin with an alpha-numeric character**. 
 
+#### Usage Notes
+* **Button property minimum and maximum value rules** are the same for individual and multi-key selections. 
+* **Deleting a group of multi-selected keys** using the “Delete” key on the host computer’s keyboard is not supported. Keys must be deleted individually. 
+
+
 -----
 
 ### Feedback Properties
@@ -358,6 +324,54 @@ _Applies only to devices that support vibration_.
 
 * **HapticFeedback -** Used to control whether the device vibrates when the selected button is clicked. Set the value to “true” to vibrate (**default = false**).
 * **Duration -** Used to enter the duration (in ms) of vibration when the “Haptic Feedback” property is set to true **(min = 40 (default); max = 1000)**. 
+
+**NOTE:** Button property minimum and maximum value rules are the same for individual and multi-key selections. 
+
+-----
+
+### Multi-key Selection
+Use the CTRL key on the host computer's keyboard to select multiple keys simultaneously. Selected key(s) are indicated by a red border, and supported input fields for Button Properties are enabled. Changes to properties appear immediately on the selected button(s). Properties are described in their relevant sections above. 
+
+<img alt="" style="height:150px" src="ekd_selected_key.png"/>
+<img alt="" style="height:150px" src="ekd_multi-select.png"/>
+_Click image to enlarge, ESC to exit_.
+<br>
+
+**These properties can be assigned to multiple buttons simultaneously**: 
+
+* **Text**
+* **Secondary Text**
+* **Font Size** 
+* **Text Color**
+* **Text Style** 
+* **Preview value** 
+* **Transparency**
+* **Button Color**
+* **Color pressed** 
+* **Haptic Feedback**
+* **Duration**
+
+**These properties can be assigned <u>only to individual keys</u>**: 
+
+* **Button action properties**: 
+ * **Press Action**
+ * **Long Press Action**
+ * **Action Up**
+ * **Action Down**
+ * **Image**
+ * **Image pressed**
+* **Layout properties**:
+ * **Left**
+ * **Top**
+ * **Width**
+ * **Height** 
+
+
+
+#### Usage Notes
+* **Button property minimum and maximum value rules** are the same for individual and multi-key selections. 
+* **Deleting a group of multi-selected keys** using the “Delete” key on the host computer’s keyboard is not supported. Keys must be deleted individually.  
+* **Button layout (i.e. width, height, etc.) and action properties (Press, LongPress, etc.) <u>MUST NOT be changed using multi-key selection</u>**; behavior is unpredictable.
 
 -----
 
@@ -383,7 +397,15 @@ To save the current layout data, click the “Save Layout” button in the lower
 
 ### Save Project
 
-To save the current key layout project, click the “Save Project” button. A dialog appears indicating the location of the saved “`.encrypted`” file. Take note of the save directory for later reference. 
+#### To save the current key layout project: 
+
+1. **Click the “Save Project” button**. 
+<br>A dialog appears indicating the location of the saved “`.encrypted`” file: 
+ <img alt="" style="height:250px" src="ekd_project_saved.png"/>
+_EKD's "Save Project" button invokes a dialog showing the default save-to folder_. 
+2. **Take note of the save directory** for reference during deployment. 
+
+-----
 
 ### Delete a Key
 
@@ -391,22 +413,24 @@ To save the current key layout project, click the “Save Project” button. A d
 2. **Press the “Delete” key on the host computer’s keyboard**. A confirmation dialog appears. 
 3. **Click “Yes”** on the confirmation dialog to delete. 
 
+**NOTE**: Keys must be deleted individually; multi-select is not supported for key deletion. 
+
 ### Clear a Layout 
 1. In the layout to be cleared, **Click the red “Clear Layout” button**. 
-2. **Click “Yes”** to confirm the deletion of all layout elements. 
+2. **Click “Yes”** to confirm the deletion of all layout elements in the current layout. 
 
 -----
 
 ## V. Deploy Layout(s)
 
-The data for custom key layout(s) is stored in the custom key-layout definition file, an encrypted file generated by the Enterprise Keyboard Designer. This file contains information about key locations, key-value assignments, etc. for each key layout created. This single file can contain as many as 20 layout groups, each of which defines a layout. **It's important to note that an app can access only a single layout file on the device, so all layouts required for a device MUST be stored in that single file**. 
+The data for custom key layout(s) is stored in the custom key-layout definition file, an encrypted file generated by the Enterprise Keyboard Designer. This file contains information about key locations, key-value assignments, etc. for each key layout created. This single file can contain as many as 20 layout groups, each of which defines a layout. **NOTE: An app can access only a single layout file on the device, so all layouts required for a device MUST be stored in that single file**. 
 
 #### To deploy a key layout definition file:
 
 1. **Locate the key layout definition file** (i.e. `LayoutProjectName.encrypted`) on the development host computer. <br>
  By default, the files are saved in the download directory of the current user: <br>
  `c:\Users\userName\Downloads\LayoutProjectName.encrypted`<br>
- **NOTE**: When clicking EKD's "Save Project" button, the default folder is shown as in the image below: 
+ **NOTE**: When clicking EKD's "Save Project" button, the default save-to folder is shown as in the image below: 
  <img alt="" style="height:250px" src="ekd_project_saved.png"/>
  _Click image to enlarge, ESC to exit_.
  <br>
@@ -429,7 +453,7 @@ Layout projects can be saved and modified later for use on different devices, ad
 4. **Click the EKD menu button** to view a list of layouts available for editing. 
 5. **Select the layout to be edited and click the edit icon**. The layout is displayed in the device simulator and its name is displayed the top-left corner. 
 6. **Edit the layout as desired**.
-7. **To add a new layout to the project**, click the [+] icon on the EKD menu and follow steps in the [Crete Layout(s)](#iicreatelayouts) section. 
+7. **To add a new layout to the project**, click the [+] icon on the EKD menu and follow steps in the [Create Layout(s)](#iicreatelayouts) section. 
 8. **Repeat Step 7** until the layout is configured as desired. 
 9. **Click "Save Layout" button** to store settings. 
 10. **Click "Save Project" to create a project file for deployment**.
